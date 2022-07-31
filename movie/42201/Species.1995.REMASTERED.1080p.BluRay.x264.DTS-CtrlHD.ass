@@ -1,0 +1,1024 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: ZHU,Microsoft YaHei,18,&H00FFFFFF,&H00FFFFFF,&H00FF6600,&H00000000,0,-1,0,0,100,100,0,0,1,1,1,2,0,0,16,134
+Style: ENG,Microsoft YaHei,10,&H000FA8FF,&H000000FF,&H32000000,&H96000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,0,134
+Style: CHS,Microsoft YaHei,18,&H00FFFFFF,&H00FFFFFF,&H00FF6600,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,16,134
+Style: ↖,Microsoft YaHei,18,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,1,7,48,10,6,1
+Style: White BG,Microsoft YaHei,18,&H00161213,&H000B24FF,&H00FFFFFF,&H00101010,-1,0,0,0,100,100,1,0,3,1,0,8,10,10,10,1
+Style: Notes,Microsoft YaHei,20,&H000B24FF,&HFF0B24FF,&H2BFFFFFF,&HFF101010,-1,0,0,0,100,100,0,0,3,1,0,5,0,0,0,1
+Style: Lyrics,Microsoft YaHei,16,&H18FFFFFF,&HFF0000FF,&H0ACE3232,&H00FF9841,0,0,0,0,100,100,1,0,1,0,0,5,10,10,10,1
+Style: Hard Subs,Microsoft YaHei,22,&H00FFFFFF,&H000B24FF,&H00101010,&H0031397C,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,10,1
+Style: Black Text,Microsoft YaHei,18,&H00000000,&H000B24FF,&H001B1D35,&H1A52588F,0,0,0,0,100,100,1,0,1,0,0,5,10,10,10,1
+Style: Black BG,Microsoft YaHei,18,&H00FFFFFF,&H000B24FF,&H18000000,&H00101010,-1,0,0,0,100,100,0,0,3,1,0,4,0,0,0,1
+Style: #EN,Segoe UI Semibold,14,&H00FAFAFA,&H000000FF,&HFF000000,&H50000000,0,0,0,0,100,100,0,0,1,0,1,2,10,10,10,1
+Style: #CH,Microsoft YaHei,20,&H00FAFAFA,&H000000FF,&HFF000000,&H50000000,0,0,0,0,100,100,1,0,1,0,1,2,10,10,24,1
+Style: #60,思源黑体 CN Medium,20,&H00FAFAFA,&H000000FF,&HFF000000,&H50000000,0,0,0,0,100,100,1,0,1,0,0,2,10,10,60,1
+Style: #08,思源黑体 CN Medium,22,&H00FAFAFA,&H000000FF,&HFF000000,&H50000000,0,0,0,0,100,100,1,0,1,0,1,2,10,10,10,1
+Style: #02,Microsoft YaHei,18,&H00FFFFFF,&H000000FF,&HFF000000,&H00000000,0,0,0,0,100,100,0,0,1,0,1,2,10,10,10,1
+Style: dial movie,Microsoft YaHei,17,&H00FFFFFF,&H000000FF,&HFFFFFFFF,&H50000000,0,0,0,0,100,100,1,0,1,0,1,2,10,10,2,1
+Style: dial episo,Microsoft YaHei UI,18,&H00FFFFFF,&H000000FF,&HFF000000,&H50000000,0,0,0,0,100,100,1,0,1,0,1,2,10,10,4,1
+Style: Vector,Microsoft YaHei,20,&H00EBEBEB,&HF0101010,&H00713B0B,&H00101010,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,134
+Style: 电影对白,Microsoft YaHei,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,2,2,10,10,21,1
+Style: Hard,Microsoft YaHei,22,&H00FFFFFF,&H000B24FF,&H00101010,&H0031397C,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,10,1
+Style: #40,思源黑体 CN Medium,20,&H00FAFAFA,&H000000FF,&HFF000000,&H50000000,0,0,0,0,100,100,1,0,1,0,0,2,10,10,42,1
+Style: 预告片,方正正准黑_GBK,20,&H00FFFFFF,&H00000000,&H00975920,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 包皮,方正少儿简体,18,&H00FFFFFF,&H000000FF,&H001718EA,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,4,1
+Style: dog,方正粗活意_GBK,18,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 字体颜色注释,Microsoft YaHei,16,&H00ABD5EA,&H000000FF,&H4B0F2B34,&H00051523,0,0,0,0,100,100,1,0,1,1,1,4,10,10,10,1
+Style: txt6,Microsoft YaHei,60,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,4,10,10,10,1
+Style: 幻想快乐,Microsoft YaHei,50,&H0099F4FF,&HF0101010,&H00101010,&H32101010,0,0,0,0,100,100,0,0,1,1,1,2,16,16,27,134
+Style: Default123,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,10,10,10,1
+Style: GV-Sir02,Simhei,18,&H00FFFFFF,&H00000000,&H006C3300,&H006C3300,-1,0,0,0,100,100,0,0,1,1,0,2,5,5,5,1
+Style: 备用,Microsoft YaHei,18,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,1,2,6,6,10,1
+Style: 对白#CN,思源黑体 CN Medium,21,&H00F5F5F5,&H000000FF,&HFF000000,&H2D000000,0,0,0,0,100,100,0,0,1,0,2,2,10,10,23,1
+Style: 对白#EN,Segoe UI Symbol,14,&H00FFFFFF,&H000000FF,&HFF000000,&H35000000,0,0,0,0,100,100,0,0,1,0,2,2,10,10,10,1
+Style: 雅黑粗体,Microsoft YaHei,24,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,8,10,10,10,1
+Style: 注释,Microsoft YaHei,20,&H000B24FF,&HFF0B24FF,&H2BFFFFFF,&HFF101010,-1,0,0,0,100,100,0,0,3,1,0,5,0,0,0,1
+Style: 图,Microsoft YaHei,20,&H00EBEBEB,&HF0101010,&H00713B0B,&H00101010,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,134
+Style: 名,Microsoft YaHei,18,&H00FFFFFF,&H000B24FF,&H00101010,&H28101010,0,0,0,0,102,100,0,0,1,0,0,5,70,10,55,1
+Style: 白硬,Microsoft YaHei,22,&H00FFFFFF,&H000B24FF,&H00101010,&H0031397C,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: NO B&S,Microsoft YaHei,20,&H00EBEBEB,&H000B24FF,&H00101010,&H00101010,-1,0,0,0,100,100,0,0,1,0,0,8,13,13,22,1
+Style: NO B,Microsoft YaHei,20,&H00EBEBEB,&H000B24FF,&H00101010,&H00101010,0,0,0,0,100,100,0,0,1,0,1,5,13,13,9,1
+Style: NO S,Microsoft YaHei,20,&H00EDEDF1,&H000B24FF,&H00101010,&H00101010,0,0,0,0,100,100,1,0,1,1,0,5,13,13,9,1
+Style: 白底,Microsoft YaHei,18,&H00161213,&H000B24FF,&H00FFFFFF,&H00101010,-1,0,0,0,100,100,1,0,3,1,0,8,10,10,10,1
+Style: 黑底,Microsoft YaHei,18,&H00FFFFFF,&H000B24FF,&H18000000,&H00101010,-1,0,0,0,100,100,0,0,3,1,0,4,0,0,0,1
+Style: 黑字,Microsoft YaHei,18,&H00000000,&H000B24FF,&H001B1D35,&H1A52588F,0,0,0,0,100,100,1,0,1,0,0,5,10,10,10,1
+Style: ↘,Microsoft YaHei,18,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,1,3,10,10,65,1
+Style: ↙,Microsoft YaHei,18,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,1,10,10,75,1
+Style: ↗,Microsoft YaHei,18,&H00FFFFFF,&H000B24FF,&H00000000,&H091E1E1E,0,0,0,0,100,100,0,0,1,0,0,9,48,48,4,1
+Style: 对白#60,Microsoft YaHei,22,&H00FFFFFF,&H000000FF,&HFF000000,&H6E000000,0,0,0,0,100,100,0,0,1,0,1,2,10,10,60,1
+Style: 对白#40,Microsoft YaHei,22,&H00FFFFFF,&H000000FF,&HFF000000,&H6E000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,42,1
+Style: 对白#08,思源黑体 CN Medium,22,&H00FFFFFF,&H000000FF,&HFF000000,&H6E000000,0,0,0,0,100,100,1,0,1,0,1,2,10,10,8,1
+Style: 对白,Segoe UI,21,&H00FFFFFF,&H000B24FF,&HFF000000,&H32000000,0,0,0,0,100,100,0,0,1,0,1,2,0,0,4,1
+Style: 电影字幕分割线,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: LOGO,Microsoft YaHei,21,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,10,10,10,1
+Style: 1,华康龙门石碑W9,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 电影硬字幕,FZHei-B01,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,2,1
+Style: 注,Microsoft YaHei,8,&H00FFFFFF,&H000019FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,4,4,4,1
+Style: 歌词,Microsoft YaHei,16,&H00F5F5F5,&HFF0000FF,&H00CE4602,&H00FF9A6A,0,0,0,0,100,100,1,0,1,0,0,8,10,10,10,1
+Style: 硬字幕,方正黑体_GBK,20,&H00FFFFFF,&H00000000,&H00975920,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,10,10,10,1
+Style: 片头2,Microsoft YaHei,90,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 片头1,Microsoft YaHei,80,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 特殊04,Microsoft YaHei,20,&H00000000,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,4,10,10,10,1
+Style: 特殊03,Microsoft YaHei,60,&H00C5B7EE,&H000000FF,&H00190A30,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 特殊02,Microsoft YaHei,60,&H00089EC5,&H000000FF,&H007DDBEA,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 特殊01,KaiTi,80,&H001D1E19,&H000000FF,&H008D8158,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 硬字幕02,百度综艺简体,80,&H00B4CAC5,&H000F0C06,&H004D63A7,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 硬字幕01,Microsoft YaHei,50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 普通字幕,Microsoft YaHei,80,&H00FFFFFF,&H000000FF,&H003F1B18,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 17,百度综艺简体,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 16,哥特式字体,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 15,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 14,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 13,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 11,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 12,Microsoft YaHei,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 10,百度综艺简体,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 彩蛋,FZHei-B01,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,2,1
+Style: Default,FZHei-B01,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,2,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:24.68,0:00:28.31,Default,,0000,0000,0000,,{\an8\fn方正宋黑_GBK\bord0\fs28\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>羅傑·唐納森</i>\N{\an8\fn方正宋黑_GBK\bord0\fs20\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>電影</i>
+Dialogue: 0,0:00:34.68,0:00:42.31,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>{\fs38\bord0\shad0\pos(194,191)\1c&H81827D&}<font color=#ffff00><i>異         種</i>
+Dialogue: 0,0:00:50.38,0:00:56.31,Default,,0000,0000,0000,,{\an8\fn方正宋黑_GBK\bord0\fs28\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>本·金斯利</i>
+Dialogue: 0,0:00:57.68,0:01:03.31,Default,,0000,0000,0000,,{\an8\fn方正宋黑_GBK\bord0\fs28\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>邁克爾·麥德遜</i>
+Dialogue: 0,0:01:05.08,0:01:10.31,Default,,0000,0000,0000,,{\an8\fn方正宋黑_GBK\bord0\fs28\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>阿爾弗雷德·莫利納</i>
+Dialogue: 0,0:01:12.28,0:01:18.31,Default,,0000,0000,0000,,{\an8\fn方正宋黑_GBK\bord0\fs28\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>福雷斯特·惠特克</i>
+Dialogue: 0,0:01:19.28,0:01:25.31,Default,,0000,0000,0000,,{\an8\fn方正宋黑_GBK\bord0\fs20\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>以及</i>\N{\an8\fn方正宋黑_GBK\bord0\fs28\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>馬格·海根伯格</i>
+Dialogue: 0,0:01:27.28,0:01:32.31,Default,,0000,0000,0000,,{\an8\fn方正宋黑_GBK\bord0\fs28\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>韋帕·赫布利</i>\N{\an8\fn方正宋黑_GBK\bord0\fs28\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>米歇爾·威廉姆斯</i>
+Dialogue: 0,0:01:34.28,0:01:40.31,Default,,0000,0000,0000,,{\an8\fn方正宋黑_GBK\bord0\fs20\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>特別介紹</i>\N{\an8\fn方正宋黑_GBK\bord0\fs28\fad(550,550)\shad1\4a0\b1\pos(197,194)\c&HEDFFEE&}<i>娜塔莎·亨斯屈奇</i>
+Dialogue: 0,0:03:23.32,0:03:24.31,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>三十年以來
+Dialogue: 0,0:03:24.49,0:03:26.61,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>強大的無線電
+Dialogue: 0,0:03:26.79,0:03:28.12,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>望遠鏡掃射天空
+Dialogue: 0,0:03:28.29,0:03:30.53,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>尋找異外文化的訊號
+Dialogue: 0,0:03:31.00,0:03:33.78,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>這個計劃名為S.E.T.I.
+Dialogue: 0,0:03:34.00,0:03:37.99,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>就是探索地球之外的生命
+Dialogue: 0,0:03:41.34,0:03:45.13,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>美國政府實驗室 猶他州達格韋市
+Dialogue: 0,0:05:03.22,0:05:04.38,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>氛化物毒氣體
+Dialogue: 0,0:05:18.94,0:05:20.52,Default,,0000,0000,0000,,對不起\N{\rENG}I'm sorry.
+Dialogue: 0,0:05:21.27,0:05:22.94,Default,,0000,0000,0000,,對不起？\N{\rENG}I'm sorry?
+Dialogue: 0,0:06:15.62,0:06:17.49,Default,,0000,0000,0000,,她逃出來了\N{\rENG}Sir, she's breaking out!
+Dialogue: 0,0:06:48.53,0:06:50.02,Default,,0000,0000,0000,,我們去找什麼？\N{\rENG}What are we looking for?
+Dialogue: 0,0:07:00.21,0:07:01.87,Default,,0000,0000,0000,,她跳過圍欄！\N{\rENG}She jumped over the fence!
+Dialogue: 0,0:08:15.41,0:08:18.99,Default,,0000,0000,0000,,她逃離時有兩班火車．駛經這裏\N{\rENG}A couple of trains came through here about the time she escaped.
+Dialogue: 0,0:08:19.41,0:08:22.40,Default,,0000,0000,0000,,在那短時間內 她能走這麼遠？\N{\rENG}Do you think she could have gotten this far in that time?
+Dialogue: 0,0:08:22.66,0:08:24.12,Default,,0000,0000,0000,,她有這麼快嗎？\N{\rENG}Is she that fast?
+Dialogue: 0,0:08:24.33,0:08:26.20,Default,,0000,0000,0000,,她就是這麼快\N{\rENG}She is that fast.
+Dialogue: 0,0:09:09.79,0:09:11.25,Default,,0000,0000,0000,,還有這個\N{\rENG}And this too.
+Dialogue: 0,0:09:12.26,0:09:15.42,Default,,0000,0000,0000,,- 三元一角 - 三元一角？\N{\rENG}- $3. 10. - Three dollars and ten cents?
+Dialogue: 0,0:09:18.47,0:09:21.09,Default,,0000,0000,0000,,- 你的零錢 - 謝謝\N{\rENG}- Your change. - Thank you.
+Dialogue: 0,0:09:21.64,0:09:22.97,Default,,0000,0000,0000,,有什麼可幫你嗎？\N{\rENG}Can I help you?
+Dialogue: 0,0:09:24.35,0:09:26.39,Default,,0000,0000,0000,,總共十七元九毛五\N{\rENG}The total is $ 17.95.
+Dialogue: 0,0:09:30.32,0:09:31.90,Default,,0000,0000,0000,,你的卡\N{\rENG}Here's your card.
+Dialogue: 0,0:09:34.82,0:09:36.73,Default,,0000,0000,0000,,你想買那些嗎？\N{\rENG}Are you gonna buy those?
+Dialogue: 0,0:09:49.33,0:09:51.07,Default,,0000,0000,0000,,旅途愉快\N{\rENG}Have a nice trip.
+Dialogue: 0,0:09:56.67,0:10:01.29,Default,,0000,0000,0000,,是褐色斜紋的帆布袋 有見過嗎？\N{\rENG}It's brown tweed bag, like a duffel. Do you see it anywhere?
+Dialogue: 0,0:10:01.47,0:10:04.96,Default,,0000,0000,0000,,- 先生，不在這裏  - 服務生說是放在手誰車上的\N{\rENG}- Sir, it's not here. - The porter said he put it on the cart.
+Dialogue: 0,0:10:05.18,0:10:07.17,Default,,0000,0000,0000,,這就是手誰車 不過沒有帆布袋\N{\rENG}This is the cart. There's no bag here.
+Dialogue: 0,0:10:28.37,0:10:32.87,Default,,0000,0000,0000,,政府當局說 這是最大型的地震\N{\rENG}Government authorities said it was the largest earthquake to strike...
+Dialogue: 0,0:10:33.13,0:10:34.96,Default,,0000,0000,0000,,他騎著油脂閃電\N{\rENG}He's riding Greased Lightning.
+Dialogue: 0,0:10:35.21,0:10:37.45,Default,,0000,0000,0000,,那是金凱德\N{\rENG}That was Shorty Kincaid.
+Dialogue: 0,0:10:40.59,0:10:42.42,Default,,0000,0000,0000,,請享受風景\N{\rENG}Enjoy the view.
+Dialogue: 0,0:11:13.79,0:11:15.03,Default,,0000,0000,0000,,不好意思\N{\rENG}Excuse me.
+Dialogue: 0,0:11:30.27,0:11:31.80,Default,,0000,0000,0000,,我們不應給別人看到\N{\rENG}We shouldn't be seen together.
+Dialogue: 0,0:11:32.02,0:11:35.56,Default,,0000,0000,0000,,父親死去不久 你認為阿倫會懷疑嗎？\N{\rENG}Father hasn't been dead long. Do you think Arlen suspects?
+Dialogue: 0,0:11:35.77,0:11:38.94,Default,,0000,0000,0000,,不，我們也不是 立刻在一起的\N{\rENG}No. It's not too soon for us to be together.
+Dialogue: 0,0:11:41.78,0:11:42.77,Default,,0000,0000,0000,,請拿出車票\N{\rENG}Tickets.
+Dialogue: 0,0:11:45.45,0:11:47.44,Default,,0000,0000,0000,,你獨自旅行嗎？\N{\rENG}Are you traveling by yourself?
+Dialogue: 0,0:11:47.95,0:11:49.11,Default,,0000,0000,0000,,你十二歲？\N{\rENG}You're 12?
+Dialogue: 0,0:11:51.46,0:11:53.79,Default,,0000,0000,0000,,有人在洛杉磯接你嗎？\N{\rENG}Someone meeting you in Los Angeles?
+Dialogue: 0,0:11:54.88,0:11:57.62,Default,,0000,0000,0000,,當你十一歲吧 那麼你只須付半價\N{\rENG}We'll say you're 11. Then you only pay half price.
+Dialogue: 0,0:12:19.32,0:12:21.10,Default,,0000,0000,0000,,是我們的小女孩做的？\N{\rENG}Our little girl did this?
+Dialogue: 0,0:12:21.32,0:12:22.73,Default,,0000,0000,0000,,她不是小女孩\N{\rENG}She's not a little girl.
+Dialogue: 0,0:12:23.15,0:12:26.69,Default,,0000,0000,0000,,傷口發現的DNA類別和組織 都證實是屬於她的\N{\rENG}DNA typing and material found in those wounds proves it was her.
+Dialogue: 0,0:12:26.91,0:12:30.87,Default,,0000,0000,0000,,她可到任何地方，芝加哥 拉斯維加斯、洛杉磯\N{\rENG}She could be anywhere. Chicago, Las Vegas, Los Angeles, anywhere.
+Dialogue: 0,0:12:31.08,0:12:32.36,Default,,0000,0000,0000,,我們要截停火車\N{\rENG}We should stop the trains.
+Dialogue: 0,0:12:32.58,0:12:36.41,Default,,0000,0000,0000,,鐵路人員和警方查問時 我們怎麼回答？\N{\rENG}And have the railroad and police ask questions we can't answer?
+Dialogue: 0,0:12:37.34,0:12:40.58,Default,,0000,0000,0000,,我們會派人在這些路線上的 每個站守候\N{\rENG}We'll put key personnel at every stop along these lines.
+Dialogue: 0,0:12:41.01,0:12:43.04,Default,,0000,0000,0000,,我要派一個隊伍追蹤她\N{\rENG}I want a team to track her.
+Dialogue: 0,0:12:43.26,0:12:44.50,Default,,0000,0000,0000,,把她搜尋回來\N{\rENG}Hunt her down.
+Dialogue: 0,0:12:46.51,0:12:48.34,Default,,0000,0000,0000,,- 早安，吉爾  - 你好\N{\rENG}- Good morning, Jill. - Hello.
+Dialogue: 0,0:12:48.51,0:12:53.10,Default,,0000,0000,0000,,- 麻煩你照顧我的貓  - 我們會好好照顧他\N{\rENG}- Thanks for taking care of my cat. - We'll take good care of him.
+Dialogue: 0,0:12:53.35,0:12:55.06,Default,,0000,0000,0000,,我很快就會回來\N{\rENG}I won't be gone very long.
+Dialogue: 0,0:12:55.27,0:12:56.85,Default,,0000,0000,0000,,保重\N{\rENG}Take care.
+Dialogue: 0,0:12:58.48,0:12:59.47,Default,,0000,0000,0000,,再見\N{\rENG}Bye-bye.
+Dialogue: 0,0:12:59.65,0:13:02.52,Default,,0000,0000,0000,,你的工作還不順利嗎？\N{\rENG}Are you still having problems with the people at work?
+Dialogue: 0,0:13:02.69,0:13:04.69,Default,,0000,0000,0000,,他們都說我…\N{\rENG}They point their finger at me saying...
+Dialogue: 0,0:13:05.53,0:13:09.11,Default,,0000,0000,0000,,我是怪人，很古怪\N{\rENG}I'm the weird one, I'm the strange one.
+Dialogue: 0,0:13:09.62,0:13:11.53,Default,,0000,0000,0000,,為什麼？因為我有感覺？\N{\rENG}Why? Because I have feelings?
+Dialogue: 0,0:13:11.79,0:13:13.20,Default,,0000,0000,0000,,因我有感應？\N{\rENG}Because I feel?
+Dialogue: 0,0:13:16.62,0:13:18.21,Default,,0000,0000,0000,,門外有人\N{\rENG}There's someone at the door.
+Dialogue: 0,0:13:19.29,0:13:23.46,Default,,0000,0000,0000,,我不打算應門 任何人也可以稍後再來\N{\rENG}I won't answer that. Whoever it is can come back at the end of the hour.
+Dialogue: 0,0:13:24.47,0:13:25.71,Default,,0000,0000,0000,,是找我的\N{\rENG}That's for me.
+Dialogue: 0,0:13:27.55,0:13:30.21,Default,,0000,0000,0000,,抱歉打擾你們 我們需要你幫忙\N{\rENG}Sorry to interrupt. We need your help, Dan.
+Dialogue: 0,0:13:31.06,0:13:32.30,Default,,0000,0000,0000,,我知道\N{\rENG}I know.
+Dialogue: 0,0:13:33.56,0:13:35.22,Default,,0000,0000,0000,,我得先離開了\N{\rENG}Gotta go.
+Dialogue: 0,0:15:38.81,0:15:41.77,Default,,0000,0000,0000,,菲奇先生稍後就會來\N{\rENG}Mr. Fitch will be with you all in just a moment.
+Dialogue: 0,0:15:48.69,0:15:49.93,Default,,0000,0000,0000,,是了…\N{\rENG}Well...
+Dialogue: 0,0:15:51.15,0:15:53.86,Default,,0000,0000,0000,,似乎我們都是為了 相同原因而來\N{\rENG}I guess we all must be here for the same reason...
+Dialogue: 0,0:15:54.57,0:15:55.56,Default,,0000,0000,0000,,不論那是什麼原因\N{\rENG}whatever that is.
+Dialogue: 0,0:15:55.83,0:15:57.16,Default,,0000,0000,0000,,我是丹史密森\N{\rENG}I'm Dan Smithson...
+Dialogue: 0,0:15:58.83,0:16:01.32,Default,,0000,0000,0000,,我也不知道我為何會來\N{\rENG}and I don't know why I'm here either.
+Dialogue: 0,0:16:02.62,0:16:05.96,Default,,0000,0000,0000,,不過他們說需要我，而且這是 重要事情，所以我才來\N{\rENG}But they said they needed me and it was important, so I came.
+Dialogue: 0,0:16:06.79,0:16:08.20,Default,,0000,0000,0000,,你做什麼工作的？\N{\rENG}What do you do, Dan?
+Dialogue: 0,0:16:10.63,0:16:11.87,Default,,0000,0000,0000,,我是心靈感應者\N{\rENG}I'm an empath.
+Dialogue: 0,0:16:14.22,0:16:17.93,Default,,0000,0000,0000,,有時他讓我看別人做的可怕事情\N{\rENG}Sometimes they show me awful things people have done.
+Dialogue: 0,0:16:19.89,0:16:21.55,Default,,0000,0000,0000,,我嘗試告訴他們為何會這樣做\N{\rENG}I try to tell them why they did it.
+Dialogue: 0,0:16:21.89,0:16:23.88,Default,,0000,0000,0000,,你有什麼資格這樣做？\N{\rENG}What qualifies you for that?
+Dialogue: 0,0:16:24.81,0:16:26.72,Default,,0000,0000,0000,,我對事物有深切感受 就是這樣\N{\rENG}I feel things deeply, that's all.
+Dialogue: 0,0:16:29.90,0:16:31.81,Default,,0000,0000,0000,,我現在有什麼感受？\N{\rENG}What am I feeling now?
+Dialogue: 0,0:16:35.91,0:16:39.07,Default,,0000,0000,0000,,你相信沒什麼會影響你\N{\rENG}You wanna believe that nothing affects you...
+Dialogue: 0,0:16:41.33,0:16:43.24,Default,,0000,0000,0000,,你什麼也不怕\N{\rENG}that you're not afraid of anything.
+Dialogue: 0,0:16:44.42,0:16:46.00,Default,,0000,0000,0000,,不過你很好奇\N{\rENG}But you're curious...
+Dialogue: 0,0:16:46.96,0:16:49.00,Default,,0000,0000,0000,,就像我們所有人一樣\N{\rENG}just like the rest of us.
+Dialogue: 0,0:16:51.17,0:16:53.96,Default,,0000,0000,0000,,史蒂文阿登，哈佛人類學系\N{\rENG}Stephen Arden. Harvard Anthropology Department.
+Dialogue: 0,0:16:54.18,0:16:55.92,Default,,0000,0000,0000,,專門研究跨文化行為\N{\rENG}Expert at cross-cultural behavior.
+Dialogue: 0,0:16:56.09,0:16:59.01,Default,,0000,0000,0000,,羅拉貝克，分子生物學家\N{\rENG}Laura Baker. Hi. Molecular biologist.
+Dialogue: 0,0:17:00.60,0:17:03.26,Default,,0000,0000,0000,,你呢？你做什麼的？\N{\rENG}And who are you, and what do you do?
+Dialogue: 0,0:17:04.02,0:17:05.60,Default,,0000,0000,0000,,普雷斯頓倫諾斯\N{\rENG}Preston Lennox.
+Dialogue: 0,0:17:06.44,0:17:08.02,Default,,0000,0000,0000,,我來到這裏\N{\rENG}And if I'm here...
+Dialogue: 0,0:17:08.36,0:17:10.52,Default,,0000,0000,0000,,就證明有災難發生\N{\rENG}the shit has hit the fan.
+Dialogue: 0,0:17:11.11,0:17:13.94,Default,,0000,0000,0000,,倫諾斯先生 你的專長在哪一方面？\N{\rENG}What exactly is your area of specialty, Mr. Lennox?
+Dialogue: 0,0:17:14.70,0:17:18.36,Default,,0000,0000,0000,,偶爾會為政府解決問題\N{\rENG}I'm a freelance solution to our government's problems.
+Dialogue: 0,0:17:19.37,0:17:21.20,Default,,0000,0000,0000,,會是什麼問題？\N{\rENG}What exactly might they be?
+Dialogue: 0,0:17:23.04,0:17:25.95,Default,,0000,0000,0000,,一些別人不愛提及的問題\N{\rENG}The kind people don't usually like to talk about.
+Dialogue: 0,0:17:28.08,0:17:29.79,Default,,0000,0000,0000,,你追捕別人，是吧？\N{\rENG}You hunt people, don't you?
+Dialogue: 0,0:17:35.68,0:17:37.01,Default,,0000,0000,0000,,可以這樣說\N{\rENG}I guess so.
+Dialogue: 0,0:17:47.06,0:17:49.47,Default,,0000,0000,0000,,你在嗎？時候不早了 還看電視\N{\rENG}You in here? It's a little late for Tv.
+Dialogue: 0,0:17:53.90,0:17:55.48,Default,,0000,0000,0000,,你在嗎？\N{\rENG}You in here, honey?
+Dialogue: 0,0:18:47.71,0:18:50.29,Default,,0000,0000,0000,,晚安，我是薩維爾菲奇\N{\rENG}Good evening, I'm Xavier Fitch.
+Dialogue: 0,0:18:50.54,0:18:52.37,Default,,0000,0000,0000,,這次行動由我負責\N{\rENG}I'm in charge of this operation.
+Dialogue: 0,0:18:52.54,0:18:54.70,Default,,0000,0000,0000,,坐靠近一點可以嗎？\N{\rENG}Would you sit a little closer, please?
+Dialogue: 0,0:19:04.56,0:19:07.14,Default,,0000,0000,0000,,1974年11月\N{\rENG}In November of 1974...
+Dialogue: 0,0:19:07.73,0:19:10.09,Default,,0000,0000,0000,,S.E.T.I.的一個小組…\N{\rENG}a small group from S.E.T. I...
+Dialogue: 0,0:19:10.31,0:19:13.39,Default,,0000,0000,0000,,S.E.T.I.就是 〝探索地球之外的生命〞計劃\N{\rENG}S- E-T-I, Search for Extraterrestrial Intelligence...
+Dialogue: 0,0:19:13.56,0:19:15.93,Default,,0000,0000,0000,,利用阿雷西沃的無線電天線\N{\rENG}used radio dishes at Arecibo
+Dialogue: 0,0:19:16.15,0:19:18.19,Default,,0000,0000,0000,,向所有人發放一個訊息\N{\rENG}to send a message to whoever was listening.
+Dialogue: 0,0:19:18.40,0:19:21.11,Default,,0000,0000,0000,,他們發放了250位元的訊息\N{\rENG}They sent a quarter of a kilobyte...
+Dialogue: 0,0:19:21.32,0:19:23.94,Default,,0000,0000,0000,,包括人類DNA的構造\N{\rENG}including structure of human DNA...
+Dialogue: 0,0:19:24.16,0:19:26.24,Default,,0000,0000,0000,,我們太陽系的圖表\N{\rENG}a map of our solar system...
+Dialogue: 0,0:19:26.41,0:19:29.57,Default,,0000,0000,0000,,地球人口等有幫助的事實\N{\rENG}population of the Earth. Helpful facts like that.
+Dialogue: 0,0:19:30.87,0:19:36.41,Default,,0000,0000,0000,,1993年1月 阿雷西沃接收到一個訊息\N{\rENG}In January of 1993, Arecibo received a message back...
+Dialogue: 0,0:19:37.25,0:19:38.87,Default,,0000,0000,0000,,由外太空傳送來的…\N{\rENG}from an extra terrestrial...
+Dialogue: 0,0:19:39.22,0:19:40.67,Default,,0000,0000,0000,,但來歷不明\N{\rENG}unknown source.
+Dialogue: 0,0:19:40.88,0:19:42.09,Default,,0000,0000,0000,,真酷\N{\rENG}That's great.
+Dialogue: 0,0:19:42.39,0:19:44.75,Default,,0000,0000,0000,,地球以外的智慧生物？\N{\rENG}Intelligent life beyond this planet?
+Dialogue: 0,0:19:44.93,0:19:46.17,Default,,0000,0000,0000,,對\N{\rENG}Yes.
+Dialogue: 0,0:19:46.72,0:19:48.93,Default,,0000,0000,0000,,訊息有兩個\NThere were two communications.
+Dialogue: 0,0:19:49.10,0:19:53.69,Default,,0000,0000,0000,,第一個訊息促使 我們發現到甲烷\N{\rENG}The first message turned out to be a superior catalyst for methane.
+Dialogue: 0,0:19:53.90,0:19:55.18,Default,,0000,0000,0000,,我們現在有潛能…\N{\rENG}We now have the potential...
+Dialogue: 0,0:19:55.36,0:19:58.60,Default,,0000,0000,0000,,從這燃料製造無限的能源\N{\rENG}to produce infinite energy from this clean-burning fuel.
+Dialogue: 0,0:19:59.44,0:20:02.78,Default,,0000,0000,0000,,這使我們相信 他們是友善的生物\N{\rENG}This convinced us we were dealing with a friendly intelligence.
+Dialogue: 0,0:20:02.99,0:20:07.45,Default,,0000,0000,0000,,第二個訊息 是一個DNA的新排列\N{\rENG}The second message turned out to be a new sequence of DNA...
+Dialogue: 0,0:20:07.91,0:20:10.90,Default,,0000,0000,0000,,並友善的指示 怎麼與我們的DNA結合\N{\rENG}with friendly instructions on how to combine it with ours.
+Dialogue: 0,0:20:11.08,0:20:15.12,Default,,0000,0000,0000,,那是技術上的數據 該由貝克博士解說\N{\rENG}Here's some technical data. Get feedback from Dr. Baker.
+Dialogue: 0,0:20:15.33,0:20:16.45,Default,,0000,0000,0000,,基本上\N{\rENG}Basically...
+Dialogue: 0,0:20:16.63,0:20:20.12,Default,,0000,0000,0000,,新組合的DNA排列次序\N{\rENG}the new combined DNA sequence...
+Dialogue: 0,0:20:20.34,0:20:22.58,Default,,0000,0000,0000,,被注進一百個…\N{\rENG}was injected into 100...
+Dialogue: 0,0:20:23.34,0:20:25.08,Default,,0000,0000,0000,,人類的卵細胞中\N{\rENG}human ova.
+Dialogue: 0,0:20:28.39,0:20:29.42,Default,,0000,0000,0000,,有七個…\N{\rENG}We got 7...
+Dialogue: 0,0:20:29.64,0:20:30.80,Default,,0000,0000,0000,,產生分裂\N{\rENG}to divide.
+Dialogue: 0,0:20:31.02,0:20:32.60,Default,,0000,0000,0000,,四個逐漸停止了\N{\rENG}Four petered out.
+Dialogue: 0,0:20:32.98,0:20:35.14,Default,,0000,0000,0000,,兩個儲在液體氮氣中\N{\rENG}Two were stored in liquid nitrogen.
+Dialogue: 0,0:20:35.65,0:20:37.81,Default,,0000,0000,0000,,我們讓一個成長\N{\rENG}And we allowed one to grow.
+Dialogue: 0,0:20:38.65,0:20:40.81,Default,,0000,0000,0000,,它的代號是〝西爾〞\N{\rENG}Its code name is "Sil."
+Dialogue: 0,0:20:42.19,0:20:43.81,Default,,0000,0000,0000,,這是兩小時後的形態\N{\rENG}That's after 2 hours.
+Dialogue: 0,0:20:45.32,0:20:46.53,Default,,0000,0000,0000,,- 天\N{\rENG}One day.
+Dialogue: 0,0:20:48.49,0:20:49.48,Default,,0000,0000,0000,,兩天\N{\rENG}Two days.
+Dialogue: 0,0:20:49.66,0:20:51.99,Default,,0000,0000,0000,,- 天啊  - 這成長過程真驚人\N{\rENG}- My God. - This growth is amazing.
+Dialogue: 0,0:20:52.25,0:20:53.66,Default,,0000,0000,0000,,- 星期\N{\rENG}A week.
+Dialogue: 0,0:20:55.29,0:20:56.50,Default,,0000,0000,0000,,- 是女孩子  - 對\N{\rENG}- It's a girl. - Yes.
+Dialogue: 0,0:20:58.50,0:21:01.49,Default,,0000,0000,0000,,我們製造一個雌性 那麼她就較溫馴\N{\rENG}We decided to make it female so it would be more docile...
+Dialogue: 0,0:21:01.71,0:21:04.71,Default,,0000,0000,0000,,- 和較易控制  - 溫馴和容易受控？\N{\rENG}and controllable. - More docile and controllable, huh?
+Dialogue: 0,0:21:05.51,0:21:08.09,Default,,0000,0000,0000,,你們消息真不靈通\N{\rENG}Well, I guess you guys don't get out much.
+Dialogue: 0,0:21:09.68,0:21:12.89,Default,,0000,0000,0000,,這是她出生後一個月的狀態\N{\rENG}That's her 1 month after she was born.
+Dialogue: 0,0:21:13.43,0:21:16.05,Default,,0000,0000,0000,,你把她關在那兒？\N{\rENG}So you kept her caged in there?
+Dialogue: 0,0:21:16.23,0:21:18.69,Default,,0000,0000,0000,,隔離她比較安全\N{\rENG}It was safer to keep her isolated.
+Dialogue: 0,0:21:19.02,0:21:21.01,Default,,0000,0000,0000,,她不喜歡這樣\N{\rENG}She didn't like being locked up.
+Dialogue: 0,0:21:21.48,0:21:23.02,Default,,0000,0000,0000,,她不喜歡獨自一人\N{\rENG}She didn't like being alone.
+Dialogue: 0,0:21:23.40,0:21:24.77,Default,,0000,0000,0000,,是嗎？\N{\rENG}Didn't she?
+Dialogue: 0,0:21:28.95,0:21:31.94,Default,,0000,0000,0000,,她在隱藏身體裏的一些東西\N{\rENG}She's hiding something. Something inside.
+Dialogue: 0,0:21:32.62,0:21:34.03,Default,,0000,0000,0000,,說得沒錯\N{\rENG}You're right, Dan.
+Dialogue: 0,0:21:34.46,0:21:38.45,Default,,0000,0000,0000,,這是她三個月大的情形 留心看\N{\rENG}This is three months after she was born. Watch carefully.
+Dialogue: 0,0:21:40.54,0:21:42.28,Default,,0000,0000,0000,,那是什麼？\N{\rENG}What the hell was that?
+Dialogue: 0,0:21:42.71,0:21:43.95,Default,,0000,0000,0000,,把錄影帶轉回\N{\rENG}Back the tape up.
+Dialogue: 0,0:21:47.30,0:21:48.79,Default,,0000,0000,0000,,看她雙眼\N{\rENG}Watch her eyes.
+Dialogue: 0,0:21:49.39,0:21:51.80,Default,,0000,0000,0000,,眼睛急速跳動，她在做夢\N{\rENG}Rapid eye movement. She's dreaming.
+Dialogue: 0,0:21:54.06,0:21:58.39,Default,,0000,0000,0000,,- 可怕的噩夢  - 是焦慮造成的反應\N{\rENG}- She's having horrible nightmares. - It's some kind of anxiety reaction.
+Dialogue: 0,0:21:58.90,0:22:00.18,Default,,0000,0000,0000,,我也感到憂慮\N{\rENG}Got me a little anxious.
+Dialogue: 0,0:22:00.40,0:22:03.39,Default,,0000,0000,0000,,也使研究隊伍有點擔憂\N{\rENG}It made the research team a little anxious too...
+Dialogue: 0,0:22:03.90,0:22:06.98,Default,,0000,0000,0000,,所以我們決定中止實驗\N{\rENG}so the decision was made to terminate the experiment...
+Dialogue: 0,0:22:07.57,0:22:10.11,Default,,0000,0000,0000,,轉而研究我們要應付什麼\N{\rENG}to run more research to see what we were dealing with.
+Dialogue: 0,0:22:13.24,0:22:15.24,Default,,0000,0000,0000,,你們打算毒死她？\N{\rENG}You were going to gas her?
+Dialogue: 0,0:22:15.79,0:22:17.45,Default,,0000,0000,0000,,那就是我們的決定\N{\rENG}That was the decision.
+Dialogue: 0,0:22:19.25,0:22:20.79,Default,,0000,0000,0000,,那使你很難受\N{\rENG}It makes you feel mad.
+Dialogue: 0,0:22:22.34,0:22:24.87,Default,,0000,0000,0000,,要殺死她你很難過，對嗎？\N{\rENG}You feel mad that you had to kill her, don't you?
+Dialogue: 0,0:22:25.09,0:22:26.42,Default,,0000,0000,0000,,我不知道\N{\rENG}I don't know.
+Dialogue: 0,0:22:33.76,0:22:35.10,Default,,0000,0000,0000,,對\N{\rENG}Yes.
+Dialogue: 0,0:22:39.65,0:22:45.44,Default,,0000,0000,0000,,昨天在鹽湖城附近的 一輛火車內發現一具屍體\N{\rENG}Yesterday the body of a transient was found in a boxcar near Salt Lake City.
+Dialogue: 0,0:22:45.99,0:22:48.40,Default,,0000,0000,0000,,初步DNA測試所得的結論是\N{\rENG}Preliminary DNA tests conclude...
+Dialogue: 0,0:22:48.65,0:22:51.82,Default,,0000,0000,0000,,他是被我們的西爾所殺的\N{\rENG}he was killed by our creation, by our Sil.
+Dialogue: 0,0:22:52.07,0:22:53.53,Default,,0000,0000,0000,,發現到其他屍體嗎？\N{\rENG}Found any other bodies?
+Dialogue: 0,0:22:53.74,0:22:55.23,Default,,0000,0000,0000,,- 還沒  - 晚一點就會\N{\rENG}- Not yet. - You will.
+Dialogue: 0,0:22:55.58,0:22:57.11,Default,,0000,0000,0000,,她是個掠食者\N{\rENG}She's a predator.
+Dialogue: 0,0:22:57.33,0:22:59.04,Default,,0000,0000,0000,,她雙眼在前面\N{\rENG}Her eyes are in front...
+Dialogue: 0,0:23:00.29,0:23:03.20,Default,,0000,0000,0000,,她能夠判斷跟獵物的距離\N{\rENG}so she can judge the distance to her prey.
+Dialogue: 0,0:23:03.46,0:23:04.54,Default,,0000,0000,0000,,對\N{\rENG}That's right.
+Dialogue: 0,0:23:04.75,0:23:06.12,Default,,0000,0000,0000,,你從哪裏學會的？\N{\rENG}Where'd you learn that?
+Dialogue: 0,0:23:06.71,0:23:09.55,Default,,0000,0000,0000,,探索頻道播放的節目\N{\rENG}I saw it on the Discovery Channel.
+Dialogue: 0,0:23:11.05,0:23:13.04,Default,,0000,0000,0000,,我也有看那節目\N{\rENG}I caught that show myself.
+Dialogue: 0,0:23:13.76,0:23:16.22,Default,,0000,0000,0000,,- 倫諾斯先生  - 什麼事？\N{\rENG}- Mr. Lennox. - Yeah?
+Dialogue: 0,0:23:16.39,0:23:17.85,Default,,0000,0000,0000,,我們…\N{\rENG}As the...
+Dialogue: 0,0:23:18.18,0:23:22.02,Default,,0000,0000,0000,,都不是科學家 你們明白在發生什麼事嗎？\N{\rENG}non-scientist amongst us, are you clear about what's going on?
+Dialogue: 0,0:23:22.94,0:23:24.18,Default,,0000,0000,0000,,明白\N{\rENG}I think so.
+Dialogue: 0,0:23:25.77,0:23:27.81,Default,,0000,0000,0000,,你得到外太空的一個程式\N{\rENG}You created a monster...
+Dialogue: 0,0:23:28.36,0:23:31.02,Default,,0000,0000,0000,,以此製造了一個怪物\N{\rENG}with a formula you got from outer space.
+Dialogue: 0,0:23:31.70,0:23:35.32,Default,,0000,0000,0000,,她逃走了 你想我們追尋和殺死她\N{\rENG}The damn thing got away. Now you want us to hunt it down and kill it.
+Dialogue: 0,0:23:36.79,0:23:38.32,Default,,0000,0000,0000,,對不對？\N{\rENG}Now, is that pretty close?
+Dialogue: 0,0:23:38.83,0:23:40.24,Default,,0000,0000,0000,,可以這樣說\N{\rENG}I guess.
+Dialogue: 0,0:23:40.46,0:23:41.70,Default,,0000,0000,0000,,你不想我們\N{\rENG}You don't want us...
+Dialogue: 0,0:23:41.96,0:23:44.99,Default,,0000,0000,0000,,活捉她和研究她嗎？\N{\rENG}to capture her alive so that we can study her?
+Dialogue: 0,0:23:46.38,0:23:50.75,Default,,0000,0000,0000,,這是一次純尋找 和純消滅的行動\N{\rENG}Laura, I think this is strictly a search and destroy operation.
+Dialogue: 0,0:23:52.18,0:23:55.46,Default,,0000,0000,0000,,向我求助的人 都想消滅他們的目標\N{\rENG}Nobody ever asked me to find anything they didn't want dead.
+Dialogue: 0,0:23:56.81,0:23:58.01,Default,,0000,0000,0000,,我為你難過\N{\rENG}I'm sorry for you.
+Dialogue: 0,0:23:59.14,0:24:01.01,Default,,0000,0000,0000,,是啊\N{\rENG}Yeah, well...
+Dialogue: 0,0:24:01.19,0:24:02.68,Default,,0000,0000,0000,,謝謝你\N{\rENG}Thank you, Dan.
+Dialogue: 0,0:24:03.65,0:24:05.18,Default,,0000,0000,0000,,我替她難過\N{\rENG}I'm sorry for her.
+Dialogue: 0,0:24:07.86,0:24:10.02,Default,,0000,0000,0000,,請注意\N{\rENG}May I have your attention, please?
+Dialogue: 0,0:24:10.19,0:24:14.44,Default,,0000,0000,0000,,歡迎到洛杉磯來 這是沙漠之星的終站\N{\rENG}Welcome to Los Angeles. This is the terminal stop for the Desert Star.
+Dialogue: 0,0:24:14.66,0:24:17.19,Default,,0000,0000,0000,,請所有乘客離開\N{\rENG}All passengers please disembark.
+Dialogue: 0,0:24:30.71,0:24:32.50,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>洛杉磯
+Dialogue: 0,0:25:35.95,0:25:37.94,Default,,0000,0000,0000,,有壞事發生了\N{\rENG}Something bad happened here.
+Dialogue: 0,0:25:38.28,0:25:40.11,Default,,0000,0000,0000,,- 天啊 - 她的喉給壓碎了\N{\rENG}- No shit. - Crushed her larynx.
+Dialogue: 0,0:25:40.28,0:25:41.99,Default,,0000,0000,0000,,她很怕\N{\rENG}She was afraid.
+Dialogue: 0,0:25:42.20,0:25:44.61,Default,,0000,0000,0000,,她害怕、驚慌\N{\rENG}She's scared, frightened.
+Dialogue: 0,0:25:44.79,0:25:47.70,Default,,0000,0000,0000,,還很餓，她吃了很多\N{\rENG}Hungry too. She's been eating like a horse.
+Dialogue: 0,0:25:48.21,0:25:50.54,Default,,0000,0000,0000,,她顯然不是在節食\N{\rENG}Our girl is definitely not on a diet.
+Dialogue: 0,0:25:51.80,0:25:54.00,Default,,0000,0000,0000,,她要提早儲存能量\N{\rENG}She's storing calories for something.
+Dialogue: 0,0:25:54.21,0:25:55.62,Default,,0000,0000,0000,,有頭緒嗎？\N{\rENG}Any ideas?
+Dialogue: 0,0:25:57.22,0:25:58.46,Default,,0000,0000,0000,,我的天\N{\rENG}Oh, my...
+Dialogue: 0,0:26:00.26,0:26:01.97,Default,,0000,0000,0000,,那是…\N{\rENG}Well, that's...
+Dialogue: 0,0:26:02.56,0:26:04.47,Default,,0000,0000,0000,,看起來像是…\N{\rENG}That looks like some sort of...
+Dialogue: 0,0:26:04.89,0:26:07.51,Default,,0000,0000,0000,,蛹，像是繭\N{\rENG}chrysalis. Some kind of cocoon.
+Dialogue: 0,0:26:07.94,0:26:10.14,Default,,0000,0000,0000,,我們在尋找一隻巨型飛峨嗎？\N{\rENG}What are we looking for, a giant moth?
+Dialogue: 0,0:26:12.78,0:26:14.56,Default,,0000,0000,0000,,若那是繭...\N{\rENG}If that is a cocoon...
+Dialogue: 0,0:26:14.74,0:26:17.27,Default,,0000,0000,0000,,她現在一定已完全成長\N{\rENG}She'll be fully-grown now. - Fully-grown.
+Dialogue: 0,0:26:17.45,0:26:19.94,Default,,0000,0000,0000,,或許她因此而未被我們發現\N{\rENG}Maybe that's how she got by our people.
+Dialogue: 0,0:26:20.16,0:26:21.77,Default,,0000,0000,0000,,他們只在尋找一個孩子\N{\rENG}They were looking for a child.
+Dialogue: 0,0:26:22.12,0:26:23.65,Default,,0000,0000,0000,,她的確是孩子\N{\rENG}She is a child.
+Dialogue: 0,0:26:24.87,0:26:27.70,Default,,0000,0000,0000,,這兒很臭，我出去了\N{\rENG}It stinks in here. I'm going outside.
+Dialogue: 0,0:26:34.84,0:26:38.63,Default,,0000,0000,0000,,向列車長取身份證 和信用卡號碼\N{\rENG}Get the conductors' ID and credit card numbers on your computer.
+Dialogue: 0,0:26:38.84,0:26:40.88,Default,,0000,0000,0000,,列車內沒有它們影蹤\N{\rENG}There's no sign of them on the train.
+Dialogue: 0,0:26:41.35,0:26:44.01,Default,,0000,0000,0000,,- 她可能帶走了他們 - 交給我辦\N{\rENG}- Let's assume she took them. - I'll see to that.
+Dialogue: 0,0:26:44.22,0:26:45.88,Default,,0000,0000,0000,,她感到受威脅時就會殺人\N{\rENG}She kills if she's threatened.
+Dialogue: 0,0:26:46.73,0:26:49.51,Default,,0000,0000,0000,,而她是絕無悔意的\N{\rENG}And she has no remorse about it. None.
+Dialogue: 0,0:26:49.73,0:26:52.06,Default,,0000,0000,0000,,洛杉磯絕對適合她\N{\rENG}Of course, Los Angeles is perfect for her.
+Dialogue: 0,0:26:52.36,0:26:53.85,Default,,0000,0000,0000,,這是一個未來的城市\N{\rENG}It's a city of the future.
+Dialogue: 0,0:26:54.02,0:26:55.26,Default,,0000,0000,0000,,什麼事都有可能\N{\rENG}Anything goes.
+Dialogue: 0,0:26:55.44,0:26:58.23,Default,,0000,0000,0000,,人口流動性強 大家都是陌生人\N{\rENG}Totally mobile population. Everyone's a stranger.
+Dialogue: 0,0:26:58.70,0:27:00.48,Default,,0000,0000,0000,,無論她做什麼\N{\rENG}Very little is taboo or unacceptable.
+Dialogue: 0,0:27:00.66,0:27:02.69,Default,,0000,0000,0000,,都不會有人察覺\N{\rENG}Whatever she does, no one will notice her.
+Dialogue: 0,0:27:02.87,0:27:05.07,Default,,0000,0000,0000,,隨你怎說 所以…\N{\rENG}Well, whatever. So...
+Dialogue: 0,0:27:06.08,0:27:09.04,Default,,0000,0000,0000,,洛杉磯將是我們作戰的地方\N{\rENG}Los Angeles is where the battle will be fought...
+Dialogue: 0,0:27:10.42,0:27:11.75,Default,,0000,0000,0000,,我們要勝利\N{\rENG}...and won.
+Dialogue: 0,0:27:37.48,0:27:39.27,Default,,0000,0000,0000,,你看起來好漂亮\N{\rENG}You look very pretty.
+Dialogue: 0,0:27:41.16,0:27:42.57,Default,,0000,0000,0000,,有一百塊的嗎？\N{\rENG}Do you have a hundred?
+Dialogue: 0,0:27:45.08,0:27:46.32,Default,,0000,0000,0000,,在這\N{\rENG}Here we are.
+Dialogue: 0,0:27:47.91,0:27:52.25,Default,,0000,0000,0000,,小心你的錢 很多人不會像我一樣老實\N{\rENG}Be more careful with your money. Not everybody's as honest as me.
+Dialogue: 0,0:27:55.34,0:27:56.75,Default,,0000,0000,0000,,你從外地來的？\N{\rENG}Are you foreign?
+Dialogue: 0,0:28:00.09,0:28:01.25,Default,,0000,0000,0000,,會說英語嗎？\N{\rENG}Do you speak English?
+Dialogue: 0,0:28:02.43,0:28:05.76,Default,,0000,0000,0000,,- 會 - 拿著\N{\rENG}- Yes. - Here. You keep this.
+Dialogue: 0,0:28:07.10,0:28:09.34,Default,,0000,0000,0000,,讓我替你拿下來\N{\rENG}Here, let me take this.
+Dialogue: 0,0:28:10.64,0:28:11.88,Default,,0000,0000,0000,,小心\N{\rENG}Be careful here.
+Dialogue: 0,0:28:12.19,0:28:13.43,Default,,0000,0000,0000,,我會\N{\rENG}Yes.
+Dialogue: 0,0:28:19.44,0:28:21.18,Default,,0000,0000,0000,,小心\N{\rENG}Watch your step.
+Dialogue: 0,0:28:33.54,0:28:35.62,Default,,0000,0000,0000,,我們的實驗室 〝訪客基地一號〞\N{\rENG}Our laboratory, Visitor Base One...
+Dialogue: 0,0:28:35.79,0:28:40.29,Default,,0000,0000,0000,,...正在遷移到大學現在沒用的 病毒研究實驗室\N{\rENG}...is being moved to some empty virus research labs at the university.
+Dialogue: 0,0:28:40.46,0:28:44.00,Default,,0000,0000,0000,,他們正在搬運儀器 八點就可以運作\N{\rENG}They're moving our equipment now. It'll be operational by 8:00.
+Dialogue: 0,0:28:44.22,0:28:47.46,Default,,0000,0000,0000,,你們先進自己房間 十五分鐘後會合\N{\rENG}Check into your rooms. Everyone out front in 15 minutes. We'll go over.
+Dialogue: 0,0:28:47.64,0:28:49.13,Default,,0000,0000,0000,,我們將做什麼？\N{\rENG}What will we do?
+Dialogue: 0,0:28:49.31,0:28:51.64,Default,,0000,0000,0000,,處理從火車上得來的證據\N{\rENG}Process the evidence from the train.
+Dialogue: 0,0:28:51.81,0:28:55.35,Default,,0000,0000,0000,,我們能用那生物的DNA 繁殖它嗎？\N{\rENG}Could we try growing this creature with its own DNA?
+Dialogue: 0,0:28:55.52,0:29:00.69,Default,,0000,0000,0000,,這次不結合我們的DNA 看看它的脆弱程度\N{\rENG}We do a version without ours this time and investigate its vulnerabilities.
+Dialogue: 0,0:29:00.98,0:29:01.97,Default,,0000,0000,0000,,主意不錯\N{\rENG}That'd be good.
+Dialogue: 0,0:29:02.32,0:29:04.69,Default,,0000,0000,0000,,- 我也想知道 - 有道理\N{\rENG}- Then I could know how it feels. - Makes sense.
+Dialogue: 0,0:29:04.91,0:29:07.65,Default,,0000,0000,0000,,這個人類生命形態可能是掩飾\N{\rENG}This human life form could be a mask. Without the camouflage...
+Dialogue: 0,0:29:07.82,0:29:10.82,Default,,0000,0000,0000,,沒錯，至少可讓我們知道 在對付什麼東西\N{\rENG}You're right. At least we'd know what we were dealing with.
+Dialogue: 0,0:29:58.83,0:30:00.54,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>薩哈拉汽車旅館
+Dialogue: 0,0:30:08.59,0:30:12.05,Default,,0000,0000,0000,,剛有兩個笨蛋跑掉，我有客人\N{\rENG}A couple of bozos just ran out. I got a customer.
+Dialogue: 0,0:30:12.56,0:30:15.55,Default,,0000,0000,0000,,- 可以幫你嗎？ - 我想要個房間\N{\rENG}- Yes, young lady. Can I help you? - I want a room.
+Dialogue: 0,0:30:15.85,0:30:20.60,Default,,0000,0000,0000,,連稅合共六十二元 剛好是蜜月套房的價錢\N{\rENG}62, including tax. That'll just about cover the Honeymoon Suite.
+Dialogue: 0,0:30:40.08,0:30:41.74,Default,,0000,0000,0000,,你好，你經常來嗎？\N{\rENG}Hi. Come here often?
+Dialogue: 0,0:30:42.96,0:30:44.29,Default,,0000,0000,0000,,你的星座是什麼？\N{\rENG}What's your sign?
+Dialogue: 0,0:30:54.47,0:30:56.46,Default,,0000,0000,0000,,厭倦了褐色的頭髮？\N{\rENG}Tired of brunette?
+Dialogue: 0,0:30:56.93,0:30:58.39,Default,,0000,0000,0000,,改變\N{\rENG}Change.
+Dialogue: 0,0:30:58.60,0:31:00.93,Default,,0000,0000,0000,,改變你頭髮的顏色\N{\rENG}Change the color of your hair.
+Dialogue: 0,0:31:01.15,0:31:02.48,Default,,0000,0000,0000,,〝頭髮色素〞\N{\rENG}Color-Tress.
+Dialogue: 0,0:31:10.66,0:31:12.99,Default,,0000,0000,0000,,我放大倍數\N{\rENG}I've increased the magnification.
+Dialogue: 0,0:31:18.66,0:31:22.33,Default,,0000,0000,0000,,當我刺破細胞 外來的DNA就會加進去\N{\rENG}When I pierce the cell, the foreign DNA will be introduced.
+Dialogue: 0,0:31:33.35,0:31:34.59,Default,,0000,0000,0000,,豈此有理\N{\rENG}Shit!
+Dialogue: 0,0:31:35.18,0:31:37.01,Default,,0000,0000,0000,,攝影機壞了\N{\rENG}The camera's gone down.
+Dialogue: 0,0:31:38.31,0:31:39.30,Default,,0000,0000,0000,,不好意思\N{\rENG}Excuse me.
+Dialogue: 0,0:31:40.14,0:31:41.63,Default,,0000,0000,0000,,你有另外一部嗎？\N{\rENG}Do you have a replacement camera?
+Dialogue: 0,0:31:41.85,0:31:45.47,Default,,0000,0000,0000,,有，不過替換需要些時間\N{\rENG}We do, but it'll take time for the technician to replace it.
+Dialogue: 0,0:31:45.69,0:31:49.35,Default,,0000,0000,0000,,這種事經常在我實驗室發生 很簡單\N{\rENG}No. This happens in my lab all the time. It's simple to replace it.
+Dialogue: 0,0:31:49.53,0:31:51.27,Default,,0000,0000,0000,,你會替換？\N{\rENG}You saying you can do it?
+Dialogue: 0,0:31:51.49,0:31:54.23,Default,,0000,0000,0000,,當然，我需要人幫忙\N{\rENG}Sure I can. I just need somebody to give me a hand.
+Dialogue: 0,0:31:54.41,0:31:57.65,Default,,0000,0000,0000,,技師不可以進去，是機密\N{\rENG}I don't want technicians in there. This is classified.
+Dialogue: 0,0:31:57.87,0:31:59.11,Default,,0000,0000,0000,,我去\N{\rENG}I'll do it.
+Dialogue: 0,0:32:00.66,0:32:01.87,Default,,0000,0000,0000,,我去\N{\rENG}I'll do it.
+Dialogue: 0,0:32:02.04,0:32:05.00,Default,,0000,0000,0000,,- 夠爽快，我喜歡 - 我就是這樣的\N{\rENG}- Man of action, I like that. - That's me.
+Dialogue: 0,0:32:15.47,0:32:17.51,Default,,0000,0000,0000,,請替我扭開那一邊，好嗎？\N{\rENG}Can you get that one for me?
+Dialogue: 0,0:32:40.70,0:32:42.82,Default,,0000,0000,0000,,給我攝影機\N{\rENG}Give me the camera.
+Dialogue: 0,0:32:55.22,0:32:58.26,Default,,0000,0000,0000,,有些不對勁\N{\rENG}Something's... Something's wrong.
+Dialogue: 0,0:33:04.35,0:33:06.01,Default,,0000,0000,0000,,糟，已經開始了\N{\rENG}Christ, It's started already.
+Dialogue: 0,0:33:06.90,0:33:09.68,Default,,0000,0000,0000,,- 把蓋子蓋上 - 什麼？\N{\rENG}- It's started. Get the top back on. - What?
+Dialogue: 0,0:33:09.86,0:33:11.97,Default,,0000,0000,0000,,把蓋子蓋上\N{\rENG}Laura, Press, get the top back on.
+Dialogue: 0,0:33:13.24,0:33:14.57,Default,,0000,0000,0000,,給你\N{\rENG}Here you go.
+Dialogue: 0,0:33:15.70,0:33:17.53,Default,,0000,0000,0000,,她已經把細胞注入了\N{\rENG}She must have penetrated the cell.
+Dialogue: 0,0:33:19.45,0:33:20.57,Default,,0000,0000,0000,,- 他媽的 - 那是什麼？\N{\rENG}- Shit. - What was that?
+Dialogue: 0,0:33:20.74,0:33:21.86,Default,,0000,0000,0000,,他弄掉了螺釘\N{\rENG}He dropped the bolt.
+Dialogue: 0,0:33:23.75,0:33:26.53,Default,,0000,0000,0000,,- 去找螺釘，蓋上蓋子 - 我正在試\N{\rENG}- Find the bolt. Get the top on. - I'm looking, Fitch.
+Dialogue: 0,0:33:28.46,0:33:29.95,Default,,0000,0000,0000,,他們聽不到嗎？\N{\rENG}Can they hear me in there?
+Dialogue: 0,0:33:30.13,0:33:31.41,Default,,0000,0000,0000,,你們快點…\N{\rENG}Laura, Press...
+Dialogue: 0,0:33:31.88,0:33:34.71,Default,,0000,0000,0000,,- 蓋上蓋子，我就讓你們出來 - 它去哪了？\N{\rENG}...get the top on, then I'll let you out. - Where'd it go?
+Dialogue: 0,0:33:38.80,0:33:41.39,Default,,0000,0000,0000,,- 它從鐵絲網掉下去了 - 你可提起它嗎？\N{\rENG}- It fell through the grate. - Can you lift it up?
+Dialogue: 0,0:33:44.81,0:33:47.05,Default,,0000,0000,0000,,- 移不動它 - 它不動\N{\rENG}- It's not gonna move. - This isn't going anywhere.
+Dialogue: 0,0:33:47.27,0:33:48.76,Default,,0000,0000,0000,,- 提不起來 - 普雷斯頓…\N{\rENG}- No, can't get it! - Press...
+Dialogue: 0,0:33:48.94,0:33:50.77,Default,,0000,0000,0000,,...找那螺釘！\N{\rENG}...you gotta get the bolt!
+Dialogue: 0,0:33:50.94,0:33:54.81,Default,,0000,0000,0000,,- 我移不動那鐵絲網，它被悍接了 - 天啊\N{\rENG}- Can't get it. The floor's welded down. - Oh, my God.
+Dialogue: 0,0:33:55.15,0:33:56.77,Default,,0000,0000,0000,,天啊\N{\rENG}Press. Oh, my God.
+Dialogue: 0,0:33:56.95,0:33:59.11,Default,,0000,0000,0000,,- 我從沒見過像這樣的東西 - 天啊\N{\rENG}- I've never seen anything like this. - Holy shit.
+Dialogue: 0,0:33:59.32,0:34:00.69,Default,,0000,0000,0000,,不能讓他們出來\N{\rENG}I can't let them out.
+Dialogue: 0,0:34:00.87,0:34:03.32,Default,,0000,0000,0000,,- 看 - 快點\N{\rENG}- Press, look. - Come on.
+Dialogue: 0,0:34:04.79,0:34:06.28,Default,,0000,0000,0000,,讓我們出來！\N{\rENG}Fitch, let us out of here!
+Dialogue: 0,0:34:06.75,0:34:08.36,Default,,0000,0000,0000,,開門！\N{\rENG}Open the goddamn door!
+Dialogue: 0,0:34:08.58,0:34:11.75,Default,,0000,0000,0000,,- 我要知道那裏面是什麼東西！ - 開門\N{\rENG}- Not until I know what's in there! - Open it now!
+Dialogue: 0,0:34:11.92,0:34:13.46,Default,,0000,0000,0000,,- 讓他們出來 - 不行\N{\rENG}- Let them out. - I can't!
+Dialogue: 0,0:34:13.63,0:34:15.92,Default,,0000,0000,0000,,- 開門 - 讓我們出來\N{\rENG}- Open up the fucking door! - Let us out!
+Dialogue: 0,0:34:16.26,0:34:19.97,Default,,0000,0000,0000,,- 告訴我它會停止生長的 - 不會，放他們出來！\N{\rENG}- Tell me it'll stop growing, Dan. - It's not, let them out!
+Dialogue: 0,0:34:23.22,0:34:25.01,Default,,0000,0000,0000,,開門！\N{\rENG}Open up the door!
+Dialogue: 0,0:34:25.18,0:34:26.67,Default,,0000,0000,0000,,普雷斯頓\N{\rENG}Press, Press.
+Dialogue: 0,0:34:28.14,0:34:29.55,Default,,0000,0000,0000,,這是什麼怪物？!\N{\rENG}What the fuck is that?!
+Dialogue: 0,0:34:29.77,0:34:32.14,Default,,0000,0000,0000,,去另一扇門\N{\rENG}Laura, get to the other door!
+Dialogue: 0,0:34:32.44,0:34:34.40,Default,,0000,0000,0000,,- 放她出來！ - 不可以！\N{\rENG}- Let her out, Fitch! - I can't!
+Dialogue: 0,0:34:34.65,0:34:36.44,Default,,0000,0000,0000,,- 讓她走！ - 不可以\N{\rENG}- Let her out! - I can't!
+Dialogue: 0,0:34:36.65,0:34:38.31,Default,,0000,0000,0000,,- 去你的 - 讓她出來\N{\rENG}- You motherfucker! - Let her out!
+Dialogue: 0,0:34:38.49,0:34:40.98,Default,,0000,0000,0000,,- 你一定要讓他們出來 - 我無法按住它\N{\rENG}- You've gotta let them out! - I can't hold it in!
+Dialogue: 0,0:34:41.20,0:34:42.48,Default,,0000,0000,0000,,走！\N{\rENG}Get out of the way!
+Dialogue: 0,0:34:42.66,0:34:44.65,Default,,0000,0000,0000,,我要燒掉它！\N{\rENG}I'm gonna burn it! Out of the way!
+Dialogue: 0,0:34:48.33,0:34:51.45,Default,,0000,0000,0000,,- 這是什麼東西？ - 兩分鐘後這房間就會被燒燬\N{\rENG}- What is this thing? - In 2 minutes, I'm burning the room!
+Dialogue: 0,0:34:52.04,0:34:53.83,Default,,0000,0000,0000,,我必須這麼做\N{\rENG}I have to do it!
+Dialogue: 0,0:34:54.05,0:34:55.50,Default,,0000,0000,0000,,在兩分鐘內消滅它\N{\rENG}You have two minutes to kill it.
+Dialogue: 0,0:34:56.01,0:34:58.92,Default,,0000,0000,0000,,截斷煤氣管，用它來噴火\N{\rENG}Disconnect the gas line. Use it as a flamethrower.
+Dialogue: 0,0:35:06.10,0:35:07.59,Default,,0000,0000,0000,,小心\N{\rENG}Laura, watch out!
+Dialogue: 0,0:35:10.52,0:35:12.14,Default,,0000,0000,0000,,- 哪兒？ - 在管子裏！\N{\rENG}- Where'd it go? - In the pipes!
+Dialogue: 0,0:35:12.36,0:35:13.85,Default,,0000,0000,0000,,- 開門！ - 住嘴！\N{\rENG}- Open the door! - Shut up, Dan!
+Dialogue: 0,0:35:17.53,0:35:19.36,Default,,0000,0000,0000,,剩下一分鐘\N{\rENG}One minute remaining.
+Dialogue: 0,0:35:31.54,0:35:32.95,Default,,0000,0000,0000,,羅拉\N{\rENG}Laura...
+Dialogue: 0,0:35:33.38,0:35:35.71,Default,,0000,0000,0000,,它不動了，我想我殺了它\N{\rENG}It stopped moving. I think I killed it.
+Dialogue: 0,0:35:36.96,0:35:38.75,Default,,0000,0000,0000,,它死了！開門！\N{\rENG}It's dead! Open the door!
+Dialogue: 0,0:35:38.97,0:35:40.71,Default,,0000,0000,0000,,讓他們出來\N{\rENG}It's dead, Fitch. Let them out.
+Dialogue: 0,0:35:44.72,0:35:47.51,Default,,0000,0000,0000,,糟，它還沒死\N{\rENG}Oh, God, it's not dead.
+Dialogue: 0,0:35:55.07,0:35:57.02,Default,,0000,0000,0000,,我們怎麼辦？\N{\rENG}- Shit. - What'll we do?
+Dialogue: 0,0:35:57.23,0:35:58.72,Default,,0000,0000,0000,,還剩三十秒\N{\rENG}30 seconds remaining.
+Dialogue: 0,0:35:58.90,0:36:01.56,Default,,0000,0000,0000,,- 時間不多了，快點 - 開門\N{\rENG}- There's not much time. Let's go. - Open the door!
+Dialogue: 0,0:36:01.74,0:36:03.48,Default,,0000,0000,0000,,- 快讓他們出來 - 不行\N{\rENG}- Let them out. - I can't do that.
+Dialogue: 0,0:36:03.70,0:36:05.61,Default,,0000,0000,0000,,- 我要依循協議書 - 什麼協議書？\N{\rENG}- I have to follow protocol! - What protocol?!
+Dialogue: 0,0:36:05.83,0:36:07.61,Default,,0000,0000,0000,,做這個實驗的規則\N{\rENG}The protocols by which we're doing this!
+Dialogue: 0,0:36:07.91,0:36:10.49,Default,,0000,0000,0000,,你並沒告訴他們\N{\rENG}You didn't tell them that before they went in.
+Dialogue: 0,0:36:10.87,0:36:13.16,Default,,0000,0000,0000,,- 讓他們出來 - 12 , 11 , 10…\N{\rENG}- Fitch, let them out. - Twelve, 11, 10...
+Dialogue: 0,0:36:13.33,0:36:15.92,Default,,0000,0000,0000,,- 讓他們出來！ - 我必須跟從協議書\N{\rENG}- Fitch, let them out! - I must follow protocol.
+Dialogue: 0,0:36:16.09,0:36:17.37,Default,,0000,0000,0000,,讓他們出來\N{\rENG}Let them out, Fitch!
+Dialogue: 0,0:36:17.67,0:36:19.91,Default,,0000,0000,0000,,快出來\N{\rENG}Go. Get out of there!
+Dialogue: 0,0:36:20.59,0:36:23.08,Default,,0000,0000,0000,,3 , 2 , 1\N{\rENG}Three, two, one.
+Dialogue: 0,0:36:23.26,0:36:25.05,Default,,0000,0000,0000,,- 我沒有選擇  - 是的，當然\N{\rENG}- I had no choice. - Yeah, sure.
+Dialogue: 0,0:36:25.22,0:36:28.63,Default,,0000,0000,0000,,協議書說若出了狀況 就把房間燒燬！\N{\rENG}The protocol is to burn the room if anything went wrong!
+Dialogue: 0,0:36:49.49,0:36:51.45,Default,,0000,0000,0000,,我可在哪兒找到一個男人？\N{\rENG}Where's a good place to find a man?
+Dialogue: 0,0:36:51.83,0:36:55.91,Default,,0000,0000,0000,,附近有一家夜總會 那兒有許多男人\N{\rENG}There's plenty of guys at the Id around the corner. It's a club.
+Dialogue: 0,0:36:56.13,0:36:58.37,Default,,0000,0000,0000,,你不會有問題找到男人的\N{\rENG}You won't have trouble meeting somebody there.
+Dialogue: 0,0:36:58.55,0:36:59.53,Default,,0000,0000,0000,,謝謝你\N{\rENG}Thank you.
+Dialogue: 0,0:37:00.05,0:37:02.16,Default,,0000,0000,0000,,很容易找到的 有人排隊的地方便是了\N{\rENG}You can't miss it. Look for the long line.
+Dialogue: 0,0:37:02.38,0:37:04.46,Default,,0000,0000,0000,,我需要你的信用卡\N{\rENG}I need your credit card...
+Dialogue: 0,0:37:04.80,0:37:08.34,Default,,0000,0000,0000,,...以支付你房間雜費 長途電話費等等\N{\rENG}...for room incidentals, long distance calls and so forth.
+Dialogue: 0,0:37:08.56,0:37:10.30,Default,,0000,0000,0000,,信用卡？讓我刷刷\N{\rENG}Credit card? Zip zap?
+Dialogue: 0,0:37:10.72,0:37:12.97,Default,,0000,0000,0000,,美國運通，諸如此類的？\N{\rENG}American Express, Visa, MasterCard?
+Dialogue: 0,0:37:13.48,0:37:15.89,Default,,0000,0000,0000,,對了，謝謝\N{\rENG}There you go. Thanks. All right.
+Dialogue: 0,0:37:16.31,0:37:17.30,Default,,0000,0000,0000,,謝謝\N{\rENG}Thank you.
+Dialogue: 0,0:37:18.15,0:37:19.48,Default,,0000,0000,0000,,等一下！\N{\rENG}Wait a minute!
+Dialogue: 0,0:37:23.82,0:37:26.73,Default,,0000,0000,0000,,你不會想讓這個落在壞人手裏\N{\rENG}You don't want this falling into the wrong hands.
+Dialogue: 0,0:37:27.03,0:37:28.40,Default,,0000,0000,0000,,對\N{\rENG}No.
+Dialogue: 0,0:37:30.29,0:37:33.90,Default,,0000,0000,0000,,克勞爾揮桿，被守門員檔著\N{\rENG}Here's Justin Crawl. It's through and it's covered by the goalie.
+Dialogue: 0,0:37:36.25,0:37:37.24,Default,,0000,0000,0000,,喂？\N{\rENG}Yeah?
+Dialogue: 0,0:37:37.42,0:37:39.20,Default,,0000,0000,0000,,列車長的信用卡被發現在…\N{\rENG}The conductor's credit card turned up...
+Dialogue: 0,0:37:39.38,0:37:42.04,Default,,0000,0000,0000,,...好萊塢旅館，貨車正等著\N{\rENG}...in a Hollywood motel. The van's out front.
+Dialogue: 0,0:37:42.26,0:37:43.50,Default,,0000,0000,0000,,出發吧\N{\rENG}Let's go.
+Dialogue: 0,0:37:47.09,0:37:48.33,Default,,0000,0000,0000,,你們兩個\N{\rENG}You two.
+Dialogue: 0,0:37:53.68,0:37:55.01,Default,,0000,0000,0000,,慢慢享受\N{\rENG}Enjoy yourselves.
+Dialogue: 0,0:37:55.60,0:37:58.69,Default,,0000,0000,0000,,長腿姐姐，你被看中了 進去\N{\rENG}You, legs. You're in. Go on.
+Dialogue: 0,0:38:20.88,0:38:22.71,Default,,0000,0000,0000,,你從哪裏來的？\N{\rENG}Where are you from?
+Dialogue: 0,0:38:24.05,0:38:26.25,Default,,0000,0000,0000,,- 我不是本地人  - 什麼？\N{\rENG}- I'm foreign. - You're what?
+Dialogue: 0,0:38:26.47,0:38:28.55,Default,,0000,0000,0000,,- 我不是本地人  - 真的？\N{\rENG}- I'm foreign. - Really?
+Dialogue: 0,0:38:29.39,0:38:30.55,Default,,0000,0000,0000,,慢慢來\N{\rENG}Easy, easy.
+Dialogue: 0,0:38:30.72,0:38:33.59,Default,,0000,0000,0000,,我要去派對，但沒有男伴\N{\rENG}I've got a party to go to and no one to take me.
+Dialogue: 0,0:38:33.77,0:38:35.18,Default,,0000,0000,0000,,我可當你的男伴\N{\rENG}I'll take you.
+Dialogue: 0,0:38:35.35,0:38:36.81,Default,,0000,0000,0000,,- 你會？ - 是的\N{\rENG}- You will? - Yeah.
+Dialogue: 0,0:38:36.98,0:38:39.06,Default,,0000,0000,0000,,好，我要去洗手間\N{\rENG}Okay. I'm going to the little girls' room.
+Dialogue: 0,0:38:40.31,0:38:41.97,Default,,0000,0000,0000,,在這裏等我\N{\rENG}Wait right here.
+Dialogue: 0,0:38:42.40,0:38:43.89,Default,,0000,0000,0000,,我很快回來\N{\rENG}I'll be right back.
+Dialogue: 0,0:38:44.07,0:38:45.56,Default,,0000,0000,0000,,我不會走\N{\rENG}I'll be right here.
+Dialogue: 0,0:39:04.55,0:39:06.46,Default,,0000,0000,0000,,不論付出任何代價？\N{\rENG}Whatever it takes, right?
+Dialogue: 0,0:39:07.63,0:39:09.87,Default,,0000,0000,0000,,愛情與打仗都是公平的\N{\rENG}All's fair in love and war.
+Dialogue: 0,0:39:35.33,0:39:36.61,Default,,0000,0000,0000,,看不清楚\N{\rENG}Can't see much on that.
+Dialogue: 0,0:39:36.83,0:39:39.49,Default,,0000,0000,0000,,把錄影帶帶回實驗室 增強清晰度\N{\rENG}Get this tape to the lab. Enhance it.
+Dialogue: 0,0:39:39.91,0:39:41.65,Default,,0000,0000,0000,,看看會否看清楚點\N{\rENG}See if we can get a better look.
+Dialogue: 0,0:39:42.25,0:39:43.66,Default,,0000,0000,0000,,她樣子看起來不錯\N{\rENG}She looks nice.
+Dialogue: 0,0:39:44.17,0:39:46.28,Default,,0000,0000,0000,,你知道她去哪裏嗎？\N{\rENG}Do you have any idea where she went?
+Dialogue: 0,0:39:46.50,0:39:50.04,Default,,0000,0000,0000,,- 我去找她  - 她想去找男人\N{\rENG}- I'll find her. - She wanted to meet a man.
+Dialogue: 0,0:39:50.26,0:39:53.00,Default,,0000,0000,0000,,我提議她到附近一間夜總會\N{\rENG}I suggested a club called the Id around the corner.
+Dialogue: 0,0:39:54.97,0:39:56.34,Default,,0000,0000,0000,,把錄影帶帶回去\N{\rENG}Get the tape.
+Dialogue: 0,0:40:15.87,0:40:18.53,Default,,0000,0000,0000,,我要去派對，但沒有男伴\N{\rENG}I've got a party to go to and no one to take me.
+Dialogue: 0,0:40:19.04,0:40:20.82,Default,,0000,0000,0000,,在哪兒了？\N{\rENG}Where is this party?
+Dialogue: 0,0:40:21.50,0:40:22.70,Default,,0000,0000,0000,,不知道\N{\rENG}I don't know.
+Dialogue: 0,0:40:32.51,0:40:34.67,Default,,0000,0000,0000,,哇,你不能在此停車！\N{\rENG}Whoa, you can't park there!
+Dialogue: 0,0:40:35.14,0:40:36.63,Default,,0000,0000,0000,,退回去！\N{\rENG}Back that out!
+Dialogue: 0,0:40:37.22,0:40:40.51,Default,,0000,0000,0000,,- 你不可以進去  - 發生什麼事？!\N{\rENG}- No, you can't go in there. - What's going on?!
+Dialogue: 0,0:40:55.91,0:40:59.20,Default,,0000,0000,0000,,- 這兒發生謀殺案  - 不准離開！沒有人可以離開！\N{\rENG}- There's been a murder! - No one leaves here! I mean, nobody!
+Dialogue: 0,0:41:02.71,0:41:05.37,Default,,0000,0000,0000,,這地方總是會有各種行動的\N{\rENG}There's always some action in this part of town.
+Dialogue: 0,0:41:18.55,0:41:19.54,Default,,0000,0000,0000,,藍眼睛、金髮\N{\rENG}Blue-eyed blonde.
+Dialogue: 0,0:41:19.76,0:41:23.72,Default,,0000,0000,0000,,黑色緊身褲、粉紅色毛衣 五尺十寸高，她跟誰走的？\N{\rENG}Black leggings, pink sweater, 5' 10" tall. Who'd she leave with?
+Dialogue: 0,0:41:23.94,0:41:26.55,Default,,0000,0000,0000,,金髮美女跟男人走並非大新聞\N{\rENG}Blonde leaves with a guy is hardly news around here.
+Dialogue: 0,0:41:26.77,0:41:28.73,Default,,0000,0000,0000,,說出最受歡迎的人 不要說出沒出，急的人\N{\rENG}Name the top attractions. No losers.
+Dialogue: 0,0:41:28.94,0:41:31.27,Default,,0000,0000,0000,,他會幫她逃走\N{\rENG}Assume he's socially adept. He'll be helping her out.
+Dialogue: 0,0:41:31.44,0:41:33.52,Default,,0000,0000,0000,,他是好人，並非壞蛋\N{\rENG}A friendly guy, not an asshole.
+Dialogue: 0,0:41:33.74,0:41:35.40,Default,,0000,0000,0000,,我在想著\N{\rENG}I'm thinking.
+Dialogue: 0,0:41:35.95,0:41:38.36,Default,,0000,0000,0000,,- 羅比跟一個金髮女子離開  - 就是他\N{\rENG}- Robbie left with a blonde. - That's him.
+Dialogue: 0,0:41:39.45,0:41:40.69,Default,,0000,0000,0000,,是他\N{\rENG}That's him.
+Dialogue: 0,0:41:41.08,0:41:43.57,Default,,0000,0000,0000,,讓我帶你參觀這房子\N{\rENG}Come on. Let me show you the rest of the house.
+Dialogue: 0,0:41:44.25,0:41:46.58,Default,,0000,0000,0000,,我在那裏弄得滿身臭汗\N{\rENG}I'm still sweaty from that place.
+Dialogue: 0,0:41:46.79,0:41:48.25,Default,,0000,0000,0000,,太擠擁了\N{\rENG}It's so crowded.
+Dialogue: 0,0:41:53.59,0:41:54.80,Default,,0000,0000,0000,,喜歡嗎？\N{\rENG}Like it?
+Dialogue: 0,0:41:56.26,0:41:57.25,Default,,0000,0000,0000,,喜歡\N{\rENG}Yes.
+Dialogue: 0,0:41:57.43,0:41:58.96,Default,,0000,0000,0000,,我想淋浴\N{\rENG}I feel like a shower.
+Dialogue: 0,0:41:59.93,0:42:01.14,Default,,0000,0000,0000,,你想嗎？\N{\rENG}You want one?
+Dialogue: 0,0:42:02.31,0:42:03.42,Default,,0000,0000,0000,,告訴你\N{\rENG}Tell you what.
+Dialogue: 0,0:42:03.64,0:42:05.10,Default,,0000,0000,0000,,我現在去淋浴\N{\rENG}I'm taking one.
+Dialogue: 0,0:42:05.31,0:42:07.02,Default,,0000,0000,0000,,如果你稍後也想…\N{\rENG}You wanna take one later...
+Dialogue: 0,0:42:07.27,0:42:08.68,Default,,0000,0000,0000,,沒有問題\N{\rENG}No problem.
+Dialogue: 0,0:42:52.65,0:42:54.31,Default,,0000,0000,0000,,脫去衣服\N{\rENG}Take off your clothes.
+Dialogue: 0,0:42:56.28,0:42:57.64,Default,,0000,0000,0000,,我想看一看\N{\rENG}I want to see you.
+Dialogue: 0,0:43:05.12,0:43:06.66,Default,,0000,0000,0000,,好美\N{\rENG}Very nice.
+Dialogue: 0,0:43:17.22,0:43:18.58,Default,,0000,0000,0000,,送我回去好嗎？\N{\rENG}Take me back.
+Dialogue: 0,0:43:18.76,0:43:20.71,Default,,0000,0000,0000,,你在說什麼？\N{\rENG}What are you talking about?
+Dialogue: 0,0:43:20.97,0:43:22.71,Default,,0000,0000,0000,,你知道為何我們要來這\N{\rENG}You know why we came here.
+Dialogue: 0,0:43:23.47,0:43:24.68,Default,,0000,0000,0000,,我改變主意了\N{\rENG}I've changed my mind.
+Dialogue: 0,0:43:24.85,0:43:27.30,Default,,0000,0000,0000,,你說〝不〞\N{\rENG}All right. You said "no."
+Dialogue: 0,0:43:27.81,0:43:30.18,Default,,0000,0000,0000,,我聽到了，過來\N{\rENG}It's duly noted. Come here.
+Dialogue: 0,0:43:30.39,0:43:31.38,Default,,0000,0000,0000,,我想離開！\N{\rENG}I wanna go!
+Dialogue: 0,0:43:31.56,0:43:34.65,Default,,0000,0000,0000,,太遲了，你休想離開！\N{\rENG}Too late. You're not leaving! You're not!
+Dialogue: 0,0:43:37.57,0:43:40.31,Default,,0000,0000,0000,,- 好吧  - 這才像樣\N{\rENG}- All right. - That's better.
+Dialogue: 0,0:45:09.29,0:45:12.82,Default,,0000,0000,0000,,什麼回事？在夜總會殺掉女子 又殺掉這傢伙\N{\rENG}What's happening? Kills a girl at the club, kills this guy.
+Dialogue: 0,0:45:13.04,0:45:16.08,Default,,0000,0000,0000,,她像是精神病患者\N{\rENG}I'd say she fits the definition of a psychopath.
+Dialogue: 0,0:45:16.29,0:45:18.12,Default,,0000,0000,0000,,沒什麼會抑制她\N{\rENG}Nothing inhibits her.
+Dialogue: 0,0:45:18.54,0:45:21.04,Default,,0000,0000,0000,,沒道德觀念，沒社會結構\N{\rENG}No moral sense, no social structure.
+Dialogue: 0,0:45:21.80,0:45:25.42,Default,,0000,0000,0000,,她並非沉溺在母愛之中\N{\rENG}She wasn't exactly smothered with a mother's love or taught good manners.
+Dialogue: 0,0:45:25.64,0:45:27.38,Default,,0000,0000,0000,,究竟發生了什麼事\N{\rENG}I asked what was happening.
+Dialogue: 0,0:45:27.89,0:45:29.75,Default,,0000,0000,0000,,他做了一些事使她生氣\N{\rENG}He did something, she was angry.
+Dialogue: 0,0:45:29.97,0:45:32.93,Default,,0000,0000,0000,,若她感到受威脅或有人阻礙她 她就會殺死對方\N{\rENG}She'll kill if she's threatened or if anyone gets in her way.
+Dialogue: 0,0:45:33.14,0:45:34.35,Default,,0000,0000,0000,,阻礙她什麼？\N{\rENG}Of what?
+Dialogue: 0,0:45:34.56,0:45:35.80,Default,,0000,0000,0000,,她的生命週期\N{\rENG}Her life cycle.
+Dialogue: 0,0:45:36.06,0:45:38.14,Default,,0000,0000,0000,,她似乎想交配\N{\rENG}I think she's trying to mate.
+Dialogue: 0,0:45:38.61,0:45:39.60,Default,,0000,0000,0000,,進行繁殖\N{\rENG}Reproduce.
+Dialogue: 0,0:45:39.77,0:45:41.14,Default,,0000,0000,0000,,好\N{\rENG}Okay.
+Dialogue: 0,0:45:41.32,0:45:43.10,Default,,0000,0000,0000,,為何她要殺那女子？\N{\rENG}So why did she kill the girl?
+Dialogue: 0,0:45:43.32,0:45:45.11,Default,,0000,0000,0000,,性競爭\N{\rENG}Sexual competition.
+Dialogue: 0,0:45:45.32,0:45:46.86,Default,,0000,0000,0000,,她不會在競爭上屈服\N{\rENG}She's hard on the competition.
+Dialogue: 0,0:45:47.20,0:45:48.48,Default,,0000,0000,0000,,她想交配\N{\rENG}Now she managed to mate.
+Dialogue: 0,0:45:49.08,0:45:52.78,Default,,0000,0000,0000,,似乎不成功，他仍穿著褲子\N{\rENG}Doesn't look like a success. He's still got his pants on.
+Dialogue: 0,0:45:53.00,0:45:55.28,Default,,0000,0000,0000,,- 她很沮喪  - 誰不會？\N{\rENG}- She's frustrated. - Who isn't?
+Dialogue: 0,0:45:55.50,0:45:58.11,Default,,0000,0000,0000,,她有什麼問題？是她跟他來的\N{\rENG}What's her problem? She was here with him.
+Dialogue: 0,0:45:58.33,0:45:59.95,Default,,0000,0000,0000,,或許她拒絕他\N{\rENG}Maybe she rejected him.
+Dialogue: 0,0:46:00.17,0:46:02.08,Default,,0000,0000,0000,,她大概有特別感官\N{\rENG}She probably has special senses.
+Dialogue: 0,0:46:02.26,0:46:06.54,Default,,0000,0000,0000,,老鼠能夠感應配偶 是否有病或基因不健全的\N{\rENG}Rats can sense diseased or genetic damage in their potential mates...
+Dialogue: 0,0:46:06.76,0:46:08.22,Default,,0000,0000,0000,,...所以我們可以測試他\N{\rENG}...so we can test his body...
+Dialogue: 0,0:46:08.43,0:46:13.01,Default,,0000,0000,0000,,...檢查他有沒有遺傳病或缺憾 讓他不能做她的...\N{\rENG}...for hereditary diseases or defects that would make him a loser...
+Dialogue: 0,0:46:13.18,0:46:14.51,Default,,0000,0000,0000,,...配偶\N{\rENG}...essentially.
+Dialogue: 0,0:46:14.77,0:46:16.01,Default,,0000,0000,0000,,是注射針\N{\rENG}Needles.
+Dialogue: 0,0:46:16.69,0:46:19.77,Default,,0000,0000,0000,,也許他是癮君子 或是糖尿病人\N{\rENG}Maybe he was a doper, or a diabetic.
+Dialogue: 0,0:46:20.02,0:46:22.86,Default,,0000,0000,0000,,兩者都不能夠接受 對不起\N{\rENG}Either way would make him unacceptable. Excuse me.
+Dialogue: 0,0:46:24.94,0:46:26.18,Default,,0000,0000,0000,,是了\N{\rENG}All right.
+Dialogue: 0,0:46:28.45,0:46:30.69,Default,,0000,0000,0000,,胰島素，他是糖尿病患者\N{\rENG}Insulin. Diabetic. There you have it.
+Dialogue: 0,0:46:30.87,0:46:33.57,Default,,0000,0000,0000,,她可以離開的 為何要殺死他？\N{\rENG}She could have just walked out. Why kill him?
+Dialogue: 0,0:46:33.79,0:46:35.90,Default,,0000,0000,0000,,他讓她生氣\N{\rENG}He pissed her off.
+Dialogue: 0,0:46:36.12,0:46:38.58,Default,,0000,0000,0000,,有些傢伙被拒絕了 也死纏爛打的\N{\rENG}Some men, when rejected, get insistent.
+Dialogue: 0,0:46:38.79,0:46:41.41,Default,,0000,0000,0000,,- 追蹤他的汽車  - 已發了通報\N{\rENG}- Put an APB out on his car. - We have.
+Dialogue: 0,0:46:41.63,0:46:44.62,Default,,0000,0000,0000,,我們要返回旅館 我要查個水落石出\N{\rENG}We'll go back to the motel. I want to check it out.
+Dialogue: 0,0:46:44.96,0:46:47.88,Default,,0000,0000,0000,,還說比較溫馴和易受控制？\N{\rENG}More docile and controllable, huh, Fitch?
+Dialogue: 0,0:47:02.44,0:47:04.98,Default,,0000,0000,0000,,- 你認為怎樣？ - 我認為怎樣？\N{\rENG}- What do you think, Dan? - What do I think?
+Dialogue: 0,0:47:05.82,0:47:08.56,Default,,0000,0000,0000,,我想她現在想獨自一人\N{\rENG}I think she'd want to be alone now.
+Dialogue: 0,0:47:09.20,0:47:12.56,Default,,0000,0000,0000,,這麼多輛車停在外面 她是不會來的\N{\rENG}She won't come here with all these cars outside.
+Dialogue: 0,0:47:12.74,0:47:15.73,Default,,0000,0000,0000,,你指她自有方法回來？\N{\rENG}You're assuming she could find her way back here.
+Dialogue: 0,0:47:15.91,0:47:17.15,Default,,0000,0000,0000,,有可能\N{\rENG}She could.
+Dialogue: 0,0:47:17.75,0:47:18.99,Default,,0000,0000,0000,,這是什麼？\N{\rENG}What is it?
+Dialogue: 0,0:47:20.58,0:47:22.54,Default,,0000,0000,0000,,也許是經血\N{\rENG}Maybe menstrual blood.
+Dialogue: 0,0:47:23.42,0:47:26.08,Default,,0000,0000,0000,,如果她有經期 即是她可以繁殖\N{\rENG}If she's menstruating, she can reproduce.
+Dialogue: 0,0:47:26.26,0:47:27.54,Default,,0000,0000,0000,,對，我知道\N{\rENG}Yes, I know.
+Dialogue: 0,0:49:04.35,0:49:05.68,Default,,0000,0000,0000,,糟糕\N{\rENG}Shit.
+Dialogue: 0,0:49:11.19,0:49:12.68,Default,,0000,0000,0000,,天\N{\rENG}Oh, Jesus.
+Dialogue: 0,0:49:12.90,0:49:14.14,Default,,0000,0000,0000,,請讓開\N{\rENG}Excuse me.
+Dialogue: 0,0:49:15.07,0:49:17.86,Default,,0000,0000,0000,,快叫救護車來 誰人有電話？\N{\rENG}Call a paramedic! Anybody got a phone?
+Dialogue: 0,0:49:23.41,0:49:26.28,Default,,0000,0000,0000,,十號公路向西行的交通\N{\rENG}If your commute takes you westbound on the 10 freeway...
+Dialogue: 0,0:49:26.50,0:49:28.04,Default,,0000,0000,0000,,...將有一小時的延誤\N{\rENG}...expect an hour delay.
+Dialogue: 0,0:49:28.25,0:49:30.66,Default,,0000,0000,0000,,往．馬裏布的車程將會緩慢\N{\rENG}The drive will be slow to Malibu.
+Dialogue: 0,0:49:30.84,0:49:32.04,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>只限無鉛汽油
+Dialogue: 0,0:49:37.60,0:49:40.13,Default,,0000,0000,0000,,錄影帶的清晰度仍不理想\N{\rENG}The video enhancement is not that great.
+Dialogue: 0,0:49:40.35,0:49:42.51,Default,,0000,0000,0000,,你猜她多大？ 二十歲？二十三歲？\N{\rENG}How old do you think she is? Twenty, 23?
+Dialogue: 0,0:49:44.35,0:49:46.97,Default,,0000,0000,0000,,她的生殖系統應該完全成熟\N{\rENG}Her reproductive system should be fully developed.
+Dialogue: 0,0:49:47.19,0:49:49.22,Default,,0000,0000,0000,,她的生理時鐘必定很亢奮\N{\rENG}Her biological clock must be in hyperdrive.
+Dialogue: 0,0:49:49.40,0:49:50.39,Default,,0000,0000,0000,,她想要孩子\N{\rENG}She wants a baby.
+Dialogue: 0,0:49:50.57,0:49:53.31,Default,,0000,0000,0000,,若她有孩子，我們就有麻煩\N{\rENG}If she has a child our problems have just begun.
+Dialogue: 0,0:49:53.53,0:49:56.61,Default,,0000,0000,0000,,若她懷著的是個男孩 而他的成長速度如西爾一樣\N{\rENG}If her offspring is male and develops at the same rate as Sil...
+Dialogue: 0,0:49:57.87,0:50:00.45,Default,,0000,0000,0000,,...六個月後就有能力繁殖了\N{\rENG}...it could reproduce in 6 months.
+Dialogue: 0,0:50:01.79,0:50:04.28,Default,,0000,0000,0000,,天曉得他能使多少個女性懷孕\N{\rENG}God knows how many females it could impregnate.
+Dialogue: 0,0:50:04.46,0:50:05.95,Default,,0000,0000,0000,,菲奇\N{\rENG}Fitch.
+Dialogue: 0,0:50:08.46,0:50:10.58,Default,,0000,0000,0000,,當一個掠食性品種來到\N{\rENG}When a predatory species is introduced...
+Dialogue: 0,0:50:10.75,0:50:12.41,Default,,0000,0000,0000,,...一個封閉的生態系統\N{\rENG}...into a closed ecological system...
+Dialogue: 0,0:50:12.59,0:50:15.67,Default,,0000,0000,0000,,...較弱的品種就會滅絕\N{\rENG}...the extinction of the weaker species is inevitable.
+Dialogue: 0,0:50:15.84,0:50:18.58,Default,,0000,0000,0000,,他們在聖莫尼卡 找到已沒汽油的寶．馬\N{\rENG}They found the murdered guy's BMW, out of gas in Santa Monica.
+Dialogue: 0,0:50:18.93,0:50:20.04,Default,,0000,0000,0000,,她叫什麼名字？\N{\rENG}What's her name?
+Dialogue: 0,0:50:20.26,0:50:22.42,Default,,0000,0000,0000,,- 我不知道  - 你是誰？\N{\rENG}- I don't know. - Who are you?
+Dialogue: 0,0:50:22.64,0:50:26.72,Default,,0000,0000,0000,,她沒有身份證 我想確定她沒大礙\N{\rENG}She didn't have any ID. I thought I'd make sure she was okay.
+Dialogue: 0,0:50:26.94,0:50:28.72,Default,,0000,0000,0000,,她有醫療保險嗎？\N{\rENG}You think she's got insurance?
+Dialogue: 0,0:50:28.94,0:50:32.48,Default,,0000,0000,0000,,我不知道 算在我信用卡的帳上吧\N{\rENG}I don't know. Just put it on my credit card for now.
+Dialogue: 0,0:50:32.98,0:50:36.65,Default,,0000,0000,0000,,但你連她的名字也不知道 像你這樣的人真難得\N{\rENG}And you don't know her name. Guys like you are hard to find.
+Dialogue: 0,0:50:43.95,0:50:46.49,Default,,0000,0000,0000,,讓實驗室做個實驗\N{\rENG}Get a lab workup on that, stat.
+Dialogue: 0,0:50:49.33,0:50:52.08,Default,,0000,0000,0000,,給她照X光片，要照這裏\N{\rENG}Get her up to x-ray. I want an x-ray on this.
+Dialogue: 0,0:50:52.29,0:50:54.66,Default,,0000,0000,0000,,看似是肩胛骨碎裂\N{\rENG}It looks like a scapula fracture.
+Dialogue: 0,0:51:04.14,0:51:05.80,Default,,0000,0000,0000,,你的肩膀\N{\rENG}Your shoulder wound.
+Dialogue: 0,0:51:09.14,0:51:10.98,Default,,0000,0000,0000,,怎會這樣的？\N{\rENG}What's going on here?
+Dialogue: 0,0:51:16.36,0:51:18.94,Default,,0000,0000,0000,,醫生，我們現在需要你.一個孩子燒傷剛進來\N{\rENG}Doctor, we need you now. A child burn victim just came in.
+Dialogue: 0,0:51:19.11,0:51:20.98,Default,,0000,0000,0000,,- 這是怎麼回事？ - 請醫生\N{\rENG}- What is going on here? - Doctor, please.
+Dialogue: 0,0:51:21.16,0:51:23.77,Default,,0000,0000,0000,,天！你看到她的肩膀嗎？\N{\rENG}Jesus Christ! Did you see her shoulder?
+Dialogue: 0,0:51:23.95,0:51:26.03,Default,,0000,0000,0000,,請你立刻過去\N{\rENG}Please. We need you immediately.
+Dialogue: 0,0:51:34.88,0:51:36.21,Default,,0000,0000,0000,,你沒事\N{\rENG}You're okay.
+Dialogue: 0,0:51:36.51,0:51:37.62,Default,,0000,0000,0000,,我沒事\N{\rENG}I'm okay.
+Dialogue: 0,0:51:37.84,0:51:40.38,Default,,0000,0000,0000,,但你受了重傷的\N{\rENG}I was sure you were seriously injured.
+Dialogue: 0,0:51:40.88,0:51:42.04,Default,,0000,0000,0000,,我沒事\N{\rENG}I'm okay.
+Dialogue: 0,0:51:42.34,0:51:44.34,Default,,0000,0000,0000,,這真是奇跡\N{\rENG}You are. It's a miracle.
+Dialogue: 0,0:51:45.22,0:51:46.34,Default,,0000,0000,0000,,可以離開了嗎？\N{\rENG}Can we go?
+Dialogue: 0,0:51:46.56,0:51:49.30,Default,,0000,0000,0000,,醫生說你可以離開嗎？\N{\rENG}Did the doctor say you could go?
+Dialogue: 0,0:51:49.52,0:51:50.72,Default,,0000,0000,0000,,是\N{\rENG}Yes.
+Dialogue: 0,0:51:52.10,0:51:54.64,Default,,0000,0000,0000,,我們會派人到那邊\N{\rENG}We'll send somebody over there. Thanks a lot.
+Dialogue: 0,0:51:57.36,0:52:01.85,Default,,0000,0000,0000,,帕克灣醫院的醫生 說有怪事發生\N{\rENG}Doctor over at Parkbay Hospital called in with some weird story.
+Dialogue: 0,0:52:02.03,0:52:04.19,Default,,0000,0000,0000,,查查看，只在數英里外\N{\rENG}We should check it out. It's a few miles away.
+Dialogue: 0,0:52:04.53,0:52:05.82,Default,,0000,0000,0000,,羅拉\N{\rENG}Laura...
+Dialogue: 0,0:52:06.20,0:52:08.36,Default,,0000,0000,0000,,...普雷斯頓，查探一下\N{\rENG}...Press, take a car, check it out.
+Dialogue: 0,0:52:08.54,0:52:11.15,Default,,0000,0000,0000,,- 帕克灣醫院？ - 對，帕克灣\N{\rENG}- Parkbay Hospital?  - Yeah, Parkbay.
+Dialogue: 0,0:52:13.50,0:52:14.71,Default,,0000,0000,0000,,她用走的\N{\rENG}She walked.
+Dialogue: 0,0:52:15.88,0:52:16.87,Default,,0000,0000,0000,,她用走的\N{\rENG}She walked.
+Dialogue: 0,0:52:18.55,0:52:19.88,Default,,0000,0000,0000,,她沿著那邊走…\N{\rENG}She walked that way...
+Dialogue: 0,0:52:21.38,0:52:22.71,Default,,0000,0000,0000,,...就在不久之前\N{\rENG}...not too long ago.
+Dialogue: 0,0:52:31.02,0:52:32.85,Default,,0000,0000,0000,,吃些水果和起司吧\N{\rENG}Got some fruit and cheese.
+Dialogue: 0,0:52:35.06,0:52:36.30,Default,,0000,0000,0000,,那是什麼？\N{\rENG}What is that?
+Dialogue: 0,0:52:36.69,0:52:38.23,Default,,0000,0000,0000,,你指那熱水池？\N{\rENG}You mean the hot tub?
+Dialogue: 0,0:52:39.19,0:52:40.40,Default,,0000,0000,0000,,熱水池\N{\rENG}A hot tub.
+Dialogue: 0,0:52:40.90,0:52:42.27,Default,,0000,0000,0000,,我愛這個地方\N{\rENG}I love this place.
+Dialogue: 0,0:52:42.45,0:52:45.36,Default,,0000,0000,0000,,遠離車輛、人和事\N{\rENG}It's away from the traffic and business and people.
+Dialogue: 0,0:52:45.70,0:52:48.36,Default,,0000,0000,0000,,有時覺得自己並不在洛杉磯\N{\rENG}Sometimes it feels like you're not in L.A. Anymore.
+Dialogue: 0,0:52:48.87,0:52:50.08,Default,,0000,0000,0000,,過來\N{\rENG}Here.
+Dialogue: 0,0:52:50.37,0:52:52.20,Default,,0000,0000,0000,,我們要永遠留住這一刻\N{\rENG}We'll immortalize the moment.
+Dialogue: 0,0:53:02.30,0:53:03.63,Default,,0000,0000,0000,,看著攝影機\N{\rENG}Look at the camera.
+Dialogue: 0,0:53:09.10,0:53:12.56,Default,,0000,0000,0000,,- 她的骨骼重生了 - 是她\N{\rENG}- This girl literally reformed her bones. - It's her.
+Dialogue: 0,0:53:13.56,0:53:14.89,Default,,0000,0000,0000,,誰幫她掛號的？\N{\rENG}Who checked her in?
+Dialogue: 0,0:53:15.15,0:53:17.01,Default,,0000,0000,0000,,然我們看看\N{\rENG}I don't know. Let's find out.
+Dialogue: 0,0:53:17.23,0:53:20.64,Default,,0000,0000,0000,,她沒有保險 所以他用信用卡幫她付了帳\N{\rENG}She had no insurance so this guy put it on his own credit card.
+Dialogue: 0,0:53:22.57,0:53:24.90,Default,,0000,0000,0000,,是這個檔案，他叫約翰凱瑞\N{\rENG}Here's the file. John F. Carey.
+Dialogue: 0,0:53:26.07,0:53:29.78,Default,,0000,0000,0000,,有駕．駛執照或地址的資料嗎？\N{\rENG}You don't have a driver's license or home address?
+Dialogue: 0,0:53:29.95,0:53:33.49,Default,,0000,0000,0000,,沒有 只有他的信用卡刷卡紀錄\N{\rENG}No, sir. Just an imprint of his credit card.
+Dialogue: 0,0:53:34.42,0:53:36.53,Default,,0000,0000,0000,,給我們印一張你有的資料\N{\rENG}Give us a printout of what you've got.
+Dialogue: 0,0:53:36.75,0:53:38.08,Default,,0000,0000,0000,,沒問題\N{\rENG}No problem.
+Dialogue: 0,0:53:41.30,0:53:42.54,Default,,0000,0000,0000,,吃糖嗎？\N{\rENG}Some candy?
+Dialogue: 0,0:53:52.52,0:53:55.80,Default,,0000,0000,0000,,在帕利塞德 還有他的電話號碼\N{\rENG}It's in the Palisades and he's got a phone number.
+Dialogue: 0,0:53:56.48,0:53:59.52,Default,,0000,0000,0000,,告訴菲奇我們的目的地 試著打電話給約翰凱瑞\N{\rENG}Tell Fitch where we're headed, and try to get John Carey on the line.
+Dialogue: 0,0:54:29.55,0:54:31.38,Default,,0000,0000,0000,,讓我去接\N{\rENG}I'd better get the phone.
+Dialogue: 0,0:54:38.69,0:54:41.05,Default,,0000,0000,0000,,答錄機響了，應該留話嗎？\N{\rENG}I've got his machine. Should I leave a message?
+Dialogue: 0,0:54:41.23,0:54:42.56,Default,,0000,0000,0000,,好\N{\rENG}Yeah.
+Dialogue: 0,0:54:42.73,0:54:46.19,Default,,0000,0000,0000,,告訴他他將要跟 外太空生物交配\N{\rENG}Tell him he's about to copulate with a creature from outer space.
+Dialogue: 0,0:54:47.20,0:54:49.06,Default,,0000,0000,0000,,- 交配？ - 對\N{\rENG}- Copulate, huh? - Yeah.
+Dialogue: 0,0:54:50.70,0:54:51.94,Default,,0000,0000,0000,,我喜歡你\N{\rENG}I like you.
+Dialogue: 0,0:54:52.20,0:54:53.44,Default,,0000,0000,0000,,我知道\N{\rENG}I know.
+Dialogue: 0,0:54:58.37,0:55:00.61,Default,,0000,0000,0000,,我們在一起也不會太快\N{\rENG}It's not too soon for us to be together.
+Dialogue: 0,0:55:02.13,0:55:03.96,Default,,0000,0000,0000,,對，不會太快\N{\rENG}No, it's not too soon.
+Dialogue: 0,0:55:05.96,0:55:07.45,Default,,0000,0000,0000,,你不用穿褲子\N{\rENG}You don't need these.
+Dialogue: 0,0:55:07.72,0:55:09.92,Default,,0000,0000,0000,,你太急了\N{\rENG}Hey, hey. That's a little fast.
+Dialogue: 0,0:55:23.32,0:55:24.65,Default,,0000,0000,0000,,怎麼了？\N{\rENG}What's the matter?
+Dialogue: 0,0:55:25.23,0:55:26.57,Default,,0000,0000,0000,,慢慢來\N{\rENG}Take it easy.
+Dialogue: 0,0:55:29.40,0:55:30.89,Default,,0000,0000,0000,,放鬆點\N{\rENG}Just relax.
+Dialogue: 0,0:55:32.57,0:55:33.91,Default,,0000,0000,0000,,還有許多時間\N{\rENG}There's plenty of time.
+Dialogue: 0,0:55:42.67,0:55:43.91,Default,,0000,0000,0000,,什麼事？\N{\rENG}What is it?
+Dialogue: 0,0:55:46.59,0:55:48.62,Default,,0000,0000,0000,,有人在門外\N{\rENG}I think someone's at the door.
+Dialogue: 0,0:55:48.80,0:55:50.04,Default,,0000,0000,0000,,別走\N{\rENG}Don't go.
+Dialogue: 0,0:55:50.76,0:55:52.88,Default,,0000,0000,0000,,求求你 我想要孩子\N{\rENG}Please. I want a baby.
+Dialogue: 0,0:55:53.18,0:55:55.42,Default,,0000,0000,0000,,什麼？! 對不起？\N{\rENG}What?! Excuse me?
+Dialogue: 0,0:56:05.61,0:56:07.44,Default,,0000,0000,0000,,從旁邊去看看\N{\rENG}Let's go around the side.
+Dialogue: 0,0:56:50.78,0:56:51.98,Default,,0000,0000,0000,,外面\N{\rENG}Outside.
+Dialogue: 0,0:58:49.48,0:58:52.60,Default,,0000,0000,0000,,- 什麼事？ - 是松鼠！該死的松鼠！\N{\rENG}- What happened?  - A squirrel! A fucking squirrel!
+Dialogue: 0,0:58:52.82,0:58:55.27,Default,,0000,0000,0000,,- 她曾在這兒 - 沒錯\N{\rENG}- She was here. - Yeah, she was.
+Dialogue: 0,0:58:55.49,0:58:57.65,Default,,0000,0000,0000,,我想確定她離開了\N{\rENG}I wanna make sure she's not still here.
+Dialogue: 0,0:59:24.81,0:59:28.05,Default,,0000,0000,0000,,應檢查屍體 有沒有曾性交過的跡象\N{\rENG}Perhaps we should check the body for evidence that they've had sex.
+Dialogue: 0,0:59:35.48,0:59:37.82,Default,,0000,0000,0000,,血淋淋的情景叫我害怕\N{\rENG}I used to be scared at the sight of blood.
+Dialogue: 0,0:59:38.65,0:59:40.48,Default,,0000,0000,0000,,我已習慣了\N{\rENG}Now I guess I'm getting used to it.
+Dialogue: 0,0:59:41.74,0:59:43.23,Default,,0000,0000,0000,,對啊\N{\rENG}Oh, yes.
+Dialogue: 0,1:00:09.02,1:00:11.80,Default,,0000,0000,0000,,- 救我！ - 什麼事？\N{\rENG}- Help me, please! - Oh, my God. What's the matter?
+Dialogue: 0,1:00:12.81,1:00:14.64,Default,,0000,0000,0000,,我們在客廳發現的\N{\rENG}We found this in the living room.
+Dialogue: 0,1:00:16.53,1:00:17.81,Default,,0000,0000,0000,,她喜歡他\N{\rENG}She liked him.
+Dialogue: 0,1:00:19.69,1:00:21.36,Default,,0000,0000,0000,,不夠清楚\N{\rENG}Well, not enough.
+Dialogue: 0,1:00:22.03,1:00:25.15,Default,,0000,0000,0000,,跟錄像監測所拍出來的差不多\N{\rENG}Can't see any more on that than we did on the video monitor.
+Dialogue: 0,1:00:25.66,1:00:27.62,Default,,0000,0000,0000,,他沒有幫她拍到一張好相片\N{\rENG}He didn't get a good picture of her.
+Dialogue: 0,1:00:27.79,1:00:30.87,Default,,0000,0000,0000,,水裏沒發現精液\N{\rENG}There's no evidence of semen in the hot tub water.
+Dialogue: 0,1:00:31.33,1:00:32.87,Default,,0000,0000,0000,,也許她帶走了\N{\rENG}Maybe she took it with.
+Dialogue: 0,1:00:33.04,1:00:35.20,Default,,0000,0000,0000,,那麼她沒有交配\N{\rENG}So she probably hasn't managed to mate.
+Dialogue: 0,1:00:35.46,1:00:38.50,Default,,0000,0000,0000,,- 我們打擾了她  - 是的，應該是\N{\rENG}- We interrupted her. - Yes, I think we did.
+Dialogue: 0,1:00:38.71,1:00:40.70,Default,,0000,0000,0000,,給我些我可以用的\N{\rENG}Give me something I can use.
+Dialogue: 0,1:00:42.18,1:00:44.04,Default,,0000,0000,0000,,你最近想到了什麼？\N{\rENG}What have you come up with lately, Fitch?
+Dialogue: 0,1:00:49.72,1:00:51.21,Default,,0000,0000,0000,,她不怕我們\N{\rENG}She's not scared of us.
+Dialogue: 0,1:00:51.64,1:00:52.88,Default,,0000,0000,0000,,這是肯定的\N{\rENG}That's for sure.
+Dialogue: 0,1:00:56.77,1:00:58.26,Default,,0000,0000,0000,,我們被難倒了\N{\rENG}We're all beat.
+Dialogue: 0,1:00:58.61,1:01:00.47,Default,,0000,0000,0000,,先回旅館休，急一下\N{\rENG}We'll go back to the hotel and rest.
+Dialogue: 0,1:01:01.40,1:01:02.94,Default,,0000,0000,0000,,明晚\N{\rENG}Tomorrow night...
+Dialogue: 0,1:01:03.32,1:01:05.06,Default,,0000,0000,0000,,...我們再回到夜總會\N{\rENG}...we'll go back to the club.
+Dialogue: 0,1:01:06.24,1:01:07.90,Default,,0000,0000,0000,,- 進行監視  - 進行監視\N{\rENG}- Stake it out. - Stake it out.
+Dialogue: 0,1:01:11.00,1:01:12.24,Default,,0000,0000,0000,,她並不蠢\N{\rENG}She's not stupid.
+Dialogue: 0,1:01:12.41,1:01:13.95,Default,,0000,0000,0000,,她不會重蹈覆轍\N{\rENG}She won't repeat herself.
+Dialogue: 0,1:01:14.17,1:01:17.41,Default,,0000,0000,0000,,沒理由再去那裏 那兒提供了個壞榜樣\N{\rENG}There's no point going there. It provided a poor specimen.
+Dialogue: 0,1:01:17.63,1:01:18.62,Default,,0000,0000,0000,,很難說\N{\rENG}I'm not sure.
+Dialogue: 0,1:01:18.84,1:01:21.58,Default,,0000,0000,0000,,她只來了兩天，只知道那地方\N{\rENG}She's been in the city two days. It's what she knows.
+Dialogue: 0,1:01:21.76,1:01:23.46,Default,,0000,0000,0000,,我寧願再到夜總會看看\N{\rENG}I'd rather try the club...
+Dialogue: 0,1:01:23.68,1:01:28.09,Default,,0000,0000,0000,,..不要只坐在指揮中心 回憶著我們多接近成功\N{\rENG}...than sit at the command center reminiscing about how close we got.
+Dialogue: 0,1:01:41.48,1:01:44.27,Default,,0000,0000,0000,,她可會是厲害的生物武器\N{\rENG}She would make one excellent biological weapon.
+Dialogue: 0,1:01:44.49,1:01:48.45,Default,,0000,0000,0000,,若有人認為我們是 散佈宇宙間的…\N{\rENG}If someone thought we were some kind of galactic weed that would...
+Dialogue: 0,1:01:48.66,1:01:50.65,Default,,0000,0000,0000,,...銀河系廢物\N{\rENG}...spread through the universe.
+Dialogue: 0,1:01:51.79,1:01:53.99,Default,,0000,0000,0000,,你的意思是...\N{\rENG}So what you're saying is that...
+Dialogue: 0,1:01:54.33,1:01:56.62,Default,,0000,0000,0000,,...她是療藥，而我們是病源\N{\rENG}...she's the cure and we're the disease.
+Dialogue: 0,1:01:57.13,1:01:58.62,Default,,0000,0000,0000,,說得好\N{\rENG}That's well said.
+Dialogue: 0,1:01:59.71,1:02:01.25,Default,,0000,0000,0000,,〝羅拉貝克〞\N{\rENG}"Baker, Laura.
+Dialogue: 0,1:02:01.46,1:02:05.17,Default,,0000,0000,0000,,〝加州錫米谷 米德大道1735號〞\N{\rENG}1735 Meander Drive, Simi v alley, california."
+Dialogue: 0,1:02:05.38,1:02:06.79,Default,,0000,0000,0000,,是你嗎？\N{\rENG}That's you, right?
+Dialogue: 0,1:02:07.55,1:02:09.29,Default,,0000,0000,0000,,我上次查的資料是這樣的\N{\rENG}Last time I checked.
+Dialogue: 0,1:02:09.72,1:02:11.68,Default,,0000,0000,0000,,你在這做什麼？\N{\rENG}What do you do for kicks out there?
+Dialogue: 0,1:02:13.89,1:02:15.93,Default,,0000,0000,0000,,懷念像你這樣的傢伙\N{\rENG}Pine for guys like you.
+Dialogue: 0,1:02:16.14,1:02:18.31,Default,,0000,0000,0000,,我正這樣想\N{\rENG}That's what I thought.
+Dialogue: 0,1:02:39.21,1:02:40.57,Default,,0000,0000,0000,,你們餓嗎？\N{\rENG}So anyone hungry?
+Dialogue: 0,1:02:41.42,1:02:45.00,Default,,0000,0000,0000,,不，我很疲倦，我想去休息\N{\rENG}No, thanks. I'm beat. I'm gonna try to get some sleep.
+Dialogue: 0,1:02:45.22,1:02:47.42,Default,,0000,0000,0000,,- 晚安  - 晚安\N{\rENG}- Good night. - Yeah. Night.
+Dialogue: 0,1:02:48.72,1:02:51.88,Default,,0000,0000,0000,,- 我可以跟你一起吃  - 謝了\N{\rENG}- I'll have something to eat with you. - Thanks, Dan.
+Dialogue: 0,1:03:54.45,1:03:56.99,Default,,0000,0000,0000,,- 你做過噩夢嗎？ - 做過\N{\rENG}- Do you ever have nightmares? - Yes.
+Dialogue: 0,1:03:57.79,1:03:59.90,Default,,0000,0000,0000,,請鬆綁我的雙手\N{\rENG}Please untie my hands.
+Dialogue: 0,1:04:00.29,1:04:03.12,Default,,0000,0000,0000,,- 我不會傷害你的  - 我做了噩夢\N{\rENG}- I wouldn't hurt you. Please. - I have them.
+Dialogue: 0,1:04:06.59,1:04:08.17,Default,,0000,0000,0000,,噩夢想告訴我我是誰\N{\rENG}I think they tell me who I am.
+Dialogue: 0,1:04:08.92,1:04:10.75,Default,,0000,0000,0000,,你為何要這樣做？\N{\rENG}Why are you doing this to me?
+Dialogue: 0,1:04:13.47,1:04:15.26,Default,,0000,0000,0000,,我不知道為何我在這裏\N{\rENG}I don't know why I'm here.
+Dialogue: 0,1:04:15.47,1:04:17.93,Default,,0000,0000,0000,,我不知道我是誰，誰派我來\N{\rENG}I don't know who I am, who sent me.
+Dialogue: 0,1:04:19.77,1:04:21.76,Default,,0000,0000,0000,,- 你知道嗎？ - 不！\N{\rENG}- Do you? - No!
+Dialogue: 0,1:04:25.27,1:04:28.27,Default,,0000,0000,0000,,- 你為何在此？ - 我不知道\N{\rENG}- Why do you think you're here? - I don't know.
+Dialogue: 0,1:04:29.28,1:04:30.89,Default,,0000,0000,0000,,請放過我\N{\rENG}Please let me go.
+Dialogue: 0,1:04:31.11,1:04:33.48,Default,,0000,0000,0000,,求求你，讓我走\N{\rENG}Please. Please, let me go.
+Dialogue: 0,1:04:35.87,1:04:37.78,Default,,0000,0000,0000,,我不會傷害你\N{\rENG}I wouldn't hurt you.
+Dialogue: 0,1:04:38.12,1:04:39.70,Default,,0000,0000,0000,,我保證\N{\rENG}I promise.
+Dialogue: 0,1:04:39.87,1:04:42.03,Default,,0000,0000,0000,,- 我不會傷害你的  - 你會的\N{\rENG}- I wouldn't hurt you. - Yes, you would.
+Dialogue: 0,1:04:42.96,1:04:44.37,Default,,0000,0000,0000,,只是你還不知道\N{\rENG}You just don't know it yet.
+Dialogue: 0,1:04:45.38,1:04:47.62,Default,,0000,0000,0000,,我不會！\N{\rENG}No, I wouldn't!
+Dialogue: 0,1:04:47.80,1:04:49.21,Default,,0000,0000,0000,,求求你！\N{\rENG}Please!
+Dialogue: 0,1:04:50.80,1:04:53.21,Default,,0000,0000,0000,,我雙手很疼\N{\rENG}My hands are hurting me.
+Dialogue: 0,1:04:57.47,1:04:58.80,Default,,0000,0000,0000,,謝謝你\N{\rENG}Thank you.
+Dialogue: 0,1:04:59.60,1:05:00.96,Default,,0000,0000,0000,,謝謝你\N{\rENG}Thank you.
+Dialogue: 0,1:05:07.57,1:05:09.18,Default,,0000,0000,0000,,我的天！\N{\rENG}Oh, my God!
+Dialogue: 0,1:05:25.42,1:05:26.91,Default,,0000,0000,0000,,不！\N{\rENG}Oh, my God, no!
+Dialogue: 0,1:05:28.17,1:05:30.63,Default,,0000,0000,0000,,天，不！\N{\rENG}No! No!
+Dialogue: 0,1:06:37.41,1:06:39.32,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>危險，高電壓
+Dialogue: 0,1:07:29.71,1:07:31.70,Default,,0000,0000,0000,,羅拉和普雷斯頓喜歡對方\N{\rENG}Laura and Press, they like each other.
+Dialogue: 0,1:07:32.13,1:07:33.99,Default,,0000,0000,0000,,他們不流露自己的感受\N{\rENG}They just don't like to show how they feel.
+Dialogue: 0,1:07:34.17,1:07:35.54,Default,,0000,0000,0000,,什麼？\N{\rENG}What?
+Dialogue: 0,1:07:36.42,1:07:38.96,Default,,0000,0000,0000,,羅拉和普雷斯頓 喜歡對方\N{\rENG}Laura and Press, they like each other.
+Dialogue: 0,1:07:39.34,1:07:41.08,Default,,0000,0000,0000,,隨你怎說吧，丹\N{\rENG}Yeah, whatever you say, Dan.
+Dialogue: 0,1:07:41.30,1:07:44.47,Default,,0000,0000,0000,,這兒煙霧瀰漫，我打算出去\N{\rENG}Look, it's really smoky in here. I'm gonna go outside, get some air.
+Dialogue: 0,1:07:44.85,1:07:49.01,Default,,0000,0000,0000,,在貨車上歇一歇 這簡直是浪費時間\N{\rENG}Think I'll lie down in the van. Have a rest. This is a complete waste of time.
+Dialogue: 0,1:07:51.85,1:07:53.72,Default,,0000,0000,0000,,感覺上像是在浪費時間嗎？\N{\rENG}Get a feeling you're on a wild goose chase?
+Dialogue: 0,1:07:53.90,1:07:55.31,Default,,0000,0000,0000,,對\N{\rENG}Yeah.
+Dialogue: 0,1:07:56.48,1:07:57.69,Default,,0000,0000,0000,,請讓開\N{\rENG}Excuse me.
+Dialogue: 0,1:08:58.38,1:09:01.21,Default,,0000,0000,0000,,滾出去，這是我的地盤\N{\rENG}Get out of here. This is my trashcan.
+Dialogue: 0,1:09:12.48,1:09:13.72,Default,,0000,0000,0000,,是你\N{\rENG}It's you.
+Dialogue: 0,1:09:20.94,1:09:22.06,Default,,0000,0000,0000,,喂\N{\rENG}Hey!
+Dialogue: 0,1:09:22.95,1:09:25.03,Default,,0000,0000,0000,,她在這兒\N{\rENG}She's here! Hey!
+Dialogue: 0,1:09:31.37,1:09:33.24,Default,,0000,0000,0000,,-是她嗎？ -是\N{\rENG}- Dan. Is that her? - Yeah.
+Dialogue: 0,1:09:33.41,1:09:34.62,Default,,0000,0000,0000,,這兒\N{\rENG}Here.
+Dialogue: 0,1:09:41.09,1:09:42.67,Default,,0000,0000,0000,,上車\N{\rENG}Get in the van.
+Dialogue: 0,1:09:44.63,1:09:46.55,Default,,0000,0000,0000,,上車！\N{\rENG}Everybody get in the van!
+Dialogue: 0,1:09:55.10,1:09:58.10,Default,,0000,0000,0000,,他們朝山區走 我們需要直升機\N{\rENG}They're heading into the hills. We'll need the helicopters.
+Dialogue: 0,1:10:09.66,1:10:14.15,Default,,0000,0000,0000,,我們要上尼科斯峽谷 在茂賀蘭攔截她\N{\rENG}We're going up Nichols canyon. One of you try to block her at Mulholland.
+Dialogue: 0,1:10:31.22,1:10:32.63,Default,,0000,0000,0000,,小心\N{\rENG}Watch it!
+Dialogue: 0,1:11:34.20,1:11:35.91,Default,,0000,0000,0000,,我的天！\N{\rENG}Oh, my God!
+Dialogue: 0,1:12:11.03,1:12:14.77,Default,,0000,0000,0000,,已封鎖道路 我們一定得告訴報界些消息\N{\rENG}We blocked the road. We've gotta tell the press something.
+Dialogue: 0,1:12:14.99,1:12:17.86,Default,,0000,0000,0000,,隨便你怎麼告訴他們 但別說出事實\N{\rENG}Tell them what you want, just don't tell them the truth.
+Dialogue: 0,1:12:18.08,1:12:21.32,Default,,0000,0000,0000,,我不認為她會在夜總會出現 那太簡單了\N{\rENG}I don't buy her showing up at the club. It's too damn convenient.
+Dialogue: 0,1:12:21.87,1:12:24.37,Default,,0000,0000,0000,,眼見為實 你不相信你雙眼嗎？\N{\rENG}Seeing is believing or don't you trust your eyes?
+Dialogue: 0,1:12:24.59,1:12:26.75,Default,,0000,0000,0000,,回去！叫這些人統統回去！\N{\rENG}Get back! Get all these people back!
+Dialogue: 0,1:12:27.00,1:12:30.00,Default,,0000,0000,0000,,有些不對\N{\rENG}Fitch. Fitch. It doesn't feel right.
+Dialogue: 0,1:12:30.34,1:12:31.58,Default,,0000,0000,0000,,長官！\N{\rENG}Sir!
+Dialogue: 0,1:12:31.76,1:12:35.47,Default,,0000,0000,0000,,我們在其中一道車門 發現一隻斷指\N{\rENG}We found a severed thumb in one of the doors that got ripped off.
+Dialogue: 0,1:12:35.68,1:12:38.89,Default,,0000,0000,0000,,- 讓我看看  - 她或許給夾在門中\N{\rENG}- Let me see that. - She may have caught it in the door.
+Dialogue: 0,1:12:39.10,1:12:41.09,Default,,0000,0000,0000,,拿去實驗室，看看是否屬於她\N{\rENG}Get to the lab, see if it's hers.
+Dialogue: 0,1:12:41.52,1:12:44.56,Default,,0000,0000,0000,,- 可從基因上辨別出來  - 這件事完了\N{\rENG}- It'll be genetically identifiable. - It's all over, everyone.
+Dialogue: 0,1:12:44.73,1:12:47.06,Default,,0000,0000,0000,,明天你可重過自己的生活\N{\rENG}Tomorrow you can go back to your lives.
+Dialogue: 0,1:12:47.28,1:12:49.61,Default,,0000,0000,0000,,恭喜你們，做得好\N{\rENG}Congratulations on a job well done.
+Dialogue: 0,1:12:53.11,1:12:55.11,Default,,0000,0000,0000,,就這樣結束了？\N{\rENG}Just like that, huh, Fitch?
+Dialogue: 0,1:12:55.78,1:12:57.27,Default,,0000,0000,0000,,我不認為\N{\rENG}I don't think so.
+Dialogue: 0,1:13:08.00,1:13:11.62,Default,,0000,0000,0000,,留話給我 法蘭克，我會和你吃晚餮\N{\rENG}Leave me a message. And Frank, I'm going to dinner.
+Dialogue: 0,1:13:11.80,1:13:14.46,Default,,0000,0000,0000,,我們在哪見面？再見\N{\rENG}Where are we meeting? Bye, sweetie.
+Dialogue: 0,1:13:17.14,1:13:18.34,Default,,0000,0000,0000,,服務生\N{\rENG}Waiter.
+Dialogue: 0,1:13:19.85,1:13:21.31,Default,,0000,0000,0000,,我猜我們贏了\N{\rENG}Well, I guess we won.
+Dialogue: 0,1:13:22.64,1:13:26.68,Default,,0000,0000,0000,,- 我們贏了，科學輸了  - 我不認為我們會這樣贏\N{\rENG}- We won, science lost. - I didn't think we'd get her this way.
+Dialogue: 0,1:13:27.65,1:13:29.76,Default,,0000,0000,0000,,- 沒那麼容易  - 你會懷念她嗎？\N{\rENG}- Not that easy. - You sound like you'll miss her.
+Dialogue: 0,1:13:29.94,1:13:31.10,Default,,0000,0000,0000,,會的\N{\rENG}I guess I will.
+Dialogue: 0,1:13:32.03,1:13:33.69,Default,,0000,0000,0000,,我想我尊重她\N{\rENG}I think I respected her.
+Dialogue: 0,1:13:36.16,1:13:40.49,Default,,0000,0000,0000,,這的確是不好做的工作 但我很高興跟你們三人合作\N{\rENG}I know this was a hellish job, but I really enjoyed working with you three.
+Dialogue: 0,1:13:40.70,1:13:43.79,Default,,0000,0000,0000,,既然國稅局請客 讓我們再多喝一杯\N{\rENG}And since Uncle Sam is buying, let's have another round.
+Dialogue: 0,1:13:43.96,1:13:44.95,Default,,0000,0000,0000,,服務生！\N{\rENG}Waiter!
+Dialogue: 0,1:13:45.12,1:13:46.99,Default,,0000,0000,0000,,我不喝酒的\N{\rENG}I don't... I don't drink.
+Dialogue: 0,1:13:47.34,1:13:48.95,Default,,0000,0000,0000,,今晚你會的\N{\rENG}Don't worry, Dan. Tonight you will.
+Dialogue: 0,1:13:51.01,1:13:52.50,Default,,0000,0000,0000,,想跳舞嗎？\N{\rENG}You wanna dance?
+Dialogue: 0,1:13:52.67,1:13:54.79,Default,,0000,0000,0000,,- 誰？我？ - 沒錯\N{\rENG}- Who, me? - Yeah, you.
+Dialogue: 0,1:13:57.97,1:14:00.13,Default,,0000,0000,0000,,- 好  - 對啊\N{\rENG}- All right. - Okay.
+Dialogue: 0,1:14:16.16,1:14:20.82,Default,,0000,0000,0000,,我知道你沒家室 在紐約有女朋友嗎？\N{\rENG}I know you don't have a family. Do you have a girlfriend in New York?
+Dialogue: 0,1:14:21.87,1:14:25.33,Default,,0000,0000,0000,,曾經有幾個，不過都不久\N{\rENG}I guess I've had a few, but they don't hang around very long.
+Dialogue: 0,1:14:26.17,1:14:28.33,Default,,0000,0000,0000,,可能我有太多秘密\N{\rENG}I guess I keep too many secrets.
+Dialogue: 0,1:14:28.96,1:14:30.37,Default,,0000,0000,0000,,跟我分享一個\N{\rENG}You wanna share one with me?
+Dialogue: 0,1:14:31.34,1:14:32.70,Default,,0000,0000,0000,,- 現在？ - 對\N{\rENG}- Right now? - Yeah.
+Dialogue: 0,1:14:38.22,1:14:41.63,Default,,0000,0000,0000,,我知道你是做什麼的 嚇不到我的\N{\rENG}I know what you do, and it doesn't scare me.
+Dialogue: 0,1:14:41.85,1:14:44.05,Default,,0000,0000,0000,,- 真的？ - 真的\N{\rENG}- Really? - No.
+Dialogue: 0,1:14:44.52,1:14:46.26,Default,,0000,0000,0000,,但卻使許多人害怕\N{\rENG}Well, it does most people.
+Dialogue: 0,1:14:50.94,1:14:53.35,Default,,0000,0000,0000,,我還要再見你\N{\rENG}I wouldn't wanna never see you again.
+Dialogue: 0,1:15:00.66,1:15:01.90,Default,,0000,0000,0000,,- 喂  - 你在...?\N{\rENG}- Hey. - What are you...?
+Dialogue: 0,1:15:02.08,1:15:05.99,Default,,0000,0000,0000,,對不起 我認錯人\N{\rENG}I'm sorry. I'm sorry. I thought you were somebody else.
+Dialogue: 0,1:15:06.16,1:15:07.57,Default,,0000,0000,0000,,對不起\N{\rENG}I'm sorry.
+Dialogue: 0,1:15:09.50,1:15:10.74,Default,,0000,0000,0000,,沒事嗎？\N{\rENG}You okay?
+Dialogue: 0,1:15:10.92,1:15:13.53,Default,,0000,0000,0000,,我以為是西爾 我見到一頭金髮\N{\rENG}I thought it was Sil. I saw the blonde hair.
+Dialogue: 0,1:15:13.75,1:15:15.24,Default,,0000,0000,0000,,她死了\N{\rENG}She's dead, Press.
+Dialogue: 0,1:15:15.42,1:15:17.96,Default,,0000,0000,0000,,拇指的化驗，證明是她的\N{\rENG}The tests on the thumb proved it was her.
+Dialogue: 0,1:15:18.18,1:15:21.38,Default,,0000,0000,0000,,你相信化驗，而我則有膽識 我不相信\N{\rENG}You got your test and I got my gut. I just don't buy it.
+Dialogue: 0,1:15:22.10,1:15:26.09,Default,,0000,0000,0000,,只要你還感到她存在 你都不會放棄\N{\rENG}I think as long as you feel she's out there, you got a mission.
+Dialogue: 0,1:15:26.27,1:15:28.76,Default,,0000,0000,0000,,或者你不想結束這任務\N{\rENG}Maybe you don't want this job to be over.
+Dialogue: 0,1:15:29.52,1:15:31.68,Default,,0000,0000,0000,,或者是，那又如何？\N{\rENG}Well, maybe not. So what?
+Dialogue: 0,1:15:35.11,1:15:36.77,Default,,0000,0000,0000,,謝謝你那支舞\N{\rENG}Thanks for the dance.
+Dialogue: 0,1:15:51.25,1:15:52.46,Default,,0000,0000,0000,,晚安\N{\rENG}Good night.
+Dialogue: 0,1:15:59.51,1:16:00.75,Default,,0000,0000,0000,,這是什麼？\N{\rENG}What do you call this?
+Dialogue: 0,1:16:01.14,1:16:03.30,Default,,0000,0000,0000,,長島冰茶\N{\rENG}It's called a Long Island Ice Tea.
+Dialogue: 0,1:16:04.60,1:16:05.93,Default,,0000,0000,0000,,有茶的成分嗎？\N{\rENG}It's got tea in it?
+Dialogue: 0,1:16:06.93,1:16:08.14,Default,,0000,0000,0000,,沒有\N{\rENG}Nope.
+Dialogue: 0,1:16:25.62,1:16:27.61,Default,,0000,0000,0000,,很香，我可以試試嗎？\N{\rENG}Smells nice, can I try some?
+Dialogue: 0,1:16:28.45,1:16:29.94,Default,,0000,0000,0000,,請便\N{\rENG}Help yourself.
+Dialogue: 0,1:16:35.17,1:16:36.96,Default,,0000,0000,0000,,這會迷倒你男朋友嗎？\N{\rENG}Does it work on your boyfriend?
+Dialogue: 0,1:16:37.17,1:16:39.13,Default,,0000,0000,0000,,令他厭惡\N{\rENG}Yeah. As a repellent.
+Dialogue: 0,1:16:43.01,1:16:46.47,Default,,0000,0000,0000,,他這個年紀 身型還保持得很好\N{\rENG}I don't know. I think he's in remarkably good shape for a man his age.
+Dialogue: 0,1:16:58.15,1:17:00.23,Default,,0000,0000,0000,,一杯長島冰茶\N{\rENG}One Long Island Ice Tea.
+Dialogue: 0,1:17:02.49,1:17:04.73,Default,,0000,0000,0000,,我喜歡這些茶\N{\rENG}I like these cups of tea.
+Dialogue: 0,1:17:07.03,1:17:09.03,Default,,0000,0000,0000,,- 什麼？ - 太好了\N{\rENG}- What? - That's great.
+Dialogue: 0,1:17:15.04,1:17:16.91,Default,,0000,0000,0000,,嘿，給我一杯\N{\rENG}Hey, give me one of those.
+Dialogue: 0,1:17:17.75,1:17:20.37,Default,,0000,0000,0000,,我喜歡這些茶\N{\rENG}I like these cups of tea, man.
+Dialogue: 0,1:17:21.26,1:17:23.54,Default,,0000,0000,0000,,我很累，我要去睡了\N{\rENG}You guys, I'm tired. I'm gonna go to bed.
+Dialogue: 0,1:17:26.89,1:17:28.09,Default,,0000,0000,0000,,那又怎樣？\N{\rENG}So?
+Dialogue: 0,1:17:29.77,1:17:31.05,Default,,0000,0000,0000,,她說要上床睡覺\N{\rENG}She's going to bed.
+Dialogue: 0,1:17:31.27,1:17:32.60,Default,,0000,0000,0000,,沒錯\N{\rENG}I guess.
+Dialogue: 0,1:17:34.60,1:17:36.26,Default,,0000,0000,0000,,但她仍然...\N{\rENG}She still...
+Dialogue: 0,1:17:37.23,1:17:39.02,Default,,0000,0000,0000,,...想見你\N{\rENG}...wants to see you though.
+Dialogue: 0,1:17:42.74,1:17:45.23,Default,,0000,0000,0000,,我去看看你的話是否正確\N{\rENG}Maybe I'll go find out if you're right about that.
+Dialogue: 0,1:18:11.35,1:18:13.51,Default,,0000,0000,0000,,地震時我不想在這裏\N{\rENG}I'd hate to be in here during an earthquake.
+Dialogue: 0,1:18:13.68,1:18:15.02,Default,,0000,0000,0000,,沒錯\N{\rENG}Yeah.
+Dialogue: 0,1:18:15.44,1:18:17.02,Default,,0000,0000,0000,,你到哪一層？\N{\rENG}What floor do you want?
+Dialogue: 0,1:18:17.44,1:18:19.10,Default,,0000,0000,0000,,十樓，麻煩你\N{\rENG}Ten, please.
+Dialogue: 0,1:18:28.95,1:18:31.03,Default,,0000,0000,0000,,我喜歡你的香水\N{\rENG}I like your perfume.
+Dialogue: 0,1:18:31.62,1:18:32.83,Default,,0000,0000,0000,,是嗎？\N{\rENG}You do?
+Dialogue: 0,1:18:33.45,1:18:36.70,Default,,0000,0000,0000,,- 謝謝  - 對不起，我要出去\N{\rENG}- Thank you. - Excuse me. I get out here.
+Dialogue: 0,1:18:40.88,1:18:42.12,Default,,0000,0000,0000,,晚安\N{\rENG}Good night.
+Dialogue: 0,1:19:19.08,1:19:21.12,Default,,0000,0000,0000,,- 你好 - 你好\N{\rENG}- Hi. - Hi.
+Dialogue: 0,1:19:30.51,1:19:32.25,Default,,0000,0000,0000,,<font size=28 color=#00d8f8>請勿打擾
+Dialogue: 0,1:19:38.77,1:19:40.35,Default,,0000,0000,0000,,你想要什麼嗎？\N{\rENG}Did you want something?
+Dialogue: 0,1:19:41.27,1:19:43.76,Default,,0000,0000,0000,,- 也許 - 也許？\N{\rENG}- Maybe. - Maybe?
+Dialogue: 0,1:20:29.36,1:20:30.98,Default,,0000,0000,0000,,打掃房間\N{\rENG}Housekeeping.
+Dialogue: 0,1:20:32.41,1:20:35.36,Default,,0000,0000,0000,,丹\N{\rENG}Dan. Dan.
+Dialogue: 0,1:20:35.53,1:20:38.70,Default,,0000,0000,0000,,我猜那兩個女子 會喜歡像我們這樣不平凡的男人\N{\rENG}Those two over there. Bet they like unusual men like us.
+Dialogue: 0,1:20:40.04,1:20:41.90,Default,,0000,0000,0000,,女人覺得我很奇怪\N{\rENG}Women think I'm strange.
+Dialogue: 0,1:20:42.42,1:20:43.78,Default,,0000,0000,0000,,我有點不舒服\N{\rENG}I don't feel well.
+Dialogue: 0,1:20:44.29,1:20:45.87,Default,,0000,0000,0000,,別說傻話\N{\rENG}Don't be silly.
+Dialogue: 0,1:20:46.38,1:20:48.46,Default,,0000,0000,0000,,過去跟她們聊天\N{\rENG}Just go over there and talk to them.
+Dialogue: 0,1:20:48.71,1:20:51.88,Default,,0000,0000,0000,,我要走了 我覺得你該跟我一起走，好嗎？\N{\rENG}I have to go. And I think you should leave with me, okay?
+Dialogue: 0,1:20:54.43,1:20:56.84,Default,,0000,0000,0000,,我想多留一會\N{\rENG}I'm gonna stay for a while, actually.
+Dialogue: 0,1:20:59.43,1:21:00.64,Default,,0000,0000,0000,,好吧\N{\rENG}Okay.
+Dialogue: 0,1:21:01.73,1:21:03.14,Default,,0000,0000,0000,,明天見\N{\rENG}I'll see you tomorrow.
+Dialogue: 0,1:21:06.15,1:21:08.01,Default,,0000,0000,0000,,打掃房間\N{\rENG}House keeping.
+Dialogue: 0,1:21:22.54,1:21:23.82,Default,,0000,0000,0000,,- 你好 - 你好\N{\rENG}- Hi. - Hi.
+Dialogue: 0,1:21:24.00,1:21:26.41,Default,,0000,0000,0000,,我在那邊坐著，我在猜…\N{\rENG}I was sitting over there, wondering...
+Dialogue: 0,1:21:26.63,1:21:30.17,Default,,0000,0000,0000,,...這兩位聰明漂亮的女子 怎麼沒有男伴\N{\rENG}...what two intelligent, glamorous women were doing without dates.
+Dialogue: 0,1:21:30.38,1:21:31.92,Default,,0000,0000,0000,,我叫史蒂文阿登\N{\rENG}My name's Stephen Arden.
+Dialogue: 0,1:21:32.13,1:21:34.25,Default,,0000,0000,0000,,在哈佛教授人類學的\N{\rENG}I teach anthropology at Harvard.
+Dialogue: 0,1:21:34.47,1:21:36.08,Default,,0000,0000,0000,,- 我曾住在波士頓  - 是嗎？\N{\rENG}- I lived in Boston once. - Yeah?
+Dialogue: 0,1:21:36.30,1:21:37.51,Default,,0000,0000,0000,,一年\N{\rENG}For a year.
+Dialogue: 0,1:21:37.68,1:21:40.59,Default,,0000,0000,0000,,- 冷得要命  - 的確很冷\N{\rENG}- Froze my butt off. - It's cold in Boston.
+Dialogue: 0,1:21:40.81,1:21:43.22,Default,,0000,0000,0000,,他們是比爾和東尼 我忘了你的名字\N{\rENG}This is Bill and Tony. I forget your name.
+Dialogue: 0,1:21:48.94,1:21:50.43,Default,,0000,0000,0000,,有趣的襪子\N{\rENG}Cute little socks.
+Dialogue: 0,1:21:52.15,1:21:53.61,Default,,0000,0000,0000,,起來\N{\rENG}Stand up.
+Dialogue: 0,1:22:33.57,1:22:35.15,Default,,0000,0000,0000,,你怎麼能進來的？\N{\rENG}How'd you get in here?
+Dialogue: 0,1:22:35.49,1:22:37.69,Default,,0000,0000,0000,,- 偷了鑰匙  - 什麼？\N{\rENG}- I stole the key. - What?
+Dialogue: 0,1:22:38.20,1:22:40.99,Default,,0000,0000,0000,,我在樓下見到你\N{\rENG}I saw you downstairs, but you were with all those people.
+Dialogue: 0,1:22:41.83,1:22:43.53,Default,,0000,0000,0000,,所以我就上來等你\N{\rENG}So I thought I'd come up and wait.
+Dialogue: 0,1:22:47.17,1:22:49.50,Default,,0000,0000,0000,,這種事不經常發生在我身上\N{\rENG}This kind of thing doesn't usually happen to me.
+Dialogue: 0,1:22:51.34,1:22:52.87,Default,,0000,0000,0000,,我想跟你一起\N{\rENG}I just want to be with you.
+Dialogue: 0,1:23:03.47,1:23:05.06,Default,,0000,0000,0000,,太好了\N{\rENG}Oh, yes.
+Dialogue: 0,1:23:19.36,1:23:20.77,Default,,0000,0000,0000,,不用做安全措施嗎？\N{\rENG}What about protection?
+Dialogue: 0,1:24:16.17,1:24:18.16,Default,,0000,0000,0000,,她在這兒\N{\rENG}She's here. She's here.
+Dialogue: 0,1:24:47.20,1:24:48.66,Default,,0000,0000,0000,,普雷斯頓\N{\rENG}Press?
+Dialogue: 0,1:24:49.00,1:24:50.70,Default,,0000,0000,0000,,有人在門外\N{\rENG}Someone's at the door.
+Dialogue: 0,1:24:52.75,1:24:53.74,Default,,0000,0000,0000,,是誰？\N{\rENG}Who's there?
+Dialogue: 0,1:24:53.92,1:24:55.12,Default,,0000,0000,0000,,普雷斯頓，羅拉\N{\rENG}Press, Laura.
+Dialogue: 0,1:24:55.29,1:24:57.33,Default,,0000,0000,0000,,是丹，我有事告訴你\N{\rENG}It's Dan. I gotta talk to you.
+Dialogue: 0,1:24:57.71,1:25:00.17,Default,,0000,0000,0000,,他到底想怎樣？\N{\rENG}Christ, what does he want?
+Dialogue: 0,1:25:10.10,1:25:12.97,Default,,0000,0000,0000,,- 什麼事？ - 我有不祥預感\N{\rENG}- What's the problem, Dan? - I just got this terrible feeling.
+Dialogue: 0,1:25:13.19,1:25:16.30,Default,,0000,0000,0000,,我奇怪地想到 西爾跟阿登一起的影像\N{\rENG}I get this strange thought, this image of Sil with Arden.
+Dialogue: 0,1:25:16.52,1:25:17.93,Default,,0000,0000,0000,,西爾跟阿登\N{\rENG}Sil's next door with Arden, Press.
+Dialogue: 0,1:25:18.36,1:25:20.64,Default,,0000,0000,0000,,不可能，她已死了\N{\rENG}No, no, no. She's dead, Dan.
+Dialogue: 0,1:25:21.03,1:25:24.69,Default,,0000,0000,0000,,我經過他房間 聽到裏面有另外一人\N{\rENG}I went to his room and there's someone in there with him.
+Dialogue: 0,1:25:24.87,1:25:28.40,Default,,0000,0000,0000,,- 你有敲門嗎？ - 有，但我不知道她會做什麼\N{\rENG}- Did you knock on the door? - Yes, but I don't know what she'll do.
+Dialogue: 0,1:25:28.66,1:25:32.45,Default,,0000,0000,0000,,他們很吵，他們在做愛\N{\rENG}They're making a lot of noise. They're having sex.
+Dialogue: 0,1:25:32.66,1:25:34.83,Default,,0000,0000,0000,,我知道是西爾\N{\rENG}I know it's Sil, I know it!
+Dialogue: 0,1:25:35.54,1:25:36.53,Default,,0000,0000,0000,,好吧\N{\rENG}Okay.
+Dialogue: 0,1:25:36.84,1:25:39.08,Default,,0000,0000,0000,,我相信你，我去穿衣\N{\rENG}I believe you. I'll get dressed.
+Dialogue: 0,1:25:54.94,1:25:56.77,Default,,0000,0000,0000,,你使我欲僊欲死\N{\rENG}I enjoyed that immensely.
+Dialogue: 0,1:26:15.29,1:26:17.91,Default,,0000,0000,0000,,- 我感覺到了 - 什麼？\N{\rENG}- I felt it. - What?
+Dialogue: 0,1:26:21.46,1:26:22.75,Default,,0000,0000,0000,,開始了\N{\rENG}It's started.
+Dialogue: 0,1:26:23.76,1:26:25.37,Default,,0000,0000,0000,,什麼？\N{\rENG}What's started?
+Dialogue: 0,1:26:25.55,1:26:26.59,Default,,0000,0000,0000,,生命\N{\rENG}Life.
+Dialogue: 0,1:26:27.89,1:26:29.92,Default,,0000,0000,0000,,你真可愛\N{\rENG}Oh, my darling girl.
+Dialogue: 0,1:26:30.47,1:26:34.64,Default,,0000,0000,0000,,在某些文化裏，女人相信 她們知道自己何時懷孕\N{\rENG}In some cultures, women believe they know the moment of conception...
+Dialogue: 0,1:26:34.85,1:26:36.51,Default,,0000,0000,0000,,你不相信我？感覺一下\N{\rENG}Don't you believe me? Feel.
+Dialogue: 0,1:26:42.03,1:26:43.61,Default,,0000,0000,0000,,天啊！\N{\rENG}Holy shit!
+Dialogue: 0,1:26:49.53,1:26:51.52,Default,,0000,0000,0000,,希望你說得對\N{\rENG}I hope you're right about this, Dan.
+Dialogue: 0,1:27:03.88,1:27:06.29,Default,,0000,0000,0000,,- 她朝地下室去了  - 我們走樓梯\N{\rENG}- She's headed for the basement. - We'll take the stairs.
+Dialogue: 0,1:27:06.47,1:27:07.88,Default,,0000,0000,0000,,羅拉，跟我來！\N{\rENG}Laura, come with me!
+Dialogue: 0,1:27:08.09,1:27:09.30,Default,,0000,0000,0000,,來！\N{\rENG}Come on!
+Dialogue: 0,1:27:12.26,1:27:16.43,Default,,0000,0000,0000,,如果她懷孕了 我們必須在她生產前找到她\N{\rENG}If she's pregnant, we gotta get to her before she gives birth.
+Dialogue: 0,1:27:16.60,1:27:19.51,Default,,0000,0000,0000,,我們不知道我們在跟什麼周旋\N{\rENG}God. We don't know what we're dealing with here.
+Dialogue: 0,1:27:19.69,1:27:23.56,Default,,0000,0000,0000,,她可以生一打孩子 甚至可產一千個卵\N{\rENG}She could have a dozen babies. She could lay 1000 eggs!
+Dialogue: 0,1:27:23.73,1:27:27.07,Default,,0000,0000,0000,,有見到阿登嗎？\N{\rENG}Oh, God. Did you see Arden?
+Dialogue: 0,1:27:27.28,1:27:28.99,Default,,0000,0000,0000,,有，那個可憐的傢伙\N{\rENG}Yeah, I did, that poor bastard.
+Dialogue: 0,1:27:29.16,1:27:33.82,Default,,0000,0000,0000,,我們可以困住她 防火門在底層出口打開了\N{\rENG}We can trap her. The fire door opens from the inside at the bottom exit.
+Dialogue: 0,1:27:34.12,1:27:35.11,Default,,0000,0000,0000,,然後怎樣？\N{\rENG}Then what?
+Dialogue: 0,1:27:37.50,1:27:38.74,Default,,0000,0000,0000,,他媽的\N{\rENG}Holy shit.
+Dialogue: 0,1:27:38.92,1:27:42.03,Default,,0000,0000,0000,,- 哦，上帝  - 那婊子穿過了鋼門\N{\rENG}- Oh, my God. - The bitch went through a steel door!
+Dialogue: 0,1:27:42.38,1:27:45.16,Default,,0000,0000,0000,,菲奇！丹！我們在停車場！ 她溜掉了！\N{\rENG}Fitch! Dan! We're in the garage! She got past us!
+Dialogue: 0,1:27:56.56,1:27:59.10,Default,,0000,0000,0000,,- 你見到她？ - 她在我們到達前已離開\N{\rENG}- You saw her? - She was gone before we got here.
+Dialogue: 0,1:27:59.27,1:28:00.98,Default,,0000,0000,0000,,- 來  - 你見到她！\N{\rENG}- Here. - You saw her!
+Dialogue: 0,1:28:01.19,1:28:03.18,Default,,0000,0000,0000,,- 看看那扇門！ - 她去哪兒了？\N{\rENG}- Look at the door! - Which way did she go?
+Dialogue: 0,1:28:03.40,1:28:05.76,Default,,0000,0000,0000,,- 普雷斯頓呢？ - 到了隧道下面！\N{\rENG}- Where's Press? - He took off down that tunnel.
+Dialogue: 0,1:28:20.79,1:28:26.30,Default,,0000,0000,0000,,她感到受威脅時就會殺人\N{\rENG}She kills if she feels threatened. She kills if she feels threatened.
+Dialogue: 0,1:28:48.44,1:28:50.40,Default,,0000,0000,0000,,她一定曾經過這兒\N{\rENG}She must've come through here.
+Dialogue: 0,1:29:12.88,1:29:14.92,Default,,0000,0000,0000,,她曾下來這裏\N{\rENG}She went down here. There's no other way.
+Dialogue: 0,1:29:15.10,1:29:16.55,Default,,0000,0000,0000,,對，她曾在這下面\N{\rENG}Yeah, she's down there.
+Dialogue: 0,1:29:17.81,1:29:19.05,Default,,0000,0000,0000,,走吧\N{\rENG}Let's go.
+Dialogue: 0,1:29:19.56,1:29:21.89,Default,,0000,0000,0000,,退後，我去清除一下\N{\rENG}Stand back, I'll clear it out.
+Dialogue: 0,1:30:15.11,1:30:17.27,Default,,0000,0000,0000,,她朝哪個方向，丹？\N{\rENG}Which way did she go, Dan?
+Dialogue: 0,1:30:18.53,1:30:20.44,Default,,0000,0000,0000,,- 我不知道  - 什麼？\N{\rENG}- I don't know. - What?
+Dialogue: 0,1:30:20.70,1:30:22.66,Default,,0000,0000,0000,,我不確定\N{\rENG}I'm not sure. She's here.
+Dialogue: 0,1:30:22.87,1:30:27.79,Default,,0000,0000,0000,,想一想！你是有超感官的能力！ 那個方向？\N{\rENG}Think. You're supposed to have some extrasensory power! Which way?
+Dialogue: 0,1:30:28.59,1:30:32.83,Default,,0000,0000,0000,,- 她去了哪個方向？ - 我不知道！\N{\rENG}- Which way did she go, Dan? - I don't know! I don't know!
+Dialogue: 0,1:30:36.01,1:30:38.84,Default,,0000,0000,0000,,- 那邊  - 這已經足夠了\N{\rENG}- I think she went that way. - That's good enough for me.
+Dialogue: 0,1:30:39.01,1:30:40.84,Default,,0000,0000,0000,,你認為她往那邊走？\N{\rENG}You think she went that way?
+Dialogue: 0,1:30:42.14,1:30:44.85,Default,,0000,0000,0000,,你什麼也不知道的，不是嗎？\N{\rENG}You don't fucking know, don't you? You don't fucking know.
+Dialogue: 0,1:30:45.02,1:30:47.43,Default,,0000,0000,0000,,我往這邊走，跟我來\N{\rENG}I'll go this way. You come with me.
+Dialogue: 0,1:30:47.65,1:30:49.76,Default,,0000,0000,0000,,- 丹，跟我來！ - 菲奇\N{\rENG}- Come with me, Dan! - Fitch.
+Dialogue: 0,1:30:51.52,1:30:53.26,Default,,0000,0000,0000,,我認為她往這邊走了\N{\rENG}I think she went this way.
+Dialogue: 0,1:31:11.13,1:31:12.49,Default,,0000,0000,0000,,丹？\N{\rENG}Dan?
+Dialogue: 0,1:31:16.05,1:31:17.38,Default,,0000,0000,0000,,丹？\N{\rENG}Dan?
+Dialogue: 0,1:31:54.63,1:31:55.87,Default,,0000,0000,0000,,菲奇\N{\rENG}Fitch. Fitch.
+Dialogue: 0,1:31:57.42,1:31:58.83,Default,,0000,0000,0000,,丹？\N{\rENG}Dan?
+Dialogue: 0,1:32:01.47,1:32:02.83,Default,,0000,0000,0000,,怎麼了？\N{\rENG}What happened?
+Dialogue: 0,1:32:12.11,1:32:13.44,Default,,0000,0000,0000,,我可以感覺到她\N{\rENG}I can feel her.
+Dialogue: 0,1:32:14.11,1:32:15.44,Default,,0000,0000,0000,,她在那一邊\N{\rENG}She's that way.
+Dialogue: 0,1:32:16.19,1:32:17.77,Default,,0000,0000,0000,,她在那一邊\N{\rENG}She's that way.
+Dialogue: 0,1:32:21.78,1:32:24.44,Default,,0000,0000,0000,,我從沒想過要殺人的\N{\rENG}I never thought I'd want to kill something.
+Dialogue: 0,1:32:24.83,1:32:26.49,Default,,0000,0000,0000,,我也沒想過\N{\rENG}Never thought I'd want to.
+Dialogue: 0,1:33:01.91,1:33:04.90,Default,,0000,0000,0000,,是這邊 在這裏後面\N{\rENG}It's this way. It's back here.
+Dialogue: 0,1:33:36.06,1:33:38.27,Default,,0000,0000,0000,,她在裏面\N{\rENG}Hey, she went in here.
+Dialogue: 0,1:33:43.53,1:33:45.94,Default,,0000,0000,0000,,這是在地震時給震開的\N{\rENG}This must have opened up during the earthquake.
+Dialogue: 0,1:33:47.28,1:33:49.02,Default,,0000,0000,0000,,你們退後\N{\rENG}Okay, stand back.
+Dialogue: 0,1:35:05.07,1:35:06.28,Default,,0000,0000,0000,,是油嗎？\N{\rENG}Is that oil?
+Dialogue: 0,1:35:06.57,1:35:07.90,Default,,0000,0000,0000,,好像是\N{\rENG}Looks like it.
+Dialogue: 0,1:35:15.58,1:35:18.79,Default,,0000,0000,0000,,我回去看看能否把她衝出來\N{\rENG}I'm going back there to see if I can flush her out.
+Dialogue: 0,1:35:18.96,1:35:21.79,Default,,0000,0000,0000,,若她穿過這兒回來，便攻擊她\N{\rENG}If she comes back through here, let her have it.
+Dialogue: 0,1:35:37.06,1:35:38.97,Default,,0000,0000,0000,,丹\N{\rENG}Dan. Dan!
+Dialogue: 0,1:36:38.71,1:36:41.87,Default,,0000,0000,0000,,- 那是什麼？ - 我不知道\N{\rENG}- Dan, what is it?  - I don't know.
+Dialogue: 0,1:36:42.04,1:36:43.37,Default,,0000,0000,0000,,不知道\N{\rENG}I don't know.
+Dialogue: 0,1:37:44.10,1:37:45.39,Default,,0000,0000,0000,,丹\N{\rENG}Dan.
+Dialogue: 0,1:38:06.88,1:38:08.46,Default,,0000,0000,0000,,沒事\N{\rENG}Okay.
+Dialogue: 0,1:38:10.38,1:38:11.67,Default,,0000,0000,0000,,沒事的\N{\rENG}It's okay.
+Dialogue: 0,1:38:13.30,1:38:14.58,Default,,0000,0000,0000,,沒有人會傷害你\N{\rENG}Nobody's gonna hurt you.
+Dialogue: 0,1:38:15.43,1:38:16.67,Default,,0000,0000,0000,,過來\N{\rENG}You come here.
+Dialogue: 0,1:38:18.97,1:38:20.96,Default,,0000,0000,0000,,過來，我扶你\N{\rENG}Come on. I got you.
+Dialogue: 0,1:38:26.02,1:38:28.35,Default,,0000,0000,0000,,丹出事了！\N{\rENG}Press, something's happened to Dan!
+Dialogue: 0,1:38:29.36,1:38:30.81,Default,,0000,0000,0000,,沒事嗎？\N{\rENG}You okay?
+Dialogue: 0,1:38:33.74,1:38:35.07,Default,,0000,0000,0000,,糟糕\N{\rENG}Shit!
+Dialogue: 0,1:38:37.20,1:38:38.69,Default,,0000,0000,0000,,丹？\N{\rENG}Dan?
+Dialogue: 0,1:38:39.70,1:38:41.36,Default,,0000,0000,0000,,丹？\N{\rENG}Dan?
+Dialogue: 0,1:38:42.20,1:38:43.53,Default,,0000,0000,0000,,我被困了！\N{\rENG}I'm stuck!
+Dialogue: 0,1:38:48.58,1:38:51.17,Default,,0000,0000,0000,,幫幫我！我被困住了！\N{\rENG}I need your help! I'm stuck!
+Dialogue: 0,1:39:20.20,1:39:22.19,Default,,0000,0000,0000,,丹，撐著點！\N{\rENG}Dan, you gotta hang on!
+Dialogue: 0,1:39:29.50,1:39:31.12,Default,,0000,0000,0000,,普雷斯頓\N{\rENG}Press!
+Dialogue: 0,1:39:35.26,1:39:36.50,Default,,0000,0000,0000,,撐著點，丹\N{\rENG}Dan, keep on.
+Dialogue: 0,1:39:50.65,1:39:53.23,Default,,0000,0000,0000,,普雷斯頓\N{\rENG}Press!
+Dialogue: 0,1:40:43.12,1:40:44.40,Default,,0000,0000,0000,,撐著點！\N{\rENG}Hang on, Dan!
+Dialogue: 0,1:40:46.74,1:40:47.95,Default,,0000,0000,0000,,撐著點\N{\rENG}Hang on!
+Dialogue: 0,1:40:49.33,1:40:50.32,Default,,0000,0000,0000,,我抓住你了\N{\rENG}I got you.
+Dialogue: 0,1:40:52.08,1:40:54.07,Default,,0000,0000,0000,,我抓住你了\N{\rENG}I got you, Dan. Hang on.
+Dialogue: 0,1:40:54.79,1:40:56.16,Default,,0000,0000,0000,,糟糕\N{\rENG}Shit.
+Dialogue: 0,1:41:03.76,1:41:05.25,Default,,0000,0000,0000,,撐著點\N{\rENG}Hang on!
+Dialogue: 0,1:41:07.31,1:41:08.47,Default,,0000,0000,0000,,丹，撐著點\N{\rENG}Hang on, Dan!
+Dialogue: 0,1:41:12.77,1:41:14.68,Default,,0000,0000,0000,,除掉她！\N{\rENG}Get rid of her, Press!
+Dialogue: 0,1:41:19.19,1:41:20.40,Default,,0000,0000,0000,,低頭\N{\rENG}Duck your head.
+Dialogue: 0,1:41:21.99,1:41:24.27,Default,,0000,0000,0000,,去你的，死吧\N{\rENG}Let go, you motherfucker.
+Dialogue: 0,1:41:26.87,1:41:29.53,Default,,0000,0000,0000,,- 我抓住你了  - 糟糕\N{\rENG}- I got you. Hold on, I got you. - Shit.
+Dialogue: 0,1:41:35.17,1:41:36.78,Default,,0000,0000,0000,,我還以為會沒命\N{\rENG}I thought I was dead.
+Dialogue: 0,1:41:40.30,1:41:43.51,Default,,0000,0000,0000,,我以為你再沒機會喝長島冰茶了\N{\rENG}I thought you'd drank your last Long Island Ice Tea.
+Dialogue: 0,1:41:43.68,1:41:45.04,Default,,0000,0000,0000,,我以為大家都是\N{\rENG}Yeah, I thought we all had.
+Dialogue: 0,1:41:47.43,1:41:49.64,Default,,0000,0000,0000,,你沒事嗎？\N{\rENG}Hey, you okay?
+Dialogue: 0,1:41:50.14,1:41:51.38,Default,,0000,0000,0000,,沒事\N{\rENG}Yeah, I'm okay.
+Dialogue: 0,1:41:52.56,1:41:54.47,Default,,0000,0000,0000,,我的褲子很邋遢\N{\rENG}My pants are a little messed up.
+Dialogue: 0,1:41:55.06,1:41:56.39,Default,,0000,0000,0000,,不過我沒事\N{\rENG}But I'm okay.
+Dialogue: 0,1:41:58.82,1:42:01.31,Default,,0000,0000,0000,,她是半人半怪物\N{\rENG}She was half us, half something else.
+Dialogue: 0,1:42:02.15,1:42:04.31,Default,,0000,0000,0000,,不知道哪邊才是掠食性的\N{\rENG}I wonder which was the predatory half.
+Dialogue: 0,1:42:05.66,1:42:07.24,Default,,0000,0000,0000,,那死了的一邊\N{\rENG}The dead half.
+Dialogue: 0,1:42:07.58,1:42:09.07,Default,,0000,0000,0000,,我們走吧\N{\rENG}Let's get the hell out of here.
+Dialogue: 0,1:42:53.58,1:42:56.95,Default,,0000,0000,0000,,沒想過回到水渠來 會這麼開心的\N{\rENG}I never thought I'd be so happy to be back in a sewer.
+Dialogue: 0,1:43:12.58,1:43:15.28,Default,,0000,0000,0000,,浮水印
+Dialogue: 0,1:43:16.58,1:43:19.58,Default,,0000,0000,0000,,謝謝觀賞
+
+
