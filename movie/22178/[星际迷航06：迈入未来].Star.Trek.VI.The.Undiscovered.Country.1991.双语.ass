@@ -1,0 +1,1838 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: en,Tahoma,16,&H0000FFFF,&H0000FFFF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,0,1,1,2,20,20,0,1
+Style: cn,STKaiti,22,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,0,1,1,2,20,20,10,134
+Style: Default,STKaiti,20,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,1,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:35.86,0:00:42.80,cn,,0000,0000,0000,,星际迷航06: 迈入未来
+Dialogue: 0,0:03:34.31,0:03:37.83,en,,0000,0000,0000,,Stardate 9521.6.
+Dialogue: 0,0:03:38.01,0:03:43.04,en,,0000,0000,0000,,Captain's log U.S.S. Excelsior. Hikaru Sulu commanding.
+Dialogue: 0,0:03:43.62,0:03:48.08,en,,0000,0000,0000,,After three years I've concluded my first assignment as master of this vessel
+Dialogue: 0,0:03:48.25,0:03:53.09,en,,0000,0000,0000,,cataloguing gaseous planetary anomalies in Beta Quadrant.
+Dialogue: 0,0:03:54.16,0:03:57.32,en,,0000,0000,0000,,We're heading home under full impulse power.
+Dialogue: 0,0:03:57.50,0:04:00.19,en,,0000,0000,0000,,I'm pleased to report that ship and crew have functioned well.
+Dialogue: 0,0:04:00.37,0:04:04.74,en,,0000,0000,0000,,According to this,we've completed our survey of the entire sector.
+Dialogue: 0,0:04:16.55,0:04:19.11,en,,0000,0000,0000,,I have an energy wave at 240 degrees mark six port.
+Dialogue: 0,0:04:19.29,0:04:22.19,en,,0000,0000,0000,,Visual!
+Dialogue: 0,0:04:22.36,0:04:24.72,en,,0000,0000,0000,,My... God!
+Dialogue: 0,0:04:28.69,0:04:30.25,en,,0000,0000,0000,,Shields. Shields!
+Dialogue: 0,0:04:40.94,0:04:42.31,en,,0000,0000,0000,,She's not answering her helm.
+Dialogue: 0,0:04:42.48,0:04:45.41,en,,0000,0000,0000,,Starboard thrusters. Turn her into the wave.
+Dialogue: 0,0:04:49.55,0:04:52.11,en,,0000,0000,0000,,Go to impulse power.
+Dialogue: 0,0:04:59.93,0:05:02.45,en,,0000,0000,0000,,Damage report. Checking all systems.
+Dialogue: 0,0:05:09.14,0:05:12.13,en,,0000,0000,0000,,That was no meteor shower. Negative,sir.
+Dialogue: 0,0:05:12.31,0:05:17.00,en,,0000,0000,0000,,The sub-space shock-wave originated at bearing 323.75.
+Dialogue: 0,0:05:17.18,0:05:21.48,en,,0000,0000,0000,,Location... It's Praxis,sir. It's a Klingon moon.
+Dialogue: 0,0:05:21.65,0:05:25.67,en,,0000,0000,0000,,Praxis is their key energy production facility.
+Dialogue: 0,0:05:27.65,0:05:32.35,en,,0000,0000,0000,,Send to Klingon High Command. 'This is Excelsior,a Federation Starship.'
+Dialogue: 0,0:05:32.53,0:05:36.15,en,,0000,0000,0000,,'We have monitored a large explosion in your sector.'
+Dialogue: 0,0:05:36.33,0:05:39.70,en,,0000,0000,0000,,'Do you require assistance?' Aye,sir.
+Dialogue: 0,0:05:39.87,0:05:44.70,en,,0000,0000,0000,,Mr Vultane,any more data? I've confirmed Praxis' location,but...
+Dialogue: 0,0:05:46.04,0:05:49.67,en,,0000,0000,0000,,I cannot confirm Praxis' existence. On screen.
+Dialogue: 0,0:05:51.11,0:05:54.27,en,,0000,0000,0000,,Magnify. Computer enhancement.
+Dialogue: 0,0:05:56.92,0:05:59.11,en,,0000,0000,0000,,Praxis? What's left of it,sir.
+Dialogue: 0,0:05:59.29,0:06:01.78,en,,0000,0000,0000,,Captain,I'm getting a message from Praxis.
+Dialogue: 0,0:06:01.95,0:06:04.12,en,,0000,0000,0000,,Let's have it.
+Dialogue: 0,0:06:16.60,0:06:20.20,en,,0000,0000,0000,,This is Brigadier Kerla, speaking for the High Command.
+Dialogue: 0,0:06:20.37,0:06:23.87,en,,0000,0000,0000,,There has been an incident on Praxis.
+Dialogue: 0,0:06:24.04,0:06:29.81,en,,0000,0000,0000,,However,everything is under control. We have no need for assistance.
+Dialogue: 0,0:06:29.98,0:06:36.41,en,,0000,0000,0000,,Obey treaty stipulations and remain outside the Neutral Zone.
+Dialogue: 0,0:06:36.59,0:06:39.42,en,,0000,0000,0000,,This transmission ends now.
+Dialogue: 0,0:06:41.29,0:06:44.23,en,,0000,0000,0000,,An incident? Do we report this,sir?
+Dialogue: 0,0:06:44.76,0:06:45.99,en,,0000,0000,0000,,Are you kidding?
+Dialogue: 0,0:06:51.31,0:06:53.27,cn,,0000,0000,0000,,舰队总部
+Dialogue: 0,0:06:53.44,0:06:57.24,en,,0000,0000,0000,,What are we doing here? Maybe it's a retirement party.
+Dialogue: 0,0:06:57.41,0:06:59.31,en,,0000,0000,0000,,That suits me. I just bought a boat.
+Dialogue: 0,0:06:59.48,0:07:03.31,en,,0000,0000,0000,,I'm supposed to be chairing a seminar at the Academy.
+Dialogue: 0,0:07:03.48,0:07:07.54,en,,0000,0000,0000,,Isn't this just for top brass? Where is Sulu?
+Dialogue: 0,0:07:07.72,0:07:11.92,en,,0000,0000,0000,,Captain Sulu? On assignment. Where's Spock?
+Dialogue: 0,0:07:19.97,0:07:24.99,en,,0000,0000,0000,,This briefing is classified. Ladies and gentlemen,the C-in-C.
+Dialogue: 0,0:07:30.78,0:07:32.94,en,,0000,0000,0000,,As you were.
+Dialogue: 0,0:07:35.85,0:07:38.84,en,,0000,0000,0000,,I'll break this information down succinctly.
+Dialogue: 0,0:07:39.02,0:07:42.45,en,,0000,0000,0000,,The Klingon empire has 50 years of life left.
+Dialogue: 0,0:07:43.39,0:07:49.16,en,,0000,0000,0000,,For full details,I'm turning this briefing over to the Federation Special Envoy.
+Dialogue: 0,0:08:01.41,0:08:03.14,en,,0000,0000,0000,,Good morning.
+Dialogue: 0,0:08:03.31,0:08:09.44,en,,0000,0000,0000,,Two months ago a Federation Starship monitored an explosion on Praxis.
+Dialogue: 0,0:08:09.62,0:08:14.38,en,,0000,0000,0000,,We believe it was caused by over-mining and insufficient safety precautions.
+Dialogue: 0,0:08:14.55,0:08:18.35,en,,0000,0000,0000,,The moon's decimation means a deadly pollution of their ozone.
+Dialogue: 0,0:08:18.52,0:08:23.59,en,,0000,0000,0000,,They will have depleted their oxygen supply in 50 Earth years.
+Dialogue: 0,0:08:24.76,0:08:26.66,en,,0000,0000,0000,,Due to their enormous military budget
+Dialogue: 0,0:08:26.83,0:08:32.50,en,,0000,0000,0000,,the Klingon economy doesn't have the resources to combat this catastrophe.
+Dialogue: 0,0:08:32.67,0:08:36.27,en,,0000,0000,0000,,Last month,at the behest of the Vulcan Ambassador,
+Dialogue: 0,0:08:36.44,0:08:42.40,en,,0000,0000,0000,,I opened a dialogue with Gorkon, Chancellor of the Klingon High Council.
+Dialogue: 0,0:08:42.58,0:08:46.35,en,,0000,0000,0000,,He proposes to commence negotiations at once.
+Dialogue: 0,0:08:46.52,0:08:49.39,en,,0000,0000,0000,,Negotiations for what?
+Dialogue: 0,0:08:49.56,0:08:53.36,en,,0000,0000,0000,,The dismantling of our space stations and bases along the Neutral Zone.
+Dialogue: 0,0:08:53.53,0:08:59.69,en,,0000,0000,0000,,An end to 70 years of hostility, which the Klingons can no longer afford.
+Dialogue: 0,0:09:00.33,0:09:04.50,en,,0000,0000,0000,,Bill,are we talking about mothballing the Starfleet?
+Dialogue: 0,0:09:04.67,0:09:09.20,en,,0000,0000,0000,,Our exploration and scientific programs would be unaffected,but...
+Dialogue: 0,0:09:09.38,0:09:10.74,en,,0000,0000,0000,,I must protest!
+Dialogue: 0,0:09:10.91,0:09:15.18,en,,0000,0000,0000,,To offer Klingons safe haven within Federation space is suicide.
+Dialogue: 0,0:09:15.35,0:09:18.21,en,,0000,0000,0000,,Klingons would become the alien trash of the galaxy.
+Dialogue: 0,0:09:18.38,0:09:20.15,en,,0000,0000,0000,,If we dismantle the fleet,
+Dialogue: 0,0:09:20.32,0:09:24.48,en,,0000,0000,0000,,we'd be defenceless before an aggressive species on our territory.
+Dialogue: 0,0:09:24.66,0:09:28.39,en,,0000,0000,0000,,The opportunity here is to bring them to their knees.
+Dialogue: 0,0:09:29.23,0:09:33.39,en,,0000,0000,0000,,Then we'll be in a better position to dictate terms.
+Dialogue: 0,0:09:34.00,0:09:37.33,en,,0000,0000,0000,,Sir... Captain Kirk?
+Dialogue: 0,0:09:37.50,0:09:41.60,en,,0000,0000,0000,,The Klingons have never been trustworthy.
+Dialogue: 0,0:09:41.77,0:09:46.01,en,,0000,0000,0000,,I agree with Admiral Cartwright. This is a terrifying idea.
+Dialogue: 0,0:09:46.18,0:09:50.51,en,,0000,0000,0000,,It is imperative that we act now to support the Gorkon initiative,
+Dialogue: 0,0:09:50.68,0:09:53.95,en,,0000,0000,0000,,lest more conservative elements persuade his empire
+Dialogue: 0,0:09:54.12,0:09:57.61,en,,0000,0000,0000,,that it's better to attempt a military solution and die fighting.
+Dialogue: 0,0:09:57.79,0:10:01.12,en,,0000,0000,0000,,You,Captain Kirk, are to be our first olive branch.
+Dialogue: 0,0:10:02.70,0:10:07.93,en,,0000,0000,0000,,We are to rendezvous with the vessel which is bringing Gorkon to Earth
+Dialogue: 0,0:10:08.10,0:10:10.97,en,,0000,0000,0000,,and to escort him safely through Federation space.
+Dialogue: 0,0:10:11.14,0:10:12.87,en,,0000,0000,0000,,Me?
+Dialogue: 0,0:10:13.04,0:10:18.81,en,,0000,0000,0000,,There are Klingons who feel the same about the peace treaty as yourself,
+Dialogue: 0,0:10:18.98,0:10:22.61,en,,0000,0000,0000,,but they'll think twice about attacking the Enterprise under your command.
+Dialogue: 0,0:10:22.78,0:10:26.11,en,,0000,0000,0000,,I have personally vouched for you in this matter.
+Dialogue: 0,0:10:26.72,0:10:29.95,en,,0000,0000,0000,,You have personally vouched...?
+Dialogue: 0,0:10:30.79,0:10:35.69,en,,0000,0000,0000,,You will extend Chancellor Gorkon full diplomatic courtesy,Captain.
+Dialogue: 0,0:10:35.86,0:10:39.96,en,,0000,0000,0000,,A full Ambassador is better equipped... If there's no further business...
+Dialogue: 0,0:10:40.13,0:10:44.57,en,,0000,0000,0000,,I wish you and your crew Godspeed. Thank you,ladies and gentlemen.
+Dialogue: 0,0:10:44.74,0:10:47.50,en,,0000,0000,0000,,I remind you this meeting is classified.
+Dialogue: 0,0:10:53.91,0:10:58.41,en,,0000,0000,0000,,I don't know whether to congratulate you or not,Jim.
+Dialogue: 0,0:10:58.58,0:11:00.71,en,,0000,0000,0000,,I wouldn't.
+Dialogue: 0,0:11:03.89,0:11:05.91,en,,0000,0000,0000,,We volunteered?
+Dialogue: 0,0:11:06.09,0:11:11.09,en,,0000,0000,0000,,There's an old Vulcan proverb. 'Only Nixon could go to China.'
+Dialogue: 0,0:11:12.30,0:11:15.10,en,,0000,0000,0000,,How could you vouch for me?
+Dialogue: 0,0:11:15.27,0:11:20.17,en,,0000,0000,0000,,That's arrogant presumption. My father requested that I open...
+Dialogue: 0,0:11:20.34,0:11:25.78,en,,0000,0000,0000,,I know your father is the Vulcan Ambassador,but you know how I feel.
+Dialogue: 0,0:11:27.38,0:11:29.07,en,,0000,0000,0000,,They're animals. Jim...
+Dialogue: 0,0:11:29.98,0:11:35.39,en,,0000,0000,0000,,There is an historic opportunity here. Don't believe them! Don't trust them.
+Dialogue: 0,0:11:36.06,0:11:38.75,en,,0000,0000,0000,,They're dying. Let them die.
+Dialogue: 0,0:11:41.76,0:11:47.10,en,,0000,0000,0000,,Has it occurred to you that this crew is due to stand down in three months?
+Dialogue: 0,0:11:47.27,0:11:49.93,en,,0000,0000,0000,,We've done our bit for king and country.
+Dialogue: 0,0:11:50.87,0:11:52.86,en,,0000,0000,0000,,You should have trusted me.
+Dialogue: 0,0:11:58.98,0:12:02.88,en,,0000,0000,0000,,Control,this is S-D 103, approach to Space dock. Over.
+Dialogue: 0,0:12:03.05,0:12:10.65,en,,0000,0000,0000,,You are clear to deliver Captain Kirk and party to N.C.C. 1701 Alpha.
+Dialogue: 0,0:12:15.73,0:12:19.26,en,,0000,0000,0000,,Captain on the bridge! As you were. Lieutenant...?
+Dialogue: 0,0:12:19.43,0:12:24.13,en,,0000,0000,0000,,Val'eris,sir. We were told you needed a helmsman,so I volunteered.
+Dialogue: 0,0:12:24.30,0:12:27.07,en,,0000,0000,0000,,It is agreeable to see you again.
+Dialogue: 0,0:12:27.24,0:12:31.77,en,,0000,0000,0000,,She was the first Vulcan to graduate at the top of her class at the Academy.
+Dialogue: 0,0:12:31.94,0:12:35.28,en,,0000,0000,0000,,You must be very proud. I don't believe so,sir.
+Dialogue: 0,0:12:35.45,0:12:36.97,en,,0000,0000,0000,,She's a Vulcan,alright.
+Dialogue: 0,0:12:37.15,0:12:41.14,en,,0000,0000,0000,,Let's get this over with. Departure stations.
+Dialogue: 0,0:12:41.32,0:12:45.48,en,,0000,0000,0000,,Scotty? Did you find the engine room? Right where I left it.
+Dialogue: 0,0:12:45.66,0:12:48.49,en,,0000,0000,0000,,Stand by. Uhura,get me the dock master.
+Dialogue: 0,0:12:48.66,0:12:50.36,en,,0000,0000,0000,,Control tower reading,sir.
+Dialogue: 0,0:12:50.53,0:12:55.33,en,,0000,0000,0000,,Control,this is Enterprise requesting permission to depart.
+Dialogue: 0,0:12:55.50,0:13:00.37,en,,0000,0000,0000,,This is Control. Permission to depart granted. 30 seconds for port gates.
+Dialogue: 0,0:13:00.54,0:13:05.00,en,,0000,0000,0000,,Clear all moorings. Awaiting port gates from this mark.
+Dialogue: 0,0:13:05.18,0:13:08.04,en,,0000,0000,0000,,All lines clear. Aft thrusters.
+Dialogue: 0,0:13:08.21,0:13:11.58,en,,0000,0000,0000,,Thank you,Lieutenant. 1 quarter impulse power.
+Dialogue: 0,0:13:11.75,0:13:18.45,en,,0000,0000,0000,,Captain,regulations specify thrusters only while in space dock.
+Dialogue: 0,0:13:21.43,0:13:22.99,en,,0000,0000,0000,,Jim...
+Dialogue: 0,0:13:25.30,0:13:27.53,en,,0000,0000,0000,,You heard the order,Lieutenant.
+Dialogue: 0,0:13:28.43,0:13:30.49,en,,0000,0000,0000,,Aye,sir.
+Dialogue: 0,0:14:03.10,0:14:06.90,en,,0000,0000,0000,,Captain's log. Stardate 9522.6.
+Dialogue: 0,0:14:07.07,0:14:11.77,en,,0000,0000,0000,,I've never trusted Klingons, and I never will.
+Dialogue: 0,0:14:15.81,0:14:19.38,en,,0000,0000,0000,,I can never forgive them for the death of my boy.
+Dialogue: 0,0:14:21.09,0:14:28.32,en,,0000,0000,0000,,To escort the Chancellor of the Klingon High Council to a peace summit
+Dialogue: 0,0:14:28.49,0:14:31.05,en,,0000,0000,0000,,is problematic,at best.
+Dialogue: 0,0:14:34.33,0:14:39.24,en,,0000,0000,0000,,Spock says this could be an historic occasion. I'd like to believe him.
+Dialogue: 0,0:14:39.40,0:14:44.00,en,,0000,0000,0000,,But how on Earth can history get past people like me?
+Dialogue: 0,0:14:45.88,0:14:49.41,en,,0000,0000,0000,,Sorry. You could have knocked.
+Dialogue: 0,0:14:49.58,0:14:54.95,en,,0000,0000,0000,,We are almost at the rendezvous,sir. I thought that you would like to know.
+Dialogue: 0,0:14:59.16,0:15:03.79,en,,0000,0000,0000,,Permission to speak freely,sir. It is an honour to serve with you.
+Dialogue: 0,0:15:09.37,0:15:12.53,en,,0000,0000,0000,,You piloted well out of space dock, Lieutenant.
+Dialogue: 0,0:15:13.14,0:15:15.33,en,,0000,0000,0000,,I've always wanted to try that.
+Dialogue: 0,0:15:25.75,0:15:28.15,en,,0000,0000,0000,,You've done well,Val'eris.
+Dialogue: 0,0:15:28.32,0:15:34.38,en,,0000,0000,0000,,As your sponsor at the Academy I've followed your career with satisfaction.
+Dialogue: 0,0:15:34.56,0:15:39.09,en,,0000,0000,0000,,And as a Vulcan, you have exceeded my expectations.
+Dialogue: 0,0:15:40.67,0:15:44.23,en,,0000,0000,0000,,I do not understand this representation.
+Dialogue: 0,0:15:44.40,0:15:48.07,en,,0000,0000,0000,,It's a depiction from ancient Earth mythology.
+Dialogue: 0,0:15:48.24,0:15:50.71,en,,0000,0000,0000,,'The expulsion from Paradise.'
+Dialogue: 0,0:15:50.88,0:15:57.15,en,,0000,0000,0000,,Why keep it in your quarters? To remind me that all things end.
+Dialogue: 0,0:16:01.69,0:16:05.62,en,,0000,0000,0000,,It is of endings that I wish to speak.
+Dialogue: 0,0:16:07.69,0:16:11.22,en,,0000,0000,0000,,Sir,I address you as a kindred intellect.
+Dialogue: 0,0:16:12.23,0:16:15.10,en,,0000,0000,0000,,Do you not recognise...
+Dialogue: 0,0:16:15.27,0:16:19.07,en,,0000,0000,0000,,that a turning point has been reached in the affairs of the Federation?
+Dialogue: 0,0:16:21.21,0:16:26.97,en,,0000,0000,0000,,History is replete with turning points. You must have faith.
+Dialogue: 0,0:16:27.15,0:16:31.34,en,,0000,0000,0000,,Faith? The universe will unfold as it should.
+Dialogue: 0,0:16:32.22,0:16:38.32,en,,0000,0000,0000,,Is that logical? Surely we must... Logic,logic,logic.
+Dialogue: 0,0:16:38.49,0:16:45.29,en,,0000,0000,0000,,Logic is the beginning of wisdom, Val'eris. Not the end.
+Dialogue: 0,0:16:46.80,0:16:52.17,en,,0000,0000,0000,,This will be my final voyage on board this vessel as a member of her crew.
+Dialogue: 0,0:16:54.24,0:16:58.37,en,,0000,0000,0000,,Nature abhors a vacuum.
+Dialogue: 0,0:16:58.54,0:17:01.17,en,,0000,0000,0000,,I intend you to replace me.
+Dialogue: 0,0:17:09.76,0:17:12.45,en,,0000,0000,0000,,I could only succeed you,sir.
+Dialogue: 0,0:17:17.16,0:17:20.00,en,,0000,0000,0000,,Now hear this. All officers to the bridge.
+Dialogue: 0,0:17:20.17,0:17:24.47,en,,0000,0000,0000,,Klingon battle cruiser off the port bow. All Officers to the bridge.
+Dialogue: 0,0:17:41.05,0:17:43.21,en,,0000,0000,0000,,Captain on the bridge!
+Dialogue: 0,0:17:57.07,0:17:59.56,en,,0000,0000,0000,,Shall we raise our shields,Captain?
+Dialogue: 0,0:18:01.17,0:18:03.61,en,,0000,0000,0000,,I've never been this close.
+Dialogue: 0,0:18:05.38,0:18:09.01,en,,0000,0000,0000,,The Chancellor is undoubtedly awaiting our signal.
+Dialogue: 0,0:18:17.99,0:18:21.19,en,,0000,0000,0000,,Uhura,hailing frequencies. Aye,sir.
+Dialogue: 0,0:18:21.36,0:18:23.66,en,,0000,0000,0000,,Right standard rudder. Bring us alongside.
+Dialogue: 0,0:18:23.83,0:18:26.76,en,,0000,0000,0000,,Right standard rudder. Z plus 5 degrees.
+Dialogue: 0,0:18:26.93,0:18:29.73,en,,0000,0000,0000,,Channel is open,Captain.
+Dialogue: 0,0:18:29.90,0:18:34.20,en,,0000,0000,0000,,This is the Starship Enterprise. Captain James T. Kirk commanding.
+Dialogue: 0,0:18:34.37,0:18:40.54,en,,0000,0000,0000,,This is Kronos One. I am Chancellor Gorkon.
+Dialogue: 0,0:18:44.72,0:18:50.09,en,,0000,0000,0000,,We've been ordered to escort you to your meeting on Earth.
+Dialogue: 0,0:18:50.26,0:18:51.81,en,,0000,0000,0000,,Thank you.
+Dialogue: 0,0:18:52.46,0:18:58.16,en,,0000,0000,0000,,Would you and your party care to dine this evening aboard the Enterprise
+Dialogue: 0,0:18:58.33,0:19:00.46,en,,0000,0000,0000,,as guests of the United Federation of Planets?
+Dialogue: 0,0:19:00.63,0:19:04.50,en,,0000,0000,0000,,We would be delighted to accept your gracious invitation.
+Dialogue: 0,0:19:08.04,0:19:11.41,en,,0000,0000,0000,,We'll make arrangements to have you beamed aboard at 19:30 hours.
+Dialogue: 0,0:19:11.58,0:19:13.98,en,,0000,0000,0000,,I shall look forward to that.
+Dialogue: 0,0:19:21.39,0:19:23.48,en,,0000,0000,0000,,I hope you're happy.
+Dialogue: 0,0:19:23.66,0:19:27.42,en,,0000,0000,0000,,Captain! There is a supply of Romulan ale aboard.
+Dialogue: 0,0:19:27.59,0:19:30.86,en,,0000,0000,0000,,It might make the evening pass more... smoothly.
+Dialogue: 0,0:19:31.03,0:19:33.73,en,,0000,0000,0000,,Officer thinking,Lieutenant.
+Dialogue: 0,0:19:36.07,0:19:38.09,en,,0000,0000,0000,,Guess who's coming to dinner.
+Dialogue: 0,0:19:49.58,0:19:51.88,en,,0000,0000,0000,,Energize.
+Dialogue: 0,0:20:25.45,0:20:27.61,en,,0000,0000,0000,,Chancellor Gorkon. Captain Kirk.
+Dialogue: 0,0:20:27.79,0:20:30.38,en,,0000,0000,0000,,May I present Captain Spock, whom I believe you know.
+Dialogue: 0,0:20:30.56,0:20:36.22,en,,0000,0000,0000,,Captain,face to face at last. You have my thanks.
+Dialogue: 0,0:20:36.39,0:20:38.56,en,,0000,0000,0000,,Chancellor.
+Dialogue: 0,0:20:39.76,0:20:41.93,en,,0000,0000,0000,,Gentlemen.
+Dialogue: 0,0:20:42.10,0:20:45.13,en,,0000,0000,0000,,This is my daughter,Azetbur...
+Dialogue: 0,0:20:48.54,0:20:54.00,en,,0000,0000,0000,,My military advisor,Brigadier Kerla...
+Dialogue: 0,0:20:54.18,0:20:58.01,en,,0000,0000,0000,,and this is General Chang, my chief of staff.
+Dialogue: 0,0:20:58.18,0:21:01.41,en,,0000,0000,0000,,I have so wanted to meet you,Captain.
+Dialogue: 0,0:21:02.39,0:21:08.16,en,,0000,0000,0000,,I'm not sure how to take that. Sincere admiration,Kirk.
+Dialogue: 0,0:21:08.33,0:21:11.52,en,,0000,0000,0000,,From one warrior to another.
+Dialogue: 0,0:21:12.96,0:21:14.80,en,,0000,0000,0000,,Right...
+Dialogue: 0,0:21:17.30,0:21:21.64,en,,0000,0000,0000,,This way. You might enjoy a brief tour.
+Dialogue: 0,0:21:38.79,0:21:41.52,en,,0000,0000,0000,,They all look alike. What about that smell?
+Dialogue: 0,0:21:41.69,0:21:45.60,en,,0000,0000,0000,,You know only top of the line models can even talk...
+Dialogue: 0,0:21:50.50,0:21:53.16,en,,0000,0000,0000,,You men have work? Yes,ma'am.
+Dialogue: 0,0:21:53.34,0:21:55.36,en,,0000,0000,0000,,Then snap to it.
+Dialogue: 0,0:22:34.95,0:22:36.85,en,,0000,0000,0000,,I offer a toast.
+Dialogue: 0,0:22:37.62,0:22:39.68,en,,0000,0000,0000,,The undiscovered country.
+Dialogue: 0,0:22:43.32,0:22:46.29,en,,0000,0000,0000,,The future. The undiscovered country.
+Dialogue: 0,0:22:46.46,0:22:48.69,en,,0000,0000,0000,,Hamlet,act 3,scene 1.
+Dialogue: 0,0:22:48.86,0:22:55.06,en,,0000,0000,0000,,You have not experienced Shakespeare until you've read him in Klingon.
+Dialogue: 0,0:23:04.04,0:23:08.14,en,,0000,0000,0000,,Captain Kirk. I thought Romulan ale was illegal.
+Dialogue: 0,0:23:08.31,0:23:12.27,en,,0000,0000,0000,,An advantage of being 1,000 light years from Federation headquarters.
+Dialogue: 0,0:23:13.22,0:23:17.38,en,,0000,0000,0000,,To you,Chancellor Gorkon. One of the architects of our future.
+Dialogue: 0,0:23:17.56,0:23:19.05,en,,0000,0000,0000,,Chancellor!
+Dialogue: 0,0:23:21.49,0:23:26.73,en,,0000,0000,0000,,Perhaps we are looking at something of that future here.
+Dialogue: 0,0:23:27.93,0:23:35.00,en,,0000,0000,0000,,Tell me,Captain Kirk. Would you be willing to give up Starfleet?
+Dialogue: 0,0:23:38.94,0:23:45.35,en,,0000,0000,0000,,The Captain feels that Starfleet's mission has always been one of peace.
+Dialogue: 0,0:23:48.62,0:23:52.92,en,,0000,0000,0000,,I wouldn't dispute my first officer. Starfleet has always been...
+Dialogue: 0,0:23:53.09,0:23:57.99,en,,0000,0000,0000,,There's no need to mince words. In space,all warriors are cold warriors.
+Dialogue: 0,0:24:00.30,0:24:05.63,en,,0000,0000,0000,,General, are you fond of... Shakespeare?
+Dialogue: 0,0:24:06.37,0:24:11.27,en,,0000,0000,0000,,We believe all planets have a sovereign claim to inalienable human rights.
+Dialogue: 0,0:24:11.44,0:24:15.17,en,,0000,0000,0000,,'Inalien...' If you could only hear yourselves.
+Dialogue: 0,0:24:16.68,0:24:22.12,en,,0000,0000,0000,,'Human rights.' Why,the very name is racist.
+Dialogue: 0,0:24:22.29,0:24:26.16,en,,0000,0000,0000,,The Federation is a 'homo sapiens only' club.
+Dialogue: 0,0:24:26.32,0:24:28.66,en,,0000,0000,0000,,Present company excepted,of course.
+Dialogue: 0,0:24:29.33,0:24:34.89,en,,0000,0000,0000,,We know where this is leading the annihilation of our culture.
+Dialogue: 0,0:24:35.07,0:24:38.52,en,,0000,0000,0000,,That's not true. No!
+Dialogue: 0,0:24:38.70,0:24:44.51,en,,0000,0000,0000,,'To be or not to be'...That is the question which preoccupies our people.
+Dialogue: 0,0:24:44.68,0:24:48.08,en,,0000,0000,0000,,We need breathing room. Earth. Hitler,1938.
+Dialogue: 0,0:24:50.05,0:24:52.18,en,,0000,0000,0000,,I beg your pardon?
+Dialogue: 0,0:24:55.82,0:24:58.19,en,,0000,0000,0000,,Well...
+Dialogue: 0,0:25:00.33,0:25:03.39,en,,0000,0000,0000,,I see we have a long way to go.
+Dialogue: 0,0:25:03.56,0:25:06.26,en,,0000,0000,0000,,We must do this again sometime.
+Dialogue: 0,0:25:10.84,0:25:16.24,en,,0000,0000,0000,,You don't trust me,do you? I don't blame you.
+Dialogue: 0,0:25:17.74,0:25:20.47,en,,0000,0000,0000,,If there is to be a brave new world,
+Dialogue: 0,0:25:20.65,0:25:25.64,en,,0000,0000,0000,,our generation is going to have the hardest time living in it.
+Dialogue: 0,0:25:29.42,0:25:33.88,en,,0000,0000,0000,,Captain Spock. Chancellor. Madam.
+Dialogue: 0,0:25:34.06,0:25:36.08,en,,0000,0000,0000,,Captain.
+Dialogue: 0,0:25:36.26,0:25:38.86,en,,0000,0000,0000,,Well,most kind.
+Dialogue: 0,0:25:39.03,0:25:44.59,en,,0000,0000,0000,,Parting is such sweet sorrow. Hmm,Captain?
+Dialogue: 0,0:25:45.34,0:25:49.43,en,,0000,0000,0000,,'Have we not heard the chimes at midnight? '
+Dialogue: 0,0:26:13.00,0:26:15.73,en,,0000,0000,0000,,Thank God!
+Dialogue: 0,0:26:15.90,0:26:21.53,en,,0000,0000,0000,,Did you see the way they ate? Terrible table manners.
+Dialogue: 0,0:26:21.71,0:26:25.90,en,,0000,0000,0000,,I doubt our own behaviour will distinguish us in the annals of diplomacy.
+Dialogue: 0,0:26:26.08,0:26:30.74,en,,0000,0000,0000,,I'm going to sleep this off. Is there any other way we can screw up tonight?
+Dialogue: 0,0:26:30.92,0:26:34.72,en,,0000,0000,0000,,I'm going to go find a pot of black coffee.
+Dialogue: 0,0:26:49.47,0:26:55.93,en,,0000,0000,0000,,The Enterprise hosted Chancellor Gorkon to dinner last night.
+Dialogue: 0,0:26:56.11,0:27:00.70,en,,0000,0000,0000,,Our manners weren't exactly Emily Post.
+Dialogue: 0,0:27:00.88,0:27:06.94,en,,0000,0000,0000,,To the galley Romulan ale no longer to be served at diplomatic functions.
+Dialogue: 0,0:27:08.89,0:27:14.02,en,,0000,0000,0000,,Captain Kirk,will you please join me on the bridge? Captain Kirk?
+Dialogue: 0,0:27:20.16,0:27:22.39,en,,0000,0000,0000,,Captain. What is it?
+Dialogue: 0,0:27:22.57,0:27:25.43,en,,0000,0000,0000,,I find this curious. Spock,I'm really tired.
+Dialogue: 0,0:27:25.60,0:27:30.51,en,,0000,0000,0000,,We are reading an enormous amount of neutron radiation.
+Dialogue: 0,0:27:30.68,0:27:34.84,en,,0000,0000,0000,,Where? It appears to emanate from us.
+Dialogue: 0,0:27:35.01,0:27:37.14,en,,0000,0000,0000,,The Enterprise?
+Dialogue: 0,0:27:38.95,0:27:44.75,en,,0000,0000,0000,,Val'eris,do you know anything about a radiation surge? Chekov?
+Dialogue: 0,0:27:44.92,0:27:47.65,en,,0000,0000,0000,,Only the size of my head.
+Dialogue: 0,0:27:47.83,0:27:50.23,en,,0000,0000,0000,,I know what you mean.
+Dialogue: 0,0:28:05.18,0:28:08.63,en,,0000,0000,0000,,What's happened? We've fired on the Chancellor's ship.
+Dialogue: 0,0:28:08.81,0:28:12.08,en,,0000,0000,0000,,Torpedo room! Please confirm,have we fired?
+Dialogue: 0,0:28:13.59,0:28:15.78,en,,0000,0000,0000,,Uhura,monitor. Aye,sir.
+Dialogue: 0,0:28:15.95,0:28:20.52,en,,0000,0000,0000,,Direct hit. Confirmed,sir.
+Dialogue: 0,0:28:31.20,0:28:32.90,cn,,0000,0000,0000,,我们失去引力
+Dialogue: 0,0:28:47.12,0:28:49.09,cn,,0000,0000,0000,,我们被出卖了
+Dialogue: 0,0:28:49.29,0:28:53.28,en,,0000,0000,0000,,This is the bridge. Do you read me?
+Dialogue: 0,0:28:53.46,0:28:58.95,en,,0000,0000,0000,,Did we fire those torpedoes? Negative. We're still fully loaded.
+Dialogue: 0,0:29:17.68,0:29:20.28,cn,,0000,0000,0000,,找张上将
+Dialogue: 0,0:29:26.89,0:29:30.05,en,,0000,0000,0000,,Unable to confirm or deny firing the torpedoes.
+Dialogue: 0,0:29:30.23,0:29:32.79,en,,0000,0000,0000,,Hailing frequencies. Aye,sir.
+Dialogue: 0,0:29:32.96,0:29:36.46,en,,0000,0000,0000,,Kronos One,this is Enterprise. Do you read?
+Dialogue: 0,0:30:43.53,0:30:49.03,en,,0000,0000,0000,,It's very hard to make out. There's been weapons firing and a lot of shouting.
+Dialogue: 0,0:30:49.21,0:30:53.77,en,,0000,0000,0000,,She's still listing. She's spinning out of control.
+Dialogue: 0,0:31:11.70,0:31:16.60,cn,,0000,0000,0000,,恢复後备引力
+Dialogue: 0,0:31:26.74,0:31:30.58,en,,0000,0000,0000,,Have you not a shred of decency in you,Kirk?
+Dialogue: 0,0:31:30.75,0:31:34.62,en,,0000,0000,0000,,We come in peace, and you blatantly defy that peace.
+Dialogue: 0,0:31:36.42,0:31:39.41,en,,0000,0000,0000,,For that, I shall blow you out of the stars.
+Dialogue: 0,0:31:42.16,0:31:45.99,en,,0000,0000,0000,,We haven't fired. Captain...
+Dialogue: 0,0:31:46.16,0:31:49.86,en,,0000,0000,0000,,According to our data banks, we have. Twice...
+Dialogue: 0,0:31:50.03,0:31:51.93,en,,0000,0000,0000,,Captain,they're coming about.
+Dialogue: 0,0:31:58.78,0:32:01.64,en,,0000,0000,0000,,They're preparing to fire. Shields up,Captain?
+Dialogue: 0,0:32:01.81,0:32:05.34,en,,0000,0000,0000,,Captain,our shields. Shields up,Captain?
+Dialogue: 0,0:32:07.55,0:32:10.08,en,,0000,0000,0000,,Signal our surrender.
+Dialogue: 0,0:32:10.25,0:32:11.69,en,,0000,0000,0000,,We surrender!
+Dialogue: 0,0:32:12.96,0:32:17.52,en,,0000,0000,0000,,This is Enterprise. We surrender. If they fire,with our shields down...
+Dialogue: 0,0:32:17.70,0:32:22.10,en,,0000,0000,0000,,we will not be able to respond. Repeat,Enterprise surrenders.
+Dialogue: 0,0:32:25.50,0:32:29.34,en,,0000,0000,0000,,Are we firing torpedoes? I wish I knew.
+Dialogue: 0,0:32:29.51,0:32:33.91,en,,0000,0000,0000,,I'm going aboard. Spock,take the con. I involved you,I will go.
+Dialogue: 0,0:32:34.08,0:32:40.31,en,,0000,0000,0000,,No,I'll go. We'll not be the instigators of war on the eve of universal peace.
+Dialogue: 0,0:32:40.48,0:32:43.39,en,,0000,0000,0000,,I'm going too,they may need a doctor.
+Dialogue: 0,0:32:43.55,0:32:48.15,en,,0000,0000,0000,,Uhura,tell them we're coming, and tell them we're unarmed.
+Dialogue: 0,0:32:53.33,0:32:56.79,en,,0000,0000,0000,,Have you lost your mind? ! I don't understand what's happened.
+Dialogue: 0,0:32:56.97,0:32:58.90,en,,0000,0000,0000,,We're here to help.
+Dialogue: 0,0:33:00.37,0:33:02.70,en,,0000,0000,0000,,Follow me.
+Dialogue: 0,0:33:27.16,0:33:31.93,en,,0000,0000,0000,,Chancellor Gorkon. My God! What has happened here?
+Dialogue: 0,0:33:32.10,0:33:35.66,en,,0000,0000,0000,,You dare to feign ignorance? What happened?
+Dialogue: 0,0:33:35.84,0:33:40.40,en,,0000,0000,0000,,With a direct torpedo hit, you crippled our gravitational field
+Dialogue: 0,0:33:40.58,0:33:45.61,en,,0000,0000,0000,,and two of your Starfleet crew beamed aboard wearing magnetic boots.
+Dialogue: 0,0:33:45.78,0:33:49.12,en,,0000,0000,0000,,Aren't you carrying a surgeon? We were until this disgrace.
+Dialogue: 0,0:33:49.29,0:33:51.78,en,,0000,0000,0000,,Then for God's sake,let me help.
+Dialogue: 0,0:34:03.20,0:34:08.23,en,,0000,0000,0000,,I've got a pulse we can move him. I need light. Put him on the table.
+Dialogue: 0,0:34:17.11,0:34:20.48,en,,0000,0000,0000,,Hold him! Hold him while I stabilize him.
+Dialogue: 0,0:34:27.19,0:34:29.18,en,,0000,0000,0000,,I said hold him!
+Dialogue: 0,0:34:33.10,0:34:34.66,en,,0000,0000,0000,,Sweet Jesus.
+Dialogue: 0,0:34:34.83,0:34:37.96,en,,0000,0000,0000,,Can you...? I don't even know his anatomy.
+Dialogue: 0,0:34:42.57,0:34:45.01,en,,0000,0000,0000,,His wounds are not closing. He's killing him!
+Dialogue: 0,0:34:50.82,0:34:54.38,en,,0000,0000,0000,,He's gone into some kind of damned arrest.
+Dialogue: 0,0:34:57.99,0:35:00.58,en,,0000,0000,0000,,Come on,dammit! Come on!
+Dialogue: 0,0:35:05.50,0:35:07.59,en,,0000,0000,0000,,He's not responding.
+Dialogue: 0,0:35:26.42,0:35:30.29,en,,0000,0000,0000,,Don't let it end this way,Captain.
+Dialogue: 0,0:36:06.32,0:36:12.46,en,,0000,0000,0000,,Under article 184 of your Interstellar Law...
+Dialogue: 0,0:36:12.63,0:36:15.03,en,,0000,0000,0000,,I'm placing you under arrest.
+Dialogue: 0,0:36:15.20,0:36:20.73,en,,0000,0000,0000,,You're charged with assassinating the Chancellor of the High Council.
+Dialogue: 0,0:36:20.91,0:36:22.93,en,,0000,0000,0000,,He tried to save him.
+Dialogue: 0,0:36:29.55,0:36:31.85,en,,0000,0000,0000,,They've been arrested.
+Dialogue: 0,0:36:32.92,0:36:36.85,en,,0000,0000,0000,,Mr Spock,we've got to do something.
+Dialogue: 0,0:36:37.02,0:36:40.25,en,,0000,0000,0000,,I assume command of this ship as of 02:30 hours.
+Dialogue: 0,0:36:40.42,0:36:46.76,en,,0000,0000,0000,,Commander Uhura,notify Starfleet headquarters and request instructions.
+Dialogue: 0,0:36:46.93,0:36:49.30,en,,0000,0000,0000,,We cannot allow them to be taken to Kronos as prisoners.
+Dialogue: 0,0:36:49.47,0:36:55.93,en,,0000,0000,0000,,Opening fire will not retrieve them, and we must avoid an armed conflict.
+Dialogue: 0,0:36:56.11,0:36:58.54,en,,0000,0000,0000,,We will be able to follow the Captain's movements.
+Dialogue: 0,0:36:58.71,0:37:01.94,en,,0000,0000,0000,,How did you achieve this? Time is precious.
+Dialogue: 0,0:37:02.11,0:37:05.48,en,,0000,0000,0000,,We must piece together what happened here tonight.
+Dialogue: 0,0:37:05.65,0:37:09.28,en,,0000,0000,0000,,According to our data bank, this ship fired those torpedoes.
+Dialogue: 0,0:37:09.45,0:37:14.15,en,,0000,0000,0000,,No way! I sympathize,but we need evidence.
+Dialogue: 0,0:37:14.33,0:37:16.45,en,,0000,0000,0000,,Please accompany me.
+Dialogue: 0,0:37:17.50,0:37:22.02,en,,0000,0000,0000,,And if we cannot piece together what happened? What then,sir?
+Dialogue: 0,0:37:22.20,0:37:26.66,en,,0000,0000,0000,,In that case,Mr Chekov,it resides in the purview of the diplomats.
+Dialogue: 0,0:37:28.24,0:37:32.54,en,,0000,0000,0000,,The Chancellor of the High Council is dead!
+Dialogue: 0,0:37:32.71,0:37:35.44,en,,0000,0000,0000,,The result of an unprovoked attack
+Dialogue: 0,0:37:35.61,0:37:41.71,en,,0000,0000,0000,,while he travelled to see you under a flag of truce on a mission of peace!
+Dialogue: 0,0:37:41.89,0:37:45.22,en,,0000,0000,0000,,Captain Kirk was legally arrested for the crime.
+Dialogue: 0,0:37:45.39,0:37:50.52,en,,0000,0000,0000,,He and Dr. McCoy boarded Kronos One of their own free will.
+Dialogue: 0,0:37:50.69,0:37:55.96,en,,0000,0000,0000,,None of these facts are in dispute. I have ordered an investigation.
+Dialogue: 0,0:37:56.87,0:37:59.10,en,,0000,0000,0000,,In the meantime... In the meantime...
+Dialogue: 0,0:37:59.27,0:38:05.80,en,,0000,0000,0000,,we expect the Federation to abide by the articles of Interstellar Law.
+Dialogue: 0,0:38:05.98,0:38:10.94,en,,0000,0000,0000,,Kirk and Dr. McCoy will stand trial for the assassination of Chancellor Gorkon.
+Dialogue: 0,0:38:11.12,0:38:15.81,en,,0000,0000,0000,,Out of the question. Ambassador Sarek,can we get them extradited?
+Dialogue: 0,0:38:15.99,0:38:21.42,en,,0000,0000,0000,,Mr President,I share a measure of personal responsibility in this matter,
+Dialogue: 0,0:38:21.59,0:38:26.03,en,,0000,0000,0000,,but I am obliged to confirm my esteemed colleagues legal interpretation.
+Dialogue: 0,0:38:26.70,0:38:29.69,en,,0000,0000,0000,,What is the position of the Romulan government?
+Dialogue: 0,0:38:31.14,0:38:33.50,en,,0000,0000,0000,,I must concur with my colleagues.
+Dialogue: 0,0:38:33.67,0:38:39.20,en,,0000,0000,0000,,You can't believe that Kirk assassinated the Chancellor of the High Council.
+Dialogue: 0,0:38:39.38,0:38:43.90,en,,0000,0000,0000,,Mr President. I don't know what to believe.
+Dialogue: 0,0:38:44.68,0:38:47.05,en,,0000,0000,0000,,I'm waiting for your answer,sir.
+Dialogue: 0,0:38:49.25,0:38:53.49,en,,0000,0000,0000,,This President is not above the law.
+Dialogue: 0,0:38:53.57,0:38:59.93,cn,,0000,0000,0000,,企业号 请回应 收到吗？
+Dialogue: 0,0:39:00.41,0:39:06.00,en,,0000,0000,0000,,We're to report back at once. We can't abandon Kirk and McCoy.
+Dialogue: 0,0:39:06.18,0:39:11.67,en,,0000,0000,0000,,400 years ago,on Earth,workers who felt their livelihood threatened
+Dialogue: 0,0:39:11.85,0:39:17.41,en,,0000,0000,0000,,flung their wooden shoes called 'sabots' into the machines to stop them.
+Dialogue: 0,0:39:19.56,0:39:23.36,en,,0000,0000,0000,,Hence the word 'sabotage'.
+Dialogue: 0,0:39:25.83,0:39:31.06,en,,0000,0000,0000,,We experience technical malfunction. All back-up systems inoperative.
+Dialogue: 0,0:39:31.24,0:39:34.67,en,,0000,0000,0000,,Excellent. I mean... too bad.
+Dialogue: 0,0:39:35.91,0:39:41.97,en,,0000,0000,0000,,Mr President,I have been named chancellor in my father's place.
+Dialogue: 0,0:39:42.15,0:39:46.38,en,,0000,0000,0000,,Madam Chancellor, you have my condolences on your loss.
+Dialogue: 0,0:39:46.55,0:39:50.58,en,,0000,0000,0000,,I assure you that this shameful deed will not...
+Dialogue: 0,0:39:50.76,0:39:56.06,en,,0000,0000,0000,,Let us come to the point. You want this conference to go forward.
+Dialogue: 0,0:39:56.23,0:39:59.63,en,,0000,0000,0000,,I will attend in one week, on one condition.
+Dialogue: 0,0:39:59.80,0:40:06.29,en,,0000,0000,0000,,We will not extradite the prisoners, and you will not attempt to rescue them.
+Dialogue: 0,0:40:06.47,0:40:10.57,en,,0000,0000,0000,,We would consider any such attempt an act of war.
+Dialogue: 0,0:40:10.74,0:40:12.87,en,,0000,0000,0000,,We hope you'll be our guest here on Earth.
+Dialogue: 0,0:40:13.04,0:40:18.11,en,,0000,0000,0000,,After recent events,you will understand if I prefer a neutral site.
+Dialogue: 0,0:40:18.28,0:40:23.62,en,,0000,0000,0000,,And in the interests of security,let us keep the location secret for now.
+Dialogue: 0,0:40:24.22,0:40:27.42,en,,0000,0000,0000,,As you wish,Madam Chancellor.
+Dialogue: 0,0:40:27.99,0:40:31.36,cn,,0000,0000,0000,,趁我们有能力 快攻击他们
+Dialogue: 0,0:40:31.53,0:40:35.40,cn,,0000,0000,0000,,否则会成为他们的奴隶
+Dialogue: 0,0:40:38.91,0:40:42.71,cn,,0000,0000,0000,,动武可以占领全球
+Dialogue: 0,0:40:43.51,0:40:48.14,cn,,0000,0000,0000,,战争不合时宜
+Dialogue: 0,0:40:48.35,0:40:53.62,cn,,0000,0000,0000,,我们身处险境
+Dialogue: 0,0:40:53.79,0:40:59.52,cn,,0000,0000,0000,,我宁死也不委曲求全
+Dialogue: 0,0:40:59.69,0:41:02.96,cn,,0000,0000,0000,,这不是我父亲的遗愿
+Dialogue: 0,0:41:03.43,0:41:06.99,en,,0000,0000,0000,,Your father was killed for what he wanted.
+Dialogue: 0,0:41:07.77,0:41:10.36,en,,0000,0000,0000,,The peace process will go forward.
+Dialogue: 0,0:41:12.57,0:41:14.70,en,,0000,0000,0000,,Kirk...
+Dialogue: 0,0:41:17.84,0:41:22.78,en,,0000,0000,0000,,Kirk will pay for my father's death.
+Dialogue: 0,0:41:27.93,0:41:32.20,en,,0000,0000,0000,,Kirk...
+Dialogue: 0,0:41:54.86,0:41:56.88,en,,0000,0000,0000,,It's a damn show trial.
+Dialogue: 0,0:42:07.84,0:42:12.64,en,,0000,0000,0000,,The Enterprise fired on Kronos One without provocation.
+Dialogue: 0,0:42:12.81,0:42:14.68,en,,0000,0000,0000,,The Chancellor and his advisors...
+Dialogue: 0,0:42:14.85,0:42:17.58,en,,0000,0000,0000,,having been lulled into a false sense of security
+Dialogue: 0,0:42:17.75,0:42:21.34,en,,0000,0000,0000,,by an invitation to a dinner aboard Captain Kirk's vessel
+Dialogue: 0,0:42:21.52,0:42:25.68,en,,0000,0000,0000,,at precisely 19:30 hours that same evening.
+Dialogue: 0,0:42:25.86,0:42:28.38,en,,0000,0000,0000,,Call your first witness.
+Dialogue: 0,0:42:28.56,0:42:32.09,en,,0000,0000,0000,,After the first shot we lost our gravitational field.
+Dialogue: 0,0:42:32.26,0:42:34.56,en,,0000,0000,0000,,I was weightless and couldn't function.
+Dialogue: 0,0:42:34.73,0:42:37.70,en,,0000,0000,0000,,Then two Starfleet crewmen came towards me.
+Dialogue: 0,0:42:37.87,0:42:40.53,en,,0000,0000,0000,,Or perhaps they merely wore Starfleet uniforms.
+Dialogue: 0,0:42:40.71,0:42:43.87,en,,0000,0000,0000,,That remark is speculative. I move that it be stricken.
+Dialogue: 0,0:42:44.04,0:42:48.10,en,,0000,0000,0000,,We're interested in facts,not theories.
+Dialogue: 0,0:42:48.68,0:42:54.02,en,,0000,0000,0000,,If the gravitational unit was not functioning,how could they walk?
+Dialogue: 0,0:42:54.19,0:42:56.55,en,,0000,0000,0000,,They appeared to be wearing magnetic boots.
+Dialogue: 0,0:42:59.16,0:43:03.79,en,,0000,0000,0000,,Gravity boots...? Dr. McCoy.
+Dialogue: 0,0:43:03.96,0:43:07.80,en,,0000,0000,0000,,Would you be so good as to tell me
+Dialogue: 0,0:43:07.97,0:43:11.99,en,,0000,0000,0000,,what is your current medical status?
+Dialogue: 0,0:43:12.17,0:43:14.93,en,,0000,0000,0000,,Aside from a touch of arthritis, I'd say pretty good.
+Dialogue: 0,0:43:22.75,0:43:25.24,en,,0000,0000,0000,,You have a singular wit,Doctor.
+Dialogue: 0,0:43:25.42,0:43:30.01,en,,0000,0000,0000,,For 27 years I've been surgeon aboard the U.S.S. Enterprise.
+Dialogue: 0,0:43:30.19,0:43:32.09,en,,0000,0000,0000,,In three months I stand down.
+Dialogue: 0,0:43:35.53,0:43:37.39,en,,0000,0000,0000,,You know...
+Dialogue: 0,0:43:37.56,0:43:42.66,en,,0000,0000,0000,,I believe that you consumed rather a generous amount of Romulan ale
+Dialogue: 0,0:43:42.83,0:43:45.27,en,,0000,0000,0000,,in the officers mess on the night in question.
+Dialogue: 0,0:43:45.44,0:43:47.50,en,,0000,0000,0000,,Objection. Sustained.
+Dialogue: 0,0:43:47.67,0:43:51.23,en,,0000,0000,0000,,We all did. All of us. That doesn't mean...
+Dialogue: 0,0:43:51.41,0:43:57.11,en,,0000,0000,0000,,Was Chancellor Gorkon alive when you first examined him?
+Dialogue: 0,0:43:57.28,0:43:58.65,en,,0000,0000,0000,,Barely.
+Dialogue: 0,0:43:58.82,0:44:02.65,en,,0000,0000,0000,,Now be careful,Doctor. Have you ever in your past
+Dialogue: 0,0:44:02.82,0:44:07.09,en,,0000,0000,0000,,saved patients as barely alive as he?
+Dialogue: 0,0:44:07.26,0:44:10.42,en,,0000,0000,0000,,I didn't have the medical knowledge I needed for Klingon anatomy.
+Dialogue: 0,0:44:10.60,0:44:13.89,en,,0000,0000,0000,,I see. You where there.
+Dialogue: 0,0:44:14.07,0:44:19.37,en,,0000,0000,0000,,You say you are due for retirement. May I ask,do your hands shake?
+Dialogue: 0,0:44:19.54,0:44:21.60,en,,0000,0000,0000,,Objection! I was nervous.
+Dialogue: 0,0:44:23.71,0:44:26.94,en,,0000,0000,0000,,No. You were incompetent.
+Dialogue: 0,0:44:29.58,0:44:31.91,en,,0000,0000,0000,,You were incompetent!
+Dialogue: 0,0:44:32.08,0:44:36.28,en,,0000,0000,0000,,Whether deliberately or as a result of age combined with drink.
+Dialogue: 0,0:44:36.45,0:44:42.29,en,,0000,0000,0000,,The court will have to determine. My God,man. I tried to save him!
+Dialogue: 0,0:44:42.46,0:44:44.49,en,,0000,0000,0000,,I tried to save him.
+Dialogue: 0,0:44:46.30,0:44:50.03,en,,0000,0000,0000,,I was desperate to save him.
+Dialogue: 0,0:44:50.20,0:44:54.70,en,,0000,0000,0000,,He was the last best hope in the Universe for peace.
+Dialogue: 0,0:44:54.87,0:44:57.71,en,,0000,0000,0000,,The witness is excused.
+Dialogue: 0,0:45:00.95,0:45:06.75,en,,0000,0000,0000,,There we have it,citizens. We have established the particulars of the crime.
+Dialogue: 0,0:45:06.92,0:45:11.65,en,,0000,0000,0000,,And now we come to the architect of this tragic affair.
+Dialogue: 0,0:45:11.82,0:45:17.23,en,,0000,0000,0000,,James Tiberius Kirk.
+Dialogue: 0,0:45:19.13,0:45:22.76,en,,0000,0000,0000,,What would your favourite author say, Captain?
+Dialogue: 0,0:45:22.93,0:45:27.39,en,,0000,0000,0000,,'Let us sit upon the ground and tell sad stories of the death of kings.'
+Dialogue: 0,0:45:27.57,0:45:30.91,en,,0000,0000,0000,,Tell us your sad story,Kirk.
+Dialogue: 0,0:45:31.08,0:45:36.17,en,,0000,0000,0000,,Tell us that you planned to take revenge for the death of your son.
+Dialogue: 0,0:45:36.35,0:45:38.44,en,,0000,0000,0000,,That's not true. Objection!
+Dialogue: 0,0:45:38.62,0:45:43.52,en,,0000,0000,0000,,Captain Kirk has not been identified as the assassin.
+Dialogue: 0,0:45:43.69,0:45:49.92,en,,0000,0000,0000,,I offer into the record this excerpt from the Captain's personal log.
+Dialogue: 0,0:45:50.50,0:45:55.90,en,,0000,0000,0000,,I've never trusted Klingons, and I never will.
+Dialogue: 0,0:45:56.07,0:45:59.47,en,,0000,0000,0000,,I've never been able to forgive them for the death of my boy.
+Dialogue: 0,0:46:03.04,0:46:05.48,cn,,0000,0000,0000,,再放一次…
+Dialogue: 0,0:46:05.98,0:46:09.47,en,,0000,0000,0000,,I've never trusted Klingons, and I never will.
+Dialogue: 0,0:46:10.11,0:46:14.24,en,,0000,0000,0000,,I've never been able to forgive them for the death of my boy.
+Dialogue: 0,0:46:17.36,0:46:18.65,en,,0000,0000,0000,,Are those your words?
+Dialogue: 0,0:46:22.69,0:46:25.32,en,,0000,0000,0000,,Those words were spoken by me.
+Dialogue: 0,0:46:29.10,0:46:33.30,en,,0000,0000,0000,,Objection! My client's political views are not on trial.
+Dialogue: 0,0:46:33.47,0:46:39.34,en,,0000,0000,0000,,On the contrary. Captain Kirk's views are at the very heart of the matter.
+Dialogue: 0,0:46:39.51,0:46:45.78,en,,0000,0000,0000,,His record shows him to be an insubordinate,unprincipled opportunist
+Dialogue: 0,0:46:45.95,0:46:49.32,en,,0000,0000,0000,,with a history of violating the chain of command whenever it suited him.
+Dialogue: 0,0:46:49.49,0:46:50.85,en,,0000,0000,0000,,Continue.
+Dialogue: 0,0:46:51.02,0:46:55.39,en,,0000,0000,0000,,The record shows that Captain Kirk once held the rank of Admiral
+Dialogue: 0,0:46:55.56,0:47:00.50,en,,0000,0000,0000,,and he was broken for taking matters into his own hands.
+Dialogue: 0,0:47:00.67,0:47:05.53,en,,0000,0000,0000,,Do you deny being demoted for these charges. Answer me now!
+Dialogue: 0,0:47:05.70,0:47:08.37,en,,0000,0000,0000,,I cannot deny it. You were demoted?
+Dialogue: 0,0:47:08.54,0:47:12.77,en,,0000,0000,0000,,For insubordination? On occasion,I have disobeyed orders.
+Dialogue: 0,0:47:12.94,0:47:15.94,en,,0000,0000,0000,,Were you obeying or disobeying orders
+Dialogue: 0,0:47:16.11,0:47:19.02,en,,0000,0000,0000,,when you arranged the assassination of Chancellor Gorkon?
+Dialogue: 0,0:47:19.18,0:47:21.91,en,,0000,0000,0000,,I didn't know about it until we boarded the ship.
+Dialogue: 0,0:47:22.09,0:47:26.89,en,,0000,0000,0000,,You still deny the Enterprise fired on Kronos One?
+Dialogue: 0,0:47:27.06,0:47:31.32,en,,0000,0000,0000,,And you still deny your men beamed aboard and shot the Chancellor?
+Dialogue: 0,0:47:31.50,0:47:34.19,en,,0000,0000,0000,,I cannot confirm or deny actions which I didn't witness.
+Dialogue: 0,0:47:34.37,0:47:39.53,en,,0000,0000,0000,,Are you aware that as the captain of a ship,
+Dialogue: 0,0:47:39.70,0:47:43.83,en,,0000,0000,0000,,you are responsible for the actions of your men?
+Dialogue: 0,0:47:46.41,0:47:47.71,en,,0000,0000,0000,,I am.
+Dialogue: 0,0:47:47.88,0:47:54.28,en,,0000,0000,0000,,If it's proved that members of your crew carried out the assassination...
+Dialogue: 0,0:47:54.45,0:47:57.39,en,,0000,0000,0000,,They're setting us up. Your Honours! Do not answer.
+Dialogue: 0,0:47:57.56,0:48:02.05,en,,0000,0000,0000,,Captain Kirk, you will answer the question.
+Dialogue: 0,0:48:09.33,0:48:11.46,en,,0000,0000,0000,,As Captain...
+Dialogue: 0,0:48:12.77,0:48:16.17,en,,0000,0000,0000,,I'm responsible for the crew under my command.
+Dialogue: 0,0:48:19.74,0:48:22.68,en,,0000,0000,0000,,Your Honours,the state rests.
+Dialogue: 0,0:48:24.48,0:48:27.88,en,,0000,0000,0000,,Send to Commander Enterprise.
+Dialogue: 0,0:48:28.05,0:48:32.11,en,,0000,0000,0000,,'We stand ready to assist you. Captain Sulu,U.S.S. Excelsior.'
+Dialogue: 0,0:48:32.72,0:48:39.96,en,,0000,0000,0000,,It is the determination of this court that the prisoners are guilty as charged.
+Dialogue: 0,0:48:51.28,0:48:56.84,en,,0000,0000,0000,,I wish to note for the record that all the evidence is circumstantial.
+Dialogue: 0,0:48:57.01,0:49:00.78,en,,0000,0000,0000,,I beg the court to consider this when pronouncing its sentence.
+Dialogue: 0,0:49:00.95,0:49:02.51,en,,0000,0000,0000,,So noted.
+Dialogue: 0,0:49:02.69,0:49:06.75,en,,0000,0000,0000,,Captain James T. Kirk, Dr. Leonard McCoy.
+Dialogue: 0,0:49:06.92,0:49:10.99,en,,0000,0000,0000,,In the interest of fostering amity
+Dialogue: 0,0:49:11.16,0:49:17.40,en,,0000,0000,0000,,for the forthcoming peace talks, the sentence of death is commuted.
+Dialogue: 0,0:49:24.51,0:49:29.28,en,,0000,0000,0000,,It is the judgement of this court
+Dialogue: 0,0:49:29.45,0:49:33.14,en,,0000,0000,0000,,that,without possibility of reprieve or parole,
+Dialogue: 0,0:49:33.32,0:49:39.26,en,,0000,0000,0000,,you be taken from this place to the dilithium mines
+Dialogue: 0,0:49:39.42,0:49:43.76,en,,0000,0000,0000,,on the penal asteroid of Rura Penthe.
+Dialogue: 0,0:49:43.93,0:49:49.37,en,,0000,0000,0000,,There to spend the rest of your natural lives.
+Dialogue: 0,0:49:57.11,0:49:59.37,en,,0000,0000,0000,,Rura Penthe!
+Dialogue: 0,0:50:01.51,0:50:05.85,en,,0000,0000,0000,,Known throughout the galaxy as the alien's graveyard.
+Dialogue: 0,0:50:06.02,0:50:09.38,en,,0000,0000,0000,,Better to kill them now and get it over with.
+Dialogue: 0,0:50:30.07,0:50:34.98,en,,0000,0000,0000,,Lieutenant. The torpedo hit once again,please.
+Dialogue: 0,0:50:39.85,0:50:41.91,en,,0000,0000,0000,,Hold.
+Dialogue: 0,0:50:42.52,0:50:46.58,en,,0000,0000,0000,,It is Enterprise. We fired.
+Dialogue: 0,0:50:46.76,0:50:52.42,en,,0000,0000,0000,,That is not possible! All weapons visually accounted for,sir.
+Dialogue: 0,0:50:53.70,0:50:55.43,en,,0000,0000,0000,,An ancestor of mine maintained
+Dialogue: 0,0:50:55.60,0:51:01.50,en,,0000,0000,0000,,that if you eliminate the impossible, whatever remains must be the truth.
+Dialogue: 0,0:51:01.67,0:51:03.87,en,,0000,0000,0000,,What does that mean?
+Dialogue: 0,0:51:04.04,0:51:09.21,en,,0000,0000,0000,,That if we cannot have fired those torpedoes,someone else did.
+Dialogue: 0,0:51:09.38,0:51:13.34,en,,0000,0000,0000,,They didn't fire on themselves and there are no other ships present.
+Dialogue: 0,0:51:13.52,0:51:17.32,en,,0000,0000,0000,,There was a neutron surge. Not from us.
+Dialogue: 0,0:51:17.49,0:51:22.43,en,,0000,0000,0000,,A neutron surge that big could only be produced by another ship.
+Dialogue: 0,0:51:22.59,0:51:25.86,en,,0000,0000,0000,,Kronos One? Too far away.
+Dialogue: 0,0:51:26.03,0:51:30.43,en,,0000,0000,0000,,Very near us. Possibly beneath us.
+Dialogue: 0,0:51:30.60,0:51:35.87,en,,0000,0000,0000,,If there were a ship beneath us, the Klingons would have seen it.
+Dialogue: 0,0:51:37.17,0:51:39.40,en,,0000,0000,0000,,Would they?
+Dialogue: 0,0:51:41.78,0:51:46.65,en,,0000,0000,0000,,A Bird of Prey? A Bird of Prey.
+Dialogue: 0,0:51:48.29,0:51:52.55,en,,0000,0000,0000,,Cloaked? They can't fire when they're cloaked.
+Dialogue: 0,0:51:52.72,0:51:56.25,en,,0000,0000,0000,,All things being equal,I would agree.
+Dialogue: 0,0:51:56.43,0:52:00.56,en,,0000,0000,0000,,However,things are not equal. This one can.
+Dialogue: 0,0:52:01.30,0:52:04.23,en,,0000,0000,0000,,We must inform Starfleet Command. Of what?
+Dialogue: 0,0:52:04.40,0:52:09.10,en,,0000,0000,0000,,A new weapon that's invisible? They'll call us raving lunatics.
+Dialogue: 0,0:52:09.27,0:52:14.04,en,,0000,0000,0000,,They'll say we'll say anything to exonerate the Captain.
+Dialogue: 0,0:52:14.21,0:52:17.44,en,,0000,0000,0000,,And they would be correct. We have no evidence.
+Dialogue: 0,0:52:17.62,0:52:20.85,en,,0000,0000,0000,,Only a theory which happens to fit the facts.
+Dialogue: 0,0:52:21.02,0:52:25.92,en,,0000,0000,0000,,Assuming you're right. Why would they fire on their own President?
+Dialogue: 0,0:52:26.09,0:52:27.99,en,,0000,0000,0000,,Indeed.
+Dialogue: 0,0:52:28.16,0:52:32.29,en,,0000,0000,0000,,This ship will be searched from bow to stern.
+Dialogue: 0,0:52:32.46,0:52:36.66,en,,0000,0000,0000,,I do not understand. If there was a ship underneath us
+Dialogue: 0,0:52:36.83,0:52:41.13,en,,0000,0000,0000,,surely the assassins beamed aboard from that vessel,not Enterprise.
+Dialogue: 0,0:52:41.31,0:52:44.64,en,,0000,0000,0000,,You're forgetting something, Mr Chekov.
+Dialogue: 0,0:52:44.81,0:52:48.87,en,,0000,0000,0000,,According to our data banks, this ship fired those torpedoes.
+Dialogue: 0,0:52:49.05,0:52:51.24,en,,0000,0000,0000,,If we did,the killers are here.
+Dialogue: 0,0:52:51.42,0:52:55.91,en,,0000,0000,0000,,If we did not, whoever altered the data banks is here.
+Dialogue: 0,0:52:56.09,0:53:00.72,en,,0000,0000,0000,,In either case, what we are looking for is here.
+Dialogue: 0,0:53:00.89,0:53:05.45,en,,0000,0000,0000,,What are we looking for,sir? Lieutenant.
+Dialogue: 0,0:53:07.03,0:53:09.26,en,,0000,0000,0000,,Two pairs of gravity boots.
+Dialogue: 0,0:54:15.00,0:54:18.56,en,,0000,0000,0000,,This is the gulag Rura Penthe.
+Dialogue: 0,0:54:18.73,0:54:26.04,en,,0000,0000,0000,,There is no stockades,no guard tower,no electronic frontier.
+Dialogue: 0,0:54:26.94,0:54:30.64,en,,0000,0000,0000,,Only a magnetic shield prevents beaming.
+Dialogue: 0,0:54:30.81,0:54:36.15,en,,0000,0000,0000,,Punishment means exile from prison to the surface.
+Dialogue: 0,0:54:36.98,0:54:41.92,en,,0000,0000,0000,,On the surface,nothing can survive.
+Dialogue: 0,0:54:45.56,0:54:49.12,en,,0000,0000,0000,,Work well,and you will be treated well.
+Dialogue: 0,0:54:50.20,0:54:55.07,en,,0000,0000,0000,,Work badly,and you will die.
+Dialogue: 0,0:56:20.65,0:56:22.75,en,,0000,0000,0000,,Oh,my God!
+Dialogue: 0,0:56:27.33,0:56:31.26,en,,0000,0000,0000,,The universal translator has been confiscated.
+Dialogue: 0,0:56:32.63,0:56:34.50,en,,0000,0000,0000,,I'm sorry...?
+Dialogue: 0,0:56:38.84,0:56:42.00,en,,0000,0000,0000,,He's definitely on about something,Jim.
+Dialogue: 0,0:56:46.68,0:56:49.65,en,,0000,0000,0000,,If this is your spot,we'll move on.
+Dialogue: 0,0:56:49.82,0:56:52.65,en,,0000,0000,0000,,He wants your obedience to the Brotherhood of Aliens.
+Dialogue: 0,0:56:52.82,0:56:55.08,en,,0000,0000,0000,,He's got it. And your coat.
+Dialogue: 0,0:56:55.26,0:56:57.28,en,,0000,0000,0000,,I'm afraid not. It wouldn't fit.
+Dialogue: 0,0:57:12.87,0:57:17.17,en,,0000,0000,0000,,Thanks. This will help keep you warm.
+Dialogue: 0,0:57:18.41,0:57:24.44,en,,0000,0000,0000,,I'm Martia. You're Kirk and McCoy. How did you know that?
+Dialogue: 0,0:57:24.62,0:57:26.95,en,,0000,0000,0000,,We don't get many presidential assassins.
+Dialogue: 0,0:57:27.12,0:57:30.89,en,,0000,0000,0000,,We didn't kill Gorkon. Of course not.
+Dialogue: 0,0:57:31.06,0:57:34.32,en,,0000,0000,0000,,But there's a reward for your death. That figures.
+Dialogue: 0,0:57:35.13,0:57:36.99,en,,0000,0000,0000,,We've been set up.
+Dialogue: 0,0:57:37.16,0:57:40.46,en,,0000,0000,0000,,Somebody up there wants you out of the way.
+Dialogue: 0,0:57:47.94,0:57:49.53,en,,0000,0000,0000,,Any progress? None.
+Dialogue: 0,0:57:49.71,0:57:55.01,en,,0000,0000,0000,,A crew of 300 are looking everywhere,but the killers may still be among them.
+Dialogue: 0,0:57:55.18,0:57:58.64,en,,0000,0000,0000,,Surely they have disposed of these boots by now.
+Dialogue: 0,0:57:58.82,0:58:01.75,en,,0000,0000,0000,,Would it not have been logical to leave them on Gorkon's ship?
+Dialogue: 0,0:58:01.92,0:58:07.12,en,,0000,0000,0000,,Logic must give way to physics. Gravity wasn't restored when they escaped.
+Dialogue: 0,0:58:07.29,0:58:11.73,en,,0000,0000,0000,,Without the boots,they would have floated off the transporter pads.
+Dialogue: 0,0:58:11.90,0:58:14.33,en,,0000,0000,0000,,Why not simply vaporize them?
+Dialogue: 0,0:58:17.37,0:58:19.34,en,,0000,0000,0000,,Like this?
+Dialogue: 0,0:58:25.68,0:58:32.11,en,,0000,0000,0000,,As you know,no one can fire an unauthorized phaser aboard a starship.
+Dialogue: 0,0:58:33.45,0:58:37.62,en,,0000,0000,0000,,Suppose,when they returned,they threw the boots into the refuse.
+Dialogue: 0,0:58:37.79,0:58:40.39,en,,0000,0000,0000,,I'm having the refuse searched.
+Dialogue: 0,0:58:40.56,0:58:46.63,en,,0000,0000,0000,,If I'm correct,those boots will cling to the killer's necks like Tiberian bats.
+Dialogue: 0,0:58:46.80,0:58:51.74,en,,0000,0000,0000,,They couldn't escape without them nor throw them out the window.
+Dialogue: 0,0:58:51.91,0:58:53.87,en,,0000,0000,0000,,Those boots are here. Somewhere.
+Dialogue: 0,0:58:54.04,0:59:00.45,en,,0000,0000,0000,,Did someone fire off a phaser? It's alright. It's nothing.
+Dialogue: 0,0:59:00.61,0:59:05.02,en,,0000,0000,0000,,Mr Spock,Starfleet is screaming for us to return to port.
+Dialogue: 0,0:59:05.19,0:59:08.42,en,,0000,0000,0000,,Who fired the... Ah,Mr Scott.
+Dialogue: 0,0:59:08.59,0:59:13.08,en,,0000,0000,0000,,I hear you have difficulty with the warp drive. How long do you need for repair?
+Dialogue: 0,0:59:13.26,0:59:16.16,en,,0000,0000,0000,,There's nothing wrong with the bloody thing.
+Dialogue: 0,0:59:16.33,0:59:22.60,en,,0000,0000,0000,,If we return to space dock,the killers can dispose of their footwear
+Dialogue: 0,0:59:22.77,0:59:26.87,en,,0000,0000,0000,,and we will never see the Captain or Dr. McCoy alive again.
+Dialogue: 0,0:59:27.04,0:59:29.44,en,,0000,0000,0000,,It could take weeks. Thank you.
+Dialogue: 0,0:59:29.61,0:59:33.67,en,,0000,0000,0000,,Val'eris,inform Starfleet our warp drive is inoperative.
+Dialogue: 0,0:59:33.85,0:59:36.82,en,,0000,0000,0000,,A lie? An error.
+Dialogue: 0,0:59:37.38,0:59:41.79,en,,0000,0000,0000,,We have lost all contact with the Captain and Dr. McCoy.
+Dialogue: 0,0:59:41.96,0:59:45.98,en,,0000,0000,0000,,Yes,at the moment they're surrounded by a magnetic shield.
+Dialogue: 0,0:59:46.16,0:59:51.93,en,,0000,0000,0000,,But if I know the Captain,he is deep into planning his escape.
+Dialogue: 0,1:00:14.72,1:00:17.19,en,,0000,0000,0000,,You've got him where you want him,Jim!
+Dialogue: 0,1:01:10.21,1:01:12.30,en,,0000,0000,0000,,Are you alright? I think so.
+Dialogue: 0,1:01:12.48,1:01:16.61,en,,0000,0000,0000,,They'll respect you now. I was lucky that thing had knees.
+Dialogue: 0,1:01:16.78,1:01:18.27,en,,0000,0000,0000,,That was not his knee.
+Dialogue: 0,1:01:19.72,1:01:23.55,en,,0000,0000,0000,,Not everybody keep their genitals in the same place,Captain.
+Dialogue: 0,1:01:23.72,1:01:25.28,en,,0000,0000,0000,,Anything you want to tell me?
+Dialogue: 0,1:01:27.06,1:01:32.23,en,,0000,0000,0000,,See what you can do for him. Let him know we're not holding a grudge.
+Dialogue: 0,1:01:32.40,1:01:36.27,en,,0000,0000,0000,,Suppose he's holding a grudge?
+Dialogue: 0,1:01:36.44,1:01:43.07,en,,0000,0000,0000,,When whoever it is makes their move,you won't be here to ask if he's the one.
+Dialogue: 0,1:01:46.25,1:01:50.08,en,,0000,0000,0000,,Do you want to get out of here? There's got to be a way.
+Dialogue: 0,1:02:10.87,1:02:14.27,en,,0000,0000,0000,,Three months before retirement. What a way to finish.
+Dialogue: 0,1:02:14.44,1:02:18.61,en,,0000,0000,0000,,We're not finished. Speak for yourself.
+Dialogue: 0,1:02:18.78,1:02:22.37,en,,0000,0000,0000,,One day,one night... Kobayashi Maru!
+Dialogue: 0,1:02:22.55,1:02:28.01,en,,0000,0000,0000,,Bones! Are you afraid of the future?
+Dialogue: 0,1:02:28.19,1:02:32.99,en,,0000,0000,0000,,I believe that was the general idea that I was trying to convey.
+Dialogue: 0,1:02:33.16,1:02:38.66,en,,0000,0000,0000,,I don't mean this future. What is this multiple choice?
+Dialogue: 0,1:02:38.83,1:02:44.29,en,,0000,0000,0000,,Some people are afraid... of what might happen.
+Dialogue: 0,1:02:45.87,1:02:50.64,en,,0000,0000,0000,,I was terrified. What terrified you,specifically?
+Dialogue: 0,1:02:56.92,1:02:59.28,en,,0000,0000,0000,,No more Neutral Zone.
+Dialogue: 0,1:03:01.09,1:03:03.99,en,,0000,0000,0000,,I was used to hating Klingons.
+Dialogue: 0,1:03:07.19,1:03:11.06,en,,0000,0000,0000,,It never even occurred to me to take Gorkon at his word.
+Dialogue: 0,1:03:14.00,1:03:19.74,en,,0000,0000,0000,,Spock was right. We all felt exactly the same.
+Dialogue: 0,1:03:19.91,1:03:24.00,en,,0000,0000,0000,,No. Somebody felt a lot worse.
+Dialogue: 0,1:03:26.11,1:03:28.74,en,,0000,0000,0000,,I'm beginning to understand why.
+Dialogue: 0,1:03:28.92,1:03:32.32,en,,0000,0000,0000,,If you've got any bright ideas,now is the time.
+Dialogue: 0,1:03:32.49,1:03:37.05,en,,0000,0000,0000,,Time is the problem. You and I are nothing.
+Dialogue: 0,1:03:37.22,1:03:39.66,en,,0000,0000,0000,,You heard the judge the peace conference is on again.
+Dialogue: 0,1:03:39.83,1:03:44.02,en,,0000,0000,0000,,Whoever killed Gorkon is bound to attempt another assassination.
+Dialogue: 0,1:03:46.50,1:03:48.76,en,,0000,0000,0000,,Unless we can get out of here.
+Dialogue: 0,1:04:00.41,1:04:05.75,en,,0000,0000,0000,,It's me Martia. Listen. No one has ever escaped from Rura Penthe.
+Dialogue: 0,1:04:05.92,1:04:09.32,en,,0000,0000,0000,,Except us. It is possible.
+Dialogue: 0,1:04:09.49,1:04:11.68,en,,0000,0000,0000,,I know how to get outside the shield.
+Dialogue: 0,1:04:11.86,1:04:15.69,en,,0000,0000,0000,,How do we fit in? Getting outside the shield is easy.
+Dialogue: 0,1:04:15.86,1:04:20.27,en,,0000,0000,0000,,After that,you have to get us off the surface before we freeze. Can you?
+Dialogue: 0,1:04:22.00,1:04:26.23,en,,0000,0000,0000,,It's possible. I can't make it alone.
+Dialogue: 0,1:04:26.41,1:04:30.14,en,,0000,0000,0000,,You're the likeliest candidate to come here for months.
+Dialogue: 0,1:04:30.61,1:04:32.94,en,,0000,0000,0000,,Candidate for what?
+Dialogue: 0,1:04:47.16,1:04:51.86,en,,0000,0000,0000,,Go to lift 7 in the morning for mining duty. I'll see you there.
+Dialogue: 0,1:04:52.03,1:04:54.73,en,,0000,0000,0000,,Don't disappoint me.
+Dialogue: 0,1:04:56.64,1:05:00.30,en,,0000,0000,0000,,What is it with you,anyway? Still think we're finished?
+Dialogue: 0,1:05:00.47,1:05:02.53,en,,0000,0000,0000,,More than ever.
+Dialogue: 0,1:05:07.41,1:05:09.18,en,,0000,0000,0000,,Sorry to wake you,sir.
+Dialogue: 0,1:05:09.35,1:05:15.15,en,,0000,0000,0000,,Starfleet requests any data we have on the whereabouts of Enterprise.
+Dialogue: 0,1:05:17.06,1:05:18.52,en,,0000,0000,0000,,What?
+Dialogue: 0,1:05:18.69,1:05:23.10,en,,0000,0000,0000,,They're refusing to acknowledge signal to return to space dock,sir.
+Dialogue: 0,1:05:26.83,1:05:32.10,en,,0000,0000,0000,,Signal Starfleet that we have no idea location Enterprise.
+Dialogue: 0,1:05:32.27,1:05:36.71,en,,0000,0000,0000,,Sir? You have hearing problems?
+Dialogue: 0,1:05:36.88,1:05:39.11,en,,0000,0000,0000,,No,sir.
+Dialogue: 0,1:06:22.46,1:06:24.52,en,,0000,0000,0000,,Klingon blood.
+Dialogue: 0,1:06:24.69,1:06:29.69,en,,0000,0000,0000,,They must have walked through it when it was floating and tracked it back here.
+Dialogue: 0,1:06:29.86,1:06:33.03,en,,0000,0000,0000,,This is the first evidence which corroborates our theory.
+Dialogue: 0,1:06:33.20,1:06:35.36,en,,0000,0000,0000,,Now we go to Starfleet?
+Dialogue: 0,1:06:35.54,1:06:39.06,en,,0000,0000,0000,,We expand our search to include uniforms.
+Dialogue: 0,1:06:39.24,1:06:41.71,en,,0000,0000,0000,,All uniforms?
+Dialogue: 0,1:07:00.59,1:07:03.39,en,,0000,0000,0000,,Clear,sir. Make a hole.
+Dialogue: 0,1:07:03.56,1:07:06.26,en,,0000,0000,0000,,Coming through. Coming through.
+Dialogue: 0,1:07:18.68,1:07:20.81,en,,0000,0000,0000,,Sir! Sir!
+Dialogue: 0,1:07:51.68,1:07:55.48,en,,0000,0000,0000,,I think we've been had. No,you weren't,Doctor.
+Dialogue: 0,1:07:55.65,1:07:59.59,en,,0000,0000,0000,,Get off at the first level. Follow the gang into the mine.
+Dialogue: 0,1:07:59.75,1:08:02.31,en,,0000,0000,0000,,They don't take girls.
+Dialogue: 0,1:08:12.67,1:08:18.23,en,,0000,0000,0000,,You are crewman Dax? Yes. What is the problem?
+Dialogue: 0,1:08:18.41,1:08:23.93,en,,0000,0000,0000,,Perhaps you know the Russian epic of Cinderella?
+Dialogue: 0,1:08:25.48,1:08:29.28,en,,0000,0000,0000,,If shoe fits wear it.
+Dialogue: 0,1:08:30.72,1:08:31.95,en,,0000,0000,0000,,Mr Chekov...
+Dialogue: 0,1:08:47.80,1:08:49.77,en,,0000,0000,0000,,Watch me.
+Dialogue: 0,1:08:51.77,1:08:56.47,en,,0000,0000,0000,,What kind of creature is this? Last night you two were...
+Dialogue: 0,1:08:59.35,1:09:00.90,en,,0000,0000,0000,,Get in.
+Dialogue: 0,1:10:11.79,1:10:14.15,en,,0000,0000,0000,,Come on. We don't have a lot of time.
+Dialogue: 0,1:10:31.87,1:10:33.70,en,,0000,0000,0000,,Hurry!
+Dialogue: 0,1:10:37.24,1:10:39.40,en,,0000,0000,0000,,Up there.
+Dialogue: 0,1:10:41.05,1:10:43.02,en,,0000,0000,0000,,Come on climb!
+Dialogue: 0,1:10:54.06,1:10:56.65,en,,0000,0000,0000,,Here,you'll need these. Quickly!
+Dialogue: 0,1:11:18.08,1:11:20.21,en,,0000,0000,0000,,Stay close.
+Dialogue: 0,1:12:36.56,1:12:39.46,en,,0000,0000,0000,,There they are. They emerge from the beaming shield.
+Dialogue: 0,1:12:39.63,1:12:45.26,en,,0000,0000,0000,,Mr Scott,start your engines. Mr Chekov,set course for Rura Penthe.
+Dialogue: 0,1:12:45.44,1:12:49.47,en,,0000,0000,0000,,Mr Spock,Rura Penthe is deep inside the Klingon frontier.
+Dialogue: 0,1:12:49.64,1:12:52.11,en,,0000,0000,0000,,If we're discovered... Correct.
+Dialogue: 0,1:12:52.28,1:12:56.74,en,,0000,0000,0000,,We need a feat of linguistic legerdemain and intrepidity
+Dialogue: 0,1:12:56.92,1:12:59.61,en,,0000,0000,0000,,before the Captain and Dr. McCoy freeze to death.
+Dialogue: 0,1:13:07.06,1:13:10.69,en,,0000,0000,0000,,Leave me,I'm finished. No!
+Dialogue: 0,1:13:10.86,1:13:14.99,en,,0000,0000,0000,,Bones,I'm wearing a viridium patch on my back.
+Dialogue: 0,1:13:15.17,1:13:19.26,en,,0000,0000,0000,,Spock slapped it there before we went on Gorkon's ship.
+Dialogue: 0,1:13:19.44,1:13:22.07,en,,0000,0000,0000,,That cunning little Vulcan.
+Dialogue: 0,1:13:22.24,1:13:25.41,en,,0000,0000,0000,,Come on! We're in the clear.
+Dialogue: 0,1:13:26.45,1:13:31.08,en,,0000,0000,0000,,Now that we're outside the shield,they can locate us two sectors away.
+Dialogue: 0,1:13:31.25,1:13:33.31,en,,0000,0000,0000,,If they're even looking for us.
+Dialogue: 0,1:14:02.75,1:14:05.78,cn,,0000,0000,0000,,这是莫斯卡短波电台
+Dialogue: 0,1:14:06.79,1:14:09.31,cn,,0000,0000,0000,,这是什麽船？
+Dialogue: 0,1:14:20.87,1:14:24.96,en,,0000,0000,0000,,We must respond. A universal translator would be recognised.
+Dialogue: 0,1:14:33.68,1:14:37.21,cn,,0000,0000,0000,,我们是你的货船厄斯华
+Dialogue: 0,1:14:38.35,1:14:41.08,cn,,0000,0000,0000,,离开了卡龙诺斯
+Dialogue: 0,1:14:41.26,1:14:44.25,cn,,0000,0000,0000,,六星期
+Dialogue: 0,1:14:58.47,1:15:00.94,en,,0000,0000,0000,,'What is your destination,over? '
+Dialogue: 0,1:15:05.48,1:15:08.64,cn,,0000,0000,0000,,我们有食物
+Dialogue: 0,1:15:11.72,1:15:14.52,cn,,0000,0000,0000,,物资供应
+Dialogue: 0,1:15:18.06,1:15:21.93,cn,,0000,0000,0000,,别捉虫子
+Dialogue: 0,1:15:53.06,1:15:56.59,en,,0000,0000,0000,,Would you mind explaining that little trick you do?
+Dialogue: 0,1:15:56.76,1:16:01.63,en,,0000,0000,0000,,I'm a Chameloid. I've heard about you.
+Dialogue: 0,1:16:01.80,1:16:06.17,en,,0000,0000,0000,,Shape-shifters. I thought you were mythical.
+Dialogue: 0,1:16:06.34,1:16:09.00,en,,0000,0000,0000,,Give a girl a chance,Captain.
+Dialogue: 0,1:16:11.11,1:16:13.24,en,,0000,0000,0000,,It takes a lot of effort.
+Dialogue: 0,1:16:13.78,1:16:15.84,en,,0000,0000,0000,,I don't doubt it.
+Dialogue: 0,1:16:16.02,1:16:18.61,en,,0000,0000,0000,,Stop me if I'm wrong,
+Dialogue: 0,1:16:18.79,1:16:22.41,en,,0000,0000,0000,,but do we have any way of knowing whether this is the real you?
+Dialogue: 0,1:16:22.59,1:16:26.65,en,,0000,0000,0000,,I thought I would assume a pleasing shape.
+Dialogue: 0,1:16:32.63,1:16:37.16,en,,0000,0000,0000,,We're outside the shield. Now it's your turn,Captain.
+Dialogue: 0,1:16:37.34,1:16:39.13,en,,0000,0000,0000,,If you say so.
+Dialogue: 0,1:16:40.61,1:16:42.30,en,,0000,0000,0000,,Are you crazy? !
+Dialogue: 0,1:16:42.48,1:16:45.71,en,,0000,0000,0000,,She didn't need our help. Where did you get these convenient clothes?
+Dialogue: 0,1:16:45.88,1:16:49.08,en,,0000,0000,0000,,Don't tell me that flare is standard prison issue.
+Dialogue: 0,1:16:49.25,1:16:52.95,en,,0000,0000,0000,,It's to let them know where we are. Ask her what she's getting in return.
+Dialogue: 0,1:16:53.12,1:16:57.72,en,,0000,0000,0000,,A full pardon... which doesn't cover this.
+Dialogue: 0,1:16:57.89,1:17:00.98,en,,0000,0000,0000,,An accident wasn't good enough. Come on,Spock.
+Dialogue: 0,1:17:01.16,1:17:05.96,en,,0000,0000,0000,,Good enough for one. Two would have looked suspicious.
+Dialogue: 0,1:17:06.13,1:17:11.57,en,,0000,0000,0000,,Killed while attempting escape. That's convincing for both.
+Dialogue: 0,1:17:15.41,1:17:17.14,en,,0000,0000,0000,,Surprise!
+Dialogue: 0,1:17:28.92,1:17:32.15,en,,0000,0000,0000,,Your friends are late. They'll be along.
+Dialogue: 0,1:17:35.23,1:17:38.69,en,,0000,0000,0000,,I can't believe I kissed you. Must have been your lifelong ambition.
+Dialogue: 0,1:17:55.08,1:17:57.31,en,,0000,0000,0000,,Isn't it time you became something else?
+Dialogue: 0,1:17:57.48,1:17:59.21,en,,0000,0000,0000,,I like it here.
+Dialogue: 0,1:18:08.03,1:18:11.72,en,,0000,0000,0000,,Well,well,well...
+Dialogue: 0,1:18:19.21,1:18:21.97,en,,0000,0000,0000,,What took you so long?
+Dialogue: 0,1:18:22.14,1:18:24.63,en,,0000,0000,0000,,Kill him,he's the one.
+Dialogue: 0,1:18:24.81,1:18:26.71,en,,0000,0000,0000,,Not me,you idiot him!
+Dialogue: 0,1:18:29.02,1:18:32.64,en,,0000,0000,0000,,No witnesses. Killed while trying to escape.
+Dialogue: 0,1:18:33.39,1:18:36.41,en,,0000,0000,0000,,Damned clever,if you ask me. It's a classic.
+Dialogue: 0,1:18:36.59,1:18:40.55,en,,0000,0000,0000,,That's what he wanted. Who? Who wanted us killed?
+Dialogue: 0,1:18:40.73,1:18:44.92,en,,0000,0000,0000,,Since you're all going to die anyway,why not tell you?
+Dialogue: 0,1:18:45.10,1:18:47.12,en,,0000,0000,0000,,His name is...
+Dialogue: 0,1:18:53.11,1:18:59.64,en,,0000,0000,0000,,Damn it! What the hell! Son of a...! Couldn't you have waited two seconds?
+Dialogue: 0,1:18:59.81,1:19:01.78,en,,0000,0000,0000,,He was about to explain the whole thing.
+Dialogue: 0,1:19:01.95,1:19:04.68,en,,0000,0000,0000,,You want to go back? Absolutely not!
+Dialogue: 0,1:19:07.49,1:19:10.01,en,,0000,0000,0000,,This is the bridge. We're still in Klingon space.
+Dialogue: 0,1:19:10.19,1:19:16.79,en,,0000,0000,0000,,Deck 9,remain at battle stations. Deck 9,remain at battle stations.
+Dialogue: 0,1:19:48.96,1:19:51.36,cn,,0000,0000,0000,,他们被接回星盟太空船
+Dialogue: 0,1:19:51.53,1:19:54.52,cn,,0000,0000,0000,,我可以追踪…
+Dialogue: 0,1:19:59.51,1:20:02.91,cn,,0000,0000,0000,,逃脱
+Dialogue: 0,1:20:03.81,1:20:08.80,cn,,0000,0000,0000,,却克不知道和谈的场地
+Dialogue: 0,1:20:09.02,1:20:11.51,cn,,0000,0000,0000,,你肯定？
+Dialogue: 0,1:20:12.25,1:20:16.09,cn,,0000,0000,0000,,你愿意冒险吗？
+Dialogue: 0,1:20:16.26,1:20:20.19,cn,,0000,0000,0000,,舵手 快去拦截企业号
+Dialogue: 0,1:20:26.63,1:20:29.62,en,,0000,0000,0000,,The Klingons have a Bird of Prey that can fire while cloaked.
+Dialogue: 0,1:20:29.80,1:20:33.03,en,,0000,0000,0000,,She torpedoed Gorkon's ship. So that's it.
+Dialogue: 0,1:20:33.21,1:20:37.57,en,,0000,0000,0000,,We believe that Gorkon's murderers are aboard this ship.
+Dialogue: 0,1:20:37.74,1:20:40.97,en,,0000,0000,0000,,Has the peace conference begun? Who knows? The location is secret.
+Dialogue: 0,1:20:41.15,1:20:44.17,en,,0000,0000,0000,,There's always something. Captain! Mr Spock!
+Dialogue: 0,1:20:44.35,1:20:47.72,en,,0000,0000,0000,,I found the uniforms with the Klingon blood on them.
+Dialogue: 0,1:21:02.87,1:21:08.81,en,,0000,0000,0000,,But the uniforms belong to these two men. Burke and Samno.
+Dialogue: 0,1:21:09.34,1:21:13.07,en,,0000,0000,0000,,Not anymore. Phaser on 'stun' at close range.
+Dialogue: 0,1:21:13.25,1:21:16.91,en,,0000,0000,0000,,First rule of assassination kill the assassins.
+Dialogue: 0,1:21:17.08,1:21:22.04,en,,0000,0000,0000,,Now we're back to square one. Can I talk to you?
+Dialogue: 0,1:21:23.36,1:21:28.59,en,,0000,0000,0000,,Why weren't they vaporized? It would set off the alarm.
+Dialogue: 0,1:21:35.97,1:21:37.96,en,,0000,0000,0000,,It's possible.
+Dialogue: 0,1:21:38.14,1:21:42.01,en,,0000,0000,0000,,Now hear this. Now hear this.
+Dialogue: 0,1:21:42.17,1:21:46.34,en,,0000,0000,0000,,Court reporter to sick bay. Code blue urgent.
+Dialogue: 0,1:21:46.51,1:21:50.35,en,,0000,0000,0000,,Statements to be taken at once from Yeomen Burke and Samno.
+Dialogue: 0,1:21:50.52,1:21:54.92,en,,0000,0000,0000,,Repeat,court reporter to sick bay. Code blue urgent.
+Dialogue: 0,1:21:55.09,1:21:57.32,en,,0000,0000,0000,,Statements to be taken.
+Dialogue: 0,1:21:57.49,1:22:02.62,en,,0000,0000,0000,,Repeat,statements to be taken from Yeomen Burke and Samno.
+Dialogue: 0,1:22:40.77,1:22:42.29,en,,0000,0000,0000,,You have to shoot.
+Dialogue: 0,1:22:46.24,1:22:50.61,en,,0000,0000,0000,,If you are logical,you have to shoot.
+Dialogue: 0,1:22:54.91,1:22:57.75,en,,0000,0000,0000,,I do not want to. What you want is irrelevant.
+Dialogue: 0,1:22:57.92,1:23:01.08,en,,0000,0000,0000,,What you've chosen is at hand.
+Dialogue: 0,1:23:01.25,1:23:03.05,en,,0000,0000,0000,,I'd just as soon you didn't.
+Dialogue: 0,1:23:10.80,1:23:13.32,en,,0000,0000,0000,,The operation is over.
+Dialogue: 0,1:23:18.77,1:23:22.37,en,,0000,0000,0000,,I did not fire. You cannot prove anything.
+Dialogue: 0,1:23:22.54,1:23:27.67,en,,0000,0000,0000,,Yes,I can. At my trial my personal log was used against me.
+Dialogue: 0,1:23:27.85,1:23:31.91,en,,0000,0000,0000,,How long did you wait outside my quarters before I noticed you?
+Dialogue: 0,1:23:33.39,1:23:36.25,en,,0000,0000,0000,,You knew?
+Dialogue: 0,1:23:36.42,1:23:39.86,en,,0000,0000,0000,,I tried to tell you,but you would not listen.
+Dialogue: 0,1:23:40.03,1:23:44.09,en,,0000,0000,0000,,Neither of us was hearing very well that night.
+Dialogue: 0,1:23:44.26,1:23:47.79,en,,0000,0000,0000,,There were things I tried to tell you,about having faith.
+Dialogue: 0,1:23:47.97,1:23:52.87,en,,0000,0000,0000,,You have betrayed the Federation. All of you.
+Dialogue: 0,1:23:53.04,1:23:56.37,en,,0000,0000,0000,,And what have you've been doing? Saving Starfleet.
+Dialogue: 0,1:23:56.54,1:24:03.38,en,,0000,0000,0000,,Klingons cannot be trusted. Sir... You said so yourself.
+Dialogue: 0,1:24:03.55,1:24:07.58,en,,0000,0000,0000,,They killed your son. Did you not wish Gorkon dead?
+Dialogue: 0,1:24:07.75,1:24:12.38,en,,0000,0000,0000,,'Let them die',you said. Did I misinterpret you?
+Dialogue: 0,1:24:14.16,1:24:16.22,en,,0000,0000,0000,,And you were right.
+Dialogue: 0,1:24:16.40,1:24:20.42,en,,0000,0000,0000,,They conspired with us to assassinate their own Chancellor.
+Dialogue: 0,1:24:20.60,1:24:22.97,en,,0000,0000,0000,,How trustworthy can they be?
+Dialogue: 0,1:24:23.14,1:24:26.97,en,,0000,0000,0000,,Klingons and Federation members conspiring together.
+Dialogue: 0,1:24:27.14,1:24:31.47,en,,0000,0000,0000,,Who is 'us'? All who stands to lose from peace.
+Dialogue: 0,1:24:31.64,1:24:33.24,en,,0000,0000,0000,,Names,Lieutenant.
+Dialogue: 0,1:24:33.41,1:24:38.87,en,,0000,0000,0000,,My comrades will make certain all your transmissions are jammed.
+Dialogue: 0,1:24:39.05,1:24:44.46,en,,0000,0000,0000,,Names,Lieutenant! I do not remember.
+Dialogue: 0,1:24:46.63,1:24:49.56,en,,0000,0000,0000,,A lie?
+Dialogue: 0,1:24:49.73,1:24:51.89,en,,0000,0000,0000,,A choice.
+Dialogue: 0,1:24:55.77,1:24:58.24,en,,0000,0000,0000,,Spock.
+Dialogue: 0,1:25:41.31,1:25:45.31,en,,0000,0000,0000,,Admiral Cartwright.
+Dialogue: 0,1:25:45.48,1:25:48.01,en,,0000,0000,0000,,From Starfleet?
+Dialogue: 0,1:25:55.09,1:25:57.62,en,,0000,0000,0000,,Who else?
+Dialogue: 0,1:26:01.03,1:26:05.27,en,,0000,0000,0000,,General... Chang.
+Dialogue: 0,1:26:11.44,1:26:18.98,en,,0000,0000,0000,,Who else? Romulan Ambassador and others.
+Dialogue: 0,1:26:22.82,1:26:25.35,en,,0000,0000,0000,,Where is the peace conference?
+Dialogue: 0,1:26:27.23,1:26:29.69,en,,0000,0000,0000,,Where is the peace conference?
+Dialogue: 0,1:27:03.46,1:27:05.93,en,,0000,0000,0000,,She does not know.
+Dialogue: 0,1:27:07.57,1:27:08.93,en,,0000,0000,0000,,Then we're dead.
+Dialogue: 0,1:27:19.71,1:27:24.71,en,,0000,0000,0000,,I have been dead before. Contact Excelsior.
+Dialogue: 0,1:27:24.88,1:27:28.98,en,,0000,0000,0000,,She'll have the co-ordinates. I've already got it,sir.
+Dialogue: 0,1:27:29.15,1:27:32.09,en,,0000,0000,0000,,Standing by,Captain Kirk. Sulu.
+Dialogue: 0,1:27:32.26,1:27:36.85,en,,0000,0000,0000,,You realize that by even talking to us,you're violating regulations.
+Dialogue: 0,1:27:37.03,1:27:39.76,en,,0000,0000,0000,,I'm sorry,Captain. Your message is breaking up.
+Dialogue: 0,1:27:39.93,1:27:43.70,en,,0000,0000,0000,,Bless you,Sulu. Where is the peace conference?
+Dialogue: 0,1:27:43.87,1:27:45.50,en,,0000,0000,0000,,They'll attempt another assassination.
+Dialogue: 0,1:27:45.67,1:27:50.70,en,,0000,0000,0000,,It's at Camp Khitomer,near the Romulan border.
+Dialogue: 0,1:27:50.88,1:27:53.61,en,,0000,0000,0000,,I'm sending the co-ordinates on a coded frequency.
+Dialogue: 0,1:27:53.78,1:27:56.08,en,,0000,0000,0000,,We'll need more than that.
+Dialogue: 0,1:27:56.25,1:28:00.15,en,,0000,0000,0000,,There's a Bird of Prey on the look-out for us that can fire while cloaked.
+Dialogue: 0,1:28:00.32,1:28:02.69,en,,0000,0000,0000,,Surely not.
+Dialogue: 0,1:28:02.86,1:28:07.62,en,,0000,0000,0000,,How many of those things are there? Come on,Lieutenant.
+Dialogue: 0,1:28:07.79,1:28:10.76,en,,0000,0000,0000,,Just the prototype. Do you hear that?
+Dialogue: 0,1:28:10.93,1:28:14.49,en,,0000,0000,0000,,I'm getting under way now. We're in Alpha Quadrant.
+Dialogue: 0,1:28:14.67,1:28:17.66,en,,0000,0000,0000,,The chances of our reaching the conference in time are slim.
+Dialogue: 0,1:28:17.84,1:28:22.86,en,,0000,0000,0000,,When does this conference start? According to my information today.
+Dialogue: 0,1:28:24.31,1:28:27.84,en,,0000,0000,0000,,Thank you,Captain Sulu. Don't mention it,Captain Kirk.
+Dialogue: 0,1:28:34.55,1:28:36.82,en,,0000,0000,0000,,Spock?
+Dialogue: 0,1:28:36.99,1:28:39.22,en,,0000,0000,0000,,I prefer it dark.
+Dialogue: 0,1:28:46.00,1:28:50.49,en,,0000,0000,0000,,Dining on ashes? You were right.
+Dialogue: 0,1:28:50.67,1:28:57.73,en,,0000,0000,0000,,It was arrogant presumption on my part that got us into this situation.
+Dialogue: 0,1:28:57.91,1:29:01.35,en,,0000,0000,0000,,You and the Doctor might have been killed.
+Dialogue: 0,1:29:01.51,1:29:04.04,en,,0000,0000,0000,,The night is young.
+Dialogue: 0,1:29:04.22,1:29:08.95,en,,0000,0000,0000,,You said it yourself,it was logical. Peace is worth a few personal risks.
+Dialogue: 0,1:29:12.52,1:29:14.75,en,,0000,0000,0000,,You're a great one for logic.
+Dialogue: 0,1:29:14.93,1:29:19.96,en,,0000,0000,0000,,I'm a great one for rushing in where angels fear to tread.
+Dialogue: 0,1:29:20.13,1:29:26.80,en,,0000,0000,0000,,We're both extremists. Reality is probably somewhere in between.
+Dialogue: 0,1:29:30.58,1:29:33.37,en,,0000,0000,0000,,I couldn't get past the death of my son.
+Dialogue: 0,1:29:33.55,1:29:38.28,en,,0000,0000,0000,,I was prejudiced by her accomplishments as a Vulcan.
+Dialogue: 0,1:29:38.45,1:29:42.22,en,,0000,0000,0000,,Gorkon had to die before I understood how prejudiced I was.
+Dialogue: 0,1:29:50.53,1:29:52.33,en,,0000,0000,0000,,Is it possible...
+Dialogue: 0,1:29:53.07,1:30:00.90,en,,0000,0000,0000,,that we two,you and I,have grown so old and inflexible
+Dialogue: 0,1:30:01.07,1:30:05.60,en,,0000,0000,0000,,that we have outlived our usefulness?
+Dialogue: 0,1:30:05.78,1:30:08.77,en,,0000,0000,0000,,Would that constitute a joke?
+Dialogue: 0,1:30:10.05,1:30:14.45,en,,0000,0000,0000,,It wasn't your fault. I was responsible.
+Dialogue: 0,1:30:15.32,1:30:20.62,en,,0000,0000,0000,,For no actions but your own. That's not what you said at your trial.
+Dialogue: 0,1:30:20.79,1:30:23.09,en,,0000,0000,0000,,That was as captain of the ship. Human beings...
+Dialogue: 0,1:30:23.26,1:30:26.66,en,,0000,0000,0000,,We both know that I am not human.
+Dialogue: 0,1:30:26.83,1:30:30.50,en,,0000,0000,0000,,Do you want to know something? Everybody's human.
+Dialogue: 0,1:30:31.30,1:30:35.26,en,,0000,0000,0000,,I find that remark... insulting.
+Dialogue: 0,1:30:35.44,1:30:37.14,en,,0000,0000,0000,,Come,I need you.
+Dialogue: 0,1:30:41.68,1:30:46.34,en,,0000,0000,0000,,Madam Chancellor,members of the diplomatic corps...
+Dialogue: 0,1:30:47.35,1:30:50.34,en,,0000,0000,0000,,honoured guests.
+Dialogue: 0,1:30:50.52,1:30:53.89,en,,0000,0000,0000,,The United Federation of Planets welcomes you to Camp Khitomer.
+Dialogue: 0,1:31:10.91,1:31:13.54,en,,0000,0000,0000,,She's out here somewhere.
+Dialogue: 0,1:31:13.71,1:31:18.62,en,,0000,0000,0000,,But if she's cloaked... Then all we have is a radiation surge.
+Dialogue: 0,1:31:18.78,1:31:23.31,en,,0000,0000,0000,,By the time we're close enough to record it,we're ashes.
+Dialogue: 0,1:31:26.29,1:31:28.59,en,,0000,0000,0000,,2.06
+Dialogue: 0,1:31:30.96,1:31:33.93,en,,0000,0000,0000,,2.03
+Dialogue: 0,1:31:34.10,1:31:39.59,en,,0000,0000,0000,,Close enough to beam down? Not yet. In two minutes. 1.58.
+Dialogue: 0,1:31:40.97,1:31:44.10,en,,0000,0000,0000,,Go to impulse power for Khitomer.
+Dialogue: 0,1:31:52.68,1:31:58.02,en,,0000,0000,0000,,Let us redefine progress to mean that just because we can do a thing
+Dialogue: 0,1:31:58.19,1:32:03.09,en,,0000,0000,0000,,it does not necessarily follow that we must do that thing.
+Dialogue: 0,1:32:06.40,1:32:09.09,en,,0000,0000,0000,,Uhura? Nothing,Captain.
+Dialogue: 0,1:32:09.27,1:32:12.43,en,,0000,0000,0000,,If she's here,she's rigged for silent running.
+Dialogue: 0,1:32:19.41,1:32:23.11,en,,0000,0000,0000,,Coming up on transporter range in 57 seconds.
+Dialogue: 0,1:32:23.28,1:32:26.81,en,,0000,0000,0000,,Transporter room. Stand by to beam down.
+Dialogue: 0,1:32:29.09,1:32:31.28,en,,0000,0000,0000,,53...
+Dialogue: 0,1:32:35.09,1:32:37.49,en,,0000,0000,0000,,48 seconds.
+Dialogue: 0,1:32:41.97,1:32:44.23,en,,0000,0000,0000,,44...
+Dialogue: 0,1:32:46.14,1:32:49.63,en,,0000,0000,0000,,I can see you,Kirk.
+Dialogue: 0,1:32:49.81,1:32:51.83,en,,0000,0000,0000,,Chang.
+Dialogue: 0,1:32:52.01,1:32:54.50,en,,0000,0000,0000,,Can you see me?
+Dialogue: 0,1:32:54.68,1:32:59.45,en,,0000,0000,0000,,Now be honest,Captain. Warrior to warrior.
+Dialogue: 0,1:32:59.62,1:33:03.58,en,,0000,0000,0000,,You do prefer it this way,don't you? As it was meant to be.
+Dialogue: 0,1:33:04.36,1:33:07.09,en,,0000,0000,0000,,No peace in our time.
+Dialogue: 0,1:33:07.26,1:33:12.53,en,,0000,0000,0000,,'Once more unto the breach,dear friends.'
+Dialogue: 0,1:33:27.98,1:33:31.21,en,,0000,0000,0000,,This is fun. Reverse engines. All astern.
+Dialogue: 0,1:33:31.38,1:33:33.61,en,,0000,0000,0000,,One and a half impulse power. Back off!
+Dialogue: 0,1:33:37.79,1:33:40.66,cn,,0000,0000,0000,,它做什麽？
+Dialogue: 0,1:33:41.36,1:33:43.99,en,,0000,0000,0000,,What's she waiting for?
+Dialogue: 0,1:33:44.16,1:33:47.96,en,,0000,0000,0000,,Probably attempting to ascertain why we are reversing.
+Dialogue: 0,1:33:48.13,1:33:51.40,en,,0000,0000,0000,,Wondering whether we detect her.
+Dialogue: 0,1:33:55.61,1:33:57.37,en,,0000,0000,0000,,Incoming!
+Dialogue: 0,1:34:01.45,1:34:03.88,en,,0000,0000,0000,,In range? Not yet,sir.
+Dialogue: 0,1:34:04.05,1:34:05.57,en,,0000,0000,0000,,Come on!
+Dialogue: 0,1:34:05.75,1:34:07.65,en,,0000,0000,0000,,She'll fly apart. Fly her apart,then!
+Dialogue: 0,1:34:07.82,1:34:13.49,en,,0000,0000,0000,,Many speculated about my father's motives.
+Dialogue: 0,1:34:13.66,1:34:18.86,en,,0000,0000,0000,,Some said he was an idealist. Others said he had no choice.
+Dialogue: 0,1:34:19.03,1:34:24.66,en,,0000,0000,0000,,If Praxis had not exploded,his idealism wouldn't have found expression.
+Dialogue: 0,1:34:26.00,1:34:28.27,en,,0000,0000,0000,,We are a proud race.
+Dialogue: 0,1:34:28.44,1:34:33.17,en,,0000,0000,0000,,We are here because we intend to go on being proud.
+Dialogue: 0,1:34:42.69,1:34:47.78,en,,0000,0000,0000,,Go to auxiliary power! Auxiliary circuits destroyed.
+Dialogue: 0,1:34:52.93,1:34:57.23,en,,0000,0000,0000,,'Tickle us,do we not laugh? Prick us,do we not bleed? '
+Dialogue: 0,1:34:57.80,1:35:02.47,en,,0000,0000,0000,,'Wrong us,shall we not revenge? '
+Dialogue: 0,1:35:02.64,1:35:04.13,en,,0000,0000,0000,,Gas.
+Dialogue: 0,1:35:05.88,1:35:10.68,en,,0000,0000,0000,,Gas,Captain. Under impulse power she expands fuel,like all vessels.
+Dialogue: 0,1:35:10.85,1:35:16.38,en,,0000,0000,0000,,We call it 'plasma',but it is merely ionised gas.
+Dialogue: 0,1:35:16.56,1:35:21.46,en,,0000,0000,0000,,What about our equipment to catalogue gaseous anomalies?
+Dialogue: 0,1:35:23.53,1:35:25.76,en,,0000,0000,0000,,The thing's got to have a tail-pipe.
+Dialogue: 0,1:35:25.93,1:35:30.30,en,,0000,0000,0000,,Doctor,would you assist me in performing surgery on a torpedo?
+Dialogue: 0,1:35:30.47,1:35:31.77,en,,0000,0000,0000,,Fascinating.
+Dialogue: 0,1:35:33.84,1:35:36.43,en,,0000,0000,0000,,Hard to starboard.
+Dialogue: 0,1:35:37.38,1:35:41.87,en,,0000,0000,0000,,The proposed agenda is as follows: The evacuation of Kronos
+Dialogue: 0,1:35:42.05,1:35:45.51,en,,0000,0000,0000,,has been calculated within the 50 Earth year time span.
+Dialogue: 0,1:35:45.68,1:35:48.31,en,,0000,0000,0000,,Phase 1 preparation for evacuation...
+Dialogue: 0,1:35:58.43,1:36:03.80,en,,0000,0000,0000,,Captain,she's packing quite a wallop. Shields weakening.
+Dialogue: 0,1:36:10.28,1:36:15.44,en,,0000,0000,0000,,Shields up! Alright,now we're giving them something else to shoot at.
+Dialogue: 0,1:36:22.45,1:36:24.92,en,,0000,0000,0000,,The game's afoot.
+Dialogue: 0,1:36:32.16,1:36:37.07,en,,0000,0000,0000,,Excelsior's been hit! 'Our revels now are ended',Kirk.
+Dialogue: 0,1:36:45.44,1:36:51.04,en,,0000,0000,0000,,'Cry havoc,and let slip the dogs of war.'
+Dialogue: 0,1:36:51.22,1:36:55.15,en,,0000,0000,0000,,Bones,where's my torpedo? Bet you wished you'd stayed in bed.
+Dialogue: 0,1:36:57.56,1:37:00.39,en,,0000,0000,0000,,Shields collapsing!
+Dialogue: 0,1:37:01.59,1:37:03.69,en,,0000,0000,0000,,The key,please. Time is short.
+Dialogue: 0,1:37:12.20,1:37:14.90,en,,0000,0000,0000,,The hull has been compromised. I wonder how bad.
+Dialogue: 0,1:37:15.07,1:37:16.67,en,,0000,0000,0000,,Connect echo-bars.
+Dialogue: 0,1:37:16.84,1:37:19.24,en,,0000,0000,0000,,discuss the report on phase 2.
+Dialogue: 0,1:37:19.41,1:37:22.90,en,,0000,0000,0000,,Alter circuit A. Sensor.
+Dialogue: 0,1:37:23.08,1:37:25.71,en,,0000,0000,0000,,we commence within minutes of the preparation.
+Dialogue: 0,1:37:25.88,1:37:30.62,en,,0000,0000,0000,,'I am constant as the Northern star.' I'd give real money,if he'd shut up.
+Dialogue: 0,1:37:31.29,1:37:32.62,en,,0000,0000,0000,,Plate,please.
+Dialogue: 0,1:37:32.79,1:37:34.45,en,,0000,0000,0000,,and assimilation will consume...
+Dialogue: 0,1:37:34.63,1:37:36.69,en,,0000,0000,0000,,We've got a heart beat.
+Dialogue: 0,1:37:37.86,1:37:39.76,en,,0000,0000,0000,,with the Klingon Empire...
+Dialogue: 0,1:37:39.93,1:37:41.69,en,,0000,0000,0000,,Key,please.
+Dialogue: 0,1:37:41.87,1:37:44.23,en,,0000,0000,0000,,Where's that torpedo? She's ready.
+Dialogue: 0,1:37:44.40,1:37:46.63,en,,0000,0000,0000,,Lock and load!
+Dialogue: 0,1:37:48.01,1:37:49.87,en,,0000,0000,0000,,Fire!
+Dialogue: 0,1:38:02.09,1:38:04.56,en,,0000,0000,0000,,'To be... or not'...
+Dialogue: 0,1:38:05.99,1:38:07.79,en,,0000,0000,0000,,'to be.'
+Dialogue: 0,1:38:09.09,1:38:11.15,en,,0000,0000,0000,,Target that explosion and fire.
+Dialogue: 0,1:38:13.57,1:38:15.59,en,,0000,0000,0000,,Fire!
+Dialogue: 0,1:38:25.11,1:38:29.01,en,,0000,0000,0000,,This work will occupy us throughout most of the week.
+Dialogue: 0,1:38:29.18,1:38:30.81,en,,0000,0000,0000,,I hope that the delegation
+Dialogue: 0,1:38:30.98,1:38:38.08,en,,0000,0000,0000,,can implement the provisions of Phase 1 by the first of next month.
+Dialogue: 0,1:38:38.26,1:38:42.12,en,,0000,0000,0000,,As you know,time is of the essence.
+Dialogue: 0,1:38:42.29,1:38:43.92,en,,0000,0000,0000,,Out of the way!
+Dialogue: 0,1:38:48.93,1:38:50.92,en,,0000,0000,0000,,Mr President!
+Dialogue: 0,1:38:52.20,1:38:53.97,en,,0000,0000,0000,,Mr President!
+Dialogue: 0,1:38:55.74,1:38:57.67,en,,0000,0000,0000,,Kirk,Enterprise.
+Dialogue: 0,1:38:59.51,1:39:01.17,cn,,0000,0000,0000,,保护总理
+Dialogue: 0,1:39:08.62,1:39:11.78,en,,0000,0000,0000,,Arrest those men! Arrest yourself!
+Dialogue: 0,1:39:16.59,1:39:18.19,en,,0000,0000,0000,,We've got a full confession.
+Dialogue: 0,1:39:33.75,1:39:37.18,en,,0000,0000,0000,,This is not Klingon blood. Cartwright. Just a minute.
+Dialogue: 0,1:39:38.00,1:39:41.59,en,,0000,0000,0000,,What's happened? What's the mean of all of this?
+Dialogue: 0,1:39:41.77,1:39:43.79,en,,0000,0000,0000,,It's about the future,Madam Chancellor.
+Dialogue: 0,1:39:44.70,1:39:50.30,en,,0000,0000,0000,,Some people think the future means the end of history.
+Dialogue: 0,1:39:50.48,1:39:53.10,en,,0000,0000,0000,,We haven't run out of history quite yet.
+Dialogue: 0,1:39:54.55,1:39:57.81,en,,0000,0000,0000,,Your father called the future...
+Dialogue: 0,1:39:58.98,1:40:01.78,en,,0000,0000,0000,,'the undiscovered country'.
+Dialogue: 0,1:40:04.29,1:40:06.88,en,,0000,0000,0000,,People can be very frightened of change.
+Dialogue: 0,1:40:12.06,1:40:14.33,en,,0000,0000,0000,,You've restored my father's faith.
+Dialogue: 0,1:40:15.50,1:40:18.63,en,,0000,0000,0000,,And you've restored my son's.
+Dialogue: 0,1:41:06.49,1:41:09.28,en,,0000,0000,0000,,Once again,we've saved civilization as we know it.
+Dialogue: 0,1:41:09.45,1:41:12.12,en,,0000,0000,0000,,And they're not going to prosecute.
+Dialogue: 0,1:41:12.29,1:41:15.75,en,,0000,0000,0000,,They could have prosecuted me. I felt like Val'eris.
+Dialogue: 0,1:41:15.93,1:41:18.80,en,,0000,0000,0000,,They don't arrest people for having feelings.
+Dialogue: 0,1:41:18.96,1:41:25.37,en,,0000,0000,0000,,And it's a good thing,too. If they did,we'd all have to turn ourselves in.
+Dialogue: 0,1:41:25.54,1:41:29.70,en,,0000,0000,0000,,Captain Kirk. Captain Sulu.
+Dialogue: 0,1:41:29.88,1:41:33.74,en,,0000,0000,0000,,As much to the crew of the Enterprise,I owe you my thanks.
+Dialogue: 0,1:41:33.91,1:41:40.22,en,,0000,0000,0000,,Nice to see you in action one more time,Captain Kirk. Take care.
+Dialogue: 0,1:41:51.96,1:41:56.83,en,,0000,0000,0000,,My God,that's a big ship. Not so big as her captain.
+Dialogue: 0,1:41:57.00,1:42:00.77,en,,0000,0000,0000,,So... This is goodbye?
+Dialogue: 0,1:42:01.91,1:42:04.88,en,,0000,0000,0000,,It's about time we got underway ourselves.
+Dialogue: 0,1:42:05.04,1:42:08.17,en,,0000,0000,0000,,Captain,I have orders from Starfleet Command.
+Dialogue: 0,1:42:08.35,1:42:13.88,en,,0000,0000,0000,,We're to put back to space dock immediately... to be decommissioned.
+Dialogue: 0,1:42:28.23,1:42:33.80,en,,0000,0000,0000,,If I were human,I believe my response would be:
+Dialogue: 0,1:42:33.97,1:42:35.96,en,,0000,0000,0000,,'Go to hell.'
+Dialogue: 0,1:42:39.38,1:42:41.14,en,,0000,0000,0000,,If I were human.
+Dialogue: 0,1:42:45.28,1:42:46.91,en,,0000,0000,0000,,Course heading,Captain?
+Dialogue: 0,1:42:53.53,1:42:56.19,en,,0000,0000,0000,,Second star to the right.
+Dialogue: 0,1:42:57.36,1:42:59.46,en,,0000,0000,0000,,And straight on 'til morning.
+Dialogue: 0,1:43:16.92,1:43:20.87,en,,0000,0000,0000,,Captain's log,stardate 9529.1.
+Dialogue: 0,1:43:21.05,1:43:25.25,en,,0000,0000,0000,,This is the final cruise of the Starship Enterprise under my command.
+Dialogue: 0,1:43:25.42,1:43:27.45,en,,0000,0000,0000,,This ship,and her history
+Dialogue: 0,1:43:27.63,1:43:30.56,en,,0000,0000,0000,,will shortly become the care of another crew.
+Dialogue: 0,1:43:30.73,1:43:34.63,en,,0000,0000,0000,,To them and their posterity will we commit our future.
+Dialogue: 0,1:43:34.80,1:43:37.23,en,,0000,0000,0000,,They'll continue the voyages we have begun
+Dialogue: 0,1:43:37.40,1:43:39.80,en,,0000,0000,0000,,and journey to all the undiscovered countries
+Dialogue: 0,1:43:39.97,1:43:45.00,en,,0000,0000,0000,,boldly going where no man,where no one...
+Dialogue: 0,1:43:45.18,1:43:47.70,en,,0000,0000,0000,,has gone before.
+Dialogue: 0,0:03:34.31,0:03:37.83,cn,,0000,0000,0000,,星历9521.6
+Dialogue: 0,0:03:38.01,0:03:43.04,cn,,0000,0000,0000,,船长日志 上进号由苏路指挥
+Dialogue: 0,0:03:43.62,0:03:48.08,cn,,0000,0000,0000,,我首次完成叁年的船长任务
+Dialogue: 0,0:03:48.25,0:03:53.09,cn,,0000,0000,0000,,记载第二区的气体反常现象
+Dialogue: 0,0:03:54.16,0:03:57.32,cn,,0000,0000,0000,,我们正全速返回基地
+Dialogue: 0,0:03:57.50,0:04:00.19,cn,,0000,0000,0000,,太空船和船员一切正常
+Dialogue: 0,0:04:00.37,0:04:04.74,cn,,0000,0000,0000,,我们己完成全区的调查工作
+Dialogue: 0,0:04:16.55,0:04:19.11,cn,,0000,0000,0000,,这里有强度240的能量流
+Dialogue: 0,0:04:19.29,0:04:22.19,cn,,0000,0000,0000,,看
+Dialogue: 0,0:04:22.36,0:04:24.72,cn,,0000,0000,0000,,天
+Dialogue: 0,0:04:28.69,0:04:30.25,cn,,0000,0000,0000,,快开防护罩
+Dialogue: 0,0:04:40.94,0:04:42.31,cn,,0000,0000,0000,,太空船没有反应
+Dialogue: 0,0:04:42.48,0:04:45.41,cn,,0000,0000,0000,,右边推进器 转入气流中
+Dialogue: 0,0:04:49.55,0:04:52.11,cn,,0000,0000,0000,,撞击力真大
+Dialogue: 0,0:04:59.93,0:05:02.45,cn,,0000,0000,0000,,损毁报告 检查所有系统
+Dialogue: 0,0:05:09.14,0:05:12.13,cn,,0000,0000,0000,,不是有流星雨吧 不是
+Dialogue: 0,0:05:12.31,0:05:17.00,cn,,0000,0000,0000,,子空间震动来自323.75方位
+Dialogue: 0,0:05:17.18,0:05:21.48,cn,,0000,0000,0000,,位置是普拉西斯 克林冈卫星
+Dialogue: 0,0:05:21.65,0:05:25.67,cn,,0000,0000,0000,,那是他们主要的能源产地
+Dialogue: 0,0:05:27.65,0:05:32.35,cn,,0000,0000,0000,,发讯给克林冈指挥部说我们是星盟
+Dialogue: 0,0:05:32.53,0:05:36.15,cn,,0000,0000,0000,,测出他们区内发生大爆炸
+Dialogue: 0,0:05:36.33,0:05:39.70,cn,,0000,0000,0000,,问他们是否需要援助 知道
+Dialogue: 0,0:05:39.87,0:05:44.70,cn,,0000,0000,0000,,有其他资料吗？我确定了它的位置 但…
+Dialogue: 0,0:05:46.04,0:05:49.67,cn,,0000,0000,0000,,无法确定它的存在 放出来看
+Dialogue: 0,0:05:51.11,0:05:54.27,cn,,0000,0000,0000,,放大
+Dialogue: 0,0:05:56.92,0:05:59.11,cn,,0000,0000,0000,,这就是普拉西斯？对
+Dialogue: 0,0:05:59.29,0:06:01.78,cn,,0000,0000,0000,,我收到普拉西斯的讯息
+Dialogue: 0,0:06:01.95,0:06:04.12,cn,,0000,0000,0000,,接过来
+Dialogue: 0,0:06:16.60,0:06:20.20,cn,,0000,0000,0000,,我是卡拉 指挥部发言人
+Dialogue: 0,0:06:20.37,0:06:23.87,cn,,0000,0000,0000,,普拉西斯的确有事发生
+Dialogue: 0,0:06:24.04,0:06:29.81,cn,,0000,0000,0000,,但一切己恢复正常 不需援助
+Dialogue: 0,0:06:29.98,0:06:36.41,cn,,0000,0000,0000,,遵守条约规定 别进入中立区
+Dialogue: 0,0:06:36.59,0:06:39.42,cn,,0000,0000,0000,,通讯完毕
+Dialogue: 0,0:06:41.29,0:06:44.23,cn,,0000,0000,0000,,有事发生？我们要报告此事吗？
+Dialogue: 0,0:06:44.76,0:06:45.99,cn,,0000,0000,0000,,笑话
+Dialogue: 0,0:06:53.44,0:06:57.24,cn,,0000,0000,0000,,我们为什麽要来？可能是退休派对
+Dialogue: 0,0:06:57.41,0:06:59.31,cn,,0000,0000,0000,,真好 我刚买了小船
+Dialogue: 0,0:06:59.48,0:07:03.31,cn,,0000,0000,0000,,我本来要开学术会议
+Dialogue: 0,0:07:03.48,0:07:07.54,cn,,0000,0000,0000,,这是高层人员会议吗 苏路呢？
+Dialogue: 0,0:07:07.72,0:07:11.92,cn,,0000,0000,0000,,苏路有任务在身 那 史波克 呢？
+Dialogue: 0,0:07:19.97,0:07:24.99,cn,,0000,0000,0000,,这次议程要保密 有请总司令
+Dialogue: 0,0:07:30.78,0:07:32.94,cn,,0000,0000,0000,,请坐
+Dialogue: 0,0:07:35.85,0:07:38.84,cn,,0000,0000,0000,,让我简述一下
+Dialogue: 0,0:07:39.02,0:07:42.45,cn,,0000,0000,0000,,克林冈帝国只剩下五十年寿命
+Dialogue: 0,0:07:43.39,0:07:49.16,cn,,0000,0000,0000,,详细情况由星盟特使交代
+Dialogue: 0,0:08:01.41,0:08:03.14,cn,,0000,0000,0000,,大家早
+Dialogue: 0,0:08:03.31,0:08:09.44,cn,,0000,0000,0000,,我们两个月前测出普拉西斯发生爆炸
+Dialogue: 0,0:08:09.62,0:08:14.38,cn,,0000,0000,0000,,可能因为采矿过度及安全设施不足
+Dialogue: 0,0:08:14.55,0:08:18.35,cn,,0000,0000,0000,,卫星爆炸导致臭氧层严重污染
+Dialogue: 0,0:08:18.52,0:08:23.59,cn,,0000,0000,0000,,他们的氧气在五十年内就会耗尽
+Dialogue: 0,0:08:24.76,0:08:26.66,cn,,0000,0000,0000,,由於军事开支太大
+Dialogue: 0,0:08:26.83,0:08:32.50,cn,,0000,0000,0000,,克林冈人没有经济能力应付这场灾难
+Dialogue: 0,0:08:32.67,0:08:36.27,cn,,0000,0000,0000,,上月 应维冈总理要求
+Dialogue: 0,0:08:36.44,0:08:42.40,cn,,0000,0000,0000,,我与克林冈总理高冈对话
+Dialogue: 0,0:08:42.58,0:08:46.35,cn,,0000,0000,0000,,他建议马上展开谈判
+Dialogue: 0,0:08:46.52,0:08:49.39,cn,,0000,0000,0000,,谈什麽？
+Dialogue: 0,0:08:49.56,0:08:53.36,cn,,0000,0000,0000,,解散中立区的太空站
+Dialogue: 0,0:08:53.53,0:08:59.69,cn,,0000,0000,0000,,结束七十年敌对状态
+Dialogue: 0,0:09:00.33,0:09:04.50,cn,,0000,0000,0000,,我们要星际舰队作後备？
+Dialogue: 0,0:09:04.67,0:09:09.20,cn,,0000,0000,0000,,这不影响我们的科学探测计划
+Dialogue: 0,0:09:09.38,0:09:10.74,cn,,0000,0000,0000,,我一定反对
+Dialogue: 0,0:09:10.91,0:09:15.18,cn,,0000,0000,0000,,在星盟范围内庇护克林冈人等於自杀
+Dialogue: 0,0:09:15.35,0:09:18.21,cn,,0000,0000,0000,,他们会变成银河系的外星垃圾
+Dialogue: 0,0:09:18.38,0:09:20.15,cn,,0000,0000,0000,,如果解散舰队
+Dialogue: 0,0:09:20.32,0:09:24.48,cn,,0000,0000,0000,,我们就无力对抗敌人
+Dialogue: 0,0:09:24.66,0:09:28.39,cn,,0000,0000,0000,,我们一定要使他们屈服
+Dialogue: 0,0:09:29.23,0:09:33.39,cn,,0000,0000,0000,,才能发号施令
+Dialogue: 0,0:09:34.00,0:09:37.33,cn,,0000,0000,0000,,长官却克船长？
+Dialogue: 0,0:09:37.50,0:09:41.60,cn,,0000,0000,0000,,克林冈人从不可靠
+Dialogue: 0,0:09:41.77,0:09:46.01,cn,,0000,0000,0000,,我同意卡上将的观点这个做法太恐布了
+Dialogue: 0,0:09:46.18,0:09:50.51,cn,,0000,0000,0000,,当前急务是要支持高冈
+Dialogue: 0,0:09:50.68,0:09:53.95,cn,,0000,0000,0000,,免得克林冈的保守势力…
+Dialogue: 0,0:09:54.12,0:09:57.61,cn,,0000,0000,0000,,煽动战争
+Dialogue: 0,0:09:57.79,0:10:01.12,cn,,0000,0000,0000,,却克船长 你是首个和平大使
+Dialogue: 0,0:10:02.70,0:10:07.93,cn,,0000,0000,0000,,我们要会合高冈的太空船
+Dialogue: 0,0:10:08.10,0:10:10.97,cn,,0000,0000,0000,,全程安全护送他
+Dialogue: 0,0:10:11.14,0:10:12.87,cn,,0000,0000,0000,,我？
+Dialogue: 0,0:10:13.04,0:10:18.81,cn,,0000,0000,0000,,你和克林冈人对和约有同感
+Dialogue: 0,0:10:18.98,0:10:22.61,cn,,0000,0000,0000,,有你指挥他们不会轻易攻击企业号
+Dialogue: 0,0:10:22.78,0:10:26.11,cn,,0000,0000,0000,,我私人担保你负责这项任务
+Dialogue: 0,0:10:26.72,0:10:29.95,cn,,0000,0000,0000,,你私人担保？
+Dialogue: 0,0:10:30.79,0:10:35.69,cn,,0000,0000,0000,,你要以十足外交礼节款待高冈
+Dialogue: 0,0:10:35.86,0:10:39.96,cn,,0000,0000,0000,,我要有经验的大使 没有其他问题的话
+Dialogue: 0,0:10:40.13,0:10:44.57,cn,,0000,0000,0000,,我预祝你成功 散会
+Dialogue: 0,0:10:44.74,0:10:47.50,cn,,0000,0000,0000,,紧记这个会议要保密
+Dialogue: 0,0:10:53.91,0:10:58.41,cn,,0000,0000,0000,,我不知应否恭喜你
+Dialogue: 0,0:10:58.58,0:11:00.71,cn,,0000,0000,0000,,我不会恭喜你
+Dialogue: 0,0:11:03.89,0:11:05.91,cn,,0000,0000,0000,,我们是自愿的？
+Dialogue: 0,0:11:06.09,0:11:11.09,cn,,0000,0000,0000,,维冈人有句俗语 尼克逊才可到中国去
+Dialogue: 0,0:11:12.30,0:11:15.10,cn,,0000,0000,0000,,你怎能担保我？
+Dialogue: 0,0:11:15.27,0:11:20.17,cn,,0000,0000,0000,,那是我自作主张 我父亲要求我展开谈判
+Dialogue: 0,0:11:20.34,0:11:25.78,cn,,0000,0000,0000,,我知道你父亲是维冈大使但你知道我的感受吗？
+Dialogue: 0,0:11:27.38,0:11:29.07,cn,,0000,0000,0000,,他们是野兽 却克
+Dialogue: 0,0:11:29.98,0:11:35.39,cn,,0000,0000,0000,,这是难得的机会 别相信他们
+Dialogue: 0,0:11:36.06,0:11:38.75,cn,,0000,0000,0000,,他们快死了 让他们自生自灭
+Dialogue: 0,0:11:41.76,0:11:47.10,cn,,0000,0000,0000,,舰队叁个月内就要解散了
+Dialogue: 0,0:11:47.27,0:11:49.93,cn,,0000,0000,0000,,我们一直为此而努力
+Dialogue: 0,0:11:50.87,0:11:52.86,cn,,0000,0000,0000,,你该相信我
+Dialogue: 0,0:11:58.98,0:12:02.88,cn,,0000,0000,0000,,控制台 这是S D103接近太空码头
+Dialogue: 0,0:12:03.05,0:12:10.65,cn,,0000,0000,0000,,接却克船长及队员到NCC1701
+Dialogue: 0,0:12:15.73,0:12:19.26,cn,,0000,0000,0000,,船长到了你是少校…
+Dialogue: 0,0:12:19.43,0:12:24.13,cn,,0000,0000,0000,,韦利丽 我自荐做舵手的
+Dialogue: 0,0:12:24.30,0:12:27.07,cn,,0000,0000,0000,,很高兴再见到你
+Dialogue: 0,0:12:27.24,0:12:31.77,cn,,0000,0000,0000,,她是首个维冈人高材生
+Dialogue: 0,0:12:31.94,0:12:35.28,cn,,0000,0000,0000,,你一定很自豪 不是
+Dialogue: 0,0:12:35.45,0:12:36.97,cn,,0000,0000,0000,,她是维冈人
+Dialogue: 0,0:12:37.15,0:12:41.14,cn,,0000,0000,0000,,我们开始吧 离境站
+Dialogue: 0,0:12:41.32,0:12:45.48,cn,,0000,0000,0000,,史葛 找到引擎室吗？找到了
+Dialogue: 0,0:12:45.66,0:12:48.49,cn,,0000,0000,0000,,准备 乌娜 替我接码头职员
+Dialogue: 0,0:12:48.66,0:12:50.36,cn,,0000,0000,0000,,控制台读数
+Dialogue: 0,0:12:50.53,0:12:55.33,cn,,0000,0000,0000,,控制台 企业号申请离境
+Dialogue: 0,0:12:55.50,0:13:00.37,cn,,0000,0000,0000,,申请获接纳 离闸门有叁十秒
+Dialogue: 0,0:13:00.54,0:13:05.00,cn,,0000,0000,0000,,清除船索在此等候
+Dialogue: 0,0:13:05.18,0:13:08.04,cn,,0000,0000,0000,,船索清除了後推进器
+Dialogue: 0,0:13:08.21,0:13:11.58,cn,,0000,0000,0000,,谢谢 要1/4动力
+Dialogue: 0,0:13:11.75,0:13:18.45,cn,,0000,0000,0000,,船长 推进器只限在码头上用
+Dialogue: 0,0:13:21.43,0:13:22.99,cn,,0000,0000,0000,,却克…
+Dialogue: 0,0:13:25.30,0:13:27.53,cn,,0000,0000,0000,,按指示做
+Dialogue: 0,0:13:28.43,0:13:30.49,cn,,0000,0000,0000,,知道
+Dialogue: 0,0:14:03.10,0:14:06.90,cn,,0000,0000,0000,,船长日志 星历98522.6
+Dialogue: 0,0:14:07.07,0:14:11.77,cn,,0000,0000,0000,,我从不信任克林冈人
+Dialogue: 0,0:14:15.81,0:14:19.38,cn,,0000,0000,0000,,他们害死我儿子 不能原谅
+Dialogue: 0,0:14:21.09,0:14:28.32,cn,,0000,0000,0000,,护送克林冈总理到和平高峰会
+Dialogue: 0,0:14:28.49,0:14:31.05,cn,,0000,0000,0000,,真是棘手的工作
+Dialogue: 0,0:14:34.33,0:14:39.24,cn,,0000,0000,0000,,史波克 说这是历史性时刻希望他对吧
+Dialogue: 0,0:14:39.40,0:14:44.00,cn,,0000,0000,0000,,但我怎能担当这历史重任？
+Dialogue: 0,0:14:45.88,0:14:49.41,cn,,0000,0000,0000,,对不起你该敲门
+Dialogue: 0,0:14:49.58,0:14:54.95,cn,,0000,0000,0000,,快到会合处了 我特来报告
+Dialogue: 0,0:14:59.16,0:15:03.79,cn,,0000,0000,0000,,船长 我很荣幸能为你效劳
+Dialogue: 0,0:15:09.37,0:15:12.53,cn,,0000,0000,0000,,你的太空驾驶技术不错
+Dialogue: 0,0:15:13.14,0:15:15.33,cn,,0000,0000,0000,,这是我的志愿
+Dialogue: 0,0:15:25.75,0:15:28.15,cn,,0000,0000,0000,,做得好
+Dialogue: 0,0:15:28.32,0:15:34.38,cn,,0000,0000,0000,,我对你的工作表现很满意
+Dialogue: 0,0:15:34.56,0:15:39.09,cn,,0000,0000,0000,,你比我预期中还出色
+Dialogue: 0,0:15:40.67,0:15:44.23,cn,,0000,0000,0000,,这幅画代表什麽？
+Dialogue: 0,0:15:44.40,0:15:48.07,cn,,0000,0000,0000,,是古时地球传说的描绘
+Dialogue: 0,0:15:48.24,0:15:50.71,cn,,0000,0000,0000,,被逐出天堂
+Dialogue: 0,0:15:50.88,0:15:57.15,cn,,0000,0000,0000,,为什麽要挂在房里？提醒自己一切也会完
+Dialogue: 0,0:16:01.69,0:16:05.62,cn,,0000,0000,0000,,我很想说出这个结局
+Dialogue: 0,0:16:07.69,0:16:11.22,cn,,0000,0000,0000,,我视你为我们族中的智者
+Dialogue: 0,0:16:12.23,0:16:15.10,cn,,0000,0000,0000,,你察觉到…
+Dialogue: 0,0:16:15.27,0:16:19.07,cn,,0000,0000,0000,,星盟出现转捩点吗？
+Dialogue: 0,0:16:21.21,0:16:26.97,cn,,0000,0000,0000,,历史充满转捩点 怀着信心
+Dialogue: 0,0:16:27.15,0:16:31.34,cn,,0000,0000,0000,,信心？宇宙正在发展
+Dialogue: 0,0:16:32.22,0:16:38.32,cn,,0000,0000,0000,,合逻辑吗？我们肯定… 合逻辑…
+Dialogue: 0,0:16:38.49,0:16:45.29,cn,,0000,0000,0000,,逻辑是智慧之始 不是终结
+Dialogue: 0,0:16:46.80,0:16:52.17,cn,,0000,0000,0000,,这是我最後一次乘太空船
+Dialogue: 0,0:16:54.24,0:16:58.37,cn,,0000,0000,0000,,位置不能空着
+Dialogue: 0,0:16:58.54,0:17:01.17,cn,,0000,0000,0000,,我想由你继任
+Dialogue: 0,0:17:09.76,0:17:12.45,cn,,0000,0000,0000,,我会好好接替你的工作
+Dialogue: 0,0:17:17.16,0:17:20.00,cn,,0000,0000,0000,,所有人员请到驾驶台
+Dialogue: 0,0:17:20.17,0:17:24.47,cn,,0000,0000,0000,,克林冈巡航机离开了码头所有人员请到驾驶台
+Dialogue: 0,0:17:41.05,0:17:43.21,cn,,0000,0000,0000,,船长到了
+Dialogue: 0,0:17:57.07,0:17:59.56,cn,,0000,0000,0000,,要开防护罩吗？
+Dialogue: 0,0:18:01.17,0:18:03.61,cn,,0000,0000,0000,,从未如此接近过
+Dialogue: 0,0:18:05.38,0:18:09.01,cn,,0000,0000,0000,,总理在等候指示
+Dialogue: 0,0:18:17.99,0:18:21.19,cn,,0000,0000,0000,,乌娜 打信号招呼 知道
+Dialogue: 0,0:18:21.36,0:18:23.66,cn,,0000,0000,0000,,用右舵靠过去
+Dialogue: 0,0:18:23.83,0:18:26.76,cn,,0000,0000,0000,,右舵z加5度
+Dialogue: 0,0:18:26.93,0:18:29.73,cn,,0000,0000,0000,,接通了
+Dialogue: 0,0:18:29.90,0:18:34.20,cn,,0000,0000,0000,,这是企业号太空船由却克船长指挥
+Dialogue: 0,0:18:34.37,0:18:40.54,cn,,0000,0000,0000,,这是卡龙诺斯一号我是高冈总理
+Dialogue: 0,0:18:44.72,0:18:50.09,cn,,0000,0000,0000,,我们奉命护送你到地球开会
+Dialogue: 0,0:18:50.26,0:18:51.81,cn,,0000,0000,0000,,谢谢
+Dialogue: 0,0:18:52.46,0:18:58.16,cn,,0000,0000,0000,,你们想来企业号进晚餐吗？
+Dialogue: 0,0:18:58.33,0:19:00.46,cn,,0000,0000,0000,,来星盟作客好吗？
+Dialogue: 0,0:19:00.63,0:19:04.50,cn,,0000,0000,0000,,我们乐意接受邀请
+Dialogue: 0,0:19:08.04,0:19:11.41,cn,,0000,0000,0000,,我们七点半安排你们上船
+Dialogue: 0,0:19:11.58,0:19:13.98,cn,,0000,0000,0000,,我热切期待
+Dialogue: 0,0:19:21.39,0:19:23.48,cn,,0000,0000,0000,,你满意了吧
+Dialogue: 0,0:19:23.66,0:19:27.42,cn,,0000,0000,0000,,船长 我们有麦芽酒
+Dialogue: 0,0:19:27.59,0:19:30.86,cn,,0000,0000,0000,,有助聚会顺利进行
+Dialogue: 0,0:19:31.03,0:19:33.73,cn,,0000,0000,0000,,好主意
+Dialogue: 0,0:19:36.07,0:19:38.09,cn,,0000,0000,0000,,你猜谁会来？
+Dialogue: 0,0:19:49.58,0:19:51.88,cn,,0000,0000,0000,,通电
+Dialogue: 0,0:20:25.45,0:20:27.61,cn,,0000,0000,0000,,高冈总理切克船长
+Dialogue: 0,0:20:27.79,0:20:30.38,cn,,0000,0000,0000,,这是 史波克 你见过的
+Dialogue: 0,0:20:30.56,0:20:36.22,cn,,0000,0000,0000,,我们终於见面了 谢谢你
+Dialogue: 0,0:20:36.39,0:20:38.56,cn,,0000,0000,0000,,总理
+Dialogue: 0,0:20:39.76,0:20:41.93,cn,,0000,0000,0000,,各位
+Dialogue: 0,0:20:42.10,0:20:45.13,cn,,0000,0000,0000,,这是我的女儿阿惜宝
+Dialogue: 0,0:20:48.54,0:20:54.00,cn,,0000,0000,0000,,我的军事顾问卡拉
+Dialogue: 0,0:20:54.18,0:20:58.01,cn,,0000,0000,0000,,这是总参谋长张上将
+Dialogue: 0,0:20:58.18,0:21:01.41,cn,,0000,0000,0000,,久仰大名
+Dialogue: 0,0:21:02.39,0:21:08.16,cn,,0000,0000,0000,,过奖了 他真的很仰慕你
+Dialogue: 0,0:21:08.33,0:21:11.52,cn,,0000,0000,0000,,战士之间的感情
+Dialogue: 0,0:21:12.96,0:21:14.80,cn,,0000,0000,0000,,对
+Dialogue: 0,0:21:17.30,0:21:21.64,cn,,0000,0000,0000,,请来这边参观一下
+Dialogue: 0,0:21:38.79,0:21:41.52,cn,,0000,0000,0000,,他们的长相全都差不多 还有那股气味
+Dialogue: 0,0:21:41.69,0:21:45.60,cn,,0000,0000,0000,,只有首领才能说话
+Dialogue: 0,0:21:50.50,0:21:53.16,cn,,0000,0000,0000,,你们有工作做吗？有
+Dialogue: 0,0:21:53.34,0:21:55.36,cn,,0000,0000,0000,,快去办事
+Dialogue: 0,0:22:34.95,0:22:36.85,cn,,0000,0000,0000,,齐来乾杯
+Dialogue: 0,0:22:37.62,0:22:39.68,cn,,0000,0000,0000,,为尚未发现的地方
+Dialogue: 0,0:22:43.32,0:22:46.29,cn,,0000,0000,0000,,为未来为尚未发现的地方
+Dialogue: 0,0:22:46.46,0:22:48.69,cn,,0000,0000,0000,,哈姆雷特第叁幕第一场
+Dialogue: 0,0:22:48.86,0:22:55.06,cn,,0000,0000,0000,,看过克林冈文的莎士比亚才知道个中乐趣
+Dialogue: 0,0:23:04.04,0:23:08.14,cn,,0000,0000,0000,,麦芽酒不是非法的吗？
+Dialogue: 0,0:23:08.31,0:23:12.27,cn,,0000,0000,0000,,离星盟总部还有一千光年没有问题
+Dialogue: 0,0:23:13.22,0:23:17.38,cn,,0000,0000,0000,,敬高冈总理一杯他是我们未来的栋梁
+Dialogue: 0,0:23:17.56,0:23:19.05,cn,,0000,0000,0000,,为总理乾杯
+Dialogue: 0,0:23:21.49,0:23:26.73,cn,,0000,0000,0000,,可能我们现在己看到未来
+Dialogue: 0,0:23:27.93,0:23:35.00,cn,,0000,0000,0000,,却克 你愿放弃星际舰队吗？
+Dialogue: 0,0:23:38.94,0:23:45.35,cn,,0000,0000,0000,,船长认为舰队做的是和平任务
+Dialogue: 0,0:23:48.62,0:23:52.92,cn,,0000,0000,0000,,我没有异议 舰队一向…
+Dialogue: 0,0:23:53.09,0:23:57.99,cn,,0000,0000,0000,,不用转弯抹角太空所有战士也很冷酷
+Dialogue: 0,0:24:00.30,0:24:05.63,cn,,0000,0000,0000,,你喜欢莎士比亚吗？
+Dialogue: 0,0:24:06.37,0:24:11.27,cn,,0000,0000,0000,,我们认为所有星球也该争取不可剥夺的人权
+Dialogue: 0,0:24:11.44,0:24:15.17,cn,,0000,0000,0000,,不可剥夺 你们只听取己见
+Dialogue: 0,0:24:16.68,0:24:22.12,cn,,0000,0000,0000,,人权一词有种族歧视之意
+Dialogue: 0,0:24:22.29,0:24:26.16,cn,,0000,0000,0000,,星盟不再是智人的专利
+Dialogue: 0,0:24:26.32,0:24:28.66,cn,,0000,0000,0000,,现时的同伴除外
+Dialogue: 0,0:24:29.33,0:24:34.89,cn,,0000,0000,0000,,我们的文化会因此毁灭
+Dialogue: 0,0:24:35.07,0:24:38.52,cn,,0000,0000,0000,,不对…
+Dialogue: 0,0:24:38.70,0:24:44.51,cn,,0000,0000,0000,,做与不做是困扰我们的问题
+Dialogue: 0,0:24:44.68,0:24:48.08,cn,,0000,0000,0000,,我们需要呼吸空间 地球 希特拉 1938年
+Dialogue: 0,0:24:50.05,0:24:52.18,cn,,0000,0000,0000,,你说什麽？
+Dialogue: 0,0:24:55.82,0:24:58.19,cn,,0000,0000,0000,,好了…
+Dialogue: 0,0:25:00.33,0:25:03.39,cn,,0000,0000,0000,,我们要走的路还漫长
+Dialogue: 0,0:25:03.56,0:25:06.26,cn,,0000,0000,0000,,欢迎下次再来
+Dialogue: 0,0:25:10.84,0:25:16.24,cn,,0000,0000,0000,,你不相信我？我不怪你
+Dialogue: 0,0:25:17.74,0:25:20.47,cn,,0000,0000,0000,,如果有新的世界
+Dialogue: 0,0:25:20.65,0:25:25.64,cn,,0000,0000,0000,,我们的生活会十分艰难
+Dialogue: 0,0:25:29.42,0:25:33.88,cn,,0000,0000,0000,,洗 总理 小姐
+Dialogue: 0,0:25:34.06,0:25:36.08,cn,,0000,0000,0000,,船长
+Dialogue: 0,0:25:36.26,0:25:38.86,cn,,0000,0000,0000,,谢谢款待
+Dialogue: 0,0:25:39.03,0:25:44.59,cn,,0000,0000,0000,,分离真是甜蜜的悲痛
+Dialogue: 0,0:25:45.34,0:25:49.43,cn,,0000,0000,0000,,听到午夜的报时钟吗？
+Dialogue: 0,0:26:13.00,0:26:15.73,cn,,0000,0000,0000,,谢天谢地
+Dialogue: 0,0:26:15.90,0:26:21.53,cn,,0000,0000,0000,,看到他们的食相吗？全无餐桌礼仪可言
+Dialogue: 0,0:26:21.71,0:26:25.90,cn,,0000,0000,0000,,我们在外交史上一定很出众
+Dialogue: 0,0:26:26.08,0:26:30.74,cn,,0000,0000,0000,,我要睡了 今晚真是一团糟
+Dialogue: 0,0:26:30.92,0:26:34.72,cn,,0000,0000,0000,,我要喝咖啡
+Dialogue: 0,0:26:49.47,0:26:55.93,cn,,0000,0000,0000,,高冈总理昨晚到企业号进晚餐
+Dialogue: 0,0:26:56.11,0:27:00.70,cn,,0000,0000,0000,,我们的态度不太合礼节
+Dialogue: 0,0:27:00.88,0:27:06.94,cn,,0000,0000,0000,,通知厨房:以後的外交场合不得端上麦芽酒
+Dialogue: 0,0:27:08.89,0:27:14.02,cn,,0000,0000,0000,,却克 请到驾驶台找我
+Dialogue: 0,0:27:20.16,0:27:22.39,cn,,0000,0000,0000,,船长有什麽事？
+Dialogue: 0,0:27:22.57,0:27:25.43,cn,,0000,0000,0000,,我感到奇怪我很累
+Dialogue: 0,0:27:25.60,0:27:30.51,cn,,0000,0000,0000,,我们录得大量中子辐射
+Dialogue: 0,0:27:30.68,0:27:34.84,cn,,0000,0000,0000,,在哪里？好像由我们发射
+Dialogue: 0,0:27:35.01,0:27:37.14,cn,,0000,0000,0000,,企业号？
+Dialogue: 0,0:27:38.95,0:27:44.75,cn,,0000,0000,0000,,韦利丽 你知道辐射激增吗？查哥夫 你呢？
+Dialogue: 0,0:27:44.92,0:27:47.65,cn,,0000,0000,0000,,只有我的头那麽大
+Dialogue: 0,0:27:47.83,0:27:50.23,cn,,0000,0000,0000,,我明白了
+Dialogue: 0,0:28:05.18,0:28:08.63,cn,,0000,0000,0000,,发生什麽事？我们射中了总理的船
+Dialogue: 0,0:28:08.81,0:28:12.08,cn,,0000,0000,0000,,发射室 我们有否发炮？
+Dialogue: 0,0:28:13.59,0:28:15.78,cn,,0000,0000,0000,,乌娜 监测一下 知道
+Dialogue: 0,0:28:15.95,0:28:20.52,cn,,0000,0000,0000,,直接击中证实了
+Dialogue: 0,0:28:49.29,0:28:53.28,cn,,0000,0000,0000,,这是驾驶台 收到吗？
+Dialogue: 0,0:28:53.46,0:28:58.95,cn,,0000,0000,0000,,我们有否发炮？没有 炸弹没消耗
+Dialogue: 0,0:29:26.89,0:29:30.05,cn,,0000,0000,0000,,无法确定有否发炮
+Dialogue: 0,0:29:30.23,0:29:32.79,cn,,0000,0000,0000,,打信号招呼 知道
+Dialogue: 0,0:29:32.96,0:29:36.46,cn,,0000,0000,0000,,卡龙诺斯一号这是企业号 收到吗？
+Dialogue: 0,0:30:43.53,0:30:49.03,cn,,0000,0000,0000,,情况混乱 有枪声和尖叫声
+Dialogue: 0,0:30:49.21,0:30:53.77,cn,,0000,0000,0000,,船倾斜了 它失控地转
+Dialogue: 0,0:31:26.74,0:31:30.58,cn,,0000,0000,0000,,你一点气量也没有
+Dialogue: 0,0:31:30.75,0:31:34.62,cn,,0000,0000,0000,,你违背了我们的和约
+Dialogue: 0,0:31:36.42,0:31:39.41,cn,,0000,0000,0000,,我要你在宇宙中消失
+Dialogue: 0,0:31:42.16,0:31:45.99,cn,,0000,0000,0000,,我们没有发炮 船长…
+Dialogue: 0,0:31:46.16,0:31:49.86,cn,,0000,0000,0000,,资料库显示我们发了两炮
+Dialogue: 0,0:31:50.03,0:31:51.93,cn,,0000,0000,0000,,船长 他们来了
+Dialogue: 0,0:31:58.78,0:32:01.64,cn,,0000,0000,0000,,他们准备开火要开防护罩吗？
+Dialogue: 0,0:32:01.81,0:32:05.34,cn,,0000,0000,0000,,防护罩要开骂？
+Dialogue: 0,0:32:07.55,0:32:10.08,cn,,0000,0000,0000,,发投降信号
+Dialogue: 0,0:32:10.25,0:32:11.69,cn,,0000,0000,0000,,我们投降
+Dialogue: 0,0:32:12.96,0:32:17.52,cn,,0000,0000,0000,,企业号宣布投降 若他们发炮 我们没防护罩
+Dialogue: 0,0:32:17.70,0:32:22.10,cn,,0000,0000,0000,,我们毫无还击之力 重复 企业号投降
+Dialogue: 0,0:32:25.50,0:32:29.34,cn,,0000,0000,0000,,我们有发炮吗？我也想知道
+Dialogue: 0,0:32:29.51,0:32:33.91,cn,,0000,0000,0000,,我要上船 你在此控制 我该负责 让我去吧
+Dialogue: 0,0:32:34.08,0:32:40.31,cn,,0000,0000,0000,,我去 总不能在和谈前夕开战
+Dialogue: 0,0:32:40.48,0:32:43.39,cn,,0000,0000,0000,,我也去 他们需要医生
+Dialogue: 0,0:32:43.55,0:32:48.15,cn,,0000,0000,0000,,乌娜 通知他们我们要上船 没有带武器
+Dialogue: 0,0:32:53.33,0:32:56.79,cn,,0000,0000,0000,,你疯了吗？我也不知发生什麽事
+Dialogue: 0,0:32:56.97,0:32:58.90,cn,,0000,0000,0000,,我们来帮忙的
+Dialogue: 0,0:33:00.37,0:33:02.70,cn,,0000,0000,0000,,跟我来
+Dialogue: 0,0:33:27.16,0:33:31.93,cn,,0000,0000,0000,,高冈总理 天 发生什麽事？
+Dialogue: 0,0:33:32.10,0:33:35.66,cn,,0000,0000,0000,,你还装作无知？他怎麽了？
+Dialogue: 0,0:33:35.84,0:33:40.40,cn,,0000,0000,0000,,被直接击中你破坏我们的引力系统
+Dialogue: 0,0:33:40.58,0:33:45.61,cn,,0000,0000,0000,,你们派来的凶手穿了磁靴
+Dialogue: 0,0:33:45.78,0:33:49.12,cn,,0000,0000,0000,,你们有医生吗？我们差不多全军覆没
+Dialogue: 0,0:33:49.29,0:33:51.78,cn,,0000,0000,0000,,让我为他急救
+Dialogue: 0,0:34:03.20,0:34:08.23,cn,,0000,0000,0000,,他还有脉搏 来 搬他到桌上
+Dialogue: 0,0:34:17.11,0:34:20.48,cn,,0000,0000,0000,,捉紧他 我要稳定他的情况
+Dialogue: 0,0:34:27.19,0:34:29.18,cn,,0000,0000,0000,,捉紧他
+Dialogue: 0,0:34:33.10,0:34:34.66,cn,,0000,0000,0000,,天
+Dialogue: 0,0:34:34.83,0:34:37.96,cn,,0000,0000,0000,,你行吗？我不清楚他的构造
+Dialogue: 0,0:34:42.57,0:34:45.01,cn,,0000,0000,0000,,他的伤口不愈合 他想杀他
+Dialogue: 0,0:34:50.82,0:34:54.38,cn,,0000,0000,0000,,他的身体机能停滞了
+Dialogue: 0,0:34:57.99,0:35:00.58,cn,,0000,0000,0000,,醒醒 醒来
+Dialogue: 0,0:35:05.50,0:35:07.59,cn,,0000,0000,0000,,他没有反应
+Dialogue: 0,0:35:26.42,0:35:30.29,cn,,0000,0000,0000,,不要就此结束
+Dialogue: 0,0:36:06.32,0:36:12.46,cn,,0000,0000,0000,,根据星际法例第184条
+Dialogue: 0,0:36:12.63,0:36:15.03,cn,,0000,0000,0000,,我要拘捕你
+Dialogue: 0,0:36:15.20,0:36:20.73,cn,,0000,0000,0000,,你被控暗杀我们的总理
+Dialogue: 0,0:36:20.91,0:36:22.93,cn,,0000,0000,0000,,他在抢救他
+Dialogue: 0,0:36:29.55,0:36:31.85,cn,,0000,0000,0000,,他们被捕了
+Dialogue: 0,0:36:32.92,0:36:36.85,cn,,0000,0000,0000,,史波克 我们要想办法
+Dialogue: 0,0:36:37.02,0:36:40.25,cn,,0000,0000,0000,,太空船自二点半开始由我指挥
+Dialogue: 0,0:36:40.42,0:36:46.76,cn,,0000,0000,0000,,乌娜 通知总部 寻求对策
+Dialogue: 0,0:36:46.93,0:36:49.30,cn,,0000,0000,0000,,我们不能让他们进克林冈监狱
+Dialogue: 0,0:36:49.47,0:36:55.93,cn,,0000,0000,0000,,开火无补於事 我们不能交战
+Dialogue: 0,0:36:56.11,0:36:58.54,cn,,0000,0000,0000,,我们可追查船长的行踪
+Dialogue: 0,0:36:58.71,0:37:01.94,cn,,0000,0000,0000,,怎样追查？时间很宝贵
+Dialogue: 0,0:37:02.11,0:37:05.48,cn,,0000,0000,0000,,我们要弄清今晚发生的事
+Dialogue: 0,0:37:05.65,0:37:09.28,cn,,0000,0000,0000,,资料库显示我们发了两次炮
+Dialogue: 0,0:37:09.45,0:37:14.15,cn,,0000,0000,0000,,没有可能 我同意 但我们需要证据
+Dialogue: 0,0:37:14.33,0:37:16.45,cn,,0000,0000,0000,,跟我来
+Dialogue: 0,0:37:17.50,0:37:22.02,cn,,0000,0000,0000,,如果查不出问题所在呢？
+Dialogue: 0,0:37:22.20,0:37:26.66,cn,,0000,0000,0000,,那就要由外交官处理了
+Dialogue: 0,0:37:28.24,0:37:32.54,cn,,0000,0000,0000,,总理死了
+Dialogue: 0,0:37:32.71,0:37:35.44,cn,,0000,0000,0000,,他受到突击
+Dialogue: 0,0:37:35.61,0:37:41.71,cn,,0000,0000,0000,,当时他在执行和平任务途中
+Dialogue: 0,0:37:41.89,0:37:45.22,cn,,0000,0000,0000,,却克船长依法被捕了
+Dialogue: 0,0:37:45.39,0:37:50.52,cn,,0000,0000,0000,,他和麦盖医生登上了卡龙诺斯一号
+Dialogue: 0,0:37:50.69,0:37:55.96,cn,,0000,0000,0000,,这是不争的事实 我己下令调查
+Dialogue: 0,0:37:56.87,0:37:59.10,cn,,0000,0000,0000,,同时… 同时…
+Dialogue: 0,0:37:59.27,0:38:05.80,cn,,0000,0000,0000,,我们希望星盟遵守星际法例
+Dialogue: 0,0:38:05.98,0:38:10.94,cn,,0000,0000,0000,,却克和麦盖要为暗杀总理受审
+Dialogue: 0,0:38:11.12,0:38:15.81,cn,,0000,0000,0000,,那当然 沙力 我们可引渡他们吗？
+Dialogue: 0,0:38:15.99,0:38:21.42,cn,,0000,0000,0000,,我对此事有一定责任
+Dialogue: 0,0:38:21.59,0:38:26.03,cn,,0000,0000,0000,,但我得确认他们的法律解释
+Dialogue: 0,0:38:26.70,0:38:29.69,cn,,0000,0000,0000,,罗武伦政府持什麽立场？
+Dialogue: 0,0:38:31.14,0:38:33.50,cn,,0000,0000,0000,,我同意他们的意见
+Dialogue: 0,0:38:33.67,0:38:39.20,cn,,0000,0000,0000,,难道你相信却克会暗杀总理？
+Dialogue: 0,0:38:39.38,0:38:43.90,cn,,0000,0000,0000,,主席 我不知应该信什麽
+Dialogue: 0,0:38:44.68,0:38:47.05,cn,,0000,0000,0000,,我在等你答覆
+Dialogue: 0,0:38:49.25,0:38:53.49,cn,,0000,0000,0000,,我不能凌驾於法律之上
+Dialogue: 0,0:39:00.41,0:39:06.00,cn,,0000,0000,0000,,我们要马上回应 我们不能离弃船长他们
+Dialogue: 0,0:39:06.18,0:39:11.67,cn,,0000,0000,0000,,四百年前工人觉得机器有威胁性
+Dialogue: 0,0:39:11.85,0:39:17.41,cn,,0000,0000,0000,,把凉鞋掉进机器弄停它
+Dialogue: 0,0:39:19.56,0:39:23.36,cn,,0000,0000,0000,,这就是英文捣乱一词的由来
+Dialogue: 0,0:39:25.83,0:39:31.06,cn,,0000,0000,0000,,现在我们的後备系统坏了
+Dialogue: 0,0:39:31.24,0:39:34.67,cn,,0000,0000,0000,,太好了 不 真糟糕
+Dialogue: 0,0:39:35.91,0:39:41.97,cn,,0000,0000,0000,,我继任了父亲总理一职
+Dialogue: 0,0:39:42.15,0:39:46.38,cn,,0000,0000,0000,,总理小姐 请接受我的吊慰
+Dialogue: 0,0:39:46.55,0:39:50.58,cn,,0000,0000,0000,,我保证那恶行不是…
+Dialogue: 0,0:39:50.76,0:39:56.06,cn,,0000,0000,0000,,既然大家都想继续和谈
+Dialogue: 0,0:39:56.23,0:39:59.63,cn,,0000,0000,0000,,我会在一周内出席 条件是…
+Dialogue: 0,0:39:59.80,0:40:06.29,cn,,0000,0000,0000,,我们不会引渡囚犯你不用营救他们
+Dialogue: 0,0:40:06.47,0:40:10.57,cn,,0000,0000,0000,,否则等於煽动战争
+Dialogue: 0,0:40:10.74,0:40:12.87,cn,,0000,0000,0000,,我们希望你来地球作客
+Dialogue: 0,0:40:13.04,0:40:18.11,cn,,0000,0000,0000,,经此一役 我决定保持中立
+Dialogue: 0,0:40:18.28,0:40:23.62,cn,,0000,0000,0000,,为了安全 会面地点要保密
+Dialogue: 0,0:40:24.22,0:40:27.42,cn,,0000,0000,0000,,你作主吧
+Dialogue: 0,0:41:03.43,0:41:06.99,cn,,0000,0000,0000,,你父亲是自愿给杀死的
+Dialogue: 0,0:41:07.77,0:41:10.36,cn,,0000,0000,0000,,和谈要继续
+Dialogue: 0,0:41:12.57,0:41:14.70,cn,,0000,0000,0000,,却克…
+Dialogue: 0,0:41:17.84,0:41:22.78,cn,,0000,0000,0000,,却克要为我父亲偿命
+Dialogue: 0,0:41:27.93,0:41:32.20,cn,,0000,0000,0000,,却克…
+Dialogue: 0,0:41:54.86,0:41:56.88,cn,,0000,0000,0000,,不知所谓的审讯
+Dialogue: 0,0:42:07.84,0:42:12.64,cn,,0000,0000,0000,,企业号突击卡龙诺斯一号
+Dialogue: 0,0:42:12.81,0:42:14.68,cn,,0000,0000,0000,,总理及顾问
+Dialogue: 0,0:42:14.85,0:42:17.58,cn,,0000,0000,0000,,当晚七点半获邀请
+Dialogue: 0,0:42:17.75,0:42:21.34,cn,,0000,0000,0000,,到企业号用膳
+Dialogue: 0,0:42:21.52,0:42:25.68,cn,,0000,0000,0000,,因此放松了警惕
+Dialogue: 0,0:42:25.86,0:42:28.38,cn,,0000,0000,0000,,传第一证人
+Dialogue: 0,0:42:28.56,0:42:32.09,cn,,0000,0000,0000,,第一击後 我们失去了引力
+Dialogue: 0,0:42:32.26,0:42:34.56,cn,,0000,0000,0000,,我失控地飘起来
+Dialogue: 0,0:42:34.73,0:42:37.70,cn,,0000,0000,0000,,两名星际舰队队员走过来
+Dialogue: 0,0:42:37.87,0:42:40.53,cn,,0000,0000,0000,,可能他们乔装成队员
+Dialogue: 0,0:42:40.71,0:42:43.87,cn,,0000,0000,0000,,这只是猜测
+Dialogue: 0,0:42:44.04,0:42:48.10,cn,,0000,0000,0000,,我们想听事实而非理论
+Dialogue: 0,0:42:48.68,0:42:54.02,cn,,0000,0000,0000,,没有引力 他们如何行走？
+Dialogue: 0,0:42:54.19,0:42:56.55,cn,,0000,0000,0000,,他们穿了磁靴
+Dialogue: 0,0:42:59.16,0:43:03.79,cn,,0000,0000,0000,,引力靴？麦盖医生
+Dialogue: 0,0:43:03.96,0:43:07.80,cn,,0000,0000,0000,,可否告诉我
+Dialogue: 0,0:43:07.97,0:43:11.99,cn,,0000,0000,0000,,你目前的健康状况？
+Dialogue: 0,0:43:12.17,0:43:14.93,cn,,0000,0000,0000,,除了动脉炎外 一切正常
+Dialogue: 0,0:43:22.75,0:43:25.24,cn,,0000,0000,0000,,你真有幽默感
+Dialogue: 0,0:43:25.42,0:43:30.01,cn,,0000,0000,0000,,我为企业号服务了二十七年
+Dialogue: 0,0:43:30.19,0:43:32.09,cn,,0000,0000,0000,,还有叁个月就退休
+Dialogue: 0,0:43:35.53,0:43:37.39,cn,,0000,0000,0000,,你知道吗？
+Dialogue: 0,0:43:37.56,0:43:42.66,cn,,0000,0000,0000,,我知道你当晚与众人…
+Dialogue: 0,0:43:42.83,0:43:45.27,cn,,0000,0000,0000,,喝了很多麦芽酒 对吗？
+Dialogue: 0,0:43:45.44,0:43:47.50,cn,,0000,0000,0000,,反对反对有效
+Dialogue: 0,0:43:47.67,0:43:51.23,cn,,0000,0000,0000,,我们全都喝了 这不表示…
+Dialogue: 0,0:43:51.41,0:43:57.11,cn,,0000,0000,0000,,你诊断高冈总理时他还生存吗？
+Dialogue: 0,0:43:57.28,0:43:58.65,cn,,0000,0000,0000,,他己奄奄一息
+Dialogue: 0,0:43:58.82,0:44:02.65,cn,,0000,0000,0000,,你以前试过救活…
+Dialogue: 0,0:44:02.82,0:44:07.09,cn,,0000,0000,0000,,与他一样垂危的病人吗？
+Dialogue: 0,0:44:07.26,0:44:10.42,cn,,0000,0000,0000,,我不熟识克林冈人的构造
+Dialogue: 0,0:44:10.60,0:44:13.89,cn,,0000,0000,0000,,是吗？你也在场
+Dialogue: 0,0:44:14.07,0:44:19.37,cn,,0000,0000,0000,,你快退休了 会手震吗？
+Dialogue: 0,0:44:19.54,0:44:21.60,cn,,0000,0000,0000,,反对 我很紧张
+Dialogue: 0,0:44:23.71,0:44:26.94,cn,,0000,0000,0000,,不 是你无能
+Dialogue: 0,0:44:29.58,0:44:31.91,cn,,0000,0000,0000,,你无能
+Dialogue: 0,0:44:32.08,0:44:36.28,cn,,0000,0000,0000,,蓄意谋杀还是年老加酒精影响
+Dialogue: 0,0:44:36.45,0:44:42.29,cn,,0000,0000,0000,,法庭会判决 天 我在救他
+Dialogue: 0,0:44:42.46,0:44:44.49,cn,,0000,0000,0000,,我尝试救他
+Dialogue: 0,0:44:46.30,0:44:50.03,cn,,0000,0000,0000,,我尽力救他
+Dialogue: 0,0:44:50.20,0:44:54.70,cn,,0000,0000,0000,,他是实现宇宙和平的最後希望
+Dialogue: 0,0:44:54.87,0:44:57.71,cn,,0000,0000,0000,,证人可以退下
+Dialogue: 0,0:45:00.95,0:45:06.75,cn,,0000,0000,0000,,我们己知道案情细节
+Dialogue: 0,0:45:06.92,0:45:11.65,cn,,0000,0000,0000,,现在要审讯这宗悲剧的主谋
+Dialogue: 0,0:45:11.82,0:45:17.23,cn,,0000,0000,0000,,却克船长
+Dialogue: 0,0:45:19.13,0:45:22.76,cn,,0000,0000,0000,,你最喜爱的作家会说什麽？
+Dialogue: 0,0:45:22.93,0:45:27.39,cn,,0000,0000,0000,,坐下诉说己故国王的故事
+Dialogue: 0,0:45:27.57,0:45:30.91,cn,,0000,0000,0000,,说出你的故事吧
+Dialogue: 0,0:45:31.08,0:45:36.17,cn,,0000,0000,0000,,说出你想怎样为子报仇
+Dialogue: 0,0:45:36.35,0:45:38.44,cn,,0000,0000,0000,,不是这样的反对
+Dialogue: 0,0:45:38.62,0:45:43.52,cn,,0000,0000,0000,,没有证据显示却克船长是刺客
+Dialogue: 0,0:45:43.69,0:45:49.92,cn,,0000,0000,0000,,请听听船长这番话
+Dialogue: 0,0:45:50.50,0:45:55.90,cn,,0000,0000,0000,,我从不信任克林冈人
+Dialogue: 0,0:45:56.07,0:45:59.47,cn,,0000,0000,0000,,他们害死我儿子 不能原谅
+Dialogue: 0,0:46:05.98,0:46:09.47,cn,,0000,0000,0000,,我从不信任克林冈人
+Dialogue: 0,0:46:10.11,0:46:14.24,cn,,0000,0000,0000,,他们害死我儿子 不能原谅
+Dialogue: 0,0:46:17.36,0:46:18.65,cn,,0000,0000,0000,,这是你的话吗？
+Dialogue: 0,0:46:22.69,0:46:25.32,cn,,0000,0000,0000,,是我说的
+Dialogue: 0,0:46:29.10,0:46:33.30,cn,,0000,0000,0000,,反对 政治立场与本案无关
+Dialogue: 0,0:46:33.47,0:46:39.34,cn,,0000,0000,0000,,他的政治立场正是关键问题
+Dialogue: 0,0:46:39.51,0:46:45.78,cn,,0000,0000,0000,,记录显示他是个不守纪律
+Dialogue: 0,0:46:45.95,0:46:49.32,cn,,0000,0000,0000,,经常违抗命令的人
+Dialogue: 0,0:46:49.49,0:46:50.85,cn,,0000,0000,0000,,继绩
+Dialogue: 0,0:46:51.02,0:46:55.39,cn,,0000,0000,0000,,却克船长曾任上将
+Dialogue: 0,0:46:55.56,0:47:00.50,cn,,0000,0000,0000,,因胡作非为被降职
+Dialogue: 0,0:47:00.67,0:47:05.53,cn,,0000,0000,0000,,难道你敢否认吗？回答我
+Dialogue: 0,0:47:05.70,0:47:08.37,cn,,0000,0000,0000,,我不能否认 你被降职？
+Dialogue: 0,0:47:08.54,0:47:12.77,cn,,0000,0000,0000,,因违抗命令？我有时不守纪律
+Dialogue: 0,0:47:12.94,0:47:15.94,cn,,0000,0000,0000,,你策划暗杀高冈总理时
+Dialogue: 0,0:47:16.11,0:47:19.02,cn,,0000,0000,0000,,是奉命行事还是违抗命令？
+Dialogue: 0,0:47:19.18,0:47:21.91,cn,,0000,0000,0000,,我上了船才知道他遇袭
+Dialogue: 0,0:47:22.09,0:47:26.89,cn,,0000,0000,0000,,你仍然否认企业号向卡龙诺斯一号开火？
+Dialogue: 0,0:47:27.06,0:47:31.32,cn,,0000,0000,0000,,你仍否认派人上船射杀总理？
+Dialogue: 0,0:47:31.50,0:47:34.19,cn,,0000,0000,0000,,我不能承认或否认不知情的事
+Dialogue: 0,0:47:34.37,0:47:39.53,cn,,0000,0000,0000,,你身为太空船船长
+Dialogue: 0,0:47:39.70,0:47:43.83,cn,,0000,0000,0000,,要为下属的行为负贵
+Dialogue: 0,0:47:46.41,0:47:47.71,cn,,0000,0000,0000,,我知道
+Dialogue: 0,0:47:47.88,0:47:54.28,cn,,0000,0000,0000,,若你的下属证实策划暗杀
+Dialogue: 0,0:47:54.45,0:47:57.39,cn,,0000,0000,0000,,他们在诬陷你 别回答
+Dialogue: 0,0:47:57.56,0:48:02.05,cn,,0000,0000,0000,,却克船长必须回答
+Dialogue: 0,0:48:09.33,0:48:11.46,cn,,0000,0000,0000,,身为船长…
+Dialogue: 0,0:48:12.77,0:48:16.17,cn,,0000,0000,0000,,我必须为下属的行为负贵
+Dialogue: 0,0:48:19.74,0:48:22.68,cn,,0000,0000,0000,,群情平静了
+Dialogue: 0,0:48:24.48,0:48:27.88,cn,,0000,0000,0000,,发讯给企业号
+Dialogue: 0,0:48:28.05,0:48:32.11,cn,,0000,0000,0000,,上进号船长苏路愿意相助
+Dialogue: 0,0:48:32.72,0:48:39.96,cn,,0000,0000,0000,,法庭裁定被告罪名成立
+Dialogue: 0,0:48:51.28,0:48:56.84,cn,,0000,0000,0000,,本案证据并不充分
+Dialogue: 0,0:48:57.01,0:49:00.78,cn,,0000,0000,0000,,恳请法庭判刑前考虑清楚
+Dialogue: 0,0:49:00.95,0:49:02.51,cn,,0000,0000,0000,,现在宣布
+Dialogue: 0,0:49:02.69,0:49:06.75,cn,,0000,0000,0000,,为了保持和谈的友好气氛
+Dialogue: 0,0:49:06.92,0:49:10.99,cn,,0000,0000,0000,,却克船长和麦盖医生
+Dialogue: 0,0:49:11.16,0:49:17.40,cn,,0000,0000,0000,,法庭决定判你们死刑
+Dialogue: 0,0:49:24.51,0:49:29.28,cn,,0000,0000,0000,,这是法庭的裁决
+Dialogue: 0,0:49:29.45,0:49:33.14,cn,,0000,0000,0000,,没有缓刑 不能假释
+Dialogue: 0,0:49:33.32,0:49:39.26,cn,,0000,0000,0000,,你们要被放逐到劳改星球
+Dialogue: 0,0:49:39.42,0:49:43.76,cn,,0000,0000,0000,,鲁拉宾迪的矿场
+Dialogue: 0,0:49:43.93,0:49:49.37,cn,,0000,0000,0000,,在那里度过残生
+Dialogue: 0,0:49:57.11,0:49:59.37,cn,,0000,0000,0000,,鲁拉宾迪
+Dialogue: 0,0:50:01.51,0:50:05.85,cn,,0000,0000,0000,,银河系中的外星人坟墓
+Dialogue: 0,0:50:06.02,0:50:09.38,cn,,0000,0000,0000,,杀了他更好 一了百了
+Dialogue: 0,0:50:30.07,0:50:34.98,cn,,0000,0000,0000,,请重播发炮镜头
+Dialogue: 0,0:50:39.85,0:50:41.91,cn,,0000,0000,0000,,停
+Dialogue: 0,0:50:42.52,0:50:46.58,cn,,0000,0000,0000,,这是企业号 是我们发炮
+Dialogue: 0,0:50:46.76,0:50:52.42,cn,,0000,0000,0000,,不可能 全部炮弹还在
+Dialogue: 0,0:50:53.70,0:50:55.43,cn,,0000,0000,0000,,我的祖先说过
+Dialogue: 0,0:50:55.60,0:51:01.50,cn,,0000,0000,0000,,减去不可能 剩下的就是真理
+Dialogue: 0,0:51:01.67,0:51:03.87,cn,,0000,0000,0000,,什麽意思？
+Dialogue: 0,0:51:04.04,0:51:09.21,cn,,0000,0000,0000,,我们没有发炮 但其他人有
+Dialogue: 0,0:51:09.38,0:51:13.34,cn,,0000,0000,0000,,他们不会向自己开火当时又无其他船
+Dialogue: 0,0:51:13.52,0:51:17.32,cn,,0000,0000,0000,,中子曾经激增不是我们发出的
+Dialogue: 0,0:51:17.49,0:51:22.43,cn,,0000,0000,0000,,促由另一艘船发出
+Dialogue: 0,0:51:22.59,0:51:25.86,cn,,0000,0000,0000,,卡龙诺斯一号？太远了
+Dialogue: 0,0:51:26.03,0:51:30.43,cn,,0000,0000,0000,,很接近我们 可能在我们下面
+Dialogue: 0,0:51:30.60,0:51:35.87,cn,,0000,0000,0000,,如果下面有船 他们定会看见
+Dialogue: 0,0:51:37.17,0:51:39.40,cn,,0000,0000,0000,,会吗？
+Dialogue: 0,0:51:41.78,0:51:46.65,cn,,0000,0000,0000,,猛禽号？猛禽号
+Dialogue: 0,0:51:48.29,0:51:52.55,cn,,0000,0000,0000,,隐了形？隐形怎能开火
+Dialogue: 0,0:51:52.72,0:51:56.25,cn,,0000,0000,0000,,正常情况下是不可能
+Dialogue: 0,0:51:56.43,0:52:00.56,cn,,0000,0000,0000,,但此事很不寻常 或许有可能
+Dialogue: 0,0:52:01.30,0:52:04.23,cn,,0000,0000,0000,,我们要通知司令 通知什麽？
+Dialogue: 0,0:52:04.40,0:52:09.10,cn,,0000,0000,0000,,有新隐形武器？他们一定说我们疯了
+Dialogue: 0,0:52:09.27,0:52:14.04,cn,,0000,0000,0000,,说我们为了救船长什麽也敢说
+Dialogue: 0,0:52:14.21,0:52:17.44,cn,,0000,0000,0000,,他们说得对 我们没有证据
+Dialogue: 0,0:52:17.62,0:52:20.85,cn,,0000,0000,0000,,只有切合现实的理论
+Dialogue: 0,0:52:21.02,0:52:25.92,cn,,0000,0000,0000,,他们为何要杀自己的总理？
+Dialogue: 0,0:52:26.09,0:52:27.99,cn,,0000,0000,0000,,真是
+Dialogue: 0,0:52:28.16,0:52:32.29,cn,,0000,0000,0000,,要彻底搜索这艘船
+Dialogue: 0,0:52:32.46,0:52:36.66,cn,,0000,0000,0000,,我不明白 如果有船在下面
+Dialogue: 0,0:52:36.83,0:52:41.13,cn,,0000,0000,0000,,炮弹不会从这里发出
+Dialogue: 0,0:52:41.31,0:52:44.64,cn,,0000,0000,0000,,你忘了一件事
+Dialogue: 0,0:52:44.81,0:52:48.87,cn,,0000,0000,0000,,资料库显示我们发了炮
+Dialogue: 0,0:52:49.05,0:52:51.24,cn,,0000,0000,0000,,凶手应该在这里
+Dialogue: 0,0:52:51.42,0:52:55.91,cn,,0000,0000,0000,,改动资料库的人也在这里
+Dialogue: 0,0:52:56.09,0:53:00.72,cn,,0000,0000,0000,,我们要在此搜寻
+Dialogue: 0,0:53:00.89,0:53:05.45,cn,,0000,0000,0000,,搜寻什麽？你认为呢？
+Dialogue: 0,0:53:07.03,0:53:09.26,cn,,0000,0000,0000,,两双引力靴
+Dialogue: 0,0:54:15.00,0:54:18.56,cn,,0000,0000,0000,,这里就是劳改星球鲁拉宾迪
+Dialogue: 0,0:54:18.73,0:54:26.04,cn,,0000,0000,0000,,没有监狱  守卫塔  电子边界
+Dialogue: 0,0:54:26.94,0:54:30.64,cn,,0000,0000,0000,,只有磁力罩
+Dialogue: 0,0:54:30.81,0:54:36.15,cn,,0000,0000,0000,,若有犯错 刑罚是逐上地面
+Dialogue: 0,0:54:36.98,0:54:41.92,cn,,0000,0000,0000,,没有人能在地面生存
+Dialogue: 0,0:54:45.56,0:54:49.12,cn,,0000,0000,0000,,做好点 待遇会好点
+Dialogue: 0,0:54:50.20,0:54:55.07,cn,,0000,0000,0000,,做得不好 就会死
+Dialogue: 0,0:56:20.65,0:56:22.75,cn,,0000,0000,0000,,天
+Dialogue: 0,0:56:27.33,0:56:31.26,cn,,0000,0000,0000,,我们没有翻译员
+Dialogue: 0,0:56:32.63,0:56:34.50,cn,,0000,0000,0000,,什麽？
+Dialogue: 0,0:56:38.84,0:56:42.00,cn,,0000,0000,0000,,他有话想说
+Dialogue: 0,0:56:46.68,0:56:49.65,cn,,0000,0000,0000,,如果这是你的范围 我们会走
+Dialogue: 0,0:56:49.82,0:56:52.65,cn,,0000,0000,0000,,他要你服从外星人公会
+Dialogue: 0,0:56:52.82,0:56:55.08,cn,,0000,0000,0000,,没问题交出你的外套
+Dialogue: 0,0:56:55.26,0:56:57.28,cn,,0000,0000,0000,,恐怕不称身
+Dialogue: 0,0:57:12.87,0:57:17.17,cn,,0000,0000,0000,,谢谢 这有助你保暖
+Dialogue: 0,0:57:18.41,0:57:24.44,cn,,0000,0000,0000,,我是马蒂亚 我知你们是谁 你怎知道？
+Dialogue: 0,0:57:24.62,0:57:26.95,cn,,0000,0000,0000,,你们暗杀总理
+Dialogue: 0,0:57:27.12,0:57:30.89,cn,,0000,0000,0000,,我们没有杀高冈 当然没有
+Dialogue: 0,0:57:31.06,0:57:34.32,cn,,0000,0000,0000,,但判你死刑有奖赏 有道理
+Dialogue: 0,0:57:35.13,0:57:36.99,cn,,0000,0000,0000,,我们被诬陷
+Dialogue: 0,0:57:37.16,0:57:40.46,cn,,0000,0000,0000,,有人不想你们碍事
+Dialogue: 0,0:57:47.94,0:57:49.53,cn,,0000,0000,0000,,有何进展？没有
+Dialogue: 0,0:57:49.71,0:57:55.01,cn,,0000,0000,0000,,有叁百人展开搜索但凶手也可能在其中
+Dialogue: 0,0:57:55.18,0:57:58.64,cn,,0000,0000,0000,,磁靴肯定己丢掉了
+Dialogue: 0,0:57:58.82,0:58:01.75,cn,,0000,0000,0000,,靴子会否留在高冈的船上
+Dialogue: 0,0:58:01.92,0:58:07.12,cn,,0000,0000,0000,,他们离开时引力还未恢复
+Dialogue: 0,0:58:07.29,0:58:11.73,cn,,0000,0000,0000,,没有磁靴就会浮起
+Dialogue: 0,0:58:11.90,0:58:14.33,cn,,0000,0000,0000,,何不直接把它化掉？
+Dialogue: 0,0:58:17.37,0:58:19.34,cn,,0000,0000,0000,,这样？
+Dialogue: 0,0:58:25.68,0:58:32.11,cn,,0000,0000,0000,,不能未经许可在船上开死光枪
+Dialogue: 0,0:58:33.45,0:58:37.62,cn,,0000,0000,0000,,可能他们回来时扔掉靴子
+Dialogue: 0,0:58:37.79,0:58:40.39,cn,,0000,0000,0000,,我正搜寻垃圾堆
+Dialogue: 0,0:58:40.56,0:58:46.63,cn,,0000,0000,0000,,我猜凶手把靴挂在颈上
+Dialogue: 0,0:58:46.80,0:58:51.74,cn,,0000,0000,0000,,他们不能不穿靴离去也不能抛出窗外
+Dialogue: 0,0:58:51.91,0:58:53.87,cn,,0000,0000,0000,,靴子一定在这里某处
+Dialogue: 0,0:58:54.04,0:59:00.45,cn,,0000,0000,0000,,有人开枪吗？没事
+Dialogue: 0,0:59:00.61,0:59:05.02,cn,,0000,0000,0000,,星际舰队催促我们回码头
+Dialogue: 0,0:59:05.19,0:59:08.42,cn,,0000,0000,0000,,谁发射…史葛
+Dialogue: 0,0:59:08.59,0:59:13.08,cn,,0000,0000,0000,,听说船索坏了 要修理多久？
+Dialogue: 0,0:59:13.26,0:59:16.16,cn,,0000,0000,0000,,船索那有问题？
+Dialogue: 0,0:59:16.33,0:59:22.60,cn,,0000,0000,0000,,若我们回去 凶手会丢掉靴子
+Dialogue: 0,0:59:22.77,0:59:26.87,cn,,0000,0000,0000,,我们无缘再见船长和麦盖了
+Dialogue: 0,0:59:27.04,0:59:29.44,cn,,0000,0000,0000,,需要几星期 谢谢
+Dialogue: 0,0:59:29.61,0:59:33.67,cn,,0000,0000,0000,,通知舰队我们的船索失灵
+Dialogue: 0,0:59:33.85,0:59:36.82,cn,,0000,0000,0000,,这是谎话？只是差错
+Dialogue: 0,0:59:37.38,0:59:41.79,cn,,0000,0000,0000,,我们跟船长和麦盖完全失去联络
+Dialogue: 0,0:59:41.96,0:59:45.98,cn,,0000,0000,0000,,现在他们被磁罩包围
+Dialogue: 0,0:59:46.16,0:59:51.93,cn,,0000,0000,0000,,我猜船长一定在计划逃狱
+Dialogue: 0,1:00:14.72,1:00:17.19,cn,,0000,0000,0000,,却克 你触怒了他
+Dialogue: 0,1:01:10.21,1:01:12.30,cn,,0000,0000,0000,,你没事吧？没事
+Dialogue: 0,1:01:12.48,1:01:16.61,cn,,0000,0000,0000,,你现在受到尊重了 幸好那东西有膝盖
+Dialogue: 0,1:01:16.78,1:01:18.27,cn,,0000,0000,0000,,那不是他的膝盖
+Dialogue: 0,1:01:19.72,1:01:23.55,cn,,0000,0000,0000,,每个人的生殖部位都不一样
+Dialogue: 0,1:01:23.72,1:01:25.28,cn,,0000,0000,0000,,你是说…
+Dialogue: 0,1:01:27.06,1:01:32.23,cn,,0000,0000,0000,,快去解释我们无意冒犯
+Dialogue: 0,1:01:32.40,1:01:36.27,cn,,0000,0000,0000,,他可能很生气
+Dialogue: 0,1:01:36.44,1:01:43.07,cn,,0000,0000,0000,,不论人们做什麽 也不要多问
+Dialogue: 0,1:01:46.25,1:01:50.08,cn,,0000,0000,0000,,你想逃出去吗？一定有出路的
+Dialogue: 0,1:02:10.87,1:02:14.27,cn,,0000,0000,0000,,退休前叁个月就完蛋了
+Dialogue: 0,1:02:14.44,1:02:18.61,cn,,0000,0000,0000,,我们还未完蛋 你自圆其说
+Dialogue: 0,1:02:18.78,1:02:22.37,cn,,0000,0000,0000,,迟早会完的
+Dialogue: 0,1:02:22.55,1:02:28.01,cn,,0000,0000,0000,,你害怕将来吗？
+Dialogue: 0,1:02:28.19,1:02:32.99,cn,,0000,0000,0000,,这正是我一直想说的事
+Dialogue: 0,1:02:33.16,1:02:38.66,cn,,0000,0000,0000,,我不是指这个将来 是什麽？选择题？
+Dialogue: 0,1:02:38.83,1:02:44.29,cn,,0000,0000,0000,,有些人害怕将会发生的事
+Dialogue: 0,1:02:45.87,1:02:50.64,cn,,0000,0000,0000,,我很怕你怕什麽？
+Dialogue: 0,1:02:56.92,1:02:59.28,cn,,0000,0000,0000,,再没有中立区
+Dialogue: 0,1:03:01.09,1:03:03.99,cn,,0000,0000,0000,,我一向憎恨克林冈人
+Dialogue: 0,1:03:07.19,1:03:11.06,cn,,0000,0000,0000,,我从不信高冈所言
+Dialogue: 0,1:03:14.00,1:03:19.74,cn,,0000,0000,0000,,史波克 对了 别自贵 我们同样难受
+Dialogue: 0,1:03:19.91,1:03:24.00,cn,,0000,0000,0000,,不 有人难受得多
+Dialogue: 0,1:03:26.11,1:03:28.74,cn,,0000,0000,0000,,我开始明白了
+Dialogue: 0,1:03:28.92,1:03:32.32,cn,,0000,0000,0000,,若你没有好主意现在是时候…
+Dialogue: 0,1:03:32.49,1:03:37.05,cn,,0000,0000,0000,,时间是问题 我们帮不上忙
+Dialogue: 0,1:03:37.22,1:03:39.66,cn,,0000,0000,0000,,你听到吗？和谈恢复了
+Dialogue: 0,1:03:39.83,1:03:44.02,cn,,0000,0000,0000,,杀高冈的凶手会再进行暗杀
+Dialogue: 0,1:03:46.50,1:03:48.76,cn,,0000,0000,0000,,除非我们逃离这里
+Dialogue: 0,1:04:00.41,1:04:05.75,cn,,0000,0000,0000,,是我 没有人曾成功逃狱
+Dialogue: 0,1:04:05.92,1:04:09.32,cn,,0000,0000,0000,,除了我们 有可能的
+Dialogue: 0,1:04:09.49,1:04:11.68,cn,,0000,0000,0000,,我知道如何逃出罩外
+Dialogue: 0,1:04:11.86,1:04:15.69,cn,,0000,0000,0000,,我们要怎样做？出去其实很容易
+Dialogue: 0,1:04:15.86,1:04:20.27,cn,,0000,0000,0000,,但要在冻僵前逃出生天
+Dialogue: 0,1:04:22.00,1:04:26.23,cn,,0000,0000,0000,,没问题 我需要你帮忙
+Dialogue: 0,1:04:26.41,1:04:30.14,cn,,0000,0000,0000,,你是最有潜质的候选人
+Dialogue: 0,1:04:30.61,1:04:32.94,cn,,0000,0000,0000,,什麽候选人？
+Dialogue: 0,1:04:47.16,1:04:51.86,cn,,0000,0000,0000,,早上采矿时在7号电梯见
+Dialogue: 0,1:04:52.03,1:04:54.73,cn,,0000,0000,0000,,别令我失望
+Dialogue: 0,1:04:56.64,1:05:00.30,cn,,0000,0000,0000,,你怎麽了？还认为我们会完蛋吗
+Dialogue: 0,1:05:00.47,1:05:02.53,cn,,0000,0000,0000,,从未如此担心过
+Dialogue: 0,1:05:07.41,1:05:09.18,cn,,0000,0000,0000,,吵醒你真对不起
+Dialogue: 0,1:05:09.35,1:05:15.15,cn,,0000,0000,0000,,星际舰队想知道企业号的位置
+Dialogue: 0,1:05:17.06,1:05:18.52,cn,,0000,0000,0000,,什麽？
+Dialogue: 0,1:05:18.69,1:05:23.10,cn,,0000,0000,0000,,他们拒绝确认回码头的信号
+Dialogue: 0,1:05:26.83,1:05:32.10,cn,,0000,0000,0000,,回覆说我们不知企业号的位置
+Dialogue: 0,1:05:32.27,1:05:36.71,cn,,0000,0000,0000,,船长？你听觉有问题吗？
+Dialogue: 0,1:05:36.88,1:05:39.11,cn,,0000,0000,0000,,没有
+Dialogue: 0,1:06:22.46,1:06:24.52,cn,,0000,0000,0000,,克林冈人的血
+Dialogue: 0,1:06:24.69,1:06:29.69,cn,,0000,0000,0000,,肯定是他们把血迹踩了进来
+Dialogue: 0,1:06:29.86,1:06:33.03,cn,,0000,0000,0000,,这是我们的第一证据
+Dialogue: 0,1:06:33.20,1:06:35.36,cn,,0000,0000,0000,,要通知星际舰队吗？
+Dialogue: 0,1:06:35.54,1:06:39.06,cn,,0000,0000,0000,,现在连制服也要搜查
+Dialogue: 0,1:06:39.24,1:06:41.71,cn,,0000,0000,0000,,所有制服？
+Dialogue: 0,1:07:00.59,1:07:03.39,cn,,0000,0000,0000,,这里没有
+Dialogue: 0,1:07:03.56,1:07:06.26,cn,,0000,0000,0000,,请让开
+Dialogue: 0,1:07:18.68,1:07:20.81,cn,,0000,0000,0000,,船长…
+Dialogue: 0,1:07:51.68,1:07:55.48,cn,,0000,0000,0000,,她欺骗我们 你没有被骗
+Dialogue: 0,1:07:55.65,1:07:59.59,cn,,0000,0000,0000,,在第一层离去 跟大队到矿场
+Dialogue: 0,1:07:59.75,1:08:02.31,cn,,0000,0000,0000,,他们不载女孩
+Dialogue: 0,1:08:12.67,1:08:18.23,cn,,0000,0000,0000,,你是迪斯？对 什麽事
+Dialogue: 0,1:08:18.41,1:08:23.93,cn,,0000,0000,0000,,听过灰姑娘的故事吗？
+Dialogue: 0,1:08:25.48,1:08:29.28,cn,,0000,0000,0000,,试试是否合穿
+Dialogue: 0,1:08:30.72,1:08:31.95,cn,,0000,0000,0000,,查哥夫…
+Dialogue: 0,1:08:47.80,1:08:49.77,cn,,0000,0000,0000,,看我的
+Dialogue: 0,1:08:51.77,1:08:56.47,cn,,0000,0000,0000,,这是什麽生物？昨晚你们… 别提了
+Dialogue: 0,1:08:59.35,1:09:00.90,cn,,0000,0000,0000,,进来
+Dialogue: 0,1:10:11.79,1:10:14.15,cn,,0000,0000,0000,,快 我们时间无多
+Dialogue: 0,1:10:31.87,1:10:33.70,cn,,0000,0000,0000,,快点
+Dialogue: 0,1:10:37.24,1:10:39.40,cn,,0000,0000,0000,,上面
+Dialogue: 0,1:10:41.05,1:10:43.02,cn,,0000,0000,0000,,来 爬上来
+Dialogue: 0,1:10:54.06,1:10:56.65,cn,,0000,0000,0000,,穿上这些 快
+Dialogue: 0,1:11:18.08,1:11:20.21,cn,,0000,0000,0000,,跟我来
+Dialogue: 0,1:12:36.56,1:12:39.46,cn,,0000,0000,0000,,他们在这里 他们快逃出来了
+Dialogue: 0,1:12:39.63,1:12:45.26,cn,,0000,0000,0000,,史葛 开动引擎查哥夫 驶往鲁拉宾迪
+Dialogue: 0,1:12:45.44,1:12:49.47,cn,,0000,0000,0000,,鲁拉宾迪在克林冈边境内深处
+Dialogue: 0,1:12:49.64,1:12:52.11,cn,,0000,0000,0000,,若我们发现… 对
+Dialogue: 0,1:12:52.28,1:12:56.74,cn,,0000,0000,0000,,在船长和麦盖冻死前
+Dialogue: 0,1:12:56.92,1:12:59.61,cn,,0000,0000,0000,,我们要运用掩眼法和勇气
+Dialogue: 0,1:13:07.06,1:13:10.69,cn,,0000,0000,0000,,别理我 我完了 不会的
+Dialogue: 0,1:13:10.86,1:13:14.99,cn,,0000,0000,0000,,我身上有追踪器
+Dialogue: 0,1:13:15.17,1:13:19.26,cn,,0000,0000,0000,,史波克 在我们上船前贴上
+Dialogue: 0,1:13:19.44,1:13:22.07,cn,,0000,0000,0000,,这个狡猾的维冈人
+Dialogue: 0,1:13:22.24,1:13:25.41,cn,,0000,0000,0000,,来 我们安全了
+Dialogue: 0,1:13:26.45,1:13:31.08,cn,,0000,0000,0000,,我们在罩外他们可追踪到我们
+Dialogue: 0,1:13:31.25,1:13:33.31,cn,,0000,0000,0000,,如果他们在找我们的话
+Dialogue: 0,1:14:20.87,1:14:24.96,cn,,0000,0000,0000,,我们要回应 需要翻译
+Dialogue: 0,1:14:58.47,1:15:00.94,cn,,0000,0000,0000,,你们往什麽目的地？
+Dialogue: 0,1:15:53.06,1:15:56.59,cn,,0000,0000,0000,,可否解释一下你的把戏？
+Dialogue: 0,1:15:56.76,1:16:01.63,cn,,0000,0000,0000,,我是金密莱人 我听过这名字
+Dialogue: 0,1:16:01.80,1:16:06.17,cn,,0000,0000,0000,,变形人 真神奇
+Dialogue: 0,1:16:06.34,1:16:09.00,cn,,0000,0000,0000,,船长 给女孩一个机会
+Dialogue: 0,1:16:11.11,1:16:13.24,cn,,0000,0000,0000,,很费劲的
+Dialogue: 0,1:16:13.78,1:16:15.84,cn,,0000,0000,0000,,我同意
+Dialogue: 0,1:16:16.02,1:16:18.61,cn,,0000,0000,0000,,如果我错了 请告诉我
+Dialogue: 0,1:16:18.79,1:16:22.41,cn,,0000,0000,0000,,那一个才是真正的你？
+Dialogue: 0,1:16:22.59,1:16:26.65,cn,,0000,0000,0000,,我采用了吸引人的形象
+Dialogue: 0,1:16:32.63,1:16:37.16,cn,,0000,0000,0000,,我们己逃脱 到你了
+Dialogue: 0,1:16:37.34,1:16:39.13,cn,,0000,0000,0000,,这个…
+Dialogue: 0,1:16:40.61,1:16:42.30,cn,,0000,0000,0000,,你疯了吗？
+Dialogue: 0,1:16:42.48,1:16:45.71,cn,,0000,0000,0000,,她不需我们帮助你的便服从何来的？
+Dialogue: 0,1:16:45.88,1:16:49.08,cn,,0000,0000,0000,,那火光不是监中物件
+Dialogue: 0,1:16:49.25,1:16:52.95,cn,,0000,0000,0000,,她在通风报信 换取报酬
+Dialogue: 0,1:16:53.12,1:16:57.72,cn,,0000,0000,0000,,你竟然这样对我
+Dialogue: 0,1:16:57.89,1:17:00.98,cn,,0000,0000,0000,,这不可能是意外
+Dialogue: 0,1:17:01.16,1:17:05.96,cn,,0000,0000,0000,,次意外没有问题 两次会惹人怀疑
+Dialogue: 0,1:17:06.13,1:17:11.57,cn,,0000,0000,0000,,逃亡时被杀 双方也可信
+Dialogue: 0,1:17:15.41,1:17:17.14,cn,,0000,0000,0000,,意外吧
+Dialogue: 0,1:17:28.92,1:17:32.15,cn,,0000,0000,0000,,你的朋友来迟了 他们正赶来
+Dialogue: 0,1:17:35.23,1:17:38.69,cn,,0000,0000,0000,,我竟然吻过你 你一定期待己久
+Dialogue: 0,1:17:55.08,1:17:57.31,cn,,0000,0000,0000,,你是时候改变形象了
+Dialogue: 0,1:17:57.48,1:17:59.21,cn,,0000,0000,0000,,我喜欢这个形象
+Dialogue: 0,1:18:08.03,1:18:11.72,cn,,0000,0000,0000,,好了…
+Dialogue: 0,1:18:19.21,1:18:21.97,cn,,0000,0000,0000,,你为何来得这麽晚？
+Dialogue: 0,1:18:22.14,1:18:24.63,cn,,0000,0000,0000,,杀了他 他才是真身
+Dialogue: 0,1:18:24.81,1:18:26.71,cn,,0000,0000,0000,,不是我 是他
+Dialogue: 0,1:18:29.02,1:18:32.64,cn,,0000,0000,0000,,没有证人逃亡时被杀
+Dialogue: 0,1:18:33.39,1:18:36.41,cn,,0000,0000,0000,,真聪明这是经典
+Dialogue: 0,1:18:36.59,1:18:40.55,cn,,0000,0000,0000,,这是他们的意思 谁？谁想杀我们？
+Dialogue: 0,1:18:40.73,1:18:44.92,cn,,0000,0000,0000,,反正你要死 告诉你又何妨
+Dialogue: 0,1:18:45.10,1:18:47.12,cn,,0000,0000,0000,,他是…
+Dialogue: 0,1:18:53.11,1:18:59.64,cn,,0000,0000,0000,,真讨厌…你为何不多等两秒？
+Dialogue: 0,1:18:59.81,1:19:01.78,cn,,0000,0000,0000,,他正交代事情始末
+Dialogue: 0,1:19:01.95,1:19:04.68,cn,,0000,0000,0000,,你想回去？绝对不
+Dialogue: 0,1:19:07.49,1:19:10.01,cn,,0000,0000,0000,,这是驾驶台 我们仍在克林冈领空
+Dialogue: 0,1:19:10.19,1:19:16.79,cn,,0000,0000,0000,,9号甲板 维持战斗岗位
+Dialogue: 0,1:20:26.63,1:20:29.62,cn,,0000,0000,0000,,克林冈人有艘猛禽号可以隐形发炮
+Dialogue: 0,1:20:29.80,1:20:33.03,cn,,0000,0000,0000,,它向高冈的船发炮 就是它
+Dialogue: 0,1:20:33.21,1:20:37.57,cn,,0000,0000,0000,,凶手就在这艘船上
+Dialogue: 0,1:20:37.74,1:20:40.97,cn,,0000,0000,0000,,和谈开始了没有？不知道 地点保密
+Dialogue: 0,1:20:41.15,1:20:44.17,cn,,0000,0000,0000,,一定有事船长 史波克
+Dialogue: 0,1:20:44.35,1:20:47.72,cn,,0000,0000,0000,,我发现染有克林冈人血迹的制服
+Dialogue: 0,1:21:02.87,1:21:08.81,cn,,0000,0000,0000,,制服属於这两个人卜奇和沉努
+Dialogue: 0,1:21:09.34,1:21:13.07,cn,,0000,0000,0000,,有人近距离向他们开枪
+Dialogue: 0,1:21:13.25,1:21:16.91,cn,,0000,0000,0000,,暗杀规例第一条:杀死刺客
+Dialogue: 0,1:21:17.08,1:21:22.04,cn,,0000,0000,0000,,我们退回起点了 我想和你谈谈
+Dialogue: 0,1:21:23.36,1:21:28.59,cn,,0000,0000,0000,,他们为何没有化掉 会惊动警钟
+Dialogue: 0,1:21:35.97,1:21:37.96,cn,,0000,0000,0000,,这也可行
+Dialogue: 0,1:21:38.14,1:21:42.01,cn,,0000,0000,0000,,请注意…
+Dialogue: 0,1:21:42.17,1:21:46.34,cn,,0000,0000,0000,,速记员请到病房 蓝色急事
+Dialogue: 0,1:21:46.51,1:21:50.35,cn,,0000,0000,0000,,急需录取卜奇和沉努的口供
+Dialogue: 0,1:21:50.52,1:21:54.92,cn,,0000,0000,0000,,速记员请到病房 蓝色急事
+Dialogue: 0,1:21:55.09,1:21:57.32,cn,,0000,0000,0000,,要录取口供
+Dialogue: 0,1:21:57.49,1:22:02.62,cn,,0000,0000,0000,,录取卜奇和沉努的口供
+Dialogue: 0,1:22:40.77,1:22:42.29,cn,,0000,0000,0000,,你应该开枪
+Dialogue: 0,1:22:46.24,1:22:50.61,cn,,0000,0000,0000,,你有逻辑的话 就应该开枪
+Dialogue: 0,1:22:54.91,1:22:57.75,cn,,0000,0000,0000,,我不想的 你的目的毫无意义
+Dialogue: 0,1:22:57.92,1:23:01.08,cn,,0000,0000,0000,,你的选择已经得到
+Dialogue: 0,1:23:01.25,1:23:03.05,cn,,0000,0000,0000,,我不希望是你
+Dialogue: 0,1:23:10.80,1:23:13.32,cn,,0000,0000,0000,,手术完了
+Dialogue: 0,1:23:18.77,1:23:22.37,cn,,0000,0000,0000,,我没有发炮 你没有证据
+Dialogue: 0,1:23:22.54,1:23:27.67,cn,,0000,0000,0000,,审讯时 我的日志成为证物
+Dialogue: 0,1:23:27.85,1:23:31.91,cn,,0000,0000,0000,,你一直在我房外探听
+Dialogue: 0,1:23:33.39,1:23:36.25,cn,,0000,0000,0000,,你知道？
+Dialogue: 0,1:23:36.42,1:23:39.86,cn,,0000,0000,0000,,我想告诉你 但你不听
+Dialogue: 0,1:23:40.03,1:23:44.09,cn,,0000,0000,0000,,当晚没有人留心听
+Dialogue: 0,1:23:44.26,1:23:47.79,cn,,0000,0000,0000,,我曾叫你要有信心
+Dialogue: 0,1:23:47.97,1:23:52.87,cn,,0000,0000,0000,,你们全部也背叛了星盟
+Dialogue: 0,1:23:53.04,1:23:56.37,cn,,0000,0000,0000,,你认为自己在做什麽 拯救星际舰队
+Dialogue: 0,1:23:56.54,1:24:03.38,cn,,0000,0000,0000,,克林冈人不可靠船长 你说过的
+Dialogue: 0,1:24:03.55,1:24:07.58,cn,,0000,0000,0000,,他们杀了你的儿子你不想高冈死吗？
+Dialogue: 0,1:24:07.75,1:24:12.38,cn,,0000,0000,0000,,你说过 让他们自生自灭
+Dialogue: 0,1:24:14.16,1:24:16.22,cn,,0000,0000,0000,,你说对了
+Dialogue: 0,1:24:16.40,1:24:20.42,cn,,0000,0000,0000,,他们与我们串通暗杀自己的总理
+Dialogue: 0,1:24:20.60,1:24:22.97,cn,,0000,0000,0000,,他们怎会可信？
+Dialogue: 0,1:24:23.14,1:24:26.97,cn,,0000,0000,0000,,克林冈人与星盟成员串通
+Dialogue: 0,1:24:27.14,1:24:31.47,cn,,0000,0000,0000,,谁是[我们]？不爱和平的人
+Dialogue: 0,1:24:31.64,1:24:33.24,cn,,0000,0000,0000,,说出他们的名字
+Dialogue: 0,1:24:33.41,1:24:38.87,cn,,0000,0000,0000,,我的同党会干扰你们的通讯
+Dialogue: 0,1:24:39.05,1:24:44.46,cn,,0000,0000,0000,,说出他们的名字 我记不起
+Dialogue: 0,1:24:46.63,1:24:49.56,cn,,0000,0000,0000,,这是谎话？
+Dialogue: 0,1:24:49.73,1:24:51.89,cn,,0000,0000,0000,,只是选择
+Dialogue: 0,1:24:55.77,1:24:58.24,cn,,0000,0000,0000,,史波克
+Dialogue: 0,1:25:41.31,1:25:45.31,cn,,0000,0000,0000,,卡上将
+Dialogue: 0,1:25:45.48,1:25:48.01,cn,,0000,0000,0000,,来自星际舰队？
+Dialogue: 0,1:25:55.09,1:25:57.62,cn,,0000,0000,0000,,还有谁？
+Dialogue: 0,1:26:01.03,1:26:05.27,cn,,0000,0000,0000,,张上将
+Dialogue: 0,1:26:11.44,1:26:18.98,cn,,0000,0000,0000,,还有呢？罗武伦大使及其他人
+Dialogue: 0,1:26:22.82,1:26:25.35,cn,,0000,0000,0000,,和谈在哪里举行？
+Dialogue: 0,1:26:27.23,1:26:29.69,cn,,0000,0000,0000,,和谈在哪里举行？
+Dialogue: 0,1:27:03.46,1:27:05.93,cn,,0000,0000,0000,,她不知道
+Dialogue: 0,1:27:07.57,1:27:08.93,cn,,0000,0000,0000,,那我们死了
+Dialogue: 0,1:27:19.71,1:27:24.71,cn,,0000,0000,0000,,我己死过一次 联络上进号
+Dialogue: 0,1:27:24.88,1:27:28.98,cn,,0000,0000,0000,,他们会提供合作 我己联络了他
+Dialogue: 0,1:27:29.15,1:27:32.09,cn,,0000,0000,0000,,却克船长 准备 苏路
+Dialogue: 0,1:27:32.26,1:27:36.85,cn,,0000,0000,0000,,你知否我们通话是违反规条？
+Dialogue: 0,1:27:37.03,1:27:39.76,cn,,0000,0000,0000,,对不起 我听不清楚
+Dialogue: 0,1:27:39.93,1:27:43.70,cn,,0000,0000,0000,,和谈在哪里举行？
+Dialogue: 0,1:27:43.87,1:27:45.50,cn,,0000,0000,0000,,他们会发动第二次暗杀
+Dialogue: 0,1:27:45.67,1:27:50.70,cn,,0000,0000,0000,,杰图马营 罗武伦边境附近
+Dialogue: 0,1:27:50.88,1:27:53.61,cn,,0000,0000,0000,,我会用密码信号发给你
+Dialogue: 0,1:27:53.78,1:27:56.08,cn,,0000,0000,0000,,恐怕这还不够
+Dialogue: 0,1:27:56.25,1:28:00.15,cn,,0000,0000,0000,,我们被猛禽号监视它可以隐形发炮
+Dialogue: 0,1:28:00.32,1:28:02.69,cn,,0000,0000,0000,,不是吧
+Dialogue: 0,1:28:02.86,1:28:07.62,cn,,0000,0000,0000,,有多少人在那里？
+Dialogue: 0,1:28:07.79,1:28:10.76,cn,,0000,0000,0000,,只有样本你听到吗？
+Dialogue: 0,1:28:10.93,1:28:14.49,cn,,0000,0000,0000,,我现在起航 但我们郧脍一区
+Dialogue: 0,1:28:14.67,1:28:17.66,cn,,0000,0000,0000,,恐怕赶不及到会场
+Dialogue: 0,1:28:17.84,1:28:22.86,cn,,0000,0000,0000,,会议何时开始？我收到的资料是今天
+Dialogue: 0,1:28:24.31,1:28:27.84,cn,,0000,0000,0000,,谢谢你 别客气
+Dialogue: 0,1:28:34.55,1:28:36.82,cn,,0000,0000,0000,,史波克 ？
+Dialogue: 0,1:28:36.99,1:28:39.22,cn,,0000,0000,0000,,不要开灯
+Dialogue: 0,1:28:46.00,1:28:50.49,cn,,0000,0000,0000,,你在忏悔？对
+Dialogue: 0,1:28:50.67,1:28:57.73,cn,,0000,0000,0000,,都怪我自视过高
+Dialogue: 0,1:28:57.91,1:29:01.35,cn,,0000,0000,0000,,你和麦盖差点没命
+Dialogue: 0,1:29:01.51,1:29:04.04,cn,,0000,0000,0000,,我们经验不够
+Dialogue: 0,1:29:04.22,1:29:08.95,cn,,0000,0000,0000,,你说为了和平 值得犯险
+Dialogue: 0,1:29:12.52,1:29:14.75,cn,,0000,0000,0000,,你有逻辑头脑
+Dialogue: 0,1:29:14.93,1:29:19.96,cn,,0000,0000,0000,,我则好管闲事
+Dialogue: 0,1:29:20.13,1:29:26.80,cn,,0000,0000,0000,,我们太激进 该学习中庸之道
+Dialogue: 0,1:29:30.58,1:29:33.37,cn,,0000,0000,0000,,我不能忘掉丧子之痛
+Dialogue: 0,1:29:33.55,1:29:38.28,cn,,0000,0000,0000,,她的出色表现令我偏爱
+Dialogue: 0,1:29:38.45,1:29:42.22,cn,,0000,0000,0000,,高冈死了我才知道自己十分偏激
+Dialogue: 0,1:29:50.53,1:29:52.33,cn,,0000,0000,0000,,是不是…
+Dialogue: 0,1:29:53.07,1:30:00.90,cn,,0000,0000,0000,,我们又老又不灵活
+Dialogue: 0,1:30:01.07,1:30:05.60,cn,,0000,0000,0000,,什麽也做不来了？
+Dialogue: 0,1:30:05.78,1:30:08.77,cn,,0000,0000,0000,,这是不是笑话？
+Dialogue: 0,1:30:10.05,1:30:14.45,cn,,0000,0000,0000,,这不是你的错 我有责任
+Dialogue: 0,1:30:15.32,1:30:20.62,cn,,0000,0000,0000,,只需为自己的行为负责 你在庭上不是这样说
+Dialogue: 0,1:30:20.79,1:30:23.09,cn,,0000,0000,0000,,身为船长 作为人…
+Dialogue: 0,1:30:23.26,1:30:26.66,cn,,0000,0000,0000,,你该知道我不是人
+Dialogue: 0,1:30:26.83,1:30:30.50,cn,,0000,0000,0000,,你知道吗？众生也是人
+Dialogue: 0,1:30:31.30,1:30:35.26,cn,,0000,0000,0000,,我觉得这句话很侮辱
+Dialogue: 0,1:30:35.44,1:30:37.14,cn,,0000,0000,0000,,来 我需要你
+Dialogue: 0,1:30:41.68,1:30:46.34,cn,,0000,0000,0000,,总理小姐 各位外交人员
+Dialogue: 0,1:30:47.35,1:30:50.34,cn,,0000,0000,0000,,各位来宾
+Dialogue: 0,1:30:50.52,1:30:53.89,cn,,0000,0000,0000,,星盟欢迎你们来到杰图马营
+Dialogue: 0,1:31:10.91,1:31:13.54,cn,,0000,0000,0000,,猛禽号一定在附近
+Dialogue: 0,1:31:13.71,1:31:18.62,cn,,0000,0000,0000,,如果它隐了形 唯有看辐射读数
+Dialogue: 0,1:31:18.78,1:31:23.31,cn,,0000,0000,0000,,我们录得辐射时 已经炸死了
+Dialogue: 0,1:31:26.29,1:31:28.59,cn,,0000,0000,0000,,2.06…
+Dialogue: 0,1:31:30.96,1:31:33.93,cn,,0000,0000,0000,,2.03…
+Dialogue: 0,1:31:34.10,1:31:39.59,cn,,0000,0000,0000,,可以起程了吗？还有两分钟 1.58
+Dialogue: 0,1:31:40.97,1:31:44.10,cn,,0000,0000,0000,,全速驶往杰图马营
+Dialogue: 0,1:31:52.68,1:31:58.02,cn,,0000,0000,0000,,我们有能力做一件事
+Dialogue: 0,1:31:58.19,1:32:03.09,cn,,0000,0000,0000,,不代表我们一定要去做
+Dialogue: 0,1:32:06.40,1:32:09.09,cn,,0000,0000,0000,,邬娜？没有异像
+Dialogue: 0,1:32:09.27,1:32:12.43,cn,,0000,0000,0000,,猛禽号可能正在无声航行
+Dialogue: 0,1:32:19.41,1:32:23.11,cn,,0000,0000,0000,,还有57秒到达运送器范围
+Dialogue: 0,1:32:23.28,1:32:26.81,cn,,0000,0000,0000,,运送器房 准备
+Dialogue: 0,1:32:29.09,1:32:31.28,cn,,0000,0000,0000,,53秒
+Dialogue: 0,1:32:35.09,1:32:37.49,cn,,0000,0000,0000,,48秒
+Dialogue: 0,1:32:41.97,1:32:44.23,cn,,0000,0000,0000,,44秒
+Dialogue: 0,1:32:46.14,1:32:49.63,cn,,0000,0000,0000,,却克 我看到你了
+Dialogue: 0,1:32:49.81,1:32:51.83,cn,,0000,0000,0000,,张上将
+Dialogue: 0,1:32:52.01,1:32:54.50,cn,,0000,0000,0000,,你看到我吗？
+Dialogue: 0,1:32:54.68,1:32:59.45,cn,,0000,0000,0000,,老实说 战士对战士
+Dialogue: 0,1:32:59.62,1:33:03.58,cn,,0000,0000,0000,,你喜欢这样的 是吗？
+Dialogue: 0,1:33:04.36,1:33:07.09,cn,,0000,0000,0000,,我们这里没有和平
+Dialogue: 0,1:33:07.26,1:33:12.53,cn,,0000,0000,0000,,好朋友 进攻又开始了
+Dialogue: 0,1:33:27.98,1:33:31.21,cn,,0000,0000,0000,,真有趣 回动引擎 退後
+Dialogue: 0,1:33:31.38,1:33:33.61,cn,,0000,0000,0000,,以1.5冲力退後
+Dialogue: 0,1:33:41.36,1:33:43.99,cn,,0000,0000,0000,,它在等什麽？
+Dialogue: 0,1:33:44.16,1:33:47.96,cn,,0000,0000,0000,,可能想知道我们为何退後
+Dialogue: 0,1:33:48.13,1:33:51.40,cn,,0000,0000,0000,,看我们是否侦察到它
+Dialogue: 0,1:33:55.61,1:33:57.37,cn,,0000,0000,0000,,来了
+Dialogue: 0,1:34:01.45,1:34:03.88,cn,,0000,0000,0000,,相通了吗？还未
+Dialogue: 0,1:34:04.05,1:34:05.57,cn,,0000,0000,0000,,快点
+Dialogue: 0,1:34:05.75,1:34:07.65,cn,,0000,0000,0000,,它会爆炸的 那就炸掉它
+Dialogue: 0,1:34:07.82,1:34:13.49,cn,,0000,0000,0000,,很多人也怀疑我父亲的动机
+Dialogue: 0,1:34:13.66,1:34:18.86,cn,,0000,0000,0000,,有人说他是空想家有人说他没有选择
+Dialogue: 0,1:34:19.03,1:34:24.66,cn,,0000,0000,0000,,如果普拉西斯不爆炸他不会有此空想
+Dialogue: 0,1:34:26.00,1:34:28.27,cn,,0000,0000,0000,,我们以自己的民族为荣
+Dialogue: 0,1:34:28.44,1:34:33.17,cn,,0000,0000,0000,,我们想继续感到自豪
+Dialogue: 0,1:34:42.69,1:34:47.78,cn,,0000,0000,0000,,启动後备电力 後备电路受到破坏
+Dialogue: 0,1:34:52.93,1:34:57.23,cn,,0000,0000,0000,,痒了可以不笑吗？刺伤了可以不流血吗
+Dialogue: 0,1:34:57.80,1:35:02.47,cn,,0000,0000,0000,,遭到欺负可以不报复吗？
+Dialogue: 0,1:35:02.64,1:35:04.13,cn,,0000,0000,0000,,气
+Dialogue: 0,1:35:05.88,1:35:10.68,cn,,0000,0000,0000,,船在冲力下要加气
+Dialogue: 0,1:35:10.85,1:35:16.38,cn,,0000,0000,0000,,要离子气
+Dialogue: 0,1:35:16.56,1:35:21.46,cn,,0000,0000,0000,,记录气体反常的设备呢？
+Dialogue: 0,1:35:23.53,1:35:25.76,cn,,0000,0000,0000,,那一定有排气管
+Dialogue: 0,1:35:25.93,1:35:30.30,cn,,0000,0000,0000,,医生 可否为飞弹做手术？
+Dialogue: 0,1:35:30.47,1:35:31.77,cn,,0000,0000,0000,,好
+Dialogue: 0,1:35:33.84,1:35:36.43,cn,,0000,0000,0000,,转右
+Dialogue: 0,1:35:37.38,1:35:41.87,cn,,0000,0000,0000,,我们建议在地球时间五十年内
+Dialogue: 0,1:35:42.05,1:35:45.51,cn,,0000,0000,0000,,撤走我们的居民
+Dialogue: 0,1:35:45.68,1:35:48.31,cn,,0000,0000,0000,,第一阶段:准备撤走…
+Dialogue: 0,1:35:58.43,1:36:03.80,cn,,0000,0000,0000,,我们受到猛击 防护罩受损
+Dialogue: 0,1:36:10.28,1:36:15.44,cn,,0000,0000,0000,,开防护罩 等待他们进攻
+Dialogue: 0,1:36:22.45,1:36:24.92,cn,,0000,0000,0000,,游戏还未结束
+Dialogue: 0,1:36:32.16,1:36:37.07,cn,,0000,0000,0000,,上进号被击中了 游戏结束了
+Dialogue: 0,1:36:45.44,1:36:51.04,cn,,0000,0000,0000,,大混乱 我要发动战争
+Dialogue: 0,1:36:51.22,1:36:55.15,cn,,0000,0000,0000,,我的飞弹呢 不用操心
+Dialogue: 0,1:36:57.56,1:37:00.39,cn,,0000,0000,0000,,防护罩塌下了
+Dialogue: 0,1:37:01.59,1:37:03.69,cn,,0000,0000,0000,,拿钥匙来 时间无多
+Dialogue: 0,1:37:12.20,1:37:14.90,cn,,0000,0000,0000,,船身被击中 不知损毁隋况如何？
+Dialogue: 0,1:37:15.07,1:37:16.67,cn,,0000,0000,0000,,接上回波棒
+Dialogue: 0,1:37:16.84,1:37:19.24,cn,,0000,0000,0000,,讨论第二阶段的报告
+Dialogue: 0,1:37:19.41,1:37:22.90,cn,,0000,0000,0000,,更改A电路 探测器
+Dialogue: 0,1:37:23.08,1:37:25.71,cn,,0000,0000,0000,,开始看计划的议程
+Dialogue: 0,1:37:25.88,1:37:30.62,cn,,0000,0000,0000,,我像北极星般不败 他闭嘴的话 我给他钱
+Dialogue: 0,1:37:31.29,1:37:32.62,cn,,0000,0000,0000,,拿板来
+Dialogue: 0,1:37:32.79,1:37:34.45,cn,,0000,0000,0000,,同化要花费…
+Dialogue: 0,1:37:34.63,1:37:36.69,cn,,0000,0000,0000,,有反应了
+Dialogue: 0,1:37:37.86,1:37:39.76,cn,,0000,0000,0000,,克林冈帝国…
+Dialogue: 0,1:37:39.93,1:37:41.69,cn,,0000,0000,0000,,钥匙
+Dialogue: 0,1:37:41.87,1:37:44.23,cn,,0000,0000,0000,,飞弹呢？准备好了
+Dialogue: 0,1:37:44.40,1:37:46.63,cn,,0000,0000,0000,,准备发射
+Dialogue: 0,1:37:48.01,1:37:49.87,cn,,0000,0000,0000,,发射
+Dialogue: 0,1:38:02.09,1:38:04.56,cn,,0000,0000,0000,,做还是…
+Dialogue: 0,1:38:05.99,1:38:07.79,cn,,0000,0000,0000,,不做
+Dialogue: 0,1:38:09.09,1:38:11.15,cn,,0000,0000,0000,,瞄准它开火
+Dialogue: 0,1:38:13.57,1:38:15.59,cn,,0000,0000,0000,,发射
+Dialogue: 0,1:38:25.11,1:38:29.01,cn,,0000,0000,0000,,这项工作需时一星期
+Dialogue: 0,1:38:29.18,1:38:30.81,cn,,0000,0000,0000,,希望代表团
+Dialogue: 0,1:38:30.98,1:38:38.08,cn,,0000,0000,0000,,下月前履行第一阶段的规定
+Dialogue: 0,1:38:38.26,1:38:42.12,cn,,0000,0000,0000,,时间是关键
+Dialogue: 0,1:38:42.29,1:38:43.92,cn,,0000,0000,0000,,让开
+Dialogue: 0,1:38:48.93,1:38:50.92,cn,,0000,0000,0000,,主席
+Dialogue: 0,1:38:52.20,1:38:53.97,cn,,0000,0000,0000,,主席
+Dialogue: 0,1:38:55.74,1:38:57.67,cn,,0000,0000,0000,,我是企业号的却克
+Dialogue: 0,1:39:08.62,1:39:11.78,cn,,0000,0000,0000,,拘捕他们 拘捕你自己
+Dialogue: 0,1:39:16.59,1:39:18.19,cn,,0000,0000,0000,,她己彻底招供
+Dialogue: 0,1:39:33.75,1:39:37.18,cn,,0000,0000,0000,,这不是克林冈人的血 卡上将 别逃
+Dialogue: 0,1:39:38.00,1:39:41.59,cn,,0000,0000,0000,,什麽事？这是怎麽一回事？
+Dialogue: 0,1:39:41.77,1:39:43.79,cn,,0000,0000,0000,,有关未来的事
+Dialogue: 0,1:39:44.70,1:39:50.30,cn,,0000,0000,0000,,有人认为未来代表历史的终结
+Dialogue: 0,1:39:50.48,1:39:53.10,cn,,0000,0000,0000,,但历史还未完结
+Dialogue: 0,1:39:54.55,1:39:57.81,cn,,0000,0000,0000,,你的父亲称未来为…
+Dialogue: 0,1:39:58.98,1:40:01.78,cn,,0000,0000,0000,,尚未发现的地方
+Dialogue: 0,1:40:04.29,1:40:06.88,cn,,0000,0000,0000,,人人都害怕转变
+Dialogue: 0,1:40:12.06,1:40:14.33,cn,,0000,0000,0000,,你重建了我父亲的信心
+Dialogue: 0,1:40:15.50,1:40:18.63,cn,,0000,0000,0000,,你重建了我儿子的信心
+Dialogue: 0,1:41:06.49,1:41:09.28,cn,,0000,0000,0000,,我们再一次挽救了文明
+Dialogue: 0,1:41:09.45,1:41:12.12,cn,,0000,0000,0000,,幸好他们不起诉我们
+Dialogue: 0,1:41:12.29,1:41:15.75,cn,,0000,0000,0000,,我或会像韦利丽一样遭起诉
+Dialogue: 0,1:41:15.93,1:41:18.80,cn,,0000,0000,0000,,不会的
+Dialogue: 0,1:41:18.96,1:41:25.37,cn,,0000,0000,0000,,真好 否则我们会有麻烦
+Dialogue: 0,1:41:25.54,1:41:29.70,cn,,0000,0000,0000,,切克船长 苏路船长
+Dialogue: 0,1:41:29.88,1:41:33.74,cn,,0000,0000,0000,,我代表所有船员向你致谢
+Dialogue: 0,1:41:33.91,1:41:40.22,cn,,0000,0000,0000,,很高兴再次与你合作 保重
+Dialogue: 0,1:41:51.96,1:41:56.83,cn,,0000,0000,0000,,天 真是艘大船 但也不及船长伟大
+Dialogue: 0,1:41:57.00,1:42:00.77,cn,,0000,0000,0000,,这是再见了？
+Dialogue: 0,1:42:01.91,1:42:04.88,cn,,0000,0000,0000,,我们是时候各自启航
+Dialogue: 0,1:42:05.04,1:42:08.17,cn,,0000,0000,0000,,星际舰队有令
+Dialogue: 0,1:42:08.35,1:42:13.88,cn,,0000,0000,0000,,马上返回太空码头 解散队伍
+Dialogue: 0,1:42:28.23,1:42:33.80,cn,,0000,0000,0000,,如果我是人 我的反应会是…
+Dialogue: 0,1:42:33.97,1:42:35.96,cn,,0000,0000,0000,,去死吧
+Dialogue: 0,1:42:39.38,1:42:41.14,cn,,0000,0000,0000,,如果我是人的话
+Dialogue: 0,1:42:45.28,1:42:46.91,cn,,0000,0000,0000,,要驶向哪里？
+Dialogue: 0,1:42:53.53,1:42:56.19,cn,,0000,0000,0000,,右面第二个星球
+Dialogue: 0,1:42:57.36,1:42:59.46,cn,,0000,0000,0000,,直驶至明早
+Dialogue: 0,1:43:16.92,1:43:20.87,cn,,0000,0000,0000,,掏吕长日志 星历9529.1
+Dialogue: 0,1:43:21.05,1:43:25.25,cn,,0000,0000,0000,,这是企业号最後一次在我指挥下航行
+Dialogue: 0,1:43:25.42,1:43:27.45,cn,,0000,0000,0000,,这艘船和它的历史
+Dialogue: 0,1:43:27.63,1:43:30.56,cn,,0000,0000,0000,,很快会由另一队伍接管
+Dialogue: 0,1:43:30.73,1:43:34.63,cn,,0000,0000,0000,,我们把未来交给後世的人们
+Dialogue: 0,1:43:34.80,1:43:37.23,cn,,0000,0000,0000,,他们会继续我们的旅程
+Dialogue: 0,1:43:37.40,1:43:39.80,cn,,0000,0000,0000,,探索所有尚未到过的地方
+Dialogue: 0,1:43:39.97,1:43:45.00,cn,,0000,0000,0000,,勇敢地到没有人…
+Dialogue: 0,1:43:45.18,1:43:47.70,cn,,0000,0000,0000,,到过的地方
+
+
