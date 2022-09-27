@@ -1,0 +1,975 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: en,Cronos Pro Subhead,14,&H0000FFFF,&H0000FFFF,&H00000000,&H2A000000,0,0,0,0,100,100,0,0,0,1,1,2,20,20,0,1
+Style: Default,KaiTi,18,&H00FBFBFB,&H0000FFFF,&H1E000000,&H50000000,0,0,0,0,100,100,0,0,1,1,2,2,20,20,4,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:01:00.60,0:01:02.69,Default,,0000,0000,0000,,注意 近日移除
+Dialogue: 0,0:01:19.60,0:01:23.69,Default,,0000,0000,0000,,塞西利亚是第一个\N{\ren}Cecilia was the first to go.{\r}
+Dialogue: 0,0:02:04.21,0:02:05.87,Default,,0000,0000,0000,,你怎么弄成这样?       宝贝\N{\ren}What are you doing here?         Honey{\r}
+Dialogue: 0,0:02:06.11,0:02:10.41,Default,,0000,0000,0000,,你还小未经世事\N{\ren}You're not old enough to know how bad life gets.{\r}
+Dialogue: 0,0:02:10.41,0:02:11.31,Default,,0000,0000,0000,,显然 医生\N{\ren}Obviously, doctor{\r}
+Dialogue: 0,0:02:11.48,0:02:13.49,Default,,0000,0000,0000,,你从未当过13岁的女孩\N{\ren}you've never been a 13 year old girl.{\r}
+Dialogue: 0,0:02:32.41,0:02:35.85,Default,,0000,0000,0000,,处女之死
+Dialogue: 0,0:02:49.29,0:02:52.22,Default,,0000,0000,0000,,每个人都记得我们的邻居\N{\ren}Everyone dates the demise of our neighborhood{\r}
+Dialogue: 0,0:02:52.39,0:02:54.76,Default,,0000,0000,0000,,里斯本女孩们自杀的日子\N{\ren}from the suicides of the Lisbon girls.{\r}
+Dialogue: 0,0:02:54.93,0:02:58.25,Default,,0000,0000,0000,,人们在无精打采的榆树\N{\ren}People saw their clairvoyants in the wiped out elms{\r}
+Dialogue: 0,0:02:58.28,0:02:59.76,Default,,0000,0000,0000,,密歇根州 25年前
+Dialogue: 0,0:03:00.36,0:03:04.56,Default,,0000,0000,0000,,和日渐衰落的汽车工业中瞥见她们犀利的眼神\N{\ren}and the continuing decline of our auto industry.{\r}
+Dialogue: 0,0:03:04.73,0:03:08.19,Default,,0000,0000,0000,,年少的我们试着把碎片拼贴完整\N{\ren}Even then we tried putting the pieces together.{\r}
+Dialogue: 0,0:03:08.37,0:03:10.64,Default,,0000,0000,0000,,仍是失败了\N{\ren}We still can't.{\r}
+Dialogue: 0,0:03:10.81,0:03:14.44,Default,,0000,0000,0000,,现在每当我们在商务餐会或鸡尾派对上相遇\N{\ren}now whenever we meet at business lunches or cocktail parties{\r}
+Dialogue: 0,0:03:14.61,0:03:17.38,Default,,0000,0000,0000,,都会不由得在角落里重温那些证据\N{\ren}we find ourselves going over the evidence one more time.{\r}
+Dialogue: 0,0:03:17.55,0:03:20.64,Default,,0000,0000,0000,,只为了解那五个女孩\N{\ren}All to understand those five girls,{\r}
+Dialogue: 0,0:03:20.82,0:03:24.48,Default,,0000,0000,0000,,经过这么多年 她们仍铭刻在我们的脑海\N{\ren}who, after all these years, we can't get out of our minds.{\r}
+Dialogue: 0,0:03:26.92,0:03:29.82,Default,,0000,0000,0000,,塞西利亚 最小的一个 13岁\N{\ren}Cecilia, the youngest, was 13.{\r}
+Dialogue: 0,0:03:32.43,0:03:35.49,Default,,0000,0000,0000,,勒克斯 14岁\N{\ren}And Lux was 14.{\r}
+Dialogue: 0,0:03:37.17,0:03:39.73,Default,,0000,0000,0000,,邦妮 15岁\N{\ren}Bonnie was 15.{\r}
+Dialogue: 0,0:03:39.94,0:03:42.10,Default,,0000,0000,0000,,玛丽 16岁\N{\ren}Mary was 16.{\r}
+Dialogue: 0,0:03:44.61,0:03:47.41,Default,,0000,0000,0000,,特瑞丝17岁\N{\ren}And Therese was 17.{\r}
+Dialogue: 0,0:03:50.41,0:03:53.15,Default,,0000,0000,0000,,没人明白我们的数学老师\N{\ren}No one understood how Mrs. Lisbon and Mr. Lisbon,{\r}
+Dialogue: 0,0:03:53.31,0:03:54.42,Default,,0000,0000,0000,,里斯本先生和她夫人\N{\ren}our Math teacher,{\r}
+Dialogue: 0,0:03:54.42,0:03:56.89,Default,,0000,0000,0000,,怎么会造出这么美丽的尤物\N{\ren}had produced such beautiful creatures.{\r}
+Dialogue: 0,0:03:59.99,0:04:01.21,Default,,0000,0000,0000,,保罗·巴蒂诺说\N{\ren}Paul Baldino said{\r}
+Dialogue: 0,0:04:01.40,0:04:03.96,Default,,0000,0000,0000,,塞西利亚的初次自杀是他发现的\N{\ren}he found Cecilia on her first attempt.{\r}
+Dialogue: 0,0:04:03.96,0:04:06.16,Default,,0000,0000,0000,,是我发现她的\N{\ren}l was the one who found her.{\r}
+Dialogue: 0,0:04:06.33,0:04:08.64,Default,,0000,0000,0000,,我站在我家的下水道里\N{\ren}l was standing in the sewers around my house.{\r}
+Dialogue: 0,0:04:08.82,0:04:11.70,Default,,0000,0000,0000,,你能从那儿进入任何人的家\N{\ren}Through those tunnels you can get into anyone's house.{\r}
+Dialogue: 0,0:04:11.70,0:04:14.88,Default,,0000,0000,0000,,我们信以为真\N{\ren}when Paul said this We believed him{\r}
+Dialogue: 0,0:04:15.03,0:04:16.84,Default,,0000,0000,0000,,因为他爸是美国大兵 鲨鱼巴蒂诺\N{\ren}because Paul's dad was Sammy the Shark Baldino{\r}
+Dialogue: 0,0:04:16.84,0:04:19.83,Default,,0000,0000,0000,,我们知道他的逃生隧道经过下水道\N{\ren}and his escape tunnel led through the sewers.{\r}
+Dialogue: 0,0:04:20.01,0:04:22.42,Default,,0000,0000,0000,,我是想去\N{\ren}So l was thinking to see{\r}
+Dialogue: 0,0:04:22.57,0:04:24.78,Default,,0000,0000,0000,,看她们洗澡\N{\ren}one of those lesbian girls taking a shower.{\r}
+Dialogue: 0,0:04:24.78,0:04:25.87,Default,,0000,0000,0000,,对 是的\N{\ren}Yeah, right.{\r}
+Dialogue: 0,0:04:26.05,0:04:29.85,Default,,0000,0000,0000,,接着我进去了…到处都是血!\N{\ren}And l walk in... And l see blood everywhere!{\r}
+Dialogue: 0,0:04:30.02,0:04:33.85,Default,,0000,0000,0000,,所以我转身 顺着隧道原路返回\N{\ren}So l turned around and went right back out the tunnel.{\r}
+Dialogue: 0,0:04:34.79,0:04:39.23,Default,,0000,0000,0000,,我必须告诉你们这事 回见\N{\ren}l had to tell you guys that story. See you guys later.{\r}
+Dialogue: 0,0:04:43.00,0:04:44.86,Default,,0000,0000,0000,,我听说那是意外\N{\ren}l heard it was an accident.{\r}
+Dialogue: 0,0:04:45.04,0:04:49.53,Default,,0000,0000,0000,,不 根本不是意外 只怪她父母\N{\ren}lt was no accident. The parents are to blame.{\r}
+Dialogue: 0,0:04:49.74,0:04:52.44,Default,,0000,0000,0000,,我听说他们在马桶里找到刀片\N{\ren}l heard they found the razor in the toilet.{\r}
+Dialogue: 0,0:04:52.61,0:04:55.60,Default,,0000,0000,0000,,对塞西利亚自杀的原因 众说纷纭\N{\ren}Everyone had opinions why Cecilia tried to kill herself.{\r}
+Dialogue: 0,0:04:55.91,0:04:57.31,Default,,0000,0000,0000,,她不想死\N{\ren}That girl didn't want to die{\r}
+Dialogue: 0,0:04:57.49,0:04:59.58,Default,,0000,0000,0000,,只是想从家里逃出来\N{\ren}she just wanted out of that house.{\r}
+Dialogue: 0,0:04:59.58,0:05:02.64,Default,,0000,0000,0000,,她想摆脱那种装潢方式\N{\ren}She wanted out of that decorating scheme.{\r}
+Dialogue: 0,0:05:06.62,0:05:07.75,Default,,0000,0000,0000,,最流行的理论认为\N{\ren}The most popular theory{\r}
+Dialogue: 0,0:05:07.93,0:05:11.59,Default,,0000,0000,0000,,多米尼克·帕拉佐是罪魁祸首\N{\ren}held Dominic Palazzolo to blame.{\r}
+Dialogue: 0,0:05:11.59,0:05:14.06,Default,,0000,0000,0000,,多米尼克是个移民 暂时住在亲威家\N{\ren}Dominic was an immigrant who was staying with relatives{\r}
+Dialogue: 0,0:05:14.30,0:05:16.46,Default,,0000,0000,0000,,直到他的家人在新墨西哥安家\N{\ren}until his family got settled in New Mexico.{\r}
+Dialogue: 0,0:05:16.63,0:05:19.60,Default,,0000,0000,0000,,他是街坊里第一个戴墨镜的男孩\N{\ren}He was the first boy here to wear sunglasses.{\r}
+Dialogue: 0,0:05:19.77,0:05:22.24,Default,,0000,0000,0000,,来了还不到一周他就恋爱了\N{\ren}Within a week of arriving he'd fallen in love.{\r}
+Dialogue: 0,0:05:23.44,0:05:25.47,Default,,0000,0000,0000,,他心仪的对象不是塞西利亚\N{\ren}The object of his desire wasn't Cecilia,{\r}
+Dialogue: 0,0:05:25.66,0:05:31.91,Default,,0000,0000,0000,,而是黛安娜·波特\N{\ren}but Diana Porter.{\r}
+Dialogue: 0,0:05:31.92,0:05:34.21,Default,,0000,0000,0000,,我爱她!\N{\ren}l love her!{\r}
+Dialogue: 0,0:05:34.38,0:05:38.58,Default,,0000,0000,0000,,黛安娜去瑞士度假时 多米尼克逆天而行\N{\ren}When Diana Porter left on vacation, Dominic denounced God.{\r}
+Dialogue: 0,0:05:40.26,0:05:41.97,Default,,0000,0000,0000,,为表真心\N{\ren}And to prove to Olivia his love{\r}
+Dialogue: 0,0:05:42.15,0:05:44.38,Default,,0000,0000,0000,,他从亲戚家的房顶跳下去了\N{\ren}he jumped off the roof of his relatives' house.{\r}
+Dialogue: 0,0:06:08.39,0:06:10.88,Default,,0000,0000,0000,,我要给你看一些图象\N{\ren}l'm going to show you some images.{\r}
+Dialogue: 0,0:06:11.62,0:06:14.45,Default,,0000,0000,0000,,然后… 呃 你告诉我\N{\ren}And... er, you tell me{\r}
+Dialogue: 0,0:06:16.73,0:06:19.02,Default,,0000,0000,0000,,你想到了什么\N{\ren}what they remind you of.{\r}
+Dialogue: 0,0:06:20.03,0:06:21.55,Default,,0000,0000,0000,,好吗?\N{\ren}OK?{\r}
+Dialogue: 0,0:06:38.58,0:06:40.45,Default,,0000,0000,0000,,香蕉\N{\ren}A banana.{\r}
+Dialogue: 0,0:06:46.06,0:06:48.11,Default,,0000,0000,0000,,沼泽\N{\ren}A swamp.{\r}
+Dialogue: 0,0:06:57.00,0:06:58.93,Default,,0000,0000,0000,,爆炸头\N{\ren}An Afro.{\r}
+Dialogue: 0,0:07:17.35,0:07:20.95,Default,,0000,0000,0000,,我认为塞西利亚并不真想自杀\N{\ren}l don't think that Cecilia truly meant to end her life.{\r}
+Dialogue: 0,0:07:22.13,0:07:24.56,Default,,0000,0000,0000,,她的举动是求助的呐喊\N{\ren}Her act was a cry for help.{\r}
+Dialogue: 0,0:07:25.03,0:07:27.46,Default,,0000,0000,0000,,我知道你们非常严格\N{\ren}l know you're very strict,{\r}
+Dialogue: 0,0:07:27.63,0:07:31.30,Default,,0000,0000,0000,,但建立一些校外社交关系\N{\ren}but l think that Cecilia would benefit by having{\r}
+Dialogue: 0,0:07:31.47,0:07:35.64,Default,,0000,0000,0000,,对塞西利亚十分有益\N{\ren}a social outlet outside of the codification of school.{\r}
+Dialogue: 0,0:07:37.01,0:07:39.37,Default,,0000,0000,0000,,跟同龄的男孩交往交往\N{\ren}And interact with males her own age.{\r}
+Dialogue: 0,0:07:48.05,0:07:50.49,Default,,0000,0000,0000,,彼得帮里斯本先生\N{\ren}Peter helped Mr. Lisbon install a model{\r}
+Dialogue: 0,0:07:50.66,0:07:52.99,Default,,0000,0000,0000,,在教室建了个太阳系模型\N{\ren}of the solar system in his classroom.{\r}
+Dialogue: 0,0:07:52.99,0:07:55.79,Default,,0000,0000,0000,,作为回报 里斯本先生请他来吃晚饭\N{\ren}ln return, Mr. Lisbon invited him for dinner.{\r}
+Dialogue: 0,0:07:56.29,0:07:58.59,Default,,0000,0000,0000,,保佑我们 主啊为了这些\N{\ren}Bless us, O Lord, in these, Thy gifts{\r}
+Dialogue: 0,0:07:58.76,0:08:02.63,Default,,0000,0000,0000,,我们因耶稣之慷慨而收到的礼物 阿门\N{\ren}which we receive from Thy bounty through Christ. Amen.{\r}
+Dialogue: 0,0:08:02.80,0:08:04.53,Default,,0000,0000,0000,,阿门\N{\ren}Amen.{\r}
+Dialogue: 0,0:08:04.70,0:08:08.00,Default,,0000,0000,0000,,勒克斯 把上衣穿上 抱歉\N{\ren}Lux, please put your shirt on this instant. Sorry.{\r}
+Dialogue: 0,0:08:12.78,0:08:16.04,Default,,0000,0000,0000,,谢谢 宝贝儿 把盐递过来好吗?\N{\ren}Thank you, dear. Can you pass the salt, please?{\r}
+Dialogue: 0,0:08:16.28,0:08:18.84,Default,,0000,0000,0000,,要火腿吗? 谢谢\N{\ren}Ham? Thank you.{\r}
+Dialogue: 0,0:08:19.02,0:08:23.35,Default,,0000,0000,0000,,甜心 要点儿豌豆吗? 我讨厌豌豆\N{\ren}Sweetheart, would you like some peas? l hate peas.{\r}
+Dialogue: 0,0:08:23.49,0:08:26.18,Default,,0000,0000,0000,,火腿看上去真不错 亲爱的\N{\ren}lt's a nice looking ham, dear.{\r}
+Dialogue: 0,0:08:28.19,0:08:31.99,Default,,0000,0000,0000,,谢谢 亲爱的 真不错 妈妈\N{\ren}Well, thank you, honey. This is good, mum.{\r}
+Dialogue: 0,0:08:32.20,0:08:35.36,Default,,0000,0000,0000,,那么 彼得 你是个飞机狂热者吗?\N{\ren}So, Peter, are you an aviation enthusiast?{\r}
+Dialogue: 0,0:08:35.63,0:08:39.47,Default,,0000,0000,0000,,嗯 我不知道是否该把自己称作狂热者\N{\ren}Well, l don't know if l'd call myself an enthusiast.{\r}
+Dialogue: 0,0:08:39.64,0:08:41.66,Default,,0000,0000,0000,,我喜欢飞机\N{\ren}l like planes.{\r}
+Dialogue: 0,0:08:44.14,0:08:47.70,Default,,0000,0000,0000,,彼得 你是橄榄球队的吗?\N{\ren}Peter, are you on the football squad?{\r}
+Dialogue: 0,0:08:47.91,0:08:51.31,Default,,0000,0000,0000,,不 我玩儿这个 但不在队里\N{\ren}No. l play, but l'm not on the team.{\r}
+Dialogue: 0,0:08:51.51,0:08:53.85,Default,,0000,0000,0000,,哦 我知道了 不是队员\N{\ren}Oh, l see. Not a team player.{\r}
+Dialogue: 0,0:08:54.05,0:08:56.61,Default,,0000,0000,0000,,你喜欢摔跤吗?\N{\ren}Do you like to wrestle?{\r}
+Dialogue: 0,0:08:57.95,0:08:59.98,Default,,0000,0000,0000,,你还好吧?\N{\ren}Are you OK?{\r}
+Dialogue: 0,0:09:00.19,0:09:04.35,Default,,0000,0000,0000,,一种巴西青蛙今天被列入濒危物种了\N{\ren}A Brazilian frog entered the endangered species list today.{\r}
+Dialogue: 0,0:09:05.40,0:09:06.82,Default,,0000,0000,0000,,今年的第三种了\N{\ren}That's the third animal this year.{\r}
+Dialogue: 0,0:09:07.00,0:09:10.60,Default,,0000,0000,0000,,哦 宝贝儿 我头一次听说\N{\ren}Oh, dear. Darling, l've never heard of it.{\r}
+Dialogue: 0,0:09:10.60,0:09:14.23,Default,,0000,0000,0000,,不好意思 我可以用一下厕所吗? 当然\N{\ren}Excuse me. May l use the restroom? Of course.{\r}
+Dialogue: 0,0:09:14.40,0:09:16.34,Default,,0000,0000,0000,,楼下的坏了\N{\ren}The one down here isn't working very well.{\r}
+Dialogue: 0,0:09:16.53,0:09:18.57,Default,,0000,0000,0000,,去楼上塞西利亚的房间\N{\ren}Go upstairs through Cecilia's room.{\r}
+Dialogue: 0,0:09:18.58,0:09:20.17,Default,,0000,0000,0000,,好的 谢谢\N{\ren}OK, thanks.{\r}
+Dialogue: 0,0:10:07.58,0:10:10.17,Default,,0000,0000,0000,,卫生棉条
+Dialogue: 0,0:10:29.35,0:10:31.40,Default,,0000,0000,0000,,等等\N{\ren}Hold on.{\r}
+Dialogue: 0,0:10:31.58,0:10:33.81,Default,,0000,0000,0000,,我以为你死在里边了\N{\ren}l thought you'd died in there.{\r}
+Dialogue: 0,0:10:35.35,0:10:38.75,Default,,0000,0000,0000,,你霸占完厕所了吗? 我需要点东西\N{\ren}Are you done hogging the bathroom? l need something.{\r}
+Dialogue: 0,0:10:45.83,0:10:47.96,Default,,0000,0000,0000,,介意回避一下吗?\N{\ren}Do you mind?{\r}
+Dialogue: 0,0:10:55.44,0:10:58.64,Default,,0000,0000,0000,,非常谢谢 你忘了东西\N{\ren}Thank you. Are you forgetting something?{\r}
+Dialogue: 0,0:11:02.35,0:11:05.80,Default,,0000,0000,0000,,彼得 这是一片空气箔… 谢谢\N{\ren}Peter, here's an air foil... Thank you.{\r}
+Dialogue: 0,0:11:05.98,0:11:09.85,Default,,0000,0000,0000,,这是柏得利原理的应用\N{\ren}lt's a demonstration of Bernoulli's Principle.{\r}
+Dialogue: 0,0:11:10.02,0:11:12.01,Default,,0000,0000,0000,,举起…\N{\ren}Lift...{\r}
+Dialogue: 0,0:11:14.42,0:11:18.45,Default,,0000,0000,0000,,从那以后 里斯本家的就开始变样了\N{\ren}From then on the Lisbon house began to change.{\r}
+Dialogue: 0,0:11:21.06,0:11:22.07,Default,,0000,0000,0000,,几乎每天\N{\ren}Almost every day{\r}
+Dialogue: 0,0:11:23.47,0:11:26.37,Default,,0000,0000,0000,,甚至不用照看塞西利亚时\N{\ren}and even when she wasn't keeping an eye on Cecilia{\r}
+Dialogue: 0,0:11:26.37,0:11:29.03,Default,,0000,0000,0000,,勒克斯都会穿着游泳衣 坐在毛巾上晒黑\N{\ren}Lux would suntan on her towel, wearing a swimsuit{\r}
+Dialogue: 0,0:11:29.19,0:11:30.38,Default,,0000,0000,0000,,换来15分钟\N{\ren}that caused the knife sharpener{\r}
+Dialogue: 0,0:11:30.50,0:11:32.91,Default,,0000,0000,0000,,免费磨刀演示\N{\ren}to give her a 15 minute demonstration for free.{\r}
+Dialogue: 0,0:11:37.85,0:11:39.01,Default,,0000,0000,0000,,遵循医嘱\N{\ren}Following the doctor's orders{\r}
+Dialogue: 0,0:11:39.15,0:11:42.85,Default,,0000,0000,0000,,塞西利亚回家两周后\N{\ren}two weeks after Cecilia returned home{\r}
+Dialogue: 0,0:11:42.85,0:11:45.81,Default,,0000,0000,0000,,里斯本先生说服妻子允许女孩们举办了\N{\ren}Mr. Lisbon persuaded his wife to let the girls throw{\r}
+Dialogue: 0,0:11:45.85,0:11:48.81,Default,,0000,0000,0000,,短暂人生中第一场也是唯一一场派对\N{\ren}the first and the only party of their short lives.{\r}
+Dialogue: 0,0:11:57.53,0:11:59.90,Default,,0000,0000,0000,,好了 这样行吗?\N{\ren}There. ls that OK?{\r}
+Dialogue: 0,0:12:01.74,0:12:04.17,Default,,0000,0000,0000,,我得去换衣服了\N{\ren}l've got to get dressed.{\r}
+Dialogue: 0,0:12:12.52,0:12:15.08,Default,,0000,0000,0000,,欢迎 晚上好 里斯本太太\N{\ren}Welcome. Good evening, Mrs. Lisbon.{\r}
+Dialogue: 0,0:12:15.32,0:12:17.41,Default,,0000,0000,0000,,进来吧\N{\ren}Come on in.{\r}
+Dialogue: 0,0:12:20.16,0:12:22.25,Default,,0000,0000,0000,,派对在地下室\N{\ren}The party's in the basement.{\r}
+Dialogue: 0,0:12:25.26,0:12:29.66,Default,,0000,0000,0000,,左转 下楼梯\N{\ren}Just go to the left and then down the stairs.{\r}
+Dialogue: 0,0:12:42.38,0:12:44.47,Default,,0000,0000,0000,,嗨 我是邦妮\N{\ren}Hi, l'm Bonnie.{\r}
+Dialogue: 0,0:12:45.08,0:12:48.05,Default,,0000,0000,0000,,嗨… 我是蒂姆 很高兴见到你\N{\ren}Hi... Tim. Nice to meet you.{\r}
+Dialogue: 0,0:12:52.82,0:12:55.15,Default,,0000,0000,0000,,想要点潘趣酒吗? 好的\N{\ren}Would you like some punch? Yeah.{\r}
+Dialogue: 0,0:12:56.03,0:12:57.46,Default,,0000,0000,0000,,谢谢\N{\ren}Thanks.{\r}
+Dialogue: 0,0:12:57.63,0:13:00.69,Default,,0000,0000,0000,,嗨 谢谢\N{\ren}Hi. Thanks.{\r}
+Dialogue: 0,0:13:02.77,0:13:04.96,Default,,0000,0000,0000,,嗨 谢谢\N{\ren}Hi. Thank you.{\r}
+Dialogue: 0,0:13:07.50,0:13:09.30,Default,,0000,0000,0000,,嘿 嗨\N{\ren}Hey. Hi.{\r}
+Dialogue: 0,0:13:09.51,0:13:12.57,Default,,0000,0000,0000,,想坐下吗? 好的\N{\ren}Do you want to sit down? Yeah.{\r}
+Dialogue: 0,0:13:55.12,0:13:59.21,Default,,0000,0000,0000,,你的智力测验分数怎么样?       还不错\N{\ren}How did your SATs go?         OK.{\r}
+Dialogue: 0,0:13:59.39,0:14:01.38,Default,,0000,0000,0000,,很好\N{\ren}Good.{\r}
+Dialogue: 0,0:14:02.33,0:14:05.19,Default,,0000,0000,0000,,你知道要申请哪所大学吗?\N{\ren}Do you know where you're applying yet?{\r}
+Dialogue: 0,0:14:05.36,0:14:08.80,Default,,0000,0000,0000,,没有 但我父母倾向于耶鲁\N{\ren}No, but my parents are pushing towards Yale.{\r}
+Dialogue: 0,0:14:08.97,0:14:13.16,Default,,0000,0000,0000,,因为那是我爸的母校 真不错\N{\ren}Because that's where my dad went. That's nice.{\r}
+Dialogue: 0,0:14:17.11,0:14:19.84,Default,,0000,0000,0000,,你要想象云层散开\N{\ren}You have to imagine the clouds opening up{\r}
+Dialogue: 0,0:14:20.01,0:14:23.78,Default,,0000,0000,0000,,亨驾驶着梅塞施米特(德国战斗机)冲出阳光\N{\ren}and out of the sun would come the Hun in his Messerschmitt.{\r}
+Dialogue: 0,0:14:23.95,0:14:26.11,Default,,0000,0000,0000,,孩子们 大你们两三岁的\N{\ren}And boys, just older than you{\r}
+Dialogue: 0,0:14:26.26,0:14:28.92,Default,,0000,0000,0000,,都开P51-B野马式战斗机\N{\ren}would be in this, the P51 B Mustang.{\r}
+Dialogue: 0,0:14:28.92,0:14:30.61,Default,,0000,0000,0000,,"B"代表舷窗\N{\ren}''B'' for bull's eye.{\r}
+Dialogue: 0,0:14:33.39,0:14:36.72,Default,,0000,0000,0000,,你听说过耶鲁吗? 是的\N{\ren}You've heard of Yale? Oh, yeah.{\r}
+Dialogue: 0,0:14:38.33,0:14:41.46,Default,,0000,0000,0000,,潘趣酒真不错 再来点?\N{\ren}This punch is fantastic. More?{\r}
+Dialogue: 0,0:14:41.63,0:14:42.89,Default,,0000,0000,0000,,里边有什么?\N{\ren}What's in it?{\r}
+Dialogue: 0,0:14:44.40,0:14:47.67,Default,,0000,0000,0000,,果汁 一些樱桃… 菠萝\N{\ren}Juices, some cherry... pineapple.{\r}
+Dialogue: 0,0:14:48.27,0:14:51.50,Default,,0000,0000,0000,,你知道 我… 我喜欢菠萝\N{\ren}You know, l... l love pineapple.{\r}
+Dialogue: 0,0:14:53.21,0:14:54.68,Default,,0000,0000,0000,,真的吗?\N{\ren}Really?{\r}
+Dialogue: 0,0:15:03.52,0:15:04.74,Default,,0000,0000,0000,,这宝贝出场了\N{\ren}This baby would come in.{\r}
+Dialogue: 0,0:15:04.89,0:15:06.93,Default,,0000,0000,0000,,就是它让英国打了胜仗\N{\ren}This won the war for the United Kingdom.{\r}
+Dialogue: 0,0:15:07.08,0:15:11.15,Default,,0000,0000,0000,,抱歉 没事\N{\ren}Excuse me. Sure.{\r}
+Dialogue: 0,0:15:12.73,0:15:19.60,Default,,0000,0000,0000,,就是这个仪器让模型运转\N{\ren}And it's this kind of equipment that makes a model work.{\r}
+Dialogue: 0,0:15:21.34,0:15:23.40,Default,,0000,0000,0000,,这是周\N{\ren}Here's Joe.{\r}
+Dialogue: 0,0:15:24.94,0:15:27.03,Default,,0000,0000,0000,,嗨 周 嗨\N{\ren}Hi, Joe. Hi.{\r}
+Dialogue: 0,0:15:29.41,0:15:31.61,Default,,0000,0000,0000,,如果他有需要 打电话叫我\N{\ren}lf he needs anything, call me.{\r}
+Dialogue: 0,0:15:31.76,0:15:34.85,Default,,0000,0000,0000,,他会没事的 I'm sure he'll be fine.
+Dialogue: 0,0:15:34.85,0:15:38.08,Default,,0000,0000,0000,,嗨 嗨\N{\ren}Hi. Hi.{\r}
+Dialogue: 0,0:15:39.36,0:15:42.42,Default,,0000,0000,0000,,周 很高兴见到你 你好吗?\N{\ren}Joe. Good to see you. How are you?{\r}
+Dialogue: 0,0:15:42.59,0:15:45.62,Default,,0000,0000,0000,,很高兴你今晚能来 你怎么样?\N{\ren}Glad you came tonight. How's it going?{\r}
+Dialogue: 0,0:15:45.80,0:15:47.66,Default,,0000,0000,0000,,你来的正好\N{\ren}You're just in time.{\r}
+Dialogue: 0,0:15:47.83,0:15:49.80,Default,,0000,0000,0000,,嗨\N{\ren}Hi.{\r}
+Dialogue: 0,0:15:49.93,0:15:53.16,Default,,0000,0000,0000,,看 如果你挠他下巴他耳朵就动\N{\ren}Look. His ears go if you scratch his chin.{\r}
+Dialogue: 0,0:15:55.00,0:15:57.00,Default,,0000,0000,0000,,周 唱你的歌\N{\ren}Joe, sing your song.{\r}
+Dialogue: 0,0:15:57.21,0:15:59.77,Default,,0000,0000,0000,,三宝颜的猴子没尾巴\N{\fs16\fnMicrosoft\shad1\1c&H008080&}菲律宾城市{\r}\N{\ren}Oh, the monkeys have no tails in Zamboanga{\r}
+Dialogue: 0,0:15:59.91,0:16:02.41,Default,,0000,0000,0000,,猴子没尾巴\N{\ren}Oh, the monkeys have no tails{\r}
+Dialogue: 0,0:16:02.55,0:16:05.08,Default,,0000,0000,0000,,被鲸鱼吃掉啦\N{\ren}They were bitten off by whales{\r}
+Dialogue: 0,0:16:05.08,0:16:08.95,Default,,0000,0000,0000,,三宝颜的猴子没尾巴\N{\ren}Oh, the monkeys have no tails in Zamboanga{\r}
+Dialogue: 0,0:16:11.69,0:16:14.66,Default,,0000,0000,0000,,真是首好歌 唱的好 周\N{\ren}Good song. Good job, Joe.{\r}
+Dialogue: 0,0:16:16.89,0:16:19.45,Default,,0000,0000,0000,,你从哪儿学的这首歌?\N{\ren}Where'd you learn that song?{\r}
+Dialogue: 0,0:16:20.56,0:16:22.69,Default,,0000,0000,0000,,我能离开一会儿吧?\N{\ren}Can l be excused?{\r}
+Dialogue: 0,0:16:23.30,0:16:27.20,Default,,0000,0000,0000,,只要你想 但宝贝儿 这是你的派对\N{\ren}lf you want to, my dear, but this is your party.{\r}
+Dialogue: 0,0:16:29.91,0:16:34.00,Default,,0000,0000,0000,,好吧 如果你想上楼就去吧 我们…\N{\ren}All right. lf you want to go upstairs, do. We'll just...{\r}
+Dialogue: 0,0:16:34.21,0:16:37.61,Default,,0000,0000,0000,,我们只能在没有你的情况下玩了\N{\ren}We'll just have to have fun without you.{\r}
+Dialogue: 0,0:16:37.78,0:16:40.04,Default,,0000,0000,0000,,看 他总是选正面\N{\ren}Look. He always chooses heads.{\r}
+Dialogue: 0,0:16:40.25,0:16:42.48,Default,,0000,0000,0000,,周 会是哪面? 正面\N{\ren}Joe, what's it going to be? Heads.{\r}
+Dialogue: 0,0:16:42.65,0:16:44.62,Default,,0000,0000,0000,,周 试试背面\N{\ren}Joe, try tails.{\r}
+Dialogue: 0,0:16:46.12,0:16:47.32,Default,,0000,0000,0000,,就是正面!\N{\ren}Heads it is!{\r}
+Dialogue: 0,0:16:49.23,0:16:51.42,Default,,0000,0000,0000,,再来 正面\N{\ren}Let's go. Heads.{\r}
+Dialogue: 0,0:16:51.59,0:16:54.53,Default,,0000,0000,0000,,正面! 再来一次\N{\ren}Heads! One more time.{\r}
+Dialogue: 0,0:16:54.70,0:16:56.60,Default,,0000,0000,0000,,在空中 周 正面\N{\ren}ln the air, Joe. Heads.{\r}
+Dialogue: 0,0:16:59.30,0:17:01.24,Default,,0000,0000,0000,,又是正面!\N{\ren}Heads it is!{\r}
+Dialogue: 0,0:17:01.40,0:17:04.84,Default,,0000,0000,0000,,再来一次 提前猜 周 正面\N{\ren}One more time. Call in the air, Joe. Heads.{\r}
+Dialogue: 0,0:17:06.28,0:17:08.50,Default,,0000,0000,0000,,正面 真不错\N{\ren}Heads. Not bad.{\r}
+Dialogue: 0,0:17:10.40,0:17:13.08,Default,,0000,0000,0000,,你怎么样?       很好\N{\ren}How are you doing?         Good.{\r}
+Dialogue: 0,0:17:14.51,0:17:15.81,Default,,0000,0000,0000,,他学的真快\N{\ren}He picked it up really well.{\r}
+Dialogue: 0,0:17:15.86,0:17:18.26,Default,,0000,0000,0000,,这是我最喜欢的歌\N{\ren}This is my favorite song.{\r}
+Dialogue: 0,0:17:18.59,0:17:23.08,Default,,0000,0000,0000,,你知道 你… 非常漂亮 像圣人一样\N{\ren}You know, you're... very beautiful. Like a saint.{\r}
+Dialogue: 0,0:17:23.33,0:17:26.06,Default,,0000,0000,0000,,有时间我可以给你画像\N{\ren}l could paint you some time.{\r}
+Dialogue: 0,0:17:27.10,0:17:29.00,Default,,0000,0000,0000,,谢谢\N{\ren}Thanks.{\r}
+Dialogue: 0,0:17:33.44,0:17:34.70,Default,,0000,0000,0000,,他们唱歌了吗?\N{\ren}Did they sing it?{\r}
+Dialogue: 0,0:17:36.41,0:17:38.43,Default,,0000,0000,0000,,哇 真好!\N{\ren}Wow, that's good!{\r}
+Dialogue: 0,0:17:39.34,0:17:40.77,Default,,0000,0000,0000,,天啊!\N{\ren}God!{\r}
+Dialogue: 0,0:17:43.01,0:17:44.71,Default,,0000,0000,0000,,哦 主啊!\N{\ren}Oh, Lord!{\r}
+Dialogue: 0,0:17:44.91,0:17:46.88,Default,,0000,0000,0000,,塞西利亚!\N{\ren}Cecilia!{\r}
+Dialogue: 0,0:18:03.47,0:18:07.03,Default,,0000,0000,0000,,哦 我的… 不 不 不!\N{\ren}Oh, my...! No! No, no, no!{\r}
+Dialogue: 0,0:18:07.27,0:18:10.24,Default,,0000,0000,0000,,不要看 转过去\N{\ren}Don't look. Turn around.{\r}
+Dialogue: 0,0:18:10.41,0:18:13.43,Default,,0000,0000,0000,,转过去! 亲爱的 转… 我的上帝!\N{\ren}Turn around! Darlings, turn... Oh, my God!{\r}
+Dialogue: 0,0:18:16.31,0:18:17.94,Default,,0000,0000,0000,,哦 耶稣!\N{\ren}Oh, Jesus!{\r}
+Dialogue: 0,0:18:18.11,0:18:20.14,Default,,0000,0000,0000,,求你了 上帝\N{\ren}Please, God.{\r}
+Dialogue: 0,0:19:09.47,0:19:11.59,Default,,0000,0000,0000,,我们到了\N{\ren}We're here now.{\r}
+Dialogue: 0,0:19:12.57,0:19:15.00,Default,,0000,0000,0000,,今天拒办葬礼\N{\ren}No funerals today.{\r}
+Dialogue: 0,0:19:55.11,0:19:57.20,Default,,0000,0000,0000,,他说她才13岁\N{\ren}He said she was only 13.{\r}
+Dialogue: 0,0:20:11.23,0:20:13.63,Default,,0000,0000,0000,,嗨 玛丽 你父母在家吗?\N{\ren}Hi, Mary. Are your parents home?{\r}
+Dialogue: 0,0:20:13.80,0:20:16.46,Default,,0000,0000,0000,,嗨 神父 请进\N{\ren}Hi, Father. Come in.{\r}
+Dialogue: 0,0:20:23.47,0:20:25.74,Default,,0000,0000,0000,,你好 神父\N{\ren}Oh. Hello, Father.{\r}
+Dialogue: 0,0:20:27.08,0:20:29.70,Default,,0000,0000,0000,,请坐\N{\ren}Please, sit down.{\r}
+Dialogue: 0,0:20:29.88,0:20:31.87,Default,,0000,0000,0000,,谢谢\N{\ren}Thanks.{\r}
+Dialogue: 0,0:20:32.05,0:20:34.88,Default,,0000,0000,0000,,拜托 那是界内球!\N{\ren}Come on, that was inside!{\r}
+Dialogue: 0,0:20:36.15,0:20:38.42,Default,,0000,0000,0000,,呃 不了 谢谢\N{\ren}Uh, no. No, thanks.{\r}
+Dialogue: 0,0:20:47.03,0:20:51.09,Default,,0000,0000,0000,,把夫人叫下来 聊一聊好吗?\N{\ren}How about we get the missus down here? Have a little chat?{\r}
+Dialogue: 0,0:20:51.27,0:20:53.57,Default,,0000,0000,0000,,恐怕她不舒服 I'm afraid she's under the weather.
+Dialogue: 0,0:20:53.74,0:20:56.07,Default,,0000,0000,0000,,她…\N{\ren}She's not...{\r}
+Dialogue: 0,0:20:56.24,0:20:58.40,Default,,0000,0000,0000,,谁也不见\N{\ren}seeing anybody.{\r}
+Dialogue: 0,0:21:00.44,0:21:02.91,Default,,0000,0000,0000,,嗯 她会见牧师的\N{\ren}Well, she'll see her priest.{\r}
+Dialogue: 0,0:21:03.11,0:21:06.51,Default,,0000,0000,0000,,这孩子每次都打不好界内球\N{\ren}This kid's a sucker for the inside ones every time.{\r}
+Dialogue: 0,0:21:07.78,0:21:10.22,Default,,0000,0000,0000,,每次都是\N{\ren}Every time.{\r}
+Dialogue: 0,0:21:10.39,0:21:12.41,Default,,0000,0000,0000,,抱歉\N{\ren}Excuse me.{\r}
+Dialogue: 0,0:21:15.22,0:21:17.89,Default,,0000,0000,0000,,神父…\N{\ren}Father...{\r}
+Dialogue: 0,0:21:23.67,0:21:26.00,Default,,0000,0000,0000,,双杀 神父\N{\ren}Double play, Father.{\r}
+Dialogue: 0,0:21:27.77,0:21:30.20,Default,,0000,0000,0000,,双杀\N{\ren}Double play.{\r}
+Dialogue: 0,0:21:51.96,0:21:54.09,Default,,0000,0000,0000,,里斯本太太?\N{\ren}Mrs. Lisbon?{\r}
+Dialogue: 0,0:22:03.44,0:22:06.10,Default,,0000,0000,0000,,我能进来吗? 好的\N{\ren}May l come in? OK.{\r}
+Dialogue: 0,0:22:09.78,0:22:13.81,Default,,0000,0000,0000,,你们好 女孩们 我想我们可以谈谈\N{\ren}Hello, girls. l thought we could talk.{\r}
+Dialogue: 0,0:22:15.45,0:22:18.22,Default,,0000,0000,0000,,你们想聊聊吗?\N{\ren}Do you feel like talking?{\r}
+Dialogue: 0,0:22:19.02,0:22:21.32,Default,,0000,0000,0000,,嗯… 如果你们想的话\N{\ren}Well... if you ever want to,{\r}
+Dialogue: 0,0:22:21.52,0:22:24.01,Default,,0000,0000,0000,,你们知道到哪儿找我\N{\ren}you know where to find me.{\r}
+Dialogue: 0,0:22:33.04,0:22:36.27,Default,,0000,0000,0000,,里斯本太太? 我是穆迪神父\N{\ren}Mrs. Lisbon? lt's Father Moody.{\r}
+Dialogue: 0,0:22:41.24,0:22:43.64,Default,,0000,0000,0000,,里斯本太太 你好\N{\ren}Mrs. Lisbon. Hello.{\r}
+Dialogue: 0,0:22:47.35,0:22:48.54,Default,,0000,0000,0000,,我想告诉你\N{\ren}l wanted you to know that{\r}
+Dialogue: 0,0:22:48.69,0:22:50.67,Default,,0000,0000,0000,,塞西利亚的死是个意外\N{\ren}l listed Cecilia's death as an accident.{\r}
+Dialogue: 0,0:23:06.24,0:23:08.76,Default,,0000,0000,0000,,一场必然发生的意外\N{\ren}An accident waiting to happen.{\r}
+Dialogue: 0,0:23:08.94,0:23:11.34,Default,,0000,0000,0000,,他们无法自欺欺人\N{\ren}They couldn't get a policy to cover it.{\r}
+Dialogue: 0,0:23:12.51,0:23:13.51,Default,,0000,0000,0000,,真是太危险了\N{\ren}I know.lt's incredibly dangerous.{\r}
+Dialogue: 0,0:23:13.51,0:23:15.70,Default,,0000,0000,0000,,我们试试\N{\ren}Let's give it a try.{\r}
+Dialogue: 0,0:23:18.71,0:23:22.08,Default,,0000,0000,0000,,准备好了? 123\N{\ren}Ready? One, two, three.{\r}
+Dialogue: 0,0:23:28.16,0:23:31.02,Default,,0000,0000,0000,,太悲伤了 真让我不敢相信\N{\ren}lt's so sad, l can't believe it happened.{\r}
+Dialogue: 0,0:23:31.23,0:23:34.25,Default,,0000,0000,0000,,你车里的锁链呢?\N{\ren}Have you got that chain in your truck?{\r}
+Dialogue: 0,0:23:53.88,0:23:55.68,Default,,0000,0000,0000,,开车!\N{\ren}Hit it!{\r}
+Dialogue: 0,0:24:10.53,0:24:13.43,Default,,0000,0000,0000,,我们收集的里斯本女孩的纪念品保存至今\N{\ren}Our collection of souvenirs of the Lisbon girls{\r}
+Dialogue: 0,0:24:13.60,0:24:17.80,Default,,0000,0000,0000,,从塞西利亚的日记开始\N{\ren}which still exists started with Cecilia's diary.{\r}
+Dialogue: 0,0:24:17.97,0:24:20.68,Default,,0000,0000,0000,,帕克从水管工那儿弄来的\N{\ren}Parkie had gotten it from the plumber's assistant{\r}
+Dialogue: 0,0:24:20.87,0:24:23.54,Default,,0000,0000,0000,,他在浴室的马桶边找到它\N{\ren}who'd found it in the bathroom.{\r}
+Dialogue: 0,0:24:23.55,0:24:26.28,Default,,0000,0000,0000,,蒂姆·微纳是智者 解密了它\N{\ren}Tim Weiner, the Brain, decoded it.{\r}
+Dialogue: 0,0:24:26.45,0:24:28.68,Default,,0000,0000,0000,,感情不稳定\N{\ren}Emotional instability.{\r}
+Dialogue: 0,0:24:28.92,0:24:32.91,Default,,0000,0000,0000,,看看"i"上的圆点 每个都如是\N{\ren}Look at the ''ls'', the dots on them. They're everywhere.{\r}
+Dialogue: 0,0:24:33.79,0:24:37.52,Default,,0000,0000,0000,,基本上 她是个梦想家\N{\ren}Basically, what we have here is a dreamer.{\r}
+Dialogue: 0,0:24:37.73,0:24:40.29,Default,,0000,0000,0000,,一个完全与现实脱节的人\N{\ren}Someone completely out of touch with reality.{\r}
+Dialogue: 0,0:24:40.43,0:24:43.49,Default,,0000,0000,0000,,她跳起来时 可能感觉自己要飞起来了\N{\ren}When she jumped, she probably thought she would fly.{\r}
+Dialogue: 0,0:24:46.44,0:24:49.73,Default,,0000,0000,0000,,2月13日 周一 今天我们吃的冰批萨\N{\ren}Monday, February 13th. Today we had frozen pizza.{\r}
+Dialogue: 0,0:24:53.88,0:24:55.96,Default,,0000,0000,0000,,周四 妈妈晚饭做了奶油玉米\N{\ren}Thursday. Mum made cream corn for dinner.{\r}
+Dialogue: 0,0:24:56.17,0:25:00.28,Default,,0000,0000,0000,,糟透了 看上去就像…\N{\ren}lt's the worst. lt looks like...{\r}
+Dialogue: 0,0:25:00.28,0:25:03.18,Default,,0000,0000,0000,,玛丽像白痴一样撞烂了门牙\N{\ren}Mary chipped a tooth acting like an idiot.{\r}
+Dialogue: 0,0:25:03.35,0:25:06.41,Default,,0000,0000,0000,,她大吵大闹 还不得不去补牙\N{\ren}She made a scene and had to get her tooth capped.{\r}
+Dialogue: 0,0:25:06.59,0:25:08.85,Default,,0000,0000,0000,,我猜看上去没两样 给我\N{\ren}lt looks normal. Give me that.{\r}
+Dialogue: 0,0:25:10.56,0:25:12.79,Default,,0000,0000,0000,,我就说她补过牙\N{\ren}l said she had a capped tooth.{\r}
+Dialogue: 0,0:25:17.90,0:25:22.23,Default,,0000,0000,0000,,榆树! 一棵要死的树能写多少页?\N{\ren}Elm trees! How many pages can you write about dying trees?{\r}
+Dialogue: 0,0:25:23.74,0:25:26.17,Default,,0000,0000,0000,,这是有关多米尼克的\N{\ren}Here's something about Dominic.{\r}
+Dialogue: 0,0:25:27.98,0:25:29.85,Default,,0000,0000,0000,,帕佐罗今天为了那阔绰婊子波特\N{\ren}Palazzolo jumped off the roof today{\r}
+Dialogue: 0,0:25:29.99,0:25:31.91,Default,,0000,0000,0000,,从屋顶上跳下来了\N{\ren}over that rich bitch, Porter.{\r}
+Dialogue: 0,0:25:31.91,0:25:34.78,Default,,0000,0000,0000,,你还能再蠢点么?\N{\ren}How stupid can you be?{\r}
+Dialogue: 0,0:25:35.85,0:25:36.91,Default,,0000,0000,0000,,今天我们乘船出海\N{\ren}Today we went out on the boat.{\r}
+Dialogue: 0,0:25:37.12,0:25:39.96,Default,,0000,0000,0000,,很冷 我们看到了几只鲸鱼\N{\ren}lt was cold. We saw a couple of whales.{\r}
+Dialogue: 0,0:25:40.00,0:25:44.03,Default,,0000,0000,0000,,勒克斯摸了鲸鱼 没想到它们这么臭\N{\ren}Lux stroked the whale. l didn't think they'd stink so much.{\r}
+Dialogue: 0,0:25:44.23,0:25:46.82,Default,,0000,0000,0000,,是它们肚子里的海草烂了\N{\ren}lt's the kelp in their bellies rotting.{\r}
+Dialogue: 0,0:25:47.00,0:25:49.26,Default,,0000,0000,0000,,我希望以后可以再去\N{\ren}l hope we can go again some time.{\r}
+Dialogue: 0,0:25:49.43,0:25:50.61,Default,,0000,0000,0000,,读读这个吧\N{\ren}Let's read that.{\r}
+Dialogue: 0,0:25:50.77,0:25:52.27,Default,,0000,0000,0000,,勒克斯看上了凯文…\N{\ren}Lux lusted over Kevin...{\r}
+Dialogue: 0,0:25:52.41,0:25:56.07,Default,,0000,0000,0000,,是"海兹"吗? 那个送垃圾的男人\N{\ren}ls it ''Heinz''? The garbage man.{\r}
+Dialogue: 0,0:25:56.07,0:25:57.70,Default,,0000,0000,0000,,勒克斯看上了凯文·海纳兹\N{\ren}Lux lusted over Kevin Haines,{\r}
+Dialogue: 0,0:25:57.88,0:25:59.47,Default,,0000,0000,0000,,那个送垃圾的男人\N{\ren}the garbage man.{\r}
+Dialogue: 0,0:25:59.47,0:26:03.41,Default,,0000,0000,0000,,她早上5点起床 在前门台阶上转悠\N{\ren}She'd wake up at 5am and hang out on the front steps.{\r}
+Dialogue: 0,0:26:03.58,0:26:05.74,Default,,0000,0000,0000,,就跟别人看不出来似的!\N{\ren}Like it wasn't completely obvious!{\r}
+Dialogue: 0,0:26:05.91,0:26:08.54,Default,,0000,0000,0000,,她把他的名字写在所有的内衣上\N{\ren}She wrote his name on all her underwear.{\r}
+Dialogue: 0,0:26:08.72,0:26:11.45,Default,,0000,0000,0000,,妈妈发现了 把所有凯文的字样都漂白了\N{\ren}Mum found them and bleached out all the Kevins.{\r}
+Dialogue: 0,0:26:11.62,0:26:14.42,Default,,0000,0000,0000,,勒克斯在床上哭了一整天\N{\ren}Lux is crying on her bed all day.{\r}
+Dialogue: 0,0:26:22.30,0:26:25.36,Default,,0000,0000,0000,,"这些树 像充满空气的肺叶"\N{\ren}''The trees, like lungs filling with air{\r}
+Dialogue: 0,0:26:25.53,0:26:28.87,Default,,0000,0000,0000,,"我姐姐 恶毒的那个 拉我的头发"\N{\ren}''My sister, the mean one, pulling my hair''{\r}
+Dialogue: 0,0:26:34.41,0:26:37.71,Default,,0000,0000,0000,,于是我们得以知晓她们的生活\N{\ren}And so we started to learn about their lives.{\r}
+Dialogue: 0,0:26:38.81,0:26:42.44,Default,,0000,0000,0000,,那些记忆汇集了我们未曾经历过的时光\N{\ren}Coming to hold the memories of times we hadn't experienced.{\r}
+Dialogue: 0,0:26:42.62,0:26:45.64,Default,,0000,0000,0000,,我们感受到作为女孩的被禁锢感\N{\ren}We felt the imprisonment of being a girl.{\r}
+Dialogue: 0,0:26:45.82,0:26:48.52,Default,,0000,0000,0000,,它是如何让你变得浮想联翩\N{\ren}How it made your mind active and dreamy.{\r}
+Dialogue: 0,0:26:48.72,0:26:52.42,Default,,0000,0000,0000,,让你了解到哪些颜色更搭\N{\ren}and how you knowing when colors went together{\r}
+Dialogue: 0,0:26:52.59,0:26:55.03,Default,,0000,0000,0000,,我们知道女孩们都有着缜密的内心\N{\ren}We knew that the girls were really women in disguise.{\r}
+Dialogue: 0,0:26:55.26,0:26:57.73,Default,,0000,0000,0000,,她们懂得爱情 甚至死亡\N{\ren}They understood love and even death.{\r}
+Dialogue: 0,0:26:57.90,0:27:01.36,Default,,0000,0000,0000,,我们能做的就是吸引她们\N{\ren}Our job was to create the noise that fascinated them.{\r}
+Dialogue: 0,0:27:02.87,0:27:05.22,Default,,0000,0000,0000,,她们对我们了如指掌\N{\ren}They knew everything about us{\r}
+Dialogue: 0,0:27:06.21,0:27:08.12,Default,,0000,0000,0000,,我们对她们却一无所知\N{\ren}but we couldn't fathom them at all.{\r}
+Dialogue: 0,0:27:22.32,0:27:26.59,Default,,0000,0000,0000,,嗨 里斯本太太 我是莉迪亚·皮尔 我在做… Hi. Mrs. Lisbon, I'm Lydia Perl. I'm putting together...
+Dialogue: 0,0:27:27.20,0:27:30.46,Default,,0000,0000,0000,,嗨 我是邦妮 这是玛丽 Oh! Hi, I'm Bonnie. This is Mary.
+Dialogue: 0,0:27:30.63,0:27:35.90,Default,,0000,0000,0000,,你好 女孩们 我来问你们几个问题… Hello, girls. I'm here to ask you a couple of questions...
+Dialogue: 0,0:27:36.10,0:27:38.16,Default,,0000,0000,0000,,是关于塞西利亚的\N{\ren}about Cecilia.{\r}
+Dialogue: 0,0:27:39.54,0:27:42.84,Default,,0000,0000,0000,,嗯? 好的 呃…\N{\ren}Yeah? Great. Um...{\r}
+Dialogue: 0,0:27:43.01,0:27:47.18,Default,,0000,0000,0000,,或许你们能告诉我一点她的事?\N{\ren}Maybe you could tell me a little bit about her?{\r}
+Dialogue: 0,0:27:48.62,0:27:51.68,Default,,0000,0000,0000,,她有没有什么特殊的兴趣爱好?\N{\ren}Did she have any special interests or hobbies?{\r}
+Dialogue: 0,0:27:51.85,0:27:55.12,Default,,0000,0000,0000,,她很喜欢写日记\N{\ren}She liked writing her journal a lot.{\r}
+Dialogue: 0,0:27:55.29,0:27:57.92,Default,,0000,0000,0000,,真棒\N{\ren}That is great.{\r}
+Dialogue: 0,0:27:58.13,0:28:00.22,Default,,0000,0000,0000,,好的 她有没…\N{\ren}OK. Did she...{\r}
+Dialogue: 0,0:28:00.40,0:28:02.86,Default,,0000,0000,0000,,她有说过要结束自己的生命吗?\N{\ren}Did she ever talk about ending her life?{\r}
+Dialogue: 0,0:28:03.07,0:28:05.59,Default,,0000,0000,0000,,出什么事了?\N{\ren}What's going on here?{\r}
+Dialogue: 0,0:28:05.77,0:28:08.03,Default,,0000,0000,0000,,你一定是里斯本太太\N{\ren}You must be Mrs. Lisbon.{\r}
+Dialogue: 0,0:28:08.27,0:28:10.93,Default,,0000,0000,0000,,我是莉迪亚·皮尔 我为二频道做一档节目 I'm Lydia Perl. I'm doing a piece for Channel Two.
+Dialogue: 0,0:28:11.11,0:28:13.47,Default,,0000,0000,0000,,这儿不欢迎你 皮尔小姐\N{\ren}You have to leave now, Miss Perl.{\r}
+Dialogue: 0,0:28:14.54,0:28:17.68,Default,,0000,0000,0000,,去年夏天 东部一位自杀少女\N{\ren}The suicide of a teenager last summer{\r}
+Dialogue: 0,0:28:17.85,0:28:20.75,Default,,0000,0000,0000,,引发了国民危机意识\N{\ren}has increased the awareness of a crisis.{\r}
+Dialogue: 0,0:28:20.75,0:28:23.84,Default,,0000,0000,0000,,我站在塞西利亚·里斯本家门前 一个13岁… I'm at the home where Cecilia Lisbon...
+Dialogue: 0,0:28:23.92,0:28:26.18,Default,,0000,0000,0000,,他们为什么不让她安息呢?\N{\ren}Why don't they let her rest in peace?{\r}
+Dialogue: 0,0:28:26.22,0:28:29.85,Default,,0000,0000,0000,,...爱好写诗 悲剧性的结束了自己的生命\N{\ren}..tragically put an end to her life.{\r}
+Dialogue: 0,0:28:30.03,0:28:32.39,Default,,0000,0000,0000,,心理学家一致认为 当代青少年\N{\ren}Psychologists agree that adolescence today{\r}
+Dialogue: 0,0:28:32.56,0:28:35.13,Default,,0000,0000,0000,,比起以前\N{\ren}is more fraught by pressures and complexities{\r}
+Dialogue: 0,0:28:35.26,0:28:37.03,Default,,0000,0000,0000,,更加复杂与脆弱\N{\ren}than in years past.{\r}
+Dialogue: 0,0:28:37.03,0:28:41.66,Default,,0000,0000,0000,,越来越多的医生说挫败感能引起暴力行为\N{\ren}Doctors say that frustration can lead to acts of violence{\r}
+Dialogue: 0,0:28:41.86,0:28:44.32,Default,,0000,0000,0000,,青少年无法将现实\N{\ren}whose reality the adolescent cannot separate{\r}
+Dialogue: 0,0:28:44.49,0:28:48.21,Default,,0000,0000,0000,,与虚幻区分开来\N{\ren}from its intended drama.{\r}
+Dialogue: 0,0:28:48.21,0:28:50.70,Default,,0000,0000,0000,,我烤了一个有老鼠药的馅饼\N{\ren}l baked a pie full of rat poison.{\r}
+Dialogue: 0,0:28:51.35,0:28:55.44,Default,,0000,0000,0000,,我觉得我可以悄悄吃下它\N{\ren}l thought l could eat it without it being suspicious.{\r}
+Dialogue: 0,0:28:57.72,0:29:00.85,Default,,0000,0000,0000,,我奶奶 她都86了…\N{\ren}My nana, who was 86...{\r}
+Dialogue: 0,0:29:04.06,0:29:06.86,Default,,0000,0000,0000,,她真的很喜欢甜食\N{\ren}She really likes sweets.{\r}
+Dialogue: 0,0:29:08.30,0:29:10.96,Default,,0000,0000,0000,,她吃了三块\N{\ren}She had three pieces.{\r}
+Dialogue: 0,0:29:16.57,0:29:18.54,Default,,0000,0000,0000,,我为这个母亲感到难过 I'm sorriest for the mother.
+Dialogue: 0,0:29:18.71,0:29:22.07,Default,,0000,0000,0000,,不 你一直想知道如何补救\N{\ren}You'd always wonder what you could have done.{\r}
+Dialogue: 0,0:29:22.28,0:29:23.40,Default,,0000,0000,0000,,我要挂了 再见\N{\ren}l got to go. See you later.{\r}
+Dialogue: 0,0:29:23.54,0:29:25.95,Default,,0000,0000,0000,,好的 再见\N{\ren}All right. Bye bye.{\r}
+Dialogue: 0,0:29:25.95,0:29:27.85,Default,,0000,0000,0000,,再见\N{\ren}Bye bye.{\r}
+Dialogue: 0,0:30:29.08,0:30:31.27,Default,,0000,0000,0000,,别担心\N{\ren}Don't worry.{\r}
+Dialogue: 0,0:30:31.45,0:30:34.21,Default,,0000,0000,0000,,他们把栅栏拆了\N{\ren}They took the fence out.{\r}
+Dialogue: 0,0:30:55.20,0:30:57.76,Default,,0000,0000,0000,,老天 你打鼾可够响的\N{\ren}God, you snore loud.{\r}
+Dialogue: 0,0:31:42.78,0:31:45.31,Default,,0000,0000,0000,,那些女孩有光明的前途\N{\ren}Those girls have a bright future ahead.{\r}
+Dialogue: 0,0:31:45.49,0:31:48.89,Default,,0000,0000,0000,,另一个却已成定局\N{\ren}The other one was just going to end up a cook.{\r}
+Dialogue: 0,0:31:49.09,0:31:50.61,Default,,0000,0000,0000,,直到9月7号\N{\ren}We didn't see the girls together as a group{\r}
+Dialogue: 0,0:31:50.77,0:31:54.03,Default,,0000,0000,0000,,我们才见到女孩们一块出现\N{\ren}until September 7th.{\r}
+Dialogue: 0,0:31:54.03,0:31:57.56,Default,,0000,0000,0000,,玛丽 勒克斯 邦妮和特瑞丝\N{\ren}Mary, Lux, Bonnie and Therese,{\r}
+Dialogue: 0,0:31:57.73,0:32:00.60,Default,,0000,0000,0000,,来到学校 就像什么也没发生过\N{\ren}came to school as though nothing had happened.{\r}
+Dialogue: 0,0:32:00.77,0:32:02.73,Default,,0000,0000,0000,,我们觉得只要仔细看\N{\ren}We felt if we looked hard{\r}
+Dialogue: 0,0:32:02.77,0:32:06.67,Default,,0000,0000,0000,,就会明白她们的感觉以及她们到底是谁\N{\ren}we'd understand their feelings and who they were.{\r}
+Dialogue: 0,0:32:06.84,0:32:11.21,Default,,0000,0000,0000,,好的 正如你记得的 这是维恩图\N{\ren}All right. These are Venn diagrams, as you remember.{\r}
+Dialogue: 0,0:32:11.38,0:32:14.80,Default,,0000,0000,0000,,我们有'A'和'B'相交\N{\ren}lf we have ''A'' and ''B'' intersecting.{\r}
+Dialogue: 0,0:32:14.99,0:32:17.42,Default,,0000,0000,0000,,这是'A'跟'B'\N{\ren}And ''A'' and ''B''.{\r}
+Dialogue: 0,0:32:17.42,0:32:20.91,Default,,0000,0000,0000,,如果'A'与'B'相交 就得出这块区域\N{\ren}lf ''A'' intersects ''B'', we have this area.{\r}
+Dialogue: 0,0:32:21.12,0:32:23.12,Default,,0000,0000,0000,,如果'A'与'B'相并\N{\ren}And if ''A'' is the union with ''B''{\r}
+Dialogue: 0,0:32:23.41,0:32:26.26,Default,,0000,0000,0000,,就得出整个圆和相交部分\N{\ren}we have all of the circle plus the intersection.{\r}
+Dialogue: 0,0:32:26.26,0:32:32.22,Default,,0000,0000,0000,,这就是交集和并集的规则\N{\ren}These are the laws of intersection and union. OK?{\r}
+Dialogue: 0,0:32:43.04,0:32:45.74,Default,,0000,0000,0000,,过的怎么样?\N{\ren}How's it going?{\r}
+Dialogue: 0,0:32:46.55,0:32:48.74,Default,,0000,0000,0000,,还不错\N{\ren}Not bad.{\r}
+Dialogue: 0,0:32:52.02,0:32:54.84,Default,,0000,0000,0000,,好的 "素描《淑女本色》...\N{\ren}OK. ''Do a character sketch on the following characters...{\r}
+Dialogue: 0,0:32:55.00,0:32:56.49,Default,,0000,0000,0000,,中的一个角色…"\N{\ren}from Portrait Of A Lady...''{\r}
+Dialogue: 0,0:32:56.49,0:32:59.43,Default,,0000,0000,0000,,第一个是… 罗夫\N{\ren}The first one is... Ralph.{\r}
+Dialogue: 0,0:32:59.63,0:33:02.89,Default,,0000,0000,0000,,呃… 他很好\N{\ren}Um... He was nice.{\r}
+Dialogue: 0,0:33:03.10,0:33:05.76,Default,,0000,0000,0000,,他死时我真的很难过\N{\ren}lt was really sad when he died.{\r}
+Dialogue: 0,0:33:07.77,0:33:10.60,Default,,0000,0000,0000,,哦 上帝 真不敢相信我刚才说了什么\N{\ren}Oh, my gosh. l can't believe l just said that.{\r}
+Dialogue: 0,0:33:10.77,0:33:13.07,Default,,0000,0000,0000,,我很抱歉\N{\ren}l am so sorry.{\r}
+Dialogue: 0,0:33:24.99,0:33:27.92,Default,,0000,0000,0000,,读到了惊人的自杀率\N{\ren}Reading about the alarming suicide rate,{\r}
+Dialogue: 0,0:33:28.12,0:33:31.13,Default,,0000,0000,0000,,我与伍德哈斯先生和其他几位老师谈过了\N{\ren}l talked to Mr. Woodhouse and some of the teachers here{\r}
+Dialogue: 0,0:33:31.31,0:33:35.29,Default,,0000,0000,0000,,意识到如此重大的问题\N{\ren}and realized that nothing about this serious matter{\r}
+Dialogue: 0,0:33:35.48,0:33:38.27,Default,,0000,0000,0000,,还未在学校里讨论过\N{\ren}has been discussed at this school.{\r}
+Dialogue: 0,0:33:38.27,0:33:41.43,Default,,0000,0000,0000,,随后就有绿色的小册子发下来\N{\ren}And quickly thereafter green pamphlets were distributed.{\r}
+Dialogue: 0,0:33:41.60,0:33:45.33,Default,,0000,0000,0000,,我们觉得绿色很欢快 也不算太欢快\N{\ren}We felt green was cheerful, but not too cheerful.{\r}
+Dialogue: 0,0:33:45.54,0:33:48.07,Default,,0000,0000,0000,,显然比红色要好\N{\ren}Certainly better than red.{\r}
+Dialogue: 0,0:33:48.81,0:33:49.85,Default,,0000,0000,0000,,册子里说\N{\ren}The pamphlets has told us{\r}
+Dialogue: 0,0:33:49.99,0:33:52.24,Default,,0000,0000,0000,,美国一天有80起自杀\N{\ren}there were 80 suicides a day in America{\r}
+Dialogue: 0,0:33:52.24,0:33:53.78,Default,,0000,0000,0000,,一年30,000起\N{\ren}30,000 a year.{\r}
+Dialogue: 0,0:33:53.78,0:33:55.04,Default,,0000,0000,0000,,茄子!\N{\ren}Cheese!{\r}
+Dialogue: 0,0:33:55.28,0:33:56.35,Default,,0000,0000,0000,,这敲响了我们\N{\ren}lt alerted us to danger signals{\r}
+Dialogue: 0,0:33:56.47,0:33:57.99,Default,,0000,0000,0000,,一直在找寻的危险警报\N{\ren}we couldn't help but look for.{\r}
+Dialogue: 0,0:33:57.99,0:34:00.65,Default,,0000,0000,0000,,里斯本的女孩子们瞳孔扩大了吗?\N{\ren}Were the Lisbon girls' pupils dilated?{\r}
+Dialogue: 0,0:34:00.82,0:34:03.07,Default,,0000,0000,0000,,她们对校园活动\N{\ren}Had they lost interest in school activities{\r}
+Dialogue: 0,0:34:03.23,0:34:05.13,Default,,0000,0000,0000,,体育运动或爱好失去兴趣了吗?\N{\ren}and sports and hobbies?{\r}
+Dialogue: 0,0:34:05.43,0:34:07.79,Default,,0000,0000,0000,,她们被同龄人孤立了吗?\N{\ren}Had they withdrawn from their peers?{\r}
+Dialogue: 0,0:34:09.56,0:34:11.66,Default,,0000,0000,0000,,嗨 我是瑞斯 Hi, I'm Chase.
+Dialogue: 0,0:34:14.00,0:34:16.44,Default,,0000,0000,0000,,我知道你是谁\N{\ren}l know who you are.{\r}
+Dialogue: 0,0:34:17.01,0:34:20.03,Default,,0000,0000,0000,,我这辈子就上过这一所学校\N{\ren}l've only been going to this school my whole life.{\r}
+Dialogue: 0,0:34:21.24,0:34:23.64,Default,,0000,0000,0000,,不用没话找话说\N{\ren}You don't have to talk to me.{\r}
+Dialogue: 0,0:34:33.12,0:34:35.99,Default,,0000,0000,0000,,比如说 我们有两种不同的经济类型\N{\ren}So, for example we have two different types of economics{\r}
+Dialogue: 0,0:34:36.42,0:34:42.59,Default,,0000,0000,0000,,第一种叫做宏观经济\N{\ren}the first one is called macroeconomics.{\r}
+Dialogue: 0,0:34:42.76,0:34:44.20,Default,,0000,0000,0000,,看\N{\ren}Look.{\r}
+Dialogue: 0,0:34:44.37,0:34:46.66,Default,,0000,0000,0000,,她在笑\N{\ren}She's laughing.{\r}
+Dialogue: 0,0:34:47.97,0:34:48.81,Default,,0000,0000,0000,,他让她笑了\N{\ren}He made her laugh.{\r}
+Dialogue: 0,0:34:49.36,0:34:52.26,Default,,0000,0000,0000,,这条狗嘴里哪吐得出象牙!\N{\ren}You never heard him say anything remotely intelligent!{\r}
+Dialogue: 0,0:34:54.23,0:34:55.56,Default,,0000,0000,0000,,与勒克斯交谈的男孩\N{\ren}The boys who talked with Lux{\r}
+Dialogue: 0,0:34:55.73,0:35:00.18,Default,,0000,0000,0000,,总是很蠢 也套不出任何信息\N{\ren}were always stupid and terrible sources of information.{\r}
+Dialogue: 0,0:35:00.18,0:35:02.65,Default,,0000,0000,0000,,..手风琴 她挺好\N{\ren}...squeezebox. She's all right.{\r}
+Dialogue: 0,0:35:02.82,0:35:06.01,Default,,0000,0000,0000,,告诉你吧 她绝对是学校里最辣的女孩\N{\ren}Let me tell you, she's the hottest girl in school.{\r}
+Dialogue: 0,0:35:06.22,0:35:09.99,Default,,0000,0000,0000,,想知道发生什么了?闻我的手指吧 伙计\N{\ren}You want to know what happened? Smell my fingers, man.{\r}
+Dialogue: 0,0:35:10.23,0:35:12.99,Default,,0000,0000,0000,,不 她不谈起塞西利亚\N{\ren}No, she didn't talk about Cecilia.{\r}
+Dialogue: 0,0:35:13.19,0:35:16.19,Default,,0000,0000,0000,,我们并没在说话 如果你知道我的意思\N{\ren}We weren't exactly talking, if you know what l mean.{\r}
+Dialogue: 0,0:35:16.36,0:35:19.84,Default,,0000,0000,0000,,认识勒克斯的唯一可靠的男孩\N{\ren}The only reliable boy who actually got to know Lux{\r}
+Dialogue: 0,0:35:20.46,0:35:22.72,Default,,0000,0000,0000,,是崔普·方汀\N{\ren}was Trip Fontaine.{\r}
+Dialogue: 0,0:35:24.31,0:35:27.48,Default,,0000,0000,0000,,他最近减掉了婴儿肥\N{\ren}Who had recently lost his baby fat{\r}
+Dialogue: 0,0:35:27.67,0:35:31.55,Default,,0000,0000,0000,,这很让女孩和妈妈们高兴\N{\ren}to the delight of girls and mothers alike.{\r}
+Dialogue: 0,0:35:31.55,0:35:33.48,Default,,0000,0000,0000,,我又迟到了\N{\ren}l'm late again.{\r}
+Dialogue: 0,0:35:36.62,0:35:38.88,Default,,0000,0000,0000,,哦 拜托!\N{\ren}Oh, come on!{\r}
+Dialogue: 0,0:35:47.83,0:35:49.69,Default,,0000,0000,0000,,谢谢\N{\ren}Thank you.{\r}
+Dialogue: 0,0:36:59.77,0:37:03.20,Default,,0000,0000,0000,,我们学校的所有女孩都爱上了崔普\N{\ren}All the girls at our school are in love with Trip.{\r}
+Dialogue: 0,0:37:04.37,0:37:06.60,Default,,0000,0000,0000,,所有的女孩 除了勒克斯\N{\ren}All the girls, except Lux.{\r}
+Dialogue: 0,0:37:07.38,0:37:09.86,Default,,0000,0000,0000,,崔普说 他是从上错第五节历史课\N{\ren}Trip said his passion for Lux was started{\r}
+Dialogue: 0,0:37:10.04,0:37:14.15,Default,,0000,0000,0000,,开始迷上勒克斯的\N{\ren}when he went into the wrong History class.{\r}
+Dialogue: 0,0:37:14.15,0:37:17.98,Default,,0000,0000,0000,,按照惯例 他在外边抽大麻\N{\ren}As was his custom, he went out to smoke the marijuana{\r}
+Dialogue: 0,0:37:18.19,0:37:21.99,Default,,0000,0000,0000,,他像糖尿病童打胰岛素一样按时吸食大麻\N{\ren}he took as regularly as a diabetic kid takes lnsulin.{\r}
+Dialogue: 0,0:37:28.23,0:37:30.39,Default,,0000,0000,0000,,那一天 他为了躲伍德哈斯先生\N{\ren}On this particular day, he avoided Mr. Woodhouse{\r}
+Dialogue: 0,0:37:30.58,0:37:32.78,Default,,0000,0000,0000,,溜进一间教室\N{\ren}by ducking into a class.{\r}
+Dialogue: 0,0:37:47.78,0:37:50.41,Default,,0000,0000,0000,,她是这个旋转世界中的静点\N{\ren}She was the still point of the turning world.{\r}
+Dialogue: 0,0:37:51.95,0:37:54.79,Default,,0000,0000,0000,,我从未忘记过她 从来没有\N{\ren}l never got over that girl. Never.{\r}
+Dialogue: 0,0:37:57.06,0:38:00.43,Default,,0000,0000,0000,,我爱过很多女人 但跟那不一样…\N{\ren}l've loved a lot of ladies, but not like that...{\r}
+Dialogue: 0,0:38:00.59,0:38:01.93,Default,,0000,0000,0000,,那是真的\N{\ren}That was real.{\r}
+Dialogue: 0,0:38:01.93,0:38:05.66,Default,,0000,0000,0000,,我永远忘不了第一次见她\N{\ren}l'll never forget the first time l saw her.{\r}
+Dialogue: 0,0:38:05.87,0:38:10.53,Default,,0000,0000,0000,,我不知道是什么打动了我 我不知道该怎么办\N{\ren}l didn't know what had hit me. l didn't know what to do.{\r}
+Dialogue: 0,0:38:11.94,0:38:14.12,Default,,0000,0000,0000,,因为与别的女孩总是得心应手\N{\ren}Because it was so easy with all the other girls{\r}
+Dialogue: 0,0:38:14.28,0:38:17.18,Default,,0000,0000,0000,,但她看都不看我\N{\ren}but she wouldn't look at me.{\r}
+Dialogue: 0,0:38:18.21,0:38:20.67,Default,,0000,0000,0000,,我…我不是主动追人的类型\N{\ren}l... l was never the kind to pursue.{\r}
+Dialogue: 0,0:38:20.87,0:38:26.22,Default,,0000,0000,0000,,如果你知道我的意思\N{\ren}lf you know what l mean.{\r}
+Dialogue: 0,0:38:26.22,0:38:28.65,Default,,0000,0000,0000,,她让我疯狂 伙计\N{\ren}That girl drove me crazy, man.{\r}
+Dialogue: 0,0:38:43.60,0:38:45.80,Default,,0000,0000,0000,,真好吃\N{\ren}Mmm, yummy.{\r}
+Dialogue: 0,0:38:46.44,0:38:48.31,Default,,0000,0000,0000,,勒克斯?\N{\ren}Lux?{\r}
+Dialogue: 0,0:38:48.51,0:38:50.44,Default,,0000,0000,0000,,嘿\N{\ren}Hey.{\r}
+Dialogue: 0,0:38:54.18,0:38:57.31,Default,,0000,0000,0000,,看看 只是面包片加肉而已\N{\ren}Look at it. lt's just meat on bread rolls.{\r}
+Dialogue: 0,0:38:59.39,0:39:01.55,Default,,0000,0000,0000,,谢谢 妈妈\N{\ren}Thanks, Mum.{\r}
+Dialogue: 0,0:39:09.13,0:39:11.72,Default,,0000,0000,0000,,崔普的爸爸帮不上什么忙\N{\ren}Trip's dad was little help.{\r}
+Dialogue: 0,0:39:15.07,0:39:18.80,Default,,0000,0000,0000,,嗯 首先 别给她打电话\N{\ren}Well, first off, don't call her on the phone.{\r}
+Dialogue: 0,0:39:18.97,0:39:21.81,Default,,0000,0000,0000,,这… 很奥妙\N{\ren}lt's all... lt's all subtlety.{\r}
+Dialogue: 0,0:39:21.98,0:39:24.04,Default,,0000,0000,0000,,有细微的差别\N{\ren}lt's all nuance.{\r}
+Dialogue: 0,0:39:24.21,0:39:26.39,Default,,0000,0000,0000,,是的 你只要在学校跟她说说话\N{\ren}Yeah. You just need to talk to her at school.{\r}
+Dialogue: 0,0:39:26.56,0:39:28.59,Default,,0000,0000,0000,,什么都行\N{\ren}About anything.{\r}
+Dialogue: 0,0:39:28.63,0:39:31.79,Default,,0000,0000,0000,,天气… 或作业\N{\ren}About the weather, or... school assignments.{\r}
+Dialogue: 0,0:39:31.79,0:39:34.37,Default,,0000,0000,0000,,只要找到\N{\ren}Anything to have the chance to{\r}
+Dialogue: 0,0:39:34.54,0:39:38.33,Default,,0000,0000,0000,,用眼神交流的机会\N{\ren}communicate with the language of eye contact.{\r}
+Dialogue: 0,0:39:38.33,0:39:41.23,Default,,0000,0000,0000,,还有对计划的信心\N{\ren}And project confidence.{\r}
+Dialogue: 0,0:39:42.10,0:39:45.16,Default,,0000,0000,0000,,别让头发挡着眼\N{\ren}And keep the hair out of your eyes.{\r}
+Dialogue: 0,0:39:46.40,0:39:48.67,Default,,0000,0000,0000,,感受那气氛\N{\ren}Feel the vibe.{\r}
+Dialogue: 0,0:39:55.51,0:39:57.84,Default,,0000,0000,0000,,做你自己就好了 对\N{\ren}Just do your stuff. Yeah.{\r}
+Dialogue: 0,0:40:01.65,0:40:03.26,Default,,0000,0000,0000,,"飓风"是自然界\N{\ren}The word ''hurricane'' was the name{\r}
+Dialogue: 0,0:40:03.43,0:40:06.72,Default,,0000,0000,0000,,最强的风暴\N{\ren}given to Nature's strongest storm.{\r}
+Dialogue: 0,0:40:06.72,0:40:09.35,Default,,0000,0000,0000,,当高压气团与低压气团相遇时\N{\ren}A hurricane occurs when high pressure and low pressure{\r}
+Dialogue: 0,0:40:09.47,0:40:13.99,Default,,0000,0000,0000,,就会形成飓风\N{\ren}masses of air come into contact with one another.{\r}
+Dialogue: 0,0:40:14.16,0:40:16.01,Default,,0000,0000,0000,,两种气团通常\N{\ren}There is often a significant difference{\r}
+Dialogue: 0,0:40:16.16,0:40:20.27,Default,,0000,0000,0000,,存在显著的气温差异\N{\ren}in temperature between the two masses.{\r}
+Dialogue: 0,0:40:20.27,0:40:23.90,Default,,0000,0000,0000,,一种是暖的 另一种是冷的\N{\ren}One mass is warm, while the other is cold.{\r}
+Dialogue: 0,0:40:24.54,0:40:27.42,Default,,0000,0000,0000,,暖气团上升 冷气团下降\N{\ren}The warmer air rises and the cooler air falls.{\r}
+Dialogue: 0,0:40:29.94,0:40:31.84,Default,,0000,0000,0000,,同时 低压气团\N{\ren}Likewise, the low pressure area{\r}
+Dialogue: 0,0:40:31.99,0:40:34.88,Default,,0000,0000,0000,,从高压气团的边缘滑下\N{\ren}slides down the sides of the high pressure area.{\r}
+Dialogue: 0,0:40:34.88,0:40:37.21,Default,,0000,0000,0000,,它们互相绕着彼此打转\N{\ren}They swirl around one another,{\r}
+Dialogue: 0,0:40:37.39,0:40:38.68,Default,,0000,0000,0000,,这就是风暴的开始\N{\ren}creating the beginnings of the storm.{\r}
+Dialogue: 0,0:40:41.96,0:40:42.76,Default,,0000,0000,0000,,从这幅\N{\ren}With this footage{\r}
+Dialogue: 0,0:40:42.93,0:40:46.66,Default,,0000,0000,0000,,美国海军气象巡逻机拍的图象来看\N{\ren}taken from US Navy weather patrol aircraft,{\r}
+Dialogue: 0,0:40:46.66,0:40:48.37,Default,,0000,0000,0000,,我们可以发现\N{\ren}we can observe two masses,{\r}
+Dialogue: 0,0:40:48.65,0:40:51.02,Default,,0000,0000,0000,,高低压气团\N{\ren}one high pressure and one low pressure{\r}
+Dialogue: 0,0:40:51.19,0:40:57.14,Default,,0000,0000,0000,,彼此接触了\N{\ren}coming in contact with one and another.{\r}
+Dialogue: 0,0:40:57.14,0:40:59.87,Default,,0000,0000,0000,,结果产生了极具破坏性\N{\ren}The result is a surging storm of tremendous strength{\r}
+Dialogue: 0,0:41:00.04,0:41:02.91,Default,,0000,0000,0000,,而且强有力的大风暴\N{\ren}that strikes with forceful determination.{\r}
+Dialogue: 0,0:41:10.05,0:41:11.13,Default,,0000,0000,0000,,尽管飓风\N{\ren}Even though the hurricane{\r}
+Dialogue: 0,0:41:11.33,0:41:13.57,Default,,0000,0000,0000,,是我们所知的最强风暴\N{\ren}is the most powerful storm known to us{\r}
+Dialogue: 0,0:41:13.73,0:41:15.97,Default,,0000,0000,0000,,它袭击大块陆地\N{\ren}it strikes large land areas{\r}
+Dialogue: 0,0:41:16.15,0:41:19.19,Default,,0000,0000,0000,,比如大洲或大的岛屿\N{\ren}such as continents or large islands.{\r}
+Dialogue: 0,0:41:19.19,0:41:21.02,Default,,0000,0000,0000,,而且消退缓慢\N{\ren}and slowly dies.{\r}
+Dialogue: 0,0:41:21.23,0:41:24.89,Default,,0000,0000,0000,,是蒙特顾马先生 他最恶心了\N{\ren}Mr. Montgomery, his ass is grass.{\r}
+Dialogue: 0,0:41:30.54,0:41:32.73,Default,,0000,0000,0000,,我想约你出去\N{\ren}l want to ask you out.{\r}
+Dialogue: 0,0:41:35.04,0:41:37.10,Default,,0000,0000,0000,,没门\N{\ren}Fat chance.{\r}
+Dialogue: 0,0:41:40.55,0:41:44.61,Default,,0000,0000,0000,,首先 我要去你家看电视 First, I'll go over to your house and watch the tube.
+Dialogue: 0,0:41:44.79,0:41:47.12,Default,,0000,0000,0000,,接着我会邀你出去 And then I'm gonna ask you out.
+Dialogue: 0,0:41:55.90,0:41:57.35,Default,,0000,0000,0000,,你真是人间尤物\N{\ren}You're the stone fox.{\r}
+Dialogue: 0,0:41:58.78,0:41:59.71,Default,,0000,0000,0000,,飓风\N{\ren}The hurricane.{\r}
+Dialogue: 0,0:41:59.82,0:42:03.31,Default,,0000,0000,0000,,大自然孕育出的\N{\ren}One of the most awesome and spectacular stories{\r}
+Dialogue: 0,0:42:03.49,0:42:05.01,Default,,0000,0000,0000,,最壮丽的史诗之一\N{\ren}Nature has to offer.{\r}
+Dialogue: 0,0:42:12.51,0:42:15.31,Default,,0000,0000,0000,,这是几频道? 五\N{\ren}What channel is this? Five.{\r}
+Dialogue: 0,0:42:15.52,0:42:17.68,Default,,0000,0000,0000,,哦 来看看…\N{\ren}Oh. Let's see...{\r}
+Dialogue: 0,0:42:17.85,0:42:23.09,Default,,0000,0000,0000,,"野生动物 穿越非洲卡拉哈里沙漠的旅行"\N{\ren}''Animals in The Wild. Journey through the African Kalahari{\r}
+Dialogue: 0,0:42:23.32,0:42:26.29,Default,,0000,0000,0000,,"观赏自然栖息地中的动物"\N{\ren}''and see animals in their natural habitat.''{\r}
+Dialogue: 0,0:42:26.43,0:42:30.09,Default,,0000,0000,0000,,我觉得听上去不错 你说呢?\N{\ren}l think that sounds nice, don't you?{\r}
+Dialogue: 0,0:42:30.33,0:42:35.53,Default,,0000,0000,0000,,广大的雨林最终让位给了草原\N{\ren}This huge rainforest eventually gives way to grasslands{\r}
+Dialogue: 0,0:42:35.74,0:42:37.75,Default,,0000,0000,0000,,它往四周无限延伸\N{\ren}that stretch to the horizon in all directions{\r}
+Dialogue: 0,0:42:37.95,0:42:42.28,Default,,0000,0000,0000,,这就是卡拉哈里\N{\ren}this is the Kalahari.{\r}
+Dialogue: 0,0:42:42.28,0:42:46.41,Default,,0000,0000,0000,,想再要点可乐吗? 是的 当然 谢谢\N{\ren}Do you want some more pop? Yeah, sure. Thank you.{\r}
+Dialogue: 0,0:42:52.59,0:42:54.65,Default,,0000,0000,0000,,谢谢\N{\ren}Thanks.{\r}
+Dialogue: 0,0:42:58.59,0:43:02.55,Default,,0000,0000,0000,,草原上的繁荣景象日渐衰竭\N{\ren}The wildlife spectacle played out on these grasslands,{\r}
+Dialogue: 0,0:43:02.73,0:43:05.17,Default,,0000,0000,0000,,而休眠中的雨林\N{\ren}and in recesses of the rainforest{\r}
+Dialogue: 0,0:43:05.33,0:43:08.13,Default,,0000,0000,0000,,将在世界各地苏醒\N{\ren}is unparalleled anywhere on Earth.{\r}
+Dialogue: 0,0:43:16.81,0:43:19.08,Default,,0000,0000,0000,,勒克斯 把脚放下去\N{\ren}Lux, put your feet down, honey.{\r}
+Dialogue: 0,0:43:24.45,0:43:28.59,Default,,0000,0000,0000,,卡拉哈里和浩瀚的苍穹\N{\ren}The Kalahari and its vast open sky{\r}
+Dialogue: 0,0:43:28.62,0:43:29.62,Default,,0000,0000,0000,,为兽群以及猎食的\N{\ren}provide a theatre for the life and death drama{\r}
+Dialogue: 0,0:43:29.62,0:43:33.32,Default,,0000,0000,0000,,大型猫科动物\N{\ren}played out by the herds{\r}
+Dialogue: 0,0:43:33.53,0:43:36.83,Default,,0000,0000,0000,,上演的生死循环戏码提供了舞台\N{\ren}and the great hunting cats that play on them.{\r}
+Dialogue: 0,0:43:37.00,0:43:38.86,Default,,0000,0000,0000,,哦 天哪!\N{\ren}Oh, my!{\r}
+Dialogue: 0,0:43:39.03,0:43:41.90,Default,,0000,0000,0000,,现在已经很晚了 亲爱的? let’s getting so late. Honey...?
+Dialogue: 0,0:43:45.74,0:43:46.82,Default,,0000,0000,0000,,我说已经很晚了\N{\ren}l said it's getting late.{\r}
+Dialogue: 0,0:43:47.05,0:43:53.01,Default,,0000,0000,0000,,好的 把电视关了吧\N{\ren}Oh. Well, let's hit the TV button.{\r}
+Dialogue: 0,0:43:53.01,0:43:54.98,Default,,0000,0000,0000,,是的 呃…\N{\ren}Right. Err...{\r}
+Dialogue: 0,0:43:59.09,0:44:01.25,Default,,0000,0000,0000,,好的 谢谢\N{\ren}OK. Thank you.{\r}
+Dialogue: 0,0:44:01.49,0:44:04.89,Default,,0000,0000,0000,,很高兴见到你 里斯本太太 是的\N{\ren}lt was nice to meet you Mrs. Lisbon. Yes.{\r}
+Dialogue: 0,0:44:06.16,0:44:08.69,Default,,0000,0000,0000,,晚安 再见\N{\ren}Good night. See you.{\r}
+Dialogue: 0,0:44:29.78,0:44:31.72,Default,,0000,0000,0000,,再见\N{\ren}Bye.{\r}
+Dialogue: 0,0:44:37.12,0:44:39.25,Default,,0000,0000,0000,,再见\N{\ren}Goodbye.{\r}
+Dialogue: 0,0:45:46.56,0:45:48.62,Default,,0000,0000,0000,,我得回去\N{\ren}l've got to get back.{\r}
+Dialogue: 0,0:46:14.59,0:46:17.96,Default,,0000,0000,0000,,这是第四节课 你应该第五节课来 不是吗？\N{\ren}This is fourth period, l don't have you until fifth, do l?{\r}
+Dialogue: 0,0:46:18.16,0:46:21.10,Default,,0000,0000,0000,,我知道 我不是为数学来的 先生\N{\ren}l know. I'm not here for math today, sir.
+Dialogue: 0,0:46:24.50,0:46:25.72,Default,,0000,0000,0000,,我来告诉你\N{\ren} I'm here to tell you that my intentions for your daughter are entirely honorable.{\r}
+Dialogue: 0,0:46:25.85,0:46:31.70,Default,,0000,0000,0000,,我对你女儿的意图是真心的
+Dialogue: 0,0:46:31.71,0:46:33.39,Default,,0000,0000,0000,,什么意图?\N{\ren}What might those intentions be?{\r}
+Dialogue: 0,0:46:34.87,0:46:40.38,Default,,0000,0000,0000,,邀勒克斯去校园舞会\N{\ren}I want to ask Lux to the Homecoming Dance.{\r}
+Dialogue: 0,0:46:40.38,0:46:43.04,Default,,0000,0000,0000,,崔普 先坐下吧\N{\ren}Trip, why don't you sit down for a minute?{\r}
+Dialogue: 0,0:46:47.39,0:46:50.52,Default,,0000,0000,0000,,你知道 我妻子和我有明确的规则\N{\ren}You see, my wife and l have certain rules.{\r}
+Dialogue: 0,0:46:50.66,0:46:52.26,Default,,0000,0000,0000,,这约束了大女儿\N{\ren}They were the rules for the older girls.{\r}
+Dialogue: 0,0:46:52.43,0:46:55.93,Default,,0000,0000,0000,,我不能为了小女儿开先例\N{\ren}l can't change them for the younger ones.{\r}
+Dialogue: 0,0:46:55.93,0:46:59.37,Default,,0000,0000,0000,,就算我想 我妻子也不会同意的\N{\ren}Even if l wanted to, the wife wouldn't let me.{\r}
+Dialogue: 0,0:46:59.53,0:47:03.79,Default,,0000,0000,0000,,所以 如果你想再来看电视\N{\ren}So, if you want to come over and watch television again{\r}
+Dialogue: 0,0:47:03.94,0:47:04.71,Default,,0000,0000,0000,,那可以\N{\ren}that would be fine.{\r}
+Dialogue: 0,0:47:04.92,0:47:09.37,Default,,0000,0000,0000,,但你不能带勒克斯出去 特别是乘车\N{\ren}But you cannot take Lux out. Especially not in a car.{\r}
+Dialogue: 0,0:47:09.54,0:47:11.81,Default,,0000,0000,0000,,所以不好意思 年轻人 这是我们的规矩\N{\ren}So I'm sorry, son, that's just our policy.
+Dialogue: 0,0:47:14.92,0:47:18.41,Default,,0000,0000,0000,,好的 先生 如果我们几个男孩\N{\ren}OK, sir. What if a bunch of us guys{\r}
+Dialogue: 0,0:47:19.29,0:47:21.72,Default,,0000,0000,0000,,邀请你所有女儿们\N{\ren}and we took all your daughters out in a group{\r}
+Dialogue: 0,0:47:21.72,0:47:24.82,Default,,0000,0000,0000,,并在你规定的时间把她们送回去呢?\N{\ren}and had them back by the time you said?{\r}
+Dialogue: 0,0:47:24.99,0:47:28.45,Default,,0000,0000,0000,,你是橄榄球队的吗? 是的 先生\N{\ren}Are you on the football squad, son? Yes, sir.{\r}
+Dialogue: 0,0:47:28.63,0:47:31.56,Default,,0000,0000,0000,,什么位置? 四分卫\N{\ren}What position? Defence quarterback.{\r}
+Dialogue: 0,0:47:31.70,0:47:33.63,Default,,0000,0000,0000,,好样的\N{\ren}Ah, good.{\r}
+Dialogue: 0,0:47:33.80,0:47:37.17,Default,,0000,0000,0000,,我以前… 我当年可是中卫\N{\ren}l was a... l was a safety in my day.{\r}
+Dialogue: 0,0:47:37.34,0:47:39.60,Default,,0000,0000,0000,,嗯 那是个重要位置 先生\N{\ren}Well, that's a crucial position, sir.{\r}
+Dialogue: 0,0:47:39.77,0:47:42.02,Default,,0000,0000,0000,,得分全靠你了 不错!\N{\ren}Nothing between you and the goal line. Exactly!{\r}
+Dialogue: 0,0:47:42.21,0:47:46.07,Default,,0000,0000,0000,,哦 好吧 是这样的 先生\N{\ren}Oh, well. So the thing is, sir.{\r}
+Dialogue: 0,0:47:46.27,0:47:48.09,Default,,0000,0000,0000,,我们有场比赛\N{\ren}We've got the big game{\r}
+Dialogue: 0,0:47:48.25,0:47:49.81,Default,,0000,0000,0000,,之后还有舞会\N{\ren}and then afterwards we've got the dance.{\r}
+Dialogue: 0,0:47:51.29,0:47:53.27,Default,,0000,0000,0000,,其他人都有舞伴了\N{\ren}All the other guys are taking dates.{\r}
+Dialogue: 0,0:47:54.46,0:47:58.22,Default,,0000,0000,0000,,你很帅 很多女孩愿意跟你出去\N{\ren}You're good looking. Lots of girls would go with you.{\r}
+Dialogue: 0,0:47:59.53,0:48:02.59,Default,,0000,0000,0000,,我对她们不感兴趣 先生\N{\ren}I'm not interested in lots of girls, sir.
+Dialogue: 0,0:48:09.30,0:48:13.26,Default,,0000,0000,0000,,我会跟我妻子商量的 崔普 我尽量\N{\ren}I'll take it up with the wife, Trip. Do what l can.
+Dialogue: 0,0:48:14.21,0:48:16.47,Default,,0000,0000,0000,,谢谢 先生\N{\ren}Thank you, sir.{\r}
+Dialogue: 0,0:48:18.01,0:48:20.48,Default,,0000,0000,0000,,这可是门手艺\N{\ren}lt's a craft. Oh.{\r}
+Dialogue: 0,0:48:29.29,0:48:34.23,Default,,0000,0000,0000,,崔普·方汀和几个橄榄球队的男孩\N{\ren}Trip Fontaine and some of the boys in the football squad{\r}
+Dialogue: 0,0:48:34.40,0:48:37.66,Default,,0000,0000,0000,,想带她们去校园舞会\N{\ren}have asked to take the girls to the Homecoming Dance.{\r}
+Dialogue: 0,0:48:37.83,0:48:40.39,Default,,0000,0000,0000,,你知道我对那个怎么想\N{\ren}You know how l feel about that sort of thing.{\r}
+Dialogue: 0,0:48:40.57,0:48:43.56,Default,,0000,0000,0000,,我会保驾护航的 妈妈 拜托!\N{\ren}I'm a chaperone at the dance. Oh, please!
+Dialogue: 0,0:48:45.77,0:48:49.17,Default,,0000,0000,0000,,你爸爸和我等会儿再商量\N{\ren}Your father and l will discuss it later.{\r}
+Dialogue: 0,0:48:51.01,0:48:53.81,Default,,0000,0000,0000,,方汀先生 能跟你说句话吗?\N{\ren}Mr. Fontaine, may l speak with you, please?{\r}
+Dialogue: 0,0:48:54.72,0:48:59.78,Default,,0000,0000,0000,,关于你的请求 我和我妻子已经决定了…\N{\ren}My wife and l have come to a decision about your request...{\r}
+Dialogue: 0,0:49:14.13,0:49:16.00,Default,,0000,0000,0000,,好极了!\N{\ren}Yes!{\r}
+Dialogue: 0,0:49:20.61,0:49:22.94,Default,,0000,0000,0000,,我要带勒克斯·里斯本去校园舞会\N{\ren}I'm taking Lux Lisbon to Homecoming.
+Dialogue: 0,0:49:23.14,0:49:25.77,Default,,0000,0000,0000,,我还需要三个人带其他几个女孩\N{\ren}l need three guys to take the other girls.{\r}
+Dialogue: 0,0:49:33.42,0:49:34.68,Default,,0000,0000,0000,,我给你三支大麻 崔普\N{\ren}I'll give you three joints, Trip.\NPick me. We can take my dad's Caddy.{\r}
+Dialogue: 0,0:49:34.88,0:49:37.58,Default,,0000,0000,0000,,选我吧 我们可以开我爸的大众
+Dialogue: 0,0:49:38.39,0:49:41.02,Default,,0000,0000,0000,,你也得叫上我 崔普斯特\N{\ren}You gotta pick me, Tripster.{\r}
+Dialogue: 0,0:49:41.70,0:49:44.39,Default,,0000,0000,0000,,崔普 伙计 你欠我的\N{\ren}Trip, man. You owe me.{\r}
+Dialogue: 0,0:49:44.57,0:49:47.06,Default,,0000,0000,0000,,我那次从伍德哈斯手里救了你一命\N{\ren}l saved your ass with Woodhouse that time.{\r}
+Dialogue: 0,0:49:47.30,0:49:50.46,Default,,0000,0000,0000,,谢谢 爸爸 其他男孩是谁?\N{\ren}Thanks, Dad. Who are the other boys?{\r}
+Dialogue: 0,0:49:50.64,0:49:54.07,Default,,0000,0000,0000,,我们看看 帕克·德顿 杰克·克拉尼\N{\ren}Let's see. Parker Denton, Jake Conley{\r}
+Dialogue: 0,0:49:54.26,0:49:56.31,Default,,0000,0000,0000,,他是个好学生\N{\ren}he's a good student, dear{\r}
+Dialogue: 0,0:49:56.31,0:49:58.47,Default,,0000,0000,0000,,还有凯文·海德\N{\ren}and Kevin Head.{\r}
+Dialogue: 0,0:49:58.61,0:50:03.11,Default,,0000,0000,0000,,谁带谁? 各凭本事吧\N{\ren}Who's taking who? They're going to raffle us off.{\r}
+Dialogue: 0,0:50:04.65,0:50:08.99,Default,,0000,0000,0000,,女孩们选择哪件并不要紧\N{\ren}lt didn't make any difference which dress the girls chose.{\r}
+Dialogue: 0,0:50:09.16,0:50:11.29,Default,,0000,0000,0000,,里斯本太太在胸部加了一寸\N{\ren}Mrs. Lisbon added an inch to the bust line{\r}
+Dialogue: 0,0:50:11.49,0:50:14.56,Default,,0000,0000,0000,,腰部加了两寸\N{\ren}and two to the waist and hems.{\r}
+Dialogue: 0,0:50:14.56,0:50:17.12,Default,,0000,0000,0000,,裙子变成了四个一样的麻袋\N{\ren}The dresses became four identical sacks.{\r}
+Dialogue: 0,0:50:17.33,0:50:20.23,Default,,0000,0000,0000,,都准备好了? 是的\N{\ren}Everybody decent? Yeah.{\r}
+Dialogue: 0,0:50:21.27,0:50:23.74,Default,,0000,0000,0000,,好的 来吧\N{\ren}OK. Come on.{\r}
+Dialogue: 0,0:50:25.81,0:50:28.07,Default,,0000,0000,0000,,哦 抱歉 好了\N{\ren}Oh, I'm sorry. Here we go.
+Dialogue: 0,0:50:28.24,0:50:30.54,Default,,0000,0000,0000,,好的 离近点\N{\ren}Come on. Together.{\r}
+Dialogue: 0,0:50:30.74,0:50:32.80,Default,,0000,0000,0000,,说茄子\N{\ren}And cheddar cheese.{\r}
+Dialogue: 0,0:50:37.38,0:50:39.61,Default,,0000,0000,0000,,真兴奋!\N{\ren}Oh, it's so exciting!{\r}
+Dialogue: 0,0:50:59.91,0:51:03.67,Default,,0000,0000,0000,,准备好了吗?       好了 伙计\N{\ren}Are we ready?         Ready, man.{\r}
+Dialogue: 0,0:51:03.84,0:51:06.31,Default,,0000,0000,0000,,行动吧\N{\ren}Let's do it.{\r}
+Dialogue: 0,0:51:10.05,0:51:13.08,Default,,0000,0000,0000,,最后帕克因为那辆大众而胜出\N{\ren}ln the end Parkie won because of the Cadillac,{\r}
+Dialogue: 0,0:51:13.25,0:51:16.05,Default,,0000,0000,0000,,凯文·海德因为超猛的大麻\N{\ren}Kevin Head, because he had the killer weed,{\r}
+Dialogue: 0,0:51:16.22,0:51:19.22,Default,,0000,0000,0000,,还有周·黑尔·克拉尼 因为他获奖无数\N{\ren}and Joe Hill Conley because he won all the school prizes{\r}
+Dialogue: 0,0:51:19.39,0:51:22.23,Default,,0000,0000,0000,,崔普认为这些能打动里斯本夫妇\N{\ren}which Trip thought would impress Mr. and Mrs. Lisbon.{\r}
+Dialogue: 0,0:51:24.16,0:51:27.43,Default,,0000,0000,0000,,你们好 男孩们       你好 里斯本太太\N{\ren}Hello, boys.         Hello, Mrs. Lisbon.{\r}
+Dialogue: 0,0:51:27.60,0:51:30.23,Default,,0000,0000,0000,,进来吧       谢谢\N{\ren}Come in.         Thank you.{\r}
+Dialogue: 0,0:51:43.45,0:51:46.54,Default,,0000,0000,0000,,谁开车?       是我\N{\ren}Who's driving?         l am.{\r}
+Dialogue: 0,0:51:46.75,0:51:48.33,Default,,0000,0000,0000,,你有驾照多长时间了?\N{\ren}How long have you had your license?{\r}
+Dialogue: 0,0:51:48.50,0:51:52.09,Default,,0000,0000,0000,,两个月 但我学了一年\N{\ren}Two months. l was a learner for a year.{\r}
+Dialogue: 0,0:51:52.09,0:51:55.69,Default,,0000,0000,0000,,她们几乎没有乘车出去过\N{\ren}The girls almost never go out in cars.{\r}
+Dialogue: 0,0:51:55.90,0:51:57.45,Default,,0000,0000,0000,,最近有很多车祸\N{\ren}There's so many accidents now.{\r}
+Dialogue: 0,0:51:57.64,0:52:00.90,Default,,0000,0000,0000,,你们要小心       好的\N{\ren}I'm sure you'll be very careful.         Oh, yes, ma'am.{\r}
+Dialogue: 0,0:52:00.90,0:52:03.50,Default,,0000,0000,0000,,好的 最后评估完毕\N{\ren}OK. The third degree's over.{\r}
+Dialogue: 0,0:52:04.04,0:52:06.03,Default,,0000,0000,0000,,女孩们!\N{\ren}Girls!{\r}
+Dialogue: 0,0:52:07.91,0:52:09.61,Default,,0000,0000,0000,,我得走了 舞会见\N{\ren}I'd better go. See you at the dance.
+Dialogue: 0,0:52:09.76,0:52:12.15,Default,,0000,0000,0000,,到时见 里斯本先生\N{\ren}See you there, Mr. Lisbon.{\r}
+Dialogue: 0,0:52:12.15,0:52:14.31,Default,,0000,0000,0000,,再见 亲爱的\N{\ren}Bye, dear.{\r}
+Dialogue: 0,0:52:20.92,0:52:23.69,Default,,0000,0000,0000,,女孩们 下来\N{\ren}Girls. Come on down.{\r}
+Dialogue: 0,0:52:23.86,0:52:26.22,Default,,0000,0000,0000,,男孩们来了\N{\ren}The boys are here.{\r}
+Dialogue: 0,0:52:50.38,0:52:54.65,Default,,0000,0000,0000,,我们选的白色 因为不知道你们要穿什么\N{\ren}We got white ones. We didn't know what you were wearing{\r}
+Dialogue: 0,0:52:54.82,0:52:59.78,Default,,0000,0000,0000,,花店的人说白色百搭\N{\ren}and the flower guy said that white would go with anything.{\r}
+Dialogue: 0,0:53:00.89,0:53:03.45,Default,,0000,0000,0000,,很高兴你选白色\N{\ren}I'm glad you got white.
+Dialogue: 0,0:53:04.73,0:53:07.00,Default,,0000,0000,0000,,为什么不帮她们别上呢?\N{\ren}Why don't you pin them on?{\r}
+Dialogue: 0,0:53:30.03,0:53:32.00,Default,,0000,0000,0000,,崔普
+Dialogue: 0,0:53:34.43,0:53:37.52,Default,,0000,0000,0000,,好了 好了       我们走吧\N{\ren}There we go.         All right, let's do it.{\r}
+Dialogue: 0,0:53:37.73,0:53:39.13,Default,,0000,0000,0000,,太好了\N{\ren}Great.{\r}
+Dialogue: 0,0:53:39.33,0:53:41.63,Default,,0000,0000,0000,,再见 妈妈\N{\ren}Bye, Mum.{\r}
+Dialogue: 0,0:53:51.88,0:53:54.75,Default,,0000,0000,0000,,上帝 看啊! 那辆车又停在那儿了!\N{\ren}Oh, gosh, look! The car's there again!{\r}
+Dialogue: 0,0:53:54.98,0:53:57.25,Default,,0000,0000,0000,,我确定李先生跟她有一腿\N{\ren}I'm sure Mr. Lea's having an affair with her.
+Dialogue: 0,0:53:57.43,0:54:00.22,Default,,0000,0000,0000,,我见过他跟着她进了洗衣室\N{\ren}I saw her followed her into the laundry room.{\r}
+Dialogue: 0,0:54:00.22,0:54:02.14,Default,,0000,0000,0000,,他那个红鼻子真可悲\N{\ren}He's so sad with that red nose.{\r}
+Dialogue: 0,0:54:02.33,0:54:03.73,Default,,0000,0000,0000,,可能是个酒鬼\N{\ren}Probably an alcoholic.{\r}
+Dialogue: 0,0:54:04.84,0:54:06.29,Default,,0000,0000,0000,,海兹家的人呢？你知道他们是纳粹\N{\ren}Yep,what about the Hessed?The Hesses are Nazis.{\r}
+Dialogue: 0,0:54:06.45,0:54:08.73,Default,,0000,0000,0000,,是纳粹的拥护者\N{\ren}They're Nazi sympathizers.{\r}
+Dialogue: 0,0:54:08.73,0:54:10.06,Default,,0000,0000,0000,,他们在史沃兹小姐\N{\ren}They had a fit when Miss Schwartz{\r}
+Dialogue: 0,0:54:10.23,0:54:13.13,Default,,0000,0000,0000,,进网球俱乐部时大发雷霆\N{\ren}tried to join the tennis club.{\r}
+Dialogue: 0,0:54:13.13,0:54:17.30,Default,,0000,0000,0000,,铝边侧线不错!他们真觉得这样没问题吗?\N{\ren}Nice aluminum siding! Do they really think that looks OK?{\r}
+Dialogue: 0,0:54:18.04,0:54:20.52,Default,,0000,0000,0000,,彼特丝先生从电视上订的\N{\ren}Mr. Peters ordered that from TV later that night.{\r}
+Dialogue: 0,0:54:20.71,0:54:23.18,Default,,0000,0000,0000,,那是巴蒂诺家的烧烤木桩\N{\ren}lt's a Baldinos barbecue tree stump.{\r}
+Dialogue: 0,0:54:23.18,0:54:25.98,Default,,0000,0000,0000,,我从没见过他们在那上面烧烤!\N{\ren}l have never seen a barbecue on that thing!{\r}
+Dialogue: 0,0:54:26.15,0:54:29.21,Default,,0000,0000,0000,,事实上 那是鲨鱼老兵的逃生隧道\N{\ren}Actually, it's an escape tunnel for the Shark.{\r}
+Dialogue: 0,0:54:29.38,0:54:31.85,Default,,0000,0000,0000,,通向河边和他的快艇\N{\ren}lt leads to the river and his speedboat.{\r}
+Dialogue: 0,0:54:32.12,0:54:33.54,Default,,0000,0000,0000,,保罗经常去\N{\ren}Paul goes down there all the time.{\r}
+Dialogue: 0,0:54:33.71,0:54:36.86,Default,,0000,0000,0000,,他可以从下水道去任何一家的地下室\N{\ren}He can get into anyone's basement through the sewers.{\r}
+Dialogue: 0,0:54:36.86,0:54:38.92,Default,,0000,0000,0000,,不可能! 是的\N{\ren}No way! Yeah.{\r}
+Dialogue: 0,0:54:53.97,0:54:58.17,Default,,0000,0000,0000,,爸爸会闻出来的 不会 我有薄荷糖\N{\ren}Dad'll smell it on you. No, l got mints.{\r}
+Dialogue: 0,0:54:58.35,0:54:59.83,Default,,0000,0000,0000,,他会闻到你衣服上的味\N{\ren}He'll smell it on your clothes.{\r}
+Dialogue: 0,0:54:59.97,0:55:05.82,Default,,0000,0000,0000,,我就说有人在厕所里抽烟\N{\ren}I'll say they were smoking in the toilets.
+Dialogue: 0,0:55:05.82,0:55:08.65,Default,,0000,0000,0000,,死前先破个雏吧(烟圈) 真恶心\N{\ren}Don't let it die a virgin. That's gross.{\r}
+Dialogue: 0,0:55:08.82,0:55:11.38,Default,,0000,0000,0000,,成熟点吧 克拉尼\N{\ren}Yeah, grow up, Conley.{\r}
+Dialogue: 0,0:56:07.28,0:56:09.94,Default,,0000,0000,0000,,想跳舞吗? 当然\N{\ren}Do you want to dance? Sure.{\r}
+Dialogue: 0,0:56:12.29,0:56:13.69,Default,,0000,0000,0000,,跳舞吗?\N{\ren}Dance?{\r}
+Dialogue: 0,0:56:35.78,0:56:39.27,Default,,0000,0000,0000,,天气真不错 是吧?\N{\ren}We've been having such lovely weather, don't you think?{\r}
+Dialogue: 0,0:56:39.45,0:56:42.42,Default,,0000,0000,0000,,是的 不错… 很好\N{\ren}Yeah, we have... Nice.{\r}
+Dialogue: 0,0:56:50.76,0:56:54.32,Default,,0000,0000,0000,,晚上好 能请大家注意一下吗?\N{\ren}Good evening. Could l have your attention for a moment?{\r}
+Dialogue: 0,0:56:54.49,0:56:57.99,Default,,0000,0000,0000,,我希望大家能过的愉快 看起来正是如此\N{\ren}l hope you're having a good time. lt sure looks like it.{\r}
+Dialogue: 0,0:56:58.17,0:57:02.26,Default,,0000,0000,0000,,舞会委员会可是使出浑身解数\N{\ren}The dance committee really outdid themselves this time.{\r}
+Dialogue: 0,0:57:02.47,0:57:06.46,Default,,0000,0000,0000,,返校节舞王舞后的投票开始\N{\ren} I'd like to open the voting for Homecoming King and Queen.
+Dialogue: 0,0:57:06.67,0:57:10.40,Default,,0000,0000,0000,,投票箱就在那边 请投票\N{\ren}The ballot box is over there, so please vote.{\r}
+Dialogue: 0,0:57:10.58,0:57:12.28,Default,,0000,0000,0000,,随后我们将宣布结果\N{\ren}And we'll make the announcement in a little while.{\r}
+Dialogue: 0,0:57:12.46,0:57:17.22,Default,,0000,0000,0000,,谢谢\N{\ren}Thank you.{\r}
+Dialogue: 0,0:57:17.22,0:57:20.58,Default,,0000,0000,0000,,有人看到你过来吗? 没有\N{\ren}Did anybody see you come in? No.{\r}
+Dialogue: 0,0:57:20.75,0:57:23.25,Default,,0000,0000,0000,,你呢? 没有\N{\ren}What about you? No.{\r}
+Dialogue: 0,0:57:27.56,0:57:30.03,Default,,0000,0000,0000,,你会喜欢的\N{\ren}You'll love it.{\r}
+Dialogue: 0,0:57:35.57,0:57:37.97,Default,,0000,0000,0000,,蜜桃松子酒\N{\ren}Peach schnapps.{\r}
+Dialogue: 0,0:57:38.37,0:57:40.67,Default,,0000,0000,0000,,漂亮女孩都喜欢\N{\ren}Babes love it.{\r}
+Dialogue: 0,0:57:56.56,0:57:59.55,Default,,0000,0000,0000,,味道真好\N{\ren}That stuff tastes really good.{\r}
+Dialogue: 0,0:58:00.49,0:58:03.40,Default,,0000,0000,0000,,我不想要 谢谢\N{\ren}l don't want any, thanks.{\r}
+Dialogue: 0,0:58:03.56,0:58:06.53,Default,,0000,0000,0000,,拜托 就尝一下 尝一小口\N{\ren}Go on, just a taste. A tiny taste.{\r}
+Dialogue: 0,0:58:06.70,0:58:09.46,Default,,0000,0000,0000,,别当乖乖女了\N{\ren}Don't be such a goody goody.{\r}
+Dialogue: 0,0:58:13.61,0:58:16.17,Default,,0000,0000,0000,,别咽下去\N{\ren}Don't swallow it.{\r}
+Dialogue: 0,0:59:09.00,0:59:11.05,Default,,0000,0000,0000,,大家请注意\N{\ren}Can l have everyone's attention?{\r}
+Dialogue: 0,0:59:11.26,0:59:13.85,Default,,0000,0000,0000,,请大家鼓掌欢迎\N{\ren} I'd like you to put your hands together
+Dialogue: 0,0:59:14.00,0:59:16.60,Default,,0000,0000,0000,,今年的舞王舞后…\N{\ren}for this year's Kind and Queen...{\r}
+Dialogue: 0,0:59:16.60,0:59:18.97,Default,,0000,0000,0000,,崔普·方汀和勒克斯·里斯本\N{\ren}Trip Fontaine and Lux Lisbon.{\r}
+Dialogue: 0,1:00:47.36,1:00:50.35,Default,,0000,0000,0000,,这是我最快乐的时光!\N{\ren} I'm having the best time!
+Dialogue: 0,1:01:05.85,1:01:08.01,Default,,0000,0000,0000,,我们出去走走吧\N{\ren}Let's go for a walk.{\r}
+Dialogue: 0,1:01:08.18,1:01:12.41,Default,,0000,0000,0000,,还是算了 我一会儿得回来\N{\ren} I'd better not. l've got to go back in a minute.
+Dialogue: 0,1:01:12.59,1:01:14.10,Default,,0000,0000,0000,,我们可以盯着车\N{\ren}We can keep an eye on the car.{\r}
+Dialogue: 0,1:01:14.28,1:01:17.82,Default,,0000,0000,0000,,他们不会不等我们就走的\N{\ren}They won't leave without us.{\r}
+Dialogue: 0,1:01:17.82,1:01:20.12,Default,,0000,0000,0000,,我爸爸…\N{\ren}My dad...{\r}
+Dialogue: 0,1:01:20.33,1:01:23.63,Default,,0000,0000,0000,,告诉他你要把皇冠放到柜子里\N{\ren}Tell him you're putting the crown in your locker.{\r}
+Dialogue: 0,1:01:25.77,1:01:28.03,Default,,0000,0000,0000,,看到那块草皮了吗? 嗯?\N{\ren}See that divot there? Uh huh?{\r}
+Dialogue: 0,1:01:28.20,1:01:30.50,Default,,0000,0000,0000,,我今天就在那儿放倒了那小子\N{\ren}That's where l reamed this guy today.{\r}
+Dialogue: 0,1:01:30.67,1:01:33.20,Default,,0000,0000,0000,,全防住了       真的吗?\N{\ren}A cross body block.         Really?{\r}
+Dialogue: 0,1:01:36.38,1:01:40.31,Default,,0000,0000,0000,,可能他们跟你爸爸回去了吧?       未必\N{\ren}Maybe they went home with your dad?         l doubt it.{\r}
+Dialogue: 0,1:01:42.02,1:01:45.21,Default,,0000,0000,0000,,我们完了 是勒克斯 不是我们\N{\ren}We're cooked. Luxy is, we're not.{\r}
+Dialogue: 0,1:02:03.14,1:02:05.60,Default,,0000,0000,0000,,谁有薄荷糖?\N{\ren}Does anyone have any mints?{\r}
+Dialogue: 0,1:02:05.77,1:02:08.21,Default,,0000,0000,0000,,抱歉 没有\N{\ren}Sorry. No.{\r}
+Dialogue: 0,1:02:12.55,1:02:14.78,Default,,0000,0000,0000,,再见 帕克\N{\ren}Bye, Parkie.{\r}
+Dialogue: 0,1:02:16.65,1:02:20.21,Default,,0000,0000,0000,,我们送你们到门口       不 不必了\N{\ren}We'll walk you to the door.         No, don't.{\r}
+Dialogue: 0,1:02:20.92,1:02:24.69,Default,,0000,0000,0000,,为什么不行?      真的不必了\N{\ren}Why not?         Just don't.{\r}
+Dialogue: 0,1:02:26.83,1:02:28.26,Default,,0000,0000,0000,,好的\N{\ren}OK.{\r}
+Dialogue: 0,1:02:29.40,1:02:31.42,Default,,0000,0000,0000,,你会给我打电话吗?\N{\ren}Will you call me?{\r}
+Dialogue: 0,1:02:31.60,1:02:33.50,Default,,0000,0000,0000,,当然!\N{\ren}Absolutely!{\r}
+Dialogue: 0,1:02:38.17,1:02:39.60,Default,,0000,0000,0000,,再见\N{\ren}Bye.{\r}
+Dialogue: 0,1:02:39.77,1:02:42.61,Default,,0000,0000,0000,,再见 再见\N{\ren}Bye. Bye.{\r}
+Dialogue: 0,1:05:18.50,1:05:23.37,Default,,0000,0000,0000,,你还好吗? 你去哪儿了?\N{\ren}Are you OK? Where have you been?{\r}
+Dialogue: 0,1:05:23.54,1:05:28.50,Default,,0000,0000,0000,,看看你这个样子! 进屋去!\N{\ren}Look at the state of you! Get in the house!{\r}
+Dialogue: 0,1:05:38.79,1:05:40.10,Default,,0000,0000,0000,,那晚我独自走回家了\N{\ren}l walked home alone that night.{\r}
+Dialogue: 0,1:05:40.31,1:05:44.46,Default,,0000,0000,0000,,不关心她怎么回去 很奇怪\N{\ren}l didn't care how she got home. lt was weird.{\r}
+Dialogue: 0,1:05:44.46,1:05:46.01,Default,,0000,0000,0000,,我是说 我喜欢她 我非常喜欢她\N{\ren}l mean, l liked her. l liked her a lot.{\r}
+Dialogue: 0,1:05:47.20,1:05:52.00,Default,,0000,0000,0000,,但那晚在操场…\N{\ren}But out there on the field...{\r}
+Dialogue: 0,1:05:52.00,1:05:54.63,Default,,0000,0000,0000,,那就是另一回事了\N{\ren}lt was just different then.{\r}
+Dialogue: 0,1:05:57.00,1:05:59.44,Default,,0000,0000,0000,,那是我最后一次见她\N{\ren}That was the last time l saw her.{\r}
+Dialogue: 0,1:06:02.38,1:06:06.40,Default,,0000,0000,0000,,你知道 大多数人从没尝过那种爱情\N{\ren}You know, most people will never taste that kind of love.{\r}
+Dialogue: 0,1:06:06.58,1:06:09.55,Default,,0000,0000,0000,,但至少我经历过一次 对吗?\N{\ren}But at least l tasted it once, right?{\r}
+Dialogue: 0,1:06:14.42,1:06:17.58,Default,,0000,0000,0000,,您应该去开六点钟的群会了\N{\ren}lt's time for your six o'clock group meeting.{\r}
+Dialogue: 0,1:06:32.31,1:06:34.30,Default,,0000,0000,0000,,对勒克斯的晚归\N{\ren}Given Lux's failure to make curfew{\r}
+Dialogue: 0,1:06:34.47,1:06:38.84,Default,,0000,0000,0000,,大家都预料到了坏结果\N{\ren}everyone expected a crackdown.{\r}
+Dialogue: 0,1:06:38.85,1:06:42.37,Default,,0000,0000,0000,,但没人想到会如此惨烈\N{\ren}But few anticipated it would be so drastic.{\r}
+Dialogue: 0,1:06:43.22,1:06:44.71,Default,,0000,0000,0000,,女孩们被禁止上学\N{\ren}The girls were taken out of school{\r}
+Dialogue: 0,1:06:44.90,1:06:46.48,Default,,0000,0000,0000,,里斯本太太\N{\ren}and Mrs. Lisbon shut the house{\r}
+Dialogue: 0,1:06:46.64,1:06:49.91,Default,,0000,0000,0000,,以最大的安全措施封锁了她家\N{\ren}in maximum security isolation.{\r}
+Dialogue: 0,1:06:50.92,1:06:53.92,Default,,0000,0000,0000,,她不止不让女孩们上学\N{\ren}She did more than taking the girls out of school.{\r}
+Dialogue: 0,1:06:54.09,1:06:57.15,Default,,0000,0000,0000,,那个星期天 在一场教堂说教后\N{\ren}That Sunday, after a spirited church sermon.{\r}
+Dialogue: 0,1:06:57.33,1:07:00.66,Default,,0000,0000,0000,,里斯本太太让勒克斯销毁她的唱片\N{\ren}Mrs. Lisbon made Lux destroy her records.{\r}
+Dialogue: 0,1:07:00.87,1:07:02.27,Default,,0000,0000,0000,,快点!\N{\ren}Now!{\r}
+Dialogue: 0,1:07:02.47,1:07:04.40,Default,,0000,0000,0000,,但是 妈妈…\N{\ren}But, Mum...{\r}
+Dialogue: 0,1:07:04.54,1:07:07.03,Default,,0000,0000,0000,,我最后再说一遍 勒克斯\N{\ren}This is final, Luxy.{\r}
+Dialogue: 0,1:07:07.21,1:07:10.40,Default,,0000,0000,0000,,这不公平       我说快点\N{\ren}That's not fair.        l said now.{\r}
+Dialogue: 0,1:07:27.89,1:07:30.26,Default,,0000,0000,0000,,就现在 勒克斯!\N{\ren}Now, Luxy!{\r}
+Dialogue: 0,1:07:43.38,1:07:45.31,Default,,0000,0000,0000,,快点儿\N{\ren}Come on.{\r}
+Dialogue: 0,1:07:49.72,1:07:53.35,Default,,0000,0000,0000,,热吻乐队 请别让我这么做\N{\ren}Kiss. Please don't make me do this.{\r}
+Dialogue: 0,1:07:53.52,1:07:55.42,Default,,0000,0000,0000,,烧了它\N{\ren}Burn it.{\r}
+Dialogue: 0,1:08:07.80,1:08:09.75,Default,,0000,0000,0000,,妈妈 空中铁匠!\N{\ren}Oh, Mum, Aerosmith!{\r}
+Dialogue: 0,1:08:09.97,1:08:12.27,Default,,0000,0000,0000,,拜托 别让我这么做\N{\ren}Come on, please don't make me burn this.{\r}
+Dialogue: 0,1:08:12.27,1:08:14.24,Default,,0000,0000,0000,,拜托…\N{\ren}Please...{\r}
+Dialogue: 0,1:08:14.41,1:08:16.81,Default,,0000,0000,0000,,什么味道?\N{\ren}What's that smell?{\r}
+Dialogue: 0,1:08:18.21,1:08:20.29,Default,,0000,0000,0000,,好吧 先至此为止\N{\ren}All right, that'll do for now.{\r}
+Dialogue: 0,1:08:20.49,1:08:22.98,Default,,0000,0000,0000,,给我 给我\N{\ren}Give me these... Give me these.{\r}
+Dialogue: 0,1:08:22.98,1:08:25.28,Default,,0000,0000,0000,,我扔到垃圾箱里\N{\ren} I'll put them in the trash.
+Dialogue: 0,1:09:02.76,1:09:04.92,Default,,0000,0000,0000,,从此我们开始看见勒克斯\N{\ren}This was around the time we began seeing Lux{\r}
+Dialogue: 0,1:09:05.06,1:09:07.79,Default,,0000,0000,0000,,在屋顶跟不同男人做爱\N{\ren}making love on the roof with random men.{\r}
+Dialogue: 0,1:09:07.79,1:09:11.13,Default,,0000,0000,0000,,她脱光了吗?       看不出来\N{\ren}ls she naked?         You can't tell.{\r}
+Dialogue: 0,1:09:11.30,1:09:13.60,Default,,0000,0000,0000,,对准\N{\ren}Get it focused.{\r}
+Dialogue: 0,1:09:13.77,1:09:16.16,Default,,0000,0000,0000,,别吵了 等轮到你再说\N{\ren}Will you stop? Wait your turn.{\r}
+Dialogue: 0,1:09:16.30,1:09:17.47,Default,,0000,0000,0000,,他们在干什么?\N{\ren}What are they doing?{\r}
+Dialogue: 0,1:09:17.47,1:09:19.58,Default,,0000,0000,0000,,他们在滚来滚去\N{\ren}They're rolling around up there.{\r}
+Dialogue: 0,1:09:19.76,1:09:23.94,Default,,0000,0000,0000,,等等 她在他上面\N{\ren}Hold on. She's on him.{\r}
+Dialogue: 0,1:09:24.11,1:09:25.98,Default,,0000,0000,0000,,他的手插在她头发里\N{\ren}He's rubbing his hands through her hair.{\r}
+Dialogue: 0,1:09:25.98,1:09:29.78,Default,,0000,0000,0000,,让我看看       不 这是我的望远镜 瑞斯\N{\ren}Let me look.         No. No, it's my telescope, Chase.{\r}
+Dialogue: 0,1:09:31.88,1:09:32.95,Default,,0000,0000,0000,,好的 还有什么?\N{\ren}Yes and what else?{\r}
+Dialogue: 0,1:09:33.13,1:09:36.79,Default,,0000,0000,0000,,那男人穿着汉堡屋的制服\N{\ren}That man's in a burger chalet uniform.{\r}
+Dialogue: 0,1:09:36.79,1:09:38.42,Default,,0000,0000,0000,,给我看看\N{\ren}Let me see.{\r}
+Dialogue: 0,1:09:40.23,1:09:43.89,Default,,0000,0000,0000,,是啊谁知道下一个有艳遇的是谁\N{\ren}Yeah. You never think that those guys ever get lucky.{\r}
+Dialogue: 0,1:09:44.10,1:09:47.50,Default,,0000,0000,0000,,接着她问我 刚才的事算不算下流\N{\ren}Then she asks me if what we'd just done was dirty.{\r}
+Dialogue: 0,1:09:47.70,1:09:50.07,Default,,0000,0000,0000,,我知道该怎么说 我说不是\N{\ren}l knew what to say. l said no.{\r}
+Dialogue: 0,1:09:50.24,1:09:53.07,Default,,0000,0000,0000,,接着她拉着我的手问"你喜欢我 是吗?"\N{\ren}Then she goes, ''You like me, don't you?''{\r}
+Dialogue: 0,1:09:53.24,1:09:57.01,Default,,0000,0000,0000,,我什么也没说 最好让小妞们猜测\N{\ren}l didn't say anything. lt's best to keep chicks guessing.{\r}
+Dialogue: 0,1:09:57.18,1:10:01.61,Default,,0000,0000,0000,,瑞斯 宝贝儿 晚饭前得练习小提琴\N{\ren}Chase, honey. Come practice your violin before dinner.{\r}
+Dialogue: 0,1:10:03.52,1:10:04.92,Default,,0000,0000,0000,,你不会相信的\N{\ren}You're not going to believe it.{\r}
+Dialogue: 0,1:10:05.10,1:10:08.19,Default,,0000,0000,0000,,勒克斯今晚又上屋顶了!\N{\ren}Lux is on the roof again tonight!{\r}
+Dialogue: 0,1:10:08.19,1:10:11.65,Default,,0000,0000,0000,,她的手在下滑 我得看看\N{\ren}Her hands are moving down. l gotta see this.{\r}
+Dialogue: 0,1:10:11.79,1:10:15.32,Default,,0000,0000,0000,,太美了       现在是她在上面了\N{\ren}This is beautiful.         Now she's on top of him.{\r}
+Dialogue: 0,1:10:16.26,1:10:19.66,Default,,0000,0000,0000,,她在做什么 伙计?       等等\N{\ren}What's she doing, man?        Wait.{\r}
+Dialogue: 0,1:10:19.80,1:10:22.67,Default,,0000,0000,0000,,现在做完了 他起来了\N{\ren}Now they're done. He's getting up.{\r}
+Dialogue: 0,1:10:24.67,1:10:28.20,Default,,0000,0000,0000,,就这样? 真是快\N{\ren}That's it? That was quick.{\r}
+Dialogue: 0,1:10:36.18,1:10:40.20,Default,,0000,0000,0000,,...再加1 如果指数是时间\N{\ren}...plus one. And if the exponential is time{\r}
+Dialogue: 0,1:10:40.38,1:10:42.15,Default,,0000,0000,0000,,那我们就有…\N{\ren}then you'd have as you approach...{\r}
+Dialogue: 0,1:10:42.16,1:10:45.33,Default,,0000,0000,0000,,早安\N{\ren}Oh, good morning.{\r}
+Dialogue: 0,1:10:45.51,1:10:59.54,Default,,0000,0000,0000,,用光合作用做早餐了吗?\N{\ren}Have we photosynthesized our breakfast today?{\r}
+Dialogue: 0,1:10:59.54,1:11:02.91,Default,,0000,0000,0000,,你好 罗纳德 嗨 哈里\N{\ren}Hello, Ronald. Hi, Harry.{\r}
+Dialogue: 0,1:11:04.18,1:11:07.37,Default,,0000,0000,0000,,你的女儿们已经两周没来上学了\N{\ren}Your daughters haven't been at school for over two weeks.{\r}
+Dialogue: 0,1:11:09.62,1:11:12.21,Default,,0000,0000,0000,,你查过了?\N{\ren}Have you checked out back?{\r}
+Dialogue: 0,1:11:16.66,1:11:18.92,Default,,0000,0000,0000,,他们找了个新数学老师\N{\ren}They've found a new Math teacher.{\r}
+Dialogue: 0,1:11:19.13,1:11:22.69,Default,,0000,0000,0000,,他得找新工作了 我知道\N{\ren}He'll have to get another job. l know.{\r}
+Dialogue: 0,1:11:25.00,1:11:29.02,Default,,0000,0000,0000,,女孩们还要这样被关多久?\N{\ren}How long can those girls be cooped up like that?{\r}
+Dialogue: 0,1:11:47.02,1:11:49.75,Default,,0000,0000,0000,,走开 这是我们的树\N{\ren}Go away. This is our tree.{\r}
+Dialogue: 0,1:11:49.89,1:11:54.83,Default,,0000,0000,0000,,女孩们 女孩们…为时已晚 这棵树已经死了\N{\ren}Girls, girls... lt's a little late. This tree is dead.{\r}
+Dialogue: 0,1:11:55.03,1:11:56.57,Default,,0000,0000,0000,,为什么不让它自生自灭呢?\N{\ren}Why don't you leave it up to Nature?{\r}
+Dialogue: 0,1:11:56.74,1:11:58.73,Default,,0000,0000,0000,,那样所有树都会死\N{\ren}lf we did, there'd be no trees left.{\r}
+Dialogue: 0,1:11:58.73,1:12:01.39,Default,,0000,0000,0000,,反正最后结果也一样\N{\ren}That's what it's going to be like anyway.{\r}
+Dialogue: 0,1:12:01.57,1:12:02.89,Default,,0000,0000,0000,,如果真菌没从欧洲扩散\N{\ren}lf they didn't bring the fungus from Europe{\r}
+Dialogue: 0,1:12:03.06,1:12:05.17,Default,,0000,0000,0000,,就不会这样了\N{\ren}this wouldn't have happened.{\r}
+Dialogue: 0,1:12:05.17,1:12:07.61,Default,,0000,0000,0000,,好的 走吧\N{\ren}OK. Let's go.{\r}
+Dialogue: 0,1:12:09.31,1:12:10.71,Default,,0000,0000,0000,,不走?\N{\ren}No?{\r}
+Dialogue: 0,1:12:10.84,1:12:14.97,Default,,0000,0000,0000,,这样 我收到命令要砍掉你们的榆树\N{\ren}That's it. l have an order to cut down your elm tree,{\r}
+Dialogue: 0,1:12:15.15,1:12:17.45,Default,,0000,0000,0000,,但你的孩子们不让\N{\ren}but your kids won't let us.{\r}
+Dialogue: 0,1:12:17.62,1:12:18.88,Default,,0000,0000,0000,,你怎么知道树有病\N{\ren}How do you know it's sick.{\r}
+Dialogue: 0,1:12:19.03,1:12:21.10,Default,,0000,0000,0000,,相信我 它叶子都黄了\N{\ren}Believe me or not, it has yellow leaves,{\r}
+Dialogue: 0,1:12:21.27,1:12:22.51,Default,,0000,0000,0000,,真的死了 it’s dead for Christsake.\N{\ren}Are you familiar with arbotect?{\r}
+Dialogue: 0,1:12:22.51,1:12:23.81,Default,,0000,0000,0000,,知道毒疗法吗\N{\ren}Our daughter show us an article{\r}
+Dialogue: 0,1:12:23.95,1:12:25.11,Default,,0000,0000,0000,,我女儿给我看的文章\N{\ren}says it was less aggressive therapy.{\r}
+Dialogue: 0,1:12:25.23,1:12:26.16,Default,,0000,0000,0000,,里说这创伤较小\N{\ren}lt doesn't work.{\r}
+Dialogue: 0,1:12:26.36,1:12:27.06,Default,,0000,0000,0000,,没用\N{\ren}l leave that tree there, they'll all go.{\r}
+Dialogue: 0,1:12:27.06,1:12:29.36,Default,,0000,0000,0000,,要是把它留着 明年所有树都会死
+Dialogue: 0,1:12:29.54,1:12:32.03,Default,,0000,0000,0000,,早晚都会死嘛\N{\ren}They could anyway.{\r}
+Dialogue: 0,1:12:32.03,1:12:34.23,Default,,0000,0000,0000,,听着 我不想打电话给警察\N{\ren}Look, l don't want to call the police.{\r}
+Dialogue: 0,1:12:34.40,1:12:36.77,Default,,0000,0000,0000,,我女儿站在自家草坪上\N{\ren}Our daughters are standing on our lawn.{\r}
+Dialogue: 0,1:12:36.95,1:12:54.35,Default,,0000,0000,0000,,这犯哪门子的罪?\N{\ren}Since when is that a crime?{\r}
+Dialogue: 0,1:12:54.35,1:12:56.82,Default,,0000,0000,0000,,克里弗 看到那些穿睡衣的女孩了吗?\N{\ren}Clive. See those girls in their nighties?{\r}
+Dialogue: 0,1:12:56.98,1:12:59.02,Default,,0000,0000,0000,,就拍那儿 That's what I want. That’s the shot that l want.
+Dialogue: 0,1:12:59.03,1:13:00.95,Default,,0000,0000,0000,,亲爱的 再往前一点\N{\ren}Honey, you'll have to move forward.{\r}
+Dialogue: 0,1:13:01.11,1:13:04.03,Default,,0000,0000,0000,,我想拍穿睡衣的女孩\N{\ren}l want those girls in their nighties.{\r}
+Dialogue: 0,1:13:04.03,1:13:08.09,Default,,0000,0000,0000,,后面一点 放松点\N{\ren}Let's back up. Give me some more slack.{\r}
+Dialogue: 0,1:13:08.30,1:13:12.00,Default,,0000,0000,0000,,好了 这样行吗? 好\N{\ren}There you go.ls that good? Great.{\r}
+Dialogue: 0,1:13:12.17,1:13:14.21,Default,,0000,0000,0000,,去年引起国内一片哗然的\N{\ren}Four sisters of Cecilia Lisbon,{\r}
+Dialogue: 0,1:13:14.36,1:13:17.01,Default,,0000,0000,0000,,东部自杀少女塞西利亚·里斯本\N{\ren}the teenager whose suicide last summer{\r}
+Dialogue: 0,1:13:17.20,1:13:19.43,Default,,0000,0000,0000,,她的四个姐姐关注全国性的问题\N{\ren}focused awareness on a national problem,{\r}
+Dialogue: 0,1:13:19.98,1:13:21.71,Default,,0000,0000,0000,,不顾危险\N{\ren}put their own lives in jeopardy{\r}
+Dialogue: 0,1:13:21.92,1:13:25.48,Default,,0000,0000,0000,,想保护塞西利亚深爱的榆树\N{\ren}by trying to protect the elm that Cecilia so dearly loved.{\r}
+Dialogue: 0,1:14:13.31,1:14:15.59,Default,,0000,0000,0000,,一阴天你的黑眼圈就很明显\N{\ren}The circles under your eyes come out when it's overcast{\r}
+Dialogue: 0,1:14:15.76,1:14:18.97,Default,,0000,0000,0000,,你得涂…\N{\ren}so you need to wear...{\r}
+Dialogue: 0,1:14:18.97,1:14:23.60,Default,,0000,0000,0000,,接下来的几个星期 我们基本见不到她们\N{\ren}For the next few weeks we hardly saw the girls at all.{\r}
+Dialogue: 0,1:14:23.78,1:14:26.57,Default,,0000,0000,0000,,乔依并没照约定给特瑞丝打电话\N{\ren}Joe didn't call Therese as he had promised.{\r}
+Dialogue: 0,1:14:32.25,1:14:36.19,Default,,0000,0000,0000,,勒克斯再也没跟崔普说过话\N{\ren}And Lux never spoke to Trip again.{\r}
+Dialogue: 0,1:14:38.06,1:14:40.62,Default,,0000,0000,0000,,你真是人间尤物\N{\ren}You're the stone fox.{\r}
+Dialogue: 0,1:14:45.56,1:14:47.89,Default,,0000,0000,0000,,女孩们与世界的唯一联系\N{\ren}The girls' only contact with the outside world{\r}
+Dialogue: 0,1:14:48.06,1:14:50.20,Default,,0000,0000,0000,,是她们订的杂志\N{\ren}was through the catalogues they ordered.{\r}
+Dialogue: 0,1:14:50.20,1:14:52.23,Default,,0000,0000,0000,,她们的邮箱里\N{\ren}I started filled Lisbon's mailbox with{\r}
+Dialogue: 0,1:14:52.74,1:14:54.51,Default,,0000,0000,0000,,充满了时尚图片\N{\ren}pictures of high end fashions{\r}
+Dialogue: 0,1:14:54.51,1:14:57.44,Default,,0000,0000,0000,,还有异国旅游手册\N{\ren}and brochures for exotic vacations.{\r}
+Dialogue: 0,1:14:58.51,1:14:59.70,Default,,0000,0000,0000,,因为不能外出\N{\ren}Unable to go anywhere{\r}
+Dialogue: 0,1:14:59.90,1:15:03.20,Default,,0000,0000,0000,,她们乘着想像游览暹罗神庙\N{\ren}they traveled in their imaginations to Siamese temples,{\r}
+Dialogue: 0,1:15:03.35,1:15:05.97,Default,,0000,0000,0000,,又或经过\N{\ren}or past an old man with a leaf broom{\r}
+Dialogue: 0,1:15:06.15,1:15:08.29,Default,,0000,0000,0000,,打扫满地青苔的日本老人\N{\ren}tidying a moss carpeted speck of Japan.{\r}
+Dialogue: 0,1:15:11.97,1:15:13.67,Default,,0000,0000,0000,,我们订了同样的杂志\N{\ren}We ordered the same catalogues{\r}
+Dialogue: 0,1:15:13.86,1:15:17.85,Default,,0000,0000,0000,,与她们在蒙尘的小道上远足\N{\ren}and hiked through dusty passes with the girls.{\r}
+Dialogue: 0,1:15:18.01,1:15:19.93,Default,,0000,0000,0000,,时不时停下\N{\ren}Stopping every now and then{\r}
+Dialogue: 0,1:15:20.09,1:15:23.00,Default,,0000,0000,0000,,帮她们整理背包\N{\ren}to help them with their backpacks.{\r}
+Dialogue: 0,1:15:23.00,1:15:26.06,Default,,0000,0000,0000,,将手放在她们温暖 湿润的肩膀上\N{\ren}Placing our hands on their warm, moist shoulders,{\r}
+Dialogue: 0,1:15:26.24,1:15:30.00,Default,,0000,0000,0000,,共赏日落的余辉\N{\ren}and gazing off at the fire sunsets.{\r}
+Dialogue: 0,1:15:30.24,1:15:33.64,Default,,0000,0000,0000,,我们和她们一起在凉亭喝茶\N{\ren}We drank tea with them in a water pavilion.{\r}
+Dialogue: 0,1:15:34.18,1:15:36.77,Default,,0000,0000,0000,,我们随心所欲\N{\ren}We did whatever we wanted.{\r}
+Dialogue: 0,1:15:37.65,1:15:41.59,Default,,0000,0000,0000,,塞西利亚没有死 她是加尔各答的新娘\N{\ren}Cecilia hadn't died. She was a bride in Calcutta.{\r}
+Dialogue: 0,1:15:44.52,1:15:46.93,Default,,0000,0000,0000,,无法实现的旅行\N{\ren}The only way we felt close to the girls{\r}
+Dialogue: 0,1:15:47.09,1:15:49.79,Default,,0000,0000,0000,,是我们走近她们的唯一方法\N{\ren}was through these impossible excursions{\r}
+Dialogue: 0,1:15:49.80,1:15:52.13,Default,,0000,0000,0000,,那让我们铭记终生\N{\ren}which have scared us forever,{\r}
+Dialogue: 0,1:15:52.33,1:15:56.13,Default,,0000,0000,0000,,这些梦比真实的女人更让我们快乐\N{\ren}making us happier with dreams than wives.{\r}
+Dialogue: 0,1:15:57.80,1:15:59.58,Default,,0000,0000,0000,,我们收集她们所有的东西\N{\ren}Collecting everything we could of theirs,{\r}
+Dialogue: 0,1:15:59.73,1:16:02.97,Default,,0000,0000,0000,,女孩们萦绕在我们脑海里\N{\ren}the Lisbon girls wouldn't leave our minds,{\r}
+Dialogue: 0,1:16:02.98,1:16:05.27,Default,,0000,0000,0000,,但她们在消逝\N{\ren}but they were slipping away.{\r}
+Dialogue: 0,1:16:05.48,1:16:07.35,Default,,0000,0000,0000,,她们眼睛的颜色渐渐淡去\N{\ren}The colors of their eyes faded along{\r}
+Dialogue: 0,1:16:07.51,1:16:10.68,Default,,0000,0000,0000,,连同消失的酒窝\N{\ren}with the exact location of their dimples.{\r}
+Dialogue: 0,1:16:10.68,1:16:12.38,Default,,0000,0000,0000,,五个变成了四个\N{\ren}From five they had become four,{\r}
+Dialogue: 0,1:16:12.54,1:16:15.82,Default,,0000,0000,0000,,如行尸走肉般活着…\N{\ren}and they were all living in the dead...{\r}
+Dialogue: 0,1:16:15.82,1:16:18.19,Default,,0000,0000,0000,,变成了影子\N{\ren}becoming shadows.{\r}
+Dialogue: 0,1:16:18.36,1:16:19.41,Default,,0000,0000,0000,,如果她们没有联系我们\N{\ren}We were losing them{\r}
+Dialogue: 0,1:16:19.58,1:16:21.83,Default,,0000,0000,0000,,我们就彻底失去她们了\N{\ren}when the girls contacted us.{\r}
+Dialogue: 0,1:16:21.83,1:16:25.96,Default,,0000,0000,0000,,1长 2短\N{\ren}One long. Two short.{\r}
+Dialogue: 0,1:16:26.80,1:16:29.27,Default,,0000,0000,0000,,1长 记下了?\N{\ren}One long. Have you got that?{\r}
+Dialogue: 0,1:16:29.97,1:16:32.70,Default,,0000,0000,0000,,就这样 好的\N{\ren}That's it. OK.{\r}
+Dialogue: 0,1:16:34.24,1:16:36.11,Default,,0000,0000,0000,,救助\N{\ren}Help.{\r}
+Dialogue: 0,1:16:36.78,1:16:38.64,Default,,0000,0000,0000,,送来\N{\ren}Send.{\r}
+Dialogue: 0,1:16:40.01,1:16:43.21,Default,,0000,0000,0000,,{\ren}Bo... Bo Bo... Bo.{\r}
+Dialogue: 0,1:16:45.55,1:16:49.58,Default,,0000,0000,0000,,Bobo? Bobo 就是这个… Bobo\N{\ren}Bobo? Bobo. That's it... Bobo.{\r}
+Dialogue: 0,1:16:49.76,1:16:54.35,Default,,0000,0000,0000,,"救助 送来Bobo" 我还以为你懂摩尔斯密码!\N{\ren}''Help. Send Bobo.'' l thought you knew Morse code!{\r}
+Dialogue: 0,1:17:22.72,1:17:25.02,Default,,0000,0000,0000,,有东西给你\N{\ren}There's something here for you.{\r}
+Dialogue: 0,1:17:25.30,1:17:28.02,Default,,0000,0000,0000,,记得我们吗? 你会帮忙吗? 给瑞斯
+Dialogue: 0,1:17:32.70,1:17:34.83,Default,,0000,0000,0000,,我也收到一张\N{\ren}l got one, too.{\r}
+Dialogue: 0,1:17:35.50,1:17:37.20,Default,,0000,0000,0000,,亲爱的无论是谁 告诉催普我不爱他了 他是个混蛋
+Dialogue: 0,1:17:37.24,1:17:40.07,Default,,0000,0000,0000,,我们绞尽脑汁地想联系她们\N{\ren}We racked our brains for a way of contacting them.{\r}
+Dialogue: 0,1:17:40.24,1:17:42.25,Default,,0000,0000,0000,,汤姆建议我们往她们家放风筝\N{\ren}Tom suggested we fly a kite{\r}
+Dialogue: 0,1:17:42.43,1:17:44.54,Default,,0000,0000,0000,,上面绑上纸条\N{\ren}with a message alongside the house.{\r}
+Dialogue: 0,1:17:44.54,1:17:47.03,Default,,0000,0000,0000,,但这有逻辑上的错误\N{\ren}But that had logistical problems.{\r}
+Dialogue: 0,1:17:47.18,1:17:50.40,Default,,0000,0000,0000,,最后 答案很简单\N{\ren}ln the end, the answer was simple to come up with{\r}
+Dialogue: 0,1:17:50.52,1:17:52.78,Default,,0000,0000,0000,,我们给她们打电话\N{\ren}we called them on the telephone.{\r}
+Dialogue: 0,1:17:57.76,1:18:00.02,Default,,0000,0000,0000,,准备\N{\ren}Get ready.{\r}
+Dialogue: 0,1:18:02.46,1:18:05.92,Default,,0000,0000,0000,,你好? 行动!\N{\ren}Hello? Go!{\r}
+Dialogue: 0,1:18:06.00,1:18:08.92,Default,,0000,0000,0000,,嗨 是我\N{\ren}Hello, it's me{\r}
+Dialogue: 0,1:18:12.46,1:18:16.92,Default,,0000,0000,0000,,我为你我的关系苦恼了很久\N{\ren}I've thought about us for a long, long time{\r}
+Dialogue: 0,1:18:17.58,1:18:20.27,Default,,0000,0000,0000,,打给我们 7270487\N{\ren}Call us. 7270487.{\r}
+Dialogue: 0,1:18:25.58,1:18:27.27,Default,,0000,0000,0000,,该死 是她们\N{\ren}Shit. lt's them.{\r}
+Dialogue: 0,1:18:33.39,1:18:34.55,Default,,0000,0000,0000,,回首昨日\N{\ren}To think that only yesterday{\r}
+Dialogue: 0,1:18:36.39,1:18:38.55,Default,,0000,0000,0000,,我曾无忧无虑\N{\ren}I was cheerful, bright and gay{\r}
+Dialogue: 0,1:18:38.89,1:18:40.55,Default,,0000,0000,0000,,对无人知晓的未来\N{\ren}Looking forward to who wouldn't do{\r}
+Dialogue: 0,1:18:40.58,1:18:42.55,Default,,0000,0000,0000,,和一切充满希翼\N{\ren}The role I was about to play?{\r}
+Dialogue: 0,1:18:44.39,1:18:46.55,Default,,0000,0000,0000,,危难之际\N{\ren}In my hour of need{\r}
+Dialogue: 0,1:18:47.39,1:18:52.55,Default,,0000,0000,0000,,我是真的 再次孤身一人 本就如此\N{\ren}I truly am indeed Alone again naturally{\r}
+Dialogue: 0,1:18:54.39,1:18:59.55,Default,,0000,0000,0000,,投入我怀抱 当你孤单的时候\N{\ren}Run to me whenever you're lonely{\r}
+Dialogue: 0,1:19:00.59,1:19:05.55,Default,,0000,0000,0000,,投入我怀抱 每当你需要依靠\N{\ren}Run to me if you need a shoulder{\r}
+Dialogue: 0,1:19:07.39,1:19:11.55,Default,,0000,0000,0000,,某些时刻 你的他应该成熟而可靠\N{\ren}Now and then, you need someone older{\r}
+Dialogue: 0,1:19:13.39,1:19:15.55,Default,,0000,0000,0000,,那么 宝贝 来到我的怀抱\N{\ren}so darling, you run to me{\r}
+Dialogue: 0,1:19:16.39,1:19:18.55,Default,,0000,0000,0000,,遥远的彼岸\N{\ren}So far away{\r}
+Dialogue: 0,1:19:19.39,1:19:23.55,Default,,0000,0000,0000,,是否仍有人原地驻足\N{\ren}Doesn't anybody stay in one place anymore{\r}
+Dialogue: 0,1:19:25.39,1:19:30.55,Default,,0000,0000,0000,,看到你出现在门前 很幸福\N{\ren}It would be so fine to see your face at my door{\r}
+Dialogue: 0,1:19:32.39,1:19:39.55,Default,,0000,0000,0000,,却无从得知 你将时光虚度\N{\ren}Doesn't help to know You're just time away{\r}
+Dialogue: 0,1:19:42.33,1:19:46.26,Default,,0000,0000,0000,,我要回家了 明天见       回见\N{\ren} I'm going home. See you tomorrow.         See you later.
+Dialogue: 0,1:19:50.04,1:19:52.70,Default,,0000,0000,0000,,我们快窒息了 勒克斯      你在这儿很安全\N{\ren}We're suffocating.         Lux, you're safe here.{\r}
+Dialogue: 0,1:19:52.94,1:19:54.60,Default,,0000,0000,0000,,我没法呼吸\N{\ren}l can't breathe.{\r}
+Dialogue: 0,1:19:57.51,1:19:59.67,Default,,0000,0000,0000,,没人接\N{\ren}No answer.{\r}
+Dialogue: 0,1:20:10.51,1:20:13.67,Default,,0000,0000,0000,,明天午夜 等我们的信号
+Dialogue: 0,1:20:22.03,1:20:24.80,Default,,0000,0000,0000,,几点了?       到时候了\N{\ren}What time is it?        Any time now.{\r}
+Dialogue: 0,1:20:25.00,1:20:27.87,Default,,0000,0000,0000,,伙计们 就在那儿       是吗?\N{\ren}Guys, there it is.         What?{\r}
+Dialogue: 0,1:20:31.24,1:20:33.40,Default,,0000,0000,0000,,是的 是她们\N{\ren}Yeah, it's them.{\r}
+Dialogue: 0,1:20:34.65,1:20:36.84,Default,,0000,0000,0000,,我们走\N{\ren}Let's go.{\r}
+Dialogue: 0,1:20:47.69,1:20:51.03,Default,,0000,0000,0000,,我有我妈的车钥匙\N{\ren}l've got the keys to my mum's car.{\r}
+Dialogue: 0,1:21:14.42,1:21:16.68,Default,,0000,0000,0000,,也许我们该敲敲门\N{\ren}Maybe we should knock.{\r}
+Dialogue: 0,1:21:22.96,1:21:25.43,Default,,0000,0000,0000,,我们到了\N{\ren}We're here.{\r}
+Dialogue: 0,1:21:34.04,1:21:38.67,Default,,0000,0000,0000,,到点了 我们在等你们呢\N{\ren}lt's about time. We've been waiting for you guys.{\r}
+Dialogue: 0,1:21:38.84,1:21:42.30,Default,,0000,0000,0000,,我们有车 装满了油 想去哪儿都行\N{\ren}We've got a car. We'll take you anywhere you want to go.{\r}
+Dialogue: 0,1:21:42.48,1:21:44.64,Default,,0000,0000,0000,,是辆美洲豹 车厢很大\N{\ren}lt's a Cougar. lt's got a big trunk.{\r}
+Dialogue: 0,1:21:45.75,1:21:49.81,Default,,0000,0000,0000,,我能坐前排吗? 当然\N{\ren}Can l sit up front? Sure.{\r}
+Dialogue: 0,1:21:52.59,1:21:55.69,Default,,0000,0000,0000,,谁挨着我坐?\N{\ren}Which one of you is going to sit next to me?{\r}
+Dialogue: 0,1:21:57.13,1:22:01.16,Default,,0000,0000,0000,,你父母在哪儿?       睡觉\N{\ren}Where are your parents?         Asleep.{\r}
+Dialogue: 0,1:22:01.33,1:22:04.63,Default,,0000,0000,0000,,你姐妹们呢? 马上就来\N{\ren}What about your sisters? They're coming.{\r}
+Dialogue: 0,1:22:05.57,1:22:07.97,Default,,0000,0000,0000,,快点 很晚了\N{\ren}Come on. lt's getting late.{\r}
+Dialogue: 0,1:22:09.41,1:22:10.46,Default,,0000,0000,0000,,再等5分钟\N{\ren}Wait five minutes.{\r}
+Dialogue: 0,1:22:10.65,1:22:13.75,Default,,0000,0000,0000,,得等我父母都睡着\N{\ren}We have to wait until my parents are asleep.{\r}
+Dialogue: 0,1:22:13.75,1:22:18.08,Default,,0000,0000,0000,,得再等会儿 我妈失眠\N{\ren}They take forever. My mum's an insomniac.{\r}
+Dialogue: 0,1:22:21.25,1:22:23.08,Default,,0000,0000,0000,,最好开我们的车 空间大些\N{\ren}We'd better take our car, there's more room.{\r}
+Dialogue: 0,1:22:26.06,1:22:28.00,Default,,0000,0000,0000,,你开得了旅行车吗?\N{\ren}Think you can handle a station wagon?{\r}
+Dialogue: 0,1:22:29.32,1:22:31.86,Default,,0000,0000,0000,,当然 又不是手动档 是吧?\N{\ren}Sure. lt's not a stick, is it?{\r}
+Dialogue: 0,1:22:32.06,1:22:34.62,Default,,0000,0000,0000,,是的 没问题\N{\ren}No. Yeah, no problem.{\r}
+Dialogue: 0,1:22:34.80,1:22:38.26,Default,,0000,0000,0000,,我能驾驶吗?       当然\N{\ren}Will you let me steer?         Sure.{\r}
+Dialogue: 0,1:22:38.44,1:22:41.90,Default,,0000,0000,0000,,我们得走了 我听到有动静 可以是你妈妈\N{\ren}We should go. l just heard something. lt could be your mum.{\r}
+Dialogue: 0,1:22:42.81,1:22:45.64,Default,,0000,0000,0000,,进来吧\N{\ren}Come on in.{\r}
+Dialogue: 0,1:22:54.69,1:22:55.73,Default,,0000,0000,0000,,我去车里等\N{\ren} I'll go wait in the car.
+Dialogue: 0,1:22:56.84,1:22:56.95,Default,,0000,0000,0000,,你们在这儿等她们吧\N{\ren}You guys wait here for my sisters.{\r}
+Dialogue: 0,1:23:54.95,1:23:58.88,Default,,0000,0000,0000,,只要摸到一个 就能让我疯狂!\N{\ren}These girls make me crazy. lf l just felt one of them once!{\r}
+Dialogue: 0,1:24:02.62,1:24:04.45,Default,,0000,0000,0000,,怎么了?\N{\ren}What?{\r}
+Dialogue: 0,1:24:21.61,1:24:24.70,Default,,0000,0000,0000,,我们永远无法弄清发生的顺序\N{\ren}We would never be sure about the sequence of events.{\r}
+Dialogue: 0,1:24:25.44,1:24:27.97,Default,,0000,0000,0000,,到现在我们还在讨论\N{\ren}We argue about it still.{\r}
+Dialogue: 0,1:24:30.72,1:24:32.15,Default,,0000,0000,0000,,很可能 邦妮死时\N{\ren}Most likely, Bonnie had died{\r}
+Dialogue: 0,1:24:32.32,1:24:35.02,Default,,0000,0000,0000,,我们正在客厅里\N{\ren}while we were waiting in the living room{\r}
+Dialogue: 0,1:24:35.02,1:24:37.58,Default,,0000,0000,0000,,幻想着高速公路\N{\ren}dreaming of highways.{\r}
+Dialogue: 0,1:24:37.76,1:24:41.52,Default,,0000,0000,0000,,随后玛丽把头伸进了烤箱里\N{\ren}Mary put her head in the oven shortly thereafter.{\r}
+Dialogue: 0,1:24:41.73,1:24:44.07,Default,,0000,0000,0000,,特瑞丝吃了很多安眠药\N{\ren}Therese, stuffed with sleeping pills,{\r}
+Dialogue: 0,1:24:44.20,1:24:47.67,Default,,0000,0000,0000,,在我们到之前就走了\N{\ren}was gone by the time we got there.{\r}
+Dialogue: 0,1:24:47.67,1:24:50.13,Default,,0000,0000,0000,,勒克斯是最后一个\N{\ren}Lux was the last to go.{\r}
+Dialogue: 0,1:24:58.81,1:25:00.96,Default,,0000,0000,0000,,现在是周日下午四点钟\N{\ren}lt's four o'clock on Sunday afternoon.{\r}
+Dialogue: 0,1:25:01.13,1:25:03.18,Default,,0000,0000,0000,,你知道你的孩子在哪儿吗?\N{\ren}Do you know where your children are?{\r}
+Dialogue: 0,1:25:03.18,1:25:06.81,Default,,0000,0000,0000,,邦妮 是里斯本姐妹中最小的一个…\N{\ren}Bonnie, the younger Lisbon sister...{\r}
+Dialogue: 0,1:25:07.02,1:25:11.68,Default,,0000,0000,0000,,特瑞丝·里斯本 她很爱马 曾经写信…\N{\ren}Therese Lisbon, a horse lover, has written to...{\r}
+Dialogue: 0,1:25:11.89,1:25:13.58,Default,,0000,0000,0000,,玛丽想当啦啦队长\N{\ren}Mary wanted to be a cheerleader,{\r}
+Dialogue: 0,1:25:13.74,1:25:15.19,Default,,0000,0000,0000,,但她妈妈不同意\N{\ren}but her mother wouldn't let her.{\r}
+Dialogue: 0,1:25:15.19,1:25:17.56,Default,,0000,0000,0000,,在她们的家中自杀…\N{\ren}..suicide in their house...{\r}
+Dialogue: 0,1:25:17.73,1:25:20.11,Default,,0000,0000,0000,,我愤怒到无以复加\N{\ren}l wasn't able to express the anger l felt.{\r}
+Dialogue: 0,1:25:20.29,1:25:22.29,Default,,0000,0000,0000,,...莉迪亚·皮尔 八频道新闻\N{\ren}...Lydia Perl, Channel Eight News.{\r}
+Dialogue: 0,1:25:31.81,1:25:35.71,Default,,0000,0000,0000,,我的女儿们并不缺少爱\N{\ren}None of my daughters lacked for any love.{\r}
+Dialogue: 0,1:25:36.95,1:25:40.04,Default,,0000,0000,0000,,我们家里有足够的爱\N{\ren}There was plenty of love in our house.{\r}
+Dialogue: 0,1:25:41.39,1:25:43.98,Default,,0000,0000,0000,,我就是弄不懂为什么\N{\ren}l never understood why.{\r}
+Dialogue: 0,1:26:15.69,1:26:16.83,Default,,0000,0000,0000,,自杀事件后\N{\ren}After the suicides,{\r}
+Dialogue: 0,1:26:16.99,1:26:19.09,Default,,0000,0000,0000,,里斯本夫妇放弃了\N{\ren}Mr and Mrs Lisbon gave up{\r}
+Dialogue: 0,1:26:19.25,1:26:23.63,Default,,0000,0000,0000,,过正常生活的愿望\N{\ren}any attempt to lead a normal life.{\r}
+Dialogue: 0,1:26:23.63,1:26:26.36,Default,,0000,0000,0000,,他们让海德力先生收拾了房子\N{\ren}They had Mr. Hadley pack up the house,{\r}
+Dialogue: 0,1:26:26.53,1:26:29.59,Default,,0000,0000,0000,,把能卖的家具都贱卖了\N{\ren}and sell the furniture in a garage sale.{\r}
+Dialogue: 0,1:26:32.10,1:26:36.20,Default,,0000,0000,0000,,里斯本先生把房子卖给一对波士顿年轻夫妇\N{\ren}Mr. Lisbon sold the house to a young couple from Boston.{\r}
+Dialogue: 0,1:26:38.58,1:26:39.30,Default,,0000,0000,0000,,当然\N{\ren}We, of course,{\r}
+Dialogue: 0,1:26:39.46,1:26:45.25,Default,,0000,0000,0000,,我们从垃圾堆里拣来了家庭相册\N{\ren}took the family photos that were put out with the trash.{\r}
+Dialogue: 0,1:26:45.25,1:26:47.10,Default,,0000,0000,0000,,最终 我们拼凑出了谜团的答案\N{\ren}ln the end, we had pieces of the puzzle,{\r}
+Dialogue: 0,1:26:47.27,1:26:50.22,Default,,0000,0000,0000,,但裂痕仍在\N{\ren}but how to put them together,gaps still remained.{\r}
+Dialogue: 0,1:26:50.22,1:26:52.29,Default,,0000,0000,0000,,形状奇怪的空白\N{\ren}Oddly shaped emptiness,{\r}
+Dialogue: 0,1:26:52.42,1:26:54.53,Default,,0000,0000,0000,,在环绕之物的映射下\N{\ren}mapped by what surrounded them,{\r}
+Dialogue: 0,1:26:54.53,1:26:57.22,Default,,0000,0000,0000,,就像叫不出名字的国度\N{\ren}like countries we couldn't name.{\r}
+Dialogue: 0,1:27:00.37,1:27:02.83,Default,,0000,0000,0000,,徘徊在她们身后的并非生命\N{\ren}What lingered after them was not life,{\r}
+Dialogue: 0,1:27:03.97,1:27:07.77,Default,,0000,0000,0000,,而是现实生活中最琐碎的物件\N{\ren}but the most trivial list of mundane facts{\r}
+Dialogue: 0,1:27:09.54,1:27:12.27,Default,,0000,0000,0000,,墙上滴答作响的钟摆\N{\ren}a clock ticking on the wall,{\r}
+Dialogue: 0,1:27:13.35,1:27:15.68,Default,,0000,0000,0000,,正午昏暗的房间\N{\ren}a room dim at noon,{\r}
+Dialogue: 0,1:27:16.95,1:27:19.16,Default,,0000,0000,0000,,人类自私的暴行\N{\ren}the outrageousness of a human being{\r}
+Dialogue: 0,1:27:19.33,1:27:26.22,Default,,0000,0000,0000,,自行其道\N{\ren}thinking only of herself{\r}
+Dialogue: 0,1:27:26.22,1:27:30.99,Default,,0000,0000,0000,,我们开始徒劳的试图忘记她们\N{\ren}We began the impossible process of trying to forget them.{\r}
+Dialogue: 0,1:27:36.70,1:27:39.47,Default,,0000,0000,0000,,我们的父母做能的更好\N{\ren}Our parents were able to do this,{\r}
+Dialogue: 0,1:27:40.14,1:27:42.06,Default,,0000,0000,0000,,他们回到网球组和鸡尾酒会上\N{\ren}returning to their tennis foursomes and cocktails{\r}
+Dialogue: 0,1:27:42.20,1:27:46.64,Default,,0000,0000,0000,,处变不惊\N{\ren}as though they'd seen it all before.{\r}
+Dialogue: 0,1:27:46.65,1:27:49.11,Default,,0000,0000,0000,,盛夏又到来了\N{\ren}lt was full fledged summer again{\r}
+Dialogue: 0,1:27:49.31,1:27:51.85,Default,,0000,0000,0000,,在塞西利亚割腕一年后\N{\ren}over a year after Cecilia had slit her wrists{\r}
+Dialogue: 0,1:27:52.02,1:27:54.59,Default,,0000,0000,0000,,空气中充满了毒药\N{\ren}spreading the poison in the air.{\r}
+Dialogue: 0,1:27:54.59,1:27:58.33,Default,,0000,0000,0000,,疯长的植物增加了湖里的磷肥\N{\ren}A spill at the plant increased the lake's phosphates{\r}
+Dialogue: 0,1:27:58.45,1:27:59.70,Default,,0000,0000,0000,,并产生大量藻类\N{\ren}and produced algae{\r}
+Dialogue: 0,1:27:59.86,1:28:01.33,Default,,0000,0000,0000,,沼泽的气味\N{\ren}so that the swamp's smell{\r}
+Dialogue: 0,1:28:01.49,1:28:06.40,Default,,0000,0000,0000,,环绕着这座气派的公馆\N{\ren}filled the air infiltrating the genteel mansions.{\r}
+Dialogue: 0,1:28:06.40,1:28:09.40,Default,,0000,0000,0000,,少女们初登社会\N{\ren}Debutantes cried at coming out in a season{\r}
+Dialogue: 0,1:28:09.55,1:28:13.34,Default,,0000,0000,0000,,每个人却只记得那时的恶臭\N{\ren}remembered for its bad smell.{\r}
+Dialogue: 0,1:28:13.34,1:28:16.21,Default,,0000,0000,0000,,而奥康纳家人的别出心裁\N{\ren}The O'Connors ingeniously made{\r}
+Dialogue: 0,1:28:16.37,1:28:17.46,Default,,0000,0000,0000,,给女儿爱丽丝的\N{\ren}the theme of their daughter{\r}
+Dialogue: 0,1:28:17.63,1:28:20.25,Default,,0000,0000,0000,,成人派对命名为"窒息"\N{\ren}Alice's debutante party ''Asphyxiation''.{\r}
+Dialogue: 0,1:28:21.53,1:28:22.51,Default,,0000,0000,0000,,像大家一样\N{\ren}Like everyone else,{\r}
+Dialogue: 0,1:28:22.70,1:28:27.18,Default,,0000,0000,0000,,我们渐渐忘了里斯本家的女孩\N{\ren}we went to forget about the Lisbon girls.{\r}
+Dialogue: 0,1:28:27.19,1:28:29.95,Default,,0000,0000,0000,,她会让他心脏病发的\N{\ren}She'll give him a heart attack.{\r}
+Dialogue: 0,1:29:14.30,1:29:16.39,Default,,0000,0000,0000,,嗨 帕克\N{\ren}Hi, Parkie.{\r}
+Dialogue: 0,1:29:20.61,1:29:24.56,Default,,0000,0000,0000,,会装死的虫子如何?\N{\ren}How about the acting bug?{\r}
+Dialogue: 0,1:29:24.74,1:29:27.04,Default,,0000,0000,0000,,我从檎基抓来的\N{\ren}l caught it from Kinky.{\r}
+Dialogue: 0,1:29:28.38,1:29:30.04,Default,,0000,0000,0000,,我今晚想宣布\N{\ren}And l want to announce tonight that{\r}
+Dialogue: 0,1:29:30.20,1:29:34.99,Default,,0000,0000,0000,,下个秋天 爱丽丝就要去纽瀚文上学了\N{\ren}next fall Alice is going to school in Newhaven.{\r}
+Dialogue: 0,1:29:37.56,1:29:41.01,Default,,0000,0000,0000,,我听说那里的语法学校十分了得\N{\ren}l hear they have a great grammar school up there.{\r}
+Dialogue: 0,1:29:41.19,1:29:43.99,Default,,0000,0000,0000,,事实上 就是萨姆的爸爸建的 是吧?\N{\ren}ln fact, Sam's father built it, didn't he?{\r}
+Dialogue: 0,1:29:44.16,1:29:46.89,Default,,0000,0000,0000,,是医院 保罗\N{\ren}The hospital, Paul.{\r}
+Dialogue: 0,1:29:47.10,1:29:50.69,Default,,0000,0000,0000,,我们十分为爱丽丝自豪 万分自豪\N{\ren}We're so proud of Alice. We couldn't be prouder.{\r}
+Dialogue: 0,1:29:50.84,1:29:53.43,Default,,0000,0000,0000,,这杯敬她\N{\ren}Here's to her.{\r}
+Dialogue: 0,1:29:59.01,1:30:02.78,Default,,0000,0000,0000,,我受够了 再见 残酷世界\N{\ren}l've had it. Goodbye cruel world.{\r}
+Dialogue: 0,1:30:09.62,1:30:12.45,Default,,0000,0000,0000,,不 不 不! 你不会理解我的\N{\ren}No, no, no! You don't understand me.{\r}
+Dialogue: 0,1:30:12.63,1:30:14.87,Default,,0000,0000,0000,,我是少年 我有烦恼\N{\ren} I'm a teenager, l got problems.
+Dialogue: 0,1:30:26.27,1:30:31.11,Default,,0000,0000,0000,,这些年来 有许多关于她们的流言蜚语\N{\ren}So much has been said about the girls over the years,{\r}
+Dialogue: 0,1:30:31.28,1:30:34.40,Default,,0000,0000,0000,,但我们从未找到过答案\N{\ren}but we have never found an answer.{\r}
+Dialogue: 0,1:30:36.45,1:30:40.08,Default,,0000,0000,0000,,这与她们的早逝无关\N{\ren}lt didn't matter how old they had been,{\r}
+Dialogue: 0,1:30:41.29,1:30:43.69,Default,,0000,0000,0000,,抑或因为她们是女孩\N{\ren}or that they were girls,{\r}
+Dialogue: 0,1:30:45.66,1:30:47.17,Default,,0000,0000,0000,,只因为我们爱过她们\N{\ren}but only that we had loved them.{\r}
+Dialogue: 0,1:30:47.37,1:30:50.84,Default,,0000,0000,0000,,她们始终听不见\N{\ren}And that they hadn't heard us call them,{\r}
+Dialogue: 0,1:30:51.03,1:30:55.43,Default,,0000,0000,0000,,我们在门外的呐喊\N{\ren}still do not hear us calling them out of those rooms{\r}
+Dialogue: 0,1:30:55.43,1:30:58.80,Default,,0000,0000,0000,,她们始终在那里孤独着\N{\ren}where they went to be alone for all time.{\r}
+Dialogue: 0,1:30:59.84,1:31:03.64,Default,,0000,0000,0000,,我们永远无法将它们拼贴完整\N{\ren}We will never find the pieces to put them back together.{\r}
