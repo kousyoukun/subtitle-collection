@@ -1,0 +1,795 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: YYeTs
+Original Script: YYeTs
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 1
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,arial,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,-1,0,0,0,100,100,0,0,1,2,1,2,5,5,2,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.21,0:00:04.92,Default,NTP,0,0,0,,{\K271\an8\fad(0,0)\fn方正兰亭粗黑_GBK\fs23\fsp1\b0\bord0\shad0\3c&H2F2F2F&\2a&HFF&\c&HD4D9D6&\pos(108,218)}巴塞罗那
+Dialogue: 0,0:00:06.41,0:00:07.65,Default,NTP,0,0,0,,求你住手\N{\fs14\b0}Stop, please!{\r}
+Dialogue: 0,0:00:07.66,0:00:09.53,Default,NTP,0,0,0,,我不知道他在哪里\N{\fs14\b0}I don't know where he is!{\r}
+Dialogue: 0,0:00:09.54,0:00:10.98,Default,NTP,0,0,0,,他是你哥哥\N{\fs14\b0}He's your brother.{\r}
+Dialogue: 0,0:00:10.99,0:00:11.95,Default,NTP,0,0,0,,你当然知道\N{\fs14\b0}Of course you do.{\r}
+Dialogue: 0,0:00:11.96,0:00:13.59,Default,NTP,0,0,0,,我...我不知道\N{\fs14\b0}I-- I don't know!{\r}
+Dialogue: 0,0:00:13.60,0:00:14.54,Default,NTP,0,0,0,,{\bord0\shad0\fn方正兰亭黑_GBK\fs18\b0\pos(191,227)\c&HCAA9C2&}旋紧
+Dialogue: 0,0:00:13.55,0:00:15.21,Default,NTP,0,0,0,,我不知道\N{\fs14\b0}I don't know.{\r}
+Dialogue: 0,0:00:15.69,0:00:17.38,Default,NTP,0,0,0,,知道我就告诉你了\N{\fs14\b0}I would tell you!{\r}
+Dialogue: 0,0:00:17.39,0:00:20.22,Default,NTP,0,0,0,,我真不知道  求你了\N{\fs14\b0}I would tell you. Please.{\r}
+Dialogue: 0,0:00:21.47,0:00:22.27,Default,NTP,0,0,0,,我说过了...\N{\fs14\b0}I told you...{\r}
+Dialogue: 0,0:00:22.28,0:00:23.80,Default,NTP,0,0,0,,-我们得试一试  -是吗\N{\fs14\b0}- We had to try. - Did we?{\r}
+Dialogue: 0,0:00:23.81,0:00:25.30,Default,NTP,0,0,0,,他和他哥哥都没什么联系\N{\fs14\b0}He's not even close with his brother.{\r}
+Dialogue: 0,0:00:25.31,0:00:26.71,Default,NTP,0,0,0,,我们总得一试\N{\fs14\b0}We had to try.{\r}
+Dialogue: 0,0:00:26.72,0:00:28.50,Default,NTP,0,0,0,,那现在呢\N{\fs14\b0}So now what?{\r}
+Dialogue: 0,0:00:28.50,0:00:30.68,Default,NTP,0,0,0,,不不不\N{\fs14\b0}N-N-No, no, no, no...{\r}
+Dialogue: 0,0:00:36.39,0:00:38.02,Default,NTP,0,0,0,,谢谢\N{\fs14\b0}Thank you.{\r}
+Dialogue: 0,0:00:43.50,0:00:46.63,Default,NTP,0,0,0,,{\an8\fs18\fn方正黑体简体}周日  周三  周四光临的顾客\N购买摩卡咖啡或冰拿铁  免费试饮
+Dialogue: 0,0:00:48.80,0:00:51.97,Default,NTP,0,0,0,,{\an8\fs18\fn方正黑体简体}我想你
+Dialogue: 0,0:01:01.11,0:01:03.52,Default,NTP,0,0,0,,-你是不是...-是  是我\N{\fs14\b0}- Did you, uh... - Yes. Yeah.{\r}
+Dialogue: 0,0:01:03.53,0:01:06.55,Default,NTP,0,0,0,,花了35杯最便宜的咖啡的价钱\N{\fs14\b0}For the rock-bottom price of 35 coffees{\r}
+Dialogue: 0,0:01:06.56,0:01:09.70,Default,NTP,0,0,0,,他才让我...摆弄他的广告牌\N{\fs14\b0}he let me... mess with his sign.{\r}
+Dialogue: 0,0:01:09.79,0:01:11.45,Default,NTP,0,0,0,,要是我没发现呢\N{\fs14\b0}What if I didn't notice?{\r}
+Dialogue: 0,0:01:11.46,0:01:13.06,Default,NTP,0,0,0,,我知道你会发现的\N{\fs14\b0}I knew you would.{\r}
+Dialogue: 0,0:01:14.90,0:01:18.07,Default,NTP,0,0,0,,-怀利·杜弗瑞今晚要重出厨坛  -大卫\N{\fs14\b0}- Wylie Dufresne is doing a pop-up thing tonight. - David...{\r}
+Dialogue: 0,0:01:18.08,0:01:19.82,Default,NTP,0,0,0,,我知道自从阿尔德饭店关门后\N{\fs14\b0}I just know you've been craving those pigs-in-a-blanket{\r}
+Dialogue: 0,0:01:19.83,0:01:21.78,Default,NTP,0,0,0,,-你一直想吃卷猪肉  -我说过  我...\N{\fs14\b0}- since Alder closed and... - I told you, I...{\r}
+Dialogue: 0,0:01:21.79,0:01:25.05,Default,NTP,0,0,0,,我有...我有职责要...\N{\fs14\b0}I have... I have obligations that I have...{\r}
+Dialogue: 0,0:01:25.06,0:01:27.20,Default,NTP,0,0,0,,可问题是...\N{\fs14\b0}Okay, but the thing is...{\r}
+Dialogue: 0,0:01:29.87,0:01:32.52,Default,NTP,0,0,0,,我疯狂地爱上了你\N{\fs14\b0}I'm madly in love with you.{\r}
+Dialogue: 0,0:01:33.38,0:01:34.36,Default,NTP,0,0,0,,并且除非是我疯了\N{\fs14\b0}And, unless I'm crazy,{\r}
+Dialogue: 0,0:01:34.37,0:01:37.02,Default,NTP,0,0,0,,我确信你对我也有相同的感觉\N{\fs14\b0}I'm pretty sure you feel the same way.{\r}
+Dialogue: 0,0:01:39.19,0:01:40.86,Default,NTP,0,0,0,,大卫  我们...\N{\fs14\b0}David, our...{\r}
+Dialogue: 0,0:01:41.29,0:01:43.91,Default,NTP,0,0,0,,我们...错过了\N{\fs14\b0}our timing is... is just off.{\r}
+Dialogue: 0,0:01:43.92,0:01:47.44,Default,NTP,0,0,0,,我有职责在身  我...\N{\fs14\b0}I-- I-- I have these responsibilities, I'm...{\r}
+Dialogue: 0,0:01:48.26,0:01:50.16,Default,NTP,0,0,0,,我在办我这辈子最大的案件\N{\fs14\b0}I'm working the biggest case of my life.{\r}
+Dialogue: 0,0:01:50.17,0:01:51.85,Default,NTP,0,0,0,,所以如果你解决了案子  那...\N{\fs14\b0}So, if you solve the case, then...{\r}
+Dialogue: 0,0:01:51.86,0:01:53.58,Default,NTP,0,0,0,,对不起\N{\fs14\b0}I'm sorry.{\r}
+Dialogue: 0,0:02:08.16,0:02:09.47,Default,NTP,0,0,0,,那是什么\N{\fs14\b0}What is that?{\r}
+Dialogue: 0,0:02:09.48,0:02:14.40,Default,NTP,0,0,0,,这是一枚非常昂贵\N{\fs14\b0}Oh, this is a very expensive...{\r}
+Dialogue: 0,0:02:14.44,0:02:17.80,Default,NTP,0,0,0,,非常敏感的监控设备\N{\fs14\b0}very sensitive surveillance device.{\r}
+Dialogue: 0,0:02:17.81,0:02:21.79,Default,NTP,0,0,0,,如果你把它贴在台灯或者某个照明设备上\N{\fs14\b0}If you stick it inside of a lamp or a light switch,{\r}
+Dialogue: 0,0:02:21.80,0:02:23.43,Default,NTP,0,0,0,,它能利用光热能充电\N{\fs14\b0}it can power itself from radial heat,{\r}
+Dialogue: 0,0:02:23.44,0:02:26.81,Default,NTP,0,0,0,,因此它可以无限续航\N{\fs14\b0}so it continues to broadcast indefinitely.{\r}
+Dialogue: 0,0:02:27.88,0:02:29.77,Default,NTP,0,0,0,,窃听器吗\N{\fs14\b0}So it's a bug?{\r}
+Dialogue: 0,0:02:29.78,0:02:31.85,Default,NTP,0,0,0,,这是件艺术品\N{\fs14\b0}It's a work of art.{\r}
+Dialogue: 0,0:02:32.01,0:02:34.91,Default,NTP,0,0,0,,我需要你把它放进简的安全屋\N{\fs14\b0}And I want it inside Jane's safe house.{\r}
+Dialogue: 0,0:02:34.92,0:02:35.88,Default,NTP,0,0,0,,不\N{\fs14\b0}No.{\r}
+Dialogue: 0,0:02:35.89,0:02:38.08,Default,NTP,0,0,0,,你没权利对我说"不"\N{\fs14\b0}You don't say no to me.{\r}
+Dialogue: 0,0:02:38.09,0:02:40.75,Default,NTP,0,0,0,,明白吗  这东西得在24小时内开始运行\N{\fs14\b0}See, I want this up and running inside of 24 hours,{\r}
+Dialogue: 0,0:02:40.76,0:02:43.84,Default,NTP,0,0,0,,否则我会要你好看\N{\fs14\b0}or you're not gonna like the tone of my voice anymore.{\r}
+Dialogue: 0,0:02:46.90,0:02:48.11,Default,NTP,0,0,0,,有什么发现\N{\fs14\b0}What do you got?{\r}
+Dialogue: 0,0:02:48.12,0:02:50.24,Default,NTP,0,0,0,,我们第一次把这些纹身\N{\fs14\b0}All right, so when we were first inputting{\r}
+Dialogue: 0,0:02:50.25,0:02:51.62,Default,NTP,0,0,0,,放进数据库时\N{\fs14\b0}these tattoos into the database,{\r}
+Dialogue: 0,0:02:51.63,0:02:52.87,Default,NTP,0,0,0,,我发现简的身上\N{\fs14\b0}I noticed there were a lot of these{\r}
+Dialogue: 0,0:02:52.88,0:02:55.60,Default,NTP,0,0,0,,到处都是这些细小而杂散的字母\N{\fs14\b0}really small, stray letters all over Jane's body.{\r}
+Dialogue: 0,0:02:55.61,0:02:57.45,Default,NTP,0,0,0,,它们藏身别的图样中\N{\fs14\b0}They were hidden in other designs,{\r}
+Dialogue: 0,0:02:57.46,0:02:59.53,Default,NTP,0,0,0,,但用的字体都一样\N{\fs14\b0}but they had the same font.{\r}
+Dialogue: 0,0:02:59.54,0:03:03.79,Default,NTP,0,0,0,,所以我认为可能是某个字谜\N{\fs14\b0}So I figured they were an anagram for something.{\r}
+Dialogue: 0,0:03:03.80,0:03:06.13,Default,NTP,0,0,0,,"一个扳手韭葱丧钟"\N{\fs14\b0}"A wrenchess leek knell."{\r}
+Dialogue: 0,0:03:06.53,0:03:09.19,Default,NTP,0,0,0,,"过滤跪下麋鹿鹪鹩"\N{\fs14\b0}"Leach kneel elks wrens."{\r}
+Dialogue: 0,0:03:09.20,0:03:10.37,Default,NTP,0,0,0,,大概有一千种组合\N{\fs14\b0}There's about 1,000 of them.{\r}
+Dialogue: 0,0:03:10.38,0:03:12.23,Default,NTP,0,0,0,,其他大部分都是无意义的\N{\fs14\b0}The rest of them are mostly just nonsense.{\r}
+Dialogue: 0,0:03:12.24,0:03:14.57,Default,NTP,0,0,0,,你刚刚说的那两个就有意义了吗\N{\fs14\b0}And what you just said wasn't nonsense?{\r}
+Dialogue: 0,0:03:14.58,0:03:17.15,Default,NTP,0,0,0,,我们把所有可能的组合都输入了\N{\fs14\b0}We inputted every possible variation.{\r}
+Dialogue: 0,0:03:17.16,0:03:18.09,Default,NTP,0,0,0,,然后其中之一有匹配\N{\fs14\b0}And one of them hit?{\r}
+Dialogue: 0,0:03:18.10,0:03:20.05,Default,NTP,0,0,0,,对  就在今天早上\N{\fs14\b0}Yep, just this morning.{\r}
+Dialogue: 0,0:03:20.06,0:03:22.40,Default,NTP,0,0,0,,阿什沃尔小溪狗场\N{\fs14\b0}AshwellCreekKennels.{\r}
+Dialogue: 0,0:03:22.41,0:03:24.49,Default,NTP,0,0,0,,一个名为"绕耳王牌"在线小狗论坛里\N{\fs14\b0}The user name for an online puppy forum{\r}
+Dialogue: 0,0:03:24.50,0:03:27.01,Default,NTP,0,0,0,,一个人的用户名\N{\fs14\b0}called Ruff Around the Ears.{\r}
+Dialogue: 0,0:03:27.02,0:03:28.02,Default,NTP,0,0,0,,我不明白\N{\fs14\b0}I don't understand.{\r}
+Dialogue: 0,0:03:28.03,0:03:30.14,Default,NTP,0,0,0,,小狗信息板\N{\fs14\b0}A puppy message board?{\r}
+Dialogue: 0,0:03:30.15,0:03:31.24,Default,NTP,0,0,0,,和其他纹身指向的地方\N{\fs14\b0}Doesn't really line up{\r}
+Dialogue: 0,0:03:31.25,0:03:33.01,Default,NTP,0,0,0,,差别有点大啊\N{\fs14\b0}with where the other tattoos have led.{\r}
+Dialogue: 0,0:03:33.02,0:03:35.01,Default,NTP,0,0,0,,罪犯常常在这样的网站上互通消息\N{\fs14\b0}Criminals coop sites like these all the time{\r}
+Dialogue: 0,0:03:35.02,0:03:36.80,Default,NTP,0,0,0,,因为能避人耳目\N{\fs14\b0}and communicate because they're unmonitored.{\r}
+Dialogue: 0,0:03:36.81,0:03:37.99,Default,NTP,0,0,0,,这条线索说的是什么\N{\fs14\b0}What was the thread about?{\r}
+Dialogue: 0,0:03:38.00,0:03:40.38,Default,NTP,0,0,0,,是一条寻狗启示下面的回复\N{\fs14\b0}Uh, it's in response to someone posting about a lost puppy.{\r}
+Dialogue: 0,0:03:40.39,0:03:41.35,Default,NTP,0,0,0,,{\an8\fs18\fn方正黑体简体}绕耳王牌
+Dialogue: 0,0:03:41.36,0:03:43.32,Default,NTP,0,0,0,,"可能丢在了美国的任何地方\N{\fs14\b0}"Could be anywhere in the United States.{\r}
+Dialogue: 0,0:03:43.33,0:03:45.72,Default,NTP,0,0,0,,没有标签  提供线索必有重谢"\N{\fs14\b0}Not tagged. Massive reward for any leads."{\r}
+Dialogue: 0,0:03:45.73,0:03:47.56,Default,NTP,0,0,0,,然后阿什沃尔小溪狗场回复说\N{\fs14\b0}Then AshwellCreekKennels responds,{\r}
+Dialogue: 0,0:03:47.57,0:03:49.14,Default,NTP,0,0,0,,"我们有一整窝\N{\fs14\b0}"We have the entire litter,{\r}
+Dialogue: 0,0:03:49.15,0:03:51.45,Default,NTP,0,0,0,,但愿您在找的也在其中\N{\fs14\b0}hopefully the exact one you're looking for.{\r}
+Dialogue: 0,0:03:51.46,0:03:54.80,Default,NTP,0,0,0,,需要提供项圈来证明所有权"\N{\fs14\b0}Will need to provide collar as proof of ownership."{\r}
+Dialogue: 0,0:03:54.81,0:03:56.02,Default,NTP,0,0,0,,如果他们说的不是狗\N{\fs14\b0}If they're not talking about dogs,{\r}
+Dialogue: 0,0:03:56.03,0:03:57.30,Default,NTP,0,0,0,,那他们在找什么\N{\fs14\b0}what are they looking for?{\r}
+Dialogue: 0,0:03:57.31,0:03:58.57,Default,NTP,0,0,0,,我还在查\N{\fs14\b0}Still trying to figure that out.{\r}
+Dialogue: 0,0:03:58.58,0:04:00.54,Default,NTP,0,0,0,,但随着这条线索推进\N{\fs14\b0}But, as the thread progresses,{\r}
+Dialogue: 0,0:04:00.55,0:04:02.46,Default,NTP,0,0,0,,阿什沃尔小溪狗场建议\N{\fs14\b0}AshwellCreekKennels suggests{\r}
+Dialogue: 0,0:04:02.47,0:04:06.89,Default,NTP,0,0,0,,他们下午两点到史坦顿岛的一个招待屋看看\N{\fs14\b0}that they check out a open house in Staten Island at 2 p.m.{\r}
+Dialogue: 0,0:04:06.90,0:04:09.59,Default,NTP,0,0,0,,我们去看看  干得漂亮\N{\fs14\b0}Let's check it out. Nice work.{\r}
+Dialogue: 0,0:04:13.90,0:04:16.19,Default,NTP,0,0,0,,我觉得这地方已经废弃了\N{\fs14\b0}I think this place is abandoned.{\r}
+Dialogue: 0,0:04:18.93,0:04:21.83,Default,NTP,0,0,0,,看起来不像是个招待屋\N{\fs14\b0}Don't look like much of an open house to me.{\r}
+Dialogue: 0,0:04:39.62,0:04:40.95,Default,NTP,0,0,0,,枪手\N{\fs14\b0}Gun!{\r}
+Dialogue: 0,0:04:51.83,0:04:53.71,Default,NTP,0,0,0,,{\bord0\shad0\fn方正兰亭黑_GBK\fs18\b0\pos(191,227)\c&HCAA9C2&}快下楼
+Dialogue: 0,0:04:53.88,0:04:55.75,Default,NTP,0,0,0,,{\bord0\shad0\fn方正兰亭黑_GBK\fs18\b0\pos(191,227)\c&HCAA9C2&}我掩护你
+Dialogue: 0,0:04:55.77,0:04:57.74,Default,NTP,0,0,0,,威勒  楼梯\N{\fs14\b0}Weller, stairs!{\r}
+Dialogue: 0,0:05:04.52,0:05:06.30,Default,NTP,0,0,0,,乔纳森\N{\fs14\b0}Jonathan!{\r}
+Dialogue: 0,0:05:07.49,0:05:10.60,Default,NTP,0,0,0,,你杀了他\N{\fs14\b0}You killed him!{\r}
+Dialogue: 0,0:05:14.01,0:05:15.41,Default,NTP,0,0,0,,里德\N{\fs14\b0}Reade?!{\r}
+Dialogue: 0,0:05:16.72,0:05:18.68,Default,NTP,0,0,0,,这里安全了\N{\fs14\b0}All clear, this area!{\r}
+Dialogue: 0,0:05:20.53,0:05:22.66,Default,NTP,0,0,0,,什么情况  他们是谁\N{\fs14\b0}What is this? Who are they?{\r}
+Dialogue: 0,0:05:22.67,0:05:24.13,Default,NTP,0,0,0,,不知道\N{\fs14\b0}Don't know.{\r}
+Dialogue: 0,0:05:24.14,0:05:26.47,Default,NTP,0,0,0,,现在想问他们估计比较难了\N{\fs14\b0}It's pretty hard to question them now.{\r}
+Dialogue: 0,0:05:31.00,0:05:33.20,Default,NTP,0,0,0,,{\an8\fn方正兰亭粗黑_GBK\bord0\shad0\alpha10\fs35\c&H2C2127&\1vc(&H1C1A1A&,&HBDB5B1&,&HBDB5B1&,&H1C1A1A&)\b1\fscx100\fscy100\fad(300,0)\t(23,2442,\fscx119\fscy119)\move(189,156,189,160,23,2442)\clip(99,93,324,223)\t(2150,2400,\clip(230,93,324,228))\t(2192,2317,\alpha&HFF&)}盲   {\alpha10\t(2275,2358,\alpha&HFF&)}点
+Dialogue: 0,0:05:33.21,0:05:35.75,Default,NTP,0,0,0,,{\an8\bord0\shad0\fn方正兰亭粗黑_GBK\fs18\c&HE1D9D6&\alpha10\fad(530,0)\t(23,2736,\fscx110\fscy110)\b0\pos(187,156)}第一季  第九集
+Dialogue: 0,0:05:41.38,0:05:42.75,Default,NTP,0,0,0,,上面安全\N{\fs14\b0}It's all clear up there.{\r}
+Dialogue: 0,0:05:42.76,0:05:44.97,Default,NTP,0,0,0,,你怎么知道他当时要下楼\N{\fs14\b0}How'd you know he was coming down the stairs?{\r}
+Dialogue: 0,0:05:44.98,0:05:47.35,Default,NTP,0,0,0,,我听懂她的话了\N{\fs14\b0}I understood what she was saying.{\r}
+Dialogue: 0,0:05:47.73,0:05:49.67,Default,NTP,0,0,0,,我觉得是保加利亚语\N{\fs14\b0}I think it was Bulgarian.{\r}
+Dialogue: 0,0:05:49.68,0:05:51.76,Default,NTP,0,0,0,,又会中文  又会保加利亚语\N{\fs14\b0}Chinese and Bulgarian.{\r}
+Dialogue: 0,0:05:51.77,0:05:53.68,Default,NTP,0,0,0,,你以前去过不少地方啊\N{\fs14\b0}You must have really got around.{\r}
+Dialogue: 0,0:05:58.22,0:06:00.53,Default,NTP,0,0,0,,我们进来时  她在那里\N{\fs14\b0}When we came in, she was over there.{\r}
+Dialogue: 0,0:06:10.60,0:06:13.16,Default,NTP,0,0,0,,从脚印来看  她在找东西\N{\fs14\b0}Footprint tells me she's looking for something.{\r}
+Dialogue: 0,0:06:23.62,0:06:25.23,Default,NTP,0,0,0,,什么东西\N{\fs14\b0}Well, what is it?{\r}
+Dialogue: 0,0:06:26.24,0:06:28.28,Default,NTP,0,0,0,,两张宴会的门票\N{\fs14\b0}Two tickets to a gala.{\r}
+Dialogue: 0,0:06:29.92,0:06:31.89,Default,NTP,0,0,0,,还有枚胸针\N{\fs14\b0}And some sort of pin.{\r}
+Dialogue: 0,0:06:33.41,0:06:35.13,Default,NTP,0,0,0,,这些人是专业的\N{\fs14\b0}These guys are pros.{\r}
+Dialogue: 0,0:06:35.14,0:06:38.23,Default,NTP,0,0,0,,二楼的旅行袋里有十多本假护照\N{\fs14\b0}We found a duffel upstairs with about a dozen passports{\r}
+Dialogue: 0,0:06:38.24,0:06:39.66,Default,NTP,0,0,0,,他们两个的都有\N{\fs14\b0}for each of them.{\r}
+Dialogue: 0,0:06:39.67,0:06:43.04,Default,NTP,0,0,0,,这些护照仿真程度相当高\N{\fs14\b0}These are the best fakes that I have ever seen.{\r}
+Dialogue: 0,0:06:43.05,0:06:45.83,Default,NTP,0,0,0,,有套护照曾用于往返巴塞罗那\N{\fs14\b0}One set was used to go in and out of Barcelona,{\r}
+Dialogue: 0,0:06:45.84,0:06:46.83,Default,NTP,0,0,0,,就在一周之前\N{\fs14\b0}about a week ago.{\r}
+Dialogue: 0,0:06:46.84,0:06:47.68,Default,NTP,0,0,0,,巴塞罗那\N{\fs14\b0}Barcelona?{\r}
+Dialogue: 0,0:06:47.69,0:06:48.94,Default,NTP,0,0,0,,我查出了他们\N{\fs14\b0}I flagged them.{\r}
+Dialogue: 0,0:06:48.95,0:06:51.16,Default,NTP,0,0,0,,因为他们往返的日期正好和\N{\fs14\b0}Because they entered and exited on the exact day{\r}
+Dialogue: 0,0:06:51.17,0:06:53.68,Default,NTP,0,0,0,,一位跟家人一起度假的美国游客\N{\fs14\b0}an American tourist was abducted and brutally tortured{\r}
+Dialogue: 0,0:06:53.69,0:06:55.83,Default,NTP,0,0,0,,遭人绑架并折磨是同一天\N{\fs14\b0}when he was on vacation with his family.{\r}
+Dialogue: 0,0:06:55.84,0:06:58.55,Default,NTP,0,0,0,,他叫佩里·伯恩\N{\fs14\b0}His name... was Perry Byrne.{\r}
+Dialogue: 0,0:06:58.56,0:07:00.81,Default,NTP,0,0,0,,你哥哥在哪里\N{\fs14\b0}Where's your brother?!{\r}
+Dialogue: 0,0:07:01.04,0:07:02.55,Default,NTP,0,0,0,,知道他被折磨的原因吗\N{\fs14\b0}Any idea why they tortured him?{\r}
+Dialogue: 0,0:07:02.56,0:07:05.74,Default,NTP,0,0,0,,他哥哥是罗伯特·伯恩\N{\fs14\b0}His brother... is Robert Byrne.{\r}
+Dialogue: 0,0:07:05.75,0:07:07.36,Default,NTP,0,0,0,,就是那位转做污点证人\N{\fs14\b0}The accountant who turned States evidence{\r}
+Dialogue: 0,0:07:07.37,0:07:08.93,Default,NTP,0,0,0,,将维克多·莫雷洛送进监狱的会计\N{\fs14\b0}and put Victor Morello away.{\r}
+Dialogue: 0,0:07:08.94,0:07:11.26,Default,NTP,0,0,0,,黑帮老大  绝非善类\N{\fs14\b0}Mob boss... not a nice guy.{\r}
+Dialogue: 0,0:07:11.27,0:07:13.13,Default,NTP,0,0,0,,屋里的那两个人枪法精湛\N{\fs14\b0}The people at the house are good with guns,{\r}
+Dialogue: 0,0:07:13.14,0:07:14.34,Default,NTP,0,0,0,,还携带大量假护照\N{\fs14\b0}and they have a lot of passports.{\r}
+Dialogue: 0,0:07:14.35,0:07:16.15,Default,NTP,0,0,0,,我觉得他们是职业杀手\N{\fs14\b0}I feel like they're hired assassins.{\r}
+Dialogue: 0,0:07:16.16,0:07:18.30,Default,NTP,0,0,0,,他们在找罗伯特·伯恩\N{\fs14\b0}They're looking for Robert Byrne.{\r}
+Dialogue: 0,0:07:18.55,0:07:20.10,Default,NTP,0,0,0,,他可能就是"遗失的小狗"\N{\fs14\b0}He could be the "Lost puppy."{\r}
+Dialogue: 0,0:07:20.11,0:07:21.84,Default,NTP,0,0,0,,莫雷洛因他害自己入狱  瓦解了自己的帮派\N{\fs14\b0}Morello wants him dead for putting him in prison{\r}
+Dialogue: 0,0:07:21.85,0:07:24.84,Default,NTP,0,0,0,,而想杀死他  但他加入了证保计划\N{\fs14\b0}and dismantling his entire crew, but he's in WITSEC.{\r}
+Dialogue: 0,0:07:24.85,0:07:26.07,Default,NTP,0,0,0,,证保计划\N{\fs14\b0}Witsec?{\r}
+Dialogue: 0,0:07:26.08,0:07:27.18,Default,NTP,0,0,0,,证人保护计划\N{\fs14\b0}Witness Security Program.{\r}
+Dialogue: 0,0:07:27.19,0:07:29.25,Default,NTP,0,0,0,,杀手肯定是想从"阿什沃尔小溪狗场"那里\N{\fs14\b0}The assassins must be trying to buy his location{\r}
+Dialogue: 0,0:07:29.26,0:07:30.84,Default,NTP,0,0,0,,买到他现今的住址\N{\fs14\b0}from AshwellCreekKennels.{\r}
+Dialogue: 0,0:07:30.85,0:07:32.94,Default,NTP,0,0,0,,这都是刚发生不久的事  跟纹身有什么关系\N{\fs14\b0}This all just happened. How is this a tattoo?{\r}
+Dialogue: 0,0:07:32.95,0:07:33.93,Default,NTP,0,0,0,,还不清楚\N{\fs14\b0}I don't know yet,{\r}
+Dialogue: 0,0:07:33.94,0:07:37.46,Default,NTP,0,0,0,,但我们要立刻警告美国联邦法警\N{\fs14\b0}but we need to alert US Marshals immediately.{\r}
+Dialogue: 0,0:07:59.07,0:08:00.61,Default,NTP,0,0,0,,艾莉\N{\fs14\b0}Allie.{\r}
+Dialogue: 0,0:08:01.56,0:08:03.28,Default,NTP,0,0,0,,你好  柯特\N{\fs14\b0}Hello, Kurt.{\r}
+Dialogue: 0,0:08:03.60,0:08:04.33,Default,NTP,0,0,0,,你现在是法警了吗\N{\fs14\b0}You're a marshal now?{\r}
+Dialogue: 0,0:08:04.34,0:08:06.48,Default,NTP,0,0,0,,是  我只是想换个环境\N{\fs14\b0}Yeah, I was looking for a change.{\r}
+Dialogue: 0,0:08:06.49,0:08:08.41,Default,NTP,0,0,0,,好久不见\N{\fs14\b0}Ohh, it's been a minute.{\r}
+Dialogue: 0,0:08:08.42,0:08:10.48,Default,NTP,0,0,0,,你姐和索亚还好吗  他现在几岁了\N{\fs14\b0}And your sister and Sawyer? How old is he now?{\r}
+Dialogue: 0,0:08:10.49,0:08:12.33,Default,NTP,0,0,0,,九岁了\N{\fs14\b0}He's nine.{\r}
+Dialogue: 0,0:08:12.72,0:08:14.17,Default,NTP,0,0,0,,是啊\N{\fs14\b0}I know.{\r}
+Dialogue: 0,0:08:15.02,0:08:16.38,Default,NTP,0,0,0,,这是简\N{\fs14\b0}Uh, this is-- this is Jane.{\r}
+Dialogue: 0,0:08:16.39,0:08:18.08,Default,NTP,0,0,0,,她作为顾问协助联调局\N{\fs14\b0}She's working with us as a consultant.{\r}
+Dialogue: 0,0:08:18.09,0:08:19.55,Default,NTP,0,0,0,,艾莉森·奈特  联邦法警\N{\fs14\b0}Allison Knight, US Marshals.{\r}
+Dialogue: 0,0:08:19.56,0:08:20.80,Default,NTP,0,0,0,,幸会\N{\fs14\b0}Nice to meet you.{\r}
+Dialogue: 0,0:08:20.81,0:08:24.03,Default,NTP,0,0,0,,我们在网上的一个论坛里发现了一段对话\N{\fs14\b0}We picked up chatter in an online forum{\r}
+Dialogue: 0,0:08:24.04,0:08:25.23,Default,NTP,0,0,0,,内容是一个局外人\N{\fs14\b0}that points to an outsider{\r}
+Dialogue: 0,0:08:25.24,0:08:27.60,Default,NTP,0,0,0,,声称自己知道罗伯特·伯恩的下落\N{\fs14\b0}knowing the location of Robert Byrne,{\r}
+Dialogue: 0,0:08:27.61,0:08:29.72,Default,NTP,0,0,0,,而罗伯特如今正在政府的保护之下\N{\fs14\b0}who we believe is under government protection.{\r}
+Dialogue: 0,0:08:29.73,0:08:30.72,Default,NTP,0,0,0,,没错\N{\fs14\b0}He is.{\r}
+Dialogue: 0,0:08:30.73,0:08:34.04,Default,NTP,0,0,0,,谈话中的用词让我们很担忧\N{\fs14\b0}What concerns us is the phrasing of the correspondence.{\r}
+Dialogue: 0,0:08:34.05,0:08:35.27,Default,NTP,0,0,0,,它暗示了发帖人\N{\fs14\b0}It alludes to the poster{\r}
+Dialogue: 0,0:08:35.28,0:08:38.02,Default,NTP,0,0,0,,手中有"整窝"的信息\N{\fs14\b0}having information on "The entire litter."{\r}
+Dialogue: 0,0:08:38.03,0:08:41.66,Default,NTP,0,0,0,,莫雷洛案的其他证人有暴露的可能吗\N{\fs14\b0}Could other Morello witnesses be compromised?{\r}
+Dialogue: 0,0:08:42.38,0:08:44.87,Default,NTP,0,0,0,,不只是莫雷洛的证人\N{\fs14\b0}Not just Morello witnesses.{\r}
+Dialogue: 0,0:08:45.32,0:08:48.01,Default,NTP,0,0,0,,事关重大  我们封锁了消息\N{\fs14\b0}We've been keeping this quiet for obvious reasons,{\r}
+Dialogue: 0,0:08:48.02,0:08:50.49,Default,NTP,0,0,0,,但我们的证保计划数据库被入侵了\N{\fs14\b0}but we had a WITSEC data breach.{\r}
+Dialogue: 0,0:08:50.50,0:08:51.42,Default,NTP,0,0,0,,你们被入侵了\N{\fs14\b0}You were hacked?{\r}
+Dialogue: 0,0:08:51.43,0:08:52.41,Default,NTP,0,0,0,,超过两千个证人的\N{\fs14\b0}Just over 2,000 witnesses{\r}
+Dialogue: 0,0:08:52.42,0:08:54.60,Default,NTP,0,0,0,,新身份与新住址都暴露了\N{\fs14\b0}had their new identities and locations compromised.{\r}
+Dialogue: 0,0:08:54.61,0:08:55.45,Default,NTP,0,0,0,,你说什么\N{\fs14\b0}Excuse me?{\r}
+Dialogue: 0,0:08:55.46,0:08:56.37,Default,NTP,0,0,0,,我们正竭尽全力\N{\fs14\b0}We're doing the best we can{\r}
+Dialogue: 0,0:08:56.38,0:08:57.87,Default,NTP,0,0,0,,将他们重新安置  给他们新身份\N{\fs14\b0}to relocate them and get them new backgrounds,{\r}
+Dialogue: 0,0:08:57.88,0:08:59.65,Default,NTP,0,0,0,,但你也能想像到  这需要花一些时间\N{\fs14\b0}but, as you can imagine, it's gonna take some time.{\r}
+Dialogue: 0,0:08:59.66,0:09:01.45,Default,NTP,0,0,0,,你需要立刻重新安置\N{\fs14\b0}You need to relocate Robert Byrne{\r}
+Dialogue: 0,0:09:01.46,0:09:03.41,Default,NTP,0,0,0,,罗伯特·伯恩以及他的家人\N{\fs14\b0}and his entire family, immediately.{\r}
+Dialogue: 0,0:09:03.42,0:09:05.45,Default,NTP,0,0,0,,我们正在办  但安置其他证人\N{\fs14\b0}We are... but it's gonna take at least six months{\r}
+Dialogue: 0,0:09:05.46,0:09:06.69,Default,NTP,0,0,0,,还至少需要半年时间\N{\fs14\b0}to reassign the others.{\r}
+Dialogue: 0,0:09:06.70,0:09:08.13,Default,NTP,0,0,0,,我们得找出幕后黑手\N{\fs14\b0}We need to find out whoever's doing this{\r}
+Dialogue: 0,0:09:08.14,0:09:10.73,Default,NTP,0,0,0,,阻止信息泄露  得赶快\N{\fs14\b0}and shut it down... now.{\r}
+Dialogue: 0,0:09:11.10,0:09:13.50,Default,NTP,0,0,0,,所以"整窝"的意思也许是\N{\fs14\b0}So "the entire litter" probably means{\r}
+Dialogue: 0,0:09:13.51,0:09:14.73,Default,NTP,0,0,0,,泄露的证保计划名单\N{\fs14\b0}the hacked WITSEC list.{\r}
+Dialogue: 0,0:09:14.74,0:09:16.56,Default,NTP,0,0,0,,-那就大事不妙了  -是啊\N{\fs14\b0}- That would be very, very bad. - Yeah.{\r}
+Dialogue: 0,0:09:16.57,0:09:17.29,Default,NTP,0,0,0,,至少我们知道\N{\fs14\b0}Well, at least we know{\r}
+Dialogue: 0,0:09:17.30,0:09:19.54,Default,NTP,0,0,0,,他们在哪里交易\N{\fs14\b0}where the the exchange is gonna happen.{\r}
+Dialogue: 0,0:09:19.75,0:09:22.44,Default,NTP,0,0,0,,就是今天下午五点的这场募款活动\N{\fs14\b0}At this fundraiser, today at 5 P.M.{\r}
+Dialogue: 0,0:09:22.45,0:09:23.53,Default,NTP,0,0,0,,拿着\N{\fs14\b0}Hold this.{\r}
+Dialogue: 0,0:09:23.54,0:09:24.62,Default,NTP,0,0,0,,我有个推论\N{\fs14\b0}I have a theory.{\r}
+Dialogue: 0,0:09:24.63,0:09:27.80,Default,NTP,0,0,0,,我们在行李包的暗袋里找到的这个\N{\fs14\b0}We found this in a hidden pocket in the duffel.{\r}
+Dialogue: 0,0:09:27.81,0:09:30.90,Default,NTP,0,0,0,,估计价值大约六百万美元\N{\fs14\b0}We think it might be worth as much as $6 million.{\r}
+Dialogue: 0,0:09:30.91,0:09:33.81,Default,NTP,0,0,0,,"需提供项圈作为所有权凭证"\N{\fs14\b0}"Will need to provide collar as proof of ownership."{\r}
+Dialogue: 0,0:09:33.82,0:09:35.65,Default,NTP,0,0,0,,项圈是购买名单的款项\N{\fs14\b0}The collar is payment for the list.{\r}
+Dialogue: 0,0:09:35.66,0:09:37.25,Default,NTP,0,0,0,,没错  所以...\N{\fs14\b0}Right, so...{\r}
+Dialogue: 0,0:09:37.26,0:09:38.61,Default,NTP,0,0,0,,卖家把门票\N{\fs14\b0}the seller leaves the tickets{\r}
+Dialogue: 0,0:09:38.62,0:09:40.10,Default,NTP,0,0,0,,和胸针留在屋子里\N{\fs14\b0}and the lapel pin in the house.{\r}
+Dialogue: 0,0:09:40.11,0:09:43.23,Default,NTP,0,0,0,,而门票用于进入交易的地点\N{\fs14\b0}And we know that the tickets are for the location of the hand-off.{\r}
+Dialogue: 0,0:09:43.24,0:09:44.50,Default,NTP,0,0,0,,可胸针代表什么\N{\fs14\b0}But what's this pin?{\r}
+Dialogue: 0,0:09:44.51,0:09:46.48,Default,NTP,0,0,0,,卖家识别买主的信物\N{\fs14\b0}A way to be identified by the seller.{\r}
+Dialogue: 0,0:09:46.49,0:09:47.84,Default,NTP,0,0,0,,我也这么想的\N{\fs14\b0}That'd be my guess.{\r}
+Dialogue: 0,0:09:47.85,0:09:50.42,Default,NTP,0,0,0,,对  因为我想这两位专业杀手可不会\N{\fs14\b0}Yeah, because it's not like these two professional killers{\r}
+Dialogue: 0,0:09:50.43,0:09:51.96,Default,NTP,0,0,0,,把自己的照片和外貌描述\N{\fs14\b0}are gonna send an email with a photo{\r}
+Dialogue: 0,0:09:51.97,0:09:53.63,Default,NTP,0,0,0,,用邮件发给对方\N{\fs14\b0}and a description of what they look like.{\r}
+Dialogue: 0,0:09:53.64,0:09:55.46,Default,NTP,0,0,0,,门票用来通知他们交易地点\N{\fs14\b0}The tickets tell them where to be,{\r}
+Dialogue: 0,0:09:55.47,0:09:57.02,Default,NTP,0,0,0,,而胸针用来识别他们的身份\N{\fs14\b0}and the pin identifies who they are.{\r}
+Dialogue: 0,0:09:57.03,0:09:59.14,Default,NTP,0,0,0,,但如果他们不知道买家的相貌...\N{\fs14\b0}But if they don't know what the buyers look like...{\r}
+Dialogue: 0,0:09:59.15,0:10:00.73,Default,NTP,0,0,0,,我们就可以卧底进去\N{\fs14\b0}we can go undercover.{\r}
+Dialogue: 0,0:10:00.74,0:10:02.62,Default,NTP,0,0,0,,假装成买家  抓住他们\N{\fs14\b0}Pose as the buyers and take 'em down.{\r}
+Dialogue: 0,0:10:02.63,0:10:04.37,Default,NTP,0,0,0,,他们知道买家是一男一女\N{\fs14\b0}They're expecting a man and a woman.{\r}
+Dialogue: 0,0:10:04.38,0:10:06.81,Default,NTP,0,0,0,,女的会说保加利亚语\N{\fs14\b0}A woman who speaks Bulgarian.{\r}
+Dialogue: 0,0:10:07.61,0:10:08.83,Default,NTP,0,0,0,,我可以扮\N{\fs14\b0}I can do it.{\r}
+Dialogue: 0,0:10:08.84,0:10:09.54,Default,NTP,0,0,0,,等一下\N{\fs14\b0}Wai-wai-wai-wait.{\r}
+Dialogue: 0,0:10:09.55,0:10:10.73,Default,NTP,0,0,0,,要是我们错了呢\N{\fs14\b0}What if we're wrong?{\r}
+Dialogue: 0,0:10:10.74,0:10:11.55,Default,NTP,0,0,0,,弄错了胸针的含义\N{\fs14\b0}About the pin,{\r}
+Dialogue: 0,0:10:11.56,0:10:13.46,Default,NTP,0,0,0,,误认为他们不知道买家的相貌\N{\fs14\b0}about them knowing what the buyers look like.{\r}
+Dialogue: 0,0:10:13.47,0:10:15.77,Default,NTP,0,0,0,,卧底行动很可能瞬间暴露\N{\fs14\b0}No, this thing could go sideways real quick.{\r}
+Dialogue: 0,0:10:15.78,0:10:17.76,Default,NTP,0,0,0,,我们必须抓住这次机会\N{\fs14\b0}We gotta take that chance.{\r}
+Dialogue: 0,0:10:17.83,0:10:19.82,Default,NTP,0,0,0,,简和我假扮买家\N{\fs14\b0}All right, Jane and I will pose as the buyers.{\r}
+Dialogue: 0,0:10:19.83,0:10:21.40,Default,NTP,0,0,0,,你们三个  装作路人\N{\fs14\b0}You three, work the crowd.{\r}
+Dialogue: 0,0:10:21.41,0:10:23.52,Default,NTP,0,0,0,,支援我俩  抓捕他们\N{\fs14\b0}Back us up. Take 'em down.{\r}
+Dialogue: 0,0:10:23.53,0:10:26.61,Default,NTP,0,0,0,,我们去换礼服吧  要去参加宴会了\N{\fs14\b0}Let's get dressed up. We're going to a gala.{\r}
+Dialogue: 0,0:11:36.95,0:11:40.36,Default,NTP,0,0,0,,好了  别看了\N{\fs14\b0}All right, all right. Enough.{\r}
+Dialogue: 0,0:11:40.37,0:11:42.75,Default,NTP,0,0,0,,看起来很帅  特别探员\N{\fs14\b0}Lookin' good, Special Agent.{\r}
+Dialogue: 0,0:11:43.13,0:11:44.53,Default,NTP,0,0,0,,谢谢\N{\fs14\b0}Thank you.{\r}
+Dialogue: 0,0:11:45.89,0:11:48.06,Default,NTP,0,0,0,,改天你该约我出去\N{\fs14\b0}You should take me out sometime.{\r}
+Dialogue: 0,0:11:49.80,0:11:54.27,Default,NTP,0,0,0,,是啊  上次的约会可不怎么顺利\N{\fs14\b0}Yeah... that didn't seem to go so well, the last time.{\r}
+Dialogue: 0,0:11:54.28,0:11:57.07,Default,NTP,0,0,0,,是的  可有些错误再犯一次也挺好\N{\fs14\b0}Yeah, but some mistakes are better the second time.{\r}
+Dialogue: 0,0:11:57.33,0:11:59.13,Default,NTP,0,0,0,,你知道  那些美好时光\N{\fs14\b0}You know... all the good times,{\r}
+Dialogue: 0,0:11:59.14,0:12:01.74,Default,NTP,0,0,0,,意料之中的约会失败\N{\fs14\b0}none of the surprise when it doesn't work out.{\r}
+Dialogue: 0,0:12:02.09,0:12:03.50,Default,NTP,0,0,0,,-是啊  -你觉得怎样\N{\fs14\b0}- Yeah. - What do you say?{\r}
+Dialogue: 0,0:12:03.51,0:12:04.88,Default,NTP,0,0,0,,我可以给爱特宝餐厅的麦克打电话\N{\fs14\b0}I could call Mike at Attaboy,{\r}
+Dialogue: 0,0:12:04.89,0:12:05.45,Default,NTP,0,0,0,,定我们的老位子\N{\fs14\b0}get our old table.{\r}
+Dialogue: 0,0:12:05.46,0:12:08.25,Default,NTP,0,0,0,,让他准备两份拉加维林威士忌\N{\fs14\b0}Tell him to double-stock the Lagavulin.{\r}
+Dialogue: 0,0:12:08.35,0:12:12.07,Default,NTP,0,0,0,,不行  我...\N{\fs14\b0}Well... No, no, I'm...{\r}
+Dialogue: 0,0:12:25.81,0:12:27.33,Default,NTP,0,0,0,,我明白了\N{\fs14\b0}I get it.{\r}
+Dialogue: 0,0:12:28.06,0:12:29.99,Default,NTP,0,0,0,,什么  不\N{\fs14\b0}What? No.{\r}
+Dialogue: 0,0:12:30.00,0:12:31.28,Default,NTP,0,0,0,,不是这样的\N{\fs14\b0}No.{\r}
+Dialogue: 0,0:12:31.85,0:12:33.27,Default,NTP,0,0,0,,当然\N{\fs14\b0}Sure.{\r}
+Dialogue: 0,0:12:36.01,0:12:39.38,Default,NTP,0,0,0,,纹身有点妨碍乔装\N{\fs14\b0}The, um... tattoos sort of ruin the whole undercover thing,{\r}
+Dialogue: 0,0:12:39.39,0:12:42.06,Default,NTP,0,0,0,,所以他们用粉底把它们遮住了\N{\fs14\b0}so they covered them with makeup.{\r}
+Dialogue: 0,0:12:45.89,0:12:48.28,Default,NTP,0,0,0,,穿这身礼服我感觉好傻\N{\fs14\b0}I feel ridiculous in this dress.{\r}
+Dialogue: 0,0:12:48.29,0:12:51.00,Default,NTP,0,0,0,,我不这么认为\N{\fs14\b0}That is not the word I would use.{\r}
+Dialogue: 0,0:12:55.56,0:12:57.28,Default,NTP,0,0,0,,注意安全\N{\fs14\b0}Stay safe.{\r}
+Dialogue: 0,0:12:57.29,0:12:59.58,Default,NTP,0,0,0,,别让对方离开自己的视线范围\N{\fs14\b0}Don't take your eyes off each other.{\r}
+Dialogue: 0,0:13:03.05,0:13:07.37,Default,NTP,0,0,0,,既然假扮夫妻  就得带上结婚戒指\N{\fs14\b0}Now, the couple were wearing wedding rings.{\r}
+Dialogue: 0,0:13:07.78,0:13:08.29,Default,NTP,0,0,0,,所以...\N{\fs14\b0}So...{\r}
+Dialogue: 0,0:13:08.30,0:13:10.58,Default,NTP,0,0,0,,对  当然了\N{\fs14\b0}Oh, right, yeah. Of course.{\r}
+Dialogue: 0,0:13:35.07,0:13:37.18,Default,NTP,0,0,0,,您的胸针真不错  先生\N{\fs14\b0}That's a wonderful pin, sir.{\r}
+Dialogue: 0,0:13:37.32,0:13:39.28,Default,NTP,0,0,0,,我能看一下您的票吗\N{\fs14\b0}Can I see your tickets?{\r}
+Dialogue: 0,0:13:44.39,0:13:46.11,Default,NTP,0,0,0,,请跟我来\N{\fs14\b0}Follow me, please.{\r}
+Dialogue: 0,0:13:58.29,0:13:59.84,Default,NTP,0,0,0,,我去开车\N{\fs14\b0}I'll get the car.{\r}
+Dialogue: 0,0:13:59.85,0:14:01.62,Default,NTP,0,0,0,,我们不能跟丢他们\N{\fs14\b0}We can't lose them.{\r}
+Dialogue: 0,0:14:02.78,0:14:04.47,Default,NTP,0,0,0,,请把你们的手机给我\N{\fs14\b0}I'm gonna need your cell phones.{\r}
+Dialogue: 0,0:14:04.48,0:14:07.86,Default,NTP,0,0,0,,您也知道我的老板是个极其谨慎的人\N{\fs14\b0}As you know, my employer is an extremely cautious man.{\r}
+Dialogue: 0,0:14:14.51,0:14:15.74,Default,NTP,0,0,0,,我们要去哪儿\N{\fs14\b0}Where are we going?{\r}
+Dialogue: 0,0:14:15.75,0:14:18.30,Default,NTP,0,0,0,,到了你就知道了\N{\fs14\b0}Why don't you wait and see?{\r}
+Dialogue: 0,0:14:52.60,0:14:53.43,Default,NTP,0,0,0,,能追踪到他们吗\N{\fs14\b0}Can we trace 'em?{\r}
+Dialogue: 0,0:14:53.44,0:14:56.20,Default,NTP,0,0,0,,手机上的追踪器显示他们还在轿车里\N{\fs14\b0}The trackers on their phones say they're still in the limo.{\r}
+Dialogue: 0,0:14:56.21,0:14:57.94,Default,NTP,0,0,0,,他们得靠自己了\N{\fs14\b0}They're on their own.{\r}
+Dialogue: 0,0:15:34.05,0:15:35.60,Default,NTP,0,0,0,,举起手来\N{\fs14\b0}Arms up!{\r}
+Dialogue: 0,0:15:46.75,0:15:48.23,Default,NTP,0,0,0,,够了\N{\fs14\b0}Enough.{\r}
+Dialogue: 0,0:15:49.54,0:15:51.21,Default,NTP,0,0,0,,我说够了\N{\fs14\b0}I said enough!{\r}
+Dialogue: 0,0:15:53.91,0:15:54.93,Default,NTP,0,0,0,,没关系  没关系\N{\fs14\b0}It's fine, it's fine.{\r}
+Dialogue: 0,0:15:54.94,0:15:57.36,Default,NTP,0,0,0,,拜托  让他照章办事\N{\fs14\b0}Please, let him do his job.{\r}
+Dialogue: 0,0:15:57.37,0:15:58.72,Default,NTP,0,0,0,,我不喜欢他对你动手动脚\N{\fs14\b0}I don't like him touching you.{\r}
+Dialogue: 0,0:15:58.73,0:16:01.31,Default,NTP,0,0,0,,我也不喜欢你对他动手\N{\fs14\b0}And I don't like you touching him.{\r}
+Dialogue: 0,0:16:01.42,0:16:02.51,Default,NTP,0,0,0,,没问题\N{\fs14\b0}You're good.{\r}
+Dialogue: 0,0:16:02.52,0:16:04.12,Default,NTP,0,0,0,,谢谢\N{\fs14\b0}Thank you.{\r}
+Dialogue: 0,0:16:04.73,0:16:06.00,Default,NTP,0,0,0,,那边请\N{\fs14\b0}That way.{\r}
+Dialogue: 0,0:16:06.01,0:16:07.95,Default,NTP,0,0,0,,刚才是怎么回事\N{\fs14\b0}What the hell was that about?{\r}
+Dialogue: 0,0:16:07.96,0:16:09.72,Default,NTP,0,0,0,,你是我老婆\N{\fs14\b0}You're my wife.{\r}
+Dialogue: 0,0:16:11.56,0:16:12.69,Default,NTP,0,0,0,,我不知道这是哪里\N{\fs14\b0}I don't know where we are.{\r}
+Dialogue: 0,0:16:12.70,0:16:13.74,Default,NTP,0,0,0,,没有枪  没后援\N{\fs14\b0}We have no guns, no backup--{\r}
+Dialogue: 0,0:16:13.75,0:16:15.51,Default,NTP,0,0,0,,我们要怎么抓人\N{\fs14\b0}How are we gonna arrest this guy?{\r}
+Dialogue: 0,0:16:15.52,0:16:18.34,Default,NTP,0,0,0,,执行新计划  拿到名单\N{\fs14\b0}Well, new plan: Secure the list,{\r}
+Dialogue: 0,0:16:18.35,0:16:20.28,Default,NTP,0,0,0,,活着出去\N{\fs14\b0}get out of here alive.{\r}
+Dialogue: 0,0:16:20.71,0:16:21.25,Default,NTP,0,0,0,,好\N{\fs14\b0}Okay.{\r}
+Dialogue: 0,0:16:21.26,0:16:23.47,Default,NTP,0,0,0,,他们乘坐的直升机申请了一个伪造的飞行计划\N{\fs14\b0}The helicopter they were on filed a bogus flight plan,{\r}
+Dialogue: 0,0:16:23.48,0:16:24.98,Default,NTP,0,0,0,,关掉了应答器\N{\fs14\b0}turned off its transponder,{\r}
+Dialogue: 0,0:16:24.99,0:16:27.17,Default,NTP,0,0,0,,低空飞行躲过了雷达\N{\fs14\b0}and stayed low enough to evade radar.{\r}
+Dialogue: 0,0:16:27.18,0:16:28.73,Default,NTP,0,0,0,,我们查不到它的去向\N{\fs14\b0}We have no idea where it went.{\r}
+Dialogue: 0,0:16:28.74,0:16:30.98,Default,NTP,0,0,0,,宴会的门票是用现金买的  无法追踪\N{\fs14\b0}They paid cash for the gala tickets-- no trace.{\r}
+Dialogue: 0,0:16:30.99,0:16:32.50,Default,NTP,0,0,0,,无论这个幕后主使是谁\N{\fs14\b0}Whoever is behind this{\r}
+Dialogue: 0,0:16:32.51,0:16:35.56,Default,NTP,0,0,0,,他想尽了一切办法不被人找到\N{\fs14\b0}has gone to extraordinary measures not to be found.{\r}
+Dialogue: 0,0:16:35.57,0:16:37.34,Default,NTP,0,0,0,,去看看论坛的其他帖子\N{\fs14\b0}Go over the other forum posts.{\r}
+Dialogue: 0,0:16:37.35,0:16:38.73,Default,NTP,0,0,0,,也许能找到一些线索\N{\fs14\b0}There might be a clue in there somewhere.{\r}
+Dialogue: 0,0:16:38.74,0:16:40.46,Default,NTP,0,0,0,,马上去办\N{\fs14\b0}Yeah, on it.{\r}
+Dialogue: 0,0:16:42.23,0:16:43.96,Default,NTP,0,0,0,,下午好\N{\fs14\b0}Good afternoon.{\r}
+Dialogue: 0,0:16:46.29,0:16:47.05,Default,NTP,0,0,0,,借一步说话\N{\fs14\b0}A word?{\r}
+Dialogue: 0,0:16:47.06,0:16:49.21,Default,NTP,0,0,0,,我们现在真的非常忙\N{\fs14\b0}We're actually extremely busy right now.{\r}
+Dialogue: 0,0:16:49.22,0:16:51.55,Default,NTP,0,0,0,,用不了多久\N{\fs14\b0}It'll just take a second.{\r}
+Dialogue: 0,0:16:57.48,0:16:59.01,Default,NTP,0,0,0,,刚是什么情况\N{\fs14\b0}What was that about?{\r}
+Dialogue: 0,0:16:59.59,0:17:01.46,Default,NTP,0,0,0,,不清楚\N{\fs14\b0}I have no idea.{\r}
+Dialogue: 0,0:17:02.08,0:17:05.09,Default,NTP,0,0,0,,你把格雷罗关起来了\N{\fs14\b0}So you have Guerrero in custody.{\r}
+Dialogue: 0,0:17:05.10,0:17:09.12,Default,NTP,0,0,0,,简的一枚纹身让威勒团队找到了他\N{\fs14\b0}One of Jane's tattoos led Weller and his team right to him.{\r}
+Dialogue: 0,0:17:09.13,0:17:09.98,Default,NTP,0,0,0,,别担心  我...\N{\fs14\b0}Don't worry, I'm...{\r}
+Dialogue: 0,0:17:09.99,0:17:12.26,Default,NTP,0,0,0,,"我正在处理"  我知道\N{\fs14\b0}"I'm handling it." Yeah, yeah, I know.{\r}
+Dialogue: 0,0:17:12.27,0:17:15.83,Default,NTP,0,0,0,,但这事一丝一毫都没处理\N{\fs14\b0}Nothing about this is handled.{\r}
+Dialogue: 0,0:17:15.92,0:17:18.28,Default,NTP,0,0,0,,我们必须立即遏制它\N{\fs14\b0}We need to contain this, immediately.{\r}
+Dialogue: 0,0:17:18.29,0:17:21.51,Default,NTP,0,0,0,,我准备让他签一份追溯证明\N{\fs14\b0}I'm having him sign a backdated confirmation{\r}
+Dialogue: 0,0:17:21.52,0:17:23.06,Default,NTP,0,0,0,,表明他是我的秘密线人\N{\fs14\b0}that he was my CHS.{\r}
+Dialogue: 0,0:17:23.07,0:17:26.01,Default,NTP,0,0,0,,那是远远不够的\N{\fs14\b0}We are way beyond that now.{\r}
+Dialogue: 0,0:17:26.02,0:17:27.85,Default,NTP,0,0,0,,给简纹身的人是冲着我们来的\N{\fs14\b0}Whoever did this to Jane is coming for us.{\r}
+Dialogue: 0,0:17:27.86,0:17:28.71,Default,NTP,0,0,0,,这显而易见\N{\fs14\b0}It's plain as day.{\r}
+Dialogue: 0,0:17:28.72,0:17:30.82,Default,NTP,0,0,0,,格雷罗必须消失\N{\fs14\b0}Guerrero needs to disappear.{\r}
+Dialogue: 0,0:17:30.83,0:17:33.45,Default,NTP,0,0,0,,他关在联邦监狱里  我们不能...\N{\fs14\b0}He's in a federal prison. We can't just...{\r}
+Dialogue: 0,0:17:33.46,0:17:37.34,Default,NTP,0,0,0,,能  我们能\N{\fs14\b0}Yes... we... can.{\r}
+Dialogue: 0,0:17:37.44,0:17:39.89,Default,NTP,0,0,0,,只要我们伪造一份书面记录\N{\fs14\b0}If we create a paper trail,{\r}
+Dialogue: 0,0:17:39.90,0:17:42.45,Default,NTP,0,0,0,,所有问题都迎刃而解了\N{\fs14\b0}all our problems go away.{\r}
+Dialogue: 0,0:17:42.75,0:17:46.51,Default,NTP,0,0,0,,如果有人想通过格雷罗揭发白昼计划\N{\fs14\b0}If someone is trying to expose Daylight through Guerrero,{\r}
+Dialogue: 0,0:17:46.52,0:17:50.48,Default,NTP,0,0,0,,让他合法化就能让他们的计划落空\N{\fs14\b0}making him legit neutralizes everything they think they have.{\r}
+Dialogue: 0,0:17:50.49,0:17:52.00,Default,NTP,0,0,0,,如果他不愿意合作呢\N{\fs14\b0}What if he doesn't cooperate?{\r}
+Dialogue: 0,0:17:52.01,0:17:55.17,Default,NTP,0,0,0,,如果他不签  我就把他扔到混合牢房去\N{\fs14\b0}If he doesn't sign, I'll release him into gen-pop!{\r}
+Dialogue: 0,0:17:55.31,0:17:57.54,Default,NTP,0,0,0,,称他是内奸  就是置他于死地\N{\fs14\b0}Brand him a rat. It's a death sentence.{\r}
+Dialogue: 0,0:17:57.55,0:18:00.13,Default,NTP,0,0,0,,他不傻  他会签的\N{\fs14\b0}He's not stupid. He'll sign!{\r}
+Dialogue: 0,0:18:01.04,0:18:04.25,Default,NTP,0,0,0,,你知道这是最好的选择了\N{\fs14\b0}This is the best option, and you know it.{\r}
+Dialogue: 0,0:18:05.16,0:18:07.54,Default,NTP,0,0,0,,好吧  走着瞧\N{\fs14\b0}Well, we'll see.{\r}
+Dialogue: 0,0:18:07.55,0:18:09.21,Default,NTP,0,0,0,,等着瞧\N{\fs14\b0}Won't we?{\r}
+Dialogue: 0,0:18:11.13,0:18:16.59,Default,NTP,0,0,0,,{\an8\fs18\fn方正黑体简体}卡尔70岁生日快乐
+Dialogue: 0,0:18:17.76,0:18:20.42,Default,NTP,0,0,0,,一个生日聚会竟然这么多保安\N{\fs14\b0}Lot of security for a birthday party.{\r}
+Dialogue: 0,0:18:21.13,0:18:23.39,Default,NTP,0,0,0,,楼上也有\N{\fs14\b0}Top of the line, too.{\r}
+Dialogue: 0,0:18:23.76,0:18:26.16,Default,NTP,0,0,0,,你觉得我们是来见"卡尔"的吗\N{\fs14\b0}Do you think we're here to meet "Carl"?{\r}
+Dialogue: 0,0:18:26.36,0:18:27.09,Default,NTP,0,0,0,,我也不知道\N{\fs14\b0}I don't know.{\r}
+Dialogue: 0,0:18:27.10,0:18:29.91,Default,NTP,0,0,0,,现在我们要怎么做\N{\fs14\b0}Well... what should we do now?{\r}
+Dialogue: 0,0:18:29.92,0:18:31.59,Default,NTP,0,0,0,,我们就等着\N{\fs14\b0}We should wait...{\r}
+Dialogue: 0,0:18:31.60,0:18:34.20,Default,NTP,0,0,0,,直到卖家联系我们\N{\fs14\b0}till the seller makes contact.{\r}
+Dialogue: 0,0:18:34.73,0:18:36.36,Default,NTP,0,0,0,,在那之前...\N{\fs14\b0}Until then...{\r}
+Dialogue: 0,0:18:40.68,0:18:41.76,Default,NTP,0,0,0,,我们应该尽量融入这里\N{\fs14\b0}we should try to blend in.{\r}
+Dialogue: 0,0:18:41.77,0:18:43.20,Default,NTP,0,0,0,,不行  我...\N{\fs14\b0}No, I...{\r}
+Dialogue: 0,0:18:43.21,0:18:45.04,Default,NTP,0,0,0,,我觉得我不会跳舞\N{\fs14\b0}I don't think I can dance.{\r}
+Dialogue: 0,0:18:45.05,0:18:46.60,Default,NTP,0,0,0,,这个嘛\N{\fs14\b0}Well...{\r}
+Dialogue: 0,0:18:46.75,0:18:48.66,Default,NTP,0,0,0,,今天早上之前\N{\fs14\b0}up until this morning...{\r}
+Dialogue: 0,0:18:48.93,0:18:50.62,Default,NTP,0,0,0,,你还不会说保加利亚语呢\N{\fs14\b0}you couldn't speak Bulgarian.{\r}
+Dialogue: 0,0:18:50.63,0:18:52.24,Default,NTP,0,0,0,,谁知道呢\N{\fs14\b0}Who knows?{\r}
+Dialogue: 0,0:18:53.44,0:18:55.63,Default,NTP,0,0,0,,你也可能是个探戈冠军\N{\fs14\b0}You could be a tango champion.{\r}
+Dialogue: 0,0:19:04.37,0:19:06.19,Default,NTP,0,0,0,,所以...\N{\fs14\b0}So, um...{\r}
+Dialogue: 0,0:19:07.81,0:19:11.36,Default,NTP,0,0,0,,你和那个...联邦法警之间\N{\fs14\b0}You and that, um... US Marshal over here.{\r}
+Dialogue: 0,0:19:11.37,0:19:12.55,Default,NTP,0,0,0,,-是的  -你们看着很...\N{\fs14\b0}- Yeah. - You looked pretty...{\r}
+Dialogue: 0,0:19:12.56,0:19:14.90,Default,NTP,0,0,0,,是的  我们交往过\N{\fs14\b0}Yeah. We used to date.{\r}
+Dialogue: 0,0:19:14.91,0:19:16.47,Default,NTP,0,0,0,,很短一段\N{\fs14\b0}A little while.{\r}
+Dialogue: 0,0:19:17.51,0:19:19.26,Default,NTP,0,0,0,,多短\N{\fs14\b0}Well, how little?{\r}
+Dialogue: 0,0:19:22.37,0:19:24.25,Default,NTP,0,0,0,,一年左右\N{\fs14\b0}A year or so.{\r}
+Dialogue: 0,0:19:25.01,0:19:26.77,Default,NTP,0,0,0,,这也叫短吗\N{\fs14\b0}That's a little?{\r}
+Dialogue: 0,0:19:28.62,0:19:30.36,Default,NTP,0,0,0,,我们不是...\N{\fs14\b0}We weren't...{\r}
+Dialogue: 0,0:19:30.53,0:19:32.78,Default,NTP,0,0,0,,很擅长沟通\N{\fs14\b0}the best at communicating.{\r}
+Dialogue: 0,0:19:33.81,0:19:35.57,Default,NTP,0,0,0,,我都不知...\N{\fs14\b0}Well, I don't even...{\r}
+Dialogue: 0,0:19:36.91,0:19:40.31,Default,NTP,0,0,0,,那你以前结过婚吗\N{\fs14\b0}Have you... ever been married?{\r}
+Dialogue: 0,0:19:41.57,0:19:43.12,Default,NTP,0,0,0,,没有\N{\fs14\b0}No.{\r}
+Dialogue: 0,0:19:43.84,0:19:45.60,Default,NTP,0,0,0,,没结过\N{\fs14\b0}Never married.{\r}
+Dialogue: 0,0:19:49.64,0:19:51.38,Default,NTP,0,0,0,,我太挑剔\N{\fs14\b0}I'm too choosy.{\r}
+Dialogue: 0,0:19:54.51,0:19:56.16,Default,NTP,0,0,0,,我...\N{\fs14\b0}I, um...{\r}
+Dialogue: 0,0:19:57.23,0:19:59.48,Default,NTP,0,0,0,,我出现了一段记忆\N{\fs14\b0}I've been having memories{\r}
+Dialogue: 0,0:20:00.37,0:20:03.29,Default,NTP,0,0,0,,看起来我可能已经订婚了\N{\fs14\b0}that make it seem like I might have been engaged.{\r}
+Dialogue: 0,0:20:05.61,0:20:07.54,Default,NTP,0,0,0,,你记起什么了\N{\fs14\b0}What'd you remember?{\r}
+Dialogue: 0,0:20:08.07,0:20:10.16,Default,NTP,0,0,0,,短暂的片段\N{\fs14\b0}Moments, fragments.{\r}
+Dialogue: 0,0:20:10.95,0:20:12.36,Default,NTP,0,0,0,,都感觉...\N{\fs14\b0}It all seemed so...{\r}
+Dialogue: 0,0:20:12.37,0:20:15.02,Default,NTP,0,0,0,,和现在的我相去甚远\N{\fs14\b0}far away from where I am now.{\r}
+Dialogue: 0,0:20:19.52,0:20:21.35,Default,NTP,0,0,0,,他可以见你们了\N{\fs14\b0}He's ready for you.{\r}
+Dialogue: 0,0:20:21.38,0:20:22.98,Default,NTP,0,0,0,,终于来了\N{\fs14\b0}About time.{\r}
+Dialogue: 0,0:20:26.77,0:20:29.25,Default,NTP,0,0,0,,尽管费了些功夫  但我们还是恢复了\N{\fs14\b0}So it took a little doing, but we were able to recover{\r}
+Dialogue: 0,0:20:29.26,0:20:31.29,Default,NTP,0,0,0,,一些"阿什沃尔小溪狗场"删掉的帖子\N{\fs14\b0}a bunch of deleted AshwellCreekKennels posts.{\r}
+Dialogue: 0,0:20:31.30,0:20:34.22,Default,NTP,0,0,0,,似乎他已经使用这个网站好几年了\N{\fs14\b0}It looks like they've been using the site for a couple of years.{\r}
+Dialogue: 0,0:20:34.23,0:20:36.36,Default,NTP,0,0,0,,这就解释了为什么它会纹在简身上\N{\fs14\b0}That would explain how it got onto Jane's body.{\r}
+Dialogue: 0,0:20:36.37,0:20:38.27,Default,NTP,0,0,0,,我的团队从帖子里的语言中\N{\fs14\b0}My team has been lining up the language in the post{\r}
+Dialogue: 0,0:20:38.28,0:20:40.32,Default,NTP,0,0,0,,推出一些很危险的事情\N{\fs14\b0}with some pretty serious stuff.{\r}
+Dialogue: 0,0:20:40.33,0:20:43.36,Default,NTP,0,0,0,,军火交易  大量的个人身份泄漏\N{\fs14\b0}Arms deals, massive personal identity breaches.{\r}
+Dialogue: 0,0:20:43.37,0:20:44.57,Default,NTP,0,0,0,,幕后人物是谁\N{\fs14\b0}Who's doing this?{\r}
+Dialogue: 0,0:20:44.58,0:20:46.83,Default,NTP,0,0,0,,直升机  老房子\N{\fs14\b0}The helicopter, the old house...{\r}
+Dialogue: 0,0:20:46.84,0:20:48.60,Default,NTP,0,0,0,,都是由空壳公司出资\N{\fs14\b0}they were both paid for by shell companies{\r}
+Dialogue: 0,0:20:48.61,0:20:50.30,Default,NTP,0,0,0,,以给空壳公司下属的空壳公司买的\N{\fs14\b0}for shell companies of shell companies.{\r}
+Dialogue: 0,0:20:50.31,0:20:52.59,Default,NTP,0,0,0,,几乎不可能知道谁拥有它们\N{\fs14\b0}Next to impossible to know who really owns them.{\r}
+Dialogue: 0,0:20:52.60,0:20:54.90,Default,NTP,0,0,0,,-但是...-它们的会计师相同\N{\fs14\b0}- But... - They have the same accountant.{\r}
+Dialogue: 0,0:20:54.91,0:20:56.46,Default,NTP,0,0,0,,他尽力掩盖自己的行迹\N{\fs14\b0}He did his best to cover his tracks,{\r}
+Dialogue: 0,0:20:56.47,0:20:58.70,Default,NTP,0,0,0,,但所有的线索追溯到\N{\fs14\b0}but all roads lead back to...{\r}
+Dialogue: 0,0:20:58.71,0:21:01.10,Default,NTP,0,0,0,,雷尼尔·艾伯赛  注册会计师\N{\fs14\b0}Rainier Abosay, CPA.{\r}
+Dialogue: 0,0:21:01.11,0:21:02.78,Default,NTP,0,0,0,,把他带过来吧  看看他为谁工作\N{\fs14\b0}So let's bring him in, see who he works for.{\r}
+Dialogue: 0,0:21:02.79,0:21:04.32,Default,NTP,0,0,0,,问题就在这里\N{\fs14\b0}That's the thing.{\r}
+Dialogue: 0,0:21:04.33,0:21:06.38,Default,NTP,0,0,0,,他只为一个人做事\N{\fs14\b0}He only works for one man.{\r}
+Dialogue: 0,0:21:06.42,0:21:08.99,Default,NTP,0,0,0,,而那个人是世界上最危险的人之一\N{\fs14\b0}And he's one of the most dangerous guys in the world.{\r}
+Dialogue: 0,0:21:09.00,0:21:11.00,Default,NTP,0,0,0,,这是最棒的部分  终于来了\N{\fs14\b0}That's the best part of it. There they are!{\r}
+Dialogue: 0,0:21:11.01,0:21:12.92,Default,NTP,0,0,0,,我的天啊  有生之年\N{\fs14\b0}Oh, my goodness, as I live and breathe,{\r}
+Dialogue: 0,0:21:12.93,0:21:13.96,Default,NTP,0,0,0,,终于见到你们了\N{\fs14\b0}there they are.{\r}
+Dialogue: 0,0:21:13.97,0:21:14.88,Default,NTP,0,0,0,,瑞奇·多特康\N{\fs14\b0}Rich Dotcom.{\r}
+Dialogue: 0,0:21:14.89,0:21:16.34,Default,NTP,0,0,0,,真高兴你们能来\N{\fs14\b0}So glad you could make it.{\r}
+Dialogue: 0,0:21:16.35,0:21:17.59,Default,NTP,0,0,0,,实在太高兴了\N{\fs14\b0}So glad indeed.{\r}
+Dialogue: 0,0:21:17.60,0:21:19.52,Default,NTP,0,0,0,,你们去见过卡尔了吗\N{\fs14\b0}Wow. Did you guys see Carl?{\r}
+Dialogue: 0,0:21:19.53,0:21:21.01,Default,NTP,0,0,0,,-跟他说生日快乐了吗  -没有\N{\fs14\b0}- Did you wish him a happy birthday? - No.{\r}
+Dialogue: 0,0:21:21.02,0:21:22.64,Default,NTP,0,0,0,,今天其实并非真是他七十岁生日\N{\fs14\b0}He's not actually 70 today, by the way, yeah.{\r}
+Dialogue: 0,0:21:22.65,0:21:23.93,Default,NTP,0,0,0,,我们只是跟他闹着玩的\N{\fs14\b0}We just did that to mess with him.{\r}
+Dialogue: 0,0:21:23.94,0:21:25.40,Default,NTP,0,0,0,,不过他确实老了  挺显老的\N{\fs14\b0}He is old, though. He's pretty old-looking.{\r}
+Dialogue: 0,0:21:25.41,0:21:26.99,Default,NTP,0,0,0,,我觉得他可能病了\N{\fs14\b0}I think he might be sick.{\r}
+Dialogue: 0,0:21:27.00,0:21:29.31,Default,NTP,0,0,0,,非常感谢  酒别停啊\N{\fs14\b0}Thank you very much. Keep those comin'.{\r}
+Dialogue: 0,0:21:29.32,0:21:30.76,Default,NTP,0,0,0,,不用了  谢谢\N{\fs14\b0}No thanks.{\r}
+Dialogue: 0,0:21:30.77,0:21:32.71,Default,NTP,0,0,0,,很抱歉麻烦你们\N{\fs14\b0}And, uh, I'm sorry to have to put you{\r}
+Dialogue: 0,0:21:32.72,0:21:33.86,Default,NTP,0,0,0,,让你们来这里一趟\N{\fs14\b0}through all this hassle. To get up here.{\r}
+Dialogue: 0,0:21:33.87,0:21:35.88,Default,NTP,0,0,0,,你们知道的  我得小心行事\N{\fs14\b0}You know, I gotta play it safe.{\r}
+Dialogue: 0,0:21:36.72,0:21:37.88,Default,NTP,0,0,0,,还有\N{\fs14\b0}Um, hello.{\r}
+Dialogue: 0,0:21:37.89,0:21:38.50,Default,NTP,0,0,0,,不用我说你们也知道\N{\fs14\b0}I don't have to tell you.{\r}
+Dialogue: 0,0:21:38.51,0:21:41.25,Default,NTP,0,0,0,,我竟然跟两位真正的杀手在聊天\N{\fs14\b0}I'm talking to two real-life, actual assassins.{\r}
+Dialogue: 0,0:21:41.26,0:21:42.19,Default,NTP,0,0,0,,对吧  我是说...\N{\fs14\b0}Right? I mean...{\r}
+Dialogue: 0,0:21:42.20,0:21:45.00,Default,NTP,0,0,0,,我得说  我真觉得太激动了\N{\fs14\b0}I gotta tell you, this is very exciting for me.{\r}
+Dialogue: 0,0:21:45.94,0:21:46.95,Default,NTP,0,0,0,,他们搜过你们身了吗\N{\fs14\b0}Mm! Did they pat you down?{\r}
+Dialogue: 0,0:21:46.96,0:21:48.09,Default,NTP,0,0,0,,当然也没什么区别  因为我知道\N{\fs14\b0}Not that that matters, 'cause I'm sure you could{\r}
+Dialogue: 0,0:21:48.10,0:21:49.59,Default,NTP,0,0,0,,你们估计拿个勺子都能杀人\N{\fs14\b0}probably kill somebody with a spoon.{\r}
+Dialogue: 0,0:21:49.60,0:21:51.77,Default,NTP,0,0,0,,见鬼  你们可能连勺子都不用吧\N{\fs14\b0}Heck, you probably don't even need the spoon.{\r}
+Dialogue: 0,0:21:52.14,0:21:53.83,Default,NTP,0,0,0,,太厉害了\N{\fs14\b0}So bad-ass.{\r}
+Dialogue: 0,0:21:53.84,0:21:55.88,Default,NTP,0,0,0,,不好意思  你说你叫...\N{\fs14\b0}I-I'm sorry, you said your name was...{\r}
+Dialogue: 0,0:21:55.89,0:21:57.18,Default,NTP,0,0,0,,瑞奇·多特康{\fs14}[土豪.com]{\c}\N{\fs14\b0}Rich Dotcom?{\r}
+Dialogue: 0,0:21:57.19,0:21:59.92,Default,NTP,0,0,0,,对  我妈非常喜欢互联网\N{\fs14\b0}Yeah, my mom was a big fan of the Internet.{\r}
+Dialogue: 0,0:22:00.32,0:22:01.91,Default,NTP,0,0,0,,开个玩笑\N{\fs14\b0}That's a joke.{\r}
+Dialogue: 0,0:22:02.53,0:22:04.04,Default,NTP,0,0,0,,你们俩的幽默感还真跟我想的一样\N{\fs14\b0}You guys are about as funny as I thought you'd be.{\r}
+Dialogue: 0,0:22:04.05,0:22:05.51,Default,NTP,0,0,0,,来吧\N{\fs14\b0}Come on!{\r}
+Dialogue: 0,0:22:06.18,0:22:08.97,Default,NTP,0,0,0,,原名戈德·恩维尔\N{\fs14\b0}Born Gord Enver.{\r}
+Dialogue: 0,0:22:08.98,0:22:09.01,Default,NTP,0,0,0,,{\an8\fs18\fn方正黑体简体}戈德·恩维尔
+Dialogue: 0,0:22:09.02,0:22:10.48,Default,NTP,0,0,0,,很厉害的程序员\N{\fs14\b0}Pretty decent programmer.{\r}
+Dialogue: 0,0:22:10.49,0:22:12.91,Default,NTP,0,0,0,,居无定所  做有偿技术服务\N{\fs14\b0}Knocked around, made a reasonable living{\r}
+Dialogue: 0,0:22:12.92,0:22:14.22,Default,NTP,0,0,0,,过得还不错\N{\fs14\b0}as a tech mercenary.{\r}
+Dialogue: 0,0:22:14.23,0:22:15.43,Default,NTP,0,0,0,,但问题是\N{\fs14\b0}But here's the thing.{\r}
+Dialogue: 0,0:22:15.44,0:22:17.06,Default,NTP,0,0,0,,他是世界上最早意识到\N{\fs14\b0}He was one of the first guys in the world{\r}
+Dialogue: 0,0:22:17.07,0:22:19.59,Default,NTP,0,0,0,,比特币有巨大前景的人之一\N{\fs14\b0}to realize that the Bitcoin was gonna be a big deal.{\r}
+Dialogue: 0,0:22:19.60,0:22:20.95,Default,NTP,0,0,0,,他把一切都投进去\N{\fs14\b0}Put everything he had into it,{\r}
+Dialogue: 0,0:22:20.96,0:22:23.92,Default,NTP,0,0,0,,没过几年  他就有五亿身价了\N{\fs14\b0}and within a couple years, he was worth $1/2 billion.{\r}
+Dialogue: 0,0:22:23.93,0:22:25.20,Default,NTP,0,0,0,,聪明人\N{\fs14\b0}Smart guy.{\r}
+Dialogue: 0,0:22:25.21,0:22:25.98,Default,NTP,0,0,0,,在那之后\N{\fs14\b0}After that,{\r}
+Dialogue: 0,0:22:25.99,0:22:28.12,Default,NTP,0,0,0,,他改名为瑞奇·多特康\N{\fs14\b0}he changed his name to Rich Dotcom.{\r}
+Dialogue: 0,0:22:28.13,0:22:29.79,Default,NTP,0,0,0,,{\an8\fs18\fn方正黑体简体}瑞奇·多特康
+Dialogue: 0,0:22:29.80,0:22:31.17,Default,NTP,0,0,0,,-当我没说  -让我猜猜\N{\fs14\b0}- I take it back. - Let me guess.{\r}
+Dialogue: 0,0:22:31.18,0:22:32.00,Default,NTP,0,0,0,,他拿着这些钱\N{\fs14\b0}He took all that money{\r}
+Dialogue: 0,0:22:32.01,0:22:33.75,Default,NTP,0,0,0,,去世界各地做了很多好事吧\N{\fs14\b0}and did a whole bunch of good in the world with it?{\r}
+Dialogue: 0,0:22:33.76,0:22:35.46,Default,NTP,0,0,0,,正好相反\N{\fs14\b0}Oh, opposite, opposite.{\r}
+Dialogue: 0,0:22:35.47,0:22:38.46,Default,NTP,0,0,0,,他成为了暗网里最有信誉的人之一\N{\fs14\b0}He became one of the most trusted names on the Dark Net.{\r}
+Dialogue: 0,0:22:38.47,0:22:38.80,Default,NTP,0,0,0,,无论什么东西  只要你有钱\N{\fs14\b0}Anything you need, if you have the money,{\r}
+Dialogue: 0,0:22:38.81,0:22:40.62,Default,NTP,0,0,0,,{\an8\fs18\fn方正黑体简体}722号小站
+Dialogue: 0,0:22:40.63,0:22:42.06,Default,NTP,0,0,0,,瑞奇·多特康都能替你搞到\N{\fs14\b0}Rich Dotcom can get it for you.{\r}
+Dialogue: 0,0:22:42.07,0:22:43.60,Default,NTP,0,0,0,,那他是黑客吗\N{\fs14\b0}So he's a hacker?{\r}
+Dialogue: 0,0:22:43.61,0:22:46.26,Default,NTP,0,0,0,,他曾经是黑客  现在嘛...\N{\fs14\b0}He was a hacker. Now he's just...{\r}
+Dialogue: 0,0:22:47.17,0:22:48.96,Default,NTP,0,0,0,,他变得坏多了\N{\fs14\b0}He's a lot, lot worse.{\r}
+Dialogue: 0,0:22:51.22,0:22:53.19,Default,NTP,0,0,0,,同志们  我要用下这间房\N{\fs14\b0}Hey, fellas, I'm gonna need the room.{\r}
+Dialogue: 0,0:22:58.53,0:23:00.32,Default,NTP,0,0,0,,瑞奇  求你了  对不起\N{\fs14\b0}Rich, please. I'm sorry.{\r}
+Dialogue: 0,0:23:00.33,0:23:01.94,Default,NTP,0,0,0,,好的  我也很抱歉\N{\fs14\b0}Yeah, I'd be sorry, too.{\r}
+Dialogue: 0,0:23:01.95,0:23:03.24,Default,NTP,0,0,0,,等他们掏出真家伙的时候\N{\fs14\b0}Hey, wait till they get the pipes out.{\r}
+Dialogue: 0,0:23:03.25,0:23:04.48,Default,NTP,0,0,0,,那场面就不好看了\N{\fs14\b0}That's gonna suck.{\r}
+Dialogue: 0,0:23:04.49,0:23:05.91,Default,NTP,0,0,0,,他们得再检查一遍你们俩\N{\fs14\b0}Hey, they gotta do one more pass on you guys,{\r}
+Dialogue: 0,0:23:05.92,0:23:08.70,Default,NTP,0,0,0,,防止你们把这里偷录下来\N{\fs14\b0}just to make sure you're not recording the whole thing.{\r}
+Dialogue: 0,0:23:09.46,0:23:12.03,Default,NTP,0,0,0,,你没问题了  请站过去\N{\fs14\b0}You're clear. Step over there, please.{\r}
+Dialogue: 0,0:23:14.83,0:23:18.01,Default,NTP,0,0,0,,摩纳哥那次任务  是你们做的吧\N{\fs14\b0}So the Monaco job, that was you guys, right?{\r}
+Dialogue: 0,0:23:19.07,0:23:20.86,Default,NTP,0,0,0,,那家伙一直以来都是我的眼中钉\N{\fs14\b0}Wow, I mean, that guy was a thorn in my side for so long,{\r}
+Dialogue: 0,0:23:20.87,0:23:24.08,Default,NTP,0,0,0,,很高兴终于有人让他闭嘴了\N{\fs14\b0}I'm glad someone finally "Fffuh."{\r}
+Dialogue: 0,0:23:24.58,0:23:25.97,Default,NTP,0,0,0,,不过是谁动的手呢  是...\N{\fs14\b0}Who did it, though? Was it...{\r}
+Dialogue: 0,0:23:25.98,0:23:28.19,Default,NTP,0,0,0,,我是说  是谁割了他的喉咙\N{\fs14\b0}I mean, who actually slit his throat?{\r}
+Dialogue: 0,0:23:29.62,0:23:30.95,Default,NTP,0,0,0,,是我\N{\fs14\b0}I did.{\r}
+Dialogue: 0,0:23:30.96,0:23:33.15,Default,NTP,0,0,0,,用我的蝴蝶刀\N{\fs14\b0}With my butterfly knife.{\r}
+Dialogue: 0,0:23:34.09,0:23:34.97,Default,NTP,0,0,0,,说实话\N{\fs14\b0}I gotta be honest,{\r}
+Dialogue: 0,0:23:34.98,0:23:36.76,Default,NTP,0,0,0,,你现在的样子\N{\fs14\b0}this whole thing that you got going on right now{\r}
+Dialogue: 0,0:23:36.77,0:23:38.85,Default,NTP,0,0,0,,真的引起了我的兴趣\N{\fs14\b0}is really working for me.{\r}
+Dialogue: 0,0:23:38.86,0:23:40.59,Default,NTP,0,0,0,,你跟那个固执男是什么情况\N{\fs14\b0}I mean, what's the deal with you and Stubbles over there?{\r}
+Dialogue: 0,0:23:40.60,0:23:42.49,Default,NTP,0,0,0,,你们是开放的关系\N{\fs14\b0}Are you guys fully... open,{\r}
+Dialogue: 0,0:23:42.50,0:23:43.89,Default,NTP,0,0,0,,还是对彼此忠诚\N{\fs14\b0}or is it a committed thing?{\r}
+Dialogue: 0,0:23:43.90,0:23:46.01,Default,NTP,0,0,0,,如果是后者的话...\N{\fs14\b0}'Cause if it's the latter, I mean...{\r}
+Dialogue: 0,0:23:46.21,0:23:47.43,Default,NTP,0,0,0,,我就在旁边看看也行\N{\fs14\b0}I'm okay to just watch, you know?{\r}
+Dialogue: 0,0:23:47.44,0:23:48.33,Default,NTP,0,0,0,,我最近突然发现\N{\fs14\b0}It's something that I've discovered{\r}
+Dialogue: 0,0:23:48.34,0:23:49.38,Default,NTP,0,0,0,,自己挺喜欢干这种事的\N{\fs14\b0}I actually really like doing.{\r}
+Dialogue: 0,0:23:49.39,0:23:50.27,Default,NTP,0,0,0,,我也不知道是怎么回事\N{\fs14\b0}I don't know where it comes from,{\r}
+Dialogue: 0,0:23:50.28,0:23:51.49,Default,NTP,0,0,0,,但那真的会勾起我的性趣\N{\fs14\b0}but it really turns me on, you know?{\r}
+Dialogue: 0,0:23:51.50,0:23:53.05,Default,NTP,0,0,0,,就当是这次旅程的一部分好了\N{\fs14\b0}It's just sort of part of this journey, so...{\r}
+Dialogue: 0,0:23:53.06,0:23:54.81,Default,NTP,0,0,0,,你觉得他会同意吗\N{\fs14\b0}Do you think he'd be cool with that?{\r}
+Dialogue: 0,0:23:54.82,0:23:56.28,Default,NTP,0,0,0,,你觉得他会接受这种事吗\N{\fs14\b0}Do you think he'd be open to that sort of thing?{\r}
+Dialogue: 0,0:23:56.29,0:23:58.59,Default,NTP,0,0,0,,你觉得他是个开放的人吗\N{\fs14\b0}Do you think he's an open person?{\r}
+Dialogue: 0,0:23:59.58,0:24:01.48,Default,NTP,0,0,0,,可以谈正事了吗\N{\fs14\b0}We doing this or what?{\r}
+Dialogue: 0,0:24:02.48,0:24:05.02,Default,NTP,0,0,0,,{\bord0\shad0\fn方正兰亭黑_GBK\fs18\b0\pos(191,227)\c&HCAA9C2&}你喜欢会吃醋的类型啊
+Dialogue: 0,0:24:05.03,0:24:07.90,Default,NTP,0,0,0,,{\bord0\shad0\fn方正兰亭黑_GBK\fs18\b0\pos(191,227)\c&HCAA9C2&}什么类型我都喜欢
+Dialogue: 0,0:24:09.85,0:24:12.32,Default,NTP,0,0,0,,可以把项链给我了吗\N{\fs14\b0}Okay, may I have the necklace, please?{\r}
+Dialogue: 0,0:24:16.89,0:24:18.51,Default,NTP,0,0,0,,我这里有个哈西德派的家伙\N{\fs14\b0}I got this Hasidic guy on the premises.{\r}
+Dialogue: 0,0:24:18.52,0:24:20.32,Default,NTP,0,0,0,,他是个真正的派对狂人\N{\fs14\b0}He's a real party animal.{\r}
+Dialogue: 0,0:24:20.33,0:24:21.71,Default,NTP,0,0,0,,他一会儿会检验项链的真伪\N{\fs14\b0}And, uh, he's gonna check out the necklace{\r}
+Dialogue: 0,0:24:21.72,0:24:23.85,Default,NTP,0,0,0,,每颗钻石都要查  所以需要点时间\N{\fs14\b0}stone by stone, which is gonna take a while.{\r}
+Dialogue: 0,0:24:23.86,0:24:25.79,Default,NTP,0,0,0,,但为表诚意\N{\fs14\b0}But, in good faith,{\r}
+Dialogue: 0,0:24:25.80,0:24:27.70,Default,NTP,0,0,0,,我会先把名单给你们\N{\fs14\b0}I'm gonna give you the list.{\r}
+Dialogue: 0,0:24:29.62,0:24:31.84,Default,NTP,0,0,0,,不过...你们还不能离开这里\N{\fs14\b0}Now... you just can't leave the party{\r}
+Dialogue: 0,0:24:31.85,0:24:34.05,Default,NTP,0,0,0,,得等我们确认项链是真的\N{\fs14\b0}until the necklace checks out.{\r}
+Dialogue: 0,0:24:35.73,0:24:37.28,Default,NTP,0,0,0,,如果不是的话  你们俩都得死\N{\fs14\b0}And, if it doesn't you're both dead.{\r}
+Dialogue: 0,0:24:37.29,0:24:38.86,Default,NTP,0,0,0,,我开玩笑的  又或者不是\N{\fs14\b0}I'm kidding. Or am I?{\r}
+Dialogue: 0,0:24:38.87,0:24:40.70,Default,NTP,0,0,0,,有时我自己都搞不清\N{\fs14\b0}Sometimes, I don't even know.{\r}
+Dialogue: 0,0:24:41.44,0:24:43.26,Default,NTP,0,0,0,,我得拿回这个\N{\fs14\b0}Oh, I'm gonna need this.{\r}
+Dialogue: 0,0:24:48.19,0:24:49.28,Default,NTP,0,0,0,,还有一枚胸针\N{\fs14\b0}Another pin?{\r}
+Dialogue: 0,0:24:49.29,0:24:50.46,Default,NTP,0,0,0,,这是另一位买家的\N{\fs14\b0}It's another buyer.{\r}
+Dialogue: 0,0:24:50.47,0:24:52.00,Default,NTP,0,0,0,,我以为名单只卖给了我们\N{\fs14\b0}I thought that we had the only copy.{\r}
+Dialogue: 0,0:24:52.01,0:24:53.66,Default,NTP,0,0,0,,才卖六百万吗\N{\fs14\b0}For $6 million?{\r}
+Dialogue: 0,0:24:53.67,0:24:54.91,Default,NTP,0,0,0,,别自以为是了  哥们儿\N{\fs14\b0}Get over yourself, man.{\r}
+Dialogue: 0,0:24:54.92,0:24:55.99,Default,NTP,0,0,0,,你知道我们费了多大劲\N{\fs14\b0}Do you know how hard it was{\r}
+Dialogue: 0,0:24:56.00,0:24:57.18,Default,NTP,0,0,0,,才得到这份名单吗\N{\fs14\b0}to acquire this list?{\r}
+Dialogue: 0,0:24:57.19,0:25:00.04,Default,NTP,0,0,0,,你买的是使用权  不是所有权\N{\fs14\b0}You paid for access, not exclusivity.{\r}
+Dialogue: 0,0:25:00.72,0:25:01.65,Default,NTP,0,0,0,,你们担心什么  担心他们会\N{\fs14\b0}What are you worried about, that they're gonna{\r}
+Dialogue: 0,0:25:01.66,0:25:03.23,Default,NTP,0,0,0,,抢先一步杀了你们想杀的人吗\N{\fs14\b0}kill the guys you wanna kill first?{\r}
+Dialogue: 0,0:25:03.24,0:25:05.48,Default,NTP,0,0,0,,-别这么幼稚  -还有多少买家\N{\fs14\b0}- Don't be childish. - How many other buyers?{\r}
+Dialogue: 0,0:25:05.49,0:25:07.18,Default,NTP,0,0,0,,只有你俩了\N{\fs14\b0}Just the two of you.{\r}
+Dialogue: 0,0:25:07.42,0:25:08.79,Default,NTP,0,0,0,,暂且是\N{\fs14\b0}For now.{\r}
+Dialogue: 0,0:25:10.30,0:25:12.91,Default,NTP,0,0,0,,听着  一旦确认项链是真的\N{\fs14\b0}Look... once the stones check out,{\r}
+Dialogue: 0,0:25:12.92,0:25:14.31,Default,NTP,0,0,0,,你们就可以坐上直升机\N{\fs14\b0}you get to go on a helicopter{\r}
+Dialogue: 0,0:25:14.32,0:25:15.78,Default,NTP,0,0,0,,然后想去哪就去哪\N{\fs14\b0}and go wherever you wanna go.{\r}
+Dialogue: 0,0:25:15.79,0:25:16.79,Default,NTP,0,0,0,,但在此期间\N{\fs14\b0}But, in the meantime,{\r}
+Dialogue: 0,0:25:16.80,0:25:19.03,Default,NTP,0,0,0,,我在楼下准备了价值十万美元的鱼子酱\N{\fs14\b0}I got $100,000 worth of caviar downstairs,{\r}
+Dialogue: 0,0:25:19.04,0:25:21.40,Default,NTP,0,0,0,,还有年份在一战以前的美酒\N{\fs14\b0}and some wine that's older than the First World War.{\r}
+Dialogue: 0,0:25:21.41,0:25:23.56,Default,NTP,0,0,0,,那么...玩得开心点\N{\fs14\b0}So... enjoy yourselves.{\r}
+Dialogue: 0,0:25:23.57,0:25:24.86,Default,NTP,0,0,0,,尤其是你\N{\fs14\b0}This guy in particular.{\r}
+Dialogue: 0,0:25:24.87,0:25:26.48,Default,NTP,0,0,0,,看看你那愁眉苦脸的样子\N{\fs14\b0}Look at that stern mug on your face.{\r}
+Dialogue: 0,0:25:26.49,0:25:27.56,Default,NTP,0,0,0,,放轻松点  哥们儿\N{\fs14\b0}You need to let loose, man!{\r}
+Dialogue: 0,0:25:27.57,0:25:30.07,Default,NTP,0,0,0,,大周五晚上的  扯开嗓子狂欢吧\N{\fs14\b0}I mean, it's Friday night, for cryin' out loud.{\r}
+Dialogue: 0,0:25:30.83,0:25:32.16,Default,NTP,0,0,0,,今天周二\N{\fs14\b0}It's Tuesday.{\r}
+Dialogue: 0,0:25:32.17,0:25:34.13,Default,NTP,0,0,0,,好吧  有些地方已经周五了\N{\fs14\b0}Well, it's Friday somewhere.{\r}
+Dialogue: 0,0:25:38.24,0:25:40.08,Default,NTP,0,0,0,,这里已经有人拿到名单了\N{\fs14\b0}Someone else here already has the list.{\r}
+Dialogue: 0,0:25:40.09,0:25:42.97,Default,NTP,0,0,0,,我们得把另一个U盘拿回来\N{\fs14\b0}We gotta get the other USB drive back.{\r}
+Dialogue: 0,0:26:13.48,0:26:15.29,Default,NTP,0,0,0,,我们该怎么找到另一个买家\N{\fs14\b0}How are we gonna find the other buyer?{\r}
+Dialogue: 0,0:26:15.30,0:26:17.07,Default,NTP,0,0,0,,胸针是唯一能识别买家的信物\N{\fs14\b0}Their only identifying feature is the pin{\r}
+Dialogue: 0,0:26:17.08,0:26:18.97,Default,NTP,0,0,0,,可如今也已经不在他们身上了\N{\fs14\b0}they're no longer wearing.{\r}
+Dialogue: 0,0:26:20.00,0:26:22.46,Default,NTP,0,0,0,,如果能侵入安保系统的话...\N{\fs14\b0}Well, if we can get into the security system...{\r}
+Dialogue: 0,0:26:22.47,0:26:24.22,Default,NTP,0,0,0,,我们可以查监控\N{\fs14\b0}we can go through the footage.{\r}
+Dialogue: 0,0:26:24.23,0:26:25.39,Default,NTP,0,0,0,,看看在瑞奇收回之前\N{\fs14\b0}Find out who was wearing that pin{\r}
+Dialogue: 0,0:26:25.40,0:26:26.65,Default,NTP,0,0,0,,是谁戴着那枚胸针\N{\fs14\b0}before Rich took it back.{\r}
+Dialogue: 0,0:26:26.66,0:26:28.51,Default,NTP,0,0,0,,我的天啊  瞧瞧你们\N{\fs14\b0}Oh, my Goodness, look at you.{\r}
+Dialogue: 0,0:26:28.52,0:26:30.39,Default,NTP,0,0,0,,见到你们真好\N{\fs14\b0}So good to see you.{\r}
+Dialogue: 0,0:26:31.44,0:26:33.09,Default,NTP,0,0,0,,刚刚在楼上  他把你带去旁边\N{\fs14\b0}What did he say to you upstairs,{\r}
+Dialogue: 0,0:26:33.10,0:26:34.92,Default,NTP,0,0,0,,都说了些什么\N{\fs14\b0}when I was out of earshot?{\r}
+Dialogue: 0,0:26:34.93,0:26:37.18,Default,NTP,0,0,0,,我觉得他是想睡我\N{\fs14\b0}I think he wants to sleep with me.{\r}
+Dialogue: 0,0:26:37.83,0:26:38.67,Default,NTP,0,0,0,,或是睡我们\N{\fs14\b0}Or us.{\r}
+Dialogue: 0,0:26:38.68,0:26:39.90,Default,NTP,0,0,0,,我没太明白\N{\fs14\b0}It was hard to tell.{\r}
+Dialogue: 0,0:26:39.91,0:26:41.36,Default,NTP,0,0,0,,太好了\N{\fs14\b0}Perfect.{\r}
+Dialogue: 0,0:26:45.36,0:26:47.03,Default,NTP,0,0,0,,一杯波本  一杯马提尼  谢谢\N{\fs14\b0}Bourbon and a martini, please.{\r}
+Dialogue: 0,0:26:47.04,0:26:48.05,Default,NTP,0,0,0,,你在打我老婆的主意吗\N{\fs14\b0}You propositioned my wife?{\r}
+Dialogue: 0,0:26:48.06,0:26:49.85,Default,NTP,0,0,0,,什么\N{\fs14\b0}What?{\r}
+Dialogue: 0,0:26:49.86,0:26:51.70,Default,NTP,0,0,0,,你在打我老婆的主意吗\N{\fs14\b0}Did you proposition my wife?{\r}
+Dialogue: 0,0:26:52.52,0:26:54.35,Default,NTP,0,0,0,,打主意  你把这事说得\N{\fs14\b0}Proposition? That makes it sound{\r}
+Dialogue: 0,0:26:54.36,0:26:55.09,Default,NTP,0,0,0,,-真下流  -放开\N{\fs14\b0}- very seedy. - Get off!{\r}
+Dialogue: 0,0:26:55.10,0:26:56.58,Default,NTP,0,0,0,,放开他\N{\fs14\b0}Boys!{\r}
+Dialogue: 0,0:26:57.29,0:26:59.23,Default,NTP,0,0,0,,其实...我也邀请你了\N{\fs14\b0}Now... You were also invited.{\r}
+Dialogue: 0,0:26:59.24,0:27:01.15,Default,NTP,0,0,0,,我对你也很感性趣的\N{\fs14\b0}I'm kinda sweet on you as well.{\r}
+Dialogue: 0,0:27:01.16,0:27:02.34,Default,NTP,0,0,0,,没搞错吧\N{\fs14\b0}Really?{\r}
+Dialogue: 0,0:27:03.46,0:27:06.71,Default,NTP,0,0,0,,放轻松  去吃点墨西哥辣椒卷\N{\fs14\b0}Relax. Have some jalapeno poppers.{\r}
+Dialogue: 0,0:27:11.80,0:27:13.13,Default,NTP,0,0,0,,谢谢\N{\fs14\b0}Thank you.{\r}
+Dialogue: 0,0:27:13.27,0:27:15.03,Default,NTP,0,0,0,,这是在干什么\N{\fs14\b0}What was that about?{\r}
+Dialogue: 0,0:27:17.88,0:27:19.54,Default,NTP,0,0,0,,为了这个\N{\fs14\b0}About this.{\r}
+Dialogue: 0,0:27:19.92,0:27:21.77,Default,NTP,0,0,0,,你打我老婆的主意吗\N{\fs14\b0}You propositioned my wife?{\r}
+Dialogue: 0,0:27:22.59,0:27:23.26,Default,NTP,0,0,0,,你在打我老婆的主意吗\N{\fs14\b0}Did you proposition my wife?{\r}
+Dialogue: 0,0:27:23.27,0:27:25.82,Default,NTP,0,0,0,,打主意  放开他\N{\fs14\b0}Proposition? Boys!{\r}
+Dialogue: 0,0:27:27.30,0:27:29.80,Default,NTP,0,0,0,,不是只有你才有隐藏技能\N{\fs14\b0}You're not the only one with hidden talents.{\r}
+Dialogue: 0,0:27:30.23,0:27:31.08,Default,NTP,0,0,0,,干杯\N{\fs14\b0}Cheers.{\r}
+Dialogue: 0,0:27:31.09,0:27:32.52,Default,NTP,0,0,0,,干杯\N{\fs14\b0}Cheers.{\r}
+Dialogue: 0,0:27:52.11,0:27:53.04,Default,NTP,0,0,0,,不是吧\N{\fs14\b0}You kidding me?{\r}
+Dialogue: 0,0:27:53.05,0:27:54.85,Default,NTP,0,0,0,,这里拨不了外线\N{\fs14\b0}I can't get an outside line.{\r}
+Dialogue: 0,0:27:54.86,0:27:56.88,Default,NTP,0,0,0,,你能找到前门的监控吗\N{\fs14\b0}Can you isolate the camera above the front door?{\r}
+Dialogue: 0,0:27:56.89,0:27:58.14,Default,NTP,0,0,0,,可以\N{\fs14\b0}Yep.{\r}
+Dialogue: 0,0:28:03.95,0:28:05.90,Default,NTP,0,0,0,,快  快啊\N{\fs14\b0}Come on, come on.{\r}
+Dialogue: 0,0:28:05.91,0:28:07.30,Default,NTP,0,0,0,,来吧\N{\fs14\b0}Come on...{\r}
+Dialogue: 0,0:28:07.73,0:28:09.15,Default,NTP,0,0,0,,这里\N{\fs14\b0}Oh, there.{\r}
+Dialogue: 0,0:28:09.70,0:28:11.27,Default,NTP,0,0,0,,他一个人来的吗\N{\fs14\b0}Did he walk in alone?{\r}
+Dialogue: 0,0:28:11.83,0:28:13.88,Default,NTP,0,0,0,,对  看起来是的\N{\fs14\b0}Yeah, it looks that way.{\r}
+Dialogue: 0,0:28:13.93,0:28:15.58,Default,NTP,0,0,0,,好吧  你起来\N{\fs14\b0}All right, hop up.{\r}
+Dialogue: 0,0:28:15.63,0:28:17.25,Default,NTP,0,0,0,,我删掉监控录像\N{\fs14\b0}I'm gonna wipe this computer.{\r}
+Dialogue: 0,0:28:17.26,0:28:17.82,Default,NTP,0,0,0,,不行  你删了的话\N{\fs14\b0}No, if you wipe it,{\r}
+Dialogue: 0,0:28:17.83,0:28:19.41,Default,NTP,0,0,0,,他们就会知道有人来过\N{\fs14\b0}they'll know someone was in here.{\r}
+Dialogue: 0,0:28:19.42,0:28:21.26,Default,NTP,0,0,0,,如果不删  他们就会知道是我们\N{\fs14\b0}And if I don't, they'll know it was us.{\r}
+Dialogue: 0,0:28:21.27,0:28:23.27,Default,NTP,0,0,0,,我们要采取行动了\N{\fs14\b0}We're about to make some moves.{\r}
+Dialogue: 0,0:28:23.48,0:28:25.25,Default,NTP,0,0,0,,不能让他们发现\N{\fs14\b0}We don't want them to see.{\r}
+Dialogue: 0,0:28:32.14,0:28:33.92,Default,NTP,0,0,0,,-有收获吗  -在直升机飞行半径内\N{\fs14\b0}- Got something? - We've been searching properties{\r}
+Dialogue: 0,0:28:33.93,0:28:36.24,Default,NTP,0,0,0,,我们搜寻了恩维尔拥有的房产\N{\fs14\b0}that Enver owns within a helicopter's flying radius.{\r}
+Dialogue: 0,0:28:36.25,0:28:37.14,Default,NTP,0,0,0,,你是说多特康吧\N{\fs14\b0}Don't you mean Dotcom?{\r}
+Dialogue: 0,0:28:37.15,0:28:38.17,Default,NTP,0,0,0,,我不会叫他多特康的\N{\fs14\b0}I'm not calling him Dotcom.{\r}
+Dialogue: 0,0:28:38.18,0:28:38.98,Default,NTP,0,0,0,,找到了吗\N{\fs14\b0}Any hits?{\r}
+Dialogue: 0,0:28:38.99,0:28:40.64,Default,NTP,0,0,0,,-有七处  -这么多\N{\fs14\b0}- Seven. - That's a lot.{\r}
+Dialogue: 0,0:28:40.65,0:28:41.41,Default,NTP,0,0,0,,有些在市内\N{\fs14\b0}Some are in the city,{\r}
+Dialogue: 0,0:28:41.42,0:28:42.95,Default,NTP,0,0,0,,但我想可以排除\N{\fs14\b0}but I think we can rule those out.{\r}
+Dialogue: 0,0:28:42.96,0:28:44.39,Default,NTP,0,0,0,,这五个区里  没多少地方\N{\fs14\b0}Not a lot of places to land a helicopter{\r}
+Dialogue: 0,0:28:44.40,0:28:45.65,Default,NTP,0,0,0,,能停得下直升机的\N{\fs14\b0}within the five boroughs.{\r}
+Dialogue: 0,0:28:45.66,0:28:47.27,Default,NTP,0,0,0,,派探员去查实\N{\fs14\b0}Send agents to be sure.{\r}
+Dialogue: 0,0:28:47.28,0:28:49.76,Default,NTP,0,0,0,,其它房产都在东海岸附近\N{\fs14\b0}The other properties are up and down the East Coast.{\r}
+Dialogue: 0,0:28:49.77,0:28:50.86,Default,NTP,0,0,0,,开架直升机\N{\fs14\b0}Take a helicopter{\r}
+Dialogue: 0,0:28:50.87,0:28:52.66,Default,NTP,0,0,0,,过去逐一排查\N{\fs14\b0}and check them out, one by one.{\r}
+Dialogue: 0,0:28:52.67,0:28:53.56,Default,NTP,0,0,0,,我们会找回他们的\N{\fs14\b0}We'll get 'em back.{\r}
+Dialogue: 0,0:28:53.57,0:28:54.84,Default,NTP,0,0,0,,是  长官\N{\fs14\b0}Yes, ma'am.{\r}
+Dialogue: 0,0:29:02.85,0:29:04.53,Default,NTP,0,0,0,,另一位买家在那\N{\fs14\b0}There's the other buyer.{\r}
+Dialogue: 0,0:29:06.46,0:29:07.70,Default,NTP,0,0,0,,你打算怎么办\N{\fs14\b0}Okay, how do you wanna play it?{\r}
+Dialogue: 0,0:29:07.71,0:29:09.91,Default,NTP,0,0,0,,把他单独引开  然后拿下\N{\fs14\b0}Gotta get him alone and take him down.{\r}
+Dialogue: 0,0:29:10.46,0:29:12.53,Default,NTP,0,0,0,,不等我们的项链检查完可以走时\N{\fs14\b0}Shouldn't we wait until our necklace clears{\r}
+Dialogue: 0,0:29:12.54,0:29:13.63,Default,NTP,0,0,0,,再动手吗\N{\fs14\b0}and we can leave?{\r}
+Dialogue: 0,0:29:13.64,0:29:14.96,Default,NTP,0,0,0,,我们不知道他什么时候会走\N{\fs14\b0}We have no idea when he's going to leave.{\r}
+Dialogue: 0,0:29:14.97,0:29:16.68,Default,NTP,0,0,0,,现在就得行动\N{\fs14\b0}We have to act now.{\r}
+Dialogue: 0,0:29:16.74,0:29:17.77,Default,NTP,0,0,0,,好\N{\fs14\b0}Okay.{\r}
+Dialogue: 0,0:29:17.78,0:29:19.35,Default,NTP,0,0,0,,怎么才能把他单独引开呢\N{\fs14\b0}How do we get him alone?{\r}
+Dialogue: 0,0:29:19.36,0:29:21.73,Default,NTP,0,0,0,,利用我们的共同点\N{\fs14\b0}Use the one thing we have in common.{\r}
+Dialogue: 0,0:29:26.36,0:29:27.70,Default,NTP,0,0,0,,打扰一下\N{\fs14\b0}Excuse me.{\r}
+Dialogue: 0,0:29:28.69,0:29:30.05,Default,NTP,0,0,0,,-我认识你吗  -不认识\N{\fs14\b0}- Do I know you? - No.{\r}
+Dialogue: 0,0:29:30.06,0:29:32.07,Default,NTP,0,0,0,,我也不认识你\N{\fs14\b0}And I don't know you.{\r}
+Dialogue: 0,0:29:32.46,0:29:34.05,Default,NTP,0,0,0,,但我想我们都刚到手一件东西\N{\fs14\b0}But I think we both just got had.{\r}
+Dialogue: 0,0:29:34.06,0:29:35.18,Default,NTP,0,0,0,,什么意思\N{\fs14\b0}Excuse me?{\r}
+Dialogue: 0,0:29:35.19,0:29:36.14,Default,NTP,0,0,0,,那份名单\N{\fs14\b0}The list.{\r}
+Dialogue: 0,0:29:36.15,0:29:37.86,Default,NTP,0,0,0,,他说过我们能得到完整的\N{\fs14\b0}He told us we'd get the complete{\r}
+Dialogue: 0,0:29:37.87,0:29:39.71,Default,NTP,0,0,0,,证保计划名单\N{\fs14\b0}WITSEC list.{\r}
+Dialogue: 0,0:29:39.72,0:29:41.35,Default,NTP,0,0,0,,但他只给了我们一半\N{\fs14\b0}He only gave us half.{\r}
+Dialogue: 0,0:29:41.36,0:29:43.17,Default,NTP,0,0,0,,我相信他也骗了你吧\N{\fs14\b0}I'm pretty sure he lied to you as well.{\r}
+Dialogue: 0,0:29:43.18,0:29:44.79,Default,NTP,0,0,0,,我们有一台电脑\N{\fs14\b0}We have access to a computer,{\r}
+Dialogue: 0,0:29:44.80,0:29:46.52,Default,NTP,0,0,0,,如果愿意  你可以自己去查\N{\fs14\b0}if you'd like to check for yourself.{\r}
+Dialogue: 0,0:29:46.53,0:29:47.87,Default,NTP,0,0,0,,我可是付了三百万的\N{\fs14\b0}If I paid $3 million,{\r}
+Dialogue: 0,0:29:47.88,0:29:48.92,Default,NTP,0,0,0,,我要得到完整的名单\N{\fs14\b0}I'd want the whole thing.{\r}
+Dialogue: 0,0:29:48.93,0:29:49.98,Default,NTP,0,0,0,,-你付了三百万吗  -对\N{\fs14\b0}- You paid three? - Yeah.{\r}
+Dialogue: 0,0:29:49.99,0:29:51.61,Default,NTP,0,0,0,,我给了九百万\N{\fs14\b0}I paid nine.{\r}
+Dialogue: 0,0:29:52.50,0:29:53.63,Default,NTP,0,0,0,,你有电脑吗\N{\fs14\b0}You have a computer?{\r}
+Dialogue: 0,0:29:53.64,0:29:54.99,Default,NTP,0,0,0,,对\N{\fs14\b0}Yes.{\r}
+Dialogue: 0,0:29:55.34,0:29:56.45,Default,NTP,0,0,0,,带路吧\N{\fs14\b0}Lead the way.{\r}
+Dialogue: 0,0:29:56.46,0:29:57.81,Default,NTP,0,0,0,,没问题\N{\fs14\b0}Of course.{\r}
+Dialogue: 0,0:30:10.21,0:30:11.44,Default,NTP,0,0,0,,U盘在哪\N{\fs14\b0}Where's the USB?{\r}
+Dialogue: 0,0:30:11.45,0:30:13.15,Default,NTP,0,0,0,,电脑在哪\N{\fs14\b0}Where's the computer?{\r}
+Dialogue: 0,0:30:13.16,0:30:14.68,Default,NTP,0,0,0,,把U盘交出来\N{\fs14\b0}Give me the drive.{\r}
+Dialogue: 0,0:31:19.83,0:31:21.79,Default,NTP,0,0,0,,快帮我找U盘\N{\fs14\b0}Help me find the drive.{\r}
+Dialogue: 0,0:31:25.46,0:31:28.10,Default,NTP,0,0,0,,还说你俩对3P没兴趣\N{\fs14\b0}And you guys said you weren't into threesomes.{\r}
+Dialogue: 0,0:31:34.48,0:31:36.47,Default,NTP,0,0,0,,好了  那谁打算编个瞎话\N{\fs14\b0}Okay, now, who wants to lie to me{\r}
+Dialogue: 0,0:31:36.48,0:31:39.32,Default,NTP,0,0,0,,骗我这里到底发生了什么\N{\fs14\b0}about what the hell is going on down here?{\r}
+Dialogue: 0,0:31:47.07,0:31:49.22,Default,NTP,0,0,0,,本想给我好朋友卡尔办场有趣的派对\N{\fs14\b0}Try to throw a fun party for my best friend Carl,{\r}
+Dialogue: 0,0:31:49.23,0:31:51.12,Default,NTP,0,0,0,,然后就听说有人闯进我办公室\N{\fs14\b0}and then I hear somebody's broken into my office{\r}
+Dialogue: 0,0:31:51.13,0:31:54.16,Default,NTP,0,0,0,,弄坏了一个很贵的荷兰监控系统\N{\fs14\b0}and destroyed a very expensive Dutch surveillance system.{\r}
+Dialogue: 0,0:31:54.17,0:31:55.77,Default,NTP,0,0,0,,接着就看到我最爱的一对在这里\N{\fs14\b0}Then I see my favorite couple down here{\r}
+Dialogue: 0,0:31:55.78,0:31:57.91,Default,NTP,0,0,0,,和我一位重要客户抓屁股玩\N{\fs14\b0}playing grab-ass with a valued customer.{\r}
+Dialogue: 0,0:31:57.92,0:32:00.05,Default,NTP,0,0,0,,得承认  我有点不高兴了\N{\fs14\b0}I gotta admit I'm a little upset.{\r}
+Dialogue: 0,0:32:02.74,0:32:04.23,Default,NTP,0,0,0,,有人想说两句吗  因为没有的话\N{\fs14\b0}Is someone gonna start talking, because otherwise,{\r}
+Dialogue: 0,0:32:04.24,0:32:06.21,Default,NTP,0,0,0,,我就要开始胡思乱想了\N{\fs14\b0}my imagination is gonna start to go.{\r}
+Dialogue: 0,0:32:06.22,0:32:09.83,Default,NTP,0,0,0,,而且我这人还有点胆小加偏执\N{\fs14\b0}And I tend to err on the side of scary and paranoid.{\r}
+Dialogue: 0,0:32:10.40,0:32:11.94,Default,NTP,0,0,0,,他是联调局的\N{\fs14\b0}He's a Fed.{\r}
+Dialogue: 0,0:32:13.54,0:32:14.99,Default,NTP,0,0,0,,不会  他通过安检了\N{\fs14\b0}No, he checked out.{\r}
+Dialogue: 0,0:32:15.00,0:32:16.77,Default,NTP,0,0,0,,我们都通过了\N{\fs14\b0}We all checked out.{\r}
+Dialogue: 0,0:32:18.54,0:32:20.46,Default,NTP,0,0,0,,说说  他怎么就是联调局的呢\N{\fs14\b0}Okay, what makes him a Fed?{\r}
+Dialogue: 0,0:32:20.47,0:32:22.04,Default,NTP,0,0,0,,他找上我们...\N{\fs14\b0}He came up to us...{\r}
+Dialogue: 0,0:32:22.05,0:32:23.40,Default,NTP,0,0,0,,张口就说名单的事\N{\fs14\b0}and started talking about the list.{\r}
+Dialogue: 0,0:32:23.41,0:32:25.54,Default,NTP,0,0,0,,他是怎么知道的\N{\fs14\b0}So how would he know about that?{\r}
+Dialogue: 0,0:32:26.76,0:32:28.23,Default,NTP,0,0,0,,因为他是另一位买家\N{\fs14\b0}He's the other buyer?{\r}
+Dialogue: 0,0:32:28.24,0:32:29.59,Default,NTP,0,0,0,,我要是你  我就得担心了\N{\fs14\b0}Then I'd be real worried if I were you,{\r}
+Dialogue: 0,0:32:29.60,0:32:31.00,Default,NTP,0,0,0,,因为你把偷来的名单\N{\fs14\b0}because you just sold that list{\r}
+Dialogue: 0,0:32:31.01,0:32:33.65,Default,NTP,0,0,0,,卖给了它原来的主人\N{\fs14\b0}to the same people you stole it from.{\r}
+Dialogue: 0,0:32:38.16,0:32:39.55,Default,NTP,0,0,0,,搜他身\N{\fs14\b0}Search him.{\r}
+Dialogue: 0,0:32:52.41,0:32:54.43,Default,NTP,0,0,0,,这是我的安全卡\N{\fs14\b0}He's got my security card.{\r}
+Dialogue: 0,0:32:56.72,0:32:58.50,Default,NTP,0,0,0,,能把你的枪给我吗\N{\fs14\b0}Can I have your gun, please?{\r}
+Dialogue: 0,0:33:16.96,0:33:19.24,Default,NTP,0,0,0,,你俩喜欢法国白兰地吗\N{\fs14\b0}Hey, would you two care for a cognac?{\r}
+Dialogue: 0,0:33:42.46,0:33:44.10,Default,NTP,0,0,0,,一片漆黑\N{\fs14\b0}The lights are out.{\r}
+Dialogue: 0,0:33:45.28,0:33:46.90,Default,NTP,0,0,0,,红外扫描没发现有人\N{\fs14\b0}No heat signatures.{\r}
+Dialogue: 0,0:33:46.91,0:33:48.11,Default,NTP,0,0,0,,这里没什么异常\N{\fs14\b0}Okay, there's nothing going on over here.{\r}
+Dialogue: 0,0:33:48.12,0:33:50.01,Default,NTP,0,0,0,,去下一家\N{\fs14\b0}Move on to the next one.{\r}
+Dialogue: 0,0:33:54.91,0:33:56.17,Default,NTP,0,0,0,,知道吗  我买这瓶白兰地\N{\fs14\b0}You know, I purchased this cognac{\r}
+Dialogue: 0,0:33:56.18,0:33:58.49,Default,NTP,0,0,0,,可花了十万英镑啊\N{\fs14\b0}for 100,000 British pounds sterling.{\r}
+Dialogue: 0,0:33:58.50,0:34:00.18,Default,NTP,0,0,0,,佩服\N{\fs14\b0}Impressive.{\r}
+Dialogue: 0,0:34:00.71,0:34:02.10,Default,NTP,0,0,0,,举杯吧\N{\fs14\b0}Shall we?{\r}
+Dialogue: 0,0:34:04.26,0:34:05.89,Default,NTP,0,0,0,,你们先请\N{\fs14\b0}Please, after you.{\r}
+Dialogue: 0,0:34:12.16,0:34:14.21,Default,NTP,0,0,0,,这么好的酒怎能不分享呢\N{\fs14\b0}It's too good not to share, right?{\r}
+Dialogue: 0,0:34:14.22,0:34:15.62,Default,NTP,0,0,0,,你们常喝白兰地吗\N{\fs14\b0}You guys big cognac drinkers?{\r}
+Dialogue: 0,0:34:15.63,0:34:17.10,Default,NTP,0,0,0,,并不是\N{\fs14\b0}Not really.{\r}
+Dialogue: 0,0:34:19.23,0:34:21.01,Default,NTP,0,0,0,,当首次提取葡萄汁时\N{\fs14\b0}See, the first time they distill the grapes,{\r}
+Dialogue: 0,0:34:21.02,0:34:23.99,Default,NTP,0,0,0,,提取出来的酒简直没法喝\N{\fs14\b0}it comes out as this basically undrinkable wine.{\r}
+Dialogue: 0,0:34:24.00,0:34:25.79,Default,NTP,0,0,0,,酒精含量也只有7%到9%\N{\fs14\b0}And it's only about seven or nine percent alcohol.{\r}
+Dialogue: 0,0:34:25.80,0:34:26.92,Default,NTP,0,0,0,,简直是在做无用功\N{\fs14\b0}It's basically a waste of time.{\r}
+Dialogue: 0,0:34:26.93,0:34:28.68,Default,NTP,0,0,0,,这酒拿出来就是耻辱\N{\fs14\b0}Should be ashamed of itself.{\r}
+Dialogue: 0,0:34:28.69,0:34:30.14,Default,NTP,0,0,0,,但是再提取一次\N{\fs14\b0}But then, they distill it again,{\r}
+Dialogue: 0,0:34:30.15,0:34:32.67,Default,NTP,0,0,0,,酒精含量就达到了70%\N{\fs14\b0}and it clocks in at about 70 percent.{\r}
+Dialogue: 0,0:34:32.68,0:34:35.98,Default,NTP,0,0,0,,而且...非常纯净\N{\fs14\b0}And it's just... crystal clear.{\r}
+Dialogue: 0,0:34:36.09,0:34:38.95,Default,NTP,0,0,0,,他们称其为"白兰地"{\fs14}[生命之水]{\c}\N{\fs14\b0}Eau-de-vie, they call it.{\r}
+Dialogue: 0,0:34:39.24,0:34:40.67,Default,NTP,0,0,0,,是法语\N{\fs14\b0}It's French.{\r}
+Dialogue: 0,0:34:40.68,0:34:43.89,Default,NTP,0,0,0,,所以你得提纯两次\N{\fs14\b0}But you gotta distill it twice.{\r}
+Dialogue: 0,0:34:45.87,0:34:47.84,Default,NTP,0,0,0,,摩纳哥那次任务是你俩共同完成的  对吗\N{\fs14\b0}So you guys did the Monaco job together, right?{\r}
+Dialogue: 0,0:34:47.85,0:34:49.68,Default,NTP,0,0,0,,我已经说过...\N{\fs14\b0}I already told...{\r}
+Dialogue: 0,0:34:49.69,0:34:50.80,Default,NTP,0,0,0,,我在跟怒汉先生说话呢\N{\fs14\b0}I'm talking to Angry over here.{\r}
+Dialogue: 0,0:34:50.81,0:34:51.84,Default,NTP,0,0,0,,你别看她\N{\fs14\b0}Don't look at her.{\r}
+Dialogue: 0,0:34:51.85,0:34:53.09,Default,NTP,0,0,0,,我就是问你个问题\N{\fs14\b0}I'm just asking you a question.{\r}
+Dialogue: 0,0:34:53.10,0:34:56.43,Default,NTP,0,0,0,,摩纳哥那次任务是你俩共同完成的  对吗\N{\fs14\b0}You guys did the Monaco job together, right?{\r}
+Dialogue: 0,0:34:57.11,0:34:57.92,Default,NTP,0,0,0,,是的\N{\fs14\b0}Yeah.{\r}
+Dialogue: 0,0:34:57.93,0:34:59.47,Default,NTP,0,0,0,,那太好了\N{\fs14\b0}That's great.{\r}
+Dialogue: 0,0:34:59.48,0:35:01.22,Default,NTP,0,0,0,,我讨厌那家伙\N{\fs14\b0}You know, I hated that guy.{\r}
+Dialogue: 0,0:35:01.23,0:35:03.52,Default,NTP,0,0,0,,他就是个爱发牢骚  哭哭啼啼的人\N{\fs14\b0}He was such a whiny, sniveling little...{\r}
+Dialogue: 0,0:35:03.53,0:35:05.68,Default,NTP,0,0,0,,是谁动的手呢  是谁动手...\N{\fs14\b0}Who did it, though? Who actually...{\r}
+Dialogue: 0,0:35:05.69,0:35:06.23,Default,NTP,0,0,0,,杀掉他的\N{\fs14\b0}put him down?{\r}
+Dialogue: 0,0:35:06.24,0:35:08.49,Default,NTP,0,0,0,,别...看她\N{\fs14\b0}Don't... look at her.{\r}
+Dialogue: 0,0:35:11.71,0:35:12.67,Default,NTP,0,0,0,,是她\N{\fs14\b0}She did.{\r}
+Dialogue: 0,0:35:12.68,0:35:15.37,Default,NTP,0,0,0,,对  当然是她干的\N{\fs14\b0}Right... of course she did.{\r}
+Dialogue: 0,0:35:15.67,0:35:18.14,Default,NTP,0,0,0,,对吗  当然是她\N{\fs14\b0}Right? Course she did.{\r}
+Dialogue: 0,0:35:18.68,0:35:19.34,Default,NTP,0,0,0,,看看她\N{\fs14\b0}I mean, look at her.{\r}
+Dialogue: 0,0:35:19.35,0:35:21.22,Default,NTP,0,0,0,,天啊  你也能杀死我\N{\fs14\b0}Jeez, you could put me down, too.{\r}
+Dialogue: 0,0:35:21.23,0:35:22.51,Default,NTP,0,0,0,,怎么杀的\N{\fs14\b0}How?{\r}
+Dialogue: 0,0:35:23.73,0:35:25.12,Default,NTP,0,0,0,,怎么杀的\N{\fs14\b0}How?{\r}
+Dialogue: 0,0:35:25.50,0:35:27.11,Default,NTP,0,0,0,,对  没错\N{\fs14\b0}Yeah, that's right.{\r}
+Dialogue: 0,0:35:27.33,0:35:28.69,Default,NTP,0,0,0,,怎么杀的\N{\fs14\b0}How?{\r}
+Dialogue: 0,0:35:30.36,0:35:32.04,Default,NTP,0,0,0,,你说得对\N{\fs14\b0}You are right.{\r}
+Dialogue: 0,0:35:32.28,0:35:34.84,Default,NTP,0,0,0,,如此美好...\N{\fs14\b0}This is too good...{\r}
+Dialogue: 0,0:35:34.85,0:35:36.33,Default,NTP,0,0,0,,怎能不分享\N{\fs14\b0}not to share.{\r}
+Dialogue: 0,0:35:36.76,0:35:38.00,Default,NTP,0,0,0,,对吗\N{\fs14\b0}Right?{\r}
+Dialogue: 0,0:35:44.60,0:35:46.19,Default,NTP,0,0,0,,动作真快\N{\fs14\b0}That was fast.{\r}
+Dialogue: 0,0:35:46.20,0:35:47.31,Default,NTP,0,0,0,,离开桌子\N{\fs14\b0}Move away from the desk.{\r}
+Dialogue: 0,0:35:47.32,0:35:49.47,Default,NTP,0,0,0,,真是越来越令人激动了  对吗\N{\fs14\b0}Okay, this just got really exciting, didn't it?{\r}
+Dialogue: 0,0:35:49.48,0:35:50.93,Default,NTP,0,0,0,,把另一个U盘给我\N{\fs14\b0}Give me the other USB key.{\r}
+Dialogue: 0,0:35:50.94,0:35:51.99,Default,NTP,0,0,0,,否则呢\N{\fs14\b0}Or what?{\r}
+Dialogue: 0,0:35:52.00,0:35:53.32,Default,NTP,0,0,0,,好吧  好吧\N{\fs14\b0}Okay, okay, okay, okay.{\r}
+Dialogue: 0,0:35:53.33,0:35:55.45,Default,NTP,0,0,0,,好  怒汉先生  拿去吧\N{\fs14\b0}Okay, Angry, here we go.{\r}
+Dialogue: 0,0:35:56.60,0:35:57.20,Default,NTP,0,0,0,,是给你还是...\N{\fs14\b0}Is it for you or...{\r}
+Dialogue: 0,0:35:57.21,0:35:59.04,Default,NTP,0,0,0,,-给我  -好\N{\fs14\b0}- Give it to me! - Okay.{\r}
+Dialogue: 0,0:35:59.46,0:36:00.80,Default,NTP,0,0,0,,好了\N{\fs14\b0}All right.{\r}
+Dialogue: 0,0:36:01.29,0:36:02.52,Default,NTP,0,0,0,,我们一起走出去\N{\fs14\b0}We're gonna walk outside.{\r}
+Dialogue: 0,0:36:02.53,0:36:03.77,Default,NTP,0,0,0,,你让直升机回来\N{\fs14\b0}You're gonna bring back the chopper.{\r}
+Dialogue: 0,0:36:03.78,0:36:04.76,Default,NTP,0,0,0,,我们三个\N{\fs14\b0}And the three of us{\r}
+Dialogue: 0,0:36:04.77,0:36:06.39,Default,NTP,0,0,0,,一起回城里去\N{\fs14\b0}are gonna head back to the city.{\r}
+Dialogue: 0,0:36:06.40,0:36:07.42,Default,NTP,0,0,0,,是吗\N{\fs14\b0}We are?{\r}
+Dialogue: 0,0:36:07.43,0:36:09.67,Default,NTP,0,0,0,,好\N{\fs14\b0}Oh. Okay.{\r}
+Dialogue: 0,0:36:11.74,0:36:13.41,Default,NTP,0,0,0,,你不按我说的做...\N{\fs14\b0}You step out of line...{\r}
+Dialogue: 0,0:36:13.59,0:36:15.04,Default,NTP,0,0,0,,我就毙了你\N{\fs14\b0}I will kill you.{\r}
+Dialogue: 0,0:36:15.05,0:36:16.67,Default,NTP,0,0,0,,明白吗\N{\fs14\b0}You understand?{\r}
+Dialogue: 0,0:36:16.89,0:36:19.14,Default,NTP,0,0,0,,明白  听上去相当简单明了\N{\fs14\b0}Yeah, that seems pretty straightforward.{\r}
+Dialogue: 0,0:36:19.15,0:36:20.28,Default,NTP,0,0,0,,很好\N{\fs14\b0}Good.{\r}
+Dialogue: 0,0:36:20.29,0:36:22.37,Default,NTP,0,0,0,,快走\N{\fs14\b0}Now... move.{\r}
+Dialogue: 0,0:36:26.95,0:36:29.25,Default,NTP,0,0,0,,你让他们把直升机叫回来\N{\fs14\b0}I want you to ask these two to bring back the chopper.{\r}
+Dialogue: 0,0:36:29.26,0:36:30.61,Default,NTP,0,0,0,,懂了\N{\fs14\b0}Gotcha.{\r}
+Dialogue: 0,0:36:31.09,0:36:33.04,Default,NTP,0,0,0,,伙计们  今晚真疯狂\N{\fs14\b0}Hey, guys! Crazy night tonight.{\r}
+Dialogue: 0,0:36:33.05,0:36:36.29,Default,NTP,0,0,0,,你们能不能帮个忙  帮我杀了他们\N{\fs14\b0}Um, can you do me a favor and kill these two, please?{\r}
+Dialogue: 0,0:36:40.85,0:36:42.99,Default,NTP,0,0,0,,我现在不应该已经死了吗\N{\fs14\b0}Hey, shouldn't I be dead already?{\r}
+Dialogue: 0,0:36:50.21,0:36:52.43,Default,NTP,0,0,0,,好吧  你们是警察\N{\fs14\b0}Yeah, OK, you're cops.{\r}
+Dialogue: 0,0:36:52.44,0:36:53.89,Default,NTP,0,0,0,,是联调局的吧\N{\fs14\b0}Feds, right?{\r}
+Dialogue: 0,0:36:54.08,0:36:55.02,Default,NTP,0,0,0,,如果你们是雇佣军\N{\fs14\b0}Yeah, if you were mercenaries,{\r}
+Dialogue: 0,0:36:55.03,0:36:56.78,Default,NTP,0,0,0,,就不会费心夺走第二份名单了\N{\fs14\b0}you wouldn't have bothered to recover the second list.{\r}
+Dialogue: 0,0:36:56.79,0:36:58.45,Default,NTP,0,0,0,,我说的没错吧\N{\fs14\b0}I'm right, aren't I?{\r}
+Dialogue: 0,0:36:58.78,0:36:59.88,Default,NTP,0,0,0,,对啊\N{\fs14\b0}Yeah.{\r}
+Dialogue: 0,0:36:59.89,0:37:01.45,Default,NTP,0,0,0,,还有  警察不会射杀\N{\fs14\b0}And, see, cops don't shoot the suspects{\r}
+Dialogue: 0,0:37:01.46,0:37:03.19,Default,NTP,0,0,0,,他们抓住的嫌疑犯  那样是违法的\N{\fs14\b0}they have in custody... it's against the law.{\r}
+Dialogue: 0,0:37:03.20,0:37:05.24,Default,NTP,0,0,0,,既然我的手下都掏出枪了\N{\fs14\b0}So, now that my men have their guns out,{\r}
+Dialogue: 0,0:37:05.25,0:37:07.27,Default,NTP,0,0,0,,不如你们把枪放下\N{\fs14\b0}why don't you put yours down{\r}
+Dialogue: 0,0:37:07.28,0:37:08.81,Default,NTP,0,0,0,,我们今晚就到此为止\N{\fs14\b0}and we can call it a night?{\r}
+Dialogue: 0,0:37:08.82,0:37:10.92,Default,NTP,0,0,0,,或者你杀了我  然后他们杀了你们\N{\fs14\b0}Or you could kill me, and then they'll kill you.{\r}
+Dialogue: 0,0:37:10.93,0:37:13.08,Default,NTP,0,0,0,,你们肯定算得清利害得失\N{\fs14\b0}I'm sure you've done the math on that.{\r}
+Dialogue: 0,0:37:16.78,0:37:18.52,Default,NTP,0,0,0,,或者会这样\N{\fs14\b0}Or there's that.{\r}
+Dialogue: 0,0:37:20.56,0:37:22.77,Default,NTP,0,0,0,,快跑  进池边小屋\N{\fs14\b0}Come on! In the pool house!{\r}
+Dialogue: 0,0:37:22.78,0:37:24.51,Default,NTP,0,0,0,,快跑\N{\fs14\b0}Come on, run!{\r}
+Dialogue: 0,0:37:32.69,0:37:34.55,Default,NTP,0,0,0,,到柱子后面去\N{\fs14\b0}Get behind the post!{\r}
+Dialogue: 0,0:37:34.70,0:37:36.47,Default,NTP,0,0,0,,躲在柱子后面\N{\fs14\b0}Stay behind that pillar!{\r}
+Dialogue: 0,0:37:43.52,0:37:45.00,Default,NTP,0,0,0,,我没子弹了\N{\fs14\b0}I'm out!{\r}
+Dialogue: 0,0:37:48.37,0:37:49.21,Default,NTP,0,0,0,,他们在那\N{\fs14\b0}Right there!{\r}
+Dialogue: 0,0:37:49.22,0:37:51.28,Default,NTP,0,0,0,,我们得解决掉守卫\N{\fs14\b0}We gotta take out those guards.{\r}
+Dialogue: 0,0:38:03.58,0:38:04.93,Default,NTP,0,0,0,,联调局\N{\fs14\b0}It's the FBI!{\r}
+Dialogue: 0,0:38:04.94,0:38:06.48,Default,NTP,0,0,0,,你们被包围了\N{\fs14\b0}You are surrounded!{\r}
+Dialogue: 0,0:38:06.49,0:38:08.77,Default,NTP,0,0,0,,放下武器\N{\fs14\b0}Put down your weapons!{\r}
+Dialogue: 0,0:38:12.78,0:38:13.71,Default,NTP,0,0,0,,我们是联调局的\N{\fs14\b0}We are the FBI.{\r}
+Dialogue: 0,0:38:13.72,0:38:15.69,Default,NTP,0,0,0,,你被捕了\N{\fs14\b0}You are under arrest.{\r}
+Dialogue: 0,0:38:28.42,0:38:29.93,Default,NTP,0,0,0,,今天干得好\N{\fs14\b0}Nice work today.{\r}
+Dialogue: 0,0:38:31.10,0:38:32.09,Default,NTP,0,0,0,,谢谢\N{\fs14\b0}Thank you.{\r}
+Dialogue: 0,0:38:32.10,0:38:33.78,Default,NTP,0,0,0,,你的燕尾服呢\N{\fs14\b0}Where's the tux?{\r}
+Dialogue: 0,0:38:33.79,0:38:36.17,Default,NTP,0,0,0,,我可等不及脱下它\N{\fs14\b0}I couldn't wait to get out of that thing.{\r}
+Dialogue: 0,0:38:36.18,0:38:38.20,Default,NTP,0,0,0,,之前答应喝一杯呢\N{\fs14\b0}So how 'bout that drink?{\r}
+Dialogue: 0,0:38:38.21,0:38:39.79,Default,NTP,0,0,0,,去不了了\N{\fs14\b0}I can't.{\r}
+Dialogue: 0,0:38:39.94,0:38:43.50,Default,NTP,0,0,0,,我们今晚要庆祝简的乔迁之喜\N{\fs14\b0}We have a housewarming thing tonight, for Jane.{\r}
+Dialogue: 0,0:38:43.51,0:38:44.97,Default,NTP,0,0,0,,好吧\N{\fs14\b0}Okay.{\r}
+Dialogue: 0,0:38:54.19,0:38:55.87,Default,NTP,0,0,0,,谢谢你追回名单\N{\fs14\b0}Thanks for getting that list back.{\r}
+Dialogue: 0,0:38:55.88,0:38:57.66,Default,NTP,0,0,0,,我很高兴能帮上忙\N{\fs14\b0}Oh, glad I could help.{\r}
+Dialogue: 0,0:38:59.06,0:39:01.48,Default,NTP,0,0,0,,他有几堵心墙  从不对人敞开\N{\fs14\b0}He's got a few walls that may never come down...{\r}
+Dialogue: 0,0:39:01.49,0:39:03.80,Default,NTP,0,0,0,,他可能是我见过最内向的人\N{\fs14\b0}and is maybe the most introverted person I've ever met,{\r}
+Dialogue: 0,0:39:03.81,0:39:06.98,Default,NTP,0,0,0,,但除此之外  你再也找不到比他更好的人\N{\fs14\b0}but aside from that, you won't find a better man.{\r}
+Dialogue: 0,0:39:13.24,0:39:15.69,Default,NTP,0,0,0,,我们是不是该把戒指摘下来了\N{\fs14\b0}We should probably take those rings off.{\r}
+Dialogue: 0,0:39:15.70,0:39:18.03,Default,NTP,0,0,0,,对\N{\fs14\b0}Oh, right.{\r}
+Dialogue: 0,0:39:29.73,0:39:31.36,Default,NTP,0,0,0,,你不必那样做\N{\fs14\b0}You don't have to do that.{\r}
+Dialogue: 0,0:39:31.37,0:39:34.57,Default,NTP,0,0,0,,不  我必须\N{\fs14\b0}Yes... I do.{\r}
+Dialogue: 0,0:39:50.22,0:39:53.06,Default,NTP,0,0,0,,{\an8\fs18\fn方正黑体简体}索尔·格雷罗\N我受雇于宝芬妮·梅菲尔  是一名联调局线人
+Dialogue: 0,0:41:11.13,0:41:13.05,Default,NTP,0,0,0,,{\an8\fs18\fn方正黑体简体}新消息  任务完成
+
+
