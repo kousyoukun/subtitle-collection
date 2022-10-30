@@ -1,0 +1,980 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: Ricco
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,30,&H00C0C0C0,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,-48,134
+Style: E,Microsoft YaHei,16,&H00C8C8FF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,1,134
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:41.69,0:00:42.76,Default,,0000,0000,0000,,-德克萨斯州\N{\rE}- Texas.{\r}
+Dialogue: 0,0:00:42.80,0:00:44.11,Default,,0000,0000,0000,,现在我领先了\N{\rE}Now I'm in the lead.{\r}
+Dialogue: 0,0:00:44.14,0:00:45.83,Default,,0000,0000,0000,,-哦，那是我的\N{\rE}- Oh, that's mine.{\r}
+Dialogue: 0,0:00:45.87,0:00:47.01,Default,,0000,0000,0000,,-呃,呃!-是的\N{\rE}- Uh, uh! - Yeah.{\r}
+Dialogue: 0,0:00:47.04,0:00:48.77,Default,,0000,0000,0000,,从格林伯格出来-不\N{\rE}Coming out of Greenburg it pa- - No{\r}
+Dialogue: 0,0:00:48.80,0:00:50.22,Default,,0000,0000,0000,,-我们超过它了，它现在正从我们身边经过\N{\rE}- We passed it and it's passing us now.{\r}
+Dialogue: 0,0:00:50.25,0:00:51.81,Default,,0000,0000,0000,,-不，那不是德州\N{\rE}- No, that was not Texas.{\r}
+Dialogue: 0,0:00:51.84,0:00:53.81,Default,,0000,0000,0000,,这是格鲁吉亚\N{\rE}That was Georgia{\r}
+Dialogue: 0,0:00:53.84,0:00:55.22,Default,,0000,0000,0000,,那是一辆蓝色的货车\N{\rE}and it was a blue van{\r}
+Dialogue: 0,0:00:55.26,0:00:57.50,Default,,0000,0000,0000,,我记得很清楚\N{\rE}and I remember it distinctly.{\r}
+Dialogue: 0,0:00:57.54,0:00:59.36,Default,,0000,0000,0000,,-不,不\N{\rE}- No, no, no, no, no.{\r}
+Dialogue: 0,0:01:00.64,0:01:03.06,Default,,0000,0000,0000,,-你在偷我的盘子-没有\N{\rE}- You are stealing my plate. - No.{\r}
+Dialogue: 0,0:01:03.09,0:01:04.78,Default,,0000,0000,0000,,-连当地电视台都没有\N{\rE}- Not even a local station.{\r}
+Dialogue: 0,0:01:05.92,0:01:08.10,Default,,0000,0000,0000,,-嗯，最便宜的\N{\rE}- Well, the best bargains{\r}
+Dialogue: 0,0:01:08.13,0:01:10.17,Default,,0000,0000,0000,,都在最遥远的地方\N{\rE}are in the most far flung places.{\r}
+Dialogue: 0,0:01:10.20,0:01:11.24,Default,,0000,0000,0000,,-遥远的地方\N{\rE}- Far flung places.{\r}
+Dialogue: 0,0:01:12.69,0:01:14.21,Default,,0000,0000,0000,,哦，我讨厌那个广告\N{\rE}Oh, I hate that commercial.{\r}
+Dialogue: 0,0:01:17.11,0:01:19.38,Default,,0000,0000,0000,,啊，天气真好\N{\rE}Ah, such a pretty day.{\r}
+Dialogue: 0,0:01:19.42,0:01:21.08,Default,,0000,0000,0000,,-是的，女士\N{\rE}- Yes, ma'am, it is.{\r}
+Dialogue: 0,0:01:47.93,0:01:48.97,Default,,0000,0000,0000,,- 揍你?\N{\rE}- BEAT-NG-U'?{\r}
+Dialogue: 0,0:01:50.59,0:01:51.73,Default,,0000,0000,0000,,-打?\N{\rE}- Beating?{\r}
+Dialogue: 0,0:01:51.76,0:01:53.32,Default,,0000,0000,0000,,我才是那个领先的人\N{\rE}I'm the one that's in the lead.{\r}
+Dialogue: 0,0:01:55.63,0:01:58.22,Default,,0000,0000,0000,,-还是B-EAT-NG-U?\N{\rE}- Or is it B-EAT-NG-U?{\r}
+Dialogue: 0,0:01:58.25,0:02:03.46,Default,,0000,0000,0000,,哈哈，不管怎样，这是一个梳妆台，所以我要两份\N{\rE}Ha- ha, either way, it's a vanity plate, so I get doubles.{\r}
+Dialogue: 0,0:02:06.19,0:02:08.12,Default,,0000,0000,0000,,-天啊，嘿…\N{\rE}- Jeez, hey now...{\r}
+Dialogue: 0,0:02:10.88,0:02:13.02,Default,,0000,0000,0000,,-罗尼，他就快了!\N{\rE}- Ronnie, he's so close!{\r}
+Dialogue: 0,0:02:14.44,0:02:15.48,Default,,0000,0000,0000,,- 走啊\N{\rE}- Go around.{\r}
+Dialogue: 0,0:02:17.20,0:02:18.37,Default,,0000,0000,0000,,- 走啊\N{\rE}- Go around!{\r}
+Dialogue: 0,0:02:20.96,0:02:22.34,Default,,0000,0000,0000,,-我的天哪!\N{\rE}- My gosh!{\r}
+Dialogue: 0,0:02:33.53,0:02:34.63,Default,,0000,0000,0000,,你没事吧?\N{\rE}You okay?{\r}
+Dialogue: 0,0:02:37.91,0:02:40.33,Default,,0000,0000,0000,,唷,是的\N{\rE}- Phew, yeah.{\r}
+Dialogue: 0,0:02:54.00,0:02:55.31,Default,,0000,0000,0000,,-哦,亲爱的\N{\rE}- Oh dear.{\r}
+Dialogue: 0,0:02:55.34,0:02:57.03,Default,,0000,0000,0000,,那是同一辆卡车吗?\N{\rE}Is that the same truck?{\r}
+Dialogue: 0,0:03:09.15,0:03:11.67,Default,,0000,0000,0000,,-我不认为我们应该看到这个\N{\rE}- I don't think we were supposed to see that.{\r}
+Dialogue: 0,0:03:23.85,0:03:26.10,Default,,0000,0000,0000,,-这是怎么回事…?\N{\rE}- What in the name... ?{\r}
+Dialogue: 0,0:03:29.58,0:03:31.00,Default,,0000,0000,0000,,-哦!\N{\rE}- Oh!{\r}
+Dialogue: 0,0:03:31.03,0:03:33.14,Default,,0000,0000,0000,,他一定看见我们了\N{\rE}He must have seen us.{\r}
+Dialogue: 0,0:03:33.17,0:03:35.04,Default,,0000,0000,0000,,-他不可能\N{\rE}- He couldn't have.{\r}
+Dialogue: 0,0:03:39.80,0:03:41.39,Default,,0000,0000,0000,,-哦,不…\N{\rE}- Oh no...{\r}
+Dialogue: 0,0:03:47.36,0:03:48.46,Default,,0000,0000,0000,,-等等，亲爱的\N{\rE}- Hang on, honey.{\r}
+Dialogue: 0,0:03:48.50,0:03:49.43,Default,,0000,0000,0000,,-他在干什么?!\N{\rE}- What's he doing?!{\r}
+Dialogue: 0,0:03:51.81,0:03:53.02,Default,,0000,0000,0000,,-啊!\N{\rE}- Ah!{\r}
+Dialogue: 0,0:03:53.06,0:03:55.33,Default,,0000,0000,0000,,罗尼!\N{\rE}-Ronnie!{\r}
+Dialogue: 0,0:03:56.13,0:03:58.75,Default,,0000,0000,0000,,-他啊!哦，罗尼，小心点!\N{\rE}- What's he--ah! Oh, Ronnie, be careful!{\r}
+Dialogue: 0,0:04:03.10,0:04:04.93,Default,,0000,0000,0000,,-哦!哦!\N{\rE}- Oh! Oh!{\r}
+Dialogue: 0,0:04:08.42,0:04:09.52,Default,,0000,0000,0000,,-哦!\N{\rE}- Oh!{\r}
+Dialogue: 0,0:04:19.15,0:04:20.43,Default,,0000,0000,0000,,-你没事吧?\N{\rE}- Are you okay?{\r}
+Dialogue: 0,0:04:21.98,0:04:23.12,Default,,0000,0000,0000,,你对吧?\N{\rE}You all right?{\r}
+Dialogue: 0,0:04:23.15,0:04:25.43,Default,,0000,0000,0000,,-发生什么事了?\N{\rE}- What just happened?{\r}
+Dialogue: 0,0:04:25.47,0:04:26.47,Default,,0000,0000,0000,,-他早就走了\N{\rE}- He's long gone now.{\r}
+Dialogue: 0,0:04:26.50,0:04:29.09,Default,,0000,0000,0000,,就是个路霸\N{\rE}Just--just a road hog.{\r}
+Dialogue: 0,0:04:39.52,0:04:40.83,Default,,0000,0000,0000,,-哦…\N{\rE}- Oh...{\r}
+Dialogue: 0,0:04:43.66,0:04:45.14,Default,,0000,0000,0000,,-你没事吧?-哦,上帝\N{\rE}- You all right? - Oh, God.{\r}
+Dialogue: 0,0:04:58.26,0:04:59.95,Default,,0000,0000,0000,,-你在干什么?\N{\rE}- What are you doing?{\r}
+Dialogue: 0,0:05:00.95,0:05:03.33,Default,,0000,0000,0000,,-亲爱的，我要报警\N{\rE}- Honey, I'm gonna call this in to the police.{\r}
+Dialogue: 0,0:05:03.37,0:05:05.47,Default,,0000,0000,0000,,-什么?-好吧,是的\N{\rE}- What? - Well, yeah.{\r}
+Dialogue: 0,0:05:05.51,0:05:07.72,Default,,0000,0000,0000,,我们不能假装刚刚发生的事\N{\rE}We can't pretend that what just happened to us{\r}
+Dialogue: 0,0:05:07.75,0:05:09.13,Default,,0000,0000,0000,,没有发生在我们身上\N{\rE}didn't happen to us.{\r}
+Dialogue: 0,0:05:09.17,0:05:10.58,Default,,0000,0000,0000,,他们必须知道这件事\N{\rE}They gotta know about this.{\r}
+Dialogue: 0,0:05:10.62,0:05:12.65,Default,,0000,0000,0000,,-我不喜欢，罗尼\N{\rE}- Oh, I don't like it, Ronnie.{\r}
+Dialogue: 0,0:05:12.69,0:05:14.48,Default,,0000,0000,0000,,我一点也不喜欢\N{\rE}I don't like it one bit.{\r}
+Dialogue: 0,0:05:14.52,0:05:16.31,Default,,0000,0000,0000,,-是“我要打败你了?”\N{\rE}- Was it "I'M BEATING U?"{\r}
+Dialogue: 0,0:05:17.69,0:05:19.83,Default,,0000,0000,0000,,-我不知道\N{\rE}- I don't know.{\r}
+Dialogue: 0,0:05:19.87,0:05:22.25,Default,,0000,0000,0000,,-好吧，好吧，好吧\N{\rE}- Okay, all right, all right, all right.{\r}
+Dialogue: 0,0:05:22.28,0:05:24.32,Default,,0000,0000,0000,,我们去一个有电话的加油站\N{\rE}We're gonna go to a gas station where they have a phone.{\r}
+Dialogue: 0,0:05:24.35,0:05:26.11,Default,,0000,0000,0000,,好吧?好吗?\N{\rE}Okay? Okay?{\r}
+Dialogue: 0,0:05:26.15,0:05:27.18,Default,,0000,0000,0000,,我们要报警\N{\rE}We're gonna call this in.{\r}
+Dialogue: 0,0:05:28.60,0:05:29.84,Default,,0000,0000,0000,,-好吧?\N{\rE}- All right?{\r}
+Dialogue: 0,0:05:29.88,0:05:30.95,Default,,0000,0000,0000,,会没事的\N{\rE}It's going to be okay.{\r}
+Dialogue: 0,0:05:35.54,0:05:37.54,Default,,0000,0000,0000,,好吧，会没事的\N{\rE}Okay, it'll be okay.{\r}
+Dialogue: 0,0:05:37.57,0:05:39.44,Default,,0000,0000,0000,,-我想回家\N{\rE}- I wanna go home.{\r}
+Dialogue: 0,0:05:39.47,0:05:41.09,Default,,0000,0000,0000,,-我知道，亲爱的\N{\rE}- I know you do, honey.{\r}
+Dialogue: 0,0:05:41.13,0:05:42.54,Default,,0000,0000,0000,,好的\N{\rE}Okay.{\r}
+Dialogue: 0,0:06:16.23,0:06:18.61,Default,,0000,0000,0000,,-罗尼?\N{\rE}- Ronnie?{\r}
+Dialogue: 0,0:06:43.92,0:06:48.92,Default,,0000,0000,0000,,我们应该停下来看看床单是怎么回事\N{\rE}- We should stop and see what was going on with that sheet.{\r}
+Dialogue: 0,0:06:49.61,0:06:52.23,Default,,0000,0000,0000,,然后我们就可以把一切都告诉警察了\N{\rE}And then we can tell the cops all about it.{\r}
+Dialogue: 0,0:06:56.86,0:06:58.69,Default,,0000,0000,0000,,我们必须这么做，玛丽\N{\rE}We gotta do it, Marie.{\r}
+Dialogue: 0,0:07:03.28,0:07:05.94,Default,,0000,0000,0000,,-熟视无睹是不行的\N{\rE}- Turning a blind eye is not an option.{\r}
+Dialogue: 0,0:07:11.08,0:07:12.29,Default,,0000,0000,0000,,-爱你，宝贝\N{\rE}- Love you, baby.{\r}
+Dialogue: 0,0:07:46.29,0:07:47.32,Default,,0000,0000,0000,,-罗纳德·…\N{\rE}- Ronald...{\r}
+Dialogue: 0,0:07:48.88,0:07:50.12,Default,,0000,0000,0000,,-来吧\N{\rE}- Come on.{\r}
+Dialogue: 0,0:07:50.15,0:07:51.02,Default,,0000,0000,0000,,好吧，好吧，没事的\N{\rE}Okay, all right, it's all right.{\r}
+Dialogue: 0,0:08:00.54,0:08:01.96,Default,,0000,0000,0000,,-表……\N{\rE}- The sheet...{\r}
+Dialogue: 0,0:08:03.06,0:08:04.10,Default,,0000,0000,0000,,-是的\N{\rE}- Yeah.{\r}
+Dialogue: 0,0:08:35.96,0:08:37.55,Default,,0000,0000,0000,,录音:可怕的景象\N{\rE}recorded voice: The horrifying sight{\r}
+Dialogue: 0,0:08:37.58,0:08:41.21,Default,,0000,0000,0000,,警方认为罗恩和玛丽在那天目睹了\N{\rE}that police believe Ron and Marie witnessed that day{\r}
+Dialogue: 0,0:08:41.24,0:08:44.73,Default,,0000,0000,0000,,就是坑里那些臭名昭著的尸体\N{\rE}was the infamous bodies in the pit.{\r}
+Dialogue: 0,0:08:45.76,0:08:49.18,Default,,0000,0000,0000,,从那以后，罗恩和玛丽就再也没有出现过\N{\rE}Ron and Marie themselves have never been seen since.{\r}
+Dialogue: 0,0:08:50.90,0:08:54.87,Default,,0000,0000,0000,,又是一个来自南方深处的恐怖谜团\N{\rE}Just another macabre mystery from the deep south.{\r}
+Dialogue: 0,0:08:56.67,0:08:58.77,Default,,0000,0000,0000,,-那个视频你肯定看过很多遍了\N{\rE}- Surely you've watched that video so many times{\r}
+Dialogue: 0,0:08:58.81,0:09:00.36,Default,,0000,0000,0000,,你现在都记住了吗?\N{\rE}you have it memorized by now?{\r}
+Dialogue: 0,0:09:00.40,0:09:01.78,Default,,0000,0000,0000,,-不，是说真的\N{\rE}- No, real talk.{\r}
+Dialogue: 0,0:09:02.68,0:09:04.02,Default,,0000,0000,0000,,这真的发生了\N{\rE}This really happened.{\r}
+Dialogue: 0,0:09:04.06,0:09:05.57,Default,,0000,0000,0000,,其实就在这附近\N{\rE}Somewhere in this area, actually.{\r}
+Dialogue: 0,0:09:05.61,0:09:07.37,Default,,0000,0000,0000,,-拜托，这些事没解决是有原因的\N{\rE}- Come on, there's a reason those things are unsolved.{\r}
+Dialogue: 0,0:09:07.40,0:09:09.20,Default,,0000,0000,0000,,这都是神话和传说\N{\rE}It's all myths and legends.{\r}
+Dialogue: 0,0:09:09.23,0:09:10.20,Default,,0000,0000,0000,,在转动\N{\rE}Move over.{\r}
+Dialogue: 0,0:09:11.62,0:09:13.34,Default,,0000,0000,0000,,-不，这个YouTube视频已经过时了\N{\rE}- Nah, this YouTube video's out of date.{\r}
+Dialogue: 0,0:09:13.38,0:09:16.03,Default,,0000,0000,0000,,这是二十多年前的事了\N{\rE}This was from, what, twenty plus years ago.{\r}
+Dialogue: 0,0:09:16.07,0:09:17.97,Default,,0000,0000,0000,,现在这是…Ch-ch-ch……\N{\rE}Now this was... Ch-ch-ch...{\r}
+Dialogue: 0,0:09:18.00,0:09:20.62,Default,,0000,0000,0000,,-就像大脚怪，蛾人，春山杰克，\N{\rE}- Oh it's just like Bigfoot, Mothman, Springhill Jack,{\r}
+Dialogue: 0,0:09:20.66,0:09:22.80,Default,,0000,0000,0000,,卓帕卡布拉或者其他的\N{\rE}Chupacabra or any others.{\r}
+Dialogue: 0,0:09:22.83,0:09:26.35,Default,,0000,0000,0000,,-是啊，今晚你就能见到他们所有人的粉丝了\N{\rE}- Yeah, and you'll be meeting fans of all of them by tonight.{\r}
+Dialogue: 0,0:09:26.39,0:09:29.22,Default,,0000,0000,0000,,-真不敢相信我居然让你拉我来这个书呆子聚会\N{\rE}- I can't believe I let you drag me to this nerd fest.{\r}
+Dialogue: 0,0:09:29.25,0:09:31.57,Default,,0000,0000,0000,,-是吗?解释我这个\N{\rE}- Yeah? Explain me this.{\r}
+Dialogue: 0,0:09:33.40,0:09:35.57,Default,,0000,0000,0000,,这是真实的录像\N{\rE}Now, this is real footage.{\r}
+Dialogue: 0,0:09:37.23,0:09:38.40,Default,,0000,0000,0000,,即使你也不能否认\N{\rE}Even you can't deny it.{\r}
+Dialogue: 0,0:09:38.43,0:09:39.75,Default,,0000,0000,0000,,-你甚至看不见它\N{\rE}- You can't even see it.{\r}
+Dialogue: 0,0:09:40.30,0:09:42.51,Default,,0000,0000,0000,,有没有想过为什么那些证明视频总是摇摇晃晃的\N{\rE}Ever wonder why those proof videos are always shaky{\r}
+Dialogue: 0,0:09:42.54,0:09:43.82,Default,,0000,0000,0000,,浑浊，从不清脆清澈?\N{\rE}and murky, never crisp and clear?{\r}
+Dialogue: 0,0:09:43.85,0:09:45.55,Default,,0000,0000,0000,,-这是老了\N{\rE}- It's old.{\r}
+Dialogue: 0,0:09:45.58,0:09:48.07,Default,,0000,0000,0000,,爬行者每23年才回来一次\N{\rE}The Creeper only comes back every 23 years.{\r}
+Dialogue: 0,0:09:48.10,0:09:49.76,Default,,0000,0000,0000,,-地球是平的\N{\rE}- And the earth is flat.{\r}
+Dialogue: 0,0:09:49.79,0:09:51.10,Default,,0000,0000,0000,,纳粹在月球上扎营\N{\rE}Nazis are camped out on the moon.{\r}
+Dialogue: 0,0:09:51.14,0:09:52.38,Default,,0000,0000,0000,,猫王的生活\N{\rE}Elvis lives.{\r}
+Dialogue: 0,0:09:52.41,0:09:54.59,Default,,0000,0000,0000,,阿波罗着陆是伪造的…\N{\rE}The Apollo landing was faked...{\r}
+Dialogue: 0,0:09:54.62,0:09:56.73,Default,,0000,0000,0000,,-你宝贵的科学没有所有的答案!\N{\rE}- Your precious science doesn't have all the answers!{\r}
+Dialogue: 0,0:09:56.76,0:09:58.90,Default,,0000,0000,0000,,-阴谋论没有答案\N{\rE}- Conspiracy theories have no answers.{\r}
+Dialogue: 0,0:09:58.94,0:10:01.08,Default,,0000,0000,0000,,-你们一直都搞错了\N{\rE}- Y'all get it wrong all the time.{\r}
+Dialogue: 0,0:10:01.11,0:10:03.74,Default,,0000,0000,0000,,哥白尼,亚里士多德,ev -\N{\rE}Copernicus, Aristotle, ev--{\r}
+Dialogue: 0,0:10:04.60,0:10:05.74,Default,,0000,0000,0000,,不要这样做\N{\rE}Don't do that.{\r}
+Dialogue: 0,0:10:05.77,0:10:07.08,Default,,0000,0000,0000,,不要这样做\N{\rE}Don't do that.{\r}
+Dialogue: 0,0:10:07.12,0:10:09.91,Default,,0000,0000,0000,,-牛顿，爱因斯坦，霍金?\N{\rE}- Newton, Einstein, Hawking?{\r}
+Dialogue: 0,0:10:09.95,0:10:11.74,Default,,0000,0000,0000,,-世界真大\N{\rE}- It's a big world.{\r}
+Dialogue: 0,0:10:11.78,0:10:13.75,Default,,0000,0000,0000,,奇怪的事情一直都在发生\N{\rE}Strange things happen all the time.{\r}
+Dialogue: 0,0:10:13.78,0:10:17.09,Default,,0000,0000,0000,,-两个字:奥卡姆剃刀\N{\rE}- Two words: Occam's razor.{\r}
+Dialogue: 0,0:10:17.13,0:10:18.89,Default,,0000,0000,0000,,这就是我成为科学家的原因\N{\rE}That's why I'm a scientist.{\r}
+Dialogue: 0,0:10:18.92,0:10:21.48,Default,,0000,0000,0000,,最简单的解释最有可能是正确的\N{\rE}The simplest explanation is most likely to be true.{\r}
+Dialogue: 0,0:10:21.51,0:10:23.86,Default,,0000,0000,0000,,-这也很简单，大脑互动体\N{\rE}- Well, this is also pretty simple, brainiac.{\r}
+Dialogue: 0,0:10:24.62,0:10:26.03,Default,,0000,0000,0000,,好了，爬行者回来了\N{\rE}All right, the Creeper comes back{\r}
+Dialogue: 0,0:10:26.07,0:10:27.73,Default,,0000,0000,0000,,每隔23个春天\N{\rE}every 23rd spring.{\r}
+Dialogue: 0,0:10:27.76,0:10:29.80,Default,,0000,0000,0000,,过了23天…\N{\rE}It kills for 23 days...{\r}
+Dialogue: 0,0:10:29.83,0:10:31.18,Default,,0000,0000,0000,,-然后呢?\N{\rE}- Then what?{\r}
+Dialogue: 0,0:10:32.66,0:10:35.66,Default,,0000,0000,0000,,-然后就消失了我不知道\N{\rE}- Then it disappears. I don't know.{\r}
+Dialogue: 0,0:10:36.25,0:10:37.49,Default,,0000,0000,0000,,-听起来像爱虫\N{\rE}- Sounds like a love bug.{\r}
+Dialogue: 0,0:10:39.77,0:10:42.81,Default,,0000,0000,0000,,它们是实验室里用来杀死蚊子的一种虫子\N{\rE}They were a breed of bugs made in a lab to kill mosquitos.{\r}
+Dialogue: 0,0:10:42.84,0:10:44.54,Default,,0000,0000,0000,,它们所做的就是交配和死亡\N{\rE}All they did was mate and die.{\r}
+Dialogue: 0,0:10:44.57,0:10:45.64,Default,,0000,0000,0000,,彻底的失败\N{\rE}Complete failure.{\r}
+Dialogue: 0,0:10:45.67,0:10:47.12,Default,,0000,0000,0000,,现在它们毫无用处\N{\rE}Now they serve zero purpose.{\r}
+Dialogue: 0,0:10:47.16,0:10:48.50,Default,,0000,0000,0000,,它们没有功能，\N{\rE}They have no function,{\r}
+Dialogue: 0,0:10:48.54,0:10:50.16,Default,,0000,0000,0000,,但它们每年会像风暴一样出现两次，\N{\rE}but twice a year they appear like a storm,{\r}
+Dialogue: 0,0:10:50.20,0:10:52.16,Default,,0000,0000,0000,,盲目追逐白色的东西\N{\rE}blindly chasing anything white{\r}
+Dialogue: 0,0:10:52.20,0:10:54.34,Default,,0000,0000,0000,,当他们接触到它的时候就会死亡\N{\rE}before dying when they come into contact with it.{\r}
+Dialogue: 0,0:10:54.37,0:10:59.27,Default,,0000,0000,0000,,-所以你认为爬行者是在实验室里制造的\N{\rE}- So, you think the Creeper was made in a lab.{\r}
+Dialogue: 0,0:10:59.31,0:11:01.45,Default,,0000,0000,0000,,-我觉得爬行者是在你脑子里造出来的，你个笨蛋\N{\rE}- I think the Creeper was made in your brain, you half-wit.{\r}
+Dialogue: 0,0:11:01.48,0:11:03.80,Default,,0000,0000,0000,,-爬行者是不会交配的\N{\rE}- Well, the Creeper doesn't mate.{\r}
+Dialogue: 0,0:11:05.76,0:11:07.08,Default,,0000,0000,0000,,它会杀死……\N{\rE}It kills...{\r}
+Dialogue: 0,0:11:09.94,0:11:12.53,Default,,0000,0000,0000,,据说它杀死了几百人，甚至几千人\N{\rE}It's said to have killed almost hundreds, maybe thousands.{\r}
+Dialogue: 0,0:11:12.56,0:11:14.32,Default,,0000,0000,0000,,-等等，他们不是把它拍成电影了吗?\N{\rE}- Wait, didn't they make a movie out of it?{\r}
+Dialogue: 0,0:11:14.36,0:11:16.53,Default,,0000,0000,0000,,变态爬行者还是什么?\N{\rE}Creepy Creeper or something?{\r}
+Dialogue: 0,0:11:16.57,0:11:20.23,Default,,0000,0000,0000,,-其实是三个，但都不是真的\N{\rE}- Three actually, but none of that is real.{\r}
+Dialogue: 0,0:11:20.81,0:11:25.65,Default,,0000,0000,0000,,它是以一个俗气的洛杉矶有线电视节目命名的…\N{\rE}And it was named after a cheesy LA cable access show...{\r}
+Dialogue: 0,0:11:26.58,0:11:27.85,Default,,0000,0000,0000,,宝贝?宝贝!\N{\rE}Baby? Baby!{\r}
+Dialogue: 0,0:11:27.89,0:11:29.24,Default,,0000,0000,0000,,莱恩!\N{\rE}Laine!{\r}
+Dialogue: 0,0:11:32.03,0:11:33.52,Default,,0000,0000,0000,,-宝贝，我告诉过你玉米煎饼会回来的\N{\rE}- Baby, I told you that burrito would come back{\r}
+Dialogue: 0,0:11:33.55,0:11:34.31,Default,,0000,0000,0000,,困扰你\N{\rE}to haunt you.{\r}
+Dialogue: 0,0:12:11.76,0:12:14.76,Default,,0000,0000,0000,,好吧，你知道我打字很烂\N{\rE}all right, you know I suck at typing.{\r}
+Dialogue: 0,0:12:20.25,0:12:22.01,Default,,0000,0000,0000,,我今晚就去问她\N{\rE}I'm gonna ask her tonight.{\r}
+Dialogue: 0,0:12:24.39,0:12:26.46,Default,,0000,0000,0000,,我拿到戒指了，所以…\N{\rE}I've got the ring so...{\r}
+Dialogue: 0,0:12:28.71,0:12:29.74,Default,,0000,0000,0000,,祝我好运吧\N{\rE}Wish me luck.{\r}
+Dialogue: 0,0:12:31.44,0:12:32.75,Default,,0000,0000,0000,,我爱你，妈妈\N{\rE}I love you, Mom.{\r}
+Dialogue: 0,0:14:19.54,0:14:20.89,Default,,0000,0000,0000,,-怎么了，姑娘?\N{\rE}- What is up girl?{\r}
+Dialogue: 0,0:14:20.92,0:14:22.03,Default,,0000,0000,0000,,你好吗?\N{\rE}How are you?{\r}
+Dialogue: 0,0:14:22.06,0:14:24.31,Default,,0000,0000,0000,,-一切都很疼，我快死了\N{\rE}- Everything hurts and I'm dying.{\r}
+Dialogue: 0,0:14:24.34,0:14:27.07,Default,,0000,0000,0000,,-哦，很好吧?\N{\rE}- Oh, that good, huh?{\r}
+Dialogue: 0,0:14:28.52,0:14:30.17,Default,,0000,0000,0000,,-你还好吗?\N{\rE}- Ew, are you all right?{\r}
+Dialogue: 0,0:14:31.07,0:14:33.32,Default,,0000,0000,0000,,-对我来说太晚了，救你自己吧\N{\rE}- It's too late for me, save yourself.{\r}
+Dialogue: 0,0:14:36.56,0:14:39.77,Default,,0000,0000,0000,,-你考试了吗?\N{\rE}- So, did you take the test yet?{\r}
+Dialogue: 0,0:14:39.80,0:14:41.25,Default,,0000,0000,0000,,-我把它带来了\N{\rE}- I brought it with me,{\r}
+Dialogue: 0,0:14:41.29,0:14:42.67,Default,,0000,0000,0000,,但我认为这是积极的\N{\rE}but I think this counts as a positive.{\r}
+Dialogue: 0,0:14:42.70,0:14:44.60,Default,,0000,0000,0000,,-你总是那么乐观\N{\rE}- You are always the optimist.{\r}
+Dialogue: 0,0:14:44.64,0:14:46.78,Default,,0000,0000,0000,,-我不是这个意思，你知道的\N{\rE}- Not at all what I meant and you know it.{\r}
+Dialogue: 0,0:14:46.81,0:14:49.57,Default,,0000,0000,0000,,-嗯，我想等我到的时候再说\N{\rE}- Well, I was trying to hold it till I got there,{\r}
+Dialogue: 0,0:14:49.61,0:14:52.68,Default,,0000,0000,0000,,但我要撒尿，裁缝，我的士兵间谍\N{\rE}but I need to tinkle, tailor, my soldier spy.{\r}
+Dialogue: 0,0:14:52.71,0:14:53.99,Default,,0000,0000,0000,,我待会再打给你\N{\rE}I'm gonna have to call you back.{\r}
+Dialogue: 0,0:14:54.03,0:14:56.27,Default,,0000,0000,0000,,-我听不进去\N{\rE}- I'm not hearing this.{\r}
+Dialogue: 0,0:14:56.30,0:14:57.86,Default,,0000,0000,0000,,到了酒店给我打电话，好吗?\N{\rE}Just call me when you get to the hotel, okay?{\r}
+Dialogue: 0,0:14:59.76,0:15:02.24,Default,,0000,0000,0000,,记得别吐在那些空军一号上\N{\rE}Oh, make sure that you do not puke on those Air Force Ones.{\r}
+Dialogue: 0,0:15:02.97,0:15:04.90,Default,,0000,0000,0000,,-别拿这个开玩笑\N{\rE}- Don't even joke about that.{\r}
+Dialogue: 0,0:15:05.83,0:15:07.87,Default,,0000,0000,0000,,-莱恩，我什么时候拿时尚开玩笑过?\N{\rE}- Laine, when have I ever joked about fashion?{\r}
+Dialogue: 0,0:15:12.39,0:15:14.91,Default,,0000,0000,0000,,-萨姆，我发誓如果你给我施了恶咒\N{\rE}- Sam, I swear if you jinxed me,{\r}
+Dialogue: 0,0:15:14.94,0:15:16.39,Default,,0000,0000,0000,,我发誓我会…\N{\rE}I swear to God I'll...{\r}
+Dialogue: 0,0:15:20.33,0:15:23.81,Default,,0000,0000,0000,,-莱恩，我爱你，但你得给我多买几双鞋\N{\rE}- Laine, I love you, but you're buying me some more shoes.{\r}
+Dialogue: 0,0:15:23.85,0:15:25.09,Default,,0000,0000,0000,,靠……\N{\rE}Fuck...{\r}
+Dialogue: 0,0:15:25.13,0:15:27.34,Default,,0000,0000,0000,,我看起来像是为丛林而生的吗?\N{\rE}Do I look like I'm built for the woods?{\r}
+Dialogue: 0,0:16:21.84,0:16:24.60,Default,,0000,0000,0000,,-你带我到最迷人的地方\N{\rE}- You bring me to the most charming places.{\r}
+Dialogue: 0,0:16:24.63,0:16:27.02,Default,,0000,0000,0000,,提醒我一下我们为什么在这里?\N{\rE}Remind me why we're here again?{\r}
+Dialogue: 0,0:16:27.71,0:16:30.43,Default,,0000,0000,0000,,-宝贝，我等不及带你去看看这个地方了\N{\rE}- Baby, I can't wait to show you this place.{\r}
+Dialogue: 0,0:16:30.47,0:16:32.19,Default,,0000,0000,0000,,-你确定我们应该来这里吗?\N{\rE}- Are you sure this is where we're supposed to be?{\r}
+Dialogue: 0,0:16:32.81,0:16:34.78,Default,,0000,0000,0000,,-是啊，我们应该很接近\N{\rE}- Yeah, we should be close.{\r}
+Dialogue: 0,0:16:39.79,0:16:41.03,Default,,0000,0000,0000,,现在你知道我们要去哪里了…\N{\rE}Now you know that's where we're going...{\r}
+Dialogue: 0,0:16:41.06,0:16:42.82,Default,,0000,0000,0000,,-真的吗?\N{\rE}- Really?{\r}
+Dialogue: 0,0:16:42.86,0:16:44.45,Default,,0000,0000,0000,,-马尼拉夫人，你怎么能不呢?\N{\rE}- Lady Manilla, how could you not?!{\r}
+Dialogue: 0,0:16:44.48,0:16:46.52,Default,,0000,0000,0000,,嘿，也许她会给你看手相\N{\rE}Hey, maybe she'll read your palm.{\r}
+Dialogue: 0,0:16:46.55,0:16:47.55,Default,,0000,0000,0000,,是啊!\N{\rE}Yeah!{\r}
+Dialogue: 0,0:17:07.68,0:17:09.02,Default,,0000,0000,0000,,-相信你能找到最奇怪的人\N{\rE}- Trust you to find the strangest{\r}
+Dialogue: 0,0:17:09.06,0:17:10.51,Default,,0000,0000,0000,,问路的地方\N{\rE}place to ask for directions.{\r}
+Dialogue: 0,0:17:10.54,0:17:13.96,Default,,0000,0000,0000,,-该死，看看这些酷东西\N{\rE}- Damn, look at all this cool stuff.{\r}
+Dialogue: 0,0:17:19.62,0:17:21.35,Default,,0000,0000,0000,,-我不明白\N{\rE}- I don't get it.{\r}
+Dialogue: 0,0:17:22.11,0:17:24.25,Default,,0000,0000,0000,,走吧，蔡斯，没人，我们走\N{\rE}Come on, Chase, nobody's here, let's go.{\r}
+Dialogue: 0,0:17:31.60,0:17:33.84,Default,,0000,0000,0000,,蔡斯，别碰所有东西\N{\rE}Chase, don't touch everything.{\r}
+Dialogue: 0,0:18:13.47,0:18:15.12,Default,,0000,0000,0000,,你吓死我了!\N{\rE}You scared the shit out of me!{\r}
+Dialogue: 0,0:18:15.16,0:18:16.50,Default,,0000,0000,0000,,-看看这个\N{\rE}- Take a look at this.{\r}
+Dialogue: 0,0:18:17.51,0:18:20.27,Default,,0000,0000,0000,,我不知道他们在离海岸这么远的地方捕鲸\N{\rE}I didn't know they had whaling this far from the coast.{\r}
+Dialogue: 0,0:18:22.03,0:18:24.41,Default,,0000,0000,0000,,-有什么你喜欢的吗?\N{\rE}- Anything strike your fancy?{\r}
+Dialogue: 0,0:18:24.44,0:18:26.96,Default,,0000,0000,0000,,-我们在找这个地址\N{\rE}- We're looking for this address,{\r}
+Dialogue: 0,0:18:27.00,0:18:28.72,Default,,0000,0000,0000,,但我在地图上都找不到\N{\rE}but I can't find it on any map.{\r}
+Dialogue: 0,0:18:31.45,0:18:34.35,Default,,0000,0000,0000,,-啊，地图上没有\N{\rE}- Ah, it's not on any maps.{\r}
+Dialogue: 0,0:18:34.38,0:18:36.35,Default,,0000,0000,0000,,卫星有点坏了\N{\rE}The satellites are kind of screwed up{\r}
+Dialogue: 0,0:18:36.39,0:18:38.08,Default,,0000,0000,0000,,我想是在我们小镇上空\N{\rE}over our town I guess.{\r}
+Dialogue: 0,0:18:47.09,0:18:48.61,Default,,0000,0000,0000,,在那里\N{\rE}There.{\r}
+Dialogue: 0,0:18:48.64,0:18:51.82,Default,,0000,0000,0000,,我们在这里\N{\rE}And we are here.{\r}
+Dialogue: 0,0:18:51.85,0:18:56.13,Default,,0000,0000,0000,,走68号公路往南走5英里\N{\rE}Just take 68 five miles to south{\r}
+Dialogue: 0,0:18:56.16,0:18:58.30,Default,,0000,0000,0000,,看到标志时向左转\N{\rE}and turn left when you see the signs.{\r}
+Dialogue: 0,0:19:08.45,0:19:10.28,Default,,0000,0000,0000,,-呃,谢谢\N{\rE}- Uh, thanks.{\r}
+Dialogue: 0,0:19:11.35,0:19:13.29,Default,,0000,0000,0000,,-没有问题\N{\rE}- No problem.{\r}
+Dialogue: 0,0:19:13.32,0:19:15.01,Default,,0000,0000,0000,,一共50美元，可以吗?\N{\rE}That'll be $50 please?{\r}
+Dialogue: 0,0:19:15.05,0:19:16.43,Default,,0000,0000,0000,,\n{\rE}- 50,\n- 50--{\r}
+Dialogue: 0,0:19:18.01,0:19:20.22,Default,,0000,0000,0000,,-这是古董，亲爱的\N{\rE}- It's antique, honey.{\r}
+Dialogue: 0,0:19:20.26,0:19:25.19,Default,,0000,0000,0000,,古董\N{\rE}Antique, okay.{\r}
+Dialogue: 0,0:19:36.03,0:19:38.83,Default,,0000,0000,0000,,-听着，你随时都可以回来\N{\rE}- Now you come back any time, you hear.{\r}
+Dialogue: 0,0:19:38.86,0:19:41.35,Default,,0000,0000,0000,,哦，恭喜你们俩\N{\rE}Oh, and congratulations to you both.{\r}
+Dialogue: 0,0:19:43.07,0:19:45.32,Default,,0000,0000,0000,,哦，他不知道?\N{\rE}Oh, he doesn't know?{\r}
+Dialogue: 0,0:19:47.91,0:19:49.80,Default,,0000,0000,0000,,她也不知道\N{\rE}Neither does she.{\r}
+Dialogue: 0,0:19:49.84,0:19:50.81,Default,,0000,0000,0000,,有趣\N{\rE}Interesting.{\r}
+Dialogue: 0,0:19:52.50,0:19:54.36,Default,,0000,0000,0000,,-好吧，这是…\N{\rE}- Okay, this was, er...{\r}
+Dialogue: 0,0:20:10.55,0:20:14.66,Default,,0000,0000,0000,,-我们有一棵结果的树\N{\rE}- We have a tree bearing fruit.{\r}
+Dialogue: 0,0:20:14.69,0:20:16.69,Default,,0000,0000,0000,,他会非常高兴的\N{\rE}He will be most pleased.{\r}
+Dialogue: 0,0:20:35.40,0:20:39.30,Default,,0000,0000,0000,,-哇，看这个\N{\rE}- Wow, look at this.{\r}
+Dialogue: 0,0:20:39.34,0:20:41.55,Default,,0000,0000,0000,,这地方就我们两个吗?\N{\rE}Are we the only ones in this place?{\r}
+Dialogue: 0,0:20:41.58,0:20:42.82,Default,,0000,0000,0000,,-宝贝…\N{\rE}- Babe...{\r}
+Dialogue: 0,0:20:54.42,0:20:56.42,Default,,0000,0000,0000,,等\N{\rE}Wait there.{\r}
+Dialogue: 0,0:20:56.46,0:20:58.77,Default,,0000,0000,0000,,我还有一个惊喜给你\N{\rE}I've got another surprise for you.{\r}
+Dialogue: 0,0:21:01.46,0:21:04.12,Default,,0000,0000,0000,,-蔡斯，你要去哪?\N{\rE}- Chase, where are you going?{\r}
+Dialogue: 0,0:21:51.65,0:21:53.20,Default,,0000,0000,0000,,-嘿，我是萨姆\N{\rE}- Hey, this is Sam.{\r}
+Dialogue: 0,0:21:53.24,0:21:54.62,Default,,0000,0000,0000,,我只是在忙着过最好的生活\N{\rE}I'm just busy living my best life.{\r}
+Dialogue: 0,0:21:54.65,0:21:56.38,Default,,0000,0000,0000,,-萨姆，你到底在哪儿?\N{\rE}- Sam, where the hell are you?{\r}
+Dialogue: 0,0:22:03.46,0:22:05.42,Default,,0000,0000,0000,,-什么事?\N{\rE}- What is it?{\r}
+Dialogue: 0,0:22:05.46,0:22:07.46,Default,,0000,0000,0000,,-这是你的惊喜\N{\rE}- It's your surprise.{\r}
+Dialogue: 0,0:22:11.98,0:22:13.84,Default,,0000,0000,0000,,-你说真的吗?\N{\rE}- Are you serious?{\r}
+Dialogue: 0,0:22:13.88,0:22:15.36,Default,,0000,0000,0000,,那些是什么?\N{\rE}What are those?{\r}
+Dialogue: 0,0:22:16.74,0:22:18.44,Default,,0000,0000,0000,,-我们要玩cosplay\N{\rE}- We're gonna cosplay.{\r}
+Dialogue: 0,0:22:18.47,0:22:19.85,Default,,0000,0000,0000,,你和我\N{\rE}You and me.{\r}
+Dialogue: 0,0:22:19.89,0:22:21.82,Default,,0000,0000,0000,,我把需要的东西都带来了\N{\rE}I brought everything we need.{\r}
+Dialogue: 0,0:22:21.85,0:22:24.03,Default,,0000,0000,0000,,你要做的就是选择你想成为的人\N{\rE}All you need to do is choose who you wanna be.{\r}
+Dialogue: 0,0:22:24.06,0:22:26.48,Default,,0000,0000,0000,,-我不会穿的\N{\rE}- I'm not putting on any of them.{\r}
+Dialogue: 0,0:22:26.51,0:22:27.62,Default,,0000,0000,0000,,-什么?\N{\rE}- What?{\r}
+Dialogue: 0,0:22:32.38,0:22:33.86,Default,,0000,0000,0000,,-是的…\N{\rE}- Yeah...{\r}
+Dialogue: 0,0:22:34.56,0:22:38.73,Default,,0000,0000,0000,,是啊，反正这主意也太蠢了\N{\rE}Yeah, I mean it was a stupid idea anyway.{\r}
+Dialogue: 0,0:22:38.77,0:22:42.98,Default,,0000,0000,0000,,我是说，我知道你不会穿这些东西\N{\rE}So, I mean, I knew you wouldn't wear some of this stuff.{\r}
+Dialogue: 0,0:22:43.01,0:22:46.08,Default,,0000,0000,0000,,反正也很俗气，所以我不想让你穿\N{\rE}It's tacky anyway, so I don't even want you to wear it.{\r}
+Dialogue: 0,0:22:46.12,0:22:47.29,Default,,0000,0000,0000,,也许我会穿它\N{\rE}Maybe I'll wear it.{\r}
+Dialogue: 0,0:22:47.33,0:22:48.40,Default,,0000,0000,0000,,我不知道\N{\rE}I do not know.{\r}
+Dialogue: 0,0:22:56.58,0:22:58.23,Default,,0000,0000,0000,,-我能看吗?-不!\N{\rE}- Can I watch? - No!{\r}
+Dialogue: 0,0:23:13.77,0:23:16.84,Default,,0000,0000,0000,,-《恐怖猎犬2021》现场直播\N{\rE}- Coming to you live from Horror Hound 2021.{\r}
+Dialogue: 0,0:23:16.87,0:23:20.43,Default,,0000,0000,0000,,我是卡莉，我来找最大的爬行者…\N{\rE}I'm Carrie and I'm here to find the biggest Creeper...{\r}
+Dialogue: 0,0:23:20.46,0:23:23.26,Default,,0000,0000,0000,,-嘿，莱恩，他们在说爬行者\N{\rE}- Hey Laine, they're talking about the Creeper.{\r}
+Dialogue: 0,0:23:24.26,0:23:25.54,Default,,0000,0000,0000,,YouTube视频里的那个\N{\rE}The one in the YouTube clip.{\r}
+Dialogue: 0,0:23:25.57,0:23:27.44,Default,,0000,0000,0000,,-所以，小丑装能告诉我更多\N{\rE}- So, clown outfits tell me more.{\r}
+Dialogue: 0,0:23:28.06,0:23:31.44,Default,,0000,0000,0000,,-他们说小丑很吓人\N{\rE}- Well, they say that clowns are frightening{\r}
+Dialogue: 0,0:23:31.47,0:23:34.13,Default,,0000,0000,0000,,但我说我们都是好的\N{\rE}but I say that we are everything good{\r}
+Dialogue: 0,0:23:34.17,0:23:37.55,Default,,0000,0000,0000,,生活中所有的坏事\N{\rE}and bad in life all at once.{\r}
+Dialogue: 0,0:23:37.58,0:23:39.17,Default,,0000,0000,0000,,-看看这些小丑们的爱…\N{\rE}- Look at all the love the clowns...{\r}
+Dialogue: 0,0:23:39.21,0:23:42.21,Default,,0000,0000,0000,,-妈咪要把这些街道涂满鲜血\N{\rE}- Mommy's gonna paint these streets with blood.{\r}
+Dialogue: 0,0:23:43.24,0:23:44.94,Default,,0000,0000,0000,,-在我们的\N{\rE}- Stumbling around in our{\r}
+Dialogue: 0,0:23:44.97,0:23:47.46,Default,,0000,0000,0000,,破旧的小社区…\N{\rE}little old and shattered community...{\r}
+Dialogue: 0,0:23:47.49,0:23:49.28,Default,,0000,0000,0000,,-试试这个\N{\rE}- Try this on.{\r}
+Dialogue: 0,0:23:49.32,0:23:51.77,Default,,0000,0000,0000,,-猜猜还有谁会出现…\N{\rE}- And guess who else might turn up...{\r}
+Dialogue: 0,0:23:51.80,0:23:53.46,Default,,0000,0000,0000,,-好的，J先生\N{\rE}- Okay, Mr. J.{\r}
+Dialogue: 0,0:23:53.50,0:23:55.15,Default,,0000,0000,0000,,-没错，当地的恐怖传说，爬行者\N{\rE}- That's right, local horror legend, the Creeper.{\r}
+Dialogue: 0,0:24:29.84,0:24:33.33,Default,,0000,0000,0000,,-既然我满足了你的粉丝幻想，\N{\rE}- Now that I've satisfied your fanboy fantasies,{\r}
+Dialogue: 0,0:24:33.36,0:24:35.30,Default,,0000,0000,0000,,你要穿什么?\N{\rE}what are you gonna wear?{\r}
+Dialogue: 0,0:24:35.33,0:24:36.57,Default,,0000,0000,0000,,-什么?哦,这样\N{\rE}- What? Oh, this.{\r}
+Dialogue: 0,0:24:40.65,0:24:41.72,Default,,0000,0000,0000,,-t恤吗?\N{\rE}- A T-shirt?{\r}
+Dialogue: 0,0:24:41.75,0:24:43.17,Default,,0000,0000,0000,,-不是普通的t恤\N{\rE}- Not just any T-shirt.{\r}
+Dialogue: 0,0:24:44.10,0:24:45.27,Default,,0000,0000,0000,,这件t恤\N{\rE}This T-shirt.{\r}
+Dialogue: 0,0:24:45.31,0:24:46.96,Default,,0000,0000,0000,,-我该拿你怎么办?\N{\rE}- What am I gonna do with you?{\r}
+Dialogue: 0,0:25:25.35,0:25:26.35,Default,,0000,0000,0000,,-莱恩? !\N{\rE}- Laine?!{\r}
+Dialogue: 0,0:25:27.87,0:25:29.42,Default,,0000,0000,0000,,宝贝，你没事吧?\N{\rE}Baby, you all right?{\r}
+Dialogue: 0,0:25:35.91,0:25:37.84,Default,,0000,0000,0000,,它只是一只鸟\N{\rE}It's just a bird.{\r}
+Dialogue: 0,0:25:37.88,0:25:39.33,Default,,0000,0000,0000,,吓死我了\N{\rE}Scared the crap out of me.{\r}
+Dialogue: 0,0:25:42.23,0:25:45.40,Default,,0000,0000,0000,,宝贝……\N{\rE}Babe...{\r}
+Dialogue: 0,0:25:45.44,0:25:47.09,Default,,0000,0000,0000,,让我们开始…\N{\rE}Let's start going...{\r}
+Dialogue: 0,0:25:47.13,0:25:48.82,Default,,0000,0000,0000,,这是派对时间\N{\rE}It's party time.{\r}
+Dialogue: 0,0:25:52.89,0:25:54.17,Default,,0000,0000,0000,,来吧\N{\rE}Come on.{\r}
+Dialogue: 0,0:27:04.31,0:27:07.76,Default,,0000,0000,0000,,-我不知道会有这么多人参加\N{\rE}- I had no idea so many people attended these things.{\r}
+Dialogue: 0,0:27:07.79,0:27:11.56,Default,,0000,0000,0000,,-这是cosplay界的科切拉\N{\rE}- This is the Coachella of cosplay.{\r}
+Dialogue: 0,0:27:12.32,0:27:13.80,Default,,0000,0000,0000,,-是啊，对变态杀手来说\N{\rE}- Yeah, for psycho killers.{\r}
+Dialogue: 0,0:27:13.83,0:27:15.70,Default,,0000,0000,0000,,看起来像一群杂耍鬼\N{\rE}It looks like a gathering of juggalos.{\r}
+Dialogue: 0,0:27:15.73,0:27:17.42,Default,,0000,0000,0000,,-拜托，你喜欢疯狂小丑团\N{\rE}- Oh please, you love Insane Clown Posse.{\r}
+Dialogue: 0,0:27:17.46,0:27:18.67,Default,,0000,0000,0000,,我看过你的Spotify\N{\rE}I've seen your Spotify.{\r}
+Dialogue: 0,0:27:18.70,0:27:20.63,Default,,0000,0000,0000,,-离我的手机远点，你这个跟踪狂!\N{\rE}- Stay off my phone you stalker!{\r}
+Dialogue: 0,0:27:20.67,0:27:22.71,Default,,0000,0000,0000,,-天使回答说\N{\rE}- And the angel answered and{\r}
+Dialogue: 0,0:27:22.74,0:27:25.19,Default,,0000,0000,0000,,对百姓说，\N{\rE}said unto the people,{\r}
+Dialogue: 0,0:27:25.22,0:27:29.99,Default,,0000,0000,0000,,你们不要惧怕，因为我知道你们寻求\N{\rE}fear not, ye, for I know ye seek{\r}
+Dialogue: 0,0:27:30.02,0:27:31.33,Default,,0000,0000,0000,,弥赛亚\N{\rE}the Messiah.{\r}
+Dialogue: 0,0:27:32.13,0:27:34.10,Default,,0000,0000,0000,,因为它已经复活了\N{\rE}For it is risen.{\r}
+Dialogue: 0,0:27:34.13,0:27:35.99,Default,,0000,0000,0000,,所有喊:哈利路亚!\N{\rE}all shout: Hallelujah!{\r}
+Dialogue: 0,0:27:36.03,0:27:38.24,Default,,0000,0000,0000,,-我很确定正确的说法是“他复活了”\N{\rE}- I'm pretty sure the correct phrase is, "He is risen."{\r}
+Dialogue: 0,0:28:02.16,0:28:03.92,Default,,0000,0000,0000,,-耶稣基督!\N{\rE}- Jesus Christ!{\r}
+Dialogue: 0,0:28:10.24,0:28:13.10,Default,,0000,0000,0000,,没错，欢迎来到恐怖猎犬!\N{\rE}That's right, welcome to Horror Hound!{\r}
+Dialogue: 0,0:28:13.13,0:28:14.55,Default,,0000,0000,0000,,我们走吧!\N{\rE}Let's go!{\r}
+Dialogue: 0,0:28:20.28,0:28:22.52,Default,,0000,0000,0000,,-这些人真的很糟糕\N{\rE}-these people are really fucked up.{\r}
+Dialogue: 0,0:28:22.56,0:28:26.32,Default,,0000,0000,0000,,-你真该看看你的脸-勾，线，沉\N{\rE}- You should have seen your face--hook, line, and sinker.{\r}
+Dialogue: 0,0:28:32.36,0:28:34.26,Default,,0000,0000,0000,,-嘿，嘿，嘿，嘿\N{\rE}- Hey, hey, hey, hey,{\r}
+Dialogue: 0,0:28:37.09,0:28:39.61,Default,,0000,0000,0000,,-尿裤子了\N{\rE}- Shitting their pants.{\r}
+Dialogue: 0,0:28:39.64,0:28:41.51,Default,,0000,0000,0000,,他们脸上的表情\N{\rE}The looks on their faces.{\r}
+Dialogue: 0,0:28:41.54,0:28:44.37,Default,,0000,0000,0000,,糟了\N{\rE}Shit.{\r}
+Dialogue: 0,0:29:24.17,0:29:26.10,Default,,0000,0000,0000,,-他们在美化真正的杀手\N{\rE}- They are glorifying actual killers{\r}
+Dialogue: 0,0:29:26.14,0:29:27.21,Default,,0000,0000,0000,,你真的不介意吗?\N{\rE}and you're honestly okay with that?{\r}
+Dialogue: 0,0:29:27.24,0:29:28.83,Default,,0000,0000,0000,,-没有……\N{\rE}- No...{\r}
+Dialogue: 0,0:29:28.87,0:29:30.66,Default,,0000,0000,0000,,不,他们不是\N{\rE}No, they're not.{\r}
+Dialogue: 0,0:29:30.69,0:29:32.49,Default,,0000,0000,0000,,这一切都只是为了好玩\N{\rE}It's all just for fun.{\r}
+Dialogue: 0,0:29:32.52,0:29:34.42,Default,,0000,0000,0000,,-如果人群中潜伏着一个疯子怎么办?\N{\rE}- What if there's a psycho lurking in the crowd?{\r}
+Dialogue: 0,0:29:34.46,0:29:36.11,Default,,0000,0000,0000,,你怎么知道?\N{\rE}How the hell would you know?{\r}
+Dialogue: 0,0:29:37.70,0:29:39.98,Default,,0000,0000,0000,,-宝贝，没有疯子\N{\rE}- Baby, there's no psychos.{\r}
+Dialogue: 0,0:29:40.01,0:29:41.95,Default,,0000,0000,0000,,只是一群人在玩\N{\rE}Just a bunch of people having fun.{\r}
+Dialogue: 0,0:29:41.98,0:29:43.81,Default,,0000,0000,0000,,-即使是大型音乐节也有人数统计\N{\rE}- Even big music festivals have a body count.{\r}
+Dialogue: 0,0:29:43.85,0:29:45.30,Default,,0000,0000,0000,,我不敢想象这里是什么样子\N{\rE}I dread to think what it's like here.{\r}
+Dialogue: 0,0:29:45.33,0:29:47.99,Default,,0000,0000,0000,,人山人海，每个人都在喝酒、聚会、开车……\N{\rE}Crowds of people, everyone drinking, partying, cars...{\r}
+Dialogue: 0,0:29:48.02,0:29:50.13,Default,,0000,0000,0000,,-锋利的东西\N{\rE}- Sharp things.{\r}
+Dialogue: 0,0:29:50.16,0:29:51.82,Default,,0000,0000,0000,,-追逐…\N{\rE}- Chase...{\r}
+Dialogue: 0,0:29:51.85,0:29:53.86,Default,,0000,0000,0000,,好吧，我去拿饮料\N{\rE}Okay, I'll get the drinks.{\r}
+Dialogue: 0,0:29:56.69,0:29:57.65,Default,,0000,0000,0000,,嘿\N{\rE}Hey.{\r}
+Dialogue: 0,0:30:06.97,0:30:08.80,Default,,0000,0000,0000,,-我他妈现在就在做\N{\rE}- I'm doing that right freaking now.{\r}
+Dialogue: 0,0:30:08.84,0:30:10.70,Default,,0000,0000,0000,,-牌子上写着“关门”\N{\rE}- The sign says "closed."{\r}
+Dialogue: 0,0:30:21.37,0:30:22.82,Default,,0000,0000,0000,,追逐!\N{\rE}Chase!{\r}
+Dialogue: 0,0:30:22.85,0:30:24.96,Default,,0000,0000,0000,,-你割伤了自己，先生?\N{\rE}- You cut yourself, Sir?{\r}
+Dialogue: 0,0:30:24.99,0:30:26.85,Default,,0000,0000,0000,,-抱歉各位，我有事耽搁了\N{\rE}- Sorry folks, I got held up{\r}
+Dialogue: 0,0:30:26.89,0:30:28.48,Default,,0000,0000,0000,,为今晚的大演出做准备\N{\rE}preparing for tonight's big show.{\r}
+Dialogue: 0,0:30:29.06,0:30:30.75,Default,,0000,0000,0000,,特效之类的\N{\rE}Special effects and such.{\r}
+Dialogue: 0,0:30:30.79,0:30:32.03,Default,,0000,0000,0000,,没什么大不了的\N{\rE}No big deal.{\r}
+Dialogue: 0,0:30:34.10,0:30:36.42,Default,,0000,0000,0000,,五比三，从中间挑\N{\rE}It's three for five, pick them from the center.{\r}
+Dialogue: 0,0:30:42.84,0:30:43.98,Default,,0000,0000,0000,,-可以吗?-太棒了\N{\rE}- Is that all right? - Great.{\r}
+Dialogue: 0,0:30:45.49,0:30:46.91,Default,,0000,0000,0000,,-从这里?\N{\rE}- From here?{\r}
+Dialogue: 0,0:30:46.94,0:30:48.46,Default,,0000,0000,0000,,-在中间\N{\rE}- In the center.{\r}
+Dialogue: 0,0:30:48.50,0:30:50.05,Default,,0000,0000,0000,,中心-好吧，酷\N{\rE}Center. - All right, cool.{\r}
+Dialogue: 0,0:30:51.71,0:30:56.54,Default,,0000,0000,0000,,宝贝，退后，看我工作!\N{\rE}Baby, stand back and watch...me...work!{\r}
+Dialogue: 0,0:30:57.30,0:30:59.13,Default,,0000,0000,0000,,这是近了!\N{\rE}That was close!{\r}
+Dialogue: 0,0:30:59.16,0:31:00.82,Default,,0000,0000,0000,,我要用另一只手，好吗?\N{\rE}I'm gonna use my other hand, okay?{\r}
+Dialogue: 0,0:31:00.85,0:31:02.44,Default,,0000,0000,0000,,宝贝,你在看吗?\N{\rE}Babe, you watching?{\r}
+Dialogue: 0,0:31:02.48,0:31:05.17,Default,,0000,0000,0000,,好吧，这是我最后一个了\N{\rE}Ah, okay, it's my last one.{\r}
+Dialogue: 0,0:31:06.65,0:31:08.69,Default,,0000,0000,0000,,-你喜欢吗?\N{\rE}- You like that?{\r}
+Dialogue: 0,0:31:08.72,0:31:11.04,Default,,0000,0000,0000,,-我从没见过这样的事\N{\rE}- I've never seen anything like this.{\r}
+Dialogue: 0,0:31:11.93,0:31:14.32,Default,,0000,0000,0000,,-那是因为它们都是独一无二的\N{\rE}- That's because they're all unique.{\r}
+Dialogue: 0,0:31:15.52,0:31:17.56,Default,,0000,0000,0000,,每一个手工制作的\N{\rE}Each one handmade.{\r}
+Dialogue: 0,0:31:17.59,0:31:18.94,Default,,0000,0000,0000,,爬虫的风格\N{\rE}Creeper style.{\r}
+Dialogue: 0,0:31:20.56,0:31:22.22,Default,,0000,0000,0000,,你听说过爬行者吗?\N{\rE}You ever heard of the Creeper?{\r}
+Dialogue: 0,0:31:22.25,0:31:23.43,Default,,0000,0000,0000,,-别让他开口\N{\rE}- Don't get him started.{\r}
+Dialogue: 0,0:31:23.46,0:31:26.22,Default,,0000,0000,0000,,-就像当地的传说，对吧?\N{\rE}- It-- it's like a local legend, right?{\r}
+Dialogue: 0,0:31:26.26,0:31:28.61,Default,,0000,0000,0000,,每23年就杀死数百人?\N{\rE}Kills hundreds of people every 23 years?{\r}
+Dialogue: 0,0:31:28.64,0:31:30.71,Default,,0000,0000,0000,,-差不多吧\N{\rE}- Something like that.{\r}
+Dialogue: 0,0:31:30.75,0:31:31.89,Default,,0000,0000,0000,,-我告诉…\N{\rE}- I told...{\r}
+Dialogue: 0,0:31:40.51,0:31:41.58,Default,,0000,0000,0000,,-现在你试试\N{\rE}- Now you try.{\r}
+Dialogue: 0,0:31:41.62,0:31:43.07,Default,,0000,0000,0000,,-我吗?\N{\rE}- Me?{\r}
+Dialogue: 0,0:31:43.10,0:31:44.97,Default,,0000,0000,0000,,不，不\N{\rE}No, no, no, no, no.{\r}
+Dialogue: 0,0:31:45.00,0:31:46.93,Default,,0000,0000,0000,,不-你要这么做\N{\rE}No, no, no, no, no. - You're doing this.{\r}
+Dialogue: 0,0:31:46.97,0:31:48.69,Default,,0000,0000,0000,,你要这么做你这样做\N{\rE}You are doing this. You're doing this.{\r}
+Dialogue: 0,0:31:48.73,0:31:49.76,Default,,0000,0000,0000,,来，这边走\N{\rE}Come on, this way.{\r}
+Dialogue: 0,0:31:51.32,0:31:53.94,Default,,0000,0000,0000,,-成功向人类目标投掷刀片\N{\rE}- Successfully throwing blades at a human target{\r}
+Dialogue: 0,0:31:53.98,0:31:55.36,Default,,0000,0000,0000,,是一种艺术形式\N{\rE}was an art form.{\r}
+Dialogue: 0,0:31:56.60,0:31:58.60,Default,,0000,0000,0000,,现在，首先你找到你的投掷线…\N{\rE}Now, first you find your throwing line...{\r}
+Dialogue: 0,0:31:59.57,0:32:01.26,Default,,0000,0000,0000,,就是这个\N{\rE}That's this.{\r}
+Dialogue: 0,0:32:01.29,0:32:04.61,Default,,0000,0000,0000,,好了，现在是成功投掷的关键\N{\rE}Okay, now the key to successfully throwing{\r}
+Dialogue: 0,0:32:04.64,0:32:07.30,Default,,0000,0000,0000,,刀锋是你和目标之间的距离\N{\rE}a blade is the distance between you and the target.{\r}
+Dialogue: 0,0:32:08.65,0:32:10.72,Default,,0000,0000,0000,,现在，如果你找到了投掷线，\N{\rE}Now, if you've found your throwing line,{\r}
+Dialogue: 0,0:32:10.75,0:32:12.86,Default,,0000,0000,0000,,你得往后退一步\N{\rE}you're gonna take a step back.{\r}
+Dialogue: 0,0:32:13.93,0:32:16.96,Default,,0000,0000,0000,,然后向左转45度\N{\rE}And you're gonna turn 45 degrees and to your left.{\r}
+Dialogue: 0,0:32:18.62,0:32:21.28,Default,,0000,0000,0000,,好了，现在你要走到那条线上\N{\rE}Okay, now you're gonna step up to that line{\r}
+Dialogue: 0,0:32:21.31,0:32:23.56,Default,,0000,0000,0000,,然后像扔棒球一样扔出去\N{\rE}and throw it just like a baseball pitch.{\r}
+Dialogue: 0,0:32:23.59,0:32:25.28,Default,,0000,0000,0000,,尽你所能\N{\rE}Hard as you can.{\r}
+Dialogue: 0,0:32:29.63,0:32:31.63,Default,,0000,0000,0000,,什么!\N{\rE}What!{\r}
+Dialogue: 0,0:32:31.67,0:32:34.26,Default,,0000,0000,0000,,宝贝，这太变态了!\N{\rE}Baby, that was sick!{\r}
+Dialogue: 0,0:32:34.29,0:32:37.43,Default,,0000,0000,0000,,这和爬行者有什么关系?\N{\rE}So, how is this related to the Creeper?{\r}
+Dialogue: 0,0:32:38.99,0:32:42.13,Default,,0000,0000,0000,,-他们说这些是他最喜欢的玩具\N{\rE}- They say these are some of his favourite toys.{\r}
+Dialogue: 0,0:32:42.16,0:32:44.06,Default,,0000,0000,0000,,-似乎是低效的\N{\rE}- Seems inefficient.{\r}
+Dialogue: 0,0:32:44.10,0:32:45.99,Default,,0000,0000,0000,,-为了延长追捕时间\N{\rE}- To prolong the hunt.{\r}
+Dialogue: 0,0:32:47.58,0:32:49.76,Default,,0000,0000,0000,,有一个小缺点\N{\rE}There is the minor drawback that{\r}
+Dialogue: 0,0:32:49.79,0:32:51.27,Default,,0000,0000,0000,,即使你达到了目标\N{\rE}even if you hit your target,{\r}
+Dialogue: 0,0:32:51.31,0:32:53.79,Default,,0000,0000,0000,,你扔掉你的武器\N{\rE}you throw away your weapon.{\r}
+Dialogue: 0,0:32:53.83,0:32:55.76,Default,,0000,0000,0000,,你需要别的东西来完成任务\N{\rE}You need something else to finish the job.{\r}
+Dialogue: 0,0:32:59.01,0:33:00.66,Default,,0000,0000,0000,,或者如果爬行者像蔡斯那样投球，那他就需要\N{\rE}Or if the Creeper throws like Chase, then he would need it.{\r}
+Dialogue: 0,0:33:00.70,0:33:03.08,Default,,0000,0000,0000,,-她今天有笑话\N{\rE}- Oh, she got jokes today.{\r}
+Dialogue: 0,0:33:03.11,0:33:05.50,Default,,0000,0000,0000,,-噢!啊,该死的\N{\rE}- Ow! Ah, damn it.{\r}
+Dialogue: 0,0:33:05.53,0:33:07.60,Default,,0000,0000,0000,,-我知道了，我知道了只是割伤，只是割伤\N{\rE}- I got it, I got it. Just a cut, just a cut.{\r}
+Dialogue: 0,0:33:08.67,0:33:10.29,Default,,0000,0000,0000,,-童子军\N{\rE}- Boy Scout.{\r}
+Dialogue: 0,0:33:10.33,0:33:12.74,Default,,0000,0000,0000,,总是做好准备\N{\rE}Always be prepared.{\r}
+Dialogue: 0,0:33:12.78,0:33:15.37,Default,,0000,0000,0000,,-你们要来参加大型爬行者抽奖吗?\N{\rE}- You guys coming to the big Creeper Draw?{\r}
+Dialogue: 0,0:33:16.99,0:33:19.13,Default,,0000,0000,0000,,-有什么吸引力?\N{\rE}- What's the draw?{\r}
+Dialogue: 0,0:33:19.16,0:33:20.82,Default,,0000,0000,0000,,-午夜前开始\N{\rE}- Starts just before midnight after{\r}
+Dialogue: 0,0:33:20.86,0:33:23.38,Default,,0000,0000,0000,,主舞台上的角色扮演表演\N{\rE}the cosplay show on the main stage.{\r}
+Dialogue: 0,0:33:25.07,0:33:27.00,Default,,0000,0000,0000,,你们一定要去看看\N{\rE}You guys should definitely check it out.{\r}
+Dialogue: 0,0:33:27.72,0:33:29.86,Default,,0000,0000,0000,,谁知道呢，说不定你还能赢呢\N{\rE}Who knows, you might even win.{\r}
+Dialogue: 0,0:33:32.04,0:33:33.45,Default,,0000,0000,0000,,宝贝，没事的，只是划伤\N{\rE}Baby, it's all right, it's a cut.{\r}
+Dialogue: 0,0:33:55.99,0:33:58.03,Default,,0000,0000,0000,,-你没事吧，公主?\N{\rE}- Are you all right there, Princess?{\r}
+Dialogue: 0,0:33:59.48,0:34:01.72,Default,,0000,0000,0000,,-快点，快点你对吧?\N{\rE}- Come on, come on. You all right?{\r}
+Dialogue: 0,0:34:56.16,0:34:58.23,Default,,0000,0000,0000,,-嘿，你是来参加爬行者抽奖的吧?\N{\rE}- Hey, you're here for the Creeper Draw, right?{\r}
+Dialogue: 0,0:34:58.26,0:34:59.99,Default,,0000,0000,0000,,知道布伦特在哪吗?\N{\rE}Any idea where Brent is?{\r}
+Dialogue: 0,0:35:03.68,0:35:05.62,Default,,0000,0000,0000,,有人看见布伦特了吗?\N{\rE}Has anybody seen Brent?{\r}
+Dialogue: 0,0:35:05.65,0:35:07.55,Default,,0000,0000,0000,,任何人吗?\N{\rE}Anybody at all?{\r}
+Dialogue: 0,0:35:07.58,0:35:10.31,Default,,0000,0000,0000,,他已经做过箭的特技了吗?\N{\rE}Did he do the arrow stunt already?{\r}
+Dialogue: 0,0:35:11.17,0:35:12.80,Default,,0000,0000,0000,,-那个箭男?\N{\rE}- The arrow guy?{\r}
+Dialogue: 0,0:35:12.83,0:35:14.94,Default,,0000,0000,0000,,我们拍摄了他我们录下来了，对吧，麦奇?\N{\rE}We filmed him. We got it on tape, right Mikey?{\r}
+Dialogue: 0,0:35:14.97,0:35:16.97,Default,,0000,0000,0000,,-是啊，是啊，都录下来了\N{\rE}- Yeah, yeah, it's on tape.{\r}
+Dialogue: 0,0:35:17.01,0:35:18.39,Default,,0000,0000,0000,,-那他到底在哪儿?\N{\rE}- Well then, where the hell is he?{\r}
+Dialogue: 0,0:35:18.42,0:35:20.35,Default,,0000,0000,0000,,我是说我们五分钟后就要上台了\N{\rE}I mean we're supposed to be on stage in five minutes.{\r}
+Dialogue: 0,0:35:22.74,0:35:26.02,Default,,0000,0000,0000,,好吧，布伦特会为此挨揍的\N{\rE}All right, Brent's gonna get his ass kicked for this.{\r}
+Dialogue: 0,0:35:26.05,0:35:27.74,Default,,0000,0000,0000,,听着嘉莉,\N{\rE}Listen Carrie,{\r}
+Dialogue: 0,0:35:27.78,0:35:29.47,Default,,0000,0000,0000,,恐怕这次你得一个人来了\N{\rE}I'm afraid you're gonna have to do this one alone.{\r}
+Dialogue: 0,0:35:29.50,0:35:31.78,Default,,0000,0000,0000,,布伦特不在，而且都快半夜了\N{\rE}I mean, Brent's not here and it's nearly midnight.{\r}
+Dialogue: 0,0:35:31.81,0:35:33.95,Default,,0000,0000,0000,,来吧，我来教你怎么做\N{\rE}Come on, I'll show you the ropes.{\r}
+Dialogue: 0,0:35:33.99,0:35:35.40,Default,,0000,0000,0000,,很容易-完美\N{\rE}It's easy. - Perfect.{\r}
+Dialogue: 0,0:35:35.44,0:35:37.10,Default,,0000,0000,0000,,杰米，帮我拿东西好吗?\N{\rE}Jamie, grab my stuff please?{\r}
+Dialogue: 0,0:35:37.13,0:35:39.03,Default,,0000,0000,0000,,-你要做的就是…\N{\rE}- What you're gonna do is you're just gonna...{\r}
+Dialogue: 0,0:35:39.06,0:35:41.44,Default,,0000,0000,0000,,-在我继续之前能给我来杯姜茶吗?\N{\rE}- Oh, can I get a ginger tea before I go on?{\r}
+Dialogue: 0,0:35:41.48,0:35:43.00,Default,,0000,0000,0000,,-不，你绝对不能\N{\rE}- No, you absolutely cannot.{\r}
+Dialogue: 0,0:35:51.14,0:35:53.15,Default,,0000,0000,0000,,-好吧!\N{\rE}- All right!{\r}
+Dialogue: 0,0:35:53.18,0:35:57.98,Default,,0000,0000,0000,,谢谢你的节目，性感版的杰森\N{\rE}Thank you for the show, uh, sexy version of Jason, I think.{\r}
+Dialogue: 0,0:35:59.36,0:36:01.22,Default,,0000,0000,0000,,不管怎样,恭喜\N{\rE}Anyway, congrats.{\r}
+Dialogue: 0,0:36:01.26,0:36:02.95,Default,,0000,0000,0000,,-嘿，来吧，我们去看看这个\N{\rE}- Hey, come on, let's check this out.{\r}
+Dialogue: 0,0:36:02.98,0:36:07.44,Default,,0000,0000,0000,,我们的爬行者抽奖时间到了!\N{\rE}It is time for our Creeper Draw!{\r}
+Dialogue: 0,0:36:09.89,0:36:14.96,Default,,0000,0000,0000,,-我们的大奖得主是前环球小姐，\N{\rE}- And revealing our grand prize is former Miss Universe,{\r}
+Dialogue: 0,0:36:15.00,0:36:17.48,Default,,0000,0000,0000,,公主的黑暗,\N{\rE}Princess of Darkness,{\r}
+Dialogue: 0,0:36:17.52,0:36:21.14,Default,,0000,0000,0000,,我们的司仪……\N{\rE}our Master of Ceremonies...{\r}
+Dialogue: 0,0:36:21.17,0:36:23.25,Default,,0000,0000,0000,,夫人大屠杀!\N{\rE}Madame Carnage!{\r}
+Dialogue: 0,0:36:31.22,0:36:34.15,Default,,0000,0000,0000,,-安静，你们这些乡巴佬!\N{\rE}- Silence, you peasants!{\r}
+Dialogue: 0,0:36:34.19,0:36:39.61,Default,,0000,0000,0000,,我周游世界，把恐惧注入\N{\rE}I have travelled the world injecting fear into{\r}
+Dialogue: 0,0:36:39.64,0:36:44.06,Default,,0000,0000,0000,,你们这些凡人的心\N{\rE}the hearts of mere mortals like y'all.{\r}
+Dialogue: 0,0:36:44.09,0:36:48.99,Default,,0000,0000,0000,,但我们来这里是为了一件非常非常特别的事，\N{\rE}But we are here for something very, very special,{\r}
+Dialogue: 0,0:36:49.03,0:36:51.38,Default,,0000,0000,0000,,恐怖猎犬节\N{\rE}the Horror Hound Festival.{\r}
+Dialogue: 0,0:36:51.41,0:36:54.03,Default,,0000,0000,0000,,这是我的魔鬼孩子\N{\rE}It's the devil child of my making{\r}
+Dialogue: 0,0:36:54.07,0:36:56.45,Default,,0000,0000,0000,,因为它回到了我的精神家园\N{\rE}'cause it's back in my spiritual home{\r}
+Dialogue: 0,0:36:56.49,0:36:59.00,Default,,0000,0000,0000,,杰克逊,路易斯安那州!\N{\rE}of Jackson, Louisiana!{\r}
+Dialogue: 0,0:37:01.39,0:37:04.87,Default,,0000,0000,0000,,-这个地方历经千古\N{\rE}- The very place that through the ages{\r}
+Dialogue: 0,0:37:04.91,0:37:08.19,Default,,0000,0000,0000,,我们引诱和吞噬\N{\rE}we have lured and devoured{\r}
+Dialogue: 0,0:37:08.22,0:37:12.02,Default,,0000,0000,0000,,像你们这样悲哀的灵魂\N{\rE}sad souls like y'all.{\r}
+Dialogue: 0,0:37:12.05,0:37:14.71,Default,,0000,0000,0000,,来吧，屠杀!\N{\rE}Come on now, carnage!{\r}
+Dialogue: 0,0:37:17.78,0:37:21.75,Default,,0000,0000,0000,,-告诉我们大奖是什么\N{\rE}- So, tell us what the grand prize is.{\r}
+Dialogue: 0,0:37:21.79,0:37:26.20,Default,,0000,0000,0000,,-两个人的逃生室，爬行者主题\N{\rE}- An escape room for two, Creeper themed.{\r}
+Dialogue: 0,0:37:26.24,0:37:30.14,Default,,0000,0000,0000,,你们这些恐怖的小怪物住的鬼屋\N{\rE}A haunted little house for all you creepy little freaks.{\r}
+Dialogue: 0,0:37:30.17,0:37:33.18,Default,,0000,0000,0000,,-没错，变态，倒霉的赢家\N{\rE}- That's right, creeps, the unlucky winners{\r}
+Dialogue: 0,0:37:33.21,0:37:36.08,Default,,0000,0000,0000,,我们的大抽奖将被随意抽取\N{\rE}of our grand draw will be taken at will{\r}
+Dialogue: 0,0:37:36.11,0:37:38.87,Default,,0000,0000,0000,,到历史悠久的巴纳贝特故居\N{\rE}to the historic Barnabett house{\r}
+Dialogue: 0,0:37:38.91,0:37:41.84,Default,,0000,0000,0000,,在那里你会渴望令人不安的神话\N{\rE}where you will thirst for disturbing myths.{\r}
+Dialogue: 0,0:37:41.88,0:37:45.12,Default,,0000,0000,0000,,血腥恐怖将被考验到极限\N{\rE}And the bloody macabre will be tested to the limit{\r}
+Dialogue: 0,0:37:45.15,0:37:48.43,Default,,0000,0000,0000,,在一个与众不同的逃生室里\N{\rE}in an escape room with a difference.{\r}
+Dialogue: 0,0:37:48.47,0:37:50.88,Default,,0000,0000,0000,,还有网络红人…\N{\rE}Accompanied by internet sensation...{\r}
+Dialogue: 0,0:37:50.92,0:37:53.02,Default,,0000,0000,0000,,-你听到她说的了\N{\rE}- There, you heard her.{\r}
+Dialogue: 0,0:37:53.06,0:37:54.65,Default,,0000,0000,0000,,爬行者是真的!\N{\rE}The Creeper's a real thing!{\r}
+Dialogue: 0,0:37:54.68,0:37:56.79,Default,,0000,0000,0000,,-我想没人知道她在说什么\N{\rE}- I don't think anybody knew what she was talking about.{\r}
+Dialogue: 0,0:37:56.82,0:37:59.17,Default,,0000,0000,0000,,但好吧，我承认，这是小众的\N{\rE}But okay, I give you that, it's niche.{\r}
+Dialogue: 0,0:37:59.20,0:38:01.27,Default,,0000,0000,0000,,还有一些人也相信这一点，\N{\rE}And there are other people that believe it too,{\r}
+Dialogue: 0,0:38:01.31,0:38:03.28,Default,,0000,0000,0000,,所以你也不完全是个怪胎\N{\rE}so you're not a complete freak after all.{\r}
+Dialogue: 0,0:38:04.93,0:38:07.31,Default,,0000,0000,0000,,-你喜欢现在的每一秒，不是吗?\N{\rE}- You're loving every single second of this ain't you,{\r}
+Dialogue: 0,0:38:07.35,0:38:08.83,Default,,0000,0000,0000,,你大书呆子吗?\N{\rE}you big nerd?{\r}
+Dialogue: 0,0:38:08.87,0:38:10.90,Default,,0000,0000,0000,,-我更喜欢生物学家-哦,是的\N{\rE}- I prefer biologist. - Oh, yeah.{\r}
+Dialogue: 0,0:38:13.11,0:38:16.39,Default,,0000,0000,0000,,-现在，要选出优胜者，\N{\rE}- And now, to draw the winner,{\r}
+Dialogue: 0,0:38:16.43,0:38:21.64,Default,,0000,0000,0000,,杰克逊自己的马尼拉夫人!\N{\rE}Jackson's very own Lady Manilla!{\r}
+Dialogue: 0,0:38:39.28,0:38:41.24,Default,,0000,0000,0000,,数字……\N{\rE}Number...{\r}
+Dialogue: 0,0:38:41.28,0:38:42.63,Default,,0000,0000,0000,,5……\N{\rE}5...{\r}
+Dialogue: 0,0:38:42.66,0:38:43.94,Default,,0000,0000,0000,,1……\N{\rE}1....{\r}
+Dialogue: 0,0:38:43.97,0:38:45.11,Default,,0000,0000,0000,,4！\N{\rE}4!{\r}
+Dialogue: 0,0:38:47.46,0:38:49.74,Default,,0000,0000,0000,,-天啊，那是我-什么?\N{\rE}- Oh my God, that's me. - What?{\r}
+Dialogue: 0,0:38:49.77,0:38:51.57,Default,,0000,0000,0000,,-这怎么可能?我从来没有赢过任何东西\N{\rE}- How is that possible? I never win anything.{\r}
+Dialogue: 0,0:38:51.60,0:38:52.77,Default,,0000,0000,0000,,-这是巫术，宝贝\N{\rE}- Its voodoo, baby.{\r}
+Dialogue: 0,0:38:52.81,0:38:54.19,Default,,0000,0000,0000,,514是我们!\N{\rE}514 is us!{\r}
+Dialogue: 0,0:38:54.22,0:38:55.36,Default,,0000,0000,0000,,-是的!\N{\rE}- Yeah!{\r}
+Dialogue: 0,0:38:56.85,0:38:59.02,Default,,0000,0000,0000,,好吧!\N{\rE}All right!{\r}
+Dialogue: 0,0:39:00.89,0:39:04.20,Default,,0000,0000,0000,,那边那个帅哥就是我们的冠军!\N{\rE}That handsome guy over there is our winner!{\r}
+Dialogue: 0,0:39:04.23,0:39:06.75,Default,,0000,0000,0000,,-你能相信吗?谢谢!\N{\rE}- Can you believe this? Thanks!{\r}
+Dialogue: 0,0:39:06.79,0:39:11.03,Default,,0000,0000,0000,,-记住，如果你在黎明前离开，\N{\rE}- And remember if you get out by daybreak,{\r}
+Dialogue: 0,0:39:11.07,0:39:15.00,Default,,0000,0000,0000,,你将赢得一个特别奖\N{\rE}you'll win a special prize.{\r}
+Dialogue: 0,0:39:15.62,0:39:18.45,Default,,0000,0000,0000,,-现在，为我们的获胜者鼓掌\N{\rE}- Now, round of applause for our winner.{\r}
+Dialogue: 0,0:39:18.49,0:39:22.18,Default,,0000,0000,0000,,到后台来，我们马上就会让你们开始!\N{\rE}Come on backstage and we'll get you guys going in no time!{\r}
+Dialogue: 0,0:39:24.08,0:39:25.36,Default,,0000,0000,0000,,-太棒了\N{\rE}- That was amazing.{\r}
+Dialogue: 0,0:39:25.39,0:39:26.36,Default,,0000,0000,0000,,-这边，小心你的头\N{\rE}- Right this way, just watch your head.{\r}
+Dialogue: 0,0:39:27.88,0:39:29.40,Default,,0000,0000,0000,,-你真的想这么做吗?我的意思是……\N{\rE}- Do you really wanna do this? I mean...{\r}
+Dialogue: 0,0:39:29.43,0:39:31.02,Default,,0000,0000,0000,,-是爬行者的房子!\N{\rE}- It's the Creeper house!{\r}
+Dialogue: 0,0:39:31.05,0:39:32.81,Default,,0000,0000,0000,,关于爬行者的事我都知道\N{\rE}I know everything there is to know about the Creeper.{\r}
+Dialogue: 0,0:39:32.85,0:39:34.16,Default,,0000,0000,0000,,我们很快就能离开那里\N{\rE}We'll be out of there in no time.{\r}
+Dialogue: 0,0:39:34.19,0:39:36.02,Default,,0000,0000,0000,,-是啊，我知道，但是…相信我,相信我!\N{\rE}- Yeah, I know, but... Trust me--trust me!{\r}
+Dialogue: 0,0:39:36.06,0:39:37.78,Default,,0000,0000,0000,,-恭喜你，这边请\N{\rE}- Congratulations, right this way.{\r}
+Dialogue: 0,0:39:38.44,0:39:40.55,Default,,0000,0000,0000,,穿过这里就到了\N{\rE}It's just through here.{\r}
+Dialogue: 0,0:39:40.58,0:39:41.86,Default,,0000,0000,0000,,我们在那\N{\rE}There we are.{\r}
+Dialogue: 0,0:39:41.89,0:39:43.51,Default,,0000,0000,0000,,-好的，在这里和这里签名\N{\rE}- Okay, just sign there and there.{\r}
+Dialogue: 0,0:39:43.55,0:39:45.17,Default,,0000,0000,0000,,-这些是什么?-标准发布表格\N{\rE}- Uh, what are these? - Standard release form.{\r}
+Dialogue: 0,0:39:45.21,0:39:46.52,Default,,0000,0000,0000,,我们可以永远使用你的形象，\N{\rE}We get to use your image forever and ever,{\r}
+Dialogue: 0,0:39:46.55,0:39:47.86,Default,,0000,0000,0000,,在宇宙中\N{\rE}ever in the universe.{\r}
+Dialogue: 0,0:39:47.90,0:39:49.21,Default,,0000,0000,0000,,如果出了什么差错，我们不负责\N{\rE}We're not liable if anything goes wrong.{\r}
+Dialogue: 0,0:39:49.24,0:39:50.66,Default,,0000,0000,0000,,就像平常的废话，废话，废话\N{\rE}The usual blah, blah, blah, blah, blah.{\r}
+Dialogue: 0,0:39:50.69,0:39:52.07,Default,,0000,0000,0000,,-为什么?\N{\rE}- Uh, but why?{\r}
+Dialogue: 0,0:39:52.11,0:39:53.46,Default,,0000,0000,0000,,-哦，对不起，我忘了介绍我自己了\N{\rE}- Oh sorry, I forgot to introduce myself.{\r}
+Dialogue: 0,0:39:53.49,0:39:55.42,Default,,0000,0000,0000,,我是制片人杰米\N{\rE}I'm Jamie, the producer{\r}
+Dialogue: 0,0:39:55.46,0:39:56.98,Default,,0000,0000,0000,,她的表演\N{\rE}of her show.{\r}
+Dialogue: 0,0:39:57.01,0:39:58.25,Default,,0000,0000,0000,,我们要拍下这一切\N{\rE}We're coming along to film all this.{\r}
+Dialogue: 0,0:39:58.29,0:39:59.74,Default,,0000,0000,0000,,这是我们和音乐节协议的一部分\N{\rE}It's part of our deal with the festival.{\r}
+Dialogue: 0,0:39:59.77,0:40:01.36,Default,,0000,0000,0000,,-嘿，莱恩，我们要上电视了!\N{\rE}- Hey Laine, we're gonna be on TV!{\r}
+Dialogue: 0,0:40:01.39,0:40:03.22,Default,,0000,0000,0000,,-上网，不是看电视\N{\rE}- Internet, not TV.{\r}
+Dialogue: 0,0:40:03.26,0:40:06.05,Default,,0000,0000,0000,,-甚至更好我的迹象\N{\rE}- Even better. Sign me up.{\r}
+Dialogue: 0,0:40:06.09,0:40:08.12,Default,,0000,0000,0000,,-好吧!就在那边，小姐\N{\rE}- All right! Just down there, Miss.{\r}
+Dialogue: 0,0:40:08.16,0:40:09.37,Default,,0000,0000,0000,,在你自己的时间\N{\rE}In your own time.{\r}
+Dialogue: 0,0:40:09.40,0:40:11.09,Default,,0000,0000,0000,,好了，好了，队员们，出发!\N{\rE}Okay, all right, team, let's go!{\r}
+Dialogue: 0,0:40:11.13,0:40:12.37,Default,,0000,0000,0000,,让我们移动它!\N{\rE}Let's move it!{\r}
+Dialogue: 0,0:40:13.68,0:40:15.89,Default,,0000,0000,0000,,-嘿，赢家\N{\rE}- Hey there, winner.{\r}
+Dialogue: 0,0:40:17.27,0:40:19.58,Default,,0000,0000,0000,,-我是凯莉-凯莉\N{\rE}- I'm Carrie. - Carrie.{\r}
+Dialogue: 0,0:40:19.62,0:40:21.38,Default,,0000,0000,0000,,-很高兴见到你\N{\rE}- Nice to meet you.{\r}
+Dialogue: 0,0:40:21.41,0:40:24.24,Default,,0000,0000,0000,,-莱恩，那个流口水的混蛋是蔡斯，我男朋友\N{\rE}- Laine, the drooling jerk is Chase, my boyfriend.{\r}
+Dialogue: 0,0:40:24.28,0:40:26.28,Default,,0000,0000,0000,,我们怎么去那里?\N{\rE}How are we gonna get there?{\r}
+Dialogue: 0,0:40:26.32,0:40:30.66,Default,,0000,0000,0000,,-斯图会带我们去，跟我来\N{\rE}- Uh, Stu's going to take us there, so follow me.{\r}
+Dialogue: 0,0:40:32.63,0:40:33.77,Default,,0000,0000,0000,,“跟我来”\N{\rE}- "Follow me."{\r}
+Dialogue: 0,0:40:33.81,0:40:35.01,Default,,0000,0000,0000,,-你最好是对的\N{\rE}- You'd better be right about{\r}
+Dialogue: 0,0:40:35.05,0:40:36.46,Default,,0000,0000,0000,,让我们尽快离开那里\N{\rE}getting us out of there quick sharp.{\r}
+Dialogue: 0,0:40:36.50,0:40:37.60,Default,,0000,0000,0000,,-宝贝，来吧\N{\rE}- Baby, come on.{\r}
+Dialogue: 0,0:40:37.64,0:40:38.57,Default,,0000,0000,0000,,谢谢你！\N{\rE}Thank you.{\r}
+Dialogue: 0,0:40:44.95,0:40:46.72,Default,,0000,0000,0000,,我不敢相信这一切发生了\N{\rE}I can't believe this is happening.{\r}
+Dialogue: 0,0:40:47.30,0:40:49.13,Default,,0000,0000,0000,,恐怖之神是站在我们这边的\N{\rE}The horror gods are on our side.{\r}
+Dialogue: 0,0:40:51.58,0:40:52.79,Default,,0000,0000,0000,,-蔡斯，那个人不是…\N{\rE}- Chase, isn't that the guy...{\r}
+Dialogue: 0,0:40:52.82,0:40:53.83,Default,,0000,0000,0000,,-你想看看这个吗?\N{\rE}- You wanna take a look at this?{\r}
+Dialogue: 0,0:40:53.86,0:40:55.38,Default,,0000,0000,0000,,-这是什么?\N{\rE}- What am I looking at?{\r}
+Dialogue: 0,0:40:55.41,0:40:57.14,Default,,0000,0000,0000,,-伙计们，我们真的要坐那玩意去吗?\N{\rE}- Guys, are we really going there in that thing?{\r}
+Dialogue: 0,0:40:57.17,0:40:58.59,Default,,0000,0000,0000,,-别担心，他看起来有点吓人\N{\rE}- Don't worry, he looks a little bit creepy,{\r}
+Dialogue: 0,0:40:58.62,0:40:59.52,Default,,0000,0000,0000,,但他是个好人\N{\rE}but he's a sweetheart.{\r}
+Dialogue: 0,0:40:59.56,0:41:00.49,Default,,0000,0000,0000,,-一点?\N{\rE}- A bit?{\r}
+Dialogue: 0,0:41:02.52,0:41:04.15,Default,,0000,0000,0000,,去吧，上车\N{\rE}Go on, get in.{\r}
+Dialogue: 0,0:41:04.18,0:41:05.91,Default,,0000,0000,0000,,-嘿，想被一个疯乡巴佬杀了吗?\N{\rE}- Hey, wanna get killed by a crazy redneck?{\r}
+Dialogue: 0,0:41:05.94,0:41:07.91,Default,,0000,0000,0000,,因为你就是这样被杀的\N{\rE}Because that's how you get killed.{\r}
+Dialogue: 0,0:41:07.94,0:41:08.81,Default,,0000,0000,0000,,-来吧，你们两个\N{\rE}- Come on, you two.{\r}
+Dialogue: 0,0:41:10.60,0:41:12.05,Default,,0000,0000,0000,,我爱你\N{\rE}I love you.{\r}
+Dialogue: 0,0:41:33.04,0:41:39.42,Default,,0000,0000,0000,,-你准备好迎接恐怖之夜了吗?\N{\rE}- Are you ready for the big night of terror to begin?{\r}
+Dialogue: 0,0:41:56.23,0:41:58.10,Default,,0000,0000,0000,,-我们还剩十秒!\N{\rE}- We've got ten seconds to go!{\r}
+Dialogue: 0,0:41:59.06,0:42:00.03,Default,,0000,0000,0000,,\n{\rE}: 10 !\nall: 10!{\r}
+Dialogue: 0,0:42:00.06,0:42:01.07,Default,,0000,0000,0000,,\n{\rE}9 !\n9!{\r}
+Dialogue: 0,0:42:01.10,0:42:02.14,Default,,0000,0000,0000,,\n{\rE}8 !\n8!{\r}
+Dialogue: 0,0:42:03.86,0:42:04.83,Default,,0000,0000,0000,,\n{\rE}: 7 !\nall: 7!{\r}
+Dialogue: 0,0:42:05.48,0:42:06.55,Default,,0000,0000,0000,,\n{\rE}6 !\n6!{\r}
+Dialogue: 0,0:42:07.90,0:42:08.94,Default,,0000,0000,0000,,\n{\rE}: 5 !\nall: 5!{\r}
+Dialogue: 0,0:42:10.42,0:42:11.63,Default,,0000,0000,0000,,\n{\rE}: 4 !\nall: 4!{\r}
+Dialogue: 0,0:42:12.80,0:42:13.73,Default,,0000,0000,0000,,\n{\rE}3 !\n3!{\r}
+Dialogue: 0,0:42:14.67,0:42:15.67,Default,,0000,0000,0000,,2！\N{\rE}2!{\r}
+Dialogue: 0,0:42:16.67,0:42:17.88,Default,,0000,0000,0000,,1！\N{\rE}1!{\r}
+Dialogue: 0,0:42:35.55,0:42:37.65,Default,,0000,0000,0000,,放点音乐吧，外面的人都快疯了!\N{\rE}- Hey, play some music, the crowd's going wild out there!{\r}
+Dialogue: 0,0:42:37.69,0:42:39.66,Default,,0000,0000,0000,,-网络断了，伙计-那就做点什么!\N{\rE}- The internet dropped, man. - Well, do something!{\r}
+Dialogue: 0,0:42:39.69,0:42:44.00,Default,,0000,0000,0000,,-好了，伙计们，wi-fi断了，但别担心\N{\rE}- All right, folks, we're out of wi-fi, but never fear.{\r}
+Dialogue: 0,0:42:44.04,0:42:48.32,Default,,0000,0000,0000,,一个好的DJ出门一定要带几张黑胶唱片!\N{\rE}A good DJ never leaves the house without a few vinyls!{\r}
+Dialogue: 0,0:43:23.94,0:43:25.77,Default,,0000,0000,0000,,-你打算一路上都不跟我说话吗?\N{\rE}- So you're not gonna talk to me for the whole journey?{\r}
+Dialogue: 0,0:43:25.81,0:43:28.12,Default,,0000,0000,0000,,吗?-那是什么?\N{\rE}At all? - What is that?{\r}
+Dialogue: 0,0:43:28.15,0:43:29.64,Default,,0000,0000,0000,,- B卷\N{\rE}- B-roll.{\r}
+Dialogue: 0,0:43:29.67,0:43:31.09,Default,,0000,0000,0000,,-那是什么?\N{\rE}- What is that?{\r}
+Dialogue: 0,0:43:31.12,0:43:32.92,Default,,0000,0000,0000,,-宝宝…-影子?\N{\rE}- Baby... - Shadow?{\r}
+Dialogue: 0,0:43:32.95,0:43:34.09,Default,,0000,0000,0000,,-你能至少看着我吗?\N{\rE}- Can you at least look at me?{\r}
+Dialogue: 0,0:43:34.12,0:43:37.40,Default,,0000,0000,0000,,-我不确定它看起来像个爬行者\N{\rE}- I'm not sure. It looks like a Creeper.{\r}
+Dialogue: 0,0:43:38.06,0:43:40.27,Default,,0000,0000,0000,,-等等，等等，你是想告诉我\N{\rE}- Wait, wait, wait, you mean to tell me{\r}
+Dialogue: 0,0:43:40.30,0:43:41.23,Default,,0000,0000,0000,,你录下爬行者了吗?\N{\rE}you got the Creeper on tape?{\r}
+Dialogue: 0,0:43:42.13,0:43:43.41,Default,,0000,0000,0000,,这是真实的录像?\N{\rE}This is real footage?{\r}
+Dialogue: 0,0:43:43.44,0:43:44.79,Default,,0000,0000,0000,,-嗯，爬行者\N{\rE}- Well, a Creeper.{\r}
+Dialogue: 0,0:43:44.82,0:43:47.24,Default,,0000,0000,0000,,可能是某个玩cosplay的混蛋\N{\rE}It's probably just some asshole in great cosplay.{\r}
+Dialogue: 0,0:43:47.27,0:43:49.31,Default,,0000,0000,0000,,-真的吗?\N{\rE}- Or is it?{\r}
+Dialogue: 0,0:43:49.35,0:43:50.66,Default,,0000,0000,0000,,-决议是什么?\N{\rE}- What's the resolution on that?{\r}
+Dialogue: 0,0:43:50.69,0:43:52.28,Default,,0000,0000,0000,,-原生4k，为什么?\N{\rE}- Native 4k, why?{\r}
+Dialogue: 0,0:43:52.31,0:43:53.66,Default,,0000,0000,0000,,-看到了吗?\N{\rE}- See?{\r}
+Dialogue: 0,0:43:53.70,0:43:55.25,Default,,0000,0000,0000,,清爽、清晰的光学效果没有任何区别\N{\rE}Crisp, clear optics makes no difference.{\r}
+Dialogue: 0,0:43:55.28,0:43:56.91,Default,,0000,0000,0000,,-太棒了\N{\rE}- Great.{\r}
+Dialogue: 0,0:43:56.94,0:43:58.94,Default,,0000,0000,0000,,-如果那个叫约翰的人失踪了\N{\rE}- If that John guy turns out to be missing{\r}
+Dialogue: 0,0:43:58.98,0:44:00.08,Default,,0000,0000,0000,,我们可能有线索\N{\rE}we might have something.{\r}
+Dialogue: 0,0:44:24.62,0:44:27.56,Default,,0000,0000,0000,,这是有趣的\N{\rE}This is interesting.{\r}
+Dialogue: 0,0:44:29.21,0:44:30.97,Default,,0000,0000,0000,,-哦,是的\N{\rE}- Uh, yeah.{\r}
+Dialogue: 0,0:44:31.01,0:44:33.91,Default,,0000,0000,0000,,我猜我是用手机点燃的吧?\N{\rE}So I guess I light this using cellphones?{\r}
+Dialogue: 0,0:44:37.57,0:44:39.95,Default,,0000,0000,0000,,-欢迎来到巴纳贝特家族墓地\N{\rE}- Welcome to the Barnabett family cemetery.{\r}
+Dialogue: 0,0:44:41.23,0:44:43.26,Default,,0000,0000,0000,,这是最后的安息之地\N{\rE}This was the final resting place{\r}
+Dialogue: 0,0:44:43.30,0:44:45.51,Default,,0000,0000,0000,,为了回到18世纪的灵魂\N{\rE}for souls back to the 1700s.{\r}
+Dialogue: 0,0:44:47.33,0:44:50.37,Default,,0000,0000,0000,,当地人认为这里是圣地\N{\rE}The natives believed that this was holy ground.{\r}
+Dialogue: 0,0:44:50.41,0:44:52.34,Default,,0000,0000,0000,,回到人类的黎明\N{\rE}Back to the dawn of man.{\r}
+Dialogue: 0,0:44:53.48,0:44:54.55,Default,,0000,0000,0000,,神圣的\N{\rE}Sacred.{\r}
+Dialogue: 0,0:44:56.34,0:44:59.83,Default,,0000,0000,0000,,但是非常非常闹鬼\N{\rE}But very, very haunted.{\r}
+Dialogue: 0,0:44:59.86,0:45:01.38,Default,,0000,0000,0000,,-太棒了\N{\rE}- Awesome.{\r}
+Dialogue: 0,0:45:01.42,0:45:03.35,Default,,0000,0000,0000,,我想知道我能不能葬在这里\N{\rE}I wonder if I could be buried here.{\r}
+Dialogue: 0,0:45:03.39,0:45:04.90,Default,,0000,0000,0000,,-小心你的愿望\N{\rE}- Uh, be careful what you wish for.{\r}
+Dialogue: 0,0:45:04.94,0:45:06.63,Default,,0000,0000,0000,,-闭嘴\N{\rE}- Shut up.{\r}
+Dialogue: 0,0:45:06.66,0:45:08.53,Default,,0000,0000,0000,,-我们怎么又来了?\N{\rE}- What are we doing here again?{\r}
+Dialogue: 0,0:45:08.56,0:45:10.84,Default,,0000,0000,0000,,我们不是该去鬼屋什么的吗?\N{\rE}Weren't we supposed to go to the haunted house or something?{\r}
+Dialogue: 0,0:45:10.88,0:45:12.50,Default,,0000,0000,0000,,-是的\N{\rE}- Yeah.{\r}
+Dialogue: 0,0:45:12.53,0:45:14.05,Default,,0000,0000,0000,,我们从这里走过去\N{\rE}We walk from here.{\r}
+Dialogue: 0,0:45:17.26,0:45:18.54,Default,,0000,0000,0000,,-看到了吗?\N{\rE}- You see that?{\r}
+Dialogue: 0,0:45:19.13,0:45:21.47,Default,,0000,0000,0000,,-怎么了?来吧，我们一定要拿到这个\N{\rE}- What's wrong? Come on, we gotta get this.{\r}
+Dialogue: 0,0:45:21.51,0:45:22.85,Default,,0000,0000,0000,,-相机坏了\N{\rE}- Camera won't work.{\r}
+Dialogue: 0,0:45:22.89,0:45:24.48,Default,,0000,0000,0000,,我不晓得\N{\rE}I dunno.{\r}
+Dialogue: 0,0:45:24.51,0:45:26.58,Default,,0000,0000,0000,,-不，不，不，不知道是不够的，伙计\N{\rE}- No, no, no, dunno ain't gonna cut it, pal.{\r}
+Dialogue: 0,0:45:26.62,0:45:28.07,Default,,0000,0000,0000,,我给你钱不是让你扳倒摄制组的\N{\rE}I didn't pay you to bring the film crew down{\r}
+Dialogue: 0,0:45:28.10,0:45:29.69,Default,,0000,0000,0000,,为我的健康干杯\N{\rE}to Whistling Dixie for my health.{\r}
+Dialogue: 0,0:45:30.27,0:45:31.48,Default,,0000,0000,0000,,你说没用是什么意思?\N{\rE}Now what do you mean it won't work?{\r}
+Dialogue: 0,0:45:31.52,0:45:33.00,Default,,0000,0000,0000,,它不能打开?它不会专注?\N{\rE}It doesn't turn on? It won't focus?{\r}
+Dialogue: 0,0:45:33.04,0:45:35.35,Default,,0000,0000,0000,,不记录?不操自己?\N{\rE}Won't record? Won't fuck itself?{\r}
+Dialogue: 0,0:45:35.38,0:45:36.90,Default,,0000,0000,0000,,我在这里做什么?\N{\rE}What am I even doing out here?{\r}
+Dialogue: 0,0:45:36.94,0:45:39.77,Default,,0000,0000,0000,,-没人想听起来像他那样\N{\rE}- See, now, nobody wants to sound like that guy.{\r}
+Dialogue: 0,0:45:39.80,0:45:41.25,Default,,0000,0000,0000,,-我得了艾美奖，该死的\N{\rE}- I have got an Emmy, God damn it.{\r}
+Dialogue: 0,0:45:41.29,0:45:42.60,Default,,0000,0000,0000,,莱恩-莱恩!\N{\rE}- Laine--Laine!{\r}
+Dialogue: 0,0:45:42.63,0:45:43.91,Default,,0000,0000,0000,,-我才不在乎你的艾美奖呢\N{\rE}- I don't give a fuck about your Emmy.{\r}
+Dialogue: 0,0:45:43.94,0:45:45.43,Default,,0000,0000,0000,,摄像机坏了又不是我的错\N{\rE}It's not my fault the camera doesn't work.{\r}
+Dialogue: 0,0:45:45.46,0:45:46.53,Default,,0000,0000,0000,,-莱恩!\N{\rE}- Laine!{\r}
+Dialogue: 0,0:45:46.57,0:45:47.60,Default,,0000,0000,0000,,-你去死吧\N{\rE}- You can go fuck yourself.{\r}
+Dialogue: 0,0:45:47.64,0:45:48.53,Default,,0000,0000,0000,,-你有时候真是个混蛋\N{\rE}- You're such an asshole sometimes.{\r}
+Dialogue: 0,0:45:49.74,0:45:50.85,Default,,0000,0000,0000,,-莱恩!\N{\rE}- Laine!{\r}
+Dialogue: 0,0:46:05.38,0:46:06.45,Default,,0000,0000,0000,,-宝贝，一切都好吗?\N{\rE}- Babe, is everything all right?{\r}
+Dialogue: 0,0:46:06.48,0:46:08.11,Default,,0000,0000,0000,,-我不知道，你说呢\N{\rE}- I don't know, you tell me.{\r}
+Dialogue: 0,0:46:09.07,0:46:10.62,Default,,0000,0000,0000,,一切都好吗?\N{\rE}Is everything all right?{\r}
+Dialogue: 0,0:46:12.01,0:46:13.97,Default,,0000,0000,0000,,-什么意思?\N{\rE}- What do you mean?{\r}
+Dialogue: 0,0:46:14.01,0:46:15.39,Default,,0000,0000,0000,,-我知道这里面有蹊跷\N{\rE}- I know there's something going on there with that{\r}
+Dialogue: 0,0:46:15.42,0:46:16.77,Default,,0000,0000,0000,,金发小妞和你\N{\rE}blonde bimbo and you.{\r}
+Dialogue: 0,0:46:16.80,0:46:17.77,Default,,0000,0000,0000,,说实话，我一点也不介意\N{\rE}Honestly, it doesn't bother me.{\r}
+Dialogue: 0,0:46:17.80,0:46:21.46,Default,,0000,0000,0000,,我只是觉得它太“有趣”了\N{\rE}I just find it so "interesting."{\r}
+Dialogue: 0,0:46:21.50,0:46:23.15,Default,,0000,0000,0000,,-哦，得了吧\N{\rE}- Oh, come on.{\r}
+Dialogue: 0,0:46:23.95,0:46:26.16,Default,,0000,0000,0000,,我都没注意到她!-真的吗?\N{\rE}I didn't even notice her! - Really?{\r}
+Dialogue: 0,0:46:26.19,0:46:29.02,Default,,0000,0000,0000,,“太棒了，请把我埋在这里，我是个荡妇!”\N{\rE}"Awesome, bury me here please, I'm a bimbo!"{\r}
+Dialogue: 0,0:46:29.06,0:46:30.75,Default,,0000,0000,0000,,你想让我给你个杯子接口水吗?\N{\rE}You want me to give you a cup to catch your drool?{\r}
+Dialogue: 0,0:46:30.78,0:46:32.16,Default,,0000,0000,0000,,-不，我没那么说\N{\rE}- No, I didn't say it like that.{\r}
+Dialogue: 0,0:46:33.68,0:46:34.79,Default,,0000,0000,0000,,这是不公平的\N{\rE}And that's not fair.{\r}
+Dialogue: 0,0:46:34.82,0:46:35.82,Default,,0000,0000,0000,,莱恩!\N{\rE}Laine!{\r}
+Dialogue: 0,0:46:35.86,0:46:37.24,Default,,0000,0000,0000,,-不，真的，我爱她\N{\rE}- No, really, I love her.{\r}
+Dialogue: 0,0:46:37.27,0:46:38.34,Default,,0000,0000,0000,,她很深沉，我知道\N{\rE}She's deep, I get it.{\r}
+Dialogue: 0,0:46:38.38,0:46:39.58,Default,,0000,0000,0000,,-拜托，我…\N{\rE}- Come on, I...{\r}
+Dialogue: 0,0:46:43.69,0:46:44.66,Default,,0000,0000,0000,,-你好吗?\N{\rE}- Hello?{\r}
+Dialogue: 0,0:46:47.32,0:46:49.59,Default,,0000,0000,0000,,嘿，你是参加音乐节的吗?\N{\rE}Hey, are you with the festival?{\r}
+Dialogue: 0,0:46:50.35,0:46:52.36,Default,,0000,0000,0000,,是我,迈克尔!\N{\rE}It's me, Michael!{\r}
+Dialogue: 0,0:46:53.60,0:46:54.91,Default,,0000,0000,0000,,相机的家伙,\N{\rE}The camera guy--{\r}
+Dialogue: 0,0:46:54.95,0:46:55.88,Default,,0000,0000,0000,,你有电话吗?\N{\rE}Do you have a phone?{\r}
+Dialogue: 0,0:46:59.33,0:47:01.81,Default,,0000,0000,0000,,我只是需要一点系绳\N{\rE}I just need a bit of a tethering{\r}
+Dialogue: 0,0:47:01.85,0:47:03.16,Default,,0000,0000,0000,,为了把我的东西放到网上\N{\rE}in order to get my stuff online.{\r}
+Dialogue: 0,0:47:04.37,0:47:07.13,Default,,0000,0000,0000,,听着，我只需要用一会儿\N{\rE}Look, I only need it for a bit.{\r}
+Dialogue: 0,0:47:07.16,0:47:08.51,Default,,0000,0000,0000,,我的制片人会杀了我的\N{\rE}My producer's gonna kill me{\r}
+Dialogue: 0,0:47:08.54,0:47:10.17,Default,,0000,0000,0000,,如果我现在不把这些东西放到网上\N{\rE}if I don't get this stuff online right now.{\r}
+Dialogue: 0,0:47:15.62,0:47:16.79,Default,,0000,0000,0000,,-你好吗?\N{\rE}- Hello?{\r}
+Dialogue: 0,0:47:21.01,0:47:22.46,Default,,0000,0000,0000,,-靠!\N{\rE}- Fuck!{\r}
+Dialogue: 0,0:47:25.84,0:47:27.18,Default,,0000,0000,0000,,奶个熊……\N{\rE}Well shit...{\r}
+Dialogue: 0,0:47:44.27,0:47:46.58,Default,,0000,0000,0000,,-你在找什么，你的班卓琴吗?\N{\rE}- What are you looking for, your banjo?{\r}
+Dialogue: 0,0:47:50.90,0:47:53.18,Default,,0000,0000,0000,,- 上帝,伙计 -靠!\N{\rE}- Jesus, man--fuck!{\r}
+Dialogue: 0,0:47:53.21,0:47:56.14,Default,,0000,0000,0000,,你的脸!\N{\rE}Your face!{\r}
+Dialogue: 0,0:47:56.18,0:47:57.94,Default,,0000,0000,0000,,我太逊了\N{\rE}Oh, I did pee myself a little.{\r}
+Dialogue: 0,0:47:57.97,0:48:01.94,Default,,0000,0000,0000,,-现在我们可以走了\N{\rE}- Now we can go.{\r}
+Dialogue: 0,0:48:01.98,0:48:03.12,Default,,0000,0000,0000,,其他人呢?\N{\rE}Where are the others?{\r}
+Dialogue: 0,0:48:03.15,0:48:04.95,Default,,0000,0000,0000,,-迈克尔?迈克尔!\N{\rE}- Michael? Michael!{\r}
+Dialogue: 0,0:48:06.95,0:48:10.16,Default,,0000,0000,0000,,-那没脑子的东西去哪了?\N{\rE}- Where has that no good shit for brains gone to?{\r}
+Dialogue: 0,0:48:10.88,0:48:12.89,Default,,0000,0000,0000,,这绝对是我和他最后一次合作了\N{\rE}This is definitely the last gig I'm working with him.{\r}
+Dialogue: 0,0:48:14.44,0:48:15.96,Default,,0000,0000,0000,,-我是YouTuber，让我离开这里!\N{\rE}- I'm a YouTuber, get me out of here!{\r}
+Dialogue: 0,0:48:15.99,0:48:17.99,Default,,0000,0000,0000,,-啊，没什么!\N{\rE}- Ugh, it was nothing!{\r}
+Dialogue: 0,0:48:18.03,0:48:20.10,Default,,0000,0000,0000,,我只是想看看录影机上有什么…\N{\rE}I just wanted to see what was on that vide...{\r}
+Dialogue: 0,0:48:23.65,0:48:25.48,Default,,0000,0000,0000,,等等，等等，等等，等等……\N{\rE}Wait, wait, wait, wait, wait...{\r}
+Dialogue: 0,0:48:27.62,0:48:29.00,Default,,0000,0000,0000,,你嫉妒了\N{\rE}You're jealous.{\r}
+Dialogue: 0,0:48:29.04,0:48:31.66,Default,,0000,0000,0000,,-我没有嫉妒-你嫉妒\N{\rE}- I'm not jealous. - You're jealous.{\r}
+Dialogue: 0,0:48:31.70,0:48:34.08,Default,,0000,0000,0000,,它是可爱的\N{\rE}it's cute.{\r}
+Dialogue: 0,0:48:34.11,0:48:36.12,Default,,0000,0000,0000,,-嫉妒是弱智的表现\N{\rE}- Jealousy is the sign of a weak mind.{\r}
+Dialogue: 0,0:48:38.70,0:48:40.29,Default,,0000,0000,0000,,-那么，女人的笑话\N{\rE}- So, bimbo jokes.{\r}
+Dialogue: 0,0:48:40.33,0:48:42.92,Default,,0000,0000,0000,,等待,宝贝…\N{\rE}Wait, baby...{\r}
+Dialogue: 0,0:48:51.30,0:48:52.93,Default,,0000,0000,0000,,莱恩……\N{\rE}Laine...{\r}
+Dialogue: 0,0:48:55.03,0:48:56.96,Default,,0000,0000,0000,,-不!\N{\rE}- No!{\r}
+Dialogue: 0,0:49:17.12,0:49:19.33,Default,,0000,0000,0000,,-也许有什么东西抓住了他?\N{\rE}- Maybe something got him?{\r}
+Dialogue: 0,0:49:20.23,0:49:22.71,Default,,0000,0000,0000,,像个大动物\N{\rE}Like a big animal.{\r}
+Dialogue: 0,0:49:22.75,0:49:24.61,Default,,0000,0000,0000,,-这附近没有大型动物\N{\rE}- There are no big animals 'round here.{\r}
+Dialogue: 0,0:49:24.65,0:49:26.48,Default,,0000,0000,0000,,-拜托，这是路易斯安那州!\N{\rE}- Come on, this is Louisiana!{\r}
+Dialogue: 0,0:49:26.51,0:49:28.55,Default,,0000,0000,0000,,有像…\N{\rE}There's like...{\r}
+Dialogue: 0,0:49:28.58,0:49:30.89,Default,,0000,0000,0000,,鳄鱼、蛇和\N{\rE}gators, snakes and{\r}
+Dialogue: 0,0:49:30.93,0:49:33.41,Default,,0000,0000,0000,,到处都是黑熊\N{\rE}black fucking bears roaming all around.{\r}
+Dialogue: 0,0:49:33.45,0:49:34.83,Default,,0000,0000,0000,,-他们不会来的\N{\rE}- They wouldn't come here.{\r}
+Dialogue: 0,0:49:36.14,0:49:37.38,Default,,0000,0000,0000,,-莱恩!\N{\rE}- Laine!{\r}
+Dialogue: 0,0:49:37.42,0:49:38.63,Default,,0000,0000,0000,,莱恩!\N{\rE}Laine!{\r}
+Dialogue: 0,0:49:38.66,0:49:40.97,Default,,0000,0000,0000,,-莱恩!-嘿,男人!\N{\rE}- Laine! - Hey man!{\r}
+Dialogue: 0,0:49:41.01,0:49:42.98,Default,,0000,0000,0000,,嘿，嘿，伙计，放轻松!\N{\rE}Hey--hey, man, take it easy!{\r}
+Dialogue: 0,0:49:43.01,0:49:44.15,Default,,0000,0000,0000,,这是怎么呢你的女朋友在哪里?\N{\rE}What's going on? Where's your girlfriend?{\r}
+Dialogue: 0,0:49:45.36,0:49:47.77,Default,,0000,0000,0000,,-有些……\N{\rE}- Some...{\r}
+Dialogue: 0,0:49:47.81,0:49:50.05,Default,,0000,0000,0000,,大的东西了……\N{\rE}Something big took...{\r}
+Dialogue: 0,0:49:52.85,0:49:54.26,Default,,0000,0000,0000,,-我告诉过你，该死的黑熊!\N{\rE}- I told you, black fucking bear!{\r}
+Dialogue: 0,0:49:54.30,0:49:55.68,Default,,0000,0000,0000,,熊不会飞\N{\rE}- Bears don't fly.{\r}
+Dialogue: 0,0:49:55.71,0:49:57.16,Default,,0000,0000,0000,,冷静点，伙计\N{\rE}Now calm down, man.{\r}
+Dialogue: 0,0:49:57.20,0:49:58.65,Default,,0000,0000,0000,,发生了什么事?\N{\rE}What happened?{\r}
+Dialogue: 0,0:49:58.68,0:50:01.86,Default,,0000,0000,0000,,-我们得走了我们得走了，报警\N{\rE}- We have to go. We have to go, call the police.{\r}
+Dialogue: 0,0:50:01.89,0:50:03.24,Default,,0000,0000,0000,,-什么?\N{\rE}- What?{\r}
+Dialogue: 0,0:50:03.27,0:50:04.72,Default,,0000,0000,0000,,-快他妈的叫警察!\N{\rE}- Call the fucking police!{\r}
+Dialogue: 0,0:50:17.08,0:50:18.94,Default,,0000,0000,0000,,-哦,他妈的!\N{\rE}- Oh, fuck!{\r}
+Dialogue: 0,0:50:22.84,0:50:24.26,Default,,0000,0000,0000,,这是迈克尔,哦!\N{\rE}It's Michael--oh!{\r}
+Dialogue: 0,0:50:25.67,0:50:27.30,Default,,0000,0000,0000,,让他的东西\N{\rE}Something got him.{\r}
+Dialogue: 0,0:50:30.16,0:50:32.54,Default,,0000,0000,0000,,-它是新鲜的真的很新鲜\N{\rE}- It's fresh. Really fresh.{\r}
+Dialogue: 0,0:50:32.58,0:50:34.27,Default,,0000,0000,0000,,如果他被什么东西抓走了，肯定还在外面\N{\rE}If something got him, it's still out here.{\r}
+Dialogue: 0,0:50:34.30,0:50:35.82,Default,,0000,0000,0000,,-在里面快!\N{\rE}- Inside. Quick!{\r}
+Dialogue: 0,0:51:24.80,0:51:25.77,Default,,0000,0000,0000,,-莱恩!\N{\rE}- Laine!{\r}
+Dialogue: 0,0:51:29.81,0:51:31.15,Default,,0000,0000,0000,,-哦，小心\N{\rE}- Oh, be careful.{\r}
+Dialogue: 0,0:51:31.19,0:51:32.60,Default,,0000,0000,0000,,这是座老房子，你不知道里面有什么\N{\rE}It's an old house, you dunno what's in here.{\r}
+Dialogue: 0,0:51:36.19,0:51:38.19,Default,,0000,0000,0000,,-打开!-上帝该死!\N{\rE}- Open up! - God damnit!{\r}
+Dialogue: 0,0:51:41.58,0:51:42.68,Default,,0000,0000,0000,,-打开!-上帝该死\N{\rE}- Open up! - God damnit.{\r}
+Dialogue: 0,0:51:46.86,0:51:48.38,Default,,0000,0000,0000,,-现在都是你的了头里\N{\rE}- They're all yours now. -Come on.{\r}
+Dialogue: 0,0:51:49.93,0:51:51.45,Default,,0000,0000,0000,,-加油!他妈的闭上!\N{\rE}- Come on! Fucking shut!{\r}
+Dialogue: 0,0:51:53.76,0:51:55.76,Default,,0000,0000,0000,,-来吧，你们这些混蛋!-打开!\N{\rE}- Come on, you assholes! - Open up!{\r}
+Dialogue: 0,0:51:55.80,0:51:57.07,Default,,0000,0000,0000,,-该死的!\N{\rE}- God damn it!{\r}
+Dialogue: 0,0:51:57.11,0:51:58.01,Default,,0000,0000,0000,,-搞什么鬼?\N{\rE}- What the fuck?{\r}
+Dialogue: 0,0:51:59.32,0:52:00.56,Default,,0000,0000,0000,,来吧!\N{\rE}Come on!{\r}
+Dialogue: 0,0:52:02.42,0:52:04.29,Default,,0000,0000,0000,,他妈的闭上!\N{\rE}Fucking shut!{\r}
+Dialogue: 0,0:52:07.12,0:52:09.71,Default,,0000,0000,0000,,-这就是你的逃生室吗?\N{\rE}- So this is your escape room, huh?{\r}
+Dialogue: 0,0:52:09.74,0:52:11.23,Default,,0000,0000,0000,,你这是在玩什么游戏吗?\N{\rE}Is this some kind of game you're playing here?{\r}
+Dialogue: 0,0:52:11.26,0:52:13.71,Default,,0000,0000,0000,,因为你可以停止表演，打开门\N{\rE}'Cause you can stop the show and open the door.{\r}
+Dialogue: 0,0:52:13.75,0:52:16.51,Default,,0000,0000,0000,,我们都很害怕你的乡巴佬把戏\N{\rE}We're all very scared of your hillbilly tricks.{\r}
+Dialogue: 0,0:52:17.16,0:52:18.82,Default,,0000,0000,0000,,-闭上你的臭嘴\N{\rE}- Shut your fuckin' mouth.{\r}
+Dialogue: 0,0:52:20.44,0:52:22.31,Default,,0000,0000,0000,,打开!\N{\rE}Open up!{\r}
+Dialogue: 0,0:52:23.76,0:52:26.17,Default,,0000,0000,0000,,这不是我想要的\N{\rE}I didn't sign up for that.{\r}
+Dialogue: 0,0:52:26.21,0:52:28.97,Default,,0000,0000,0000,,迈克尔死了，你们都看到了\N{\rE}Michael's dead and you all saw it.{\r}
+Dialogue: 0,0:52:29.00,0:52:30.97,Default,,0000,0000,0000,,快他妈的把门打开\N{\rE}Now open that fucking door.{\r}
+Dialogue: 0,0:52:31.00,0:52:32.87,Default,,0000,0000,0000,,-你对莱恩做了什么?\N{\rE}- What did you do with Laine?{\r}
+Dialogue: 0,0:52:34.53,0:52:35.70,Default,,0000,0000,0000,,她在哪里!\N{\rE}Where is she!{\r}
+Dialogue: 0,0:52:35.73,0:52:37.94,Default,,0000,0000,0000,,冷静下来\N{\rE}Calm down.{\r}
+Dialogue: 0,0:52:38.50,0:52:40.84,Default,,0000,0000,0000,,我不知道，好吗?\N{\rE}I don't know, all right?{\r}
+Dialogue: 0,0:52:40.88,0:52:42.98,Default,,0000,0000,0000,,我根本就不应该出现在这里!\N{\rE}I wasn't even supposed to be here!{\r}
+Dialogue: 0,0:52:43.02,0:52:46.19,Default,,0000,0000,0000,,雇我来就是为了吓吓你\N{\rE}All I was hired to do was scare ya up a bit.{\r}
+Dialogue: 0,0:52:46.23,0:52:47.81,Default,,0000,0000,0000,,这是所有\N{\rE}And that's all.{\r}
+Dialogue: 0,0:52:47.85,0:52:49.61,Default,,0000,0000,0000,,-雇佣吗?\N{\rE}- Hired?{\r}
+Dialogue: 0,0:52:49.64,0:52:50.65,Default,,0000,0000,0000,,受雇于谁?\N{\rE}Hired by who?{\r}
+Dialogue: 0,0:52:50.68,0:52:51.92,Default,,0000,0000,0000,,-吉塞尔…\N{\rE}- Giselle...{\r}
+Dialogue: 0,0:52:52.89,0:52:54.44,Default,,0000,0000,0000,,马尼拉\N{\rE}Manilla.{\r}
+Dialogue: 0,0:52:54.48,0:52:56.34,Default,,0000,0000,0000,,她说有个惊喜在等着你\N{\rE}She said there's a surprise waiting here for you.{\r}
+Dialogue: 0,0:52:56.38,0:52:58.52,Default,,0000,0000,0000,,-一个惊喜吗?\N{\rE}- A surprise?{\r}
+Dialogue: 0,0:52:58.55,0:53:00.21,Default,,0000,0000,0000,,-我给你个他妈的惊喜\N{\rE}- I'll show you a fucking surprise.{\r}
+Dialogue: 0,0:53:00.24,0:53:02.42,Default,,0000,0000,0000,,你现在告诉我莱恩在哪，否则\N{\rE}You tell me where Laine is right now or{\r}
+Dialogue: 0,0:53:02.45,0:53:03.87,Default,,0000,0000,0000,,我会把这东西插进你屁股里，\N{\rE}I'll stick this thing so far up your ass,{\r}
+Dialogue: 0,0:53:03.90,0:53:05.25,Default,,0000,0000,0000,,你会尝到该死的滋味\N{\rE}you'll taste the fuckin' metal.{\r}
+Dialogue: 0,0:53:05.28,0:53:07.66,Default,,0000,0000,0000,,-是啊，乡巴佬，该说话了\N{\rE}- Yeah, hillbilly, it's time to start talking.{\r}
+Dialogue: 0,0:53:07.70,0:53:08.73,Default,,0000,0000,0000,,-你们都他妈的往后退一步!\N{\rE}- All of you take a step fuckin' back!{\r}
+Dialogue: 0,0:53:08.77,0:53:10.08,Default,,0000,0000,0000,,-哇，哇，哇!\N{\rE}- Woah, woah, woah!{\r}
+Dialogue: 0,0:53:10.11,0:53:12.08,Default,,0000,0000,0000,,-不然我就打爆你的头!\N{\rE}- Or I'll blow your fuckin' brains out!{\r}
+Dialogue: 0,0:53:33.52,0:53:35.86,Default,,0000,0000,0000,,-我的耳朵在嗡嗡叫!\N{\rE}- My ears are fucking ringing!{\r}
+Dialogue: 0,0:53:35.90,0:53:38.18,Default,,0000,0000,0000,,-我警告过你!退一步!\N{\rE}- I warned you! Step back!{\r}
+Dialogue: 0,0:53:38.21,0:53:40.25,Default,,0000,0000,0000,,-天啊，斯图，你没必要开枪的!\N{\rE}- Jesus, Stu, you didn't have to fire that thing!{\r}
+Dialogue: 0,0:53:40.28,0:53:43.18,Default,,0000,0000,0000,,-下次我再这么做，你就什么都听不到了\N{\rE}- Next time I do, you won't hear anything anymore.{\r}
+Dialogue: 0,0:53:43.22,0:53:47.05,Default,,0000,0000,0000,,-好吧，我们来解决这个问题\N{\rE}- Okay, let's figure this out.{\r}
+Dialogue: 0,0:53:48.74,0:53:50.26,Default,,0000,0000,0000,,这是个逃生室，对吧?\N{\rE}It's an escape room, right?{\r}
+Dialogue: 0,0:53:50.29,0:53:52.43,Default,,0000,0000,0000,,-这他妈不是逃跑的地方\N{\rE}- It's not a fucking escape room.{\r}
+Dialogue: 0,0:53:53.88,0:53:55.33,Default,,0000,0000,0000,,这是一个陷阱\N{\rE}It's a trap.{\r}
+Dialogue: 0,0:53:55.37,0:53:56.95,Default,,0000,0000,0000,,-谁是猎人?\N{\rE}- And who's the trapper?{\r}
+Dialogue: 0,0:53:58.20,0:54:00.47,Default,,0000,0000,0000,,-爬虫\N{\rE}- The Creeper.{\r}
+Dialogue: 0,0:54:00.51,0:54:04.51,Default,,0000,0000,0000,,爬行者是个童话，孩子\N{\rE}The Creeper's a fairytale, son.{\r}
+Dialogue: 0,0:54:04.55,0:54:07.17,Default,,0000,0000,0000,,-我看到了\N{\rE}- I saw it.{\r}
+Dialogue: 0,0:54:07.20,0:54:09.10,Default,,0000,0000,0000,,-你们都他妈疯了\N{\rE}- You guys are fucking nuts.{\r}
+Dialogue: 0,0:54:10.76,0:54:13.21,Default,,0000,0000,0000,,-它抓走了莱恩，我会找到她的\N{\rE}- It's got Laine and I'm gonna find her.{\r}
+Dialogue: 0,0:54:13.25,0:54:15.70,Default,,0000,0000,0000,,-我们原地不动-什么?\N{\rE}- We're staying put. - What?{\r}
+Dialogue: 0,0:54:15.73,0:54:18.25,Default,,0000,0000,0000,,别告诉我，这打乱了你繁忙的日程\N{\rE}Oh, don't tell me, this interrupts your hectic schedule{\r}
+Dialogue: 0,0:54:18.28,0:54:21.87,Default,,0000,0000,0000,,乡下乡巴佬乱伦和断断续续的爱马\N{\rE}of country hick incest and intermittent horse loving.{\r}
+Dialogue: 0,0:54:21.91,0:54:23.29,Default,,0000,0000,0000,,-去你的，好莱坞\N{\rE}- Fuck you, Hollywood.{\r}
+Dialogue: 0,0:54:29.74,0:54:31.57,Default,,0000,0000,0000,,我们得开始团队合作了\N{\rE}We've gotta start working as a team.{\r}
+Dialogue: 0,0:54:31.61,0:54:33.78,Default,,0000,0000,0000,,虽然我知道这对你来说很困难，\N{\rE}So as difficult as I know it is for you,{\r}
+Dialogue: 0,0:54:33.82,0:54:36.10,Default,,0000,0000,0000,,我要你别再像个混蛋一样!\N{\rE}I need you to stop being a fuckin' asshole!{\r}
+Dialogue: 0,0:54:37.13,0:54:39.06,Default,,0000,0000,0000,,你被我们困住了\N{\rE}You're stuck with us now.{\r}
+Dialogue: 0,0:54:39.10,0:54:40.44,Default,,0000,0000,0000,,把它下来\N{\rE}Put it down.{\r}
+Dialogue: 0,0:54:40.48,0:54:42.03,Default,,0000,0000,0000,,把枪放下\N{\rE}Put the gun down.{\r}
+Dialogue: 0,0:54:42.07,0:54:43.79,Default,,0000,0000,0000,,把枪放下\N{\rE}Put the gun down.{\r}
+Dialogue: 0,0:54:44.48,0:54:48.14,Default,,0000,0000,0000,,在我找到莱恩之前谁都不能走\N{\rE}Nobody's going anywhere until I find Laine.{\r}
+Dialogue: 0,0:54:53.42,0:54:54.63,Default,,0000,0000,0000,,-它的到来\N{\rE}- It's coming.{\r}
+Dialogue: 0,0:55:03.19,0:55:05.30,Default,,0000,0000,0000,,楼上,现在!\N{\rE}- Upstairs, now!{\r}
+Dialogue: 0,0:55:15.00,0:55:16.31,Default,,0000,0000,0000,,-去阁楼!\N{\rE}- Go to the attic!{\r}
+Dialogue: 0,0:55:29.39,0:55:31.88,Default,,0000,0000,0000,,-我们在外面的时候，我看到这里有光\N{\rE}- When we were outside, I saw a light in here.{\r}
+Dialogue: 0,0:55:31.91,0:55:33.46,Default,,0000,0000,0000,,我去找个开关\N{\rE}I'll find a switch.{\r}
+Dialogue: 0,0:55:37.47,0:55:39.26,Default,,0000,0000,0000,,屋顶在漏水\N{\rE}The roof is leaking.{\r}
+Dialogue: 0,0:55:39.30,0:55:40.33,Default,,0000,0000,0000,,-但是没有下雨\N{\rE}- But it's not raining.{\r}
+Dialogue: 0,0:55:46.65,0:55:49.17,Default,,0000,0000,0000,,-你一定是在逗我!\N{\rE}- Oh, you gotta be shitting me!{\r}
+Dialogue: 0,0:55:49.20,0:55:50.96,Default,,0000,0000,0000,,那是谁啊?\N{\rE}Who the hell is that?{\r}
+Dialogue: 0,0:55:51.00,0:55:52.34,Default,,0000,0000,0000,,-这是山姆……\N{\rE}- That's Sam...{\r}
+Dialogue: 0,0:56:42.91,0:56:44.60,Default,,0000,0000,0000,,-那是什么鬼东西!\N{\rE}- Oh, what the hell is that?!{\r}
+Dialogue: 0,0:56:53.78,0:56:55.48,Default,,0000,0000,0000,,-你是真实的\N{\rE}- You're real.{\r}
+Dialogue: 0,0:57:03.62,0:57:05.11,Default,,0000,0000,0000,,-她在哪里!\N{\rE}- Where is she!{\r}
+Dialogue: 0,0:57:05.14,0:57:07.07,Default,,0000,0000,0000,,她在哪里!\N{\rE}Where is she!{\r}
+Dialogue: 0,0:57:08.66,0:57:10.87,Default,,0000,0000,0000,,她在哪里!\N{\rE}Where is she!{\r}
+Dialogue: 0,0:57:10.91,0:57:12.22,Default,,0000,0000,0000,,离开我!\N{\rE}Get off me!{\r}
+Dialogue: 0,0:57:12.25,0:57:13.70,Default,,0000,0000,0000,,跟我聊天!\N{\rE}Talk to me!{\r}
+Dialogue: 0,0:57:14.87,0:57:16.05,Default,,0000,0000,0000,,离开我!\N{\rE}Get off me!{\r}
+Dialogue: 0,0:57:16.08,0:57:17.60,Default,,0000,0000,0000,,离开我!\N{\rE}Get off me!{\r}
+Dialogue: 0,0:57:55.16,0:57:56.64,Default,,0000,0000,0000,,-帮助!\N{\rE}- Help!{\r}
+Dialogue: 0,0:58:49.73,0:58:50.87,Default,,0000,0000,0000,,追逐!\N{\rE}Chase!{\r}
+Dialogue: 0,0:58:50.90,0:58:52.52,Default,,0000,0000,0000,,救命!\N{\rE}Help!{\r}
+Dialogue: 0,0:58:52.56,0:58:53.73,Default,,0000,0000,0000,,救命!\N{\rE}Help!{\r}
+Dialogue: 0,0:58:56.29,0:58:57.49,Default,,0000,0000,0000,,-她去哪了?\N{\rE}- Where the hell did she go?{\r}
+Dialogue: 0,0:58:57.53,0:58:58.98,Default,,0000,0000,0000,,-她一定在这附近\N{\rE}- She's gotta be here somewhere.{\r}
+Dialogue: 0,0:58:59.01,0:59:00.74,Default,,0000,0000,0000,,-走吧，嘉莉!\N{\rE}- Come on, Carrie!{\r}
+Dialogue: 0,0:59:02.74,0:59:03.85,Default,,0000,0000,0000,,凯莉!\N{\rE}Carrie!{\r}
+Dialogue: 0,1:00:53.54,1:00:54.65,Default,,0000,0000,0000,,-操\N{\rE}- Fuck.{\r}
+Dialogue: 0,1:01:27.99,1:01:29.37,Default,,0000,0000,0000,,-凯莉!嘿,嘿\N{\rE}- Carrie! Hey, hey.{\r}
+Dialogue: 0,1:01:30.51,1:01:32.30,Default,,0000,0000,0000,,-它来了-它来了!\N{\rE}- It's coming--it's coming!{\r}
+Dialogue: 0,1:01:32.34,1:01:34.31,Default,,0000,0000,0000,,莱恩-莱恩在哪儿在哪儿?\N{\rE}Where's Laine--where's Laine?{\r}
+Dialogue: 0,1:01:34.34,1:01:36.00,Default,,0000,0000,0000,,-我不知道-她在哪里?\N{\rE}- I don't know. - Where is she?{\r}
+Dialogue: 0,1:01:36.03,1:01:37.55,Default,,0000,0000,0000,,莱恩在哪里?-我不知道\N{\rE}Where is Laine? - I don't know.{\r}
+Dialogue: 0,1:01:37.59,1:01:39.00,Default,,0000,0000,0000,,我不知道-她在哪里?\N{\rE}I don't know. - Where is she?{\r}
+Dialogue: 0,1:01:53.08,1:01:54.74,Default,,0000,0000,0000,,-那是什么?\N{\rE}- What's that?{\r}
+Dialogue: 0,1:01:56.88,1:01:58.40,Default,,0000,0000,0000,,-在这里…\N{\rE}- In here...{\r}
+Dialogue: 0,1:01:58.43,1:01:59.95,Default,,0000,0000,0000,,在这里\N{\rE}In here.{\r}
+Dialogue: 0,1:01:59.99,1:02:01.75,Default,,0000,0000,0000,,走吧!来吧\N{\rE}Go! Come on.{\r}
+Dialogue: 0,1:02:14.24,1:02:15.42,Default,,0000,0000,0000,,-没有出路了\N{\rE}- There's no way out.{\r}
+Dialogue: 0,1:02:20.80,1:02:22.39,Default,,0000,0000,0000,,-我们得杀了它\N{\rE}- We're just gonna have to kill it.{\r}
+Dialogue: 0,1:02:23.87,1:02:26.12,Default,,0000,0000,0000,,-是的，用擀面杖\N{\rE}- Yeah, with a rolling pin.{\r}
+Dialogue: 0,1:02:26.15,1:02:28.77,Default,,0000,0000,0000,,-行不通它是不朽的，相信我\N{\rE}-It won't work. It's immortal, trust me.{\r}
+Dialogue: 0,1:02:29.46,1:02:31.02,Default,,0000,0000,0000,,我们唯一的希望就是它对我们失去兴趣，\N{\rE}Our only hope is it loses interest in us,{\r}
+Dialogue: 0,1:02:31.05,1:02:33.16,Default,,0000,0000,0000,,或者我们等着捕猎周期结束\N{\rE}or we wait out the hunting cycle.{\r}
+Dialogue: 0,1:02:34.44,1:02:36.09,Default,,0000,0000,0000,,-捕猎周期有多长?\N{\rE}- And how long is the hunting cycle?{\r}
+Dialogue: 0,1:02:38.20,1:02:39.47,Default,,0000,0000,0000,,- 23天\N{\rE}- 23 days.{\r}
+Dialogue: 0,1:02:40.72,1:02:42.06,Default,,0000,0000,0000,,-我们受骗的\N{\rE}- We're fucked.{\r}
+Dialogue: 0,1:02:43.89,1:02:45.27,Default,,0000,0000,0000,,我们是失败的\N{\rE}We are fucked.{\r}
+Dialogue: 0,1:02:53.11,1:02:55.28,Default,,0000,0000,0000,,-我真的有一种déjà似曾相识的感觉\N{\rE}- I'm getting a real sense of déjà vu.{\r}
+Dialogue: 0,1:03:03.95,1:03:05.29,Default,,0000,0000,0000,,-莱恩!\N{\rE}- Laine!{\r}
+Dialogue: 0,1:03:06.40,1:03:07.81,Default,,0000,0000,0000,,莱恩!\N{\rE}Laine!{\r}
+Dialogue: 0,1:03:07.85,1:03:09.26,Default,,0000,0000,0000,,-莱恩，是我!\N{\rE}- Laine, it's me!{\r}
+Dialogue: 0,1:03:09.30,1:03:10.68,Default,,0000,0000,0000,,是我，是我，是我\N{\rE}It's me, it's me, it's me.{\r}
+Dialogue: 0,1:03:10.71,1:03:13.30,Default,,0000,0000,0000,,莱恩,请,谢谢!是我，宝贝，是我\N{\rE}Laine, please, please! It's me, baby, it's me.{\r}
+Dialogue: 0,1:03:13.34,1:03:14.92,Default,,0000,0000,0000,,宝贝,发生了什么?-我们得离开这里!\N{\rE}What happened, baby? - We have to get out of here!{\r}
+Dialogue: 0,1:03:14.96,1:03:16.03,Default,,0000,0000,0000,,-你怎么了?\N{\rE}- What--what happened to you?{\r}
+Dialogue: 0,1:03:16.06,1:03:17.00,Default,,0000,0000,0000,,-他会抓到你们的!\N{\rE}- He'll get you all!{\r}
+Dialogue: 0,1:03:17.03,1:03:18.34,Default,,0000,0000,0000,,所有靠近我的人\N{\rE}Anyone who's near me.{\r}
+Dialogue: 0,1:03:18.38,1:03:19.93,Default,,0000,0000,0000,,-宝贝，你在流血-它想要的是我\N{\rE}- Baby, you're bleeding. - It's me it wants.{\r}
+Dialogue: 0,1:03:21.00,1:03:22.55,Default,,0000,0000,0000,,-唯一的出路是上楼\N{\rE}- The only way out is upstairs.{\r}
+Dialogue: 0,1:03:22.59,1:03:24.00,Default,,0000,0000,0000,,我们走吧\N{\rE}Let's go.{\r}
+Dialogue: 0,1:03:24.04,1:03:25.94,Default,,0000,0000,0000,,我们走吧!\N{\rE}Let's go!{\r}
+Dialogue: 0,1:03:25.97,1:03:27.14,Default,,0000,0000,0000,,-大家团结起来\N{\rE}- Everybody stick together.{\r}
+Dialogue: 0,1:03:37.71,1:03:40.64,Default,,0000,0000,0000,,-我抓住你了，我抓住你了\N{\rE}- I got you, I got you.{\r}
+Dialogue: 0,1:03:44.64,1:03:46.65,Default,,0000,0000,0000,,-哦，电话!-等等!\N{\rE}- Oh, the phone! - Wait!{\r}
+Dialogue: 0,1:03:48.65,1:03:50.48,Default,,0000,0000,0000,,哦,他妈的!哦,我的腿!\N{\rE}Oh, fuck! Oh, my leg!{\r}
+Dialogue: 0,1:03:50.51,1:03:52.93,Default,,0000,0000,0000,,哦,哦,他妈的!No-ho-ho !\N{\rE}Oh--oh, fuck! No-ho-ho!{\r}
+Dialogue: 0,1:03:52.96,1:03:54.90,Default,,0000,0000,0000,,哎呀,我的腿!\N{\rE}Agh, my leg!{\r}
+Dialogue: 0,1:03:54.93,1:03:56.62,Default,,0000,0000,0000,,哦,他妈的!\N{\rE}Oh, fuck!{\r}
+Dialogue: 0,1:04:06.56,1:04:08.05,Default,,0000,0000,0000,,911有什么紧急情况?\N{\rE}911, what's your emergency?{\r}
+Dialogue: 0,1:04:09.56,1:04:10.84,Default,,0000,0000,0000,,先生，您的位置在哪里?\N{\rE}What's your location, sir?{\r}
+Dialogue: 0,1:04:10.88,1:04:12.40,Default,,0000,0000,0000,,-我们到底在哪里?\N{\rE}- Where the hell are we?{\r}
+Dialogue: 0,1:04:12.43,1:04:13.95,Default,,0000,0000,0000,,-巴纳贝特之家-巴纳贝特之家!\N{\rE}- The Barnabett House. - The Barnabett House!{\r}
+Dialogue: 0,1:04:13.98,1:04:15.16,Default,,0000,0000,0000,,先生?-是的\N{\rE}Sir? - Yeah.{\r}
+Dialogue: 0,1:04:15.19,1:04:16.64,Default,,0000,0000,0000,,先生，有什么问题吗?\N{\rE}What's the problem, sir?{\r}
+Dialogue: 0,1:04:16.68,1:04:18.82,Default,,0000,0000,0000,,---爬虫有东西想要杀死我们\N{\rE}- The--the--the Creeper. Something is trying to kill us.{\r}
+Dialogue: 0,1:04:19.57,1:04:21.37,Default,,0000,0000,0000,,你吸毒了吗?\N{\rE}Have you been taking drugs...{\r}
+Dialogue: 0,1:04:21.40,1:04:22.85,Default,,0000,0000,0000,,先生?\N{\rE}Sir?{\r}
+Dialogue: 0,1:04:22.89,1:04:25.24,Default,,0000,0000,0000,,-我听起来像他妈的瘾君子吗?\N{\rE}- Do I sound like a fuckin' stoner to you?{\r}
+Dialogue: 0,1:04:25.27,1:04:27.51,Default,,0000,0000,0000,,我需要你去巴纳贝特之家找人帮忙\N{\rE}I need you to get some help to the Barnabett House{\r}
+Dialogue: 0,1:04:27.55,1:04:28.96,Default,,0000,0000,0000,,否则我对天发誓\N{\rE}or I swear to God...{\r}
+Dialogue: 0,1:04:31.86,1:04:33.62,Default,,0000,0000,0000,,先生，你没事吧?\N{\rE}Sir, are you okay?{\r}
+Dialogue: 0,1:04:36.14,1:04:38.35,Default,,0000,0000,0000,,-操!-来吧，我们走!\N{\rE}- Fuck, please! - Come on, let's go!{\r}
+Dialogue: 0,1:04:39.18,1:04:40.56,Default,,0000,0000,0000,,我们走吧!来吧!\N{\rE}Let's go! Come on!{\r}
+Dialogue: 0,1:04:42.43,1:04:43.88,Default,,0000,0000,0000,,-抓住他，抓住他!\N{\rE}- Hold him, hold him!{\r}
+Dialogue: 0,1:04:44.57,1:04:46.05,Default,,0000,0000,0000,,-哎呀!\N{\rE}- Agh!{\r}
+Dialogue: 0,1:04:47.67,1:04:48.64,Default,,0000,0000,0000,,-加油!\N{\rE}- Come on!{\r}
+Dialogue: 0,1:04:52.44,1:04:53.99,Default,,0000,0000,0000,,-哦,狗屎!\N{\rE}- Oh, shit!{\r}
+Dialogue: 0,1:04:54.02,1:04:55.54,Default,,0000,0000,0000,,,快,快\N{\rE}- Quick, quick.{\r}
+Dialogue: 0,1:04:55.58,1:04:56.99,Default,,0000,0000,0000,,-宝宝…\N{\rE}- Baby...{\r}
+Dialogue: 0,1:05:02.79,1:05:04.97,Default,,0000,0000,0000,,-等等,什么?你为什么停下来?\N{\rE}- Wait, what? Why are you stopping?{\r}
+Dialogue: 0,1:05:05.00,1:05:07.76,Default,,0000,0000,0000,,-即使我们出去了我们也会成为靶子\N{\rE}- Even if we get outside we're sitting ducks out there.{\r}
+Dialogue: 0,1:05:07.80,1:05:09.11,Default,,0000,0000,0000,,-帮我一下\N{\rE}- Help me over here.{\r}
+Dialogue: 0,1:05:11.14,1:05:13.08,Default,,0000,0000,0000,,-我们是冒险还是躲在这里?\N{\rE}- Do we risk it or hole up in here?{\r}
+Dialogue: 0,1:05:13.11,1:05:14.84,Default,,0000,0000,0000,,-我赞成蹲下\N{\rE}- I vote hunker down.{\r}
+Dialogue: 0,1:05:14.87,1:05:16.91,Default,,0000,0000,0000,,警察来了，这样爬行者就会慢下来\N{\rE}The police are coming, so that will slow the Creeper down.{\r}
+Dialogue: 0,1:05:16.94,1:05:18.53,Default,,0000,0000,0000,,-是吗?\N{\rE}- Are they?{\r}
+Dialogue: 0,1:05:18.56,1:05:22.02,Default,,0000,0000,0000,,-他们不会无视报警电话的，对吧?\N{\rE}- Well, they're not just gonna ignore a 911 call, right?{\r}
+Dialogue: 0,1:05:22.05,1:05:23.98,Default,,0000,0000,0000,,-哦，我可爱的夏天的孩子\N{\rE}- Oh, my sweet summer child.{\r}
+Dialogue: 0,1:05:26.47,1:05:28.26,Default,,0000,0000,0000,,-哦，操，我他妈的需要个医生!\N{\rE}- Oh fuck, I need a fucking doctor!{\r}
+Dialogue: 0,1:05:29.13,1:05:31.03,Default,,0000,0000,0000,,-我们就像蜘蛛网里的苍蝇\N{\rE}- We're like flies in a spider's web.{\r}
+Dialogue: 0,1:05:31.06,1:05:32.34,Default,,0000,0000,0000,,它在发号施令\N{\rE}It's calling the shots.{\r}
+Dialogue: 0,1:05:32.37,1:05:34.48,Default,,0000,0000,0000,,结束这一切的唯一方法就是杀了它\N{\rE}The only way we end this is to kill it.{\r}
+Dialogue: 0,1:05:34.51,1:05:37.10,Default,,0000,0000,0000,,-你男朋友说不行，所以…\N{\rE}- Well, your boyfriend said we can't, so...{\r}
+Dialogue: 0,1:05:37.14,1:05:38.93,Default,,0000,0000,0000,,-我不太确定\N{\rE}- I'm not so sure.{\r}
+Dialogue: 0,1:05:38.96,1:05:40.90,Default,,0000,0000,0000,,我近距离看过\N{\rE}I've seen it up close.{\r}
+Dialogue: 0,1:05:40.93,1:05:42.38,Default,,0000,0000,0000,,-如何呢?\N{\rE}- How then?{\r}
+Dialogue: 0,1:05:42.42,1:05:44.94,Default,,0000,0000,0000,,-它又老又破\N{\rE}- It's old and decrepit.{\r}
+Dialogue: 0,1:05:45.52,1:05:47.80,Default,,0000,0000,0000,,它散发着死亡的气息\N{\rE}It stinks of death.{\r}
+Dialogue: 0,1:05:47.84,1:05:49.32,Default,,0000,0000,0000,,-那它到底在哪里?\N{\rE}- Well, where the hell is it, anyway?{\r}
+Dialogue: 0,1:05:49.35,1:05:50.63,Default,,0000,0000,0000,,-它在耍我们\N{\rE}- It's toying with us.{\r}
+Dialogue: 0,1:05:52.60,1:05:53.88,Default,,0000,0000,0000,,他喜欢玩\N{\rE}He likes to play.{\r}
+Dialogue: 0,1:05:56.67,1:05:57.78,Default,,0000,0000,0000,,-我们得把它困住\N{\rE}- We need to trap it.{\r}
+Dialogue: 0,1:05:59.02,1:06:00.05,Default,,0000,0000,0000,,-什么?\N{\rE}- With what?{\r}
+Dialogue: 0,1:06:02.19,1:06:03.68,Default,,0000,0000,0000,,-凯莉!-跑!\N{\rE}- Carrie! - Run!{\r}
+Dialogue: 0,1:06:05.85,1:06:07.58,Default,,0000,0000,0000,,-操!\N{\rE}- Fuck!{\r}
+Dialogue: 0,1:06:07.61,1:06:09.27,Default,,0000,0000,0000,,-去，抓住他!\N{\rE}- Go, take him!{\r}
+Dialogue: 0,1:06:09.31,1:06:10.48,Default,,0000,0000,0000,,-凯莉!-哎呀!\N{\rE}- Carrie! - Agh!{\r}
+Dialogue: 0,1:06:10.51,1:06:11.58,Default,,0000,0000,0000,,-凯莉!\N{\rE}- Carrie!{\r}
+Dialogue: 0,1:06:12.52,1:06:14.31,Default,,0000,0000,0000,,凯莉!来吧!\N{\rE}Carrie! Come on!{\r}
+Dialogue: 0,1:06:17.04,1:06:18.00,Default,,0000,0000,0000,,-不!\N{\rE}- No!{\r}
+Dialogue: 0,1:06:18.83,1:06:19.97,Default,,0000,0000,0000,,不!\N{\rE}No!{\r}
+Dialogue: 0,1:06:20.45,1:06:21.46,Default,,0000,0000,0000,,不!\N{\rE}No!{\r}
+Dialogue: 0,1:06:23.32,1:06:24.53,Default,,0000,0000,0000,,-快-快!来吧!\N{\rE}- Quick--quick! Come on!{\r}
+Dialogue: 0,1:06:28.05,1:06:29.29,Default,,0000,0000,0000,,-这里，这里，这里!\N{\rE}- Here, here, here!{\r}
+Dialogue: 0,1:06:29.33,1:06:30.36,Default,,0000,0000,0000,,-快!\N{\rE}- Quick!{\r}
+Dialogue: 0,1:06:33.47,1:06:34.81,Default,,0000,0000,0000,,-搞什么鬼\N{\rE}- What the f--{\r}
+Dialogue: 0,1:06:34.85,1:06:37.26,Default,,0000,0000,0000,,-圣母玛利亚\N{\rE}- Holy Mary, mother of God.{\r}
+Dialogue: 0,1:06:38.30,1:06:41.75,Default,,0000,0000,0000,,为我们这些罪人祈祷现在和我们死的时候，阿门\N{\rE}Pray for us sinners now and at the hour of our death, amen.{\r}
+Dialogue: 0,1:06:41.79,1:06:42.99,Default,,0000,0000,0000,,-阿门\N{\rE}- Amen.{\r}
+Dialogue: 0,1:06:43.03,1:06:44.27,Default,,0000,0000,0000,,-这是什么地方?\N{\rE}- What is this place?{\r}
+Dialogue: 0,1:08:02.56,1:08:03.94,Default,,0000,0000,0000,,-你能看见什么?\N{\rE}- What can you see?{\r}
+Dialogue: 0,1:08:06.11,1:08:07.63,Default,,0000,0000,0000,,-耶稣!\N{\rE}- Jesus!{\r}
+Dialogue: 0,1:08:19.09,1:08:20.57,Default,,0000,0000,0000,,-哦,操\N{\rE}- Oh, fuck.{\r}
+Dialogue: 0,1:08:37.25,1:08:38.66,Default,,0000,0000,0000,,-好像没了\N{\rE}- Looks like it's gone.{\r}
+Dialogue: 0,1:08:40.32,1:08:42.46,Default,,0000,0000,0000,,凯莉\N{\rE}It took Carrie.{\r}
+Dialogue: 0,1:09:36.24,1:09:38.38,Default,,0000,0000,0000,,-哦,不不,耶稣!\N{\rE}- Oh no. No, Jesus!{\r}
+Dialogue: 0,1:09:38.41,1:09:40.17,Default,,0000,0000,0000,,哦,他妈的\N{\rE}Oh, fuck.{\r}
+Dialogue: 0,1:09:40.21,1:09:42.73,Default,,0000,0000,0000,,不，主啊，不要这样\N{\rE}No, please, Lord, not like this.{\r}
+Dialogue: 0,1:09:44.35,1:09:46.21,Default,,0000,0000,0000,,-不，不是这样\N{\rE}- No, not like this.{\r}
+Dialogue: 0,1:09:46.25,1:09:47.97,Default,,0000,0000,0000,,-也许这里有东西能帮到我们\N{\rE}- Maybe there's something in here that can help us.{\r}
+Dialogue: 0,1:09:48.01,1:09:50.28,Default,,0000,0000,0000,,也许，呃，信息或者…\N{\rE}Maybe, erm, information or...{\r}
+Dialogue: 0,1:09:50.32,1:09:52.63,Default,,0000,0000,0000,,-不管怎样，我们都逃不掉了\N{\rE}- One way or another, we're done running.{\r}
+Dialogue: 0,1:09:52.67,1:09:54.56,Default,,0000,0000,0000,,-是的,确实\N{\rE}- Yeah, literally.{\r}
+Dialogue: 0,1:09:54.60,1:09:56.46,Default,,0000,0000,0000,,-我不明白这地方怎么\N{\rE}- I don't understand how this place{\r}
+Dialogue: 0,1:09:56.50,1:09:58.19,Default,,0000,0000,0000,,还没烧成平地\N{\rE}isn't burnt to the ground yet.{\r}
+Dialogue: 0,1:10:05.78,1:10:07.51,Default,,0000,0000,0000,,-好吗?-哦,史—\N{\rE}- Please? - Oh, shi--{\r}
+Dialogue: 0,1:10:12.31,1:10:13.69,Default,,0000,0000,0000,,-我愿意用我的左臂换…\N{\rE}- I'd give my left arm for...{\r}
+Dialogue: 0,1:10:13.72,1:10:15.31,Default,,0000,0000,0000,,-小心点，你可能会\N{\rE}- Careful, you might.{\r}
+Dialogue: 0,1:10:15.34,1:10:17.28,Default,,0000,0000,0000,,-是啊，我马上就后悔说了那些话\N{\rE}- Yeah, I instantly regretted saying that.{\r}
+Dialogue: 0,1:10:17.31,1:10:19.56,Default,,0000,0000,0000,,-对不起人是啊，只是紧张\N{\rE}- Sorry man. Yeah, it's just nerves.{\r}
+Dialogue: 0,1:10:26.46,1:10:28.22,Default,,0000,0000,0000,,-那是什么鬼?\N{\rE}- What the hell is that?{\r}
+Dialogue: 0,1:10:29.05,1:10:30.36,Default,,0000,0000,0000,,巫毒娃娃吗?\N{\rE}Voodoo doll?{\r}
+Dialogue: 0,1:10:40.13,1:10:41.65,Default,,0000,0000,0000,,-什么…\N{\rE}- What the...{\r}
+Dialogue: 0,1:10:41.68,1:10:43.34,Default,,0000,0000,0000,,-耶稣的圣子\N{\rE}- Holy son of Jesus.{\r}
+Dialogue: 0,1:11:00.53,1:11:02.29,Default,,0000,0000,0000,,-伙计们，石头\N{\rE}- Guys, the stone.{\r}
+Dialogue: 0,1:11:03.25,1:11:04.67,Default,,0000,0000,0000,,-宝贝,等待……\N{\rE}- Baby, wait...{\r}
+Dialogue: 0,1:11:47.61,1:11:49.65,Default,,0000,0000,0000,,-天啊，他们在喂它\N{\rE}- Oh my God, they're feeding it.{\r}
+Dialogue: 0,1:11:53.37,1:11:56.86,Default,,0000,0000,0000,,-宝贝，你为什么说他在追你?\N{\rE}- Baby, why did you say he was after you?{\r}
+Dialogue: 0,1:11:57.65,1:11:59.28,Default,,0000,0000,0000,,它把你带到哪里去了?\N{\rE}Where did it-- where did it take you?{\r}
+Dialogue: 0,1:11:59.31,1:12:01.04,Default,,0000,0000,0000,,到底发生了什么?-蔡斯，我怀孕了\N{\rE}What really happened? - Chase, I'm pregnant.{\r}
+Dialogue: 0,1:12:02.52,1:12:04.52,Default,,0000,0000,0000,,所以它才来找我\N{\rE}That's why it's after me.{\r}
+Dialogue: 0,1:12:04.56,1:12:05.52,Default,,0000,0000,0000,,-什么?\N{\rE}- What?{\r}
+Dialogue: 0,1:12:06.66,1:12:08.22,Default,,0000,0000,0000,,-它想要我拥有的东西\N{\rE}- It wants what I've got.{\r}
+Dialogue: 0,1:12:11.32,1:12:14.22,Default,,0000,0000,0000,,是的……\N{\rE}And, yes...{\r}
+Dialogue: 0,1:12:14.26,1:12:15.53,Default,,0000,0000,0000,,我愿意嫁给你……\N{\rE}I will marry you...{\r}
+Dialogue: 0,1:12:19.30,1:12:20.71,Default,,0000,0000,0000,,如果我们能活着出去\N{\rE}If we ever get out of here alive.{\r}
+Dialogue: 0,1:12:23.37,1:12:25.34,Default,,0000,0000,0000,,-但他们为什么要喂这东西?\N{\rE}- But why the hell would they be feeding this thing?{\r}
+Dialogue: 0,1:12:29.55,1:12:31.03,Default,,0000,0000,0000,,看看这些垃圾\N{\rE}Look at all this crap.{\r}
+Dialogue: 0,1:12:32.55,1:12:34.17,Default,,0000,0000,0000,,这是什么?\N{\rE}What is this?{\r}
+Dialogue: 0,1:12:34.21,1:12:35.28,Default,,0000,0000,0000,,神社吗?\N{\rE}A shrine?{\r}
+Dialogue: 0,1:12:41.56,1:12:43.22,Default,,0000,0000,0000,,-我以为这些是故事\N{\rE}- I thought these were stories.{\r}
+Dialogue: 0,1:12:43.94,1:12:45.01,Default,,0000,0000,0000,,传说\N{\rE}Legends.{\r}
+Dialogue: 0,1:12:47.25,1:12:48.67,Default,,0000,0000,0000,,但这一切似乎都是真实的\N{\rE}But it all seems real.{\r}
+Dialogue: 0,1:12:48.70,1:12:50.71,Default,,0000,0000,0000,,-还有什么，它有一个狂热的粉丝俱乐部\N{\rE}- And what, it has a cult fan club{\r}
+Dialogue: 0,1:12:50.74,1:12:52.54,Default,,0000,0000,0000,,这能养活它吗?\N{\rE}that helps feed this thing?{\r}
+Dialogue: 0,1:12:52.57,1:12:54.23,Default,,0000,0000,0000,,也许他们想要我们中的一个\N{\rE}Then maybe they want one of us.{\r}
+Dialogue: 0,1:12:54.26,1:12:55.30,Default,,0000,0000,0000,,-什么?\N{\rE}- What?{\r}
+Dialogue: 0,1:13:00.92,1:13:02.58,Default,,0000,0000,0000,,-我们无法抵抗\N{\rE}- We can't fight it.{\r}
+Dialogue: 0,1:13:02.61,1:13:04.20,Default,,0000,0000,0000,,但我们可以打败它，甚至阻止它\N{\rE}But we can beat it, maybe even stop it.{\r}
+Dialogue: 0,1:13:07.27,1:13:08.83,Default,,0000,0000,0000,,我们现在就在它扭曲的网里\N{\rE}We're in its twisted web right now.{\r}
+Dialogue: 0,1:13:11.38,1:13:13.00,Default,,0000,0000,0000,,但是时候扭转局面了\N{\rE}But it's time to turn the tables.{\r}
+Dialogue: 0,1:13:13.04,1:13:14.25,Default,,0000,0000,0000,,我们需要一个计划\N{\rE}We need a plan.{\r}
+Dialogue: 0,1:13:17.25,1:13:18.94,Default,,0000,0000,0000,,-我想我知道我们该怎么做了\N{\rE}- I think I know what we need to do.{\r}
+Dialogue: 0,1:14:20.11,1:14:22.59,Default,,0000,0000,0000,,走，走……\N{\rE}Go, go, go, go...{\r}
+Dialogue: 0,1:15:29.21,1:15:30.83,Default,,0000,0000,0000,,斯图!\N{\rE}Stu!{\r}
+Dialogue: 0,1:15:34.73,1:15:35.70,Default,,0000,0000,0000,,我抓住他了，我抓住他了!\N{\rE}I've got him, I've got him!{\r}
+Dialogue: 0,1:16:26.09,1:16:28.30,Default,,0000,0000,0000,,-来吧，混蛋!\N{\rE}- Come on, asshole!{\r}
+Dialogue: 0,1:18:45.54,1:18:49.96,Default,,0000,0000,0000,,把孩子带走，他的生命力属于你\N{\rE}Take the baby, its life force belongs to you.{\r}
+Dialogue: 0,1:18:50.00,1:18:52.52,Default,,0000,0000,0000,,长生不老，把孩子带走\N{\rE}Live forever, take the baby.{\r}
+Dialogue: 0,1:18:52.55,1:18:55.00,Default,,0000,0000,0000,,它的生命力属于你\N{\rE}Its life force belongs to you.{\r}
+Dialogue: 0,1:18:55.04,1:18:58.38,Default,,0000,0000,0000,,长生不老，把孩子带走\N{\rE}Live forever, take the baby.{\r}
+Dialogue: 0,1:18:58.42,1:19:00.21,Default,,0000,0000,0000,,它的生命力属于你\N{\rE}Its life force belongs to you.{\r}
+Dialogue: 0,1:19:01.63,1:19:04.08,Default,,0000,0000,0000,,-你不能拿走!\N{\rE}- You can't have it!{\r}
+Dialogue: 0,1:19:12.02,1:19:14.37,Default,,0000,0000,0000,,-来吧\N{\rE}- Come on.{\r}
+Dialogue: 0,1:19:26.79,1:19:28.79,Default,,0000,0000,0000,,-你喜欢那些偷窥者吗，贱人?\N{\rE}- How do you like those peepers, bitch?{\r}
+Dialogue: 0,1:19:47.88,1:19:49.02,Default,,0000,0000,0000,,-现在!\N{\rE}- Now!{\r}
+Dialogue: 0,1:20:11.97,1:20:13.08,Default,,0000,0000,0000,,-哦,不\N{\rE}- Oh, no.{\r}
+Dialogue: 0,1:20:27.09,1:20:29.13,Default,,0000,0000,0000,,-下车!\N{\rE}- get off!{\r}
+Dialogue: 0,1:20:29.16,1:20:30.99,Default,,0000,0000,0000,,下车!\N{\rE}Get off!{\r}
+Dialogue: 0,1:20:34.83,1:20:36.93,Default,,0000,0000,0000,,-斯图,不!\N{\rE}- Stu, no!{\r}
+
+
