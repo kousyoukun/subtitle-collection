@@ -1,0 +1,1069 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: The Score 2001
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CHT,標楷體,15,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,0,0,1,1
+Style: ENG,Microsoft YaHei UI,16,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,0,0,1,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:03:43.89,0:03:46.14,ENG,NTP,0,0,0,!Effect,- Wait.  - What?\N{\rCHT}- 等等  - 幹嘛{\r}
+Dialogue: 0,0:03:48.14,0:03:49.26,ENG,NTP,0,0,0,!Effect,This.\N{\rCHT}這個{\r}
+Dialogue: 0,0:03:50.76,0:03:51.81,ENG,NTP,0,0,0,!Effect,Later.\N{\rCHT}待會{\r}
+Dialogue: 0,0:03:53.43,0:03:55.39,ENG,NTP,0,0,0,!Effect,I wanna smoke.\N{\rCHT}我想吸一管{\r}
+Dialogue: 0,0:03:58.11,0:04:00.02,ENG,NTP,0,0,0,!Effect,I wanna smoke.\N{\rCHT}我想吸一管{\r}
+Dialogue: 0,0:04:01.61,0:04:03.69,ENG,NTP,0,0,0,!Effect,Fine. Smoke.\N{\rCHT}好 去吸吧{\r}
+Dialogue: 0,0:04:07.20,0:04:09.12,ENG,NTP,0,0,0,!Effect,Smoke all night.\N{\rCHT}吸整晚吧{\r}
+Dialogue: 0,0:05:14.56,0:05:17.36,ENG,NTP,0,0,0,!Effect,Be still. Do not turn around.\N{\rCHT}別動 別轉過來{\r}
+Dialogue: 0,0:05:17.44,0:05:19.28,ENG,NTP,0,0,0,!Effect,Do not turn around.\N{\rCHT}別轉過來{\r}
+Dialogue: 0,0:05:19.36,0:05:21.28,ENG,NTP,0,0,0,!Effect,You will not be hurt.\N{\rCHT}我不會傷害你{\r}
+Dialogue: 0,0:07:09.53,0:07:11.52,ENG,NTP,0,0,0,!Effect,{\fs22}美國最後一個出口
+Dialogue: 0,0:10:43.54,0:10:45.46,ENG,NTP,0,0,0,!Effect,- Bonjour, Nick.  - Bonjour, madame.\N{\rCHT}- 早 尼克  - 早 夫人{\r}
+Dialogue: 0,0:10:49.25,0:10:52.38,ENG,NTP,0,0,0,!Effect,- Here you are. Have a nice day.  - Have a nice day.\N{\rCHT}- 給 祝您過得愉快  - 您也是{\r}
+Dialogue: 0,0:11:33.97,0:11:35.06,ENG,NTP,0,0,0,!Effect,Albert.\N{\rCHT}艾柏{\r}
+Dialogue: 0,0:11:35.33,0:11:37.56,ENG,NTP,0,0,0,!Effect,- Bonjour, Nick.  - Bonjour.\N{\rCHT}- 尼克 你好嗎  - 好{\r}
+Dialogue: 0,0:11:37.85,0:11:40.15,ENG,NTP,0,0,0,!Effect,Boss, hi.\N{\rCHT}老闆 你好{\r}
+Dialogue: 0,0:11:40.23,0:11:43.15,ENG,NTP,0,0,0,!Effect,- Jean-Claude.  - So, the trip was good?\N{\rCHT}- 尚克勞  - 這一趟還好吧{\r}
+Dialogue: 0,0:11:43.18,0:11:44.63,ENG,NTP,0,0,0,!Effect,Fine.\N{\rCHT}很好{\r}
+Dialogue: 0,0:11:45.03,0:11:46.78,ENG,NTP,0,0,0,!Effect,- So, how are we doing?  - Great.\N{\rCHT}- 生意怎樣  - 很好{\r}
+Dialogue: 0,0:11:46.82,0:11:49.28,ENG,NTP,0,0,0,!Effect,We have many reservations for tonight.\N{\rCHT}今晚有很多訂位{\r}
+Dialogue: 0,0:11:49.32,0:11:51.37,ENG,NTP,0,0,0,!Effect,Good. How many covers did we have last night?\N{\rCHT}昨晚有多少客人{\r}
+Dialogue: 0,0:11:51.45,0:11:53.37,ENG,NTP,0,0,0,!Effect,- Over 150.  - Good.\N{\rCHT}- 一百五十多個  - 很好{\r}
+Dialogue: 0,0:11:53.45,0:11:56.29,ENG,NTP,0,0,0,!Effect,- Bar was steady.  - How was the music?\N{\rCHT}- 酒吧生意穩定  - 音樂呢{\r}
+Dialogue: 0,0:11:56.33,0:11:58.92,ENG,NTP,0,0,0,!Effect,- Great band.  - Good. Good.\N{\rCHT}- 樂隊很棒  - 很好 很好{\r}
+Dialogue: 0,0:12:01.29,0:12:02.62,ENG,NTP,0,0,0,!Effect,Albert.\N{\rCHT}艾柏{\r}
+Dialogue: 0,0:12:03.30,0:12:05.34,ENG,NTP,0,0,0,!Effect,Scotch on the rocks, please, little water.\N{\rCHT}威士卡加冰塊 加點水{\r}
+Dialogue: 0,0:12:05.42,0:12:07.34,ENG,NTP,0,0,0,!Effect,- Yeah, sure.  - Thank you.\N{\rCHT}- 好的  - 謝謝{\r}
+Dialogue: 0,0:12:18.74,0:12:22.36,ENG,NTP,0,0,0,!Effect,Attention, boys, grandpa arrives.\N{\rCHT}注意 孩子們 阿公來了{\r}
+Dialogue: 0,0:12:22.40,0:12:25.99,ENG,NTP,0,0,0,!Effect,- Monsieur Max.  - How are you?\N{\rCHT}- 麥克斯先生  - 你好嗎{\r}
+Dialogue: 0,0:12:26.07,0:12:28.74,ENG,NTP,0,0,0,!Effect,- Where... Where Nicky?  - Just on the top.\N{\rCHT}- 尼克... 尼克呢  - 就在上面{\r}
+Dialogue: 0,0:12:28.77,0:12:29.91,ENG,NTP,0,0,0,!Effect,Max.\N{\rCHT}麥斯{\r}
+Dialogue: 0,0:12:30.49,0:12:33.75,ENG,NTP,0,0,0,!Effect,Voila. Back from Bermuda.\N{\rCHT}我剛從百慕達回來{\r}
+Dialogue: 0,0:12:33.83,0:12:35.29,ENG,NTP,0,0,0,!Effect,Did you have a good trip?\N{\rCHT}你那一趟愉快嗎{\r}
+Dialogue: 0,0:12:35.37,0:12:38.17,ENG,NTP,0,0,0,!Effect,Well, not as interesting as yours, I'm sure.\N{\rCHT}呃 一定沒你這一趟好玩{\r}
+Dialogue: 0,0:12:39.75,0:12:42.84,ENG,NTP,0,0,0,!Effect,My God! Let me get a look at you.\N{\rCHT}天啊 讓我看看你{\r}
+Dialogue: 0,0:12:42.88,0:12:45.42,ENG,NTP,0,0,0,!Effect,You look like shit. What's your secret?\N{\rCHT}你臉色好慘 怎麼了{\r}
+Dialogue: 0,0:12:46.55,0:12:48.51,ENG,NTP,0,0,0,!Effect,Jean-Claude, set up number two for us.\N{\rCHT}尚克勞 請你清出第二桌{\r}
+Dialogue: 0,0:12:48.55,0:12:50.06,ENG,NTP,0,0,0,!Effect,Yeah, sure.\N{\rCHT}好的{\r}
+Dialogue: 0,0:12:50.10,0:12:54.27,ENG,NTP,0,0,0,!Effect,You can go now.\N{\rCHT}你可以走了{\r}
+Dialogue: 0,0:12:55.54,0:12:57.06,ENG,NTP,0,0,0,!Effect,Thank you.\N{\rCHT}謝謝{\r}
+Dialogue: 0,0:12:57.10,0:12:59.56,ENG,NTP,0,0,0,!Effect,Just give us a little room. Thank you.\N{\rCHT}請讓我們單獨呆著 謝謝{\r}
+Dialogue: 0,0:13:03.15,0:13:04.78,ENG,NTP,0,0,0,!Effect,For sure.\N{\rCHT}好的{\r}
+Dialogue: 0,0:13:04.86,0:13:06.78,ENG,NTP,0,0,0,!Effect,There we are.\N{\rCHT}來了{\r}
+Dialogue: 0,0:13:11.83,0:13:13.25,ENG,NTP,0,0,0,!Effect,Bermuda.\N{\rCHT}百慕達{\r}
+Dialogue: 0,0:13:17.08,0:13:18.50,ENG,NTP,0,0,0,!Effect,Oh, God.\N{\rCHT}哦 老天{\r}
+Dialogue: 0,0:13:22.05,0:13:25.76,ENG,NTP,0,0,0,!Effect,- It was pretty tight out there.  - Good. It'll keep you sharp.\N{\rCHT}- 外頭風聲挺緊的  - 很好 可以令你提高警覺{\r}
+Dialogue: 0,0:13:27.76,0:13:30.93,ENG,NTP,0,0,0,!Effect,I got a minor development.\N{\rCHT}出了小狀況{\r}
+Dialogue: 0,0:13:31.02,0:13:33.85,ENG,NTP,0,0,0,!Effect,- We lost the buyer.  - What do you mean, "lost"?\N{\rCHT}- 買主沒了  - 你說"沒了"是什麼意思{\r}
+Dialogue: 0,0:13:33.94,0:13:37.65,ENG,NTP,0,0,0,!Effect,Well, she's in a brass casket six feet underground...\N{\rCHT}呃 她進了棺材 她掛了...{\r}
+Dialogue: 0,0:13:37.73,0:13:39.90,ENG,NTP,0,0,0,!Effect,never to be heard from again.\N{\rCHT}不會再有消息了{\r}
+Dialogue: 0,0:13:40.86,0:13:42.90,ENG,NTP,0,0,0,!Effect,Well, I fronted 20,000 in expenses.\N{\rCHT}我先墊了兩萬花費{\r}
+Dialogue: 0,0:13:42.95,0:13:45.66,ENG,NTP,0,0,0,!Effect,Now I'm due that, plus 250 for my end.\N{\rCHT}現在事情辦妥了 我應得25萬{\r}
+Dialogue: 0,0:13:45.74,0:13:47.74,ENG,NTP,0,0,0,!Effect,You don't think I'm not gonna take care of you?\N{\rCHT}你以為我會坑你的錢嗎{\r}
+Dialogue: 0,0:13:47.78,0:13:49.79,ENG,NTP,0,0,0,!Effect,I'm not gonna cover your expenses and all that?\N{\rCHT}我得包了你的所有開銷嗎{\r}
+Dialogue: 0,0:13:49.87,0:13:53.46,ENG,NTP,0,0,0,!Effect,It's not about covering my expenses. It's the money. Find another buyer.\N{\rCHT}不是包了我的開銷 是錢的問題 你得另找買主{\r}
+Dialogue: 0,0:13:53.54,0:13:55.96,ENG,NTP,0,0,0,!Effect,Of course. But Jesus Christ, shit happens.\N{\rCHT}當然了 但老天 世事難料{\r}
+Dialogue: 0,0:13:56.04,0:13:58.17,ENG,NTP,0,0,0,!Effect,This thing's gonna drag out. You've got to be patient.\N{\rCHT}這會拖一陣子 耐心等吧{\r}
+Dialogue: 0,0:13:58.84,0:14:02.22,ENG,NTP,0,0,0,!Effect,Wait a minute. How about this?\N{\rCHT}等一下 這樣如何{\r}
+Dialogue: 0,0:14:02.30,0:14:05.34,ENG,NTP,0,0,0,!Effect,Four big ones in your hand.\N{\rCHT}我有一票包你賺四百萬塊{\r}
+Dialogue: 0,0:14:05.43,0:14:07.72,ENG,NTP,0,0,0,!Effect,Four million dollars in your mitt.\N{\rCHT}你會到手四百萬{\r}
+Dialogue: 0,0:14:08.60,0:14:11.06,ENG,NTP,0,0,0,!Effect,- Four million?  - More than you ever dreamed of.\N{\rCHT}- 四百萬  - 你作夢都沒想到{\r}
+Dialogue: 0,0:14:11.14,0:14:14.02,ENG,NTP,0,0,0,!Effect,More than we ever, ever did together.\N{\rCHT}比以前我們聯手幹的更多{\r}
+Dialogue: 0,0:14:14.10,0:14:16.27,ENG,NTP,0,0,0,!Effect,Four million. What are you into?\N{\rCHT}四百萬 你到底看上什麼{\r}
+Dialogue: 0,0:14:16.31,0:14:19.57,ENG,NTP,0,0,0,!Effect,Well, I spotted this item which was really exceptional.\N{\rCHT}我看上一樣不得了的寶物{\r}
+Dialogue: 0,0:14:19.65,0:14:23.53,ENG,NTP,0,0,0,!Effect,It was European antiquity, elegant...\N{\rCHT}歐洲來的古董 上品...{\r}
+Dialogue: 0,0:14:23.61,0:14:26.37,ENG,NTP,0,0,0,!Effect,and it was in the hands of this real dumb prick...\N{\rCHT}擁有它的蠢貨...{\r}
+Dialogue: 0,0:14:26.45,0:14:28.04,ENG,NTP,0,0,0,!Effect,that didn't know what he had.\N{\rCHT}根本搞不清狀況{\r}
+Dialogue: 0,0:14:29.08,0:14:31.12,ENG,NTP,0,0,0,!Effect,And unfortunately...\N{\rCHT}只可惜...{\r}
+Dialogue: 0,0:14:31.21,0:14:33.62,ENG,NTP,0,0,0,!Effect,it's become detained in transit a little.\N{\rCHT}它被扣住了{\r}
+Dialogue: 0,0:14:37.17,0:14:39.21,ENG,NTP,0,0,0,!Effect,You don't wanna know where?\N{\rCHT}你不想知道在哪兒嗎{\r}
+Dialogue: 0,0:14:39.30,0:14:41.01,ENG,NTP,0,0,0,!Effect,It depends.\N{\rCHT}這要看情況{\r}
+Dialogue: 0,0:14:41.09,0:14:42.59,ENG,NTP,0,0,0,!Effect,Depends on what?\N{\rCHT}看什麼情況{\r}
+Dialogue: 0,0:14:42.68,0:14:45.68,ENG,NTP,0,0,0,!Effect,- On what you're gonna tell me.  - Okay.\N{\rCHT}- 看你要告訴我什麼  - 好吧{\r}
+Dialogue: 0,0:14:45.76,0:14:49.06,ENG,NTP,0,0,0,!Effect,It's in the Montreal Customshouse.\N{\rCHT}它被鎖在蒙特婁海關大樓{\r}
+Dialogue: 0,0:14:50.12,0:14:51.15,ENG,NTP,0,0,0,!Effect,No Way.\N{\rCHT}不行{\r}
+Dialogue: 0,0:14:51.60,0:14:55.31,ENG,NTP,0,0,0,!Effect,- No way. I'm sorry.  - Oh, yeah. Wait a minute.\N{\rCHT}- 不行 抱歉  - 哦 好 等一下{\r}
+Dialogue: 0,0:14:55.36,0:14:58.36,ENG,NTP,0,0,0,!Effect,I got a guy... I got a guy inside.\N{\rCHT}我有個人... 我有個內線{\r}
+Dialogue: 0,0:14:58.44,0:15:02.86,ENG,NTP,0,0,0,!Effect,He gives you the whole layout, handles security, everything...\N{\rCHT}能提供大樓平面圖 搞定保全系統 所有的...{\r}
+Dialogue: 0,0:15:02.95,0:15:05.63,ENG,NTP,0,0,0,!Effect,You used to tell me, "Steal outside the country,\N{\rCHT}你老是說"到任何地方偷都行{\r}
+Dialogue: 0,0:15:05.63,0:15:07.91,ENG,NTP,0,0,0,!Effect,in the States, Europe.\N{\rCHT}在美國 歐洲都行{\r}
+Dialogue: 0,0:15:08.00,0:15:09.50,ENG,NTP,0,0,0,!Effect,But Montreal, live in Montreal."\N{\rCHT}就是別在自己的家亂來"{\r}
+Dialogue: 0,0:15:09.54,0:15:12.21,ENG,NTP,0,0,0,!Effect,I said a lot of dumb things in my day, didn't I?\N{\rCHT}我說過很多蠢話 是不是{\r}
+Dialogue: 0,0:15:12.29,0:15:13.58,ENG,NTP,0,0,0,!Effect,- But that's...  - Right.\N{\rCHT}- 是 不過...  - 對{\r}
+Dialogue: 0,0:15:14.79,0:15:19.42,ENG,NTP,0,0,0,!Effect,Let's just find another buyer for this. I gotta open the place.\N{\rCHT}先找這一票的買主吧 我得開店了{\r}
+Dialogue: 0,0:15:19.51,0:15:22.30,ENG,NTP,0,0,0,!Effect,Okay, but I'm not finished talking about this.\N{\rCHT}好 不過我還沒說完{\r}
+Dialogue: 0,0:15:22.49,0:15:25.29,ENG,NTP,0,0,0,!Effect,Jean-Claude, Albert, come on.\N{\rCHT}尚克勞 艾柏 來吧{\r}
+Dialogue: 0,0:15:25.33,0:15:28.10,ENG,NTP,0,0,0,!Effect,You're making a large error here.\N{\rCHT}你這是錯失良機{\r}
+Dialogue: 0,0:15:34.48,0:15:36.40,ENG,NTP,0,0,0,!Effect,Not bad.\N{\rCHT}不賴{\r}
+Dialogue: 0,0:15:48.33,0:15:50.08,ENG,NTP,0,0,0,!Effect,- Yeah?  - I just landed.\N{\rCHT}- 誰  - 我剛到{\r}
+Dialogue: 0,0:15:50.17,0:15:52.08,ENG,NTP,0,0,0,!Effect,I got the delivery.\N{\rCHT}東西帶來了{\r}
+Dialogue: 0,0:16:14.11,0:16:15.61,ENG,NTP,0,0,0,!Effect,Got the bag?\N{\rCHT}東西在你身上{\r}
+Dialogue: 0,0:16:15.69,0:16:18.49,ENG,NTP,0,0,0,!Effect,- Yeah. Right here.  - Where's Johnny?\N{\rCHT}- 對 就在這兒  - 強尼呢{\r}
+Dialogue: 0,0:16:18.57,0:16:21.91,ENG,NTP,0,0,0,!Effect,He got it in Istanbul, right through the neck.\N{\rCHT}他在伊斯坦堡被幹掉了{\r}
+Dialogue: 0,0:16:21.95,0:16:24.20,ENG,NTP,0,0,0,!Effect,- Jesus. He was a good kid.  - Yeah.\N{\rCHT}- 老天 他是個好孩子  - 是{\r}
+Dialogue: 0,0:16:24.29,0:16:26.00,ENG,NTP,0,0,0,!Effect,Good and dead.\N{\rCHT}他也翹辮子了{\r}
+Dialogue: 0,0:16:26.08,0:16:28.04,ENG,NTP,0,0,0,!Effect,So you wanna talk, or you wanna see what I got?\N{\rCHT}你想談還是看我有什麼{\r}
+Dialogue: 0,0:16:28.12,0:16:30.58,ENG,NTP,0,0,0,!Effect,How can I be sure you're okay?\N{\rCHT}我怎麼知道你沒問題{\r}
+Dialogue: 0,0:16:31.96,0:16:33.55,ENG,NTP,0,0,0,!Effect,I suppose I could fuck you.\N{\rCHT}你上了我就知道{\r}
+Dialogue: 0,0:16:34.42,0:16:35.84,ENG,NTP,0,0,0,!Effect,That would work.\N{\rCHT}這樣也好{\r}
+Dialogue: 0,0:16:57.11,0:16:59.57,ENG,NTP,0,0,0,!Effect,Hey. You okay?\N{\rCHT}嘿 你還好吧{\r}
+Dialogue: 0,0:17:00.70,0:17:02.20,ENG,NTP,0,0,0,!Effect,Yeah. Great.\N{\rCHT}對 很好{\r}
+Dialogue: 0,0:17:07.25,0:17:10.59,ENG,NTP,0,0,0,!Effect,- How was your trip?  - I don't know.\N{\rCHT}- 這一趟好嗎  - 不曉得{\r}
+Dialogue: 0,0:17:11.46,0:17:13.55,ENG,NTP,0,0,0,!Effect,Cities.\N{\rCHT}都市{\r}
+Dialogue: 0,0:17:13.63,0:17:17.64,ENG,NTP,0,0,0,!Effect,They're all starting to look the same. They really are.\N{\rCHT}看起來全都一個樣子 真的是{\r}
+Dialogue: 0,0:17:24.48,0:17:27.94,ENG,NTP,0,0,0,!Effect,And the pasta in Rome is not as good as yours.\N{\rCHT}羅馬的義大利面沒你煮的好吃{\r}
+Dialogue: 0,0:17:29.77,0:17:31.69,ENG,NTP,0,0,0,!Effect,And the ass pinchers.\N{\rCHT}那些色狼{\r}
+Dialogue: 0,0:17:31.78,0:17:34.32,ENG,NTP,0,0,0,!Effect,They used to look so charmingly European.\N{\rCHT}在歐洲曾經看上去那麼有魅力{\r}
+Dialogue: 0,0:17:34.40,0:17:36.32,ENG,NTP,0,0,0,!Effect,Not as good as me?\N{\rCHT}沒我煮的好吃{\r}
+Dialogue: 0,0:17:40.83,0:17:42.79,ENG,NTP,0,0,0,!Effect,Come on.\N{\rCHT}得了吧{\r}
+Dialogue: 0,0:17:43.66,0:17:45.96,ENG,NTP,0,0,0,!Effect,It really must be what it is about you I like...\N{\rCHT}我一定就是喜歡你這點...{\r}
+Dialogue: 0,0:17:46.00,0:17:48.50,ENG,NTP,0,0,0,!Effect,because you most definitely are not common.\N{\rCHT}你跟平常人不一樣{\r}
+Dialogue: 0,0:17:54.97,0:17:57.55,ENG,NTP,0,0,0,!Effect,- What if I were?  - What if you were what?\N{\rCHT}- 要是一樣呢  - 什麼意思{\r}
+Dialogue: 0,0:17:57.64,0:18:00.68,ENG,NTP,0,0,0,!Effect,A little more common, you know, and around more.\N{\rCHT}要是我跟平常人一樣常在家{\r}
+Dialogue: 0,0:18:00.77,0:18:02.68,ENG,NTP,0,0,0,!Effect,How much more?\N{\rCHT}多常在家{\r}
+Dialogue: 0,0:18:02.77,0:18:04.85,ENG,NTP,0,0,0,!Effect,Like, "all the time" more.\N{\rCHT}比如 "成天"都在家{\r}
+Dialogue: 0,0:18:04.94,0:18:07.31,ENG,NTP,0,0,0,!Effect,And I was just a jazz club owner and not that other thing.\N{\rCHT}我只當爵士吧老闆 不當小偷{\r}
+Dialogue: 0,0:18:07.36,0:18:08.73,ENG,NTP,0,0,0,!Effect,How would you feel about that?\N{\rCHT}你覺得怎樣{\r}
+Dialogue: 0,0:18:11.23,0:18:13.78,ENG,NTP,0,0,0,!Effect,Hey, are you saying what I think you're saying?\N{\rCHT}嘿 你說的跟我想的一樣嗎{\r}
+Dialogue: 0,0:18:13.86,0:18:16.41,ENG,NTP,0,0,0,!Effect,I think that's what I'm saying.\N{\rCHT}我說的就是那意思{\r}
+Dialogue: 0,0:18:20.79,0:18:25.08,ENG,NTP,0,0,0,!Effect,Hey, baby, you know I've never asked you to change anything for me.\N{\rCHT}寶貝 我沒要你改變 尤其是為了我{\r}
+Dialogue: 0,0:18:25.17,0:18:28.25,ENG,NTP,0,0,0,!Effect,I know that. I'm just asking you, how would you feel about that?\N{\rCHT}我知道 我只問你覺得怎樣{\r}
+Dialogue: 0,0:18:35.80,0:18:37.93,ENG,NTP,0,0,0,!Effect,I don't know.\N{\rCHT}我不知道{\r}
+Dialogue: 0,0:18:40.27,0:18:43.27,ENG,NTP,0,0,0,!Effect,I suppose I'd have to give it some serious thought.\N{\rCHT}我得認真想想{\r}
+Dialogue: 0,0:18:45.40,0:18:48.19,ENG,NTP,0,0,0,!Effect,Then you'd better start giving it some serious thought.\N{\rCHT}那你最好認真想一想{\r}
+Dialogue: 0,0:18:57.87,0:19:01.12,ENG,NTP,0,0,0,!Effect,Thank you. So I'll see you when I see you?\N{\rCHT}謝了 那就到時再見啦{\r}
+Dialogue: 0,0:19:01.21,0:19:03.12,ENG,NTP,0,0,0,!Effect,See you when I see you.\N{\rCHT}到時候見{\r}
+Dialogue: 0,0:19:23.66,0:19:25.10,ENG,NTP,0,0,0,!Effect,Madame.\N{\rCHT}太太{\r}
+Dialogue: 0,0:19:26.23,0:19:28.50,ENG,NTP,0,0,0,!Effect,Voila. Have a good day.\N{\rCHT}給 祝您過得愉快{\r}
+Dialogue: 0,0:19:28.94,0:19:30.84,ENG,NTP,0,0,0,!Effect,Merci.\N{\rCHT}謝謝{\r}
+Dialogue: 0,0:19:42.25,0:19:45.50,ENG,NTP,0,0,0,!Effect,Excuse me. Can you help me, please?\N{\rCHT}對不起 你可以幫我嗎{\r}
+Dialogue: 0,0:19:46.67,0:19:48.76,ENG,NTP,0,0,0,!Effect,Can you help me?\N{\rCHT}你可以幫我嗎{\r}
+Dialogue: 0,0:19:48.84,0:19:50.97,ENG,NTP,0,0,0,!Effect,- Place Norman?  - Yes, yes.\N{\rCHT}- 諾門廣場  - 對 對{\r}
+Dialogue: 0,0:19:51.05,0:19:53.55,ENG,NTP,0,0,0,!Effect,You go to the corner, make a right. Go two blocks...\N{\rCHT}這個街口右轉走兩條街...{\r}
+Dialogue: 0,0:19:53.64,0:19:56.81,ENG,NTP,0,0,0,!Effect,- Two.  - Two blocks, then a left one block.\N{\rCHT}- 兩條  - 兩條街 然後左轉走一條街{\r}
+Dialogue: 0,0:19:56.89,0:19:59.39,ENG,NTP,0,0,0,!Effect,- Again, please.  - Two blocks this way...\N{\rCHT}- 請再說一遍  - 這邊走兩條街...{\r}
+Dialogue: 0,0:19:59.43,0:20:00.98,ENG,NTP,0,0,0,!Effect,one block that way to the left.\N{\rCHT}再左轉一條街{\r}
+Dialogue: 0,0:20:01.06,0:20:03.61,ENG,NTP,0,0,0,!Effect,- And you're right there.  - Okay, thank you.\N{\rCHT}- 然後就到了  - 好 謝謝你{\r}
+Dialogue: 0,0:20:03.69,0:20:05.23,ENG,NTP,0,0,0,!Effect,Thank you, Nick.\N{\rCHT}謝謝你 尼克{\r}
+Dialogue: 0,0:20:07.57,0:20:09.32,ENG,NTP,0,0,0,!Effect,What did you say?\N{\rCHT}你說什麼{\r}
+Dialogue: 0,0:20:09.40,0:20:11.91,ENG,NTP,0,0,0,!Effect,I said, "Thank you, Nick."\N{\rCHT}我說 "謝謝你 尼克"{\r}
+Dialogue: 0,0:20:14.28,0:20:18.33,ENG,NTP,0,0,0,!Effect,I'm Max's guy in the customshouse. We should talk.\N{\rCHT}我就是麥斯的內線 我們得談談{\r}
+Dialogue: 0,0:20:19.87,0:20:21.88,ENG,NTP,0,0,0,!Effect,Okay, bye-bye. Thank you.\N{\rCHT}再見 謝謝你 再見{\r}
+Dialogue: 0,0:20:21.96,0:20:23.88,ENG,NTP,0,0,0,!Effect,Thank you. Bye.\N{\rCHT}謝謝你 再見{\r}
+Dialogue: 0,0:20:29.97,0:20:32.72,ENG,NTP,0,0,0,!Effect,- Where's Max?  - He's in the sunroom.\N{\rCHT}- 麥斯呢  - 他在裡面{\r}
+Dialogue: 0,0:20:35.84,0:20:36.80,ENG,NTP,0,0,0,!Effect,Max\N{\rCHT}麥斯{\r}
+Dialogue: 0,0:20:37.02,0:20:39.44,ENG,NTP,0,0,0,!Effect,Nicoli, Nicoli.\N{\rCHT}尼克 尼克{\r}
+Dialogue: 0,0:20:39.48,0:20:41.69,ENG,NTP,0,0,0,!Effect,Have you lost your fucking mind?\N{\rCHT}你瘋了嗎{\r}
+Dialogue: 0,0:20:41.77,0:20:44.73,ENG,NTP,0,0,0,!Effect,My mind? Years ago. Why?\N{\rCHT}我 早就瘋了 怎麼了{\r}
+Dialogue: 0,0:20:44.82,0:20:47.74,ENG,NTP,0,0,0,!Effect,- What did you tell this kid?  - What did I tell who?\N{\rCHT}- 你跟這小子說了什麼  - 跟誰說{\r}
+Dialogue: 0,0:20:47.82,0:20:49.78,ENG,NTP,0,0,0,!Effect,Your inside guy with the retard act.\N{\rCHT}你那個裝智障的內線{\r}
+Dialogue: 0,0:20:49.86,0:20:51.95,ENG,NTP,0,0,0,!Effect,He was in front of my house. He knew who I was.\N{\rCHT}他跑到我家 他認得我{\r}
+Dialogue: 0,0:20:53.91,0:20:57.87,ENG,NTP,0,0,0,!Effect,Wait. He must've followed me to the club and made you from there.\N{\rCHT}他一定跟了我到酒吧 在那裡見到你{\r}
+Dialogue: 0,0:20:57.96,0:20:59.07,ENG,NTP,0,0,0,!Effect,Tell him he pulls a stunt like that again,\N{\rCHT}他再玩這把戲{\r}
+Dialogue: 0,0:20:59.07,0:21:00.38,ENG,NTP,0,0,0,!Effect,he'll end up in the hospital.\N{\rCHT}我就讓他進醫院{\r}
+Dialogue: 0,0:21:00.46,0:21:04.63,ENG,NTP,0,0,0,!Effect,Wait. Do you think I'm gonna set you up with a jerk-off heister?\N{\rCHT}慢著 你以為我 會找個笨蛋跟你合作嗎{\r}
+Dialogue: 0,0:21:04.71,0:21:06.96,ENG,NTP,0,0,0,!Effect,You gotta admit that this kid did a pretty good dog and pony show.\N{\rCHT}你得承認這小子有兩把刷子{\r}
+Dialogue: 0,0:21:06.96,0:21:08.01,ENG,NTP,0,0,0,!Effect,Are you crazy?\N{\rCHT}你瘋了{\r}
+Dialogue: 0,0:21:08.05,0:21:11.89,ENG,NTP,0,0,0,!Effect,I don't care who is he. Don't expose me like that. You know better.\N{\rCHT}就算他很高竿 你也不能讓我曝光{\r}
+Dialogue: 0,0:21:11.97,0:21:13.43,ENG,NTP,0,0,0,!Effect,He's got it all pre-wired.\N{\rCHT}他都搞定了{\r}
+Dialogue: 0,0:21:13.51,0:21:15.85,ENG,NTP,0,0,0,!Effect,- You go in, turn the key...  - I told you, I'm not interested.\N{\rCHT}- 你只要進去拿貨...  - 我說過我沒興趣{\r}
+Dialogue: 0,0:21:15.89,0:21:19.27,ENG,NTP,0,0,0,!Effect,You're never gonna get another chance at a score like this.\N{\rCHT}這麼大的一票機會難得{\r}
+Dialogue: 0,0:21:19.35,0:21:21.31,ENG,NTP,0,0,0,!Effect,- Why are you pushing this?  - Four million balls.\N{\rCHT}- 你幹嘛逼我  - 四百萬{\r}
+Dialogue: 0,0:21:21.40,0:21:23.19,ENG,NTP,0,0,0,!Effect,How many times do I have to tell you?\N{\rCHT}你要我說多少遍{\r}
+Dialogue: 0,0:21:23.28,0:21:24.99,ENG,NTP,0,0,0,!Effect,He's pushing it because we're running out of time.\N{\rCHT}那是因為時間不多{\r}
+Dialogue: 0,0:21:26.03,0:21:28.82,ENG,NTP,0,0,0,!Effect,If I'm gonna work with a partner on this...\N{\rCHT}真要幹的話就得趕快計畫...{\r}
+Dialogue: 0,0:21:28.86,0:21:30.74,ENG,NTP,0,0,0,!Effect,we gotta start putting our heads together right away.\N{\rCHT}我們得立馬開始合作了{\r}
+Dialogue: 0,0:21:30.83,0:21:32.29,ENG,NTP,0,0,0,!Effect,- What are you doing in my house?  - Take it easy.\N{\rCHT}- 你跑來幹嘛  - 別抓狂{\r}
+Dialogue: 0,0:21:32.37,0:21:35.08,ENG,NTP,0,0,0,!Effect,- All I'm saying...  - Who the fuck is this kid?\N{\rCHT}- 我只是說...  - 這臭小子是誰{\r}
+Dialogue: 0,0:21:35.16,0:21:37.83,ENG,NTP,0,0,0,!Effect,- What the fuck do you know?  - I've been on this for three weeks.\N{\rCHT}- 你知道什麼  - 我花了三個禮拜摸清一切{\r}
+Dialogue: 0,0:21:37.92,0:21:40.88,ENG,NTP,0,0,0,!Effect,I gotta know if you're the guy that Max says you are.\N{\rCHT}我得知道你行不行{\r}
+Dialogue: 0,0:21:40.96,0:21:44.13,ENG,NTP,0,0,0,!Effect,- I gotta go.  - Nick, wait. Wait.\N{\rCHT}- 我要走了  - 尼克 等等 等等{\r}
+Dialogue: 0,0:21:45.47,0:21:49.39,ENG,NTP,0,0,0,!Effect,I didn't come 500 miles just to... Jack Teller. Nice to meet you too.\N{\rCHT}我大老遠跑來... 我是傑克·泰勒 幸會{\r}
+Dialogue: 0,0:21:49.43,0:21:50.39,ENG,NTP,0,0,0,!Effect,What the fuck?\N{\rCHT}搞什麼{\r}
+Dialogue: 0,0:21:50.43,0:21:53.22,ENG,NTP,0,0,0,!Effect,You're not smart enough to know where your dick is.\N{\rCHT}你這沒長鬍鬚的小毛頭{\r}
+Dialogue: 0,0:21:53.31,0:21:56.48,ENG,NTP,0,0,0,!Effect,We decided that you were gonna sit tight until I called you.\N{\rCHT}我叫你等我通知{\r}
+Dialogue: 0,0:21:56.56,0:21:57.90,ENG,NTP,0,0,0,!Effect,- Is that correct?  - Okay.\N{\rCHT}- 對不對  - 好的{\r}
+Dialogue: 0,0:21:57.94,0:22:00.73,ENG,NTP,0,0,0,!Effect,I thought I could help you sell him on it. I thought he was already in.\N{\rCHT}我只想幫你說服他 還以為你說他答應了{\r}
+Dialogue: 0,0:22:00.82,0:22:04.28,ENG,NTP,0,0,0,!Effect,Don't be so fucking creative. Just get the fuck out of my house.\N{\rCHT}你創作力別這麼豐富 給我滾出去{\r}
+Dialogue: 0,0:22:04.36,0:22:07.95,ENG,NTP,0,0,0,!Effect,When you guys get your shit together, give me a call, okay?\N{\rCHT}你把他搞定了再通知我 好嗎{\r}
+Dialogue: 0,0:22:08.03,0:22:09.28,ENG,NTP,0,0,0,!Effect,Unbelievable.\N{\rCHT}不可思議{\r}
+Dialogue: 0,0:24:15.12,0:24:16.12,ENG,NTP,0,0,0,!Effect,Jesus!\N{\rCHT}天啊{\r}
+Dialogue: 0,0:24:17.96,0:24:19.92,ENG,NTP,0,0,0,!Effect,God! Jesus! Take it easy.\N{\rCHT}老天 老天 快住手{\r}
+Dialogue: 0,0:24:21.38,0:24:25.22,ENG,NTP,0,0,0,!Effect,Listen close. Leave town tonight. Don't come back.\N{\rCHT}給我聽好 你今晚走了就別回來{\r}
+Dialogue: 0,0:24:25.26,0:24:28.43,ENG,NTP,0,0,0,!Effect,I see you again, I break your fucking knees.\N{\rCHT}我再看到你 就打斷你的狗腿{\r}
+Dialogue: 0,0:24:28.52,0:24:29.98,ENG,NTP,0,0,0,!Effect,I see you around Nick, I'll kill ya.\N{\rCHT}你再去找尼克 我就宰了你{\r}
+Dialogue: 0,0:24:30.06,0:24:33.11,ENG,NTP,0,0,0,!Effect,It's a dangerous fucking game you're playing here.\N{\rCHT}你玩的遊戲太危險了{\r}
+Dialogue: 0,0:24:33.19,0:24:34.86,ENG,NTP,0,0,0,!Effect,Are we clear?\N{\rCHT}知道了嗎{\r}
+Dialogue: 0,0:24:40.86,0:24:42.78,ENG,NTP,0,0,0,!Effect,Yeah, we're clear.\N{\rCHT}是 我知道了{\r}
+Dialogue: 0,0:25:23.62,0:25:25.66,ENG,NTP,0,0,0,!Effect,How did it go?\N{\rCHT}怎麼樣{\r}
+Dialogue: 0,0:25:25.75,0:25:27.16,ENG,NTP,0,0,0,!Effect,Not as planned.\N{\rCHT}出了狀況{\r}
+Dialogue: 0,0:25:28.04,0:25:29.01,ENG,NTP,0,0,0,!Effect,What do you want?\N{\rCHT}你要什麼{\r}
+Dialogue: 0,0:25:29.01,0:25:32.34,ENG,NTP,0,0,0,!Effect,Some fucking respect for starters. How about that?\N{\rCHT}我要你先尊重我一點 怎麼樣{\r}
+Dialogue: 0,0:25:33.17,0:25:37.17,ENG,NTP,0,0,0,!Effect,I mean, what are you thinking? Now, I'm on a job here.\N{\rCHT}你幹嘛 我可是在工作{\r}
+Dialogue: 0,0:25:37.26,0:25:40.18,ENG,NTP,0,0,0,!Effect,Now, if you just don't wanna come in on it, that's fine. Say "no."\N{\rCHT}你不想參一腳 沒問題 就直說"不"{\r}
+Dialogue: 0,0:25:40.26,0:25:43.14,ENG,NTP,0,0,0,!Effect,But don't send some third-rate rent-a-thug to brush me off.\N{\rCHT}別派三流打手打發我{\r}
+Dialogue: 0,0:25:43.18,0:25:44.85,ENG,NTP,0,0,0,!Effect,You can do it like a professional.\N{\rCHT}有點專業精神{\r}
+Dialogue: 0,0:25:47.10,0:25:48.31,ENG,NTP,0,0,0,!Effect,Hello.\N{\rCHT}你好{\r}
+Dialogue: 0,0:25:49.60,0:25:52.57,ENG,NTP,0,0,0,!Effect,Yeah. You okay?\N{\rCHT}對 你沒事吧{\r}
+Dialogue: 0,0:25:52.65,0:25:55.11,ENG,NTP,0,0,0,!Effect,He's right here. Don't worry. Just go home.\N{\rCHT}他在這兒 放心 你先回家{\r}
+Dialogue: 0,0:25:55.19,0:25:58.41,ENG,NTP,0,0,0,!Effect,I'll call you later, all right? That's okay.\N{\rCHT}我再打給你 好的 沒關係{\r}
+Dialogue: 0,0:25:58.49,0:25:59.91,ENG,NTP,0,0,0,!Effect,Okay.\N{\rCHT}好的{\r}
+Dialogue: 0,0:26:01.03,0:26:03.20,ENG,NTP,0,0,0,!Effect,I didn't come here to cause any trouble.\N{\rCHT}我不是來惹麻煩的{\r}
+Dialogue: 0,0:26:03.29,0:26:04.70,ENG,NTP,0,0,0,!Effect,I didn't.\N{\rCHT}我不是{\r}
+Dialogue: 0,0:26:05.79,0:26:09.63,ENG,NTP,0,0,0,!Effect,Coming up to you on the street like that, that was a stupid move.\N{\rCHT}我在街上堵你是很蠢{\r}
+Dialogue: 0,0:26:09.71,0:26:11.96,ENG,NTP,0,0,0,!Effect,Sorry. Why don't we just call it even?\N{\rCHT}對不起 為什麼不算扯平了呢{\r}
+Dialogue: 0,0:26:12.75,0:26:14.59,ENG,NTP,0,0,0,!Effect,I just wanna say one thing to you, then I'll go away.\N{\rCHT}我說完了就走{\r}
+Dialogue: 0,0:26:14.67,0:26:17.18,ENG,NTP,0,0,0,!Effect,We don't have to bother each other anymore if you don't want.\N{\rCHT}你不參加就不會再見到我{\r}
+Dialogue: 0,0:26:20.30,0:26:23.35,ENG,NTP,0,0,0,!Effect,I have been casing this place for a couple of weeks now.\N{\rCHT}這一票我探了幾個禮拜的路{\r}
+Dialogue: 0,0:26:23.39,0:26:27.10,ENG,NTP,0,0,0,!Effect,It's a little bit complicated, but this is a very doable job.\N{\rCHT}難度很高 但是很有可行性{\r}
+Dialogue: 0,0:26:27.19,0:26:30.44,ENG,NTP,0,0,0,!Effect,I can handle the system in there if someone can break into this box.\N{\rCHT}我搞定保全 另一個人可以去開保險櫃{\r}
+Dialogue: 0,0:26:32.23,0:26:34.19,ENG,NTP,0,0,0,!Effect,Look, I don't know you, you don't know me.\N{\rCHT}聽著 我們不認識對方{\r}
+Dialogue: 0,0:26:34.24,0:26:36.74,ENG,NTP,0,0,0,!Effect,I know that's not the best way to do things, but...\N{\rCHT}我知道這並不是最好的方法 但...{\r}
+Dialogue: 0,0:26:36.78,0:26:39.41,ENG,NTP,0,0,0,!Effect,I am very good at what I do, okay?\N{\rCHT}我很擅長我做的事情 知道嗎{\r}
+Dialogue: 0,0:26:39.49,0:26:43.25,ENG,NTP,0,0,0,!Effect,And I take it very, very seriously. You can check it out with Max.\N{\rCHT}而且我會非常非常認真的 你可以問麥斯{\r}
+Dialogue: 0,0:26:43.33,0:26:46.54,ENG,NTP,0,0,0,!Effect,Now, if you are the guy that he says you are...\N{\rCHT}如果你真像他說的是神偷...{\r}
+Dialogue: 0,0:26:46.62,0:26:49.42,ENG,NTP,0,0,0,!Effect,then we should check this out.\N{\rCHT}那你就應該考慮一下{\r}
+Dialogue: 0,0:26:49.50,0:26:51.42,ENG,NTP,0,0,0,!Effect,Just... Just take a look at it.\N{\rCHT}就... 就來看一下{\r}
+Dialogue: 0,0:26:51.51,0:26:54.42,ENG,NTP,0,0,0,!Effect,That's all I'm saying, 'cause this is a very big payoff...\N{\rCHT}這是一大票 但風險也很大...{\r}
+Dialogue: 0,0:26:54.51,0:26:56.43,ENG,NTP,0,0,0,!Effect,for very acceptable risks.\N{\rCHT}也是可以接受的{\r}
+Dialogue: 0,0:27:03.10,0:27:05.65,ENG,NTP,0,0,0,!Effect,Just take a look at it. Go look for yourself.\N{\rCHT}去看看 你自己去看看{\r}
+Dialogue: 0,0:27:09.44,0:27:11.99,ENG,NTP,0,0,0,!Effect,I like your place.\N{\rCHT}這地方很棒{\r}
+Dialogue: 0,0:27:12.07,0:27:13.99,ENG,NTP,0,0,0,!Effect,You got good taste.\N{\rCHT}你很有品味{\r}
+Dialogue: 0,0:28:53.64,0:28:56.35,ENG,NTP,0,0,0,!Effect,Oh, Jesus. It's nice and dark in here.\N{\rCHT}這兒好暗 老是陰森森的{\r}
+Dialogue: 0,0:28:56.39,0:28:58.39,ENG,NTP,0,0,0,!Effect,Fucking everything.\N{\rCHT}去死吧{\r}
+Dialogue: 0,0:28:58.43,0:29:01.40,ENG,NTP,0,0,0,!Effect,- Hey, Nicoli  - Max\N{\rCHT}- 嘿 尼克  - 麥斯{\r}
+Dialogue: 0,0:29:01.43,0:29:03.23,ENG,NTP,0,0,0,!Effect,Jesus.\N{\rCHT}老天{\r}
+Dialogue: 0,0:29:03.31,0:29:05.98,ENG,NTP,0,0,0,!Effect,Why don't you jump for some lights in this place?\N{\rCHT}你開個燈會死嗎{\r}
+Dialogue: 0,0:29:06.07,0:29:10.70,ENG,NTP,0,0,0,!Effect,Every time I come in here, it's like hide-and-go-seek.\N{\rCHT}這麼暗我都得跟你玩躲貓貓{\r}
+Dialogue: 0,0:29:10.74,0:29:12.70,ENG,NTP,0,0,0,!Effect,How are you?\N{\rCHT}你好嗎{\r}
+Dialogue: 0,0:29:24.38,0:29:28.38,ENG,NTP,0,0,0,!Effect,Now, you gotta tell me the...\N{\rCHT}那麼 你要說出...{\r}
+Dialogue: 0,0:29:28.42,0:29:31.09,ENG,NTP,0,0,0,!Effect,the magic word.\N{\rCHT}那個神奇的字了嗎{\r}
+Dialogue: 0,0:29:31.18,0:29:33.01,ENG,NTP,0,0,0,!Effect,All right, I'm gonna do it.\N{\rCHT}好 我答應{\r}
+Dialogue: 0,0:29:33.10,0:29:37.23,ENG,NTP,0,0,0,!Effect,Good, good. Jesus, sweetheart. You're a sweetheart.\N{\rCHT}太好了 你真是大好人{\r}
+Dialogue: 0,0:29:37.31,0:29:39.23,ENG,NTP,0,0,0,!Effect,Bravo. You're making sense.\N{\rCHT}棒呆了 這才像話{\r}
+Dialogue: 0,0:29:40.35,0:29:44.27,ENG,NTP,0,0,0,!Effect,But because of the risk involved, my end's gotta be six million.\N{\rCHT}但風險太大 我要分六百萬{\r}
+Dialogue: 0,0:29:47.15,0:29:48.36,ENG,NTP,0,0,0,!Effect,Operator?\N{\rCHT}總機小姐{\r}
+Dialogue: 0,0:29:48.45,0:29:51.24,ENG,NTP,0,0,0,!Effect,I got a nut down here that just said six million.\N{\rCHT}有個瘋子要六百萬{\r}
+Dialogue: 0,0:29:52.58,0:29:53.99,ENG,NTP,0,0,0,!Effect,No, no. Send paramedics.\N{\rCHT}不 不 快派救護車來{\r}
+Dialogue: 0,0:29:53.99,0:29:55.41,ENG,NTP,0,0,0,!Effect,I think... Are you all right?\N{\rCHT}我覺得... 你沒事吧{\r}
+Dialogue: 0,0:29:55.50,0:29:56.54,ENG,NTP,0,0,0,!Effect,I'm fine.\N{\rCHT}我很好{\r}
+Dialogue: 0,0:29:56.62,0:29:59.29,ENG,NTP,0,0,0,!Effect,Six fucking million dollars? What happened to four?\N{\rCHT}六百萬 不是四百萬嗎{\r}
+Dialogue: 0,0:29:59.37,0:30:03.00,ENG,NTP,0,0,0,!Effect,I'm doing it in my backyard. I'm not gonna go like that. I'm sorry.\N{\rCHT}這是我家 酬勞太少我是不會幹的{\r}
+Dialogue: 0,0:30:03.09,0:30:05.01,ENG,NTP,0,0,0,!Effect,If you want me to do this, you gotta pay me what's right.\N{\rCHT}你要我做 就得給我公道酬勞{\r}
+Dialogue: 0,0:30:05.09,0:30:08.13,ENG,NTP,0,0,0,!Effect,- It's gotta be that way.  - I always pay you what's right.\N{\rCHT}- 就得那樣  - 我給你的酬勞一直很公道{\r}
+Dialogue: 0,0:30:08.22,0:30:11.47,ENG,NTP,0,0,0,!Effect,You always think you do. I always know what you pay me.\N{\rCHT}你以為很公道 其實並不是{\r}
+Dialogue: 0,0:30:11.55,0:30:14.31,ENG,NTP,0,0,0,!Effect,It's not always right. I need this for this.\N{\rCHT}這次我要這個數目{\r}
+Dialogue: 0,0:30:16.06,0:30:17.35,ENG,NTP,0,0,0,!Effect,I like your style.\N{\rCHT}我很欣賞你{\r}
+Dialogue: 0,0:30:17.44,0:30:19.35,ENG,NTP,0,0,0,!Effect,Yeah, well, okay. I understand.\N{\rCHT}對 呃 好的 我瞭解{\r}
+Dialogue: 0,0:30:20.98,0:30:24.19,ENG,NTP,0,0,0,!Effect,That's what I have to do. I wanna pay off the club, the mortgage.\N{\rCHT}那是我得做的 我想付清爵士吧的貸款{\r}
+Dialogue: 0,0:30:24.28,0:30:25.99,ENG,NTP,0,0,0,!Effect,I wanna own this place free and clear.\N{\rCHT}完全擁有這地方{\r}
+Dialogue: 0,0:30:26.07,0:30:28.57,ENG,NTP,0,0,0,!Effect,I want it to be mine. I live the way I want.\N{\rCHT}我希望它是我的 過我想要的生活{\r}
+Dialogue: 0,0:30:28.66,0:30:29.95,ENG,NTP,0,0,0,!Effect,Because after this, no more jobs.\N{\rCHT}因為此後我要洗手不幹了{\r}
+Dialogue: 0,0:30:30.03,0:30:33.29,ENG,NTP,0,0,0,!Effect,This is the last one I'm doing. I'm quitting for good.\N{\rCHT}這一票以後我就不幹了{\r}
+Dialogue: 0,0:30:33.37,0:30:36.08,ENG,NTP,0,0,0,!Effect,How many times have you told me that in 25 years?\N{\rCHT}25年來你說過多少次{\r}
+Dialogue: 0,0:30:36.12,0:30:38.46,ENG,NTP,0,0,0,!Effect,I'm gonna believe that when the pigs eat my brother.\N{\rCHT}除非豬把我兄弟吃了我才會相信{\r}
+Dialogue: 0,0:30:38.50,0:30:41.80,ENG,NTP,0,0,0,!Effect,- Right?  - I'm done. I'm done. No more.\N{\rCHT}- 真的  - 我真的不幹了{\r}
+Dialogue: 0,0:30:44.21,0:30:47.64,ENG,NTP,0,0,0,!Effect,Well, okay. I hope she's worth it.\N{\rCHT}呃 好吧 希望她值得你這麼做{\r}
+Dialogue: 0,0:30:51.76,0:30:53.68,ENG,NTP,0,0,0,!Effect,Here's numb-nuts.\N{\rCHT}菜鳥來了{\r}
+Dialogue: 0,0:30:56.64,0:30:59.48,ENG,NTP,0,0,0,!Effect,Nice house, nice club. You must be really good.\N{\rCHT}好房子 好酒吧 你一定很高竿{\r}
+Dialogue: 0,0:31:02.69,0:31:04.82,ENG,NTP,0,0,0,!Effect,I don't wanna have to do this, but raise your arms.\N{\rCHT}很抱歉 我要搜你身{\r}
+Dialogue: 0,0:31:07.61,0:31:10.53,ENG,NTP,0,0,0,!Effect,- Be my guest.  - He's all right.\N{\rCHT}- 請便  - 他沒問題的了{\r}
+Dialogue: 0,0:31:13.83,0:31:15.29,ENG,NTP,0,0,0,!Effect,Okay?\N{\rCHT}可以了嗎{\r}
+Dialogue: 0,0:31:22.38,0:31:25.34,ENG,NTP,0,0,0,!Effect,Is this a social call? What are we doing here?\N{\rCHT}這是正式的招集嗎 你把我們找來幹嘛{\r}
+Dialogue: 0,0:31:27.39,0:31:28.97,ENG,NTP,0,0,0,!Effect,I will explore this with you...\N{\rCHT}我會跟你一起研究這事...{\r}
+Dialogue: 0,0:31:29.01,0:31:31.85,ENG,NTP,0,0,0,!Effect,but I run this operation down to the smallest detail.\N{\rCHT}但這一票的每個細節都由我作主{\r}
+Dialogue: 0,0:31:31.89,0:31:35.19,ENG,NTP,0,0,0,!Effect,If you have a problem with that, we can all go home right now.\N{\rCHT}如果對此有意見 我們就拍拍屁股回家{\r}
+Dialogue: 0,0:31:36.02,0:31:37.65,ENG,NTP,0,0,0,!Effect,Is there a problem with that?\N{\rCHT}有問題嗎{\r}
+Dialogue: 0,0:31:38.77,0:31:40.53,ENG,NTP,0,0,0,!Effect,That's fine.\N{\rCHT}沒有{\r}
+Dialogue: 0,0:31:40.57,0:31:43.65,ENG,NTP,0,0,0,!Effect,You will tell me everything you know, then I will design the plan.\N{\rCHT}我會根據你的資料著手計畫{\r}
+Dialogue: 0,0:31:43.70,0:31:47.57,ENG,NTP,0,0,0,!Effect,If I smell something about the job or you that I don't like, I walk.\N{\rCHT}只要有一點蹊蹺我就走人{\r}
+Dialogue: 0,0:31:47.66,0:31:50.74,ENG,NTP,0,0,0,!Effect,If I think for one second you're not living up to your end of it...\N{\rCHT}如果有一秒我覺得你會搞不定...{\r}
+Dialogue: 0,0:31:50.83,0:31:53.58,ENG,NTP,0,0,0,!Effect,or if you hold out on me in any way, I walk.\N{\rCHT}或是有事瞞著我 我也馬上走人{\r}
+Dialogue: 0,0:31:53.66,0:31:56.17,ENG,NTP,0,0,0,!Effect,- Understood?  - That's fine.\N{\rCHT}- 懂嗎  - 沒問題{\r}
+Dialogue: 0,0:31:56.21,0:31:57.79,ENG,NTP,0,0,0,!Effect,Tell me what you wanna know.\N{\rCHT}告訴我你想知道什麼{\r}
+Dialogue: 0,0:31:59.05,0:32:03.09,ENG,NTP,0,0,0,!Effect,- First, what are we looking for?  - You know what a scepter is?\N{\rCHT}- 首先 目標是什麼  - 你知道權杖嗎{\r}
+Dialogue: 0,0:32:03.17,0:32:05.14,ENG,NTP,0,0,0,!Effect,It's something that a king holds.\N{\rCHT}國王的寶杖{\r}
+Dialogue: 0,0:32:06.26,0:32:07.93,ENG,NTP,0,0,0,!Effect,Right there.\N{\rCHT}這玩意{\r}
+Dialogue: 0,0:32:08.01,0:32:12.31,ENG,NTP,0,0,0,!Effect,It was made in 1661 in France for a special coronation...\N{\rCHT}1661年在法國加冕典禮上...{\r}
+Dialogue: 0,0:32:13.52,0:32:15.19,ENG,NTP,0,0,0,!Effect,for a girl queen.\N{\rCHT}一個少女國王用過的{\r}
+Dialogue: 0,0:32:16.27,0:32:19.11,ENG,NTP,0,0,0,!Effect,- It's priceless.  - Not to us, it's not.\N{\rCHT}- 這是無價之寶  - 對我們來說還是有價{\r}
+Dialogue: 0,0:32:19.19,0:32:22.24,ENG,NTP,0,0,0,!Effect,What can you give me on its specific location?\N{\rCHT}說說它存放的位置{\r}
+Dialogue: 0,0:32:22.32,0:32:23.99,ENG,NTP,0,0,0,!Effect,I can give you the whole building, okay?\N{\rCHT}我做過功課 我探過整棟大樓 知道不{\r}
+Dialogue: 0,0:32:23.99,0:32:24.61,ENG,NTP,0,0,0,!Effect,I got floor plans.\N{\rCHT}我有平面圖{\r}
+Dialogue: 0,0:32:24.70,0:32:27.33,ENG,NTP,0,0,0,!Effect,I've been clocking the security patterns for over three weeks.\N{\rCHT}我花了三周時間 把保全系統也摸透了{\r}
+Dialogue: 0,0:32:27.41,0:32:29.54,ENG,NTP,0,0,0,!Effect,All right. Paint me a picture.\N{\rCHT}好吧 你說說看{\r}
+Dialogue: 0,0:32:30.75,0:32:33.42,ENG,NTP,0,0,0,!Effect,Okay. He fixed me up with the job.\N{\rCHT}好的 我在裡面找到一個工作{\r}
+Dialogue: 0,0:32:33.50,0:32:35.96,ENG,NTP,0,0,0,!Effect,Not me but Brian, the guy on the street.\N{\rCHT}不是我 是我裝的智障布萊恩{\r}
+Dialogue: 0,0:32:36.04,0:32:37.38,ENG,NTP,0,0,0,!Effect,Yeah, I remember.\N{\rCHT}是的 我記得{\r}
+Dialogue: 0,0:32:37.42,0:32:40.26,ENG,NTP,0,0,0,!Effect,Is he traceable? Phone number? Address? That stuff?\N{\rCHT}他能追蹤嗎 有電話 位址 之類的{\r}
+Dialogue: 0,0:32:40.34,0:32:42.68,ENG,NTP,0,0,0,!Effect,It's totally tight. The guy's a charity case, a favor.\N{\rCHT}沒有 他們是可憐他才雇用他{\r}
+Dialogue: 0,0:32:42.76,0:32:44.76,ENG,NTP,0,0,0,!Effect,The guy truly doesn't even exist on paper.\N{\rCHT}文件上根本沒他的資料{\r}
+Dialogue: 0,0:32:44.84,0:32:47.89,ENG,NTP,0,0,0,!Effect,He just shows up. He's the assistant janitor...\N{\rCHT}他剛出現 他是清潔工...{\r}
+Dialogue: 0,0:32:47.97,0:32:49.73,ENG,NTP,0,0,0,!Effect,midnight to 8 a.m.\N{\rCHT}從午夜做到八點{\r}
+Dialogue: 0,0:32:55.11,0:32:56.73,ENG,NTP,0,0,0,!Effect,The security's pretty basic.\N{\rCHT}保全系統很簡單{\r}
+Dialogue: 0,0:32:56.82,0:32:59.28,ENG,NTP,0,0,0,!Effect,At night, they lock the place down. They bar the ground floor windows.\N{\rCHT}晚上把一樓的門窗鎖緊{\r}
+Dialogue: 0,0:32:59.32,0:33:02.91,ENG,NTP,0,0,0,!Effect,You can only enter in through one place, out by the truck court.\N{\rCHT}唯一的入口是缷貨區{\r}
+Dialogue: 0,0:33:06.45,0:33:09.12,ENG,NTP,0,0,0,!Effect,Thank you, Hubert. Thank you.\N{\rCHT}謝謝你 阿布 謝謝{\r}
+Dialogue: 0,0:33:09.20,0:33:11.92,ENG,NTP,0,0,0,!Effect,Manpower's very light. They got one guy sitting in a booth outside...\N{\rCHT}人手很少 外面的警衛室只有一個人...{\r}
+Dialogue: 0,0:33:12.00,0:33:14.38,ENG,NTP,0,0,0,!Effect,just keeping an eye on things.\N{\rCHT}在盯著{\r}
+Dialogue: 0,0:33:16.05,0:33:19.97,ENG,NTP,0,0,0,!Effect,On the inside, everyone comes in through a standard metal detector.\N{\rCHT}裡面有一具金屬探測器{\r}
+Dialogue: 0,0:33:20.01,0:33:24.10,ENG,NTP,0,0,0,!Effect,It's tricky bringing things through, but I've got that figured out.\N{\rCHT}很難挾帶什麼 但是我有辦法{\r}
+Dialogue: 0,0:33:24.14,0:33:26.93,ENG,NTP,0,0,0,!Effect,All the guards know me now, so no one really looks too close.\N{\rCHT}警衛跟我很熟 不太會查我{\r}
+Dialogue: 0,0:33:26.97,0:33:29.31,ENG,NTP,0,0,0,!Effect,- Okay, thank you.  - All right.\N{\rCHT}- 好 謝謝  - 沒什麼{\r}
+Dialogue: 0,0:33:29.39,0:33:31.73,ENG,NTP,0,0,0,!Effect,Once I'm inside, I can go anywhere I want.\N{\rCHT}我進去之後 哪兒都能去{\r}
+Dialogue: 0,0:33:31.81,0:33:33.27,ENG,NTP,0,0,0,!Effect,Hey, Laurent.\N{\rCHT}嘿 羅倫{\r}
+Dialogue: 0,0:33:33.31,0:33:37.03,ENG,NTP,0,0,0,!Effect,Everything gets run from this one little central command console.\N{\rCHT}小小的中央指揮台控制一切{\r}
+Dialogue: 0,0:33:37.11,0:33:40.95,ENG,NTP,0,0,0,!Effect,They've got fixed video systems in the elevators and in the hallways.\N{\rCHT}電梯和走廊有固定監看攝影機{\r}
+Dialogue: 0,0:33:40.99,0:33:44.08,ENG,NTP,0,0,0,!Effect,They got a couple magnetic doors, but it's all very basic.\N{\rCHT}有幾道磁門 但是都很簡單{\r}
+Dialogue: 0,0:33:44.16,0:33:47.75,ENG,NTP,0,0,0,!Effect,Lots of overtime. Not so much now.\N{\rCHT}以前常常加班 現在比較少{\r}
+Dialogue: 0,0:33:47.83,0:33:50.12,ENG,NTP,0,0,0,!Effect,Now, the head janitor's this old guy, Danny.\N{\rCHT}清潔工是一個叫丹尼的老頭{\r}
+Dialogue: 0,0:33:50.17,0:33:52.54,ENG,NTP,0,0,0,!Effect,He loves Brian. Loves him.\N{\rCHT}他很疼布萊恩{\r}
+Dialogue: 0,0:33:52.63,0:33:55.00,ENG,NTP,0,0,0,!Effect,I've got this guy completely wrapped around my finger.\N{\rCHT}這人完全在我的掌控下{\r}
+Dialogue: 0,0:33:55.09,0:33:57.51,ENG,NTP,0,0,0,!Effect,He'd do anything for me.\N{\rCHT}他會為我做任何事{\r}
+Dialogue: 0,0:33:57.55,0:33:59.59,ENG,NTP,0,0,0,!Effect,And most of the time, he's got me working with him.\N{\rCHT}大多數時間 他讓我跟他一起工作{\r}
+Dialogue: 0,0:33:59.68,0:34:01.47,ENG,NTP,0,0,0,!Effect,Kind of low-level shit, just helping out.\N{\rCHT}簡單的清潔工作{\r}
+Dialogue: 0,0:34:01.51,0:34:04.89,ENG,NTP,0,0,0,!Effect,But I can get away from him plenty. I got all kinds of reasons.\N{\rCHT}不過我有很多藉口走開{\r}
+Dialogue: 0,0:34:04.97,0:34:08.44,ENG,NTP,0,0,0,!Effect,I've sketched half the place already. I've copied a lot of keys.\N{\rCHT}我有平面圖 也拷貝了鑰匙{\r}
+Dialogue: 0,0:34:08.52,0:34:11.69,ENG,NTP,0,0,0,!Effect,I can get you access to basically any room in the place.\N{\rCHT}基本上每個房間都進得去{\r}
+Dialogue: 0,0:34:11.77,0:34:13.32,ENG,NTP,0,0,0,!Effect,Where's the scepter?\N{\rCHT}寶杖在哪裡{\r}
+Dialogue: 0,0:34:13.36,0:34:16.28,ENG,NTP,0,0,0,!Effect,Well, see, that's the kink.\N{\rCHT}麻煩的就在這兒{\r}
+Dialogue: 0,0:34:16.36,0:34:17.90,ENG,NTP,0,0,0,!Effect,Now, get this.\N{\rCHT}那你聽好了{\r}
+Dialogue: 0,0:34:17.99,0:34:20.91,ENG,NTP,0,0,0,!Effect,It was arranged to be brought into the country...\N{\rCHT}它被送到城裡是藏在了...{\r}
+Dialogue: 0,0:34:20.99,0:34:24.99,ENG,NTP,0,0,0,!Effect,inside the leg of an antique piano.\N{\rCHT}一架古董鋼琴的腳柱裡{\r}
+Dialogue: 0,0:34:25.04,0:34:28.83,ENG,NTP,0,0,0,!Effect,And it was so simple. Then they impounded it.\N{\rCHT}本來很簡單 但是這批古董卻被扣押{\r}
+Dialogue: 0,0:34:28.87,0:34:30.88,ENG,NTP,0,0,0,!Effect,I mean, can you guess why?\N{\rCHT}我是說 你猜怎麼著{\r}
+Dialogue: 0,0:34:30.92,0:34:33.75,ENG,NTP,0,0,0,!Effect,Fucking bugs.\N{\rCHT}該死的蟲子{\r}
+Dialogue: 0,0:34:33.84,0:34:37.34,ENG,NTP,0,0,0,!Effect,I mean, the whole shipment was contaminated with termites.\N{\rCHT}我是說 整批貨都有白蟻{\r}
+Dialogue: 0,0:34:37.42,0:34:39.39,ENG,NTP,0,0,0,!Effect,Asian longhorn beetles.\N{\rCHT}亞洲產長角白蟻{\r}
+Dialogue: 0,0:34:40.47,0:34:42.39,ENG,NTP,0,0,0,!Effect,We got fucked by bugs.\N{\rCHT}我們被蟲蟲害慘了{\r}
+Dialogue: 0,0:34:44.85,0:34:46.35,ENG,NTP,0,0,0,!Effect,These things burrow into the wood...\N{\rCHT}這些白蟻鑽進...{\r}
+Dialogue: 0,0:34:46.43,0:34:48.31,ENG,NTP,0,0,0,!Effect,so they were in the crates of most of the shipment.\N{\rCHT}整批貨的木箱{\r}
+Dialogue: 0,0:34:48.39,0:34:50.86,ENG,NTP,0,0,0,!Effect,So they took the goods out and delivered most of them.\N{\rCHT}多數的古董都被取出運走{\r}
+Dialogue: 0,0:34:50.94,0:34:53.73,ENG,NTP,0,0,0,!Effect,But the piano is made of wood too, so they impounded it.\N{\rCHT}但鋼琴也是木制的 所以遭到扣押{\r}
+Dialogue: 0,0:34:53.82,0:34:55.99,ENG,NTP,0,0,0,!Effect,They took the whole thing and put it in quarantine.\N{\rCHT}他們扣押了所有的東西 並隔離起來了{\r}
+Dialogue: 0,0:34:56.07,0:34:58.70,ENG,NTP,0,0,0,!Effect,Medium security, third-floor lockup.\N{\rCHT}中級安全指數 鎖在三樓{\r}
+Dialogue: 0,0:34:58.74,0:35:00.32,ENG,NTP,0,0,0,!Effect,They're really scared of these things...\N{\rCHT}他們很怕白蟻...{\r}
+Dialogue: 0,0:35:00.41,0:35:02.08,ENG,NTP,0,0,0,!Effect,and they can't send them back to France.\N{\rCHT}不敢送回法國{\r}
+Dialogue: 0,0:35:04.75,0:35:06.91,ENG,NTP,0,0,0,!Effect,So they decided to burn everything.\N{\rCHT}所以決定燒毀一切{\r}
+Dialogue: 0,0:35:15.97,0:35:17.93,ENG,NTP,0,0,0,!Effect,Now, I'll tell ya...\N{\rCHT}現在 我跟你說...{\r}
+Dialogue: 0,0:35:17.97,0:35:20.30,ENG,NTP,0,0,0,!Effect,I didn't know which one of the fucking legs this thing is in...\N{\rCHT}我不知道寶杖藏在哪一根腳柱...{\r}
+Dialogue: 0,0:35:20.39,0:35:23.52,ENG,NTP,0,0,0,!Effect,but half of me was tempted to grab them all and make a break for it.\N{\rCHT}我很想抓了四根腳柱就跑{\r}
+Dialogue: 0,0:35:23.60,0:35:27.44,ENG,NTP,0,0,0,!Effect,I mean, I don't know if this thing's gonna melt or what.\N{\rCHT}它隨時都可能被熔化{\r}
+Dialogue: 0,0:35:28.60,0:35:30.77,ENG,NTP,0,0,0,!Effect,I mean, I was dying.\N{\rCHT}我是說 我快急死了{\r}
+Dialogue: 0,0:35:34.32,0:35:36.66,ENG,NTP,0,0,0,!Effect,I had to improvise a little.\N{\rCHT}最後我靈機一動{\r}
+Dialogue: 0,0:35:41.37,0:35:43.66,ENG,NTP,0,0,0,!Effect,- I-I saw something in the fire.  - We're just burning stuff.\N{\rCHT}- 羅倫... 你看那堆火  - 它在燒{\r}
+Dialogue: 0,0:35:43.75,0:35:47.96,ENG,NTP,0,0,0,!Effect,No. Look, look. I saw something in the...\N{\rCHT}不 看 你看 我看到鋼琴裡...{\r}
+Dialogue: 0,0:35:48.04,0:35:51.38,ENG,NTP,0,0,0,!Effect,Piano. In the piano, I saw a... Look.\N{\rCHT}有東西 在鋼琴裡 我看到個... 看{\r}
+Dialogue: 0,0:35:51.46,0:35:52.55,ENG,NTP,0,0,0,!Effect,- I saw something.  - Jack!\N{\rCHT}- 我看到東西  - 傑克{\r}
+Dialogue: 0,0:35:53.92,0:35:56.05,ENG,NTP,0,0,0,!Effect,There! There!\N{\rCHT}那兒 那兒{\r}
+Dialogue: 0,0:35:58.22,0:36:00.14,ENG,NTP,0,0,0,!Effect,What is it?\N{\rCHT}這是什麼{\r}
+Dialogue: 0,0:36:09.77,0:36:11.44,ENG,NTP,0,0,0,!Effect,So everybody's freaking out.\N{\rCHT}大家慌了手腳{\r}
+Dialogue: 0,0:36:11.48,0:36:13.57,ENG,NTP,0,0,0,!Effect,Nobody knows what this is or what to do with it.\N{\rCHT}不知道怎麼辦{\r}
+Dialogue: 0,0:36:13.65,0:36:15.57,ENG,NTP,0,0,0,!Effect,They don't see this kind of excitement down there.\N{\rCHT}他們沒碰過這種大事{\r}
+Dialogue: 0,0:36:15.66,0:36:17.66,ENG,NTP,0,0,0,!Effect,So they call some supervisor. They get him out of bed.\N{\rCHT}於是他們馬上把主管叫來 他們把他從床上叫起來{\r}
+Dialogue: 0,0:36:17.74,0:36:20.16,ENG,NTP,0,0,0,!Effect,He comes down, he takes one look at this thing.\N{\rCHT}他來了 看了看{\r}
+Dialogue: 0,0:36:20.24,0:36:23.37,ENG,NTP,0,0,0,!Effect,He doesn't know what the hell it is, but he knows it's worth a lot.\N{\rCHT}他也搞不懂 只知道它很值錢{\r}
+Dialogue: 0,0:36:23.46,0:36:26.46,ENG,NTP,0,0,0,!Effect,He tells them, until they can sort it out, put it in the basement.\N{\rCHT}他吩咐把它鎖在地下室保險櫃{\r}
+Dialogue: 0,0:36:27.25,0:36:29.38,ENG,NTP,0,0,0,!Effect,- And that's what they do.  - Don't worry. Don't worry.\N{\rCHT}- 他們也照辦了  - 別擔心了 別擔心{\r}
+Dialogue: 0,0:36:29.42,0:36:31.92,ENG,NTP,0,0,0,!Effect,- Don't worry about it.  - I want to see, Danny.\N{\rCHT}- 別擔心  - 我想看看 丹尼{\r}
+Dialogue: 0,0:36:32.01,0:36:34.72,ENG,NTP,0,0,0,!Effect,- Can I see?  - No. Come on. Let's go now.\N{\rCHT}- 我能看到嗎  - 不 來吧 我們走吧{\r}
+Dialogue: 0,0:36:34.76,0:36:37.22,ENG,NTP,0,0,0,!Effect,Okay. Bye-bye. Bye.\N{\rCHT}好 再見 再見{\r}
+Dialogue: 0,0:36:52.70,0:36:54.32,ENG,NTP,0,0,0,!Effect,The basement in the customshouse...\N{\rCHT}海關大樓地下室...{\r}
+Dialogue: 0,0:36:54.41,0:36:56.70,ENG,NTP,0,0,0,!Effect,is the most secure lockup in eastern Canada.\N{\rCHT}是東加拿大門禁最森嚴的地方{\r}
+Dialogue: 0,0:36:56.78,0:36:59.20,ENG,NTP,0,0,0,!Effect,It was built as a bomb shelter during the Cold War.\N{\rCHT}冷戰期間是核戰避難所{\r}
+Dialogue: 0,0:36:59.29,0:37:02.75,ENG,NTP,0,0,0,!Effect,All their important stuff's there... state's evidence, narcotics...\N{\rCHT}貴重物品都鎖在那兒... 物證 毒品...{\r}
+Dialogue: 0,0:37:02.83,0:37:04.58,ENG,NTP,0,0,0,!Effect,confiscated weapons.\N{\rCHT}走私槍械{\r}
+Dialogue: 0,0:37:04.63,0:37:07.42,ENG,NTP,0,0,0,!Effect,That scepter is in a safe somewhere in this room.\N{\rCHT}寶杖在某個保險櫃裡{\r}
+Dialogue: 0,0:37:07.46,0:37:09.51,ENG,NTP,0,0,0,!Effect,But the thing is, there's no... there's no cameras.\N{\rCHT}但問題是 那兒沒... 沒攝影機{\r}
+Dialogue: 0,0:37:09.59,0:37:12.26,ENG,NTP,0,0,0,!Effect,If there was, I would've seen an angle on the video monitors.\N{\rCHT}有的話我會看得到{\r}
+Dialogue: 0,0:37:12.34,0:37:16.01,ENG,NTP,0,0,0,!Effect,So if we can put you inside that room, you can work on it all night.\N{\rCHT}你進去了就有一整晚去開鎖{\r}
+Dialogue: 0,0:37:18.18,0:37:21.73,ENG,NTP,0,0,0,!Effect,We'll need pictures of the safe or a model number from their files.\N{\rCHT}我要知道保險櫃的型號{\r}
+Dialogue: 0,0:37:21.81,0:37:25.15,ENG,NTP,0,0,0,!Effect,Then we're gonna need plans... infrastructure maps...\N{\rCHT}我還要平面圖... 地圖...{\r}
+Dialogue: 0,0:37:25.23,0:37:28.40,ENG,NTP,0,0,0,!Effect,blueprints, schematics, anything we can get our hands on.\N{\rCHT}藍圖 設計圖等等{\r}
+Dialogue: 0,0:37:28.48,0:37:30.36,ENG,NTP,0,0,0,!Effect,That's all I got for now, but give me two days.\N{\rCHT}再給我兩天 就能拿得到{\r}
+Dialogue: 0,0:37:30.44,0:37:32.91,ENG,NTP,0,0,0,!Effect,We just gotta find a way to get into that basement.\N{\rCHT}還要設法進地下室{\r}
+Dialogue: 0,0:38:15.37,0:38:17.50,ENG,NTP,0,0,0,!Effect,You gonna let it go, or are we gonna drive around pissed all night?\N{\rCHT}你要不計前嫌 還是一直臭著一張臉開車{\r}
+Dialogue: 0,0:38:17.58,0:38:19.25,ENG,NTP,0,0,0,!Effect,Why don't you kiss my ass?\N{\rCHT}去吃屎吧{\r}
+Dialogue: 0,0:38:44.02,0:38:47.57,ENG,NTP,0,0,0,!Effect,- We're about set up. You ready?  - Hold on.\N{\rCHT}- 我們好了 你呢  - 等一下{\r}
+Dialogue: 0,0:39:04.38,0:39:07.17,ENG,NTP,0,0,0,!Effect,- Wanna give me a mark?  - Not yet. Not yet.\N{\rCHT}- 能把座標給我  - 還不行 還不行{\r}
+Dialogue: 0,0:39:20.06,0:39:21.77,ENG,NTP,0,0,0,!Effect,How you doing?\N{\rCHT}怎麼樣{\r}
+Dialogue: 0,0:39:21.86,0:39:24.32,ENG,NTP,0,0,0,!Effect,Stay off the air until I call.\N{\rCHT}等我跟你聯絡{\r}
+Dialogue: 0,0:39:48.30,0:39:50.68,ENG,NTP,0,0,0,!Effect,{\fs18}33 26...{\r}\NThree-three, two-six...
+Dialogue: 0,0:39:50.76,0:39:53.14,ENG,NTP,0,0,0,!Effect,{\fs18}29 32{\r}\Ntwo-nine, three-two.
+Dialogue: 0,0:39:53.18,0:39:58.86,ENG,NTP,0,0,0,!Effect,I repeat: 33, 26, 29, 32.\N{\rCHT}我重複一下 33 26 29 32{\r}
+Dialogue: 0,0:39:58.94,0:40:03.03,ENG,NTP,0,0,0,!Effect,Copy that. Three-three, two-six, two-nine, three-two\N{\rCHT}收到了 33 26 29 32{\r}
+Dialogue: 0,0:40:07.07,0:40:10.83,ENG,NTP,0,0,0,!Effect,Make a right. Proceed east about 20 yards.\N{\rCHT}右轉 向東走20碼{\r}
+Dialogue: 0,0:40:10.91,0:40:12.83,ENG,NTP,0,0,0,!Effect,You should see the next opening.\N{\rCHT}就是下一個缺口{\r}
+Dialogue: 0,0:40:21.46,0:40:23.84,ENG,NTP,0,0,0,!Effect,I'm at a wall here, a cinder block wall...\N{\rCHT}我面前是一堵泥牆...{\r}
+Dialogue: 0,0:40:23.92,0:40:25.72,ENG,NTP,0,0,0,!Effect,where you told me I have to go.\N{\rCHT}你叫我去哪兒{\r}
+Dialogue: 0,0:40:25.80,0:40:28.05,ENG,NTP,0,0,0,!Effect,Are you sure about that? It shows a straight shot on here.\N{\rCHT}真的嗎 應該直走才對{\r}
+Dialogue: 0,0:40:28.14,0:40:30.76,ENG,NTP,0,0,0,!Effect,It's not my imagination. I'm right here in front of it.\N{\rCHT}我沒做夢 這就是一堵牆{\r}
+Dialogue: 0,0:40:30.85,0:40:33.23,ENG,NTP,0,0,0,!Effect,You wanna come down here and see for yourself?\N{\rCHT}你自己下來看看{\r}
+Dialogue: 0,0:40:34.69,0:40:37.52,ENG,NTP,0,0,0,!Effect,Right. Okay, okay. Hold on.\N{\rCHT}好吧 好的 好的 等一下{\r}
+Dialogue: 0,0:40:39.86,0:40:41.78,ENG,NTP,0,0,0,!Effect,All right, just give me a second.\N{\rCHT}好的 等我一下{\r}
+Dialogue: 0,0:40:44.61,0:40:47.53,ENG,NTP,0,0,0,!Effect,- Can you read me?  - Make a left. Go about 20 feet.\N{\rCHT}- 你聽到嗎  - 左轉 走20英尺{\r}
+Dialogue: 0,0:40:47.57,0:40:49.16,ENG,NTP,0,0,0,!Effect,You should run into a parallel tunnel.\N{\rCHT}有一條平行通道{\r}
+Dialogue: 0,0:40:49.24,0:40:51.70,ENG,NTP,0,0,0,!Effect,Make a right. You'll be right back on course.\N{\rCHT}右轉就對了{\r}
+Dialogue: 0,0:40:55.42,0:40:58.21,ENG,NTP,0,0,0,!Effect,Take the tunnel about 150 yards due west.\N{\rCHT}進了通道向西走150碼{\r}
+Dialogue: 0,0:40:58.25,0:41:00.55,ENG,NTP,0,0,0,!Effect,You'll reach a "T" junction. Tell me when you're there.\N{\rCHT}到了T字路口就告訴我{\r}
+Dialogue: 0,0:41:00.63,0:41:02.05,ENG,NTP,0,0,0,!Effect,About 300yards.\N{\rCHT}走三百碼{\r}
+Dialogue: 0,0:41:02.13,0:41:05.01,ENG,NTP,0,0,0,!Effect,- Came to the end. Made a right.  - Head Northwest.\N{\rCHT}- 到了盡頭往右轉  - 往西北走{\r}
+Dialogue: 0,0:41:05.05,0:41:06.85,ENG,NTP,0,0,0,!Effect,Northeast. Check that. Northeast.\N{\rCHT}東北 看一下 是東北方向{\r}
+Dialogue: 0,0:41:06.89,0:41:08.39,ENG,NTP,0,0,0,!Effect,One second. Hold on.\N{\rCHT}等一下{\r}
+Dialogue: 0,0:41:09.43,0:41:12.52,ENG,NTP,0,0,0,!Effect,- Are you with me?  - Going west. Going west.\N{\rCHT}- 可以嗎  - 我正往西走 正往西走{\r}
+Dialogue: 0,0:41:12.60,0:41:17.40,ENG,NTP,0,0,0,!Effect,- I'm going west. I'm in a circle.  - Make a right. Go 40 yards east.\N{\rCHT}- 我正往西走 我繞圈了  - 右轉 往東走四十碼{\r}
+Dialogue: 0,0:41:17.44,0:41:21.40,ENG,NTP,0,0,0,!Effect,Then make a left turn. Go about...\N{\rCHT}然後左轉 走大約...{\r}
+Dialogue: 0,0:41:21.49,0:41:23.53,ENG,NTP,0,0,0,!Effect,Make a right. Head back.\N{\rCHT}右轉 回來{\r}
+Dialogue: 0,0:41:23.57,0:41:26.03,ENG,NTP,0,0,0,!Effect,You got maybe 500 yards to go.\N{\rCHT}還有五百碼{\r}
+Dialogue: 0,0:41:33.29,0:41:36.63,ENG,NTP,0,0,0,!Effect,Straight ahead 20 feet, and you should be dead under the room.\N{\rCHT}再走二十英尺就在地下室正下方{\r}
+Dialogue: 0,0:41:36.71,0:41:38.30,ENG,NTP,0,0,0,!Effect,The tunnel will keep on going.\N{\rCHT}通道很長{\r}
+Dialogue: 0,0:41:38.38,0:41:40.80,ENG,NTP,0,0,0,!Effect,But look up. You should see the access ladder.\N{\rCHT}但看上面 你應該能看到梯子{\r}
+Dialogue: 0,0:41:47.39,0:41:49.39,ENG,NTP,0,0,0,!Effect,I'm at a shaft. I'm gonna climb up.\N{\rCHT}找到了 我要爬上去{\r}
+Dialogue: 0,0:42:01.61,0:42:03.53,ENG,NTP,0,0,0,!Effect,What are you doing?\N{\rCHT}你在幹嘛{\r}
+Dialogue: 0,0:42:04.28,0:42:05.66,ENG,NTP,0,0,0,!Effect,Still climbing.\N{\rCHT}我還在爬{\r}
+Dialogue: 0,0:42:26.64,0:42:27.56,ENG,NTP,0,0,0,!Effect,This looks like it.\N{\rCHT}看來是了{\r}
+Dialogue: 0,0:44:01.62,0:44:03.54,ENG,NTP,0,0,0,!Effect,I'm done.\N{\rCHT}我好了{\r}
+Dialogue: 0,0:44:15.51,0:44:17.43,ENG,NTP,0,0,0,!Effect,What the hell is this?\N{\rCHT}搞什麼鬼{\r}
+Dialogue: 0,0:44:23.22,0:44:25.39,ENG,NTP,0,0,0,!Effect,Hey, you got a utility crew all over the entrance.\N{\rCHT}出口都是工程人員{\r}
+Dialogue: 0,0:44:25.48,0:44:27.39,ENG,NTP,0,0,0,!Effect,You're gonna have to find another way out.\N{\rCHT}你要找別的出口{\r}
+Dialogue: 0,0:45:01.68,0:45:03.81,ENG,NTP,0,0,0,!Effect,Where are you?\N{\rCHT}你在哪裡{\r}
+Dialogue: 0,0:45:10.78,0:45:13.15,ENG,NTP,0,0,0,!Effect,I'm at De La Montagne and Ottawa.\N{\rCHT}丹提和奧塔瓦街口{\r}
+Dialogue: 0,0:45:13.24,0:45:15.24,ENG,NTP,0,0,0,!Effect,Repeat: De La Montagne and Ottawa.\N{\rCHT}重複 丹提和奧塔瓦街口{\r}
+Dialogue: 0,0:45:15.28,0:45:17.24,ENG,NTP,0,0,0,!Effect,Got it. We're on our way.\N{\rCHT}好 我們正趕去{\r}
+Dialogue: 0,0:45:24.08,0:45:26.00,ENG,NTP,0,0,0,!Effect,This should be it, right here.\N{\rCHT}應該就在那裡 就這兒{\r}
+Dialogue: 0,0:45:27.25,0:45:30.13,ENG,NTP,0,0,0,!Effect,We're here. I'm just trying to find you.\N{\rCHT}到了 我正在找你{\r}
+Dialogue: 0,0:45:30.21,0:45:32.63,ENG,NTP,0,0,0,!Effect,There. He's right over there.\N{\rCHT}那兒 他在那兒{\r}
+Dialogue: 0,0:45:54.99,0:45:56.78,ENG,NTP,0,0,0,!Effect,Okay, you're all clear.\N{\rCHT}好的 你安全了{\r}
+Dialogue: 0,0:45:56.82,0:45:58.79,ENG,NTP,0,0,0,!Effect,I'm coming out.\N{\rCHT}出來了{\r}
+Dialogue: 0,0:46:08.27,0:46:11.40,ENG,NTP,0,0,0,!Effect,Excuse me.\N{\rCHT}不好意思{\r}
+Dialogue: 0,0:46:25.85,0:46:28.79,ENG,NTP,0,0,0,!Effect,Merci. Good night.\N{\rCHT}謝謝 晚安{\r}
+Dialogue: 0,0:46:43.17,0:46:44.58,ENG,NTP,0,0,0,!Effect,Hello.\N{\rCHT}好啊{\r}
+Dialogue: 0,0:46:46.21,0:46:48.17,ENG,NTP,0,0,0,!Effect,Anybody home?\N{\rCHT}有人在嗎{\r}
+Dialogue: 0,0:47:07.23,0:47:09.49,ENG,NTP,0,0,0,!Effect,- Champagne.  - Yeah.\N{\rCHT}- 香檳啊  - 是啊{\r}
+Dialogue: 0,0:47:09.57,0:47:11.74,ENG,NTP,0,0,0,!Effect,- Nice touch.  - Nice dress.\N{\rCHT}- 不錯啊  - 好漂亮的禮服{\r}
+Dialogue: 0,0:47:11.82,0:47:13.66,ENG,NTP,0,0,0,!Effect,You like? Thank you.\N{\rCHT}喜歡嗎 謝了{\r}
+Dialogue: 0,0:47:15.99,0:47:20.67,ENG,NTP,0,0,0,!Effect,So, you asked me a question a couple of days ago.\N{\rCHT}所以 前幾天你問我一個問題{\r}
+Dialogue: 0,0:47:20.75,0:47:23.21,ENG,NTP,0,0,0,!Effect,And you gave it some serious thought?\N{\rCHT}你認真想過了{\r}
+Dialogue: 0,0:47:24.17,0:47:26.09,ENG,NTP,0,0,0,!Effect,Actually, I forgot the question.\N{\rCHT}其實 我忘了問題是什麼{\r}
+Dialogue: 0,0:47:28.55,0:47:31.05,ENG,NTP,0,0,0,!Effect,Here's my answer.\N{\rCHT}這是我的回答{\r}
+Dialogue: 0,0:47:31.13,0:47:32.64,ENG,NTP,0,0,0,!Effect,You're not holding up your glass.\N{\rCHT}你沒舉杯{\r}
+Dialogue: 0,0:47:32.72,0:47:34.05,ENG,NTP,0,0,0,!Effect,I'm sorry.\N{\rCHT}抱歉{\r}
+Dialogue: 0,0:47:36.35,0:47:39.06,ENG,NTP,0,0,0,!Effect,My father was a lawyer... very smart man...\N{\rCHT}我爸是律師... 他很聰明...{\r}
+Dialogue: 0,0:47:39.14,0:47:42.48,ENG,NTP,0,0,0,!Effect,and he would always say that a deal is only good...\N{\rCHT}他老是說一單好買賣...{\r}
+Dialogue: 0,0:47:42.56,0:47:46.40,ENG,NTP,0,0,0,!Effect,if it leaves both parties feeling as if they gave up something.\N{\rCHT}雙方都要感覺有所付出{\r}
+Dialogue: 0,0:47:46.44,0:47:49.65,ENG,NTP,0,0,0,!Effect,Is an answer coming soon? 'Cause the glass is getting heavy.\N{\rCHT}快要回答了嗎 酒杯越來越重{\r}
+Dialogue: 0,0:47:51.74,0:47:53.16,ENG,NTP,0,0,0,!Effect,Okay.\N{\rCHT}好{\r}
+Dialogue: 0,0:47:54.33,0:47:56.45,ENG,NTP,0,0,0,!Effect,I will change my life...\N{\rCHT}我會改變生活...{\r}
+Dialogue: 0,0:47:56.54,0:47:58.46,ENG,NTP,0,0,0,!Effect,I will move here...\N{\rCHT}我會搬來這裡...{\r}
+Dialogue: 0,0:48:00.29,0:48:01.63,ENG,NTP,0,0,0,!Effect,I will love you...\N{\rCHT}我也會愛你...{\r}
+Dialogue: 0,0:48:03.29,0:48:07.42,ENG,NTP,0,0,0,!Effect,and believe that this is the best decision that I've made.\N{\rCHT}我也相信這是最好的決定{\r}
+Dialogue: 0,0:48:09.18,0:48:12.22,ENG,NTP,0,0,0,!Effect,But I will not move here if it means that one day...\N{\rCHT}但我不希望有一天你會坐牢...{\r}
+Dialogue: 0,0:48:12.30,0:48:14.01,ENG,NTP,0,0,0,!Effect,I might have to talk to you through glass.\N{\rCHT}我得隔著玻璃跟你說話{\r}
+Dialogue: 0,0:48:14.10,0:48:16.52,ENG,NTP,0,0,0,!Effect,I won't move here if it means spending my nights worrying.\N{\rCHT}或是每晚為你擔心害怕{\r}
+Dialogue: 0,0:48:16.60,0:48:22.15,ENG,NTP,0,0,0,!Effect,So if you can promise me, as of right now, that you're through...\N{\rCHT}要是你答應馬上洗手不幹...{\r}
+Dialogue: 0,0:48:23.40,0:48:26.44,ENG,NTP,0,0,0,!Effect,then we can drink to making changes.\N{\rCHT}我們就乾杯慶祝{\r}
+Dialogue: 0,0:48:34.83,0:48:37.79,ENG,NTP,0,0,0,!Effect,I... I said you could drink now.\N{\rCHT}我... 我說乾杯了{\r}
+Dialogue: 0,0:48:37.83,0:48:38.92,ENG,NTP,0,0,0,!Effect,I know.\N{\rCHT}我知道{\r}
+Dialogue: 0,0:48:39.00,0:48:41.54,ENG,NTP,0,0,0,!Effect,I wanna do all that.\N{\rCHT}這些我都想要{\r}
+Dialogue: 0,0:48:43.17,0:48:47.47,ENG,NTP,0,0,0,!Effect,I just have to tell you that I'm gonna do one more thing...\N{\rCHT}但是我必須幹這最後一票...{\r}
+Dialogue: 0,0:48:47.51,0:48:49.64,ENG,NTP,0,0,0,!Effect,- And that's it.  - Oh, fuck.\N{\rCHT}- 就這樣  - 哦 媽的{\r}
+Dialogue: 0,0:48:49.68,0:48:52.18,ENG,NTP,0,0,0,!Effect,Everything you said is great. It's perfect.\N{\rCHT}你說的都很棒 很完美{\r}
+Dialogue: 0,0:48:52.22,0:48:55.52,ENG,NTP,0,0,0,!Effect,I just have one more thing I have to do.\N{\rCHT}只是我還得幹最後一票{\r}
+Dialogue: 0,0:48:55.60,0:48:58.27,ENG,NTP,0,0,0,!Effect,You put that out there when you knew you couldn't follow through.\N{\rCHT}你明明辦不到卻要哄我{\r}
+Dialogue: 0,0:48:58.35,0:49:01.19,ENG,NTP,0,0,0,!Effect,I put it out there because... I am following through.\N{\rCHT}我說出來是因為... 我一直跟著{\r}
+Dialogue: 0,0:49:01.23,0:49:03.19,ENG,NTP,0,0,0,!Effect,- This is my last one. I promise.  - Sure it is.\N{\rCHT}- 這是我的最後一票 我保證  - 才怪{\r}
+Dialogue: 0,0:49:03.28,0:49:05.32,ENG,NTP,0,0,0,!Effect,I promise you it is my last one.\N{\rCHT}我向你保證{\r}
+Dialogue: 0,0:49:05.36,0:49:08.03,ENG,NTP,0,0,0,!Effect,Then quit. Quit now.\N{\rCHT}那就馬上退出{\r}
+Dialogue: 0,0:49:08.11,0:49:09.53,ENG,NTP,0,0,0,!Effect,What does "one last one" mean?\N{\rCHT}"最後一票"是什麼意思{\r}
+Dialogue: 0,0:49:09.53,0:49:11.20,ENG,NTP,0,0,0,!Effect,It means we don't need anything.\N{\rCHT}意思是你要什麼就有什麼{\r}
+Dialogue: 0,0:49:11.28,0:49:15.16,ENG,NTP,0,0,0,!Effect,I didn't need anything before, and I don't need anything now...\N{\rCHT}我從以前到現在什麼都不要...{\r}
+Dialogue: 0,0:49:15.21,0:49:17.46,ENG,NTP,0,0,0,!Effect,but what I wanted was to be with you.\N{\rCHT}我只要跟你在一起{\r}
+Dialogue: 0,0:49:17.54,0:49:21.09,ENG,NTP,0,0,0,!Effect,And what I didn't need was exactly this kind of painful bullshit.\N{\rCHT}我不要聽這種屁話{\r}
+Dialogue: 0,0:49:21.17,0:49:25.72,ENG,NTP,0,0,0,!Effect,My life wasn't perfect before, but at least we were clear.\N{\rCHT}我之前的生活不算完美 但至少清清楚楚{\r}
+Dialogue: 0,0:49:28.47,0:49:29.47,ENG,NTP,0,0,0,!Effect,Give me some...\N{\rCHT}你要給我時間...{\r}
+Dialogue: 0,0:49:31.77,0:49:33.73,ENG,NTP,0,0,0,!Effect,I'll see you when I see you.\N{\rCHT}到時候再見{\r}
+Dialogue: 0,0:50:44.80,0:50:47.10,ENG,NTP,0,0,0,!Effect,Hey, what are you doing?\N{\rCHT}你在幹嘛{\r}
+Dialogue: 0,0:50:47.18,0:50:49.93,ENG,NTP,0,0,0,!Effect,Somebody put fingerprints on my window, Danny.\N{\rCHT}有人把窗子弄髒 丹尼{\r}
+Dialogue: 0,0:50:50.02,0:50:53.27,ENG,NTP,0,0,0,!Effect,- You don't need to do it.  - I like a clean window, Danny.\N{\rCHT}- 你不必擦 沒關係  - 我很愛乾淨 丹尼{\r}
+Dialogue: 0,0:50:53.35,0:50:54.56,ENG,NTP,0,0,0,!Effect,It's all right.\N{\rCHT}沒關係{\r}
+Dialogue: 0,0:50:54.65,0:50:57.82,ENG,NTP,0,0,0,!Effect,We missed you last night. You feeling better?\N{\rCHT}你昨天沒來 好多了嗎{\r}
+Dialogue: 0,0:50:57.90,0:50:59.36,ENG,NTP,0,0,0,!Effect,- Yes, thank you.  - Sure?\N{\rCHT}- 好多了 謝謝  - 你確定{\r}
+Dialogue: 0,0:50:59.44,0:51:00.65,ENG,NTP,0,0,0,!Effect,Yes, I'm okay. Thank you, Danny.\N{\rCHT}確定 我很好 謝謝 丹尼{\r}
+Dialogue: 0,0:51:00.74,0:51:04.37,ENG,NTP,0,0,0,!Effect,- Take your time. Okay, bye-bye.  - Bye-bye.\N{\rCHT}- 慢慢來 好的 再見  - 再見{\r}
+Dialogue: 0,0:51:04.45,0:51:05.53,ENG,NTP,0,0,0,!Effect,Bye.\N{\rCHT}再見{\r}
+Dialogue: 0,0:51:22.59,0:51:24.51,ENG,NTP,0,0,0,!Effect,That's your safe.\N{\rCHT}就是這種保險櫃{\r}
+Dialogue: 0,0:51:29.73,0:51:32.81,ENG,NTP,0,0,0,!Effect,Traeger standing jeweler's safe, this year's model.\N{\rCHT}全新的崔格牌直立式保險櫃{\r}
+Dialogue: 0,0:51:32.90,0:51:36.15,ENG,NTP,0,0,0,!Effect,If it's new, it's gonna be tough to get the schematics.\N{\rCHT}如果是新的 一定很難找到資料{\r}
+Dialogue: 0,0:51:36.23,0:51:38.23,ENG,NTP,0,0,0,!Effect,I've got all this year's books.\N{\rCHT}我全都有{\r}
+Dialogue: 0,0:51:38.28,0:51:40.70,ENG,NTP,0,0,0,!Effect,- Really?  - Yeah. What else?\N{\rCHT}- 真的嗎  - 是 還有呢{\r}
+Dialogue: 0,0:51:40.78,0:51:44.03,ENG,NTP,0,0,0,!Effect,Okay, the system's Ironclad Security.\N{\rCHT}好的 銅牆鐵壁保全公司負責保全{\r}
+Dialogue: 0,0:51:44.12,0:51:45.74,ENG,NTP,0,0,0,!Effect,They're a big commercial industrial outfit.\N{\rCHT}他們是大的商業企業的必要裝備{\r}
+Dialogue: 0,0:51:45.78,0:51:48.12,ENG,NTP,0,0,0,!Effect,They handle a lot of the government buildings here.\N{\rCHT}他們負責很多政府大樓的保全{\r}
+Dialogue: 0,0:51:48.16,0:51:51.29,ENG,NTP,0,0,0,!Effect,Now, this building's pretty old. The lines are all over the place.\N{\rCHT}這棟大樓很舊 管線很好找{\r}
+Dialogue: 0,0:51:51.37,0:51:54.38,ENG,NTP,0,0,0,!Effect,They're easy to find. I can cut in three or four different places...\N{\rCHT}你能從三 四個地方進去...{\r}
+Dialogue: 0,0:51:54.46,0:51:58.17,ENG,NTP,0,0,0,!Effect,and let you in from there, but I need the engineering pass codes.\N{\rCHT}你可以進到裡面 但是我要通行密碼{\r}
+Dialogue: 0,0:51:58.26,0:51:59.80,ENG,NTP,0,0,0,!Effect,I've been looking. They don't keep them in here.\N{\rCHT}我在找呢 他們沒放在裡面{\r}
+Dialogue: 0,0:51:59.88,0:52:03.22,ENG,NTP,0,0,0,!Effect,They'll be at Ironclad. I don't know what to do.\N{\rCHT}應該會在保命公司 我沒輒了{\r}
+Dialogue: 0,0:52:03.30,0:52:04.60,ENG,NTP,0,0,0,!Effect,Okay.\N{\rCHT}好吧{\r}
+Dialogue: 0,0:52:06.27,0:52:08.18,ENG,NTP,0,0,0,!Effect,What, are you calling someone now?\N{\rCHT}怎麼 你打給什麼人{\r}
+Dialogue: 0,0:52:12.44,0:52:15.23,ENG,NTP,0,0,0,!Effect,- What? Who is this?  - It's me. Turn down the music.\N{\rCHT}- 什麼 誰  - 是我 音樂關小聲{\r}
+Dialogue: 0,0:52:17.99,0:52:20.24,ENG,NTP,0,0,0,!Effect,Hey, Nick, I am fucked up.\N{\rCHT}嘿 尼克 我慘了{\r}
+Dialogue: 0,0:52:20.32,0:52:22.66,ENG,NTP,0,0,0,!Effect,My mother's totally out of control.\N{\rCHT}我老媽抓狂了{\r}
+Dialogue: 0,0:52:22.74,0:52:24.37,ENG,NTP,0,0,0,!Effect,Listen. Listen carefully.\N{\rCHT}聽 仔細聽{\r}
+Dialogue: 0,0:52:24.45,0:52:26.12,ENG,NTP,0,0,0,!Effect,Ironclad Security.\N{\rCHT}銅牆鐵壁保全公司{\r}
+Dialogue: 0,0:52:26.20,0:52:28.25,ENG,NTP,0,0,0,!Effect,- Big outfit.  - Yeah.\N{\rCHT}- 大公司  - 對{\r}
+Dialogue: 0,0:52:28.33,0:52:30.83,ENG,NTP,0,0,0,!Effect,I need engineering pass codes for the customshouse.\N{\rCHT}我要海關大樓的通行密碼{\r}
+Dialogue: 0,0:52:30.92,0:52:32.96,ENG,NTP,0,0,0,!Effect,I don't know, man. My concentration's shot.\N{\rCHT}我不知道 哥們 狀況很差{\r}
+Dialogue: 0,0:52:33.00,0:52:34.65,ENG,NTP,0,0,0,!Effect,I haven't slept in, like, a month.\N{\rCHT}我很長時間沒睡覺了 大概有 一個月了{\r}
+Dialogue: 0,0:52:34.65,0:52:36.30,ENG,NTP,0,0,0,!Effect,Wait. What customshouse?\N{\rCHT}等等 什麼海關大樓{\r}
+Dialogue: 0,0:52:37.01,0:52:38.13,ENG,NTP,0,0,0,!Effect,Montreal.\N{\rCHT}蒙特婁{\r}
+Dialogue: 0,0:52:40.34,0:52:42.05,ENG,NTP,0,0,0,!Effect,You're not pissing in our own pool, man.\N{\rCHT}別在自家後院撒尿 老兄{\r}
+Dialogue: 0,0:52:42.14,0:52:44.72,ENG,NTP,0,0,0,!Effect,You have always said you were never gonna do a job here in Montreal.\N{\rCHT}你說你不會在蒙特婁犯案的{\r}
+Dialogue: 0,0:52:44.81,0:52:47.48,ENG,NTP,0,0,0,!Effect,- I know. I know. Can you do it?  - Steven!\N{\rCHT}- 我知道 我知道 你行嗎  - 史蒂芬{\r}
+Dialogue: 0,0:52:47.52,0:52:49.35,ENG,NTP,0,0,0,!Effect,Who are you talking to at this hour?\N{\rCHT}你這個點兒在跟誰講話{\r}
+Dialogue: 0,0:52:49.40,0:52:53.57,ENG,NTP,0,0,0,!Effect,I am having a fucking conversation with a friend of mine, Mother!\N{\rCHT}我在跟朋友聊天 老媽{\r}
+Dialogue: 0,0:52:54.36,0:52:57.86,ENG,NTP,0,0,0,!Effect,- Are you... Are you okay?  - She is a ghoul.\N{\rCHT}- 你... 你還好吧  - 她是個怪物{\r}
+Dialogue: 0,0:52:57.95,0:53:00.37,ENG,NTP,0,0,0,!Effect,Now, tell me exactly what you want.\N{\rCHT}那麼 告訴我你到底要什麼{\r}
+Dialogue: 0,0:53:00.45,0:53:04.41,ENG,NTP,0,0,0,!Effect,Just one second. Here's someone who can tell you what we need.\N{\rCHT}等一下 我讓別人跟你說{\r}
+Dialogue: 0,0:53:04.49,0:53:06.87,ENG,NTP,0,0,0,!Effect,Just tell him what you need.\N{\rCHT}跟他說你要什麼{\r}
+Dialogue: 0,0:53:06.96,0:53:10.21,ENG,NTP,0,0,0,!Effect,I need separate disarm and reset master codes for the whole system...\N{\rCHT}我要保全系統的解除重設密碼...{\r}
+Dialogue: 0,0:53:10.25,0:53:12.63,ENG,NTP,0,0,0,!Effect,and I need the individual sector bypass codes...\N{\rCHT}還有個別區域的通行密碼...{\r}
+Dialogue: 0,0:53:12.71,0:53:16.30,ENG,NTP,0,0,0,!Effect,so I can shut down one zone without lighting off the whole board.\N{\rCHT}這樣我就不必關閉整個系統{\r}
+Dialogue: 0,0:53:16.38,0:53:18.43,ENG,NTP,0,0,0,!Effect,- Okay?  - Yes.\N{\rCHT}- 好嗎  - 好的{\r}
+Dialogue: 0,0:53:20.22,0:53:21.68,ENG,NTP,0,0,0,!Effect,- You got that?  - Got it.\N{\rCHT}- 知道了嗎  - 知道了{\r}
+Dialogue: 0,0:53:21.76,0:53:24.35,ENG,NTP,0,0,0,!Effect,Now, listen, I'm gonna need this within 48 hours.\N{\rCHT}那好 聽著 48小時內我就要{\r}
+Dialogue: 0,0:53:24.39,0:53:26.23,ENG,NTP,0,0,0,!Effect,If you do that, I'll double your last price.\N{\rCHT}行的話你的酬勞加倍{\r}
+Dialogue: 0,0:53:27.19,0:53:29.90,ENG,NTP,0,0,0,!Effect,Dude, give me a Kaypro 64 and a live dial tone...\N{\rCHT}只要我有電腦和電話什麼都行...{\r}
+Dialogue: 0,0:53:29.98,0:53:32.23,ENG,NTP,0,0,0,!Effect,and I can do anything.\N{\rCHT}而我可以為所欲為{\r}
+Dialogue: 0,0:53:34.19,0:53:37.11,ENG,NTP,0,0,0,!Effect,Oh, now you are going to die.\N{\rCHT}哦 你死定了{\r}
+Dialogue: 0,0:53:38.53,0:53:41.03,ENG,NTP,0,0,0,!Effect,This is someone you work with?\N{\rCHT}你肯跟這種人合作{\r}
+Dialogue: 0,0:53:41.08,0:53:43.33,ENG,NTP,0,0,0,!Effect,And you're giving me a hard time.\N{\rCHT}卻一直刁難我{\r}
+Dialogue: 0,0:54:14.28,0:54:17.74,ENG,NTP,0,0,0,!Effect,Thursday, 8:07 a.m.\N{\rCHT}星期二 八點七分{\r}
+Dialogue: 0,0:54:17.82,0:54:20.79,ENG,NTP,0,0,0,!Effect,Hi. I got your message. One of the stewardesses is sick...\N{\rCHT}嗨 我聽到你的留言 一名空姐生病...{\r}
+Dialogue: 0,0:54:20.87,0:54:24.00,ENG,NTP,0,0,0,!Effect,so I have to cover for her on a New York run.\N{\rCHT}我得代班飛紐約{\r}
+Dialogue: 0,0:54:24.08,0:54:26.92,ENG,NTP,0,0,0,!Effect,We have to talk when I come through in a couple of days.\N{\rCHT}過兩天等我回來再談{\r}
+Dialogue: 0,0:54:26.96,0:54:28.92,ENG,NTP,0,0,0,!Effect,Okay? Bye.\N{\rCHT}好嗎 再見{\r}
+Dialogue: 0,0:54:30.13,0:54:32.05,ENG,NTP,0,0,0,!Effect,End of messages.\N{\rCHT}留言結束{\r}
+Dialogue: 0,0:54:42.06,0:54:44.73,ENG,NTP,0,0,0,!Effect,Just lock it.\N{\rCHT}把門鎖上{\r}
+Dialogue: 0,0:54:44.81,0:54:48.23,ENG,NTP,0,0,0,!Effect,- You work here?  - No. Here.\N{\rCHT}- 你在這兒工作  - 不 是這兒{\r}
+Dialogue: 0,0:54:56.24,0:54:58.28,ENG,NTP,0,0,0,!Effect,Come on.\N{\rCHT}來吧{\r}
+Dialogue: 0,0:54:58.37,0:55:00.33,ENG,NTP,0,0,0,!Effect,Come on. Come on in.\N{\rCHT}來吧 進來吧{\r}
+Dialogue: 0,0:55:16.10,0:55:18.01,ENG,NTP,0,0,0,!Effect,Want some coffee?\N{\rCHT}喝咖啡嗎{\r}
+Dialogue: 0,0:55:23.56,0:55:27.23,ENG,NTP,0,0,0,!Effect,Jeez. Is this what we're dealing with?\N{\rCHT}天 就是這玩意嗎{\r}
+Dialogue: 0,0:55:31.61,0:55:33.49,ENG,NTP,0,0,0,!Effect,Page 720.\N{\rCHT}720頁{\r}
+Dialogue: 0,0:55:37.95,0:55:43.00,ENG,NTP,0,0,0,!Effect,- Where can I get one of these?  - You gotta know the right people.\N{\rCHT}- 這是哪兒弄來的  - 你要有人脈{\r}
+Dialogue: 0,0:55:43.08,0:55:45.96,ENG,NTP,0,0,0,!Effect,Traeger floor safe. Here it is.\N{\rCHT}崔格牌直立式保險櫃{\r}
+Dialogue: 0,0:55:46.75,0:55:49.67,ENG,NTP,0,0,0,!Effect,Solid steel body.\N{\rCHT}實心不銹鋼鋼板{\r}
+Dialogue: 0,0:55:49.76,0:55:52.13,ENG,NTP,0,0,0,!Effect,Filled door with aluminum and cobalt.\N{\rCHT}門是鋁鈷合金{\r}
+Dialogue: 0,0:55:53.05,0:55:56.10,ENG,NTP,0,0,0,!Effect,Half-inch hard plate. Double dial.\N{\rCHT}半英寸厚 雙重號碼盤{\r}
+Dialogue: 0,0:55:57.93,0:56:00.10,ENG,NTP,0,0,0,!Effect,You're gonna need two, three hours to drill through that.\N{\rCHT}你得花兩三小時才能鑽穿{\r}
+Dialogue: 0,0:56:00.18,0:56:02.98,ENG,NTP,0,0,0,!Effect,- You can't drill this.  - Why not?\N{\rCHT}- 你不能鑽穿  - 為什麼{\r}
+Dialogue: 0,0:56:03.06,0:56:06.36,ENG,NTP,0,0,0,!Effect,'Cause this is a newer model and it's got these glass packs.\N{\rCHT}新的型號有這種玻璃{\r}
+Dialogue: 0,0:56:06.44,0:56:09.74,ENG,NTP,0,0,0,!Effect,See the glass pack here? See?\N{\rCHT}你看到了嗎 看到了嗎{\r}
+Dialogue: 0,0:56:09.82,0:56:12.99,ENG,NTP,0,0,0,!Effect,Drill through that, the glass breaks and those bolts spring into place.\N{\rCHT}玻璃一被弄破鋼栓就會卡死{\r}
+Dialogue: 0,0:56:13.07,0:56:14.83,ENG,NTP,0,0,0,!Effect,You're fucked. They're locked. Forget it.\N{\rCHT}那就完了 鎖著呢 算了吧{\r}
+Dialogue: 0,0:56:14.87,0:56:17.16,ENG,NTP,0,0,0,!Effect,You can't break it with a bulldozer.\N{\rCHT}用推土機都撞不開{\r}
+Dialogue: 0,0:56:17.20,0:56:19.83,ENG,NTP,0,0,0,!Effect,I've never seen anything like that. What do you have in mind?\N{\rCHT}我沒看過這玩意 該怎麼辦{\r}
+Dialogue: 0,0:56:19.91,0:56:22.96,ENG,NTP,0,0,0,!Effect,I don't know, but if somebody built it, somebody can unbuild it.\N{\rCHT}我不知道 但只要做得出來 就一定能拆掉{\r}
+Dialogue: 0,0:56:34.01,0:56:37.02,ENG,NTP,0,0,0,!Effect,Yeah, see, when I shut this down, you'll see this light go off...\N{\rCHT}對 看 我一關掉這個 燈就會滅...{\r}
+Dialogue: 0,0:56:37.06,0:56:39.60,ENG,NTP,0,0,0,!Effect,but up in the booth, nothing will register.\N{\rCHT}但是警衛室卻不會顯示{\r}
+Dialogue: 0,0:56:42.94,0:56:45.57,ENG,NTP,0,0,0,!Effect,- Is that your box?  - That's it.\N{\rCHT}- 這就是保險櫃  - 沒錯{\r}
+Dialogue: 0,0:56:45.65,0:56:47.65,ENG,NTP,0,0,0,!Effect,That's a fucking monster. That's three times the size of this.\N{\rCHT}超大的 比這個大三倍{\r}
+Dialogue: 0,0:56:47.74,0:56:49.32,ENG,NTP,0,0,0,!Effect,Even bigger than that.\N{\rCHT}甚至更大{\r}
+Dialogue: 0,0:56:49.36,0:56:52.66,ENG,NTP,0,0,0,!Effect,See that over there?\N{\rCHT}你看到嗎{\r}
+Dialogue: 0,0:56:52.70,0:56:55.70,ENG,NTP,0,0,0,!Effect,You can see it better over here.\N{\rCHT}這樣比較清楚{\r}
+Dialogue: 0,0:56:55.79,0:56:58.83,ENG,NTP,0,0,0,!Effect,That's an active infrared post.\N{\rCHT}那是紅外線探測器{\r}
+Dialogue: 0,0:56:58.87,0:57:00.96,ENG,NTP,0,0,0,!Effect,I don't know. That wasn't on the system specs.\N{\rCHT}我不知道 系統資料上沒有{\r}
+Dialogue: 0,0:57:01.04,0:57:04.46,ENG,NTP,0,0,0,!Effect,That's gotta be some independent loop they set up just in the cage.\N{\rCHT}一定是另外加裝的{\r}
+Dialogue: 0,0:57:05.42,0:57:07.38,ENG,NTP,0,0,0,!Effect,I'll take care of it.\N{\rCHT}讓我來搞定{\r}
+Dialogue: 0,0:57:09.40,0:57:10.69,ENG,NTP,0,0,0,!Effect,Yeah?\N{\rCHT}喂{\r}
+Dialogue: 0,0:57:13.43,0:57:18.48,ENG,NTP,0,0,0,!Effect,All right, just calm down, okay? I'll be over in a few minutes.\N{\rCHT}好 冷靜點 好嗎 我幾分鐘後就到{\r}
+Dialogue: 0,0:57:19.48,0:57:21.90,ENG,NTP,0,0,0,!Effect,I gotta take care of something. I'll drop you off.\N{\rCHT}出了點狀況 我送你走{\r}
+Dialogue: 0,0:57:47.05,0:57:49.26,ENG,NTP,0,0,0,!Effect,My mom's only out for about a half an hour.\N{\rCHT}我老媽只出去半小時{\r}
+Dialogue: 0,0:57:54.52,0:57:57.98,ENG,NTP,0,0,0,!Effect,I was cruising around Ironclad's server at the root COBOL level...\N{\rCHT}我侵入保全公司的伺服器...{\r}
+Dialogue: 0,0:57:58.06,0:58:02.98,ENG,NTP,0,0,0,!Effect,when someone counter-cracked me, hacked into my machines, my data.\N{\rCHT}正要下手就有人侵入我的電腦{\r}
+Dialogue: 0,0:58:03.07,0:58:04.90,ENG,NTP,0,0,0,!Effect,For three minutes, I was fully exposed.\N{\rCHT}我有三分鐘是完全曝光的{\r}
+Dialogue: 0,0:58:04.99,0:58:09.32,ENG,NTP,0,0,0,!Effect,Now I have to fire wall my whole operations all from scratch.\N{\rCHT}現在我得重新建立防火牆{\r}
+Dialogue: 0,0:58:09.41,0:58:12.95,ENG,NTP,0,0,0,!Effect,- Can you tell me that in English?  - Sorry.\N{\rCHT}- 你能用英語跟我說嗎  - 抱歉{\r}
+Dialogue: 0,0:58:13.04,0:58:15.91,ENG,NTP,0,0,0,!Effect,I was a few keystrokes away from pulling those engineering codes...\N{\rCHT}我就快找到密碼了...{\r}
+Dialogue: 0,0:58:16.00,0:58:18.12,ENG,NTP,0,0,0,!Effect,when I bump into a guy on the other end.\N{\rCHT}突然發現另一端有人{\r}
+Dialogue: 0,0:58:18.21,0:58:21.04,ENG,NTP,0,0,0,!Effect,- And what's on the other end?  - Ironclad's computers.\N{\rCHT}- 另一端有什麼人  - 保全公司的人{\r}
+Dialogue: 0,0:58:21.09,0:58:23.26,ENG,NTP,0,0,0,!Effect,My guess is he's some low-level systems administrator.\N{\rCHT}我猜是低階系統工程師{\r}
+Dialogue: 0,0:58:23.34,0:58:28.47,ENG,NTP,0,0,0,!Effect,So, we switch to a private chat room, and he sends me this.\N{\rCHT}他在私人聊天室寄這個給我{\r}
+Dialogue: 0,0:58:29.13,0:58:32.47,ENG,NTP,0,0,0,!Effect,{\fs26\fn幼圓}天下沒白吃的午餐 混蛋
+Dialogue: 0,0:58:30.39,0:58:31.31,ENG,NTP,0,0,0,!Effect,Can you believe that?\N{\rCHT}你能相信嗎{\r}
+Dialogue: 0,0:58:31.39,0:58:34.56,ENG,NTP,0,0,0,!Effect,The guy comes into my world and calls me an asshole.\N{\rCHT}這傢夥闖進我的電腦罵我混蛋{\r}
+Dialogue: 0,0:58:34.60,0:58:35.55,ENG,NTP,0,0,0,!Effect,Can you get me the bypass codes?\N{\rCHT}你能弄到密碼嗎{\r}
+Dialogue: 0,0:58:35.55,0:58:37.69,ENG,NTP,0,0,0,!Effect,I type, " How much?" He types...\N{\rCHT}我問他 "多少" 他問...{\r}
+Dialogue: 0,0:58:37.77,0:58:39.56,ENG,NTP,0,0,0,!Effect," Engineering codes for the customshouse basement?"\N{\rCHT}"海關大樓地下室通行密碼"{\r}
+Dialogue: 0,0:58:39.65,0:58:41.73,ENG,NTP,0,0,0,!Effect,I say, "You guessed it, Blue's Clues."\N{\rCHT}我說 "對 你猜對了"{\r}
+Dialogue: 0,0:58:41.78,0:58:43.86,ENG,NTP,0,0,0,!Effect,And he says, " Fuck you." And I say, " No, fuck you."\N{\rCHT}他卻說"去你的" 我回罵他"不 去你的"{\r}
+Dialogue: 0,0:58:43.94,0:58:46.61,ENG,NTP,0,0,0,!Effect,And he says, " No, fuck you." I'm like, " No, fuck you."\N{\rCHT}他又回罵我 我叫他去死{\r}
+Dialogue: 0,0:58:46.70,0:58:48.62,ENG,NTP,0,0,0,!Effect,Then he's like, " No, fuck..."\N{\rCHT}他回罵我三字經{\r}
+Dialogue: 0,0:58:48.66,0:58:51.20,ENG,NTP,0,0,0,!Effect,Can you get me the bypass codes?\N{\rCHT}你弄得到密碼嗎{\r}
+Dialogue: 0,0:58:52.45,0:58:56.25,ENG,NTP,0,0,0,!Effect,The guy wants 50 thou in exchange for the codes.\N{\rCHT}他要五萬塊錢{\r}
+Dialogue: 0,0:58:56.33,0:58:59.25,ENG,NTP,0,0,0,!Effect,- Fifty thousand.  - Yes.\N{\rCHT}- 五萬  - 對{\r}
+Dialogue: 0,0:59:01.92,0:59:03.34,ENG,NTP,0,0,0,!Effect,Get the account number.\N{\rCHT}拿到帳號{\r}
+Dialogue: 0,0:59:03.42,0:59:05.51,ENG,NTP,0,0,0,!Effect,I'll wire the money, and he'll deliver the codes through you.\N{\rCHT}我把錢匯去 他把密碼給你{\r}
+Dialogue: 0,0:59:05.59,0:59:07.09,ENG,NTP,0,0,0,!Effect,Negative. The guy won't go for a transfer.\N{\rCHT}不行 那人不要轉帳{\r}
+Dialogue: 0,0:59:07.18,0:59:09.60,ENG,NTP,0,0,0,!Effect,He wants cash and he wants to do it in person.\N{\rCHT}他要我們親手交錢{\r}
+Dialogue: 0,0:59:10.93,0:59:12.64,ENG,NTP,0,0,0,!Effect,- Anything else?  - No.\N{\rCHT}- 還有嗎  - 沒了{\r}
+Dialogue: 0,0:59:12.73,0:59:15.69,ENG,NTP,0,0,0,!Effect,You set it up. No, no, stay. I'll let myself out.\N{\rCHT}你去安排 不 不 別送我 我自己出去{\r}
+Dialogue: 0,0:59:15.77,0:59:18.82,ENG,NTP,0,0,0,!Effect,When this score's done, I'm gonna brute this creep with everything.\N{\rCHT}密碼拿到手我就要大開殺戒{\r}
+Dialogue: 0,0:59:18.90,0:59:22.53,ENG,NTP,0,0,0,!Effect,By the time I'm done with this fuck, he won't be able to hide in Bolivia!\N{\rCHT}這傢伙會被我整得慘兮兮{\r}
+Dialogue: 0,0:59:51.18,0:59:54.31,ENG,NTP,0,0,0,!Effect,Jesus. Look at all these people.\N{\rCHT}天啊 人好多{\r}
+Dialogue: 0,0:59:54.35,0:59:57.27,ENG,NTP,0,0,0,!Effect,Who sets up a meeting in a public park?\N{\rCHT}誰會約在公園交錢{\r}
+Dialogue: 0,1:00:01.36,1:00:04.16,ENG,NTP,0,0,0,!Effect,- You see him?  - Still looking.\N{\rCHT}- 看到他嗎  - 還在找{\r}
+Dialogue: 0,1:00:19.17,1:00:22.59,ENG,NTP,0,0,0,!Effect,Got him. He brought backup.\N{\rCHT}看到了 他帶了幫手{\r}
+Dialogue: 0,1:00:24.22,1:00:26.22,ENG,NTP,0,0,0,!Effect,Okay, I got him.\N{\rCHT}好的 我看到了{\r}
+Dialogue: 0,1:00:39.07,1:00:41.86,ENG,NTP,0,0,0,!Effect,Hey, how ya doing? Good to see ya.\N{\rCHT}嘿 你們好嗎 幸會{\r}
+Dialogue: 0,1:00:41.91,1:00:44.99,ENG,NTP,0,0,0,!Effect,Shake my hand. That's right. You my guy?\N{\rCHT}跟我握手 好的 就是你嗎{\r}
+Dialogue: 0,1:00:45.08,1:00:46.28,ENG,NTP,0,0,0,!Effect,Yeah.\N{\rCHT}對{\r}
+Dialogue: 0,1:00:46.37,1:00:49.50,ENG,NTP,0,0,0,!Effect,- Who's this?  - Cousin.\N{\rCHT}- 他是誰  - 表兄弟{\r}
+Dialogue: 0,1:00:49.58,1:00:53.21,ENG,NTP,0,0,0,!Effect,Cousin? Okay. See the guy over my left shoulder...\N{\rCHT}表兄弟 好的 從我左肩後面看到那個人...{\r}
+Dialogue: 0,1:00:53.25,1:00:58.46,ENG,NTP,0,0,0,!Effect,back there on the bench, reading the paper, the big one?\N{\rCHT}後面長椅上 在看報紙的 那個大塊頭{\r}
+Dialogue: 0,1:00:58.55,1:01:02.09,ENG,NTP,0,0,0,!Effect,That's my cousin, okay?\N{\rCHT}他是我表兄弟 知道吧{\r}
+Dialogue: 0,1:01:02.18,1:01:05.06,ENG,NTP,0,0,0,!Effect,So we've all got family here, which is nice, I think.\N{\rCHT}所以我們這兒都有家人 真溫馨 我覺得{\r}
+Dialogue: 0,1:01:05.06,1:01:06.22,ENG,NTP,0,0,0,!Effect,Yeah? Okay.\N{\rCHT}是嗎 好的{\r}
+Dialogue: 0,1:01:06.26,1:01:10.77,ENG,NTP,0,0,0,!Effect,Let me give you that. Look inside and make sure you're happy.\N{\rCHT}我給你吧 看看裡面 確保你是開心的{\r}
+Dialogue: 0,1:01:15.44,1:01:16.73,ENG,NTP,0,0,0,!Effect,No, don't take that out.\N{\rCHT}不 不要拿出來{\r}
+Dialogue: 0,1:01:16.82,1:01:18.23,ENG,NTP,0,0,0,!Effect,Hey, man, don't give me orders.\N{\rCHT}嘿 老兄 別使喚我{\r}
+Dialogue: 0,1:01:18.23,1:01:19.90,ENG,NTP,0,0,0,!Effect,I get orders all day, okay?\N{\rCHT}我成天聽人使喚 好嗎{\r}
+Dialogue: 0,1:01:19.95,1:01:22.07,ENG,NTP,0,0,0,!Effect,Can't count the money in a public place.\N{\rCHT}你不能公然數錢{\r}
+Dialogue: 0,1:01:22.12,1:01:24.41,ENG,NTP,0,0,0,!Effect,That's why you don't set a meeting in a park.\N{\rCHT}所以你最好別約在公園裡交易{\r}
+Dialogue: 0,1:01:24.49,1:01:26.33,ENG,NTP,0,0,0,!Effect,Just for future reference.\N{\rCHT}下次注意{\r}
+Dialogue: 0,1:01:27.45,1:01:29.58,ENG,NTP,0,0,0,!Effect,Just flip through it in the bag.\N{\rCHT}把手伸進去數{\r}
+Dialogue: 0,1:01:31.12,1:01:33.38,ENG,NTP,0,0,0,!Effect,We're about set to go here. You ready?\N{\rCHT}差不多了 好了嗎{\r}
+Dialogue: 0,1:01:33.46,1:01:34.63,ENG,NTP,0,0,0,!Effect,What the fuck is that?\N{\rCHT}那是什麼東西{\r}
+Dialogue: 0,1:01:34.71,1:01:37.59,ENG,NTP,0,0,0,!Effect,He's gonna give me the numbers, and I'm gonna read 'em into this mike...\N{\rCHT}他說出密碼 而我會把這個對著這麥克念給{\r}
+Dialogue: 0,1:01:37.63,1:01:39.63,ENG,NTP,0,0,0,!Effect,to a friend of mine who's gonna check 'em out.\N{\rCHT}我一個朋友聽 他會去確認{\r}
+Dialogue: 0,1:01:43.14,1:01:45.43,ENG,NTP,0,0,0,!Effect,Did you think I was gonna write it down on a cocktail napkin?\N{\rCHT}難道你要我抄在面紙上{\r}
+Dialogue: 0,1:01:46.22,1:01:49.27,ENG,NTP,0,0,0,!Effect,- Okay, ready.  - Okay, you're on.\N{\rCHT}- 好了 準備好了  - 好了 連上了{\r}
+Dialogue: 0,1:01:51.10,1:01:54.78,ENG,NTP,0,0,0,!Effect,First set: 3-1-7.\N{\rCHT}第一組 3-1-7{\r}
+Dialogue: 0,1:01:54.86,1:01:57.95,ENG,NTP,0,0,0,!Effect,- 3-1-7.  - Got it. 3-1-7.\N{\rCHT}- 3-1-7  - 收到 3-1-7{\r}
+Dialogue: 0,1:01:57.99,1:02:02.28,ENG,NTP,0,0,0,!Effect,Steven, 3-1-7.\N{\rCHT}史蒂芬 3-1-7{\r}
+Dialogue: 0,1:02:02.37,1:02:04.91,ENG,NTP,0,0,0,!Effect,Confirm 3-1-7.\N{\rCHT}確認 3-1-7{\r}
+Dialogue: 0,1:02:10.00,1:02:14.76,ENG,NTP,0,0,0,!Effect,Just be a second. Are you guys maternal cousins?\N{\rCHT}等一下 你們是表親是嗎{\r}
+Dialogue: 0,1:02:28.77,1:02:31.57,ENG,NTP,0,0,0,!Effect,- First numbers are clean.  - They're clean. They're clean.\N{\rCHT}- 第一組沒問題  - 沒問題 沒問題{\r}
+Dialogue: 0,1:02:31.65,1:02:33.90,ENG,NTP,0,0,0,!Effect,You tell the hack at the other end of that wire...\N{\rCHT}你告訴那個蠢駭客...{\r}
+Dialogue: 0,1:02:33.98,1:02:36.78,ENG,NTP,0,0,0,!Effect,he tries to get in my system again, I will fry him, okay?\N{\rCHT}他再侵入我的電腦就死定了 好吧{\r}
+Dialogue: 0,1:02:36.86,1:02:38.70,ENG,NTP,0,0,0,!Effect,Why don't we worry about next time next time, okay?\N{\rCHT}你別擔心將來將來的事 好嗎{\r}
+Dialogue: 0,1:02:38.78,1:02:40.83,ENG,NTP,0,0,0,!Effect,Let's get this done before people start looking at us.\N{\rCHT}在引起別人注意前 先把事情搞定吧{\r}
+Dialogue: 0,1:02:40.87,1:02:44.00,ENG,NTP,0,0,0,!Effect,- Give me the second set.  - 9-4-6.\N{\rCHT}- 第二組密碼  - 9-4-6{\r}
+Dialogue: 0,1:02:44.08,1:02:47.00,ENG,NTP,0,0,0,!Effect,{\fs18}- 9-4-6  - 9-4-6{\r}\N- 9-4-6.  - 9-4-6.
+Dialogue: 0,1:02:47.04,1:02:51.13,ENG,NTP,0,0,0,!Effect,Repeat: 9-4-6. 9-4-6.\N{\rCHT}重複 9-4-6 9-4-6{\r}
+Dialogue: 0,1:02:57.89,1:02:59.86,ENG,NTP,0,0,0,!Effect,Take it easy. Relax. Have a smoke.\N{\rCHT}別緊張 放鬆 抽根煙吧{\r}
+Dialogue: 0,1:02:59.86,1:03:00.85,ENG,NTP,0,0,0,!Effect,I don't smoke.\N{\rCHT}我不抽煙{\r}
+Dialogue: 0,1:03:00.89,1:03:02.25,ENG,NTP,0,0,0,!Effect,Me either, so good for us.\N{\rCHT}我也不抽 那很好{\r}
+Dialogue: 0,1:03:02.25,1:03:04.98,ENG,NTP,0,0,0,!Effect,You guys local? You live here?\N{\rCHT}你們是本地人嗎 你們住在這兒嗎{\r}
+Dialogue: 0,1:03:05.06,1:03:07.77,ENG,NTP,0,0,0,!Effect,Why are you asking so many fucking questions?\N{\rCHT}你幹嘛問這麼多{\r}
+Dialogue: 0,1:03:13.11,1:03:16.36,ENG,NTP,0,0,0,!Effect,- They're good.  - Second set is good.\N{\rCHT}- 沒問題  - 第二組沒問題{\r}
+Dialogue: 0,1:03:16.45,1:03:17.95,ENG,NTP,0,0,0,!Effect,What's the third one?\N{\rCHT}第三組{\r}
+Dialogue: 0,1:03:20.28,1:03:22.24,ENG,NTP,0,0,0,!Effect,5-8-3-9.\N{\rCHT}5-8-3-9{\r}
+Dialogue: 0,1:03:22.29,1:03:24.50,ENG,NTP,0,0,0,!Effect,5-8-3-9.\N{\rCHT}5-8-3-9{\r}
+Dialogue: 0,1:03:24.58,1:03:27.04,ENG,NTP,0,0,0,!Effect,5-8-3-9. Got it.\N{\rCHT}5-8-3-9 收到了{\r}
+Dialogue: 0,1:03:27.13,1:03:30.63,ENG,NTP,0,0,0,!Effect,5-8-3-9.\N{\rCHT}5-8-3-9{\r}
+Dialogue: 0,1:03:40.10,1:03:42.39,ENG,NTP,0,0,0,!Effect,This is taking too long. I'm gonna fucking lose it.\N{\rCHT}拖太久了 我要抓狂了{\r}
+Dialogue: 0,1:03:42.43,1:03:44.27,ENG,NTP,0,0,0,!Effect,Shut up, Eric.\N{\rCHT}閉嘴 艾瑞{\r}
+Dialogue: 0,1:03:44.35,1:03:47.52,ENG,NTP,0,0,0,!Effect,They have to verify the numbers off the server. It takes some time.\N{\rCHT}他們要在伺服器上確認密碼 得花點時間{\r}
+Dialogue: 0,1:03:47.61,1:03:49.11,ENG,NTP,0,0,0,!Effect,Just relax, Eric.\N{\rCHT}放輕鬆 艾瑞{\r}
+Dialogue: 0,1:03:52.65,1:03:54.57,ENG,NTP,0,0,0,!Effect,Can you help me out? It's turning into amateur hour out here.\N{\rCHT}能幫我嗎 這裡的人很不專業{\r}
+Dialogue: 0,1:03:54.61,1:03:57.32,ENG,NTP,0,0,0,!Effect,- Fuck you, asshole.  - What are you doing?\N{\rCHT}- 去你的 混蛋  - 你在幹嘛{\r}
+Dialogue: 0,1:03:57.41,1:03:58.91,ENG,NTP,0,0,0,!Effect,One of them has a gun.\N{\rCHT}他們有槍{\r}
+Dialogue: 0,1:03:58.99,1:04:01.08,ENG,NTP,0,0,0,!Effect,Burt, big guy's got a gun.\N{\rCHT}伯特 大個子有槍{\r}
+Dialogue: 0,1:04:01.16,1:04:02.91,ENG,NTP,0,0,0,!Effect,Steven, how's it going? We're losing these guys.\N{\rCHT}史蒂芬 怎麼樣 快一點 對方抓狂了{\r}
+Dialogue: 0,1:04:03.00,1:04:05.92,ENG,NTP,0,0,0,!Effect,- I'm working it, man.  - Steven, want some lunch?\N{\rCHT}- 我正在查 老兄  - 史蒂芬 吃飯嗎{\r}
+Dialogue: 0,1:04:05.96,1:04:08.34,ENG,NTP,0,0,0,!Effect,I'm on the phone, bitch!\N{\rCHT}我在講電話 母豬{\r}
+Dialogue: 0,1:04:08.42,1:04:09.59,ENG,NTP,0,0,0,!Effect,- You all right?  - We're fine.\N{\rCHT}- 沒事吧  - 沒事{\r}
+Dialogue: 0,1:04:09.67,1:04:14.51,ENG,NTP,0,0,0,!Effect,Don't anybody move. Eric, look at my hand right now.\N{\rCHT}大家別動 艾瑞 你看我的手{\r}
+Dialogue: 0,1:04:16.34,1:04:20.18,ENG,NTP,0,0,0,!Effect,If you take that out, I'm gonna take this out, be a big fucking mess.\N{\rCHT}你一拔槍我就會開槍 到時候就一團糟{\r}
+Dialogue: 0,1:04:21.14,1:04:22.77,ENG,NTP,0,0,0,!Effect,Put it away, Eric.\N{\rCHT}把槍放下 艾瑞{\r}
+Dialogue: 0,1:04:22.81,1:04:24.94,ENG,NTP,0,0,0,!Effect,There's kids all around. What are you thinking?\N{\rCHT}你沒看到有小孩啊 你在想什麼{\r}
+Dialogue: 0,1:04:25.02,1:04:29.90,ENG,NTP,0,0,0,!Effect,Put it away. Take a deep breath and just put it in your back pocket.\N{\rCHT}放回去 深呼吸然後把槍放回去{\r}
+Dialogue: 0,1:04:29.98,1:04:32.20,ENG,NTP,0,0,0,!Effect,Put it away.\N{\rCHT}放回去{\r}
+Dialogue: 0,1:04:35.87,1:04:38.37,ENG,NTP,0,0,0,!Effect,- They're all good.  - Last set of numbers confirmed.\N{\rCHT}- 沒問題了  - 最後一組密碼確認{\r}
+Dialogue: 0,1:04:38.45,1:04:40.45,ENG,NTP,0,0,0,!Effect,Last set of numbers confirmed. Let's get out of here.\N{\rCHT}最後一組密碼確認 快走吧{\r}
+Dialogue: 0,1:04:51.05,1:04:52.51,ENG,NTP,0,0,0,!Effect,Next time, don't bring a gun.\N{\rCHT}下次別帶槍來{\r}
+Dialogue: 0,1:04:52.55,1:04:56.26,ENG,NTP,0,0,0,!Effect,Listen, I thought I might need one, and I did.\N{\rCHT}聽著 我覺得也許有必要 結果也有用{\r}
+Dialogue: 0,1:04:56.35,1:04:58.47,ENG,NTP,0,0,0,!Effect,- Now we've got the codes.  - Don't bring a gun.\N{\rCHT}- 現在我們有密碼了  - 別帶槍{\r}
+Dialogue: 0,1:05:04.54,1:05:05.52,ENG,NTP,0,0,0,!Effect,Jesus!\N{\rCHT}老天爺{\r}
+Dialogue: 0,1:05:07.57,1:05:10.78,ENG,NTP,0,0,0,!Effect,I called. They said you hadn't checked in yet. No.\N{\rCHT}我打去 他們說你還沒住進去 沒{\r}
+Dialogue: 0,1:05:15.91,1:05:18.25,ENG,NTP,0,0,0,!Effect,So what time you getting in?\N{\rCHT}你幾點會到{\r}
+Dialogue: 0,1:05:20.62,1:05:22.92,ENG,NTP,0,0,0,!Effect,Come on, honey. Don't stay at a hotel.\N{\rCHT}別這樣 親愛的 別住在旅館{\r}
+Dialogue: 0,1:05:23.00,1:05:25.54,ENG,NTP,0,0,0,!Effect,Just come over to my place. I'll cook some...\N{\rCHT}到我家 我會煮點...{\r}
+Dialogue: 0,1:05:37.47,1:05:39.06,ENG,NTP,0,0,0,!Effect,Yeah. Yeah.\N{\rCHT}對 對{\r}
+Dialogue: 0,1:05:39.14,1:05:41.56,ENG,NTP,0,0,0,!Effect,I was just saying come to my place. I'll cook something.\N{\rCHT}你來我家 我煮飯{\r}
+Dialogue: 0,1:05:41.60,1:05:43.65,ENG,NTP,0,0,0,!Effect,You know, we'll talk, okay?\N{\rCHT}我們再談談 好嗎{\r}
+Dialogue: 0,1:06:10.97,1:06:12.85,ENG,NTP,0,0,0,!Effect,He's good.\N{\rCHT}他很好{\r}
+Dialogue: 0,1:06:14.64,1:06:17.48,ENG,NTP,0,0,0,!Effect,When you gotta be there?\N{\rCHT}你幾點要上班{\r}
+Dialogue: 0,1:06:17.56,1:06:21.61,ENG,NTP,0,0,0,!Effect,I'll go in in a couple hours. I'm okay. I'm doing fine.\N{\rCHT}再過兩個小時 沒問題 我很好{\r}
+Dialogue: 0,1:06:22.98,1:06:25.82,ENG,NTP,0,0,0,!Effect,Listen, tell me something. Tell me something.\N{\rCHT}聽著 告訴我 告訴我{\r}
+Dialogue: 0,1:06:25.86,1:06:28.11,ENG,NTP,0,0,0,!Effect,All the years you've been doing this...\N{\rCHT}你幹了這麼久...{\r}
+Dialogue: 0,1:06:28.15,1:06:30.53,ENG,NTP,0,0,0,!Effect,what's the biggest gamble you ever took?\N{\rCHT}下過最大的賭注是什麼{\r}
+Dialogue: 0,1:06:30.61,1:06:34.29,ENG,NTP,0,0,0,!Effect,On the job. You know, biggest long shot.\N{\rCHT}幹這行的 你知道 最大的一筆{\r}
+Dialogue: 0,1:06:34.37,1:06:36.58,ENG,NTP,0,0,0,!Effect,I don't take long shots.\N{\rCHT}我從不冒險{\r}
+Dialogue: 0,1:06:36.66,1:06:39.17,ENG,NTP,0,0,0,!Effect,I know you're careful. You know, I'm careful too.\N{\rCHT}我知道你很小心 你知道 我也是{\r}
+Dialogue: 0,1:06:39.25,1:06:41.84,ENG,NTP,0,0,0,!Effect,That's not what I mean. I mean...\N{\rCHT}我不是那個意思 我是說...{\r}
+Dialogue: 0,1:06:41.92,1:06:44.46,ENG,NTP,0,0,0,!Effect,When you were starting out, when you were just getting going...\N{\rCHT}你剛入行時 當你剛要做的時候...{\r}
+Dialogue: 0,1:06:44.50,1:06:47.38,ENG,NTP,0,0,0,!Effect,you must have taken some fliers here and there.\N{\rCHT}你肯定得冒點險{\r}
+Dialogue: 0,1:06:47.47,1:06:49.55,ENG,NTP,0,0,0,!Effect,Done something that was a little wild. I'm just curious.\N{\rCHT}做過瘋狂的事 我只是好奇{\r}
+Dialogue: 0,1:06:49.64,1:06:51.47,ENG,NTP,0,0,0,!Effect,Never took long shots.\N{\rCHT}從不冒過險{\r}
+Dialogue: 0,1:06:55.31,1:06:56.89,ENG,NTP,0,0,0,!Effect,I'm gonna say something to you.\N{\rCHT}我奉勸你一件事{\r}
+Dialogue: 0,1:06:56.98,1:06:59.06,ENG,NTP,0,0,0,!Effect,You're smart, you're talented and you know a few things...\N{\rCHT}你很聰明 也很有才華...{\r}
+Dialogue: 0,1:06:59.15,1:07:02.32,ENG,NTP,0,0,0,!Effect,but talent means nothing if you don't make the right choices.\N{\rCHT}但若你只會挺而走險 有才華也沒用{\r}
+Dialogue: 0,1:07:02.40,1:07:05.82,ENG,NTP,0,0,0,!Effect,There's talented people out there who never see daylight anymore.\N{\rCHT}很多高手都沒有好下場{\r}
+Dialogue: 0,1:07:05.86,1:07:08.11,ENG,NTP,0,0,0,!Effect,Last thing, it takes discipline...\N{\rCHT}你想幹這一行就要能夠自律...{\r}
+Dialogue: 0,1:07:08.20,1:07:10.16,ENG,NTP,0,0,0,!Effect,because this whole game is one big long shot...\N{\rCHT}因為這整個遊戲是個長期的...{\r}
+Dialogue: 0,1:07:10.24,1:07:12.49,ENG,NTP,0,0,0,!Effect,and if you don't have the discipline to stay away from the fliers...\N{\rCHT}如果你想一步登天...{\r}
+Dialogue: 0,1:07:12.54,1:07:15.54,ENG,NTP,0,0,0,!Effect,or from the gambles or whatever else you wanna call a stupid move...\N{\rCHT}或賭運氣 你只要走錯一步路...{\r}
+Dialogue: 0,1:07:15.62,1:07:18.88,ENG,NTP,0,0,0,!Effect,then, my friend, I'm afraid to say, one day you will go down.\N{\rCHT}那朋友 我告訴你 你的下場會很慘{\r}
+Dialogue: 0,1:07:18.96,1:07:20.46,ENG,NTP,0,0,0,!Effect,It's inevitable.\N{\rCHT}一定的{\r}
+Dialogue: 0,1:07:21.25,1:07:23.55,ENG,NTP,0,0,0,!Effect,You want my advice?\N{\rCHT}你要我的建議{\r}
+Dialogue: 0,1:07:24.71,1:07:26.59,ENG,NTP,0,0,0,!Effect,Make a list of everything you want now...\N{\rCHT}把你要的東西列出來...{\r}
+Dialogue: 0,1:07:26.67,1:07:29.89,ENG,NTP,0,0,0,!Effect,and plan on spending the next 25 years of your life getting it.\N{\rCHT}計畫如何在25年內得到它們{\r}
+Dialogue: 0,1:07:29.97,1:07:32.85,ENG,NTP,0,0,0,!Effect,Slowly, piece by piece.\N{\rCHT}慢慢地 一點一滴地累積{\r}
+Dialogue: 0,1:07:40.27,1:07:41.77,ENG,NTP,0,0,0,!Effect,I see what you're saying.\N{\rCHT}我瞭解你的意思{\r}
+Dialogue: 0,1:07:43.28,1:07:47.74,ENG,NTP,0,0,0,!Effect,But still, I'm looking at you, and you got all this already...\N{\rCHT}不過我看你已經擁有這些...{\r}
+Dialogue: 0,1:07:47.78,1:07:50.41,ENG,NTP,0,0,0,!Effect,and you're sitting here with me, working with a partner...\N{\rCHT}而你跟我坐在這裡 跟一個與你...{\r}
+Dialogue: 0,1:07:50.49,1:07:53.54,ENG,NTP,0,0,0,!Effect,in the city where you live, on a job that's gotten more complicated...\N{\rCHT}住在一個城市的人合作 一起做一個...{\r}
+Dialogue: 0,1:07:53.62,1:07:56.08,ENG,NTP,0,0,0,!Effect,than you thought it was gonna be.\N{\rCHT}比你想像的更複雜的事情{\r}
+Dialogue: 0,1:07:56.12,1:07:58.63,ENG,NTP,0,0,0,!Effect,So I know you're still taking a shot at something.\N{\rCHT}一定有什麼值得你冒險{\r}
+Dialogue: 0,1:08:04.55,1:08:06.76,ENG,NTP,0,0,0,!Effect,I gotta go.\N{\rCHT}我得走了{\r}
+Dialogue: 0,1:08:08.55,1:08:10.76,ENG,NTP,0,0,0,!Effect,See ya tomorrow.\N{\rCHT}明天見{\r}
+Dialogue: 0,1:08:17.98,1:08:19.98,ENG,NTP,0,0,0,!Effect,The maintenance crews come in the tunnels by 6 a.m.\N{\rCHT}工程人員六點鐘回通道{\r}
+Dialogue: 0,1:08:20.02,1:08:21.98,ENG,NTP,0,0,0,!Effect,I gotta be back in the hole by 5:30.\N{\rCHT}我五點半就得走{\r}
+Dialogue: 0,1:08:22.07,1:08:24.44,ENG,NTP,0,0,0,!Effect,As soon as the guards leave, you gotta tell me right away.\N{\rCHT}警衛一走你就要馬上告訴我{\r}
+Dialogue: 0,1:08:24.49,1:08:26.74,ENG,NTP,0,0,0,!Effect,- You can't be late.  - I'm not worried about my end.\N{\rCHT}- 別遲到  - 我這邊沒問題{\r}
+Dialogue: 0,1:08:26.82,1:08:31.79,ENG,NTP,0,0,0,!Effect,I'm wondering how you're gonna break that safe in half an hour.\N{\rCHT}你半小時內怎麼打開保險櫃{\r}
+Dialogue: 0,1:08:31.87,1:08:33.62,ENG,NTP,0,0,0,!Effect,You know, I mean...\N{\rCHT}你知道 我是說...{\r}
+Dialogue: 0,1:08:52.52,1:08:55.90,ENG,NTP,0,0,0,!Effect,- Is that even possible?  - Just physics.\N{\rCHT}- 這有可能嗎  - 很簡單的物理原則{\r}
+Dialogue: 0,1:09:00.36,1:09:03.36,ENG,NTP,0,0,0,!Effect,- How long is that gonna take?  - Twelve, fifteen minutes, tops.\N{\rCHT}- 那要花多久  - 12 最多15分鐘{\r}
+Dialogue: 0,1:09:03.40,1:09:05.53,ENG,NTP,0,0,0,!Effect,Fifteen minutes, tops?\N{\rCHT}最多15分鐘{\r}
+Dialogue: 0,1:09:07.32,1:09:10.37,ENG,NTP,0,0,0,!Effect,Okay. Okay.\N{\rCHT}好吧 好吧{\r}
+Dialogue: 0,1:09:10.45,1:09:14.62,ENG,NTP,0,0,0,!Effect,Then if you're on the box by 5:00, the prize goes in the bag by 5: 15.\N{\rCHT}只要五點能到達保險櫃 5點15分得手就{\r}
+Dialogue: 0,1:09:14.71,1:09:18.00,ENG,NTP,0,0,0,!Effect,- You got no problem at all.  - 5:15, 5:30, I'm back in the hole.\N{\rCHT}- 沒問題  - 5點15分 5點30分 我出來後{\r}
+Dialogue: 0,1:09:18.04,1:09:21.34,ENG,NTP,0,0,0,!Effect,- You reset the system.  - That's perfect.\N{\rCHT}- 你就重設系統  - 太完美了{\r}
+Dialogue: 0,1:09:21.42,1:09:23.51,ENG,NTP,0,0,0,!Effect,I'll pack up my shit. I can meet you here.\N{\rCHT}我收拾好了就跟你碰頭{\r}
+Dialogue: 0,1:09:23.59,1:09:26.85,ENG,NTP,0,0,0,!Effect,- We can go to Max, or I can...  - We're not gonna meet back here.\N{\rCHT}- 然後到麥斯家 或者我可以...  - 不能在這兒碰頭{\r}
+Dialogue: 0,1:09:26.93,1:09:29.52,ENG,NTP,0,0,0,!Effect,- I'll meet you at Max's, then.  - No.\N{\rCHT}- 那就在麥斯家碰頭  - 不行{\r}
+Dialogue: 0,1:09:29.60,1:09:32.64,ENG,NTP,0,0,0,!Effect,You'll finish out your shift. I go to Max. He does his thing.\N{\rCHT}你要上完班 我去找麥斯 他做他該做的{\r}
+Dialogue: 0,1:09:32.73,1:09:34.52,ENG,NTP,0,0,0,!Effect,He pays us off. We never see each other again.\N{\rCHT}我們拿了錢就永不見面{\r}
+Dialogue: 0,1:09:34.60,1:09:37.61,ENG,NTP,0,0,0,!Effect,Forget it. Just forget it. I'm gonna come with you to Max's.\N{\rCHT}這樣不行 別想了 我要跟你一起把貨交給麥斯{\r}
+Dialogue: 0,1:09:37.69,1:09:40.32,ENG,NTP,0,0,0,!Effect,- We'll deliver it together.  - No, you're not.\N{\rCHT}- 我們一起去交貨  - 不 不行{\r}
+Dialogue: 0,1:09:40.40,1:09:43.36,ENG,NTP,0,0,0,!Effect,Listen. I've done this down to the last detail.\N{\rCHT}我告訴你 這一票是我精心策劃的{\r}
+Dialogue: 0,1:09:43.45,1:09:45.91,ENG,NTP,0,0,0,!Effect,Don't put me on the sideline when it's time to collect.\N{\rCHT}你得手後別把我晾在一邊{\r}
+Dialogue: 0,1:09:45.99,1:09:48.37,ENG,NTP,0,0,0,!Effect,- Don't do it.  - Listen to me.\N{\rCHT}- 別這樣  - 聽我說{\r}
+Dialogue: 0,1:09:48.41,1:09:50.75,ENG,NTP,0,0,0,!Effect,You do anything out of the ordinary, you're gonna get made.\N{\rCHT}你提早下班就會露出馬腳{\r}
+Dialogue: 0,1:09:50.83,1:09:54.83,ENG,NTP,0,0,0,!Effect,Do you understand that? Be smart. Finish out your shift.\N{\rCHT}明白嗎 學聰明點 準時下班{\r}
+Dialogue: 0,1:09:59.59,1:10:01.72,ENG,NTP,0,0,0,!Effect,- You're the boss.  - Okay.\N{\rCHT}- 你是老大  - 很好{\r}
+Dialogue: 0,1:10:16.77,1:10:19.44,ENG,NTP,0,0,0,!Effect,Steven got these from a supplier. They're throwaways.\N{\rCHT}史蒂芬從供應商那兒弄來的 他們是報廢品{\r}
+Dialogue: 0,1:10:19.53,1:10:21.24,ENG,NTP,0,0,0,!Effect,Totally untraceable.\N{\rCHT}完全無法追蹤{\r}
+Dialogue: 0,1:10:25.53,1:10:29.00,ENG,NTP,0,0,0,!Effect,People are talking. They say Max is in trouble with Teddy Salida...\N{\rCHT}他們在說 聽說麥斯欠了蘇老大一筆錢...{\r}
+Dialogue: 0,1:10:29.08,1:10:32.04,ENG,NTP,0,0,0,!Effect,and he's pulling off a big job to get rid of him.\N{\rCHT}他要幹一大票還債來擺脫他{\r}
+Dialogue: 0,1:10:33.88,1:10:35.80,ENG,NTP,0,0,0,!Effect,That's what they say?\N{\rCHT}他們這麼說嗎{\r}
+Dialogue: 0,1:10:37.46,1:10:40.05,ENG,NTP,0,0,0,!Effect,Maybe you should walk away from this one.\N{\rCHT}也許你應該退出{\r}
+Dialogue: 0,1:11:36.63,1:11:37.96,ENG,NTP,0,0,0,!Effect,Max?\N{\rCHT}麥斯{\r}
+Dialogue: 0,1:11:42.33,1:11:43.99,ENG,NTP,0,0,0,!Effect,Max?\N{\rCHT}麥斯{\r}
+Dialogue: 0,1:12:08.02,1:12:09.98,ENG,NTP,0,0,0,!Effect,What are you doing down here?\N{\rCHT}你在這兒幹嘛{\r}
+Dialogue: 0,1:12:10.02,1:12:13.15,ENG,NTP,0,0,0,!Effect,Jesus Christ, you scared the shit out of me.\N{\rCHT}老天爺 你把我嚇死了{\r}
+Dialogue: 0,1:12:13.23,1:12:16.95,ENG,NTP,0,0,0,!Effect,What the hell are you doing down here?\N{\rCHT}你跑來幹嘛{\r}
+Dialogue: 0,1:12:16.99,1:12:19.66,ENG,NTP,0,0,0,!Effect,Did you involve Teddy Salida in this?\N{\rCHT}你惹上蘇老大嗎{\r}
+Dialogue: 0,1:12:19.74,1:12:23.08,ENG,NTP,0,0,0,!Effect,- What? Teddy Salida?  - Yeah.\N{\rCHT}- 什麼 蘇老大  - 對{\r}
+Dialogue: 0,1:12:23.66,1:12:26.66,ENG,NTP,0,0,0,!Effect,- Why would you say that?  - I see these guys outside.\N{\rCHT}- 你怎麼會這麼說  - 我看外面有人{\r}
+Dialogue: 0,1:12:26.75,1:12:29.29,ENG,NTP,0,0,0,!Effect,They look like they might be with him.\N{\rCHT}好像是他的手下{\r}
+Dialogue: 0,1:12:30.88,1:12:32.84,ENG,NTP,0,0,0,!Effect,How much you into him for?\N{\rCHT}你欠了他多少錢{\r}
+Dialogue: 0,1:12:33.42,1:12:34.84,ENG,NTP,0,0,0,!Effect,Four million.\N{\rCHT}四百萬{\r}
+Dialogue: 0,1:12:36.51,1:12:37.51,ENG,NTP,0,0,0,!Effect,Look, how do you think I got all this?\N{\rCHT}你以為這房子和別墅哪來的{\r}
+Dialogue: 0,1:12:37.59,1:12:39.97,ENG,NTP,0,0,0,!Effect,They gave it to me and the house in Bermuda?\N{\rCHT}他們把它和百慕大的房子給我了{\r}
+Dialogue: 0,1:12:40.05,1:12:42.35,ENG,NTP,0,0,0,!Effect,What's the matter with you?\N{\rCHT}你是怎麼了{\r}
+Dialogue: 0,1:12:43.02,1:12:45.52,ENG,NTP,0,0,0,!Effect,What's he know?\N{\rCHT}他知道多少{\r}
+Dialogue: 0,1:12:45.60,1:12:48.65,ENG,NTP,0,0,0,!Effect,- About what?  - About what we're doing.\N{\rCHT}- 知道什麼  - 我們這一票{\r}
+Dialogue: 0,1:12:49.69,1:12:52.98,ENG,NTP,0,0,0,!Effect,Nothing. I told him I found something that would go for eight...\N{\rCHT}沒什麼 我只說有一票值八百萬...{\r}
+Dialogue: 0,1:12:53.03,1:12:56.24,ENG,NTP,0,0,0,!Effect,and that we'd split the profits, that's all.\N{\rCHT}我要和他平分 就這樣{\r}
+Dialogue: 0,1:12:57.36,1:12:59.66,ENG,NTP,0,0,0,!Effect,What are you actually selling the scepter for, Max?\N{\rCHT}那根寶杖你要賣多少錢 麥斯{\r}
+Dialogue: 0,1:13:02.08,1:13:04.83,ENG,NTP,0,0,0,!Effect,$30 million.\N{\rCHT}三千萬{\r}
+Dialogue: 0,1:13:05.83,1:13:09.42,ENG,NTP,0,0,0,!Effect,Jesus. Max, what were you thinking?\N{\rCHT}天啊 麥斯 你在想什麼{\r}
+Dialogue: 0,1:13:09.50,1:13:11.42,ENG,NTP,0,0,0,!Effect,What was I thinking? The same thing you were thinking.\N{\rCHT}你在想什麼 我跟你想的一樣{\r}
+Dialogue: 0,1:13:11.50,1:13:16.68,ENG,NTP,0,0,0,!Effect,How are we gonna get out from under all this bullshit we've been living?\N{\rCHT}要不然我們該怎麼退隱江湖{\r}
+Dialogue: 0,1:13:16.72,1:13:19.85,ENG,NTP,0,0,0,!Effect,The chance came. Took it.\N{\rCHT}機會來了 就得把握{\r}
+Dialogue: 0,1:13:19.93,1:13:22.93,ENG,NTP,0,0,0,!Effect,- It's gonna work out fine.  - No, it's not.\N{\rCHT}- 不會有事的  - 不 一定會有事{\r}
+Dialogue: 0,1:13:23.02,1:13:25.60,ENG,NTP,0,0,0,!Effect,- What do you mean, it's not?  - It's not. It's a mess.\N{\rCHT}- 你這是什麼意思 不是嗎  - 不是 事情一團糟{\r}
+Dialogue: 0,1:13:25.69,1:13:29.19,ENG,NTP,0,0,0,!Effect,- It's not gonna work.  - Wait. Wait a fucking minute.\N{\rCHT}- 不會成功的  - 等一下 他媽的等等{\r}
+Dialogue: 0,1:13:29.27,1:13:33.45,ENG,NTP,0,0,0,!Effect,This is absolutely clean, Nick. What are you worried about?\N{\rCHT}這一票是很單純的任務 尼克 你在擔心什麼{\r}
+Dialogue: 0,1:13:33.53,1:13:36.45,ENG,NTP,0,0,0,!Effect,Jesus Christ, it's my ass on the line anyway, not yours.\N{\rCHT}老天 冒險的人是我 不是你{\r}
+Dialogue: 0,1:13:36.53,1:13:38.62,ENG,NTP,0,0,0,!Effect,I'm not taking the biggest gamble of my life...\N{\rCHT}我不想拼了老命...{\r}
+Dialogue: 0,1:13:38.70,1:13:40.70,ENG,NTP,0,0,0,!Effect,so I can hand my money over to Teddy Salida.\N{\rCHT}把錢給蘇老大{\r}
+Dialogue: 0,1:13:40.74,1:13:43.96,ENG,NTP,0,0,0,!Effect,You think you're not gonna get your fucking money?\N{\rCHT}你以為你拿不到錢{\r}
+Dialogue: 0,1:13:44.04,1:13:45.79,ENG,NTP,0,0,0,!Effect,Look, there's two things you gotta know.\N{\rCHT}聽著 你要知道兩件事{\r}
+Dialogue: 0,1:13:45.88,1:13:49.05,ENG,NTP,0,0,0,!Effect,One is you're gonna get every fucking red cent.\N{\rCHT}第一 你會拿到每一分錢{\r}
+Dialogue: 0,1:13:49.09,1:13:52.38,ENG,NTP,0,0,0,!Effect,And, yeah, Teddy knows a little.\N{\rCHT}第二 對 蘇老大知道一點{\r}
+Dialogue: 0,1:13:52.42,1:13:54.55,ENG,NTP,0,0,0,!Effect,- He knows?  - He does a little, I said.\N{\rCHT}- 他知道了  - 他只知道一點{\r}
+Dialogue: 0,1:13:54.63,1:13:55.83,ENG,NTP,0,0,0,!Effect,So you did lie?\N{\rCHT}所以你確實說了謊{\r}
+Dialogue: 0,1:13:55.83,1:13:58.39,ENG,NTP,0,0,0,!Effect,Yeah, lied! Shit happens, man!\N{\rCHT}對 我是說了謊 沒辦法 天{\r}
+Dialogue: 0,1:13:58.43,1:14:00.35,ENG,NTP,0,0,0,!Effect,Christ Almighty!\N{\rCHT}我的天{\r}
+Dialogue: 0,1:14:00.43,1:14:02.43,ENG,NTP,0,0,0,!Effect,I lied for you and I lied for me.\N{\rCHT}我是為了你和我才說謊的{\r}
+Dialogue: 0,1:14:02.52,1:14:06.02,ENG,NTP,0,0,0,!Effect,I had to say something to get you to suit up, like always.\N{\rCHT}我為了說服你總得撒點謊 向來如此{\r}
+Dialogue: 0,1:14:10.74,1:14:12.61,ENG,NTP,0,0,0,!Effect,I'm sorry, but I'm not gonna do it.\N{\rCHT}很抱歉 我不幹了{\r}
+Dialogue: 0,1:14:14.78,1:14:17.91,ENG,NTP,0,0,0,!Effect,It's a tiny door. Open the door. Take the shit.\N{\rCHT}你只要開了保險櫃門拿了貨{\r}
+Dialogue: 0,1:14:17.99,1:14:19.95,ENG,NTP,0,0,0,!Effect,Close the door. We're out.\N{\rCHT}關了門就萬事妥當{\r}
+Dialogue: 0,1:14:20.00,1:14:22.58,ENG,NTP,0,0,0,!Effect,There's too much bullshit around it.\N{\rCHT}事情變得太複雜{\r}
+Dialogue: 0,1:14:39.52,1:14:41.31,ENG,NTP,0,0,0,!Effect,What's that?\N{\rCHT}那是什麼{\r}
+Dialogue: 0,1:14:53.49,1:14:55.33,ENG,NTP,0,0,0,!Effect,The buyer.\N{\rCHT}買主{\r}
+Dialogue: 0,1:14:56.95,1:14:59.83,ENG,NTP,0,0,0,!Effect,Real simple. You call him when you get the scepter.\N{\rCHT}很簡單 你帶了貨去找他{\r}
+Dialogue: 0,1:15:00.54,1:15:03.46,ENG,NTP,0,0,0,!Effect,He'll meet you at the airstrip 30 miles up the St. Lawrence.\N{\rCHT}你們在聖羅倫河三哩外碰頭{\r}
+Dialogue: 0,1:15:03.50,1:15:07.30,ENG,NTP,0,0,0,!Effect,There's a little town called St. Croix.\N{\rCHT}附近有一座小鎮叫聖奎亞{\r}
+Dialogue: 0,1:15:08.84,1:15:11.51,ENG,NTP,0,0,0,!Effect,You give him the scepter, he gives you the cash.\N{\rCHT}你們一手交錢一手交貨{\r}
+Dialogue: 0,1:15:11.59,1:15:15.01,ENG,NTP,0,0,0,!Effect,You take your cut and you wire me the rest.\N{\rCHT}你拿了你那份 就把錢匯給我{\r}
+Dialogue: 0,1:15:15.05,1:15:18.64,ENG,NTP,0,0,0,!Effect,I'll give Teddy his, and you're clean.\N{\rCHT}我把錢還給蘇老大就沒事了{\r}
+Dialogue: 0,1:15:23.02,1:15:25.57,ENG,NTP,0,0,0,!Effect,It's too risky.\N{\rCHT}這太冒險了{\r}
+Dialogue: 0,1:15:25.65,1:15:27.61,ENG,NTP,0,0,0,!Effect,Can't.\N{\rCHT}辦不到{\r}
+Dialogue: 0,1:15:30.86,1:15:33.66,ENG,NTP,0,0,0,!Effect,You don't know what you're doing.\N{\rCHT}你不知道你在做什麼{\r}
+Dialogue: 0,1:15:33.70,1:15:36.45,ENG,NTP,0,0,0,!Effect,You know how long we go back?\N{\rCHT}你知道我們認識多少年{\r}
+Dialogue: 0,1:15:38.54,1:15:40.04,ENG,NTP,0,0,0,!Effect,Twenty-five years.\N{\rCHT}25年了{\r}
+Dialogue: 0,1:15:42.50,1:15:45.50,ENG,NTP,0,0,0,!Effect,I'm gonna tell you something.\N{\rCHT}我告訴你{\r}
+Dialogue: 0,1:15:45.59,1:15:49.72,ENG,NTP,0,0,0,!Effect,For the first time in my life, I'm scared.\N{\rCHT}我這輩子第一次感到害怕{\r}
+Dialogue: 0,1:15:49.80,1:15:52.26,ENG,NTP,0,0,0,!Effect,I don't know why it is. I was never scared before...\N{\rCHT}我不知道為什麼 但我以前天不怕地不怕...{\r}
+Dialogue: 0,1:15:52.35,1:15:55.14,ENG,NTP,0,0,0,!Effect,but I'm scared now, Nick.\N{\rCHT}但這次我好怕 尼克{\r}
+Dialogue: 0,1:15:55.22,1:15:59.35,ENG,NTP,0,0,0,!Effect,And you're right about Teddy. He's gonna blow me away if he can.\N{\rCHT}沒錯 蘇老大會把我幹掉{\r}
+Dialogue: 0,1:15:59.44,1:16:01.52,ENG,NTP,0,0,0,!Effect,If I don't get him his money, he...\N{\rCHT}如果我不還錢的話...{\r}
+Dialogue: 0,1:16:02.56,1:16:04.94,ENG,NTP,0,0,0,!Effect,Man, he...\N{\rCHT}天 他...{\r}
+Dialogue: 0,1:16:07.53,1:16:12.07,ENG,NTP,0,0,0,!Effect,Hey, don't... don't... don't... don't let me slide on this one.\N{\rCHT}嘿 別... 別... 別... 別這次別棄我不顧{\r}
+Dialogue: 0,1:16:12.16,1:16:14.49,ENG,NTP,0,0,0,!Effect,I can't afford it, man.\N{\rCHT}我會賠上一條命的 兄弟{\r}
+Dialogue: 0,1:16:20.25,1:16:23.92,ENG,NTP,0,0,0,!Effect,I can't... I can't scrap it out anymore.\N{\rCHT}我... 無路可逃了{\r}
+Dialogue: 0,1:16:24.00,1:16:26.42,ENG,NTP,0,0,0,!Effect,I gotta have some slack.\N{\rCHT}我需要這筆錢{\r}
+Dialogue: 0,1:16:31.64,1:16:33.64,ENG,NTP,0,0,0,!Effect,All right. Okay.\N{\rCHT}好的 好吧{\r}
+Dialogue: 0,1:16:35.93,1:16:38.06,ENG,NTP,0,0,0,!Effect,I hope you're not fucking me up.\N{\rCHT}你最好別害我{\r}
+Dialogue: 0,1:16:54.54,1:16:56.58,ENG,NTP,0,0,0,!Effect,I'm going down to check the power.\N{\rCHT}我要去檢查電源{\r}
+Dialogue: 0,1:17:04.13,1:17:07.93,ENG,NTP,0,0,0,!Effect,- How much more equipment you got?  - Here you go.\N{\rCHT}- 你有多少工具  - 拿去{\r}
+Dialogue: 0,1:17:12.72,1:17:14.43,ENG,NTP,0,0,0,!Effect,- Sorry! Sorry! Sorry!  - It's okay, Brian.\N{\rCHT}- 對不起 對不起 對不起  - 沒關係 布萊恩{\r}
+Dialogue: 0,1:17:14.52,1:17:16.77,ENG,NTP,0,0,0,!Effect,- Come on in.  - It's my radio.\N{\rCHT}- 進來  - 我的收音機{\r}
+Dialogue: 0,1:17:16.85,1:17:19.02,ENG,NTP,0,0,0,!Effect,- Hey, what's all the commotion?  - Don't worry, Danny.\N{\rCHT}- 嘿 這是怎麼回事  - 別擔心 丹尼{\r}
+Dialogue: 0,1:17:19.11,1:17:21.23,ENG,NTP,0,0,0,!Effect,- They're beefing things up.  - What for?\N{\rCHT}- 地下室要加強防備  - 為什麼{\r}
+Dialogue: 0,1:17:21.32,1:17:22.36,ENG,NTP,0,0,0,!Effect,A few cameras in the basement.\N{\rCHT}只是多裝幾架攝影機{\r}
+Dialogue: 0,1:17:22.36,1:17:23.94,ENG,NTP,0,0,0,!Effect,Like we're gonna lose it, right?\N{\rCHT}好像它會被偷似的 是嗎{\r}
+Dialogue: 0,1:17:23.99,1:17:26.40,ENG,NTP,0,0,0,!Effect,- Lose what?  - That thing in the piano leg.\N{\rCHT}- 什麼被偷  - 那個在鋼琴腿裡的東西{\r}
+Dialogue: 0,1:17:26.49,1:17:30.41,ENG,NTP,0,0,0,!Effect,- The big gold thing?  - Some French national treasure.\N{\rCHT}- 那根金棍  - 一些法國國寶{\r}
+Dialogue: 0,1:17:30.49,1:17:34.58,ENG,NTP,0,0,0,!Effect,- It's called a scepter.  - Some expert saw those pictures.\N{\rCHT}- 那是一根寶杖  - 一些專家看了那些照片{\r}
+Dialogue: 0,1:17:34.66,1:17:38.17,ENG,NTP,0,0,0,!Effect,Now we're getting calls from the central office.\N{\rCHT}辦公室中心打來電話了{\r}
+Dialogue: 0,1:17:41.63,1:17:44.97,ENG,NTP,0,0,0,!Effect,Hey, it's me. Yeah, we got a problem.\N{\rCHT}嘿 是我 對 出了狀況{\r}
+Dialogue: 0,1:17:45.01,1:17:48.89,ENG,NTP,0,0,0,!Effect,They got a camera over the main door here, covering that.\N{\rCHT}進口那裡也有個攝影機 拍著這裡{\r}
+Dialogue: 0,1:17:48.97,1:17:52.14,ENG,NTP,0,0,0,!Effect,They got a camera here, looking right across the middle.\N{\rCHT}他們在這兒裝了攝影機 中間這兒也有攝影機{\r}
+Dialogue: 0,1:17:52.18,1:17:55.27,ENG,NTP,0,0,0,!Effect,They got one special just on the box...\N{\rCHT}保險櫃正前方也有一台...{\r}
+Dialogue: 0,1:17:55.35,1:17:57.65,ENG,NTP,0,0,0,!Effect,sees this entire cage.\N{\rCHT}監視整個鐵籠{\r}
+Dialogue: 0,1:17:59.02,1:18:01.15,ENG,NTP,0,0,0,!Effect,This camera looking at the box...\N{\rCHT}這台攝影機面對著它...{\r}
+Dialogue: 0,1:18:01.19,1:18:03.95,ENG,NTP,0,0,0,!Effect,how high is it from the floor and how low is it from the ceiling?\N{\rCHT}它離地多高 離天花板多遠{\r}
+Dialogue: 0,1:18:04.03,1:18:07.66,ENG,NTP,0,0,0,!Effect,Probably 10, 12 feet up off the floor.\N{\rCHT}大概離地10至12英尺{\r}
+Dialogue: 0,1:18:07.74,1:18:11.20,ENG,NTP,0,0,0,!Effect,Four feet down from the ceiling. I think we're fucked.\N{\rCHT}離天花板四英尺 我們完蛋了{\r}
+Dialogue: 0,1:18:13.54,1:18:16.21,ENG,NTP,0,0,0,!Effect,So let me...\N{\rCHT}所以讓我...{\r}
+Dialogue: 0,1:18:16.29,1:18:18.63,ENG,NTP,0,0,0,!Effect,When I'm here...\N{\rCHT}我到了這兒{\r}
+Dialogue: 0,1:18:18.71,1:18:21.67,ENG,NTP,0,0,0,!Effect,you'll cut the feed when I get across here, then you'll restore it.\N{\rCHT}你就切斷攝影機 然後再恢復影像{\r}
+Dialogue: 0,1:18:21.71,1:18:23.80,ENG,NTP,0,0,0,!Effect,Then when I'm ready here, you'll cut it again...\N{\rCHT}等我準備好了 你再切斷攝影機{\r}
+Dialogue: 0,1:18:23.88,1:18:26.18,ENG,NTP,0,0,0,!Effect,and I'll go to work here.\N{\rCHT}讓我幹活{\r}
+Dialogue: 0,1:18:27.26,1:18:29.14,ENG,NTP,0,0,0,!Effect,I don't know about that, man.\N{\rCHT}我不曉得{\r}
+Dialogue: 0,1:18:29.22,1:18:31.52,ENG,NTP,0,0,0,!Effect,They know what it is so now they're gonna move it as soon as they can.\N{\rCHT}他們會儘快把寶杖移走{\r}
+Dialogue: 0,1:18:31.56,1:18:36.15,ENG,NTP,0,0,0,!Effect,We're not gonna get another chance. We gotta go now or we don't go at all.\N{\rCHT}這是唯一的機會 現在不幹就不要幹{\r}
+Dialogue: 0,1:20:03.82,1:20:05.83,ENG,NTP,0,0,0,!Effect,Hi, Doug. Hi.\N{\rCHT}嗨 道格 嗨{\r}
+Dialogue: 0,1:20:14.80,1:20:17.17,ENG,NTP,0,0,0,!Effect,- Hi, Henri.  - Hi, Brian.\N{\rCHT}- 嗨 亨利  - 嗨 布萊恩{\r}
+Dialogue: 0,1:20:21.01,1:20:23.80,ENG,NTP,0,0,0,!Effect,- Okay. Thank you.  - No problem.\N{\rCHT}- 好 謝謝你  - 不客氣{\r}
+Dialogue: 0,1:20:23.89,1:20:26.52,ENG,NTP,0,0,0,!Effect,- Hi, Danny.  - Hello, Brian.\N{\rCHT}- 嗨 丹尼  - 你好 布萊恩{\r}
+Dialogue: 0,1:20:26.60,1:20:31.10,ENG,NTP,0,0,0,!Effect,Oh, look at you. What fancy new shoes.\N{\rCHT}哦 看看你 好炫的新鞋{\r}
+Dialogue: 0,1:20:31.19,1:20:33.94,ENG,NTP,0,0,0,!Effect,Yeah. Yeah, my mom got those for me.\N{\rCHT}是 是 我媽替我買的{\r}
+Dialogue: 0,1:20:34.02,1:20:38.53,ENG,NTP,0,0,0,!Effect,- Oh, your mom gave you those?  - I think you got a girl.\N{\rCHT}- 哦 你媽買的  - 我以為你交了女朋友{\r}
+Dialogue: 0,1:20:38.57,1:20:41.07,ENG,NTP,0,0,0,!Effect,No girl, Danny. You're a stinker.\N{\rCHT}沒女朋友 丹尼 你這壞蛋{\r}
+Dialogue: 0,1:20:41.74,1:20:44.91,ENG,NTP,0,0,0,!Effect,Well, you and your new shoes can give me a hand up on six tonight.\N{\rCHT}呃 今晚你和你的新鞋可以到六樓來幫我{\r}
+Dialogue: 0,1:20:44.99,1:20:48.08,ENG,NTP,0,0,0,!Effect,We're gonna wax the whole cafeteria floor.\N{\rCHT}我們要替餐廳地板打蠟{\r}
+Dialogue: 0,1:20:48.16,1:20:50.21,ENG,NTP,0,0,0,!Effect,You hit the garbage. I'll get the stuff.\N{\rCHT}你先去倒垃圾 我去拿東西{\r}
+Dialogue: 0,1:20:50.25,1:20:52.79,ENG,NTP,0,0,0,!Effect,I'll meet you there, what, 15 minutes.\N{\rCHT}我在那兒見你 大概 15分鐘後見{\r}
+Dialogue: 0,1:20:52.88,1:20:54.84,ENG,NTP,0,0,0,!Effect,Fifteen. Okay.\N{\rCHT}15分鐘 好{\r}
+Dialogue: 0,1:20:54.92,1:21:00.55,ENG,NTP,0,0,0,!Effect,Okay, I'll get the garbage, Danny. Okay? Bye-bye, Andre.\N{\rCHT}好的 我去倒垃圾 丹尼 好吧 再見 安卓{\r}
+Dialogue: 0,1:21:00.64,1:21:02.39,ENG,NTP,0,0,0,!Effect,Bye-bye. You look good with those shoes.\N{\rCHT}再見 你的新鞋好帥{\r}
+Dialogue: 0,1:21:02.47,1:21:05.14,ENG,NTP,0,0,0,!Effect,Yeah, thanks. I know.\N{\rCHT}謝了 我知道{\r}
+Dialogue: 0,1:21:28.54,1:21:30.50,ENG,NTP,0,0,0,!Effect,Watch your step out there, Brian.\N{\rCHT}你要小心點 布萊恩{\r}
+Dialogue: 0,1:21:30.58,1:21:32.55,ENG,NTP,0,0,0,!Effect,I will. Thank you.\N{\rCHT}我會的 謝謝你{\r}
+Dialogue: 0,1:25:41.73,1:25:44.40,ENG,NTP,0,0,0,!Effect,Okay. Okay, Danny.\N{\rCHT}好的 好的 丹尼{\r}
+Dialogue: 0,1:25:44.48,1:25:47.61,ENG,NTP,0,0,0,!Effect,- Guess what time it is.  - I don't know.\N{\rCHT}- 你猜是什麼時間  - 我不知道{\r}
+Dialogue: 0,1:25:47.70,1:25:49.99,ENG,NTP,0,0,0,!Effect,Yes, you do, Danny! It's lunchtime!\N{\rCHT}不 你知道 丹尼 現在是午飯時間{\r}
+Dialogue: 0,1:25:50.07,1:25:52.20,ENG,NTP,0,0,0,!Effect,All right, I'll tell you what.\N{\rCHT}好吧 我來告訴你{\r}
+Dialogue: 0,1:25:52.28,1:25:52.93,ENG,NTP,0,0,0,!Effect,
+Dialogue: 0,1:25:52.28,1:25:55.12,ENG,NTP,0,0,0,!Effect,What do you say we keep on working, finish the other side, hmm?\N{\rCHT}我們繼續工作 把另一邊也弄完 你覺得怎麼樣{\r}
+Dialogue: 0,1:25:55.20,1:25:57.67,ENG,NTP,0,0,0,!Effect,No, Danny. Why?\N{\rCHT}不 丹尼 為什麼{\r}
+Dialogue: 0,1:25:57.75,1:26:00.96,ENG,NTP,0,0,0,!Effect,Then we can blow off the rest of the day and grab some pancakes.\N{\rCHT}然後就可以提早下班去吃煎餅{\r}
+Dialogue: 0,1:26:01.04,1:26:04.13,ENG,NTP,0,0,0,!Effect,It won't take us long. Just throw a little extra thinner into the mix.\N{\rCHT}很快就好了 多加點稀釋劑就很容易上蠟{\r}
+Dialogue: 0,1:26:04.21,1:26:07.26,ENG,NTP,0,0,0,!Effect,It'll go like butter.\N{\rCHT}就像塗黃油一樣{\r}
+Dialogue: 0,1:26:55.02,1:26:56.90,ENG,NTP,0,0,0,!Effect,Danny, I am sorry.\N{\rCHT}丹尼 對不起{\r}
+Dialogue: 0,1:26:56.98,1:26:59.15,ENG,NTP,0,0,0,!Effect,It's okay. Just leave it. I'll mop it up.\N{\rCHT}沒關係 放著吧 我來擦{\r}
+Dialogue: 0,1:26:59.19,1:27:01.32,ENG,NTP,0,0,0,!Effect,- I'll go get some more.  - You don't need to...\N{\rCHT}- 我再去拿點  - 你不需要...{\r}
+Dialogue: 0,1:27:01.40,1:27:04.03,ENG,NTP,0,0,0,!Effect,- I will get some more.  - All right.\N{\rCHT}- 我再去拿  - 沒關係{\r}
+Dialogue: 0,1:27:04.11,1:27:06.20,ENG,NTP,0,0,0,!Effect,- You know where? Ground floor?  - Okay.\N{\rCHT}- 你知道哪兒嗎 一樓  - 好{\r}
+Dialogue: 0,1:27:06.28,1:27:08.32,ENG,NTP,0,0,0,!Effect,You know the closet?\N{\rCHT}你知道櫃子在哪兒嗎{\r}
+Dialogue: 0,1:27:12.54,1:27:14.87,ENG,NTP,0,0,0,!Effect,Set to go. Set to go.\N{\rCHT}我可以了 我可以了{\r}
+Dialogue: 0,1:27:30.68,1:27:32.23,ENG,NTP,0,0,0,!Effect,Fuck.\N{\rCHT}媽的{\r}
+Dialogue: 0,1:27:36.27,1:27:39.27,ENG,NTP,0,0,0,!Effect,Are you there? I'm on my mark.\N{\rCHT}你在嗎 我好了{\r}
+Dialogue: 0,1:27:46.87,1:27:49.20,ENG,NTP,0,0,0,!Effect,- I'm on. Are you there?  - I'm here. We're running late.\N{\rCHT}- 好了 你在嗎  - 我在 你晚了{\r}
+Dialogue: 0,1:27:49.29,1:27:50.75,ENG,NTP,0,0,0,!Effect,I know. I hit a snag.\N{\rCHT}我知道 出了小狀況{\r}
+Dialogue: 0,1:27:52.75,1:27:55.71,ENG,NTP,0,0,0,!Effect,I'm already all set up, though. Just give me one second.\N{\rCHT}我都弄好了 但 再等我一下{\r}
+Dialogue: 0,1:28:01.92,1:28:05.47,ENG,NTP,0,0,0,!Effect,All right, I just gotta punch in these codes. Just sit tight.\N{\rCHT}好的 我要輸入密碼 等一下{\r}
+Dialogue: 0,1:28:25.66,1:28:26.95,ENG,NTP,0,0,0,!Effect,I got it.\N{\rCHT}好了{\r}
+Dialogue: 0,1:28:27.03,1:28:29.41,ENG,NTP,0,0,0,!Effect,Hang on one more beat.\N{\rCHT}再等一下{\r}
+Dialogue: 0,1:28:39.76,1:28:41.55,ENG,NTP,0,0,0,!Effect,It's clear. Get in there.\N{\rCHT}安全了 進去吧{\r}
+Dialogue: 0,1:29:08.70,1:29:12.63,ENG,NTP,0,0,0,!Effect,I'm inside the first cage. Repeat: I am inside the first cage.\N{\rCHT}我進了第一個鐵籠 重複 我進了第一個鐵籠{\r}
+Dialogue: 0,1:29:20.38,1:29:21.84,ENG,NTP,0,0,0,!Effect,You're all clear.\N{\rCHT}安全了{\r}
+Dialogue: 0,1:30:35.42,1:30:39.18,ENG,NTP,0,0,0,!Effect,- I'm set. Kill it.  - All right, on my mark.\N{\rCHT}- 好了 切斷訊號  - 好了 聽我指令{\r}
+Dialogue: 0,1:30:51.11,1:30:52.27,ENG,NTP,0,0,0,!Effect,Go.\N{\rCHT}快去{\r}
+Dialogue: 0,1:30:56.65,1:30:57.78,ENG,NTP,0,0,0,!Effect,I'm here.\N{\rCHT}我到了{\r}
+Dialogue: 0,1:30:59.57,1:31:01.49,ENG,NTP,0,0,0,!Effect,There we go.\N{\rCHT}好了{\r}
+Dialogue: 0,1:31:01.58,1:31:03.95,ENG,NTP,0,0,0,!Effect,Perfect. Tell me when you're in second position.\N{\rCHT}很好 你到了第二個位置就告訴我{\r}
+Dialogue: 0,1:33:45.09,1:33:46.96,ENG,NTP,0,0,0,!Effect,Fuck.\N{\rCHT}可惡{\r}
+Dialogue: 0,1:34:30.68,1:34:33.35,ENG,NTP,0,0,0,!Effect,- How ya doing down there?  - Almost there.\N{\rCHT}- 你怎麼樣  - 快行了{\r}
+Dialogue: 0,1:34:50.82,1:34:52.83,ENG,NTP,0,0,0,!Effect,Do you know where is Brian?\N{\rCHT}知道布萊恩在哪裡嗎{\r}
+Dialogue: 0,1:34:54.04,1:34:55.79,ENG,NTP,0,0,0,!Effect,No idea.\N{\rCHT}不知道{\r}
+Dialogue: 0,1:35:55.02,1:35:55.81,ENG,NTP,0,0,0,!Effect,I'm ready.\N{\rCHT}我好了{\r}
+Dialogue: 0,1:35:56.56,1:35:59.86,ENG,NTP,0,0,0,!Effect,I need a second here. Hold on.\N{\rCHT}我需要點時間 等我一下{\r}
+Dialogue: 0,1:36:00.44,1:36:02.90,ENG,NTP,0,0,0,!Effect,I'm all set. Cut the cameras. Repeat:\N{\rCHT}我好了 快切斷訊號 重複{\r}
+Dialogue: 0,1:36:02.99,1:36:05.24,ENG,NTP,0,0,0,!Effect,I'm all set. Cut the cameras.\N{\rCHT}我好了 快切斷訊號{\r}
+Dialogue: 0,1:36:08.57,1:36:10.70,ENG,NTP,0,0,0,!Effect,Gotta go. Got to go.\N{\rCHT}我要行動了 我要行動了{\r}
+Dialogue: 0,1:36:14.00,1:36:16.08,ENG,NTP,0,0,0,!Effect,What's up? What's up?\N{\rCHT}怎麼了 怎麼了{\r}
+Dialogue: 0,1:36:17.29,1:36:20.09,ENG,NTP,0,0,0,!Effect,I got company. I got company.\N{\rCHT}有人來了 有人來了{\r}
+Dialogue: 0,1:36:22.05,1:36:24.05,ENG,NTP,0,0,0,!Effect,Hang on one second.\N{\rCHT}等一下{\r}
+Dialogue: 0,1:36:24.13,1:36:25.88,ENG,NTP,0,0,0,!Effect,Just sit tight. I'll be right back.\N{\rCHT}撐著點 我就回來{\r}
+Dialogue: 0,1:36:58.00,1:36:59.84,ENG,NTP,0,0,0,!Effect,Okay.\N{\rCHT}好{\r}
+Dialogue: 0,1:37:16.73,1:37:18.73,ENG,NTP,0,0,0,!Effect,Jack, where are you?\N{\rCHT}傑克 你在哪裡{\r}
+Dialogue: 0,1:37:23.20,1:37:25.66,ENG,NTP,0,0,0,!Effect,Jack, come in. Jack.\N{\rCHT}傑克 進來 傑克{\r}
+Dialogue: 0,1:37:41.34,1:37:43.84,ENG,NTP,0,0,0,!Effect,Jack, are you there?\N{\rCHT}傑克 你在嗎{\r}
+Dialogue: 0,1:38:04.78,1:38:06.79,ENG,NTP,0,0,0,!Effect,I'm pulling out. Repeat: I'm pulling out.\N{\rCHT}我要撤退 重複 我要撤退{\r}
+Dialogue: 0,1:38:06.83,1:38:08.79,ENG,NTP,0,0,0,!Effect,- I'm back. I'm back.  - It's too late.\N{\rCHT}- 我回來了 我回來了  - 太遲了{\r}
+Dialogue: 0,1:38:08.83,1:38:11.12,ENG,NTP,0,0,0,!Effect,- I'm pulling out.  - No, it's not. We're good.\N{\rCHT}- 我要撤退  - 不 沒問題 可以了{\r}
+Dialogue: 0,1:38:11.21,1:38:12.88,ENG,NTP,0,0,0,!Effect,Get ready to go.\N{\rCHT}準備好走了{\r}
+Dialogue: 0,1:38:14.54,1:38:16.00,ENG,NTP,0,0,0,!Effect,On my mark.\N{\rCHT}聽我指令{\r}
+Dialogue: 0,1:38:20.22,1:38:21.34,ENG,NTP,0,0,0,!Effect,Go, go, go.\N{\rCHT}快去 快去 快去{\r}
+Dialogue: 0,1:38:35.82,1:38:37.78,ENG,NTP,0,0,0,!Effect,What the hell's wrong with these machines?\N{\rCHT}監視器是怎麼了{\r}
+Dialogue: 0,1:38:50.42,1:38:53.42,ENG,NTP,0,0,0,!Effect,Hey, stop banging on it. Check the connection.\N{\rCHT}別敲了 檢查一下接頭{\r}
+Dialogue: 0,1:39:14.73,1:39:18.07,ENG,NTP,0,0,0,!Effect,- You see something?  - I don't know.\N{\rCHT}- 有什麼問題  - 不曉得{\r}
+Dialogue: 0,1:39:36.92,1:39:39.34,ENG,NTP,0,0,0,!Effect,Call them. Call Ironclad.\N{\rCHT}給他們打電話 打給保全公司{\r}
+Dialogue: 0,1:39:40.09,1:39:43.18,ENG,NTP,0,0,0,!Effect,- And look like idiots?  - I don't care. Call them.\N{\rCHT}- 這樣不是很丟臉  - 我不管 快打{\r}
+Dialogue: 0,1:40:38.78,1:40:41.49,ENG,NTP,0,0,0,!Effect,Maybe it's some of the equipment down in the basement.\N{\rCHT}也許是地下室的器材故障{\r}
+Dialogue: 0,1:40:43.83,1:40:45.83,ENG,NTP,0,0,0,!Effect,Okay. Thanks.\N{\rCHT}好 謝了{\r}
+Dialogue: 0,1:40:47.54,1:40:50.17,ENG,NTP,0,0,0,!Effect,Someone will be here in a few minutes.\N{\rCHT}他們過幾分鐘就到{\r}
+Dialogue: 0,1:41:36.64,1:41:38.72,ENG,NTP,0,0,0,!Effect,Where are you, kid?\N{\rCHT}你在哪兒 孩子{\r}
+Dialogue: 0,1:43:24.96,1:43:27.97,ENG,NTP,0,0,0,!Effect,Make a move, make a sound, and you are dead.\N{\rCHT}你敢亂動或吭聲就沒命{\r}
+Dialogue: 0,1:43:28.05,1:43:30.09,ENG,NTP,0,0,0,!Effect,Do you understand me?\N{\rCHT}你不明白嗎{\r}
+Dialogue: 0,1:43:32.01,1:43:33.60,ENG,NTP,0,0,0,!Effect,Turn around.\N{\rCHT}轉過來{\r}
+Dialogue: 0,1:43:38.14,1:43:39.69,ENG,NTP,0,0,0,!Effect,Be quiet.\N{\rCHT}別說話{\r}
+Dialogue: 0,1:43:54.12,1:43:56.08,ENG,NTP,0,0,0,!Effect,I wish you had not come down here, man.\N{\rCHT}我希望你沒下來過 兄弟{\r}
+Dialogue: 0,1:43:59.92,1:44:04.05,ENG,NTP,0,0,0,!Effect,Get over there. Turn around. Come on. Let's go. Turn around.\N{\rCHT}過去 轉過去 快點 轉過去{\r}
+Dialogue: 0,1:44:04.13,1:44:08.01,ENG,NTP,0,0,0,!Effect,Walk over there. Open the door.\N{\rCHT}轉過去 去開門{\r}
+Dialogue: 0,1:44:08.09,1:44:10.14,ENG,NTP,0,0,0,!Effect,Open it.\N{\rCHT}快開門{\r}
+Dialogue: 0,1:44:10.18,1:44:12.10,ENG,NTP,0,0,0,!Effect,Get inside.\N{\rCHT}進去{\r}
+Dialogue: 0,1:44:14.18,1:44:16.10,ENG,NTP,0,0,0,!Effect,Look at me.\N{\rCHT}看著我{\r}
+Dialogue: 0,1:44:16.18,1:44:18.65,ENG,NTP,0,0,0,!Effect,You're a good man. I don't want to hurt you.\N{\rCHT}你是個好人 我不想傷你{\r}
+Dialogue: 0,1:44:18.69,1:44:21.61,ENG,NTP,0,0,0,!Effect,But if you start making noise or try to open that door, I will do it.\N{\rCHT}你若亂來或者想開門 我就斃了你{\r}
+Dialogue: 0,1:44:21.69,1:44:23.19,ENG,NTP,0,0,0,!Effect,Do you understand me?\N{\rCHT}懂嗎{\r}
+Dialogue: 0,1:44:25.57,1:44:28.66,ENG,NTP,0,0,0,!Effect,Stay in there and be quiet. Everything will be fine.\N{\rCHT}乖乖待著 不會有事的{\r}
+Dialogue: 0,1:45:32.06,1:45:33.89,ENG,NTP,0,0,0,!Effect,I don't wanna wait.\N{\rCHT}我不想等了{\r}
+Dialogue: 0,1:45:33.93,1:45:36.73,ENG,NTP,0,0,0,!Effect,I want you and Tommy to go into the basement now.\N{\rCHT}你跟湯米馬上到地下室去{\r}
+Dialogue: 0,1:45:36.77,1:45:39.07,ENG,NTP,0,0,0,!Effect,Come on, Andre. I'm watching this.\N{\rCHT}別這樣 安卓 我正在看電視{\r}
+Dialogue: 0,1:45:39.15,1:45:40.94,ENG,NTP,0,0,0,!Effect,Laurent, please.\N{\rCHT}羅倫 快去{\r}
+Dialogue: 0,1:45:42.94,1:45:46.24,ENG,NTP,0,0,0,!Effect,Tommy, get Philippe. We're gonna be checking out the basement again.\N{\rCHT}湯米 去找菲利 我們要再查一下地下室{\r}
+Dialogue: 0,1:46:30.75,1:46:32.58,ENG,NTP,0,0,0,!Effect,Hold it right there!\N{\rCHT}給我站住{\r}
+Dialogue: 0,1:46:32.66,1:46:34.88,ENG,NTP,0,0,0,!Effect,- Are you crazy?  - Take it off and put it down.\N{\rCHT}- 你瘋了  - 把東西放下來{\r}
+Dialogue: 0,1:46:34.96,1:46:38.92,ENG,NTP,0,0,0,!Effect,- Aw, come on.  - Take it off and put it down now!\N{\rCHT}- 少來  - 給我把東西放下來{\r}
+Dialogue: 0,1:46:39.01,1:46:42.38,ENG,NTP,0,0,0,!Effect,- Don't do this.  - Take it off and put it down!\N{\rCHT}- 別這樣  - 給我把東西放在地上{\r}
+Dialogue: 0,1:46:42.47,1:46:44.43,ENG,NTP,0,0,0,!Effect,- Please, don't...  - Don't fucking argue with me.\N{\rCHT}- 拜託 別...  - 別來這套{\r}
+Dialogue: 0,1:46:44.51,1:46:47.18,ENG,NTP,0,0,0,!Effect,Take it off and put it down.\N{\rCHT}把東西放下來{\r}
+Dialogue: 0,1:46:47.26,1:46:48.89,ENG,NTP,0,0,0,!Effect,I can't. I can't.\N{\rCHT}我辦不到 辦不到{\r}
+Dialogue: 0,1:46:50.18,1:46:53.35,ENG,NTP,0,0,0,!Effect,I'll put the next one in your knee. I don't have time to fuck around.\N{\rCHT}我會射穿你膝蓋 別浪費時間{\r}
+Dialogue: 0,1:46:53.44,1:46:56.73,ENG,NTP,0,0,0,!Effect,We can work out the details later. I am leaving with that scepter.\N{\rCHT}有事以後再說 我要帶走寶杖{\r}
+Dialogue: 0,1:46:58.03,1:47:02.11,ENG,NTP,0,0,0,!Effect,Now, take it off and hand it over right now!\N{\rCHT}把東西交給我 快點{\r}
+Dialogue: 0,1:47:09.33,1:47:12.92,ENG,NTP,0,0,0,!Effect,Put it down. Slowly.\N{\rCHT}放下 慢慢地{\r}
+Dialogue: 0,1:47:13.63,1:47:15.92,ENG,NTP,0,0,0,!Effect,Now, step back. Back up.\N{\rCHT}退後 退後一步{\r}
+Dialogue: 0,1:47:24.85,1:47:26.81,ENG,NTP,0,0,0,!Effect,- Take off your mask.  - What?\N{\rCHT}- 把面罩脫掉  - 什麼{\r}
+Dialogue: 0,1:47:26.89,1:47:28.39,ENG,NTP,0,0,0,!Effect,Take it off!\N{\rCHT}快脫掉{\r}
+Dialogue: 0,1:47:30.02,1:47:33.36,ENG,NTP,0,0,0,!Effect,I don't have time to play games. Take it off.\N{\rCHT}我沒時間玩了 快脫掉{\r}
+Dialogue: 0,1:47:45.70,1:47:47.62,ENG,NTP,0,0,0,!Effect,Throw it over there.\N{\rCHT}丟過去{\r}
+Dialogue: 0,1:47:49.79,1:47:51.96,ENG,NTP,0,0,0,!Effect,Step in the middle.\N{\rCHT}站到中間{\r}
+Dialogue: 0,1:47:52.04,1:47:54.38,ENG,NTP,0,0,0,!Effect,Step in the middle. That's right.\N{\rCHT}站過去 這就對了{\r}
+Dialogue: 0,1:47:58.05,1:48:02.09,ENG,NTP,0,0,0,!Effect,We wouldn't be here if you'd thrown me some respect at the beginning.\N{\rCHT}如果一開始你對我尊重一點就不會這樣{\r}
+Dialogue: 0,1:48:02.18,1:48:04.14,ENG,NTP,0,0,0,!Effect,- Just a little bit.  - This is a stupid move.\N{\rCHT}- 只是有點兒  - 你這麼做很蠢{\r}
+Dialogue: 0,1:48:05.85,1:48:08.31,ENG,NTP,0,0,0,!Effect,What are you doing? Just go up there and finish...\N{\rCHT}你在幹什麼 只要上去並完成...{\r}
+Dialogue: 0,1:48:08.39,1:48:09.94,ENG,NTP,0,0,0,!Effect,It's a long shot. I should play it tight.\N{\rCHT}這是個大計畫 我得小心點{\r}
+Dialogue: 0,1:48:10.02,1:48:11.94,ENG,NTP,0,0,0,!Effect,You know what I think of your bullshit advice?\N{\rCHT}你知道我怎麼想你的那個狗屁建議的嗎{\r}
+Dialogue: 0,1:48:12.02,1:48:15.15,ENG,NTP,0,0,0,!Effect,I think that's you trying to talk me into taking a sucker's share...\N{\rCHT}我覺得你想說服我拿一個騙子的好處...{\r}
+Dialogue: 0,1:48:15.23,1:48:18.49,ENG,NTP,0,0,0,!Effect,on a score that I set up from the beginning!\N{\rCHT}而這筆買賣從一開始就是我策劃的{\r}
+Dialogue: 0,1:48:19.99,1:48:24.04,ENG,NTP,0,0,0,!Effect,You think I'm stupid, that I don't see what you and Max are doing?\N{\rCHT}你以為我笨得看不出來你和麥斯做的事嗎{\r}
+Dialogue: 0,1:48:25.70,1:48:29.37,ENG,NTP,0,0,0,!Effect,I mean, what is he giving you? Five, six million?\N{\rCHT}我是說 麥斯分你五 六百萬嗎{\r}
+Dialogue: 0,1:48:29.46,1:48:31.88,ENG,NTP,0,0,0,!Effect,Tell me that's not true.\N{\rCHT}別說是真的{\r}
+Dialogue: 0,1:48:31.96,1:48:34.17,ENG,NTP,0,0,0,!Effect,See, that doesn't work for me.\N{\rCHT}我才沒那麼傻{\r}
+Dialogue: 0,1:48:35.80,1:48:40.64,ENG,NTP,0,0,0,!Effect,I appreciate your help, but you should've made me a partner.\N{\rCHT}謝謝你的幫忙 但你應該把我當搭檔{\r}
+Dialogue: 0,1:48:40.72,1:48:42.76,ENG,NTP,0,0,0,!Effect,Now I gotta take a shot.\N{\rCHT}現在我要冒這個險{\r}
+Dialogue: 0,1:48:48.48,1:48:51.98,ENG,NTP,0,0,0,!Effect,Just sit tight. Just sit tight. Everything will be fine.\N{\rCHT}別緊張 不會有事的{\r}
+Dialogue: 0,1:48:55.99,1:48:59.57,ENG,NTP,0,0,0,!Effect,Now you got a choice. You can either head for that tunnel...\N{\rCHT}你有兩個選擇 沖向通道...{\r}
+Dialogue: 0,1:48:59.66,1:49:01.53,ENG,NTP,0,0,0,!Effect,or smile for that camera.\N{\rCHT}或是對鏡頭微笑{\r}
+Dialogue: 0,1:49:10.13,1:49:11.67,ENG,NTP,0,0,0,!Effect,Andre, what's happening?\N{\rCHT}安卓 怎麼回事{\r}
+Dialogue: 0,1:49:11.75,1:49:13.38,ENG,NTP,0,0,0,!Effect,Get down! Go to the basement!\N{\rCHT}快下去 去地下室{\r}
+Dialogue: 0,1:49:13.46,1:49:16.05,ENG,NTP,0,0,0,!Effect,We're being robbed! We're being robbed!\N{\rCHT}我們被搶了 我們被搶了{\r}
+Dialogue: 0,1:49:21.05,1:49:24.06,ENG,NTP,0,0,0,!Effect,Henri, quick! Go outside! Wait for the police!\N{\rCHT}亨利 快 出去 等員警{\r}
+Dialogue: 0,1:49:31.61,1:49:33.36,ENG,NTP,0,0,0,!Effect,Let's go! Go! Go! Go! Go!\N{\rCHT}快點 快走 快走 快走 快走{\r}
+Dialogue: 0,1:50:04.77,1:50:06.85,ENG,NTP,0,0,0,!Effect,Over here! Over here!\N{\rCHT}在這兒 在這兒{\r}
+Dialogue: 0,1:50:11.03,1:50:15.24,ENG,NTP,0,0,0,!Effect,- He's in the tunnel!  - Where is he?\N{\rCHT}- 他在通道裡  - 他在哪兒{\r}
+Dialogue: 0,1:50:17.62,1:50:19.08,ENG,NTP,0,0,0,!Effect,Find him!\N{\rCHT}快去找他{\r}
+Dialogue: 0,1:50:20.31,1:50:22.51,ENG,NTP,0,0,0,!Effect,Come on! Come on!\N{\rCHT}快點 快點{\r}
+Dialogue: 0,1:50:35.97,1:50:38.10,ENG,NTP,0,0,0,!Effect,- Back there!  - Okay!\N{\rCHT}- 後面  - 好的{\r}
+Dialogue: 0,1:50:38.18,1:50:40.18,ENG,NTP,0,0,0,!Effect,Come on! Come on! Come on!\N{\rCHT}快點 快點 快點{\r}
+Dialogue: 0,1:51:24.19,1:51:26.90,ENG,NTP,0,0,0,!Effect,- Andre!  - Oh, shit.\N{\rCHT}- 安卓  - 哦 媽的{\r}
+Dialogue: 0,1:51:26.98,1:51:29.07,ENG,NTP,0,0,0,!Effect,- Andre, is there a fire?  - It's okay.\N{\rCHT}- 安卓 起火了嗎  - 沒事的{\r}
+Dialogue: 0,1:51:32.99,1:51:34.91,ENG,NTP,0,0,0,!Effect,- Where's Danny?  - Just get out!\N{\rCHT}- 丹尼呢  - 快出去吧{\r}
+Dialogue: 0,1:51:34.99,1:51:37.37,ENG,NTP,0,0,0,!Effect,- Okay.  - Just wait outside.\N{\rCHT}- 好  - 在外面等{\r}
+Dialogue: 0,1:51:39.99,1:51:40.87,ENG,NTP,0,0,0,!Effect,My radio.\N{\rCHT}我的收音機{\r}
+Dialogue: 0,1:51:40.91,1:51:44.38,ENG,NTP,0,0,0,!Effect,- Just wait outside!  - Okay, bye-bye.\N{\rCHT}- 到外面等  - 好 再見{\r}
+Dialogue: 0,1:51:47.50,1:51:49.84,ENG,NTP,0,0,0,!Effect,Wait, Brian, wait!\N{\rCHT}等等 布萊恩 等等{\r}
+Dialogue: 0,1:51:49.88,1:51:51.68,ENG,NTP,0,0,0,!Effect,Get back, Brian!\N{\rCHT}回去 布萊恩{\r}
+Dialogue: 0,1:51:54.22,1:51:56.97,ENG,NTP,0,0,0,!Effect,It's Brian! It's Brian!\N{\rCHT}是布萊恩 是布萊恩{\r}
+Dialogue: 0,1:51:57.06,1:52:00.85,ENG,NTP,0,0,0,!Effect,- Have you seen Brian?  - He's okay! He's outside!\N{\rCHT}- 你看到布萊恩嗎  - 他沒事 他在外面{\r}
+Dialogue: 0,1:52:00.94,1:52:03.15,ENG,NTP,0,0,0,!Effect,No! My God, it's him!\N{\rCHT}不 天啊 就是他幹的{\r}
+Dialogue: 0,1:52:05.23,1:52:07.99,ENG,NTP,0,0,0,!Effect,It's okay now. It's okay.\N{\rCHT}現在沒事了 沒事了{\r}
+Dialogue: 0,1:54:39.86,1:54:43.69,ENG,NTP,0,0,0,!Effect,Attention. The bus to Albany, New York leaves in five...\N{\rCHT}請注意 去紐約州奧爾巴尼的巴士將在五分鐘...{\r}
+Dialogue: 0,1:54:45.70,1:54:46.70,ENG,NTP,0,0,0,!Effect,Yeah?\N{\rCHT}喂{\r}
+Dialogue: 0,1:54:46.78,1:54:49.03,ENG,NTP,0,0,0,!Effect,- Hey, did you make it?  - Fuck you.\N{\rCHT}- 嘿 你逃出來了嗎  - 去你的{\r}
+Dialogue: 0,1:54:50.45,1:54:52.41,ENG,NTP,0,0,0,!Effect,Come on. I'm just checking to make sure you got out okay.\N{\rCHT}別這樣 我只是看看你有沒有逃出來{\r}
+Dialogue: 0,1:54:52.45,1:54:54.41,ENG,NTP,0,0,0,!Effect,I knew you'd give 'em the slip.\N{\rCHT}我知道你溜了{\r}
+Dialogue: 0,1:54:55.62,1:54:57.58,ENG,NTP,0,0,0,!Effect,I'm almost home, too, here, by the way.\N{\rCHT}我也快脫身了{\r}
+Dialogue: 0,1:54:57.67,1:54:59.46,ENG,NTP,0,0,0,!Effect,Oh, you are, huh? You sure about that?\N{\rCHT}哦 是嗎 你確定{\r}
+Dialogue: 0,1:54:59.55,1:55:03.01,ENG,NTP,0,0,0,!Effect,Look, whatever you're thinking about, just forget it, okay?\N{\rCHT}不管你有多不爽 算了吧 好嗎{\r}
+Dialogue: 0,1:55:03.09,1:55:05.09,ENG,NTP,0,0,0,!Effect,This is over now and you just gotta deal with it.\N{\rCHT}一切都完了 願賭就得服輸{\r}
+Dialogue: 0,1:55:05.13,1:55:08.68,ENG,NTP,0,0,0,!Effect,It's not over yet 'cause you don't know where you're going, and I do.\N{\rCHT}還沒完 你不知道自己會有什麼下場 而我知道{\r}
+Dialogue: 0,1:55:08.76,1:55:10.68,ENG,NTP,0,0,0,!Effect,- You don't know shit!  - You know where you're going?\N{\rCHT}- 你知道個屁  - 你知道你會怎麼樣嗎{\r}
+Dialogue: 0,1:55:10.77,1:55:15.35,ENG,NTP,0,0,0,!Effect,I'm five minutes from being gone. You can't imagine where I'm going.\N{\rCHT}我馬上就要走了 我會逃得遠遠的誰也找不到{\r}
+Dialogue: 0,1:55:15.44,1:55:18.19,ENG,NTP,0,0,0,!Effect,- You got nothing.  - You know what I got.\N{\rCHT}- 你不必逃 你什麼都沒有  - 你知道我贏了{\r}
+Dialogue: 0,1:55:18.27,1:55:20.40,ENG,NTP,0,0,0,!Effect,You just can't deal with the fact that I beat you.\N{\rCHT}你只是不承認我打敗你了{\r}
+Dialogue: 0,1:55:20.48,1:55:22.69,ENG,NTP,0,0,0,!Effect,Oh, yeah? What have you got?\N{\rCHT}哦 是嗎 你到底有什麼{\r}
+Dialogue: 0,1:55:22.69,1:55:24.57,ENG,NTP,0,0,0,!Effect,Huh? What have you got?\N{\rCHT}啊 你到底有什麼{\r}
+Dialogue: 0,1:55:24.66,1:55:26.70,ENG,NTP,0,0,0,!Effect,You know what I've got.\N{\rCHT}你明明知道{\r}
+Dialogue: 0,1:55:55.69,1:55:56.94,ENG,NTP,0,0,0,!Effect,Let me ask you something.\N{\rCHT}我問你{\r}
+Dialogue: 0,1:55:57.02,1:56:00.44,ENG,NTP,0,0,0,!Effect,When did you start thinking you were better than me, huh?\N{\rCHT}你什麼時候開始覺得你比我強{\r}
+Dialogue: 0,1:56:00.53,1:56:01.70,ENG,NTP,0,0,0,!Effect,You still there, ace?\N{\rCHT}高手 你還在嗎{\r}
+Dialogue: 0,1:56:03.45,1:56:06.45,ENG,NTP,0,0,0,!Effect,Okay. Nicely done.\N{\rCHT}好的 做的不錯{\r}
+Dialogue: 0,1:56:06.53,1:56:09.16,ENG,NTP,0,0,0,!Effect,Nicely done. Now let's talk about this.\N{\rCHT}好傢夥 算你狠 我們談談吧{\r}
+Dialogue: 0,1:56:09.25,1:56:11.62,ENG,NTP,0,0,0,!Effect,Okay, let's see. How'd you put it? "Deal with it. It's over."\N{\rCHT}好吧 我們看看 你不是說 "願賭就得服輸"{\r}
+Dialogue: 0,1:56:11.71,1:56:14.83,ENG,NTP,0,0,0,!Effect,No, I don't think so. You want me to list the ways I can burn you?\N{\rCHT}不 我覺得不對 你想讓我去檢舉你嗎{\r}
+Dialogue: 0,1:56:14.88,1:56:18.05,ENG,NTP,0,0,0,!Effect,We either work this out right now, or I will take you down.\N{\rCHT}你不分我錢我就把你拖下水{\r}
+Dialogue: 0,1:56:18.13,1:56:21.55,ENG,NTP,0,0,0,!Effect,Oh, yeah? How? My shop, my tools, they're gone.\N{\rCHT}哦 是嗎 怎麼拖 我的設備全都搬走了{\r}
+Dialogue: 0,1:56:21.63,1:56:24.39,ENG,NTP,0,0,0,!Effect,Me, my friend, I'm just a taxpaying jazz club owner.\N{\rCHT}我只是奉公守法的爵士吧老闆{\r}
+Dialogue: 0,1:56:24.47,1:56:27.47,ENG,NTP,0,0,0,!Effect,You? Every cop in the city's looking for you right about now.\N{\rCHT}而你 你卻是受到通緝的大盜{\r}
+Dialogue: 0,1:56:28.22,1:56:31.52,ENG,NTP,0,0,0,!Effect,So if I were you, I'd quit making threats and hit the road.\N{\rCHT}所以我要是你 就趕緊逃命吧{\r}
+Dialogue: 0,1:56:35.48,1:56:37.53,ENG,NTP,0,0,0,!Effect,Nice working with you, ace.\N{\rCHT}很高興跟你合作 高手{\r}
+Dialogue: 0,1:56:37.57,1:56:39.86,ENG,NTP,0,0,0,!Effect,Okay, bye-bye.\N{\rCHT}好 再見{\r}
+Dialogue: 0,1:57:12.77,1:57:15.65,ENG,NTP,0,0,0,!Effect,Montreal was stunned by the daring predawn robbery...\N{\rCHT}蒙特婁海關大樓...{\r}
+Dialogue: 0,1:57:15.69,1:57:18.57,ENG,NTP,0,0,0,!Effect,of the old city's historic customshouse.\N{\rCHT}發生一宗竊案{\r}
+Dialogue: 0,1:57:18.65,1:57:22.20,ENG,NTP,0,0,0,!Effect,A priceless scepter was stolen. A senior night janitor...\N{\rCHT}一件無價之寶失竊 一個老看門人...{\r}
+Dialogue: 0,1:57:22.28,1:57:24.20,ENG,NTP,0,0,0,!Effect,identified this man...\N{\rCHT}指認此人...{\r}
+Dialogue: 0,1:57:24.28,1:57:26.20,ENG,NTP,0,0,0,!Effect,as the prime suspect in the burglary.\N{\rCHT}就是劫案的首席嫌犯{\r}
+Dialogue: 0,1:57:26.29,1:57:29.50,ENG,NTP,0,0,0,!Effect,He was spotted leaving the scene moments after the robbery...\N{\rCHT}他在竊案後被看見離開現場...{\r}
+Dialogue: 0,1:57:29.58,1:57:32.04,ENG,NTP,0,0,0,!Effect,and is now the focus of a massive manhunt.\N{\rCHT}他目前受到全面追捕{\r}
+Dialogue: 0,1:57:32.09,1:57:35.84,ENG,NTP,0,0,0,!Effect,A second suspect vanished from the scene without a trace.\N{\rCHT}第二名嫌犯消失無蹤{\r}
+Dialogue: 0,1:57:35.92,1:57:39.09,ENG,NTP,0,0,0,!Effect,Police have no solid leads.\N{\rCHT}警方毫無線索{\r}
+
