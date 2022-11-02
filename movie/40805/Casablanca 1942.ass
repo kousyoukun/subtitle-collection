@@ -1,0 +1,1536 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: Casablanca 1942
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CHT,標楷體,15,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1
+Style: ENG,Microsoft YaHei UI,16,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1 
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:10.81,0:00:14.31,CHT,,0,0,0,!Effect,{\fs36}亨佛萊鮑嘉  英格麗褒曼
+Dialogue: 0,0:00:10.81,0:00:14.31,CHT,,0,0,0,!Effect,{\fs36}保羅韓瑞德
+Dialogue: 0,0:00:17.11,0:00:18.81,CHT,,0,0,0,!Effect,{\fs40}卡薩布蘭卡
+Dialogue: 0,0:00:33.81,0:00:39.81,CHT,,0,0,0,!Effect,{\fs32}茱麗斯 J. 菲力普艾普斯坦{\r}
+Dialogue: 0,0:00:33.81,0:00:39.81,CHT,,0,0,0,!Effect,{\fs32}霍華德柯霍
+Dialogue: 0,0:01:00.81,0:01:03.81,CHT,,0,0,0,!Effect,{\fs32}哈爾華利斯{\r}
+Dialogue: 0,0:01:05.61,0:01:09.81,CHT,,0,0,0,!Effect,{\fs36}邁可爾寇蒂斯{\r}
+Dialogue: 0,0:01:11.91,0:01:14.71,ENG,,0,0,0,!Effect,With the coming of the Second World War...\N{\rCHT}二次大戰迫近...{\r}
+Dialogue: 0,0:01:15.05,0:01:19.04,ENG,,0,0,0,!Effect,...many eyes in imprisoned Europe turned hopefully, or desperately...\N{\rCHT}...很多被困在歐洲的人們懷著希望 甚至急切地...{\r}
+Dialogue: 0,0:01:19.39,0:01:22.05,ENG,,0,0,0,!Effect,...toward the freedom of the Americas.\N{\rCHT}...想要來到自由的美洲.{\r}
+Dialogue: 0,0:01:22.29,0:01:24.92,ENG,,0,0,0,!Effect,Lisbon became the great embarkation point.\N{\rCHT}里斯本成為熱絡的航運地點.{\r}
+Dialogue: 0,0:01:25.13,0:01:28.29,ENG,,0,0,0,!Effect,But not everybody could get to Lisbon directly.\N{\rCHT}不過並非每個人均能直接到達里斯本.{\r}
+Dialogue: 0,0:01:28.73,0:01:32.39,ENG,,0,0,0,!Effect,And so a torturous, roundabout refugee trail sprang up.\N{\rCHT}因此一條艱苦迂回的 逃難路線出現{\r}
+Dialogue: 0,0:01:33.43,0:01:35.06,ENG,,0,0,0,!Effect,Paris to Marseilles...\N{\rCHT}從巴黎到馬賽...{\r}
+Dialogue: 0,0:01:41.08,0:01:43.74,ENG,,0,0,0,!Effect,...across the Mediterranean to Oran.\N{\rCHT}...越過地中海到奧朗.{\r}
+Dialogue: 0,0:01:51.09,0:01:55.55,ENG,,0,0,0,!Effect,Then, by train or auto or foot, across the rim of Africa...\N{\rCHT}然後搭火車 汽車或走路 沿著非洲的海岸線...{\r}
+Dialogue: 0,0:01:55.76,0:01:58.23,ENG,,0,0,0,!Effect,...to Casablanca in French Morocco.\N{\rCHT}...來到法屬摩洛哥的卡薩布蘭卡.{\r}
+Dialogue: 0,0:01:58.53,0:02:03.02,ENG,,0,0,0,!Effect,Here, the fortunate ones, through money or influence or luck...\N{\rCHT}在這裡 幸運的人 藉著錢 影響力 或運氣...{\r}
+Dialogue: 0,0:02:03.36,0:02:06.70,ENG,,0,0,0,!Effect,...might obtain exit visas and scurry to Lisbon.\N{\rCHT}...可能拿到出境許可證然後趕往里斯本.{\r}
+Dialogue: 0,0:02:07.07,0:02:09.30,ENG,,0,0,0,!Effect,And from Lisbon to the New World.\N{\rCHT}再從里斯本到新世界.{\r}
+Dialogue: 0,0:02:09.50,0:02:12.70,ENG,,0,0,0,!Effect,But the others wait in Casablanca.\N{\rCHT}不過其餘的人則在卡薩布蘭卡.{\r}
+Dialogue: 0,0:02:13.37,0:02:16.83,ENG,,0,0,0,!Effect,And wait and wait...\N{\rCHT}等待 等待...{\r}
+Dialogue: 0,0:02:17.05,0:02:18.84,ENG,,0,0,0,!Effect,...and wait.\N{\rCHT}...再等待.{\r}
+Dialogue: 0,0:02:28.49,0:02:30.08,ENG,,0,0,0,!Effect,To all officers:\N{\rCHT}所有軍官注意:{\r}
+Dialogue: 0,0:02:30.26,0:02:33.01,ENG,,0,0,0,!Effect,Two German couriers carrying official documents\N{\rCHT}兩位身懷重要官方文件的德國快遞員 {\r}
+Dialogue: 0,0:02:33.02,0:02:35.13,ENG,,0,0,0,!Effect,murdered on train from Oran.\N{\rCHT}在從奧朗開出的火車上被殺.{\r}
+Dialogue: 0,0:02:35.33,0:02:38.32,ENG,,0,0,0,!Effect,Murderer and possible accomplices headed for Casablanca.\N{\rCHT}兇手和可能的共犯正前往卡薩布蘭卡.{\r}
+Dialogue: 0,0:02:38.53,0:02:40.21,ENG,,0,0,0,!Effect,Round up all suspicious characters\N{\rCHT}拘留所有嫌疑人物{\r}
+Dialogue: 0,0:02:40.21,0:02:42.33,ENG,,0,0,0,!Effect,and search them for stolen document.\N{\rCHT}並搜查被偷走的文件.{\r}
+Dialogue: 0,0:02:42.77,0:02:44.10,ENG,,0,0,0,!Effect,Important.\N{\rCHT}這個任務相當重要.{\r}
+Dialogue: 0,0:02:50.80,0:02:51.99,CHT,,0,0,0,!Effect,{\fs22}『法語』{\r}
+Dialogue: 0,0:03:15.87,0:03:17.27,ENG,,0,0,0,!Effect,May we see your papers?\N{\rCHT}可否看一下你的證件?{\r}
+Dialogue: 0,0:03:17.61,0:03:19.27,ENG,,0,0,0,!Effect,I don't think I have them on me.\N{\rCHT}我沒有帶在身上.{\r}
+Dialogue: 0,0:03:19.47,0:03:22.77,ENG,,0,0,0,!Effect,- In that case, you'll have to come along.  - Wait. It 's possible that I...\N{\rCHT}- 既然如此 我們必須請你跟我們走  - 等一下 可能是...{\r}
+Dialogue: 0,0:03:22.94,0:03:25.04,ENG,,0,0,0,!Effect,Yes. Here they are.\N{\rCHT}是 在這裡{\r}
+Dialogue: 0,0:03:28.18,0:03:31.12,ENG,,0,0,0,!Effect,These papers expired three weeks ago. You'll have to come along.\N{\rCHT}這些證件三個星期前已過期了 你必須跟我們走{\r}
+Dialogue: 0,0:03:31.32,0:03:32.95,ENG,,0,0,0,!Effect,Halt!\N{\rCHT}站住!{\r}
+Dialogue: 0,0:03:33.69,0:03:35.21,ENG,,0,0,0,!Effect,Halt!\N{\rCHT}站住!{\r}
+Dialogue: 0,0:03:50.11,0:03:52.21,CHT,,0,0,0,!Effect,{\fs30}自由\N平等\N同胞愛{\r}
+Dialogue: 0,0:04:00.08,0:04:02.85,ENG,,0,0,0,!Effect,- What on earth is going on there?  - I don't know, my dear.\N{\rCHT}- 那邊發生什麼事?  - 我不知道 親愛的{\r}
+Dialogue: 0,0:04:03.08,0:04:05.52,ENG,,0,0,0,!Effect,Pardon,monsieur. Pardon, madame. Have you not heard?\N{\rCHT}對不起 先生 你沒聽說嗎?{\r}
+Dialogue: 0,0:04:05.69,0:04:08.48,ENG,,0,0,0,!Effect,We hear very little, and we understand even less.\N{\rCHT}我們聽到的不多 我們聽得明白的更少{\r}
+Dialogue: 0,0:04:08.69,0:04:11.37,ENG,,0,0,0,!Effect,Two German couriers were found murdered in the desert.\N{\rCHT}兩位德國快遞員在沙漠被發現遭謀殺 {\r}
+Dialogue: 0,0:04:11.37,0:04:12.32,ENG,,0,0,0,!Effect,The unoccupied desert.\N{\rCHT}那無人的沙漠{\r}
+Dialogue: 0,0:04:12.53,0:04:15.00,ENG,,0,0,0,!Effect,This is the customary roundup of refugees, liberals...\N{\rCHT}這是慣例的搜捕自由主義者...{\r}
+Dialogue: 0,0:04:15.20,0:04:18.83,ENG,,0,0,0,!Effect,...and, of course, a beautiful young girl for Renault, the prefect of police.\N{\rCHT}...當然 給員警首長雷諾的漂亮女孩{\r}
+Dialogue: 0,0:04:23.50,0:04:25.48,ENG,,0,0,0,!Effect,Along with these unappy refugees,\N{\rCHT}不幸的是伴隨著這些不快樂的難民 {\r}
+Dialogue: 0,0:04:25.48,0:04:27.46,ENG,,0,0,0,!Effect,the scum of Europe has gravitated to Casablanca.\N{\rCHT}是歐洲的壞蛋們都集中到卡薩布蘭卡{\r}
+Dialogue: 0,0:04:27.68,0:04:30.04,ENG,,0,0,0,!Effect,Some of them have been waiting years for a visa.\N{\rCHT}有些為了出境證等了好幾年.{\r}
+Dialogue: 0,0:04:30.24,0:04:33.51,ENG,,0,0,0,!Effect,I beg of you, monsieur, watch yourself. Be on guard.\N{\rCHT}我請求你 先生 自己要當心 謹慎提防{\r}
+Dialogue: 0,0:04:33.71,0:04:35.71,ENG,,0,0,0,!Effect,This place is full of vultures.\N{\rCHT}這地方佈滿貪婪的人.{\r}
+Dialogue: 0,0:04:35.88,0:04:38.61,ENG,,0,0,0,!Effect,Vultures everywhere. Everywhere!\N{\rCHT}到處都是貪婪的人 到處都是!{\r}
+Dialogue: 0,0:04:38.79,0:04:41.25,ENG,,0,0,0,!Effect,- Thank you.Thank you very much.  - Not at all.\N{\rCHT}- 謝謝 非常感謝  - 不謝再見{\r}
+Dialogue: 0,0:04:43.42,0:04:45.29,ENG,,0,0,0,!Effect,What an amusing little fellow.\N{\rCHT}很有趣的小傢伙.{\r}
+Dialogue: 0,0:04:45.49,0:04:46.79,ENG,,0,0,0,!Effect,Waiter.\N{\rCHT}服務生.{\r}
+Dialogue: 0,0:04:48.33,0:04:50.19,ENG,,0,0,0,!Effect,- Oh, how silly of me.  - What, dear?\N{\rCHT}- 噢 我真笨  - 什麼 親愛的?{\r}
+Dialogue: 0,0:04:50.36,0:04:52.73,ENG,,0,0,0,!Effect,I've left my wallet in the hotel.\N{\rCHT}我把皮夾子留在飯店{\r}
+Dialogue: 0,0:05:08.58,0:05:10.55,ENG,,0,0,0,!Effect,Perhaps tomorrow we'll be on the plane.\N{\rCHT}或許明天我們會在飛機上{\r}
+Dialogue: 0,0:05:11.27,0:05:13.27,CHT,,0,0,0,!Effect,{\fs33}瑞克美式咖啡館{\r}
+Dialogue: 0,0:05:36.27,0:05:37.87,CHT,,0,0,0,!Effect,{\fs22}『德語:希特勒萬歲』{\r}
+Dialogue: 0,0:05:37.95,0:05:39.97,ENG,,0,0,0,!Effect,It is good to see you again, Major Strasser.\N{\rCHT}再見到你真好 史查沙少校{\r}
+Dialogue: 0,0:05:40.18,0:05:41.34,ENG,,0,0,0,!Effect,Thank you, thank you.\N{\rCHT}謝謝 謝謝{\r}
+Dialogue: 0,0:05:41.68,0:05:45.81,ENG,,0,0,0,!Effect,May I present Captain Renault, police prefect of Casablanca. Major Strasser.\N{\rCHT}讓我來介紹雷諾隊長 卡薩布蘭卡的員警首長 史查沙少校{\r}
+Dialogue: 0,0:05:45.99,0:05:48.01,ENG,,0,0,0,!Effect,Unoccupied France welcomes you to Casablanca.\N{\rCHT}未被佔據的法國屬地歡迎你來到卡薩布蘭卡{\r}
+Dialogue: 0,0:05:48.36,0:05:50.19,ENG,,0,0,0,!Effect,Thank you, captain. It's good to be here.\N{\rCHT}謝謝 隊長 來到這裡真好{\r}
+Dialogue: 0,0:05:50.39,0:05:53.02,ENG,,0,0,0,!Effect,Major Strasser, my aide, Lieutenant Casselle.\N{\rCHT}史查沙少校 這位是我的副官 卡簫副隊長{\r}
+Dialogue: 0,0:05:53.19,0:05:55.66,ENG,,0,0,0,!Effect,Captain Tonnelli. The Italian service at your command.\N{\rCHT}唐裡尼隊長 義大利軍聽候指示{\r}
+Dialogue: 0,0:05:55.83,0:05:57.02,ENG,,0,0,0,!Effect,That is kind of you.\N{\rCHT}下次吧 謝謝{\r}
+Dialogue: 0,0:05:57.08,0:06:00.43,CHT,,0,0,0,!Effect,{\fs22}『義大利語』{\r}
+Dialogue: 0,0:06:03.50,0:06:06.34,ENG,,0,0,0,!Effect,You may find the climate of Casablanca a trifle warm.\N{\rCHT}你可能覺得卡薩布蘭卡的天氣有一點暖.{\r}
+Dialogue: 0,0:06:06.51,0:06:10.17,ENG,,0,0,0,!Effect,We Germans must get used to all climates, from Russia to the Sahara.\N{\rCHT}全德國人必須適應各種天氣 從俄國到撒哈拉{\r}
+Dialogue: 0,0:06:10.51,0:06:13.45,ENG,,0,0,0,!Effect,- Perhaps you werert referring to weather.  - What else?\N{\rCHT}- 或許你所指的不是天氣.  - 不然會是什麼? 親愛的少校.{\r}
+Dialogue: 0,0:06:13.61,0:06:15.88,ENG,,0,0,0,!Effect,The murder of the couriers.What has been done?\N{\rCHT}關於被謀殺的快遞員 你們做了些什麼?{\r}
+Dialogue: 0,0:06:16.05,0:06:19.85,ENG,,0,0,0,!Effect,My men are rounding up twice the usual number of suspects.\N{\rCHT}我的手下逮捕的疑犯人數是平常的兩倍.{\r}
+Dialogue: 0,0:06:20.02,0:06:23.05,ENG,,0,0,0,!Effect,- But we know already who the murderer is.  - Good. Is he in custody?\N{\rCHT}- 我們已知道兇手是誰.  - 很好 我已在警方監管中嗎?{\r}
+Dialogue: 0,0:06:23.26,0:06:26.19,ENG,,0,0,0,!Effect,No hurry. Tonight he'll be at Rick's. Everybody comes to Rick's.\N{\rCHT}不必急 今晚他會去瑞克咖啡館 每個人都會去瑞克咖啡館{\r}
+Dialogue: 0,0:06:26.36,0:06:29.82,ENG,,0,0,0,!Effect,I've already heard about this cafe.And also about Mr. Rick himself.\N{\rCHT}我已聽說過這家咖啡館 並且聽說過瑞克他本人{\r}
+Dialogue: 0,0:07:25.52,0:07:27.61,ENG,,0,0,0,!Effect,Waiting, waiting, waiting.\N{\rCHT}等待 等待 等待{\r}
+Dialogue: 0,0:07:27.82,0:07:29.79,ENG,,0,0,0,!Effect,I'll never get out of here.\N{\rCHT}我永遠離不開這裡了.{\r}
+Dialogue: 0,0:07:30.16,0:07:32.06,ENG,,0,0,0,!Effect,I'll die in Casablanca.\N{\rCHT}我會死在卡薩布蘭卡.{\r}
+Dialogue: 0,0:07:32.26,0:07:34.49,ENG,,0,0,0,!Effect,But can't you make it just a little more?\N{\rCHT}可是你不能再加一點嗎?{\r}
+Dialogue: 0,0:07:34.66,0:07:35.63,ENG,,0,0,0,!Effect,Please?\N{\rCHT}求求你?{\r}
+Dialogue: 0,0:07:35.86,0:07:39.26,ENG,,0,0,0,!Effect,Sorry, but diamonds are a drug on the market. Everybody sells diamonds.\N{\rCHT}對不起 女士 可是鑽石在市場上不易脫手{\r}
+Dialogue: 0,0:07:39.47,0:07:41.70,ENG,,0,0,0,!Effect,There are diamonds everywhere. 2400.\N{\rCHT}所有的人都在賣鑽石到處都是鑽石. 兩千四百元.{\r}
+Dialogue: 0,0:07:41.90,0:07:43.03,ENG,,0,0,0,!Effect,All right.\N{\rCHT}好吧.{\r}
+Dialogue: 0,0:07:43.24,0:07:46.17,ENG,,0,0,0,!Effect,The trucks are waiting. The men are waiting. Everything...\N{\rCHT}卡車準備好了 人手在等著 一切都...{\r}
+Dialogue: 0,0:07:50.08,0:07:52.10,ENG,,0,0,0,!Effect,It's the fishing smack Santiago.\N{\rCHT}是"聖地牙哥號" 漁船.{\r}
+Dialogue: 0,0:07:52.28,0:07:56.68,ENG,,0,0,0,!Effect,It leaves at 1 tomorrow night, here from the end of La Medina. Third boat.\N{\rCHT}明天晚上一點離開 這裡從麥迪那號後 第三艘船{\r}
+Dialogue: 0,0:07:56.88,0:08:00.15,ENG,,0,0,0,!Effect,- Thank you. Thank you. - And bring 15,000 francs in cash.\N{\rCHT}- 謝謝 謝謝  - 並帶一萬五千元法郞現金.{\r}
+Dialogue: 0,0:08:00.35,0:08:02.62,ENG,,0,0,0,!Effect,Remember, in cash.\N{\rCHT}記住 一定要現金.{\r}
+Dialogue: 0,0:08:09.36,0:08:10.49,ENG,,0,0,0,!Effect,Cheerio.\N{\rCHT}棒極了.{\r}
+Dialogue: 0,0:08:11.40,0:08:14.20,ENG,,0,0,0,!Effect,- Open up, Abdul.  - Yes, professor.\N{\rCHT}- 開門 阿都  - 是的 教授先生{\r}
+Dialogue: 0,0:08:23.68,0:08:24.94,ENG,,0,0,0,!Effect,- Waiter?  - Yes, madame?\N{\rCHT}- 服務生?  - 是的 女士?{\r}
+Dialogue: 0,0:08:25.15,0:08:27.81,ENG,,0,0,0,!Effect,Will you ask Rick if he'll have a drink with us?\N{\rCHT}可否問瑞克要不要跟我們喝酒?{\r}
+Dialogue: 0,0:08:28.15,0:08:31.48,ENG,,0,0,0,!Effect,Madame, he never drinks with customers. Never. I have never seen it.\N{\rCHT}女士 他從不跟顧客喝酒的 從來不 我從沒見過{\r}
+Dialogue: 0,0:08:32.32,0:08:34.52,ENG,,0,0,0,!Effect,What makes saloonkeepers so snobbish?\N{\rCHT}是什麼原因使酒廊老闆如此勢利?{\r}
+Dialogue: 0,0:08:34.72,0:08:38.56,ENG,,0,0,0,!Effect,Perhaps if you told him I ran the second-largest banking house in Amsterdam.\N{\rCHT}或許如果你告訴他 我在阿姆斯特丹經營第二大銀行{\r}
+Dialogue: 0,0:08:38.76,0:08:41.39,ENG,,0,0,0,!Effect,Second largest? That wouldn't impress Rick.\N{\rCHT}第二大? 那不會叫瑞克刮目相看.{\r}
+Dialogue: 0,0:08:41.56,0:08:45.12,ENG,,0,0,0,!Effect,The leading banker in Amsterdam is now the pastry chef in our kitchen.\N{\rCHT}阿姆斯特丹的頭號銀行家 現在是我們廚房的糕餅師傅{\r}
+Dialogue: 0,0:08:45.33,0:08:47.80,ENG,,0,0,0,!Effect,We have something to look forward to.\N{\rCHT}我們有值得盼望的事情了.{\r}
+Dialogue: 0,0:08:49.14,0:08:51.33,ENG,,0,0,0,!Effect,And his father is the bellboy.\N{\rCHT}而他爸爸是侍者.{\r}
+Dialogue: 0,0:08:52.63,0:08:55.33,ENG,,0,0,0,!Effect,Monsieur.\N{\rCHT}給女士的 先生{\r}
+Dialogue: 0,0:08:56.83,0:08:58.33,CHT,,0,0,0,!Effect,{\fs27}一千法郞{\r}
+Dialogue: 0,0:08:58.83,0:09:00.33,CHT,,0,0,0,!Effect,{\fs27}好的 瑞克{\r}
+Dialogue: 0,0:09:21.10,0:09:22.54,ENG,,0,0,0,!Effect,Excuse me.\N{\rCHT}對不起.{\r}
+Dialogue: 0,0:09:24.97,0:09:27.17,ENG,,0,0,0,!Effect,I'm sorry, sir. This is a private room.\N{\rCHT}對不起, 先生. 這是私人的房間.{\r}
+Dialogue: 0,0:09:27.48,0:09:30.93,ENG,,0,0,0,!Effect,Of all the nerve. Who do you think...? I know there is gambling in there.\N{\rCHT}好大膽. 又不是秘密...? 我知道裡面在賭博.{\r}
+Dialogue: 0,0:09:31.65,0:09:34.27,ENG,,0,0,0,!Effect,- You dare not keep me out.  - Yes? What's the trouble?\N{\rCHT}- 你豈敢不讓我進去.  - 有什麼麻煩? 這位先生?{\r}
+Dialogue: 0,0:09:34.48,0:09:37.47,ENG,,0,0,0,!Effect,I have been in every gambling room between Honolulu and Berlin.\N{\rCHT}從夏威夷到柏林每個賭場我都去過.{\r}
+Dialogue: 0,0:09:37.69,0:09:40.43,ENG,,0,0,0,!Effect,And if you think I' m going to be kept out of a saloon like this,\N{\rCHT}如果你認為不該讓我進這種賭場 {\r}
+Dialogue: 0,0:09:40.43,0:09:41.71,ENG,,0,0,0,!Effect,you're much mistaken.\N{\rCHT}你可是大錯特錯{\r}
+Dialogue: 0,0:09:41.92,0:09:43.86,ENG,,0,0,0,!Effect,Excuse me, please. Hello, Rick.\N{\rCHT}對不起 你好 瑞克{\r}
+Dialogue: 0,0:09:46.53,0:09:48.32,ENG,,0,0,0,!Effect,Your cash is good at the bar.\N{\rCHT}你的現金在酒吧可以用.{\r}
+Dialogue: 0,0:09:48.66,0:09:50.49,ENG,,0,0,0,!Effect,What? Do you know who I am?\N{\rCHT}什麼? 你知道我是誰嗎?{\r}
+Dialogue: 0,0:09:50.70,0:09:52.67,ENG,,0,0,0,!Effect,I do. You're lucky the bar is open to you.\N{\rCHT}我知道 酒吧讓你光顧算你走運{\r}
+Dialogue: 0,0:09:52.87,0:09:55.84,ENG,,0,0,0,!Effect,This is outrageous! I shall report it to The Angriff.\N{\rCHT}可惡極了 我會向有關當局報告{\r}
+Dialogue: 0,0:09:58.67,0:10:01.00,ENG,,0,0,0,!Effect,You know, watching you just now,\N{\rCHT}看你剛才那樣對待德國銀行家 {\r}
+Dialogue: 0,0:10:01.00,0:10:03.17,ENG,,0,0,0,!Effect,one would think you've been doing this all your life.\N{\rCHT}會以為你整輩子都在做這種事{\r}
+Dialogue: 0,0:10:03.34,0:10:06.18,ENG,,0,0,0,!Effect,- What makes you think I haven't?  - Nothing.\N{\rCHT}- 是什麼使你認為我沒有?  - 沒什麼{\r}
+Dialogue: 0,0:10:06.38,0:10:10.32,ENG,,0,0,0,!Effect,- But when you first came, I thought...  - You thought what?\N{\rCHT}- 不過你剛來卡薩布蘭卡時 我想...  - 你想什麼?{\r}
+Dialogue: 0,0:10:10.79,0:10:13.02,ENG,,0,0,0,!Effect,What right do I have to think?\N{\rCHT}我有什麼權利去想?{\r}
+Dialogue: 0,0:10:18.09,0:10:19.32,ENG,,0,0,0,!Effect,May I?\N{\rCHT}我可以嗎?{\r}
+Dialogue: 0,0:10:20.46,0:10:23.02,ENG,,0,0,0,!Effect,Too bad about those two German couriers, wasrt it?\N{\rCHT}那兩名德國快遞員真不幸 對不對?{\r}
+Dialogue: 0,0:10:23.20,0:10:25.86,ENG,,0,0,0,!Effect,They got a lucky break. Yesterday they were just clerks...\N{\rCHT}他們走運了 昨天他們還是兩名德國辦事員...{\r}
+Dialogue: 0,0:10:26.03,0:10:28.30,ENG,,0,0,0,!Effect,...today they are the honored dead.\N{\rCHT}...而今天他們成了光榮的死者{\r}
+Dialogue: 0,0:10:28.90,0:10:31.19,ENG,,0,0,0,!Effect,You are a very cynical person, Rick,\N{\rCHT}你是個很憤世嫉俗的人 瑞克 {\r}
+Dialogue: 0,0:10:31.19,0:10:32.34,ENG,,0,0,0,!Effect,if you'll forgive me for saying so.\N{\rCHT}請原諒我這樣說{\r}
+Dialogue: 0,0:10:32.57,0:10:33.67,ENG,,0,0,0,!Effect,I forgive you.\N{\rCHT}我原諒你{\r}
+Dialogue: 0,0:10:33.87,0:10:35.54,ENG,,0,0,0,!Effect,- Will you have a drink with me?  - No.\N{\rCHT}- 謝謝 你可否跟我喝一杯?  - 不{\r}
+Dialogue: 0,0:10:35.74,0:10:38.71,ENG,,0,0,0,!Effect,I forgot, you never drink with... I'll have another, please.\N{\rCHT}我忘了 你從不跟任何人喝酒... 請再給我一杯{\r}
+Dialogue: 0,0:10:39.65,0:10:41.38,ENG,,0,0,0,!Effect,You despise me, don't you?\N{\rCHT}你輕視我 對不對?{\r}
+Dialogue: 0,0:10:41.72,0:10:43.74,ENG,,0,0,0,!Effect,If I gave you any thought, I probably would.\N{\rCHT}如果是我讓你這樣想 我大概是吧{\r}
+Dialogue: 0,0:10:43.95,0:10:45.25,ENG,,0,0,0,!Effect,But why?\N{\rCHT}可是為什麼?{\r}
+Dialogue: 0,0:10:46.12,0:10:48.35,ENG,,0,0,0,!Effect,Do you object to the kind of business I do?\N{\rCHT}你反對我所做的那種生意?{\r}
+Dialogue: 0,0:10:49.06,0:10:51.37,ENG,,0,0,0,!Effect,But think of all those poor refugees\N{\rCHT}可是為那些可憐的難民想一想 {\r}
+Dialogue: 0,0:10:51.37,0:10:53.52,ENG,,0,0,0,!Effect,who must rot in this place if I didn't help them.\N{\rCHT}如果我不幫他們必然困死這裡{\r}
+Dialogue: 0,0:10:53.73,0:10:56.30,ENG,,0,0,0,!Effect,That's not so bad. Through ways of my own,\N{\rCHT}那不算太壞 透過我的方法 {\r}
+Dialogue: 0,0:10:56.30,0:10:58.29,ENG,,0,0,0,!Effect,I provide them with exit visas.\N{\rCHT}我提供他們出境許可證{\r}
+Dialogue: 0,0:10:58.50,0:11:00.73,ENG,,0,0,0,!Effect,For a price, Ugarte. For a price.\N{\rCHT}有代價的 尤佳迪 有代價的{\r}
+Dialogue: 0,0:11:02.27,0:11:05.30,ENG,,0,0,0,!Effect,But think of all the poor devils who can't meet Renault 's price.\N{\rCHT}為那些付不起 雷諾開的價錢的可憐蟲想想{\r}
+Dialogue: 0,0:11:05.51,0:11:08.91,ENG,,0,0,0,!Effect,I get it for them for half. Is that so parasitic?\N{\rCHT}我以半價替他們弄到手 這算寄生蟲嗎?{\r}
+Dialogue: 0,0:11:09.08,0:11:12.67,ENG,,0,0,0,!Effect,I don't mind a parasite. I object to a cut-rate one.\N{\rCHT}我不反對寄生蟲 我反對折價的寄生蟲{\r}
+Dialogue: 0,0:11:13.38,0:11:16.25,ENG,,0,0,0,!Effect,Well, after tonight I will be through with the whole business.\N{\rCHT}在今晚之後 所有的事情將成過去{\r}
+Dialogue: 0,0:11:16.42,0:11:19.11,ENG,,0,0,0,!Effect,And I' m leaving, finally, this Casablanca.\N{\rCHT}我要離開卡薩布蘭卡{\r}
+Dialogue: 0,0:11:19.29,0:11:22.35,ENG,,0,0,0,!Effect,Who did you bribe for your visa? Renault or yourself?\N{\rCHT}你的出境許可是向誰買的? 雷諾還是你自己?{\r}
+Dialogue: 0,0:11:22.69,0:11:26.02,ENG,,0,0,0,!Effect,Myself. I found myself much more reasonable.\N{\rCHT}我自己覺得自己的價錢較合理{\r}
+Dialogue: 0,0:11:26.53,0:11:27.55,ENG,,0,0,0,!Effect,Look, Rick.\N{\rCHT}你看 瑞克{\r}
+Dialogue: 0,0:11:28.43,0:11:29.90,ENG,,0,0,0,!Effect,Know what this is?\N{\rCHT}知道這是什麼嗎?{\r}
+Dialogue: 0,0:11:30.36,0:11:33.20,ENG,,0,0,0,!Effect,Something that even you have never seen.\N{\rCHT}即使是你也從來沒看過的東西{\r}
+Dialogue: 0,0:11:33.40,0:11:36.53,ENG,,0,0,0,!Effect,Letters of transit signed by General de Gaulle.\N{\rCHT}過境信函 由戴高樂將軍簽名的{\r}
+Dialogue: 0,0:11:36.77,0:11:40.04,ENG,,0,0,0,!Effect,Cannot be rescinded. Not even questioned.\N{\rCHT}不能廢止 甚至不能盤問{\r}
+Dialogue: 0,0:11:40.21,0:11:41.17,ENG,,0,0,0,!Effect,One moment.\N{\rCHT}等一下{\r}
+Dialogue: 0,0:11:41.41,0:11:44.67,ENG,,0,0,0,!Effect,Tonight I' II be selling those for more money than I ever dreamed of.\N{\rCHT}今晚我會 以作夢也想不到的價錢賣出去{\r}
+Dialogue: 0,0:11:44.85,0:11:47.68,ENG,,0,0,0,!Effect,And then, addio, Casablanca.\N{\rCHT}然後 再見 卡薩布蘭卡{\r}
+Dialogue: 0,0:11:48.08,0:11:50.98,ENG,,0,0,0,!Effect,I have many a friend in Casablanca, but somehow,\N{\rCHT}我在卡薩布蘭卡有很多朋友 可是不曉得為什麼 {\r}
+Dialogue: 0,0:11:50.99,0:11:52.18,ENG,,0,0,0,!Effect,just because you despise me...\N{\rCHT}因為你輕視我...{\r}
+Dialogue: 0,0:11:52.35,0:11:53.82,ENG,,0,0,0,!Effect,...you are the only one I trust.\N{\rCHT}...你是我唯一信任的人{\r}
+Dialogue: 0,0:11:54.12,0:11:55.88,ENG,,0,0,0,!Effect,Will you keep these for me, please?\N{\rCHT}請你替我保管好嗎? 多久?{\r}
+Dialogue: 0,0:11:56.09,0:11:58.85,ENG,,0,0,0,!Effect,- For how long?  - Perhaps an hour. Perhaps a little longer.\N{\rCHT}- 多久?  - 或許一小時 或許久一點點{\r}
+Dialogue: 0,0:11:59.03,0:12:01.79,ENG,,0,0,0,!Effect,- I don't want them here overnight.  - Don't be afraid of that.\N{\rCHT}- 我不要放過夜  - 別擔心{\r}
+Dialogue: 0,0:12:01.96,0:12:03.55,ENG,,0,0,0,!Effect,Please keep them for me.\N{\rCHT}請替我保管{\r}
+Dialogue: 0,0:12:03.76,0:12:05.93,ENG,,0,0,0,!Effect,Thank you. I knew I could trust you.\N{\rCHT}謝謝 我知道我可以信任你{\r}
+Dialogue: 0,0:12:06.47,0:12:08.44,ENG,,0,0,0,!Effect,Waiter. I' II be expecting some people.\N{\rCHT}侍者 我正在等一些人{\r}
+Dialogue: 0,0:12:08.60,0:12:11.50,ENG,,0,0,0,!Effect,If anybody asks for me, I'll be right here.\N{\rCHT}如果有誰找我 我會在這裡{\r}
+Dialogue: 0,0:12:12.74,0:12:13.71,ENG,,0,0,0,!Effect,Rick...\N{\rCHT}瑞克...{\r}
+Dialogue: 0,0:12:13.94,0:12:16.03,ENG,,0,0,0,!Effect,...I hope you're more impressed with me now.\N{\rCHT}...我想你現在對我比較刮目相看{\r}
+Dialogue: 0,0:12:17.38,0:12:18.31,ENG,,0,0,0,!Effect,If you'll forgive me,\N{\rCHT}請恕我失陪 {\r}
+Dialogue: 0,0:12:18.31,0:12:20.64,ENG,,0,0,0,!Effect,I' II share my good luck with your roulette wheel.\N{\rCHT}我要跟你的輪盤 分享我的好運氣{\r}
+Dialogue: 0,0:12:20.81,0:12:21.91,ENG,,0,0,0,!Effect,Just a moment.\N{\rCHT}等一下{\r}
+Dialogue: 0,0:12:23.95,0:12:28.12,ENG,,0,0,0,!Effect,I heard a rumor those two German couriers were carrying letters of transit.\N{\rCHT}我聽謠言說那兩名德國快遞員 身上帶著過境信函{\r}
+Dialogue: 0,0:12:31.09,0:12:34.39,ENG,,0,0,0,!Effect,I've heard that rumor too. Poor devils.\N{\rCHT}我也聽過那謠言 可憐蟲{\r}
+Dialogue: 0,0:12:34.60,0:12:38.53,ENG,,0,0,0,!Effect,You're right, Ugarte. I am a little more impressed with you.\N{\rCHT}你說對了 尤佳迪 我是對你比較刮目相看了{\r}
+Dialogue: 0,0:13:59.98,0:14:01.41,ENG,,0,0,0,!Effect,- Hello, Rick.  - Hello, Ferrari.\N{\rCHT}- 你好 瑞克  - 你好 法拉利{\r}
+Dialogue: 0,0:14:01.58,0:14:03.21,ENG,,0,0,0,!Effect,How's business at the Blue Parrot?\N{\rCHT}"藍鸚鵡" 的生意如何？{\r}
+Dialogue: 0,0:14:03.38,0:14:05.88,ENG,,0,0,0,!Effect,- Fine, but I' d like to buy your cafe.  - It 's not for sale.\N{\rCHT}- 很好  不過我想買你的咖啡館  - 那是不賣的{\r}
+Dialogue: 0,0:14:06.12,0:14:09.32,ENG,,0,0,0,!Effect,- You haven't heard my offer.  - It 's not for sale at any price.\N{\rCHT}- 你還沒聽我出價呢  - 多少錢也不賣{\r}
+Dialogue: 0,0:14:09.49,0:14:13.05,ENG,,0,0,0,!Effect,- What do you want for Sam?  - I don't buy or sell human beings.\N{\rCHT}- 你要多少才肯賣山姆  - 我不買賣人口{\r}
+Dialogue: 0,0:14:13.26,0:14:15.39,ENG,,0,0,0,!Effect,Too bad. That's Casablanca's leading commodity.\N{\rCHT}可惜 人是卡薩布蘭卡主要商品{\r}
+Dialogue: 0,0:14:15.60,0:14:17.85,ENG,,0,0,0,!Effect,In refugees alone we could make a fortune,\N{\rCHT}光只是難民 我們就能大賺一筆 {\r}
+Dialogue: 0,0:14:17.85,0:14:19.66,ENG,,0,0,0,!Effect,if you'd work with me in the black market.\N{\rCHT}如果你跟我一起做黑市生意{\r}
+Dialogue: 0,0:14:19.83,0:14:22.23,ENG,,0,0,0,!Effect,Suppose you run your business and let me run mine.\N{\rCHT}不妨你做你的 我做我的{\r}
+Dialogue: 0,0:14:23.04,0:14:25.51,ENG,,0,0,0,!Effect,Suppose we ask Sam. Maybe he'd like to make a change.\N{\rCHT}我們不妨去問山姆 他喜歡改變一下{\r}
+Dialogue: 0,0:14:25.67,0:14:26.77,ENG,,0,0,0,!Effect,Suppose we do.\N{\rCHT}我們不妨去問{\r}
+Dialogue: 0,0:14:26.94,0:14:30.23,ENG,,0,0,0,!Effect,When will you realize that in this world today\N{\rCHT}我親愛的瑞克 什麼時候才明白 在今天這個世界  {\r}
+Dialogue: 0,0:14:30.23,0:14:31.88,ENG,,0,0,0,!Effect,isolationism is no longer a practical policy?\N{\rCHT}孤立不再是項實際的政策?{\r}
+Dialogue: 0,0:14:32.18,0:14:34.84,ENG,,0,0,0,!Effect,Sam, Ferrari wants you to work for him at the Blue Parrot.\N{\rCHT}山姆 法拉利想要你到藍鸚鵡工作{\r}
+Dialogue: 0,0:14:35.02,0:14:36.11,ENG,,0,0,0,!Effect,Oh, I like it fine here.\N{\rCHT}我喜歡這裡{\r}
+Dialogue: 0,0:14:36.32,0:14:38.12,ENG,,0,0,0,!Effect,- He'll double what I pay you.\N{\rCHT}- 他出雙倍我給你的薪水  {\r}
+Dialogue: 0,0:14:38.12,0:14:40.18,ENG,,0,0,0,!Effect,- I ain't got time to spend what I make here.\N{\rCHT}- 可是我在這裡賺的錢已沒時間花{\r}
+Dialogue: 0,0:14:41.02,0:14:42.65,ENG,,0,0,0,!Effect,Sorry.\N{\rCHT}對不起{\r}
+Dialogue: 0,0:14:46.03,0:14:47.82,ENG,,0,0,0,!Effect,The boss's private stock...\N{\rCHT}老闆的私人存貨...{\r}
+Dialogue: 0,0:14:48.00,0:14:50.43,ENG,,0,0,0,!Effect,- ...because, Yvonne, I love you.  - Oh, shut up.\N{\rCHT}- ...因為 伊娃 我愛你  - 閉嘴{\r}
+Dialogue: 0,0:14:50.63,0:14:52.89,ENG,,0,0,0,!Effect,All right, all right. For you, I shut up,\N{\rCHT}好吧 為了你 我會閉嘴 {\r}
+Dialogue: 0,0:14:52.89,0:14:54.59,ENG,,0,0,0,!Effect,because, Yvonne, I love you.\N{\rCHT}因為 伊娃 我愛你{\r}
+Dialogue: 0,0:14:59.31,0:15:01.97,ENG,,0,0,0,!Effect,Some Germans gave this check. Is it all right?\N{\rCHT}一些德國人付了這張支票 可不可以?{\r}
+Dialogue: 0,0:15:07.21,0:15:08.48,ENG,,0,0,0,!Effect,Where were you last night?\N{\rCHT}你昨晚到那裡了?{\r}
+Dialogue: 0,0:15:08.65,0:15:10.91,ENG,,0,0,0,!Effect,That's so long ago, I don't remember.\N{\rCHT}那麼久以前的事 我記不起來了{\r}
+Dialogue: 0,0:15:11.25,0:15:14.58,ENG,,0,0,0,!Effect,- Will I see you tonight?  - I never make plans that far ahead.\N{\rCHT}- 我今晚可以見到你嗎?  - 我從不計畫那麼遙遠的事{\r}
+Dialogue: 0,0:15:15.89,0:15:17.12,ENG,,0,0,0,!Effect,Give me another.\N{\rCHT}再給我一杯{\r}
+Dialogue: 0,0:15:17.29,0:15:20.06,ENG,,0,0,0,!Effect,- Sascha, she's had enough.  - Don't listen to him. Fill it up.\N{\rCHT}- 沙克 她已喝夠了  - 別聽他的 幫我倒滿{\r}
+Dialogue: 0,0:15:20.23,0:15:22.42,ENG,,0,0,0,!Effect,Yvonne, I love you, but he pays me.\N{\rCHT}伊娃 我愛你 可是他付我薪水{\r}
+Dialogue: 0,0:15:22.63,0:15:25.10,ENG,,0,0,0,!Effect,- Rick, I' m tired of having you...  - Sascha, call a cab.\N{\rCHT}- 瑞克 我已厭倦你了...  - 沙克 叫部計程車 是的{\r}
+Dialogue: 0,0:15:25.30,0:15:27.70,ENG,,0,0,0,!Effect,- We're gonna get your coat.  - Take your hands off me.\N{\rCHT}- 來吧 我們去拿你的外衣  - 別碰我{\r}
+Dialogue: 0,0:15:27.87,0:15:30.43,ENG,,0,0,0,!Effect,You're going home. You've had a little too much to drink.\N{\rCHT}你該回家 你喝的已夠多了{\r}
+Dialogue: 0,0:15:32.91,0:15:34.87,ENG,,0,0,0,!Effect,Hey, taxi.\N{\rCHT}嘿 計程車{\r}
+Dialogue: 0,0:15:35.61,0:15:37.74,ENG,,0,0,0,!Effect,Who do you think you are, pushing me around?\N{\rCHT}你以為你是誰 把我推來推去?{\r}
+Dialogue: 0,0:15:37.91,0:15:39.67,ENG,,0,0,0,!Effect,I was a fool to fall for a man like you.\N{\rCHT}我真是傻瓜愛上你這種男人{\r}
+Dialogue: 0,0:15:39.85,0:15:41.87,ENG,,0,0,0,!Effect,Go with her, Sascha. Be sure she gets home.\N{\rCHT}你送她 沙克 要肯定她回到家{\r}
+Dialogue: 0,0:15:42.05,0:15:43.02,ENG,,0,0,0,!Effect,And come right back.\N{\rCHT}然後馬上回來{\r}
+Dialogue: 0,0:15:43.25,0:15:44.72,ENG,,0,0,0,!Effect,Yes, boss.\N{\rCHT}是 老闆{\r}
+Dialogue: 0,0:15:56.53,0:15:58.16,ENG,,0,0,0,!Effect,- Hello, Rick.  - Hello, Louis.\N{\rCHT}- 你好 瑞克  - 你好 路易{\r}
+Dialogue: 0,0:15:58.37,0:16:00.63,ENG,,0,0,0,!Effect,How extravagant you are, throwing away women.\N{\rCHT}你真奢侈 這樣把女人拋開{\r}
+Dialogue: 0,0:16:00.83,0:16:02.53,ENG,,0,0,0,!Effect,Someday they may be scarce.\N{\rCHT}有一天她們可能會漸漸消失{\r}
+Dialogue: 0,0:16:03.04,0:16:04.97,ENG,,0,0,0,!Effect,I think now I shall pay a call on Yvonne.\N{\rCHT}我想現在我該去拜訪伊娃{\r}
+Dialogue: 0,0:16:05.17,0:16:06.76,ENG,,0,0,0,!Effect,Maybe get her on the rebound.\N{\rCHT}或許可藉反作用占到便宜{\r}
+Dialogue: 0,0:16:06.94,0:16:09.07,ENG,,0,0,0,!Effect,When it comes to women, you're a true democrat.\N{\rCHT}一講到女人 你就是不折不扣的民主黨{\r}
+Dialogue: 0,0:16:09.72,0:16:12.55,CHT,,0,0,0,!Effect,{\fs22}『法語』{\r}
+Dialogue: 0,0:16:19.35,0:16:22.32,ENG,,0,0,0,!Effect,If he gets a word in, it'll be a major Italian victory.\N{\rCHT}如果他聽得明白一個字 義大利將大獲全勝{\r}
+Dialogue: 0,0:16:26.69,0:16:28.35,ENG,,0,0,0,!Effect,The plane to Lisbon.\N{\rCHT}往里斯本的飛機{\r}
+Dialogue: 0,0:16:33.03,0:16:34.83,ENG,,0,0,0,!Effect,You would like to be on it?\N{\rCHT}你會想坐在裡面?{\r}
+Dialogue: 0,0:16:35.04,0:16:36.70,ENG,,0,0,0,!Effect,Why? What's in Lisbon?\N{\rCHT}為什麼? 里斯本有什麼好?{\r}
+Dialogue: 0,0:16:37.04,0:16:38.94,ENG,,0,0,0,!Effect,The clipper to America.\N{\rCHT}到美國的快航{\r}
+Dialogue: 0,0:16:39.14,0:16:41.84,ENG,,0,0,0,!Effect,I've often speculated on why you don't return to America.\N{\rCHT}我常思索為什麼你不返回美國{\r}
+Dialogue: 0,0:16:42.04,0:16:44.09,ENG,,0,0,0,!Effect,Did you abscond with the church funds?\N{\rCHT}你卷走教堂的基金逃嗎? {\r}
+Dialogue: 0,0:16:44.09,0:16:45.98,ENG,,0,0,0,!Effect,Did you run off with a senator's wife?\N{\rCHT}你跟參議員的太太私奔?{\r}
+Dialogue: 0,0:16:46.38,0:16:49.04,ENG,,0,0,0,!Effect,Llike to think you killed a man. It's the romantic in me.\N{\rCHT}我喜歡想像你殺了人 這滿足我浪漫的遐想{\r}
+Dialogue: 0,0:16:49.25,0:16:50.91,ENG,,0,0,0,!Effect,It's a combination of all three.\N{\rCHT}是三者的綜合{\r}
+Dialogue: 0,0:16:51.12,0:16:53.55,ENG,,0,0,0,!Effect,And what in heavers name brought you to Casablanca?\N{\rCHT}到底是什麼帶你到卡薩布蘭卡?{\r}
+Dialogue: 0,0:16:53.72,0:16:56.19,ENG,,0,0,0,!Effect,My health. I came to Casablanca for the waters.\N{\rCHT}我的健康 我來卡薩布蘭卡 是為了這地方的水{\r}
+Dialogue: 0,0:16:56.49,0:16:59.65,ENG,,0,0,0,!Effect,The waters? What waters? We're in the desert.\N{\rCHT}水? 什麼水? 我們在沙漠裡{\r}
+Dialogue: 0,0:17:00.23,0:17:02.06,ENG,,0,0,0,!Effect,I was misinformed.\N{\rCHT}我的消息錯誤{\r}
+Dialogue: 0,0:17:04.67,0:17:06.00,ENG,,0,0,0,!Effect,Excuse me, Monsieur Rick.\N{\rCHT}對不起 瑞克先生{\r}
+Dialogue: 0,0:17:06.17,0:17:09.00,ENG,,0,0,0,!Effect,A gentleman inside has won 20,000 francs...\N{\rCHT}裡面一位先生贏了兩萬塊法郞...{\r}
+Dialogue: 0,0:17:09.37,0:17:11.56,ENG,,0,0,0,!Effect,...and the cashier would like some money.\N{\rCHT}...出納需要一些錢{\r}
+Dialogue: 0,0:17:12.91,0:17:14.17,ENG,,0,0,0,!Effect,I'll get it from the safe.\N{\rCHT}我從保險櫃拿{\r}
+Dialogue: 0,0:17:14.34,0:17:15.90,ENG,,0,0,0,!Effect,I'm so upset, Rick. You know l...\N{\rCHT}我好難過 瑞克先生 你知道我...{\r}
+Dialogue: 0,0:17:16.11,0:17:18.70,ENG,,0,0,0,!Effect,Forget it, Emil. Mistakes like that happen all the time.\N{\rCHT}別提了 艾米 這種事常常發生{\r}
+Dialogue: 0,0:17:18.91,0:17:20.68,ENG,,0,0,0,!Effect,I'm awfully sorry.\N{\rCHT}我非常抱歉{\r}
+Dialogue: 0,0:17:26.25,0:17:28.28,ENG,,0,0,0,!Effect,Rick, there will be some excitement here tonight.\N{\rCHT}瑞克 今晚這裡會有點刺激的事 {\r}
+Dialogue: 0,0:17:28.28,0:17:29.92,ENG,,0,0,0,!Effect,An arrest in your cafe.\N{\rCHT}我們將在你的咖啡館逮捕人{\r}
+Dialogue: 0,0:17:30.09,0:17:31.82,ENG,,0,0,0,!Effect,- Again?  - This is no ordinary arrest.\N{\rCHT}- 什麼? 又一次?  - 這不是普通的逮捕{\r}
+Dialogue: 0,0:17:32.03,0:17:33.39,ENG,,0,0,0,!Effect,A murderer, no less.\N{\rCHT}是謀殺犯{\r}
+Dialogue: 0,0:17:34.03,0:17:36.57,ENG,,0,0,0,!Effect,If you're thinking of warning him, don't put yourself out.\N{\rCHT}如果你想要警告他 別讓自己不方便 {\r}
+Dialogue: 0,0:17:36.57,0:17:37.62,ENG,,0,0,0,!Effect,He cannot escape.\N{\rCHT}他逃不過監視的{\r}
+Dialogue: 0,0:17:37.83,0:17:41.63,ENG,,0,0,0,!Effect,- I stick my neck out for nobody.  - A wise foreign policy.\N{\rCHT}- 我不為任何人冒險的  - 明智的外交政策{\r}
+Dialogue: 0,0:17:41.72,0:17:44.99,CHT,,0,0,0,!Effect,{\fs22}『法語』{\r}
+Dialogue: 0,0:17:45.37,0:17:47.90,ENG,,0,0,0,!Effect,Could have made the arrest earlier, at the Blue Parrot.\N{\rCHT}我們本可以在今晚較早時 在藍鸚鵡進行逮捕{\r}
+Dialogue: 0,0:17:48.08,0:17:50.20,ENG,,0,0,0,!Effect,Out of my regard for you, we're staging it here.\N{\rCHT}為了表示我對你的敬意 我們在這裡進行{\r}
+Dialogue: 0,0:17:50.38,0:17:51.84,ENG,,0,0,0,!Effect,It will amuse your customers.\N{\rCHT}可以帶給你的顧客一點娛樂{\r}
+Dialogue: 0,0:17:52.48,0:17:54.54,ENG,,0,0,0,!Effect,Our entertainment's enough.\N{\rCHT}我們的娛樂節目已經夠多了{\r}
+Dialogue: 0,0:17:55.08,0:17:57.18,ENG,,0,0,0,!Effect,We're to have an important guest here tonight.\N{\rCHT}今晚我們這裡有名貴客{\r}
+Dialogue: 0,0:17:57.38,0:17:59.85,ENG,,0,0,0,!Effect,Major Strasser of the Third Reich, no less.\N{\rCHT}第三帝國的史查沙少校{\r}
+Dialogue: 0,0:18:00.05,0:18:02.21,ENG,,0,0,0,!Effect,We want him to be here when we make the arrest.\N{\rCHT}我們進行逮捕時希望他在場{\r}
+Dialogue: 0,0:18:02.39,0:18:04.95,ENG,,0,0,0,!Effect,A demonstration of the efficiency of my administration.\N{\rCHT}以示範一下我辦事的效率{\r}
+Dialogue: 0,0:18:05.13,0:18:07.06,ENG,,0,0,0,!Effect,I see. And what's Strasser doing here?\N{\rCHT}我明白 史查沙來這裡幹什麼?{\r}
+Dialogue: 0,0:18:07.26,0:18:09.44,ENG,,0,0,0,!Effect,He certainly didn't come here\N{\rCHT}他不可能老遠來到卡薩布蘭卡 {\r}
+Dialogue: 0,0:18:09.44,0:18:11.16,ENG,,0,0,0,!Effect,to witness a demonstration of your efficiency.\N{\rCHT}為了目擊你的辦事效率吧{\r}
+Dialogue: 0,0:18:11.37,0:18:12.46,ENG,,0,0,0,!Effect,- Perhaps not.  - Here.\N{\rCHT}- 或許不是  - 拿去吧{\r}
+Dialogue: 0,0:18:12.67,0:18:14.76,ENG,,0,0,0,!Effect,- It shall not happen again.  - That's all right.\N{\rCHT}- 不會再發生了  - 沒關係{\r}
+Dialogue: 0,0:18:14.97,0:18:17.80,ENG,,0,0,0,!Effect,Louis, you got something on your mind. Why don't you spill it.\N{\rCHT}我知道你心裡有事情 何不直接說出來{\r}
+Dialogue: 0,0:18:18.01,0:18:19.47,ENG,,0,0,0,!Effect,How observant you are.\N{\rCHT}你觀察力真好{\r}
+Dialogue: 0,0:18:19.84,0:18:22.54,ENG,,0,0,0,!Effect,As a matter of fact, I wanted to give you a word of advice.\N{\rCHT}事實上 我想勸告你一聲{\r}
+Dialogue: 0,0:18:22.71,0:18:23.68,ENG,,0,0,0,!Effect,Yeah?\N{\rCHT}是嗎?{\r}
+Dialogue: 0,0:18:24.01,0:18:26.28,ENG,,0,0,0,!Effect,- Have a brandy?  - Thank you.\N{\rCHT}- 要喝白蘭地嗎?  - 謝謝{\r}
+Dialogue: 0,0:18:27.41,0:18:29.67,ENG,,0,0,0,!Effect,There are many exit visas sold in this cafe,\N{\rCHT}在這咖啡館裡 有很多出境證賣出去 {\r}
+Dialogue: 0,0:18:29.67,0:18:31.41,ENG,,0,0,0,!Effect,but we know that you've never sold one.\N{\rCHT}不過我們知道你一張也沒賣過{\r}
+Dialogue: 0,0:18:31.92,0:18:34.08,ENG,,0,0,0,!Effect,That is the reason we permit you to remain open.\N{\rCHT}所以我們才准許你營業{\r}
+Dialogue: 0,0:18:34.25,0:18:36.55,ENG,,0,0,0,!Effect,I thought it was because llet you win at roulette.\N{\rCHT}我還以為是我讓你在輪盤贏錢{\r}
+Dialogue: 0,0:18:36.72,0:18:37.95,ENG,,0,0,0,!Effect,That is another reason.\N{\rCHT}那是另一個原因{\r}
+Dialogue: 0,0:18:38.16,0:18:40.92,ENG,,0,0,0,!Effect,There is a man arrived in Casablanca on his way to America.\N{\rCHT}有一個要前往美國的人 已抵達卡薩布蘭卡{\r}
+Dialogue: 0,0:18:41.13,0:18:44.00,ENG,,0,0,0,!Effect,He will offer a fortune to anyone who'll furnish an exit visa.\N{\rCHT}他會給任何提供他出境證的人 一大筆錢{\r}
+Dialogue: 0,0:18:44.20,0:18:46.67,ENG,,0,0,0,!Effect,- What's his name?  - Victor Laszlo.\N{\rCHT}- 他叫什麼名字?  - 維朵拉斯路{\r}
+Dialogue: 0,0:18:47.07,0:18:48.47,ENG,,0,0,0,!Effect,Victor Laszlo?\N{\rCHT}維朵拉斯路?{\r}
+Dialogue: 0,0:18:48.64,0:18:51.23,ENG,,0,0,0,!Effect,Rick, that is the first time I've seen you so impressed.\N{\rCHT}瑞克 這是我第一次看到 有人如此令你著迷{\r}
+Dialogue: 0,0:18:51.41,0:18:53.37,ENG,,0,0,0,!Effect,He's succeeded in impressing half the world.\N{\rCHT}半個地球的人都為他著迷{\r}
+Dialogue: 0,0:18:53.57,0:18:57.01,ENG,,0,0,0,!Effect,It's my duty to see that he doesn't impress the other half.\N{\rCHT}我的責任就是阻止 另一半的地球人不再為他著迷{\r}
+Dialogue: 0,0:18:57.21,0:19:00.18,ENG,,0,0,0,!Effect,Laszlo must never reach America. He stays in Casablanca.\N{\rCHT}拉斯路絕不能踏足美國 他要留在卡薩布蘭卡{\r}
+Dialogue: 0,0:19:00.48,0:19:02.45,ENG,,0,0,0,!Effect,It'll be interesting to see how he manages.\N{\rCHT}看他如何達成將很有趣{\r}
+Dialogue: 0,0:19:02.65,0:19:04.78,ENG,,0,0,0,!Effect,- Manages what?  - His escape.\N{\rCHT}- 達成什麼?  - 他的逃亡{\r}
+Dialogue: 0,0:19:04.99,0:19:06.85,ENG,,0,0,0,!Effect,- But I just told you...  - Stop it.\N{\rCHT}- 我剛才告訴你...  - 夠了{\r}
+Dialogue: 0,0:19:07.02,0:19:08.66,ENG,,0,0,0,!Effect,He escaped from a concentration camp.\N{\rCHT}他從集中營逃出來 {\r}
+Dialogue: 0,0:19:08.66,0:19:10.68,ENG,,0,0,0,!Effect,The Nazis have chased him all over Europe.\N{\rCHT}納粹黨在歐洲到處追捕他{\r}
+Dialogue: 0,0:19:10.86,0:19:12.19,ENG,,0,0,0,!Effect,This is the end of the chase.\N{\rCHT}這是追捕的最終站{\r}
+Dialogue: 0,0:19:12.39,0:19:14.99,ENG,,0,0,0,!Effect,Twenty thousand francs says it isn't.\N{\rCHT}賭兩萬法郞 不是{\r}
+Dialogue: 0,0:19:15.23,0:19:16.53,ENG,,0,0,0,!Effect,Is that a serious offer?\N{\rCHT}這是認真的嗎?{\r}
+Dialogue: 0,0:19:16.90,0:19:19.06,ENG,,0,0,0,!Effect,I just paid out 20, and I' d like to get it back.\N{\rCHT}我剛賠了兩萬 我想賺回來{\r}
+Dialogue: 0,0:19:19.40,0:19:22.06,ENG,,0,0,0,!Effect,Make it 10. I'm only a poor corrupt official.\N{\rCHT}加到十萬吧 我只是個貧窮的腐敗官吏{\r}
+Dialogue: 0,0:19:22.87,0:19:24.06,ENG,,0,0,0,!Effect,- Okay.  - Done.\N{\rCHT}- 好吧  - 成交{\r}
+Dialogue: 0,0:19:24.27,0:19:27.09,ENG,,0,0,0,!Effect,No matter how clever he is, he still needs an exit visa.\N{\rCHT}不管他多聰明 他仍然需要一份出境許可證 {\r}
+Dialogue: 0,0:19:27.09,0:19:28.23,ENG,,0,0,0,!Effect,Or I should say two.\N{\rCHT}或許我該說是兩份{\r}
+Dialogue: 0,0:19:28.74,0:19:30.73,ENG,,0,0,0,!Effect,- Why two?  - He is traveling with a lady.\N{\rCHT}- 為什麼是兩份?  - 他跟一位女士一起旅行{\r}
+Dialogue: 0,0:19:30.98,0:19:33.67,ENG,,0,0,0,!Effect,- He'll take one.  - I think not. I' ve seen the lady.\N{\rCHT}- 一份他也會要的  - 我不認為 我看過那位女士{\r}
+Dialogue: 0,0:19:33.98,0:19:36.61,ENG,,0,0,0,!Effect,And if he did not leave her in Marseilles or Oran...\N{\rCHT}如果他沒把她留在馬賽或奧朗...{\r}
+Dialogue: 0,0:19:37.15,0:19:39.24,ENG,,0,0,0,!Effect,...he certainly won't leave her in Casablanca.\N{\rCHT}...肯定不會把她留在卡薩布蘭卡{\r}
+Dialogue: 0,0:19:39.45,0:19:41.58,ENG,,0,0,0,!Effect,Maybe he's not quite as romantic as you are.\N{\rCHT}或許他沒有你那麼浪漫{\r}
+Dialogue: 0,0:19:41.79,0:19:45.02,ENG,,0,0,0,!Effect,It doesn't matter. There is no exit visa for him.\N{\rCHT}都一樣 他不會拿到出境證{\r}
+Dialogue: 0,0:19:45.66,0:19:49.25,ENG,,0,0,0,!Effect,What ever gave you the impression that I might help Laszlo escape?\N{\rCHT}是什麼使你覺得我可能有興趣 幫忙拉斯路逃亡?{\r}
+Dialogue: 0,0:19:49.63,0:19:52.79,ENG,,0,0,0,!Effect,Because, my dear Ricky, I suspect that under that cynical shell...\N{\rCHT}因為 親愛的瑞克 我懷疑在那憤世嫉俗的外表下...{\r}
+Dialogue: 0,0:19:52.97,0:19:54.70,ENG,,0,0,0,!Effect,...you are at heart a sentimentalist.\N{\rCHT}...你的內心是個性情中人{\r}
+Dialogue: 0,0:19:55.34,0:19:58.27,ENG,,0,0,0,!Effect,Laugh if you will, but I happen to be familiar with your record.\N{\rCHT}你要笑隨便你 不過我湊巧熟知你的記錄{\r}
+Dialogue: 0,0:19:58.51,0:20:00.60,ENG,,0,0,0,!Effect,Let me point out just two items:\N{\rCHT}讓我舉出兩項{\r}
+Dialogue: 0,0:20:00.94,0:20:04.90,ENG,,0,0,0,!Effect,In 1935, you ran guns to Ethiopia.\N{\rCHT}在1935年 你運槍械到衣索匹亞{\r}
+Dialogue: 0,0:20:05.11,0:20:09.01,ENG,,0,0,0,!Effect,In 1936, you fought in Spain on the Loyalist side.\N{\rCHT}在1936年 你在西班牙 替反佛朗哥派打仗{\r}
+Dialogue: 0,0:20:09.22,0:20:11.51,ENG,,0,0,0,!Effect,And got well paid for it on both occasions.\N{\rCHT}二次我都得到豐厚的酬勞{\r}
+Dialogue: 0,0:20:11.72,0:20:14.02,ENG,,0,0,0,!Effect,The winning side would have paid you much better.\N{\rCHT}勝方本可以給你更好的酬勞{\r}
+Dialogue: 0,0:20:14.45,0:20:15.42,ENG,,0,0,0,!Effect,Maybe.\N{\rCHT}或許吧{\r}
+Dialogue: 0,0:20:16.49,0:20:18.69,ENG,,0,0,0,!Effect,It seems you're determined to keep Laszlo here.\N{\rCHT}似乎你堅決 要把拉斯路留在這裡{\r}
+Dialogue: 0,0:20:18.89,0:20:20.66,ENG,,0,0,0,!Effect,I have my orders.\N{\rCHT}我奉命行事{\r}
+Dialogue: 0,0:20:21.43,0:20:23.29,ENG,,0,0,0,!Effect,I see. Gestapo spank.\N{\rCHT}我明白了 德國秘密員警{\r}
+Dialogue: 0,0:20:23.50,0:20:26.30,ENG,,0,0,0,!Effect,My dear Ricky, you overestimate the influence of the Gestapo.\N{\rCHT}親愛的瑞克 你高估了秘密員警的影響力了{\r}
+Dialogue: 0,0:20:26.50,0:20:29.83,ENG,,0,0,0,!Effect,I don't interfere with them, and they don't interfere with me.\N{\rCHT}我不干涉他們 他們也不干涉我{\r}
+Dialogue: 0,0:20:30.04,0:20:32.13,ENG,,0,0,0,!Effect,In Casablanca, I am master of my fate.\N{\rCHT}在卡薩布蘭卡 我掌握自己的命運{\r}
+Dialogue: 0,0:20:32.31,0:20:34.43,ENG,,0,0,0,!Effect,- I am...  - Major Strasser is here, sir.\N{\rCHT}- 我是...  - 史查沙少校來了 長官{\r}
+Dialogue: 0,0:20:34.61,0:20:36.84,ENG,,0,0,0,!Effect,- You were saying?  - Excuse me.\N{\rCHT}- 才剛說完?  - 失陪{\r}
+Dialogue: 0,0:20:46.65,0:20:49.85,ENG,,0,0,0,!Effect,Carl, see that Major Strasser gets a good table, close to the ladies.\N{\rCHT}卡爾 給史查沙少校最好的位子 靠近女士們的{\r}
+Dialogue: 0,0:20:50.06,0:20:53.36,ENG,,0,0,0,!Effect,I have already given him the best, knowing he is German\N{\rCHT}我已經給他最好的了 知道他是德國人 {\r}
+Dialogue: 0,0:20:53.36,0:20:54.65,ENG,,0,0,0,!Effect,and would take it anyway.\N{\rCHT}反正他一定接受{\r}
+Dialogue: 0,0:20:56.80,0:20:59.99,ENG,,0,0,0,!Effect,Take him quietly. Two guards at every door.\N{\rCHT}靜靜地逮捕的 每個門口派兩個守衛{\r}
+Dialogue: 0,0:21:04.40,0:21:06.90,ENG,,0,0,0,!Effect,- Everything is ready, sir.  - Go ahead.\N{\rCHT}- 一切都準備好了 長官  - 去吧{\r}
+Dialogue: 0,0:21:12.65,0:21:14.98,ENG,,0,0,0,!Effect,- Good evening, gentlemen.  - Good evening, captain.\N{\rCHT}- 晚安 先生  - 晚安 隊長{\r}
+Dialogue: 0,0:21:15.15,0:21:17.17,ENG,,0,0,0,!Effect,- Wort you join us?  - Thank you.\N{\rCHT}- 要一塊坐嗎?  - 謝謝{\r}
+Dialogue: 0,0:21:18.25,0:21:21.98,ENG,,0,0,0,!Effect,- It 's a pleasure to have you here, major.  - Champagne and a tin of caviar.\N{\rCHT}- 很榮幸你光臨本店  - 香檳和魚子醬{\r}
+Dialogue: 0,0:21:22.19,0:21:25.56,ENG,,0,0,0,!Effect,May I recommend Veuve Clicquot '26, a good French wine.\N{\rCHT}容我推薦華提可 很好的法國酒{\r}
+Dialogue: 0,0:21:25.73,0:21:27.69,ENG,,0,0,0,!Effect,Very well, sir.\N{\rCHT}謝謝 好的 先生{\r}
+Dialogue: 0,0:21:27.99,0:21:31.23,ENG,,0,0,0,!Effect,- A very interesting club.  - Especially so tonight, major.\N{\rCHT}- 很有趣的俱樂部  - 特別是今晚 長官{\r}
+Dialogue: 0,0:21:31.43,0:21:35.03,ENG,,0,0,0,!Effect,In a few minutes you'll see the arrest of the man who murdered your couriers.\N{\rCHT}在幾分鐘後你將會看到 那個謀殺你快遞員的人{\r}
+Dialogue: 0,0:21:35.20,0:21:36.69,ENG,,0,0,0,!Effect,I expected no less, captain.\N{\rCHT}我正期待如此 隊長{\r}
+Dialogue: 0,0:21:36.97,0:21:38.53,ENG,,0,0,0,!Effect,Monsieur Ugarte.\N{\rCHT}尤佳迪先生{\r}
+Dialogue: 0,0:21:41.58,0:21:43.94,ENG,,0,0,0,!Effect,- Will you please come with us?  - Certainly.\N{\rCHT}- 請你跟我們走?  - 當然{\r}
+Dialogue: 0,0:21:45.31,0:21:47.18,ENG,,0,0,0,!Effect,May I first please cash my chips?\N{\rCHT}我可否先把籌碼換回現金?{\r}
+Dialogue: 0,0:21:54.29,0:21:56.95,ENG,,0,0,0,!Effect,Very lucky, huh? Two thousand, please.\N{\rCHT}運氣不錯呢 兩千? 麻煩你 兩千{\r}
+Dialogue: 0,0:22:18.85,0:22:20.78,ENG,,0,0,0,!Effect,Rick! Rick, help me!\N{\rCHT}瑞克! 瑞克 救我!{\r}
+Dialogue: 0,0:22:21.01,0:22:25.08,ENG,,0,0,0,!Effect,- Don't be a fool. You can't get away.  - But, Rick, hide me. Do something!\N{\rCHT}- 別傻了 你逃不掉的  - 瑞克 把我藏起來 想辦法!{\r}
+Dialogue: 0,0:22:32.76,0:22:34.06,ENG,,0,0,0,!Effect,Excellent, captain.\N{\rCHT}非常好 隊長{\r}
+Dialogue: 0,0:22:34.26,0:22:36.89,ENG,,0,0,0,!Effect,When they come for me, I hope you'll be more of a help.\N{\rCHT}當他們來抓我時 希望你多盡點力{\r}
+Dialogue: 0,0:22:37.06,0:22:39.16,ENG,,0,0,0,!Effect,I stick my neck out for nobody.\N{\rCHT}我不為任何人冒險{\r}
+Dialogue: 0,0:22:39.43,0:22:43.20,ENG,,0,0,0,!Effect,I'm sorry there was a disturbance, folks, but it's all over now.\N{\rCHT}很抱歉有點騷亂 各位 不過全過去了 一切平安無事{\r}
+Dialogue: 0,0:22:43.40,0:22:46.93,ENG,,0,0,0,!Effect,Just sit down and have a good time. Enjoy yourselves. All right, Sam.\N{\rCHT}儘管坐下來 盡情享受 好了 山姆 好的 老闆{\r}
+Dialogue: 0,0:22:54.75,0:22:58.18,ENG,,0,0,0,!Effect,Rick, this is Major Heinrich Strasser of the Third Reich.\N{\rCHT}瑞克 這位是第三帝國的 海米勒史查沙少校{\r}
+Dialogue: 0,0:22:58.39,0:23:00.29,ENG,,0,0,0,!Effect,- How do you do, Mr. Rick?  - How do you do?\N{\rCHT}- 你好嗎 瑞克先生?  - 你好嗎?{\r}
+Dialogue: 0,0:23:00.45,0:23:02.58,ENG,,0,0,0,!Effect,You already know Herr Heinze of the Third Reich.\N{\rCHT}你已經認識的 第三帝國的哈斯先生{\r}
+Dialogue: 0,0:23:02.79,0:23:05.26,ENG,,0,0,0,!Effect,Please join us, Mr. Rick.\N{\rCHT}請一塊坐 瑞克先生{\r}
+Dialogue: 0,0:23:08.86,0:23:10.42,ENG,,0,0,0,!Effect,We are very honored tonight.\N{\rCHT}今晚我們非常榮幸{\r}
+Dialogue: 0,0:23:10.60,0:23:12.35,ENG,,0,0,0,!Effect,Major Strasser is one of the reasons\N{\rCHT}第三帝國的名聲 {\r}
+Dialogue: 0,0:23:12.35,0:23:14.76,ENG,,0,0,0,!Effect,the Third Reich enjoys the reputation it has.\N{\rCHT}部分是史查沙少校的功勞{\r}
+Dialogue: 0,0:23:14.94,0:23:17.90,ENG,,0,0,0,!Effect,You repeat Third Reich as though you expected there to be others.\N{\rCHT}他一直重複第三帝國 好像你預料會有別的一樣{\r}
+Dialogue: 0,0:23:18.10,0:23:20.70,ENG,,0,0,0,!Effect,Well, personally, major, I will take what comes.\N{\rCHT}少校 私底下我會來者不拒{\r}
+Dialogue: 0,0:23:21.84,0:23:23.87,ENG,,0,0,0,!Effect,Do you mind if I ask you a few questions?\N{\rCHT}你介意我問你一些問題嗎?{\r}
+Dialogue: 0,0:23:24.11,0:23:26.67,ENG,,0,0,0,!Effect,- Unofficially, of course.  - Make it official if you like.\N{\rCHT}- 當然 非正式的  - 如果你喜歡大可正式的問{\r}
+Dialogue: 0,0:23:26.85,0:23:29.44,ENG,,0,0,0,!Effect,- What is your nationality?  - I' m a drunkard.\N{\rCHT}- 你的國籍是什麼?  - 我是個醉酒鬼{\r}
+Dialogue: 0,0:23:31.05,0:23:33.04,ENG,,0,0,0,!Effect,And that makes Rick a citizen of the world.\N{\rCHT}那使瑞克成為世界公民{\r}
+Dialogue: 0,0:23:33.39,0:23:35.88,ENG,,0,0,0,!Effect,I was born in New York City, if that'll help you any.\N{\rCHT}我在紐約市出生 如果這對你有幫助{\r}
+Dialogue: 0,0:23:36.46,0:23:39.62,ENG,,0,0,0,!Effect,I understand you came here from Paris at the time of the occupation.\N{\rCHT}我知道你在巴黎被佔領時 從巴黎來到這裡{\r}
+Dialogue: 0,0:23:39.79,0:23:41.56,ENG,,0,0,0,!Effect,There seems to be no secret about that.\N{\rCHT}那似乎不是什麼秘密{\r}
+Dialogue: 0,0:23:41.76,0:23:44.06,ENG,,0,0,0,!Effect,Are you one of those people\N{\rCHT}你是不是那些無法想像心愛的巴黎 {\r}
+Dialogue: 0,0:23:44.06,0:23:45.93,ENG,,0,0,0,!Effect,who cannot imagine the Germans in their beloved Paris?\N{\rCHT}被德國人進佔的人其中之一?{\r}
+Dialogue: 0,0:23:46.10,0:23:48.33,ENG,,0,0,0,!Effect,It's not particularly my beloved Paris.\N{\rCHT}我沒有特別鍾情巴黎{\r}
+Dialogue: 0,0:23:48.54,0:23:50.40,ENG,,0,0,0,!Effect,Can you imagine us in London?\N{\rCHT}你能想像我們佔據倫敦嗎?{\r}
+Dialogue: 0,0:23:51.54,0:23:53.01,ENG,,0,0,0,!Effect,When you get there, ask me.\N{\rCHT}你到那裡之後再 問我吧{\r}
+Dialogue: 0,0:23:53.51,0:23:54.67,ENG,,0,0,0,!Effect,Diplomatist.\N{\rCHT}有外交手腕{\r}
+Dialogue: 0,0:23:54.84,0:23:56.00,ENG,,0,0,0,!Effect,How about New York?\N{\rCHT}那紐約呢?{\r}
+Dialogue: 0,0:23:56.18,0:23:58.48,ENG,,0,0,0,!Effect,Well, there are sections of New York, major,\N{\rCHT}在紐約有某些區域 {\r}
+Dialogue: 0,0:23:58.48,0:24:01.05,ENG,,0,0,0,!Effect,that I wouldn't advise you to try to invade.\N{\rCHT}我不會建議你嘗試侵入{\r}
+Dialogue: 0,0:24:01.58,0:24:04.45,ENG,,0,0,0,!Effect,- Who do you think will win the war?  - I haven't the slightest idea.\N{\rCHT}- 你認為誰會打勝仗?  - 我一點也不清楚{\r}
+Dialogue: 0,0:24:04.62,0:24:07.41,ENG,,0,0,0,!Effect,Rick is completely neutral about everything.\N{\rCHT}瑞克對一切都采中立態度 {\r}
+Dialogue: 0,0:24:07.41,0:24:09.28,ENG,,0,0,0,!Effect,And that takes in the field of women too.\N{\rCHT}對女人方面也一樣{\r}
+Dialogue: 0,0:24:09.49,0:24:13.76,ENG,,0,0,0,!Effect,You were not always so carefully neutral. We have a complete dossier on you.\N{\rCHT}他並非一直那麼小心保持中立 我們有你的完整檔案{\r}
+Dialogue: 0,0:24:15.50,0:24:19.76,ENG,,0,0,0,!Effect,"Richard Blaine, American. Age: 37. Cannot return to his country."\N{\rCHT}"理查賓勒 美國人 三十七歲 不能返回本國"{\r}
+Dialogue: 0,0:24:20.53,0:24:23.50,ENG,,0,0,0,!Effect,The reason is a little vague. We also know what you did in Paris.\N{\rCHT}原因有點含糊 我們也知道你在巴黎做什麼{\r}
+Dialogue: 0,0:24:23.70,0:24:26.13,ENG,,0,0,0,!Effect,And also we know why you left Paris. Don't worry,\N{\rCHT}也知道你為何離開巴黎 別擔心 {\r}
+Dialogue: 0,0:24:26.13,0:24:27.43,ENG,,0,0,0,!Effect,we're not going to broadcast it.\N{\rCHT}我們不會拿去廣播{\r}
+Dialogue: 0,0:24:27.61,0:24:28.84,ENG,,0,0,0,!Effect,Are my eyes really brown?\N{\rCHT}我的眼睛真的是棕色嗎?{\r}
+Dialogue: 0,0:24:29.04,0:24:32.24,ENG,,0,0,0,!Effect,You will forgive my curiosity, Mr. Blaine. The point is...\N{\rCHT}請原諒我的好奇心 賓勒先生 重點是...{\r}
+Dialogue: 0,0:24:32.41,0:24:34.64,ENG,,0,0,0,!Effect,...an enemy of the Reich has come to Casablanca...\N{\rCHT}...帝國的一位敵人 已來到卡薩布蘭卡...{\r}
+Dialogue: 0,0:24:34.81,0:24:37.78,ENG,,0,0,0,!Effect,...and we are checking up on anybody who can be of any help to us.\N{\rCHT}...我們正查問任何能幫我們的人{\r}
+Dialogue: 0,0:24:38.02,0:24:42.01,ENG,,0,0,0,!Effect,My interest in whether Victor Laszlo stays or goes is purely a sporting one.\N{\rCHT}我對拉斯路去留與否的興趣 純粹是賭博的關係{\r}
+Dialogue: 0,0:24:42.89,0:24:45.98,ENG,,0,0,0,!Effect,In this case you have no sympathy for the fox?\N{\rCHT}這樣說來 你對奸詐的狐狸毫不同情{\r}
+Dialogue: 0,0:24:46.19,0:24:49.63,ENG,,0,0,0,!Effect,Not particularly. I understand the point of view of the hound too.\N{\rCHT}不特別同情 我也瞭解獵犬的立場{\r}
+Dialogue: 0,0:24:49.93,0:24:52.83,ENG,,0,0,0,!Effect,Laszlo published the foulest lies in the Prague newspapers...\N{\rCHT}維朵拉斯路在布拉格的報紙 刊登最無恥的謊言...{\r}
+Dialogue: 0,0:24:53.00,0:24:54.59,ENG,,0,0,0,!Effect,...until the day we marched in.\N{\rCHT}...一直到我們進佔那一天{\r}
+Dialogue: 0,0:24:54.77,0:24:59.10,ENG,,0,0,0,!Effect,And even after that, he continued to print scandal sheets in his cellar.\N{\rCHT}甚至在之後還有 他在一地窖中 繼續印毀損的傳單{\r}
+Dialogue: 0,0:24:59.31,0:25:01.97,ENG,,0,0,0,!Effect,Of course, one must admit he has great courage.\N{\rCHT}當然 不得不承認他勇氣可嘉{\r}
+Dialogue: 0,0:25:02.38,0:25:05.34,ENG,,0,0,0,!Effect,I admit he's clever. Three times he slipped through our fingers.\N{\rCHT}我承認他很聰明 在巴黎他三次逃過我們的掌心{\r}
+Dialogue: 0,0:25:05.55,0:25:09.48,ENG,,0,0,0,!Effect,In Paris he continued his activities. We intend not to let it happen again.\N{\rCHT}他繼續他的活動 我們決意不讓這種事再發生{\r}
+Dialogue: 0,0:25:09.65,0:25:13.09,ENG,,0,0,0,!Effect,Excuse me, gentlemen. Your business is politics, mine is running a saloon.\N{\rCHT}對不起 你們的生意是政治 而我的生意是經營酒館{\r}
+Dialogue: 0,0:25:13.32,0:25:15.15,ENG,,0,0,0,!Effect,Good evening, Mr. Blaine.\N{\rCHT}晚安 賓勒先生{\r}
+Dialogue: 0,0:25:15.82,0:25:18.29,ENG,,0,0,0,!Effect,You see, major? You have nothing to worry about Rick.\N{\rCHT}你看到了 少校? 瑞克你一點也不必擔心{\r}
+Dialogue: 0,0:25:19.13,0:25:20.06,ENG,,0,0,0,!Effect,Perhaps.\N{\rCHT}或許吧{\r}
+Dialogue: 0,0:25:25.30,0:25:29.17,ENG,,0,0,0,!Effect,- I reserved a table. Victor Laszlo.  - Yes, Monsieur Laszlo. Right this way.\N{\rCHT}- 我訂了一個位子 維朵拉斯路  - 拉斯路先生 這邊走{\r}
+Dialogue: 0,0:25:56.33,0:25:58.06,ENG,,0,0,0,!Effect,Two Cointreaux, please.\N{\rCHT}兩杯"君度"  麻煩你{\r}
+Dialogue: 0,0:26:00.17,0:26:02.57,ENG,,0,0,0,!Effect,I saw no one of Ugarte's description.\N{\rCHT}我沒看到尤佳迪形容的人{\r}
+Dialogue: 0,0:26:02.84,0:26:05.83,ENG,,0,0,0,!Effect,Victor, I feel somehow we shouldn't stay here.\N{\rCHT}維多 我感覺我們不該留在這裡{\r}
+Dialogue: 0,0:26:06.04,0:26:08.97,ENG,,0,0,0,!Effect,If we would walk out so soon it would only call attention to us.\N{\rCHT}如果我們現在走出去 只會引人注目{\r}
+Dialogue: 0,0:26:09.14,0:26:12.34,ENG,,0,0,0,!Effect,Perhaps Ugarte is in some other part of the cafe.\N{\rCHT}或許尤佳迪在咖啡館的另一邊{\r}
+Dialogue: 0,0:26:13.15,0:26:16.84,ENG,,0,0,0,!Effect,Excuse me, but you look like a couple who are on their way to America.\N{\rCHT}對不起 你們像是 正要前往美國的夫婦{\r}
+Dialogue: 0,0:26:17.25,0:26:21.55,ENG,,0,0,0,!Effect,You'll find a market there for this ring. I'm forced to sell it at a great sacrifice.\N{\rCHT}在那裡這戒指會有市場 我被迫賣掉它是個巨大的犧牲{\r}
+Dialogue: 0,0:26:21.76,0:26:24.22,ENG,,0,0,0,!Effect,- Thank you, but I hardly think...  - Perhaps for the lady.\N{\rCHT}- 謝謝 我沒想過買...  - 或許買給女士{\r}
+Dialogue: 0,0:26:24.46,0:26:25.92,ENG,,0,0,0,!Effect,The ring is quite unique.\N{\rCHT}這戒指獨一無二{\r}
+Dialogue: 0,0:26:28.06,0:26:31.72,ENG,,0,0,0,!Effect,- Yes, I' m very interested.  - Good.\N{\rCHT}- 好 我很感興趣  - 好{\r}
+Dialogue: 0,0:26:32.30,0:26:33.29,ENG,,0,0,0,!Effect,What is your name?\N{\rCHT}你叫什麼名字?{\r}
+Dialogue: 0,0:26:33.53,0:26:35.80,ENG,,0,0,0,!Effect,Berger, Norwegian. At your service, sir.\N{\rCHT}貝加 挪威人 聽候差遣 先生{\r}
+Dialogue: 0,0:26:36.00,0:26:37.03,ENG,,0,0,0,!Effect,Victor.\N{\rCHT}維多{\r}
+Dialogue: 0,0:26:37.40,0:26:39.57,ENG,,0,0,0,!Effect,I'll meet you in a few minutes at the bar.\N{\rCHT}幾分鐘後我在酒吧跟你會面{\r}
+Dialogue: 0,0:26:39.77,0:26:42.33,ENG,,0,0,0,!Effect,We don't want the ring, but thanks for showing it to us.\N{\rCHT}不 我不想買戒指 謝謝你給我們看{\r}
+Dialogue: 0,0:26:42.51,0:26:45.57,ENG,,0,0,0,!Effect,- Such a bargain. But that is your decision?  - I' m sorry, it is.\N{\rCHT}- 那麼便宜 不過你決定了?  - 對不起 我決定了{\r}
+Dialogue: 0,0:26:48.38,0:26:50.51,ENG,,0,0,0,!Effect,- Monsieur Laszlo, is it not?  - Yes?\N{\rCHT}- 是拉斯路先生嗎?  - 是?{\r}
+Dialogue: 0,0:26:50.72,0:26:52.69,ENG,,0,0,0,!Effect,I am Captain Renault, prefect of police.\N{\rCHT}我是雷諾隊長 員警首長{\r}
+Dialogue: 0,0:26:52.89,0:26:54.05,ENG,,0,0,0,!Effect,Yes, what is it you want?\N{\rCHT}是 你想要什麼?{\r}
+Dialogue: 0,0:26:54.25,0:26:57.35,ENG,,0,0,0,!Effect,Merely to welcome you to Casablanca and wish you a pleasant stay.\N{\rCHT}我歡迎你來到卡薩布蘭卡 並祝你在這裡住得愉快{\r}
+Dialogue: 0,0:26:57.56,0:27:00.25,ENG,,0,0,0,!Effect,It isn't often we have so distinguished a visitor.\N{\rCHT}我們並不常有這麼特出的訪客{\r}
+Dialogue: 0,0:27:00.46,0:27:02.89,ENG,,0,0,0,!Effect,Thank you. I hope you'll forgive me, captain.\N{\rCHT}謝謝 我希望你原諒我 隊長{\r}
+Dialogue: 0,0:27:03.10,0:27:06.55,ENG,,0,0,0,!Effect,The present French administration hasn't always been so cordial.\N{\rCHT}目前的法國行政當局 並非一直那麼友善{\r}
+Dialogue: 0,0:27:06.80,0:27:08.67,ENG,,0,0,0,!Effect,May I present Miss llsa Lund.\N{\rCHT}容我介紹伊莎琳小姐{\r}
+Dialogue: 0,0:27:10.44,0:27:13.34,ENG,,0,0,0,!Effect,I was told you were the most beautiful woman ever to visit Casablanca.\N{\rCHT}我聽說你是卡薩布蘭卡有史以來最美麗的女訪客{\r}
+Dialogue: 0,0:27:13.51,0:27:15.30,ENG,,0,0,0,!Effect,That was a gross understatement.\N{\rCHT}那是粗略又保守的說法{\r}
+Dialogue: 0,0:27:15.78,0:27:16.76,ENG,,0,0,0,!Effect,You're very kind.\N{\rCHT}你太客氣了{\r}
+Dialogue: 0,0:27:17.01,0:27:19.48,ENG,,0,0,0,!Effect,- Wort you join us?  - Lf you will permit me.\N{\rCHT}- 一起坐吧?  - 如果你准許我{\r}
+Dialogue: 0,0:27:19.91,0:27:22.83,ENG,,0,0,0,!Effect,Oh, no, Emile, please. A bottle of your best champagne. And put it on my bill.\N{\rCHT}艾米 給我一瓶最好的香檳 記在我的帳上{\r}
+Dialogue: 0,0:27:23.00,0:27:24.43,ENG,,0,0,0,!Effect,Captain, please.\N{\rCHT}好的 隊長{\r}
+Dialogue: 0,0:27:24.62,0:27:27.72,ENG,,0,0,0,!Effect,It's a game we play. They put it on the bill, I tear up the bill.\N{\rCHT}先生 這是我們玩的一種遊戲 他們記在帳單上 {\r}
+Dialogue: 0,0:27:27.72,0:27:28.99,ENG,,0,0,0,!Effect,It is very convenient.\N{\rCHT}我撕毀帳單非常方便{\r}
+Dialogue: 0,0:27:30.12,0:27:32.92,ENG,,0,0,0,!Effect,Captain, the boy who's playing the piano...\N{\rCHT}隊長 彈琴的那個人...{\r}
+Dialogue: 0,0:27:33.59,0:27:35.06,ENG,,0,0,0,!Effect,Somewhere I' ve seen him.\N{\rCHT}我好像在那裡看過{\r}
+Dialogue: 0,0:27:35.26,0:27:36.75,ENG,,0,0,0,!Effect,- Sam?  - Yes.\N{\rCHT}- 山姆?  - 是{\r}
+Dialogue: 0,0:27:36.96,0:27:38.69,ENG,,0,0,0,!Effect,He came from Paris with Rick.\N{\rCHT}他跟瑞克一起從巴黎來{\r}
+Dialogue: 0,0:27:38.87,0:27:40.33,ENG,,0,0,0,!Effect,Rick? Who is he?\N{\rCHT}瑞克? 他是誰?{\r}
+Dialogue: 0,0:27:40.50,0:27:43.90,ENG,,0,0,0,!Effect,- Mademoiselle, you are in Rick's. Rick is...  - Is what?\N{\rCHT}- 女士 你正在瑞克咖啡館 瑞克是...  - 他是什麼?{\r}
+Dialogue: 0,0:27:44.10,0:27:47.37,ENG,,0,0,0,!Effect,Mademoiselle, he's the kind of man that, well, if I were a woman...\N{\rCHT}女士 他是那種 如果我是女人的話...{\r}
+Dialogue: 0,0:27:47.57,0:27:50.27,ENG,,0,0,0,!Effect,...and I were not around, I should be in love with Rick.\N{\rCHT}...我應該會愛上他的男人{\r}
+Dialogue: 0,0:27:50.48,0:27:53.97,ENG,,0,0,0,!Effect,But what a fool I am talking to a beautiful woman about another man.\N{\rCHT}我真是個傻瓜 我對一位美麗女人說別的男人{\r}
+Dialogue: 0,0:27:55.45,0:27:56.47,ENG,,0,0,0,!Effect,Excuse me.\N{\rCHT}失陪{\r}
+Dialogue: 0,0:27:56.65,0:27:58.48,ENG,,0,0,0,!Effect,Major.\N{\rCHT}少校{\r}
+Dialogue: 0,0:28:00.02,0:28:03.15,ENG,,0,0,0,!Effect,Mademoiselle Lund and Monsieur Laszlo, may I present Major Strasser.\N{\rCHT}林小姐 拉斯路先生 讓我介紹 海米勒史查沙少校{\r}
+Dialogue: 0,0:28:03.32,0:28:04.31,ENG,,0,0,0,!Effect,How do you do?\N{\rCHT}你好嗎?{\r}
+Dialogue: 0,0:28:04.52,0:28:06.49,ENG,,0,0,0,!Effect,This is a pleasure I have looked forward to.\N{\rCHT}我盼望這份榮幸很久了{\r}
+Dialogue: 0,0:28:06.73,0:28:09.22,ENG,,0,0,0,!Effect,I'm sure you'll excuse me if I' m not gracious.\N{\rCHT}我肯定你會原諒我不夠親切{\r}
+Dialogue: 0,0:28:09.43,0:28:11.56,ENG,,0,0,0,!Effect,You see, Major Strasser, I am a Czechoslovakian.\N{\rCHT}不過你明白 史查沙少校 我是捷克人{\r}
+Dialogue: 0,0:28:11.83,0:28:15.82,ENG,,0,0,0,!Effect,You were a Czechoslovakian. Now you are a subject of the German Reich.\N{\rCHT}你以前的捷克人 現在 你是第三帝國統治下的人民{\r}
+Dialogue: 0,0:28:17.04,0:28:20.47,ENG,,0,0,0,!Effect,I have never accepted that privilege. And I' m now on French soil.\N{\rCHT}我從不曾接受這份優待 而現在我站在法國的土地上{\r}
+Dialogue: 0,0:28:20.71,0:28:22.32,ENG,,0,0,0,!Effect,I should like to discuss\N{\rCHT}我想跟你討論一下 {\r}
+Dialogue: 0,0:28:22.32,0:28:24.47,ENG,,0,0,0,!Effect,some matters arising from your presence on French soil.\N{\rCHT}你在法國土地上引起的問題{\r}
+Dialogue: 0,0:28:24.64,0:28:26.27,ENG,,0,0,0,!Effect,This is hardly the time or place.\N{\rCHT}時間和地點都不太適當{\r}
+Dialogue: 0,0:28:26.48,0:28:28.86,ENG,,0,0,0,!Effect,Then we shall state another time and place.\N{\rCHT}那我們另訂時間和地點好了 {\r}
+Dialogue: 0,0:28:28.86,0:28:30.88,ENG,,0,0,0,!Effect,Tomorrow at 10 in the prefect's office.\N{\rCHT}明天十點在首長的辦公室{\r}
+Dialogue: 0,0:28:31.08,0:28:32.31,ENG,,0,0,0,!Effect,With mademoiselle.\N{\rCHT}好嗎 小姐{\r}
+Dialogue: 0,0:28:33.95,0:28:37.01,ENG,,0,0,0,!Effect,Captain, I am under your authority.\N{\rCHT}雷諾隊長 我在你管轄之下{\r}
+Dialogue: 0,0:28:37.19,0:28:39.22,ENG,,0,0,0,!Effect,Is it your order that we come to your office?\N{\rCHT}到你的辦公室是你的命令嗎?{\r}
+Dialogue: 0,0:28:39.46,0:28:43.33,ENG,,0,0,0,!Effect,Let us say it is my request. That is a much more pleasant word.\N{\rCHT}讓我說這是我的請求好了 那樣的字眼比較好聽{\r}
+Dialogue: 0,0:28:43.53,0:28:44.83,ENG,,0,0,0,!Effect,Very well.\N{\rCHT}好吧 小姐{\r}
+Dialogue: 0,0:28:49.00,0:28:52.03,ENG,,0,0,0,!Effect,A very clever tactical retreat, major.\N{\rCHT}很聰明的策略性讓步 少校{\r}
+Dialogue: 0,0:28:52.51,0:28:56.34,ENG,,0,0,0,!Effect,- This time they really mean to stop me.  - Victor, I' m afraid for you.\N{\rCHT}- 這一次他們決意要阻止我  - 維多 我替你感到害怕{\r}
+Dialogue: 0,0:28:56.74,0:28:59.41,ENG,,0,0,0,!Effect,We've been in difficult places before, haven't we?\N{\rCHT}我們以前也曾身處困境 不是嗎?{\r}
+Dialogue: 0,0:29:32.71,0:29:34.65,ENG,,0,0,0,!Effect,I must find out what Berger knows.\N{\rCHT}我必須查出貝加知道的事{\r}
+Dialogue: 0,0:29:34.85,0:29:38.04,ENG,,0,0,0,!Effect,- Be careful.  - I will. Don't worry.\N{\rCHT}- 小心點  - 我會的 別擔心{\r}
+Dialogue: 0,0:29:55.90,0:29:58.56,ENG,,0,0,0,!Effect,Monsieur Berger, the ring. Could I see it again?\N{\rCHT}貝加先生 那戒指我可以再看嗎? 可以 先生{\r}
+Dialogue: 0,0:29:59.17,0:30:00.73,ENG,,0,0,0,!Effect,Champagne cocktail, please.\N{\rCHT}請來一杯香檳雞尾酒{\r}
+Dialogue: 0,0:30:01.57,0:30:04.30,ENG,,0,0,0,!Effect,I recognize you from the news photographs, Monsieur Laszlo.\N{\rCHT}我從報上的照片認得你的相貌 拉斯路先生{\r}
+Dialogue: 0,0:30:04.48,0:30:07.45,ENG,,0,0,0,!Effect,In a concentration camp, one is apt to lose a little weight.\N{\rCHT}在集中營裡想不消瘦也很難{\r}
+Dialogue: 0,0:30:07.61,0:30:10.58,ENG,,0,0,0,!Effect,We read five times that you were killed in five different places.\N{\rCHT}我們看過五次報導你被殺死 在五個不同的地方{\r}
+Dialogue: 0,0:30:10.82,0:30:13.65,ENG,,0,0,0,!Effect,As you see, it was true every single time.\N{\rCHT}每一次都是真實的{\r}
+Dialogue: 0,0:30:13.85,0:30:15.34,ENG,,0,0,0,!Effect,Thank heaven I found you, Berger.\N{\rCHT}謝天謝地 我找到你 貝加{\r}
+Dialogue: 0,0:30:15.56,0:30:19.05,ENG,,0,0,0,!Effect,I'm looking for a man by the name of Ugarte. He's supposed to help me.\N{\rCHT}我在找一個叫尤佳迪的人 他預定是要幫我的{\r}
+Dialogue: 0,0:30:19.76,0:30:22.02,ENG,,0,0,0,!Effect,Ugarte cannot even help himself.\N{\rCHT}尤佳迪自身難保{\r}
+Dialogue: 0,0:30:22.23,0:30:26.43,ENG,,0,0,0,!Effect,He's under arrest for murder. He was arrested here tonight.\N{\rCHT}他因謀殺罪被逮捕了 他今晚在這裡被捕的{\r}
+Dialogue: 0,0:30:27.03,0:30:28.16,ENG,,0,0,0,!Effect,I see.\N{\rCHT}我明白了{\r}
+Dialogue: 0,0:30:28.67,0:30:32.66,ENG,,0,0,0,!Effect,But we who are still free will do all we can. We are organized.\N{\rCHT}不過我們還是自由之身 我們可以盡力 我們有組織{\r}
+Dialogue: 0,0:30:32.91,0:30:35.10,ENG,,0,0,0,!Effect,Underground, like everywhere else.\N{\rCHT}在地下 就像其他地方一樣{\r}
+Dialogue: 0,0:30:35.31,0:30:38.11,ENG,,0,0,0,!Effect,Tomorrow night there is a meeting at the Caverne du Bois.\N{\rCHT}明天晚上有一個會議{\r}
+Dialogue: 0,0:30:38.48,0:30:40.11,ENG,,0,0,0,!Effect,If you will come...\N{\rCHT}如果你會來... 先生{\r}
+Dialogue: 0,0:30:53.63,0:30:55.96,ENG,,0,0,0,!Effect,Will you ask the piano player to come over here?\N{\rCHT}可否請彈鋼琴的過來一下?{\r}
+Dialogue: 0,0:30:56.13,0:30:58.26,ENG,,0,0,0,!Effect,Very well, mademoiselle.\N{\rCHT}好的 小姐{\r}
+Dialogue: 0,0:31:00.40,0:31:03.73,ENG,,0,0,0,!Effect,- How's the jewelry business, Berger?  - Not so good. Check, please.\N{\rCHT}- 珠寶生意如何 貝加?  - 不太好 請替我結帳{\r}
+Dialogue: 0,0:31:03.90,0:31:05.37,ENG,,0,0,0,!Effect,Too bad you werert here earlier.\N{\rCHT}真可惜你不早點來這裡 {\r}
+Dialogue: 0,0:31:05.38,0:31:08.07,ENG,,0,0,0,!Effect,We had quite a bit of excitement, didn't we, Berger?\N{\rCHT}今天晚上我們有一點刺激呢 對不對 貝加?{\r}
+Dialogue: 0,0:31:08.34,0:31:09.81,ENG,,0,0,0,!Effect,Yes. Excuse me, gentlemen.\N{\rCHT}對 失陪一下 女士們{\r}
+Dialogue: 0,0:31:09.98,0:31:13.41,ENG,,0,0,0,!Effect,- My bill.  - No. Two champagne cocktails. Please.\N{\rCHT}- 我的帳單  - 不用 兩杯香檳雞尾酒 拜託{\r}
+Dialogue: 0,0:31:18.08,0:31:20.38,ENG,,0,0,0,!Effect,- Hello, Sam.  - Hello, Miss llsa.\N{\rCHT}- 你好 山姆  - 你好 小姐{\r}
+Dialogue: 0,0:31:20.59,0:31:23.05,ENG,,0,0,0,!Effect,I never expected to see you again.\N{\rCHT}我從沒想過會再看到你{\r}
+Dialogue: 0,0:31:23.59,0:31:25.39,ENG,,0,0,0,!Effect,It's been a long time.\N{\rCHT}已經很久了{\r}
+Dialogue: 0,0:31:25.59,0:31:28.56,ENG,,0,0,0,!Effect,Yes, ma'am. Alot of water under the bridge.\N{\rCHT}是的 小姐 過去的事有如逝水{\r}
+Dialogue: 0,0:31:30.53,0:31:33.43,ENG,,0,0,0,!Effect,- Some of the old songs, Sam.  - Yes, ma'am.\N{\rCHT}- 來一些舊日的歌 山姆  - 是 小姐{\r}
+Dialogue: 0,0:31:43.54,0:31:44.51,ENG,,0,0,0,!Effect,Where is Rick?\N{\rCHT}瑞克在那裡?{\r}
+Dialogue: 0,0:31:45.18,0:31:47.61,ENG,,0,0,0,!Effect,I don't know. I ain't seen him all night.\N{\rCHT}我不知道 我整晚沒看到他{\r}
+Dialogue: 0,0:31:48.65,0:31:52.02,ENG,,0,0,0,!Effect,- When will he be back?  - Not tonight no more. He ain't coming...\N{\rCHT}- 他什麼時候回來?  - 今晚不會 他不會回來...{\r}
+Dialogue: 0,0:31:52.19,0:31:53.91,ENG,,0,0,0,!Effect,He went home.\N{\rCHT}他回家了{\r}
+Dialogue: 0,0:31:55.46,0:31:58.29,ENG,,0,0,0,!Effect,- Does he always leave so early?  - He never...\N{\rCHT}- 他常常這麼早就走嗎?  - 他從不...{\r}
+Dialogue: 0,0:31:58.46,0:32:00.86,ENG,,0,0,0,!Effect,Well, he's got a girl up to the Blue Parrot.\N{\rCHT}他有位女友在藍鸚鵡{\r}
+Dialogue: 0,0:32:01.06,0:32:03.15,ENG,,0,0,0,!Effect,Goes up there all the time.\N{\rCHT}他常常上那兒{\r}
+Dialogue: 0,0:32:04.73,0:32:07.39,ENG,,0,0,0,!Effect,You used to be a much better liar, Sam.\N{\rCHT}你以前比較會撒謊 山姆{\r}
+Dialogue: 0,0:32:08.33,0:32:11.57,ENG,,0,0,0,!Effect,Leave him alone, Miss llsa. You're bad luck to him.\N{\rCHT}別去打擾他 伊莎小姐 你為他帶來惡運{\r}
+Dialogue: 0,0:32:14.51,0:32:17.48,ENG,,0,0,0,!Effect,Play it once, Sam. For old times' sake.\N{\rCHT}彈一次 山姆 看在往日份上{\r}
+Dialogue: 0,0:32:17.68,0:32:20.04,ENG,,0,0,0,!Effect,I don't know what you mean, Miss llsa.\N{\rCHT}我不知道你是什麼意思 伊莎小姐{\r}
+Dialogue: 0,0:32:20.65,0:32:22.14,ENG,,0,0,0,!Effect,Play it, Sam.\N{\rCHT}彈吧 山姆{\r}
+Dialogue: 0,0:32:23.15,0:32:25.14,ENG,,0,0,0,!Effect,Play "As Time Goes By."\N{\rCHT}彈"時光飛逝"{\r}
+Dialogue: 0,0:32:25.59,0:32:28.71,ENG,,0,0,0,!Effect,I can't remember it, Miss llsa. I'm a little rusty on it.\N{\rCHT}我記不起來了 伊莎小姐 我有點生銹了{\r}
+Dialogue: 0,0:32:29.62,0:32:31.59,ENG,,0,0,0,!Effect,I'll hum it for you.\N{\rCHT}我替你哼調子{\r}
+Dialogue: 0,0:32:43.27,0:32:44.67,ENG,,0,0,0,!Effect,Sing it, Sam.\N{\rCHT}唱出來 山姆{\r}
+Dialogue: 0,0:33:30.82,0:33:33.58,ENG,,0,0,0,!Effect,Sam, I thought I told you never to play...\N{\rCHT}山姆 我想我告訴過你永遠別彈...{\r}
+Dialogue: 0,0:33:44.23,0:33:47.20,ENG,,0,0,0,!Effect,Well, you were asking about Rick, and here he is. May I present...\N{\rCHT}你剛才問及瑞克 他來了 林小姐 讓我來介紹...{\r}
+Dialogue: 0,0:33:47.40,0:33:49.70,ENG,,0,0,0,!Effect,- Hello, llsa.  - Hello, Rick.\N{\rCHT}- 你好 伊莎  - 你好 瑞克{\r}
+Dialogue: 0,0:33:49.90,0:33:53.36,ENG,,0,0,0,!Effect,Oh, you've already met Rick, mademoiselle? Then perhaps you also...\N{\rCHT}你已經認識瑞克了 小姐? 那或許你也...{\r}
+Dialogue: 0,0:33:53.61,0:33:54.94,ENG,,0,0,0,!Effect,This is Mr. Laszlo.\N{\rCHT}這位是拉斯路先生{\r}
+Dialogue: 0,0:33:55.14,0:33:56.51,ENG,,0,0,0,!Effect,- How do you do?  - How do you do?\N{\rCHT}- 你好嗎?  - 你好?{\r}
+Dialogue: 0,0:33:56.91,0:33:58.97,ENG,,0,0,0,!Effect,One hears a great deal about Rick in Casablanca.\N{\rCHT}在卡薩布蘭卡聽到很多你的事{\r}
+Dialogue: 0,0:33:59.35,0:34:01.14,ENG,,0,0,0,!Effect,And about Victor Laszlo everywhere.\N{\rCHT}而維朵拉斯路的事到處可聞{\r}
+Dialogue: 0,0:34:01.35,0:34:03.47,ENG,,0,0,0,!Effect,- Wort you join us for a drink?  - Rick never...\N{\rCHT}- 跟我們喝一杯好嗎?  - 不 瑞克從不...{\r}
+Dialogue: 0,0:34:03.65,0:34:05.51,ENG,,0,0,0,!Effect,- Thanks, I will.  - Well...\N{\rCHT}- 謝謝 我會  - 很好...{\r}
+Dialogue: 0,0:34:05.69,0:34:08.62,ENG,,0,0,0,!Effect,...a precedent is being broken. Emile.\N{\rCHT}...一項慣例打破了 艾米{\r}
+Dialogue: 0,0:34:09.42,0:34:12.88,ENG,,0,0,0,!Effect,- Interesting cafe. I congratulate you.  - I congratulate you.\N{\rCHT}- 這是很別致的咖啡館 我恭喜你  - 我恭喜你{\r}
+Dialogue: 0,0:34:13.09,0:34:14.58,ENG,,0,0,0,!Effect,- What for?  - Your work.\N{\rCHT}- 為了什麼?  - 你的工作{\r}
+Dialogue: 0,0:34:14.79,0:34:16.49,ENG,,0,0,0,!Effect,Thank you. I try.\N{\rCHT}謝謝 我盡力而為{\r}
+Dialogue: 0,0:34:17.40,0:34:19.30,ENG,,0,0,0,!Effect,We all try. You succeed.\N{\rCHT}人家都盡力而為 而你成功了{\r}
+Dialogue: 0,0:34:19.53,0:34:22.51,ENG,,0,0,0,!Effect,She was asking about you earlier,\N{\rCHT}我不太明白你們兩個 她早先在問關於你的事 {\r}
+Dialogue: 0,0:34:22.52,0:34:24.37,ENG,,0,0,0,!Effect,Rick, in a way that made me extremely jealous.\N{\rCHT}瑞克 那種態度使我非常嫉妒{\r}
+Dialogue: 0,0:34:25.24,0:34:26.73,ENG,,0,0,0,!Effect,I wasrt sure you were the same.\N{\rCHT}我不肯定是你{\r}
+Dialogue: 0,0:34:27.51,0:34:30.37,ENG,,0,0,0,!Effect,- Let's see, the last time we met...  - Was La Belle Aurore.\N{\rCHT}- 我想想看 我們最後一次見面...  - 是 "美麗的晨暈"{\r}
+Dialogue: 0,0:34:31.94,0:34:33.88,ENG,,0,0,0,!Effect,How nice. You remembered.\N{\rCHT}太好了 你記得{\r}
+Dialogue: 0,0:34:34.05,0:34:36.84,ENG,,0,0,0,!Effect,But, of course, that was the day the Germans marched into Paris.\N{\rCHT}不過那天正好是德國軍隊 開進巴黎的日子{\r}
+Dialogue: 0,0:34:37.05,0:34:39.21,ENG,,0,0,0,!Effect,Not an easy day to forget.\N{\rCHT}不容易忘記的日子 不容易{\r}
+Dialogue: 0,0:34:39.99,0:34:43.72,ENG,,0,0,0,!Effect,I remember every detail. The Germans wore gray, you wore blue.\N{\rCHT}我記得每一個細節 德國人穿灰色 你穿藍色{\r}
+Dialogue: 0,0:34:45.12,0:34:47.72,ENG,,0,0,0,!Effect,Yes. I put that dress away.\N{\rCHT}對 我把那件衣服收起來了{\r}
+Dialogue: 0,0:34:47.93,0:34:50.26,ENG,,0,0,0,!Effect,When the Germans march out I'll wear it again.\N{\rCHT}當德國人撤離後 我會再穿{\r}
+Dialogue: 0,0:34:50.46,0:34:54.56,ENG,,0,0,0,!Effect,Ricky, you're becoming quite human. I suppose we have to thank you for that.\N{\rCHT}瑞克 你變得較人性化了 我猜我們必須感謝你{\r}
+Dialogue: 0,0:34:54.97,0:34:58.20,ENG,,0,0,0,!Effect,Ilsa, I don't wish to be the one to say it, but it's late.\N{\rCHT}伊莎 我不想掃興 不過時候不早了{\r}
+Dialogue: 0,0:34:58.40,0:35:00.51,ENG,,0,0,0,!Effect,So it is. We have a curfew in Casablanca.\N{\rCHT}的確是 在卡薩布蘭卡有戒嚴 {\r}
+Dialogue: 0,0:35:00.51,0:35:02.47,ENG,,0,0,0,!Effect,It would never do for the chief of police...\N{\rCHT}員警首長可不能被發現...{\r}
+Dialogue: 0,0:35:02.68,0:35:04.64,ENG,,0,0,0,!Effect,...to be found drinking after hours.\N{\rCHT}...喝醉酒神智不清{\r}
+Dialogue: 0,0:35:05.44,0:35:07.78,ENG,,0,0,0,!Effect,- I hope we didn't overstay our welcome.  - Not at all.\N{\rCHT}- 我希望你不介意  - 一點也不{\r}
+Dialogue: 0,0:35:08.08,0:35:09.67,ENG,,0,0,0,!Effect,- Your check, sir.  - It 's my party.\N{\rCHT}- 你的帳單 先生  - 讓我付 我請客{\r}
+Dialogue: 0,0:35:09.88,0:35:13.44,ENG,,0,0,0,!Effect,Another precedent gone. This has been a very interesting evening.\N{\rCHT}又一個慣例打破了 這是一個很有趣的晚上{\r}
+Dialogue: 0,0:35:13.65,0:35:17.59,ENG,,0,0,0,!Effect,I'll call you a cab. Gasoline rationing, time of night.\N{\rCHT}我替你叫計程車 在晚上汽油要配給{\r}
+Dialogue: 0,0:35:17.76,0:35:19.49,ENG,,0,0,0,!Effect,- We'll come again.  - Anytime.\N{\rCHT}- 我們會再來  - 隨時歡迎{\r}
+Dialogue: 0,0:35:19.69,0:35:21.72,ENG,,0,0,0,!Effect,- Say good night to Sam for me.  - I will.\N{\rCHT}- 替我跟山姆說晚安  - 我會{\r}
+Dialogue: 0,0:35:22.73,0:35:26.72,ENG,,0,0,0,!Effect,There's still nobody in the world who can play "As Time Goes By" like Sam.\N{\rCHT}世界上沒有人能像山姆那樣 彈"時光飛逝"{\r}
+Dialogue: 0,0:35:27.30,0:35:29.77,ENG,,0,0,0,!Effect,He hasn't played it in a long time.\N{\rCHT}他有好久沒彈這首歌了{\r}
+Dialogue: 0,0:35:31.27,0:35:33.24,ENG,,0,0,0,!Effect,- Good night.  - Good night.\N{\rCHT}- 晚安  - 晚安{\r}
+Dialogue: 0,0:35:33.41,0:35:35.03,ENG,,0,0,0,!Effect,Night.\N{\rCHT}晚安{\r}
+Dialogue: 0,0:35:42.92,0:35:45.38,ENG,,0,0,0,!Effect,A very puzzling fellow, this Rick. What sort is he?\N{\rCHT}這個瑞克叫人莫名其妙 他是什麼人?{\r}
+Dialogue: 0,0:35:45.62,0:35:48.82,ENG,,0,0,0,!Effect,I really can't say, though I saw him quite often in Paris.\N{\rCHT}我也說不上來 雖然在巴黎我常看到他{\r}
+Dialogue: 0,0:35:49.02,0:35:51.58,ENG,,0,0,0,!Effect,- Tomorrow at 10, at the prefect office.  - We'll be there.\N{\rCHT}- 明天十點在首長的辦公室  - 我們會去的 {\r}
+Dialogue: 0,0:35:51.76,0:35:53.45,ENG,,0,0,0,!Effect,- Good night.  - Good night.\N{\rCHT}- 晚安  - 晚安{\r}
+Dialogue: 0,0:36:32.30,0:36:33.79,ENG,,0,0,0,!Effect,Boss?\N{\rCHT}老闆?{\r}
+Dialogue: 0,0:36:37.47,0:36:39.40,ENG,,0,0,0,!Effect,- Boss?  - Yeah?\N{\rCHT}- 老闆?  - 是?{\r}
+Dialogue: 0,0:36:39.91,0:36:42.97,ENG,,0,0,0,!Effect,- Boss, ain't you going to bed?  - Not right now.\N{\rCHT}- 你要不要上床睡?  - 現在不要{\r}
+Dialogue: 0,0:36:43.18,0:36:46.11,ENG,,0,0,0,!Effect,Ain't you planning on going to bed in the near future?\N{\rCHT}你會在短時間內上床睡嗎?{\r}
+Dialogue: 0,0:36:46.38,0:36:48.40,ENG,,0,0,0,!Effect,- You ever going to bed?  - No.\N{\rCHT}- 晚一點你會上床睡嗎?  - 不 {\r}
+Dialogue: 0,0:36:49.25,0:36:51.08,ENG,,0,0,0,!Effect,Well, I ain't sleepy, either.\N{\rCHT}我也不困 要麼{\r}
+Dialogue: 0,0:36:51.28,0:36:52.44,ENG,,0,0,0,!Effect,Good, then have a drink.\N{\rCHT}好 來喝一杯吧{\r}
+Dialogue: 0,0:36:52.65,0:36:54.59,ENG,,0,0,0,!Effect,- Not me, boss.  - Then don't have a drink.\N{\rCHT}- 不 我不要 老闆  - 那就別喝{\r}
+Dialogue: 0,0:36:54.75,0:36:56.28,ENG,,0,0,0,!Effect,Boss, let's get out of here.\N{\rCHT}老闆 我們離開這裡吧{\r}
+Dialogue: 0,0:36:56.52,0:36:59.01,ENG,,0,0,0,!Effect,No, sir. I' m waiting for a lady.\N{\rCHT}不 山姆 我在等一位女士{\r}
+Dialogue: 0,0:36:59.23,0:37:01.79,ENG,,0,0,0,!Effect,Please, let's go. Ain't nothing but trouble for you here.\N{\rCHT}拜託 我們走吧 這裡除了麻煩之外什麼也沒有{\r}
+Dialogue: 0,0:37:02.03,0:37:04.00,ENG,,0,0,0,!Effect,She's coming back. I know she's coming back.\N{\rCHT}她回來了 我知道她回來了{\r}
+Dialogue: 0,0:37:04.16,0:37:05.86,ENG,,0,0,0,!Effect,We'll take the car and drive all night.\N{\rCHT}我們開車去 開一整個晚上{\r}
+Dialogue: 0,0:37:06.07,0:37:08.90,ENG,,0,0,0,!Effect,We'll get drunk. We'll go fishing, stay away until she's gone.\N{\rCHT}我們去喝酒 我們也可去釣魚 躲開一下 直到她離開{\r}
+Dialogue: 0,0:37:09.07,0:37:13.44,ENG,,0,0,0,!Effect,- Shut up and go home, will you?  - No, sir, I' m staying right here.\N{\rCHT}- 閉嘴 回家去好嗎?  - 不 先生 我要留在這裡{\r}
+Dialogue: 0,0:37:18.94,0:37:21.44,ENG,,0,0,0,!Effect,They grab Ugarte, then she walks in.\N{\rCHT}他們抓了尤佳迪 然後她走進來{\r}
+Dialogue: 0,0:37:22.78,0:37:25.38,ENG,,0,0,0,!Effect,That's the way it goes. One in, one out.\N{\rCHT}自然法則 一進一出{\r}
+Dialogue: 0,0:37:26.52,0:37:28.61,ENG,,0,0,0,!Effect,- Sam.  - Yes, boss?\N{\rCHT}- 山姆  - 是的 老闆?{\r}
+Dialogue: 0,0:37:29.12,0:37:33.25,ENG,,0,0,0,!Effect,If it's December 1941 in Casablanca, what time is it in New York?\N{\rCHT}卡薩布蘭卡現在是1941年12月 在紐約是什麼時候?{\r}
+Dialogue: 0,0:37:33.79,0:37:34.85,ENG,,0,0,0,!Effect,What?\N{\rCHT}什麼?{\r}
+Dialogue: 0,0:37:35.26,0:37:36.73,ENG,,0,0,0,!Effect,My watch stopped.\N{\rCHT}我的手錶停了{\r}
+Dialogue: 0,0:37:37.56,0:37:39.76,ENG,,0,0,0,!Effect,I bet they're asleep in New York.\N{\rCHT}我打賭在紐約他們都睡著了{\r}
+Dialogue: 0,0:37:39.97,0:37:42.70,ENG,,0,0,0,!Effect,I bet they're asleep all over America.\N{\rCHT}我打賭全美國的人都睡著了{\r}
+Dialogue: 0,0:37:49.48,0:37:53.67,ENG,,0,0,0,!Effect,Of all the gin joints in all the towns in all the world...\N{\rCHT}全世界有那麼多城鎮 有那麼多酒吧...{\r}
+Dialogue: 0,0:37:53.85,0:37:55.84,ENG,,0,0,0,!Effect,...she walks into mine.\N{\rCHT}...她就走進我這一家{\r}
+Dialogue: 0,0:38:03.29,0:38:06.05,ENG,,0,0,0,!Effect,- What's that you're playing?  - A little something of my own.\N{\rCHT}- 你在彈什麼?  - 只是我隨便亂彈的{\r}
+Dialogue: 0,0:38:06.23,0:38:09.02,ENG,,0,0,0,!Effect,- Well, stop it. You know what I want to hear.  - No, I don't.\N{\rCHT}- 停 你知道我想聽什麼  - 不 我不知道{\r}
+Dialogue: 0,0:38:09.20,0:38:11.32,ENG,,0,0,0,!Effect,You played it for her. You can play it for me.\N{\rCHT}你能為她彈 你也能為我彈{\r}
+Dialogue: 0,0:38:11.53,0:38:14.69,ENG,,0,0,0,!Effect,- I don't think I can remember...  - lf she can stand it, I can.\N{\rCHT}- 我想我記不起來...  - 如果她受得了 我也可以{\r}
+Dialogue: 0,0:38:14.90,0:38:15.89,ENG,,0,0,0,!Effect,Play it.\N{\rCHT}彈{\r}
+Dialogue: 0,0:38:17.04,0:38:18.40,ENG,,0,0,0,!Effect,Yes, boss.\N{\rCHT}是的 老闆{\r}
+Dialogue: 0,0:39:48.19,0:39:50.89,ENG,,0,0,0,!Effect,Who are you really? And what were you before?\N{\rCHT}你到底是什麼人? 你以前是什麼?{\r}
+Dialogue: 0,0:39:51.20,0:39:53.19,ENG,,0,0,0,!Effect,What did you do, and what did you think?\N{\rCHT}你是做什麼的 你又想些什麼?{\r}
+Dialogue: 0,0:39:53.80,0:39:55.73,ENG,,0,0,0,!Effect,We said no questions.\N{\rCHT}我們說過不准問問題{\r}
+Dialogue: 0,0:40:00.41,0:40:02.40,ENG,,0,0,0,!Effect,Here's looking at you, kid.\N{\rCHT}永志不忘{\r}
+Dialogue: 0,0:40:36.41,0:40:38.14,ENG,,0,0,0,!Effect,A franc for your thoughts.\N{\rCHT}一法郞買你的心事{\r}
+Dialogue: 0,0:40:38.34,0:40:40.74,ENG,,0,0,0,!Effect,In America they'd bring only a penny.\N{\rCHT}在美國他們只出一分錢{\r}
+Dialogue: 0,0:40:41.21,0:40:43.15,ENG,,0,0,0,!Effect,I guess that's about all they're won'th.\N{\rCHT}我猜大概只值這麼多{\r}
+Dialogue: 0,0:40:44.28,0:40:47.98,ENG,,0,0,0,!Effect,I'm willing to be overcharged. Tell me.\N{\rCHT}我願意被超額收費 告訴我{\r}
+Dialogue: 0,0:40:48.79,0:40:50.41,ENG,,0,0,0,!Effect,Well, I was wondering...\N{\rCHT}我在想...{\r}
+Dialogue: 0,0:40:52.26,0:40:53.57,ENG,,0,0,0,!Effect,Why I' m so lucky.\N{\rCHT}為什麼我那麼幸運 {\r}
+Dialogue: 0,0:40:53.57,0:40:56.63,ENG,,0,0,0,!Effect,Why I should find you waiting for me to come along.\N{\rCHT}為什麼你會在那裡等著我出現 正巧又被我找到{\r}
+Dialogue: 0,0:40:57.73,0:40:59.93,ENG,,0,0,0,!Effect,Why there is no other man in my life?\N{\rCHT}為什麼我的生命中 沒有別的男人?{\r}
+Dialogue: 0,0:41:02.27,0:41:04.50,ENG,,0,0,0,!Effect,That's easy. There was.\N{\rCHT}那很簡單 以前有{\r}
+Dialogue: 0,0:41:06.51,0:41:08.00,ENG,,0,0,0,!Effect,He's dead.\N{\rCHT}他死了{\r}
+Dialogue: 0,0:41:08.94,0:41:10.84,ENG,,0,0,0,!Effect,I'm sorry for asking.\N{\rCHT}對不起我問了{\r}
+Dialogue: 0,0:41:11.51,0:41:13.91,ENG,,0,0,0,!Effect,I forgot we said no questions.\N{\rCHT}我忘了我們說過不准問問題{\r}
+Dialogue: 0,0:41:17.65,0:41:21.42,ENG,,0,0,0,!Effect,Only one answer can take care of all our questions.\N{\rCHT}只有一個答案 能解答我們所有的問題{\r}
+Dialogue: 0,0:41:24.42,0:41:26.42,CHT,,0,0,0,!Effect,{\fs33}巴黎{\r}
+Dialogue: 0,0:41:54.96,0:41:56.42,CHT,,0,0,0,!Effect,{\fs22}『法國軍隊已放棄他們的崗位』{\r}
+Dialogue: 0,0:41:56.50,0:41:58.66,CHT,,0,0,0,!Effect,{\fs22}『德國人已要求進入首都』{\r}
+Dialogue: 0,0:42:06.13,0:42:08.39,ENG,,0,0,0,!Effect,Nothing can stop them now. Wednesday,\N{\rCHT}現在什麼也阻止不了他們了 星期三{\r}
+Dialogue: 0,0:42:08.39,0:42:10.12,ENG,,0,0,0,!Effect,Thursday at the latest, they'll be in Paris.\N{\rCHT}最遲星期四 他們便會來巴黎{\r}
+Dialogue: 0,0:42:10.34,0:42:13.27,ENG,,0,0,0,!Effect,Richard, they'll find out your record. You won't be safe here.\N{\rCHT}理查 如果他們發現你的過去 你留在這裡便不安全了{\r}
+Dialogue: 0,0:42:13.44,0:42:16.88,ENG,,0,0,0,!Effect,I'm on their blacklist already. Their roll of honor.\N{\rCHT}我早已在他們的黑名單上了 榮譽欄上{\r}
+Dialogue: 0,0:43:02.45,0:43:05.05,ENG,,0,0,0,!Effect,Henri wants us to finish this bottle and then three more.\N{\rCHT}亨利要我們喝完這一瓶{\r}
+Dialogue: 0,0:43:05.22,0:43:07.54,ENG,,0,0,0,!Effect,Says he'll water his garden with champagne\N{\rCHT}還有三瓶他要用來澆花 {\r}
+Dialogue: 0,0:43:07.54,0:43:09.02,ENG,,0,0,0,!Effect,before he'll let the Germans drink it.\N{\rCHT}也不讓德國人喝{\r}
+Dialogue: 0,0:43:09.23,0:43:12.49,ENG,,0,0,0,!Effect,This sort of takes the sting out of being occupied, doesn't it?\N{\rCHT}這可以減輕被佔領的苦惱 你說是不是? {\r}
+Dialogue: 0,0:43:12.70,0:43:13.93,ENG,,0,0,0,!Effect,You said it.\N{\rCHT}你說對了{\r}
+Dialogue: 0,0:43:14.13,0:43:16.07,ENG,,0,0,0,!Effect,Here's looking at you, kid.\N{\rCHT}永志不忘{\r}
+Dialogue: 0,0:43:43.33,0:43:45.32,ENG,,0,0,0,!Effect,My Germars a little rusty.\N{\rCHT}我的德語有點生銹了{\r}
+Dialogue: 0,0:43:46.63,0:43:48.19,ENG,,0,0,0,!Effect,It's the Gestapo.\N{\rCHT}是秘密員警{\r}
+Dialogue: 0,0:43:50.17,0:43:52.97,ENG,,0,0,0,!Effect,They say they expect to be in Paris tomorrow.\N{\rCHT}他們說預計明天到巴黎{\r}
+Dialogue: 0,0:43:54.17,0:43:57.61,ENG,,0,0,0,!Effect,They're telling us how to act when they come marching in.\N{\rCHT}他們在教我們當他們進來時 該如何反應{\r}
+Dialogue: 0,0:44:00.91,0:44:03.88,ENG,,0,0,0,!Effect,With the whole world crumbling, we pick this time to fall in love.\N{\rCHT}整個世界快倒下來了 我們卻挑上這時候來談戀愛{\r}
+Dialogue: 0,0:44:04.12,0:44:05.74,ENG,,0,0,0,!Effect,It's pretty bad timing.\N{\rCHT}對 真不巧{\r}
+Dialogue: 0,0:44:06.05,0:44:09.68,ENG,,0,0,0,!Effect,- Where were you, say, 10 years ago?  - 10 years ago?\N{\rCHT}- 在十年前的話 你會說什麼?  - 十年前?{\r}
+Dialogue: 0,0:44:11.32,0:44:12.76,ENG,,0,0,0,!Effect,Let's see.\N{\rCHT}我想想看{\r}
+Dialogue: 0,0:44:12.99,0:44:16.89,ENG,,0,0,0,!Effect,Yes, I was having a brace put on my teeth. Where were you?\N{\rCHT}我還帶著牙套 那時候你在那兒?{\r}
+Dialogue: 0,0:44:17.53,0:44:19.02,ENG,,0,0,0,!Effect,Looking for a job.\N{\rCHT}正在找工作{\r}
+Dialogue: 0,0:44:25.70,0:44:27.23,ENG,,0,0,0,!Effect,Was that cannon fire?\N{\rCHT}那是炮火嗎?{\r}
+Dialogue: 0,0:44:28.27,0:44:29.67,ENG,,0,0,0,!Effect,Or is it my heart pounding?\N{\rCHT}還是我的心在跳?{\r}
+Dialogue: 0,0:44:29.88,0:44:33.90,ENG,,0,0,0,!Effect,It's the new German 77th, and judging by the sound, only about 35 miles away.\N{\rCHT}那是新的德國77型 單以聲音來判斷 大約只有35哩遠{\r}
+Dialogue: 0,0:44:36.25,0:44:38.41,ENG,,0,0,0,!Effect,And getting closer every minute.\N{\rCHT}越來越近了{\r}
+Dialogue: 0,0:44:39.59,0:44:40.71,ENG,,0,0,0,!Effect,Here, here, drink up.\N{\rCHT}來 來 喝光{\r}
+Dialogue: 0,0:44:41.55,0:44:43.28,ENG,,0,0,0,!Effect,We'll never finish the other three.\N{\rCHT}另外那三瓶我們喝不完了{\r}
+Dialogue: 0,0:44:43.49,0:44:46.93,ENG,,0,0,0,!Effect,Them Germans will be here pretty soon, and they'll come looking for you.\N{\rCHT}德國人很快就會到了 他們會來找你{\r}
+Dialogue: 0,0:44:47.09,0:44:49.22,ENG,,0,0,0,!Effect,And don't forget, there's a price on your head.\N{\rCHT}別忘了拿下你有懸賞{\r}
+Dialogue: 0,0:44:49.39,0:44:52.39,ENG,,0,0,0,!Effect,Ileft a note in my apartment. They'll know where to find me.\N{\rCHT}我在公寓留有字條 他們知道到那裡能找到我{\r}
+Dialogue: 0,0:44:52.90,0:44:54.23,ENG,,0,0,0,!Effect,It's strange.\N{\rCHT}奇怪{\r}
+Dialogue: 0,0:44:54.97,0:44:58.84,ENG,,0,0,0,!Effect,- I know so very little about you.  - I know very little about you.\N{\rCHT}- 我對你瞭解得那麼少  - 我對你的瞭解更少{\r}
+Dialogue: 0,0:44:59.00,0:45:01.37,ENG,,0,0,0,!Effect,Just the fact that you had your teeth straightened.\N{\rCHT}只知道你矯正過牙齒{\r}
+Dialogue: 0,0:45:02.67,0:45:05.54,ENG,,0,0,0,!Effect,Be serious, darling. You are in danger. You must leave Paris.\N{\rCHT}認真點 親愛的 你有危險 你一定要離開巴黎{\r}
+Dialogue: 0,0:45:05.74,0:45:06.87,ENG,,0,0,0,!Effect,No, we must leave.\N{\rCHT}不 不 我們一定要離開{\r}
+Dialogue: 0,0:45:07.81,0:45:09.28,ENG,,0,0,0,!Effect,Yes, of course. We.\N{\rCHT}對 當然是我們{\r}
+Dialogue: 0,0:45:09.48,0:45:13.21,ENG,,0,0,0,!Effect,The train for Marseilles leaves at 5:00. I'll pick you up at your hotel at 4:30.\N{\rCHT}往馬賽的火車五點開出 我四點半到你的飯店接你{\r}
+Dialogue: 0,0:45:14.62,0:45:16.42,ENG,,0,0,0,!Effect,Not at my hotel. I...\N{\rCHT}不 不要在我飯店 我...{\r}
+Dialogue: 0,0:45:17.49,0:45:20.19,ENG,,0,0,0,!Effect,I have things to do in the city before I leave.\N{\rCHT}在我離開前我在城裡有事要辦{\r}
+Dialogue: 0,0:45:20.79,0:45:22.42,ENG,,0,0,0,!Effect,I'll meet you at the station.\N{\rCHT}我會在火車站跟你碰面{\r}
+Dialogue: 0,0:45:22.69,0:45:24.82,ENG,,0,0,0,!Effect,All right, at a quarter to 5.\N{\rCHT}好吧 四點四十五分{\r}
+Dialogue: 0,0:45:25.06,0:45:26.89,ENG,,0,0,0,!Effect,Why don't we get married in Marseilles?\N{\rCHT}我們何不在馬賽結婚?{\r}
+Dialogue: 0,0:45:31.57,0:45:33.27,ENG,,0,0,0,!Effect,That's too far ahead to plan.\N{\rCHT}現在計畫不嫌太遙遠嗎{\r}
+Dialogue: 0,0:45:33.44,0:45:35.24,ENG,,0,0,0,!Effect,Yes. I guess it is too far ahead.\N{\rCHT}對 我猜是遠了點{\r}
+Dialogue: 0,0:45:36.54,0:45:40.07,ENG,,0,0,0,!Effect,Let's see... What about the engineer? Why can't he marry us on the train?\N{\rCHT}那火車上的列車長如何? 他可以在火車上替我們主持婚禮?{\r}
+Dialogue: 0,0:45:40.58,0:45:44.28,ENG,,0,0,0,!Effect,Why not? The captain on a ship can. It doesn't seem fair that...\N{\rCHT}親愛的 為什麼不? 船上的船長可以 似乎有點不公平...{\r}
+Dialogue: 0,0:45:46.59,0:45:47.71,ENG,,0,0,0,!Effect,Hey, what's wrong, kid?\N{\rCHT}怎麼了 孩子?{\r}
+Dialogue: 0,0:45:54.26,0:45:55.95,ENG,,0,0,0,!Effect,Llove you so much.\N{\rCHT}我那麼愛你{\r}
+Dialogue: 0,0:45:58.63,0:46:01.10,ENG,,0,0,0,!Effect,And I hate this war so much.\N{\rCHT}而我那麼痛恨這戰爭{\r}
+Dialogue: 0,0:46:03.07,0:46:05.80,ENG,,0,0,0,!Effect,It's a crazy world. Anything can happen.\N{\rCHT}這是個瘋狂的世界 任何事都可能發生{\r}
+Dialogue: 0,0:46:07.44,0:46:09.41,ENG,,0,0,0,!Effect,If you shouldn't get away...\N{\rCHT}萬一如果你不能離開...{\r}
+Dialogue: 0,0:46:11.14,0:46:13.51,ENG,,0,0,0,!Effect,If something should keep us apart...\N{\rCHT}我是說  萬一我們被分開...{\r}
+Dialogue: 0,0:46:14.41,0:46:16.31,ENG,,0,0,0,!Effect,...wherever they put you...\N{\rCHT}...不管他們把你安置在那裡...{\r}
+Dialogue: 0,0:46:16.48,0:46:19.75,ENG,,0,0,0,!Effect,...and wherever I' II be, I want you to know that I...\N{\rCHT}...不管我會在那裡 我要你知道我...{\r}
+Dialogue: 0,0:46:25.32,0:46:26.59,ENG,,0,0,0,!Effect,Kiss me.\N{\rCHT}吻我{\r}
+Dialogue: 0,0:46:27.03,0:46:29.93,ENG,,0,0,0,!Effect,Kiss me as if it were the last time.\N{\rCHT}有如最後一次般吻我{\r}
+Dialogue: 0,0:46:54.76,0:46:58.51,ENG,,0,0,0,!Effect,All aboard! The last train leaving in three minutes.\N{\rCHT}所有乘客上車 最後一班火車在三分鐘後開出{\r}
+Dialogue: 0,0:47:05.93,0:47:07.40,ENG,,0,0,0,!Effect,Where is she? Have you seen her?\N{\rCHT}她在那裡? 你有看到她嗎?{\r}
+Dialogue: 0,0:47:07.57,0:47:10.06,ENG,,0,0,0,!Effect,I can't find her. She checked out of the hotel.\N{\rCHT}我找不到她 她已經退了房間{\r}
+Dialogue: 0,0:47:10.30,0:47:12.36,ENG,,0,0,0,!Effect,But this note came just after you left.\N{\rCHT}不過你剛離開後送來這字條{\r}
+Dialogue: 0,0:47:15.21,0:47:18.00,CHT,,0,0,0,!Effect,{\fs25}親愛的理查{\r}
+Dialogue: 0,0:47:18.11,0:47:19.74,CHT,,0,0,0,!Effect,{\fs22}我不能跟你走或是再見你{\r}
+Dialogue: 0,0:47:19.84,0:47:21.18,CHT,,0,0,0,!Effect,{\fs22}你不要問為什麼{\r}
+Dialogue: 0,0:47:21.28,0:47:22.77,CHT,,0,0,0,!Effect,{\fs22}只要相信我愛你{\r}
+Dialogue: 0,0:47:22.91,0:47:24.40,CHT,,0,0,0,!Effect,{\fs22}給我的愛人願上帝祝福你{\r}
+Dialogue: 0,0:47:24.55,0:47:26.74,CHT,,0,0,0,!Effect,{\fs22}伊莎{\r}
+Dialogue: 0,0:47:27.52,0:47:29.21,ENG,,0,0,0,!Effect,That's the last call, Mr. Richard.\N{\rCHT}那是最後的召喚  理查先生{\r}
+Dialogue: 0,0:47:29.99,0:47:31.46,ENG,,0,0,0,!Effect,Do you hear me?\N{\rCHT}你聽到我說嗎?{\r}
+Dialogue: 0,0:47:32.19,0:47:35.13,ENG,,0,0,0,!Effect,Come on, Mr. Richard. Let's get out of here. Come on.\N{\rCHT}快點 理查先生 我們離開這裡再說 快點{\r}
+Dialogue: 0,0:48:26.81,0:48:28.58,ENG,,0,0,0,!Effect,Rick, I have to talk to you.\N{\rCHT}瑞克 我必須跟你談一下{\r}
+Dialogue: 0,0:48:29.98,0:48:33.28,ENG,,0,0,0,!Effect,I saved my first drink to have with you. Here.\N{\rCHT}我把第一杯留下來跟你一起喝 在這兒{\r}
+Dialogue: 0,0:48:33.99,0:48:36.58,ENG,,0,0,0,!Effect,- No, Rick. Not tonight.  - Especially tonight.\N{\rCHT}- 不 瑞克 今晚不行  - 特別是今晚{\r}
+Dialogue: 0,0:48:38.06,0:48:41.55,ENG,,0,0,0,!Effect,Why did you have to come to Casablanca? There are other places.\N{\rCHT}為什麼你一定要來卡薩布蘭卡 還有很多別的地方{\r}
+Dialogue: 0,0:48:41.79,0:48:44.16,ENG,,0,0,0,!Effect,I wouldn't have come if I' d known you were here.\N{\rCHT}如果我知道你在這裡 我就不會來{\r}
+Dialogue: 0,0:48:44.90,0:48:46.86,ENG,,0,0,0,!Effect,Believe me, Rick, it's true. I didn't know.\N{\rCHT}相信我 瑞克 那是真的 我並不知道{\r}
+Dialogue: 0,0:48:47.03,0:48:50.43,ENG,,0,0,0,!Effect,It's funny about your voice, how it hasn't changed. I can still hear it.\N{\rCHT}奇怪的是你的聲音 一點都沒變 我仍然聽得到{\r}
+Dialogue: 0,0:48:50.60,0:48:52.70,ENG,,0,0,0,!Effect,Richard, dear, I'll go with you anyplace.\N{\rCHT}親愛的理查 我會隨你到天涯海角{\r}
+Dialogue: 0,0:48:53.17,0:48:56.54,ENG,,0,0,0,!Effect,- We'll get on a train and never stop.  - Don't, Rick.\N{\rCHT}- 我們一起坐上火車 一路不停  - 別這樣 瑞克{\r}
+Dialogue: 0,0:48:57.44,0:48:59.24,ENG,,0,0,0,!Effect,I can understand how you feel.\N{\rCHT}我明白你的感受{\r}
+Dialogue: 0,0:49:00.11,0:49:02.24,ENG,,0,0,0,!Effect,You understand how I feel.\N{\rCHT}你明白我的感受{\r}
+Dialogue: 0,0:49:02.98,0:49:04.71,ENG,,0,0,0,!Effect,How long was it we had, honey?\N{\rCHT}我們相敘的日子有多長 親愛的?{\r}
+Dialogue: 0,0:49:05.68,0:49:07.85,ENG,,0,0,0,!Effect,- I didn't count the days.  - Well, I did.\N{\rCHT}- 我沒有數  - 我有{\r}
+Dialogue: 0,0:49:08.19,0:49:09.59,ENG,,0,0,0,!Effect,Every one of them.\N{\rCHT}每一天都有{\r}
+Dialogue: 0,0:49:10.26,0:49:12.16,ENG,,0,0,0,!Effect,Mostly I remember the last one.\N{\rCHT}最後一天我記得最清楚{\r}
+Dialogue: 0,0:49:13.19,0:49:16.92,ENG,,0,0,0,!Effect,The wild finish. A guy standing on a station platform in the rain...\N{\rCHT}當汽笛聲響過後 月臺上有一個人站在雨中...{\r}
+Dialogue: 0,0:49:17.10,0:49:18.82,ENG,,0,0,0,!Effect,...with a comical look on his face...\N{\rCHT}...臉上掛著可笑的表情...{\r}
+Dialogue: 0,0:49:19.00,0:49:20.97,ENG,,0,0,0,!Effect,...because his insides have been kicked out.\N{\rCHT}...因為他的內心被踢翻了{\r}
+Dialogue: 0,0:49:23.03,0:49:25.16,ENG,,0,0,0,!Effect,Can I tell you a story, Rick?\N{\rCHT}瑞克 我可否說一個故事給你聽?{\r}
+Dialogue: 0,0:49:25.34,0:49:27.83,ENG,,0,0,0,!Effect,Does it got a wild finish?\N{\rCHT}結局也有汽笛聲嗎?{\r}
+Dialogue: 0,0:49:28.04,0:49:30.17,ENG,,0,0,0,!Effect,I don't know the finish yet.\N{\rCHT}我還不知道結局{\r}
+Dialogue: 0,0:49:30.34,0:49:33.78,ENG,,0,0,0,!Effect,Go on, tell it. Maybe one'll come to you as you go along.\N{\rCHT}那就說出來 或許一邊說可以一邊想{\r}
+Dialogue: 0,0:49:36.25,0:49:40.01,ENG,,0,0,0,!Effect,It's about a girl who had just come to Paris from her home in Oslo.\N{\rCHT}是有關一位女孩 她剛從科斯魯來到巴黎{\r}
+Dialogue: 0,0:49:40.19,0:49:41.91,ENG,,0,0,0,!Effect,At the house of some friends...\N{\rCHT}在一個朋友的家裡...{\r}
+Dialogue: 0,0:49:42.09,0:49:44.95,ENG,,0,0,0,!Effect,...she met a man about whom she'd heard her whole life.\N{\rCHT}...她遇到她聽聞了一輩子的男人{\r}
+Dialogue: 0,0:49:45.12,0:49:48.32,ENG,,0,0,0,!Effect,A very great and courageous man.\N{\rCHT}一個偉大又勇敢的男人{\r}
+Dialogue: 0,0:49:48.69,0:49:50.99,ENG,,0,0,0,!Effect,He opened up for her a whole beautiful world...\N{\rCHT}他為她揭開一個由知識...{\r}
+Dialogue: 0,0:49:51.16,0:49:53.76,ENG,,0,0,0,!Effect,...full of knowledge and thoughts and ideals.\N{\rCHT}...思想和理想組成的美麗世界{\r}
+Dialogue: 0,0:49:54.17,0:49:58.03,ENG,,0,0,0,!Effect,Everything she knew or ever became was because of him.\N{\rCHT}她知道的一切 她的成長 都是由於他的關係{\r}
+Dialogue: 0,0:49:58.20,0:49:59.97,ENG,,0,0,0,!Effect,And she looked up to him...\N{\rCHT}她景仰他...{\r}
+Dialogue: 0,0:50:00.24,0:50:01.71,ENG,,0,0,0,!Effect,...and worshiped him...\N{\rCHT}...崇拜他...{\r}
+Dialogue: 0,0:50:01.91,0:50:04.71,ENG,,0,0,0,!Effect,...with a feeling she supposed was love.\N{\rCHT}...她假定那就是愛的感覺{\r}
+Dialogue: 0,0:50:04.88,0:50:07.00,ENG,,0,0,0,!Effect,Yes, that's very pretty.\N{\rCHT}對 很美{\r}
+Dialogue: 0,0:50:07.18,0:50:10.88,ENG,,0,0,0,!Effect,I heard a story once. In fact, I've heard a lot of stories in my time.\N{\rCHT}我也聽過一個故事 事實上在我的年代也聽過很多故事{\r}
+Dialogue: 0,0:50:11.05,0:50:13.85,ENG,,0,0,0,!Effect,They went along with the sound of a tinny piano...\N{\rCHT}都由細小的鋼琴叮叮聲伴奏...{\r}
+Dialogue: 0,0:50:14.02,0:50:16.35,ENG,,0,0,0,!Effect,...playing in the parlor downstairs.\N{\rCHT}...就在樓下的大廳彈奏{\r}
+Dialogue: 0,0:50:16.82,0:50:21.82,ENG,,0,0,0,!Effect,"Mister, I met a man once when I was a kid," they'd always begin.\N{\rCHT}"先生 我小時候有一次 遇上一個男人" 開始總是這樣{\r}
+Dialogue: 0,0:50:24.16,0:50:27.93,ENG,,0,0,0,!Effect,I guess neither one of our stories is very funny.\N{\rCHT}我猜我們的故事都不怎麼有趣{\r}
+Dialogue: 0,0:50:28.10,0:50:29.16,ENG,,0,0,0,!Effect,Tell me...\N{\rCHT}告訴我...{\r}
+Dialogue: 0,0:50:30.14,0:50:32.19,ENG,,0,0,0,!Effect,...who was it you left me for?\N{\rCHT}...你是為了誰離開我?{\r}
+Dialogue: 0,0:50:32.40,0:50:35.24,ENG,,0,0,0,!Effect,Was it Laszlo, or were there others in between...\N{\rCHT}是拉斯路 還是中間還有別的人...{\r}
+Dialogue: 0,0:50:35.97,0:50:38.31,ENG,,0,0,0,!Effect,...or aren't you the kind that tells?\N{\rCHT}...或者你是不會說出來的人?{\r}
+Dialogue: 0,0:51:00.53,0:51:02.43,CHT,,0,0,0,!Effect,{\fs28}雷諾隊長 員警首長{\r}
+Dialogue: 0,0:51:03.64,0:51:07.16,ENG,,0,0,0,!Effect,I strongly suspect that Ugarte left the letters of transit with Mr. Blaine.\N{\rCHT}我極端懷疑尤佳迪先生 把過境信函留下給賓勒先生了{\r}
+Dialogue: 0,0:51:07.37,0:51:09.74,ENG,,0,0,0,!Effect,I would suggest you search the cafe immediately.\N{\rCHT}我建議立刻徹底搜查咖啡館{\r}
+Dialogue: 0,0:51:09.91,0:51:12.93,ENG,,0,0,0,!Effect,If Rick has the letters, he's too smart to let you find them there.\N{\rCHT}如果信函在瑞克手上 他那麼聰明你不可能找到的{\r}
+Dialogue: 0,0:51:13.21,0:51:15.20,ENG,,0,0,0,!Effect,You give him credit for too much cleverness.\N{\rCHT}你太誇獎他的聰明{\r}
+Dialogue: 0,0:51:15.41,0:51:18.01,ENG,,0,0,0,!Effect,My impression was he's just another blundering American.\N{\rCHT}我的印象他不過是另一個 莽撞的美國人{\r}
+Dialogue: 0,0:51:18.18,0:51:20.21,ENG,,0,0,0,!Effect,We mustrt underestimate American blundering.\N{\rCHT}我們不要低估美國人的莽撞{\r}
+Dialogue: 0,0:51:20.42,0:51:24.35,ENG,,0,0,0,!Effect,I was with them when they blundered into Berlin in 1918.\N{\rCHT}1918年 當他們莽撞進入柏林時{\r}
+Dialogue: 0,0:51:24.52,0:51:27.42,ENG,,0,0,0,!Effect,As to Laszlo, we want him watched 24 hours a day.\N{\rCHT}我跟他們在一起呢 至於拉斯路 我要派人24小時監視{\r}
+Dialogue: 0,0:51:27.59,0:51:31.43,ENG,,0,0,0,!Effect,It may interest you to know that at this very moment he's on his way here.\N{\rCHT}你可能會感興趣想知道 此刻他正在來這裡的途中{\r}
+Dialogue: 0,0:51:36.50,0:51:39.13,ENG,,0,0,0,!Effect,There is nothing we can do.\N{\rCHT}我們沒辦法{\r}
+Dialogue: 0,0:51:40.14,0:51:42.83,ENG,,0,0,0,!Effect,I'm delighted to see you. Did you have a good night's rest?\N{\rCHT}很高興看到你們 你們有充分休息嗎?{\r}
+Dialogue: 0,0:51:43.01,0:51:43.98,ENG,,0,0,0,!Effect,I slept very well.\N{\rCHT}我睡得很好{\r}
+Dialogue: 0,0:51:44.18,0:51:46.74,ENG,,0,0,0,!Effect,Strange. Nobody's supposed to sleep well in Casablanca.\N{\rCHT}奇怪 在卡薩布蘭卡 不應該有人會睡得好的{\r}
+Dialogue: 0,0:51:48.05,0:51:51.91,ENG,,0,0,0,!Effect,- May we proceed with the business?  - With pleasure. Wort you sit down?\N{\rCHT}- 我們可否進行正事?  - 非常樂意 請坐下 謝謝{\r}
+Dialogue: 0,0:51:54.12,0:51:57.49,ENG,,0,0,0,!Effect,Laszlo, we will not mince words. You're an escaped prisoner of the Reich.\N{\rCHT}好吧 我們坦白說好了 你是第三帝國的逃犯{\r}
+Dialogue: 0,0:51:57.66,0:51:59.99,ENG,,0,0,0,!Effect,So far you have been fortunate in eluding us.\N{\rCHT}到目前為止你成功躲過我們{\r}
+Dialogue: 0,0:52:00.46,0:52:01.95,ENG,,0,0,0,!Effect,You have reached Casablanca.\N{\rCHT}你抵達了卡薩布蘭卡{\r}
+Dialogue: 0,0:52:02.23,0:52:04.92,ENG,,0,0,0,!Effect,It is my duty to see that you stay in Casablanca.\N{\rCHT}我有責任確保 你留在卡薩布蘭卡{\r}
+Dialogue: 0,0:52:05.16,0:52:07.22,ENG,,0,0,0,!Effect,Whether or not you will succeed is problematic.\N{\rCHT}你是否會成功當然仍是問題 一點也沒{\r}
+Dialogue: 0,0:52:07.43,0:52:10.20,ENG,,0,0,0,!Effect,Not at all. Renault 's signature is necessary on every visa.\N{\rCHT}每張出境許可 都需雷諾隊長簽名{\r}
+Dialogue: 0,0:52:10.37,0:52:13.06,ENG,,0,0,0,!Effect,Captain, is it possible that Laszlo will receive a visa?\N{\rCHT}隊長 你認為拉斯路可能獲得出境證嗎?{\r}
+Dialogue: 0,0:52:13.24,0:52:15.57,ENG,,0,0,0,!Effect,I'm afraid not. My regrets, monsieur.\N{\rCHT}我恐怕不會 我表示抱歉 先生{\r}
+Dialogue: 0,0:52:15.81,0:52:17.80,ENG,,0,0,0,!Effect,Well, perhaps I shall like it in Casablanca.\N{\rCHT}或許我會喜歡留在卡薩布蘭卡{\r}
+Dialogue: 0,0:52:18.44,0:52:20.14,ENG,,0,0,0,!Effect,And mademoiselle?\N{\rCHT}那小姐呢?{\r}
+Dialogue: 0,0:52:20.31,0:52:23.80,ENG,,0,0,0,!Effect,- You needrt be concerned about me.  - Is that all you wish to tell us?\N{\rCHT}- 你不必為我操心  - 你們想告訴我們的就是這些?{\r}
+Dialogue: 0,0:52:24.05,0:52:26.95,ENG,,0,0,0,!Effect,Don't be in such a hurry. You have all the time in the world.\N{\rCHT}別急 你的時間多的是{\r}
+Dialogue: 0,0:52:27.12,0:52:29.78,ENG,,0,0,0,!Effect,You may be in Casablanca indefinitely.\N{\rCHT}你可能無限期留在卡薩布蘭卡{\r}
+Dialogue: 0,0:52:29.96,0:52:31.89,ENG,,0,0,0,!Effect,Or you may leave for Lisbon tomorrow.\N{\rCHT}或許你可能明天前往里斯本{\r}
+Dialogue: 0,0:52:32.06,0:52:34.25,ENG,,0,0,0,!Effect,- On one condition.  - And that is?\N{\rCHT}- 在一個條件之下  - 是什麼?{\r}
+Dialogue: 0,0:52:34.53,0:52:37.72,ENG,,0,0,0,!Effect,You know the leader of the underground movement in Paris, in Prague...\N{\rCHT}你知道各地地下組織首領是誰 在巴黎 布拉格...{\r}
+Dialogue: 0,0:52:37.93,0:52:39.26,ENG,,0,0,0,!Effect,...Brussels, Amsterdam...\N{\rCHT}...布魯賽爾 阿姆斯特丹...{\r}
+Dialogue: 0,0:52:39.46,0:52:41.73,ENG,,0,0,0,!Effect,...Oslo, Belgrade, Athens...\N{\rCHT}...奧斯陸 貝爾格勒 雅典...{\r}
+Dialogue: 0,0:52:41.93,0:52:44.46,ENG,,0,0,0,!Effect,- Even Berlin.  - Yes, even in Berlin.\N{\rCHT}- 甚至在柏林  - 對 甚至在柏林{\r}
+Dialogue: 0,0:52:44.67,0:52:47.30,ENG,,0,0,0,!Effect,If you will furnish me with their names and whereabouts...\N{\rCHT}如果你提供我他們的名字 和確實的行蹤...{\r}
+Dialogue: 0,0:52:47.47,0:52:49.24,ENG,,0,0,0,!Effect,...you'll have your visa in the morning.\N{\rCHT}...你便可以在早上得到出境簽證{\r}
+Dialogue: 0,0:52:49.51,0:52:52.17,ENG,,0,0,0,!Effect,And the honor of having served the Third Reich.\N{\rCHT}並且分享 為第三帝國服務的榮譽{\r}
+Dialogue: 0,0:52:52.88,0:52:55.07,ENG,,0,0,0,!Effect,I was in a German concentration camp for a year.\N{\rCHT}我在德國集中營待過一年{\r}
+Dialogue: 0,0:52:55.58,0:52:59.02,ENG,,0,0,0,!Effect,- That's honor enough for a lifetime.  - You will give us the names?\N{\rCHT}- 那份榮譽夠享用一輩子了  - 你會給我們那些名字嗎?{\r}
+Dialogue: 0,0:53:00.55,0:53:03.04,ENG,,0,0,0,!Effect,If I didn't give them to you in a concentration camp...\N{\rCHT}如果在集中營時我沒有給你們...{\r}
+Dialogue: 0,0:53:03.29,0:53:06.19,ENG,,0,0,0,!Effect,...where you had more persuasive methods at your disposal...\N{\rCHT}...在那兒 你能隨意用更有說服力的方法...{\r}
+Dialogue: 0,0:53:06.39,0:53:08.95,ENG,,0,0,0,!Effect,...I certainly won't give them to you now.\N{\rCHT}...現在我當然不會給你了{\r}
+Dialogue: 0,0:53:09.46,0:53:11.83,ENG,,0,0,0,!Effect,And what if you track down these men and kill them?\N{\rCHT}如果你查獲這些殺了他們呢?{\r}
+Dialogue: 0,0:53:12.03,0:53:13.52,ENG,,0,0,0,!Effect,What if you murdered all of us?\N{\rCHT}如果你謀殺我們全部又怎樣?{\r}
+Dialogue: 0,0:53:13.77,0:53:18.10,ENG,,0,0,0,!Effect,From every corner of Europe, hundreds, thousands would rise to take our places.\N{\rCHT}在歐洲的每個角落 有上千人會崛起 取代我們的位置{\r}
+Dialogue: 0,0:53:18.27,0:53:20.60,ENG,,0,0,0,!Effect,Even Nazis can't kill that fast.\N{\rCHT}即使納粹黨也不能殺得完{\r}
+Dialogue: 0,0:53:20.77,0:53:24.26,ENG,,0,0,0,!Effect,Herr Laszlo, you have a reputation for eloquence which I can now understand.\N{\rCHT}拉斯路 你以能言善辯著稱 我現在體會到{\r}
+Dialogue: 0,0:53:24.48,0:53:26.03,ENG,,0,0,0,!Effect,But in one aspect you are mistaken.\N{\rCHT}不過有點你說錯{\r}
+Dialogue: 0,0:53:26.24,0:53:28.77,ENG,,0,0,0,!Effect,You said the enemies of the Reich could all be replaced.\N{\rCHT}你說第三帝國所有的敵人都可以取代{\r}
+Dialogue: 0,0:53:28.98,0:53:30.47,ENG,,0,0,0,!Effect,But there is one exception.\N{\rCHT}不過有一個例外{\r}
+Dialogue: 0,0:53:30.72,0:53:33.31,ENG,,0,0,0,!Effect,No one could take your place...\N{\rCHT}沒有人能取代你的位置...{\r}
+Dialogue: 0,0:53:33.49,0:53:36.39,ENG,,0,0,0,!Effect,...if anything unfortunate should occur to you while you were trying to escape.\N{\rCHT}...或防止在你逃走時發生的不幸{\r}
+Dialogue: 0,0:53:36.79,0:53:39.09,ENG,,0,0,0,!Effect,You won't dare to interfere with me here.\N{\rCHT}你不敢在這裡阻擋我{\r}
+Dialogue: 0,0:53:39.26,0:53:40.78,ENG,,0,0,0,!Effect,This is still unoccupied France.\N{\rCHT}這裡仍然是未被佔領的法國{\r}
+Dialogue: 0,0:53:41.29,0:53:44.13,ENG,,0,0,0,!Effect,Any violation of neutrality would reflect on Captain Renault.\N{\rCHT}任何違法的舉動 都會影響雷諾隊長的聲譽{\r}
+Dialogue: 0,0:53:44.30,0:53:46.99,ENG,,0,0,0,!Effect,- Monsieur, insofar as it is in my power.  - Thank you.\N{\rCHT}- 目前為止仍然在我控制之下  - 謝謝{\r}
+Dialogue: 0,0:53:47.17,0:53:51.26,ENG,,0,0,0,!Effect,By the way, monsieur, last night you evinced an interest in Signor Ugarte.\N{\rCHT}對了 先生 昨晚你表示 對尤佳迪先生感興趣{\r}
+Dialogue: 0,0:53:52.90,0:53:55.77,ENG,,0,0,0,!Effect,I believe you have a message for him?\N{\rCHT}我相信你有口信傳給他?{\r}
+Dialogue: 0,0:53:55.94,0:53:58.20,ENG,,0,0,0,!Effect,Nothing important. But may I speak to him now?\N{\rCHT}沒有什麼重要的事 不過我現在可以跟他談話嗎?{\r}
+Dialogue: 0,0:53:58.74,0:54:01.74,ENG,,0,0,0,!Effect,You would find the conversation a trifle one-sided.\N{\rCHT}你會發現談話是單向的{\r}
+Dialogue: 0,0:54:01.95,0:54:03.81,ENG,,0,0,0,!Effect,Signor Ugarte is dead.\N{\rCHT}尤佳迪先生死了{\r}
+Dialogue: 0,0:54:10.42,0:54:11.91,ENG,,0,0,0,!Effect,I'm making out the report now.\N{\rCHT}我正在寫報告{\r}
+Dialogue: 0,0:54:12.09,0:54:14.68,ENG,,0,0,0,!Effect,We haven't quite decided whether he committed suicide...\N{\rCHT}我們還沒決定他到底是自殺...{\r}
+Dialogue: 0,0:54:15.36,0:54:17.23,ENG,,0,0,0,!Effect,...or died trying to escape.\N{\rCHT}...或者企圖逃走時死去{\r}
+Dialogue: 0,0:54:18.86,0:54:21.56,ENG,,0,0,0,!Effect,- Are you quite finished with us?  - For the time being.\N{\rCHT}- 你們問完我們了嗎?  - 暫時是的{\r}
+Dialogue: 0,0:54:21.77,0:54:23.26,ENG,,0,0,0,!Effect,Good day.\N{\rCHT}日安{\r}
+Dialogue: 0,0:54:27.67,0:54:30.30,ENG,,0,0,0,!Effect,Undoubtedly, their next step will be to the black market.\N{\rCHT}毫無疑問 他們下一步是找黑市{\r}
+Dialogue: 0,0:54:30.48,0:54:31.50,ENG,,0,0,0,!Effect,Excuse me, captain.\N{\rCHT}對不起 隊長{\r}
+Dialogue: 0,0:54:31.71,0:54:34.70,ENG,,0,0,0,!Effect,Another visa problem has come up.\N{\rCHT}出現了另一件簽證問題{\r}
+Dialogue: 0,0:54:35.18,0:54:38.08,ENG,,0,0,0,!Effect,- Show her in.  - Yes, sir.\N{\rCHT}- 帶她進來  - 是的 先生{\r}
+Dialogue: 0,0:54:46.76,0:54:49.78,ENG,,0,0,0,!Effect,Sorry, monsieur, we were never to handle the police.\N{\rCHT}對不起 先生 我們應付不了員警{\r}
+Dialogue: 0,0:54:49.96,0:54:52.73,ENG,,0,0,0,!Effect,- This is a job for Signor Ferrari.  - Ferrari?\N{\rCHT}- 這件事找法拉利先生才對  - 法拉利?{\r}
+Dialogue: 0,0:54:52.90,0:54:55.09,ENG,,0,0,0,!Effect,It can be most helpful to know Signor Ferrari.\N{\rCHT}認識法拉利會很有幫助{\r}
+Dialogue: 0,0:54:55.27,0:54:57.89,ENG,,0,0,0,!Effect,He pretty near has a monopoly on the black market here.\N{\rCHT}他獨佔了這裡的黑市買賣{\r}
+Dialogue: 0,0:54:58.10,0:55:00.16,ENG,,0,0,0,!Effect,You will find him at the Blue Parrot.\N{\rCHT}你在那邊的藍鸚鵡可以找到他{\r}
+Dialogue: 0,0:55:00.87,0:55:02.50,ENG,,0,0,0,!Effect,Thanks.\N{\rCHT}謝謝{\r}
+Dialogue: 0,0:55:14.35,0:55:15.75,ENG,,0,0,0,!Effect,Don't be too downearted.\N{\rCHT}不要太灰心{\r}
+Dialogue: 0,0:55:15.95,0:55:18.01,ENG,,0,0,0,!Effect,Perhaps you can come to terms with Renault.\N{\rCHT}或許你可以與雷諾隊長 取得協議{\r}
+Dialogue: 0,0:55:18.19,0:55:19.52,ENG,,0,0,0,!Effect,Thank you very much, signor.\N{\rCHT}謝謝 法拉利{\r}
+Dialogue: 0,0:55:19.69,0:55:22.13,ENG,,0,0,0,!Effect,- Hello, Ferrari.  - Good morning, Rick.\N{\rCHT}-  你好 法拉利  - 早 瑞克  {\r}
+Dialogue: 0,0:55:22.29,0:55:24.45,ENG,,0,0,0,!Effect,The bus is in. I'll take my shipment with me.\N{\rCHT}我看到巴士到了 我把我買的貨一起帶走{\r}
+Dialogue: 0,0:55:24.66,0:55:26.69,ENG,,0,0,0,!Effect,I'll have it sent over. Have a drink with me.\N{\rCHT}別急 我會叫人送去 跟我喝一杯吧{\r}
+Dialogue: 0,0:55:26.87,0:55:28.28,ENG,,0,0,0,!Effect,I never drink in the morning.\N{\rCHT}早上我不喝酒的 {\r}
+Dialogue: 0,0:55:28.28,0:55:31.10,ENG,,0,0,0,!Effect,And every time you send my shipment over it's a little short.\N{\rCHT}每次你送來給我的貨 都短少了一點{\r}
+Dialogue: 0,0:55:31.27,0:55:33.24,ENG,,0,0,0,!Effect,Carrying charges, my boy. Carrying charges.\N{\rCHT}搬運費 我的孩子 搬運費{\r}
+Dialogue: 0,0:55:33.40,0:55:34.70,ENG,,0,0,0,!Effect,Here, sit down.\N{\rCHT}來 坐下{\r}
+Dialogue: 0,0:55:34.91,0:55:37.53,ENG,,0,0,0,!Effect,There is something I want to talk over with you, anyhow.\N{\rCHT}反正我有些事情跟你談{\r}
+Dialogue: 0,0:55:37.71,0:55:39.34,ENG,,0,0,0,!Effect,Bourbon.\N{\rCHT}"波旁" 威士卡{\r}
+Dialogue: 0,0:55:39.61,0:55:41.55,ENG,,0,0,0,!Effect,The news about Ugarte upsets me very much.\N{\rCHT}尤佳迪的新聞使我很不舒服{\r}
+Dialogue: 0,0:55:41.71,0:55:44.91,ENG,,0,0,0,!Effect,You're a fat hypocrite. You don't feel any sorrier for Ugarte than I do.\N{\rCHT}你是個肥腫的虛偽者 尤佳迪的死你不會比我難過多少{\r}
+Dialogue: 0,0:55:45.32,0:55:48.11,ENG,,0,0,0,!Effect,Of course not. What upsets me is that Ugarte is dead...\N{\rCHT}當然不 我難過的是尤佳迪死了...{\r}
+Dialogue: 0,0:55:48.29,0:55:50.31,ENG,,0,0,0,!Effect,...and no one knows where those letters are.\N{\rCHT}...沒有人知道那過境信在那裡{\r}
+Dialogue: 0,0:55:50.49,0:55:51.79,ENG,,0,0,0,!Effect,Practically no one.\N{\rCHT}幾乎沒有人{\r}
+Dialogue: 0,0:55:51.99,0:55:54.25,ENG,,0,0,0,!Effect,If I had those letters, I could make a fortune.\N{\rCHT}如果我得到 肯定可以賺一大筆{\r}
+Dialogue: 0,0:55:54.53,0:55:56.59,ENG,,0,0,0,!Effect,So could I, and I' m a poor businessman.\N{\rCHT}我也可以 我是個貧窮的生意人{\r}
+Dialogue: 0,0:55:56.79,0:55:59.47,ENG,,0,0,0,!Effect,I have a proposition for whoever has those letters.\N{\rCHT}不管在誰手上我給他一個建議 {\r}
+Dialogue: 0,0:55:59.47,0:56:00.63,ENG,,0,0,0,!Effect,I' II handle the entire transaction.\N{\rCHT}我來安排交易{\r}
+Dialogue: 0,0:56:00.80,0:56:03.67,ENG,,0,0,0,!Effect,Get rid of the letters, take all the risk, for a small percentage.\N{\rCHT}承擔一切風險把信賣出 抽少部分利潤{\r}
+Dialogue: 0,0:56:03.87,0:56:05.36,ENG,,0,0,0,!Effect,And the carrying charges?\N{\rCHT}以及搬運費?{\r}
+Dialogue: 0,0:56:05.54,0:56:08.30,ENG,,0,0,0,!Effect,Naturally there will be a few incidental expenses.\N{\rCHT}自然會有一些意外支出{\r}
+Dialogue: 0,0:56:09.01,0:56:11.41,ENG,,0,0,0,!Effect,That's my proposition for whoever has those letters.\N{\rCHT}這是我對持有信函的人提議{\r}
+Dialogue: 0,0:56:11.58,0:56:13.13,ENG,,0,0,0,!Effect,I'll tell him when he comes in.\N{\rCHT}他出現時我會告訴他{\r}
+Dialogue: 0,0:56:13.31,0:56:15.94,ENG,,0,0,0,!Effect,Rick, I think you know where those letters are.\N{\rCHT}瑞克 我開門見山跟你說 我認為你知道那些信在那裡{\r}
+Dialogue: 0,0:56:16.21,0:56:19.41,ENG,,0,0,0,!Effect,You're in good company. Renault and Strasser probably think so too.\N{\rCHT}你有伴了 雷諾和史查沙大概也這樣想{\r}
+Dialogue: 0,0:56:25.12,0:56:28.15,ENG,,0,0,0,!Effect,That's why I came here. To give them a chance to ransack my place.\N{\rCHT}所以我才到這裡 給他們機會搜索我的店{\r}
+Dialogue: 0,0:56:28.33,0:56:31.66,ENG,,0,0,0,!Effect,Rick, don't be a fool. Take me into your confidence. You need a partner.\N{\rCHT}瑞克 別傻了 跟我說實話 你需要一個合夥人{\r}
+Dialogue: 0,0:56:31.83,0:56:33.76,ENG,,0,0,0,!Effect,Excuse me, I' II be getting back.\N{\rCHT}失陪 我要回去了{\r}
+Dialogue: 0,0:56:37.37,0:56:41.10,ENG,,0,0,0,!Effect,- Morning.  - Signor Ferrari is the fat gent at the table.\N{\rCHT}- 早  - 法拉利先生是那邊桌子的肥仔{\r}
+Dialogue: 0,0:56:45.78,0:56:48.41,ENG,,0,0,0,!Effect,You will not find a treasure like this in all Morocco.\N{\rCHT}在全摩洛哥 你也找不到這麼珍貴的東西{\r}
+Dialogue: 0,0:56:48.61,0:56:49.91,ENG,,0,0,0,!Effect,Only 700 francs.\N{\rCHT}只要七百法郞{\r}
+Dialogue: 0,0:56:50.11,0:56:53.28,ENG,,0,0,0,!Effect,- You're being cheated.  - Doesrt matter, thank you.\N{\rCHT}- 你被騙了  - 沒關係 謝謝{\r}
+Dialogue: 0,0:56:53.45,0:56:56.58,ENG,,0,0,0,!Effect,For friends of Rick's we have a small discount.\N{\rCHT}女士是瑞克的朋友 瑞克的朋友我們給一點折扣{\r}
+Dialogue: 0,0:56:56.79,0:56:59.31,ENG,,0,0,0,!Effect,Did I say 700 francs? You can have it for 200.\N{\rCHT}我剛才說七百法郞嗎? 兩百法郞賣給你{\r}
+Dialogue: 0,0:56:59.49,0:57:03.15,ENG,,0,0,0,!Effect,I'm sorry I was in no condition to receive you when you called on me last night.\N{\rCHT}對不起 昨晚你來拜訪時 我正處於不適合待客的狀態{\r}
+Dialogue: 0,0:57:03.33,0:57:04.32,ENG,,0,0,0,!Effect,Doesrt matter.\N{\rCHT}沒關係 瑞克的特別朋友{\r}
+Dialogue: 0,0:57:04.50,0:57:08.43,ENG,,0,0,0,!Effect,For special friends of Rick's we have a special discount. 100 francs.\N{\rCHT}我們有特別的折扣 一百法郞{\r}
+Dialogue: 0,0:57:08.60,0:57:11.63,ENG,,0,0,0,!Effect,Your story had me a little confused. Or maybe it was the bourbon.\N{\rCHT}那故事把我弄糊塗了 或者是喝多了"波旁" 吧{\r}
+Dialogue: 0,0:57:11.84,0:57:13.43,ENG,,0,0,0,!Effect,I have some tablecloths, napkins...\N{\rCHT}我有些桌巾 一些餐巾...{\r}
+Dialogue: 0,0:57:13.61,0:57:16.30,ENG,,0,0,0,!Effect,- Thank you. I' m really not interested.  - Please, one minute.\N{\rCHT}- 謝謝 我真的不感興趣  - 請等一會兒{\r}
+Dialogue: 0,0:57:16.47,0:57:20.10,ENG,,0,0,0,!Effect,Why did you come back? To tell me why you ran out on me at the railway station?\N{\rCHT}為什麼你要回來呢? 為了告訴我你為何叫我在火車站白等?{\r}
+Dialogue: 0,0:57:20.28,0:57:21.30,ENG,,0,0,0,!Effect,Yes.\N{\rCHT}對{\r}
+Dialogue: 0,0:57:21.48,0:57:23.85,ENG,,0,0,0,!Effect,Well, you can tell me now. I'm reasonably sober.\N{\rCHT}你現在可以告訴我 我比較清醒了{\r}
+Dialogue: 0,0:57:24.08,0:57:25.61,ENG,,0,0,0,!Effect,I don't think I will, Rick.\N{\rCHT}我想我不會說了 瑞克{\r}
+Dialogue: 0,0:57:25.78,0:57:28.58,ENG,,0,0,0,!Effect,Why not? After all, I got stuck with a railway ticket.\N{\rCHT}為何不 我買了火車票進退兩難 {\r}
+Dialogue: 0,0:57:28.58,0:57:30.08,ENG,,0,0,0,!Effect,I think I' m entitled to know.\N{\rCHT}我想我有權利知道{\r}
+Dialogue: 0,0:57:30.26,0:57:32.45,ENG,,0,0,0,!Effect,Last night I saw what has happened to you.\N{\rCHT}昨晚我看到在你身上 發生了什麼{\r}
+Dialogue: 0,0:57:33.12,0:57:36.36,ENG,,0,0,0,!Effect,The Rick I knew in Paris, I could tell him, he'd understand.\N{\rCHT}在巴黎的瑞克 我可以告訴他 他能夠明白{\r}
+Dialogue: 0,0:57:36.53,0:57:39.09,ENG,,0,0,0,!Effect,But the one who looked at me with such hatred...\N{\rCHT}可是用那種怨恨眼光看我的人...{\r}
+Dialogue: 0,0:57:40.63,0:57:43.66,ENG,,0,0,0,!Effect,I'll be leaving Casablanca soon. We'll never see each other again.\N{\rCHT}我很快會離開卡薩蘭加 我們永遠不會再見面了{\r}
+Dialogue: 0,0:57:44.80,0:57:48.86,ENG,,0,0,0,!Effect,We knew very little about each other when we were in love in Paris.\N{\rCHT}我們在巴黎相愛的時候 我們彼此瞭解並不多{\r}
+Dialogue: 0,0:57:49.04,0:57:53.84,ENG,,0,0,0,!Effect,If we leave it that way, maybe we'll remember those days and not Casablanca.\N{\rCHT}如果我們維持那樣 或許我們會記住那些日子 而不是卡薩布蘭卡{\r}
+Dialogue: 0,0:57:54.31,0:57:55.44,ENG,,0,0,0,!Effect,Not last night.\N{\rCHT}不是昨晚{\r}
+Dialogue: 0,0:57:56.11,0:57:59.35,ENG,,0,0,0,!Effect,Did you run out on me because you knew what it would be like?\N{\rCHT}你舍我而去 因為你知道將會是什麼樣子?{\r}
+Dialogue: 0,0:57:59.52,0:58:02.42,ENG,,0,0,0,!Effect,Hiding from the police, running away all the time?\N{\rCHT}逃避員警 無時無刻不在逃亡?{\r}
+Dialogue: 0,0:58:02.59,0:58:04.28,ENG,,0,0,0,!Effect,You can believe that if you want to.\N{\rCHT}如果你要相信是那樣隨便你{\r}
+Dialogue: 0,0:58:04.49,0:58:07.22,ENG,,0,0,0,!Effect,Well, I' m not running away anymore. I'm settled now.\N{\rCHT}我已不再逃亡了 我安定下來了{\r}
+Dialogue: 0,0:58:07.39,0:58:09.19,ENG,,0,0,0,!Effect,Above a saloon, it's true...\N{\rCHT}雖然是酒館 不過是事實...{\r}
+Dialogue: 0,0:58:09.39,0:58:10.83,ENG,,0,0,0,!Effect,...but walk up a flight...\N{\rCHT}...要上飛機的話...{\r}
+Dialogue: 0,0:58:11.00,0:58:12.72,ENG,,0,0,0,!Effect,...I' II be expecting you.\N{\rCHT}...我會算你一份{\r}
+Dialogue: 0,0:58:14.80,0:58:17.60,ENG,,0,0,0,!Effect,All the same, someday you'll lie to Laszlo.\N{\rCHT}都一樣 有一天你會對拉斯路撒謊{\r}
+Dialogue: 0,0:58:17.77,0:58:19.50,ENG,,0,0,0,!Effect,You'll be there.\N{\rCHT}你會去的{\r}
+Dialogue: 0,0:58:21.04,0:58:22.06,ENG,,0,0,0,!Effect,No, Rick.\N{\rCHT}不 瑞克{\r}
+Dialogue: 0,0:58:23.47,0:58:25.74,ENG,,0,0,0,!Effect,No. You see, Victor Laszlo is my husband.\N{\rCHT}不 維朵拉斯路是我的丈夫{\r}
+Dialogue: 0,0:58:26.78,0:58:30.34,ENG,,0,0,0,!Effect,And was, even when I knew you in Paris.\N{\rCHT}以前也是 甚至我在巴黎認識你之前也是{\r}
+Dialogue: 0,0:58:34.92,0:58:39.48,ENG,,0,0,0,!Effect,I was just telling Monsieur Laszlo that unfortunately I' m not able to help him.\N{\rCHT}我剛才正跟拉斯路先生說 很不幸我無法幫助你們{\r}
+Dialogue: 0,0:58:39.66,0:58:41.56,ENG,,0,0,0,!Effect,You see, my dear, word has gone around.\N{\rCHT}是這樣的 親愛的 話已傳開了{\r}
+Dialogue: 0,0:58:41.76,0:58:44.46,ENG,,0,0,0,!Effect,As leader of all illegal activities in Casablanca,\N{\rCHT}身為卡薩布蘭卡 所有非法活動的領導人 {\r}
+Dialogue: 0,0:58:44.46,0:58:46.32,ENG,,0,0,0,!Effect,I am influential and respected.\N{\rCHT}我是個有影響力和受尊重的人{\r}
+Dialogue: 0,0:58:46.50,0:58:49.93,ENG,,0,0,0,!Effect,But it would not be won'th my life to do anything for Monsieur Laszlo.\N{\rCHT}替拉斯路先生做任何事 要冒生命危險並不值得{\r}
+Dialogue: 0,0:58:50.10,0:58:51.93,ENG,,0,0,0,!Effect,You, however, are a different matter.\N{\rCHT}不過你 卻是另一回事{\r}
+Dialogue: 0,0:58:52.37,0:58:56.74,ENG,,0,0,0,!Effect,Signor Ferrari thinks it might just be possible to get an exit visa for you.\N{\rCHT}法拉利先生認為有可能 替你拿到一份簽證{\r}
+Dialogue: 0,0:58:57.18,0:59:00.30,ENG,,0,0,0,!Effect,- You mean for me to go on alone?  - And only alone.\N{\rCHT}- 你是說讓我單獨離開?  - 只能單獨一人{\r}
+Dialogue: 0,0:59:00.51,0:59:03.78,ENG,,0,0,0,!Effect,I'll stay here and keep on trying. I'm sure in a little while...\N{\rCHT}我會留在這裡繼續想辦法 我肯定再過一陣子...{\r}
+Dialogue: 0,0:59:03.95,0:59:05.75,ENG,,0,0,0,!Effect,Might as well be frank, monsieur.\N{\rCHT}我還是坦白一點好 先生{\r}
+Dialogue: 0,0:59:05.92,0:59:09.38,ENG,,0,0,0,!Effect,It would take a miracle to get you out. The Germans have outlawed miracles.\N{\rCHT}需要奇跡 你才可能離開卡薩布蘭卡 德國人是剝奪奇跡的歹徒{\r}
+Dialogue: 0,0:59:09.85,0:59:11.98,ENG,,0,0,0,!Effect,We are only interested in two visas.\N{\rCHT}我們只對兩位簽證感興趣 先生{\r}
+Dialogue: 0,0:59:12.16,0:59:14.42,ENG,,0,0,0,!Effect,- Please, llsa, don't be hasty.  - No, Victor.\N{\rCHT}- 拜託 伊莎 不要急躁  - 不 維多{\r}
+Dialogue: 0,0:59:14.76,0:59:16.85,ENG,,0,0,0,!Effect,You two will want to discuss this.\N{\rCHT}你們兩位會想討論這件事{\r}
+Dialogue: 0,0:59:17.03,0:59:19.00,ENG,,0,0,0,!Effect,Excuse me. I' II be at the bar.\N{\rCHT}失陪 我會在酒吧{\r}
+Dialogue: 0,0:59:22.87,0:59:24.66,ENG,,0,0,0,!Effect,No, llsa. I won't let you stay here.\N{\rCHT}不 伊莎 我不能讓你留在這裡{\r}
+Dialogue: 0,0:59:24.84,0:59:28.20,ENG,,0,0,0,!Effect,You must get to America. Believe me, somehow I will get out and join you.\N{\rCHT}你必須到美國去 我相信我終會逃出 跟你會合{\r}
+Dialogue: 0,0:59:28.44,0:59:30.24,ENG,,0,0,0,!Effect,But if the situation were different...\N{\rCHT}維多 情況不一樣...{\r}
+Dialogue: 0,0:59:30.41,0:59:32.97,ENG,,0,0,0,!Effect,...if I had to stay and there were only visa for one...\N{\rCHT}...如果我必須留下 只有一份簽證...{\r}
+Dialogue: 0,0:59:33.14,0:59:34.44,ENG,,0,0,0,!Effect,...would you take it?\N{\rCHT}...你會要嗎?{\r}
+Dialogue: 0,0:59:35.65,0:59:36.74,ENG,,0,0,0,!Effect,Yes, I would.\N{\rCHT}對 我會{\r}
+Dialogue: 0,0:59:37.95,0:59:39.14,ENG,,0,0,0,!Effect,Yes, I see.\N{\rCHT}對 我明白{\r}
+Dialogue: 0,0:59:40.32,0:59:44.22,ENG,,0,0,0,!Effect,When I had trouble getting out of Lille, why didn't you leave me there?\N{\rCHT}當要離開"流爾" 我遇上麻煩時 你為什麼不把我留在那兒?{\r}
+Dialogue: 0,0:59:44.39,0:59:46.54,ENG,,0,0,0,!Effect,When I was sick in Marseilles for two weeks\N{\rCHT}當我在馬賽生病時 耽擱你兩個星期 {\r}
+Dialogue: 0,0:59:46.54,0:59:48.45,ENG,,0,0,0,!Effect,and you were in danger every minute...\N{\rCHT}你無時無刻不冒著生命危險...{\r}
+Dialogue: 0,0:59:48.63,0:59:50.42,ENG,,0,0,0,!Effect,...why didn't you leave me then?\N{\rCHT}...那時候你為什麼不留下我?{\r}
+Dialogue: 0,0:59:51.73,0:59:54.22,ENG,,0,0,0,!Effect,I meant to, but something always held me up.\N{\rCHT}我本來要 總是有些東西阻止我{\r}
+Dialogue: 0,0:59:56.70,0:59:58.17,ENG,,0,0,0,!Effect,I love you very much, llsa.\N{\rCHT}我非常愛你 伊莎{\r}
+Dialogue: 0,0:59:59.37,1:00:01.46,ENG,,0,0,0,!Effect,Your secret will be safe with me.\N{\rCHT}我會保守你的秘密{\r}
+Dialogue: 0,1:00:02.54,1:00:04.63,ENG,,0,0,0,!Effect,Ferrari is waiting for our answer.\N{\rCHT}法拉利在等我們的答案{\r}
+Dialogue: 0,1:00:04.81,1:00:07.14,ENG,,0,0,0,!Effect,Not more than 50 francs.\N{\rCHT}不能超過五十法郞{\r}
+Dialogue: 0,1:00:11.88,1:00:13.68,ENG,,0,0,0,!Effect,We've decided, Signor Ferrari.\N{\rCHT}我們已經決定了 法拉利先生{\r}
+Dialogue: 0,1:00:13.85,1:00:17.22,ENG,,0,0,0,!Effect,For the present we will go on looking for two visas. Thank you very much.\N{\rCHT}從現在起我們只尋求兩份簽證 非常感謝你{\r}
+Dialogue: 0,1:00:17.39,1:00:19.36,ENG,,0,0,0,!Effect,Well, good luck, but be careful.\N{\rCHT}祝你好運 務必小心{\r}
+Dialogue: 0,1:00:19.52,1:00:22.36,ENG,,0,0,0,!Effect,- You know you're being shadowed?  - Of course. It becomes an instinct.\N{\rCHT}- 你知道你被跟蹤嗎?  - 當然 已經習以為常{\r}
+Dialogue: 0,1:00:22.69,1:00:25.72,ENG,,0,0,0,!Effect,I observe that you, in one respect, are a very fortunate man.\N{\rCHT}我發現在某方面來說 你是個幸運的人 先生{\r}
+Dialogue: 0,1:00:25.93,1:00:28.63,ENG,,0,0,0,!Effect,I am moved to make one more suggestion. Why, I do not know.\N{\rCHT}我覺得想再給你一個建議 為了什麼我也不知道{\r}
+Dialogue: 0,1:00:28.80,1:00:30.70,ENG,,0,0,0,!Effect,Because it cannot possibly profit me.\N{\rCHT}因為你不可能給我好處{\r}
+Dialogue: 0,1:00:30.90,1:00:34.07,ENG,,0,0,0,!Effect,Have you heard about Ugarte and the letters of transit?\N{\rCHT}你有聽聞尤佳迪先生 和過境信嗎?{\r}
+Dialogue: 0,1:00:34.24,1:00:35.23,ENG,,0,0,0,!Effect,Yes, something.\N{\rCHT}是 一點點{\r}
+Dialogue: 0,1:00:35.41,1:00:38.60,ENG,,0,0,0,!Effect,Those letters were not found on Ugarte when they arrested him.\N{\rCHT}他們逮捕尤佳迪時 沒有在他身上找到那些信{\r}
+Dialogue: 0,1:00:38.78,1:00:40.77,ENG,,0,0,0,!Effect,- You know where they are?  - Not for sure.\N{\rCHT}- 你知道信在那裡嗎?  - 不確定{\r}
+Dialogue: 0,1:00:40.98,1:00:44.00,ENG,,0,0,0,!Effect,But I' d guess that Ugarte left those letters with Monsieur Rick.\N{\rCHT}不過我猜尤佳迪 把信留給瑞克先生{\r}
+Dialogue: 0,1:00:45.92,1:00:49.11,ENG,,0,0,0,!Effect,A difficult customer, that Rick. One never knows what he'll do or why.\N{\rCHT}那瑞克有難以理解的習慣 沒有人知道 他會做什麼及為什麼{\r}
+Dialogue: 0,1:00:49.32,1:00:50.95,ENG,,0,0,0,!Effect,But it is won'th a chance.\N{\rCHT}不過值得試一試{\r}
+Dialogue: 0,1:00:51.52,1:00:54.32,ENG,,0,0,0,!Effect,Thank you very much. Good day.\N{\rCHT}非常感謝你 日安{\r}
+Dialogue: 0,1:00:54.56,1:00:56.06,ENG,,0,0,0,!Effect,Goodbye. Thank you for your coffee.\N{\rCHT}再見 謝謝你的咖啡 先生 {\r}
+Dialogue: 0,1:00:56.06,1:00:58.26,ENG,,0,0,0,!Effect,I shall miss that when we leave Casablanca.\N{\rCHT}我們離開卡薩布蘭卡後 我將會懷念那咖啡{\r}
+Dialogue: 0,1:00:58.43,1:01:01.30,ENG,,0,0,0,!Effect,Gracious of you to share it with me. Good day, mademoiselle.\N{\rCHT}請你跟我分享 日安 小姐{\r}
+Dialogue: 0,1:01:01.47,1:01:03.90,ENG,,0,0,0,!Effect,- Monsieur.  - Good day.\N{\rCHT}- 先生  - 日安{\r}
+Dialogue: 0,1:01:13.31,1:01:14.94,ENG,,0,0,0,!Effect,- Here's to you, sir.  - Good luck.\N{\rCHT}- 敬你 先生  - 祝好運{\r}
+Dialogue: 0,1:01:15.45,1:01:17.28,ENG,,0,0,0,!Effect,- I' d better be going.  - My check, please.\N{\rCHT}- 我要走了  - 請給我帳單{\r}
+Dialogue: 0,1:01:17.48,1:01:21.21,ENG,,0,0,0,!Effect,I have to warn you, sir. This is a dangerous place. Full of vultures.\N{\rCHT}我必須警告你 先生 這是個危險的地方 很多貪心的人{\r}
+Dialogue: 0,1:01:21.42,1:01:24.25,ENG,,0,0,0,!Effect,- Vultures everywhere. Thanks for everything.  - Goodbye.\N{\rCHT}- 到處是貪心的人 謝謝  - 再見{\r}
+Dialogue: 0,1:01:24.42,1:01:26.05,ENG,,0,0,0,!Effect,It has been a pleasure to meet you.\N{\rCHT}很榮幸認識你{\r}
+Dialogue: 0,1:01:26.22,1:01:27.89,ENG,,0,0,0,!Effect,I'm sorry.\N{\rCHT}對不起{\r}
+Dialogue: 0,1:01:43.74,1:01:47.44,ENG,,0,0,0,!Effect,Monsieur Rick, you are getting to be your best customer.\N{\rCHT}瑞克先生 你快成為自己最好的顧客了{\r}
+Dialogue: 0,1:01:49.48,1:01:51.85,ENG,,0,0,0,!Effect,Well, drinking. I'm very pleased with you.\N{\rCHT}在喝酒 你使我很高興{\r}
+Dialogue: 0,1:01:52.02,1:01:53.92,ENG,,0,0,0,!Effect,You're beginning to live like a Frenchman.\N{\rCHT}你現在開始 像法國人那樣生活了{\r}
+Dialogue: 0,1:01:54.12,1:01:56.45,ENG,,0,0,0,!Effect,That was some going-over your men gave my place.\N{\rCHT}你的手下今天下午 來攪亂我的店{\r}
+Dialogue: 0,1:01:56.62,1:01:58.61,ENG,,0,0,0,!Effect,We barely got cleaned up in time to open.\N{\rCHT}我們差點來不及清理開門營業{\r}
+Dialogue: 0,1:01:58.79,1:02:01.05,ENG,,0,0,0,!Effect,I told Strasser he wouldn't find the letters here.\N{\rCHT}我告訴過史查沙休不會在這裡 找到那些信{\r}
+Dialogue: 0,1:02:01.23,1:02:03.35,ENG,,0,0,0,!Effect,But I told my men to be especially destructive.\N{\rCHT}不過我告訴我的手下 要格外有破壞力{\r}
+Dialogue: 0,1:02:03.53,1:02:05.46,ENG,,0,0,0,!Effect,You know how that impresses Germans.\N{\rCHT}你知道那可叫德國人刮目相看{\r}
+Dialogue: 0,1:02:06.80,1:02:09.10,ENG,,0,0,0,!Effect,Rick, have you got those letters of transit?\N{\rCHT}瑞克 你有那些過境信嗎?{\r}
+Dialogue: 0,1:02:09.47,1:02:11.56,ENG,,0,0,0,!Effect,Louis, are you Pro-Vichy or Free French?\N{\rCHT}你是傾向親德還是自由法國?{\r}
+Dialogue: 0,1:02:12.20,1:02:16.66,ENG,,0,0,0,!Effect,Serves me right for asking a direct question. The subject is closed.\N{\rCHT}我活該 問這直接的問題 這話題結束{\r}
+Dialogue: 0,1:02:17.17,1:02:19.44,ENG,,0,0,0,!Effect,It looks like you're a little late.\N{\rCHT}似乎你晚了一步{\r}
+Dialogue: 0,1:02:26.75,1:02:28.41,ENG,,0,0,0,!Effect,So Yvonne's gone over to the enemy.\N{\rCHT}原來伊娃向敵人投誠了{\r}
+Dialogue: 0,1:02:28.59,1:02:32.35,ENG,,0,0,0,!Effect,Who knows? In her own way, she may constitute an entire second front.\N{\rCHT}誰知道? 以她自己的方法 她可能組織第二條前線{\r}
+Dialogue: 0,1:02:32.76,1:02:36.25,ENG,,0,0,0,!Effect,I think it's time for me to flatter Strasser a little. I' II see you later.\N{\rCHT}我想我該去 奉承一下史查沙少校 回頭見{\r}
+Dialogue: 0,1:02:37.09,1:02:38.53,ENG,,0,0,0,!Effect,Sascha!\N{\rCHT}沙克!{\r}
+Dialogue: 0,1:02:38.70,1:02:39.72,ENG,,0,0,0,!Effect,French 75s.\N{\rCHT}法國七十五{\r}
+Dialogue: 0,1:02:39.93,1:02:43.59,ENG,,0,0,0,!Effect,Put up a whole row of them, Sascha. Starting here and ending here.\N{\rCHT}我們要一整排 沙克 從這裡開始 到這裡結束{\r}
+Dialogue: 0,1:02:43.77,1:02:45.10,ENG,,0,0,0,!Effect,We will begin with two.\N{\rCHT}我們從兩杯開始{\r}
+Dialogue: 0,1:02:45.10,1:02:46.50,CHT,,0,0,0,!Effect,{\fs22}『法語:你不是法國人嗎? 竟然跟這種德國人約會』{\r}
+Dialogue: 0,1:02:46.70,1:02:48.10,CHT,,0,0,0,!Effect,{\fs22}『法語:關你什麼事』{\r}
+Dialogue: 0,1:02:54.18,1:02:56.37,ENG,,0,0,0,!Effect,What did you say? Would you kindly repeat it?\N{\rCHT}你說什麼? 麻煩你再說一次?{\r}
+Dialogue: 0,1:02:56.58,1:02:59.95,ENG,,0,0,0,!Effect,- What I said is none of your business.  - I' II make it my business.\N{\rCHT}- 我說什麼與你無關  - 我會使它變成跟我有關{\r}
+Dialogue: 0,1:03:00.55,1:03:04.05,CHT,,0,0,0,!Effect,{\fs22}『法語:停手 求求你 求求你停手』{\r}
+Dialogue: 0,1:03:06.12,1:03:09.79,ENG,,0,0,0,!Effect,I don't like disturbances in my place. Either lay off politics or get out.\N{\rCHT}我不喜歡人家在我的店亂來 不拋開政治就滾出去{\r}
+Dialogue: 0,1:03:11.19,1:03:13.59,CHT,,0,0,0,!Effect,{\fs22}『法語:有一天 你會得到報應的』{\r}
+Dialogue: 0,1:03:14.17,1:03:15.72,ENG,,0,0,0,!Effect,You see, captain?\N{\rCHT}你看到了吧 隊長?{\r}
+Dialogue: 0,1:03:15.97,1:03:18.37,ENG,,0,0,0,!Effect,The situation is not as under control as you believe.\N{\rCHT}情況並不如你想像的那麼穩定{\r}
+Dialogue: 0,1:03:18.57,1:03:20.43,ENG,,0,0,0,!Effect,We try to cooperate with your government.\N{\rCHT}親愛的少校 我們正儘量跟貴政府合作{\r}
+Dialogue: 0,1:03:20.64,1:03:22.90,ENG,,0,0,0,!Effect,But we cannot regulate the feelings of our people.\N{\rCHT}我們無法規定人民的感受{\r}
+Dialogue: 0,1:03:23.07,1:03:25.24,ENG,,0,0,0,!Effect,Captain, are you certain which side you're on?\N{\rCHT}隊長 你完全肯定你幫那一邊嗎?{\r}
+Dialogue: 0,1:03:25.54,1:03:27.70,ENG,,0,0,0,!Effect,I have no conviction, if that's what you mean.\N{\rCHT}我沒有信念 如果你指這一方面{\r}
+Dialogue: 0,1:03:27.91,1:03:29.21,ENG,,0,0,0,!Effect,I blow with the wind...\N{\rCHT}我看風轉舵 目前的風向...{\r}
+Dialogue: 0,1:03:29.38,1:03:31.78,ENG,,0,0,0,!Effect,...and the prevailing wind happens to be from Vichy.\N{\rCHT}...正巧從維琪(親德)吹來{\r}
+Dialogue: 0,1:03:31.98,1:03:33.68,ENG,,0,0,0,!Effect,And if it should change?\N{\rCHT}如果風向改了呢?{\r}
+Dialogue: 0,1:03:33.95,1:03:36.11,ENG,,0,0,0,!Effect,Surely the Reich doesn't admit that possibility?\N{\rCHT}我肯定 帝國不會承認那種可能性?{\r}
+Dialogue: 0,1:03:36.29,1:03:38.38,ENG,,0,0,0,!Effect,We are concerned about more than Casablanca.\N{\rCHT}我們關心的不只是卡薩布蘭卡{\r}
+Dialogue: 0,1:03:38.59,1:03:41.99,ENG,,0,0,0,!Effect,We know that every French province in Africa is honeycombed with traitors.\N{\rCHT}我們知道 每個在非洲的法國管區都佈滿了叛徒{\r}
+Dialogue: 0,1:03:42.49,1:03:45.19,ENG,,0,0,0,!Effect,Waiting for their chance. Waiting perhaps for a leader.\N{\rCHT}正在等候機會 或許在等候一位領導人{\r}
+Dialogue: 0,1:03:45.36,1:03:46.92,ENG,,0,0,0,!Effect,Aleader? Like Laszlo?\N{\rCHT}領導人? 像拉斯路?{\r}
+Dialogue: 0,1:03:47.57,1:03:48.90,ENG,,0,0,0,!Effect,I have been thinking.\N{\rCHT}我一直在想{\r}
+Dialogue: 0,1:03:49.23,1:03:52.53,ENG,,0,0,0,!Effect,It's too dangerous to let him go, it may be too dangerous to let him stay.\N{\rCHT}讓他離開太危險 但讓他留下也可能太危險{\r}
+Dialogue: 0,1:03:52.70,1:03:53.69,ENG,,0,0,0,!Effect,I see what you mean.\N{\rCHT}我明白你的意思{\r}
+Dialogue: 0,1:03:59.61,1:04:01.48,ENG,,0,0,0,!Effect,Thank you, Carl.\N{\rCHT}謝謝 卡爾{\r}
+Dialogue: 0,1:04:01.68,1:04:03.91,ENG,,0,0,0,!Effect,Thank you, Carl.\N{\rCHT}謝謝 卡爾{\r}
+Dialogue: 0,1:04:04.12,1:04:06.05,ENG,,0,0,0,!Effect,Sit down. Have a brandy with us.\N{\rCHT}卡爾 坐下 跟我們喝杯白蘭地{\r}
+Dialogue: 0,1:04:06.38,1:04:08.82,ENG,,0,0,0,!Effect,To celebrate our leaving for America tomorrow.\N{\rCHT}慶祝我們明天到美國去{\r}
+Dialogue: 0,1:04:08.99,1:04:10.08,ENG,,0,0,0,!Effect,Thank you very much.\N{\rCHT}非常謝謝{\r}
+Dialogue: 0,1:04:10.29,1:04:13.02,ENG,,0,0,0,!Effect,I thought you would ask me, so I brought the good brandy...\N{\rCHT}我早想到你會請我喝 所以我拿了上等的白蘭地...{\r}
+Dialogue: 0,1:04:13.22,1:04:15.06,ENG,,0,0,0,!Effect,...and a third glass.\N{\rCHT}...還有高腳杯{\r}
+Dialogue: 0,1:04:15.23,1:04:17.22,ENG,,0,0,0,!Effect,At last the day's came!\N{\rCHT}終於 這一天到來了!{\r}
+Dialogue: 0,1:04:17.40,1:04:20.23,ENG,,0,0,0,!Effect,Frau Leuchtag and I are speaking nothing but English now.\N{\rCHT}從現在起我們只說英文{\r}
+Dialogue: 0,1:04:20.40,1:04:23.27,ENG,,0,0,0,!Effect,So we should feel at home when we get to America.\N{\rCHT}這樣我們到美國後 會感覺像回到家一樣{\r}
+Dialogue: 0,1:04:23.43,1:04:25.10,ENG,,0,0,0,!Effect,A very nice idea.\N{\rCHT}很不錯的主意{\r}
+Dialogue: 0,1:04:25.44,1:04:26.66,ENG,,0,0,0,!Effect,To America.\N{\rCHT}為美國喝一杯{\r}
+Dialogue: 0,1:04:27.44,1:04:28.43,ENG,,0,0,0,!Effect,To America.\N{\rCHT}為美國喝一杯{\r}
+Dialogue: 0,1:04:36.01,1:04:37.41,ENG,,0,0,0,!Effect,What watch?\N{\rCHT}幾點了?{\r}
+Dialogue: 0,1:04:38.28,1:04:41.27,ENG,,0,0,0,!Effect,- Ten watch.  - Such much?\N{\rCHT}- 十點  - 這麼晚了?{\r}
+Dialogue: 0,1:04:42.92,1:04:45.25,ENG,,0,0,0,!Effect,You will get along beautifully in America.\N{\rCHT}你們會在美國過得非常愉快{\r}
+Dialogue: 0,1:04:46.26,1:04:48.02,ENG,,0,0,0,!Effect,How is lady luck treating you?\N{\rCHT}幸運女神有沒有照顧你?{\r}
+Dialogue: 0,1:04:48.23,1:04:50.06,ENG,,0,0,0,!Effect,Oh, too bad.\N{\rCHT}真可惜{\r}
+Dialogue: 0,1:04:50.39,1:04:52.26,ENG,,0,0,0,!Effect,You'll find him over there.\N{\rCHT}他就在那邊{\r}
+Dialogue: 0,1:04:58.50,1:05:00.03,ENG,,0,0,0,!Effect,- Monsieur Rick?  - Yes?\N{\rCHT}- 瑞克先生  - 是?{\r}
+Dialogue: 0,1:05:00.20,1:05:03.44,ENG,,0,0,0,!Effect,- Could I speak to you, please?  - How'd you get in here? You're underage.\N{\rCHT}- 我可否跟你說幾句話  - 你怎麼進來的? 你還未成年{\r}
+Dialogue: 0,1:05:03.61,1:05:05.94,ENG,,0,0,0,!Effect,- I came with Captain Renault.  - I should have known.\N{\rCHT}- 我跟雷諾隊長一起來的  - 我早該猜到{\r}
+Dialogue: 0,1:05:06.11,1:05:07.44,ENG,,0,0,0,!Effect,My husband is with me too.\N{\rCHT}我的丈夫也跟我一起{\r}
+Dialogue: 0,1:05:07.65,1:05:10.38,ENG,,0,0,0,!Effect,He is? Captain Renault 's getting broad-minded. Sit down.\N{\rCHT}是嗎? 雷諾隊長思想越來開明 坐下{\r}
+Dialogue: 0,1:05:10.55,1:05:11.54,ENG,,0,0,0,!Effect,Have a drink?\N{\rCHT}要喝一杯嗎?{\r}
+Dialogue: 0,1:05:11.72,1:05:14.41,ENG,,0,0,0,!Effect,No, of course not. You mind if I do?\N{\rCHT}不 當然不喝 你介意我喝嗎?{\r}
+Dialogue: 0,1:05:15.02,1:05:16.08,ENG,,0,0,0,!Effect,Monsieur Rick...\N{\rCHT}瑞克先生...{\r}
+Dialogue: 0,1:05:16.79,1:05:20.38,ENG,,0,0,0,!Effect,...what kind of a man is Captain Renault? Like any other man, only more so.\N{\rCHT}...雷諾隊長是怎樣的人? 就像其他的男人 或者更像{\r}
+Dialogue: 0,1:05:20.56,1:05:21.55,ENG,,0,0,0,!Effect,No, I mean...\N{\rCHT}不 我是說...{\r}
+Dialogue: 0,1:05:21.89,1:05:23.55,ENG,,0,0,0,!Effect,...is he trustwon'thy? Is his word...?\N{\rCHT}...他值得信任嗎? 他的話...?{\r}
+Dialogue: 0,1:05:23.93,1:05:27.86,ENG,,0,0,0,!Effect,- Just a minute. Who told you to ask me that?  - He did. Captain Renault did.\N{\rCHT}- 等一下 誰叫你來問我的?  - 他叫我的 雷諾隊長{\r}
+Dialogue: 0,1:05:28.03,1:05:30.09,ENG,,0,0,0,!Effect,I thought so. Where's your husband?\N{\rCHT}我也猜到 你的丈夫呢?{\r}
+Dialogue: 0,1:05:30.37,1:05:34.63,ENG,,0,0,0,!Effect,At the roulette table, trying to win enough for our exit visas.\N{\rCHT}在輪盤桌那邊 想要贏足夠的錢 買我們的出境證{\r}
+Dialogue: 0,1:05:34.81,1:05:36.60,ENG,,0,0,0,!Effect,Oh, of course he's losing.\N{\rCHT}當然他正在輸錢{\r}
+Dialogue: 0,1:05:36.84,1:05:39.74,ENG,,0,0,0,!Effect,- How long have you been married?  - Eight weeks.\N{\rCHT}- 你們結婚多久了?  - 八個星期{\r}
+Dialogue: 0,1:05:40.78,1:05:42.41,ENG,,0,0,0,!Effect,We come from Bulgaria.\N{\rCHT}我們從保加利亞來{\r}
+Dialogue: 0,1:05:43.01,1:05:45.24,ENG,,0,0,0,!Effect,Things are very bad there.\N{\rCHT}那裡的情況非常壞 先生{\r}
+Dialogue: 0,1:05:45.42,1:05:47.61,ENG,,0,0,0,!Effect,The devil has the people by the throat.\N{\rCHT}魔鬼押著人民的脖子{\r}
+Dialogue: 0,1:05:48.02,1:05:50.54,ENG,,0,0,0,!Effect,So Jan and I, we...\N{\rCHT}所以猶安和我 我們...{\r}
+Dialogue: 0,1:05:50.72,1:05:53.42,ENG,,0,0,0,!Effect,We do not want our children to grow up in such a country.\N{\rCHT}我們不想子女在那種地方長大{\r}
+Dialogue: 0,1:05:53.62,1:05:55.99,ENG,,0,0,0,!Effect,- So you decided to go to America.  - Yes.\N{\rCHT}- 所以你們決定去美國  - 對{\r}
+Dialogue: 0,1:05:56.16,1:05:58.56,ENG,,0,0,0,!Effect,But we haven't much money...\N{\rCHT}可是我們錢不多...{\r}
+Dialogue: 0,1:05:58.73,1:06:01.20,ENG,,0,0,0,!Effect,...and traveling is so expensive and difficult.\N{\rCHT}...旅費那麼貴而且困難{\r}
+Dialogue: 0,1:06:01.60,1:06:03.62,ENG,,0,0,0,!Effect,It was much more than we thought to get here.\N{\rCHT}來這裡的花費 比我們預算高很多{\r}
+Dialogue: 0,1:06:04.30,1:06:06.17,ENG,,0,0,0,!Effect,And then Captain Renault sees us...\N{\rCHT}然後雷諾隊長看到我們...{\r}
+Dialogue: 0,1:06:06.37,1:06:09.34,ENG,,0,0,0,!Effect,...and he is so kind, he wants to help us. Yes, I' II bet.\N{\rCHT}...他很仁慈 他想幫我們 對 我打賭是{\r}
+Dialogue: 0,1:06:09.64,1:06:12.70,ENG,,0,0,0,!Effect,He tells me he can give us an exit visa.\N{\rCHT}他告訴我 他可以給我們出境簽證{\r}
+Dialogue: 0,1:06:13.11,1:06:14.51,ENG,,0,0,0,!Effect,But we have no money.\N{\rCHT}可是 我們沒有錢{\r}
+Dialogue: 0,1:06:14.81,1:06:16.40,ENG,,0,0,0,!Effect,- Does he know that?  - Yes.\N{\rCHT}- 他知道嗎?  - 知道{\r}
+Dialogue: 0,1:06:16.58,1:06:18.91,ENG,,0,0,0,!Effect,- And he's still willing to give you a visa?  - Yes.\N{\rCHT}- 那他仍然願意給你簽證?  - 對{\r}
+Dialogue: 0,1:06:19.08,1:06:22.05,ENG,,0,0,0,!Effect,- And you want to know...?  - Will he keep his word?\N{\rCHT}- 而你想知道...  - 他會不會遵守諾言?{\r}
+Dialogue: 0,1:06:23.15,1:06:24.25,ENG,,0,0,0,!Effect,He always has.\N{\rCHT}他一直都有{\r}
+Dialogue: 0,1:06:29.43,1:06:31.45,ENG,,0,0,0,!Effect,You are a man.\N{\rCHT}先生 你是一個男人{\r}
+Dialogue: 0,1:06:31.63,1:06:34.29,ENG,,0,0,0,!Effect,If someone loved you very much...\N{\rCHT}假設有一個人非常愛你...{\r}
+Dialogue: 0,1:06:34.50,1:06:38.73,ENG,,0,0,0,!Effect,...so that your happiness was the only thing that she wanted in the world...\N{\rCHT}...她只求能給你快樂...{\r}
+Dialogue: 0,1:06:39.30,1:06:42.17,ENG,,0,0,0,!Effect,...and she did a bad thing to make certain of it...\N{\rCHT}...為了肯定能辦到 她做了件壞事...{\r}
+Dialogue: 0,1:06:42.67,1:06:45.77,ENG,,0,0,0,!Effect,...could you forgive her? Nobody ever loved me that much.\N{\rCHT}...你會不會原諒她? 沒有人曾經那麼愛我{\r}
+Dialogue: 0,1:06:45.94,1:06:49.78,ENG,,0,0,0,!Effect,And he never knew, and the girl kept this bad thing locked in her heart...\N{\rCHT}他一直都不知道 那女孩把做過的壞事藏在心裡{\r}
+Dialogue: 0,1:06:49.95,1:06:51.74,ENG,,0,0,0,!Effect,...that would be all right, wouldn't it?\N{\rCHT}...這樣不會有關係吧 會不會?{\r}
+Dialogue: 0,1:06:51.92,1:06:54.04,ENG,,0,0,0,!Effect,- You want my advice?  - Yes, please.\N{\rCHT}- 你要我提意見嗎?  - 是 拜託{\r}
+Dialogue: 0,1:06:54.55,1:06:55.64,ENG,,0,0,0,!Effect,Go back to Bulgaria.\N{\rCHT}回到保加利亞去{\r}
+Dialogue: 0,1:06:55.89,1:07:00.12,ENG,,0,0,0,!Effect,Oh, but if you knew what it means to us to leave Europe, to get to America...\N{\rCHT}如果你知道能離開歐洲到美國 對我們有多重要...{\r}
+Dialogue: 0,1:07:01.36,1:07:05.45,ENG,,0,0,0,!Effect,Oh, but if Jan should find out. He is such a boy.\N{\rCHT}如果猶安發現了 他那麼孩子氣{\r}
+Dialogue: 0,1:07:05.63,1:07:09.07,ENG,,0,0,0,!Effect,In many ways I am so much older than he is.\N{\rCHT}在很多方面 我比他成熟{\r}
+Dialogue: 0,1:07:09.23,1:07:11.63,ENG,,0,0,0,!Effect,Yes, well, everybody in Casablanca has problems.\N{\rCHT}對 在卡薩布蘭卡每個人都有困難{\r}
+Dialogue: 0,1:07:11.84,1:07:14.96,ENG,,0,0,0,!Effect,- Yours may work out. You'll excuse me.  - Thank you, monsieur.\N{\rCHT}- 你的困難可能會解決的 失陪  - 謝謝 先生{\r}
+Dialogue: 0,1:07:23.68,1:07:24.98,ENG,,0,0,0,!Effect,- Good evening.  - Good evening.\N{\rCHT}- 晚安  - 晚安{\r}
+Dialogue: 0,1:07:25.15,1:07:28.68,ENG,,0,0,0,!Effect,- You see? Here we are again.  - I take that as a great compliment to Sam.\N{\rCHT}- 你看? 我們又來了  - 我認為那是對山姆的恭維{\r}
+Dialogue: 0,1:07:28.85,1:07:32.08,ENG,,0,0,0,!Effect,I suppose he means to you Paris of happier days.\N{\rCHT}我猜對你而言他代表巴黎 那些較快樂的日子{\r}
+Dialogue: 0,1:07:32.66,1:07:35.82,ENG,,0,0,0,!Effect,He does. Could we have a table close to him?\N{\rCHT}的確是 我們可否選擇靠近他的桌子?{\r}
+Dialogue: 0,1:07:36.03,1:07:38.36,ENG,,0,0,0,!Effect,And as far away from Major Strasser as possible.\N{\rCHT}並且離史查沙少校越遠越好{\r}
+Dialogue: 0,1:07:38.70,1:07:41.19,ENG,,0,0,0,!Effect,The geography may be a little difficult to arrange.\N{\rCHT}這樣的安排可能有點困難{\r}
+Dialogue: 0,1:07:41.37,1:07:43.13,ENG,,0,0,0,!Effect,- Paul, table 30.  - Yes, sir.\N{\rCHT}- 保羅 三十號桌  - 是的 先生{\r}
+Dialogue: 0,1:07:43.30,1:07:45.10,ENG,,0,0,0,!Effect,Right this way, if you please.\N{\rCHT}請往這邊{\r}
+Dialogue: 0,1:07:45.27,1:07:49.04,ENG,,0,0,0,!Effect,I'll have Sam play "As Time Goes By." I believe that's your favorite tune.\N{\rCHT}我叫山姆彈"時光飛逝" 我相信那是你偏愛的曲子{\r}
+Dialogue: 0,1:07:49.27,1:07:50.54,ENG,,0,0,0,!Effect,Thank you.\N{\rCHT}謝謝{\r}
+Dialogue: 0,1:07:59.95,1:08:02.58,ENG,,0,0,0,!Effect,- Two cognacs, please.  - Cognac.\N{\rCHT}- 兩杯幹邑(白蘭地)麻煩你  - 幹邑{\r}
+Dialogue: 0,1:08:07.78,1:08:12.58,CHT,,0,0,0,!Effect,{\fs22}『法語:下注 先生女士 賭博遊戲 繼續進行』{\r}
+Dialogue: 0,1:08:12.68,1:08:17.58,CHT,,0,0,0,!Effect,{\fs22}『法語:先生女士 下注 遊戲繼續 下注』{\r}
+Dialogue: 0,1:08:25.68,1:08:28.24,ENG,,0,0,0,!Effect,Do you wish to place another bet, sir?\N{\rCHT}你要不要再下注呢 先生?{\r}
+Dialogue: 0,1:08:28.78,1:08:30.51,ENG,,0,0,0,!Effect,No. No, I guess not.\N{\rCHT}不 不 我想不要了{\r}
+Dialogue: 0,1:08:30.68,1:08:32.55,ENG,,0,0,0,!Effect,Have you tried 22 tonight?\N{\rCHT}你今晚買過22號嗎?{\r}
+Dialogue: 0,1:08:34.12,1:08:35.52,ENG,,0,0,0,!Effect,I said 22.\N{\rCHT}我說22{\r}
+Dialogue: 0,1:08:37.02,1:08:40.52,CHT,,0,0,0,!Effect,{\fs22}『法語:下注 先生女士 遊戲繼續進行』{\r}
+Dialogue: 0,1:08:51.87,1:08:53.20,ENG,,0,0,0,!Effect,Leave it there.\N{\rCHT}留在那裡{\r}
+Dialogue: 0,1:08:56.40,1:09:03.50,CHT,,0,0,0,!Effect,{\fs22}『法語:下注 先生女士 遊戲繼續進行』{\r}
+Dialogue: 0,1:09:03.90,1:09:07.40,CHT,,0,0,0,!Effect,{\fs22}『法語:好了 不要下注 二十二』{\r}
+Dialogue: 0,1:09:08.19,1:09:10.05,ENG,,0,0,0,!Effect,Cash it in and don't come back.\N{\rCHT}拿去兌現金 不要再回來{\r}
+Dialogue: 0,1:09:12.82,1:09:14.81,ENG,,0,0,0,!Effect,Are you sure this place is honest?\N{\rCHT}你肯定這地方誠實嗎?{\r}
+Dialogue: 0,1:09:15.39,1:09:19.23,ENG,,0,0,0,!Effect,Honest? As honest as the day is long.\N{\rCHT}誠實? 日子有多長就有多誠實{\r}
+Dialogue: 0,1:09:19.63,1:09:21.23,CHT,,0,0,0,!Effect,{\fs22}『法語:不要再下注了』{\r}
+Dialogue: 0,1:09:22.17,1:09:23.50,ENG,,0,0,0,!Effect,How are we doing tonight?\N{\rCHT}我們今天成績如何?{\r}
+Dialogue: 0,1:09:23.83,1:09:26.50,ENG,,0,0,0,!Effect,A couple of thousand less than I thought there would be.\N{\rCHT}比我預料的少了幾千塊{\r}
+Dialogue: 0,1:09:30.21,1:09:32.18,ENG,,0,0,0,!Effect,Monsieur Rick... I...\N{\rCHT}瑞克先生... 我...{\r}
+Dialogue: 0,1:09:37.21,1:09:38.84,ENG,,0,0,0,!Effect,He's just a lucky guy.\N{\rCHT}他走運而已{\r}
+Dialogue: 0,1:09:41.55,1:09:44.45,ENG,,0,0,0,!Effect,Monsieur Rick, may I get you a cup of coffee?\N{\rCHT}瑞克先生 我倒杯咖啡給你好嗎?{\r}
+Dialogue: 0,1:09:44.62,1:09:46.68,ENG,,0,0,0,!Effect,- No, thanks, Carl.  - Monsieur Rick...\N{\rCHT}- 不 謝謝 卡爾  - 瑞克先生...{\r}
+Dialogue: 0,1:09:50.19,1:09:51.68,ENG,,0,0,0,!Effect,Captain Renault, may l...?\N{\rCHT}雷諾隊長  我可否...?{\r}
+Dialogue: 0,1:09:51.86,1:09:55.82,ENG,,0,0,0,!Effect,Not here. Come to my office in the morning. We'll do everything businesslike.\N{\rCHT}在這裡不行 明早到我辦公室 我們依照手續{\r}
+Dialogue: 0,1:09:56.00,1:09:58.73,ENG,,0,0,0,!Effect,- We'll be there at 6.  - I' II be there at 10.\N{\rCHT}- 我們會在六點到  - 我會在十點到{\r}
+Dialogue: 0,1:09:58.90,1:10:00.77,ENG,,0,0,0,!Effect,I'm very happy for both of you.\N{\rCHT}我很替你們高興{\r}
+Dialogue: 0,1:10:00.94,1:10:03.03,ENG,,0,0,0,!Effect,Still, it's very strange that you won.\N{\rCHT}你贏錢有一點奇怪{\r}
+Dialogue: 0,1:10:03.21,1:10:05.47,ENG,,0,0,0,!Effect,Well, maybe not so strange.\N{\rCHT}或許不是那麼奇怪{\r}
+Dialogue: 0,1:10:05.64,1:10:08.48,ENG,,0,0,0,!Effect,- I' II see you in the morning.  - Thank you, Captain Renault.\N{\rCHT}- 明天早上見  - 非常謝謝 雷諾隊長{\r}
+Dialogue: 0,1:10:08.88,1:10:10.47,ENG,,0,0,0,!Effect,No!\N{\rCHT}不!{\r}
+Dialogue: 0,1:10:16.19,1:10:19.09,ENG,,0,0,0,!Effect,Boss, you've done a beautiful thing.\N{\rCHT}老闆 你做了一件天大的好事{\r}
+Dialogue: 0,1:10:19.86,1:10:22.29,ENG,,0,0,0,!Effect,Go away, you crazy Russian.\N{\rCHT}走開 瘋狂的俄國人{\r}
+Dialogue: 0,1:10:32.24,1:10:36.00,ENG,,0,0,0,!Effect,- As I suspected. You're a rank sentimentalist.  - Yeah? Why?\N{\rCHT}- 正如我懷疑 你是不折不扣的感情用事者  - 為什麼?{\r}
+Dialogue: 0,1:10:36.17,1:10:38.37,ENG,,0,0,0,!Effect,Why do you interfere with my little romances?\N{\rCHT}為什麼你干擾我小小的羅曼史?{\r}
+Dialogue: 0,1:10:38.58,1:10:40.41,ENG,,0,0,0,!Effect,Put it down as a gesture to love.\N{\rCHT}就算是向愛情致敬吧{\r}
+Dialogue: 0,1:10:40.58,1:10:42.10,ENG,,0,0,0,!Effect,Well, I' II forgive you this time.\N{\rCHT}這一次我原諒你{\r}
+Dialogue: 0,1:10:42.31,1:10:45.15,ENG,,0,0,0,!Effect,But I' II be in tomorrow night with a breathtaking blond.\N{\rCHT}不過明天晚上我會帶來 一位令窒息的金髮美女{\r}
+Dialogue: 0,1:10:45.32,1:10:47.51,ENG,,0,0,0,!Effect,And it'll make me very happy if she loses.\N{\rCHT}如果她輸錢會叫我非常高興{\r}
+Dialogue: 0,1:10:51.59,1:10:54.72,ENG,,0,0,0,!Effect,- Mr. Blaine, I wonder if I could talk to you.  - Go ahead.\N{\rCHT}- 賓勒先生 不曉得可否跟你談談  - 說吧{\r}
+Dialogue: 0,1:10:54.93,1:10:56.52,ENG,,0,0,0,!Effect,Well, isn't there some other place?\N{\rCHT}有別的說話地方嗎?{\r}
+Dialogue: 0,1:10:56.73,1:10:59.22,ENG,,0,0,0,!Effect,It's rather confidential, what I have to say.\N{\rCHT}我要說的是頗機密的事{\r}
+Dialogue: 0,1:11:01.20,1:11:03.43,ENG,,0,0,0,!Effect,- In my office. - Right.\N{\rCHT}- 在我辦公室  - 好的{\r}
+Dialogue: 0,1:11:04.50,1:11:07.16,ENG,,0,0,0,!Effect,You must know it's very important I get out of Casablanca.\N{\rCHT}你一定知道離開卡薩布蘭卡 對我很重要{\r}
+Dialogue: 0,1:11:07.34,1:11:10.33,ENG,,0,0,0,!Effect,It's my privilege to be one of the leaders of a great movement.\N{\rCHT}身為這偉大運動的領導人之一 是一份莫大的榮幸{\r}
+Dialogue: 0,1:11:10.51,1:11:12.27,ENG,,0,0,0,!Effect,You know what I' ve been doing.\N{\rCHT}你知道我一直從事什麼{\r}
+Dialogue: 0,1:11:12.44,1:11:16.38,ENG,,0,0,0,!Effect,You know what it means to the work, to the lives of thousands of people...\N{\rCHT}你知道那有多重要 對全世界 對千百萬人的生命...{\r}
+Dialogue: 0,1:11:16.55,1:11:18.81,ENG,,0,0,0,!Effect,...that I reach America and continue my work.\N{\rCHT}...如果我能到美國繼續我的工作{\r}
+Dialogue: 0,1:11:18.98,1:11:20.42,ENG,,0,0,0,!Effect,I'm not interested in politics.\N{\rCHT}我對政治不感興趣{\r}
+Dialogue: 0,1:11:20.58,1:11:23.08,ENG,,0,0,0,!Effect,The problems of the world are not in my department.\N{\rCHT}世界的問題不是我分內的事{\r}
+Dialogue: 0,1:11:23.35,1:11:24.45,ENG,,0,0,0,!Effect,I'm a saloonkeeper.\N{\rCHT}我是開酒館的{\r}
+Dialogue: 0,1:11:24.79,1:11:28.35,ENG,,0,0,0,!Effect,My friends in the underground tell me that you have quite a record.\N{\rCHT}我從事地下工作的朋友告訴我 你有不平凡的紀錄{\r}
+Dialogue: 0,1:11:28.53,1:11:30.05,ENG,,0,0,0,!Effect,You ran guns to Ethiopia.\N{\rCHT}你運槍械到衣索比亞{\r}
+Dialogue: 0,1:11:30.23,1:11:33.09,ENG,,0,0,0,!Effect,- You fought against the fascists in Spain.  - What of it?\N{\rCHT}- 你在西班牙對抗法西斯  - 那又怎樣?{\r}
+Dialogue: 0,1:11:33.26,1:11:36.43,ENG,,0,0,0,!Effect,Isn't it strange you're always fighting on the side of the underdog?\N{\rCHT}你總是幫受迫害的那邊打仗 不是有點奇怪嗎?{\r}
+Dialogue: 0,1:11:36.63,1:11:38.57,ENG,,0,0,0,!Effect,Yes, I found that a very expensive hobby.\N{\rCHT}對 我並發現那是種昂貴的喜好{\r}
+Dialogue: 0,1:11:38.77,1:11:41.00,ENG,,0,0,0,!Effect,But then I never was much of a businessman.\N{\rCHT}不過我那時候不太會做生意{\r}
+Dialogue: 0,1:11:41.17,1:11:44.54,ENG,,0,0,0,!Effect,Are you enough of a businessman to appreciate an offer of 100,000 francs?\N{\rCHT}現在你是否較會做生意 曉得 十萬法郞這價碼?{\r}
+Dialogue: 0,1:11:44.71,1:11:47.58,ENG,,0,0,0,!Effect,- I appreciate it, but I don't accept it.  - 200,000.\N{\rCHT}- 我欣賞 可是我不接受  - 我加到二十萬{\r}
+Dialogue: 0,1:11:47.95,1:11:50.47,ENG,,0,0,0,!Effect,My friend, you could make it a million francs or three.\N{\rCHT}朋友 你可以加到一百萬或三百萬{\r}
+Dialogue: 0,1:11:50.68,1:11:52.48,ENG,,0,0,0,!Effect,My answer would still be the same.\N{\rCHT}我的答案仍然一樣{\r}
+Dialogue: 0,1:11:52.65,1:11:54.81,ENG,,0,0,0,!Effect,There must be some reason why you won't let me.\N{\rCHT}一定有原因使你不願意給我{\r}
+Dialogue: 0,1:11:55.02,1:11:56.14,ENG,,0,0,0,!Effect,There is.\N{\rCHT}是有{\r}
+Dialogue: 0,1:11:56.62,1:11:58.75,ENG,,0,0,0,!Effect,I suggest that you ask your wife.\N{\rCHT}我建議你去問你的妻子{\r}
+Dialogue: 0,1:11:59.06,1:12:01.68,ENG,,0,0,0,!Effect,- I beg your pardon?  - I said, ask your wife.\N{\rCHT}- 你說什麼?  - 我說問你的妻子{\r}
+Dialogue: 0,1:12:02.06,1:12:04.46,ENG,,0,0,0,!Effect,- My wife?  - Yes.\N{\rCHT}- 我的妻子?  - 對{\r}
+Dialogue: 0,1:12:05.46,1:12:14.46,CHT,,0,0,0,!Effect,{\fs22}『德國歌』{\r}
+Dialogue: 0,1:12:44.87,1:12:46.86,ENG,,0,0,0,!Effect,Play "La Marseillaise." Play it!\N{\rCHT}彈奏"馬賽曲" 快!{\r}
+Dialogue: 0,1:13:46.86,1:13:49.56,ENG,,0,0,0,!Effect,Vive Ia France! Vive Ia democracy!\N{\rCHT}法國萬歲 民主萬歲{\r}
+Dialogue: 0,1:14:02.91,1:14:04.01,ENG,,0,0,0,!Effect,See what I mean?\N{\rCHT}你明白我的意思了吧? {\r}
+Dialogue: 0,1:14:04.01,1:14:06.91,ENG,,0,0,0,!Effect,If Laszlo 's presence in a cafe can inspire this demonstration...\N{\rCHT}如果在咖啡館出現的拉斯路 可以鼓動這樣不幸的示威行動...{\r}
+Dialogue: 0,1:14:07.08,1:14:09.55,ENG,,0,0,0,!Effect,...what more will his presence in Casablanca bring on?\N{\rCHT}...他在卡薩布蘭卡 還會導致什麼?{\r}
+Dialogue: 0,1:14:09.72,1:14:11.71,ENG,,0,0,0,!Effect,I advise that this place be shut up at once.\N{\rCHT}我奉勸把這地方馬上查封{\r}
+Dialogue: 0,1:14:11.99,1:14:14.96,ENG,,0,0,0,!Effect,- But everybody's having a good time.  - Yes, much too good a time.\N{\rCHT}- 可是大家都那麼開心  - 對 太開心了{\r}
+Dialogue: 0,1:14:15.13,1:14:16.32,ENG,,0,0,0,!Effect,The place is to be closed.\N{\rCHT}這地方必須查封{\r}
+Dialogue: 0,1:14:16.49,1:14:19.55,ENG,,0,0,0,!Effect,- But I have no excuse to close it.  - Find one.\N{\rCHT}- 可是我沒有藉口查封  - 找一個{\r}
+Dialogue: 0,1:14:20.45,1:14:22.55,CHT,,0,0,0,!Effect,{\fs22}『法語:祝健康 先生 健康』{\r}
+Dialogue: 0,1:14:24.47,1:14:26.10,ENG,,0,0,0,!Effect,Everybody is to leave immediately.\N{\rCHT}所有人必須馬上離開{\r}
+Dialogue: 0,1:14:26.34,1:14:28.57,ENG,,0,0,0,!Effect,This cafe is closed until further notice.\N{\rCHT}這咖啡館關閉 直到另行通知為止{\r}
+Dialogue: 0,1:14:28.81,1:14:30.40,ENG,,0,0,0,!Effect,Clear the room at once.\N{\rCHT}馬上清場{\r}
+Dialogue: 0,1:14:33.84,1:14:35.21,ENG,,0,0,0,!Effect,How can you close me up?\N{\rCHT}你怎麼可以查封我 有什麼理由?{\r}
+Dialogue: 0,1:14:35.41,1:14:38.87,ENG,,0,0,0,!Effect,I'm shocked, shocked to find that gambling is going on in here.\N{\rCHT}我很震驚 發現這裡進行賭博{\r}
+Dialogue: 0,1:14:39.05,1:14:40.95,ENG,,0,0,0,!Effect,- Your winnings, sir.  - Thank you.\N{\rCHT}- 你贏的錢 先生  - 很謝謝你{\r}
+Dialogue: 0,1:14:41.12,1:14:42.38,ENG,,0,0,0,!Effect,Everybody out at once.\N{\rCHT}所有人馬上出去{\r}
+Dialogue: 0,1:14:46.82,1:14:50.76,ENG,,0,0,0,!Effect,After this disturbance it is not safe for Laszlo to stay in Casablanca.\N{\rCHT}經過這次騷動後 拉斯路先生留在卡薩布蘭卡已不再安全了{\r}
+Dialogue: 0,1:14:50.93,1:14:53.73,ENG,,0,0,0,!Effect,This morning you implied it wasrt safe to leave Casablanca.\N{\rCHT}今早你暗示他離開卡薩布蘭卡 並不安全{\r}
+Dialogue: 0,1:14:53.90,1:14:56.83,ENG,,0,0,0,!Effect,That is also true, except for one destination: Occupied France.\N{\rCHT}不錯 除了一處目的地 回到被佔領的法國{\r}
+Dialogue: 0,1:14:57.03,1:14:59.94,ENG,,0,0,0,!Effect,- Occupied France?  - Under safe conduct from me.\N{\rCHT}- 被佔領的法國?  - 在我的安全保證下{\r}
+Dialogue: 0,1:15:00.17,1:15:01.16,ENG,,0,0,0,!Effect,Of what value is that?\N{\rCHT}一文不值?{\r}
+Dialogue: 0,1:15:01.34,1:15:04.36,ENG,,0,0,0,!Effect,You may recall what German guarantees have been won'th in the past.\N{\rCHT}你可能記得過去德國的信譽 值多少錢吧{\r}
+Dialogue: 0,1:15:04.54,1:15:07.81,ENG,,0,0,0,!Effect,- There are two other alternatives for him.  - What are they?\N{\rCHT}- 你只有兩個選擇  - 是什麼?{\r}
+Dialogue: 0,1:15:07.98,1:15:10.48,ENG,,0,0,0,!Effect,The French authorities may find a reason to\N{\rCHT}有可能法國當局會找一個理由 {\r}
+Dialogue: 0,1:15:10.48,1:15:12.28,ENG,,0,0,0,!Effect,put him in the concentration camp here.\N{\rCHT}把他送進這兒的集中營{\r}
+Dialogue: 0,1:15:12.45,1:15:13.54,ENG,,0,0,0,!Effect,The other alternative?\N{\rCHT}另一個選擇呢?{\r}
+Dialogue: 0,1:15:13.72,1:15:16.46,ENG,,0,0,0,!Effect,My dear, perhaps you have already observed\N{\rCHT}親愛的小姐  或許你已經察覺 {\r}
+Dialogue: 0,1:15:16.46,1:15:18.48,ENG,,0,0,0,!Effect,that in Casablanca human life is cheap.\N{\rCHT}在卡薩布蘭卡人命不值錢{\r}
+Dialogue: 0,1:15:18.66,1:15:19.99,ENG,,0,0,0,!Effect,Good night, mademoiselle.\N{\rCHT}晚安 小姐{\r}
+Dialogue: 0,1:15:30.70,1:15:34.19,ENG,,0,0,0,!Effect,- What happened with Rick?  - We'll discuss it later.\N{\rCHT}- 瑞克怎麼回事?  - 我們待會兒再商量{\r}
+Dialogue: 0,1:15:57.13,1:15:59.12,ENG,,0,0,0,!Effect,Our faithful friend is still there.\N{\rCHT}我們忠心的朋友仍然在那裡{\r}
+Dialogue: 0,1:15:59.66,1:16:02.19,ENG,,0,0,0,!Effect,Please don't go to the underground meeting tonight.\N{\rCHT}維多 求你今晚不要去地下會議{\r}
+Dialogue: 0,1:16:02.43,1:16:03.52,ENG,,0,0,0,!Effect,I must.\N{\rCHT}我一定要去{\r}
+Dialogue: 0,1:16:03.70,1:16:07.16,ENG,,0,0,0,!Effect,Besides, it isn't often that a man gets to display heroics before his wife.\N{\rCHT}況且一個男人能在他妻子面前 扮演英雄的機會不多{\r}
+Dialogue: 0,1:16:07.34,1:16:10.67,ENG,,0,0,0,!Effect,Don't joke. After Major Strasser's warning tonight, I' m frightened.\N{\rCHT}不要開玩笑 經過史查沙少校今晚的警告後 我很害怕{\r}
+Dialogue: 0,1:16:10.87,1:16:12.71,ENG,,0,0,0,!Effect,Tell you the truth, I'm frightened too.\N{\rCHT}告訴你事實 我也害怕{\r}
+Dialogue: 0,1:16:12.88,1:16:15.31,ENG,,0,0,0,!Effect,Shall I remain here in a hotel room, hiding?\N{\rCHT}我應該留在這裡 躲在飯店房間?{\r}
+Dialogue: 0,1:16:15.51,1:16:17.14,ENG,,0,0,0,!Effect,Or shall I carry on the best I can?\N{\rCHT}或者我應該繼續盡力而為?{\r}
+Dialogue: 0,1:16:17.55,1:16:20.21,ENG,,0,0,0,!Effect,Whatever I' d say, you would carry on.\N{\rCHT}不管我說什麼你也會繼續做{\r}
+Dialogue: 0,1:16:21.08,1:16:24.02,ENG,,0,0,0,!Effect,Victor, why don't you tell me about Rick? What did you find out?\N{\rCHT}維多 為何你不告訴我瑞克的事 你發現了什麼?{\r}
+Dialogue: 0,1:16:24.19,1:16:26.55,ENG,,0,0,0,!Effect,- Apparently he has the letters.  - Yes?\N{\rCHT}- 很明顯那些信在他手上  - 還有呢?{\r}
+Dialogue: 0,1:16:26.72,1:16:28.28,ENG,,0,0,0,!Effect,But no intention of selling them.\N{\rCHT}可是沒有要賣的意思{\r}
+Dialogue: 0,1:16:28.46,1:16:32.16,ENG,,0,0,0,!Effect,You'd think if sentiment wouldn't persuade him, money would.\N{\rCHT}一般人會以為情感不能打動他 錢應該可以{\r}
+Dialogue: 0,1:16:32.33,1:16:33.89,ENG,,0,0,0,!Effect,Did he give any reason?\N{\rCHT}他有沒有跟你說理由是什麼?{\r}
+Dialogue: 0,1:16:34.10,1:16:37.36,ENG,,0,0,0,!Effect,- He suggested I ask you.  - Ask me?\N{\rCHT}- 他建議我問你  - 問我?{\r}
+Dialogue: 0,1:16:37.57,1:16:39.73,ENG,,0,0,0,!Effect,Yes, he said, "Ask your wife."\N{\rCHT}對 他說: "問你的妻子."{\r}
+Dialogue: 0,1:16:40.70,1:16:42.47,ENG,,0,0,0,!Effect,I don't know why he said that.\N{\rCHT}我不知道他為什麼那樣說{\r}
+Dialogue: 0,1:16:55.02,1:16:57.75,ENG,,0,0,0,!Effect,Well, our friend outside will think we've retired by now.\N{\rCHT}我們外頭那位朋友 現在應該以為我們休息了{\r}
+Dialogue: 0,1:16:59.12,1:17:00.95,ENG,,0,0,0,!Effect,I'll be going in a few minutes.\N{\rCHT}我待會兒就去{\r}
+Dialogue: 0,1:17:03.03,1:17:05.52,ENG,,0,0,0,!Effect,- Ilsa, I...  - Yes?\N{\rCHT}- 伊莎 我...  - 什麼?{\r}
+Dialogue: 0,1:17:06.80,1:17:09.06,ENG,,0,0,0,!Effect,When I was in the concentration camp...\N{\rCHT}我在集中營的時候...{\r}
+Dialogue: 0,1:17:09.63,1:17:12.16,ENG,,0,0,0,!Effect,...were you lonely in Paris?\N{\rCHT}...你在巴黎寂寞嗎?{\r}
+Dialogue: 0,1:17:13.64,1:17:15.63,ENG,,0,0,0,!Effect,Yes, Victor, I was.\N{\rCHT}對 維多 我是寂寞{\r}
+Dialogue: 0,1:17:16.61,1:17:19.58,ENG,,0,0,0,!Effect,I know how it is to be lonely.\N{\rCHT}我知道寂寞是什麼樣子{\r}
+Dialogue: 0,1:17:20.64,1:17:22.98,ENG,,0,0,0,!Effect,Is there anything you wish to tell me?\N{\rCHT}有什麼事你想要告訴我的嗎?{\r}
+Dialogue: 0,1:17:24.98,1:17:26.97,ENG,,0,0,0,!Effect,No, Victor, there isn't.\N{\rCHT}沒有 維多 沒有{\r}
+Dialogue: 0,1:17:31.62,1:17:34.15,ENG,,0,0,0,!Effect,I love you very much, my dear.\N{\rCHT}我非常愛你 親愛的{\r}
+Dialogue: 0,1:17:37.49,1:17:39.49,ENG,,0,0,0,!Effect,Yes, I know.\N{\rCHT}是 我知道{\r}
+Dialogue: 0,1:17:40.33,1:17:42.76,ENG,,0,0,0,!Effect,Victor, whatever I do, will you believe that I...?\N{\rCHT}維多 不管我做什麼 你會不會相信我...?{\r}
+Dialogue: 0,1:17:42.93,1:17:45.63,ENG,,0,0,0,!Effect,You don't even have to say it.\N{\rCHT}你甚至不必說出來{\r}
+Dialogue: 0,1:17:45.80,1:17:47.57,ENG,,0,0,0,!Effect,I'll believe.\N{\rCHT}我也相信你{\r}
+Dialogue: 0,1:17:49.67,1:17:51.00,ENG,,0,0,0,!Effect,Good night, dear.\N{\rCHT}晚安 親愛的{\r}
+Dialogue: 0,1:17:53.01,1:17:54.34,ENG,,0,0,0,!Effect,Good night.\N{\rCHT}晚安{\r}
+Dialogue: 0,1:18:01.38,1:18:04.05,ENG,,0,0,0,!Effect,- Victor.  - Yes, dear?\N{\rCHT}- 維多  - 什麼事 親愛的?{\r}
+Dialogue: 0,1:18:09.36,1:18:10.72,ENG,,0,0,0,!Effect,Be careful.\N{\rCHT}要小心{\r}
+Dialogue: 0,1:18:12.33,1:18:13.89,ENG,,0,0,0,!Effect,Of course I' II be careful.\N{\rCHT}當然 我會小心{\r}
+Dialogue: 0,1:18:57.24,1:19:00.44,ENG,,0,0,0,!Effect,Well, you are in pretty good shape, Herr Rick.\N{\rCHT}你的情況非常好 瑞克先生{\r}
+Dialogue: 0,1:19:00.61,1:19:02.41,ENG,,0,0,0,!Effect,How long can I afford to stay closed?\N{\rCHT}我可以支援多久不營業?{\r}
+Dialogue: 0,1:19:03.08,1:19:04.38,ENG,,0,0,0,!Effect,Two weeks, maybe three.\N{\rCHT}兩星期或者三星期{\r}
+Dialogue: 0,1:19:04.58,1:19:06.81,ENG,,0,0,0,!Effect,Maybe I won't have to. A bribe has worked before.\N{\rCHT}或者我不必關門 以前用賄賂有效{\r}
+Dialogue: 0,1:19:07.02,1:19:09.25,ENG,,0,0,0,!Effect,In the meantime, everybody stays on salary.\N{\rCHT}目前所有人依舊發薪水{\r}
+Dialogue: 0,1:19:09.42,1:19:10.78,ENG,,0,0,0,!Effect,Thank you, Herr Rick.\N{\rCHT}謝謝 瑞克先生{\r}
+Dialogue: 0,1:19:10.95,1:19:14.32,ENG,,0,0,0,!Effect,Sascha will be happy to hear it. I owe him money.\N{\rCHT}沙克聽到一定很高興 我欠他錢{\r}
+Dialogue: 0,1:19:14.89,1:19:17.72,ENG,,0,0,0,!Effect,- You finish locking up, will you, Carl  - I will.\N{\rCHT}- 你把門鎖好 可以嗎 卡爾  - 我會的{\r}
+Dialogue: 0,1:19:17.89,1:19:21.02,ENG,,0,0,0,!Effect,- Then I am going to the meeting...  - Don't tell me where you're going.\N{\rCHT}- 然後我要去開會...  - 別告訴我你去那裡{\r}
+Dialogue: 0,1:19:21.20,1:19:22.39,ENG,,0,0,0,!Effect,I won't.\N{\rCHT}我不會{\r}
+Dialogue: 0,1:19:23.57,1:19:24.63,ENG,,0,0,0,!Effect,Good night.\N{\rCHT}晚安{\r}
+Dialogue: 0,1:19:25.77,1:19:27.36,ENG,,0,0,0,!Effect,Good night, Mr. Rick.\N{\rCHT}晚安 瑞克先生{\r}
+Dialogue: 0,1:19:44.02,1:19:47.42,ENG,,0,0,0,!Effect,- How did you get in?  - The stairs from the street.\N{\rCHT}- 你怎麼進來的?   - 街外的樓梯{\r}
+Dialogue: 0,1:19:47.59,1:19:50.92,ENG,,0,0,0,!Effect,I told you this morning you'd come around, but this is ahead of schedule.\N{\rCHT}今天早上我跟你說有空來 不過這似乎比預定的稍早了點{\r}
+Dialogue: 0,1:19:51.09,1:19:52.32,ENG,,0,0,0,!Effect,Well, won't you sit down?\N{\rCHT}你不坐下來嗎?{\r}
+Dialogue: 0,1:19:52.53,1:19:55.43,ENG,,0,0,0,!Effect,- Richard, I had to see you.  - "Richard" again. We're back in Paris.\N{\rCHT}- 理查 我必須見你  - 再度叫"理查" 我們回到巴黎了{\r}
+Dialogue: 0,1:19:55.43,1:19:56.43,ENG,,0,0,0,!Effect,Please.\N{\rCHT}求求你{\r}
+Dialogue: 0,1:19:56.60,1:19:59.90,ENG,,0,0,0,!Effect,Your visit isn't connected by any chance with the letters of transit?\N{\rCHT}你的突然來訪是否有可能 跟那些過境信有關呢?{\r}
+Dialogue: 0,1:20:00.10,1:20:02.80,ENG,,0,0,0,!Effect,Seems as long as I have those letters I'll never be lonely.\N{\rCHT}似乎只要信一天還在我手上 我就不愁寂寞了{\r}
+Dialogue: 0,1:20:02.97,1:20:05.60,ENG,,0,0,0,!Effect,Ask any price you want, but you must give me the letters.\N{\rCHT}你要多少錢都可以 不過你一定要把那些信給我{\r}
+Dialogue: 0,1:20:05.78,1:20:08.34,ENG,,0,0,0,!Effect,I went all through that with your husband. It 's no deal.\N{\rCHT}我已經跟你的丈夫講清楚了 絕不交易{\r}
+Dialogue: 0,1:20:08.91,1:20:10.64,ENG,,0,0,0,!Effect,I know how you feel about me...\N{\rCHT}我知道你對我的感受...{\r}
+Dialogue: 0,1:20:10.81,1:20:13.58,ENG,,0,0,0,!Effect,...but put your feelings aside for something more important.\N{\rCHT}...可是我得要求你為更重要的事 先將自己的感受拋在一邊{\r}
+Dialogue: 0,1:20:13.75,1:20:16.22,ENG,,0,0,0,!Effect,I have to hear again what a great man your husband is...\N{\rCHT}我又要再聽一次 你丈夫有多偉大...{\r}
+Dialogue: 0,1:20:16.39,1:20:18.38,ENG,,0,0,0,!Effect,...what an important cause he's fighting for?\N{\rCHT}...他為多麼重要的目標戰鬥嗎?{\r}
+Dialogue: 0,1:20:18.56,1:20:19.89,ENG,,0,0,0,!Effect,It was your cause too.\N{\rCHT}那也是你的目標{\r}
+Dialogue: 0,1:20:20.09,1:20:22.56,ENG,,0,0,0,!Effect,In your own way, you were fighting for the same thing.\N{\rCHT}以你自己的方式 你也為相同的目標戰鬥{\r}
+Dialogue: 0,1:20:22.99,1:20:25.69,ENG,,0,0,0,!Effect,I'm not fighting for anything anymore except myself.\N{\rCHT}我不再為任何事戰鬥了 除了為自己{\r}
+Dialogue: 0,1:20:25.93,1:20:27.92,ENG,,0,0,0,!Effect,I'm the only cause I' m interested in.\N{\rCHT}我唯一感興趣的目標是自己{\r}
+Dialogue: 0,1:20:34.50,1:20:38.03,ENG,,0,0,0,!Effect,We loved each other once. If those days meant anything at all to you...\N{\rCHT}我們曾經相愛過 如果那些日子對你有意義...{\r}
+Dialogue: 0,1:20:38.21,1:20:41.14,ENG,,0,0,0,!Effect,I wouldn't bring up Paris if I were you. It's poor salesmanship.\N{\rCHT}如果我是你就不會提起巴黎 那是差勁的推銷把戲{\r}
+Dialogue: 0,1:20:41.31,1:20:43.40,ENG,,0,0,0,!Effect,Listen to me. If you knew what really happened,\N{\rCHT}求求你聽我說 如果你知道事實是怎麼回事 {\r}
+Dialogue: 0,1:20:43.40,1:20:44.77,ENG,,0,0,0,!Effect,if you only knew the truth...\N{\rCHT}如果你知道事情的真相...{\r}
+Dialogue: 0,1:20:44.95,1:20:47.01,ENG,,0,0,0,!Effect,I wouldn't believe you no matter what you said.\N{\rCHT}不管你說什麼我也不會相信{\r}
+Dialogue: 0,1:20:47.18,1:20:50.21,ENG,,0,0,0,!Effect,You'd say anything now to get what you want.\N{\rCHT}為了達到目的 你現在什麼也說得出口{\r}
+Dialogue: 0,1:20:54.46,1:20:57.19,ENG,,0,0,0,!Effect,You want to feel sorry for yourself, don't you?\N{\rCHT}你很遺撼 是嗎?{\r}
+Dialogue: 0,1:20:57.36,1:21:00.12,ENG,,0,0,0,!Effect,With so much at stake all you can think of is your feelings.\N{\rCHT}那麼多事危在旦夕 你想到的只有自己的感覺{\r}
+Dialogue: 0,1:21:00.76,1:21:04.86,ENG,,0,0,0,!Effect,One woman has hurt you, and you take your revenge on the rest of the world.\N{\rCHT}一個女人傷害了你 你便對全世界報復{\r}
+Dialogue: 0,1:21:05.04,1:21:07.56,ENG,,0,0,0,!Effect,You're a coward and a weakling.\N{\rCHT}你是個膽小鬼 弱者{\r}
+Dialogue: 0,1:21:10.97,1:21:13.84,ENG,,0,0,0,!Effect,No. Oh, Richard. I' m sorry.\N{\rCHT}不 不 理查 對不起{\r}
+Dialogue: 0,1:21:14.91,1:21:17.88,ENG,,0,0,0,!Effect,I'm sorry, but you are our last hope.\N{\rCHT}對不起 可是你是我們最後的希望{\r}
+Dialogue: 0,1:21:18.05,1:21:20.74,ENG,,0,0,0,!Effect,If you don't help us, Victor Laszlo will die in Casablanca.\N{\rCHT}如果你不幫我們 維朵拉斯路會死在卡薩布蘭卡{\r}
+Dialogue: 0,1:21:20.98,1:21:21.97,ENG,,0,0,0,!Effect,What of it?\N{\rCHT}那又怎樣?{\r}
+Dialogue: 0,1:21:22.15,1:21:24.81,ENG,,0,0,0,!Effect,I'm going to die in Casablanca. It's a good spot for it.\N{\rCHT}我也會死在卡薩布蘭卡 這是死亡的好地方{\r}
+Dialogue: 0,1:21:31.66,1:21:33.49,ENG,,0,0,0,!Effect,Now, if you'll...\N{\rCHT}現在 如果你...{\r}
+Dialogue: 0,1:21:35.87,1:21:37.16,ENG,,0,0,0,!Effect,All right.\N{\rCHT}好吧{\r}
+Dialogue: 0,1:21:37.33,1:21:39.36,ENG,,0,0,0,!Effect,I tried to reason with you.\N{\rCHT}我嘗試跟你講道理{\r}
+Dialogue: 0,1:21:39.54,1:21:41.77,ENG,,0,0,0,!Effect,I tried everything. Now, I want those letters.\N{\rCHT}我什麼法子也試了 現在我要那些信{\r}
+Dialogue: 0,1:21:42.17,1:21:45.30,ENG,,0,0,0,!Effect,- Get them for me.  - I don't have to. I got them right here.\N{\rCHT}- 去拿給我  - 我不必去拿 就在這裡{\r}
+Dialogue: 0,1:21:46.88,1:21:48.74,ENG,,0,0,0,!Effect,Put them on the table.\N{\rCHT}放在桌上{\r}
+Dialogue: 0,1:21:50.65,1:21:51.64,ENG,,0,0,0,!Effect,No.\N{\rCHT}不{\r}
+Dialogue: 0,1:21:52.75,1:21:54.84,ENG,,0,0,0,!Effect,For the last time, put them on the table.\N{\rCHT}最後一次 放在桌上{\r}
+Dialogue: 0,1:21:56.15,1:22:00.15,ENG,,0,0,0,!Effect,If Laszlo and the cause mean so much to you, you won't stop at anything.\N{\rCHT}如果拉斯路和他的目標對你那麼重要 什麼也擋不住你{\r}
+Dialogue: 0,1:22:01.56,1:22:03.55,ENG,,0,0,0,!Effect,All right, I'll make it easier for you.\N{\rCHT}好吧 我讓你更方便一點{\r}
+Dialogue: 0,1:22:06.00,1:22:09.69,ENG,,0,0,0,!Effect,Go ahead and shoot. You'll be doing me a favor.\N{\rCHT}開槍吧 你將會幫了我一個忙{\r}
+Dialogue: 0,1:22:14.60,1:22:16.50,ENG,,0,0,0,!Effect,Richard...\N{\rCHT}理查...{\r}
+Dialogue: 0,1:22:16.67,1:22:19.04,ENG,,0,0,0,!Effect,...I tried to stay away.\N{\rCHT}...我儘量避開你{\r}
+Dialogue: 0,1:22:19.41,1:22:22.07,ENG,,0,0,0,!Effect,I thought I would never see you again.\N{\rCHT}我以為我永遠不會再見到你{\r}
+Dialogue: 0,1:22:23.21,1:22:25.68,ENG,,0,0,0,!Effect,That you were out of my life.\N{\rCHT}你已經在我生命中消失{\r}
+Dialogue: 0,1:22:45.94,1:22:47.96,ENG,,0,0,0,!Effect,The day you left Paris...\N{\rCHT}你離開巴黎的那天...{\r}
+Dialogue: 0,1:22:49.54,1:22:51.53,ENG,,0,0,0,!Effect,...if you knew what I went through.\N{\rCHT}...如果你知道我的感受{\r}
+Dialogue: 0,1:22:53.21,1:22:55.87,ENG,,0,0,0,!Effect,If you knew how much I loved you.\N{\rCHT}如果你知道我多愛你{\r}
+Dialogue: 0,1:22:56.88,1:22:59.71,ENG,,0,0,0,!Effect,How much I still love you.\N{\rCHT}我仍然有多麼愛你{\r}
+Dialogue: 0,1:23:13.60,1:23:14.62,ENG,,0,0,0,!Effect,And then?\N{\rCHT}然後呢?{\r}
+Dialogue: 0,1:23:16.67,1:23:21.00,ENG,,0,0,0,!Effect,It wasrt long after we were married that Victor went back to Czechoslovakia.\N{\rCHT}我們結婚後不久維多回到捷克{\r}
+Dialogue: 0,1:23:21.17,1:23:24.70,ENG,,0,0,0,!Effect,They needed him in Prague, but there the Gestapo were waiting for him.\N{\rCHT}他們需要他在布拉格 可是秘密員警在等著他{\r}
+Dialogue: 0,1:23:24.87,1:23:26.60,ENG,,0,0,0,!Effect,Just a two-line item in the paper:\N{\rCHT}只看到報上的兩行小啟:{\r}
+Dialogue: 0,1:23:26.78,1:23:29.40,ENG,,0,0,0,!Effect,"Victor Laszlo apprehended. Sent to concentration camp."\N{\rCHT}"維朵拉斯路被逮捕 送往集中營."{\r}
+Dialogue: 0,1:23:30.58,1:23:32.91,ENG,,0,0,0,!Effect,I was frantic. For months I tried to get word.\N{\rCHT}我發狂一般 好幾個月我努力打聽消息{\r}
+Dialogue: 0,1:23:33.18,1:23:34.41,ENG,,0,0,0,!Effect,Then it came.\N{\rCHT}消息終於來了{\r}
+Dialogue: 0,1:23:34.62,1:23:36.78,ENG,,0,0,0,!Effect,He was dead. Shot trying to escape.\N{\rCHT}他死了 逃走的時候被槍打死{\r}
+Dialogue: 0,1:23:38.09,1:23:40.58,ENG,,0,0,0,!Effect,I was lonely. I had nothing, not even hope.\N{\rCHT}我好寂寞 我一無所有 連希望也沒有{\r}
+Dialogue: 0,1:23:41.99,1:23:43.42,ENG,,0,0,0,!Effect,Then I met you.\N{\rCHT}後來我遇上你{\r}
+Dialogue: 0,1:23:43.76,1:23:47.09,ENG,,0,0,0,!Effect,Why werert you honest with me? Why did you keep your marriage a secret?\N{\rCHT}為什麼你不對我誠實說? 為什麼你守著結婚的秘密?{\r}
+Dialogue: 0,1:23:47.30,1:23:50.36,ENG,,0,0,0,!Effect,It wasrt my secret, Richard. Victor wanted it that way.\N{\rCHT}那不是我的秘密 理查 是維多要那樣{\r}
+Dialogue: 0,1:23:50.57,1:23:53.09,ENG,,0,0,0,!Effect,Not even our closest friends knew about our marriage.\N{\rCHT}甚至我們最要好的朋友 也不知道我們的婚事{\r}
+Dialogue: 0,1:23:53.54,1:23:56.51,ENG,,0,0,0,!Effect,That was his way of protecting me. I knew so much about his work.\N{\rCHT}那是他保護我的方法 關於他的工作我知道太多了{\r}
+Dialogue: 0,1:23:56.71,1:24:00.01,ENG,,0,0,0,!Effect,If the Gestapo found out I was his wife it would be dangerous for me...\N{\rCHT}如果秘密員警發現我是他妻子 那會為我...{\r}
+Dialogue: 0,1:24:00.18,1:24:01.70,ENG,,0,0,0,!Effect,...and for those working with us.\N{\rCHT}...和地下工作者 帶來危險{\r}
+Dialogue: 0,1:24:02.35,1:24:04.68,ENG,,0,0,0,!Effect,And when did you first find out he was alive?\N{\rCHT}你什麼時候發現他仍然活著?{\r}
+Dialogue: 0,1:24:05.72,1:24:08.24,ENG,,0,0,0,!Effect,Just before you and I were to leave Paris together.\N{\rCHT}剛好我們準備一起離開巴黎前{\r}
+Dialogue: 0,1:24:08.42,1:24:10.85,ENG,,0,0,0,!Effect,A friend came and told me that Victor was alive.\N{\rCHT}一個朋友前來告訴我維多活著{\r}
+Dialogue: 0,1:24:11.02,1:24:14.15,ENG,,0,0,0,!Effect,They were hiding him in a freight car on the outskirts of Paris.\N{\rCHT}他們把他藏在巴黎市郊的 一節貨運車廂上{\r}
+Dialogue: 0,1:24:14.49,1:24:16.48,ENG,,0,0,0,!Effect,He was sick. He needed me.\N{\rCHT}他生病需要我{\r}
+Dialogue: 0,1:24:18.06,1:24:20.69,ENG,,0,0,0,!Effect,I wanted to tell you, but I didn't dare.\N{\rCHT}我想告訴你可是我不敢{\r}
+Dialogue: 0,1:24:20.86,1:24:24.82,ENG,,0,0,0,!Effect,I knew you wouldn't have left Paris, and the Gestapo would have caught you.\N{\rCHT}我知道 你一定不會離開巴黎 秘密員警便會捉到你{\r}
+Dialogue: 0,1:24:25.87,1:24:27.60,ENG,,0,0,0,!Effect,Well...\N{\rCHT}所以我...{\r}
+Dialogue: 0,1:24:27.94,1:24:29.60,ENG,,0,0,0,!Effect,...well, you know the rest.\N{\rCHT}...其餘的你已知道了{\r}
+Dialogue: 0,1:24:32.58,1:24:35.64,ENG,,0,0,0,!Effect,Well, it's still a story without an ending.\N{\rCHT}仍然是一個沒有結局的故事{\r}
+Dialogue: 0,1:24:35.81,1:24:36.94,ENG,,0,0,0,!Effect,What about now?\N{\rCHT}那現在呢?{\r}
+Dialogue: 0,1:24:38.18,1:24:39.17,ENG,,0,0,0,!Effect,Now?\N{\rCHT}現在?{\r}
+Dialogue: 0,1:24:39.98,1:24:41.51,ENG,,0,0,0,!Effect,I don't know.\N{\rCHT}我不知道{\r}
+Dialogue: 0,1:24:42.19,1:24:45.21,ENG,,0,0,0,!Effect,I know that I' II never have the strength to leave you again.\N{\rCHT}我知道我再沒有勇氣離開你{\r}
+Dialogue: 0,1:24:46.42,1:24:47.48,ENG,,0,0,0,!Effect,And Laszlo?\N{\rCHT}那拉斯路呢?{\r}
+Dialogue: 0,1:24:47.86,1:24:51.09,ENG,,0,0,0,!Effect,You'll help him now, Richard, won't you? You'll see that he gets out.\N{\rCHT}你會幫助他的 理查 對不對? 你設法使他離境{\r}
+Dialogue: 0,1:24:51.26,1:24:54.59,ENG,,0,0,0,!Effect,Then he'll have his work. All that he's been living for.\N{\rCHT}他便能擁有他的工作 他生存的所有意義{\r}
+Dialogue: 0,1:24:54.76,1:24:56.25,ENG,,0,0,0,!Effect,All except one.\N{\rCHT}除了一樣{\r}
+Dialogue: 0,1:24:57.73,1:24:59.17,ENG,,0,0,0,!Effect,He won't have you.\N{\rCHT}他將沒有你{\r}
+Dialogue: 0,1:25:01.30,1:25:03.07,ENG,,0,0,0,!Effect,I can't fight it anymore.\N{\rCHT}我無法再掙扎下去{\r}
+Dialogue: 0,1:25:04.84,1:25:07.17,ENG,,0,0,0,!Effect,I ran away from you once. I can't do it again.\N{\rCHT}我曾舍你而去 第二次我做不到{\r}
+Dialogue: 0,1:25:10.15,1:25:13.21,ENG,,0,0,0,!Effect,Oh, I don't know what's right any longer.\N{\rCHT}我再也不知道 什麼是對什麼是錯{\r}
+Dialogue: 0,1:25:13.38,1:25:15.44,ENG,,0,0,0,!Effect,You have to think for both of us.\N{\rCHT}你必須為我們兩個想{\r}
+Dialogue: 0,1:25:16.45,1:25:17.85,ENG,,0,0,0,!Effect,For all of us.\N{\rCHT}為我們所有人想{\r}
+Dialogue: 0,1:25:21.46,1:25:24.12,ENG,,0,0,0,!Effect,All right. I will.\N{\rCHT}好吧 我會的{\r}
+Dialogue: 0,1:25:28.26,1:25:29.96,ENG,,0,0,0,!Effect,Here's looking at you, kid.\N{\rCHT}永志不忘{\r}
+Dialogue: 0,1:25:31.77,1:25:34.86,ENG,,0,0,0,!Effect,I wish I didn't love you so much.\N{\rCHT}我希望我沒有那麼愛你{\r}
+Dialogue: 0,1:25:47.25,1:25:49.31,ENG,,0,0,0,!Effect,- I think we lost them.  - Yes.\N{\rCHT}- 我想我們甩掉他們了  - 對{\r}
+Dialogue: 0,1:25:49.49,1:25:52.65,ENG,,0,0,0,!Effect,- I' m afraid they caught some of the others.  - Come inside.\N{\rCHT}- 我恐怕他們抓到其他的人  - 進裡面去{\r}
+Dialogue: 0,1:25:56.96,1:26:01.83,ENG,,0,0,0,!Effect,Come, Mr. Laszlo, I will help you immediately.\N{\rCHT}來 拉斯路先生 我會立刻幫你{\r}
+Dialogue: 0,1:26:02.07,1:26:03.83,ENG,,0,0,0,!Effect,Thank you.\N{\rCHT}謝謝{\r}
+Dialogue: 0,1:26:21.28,1:26:23.45,ENG,,0,0,0,!Effect,Carl, what happened?\N{\rCHT}卡爾 怎麼回事?{\r}
+Dialogue: 0,1:26:23.62,1:26:27.25,ENG,,0,0,0,!Effect,The police break up our meeting, Herr Rick. We escaped at the last moment.\N{\rCHT}員警查獲我們的會議 瑞克先生 我們剛好來得及逃走{\r}
+Dialogue: 0,1:26:27.46,1:26:29.76,ENG,,0,0,0,!Effect,- Come up here a minute.  - Yes, I come.\N{\rCHT}- 上來一下  - 好 我來{\r}
+Dialogue: 0,1:26:29.93,1:26:33.23,ENG,,0,0,0,!Effect,Turn out the light in the rear entrance. It might attract the police.\N{\rCHT}我要你把後門關掉 可能會引起員警的注意{\r}
+Dialogue: 0,1:26:33.43,1:26:36.13,ENG,,0,0,0,!Effect,- But Sascha always puts out that light.  - Tonight he forgot.\N{\rCHT}- 沙克每天都會關的  - 今晚他忘記了{\r}
+Dialogue: 0,1:26:36.83,1:26:39.06,ENG,,0,0,0,!Effect,Yes, I come. I will do it.\N{\rCHT}好 我來了 我會去關{\r}
+Dialogue: 0,1:26:46.74,1:26:50.24,ENG,,0,0,0,!Effect,- I want you to take Miss Lund home.  - Yes, sir.\N{\rCHT}- 我要你送林小姐回家  - 好的 先生{\r}
+Dialogue: 0,1:27:01.22,1:27:04.35,ENG,,0,0,0,!Effect,It's nothing, just a little cut. We had to get through a window.\N{\rCHT}沒什麼 只是小小的割傷 我們被迫從窗戶爬出來{\r}
+Dialogue: 0,1:27:04.53,1:27:06.29,ENG,,0,0,0,!Effect,This might come in handy.\N{\rCHT}這可能有幫助{\r}
+Dialogue: 0,1:27:06.50,1:27:07.59,ENG,,0,0,0,!Effect,Thank you.\N{\rCHT}謝謝{\r}
+Dialogue: 0,1:27:07.83,1:27:10.42,ENG,,0,0,0,!Effect,- Had a close one, eh?  - Yes, rather.\N{\rCHT}- 千鈞一髮?  - 對 挺危險{\r}
+Dialogue: 0,1:27:12.47,1:27:15.20,ENG,,0,0,0,!Effect,Don't you sometimes wonder if it's won'th all this?\N{\rCHT}你有時候會不會想這值得嗎?{\r}
+Dialogue: 0,1:27:15.37,1:27:17.31,ENG,,0,0,0,!Effect,I mean, what you're fighting for.\N{\rCHT}我是指你戰鬥的目標{\r}
+Dialogue: 0,1:27:18.31,1:27:20.40,ENG,,0,0,0,!Effect,We might as well question why we breathe.\N{\rCHT}我不如問為什麼我們要呼吸{\r}
+Dialogue: 0,1:27:20.58,1:27:22.13,ENG,,0,0,0,!Effect,If we stop breathing, we'll die.\N{\rCHT}如果我們不呼吸 我們就會死{\r}
+Dialogue: 0,1:27:22.31,1:27:24.75,ENG,,0,0,0,!Effect,If we stop fighting our enemies, the world will die.\N{\rCHT}如果我們停止對抗敵人 世界就會死{\r}
+Dialogue: 0,1:27:24.91,1:27:27.18,ENG,,0,0,0,!Effect,What of it? Then it'll be out of its misery.\N{\rCHT}又怎樣? 苦難就結束了{\r}
+Dialogue: 0,1:27:27.35,1:27:29.51,ENG,,0,0,0,!Effect,You know how you sound, Monsieur Blaine?\N{\rCHT}你知道你的口氣像什麼嗎?{\r}
+Dialogue: 0,1:27:29.69,1:27:32.39,ENG,,0,0,0,!Effect,Like a man who's trying to convince himself of something\N{\rCHT}像一個拿內心不相信的事情 {\r}
+Dialogue: 0,1:27:32.39,1:27:33.85,ENG,,0,0,0,!Effect,he doesn't believe in his heart.\N{\rCHT}來說服自己的人{\r}
+Dialogue: 0,1:27:34.02,1:27:37.62,ENG,,0,0,0,!Effect,Each of us has a destiny. For good, or for evil.\N{\rCHT}我們每一個人都有一個目標 善意的 或邪惡的{\r}
+Dialogue: 0,1:27:38.16,1:27:40.69,ENG,,0,0,0,!Effect,- I get the point.  - I wonder if you do.\N{\rCHT}- 我明白了  - 我懷疑你是否真明白{\r}
+Dialogue: 0,1:27:41.03,1:27:44.12,ENG,,0,0,0,!Effect,I wonder if you know that you're trying to escape from yourself...\N{\rCHT}我懷疑你知不知道 你在逃避自己...{\r}
+Dialogue: 0,1:27:44.33,1:27:45.89,ENG,,0,0,0,!Effect,...and that you'll never succeed.\N{\rCHT}...你將永遠不會成功{\r}
+Dialogue: 0,1:27:46.07,1:27:48.30,ENG,,0,0,0,!Effect,You seem to know all about my destiny.\N{\rCHT}你似乎對我的目標瞭如指掌{\r}
+Dialogue: 0,1:27:50.11,1:27:52.70,ENG,,0,0,0,!Effect,I know a good deal more about you than you suspect.\N{\rCHT}我知道關於你的事 比你懷疑的多{\r}
+Dialogue: 0,1:27:53.08,1:27:55.27,ENG,,0,0,0,!Effect,I know that you're in love with a woman.\N{\rCHT}例如我知道你愛上一個女人{\r}
+Dialogue: 0,1:27:55.48,1:27:57.24,ENG,,0,0,0,!Effect,It's perhaps a strange circumstance...\N{\rCHT}或者這是一種奇怪的現象...{\r}
+Dialogue: 0,1:27:57.41,1:28:00.31,ENG,,0,0,0,!Effect,...that we both should be in love with the same woman.\N{\rCHT}...我們兩個會愛著同一個女人{\r}
+Dialogue: 0,1:28:00.48,1:28:02.64,ENG,,0,0,0,!Effect,The first evening I came into this cafe...\N{\rCHT}我走進這咖啡館的第一個晚上...{\r}
+Dialogue: 0,1:28:02.82,1:28:05.19,ENG,,0,0,0,!Effect,...I knew there was something between you and llsa.\N{\rCHT}...我知道 你和伊莎之間有些不尋常{\r}
+Dialogue: 0,1:28:05.99,1:28:07.65,ENG,,0,0,0,!Effect,Since no one is to blame...\N{\rCHT}既然不能責怪任何人...{\r}
+Dialogue: 0,1:28:08.09,1:28:10.08,ENG,,0,0,0,!Effect,...I demand no explanation.\N{\rCHT}...我不要求解釋{\r}
+Dialogue: 0,1:28:10.26,1:28:13.56,ENG,,0,0,0,!Effect,I ask only one thing. You won't give me the letters of transit.\N{\rCHT}我只要求一件事 你不願給我過境信函{\r}
+Dialogue: 0,1:28:13.73,1:28:15.29,ENG,,0,0,0,!Effect,All right.\N{\rCHT}沒關係{\r}
+Dialogue: 0,1:28:15.47,1:28:17.40,ENG,,0,0,0,!Effect,But I want my wife to be safe.\N{\rCHT}不過我要我的妻子安全{\r}
+Dialogue: 0,1:28:17.67,1:28:19.10,ENG,,0,0,0,!Effect,I ask you as a favor...\N{\rCHT}我請求你幫忙...{\r}
+Dialogue: 0,1:28:19.27,1:28:22.20,ENG,,0,0,0,!Effect,...to use the letters to take her away from Casablanca.\N{\rCHT}...用那些信帶她離開卡薩布蘭卡{\r}
+Dialogue: 0,1:28:22.37,1:28:23.46,ENG,,0,0,0,!Effect,You love her that much?\N{\rCHT}你那麼愛她嗎?{\r}
+Dialogue: 0,1:28:23.67,1:28:26.44,ENG,,0,0,0,!Effect,Apparently you think of me only as the leader of a cause.\N{\rCHT}或者你只把我想成 一個主義的領導者{\r}
+Dialogue: 0,1:28:27.08,1:28:29.60,ENG,,0,0,0,!Effect,Well, I am also a human being.\N{\rCHT}我也是個人{\r}
+Dialogue: 0,1:28:30.45,1:28:31.94,ENG,,0,0,0,!Effect,Yes, I love her that much.\N{\rCHT}對 我是那麼愛她{\r}
+Dialogue: 0,1:28:39.76,1:28:41.05,ENG,,0,0,0,!Effect,- Monsieur Laszlo?  - Yes?\N{\rCHT}- 拉斯路先生?  - 什麼事?{\r}
+Dialogue: 0,1:28:41.22,1:28:43.75,ENG,,0,0,0,!Effect,You'll come with us. We have a warrant for your arrest.\N{\rCHT}你跟我們走 我們有你的逮捕令{\r}
+Dialogue: 0,1:28:43.93,1:28:44.92,ENG,,0,0,0,!Effect,On what charge?\N{\rCHT}什麼罪名?{\r}
+Dialogue: 0,1:28:45.09,1:28:47.29,ENG,,0,0,0,!Effect,Captain Renault will discuss that with you later.\N{\rCHT}雷諾隊長稍後會跟你討論{\r}
+Dialogue: 0,1:28:47.46,1:28:50.19,ENG,,0,0,0,!Effect,It seems that destiny has taken a hand.\N{\rCHT}似乎命運正在插手{\r}
+Dialogue: 0,1:29:01.98,1:29:06.14,ENG,,0,0,0,!Effect,You haven't any proof, and you know it. This isn't Germany or occupied France.\N{\rCHT}你沒有實在的證據 你也知道 這裡是未被佔領的法國 不是德國{\r}
+Dialogue: 0,1:29:06.32,1:29:10.38,ENG,,0,0,0,!Effect,All you can do is fine him and give him 30 days. You might as well let him go now.\N{\rCHT}你能做的只是罰他幾千法郞 或者拘禁30天 不如現在放他{\r}
+Dialogue: 0,1:29:10.55,1:29:13.58,ENG,,0,0,0,!Effect,I'd advise you not to be too interested in what happens to Laszlo.\N{\rCHT}我奉勸你不要對拉斯路發生的事太感興趣{\r}
+Dialogue: 0,1:29:13.76,1:29:15.22,ENG,,0,0,0,!Effect,If you were to help him escape...\N{\rCHT}如果你企圖幫他逃走...{\r}
+Dialogue: 0,1:29:15.39,1:29:17.83,ENG,,0,0,0,!Effect,What makes you think I'd stick my neck out for Laszlo?\N{\rCHT}你為什麼認為 我會為拉斯路冒險?{\r}
+Dialogue: 0,1:29:17.99,1:29:20.46,ENG,,0,0,0,!Effect,Because, one, you bet 10,000 francs he'd escape.\N{\rCHT}因為 第一 你賭十萬法郞他能逃掉{\r}
+Dialogue: 0,1:29:20.63,1:29:23.72,ENG,,0,0,0,!Effect,Two, you've got the letters of transit. Don't bother to deny it.\N{\rCHT}第二 你有那些過境信 不必否認了{\r}
+Dialogue: 0,1:29:23.93,1:29:26.99,ENG,,0,0,0,!Effect,And you might do it simply because you don't like Strasser's looks.\N{\rCHT}你可能會那樣做 只為了你不喜歡史查沙的長相{\r}
+Dialogue: 0,1:29:27.17,1:29:29.04,ENG,,0,0,0,!Effect,As a matter of fact, I don't either.\N{\rCHT}事實上 我也不喜歡{\r}
+Dialogue: 0,1:29:29.21,1:29:30.60,ENG,,0,0,0,!Effect,They're all excellent reasons.\N{\rCHT}極佳的理由{\r}
+Dialogue: 0,1:29:30.77,1:29:32.71,ENG,,0,0,0,!Effect,Don't count too much on my friendship.\N{\rCHT}別太依賴我的友誼 瑞克{\r}
+Dialogue: 0,1:29:32.88,1:29:36.33,ENG,,0,0,0,!Effect,In this matter I' m powerless. Besides, I might lose the 10,000 francs.\N{\rCHT}在這件事上 我無能為力 況且我可能輸十萬法郞{\r}
+Dialogue: 0,1:29:36.68,1:29:41.24,ENG,,0,0,0,!Effect,You're not very subtle, but you are effective. I get the point.\N{\rCHT}你不算很奸滑 不過很有效 我明白你的意思{\r}
+Dialogue: 0,1:29:41.42,1:29:42.91,ENG,,0,0,0,!Effect,Yes, I have the letters.\N{\rCHT}對 我有那些信{\r}
+Dialogue: 0,1:29:43.12,1:29:44.92,ENG,,0,0,0,!Effect,But I intend using them myself.\N{\rCHT}但是我打算自己用{\r}
+Dialogue: 0,1:29:45.32,1:29:48.85,ENG,,0,0,0,!Effect,I'm leaving Casablanca on tonight's plane. The last plane.\N{\rCHT}我要搭今晚最後的班機 離開卡薩布蘭卡{\r}
+Dialogue: 0,1:29:49.03,1:29:52.09,ENG,,0,0,0,!Effect,And I' m taking a friend with me. One you'll appreciate.\N{\rCHT}我要帶一位朋友一道走 一位你會讚賞的朋友{\r}
+Dialogue: 0,1:29:52.26,1:29:54.23,ENG,,0,0,0,!Effect,- What friend?  - Ilsa Lund.\N{\rCHT}- 什麼朋友?  - 伊莎林{\r}
+Dialogue: 0,1:29:54.40,1:29:57.99,ENG,,0,0,0,!Effect,That ought to put your mind to rest about my helping Laszlo escape.\N{\rCHT}可以打消你認為 我會幫忙拉斯路逃走的想法吧{\r}
+Dialogue: 0,1:29:58.17,1:30:00.19,ENG,,0,0,0,!Effect,The last man I want to see in America.\N{\rCHT}我最不願意在美國看到的人{\r}
+Dialogue: 0,1:30:00.44,1:30:03.63,ENG,,0,0,0,!Effect,You didn't come here to tell me this. You have the letters of transit.\N{\rCHT}你來這裡不是為了告訴我這些 你有過境信{\r}
+Dialogue: 0,1:30:03.81,1:30:06.97,ENG,,0,0,0,!Effect,You can fill in your name and hers and leave anytime you please.\N{\rCHT}你可以填上你和她的名字 愛什麼時候走都可以{\r}
+Dialogue: 0,1:30:07.14,1:30:09.77,ENG,,0,0,0,!Effect,Why are you still interested in what happens to Laszlo?\N{\rCHT}為什麼你仍然對 拉斯路的境遇感興趣?{\r}
+Dialogue: 0,1:30:09.98,1:30:14.18,ENG,,0,0,0,!Effect,I'm not. But I am interested in what happens to llsa and me.\N{\rCHT}我沒有 不過我對伊莎和我 以後的境遇感興趣{\r}
+Dialogue: 0,1:30:14.42,1:30:16.39,ENG,,0,0,0,!Effect,We have a legal right to go, that's true...\N{\rCHT}我們有合法權利離開是不是...{\r}
+Dialogue: 0,1:30:16.55,1:30:20.08,ENG,,0,0,0,!Effect,...but people have been held in Casablanca in spite of their legal rights.\N{\rCHT}...不過即使有合法的權利 曾經也有人被留在卡薩布蘭卡{\r}
+Dialogue: 0,1:30:20.26,1:30:23.62,ENG,,0,0,0,!Effect,- What makes you think we want to hold you?  - Ilsa is Laszlo 's wife.\N{\rCHT}- 為什麼你認為我們會留置你?  - 伊莎是拉斯路的妻子{\r}
+Dialogue: 0,1:30:23.79,1:30:26.49,ENG,,0,0,0,!Effect,She probably knows things that Strasser would like to know.\N{\rCHT}她大概知道一些 史查沙想知道的事{\r}
+Dialogue: 0,1:30:26.66,1:30:28.19,ENG,,0,0,0,!Effect,Louis, I' II make a deal with you.\N{\rCHT}路易 我跟你來一項協議{\r}
+Dialogue: 0,1:30:28.36,1:30:31.89,ENG,,0,0,0,!Effect,Instead of this petty charge against him, you could get something big...\N{\rCHT}不用這項你加給他的小罪名 而找些真正的大罪名...{\r}
+Dialogue: 0,1:30:32.07,1:30:35.33,ENG,,0,0,0,!Effect,...something that would chuck him in a concentration camp for years...\N{\rCHT}...可叫他待在集中營好幾年的...{\r}
+Dialogue: 0,1:30:35.50,1:30:38.10,ENG,,0,0,0,!Effect,- Be quite a feather in your cap, wouldn't it?  - Certainly.\N{\rCHT}- 可是大功一件 對不?  - 不錯{\r}
+Dialogue: 0,1:30:38.27,1:30:40.44,ENG,,0,0,0,!Effect,Germany... Vichy would be very grateful.\N{\rCHT}德國... 維琪政府會很感激{\r}
+Dialogue: 0,1:30:40.64,1:30:41.67,ENG,,0,0,0,!Effect,Then release him.\N{\rCHT}那就釋放他{\r}
+Dialogue: 0,1:30:41.84,1:30:44.47,ENG,,0,0,0,!Effect,You be at my place a half -hour before the plane leaves.\N{\rCHT}飛機起飛前半小時你到我的店{\r}
+Dialogue: 0,1:30:44.65,1:30:47.17,ENG,,0,0,0,!Effect,I'll have Laszlo come there to pick up the letters...\N{\rCHT}我安排拉斯路來拿過境信...{\r}
+Dialogue: 0,1:30:47.38,1:30:49.98,ENG,,0,0,0,!Effect,...and that'll give you grounds to make the arrest.\N{\rCHT}...那便給你犯罪的證據以逮捕他{\r}
+Dialogue: 0,1:30:50.25,1:30:52.55,ENG,,0,0,0,!Effect,You get him, and we get away.\N{\rCHT}你逮到他 而我們逃掉了{\r}
+Dialogue: 0,1:30:52.72,1:30:55.62,ENG,,0,0,0,!Effect,To the Germans, that last will be just a minor annoyance.\N{\rCHT}對德國人來說 後者只會帶來輕度的苦惱{\r}
+Dialogue: 0,1:30:55.83,1:30:58.62,ENG,,0,0,0,!Effect,There's still something about this I don't quite understand.\N{\rCHT}這交易我還有些地方不太明白{\r}
+Dialogue: 0,1:30:58.83,1:31:01.52,ENG,,0,0,0,!Effect,Miss Lund, she is very beautiful, yes...\N{\rCHT}林小姐 她非常美麗 不錯...{\r}
+Dialogue: 0,1:31:01.70,1:31:04.03,ENG,,0,0,0,!Effect,...but you were never interested in any woman.\N{\rCHT}...可是你從不對任何女人感興趣{\r}
+Dialogue: 0,1:31:04.20,1:31:06.83,ENG,,0,0,0,!Effect,- She isn't just any woman.  - I see.\N{\rCHT}- 她不只是任何女人  - 我明白了{\r}
+Dialogue: 0,1:31:07.44,1:31:09.84,ENG,,0,0,0,!Effect,How do I know you'll keep your end of the bargain?\N{\rCHT}我怎麼知道你會守信?{\r}
+Dialogue: 0,1:31:10.01,1:31:12.87,ENG,,0,0,0,!Effect,I'll make the arrangements now with Laszlo in the visitor's pen.\N{\rCHT}我馬上在探訪室 跟拉斯路安排好{\r}
+Dialogue: 0,1:31:13.04,1:31:14.11,ENG,,0,0,0,!Effect,I'm gonna miss you.\N{\rCHT}我將會懷念你 {\r}
+Dialogue: 0,1:31:14.11,1:31:17.50,ENG,,0,0,0,!Effect,You're the only one in Casablanca who has less scruples than I.\N{\rCHT}很明顯你是在卡薩布蘭卡 唯一比我更無顧忌的人{\r}
+Dialogue: 0,1:31:17.78,1:31:19.04,ENG,,0,0,0,!Effect,Oh, thanks.\N{\rCHT}謝謝{\r}
+Dialogue: 0,1:31:19.68,1:31:20.77,ENG,,0,0,0,!Effect,Go ahead, Ricky.\N{\rCHT}去吧 瑞克{\r}
+Dialogue: 0,1:31:20.98,1:31:23.34,ENG,,0,0,0,!Effect,Call off your watchdogs when you let him go.\N{\rCHT}你放他走後調走你的看門狗 {\r}
+Dialogue: 0,1:31:23.34,1:31:25.35,ENG,,0,0,0,!Effect,I don't want them around this afternoon.\N{\rCHT}我不要他今天下午在附近{\r}
+Dialogue: 0,1:31:25.52,1:31:27.85,ENG,,0,0,0,!Effect,I'm taking no chances, Louis, not even with you.\N{\rCHT}我不能冒險 路易 即使跟你{\r}
+Dialogue: 0,1:31:35.46,1:31:38.02,ENG,,0,0,0,!Effect,Should we draw up papers, or is a handshake good enough?\N{\rCHT}我們要不要簽一份檔 還是握手就夠了?{\r}
+Dialogue: 0,1:31:38.20,1:31:41.47,ENG,,0,0,0,!Effect,Certainly not good enough. But since I' m in a hurry, it'll have to do.\N{\rCHT}當然是不夠 不過我很忙 只好這樣了{\r}
+Dialogue: 0,1:31:41.77,1:31:45.10,ENG,,0,0,0,!Effect,To get out of Casablanca and go to America... You're a lucky man.\N{\rCHT}離開卡薩布蘭卡去美國... 你是幸運的人{\r}
+Dialogue: 0,1:31:45.31,1:31:49.77,ENG,,0,0,0,!Effect,My agreement with Sam is that he gets 25 percent of the profits.\N{\rCHT}我跟山姆的協定一直是 他得到利潤的百分之二十五 {\r}
+Dialogue: 0,1:31:49.77,1:31:50.71,ENG,,0,0,0,!Effect,That still goes.\N{\rCHT}那仍然維持{\r}
+Dialogue: 0,1:31:50.88,1:31:53.68,ENG,,0,0,0,!Effect,I happen to know he gets 10 percent. But he's won'th 25.\N{\rCHT}我湊巧知道是百分之十 不過他值百分之二十五{\r}
+Dialogue: 0,1:31:53.85,1:31:56.82,ENG,,0,0,0,!Effect,Abdul, Carl and Sascha, they stay with the place or I don't sell.\N{\rCHT}阿都 卡爾和沙克要留在店裡 不然我不賣{\r}
+Dialogue: 0,1:31:57.02,1:31:59.45,ENG,,0,0,0,!Effect,Of course. Rick's wouldn't be Rick's without them.\N{\rCHT}當然 沒有他們就不是瑞克咖啡館{\r}
+Dialogue: 0,1:31:59.62,1:32:00.95,ENG,,0,0,0,!Effect,Well, so long.\N{\rCHT}再會{\r}
+Dialogue: 0,1:32:01.12,1:32:04.15,ENG,,0,0,0,!Effect,Don't forget you owe Rick's 100 can'tons of American cigarettes.\N{\rCHT}別忘了 你欠咖啡館一百箱美國煙{\r}
+Dialogue: 0,1:32:04.33,1:32:06.82,ENG,,0,0,0,!Effect,I shall remember to pay it to myself.\N{\rCHT}我會記得付給自己{\r}
+Dialogue: 0,1:32:17.02,1:32:18.62,CHT,,0,0,0,!Effect,{\fs27}關閉 員警首長命令{\r}
+Dialogue: 0,1:32:41.80,1:32:44.53,ENG,,0,0,0,!Effect,- You're late.  - I was informed when Laszlo left the hotel...\N{\rCHT}- 你遲到了  - 我接到通知拉斯路剛離開飯店...{\r}
+Dialogue: 0,1:32:44.70,1:32:46.00,ENG,,0,0,0,!Effect,...so I knew I' d be on time.\N{\rCHT}...我會來得及的{\r}
+Dialogue: 0,1:32:46.17,1:32:49.19,ENG,,0,0,0,!Effect,- I asked you to tie up your watchdogs.  - He won't be followed here.\N{\rCHT}- 我想我說過 把你的看門狗綁起來  - 不會有人跟蹤他來這裡{\r}
+Dialogue: 0,1:32:49.37,1:32:51.47,ENG,,0,0,0,!Effect,This place will never be the same without you.\N{\rCHT}你知道沒有你 這地方會完全不一樣{\r}
+Dialogue: 0,1:32:51.67,1:32:55.20,ENG,,0,0,0,!Effect,I know what you mean. But I' ve spoken to Ferrari. You'll still win at roulette.\N{\rCHT}我知道你的意思 可是我已經跟法拉利說好 你在輪盤上仍然可以贏{\r}
+Dialogue: 0,1:32:55.38,1:32:58.11,ENG,,0,0,0,!Effect,- Is everything ready?  - I have the letters right here.\N{\rCHT}- 一切都準備好了嗎?  - 信就在這{\r}
+Dialogue: 0,1:32:58.28,1:33:00.48,ENG,,0,0,0,!Effect,When we searched the place, where were they?\N{\rCHT}告訴我 我們搜查時藏在那裡?{\r}
+Dialogue: 0,1:33:00.65,1:33:01.81,ENG,,0,0,0,!Effect,Sam's piano.\N{\rCHT}山姆的鋼琴{\r}
+Dialogue: 0,1:33:02.55,1:33:04.49,ENG,,0,0,0,!Effect,Serves me right for not being musical.\N{\rCHT}我活該 沒有音樂細胞{\r}
+Dialogue: 0,1:33:04.75,1:33:05.78,ENG,,0,0,0,!Effect,Here they are.\N{\rCHT}他們來了{\r}
+Dialogue: 0,1:33:06.29,1:33:08.02,ENG,,0,0,0,!Effect,You better wait in my office.\N{\rCHT}你最好到我辦公室等{\r}
+Dialogue: 0,1:33:16.08,1:33:17.43,ENG,,0,0,0,!Effect,Here.\N{\rCHT}拿去{\r}
+Dialogue: 0,1:33:17.73,1:33:20.33,ENG,,0,0,0,!Effect,Victor thinks I' m leaving with him. Havert you told him?\N{\rCHT}理查 維多以為我跟他一起走 你沒有告訴他嗎?{\r}
+Dialogue: 0,1:33:20.50,1:33:22.94,ENG,,0,0,0,!Effect,- Not yet.  - But you were able to arrange everything?\N{\rCHT}- 不 還沒有  - 可是沒有關係對不對?{\r}
+Dialogue: 0,1:33:23.11,1:33:24.47,ENG,,0,0,0,!Effect,Everything is quite all right.\N{\rCHT}你已經安排好一切 一切都很好{\r}
+Dialogue: 0,1:33:24.64,1:33:27.67,ENG,,0,0,0,!Effect,We'll tell him at the airport. The less time to think, the easier.\N{\rCHT}我們在機場告訴他 越少時間去想 對大家越好過{\r}
+Dialogue: 0,1:33:27.84,1:33:29.67,ENG,,0,0,0,!Effect,Please trust me.\N{\rCHT}請相信我{\r}
+Dialogue: 0,1:33:31.71,1:33:32.94,ENG,,0,0,0,!Effect,Yes, I will.\N{\rCHT}是 我會{\r}
+Dialogue: 0,1:33:38.15,1:33:42.25,ENG,,0,0,0,!Effect,- I don't know how to thank you.  - Save it. We've still lots of things to do.\N{\rCHT}- 賓勒先生 我不知道如何感謝你  - 省省吧 我們還有很多事要做{\r}
+Dialogue: 0,1:33:44.06,1:33:47.15,ENG,,0,0,0,!Effect,- I brought the money.  - Keep it, you'll need it in America.\N{\rCHT}- 我把錢帶走了 賓勒先生  - 留著吧 在美國你會需要的{\r}
+Dialogue: 0,1:33:47.56,1:33:49.46,ENG,,0,0,0,!Effect,- But we made a deal.  - Never mind that.\N{\rCHT}- 可是我們協定過  - 別管它{\r}
+Dialogue: 0,1:33:49.63,1:33:52.93,ENG,,0,0,0,!Effect,- You won't have any trouble in Lisbon?  - No. It 's all arranged.\N{\rCHT}- 你在里斯本不會有麻煩吧?  - 不會 一切都安排好了{\r}
+Dialogue: 0,1:33:53.10,1:33:55.43,ENG,,0,0,0,!Effect,Good. I' ve got the letters here, made out in blank.\N{\rCHT}很好 信就在這裡 從沒用過{\r}
+Dialogue: 0,1:33:55.60,1:33:58.04,ENG,,0,0,0,!Effect,All you have to do is fill in the signatures.\N{\rCHT}你只要補上簽名就好了{\r}
+Dialogue: 0,1:33:58.21,1:33:59.61,ENG,,0,0,0,!Effect,Victor Laszlo.\N{\rCHT}維朵拉斯路{\r}
+Dialogue: 0,1:34:00.14,1:34:02.87,ENG,,0,0,0,!Effect,Victor Laszlo, you're under arrest.\N{\rCHT}維朵拉斯路 你被捕了{\r}
+Dialogue: 0,1:34:05.48,1:34:07.71,ENG,,0,0,0,!Effect,The charge of accessory to the murder of the couriers\N{\rCHT}罪名是 快遞員謀殺案的幫兇 {\r}
+Dialogue: 0,1:34:07.71,1:34:09.47,ENG,,0,0,0,!Effect,from whom the letters were stolen.\N{\rCHT}這些信是從他們身上偷的{\r}
+Dialogue: 0,1:34:10.09,1:34:13.32,ENG,,0,0,0,!Effect,You're surprised about my friend Ricky? The explanation is simple.\N{\rCHT}對 你對我的朋友瑞克感到意外 理由很簡單{\r}
+Dialogue: 0,1:34:13.52,1:34:16.49,ENG,,0,0,0,!Effect,Love, it seems, has triumphed over virtue. Thank...\N{\rCHT}愛情 似乎戰勝德行 謝謝...{\r}
+Dialogue: 0,1:34:17.29,1:34:21.73,ENG,,0,0,0,!Effect,Not so fast, Louis. Nobody is going to be arrested. Not for a while yet.\N{\rCHT}且慢 路易 不會有人被捕 起碼不是現在{\r}
+Dialogue: 0,1:34:21.90,1:34:23.89,ENG,,0,0,0,!Effect,- Have you lost your mind?  - I have. Sit down.\N{\rCHT}- 你是不是瘋了?  - 我是 到那邊坐下{\r}
+Dialogue: 0,1:34:24.07,1:34:26.19,ENG,,0,0,0,!Effect,- Put that gun down.  - I don't want to shoot you...\N{\rCHT}- 把槍放下 路易  - 我不想開槍打你...{\r}
+Dialogue: 0,1:34:26.37,1:34:28.23,ENG,,0,0,0,!Effect,...but I will if you take one more step.\N{\rCHT}...但如果你再踏一步我會的{\r}
+Dialogue: 0,1:34:28.94,1:34:31.17,ENG,,0,0,0,!Effect,Under the circumstances, I will sit down.\N{\rCHT}在這情況下 我會坐下{\r}
+Dialogue: 0,1:34:34.41,1:34:36.44,ENG,,0,0,0,!Effect,- Keep your hands on the table.\N{\rCHT}- 把手放在桌上 我猜你知道你在做什麼  {\r}
+Dialogue: 0,1:34:36.44,1:34:37.90,ENG,,0,0,0,!Effect,- I wonder if you realize what this means.\N{\rCHT}- 不過我懷疑你知否這代表什麼{\r}
+Dialogue: 0,1:34:38.08,1:34:40.21,ENG,,0,0,0,!Effect,I do. We've got time to discuss that later.\N{\rCHT}我知道 待會兒我們有很多時間討論{\r}
+Dialogue: 0,1:34:40.38,1:34:41.97,ENG,,0,0,0,!Effect,Call off your watchdogs, you said.\N{\rCHT}調走你的看門狗 你說的{\r}
+Dialogue: 0,1:34:42.15,1:34:44.78,ENG,,0,0,0,!Effect,Just the same, call the airport and let me hear you tell them.\N{\rCHT}同樣的 你打電話到機場 讓我聽到你告訴他們{\r}
+Dialogue: 0,1:34:44.95,1:34:47.35,ENG,,0,0,0,!Effect,And remember, this gun is pointed right at your heart.\N{\rCHT}記得 這把槍正對著你的心臟{\r}
+Dialogue: 0,1:34:47.52,1:34:49.62,ENG,,0,0,0,!Effect,That is my least vulnerable spot.\N{\rCHT}那是我最不脆弱的地方{\r}
+Dialogue: 0,1:34:57.17,1:34:59.23,ENG,,0,0,0,!Effect,Hello? Is that the airport?\N{\rCHT}你好? 是機場嗎?{\r}
+Dialogue: 0,1:35:00.54,1:35:02.20,ENG,,0,0,0,!Effect,This is Captain Renault speaking.\N{\rCHT}我是雷諾隊長{\r}
+Dialogue: 0,1:35:02.40,1:35:04.96,ENG,,0,0,0,!Effect,There'll be two letters of transit for the Lisbon plane.\N{\rCHT}有兩份過境信要用來搭乘 往里斯本的班機{\r}
+Dialogue: 0,1:35:05.14,1:35:06.94,ENG,,0,0,0,!Effect,There's to be no trouble about them.\N{\rCHT}絕不能阻止他們{\r}
+Dialogue: 0,1:35:07.38,1:35:08.37,ENG,,0,0,0,!Effect,Good.\N{\rCHT}好{\r}
+Dialogue: 0,1:35:08.81,1:35:09.97,ENG,,0,0,0,!Effect,Hello? Hello?\N{\rCHT}你好? 你好?{\r}
+Dialogue: 0,1:35:15.08,1:35:16.48,ENG,,0,0,0,!Effect,My car, quickly!\N{\rCHT}我的車 快點!{\r}
+Dialogue: 0,1:35:18.15,1:35:19.25,ENG,,0,0,0,!Effect,This is Major Strasser.\N{\rCHT}我是史查沙少校{\r}
+Dialogue: 0,1:35:19.42,1:35:21.89,ENG,,0,0,0,!Effect,Have a squad of police meet me at the airport at once.\N{\rCHT}馬上派一隊警員 到機場跟我會合{\r}
+Dialogue: 0,1:35:22.06,1:35:23.35,ENG,,0,0,0,!Effect,At once, do you hear?\N{\rCHT}馬上 你聽到嗎?{\r}
+Dialogue: 0,1:35:30.50,1:35:32.52,ENG,,0,0,0,!Effect,Hello, radio tower?\N{\rCHT}喂 控制塔 聽得到嗎?{\r}
+Dialogue: 0,1:35:32.70,1:35:35.80,ENG,,0,0,0,!Effect,Lisbon plane taking off in 10 minutes, east runway.\N{\rCHT}往里斯本的班機十分鐘後起飛 東跑道{\r}
+Dialogue: 0,1:35:36.07,1:35:38.54,ENG,,0,0,0,!Effect,Visibility, 1 1/2 miles.\N{\rCHT}能見度一又二分之一哩{\r}
+Dialogue: 0,1:35:38.71,1:35:42.64,ENG,,0,0,0,!Effect,Light ground fog. Depth of fog approximately 500.\N{\rCHT}地面薄霧的深度大約五百{\r}
+Dialogue: 0,1:35:42.81,1:35:45.54,ENG,,0,0,0,!Effect,Ceiling unlimited. Thank you.\N{\rCHT}上升高度不受限制 謝謝{\r}
+Dialogue: 0,1:35:58.06,1:36:00.79,ENG,,0,0,0,!Effect,Have your man go with Laszlo and take care of his luggage.\N{\rCHT}路易 叫你的手下 隨拉斯路先生去安置好行李{\r}
+Dialogue: 0,1:36:00.96,1:36:02.73,ENG,,0,0,0,!Effect,Certainly, Rick, anything you say.\N{\rCHT}當然 瑞克 一切依你{\r}
+Dialogue: 0,1:36:02.93,1:36:06.33,ENG,,0,0,0,!Effect,- Find Laszlo 's luggage. Put it on the plane.  - Yes, sir.\N{\rCHT}- 拿拉斯路的行李放在飛機上  - 是 長官{\r}
+Dialogue: 0,1:36:06.50,1:36:07.49,ENG,,0,0,0,!Effect,This way, please.\N{\rCHT}請走這邊{\r}
+Dialogue: 0,1:36:09.37,1:36:12.50,ENG,,0,0,0,!Effect,If you don't mind, fill in the names. That'll make it more official.\N{\rCHT}如果你不介意 你填上名字 那會更正式一點{\r}
+Dialogue: 0,1:36:12.68,1:36:14.70,ENG,,0,0,0,!Effect,You think of everything, don't you?\N{\rCHT}你什麼都設想周到 對不對?{\r}
+Dialogue: 0,1:36:14.88,1:36:17.31,ENG,,0,0,0,!Effect,And the names are Mr. And Mrs. Victor Laszlo.\N{\rCHT}名字是維朵拉斯路先生太太{\r}
+Dialogue: 0,1:36:17.51,1:36:21.07,ENG,,0,0,0,!Effect,- But why my name, Richard?  - Because you're getting on that plane.\N{\rCHT}- 可是 為什麼是我的名字 理查?  - 因為你要上那架飛機{\r}
+Dialogue: 0,1:36:21.25,1:36:22.84,ENG,,0,0,0,!Effect,I don't understand. What about you?\N{\rCHT}我不明白 那你呢?{\r}
+Dialogue: 0,1:36:23.02,1:36:25.11,ENG,,0,0,0,!Effect,I'm staying with him till the plane gets away.\N{\rCHT}我留在這裡看著他 等飛機安全離開為止{\r}
+Dialogue: 0,1:36:25.29,1:36:27.28,ENG,,0,0,0,!Effect,No. What has happened? Last night you said...\N{\rCHT}不 理查 你怎麼回事? 昨晚...{\r}
+Dialogue: 0,1:36:27.46,1:36:29.25,ENG,,0,0,0,!Effect,Last night we said a great many things.\N{\rCHT}昨晚我們說了很多{\r}
+Dialogue: 0,1:36:29.43,1:36:31.33,ENG,,0,0,0,!Effect,You said I was to do the thinking for us.\N{\rCHT}你說我要為我倆考慮{\r}
+Dialogue: 0,1:36:31.49,1:36:34.16,ENG,,0,0,0,!Effect,I've done a lot of it since then. It adds up to one thing:\N{\rCHT}自那時候起我想了很多 想來想去只有一個結論:{\r}
+Dialogue: 0,1:36:34.33,1:36:36.99,ENG,,0,0,0,!Effect,You're getting on that plane with Victor where you belong.\N{\rCHT}你跟維多一起上那架飛機 你是屬於他的{\r}
+Dialogue: 0,1:36:37.17,1:36:39.00,ENG,,0,0,0,!Effect,Now, you've got to listen to me.\N{\rCHT}現在 你非聽我說不可{\r}
+Dialogue: 0,1:36:39.17,1:36:42.07,ENG,,0,0,0,!Effect,Any idea what you'd have to look forward to if you stayed here?\N{\rCHT}知不知道如果你留在這裡 會有什麼後果?{\r}
+Dialogue: 0,1:36:42.24,1:36:45.54,ENG,,0,0,0,!Effect,Chances are we'd both wind up in a concentration camp. True, Louis?\N{\rCHT}十分之九的機會 我們兩個將被關在集中營 對不對?{\r}
+Dialogue: 0,1:36:45.71,1:36:47.97,ENG,,0,0,0,!Effect,I'm afraid Major Strasser would insist.\N{\rCHT}我恐怕史查沙少校會堅持要{\r}
+Dialogue: 0,1:36:48.14,1:36:51.58,ENG,,0,0,0,!Effect,- You're saying this only to make me go.  - I' m saying it because it's true.\N{\rCHT}- 你這樣說只是為了叫我走  - 我這樣說是因為那是事實{\r}
+Dialogue: 0,1:36:51.78,1:36:54.01,ENG,,0,0,0,!Effect,Inside of us we both know you belong with Victor.\N{\rCHT}我們的心裡都明白你屬於維多{\r}
+Dialogue: 0,1:36:54.18,1:36:56.55,ENG,,0,0,0,!Effect,You're part of his work, the thing that keeps him going.\N{\rCHT}你是他工作的一部分 他的精神鼓勵{\r}
+Dialogue: 0,1:36:56.72,1:36:59.59,ENG,,0,0,0,!Effect,If that plane leaves and you're not with him, you'll regret it.\N{\rCHT}如果飛機離地 你不在上面 你會後悔的{\r}
+Dialogue: 0,1:36:59.79,1:37:03.28,ENG,,0,0,0,!Effect,Maybe not today, maybe not tomorrow, but soon, and for the rest of your life.\N{\rCHT}或者不是今天 或者不是明天 不過很快 並且是後悔一輩子{\r}
+Dialogue: 0,1:37:04.16,1:37:06.25,ENG,,0,0,0,!Effect,But what about us?\N{\rCHT}那我們呢?{\r}
+Dialogue: 0,1:37:06.43,1:37:07.83,ENG,,0,0,0,!Effect,We'll always have Paris.\N{\rCHT}我們永遠擁有巴黎{\r}
+Dialogue: 0,1:37:08.00,1:37:10.99,ENG,,0,0,0,!Effect,We didn't have... We'd lost it until you came to Casablanca.\N{\rCHT}本來沒有... 你來卡薩布蘭卡後我們失去了{\r}
+Dialogue: 0,1:37:11.40,1:37:13.06,ENG,,0,0,0,!Effect,We got it back last night.\N{\rCHT}不過昨晚我們重拾回來{\r}
+Dialogue: 0,1:37:13.97,1:37:17.74,ENG,,0,0,0,!Effect,- When I said I would never leave you.  - And you never will.\N{\rCHT}- 昨晚我說我永遠不離開你  - 你永遠不會{\r}
+Dialogue: 0,1:37:18.24,1:37:19.73,ENG,,0,0,0,!Effect,But I' ve got a job to do too.\N{\rCHT}我也有工作要做{\r}
+Dialogue: 0,1:37:19.94,1:37:23.67,ENG,,0,0,0,!Effect,Where I' m going, you can't follow. What I' ve got to do you can't be any part of.\N{\rCHT}我要去的地方你不能跟來 我要做的事你無法參與{\r}
+Dialogue: 0,1:37:24.28,1:37:25.80,ENG,,0,0,0,!Effect,Ilsa, I' m no good at being noble.\N{\rCHT}伊莎 清高我並不在行{\r}
+Dialogue: 0,1:37:25.98,1:37:29.44,ENG,,0,0,0,!Effect,But it doesn't take much to see that the problems of three little people...\N{\rCHT}不過要明白也不難 三個小人物就別太計較了...{\r}
+Dialogue: 0,1:37:29.62,1:37:32.31,ENG,,0,0,0,!Effect,...don't amount to a hill of beans in this crazy world.\N{\rCHT}...在這瘋狂的世界{\r}
+Dialogue: 0,1:37:32.49,1:37:35.01,ENG,,0,0,0,!Effect,Someday you'll understand that.\N{\rCHT}總有一天你會明白的{\r}
+Dialogue: 0,1:37:36.19,1:37:37.95,ENG,,0,0,0,!Effect,Now, now.\N{\rCHT}而現在{\r}
+Dialogue: 0,1:37:39.60,1:37:41.89,ENG,,0,0,0,!Effect,Here's looking at you, kid.\N{\rCHT}永志不忘{\r}
+Dialogue: 0,1:37:57.05,1:37:59.54,ENG,,0,0,0,!Effect,- Everything is in order.  - All except one thing.\N{\rCHT}- 一切都就緒  - 除了一件事{\r}
+Dialogue: 0,1:37:59.78,1:38:01.91,ENG,,0,0,0,!Effect,There's something you should know.\N{\rCHT}在你離開前有些事你應該知道{\r}
+Dialogue: 0,1:38:02.15,1:38:03.95,ENG,,0,0,0,!Effect,I don't ask you to explain anything.\N{\rCHT}賓勒先生 你不要求你解釋什麼{\r}
+Dialogue: 0,1:38:04.12,1:38:07.21,ENG,,0,0,0,!Effect,I'm going to anyway. It may make a difference to you later on.\N{\rCHT}我打算要 因為往後可能會影響到你{\r}
+Dialogue: 0,1:38:07.39,1:38:09.25,ENG,,0,0,0,!Effect,You said you knew about llsa and me.\N{\rCHT}你說你知道伊莎和我的事 對{\r}
+Dialogue: 0,1:38:09.43,1:38:12.29,ENG,,0,0,0,!Effect,You didn't know she was at my place last night when you were.\N{\rCHT}你不知道昨晚你進來時 她正在我的店裡{\r}
+Dialogue: 0,1:38:12.46,1:38:15.90,ENG,,0,0,0,!Effect,She came there for the letters of transit. Isn't that true, llsa?\N{\rCHT}她來是為了過境信 對不 伊莎?{\r}
+Dialogue: 0,1:38:16.33,1:38:17.56,ENG,,0,0,0,!Effect,Yes.\N{\rCHT}對{\r}
+Dialogue: 0,1:38:17.73,1:38:19.76,ENG,,0,0,0,!Effect,She tried everything to get them. Nothing worked.\N{\rCHT}可是都沒有效{\r}
+Dialogue: 0,1:38:19.94,1:38:23.46,ENG,,0,0,0,!Effect,She did her best to convince me that she was still in love with me.\N{\rCHT}她盡全力讓我相信她仍愛著我{\r}
+Dialogue: 0,1:38:23.64,1:38:26.16,ENG,,0,0,0,!Effect,But that was all over long ago.\N{\rCHT}那在很久以前就結束了{\r}
+Dialogue: 0,1:38:26.34,1:38:29.61,ENG,,0,0,0,!Effect,For your sake, she pretended it wasrt, and I let her pretend.\N{\rCHT}為了你的緣故 她假裝不是 我讓她繼續假裝下去{\r}
+Dialogue: 0,1:38:30.11,1:38:31.74,ENG,,0,0,0,!Effect,I understand.\N{\rCHT}我明白{\r}
+Dialogue: 0,1:38:31.91,1:38:34.11,ENG,,0,0,0,!Effect,- Here it is.  - Thanks.\N{\rCHT}- 拿去  - 謝謝{\r}
+Dialogue: 0,1:38:34.82,1:38:36.61,ENG,,0,0,0,!Effect,I appreciate it.\N{\rCHT}我很感激{\r}
+Dialogue: 0,1:38:37.49,1:38:39.25,ENG,,0,0,0,!Effect,Welcome back to the fight.\N{\rCHT}歡迎你回到戰線上{\r}
+Dialogue: 0,1:38:39.46,1:38:41.98,ENG,,0,0,0,!Effect,This time I know our side will win.\N{\rCHT}這一次我知道我們這邊會贏{\r}
+Dialogue: 0,1:38:55.70,1:38:57.87,ENG,,0,0,0,!Effect,Are you ready, llsa?\N{\rCHT}你準備好了嗎 伊莎?{\r}
+Dialogue: 0,1:38:59.74,1:39:01.11,ENG,,0,0,0,!Effect,Yes, I' m ready.\N{\rCHT}對 我準備好了{\r}
+Dialogue: 0,1:39:04.25,1:39:05.61,ENG,,0,0,0,!Effect,Goodbye, Rick.\N{\rCHT}再見 瑞克{\r}
+Dialogue: 0,1:39:06.48,1:39:08.38,ENG,,0,0,0,!Effect,God bless you.\N{\rCHT}上帝祝福你{\r}
+Dialogue: 0,1:39:09.72,1:39:12.41,ENG,,0,0,0,!Effect,You better hurry. You'll miss that plane.\N{\rCHT}最好趕快不然你會搭不上飛機{\r}
+Dialogue: 0,1:39:30.47,1:39:32.41,ENG,,0,0,0,!Effect,I was right. You are a sentimentalist.\N{\rCHT}我是對的 你是個感情用事的人{\r}
+Dialogue: 0,1:39:32.57,1:39:35.41,ENG,,0,0,0,!Effect,Stay where you are. I don't know what you're talking about.\N{\rCHT}留在原地 我不知你在說什麼{\r}
+Dialogue: 0,1:39:35.58,1:39:36.91,ENG,,0,0,0,!Effect,What you just did for Laszlo.\N{\rCHT}你剛才為拉斯路做的事{\r}
+Dialogue: 0,1:39:37.08,1:39:39.48,ENG,,0,0,0,!Effect,That fairy tale you invented to send llsa away with him.\N{\rCHT}你為了叫伊莎跟他走 編的童話故事{\r}
+Dialogue: 0,1:39:39.65,1:39:41.98,ENG,,0,0,0,!Effect,I know a little about women, my friend. She went.\N{\rCHT}我對女人略知一二 朋友 她走了{\r}
+Dialogue: 0,1:39:42.18,1:39:44.21,ENG,,0,0,0,!Effect,But she knew you were lying.\N{\rCHT}不過她知道你說謊{\r}
+Dialogue: 0,1:39:44.39,1:39:46.32,ENG,,0,0,0,!Effect,Anyway, thanks for helping me out.\N{\rCHT}不管如何感謝你幫我忙{\r}
+Dialogue: 0,1:39:46.49,1:39:49.83,ENG,,0,0,0,!Effect,I suppose you know this isn't going to be pleasant for either of us.\N{\rCHT}我假定你知道我們都將不好過 {\r}
+Dialogue: 0,1:39:49.83,1:39:50.79,ENG,,0,0,0,!Effect,Especially for you.\N{\rCHT}特別是你{\r}
+Dialogue: 0,1:39:50.96,1:39:54.45,ENG,,0,0,0,!Effect,- I' II have to arrest you, of course.  - As soon as the plane goes, Louis.\N{\rCHT}- 當然我必須逮捕你  - 飛機一走馬上可以 路易{\r}
+Dialogue: 0,1:40:01.50,1:40:05.84,ENG,,0,0,0,!Effect,- What was the meaning of that phone call?  - Victor Laszlo is on that plane.\N{\rCHT}- 那通電話是什麼意思?  - 維朵拉斯路在那架飛機上{\r}
+Dialogue: 0,1:40:08.41,1:40:10.50,ENG,,0,0,0,!Effect,Why do you stand here? Why don't you stop him?\N{\rCHT}你為何站在這? 你為何不阻止他?{\r}
+Dialogue: 0,1:40:10.68,1:40:12.70,ENG,,0,0,0,!Effect,Ask Monsieur Rick.\N{\rCHT}問瑞克先生{\r}
+Dialogue: 0,1:40:15.02,1:40:17.85,ENG,,0,0,0,!Effect,- Get away from that phone.  - I advise you not to interfere.\N{\rCHT}- 離開那電話  - 我勸你不要干涉{\r}
+Dialogue: 0,1:40:18.05,1:40:21.32,ENG,,0,0,0,!Effect,I was willing to shoot Captain Renault, and I' m willing to shoot you.\N{\rCHT}我願意開槍打雷諾隊長 也會願意打你{\r}
+Dialogue: 0,1:40:23.29,1:40:24.85,ENG,,0,0,0,!Effect,- Hello!  - Put that phone down.\N{\rCHT}- 你好!  - 把電話放下{\r}
+Dialogue: 0,1:40:25.03,1:40:26.89,ENG,,0,0,0,!Effect,- Get me the radio tower.  - Put it down!\N{\rCHT}- 替我接控制塔  - 放下!{\r}
+Dialogue: 0,1:40:41.94,1:40:43.50,ENG,,0,0,0,!Effect,Major Strasser has been shot.\N{\rCHT}史查沙少校被射殺{\r}
+Dialogue: 0,1:40:48.28,1:40:50.91,ENG,,0,0,0,!Effect,Round up the usual suspects.\N{\rCHT}圍捕可疑的嫌犯{\r}
+Dialogue: 0,1:41:09.01,1:41:10.61,CHT,,0,0,0,!Effect,{\fs22}維琪礦泉水{\r}
+Dialogue: 0,1:41:14.64,1:41:18.31,ENG,,0,0,0,!Effect,Well, Rick, you're not only a sentimentalist, but you've become a patriot.\N{\rCHT}瑞克 你不只是感情用事 你已變成愛國份子了{\r}
+Dialogue: 0,1:41:18.48,1:41:20.64,ENG,,0,0,0,!Effect,Maybe, but it seemed like a good time to start.\N{\rCHT}似乎現在是開始的好時機{\r}
+Dialogue: 0,1:41:20.82,1:41:23.05,ENG,,0,0,0,!Effect,I think perhaps you're right.\N{\rCHT}我想你是對的{\r}
+Dialogue: 0,1:41:47.84,1:41:51.54,ENG,,0,0,0,!Effect,It might be a good idea for you to disappear from Casablanca for a while.\N{\rCHT}你在卡薩布蘭卡消失一段時間 可能是個好主意{\r}
+Dialogue: 0,1:41:51.71,1:41:54.15,ENG,,0,0,0,!Effect,There's a Free French garrison over at Brazzaville.\N{\rCHT}在巴撒市那邊有自由法國駐軍{\r}
+Dialogue: 0,1:41:54.32,1:41:58.12,ENG,,0,0,0,!Effect,- I could be induced to arrange a passage.  - My letter of transit?\N{\rCHT}- 我可以幫你安排通行  - 我的過境信?{\r}
+Dialogue: 0,1:41:58.35,1:41:59.58,ENG,,0,0,0,!Effect,I could use a trip.\N{\rCHT}我大可去旅行{\r}
+Dialogue: 0,1:41:59.79,1:42:03.05,ENG,,0,0,0,!Effect,But it doesn't change our bet. You still owe me 10,000 francs.\N{\rCHT}那不影響我們的賭注 你仍然欠我十萬法郞{\r}
+Dialogue: 0,1:42:03.29,1:42:06.19,ENG,,0,0,0,!Effect,That 10,000 francs should pay our expenses.\N{\rCHT}那十萬法郞應該夠我們的開銷{\r}
+Dialogue: 0,1:42:06.36,1:42:07.59,ENG,,0,0,0,!Effect,"Our" expenses?\N{\rCHT}"我們"的開銷?{\r}
+Dialogue: 0,1:42:08.43,1:42:12.63,ENG,,0,0,0,!Effect,Louis, I think this is the beginning of a beautiful friendship.\N{\rCHT}路易 我想這是美好友誼的開始{\r}
+
