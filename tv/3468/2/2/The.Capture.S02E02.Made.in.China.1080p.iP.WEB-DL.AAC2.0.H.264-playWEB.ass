@@ -1,0 +1,982 @@
+﻿[Script Info]
+Synch Point: 0
+ScriptType: v4.00+
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,文泉驿微米黑,19,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,96,100,0,0,1,1,1,2,10,10,20,1
+Style: 译文,文泉驿微米黑,19,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,96,100,0,0,1,1,1,2,10,10,20,1
+Style: 原文,文泉驿微米黑,12,&H004A9CDD,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,96,100,0,0,1,1,1,2,10,10,20,1
+Style: 注释,汉仪铁线黑-55简,13,&H00C1DFED,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,96,100,0,0,1,0,0,8,10,10,20,1
+Style: 注释框,文泉驿微米黑,16,&H00DBB391,&H00FFFFFF,&H00C1DFED,&H80000000,0,0,0,0,100,100,0,0,1,2,1,5,10,10,20,1
+Style: 特效,文泉驿微米黑,19,&H00FFFFFF,&HFFFFFFFF,&H00000000,&H00000000,0,0,0,0,96,100,0,0,1,0,0,2,10,10,20,1
+Style: 特效 - 背景,文泉驿微米黑,19,&H00FFFFFF,&HFFFFFFFF,&H00000000,&H00000000,0,0,0,0,96,100,0,0,3,1.5,0,2,10,10,20,1
+Style: 歌词,文泉驿微米黑,15,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,96,100,0,0,1,1,1,9,10,10,20,1
+Style: 歌词原文,文泉驿微米黑,10,&H004A9CDD,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,96,100,0,0,1,1,1,9,10,10,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.03,0:00:04.54,特效,NTP,0,0,0,,{\fad(600,600)\fs24\b1\pos(78,238)}前情提要
+Dialogue: 0,0:08:42.26,0:08:47.56,注释框,,0,0,0,,{\1a&HDC&\pos(321.92,209.653)\fscx2044\fscy1040}■
+Dialogue: 0,0:08:42.26,0:08:47.56,注释,,0,0,0,,{\c&H089DE2&\fs15\pos(321.92,178.507)}深度伪造\N{\c\fs}该技术实际在github上\N是开源的，所有人都可\N以免费获取并使用。
+Dialogue: 0,0:12:07.89,0:12:10.18,注释框,,0,0,0,,{\1a&HDC&\fscx2062\fscy893\pos(326.08,208.374)}■
+Dialogue: 0,0:12:07.89,0:12:10.18,注释,,0,0,0,,{\c&H089DE2&\fs15\pos(325.76,184.481)}索尔兹伯里\N{\c\fs}指2018年谢尔盖和尤利\N娅·斯克里帕尔中毒案
+Dialogue: 0,0:24:40.68,0:24:42.83,特效,,0,0,0,,{\K110\fs15\b1\frz11.98\frx6\fry358\c&HADC2B8&\pos(240,114.827)}为了更安全的不列颠
+Dialogue: 0,0:00:00.82,0:00:05.56,译文,,0,0,0,,{\blur3}-受害者是谁 -爱迪生·姚 中国人 在公寓里被暗杀\N{\r原文\blur3}- Who's your victim? - Edison Yao. Chinese national. Assassinated in his apartment.
+Dialogue: 0,0:00:06.12,0:00:10.59,译文,,0,0,0,,{\blur3}他的公寓中装满监控录像 但枪手却不见踪影\N{\r原文\blur3}He had CCTV all over the flat, only the shooters are nowhere to be seen.
+Dialogue: 0,0:00:11.29,0:00:13.92,译文,,0,0,0,,{\blur3}我想你可能会提供一些 见解\N{\r原文\blur3}I thought you might have some...insight.
+Dialogue: 0,0:00:13.92,0:00:15.38,译文,,0,0,0,,{\blur3}我做不到 对不起\N{\r原文\blur3}I can't do this, I'm sorry.
+Dialogue: 0,0:00:15.38,0:00:18.17,译文,,0,0,0,,{\blur3}我懂 打不过就加入 对吧\N{\r原文\blur3}No, I get it. Can't beat 'em, join 'em, right?
+Dialogue: 0,0:00:18.18,0:00:20.04,译文,,0,0,0,,{\blur3}赞达面部识别\N{\r原文\blur3}Xanda Facial Recognition.
+Dialogue: 0,0:00:20.05,0:00:22.18,译文,,0,0,0,,{\blur3}世界上唯一能以100%的准确率\N{\r原文\blur3}The only security system in the world
+Dialogue: 0,0:00:22.18,0:00:24.97,译文,,0,0,0,,{\blur3}识别人脸的安全系统\N{\r原文\blur3}to identify a human face with 100% accuracy.
+Dialogue: 0,0:00:24.97,0:00:27.52,译文,,0,0,0,,{\blur3}中国的人工智能技术不构成威胁\N{\r原文\blur3}Chinese AI technology poses no threat.
+Dialogue: 0,0:00:27.52,0:00:30.52,译文,,0,0,0,,{\blur3}是的 我读过宣传稿 抱歉 是新闻稿\N{\r原文\blur3}Yeah, I read the propaganda - sorry, press release.
+Dialogue: 0,0:00:30.52,0:00:33.56,译文,,0,0,0,,{\blur3}只要我还是安全大臣 英国的边境安全就不会\N{\r原文\blur3}As long as I'm Security Minister, Britain's borders won't be monitored
+Dialogue: 0,0:00:33.57,0:00:36.15,译文,,0,0,0,,{\blur3}落到中国这种门面企业手中\N{\r原文\blur3}by a storefront for the People's Republic of China.
+Dialogue: 0,0:00:38.61,0:00:40.41,译文,,0,0,0,,{\blur3}长官 我有发现\N{\r原文\blur3}Ma'am? I've got something.
+Dialogue: 0,0:00:40.41,0:00:42.87,译文,,0,0,0,,{\blur3}闭路电视中有些 猫腻\N{\r原文\blur3}CCTV threw up some...concerns.
+Dialogue: 0,0:00:42.87,0:00:45.74,译文,,0,0,0,,{\blur3}-跟我们的专业相关 -把监控发过来\N{\r原文\blur3}- Our kind of concerns. - Pass on the details.
+Dialogue: 0,0:00:45.74,0:00:47.33,译文,,0,0,0,,{\blur3}我会派人去看看的\N{\r原文\blur3}I'll assign someone to take a look.
+Dialogue: 0,0:00:47.33,0:00:50.33,译文,,0,0,0,,{\blur3}加兰德仍然不信任我\N{\r原文\blur3}Garland doesn't trust me, still.
+Dialogue: 0,0:00:50.33,0:00:53.13,译文,,0,0,0,,{\blur3}我是自愿加入的\N{\r原文\blur3}I signed up to be part of this.
+Dialogue: 0,0:00:53.13,0:00:56.55,译文,,0,0,0,,{\blur3}这位拉各斯的护工声称 她三岁儿子的父亲\N{\r原文\blur3}The Lagos care worker claims her three-year-old son's father
+Dialogue: 0,0:00:56.55,0:00:59.01,译文,,0,0,0,,{\blur3}是英国安全大臣艾萨克·特纳\N{\r原文\blur3}is Britain's Security Minister, Isaac Turner.
+Dialogue: 0,0:00:59.01,0:01:01.30,译文,,0,0,0,,{\blur3}什么 这都是赞达干的\N{\r原文\blur3}What?! This is them. This is Xanda.
+Dialogue: 0,0:01:01.30,0:01:03.51,译文,,0,0,0,,{\blur3}特纳先生 如果我们真要插手\N{\r原文\blur3}If we wanted to meddle, Mr Turner,
+Dialogue: 0,0:01:03.51,0:01:06.14,译文,,0,0,0,,{\blur3}你认为我们就这点手段\N{\r原文\blur3}do you think this is the best we can do?
+Dialogue: 0,0:01:06.14,0:01:08.60,译文,,0,0,0,,{\blur3}下午好 尊敬的\N{\r原文\blur3}Good afternoon, distinguished members
+Dialogue: 0,0:01:08.60,0:01:10.69,译文,,0,0,0,,{\blur3}各位中国研究委员会成员\N{\r原文\blur3}of the China Research Committee,
+Dialogue: 0,0:01:10.69,0:01:12.69,译文,,0,0,0,,{\blur3}还有格雷戈里\N{\r原文\blur3}and Gregory.
+Dialogue: 0,0:01:12.69,0:01:14.98,译文,,0,0,0,,{\blur3}拍板投票的人没来全\N{\r原文\blur3}Not everybody is present for the final vote.
+Dialogue: 0,0:01:14.98,0:01:16.94,译文,,0,0,0,,{\blur3}爱迪生去哪儿\N{\r原文\blur3}Where is Edison?
+Dialogue: 0,0:01:16.94,0:01:19.65,译文,,0,0,0,,{\blur3}死者的最后活动是拨打电话\N{\r原文\blur3}The victim's last activity was an attempted call.
+Dialogue: 0,0:01:19.65,0:01:21.40,译文,,0,0,0,,{\blur3}也许他是想警告什么人\N{\r原文\blur3}Maybe he was trying to warn someone.
+Dialogue: 0,0:01:21.41,0:01:23.53,译文,,0,0,0,,{\blur3}-打给谁的 -手机联系人为诺克斯\N{\r原文\blur3}- Caller ID? - Saved on the phone as Knox.
+Dialogue: 0,0:01:23.53,0:01:27.74,译文,,0,0,0,,{\blur3}格雷戈里·诺克斯吗 大楼里有武装入侵者 进去\N{\r原文\blur3}Gregory Knox? There are armed intruders in the building. Get in.
+Dialogue: 0,0:01:28.91,0:01:31.37,译文,,0,0,0,,{\blur3}不 我没有加入他们\N{\r原文\blur3}No, I haven't joined them,
+Dialogue: 0,0:01:31.37,0:01:33.62,译文,,0,0,0,,{\blur3}我是要打败他们\N{\r原文\blur3}I am trying to beat them!
+Dialogue: 0,0:01:33.63,0:01:36.13,译文,,0,0,0,,{\blur3}他们日日夜夜监视看我\N{\r原文\blur3}And they are watching me day and night!
+Dialogue: 0,0:01:36.13,0:01:37.88,译文,,0,0,0,,{\blur3}委员会那边情况如们\N{\r原文\blur3}What's the status with the committee?
+Dialogue: 0,0:01:37.88,0:01:39.26,译文,,0,0,0,,{\blur3}所有人员都转移至安全屋\N{\r原文\blur3}All assets are in safe houses.
+Dialogue: 0,0:01:39.26,0:01:42.76,译文,,0,0,0,,{\blur3}在我看来 我们带这些人去安全屋正中他们下怀\N{\r原文\blur3}For all we know, the safe houses are exactly where they want us to take these people!
+Dialogue: 0,0:01:42.76,0:01:46.05,译文,,0,0,0,,{\blur3}在我旁边的是安全大臣艾萨克·特纳\N{\r原文\blur3}Well, I'm now joined by Home Office Security Minister Isaac Turner.
+Dialogue: 0,0:01:46.06,0:01:48.18,译文,,0,0,0,,{\blur3}晚上好 哈迪亚\N{\r原文\blur3}Good evening, Khadija.
+Dialogue: 0,0:01:48.18,0:01:51.14,译文,,0,0,0,,{\blur3}这就是他们设计你来这里的原因\N{\r原文\blur3}This is it, the reason they wanted you.
+Dialogue: 0,0:01:51.14,0:01:55.81,译文,,0,0,0,,{\blur3}我认为正确的做法 是把英国边境合同\N{\r原文\blur3}I believe the right decision is to award the UK borders contract
+Dialogue: 0,0:01:55.81,0:01:57.77,译文,,0,0,0,,{\blur3}授予赞达面部识别公司\N{\r原文\blur3}to Xanda Facial Recognition.
+Dialogue: 0,0:02:10.20,0:02:12.87,译文,,0,0,0,,{\blur3}我们的安全 我们的生活方式\N{\r原文\blur3}..our security or our way of life.
+Dialogue: 0,0:02:12.87,0:02:15.83,译文,,0,0,0,,{\blur3}这个决定会让很多人大吃一惊\N{\r原文\blur3}This decision will come as a surprise to those who see you
+Dialogue: 0,0:02:15.83,0:02:20.00,译文,,0,0,0,,{\blur3}这些人曾把你当做中国在英基建投资的强大对手\N{\r原文\blur3}as a strong opponent to China's investment in UK infrastructure.
+Dialogue: 0,0:02:20.01,0:02:22.63,译文,,0,0,0,,{\blur3}哈迪亚 我一向兼收并蓄\N{\r原文\blur3}Oh, Khadija, I've always maintained I keep an open mind.
+Dialogue: 0,0:02:22.63,0:02:24.18,译文,,0,0,0,,{\blur3}他在干什么啊\N{\r原文\blur3}What is he doing?!
+Dialogue: 0,0:02:24.18,0:02:27.22,译文,,0,0,0,,{\blur3}不知道 他说的都是赞达新闻稿的内容\N{\r原文\blur3}I don't know. He's literally quoting Xanda's press release.
+Dialogue: 0,0:02:27.22,0:02:30.06,译文,,0,0,0,,{\blur3}我的手机快打爆了 《卫报》催我回应\N{\r原文\blur3}My phones are exploding, Guardian's hounding me for a follow-up,
+Dialogue: 0,0:02:30.06,0:02:32.14,译文,,0,0,0,,{\blur3}-他都还没下节目呢 -他跟你说什么了吗\N{\r原文\blur3}- he isn't even off air! - Did he say anything to you?
+Dialogue: 0,0:02:32.14,0:02:34.98,译文,,0,0,0,,{\blur3}他说过要为他曾坪击的间谋公司背书吗\N{\r原文\blur3}Did he say anything about endorsing the company he accused of spying?
+Dialogue: 0,0:02:34.98,0:02:38.61,译文,,0,0,0,,{\blur3}他一定吓坏了 爱迪生被杀了 诺克斯又被的上\N{\r原文\blur3}He must be scared. Edison's been killed, Knox has been targeted.
+Dialogue: 0,0:02:38.61,0:02:41.65,译文,,0,0,0,,{\blur3}等等 天啊 是他老婆打来的\N{\r原文\blur3}Oh, Christ, his wife's calling. Wait.
+Dialogue: 0,0:02:43.20,0:02:45.53,译文,,0,0,0,,{\blur3}西蒙妮艾丽莎 你在看吗\N{\r原文\blur3}Simone? Aliza, are you watching this?
+Dialogue: 0,0:02:45.53,0:02:47.45,译文,,0,0,0,,{\blur3}在看 你还好吗\N{\r原文\blur3}Yeah. Are you OK?
+Dialogue: 0,0:02:47.45,0:02:49.91,译文,,0,0,0,,{\blur3}我还好 家里都有警察\N{\r原文\blur3}Yeah, I think so. We've got police here.
+Dialogue: 0,0:02:49.91,0:02:52.70,译文,,0,0,0,,{\blur3}-你为什么这么问 -没事 我们也看不明白\N{\r原文\blur3}- Why are you asking?  - No, it's just, we don't get it either.
+Dialogue: 0,0:02:52.71,0:02:55.58,译文,,0,0,0,,{\blur3}对不起 西蒙妮 我过会儿给你回申\N{\r原文\blur3}Sorry, Simone, can I call you back?
+Dialogue: 0,0:02:55.58,0:02:58.75,译文,,0,0,0,,{\blur3}该项目还没有经过种族歧视的测试\N{\r原文\blur3}The programme hasn't been tested for racial bias.
+Dialogue: 0,0:02:58.75,0:03:02.17,译文,,0,0,0,,{\blur3}遗憾的是 涉及到不同肤色的人种时\N{\r原文\blur3}Sadly, there are a number of facial rec systems that underperform
+Dialogue: 0,0:03:02.17,0:03:05.88,译文,,0,0,0,,{\blur3}很多面部识别系统都表现不佳\N{\r原文\blur3}when it comes to accurately identifying people of colour,
+Dialogue: 0,0:03:05.88,0:03:07.68,译文,,0,0,0,,{\blur3}这完全是不可接受的\N{\r原文\blur3}which is totally unacceptable, of course.
+Dialogue: 0,0:03:07.68,0:03:09.55,译文,,0,0,0,,{\blur3}他是不是脑子进水了\N{\r原文\blur3}Has he had a stroke?
+Dialogue: 0,0:03:09.56,0:03:11.76,译文,,0,0,0,,{\blur3}格雷戈里 你不是该待在安全屋吗\N{\r原文\blur3}Gregory! Shouldn't you be in a safe house?
+Dialogue: 0,0:03:11.77,0:03:14.77,译文,,0,0,0,,{\blur3}对 我求看警察让我用他们的电话打过来的\N{\r原文\blur3}I am. I had to plead with the police to let me use their phone.
+Dialogue: 0,0:03:14.77,0:03:18.60,译文,,0,0,0,,{\blur3}持纳不是告诉内政部 我们一致反对赞达的吗\N{\r原文\blur3}I thought Turner told the Home Sec we unanimously opposed to Xanda?
+Dialogue: 0,0:03:18.61,0:03:19.81,译文,,0,0,0,,{\blur3}他估计是害怕了\N{\r原文\blur3}We think he's scared.
+Dialogue: 0,0:03:19.82,0:03:22.19,译文,,0,0,0,,{\blur3}防止种族定性的办法\N{\r原文\blur3}The way to safeguard against racial profiling
+Dialogue: 0,0:03:22.19,0:03:25.57,译文,,0,0,0,,{\blur3}就是选择准确率最高的识别系统\N{\r原文\blur3}is to choose a recognition system that's virtually 100% accurate.
+Dialogue: 0,0:03:25.57,0:03:27.70,译文,,0,0,0,,{\blur3}赞达能让我们安心\N{\r原文\blur3}And Xanda gives us that peace of mind.
+Dialogue: 0,0:03:27.70,0:03:29.24,译文,,0,0,0,,{\blur3}他看起来一点也不害怕\N{\r原文\blur3}He doesn't look scared.
+Dialogue: 0,0:03:37.96,0:03:40.88,译文,,0,0,0,,{\blur3}如果你们不打算去BBC找出原因\N{\r原文\blur3}If you're refusing to March down to the BBC and get some answers...
+Dialogue: 0,0:03:40.88,0:03:43.46,译文,,0,0,0,,{\blur3}-我坚持 -我就就自己去\N{\r原文\blur3}- I must insist... - ..I will do it myself!
+Dialogue: 0,0:03:43.46,0:03:44.88,译文,,0,0,0,,{\blur3}你必须待在一级防范封锁区\N{\r原文\blur3}..insist you stay on lockdown!
+Dialogue: 0,0:03:44.88,0:03:47.01,译文,,0,0,0,,{\blur3}扎克 你认识哈特指挥官吧\N{\r原文\blur3}Zach? You know Commander Hart.
+Dialogue: 0,0:03:48.80,0:03:50.43,译文,,0,0,0,,{\blur3}内政大臣 吉玛\N{\r原文\blur3}Home Secretary.  Gemma.
+Dialogue: 0,0:03:51.47,0:03:53.60,译文,,0,0,0,,{\blur3}-你也看了对吧 -《新闻之夜》吗\N{\r原文\blur3}- You were watching, then?  - Newsnight?
+Dialogue: 0,0:03:53.60,0:03:56.23,译文,,0,0,0,,{\blur3}我要是想看政府洋相百出\N{\r原文\blur3}If I wanted to watch the Government get its teeth kicked in,
+Dialogue: 0,0:03:56.23,0:03:58.39,译文,,0,0,0,,{\blur3}就去出席首相问答了\N{\r原文\blur3}I'd turn up to PMQs.
+Dialogue: 0,0:03:58.40,0:04:01.15,译文,,0,0,0,,{\blur3}-你一定很震惊吧 大臣 -震惊\N{\r原文\blur3}- Must have been a shock, Minister. - A shock?
+Dialogue: 0,0:04:01.15,0:04:02.61,译文,,0,0,0,,{\blur3}不完全是 丹尼\N{\r原文\blur3}No, not quite, Danny.
+Dialogue: 0,0:04:02.61,0:04:05.78,译文,,0,0,0,,{\blur3}看到自己上电视可以称得上震惊\N{\r原文\blur3}Turning on the TV to see yourself on a normal day is a shock.
+Dialogue: 0,0:04:05.78,0:04:09.07,译文,,0,0,0,,{\blur3}但打开电视 看到不是自己的自己\N{\r原文\blur3}Turning on the TV to see yourself when it's not yourself,
+Dialogue: 0,0:04:09.07,0:04:11.91,译文,,0,0,0,,{\blur3}说着与自己的信念背道而驰的话\N{\r原文\blur3}saying the exact opposite of what you fundamentally believe
+Dialogue: 0,0:04:11.91,0:04:15.37,译文,,0,0,0,,{\blur3}是他妈的精神强奸 我实话实说了\N{\r原文\blur3}is a fucking mind-rape, if you want to know the truth.
+Dialogue: 0,0:04:18.54,0:04:19.62,译文,,0,0,0,,{\blur3}吉玛\N{\r原文\blur3}Gemma?
+Dialogue: 0,0:04:21.42,0:04:25.71,译文,,0,0,0,,{\blur3}我们是不是需要 做好保密工作\N{\r原文\blur3}Do you think we need to, um...pull up the drawbridge?
+Dialogue: 0,0:04:28.51,0:04:31.47,译文,,0,0,0,,{\blur3}拉提夫督查 凯莉总督察 出去等待进一步指示\N{\r原文\blur3}DI Latif, DCI Carey, await further instruction outside.
+Dialogue: 0,0:04:31.47,0:04:32.97,译文,,0,0,0,,{\blur3}-长官 -对了\N{\r原文\blur3}- Ma'am, I...  - On second thoughts,
+Dialogue: 0,0:04:32.97,0:04:35.10,译文,,0,0,0,,{\blur3}凯莉总督察 你不用等了 你被解雇了\N{\r原文\blur3}DCI Carey, you don't need to wait, you're dismissed.
+Dialogue: 0,0:04:35.16,0:04:38.68,译文,,0,0,0,,{\blur3}{\r原文\blur3}Report to Mapping per your regular duties first thing.
+Dialogue: 0,0:04:38.64,0:04:40.19,译文,,0,0,0,,{\blur3}你的决定很有趣啊\N{\r原文\blur3}That's an interesting decision.
+Dialogue: 0,0:04:41.15,0:04:44.32,译文,,0,0,0,,{\blur3}-你说什么 -是你把我关到这里\N{\r原文\blur3}- I'm sorry?  - You were the one who put me on lockdown,
+Dialogue: 0,0:04:44.32,0:04:46.07,译文,,0,0,0,,{\blur3}这正是他们想要的\N{\r原文\blur3}which is exactly what they wanted.
+Dialogue: 0,0:04:46.07,0:04:48.82,译文,,0,0,0,,{\blur3}凯莉警探是唯一一个\N{\r原文\blur3}Detective Carey is the only one
+Dialogue: 0,0:04:48.82,0:04:51.28,译文,,0,0,0,,{\blur3}看出问题的人\N{\r原文\blur3}who managed to fathom something was wrong here.
+Dialogue: 0,0:04:52.57,0:04:56.66,译文,,0,0,0,,{\blur3}鉴于凯莉对全局的理解 也许她该留下\N{\r原文\blur3}Perhaps DCI Carey should stay, given she's fully conversant.
+Dialogue: 0,0:05:04.84,0:05:06.75,译文,,0,0,0,,{\blur3}我们要怎么办\N{\r原文\blur3}What are we going to do?
+Dialogue: 0,0:05:06.76,0:05:10.22,译文,,0,0,0,,{\blur3}多亏了 这个 荒唐的闹剧\N{\r原文\blur3}Thanks to this...whatever it is,
+Dialogue: 0,0:05:10.22,0:05:12.64,译文,,0,0,0,,{\blur3}整个国家现在都觉得\N{\r原文\blur3}the nation is now under the impression
+Dialogue: 0,0:05:12.64,0:05:14.64,译文,,0,0,0,,{\blur3}我愿意把面部识别外包给\N{\r原文\blur3}that I'm happy to farm out facial rec
+Dialogue: 0,0:05:14.64,0:05:17.18,译文,,0,0,0,,{\blur3}策划了这一切的外国敌对势力\N{\r原文\blur3}to the same hostile foreign power that orchestrated this.
+Dialogue: 0,0:05:17.18,0:05:19.31,译文,,0,0,0,,{\blur3}你确信这是中国的手笔\N{\r原文\blur3}You're convinced China's responsible?
+Dialogue: 0,0:05:19.31,0:05:22.06,译文,,0,0,0,,{\blur3}北京要试图干预英国的政策\N{\r原文\blur3}Beijing is trying to meddle in British policy.
+Dialogue: 0,0:05:22.06,0:05:24.69,译文,,0,0,0,,{\blur3}严王磊是赞达在伦敦的老大\N{\r原文\blur3}Yan Wanglei is Xanda's man in London.
+Dialogue: 0,0:05:24.69,0:05:26.27,译文,,0,0,0,,{\blur3}他绝对参与其中了 我很确定\N{\r原文\blur3}He's a part of it, I'm certain.
+Dialogue: 0,0:05:27.94,0:05:30.57,译文,,0,0,0,,{\blur3}显然 我们需要召开危机应对会议\N{\r原文\blur3}We need to call a COBRA meeting, obviously.
+Dialogue: 0,0:05:30.57,0:05:33.66,译文,,0,0,0,,{\blur3}情报部和国防部需要马上起草方案\N{\r原文\blur3}SIS and the MoD should begin drafting options immediately.
+Dialogue: 0,0:05:33.66,0:05:35.66,译文,,0,0,0,,{\blur3}先形成一版方案制定对策\N{\r原文\blur3}We'll need a raft to formulate our response,
+Dialogue: 0,0:05:35.66,0:05:39.04,译文,,0,0,0,,{\blur3}但最重要的是 我要去一趟\N{\r原文\blur3}but first and foremost, I would like to pay a visit
+Dialogue: 0,0:05:39.04,0:05:40.46,译文,,0,0,0,,{\blur3}BBC广播大厦\N{\r原文\blur3}to Broadcasting House.
+Dialogue: 0,0:05:45.92,0:05:47.67,译文,,0,0,0,,{\blur3}我试过拖住他了\N{\r原文\blur3}I managed to delay him.
+Dialogue: 0,0:05:53.68,0:05:56.80,译文,,0,0,0,,{\blur3}我们不想让你去是有原因的 艾萨克\N{\r原文\blur3}There's a reason I can't let you do that, Isaac.
+Dialogue: 0,0:05:58.52,0:06:00.85,译文,,0,0,0,,{\blur3}如果你跑去BBC\N{\r原文\blur3}If you go running off to the BBC,
+Dialogue: 0,0:06:00.85,0:06:02.85,译文,,0,0,0,,{\blur3}新闻肯定会铺天盖地的\N{\r原文\blur3}it'll end up all over the news.
+Dialogue: 0,0:06:04.94,0:06:07.19,译文,,0,0,0,,{\blur3}对 罗文 我也希望能做出澄清\N{\r原文\blur3}Yes, Rowan, I was rather hoping it might.
+Dialogue: 0,0:06:12.49,0:06:14.20,译文,,0,0,0,,{\blur3}你来决定吧 内政大臣\N{\r原文\blur3}Your decision, Home Secretary.
+Dialogue: 0,0:06:15.32,0:06:16.91,译文,,0,0,0,,{\blur3}我觉得最好澄清下\N{\r原文\blur3}Well, I think we'd better.
+Dialogue: 0,0:06:18.45,0:06:20.24,译文,,0,0,0,,{\blur3}这家伙承受了太多\N{\r原文\blur3}Poor bloke's been through enough.
+Dialogue: 0,0:06:22.50,0:06:25.42,译文,,0,0,0,,{\blur3}我们要提醒您 先生 作为一名政府大臣\N{\r原文\blur3}We ought to remind you, sir, that as a Government minister,
+Dialogue: 0,0:06:25.42,0:06:27.71,译文,,0,0,0,,{\blur3}你得遵守《官员保密法)\N{\r原文\blur3}you are bound by the Official Secrets Act.
+Dialogue: 0,0:06:27.71,0:06:29.88,译文,,0,0,0,,{\blur3}抱歉 有人能好心告诉我\N{\r原文\blur3}I'm sor... Is someone kindly going to tell me
+Dialogue: 0,0:06:29.88,0:06:31.88,译文,,0,0,0,,{\blur3}你们到底在说什么吗\N{\r原文\blur3}what the hell you're all talking about?
+Dialogue: 0,0:06:33.18,0:06:34.72,译文,,0,0,0,,{\blur3}好的\N{\r原文\blur3}Yes.
+Dialogue: 0,0:06:36.10,0:06:37.72,译文,,0,0,0,,{\blur3}让凯莉总督察来解释吧\N{\r原文\blur3}DCI Carey can explain it...
+Dialogue: 0,0:06:39.06,0:06:41.06,译文,,0,0,0,,{\blur3}鉴于她完全了解全局\N{\r原文\blur3}..given she's fully conversant.
+Dialogue: 0,0:06:44.35,0:06:46.77,译文,,0,0,0,,{\blur3}来吧 瑞秋 我们都坐稳了\N{\r原文\blur3}Come on, Rachel, we're all sitting comfortably.
+Dialogue: 0,0:06:46.77,0:06:50.40,译文,,0,0,0,,{\blur3}你来给特纳先生上一堂\N{\r原文\blur3}Why don't you tell Mr Turner everything he needs to know...
+Dialogue: 0,0:06:51.86,0:06:53.36,译文,,0,0,0,,{\blur3}关于「移花接木」的课吧\N{\r原文\blur3}..about Correction?
+Dialogue: 0,0:07:45.29,0:07:47.37,译文,,0,0,0,,{\blur3}明天同一时间再见\N{\r原文\blur3}We'll be back, of course, same time tomorrow.
+Dialogue: 0,0:07:47.37,0:07:50.25,译文,,0,0,0,,{\blur3}在那之前 祝大家晚安\N{\r原文\blur3}Until then, from all of us, goodnight.
+Dialogue: 0,0:07:50.25,0:07:51.84,译文,,0,0,0,,{\blur3}完毕\N{\r原文\blur3}We're clear.
+Dialogue: 0,0:07:53.01,0:07:56.05,译文,,0,0,0,,{\blur3}特纳的来访在推特上引起轩然大波\N{\r原文\blur3}The Turner interview is causing a sizeable Twitter storm.
+Dialogue: 0,0:07:56.05,0:07:58.30,译文,,0,0,0,,{\blur3}绝对没料到他会那么说\N{\r原文\blur3}Certainly wasn't expecting him to say that.
+Dialogue: 0,0:07:58.30,0:08:00.22,译文,,0,0,0,,{\blur3}#艾萨克墙头草\N{\r原文\blur3}#Isaacturncoat.
+Dialogue: 0,0:08:00.22,0:08:01.72,译文,,0,0,0,,{\blur3}他在想什么呢\N{\r原文\blur3}What was he thinking?!
+Dialogue: 0,0:08:01.72,0:08:03.68,译文,,0,0,0,,{\blur3}我有预感 这个新闻我们会继续跟进\N{\r原文\blur3}I have a feeling we'll be following this one up.
+Dialogue: 0,0:08:03.68,0:08:05.52,译文,,0,0,0,,{\blur3}下次让他来演播室\N{\r原文\blur3}Try to get him into the studio next time.
+Dialogue: 0,0:08:05.52,0:08:08.56,译文,,0,0,0,,{\blur3}我受够这些远程采访了 你明白我的意思吗\N{\r原文\blur3}Remote interviews depress me these days. Do you know what I mean?
+Dialogue: 0,0:08:08.56,0:08:13.23,译文,,0,0,0,,{\blur3}信号像90年代那样断断续续 一直延迟\N{\r原文\blur3}Uh-huh.  It might help if they didn't lag and freeze like it was 1996!
+Dialogue: 0,0:08:13.23,0:08:16.65,译文,,0,0,0,,{\blur3}-不该有延迟的啊 -艾德 但你看到延迟了\N{\r原文\blur3}- There shouldn't be any lagging. - Ed, you saw the lagging, right?
+Dialogue: 0,0:08:16.65,0:08:18.40,译文,,0,0,0,,{\blur3}对啊 当然\N{\r原文\blur3}Yeah, absolutely.
+Dialogue: 0,0:08:18.41,0:08:21.70,译文,,0,0,0,,{\blur3}整个节目怎么感觉只有我一个人在操心\N{\r原文\blur3}Sometimes I think I'm the only one actually watching around here.
+Dialogue: 0,0:08:23.49,0:08:26.41,译文,,0,0,0,,{\blur3}-不应该有延迟的 -去调查下 好吗\N{\r原文\blur3}- There shouldn't be any lagging. - Have a look into it, will you?
+Dialogue: 0,0:08:28.62,0:08:32.17,译文,,0,0,0,,{\blur3}所以我的遭遇 它还有个名字\N{\r原文\blur3}So, it has a name, what happened to me?
+Dialogue: 0,0:08:35.84,0:08:40.18,译文,,0,0,0,,{\blur3}「移花接木」 是一种实时图像处理的方法\N{\r原文\blur3}Correction...is a method of real-time image manipulation,
+Dialogue: 0,0:08:40.18,0:08:42.26,译文,,0,0,0,,{\blur3}通过干扰摄像头信号\N{\r原文\blur3}using the disruption of camera feeds
+Dialogue: 0,0:08:42.26,0:08:44.99,译文,,0,0,0,,{\blur3}的{\u1}深度伪造{\u0}技术来实现\N{\r原文\blur3}and the deployment of {\u1}deepfake{\u0} technology.
+Dialogue: 0,0:08:45.39,0:08:47.56,译文,,0,0,0,,{\blur3}"这项技术由中国开发"\N{\r原文\blur3}The technique was developed in China,
+Dialogue: 0,0:08:47.56,0:08:49.39,译文,,0,0,0,,{\blur3}但是它的应用已经扩展到\N{\r原文\blur3}but its usage has spread to...
+Dialogue: 0,0:08:51.56,0:08:52.81,译文,,0,0,0,,{\blur3}世界其它地区\N{\r原文\blur3}..other regions.
+Dialogue: 0,0:08:53.98,0:08:55.61,译文,,0,0,0,,{\blur3}哪些地区\N{\r原文\blur3}What regions?
+Dialogue: 0,0:08:58.24,0:09:00.91,译文,,0,0,0,,{\blur3}地区在不断扩大 但可以肯定的是\N{\r原文\blur3}The map is constantly evolving, but it's safe to assume
+Dialogue: 0,0:09:00.91,0:09:03.70,译文,,0,0,0,,{\blur3}「移花接木」技术已经扩展到了俄罗斯 美国\N{\r原文\blur3}Correction is in operation in Russia, United States...
+Dialogue: 0,0:09:03.70,0:09:05.16,译文,,0,0,0,,{\blur3}和英国\N{\r原文\blur3}The United Kingdom.
+Dialogue: 0,0:09:09.00,0:09:10.96,译文,,0,0,0,,{\blur3}怎么会扩展到这里\N{\r原文\blur3}Why would it be in operation here?
+Dialogue: 0,0:09:15.21,0:09:19.13,译文,,0,0,0,,{\blur3}比如 如果我们收到人恐怖分子的情报\N{\r原文\blur3}For instance, if we have intel on a terrorist plot,
+Dialogue: 0,0:09:19.13,0:09:21.97,译文,,0,0,0,,{\blur3}但对嫌犯的起诉证据还不够\N{\r原文\blur3}but the evidence against the suspects is insufficient.
+Dialogue: 0,0:09:21.97,0:09:24.18,译文,,0,0,0,,{\blur3}如果你们无法合法地收集到证据\N{\r原文\blur3}If you can't put them away fair and square,
+Dialogue: 0,0:09:24.18,0:09:26.22,译文,,0,0,0,,{\blur3}就会伪造犯罪录像\N{\r原文\blur3}you fake incriminating footage?
+Dialogue: 0,0:09:28.81,0:09:31.89,译文,,0,0,0,,{\blur3}我们会把情报变成证据\N{\r原文\blur3}We turn intelligence into evidence.
+Dialogue: 0,0:09:37.82,0:09:39.24,译文,,0,0,0,,{\blur3}这事都谁知道\N{\r原文\blur3}Who knows about this?
+Dialogue: 0,0:09:39.24,0:09:41.99,译文,,0,0,0,,{\blur3}这是一种高度保密的作战方法\N{\r原文\blur3}It's a highly-restricted operational tactic.
+Dialogue: 0,0:09:41.99,0:09:46.66,译文,,0,0,0,,{\blur3}仅限反恐指挥部 政府通讯总部和安全局特工知道 不超过50人\N{\r原文\blur3}No more than 50 operatives across SO15, GCHQ and the Security Service.
+Dialogue: 0,0:09:46.66,0:09:50.50,译文,,0,0,0,,{\blur3}但还有谁 司法大臣 首相知道吗\N{\r原文\blur3}But who else? The Justice Secretary? The PM?
+Dialogue: 0,0:09:50.50,0:09:52.96,译文,,0,0,0,,{\blur3}我无法问答你的问题\N{\r原文\blur3}You know I can't confirm or deny.
+Dialogue: 0,0:09:52.96,0:09:56.04,译文,,0,0,0,,{\blur3}英国政府在生产深伪技术\N{\r原文\blur3}The British state creating deep fakes?
+Dialogue: 0,0:09:57.92,0:10:02.13,译文,,0,0,0,,{\blur3}我们只生产我们知道是真实事件的图像\N{\r原文\blur3}We only ever produce images of events we know to be true.
+Dialogue: 0,0:10:08.31,0:10:10.10,译文,,0,0,0,,{\blur3}这...\N{\r原文\blur3}This is... Huh!
+Dialogue: 0,0:10:10.10,0:10:13.35,译文,,0,0,0,,{\blur3}不 不 不 这不可能\N{\r原文\blur3}No. No, no, no, this isn't happening.
+Dialogue: 0,0:10:18.61,0:10:22.24,译文,,0,0,0,,{\blur3}我插一句 这项目不是在我任期内开始\N{\r原文\blur3}If it makes a difference, this did not start on my watch.
+Dialogue: 0,0:10:23.45,0:10:27.03,译文,,0,0,0,,{\blur3}这碗道德大乱炖是我的前任留下来的\N{\r原文\blur3}This moral minestrone was gifted to me by my predecessor.
+Dialogue: 0,0:10:29.24,0:10:30.29,译文,,0,0,0,,{\blur3}所以为什么是我\N{\r原文\blur3}So, why me?
+Dialogue: 0,0:10:31.62,0:10:34.33,译文,,0,0,0,,{\blur3}他们选我是为了什么\N{\r原文\blur3}Where does this aberration come into it?
+Dialogue: 0,0:10:34.33,0:10:39.13,译文,,0,0,0,,{\blur3}因为能够生成权势人物的虚假形象\N{\r原文\blur3}Sadly, with the means to create false images of powerful people,
+Dialogue: 0,0:10:39.13,0:10:42.76,译文,,0,0,0,,{\blur3}「移花接木」技术已成为造谣的工具\N{\r原文\blur3}Correction has become a tool for disinformation.
+Dialogue: 0,0:10:42.76,0:10:47.10,译文,,0,0,0,,{\blur3}我们跟对手都在使用这种肮脏的技术\N{\r原文\blur3}Correction is the dirty secret we share with our adversaries.
+Dialogue: 0,0:10:47.10,0:10:49.85,译文,,0,0,0,,{\blur3}彼此心照不宣\N{\r原文\blur3}We can all deploy it covertly,
+Dialogue: 0,0:10:49.85,0:10:52.85,译文,,0,0,0,,{\blur3}但如果一个国家跳出来公开指责另一方\N{\r原文\blur3}but if one country accuses another publicly,
+Dialogue: 0,0:10:52.85,0:10:55.44,译文,,0,0,0,,{\blur3}我们就跟自爆无异\N{\r原文\blur3}we may as well blow the whistle on ourselves.
+Dialogue: 0,0:11:02.11,0:11:03.95,译文,,0,0,0,,{\blur3}你什么意思\N{\r原文\blur3}So, what are you saying?
+Dialogue: 0,0:11:03.95,0:11:07.03,译文,,0,0,0,,{\blur3}如果我们捅出有人「移花接木」了你的视频\N{\r原文\blur3}If we were to claim your appearance was corrected,
+Dialogue: 0,0:11:07.03,0:11:09.83,译文,,0,0,0,,{\blur3}别人也可以同样捅出我们\N{\r原文\blur3}it would leave us vulnerable to counter-accusations.
+Dialogue: 0,0:11:09.83,0:11:13.37,译文,,0,0,0,,{\blur3}然后整个世界的纸牌屋都会坍塌\N{\r原文\blur3}And then, the whole global house of cards comes tumbling down.
+Dialogue: 0,0:11:15.21,0:11:18.21,译文,,0,0,0,,{\blur3}你们 想让我闭嘴\N{\r原文\blur3}You...you expect me to keep my mouth shut
+Dialogue: 0,0:11:18.21,0:11:20.84,译文,,0,0,0,,{\blur3}让全世界相信这番鬼话是真的\N{\r原文\blur3}and let the world believe that malicious bullshit was real?
+Dialogue: 0,0:11:20.84,0:11:22.92,译文,,0,0,0,,{\blur3}抱歉 艾萨克 姚已经死了\N{\r原文\blur3}I'm sorry, Isaac. Edison Yao is dead!
+Dialogue: 0,0:11:22.92,0:11:27.05,译文,,0,0,0,,{\blur3}他们在杀害不同政见者 攻击我们的全国广播\N{\r原文\blur3}They are killing dissidents and attacking our national broadcasts!
+Dialogue: 0,0:11:27.05,0:11:29.14,译文,,0,0,0,,{\blur3}这是国家支持的恐怖行动\N{\r原文\blur3}These are acts of state-sponsored terror!
+Dialogue: 0,0:11:29.14,0:11:31.93,译文,,0,0,0,,{\blur3}我们会为此采取适当的行动的\N{\r原文\blur3}For which, appropriate action will be taken.
+Dialogue: 0,0:11:31.93,0:11:35.39,译文,,0,0,0,,{\blur3}只要不捅出什么恐怖项目就行\N{\r原文\blur3}So long as it doesn't upset some spook programme?!
+Dialogue: 0,0:11:35.39,0:11:38.10,译文,,0,0,0,,{\blur3}只要不影响政府\N{\r原文\blur3}So long as it doesn't upset the Government,
+Dialogue: 0,0:11:38.11,0:11:40.77,译文,,0,0,0,,{\blur3}法院 军情五处和警方\N{\r原文\blur3}the courts, MI5 and the police.
+Dialogue: 0,0:11:42.69,0:11:44.24,译文,,0,0,0,,{\blur3}听懂了吗\N{\r原文\blur3}Good enough?
+Dialogue: 0,0:11:49.45,0:11:51.62,译文,,0,0,0,,{\blur3}希望我们可以相信这位南哈斯米尔的议员\N{\r原文\blur3}Let's hope we can rely on the Right Honourable Member
+Dialogue: 0,0:11:51.62,0:11:53.91,译文,,0,0,0,,{\blur3}能保守住秘密\N{\r原文\blur3}for Haslemere South to keep his trap shut.
+Dialogue: 0,0:11:53.91,0:11:56.87,译文,,0,0,0,,{\blur3}我们要看管好艾萨克·特纳 封闭保护警员\N{\r原文\blur3}We keep Isaac Turner on a short leash. Close protection officers,
+Dialogue: 0,0:11:56.87,0:11:58.83,译文,,0,0,0,,{\blur3}拦截和监控所有设备\N{\r原文\blur3}intercepts and monitoring on all devices.
+Dialogue: 0,0:11:58.83,0:12:01.09,译文,,0,0,0,,{\blur3}包括他的员工 他们安排了那次采访\N{\r原文\blur3}Same goes for his staff. They arranged that interview.
+Dialogue: 0,0:12:01.09,0:12:02.80,译文,,0,0,0,,{\blur3}其中也可能有人是同谋\N{\r原文\blur3}Any one of them could be complicit.
+Dialogue: 0,0:12:02.80,0:12:04.30,译文,,0,0,0,,{\blur3}你见过那样的「移花接木」吗\N{\r原文\blur3}Do you see Correction like that?
+Dialogue: 0,0:12:07.89,0:12:10.18,译文,,0,0,0,,{\blur3}特纳说得对 我们面对的是自{\u1}索尔兹伯里{\u0}以来\N{\r原文\blur3}Turner's right, we're looking at the most {\u1}blatant attack{\u0}
+Dialogue: 0,0:12:10.18,0:12:11.93,译文,,0,0,0,,{\blur3}外国势力是最严重的袭击\N{\r原文\blur3}by a foreign power since Salisbury.
+Dialogue: 0,0:12:13.27,0:12:17.69,译文,,0,0,0,,{\blur3}-你需要什么资源 -秘密团队 反恐指挥部 政府通讯部和中情局的全力支持\N{\r原文\blur3}- What do you need?  - Tight team, SO15, GCHQ and CIA to support.
+Dialogue: 0,0:12:17.69,0:12:19.56,译文,,0,0,0,,{\blur3}你想团队里都有谁\N{\r原文\blur3}Who do you want on your team?
+Dialogue: 0,0:12:21.69,0:12:23.98,译文,,0,0,0,,{\blur3}瑞秋让特纳印象深刻\N{\r原文\blur3}Rachel certainly made an impression on Turner.
+Dialogue: 0,0:12:25.07,0:12:26.57,译文,,0,0,0,,{\blur3}拉他加入我们也挺好\N{\r原文\blur3}Wouldn't hurt to keep him onside.
+Dialogue: 0,0:12:26.57,0:12:29.61,译文,,0,0,0,,{\blur3}看来你忘了她差点就要举报我们了\N{\r原文\blur3}You seem to forget how close she came to reporting us.
+Dialogue: 0,0:12:29.62,0:12:31.37,译文,,0,0,0,,{\blur3}那是在你说服她之前\N{\r原文\blur3}That was before you won her over.
+Dialogue: 0,0:12:33.20,0:12:35.20,译文,,0,0,0,,{\blur3}更别说我们发现了什么\N{\r原文\blur3}Not to mention what we found.
+Dialogue: 0,0:12:36.41,0:12:39.50,译文,,0,0,0,,{\blur3}这是保险的做法 你也会这么做的\N{\r原文\blur3}That was insurance. You'd do the same.
+Dialogue: 0,0:12:40.58,0:12:42.17,译文,,0,0,0,,{\blur3}有人监视着她吧\N{\r原文\blur3}She's being watched, isn't she?
+Dialogue: 0,0:12:44.21,0:12:45.59,译文,,0,0,0,,{\blur3}还有什么担心吗\N{\r原文\blur3}Any concerns?
+Dialogue: 0,0:12:47.88,0:12:50.34,译文,,0,0,0,,{\blur3}如果你还是不信任她 杰玛 你知道该怎么做\N{\r原文\blur3}If you still don't trust her, Gemma, you know what to do.
+Dialogue: 0,0:12:53.35,0:12:55.10,译文,,0,0,0,,{\blur3}观察好她\N{\r原文\blur3}Keep her close.
+Dialogue: 0,0:13:05.94,0:13:08.74,译文,,0,0,0,,{\blur3}我需要一名总督察作反恐部门和凶杀组的联络人\N{\r原文\blur3}I'll need a DCI to bridge Homicide and SO15.
+Dialogue: 0,0:13:10.99,0:13:12.78,译文,,0,0,0,,{\blur3}-有兴趣吗 -有 长官\N{\r原文\blur3}- If you're interested?  - I am, Ma'am.
+Dialogue: 0,0:13:14.24,0:13:16.99,译文,,0,0,0,,{\blur3}你需要助手 你看中谁了\N{\r原文\blur3}You'll need assistance. What do you make of the new blood?
+Dialogue: 0,0:13:17.00,0:13:19.12,译文,,0,0,0,,{\blur3}谭警员\N{\r原文\blur3}DC Tan?
+Dialogue: 0,0:13:19.12,0:13:22.29,译文,,0,0,0,,{\blur3}几年前 他们还会称我为快速通道公主呢\N{\r原文\blur3}Couple of years ago, they'd have called her fast-track princess.
+Dialogue: 0,0:13:22.29,0:13:25.00,译文,,0,0,0,,{\blur3}他们也叫过我 具体叫我什么就不说了\N{\r原文\blur3}They did me. I won't repeat what they called me.
+Dialogue: 0,0:13:28.30,0:13:31.76,译文,,0,0,0,,{\blur3}拉蒂夫督查 你让安全屋暴露在危险中\N{\r原文\blur3}DI Latif, you have compromised the location of a safe house.
+Dialogue: 0,0:13:31.76,0:13:34.76,译文,,0,0,0,,{\blur3}这种违反安全的行为 可能要受到纪律处分\N{\r原文\blur3}A security breach that may warrant disciplinary action.
+Dialogue: 0,0:13:34.76,0:13:36.85,译文,,0,0,0,,{\blur3}但是长官 我虽还未做出决定\N{\r原文\blur3}But, Ma'am, I... While a decision is pending,
+Dialogue: 0,0:13:36.85,0:13:40.23,译文,,0,0,0,,{\blur3}但禁止你参与这次行动 即刻生效\N{\r原文\blur3}your inclusion in this operation is suspended with immediate effect.
+Dialogue: 0,0:13:40.23,0:13:42.65,译文,,0,0,0,,{\blur3}你可以回到原单位继续履职\N{\r原文\blur3}You may return to your departmental duties,
+Dialogue: 0,0:13:42.65,0:13:44.44,译文,,0,0,0,,{\blur3}但这里不需要你了\N{\r原文\blur3}but your time with us ends here.
+Dialogue: 0,0:13:46.94,0:13:49.36,译文,,0,0,0,,{\blur3}就感谢你的处罚没那么严重吧\N{\r原文\blur3}Be thankful the repercussions aren't more severe.
+Dialogue: 0,0:13:52.57,0:13:54.20,译文,,0,0,0,,{\blur3}带上谭警员一起\N{\r原文\blur3}Bring DC Tan in with you.
+Dialogue: 0,0:13:54.20,0:13:56.99,译文,,0,0,0,,{\blur3}去哪儿 长官\N{\r原文\blur3}In where, Ma'am?
+Dialogue: 0,0:13:56.99,0:13:58.91,译文,,0,0,0,,{\blur3}7楼\N{\r原文\blur3}Seventh floor.
+Dialogue: 0,0:13:58.91,0:14:00.46,译文,,0,0,0,,{\blur3}地图部门呢\N{\r原文\blur3}What about Mapping?
+Dialogue: 0,0:14:01.96,0:14:03.37,译文,,0,0,0,,{\blur3}地图部门自己就能运行\N{\r原文\blur3}Mapping runs itself.
+Dialogue: 0,0:14:09.97,0:14:12.68,译文,,0,0,0,,{\blur3}你一直想要我的案子\N{\r原文\blur3}Well, you WANTED to take over my case.
+Dialogue: 0,0:14:14.47,0:14:16.10,译文,,0,0,0,,{\blur3}终于得偿所愿了\N{\r原文\blur3}Got what you wished for.
+Dialogue: 0,0:14:59.81,0:15:02.14,译文,,0,0,0,,{\blur3}我是总督察瑞秋·凯莉\N{\r原文\blur3}This is DCI Rachel Carey.
+Dialogue: 0,0:15:02.14,0:15:04.23,译文,,0,0,0,,{\blur3}进行隐藏摄像拍摄\N{\r原文\blur3}In place of hidden camera recording,
+Dialogue: 0,0:15:04.23,0:15:07.31,译文,,0,0,0,,{\blur3}拍摄此视频是要实名举报\N{\r原文\blur3}I'm filming this eyewitness testimony for my dossier
+Dialogue: 0,0:15:07.31,0:15:10.15,译文,,0,0,0,,{\blur3}详细记录了系统性的\N{\r原文\blur3}detailing the systematic illegal practice
+Dialogue: 0,0:15:10.15,0:15:13.69,译文,,0,0,0,,{\blur3}非法算改视频证据的行为 即「移花接木」\N{\r原文\blur3}of video-evidence tampering known as Correction.
+Dialogue: 0,0:15:13.70,0:15:16.53,译文,,0,0,0,,{\blur3}大约一小时前\N{\r原文\blur3}Approximately one hour ago,
+Dialogue: 0,0:15:16.53,0:15:20.33,译文,,0,0,0,,{\blur3}我出席了内政大臣罗文·吉尔的简报会\N{\r原文\blur3}I was present at a briefing with Home Secretary Rowan Gill,
+Dialogue: 0,0:15:20.33,0:15:23.16,译文,,0,0,0,,{\blur3}了解到「移花接木」的所有内情\N{\r原文\blur3}who I learned has full knowledge of Correction
+Dialogue: 0,0:15:23.16,0:15:24.75,译文,,0,0,0,,{\blur3}以及其在英国的应用\N{\r原文\blur3}and its use within the UK.
+Dialogue: 0,0:15:24.75,0:15:28.84,译文,,0,0,0,,{\blur3}同时出席的还有安全大臣艾萨克·特纳 他\N{\r原文\blur3}Also present was the Security Minister Isaac Turner, who...
+Dialogue: 0,0:15:30.38,0:15:34.17,译文,,0,0,0,,{\blur3}在简报会之前 对「移花接木」全然不知情\N{\r原文\blur3}..until the briefing, had no prior knowledge of Correction.
+Dialogue: 0,0:15:41.01,0:15:42.68,译文,,0,0,0,,{\blur3}你之前为什么不给我打电话\N{\r原文\blur3}Why couldn't you call me before?
+Dialogue: 0,0:15:44.18,0:15:46.73,译文,,0,0,0,,{\blur3}涉及机密\N{\r原文\blur3}Er...security.
+Dialogue: 0,0:15:46.73,0:15:48.77,译文,,0,0,0,,{\blur3}警方要求的\N{\r原文\blur3}Police insisted.
+Dialogue: 0,0:15:48.77,0:15:52.69,译文,,0,0,0,,{\blur3}所以 你可以上《新闻之夜》跟哈迪亚·汗大谈特谈\N{\r原文\blur3}So, you can go on Newsnight and talk to Khadija Khan,
+Dialogue: 0,0:15:52.69,0:15:54.40,译文,,0,0,0,,{\blur3}却不能打给你妻子\N{\r原文\blur3}but you can't call your wife?
+Dialogue: 0,0:15:54.40,0:15:56.15,译文,,0,0,0,,{\blur3}我没\N{\r原文\blur3}I wasn't...
+Dialogue: 0,0:15:56.16,0:15:57.91,译文,,0,0,0,,{\blur3}我没上《新闻之夜》\N{\r原文\blur3}I wasn't on Newsnight.
+Dialogue: 0,0:15:57.91,0:15:59.82,译文,,0,0,0,,{\blur3}你知道我什么意思\N{\r原文\blur3}You know what I mean.
+Dialogue: 0,0:15:59.83,0:16:01.49,译文,,0,0,0,,{\blur3}远程控制\N{\r原文\blur3}Remotely.
+Dialogue: 0,0:16:04.87,0:16:06.58,译文,,0,0,0,,{\blur3}你为什么改主意了\N{\r原文\blur3}Why did you change your mind?
+Dialogue: 0,0:16:08.33,0:16:10.29,译文,,0,0,0,,{\blur3}关于面部识别合同的事\N{\r原文\blur3}About the facial-rec contract?
+Dialogue: 0,0:16:12.30,0:16:14.55,译文,,0,0,0,,{\blur3}我不能说 西蒙\N{\r原文\blur3}I can't talk about it, Simmy.
+Dialogue: 0,0:16:16.13,0:16:19.76,译文,,0,0,0,,{\blur3}对了 你说的是"肤色不同的人"\N{\r原文\blur3}You said "people of colour", by the way.
+Dialogue: 0,0:16:19.76,0:16:22.43,译文,,0,0,0,,{\blur3}我以为你不喜欢这个词呢\N{\r原文\blur3}I thought you didn't like that phrase?
+Dialogue: 0,0:16:24.52,0:16:27.48,译文,,0,0,0,,{\blur3}你总说它听起来太像"有色人种"\N{\r原文\blur3}You always said it sounded too close to "coloured people".
+Dialogue: 0,0:16:30.31,0:16:31.98,译文,,0,0,0,,{\blur3}不过你做得很好\N{\r原文\blur3}You did good, though,
+Dialogue: 0,0:16:31.98,0:16:33.69,译文,,0,0,0,,{\blur3}采访里\N{\r原文\blur3}in the interview.
+Dialogue: 0,0:16:33.69,0:16:35.23,译文,,0,0,0,,{\blur3}是吗\N{\r原文\blur3}Oh, yeah?
+Dialogue: 0,0:16:35.24,0:16:37.07,译文,,0,0,0,,{\blur3}不是你说的那些话 而是\N{\r原文\blur3}Not what you said, just...
+Dialogue: 0,0:16:38.53,0:16:39.91,译文,,0,0,0,,{\blur3}你说话的方式\N{\r原文\blur3}..the way you said it.
+Dialogue: 0,0:16:41.53,0:16:44.99,译文,,0,0,0,,{\blur3}你听起来 很权威\N{\r原文\blur3}You sounded...authoritative.
+Dialogue: 0,0:16:53.50,0:16:54.96,译文,,0,0,0,,{\blur3}我想听真话 艾萨克\N{\r原文\blur3}I want the truth, Isaac.
+Dialogue: 0,0:16:56.38,0:16:58.59,译文,,0,0,0,,{\blur3}那些要杀了格雷戈里·诺克斯的人\N{\r原文\blur3}The people who tried to kill Gregory Knox...
+Dialogue: 0,0:17:00.34,0:17:02.47,译文,,0,0,0,,{\blur3}-也会想杀你吗 -不会\N{\r原文\blur3}- ..are they going to try to kill you? - No. No, no.
+Dialogue: 0,0:17:02.47,0:17:03.76,译文,,0,0,0,,{\blur3}说实话\N{\r原文\blur3}The truth.
+Dialogue: 0,0:17:07.89,0:17:09.35,译文,,0,0,0,,{\blur3}我不知道\N{\r原文\blur3}I don't know.
+Dialogue: 0,0:17:11.15,0:17:13.11,译文,,0,0,0,,{\blur3}事实证明 我不知道的事有很多\N{\r原文\blur3}Turns out there's a lot I don't know.
+Dialogue: 0,0:18:14.29,0:18:17.38,译文,,0,0,0,,{\blur3}先锋行动的首要任务如下\N{\r原文\blur3}The priorities of Operation Vanguard are as follows.
+Dialogue: 0,0:18:17.38,0:18:20.13,译文,,0,0,0,,{\blur3}调查过去的36小时里在首都发生的\N{\r原文\blur3}To investigate a series of targeted assassinations
+Dialogue: 0,0:18:20.13,0:18:22.55,译文,,0,0,0,,{\blur3}一系列有针对性的暗杀行动\N{\r原文\blur3}across the capital in the past 36 hours,
+Dialogue: 0,0:18:22.55,0:18:25.34,译文,,0,0,0,,{\blur3}确定主要嫌疑犯\N{\r原文\blur3}to identify the prime suspects
+Dialogue: 0,0:18:25.35,0:18:28.39,译文,,0,0,0,,{\blur3}收集针对英国监控网络\N{\r原文\blur3}and to gather intelligence on a campaign of cyberattacks
+Dialogue: 0,0:18:28.39,0:18:30.43,译文,,0,0,0,,{\blur3}以及一家主流电视广播公司的\N{\r原文\blur3}against UK surveillance networks
+Dialogue: 0,0:18:30.43,0:18:32.35,译文,,0,0,0,,{\blur3}网络攻击行动的情报\N{\r原文\blur3}and a major television broadcaster.
+Dialogue: 0,0:18:33.98,0:18:38.32,译文,,0,0,0,,{\blur3}这次对英国基础设施和平民的公然攻击\N{\r原文\blur3}This blatant attack on UK infrastructure and civilians
+Dialogue: 0,0:18:38.32,0:18:41.40,译文,,0,0,0,,{\blur3}是我见过的最令人发指的袭击之一\N{\r原文\blur3}is one of the most heinous I've come across.
+Dialogue: 0,0:18:41.40,0:18:44.70,译文,,0,0,0,,{\blur3}不仅仅是因为他们伤害了我们的同僚\N{\r原文\blur3}Not least because they've hurt one of our own.
+Dialogue: 0,0:18:44.70,0:18:47.49,译文,,0,0,0,,{\blur3}根据我们的评估 这一连串的袭击\N{\r原文\blur3}It is our assessment that this chain of attacks
+Dialogue: 0,0:18:47.49,0:18:49.83,译文,,0,0,0,,{\blur3}与BBC遭受的黑客攻击有关\N{\r原文\blur3}was coordinated with a hack on the BBC
+Dialogue: 0,0:18:49.87,0:18:52.87,译文,,0,0,0,,{\blur3}是外国故对势力企图影响政府决策的阴谋\N{\r原文\blur3}in a plot to affect government policy by a hostile foreign power.
+Dialogue: 0,0:18:54.17,0:18:57.75,译文,,0,0,0,,{\blur3}在搜寻谋杀嫌疑人的过程中\N{\r原文\blur3}While the trawl for any trace of the murder suspects continues,
+Dialogue: 0,0:18:57.75,0:19:01.13,译文,,0,0,0,,{\blur3}特纳本人提醒我们要注意这个嫌疑人\N{\r原文\blur3}Turner himself alerted us to this person of interest.
+Dialogue: 0,0:19:01.13,0:19:04.05,译文,,0,0,0,,{\blur3}作为赞达面部识别系统驻伦敦首席执行官\N{\r原文\blur3}As London CEO of Xanda Facial Rec,
+Dialogue: 0,0:19:04.08,0:19:08.01,译文,,0,0,0,,{\blur3}严王磊动机充分且具备技术能力\N{\r原文\blur3}Yan Wanglei has the motive and the technical capability.
+Dialogue: 0,0:19:08.01,0:19:10.85,译文,,0,0,0,,{\blur3}考虑到他是位备受瞩目的中国公民\N{\r原文\blur3}Now, given his status as a high-profile Chinese national,
+Dialogue: 0,0:19:10.85,0:19:13.85,译文,,0,0,0,,{\blur3}应该无需我告诉各位侦办此案要有多谨慎\N{\r原文\blur3}I need hardly tell you how carefully we need to tread here.
+Dialogue: 0,0:19:13.85,0:19:17.48,译文,,0,0,0,,{\blur3}任何逮捕行动都将构成重大国际事件\N{\r原文\blur3}Any arrest will constitute a major international incident.
+Dialogue: 0,0:19:17.48,0:19:19.77,译文,,0,0,0,,{\blur3}但不必误会 如若证据确凿\N{\r原文\blur3}But make no mistake, we will arrest him
+Dialogue: 0,0:19:19.78,0:19:21.65,译文,,0,0,0,,{\blur3}我们会将他缉捕归案\N{\r原文\blur3}if that's where the evidence leads us.
+Dialogue: 0,0:19:21.65,0:19:24.86,译文,,0,0,0,,{\blur3}我们今天上午很恭敬的联系了王磊先生\N{\r原文\blur3}We've reached out respectfully to Mr Wanglei this morning,
+Dialogue: 0,0:19:24.86,0:19:27.70,译文,,0,0,0,,{\blur3}他答应接受我们的询问\N{\r原文\blur3}and he's accepted our invitation to be questioned.
+Dialogue: 0,0:19:27.70,0:19:30.54,译文,,0,0,0,,{\blur3}前提是要在中国大使馆里进行\N{\r原文\blur3}Provided it takes place at the Chinese Embassy
+Dialogue: 0,0:19:30.54,0:19:33.16,译文,,0,0,0,,{\blur3}并要求晓东大使在场\N{\r原文\blur3}in the presence of Ambassador Xiaodong.
+Dialogue: 0,0:19:33.16,0:19:36.96,译文,,0,0,0,,{\blur3}有人要猜猜犯罪嫌疑人现在的位置吗\N{\r原文\blur3}Anyone care to guess the POI's current location?
+Dialogue: 0,0:19:36.96,0:19:38.96,译文,,0,0,0,,{\blur3}中国大使馆吗\N{\r原文\blur3}Chinese Embassy?
+Dialogue: 0,0:19:38.96,0:19:41.80,译文,,0,0,0,,{\blur3}谢天谢地你终于来了 凯莉\N{\r原文\blur3}Thank God you're here, Carey, finally.
+Dialogue: 0,0:19:43.34,0:19:46.30,译文,,0,0,0,,{\blur3}没错 他在大使馆里\N{\r原文\blur3}Yes, he's tucked away at the embassy.
+Dialogue: 0,0:19:46.30,0:19:49.39,译文,,0,0,0,,{\blur3}就依他要求 我会去拜访大使\N{\r原文\blur3}Let's take him up on his offer. I'll pay the ambassador a visit.
+Dialogue: 0,0:19:49.39,0:19:53.60,译文,,0,0,0,,{\blur3}如果是北京方面授意 那就有合理的理由怀疑他是同谋\N{\r原文\blur3}If this came from Beijing, there's reasonable grounds he's complicit.
+Dialogue: 0,0:19:53.60,0:19:56.35,译文,,0,0,0,,{\blur3}我可以一并去大使馆\N{\r原文\blur3}I could come...to the embassy...
+Dialogue: 0,0:19:57.60,0:19:59.27,译文,,0,0,0,,{\blur3}如果有帮助的话\N{\r原文\blur3}..if it helps.
+Dialogue: 0,0:19:59.27,0:20:00.90,译文,,0,0,0,,{\blur3}你会说普通话吗\N{\r原文\blur3}Do you speak Mandarin?
+Dialogue: 0,0:20:00.90,0:20:02.36,译文,,0,0,0,,{\blur3}不会\N{\r原文\blur3}No.
+Dialogue: 0,0:20:02.36,0:20:03.99,译文,,0,0,0,,{\blur3}只会说几句\N{\r原文\blur3}A couple of words.
+Dialogue: 0,0:20:03.99,0:20:05.40,译文,,0,0,0,,{\blur3}那为什么\N{\r原文\blur3}Then, why...?
+Dialogue: 0,0:20:06.91,0:20:09.16,译文,,0,0,0,,{\blur3}只是\N{\r原文\blur3}Well...just...
+Dialogue: 0,0:20:10.45,0:20:12.08,译文,,0,0,0,,{\blur3}会不会能起到点...\N{\r原文\blur3}Isn't that a bit...?
+Dialogue: 0,0:20:12.08,0:20:14.29,译文,,0,0,0,,{\blur3}我觉得是个好主意 谭警员\N{\r原文\blur3}I think that's a good idea, DC Tan.
+Dialogue: 0,0:20:14.29,0:20:16.41,译文,,0,0,0,,{\blur3}-克洛伊 -我需要支持\N{\r原文\blur3}- Chloe.  - I'll need the support.
+Dialogue: 0,0:20:19.42,0:20:21.63,译文,,0,0,0,,{\blur3}同意 失陪\N{\r原文\blur3}Agreed. Excuse me.
+Dialogue: 0,0:20:25.22,0:20:26.72,译文,,0,0,0,,{\blur3}瑞秋\N{\r原文\blur3}Rachel?
+Dialogue: 0,0:20:28.64,0:20:31.80,译文,,0,0,0,,{\blur3}对中国来说 就像是1939年把英国的雷达合同\N{\r原文\blur3}..to China was like handing a British radar contract
+Dialogue: 0,0:20:31.81,0:20:33.93,译文,,0,0,0,,{\blur3}交给德国一样\N{\r原文\blur3}to Germany in 1939.
+Dialogue: 0,0:20:33.93,0:20:37.23,译文,,0,0,0,,{\blur3}我做过调查 没发现赞达同中国当局之间\N{\r原文\blur3}I've done my research, I found no evidence of a link between Xanda
+Dialogue: 0,0:20:37.23,0:20:39.19,译文,,0,0,0,,{\blur3}有联系\N{\r原文\blur3}and the Chinese authorities.
+Dialogue: 0,0:20:39.19,0:20:42.73,译文,,0,0,0,,{\blur3}作为英国安全大臣 我完全支持中研委的\N{\r原文\blur3}As Britain's Security Minister, I fully support the CRC's...
+Dialogue: 0,0:20:47.40,0:20:50.99,译文,,0,0,0,,{\blur3}通过摄像头进行远程采访 罪犯要做的就是\N{\r原文\blur3}Remote interview via webcam. All the perps would need to do is
+Dialogue: 0,0:20:50.99,0:20:53.41,译文,,0,0,0,,{\blur3}把他们的消息发给BBC\N{\r原文\blur3}pipe in their feed to the BBC.
+Dialogue: 0,0:20:53.41,0:20:56.12,译文,,0,0,0,,{\blur3}所有远程摄像头都有可能被黑客入侵\N{\r原文\blur3}Any remote camera has the potential to be hacked.
+Dialogue: 0,0:20:58.25,0:21:01.38,译文,,0,0,0,,{\blur3}与主机无缝交互\N{\r原文\blur3}Interaction with the host, seamless.
+Dialogue: 0,0:21:02.54,0:21:04.46,译文,,0,0,0,,{\blur3}你怀疑她与此事有关\N{\r原文\blur3}You suspect her involvement?
+Dialogue: 0,0:21:04.46,0:21:06.92,译文,,0,0,0,,{\blur3}大人说话的时候\N{\r原文\blur3}Isn't it customary to send the kids to bed
+Dialogue: 0,0:21:06.92,0:21:08.93,译文,,0,0,0,,{\blur3}不是该让小孩上床睡觉去吗\N{\r原文\blur3}when the grown-ups are talking?
+Dialogue: 0,0:21:08.93,0:21:12.35,译文,,0,0,0,,{\blur3}凯莉总督察和我们一样有权待在这里\N{\r原文\blur3}DCI Carey has the same right to be here as any of us.
+Dialogue: 0,0:21:12.35,0:21:16.02,译文,,0,0,0,,{\blur3}你具体想说什么 哈迪亚·汗是同谋吗\N{\r原文\blur3}What are you saying exactly - Khadija Khan is complicit?
+Dialogue: 0,0:21:16.02,0:21:20.23,译文,,0,0,0,,{\blur3}或者说虚拟形象可以实时回答她的问题\N{\r原文\blur3}Or the avatar can respond to her questions in real time?
+Dialogue: 0,0:21:20.23,0:21:23.94,译文,,0,0,0,,{\blur3}有可能构建这种深伪技术吗\N{\r原文\blur3}Is it possible to create a deepfake that sophisticated?
+Dialogue: 0,0:21:24.94,0:21:29.99,译文,,0,0,0,,{\blur3}我们的技术还没达到\N{\r原文\blur3}Hmm? Oh. Well...we haven't gotten there yet.
+Dialogue: 0,0:21:29.99,0:21:31.82,译文,,0,0,0,,{\blur3}要能做出来的话 也是中国有这能力\N{\r原文\blur3}If anyone has, it's China.
+Dialogue: 0,0:21:31.82,0:21:34.58,译文,,0,0,0,,{\blur3}我很乐意告诉你们怎么去他们大使馆\N{\r原文\blur3}I'd love to furnish you with directions to their embassy.
+Dialogue: 0,0:21:34.58,0:21:37.50,译文,,0,0,0,,{\blur3}既然你能黑进主机 干嘛还走大门\N{\r原文\blur3}Why use the front door when you can hack the mainframe?
+Dialogue: 0,0:21:37.50,0:21:40.33,译文,,0,0,0,,{\blur3}抱歉 我帮不了你\N{\r原文\blur3}Oh, sorry, I can't help you there.
+Dialogue: 0,0:21:40.33,0:21:43.63,译文,,0,0,0,,{\blur3}你说什么 行政部门下的禁制令\N{\r原文\blur3}Beg your pardon?  Strict orders from the executive branch.
+Dialogue: 0,0:21:43.63,0:21:47.51,译文,,0,0,0,,{\blur3}情报机构不能再协助针对中华人民共和国的\N{\r原文\blur3}The agency can no longer assist in third-party counter-espionage
+Dialogue: 0,0:21:47.51,0:21:49.84,译文,,0,0,0,,{\blur3}第三方反间谍活动\N{\r原文\blur3}against the People's Republic of China.
+Dialogue: 0,0:21:49.84,0:21:52.76,译文,,0,0,0,,{\blur3}-为什么不行 -因为你和他们做了太多生意\N{\r原文\blur3}- Why the hell not?!  - Because you do too much business with them,
+Dialogue: 0,0:21:52.76,0:21:55.64,译文,,0,0,0,,{\blur3}就因为这个 我当初跟你说别跟北京纠缠不清的时候\N{\r原文\blur3}that's why! When we tell you not to get into bed with Beijing,
+Dialogue: 0,0:21:55.64,0:21:57.22,译文,,0,0,0,,{\blur3}你充耳不闻\N{\r原文\blur3}you bury deeper into the sheets!
+Dialogue: 0,0:21:57.22,0:21:58.81,译文,,0,0,0,,{\blur3}所以 是因为钱喽\N{\r原文\blur3}So, this is about money?
+Dialogue: 0,0:21:58.81,0:22:00.52,译文,,0,0,0,,{\blur3}是为了安全\N{\r原文\blur3}It's about security!
+Dialogue: 0,0:22:00.52,0:22:03.65,译文,,0,0,0,,{\blur3}我们和英国分享了很多情报\N{\r原文\blur3}You know, we share a lot of intel with the UK.
+Dialogue: 0,0:22:03.65,0:22:06.23,译文,,0,0,0,,{\blur3}我想知道中国并不知情\N{\r原文\blur3}I'd like to know that China isn't listening.
+Dialogue: 0,0:22:07.69,0:22:11.32,译文,,0,0,0,,{\blur3}有留言 长官 安东尼·里德让你联系他\N{\r原文\blur3}Message for you, ma'am. Anthony Reid asked that you contact him.
+Dialogue: 0,0:22:11.32,0:22:12.61,译文,,0,0,0,,{\blur3}他说是急事\N{\r原文\blur3}Oh.  He says it's urgent.
+Dialogue: 0,0:22:12.61,0:22:17.29,译文,,0,0,0,,{\blur3}-安东尼·里德 -对\N{\r原文\blur3}- Anthony Reid?  - Yes.
+Dialogue: 0,0:22:14.96,0:22:17.32,译文,,0,0,0,,{\blur3}{\r原文\blur3}THE Anthony Reid?  Yes.
+Dialogue: 0,0:22:17.29,0:22:20.75,译文,,0,0,0,,{\blur3}-那他妈是谁啊 -BBC的安全记者\N{\r原文\blur3}- Who the fuck's that? - Security correspondent for the BBC.
+Dialogue: 0,0:22:20.75,0:22:22.37,译文,,0,0,0,,{\blur3}不可能是巧合\N{\r原文\blur3}It can't be a coincidence.
+Dialogue: 0,0:22:22.37,0:22:24.96,译文,,0,0,0,,{\blur3}-反正我们也要查到那步的对吧 -我本指望\N{\r原文\blur3}- Surely we need to investigate there anyway?  - I was hoping
+Dialogue: 0,0:22:24.96,0:22:27.88,译文,,0,0,0,,{\blur3}这事儿能尽可能久地远离媒体\N{\r原文\blur3}to keep this away from the press for as long as humanly possible.
+Dialogue: 0,0:22:27.88,0:22:30.80,译文,,0,0,0,,{\blur3}我想留下来\N{\r原文\blur3}Well, I'd like to stick around.
+Dialogue: 0,0:22:30.80,0:22:33.63,译文,,0,0,0,,{\blur3}等你的国家学会怎么选边站的时候再打给我\N{\r原文\blur3}Give me a call when your country learns how to pick a side.
+Dialogue: 0,0:22:34.89,0:22:36.26,译文,,0,0,0,,{\blur3}弗兰克\N{\r原文\blur3}Frank?!
+Dialogue: 0,0:22:44.65,0:22:47.73,译文,,0,0,0,,{\blur3}听着 如果你需要技术支持去对付BBC\N{\r原文\blur3}Frank!
+Dialogue: 0,0:22:44.68,0:22:47.76,译文,,0,0,0,,{\blur3}{\r原文\blur3}Look, if you need technical help with the BBC,
+Dialogue: 0,0:22:47.73,0:22:49.65,译文,,0,0,0,,{\blur3}我可以借给你我的一个人\N{\r原文\blur3}I'll loan you one of my guys.
+Dialogue: 0,0:22:49.65,0:22:52.53,译文,,0,0,0,,{\blur3}但要是让我发现你把技术用来对付中国 交易取消\N{\r原文\blur3}But if I find out you put them on China, the deal's off.
+Dialogue: 0,0:22:54.82,0:22:57.87,译文,,0,0,0,,{\blur3}弗兰克·纳皮尔什么时候开始听从政客发号施令了\N{\r原文\blur3}Since when did Frank Napier let politicians call the shots?
+Dialogue: 0,0:23:00.33,0:23:02.71,译文,,0,0,0,,{\blur3}自打我发现他们在监视我\N{\r原文\blur3}Since I found out they were watching me.
+Dialogue: 0,0:23:06.04,0:23:07.29,译文,,0,0,0,,{\blur3}长官\N{\r原文\blur3}Ma'am?
+Dialogue: 0,0:23:09.55,0:23:12.13,译文,,0,0,0,,{\blur3}就像全球成千上万的签证申请者一样\N{\r原文\blur3}Like thousands of visa applicants around the globe,
+Dialogue: 0,0:23:12.13,0:23:15.51,译文,,0,0,0,,{\blur3}维多利亚·贝洛梦想在英国生活和工作\N{\r原文\blur3}Victoria Bello dreams of living and working in the UK.
+Dialogue: 0,0:23:15.51,0:23:17.97,译文,,0,0,0,,{\blur3}昨天 里斯·爱德华兹收到了这封邮件\N{\r原文\blur3}This landed in Rhys Edwards' inbox yesterday.
+Dialogue: 0,0:23:17.97,0:23:19.97,译文,,0,0,0,,{\blur3}护理人员声称她三岁的儿子\N{\r原文\blur3}..care worker claims her three-year-old son
+Dialogue: 0,0:23:19.97,0:23:22.27,译文,,0,0,0,,{\blur3}有资格申请英国护照\N{\r原文\blur3}is eligible for a British passport.
+Dialogue: 0,0:23:22.27,0:23:25.06,译文,,0,0,0,,{\blur3}据维多利亚说 孩子的父亲\N{\r原文\blur3}According to Victoria, the child's father
+Dialogue: 0,0:23:25.06,0:23:27.77,译文,,0,0,0,,{\blur3}是英国安全大臣 艾萨克·特纳\N{\r原文\blur3}is Britain's Security Minister, Isaac Turner.
+Dialogue: 0,0:23:30.94,0:23:33.49,译文,,0,0,0,,{\blur3}-这事曝光了吗 -网上还没踪迹\N{\r原文\blur3}- Has this gone public? - No trace of it online.
+Dialogue: 0,0:23:33.49,0:23:35.82,译文,,0,0,0,,{\blur3}根据随之而来的信息轰炸\N{\r原文\blur3}According to the message frenzy that followed,
+Dialogue: 0,0:23:35.82,0:23:38.83,译文,,0,0,0,,{\blur3}特纳似平认为这是赞达方面的敲诈勒系\N{\r原文\blur3}Turner seemed to think it was some kind of blackmail attempt by Xanda.
+Dialogue: 0,0:23:38.83,0:23:41.29,译文,,0,0,0,,{\blur3}我想知道他为什么没跟我们提起过\N{\r原文\blur3}I'd like to know why he didn't mention that to us.
+Dialogue: 0,0:23:41.37,0:23:43.75,译文,,0,0,0,,{\blur3}我也是这想法\N{\r原文\blur3}My thoughts exactly.
+Dialogue: 0,0:23:43.75,0:23:45.04,译文,,0,0,0,,{\blur3}长官\N{\r原文\blur3}Ma'am?
+Dialogue: 0,0:23:47.42,0:23:49.54,译文,,0,0,0,,{\blur3}请他进来\N{\r原文\blur3}Invite him in.
+Dialogue: 0,0:23:49.55,0:23:51.00,译文,,0,0,0,,{\blur3}派配枪警官保护\N{\r原文\blur3}Under armed protection.
+Dialogue: 0,0:23:52.88,0:23:54.76,译文,,0,0,0,,{\blur3}也给他员工派上\N{\r原文\blur3}Same goes for his staff.
+Dialogue: 0,0:23:57.34,0:23:59.22,译文,,0,0,0,,{\blur3}这就是奇迹发生的地方么\N{\r原文\blur3}So, this is where the magic happens?
+Dialogue: 0,0:24:01.01,0:24:02.81,译文,,0,0,0,,{\blur3}他们是怎么说服你的\N{\r原文\blur3}How DID they get you?
+Dialogue: 0,0:24:04.35,0:24:06.06,译文,,0,0,0,,{\blur3}说服我\N{\r原文\blur3}Get me?
+Dialogue: 0,0:24:08.61,0:24:09.81,译文,,0,0,0,,{\blur3}瑞秋\N{\r原文\blur3}Rachel?
+Dialogue: 0,0:24:21.79,0:24:23.24,译文,,0,0,0,,{\blur3}里斯·爱德华兹\N{\r原文\blur3}Rhys Edwards?
+Dialogue: 0,0:25:02.45,0:25:03.87,译文,,0,0,0,,{\blur3}哈特指挥官\N{\r原文\blur3}Commander Hart.
+Dialogue: 0,0:25:03.87,0:25:05.91,译文,,0,0,0,,{\blur3}大使 感谢您拨冗\N{\r原文\blur3}Ambassador. Thank you for taking the time.
+Dialogue: 0,0:25:07.92,0:25:09.54,译文,,0,0,0,,{\blur3}这位是谭警员\N{\r原文\blur3}This is Detective Tan.
+Dialogue: 0,0:25:11.59,0:25:13.00,译文,,0,0,0,,{\blur3}很高兴见到您\N{\r原文\blur3}Pleased to meet you.
+Dialogue: 0,0:25:15.05,0:25:17.97,译文,,0,0,0,,{\blur3}请 客人已经在等着了\N{\r原文\blur3}Hmm! Please, our guest is waiting.
+Dialogue: 0,0:25:20.39,0:25:22.01,译文,,0,0,0,,{\blur3}您好像很久都没有\N{\r原文\blur3}Seems a long time since you threw
+Dialogue: 0,0:25:22.01,0:25:24.10,译文,,0,0,0,,{\blur3}办过晚宴了 大使\N{\r原文\blur3}one of your famous soirees, Ambassador.
+Dialogue: 0,0:25:24.10,0:25:25.60,译文,,0,0,0,,{\blur3}怎么不办了呀\N{\r原文\blur3}Whatever happened to those?
+Dialogue: 0,0:25:25.60,0:25:27.64,译文,,0,0,0,,{\blur3}你们国家指控我国种族火绝\N{\r原文\blur3}Your country accused us of genocide.
+Dialogue: 0,0:25:29.19,0:25:30.69,译文,,0,0,0,,{\blur3}没毛病\N{\r原文\blur3}Fair enough.
+Dialogue: 0,0:25:35.28,0:25:38.32,译文,,0,0,0,,{\blur3}爱迪生·姚是香港的持不同政见者\N{\r原文\blur3}Edison Yao was a dissident from Hong Kong.
+Dialogue: 0,0:25:38.32,0:25:42.24,译文,,0,0,0,,{\blur3}大约36小时前 有人去到他公寓\N{\r原文\blur3}About 36 hours ago, someone came to his apartment
+Dialogue: 0,0:25:42.24,0:25:43.91,译文,,0,0,0,,{\blur3}朝他眼睛开了一枪\N{\r原文\blur3}and put a bullet through his eye.
+Dialogue: 0,0:25:45.45,0:25:47.12,译文,,0,0,0,,{\blur3}他现在怎么样\N{\r原文\blur3}How is he now?
+Dialogue: 0,0:25:57.21,0:25:58.59,译文,,0,0,0,,{\blur3}太可怕了\N{\r原文\blur3}That's awful,
+Dialogue: 0,0:25:58.59,0:26:01.84,译文,,0,0,0,,{\blur3}但麻烦你解释一下 这和我有什么关系\N{\r原文\blur3}but would you mind explaining what it has to do with me?
+Dialogue: 0,0:26:01.84,0:26:04.01,译文,,0,0,0,,{\blur3}姚先生曾在中研委任职\N{\r原文\blur3}Mr Yao served on the China Research Committee,
+Dialogue: 0,0:26:04.01,0:26:07.60,译文,,0,0,0,,{\blur3}就贵公司的面部识别投标项目做过政府顾问\N{\r原文\blur3}advising the Government on your company's facial recognition bid.
+Dialogue: 0,0:26:09.31,0:26:13.81,译文,,0,0,0,,{\blur3}24小时后 保安约瑟夫·姆旺吉颈部中弹\N{\r原文\blur3}24 hours later, security guard Joseph Mwangi was shot in the neck
+Dialogue: 0,0:26:13.81,0:26:16.98,译文,,0,0,0,,{\blur3}一位警长胸部中枪\N{\r原文\blur3}and a police detective sergeant was shot in the chest.
+Dialogue: 0,0:26:18.82,0:26:20.90,译文,,0,0,0,,{\blur3}他们也都是中国研究委员会的成员吗\N{\r原文\blur3}Were they on the China Research Committee?
+Dialogue: 0,0:26:20.90,0:26:23.32,译文,,0,0,0,,{\blur3}我们相信目标人物是\N{\r原文\blur3}We believe the intended target was.
+Dialogue: 0,0:26:23.32,0:26:25.95,译文,,0,0,0,,{\blur3}一位名叫格雷戈里·诺克斯的数据科学家\N{\r原文\blur3}A data scientist named Gregory Knox.
+Dialogue: 0,0:26:25.95,0:26:30.62,译文,,0,0,0,,{\blur3}每起案件中 子弹都是从 QSZ-92自动步枪上射出的\N{\r原文\blur3}In each case, the bullet was discharged from a QSZ-92 automatic.
+Dialogue: 0,0:26:30.62,0:26:35.04,译文,,0,0,0,,{\blur3}一种中国大陆制造的军用武器\N{\r原文\blur3}A military-issue firearm manufactured in mainland China.
+Dialogue: 0,0:26:35.04,0:26:38.25,译文,,0,0,0,,{\blur3}在英国发现中国制造的产品并不出奇\N{\r原文\blur3}No surprise to find products in the UK made in China.
+Dialogue: 0,0:26:38.26,0:26:41.59,译文,,0,0,0,,{\blur3}是不奇怪 尤其是涉及到技术设备 电脑\N{\r原文\blur3}No, not when it comes to technology. Computers...
+Dialogue: 0,0:26:41.59,0:26:44.51,译文,,0,0,0,,{\blur3}-金属 矿物塑料 -医疗设备\N{\r原文\blur3}- Metal, minerals, plastics. - Medical equipment.
+Dialogue: 0,0:26:44.51,0:26:47.81,译文,,0,0,0,,{\blur3}但军用武器 这就不多见了\N{\r原文\blur3}But military-grade weapons? That's rare.
+Dialogue: 0,0:26:49.35,0:26:52.10,译文,,0,0,0,,{\blur3}中国不会报复持不同政见者\N{\r原文\blur3}China does not take revenge on its dissidents
+Dialogue: 0,0:26:52.10,0:26:55.15,译文,,0,0,0,,{\blur3}也不会在英国大街上追捕他们 我们不是俄罗斯\N{\r原文\blur3}and hunt them down on the streets of Britain. We are not Russia.
+Dialogue: 0,0:26:56.86,0:26:58.36,译文,,0,0,0,,{\blur3}没人说是报复\N{\r原文\blur3}No-one mentioned revenge.
+Dialogue: 0,0:27:03.74,0:27:05.37,译文,,0,0,0,,{\blur3}我忘了恭喜二位了\N{\r原文\blur3}I forgot to congratulate you both.
+Dialogue: 0,0:27:05.37,0:27:09.08,译文,,0,0,0,,{\blur3}看起来你们很快就能签下面部识别的合同了\N{\r原文\blur3}Looks like the facial-rec contract is going your way.
+Dialogue: 0,0:27:12.54,0:27:14.00,译文,,0,0,0,,{\blur3}我很好奇\N{\r原文\blur3}I'm curious.
+Dialogue: 0,0:27:14.00,0:27:17.71,译文,,0,0,0,,{\blur3}你觉得为什么一位以反中国科技而闻名的大臣\N{\r原文\blur3}Why do you think a minister known for his stance against Chinese tech
+Dialogue: 0,0:27:17.71,0:27:19.92,译文,,0,0,0,,{\blur3}最后会跟一家中国企业合作\N{\r原文\blur3}ended up going with a Chinese company?
+Dialogue: 0,0:27:22.51,0:27:24.72,译文,,0,0,0,,{\blur3}你知道你在暗示什么吗 小姐\N{\r原文\blur3}Do you realise what you're implying, young lady?
+Dialogue: 0,0:27:25.84,0:27:27.51,译文,,0,0,0,,{\blur3}谭警员\N{\r原文\blur3}DC Tan.
+Dialogue: 0,0:27:27.51,0:27:29.18,译文,,0,0,0,,{\blur3}只是问问\N{\r原文\blur3}Just asking.
+Dialogue: 0,0:27:30.52,0:27:32.43,译文,,0,0,0,,{\blur3}真令人失望\N{\r原文\blur3}How very disappointing.
+Dialogue: 0,0:27:32.43,0:27:34.56,译文,,0,0,0,,{\blur3}再一次 我们发现自己成为\N{\r原文\blur3}Once again, we find ourselves
+Dialogue: 0,0:27:34.56,0:27:37.65,译文,,0,0,0,,{\blur3}毫无根据 耸人听闻的指控对象\N{\r原文\blur3}the subject of baseless, lurid allegations.
+Dialogue: 0,0:27:37.65,0:27:40.44,译文,,0,0,0,,{\blur3}中国 世界上最可怕的国家\N{\r原文\blur3}China, the bogeyman of the world.
+Dialogue: 0,0:27:40.44,0:27:42.11,译文,,0,0,0,,{\blur3}我们觉得这样很无礼\N{\r原文\blur3}We find it offensive.
+Dialogue: 0,0:27:42.11,0:27:44.90,译文,,0,0,0,,{\blur3}就如同我们也觉得有件事很无礼 哈特指挥官\N{\r原文\blur3}Just as we find it offensive, Commander Hart,
+Dialogue: 0,0:27:44.91,0:27:47.37,译文,,0,0,0,,{\blur3}就是你带了一个华裔同事\N{\r原文\blur3}that you bring along a colleague of Chinese descent
+Dialogue: 0,0:27:47.37,0:27:49.41,译文,,0,0,0,,{\blur3}来中和你厚颜无耻的偏见\N{\r原文\blur3}to appease your brazen prejudice.
+Dialogue: 0,0:27:54.92,0:27:57.02,译文,,0,0,0,,{\blur3}我还有别的事\N{\r原文\blur3}I have another engagement.
+Dialogue: 0,0:27:57.04,0:27:58.73,译文,,0,0,0,,{\blur3}也许等你不带偏见\N{\r原文\blur3}Perhaps we could continue this
+Dialogue: 0,0:27:58.75,0:28:01.53,译文,,0,0,0,,{\blur3}且有更多证据之后 我们再谈吧\N{\r原文\blur3}when you have something more to go on besides bias?
+Dialogue: 0,0:28:04.68,0:28:07.36,译文,,0,0,0,,{\blur3}{\r原文\blur3}I'm sorry to hear about your detective sergeant.
+Dialogue: 0,0:28:08.84,0:28:11.80,译文,,0,0,0,,{\blur3}{\r原文\blur3}You said he was shot, but you didn't say if he survived.
+Dialogue: 0,0:28:14.02,0:28:15.52,译文,,0,0,0,,{\blur3}我是没说\N{\r原文\blur3}No, I didn't.
+Dialogue: 0,0:28:17.69,0:28:21.69,译文,,0,0,0,,{\blur3}汤姆 我要一队人全天侯监视入口\N{\r原文\blur3}Tom, I want a team car watching the entrance 24/7.
+Dialogue: 0,0:28:21.69,0:28:23.48,译文,,0,0,0,,{\blur3}我来指派人员\N{\r原文\blur3}I'll assign the eyeball.
+Dialogue: 0,0:28:23.49,0:28:26.03,译文,,0,0,0,,{\blur3}你觉得加入监视小组怎么样\N{\r原文\blur3}How do you feel about joining a surveillance unit?
+Dialogue: 0,0:28:26.03,0:28:29.03,译文,,0,0,0,,{\blur3}长官 除了快速通道上的摸排 我没什么监视经验\N{\r原文\blur3}Sir, apart from basic undercover on the fast-track, I don't have much
+Dialogue: 0,0:28:29.03,0:28:32.04,译文,,0,0,0,,{\blur3}但你近距离接触过目标\N{\r原文\blur3}experience.  Yeah, but you've seen the target up close and personal.
+Dialogue: 0,0:28:32.04,0:28:33.87,译文,,0,0,0,,{\blur3}调度和监控\N{\r原文\blur3}Ops and monitoring.
+Dialogue: 0,0:28:33.87,0:28:36.71,译文,,0,0,0,,{\blur3}我们需要核实 盯住严王磊\N{\r原文\blur3}We need verification. Eyes on Yan Wanglei.
+Dialogue: 0,0:28:37.83,0:28:39.08,译文,,0,0,0,,{\blur3}长官\N{\r原文\blur3}Sir.
+Dialogue: 0,0:28:41.13,0:28:42.21,译文,,0,0,0,,{\blur3}关于纳迪亚 长官\N{\r原文\blur3}About Nadia, Ma'am...
+Dialogue: 0,0:28:43.80,0:28:45.51,译文,,0,0,0,,{\blur3}拉蒂夫督察\N{\r原文\blur3}DI Latif.
+Dialogue: 0,0:28:45.51,0:28:48.72,译文,,0,0,0,,{\blur3}她不会真的被纪律处分吧\N{\r原文\blur3}She's not actually going to receive disciplinary action, is she?
+Dialogue: 0,0:28:48.72,0:28:52.60,译文,,0,0,0,,{\blur3}因为她只是听我指示才闯进的安全屋\N{\r原文\blur3}Because she only breached the safe house on my instruction.
+Dialogue: 0,0:28:53.81,0:28:56.64,译文,,0,0,0,,{\blur3}要是你有这闲工夫去内疚\N{\r原文\blur3}If you have the spare time or the bandwidth to feel guilty about it,
+Dialogue: 0,0:28:56.68,0:28:58.52,译文,,0,0,0,,{\blur3}{\r原文\blur3}why don't you give her a call?
+Dialogue: 0,0:28:58.48,0:29:00.15,译文,,0,0,0,,{\blur3}最好再送束花\N{\r原文\blur3}Better yet, send flowers.
+Dialogue: 0,0:29:00.15,0:29:03.73,译文,,0,0,0,,{\blur3}同时 我希望你能集中注意力\N{\r原文\blur3}In the meantime, I'd appreciate your focus.
+Dialogue: 0,0:29:03.73,0:29:05.40,译文,,0,0,0,,{\blur3}是 长官\N{\r原文\blur3}Yes, Ma'am.
+Dialogue: 0,0:29:10.45,0:29:12.78,译文,,0,0,0,,{\blur3}你打算怎么办 长官\N{\r原文\blur3}So, how do you want to play this, then, Ma'am?
+Dialogue: 0,0:29:12.79,0:29:14.24,译文,,0,0,0,,{\blur3}多动耳朵 多学习\N{\r原文\blur3}Just listen and learn.
+Dialogue: 0,0:29:14.24,0:29:16.70,译文,,0,0,0,,{\blur3}-杰姆 -安东尼\N{\r原文\blur3}- Gem!  - Anthony!
+Dialogue: 0,0:29:16.71,0:29:18.54,译文,,0,0,0,,{\blur3}谢谢你来找我们\N{\r原文\blur3}Thank you for coming to us.
+Dialogue: 0,0:29:18.54,0:29:21.54,译文,,0,0,0,,{\blur3}我订好了地方\N{\r原文\blur3}I've booked somewhere we can't be overlooked.
+Dialogue: 0,0:29:27.93,0:29:31.09,译文,,0,0,0,,{\blur3}我想你已经看过艾萨克·特纳的采访了\N{\r原文\blur3}I imagine you've seen the Isaac Turner interview.
+Dialogue: 0,0:29:31.10,0:29:32.68,译文,,0,0,0,,{\blur3}他现在支持赞达了\N{\r原文\blur3}He's pro-Xanda now.
+Dialogue: 0,0:29:32.68,0:29:36.27,译文,,0,0,0,,{\blur3}对 即使以本届政府标准来看 这个反转也相当令人惊讶\N{\r原文\blur3}Yes. Pretty surprising U-turn, even by this Government's standards.
+Dialogue: 0,0:29:36.27,0:29:39.19,译文,,0,0,0,,{\blur3}让我们不禁怀疑中国是否有了特纳的把柄\N{\r原文\blur3}Got us wondering if China has something on Turner.
+Dialogue: 0,0:29:40.40,0:29:42.81,译文,,0,0,0,,{\blur3}直到我们偶然发现了一个不同的理论\N{\r原文\blur3}Until we chanced upon a different theory.
+Dialogue: 0,0:29:44.94,0:29:48.40,译文,,0,0,0,,{\blur3}哈迪亚昨晚抱怨过远程连接速度太慢了\N{\r原文\blur3}Khadija complained about the remote connection speed last night.
+Dialogue: 0,0:29:48.40,0:29:49.61,译文,,0,0,0,,{\blur3}这倒没什么可奇怪的\N{\r原文\blur3}Nothing odd about that.
+Dialogue: 0,0:29:49.61,0:29:52.20,译文,,0,0,0,,{\blur3}哈迪亚大多数晚上都会抱怨点事\N{\r原文\blur3}Khadija complains about something MOST nights.
+Dialogue: 0,0:29:52.20,0:29:55.45,译文,,0,0,0,,{\blur3}但当工程师们追踪特纳的IP地址时\N{\r原文\blur3}But when the engineers tracked Turner's IP address,
+Dialogue: 0,0:29:55.45,0:29:57.62,译文,,0,0,0,,{\blur3}他们发现了一些奇怪的东西\N{\r原文\blur3}they discovered something strange.
+Dialogue: 0,0:29:57.62,0:29:59.87,译文,,0,0,0,,{\blur3}信号不是伦敦发出的\N{\r原文\blur3}The signal wasn't coming from London.
+Dialogue: 0,0:29:59.87,0:30:02.42,译文,,0,0,0,,{\blur3}其至都不是从英国发出来的\N{\r原文\blur3}Wasn't coming from the UK at all.
+Dialogue: 0,0:30:02.42,0:30:03.96,译文,,0,0,0,,{\blur3}是从中国发出来的\N{\r原文\blur3}It was coming from China.
+Dialogue: 0,0:30:06.21,0:30:08.01,译文,,0,0,0,,{\blur3}要分享一些见解吗\N{\r原文\blur3}Care to share any insights?
+Dialogue: 0,0:30:10.34,0:30:12.43,译文,,0,0,0,,{\blur3}你们将此事告知我们是正确的\N{\r原文\blur3}You're right to bring this to our attention.
+Dialogue: 0,0:30:12.43,0:30:15.51,译文,,0,0,0,,{\blur3}我建议安排专人小组进行调香\N{\r原文\blur3}I suggest we arrange a discreet unit to investigate.
+Dialogue: 0,0:30:15.51,0:30:18.35,译文,,0,0,0,,{\blur3}瑞秋和我们技术团队的一位工作人员\N{\r原文\blur3}Rachel, with a member of our technical team.
+Dialogue: 0,0:30:18.35,0:30:21.52,译文,,0,0,0,,{\blur3}如果你愿意与我们分享任何发现\N{\r原文\blur3}Provided you're willing to share any findings with us.
+Dialogue: 0,0:30:21.52,0:30:23.81,译文,,0,0,0,,{\blur3}我们计划是尽快发布\N{\r原文\blur3}We plan to run this as soon as possible.
+Dialogue: 0,0:30:24.98,0:30:26.36,译文,,0,0,0,,{\blur3}-发布什么 -报道\N{\r原文\blur3}- Run?  - The story.
+Dialogue: 0,0:30:27.69,0:30:30.74,译文,,0,0,0,,{\blur3}-要报道吗 -我们清楚艾萨克·特纳昨晚不在中国\N{\r原文\blur3}- Is there one?  - We know that Isaac Turner wasn't in China last night,
+Dialogue: 0,0:30:30.74,0:30:31.61,译文,,0,0,0,,{\blur3}所以很明显 我们要找的是某类外国方面干涉\N{\r原文\blur3}so clearly, we're looking at some kind of foreign interference.
+Dialogue: 0,0:30:33.78,0:30:36.99,译文,,0,0,0,,{\blur3}我们在权衡各种理论 从黑客攻击到深伪技术\N{\r原文\blur3}We're juggling theories, from hacking to full-on deep fakes.
+Dialogue: 0,0:30:36.99,0:30:41.04,译文,,0,0,0,,{\blur3}值得注意的是 特纳说的正是赞达希望他说的话\N{\r原文\blur3}It is remarkable that Turner said exactly what Xanda wanted him to.
+Dialogue: 0,0:30:43.83,0:30:46.88,译文,,0,0,0,,{\blur3}关于那位大臣 我们有这么多可报道的事\N{\r原文\blur3}Of all the stories on our radar involving that particular minister,
+Dialogue: 0,0:30:46.88,0:30:48.38,译文,,0,0,0,,{\blur3}如果我是你 我会将这个搁置起来\N{\r原文\blur3}I'd shelve this one if I were you.
+Dialogue: 0,0:30:48.38,0:30:50.17,译文,,0,0,0,,{\blur3}因为\N{\r原文\blur3}Because...?
+Dialogue: 0,0:30:50.17,0:30:52.72,译文,,0,0,0,,{\blur3}因为BBC需要维护自己是\N{\r原文\blur3}Because the BBC needs to maintain its reputation
+Dialogue: 0,0:30:52.72,0:30:55.14,译文,,0,0,0,,{\blur3}可靠新闻来源的声誉 而不是虚假信息的灯塔\N{\r原文\blur3}as a trusted news source, not a beacon of disinformation.
+Dialogue: 0,0:30:55.14,0:30:57.06,译文,,0,0,0,,{\blur3}我们已经讨论过这个难题了\N{\r原文\blur3}Yes, we've discussed this conundrum.
+Dialogue: 0,0:30:57.06,0:30:59.93,译文,,0,0,0,,{\blur3}如果我们报道 就有可能损害我们的信誉\N{\r原文\blur3}If we report it, we risk undermining our credibility.
+Dialogue: 0,0:30:59.93,0:31:03.14,译文,,0,0,0,,{\blur3}但如果我们不报道 却又泄露出去了 只会更糟\N{\r原文\blur3}But if we don't and it gets out, that would be worse.
+Dialogue: 0,0:31:06.02,0:31:08.02,译文,,0,0,0,,{\blur3}那我就不让你们进退两难了\N{\r原文\blur3}Then let me spare you the dilemma.
+Dialogue: 0,0:31:08.03,0:31:10.61,译文,,0,0,0,,{\blur3}这已经引起了一些关注\N{\r原文\blur3}Already, this raises a number of concerns.
+Dialogue: 0,0:31:11.95,0:31:14.20,译文,,0,0,0,,{\blur3}我相信你会合作的\N{\r原文\blur3}I'm sure I can count on your cooperation.
+Dialogue: 0,0:31:16.08,0:31:18.58,译文,,0,0,0,,{\blur3}在我们调查期间将报道暂自搁置\N{\r原文\blur3}Hold the story while we investigate.
+Dialogue: 0,0:31:18.58,0:31:19.70,译文,,0,0,0,,{\blur3}前提是你要在我们调查期间\N{\r原文\blur3}Well, so long as you can enlighten us
+Dialogue: 0,0:31:20.54,0:31:23.66,译文,,0,0,0,,{\blur3}针对那些关注给我们些提示\N{\r原文\blur3}on those concerns while we investigate.
+Dialogue: 0,0:31:23.67,0:31:25.50,译文,,0,0,0,,{\blur3}恐怕不行\N{\r原文\blur3}I'm afraid I can't do that.
+Dialogue: 0,0:31:25.50,0:31:28.63,译文,,0,0,0,,{\blur3}那么 恐怕我不能让你在我们的工作室里打探了\N{\r原文\blur3}Well, then, I'm afraid I can't allow you to sniff around our studio.
+Dialogue: 0,0:31:28.63,0:31:30.21,译文,,0,0,0,,{\blur3}我们再回来就会拿上搜查令了\N{\r原文\blur3}We'll come back with a warrant.
+Dialogue: 0,0:31:32.63,0:31:35.18,译文,,0,0,0,,{\blur3}你刚刚警示我们怀疑有外国势力的\N{\r原文\blur3}You've just alerted us to a suspected cyber attack
+Dialogue: 0,0:31:35.18,0:31:38.14,译文,,0,0,0,,{\blur3}网络攻击 那你的工作室就是犯罪现场\N{\r原文\blur3}by a foreign power. That makes your studio a crime scene.
+Dialogue: 0,0:31:38.14,0:31:40.85,译文,,0,0,0,,{\blur3}如果我们不调查 就是玩忽职守\N{\r原文\blur3}If we don't investigate, it'll be dereliction of duty.
+Dialogue: 0,0:31:40.85,0:31:42.93,译文,,0,0,0,,{\blur3}会让你们更容易受到攻击\N{\r原文\blur3}It'll leave you vulnerable to further attacks.
+Dialogue: 0,0:31:42.94,0:31:44.81,译文,,0,0,0,,{\blur3}反正你也得不到想报道的内容\N{\r原文\blur3}You won't get your story anyway.
+Dialogue: 0,0:31:44.81,0:31:46.02,译文,,0,0,0,,{\blur3}此言尚早\N{\r原文\blur3}I don't know.
+Dialogue: 0,0:31:46.02,0:31:49.52,译文,,0,0,0,,{\blur3}IP地址加上技术人员分析\N{\r原文\blur3}What with the IP address and the tech correspondent's analysis,
+Dialogue: 0,0:31:49.53,0:31:51.94,译文,,0,0,0,,{\blur3}我觉得七分钟就能解决战斗\N{\r原文\blur3}I can see seven minutes shaping up nicely.
+Dialogue: 0,0:31:54.99,0:31:56.66,译文,,0,0,0,,{\blur3}你让我们别无选择\N{\r原文\blur3}You're leaving us with no alternative.
+Dialogue: 0,0:31:57.91,0:31:59.58,译文,,0,0,0,,{\blur3}你不能播\N{\r原文\blur3}You can't broadcast it.
+Dialogue: 0,0:31:59.58,0:32:01.45,译文,,0,0,0,,{\blur3}我们会下发国防机密通知\N{\r原文\blur3}We'll slap a D-notice on it.
+Dialogue: 0,0:32:01.45,0:32:03.91,译文,,0,0,0,,{\blur3}给哈迪亚·汗下发国防机密通知\N{\r原文\blur3}A D-notice to Khadija Khan?
+Dialogue: 0,0:32:05.04,0:32:06.75,译文,,0,0,0,,{\blur3}这不拱火呢么\N{\r原文\blur3}Red rag, bull.
+Dialogue: 0,0:32:06.75,0:32:08.88,译文,,0,0,0,,{\blur3}你得做更多才能拉拢她\N{\r原文\blur3}You'll have to do more than that to bring her onside.
+Dialogue: 0,0:32:08.88,0:32:11.63,译文,,0,0,0,,{\blur3}别这样杰姆 你知道规矩\N{\r原文\blur3}Come on, Gem, you know the deal.
+Dialogue: 0,0:32:11.63,0:32:14.55,译文,,0,0,0,,{\blur3}要是你打算使用核武器\N{\r原文\blur3}If you're going to use the nuclear option,
+Dialogue: 0,0:32:14.55,0:32:16.68,译文,,0,0,0,,{\blur3}就得给点甜头\N{\r原文\blur3}you've got to offer up a sweetener.
+Dialogue: 0,0:32:16.68,0:32:19.01,译文,,0,0,0,,{\blur3}你刚提到说还有其他可报道的\N{\r原文\blur3}You mentioned other stories.
+Dialogue: 0,0:32:21.14,0:32:22.72,译文,,0,0,0,,{\blur3}关于大臣的\N{\r原文\blur3}About the minister.
+Dialogue: 0,0:32:33.74,0:32:36.57,译文,,0,0,0,,{\blur3}“出于对我和我家人的安全着想”\N{\r原文\blur3}"Fearing for my safety and the safety of my family,
+Dialogue: 0,0:32:36.57,0:32:40.87,译文,,0,0,0,,{\blur3}“我 我决定改变对赞达面部识别的立场”\N{\r原文\blur3}"I...I decided to alter my position on Xanda Facial Recognition."
+Dialogue: 0,0:32:40.87,0:32:42.54,译文,,0,0,0,,{\blur3}你就给我想出这招\N{\r原文\blur3}This is how you want me to play it -
+Dialogue: 0,0:32:42.54,0:32:44.70,译文,,0,0,0,,{\blur3}我是被胁迫的才改了主意\N{\r原文\blur3}that I was intimidated into changing my mind?
+Dialogue: 0,0:32:44.71,0:32:47.33,译文,,0,0,0,,{\blur3}你得给你的员工和妻子一个解释\N{\r原文\blur3}You need an explanation for your staff, your wife.
+Dialogue: 0,0:32:47.33,0:32:49.58,译文,,0,0,0,,{\blur3}我不会对我妻子撒谎\N{\r原文\blur3}I don't lie to my wife.
+Dialogue: 0,0:32:49.59,0:32:51.04,译文,,0,0,0,,{\blur3}当然\N{\r原文\blur3}Of course.
+Dialogue: 0,0:32:52.67,0:32:56.17,译文,,0,0,0,,{\blur3}谢谢你能过来 大臣 请坐吧\N{\r原文\blur3}Ah. Thanks for coming in to see us, Minister. Why don't you take a seat?
+Dialogue: 0,0:32:56.18,0:32:58.51,译文,,0,0,0,,{\blur3}感谢你通知我最新消息 先生\N{\r原文\blur3}I appreciate you keeping me updated, sir.
+Dialogue: 0,0:32:58.51,0:33:00.26,译文,,0,0,0,,{\blur3}有什么新消息吗\N{\r原文\blur3}What can you give me?
+Dialogue: 0,0:33:00.26,0:33:02.01,译文,,0,0,0,,{\blur3}你在调查赞达 对吧\N{\r原文\blur3}You're looking into Xanda, right?
+Dialogue: 0,0:33:02.01,0:33:05.18,译文,,0,0,0,,{\blur3}是的 我们已开展多项调查\N{\r原文\blur3}We are running multiple lines of inquiry, of course.
+Dialogue: 0,0:33:05.18,0:33:08.31,译文,,0,0,0,,{\blur3}你们也跟我团队 艾丽莎·克拉克 里斯·爱德华兹谈过吧\N{\r原文\blur3}And my team, you're talking to my team - Aliza Clark, Rhys Edwards?
+Dialogue: 0,0:33:08.31,0:33:09.81,译文,,0,0,0,,{\blur3}他们在帮我们 谈过了\N{\r原文\blur3}They're helping us, yeah.
+Dialogue: 0,0:33:09.81,0:33:12.15,译文,,0,0,0,,{\blur3}内政部那边有消息吗 我是没收到\N{\r原文\blur3}Have you heard from the Home Office? I certainly haven't.
+Dialogue: 0,0:33:12.15,0:33:14.48,译文,,0,0,0,,{\blur3}你坐下来会更舒服些吧 大臣\N{\r原文\blur3}Might you be more comfortable sitting down, Minister?
+Dialogue: 0,0:33:14.49,0:33:18.36,译文,,0,0,0,,{\blur3}不 不大会 丹尼 我整晚都被关在安全屋里\N{\r原文\blur3}No, not really, Danny. I have been cooped in a safe house all night.
+Dialogue: 0,0:33:18.36,0:33:20.87,译文,,0,0,0,,{\blur3}我们只是想问你几个问题 先生\N{\r原文\blur3}We just need to ask you a few questions, sir.
+Dialogue: 0,0:33:22.49,0:33:23.70,译文,,0,0,0,,{\blur3}好\N{\r原文\blur3}OK.
+Dialogue: 0,0:33:32.04,0:33:35.13,译文,,0,0,0,,{\blur3}-你认识艾丽莎·克拉克多久了 -艾丽莎\N{\r原文\blur3}- How...how long have you known Aliza Clark?  - Aliza?
+Dialogue: 0,0:33:35.13,0:33:37.97,译文,,0,0,0,,{\blur3}昨晚我们同意接受《新闻之夜》 采访的时候\N{\r原文\blur3}I was with Rhys and Isaac last night
+Dialogue: 0,0:33:37.97,0:33:40.22,译文,,0,0,0,,{\blur3}我跟里斯还有艾萨克在一起\N{\r原文\blur3}when we agreed to do the Newsnight interview.
+Dialogue: 0,0:33:41.85,0:33:44.06,译文,,0,0,0,,{\blur3}-里斯去了 -自打我当上安全大臣之后\N{\r原文\blur3}- Rhys went off to... - She's been with me since,
+Dialogue: 0,0:33:44.06,0:33:46.52,译文,,0,0,0,,{\blur3}她一直跟着我 一年了\N{\r原文\blur3}well, since I became Security Minister. A year.
+Dialogue: 0,0:33:46.52,0:33:48.64,译文,,0,0,0,,{\blur3}你对她私生活了解多少\N{\r原文\blur3}What do you know about her private life?
+Dialogue: 0,0:33:49.69,0:33:52.44,译文,,0,0,0,,{\blur3}我不确定她有没有私生活 她应该养了只猫吧\N{\r原文\blur3}I'm not sure she has one. I imagine there's a cat.
+Dialogue: 0,0:33:52.44,0:33:54.65,译文,,0,0,0,,{\blur3}那里斯·爱德华兹呢\N{\r原文\blur3}Hmm! What about Rhys Edwards?
+Dialogue: 0,0:33:54.65,0:33:57.32,译文,,0,0,0,,{\blur3}我安排的采访想 跟艾萨克确认\N{\r原文\blur3}I set up the interview, tried to confirm it with Isaac,
+Dialogue: 0,0:33:57.32,0:34:00.66,译文,,0,0,0,,{\blur3}但是打不通 讲真 我不知道还能告诉你什么\N{\r原文\blur3}couldn't get through. Honestly, I don't know what else to tell you.
+Dialogue: 0,0:34:00.66,0:34:03.20,译文,,0,0,0,,{\blur3}他是个挺不错的副手 公立学校的窝囊废\N{\r原文\blur3}He's a decent spad. He's public-school prat,
+Dialogue: 0,0:34:03.20,0:34:05.20,译文,,0,0,0,,{\blur3}但我在政府工作 周围都是这种人\N{\r原文\blur3}but I'm in government, I'm surrounded by them.
+Dialogue: 0,0:34:05.20,0:34:08.20,译文,,0,0,0,,{\blur3}你知不知道有什么理由能让克拉克\N{\r原文\blur3}Are you aware of any reason either Clark or Edwards
+Dialogue: 0,0:34:08.21,0:34:10.54,译文,,0,0,0,,{\blur3}或爱德华兹收受贿赂\N{\r原文\blur3}could have been compromised?
+Dialogue: 0,0:34:10.54,0:34:13.63,译文,,0,0,0,,{\blur3}-受贿 -所有可能导致他们\N{\r原文\blur3}- Compromised?  - Well, anything that may have left them vulnerable
+Dialogue: 0,0:34:13.63,0:34:15.84,译文,,0,0,0,,{\blur3}受贿或被勒索的弱点\N{\r原文\blur3}to bribery or blackmail.
+Dialogue: 0,0:34:17.38,0:34:19.42,译文,,0,0,0,,{\blur3}英国国会里发生什么我都不会吃惊\N{\r原文\blur3}Nothing in Westminster would surprise me,
+Dialogue: 0,0:34:19.42,0:34:23.18,译文,,0,0,0,,{\blur3}但是 不 我什么都不知道 为什么这么问\N{\r原文\blur3}but, no, I'm not aware of anything. Why?
+Dialogue: 0,0:34:23.18,0:34:27.52,译文,,0,0,0,,{\blur3}对BBC的网络攻击经过精心策划\N{\r原文\blur3}The cyberattacks on the BBC were coordinated so meticulously
+Dialogue: 0,0:34:27.52,0:34:33.56,译文,,0,0,0,,{\blur3}也就是说你团队中有一个或多个成员被买通勾结\N{\r原文\blur3}that it suggests the collusion of one or more members of your team.
+Dialogue: 0,0:34:33.56,0:34:35.69,译文,,0,0,0,,{\blur3}艾丽莎和里斯\N{\r原文\blur3}Aliza and Rhys?
+Dialogue: 0,0:34:35.69,0:34:37.23,译文,,0,0,0,,{\blur3}或者你本人 大臣\N{\r原文\blur3}Or indeed yourself, Minister.
+Dialogue: 0,0:34:41.78,0:34:43.36,译文,,0,0,0,,{\blur3}我以为\N{\r原文\blur3}I thought... Huh!
+Dialogue: 0,0:34:43.37,0:34:46.53,译文,,0,0,0,,{\blur3}我以为我是来听最新汇报的 是怀疑到我头上了吗\N{\r原文\blur3}I thought I was brought here for an update. Am  I  under suspicion?
+Dialogue: 0,0:34:46.54,0:34:49.29,译文,,0,0,0,,{\blur3}在涉及外国干预的案件中\N{\r原文\blur3}Well, with cases involving foreign intervention,
+Dialogue: 0,0:34:49.29,0:34:53.37,译文,,0,0,0,,{\blur3}发现受害者是被胁迫的情况并不罕见\N{\r原文\blur3}it's not unusual to find that victims have been...coerced.
+Dialogue: 0,0:34:54.46,0:34:55.75,译文,,0,0,0,,{\blur3}勒索\N{\r原文\blur3}Blackmailed.
+Dialogue: 0,0:34:56.96,0:34:59.13,译文,,0,0,0,,{\blur3}关于维多利亚·贝洛 你知道些什么\N{\r原文\blur3}What can you tell us about Victoria Bello?
+Dialogue: 0,0:35:04.39,0:35:06.60,译文,,0,0,0,,{\blur3}所以你也认同 这么做是正确的了\N{\r原文\blur3}Then you agree, it was the right move?
+Dialogue: 0,0:35:08.06,0:35:09.68,译文,,0,0,0,,{\blur3}你编造了另一个故事\N{\r原文\blur3}You planted the other story,
+Dialogue: 0,0:35:09.68,0:35:12.19,译文,,0,0,0,,{\blur3}然后让他们以为是他们自己发现的\N{\r原文\blur3}then let them think finding it was their idea.
+Dialogue: 0,0:35:12.19,0:35:14.02,译文,,0,0,0,,{\blur3}你得到了我们想要的结果 长官\N{\r原文\blur3}You got the result we needed, Ma'am.
+Dialogue: 0,0:35:15.61,0:35:17.65,译文,,0,0,0,,{\blur3}负责英国边境的大臣\N{\r原文\blur3}The minister in charge of Britain's borders has
+Dialogue: 0,0:35:17.65,0:35:19.36,译文,,0,0,0,,{\blur3}有个外国私生子想成为英国人\N{\r原文\blur3}a foreign lovechild trying to get in.
+Dialogue: 0,0:35:19.36,0:35:22.20,译文,,0,0,0,,{\blur3}不管有没有我们的推波助澜 这个故事迟早会被曝光\N{\r原文\blur3}That story will come out sooner or later, with or without our help.
+Dialogue: 0,0:35:24.20,0:35:25.62,译文,,0,0,0,,{\blur3}我想是的\N{\r原文\blur3}I imagine so.
+Dialogue: 0,0:35:32.58,0:35:34.33,译文,,0,0,0,,{\blur3}你看过我们的电邮了吗\N{\r原文\blur3}Have you been reading our emails?
+Dialogue: 0,0:35:34.33,0:35:37.46,译文,,0,0,0,,{\blur3}你提供给我们的任何信息都非常有用\N{\r原文\blur3}Any information you could provide us would be extremely helpful.
+Dialogue: 0,0:35:39.92,0:35:43.13,译文,,0,0,0,,{\blur3}我的办公室收到了一些假报道\N{\r原文\blur3}Er...my office received some bogus report
+Dialogue: 0,0:35:43.13,0:35:46.22,译文,,0,0,0,,{\blur3}说一个女人声称我是她孩子的父亲 但是\N{\r原文\blur3}about a woman claiming I'm the father of her child, but...
+Dialogue: 0,0:35:46.22,0:35:49.64,译文,,0,0,0,,{\blur3}-都是谎言 -你怀疑幕后黑手是中国\N{\r原文\blur3}- it's all lies.  - And you suspected China was behind it?
+Dialogue: 0,0:35:49.64,0:35:52.60,译文,,0,0,0,,{\blur3}严王磊暗中威胁过 说要进行间谍活动\N{\r原文\blur3}Yan Wanglei made some veiled threat about spying.
+Dialogue: 0,0:35:52.60,0:35:55.81,译文,,0,0,0,,{\blur3}“是人就有秘密” 他这么说的 但他错了 我没有\N{\r原文\blur3}"Everybody has something", he said, but he's wrong, I don't.
+Dialogue: 0,0:35:55.81,0:35:59.61,译文,,0,0,0,,{\blur3}你是说他们编了个私生子出来就为了勒索你\N{\r原文\blur3}You're saying that they made up the lovechild story to blackmail you?
+Dialogue: 0,0:35:59.61,0:36:02.11,译文,,0,0,0,,{\blur3}或者说是诋毁我 诽谤\N{\r原文\blur3}Or to defame me, discredit me.
+Dialogue: 0,0:36:02.11,0:36:05.61,译文,,0,0,0,,{\blur3}中国伪造了你的声明 他们干嘛要诋毁你\N{\r原文\blur3}China faked your announcement. Why would they want to discredit you?
+Dialogue: 0,0:36:06.95,0:36:08.95,译文,,0,0,0,,{\blur3}我不知道 警探\N{\r原文\blur3}I-I don't know, Detective.
+Dialogue: 0,0:36:08.95,0:36:11.24,译文,,0,0,0,,{\blur3}我希望你们能帮我搞清楚\N{\r原文\blur3}I'd really love to leave the job of figuring out
+Dialogue: 0,0:36:11.25,0:36:13.16,译文,,0,0,0,,{\blur3}中国怎么搞得我 以及为什么搞我\N{\r原文\blur3}exactly how and why China fucked us to you,
+Dialogue: 0,0:36:13.20,0:36:15.12,译文,,0,0,0,,{\blur3}{\r原文\blur3}so I can get on with the job of figuring out
+Dialogue: 0,0:36:15.12,0:36:17.08,译文,,0,0,0,,{\blur3}{\r原文\blur3}how the hell the Government's meant to respond.
+Dialogue: 0,0:36:19.50,0:36:21.46,译文,,0,0,0,,{\blur3}我想我可以走了吧\N{\r原文\blur3}I assume I'm free to leave?
+Dialogue: 0,0:36:21.46,0:36:24.05,译文,,0,0,0,,{\blur3}只要有保护警员陪同就可以\N{\r原文\blur3}As long as you're accompanied by protection officers.
+Dialogue: 0,0:36:24.05,0:36:27.26,译文,,0,0,0,,{\blur3}我想问最后一个问题\N{\r原文\blur3}Um, I'd just like to ask one last question.
+Dialogue: 0,0:36:27.26,0:36:31.47,译文,,0,0,0,,{\blur3}你之前没提过私生子的事\N{\r原文\blur3}You didn't mention anything about the lovechild allegation to us.
+Dialogue: 0,0:36:31.47,0:36:32.77,译文,,0,0,0,,{\blur3}为什么\N{\r原文\blur3}Why is that?
+Dialogue: 0,0:36:32.77,0:36:35.02,译文,,0,0,0,,{\blur3}我没指望你能理解\N{\r原文\blur3}I wouldn't expect you to understand.
+Dialogue: 0,0:36:37.98,0:36:40.31,译文,,0,0,0,,{\blur3}听着 我不想这种事\N{\r原文\blur3}Look, I don't want something like this
+Dialogue: 0,0:36:40.32,0:36:42.44,译文,,0,0,0,,{\blur3}引起关注 即便是假的\N{\r原文\blur3}getting traction, even false.
+Dialogue: 0,0:36:43.69,0:36:45.28,译文,,0,0,0,,{\blur3}不能传出去\N{\r原文\blur3}We can't have it out there.
+Dialogue: 0,0:36:53.41,0:36:55.00,译文,,0,0,0,,{\blur3}看来我来对地方了\N{\r原文\blur3}I guess I'm in the right place.
+Dialogue: 0,0:36:55.00,0:36:56.87,译文,,0,0,0,,{\blur3}我还挺希望是你来呢\N{\r原文\blur3}I was hoping it would be you.
+Dialogue: 0,0:36:56.87,0:36:58.88,译文,,0,0,0,,{\blur3}瑞秋 这是路易\N{\r原文\blur3}Rachel, Louie.
+Dialogue: 0,0:36:59.96,0:37:01.88,译文,,0,0,0,,{\blur3}弗兰克让我提醒你限制参数\N{\r原文\blur3}Frank told me to remind you of the parameters.
+Dialogue: 0,0:37:01.88,0:37:03.92,译文,,0,0,0,,{\blur3}弗兰克需要的是放个假\N{\r原文\blur3}Frank needs a fucking holiday.
+Dialogue: 0,0:37:07.34,0:37:10.18,译文,,0,0,0,,{\blur3}我从没这么久不使用手机\N{\r原文\blur3}That is the longest I've been without my phone.
+Dialogue: 0,0:37:10.18,0:37:12.60,译文,,0,0,0,,{\blur3}-打什么时候开始算起 -没了 那句话说完了\N{\r原文\blur3}- Since?  - No, that was the end of my sentence.
+Dialogue: 0,0:37:12.60,0:37:14.14,译文,,0,0,0,,{\blur3}-那么 -有多糟\N{\r原文\blur3}- So, what - how bad is it?
+Dialogue: 0,0:37:14.14,0:37:16.89,译文,,0,0,0,,{\blur3}"艾萨克态度大转变"显然上了热搜\N{\r原文\blur3}Er...well, "Isaac U-turn" is obviously trending.
+Dialogue: 0,0:37:16.89,0:37:18.14,译文,,0,0,0,,{\blur3}骂声一片\N{\r原文\blur3}There's no shortage of hate.
+Dialogue: 0,0:37:18.15,0:37:21.06,译文,,0,0,0,,{\blur3}但在这之前很多人 都不知道你是谁 所以\N{\r原文\blur3}But until now, a lot of these people didn't know who you were, so...
+Dialogue: 0,0:37:21.07,0:37:24.11,译文,,0,0,0,,{\blur3}支持率下降 品牌知名度上升\N{\r原文\blur3}Approval ratings down, brand awareness up.
+Dialogue: 0,0:37:24.11,0:37:26.19,译文,,0,0,0,,{\blur3}就是这种弱鸡程度\N{\r原文\blur3}You know, it's this level of incompetence
+Dialogue: 0,0:37:26.20,0:37:28.49,译文,,0,0,0,,{\blur3}让我相信你们两个都没有参与\N{\r原文\blur3}that reassures me neither of you are involved.
+Dialogue: 0,0:37:28.49,0:37:30.62,译文,,0,0,0,,{\blur3}首相怎么说 发表声明了吗 还是\N{\r原文\blur3}What about the PM - any statement, or...?
+Dialogue: 0,0:37:30.62,0:37:33.20,译文,,0,0,0,,{\blur3}-唐宁街和内政部都没表态 -没表态\N{\r原文\blur3}- Nothing from Downing Street or the Home Office.  - Nothing?
+Dialogue: 0,0:37:33.20,0:37:35.50,译文,,0,0,0,,{\blur3}等等 麦肯齐留了语音留言\N{\r原文\blur3}Oh, wait, there's a voice message from McKenzie.
+Dialogue: 0,0:37:35.50,0:37:37.37,译文,,0,0,0,,{\blur3}《新闻之夜》想今晚采访你\N{\r原文\blur3}Newsnight want you back on tonight.
+Dialogue: 0,0:37:38.75,0:37:40.54,译文,,0,0,0,,{\blur3}怎么 你想说什么 艾丽莎\N{\r原文\blur3}What? What do you want to say, Aliza?
+Dialogue: 0,0:37:40.54,0:37:42.67,译文,,0,0,0,,{\blur3}我觉得我们都想知道发生了什么\N{\r原文\blur3}I think we'd all just like to know what happened.
+Dialogue: 0,0:37:42.67,0:37:45.59,译文,,0,0,0,,{\blur3}你有一条新消息\N{\r原文\blur3}You have one new message...
+Dialogue: 0,0:37:45.59,0:37:49.43,译文,,0,0,0,,{\blur3}出于对我和我家人的安全着想\N{\r原文\blur3}Fearing for my safety and the safety of my family,
+Dialogue: 0,0:37:49.43,0:37:53.10,译文,,0,0,0,,{\blur3}我决定改变对赞达面部识别的立场\N{\r原文\blur3}I decided to alter my position on Xanda Facial Recognition.
+Dialogue: 0,0:37:53.10,0:37:55.52,译文,,0,0,0,,{\blur3}我就知道 这就说得通了 艾萨克\N{\r原文\blur3}I knew it. It's fair enough, Isaac.
+Dialogue: 0,0:37:55.52,0:37:58.14,译文,,0,0,0,,{\blur3}怎么了 你不懂 你又没孩子\N{\r原文\blur3}Hmm!  What? YOU don't know. YOU don't have kids.
+Dialogue: 0,0:37:58.14,0:38:01.15,译文,,0,0,0,,{\blur3}你不也没有吗 除非有私生子的那个人是你\N{\r原文\blur3}Well, neither do you, unless YOU'RE the one with the secret lovechild.
+Dialogue: 0,0:38:01.15,0:38:03.65,译文,,0,0,0,,{\blur3}抱歉 假的私生子\N{\r原文\blur3}Sorry, fake secret lovechild.
+Dialogue: 0,0:38:05.23,0:38:07.61,译文,,0,0,0,,{\blur3}这是另一件事 他们也知道了\N{\r原文\blur3}That's the other thing, they know about that, too.
+Dialogue: 0,0:38:07.61,0:38:09.40,译文,,0,0,0,,{\blur3}不止他们知道\N{\r原文\blur3}They're not the only ones.
+Dialogue: 0,0:38:12.07,0:38:14.83,译文,,0,0,0,,{\blur3}你早餐吃了什么 艾萨克\N{\r原文\blur3}What did you have for breakfast, Isaac?
+Dialogue: 0,0:38:14.83,0:38:16.66,译文,,0,0,0,,{\blur3}很久以前的事了我不记得了\N{\r原文\blur3}It was so long ago, I can't remember.
+Dialogue: 0,0:38:16.66,0:38:18.12,译文,,0,0,0,,{\blur3}谢谢 音量正常\N{\r原文\blur3}Thank you. Audio level's good.
+Dialogue: 0,0:38:18.12,0:38:19.83,译文,,0,0,0,,{\blur3}你一般都会做录音测试吗\N{\r原文\blur3}Do you normally do test recordings?
+Dialogue: 0,0:38:19.83,0:38:23.38,译文,,0,0,0,,{\blur3}每次连新的计算机或者换新地方的时侯会测\N{\r原文\blur3}Whenever we link up to a new computer or a new location.
+Dialogue: 0,0:38:23.38,0:38:26.96,译文,,0,0,0,,{\blur3}他手下说艾萨克·特纳想做远程采访的时候\N{\r原文\blur3}When his spad said that Isaac Turner wanted to do a remote interview,
+Dialogue: 0,0:38:26.96,0:38:29.09,译文,,0,0,0,,{\blur3}我以为他是说在家里接受来访\N{\r原文\blur3}I assumed he meant from home.
+Dialogue: 0,0:38:29.09,0:38:31.93,译文,,0,0,0,,{\blur3}但后来特纳打来说他在伦敦\N{\r原文\blur3}But then Turner called and said he was in London.
+Dialogue: 0,0:38:31.93,0:38:33.68,译文,,0,0,0,,{\blur3}艾萨克·特纳亲自打给你\N{\r原文\blur3}Isaac Turner called you himself?
+Dialogue: 0,0:38:34.72,0:38:36.06,译文,,0,0,0,,{\blur3}对\N{\r原文\blur3}Yes.
+Dialogue: 0,0:38:36.06,0:38:38.18,译文,,0,0,0,,{\blur3}他听起来什么样\N{\r原文\blur3}And how did he sound?
+Dialogue: 0,0:38:38.18,0:38:40.23,译文,,0,0,0,,{\blur3}艾萨克·特纳那样\N{\r原文\blur3}Like Isaac Turner.
+Dialogue: 0,0:38:41.35,0:38:43.10,译文,,0,0,0,,{\blur3}-所以 没什么不一样的吗 -没\N{\r原文\blur3}- So, nothing unusual?  - No.
+Dialogue: 0,0:38:43.11,0:38:46.07,译文,,0,0,0,,{\blur3}我们把链接发给他 他直接就开始测音了\N{\r原文\blur3}We sent him the link and he jumped straight on this test.
+Dialogue: 0,0:38:46.07,0:38:48.61,译文,,0,0,0,,{\blur3}他确实有点像克里斯蒂安·贝尔\N{\r原文\blur3}He did get a bit Christian Bale at one point.
+Dialogue: 0,0:38:48.61,0:38:51.32,译文,,0,0,0,,{\blur3}你能把笔记本电脑抬高一英寸吗 艾萨克\N{\r原文\blur3}Any chance you could raise your laptop an inch for me, Isaac?
+Dialogue: 0,0:38:51.32,0:38:53.49,译文,,0,0,0,,{\blur3}不能 现在这个画面我挺满意的\N{\r原文\blur3}No, I'm pretty happy with the frame.
+Dialogue: 0,0:38:53.49,0:38:56.03,译文,,0,0,0,,{\blur3}嗯 我们想后面留白多一些\N{\r原文\blur3}Yeah, well, we'd prefer a bit more headroom.
+Dialogue: 0,0:38:56.04,0:38:57.62,译文,,0,0,0,,{\blur3}要不取消采访吧\N{\r原文\blur3}Or we can cancel the interview.
+Dialogue: 0,0:38:57.62,0:38:59.75,译文,,0,0,0,,{\blur3}他决定的取景范围\N{\r原文\blur3}He chose the framing.
+Dialogue: 0,0:38:59.75,0:39:01.83,译文,,0,0,0,,{\blur3}对 架子大得很\N{\r原文\blur3}Yeah. Diva.
+Dialogue: 0,0:39:01.83,0:39:03.25,译文,,0,0,0,,{\blur3}聪明\N{\r原文\blur3}Smart.
+Dialogue: 0,0:39:03.25,0:39:06.46,译文,,0,0,0,,{\blur3}你能透露点什么吗 私下里说\N{\r原文\blur3}So, what can you tell us, off the record?
+Dialogue: 0,0:39:06.46,0:39:08.63,译文,,0,0,0,,{\blur3}是不是中国方面黑了我的程序 还是怎么的\N{\r原文\blur3}Did China hack my programme, or what?
+Dialogue: 0,0:39:08.63,0:39:11.59,译文,,0,0,0,,{\blur3}随便你问 艾德 你不会得到任何答案的\N{\r原文\blur3}You can ask all you like, Ed, you won't get any answers.
+Dialogue: 0,0:39:11.59,0:39:14.05,译文,,0,0,0,,{\blur3}-哈迪亚 这是 -瑞秋\N{\r原文\blur3}- Khadija. Er...this is...  - Rachel.
+Dialogue: 0,0:39:14.08,0:39:15.80,译文,,0,0,0,,{\blur3}{\r原文\blur3}Hmm.
+Dialogue: 0,0:39:15.76,0:39:18.31,译文,,0,0,0,,{\blur3}安东尼跟我说你会四处打探\N{\r原文\blur3}Anthony told me you'd be sniffing around.
+Dialogue: 0,0:39:18.31,0:39:21.68,译文,,0,0,0,,{\blur3}如果你能抽出几分钟时间 我会非常感激 汗小姐\N{\r原文\blur3}Well, I'd appreciate a few minutes, Miss Khan, when you can spare them.
+Dialogue: 0,0:39:21.69,0:39:24.73,译文,,0,0,0,,{\blur3}你不让我报道之前就应该想到这点\N{\r原文\blur3}You should've thought of that before you took my story away.
+Dialogue: 0,0:39:26.19,0:39:27.98,译文,,0,0,0,,{\blur3}我们在调查一个更棒的新闻\N{\r原文\blur3}We're working on a better one.
+Dialogue: 0,0:39:27.98,0:39:29.44,译文,,0,0,0,,{\blur3}嗯 拭目以待\N{\r原文\blur3}Yeah, we'll see.
+Dialogue: 0,0:39:31.11,0:39:33.82,译文,,0,0,0,,{\blur3}她是慢热型\N{\r原文\blur3}She'll warm up, possibly.
+Dialogue: 0,0:39:33.82,0:39:37.24,译文,,0,0,0,,{\blur3}所以你要报道私生子的事喽\N{\r原文\blur3}You're running it, then, the love child story?
+Dialogue: 0,0:39:37.24,0:39:38.87,译文,,0,0,0,,{\blur3}对 得先核实一下\N{\r原文\blur3}Yeah. We need to verify it first.
+Dialogue: 0,0:39:43.08,0:39:44.46,译文,,0,0,0,,{\blur3}失陪\N{\r原文\blur3}Excuse me.
+Dialogue: 0,0:39:46.29,0:39:49.21,译文,,0,0,0,,{\blur3}-汤姆 -医院那边应该是有好消息\N{\r原文\blur3}- Tom.  - Looks like there's good news from the hospital.
+Dialogue: 0,0:39:49.21,0:39:50.71,译文,,0,0,0,,{\blur3}我这就过去\N{\r原文\blur3}I'm heading over there.
+Dialogue: 0,0:40:17.74,0:40:20.33,译文,,0,0,0,,{\blur3}我昨天问过你 有什么我应该知道的事\N{\r原文\blur3}I asked you yesterday, was there anything I should know.
+Dialogue: 0,0:40:22.00,0:40:24.12,译文,,0,0,0,,{\blur3}当时没有 现在也没有\N{\r原文\blur3}There was nothing then, there's nothing now.
+Dialogue: 0,0:40:24.12,0:40:26.50,译文,,0,0,0,,{\blur3}BBC要求发表评论 跟他们说都是瞎扯\N{\r原文\blur3}The BBC are asking for a comment. Tell them it's bullshit,
+Dialogue: 0,0:40:26.50,0:40:28.67,译文,,0,0,0,,{\blur3}要是他们报道 我们就大幅度削减他们预算\N{\r原文\blur3}and if they run it, we'll take a pickaxe to their budget.
+Dialogue: 0,0:40:28.67,0:40:30.59,译文,,0,0,0,,{\blur3}在走到那步之前 艾萨克\N{\r原文\blur3}Well, before we go that route, Isaac,
+Dialogue: 0,0:40:30.59,0:40:32.63,译文,,0,0,0,,{\blur3}有件事我们得问问你\N{\r原文\blur3}there is something we need to ask you.
+Dialogue: 0,0:40:32.63,0:40:33.97,译文,,0,0,0,,{\blur3}真的吗\N{\r原文\blur3}Is it?
+Dialogue: 0,0:40:35.16,0:40:36.88,译文,,0,0,0,,{\blur3}{\r原文\blur3}Bullshit?
+Dialogue: 0,0:40:37.97,0:40:39.64,译文,,0,0,0,,{\blur3}这故事可信度极高\N{\r原文\blur3}It's a perfectly plausible story.
+Dialogue: 0,0:40:39.64,0:40:41.14,译文,,0,0,0,,{\blur3}四年前你在拉各斯\N{\r原文\blur3}You were in Lagos four years ago.
+Dialogue: 0,0:40:41.14,0:40:43.02,译文,,0,0,0,,{\blur3}显然有人做足了功课\N{\r原文\blur3}Somebody's obviously done their homework.
+Dialogue: 0,0:40:43.02,0:40:44.77,译文,,0,0,0,,{\blur3}这么看 你做的也挺足的\N{\r原文\blur3}So have you, by the looks of it.
+Dialogue: 0,0:40:44.77,0:40:46.89,译文,,0,0,0,,{\blur3}你没查出来我为什么去吗\N{\r原文\blur3}You manage to uncover WHY I was there?
+Dialogue: 0,0:40:48.23,0:40:51.19,译文,,0,0,0,,{\blur3}不知道 我飞去拉各斯参加我母亲的葬礼\N{\r原文\blur3}No? I flew to Lagos for my mother's funeral.
+Dialogue: 0,0:40:51.19,0:40:54.28,译文,,0,0,0,,{\blur3}很好 不是很好 节哀顺变\N{\r原文\blur3}Good! Um...not good. I'm sorry for your loss.
+Dialogue: 0,0:40:54.28,0:40:55.61,译文,,0,0,0,,{\blur3}都过去四年了 罗文\N{\r原文\blur3}It was four years ago, Rowan.
+Dialogue: 0,0:40:55.61,0:40:57.70,译文,,0,0,0,,{\blur3}你愿意做亲子鉴定吗\N{\r原文\blur3}Would you be willing to take a paternity test?
+Dialogue: 0,0:40:57.70,0:41:00.62,译文,,0,0,0,,{\blur3}真服了 人家刚跟你说他去给他母亲送葬了\N{\r原文\blur3}For God's sake, the man's just told you he was burying his mother!
+Dialogue: 0,0:41:00.62,0:41:02.62,译文,,0,0,0,,{\blur3}-情绪上头嘛 -什么意思\N{\r原文\blur3}- An emotional time. - What does that mean?
+Dialogue: 0,0:41:02.62,0:41:05.41,译文,,0,0,0,,{\blur3}就是说你飞去拉各斯\N{\r原文\blur3}It means it's not impossible that while you flew to Lagos
+Dialogue: 0,0:41:05.41,0:41:08.46,译文,,0,0,0,,{\blur3}给你母亲下葬那次 也在某时常刻埋下了\N{\r原文\blur3}to bury your mother, you did also at some point during that trip
+Dialogue: 0,0:41:08.46,0:41:09.88,译文,,0,0,0,,{\blur3}其他东西\N{\r原文\blur3}bury something else.
+Dialogue: 0,0:41:13.05,0:41:15.13,译文,,0,0,0,,{\blur3}四年前 我们刚刚赢得选举\N{\r原文\blur3}Four years ago, we'd just won the election.
+Dialogue: 0,0:41:15.13,0:41:17.84,译文,,0,0,0,,{\blur3}你真觉得我会在刚拿到议会席位的同时\N{\r原文\blur3}Do you really think I'd jeopardise my seat in Parliament
+Dialogue: 0,0:41:17.84,0:41:21.26,译文,,0,0,0,,{\blur3}-干出危及地位的事吗 -是人都会出错 你错了\N{\r原文\blur3}- when I'd only just taken it?  - We all fuck up.  That's where you're wrong.
+Dialogue: 0,0:41:21.26,0:41:22.60,译文,,0,0,0,,{\blur3}-你没出错吗 -没\N{\r原文\blur3}- You don't fuck up?  - No.
+Dialogue: 0,0:41:24.35,0:41:27.27,译文,,0,0,0,,{\blur3}那我就告诉媒体 这不可能是真的\N{\r原文\blur3}So I'll just tell the press that it can't be true,
+Dialogue: 0,0:41:27.27,0:41:31.02,译文,,0,0,0,,{\blur3}因为出色的艾萨克·特纳绝不会出错\N{\r原文\blur3}because the amazing Isaac Turner never fucks up!
+Dialogue: 0,0:41:31.02,0:41:32.52,译文,,0,0,0,,{\blur3}我问你件事\N{\r原文\blur3}Let me ask you something.
+Dialogue: 0,0:41:33.78,0:41:36.53,译文,,0,0,0,,{\blur3}有多少内阁大臣被抓到下不来台的场面\N{\r原文\blur3}How many Cabinet ministers get caught with their pants down
+Dialogue: 0,0:41:36.53,0:41:38.40,译文,,0,0,0,,{\blur3}或者为了东山再起\N{\r原文\blur3}or their fingers in the expenses pot
+Dialogue: 0,0:41:38.41,0:41:41.12,译文,,0,0,0,,{\blur3}监守自盗 职业生涯毫发无损\N{\r原文\blur3}only to bounce right back, careers unscathed?
+Dialogue: 0,0:41:42.12,0:41:45.41,译文,,0,0,0,,{\blur3}你看 如果你像我一样 那就不太管用了\N{\r原文\blur3}You see, it doesn't quite work like that if you look like me.
+Dialogue: 0,0:41:46.58,0:41:49.37,译文,,0,0,0,,{\blur3}如果我不诚实或滥交\N{\r原文\blur3}If I'M dishonest or promiscuous,
+Dialogue: 0,0:41:49.38,0:41:51.92,译文,,0,0,0,,{\blur3}我只会证实了大家最坏的怀疑\N{\r原文\blur3}I'm just confirming everybody's worst suspicions.
+Dialogue: 0,0:41:53.00,0:41:55.46,译文,,0,0,0,,{\blur3}所以我父母告诉我要加倍努力\N{\r原文\blur3}So there's a reason my parents told me to work twice as hard
+Dialogue: 0,0:41:55.46,0:41:58.22,译文,,0,0,0,,{\blur3}表现得比学校里其他孩子好一倍\N{\r原文\blur3}and act twice as nice as all the other kids in school.
+Dialogue: 0,0:41:58.22,0:42:00.89,译文,,0,0,0,,{\blur3}我遵从了他们的建议 现在仍在践行\N{\r原文\blur3}I took their advice, I'm still taking it now.
+Dialogue: 0,0:42:00.89,0:42:03.22,译文,,0,0,0,,{\blur3}我尊重我的妻子和孩子\N{\r原文\blur3}I treat my wife and children with respect,
+Dialogue: 0,0:42:03.22,0:42:05.81,译文,,0,0,0,,{\blur3}但我这么做不是为了他们 也不是因为这样就是个\N{\r原文\blur3}but I don't do it just for their sake or because it makes me
+Dialogue: 0,0:42:05.81,0:42:08.10,译文,,0,0,0,,{\blur3}好的基督徒 不管大家怎么想\N{\r原文\blur3}a good Christian, despite what everybody thinks.
+Dialogue: 0,0:42:08.10,0:42:10.73,译文,,0,0,0,,{\blur3}我这么做是因为没人会给我第二次机会\N{\r原文\blur3}I do it because no-one's going to give me a second chance!
+Dialogue: 0,0:42:11.77,0:42:14.07,译文,,0,0,0,,{\blur3}所以 不会 当我要在英国国会成功的时候\N{\r原文\blur3}So, no, when it comes to getting ahead in Westminster,
+Dialogue: 0,0:42:14.07,0:42:15.73,译文,,0,0,0,,{\blur3}我不会出错的\N{\r原文\blur3}I don't fuck up.
+Dialogue: 0,0:42:22.66,0:42:24.99,译文,,0,0,0,,{\blur3}我会跟BBC说不要报道\N{\r原文\blur3}I'll tell the BBC to bury the story.
+Dialogue: 0,0:42:24.99,0:42:26.62,译文,,0,0,0,,{\blur3}真他妈谢谢了\N{\r原文\blur3}Thank fuck for that.
+Dialogue: 0,0:42:28.79,0:42:31.54,译文,,0,0,0,,{\blur3}内政大臣 我想单独跟你谈谈\N{\r原文\blur3}Home Secretary, I'd like a word, alone.
+Dialogue: 0,0:42:51.69,0:42:53.19,译文,,0,0,0,,{\blur3}高危病房\N{\r原文\blur3}..High Dependency Unit,
+Dialogue: 0,0:42:53.19,0:42:56.36,译文,,0,0,0,,{\blur3}也就是说他的状态很不好 但已经渡过了危机关头\N{\r原文\blur3}which means his condition is serious, but no longer critical.
+Dialogue: 0,0:42:56.36,0:42:58.65,译文,,0,0,0,,{\blur3}他现在出于药物造成的昏迷之中\N{\r原文\blur3}He's in a medically induced coma,
+Dialogue: 0,0:42:58.65,0:43:01.99,译文,,0,0,0,,{\blur3}但是他会醒过来的\N{\r原文\blur3}but he will wake in due course.
+Dialogue: 0,0:43:01.99,0:43:03.78,译文,,0,0,0,,{\blur3}他会好起来吗\N{\r原文\blur3}Is he going to be all right?
+Dialogue: 0,0:43:03.78,0:43:05.78,译文,,0,0,0,,{\blur3}会的\N{\r原文\blur3}Yeah.
+Dialogue: 0,0:43:05.78,0:43:08.83,译文,,0,0,0,,{\blur3}爸爸还在睡觉 但他会好起来的\N{\r原文\blur3}Daddy's still sleeping, but he's going to be all right.
+Dialogue: 0,0:43:08.83,0:43:11.33,译文,,0,0,0,,{\blur3}-我们去看看他好不好 -嗯\N{\r原文\blur3}- OK.  Shall we go and see him?  - Yeah.
+Dialogue: 0,0:43:18.67,0:43:21.67,译文,,0,0,0,,{\blur3}医生 他还有多久能恢复意识\N{\r原文\blur3}Doctor? How long do you think before he's conscious?
+Dialogue: 0,0:43:21.68,0:43:24.30,译文,,0,0,0,,{\blur3}每个病人都不一样 但是\N{\r原文\blur3}Well, each patient is different, but, er...
+Dialogue: 0,0:43:24.30,0:43:27.31,译文,,0,0,0,,{\blur3}-他也许几小时后就能醒过来 -谢谢\N{\r原文\blur3}- well, he could be awake in the next couple of hours.  - Thank you.
+Dialogue: 0,0:43:33.40,0:43:36.73,译文,,0,0,0,,{\blur3}-汤姆在 -高危病房 我们已经知道了 凯莉\N{\r原文\blur3}- Tom is on the...  - High Dependency ward. We're way ahead of you, Carey.
+Dialogue: 0,0:43:37.69,0:43:39.57,译文,,0,0,0,,{\blur3}艾德 数据源查的怎么样了\N{\r原文\blur3}Ed, how's the feed check?
+Dialogue: 0,0:43:39.57,0:43:41.99,译文,,0,0,0,,{\blur3}-K3 我是K6 -请说\N{\r原文\blur3}- Kilo Six, Kilo Three?  - Go ahead.
+Dialogue: 0,0:43:41.99,0:43:45.62,译文,,0,0,0,,{\blur3}我们通过控制中心在查监控 K3 一切都在计划中\N{\r原文\blur3}We're running camera checks via Control, Kilo Three. All in order.
+Dialogue: 0,0:43:45.62,0:43:46.87,译文,,0,0,0,,{\blur3}明白了\N{\r原文\blur3}Understood.
+Dialogue: 0,0:43:48.45,0:43:50.37,译文,,0,0,0,,{\blur3}看到你笑真好\N{\r原文\blur3}Nice to see you smiling.
+Dialogue: 0,0:43:52.12,0:43:54.17,译文,,0,0,0,,{\blur3}真会说\N{\r原文\blur3}Whatever.  Hmm!
+Dialogue: 0,0:44:06.30,0:44:08.14,译文,,0,0,0,,{\blur3}需要支援吗 K3\N{\r原文\blur3}Need support to cover, Kilo Three?
+Dialogue: 0,0:44:08.14,0:44:10.81,译文,,0,0,0,,{\blur3}我会留在这 等到帕特里克醒过来\N{\r原文\blur3}I'm going to stay till Patrick wakes up.
+Dialogue: 0,0:44:12.06,0:44:14.94,译文,,0,0,0,,{\blur3}-我希望他指认枪手时能在他身边 -了解\N{\r原文\blur3}- I want to be here when he IDs the shooter.  - Understood.
+Dialogue: 0,0:44:26.91,0:44:31.74,译文,,0,0,0,,{\blur3}嗨 我 我想买玩具 给一个两岁和一个九岁的孩子\N{\r原文\blur3}Hi. I-I need a toy for a two-year-old and a...nine-year-old.
+Dialogue: 0,0:45:25.26,0:45:27.09,译文,,0,0,0,,{\blur3}你他妈想干嘛\N{\r原文\blur3}What the fuck do YOU want?
+Dialogue: 0,0:45:27.09,0:45:30.80,译文,,0,0,0,,{\blur3}你怎么在这\N{\r原文\blur3}What are YOU doing here?
+Dialogue: 0,0:45:28.68,0:45:30.84,译文,,0,0,0,,{\blur3}{\r原文\blur3}What am I DOING here?
+Dialogue: 0,0:45:32.47,0:45:34.14,译文,,0,0,0,,{\blur3}这他妈是家医院\N{\r原文\blur3}It's a fucking hospital.
+Dialogue: 0,0:45:42.27,0:45:44.57,译文,,0,0,0,,{\blur3}你得原谅我 内务大臣\N{\r原文\blur3}You're going to have to forgive me, Home Secretary,
+Dialogue: 0,0:45:44.57,0:45:48.32,译文,,0,0,0,,{\blur3}但是我从没研究过「移花接木」\N{\r原文\blur3}but I've never had to navigate around Correction before.
+Dialogue: 0,0:45:48.32,0:45:49.70,译文,,0,0,0,,{\blur3}我不知道该怎么做\N{\r原文\blur3}I've no idea how it works.
+Dialogue: 0,0:45:49.70,0:45:55.50,译文,,0,0,0,,{\blur3}伯我希望你或者首相可以发表个声明\N{\r原文\blur3}But I was expecting to see a statement from you or the PM.
+Dialogue: 0,0:45:55.50,0:45:58.00,译文,,0,0,0,,{\blur3}对于我所宣布的让人吃惊的消息给出点反应\N{\r原文\blur3}Some reaction to my highly-surprising announcement.
+Dialogue: 0,0:45:58.00,0:45:59.29,译文,,0,0,0,,{\blur3}但什么都没有\N{\r原文\blur3}There's been nothing.
+Dialogue: 0,0:45:59.29,0:46:01.96,译文,,0,0,0,,{\blur3}毕竟还在调查 现阶段是很敏感的\N{\r原文\blur3}Well, it's sensitive whilst the investigation's ongoing.
+Dialogue: 0,0:46:01.96,0:46:05.30,译文,,0,0,0,,{\blur3}那怎么着 就让这虚假消息继续发酵吗\N{\r原文\blur3}Oh, what, so, we're just supposed to let the disinformation fester?
+Dialogue: 0,0:46:05.30,0:46:07.17,译文,,0,0,0,,{\blur3}如果我们不出声\N{\r原文\blur3}As long as we keep quiet,
+Dialogue: 0,0:46:07.17,0:46:10.09,译文,,0,0,0,,{\blur3}大家就都以为我们还会选择赞达\N{\r原文\blur3}everyone's going to assume we're going with Xanda.
+Dialogue: 0,0:46:10.09,0:46:11.76,译文,,0,0,0,,{\blur3}北京得到他们想要的\N{\r原文\blur3}Beijing gets what it wants.
+Dialogue: 0,0:46:11.76,0:46:16.52,译文,,0,0,0,,{\blur3}你可以直接否决我的推荐\N{\r原文\blur3}You know, you COULD overrule my recommendation.
+Dialogue: 0,0:46:17.48,0:46:18.98,译文,,0,0,0,,{\blur3}至少签署个声明\N{\r原文\blur3}At least issue a statement,
+Dialogue: 0,0:46:18.98,0:46:21.44,译文,,0,0,0,,{\blur3}说你犹像不决并对此存疑\N{\r原文\blur3}say you're undecided and introduce doubt.
+Dialogue: 0,0:46:21.44,0:46:23.69,译文,,0,0,0,,{\blur3}你说的这些早就讨论过了\N{\r原文\blur3}Well, those options are already being discussed.
+Dialogue: 0,0:46:24.90,0:46:26.90,译文,,0,0,0,,{\blur3}-跟谁 -当然是首相\N{\r原文\blur3}- With who?  - The PM, of course.
+Dialogue: 0,0:46:30.03,0:46:31.41,译文,,0,0,0,,{\blur3}你召开了首脑会议\N{\r原文\blur3}You called a Cobra meeting?
+Dialogue: 0,0:46:31.41,0:46:34.49,译文,,0,0,0,,{\blur3}我们在公园里一起吃冰淇淋来着 这有什么关系吗\N{\r原文\blur3}We met in the park for an ice cream. What difference does it make?
+Dialogue: 0,0:46:34.49,0:46:36.41,译文,,0,0,0,,{\blur3}我要跟首相通话\N{\r原文\blur3}I'm talking to the PM.
+Dialogue: 0,0:46:36.41,0:46:39.33,译文,,0,0,0,,{\blur3}罗文 你看哈 这场危机是因我而起\N{\r原文\blur3}Look, Rowan, given how central I am to this crisis,
+Dialogue: 0,0:46:39.33,0:46:41.92,译文,,0,0,0,,{\blur3}因此我觉得自己必须全面积极的\N{\r原文\blur3}I strongly feel I should be fully, actively involved
+Dialogue: 0,0:46:41.92,0:46:43.50,译文,,0,0,0,,{\blur3}参与到收府的回复中去\N{\r原文\blur3}in the Government's response.
+Dialogue: 0,0:46:43.50,0:46:46.21,译文,,0,0,0,,{\blur3}我觉得你现在最需要的是好好休息\N{\r原文\blur3}I think you deserve a bloody good rest, mate.
+Dialogue: 0,0:46:48.38,0:46:50.01,译文,,0,0,0,,{\blur3}我不需要休息\N{\r原文\blur3}I don't NEED a rest.
+Dialogue: 0,0:46:50.01,0:46:51.63,译文,,0,0,0,,{\blur3}英国遭受了袭击\N{\r原文\blur3}The UK is under attack.
+Dialogue: 0,0:46:51.64,0:46:54.76,译文,,0,0,0,,{\blur3}我不只是安全大臣 我也是他们袭击的目标之一\N{\r原文\blur3}Not only am I Security Minister, I'm one of the targets!
+Dialogue: 0,0:46:54.76,0:46:59.14,译文,,0,0,0,,{\blur3}所以你才要保持一个合适的安全距离\N{\r原文\blur3}And that's all the more reason for you to maintain a healthy distance.
+Dialogue: 0,0:47:01.15,0:47:03.69,译文,,0,0,0,,{\blur3}回家去吧 艾萨克\N{\r原文\blur3}Go home, Isaac.
+Dialogue: 0,0:47:03.69,0:47:05.73,译文,,0,0,0,,{\blur3}跟家人在一起\N{\r原文\blur3}Be with your family.
+Dialogue: 0,0:47:08.24,0:47:09.74,译文,,0,0,0,,{\blur3}好吗\N{\r原文\blur3}All right?
+Dialogue: 0,0:47:57.91,0:47:59.33,译文,,0,0,0,,{\blur3}艾萨克\N{\r原文\blur3}Isaac?
+Dialogue: 0,0:47:59.33,0:48:02.54,译文,,0,0,0,,{\blur3}是我打给《新闻之夜》告诉他们我有独家要给他们\N{\r原文\blur3}Yes. Er...call Newsnight and tell them I've got an exclusive.
+Dialogue: 0,0:48:02.54,0:48:04.62,译文,,0,0,0,,{\blur3}-今晚吗 -对 今晚\N{\r原文\blur3}- Tonight?  - Yeah, tonight.
+Dialogue: 0,0:48:04.63,0:48:08.42,译文,,0,0,0,,{\blur3}还有 莱斯 这次要确保现场直播\N{\r原文\blur3}And, Rhys? This time, make sure it's live in the studio.
+Dialogue: 0,0:48:08.42,0:48:11.17,译文,,0,0,0,,{\blur3}好的 我来处理\N{\r原文\blur3}OK, I'll get right on it.
+Dialogue: 0,0:48:11.17,0:48:13.55,译文,,0,0,0,,{\blur3}看看他啊 还有个长毛尾巴呢\N{\r原文\blur3}Look at him. Hasn't he got a furry tail!
+Dialogue: 0,0:48:22.06,0:48:23.89,译文,,0,0,0,,{\blur3}-长官 -你还在英国广播公司吗\N{\r原文\blur3}- Ma'am.  - Are you still at the BBC?
+Dialogue: 0,0:48:23.89,0:48:25.69,译文,,0,0,0,,{\blur3}不太远\N{\r原文\blur3}Not far away.
+Dialogue: 0,0:48:25.72,0:48:27.28,译文,,0,0,0,,{\blur3}{\r原文\blur3}Get back there.
+Dialogue: 0,0:48:27.23,0:48:29.69,译文,,0,0,0,,{\blur3}艾萨克·特纳刚刚甩掉了安保人员\N{\r原文\blur3}Isaac Turner's just cut his protection officers loose.
+Dialogue: 0,0:48:29.69,0:48:31.13,译文,,0,0,0,,{\blur3}他要上《新闻之夜》\N{\r原文\blur3}He's booked himself on Newsnight.
+Dialogue: 0,0:48:31.15,0:48:32.76,译文,,0,0,0,,{\blur3}他说了什么\N{\r原文\blur3}What did he say?
+Dialogue: 0,0:48:32.78,0:48:34.57,译文,,0,0,0,,{\blur3}他说会是个重大新闻\N{\r原文\blur3}He's promised them a bombshell.
+Dialogue: 0,0:48:36.53,0:48:38.37,译文,,0,0,0,,{\blur3}他要曝光「移花接木」\N{\r原文\blur3}He's going to expose Correction.
+Dialogue: 0,0:48:38.40,0:48:40.88,译文,,0,0,0,,{\blur3}{\r原文\blur3}No. You're going to stop him.
+Dialogue: 0,0:48:44.04,0:48:45.58,译文,,0,0,0,,{\blur3}我马上去\N{\r原文\blur3}I'm on my way.
+Dialogue: 0,0:48:57.43,0:48:59.22,译文,,0,0,0,,{\blur3}如果里面的特工有苏醒迹象\N{\r原文\blur3}Any sign of the asset waking up,
+Dialogue: 0,0:48:59.22,0:49:01.72,译文,,0,0,0,,{\blur3}或者突然惊醒 用2号频道呼叫我\N{\r原文\blur3}he so much as stirs in his sleep, radio me on Two.
+Dialogue: 0,0:49:01.72,0:49:03.14,译文,,0,0,0,,{\blur3}是 长官\N{\r原文\blur3}Yes, Ma'am.
+Dialogue: 0,0:49:14.11,0:49:17.07,译文,,0,0,0,,{\blur3}独家新闻 他就只说了这么多\N{\r原文\blur3}An exclusive - that's all he's prepared to tell us upfront.
+Dialogue: 0,0:49:18.74,0:49:20.95,译文,,0,0,0,,{\blur3}如果是有关黑客入侵的事呢\N{\r原文\blur3}What if it's about the hack?
+Dialogue: 0,0:49:20.95,0:49:23.75,译文,,0,0,0,,{\blur3}安东尼已经担保过不会声张了\N{\r原文\blur3}Well, Anthony gave the service his word,
+Dialogue: 0,0:49:23.75,0:49:25.46,译文,,0,0,0,,{\blur3}但如果艾萨克·特纳自己说出来\N{\r原文\blur3}but if it comes from Isaac Turner...
+Dialogue: 0,0:49:26.96,0:49:28.25,译文,,0,0,0,,{\blur3}那就怪不得别人了\N{\r原文\blur3}..then that's on him.
+Dialogue: 0,0:49:29.67,0:49:31.63,译文,,0,0,0,,{\blur3}真搞笑\N{\r原文\blur3}Fucking tease!
+Dialogue: 0,0:49:31.63,0:49:34.17,译文,,0,0,0,,{\blur3}我都开始喜欢他了\N{\r原文\blur3}I'm starting to like him!  Ha!
+Dialogue: 0,0:50:00.24,0:50:02.70,译文,,0,0,0,,{\blur3}特纳先生\N{\r原文\blur3}Mr Turner!
+Dialogue: 0,0:50:02.70,0:50:04.62,译文,,0,0,0,,{\blur3}特纳先生 你不能这么做\N{\r原文\blur3}Mr Turner, this is not the way!
+Dialogue: 0,0:50:04.62,0:50:07.08,译文,,0,0,0,,{\blur3}-你不能就 -还有两分钟 大臣\N{\r原文\blur3}- You can't just...! - Two minutes, Minister.
+Dialogue: 0,0:50:08.42,0:50:11.29,译文,,0,0,0,,{\blur3}-我 -他们为了保护消息不外传甚至不惜杀人\N{\r原文\blur3}- I...  - They kill people to protect it.
+Dialogue: 0,0:50:17.63,0:50:20.59,译文,,0,0,0,,{\blur3}你在给我做「移花接木」的简报时我见过你\N{\r原文\blur3}I saw you when you briefed me on Correction.
+Dialogue: 0,0:50:20.59,0:50:22.97,译文,,0,0,0,,{\blur3}你是 你不是他们那边的对吧\N{\r原文\blur3}You're...you're not a true believer, are you?
+Dialogue: 0,0:50:27.85,0:50:29.31,译文,,0,0,0,,{\blur3}你需要小心\N{\r原文\blur3}You need to be careful.
+Dialogue: 0,0:50:30.60,0:50:31.81,译文,,0,0,0,,{\blur3}需要先制定个计划\N{\r原文\blur3}You need a plan.
+Dialogue: 0,0:50:31.81,0:50:34.98,译文,,0,0,0,,{\blur3}如果你想曝光一件事 就不能随便上电视说\N{\r原文\blur3}If you want to expose this thing, you can't just go on TV and say it.
+Dialogue: 0,0:50:37.74,0:50:39.32,译文,,0,0,0,,{\blur3}我没打算说\N{\r原文\blur3}I wasn't going to.
+Dialogue: 0,0:50:41.32,0:50:43.32,译文,,0,0,0,,{\blur3}-我以为 -他们杀了谁\N{\r原文\blur3}- I thought...  - Who have they killed?
+Dialogue: 0,0:50:43.33,0:50:45.54,译文,,0,0,0,,{\blur3}大臣先生 您可以跟我过来了\N{\r原文\blur3}If you'd like to follow me, Minister?
+Dialogue: 0,0:50:46.66,0:50:49.54,译文,,0,0,0,,{\blur3}你莫非有什么好计划吗\N{\r原文\blur3}Have YOU got a plan to expose it?
+Dialogue: 0,0:50:53.42,0:50:55.09,译文,,0,0,0,,{\blur3}大臣\N{\r原文\blur3}Minister?
+Dialogue: 0,0:51:12.15,0:51:14.15,译文,,0,0,0,,{\blur3}长官 局面控制住了\N{\r原文\blur3}Ma'am. It's under control.
+Dialogue: 0,0:51:14.15,0:51:15.94,译文,,0,0,0,,{\blur3}-你阻止他了 -没有\N{\r原文\blur3}- You stopped him?  - No.
+Dialogue: 0,0:51:15.94,0:51:17.53,译文,,0,0,0,,{\blur3}你让他继续了\N{\r原文\blur3}You let him go on?
+Dialogue: 0,0:51:17.53,0:51:20.28,译文,,0,0,0,,{\blur3}他跟我说不会讲「移花接木」的事\N{\r原文\blur3}H's not going to talk about Correction, he told me.
+Dialogue: 0,0:51:22.70,0:51:24.28,译文,,0,0,0,,{\blur3}你信了\N{\r原文\blur3}And you trust him?
+Dialogue: 0,0:51:26.24,0:51:27.49,译文,,0,0,0,,{\blur3}是的\N{\r原文\blur3}Yes.
+Dialogue: 0,0:51:34.96,0:51:39.38,译文,,0,0,0,,{\blur3}首先是#家庭作业# 然后在中国事件上又出现了令人吃惊的反转\N{\r原文\blur3}First #homework, then a startling U-turn on China.
+Dialogue: 0,0:51:39.38,0:51:44.43,译文,,0,0,0,,{\blur3}现在 安全大臣艾萨克·特纳又要发布消息了\N{\r原文\blur3}Now Security Minister Isaac Turner is set to make headlines again.
+Dialogue: 0,0:51:44.48,0:51:46.96,译文,,0,0,0,,{\blur3}{\r原文\blur3}Newsnight theme tune
+Dialogue: 0,0:51:48.35,0:51:50.10,译文,,0,0,0,,{\blur3}为什么我不知道这事\N{\r原文\blur3}Why was I not told about this?
+Dialogue: 0,0:51:50.10,0:51:51.98,译文,,0,0,0,,{\blur3}我也不知道啊\N{\r原文\blur3}Why wasn't  I  told about it?!
+Dialogue: 0,0:52:04.07,0:52:07.20,译文,,0,0,0,,{\blur3}48小时前 你们可能有人\N{\r原文\blur3}48 hours ago, some of you might have struggled to name
+Dialogue: 0,0:52:07.20,0:52:08.87,译文,,0,0,0,,{\blur3}还说不出英国安全大臣的名字\N{\r原文\blur3}the UK's Security Minister,
+Dialogue: 0,0:52:08.87,0:52:11.66,译文,,0,0,0,,{\blur3}但48小时可以发生很多事\N{\r原文\blur3}but a lot can happen in 48 hours,
+Dialogue: 0,0:52:11.66,0:52:13.46,译文,,0,0,0,,{\blur3}正如艾萨克·特纳要说的一样\N{\r原文\blur3}as Isaac Turner can tell you.
+Dialogue: 0,0:52:14.58,0:52:17.50,译文,,0,0,0,,{\blur3}-晚上好 哈迪亚 -是您主动联系的我们对吧\N{\r原文\blur3}- Good evening, Khadija.  - You contacted us before we went on air
+Dialogue: 0,0:52:17.50,0:52:20.25,译文,,0,0,0,,{\blur3}说你要在现场直播时做一个非常重要的声明\N{\r原文\blur3}with what you said would be a revelatory statement.
+Dialogue: 0,0:52:20.26,0:52:22.97,译文,,0,0,0,,{\blur3}是的 抱歉 鉴于一些秘密行动的缘故\N{\r原文\blur3}Yes. Apologies, Khadija, for the cloak and dagger.
+Dialogue: 0,0:52:22.97,0:52:24.34,译文,,0,0,0,,{\blur3}我必须确保 所说的话\N{\r原文\blur3}I just wanted to make sure
+Dialogue: 0,0:52:24.34,0:52:26.68,译文,,0,0,0,,{\blur3}能够通过一个畅通的渠道传达给大众\N{\r原文\blur3}I had a clear channel for what I'm about to say.
+Dialogue: 0,0:52:26.68,0:52:31.31,译文,,0,0,0,,{\blur3}有关昨天的声明 我要进行修正\N{\r原文\blur3}Regarding yesterday's announcement, I'd like to make a correction.
+Dialogue: 0,0:52:32.64,0:52:35.85,译文,,0,0,0,,{\blur3}事实是 我不支持赞达公司\N{\r原文\blur3}The fact is, I do NOT support Xanda's bid
+Dialogue: 0,0:52:35.85,0:52:38.15,译文,,0,0,0,,{\blur3}参与英国边境面部识别的投标\N{\r原文\blur3}to supply facial rec at Britain's borders.
+Dialogue: 0,0:52:38.15,0:52:39.94,译文,,0,0,0,,{\blur3}你又改变了主意是吗\N{\r原文\blur3}You've changed your mind again?
+Dialogue: 0,0:52:39.94,0:52:42.94,译文,,0,0,0,,{\blur3}我 我不支持他们的投标 并且我强烈建议\N{\r原文\blur3}Er...I-I do not support their bid, and I strongly recommend
+Dialogue: 0,0:52:42.95,0:52:45.15,译文,,0,0,0,,{\blur3}政府不要考虑中国公司\N{\r原文\blur3}the Government considers options outside of China.
+Dialogue: 0,0:52:45.16,0:52:48.07,译文,,0,0,0,,{\blur3}-昨天你还说没什么好担心的 -我的天\N{\r原文\blur3}- Yesterday, you said there was nothing to fear from...  - Oh, my God!
+Dialogue: 0,0:52:48.08,0:52:50.24,译文,,0,0,0,,{\blur3}中国的技术在\N{\r原文\blur3}..the use of Chinese technology
+Dialogue: 0,0:52:50.24,0:52:52.87,译文,,0,0,0,,{\blur3}-英国的基础设施中使用 -我 我 我来这不是为了辩驳\N{\r原文\blur3}- in UK infrastructure. - I-I-I didn't come here to dwell on
+Dialogue: 0,0:52:52.87,0:52:54.04,译文,,0,0,0,,{\blur3}我说了什么或者没说什么\N{\r原文\blur3}what I did or didn't say.
+Dialogue: 0,0:52:54.04,0:52:57.17,译文,,0,0,0,,{\blur3}-我只是直接引用了你说的 -不管怎么说吧 边境问题\N{\r原文\blur3}- That was a direct quote.  - Well, nonetheless, the issue of borders...
+Dialogue: 0,0:52:57.17,0:53:00.34,译文,,0,0,0,,{\blur3}面部侧写可确保我们安保系统行之有效\N{\r原文\blur3}..Facial profiling is what makes us the most effective security system.
+Dialogue: 0,0:53:00.34,0:53:02.17,译文,,0,0,0,,{\blur3}-我的天 -不 不 不\N{\r原文\blur3}- Oh, my God!  - No, no, no!
+Dialogue: 0,0:53:02.17,0:53:04.47,译文,,0,0,0,,{\blur3}-你不是在开玩笑吧 -但如果\N{\r原文\blur3}- You've got to be fucking joking. - ..But if, say,
+Dialogue: 0,0:53:04.47,0:53:06.68,译文,,0,0,0,,{\blur3}17-35岁的穆斯林男性\N{\r原文\blur3}Muslim men between the ages of 17 and 35...
+Dialogue: 0,0:53:06.68,0:53:09.55,译文,,0,0,0,,{\blur3}最有可能对机场进行袭击\N{\r原文\blur3}were the most-likely demographic to launch an attack on an airport...
+Dialogue: 0,0:53:09.56,0:53:11.14,译文,,0,0,0,,{\blur3}一个那样的系统\N{\r原文\blur3}..what's wrong with
+Dialogue: 0,0:53:11.14,0:53:13.68,译文,,0,0,0,,{\blur3}-能有什么 -我宁愿面对\N{\r原文\blur3}- a system that...? - I'd rather face the consequences
+Dialogue: 0,0:53:13.68,0:53:15.18,译文,,0,0,0,,{\blur3}自己突然改变口径的后果\N{\r原文\blur3}of appearing to change course
+Dialogue: 0,0:53:15.19,0:53:17.73,译文,,0,0,0,,{\blur3}也不想看到赞达公司接手我们边境的面部识别项目\N{\r原文\blur3}than face the prospect of Xanda's facial rec at our borders.
+Dialogue: 0,0:53:17.73,0:53:20.11,译文,,0,0,0,,{\blur3}让一家与中国共产党有关系的公司\N{\r原文\blur3}Giving a firm with links to the Chinese Communist Party
+Dialogue: 0,0:53:20.11,0:53:22.94,译文,,0,0,0,,{\blur3}接入我们的监控网络将享有这些侧写\N{\r原文\blur3}access to our surveillance networks would constitute...
+Dialogue: 0,0:53:22.94,0:53:26.65,译文,,0,0,0,,{\blur3}赞达公司的确颇有卖点\N{\r原文\blur3}..Profiling, Xanda treats it as a selling point.
+Dialogue: 0,0:53:26.66,0:53:28.53,译文,,0,0,0,,{\blur3}一个卖点\N{\r原文\blur3}A selling point?
+Dialogue: 0,0:53:28.53,0:53:31.62,译文,,0,0,0,,{\blur3}-改变了你的主意 -我一直担心有些不正当压力\N{\r原文\blur3}- ..Changed your mind? - I've always been concerned about undue influence of...
+Dialogue: 0,0:53:31.62,0:53:33.58,译文,,0,0,0,,{\blur3}首相不支持你的报告吗\N{\r原文\blur3}Did the Prime Minister not back your report?
+Dialogue: 0,0:53:33.58,0:53:35.12,译文,,0,0,0,,{\blur3}将报告\N{\r原文\blur3}Putting together the CRC...
+Dialogue: 0,0:53:35.12,0:53:37.58,译文,,0,0,0,,{\blur3}与任何拥有国际云的公司一样\N{\r原文\blur3}..Like any company with an international cloud,
+Dialogue: 0,0:53:37.58,0:53:41.09,译文,,0,0,0,,{\blur3}赞达与全球越来越多的政府保持同步\N{\r原文\blur3}Xanda is in sync with the growing number of governments
+Dialogue: 0,0:53:41.09,0:53:43.84,译文,,0,0,0,,{\blur3}他们对此想法没有异议\N{\r原文\blur3}around the globe who have no quarrel with the idea...
+Dialogue: 0,0:53:43.84,0:53:46.01,译文,,0,0,0,,{\blur3}我已经决定向内阁建议\N{\r原文\blur3}I've reached my decision to recommend to the Cabinet
+Dialogue: 0,0:53:46.01,0:53:46.67,译文,,0,0,0,,{\blur3}面部识别合约\N{\r原文\blur3}that the facial-recognition contract
+Dialogue: 0,0:53:47.72,0:53:48.84,译文,,0,0,0,,{\blur3}应该给到那些科技公司\N{\r原文\blur3}is awarded to a technology company whose...
+Dialogue: 0,0:53:50.01,0:53:52.18,译文,,0,0,0,,{\blur3}不要再进行直播了 切断信号\N{\r原文\blur3}Stop this broadcast! Cut it!
+Dialogue: 0,0:53:52.18,0:53:55.31,译文,,0,0,0,,{\blur3}-艾德 你需要停止直播 -什么 不可能 去你的吧\N{\r原文\blur3}- Ed, you need to terminate this broadcast!  - What? No! Fuck off!
+Dialogue: 0,0:53:55.31,0:53:58.48,译文,,0,0,0,,{\blur3}赞达的技术给人一种舒适感\N{\r原文\blur3}The fact that Xanda's maths adds up ought to be a source of comfort.
+Dialogue: 0,0:53:58.48,0:54:00.61,译文,,0,0,0,,{\blur3}我敢确定你们大多数人会同意这一点的\N{\r原文\blur3}I'm sure the majority of your viewers would agree.
+Dialogue: 0,0:54:00.61,0:54:02.98,译文,,0,0,0,,{\blur3}-见鬼了 -这涉及到国家安全问题\N{\r原文\blur3}- Fucking hell!  - This is a national security issue!
+Dialogue: 0,0:54:02.98,0:54:04.73,译文,,0,0,0,,{\blur3}赶紧停止直播\N{\r原文\blur3}Somebody needs to stop this broadcast!
+Dialogue: 0,0:54:04.74,0:54:07.70,译文,,0,0,0,,{\blur3}来个人把这女的给我赶出去\N{\r原文\blur3}Can someone get this woman out of my fucking gallery?
+Dialogue: 0,0:54:07.70,0:54:11.99,译文,,0,0,0,,{\blur3}-我正在努力呢 -国家安全部的 赶紧停止直播\N{\r原文\blur3}- I'm trying.  - National security. Somebody stop broadcast now!
+Dialogue: 0,0:54:11.99,0:54:13.70,译文,,0,0,0,,{\blur3}-给我个答案 -停不了\N{\r原文\blur3}- ..Give me an answer!  - It won't cut!
+Dialogue: 0,0:54:13.70,0:54:16.12,译文,,0,0,0,,{\blur3}停不下来 锁定了特纳 怎么回事\N{\r原文\blur3}It's not cutting!  We're locked on Turner!  What's going on?
+Dialogue: 0,0:54:16.12,0:54:18.87,译文,,0,0,0,,{\blur3}面部识别可以让某个年龄段的穆斯林人\N{\r原文\blur3}Racial profiling is what makes Muslim men between the ages of...
+Dialogue: 0,0:54:18.87,0:54:20.92,译文,,0,0,0,,{\blur3}赞达同步于越来越\N{\r原文\blur3}Xanda is in synch with the growing number of...
+Dialogue: 0,0:54:20.92,0:54:22.96,译文,,0,0,0,,{\blur3}收尾 哈迪亚 别让他再说了\N{\r原文\blur3}Wrap it up, Khadija.  Cut it back!
+Dialogue: 0,0:54:22.96,0:54:26.05,译文,,0,0,0,,{\blur3}-哈迪亚 收尾 -大臣 我们得进行下一个话题了\N{\r原文\blur3}- Khadija, wrap it up now. - Minister, we have to move on.
+Dialogue: 0,0:54:26.05,0:54:28.67,译文,,0,0,0,,{\blur3}在我们的索尔福德演播室听的是\N{\r原文\blur3}Now, listening to that in our Salford studio was...
+Dialogue: 0,0:54:28.68,0:54:30.18,译文,,0,0,0,,{\blur3}什么鬼\N{\r原文\blur3}What the fuck...?!
+Dialogue: 0,0:54:35.28,0:54:36.92,译文,,0,0,0,,{\blur3}{\r原文\blur3}Oh.
+Dialogue: 0,0:54:38.77,0:54:40.65,译文,,0,0,0,,{\blur3}首相\N{\r原文\blur3}Prime Minister.
+Dialogue: 0,0:54:40.69,0:54:43.11,译文,,0,0,0,,{\blur3}-艾德 -推特已经爆了\N{\r原文\blur3}- Ed?  - Twitter's blown up.
+Dialogue: 0,0:54:43.11,0:54:45.73,译文,,0,0,0,,{\blur3}什么 我们这个反转的新闻吗 不可能吧\N{\r原文\blur3}What?! Over the U-turn? That's ludicrous!
+Dialogue: 0,0:54:45.73,0:54:47.78,译文,,0,0,0,,{\blur3}长官 你得过来一趟\N{\r原文\blur3}Ma'am, you need to get down here.
+Dialogue: 0,0:54:47.78,0:54:50.61,译文,,0,0,0,,{\blur3}-为什么我老婆打过来7次 -所有人安静\N{\r原文\blur3}- Why has my wife called seven times? - Everybody, quiet!
+Dialogue: 0,0:54:51.91,0:54:53.57,译文,,0,0,0,,{\blur3}这是警方在办案\N{\r原文\blur3}This is a police matter!
+Dialogue: 0,0:54:53.58,0:54:56.37,译文,,0,0,0,,{\blur3}在有进一步指示之前谁都不许离开演播室\N{\r原文\blur3}Nobody is to leave this studio until otherwise instructed.
+Dialogue: 0,0:54:56.37,0:54:59.46,译文,,0,0,0,,{\blur3}我需要你 还有你\N{\r原文\blur3}I need you...and you.
+Dialogue: 0,0:55:01.42,0:55:03.54,译文,,0,0,0,,{\blur3}你在自播前联系的我们\N{\r原文\blur3}You contacted us before we went on air
+Dialogue: 0,0:55:03.54,0:55:06.46,译文,,0,0,0,,{\blur3}说你会有重大声明\N{\r原文\blur3}with what you said would be a revelatory statement.
+Dialogue: 0,0:55:06.46,0:55:09.01,译文,,0,0,0,,{\blur3}-这怎么了 -继续看\N{\r原文\blur3}- What's wrong with this?! - Keep watching.
+Dialogue: 0,0:55:09.01,0:55:12.97,译文,,0,0,0,,{\blur3}有关昨天的声明 我需要做个修正\N{\r原文\blur3}Regarding yesterday's announcement, I'd like to make a correction.
+Dialogue: 0,0:55:12.97,0:55:16.14,译文,,0,0,0,,{\blur3}你问过我 赞达是否已经进行了测试\N{\r原文\blur3}You asked me if Xanda had been tested for racial bias.
+Dialogue: 0,0:55:16.14,0:55:18.60,译文,,0,0,0,,{\blur3}我的回答恐怕不是非常准确\N{\r原文\blur3}I'm afraid my answer wasn't entirely accurate.
+Dialogue: 0,0:55:18.60,0:55:20.52,译文,,0,0,0,,{\blur3}这是什么 他没说这个啊\N{\r原文\blur3}What IS this? He didn't say that.
+Dialogue: 0,0:55:20.52,0:55:22.65,译文,,0,0,0,,{\blur3}事实是\N{\r原文\blur3}The truth is,
+Dialogue: 0,0:55:22.65,0:55:25.61,译文,,0,0,0,,{\blur3}赞达做的面部识别系统是市场上\N{\r原文\blur3}racial profiling is what makes Xanda
+Dialogue: 0,0:55:25.61,0:55:28.23,译文,,0,0,0,,{\blur3}最有效的系统\N{\r原文\blur3}the most-effective security system on the market.
+Dialogue: 0,0:55:28.24,0:55:31.61,译文,,0,0,0,,{\blur3}-什么 -我们被黑了 内容被更改了 都是假的\N{\r原文\blur3}- What?!  - We've been hacked. This has been changed! Faked!
+Dialogue: 0,0:55:31.61,0:55:32.82,译文,,0,0,0,,{\blur3}被「移花接木」了\N{\r原文\blur3}Corrected.
+Dialogue: 0,0:55:32.82,0:55:34.99,译文,,0,0,0,,{\blur3}如果 当然我不是说就是这样哈\N{\r原文\blur3}If, and I'm not saying this is the case,
+Dialogue: 0,0:55:34.99,0:55:38.75,译文,,0,0,0,,{\blur3}但如果 17-35岁的穆斯林男性\N{\r原文\blur3}but if, say, Muslim men between the ages of 17 and 35
+Dialogue: 0,0:55:38.75,0:55:41.54,译文,,0,0,0,,{\blur3}最有可能对机场进行袭击\N{\r原文\blur3}were the most-likely demographic to launch an attack at an airport,
+Dialogue: 0,0:55:41.54,0:55:44.46,译文,,0,0,0,,{\blur3}一个把这一点纳入考虑的系统有什么问题呢\N{\r原文\blur3}what's wrong with a system that factors that in?
+Dialogue: 0,0:55:44.46,0:55:47.09,译文,,0,0,0,,{\blur3}我我我我 我不可能会\N{\r原文\blur3}I-I-I-I-I would...I would nev...
+Dialogue: 0,0:55:47.09,0:55:49.17,译文,,0,0,0,,{\blur3}-怎么会这样 -我不知道\N{\r原文\blur3}- H-How...?  - I don't know.
+Dialogue: 0,0:55:49.17,0:55:52.01,译文,,0,0,0,,{\blur3}大臣先生 你是在建议\N{\r原文\blur3}Minister, are you suggesting
+Dialogue: 0,0:55:52.01,0:55:54.93,译文,,0,0,0,,{\blur3}该计划故意引入了种族歧视吗\N{\r原文\blur3}the programme uses racial bias deliberately...?
+Dialogue: 0,0:55:54.93,0:55:58.43,译文,,0,0,0,,{\blur3}-那是我的声音 -我不是在建议 我只是说哈\N{\r原文\blur3}- That's my voice! - I'm not suggesting, I'm saying.
+Dialogue: 0,0:55:59.52,0:56:01.89,译文,,0,0,0,,{\blur3}虽然大多数面部识别提供商\N{\r原文\blur3}While most facial-recognition providers
+Dialogue: 0,0:56:01.89,0:56:03.31,译文,,0,0,0,,{\blur3}将侧写视为人工智能缺陷\N{\r原文\blur3}see profiling as an AI flaw,
+Dialogue: 0,0:56:03.31,0:56:05.73,译文,,0,0,0,,{\blur3}赞达却将其视为一个卖点\N{\r原文\blur3}Xanda treats it as a selling point.
+Dialogue: 0,0:56:05.73,0:56:07.90,译文,,0,0,0,,{\blur3}-一个卖点 -是的\N{\r原文\blur3}- A selling point?  - Yes.
+Dialogue: 0,0:56:07.90,0:56:09.86,译文,,0,0,0,,{\blur3}跟其它公司一样\N{\r原文\blur3}Like any company...
+Dialogue: 0,0:56:09.86,0:56:12.65,译文,,0,0,0,,{\blur3}如果你认为可以发布英国国防机密通知 你得再想一下才行了\N{\r原文\blur3}If you think you can slap a D-notice on this, you can think again.
+Dialogue: 0,0:56:12.65,0:56:14.74,译文,,0,0,0,,{\blur3}-我需要你坐下 -你试试\N{\r原文\blur3}- I must ask you to sit down. - Good luck with that!
+Dialogue: 0,0:56:14.74,0:56:17.49,译文,,0,0,0,,{\blur3}-你是破坏国家安全事件的目击证人 -开什么玩笑\N{\r原文\blur3}You are a witness to a major national security breach.  No shit!
+Dialogue: 0,0:56:17.49,0:56:20.24,译文,,0,0,0,,{\blur3}-第一次 人们要 -每个人都是嫌疑人\N{\r原文\blur3}- First time...  - Everyone here is a suspect...
+Dialogue: 0,0:56:20.25,0:56:22.41,译文,,0,0,0,,{\blur3}-别再让我解释了 -另外 我必须\N{\r原文\blur3}- Do not make me explain... - Furthermore, I must...
+Dialogue: 0,0:56:22.41,0:56:24.92,译文,,0,0,0,,{\blur3}在这个时间和其他嫌疑人进行交流\N{\r原文\blur3}..Choosing to interact with other suspects at this time
+Dialogue: 0,0:56:24.92,0:56:27.00,译文,,0,0,0,,{\blur3}可能会影响到反恐调查\N{\r原文\blur3}may compromise a counter-terror investigation!
+Dialogue: 0,0:56:27.00,0:56:29.71,译文,,0,0,0,,{\blur3}-抱歉 我可不管其他人怎么样 -哈迪亚\N{\r原文\blur3}- Sorry, I'm going way above anyone in here.  - Khadija!
+Dialogue: 0,0:56:32.13,0:56:33.88,译文,,0,0,0,,{\blur3}也许我们该让她走\N{\r原文\blur3}Maybe we should let her get on with it.
+Dialogue: 0,0:56:33.88,0:56:35.51,译文,,0,0,0,,{\blur3}我跟你说了 没那么简单\N{\r原文\blur3}I told you, it is not that simple!
+Dialogue: 0,0:56:35.51,0:56:37.60,译文,,0,0,0,,{\blur3}我也问过了 你是不是有什么好计划\N{\r原文\blur3}And I asked you if you had a plan!
+Dialogue: 0,0:56:40.77,0:56:42.23,译文,,0,0,0,,{\blur3}等在这\N{\r原文\blur3}Wait here.
+Dialogue: 0,0:56:43.85,0:56:46.69,译文,,0,0,0,,{\blur3}-大臣 可不可以理解为 -我可以告诉你\N{\r原文\blur3}- Minister... to be completely clear,  - I can tell you that...
+Dialogue: 0,0:56:46.69,0:56:51.32,译文,,0,0,0,,{\blur3}你提倡在英国机场使用种族定性\N{\r原文\blur3}you're advocating the use of racial profiling at UK airports?
+Dialogue: 0,0:56:51.32,0:56:53.44,译文,,0,0,0,,{\blur3}不是的 哈迪亚 我说清楚一点\N{\r原文\blur3}No, Khadija, to be completely clear,
+Dialogue: 0,0:56:53.45,0:56:56.82,译文,,0,0,0,,{\blur3}只要能保证我们的国土安全 我就建议使用种族定性\N{\r原文\blur3}I'm advocating the use of racial profiling wherever it keeps us safe.
+Dialogue: 0,0:56:56.82,0:56:59.49,译文,,0,0,0,,{\blur3}-大臣 我们得继续下一个话题了 -我完蛋了\N{\r原文\blur3}- Minister, we have to move on. - I'm fucking finished.
+Dialogue: 0,0:57:03.62,0:57:04.87,译文,,0,0,0,,{\blur3}哈迪亚\N{\r原文\blur3}Khadija?
+Dialogue: 0,0:57:09.34,0:57:12.42,译文,,0,0,0,,{\blur3}-哈迪亚 -你不能抢走我的报道\N{\r原文\blur3}- Khadija!  - You are not taking this story away from me.
+Dialogue: 0,0:57:12.42,0:57:15.47,译文,,0,0,0,,{\blur3}我要打给渠道控制部和法务部\N{\r原文\blur3}I'm calling the channel controller and then I'm calling legal.
+Dialogue: 0,0:57:16.97,0:57:18.55,译文,,0,0,0,,{\blur3}信号他妈的怎么回事\N{\r原文\blur3}Fucking signal!
+Dialogue: 0,0:57:19.56,0:57:21.43,译文,,0,0,0,,{\blur3}你打算怎么证明呢\N{\r原文\blur3}And how are you going to prove it?
+Dialogue: 0,0:57:21.43,0:57:24.31,译文,,0,0,0,,{\blur3}我亲眼见到自己的现场报道被人黑入 并用虚假信息取代了\N{\r原文\blur3}I just saw myself hacked and deep-faked with my own eyes!
+Dialogue: 0,0:57:24.31,0:57:27.02,译文,,0,0,0,,{\blur3}可所有人看到的今晚的专访跟前几天晚上的都是一样的\N{\r原文\blur3}And everybody else saw an interview, just like every other night.
+Dialogue: 0,0:57:27.02,0:57:29.06,译文,,0,0,0,,{\blur3}你一个人的证词对阵所有人的\N{\r原文\blur3}It will be your word against everybody else's.
+Dialogue: 0,0:57:29.06,0:57:31.11,译文,,0,0,0,,{\blur3}甚至连工作人员都没看到发生了什么\N{\r原文\blur3}Not even your own crew saw what happened!
+Dialogue: 0,0:57:36.45,0:57:38.61,译文,,0,0,0,,{\blur3}你不知道自己对付的是什么人\N{\r原文\blur3}You have no idea what you're up against.
+Dialogue: 0,0:57:42.24,0:57:46.12,译文,,0,0,0,,{\blur3}如果你真的在乎调查 并且想曝光这件事\N{\r原文\blur3}If you're serious about investigating it and exposing it...
+Dialogue: 0,0:57:46.12,0:57:47.62,译文,,0,0,0,,{\blur3}喂\N{\r原文\blur3}Hello?
+Dialogue: 0,0:57:47.62,0:57:49.92,译文,,0,0,0,,{\blur3}你需要先取得证据\N{\r原文\blur3}..you need to gather evidence meticulously.
+Dialogue: 0,0:57:49.92,0:57:51.96,译文,,0,0,0,,{\blur3}很多证据才行\N{\r原文\blur3}A wealth of it.
+Dialogue: 0,0:57:51.96,0:57:55.30,译文,,0,0,0,,{\blur3}你需要确实证明这件事\N{\r原文\blur3}You need to prove it definitively
+Dialogue: 0,0:57:55.30,0:57:57.68,译文,,0,0,0,,{\blur3}这样没人可以否认\N{\r原文\blur3}so no-one can deny it.
+Dialogue: 0,0:57:57.68,0:57:59.39,译文,,0,0,0,,{\blur3}喂\N{\r原文\blur3}Hello?
+Dialogue: 0,0:58:01.35,0:58:02.81,译文,,0,0,0,,{\blur3}谁啊\N{\r原文\blur3}Who is it?
+Dialogue: 0,0:58:04.18,0:58:05.89,译文,,0,0,0,,{\blur3}那你建议我该怎么做\N{\r原文\blur3}And how do you suggest doing that?
+Dialogue: 0,0:58:10.08,0:58:11.52,译文,,0,0,0,,{\blur3}加入我们{\r原文\blur3}Together.
