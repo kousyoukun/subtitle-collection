@@ -1,0 +1,788 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,方正黑体_GBK,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,2,134
+Style: 黑体,SimHei,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,8,10,10,10,1
+Style: 华文中宋,STZhongsong,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,8,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:39.32,0:00:43.74,Default,,0,0,0,,不用害怕 孩子 会成功的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No need to be scared, son, this is gonna work.
+Dialogue: 0,0:00:43.78,0:00:46.54,Default,,0,0,0,,回身吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Now turn around.
+Dialogue: 0,0:00:48.08,0:00:51.62,Default,,0,0,0,,不然会错过这么多年来你看到的第一次日出\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're about to miss your first sunrise in years.
+Dialogue: 0,0:01:29.00,0:01:31.29,Default,,0,0,0,,爸爸\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Dad!
+Dialogue: 0,0:01:31.33,0:01:33.00,Default,,0,0,0,,皮特\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Peter!
+Dialogue: 0,0:02:24.31,0:02:27.39,黑体,,0,0,0,,{\fsp-0.6\fs9\b1\frz5.268\pos(221.6,75.067)}周末跟子女在一起做的最棒的事
+Dialogue: 0,0:02:27.56,0:02:30.40,黑体,,0,0,0,,{\fsp-0.8\fs9\b1\frz5.268\pos(223.6,75.6)}亚瑟·K·洛根科学博物馆 - 哈勃展览
+Dialogue: 0,0:02:32.56,0:02:35.19,Default,,0,0,0,,不好意思 冒昧打搅\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Excuse me. I'm sorry to bother you,
+Dialogue: 0,0:02:35.23,0:02:37.85,Default,,0,0,0,,要买盒饼干吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}but could I interest you in a box of cookies
+Dialogue: 0,0:02:39.57,0:02:42.03,Default,,0,0,0,,你最喜欢哪种的啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Which kind is your favorite
+Dialogue: 0,0:02:42.07,0:02:43.32,Default,,0,0,0,,棉花糖味的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}S'mores.
+Dialogue: 0,0:02:43.36,0:02:46.07,Default,,0,0,0,,如果你妈妈同意的话\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Then, if it's okay with your mom,
+Dialogue: 0,0:02:46.11,0:02:48.82,Default,,0,0,0,,就给我来盒这种的 然后\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'll get a box of those, and...
+Dialogue: 0,0:02:48.87,0:02:50.58,Default,,0,0,0,,你自己留着就好\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}you keep it for yourself.
+Dialogue: 0,0:02:50.62,0:02:52.37,Default,,0,0,0,,你人真好 谢谢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That's very kind. Thank you.
+Dialogue: 0,0:02:52.41,0:02:53.66,Default,,0,0,0,,还是四块吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Still four dollars
+Dialogue: 0,0:02:53.71,0:02:55.46,Default,,0,0,0,,现在五块了 你女儿多大了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Five, now. How old's your daughter
+Dialogue: 0,0:02:57.08,0:02:59.42,Default,,0,0,0,,看你挺清楚以前多少钱的 所以我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You knew the old price, so I just--
+Dialogue: 0,0:02:59.46,0:03:00.38,Default,,0,0,0,,给\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Here you go.
+Dialogue: 0,0:03:00.42,0:03:02.21,Default,,0,0,0,,该说什么呀\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What do we say
+Dialogue: 0,0:03:02.26,0:03:03.55,Default,,0,0,0,,感谢您的支持\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Thank you for your support.
+Dialogue: 0,0:03:59.44,0:04:01.02,Default,,0,0,0,,快点 我们要迟到了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hustle up, we're gonna be late.
+Dialogue: 0,0:04:00.82,0:04:04.58,黑体,,0,0,0,,{\bord0.5\shad0.5\fsp-1\fs12\b1\move(90.8,202.001,168,156.668,0,900)\frx358\fry20\frz9.835}突发新闻\N\N凯西·麦克唐纳\N\N纽约中城
+Dialogue: 0,0:04:01.06,0:04:02.73,Default,,0,0,0,,警方似乎无法解释\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Police have seemingly no explanation
+Dialogue: 0,0:04:02.77,0:04:04.65,Default,,0,0,0,,凶杀案激增的原因\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}for the surge in homicides.
+Dialogue: 0,0:04:04.69,0:04:08.40,Default,,0,0,0,,曼哈顿市中心尤为明显\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Nowhere is that more apparent than here in midtown Manhattan,
+Dialogue: 0,0:04:08.45,0:04:10.49,Default,,0,0,0,,时代广场和宾夕法尼亚车站\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}where Times Square and Penn Station
+Dialogue: 0,0:04:10.53,0:04:11.91,Default,,0,0,0,,在这场残酷屠杀之后\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}are eerily empty
+Dialogue: 0,0:04:11.95,0:04:14.95,Default,,0,0,0,,几近空无一人\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}after a wave of brutal slayings.
+Dialogue: 0,0:04:16.79,0:04:18.54,Default,,0,0,0,,你这是穿的什么啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What are you wearing
+Dialogue: 0,0:04:18.58,0:04:19.67,Default,,0,0,0,,很酷对不对\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Pretty cool, right
+Dialogue: 0,0:04:19.71,0:04:22.13,Default,,0,0,0,,看这个\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And check it out.
+Dialogue: 0,0:04:22.17,0:04:23.96,Default,,0,0,0,,暗兜\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Secret pockets.
+Dialogue: 0,0:04:24.00,0:04:26.25,Default,,0,0,0,,你能换件正常衣服吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Can you go put on something normal
+Dialogue: 0,0:04:26.30,0:04:27.63,Default,,0,0,0,,但我想穿这件\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}But I want to wear this.
+Dialogue: 0,0:04:27.67,0:04:29.22,Default,,0,0,0,,我们聊过的 在家里\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}We have talked about in this house,
+Dialogue: 0,0:04:29.26,0:04:30.22,Default,,0,0,0,,你想穿什么都行\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}you can wear whatever you want.
+Dialogue: 0,0:04:30.26,0:04:31.64,Default,,0,0,0,,但出去外面\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}But out in the world--
+Dialogue: 0,0:04:31.68,0:04:33.14,Default,,0,0,0,,可别人那样也不关我事啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}But why is it my fault if people act--
+Dialogue: 0,0:04:33.18,0:04:35.64,Default,,0,0,0,,就是别那么引人注目\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Just don't make yourself such an easy target.
+Dialogue: 0,0:04:36.97,0:04:38.89,Default,,0,0,0,,抱歉 我不是说\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm sorry. I-I didn't mean--
+Dialogue: 0,0:04:38.94,0:04:41.94,Default,,0,0,0,,没事\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No, it's fine.
+Dialogue: 0,0:04:41.98,0:04:44.48,Default,,0,0,0,,我去换衣服\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'll just go change.
+Dialogue: 0,0:04:53.12,0:04:55.49,Default,,0,0,0,,要帮忙吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh, you need some help
+Dialogue: 0,0:04:55.54,0:04:58.54,Default,,0,0,0,,不用了谢谢 我就住这儿\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm good, thanks. This is me right here.
+Dialogue: 0,0:04:58.58,0:05:01.50,Default,,0,0,0,,终于有人搬来隔壁了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh, so somebody's finally moving in next door.
+Dialogue: 0,0:05:03.04,0:05:05.88,Default,,0,0,0,,我好了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Okay, I'm ready.
+Dialogue: 0,0:05:08.21,0:05:10.17,Default,,0,0,0,,这是我儿子 以赛亚\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}This is my son, Isaiah.
+Dialogue: 0,0:05:10.22,0:05:12.34,Default,,0,0,0,,我叫内奥米\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I am Naomi.
+Dialogue: 0,0:05:12.39,0:05:14.09,Default,,0,0,0,,以赛亚 这是咱们新邻居\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Isaiah, this is our new neighbor.
+Dialogue: 0,0:05:14.14,0:05:15.14,Default,,0,0,0,,马克\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Mark.
+Dialogue: 0,0:05:15.18,0:05:17.64,Default,,0,0,0,,很高兴见到你 马克先生\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Nice to meet you, Mr. Mark.
+Dialogue: 0,0:05:17.68,0:05:20.14,Default,,0,0,0,,他看起来人挺不错的哈\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}He seemed pretty nice, huh
+Dialogue: 0,0:05:22.85,0:05:25.11,Default,,0,0,0,,他有什么问题吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Okay, what's wrong with him
+Dialogue: 0,0:05:25.15,0:05:26.82,Default,,0,0,0,,没有\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Nothing.
+Dialogue: 0,0:05:28.74,0:05:30.65,Default,,0,0,0,,别生气\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Don't be pissed.
+Dialogue: 0,0:05:30.70,0:05:31.70,Default,,0,0,0,,爸\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Dad!
+Dialogue: 0,0:05:33.87,0:05:37.87,Default,,0,0,0,,哥们儿 瞧瞧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh, man. Look at you.
+Dialogue: 0,0:05:37.91,0:05:40.50,Default,,0,0,0,,长这么大啦 这是吃什么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You got so big, and where did all of this come from, huh
+Dialogue: 0,0:05:42.58,0:05:44.54,Default,,0,0,0,,嘿 我上回见你的时候\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hey, now, the last time I saw you,
+Dialogue: 0,0:05:44.58,0:05:46.71,Default,,0,0,0,,你在练硬币魔术\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}you were working on a coin trick.
+Dialogue: 0,0:05:46.75,0:05:48.38,Default,,0,0,0,,你用这个能变吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Think you can do it with this
+Dialogue: 0,0:05:48.42,0:05:50.38,Default,,0,0,0,,当然\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Sure.
+Dialogue: 0,0:05:50.42,0:05:51.72,Default,,0,0,0,,为什么上面写“三个月”啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Why does it say, "Three Months"
+Dialogue: 0,0:05:51.76,0:05:53.72,Default,,0,0,0,,算是一种奖励吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Well, it's, uh, kind of an award.
+Dialogue: 0,0:05:53.76,0:05:55.64,Default,,0,0,0,,-奖励  -看好了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- An award. - You watching
+Dialogue: 0,0:05:55.68,0:05:57.26,Default,,0,0,0,,嗯\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah.
+Dialogue: 0,0:06:00.56,0:06:02.93,Default,,0,0,0,,不是吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh, come on now.
+Dialogue: 0,0:06:02.98,0:06:04.94,Default,,0,0,0,,-怎么会  -以赛亚\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- What. -Isaiah, give your dad
+Dialogue: 0,0:06:04.98,0:06:07.23,Default,,0,0,0,,把“奖励”还给你爸 去车上等我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}his "award" back and wait for me in the car.
+Dialogue: 0,0:06:07.27,0:06:09.61,Default,,0,0,0,,你越来越厉害了 儿子\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're getting real good, son.
+Dialogue: 0,0:06:09.65,0:06:11.07,Default,,0,0,0,,在你开口之前\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Before you say anything--
+Dialogue: 0,0:06:11.11,0:06:13.24,Default,,0,0,0,,你不能一直这样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You can't keep doing this.
+Dialogue: 0,0:06:13.28,0:06:15.74,Default,,0,0,0,,你不能一直在他的生活里进进出出\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You cannot keep popping in and out of his life.
+Dialogue: 0,0:06:15.78,0:06:17.16,Default,,0,0,0,,我知道 所以我在彻底戒断之前\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I know, I know. That is why I stayed away
+Dialogue: 0,0:06:17.20,0:06:19.16,Default,,0,0,0,,不会离你们太近\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- until I got some real sobriety.
+Dialogue: 0,0:06:19.20,0:06:20.54,Default,,0,0,0,,我每天都会参加互助会\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I've been going to meetings every day.
+Dialogue: 0,0:06:20.58,0:06:21.87,Default,,0,0,0,,我不想再老生常谈了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I can't have this conversation again.
+Dialogue: 0,0:06:21.91,0:06:23.54,Default,,0,0,0,,我找了份工 租了套公寓\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I have a job, I have an apartment.
+Dialogue: 0,0:06:23.58,0:06:24.58,Default,,0,0,0,,-现在说这太晚了  -我现在能当个真正的父亲了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- It's too late for this. - I-I can be a real father now.
+Dialogue: 0,0:06:24.62,0:06:25.92,Default,,0,0,0,,要不我今晚过来吃饭\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Look, maybe I can come over
+Dialogue: 0,0:06:25.96,0:06:27.33,Default,,0,0,0,,证明给你们看\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}for dinner tonight and prove it.
+Dialogue: 0,0:06:27.38,0:06:29.09,Default,,0,0,0,,你以为我会为你做饭是么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You think I'm gonna cook for your ass
+Dialogue: 0,0:06:29.13,0:06:32.09,Default,,0,0,0,,要是没想好是你跟家做饭还是打包外卖\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Well, if it's between your cooking and take-out,
+Dialogue: 0,0:06:32.13,0:06:33.67,Default,,0,0,0,,我可以带点吃的过来\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm happy to pick something up.
+Dialogue: 0,0:06:33.72,0:06:36.76,Default,,0,0,0,,没必要特地给我做\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You wouldn't be doing it for me.
+Dialogue: 0,0:06:42.43,0:06:46.69,Default,,0,0,0,,以赛亚 麻烦坐后面去\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Isaiah Put your little butt in the back seat, please.
+Dialogue: 0,0:08:00.51,0:08:02.97,Default,,0,0,0,,好点了吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Better
+Dialogue: 0,0:08:09.85,0:08:12.23,Default,,0,0,0,,-你还好吧  -没事\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- You okay. - Yeah.
+Dialogue: 0,0:08:12.27,0:08:14.98,Default,,0,0,0,,小伤而已\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's barely a scratch.
+Dialogue: 0,0:08:17.32,0:08:18.99,Default,,0,0,0,,我没事\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm fine.
+Dialogue: 0,0:08:22.45,0:08:24.37,Default,,0,0,0,,你觉得这个新地方怎么样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What do you think of the new place
+Dialogue: 0,0:08:33.04,0:08:35.00,Default,,0,0,0,,你买了大电视\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You got the big screen
+Dialogue: 0,0:08:35.05,0:08:36.55,Default,,0,0,0,,对\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh, yes.
+Dialogue: 0,0:08:36.59,0:08:38.30,Default,,0,0,0,,你之前说太贵了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You said it was too expensive.
+Dialogue: 0,0:08:38.34,0:08:40.88,Default,,0,0,0,,可你说很棒 所以\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And you said it was awesome, so...
+Dialogue: 0,0:08:45.31,0:08:48.10,Default,,0,0,0,,怎么了 艾莉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What's wrong Ellie
+Dialogue: 0,0:08:48.14,0:08:50.56,Default,,0,0,0,,这些我们一样都带不走\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Can't take any of it with us.
+Dialogue: 0,0:08:50.60,0:08:51.73,Default,,0,0,0,,你说什么呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What are you talking about
+Dialogue: 0,0:08:51.77,0:08:53.06,Default,,0,0,0,,要是我们的收拾东西逃跑的话\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}If we have to pack up and run.
+Dialogue: 0,0:08:54.52,0:08:56.73,Default,,0,0,0,,过来\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Come here.
+Dialogue: 0,0:08:58.44,0:09:00.65,Default,,0,0,0,,我给你看点东西 来\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm gonna show you something. Come here.
+Dialogue: 0,0:09:05.54,0:09:07.74,Default,,0,0,0,,浴室哎\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Wow. A bathroom.
+Dialogue: 0,0:09:07.79,0:09:10.50,Default,,0,0,0,,更正一下 备用浴室\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Eh, correction. A spare bathroom.
+Dialogue: 0,0:09:12.83,0:09:14.92,Default,,0,0,0,,注意到什么了没\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You notice anything about it
+Dialogue: 0,0:09:19.47,0:09:21.34,Default,,0,0,0,,没窗户\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No windows.
+Dialogue: 0,0:09:21.38,0:09:23.22,Default,,0,0,0,,没窗户\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}There's no windows.
+Dialogue: 0,0:09:25.22,0:09:27.10,Default,,0,0,0,,我有自己的房间了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I get my own room
+Dialogue: 0,0:09:27.14,0:09:29.39,Default,,0,0,0,,这就是我们的家 艾莉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}We're home now, Ellie.
+Dialogue: 0,0:09:29.43,0:09:32.69,Default,,0,0,0,,接下来很长一段时间我们哪儿都不会去\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And we're not going anywhere for a long time,
+Dialogue: 0,0:09:32.73,0:09:37.52,Default,,0,0,0,,也就是说我们得比往常更加小心\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}which means we have to be even more careful than normal.
+Dialogue: 0,0:09:37.57,0:09:39.19,Default,,0,0,0,,我很小心\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm careful.
+Dialogue: 0,0:09:39.24,0:09:41.40,Default,,0,0,0,,是 但你不大擅长融入社会\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah, well, you're not always great at blending in.
+Dialogue: 0,0:09:41.45,0:09:44.24,Default,,0,0,0,,-擅长的  -你沾了点\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Yes, I am. - Mm, you've got a little...
+Dialogue: 0,0:09:45.87,0:09:48.99,Default,,0,0,0,,我也得融入社会\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I also have to blend in, okay
+Dialogue: 0,0:09:49.04,0:09:52.12,Default,,0,0,0,,也就是说我得找到份合法工作\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Which means I have to find a legitimate job.
+Dialogue: 0,0:09:54.88,0:09:58.42,Default,,0,0,0,,这些箱子等我回来以后拆吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And when I get back, I will tackle those boxes, okay
+Dialogue: 0,0:09:58.46,0:10:00.30,Default,,0,0,0,,我可以拆的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I could do it.
+Dialogue: 0,0:10:00.34,0:10:02.13,Default,,0,0,0,,是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah, right.
+Dialogue: 0,0:10:02.18,0:10:05.05,Default,,0,0,0,,这种宜家的东西 就像\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}This IKEA stuff, it's just like...
+Dialogue: 0,0:10:05.09,0:10:08.56,Default,,0,0,0,,是个虐待狂造出来的拼图\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}a puzzle made by a...by a sadist.
+Dialogue: 0,0:10:08.60,0:10:11.64,Default,,0,0,0,,我喜欢拼图\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- I like puzzles. -
+Dialogue: 0,0:10:11.68,0:10:13.60,Default,,0,0,0,,行吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}All right.
+Dialogue: 0,0:10:13.64,0:10:17.15,Default,,0,0,0,,有事发信息给我 好吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Text me if you need anything, okay
+Dialogue: 0,0:10:21.15,0:10:23.49,Default,,0,0,0,,那男生多大了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}How old was the boy...
+Dialogue: 0,0:10:23.53,0:10:25.66,Default,,0,0,0,,住隔壁那个\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}who lives next door
+Dialogue: 0,0:10:25.70,0:10:30.33,Default,,0,0,0,,不清楚 十一二岁吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I don't know. Uh, 11, 12.
+Dialogue: 0,0:10:30.37,0:10:33.83,Default,,0,0,0,,我是这么打算的 一会儿晚上我回来以后\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Listen, I was thinking, when I get back later tonight,
+Dialogue: 0,0:10:33.87,0:10:35.71,Default,,0,0,0,,咱们可以去时代广场转转\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}maybe we can go down to Times Square.
+Dialogue: 0,0:10:35.75,0:10:36.83,Default,,0,0,0,,为什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Ew. Why
+Dialogue: 0,0:10:36.88,0:10:38.88,Default,,0,0,0,,有个新开的科学展\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}There's this new science exhibit.
+Dialogue: 0,0:10:38.92,0:10:40.59,Default,,0,0,0,,他们展出了由哈勃望远镜拍出来的照片\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}They have photos from the Hubble.
+Dialogue: 0,0:10:42.05,0:10:43.67,Default,,0,0,0,,你要不想去也没关系\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}But if you don't want to go, that's fine.
+Dialogue: 0,0:10:43.72,0:10:46.01,Default,,0,0,0,,我没这么说 还开着吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I didn't say that. Is it even open
+Dialogue: 0,0:10:46.05,0:10:47.68,Default,,0,0,0,,什么意思 晚上还开是吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What you mean? At night?
+Dialogue: 0,0:10:47.72,0:10:49.14,Default,,0,0,0,,我是说 这么多起凶杀案\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I mean, with all the murders going on.
+Dialogue: 0,0:10:49.18,0:10:52.81,Default,,0,0,0,,怎么了 咱们来这儿不就是因为这个么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What? That's why we get to be here, right
+Dialogue: 0,0:10:58.27,0:10:59.69,Default,,0,0,0,,什么情况\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What do we got?
+Dialogue: 0,0:11:01.28,0:11:03.19,Default,,0,0,0,,你见过这种情况吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You ever seen anything like this
+Dialogue: 0,0:11:03.24,0:11:06.70,Default,,0,0,0,,见过 跟我爸打猎的时候见过\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah. Hunting with my dad.
+Dialogue: 0,0:11:06.74,0:11:09.45,Default,,0,0,0,,遇到一个被熊咬死的人\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Came across a guy got mauled to death by a bear.
+Dialogue: 0,0:11:09.49,0:11:11.87,Default,,0,0,0,,还真是段温馨的童年记忆呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That's a heartwarming childhood memory.
+Dialogue: 0,0:11:11.91,0:11:14.37,Default,,0,0,0,,讲真 只是其中的一件罢了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hmm. One of the better ones, actually.
+Dialogue: 0,0:11:14.41,0:11:16.71,Default,,0,0,0,,-确认受害者身份了吗  -还没\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Did you ID the victim. - Not yet.
+Dialogue: 0,0:11:16.75,0:11:18.96,Default,,0,0,0,,他口袋里除了一些零钱 什么也没有\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}There was nothing in his pockets but some loose cash.
+Dialogue: 0,0:11:19.00,0:11:20.96,Default,,0,0,0,,他们没把钱拿走\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}They didn't take the money
+Dialogue: 0,0:11:21.00,0:11:22.34,Default,,0,0,0,,没\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No.
+Dialogue: 0,0:11:26.26,0:11:29.05,Default,,0,0,0,,有目击者吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Any witnesses
+Dialogue: 0,0:11:29.10,0:11:32.22,Default,,0,0,0,,昨晚出现在这儿的大部分现在都在外面要钱呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Most of the people here last night are out panhandling now.
+Dialogue: 0,0:11:32.27,0:11:35.18,Default,,0,0,0,,我寻访过的那些人 得到的答案普遍都是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}People I did talk to, I believe the general consensus was--
+Dialogue: 0,0:11:35.23,0:11:36.85,Default,,0,0,0,,滚你妈蛋 警探\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}"Go fuck yourself, Detective"
+Dialogue: 0,0:11:36.89,0:11:39.56,Default,,0,0,0,,能加个“警探”都很不错了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I would've appreciated "Detective." Oh.
+Dialogue: 0,0:11:59.65,0:12:02.57,黑体,,0,0,0,,{\fs8\frz58.61\frx32\fry352\pos(119.2,129.466)}爸
+Dialogue: 0,0:12:09.97,0:12:11.55,Default,,0,0,0,,有事吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What do you want
+Dialogue: 0,0:12:11.60,0:12:15.56,Default,,0,0,0,,首先 别挂电话\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Not to be hung up on, for starters.
+Dialogue: 0,0:12:15.60,0:12:17.35,Default,,0,0,0,,你不觉得有点任性了吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That's a bit petulant, don't you think
+Dialogue: 0,0:12:17.39,0:12:20.35,Default,,0,0,0,,爸 我很忙 有什么事啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm busy, Dad. What do you want
+Dialogue: 0,0:12:23.11,0:12:25.07,Default,,0,0,0,,我想让你回家\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I want you to come home.
+Dialogue: 0,0:12:25.11,0:12:27.36,Default,,0,0,0,,有要事\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's important.
+Dialogue: 0,0:12:27.40,0:12:29.61,Default,,0,0,0,,是 没问题 我可以不管不顾抛下手头一切\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah, sure, I'll just...I'll just drop everything I'm doing
+Dialogue: 0,0:12:29.66,0:12:31.82,Default,,0,0,0,,直接跳上第一班飞机往回赶呗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and hop on the first plane.
+Dialogue: 0,0:12:34.83,0:12:37.00,Default,,0,0,0,,我时日无多 克莱尔\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm dying, Claire.
+Dialogue: 0,0:12:39.33,0:12:41.46,Default,,0,0,0,,胰腺癌\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Pancreatic cancer.
+Dialogue: 0,0:12:41.50,0:12:44.67,Default,,0,0,0,,医生说我随时都可能死\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Doctors say I could go any time now.
+Dialogue: 0,0:12:47.30,0:12:49.30,Default,,0,0,0,,我先得跟你说件事\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}There's something I need to tell you first.
+Dialogue: 0,0:12:53.55,0:12:55.18,Default,,0,0,0,,现在再赔罪太晚了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's too late to make amends.
+Dialogue: 0,0:12:58.81,0:13:00.94,Default,,0,0,0,,跟皮特有关\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's about Peter.
+Dialogue: 0,0:13:04.36,0:13:07.15,Default,,0,0,0,,皮特怎么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What about Peter
+Dialogue: 0,0:13:07.19,0:13:10.15,Default,,0,0,0,,你要不自己亲眼来看 是不会信我的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You won't believe me unless you see for yourself.
+Dialogue: 0,0:13:28.72,0:13:30.80,Default,,0,0,0,,抱歉 先生 我们一小时后才开门\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm sorry, sir. We don't open for about an hour.
+Dialogue: 0,0:13:30.84,0:13:33.51,Default,,0,0,0,,不是 嗯\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh. No. Yes. Uh...
+Dialogue: 0,0:13:33.55,0:13:38.10,Default,,0,0,0,,我想问下 泽克在不在\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I-I was just wondering if, uh, Zeke is in
+Dialogue: 0,0:13:38.14,0:13:40.68,Default,,0,0,0,,在 请稍等\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah. Just a moment, please.
+Dialogue: 0,0:13:54.41,0:13:56.53,Default,,0,0,0,,你好 有什么能帮到您的吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hi. Can I help you
+Dialogue: 0,0:14:03.58,0:14:05.71,Default,,0,0,0,,嘿 兄弟\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hey, brother.
+Dialogue: 0,0:14:11.17,0:14:14.01,Default,,0,0,0,,辛西娅\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Cynthia....
+Dialogue: 0,0:14:14.05,0:14:16.22,Default,,0,0,0,,能让我们单独谈谈吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Can you give us a sec
+Dialogue: 0,0:14:20.60,0:14:22.89,Default,,0,0,0,,这地方很棒啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}The place looks incredible.
+Dialogue: 0,0:14:22.94,0:14:25.23,Default,,0,0,0,,艾莉诺 她还是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Is Eleanor...Is she still...
+Dialogue: 0,0:14:25.27,0:14:27.40,Default,,0,0,0,,她还是跟之前一样 对\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}She's still the same. Yes.
+Dialogue: 0,0:14:27.44,0:14:29.90,Default,,0,0,0,,很抱歉不打招呼\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Look, I'm sorry to show up
+Dialogue: 0,0:14:29.94,0:14:32.69,Default,,0,0,0,,就这么跑过来\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}out of the blue like this.
+Dialogue: 0,0:14:32.74,0:14:36.16,Default,,0,0,0,,是这样 艾莉跟我回来了 然后\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}The thing is, Ellie and I are back in town, and, uh--
+Dialogue: 0,0:14:36.20,0:14:38.74,Default,,0,0,0,,-你是需要钱吗  -不是 我需要份工作\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And do you need money - No. I need a job.
+Dialogue: 0,0:14:38.79,0:14:40.33,Default,,0,0,0,,我什么都能做\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'll do anything.
+Dialogue: 0,0:14:40.37,0:14:41.75,Default,,0,0,0,,我可以去洗碗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'll-I'll-I'll wash dishes,
+Dialogue: 0,0:14:41.79,0:14:43.25,Default,,0,0,0,,倒垃圾\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}take out the garbage, anything.
+Dialogue: 0,0:14:43.29,0:14:44.67,Default,,0,0,0,,你认真的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're serious.
+Dialogue: 0,0:14:44.71,0:14:45.92,Default,,0,0,0,,我需要你帮忙\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I need your help.
+Dialogue: 0,0:14:45.96,0:14:48.00,Default,,0,0,0,,我干嘛要帮你\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And why would I ever help you
+Dialogue: 0,0:14:49.55,0:14:51.76,Default,,0,0,0,,因为\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's...
+Dialogue: 0,0:14:51.80,0:14:53.84,Default,,0,0,0,,丽兹会想让你帮我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}what Liz would want.
+Dialogue: 0,0:15:07.15,0:15:09.19,Default,,0,0,0,,要来吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You coming
+Dialogue: 0,0:15:15.28,0:15:17.74,Default,,0,0,0,,这是我们主厨 丹妮埃尔·威尔森\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}This is our head chef, Danielle Wilson.
+Dialogue: 0,0:15:17.78,0:15:19.83,Default,,0,0,0,,丹妮埃尔 这位是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Danielle, this is--
+Dialogue: 0,0:15:19.87,0:15:20.99,Default,,0,0,0,,马克\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Mark. - Uh...
+Dialogue: 0,0:15:21.04,0:15:23.12,Default,,0,0,0,,马克来是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Uh, Mark here
+Dialogue: 0,0:15:23.16,0:15:24.71,Default,,0,0,0,,给你打下手的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}is gonna be staging for you today.
+Dialogue: 0,0:15:24.75,0:15:26.75,Default,,0,0,0,,午市我很忙的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I have a lunch rush coming in.
+Dialogue: 0,0:15:26.79,0:15:28.46,Default,,0,0,0,,没时间照顾你朋友\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I don't have time to babysit your friend.
+Dialogue: 0,0:15:28.50,0:15:29.96,Default,,0,0,0,,以前他是这里总厨\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}This used to be his kitchen.
+Dialogue: 0,0:15:30.00,0:15:31.96,Default,,0,0,0,,很久以前的事了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That-that was a long time ago.
+Dialogue: 0,0:15:32.01,0:15:33.80,Default,,0,0,0,,给他个机会证明自己吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Just give him one shift to prove himself.
+Dialogue: 0,0:15:33.84,0:15:36.05,Default,,0,0,0,,要是他不行 就直接走人\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}If he washes out, he's gone.
+Dialogue: 0,0:15:36.09,0:15:38.14,Default,,0,0,0,,祝好运\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Good luck.
+Dialogue: 0,0:15:39.76,0:15:41.30,Default,,0,0,0,,你刀工怎么样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}How's your knife skills
+Dialogue: 0,0:15:41.35,0:15:43.97,Default,,0,0,0,,-你说什么  -你刀工好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Sorry. - Are you good with a knife
+Dialogue: 0,0:15:44.02,0:15:45.64,Default,,0,0,0,,好\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yes.
+Dialogue: 0,0:15:45.69,0:15:47.31,Default,,0,0,0,,青葱切丁 要一夸脱\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Brunoise a quart of shallots.
+Dialogue: 0,0:15:47.35,0:15:49.81,Default,,0,0,0,,要是干得好 再说之后的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}If you don't fuck it up, we'll keep talking.
+Dialogue: 0,0:15:53.82,0:15:58.28,Default,,0,0,0,,我知道你不想跟我说话\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I know you don't want to talk to me,
+Dialogue: 0,0:15:58.32,0:16:01.33,Default,,0,0,0,,我就在这儿坐一小会儿\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}so I will just sit here for a bit.
+Dialogue: 0,0:16:03.33,0:16:05.33,Default,,0,0,0,,等我站起来的时候\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And when I get back up,
+Dialogue: 0,0:16:05.37,0:16:07.41,Default,,0,0,0,,也许会记着把这个拿走\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}maybe I'll remember to take this with me.
+Dialogue: 0,0:16:07.46,0:16:09.88,Default,,0,0,0,,也许不会\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Maybe I won't.
+Dialogue: 0,0:16:14.13,0:16:16.30,Default,,0,0,0,,昨晚 我正打算睡觉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Last night, I-I was trying to sleep,
+Dialogue: 0,0:16:16.34,0:16:17.92,Default,,0,0,0,,就听到有人在叫\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and I heard someone screaming.
+Dialogue: 0,0:16:17.97,0:16:20.01,Default,,0,0,0,,我往外看 看到有个人从街上走过去\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I look out, there's a guy coming down the street,
+Dialogue: 0,0:16:20.05,0:16:21.43,Default,,0,0,0,,浑身是血\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and he's covered in blood.
+Dialogue: 0,0:16:21.47,0:16:23.81,Default,,0,0,0,,那人长什么样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What's the guy look like
+Dialogue: 0,0:16:23.85,0:16:26.31,Default,,0,0,0,,白人 二十来岁\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}White, twenties,
+Dialogue: 0,0:16:26.35,0:16:28.31,Default,,0,0,0,,运动衫 牛仔裤\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}sweatshirt and jeans.
+Dialogue: 0,0:16:28.35,0:16:29.98,Default,,0,0,0,,大块头吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Big guy
+Dialogue: 0,0:16:30.02,0:16:32.36,Default,,0,0,0,,比你壮不了多少\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Not much bigger than you.
+Dialogue: 0,0:16:34.07,0:16:37.03,Default,,0,0,0,,但是 他的眼睛\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}But...his eyes...
+Dialogue: 0,0:16:38.20,0:16:40.99,Default,,0,0,0,,他眼睛怎么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What about his eyes
+Dialogue: 0,0:16:41.03,0:16:43.03,Default,,0,0,0,,你有没有\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You ever, um...
+Dialogue: 0,0:16:43.66,0:16:45.99,Default,,0,0,0,,有没有 晚上拍照的时候 看到的不是眼睛\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}...you ever, like, take a photo at night, instead of eyes,
+Dialogue: 0,0:16:46.04,0:16:47.54,Default,,0,0,0,,会看到那种小光环\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}you get these little rings of light
+Dialogue: 0,0:16:47.58,0:16:50.33,Default,,0,0,0,,所以说那个小个子力气比得上熊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}So a little guy with the strength of a bear
+Dialogue: 0,0:16:50.38,0:16:51.79,Default,,0,0,0,,眼睛还能在夜里发光呗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and eyes that glow in the dark
+Dialogue: 0,0:16:51.83,0:16:53.92,Default,,0,0,0,,我真看到了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm telling you what I saw.
+Dialogue: 0,0:16:59.09,0:17:01.72,Default,,0,0,0,,你在这儿住多久了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}How long you been using here
+Dialogue: 0,0:17:02.72,0:17:04.60,Default,,0,0,0,,几个月吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Couple months.
+Dialogue: 0,0:17:04.64,0:17:06.89,Default,,0,0,0,,之前在这附近见过这人吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You ever seen this guy around
+Dialogue: 0,0:17:16.11,0:17:17.61,Default,,0,0,0,,他今早来找过我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}He showed up this morning,
+Dialogue: 0,0:17:17.65,0:17:20.03,Default,,0,0,0,,说他找到份工\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}talking about how he's got a job now.
+Dialogue: 0,0:17:20.07,0:17:21.91,Default,,0,0,0,,-上次他说这话的时候  -其实是贩毒\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Last time he said that-- - He was dealing.
+Dialogue: 0,0:17:21.95,0:17:23.32,Default,,0,0,0,,嗯\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah.
+Dialogue: 0,0:17:23.37,0:17:24.91,Default,,0,0,0,,我以为的活动区域是上城\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I thought his corner was uptown.
+Dialogue: 0,0:17:24.95,0:17:26.37,Default,,0,0,0,,之前是 我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It was. I-I just--
+Dialogue: 0,0:17:26.41,0:17:27.87,Default,,0,0,0,,我还以为他退出我儿子生活了呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I also thought he was out of the picture.
+Dialogue: 0,0:17:27.91,0:17:31.08,Default,,0,0,0,,我还能怎么着\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Look, what am I supposed to do
+Dialogue: 0,0:17:31.12,0:17:34.38,Default,,0,0,0,,以赛亚就跟瞧见圣诞树一样围着他爸转悠\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Isaiah lights up like a Christmas tree around his dad.
+Dialogue: 0,0:17:34.42,0:17:37.42,Default,,0,0,0,,他朋友也不是很多\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's not like that boy is flush with friends.
+Dialogue: 0,0:17:46.81,0:17:49.18,Default,,0,0,0,,不许坐这 怪胎\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Not there, freak.
+Dialogue: 0,0:17:50.31,0:17:52.44,Default,,0,0,0,,继续\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Keep going.
+Dialogue: 0,0:18:03.82,0:18:06.78,Default,,0,0,0,,嘿 风衣挺帅啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hey. Cool trench coat.
+Dialogue: 0,0:18:08.70,0:18:10.87,Default,,0,0,0,,准备才艺表演了吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Doing anything for the talent show
+Dialogue: 0,0:18:10.91,0:18:13.04,Default,,0,0,0,,失败者才参加才艺表演呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Talent shows are for losers.
+Dialogue: 0,0:18:15.00,0:18:16.79,Default,,0,0,0,,没错\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Totally.
+Dialogue: 0,0:18:18.21,0:18:21.13,Default,,0,0,0,,-想看点厉害的么  -靠\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Want to see something cool - Jesus Christ.
+Dialogue: 0,0:18:29.09,0:18:31.88,黑体,,0,0,0,,{\fs8\frx356\fry348\frz329.3\move(315.6,65.333,283.2,100.533,0,600)}未知来信\N你咋不去自杀啊 怪胎
+Dialogue: 0,0:18:44.02,0:18:47.60,华文中宋,,0,0,0,,{\fs13\b1}"Shake It Out" by Kelly Clarkson
+Dialogue: 0,0:18:44.66,0:18:46.32,Default,,0,0,0,,魔鬼在你背后\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ Hard to dance ♪
+Dialogue: 0,0:18:46.37,0:18:47.91,Default,,0,0,0,,让你难以舞动\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ With a devil on your back ♪
+Dialogue: 0,0:18:47.95,0:18:50.04,Default,,0,0,0,,把他甩掉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ So shake him off ♪
+Dialogue: 0,0:18:54.62,0:18:58.67,Default,,0,0,0,,忘却邪念\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ And I am done with my graceless heart ♪
+Dialogue: 0,0:18:58.71,0:19:02.59,Default,,0,0,0,,今晚我将去除他 再重新出发\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ So tonight I'm gonna cut it out and then restart ♪
+Dialogue: 0,0:19:02.63,0:19:06.89,Default,,0,0,0,,因为想坚定自己的意志\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ 'Cause I like to keep my issues drawn ♪
+Dialogue: 0,0:19:06.93,0:19:11.14,Default,,0,0,0,,黎明前总是很黑暗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ It's always darkest before the dawn. ♪
+Dialogue: 0,0:19:15.98,0:19:17.98,Default,,0,0,0,,尽情释放吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ Shake it out ♪
+Dialogue: 0,0:19:18.02,0:19:20.77,Default,,0,0,0,,尽情释放吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ Shake it out, oh-whoa ♪
+Dialogue: 0,0:19:25.66,0:19:27.70,Default,,0,0,0,,好了 主厨\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Ready, Chef.
+Dialogue: 0,0:19:34.83,0:19:36.79,Default,,0,0,0,,这是要干嘛啊 老人家 还给你颁个奖不成\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What do you want, old man A medal
+Dialogue: 0,0:19:36.83,0:19:38.54,Default,,0,0,0,,继续切\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Keep going.
+Dialogue: 0,0:19:55.69,0:19:58.85,Default,,0,0,0,,想着你可能想直接拿现金\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Figured you'd want to be paid in cash.
+Dialogue: 0,0:20:01.69,0:20:03.69,Default,,0,0,0,,明天九点上班\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Tomorrow's shift starts at 9:00.
+Dialogue: 0,0:20:03.74,0:20:06.82,Default,,0,0,0,,丹妮埃尔的评价是 宝刀未老\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}According to Danielle, you're not a total lost cause.
+Dialogue: 0,0:20:06.86,0:20:10.41,Default,,0,0,0,,来 坐\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Come on, grab a seat.
+Dialogue: 0,0:20:10.45,0:20:11.87,Default,,0,0,0,,不了 我得回去陪艾莉了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh, no. I got to get back to Ellie.
+Dialogue: 0,0:20:11.91,0:20:13.04,Default,,0,0,0,,坐下\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Man, sit your ass down.
+Dialogue: 0,0:20:14.79,0:20:17.00,Default,,0,0,0,,-不了 真的 我得走了  -我才给你份工作\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- No, really. I got to go. - I just gave you a job.
+Dialogue: 0,0:20:17.04,0:20:19.29,Default,,0,0,0,,别这么混蛋好吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Don't be an asshole.
+Dialogue: 0,0:20:24.59,0:20:26.63,Default,,0,0,0,,行\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah.
+Dialogue: 0,0:20:29.47,0:20:31.26,Default,,0,0,0,,敬我的教女\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}To my goddaughter.
+Dialogue: 0,0:20:42.69,0:20:44.61,Default,,0,0,0,,天 有没有\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Oh. - Oh, God-- See
+Dialogue: 0,0:20:44.65,0:20:46.82,Default,,0,0,0,,跟凯瑟琳·特纳的声音一样有韵味\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's like drinking Kathleen Turner's voice.
+Dialogue: 0,0:20:48.36,0:20:49.99,Default,,0,0,0,,我让他们给店里制作了一桶\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I have 'em make a barrel for the restaurant
+Dialogue: 0,0:20:50.03,0:20:51.41,Default,,0,0,0,,另外一整桶就供我自个儿喝\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and a whole another one just for me.
+Dialogue: 0,0:20:51.45,0:20:53.49,Default,,0,0,0,,-你还那样啊  -嗯\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Ah, you haven't changed. - Yeah.
+Dialogue: 0,0:20:53.53,0:20:55.16,Default,,0,0,0,,也就胖了点吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}A little fatter, maybe.
+Dialogue: 0,0:20:55.20,0:20:56.79,Default,,0,0,0,,女士们好像也不是很在意这点\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Ladies don't seem to mind.
+Dialogue: 0,0:20:56.83,0:20:59.00,Default,,0,0,0,,还单着呢吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Still a bachelor, I take it - Well,
+Dialogue: 0,0:20:59.04,0:21:00.62,Default,,0,0,0,,我碰到过命定之人\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I did meet the perfect woman,
+Dialogue: 0,0:21:00.67,0:21:02.79,Default,,0,0,0,,可她嫁给我最好的哥们了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}but she married my best friend instead.
+Dialogue: 0,0:21:05.67,0:21:07.96,Default,,0,0,0,,为什么回来\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Why are you back
+Dialogue: 0,0:21:09.84,0:21:11.80,Default,,0,0,0,,你要是想在这里一直做下去\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}'Cause if you're gonna be in this restaurant,
+Dialogue: 0,0:21:11.84,0:21:14.47,Default,,0,0,0,,我得清楚所有来龙去脉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I need to know what just walked in that door.
+Dialogue: 0,0:21:18.35,0:21:21.48,Default,,0,0,0,,艾莉跟我没法在一个地方久留\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Me and Ellie can't really stay in one place for long before--
+Dialogue: 0,0:21:21.52,0:21:23.77,Default,,0,0,0,,因为她要吃东西\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Before she needs a meal
+Dialogue: 0,0:21:23.82,0:21:27.44,Default,,0,0,0,,我本想说因为别人会起疑\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I-I was gonna say before people begin asking questions,
+Dialogue: 0,0:21:27.49,0:21:29.53,Default,,0,0,0,,-我们就只能到处跑  -来这儿就不用跑了么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- and we have to run. - And that's different here
+Dialogue: 0,0:21:31.11,0:21:33.03,Default,,0,0,0,,-也许吧  -为什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Maybe. - Yeah Why
+Dialogue: 0,0:21:35.99,0:21:38.12,Default,,0,0,0,,因为这里发生了很多起凶杀案\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Because of all the murders going on
+Dialogue: 0,0:21:38.16,0:21:41.50,Default,,0,0,0,,警力都投入到这些案子上了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And while the police have their hands full with that,
+Dialogue: 0,0:21:41.54,0:21:43.46,Default,,0,0,0,,所以你就能悄无声息的动手了呗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}you can go about your business unnoticed
+Dialogue: 0,0:21:43.50,0:21:45.79,Default,,0,0,0,,-等等 不是 就  -我天\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Just hold on. No, no, just-- - Oh, Jesus Christ.
+Dialogue: 0,0:21:45.84,0:21:47.17,Default,,0,0,0,,-滚  -不\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Get the fuck out of here. - No, no, no, no, no.
+Dialogue: 0,0:21:47.21,0:21:48.46,Default,,0,0,0,,-再别回来了  -听我解释\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- And don't come back! - Let me explain.
+Dialogue: 0,0:21:48.51,0:21:50.47,Default,,0,0,0,,我们说好的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}We had a deal!
+Dialogue: 0,0:21:50.51,0:21:52.47,Default,,0,0,0,,听着 我同意替艾莉诺\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Listen, the only reason I agreed
+Dialogue: 0,0:21:52.51,0:21:54.64,Default,,0,0,0,,保守秘密的唯一原因是因为你应承过\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}to keep Eleanor's secret was because you promised
+Dialogue: 0,0:21:54.68,0:21:56.35,Default,,0,0,0,,会一直寻找解药\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}that you would never stop looking for a cure.
+Dialogue: 0,0:21:56.39,0:21:58.64,Default,,0,0,0,,你他妈以为我们这是在干嘛呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What the fuck do you think we've been doing
+Dialogue: 0,0:21:58.68,0:22:01.18,Default,,0,0,0,,我们所有地方都去过了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}We've been everywhere!
+Dialogue: 0,0:22:01.23,0:22:05.23,Default,,0,0,0,,加拿大那边发生了几起凶杀案\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}There were these murders up in Canada.
+Dialogue: 0,0:22:05.27,0:22:07.36,Default,,0,0,0,,尸体的血被抽干了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Bodies drained of blood.
+Dialogue: 0,0:22:07.40,0:22:10.90,Default,,0,0,0,,自打我听说这事之后 就收拾行李过去了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Since I heard of that, we packed our bags and went,
+Dialogue: 0,0:22:10.95,0:22:13.36,Default,,0,0,0,,以为这回一定是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}thinking that this has to be
+Dialogue: 0,0:22:16.58,0:22:18.12,Default,,0,0,0,,什么都不是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}There was nothing.
+Dialogue: 0,0:22:18.16,0:22:20.29,Default,,0,0,0,,就是某个喜欢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It was just some sick asshole
+Dialogue: 0,0:22:20.33,0:22:23.46,Default,,0,0,0,,保存受害者尸体的变态\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}who liked to preserve his victims' bodies.
+Dialogue: 0,0:22:23.50,0:22:25.63,Default,,0,0,0,,后来\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And-and later on,
+Dialogue: 0,0:22:25.67,0:22:29.38,Default,,0,0,0,,我听说凶手在受害者身上留下了咬痕\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I heard about a killer who left bite marks on his victims.
+Dialogue: 0,0:22:29.42,0:22:32.63,Default,,0,0,0,,于是又一次 我们收拾行李过去\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And again, we packed and went.
+Dialogue: 0,0:22:32.68,0:22:34.68,Default,,0,0,0,,同样的 一无所获\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And again, nothing.
+Dialogue: 0,0:22:34.72,0:22:38.06,Default,,0,0,0,,然后就不断的重复着\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And then again and again and again.
+Dialogue: 0,0:22:38.10,0:22:39.97,Default,,0,0,0,,每次 我都跟艾莉保证说\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And every time, I promise Ellie,
+Dialogue: 0,0:22:40.02,0:22:42.06,Default,,0,0,0,,亲爱的 这回不一样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}"Honey, this time, it's different.
+Dialogue: 0,0:22:42.10,0:22:45.73,Default,,0,0,0,,这回 我们会找到把你弄成这样的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}This time we will find the monster
+Dialogue: 0,0:22:45.77,0:22:48.36,Default,,0,0,0,,那个怪物\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}that did this to you,
+Dialogue: 0,0:22:48.40,0:22:50.94,Default,,0,0,0,,我们会找到解药的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and that will lead us to a cure."
+Dialogue: 0,0:22:52.07,0:22:54.57,Default,,0,0,0,,每次她都寄予厚望\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And every time I would bring her hopes high,
+Dialogue: 0,0:22:54.61,0:22:56.95,Default,,0,0,0,,然后铩羽而归\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and then shatter them to pieces.
+Dialogue: 0,0:22:58.91,0:23:01.04,Default,,0,0,0,,我很想帮忙\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I want to help,
+Dialogue: 0,0:23:01.08,0:23:05.21,Default,,0,0,0,,但留你在这里工作的话 会给我的员工\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}but just having you here puts everyone who works for me--
+Dialogue: 0,0:23:05.25,0:23:08.38,Default,,0,0,0,,我的家人 带来危险\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}my family-- at risk.
+Dialogue: 0,0:23:08.42,0:23:10.92,Default,,0,0,0,,我没法留你在这儿\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And I can't do that
+Dialogue: 0,0:23:10.96,0:23:12.46,Default,,0,0,0,,只为了你能有个掩护的身份\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}just so you can have cover while you--
+Dialogue: 0,0:23:12.51,0:23:14.63,Default,,0,0,0,,不 不只是 听我说\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No, that's not the only-- That's-- Listen to me.
+Dialogue: 0,0:23:14.68,0:23:18.14,Default,,0,0,0,,我们回来不只是因为这个\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That's not the only reason why we're back.
+Dialogue: 0,0:23:18.18,0:23:21.06,Default,,0,0,0,,发生在市中心的这些凶杀案\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}These murders in Midtown,
+Dialogue: 0,0:23:21.10,0:23:23.89,Default,,0,0,0,,每起案子都是夜里发生的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}every one of them happened at night,
+Dialogue: 0,0:23:23.94,0:23:26.94,Default,,0,0,0,,杀戮的性质\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and the nature of the killings...
+Dialogue: 0,0:23:26.98,0:23:28.44,Default,,0,0,0,,野蛮程度\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}There's a savagery--
+Dialogue: 0,0:23:28.48,0:23:30.27,Default,,0,0,0,,你是说 你觉得凶手是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're saying that you think the killer's a--
+Dialogue: 0,0:23:30.32,0:23:32.28,Default,,0,0,0,,不是 我不知道\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No. I-I don't know.
+Dialogue: 0,0:23:32.32,0:23:34.44,Default,,0,0,0,,就艾莉而言\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And as far as Ellie knows,
+Dialogue: 0,0:23:34.49,0:23:37.20,Default,,0,0,0,,我们回来的唯一原因\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}the only reason we're back
+Dialogue: 0,0:23:37.24,0:23:39.87,Default,,0,0,0,,就是不再\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}is to stop...
+Dialogue: 0,0:23:39.91,0:23:42.29,Default,,0,0,0,,奔波\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}running.
+Dialogue: 0,0:23:43.41,0:23:47.29,Default,,0,0,0,,过去的十年 就是噩梦\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's been a nightmare, the last ten years.
+Dialogue: 0,0:23:47.33,0:23:50.71,Default,,0,0,0,,她值得过的更好\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}She deserves better.
+Dialogue: 0,0:23:50.75,0:23:55.01,Default,,0,0,0,,她理应过上正常人的生活\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}She deserves something resembling a life.
+Dialogue: 0,0:23:57.17,0:23:58.84,黑体,,0,0,0,,{\fs7\pos(86.4,145.467)\frx6\fry356\frz21.36\b1}日落 下午4:28
+Dialogue: 0,0:24:33.88,0:24:35.01,Default,,0,0,0,,你好\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hello
+Dialogue: 0,0:24:40.14,0:24:42.10,Default,,0,0,0,,你还好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Are you okay
+Dialogue: 0,0:24:42.14,0:24:44.18,Default,,0,0,0,,你没穿鞋\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're not wearing shoes.
+Dialogue: 0,0:24:45.22,0:24:47.52,Default,,0,0,0,,不冷吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Aren't you cold
+Dialogue: 0,0:24:47.56,0:24:49.52,Default,,0,0,0,,我感觉不到冷\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I don't get cold.
+Dialogue: 0,0:24:49.56,0:24:51.31,Default,,0,0,0,,怎么会\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}How come
+Dialogue: 0,0:24:51.36,0:24:54.07,Default,,0,0,0,,应该是不记得什么叫冷了吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I guess I've forgotten how.
+Dialogue: 0,0:24:59.45,0:25:01.37,Default,,0,0,0,,你住这边吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Do you live here
+Dialogue: 0,0:25:02.66,0:25:04.62,Default,,0,0,0,,我住你隔壁\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I live next door to you.
+Dialogue: 0,0:25:04.66,0:25:07.70,Default,,0,0,0,,你怎么知道我住哪儿的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}How do you know where I live
+Dialogue: 0,0:25:10.42,0:25:12.58,Default,,0,0,0,,是你肚子在叫吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Was that you
+Dialogue: 0,0:25:14.59,0:25:17.30,Default,,0,0,0,,你肯定很饿了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You must be really hungry.
+Dialogue: 0,0:25:17.34,0:25:19.01,Default,,0,0,0,,是的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I am.
+Dialogue: 0,0:25:24.14,0:25:25.72,Default,,0,0,0,,给\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Here.
+Dialogue: 0,0:25:28.39,0:25:30.06,Default,,0,0,0,,想吃的话都给你\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You can have it if you want.
+Dialogue: 0,0:25:30.10,0:25:31.56,Default,,0,0,0,,我本打算留着以后吃的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I was saving it for later.
+Dialogue: 0,0:25:31.60,0:25:32.90,Default,,0,0,0,,我吃不了巧克力\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I can't eat chocolate.
+Dialogue: 0,0:25:32.94,0:25:34.73,Default,,0,0,0,,真的吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Seriously
+Dialogue: 0,0:25:34.77,0:25:37.07,Default,,0,0,0,,我要吃不了巧克力 都不知道该怎么办了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I don't know what I would do if I couldn't eat chocolate.
+Dialogue: 0,0:25:37.11,0:25:39.24,Default,,0,0,0,,我超爱巧克力的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I love chocolate.
+Dialogue: 0,0:25:45.87,0:25:48.41,Default,,0,0,0,,你可以 替我吃\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You could...eat it for me.
+Dialogue: 0,0:25:49.41,0:25:51.16,Default,,0,0,0,,什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What
+Dialogue: 0,0:25:52.13,0:25:54.58,Default,,0,0,0,,你吃 我看着\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You could eat, and I could watch.
+Dialogue: 0,0:25:56.21,0:25:58.80,Default,,0,0,0,,感觉怪怪的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That's weird.
+Dialogue: 0,0:25:59.80,0:26:01.76,Default,,0,0,0,,你说的对 那算了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're right. Forget it.
+Dialogue: 0,0:26:01.80,0:26:02.80,Default,,0,0,0,,别\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No.
+Dialogue: 0,0:26:02.84,0:26:05.05,Default,,0,0,0,,就\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's...
+Dialogue: 0,0:26:05.10,0:26:06.85,Default,,0,0,0,,我不介意\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I don't mind.
+Dialogue: 0,0:26:26.78,0:26:29.16,Default,,0,0,0,,好吃吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's good, huh
+Dialogue: 0,0:26:29.20,0:26:30.66,Default,,0,0,0,,我天\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh, my God.
+Dialogue: 0,0:26:30.71,0:26:33.00,Default,,0,0,0,,好好吃\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's so good.
+Dialogue: 0,0:26:34.58,0:26:36.29,Default,,0,0,0,,亲爱的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Sweetheart
+Dialogue: 0,0:26:43.51,0:26:45.97,Default,,0,0,0,,嗨 马克先生\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hi, Mr. Mark.
+Dialogue: 0,0:26:50.43,0:26:53.56,Default,,0,0,0,,我得走了谢谢你的巧克力\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I got to go. Thanks for the chocolate.
+Dialogue: 0,0:27:08.12,0:27:10.41,Default,,0,0,0,,有事吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Can I help you
+Dialogue: 0,0:27:10.45,0:27:14.37,Default,,0,0,0,,是 我 我想为我儿子找样东西\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah. I'm-I'm looking for something for my son.
+Dialogue: 0,0:27:14.42,0:27:16.46,Default,,0,0,0,,-生日吗  -什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Birthday - Sorry
+Dialogue: 0,0:27:16.50,0:27:18.84,Default,,0,0,0,,是特殊场合要用的吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Is it a special occasion
+Dialogue: 0,0:27:19.84,0:27:22.42,Default,,0,0,0,,我今早对他态度特别差劲\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I was an asshole this morning.
+Dialogue: 0,0:27:24.51,0:27:26.59,Default,,0,0,0,,-他多大了  -12\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- How old is he - Twelve.
+Dialogue: 0,0:27:26.64,0:27:28.76,Default,,0,0,0,,我刚想猜是12\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I was gonna guess that.
+Dialogue: 0,0:27:28.81,0:27:31.56,Default,,0,0,0,,而且他 他总被人取笑\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And he, um...he gets picked on,
+Dialogue: 0,0:27:31.60,0:27:33.31,Default,,0,0,0,,所以如果得想办法让他\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}so if we could avoid anything that's gonna make--
+Dialogue: 0,0:27:33.35,0:27:35.98,Default,,0,0,0,,你是说摆脱被人取笑的局面对吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're saying to steer clear of the never-ending scarf.
+Dialogue: 0,0:27:36.02,0:27:37.85,Default,,0,0,0,,我有个正合适的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I have just the thing.
+Dialogue: 0,0:27:47.82,0:27:50.78,Default,,0,0,0,,我 我应该\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh, I-I should've...Uh...
+Dialogue: 0,0:27:50.83,0:27:55.37,Default,,0,0,0,,他更喜欢硬币啊纸牌啊之类的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}He's more into the, uh, coins and cards.
+Dialogue: 0,0:27:55.42,0:27:58.21,Default,,0,0,0,,相信我 这个\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Trust me, this...
+Dialogue: 0,0:27:58.25,0:28:00.21,Default,,0,0,0,,会把他们班同学\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}is gonna freak...
+Dialogue: 0,0:28:00.25,0:28:02.21,Default,,0,0,0,,震翻的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}his classmates out.
+Dialogue: 0,0:28:02.26,0:28:05.42,Default,,0,0,0,,我 我觉得他可能\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah, I-I just don't think he's really
+Dialogue: 0,0:28:05.47,0:28:07.76,Default,,0,0,0,,不会\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}trying to-- Oh.
+Dialogue: 0,0:28:07.80,0:28:10.39,Default,,0,0,0,,哇 这也太\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Okay. Wow. That is, uh--
+Dialogue: 0,0:28:10.43,0:28:12.35,Default,,0,0,0,,-逼真了吧  -我知道\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}So real. I know.
+Dialogue: 0,0:28:12.39,0:28:15.10,Default,,0,0,0,,即便是大人都搞不明白怎么弄的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Even the grown-ups can't figure out how it's done.
+Dialogue: 0,0:28:15.14,0:28:18.90,Default,,0,0,0,,那不 那不是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Well, isn't...isn't that just a, uh...
+Dialogue: 0,0:28:18.94,0:28:22.94,Default,,0,0,0,,就是针里面伸缩泵 然后你胳膊上有橡皮胶浆\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}a pump in the needle and some rubber glue on your arm
+Dialogue: 0,0:28:22.98,0:28:24.69,Default,,0,0,0,,而且 被针刺伤后\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Also, that's not... that's not really the way
+Dialogue: 0,0:28:24.74,0:28:26.74,Default,,0,0,0,,不是那样流血的 还有血的颜色\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}a puncture wound bleeds, and the...and the color
+Dialogue: 0,0:28:26.78,0:28:28.41,Default,,0,0,0,,其实挺假的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}of the blood isn't real...
+Dialogue: 0,0:28:28.45,0:28:31.24,Default,,0,0,0,,-抱歉  -那么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Sorry. - So,
+Dialogue: 0,0:28:31.28,0:28:33.33,Default,,0,0,0,,硬币和纸牌哈\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}cards and coins
+Dialogue: 0,0:28:33.37,0:28:35.62,Default,,0,0,0,,对 对 他喜欢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah, yeah. He likes, um,
+Dialogue: 0,0:28:35.66,0:28:37.50,Default,,0,0,0,,放在手掌心\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}palm of the hand,
+Dialogue: 0,0:28:37.54,0:28:41.29,Default,,0,0,0,,东西可以不见然后再回来那种\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}make things vanish and-and reappear.
+Dialogue: 0,0:28:42.96,0:28:45.30,Default,,0,0,0,,怎么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What
+Dialogue: 0,0:28:45.34,0:28:48.43,Default,,0,0,0,,我觉得他可能会喜欢这个\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I suspect he'll like this.
+Dialogue: 0,0:28:50.39,0:28:54.18,Default,,0,0,0,,等等 你为什么哼了一声\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Now, wait. Just, um, why'd you go, "Hmm"
+Dialogue: 0,0:28:54.22,0:28:56.43,Default,,0,0,0,,你儿子喜欢玩的那套\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}The magic your son is doing,
+Dialogue: 0,0:28:56.48,0:28:59.94,Default,,0,0,0,,其实挺复杂的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}it's pretty sophisticated.
+Dialogue: 0,0:28:59.98,0:29:01.69,Default,,0,0,0,,甚至过于精巧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Delicate, even.
+Dialogue: 0,0:29:01.73,0:29:04.94,Default,,0,0,0,,很少有12岁的小孩懂得欣赏\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Qualities rarely appreciated by 12-year-old boys.
+Dialogue: 0,0:29:04.98,0:29:06.82,Default,,0,0,0,,如果你想让他交点朋友\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}If you want him to make friends,
+Dialogue: 0,0:29:06.86,0:29:09.91,Default,,0,0,0,,这个针就最合适了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'd get him the needle instead.
+Dialogue: 0,0:29:20.50,0:29:23.50,Default,,0,0,0,,-说吧  -说什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Just say it, okay - What
+Dialogue: 0,0:29:23.54,0:29:26.13,Default,,0,0,0,,你很明显不喜欢我跟那个男生说话\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You clearly don't like that I was talking to that boy.
+Dialogue: 0,0:29:27.17,0:29:29.34,Default,,0,0,0,,我一直都特别希望\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I want nothing more than for you
+Dialogue: 0,0:29:29.38,0:29:31.93,Default,,0,0,0,,能有个除了我之外的人陪你说说话\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}to have someone to talk to besides me.
+Dialogue: 0,0:29:33.14,0:29:35.26,Default,,0,0,0,,但你得小心点\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You just have to be careful, that's it.
+Dialogue: 0,0:29:35.31,0:29:37.35,Default,,0,0,0,,我都没告诉他我叫什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I didn't even tell him my name.
+Dialogue: 0,0:29:43.19,0:29:45.19,Default,,0,0,0,,你担心的不是我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're not worried about me.
+Dialogue: 0,0:29:46.28,0:29:48.82,Default,,0,0,0,,你担心的是我会把他怎么样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're worried I'd do something to him.
+Dialogue: 0,0:30:10.01,0:30:12.18,Default,,0,0,0,,真酷是不是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's cool, huh
+Dialogue: 0,0:30:12.22,0:30:13.76,Default,,0,0,0,,-还行  -别装了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- It's okay. - Oh, come on.
+Dialogue: 0,0:30:13.80,0:30:15.85,Default,,0,0,0,,就是还行\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's okay.
+Dialogue: 0,0:30:46.75,0:30:48.21,Default,,0,0,0,,星系就像是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Galaxies are like islands
+Dialogue: 0,0:30:48.25,0:30:50.21,Default,,0,0,0,,太空海中的岛屿\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}in the sea of space.
+Dialogue: 0,0:30:50.26,0:30:54.18,Default,,0,0,0,,它们发出数十亿太阳的光芒\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}They glow with the light of billions of suns.
+Dialogue: 0,0:30:58.93,0:31:02.06,Default,,0,0,0,,哈勃望远镜精细地揭示了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}The Hubble telescope reveals nearby galaxies
+Dialogue: 0,0:31:02.10,0:31:03.56,Default,,0,0,0,,附近星系的细节\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}in exquisite detail.
+Dialogue: 0,0:31:05.90,0:31:09.57,Default,,0,0,0,,像这样的星系充斥着整个宇宙\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Galaxies like these fill the universe.
+Dialogue: 0,0:31:12.78,0:31:16.16,Default,,0,0,0,,它们的光需要数十亿年才能到达我们这里\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It takes billions of years for their light to reach us.
+Dialogue: 0,0:31:16.20,0:31:20.74,Default,,0,0,0,,我们看到的不是它们现在的样子 而是它们过去的样子\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}We see them not as they are but as they once were.
+Dialogue: 0,0:31:22.25,0:31:23.91,Default,,0,0,0,,嗨\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hello
+Dialogue: 0,0:31:23.96,0:31:25.50,Default,,0,0,0,,在厨房呢 亲爱的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}The kitchen, baby.
+Dialogue: 0,0:31:27.25,0:31:28.84,Default,,0,0,0,,这里还好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What's going on in here
+Dialogue: 0,0:31:28.88,0:31:30.92,Default,,0,0,0,,工作怎么样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Okay. - How was work
+Dialogue: 0,0:31:30.96,0:31:32.51,Default,,0,0,0,,挺好\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Good.
+Dialogue: 0,0:31:36.14,0:31:38.93,Default,,0,0,0,,-是哈勃望远镜上看到的吗  -嗯嗯\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Is that from Hubble - Mm-hmm.
+Dialogue: 0,0:31:45.35,0:31:46.98,Default,,0,0,0,,你没事吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You okay
+Dialogue: 0,0:31:50.98,0:31:52.94,Default,,0,0,0,,没事\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah.
+Dialogue: 0,0:31:52.99,0:31:54.24,Default,,0,0,0,,你还好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You good
+Dialogue: 0,0:31:59.70,0:32:01.83,Default,,0,0,0,,-我们得回家了  -就是肚子里有气\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- We got to get you home. - It was just a pang.
+Dialogue: 0,0:32:01.87,0:32:03.50,Default,,0,0,0,,艾莉诺\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Eleanor.
+Dialogue: 0,0:32:03.54,0:32:06.62,Default,,0,0,0,,我扛到明天都没事 我保证\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'll be fine till tomorrow, I promise.
+Dialogue: 0,0:32:07.67,0:32:10.59,Default,,0,0,0,,别毁了今晚的愉快时光 好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Let's not ruin tonight, okay
+Dialogue: 0,0:32:11.59,0:32:13.92,Default,,0,0,0,,接下来你想去哪\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Where would you like to go next
+Dialogue: 0,0:32:19.60,0:32:20.80,Default,,0,0,0,,怎么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What
+Dialogue: 0,0:32:39.03,0:32:41.07,Default,,0,0,0,,好了 海岸安全了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}All right. Coast is clear.
+Dialogue: 0,0:33:33.50,0:33:36.05,Default,,0,0,0,,待那别动\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Stay there!
+Dialogue: 0,0:35:33.83,0:35:37.50,Default,,0,0,0,,靠\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Fuck.
+Dialogue: 0,0:35:37.54,0:35:39.25,Default,,0,0,0,,见鬼\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Shit!
+Dialogue: 0,0:36:18.38,0:36:20.71,Default,,0,0,0,,-爸爸帮忙  -艾莉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Dad, help! - Ellie!
+Dialogue: 0,0:36:25.80,0:36:27.01,Default,,0,0,0,,我来对付他\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'll get him.
+Dialogue: 0,0:36:34.85,0:36:37.10,Default,,0,0,0,,你为什么要检查尖牙\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Why are you checking for fangs
+Dialogue: 0,0:36:37.15,0:36:38.94,Default,,0,0,0,,-这没道理  -为什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Doesn't make any sense. - Why
+Dialogue: 0,0:36:38.98,0:36:40.44,Default,,0,0,0,,-你是在检查尖牙吗  -看见他的眼睛了吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- are you checking for fangs - See his eyes
+Dialogue: 0,0:36:40.48,0:36:42.82,Default,,0,0,0,,看他的眼睛\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Look at his eyes.
+Dialogue: 0,0:36:42.86,0:36:44.36,Default,,0,0,0,,看它们发出来的光了吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}See how they're glowing
+Dialogue: 0,0:36:44.40,0:36:45.82,Default,,0,0,0,,那是因为你用手电筒照着他的眼睛\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Because you just shined a light in his eyes.
+Dialogue: 0,0:36:45.86,0:36:47.65,Default,,0,0,0,,他跟你一样强壮\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}He was strong like you.
+Dialogue: 0,0:36:47.70,0:36:49.36,Default,,0,0,0,,你看到咬痕了吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Do you see a bite mark
+Dialogue: 0,0:36:49.41,0:36:51.03,Default,,0,0,0,,没\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No.
+Dialogue: 0,0:36:51.08,0:36:52.58,Default,,0,0,0,,他试图喝你的血了吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Did he try and drink your blood
+Dialogue: 0,0:36:52.62,0:36:54.49,Default,,0,0,0,,-没  -因为他跟我不一样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No. Because he's not like me.
+Dialogue: 0,0:36:54.54,0:36:56.66,Default,,0,0,0,,你说过我们不再这样了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You told me we were done with this.
+Dialogue: 0,0:36:57.62,0:36:59.42,Default,,0,0,0,,还有多久他会醒\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}How long till he wakes up
+Dialogue: 0,0:36:59.46,0:37:01.42,Default,,0,0,0,,20分钟 也许更短\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}20 minutes. Maybe less.
+Dialogue: 0,0:37:01.46,0:37:04.13,Default,,0,0,0,,那就别在再浪费时间了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}We should stop wasting time.
+Dialogue: 0,0:37:04.17,0:37:07.47,Default,,0,0,0,,我觉得我扛不到明天了 现在不行了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I don't think I can make it till tomorrow, not anymore.
+Dialogue: 0,0:37:13.01,0:37:15.10,Default,,0,0,0,,好了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}All right.
+Dialogue: 0,0:37:18.14,0:37:21.15,Default,,0,0,0,,好了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Okay.
+Dialogue: 0,0:37:26.40,0:37:27.78,Default,,0,0,0,,怎么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What's wrong
+Dialogue: 0,0:37:27.82,0:37:30.03,Default,,0,0,0,,-他体内有东西  -什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- He's on something. - What
+Dialogue: 0,0:37:30.07,0:37:33.16,Default,,0,0,0,,我不知道 我从没喝过这种味道的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I don't know. It's nothing I've tasted before.
+Dialogue: 0,0:37:41.85,0:37:45.10,黑体,,0,0,0,,{\fs7\frz347.6\b1\pos(247.2,164.666)}屏蔽号码\N134街与12街 三十分钟
+Dialogue: 0,0:37:47.09,0:37:50.30,Default,,0,0,0,,我建议咱们举起七喜\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I would like us to raise our 7UPs
+Dialogue: 0,0:37:50.34,0:37:52.76,Default,,0,0,0,,感谢你妈做的美味晚餐\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and thank your mother for this fantastic meal.
+Dialogue: 0,0:37:52.80,0:37:55.64,Default,,0,0,0,,美味谈不上吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I don't know about fantastic.
+Dialogue: 0,0:37:55.68,0:37:57.47,Default,,0,0,0,,你说啥\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Excuse me.
+Dialogue: 0,0:37:57.52,0:38:01.10,Default,,0,0,0,,嘿 你妈做这顿饭可费了不少劲\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hey, your mother worked very hard on this dinner.
+Dialogue: 0,0:38:01.15,0:38:03.69,Default,,0,0,0,,要是能再加点盐就更好了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Although it wouldn't kill you to add a little salt.
+Dialogue: 0,0:38:03.73,0:38:04.77,Default,,0,0,0,,我就知道\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- I know, right
+Dialogue: 0,0:38:06.53,0:38:09.03,Default,,0,0,0,,下次你来做\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You are most welcome to cook next time.
+Dialogue: 0,0:38:11.99,0:38:13.87,Default,,0,0,0,,咋了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What
+Dialogue: 0,0:38:13.91,0:38:15.74,Default,,0,0,0,,你说下次\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You said "next time."
+Dialogue: 0,0:38:22.06,0:38:25.23,黑体,,0,0,0,,{\fs8\frz18.1\b1\pos(145.6,86.8)}未知号码\N134街与12街 三十分钟
+Dialogue: 0,0:38:25.34,0:38:27.80,Default,,0,0,0,,我们吃饭时不看手机的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}We try not to have our phones at the table.
+Dialogue: 0,0:38:27.84,0:38:30.47,Default,,0,0,0,,抱歉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh. Sorry.
+Dialogue: 0,0:38:34.01,0:38:35.89,Default,,0,0,0,,我马上回来\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'll be back in a second.
+Dialogue: 0,0:38:42.35,0:38:45.27,Default,,0,0,0,,我得走了 小家伙\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I got to run, little man.
+Dialogue: 0,0:38:45.31,0:38:48.48,Default,,0,0,0,,你有没有什么魔术要给我表演一下啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You got any, uh, magic to show me before I go
+Dialogue: 0,0:38:48.53,0:38:50.03,Default,,0,0,0,,实际上\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Actually...
+Dialogue: 0,0:38:50.07,0:38:52.20,Default,,0,0,0,,咋了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What
+Dialogue: 0,0:38:52.24,0:38:54.41,Default,,0,0,0,,明天晚上学校有才艺表演\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}There's this talent show tomorrow night at school.
+Dialogue: 0,0:38:54.45,0:38:55.87,Default,,0,0,0,,我本来不想去的 但如果你\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I was gonna skip it, but if you--
+Dialogue: 0,0:38:55.91,0:38:57.33,Default,,0,0,0,,几点\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What time's the show
+Dialogue: 0,0:38:57.37,0:39:00.12,Default,,0,0,0,,7点\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Seven. - Ah.
+Dialogue: 0,0:39:00.16,0:39:03.96,Default,,0,0,0,,嘿 我有个硬币 你可以练习一下\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hey, I got a coin for you to practice with.
+Dialogue: 0,0:39:04.00,0:39:07.17,Default,,0,0,0,,-爸 我硬币多了去了  -这个可是幸运币\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Dad, I have quarters. - No, but this one is lucky.
+Dialogue: 0,0:39:07.21,0:39:08.59,Default,,0,0,0,,怎么幸运\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}How come
+Dialogue: 0,0:39:08.63,0:39:10.38,Default,,0,0,0,,看看年份\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Check out the year.
+Dialogue: 0,0:39:13.09,0:39:16.01,Default,,0,0,0,,厉害吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Boom.
+Dialogue: 0,0:39:17.22,0:39:19.81,Default,,0,0,0,,再见了 大卫·布莱恩（大魔术师）\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}See you around, David Blaine.
+Dialogue: 0,0:39:33.70,0:39:36.11,Default,,0,0,0,,你确定自己没受伤吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You sure you're not hurt
+Dialogue: 0,0:39:36.16,0:39:38.58,Default,,0,0,0,,没事 赶紧回家吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm fine. Let's just go home.
+Dialogue: 0,0:39:38.62,0:39:42.08,Default,,0,0,0,,好吧 一会我就回去哈\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}All right, look, I'm gonna meet you there, okay
+Dialogue: 0,0:39:44.04,0:39:46.00,Default,,0,0,0,,怎么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What
+Dialogue: 0,0:39:46.04,0:39:47.46,Default,,0,0,0,,怎么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What's wrong
+Dialogue: 0,0:39:47.50,0:39:49.92,Default,,0,0,0,,嘿 艾莉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hey, Ellie. Hey.
+Dialogue: 0,0:39:49.96,0:39:51.55,Default,,0,0,0,,我们今天本来过得好好的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}We were having a good day.
+Dialogue: 0,0:39:52.17,0:39:55.38,Default,,0,0,0,,我都不记得上次这样是什么时候了 然后你丢下我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I can't remember the last time we had. And then you leave me
+Dialogue: 0,0:39:55.43,0:39:57.05,Default,,0,0,0,,-去追  -等会\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- to chase down-- - Now, just hold on one second.
+Dialogue: 0,0:39:57.10,0:39:58.76,Default,,0,0,0,,是你说的 我们要小心\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're the one who said we have to be careful.
+Dialogue: 0,0:39:58.81,0:40:01.31,Default,,0,0,0,,说我们必须超级小心才能待在这\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That we'll only get to stay here if we're super careful.
+Dialogue: 0,0:40:01.35,0:40:02.93,Default,,0,0,0,,然后你就追人去了下水道\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And then you go running into a freaking sewer
+Dialogue: 0,0:40:02.98,0:40:05.31,Default,,0,0,0,,-还差点害死你自己  -好了 好了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- and almost get yourself killed. - Okay. Okay, okay.
+Dialogue: 0,0:40:05.94,0:40:09.02,Default,,0,0,0,,你说的对 刚才我太鲁莽了 对不起\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You're right. That was reckless, and I'm sorry.
+Dialogue: 0,0:40:09.07,0:40:10.86,Default,,0,0,0,,你 你 你说的非常对\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And-and-and you were absolutely right
+Dialogue: 0,0:40:10.90,0:40:12.61,Default,,0,0,0,,那个人确实跟你不一样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}when you said that man wasn't like you.
+Dialogue: 0,0:40:12.65,0:40:15.61,Default,,0,0,0,,但是他的血液里有某种你从未尝过的药\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}But he was on some drug that you'd never tasted before.
+Dialogue: 0,0:40:15.66,0:40:17.74,Default,,0,0,0,,听我说\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Look, listen!
+Dialogue: 0,0:40:17.78,0:40:20.70,Default,,0,0,0,,他吃的药让他跟你行为很像\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Whatever he was on had him acting like you.
+Dialogue: 0,0:40:20.74,0:40:22.54,Default,,0,0,0,,所以也许这里面有什么古怪\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}So maybe there's still something here.
+Dialogue: 0,0:40:22.58,0:40:23.91,Default,,0,0,0,,我要吃东西\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I need to eat.
+Dialogue: 0,0:40:23.96,0:40:25.75,Default,,0,0,0,,我知道你觉得这恶心\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I know that disgusts you, but--
+Dialogue: 0,0:40:25.79,0:40:27.21,Default,,0,0,0,,不 我不觉得恶心\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No, it doesn't disgust me.
+Dialogue: 0,0:40:27.25,0:40:28.63,Default,,0,0,0,,-你就是  -我没有\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Yes, it does. - It doesn't!
+Dialogue: 0,0:40:28.67,0:40:30.38,Default,,0,0,0,,我喝血时你都不敢看我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You can't even look at me when I feed.
+Dialogue: 0,0:40:30.42,0:40:31.71,Default,,0,0,0,,不 艾莉 我现在没时间跟你争论这个\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Nah, I don't have time for that shit right now, Ellie.
+Dialogue: 0,0:40:31.75,0:40:33.26,Default,,0,0,0,,-我们得走了  -那也许\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Come on, let's go. Then maybe
+Dialogue: 0,0:40:33.30,0:40:34.80,Default,,0,0,0,,-我自己去找晚餐更合适  -不 不行\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- I'll go find my own dinner. - That's-that...
+Dialogue: 0,0:40:34.84,0:40:36.26,Default,,0,0,0,,你不能那么做\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No, no. No, you-you're not gonna do that.
+Dialogue: 0,0:40:36.30,0:40:37.47,Default,,0,0,0,,-为什么不行  -因为这是规矩\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Why not - 'Cause that's the rule.
+Dialogue: 0,0:40:37.51,0:40:39.26,Default,,0,0,0,,-你不会那么做  -为什么不行\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- You do not do that. - Why not !
+Dialogue: 0,0:40:40.72,0:40:42.81,Default,,0,0,0,,因为你不是那种人\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That's not who you are!
+Dialogue: 0,0:40:46.39,0:40:48.06,Default,,0,0,0,,如果\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What if it is
+Dialogue: 0,0:40:49.52,0:40:52.02,Default,,0,0,0,,如果我早晚都会变成那样呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What if this is all I'll ever be
+Dialogue: 0,0:40:52.07,0:40:54.07,Default,,0,0,0,,不会的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's not.
+Dialogue: 0,0:40:55.32,0:40:57.15,Default,,0,0,0,,我保证 不会的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I promise it's not.
+Dialogue: 0,0:40:57.20,0:40:58.82,Default,,0,0,0,,好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Okay-
+Dialogue: 0,0:41:03.20,0:41:05.45,Default,,0,0,0,,回家去吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Go home, please.
+Dialogue: 0,0:41:06.91,0:41:09.04,Default,,0,0,0,,晚点家里见 好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'll meet you there later, okay
+Dialogue: 0,0:41:09.08,0:41:10.83,Default,,0,0,0,,我会给你带晚餐的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And I will bring you dinner.
+Dialogue: 0,0:41:10.88,0:41:12.17,Default,,0,0,0,,去吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Go.
+Dialogue: 0,0:41:32.36,0:41:35.73,Default,,0,0,0,,晚上好 洛根医生 我叫马修\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Evening, Dr. Logan. My name's Matthew.
+Dialogue: 0,0:41:36.74,0:41:39.36,Default,,0,0,0,,你父亲在里面等你\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Your father's waiting for you inside.
+Dialogue: 0,0:41:44.58,0:41:46.87,Default,,0,0,0,,抱歉让你看到这种现状\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You'll have to forgive the state of things.
+Dialogue: 0,0:41:46.91,0:41:49.25,Default,,0,0,0,,诉讼堆积如山 你爸\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}After the lawsuits piled up, your dad was forced
+Dialogue: 0,0:41:49.29,0:41:51.46,Default,,0,0,0,,只好把其它东西都卖了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}to let the rest of his staff go.
+Dialogue: 0,0:41:55.46,0:41:57.42,Default,,0,0,0,,可怜的家伙\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Poor guy.
+Dialogue: 0,0:41:57.47,0:41:59.68,Default,,0,0,0,,他让数百万人吃止痛药上瘾\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Gets millions of people hooked on painkillers,
+Dialogue: 0,0:41:59.72,0:42:03.76,Default,,0,0,0,,最后债台高筑一无所有 却留下了这栋海滨豪宅\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and they take everything from him but his waterfront mansion.
+Dialogue: 0,0:42:03.81,0:42:06.10,Default,,0,0,0,,也许等你年纪大点时\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Well, perhaps as you get older,
+Dialogue: 0,0:42:06.14,0:42:10.48,Default,,0,0,0,,才会经历更深刻 更剧烈的疼痛\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}you'll experience pain in a more profound and acute way.
+Dialogue: 0,0:42:10.52,0:42:12.90,Default,,0,0,0,,到时你就不会觉得\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And you won't find
+Dialogue: 0,0:42:12.94,0:42:16.02,Default,,0,0,0,,改善疼痛症状有什么可鄙的了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}its amelioration such an ignoble pursuit.
+Dialogue: 0,0:42:20.45,0:42:22.78,Default,,0,0,0,,谢谢你 马修\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Thank you, Matthew.
+Dialogue: 0,0:42:27.62,0:42:29.58,Default,,0,0,0,,欢迎回家\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Welcome home.
+Dialogue: 0,0:42:29.62,0:42:32.37,Default,,0,0,0,,这里不是我家\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}This isn't my home.
+Dialogue: 0,0:42:32.42,0:42:34.58,Default,,0,0,0,,遗嘱里我把这留给你了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Well, I left it to you in my will.
+Dialogue: 0,0:42:34.63,0:42:36.21,Default,,0,0,0,,你说要告诉我皮特的事\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You had something to tell me about Peter
+Dialogue: 0,0:42:36.25,0:42:38.38,Default,,0,0,0,,你感觉如何 爸爸\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}"How are you feeling, Dad
+Dialogue: 0,0:42:38.42,0:42:41.01,Default,,0,0,0,,我能为你做点什么吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Is there anything I can do for you"
+Dialogue: 0,0:42:41.97,0:42:44.09,Default,,0,0,0,,根本没有什么皮特 对吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You don't, do you
+Dialogue: 0,0:42:44.14,0:42:46.85,Default,,0,0,0,,-自私如你  -你当然要打着皮特的幌子\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- Selfish as always. - Of course you'd bait me here
+Dialogue: 0,0:42:46.89,0:42:48.27,Default,,0,0,0,,才能把我骗过来 你想用豪宅收买我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}with Peter, when really all you want to do
+Dialogue: 0,0:42:48.31,0:42:49.77,Default,,0,0,0,,让我宽恕你\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}is buy back my forgiveness.
+Dialogue: 0,0:42:49.81,0:42:51.98,Default,,0,0,0,,看得出来你依然坚持认为\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh. I see we're still clinging
+Dialogue: 0,0:42:52.02,0:42:54.73,Default,,0,0,0,,这个糟糕的父亲\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}to the narrative I was a terrible father.
+Dialogue: 0,0:42:54.77,0:42:56.48,Default,,0,0,0,,哦不 你是最棒的父亲\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Uh, no, you were fantastic.
+Dialogue: 0,0:42:56.52,0:42:58.23,Default,,0,0,0,,你和皮特一无所有\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You and Peter wanted for nothing.
+Dialogue: 0,0:42:58.28,0:43:00.57,Default,,0,0,0,,记得妈妈走后你对我们说了什么吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Do you remember what you told us after Mom took off
+Dialogue: 0,0:43:01.86,0:43:03.66,Default,,0,0,0,,记得吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Do you
+Dialogue: 0,0:43:03.70,0:43:07.62,Default,,0,0,0,,你说 你俩降生之前 她一直都很开心\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You said, "She was always happy till you two came around."
+Dialogue: 0,0:43:08.58,0:43:10.91,Default,,0,0,0,,是我养大了皮特\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I raised Peter,
+Dialogue: 0,0:43:10.96,0:43:15.00,Default,,0,0,0,,在你忙着让博物馆为你冠名时\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}while you were off having some museum named in your honor.
+Dialogue: 0,0:43:15.04,0:43:18.17,Default,,0,0,0,,是我在辅导他做家庭作业\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I was the one helping him with his homework,
+Dialogue: 0,0:43:18.21,0:43:22.26,Default,,0,0,0,,哄他睡觉 培养他上学\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}putting him to bed, putting off college.
+Dialogue: 0,0:43:22.30,0:43:24.38,Default,,0,0,0,,等我终于离开了这个家\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And when I finally went,
+Dialogue: 0,0:43:24.43,0:43:26.55,Default,,0,0,0,,我连大一都没念完 就接到了你的电话\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I hadn't even finished my freshman year when you called
+Dialogue: 0,0:43:26.60,0:43:28.81,Default,,0,0,0,,说你带着他去打猎\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}to tell me you'd taken him hunting.
+Dialogue: 0,0:43:28.85,0:43:32.98,Default,,0,0,0,,却让他误入了母熊和小熊的缠斗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And he'd somehow come between a mother bear and her cub.
+Dialogue: 0,0:43:33.02,0:43:37.23,Default,,0,0,0,,等我回来参加葬礼的时候\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And when I came home for the funeral...
+Dialogue: 0,0:43:37.27,0:43:41.32,Default,,0,0,0,,他的棺材才刚入土\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}his casket had barely been put in the ground
+Dialogue: 0,0:43:41.36,0:43:44.32,Default,,0,0,0,,你扭过头对我说\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}when you turned to me and you said,
+Dialogue: 0,0:43:44.36,0:43:47.78,Default,,0,0,0,,你差不多也该回学校了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}"I guess you should be getting back to school."
+Dialogue: 0,0:43:47.83,0:43:50.24,Default,,0,0,0,,所以你没说错\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}So you're right.
+Dialogue: 0,0:43:51.66,0:43:54.29,Default,,0,0,0,,你真是世界上最好的老爸\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You were Father of the Fucking Year.
+Dialogue: 0,0:43:54.33,0:43:57.50,Default,,0,0,0,,我祝你死得愉快\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Have a nice death.
+Dialogue: 0,0:44:00.55,0:44:02.55,Default,,0,0,0,,我从没带皮特去打猎\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I never took Peter hunting.
+Dialogue: 0,0:44:08.30,0:44:12.89,Default,,0,0,0,,袭击他的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And what attacked him...
+Dialogue: 0,0:44:12.93,0:44:14.81,Default,,0,0,0,,也不是熊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}it wasn't a bear.
+Dialogue: 0,0:44:14.85,0:44:19.02,Default,,0,0,0,,我把这座房子给你\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm not leaving you this house
+Dialogue: 0,0:44:19.07,0:44:21.19,Default,,0,0,0,,不是为了洗刷自己的内疚\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}to buy back my guilt.
+Dialogue: 0,0:44:21.23,0:44:23.36,Default,,0,0,0,,我要你继续我的事业\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I need you to continue my work.
+Dialogue: 0,0:44:23.40,0:44:25.95,Default,,0,0,0,,10年来 我一直在寻找\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}For ten years, I have been trying
+Dialogue: 0,0:44:25.99,0:44:28.32,Default,,0,0,0,,治愈良方\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}to develop a cure,
+Dialogue: 0,0:44:28.37,0:44:31.37,Default,,0,0,0,,我马上就要成功了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and I am so close.
+Dialogue: 0,0:44:31.41,0:44:33.79,Default,,0,0,0,,治愈什么的良方\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}A cure for what
+Dialogue: 0,0:44:35.83,0:44:38.04,Default,,0,0,0,,你弟弟\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}For your brother.
+Dialogue: 0,0:44:39.42,0:44:41.71,Default,,0,0,0,,你究竟在说什么呀\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What the fuck are you talking about
+Dialogue: 0,0:44:44.76,0:44:47.22,Default,,0,0,0,,我不能跟你聊天 我在练习魔术手法\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I can't really talk. I need to work on my routine.
+Dialogue: 0,0:44:47.26,0:44:52.06,Default,,0,0,0,,哦 那正好 给你买了个小礼物\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hey, speaking of, I got you something.
+Dialogue: 0,0:44:52.10,0:44:54.27,Default,,0,0,0,,你去了塔南家\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You went to Tannen's!
+Dialogue: 0,0:44:55.85,0:44:58.23,Default,,0,0,0,,真棒 谢谢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Oh. Cool, thanks.
+Dialogue: 0,0:44:58.27,0:45:00.73,Default,,0,0,0,,里面不光这一个\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Um, that's not all that's in there.
+Dialogue: 0,0:45:02.61,0:45:05.19,Default,,0,0,0,,不会吧 你知道这是什么吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No way. Do you even know what this is
+Dialogue: 0,0:45:05.24,0:45:08.45,Default,,0,0,0,,我只希望自己不是买了个空袋子呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I was just hoping I didn't pay for an empty bag.
+Dialogue: 0,0:45:09.78,0:45:12.12,Default,,0,0,0,,你想跟给我展示一下吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You want to show me how it works
+Dialogue: 0,0:45:12.16,0:45:14.33,Default,,0,0,0,,你根本不喜欢魔术\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You don't like magic.
+Dialogue: 0,0:45:14.37,0:45:16.46,Default,,0,0,0,,-那 那倒不是  -嘿\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- That-That's not true. - Hey,
+Dialogue: 0,0:45:16.50,0:45:17.96,Default,,0,0,0,,在院子里看到几个小朋友\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I saw some kids out in the courtyard.
+Dialogue: 0,0:45:18.00,0:45:19.58,Default,,0,0,0,,可以给变给他们看吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Maybe I can show them
+Dialogue: 0,0:45:19.63,0:45:21.96,Default,,0,0,0,,我知道你不想让我成为\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I know you don't want me to make myself
+Dialogue: 0,0:45:22.00,0:45:23.96,Default,,0,0,0,,众人的目标 我觉得至少我可以\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}an easy target. I just thought maybe
+Dialogue: 0,0:45:24.01,0:45:26.05,Default,,0,0,0,,亲爱的 亲爱的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- I could at least try-- - Sweetheart. Sweetheart.
+Dialogue: 0,0:45:26.09,0:45:27.88,Default,,0,0,0,,听我说\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Listen.
+Dialogue: 0,0:45:30.09,0:45:31.51,Default,,0,0,0,,你看\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Look.
+Dialogue: 0,0:45:31.55,0:45:35.39,Default,,0,0,0,,如果这个世界很太平\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}If the world were good,
+Dialogue: 0,0:45:35.43,0:45:38.60,Default,,0,0,0,,你可以想穿什么就穿什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}you could...you could wear whatever you want
+Dialogue: 0,0:45:38.64,0:45:41.90,Default,,0,0,0,,想怎么样就怎么样\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and be exactly who you are.
+Dialogue: 0,0:45:41.94,0:45:43.90,Default,,0,0,0,,如果我会变魔术\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And if I could do a magic trick,
+Dialogue: 0,0:45:43.94,0:45:46.19,Default,,0,0,0,,我会把这个世界变得更喜欢你\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}it'd be to make the world more like you.
+Dialogue: 0,0:45:46.24,0:45:49.36,Default,,0,0,0,,让这个世界配得上你\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Make it worthy of you.
+Dialogue: 0,0:45:49.41,0:45:51.78,Default,,0,0,0,,这个世界\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}The world's...
+Dialogue: 0,0:45:57.75,0:45:59.50,Default,,0,0,0,,我只是不想让你出事儿\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I just want you safe.
+Dialogue: 0,0:46:05.76,0:46:07.38,Default,,0,0,0,,我明白\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I got it.
+Dialogue: 0,0:46:12.35,0:46:14.30,Default,,0,0,0,,就在院子里玩 不许出去\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No further than the courtyard.
+Dialogue: 0,0:46:15.56,0:46:16.97,Default,,0,0,0,,9:00就熄灯了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Lights out by 9:00.
+Dialogue: 0,0:46:17.93,0:46:19.98,Default,,0,0,0,,谢谢妈妈\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Thanks, Mom.
+Dialogue: 0,0:46:43.53,0:46:47.07,黑体,,0,0,0,,{\fs6\pos(222.8,165.2)\frz346.7\b1}艾莉\N我很饿 请快点
+Dialogue: 0,0:47:00.18,0:47:02.35,Default,,0,0,0,,嘿 各位 咋样啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hi, guys. How's it hanging
+Dialogue: 0,0:47:02.40,0:47:04.52,Default,,0,0,0,,你们听到他在说什么了吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Did y'all hear something
+Dialogue: 0,0:47:04.56,0:47:06.36,Default,,0,0,0,,-没有 你呢  -没\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- No. Did you - No.
+Dialogue: 0,0:47:06.40,0:47:08.32,Default,,0,0,0,,想不想去玩游戏机\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You want to play some Xbox
+Dialogue: 0,0:47:08.36,0:47:10.86,Default,,0,0,0,,当然了 我要第一个玩\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Hell yeah, and I get first player.
+Dialogue: 0,0:47:47.52,0:47:49.94,Default,,0,0,0,,嘿 咋样啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}How's it hanging
+Dialogue: 0,0:47:49.98,0:47:52.40,Default,,0,0,0,,我是说 你还好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I mean, how's it going
+Dialogue: 0,0:47:54.95,0:47:57.07,Default,,0,0,0,,我给你看个东西如何\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Can I show you something real quick
+Dialogue: 0,0:47:57.12,0:47:59.03,Default,,0,0,0,,但你要走近一点\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}But you got to come close.
+Dialogue: 0,0:48:09.38,0:48:11.21,Default,,0,0,0,,这只是因一枚普通的硬币 对吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Just a regular quarter, right
+Dialogue: 0,0:48:48.54,0:48:50.21,Default,,0,0,0,,怎么回事啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I don't get it.
+Dialogue: 0,0:48:50.25,0:48:53.96,Default,,0,0,0,,好吧\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Well...
+Dialogue: 0,0:48:54.01,0:48:57.01,Default,,0,0,0,,这叫魔法\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It's magic.
+Dialogue: 0,0:48:59.51,0:49:01.47,Default,,0,0,0,,什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What
+Dialogue: 0,0:49:01.51,0:49:02.97,Default,,0,0,0,,你的眼睛怎么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What's with your eyes
+Dialogue: 0,0:49:03.02,0:49:06.14,Default,,0,0,0,,好酷啊 你怎么把眼睛变成这样的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That's so cool. How do you make 'em do that
+Dialogue: 0,0:49:08.10,0:49:09.90,Default,,0,0,0,,用魔法啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}With magic.
+Dialogue: 0,0:49:13.44,0:49:14.94,Default,,0,0,0,,我该走了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I should go.
+Dialogue: 0,0:49:16.90,0:49:19.16,Default,,0,0,0,,顺便说下 我叫以赛亚\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm Isaiah, by the way.
+Dialogue: 0,0:49:21.45,0:49:24.33,Default,,0,0,0,,我叫艾莉诺\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm Eleanor.
+Dialogue: 0,0:49:40.51,0:49:43.31,Default,,0,0,0,,打扰下 你好\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Excuse me. Hi.
+Dialogue: 0,0:49:43.35,0:49:45.02,Default,,0,0,0,,有什么事吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Can I help you
+Dialogue: 0,0:49:45.06,0:49:46.60,Default,,0,0,0,,呃 对\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Uh, yeah. Um,
+Dialogue: 0,0:49:46.64,0:49:49.94,Default,,0,0,0,,我对你卖的东西很感兴趣\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm interested in what-what you're selling.
+Dialogue: 0,0:49:49.98,0:49:52.23,Default,,0,0,0,,为什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What would that be
+Dialogue: 0,0:49:52.27,0:49:56.28,Default,,0,0,0,,我听说市面上有一种新货\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I heard there's something new out there
+Dialogue: 0,0:49:56.32,0:49:57.57,Default,,0,0,0,,效果挺强劲的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Something strong
+Dialogue: 0,0:49:59.57,0:50:02.57,Default,,0,0,0,,别别别 等等我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No, no, no. Wait, wait, wait. Wait.
+Dialogue: 0,0:50:02.62,0:50:05.49,Default,,0,0,0,,我有钱 我不是警察\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I have money. Look, I'm not a cop.
+Dialogue: 0,0:50:05.54,0:50:07.12,Default,,0,0,0,,祝你今晚过得愉快\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You have yourself a nice night.
+Dialogue: 0,0:50:07.16,0:50:09.79,Default,,0,0,0,,-不不不 等一下  -别烦我了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- No, no, no, no. Just wait. - We're done here.
+Dialogue: 0,0:50:40.99,0:50:43.41,Default,,0,0,0,,我要问你几个问题\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm gonna ask you some questions,
+Dialogue: 0,0:50:43.45,0:50:45.58,Default,,0,0,0,,如果你老实交代\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and if you're honest with me,
+Dialogue: 0,0:50:45.62,0:50:47.70,Default,,0,0,0,,也许有希望\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}there's a chance
+Dialogue: 0,0:50:47.75,0:50:49.87,Default,,0,0,0,,活着从这里走出去\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}you walk out of here alive.
+Dialogue: 0,0:50:49.91,0:50:52.00,Default,,0,0,0,,你懂吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Do you understand
+Dialogue: 0,0:50:58.67,0:51:00.72,Default,,0,0,0,,这是我在你外套口袋里找到的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I found these in your jacket pocket.
+Dialogue: 0,0:51:00.76,0:51:02.59,Default,,0,0,0,,这是什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What is it
+Dialogue: 0,0:51:02.64,0:51:04.97,Default,,0,0,0,,我不知道\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I-I don't know.
+Dialogue: 0,0:51:05.01,0:51:08.22,Default,,0,0,0,,不 你别激动 我发誓我真的不知道\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}No, no. Just-just take it easy. I swear, I-I don't know.
+Dialogue: 0,0:51:08.27,0:51:09.64,Default,,0,0,0,,我可以全都告诉你\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Look, I-I'll tell you everything.
+Dialogue: 0,0:51:09.68,0:51:12.35,Default,,0,0,0,,但请你冷静 好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Just-just be cool, okay Um...
+Dialogue: 0,0:51:12.40,0:51:14.73,Default,,0,0,0,,几周之前我出门去参加\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}A couple weeks ago, I was...I was...
+Dialogue: 0,0:51:14.77,0:51:16.61,Default,,0,0,0,,戒断互助会\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I was coming out of an AA meeting,
+Dialogue: 0,0:51:16.65,0:51:18.40,Default,,0,0,0,,有个人问我想不想赚点钱\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}and this guy asked me if I wanted to make some money.
+Dialogue: 0,0:51:18.44,0:51:19.90,Default,,0,0,0,,他每天晚上会给我发个地址\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Every night, he texts me an address.
+Dialogue: 0,0:51:19.94,0:51:21.61,Default,,0,0,0,,我过去 他把货给我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I go there, he gives me product to sell.
+Dialogue: 0,0:51:21.65,0:51:23.91,Default,,0,0,0,,第二天晚上 又有一个新的地址\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}The next night, it's a new address.
+Dialogue: 0,0:51:23.95,0:51:26.74,Default,,0,0,0,,我把钱给这个人 他会给我重新填货\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I go give the man his money, he gives me more product to sell.
+Dialogue: 0,0:51:26.78,0:51:28.12,Default,,0,0,0,,-那人叫什么  -我不知道啊\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- What is the man's name - I-I don't know.
+Dialogue: 0,0:51:28.16,0:51:29.79,Default,,0,0,0,,-电话多少  -我不知道\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- What's his number - I don't know.
+Dialogue: 0,0:51:29.83,0:51:33.37,Default,,0,0,0,,我对天发誓真的不知道\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I swear to Christ, I don't know, okay
+Dialogue: 0,0:51:33.42,0:51:36.29,Default,,0,0,0,,他也是个中间人 但他提到过一个女的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Look, h-he's just a middleman, but I heard him talking
+Dialogue: 0,0:51:36.34,0:51:38.46,Default,,0,0,0,,这个生意背后是她在负责\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}about some woman who is in charge of this whole thing.
+Dialogue: 0,0:51:38.50,0:51:40.96,Default,,0,0,0,,-什么女人  -我真他妈不知道\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What woman - I-I don't fucking know.
+Dialogue: 0,0:51:41.01,0:51:42.88,Default,,0,0,0,,你说了半天一点有价值的都没有\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You are not giving me anything useful,
+Dialogue: 0,0:51:42.93,0:51:45.14,Default,,0,0,0,,-这对你很不利  -听我说\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- and that is not good for you. Okay, listen, listen.
+Dialogue: 0,0:51:45.18,0:51:47.14,Default,,0,0,0,,我外套口袋里有一部手机\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}In my jacket pocket, there's a phone.
+Dialogue: 0,0:51:47.18,0:51:48.60,Default,,0,0,0,,我的上家\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}The guy that I work for--
+Dialogue: 0,0:51:48.64,0:51:50.47,Default,,0,0,0,,他明晚会短信告诉我一个新地址\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}he will text me tomorrow with a new address.
+Dialogue: 0,0:51:50.52,0:51:53.31,Default,,0,0,0,,要是想找这个人 他明天晚上会在那里\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}If you want to find this dude, he will be there tomorrow.
+Dialogue: 0,0:51:58.73,0:52:00.19,Default,,0,0,0,,这种药你了解多少\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What do you know about this drug
+Dialogue: 0,0:52:00.23,0:52:02.28,Default,,0,0,0,,很少\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Not much.
+Dialogue: 0,0:52:02.32,0:52:05.45,Default,,0,0,0,,买药的人说 这种药提供了一种原始快感\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Uh, the people who buy it say that-that it's a primal high.
+Dialogue: 0,0:52:05.49,0:52:07.95,Default,,0,0,0,,吃了后感觉自己能飞檐走壁 只不过\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}It makes 'em feel like they can run through walls, except--
+Dialogue: 0,0:52:07.99,0:52:09.49,Default,,0,0,0,,只不过什么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Except what
+Dialogue: 0,0:52:09.54,0:52:11.66,Default,,0,0,0,,很显然 醒药的过程很痛苦\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Apparently, the hangover's brutal.
+Dialogue: 0,0:52:11.70,0:52:13.37,Default,,0,0,0,,是一种什么感觉呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Makes them feel like.
+Dialogue: 0,0:52:13.41,0:52:14.96,Default,,0,0,0,,就像是走在阳光下 皮肤都在\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}When they go out in the sun, it makes them feel like
+Dialogue: 0,0:52:15.00,0:52:16.96,Default,,0,0,0,,燃烧的感觉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}their skin is on fire.
+Dialogue: 0,0:52:17.00,0:52:19.00,Default,,0,0,0,,还有呢\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}W-What else
+Dialogue: 0,0:52:19.05,0:52:21.59,Default,,0,0,0,,我只知道这么多了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That's all I know.
+Dialogue: 0,0:52:21.63,0:52:23.34,Default,,0,0,0,,你自己有吃过吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You ever used it yourself
+Dialogue: 0,0:52:23.38,0:52:25.13,Default,,0,0,0,,-当然没有  -别撒谎\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- No way. - Don't lie to me!
+Dialogue: 0,0:52:25.18,0:52:27.43,Default,,0,0,0,,-我没撒谎  -你要是没戒干净\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- I'm not lying. - If you are not clean,
+Dialogue: 0,0:52:27.47,0:52:29.85,Default,,0,0,0,,必须现在告诉我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}you have to say it now.
+Dialogue: 0,0:52:29.89,0:52:31.93,Default,,0,0,0,,你看看我的口袋 好吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Look in my pocket, okay
+Dialogue: 0,0:52:32.89,0:52:35.10,Default,,0,0,0,,我裤子口袋 看一眼\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}My pants pocket, look inside, okay
+Dialogue: 0,0:52:35.14,0:52:37.35,Default,,0,0,0,,好的 好的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Okay. Okay. Shh.
+Dialogue: 0,0:52:40.48,0:52:43.28,Default,,0,0,0,,清醒三个月了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}See Three months.
+Dialogue: 0,0:52:43.32,0:52:45.99,Default,,0,0,0,,我连酒都没喝过 更别说吸毒了 我戒干净了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I haven't had a drink, much less a drug. I am clean.
+Dialogue: 0,0:52:46.03,0:52:49.37,Default,,0,0,0,,我也不想参与这种勾当 只是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Didn't mean to get mixed up in this shit, man. I just...
+Dialogue: 0,0:52:49.41,0:52:50.87,Default,,0,0,0,,我有个儿子\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I just have a...I have a son.
+Dialogue: 0,0:52:50.91,0:52:52.58,Default,,0,0,0,,我不想听你家的事\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I-I don't want to hear about your family.
+Dialogue: 0,0:52:52.62,0:52:54.37,Default,,0,0,0,,对 我只想赚点钱 我都没有\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah, I'm try-trying to make some money, and I can't
+Dialogue: 0,0:52:54.41,0:52:55.87,Default,,0,0,0,,-带他们出去吃饭的钱  -我不想听\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- even take 'em to dinner. - I don't want to hear about it.
+Dialogue: 0,0:52:55.92,0:52:56.92,Default,,0,0,0,,-我连公寓都付不起  -别告诉我\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- I can't get an apartment. - Please stop that!
+Dialogue: 0,0:52:56.96,0:52:58.00,Default,,0,0,0,,别让我说第二遍\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm not gonna say it again!
+Dialogue: 0,0:52:58.04,0:52:59.38,Default,,0,0,0,,你有孩子吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Do you have a kid
+Dialogue: 0,0:53:01.96,0:53:03.84,Default,,0,0,0,,有的话 你就会懂\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Then you know.
+Dialogue: 0,0:53:03.88,0:53:05.72,Default,,0,0,0,,你懂\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You know.
+Dialogue: 0,0:53:07.43,0:53:09.89,Default,,0,0,0,,我儿子就是我黑暗中的希望\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}That boy is my light in the dark.
+Dialogue: 0,0:53:09.93,0:53:12.35,Default,,0,0,0,,我还想再见到我儿子\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And I want to see him again.
+Dialogue: 0,0:53:12.39,0:53:13.93,Default,,0,0,0,,我很抱歉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}And I am so sorry
+Dialogue: 0,0:53:13.98,0:53:16.52,Default,,0,0,0,,卷进这种勾当中\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}that I got mixed up in all this mess, man.
+Dialogue: 0,0:53:16.56,0:53:18.73,Default,,0,0,0,,我只想让我孩子过得更好\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm-I'm just trying to take care of my kid.
+Dialogue: 0,0:53:18.77,0:53:21.40,Default,,0,0,0,,我也是\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}- So am I.
+Dialogue: 0,0:54:35.43,0:54:37.47,Default,,0,0,0,,这边走\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}This way.
+Dialogue: 0,0:54:50.28,0:54:54.07,Default,,0,0,0,,我把他从阳光下拉了出来 救了他一命\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I pulled him out of the sun before it was too late.
+Dialogue: 0,0:54:56.87,0:55:00.25,Default,,0,0,0,,做好心理准备 他的样子很惨\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You should brace yourself for what you're about to see.
+Dialogue: 0,0:55:45.04,0:55:46.38,Default,,0,0,0,,克莱尔\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Claire
+Dialogue: 0,0:55:51.59,0:55:54.22,Default,,0,0,0,,真的是你吗\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Is that really you
+Dialogue: 0,0:56:06.06,0:56:08.02,Default,,0,0,0,,对\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah.
+Dialogue: 0,0:56:08.07,0:56:11.07,Default,,0,0,0,,是的\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Yeah.
+Dialogue: 0,0:56:11.11,0:56:14.74,Default,,0,0,0,,皮特\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Pete.
+Dialogue: 0,0:56:23.58,0:56:26.25,Default,,0,0,0,,我来了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I'm here.
+Dialogue: 0,0:56:30.63,0:56:32.92,Default,,0,0,0,,想不到你来了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}I can't believe it's you.
+Dialogue: 0,0:56:35.01,0:56:37.51,Default,,0,0,0,,你看起来那么\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}You look so...
+Dialogue: 0,0:56:37.55,0:56:39.85,Default,,0,0,0,,怎么了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}What
+Dialogue: 0,0:56:39.89,0:56:41.89,Default,,0,0,0,,长大了\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}Grown-up.
+Dialogue: 0,0:57:57.01,0:58:04.05,华文中宋,,0,0,0,,{\fs13\b1}"Sweet Child O' Mine" by Guns N' Roses
+Dialogue: 0,0:58:43.93,0:58:47.43,Default,,0,0,0,,她的笑容对我来说\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ She's got a smile that it seems to me ♪
+Dialogue: 0,0:58:47.48,0:58:51.10,Default,,0,0,0,,能勾起童年的回忆\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ Reminds me of childhood memories ♪
+Dialogue: 0,0:58:51.15,0:58:53.81,Default,,0,0,0,,当时的一切都那么新鲜\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ Where everything was as fresh ♪
+Dialogue: 0,0:58:53.86,0:58:57.07,Default,,0,0,0,,如同蓝天般明快\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ As the bright blue sky ♪
+Dialogue: 0,0:58:59.28,0:59:02.49,Default,,0,0,0,,我偶尔会看看她的脸\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ Now and then when I see her face ♪
+Dialogue: 0,0:59:02.53,0:59:05.99,Default,,0,0,0,,体会那种特别的感觉\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ She takes me away to that special place ♪
+Dialogue: 0,0:59:06.04,0:59:08.25,Default,,0,0,0,,如果我盯着她看太久\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ And if I stare too long ♪
+Dialogue: 0,0:59:08.29,0:59:11.87,Default,,0,0,0,,可能会崩溃 大哭一场\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ I'd probably break down and cry ♪
+Dialogue: 0,0:59:16.71,0:59:18.01,Default,,0,0,0,,我可爱的孩子\N{\fn微软雅黑}{\b0}{\fs14}{\3c&H202020&}{\shad1}♪ Sweet child o' mine ♪
+
+
