@@ -1,0 +1,441 @@
+﻿[Script Info]
+;SrtEdit 6.2.2012.322
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1920
+PlayResY: 960
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 雅黑77-5,微软雅黑,77,&H00C8C8C8,&H0000FFFF,&H005A463C,&H00000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,5,134
+Style: Default,方正黑体_GBK,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,2,134
+Style: 微软雅黑,微软雅黑,20,&H00E7FAFE,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,8,10,10,10,1
+Style: 黑体,黑体,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,8,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:14.24,0:00:19.16,雅黑77-5,,0,0,0,,一年后
+Dialogue: 0,0:01:37.60,0:01:40.22,雅黑77-5,,0000,0000,0000,,哈基姆 我们明天把枪发下去\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Hakim, we'll need to distribute the guns tomorrow,{\r}
+Dialogue: 0,0:01:40.31,0:01:42.39,雅黑77-5,,0000,0000,0000,,你先看一下\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}and guard them for now.{\r}
+Dialogue: 0,0:01:48.40,0:01:50.15,雅黑77-5,,0000,0000,0000,,马可 麦迪 你俩留下来\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Marco, Medhi, you're staying.{\r}
+Dialogue: 0,0:01:50.24,0:01:53.03,雅黑77-5,,0000,0000,0000,,巴瑟姆会第一时间打给你\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Basem will call you first thing.{\r}
+Dialogue: 0,0:01:53.11,0:01:55.95,雅黑77-5,,0000,0000,0000,,我也留下 没问题\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'll stay too. Not a problem.{\r}
+Dialogue: 0,0:02:01.58,0:02:03.75,雅黑77-5,,0000,0000,0000,,离开这里\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Get the fuck out of here.{\r}
+Dialogue: 0,0:02:23.18,0:02:25.19,雅黑77-5,,0000,0000,0000,,学巴瑟姆叔叔那样 继续\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Do it like Uncle Basem. Go on.{\r}
+Dialogue: 0,0:02:25.23,0:02:27.81,雅黑77-5,,0000,0000,0000,,快点\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Let's go.{\r}
+Dialogue: 0,0:02:30.82,0:02:32.23,雅黑77-5,,0000,0000,0000,,干杯\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Cheers.{\r}
+Dialogue: 0,0:02:40.74,0:02:42.29,雅黑77-5,,0000,0000,0000,,你他妈干嘛呢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}The fuck are you doing?{\r}
+Dialogue: 0,0:02:42.37,0:02:44.45,雅黑77-5,,0000,0000,0000,,看这个\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Check this.{\r}
+Dialogue: 0,0:02:47.71,0:02:49.79,雅黑77-5,,0000,0000,0000,,能给放回去吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You putting it back together?{\r}
+Dialogue: 0,0:02:49.88,0:02:51.88,雅黑77-5,,0000,0000,0000,,才不要\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No? Don't think so. ...{\r}
+Dialogue: 0,0:03:09.19,0:03:11.15,雅黑77-5,,0000,0000,0000,,别动\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Stay seated.{\r}
+Dialogue: 0,0:03:25.83,0:03:27.46,雅黑77-5,,0000,0000,0000,,好了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Okay.{\r}
+Dialogue: 0,0:03:27.54,0:03:31.71,雅黑77-5,,0000,0000,0000,,我知道你们阿尔及利亚人很忙 很快就好\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I see you Algerians are busy so this will take only a few minutes.{\r}
+Dialogue: 0,0:03:52.23,0:03:55.65,雅黑77-5,,0000,0000,0000,,只有一个可以活着出去 明白吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}One of you can walk away. Okay?{\r}
+Dialogue: 0,0:03:58.36,0:04:00.70,雅黑77-5,,0000,0000,0000,,你可以走了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Off, you can go.{\r}
+Dialogue: 0,0:04:26.98,0:04:29.31,雅黑77-5,,0000,0000,0000,,谁卖你的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Who sold you this?{\r}
+Dialogue: 0,0:04:31.73,0:04:33.94,雅黑77-5,,0000,0000,0000,,不说 行\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No? Okay.{\r}
+Dialogue: 0,0:04:50.08,0:04:52.29,雅黑77-5,,0000,0000,0000,,麻烦吞了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Swallow, please.{\r}
+Dialogue: 0,0:05:05.68,0:05:08.56,雅黑77-5,,0000,0000,0000,,吞 听懂了吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Swallow. Yes?{\r}
+Dialogue: 0,0:05:20.03,0:05:21.99,雅黑77-5,,0000,0000,0000,,再一个\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Again, please.{\r}
+Dialogue: 0,0:05:34.75,0:05:36.13,雅黑77-5,,0000,0000,0000,,再来一个\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Just one more{\r}
+Dialogue: 0,0:05:42.88,0:05:44.34,雅黑77-5,,0000,0000,0000,,是了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Yes...{\r}
+Dialogue: 0,0:05:54.52,0:05:56.52,雅黑77-5,,0000,0000,0000,,没事的哈\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}It's okay. It's okay.{\r}
+Dialogue: 0,0:05:59.57,0:06:02.86,雅黑77-5,,0000,0000,0000,,问他知不知道谁卖你们的枪\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Ask him if he knows who sold you the guns.{\r}
+Dialogue: 0,0:06:02.95,0:06:07.37,雅黑77-5,,0000,0000,0000,,问不出答案 就开枪 我就放了你 我保证\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No answer, you shoot. You go free. I promise.{\r}
+Dialogue: 0,0:06:12.87,0:06:16.29,雅黑77-5,,0000,0000,0000,,我们什么都不知道 我发誓\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}We don't know anything...I swear we don't!{\r}
+Dialogue: 0,0:06:16.79,0:06:19.80,雅黑77-5,,0000,0000,0000,,那就开枪吧 三\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}So shoot. Three...{\r}
+Dialogue: 0,0:06:19.88,0:06:22.30,雅黑77-5,,0000,0000,0000,,二\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Two...{\r}
+Dialogue: 0,0:06:22.38,0:06:23.38,雅黑77-5,,0000,0000,0000,,一\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}One...{\r}
+Dialogue: 0,0:06:38.44,0:06:43.49,雅黑77-5,,0000,0000,0000,,听好 定规矩的是我 秘密不是个好东西\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Look, I'm here to make the rules now and secrets are a bad thing.{\r}
+Dialogue: 0,0:06:44.03,0:06:46.91,雅黑77-5,,0000,0000,0000,,特别 特别不好\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}A really very, very bad thing.{\r}
+Dialogue: 0,0:06:51.41,0:06:53.70,雅黑77-5,,0000,0000,0000,,去跟你巴瑟姆叔叔说\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Go tell Uncle Basem.{\r}
+Dialogue: 0,0:06:54.46,0:06:59.29,雅黑77-5,,0000,0000,0000,,跟他说 这话是科巴说的 明白吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Tell him Koba says so. Mm?{\r}
+Dialogue: 0,0:06:59.38,0:07:01.38,雅黑77-5,,0000,0000,0000,,去吧\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Go.{\r}
+Dialogue: 0,0:07:01.75,0:07:03.17,雅黑77-5,,0000,0000,0000,,去\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Go...{\r}
+Dialogue: 0,0:07:03.26,0:07:05.47,雅黑77-5,,0000,0000,0000,,去啊\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Go!{\r}
+Dialogue: 0,0:07:29.56,0:07:35.52,雅黑77-5,,0,0,0,,伊斯坦布尔
+Dialogue: 0,0:10:59.44,0:11:01.44,雅黑77-5,,0,0,0,,凯恩女士  阿卜杜拉·沙法克 已...
+Dialogue: 0,0:11:03.61,0:11:06.23,雅黑77-5,,0,0,0,,阿卜杜拉·沙法克 已死
+Dialogue: 0,0:11:52.12,0:11:55.66,雅黑77-5,,0,0,0,,亚历克斯·杜马尼\N杜马尼金融 首席执行官
+Dialogue: 0,0:11:56.94,0:11:59.49,雅黑77-5,,0000,0000,0000,,这是我的城市\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}This is my city.{\r}
+Dialogue: 0,0:12:05.83,0:12:07.87,雅黑77-5,,0000,0000,0000,,这是我的城市\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}This is my city.{\r}
+Dialogue: 0,0:12:10.66,0:12:12.62,雅黑77-5,,0000,0000,0000,,这是我的城市\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}This is my city.{\r}
+Dialogue: 0,0:12:23.72,0:12:28.43,雅黑77-5,,0000,0000,0000,,这是我的城市 是生我养我的地方\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}This is my city. I was born on these streets. They're inside me.{\r}
+Dialogue: 0,0:12:29.22,0:12:31.89,雅黑77-5,,0000,0000,0000,,我见证它随着时代变迁\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I've seen them change from year to year{\r}
+Dialogue: 0,0:12:31.98,0:12:34.73,雅黑77-5,,0000,0000,0000,,熟知城市的命脉 因为它就在这里\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}and I know this city's heartbeat because it's here.{\r}
+Dialogue: 0,0:12:34.81,0:12:36.90,雅黑77-5,,0000,0000,0000,,与我是一体\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I feel it.{\r}
+Dialogue: 0,0:12:36.98,0:12:40.61,雅黑77-5,,0000,0000,0000,,你的创业公司需要融1亿美元 对吧\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Your startup is looking for 100 million.{\r}
+Dialogue: 0,0:12:40.69,0:12:42.57,雅黑77-5,,0000,0000,0000,,我的竞争对手也许可以出资\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}My competitors will offer you the moon.{\r}
+Dialogue: 0,0:12:42.65,0:12:44.45,雅黑77-5,,0000,0000,0000,,有些人会扔个仨瓜俩枣\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Some will throw in a few stars{\r}
+Dialogue: 0,0:12:44.53,0:12:48.24,雅黑77-5,,0000,0000,0000,,但我是唯一一个会全心实意帮你的人\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}but I'm the only one that can join this...to this.{\r}
+Dialogue: 0,0:12:49.74,0:12:53.62,雅黑77-5,,0000,0000,0000,,再加上 2亿入场费\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Plus...a buy-in of 200 million.{\r}
+Dialogue: 0,0:12:55.17,0:12:57.38,雅黑77-5,,0000,0000,0000,,感谢您的信任\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Thank you for your trust.{\r}
+Dialogue: 0,0:12:57.46,0:12:59.25,雅黑77-5,,0000,0000,0000,,谢谢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Thank you.{\r}
+Dialogue: 0,0:13:08.14,0:13:11.18,雅黑77-5,,0000,0000,0000,,失陪一下 先随便喝点什么好吧\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}2 minutes. Help yourselves to drinks, yeah?{\r}
+Dialogue: 0,0:13:15.15,0:13:17.15,雅黑77-5,,0000,0000,0000,,我到早了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'm early.{\r}
+Dialogue: 0,0:13:22.44,0:13:26.49,雅黑77-5,,0000,0000,0000,,阿卜杜拉·沙法克 我客户 昨晚在土耳其被杀\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Abdullah Shafak, one of my clients, was killed in Turkey last night.{\r}
+Dialogue: 0,0:13:26.57,0:13:28.07,雅黑77-5,,0000,0000,0000,,你知道吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Were you aware?{\r}
+Dialogue: 0,0:13:28.16,0:13:31.16,雅黑77-5,,0000,0000,0000,,你帮沙法克洗的2亿美元不是他的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}The 200 million you laundered for Shafak wasn't his to give{\r}
+Dialogue: 0,0:13:31.24,0:13:33.50,雅黑77-5,,0000,0000,0000,,在别处投资的钱也不是你的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}nor was it yours to invest elsewhere.{\r}
+Dialogue: 0,0:13:33.58,0:13:37.71,雅黑77-5,,0000,0000,0000,,我们投资人想收回来 有问题吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Our investors would like it back. Does it give you any trouble?{\r}
+Dialogue: 0,0:13:40.09,0:13:42.30,雅黑77-5,,0000,0000,0000,,没有什么我处理不了的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Nothing I can't handle.{\r}
+Dialogue: 0,0:13:44.34,0:13:49.76,雅黑77-5,,0000,0000,0000,,你担心你新朋友会发现他们到底在跟谁做生意\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You re worried your new friends will see who they're dealing with.{\r}
+Dialogue: 0,0:13:50.64,0:13:56.60,雅黑77-5,,0000,0000,0000,,他们是跟杜马尼金融做生意 钱都是干干净净的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}They're dealing with Dumani Finances. Clean funds all the way.{\r}
+Dialogue: 0,0:13:56.69,0:13:59.65,雅黑77-5,,0000,0000,0000,,-无知是福  -我也不喜欢惊喜\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Ignorance is bliss. - And I don't like surprises,{\r}
+Dialogue: 0,0:13:59.73,0:14:03.90,雅黑77-5,,0000,0000,0000,,所以下次要是出这种事 不妨先跟我打声招呼\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}so next time something like this needs to happen, how about you tell me?{\r}
+Dialogue: 0,0:14:04.40,0:14:06.07,雅黑77-5,,0000,0000,0000,,合情合理\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Reasonable.{\r}
+Dialogue: 0,0:14:06.15,0:14:07.91,雅黑77-5,,0000,0000,0000,,记住了 所有人都以为\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Remember though, everyone thought{\r}
+Dialogue: 0,0:14:07.99,0:14:10.83,雅黑77-5,,0000,0000,0000,,华莱土会把你拖下水\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}that the Wallaces would take you down with them.{\r}
+Dialogue: 0,0:14:10.91,0:14:14.25,雅黑77-5,,0000,0000,0000,,我从没怀疑过你\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I never doubted you.{\r}
+Dialogue: 0,0:14:16.41,0:14:18.25,雅黑77-5,,0000,0000,0000,,我记得清清楚楚\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I remember everything.{\r}
+Dialogue: 0,0:14:27.55,0:14:30.51,雅黑77-5,,0000,0000,0000,,转完账跟我说一声\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Let me know when you've transferred the funds.{\r}
+Dialogue: 0,0:14:53.37,0:14:55.49,雅黑77-5,,0000,0000,0000,,亚历克斯\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Alex...{\r}
+Dialogue: 0,0:14:56.91,0:14:59.96,雅黑77-5,,0000,0000,0000,,亚历克斯 救我\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Alex...Help me.{\r}
+Dialogue: 0,0:15:12.18,0:15:14.31,雅黑77-5,,0000,0000,0000,,不好意思\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Oh, excuse me.{\r}
+Dialogue: 0,0:16:24.67,0:16:26.63,雅黑77-5,,0000,0000,0000,,你能搞定吗 爱德\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Can you fix this, Ed?{\r}
+Dialogue: 0,0:16:27.63,0:16:30.17,雅黑77-5,,0000,0000,0000,,你不觉得现在才问有点晚了吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}It's a bit late for that, don't you think?{\r}
+Dialogue: 0,0:16:30.26,0:16:32.42,雅黑77-5,,0000,0000,0000,,你能搞定吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Can you fix it?{\r}
+Dialogue: 0,0:16:48.19,0:16:50.78,雅黑77-5,,0000,0000,0000,,感谢各位出席\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I appreciate your presence here{\r}
+Dialogue: 0,0:16:50.86,0:16:54.57,雅黑77-5,,0000,0000,0000,,这样我们就能解决这个不必要的麻烦了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}so that we can sort out this unnecessary mess.{\r}
+Dialogue: 0,0:16:54.66,0:16:56.66,雅黑77-5,,0000,0000,0000,,这鬼地方谁选的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Who chose this shithole?{\r}
+Dialogue: 0,0:16:57.74,0:17:00.74,雅黑77-5,,0000,0000,0000,,你们应该都知道他是谁了吧\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I think you all know his name by now.{\r}
+Dialogue: 0,0:17:03.83,0:17:06.04,雅黑77-5,,0000,0000,0000,,科巴\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Koba.{\r}
+Dialogue: 0,0:17:06.13,0:17:09.55,雅黑77-5,,0000,0000,0000,,别忘了他被邀请来伦敦的原因\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Don't forget why he was invited to London.{\r}
+Dialogue: 0,0:17:09.63,0:17:12.38,雅黑77-5,,0000,0000,0000,,如果不是尸横遍野\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}If the bodies were not piling up on the streets,{\r}
+Dialogue: 0,0:17:14.22,0:17:16.51,雅黑77-5,,0000,0000,0000,,但凡你们听进去警告\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}if you would have listened to the warnings,{\r}
+Dialogue: 0,0:17:16.60,0:17:18.89,雅黑77-5,,0000,0000,0000,,就没必要让科巴出马\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}there would be no need for Koba.{\r}
+Dialogue: 0,0:17:19.97,0:17:22.06,雅黑77-5,,0000,0000,0000,,我已经跟他们保证过\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I've given them my word.{\r}
+Dialogue: 0,0:17:22.89,0:17:25.85,雅黑77-5,,0000,0000,0000,,投资者们需要秩序\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}The Investors asked for order{\r}
+Dialogue: 0,0:17:27.02,0:17:29.02,雅黑77-5,,0000,0000,0000,,而我要给他们的就是秩序\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}and order is what I'm giving them.{\r}
+Dialogue: 0,0:17:31.19,0:17:34.95,雅黑77-5,,0000,0000,0000,,我希望你们都能遵守规矩\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I expect you all to fall in line.{\r}
+Dialogue: 0,0:18:11.73,0:18:13.73,雅黑77-5,,0000,0000,0000,,麻烦站起来好吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Would you mind standing, please?{\r}
+Dialogue: 0,0:18:21.08,0:18:23.58,雅黑77-5,,0000,0000,0000,,有些人也许认识苏达尼先生\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Some of you may know Mr Soudani.{\r}
+Dialogue: 0,0:18:23.66,0:18:25.54,雅黑77-5,,0000,0000,0000,,之前这桌上没出现过这种东西\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You haven't seen them round this table{\r}
+Dialogue: 0,0:18:25.62,0:18:29.00,雅黑77-5,,0000,0000,0000,,但今天他会给你们解惑\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}but today he's here to help.{\r}
+Dialogue: 0,0:18:29.08,0:18:31.09,雅黑77-5,,0000,0000,0000,,谁卖给你的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Who sold you this?{\r}
+Dialogue: 0,0:18:34.46,0:18:36.63,雅黑77-5,,0000,0000,0000,,双方没见过面\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}It was a blind deal.{\r}
+Dialogue: 0,0:18:36.72,0:18:39.39,雅黑77-5,,0000,0000,0000,,真刺激 说说看\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Ooh! Exciting. Tell me about that{\r}
+Dialogue: 0,0:18:40.10,0:18:45.98,雅黑77-5,,0000,0000,0000,,不知道姓名 没打过照面 国外付款\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Er...No names, no faces. And er...payment was off-shore.{\r}
+Dialogue: 0,0:18:46.06,0:18:48.39,雅黑77-5,,0000,0000,0000,,好 非常好\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Good. Very good.{\r}
+Dialogue: 0,0:18:48.48,0:18:52.69,雅黑77-5,,0000,0000,0000,,我要想糊弄阿菲迪先生 也会这么说\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Exactly what I would do, if I wanted to insult Mr Afridi.{\r}
+Dialogue: 0,0:18:53.78,0:18:56.82,雅黑77-5,,0000,0000,0000,,要我想糊弄自已\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}If I wanted to make a fool of me.{\r}
+Dialogue: 0,0:18:56.90,0:18:58.99,雅黑77-5,,0000,0000,0000,,也会这么说\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}That's what I would do.{\r}
+Dialogue: 0,0:19:01.03,0:19:03.03,雅黑77-5,,0000,0000,0000,,老板交待过\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Boss here said this.{\r}
+Dialogue: 0,0:19:04.29,0:19:08.46,雅黑77-5,,0000,0000,0000,,除了我 这个城市不许倒卖枪支\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Nobody sells guns in this city except me.{\r}
+Dialogue: 0,0:19:13.09,0:19:16.42,雅黑77-5,,0000,0000,0000,,是哪个字不清楚 是哪点不理解\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Which bit of that was fuzzy? Which bit didn't add up?{\r}
+Dialogue: 0,0:19:19.26,0:19:23.39,雅黑77-5,,0000,0000,0000,,你欠我 欠阿菲迪先生一条命 明白吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You owe a debt to myself, to Mr Afridi. Yes?{\r}
+Dialogue: 0,0:19:31.10,0:19:33.61,雅黑77-5,,0000,0000,0000,,但那是之后的事\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}But that's for later.{\r}
+Dialogue: 0,0:19:38.74,0:19:41.41,雅黑77-5,,0000,0000,0000,,生意要讲规矩\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Business has rules.{\r}
+Dialogue: 0,0:19:42.91,0:19:44.99,雅黑77-5,,0000,0000,0000,,你们也遵守了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I see they are followed.{\r}
+Dialogue: 0,0:19:46.70,0:19:51.96,雅黑77-5,,0000,0000,0000,,这位朋友犯了错 他自己也清楚\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Our friend here made a mistake. He knows that.{\r}
+Dialogue: 0,0:19:52.04,0:19:55.04,雅黑77-5,,0000,0000,0000,,不管谁卖的枪 都是不守规矩\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}But whoever sold these guns doesn't want rules.{\r}
+Dialogue: 0,0:19:55.13,0:19:57.13,雅黑77-5,,0000,0000,0000,,他们觉得自己很特别\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}They think they are special.{\r}
+Dialogue: 0,0:19:57.59,0:20:01.38,雅黑77-5,,0000,0000,0000,,要我跟你们讲讲还有谁觉得自己很特别吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Shall I tell you who else thought they were special?{\r}
+Dialogue: 0,0:20:01.47,0:20:03.43,雅黑77-5,,0000,0000,0000,,芬恩·华莱士\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Finn Wallace.{\r}
+Dialogue: 0,0:20:03.97,0:20:06.06,雅黑77-5,,0000,0000,0000,,他那个疯儿子\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}His lunatic son.{\r}
+Dialogue: 0,0:20:07.22,0:20:09.60,雅黑77-5,,0000,0000,0000,,他们现在还坐在这里吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Do they sit with us now?{\r}
+Dialogue: 0,0:20:12.31,0:20:15.48,雅黑77-5,,0000,0000,0000,,爱德·杜马尼知道我在说什么\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Ed Dumani knows what I'm talking about.{\r}
+Dialogue: 0,0:20:15.57,0:20:18.78,雅黑77-5,,0000,0000,0000,,他那会儿犯过错吗 也许\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Did he make mistakes back then? Maybe so.{\r}
+Dialogue: 0,0:20:19.99,0:20:23.11,雅黑77-5,,0000,0000,0000,,但他清楚必须做出改变\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}But he understands things had to change.{\r}
+Dialogue: 0,0:20:25.12,0:20:27.74,雅黑77-5,,0000,0000,0000,,你还有未来 对吧 爱德华\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}There's a future for you, right, Edward?{\r}
+Dialogue: 0,0:20:27.83,0:20:30.50,雅黑77-5,,0000,0000,0000,,还有你儿子亚历克斯\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}And your son, Alex.{\r}
+Dialogue: 0,0:20:35.13,0:20:38.42,雅黑77-5,,0000,0000,0000,,有人不安分想挑起战争\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Somebody here wants to start a war.{\r}
+Dialogue: 0,0:20:39.09,0:20:40.84,雅黑77-5,,0000,0000,0000,,注定要失败的一场仗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}One they cannot win.{\r}
+Dialogue: 0,0:20:40.92,0:20:43.47,雅黑77-5,,0000,0000,0000,,我向阿菲迪先生保证过\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I gave Mr Afridi my word.{\r}
+Dialogue: 0,0:20:45.76,0:20:47.97,雅黑77-5,,0000,0000,0000,,我会找出你\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I will find you.{\r}
+Dialogue: 0,0:20:50.39,0:20:54.48,雅黑77-5,,0000,0000,0000,,而你会付出代价\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}And you will make amends.{\r}
+Dialogue: 0,0:21:24.93,0:21:27.85,雅黑77-5,,0000,0000,0000,,他完全不懂这座城市\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}He doesn't know the first thing about this city.{\r}
+Dialogue: 0,0:21:27.93,0:21:29.97,雅黑77-5,,0000,0000,0000,,你觉得我为什么选他\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Why do you think I chose him?{\r}
+Dialogue: 0,0:21:30.06,0:21:32.10,雅黑77-5,,0000,0000,0000,,没有隶属关系\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No affiliations.{\r}
+Dialogue: 0,0:21:32.77,0:21:34.94,雅黑77-5,,0000,0000,0000,,-他就自己一人  -他是个疯子\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- He's a clean skin. - He's a wind-up.{\r}
+Dialogue: 0,0:21:35.02,0:21:38.27,雅黑77-5,,0000,0000,0000,,去找出谁卖的枪\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Help me find out who's behind the guns.{\r}
+Dialogue: 0,0:21:40.90,0:21:46.66,雅黑77-5,,0000,0000,0000,,这些人还是听爱德·杜马尼的话的 对不对\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}These people still listen to Ed Dumani...don't they?{\r}
+Dialogue: 0,0:22:11.18,0:22:14.60,雅黑77-5,,0000,0000,0000,,太惨了 他家人在里面\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Such a tragedy. His family is waiting.{\r}
+Dialogue: 0,0:22:19.06,0:22:22.82,雅黑77-5,,0000,0000,0000,,真主保佑 马可是个好孩子\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Blessings be upon you. Marco was a good boy.{\r}
+Dialogue: 0,0:22:28.37,0:22:31.74,雅黑77-5,,0000,0000,0000,,法兹 帮我把这个拿下去 法兹\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Faz, help me get this down...Faz?{\r}
+Dialogue: 0,0:22:58.06,0:23:00.48,雅黑77-5,,0000,0000,0000,,他们说是车祸\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}They're saying it's a car accident?{\r}
+Dialogue: 0,0:23:03.07,0:23:05.40,雅黑77-5,,0000,0000,0000,,其实不是 对吧\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Wasn't that, was it?{\r}
+Dialogue: 0,0:23:32.60,0:23:34.60,雅黑77-5,,0000,0000,0000,,法兹\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Faz.{\r}
+Dialogue: 0,0:23:38.69,0:23:41.27,雅黑77-5,,0000,0000,0000,,到底出什么事了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What's going on? Huh? What?{\r}
+Dialogue: 0,0:23:42.77,0:23:45.90,雅黑77-5,,0000,0000,0000,,-你早就知道对不对  -你说什么呢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- You knew, innit? - What you talking about?{\r}
+Dialogue: 0,0:23:45.98,0:23:49.45,雅黑77-5,,0000,0000,0000,,你早知道科巴要去 所以你才不想我待在那儿\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You knew Koba was coming. That's why you didn't want me there.{\r}
+Dialogue: 0,0:23:49.53,0:23:52.66,雅黑77-5,,0000,0000,0000,,行 那咱们去跟马可小女儿说到底怎么回事\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}All right. Let's go and tell Marco's little daughters what happened.{\r}
+Dialogue: 0,0:23:52.74,0:23:56.54,雅黑77-5,,0000,0000,0000,,法兹为了保命把马可的脑袋打爆了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}That big man Faz blew Marco's fucking brains out to save his own skin.{\r}
+Dialogue: 0,0:23:58.12,0:24:02.33,雅黑77-5,,0000,0000,0000,,看我 巴瑟姆不知道那天会发生什么\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Look at me. Basem doesn't know what day it is.{\r}
+Dialogue: 0,0:24:02.42,0:24:05.17,雅黑77-5,,0000,0000,0000,,他他妈的给我们带沟里去了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}He's got us in the wrong fucking sight.{\r}
+Dialogue: 0,0:24:07.42,0:24:09.42,雅黑77-5,,0000,0000,0000,,现在我们得替那个阿尔巴尼亚混蛋圆谎\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Now we got to cover for that Albanian prick.{\r}
+Dialogue: 0,0:24:09.88,0:24:12.18,雅黑77-5,,0000,0000,0000,,我们刚到\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}We just arrived.{\r}
+Dialogue: 0,0:24:12.26,0:24:14.80,雅黑77-5,,0000,0000,0000,,是 搬家公司的人也在\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Yeah, the removal guys are here too.{\r}
+Dialogue: 0,0:24:14.89,0:24:17.43,雅黑77-5,,0000,0000,0000,,好 今晚过来吧 我们挺想见你的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Okay, come tonight. We'd love to see you.{\r}
+Dialogue: 0,0:24:18.64,0:24:20.85,雅黑77-5,,0000,0000,0000,,没问题 不会\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No problem, no.{\r}
+Dialogue: 0,0:24:23.77,0:24:26.48,雅黑77-5,,0000,0000,0000,,别只穿袜子就在楼梯上跑 会滑\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No socks on the shiny stairs.{\r}
+Dialogue: 0,0:24:26.57,0:24:28.57,雅黑77-5,,0000,0000,0000,,我们刚到\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}We just arrived.{\r}
+Dialogue: 0,0:24:33.45,0:24:36.74,雅黑77-5,,0000,0000,0000,,萨兰达打来的 他们今天下午过来\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}From Saranda. They're coming over this afternoon.{\r}
+Dialogue: 0,0:24:36.83,0:24:38.49,雅黑77-5,,0000,0000,0000,,之前不是说明天\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}But we said tomorrow, right?{\r}
+Dialogue: 0,0:24:38.58,0:24:42.46,雅黑77-5,,0000,0000,0000,,那我也不能不让来啊 她还挺期待的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What, so I say don't come? She's too excited.{\r}
+Dialogue: 0,0:24:42.54,0:24:44.54,雅黑77-5,,0000,0000,0000,,扎米尔会带吉他过来\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Zamir's bringing his guitar.{\r}
+Dialogue: 0,0:24:46.96,0:24:48.96,雅黑77-5,,0000,0000,0000,,亲爱的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}My sweetheart.{\r}
+Dialogue: 0,0:25:20.70,0:25:22.71,雅黑77-5,,0000,0000,0000,,我嫂子做的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}My sister-in-law made that.{\r}
+Dialogue: 0,0:25:24.25,0:25:26.25,雅黑77-5,,0000,0000,0000,,谢谢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Thank you.{\r}
+Dialogue: 0,0:25:31.34,0:25:33.22,雅黑77-5,,0000,0000,0000,,房子不错\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Nice place.{\r}
+Dialogue: 0,0:25:33.30,0:25:35.30,雅黑77-5,,0000,0000,0000,,谢谢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Thank you.{\r}
+Dialogue: 0,0:25:38.22,0:25:41.52,雅黑77-5,,0000,0000,0000,,巴瑟姆掩饰的挺好\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Basem did a fantastic cover-up job.{\r}
+Dialogue: 0,0:25:53.49,0:25:56.32,雅黑77-5,,0000,0000,0000,,你什么意思\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What are you talking about?{\r}
+Dialogue: 0,0:25:56.41,0:26:01.99,雅黑77-5,,0000,0000,0000,,卢安 我知道枪是你卖给他的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Luan, I know you sold him those guns.{\r}
+Dialogue: 0,0:26:02.70,0:26:05.58,雅黑77-5,,0000,0000,0000,,-那你是代表谁来的呢  -我是来帮你的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- And who am I talking to? - I'm here to help you.{\r}
+Dialogue: 0,0:26:06.63,0:26:10.38,雅黑77-5,,0000,0000,0000,,帮我 还是帮你自己\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Help me... or yourself?{\r}
+Dialogue: 0,0:26:11.96,0:26:13.67,雅黑77-5,,0000,0000,0000,,你选边站的速度太快了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You choose sides so fast.{\r}
+Dialogue: 0,0:26:13.76,0:26:15.80,雅黑77-5,,0000,0000,0000,,以前从没有用到过这种武器\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}That kind of weaponry is unprecedented.{\r}
+Dialogue: 0,0:26:15.88,0:26:17.89,雅黑77-5,,0000,0000,0000,,我搭档需要自保\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}My partners need to defend themselves.{\r}
+Dialogue: 0,0:26:19.89,0:26:21.39,雅黑77-5,,0000,0000,0000,,我要自保\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I need to defend myself.{\r}
+Dialogue: 0,0:26:21.47,0:26:23.27,雅黑77-5,,0000,0000,0000,,所以就要策划战争\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}So you're plotting a war?{\r}
+Dialogue: 0,0:26:23.31,0:26:28.19,雅黑77-5,,0000,0000,0000,,我清楚现在局势有多不稳定 但这对大家生意都没好外\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I know how volatile things are right now but that's not good for anyone's business.{\r}
+Dialogue: 0,0:26:30.86,0:26:33.53,雅黑77-5,,0000,0000,0000,,我现在做的是海洛因生意\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Heroin is my business now.{\r}
+Dialogue: 0,0:26:35.07,0:26:38.03,雅黑77-5,,0000,0000,0000,,我一直只用自己的供应商\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I've always used my own suppliers.{\r}
+Dialogue: 0,0:26:38.11,0:26:41.95,雅黑77-5,,0000,0000,0000,,家乡那些值得信赖 效率高的人\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Trusted, productive people from back home.{\r}
+Dialogue: 0,0:26:42.04,0:26:48.33,雅黑77-5,,0000,0000,0000,,现在科巴要我从阿西夫那里进货\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Now Koba wants me to buy from Asif.{\r}
+Dialogue: 0,0:26:49.46,0:26:51.46,雅黑77-5,,0000,0000,0000,,只能从他那儿进\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Only him.{\r}
+Dialogue: 0,0:26:53.26,0:26:55.76,雅黑77-5,,0000,0000,0000,,你知道为什么吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Do you know why?{\r}
+Dialogue: 0,0:26:55.84,0:26:58.01,雅黑77-5,,0000,0000,0000,,因为这样他就能控制我\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}So he can control me.{\r}
+Dialogue: 0,0:26:58.09,0:27:00.09,雅黑77-5,,0000,0000,0000,,我不会听他的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I won't do it.{\r}
+Dialogue: 0,0:27:02.35,0:27:04.81,雅黑77-5,,0000,0000,0000,,因为下次他再来\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Because next time he's gonna come around,{\r}
+Dialogue: 0,0:27:05.48,0:27:09.35,雅黑77-5,,0000,0000,0000,,要的就不是我的货了 而是分我的钱\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}it's not my supply he'll want. It's my profit.{\r}
+Dialogue: 0,0:27:10.61,0:27:13.73,雅黑77-5,,0000,0000,0000,,他的鞋已经踩我脖子上了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}And he already got his boot on my neck.{\r}
+Dialogue: 0,0:27:16.36,0:27:19.24,雅黑77-5,,0000,0000,0000,,这个城市里 生意不是\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}This is not how we do business{\r}
+Dialogue: 0,0:27:19.32,0:27:21.45,雅黑77-5,,0000,0000,0000,,这么做的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}in this city.{\r}
+Dialogue: 0,0:27:23.74,0:27:25.58,雅黑77-5,,0000,0000,0000,,要我给你打保票呢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What if I offer you reassurances?{\r}
+Dialogue: 0,0:27:25.66,0:27:27.66,雅黑77-5,,0000,0000,0000,,帮科巴打保票\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}From Koba?{\r}
+Dialogue: 0,0:27:28.21,0:27:30.46,雅黑77-5,,0000,0000,0000,,-扯淡  -帮投资者\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Bullshit. - From the Investors.{\r}
+Dialogue: 0,0:27:30.54,0:27:32.67,雅黑77-5,,0000,0000,0000,,我才不会像其他人一样摇尾乞怜\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'm not gonna lay down and beg like the others.{\r}
+Dialogue: 0,0:27:32.71,0:27:35.13,雅黑77-5,,0000,0000,0000,,那你就得有所回报 卢安\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Then you're going to have to give something in return, Luan.{\r}
+Dialogue: 0,0:27:35.21,0:27:37.84,雅黑77-5,,0000,0000,0000,,枪是谁的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Who supplied those guns?{\r}
+Dialogue: 0,0:27:41.80,0:27:43.80,雅黑77-5,,0000,0000,0000,,先说重要的事\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}First things first.{\r}
+Dialogue: 0,0:27:45.27,0:27:48.27,雅黑77-5,,0000,0000,0000,,你去跟投资者谈 我要得到他们的保证\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Talk to the Investors. I need guarantees.{\r}
+Dialogue: 0,0:27:50.81,0:27:52.81,雅黑77-5,,0000,0000,0000,,很高兴你肯妥协\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'm glad you're listening.{\r}
+Dialogue: 0,0:27:55.44,0:27:57.44,雅黑77-5,,0000,0000,0000,,想想这一切\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Thinking about all this.{\r}
+Dialogue: 0,0:27:59.99,0:28:01.95,雅黑77-5,,0000,0000,0000,,这一切就是我战斗的原因\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}All this is why I fight.{\r}
+Dialogue: 0,0:28:49.87,0:28:51.87,雅黑77-5,,0000,0000,0000,,怎么回事 艾略特\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What's going on Elliot?{\r}
+Dialogue: 0,0:28:54.00,0:28:57.38,雅黑77-5,,0000,0000,0000,,你应该在沙法克先生到的时候干掉他\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You were told to hit Mr Shafak on arrival in his car.{\r}
+Dialogue: 0,0:28:59.59,0:29:04.51,雅黑77-5,,0000,0000,0000,,你迟到了 还喝醉了 还给我们带来了不必要的关注\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You were late. You were drunk. You drew undue attention to us.{\r}
+Dialogue: 0,0:29:05.55,0:29:09.89,雅黑77-5,,0000,0000,0000,,我们负责筹划 你负责按计划行事\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}We plan these things. You follow the plan.{\r}
+Dialogue: 0,0:29:09.98,0:29:11.93,雅黑77-5,,0000,0000,0000,,要不然后果自负\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Or there are consequences.{\r}
+Dialogue: 0,0:29:15.56,0:29:19.32,雅黑77-5,,0000,0000,0000,,你跟你父亲都属于我们 艾略特\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}We own you and your father, Elliot.{\r}
+Dialogue: 0,0:29:19.40,0:29:21.53,雅黑77-5,,0000,0000,0000,,有什么问题吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Do you have a problem with that?{\r}
+Dialogue: 0,0:29:24.41,0:29:25.78,雅黑77-5,,0000,0000,0000,,没\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No.{\r}
+Dialogue: 0,0:29:28.66,0:29:30.66,雅黑77-5,,0000,0000,0000,,那就行\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Good.{\r}
+Dialogue: 0,0:29:31.20,0:29:34.08,雅黑77-5,,0000,0000,0000,,钱已经转去以前的那个账号了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}The fee has been released to the usual accounts.{\r}
+Dialogue: 0,0:29:34.17,0:29:36.17,雅黑77-5,,0000,0000,0000,,稍等\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Wait one second...{\r}
+Dialogue: 0,0:29:41.59,0:29:43.92,雅黑77-5,,0000,0000,0000,,你收到行程单了吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Did you receive the itinerary?{\r}
+Dialogue: 0,0:29:44.38,0:29:45.55,雅黑77-5,,0,0,0,,点击打开
+Dialogue: 0,0:29:45.67,0:29:48.51,雅黑77-5,,0,0,0,,伦敦 希思罗机场 头等舱
+Dialogue: 0,0:29:48.72,0:29:51.10,雅黑77-5,,0000,0000,0000,,很久了 不是吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Been a while, hasn't it?{\r}
+Dialogue: 0,0:29:51.18,0:29:53.60,雅黑77-5,,0000,0000,0000,,我会告知我的人你的到达信息\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I've let our contacts know you'll be arriving.{\r}
+Dialogue: 0,0:29:54.90,0:29:57.98,雅黑77-5,,0000,0000,0000,,自打你上次离开后 事情的顺序已经发生了变化\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}The order of things has shifted since you were last there.{\r}
+Dialogue: 0,0:29:59.32,0:30:01.32,雅黑77-5,,0000,0000,0000,,艾略特\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Elliot...{\r}
+Dialogue: 0,0:30:01.40,0:30:05.20,雅黑77-5,,0000,0000,0000,,我知道你离开的时候 一切都很难\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I know when you left it was difficult{\r}
+Dialogue: 0,0:30:05.28,0:30:07.32,雅黑77-5,,0000,0000,0000,,但不要被过去困住自己\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}but don't get distracted by the past.{\r}
+Dialogue: 0,0:30:32.31,0:30:34.31,雅黑77-5,,0000,0000,0000,,请在这里签字\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Signature there.{\r}
+Dialogue: 0,0:30:37.02,0:30:41.48,雅黑77-5,,0000,0000,0000,,不要告诉我家里人 懂吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Don't tell my family anything. Understood?{\r}
+Dialogue: 0,0:30:48.62,0:30:50.62,雅黑77-5,,0000,0000,0000,,警察杀手\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Cop killer!{\r}
+Dialogue: 0,0:31:10.18,0:31:12.43,雅黑77-5,,0000,0000,0000,,意式浓缩 谢谢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Espresso, please.{\r}
+Dialogue: 0,0:31:15.14,0:31:19.52,雅黑77-5,,0000,0000,0000,,所以是卢安在倒卖枪支 我一点都不意外\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}So Luan is distributing the guns. I wish I could say I was surprised.{\r}
+Dialogue: 0,0:31:19.60,0:31:22.77,雅黑77-5,,0000,0000,0000,,只是一个交易 他需要保护自己的生意\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}It's a play for Ieverage. He needs peace to run his business.{\r}
+Dialogue: 0,0:31:22.86,0:31:26.61,雅黑77-5,,0000,0000,0000,,他想留住自己的进货渠道 他不想从你这里进货\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}He wants to maintain his own supply. He doesn't want to buy from you.{\r}
+Dialogue: 0,0:31:26.70,0:31:29.20,雅黑77-5,,0000,0000,0000,,-价格很好啊  -现在是\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- It's a good price. - For now.{\r}
+Dialogue: 0,0:31:29.28,0:31:31.66,雅黑77-5,,0000,0000,0000,,但卢安也不蠢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}But Luan's not stupid.{\r}
+Dialogue: 0,0:31:31.74,0:31:33.62,雅黑77-5,,0000,0000,0000,,他现在在这个镇上有很大的影响力\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}He has a major stake in this town now.{\r}
+Dialogue: 0,0:31:33.70,0:31:36.83,雅黑77-5,,0000,0000,0000,,人手 盟友 他不容小觑\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Manpower. Allies. He's not to be underestimated.{\r}
+Dialogue: 0,0:31:37.79,0:31:39.58,雅黑77-5,,0000,0000,0000,,怎么能拿下他\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What would he settle for?{\r}
+Dialogue: 0,0:31:39.67,0:31:42.21,雅黑77-5,,0000,0000,0000,,投资人的保证\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}A guarantee from the Investors.{\r}
+Dialogue: 0,0:31:42.29,0:31:47.42,雅黑77-5,,0000,0000,0000,,用他的忠诚来换取一定程度的独立\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}A degree of independence in return for his loyalty.{\r}
+Dialogue: 0,0:31:47.51,0:31:51.59,雅黑77-5,,0000,0000,0000,,给了他这些 他就能停止枪支买卖了吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}And all this nonsense with guns...stops?{\r}
+Dialogue: 0,0:31:51.68,0:31:53.76,雅黑77-5,,0000,0000,0000,,他还会告诉我们他的供货商\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}And he will tell us who supplied them.{\r}
+Dialogue: 0,0:31:53.85,0:31:56.68,雅黑77-5,,0000,0000,0000,,他会的 相信我\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}He will Trust me.{\r}
+Dialogue: 0,0:31:57.56,0:32:01.23,雅黑77-5,,0000,0000,0000,,我信你 我会告诉科巴先停止行动\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Of course. I'll instruct Koba to hold off for now.{\r}
+Dialogue: 0,0:32:01.27,0:32:05.27,雅黑77-5,,0000,0000,0000,,但在他交出供货商名字前 他是不安全的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}But until he gives us his supplier, Luan is on thin ice.{\r}
+Dialogue: 0,0:32:07.74,0:32:09.74,雅黑77-5,,0000,0000,0000,,爱德 谢谢你调查这件事\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Thank you for looking into this, Ed.{\r}
+Dialogue: 0,0:32:13.37,0:32:17.87,雅黑77-5,,0000,0000,0000,,你知道 芬恩·华莱士是个老傻子\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You know, Finn Wallace was an old fool.{\r}
+Dialogue: 0,0:32:17.95,0:32:21.58,雅黑77-5,,0000,0000,0000,,唯一做对的事情是他选了你\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}But he was smart...when he chose you.{\r}
+Dialogue: 0,0:32:32.26,0:32:34.72,雅黑77-5,,0000,0000,0000,,没有欲望 没有恐惧\N♪ ...no lust, no fear ♪
+Dialogue: 0,0:32:34.80,0:32:39.81,雅黑77-5,,0000,0000,0000,,没有思想 没有贪婪 没有苦难\N♪ No mind, no greed, no suffering ♪
+Dialogue: 0,0:32:39.89,0:32:43.02,雅黑77-5,,0000,0000,0000,,妈的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Oh, fuck.{\r}
+Dialogue: 0,0:32:44.48,0:32:49.11,雅黑77-5,,0000,0000,0000,,没有刀 没有词 没有谎言 没有治愈\N♪ No knife, no words, no lie, no cure ♪
+Dialogue: 0,0:32:49.19,0:32:54.49,雅黑77-5,,0000,0000,0000,,没有需求 没有憎恨 没有希望 没有话说\N♪ No need, no hate, no will, no speech... ♪
+Dialogue: 0,0:33:52.34,0:33:53.76,雅黑77-5,,0000,0000,0000,,-再见  -再见 丹妮\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Bye. - Bye, Danny.{\r}
+Dialogue: 0,0:33:59.76,0:34:02.18,雅黑77-5,,0000,0000,0000,,我来拿吧 足球玩的怎么样\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Here, I'll carry it. How was football?{\r}
+Dialogue: 0,0:34:13.20,0:34:15.20,雅黑77-5,,0000,0000,0000,,-妈妈  -你好\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Mum? - Hey. Hi!{\r}
+Dialogue: 0,0:34:15.86,0:34:18.24,雅黑77-5,,0000,0000,0000,,不好意思 等下 杜马尼女士\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Sorry. Excuse me? Ms Dumani?{\r}
+Dialogue: 0,0:34:28.13,0:34:29.13,雅黑77-5,,0000,0000,0000,,什么事\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Yes?{\r}
+Dialogue: 0,0:34:29.21,0:34:32.92,雅黑77-5,,0000,0000,0000,,杜马尼先生 你的女儿 带走了丹尼\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Mr Dumani. Your daughter, she's taken Danny.{\r}
+Dialogue: 0,0:34:35.93,0:34:37.55,雅黑77-5,,0000,0000,0000,,谢谢 加米亚\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Thank you, Jamya{\r}
+Dialogue: 0,0:34:37.64,0:34:39.39,雅黑77-5,,0000,0000,0000,,我怎么办 她就\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What should I do? She just...{\r}
+Dialogue: 0,0:34:39.43,0:34:41.47,雅黑77-5,,0000,0000,0000,,我来处理\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'll take it from here.{\r}
+Dialogue: 0,0:34:52.61,0:34:54.61,雅黑77-5,,0000,0000,0000,,香农出来了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Shannon's out.{\r}
+Dialogue: 0,0:34:56.36,0:34:58.41,雅黑77-5,,0000,0000,0000,,我和她律师聊了一下\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I spoke to her lawyer.{\r}
+Dialogue: 0,0:34:58.49,0:35:00.78,雅黑77-5,,0000,0000,0000,,警察在举证的时候程序出了问题\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}The police messed up evidence procedures.{\r}
+Dialogue: 0,0:35:00.87,0:35:02.87,雅黑77-5,,0000,0000,0000,,她的案子根本立不住脚\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Her case would have fallen apart at trial.{\r}
+Dialogue: 0,0:35:02.95,0:35:04.37,雅黑77-5,,0000,0000,0000,,这是个好消息\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}That's the best news.{\r}
+Dialogue: 0,0:35:04.45,0:35:06.83,雅黑77-5,,0000,0000,0000,,她告诉她的律师不要联系家人\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}She told her lawyer not to contact the family.{\r}
+Dialogue: 0,0:35:08.25,0:35:11.96,雅黑77-5,,0000,0000,0000,,我告诉她等事情淡了一点之后我会救她出来的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I told her I would get her out once things had calmed down.{\r}
+Dialogue: 0,0:35:12.05,0:35:15.01,雅黑77-5,,0000,0000,0000,,她杀了个警察 亚历克斯 我不会变魔术\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}She killed a cop, Alex. I don't have a magic wand.{\r}
+Dialogue: 0,0:35:15.09,0:35:17.42,雅黑77-5,,0000,0000,0000,,她知道我无能为力\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}She knew my hands were tied.{\r}
+Dialogue: 0,0:35:17.51,0:35:19.97,雅黑77-5,,0000,0000,0000,,她说她理解的 她跟我说她理解\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}She told you she understood. She told me she understood.{\r}
+Dialogue: 0,0:35:20.05,0:35:22.22,雅黑77-5,,0000,0000,0000,,但那个不是她要听的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}That's what we wanted to hear.{\r}
+Dialogue: 0,0:35:22.31,0:35:23.85,雅黑77-5,,0000,0000,0000,,什么意思\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What?{\r}
+Dialogue: 0,0:35:23.93,0:35:25.35,雅黑77-5,,0000,0000,0000,,为了保护我们 她杀了那个警察\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}She killed that cop to protect us.{\r}
+Dialogue: 0,0:35:25.43,0:35:27.52,雅黑77-5,,0000,0000,0000,,我们的生活没有受到影响\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Our lives carried on as usual.{\r}
+Dialogue: 0,0:35:27.60,0:35:30.06,雅黑77-5,,0000,0000,0000,,听着 她会回家的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Look...She'll come home.{\r}
+Dialogue: 0,0:35:32.07,0:35:34.07,雅黑77-5,,0000,0000,0000,,我们应该庆祝一下\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}We should celebrate.{\r}
+Dialogue: 0,0:35:35.90,0:35:37.78,雅黑77-5,,0000,0000,0000,,我做了我能力范围内能做的一切\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I did everything in my power.{\r}
+Dialogue: 0,0:35:37.86,0:35:40.16,雅黑77-5,,0000,0000,0000,,-是的  -今天真的够了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- You did. - What a day.{\r}
+Dialogue: 0,0:35:42.16,0:35:44.16,雅黑77-5,,0000,0000,0000,,她回来了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}She's back.{\r}
+Dialogue: 0,0:35:45.83,0:35:48.54,雅黑77-5,,0000,0000,0000,,她回来了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}We got her back.{\r}
+Dialogue: 0,0:35:48.62,0:35:50.96,雅黑77-5,,0000,0000,0000,,这意味着我们的又能是一家人了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}This means we can be a family again.{\r}
+Dialogue: 0,0:36:08.56,0:36:11.73,雅黑77-5,,0000,0000,0000,,-亚历克斯舅舅  -你怎么样啊 我的孩子\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Uncle Alex How you doing, big man? Hey!{\r}
+Dialogue: 0,0:36:11.81,0:36:16.32,雅黑77-5,,0000,0000,0000,,丹尼 我需要和阿里克斯舅舅聊聊 把这个拿走\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Danny, um, I need to speak to Uncle Alex. Take this for me.{\r}
+Dialogue: 0,0:36:20.41,0:36:22.91,雅黑77-5,,0000,0000,0000,,你的律师告诉我你在这里\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Your lawyertold me you were here.{\r}
+Dialogue: 0,0:36:22.95,0:36:25.66,雅黑77-5,,0000,0000,0000,,你买通了她 真能干\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Oh, you paid her? That's nice.{\r}
+Dialogue: 0,0:36:25.74,0:36:30.33,雅黑77-5,,0000,0000,0000,,我得见到你 对不起 要不你打我一顿\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I had to see you. I'm sorry. You can beat me up if you like.{\r}
+Dialogue: 0,0:36:30.42,0:36:32.79,雅黑77-5,,0000,0000,0000,,没必要 我不会再做那样的事了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No, don't. Don't. Im not doing it like that.{\r}
+Dialogue: 0,0:36:32.88,0:36:35.13,雅黑77-5,,0000,0000,0000,,-只要你开心 我做什么都可以  -我只想和丹尼在一起\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- I'll do it however you like. - I want to be with Danny.{\r}
+Dialogue: 0,0:36:36.59,0:36:41.93,雅黑77-5,,0000,0000,0000,,这样你就能回到你的世界里 爱干啥干啥\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}So you can go back to your tower and do...whatever it is you do.{\r}
+Dialogue: 0,0:36:42.01,0:36:43.14,雅黑77-5,,0000,0000,0000,,工作\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Work{\r}
+Dialogue: 0,0:36:43.22,0:36:46.35,雅黑77-5,,0000,0000,0000,,你和父亲觉得这个比我的命还重要\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You and Dad decided it's a fuck sight more important than my life.{\r}
+Dialogue: 0,0:36:48.06,0:36:50.73,雅黑77-5,,0000,0000,0000,,-听着  -这是你们的决定\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Look... - That was the deal you made.{\r}
+Dialogue: 0,0:36:55.48,0:36:58.11,雅黑77-5,,0000,0000,0000,,是的 我们让步了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You're right. We gave in.{\r}
+Dialogue: 0,0:36:59.53,0:37:01.32,雅黑77-5,,0000,0000,0000,,我为之工作的人 投资人\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}The people I work for, the Investors,{\r}
+Dialogue: 0,0:37:01.40,0:37:04.78,雅黑77-5,,0000,0000,0000,,他们不想让杜马尼家族的人逍遥法外\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}they didn't want a Dumani walking free on a cop killing.{\r}
+Dialogue: 0,0:37:04.87,0:37:06.66,雅黑77-5,,0000,0000,0000,,我让家族蒙羞了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'm bad for the brand.{\r}
+Dialogue: 0,0:37:06.74,0:37:10.45,雅黑77-5,,0000,0000,0000,,我会处理好的 所有的这一切\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'm getting us out. Out of all of this.{\r}
+Dialogue: 0,0:37:11.37,0:37:13.62,雅黑77-5,,0000,0000,0000,,我已经很接近了 香农\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}And I'm so close, Shannon.{\r}
+Dialogue: 0,0:37:13.71,0:37:16.84,雅黑77-5,,0000,0000,0000,,很快我们就能脱离这一切 我保证\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Soon I'll have us out of this whole fucking world. I promise.{\r}
+Dialogue: 0,0:37:16.92,0:37:19.38,雅黑77-5,,0000,0000,0000,,不再洗钱 不再有投资人\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No more laundering. No more Investors.{\r}
+Dialogue: 0,0:37:19.46,0:37:21.13,雅黑77-5,,0000,0000,0000,,我会照顾好我们大家\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'll take care of all of us.{\r}
+Dialogue: 0,0:37:21.22,0:37:23.22,雅黑77-5,,0000,0000,0000,,我做的一切\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Everything I'm doing...{\r}
+Dialogue: 0,0:37:24.64,0:37:26.85,雅黑77-5,,0000,0000,0000,,我会纠正这一切\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I can make this right.{\r}
+Dialogue: 0,0:37:26.93,0:37:29.77,雅黑77-5,,0000,0000,0000,,所有的 我保证\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Better than right, I swear.{\r}
+Dialogue: 0,0:37:29.85,0:37:31.85,雅黑77-5,,0000,0000,0000,,现在都是我的事情了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}It's on me now.{\r}
+Dialogue: 0,0:37:35.98,0:37:37.98,雅黑77-5,,0000,0000,0000,,我自己能解决\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'll sort myself out.{\r}
+Dialogue: 0,0:37:39.65,0:37:44.45,雅黑77-5,,0000,0000,0000,,如果你要帮我 离我远点\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}If you do want to help...leave us alone.{\r}
+Dialogue: 0,0:38:00.51,0:38:02.52,雅黑77-5,,0000,0000,0000,,我听说你今晚要见投资人\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I hear you're meeting with the Investors tonight{\r}
+Dialogue: 0,0:38:02.60,0:38:04.48,雅黑77-5,,0000,0000,0000,,聊聊你的洗钱计划\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}about your start-up financing scheme.{\r}
+Dialogue: 0,0:38:04.56,0:38:06.56,雅黑77-5,,0000,0000,0000,,你觉得这时候合适吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Do you really think that's wise?{\r}
+Dialogue: 0,0:38:07.69,0:38:09.98,雅黑77-5,,0000,0000,0000,,听着 就像我以前说的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Look, like I said before,{\r}
+Dialogue: 0,0:38:10.07,0:38:15.32,雅黑77-5,,0000,0000,0000,,这个模式与我为投资人所做的完全兼容\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}this model is completely compatible with what I do for the Investors.{\r}
+Dialogue: 0,0:38:16.61,0:38:19.66,雅黑77-5,,0000,0000,0000,,生意约好 我就越有跟他们谈判的筹码\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}The more it thrives, the better partner I can be for them and their business.{\r}
+Dialogue: 0,0:38:19.74,0:38:21.74,雅黑77-5,,0000,0000,0000,,那要多久呢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}For how long?{\r}
+Dialogue: 0,0:38:22.91,0:38:24.95,雅黑77-5,,0000,0000,0000,,看你拓展趋势\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Looking at the direction of your travel,{\r}
+Dialogue: 0,0:38:25.04,0:38:27.83,雅黑77-5,,0000,0000,0000,,你是想要完全绕过他们吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}is your plan to escape from them completely?{\r}
+Dialogue: 0,0:38:27.92,0:38:31.75,雅黑77-5,,0000,0000,0000,,你新的生意需要那个两亿美金 不是吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You need that 200 million for your new business, don't you?{\r}
+Dialogue: 0,0:38:32.67,0:38:36.38,雅黑77-5,,0000,0000,0000,,我听说有关投资者想收回这笔资金\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'm told the Investor concerned would like it passed over to him.{\r}
+Dialogue: 0,0:38:36.47,0:38:38.18,雅黑77-5,,0000,0000,0000,,别让他等久了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Don't make him wait.{\r}
+Dialogue: 0,0:38:38.26,0:38:40.64,雅黑77-5,,0000,0000,0000,,我为他们赚的钱远远超过了这个城里任何一个人\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I've made more money for them than anyone in this city.{\r}
+Dialogue: 0,0:38:40.72,0:38:45.52,雅黑77-5,,0000,0000,0000,,我们今天被袭击了 亚历克斯 现在不是讨价还价的好时机\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}We were attacked today, Alex. It s not a good time for negotiations.{\r}
+Dialogue: 0,0:38:45.60,0:38:47.85,雅黑77-5,,0000,0000,0000,,我想我很清楚他们要什么\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Pretty sure I know how they think.{\r}
+Dialogue: 0,0:38:47.94,0:38:51.23,雅黑77-5,,0000,0000,0000,,无意冒犯 可能比你还清楚\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Maybe even better than you. All due respect.{\r}
+Dialogue: 0,0:38:58.03,0:39:00.03,雅黑77-5,,0000,0000,0000,,不好意思\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Forgive me.{\r}
+Dialogue: 0,0:39:00.37,0:39:03.41,雅黑77-5,,0000,0000,0000,,你觉得钱来的干净就是好人了吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You think clean money means a clean soul?{\r}
+Dialogue: 0,0:39:03.49,0:39:07.75,雅黑77-5,,0000,0000,0000,,发生在肖恩和你家人身上的事情 只是生意而已\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What happened to Sean, to your family...it was just business.{\r}
+Dialogue: 0,0:39:07.83,0:39:09.87,雅黑77-5,,0000,0000,0000,,滚\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Fuck you.{\r}
+Dialogue: 0,0:39:09.96,0:39:12.17,雅黑77-5,,0000,0000,0000,,你在自讨苦吃\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You've bitten the hand that feeds you.{\r}
+Dialogue: 0,0:39:12.25,0:39:15.38,雅黑77-5,,0000,0000,0000,,你一定会被反咬一囗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Don't be surprised if it bites you back.{\r}
+Dialogue: 0,0:39:18.55,0:39:20.93,雅黑77-5,,0000,0000,0000,,你应该让我处理这些\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You should have let me handle this.{\r}
+Dialogue: 0,0:39:28.98,0:39:30.98,雅黑77-5,,0000,0000,0000,,祝你开会好运\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Good luck with your meeting.{\r}
+Dialogue: 0,0:40:31.50,0:40:35.17,雅黑77-5,,0000,0000,0000,,停止下一次交易 我这里出了点问题\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Hold off on the next delivery. There is an issue on my end.{\r}
+Dialogue: 0,0:40:35.21,0:40:37.21,雅黑77-5,,0000,0000,0000,,没什么大事\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Everything is okay.{\r}
+Dialogue: 0,0:40:37.92,0:40:40.05,雅黑77-5,,0000,0000,0000,,我晚点和你细讲\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'll share details later.{\r}
+Dialogue: 0,0:40:41.93,0:40:46.43,雅黑77-5,,0000,0000,0000,,请确认不交易 我等你指示\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Please confirm no delivery. I'll wait for a call.{\r}
+Dialogue: 0,0:41:10.16,0:41:12.12,雅黑77-5,,0000,0000,0000,,宝贝\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Honey.{\r}
+Dialogue: 0,0:41:51.66,0:41:53.66,雅黑77-5,,0000,0000,0000,,给我留一片 好吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Save me a slice, yeah?{\r}
+Dialogue: 0,0:42:43.71,0:42:48.93,雅黑77-5,,0000,0000,0000,,-我在等人 麻烦叫他们直接在天台等我  -好的 杜马尼先生\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Uh, I'm expecting guests so send them up to the terrace.{\r}
+Dialogue: 0,0:43:32.64,0:43:34.10,雅黑77-5,,0000,0000,0000,,阿西夫\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Asif.{\r}
+Dialogue: 0,0:43:34.18,0:43:36.18,雅黑77-5,,0000,0000,0000,,爱德\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Ed...{\r}
+Dialogue: 0,0:43:36.68,0:43:38.89,雅黑77-5,,0000,0000,0000,,投资人讲的很清楚了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}The Investors have made it clear.{\r}
+Dialogue: 0,0:43:39.52,0:43:42.48,雅黑77-5,,0000,0000,0000,,任何人越界了都会被处理的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Anyone who acts out of line is to be dealt with.{\r}
+Dialogue: 0,0:43:43.32,0:43:45.40,雅黑77-5,,0000,0000,0000,,零容忍\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Zero tolerance.{\r}
+Dialogue: 0,0:43:47.49,0:43:49.99,雅黑77-5,,0000,0000,0000,,抱歉但我实在无能为力\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I'm sorry but my hands are tied,{\r}
+Dialogue: 0,0:43:50.07,0:43:52.03,雅黑77-5,,0000,0000,0000,,卢安 怎么了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Luan. What's wrong?{\r}
+Dialogue: 0,0:44:27.23,0:44:29.53,雅黑77-5,,0000,0000,0000,,我们在说谁\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Who are we talking about?{\r}
+Dialogue: 0,0:44:51.38,0:44:54.80,雅黑77-5,,0000,0000,0000,,放下枪我们好好说\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Just put it down and we'll talk.{\r}
+Dialogue: 0,0:44:58.10,0:45:00.10,雅黑77-5,,0000,0000,0000,,坐\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Sit.{\r}
+Dialogue: 0,0:45:32.01,0:45:34.01,雅黑77-5,,0000,0000,0000,,你在为他们工作\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You're working for them?{\r}
+Dialogue: 0,0:45:36.80,0:45:39.10,雅黑77-5,,0000,0000,0000,,这简直太搞笑了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}That's almost funny.{\r}
+Dialogue: 0,0:45:39.85,0:45:41.81,雅黑77-5,,0000,0000,0000,,混蛋\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Fuck!{\r}
+Dialogue: 0,0:45:47.27,0:45:50.94,雅黑77-5,,0000,0000,0000,,你为他们杀了肖恩 你太狡猾了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You killed Sean for them? You fucking snake.{\r}
+Dialogue: 0,0:45:51.03,0:45:53.15,雅黑77-5,,0000,0000,0000,,-我没有选择  -可怜的艾略特\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- I didn't have a choice. - Poor Elliot.{\r}
+Dialogue: 0,0:45:53.24,0:45:57.91,雅黑77-5,,0000,0000,0000,,你知道吗 你还活着是因为他们让你活着\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You know, you're only here because they wanted you here.{\r}
+Dialogue: 0,0:45:59.12,0:46:03.29,雅黑77-5,,0000,0000,0000,,现在他们不需要了 太麻烦了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}And now they don't. Too much of a liability.{\r}
+Dialogue: 0,0:46:09.25,0:46:11.25,雅黑77-5,,0000,0000,0000,,那你在等什么\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What the fuck are you waiting for?{\r}
+Dialogue: 0,0:46:32.90,0:46:37.20,雅黑77-5,,0000,0000,0000,,我们的老板们 所有的罪证\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Our bosses. Years of incrimination.{\r}
+Dialogue: 0,0:46:37.28,0:46:39.74,雅黑77-5,,0000,0000,0000,,所有的犯罪记录 都在这里了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Years of wrongdoing. It's all there.{\r}
+Dialogue: 0,0:46:44.91,0:46:47.67,雅黑77-5,,0000,0000,0000,,-肖恩给你的  -不能交给警察\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Sean gave you this? - Can't go to the police.{\r}
+Dialogue: 0,0:46:47.75,0:46:50.46,雅黑77-5,,0000,0000,0000,,法庭 媒体 都是投资人的天下\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Courts. Media. The Investors own it all.{\r}
+Dialogue: 0,0:46:52.21,0:46:55.09,雅黑77-5,,0000,0000,0000,,但你 这个\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}But with you, this...{\r}
+Dialogue: 0,0:46:57.05,0:46:58.97,雅黑77-5,,0000,0000,0000,,这是我们唯一的出路\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}this is how we get out.{\r}
+Dialogue: 0,0:46:59.05,0:47:00.85,雅黑77-5,,0000,0000,0000,,你想勒索投资人\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You want to blackmail the Investors?{\r}
+Dialogue: 0,0:47:00.89,0:47:03.31,雅黑77-5,,0000,0000,0000,,只有你知道怎么做\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}And you'll know how. Better than anyone.{\r}
+Dialogue: 0,0:47:05.02,0:47:09.19,雅黑77-5,,0000,0000,0000,,我一个人做不到 亚历克斯 我试过了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I can't do this by myself, Alex. I've tried.{\r}
+Dialogue: 0,0:47:11.15,0:47:14.44,雅黑77-5,,0000,0000,0000,,但你知道可以找谁 达成交易\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}But you know who to contact. Make a deal.{\r}
+Dialogue: 0,0:47:14.53,0:47:16.99,雅黑77-5,,0000,0000,0000,,好好想想\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Think about it.{\r}
+Dialogue: 0,0:47:17.07,0:47:20.37,雅黑77-5,,0000,0000,0000,,我父亲 你的家人 我们两个\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}My father. Your family. Both of us.{\r}
+Dialogue: 0,0:47:21.78,0:47:25.33,雅黑77-5,,0000,0000,0000,,一起来保证这个安全 好吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}This will keep us safe, all right?{\r}
+Dialogue: 0,0:47:31.42,0:47:34.84,雅黑77-5,,0000,0000,0000,,当时我能做什么\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Was there anything I could have done...{\r}
+Dialogue: 0,0:47:34.92,0:47:36.92,雅黑77-5,,0000,0000,0000,,来保护肖恩吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}to save Sean?{\r}
+Dialogue: 0,0:47:38.22,0:47:40.22,雅黑77-5,,0000,0000,0000,,没有\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No.{\r}
+Dialogue: 0,0:47:42.05,0:47:44.06,雅黑77-5,,0000,0000,0000,,没有\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No.{\r}
+Dialogue: 0,0:47:46.56,0:47:49.14,雅黑77-5,,0000,0000,0000,,打开你的电脑 看看这些文件\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Open your laptop. Look at these files.{\r}
+Dialogue: 0,0:47:57.11,0:47:59.11,雅黑77-5,,0000,0000,0000,,快点 亚历克斯\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Please, Alex.{\r}
+Dialogue: 0,0:47:59.78,0:48:03.24,雅黑77-5,,0000,0000,0000,,他们会找到我 他们会杀了我的家人\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}They'll find me. They'll kill my family.{\r}
+Dialogue: 0,0:48:06.62,0:48:08.62,雅黑77-5,,0000,0000,0000,,我不能让这些事情发生\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}I can't allow that to happen.{\r}
+Dialogue: 0,0:48:19.63,0:48:22.05,雅黑77-5,,0000,0000,0000,,去找香农 她需要你\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Go to Shannon. She needs you.{\r}
+Dialogue: 0,0:48:23.05,0:48:25.05,雅黑77-5,,0000,0000,0000,,什么\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What?{\r}
+Dialogue: 0,0:48:25.39,0:48:27.64,雅黑77-5,,0000,0000,0000,,照顾好我父亲\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Watch over my father.{\r}
+Dialogue: 0,0:48:32.48,0:48:34.61,雅黑77-5,,0000,0000,0000,,别 亚历克斯 别\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No, Alexl Stop!{\r}
+Dialogue: 0,0:48:35.44,0:48:36.82,雅黑77-5,,0000,0000,0000,,你赢不了他们的\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You can't beat them.{\r}
+Dialogue: 0,0:48:36.90,0:48:38.90,雅黑77-5,,0000,0000,0000,,别 亚历克斯\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}No! No! No...Alex!{\r}
+Dialogue: 0,0:49:10.60,0:49:13.23,雅黑77-5,,0000,0000,0000,,没有新的留言\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You have no new messages.{\r}
+Dialogue: 0,0:50:31.85,0:50:35.06,雅黑77-5,,0000,0000,0000,,祖思 怎么了 宝贝儿\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Zeus. What's up, my boy?{\r}
+Dialogue: 0,0:50:36.40,0:50:38.19,雅黑77-5,,0000,0000,0000,,要来点芝士吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}You want some cheese?{\r}
+Dialogue: 0,0:50:38.27,0:50:40.27,雅黑77-5,,0000,0000,0000,,来 来\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Come. Come.{\r}
+Dialogue: 0,0:50:41.90,0:50:43.86,雅黑77-5,,0000,0000,0000,,来\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Come.{\r}
+Dialogue: 0,0:50:43.94,0:50:45.95,雅黑77-5,,0000,0000,0000,,要去尿尿吗\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Wanna pee?{\r}
+Dialogue: 0,0:50:47.41,0:50:49.41,雅黑77-5,,0000,0000,0000,,来吧 去\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Come. Get out.{\r}
+Dialogue: 0,0:51:59.69,0:52:01.44,雅黑77-5,,0000,0000,0000,,醒醒 姑娘们 快点\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Wake up, girls. Quick...{\r}
+Dialogue: 0,0:52:01.52,0:52:03.52,雅黑77-5,,0000,0000,0000,,爸爸\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Papa?{\r}
+Dialogue: 0,0:52:06.19,0:52:08.11,雅黑77-5,,0000,0000,0000,,怎么了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}What's happened?{\r}
+Dialogue: 0,0:52:08.20,0:52:09.57,雅黑77-5,,0000,0000,0000,,-发生什么了  -没事\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- What's happening? - Nothing.{\r}
+Dialogue: 0,0:52:09.66,0:52:11.99,雅黑77-5,,0000,0000,0000,,-发生什么了  -进去\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- What's happening? - Go inside.{\r}
+Dialogue: 0,0:52:12.07,0:52:14.62,雅黑77-5,,0000,0000,0000,,-有些不对  -带女儿们进去先\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Something's wrong. - Get the girls in first.{\r}
+Dialogue: 0,0:52:14.70,0:52:16.70,雅黑77-5,,0000,0000,0000,,进去 宝贝 进去\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Go, babe, go.{\r}
+Dialogue: 0,0:52:17.29,0:52:19.08,雅黑77-5,,0000,0000,0000,,妈妈爱你们\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Mummy loves you.{\r}
+Dialogue: 0,0:52:22.50,0:52:24.09,雅黑77-5,,0000,0000,0000,,告诉我发生了什么\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Tell me what's going on.{\r}
+Dialogue: 0,0:52:24.13,0:52:25.84,雅黑77-5,,0000,0000,0000,,-轻点 带上你妹妹  -发生什么了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Quiet, take your sister. - What's happening?{\r}
+Dialogue: 0,0:52:25.92,0:52:28.55,雅黑77-5,,0000,0000,0000,,-没事  -别老是说没事\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Nothing. - Don't tell me it's nothing.{\r}
+Dialogue: 0,0:52:28.63,0:52:30.88,雅黑77-5,,0000,0000,0000,,-听着  -发生什么事了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- Listen to me. - What's going on?{\r}
+Dialogue: 0,0:52:30.97,0:52:34.14,雅黑77-5,,0000,0000,0000,,-保险箱的密码是什么  -什么密码\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}- What's the code to the safe? - The code?{\r}
+Dialogue: 0,0:52:35.18,0:52:37.22,雅黑77-5,,0000,0000,0000,,你生日 告诉我发生什么事情了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}It's your birthday. But tell me what's happen...{\r}
+Dialogue: 0,0:52:37.31,0:52:39.77,雅黑77-5,,0000,0000,0000,,真的没事 和女儿们在一起\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Everything's okay. Stay with the girls.{\r}
+Dialogue: 0,0:52:39.81,0:52:41.81,雅黑77-5,,0000,0000,0000,,卢安\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Luan...{\r}
+Dialogue: 0,0:52:45.82,0:52:47.82,雅黑77-5,,0000,0000,0000,,卢安\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Luan!{\r}
+Dialogue: 0,0:57:31.35,0:57:32.77,雅黑77-5,,0000,0000,0000,,科巴\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Koba!{\r}
+Dialogue: 0,0:59:51.33,0:59:54.16,雅黑77-5,,0000,0000,0000,,太 迟了\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Too... late...{\r}
+Dialogue: 0,1:00:14.64,1:00:17.48,雅黑77-5,,0000,0000,0000,,梅玲达 梅玲达\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Mirlinda...Mirlinda!{\r}
+Dialogue: 0,1:00:31.07,1:00:34.12,雅黑77-5,,0000,0000,0000,,妈妈呢 妈妈呢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Where's Mum? Where's Mum?{\r}
+Dialogue: 0,1:00:57.18,1:01:00.77,雅黑77-5,,0000,0000,0000,,我是卢安·杜莎 我现在不能接听电话\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}This is Luan Dushaj. I can't get to the phone right now.{\r}
+Dialogue: 0,1:01:01.19,1:01:04.98,雅黑77-5,,0000,0000,0000,,请留言 我晚点会回复 谢谢\N{\fnArial Unicode MS\fs47\1c&HA0A0A0&\3c&H323232&\i1}Please Ieave a message and I'll return your call Thank you.{\r}
+
+
