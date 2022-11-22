@@ -1,0 +1,1769 @@
+[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: gdlw
+Original Script: gdlw
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 1
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,20,&H00FFFFFF,&HF0000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,5,134
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:20.23,0:00:24.30,Default,NTP,0,0,0,,{\fad(500,500)}{\pos(190,268)}{\fs16}{\c&H24EFFF&}{\fn方正准圆简体}{\bord0\b1}字幕翻译制作：{\b1\fs16}{\c&HFFFFFF&}goodliuwu
+Dialogue: 0,0:00:44.84,0:00:52.34,Default,NTP,0,0,0,,{\1c&HE9EAEA&\fad(1200,1500)}{\fs14\bord0\b0\shad0\pos(308,194)\fscx85\fsp1}马里奥·普佐
+Dialogue: 0,0:00:44.84,0:00:52.34,Default,NTP,0,0,0,,{\1c&HE9EAEA&\fad(1200,1500)}{\fs36\bord0\b1\shad0\pos(310,225)}教 父
+Dialogue: 0,0:00:48.64,0:00:52.34,Default,NTP,0,0,0,,{\1c&HE9EAEA&\fad(1200,1500)}{\fs20\bord0\b1\shad0\pos(318,241)\fscx85}终章：
+Dialogue: 0,0:00:52.94,0:01:00.44,Default,NTP,0,0,0,,{\1c&HE9EAEA&\fad(1200,700)}{\fs22\bord0\b1\shad0\pos(192,190)\fscx85}迈克尔·柯利昂尼之死
+Dialogue: 0,0:00:32.54,0:00:43.27,Default,NTP,0,0,0,,{\fad(500,1500)}{\b1\shad4\bord0\fs18\pos(192,222)}派拉蒙影业出品
+Dialogue: 0,0:38:26.44,0:38:29.84,Default,NTP,0,0,0,,{\fad(10,600)}{\1c&H131A27&}{\fs16\bord0\shad0\frcx90\a5\pos(76,136)}柯利昂尼集团投标接管“屹莫比”
+Dialogue: 0,0:38:34.14,0:38:38.64,Default,NTP,0,0,0,,{\fad(10,600)}{\b1\a5\1c&H131A27&}{\fs14\bord0\shad0\fscx90\a5\pos(137,123)\frx11\fry10\frz-1}打造帝国：柯利昂尼提出新“屹莫比”
+Dialogue: 0,0:38:52.80,0:38:56.44,Default,NTP,0,0,0,,{\a6\frz12\pos(150,45)}(“屹莫比”收购案似有可能 股价飙涨)
+Dialogue: 0,0:41:54.02,0:42:00.07,Default,NTP,0,0,0,,{\1c&H220DE5&\3c&HF3B6FE&\shad0\blur1\b1}{\pos(192,100)}{\fnSTKaiti}中 国 碗
+Dialogue: 0,0:42:04.71,0:42:19.19,Default,NTP,0,0,0,,{\1c&H220DE5&\3c&HF3B6FE&\shad0\blur1\b1}{\pos(192,100)}{\fnSTKaiti}中 国 碗
+Dialogue: 0,0:43:53.97,0:43:59.64,Default,NTP,0,0,0,,{\fad(900,600)\fs18\shad0\bord0\b1\pos(192,230)}罗马  梵蒂冈
+Dialogue: 0,0:48:03.69,0:48:07.45,Default,NTP,0,0,0,,{\1c&H92B0D1&\shad0\fs16\pos(130,110)\b1\i1\fry-9\frz11\frx10\fscx77\alpha&H35}坚  科\N橄榄油进口公司
+Dialogue: 0,0:51:07.06,0:51:12.94,Default,NTP,0,0,0,,{\fad(800,600)\fs18\bord0\shad3\b1\pos(192,160)}{\1c&HDFDFDF&}新泽西 亚特兰大城
+Dialogue: 0,1:16:40.04,1:16:46.67,Default,NTP,0,0,0,,{\fad(900,800)\fs18\bord0\shad3\b1\pos(190,260)}{\1c&HDFDFDF&}西西里  巴格里亚
+Dialogue: 0,1:19:47.45,1:19:50.42,Default,NTP,0,0,0,,{\a6}枢机主教（Cardinal Bishop）比总主教（Archbishop）高两级
+Dialogue: 0,1:39:23.35,1:39:34.24,Default,NTP,0,0,0,,{\fad(0,800)\fs13}{\1c&H324348&}{\bord0\shad0\fscx85\pos(131,89)}巴 格 里 亚
+Dialogue: 0,1:41:59.24,1:42:01.64,Default,NTP,0,0,0,,{\fs12\1c&H1E324B&\shad0\bord0\pos(180,130)\frz10}你喜欢这个吗？\N是   否
+Dialogue: 0,1:41:59.24,1:42:01.64,Default,NTP,0,0,0,,{{\fs12\1c&H414F58&\shad0\bord0\pos(243,110)\frz10}爸爸
+Dialogue: 0,1:42:06.66,1:42:09.07,Default,NTP,0,0,0,,{\fs12\1c&H1E324B&\shad0\bord0\pos(180,130)\frz10}你喜欢这个吗？\N是   否
+Dialogue: 0,1:42:06.66,1:42:09.07,Default,NTP,0,0,0,,{{\fs12\1c&H414F58&\shad0\bord0\pos(243,110)\frz10}爸爸
+Dialogue: 0,1:54:41.67,1:54:47.25,Default,NTP,0,0,0,,{\a6}若望·保禄一世规划管理层彻查：梵蒂冈银行正被调整
+Dialogue: 0,1:54:48.42,1:54:52.45,Default,NTP,0,0,0,,{\a6}新教宗宣布调查梵蒂冈银行事务\N要求与总会计师F·凯恩济格会面
+Dialogue: 0,1:54:54.27,1:54:58.21,Default,NTP,0,0,0,,{\a6}梵蒂冈会计师失踪\N“上帝的银行家”消失，未给罗马家中留话
+
+Dialogue: 0,0:01:05.28,0:01:06.45,Default,NTP,0,0,0,,唐·柯利昂尼\N{\fs10\1c&HB4DCFC&}Don Corleone.
+Dialogue: 0,0:01:07.32,0:01:09.15,Default,NTP,0,0,0,,我需要你的帮助\N{\fs10\1c&HB4DCFC&}I need your help.
+Dialogue: 0,0:01:09.46,0:01:12.41,Default,NTP,0,0,0,,不是点根小蜡烛而已\N{\fs10\1c&HB4DCFC&}And not just to light a little candle.
+Dialogue: 0,0:01:13.26,0:01:17.46,Default,NTP,0,0,0,,我的天赋，是能够劝服人们…\N{\fs10\1c&HB4DCFC&}My, gift, was to be able to persuade people,
+Dialogue: 0,0:01:17.95,0:01:20.89,Default,NTP,0,0,0,,向神圣的教会捐献\N{\fs10\1c&HB4DCFC&}to give, to the Holy Church.
+Dialogue: 0,0:01:21.07,0:01:26.44,Default,NTP,0,0,0,,于是，罗马决定让我掌管梵蒂冈银行\N{\fs10\1c&HB4DCFC&}Then, Rome decides, to put me in charge of the Vatican bank.
+Dialogue: 0,0:01:27.84,0:01:30.90,Default,NTP,0,0,0,,但我从来不是真正的银行家\N{\fs10\1c&HB4DCFC&}But I was never a true banker.
+Dialogue: 0,0:01:33.88,0:01:38.87,Default,NTP,0,0,0,,我的过错{\fs12} [意大利语]{\r}，我太相信朋友\N{\fs10\1c&HB4DCFC&}Mea culpa, I trusted my friends.
+Dialogue: 0,0:01:39.38,0:01:41.25,Default,NTP,0,0,0,,友谊和金钱\N{\fs10\1c&HB4DCFC&}Friendship and money
+Dialogue: 0,0:01:42.45,0:01:46.08,Default,NTP,0,0,0,,- 油和水  - 的确\N{\fs10\1c&HB4DCFC&}-oil and water -Indeed.
+Dialogue: 0,0:01:46.39,0:01:49.22,Default,NTP,0,0,0,,而这些朋友\N{\fs10\1c&HB4DCFC&}But these, friends
+Dialogue: 0,0:01:49.39,0:01:54.23,Default,NTP,0,0,0,,利用教廷的好名声，喂饱自己的贪欲\N{\fs10\1c&HB4DCFC&}Use the good name of the Church, to feed their greed.
+Dialogue: 0,0:01:54.40,0:01:57.42,Default,NTP,0,0,0,,只要赔了钱\N{\fs10\1c&HB4DCFC&}If money was lost
+Dialogue: 0,0:01:57.94,0:02:00.50,Default,NTP,0,0,0,,我就会被责难\N{\fs10\1c&HB4DCFC&}Then I am to blame.
+Dialogue: 0,0:02:02.57,0:02:04.20,Default,NTP,0,0,0,,但愿祷告能够…\N{\fs10\1c&HB4DCFC&}Oh, if only prayer could,
+Dialogue: 0,0:02:04.22,0:02:08.03,Default,NTP,0,0,0,,补足我们7亿美元的赤字\N{\fs10\1c&HB4DCFC&}pay off our seven-hundred million dollar deficit.
+Dialogue: 0,0:02:08.85,0:02:11.37,Default,NTP,0,0,0,,7亿6千9百万\N{\fs10\1c&HB4DCFC&}Seven-hundred and sixty-nine million.
+Dialogue: 0,0:02:17.25,0:02:21.25,Default,NTP,0,0,0,,教会拥有一家大公司的25%…\N{\fs10\1c&HB4DCFC&}The Church owns 25% of a large corporation
+Dialogue: 0,0:02:21.53,0:02:22.72,Default,NTP,0,0,0,,“屹莫比”{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Immobiliare.
+Dialogue: 0,0:02:23.39,0:02:25.09,Default,NTP,0,0,0,,你知道我说的这家公司\N{\fs10\1c&HB4DCFC&}You know the one I mean.
+Dialogue: 0,0:02:25.63,0:02:27.15,Default,NTP,0,0,0,,世界第一大地主\N{\fs10\1c&HB4DCFC&}Largest landlord on earth
+Dialogue: 0,0:02:27.16,0:02:30.62,Default,NTP,0,0,0,,房地产遍布全球，价值60亿美元\N{\fs10\1c&HB4DCFC&}real estate all over the world worth six billion dollars.
+Dialogue: 0,0:02:32.64,0:02:34.46,Default,NTP,0,0,0,,的确\N{\fs10\1c&HB4DCFC&}That's true.
+Dialogue: 0,0:02:35.11,0:02:39.54,Default,NTP,0,0,0,,要控股，梵蒂冈的一票是必需的\N{\fs10\1c&HB4DCFC&}And the Vatican vote is necessary for control.
+Dialogue: 0,0:02:41.38,0:02:44.37,Default,NTP,0,0,0,,不，不不，你弄错了\N{\fs10\1c&HB4DCFC&}No. No, no. You're mistaken.
+Dialogue: 0,0:02:44.55,0:02:47.21,Default,NTP,0,0,0,,这不是一个人能决定的问题\N{\fs10\1c&HB4DCFC&}This isn't a question of one person deciding
+Dialogue: 0,0:02:47.56,0:02:48.95,Default,NTP,0,0,0,,一票决定\N{\fs10\1c&HB4DCFC&}one deciding vote.
+Dialogue: 0,0:02:49.19,0:02:51.35,Default,NTP,0,0,0,,这跟世上任何其他公司一样\N{\fs10\1c&HB4DCFC&}This is like any other company in the world.
+Dialogue: 0,0:02:51.42,0:02:52.92,Default,NTP,0,0,0,,我们有董事，我们有规章\N{\fs10\1c&HB4DCFC&}We have directors, we have rules.
+Dialogue: 0,0:02:53.02,0:02:55.49,Default,NTP,0,0,0,,我们有非常古老的规章\N{\fs10\1c&HB4DCFC&}We have very old rules.
+Dialogue: 0,0:02:55.99,0:03:01.24,Default,NTP,0,0,0,,得教宗本人，批准你才行\N{\fs10\1c&HB4DCFC&}The Pope himself, would have to approve you.
+Dialogue: 0,0:03:04.94,0:03:07.54,Default,NTP,0,0,0,,我们已卖掉了各个赌场\N{\fs10\1c&HB4DCFC&}We've sold the casinos
+Dialogue: 0,0:03:08.77,0:03:12.41,Default,NTP,0,0,0,,所有与赌博相关的生意\N{\fs10\1c&HB4DCFC&}all businesses having to do with gambling.
+Dialogue: 0,0:03:12.77,0:03:16.14,Default,NTP,0,0,0,,我们没有兴趣，也无投资…\N{\fs10\1c&HB4DCFC&}We have no interests, or investments
+Dialogue: 0,0:03:16.31,0:03:18.91,Default,NTP,0,0,0,,在任何非法事业上\N{\fs10\1c&HB4DCFC&}in anything illegitimate.
+Dialogue: 0,0:03:21.39,0:03:26.07,Default,NTP,0,0,0,,柯利昂尼家已准备好将5亿美元存入梵蒂冈银行…\N{\fs10\1c&HB4DCFC&}The Corleone's prepared to deposit 500 million dollars in the Vatican bank
+Dialogue: 0,0:03:26.09,0:03:29.78,Default,NTP,0,0,0,,只等柯利昂尼先生拿到“屹莫比”的过半控制权\N{\fs10\1c&HB4DCFC&}at such time as Mr. Corleone receives majority control of Immobiliare.
+Dialogue: 0,0:03:29.86,0:03:32.72,Default,NTP,0,0,0,,“屹莫比”能够成为一个新事物\N{\fs10\1c&HB4DCFC&}Immobiliare could be something new
+Dialogue: 0,0:03:32.80,0:03:36.06,Default,NTP,0,0,0,,一家欧洲企业集团\N{\fs10\1c&HB4DCFC&}a European conglomerate.
+Dialogue: 0,0:03:36.30,0:03:41.14,Default,NTP,0,0,0,,鲜有家族空着这样的公司\N{\fs10\1c&HB4DCFC&}Few families, have control of such a company.
+Dialogue: 0,0:03:43.77,0:03:46.57,Default,NTP,0,0,0,,看来今日的世界…\N{\fs10\1c&HB4DCFC&}It seems in today's world
+Dialogue: 0,0:03:46.74,0:03:51.64,Default,NTP,0,0,0,,免除债务的权力…强过了宽恕的权力\N{\fs10\1c&HB4DCFC&}the power to absolve debt is greater than the power of forgiveness
+Dialogue: 0,0:03:53.25,0:03:55.62,Default,NTP,0,0,0,,6亿美元\N{\fs10\1c&HB4DCFC&}Six hundred million dollars.
+Dialogue: 0,0:04:00.19,0:04:03.86,Default,NTP,0,0,0,,不要高估了宽恕的权力\N{\fs10\1c&HB4DCFC&}Don't overestimate the power of forgiveness.
+Dialogue: 0,0:04:05.68,0:04:07.42,Default,NTP,0,0,0,,唐·柯利昂尼\N{\fs10\1c&HB4DCFC&}Don Corleone
+Dialogue: 0,0:04:07.72,0:04:09.62,Default,NTP,0,0,0,,跟“屹莫比”的这笔交易\N{\fs10\1c&HB4DCFC&}this deal with Immobiliare...
+Dialogue: 0,0:04:09.87,0:04:13.05,Default,NTP,0,0,0,,能让你成为世上最富有的人之一\N{\fs10\1c&HB4DCFC&}can make you one of the richest men in the world.
+Dialogue: 0,0:04:13.14,0:04:16.07,Default,NTP,0,0,0,,你的整个过往史，以及你家族的历史\N{\fs10\1c&HB4DCFC&}Your whole past history and the history of your family
+Dialogue: 0,0:04:16.11,0:04:17.62,Default,NTP,0,0,0,,还有孩子们\N{\fs10\1c&HB4DCFC&}and the children
+Dialogue: 0,0:04:18.29,0:04:19.62,Default,NTP,0,0,0,,将被洗刷干净\N{\fs10\1c&HB4DCFC&}will be washed away.
+Dialogue: 0,0:04:22.47,0:04:24.47,Default,NTP,0,0,0,,6亿美元\N{\fs10\1c&HB4DCFC&}600 million.
+Dialogue: 0,0:04:40.85,0:04:43.01,Default,NTP,0,0,0,,这世上唯一的财富是孩子\N{\fs10\1c&HB4DCFC&}The only wealth in this world is children.
+Dialogue: 0,0:04:44.14,0:04:47.05,Default,NTP,0,0,0,,超过世间所有的金钱、权力\N{\fs10\1c&HB4DCFC&}More than all the money, power on earth
+Dialogue: 0,0:04:48.48,0:04:50.35,Default,NTP,0,0,0,,你们是我的珍宝\N{\fs10\1c&HB4DCFC&}you are my treasure.
+Dialogue: 0,0:04:52.06,0:04:56.46,Default,NTP,0,0,0,,虽然为了你们的最佳利益，我将你们的教育托付给你们母亲\N{\fs10\1c&HB4DCFC&}although I entrusted your education to your mother for your own best interests
+Dialogue: 0,0:04:56.61,0:04:58.89,Default,NTP,0,0,0,,你们知道我多么期待见到你们\N{\fs10\1c&HB4DCFC&}you know how I look forward to seeing you
+Dialogue: 0,0:04:59.09,0:05:01.58,Default,NTP,0,0,0,,期待咱们生命中一个和谐的新阶段\N{\fs10\1c&HB4DCFC&}and to a new period of harmony in our lives.
+Dialogue: 0,0:05:02.87,0:05:07.89,Default,NTP,0,0,0,,也许你们能说动母亲来参加本次典礼\N{\fs10\1c&HB4DCFC&}Perhaps you might prevail upon your mother to come to this celebration
+Dialogue: 0,0:05:54.11,0:05:56.36,Default,NTP,0,0,0,,文森特，我们的名字不在名单上\N{\fs10\1c&HB4DCFC&}Vincent, our name's not on the list.
+Dialogue: 0,0:05:59.35,0:06:00.26,Default,NTP,0,0,0,,写上去\N{\fs10\1c&HB4DCFC&}Write it in.
+Dialogue: 0,0:06:00.61,0:06:03.06,Default,NTP,0,0,0,,曼西尼  M-A-N-I-N-I\N{\fs10\1c&HB4DCFC&}Mancini. M-A-N-C-l-N-I.
+Dialogue: 0,0:06:05.01,0:06:06.15,Default,NTP,0,0,0,,有什么问题吗？\N{\fs10\1c&HB4DCFC&}Is there a problem here?
+Dialogue: 0,0:06:06.18,0:06:07.65,Default,NTP,0,0,0,,没有问题，我的名字不在名单上\N{\fs10\1c&HB4DCFC&}No problem, my name's not on the list.
+Dialogue: 0,0:06:07.74,0:06:09.37,Default,NTP,0,0,0,,喂，你没在名单上，你得立刻离开\N{\fs10\1c&HB4DCFC&}Hey, you're not on the list, you have to leave immediately.
+Dialogue: 0,0:06:10.04,0:06:11.07,Default,NTP,0,0,0,,这事没别的办法\N{\fs10\1c&HB4DCFC&}No two ways about it.
+Dialogue: 0,0:06:11.20,0:06:12.44,Default,NTP,0,0,0,,你是想跟我跳舞吗，宝贝？\N{\fs10\1c&HB4DCFC&}You want to dance with me, sweetie?
+Dialogue: 0,0:06:12.48,0:06:13.55,Default,NTP,0,0,0,,乔，乔，这是文尼\N{\fs10\1c&HB4DCFC&}Joe, Joe, it's Vinnie.
+Dialogue: 0,0:06:13.56,0:06:15.85,Default,NTP,0,0,0,,文尼，没关系，他们是客人\N{\fs10\1c&HB4DCFC&}Vinnie, it's okay. These are our guests.
+Dialogue: 0,0:06:16.16,0:06:17.95,Default,NTP,0,0,0,,- 抱歉，大卫  - 没关系，没关系\N{\fs10\1c&HB4DCFC&}-I'm sorry, Dave. -It's all right.
+Dialogue: 0,0:06:18.32,0:06:19.74,Default,NTP,0,0,0,,文尼，欢迎参加宴会\N{\fs10\1c&HB4DCFC&}Vinnie, welcome to the party.
+Dialogue: 0,0:07:08.71,0:07:10.44,Default,NTP,0,0,0,,见到你真好\N{\fs10\1c&HB4DCFC&}It's good to see you.
+Dialogue: 0,0:07:10.61,0:07:12.48,Default,NTP,0,0,0,,再次见到你真好，这是我丈夫\N{\fs10\1c&HB4DCFC&}It's good to see you again. This is my husband.
+Dialogue: 0,0:07:13.53,0:07:14.94,Default,NTP,0,0,0,,这是我儿子安东尼\N{\fs10\1c&HB4DCFC&}This is my son, Anthony.
+Dialogue: 0,0:07:16.35,0:07:19.48,Default,NTP,0,0,0,,圣塞巴斯蒂安勋章在天主教廷…\N{\fs10\1c&HB4DCFC&}The order of Saint Sebastian is one of the highest honors
+Dialogue: 0,0:07:19.53,0:07:21.74,Default,NTP,0,0,0,,是颁给俗世人的最高荣誉之一\N{\fs10\1c&HB4DCFC&}the Catholic Church can bestow upon a layman.
+Dialogue: 0,0:07:21.89,0:07:24.58,Default,NTP,0,0,0,,本奖章，首次由教皇格里哥利颁发\N{\fs10\1c&HB4DCFC&}The award was first granted by Pope Gregory
+Dialogue: 0,0:07:24.64,0:07:27.18,Default,NTP,0,0,0,,柯利昂尼先生与拉斯维加斯赌场的关系怎么样？\N{\fs10\1c&HB4DCFC&}What about Mr. Corleone's connections with Las Vegas gambling?
+Dialogue: 0,0:07:27.89,0:07:29.84,Default,NTP,0,0,0,,资料袋中有些照片…\N{\fs10\1c&HB4DCFC&}Presskits have pictures of...
+Dialogue: 0,0:07:29.86,0:07:31.76,Default,NTP,0,0,0,,还有他跟黑社会的牵连呢？\N{\fs10\1c&HB4DCFC&}What about his involvement with the underworld?
+Dialogue: 0,0:07:31.99,0:07:33.46,Default,NTP,0,0,0,,别说废话了\N{\fs10\1c&HB4DCFC&}Cut the crap, huh?
+Dialogue: 0,0:07:34.10,0:07:36.86,Default,NTP,0,0,0,,教皇，圣父本人\N{\fs10\1c&HB4DCFC&}The pope, the Holy Father himself
+Dialogue: 0,0:07:37.19,0:07:40.04,Default,NTP,0,0,0,,派人在这一天赐福迈克尔·柯利昂尼\N{\fs10\1c&HB4DCFC&}has this very day blessed Michael Corleone.
+Dialogue: 0,0:07:40.05,0:07:41.77,Default,NTP,0,0,0,,你以为你比教皇更懂？\N{\fs10\1c&HB4DCFC&}You think you know better than the pope?
+Dialogue: 0,0:07:42.16,0:07:43.17,Default,NTP,0,0,0,,去啊，去啊\N{\fs10\1c&HB4DCFC&}Do it, do it.
+Dialogue: 0,0:07:43.19,0:07:44.56,Default,NTP,0,0,0,,- 文森特   - 干嘛？\N{\fs10\1c&HB4DCFC&}-Vincent! -Yes?
+Dialogue: 0,0:07:44.63,0:07:46.82,Default,NTP,0,0,0,,- 她爱你  - 是吗\N{\fs10\1c&HB4DCFC&}-She loves you. -Yeah?
+Dialogue: 0,0:07:51.74,0:07:53.20,Default,NTP,0,0,0,,我也爱你\N{\fs10\1c&HB4DCFC&}I love you, too!
+Dialogue: 0,0:07:59.13,0:08:02.40,Default,NTP,0,0,0,,嗨，文森，我记得你\N{\fs10\1c&HB4DCFC&}Hi Vincent. I remember you.
+Dialogue: 0,0:08:04.03,0:08:05.48,Default,NTP,0,0,0,,你记得我？在哪儿？\N{\fs10\1c&HB4DCFC&}You remember me? From where?
+Dialogue: 0,0:08:06.03,0:08:08.19,Default,NTP,0,0,0,,上次我们一起参加的派对上\N{\fs10\1c&HB4DCFC&}From the last time when we were at a party together
+Dialogue: 0,0:08:08.20,0:08:09.79,Default,NTP,0,0,0,,你以前去过俱乐部？\N{\fs10\1c&HB4DCFC&}Did you come down to the club?
+Dialogue: 0,0:08:09.86,0:08:11.38,Default,NTP,0,0,0,,不，是个婚礼\N{\fs10\1c&HB4DCFC&}No, it was a wedding.
+Dialogue: 0,0:08:11.46,0:08:12.52,Default,NTP,0,0,0,,婚礼？\N{\fs10\1c&HB4DCFC&}A wedding?
+Dialogue: 0,0:08:13.59,0:08:16.42,Default,NTP,0,0,0,,我当时8岁，你15岁\N{\fs10\1c&HB4DCFC&}I was 8; and you were 15
+Dialogue: 0,0:08:17.13,0:08:20.37,Default,NTP,0,0,0,,我…我15岁时有一堆女朋友\N{\fs10\1c&HB4DCFC&}Well I, I had a lot of girlfriends when I was 15.
+Dialogue: 0,0:08:20.39,0:08:21.25,Default,NTP,0,0,0,,8岁的吗？\N{\fs10\1c&HB4DCFC&}8 year olds?
+Dialogue: 0,0:08:21.26,0:08:22.53,Default,NTP,0,0,0,,尤其是8岁的\N{\fs10\1c&HB4DCFC&}Especially 8 year olds!
+Dialogue: 0,0:08:24.84,0:08:26.13,Default,NTP,0,0,0,,玛丽在哪里？\N{\fs10\1c&HB4DCFC&}Where's Mary?
+Dialogue: 0,0:08:27.05,0:08:29.03,Default,NTP,0,0,0,,拜托哪位叫玛丽一声\N{\fs10\1c&HB4DCFC&}Would somebody please tell Mary.
+Dialogue: 0,0:08:29.67,0:08:31.21,Default,NTP,0,0,0,,请原谅，阁下\N{\fs10\1c&HB4DCFC&}Excuse me your Excellency.
+Dialogue: 0,0:08:32.13,0:08:34.47,Default,NTP,0,0,0,,知道吗，你还没给我问候吻呢\N{\fs10\1c&HB4DCFC&}You know? You haven't kissed me hello yet.
+Dialogue: 0,0:08:34.63,0:08:36.25,Default,NTP,0,0,0,,亲戚相见总要亲吻\N{\fs10\1c&HB4DCFC&}Relatives always kiss.
+Dialogue: 0,0:08:36.28,0:08:37.87,Default,NTP,0,0,0,,哦，咱们还是亲戚？\N{\fs10\1c&HB4DCFC&}Oh, now we're related?
+Dialogue: 0,0:08:37.88,0:08:39.55,Default,NTP,0,0,0,,我是你的小堂妹\N{\fs10\1c&HB4DCFC&}I'm your little cousin.
+Dialogue: 0,0:08:47.63,0:08:48.92,Default,NTP,0,0,0,,你父亲是谁？\N{\fs10\1c&HB4DCFC&}Who's your father?
+Dialogue: 0,0:08:49.43,0:08:53.46,Default,NTP,0,0,0,,给你个提示：他是意大利人\N{\fs10\1c&HB4DCFC&}I'll give you a hint: he's Italian.
+Dialogue: 0,0:08:53.93,0:08:54.73,Default,NTP,0,0,0,,玛丽\N{\fs10\1c&HB4DCFC&}Mary!
+Dialogue: 0,0:08:55.20,0:08:56.99,Default,NTP,0,0,0,,玛丽，我们一直在等你\N{\fs10\1c&HB4DCFC&}Mary, we've been waiting for you.
+Dialogue: 0,0:08:57.53,0:08:58.46,Default,NTP,0,0,0,,记住\N{\fs10\1c&HB4DCFC&}Remember.
+Dialogue: 0,0:08:59.33,0:09:01.76,Default,NTP,0,0,0,,记住，声音要低，好吗？\N{\fs10\1c&HB4DCFC&}Remember now, keep your voice low, right?
+Dialogue: 0,0:09:01.84,0:09:04.43,Default,NTP,0,0,0,,还有微笑，别忘了笑\N{\fs10\1c&HB4DCFC&}And smile! Don't forget to smile.
+Dialogue: 0,0:09:16.80,0:09:18.36,Default,NTP,0,0,0,,爸爸，我好紧张\N{\fs10\1c&HB4DCFC&}Dady, I'm so nevous.
+Dialogue: 0,0:09:22.06,0:09:23.92,Default,NTP,0,0,0,,（意大利语）
+Dialogue: 0,0:09:24.62,0:09:28.62,Default,NTP,0,0,0,,维多·柯利昂尼基金会荣誉主席\N{\fs10\1c&HB4DCFC&}The honorary chairman of the Vito Corleone Foundation
+Dialogue: 0,0:09:28.69,0:09:30.83,Default,NTP,0,0,0,,我的女儿 玛丽·柯利昂尼\N{\fs10\1c&HB4DCFC&}My daughter, Mary Corleone.
+Dialogue: 0,0:09:40.74,0:09:41.53,Default,NTP,0,0,0,,谢谢\N{\fs10\1c&HB4DCFC&}Thanks.
+Dialogue: 0,0:09:43.61,0:09:47.27,Default,NTP,0,0,0,,我想我继承了我父亲爱演说的习惯\N{\fs10\1c&HB4DCFC&}I think I inherited my father's love for speech making
+Dialogue: 0,0:09:47.34,0:09:48.68,Default,NTP,0,0,0,,今天是这样的\N{\fs10\1c&HB4DCFC&}But here it goes
+Dialogue: 0,0:09:50.02,0:09:54.44,Default,NTP,0,0,0,,维多·柯利昂尼基金会在世界各国济贫\N{\fs10\1c&HB4DCFC&}The Vito Corleone Foundation helps the impoverished of every country
+Dialogue: 0,0:09:54.82,0:09:58.82,Default,NTP,0,0,0,,补助艺术家，资助医学研究\N{\fs10\1c&HB4DCFC&}gives grants to artists, funds medical research
+Dialogue: 0,0:09:59.19,0:10:03.76,Default,NTP,0,0,0,,尤其是致力于西西里的复兴\N{\fs10\1c&HB4DCFC&}and is particularly dedicated to the resurrection of Sicily.
+Dialogue: 0,0:10:04.44,0:10:06.26,Default,NTP,0,0,0,,吉尔戴总主教\N{\fs10\1c&HB4DCFC&}Archbishop Gilday
+Dialogue: 0,0:10:06.84,0:10:11.35,Default,NTP,0,0,0,,这里是给西西里穷人的一亿美元\N{\fs10\1c&HB4DCFC&}here is, $100,000,000 for the poor of Sicily
+Dialogue: 0,0:10:11.38,0:10:13.04,Default,NTP,0,0,0,,以维多·柯利昂尼之名捐出\N{\fs10\1c&HB4DCFC&}in the name of Vito Corleone.
+Dialogue: 0,0:10:13.72,0:10:15.51,Default,NTP,0,0,0,,不要全花在一个地方上\N{\fs10\1c&HB4DCFC&}Don't spend it all in one place!
+Dialogue: 0,0:10:34.09,0:10:34.86,Default,NTP,0,0,0,,玛丽\N{\fs10\1c&HB4DCFC&}Mary
+Dialogue: 0,0:10:38.29,0:10:39.56,Default,NTP,0,0,0,,我真为你骄傲\N{\fs10\1c&HB4DCFC&}I'm so proud of you.
+Dialogue: 0,0:10:46.27,0:10:47.23,Default,NTP,0,0,0,,迈克尔\N{\fs10\1c&HB4DCFC&}Michael
+Dialogue: 0,0:10:48.16,0:10:50.64,Default,NTP,0,0,0,,你为西西里做了一件伟大的事\N{\fs10\1c&HB4DCFC&}you've done a wonderful thing for Sicily.
+Dialogue: 0,0:10:51.85,0:10:55.41,Default,NTP,0,0,0,,我们惟愿钱用在有需要的人身上\N{\fs10\1c&HB4DCFC&}Well, let's just hope the money gets to the people who need it.
+Dialogue: 0,0:10:55.84,0:10:56.81,Default,NTP,0,0,0,,阿门\N{\fs10\1c&HB4DCFC&}Amen!
+Dialogue: 0,0:10:57.19,0:10:58.85,Default,NTP,0,0,0,,最重要的部分…\N{\fs10\1c&HB4DCFC&}But the most important part
+Dialogue: 0,0:11:00.02,0:11:02.42,Default,NTP,0,0,0,,约翰尼·方廷\N{\fs10\1c&HB4DCFC&}Johnny Fontane!
+Dialogue: 0,0:11:11.00,0:11:12.20,Default,NTP,0,0,0,,非常感谢\N{\fs10\1c&HB4DCFC&}Thank you very much.
+Dialogue: 0,0:11:12.66,0:11:13.86,Default,NTP,0,0,0,,我很高兴加入大家\N{\fs10\1c&HB4DCFC&}I'm happy to be here with you.
+Dialogue: 0,0:11:13.88,0:11:19.64,Default,NTP,0,0,0,,我也愿意让大家加入我 为迈克尔·柯利昂尼的表彰添彩\N{\fs10\1c&HB4DCFC&}and I'd like you to join me in honoring Commendatore Michael Corleone.
+Dialogue: 0,0:11:24.11,0:11:27.28,Default,NTP,0,0,0,,我特别为我们的主人和教父准备了礼物\N{\fs10\1c&HB4DCFC&}And I have something special for our host and Godfather.
+Dialogue: 0,0:11:27.46,0:11:29.79,Default,NTP,0,0,0,,我恰好知道他最喜爱的歌\N{\fs10\1c&HB4DCFC&}I just happen to know his favorite song.
+Dialogue: 0,0:11:29.81,0:11:30.76,Default,NTP,0,0,0,,迈克尔，你上哪儿去？\N{\fs10\1c&HB4DCFC&}Michael, where you going?
+Dialogue: 0,0:11:30.77,0:11:31.96,Default,NTP,0,0,0,,这是你最喜欢的歌\N{\fs10\1c&HB4DCFC&}It's your favorite song!
+Dialogue: 0,0:11:32.02,0:11:35.21,Default,NTP,0,0,0,,我想去厨房 听托尼·班奈特{\fs12}爵士乐大师{\r}的唱片\N{\fs10\1c&HB4DCFC&}Uh, I'm off here to the kitchen to hear some Tony Bennett records.
+Dialogue: 0,0:11:36.89,0:11:39.79,Default,NTP,0,0,0,,是你最喜欢的歌“他所有的香肠”\N{\fs10\1c&HB4DCFC&}It's your favorite song "Sausage His Own".
+Dialogue: 0,0:11:39.80,0:11:42.19,Default,NTP,0,0,0,,是啊，我正要去吃香肠三明治，就回来\N{\fs10\1c&HB4DCFC&}That's right; a sausage sandwich! I'll be back.
+Dialogue: 0,0:12:17.16,0:12:18.23,Default,NTP,0,0,0,,你好，凯伊\N{\fs10\1c&HB4DCFC&}Hello Kay
+Dialogue: 0,0:12:28.91,0:12:32.51,Default,NTP,0,0,0,,恭喜，迈克尔，这真是很大的荣耀\N{\fs10\1c&HB4DCFC&}Well congratulations, Michael, that's really quite an honor.
+Dialogue: 0,0:12:32.69,0:12:34.85,Default,NTP,0,0,0,,就是贵了一点，你说呢？\N{\fs10\1c&HB4DCFC&}It's a little expensive, wouldn't you say?
+Dialogue: 0,0:12:37.86,0:12:39.12,Default,NTP,0,0,0,,蛋糕？\N{\fs10\1c&HB4DCFC&}Cake?
+Dialogue: 0,0:12:39.91,0:12:41.25,Default,NTP,0,0,0,,不了，谢谢\N{\fs10\1c&HB4DCFC&}No thank you
+Dialogue: 0,0:12:55.30,0:12:58.17,Default,NTP,0,0,0,,- 很久了，对吧？  - 对\N{\fs10\1c&HB4DCFC&}-It's been a long time, hasn't it? -Uh huh. Yeah.
+Dialogue: 0,0:12:58.24,0:13:00.27,Default,NTP,0,0,0,,- 八年了  - 是啊\N{\fs10\1c&HB4DCFC&}-Eight years. -Yeah.
+Dialogue: 0,0:13:01.02,0:13:02.91,Default,NTP,0,0,0,,你的气色…好极了\N{\fs10\1c&HB4DCFC&}You look, wonderful.
+Dialogue: 0,0:13:06.26,0:13:08.70,Default,NTP,0,0,0,,你儿子有事要告诉你\N{\fs10\1c&HB4DCFC&}Your son has something he wants to talk to you about.
+Dialogue: 0,0:13:08.96,0:13:10.41,Default,NTP,0,0,0,,我是为他来的\N{\fs10\1c&HB4DCFC&}I came here for him.
+Dialogue: 0,0:13:14.87,0:13:15.65,Default,NTP,0,0,0,,谢谢你\N{\fs10\1c&HB4DCFC&}Thank you.
+Dialogue: 0,0:13:45.69,0:13:46.98,Default,NTP,0,0,0,,当律师有什么不好？\N{\fs10\1c&HB4DCFC&}What's wrong with being a lawyer?
+Dialogue: 0,0:13:47.03,0:13:48.86,Default,NTP,0,0,0,,没有，只是他不想当\N{\fs10\1c&HB4DCFC&}Nothing, except he doesn't want it.
+Dialogue: 0,0:13:48.91,0:13:51.73,Default,NTP,0,0,0,,他热爱音乐 他想以音乐为生\N{\fs10\1c&HB4DCFC&}He loves music, he wants his life to be in music.
+Dialogue: 0,0:13:52.97,0:13:55.34,Default,NTP,0,0,0,,音乐很好，我爱音乐\N{\fs10\1c&HB4DCFC&}Well music is great. I love music.
+Dialogue: 0,0:13:55.37,0:13:57.43,Default,NTP,0,0,0,,但是他应该有始有终\N{\fs10\1c&HB4DCFC&}But he should finish what he started.
+Dialogue: 0,0:13:57.56,0:13:58.74,Default,NTP,0,0,0,,安东尼…\N{\fs10\1c&HB4DCFC&}Anthony...
+Dialogue: 0,0:13:59.47,0:14:00.60,Default,NTP,0,0,0,,我要走自己的路\N{\fs10\1c&HB4DCFC&}I'm going my own way.
+Dialogue: 0,0:14:01.03,0:14:02.14,Default,NTP,0,0,0,,你自己的路？\N{\fs10\1c&HB4DCFC&}Your own way?
+Dialogue: 0,0:14:02.61,0:14:04.13,Default,NTP,0,0,0,,- 专业歌手？  - 正是\N{\fs10\1c&HB4DCFC&}-Professional singer? -That's right.
+Dialogue: 0,0:14:04.77,0:14:07.88,Default,NTP,0,0,0,,那要是…要是你失败了呢？\N{\fs10\1c&HB4DCFC&}And what happens what happens if you fail?
+Dialogue: 0,0:14:08.13,0:14:09.44,Default,NTP,0,0,0,,我不会失败的\N{\fs10\1c&HB4DCFC&}I won't fail.
+Dialogue: 0,0:14:09.83,0:14:11.42,Default,NTP,0,0,0,,人总是相信如此\N{\fs10\1c&HB4DCFC&}Men always believe that.
+Dialogue: 0,0:14:11.47,0:14:12.12,Default,NTP,0,0,0,,我知道\N{\fs10\1c&HB4DCFC&}I know.
+Dialogue: 0,0:14:12.53,0:14:15.95,Default,NTP,0,0,0,,如果你有个法律学位，你就有了保险\N{\fs10\1c&HB4DCFC&}If you have a Law degree, you're taking out insurance.
+Dialogue: 0,0:14:16.33,0:14:17.86,Default,NTP,0,0,0,,那以后你可以想干嘛干嘛\N{\fs10\1c&HB4DCFC&}After that you can do whatever you want.
+Dialogue: 0,0:14:17.87,0:14:20.22,Default,NTP,0,0,0,,- 你可以为我做事…  - 我绝不会为你做事\N{\fs10\1c&HB4DCFC&}-You can work for me... -I will never work for you.
+Dialogue: 0,0:14:21.53,0:14:23.20,Default,NTP,0,0,0,,我有许多糟糕的回忆\N{\fs10\1c&HB4DCFC&}I have bad memories.
+Dialogue: 0,0:14:25.03,0:14:28.24,Default,NTP,0,0,0,,每个家庭都有糟糕的回忆\N{\fs10\1c&HB4DCFC&}Every family has bad memories.
+Dialogue: 0,0:14:31.45,0:14:33.26,Default,NTP,0,0,0,,我永远会是你的儿子\N{\fs10\1c&HB4DCFC&}I will always be your son.
+Dialogue: 0,0:14:33.68,0:14:36.06,Default,NTP,0,0,0,,但我绝不会跟你的生意沾边\N{\fs10\1c&HB4DCFC&}But I will never have anything to do with your business.
+Dialogue: 0,0:14:38.28,0:14:39.51,Default,NTP,0,0,0,,安东尼\N{\fs10\1c&HB4DCFC&}Anthony
+Dialogue: 0,0:14:40.63,0:14:42.28,Default,NTP,0,0,0,,修完法律学位\N{\fs10\1c&HB4DCFC&}finish the Law degree.
+Dialogue: 0,0:14:43.53,0:14:44.72,Default,NTP,0,0,0,,不要\N{\fs10\1c&HB4DCFC&}No.
+Dialogue: 0,0:15:02.08,0:15:02.93,Default,NTP,0,0,0,,好啊\N{\fs10\1c&HB4DCFC&}Well
+Dialogue: 0,0:15:03.83,0:15:05.13,Default,NTP,0,0,0,,那是从你那儿来的\N{\fs10\1c&HB4DCFC&}that he got from you.
+Dialogue: 0,0:15:05.38,0:15:06.53,Default,NTP,0,0,0,,那句“不要”\N{\fs10\1c&HB4DCFC&}That "no."
+Dialogue: 0,0:15:09.03,0:15:12.01,Default,NTP,0,0,0,,你本应该帮我说服他，凯伊\N{\fs10\1c&HB4DCFC&}You could have helped me to convince him, Kay.
+Dialogue: 0,0:15:12.84,0:15:14.23,Default,NTP,0,0,0,,说服他干什么？\N{\fs10\1c&HB4DCFC&}Oh, convince him of what?
+Dialogue: 0,0:15:14.93,0:15:16.13,Default,NTP,0,0,0,,干什么？\N{\fs10\1c&HB4DCFC&}Of what?
+Dialogue: 0,0:15:16.96,0:15:19.38,Default,NTP,0,0,0,,他抛弃了自己的人生\N{\fs10\1c&HB4DCFC&}He throws his life away.
+Dialogue: 0,0:15:19.83,0:15:21.94,Default,NTP,0,0,0,,他抛弃了成就\N{\fs10\1c&HB4DCFC&}He throws greatness away.
+Dialogue: 0,0:15:22.93,0:15:24.24,Default,NTP,0,0,0,,这是成就？\N{\fs10\1c&HB4DCFC&}This is greatness?
+Dialogue: 0,0:15:25.68,0:15:27.81,Default,NTP,0,0,0,,你知道吗，迈克尔，因为你备受尊敬\N{\fs10\1c&HB4DCFC&}You know Michael, now that you're so respectable
+Dialogue: 0,0:15:27.83,0:15:30.33,Default,NTP,0,0,0,,我认为你比以往任何时候更加危险\N{\fs10\1c&HB4DCFC&}I think you're more dangerous than you ever were.
+Dialogue: 0,0:15:30.46,0:15:35.27,Default,NTP,0,0,0,,其实，我更喜欢还是普通黑手党打手时的你\N{\fs10\1c&HB4DCFC&}In fact, I preferred you when you were just a common Mafia hood.
+Dialogue: 0,0:15:35.83,0:15:36.47,Default,NTP,0,0,0,,凯伊\N{\fs10\1c&HB4DCFC&}Kay
+Dialogue: 0,0:15:38.03,0:15:40.91,Default,NTP,0,0,0,,- 我们能不能谈谈常识？  - 好吧\N{\fs10\1c&HB4DCFC&}-now can we talk common sense here? -All right.
+Dialogue: 0,0:15:40.94,0:15:41.77,Default,NTP,0,0,0,,好\N{\fs10\1c&HB4DCFC&}Okay.
+Dialogue: 0,0:15:48.40,0:15:50.68,Default,NTP,0,0,0,,安东尼知道你杀了弗雷多\N{\fs10\1c&HB4DCFC&}Tony knows that you killed Fredo.
+Dialogue: 0,0:15:57.58,0:15:58.92,Default,NTP,0,0,0,,你来这里是为了什么，凯伊？\N{\fs10\1c&HB4DCFC&}What did you come here for, Kay?
+Dialogue: 0,0:15:58.94,0:16:00.89,Default,NTP,0,0,0,,我来保护我儿子\N{\fs10\1c&HB4DCFC&}I came here to protect my son.
+Dialogue: 0,0:16:01.06,0:16:03.79,Default,NTP,0,0,0,,我不是来看你被你的教会装扮的\N{\fs10\1c&HB4DCFC&}I didn't come here to see you disguised by your church.
+Dialogue: 0,0:16:03.98,0:16:06.36,Default,NTP,0,0,0,,我认为那是一场可耻的典礼\N{\fs10\1c&HB4DCFC&}I think that was a shameful ceremony.
+Dialogue: 0,0:16:10.58,0:16:13.37,Default,NTP,0,0,0,,我耗费一生保护我的儿子\N{\fs10\1c&HB4DCFC&}I spent my life protecting my son.
+Dialogue: 0,0:16:13.89,0:16:17.17,Default,NTP,0,0,0,,我耗费一生保护我的家庭\N{\fs10\1c&HB4DCFC&}I spent my life protecting my FAMILY!
+Dialogue: 0,0:16:17.18,0:16:19.57,Default,NTP,0,0,0,,好了，咱们讲道理好吗？\N{\fs10\1c&HB4DCFC&}All right. Let's be reasonable, Okay?
+Dialogue: 0,0:16:20.73,0:16:23.46,Default,NTP,0,0,0,,那是你的大事，对吧，迈克尔？\N{\fs10\1c&HB4DCFC&}That's your big thing, isn't it, Michael?
+Dialogue: 0,0:16:24.28,0:16:25.37,Default,NTP,0,0,0,,讲道理\N{\fs10\1c&HB4DCFC&}Reason.
+Dialogue: 0,0:16:26.28,0:16:27.78,Default,NTP,0,0,0,,以谋杀做后备\N{\fs10\1c&HB4DCFC&}Backed up by murder.
+Dialogue: 0,0:16:28.83,0:16:30.18,Default,NTP,0,0,0,,噢，天啊\N{\fs10\1c&HB4DCFC&}Oh God
+Dialogue: 0,0:16:31.73,0:16:34.25,Default,NTP,0,0,0,,你恨我  你恨我\N{\fs10\1c&HB4DCFC&}You hate me, you hate me.
+Dialogue: 0,0:16:34.36,0:16:35.16,Default,NTP,0,0,0,,不\N{\fs10\1c&HB4DCFC&}No
+Dialogue: 0,0:16:35.26,0:16:36.36,Default,NTP,0,0,0,,我不恨你\N{\fs10\1c&HB4DCFC&}I don't hate you
+Dialogue: 0,0:16:38.58,0:16:40.13,Default,NTP,0,0,0,,我畏惧你\N{\fs10\1c&HB4DCFC&}I dread you.
+Dialogue: 0,0:16:43.83,0:16:45.74,Default,NTP,0,0,0,,我尽了我所能，凯伊\N{\fs10\1c&HB4DCFC&}I did what I could， Kay，
+Dialogue: 0,0:16:46.14,0:16:48.64,Default,NTP,0,0,0,,来保护 你们所有人\N{\fs10\1c&HB4DCFC&}to protect, all of you
+Dialogue: 0,0:16:48.94,0:16:50.97,Default,NTP,0,0,0,,不受世上的恐惧威胁\N{\fs10\1c&HB4DCFC&}from the horrors of this world.
+Dialogue: 0,0:16:51.78,0:16:54.24,Default,NTP,0,0,0,,可你成了我的恐惧\N{\fs10\1c&HB4DCFC&}But you became my horror.
+Dialogue: 0,0:17:03.73,0:17:07.72,Default,NTP,0,0,0,,不过孩子们依然爱你  尤其是玛丽\N{\fs10\1c&HB4DCFC&}The children still love you though. Especially Mary.
+Dialogue: 0,0:17:10.03,0:17:11.18,Default,NTP,0,0,0,,这就好\N{\fs10\1c&HB4DCFC&}That's something.
+Dialogue: 0,0:17:14.43,0:17:15.86,Default,NTP,0,0,0,,我们可以在这基础上建设\N{\fs10\1c&HB4DCFC&}We can build on that
+Dialogue: 0,0:17:16.78,0:17:18.47,Default,NTP,0,0,0,,为他们好\N{\fs10\1c&HB4DCFC&}For their sake.
+Dialogue: 0,0:17:21.78,0:17:23.13,Default,NTP,0,0,0,,我们试试吧\N{\fs10\1c&HB4DCFC&}Let's try.
+Dialogue: 0,0:17:23.83,0:17:26.74,Default,NTP,0,0,0,,除非你让托尼自由走出自己的人生\N{\fs10\1c&HB4DCFC&}Only if you let Tony go free to have his own life.
+Dialogue: 0,0:17:28.08,0:17:29.55,Default,NTP,0,0,0,,离开你\N{\fs10\1c&HB4DCFC&}Away from you.
+Dialogue: 0,0:17:36.48,0:17:38.26,Default,NTP,0,0,0,,我会让托尼走\N{\fs10\1c&HB4DCFC&}I'll let Tony go.
+Dialogue: 0,0:17:40.78,0:17:42.32,Default,NTP,0,0,0,,谢谢你\N{\fs10\1c&HB4DCFC&}Thank you.
+Dialogue: 0,0:18:20.93,0:18:23.14,Default,NTP,0,0,0,,你那双鞋可以用来伤人了\N{\fs10\1c&HB4DCFC&}You could hurt somebody with those.
+Dialogue: 0,0:18:24.33,0:18:26.37,Default,NTP,0,0,0,,你工作挺累的，我带你四处看看吧\N{\fs10\1c&HB4DCFC&}You've been working too hard, let me show you around.
+Dialogue: 0,0:18:26.44,0:18:28.60,Default,NTP,0,0,0,,你能帮我采访到迈克尔·柯利昂尼吗？\N{\fs10\1c&HB4DCFC&}Can you get me an interview with Michael Corleone?
+Dialogue: 0,0:18:29.11,0:18:31.64,Default,NTP,0,0,0,,不行，我是他的亲戚，但我做不到\N{\fs10\1c&HB4DCFC&}Uh, no. I'm a relative but I can't do that.
+Dialogue: 0,0:18:31.66,0:18:33.71,Default,NTP,0,0,0,,还有别的可以为你效劳的吗？\N{\fs10\1c&HB4DCFC&}What else can I do for you?
+Dialogue: 0,0:18:34.85,0:18:36.32,Default,NTP,0,0,0,,长得帅但没用\N{\fs10\1c&HB4DCFC&}Handsome but useless.
+Dialogue: 0,0:18:36.34,0:18:37.38,Default,NTP,0,0,0,,是吗？\N{\fs10\1c&HB4DCFC&}Oh yeah?
+Dialogue: 0,0:18:37.76,0:18:39.10,Default,NTP,0,0,0,,没事，我赌一赌\N{\fs10\1c&HB4DCFC&}That's okay. I'll gamble.
+Dialogue: 0,0:18:39.11,0:18:40.08,Default,NTP,0,0,0,,你喜欢赌？\N{\fs10\1c&HB4DCFC&}You like to gamble?
+Dialogue: 0,0:18:40.73,0:18:42.09,Default,NTP,0,0,0,,那我们去亚特兰大城\N{\fs10\1c&HB4DCFC&}So we go to Atlantic City
+Dialogue: 0,0:18:42.28,0:18:44.49,Default,NTP,0,0,0,,我的地盘，我让你看看怎么赌\N{\fs10\1c&HB4DCFC&}My town. I'll show you how to gamble.
+Dialogue: 0,0:18:44.56,0:18:47.12,Default,NTP,0,0,0,,好啊，不过我喜欢赢，你怎么知道哪一把能赢？\N{\fs10\1c&HB4DCFC&}Yeah, but I like to win. How will I know what numbers to pick?
+Dialogue: 0,0:18:47.63,0:18:49.23,Default,NTP,0,0,0,,你看我像个输家吗？\N{\fs10\1c&HB4DCFC&}Do I look okay like a guy who's gonna lose?
+Dialogue: 0,0:18:49.47,0:18:50.43,Default,NTP,0,0,0,,这个嘛\N{\fs10\1c&HB4DCFC&}Well...
+Dialogue: 0,0:18:52.97,0:18:55.24,Default,NTP,0,0,0,,那边那人样子可怕\N{\fs10\1c&HB4DCFC&}Spooky looking guy there.
+Dialogue: 0,0:18:56.23,0:18:59.12,Default,NTP,0,0,0,,这样的人来迈克尔·柯利昂尼家干什么？\N{\fs10\1c&HB4DCFC&}What is a guy like that doing at Michael Corleone's house?
+Dialogue: 0,0:18:59.18,0:19:01.07,Default,NTP,0,0,0,,那是乔伊·札萨的斗犬\N{\fs10\1c&HB4DCFC&}That's Joey Zasa's bulldog.
+Dialogue: 0,0:19:01.15,0:19:01.89,Default,NTP,0,0,0,,你认识那人？\N{\fs10\1c&HB4DCFC&}You know that guy?
+Dialogue: 0,0:19:02.00,0:19:03.24,Default,NTP,0,0,0,,对，我认识那个人\N{\fs10\1c&HB4DCFC&}Yeah I know that guy.
+Dialogue: 0,0:19:04.03,0:19:06.77,Default,NTP,0,0,0,,那个人，他名叫安东尼·斯库里亚诺\N{\fs10\1c&HB4DCFC&}That guy, his name is Anthony Squigliaro.
+Dialogue: 0,0:19:07.04,0:19:08.41,Default,NTP,0,0,0,,他们称他为“蚂蚁”\N{\fs10\1c&HB4DCFC&}They call him The Ant.
+Dialogue: 0,0:19:09.28,0:19:11.38,Default,NTP,0,0,0,,他把子弹浸氰化物\N{\fs10\1c&HB4DCFC&}He dips his bullets in Cyanide.
+Dialogue: 0,0:19:20.29,0:19:22.08,Default,NTP,0,0,0,,唐·阿尔托贝洛\N{\fs10\1c&HB4DCFC&}Don Altobello
+Dialogue: 0,0:19:23.54,0:19:26.06,Default,NTP,0,0,0,,我来表示敬意\N{\fs10\1c&HB4DCFC&}I came to pay my respects
+Dialogue: 0,0:19:26.33,0:19:27.50,Default,NTP,0,0,0,,谢谢{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Grazie.
+Dialogue: 0,0:19:30.50,0:19:32.50,Default,NTP,0,0,0,,你给我父亲的友谊增辉\N{\fs10\1c&HB4DCFC&}You honor my father's friendship.
+Dialogue: 0,0:19:33.20,0:19:35.47,Default,NTP,0,0,0,,我的教女在哪里？\N{\fs10\1c&HB4DCFC&}Where is my goddaughter?
+Dialogue: 0,0:19:36.77,0:19:38.07,Default,NTP,0,0,0,,康斯坦琪娅\N{\fs10\1c&HB4DCFC&}Constanzia,
+Dialogue: 0,0:19:39.78,0:19:44.48,Default,NTP,0,0,0,,不久前我还用这双衰老的手抱过你\N{\fs10\1c&HB4DCFC&}It was not so long ago I held you in these old hands
+Dialogue: 0,0:19:46.75,0:19:47.95,Default,NTP,0,0,0,,迈克尔\N{\fs10\1c&HB4DCFC&}Michael
+Dialogue: 0,0:19:48.45,0:19:49.62,Default,NTP,0,0,0,,请坐{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Piachere? Cominar
+Dialogue: 0,0:19:49.73,0:19:51.72,Default,NTP,0,0,0,,不不，我站着，我站着\N{\fs10\1c&HB4DCFC&}No, no. I stand; I stand
+Dialogue: 0,0:19:52.68,0:19:57.86,Default,NTP,0,0,0,,迈克尔，我已失去全部毒牙，全部年轻的活力\N{\fs10\1c&HB4DCFC&}Michael, I lost all the venom, all the juice of youth.
+Dialogue: 0,0:19:58.09,0:20:00.27,Default,NTP,0,0,0,,我失去了对女人的欲望\N{\fs10\1c&HB4DCFC&}I lost the lust for women
+Dialogue: 0,0:20:00.73,0:20:03.30,Default,NTP,0,0,0,,而现在我的头脑清楚了\N{\fs10\1c&HB4DCFC&}and now my mind is clear
+Dialogue: 0,0:20:03.93,0:20:06.37,Default,NTP,0,0,0,,我对上帝的责任也清楚了\N{\fs10\1c&HB4DCFC&}My duty to God is clear
+Dialogue: 0,0:20:07.08,0:20:10.64,Default,NTP,0,0,0,,我要特别请你帮忙\N{\fs10\1c&HB4DCFC&}I have a special favor to ask
+Dialogue: 0,0:20:11.74,0:20:12.92,Default,NTP,0,0,0,,我能不能…\N{\fs10\1c&HB4DCFC&}Can I...
+Dialogue: 0,0:20:14.03,0:20:18.92,Default,NTP,0,0,0,,把我的名字附加在柯利昂尼基金会上\N{\fs10\1c&HB4DCFC&}attach my name to the Vito Corleone Foundation
+Dialogue: 0,0:20:19.45,0:20:25.24,Default,NTP,0,0,0,,这样你我能在名义和精神上联合\N{\fs10\1c&HB4DCFC&}so that you and I can be joined in name and spirit
+Dialogue: 0,0:20:26.84,0:20:28.78,Default,NTP,0,0,0,,一百万美金\N{\fs10\1c&HB4DCFC&}One million dollars
+Dialogue: 0,0:20:34.77,0:20:35.81,Default,NTP,0,0,0,,教父\N{\fs10\1c&HB4DCFC&}Godfather
+Dialogue: 0,0:20:35.83,0:20:38.60,Default,NTP,0,0,0,,唐·阿尔托贝洛，你真善心\N{\fs10\1c&HB4DCFC&}Don Altobello, you have such heart
+Dialogue: 0,0:20:41.51,0:20:46.24,Default,NTP,0,0,0,,走，我们去品几杯意大利酒\N{\fs10\1c&HB4DCFC&}Come, let's go and sample some of Italy vino.
+Dialogue: 0,0:20:52.58,0:20:55.92,Default,NTP,0,0,0,,梵蒂冈对这些股东一无所知\N{\fs10\1c&HB4DCFC&}The Vatican knows nothing about these shareholders
+Dialogue: 0,0:20:56.24,0:20:57.18,Default,NTP,0,0,0,,好\N{\fs10\1c&HB4DCFC&}Good
+Dialogue: 0,0:20:57.56,0:20:59.38,Default,NTP,0,0,0,,我向来忧心忡忡\N{\fs10\1c&HB4DCFC&}I have a tendency to worry
+Dialogue: 0,0:20:59.83,0:21:03.58,Default,NTP,0,0,0,,我们已大幅增进了我们的地位，自然我会担忧\N{\fs10\1c&HB4DCFC&}We've increased our position substantially and naturally I worry
+Dialogue: 0,0:21:03.59,0:21:07.69,Default,NTP,0,0,0,,得了，洛缪，别担心了，我们有共识的\N{\fs10\1c&HB4DCFC&}Come on, Romeo, stop worrying. We have an agreement.
+Dialogue: 0,0:21:08.03,0:21:11.00,Default,NTP,0,0,0,,那就好  你以为我的灰发哪儿来的？\N{\fs10\1c&HB4DCFC&}Good. How do you think I got this grey hair?
+Dialogue: 0,0:21:11.04,0:21:12.09,Default,NTP,0,0,0,,柯利昂尼先生\N{\fs10\1c&HB4DCFC&}Mr. Corleone,
+Dialogue: 0,0:21:12.63,0:21:14.06,Default,NTP,0,0,0,,- 就两秒钟  - 法兰克，你好吗？\N{\fs10\1c&HB4DCFC&}-two seconds -Frank, how are you?
+Dialogue: 0,0:21:14.07,0:21:16.92,Default,NTP,0,0,0,,非常感谢你对游泳池建设的贡献\N{\fs10\1c&HB4DCFC&}Thank you very much for your contribution to the Board's swimming pool.
+Dialogue: 0,0:21:17.01,0:21:20.97,Default,NTP,0,0,0,,另外我们需要你帮助山姆·华莱士竞选法官\N{\fs10\1c&HB4DCFC&}And we need your help on Sam Wallace's candidacy for judgeship.
+Dialogue: 0,0:21:21.35,0:21:23.48,Default,NTP,0,0,0,,- 我们总是用得着一个好法官的  - 谢谢你\N{\fs10\1c&HB4DCFC&}-We always can use a good judge -Thank you
+Dialogue: 0,0:21:24.03,0:21:25.11,Default,NTP,0,0,0,,安德鲁\N{\fs10\1c&HB4DCFC&}Andrew!
+Dialogue: 0,0:21:25.62,0:21:28.03,Default,NTP,0,0,0,,阁下，我的教子安德鲁·黑根\N{\fs10\1c&HB4DCFC&}Your Excellency, my Godson, Andrew Hagan,
+Dialogue: 0,0:21:28.13,0:21:29.64,Default,NTP,0,0,0,,我的兄弟汤姆·黑根的大儿子\N{\fs10\1c&HB4DCFC&}my brother Tom Hagan's eldest boy.
+Dialogue: 0,0:21:30.00,0:21:34.02,Default,NTP,0,0,0,,- 他协助格林宁主教已经…  - 三年  - …三年了\N{\fs10\1c&HB4DCFC&}He's been assistant to Bishop Greening for... - 3 years - 3 years now.
+Dialogue: 0,0:21:34.27,0:21:36.09,Default,NTP,0,0,0,,期望调任梵蒂冈\N{\fs10\1c&HB4DCFC&}Hoping for an assignment to the Vatican.
+Dialogue: 0,0:21:36.26,0:21:38.76,Default,NTP,0,0,0,,罗马总是有位置给优秀的年轻牧师的\N{\fs10\1c&HB4DCFC&}There's always a place in Rome for a fine young priest.
+Dialogue: 0,0:21:38.80,0:21:40.33,Default,NTP,0,0,0,,他的母亲 泰瑞莎·黑根\N{\fs10\1c&HB4DCFC&}His mother Theresa Hagen
+Dialogue: 0,0:21:40.56,0:21:42.03,Default,NTP,0,0,0,,吉尔戴总主教\N{\fs10\1c&HB4DCFC&}Archbishop Gilday
+Dialogue: 0,0:21:42.73,0:21:44.06,Default,NTP,0,0,0,,很荣幸\N{\fs10\1c&HB4DCFC&}Honored to meet you.
+Dialogue: 0,0:21:44.34,0:21:47.07,Default,NTP,0,0,0,,柯利昂尼先生，你好，我是格蕾丝·汉密尔顿\N{\fs10\1c&HB4DCFC&}Mr. Corleone. Hi, Grace Hamilton.
+Dialogue: 0,0:21:48.44,0:21:51.17,Default,NTP,0,0,0,,文森特·曼西尼答应过会跟你提起我\N{\fs10\1c&HB4DCFC&}Vincent Mancini promised that he'd tell you about me.
+Dialogue: 0,0:21:51.33,0:21:52.51,Default,NTP,0,0,0,,说也许你会见我\N{\fs10\1c&HB4DCFC&}that maybe you'd see me.
+Dialogue: 0,0:21:53.36,0:21:56.28,Default,NTP,0,0,0,,- 文森特·曼西尼提到过她？  - 没有\N{\fs10\1c&HB4DCFC&}-Vincent Mancini called about her? -No
+Dialogue: 0,0:21:57.03,0:21:59.44,Default,NTP,0,0,0,,格蕾丝，你答应过我要待在那边的\N{\fs10\1c&HB4DCFC&}Grace, you promised me you'd stay up there.
+Dialogue: 0,0:21:59.45,0:22:01.55,Default,NTP,0,0,0,,- 我知道  - 两次  - 我知道\N{\fs10\1c&HB4DCFC&}-I know. -Twice. -I know.
+Dialogue: 0,0:22:02.23,0:22:03.94,Default,NTP,0,0,0,,乔伊·札萨露面了\N{\fs10\1c&HB4DCFC&}Joey Zasa showed up.
+Dialogue: 0,0:22:04.27,0:22:05.99,Default,NTP,0,0,0,,我们让他在门厅等\N{\fs10\1c&HB4DCFC&}We've got him waiting in the lobby.
+Dialogue: 0,0:22:06.24,0:22:10.26,Default,NTP,0,0,0,,他说要亲自恭贺并向你致敬\N{\fs10\1c&HB4DCFC&}Says he wants to personally congratulate you and show his respect.
+Dialogue: 0,0:22:10.73,0:22:11.92,Default,NTP,0,0,0,,我非得见他吗？\N{\fs10\1c&HB4DCFC&}Do I have to see him?
+Dialogue: 0,0:22:12.43,0:22:15.49,Default,NTP,0,0,0,,他说你是他的老板{\fs12}[法语]{\r}，而且他只要一分钟\N{\fs10\1c&HB4DCFC&}He says you're his patrone and he only wants a minute.
+Dialogue: 0,0:22:18.77,0:22:20.89,Default,NTP,0,0,0,,嘿，文尼\N{\fs10\1c&HB4DCFC&}Hey Vinnie!
+Dialogue: 0,0:22:21.88,0:22:23.06,Default,NTP,0,0,0,,你最喜欢的姑姑是谁？\N{\fs10\1c&HB4DCFC&}Who's your favorite Aunt?
+Dialogue: 0,0:22:23.07,0:22:23.87,Default,NTP,0,0,0,,是你\N{\fs10\1c&HB4DCFC&}You are.
+Dialogue: 0,0:22:27.25,0:22:30.05,Default,NTP,0,0,0,,今天我会跟迈克尔谈谈你的小麻烦\N{\fs10\1c&HB4DCFC&}Today I'm gonna talk to Michael about your little problem.
+Dialogue: 0,0:22:31.53,0:22:33.12,Default,NTP,0,0,0,,但愿你早跟我说，康\N{\fs10\1c&HB4DCFC&}I wish you would have warned me Conn',
+Dialogue: 0,0:22:33.13,0:22:34.98,Default,NTP,0,0,0,,我就可以穿好点的衣服来\N{\fs10\1c&HB4DCFC&}I could have worn a better suit.
+Dialogue: 0,0:22:36.28,0:22:39.22,Default,NTP,0,0,0,,梅乌奇协会选了你…\N{\fs10\1c&HB4DCFC&}The Meucci Association has elected you,
+Dialogue: 0,0:22:39.22,0:22:42.22,Default,NTP,0,0,0,,作为年度意裔美国人\N{\fs10\1c&HB4DCFC&}their Italian-American Man of the Year.
+Dialogue: 0,0:22:44.00,0:22:45.32,Default,NTP,0,0,0,,梅乌奇\N{\fs10\1c&HB4DCFC&}Meucci
+Dialogue: 0,0:22:48.18,0:22:49.46,Default,NTP,0,0,0,,梅乌奇是谁？\N{\fs10\1c&HB4DCFC&}Who's Meucci?
+Dialogue: 0,0:22:50.83,0:22:53.19,Default,NTP,0,0,0,,他是意裔美国人，发明了电话\N{\fs10\1c&HB4DCFC&}He's the Italian-American who invented the telephone.
+Dialogue: 0,0:22:53.41,0:22:56.70,Default,NTP,0,0,0,,比亚历山大·格拉汉姆·贝尔早了一年\N{\fs10\1c&HB4DCFC&}He did it one year before Alexander Graham Bell.
+Dialogue: 0,0:23:00.71,0:23:04.17,Default,NTP,0,0,0,,这就是你在这一天来到我家的原因吗？\N{\fs10\1c&HB4DCFC&}And this is the reason you've come to my home on this day.
+Dialogue: 0,0:23:06.13,0:23:07.55,Default,NTP,0,0,0,,去喂鱼{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Go feed the fish.
+Dialogue: 0,0:23:10.98,0:23:12.03,Default,NTP,0,0,0,,我\N{\fs10\1c&HB4DCFC&}I...
+Dialogue: 0,0:23:15.31,0:23:17.85,Default,NTP,0,0,0,,我鞋子里有颗硌人的石头，柯利昂尼先生\N{\fs10\1c&HB4DCFC&}I got a stone in my shoe, Mr. Corleone.
+Dialogue: 0,0:23:19.06,0:23:21.73,Default,NTP,0,0,0,,一个替我干活的小瘪三\N{\fs10\1c&HB4DCFC&}A two-bit punk who works for me
+Dialogue: 0,0:23:22.63,0:23:26.93,Default,NTP,0,0,0,,就是那个，自以为是你亲戚的\N{\fs10\1c&HB4DCFC&}The one who, thinks he's related to you.
+Dialogue: 0,0:23:28.27,0:23:29.44,Default,NTP,0,0,0,,一个私生子\N{\fs10\1c&HB4DCFC&}A bastard.
+Dialogue: 0,0:23:33.63,0:23:34.67,Default,NTP,0,0,0,,他在这里\N{\fs10\1c&HB4DCFC&}He's here.
+Dialogue: 0,0:23:34.95,0:23:38.35,Default,NTP,0,0,0,,文森特·曼西尼  他在宴会上\N{\fs10\1c&HB4DCFC&}Vincent Mancini. He's at the party.
+Dialogue: 0,0:23:41.33,0:23:42.33,Default,NTP,0,0,0,,带他进来\N{\fs10\1c&HB4DCFC&}Well bring him in.
+Dialogue: 0,0:23:44.36,0:23:47.25,Default,NTP,0,0,0,,我认为我们谈谈比较好\N{\fs10\1c&HB4DCFC&}I think it's good we talk.
+Dialogue: 0,0:23:47.63,0:23:50.12,Default,NTP,0,0,0,,不用，谢谢，请坐{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}No, no, grazie
+Dialogue: 0,0:23:51.55,0:23:52.90,Default,NTP,0,0,0,,我有个麻烦\N{\fs10\1c&HB4DCFC&}I have a problem
+Dialogue: 0,0:23:54.06,0:23:58.24,Default,NTP,0,0,0,,我想要搞清楚 它是我的麻烦\N{\fs10\1c&HB4DCFC&}and I want to find out if it is my problem
+Dialogue: 0,0:23:58.93,0:24:00.44,Default,NTP,0,0,0,,还是你的麻烦\N{\fs10\1c&HB4DCFC&}or your problem
+Dialogue: 0,0:24:00.48,0:24:02.47,Default,NTP,0,0,0,,乔，你的生意是你的生意\N{\fs10\1c&HB4DCFC&}Joe, your business is your business.
+Dialogue: 0,0:24:02.56,0:24:04.71,Default,NTP,0,0,0,,我既无利益也不分红\N{\fs10\1c&HB4DCFC&}I have no interests or percentage.
+Dialogue: 0,0:24:05.23,0:24:06.21,Default,NTP,0,0,0,,我是外人\N{\fs10\1c&HB4DCFC&}I'm out
+Dialogue: 0,0:24:06.90,0:24:07.74,Default,NTP,0,0,0,,很好\N{\fs10\1c&HB4DCFC&}Good.
+Dialogue: 0,0:24:09.43,0:24:10.61,Default,NTP,0,0,0,,那它就是我的麻烦了\N{\fs10\1c&HB4DCFC&}Then it's my problem.
+Dialogue: 0,0:24:14.56,0:24:17.34,Default,NTP,0,0,0,,迈克尔，你认识文森特·曼西尼\N{\fs10\1c&HB4DCFC&}Michael, you know Vincent Mancini
+Dialogue: 0,0:24:17.98,0:24:19.12,Default,NTP,0,0,0,,桑尼的儿子\N{\fs10\1c&HB4DCFC&}Sonny's boy.
+Dialogue: 0,0:24:20.83,0:24:22.52,Default,NTP,0,0,0,,你好吗，柯利昂尼先生？\N{\fs10\1c&HB4DCFC&}How you doin' Mr. Corleone?
+Dialogue: 0,0:24:23.06,0:24:24.22,Default,NTP,0,0,0,,你好吗？\N{\fs10\1c&HB4DCFC&}How you doing?
+Dialogue: 0,0:24:24.25,0:24:25.45,Default,NTP,0,0,0,,我挺好的，你好吗？\N{\fs10\1c&HB4DCFC&}I'm doin' good. How you doin'?
+Dialogue: 0,0:24:25.48,0:24:26.89,Default,NTP,0,0,0,,- 挺好  - 宴会不错\N{\fs10\1c&HB4DCFC&}-Good. -Good party.
+Dialogue: 0,0:24:27.43,0:24:28.14,Default,NTP,0,0,0,,哦，你喜欢？\N{\fs10\1c&HB4DCFC&}Oh you like it?
+Dialogue: 0,0:24:28.16,0:24:29.43,Default,NTP,0,0,0,,是，我只好溜进来\N{\fs10\1c&HB4DCFC&}Yeah, I had to sneak in.
+Dialogue: 0,0:24:29.60,0:24:31.07,Default,NTP,0,0,0,,哦，你专门打扮了\N{\fs10\1c&HB4DCFC&}Well, you're dressed for it.
+Dialogue: 0,0:24:35.88,0:24:37.01,Default,NTP,0,0,0,,那么…\N{\fs10\1c&HB4DCFC&}So...
+Dialogue: 0,0:24:37.38,0:24:40.51,Default,NTP,0,0,0,,你和乔·札萨先生有什么过节？\N{\fs10\1c&HB4DCFC&}what's the trouble between you and Mr. Joe Zasa?
+Dialogue: 0,0:24:42.23,0:24:44.07,Default,NTP,0,0,0,,是有麻烦，我会摆平的\N{\fs10\1c&HB4DCFC&}There's trouble. I'll take care of it.
+Dialogue: 0,0:24:45.29,0:24:46.48,Default,NTP,0,0,0,,你这样挺愚蠢\N{\fs10\1c&HB4DCFC&}That's foolish of you.
+Dialogue: 0,0:24:46.55,0:24:48.01,Default,NTP,0,0,0,,我蠢？\N{\fs10\1c&HB4DCFC&}Foolish of ME?
+Dialogue: 0,0:24:48.48,0:24:50.41,Default,NTP,0,0,0,,这家伙才有点蠢，你不觉得吗？\N{\fs10\1c&HB4DCFC&}It's a little foolish of this guy don't you think?
+Dialogue: 0,0:24:50.75,0:24:52.02,Default,NTP,0,0,0,,对不对？\N{\fs10\1c&HB4DCFC&}Right?
+Dialogue: 0,0:24:53.23,0:24:54.45,Default,NTP,0,0,0,,对不对？\N{\fs10\1c&HB4DCFC&}Right?
+Dialogue: 0,0:24:55.33,0:24:56.86,Default,NTP,0,0,0,,脾气像他父亲\N{\fs10\1c&HB4DCFC&}Temper like his father.
+Dialogue: 0,0:24:57.18,0:24:58.06,Default,NTP,0,0,0,,文森特\N{\fs10\1c&HB4DCFC&}Vincent.
+Dialogue: 0,0:25:00.53,0:25:02.31,Default,NTP,0,0,0,,乔·札萨先生目前拥有…\N{\fs10\1c&HB4DCFC&}Mr. Joe Zasa now owns
+Dialogue: 0,0:25:02.33,0:25:05.74,Default,NTP,0,0,0,,柯利昂尼家在纽约曾经的生意\N{\fs10\1c&HB4DCFC&}what used to be the Corleone family business, in New York.
+Dialogue: 0,0:25:06.33,0:25:10.04,Default,NTP,0,0,0,,出于好心，他给了你一份工作在他的家族里\N{\fs10\1c&HB4DCFC&}Out of the kindness of his heart he gave you a job in his family.
+Dialogue: 0,0:25:10.23,0:25:12.64,Default,NTP,0,0,0,,你违背我的建议 接受了这份工作\N{\fs10\1c&HB4DCFC&}Contrary to my advice, you took the job.
+Dialogue: 0,0:25:13.04,0:25:16.28,Default,NTP,0,0,0,,我曾给你提供更好的工作，在合法领域的\N{\fs10\1c&HB4DCFC&}I'd offered you something, better, in the legitimate world.
+Dialogue: 0,0:25:16.83,0:25:18.11,Default,NTP,0,0,0,,你回绝了我\N{\fs10\1c&HB4DCFC&}You turned me down.
+Dialogue: 0,0:25:18.43,0:25:22.05,Default,NTP,0,0,0,,现在，你俩都带着嫌恶来找我\N{\fs10\1c&HB4DCFC&}Now, you both come to me with this bad blood.
+Dialogue: 0,0:25:22.21,0:25:23.99,Default,NTP,0,0,0,,你们指望我怎么做？\N{\fs10\1c&HB4DCFC&}And what do you expect me to do?
+Dialogue: 0,0:25:25.33,0:25:26.48,Default,NTP,0,0,0,,我是黑帮吗？\N{\fs10\1c&HB4DCFC&}Am I a gangster?
+Dialogue: 0,0:25:26.49,0:25:27.75,Default,NTP,0,0,0,,不，你不是黑帮\N{\fs10\1c&HB4DCFC&}No, you're not a gangster.
+Dialogue: 0,0:25:27.76,0:25:29.72,Default,NTP,0,0,0,,那里曾是爸爸的街坊，现在是个臭水沟\N{\fs10\1c&HB4DCFC&}That's was Papa's neighborhood, now it's a sewer.
+Dialogue: 0,0:25:29.73,0:25:31.49,Default,NTP,0,0,0,,札萨把它管得一团糟...\N{\fs10\1c&HB4DCFC&}Zasa runs it like a disgrace
+Dialogue: 0,0:25:31.50,0:25:33.37,Default,NTP,0,0,0,,- 那些女人是这么跟我说的  - 那是过去了，康妮\N{\fs10\1c&HB4DCFC&}-...that's what the women tell me. - That's the past Connie.
+Dialogue: 0,0:25:33.38,0:25:35.83,Default,NTP,0,0,0,,我靠自己的本事赚得那块地盘\N{\fs10\1c&HB4DCFC&}I earned that territory with my talent.
+Dialogue: 0,0:25:36.28,0:25:39.56,Default,NTP,0,0,0,,委员会把它给了我，你也认可了\N{\fs10\1c&HB4DCFC&}Commission gave it to me, and you approved.
+Dialogue: 0,0:25:40.23,0:25:40.83,Default,NTP,0,0,0,,是的\N{\fs10\1c&HB4DCFC&}Yes.
+Dialogue: 0,0:25:41.13,0:25:42.03,Default,NTP,0,0,0,,迈克尔叔叔\N{\fs10\1c&HB4DCFC&}Uncle Michael
+Dialogue: 0,0:25:42.04,0:25:43.97,Default,NTP,0,0,0,,我来赴宴的，我不是来请求任何帮助的\N{\fs10\1c&HB4DCFC&}I came to the party here I'm not here to ask for any kind of help
+Dialogue: 0,0:25:43.98,0:25:45.37,Default,NTP,0,0,0,,我完全可以杀了这混蛋\N{\fs10\1c&HB4DCFC&}I could just kill this bastard
+Dialogue: 0,0:25:45.38,0:25:46.35,Default,NTP,0,0,0,,需要帮助的是他\N{\fs10\1c&HB4DCFC&}He's the one who needs the help.
+Dialogue: 0,0:25:46.36,0:25:47.74,Default,NTP,0,0,0,,那就杀了他\N{\fs10\1c&HB4DCFC&}So kill him
+Dialogue: 0,0:25:48.93,0:25:51.52,Default,NTP,0,0,0,,这些事和我有什么关系？\N{\fs10\1c&HB4DCFC&}What has all this have to do with me?
+Dialogue: 0,0:25:52.25,0:25:53.75,Default,NTP,0,0,0,,哦，他在你背后到处乱说\N{\fs10\1c&HB4DCFC&}Well, he's going around behind your back saying
+Dialogue: 0,0:25:53.76,0:25:55.25,Default,NTP,0,0,0,,“操他妈的迈克尔·柯利昂尼”\N{\fs10\1c&HB4DCFC&}fuck Michael Corleone all the time.
+Dialogue: 0,0:25:55.26,0:25:57.39,Default,NTP,0,0,0,,就这，这件事和你有关 对不对？\N{\fs10\1c&HB4DCFC&}That's it, see, that's one thing it has to do with you. Right?
+Dialogue: 0,0:25:57.49,0:26:00.48,Default,NTP,0,0,0,,当他的面说一次，当他的面说啊，就一次！\N{\fs10\1c&HB4DCFC&}Say it to his face, one time. Say it to his face, one time!
+Dialogue: 0,0:26:01.81,0:26:04.77,Default,NTP,0,0,0,,柯利昂尼先生，所有的私生子都撒谎\N{\fs10\1c&HB4DCFC&}Mr. Corleone, all bastards are liars.
+Dialogue: 0,0:26:04.78,0:26:06.74,Default,NTP,0,0,0,,莎士比亚为此写过诗\N{\fs10\1c&HB4DCFC&}Shakespeare wrote poems about it.
+Dialogue: 0,0:26:06.75,0:26:07.96,Default,NTP,0,0,0,,我该拿这人怎么办，迈克尔叔叔？\N{\fs10\1c&HB4DCFC&}What am I gonna do with this guy, Uncle Michael?
+Dialogue: 0,0:26:07.97,0:26:09.53,Default,NTP,0,0,0,,我该拿这人怎么办？\N{\fs10\1c&HB4DCFC&}WHAT AM I GONNA DO WITH THIS GUY?
+Dialogue: 0,0:26:16.05,0:26:17.24,Default,NTP,0,0,0,,乔伊\N{\fs10\1c&HB4DCFC&}Joey
+Dialogue: 0,0:26:17.88,0:26:20.75,Default,NTP,0,0,0,,如果有人在城里到处跑\N{\fs10\1c&HB4DCFC&}If there's some guy running around this city
+Dialogue: 0,0:26:21.13,0:26:23.46,Default,NTP,0,0,0,,说“操他妈的迈克尔·柯利昂尼”\N{\fs10\1c&HB4DCFC&}saying "fuck Michael Corleone"
+Dialogue: 0,0:26:24.98,0:26:28.54,Default,NTP,0,0,0,,我们该拿这坨屎怎么办？\N{\fs10\1c&HB4DCFC&}what do we do, with a piece of shit like that?
+Dialogue: 0,0:26:30.53,0:26:32.24,Default,NTP,0,0,0,,那他他妈的就是一条狗\N{\fs10\1c&HB4DCFC&}He's a fucking dog.
+Dialogue: 0,0:26:35.53,0:26:36.46,Default,NTP,0,0,0,,不是？\N{\fs10\1c&HB4DCFC&}No?
+Dialogue: 0,0:26:39.73,0:26:43.06,Default,NTP,0,0,0,,是的，没错，要是有人说这种话\N{\fs10\1c&HB4DCFC&}Yes it's true. If anyone would say such a thing,
+Dialogue: 0,0:26:43.56,0:26:44.68,Default,NTP,0,0,0,,他就不是朋友\N{\fs10\1c&HB4DCFC&}they would not be a friend.
+Dialogue: 0,0:26:44.93,0:26:46.53,Default,NTP,0,0,0,,就是一条狗\N{\fs10\1c&HB4DCFC&}They would be a dog.
+Dialogue: 0,0:26:53.11,0:26:55.42,Default,NTP,0,0,0,,我与札萨先生没有利害冲突\N{\fs10\1c&HB4DCFC&}My interests don't conflict with Mr. Joe Zasa's
+Dialogue: 0,0:26:55.43,0:26:58.89,Default,NTP,0,0,0,,哦，你不知道你的利益跟札萨先生有多大冲突，迈克尔叔叔\N{\fs10\1c&HB4DCFC&}Oh you don't know how much your interests conflict with Mr. Joe Zasa's, Uncle Michael.
+Dialogue: 0,0:26:59.45,0:27:00.57,Default,NTP,0,0,0,,文尼\N{\fs10\1c&HB4DCFC&}Vinnie
+Dialogue: 0,0:27:00.98,0:27:02.90,Default,NTP,0,0,0,,他需要你支持，迈克尔\N{\fs10\1c&HB4DCFC&}He needs your support, Michael.
+Dialogue: 0,0:27:03.34,0:27:05.11,Default,NTP,0,0,0,,别让我在跟这人混了，麦克叔叔\N{\fs10\1c&HB4DCFC&}Don't let me work for this guy no more Uncle Mike.
+Dialogue: 0,0:27:05.12,0:27:06.06,Default,NTP,0,0,0,,让我跟你做事吧\N{\fs10\1c&HB4DCFC&}let me come work for you.
+Dialogue: 0,0:27:06.08,0:27:07.15,Default,NTP,0,0,0,,- 替我做事？  - 是的\N{\fs10\1c&HB4DCFC&}-For me? -Yeah.
+Dialogue: 0,0:27:07.16,0:27:08.64,Default,NTP,0,0,0,,做什么?  当打手？\N{\fs10\1c&HB4DCFC&}As what? Tough guy?
+Dialogue: 0,0:27:08.95,0:27:10.14,Default,NTP,0,0,0,,我不需要打手\N{\fs10\1c&HB4DCFC&}I don't need tough guys.
+Dialogue: 0,0:27:10.83,0:27:12.78,Default,NTP,0,0,0,,我需要更多律师\N{\fs10\1c&HB4DCFC&}I need more lawyers.
+Dialogue: 0,0:27:15.29,0:27:17.95,Default,NTP,0,0,0,,既然咱们没有冲突，没有债务\N{\fs10\1c&HB4DCFC&}Since we have no conflicts, no debts
+Dialogue: 0,0:27:18.12,0:27:22.36,Default,NTP,0,0,0,,我接受你的馈赠，祝你如意\N{\fs10\1c&HB4DCFC&}I accept your tribute. I wish you well.
+Dialogue: 0,0:27:23.46,0:27:27.82,Default,NTP,0,0,0,,文森特，跟乔·札萨先生和好，过来\N{\fs10\1c&HB4DCFC&}Vincent, Make your peace with Mr. Joe Zasa. C'mon
+Dialogue: 0,0:27:31.17,0:27:32.53,Default,NTP,0,0,0,,好了，去啊\N{\fs10\1c&HB4DCFC&}Okay. Go on.
+Dialogue: 0,0:27:38.74,0:27:40.74,Default,NTP,0,0,0,,杂种{\fs12}[西班牙语]{\r}\N{\fs10\1c&HB4DCFC&}Bastardo.
+Dialogue: 0,0:27:45.98,0:27:46.47,Default,NTP,0,0,0,,文尼\N{\fs10\1c&HB4DCFC&}Vinnie
+Dialogue: 0,0:27:46.65,0:27:48.62,Default,NTP,0,0,0,,老天爷，你什么毛病？\N{\fs10\1c&HB4DCFC&}For Christ's sakes. What the hell is the matter with you?
+Dialogue: 0,0:27:49.09,0:27:50.45,Default,NTP,0,0,0,,带他出去\N{\fs10\1c&HB4DCFC&}Get him out of here.
+Dialogue: 0,0:27:52.60,0:27:54.35,Default,NTP,0,0,0,,哦，天\N{\fs10\1c&HB4DCFC&}Oh, Jesus.
+Dialogue: 0,0:27:55.29,0:27:57.79,Default,NTP,0,0,0,,麦克叔叔，我跟康妮说过时候不合适\N{\fs10\1c&HB4DCFC&}Uncle Michael, I told Connie it wasn't the right time for this.
+Dialogue: 0,0:27:57.80,0:27:59.16,Default,NTP,0,0,0,,关门\N{\fs10\1c&HB4DCFC&}Close it.
+Dialogue: 0,0:27:59.34,0:28:00.70,Default,NTP,0,0,0,,我知道你现在转入金融证券界\N{\fs10\1c&HB4DCFC&}I know you're into banks and Wall Street
+Dialogue: 0,0:28:00.71,0:28:03.10,Default,NTP,0,0,0,,但人人都知道你是话事人，就像最高法院\N{\fs10\1c&HB4DCFC&}But everyone knows you're the final word, like the Supreme Court.
+Dialogue: 0,0:28:03.11,0:28:06.13,Default,NTP,0,0,0,,我只想保护你不被这些人伤害，你的律师办不到\N{\fs10\1c&HB4DCFC&}All I wanna do is protect you from these guys. Your lawyers can't do that.
+Dialogue: 0,0:28:06.15,0:28:08.38,Default,NTP,0,0,0,,- 你能？  - 是的，我能\N{\fs10\1c&HB4DCFC&}-And you can? -Yeah, I can do that.
+Dialogue: 0,0:28:10.39,0:28:12.39,Default,NTP,0,0,0,,我为什么应该担心乔·札萨？\N{\fs10\1c&HB4DCFC&}And why should I be afraid of Joe Zasa?
+Dialogue: 0,0:28:12.54,0:28:15.75,Default,NTP,0,0,0,,他知道你不让他在委员会里升迁，麦克叔叔\N{\fs10\1c&HB4DCFC&}Well, he knows you're stopping him from rising up in the commission, Uncle Mike
+Dialogue: 0,0:28:15.89,0:28:19.09,Default,NTP,0,0,0,,要我说就杀了他，你给我命令，我来办\N{\fs10\1c&HB4DCFC&}I say we make him dead. You give me the order, I'll take care of it.
+Dialogue: 0,0:28:19.36,0:28:21.94,Default,NTP,0,0,0,,- 你来办？  - 是的\N{\fs10\1c&HB4DCFC&}-You'll take care of it? -Yeah.
+Dialogue: 0,0:28:25.63,0:28:29.30,Default,NTP,0,0,0,,也许你应该…跟随我几周\N{\fs10\1c&HB4DCFC&}Maybe you should come with me for a few weeks
+Dialogue: 0,0:28:29.57,0:28:30.64,Default,NTP,0,0,0,,看看会怎么样\N{\fs10\1c&HB4DCFC&}See what happens.
+Dialogue: 0,0:28:30.91,0:28:31.57,Default,NTP,0,0,0,,好的\N{\fs10\1c&HB4DCFC&}Okay.
+Dialogue: 0,0:28:31.74,0:28:32.97,Default,NTP,0,0,0,,看你能不能学点\N{\fs10\1c&HB4DCFC&}See if you learn
+Dialogue: 0,0:28:34.69,0:28:37.84,Default,NTP,0,0,0,,然后我们，再谈谈你的前途\N{\fs10\1c&HB4DCFC&}And, umm, we'll talk about your future.
+Dialogue: 0,0:28:38.90,0:28:40.02,Default,NTP,0,0,0,,我不会让你失望的\N{\fs10\1c&HB4DCFC&}I won't let you down.
+Dialogue: 0,0:28:47.69,0:28:48.84,Default,NTP,0,0,0,,快准备好了\N{\fs10\1c&HB4DCFC&}We're just about ready.
+Dialogue: 0,0:28:55.27,0:28:56.66,Default,NTP,0,0,0,,出了什么事？\N{\fs10\1c&HB4DCFC&}So what happened?
+Dialogue: 0,0:28:56.76,0:28:57.94,Default,NTP,0,0,0,,什么事？\N{\fs10\1c&HB4DCFC&}What happened?
+Dialogue: 0,0:28:57.99,0:28:59.84,Default,NTP,0,0,0,,他们让我跟乔伊·札萨共处一室，还会怎么样？\N{\fs10\1c&HB4DCFC&}They put me in a room with Joey Zasa. what's gonna happen?
+Dialogue: 0,0:28:59.87,0:29:00.90,Default,NTP,0,0,0,,我咬掉了那人的耳朵\N{\fs10\1c&HB4DCFC&}I bit the guy's ear off.
+Dialogue: 0,0:29:01.04,0:29:03.16,Default,NTP,0,0,0,,好，要照了，看牌子…\N{\fs10\1c&HB4DCFC&}Okay, here we go. Watch the card.
+Dialogue: 0,0:29:06.27,0:29:07.40,Default,NTP,0,0,0,,等一下\N{\fs10\1c&HB4DCFC&}Hold it
+Dialogue: 0,0:29:09.89,0:29:11.47,Default,NTP,0,0,0,,- 文森特  - 在\N{\fs10\1c&HB4DCFC&}-Vincent -Yeah
+Dialogue: 0,0:29:11.98,0:29:13.81,Default,NTP,0,0,0,,跟我们合照  来\N{\fs10\1c&HB4DCFC&}Take the picture with us. Come on.
+Dialogue: 0,0:29:21.39,0:29:22.89,Default,NTP,0,0,0,,外套不错\N{\fs10\1c&HB4DCFC&}Nice jacket.
+Dialogue: 0,0:29:25.09,0:29:27.15,Default,NTP,0,0,0,,往中央靠拢  先生\N{\fs10\1c&HB4DCFC&}Closer to the center, if you would, sir.
+Dialogue: 0,0:29:27.33,0:29:29.42,Default,NTP,0,0,0,,谢谢  要照了\N{\fs10\1c&HB4DCFC&}And here we go.
+Dialogue: 0,0:29:29.60,0:29:30.53,Default,NTP,0,0,0,,预备\N{\fs10\1c&HB4DCFC&}Ready
+Dialogue: 0,0:29:30.70,0:29:32.22,Default,NTP,0,0,0,,笑\N{\fs10\1c&HB4DCFC&}Smile.
+Dialogue: 0,0:29:32.90,0:29:34.43,Default,NTP,0,0,0,,好极了\N{\fs10\1c&HB4DCFC&}Excellent.
+Dialogue: 0,0:29:35.27,0:29:36.97,Default,NTP,0,0,0,,星期一的时候我会把照片送来\N{\fs10\1c&HB4DCFC&}I'll have it for you on Monday.
+Dialogue: 0,0:29:49.78,0:29:51.45,Default,NTP,0,0,0,,奶油蛋糕  漂亮\N{\fs10\1c&HB4DCFC&}Butter cake. Beautiful.
+Dialogue: 0,0:29:51.92,0:29:55.94,Default,NTP,0,0,0,,教父，这是给你和你家人的蛋糕，蛋糕师恩佐制作\N{\fs10\1c&HB4DCFC&}Godfather, this is the cake for you and your family from Enzo the baker.
+Dialogue: 0,0:29:56.03,0:29:57.35,Default,NTP,0,0,0,,谢谢\N{\fs10\1c&HB4DCFC&}Grazie.
+Dialogue: 0,0:29:57.93,0:29:59.39,Default,NTP,0,0,0,,你要切吗？好啊\N{\fs10\1c&HB4DCFC&}You want to do it? All right.
+Dialogue: 0,0:30:05.10,0:30:06.36,Default,NTP,0,0,0,,你领路\N{\fs10\1c&HB4DCFC&}You lead
+Dialogue: 0,0:30:45.44,0:30:50.86,Default,NTP,0,0,0,,百年 百年…{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Cent'anni! Cent'anni!
+Dialogue: 0,0:31:48.34,0:31:49.60,Default,NTP,0,0,0,,文森特\N{\fs10\1c&HB4DCFC&}Vincent
+Dialogue: 0,0:31:49.86,0:31:51.74,Default,NTP,0,0,0,,你要什么，亲爱的？\N{\fs10\1c&HB4DCFC&}What do you want, sweetheart?
+Dialogue: 0,0:31:53.74,0:31:55.10,Default,NTP,0,0,0,,你爱不爱我？\N{\fs10\1c&HB4DCFC&}Do you love me?
+Dialogue: 0,0:31:56.74,0:31:58.14,Default,NTP,0,0,0,,好了，睡觉吧\N{\fs10\1c&HB4DCFC&}Come on. Go to bed.
+Dialogue: 0,0:31:58.15,0:32:00.64,Default,NTP,0,0,0,,- 好啦，说嘛  - 好了 睡觉\N{\fs10\1c&HB4DCFC&}-Come on. Say it. -Come on. Go to bed.
+Dialogue: 0,0:32:00.65,0:32:02.88,Default,NTP,0,0,0,,- 不嘛，说嘛  - 我爱你  我爱你\N{\fs10\1c&HB4DCFC&}-No. Say it. -I love you. I love you.
+Dialogue: 0,0:32:03.78,0:32:05.78,Default,NTP,0,0,0,,我也爱你\N{\fs10\1c&HB4DCFC&}I love you too.
+Dialogue: 0,0:32:08.16,0:32:09.75,Default,NTP,0,0,0,,你有一只猫？\N{\fs10\1c&HB4DCFC&}You got a cat?
+Dialogue: 0,0:32:16.56,0:32:18.56,Default,NTP,0,0,0,,去给咱俩倒杯水好吗？我渴了\N{\fs10\1c&HB4DCFC&}Go get us some water, would you? I'm thirsty.
+Dialogue: 0,0:32:18.59,0:32:19.30,Default,NTP,0,0,0,,去吧\N{\fs10\1c&HB4DCFC&}C'mon
+Dialogue: 0,0:32:20.59,0:32:21.20,Default,NTP,0,0,0,,去吧\N{\fs10\1c&HB4DCFC&}C'mon
+Dialogue: 0,0:32:29.51,0:32:31.94,Default,NTP,0,0,0,,我想我明白自己的地位了\N{\fs10\1c&HB4DCFC&}Well, I just guess I know my place.
+Dialogue: 0,0:32:31.95,0:32:33.20,Default,NTP,0,0,0,,去吧去吧\N{\fs10\1c&HB4DCFC&}C'mon, c'mon
+Dialogue: 0,0:32:33.25,0:32:35.74,Default,NTP,0,0,0,,不敢相信我竟然真的起来做这事了\N{\fs10\1c&HB4DCFC&}I can't believe I'm actually getting up to do this.
+Dialogue: 0,0:32:36.87,0:32:38.71,Default,NTP,0,0,0,,给我倒杯水，焙个蛋糕\N{\fs10\1c&HB4DCFC&}Get me a glass of water, bake me a cake.
+Dialogue: 0,0:32:38.74,0:32:40.65,Default,NTP,0,0,0,,说个“请”字怎么了？\N{\fs10\1c&HB4DCFC&}Whatever happened to "please"?
+Dialogue: 0,0:33:27.97,0:33:31.27,Default,NTP,0,0,0,,来啊，好小子，袜子脸，我们走走\N{\fs10\1c&HB4DCFC&}C'mon! Good boy, sock-face. Let's go for a walk.
+Dialogue: 0,0:33:40.32,0:33:41.38,Default,NTP,0,0,0,,好了，放她走\N{\fs10\1c&HB4DCFC&}Hey. C'mon, let her go.
+Dialogue: 0,0:33:41.75,0:33:43.55,Default,NTP,0,0,0,,割了她他妈的喉咙\N{\fs10\1c&HB4DCFC&}Fucking cut her throat, man
+Dialogue: 0,0:33:45.85,0:33:46.82,Default,NTP,0,0,0,,你说什么？\N{\fs10\1c&HB4DCFC&}What'd you say?
+Dialogue: 0,0:33:46.84,0:33:48.99,Default,NTP,0,0,0,,我说割了她他妈的喉咙\N{\fs10\1c&HB4DCFC&}I said cut her fucking throat.
+Dialogue: 0,0:33:51.97,0:33:53.04,Default,NTP,0,0,0,,好了，伙计，放她走\N{\fs10\1c&HB4DCFC&}Okay, chief, let her go.
+Dialogue: 0,0:33:53.05,0:33:55.04,Default,NTP,0,0,0,,扔掉你的枪，哥们，否则他就割开她喉咙\N{\fs10\1c&HB4DCFC&}Drop your gun man, or he's gonna cut her throat.
+Dialogue: 0,0:33:55.45,0:33:57.13,Default,NTP,0,0,0,,你他妈疯了？我简直不认识这妞\N{\fs10\1c&HB4DCFC&}What are you fucking crazy, I hardly know this broad.
+Dialogue: 0,0:33:57.30,0:33:59.43,Default,NTP,0,0,0,,动手吧，割了她，我他妈会在乎？\N{\fs10\1c&HB4DCFC&}Go ahead, cut her, what the fuck do I care?
+Dialogue: 0,0:34:01.54,0:34:04.86,Default,NTP,0,0,0,,由不得你  这妞死定了\N{\fs10\1c&HB4DCFC&}You got no choice man, the chick's gonna be dead.
+Dialogue: 0,0:34:05.27,0:34:07.33,Default,NTP,0,0,0,,你敢伤她 我杀了你们两个\N{\fs10\1c&HB4DCFC&}You hurt her and I'll kill you both.
+Dialogue: 0,0:34:07.84,0:34:09.29,Default,NTP,0,0,0,,你放下那把刀，我放你走\N{\fs10\1c&HB4DCFC&}You give up that knife, I'll let you go.
+Dialogue: 0,0:34:09.31,0:34:11.36,Default,NTP,0,0,0,,割了她的喉咙，马上\N{\fs10\1c&HB4DCFC&}You cut her throat man, RIGHT NOW!
+Dialogue: 0,0:34:11.95,0:34:12.84,Default,NTP,0,0,0,,喂\N{\fs10\1c&HB4DCFC&}HEY!
+Dialogue: 0,0:34:13.19,0:34:14.82,Default,NTP,0,0,0,,我会做一件事说服你，别被吓着\N{\fs10\1c&HB4DCFC&}I'm gonna do something to convince you. Don't get frightened.
+Dialogue: 0,0:34:14.86,0:34:17.08,Default,NTP,0,0,0,,别作突然的动作，看着我就好，好吗？\N{\fs10\1c&HB4DCFC&}Don't do any sudden movements, just watch me, all right?
+Dialogue: 0,0:34:17.44,0:34:18.44,Default,NTP,0,0,0,,- 你听见我说的了？  - 对\N{\fs10\1c&HB4DCFC&}-You hear what I said? -Yeah.
+Dialogue: 0,0:34:18.49,0:34:19.78,Default,NTP,0,0,0,,好\N{\fs10\1c&HB4DCFC&}Okay.
+Dialogue: 0,0:34:23.56,0:34:24.94,Default,NTP,0,0,0,,噢，该死！\N{\fs10\1c&HB4DCFC&}Oh, shit!
+Dialogue: 0,0:34:26.56,0:34:29.04,Default,NTP,0,0,0,,放下刀，快，放下\N{\fs10\1c&HB4DCFC&}Drop the knife，g'head, DROP IT!
+Dialogue: 0,0:34:29.43,0:34:30.49,Default,NTP,0,0,0,,好孩子\N{\fs10\1c&HB4DCFC&}Good boy.
+Dialogue: 0,0:34:31.21,0:34:32.49,Default,NTP,0,0,0,,坐下，我有话跟你说\N{\fs10\1c&HB4DCFC&}Sit down I wanna talk to you.
+Dialogue: 0,0:34:33.14,0:34:35.06,Default,NTP,0,0,0,,这才聪明，坐下，我有话跟你说\N{\fs10\1c&HB4DCFC&}That was a wise choice, sit down. I wanna talk to you.
+Dialogue: 0,0:34:36.07,0:34:37.64,Default,NTP,0,0,0,,取下面罩\N{\fs10\1c&HB4DCFC&}Lose the mask.
+Dialogue: 0,0:34:40.98,0:34:43.03,Default,NTP,0,0,0,,放松，抽支烟，你抽烟不？\N{\fs10\1c&HB4DCFC&}Relax, have a smoke, you smoke?
+Dialogue: 0,0:34:46.18,0:34:47.45,Default,NTP,0,0,0,,这是谁的主意？\N{\fs10\1c&HB4DCFC&}Whose idea was this?
+Dialogue: 0,0:34:47.85,0:34:48.92,Default,NTP,0,0,0,,- 谁派你来的？  - 该死\N{\fs10\1c&HB4DCFC&}-Who sent you? -Shit!
+Dialogue: 0,0:34:49.65,0:34:51.36,Default,NTP,0,0,0,,来，告诉我，谁派你来的？\N{\fs10\1c&HB4DCFC&}C'mon tell me, who sent you?
+Dialogue: 0,0:34:54.57,0:34:55.33,Default,NTP,0,0,0,,没人\N{\fs10\1c&HB4DCFC&}No one.
+Dialogue: 0,0:34:55.37,0:34:57.04,Default,NTP,0,0,0,,你好好看过这家伙没？\N{\fs10\1c&HB4DCFC&}Take a good look at this guy?
+Dialogue: 0,0:34:57.43,0:34:58.59,Default,NTP,0,0,0,,是\N{\fs10\1c&HB4DCFC&}Yeah.
+Dialogue: 0,0:34:58.70,0:35:00.04,Default,NTP,0,0,0,,那是谁派你来的？\N{\fs10\1c&HB4DCFC&}So who sent you?
+Dialogue: 0,0:35:02.50,0:35:04.84,Default,NTP,0,0,0,,是乔伊，乔伊·札萨\N{\fs10\1c&HB4DCFC&}It was Joey, Joey Zasa.
+Dialogue: 0,0:35:05.04,0:35:06.30,Default,NTP,0,0,0,,不\N{\fs10\1c&HB4DCFC&}No!
+Dialogue: 0,0:35:19.25,0:35:20.24,Default,NTP,0,0,0,,你没事吧？\N{\fs10\1c&HB4DCFC&}You Okay?
+Dialogue: 0,0:35:23.99,0:35:25.84,Default,NTP,0,0,0,,你刚才打算让他们杀了我\N{\fs10\1c&HB4DCFC&}You were gonna let them kill me!
+Dialogue: 0,0:35:25.89,0:35:27.27,Default,NTP,0,0,0,,不，我不会让你有什么事的\N{\fs10\1c&HB4DCFC&}No, I wasn't gonna let anything happen to you.
+Dialogue: 0,0:35:27.29,0:35:30.45,Default,NTP,0,0,0,,你这头猪，你他妈变态\N{\fs10\1c&HB4DCFC&}You pig! You sick fuck!
+Dialogue: 0,0:35:31.99,0:35:33.26,Default,NTP,0,0,0,,好了，亲，那就是赌\N{\fs10\1c&HB4DCFC&}C'mon sweetheart, that's gambling.
+Dialogue: 0,0:35:33.27,0:35:34.61,Default,NTP,0,0,0,,你不是要赌吗？那就是赌\N{\fs10\1c&HB4DCFC&}You wanted gambling, that's gambling.
+Dialogue: 0,0:35:34.63,0:35:35.94,Default,NTP,0,0,0,,报警吧\N{\fs10\1c&HB4DCFC&}Call the police.
+Dialogue: 0,0:35:40.04,0:35:42.10,Default,NTP,0,0,0,,你把另一个也杀了？\N{\fs10\1c&HB4DCFC&}You killed the other guy, too?
+Dialogue: 0,0:35:42.27,0:35:43.11,Default,NTP,0,0,0,,来夺我的枪\N{\fs10\1c&HB4DCFC&}Went for my gun.
+Dialogue: 0,0:35:44.59,0:35:46.64,Default,NTP,0,0,0,,自卫，正当杀人\N{\fs10\1c&HB4DCFC&}Self defense, justifiable homicide.
+Dialogue: 0,0:35:46.65,0:35:48.44,Default,NTP,0,0,0,,去吧，打电话报警\N{\fs10\1c&HB4DCFC&}Go ahead, call the police.
+Dialogue: 0,0:35:49.18,0:35:50.40,Default,NTP,0,0,0,,你去哪儿？不不不\N{\fs10\1c&HB4DCFC&}Where you goin'? Oh no, no, no.
+Dialogue: 0,0:35:50.41,0:35:52.31,Default,NTP,0,0,0,,- 我要先拍几张照  - 不能拍\N{\fs10\1c&HB4DCFC&}-I'm gonna take some pictures first. -No pictures
+Dialogue: 0,0:35:53.74,0:35:54.71,Default,NTP,0,0,0,,不要\N{\fs10\1c&HB4DCFC&}No.
+Dialogue: 0,0:35:54.92,0:35:56.04,Default,NTP,0,0,0,,你有枪\N{\fs10\1c&HB4DCFC&}You had a gun.
+Dialogue: 0,0:35:56.48,0:35:58.06,Default,NTP,0,0,0,,他们只有刀\N{\fs10\1c&HB4DCFC&}They only had a knife.
+Dialogue: 0,0:35:58.41,0:36:00.04,Default,NTP,0,0,0,,你本可以叫他们投降\N{\fs10\1c&HB4DCFC&}You could have talked them into surrendering;
+Dialogue: 0,0:36:00.06,0:36:01.68,Default,NTP,0,0,0,,把他们交给警方\N{\fs10\1c&HB4DCFC&}handed them over to the police.
+Dialogue: 0,0:36:02.39,0:36:05.52,Default,NTP,0,0,0,,札萨派来这俩人，我只是给他一个信息，就这样\N{\fs10\1c&HB4DCFC&}Zasa sent these guys, I just sent him a message. That's all.
+Dialogue: 0,0:36:06.36,0:36:08.01,Default,NTP,0,0,0,,现在他又得回敬你一个信息\N{\fs10\1c&HB4DCFC&}Now he has to send you a message back.
+Dialogue: 0,0:36:08.02,0:36:09.88,Default,NTP,0,0,0,,乔伊·札萨要回敬我？\N{\fs10\1c&HB4DCFC&}Joey Zasa's gonna send ME a message back?
+Dialogue: 0,0:36:10.09,0:36:11.73,Default,NTP,0,0,0,,乔伊·札萨想回敬我？\N{\fs10\1c&HB4DCFC&}Joey Zasa's gonna send ME a message.
+Dialogue: 0,0:36:11.75,0:36:14.70,Default,NTP,0,0,0,,他做得对，他问出了札萨的名字\N{\fs10\1c&HB4DCFC&}He did the right thing, he got Zasa's name.
+Dialogue: 0,0:36:14.94,0:36:16.78,Default,NTP,0,0,0,,干嘛非得把乔伊·札萨扯进来？\N{\fs10\1c&HB4DCFC&}What has Joey Zasa got to with anything,
+Dialogue: 0,0:36:16.79,0:36:20.26,Default,NTP,0,0,0,,乔伊·札萨是个狂人，乔伊·札萨\N{\fs10\1c&HB4DCFC&}Joey Zasa's a potzle. Joey Zasa.
+Dialogue: 0,0:36:22.18,0:36:24.37,Default,NTP,0,0,0,,好吧，你就是你\N{\fs10\1c&HB4DCFC&}All right, you are what you are.
+Dialogue: 0,0:36:25.48,0:36:26.47,Default,NTP,0,0,0,,那是你的天性\N{\fs10\1c&HB4DCFC&}It's your nature.
+Dialogue: 0,0:36:26.88,0:36:29.95,Default,NTP,0,0,0,,你紧跟着我，什么也别做\N{\fs10\1c&HB4DCFC&}You stay close to me. You don't do anything.
+Dialogue: 0,0:36:30.42,0:36:32.55,Default,NTP,0,0,0,,你把嘴巴闭紧 眼睛睁大\N{\fs10\1c&HB4DCFC&}You keep your mouth shut, and your eyes open.
+Dialogue: 0,0:36:32.95,0:36:35.49,Default,NTP,0,0,0,,- 你照我的吩咐做，懂不懂？  - 我懂\N{\fs10\1c&HB4DCFC&}-And you do what I tell you. Understand? -Understand.
+Dialogue: 0,0:36:35.79,0:36:38.99,Default,NTP,0,0,0,,- 我跟委员会之间有问题，年轻人  - 这我知道\N{\fs10\1c&HB4DCFC&}-I got problems with the Commission, young man. -I know thar.
+Dialogue: 0,0:36:39.00,0:36:41.13,Default,NTP,0,0,0,,是啊，你是越帮越忙\N{\fs10\1c&HB4DCFC&}Yes. You don't make them easier.
+Dialogue: 0,0:36:41.16,0:36:43.94,Default,NTP,0,0,0,,这我知道，也不是我想要搞出这种事的，你看\N{\fs10\1c&HB4DCFC&}I understand that, it wasn't my idea that this happened, you know?
+Dialogue: 0,0:36:44.87,0:36:46.26,Default,NTP,0,0,0,,好了，走吧，出去吧\N{\fs10\1c&HB4DCFC&}All right. Go on, get out of here.
+Dialogue: 0,0:36:46.56,0:36:47.27,Default,NTP,0,0,0,,迈克尔\N{\fs10\1c&HB4DCFC&}Michael
+Dialogue: 0,0:36:48.02,0:36:48.94,Default,NTP,0,0,0,,什么？\N{\fs10\1c&HB4DCFC&}Yes?
+Dialogue: 0,0:36:50.84,0:36:52.47,Default,NTP,0,0,0,,现在他们会怕你了\N{\fs10\1c&HB4DCFC&}Now they'll fear you.
+Dialogue: 0,0:36:53.22,0:36:54.90,Default,NTP,0,0,0,,也许他们应该怕你\N{\fs10\1c&HB4DCFC&}Maybe they should fear you.
+Dialogue: 0,0:36:58.68,0:37:00.50,Default,NTP,0,0,0,,BJ，抱歉，什么事？\N{\fs10\1c&HB4DCFC&}B.J., excuse me. what's up?
+Dialogue: 0,0:37:00.59,0:37:02.38,Default,NTP,0,0,0,,迈克尔，总主教刚回了电话\N{\fs10\1c&HB4DCFC&}Michael, the Archbishop just called back.
+Dialogue: 0,0:37:02.55,0:37:05.25,Default,NTP,0,0,0,,他为你的投标做了一些出色的安排\N{\fs10\1c&HB4DCFC&}He's arranged some amazing things for your bidding.
+Dialogue: 0,0:37:05.29,0:37:09.45,Default,NTP,0,0,0,,宣传效果显著，你成了慈善界的新洛克菲勒\N{\fs10\1c&HB4DCFC&}Publicity is phenomenal. You're the new Rockefeller of philanthropy.
+Dialogue: 0,0:37:11.69,0:37:13.05,Default,NTP,0,0,0,,请在这里签名\N{\fs10\1c&HB4DCFC&}Sign right here please.
+Dialogue: 0,0:37:13.11,0:37:15.29,Default,NTP,0,0,0,,时代的确变了，对吧？\N{\fs10\1c&HB4DCFC&}Times do change, don't they?
+Dialogue: 0,0:37:15.84,0:37:18.62,Default,NTP,0,0,0,,我父亲讨厌基金会\N{\fs10\1c&HB4DCFC&}My father hated foundations.
+Dialogue: 0,0:37:19.04,0:37:20.93,Default,NTP,0,0,0,,他喜欢亲力亲为\N{\fs10\1c&HB4DCFC&}He loved doing it by himself.
+Dialogue: 0,0:37:21.46,0:37:24.07,Default,NTP,0,0,0,,人对人 但我们，我们不一样了\N{\fs10\1c&HB4DCFC&}Man to man. But we, we're different, huh?
+Dialogue: 0,0:37:24.27,0:37:27.00,Default,NTP,0,0,0,,跟那些大企业没什么不同\N{\fs10\1c&HB4DCFC&}It's no different than any large corporation.
+Dialogue: 0,0:37:27.24,0:37:29.51,Default,NTP,0,0,0,,我们以小钱控制大钱\N{\fs10\1c&HB4DCFC&}We control a lot of money with very little.
+Dialogue: 0,0:37:29.71,0:37:34.67,Default,NTP,0,0,0,,交最少的税 不受政府控制\N{\fs10\1c&HB4DCFC&}Minimize taxes, with, no government control.
+Dialogue: 0,0:37:37.89,0:37:39.08,Default,NTP,0,0,0,,什么事？\N{\fs10\1c&HB4DCFC&}Yes?
+Dialogue: 0,0:37:41.26,0:37:42.27,Default,NTP,0,0,0,,好\N{\fs10\1c&HB4DCFC&}Right.
+Dialogue: 0,0:37:42.92,0:37:44.25,Default,NTP,0,0,0,,教父\N{\fs10\1c&HB4DCFC&}Godfather.
+Dialogue: 0,0:37:44.79,0:37:46.35,Default,NTP,0,0,0,,安德鲁\N{\fs10\1c&HB4DCFC&}Andrew.
+Dialogue: 0,0:37:46.93,0:37:49.83,Default,NTP,0,0,0,,- 教父  - 要去罗马了\N{\fs10\1c&HB4DCFC&}-Godfather.  -Off to Rome.
+Dialogue: 0,0:37:50.03,0:37:52.43,Default,NTP,0,0,0,,我要感激你为我做的一切\N{\fs10\1c&HB4DCFC&}I wanted to thank you for all you've done for me.
+Dialogue: 0,0:37:52.93,0:37:55.86,Default,NTP,0,0,0,,- 来，你要跟我们一起吃点早餐吗？  - 不，谢谢，不行\N{\fs10\1c&HB4DCFC&}-C'mon, you want to have some breakfast with us? -No thanks I can't.
+Dialogue: 0,0:37:56.24,0:37:57.89,Default,NTP,0,0,0,,好的，你的意大利语怎么样？\N{\fs10\1c&HB4DCFC&}All right. How's your Italian?
+Dialogue: 0,0:37:58.14,0:37:59.50,Default,NTP,0,0,0,,我需要练习{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Devo fare un po'di pratica.
+Dialogue: 0,0:38:01.58,0:38:04.14,Default,NTP,0,0,0,,- 他父亲是个大律师  - 我知道\N{\fs10\1c&HB4DCFC&}-His father was a great lawyer. -I know.
+Dialogue: 0,0:38:04.19,0:38:06.52,Default,NTP,0,0,0,,没活到看他被授圣职，我看到了\N{\fs10\1c&HB4DCFC&}Didn't live to see him ordained. I did.
+Dialogue: 0,0:38:06.58,0:38:07.67,Default,NTP,0,0,0,,你见过那种场面吗？\N{\fs10\1c&HB4DCFC&}You ever seen one of those?
+Dialogue: 0,0:38:08.88,0:38:11.98,Default,NTP,0,0,0,,真漂亮，我以你为傲，来，我送你出去\N{\fs10\1c&HB4DCFC&}Oh, beautiful. I was so proud. Come on, let me walk you out.
+Dialogue: 0,0:38:13.59,0:38:15.69,Default,NTP,0,0,0,,安德鲁，要是你在梵蒂冈听到什么流言…\N{\fs10\1c&HB4DCFC&}Andrew, if you hear any rumors flying around the Vatican
+Dialogue: 0,0:38:15.70,0:38:19.46,Default,NTP,0,0,0,,- 要让我知道  - 不不，安德鲁是真信仰\N{\fs10\1c&HB4DCFC&}-you let me know about it  -Oh no, no. Andrew has the true faith.
+Dialogue: 0,0:38:21.77,0:38:23.47,Default,NTP,0,0,0,,动议讨论事项\N{\fs10\1c&HB4DCFC&}The motion and a discussion
+Dialogue: 0,0:38:23.49,0:38:26.64,Default,NTP,0,0,0,,关于柯利昂尼集团所提议\N{\fs10\1c&HB4DCFC&}relates to Corleone Group's proposal
+Dialogue: 0,0:38:26.84,0:38:32.51,Default,NTP,0,0,0,,要取得一亿新发A级表决权股票\N{\fs10\1c&HB4DCFC&}to acquire 100 million newly issued class "A' ' voting shares.
+Dialogue: 0,0:38:34.19,0:38:40.64,Default,NTP,0,0,0,,柯利昂尼资金直接注入“国际屹莫比”\N{\fs10\1c&HB4DCFC&}Corleone's capital invested directly into International Immobiliare
+Dialogue: 0,0:38:40.92,0:38:44.58,Default,NTP,0,0,0,,一家古老而受尊敬的欧洲公司\N{\fs10\1c&HB4DCFC&}an old and respected European company.
+Dialogue: 0,0:38:45.24,0:38:47.99,Default,NTP,0,0,0,,但迈克尔·柯利昂尼有一项雄心勃勃的计划\N{\fs10\1c&HB4DCFC&}But Michael Corleone has an ambitious program
+Dialogue: 0,0:38:48.00,0:38:50.56,Default,NTP,0,0,0,,要将这家房地产股份公司扩展为…\N{\fs10\1c&HB4DCFC&}to expand this real estate holding company
+Dialogue: 0,0:38:50.84,0:38:53.39,Default,NTP,0,0,0,,一家跨国企业集团，从而能…\N{\fs10\1c&HB4DCFC&}into an international conglomerate that can...
+Dialogue: 0,0:38:54.34,0:38:59.57,Default,NTP,0,0,0,,…不是靠政治意识形态，而是靠东部的高效技术\N{\fs10\1c&HB4DCFC&}...no by political ideologies, but by Eastern techniques of efficiency
+Dialogue: 0,0:38:59.58,0:39:02.47,Default,NTP,0,0,0,,- 专注，以及不受限制的…  - 柯利昂尼先生\N{\fs10\1c&HB4DCFC&}-and focus and unlimited... -Mr. Corleone
+Dialogue: 0,0:39:02.56,0:39:04.31,Default,NTP,0,0,0,,柯利昂尼先生，请原谅\N{\fs10\1c&HB4DCFC&}Mr. Corleone, excuse me.
+Dialogue: 0,0:39:05.24,0:39:09.08,Default,NTP,0,0,0,,最近你是否将两亿美元存入梵蒂冈银行？\N{\fs10\1c&HB4DCFC&}Isn't it true that you recently deposited $200 million in the Vatican Bank?
+Dialogue: 0,0:39:09.09,0:39:12.05,Default,NTP,0,0,0,,该银行隶属“国际屹莫比”\N{\fs10\1c&HB4DCFC&}which is affiliated with International Immobiliare?
+Dialogue: 0,0:39:12.27,0:39:13.87,Default,NTP,0,0,0,,这是真的，有何不可？\N{\fs10\1c&HB4DCFC&}This is true. Why not?
+Dialogue: 0,0:39:13.89,0:39:18.25,Default,NTP,0,0,0,,这次特定的存款在时机上是不是有些疑问？\N{\fs10\1c&HB4DCFC&}Wasn't there any questioning about the timing on this particular deposit
+Dialogue: 0,0:39:18.29,0:39:20.46,Default,NTP,0,0,0,,或者，有些说法说…\N{\fs10\1c&HB4DCFC&}or wasn't there some talk about...
+Dialogue: 0,0:39:20.47,0:39:22.06,Default,NTP,0,0,0,,- 主席先生，容我发言  - …事实上…\N{\fs10\1c&HB4DCFC&}- Mr. Chairman, if I may? - ...the fact that...
+Dialogue: 0,0:39:24.17,0:39:26.72,Default,NTP,0,0,0,,维多·安东里尼·柯利昂尼基金会\N{\fs10\1c&HB4DCFC&}The Vito Andolino Corleone Foundation
+Dialogue: 0,0:39:26.76,0:39:28.78,Default,NTP,0,0,0,,柯利昂尼先生的女儿玛丽是其主席\N{\fs10\1c&HB4DCFC&}of which Mr. Corleone's daughter Mary is chairman
+Dialogue: 0,0:39:28.79,0:39:32.14,Default,NTP,0,0,0,,已经设立了总数为1亿美元的捐款\N{\fs10\1c&HB4DCFC&}has established an endowment in the amount of one hundred million dollars
+Dialogue: 0,0:39:32.36,0:39:34.36,Default,NTP,0,0,0,,这笔钱来自他本人的家庭\N{\fs10\1c&HB4DCFC&}The money comes from his own family,
+Dialogue: 0,0:39:34.60,0:39:36.54,Default,NTP,0,0,0,,并将由梵蒂冈管理\N{\fs10\1c&HB4DCFC&}and will be administered by the Vatican.
+Dialogue: 0,0:39:36.79,0:39:38.34,Default,NTP,0,0,0,,这解答了你的问题了吧？\N{\fs10\1c&HB4DCFC&}Answer your question?
+Dialogue: 0,0:39:39.14,0:39:40.64,Default,NTP,0,0,0,,各位股东同仁\N{\fs10\1c&HB4DCFC&}My fellow shareholders
+Dialogue: 0,0:39:41.24,0:39:44.74,Default,NTP,0,0,0,,如果欧洲和美国能学习一起合作\N{\fs10\1c&HB4DCFC&}if Europe and America can learn to cooperate
+Dialogue: 0,0:39:44.85,0:39:49.04,Default,NTP,0,0,0,,如果我们能学会汇聚我们的财富，分享我们的市场\N{\fs10\1c&HB4DCFC&}if we can learn to pool our wealth, share our markets
+Dialogue: 0,0:39:49.15,0:39:54.22,Default,NTP,0,0,0,,我们就能在世界任何地方 打败任何竞争对手\N{\fs10\1c&HB4DCFC&}we can defeat any competition anywhere in the world.
+Dialogue: 0,0:39:54.66,0:39:57.56,Default,NTP,0,0,0,,我谢谢各位今天给我的机会\N{\fs10\1c&HB4DCFC&}Let me thank you for the time you've given me here today
+Dialogue: 0,0:39:57.57,0:40:02.02,Default,NTP,0,0,0,,希望各位能善待本人的提案  谢谢\N{\fs10\1c&HB4DCFC&}and I hope that you will look favorably on my proposal. Thank you.
+Dialogue: 0,0:40:05.12,0:40:07.04,Default,NTP,0,0,0,,把麦克风给我\N{\fs10\1c&HB4DCFC&}Listen, let me at this microphone here.
+Dialogue: 0,0:40:07.25,0:40:10.31,Default,NTP,0,0,0,,我们怎么能让这样一个罪犯掌管我们公司？\N{\fs10\1c&HB4DCFC&}How can we let a criminal like thar run our company?
+Dialogue: 0,0:40:10.32,0:40:13.25,Default,NTP,0,0,0,,- 他一脸西西里匪相，你们看不到吗？  - 秩序\N{\fs10\1c&HB4DCFC&}-He's got the map of Sicily on his face. Can't you see it? -Order!
+Dialogue: 0,0:40:13.27,0:40:15.74,Default,NTP,0,0,0,,他不是天主教徒就是个黑手党，要我说…\N{\fs10\1c&HB4DCFC&}He's either Catholic or mafioso. And I say...
+Dialogue: 0,0:40:17.57,0:40:18.72,Default,NTP,0,0,0,,主席先生\N{\fs10\1c&HB4DCFC&}Mr. Chairman
+Dialogue: 0,0:40:19.72,0:40:22.32,Default,NTP,0,0,0,,梵蒂冈银行感觉…\N{\fs10\1c&HB4DCFC&}the Vatican Bank feels
+Dialogue: 0,0:40:22.55,0:40:24.86,Default,NTP,0,0,0,,国际屹莫比公司…\N{\fs10\1c&HB4DCFC&}that International Immobiliare
+Dialogue: 0,0:40:24.87,0:40:29.03,Default,NTP,0,0,0,,在柯利昂尼先生手中 将会是安全的\N{\fs10\1c&HB4DCFC&}will be safe in Mr. Corleone's hands.
+Dialogue: 0,0:40:29.95,0:40:32.75,Default,NTP,0,0,0,,审核及最终批准\N{\fs10\1c&HB4DCFC&}Subject to audit and final ratification
+Dialogue: 0,0:40:32.76,0:40:35.04,Default,NTP,0,0,0,,必须在罗马做出\N{\fs10\1c&HB4DCFC&}which must take place in Rome
+Dialogue: 0,0:40:35.05,0:40:38.62,Default,NTP,0,0,0,,请与本席一同欢迎迈克尔·柯利昂尼先生\N{\fs10\1c&HB4DCFC&}please join me in welcoming Mr. Michael Corleone
+Dialogue: 0,0:40:46.64,0:40:47.74,Default,NTP,0,0,0,,玛丽\N{\fs10\1c&HB4DCFC&}Mary
+Dialogue: 0,0:40:48.52,0:40:52.84,Default,NTP,0,0,0,,玛丽，这是真的，这个基金会，它是真的\N{\fs10\1c&HB4DCFC&}Mary, this is real, this foundation. It's real.
+Dialogue: 0,0:40:54.97,0:40:57.27,Default,NTP,0,0,0,,我之前想要安东尼加入\N{\fs10\1c&HB4DCFC&}I wanted Anthony to be a part of it.
+Dialogue: 0,0:40:57.28,0:40:59.84,Default,NTP,0,0,0,,我也想要你们两个一起来做\N{\fs10\1c&HB4DCFC&}And I wanted two of you would be together on this.
+Dialogue: 0,0:41:00.09,0:41:01.34,Default,NTP,0,0,0,,我不会干涉\N{\fs10\1c&HB4DCFC&}I won't interfere.
+Dialogue: 0,0:41:02.15,0:41:04.44,Default,NTP,0,0,0,,- 你有要求我才会帮手  - 但是…\N{\fs10\1c&HB4DCFC&}-I'll help only if you ask. -But...
+Dialogue: 0,0:41:04.45,0:41:06.64,Default,NTP,0,0,0,,可这么做真正是为了什么？\N{\fs10\1c&HB4DCFC&}But what is this really for?
+Dialogue: 0,0:41:07.55,0:41:09.04,Default,NTP,0,0,0,,你为什么要做这件事？\N{\fs10\1c&HB4DCFC&}Why are you doing this?
+Dialogue: 0,0:41:09.45,0:41:11.48,Default,NTP,0,0,0,,我为什么要做这件事？\N{\fs10\1c&HB4DCFC&}Why am I doing this?
+Dialogue: 0,0:41:12.49,0:41:14.94,Default,NTP,0,0,0,,我做这件事是为了我的孩子们\N{\fs10\1c&HB4DCFC&}I'm doing this for my children.
+Dialogue: 0,0:41:15.56,0:41:17.64,Default,NTP,0,0,0,,你也是为你的孩子们做\N{\fs10\1c&HB4DCFC&}You're doing it for your children too.
+Dialogue: 0,0:41:18.12,0:41:21.32,Default,NTP,0,0,0,,这个基金会应该帮助所有人\N{\fs10\1c&HB4DCFC&}This foundation is supposed to help all people.
+Dialogue: 0,0:41:21.39,0:41:23.16,Default,NTP,0,0,0,,当然，这是宗旨\N{\fs10\1c&HB4DCFC&}Of course. That's the purpose.
+Dialogue: 0,0:41:23.84,0:41:26.24,Default,NTP,0,0,0,,这是合法的，玛丽\N{\fs10\1c&HB4DCFC&}This is legitimate, Mary.
+Dialogue: 0,0:41:26.60,0:41:28.38,Default,NTP,0,0,0,,我发誓这是合法的\N{\fs10\1c&HB4DCFC&}I swear this is legitimate.
+Dialogue: 0,0:41:32.69,0:41:35.94,Default,NTP,0,0,0,,爸爸，我想要这件事带我更亲近你\N{\fs10\1c&HB4DCFC&}Dad, I want this to bring me closer to you.
+Dialogue: 0,0:41:44.07,0:41:46.09,Default,NTP,0,0,0,,我甘受地狱之火\N{\fs10\1c&HB4DCFC&}I would burn in hell
+Dialogue: 0,0:41:46.52,0:41:48.89,Default,NTP,0,0,0,,也要保护你安全\N{\fs10\1c&HB4DCFC&}to keep you safe.
+Dialogue: 0,0:42:02.02,0:42:04.67,Default,NTP,0,0,0,,不不不，你去上另一辆车，我搭迈克尔的车\N{\fs10\1c&HB4DCFC&}No, no. You go in the other car. I'll ride with Michael.
+Dialogue: 0,0:42:05.26,0:42:06.27,Default,NTP,0,0,0,,去去去\N{\fs10\1c&HB4DCFC&}Go, go, go.
+Dialogue: 0,0:42:20.72,0:42:24.75,Default,NTP,0,0,0,,你的老伙伴们 都感激你过去给他们赚的钱\N{\fs10\1c&HB4DCFC&}Your old partners are grateful for the money you made them.
+Dialogue: 0,0:42:24.76,0:42:27.12,Default,NTP,0,0,0,,他们…他们崇拜你\N{\fs10\1c&HB4DCFC&}They...they worship you.
+Dialogue: 0,0:42:27.98,0:42:34.44,Default,NTP,0,0,0,,但现在他们很伤心，因为他们认为你抛弃了他们\N{\fs10\1c&HB4DCFC&}But their hearts are broken because they think you abandoned them.
+Dialogue: 0,0:42:34.97,0:42:38.62,Default,NTP,0,0,0,,他们想要分享你跟“屹莫比”的交易\N{\fs10\1c&HB4DCFC&}They want to share your deal on Immobiliare
+Dialogue: 0,0:42:39.42,0:42:41.27,Default,NTP,0,0,0,,再次成为一家人\N{\fs10\1c&HB4DCFC&}to be a family again.
+Dialogue: 0,0:42:41.34,0:42:44.42,Default,NTP,0,0,0,,这样能洗干净他们的钱\N{\fs10\1c&HB4DCFC&}It can purify their money.
+Dialogue: 0,0:42:46.17,0:42:47.66,Default,NTP,0,0,0,,这我不能做\N{\fs10\1c&HB4DCFC&}This I cannot do.
+Dialogue: 0,0:42:50.68,0:42:54.27,Default,NTP,0,0,0,,“屹莫比”必须是合法的\N{\fs10\1c&HB4DCFC&}Immobiliare must be legitimate.
+Dialogue: 0,0:42:55.65,0:42:57.05,Default,NTP,0,0,0,,我知道\N{\fs10\1c&HB4DCFC&}I know.
+Dialogue: 0,0:42:58.27,0:43:00.27,Default,NTP,0,0,0,,可他们不高兴\N{\fs10\1c&HB4DCFC&}But they're unhappy.
+Dialogue: 0,0:43:02.74,0:43:04.09,Default,NTP,0,0,0,,你呢？\N{\fs10\1c&HB4DCFC&}And you?
+Dialogue: 0,0:43:04.62,0:43:07.82,Default,NTP,0,0,0,,我自己别无所求\N{\fs10\1c&HB4DCFC&}I ask nothing for myself.
+Dialogue: 0,0:43:08.68,0:43:10.83,Default,NTP,0,0,0,,只要能安度晚年\N{\fs10\1c&HB4DCFC&}Only peace in my old age.
+Dialogue: 0,0:43:10.84,0:43:15.04,Default,NTP,0,0,0,,可是我得抚慰身边的人\N{\fs10\1c&HB4DCFC&}But I must please the world around me.
+Dialogue: 0,0:43:16.17,0:43:20.34,Default,NTP,0,0,0,,迈克尔，你父亲是个讲道理的人\N{\fs10\1c&HB4DCFC&}Michael, your father was a reasonable man.
+Dialogue: 0,0:43:20.62,0:43:22.64,Default,NTP,0,0,0,,跟他学学吧\N{\fs10\1c&HB4DCFC&}Learn from him.
+Dialogue: 0,0:43:24.62,0:43:28.24,Default,NTP,0,0,0,,我从我父亲那里学到许多\N{\fs10\1c&HB4DCFC&}I learned many things from my father.
+Dialogue: 0,0:43:33.36,0:43:35.52,Default,NTP,0,0,0,,召集一次会议吧，我的朋友\N{\fs10\1c&HB4DCFC&}Call a meeting, my friend
+Dialogue: 0,0:43:35.76,0:43:39.36,Default,NTP,0,0,0,,这样就不会有亏欠，或怨恨\N{\fs10\1c&HB4DCFC&}so there are no debts or grudges.
+Dialogue: 0,0:43:40.16,0:43:41.49,Default,NTP,0,0,0,,我们将创造和平\N{\fs10\1c&HB4DCFC&}We will make the peace
+Dialogue: 0,0:43:41.92,0:43:43.35,Default,NTP,0,0,0,,你和我\N{\fs10\1c&HB4DCFC&}you and I.
+Dialogue: 0,0:44:00.22,0:44:02.99,Default,NTP,0,0,0,,{\1c&H96D4F7&\i1}梵蒂冈今天宣称
+Dialogue: 0,0:44:03.27,0:44:06.94,Default,NTP,0,0,0,,{\1c&H96D4F7&\i1}教皇保禄六世已取消了他的周日祈福…
+Dialogue: 0,0:44:07.24,0:44:08.94,Default,NTP,0,0,0,,{\1c&H96D4F7&\i1}事出健康原因
+Dialogue: 0,0:44:09.14,0:44:12.02,Default,NTP,0,0,0,,{\1c&H96D4F7&\i1}他的医生已下令完全卧床休息
+Dialogue: 0,0:44:12.36,0:44:15.05,Default,NTP,0,0,0,,{\1c&H96D4F7&\i1}并终止全部活动
+Dialogue: 0,0:44:22.76,0:44:24.46,Default,NTP,0,0,0,,他们刚开了个记者会\N{\fs10\1c&HB4DCFC&}They just had a press conference.
+Dialogue: 0,0:44:24.91,0:44:28.96,Default,NTP,0,0,0,,他们说教皇的情况危重，原话是“gravissimo”\N{\fs10\1c&HB4DCFC&}They said the pope's condition is grave. gravissimo, they said.
+Dialogue: 0,0:44:57.30,0:45:00.54,Default,NTP,0,0,0,,{\1c&H96D4F7&}本次会议的目的在于批准…
+Dialogue: 0,0:45:01.00,0:45:04.32,Default,NTP,0,0,0,,{\1c&H96D4F7&}我们纽约各股东通过的动议
+Dialogue: 0,0:45:05.77,0:45:07.16,Default,NTP,0,0,0,,稍等\N{\fs10\1c&HB4DCFC&}Please
+Dialogue: 0,0:45:08.05,0:45:12.63,Default,NTP,0,0,0,,本集团代表天主教商人财团\N{\fs10\1c&HB4DCFC&}our group represents a consortium of Catholic businessmen
+Dialogue: 0,0:45:12.75,0:45:16.04,Default,NTP,0,0,0,,反对柯利昂尼掌权\N{\fs10\1c&HB4DCFC&}against the Corleone control.
+Dialogue: 0,0:45:16.50,0:45:18.87,Default,NTP,0,0,0,,梵蒂冈已经投票\N{\fs10\1c&HB4DCFC&}The Vatican has cast its vote.
+Dialogue: 0,0:45:19.04,0:45:21.62,Default,NTP,0,0,0,,柯利昂尼集团已经控制了董事会\N{\fs10\1c&HB4DCFC&}The Corleone Group already controls the board.
+Dialogue: 0,0:45:21.96,0:45:26.04,Default,NTP,0,0,0,,根据拉特兰条约 梵蒂冈的投票必须在这里获准\N{\fs10\1c&HB4DCFC&}According to the Lateran Treaty the Vatican's vote must be ratified here
+Dialogue: 0,0:45:26.50,0:45:28.81,Default,NTP,0,0,0,,在罗马这里，由教皇批准\N{\fs10\1c&HB4DCFC&}here in Rome by the pope.
+Dialogue: 0,0:45:32.84,0:45:36.74,Default,NTP,0,0,0,,教皇，病情危重\N{\fs10\1c&HB4DCFC&}The pope is gravely ill.
+Dialogue: 0,0:45:37.49,0:45:39.35,Default,NTP,0,0,0,,在他康复之前\N{\fs10\1c&HB4DCFC&}Until he recovers
+Dialogue: 0,0:45:39.82,0:45:41.74,Default,NTP,0,0,0,,我无能为力\N{\fs10\1c&HB4DCFC&}I am powerless.
+Dialogue: 0,0:45:42.19,0:45:44.00,Default,NTP,0,0,0,,如果他死了呢？\N{\fs10\1c&HB4DCFC&}What if he dies?
+Dialogue: 0,0:45:44.40,0:45:47.49,Default,NTP,0,0,0,,那么，如你们美国人所说的…\N{\fs10\1c&HB4DCFC&}Then as you Americans say
+Dialogue: 0,0:45:47.78,0:45:49.30,Default,NTP,0,0,0,,一笔勾消\N{\fs10\1c&HB4DCFC&}All bets are off.
+Dialogue: 0,0:45:49.67,0:45:52.14,Default,NTP,0,0,0,,先生们，拜托\N{\fs10\1c&HB4DCFC&}Gentlemen, please.
+Dialogue: 0,0:45:52.87,0:45:56.31,Default,NTP,0,0,0,,这只是个短暂耽搁，没别的\N{\fs10\1c&HB4DCFC&}This is a brief delay, nothing more.
+Dialogue: 0,0:46:01.35,0:46:04.44,Default,NTP,0,0,0,,阁下  诸位\N{\fs10\1c&HB4DCFC&}Your Excellency, gentlemen.
+Dialogue: 0,0:46:04.95,0:46:08.72,Default,NTP,0,0,0,,我建议你们加入大家一起祷告\N{\fs10\1c&HB4DCFC&}I advise you join us in our prayers
+Dialogue: 0,0:46:08.75,0:46:10.68,Default,NTP,0,0,0,,祈求圣父早日康复\N{\fs10\1c&HB4DCFC&}for the Holy Father's recovery.
+Dialogue: 0,0:46:11.78,0:46:13.61,Default,NTP,0,0,0,,我们有过共识\N{\fs10\1c&HB4DCFC&}Now, we had an agreement
+Dialogue: 0,0:46:14.66,0:46:18.40,Default,NTP,0,0,0,,这场会议最多是个形式，如此而已\N{\fs10\1c&HB4DCFC&}This meeting was to be merely a formality. That's all it was.
+Dialogue: 0,0:46:18.63,0:46:22.13,Default,NTP,0,0,0,,- 请坐下  - 我宁可站着  能不能有谁给我一个答案？\N{\fs10\1c&HB4DCFC&}-Please sit down. -I'd rather stand. Could someone juset give me an answer?
+Dialogue: 0,0:46:22.22,0:46:23.86,Default,NTP,0,0,0,,我们已经把自己置于前线了\N{\fs10\1c&HB4DCFC&}We have put ourselves on the line.
+Dialogue: 0,0:46:24.00,0:46:27.60,Default,NTP,0,0,0,,“屹莫比”在欧洲传统上根深蒂固\N{\fs10\1c&HB4DCFC&}The Immobiliare has its roots in the European tradition.
+Dialogue: 0,0:46:27.95,0:46:29.87,Default,NTP,0,0,0,,请尽量理解\N{\fs10\1c&HB4DCFC&}Please try to understand.
+Dialogue: 0,0:46:30.45,0:46:31.67,Default,NTP,0,0,0,,我了解\N{\fs10\1c&HB4DCFC&}I understand.
+Dialogue: 0,0:46:32.05,0:46:33.81,Default,NTP,0,0,0,,你们手段卑劣\N{\fs10\1c&HB4DCFC&}Your tactics are despicable.
+Dialogue: 0,0:46:34.09,0:46:37.15,Default,NTP,0,0,0,,哦，这可是个挺大的指控，来自一位柯利昂尼\N{\fs10\1c&HB4DCFC&}Well, that's quite an indictment, coming from a Corleone.
+Dialogue: 0,0:46:37.16,0:46:38.88,Default,NTP,0,0,0,,先生们 先生们\N{\fs10\1c&HB4DCFC&}Gentlemen
+Dialogue: 0,0:46:39.41,0:46:42.01,Default,NTP,0,0,0,,记住你们是在梵蒂冈，拜托\N{\fs10\1c&HB4DCFC&}Remember you're in the Vatican. Please.
+Dialogue: 0,0:46:45.45,0:46:47.70,Default,NTP,0,0,0,,你们要的，是什么东西？\N{\fs10\1c&HB4DCFC&}What is it that you want?
+Dialogue: 0,0:46:47.76,0:46:51.35,Default,NTP,0,0,0,,没错，你可以取得控制权\N{\fs10\1c&HB4DCFC&}Yes. You will take control.
+Dialogue: 0,0:46:51.95,0:46:55.39,Default,NTP,0,0,0,,我们很高兴由你来为我们的小船队掌舵\N{\fs10\1c&HB4DCFC&}We'll gladly put you at the helm of our little fleet
+Dialogue: 0,0:46:56.10,0:47:00.42,Default,NTP,0,0,0,,但我们的船只，必须全体往一个方向航行\N{\fs10\1c&HB4DCFC&}but our ships must all sail in the same direction.
+Dialogue: 0,0:47:01.53,0:47:02.91,Default,NTP,0,0,0,,否则\N{\fs10\1c&HB4DCFC&}Otherwise
+Dialogue: 0,0:47:03.18,0:47:08.17,Default,NTP,0,0,0,,谁说得好 你会跟我们一起待多久？\N{\fs10\1c&HB4DCFC&}who can say how long your stay with us will last?
+Dialogue: 0,0:47:09.31,0:47:11.21,Default,NTP,0,0,0,,这并不是针对你\N{\fs10\1c&HB4DCFC&}It's not personal.
+Dialogue: 0,0:47:11.66,0:47:13.02,Default,NTP,0,0,0,,这只是生意\N{\fs10\1c&HB4DCFC&}It's only business.
+Dialogue: 0,0:47:13.61,0:47:16.24,Default,NTP,0,0,0,,你应该懂，教父\N{\fs10\1c&HB4DCFC&}You should know, Godfather.
+Dialogue: 0,0:47:19.29,0:47:20.69,Default,NTP,0,0,0,,很好\N{\fs10\1c&HB4DCFC&}Very well.
+Dialogue: 0,0:47:21.93,0:47:24.00,Default,NTP,0,0,0,,你们要跟我做生意\N{\fs10\1c&HB4DCFC&}You want to do business with me
+Dialogue: 0,0:47:24.85,0:47:27.24,Default,NTP,0,0,0,,我就跟你们做生意\N{\fs10\1c&HB4DCFC&}I will do business with you.
+Dialogue: 0,0:47:28.25,0:47:29.80,Default,NTP,0,0,0,,毒蛇，他们全是\N{\fs10\1c&HB4DCFC&}Vipers, all of them.
+Dialogue: 0,0:47:36.20,0:47:37.92,Default,NTP,0,0,0,,我们回到波吉亚家族时代了\N{\fs10\1c&HB4DCFC&}We're back with the Borgias.
+Dialogue: 0,0:47:37.94,0:47:40.84,Default,NTP,0,0,0,,- 迈克尔叔叔  - 安德鲁\N{\fs10\1c&HB4DCFC&}-Uncle Michael. -Andrew.
+Dialogue: 0,0:47:41.01,0:47:43.71,Default,NTP,0,0,0,,我听说你来了，见到你太好了\N{\fs10\1c&HB4DCFC&}I heard you were here. It's so nice to see you.
+Dialogue: 0,0:47:44.11,0:47:46.82,Default,NTP,0,0,0,,- 文森  - 你好吗，安德鲁？  - 太好了\N{\fs10\1c&HB4DCFC&}-Vincent. -How are you, Andrew? -It's so nice.
+Dialogue: 0,0:47:46.95,0:47:49.72,Default,NTP,0,0,0,,这跟波吉亚家族有何关系？那种日子过去了，迈克尔\N{\fs10\1c&HB4DCFC&}Listen, what is this with the Borgias? Those days are over, Michael.
+Dialogue: 0,0:47:55.73,0:47:57.22,Default,NTP,0,0,0,,认得吗？\N{\fs10\1c&HB4DCFC&}Recognize it?
+Dialogue: 0,0:47:57.47,0:47:58.36,Default,NTP,0,0,0,,对\N{\fs10\1c&HB4DCFC&}Yeah.
+Dialogue: 0,0:47:59.50,0:48:01.06,Default,NTP,0,0,0,,坚科橄榄油\N{\fs10\1c&HB4DCFC&}Genco Olive Oil.
+Dialogue: 0,0:48:01.40,0:48:03.06,Default,NTP,0,0,0,,那就是我们祖父开端的地方\N{\fs10\1c&HB4DCFC&}That's where our grandfather got his start.
+Dialogue: 0,0:48:03.23,0:48:05.43,Default,NTP,0,0,0,,他当递送员起家，每周挣3块\N{\fs10\1c&HB4DCFC&}he start as a delivery boy making three bucks a week.
+Dialogue: 0,0:48:05.70,0:48:07.80,Default,NTP,0,0,0,,3年后他拥有了这家公司\N{\fs10\1c&HB4DCFC&}Three years later, he owned the company.
+Dialogue: 0,0:48:08.24,0:48:09.18,Default,NTP,0,0,0,,美国才有这种事\N{\fs10\1c&HB4DCFC&}Only in America.
+Dialogue: 0,0:48:09.24,0:48:10.00,Default,NTP,0,0,0,,没错\N{\fs10\1c&HB4DCFC&}That's it.
+Dialogue: 0,0:48:11.46,0:48:13.49,Default,NTP,0,0,0,,喂，文森佐，你躲哪儿去了？\N{\fs10\1c&HB4DCFC&}Vincenzo, where have you been hiding?
+Dialogue: 0,0:48:13.86,0:48:15.19,Default,NTP,0,0,0,,你抛下我们…\N{\fs10\1c&HB4DCFC&}You deserted us
+Dialogue: 0,0:48:15.22,0:48:16.58,Default,NTP,0,0,0,,正是我们最需要你帮忙的时候\N{\fs10\1c&HB4DCFC&}when we need your help so badly.
+Dialogue: 0,0:48:16.60,0:48:17.99,Default,NTP,0,0,0,,现在我回来了 我能为你们做什么？\N{\fs10\1c&HB4DCFC&}Well now I'm back, what can I do for you?
+Dialogue: 0,0:48:18.10,0:48:19.46,Default,NTP,0,0,0,,除掉乔·札萨\N{\fs10\1c&HB4DCFC&}Get rid of Joe Zasa.
+Dialogue: 0,0:48:19.50,0:48:22.78,Default,NTP,0,0,0,,- 他卖毒品给孩子们  - 你看，我还是姑娘的时候，事情不一样\N{\fs10\1c&HB4DCFC&}-He sells drugs to children. -You know, when I was a girl, it was different.
+Dialogue: 0,0:48:22.79,0:48:25.50,Default,NTP,0,0,0,,现在我变老了，倒害怕夜里在街上走路了，知道吗？\N{\fs10\1c&HB4DCFC&}I'm an older woman, I'm afraid to walk the streets at night, you know?
+Dialogue: 0,0:48:25.71,0:48:27.87,Default,NTP,0,0,0,,他们大概在哪里？\N{\fs10\1c&HB4DCFC&}Where are they supposed to be at?
+Dialogue: 0,0:48:28.11,0:48:30.34,Default,NTP,0,0,0,,卢，怎么回事？\N{\fs10\1c&HB4DCFC&}Lou, what's going on?
+Dialogue: 0,0:48:30.51,0:48:31.70,Default,NTP,0,0,0,,我们已经迟了\N{\fs10\1c&HB4DCFC&}We're late.
+Dialogue: 0,0:48:33.25,0:48:34.30,Default,NTP,0,0,0,,我什么时候让你失望过？\N{\fs10\1c&HB4DCFC&}Have I ever let you down?
+Dialogue: 0,0:48:34.48,0:48:35.78,Default,NTP,0,0,0,,我相信你\N{\fs10\1c&HB4DCFC&}I trust you.
+Dialogue: 0,0:48:35.92,0:48:36.91,Default,NTP,0,0,0,,不要担心\N{\fs10\1c&HB4DCFC&}Don't worry about it.
+Dialogue: 0,0:48:37.35,0:48:38.45,Default,NTP,0,0,0,,- 再见  - 太谢谢你了\N{\fs10\1c&HB4DCFC&}- Byebye. - Thank you very much.
+Dialogue: 0,0:48:38.52,0:48:39.58,Default,NTP,0,0,0,,祝你们愉快\N{\fs10\1c&HB4DCFC&}Enjoy yourself.
+Dialogue: 0,0:48:47.60,0:48:49.24,Default,NTP,0,0,0,,邻居有些麻烦\N{\fs10\1c&HB4DCFC&}Neighborhood's in trouble.
+Dialogue: 0,0:48:50.13,0:48:51.72,Default,NTP,0,0,0,,你一直都这么照应他们吗？\N{\fs10\1c&HB4DCFC&}You're keeping your eye out for them?
+Dialogue: 0,0:48:51.74,0:48:52.86,Default,NTP,0,0,0,,是的\N{\fs10\1c&HB4DCFC&}That's right.
+Dialogue: 0,0:48:53.18,0:48:54.36,Default,NTP,0,0,0,,还有我呢？\N{\fs10\1c&HB4DCFC&}And for me?
+Dialogue: 0,0:48:54.84,0:48:55.87,Default,NTP,0,0,0,,从今以后\N{\fs10\1c&HB4DCFC&}From now on.
+Dialogue: 0,0:48:56.84,0:48:58.23,Default,NTP,0,0,0,,我一直以来都想念你\N{\fs10\1c&HB4DCFC&}I missed you all this time.
+Dialogue: 0,0:48:58.31,0:49:00.30,Default,NTP,0,0,0,,我也想念你，堂妹\N{\fs10\1c&HB4DCFC&}I missed you, too, cousin.
+Dialogue: 0,0:49:00.91,0:49:02.84,Default,NTP,0,0,0,,我怀念跟所有堂表兄妹们一起长大\N{\fs10\1c&HB4DCFC&}I missed growing up with all my cousins.
+Dialogue: 0,0:49:03.91,0:49:06.27,Default,NTP,0,0,0,,我那时不认识你，我就想念你了\N{\fs10\1c&HB4DCFC&}I didn't know you, and I missed you.
+Dialogue: 0,0:49:06.92,0:49:11.48,Default,NTP,0,0,0,,你记得我们父亲的事吗？过去的日子？\N{\fs10\1c&HB4DCFC&}Do you remember stories about our fathers, the old days?
+Dialogue: 0,0:49:11.65,0:49:13.36,Default,NTP,0,0,0,,记得，你想知道什么？\N{\fs10\1c&HB4DCFC&}Yeah. What do you want to know?
+Dialogue: 0,0:49:16.33,0:49:17.89,Default,NTP,0,0,0,,桑尼是怎么样的人？\N{\fs10\1c&HB4DCFC&}What was Sonny like?
+Dialogue: 0,0:49:20.30,0:49:22.29,Default,NTP,0,0,0,,他是城里的王子\N{\fs10\1c&HB4DCFC&}He was the prince of the city.
+Dialogue: 0,0:49:23.13,0:49:24.74,Default,NTP,0,0,0,,他在我出生之前就死了\N{\fs10\1c&HB4DCFC&}He died before I was born
+Dialogue: 0,0:49:24.77,0:49:27.70,Default,NTP,0,0,0,,但我听过关于他的许多故事  他是个传奇\N{\fs10\1c&HB4DCFC&}But I heard a million stories. He was a legend.
+Dialogue: 0,0:49:28.60,0:49:30.47,Default,NTP,0,0,0,,那我父亲呢？\N{\fs10\1c&HB4DCFC&}What about my father?
+Dialogue: 0,0:49:30.94,0:49:32.67,Default,NTP,0,0,0,,是个伟大的人物，你父亲\N{\fs10\1c&HB4DCFC&}A great man, your father.
+Dialogue: 0,0:49:33.81,0:49:36.24,Default,NTP,0,0,0,,他是个英雄，他拯救了家族\N{\fs10\1c&HB4DCFC&}He's a hero. He saved the family.
+Dialogue: 0,0:49:38.05,0:49:39.67,Default,NTP,0,0,0,,- 文森  - 什么？\N{\fs10\1c&HB4DCFC&}-Vincent. -What?
+Dialogue: 0,0:49:39.82,0:49:41.91,Default,NTP,0,0,0,,他有没有杀死自己的亲兄弟？\N{\fs10\1c&HB4DCFC&}Did he kill his own brother?
+Dialogue: 0,0:49:46.59,0:49:47.79,Default,NTP,0,0,0,,没有\N{\fs10\1c&HB4DCFC&}No.
+Dialogue: 0,0:49:50.43,0:49:52.49,Default,NTP,0,0,0,,所以那些都是谎话？\N{\fs10\1c&HB4DCFC&}So those are all lies?
+Dialogue: 0,0:49:56.43,0:49:58.10,Default,NTP,0,0,0,,只是些故事，亲\N{\fs10\1c&HB4DCFC&}Just stories, sweetheart.
+Dialogue: 0,0:49:58.97,0:49:59.60,Default,NTP,0,0,0,,好吗\N{\fs10\1c&HB4DCFC&}Okay?
+Dialogue: 0,0:50:03.70,0:50:04.83,Default,NTP,0,0,0,,好\N{\fs10\1c&HB4DCFC&}OK.
+Dialogue: 0,0:50:07.38,0:50:08.91,Default,NTP,0,0,0,,我很高兴你在身边\N{\fs10\1c&HB4DCFC&}I'm glad you're around.
+Dialogue: 0,0:50:08.98,0:50:10.47,Default,NTP,0,0,0,,我也很高兴你在这里\N{\fs10\1c&HB4DCFC&}I'm glad you're here too.
+Dialogue: 0,0:50:15.69,0:50:16.52,Default,NTP,0,0,0,,堂妹{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Cugina.
+Dialogue: 0,0:50:18.19,0:50:19.92,Default,NTP,0,0,0,,堂哥\N{\fs10\1c&HB4DCFC&}Cousin.
+Dialogue: 0,0:50:34.14,0:50:37.67,Default,NTP,0,0,0,,我想带乔伊·札萨来搭机，然后把他推下去\N{\fs10\1c&HB4DCFC&}I'd like to take Joey Zasa up for a ride in this and drop him.
+Dialogue: 0,0:50:37.88,0:50:40.38,Default,NTP,0,0,0,,乔伊·札萨什么都不是\N{\fs10\1c&HB4DCFC&}Joey Zasa is nothing.
+Dialogue: 0,0:50:40.75,0:50:42.98,Default,NTP,0,0,0,,他是个微不足道的跑腿\N{\fs10\1c&HB4DCFC&}He's a small-time enforcer.
+Dialogue: 0,0:50:43.22,0:50:45.42,Default,NTP,0,0,0,,他诈唬、威胁，但什么也不是\N{\fs10\1c&HB4DCFC&}He bluffs, threats, but nothing.
+Dialogue: 0,0:50:46.06,0:50:48.81,Default,NTP,0,0,0,,隔着一英里你就能看见他来了\N{\fs10\1c&HB4DCFC&}You'll be able to see him coming a mile away.
+Dialogue: 0,0:50:49.39,0:50:52.02,Default,NTP,0,0,0,,- 我们应该杀了他，趁他还没…  - 不行\N{\fs10\1c&HB4DCFC&}-We should kill him before he kills... -No!
+Dialogue: 0,0:50:55.13,0:50:59.56,Default,NTP,0,0,0,,永远不要恨你的敌人，这会影响你的判断\N{\fs10\1c&HB4DCFC&}Never hate your enemies. It affects your judgment.
+Dialogue: 0,0:51:14.69,0:51:15.71,Default,NTP,0,0,0,,晚上好\N{\fs10\1c&HB4DCFC&}Good evening.
+Dialogue: 0,0:51:15.74,0:51:18.14,Default,NTP,0,0,0,,很高兴再次见到你，柯利昂尼先生\N{\fs10\1c&HB4DCFC&}Good evening. Nice to see you again, Mr. Corleone.
+Dialogue: 0,0:51:59.00,0:52:03.23,Default,NTP,0,0,0,,我们信任你，掌管我们赌场的钱\N{\fs10\1c&HB4DCFC&}We trusted you to manage our money in the casinos.
+Dialogue: 0,0:52:03.40,0:52:06.89,Default,NTP,0,0,0,,20年都不到，你卖掉了那些赌场\N{\fs10\1c&HB4DCFC&}It's not even 20 years you sold the casinos
+Dialogue: 0,0:52:07.07,0:52:09.26,Default,NTP,0,0,0,,为我们大家赚了大钱\N{\fs10\1c&HB4DCFC&}and you made fortunes for all of us.
+Dialogue: 0,0:52:09.31,0:52:13.71,Default,NTP,0,0,0,,厉害啊  唐·柯利昂尼\N{\fs10\1c&HB4DCFC&}Bravo, Don Corleone!
+Dialogue: 0,0:52:13.91,0:52:15.21,Default,NTP,0,0,0,,谢谢\N{\fs10\1c&HB4DCFC&}Thank you.
+Dialogue: 0,0:52:15.96,0:52:18.92,Default,NTP,0,0,0,,朋友们  我到这里来\N{\fs10\1c&HB4DCFC&}Friends, I have come here
+Dialogue: 0,0:52:19.46,0:52:20.55,Default,NTP,0,0,0,,是因为…\N{\fs10\1c&HB4DCFC&}because
+Dialogue: 0,0:52:21.26,0:52:23.56,Default,NTP,0,0,0,,我们共同的事业已经结束了\N{\fs10\1c&HB4DCFC&}our business together is done.
+Dialogue: 0,0:52:24.38,0:52:25.95,Default,NTP,0,0,0,,我们已经兴盛\N{\fs10\1c&HB4DCFC&}We have prospered
+Dialogue: 0,0:52:26.26,0:52:28.09,Default,NTP,0,0,0,,现在我们是时候\N{\fs10\1c&HB4DCFC&}and now it is time for us
+Dialogue: 0,0:52:28.51,0:52:31.82,Default,NTP,0,0,0,,解除我们之间的业务关系了\N{\fs10\1c&HB4DCFC&}to dissolve the business relationship between us.
+Dialogue: 0,0:52:33.43,0:52:35.02,Default,NTP,0,0,0,,就这样\N{\fs10\1c&HB4DCFC&}That's it.
+Dialogue: 0,0:52:35.20,0:52:39.47,Default,NTP,0,0,0,,不过我的确有点小惊喜  艾尔\N{\fs10\1c&HB4DCFC&}But I do have a little surprise, Al
+Dialogue: 0,0:52:41.57,0:52:43.67,Default,NTP,0,0,0,,各位在赌场的股份\N{\fs10\1c&HB4DCFC&}Your shares in the casino
+Dialogue: 0,0:52:44.41,0:52:46.22,Default,NTP,0,0,0,,我想我应该省掉所有繁文缛节\N{\fs10\1c&HB4DCFC&}I thought I'd cut through all the red tape
+Dialogue: 0,0:52:46.22,0:52:48.04,Default,NTP,0,0,0,,让你们直接拿到你们的钱\N{\fs10\1c&HB4DCFC&}so you can get your money right away.
+Dialogue: 0,0:52:54.75,0:52:57.19,Default,NTP,0,0,0,,五千万\N{\fs10\1c&HB4DCFC&}$50 million!
+Dialogue: 0,0:52:57.32,0:53:00.31,Default,NTP,0,0,0,,不是每个人都一样，取决于多少…\N{\fs10\1c&HB4DCFC&}Not everybody gets the same. It depends on how much...
+Dialogue: 0,0:53:00.32,0:53:02.92,Default,NTP,0,0,0,,- 没你的份儿  - …是你投资的，以及多长时间\N{\fs10\1c&HB4DCFC&}-Nothing for you. -you invested and how long for.
+Dialogue: 0,0:53:03.09,0:53:05.81,Default,NTP,0,0,0,,迈克尔，这真的很大方\N{\fs10\1c&HB4DCFC&}Michael, this is really generous!
+Dialogue: 0,0:53:06.36,0:53:08.26,Default,NTP,0,0,0,,哦，好极了\N{\fs10\1c&HB4DCFC&}Oh, wonderful.
+Dialogue: 0,0:53:10.07,0:53:11.33,Default,NTP,0,0,0,,谢谢{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Grazier
+Dialogue: 0,0:53:11.34,0:53:14.43,Default,NTP,0,0,0,,嘿，巴利西，你当初投了多少？\N{\fs10\1c&HB4DCFC&}Hey, Parisi, how much did you invest?
+Dialogue: 0,0:53:14.81,0:53:15.77,Default,NTP,0,0,0,,记不得了\N{\fs10\1c&HB4DCFC&}I don't remember.
+Dialogue: 0,0:53:15.81,0:53:18.34,Default,NTP,0,0,0,,迈克尔，上帝会保佑你的\N{\fs10\1c&HB4DCFC&}Michael, you're blessed.
+Dialogue: 0,0:53:23.48,0:53:26.88,Default,NTP,0,0,0,,我的家族做了大部分苦差事\N{\fs10\1c&HB4DCFC&}My family has done much of the hard work
+Dialogue: 0,0:53:26.94,0:53:29.05,Default,NTP,0,0,0,,担了很多风险\N{\fs10\1c&HB4DCFC&}taken many risks
+Dialogue: 0,0:53:30.42,0:53:33.82,Default,NTP,0,0,0,,都是为了给其他家族挣钱\N{\fs10\1c&HB4DCFC&}all to make money for the rest of the families.
+Dialogue: 0,0:53:35.86,0:53:38.36,Default,NTP,0,0,0,,你们都认识乔伊·札萨\N{\fs10\1c&HB4DCFC&}You all know Joey Zasa.
+Dialogue: 0,0:53:38.90,0:53:41.58,Default,NTP,0,0,0,,我承认他是个重要人物\N{\fs10\1c&HB4DCFC&}He is, I admit, an important man.
+Dialogue: 0,0:53:42.46,0:53:46.26,Default,NTP,0,0,0,,他的照片上了纽约时报杂志封面\N{\fs10\1c&HB4DCFC&}His picture is on the cover of the New York Times Magazine.
+Dialogue: 0,0:53:46.80,0:53:51.23,Default,NTP,0,0,0,,他获得了绅士杂志的最佳黑帮着装奖\N{\fs10\1c&HB4DCFC&}He gets the Esquire magazine award for the best-dressed gangster.
+Dialogue: 0,0:53:52.11,0:53:57.02,Default,NTP,0,0,0,,报纸都赞扬他 因为他雇用黑人加入家族\N{\fs10\1c&HB4DCFC&}The newspapers praise him because he hires blacks into his family
+Dialogue: 0,0:53:57.11,0:53:58.94,Default,NTP,0,0,0,,这显示了他有善心\N{\fs10\1c&HB4DCFC&}which shows he has a good heart
+Dialogue: 0,0:54:01.18,0:54:02.61,Default,NTP,0,0,0,,他是个名人\N{\fs10\1c&HB4DCFC&}He is famous.
+Dialogue: 0,0:54:03.38,0:54:04.48,Default,NTP,0,0,0,,谁知道呢？\N{\fs10\1c&HB4DCFC&}Who knows?
+Dialogue: 0,0:54:05.42,0:54:07.22,Default,NTP,0,0,0,,也许有一天\N{\fs10\1c&HB4DCFC&}Maybe one day
+Dialogue: 0,0:54:07.39,0:54:10.36,Default,NTP,0,0,0,,他会让你们大家都受欢迎\N{\fs10\1c&HB4DCFC&}he will make all of you popular.
+Dialogue: 0,0:54:11.53,0:54:12.62,Default,NTP,0,0,0,,这是事实\N{\fs10\1c&HB4DCFC&}It's true.
+Dialogue: 0,0:54:12.80,0:54:16.36,Default,NTP,0,0,0,,我更讲究外表\N{\fs10\1c&HB4DCFC&}I make more of a bella figura.
+Dialogue: 0,0:54:16.73,0:54:18.43,Default,NTP,0,0,0,,这是我的天性\N{\fs10\1c&HB4DCFC&}That is my nature.
+Dialogue: 0,0:54:18.60,0:54:23.51,Default,NTP,0,0,0,,但我也想向合法企业迈进一步\N{\fs10\1c&HB4DCFC&}But I also want to make a move into legitimate enterprises.
+Dialogue: 0,0:54:23.74,0:54:26.14,Default,NTP,0,0,0,,我也喜欢从教皇那里弄个小别针\N{\fs10\1c&HB4DCFC&}I'd like to get a little pin from the pope.
+Dialogue: 0,0:54:26.91,0:54:31.51,Default,NTP,0,0,0,,当然，我接纳黑人及西班牙裔进入我的家族\N{\fs10\1c&HB4DCFC&}Sure, I take the blacks and the Spanish into my family
+Dialogue: 0,0:54:32.06,0:54:35.54,Default,NTP,0,0,0,,因为…这就是美国\N{\fs10\1c&HB4DCFC&}because that's America.
+Dialogue: 0,0:54:36.23,0:54:40.81,Default,NTP,0,0,0,,你担保他们不在这些街区贩毒？\N{\fs10\1c&HB4DCFC&}And you guarantee that they don't deal drugs in those neighborhoods.
+Dialogue: 0,0:54:41.43,0:54:43.39,Default,NTP,0,0,0,,这我不担保\N{\fs10\1c&HB4DCFC&}I don't guarantee that.
+Dialogue: 0,0:54:43.56,0:54:47.01,Default,NTP,0,0,0,,我担保我会杀了这么干的人\N{\fs10\1c&HB4DCFC&}I guarantee I'll kill anybody who does.
+Dialogue: 0,0:54:50.80,0:54:53.55,Default,NTP,0,0,0,,让我跟他谈谈，让我跟他谈谈\N{\fs10\1c&HB4DCFC&}Let me talk to him. Let me talk to him.
+Dialogue: 0,0:54:54.20,0:54:56.30,Default,NTP,0,0,0,,谁能拒绝唐·阿尔托贝洛？\N{\fs10\1c&HB4DCFC&}Who can refuse Don Altobello?
+Dialogue: 0,0:54:56.51,0:54:57.87,Default,NTP,0,0,0,,乔伊，你…\N{\fs10\1c&HB4DCFC&}Joey, hey you...
+Dialogue: 0,0:54:57.91,0:54:58.94,Default,NTP,0,0,0,,不\N{\fs10\1c&HB4DCFC&}No!
+Dialogue: 0,0:54:59.48,0:55:00.67,Default,NTP,0,0,0,,我告诉你们所有人\N{\fs10\1c&HB4DCFC&}I say to all of you
+Dialogue: 0,0:55:00.68,0:55:05.56,Default,NTP,0,0,0,,我今天得到的对待…毫无尊重\N{\fs10\1c&HB4DCFC&}I have been treated this day with no respect.
+Dialogue: 0,0:55:06.01,0:55:07.81,Default,NTP,0,0,0,,我给你们所有人赚过钱\N{\fs10\1c&HB4DCFC&}I've earned you all money.
+Dialogue: 0,0:55:08.13,0:55:09.95,Default,NTP,0,0,0,,我让你们发了财\N{\fs10\1c&HB4DCFC&}I've made you rich.
+Dialogue: 0,0:55:10.01,0:55:11.49,Default,NTP,0,0,0,,而我只要求一点点\N{\fs10\1c&HB4DCFC&}and I asked for little.
+Dialogue: 0,0:55:11.52,0:55:14.25,Default,NTP,0,0,0,,好，你们不给？\N{\fs10\1c&HB4DCFC&}Good. You will not give?
+Dialogue: 0,0:55:14.32,0:55:16.24,Default,NTP,0,0,0,,我会来拿\N{\fs10\1c&HB4DCFC&}I'll take.
+Dialogue: 0,0:55:16.83,0:55:19.32,Default,NTP,0,0,0,,至于唐·柯利昂尼…\N{\fs10\1c&HB4DCFC&}As for Don Corleone
+Dialogue: 0,0:55:19.33,0:55:20.76,Default,NTP,0,0,0,,噢，他今天讲得…\N{\fs10\1c&HB4DCFC&}well he makes it...
+Dialogue: 0,0:55:21.73,0:55:26.53,Default,NTP,0,0,0,,对我来说很清楚，他是我的敌人\N{\fs10\1c&HB4DCFC&}very clear to me today that he is my enemy.
+Dialogue: 0,0:55:29.34,0:55:31.56,Default,NTP,0,0,0,,你们必须在我俩当中做选择\N{\fs10\1c&HB4DCFC&}You must choose between us.
+Dialogue: 0,0:55:33.36,0:55:34.45,Default,NTP,0,0,0,,过分了\N{\fs10\1c&HB4DCFC&}Way too far.
+Dialogue: 0,0:55:35.04,0:55:36.75,Default,NTP,0,0,0,,喂，乔伊，不要\N{\fs10\1c&HB4DCFC&}Hey Joey，no.
+Dialogue: 0,0:55:38.29,0:55:40.11,Default,NTP,0,0,0,,我们可以一起讲道理\N{\fs10\1c&HB4DCFC&}We can reason together.
+Dialogue: 0,0:55:40.25,0:55:41.23,Default,NTP,0,0,0,,不\N{\fs10\1c&HB4DCFC&}No.
+Dialogue: 0,0:55:42.19,0:55:45.88,Default,NTP,0,0,0,,迈克尔，迈克尔，拜托…\N{\fs10\1c&HB4DCFC&}Michael, Michael, please...
+Dialogue: 0,0:55:48.86,0:55:52.37,Default,NTP,0,0,0,,呃，迈克尔，迈克尔，消息到处都是\N{\fs10\1c&HB4DCFC&}Uh, Michael, Michael. The news is everywhere.
+Dialogue: 0,0:55:53.10,0:55:56.93,Default,NTP,0,0,0,,人人都在说，你已经控制了“屹莫比”\N{\fs10\1c&HB4DCFC&}Everyone is saying that, you control Immobiliare.
+Dialogue: 0,0:55:57.20,0:56:00.70,Default,NTP,0,0,0,,“屹莫比”已经在秘鲁洗黑钱了\N{\fs10\1c&HB4DCFC&}Immobiliare already is laundering money in Peru
+Dialogue: 0,0:56:00.71,0:56:02.57,Default,NTP,0,0,0,,还有拿骚 我们都知道\N{\fs10\1c&HB4DCFC&}and Nassau. We know that.
+Dialogue: 0,0:56:02.58,0:56:03.68,Default,NTP,0,0,0,,听我说，迈克尔\N{\fs10\1c&HB4DCFC&}Listen to me, Michael.
+Dialogue: 0,0:56:03.69,0:56:06.18,Default,NTP,0,0,0,,- 迈克尔  - 我们朋友也做了四十年了\N{\fs10\1c&HB4DCFC&}- Michael. - We've been friends for 40 years.
+Dialogue: 0,0:56:06.20,0:56:07.91,Default,NTP,0,0,0,,我们也应该沾一点光\N{\fs10\1c&HB4DCFC&}We should wet our beaks a little, huh?
+Dialogue: 0,0:56:08.31,0:56:10.83,Default,NTP,0,0,0,,我们想和你一起做生意，迈克尔\N{\fs10\1c&HB4DCFC&}We want to do business with you, Michael.
+Dialogue: 0,0:56:10.85,0:56:15.41,Default,NTP,0,0,0,,- 对啊  - 用圣水洗净我们的钱...\N{\fs10\1c&HB4DCFC&}-That's right... -We can wash our money clean in the holy water of...
+Dialogue: 0,0:56:20.92,0:56:21.91,Default,NTP,0,0,0,,搞什么鬼？\N{\fs10\1c&HB4DCFC&}What was that?
+Dialogue: 0,0:56:22.96,0:56:25.42,Default,NTP,0,0,0,,- 是暗杀，快走，跟我来  - 咱们离开这里\N{\fs10\1c&HB4DCFC&}-It's a hit. Let's go. Follow me. -Let's get outta here!
+Dialogue: 0,0:56:45.22,0:56:46.90,Default,NTP,0,0,0,,- 我的外套  - 别管你的外套了\N{\fs10\1c&HB4DCFC&}-My coat! -Forget your coat.
+Dialogue: 0,0:56:46.92,0:56:48.18,Default,NTP,0,0,0,,这是我的幸运外套\N{\fs10\1c&HB4DCFC&}It's my lucky coat!
+Dialogue: 0,0:56:49.14,0:56:50.18,Default,NTP,0,0,0,,我的幸运外套\N{\fs10\1c&HB4DCFC&}It's my lucky coat!
+Dialogue: 0,0:56:57.43,0:56:58.99,Default,NTP,0,0,0,,跟在我后面\N{\fs10\1c&HB4DCFC&}Stay right behind me!
+Dialogue: 0,0:57:14.97,0:57:16.94,Default,NTP,0,0,0,,麦基，走这边\N{\fs10\1c&HB4DCFC&}Mikey, this way!
+Dialogue: 0,0:57:38.08,0:57:39.62,Default,NTP,0,0,0,,来，我们离开这里\N{\fs10\1c&HB4DCFC&}Come on, we're outta here.
+Dialogue: 0,0:58:12.76,0:58:14.82,Default,NTP,0,0,0,,- 你干得好，文森  - 谢谢{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}-You did good, Vicen. -Grazier.
+Dialogue: 0,0:58:15.31,0:58:18.36,Default,NTP,0,0,0,,老的唐都差不多被扫清了\N{\fs10\1c&HB4DCFC&}The old Dons were pretty much wiped out.
+Dialogue: 0,0:58:18.66,0:58:22.51,Default,NTP,0,0,0,,幸存下来的跟乔伊·札萨做了交易\N{\fs10\1c&HB4DCFC&}The ones that survived made deals with Joey Zasa.
+Dialogue: 0,0:58:23.10,0:58:23.87,Default,NTP,0,0,0,,唐·阿尔托贝洛呢？\N{\fs10\1c&HB4DCFC&}Don Altobello?
+Dialogue: 0,0:58:24.39,0:58:25.33,Default,NTP,0,0,0,,他活下来了\N{\fs10\1c&HB4DCFC&}He survived.
+Dialogue: 0,0:58:25.70,0:58:28.36,Default,NTP,0,0,0,,他现在斯达坦岛跟他女儿一起\N{\fs10\1c&HB4DCFC&}He's with his daughters now in Staten Island.
+Dialogue: 0,0:58:28.57,0:58:31.00,Default,NTP,0,0,0,,说他要退隐，回西西里\N{\fs10\1c&HB4DCFC&}Says he's gonna retire to Sicily.
+Dialogue: 0,0:58:32.41,0:58:37.33,Default,NTP,0,0,0,,没人撑腰，乔·札萨绝对来不了这一手\N{\fs10\1c&HB4DCFC&}Joey Zasa would never pull something like this without the backing.
+Dialogue: 0,0:58:37.74,0:58:40.76,Default,NTP,0,0,0,,他只是个打手，是个跑腿的，他什么也不是\N{\fs10\1c&HB4DCFC&}He's just muscle. He's an enforcer. He's nothing.
+Dialogue: 0,0:58:41.12,0:58:43.56,Default,NTP,0,0,0,,他没那个才智搞直升机攻击\N{\fs10\1c&HB4DCFC&}He doesn't have the wit for that helicopter attack.
+Dialogue: 0,0:58:43.57,0:58:46.29,Default,NTP,0,0,0,,他甚至没有那个野心消灭整个委员会\N{\fs10\1c&HB4DCFC&}He doesn't even have the ambition to wipe out the whole commission.
+Dialogue: 0,0:58:48.14,0:58:51.24,Default,NTP,0,0,0,,照我说我们得反击，干掉札萨\N{\fs10\1c&HB4DCFC&}I say we hit back and take Zasa out!
+Dialogue: 0,0:58:56.49,0:58:58.89,Default,NTP,0,0,0,,永远别让任何人知道你在想什么\N{\fs10\1c&HB4DCFC&}Never let anyone know what you're thinking.
+Dialogue: 0,0:59:07.48,0:59:10.64,Default,NTP,0,0,0,,好了，我们…我们传话给乔伊·札萨\N{\fs10\1c&HB4DCFC&}All right, let's get a...let's get a message to Joey Zasa.
+Dialogue: 0,0:59:13.68,0:59:15.68,Default,NTP,0,0,0,,我敬重他所做的\N{\fs10\1c&HB4DCFC&}I respect what he's done.
+Dialogue: 0,0:59:17.12,0:59:20.26,Default,NTP,0,0,0,,后浪推前浪，这是自然规律\N{\fs10\1c&HB4DCFC&}The new overthrows the old. It's natural.
+Dialogue: 0,0:59:20.56,0:59:22.49,Default,NTP,0,0,0,,你怎么能跟这个人做生意？\N{\fs10\1c&HB4DCFC&}How can you do business with this guy?
+Dialogue: 0,0:59:25.49,0:59:27.88,Default,NTP,0,0,0,,我是个生意人，这是首先第一位的\N{\fs10\1c&HB4DCFC&}I'm a businessman, first and foremost.
+Dialogue: 0,0:59:28.16,0:59:29.80,Default,NTP,0,0,0,,我不想跟他进一步冲突\N{\fs10\1c&HB4DCFC&}I want no further conflict with him.
+Dialogue: 0,0:59:29.84,0:59:32.37,Default,NTP,0,0,0,,你告诉他，我决定他是死是活\N{\fs10\1c&HB4DCFC&}You tell him from me that he can live or he can die.
+Dialogue: 0,0:59:32.40,0:59:34.24,Default,NTP,0,0,0,,文森特，你闭不闭嘴？\N{\fs10\1c&HB4DCFC&}Vincent, will you shut up!
+Dialogue: 0,0:59:52.74,0:59:54.01,Default,NTP,0,0,0,,就这样\N{\fs10\1c&HB4DCFC&}That's it.
+Dialogue: 0,0:59:56.39,0:59:57.69,Default,NTP,0,0,0,,乔伊·札萨\N{\fs10\1c&HB4DCFC&}Joey Zasa.
+Dialogue: 0,0:59:58.46,1:00:00.37,Default,NTP,0,0,0,,他不可能是单独干的\N{\fs10\1c&HB4DCFC&}He can't be doing this alone.
+Dialogue: 0,1:00:04.63,1:00:06.76,Default,NTP,0,0,0,,就在我以为我退出的时候\N{\fs10\1c&HB4DCFC&}Just when I thought I was out,
+Dialogue: 0,1:00:06.94,1:00:09.27,Default,NTP,0,0,0,,他们把我拖回去\N{\fs10\1c&HB4DCFC&}they pull me back in.
+Dialogue: 0,1:00:17.55,1:00:24.14,Default,NTP,0,0,0,,我们真正的敌人，还没露出他的面孔呢\N{\fs10\1c&HB4DCFC&}Our true enemy has not yet shown his face.
+Dialogue: 0,1:00:27.52,1:00:28.75,Default,NTP,0,0,0,,迈克尔\N{\fs10\1c&HB4DCFC&}Michael!
+Dialogue: 0,1:00:29.94,1:00:30.85,Default,NTP,0,0,0,,迈克尔\N{\fs10\1c&HB4DCFC&}Michael!
+Dialogue: 0,1:00:32.36,1:00:33.99,Default,NTP,0,0,0,,他的糖尿病犯了\N{\fs10\1c&HB4DCFC&}It's his diabetes.
+Dialogue: 0,1:00:35.76,1:00:36.60,Default,NTP,0,0,0,,他带着他的药没有？\N{\fs10\1c&HB4DCFC&}Has he taken his medicine?
+Dialogue: 0,1:00:36.61,1:00:37.95,Default,NTP,0,0,0,,我不知道他吃什么药\N{\fs10\1c&HB4DCFC&}I don't know what he took.
+Dialogue: 0,1:00:42.24,1:00:44.66,Default,NTP,0,0,0,,- 我能喘气了  - 快叫医生\N{\fs10\1c&HB4DCFC&}-I've got my wind back. -Call a doctor.
+Dialogue: 0,1:00:44.68,1:00:46.26,Default,NTP,0,0,0,,- 我能喘气了  - 好的\N{\fs10\1c&HB4DCFC&}-I've got my wind back. -Okay.
+Dialogue: 0,1:00:47.14,1:00:49.30,Default,NTP,0,0,0,,- 快去  快去!  - 文森特\N{\fs10\1c&HB4DCFC&}-Run, run! -Vincent!
+Dialogue: 0,1:00:49.48,1:00:52.94,Default,NTP,0,0,0,,奔向雷电  雷声伤不了人\N{\fs10\1c&HB4DCFC&}Run at thunderbolt. Thunder can't hurt.
+Dialogue: 0,1:00:53.29,1:00:55.24,Default,NTP,0,0,0,,无害的声音而已\N{\fs10\1c&HB4DCFC&}Harmless noise.
+Dialogue: 0,1:00:55.99,1:00:56.98,Default,NTP,0,0,0,,胡说八道\N{\fs10\1c&HB4DCFC&}Bullshit.
+Dialogue: 0,1:00:57.64,1:01:00.55,Default,NTP,0,0,0,,哦，你他妈虚伪的老东西\N{\fs10\1c&HB4DCFC&}You deceitful old fuck.
+Dialogue: 0,1:01:01.56,1:01:04.75,Default,NTP,0,0,0,,阿尔托贝洛，你他妈的\N{\fs10\1c&HB4DCFC&}Altobello, you fuck!
+Dialogue: 0,1:01:07.06,1:01:08.25,Default,NTP,0,0,0,,弗雷多\N{\fs10\1c&HB4DCFC&}Fredo!
+Dialogue: 0,1:01:09.23,1:01:10.66,Default,NTP,0,0,0,,弗雷多\N{\fs10\1c&HB4DCFC&}Fredo!
+Dialogue: 0,1:01:34.45,1:01:37.36,Default,NTP,0,0,0,,噢，天啊，爸爸\N{\fs10\1c&HB4DCFC&}Oh, God. Dad.
+Dialogue: 0,1:01:39.36,1:01:40.24,Default,NTP,0,0,0,,劳驾\N{\fs10\1c&HB4DCFC&}Excuse me.
+Dialogue: 0,1:01:40.76,1:01:41.73,Default,NTP,0,0,0,,请让一让\N{\fs10\1c&HB4DCFC&}Clear please.
+Dialogue: 0,1:01:41.86,1:01:43.17,Default,NTP,0,0,0,,我通知凯伊\N{\fs10\1c&HB4DCFC&}I'll call Kay.
+Dialogue: 0,1:01:53.96,1:01:54.86,Default,NTP,0,0,0,,晚上好，先生\N{\fs10\1c&HB4DCFC&}Good evening, sir.
+Dialogue: 0,1:01:54.89,1:01:56.72,Default,NTP,0,0,0,,我们能不能在这里停车等？几分钟就回来\N{\fs10\1c&HB4DCFC&}Can we wait here? We'll be back in a few minutes.
+Dialogue: 0,1:01:56.73,1:01:57.79,Default,NTP,0,0,0,,当然，先生\N{\fs10\1c&HB4DCFC&}Certainly, sir.
+Dialogue: 0,1:02:04.53,1:02:08.30,Default,NTP,0,0,0,,哈里森先生，你说是急事\N{\fs10\1c&HB4DCFC&}Mr. Harrison, you said it was urgent.
+Dialogue: 0,1:02:08.65,1:02:10.80,Default,NTP,0,0,0,,你来告解你的罪过吗？\N{\fs10\1c&HB4DCFC&}Have you come to confess your sins?
+Dialogue: 0,1:02:11.24,1:02:13.53,Default,NTP,0,0,0,,迈克尔·柯利昂尼糖尿病中风\N{\fs10\1c&HB4DCFC&}Michael Corleone suffered a diabetic stroke.
+Dialogue: 0,1:02:13.54,1:02:15.54,Default,NTP,0,0,0,,我想你应该在见报前知道\N{\fs10\1c&HB4DCFC&}I thought you should know that before you read it in the papers.
+Dialogue: 0,1:02:15.55,1:02:16.52,Default,NTP,0,0,0,,哦，不\N{\fs10\1c&HB4DCFC&}Oh, no.
+Dialogue: 0,1:02:16.53,1:02:18.61,Default,NTP,0,0,0,,他现在病危昏迷\N{\fs10\1c&HB4DCFC&}He's in a coma on the critical list.
+Dialogue: 0,1:02:18.78,1:02:21.62,Default,NTP,0,0,0,,我来强调交易不论任何情形都将继续\N{\fs10\1c&HB4DCFC&}I'm here to insist the deal goes through in any event.
+Dialogue: 0,1:02:21.65,1:02:24.24,Default,NTP,0,0,0,,教皇不剩多少时间了\N{\fs10\1c&HB4DCFC&}The pope has not much time left.
+Dialogue: 0,1:02:25.32,1:02:29.24,Default,NTP,0,0,0,,所以，跟你一样，我处在一个困难的位置上\N{\fs10\1c&HB4DCFC&}So, as you, I am in a difficult position.
+Dialogue: 0,1:02:29.46,1:02:32.29,Default,NTP,0,0,0,,我们得尽快争取核准此交易\N{\fs10\1c&HB4DCFC&}We have to ratify this deal as soon as possible.
+Dialogue: 0,1:02:33.60,1:02:35.43,Default,NTP,0,0,0,,这我们有共识\N{\fs10\1c&HB4DCFC&}We have an understanding.
+Dialogue: 0,1:02:35.44,1:02:36.60,Default,NTP,0,0,0,,很好\N{\fs10\1c&HB4DCFC&}Good.
+Dialogue: 0,1:02:37.77,1:02:38.84,Default,NTP,0,0,0,,我要去医院\N{\fs10\1c&HB4DCFC&}I'm going to the hospital.
+Dialogue: 0,1:02:38.86,1:02:40.85,Default,NTP,0,0,0,,我会为柯利昂尼先生祈祷\N{\fs10\1c&HB4DCFC&}I'll pray for Mr. Corleone.
+Dialogue: 0,1:02:40.89,1:02:42.70,Default,NTP,0,0,0,,谢谢你\N{\fs10\1c&HB4DCFC&}Thank you.
+Dialogue: 0,1:02:46.22,1:02:47.93,Default,NTP,0,0,0,,我们与柯利昂尼先生同在\N{\fs10\1c&HB4DCFC&}Our thoughts are with Mr. Corleone.
+Dialogue: 0,1:02:47.96,1:02:49.58,Default,NTP,0,0,0,,谢谢你，吉姆神父\N{\fs10\1c&HB4DCFC&}Thank you, Father Jim.
+Dialogue: 0,1:02:52.78,1:02:57.09,Default,NTP,0,0,0,,如果柯利昂尼死了，一切会被揭开\N{\fs10\1c&HB4DCFC&}Everything will be out in the open if Corleone dies.
+Dialogue: 0,1:02:57.75,1:02:59.45,Default,NTP,0,0,0,,祈求时间吧，凯恩济格\N{\fs10\1c&HB4DCFC&}Pray for time, Keinszig.
+Dialogue: 0,1:03:00.52,1:03:06.04,Default,NTP,0,0,0,,这个习惯源自…对永恒的长久思考\N{\fs10\1c&HB4DCFC&}A habit born of, a long contemplation of eternity.
+Dialogue: 0,1:03:41.72,1:03:42.95,Default,NTP,0,0,0,,你好，迈克尔\N{\fs10\1c&HB4DCFC&}Hello, Michael.
+Dialogue: 0,1:03:46.55,1:03:47.88,Default,NTP,0,0,0,,我是凯伊\N{\fs10\1c&HB4DCFC&}It's Kay.
+Dialogue: 0,1:03:53.16,1:03:54.47,Default,NTP,0,0,0,,凯伊\N{\fs10\1c&HB4DCFC&}Kay
+Dialogue: 0,1:03:56.83,1:03:58.83,Default,NTP,0,0,0,,我再没想到你会来\N{\fs10\1c&HB4DCFC&}I never expected you to come.
+Dialogue: 0,1:03:59.65,1:04:02.00,Default,NTP,0,0,0,,不，我知道，我知道\N{\fs10\1c&HB4DCFC&}No, I know, I know.
+Dialogue: 0,1:04:04.38,1:04:05.57,Default,NTP,0,0,0,,但我来了\N{\fs10\1c&HB4DCFC&}But I'm here.
+Dialogue: 0,1:04:09.89,1:04:10.99,Default,NTP,0,0,0,,我很高兴\N{\fs10\1c&HB4DCFC&}I'm glad.
+Dialogue: 0,1:04:11.04,1:04:12.04,Default,NTP,0,0,0,,你知道吗\N{\fs10\1c&HB4DCFC&}You know
+Dialogue: 0,1:04:15.48,1:04:18.65,Default,NTP,0,0,0,,这是我第一次看到你样子这么无助\N{\fs10\1c&HB4DCFC&}this is the first time I've seen you look so helpless.
+Dialogue: 0,1:04:22.52,1:04:24.36,Default,NTP,0,0,0,,这没那么严重  真的\N{\fs10\1c&HB4DCFC&}It's not so bad, really.
+Dialogue: 0,1:04:26.61,1:04:27.80,Default,NTP,0,0,0,,我觉得…\N{\fs10\1c&HB4DCFC&}I feel
+Dialogue: 0,1:04:29.10,1:04:30.80,Default,NTP,0,0,0,,我现在变得更聪明了\N{\fs10\1c&HB4DCFC&}I'm getting wiser now.
+Dialogue: 0,1:04:31.23,1:04:33.53,Default,NTP,0,0,0,,- 是吗？  - 是的\N{\fs10\1c&HB4DCFC&}-Yeah? -Oh, yeah.
+Dialogue: 0,1:04:34.37,1:04:36.30,Default,NTP,0,0,0,,你病得越重越聪明，嗯？\N{\fs10\1c&HB4DCFC&}The sicker you get, the wiser you get, huh?
+Dialogue: 0,1:04:37.80,1:04:40.34,Default,NTP,0,0,0,,等我死的时候会极其聪明\N{\fs10\1c&HB4DCFC&}When I'm dead, I'm gonna be really smart.
+Dialogue: 0,1:04:41.55,1:04:43.40,Default,NTP,0,0,0,,- 迈克尔  - 怎么？\N{\fs10\1c&HB4DCFC&}-Michael -Yeah.
+Dialogue: 0,1:04:44.01,1:04:46.23,Default,NTP,0,0,0,,我要替托尼谢谢你\N{\fs10\1c&HB4DCFC&}I want to thank you for Tony.
+Dialogue: 0,1:04:49.03,1:04:53.26,Default,NTP,0,0,0,,他做得很好，他真的受到一些正面关注\N{\fs10\1c&HB4DCFC&}He's doing really well. He's gotten some very good notices
+Dialogue: 0,1:04:53.52,1:04:55.72,Default,NTP,0,0,0,,而且他就要第一次登台唱歌剧了\N{\fs10\1c&HB4DCFC&}and he's going to be making his operatic debut
+Dialogue: 0,1:04:55.76,1:04:59.00,Default,NTP,0,0,0,,在巴勒莫西西里，复活节，所以…\N{\fs10\1c&HB4DCFC&}in Sicily, Palermo, this Easter. So...
+Dialogue: 0,1:04:59.02,1:05:00.38,Default,NTP,0,0,0,,哦，很好\N{\fs10\1c&HB4DCFC&}That's good.
+Dialogue: 0,1:05:00.66,1:05:02.29,Default,NTP,0,0,0,,所以  谢谢你\N{\fs10\1c&HB4DCFC&}So, thank you.
+Dialogue: 0,1:05:03.46,1:05:07.72,Default,NTP,0,0,0,,那真是光荣，在西西里\N{\fs10\1c&HB4DCFC&}That's a real honor. In Sicily.
+Dialogue: 0,1:05:11.72,1:05:15.23,Default,NTP,0,0,0,,我会去的  我不会错过的\N{\fs10\1c&HB4DCFC&}I will be there. I won't miss that.
+Dialogue: 0,1:05:15.66,1:05:17.15,Default,NTP,0,0,0,,我不会错过\N{\fs10\1c&HB4DCFC&}I won't miss that.
+Dialogue: 0,1:05:23.50,1:05:26.45,Default,NTP,0,0,0,,玛丽  托尼\N{\fs10\1c&HB4DCFC&}Mary, Tony.
+Dialogue: 0,1:05:27.35,1:05:28.50,Default,NTP,0,0,0,,去看爸爸\N{\fs10\1c&HB4DCFC&}Go see dad.
+Dialogue: 0,1:05:29.74,1:05:31.55,Default,NTP,0,0,0,,玛丽，来，过来\N{\fs10\1c&HB4DCFC&}Mary, come, come here.
+Dialogue: 0,1:05:35.13,1:05:36.53,Default,NTP,0,0,0,,- 宝贝女儿  - 一切都会好的\N{\fs10\1c&HB4DCFC&}-Oh, sweetheart. -Everything's going to be all right.
+Dialogue: 0,1:05:36.54,1:05:37.60,Default,NTP,0,0,0,,嘿，爸爸\N{\fs10\1c&HB4DCFC&}Hey, dad.
+Dialogue: 0,1:05:38.84,1:05:39.77,Default,NTP,0,0,0,,托尼\N{\fs10\1c&HB4DCFC&}Tony.
+Dialogue: 0,1:05:39.78,1:05:42.10,Default,NTP,0,0,0,,- 你怎么样，爸爸？  - 过来\N{\fs10\1c&HB4DCFC&}-How you doin' pop? -Come here.
+Dialogue: 0,1:05:44.14,1:05:47.08,Default,NTP,0,0,0,,你妈告诉我了  你演出的事\N{\fs10\1c&HB4DCFC&}Your mother told me. She told me what happened.
+Dialogue: 0,1:05:47.10,1:05:50.43,Default,NTP,0,0,0,,巴勒莫的事？我真希望你能去，爸爸\N{\fs10\1c&HB4DCFC&}About Palermo? I really wanted you to be there, Dad.
+Dialogue: 0,1:05:50.65,1:05:53.60,Default,NTP,0,0,0,,当然  过来亲我一下\N{\fs10\1c&HB4DCFC&}Of course. Come here, kiss me.
+Dialogue: 0,1:06:12.66,1:06:13.80,Default,NTP,0,0,0,,文尼堂哥？\N{\fs10\1c&HB4DCFC&}Cousin Vinnie?
+Dialogue: 0,1:06:13.81,1:06:16.56,Default,NTP,0,0,0,,不，他不在这里，要不你打他公寓电话\N{\fs10\1c&HB4DCFC&}No, he isn't here. Why don't you call his apartment
+Dialogue: 0,1:06:16.57,1:06:18.51,Default,NTP,0,0,0,,给他留个电话录音\N{\fs10\1c&HB4DCFC&}leave a message on his machine?
+Dialogue: 0,1:06:19.01,1:06:20.27,Default,NTP,0,0,0,,是你堂妹玛丽\N{\fs10\1c&HB4DCFC&}It's your cousin, Mary.
+Dialogue: 0,1:06:20.34,1:06:21.97,Default,NTP,0,0,0,,让她进来\N{\fs10\1c&HB4DCFC&}Let her in.
+Dialogue: 0,1:06:24.91,1:06:26.08,Default,NTP,0,0,0,,谢了\N{\fs10\1c&HB4DCFC&}Thanks.
+Dialogue: 0,1:06:26.35,1:06:28.04,Default,NTP,0,0,0,,嗨，堂哥\N{\fs10\1c&HB4DCFC&}Hey, cuz
+Dialogue: 0,1:06:28.12,1:06:30.38,Default,NTP,0,0,0,,我只是觉得应该顺路来一下，可以吗？\N{\fs10\1c&HB4DCFC&}I just thought I'd drop by. Is that okay?
+Dialogue: 0,1:06:30.46,1:06:32.38,Default,NTP,0,0,0,,我去叫弟兄们\N{\fs10\1c&HB4DCFC&}I'm gonna get the guys.
+Dialogue: 0,1:06:34.32,1:06:35.66,Default,NTP,0,0,0,,不，这不好\N{\fs10\1c&HB4DCFC&}No, it's not okay.
+Dialogue: 0,1:06:36.08,1:06:37.52,Default,NTP,0,0,0,,你不应该来的，玛丽\N{\fs10\1c&HB4DCFC&}You shouldn't have come, Mary.
+Dialogue: 0,1:06:39.06,1:06:40.95,Default,NTP,0,0,0,,只能几分钟，好吗？\N{\fs10\1c&HB4DCFC&}A couple minutes only, okay?
+Dialogue: 0,1:06:42.78,1:06:45.35,Default,NTP,0,0,0,,- 你样子很漂亮，表妹  - 谢谢\N{\fs10\1c&HB4DCFC&}-You look beautiful, cous. -Thanks.
+Dialogue: 0,1:06:48.74,1:06:51.30,Default,NTP,0,0,0,,这就是你的俱乐部，你的藏身处？\N{\fs10\1c&HB4DCFC&}So this is your club, your hideout?
+Dialogue: 0,1:06:52.15,1:06:53.10,Default,NTP,0,0,0,,是的\N{\fs10\1c&HB4DCFC&}Yeah
+Dialogue: 0,1:06:53.56,1:06:54.80,Default,NTP,0,0,0,,我来看一下\N{\fs10\1c&HB4DCFC&}I came here to check it out.
+Dialogue: 0,1:06:59.77,1:07:03.65,Default,NTP,0,0,0,,感觉很奇怪，只有我和康妮姑姑在屋里\N{\fs10\1c&HB4DCFC&}It's so strange, just me and Aunt Connie in the house.
+Dialogue: 0,1:07:03.96,1:07:06.30,Default,NTP,0,0,0,,跟你在一起我感觉好多了\N{\fs10\1c&HB4DCFC&}I feel better when I'm with you.
+Dialogue: 0,1:07:07.05,1:07:08.30,Default,NTP,0,0,0,,怎么了，亲爱的？\N{\fs10\1c&HB4DCFC&}What's wrong, sweetheart?
+Dialogue: 0,1:07:08.84,1:07:10.75,Default,NTP,0,0,0,,我真的被我父亲的事吓着了\N{\fs10\1c&HB4DCFC&}I'm really scared about my father.
+Dialogue: 0,1:07:10.77,1:07:11.82,Default,NTP,0,0,0,,不要怕\N{\fs10\1c&HB4DCFC&}Don't be scared.
+Dialogue: 0,1:07:11.84,1:07:15.62,Default,NTP,0,0,0,,当我看到他们把他抬出救护车时  我以为他死了\N{\fs10\1c&HB4DCFC&}When I saw them take him out of that ambulance, I thought he was dead.
+Dialogue: 0,1:07:15.65,1:07:18.35,Default,NTP,0,0,0,,我知道，人人都说他会好起来\N{\fs10\1c&HB4DCFC&}I know. Everybody says he's gonna be better.
+Dialogue: 0,1:07:20.44,1:07:22.10,Default,NTP,0,0,0,,不要担心，好吗？\N{\fs10\1c&HB4DCFC&}Don't worry, okay?
+Dialogue: 0,1:07:22.60,1:07:25.85,Default,NTP,0,0,0,,我记得我小时候他们扫射我们家\N{\fs10\1c&HB4DCFC&}I remember them shooting at our house when I was little.
+Dialogue: 0,1:07:26.57,1:07:29.51,Default,NTP,0,0,0,,艾尔·奈利有一次带了另外一些保镖来\N{\fs10\1c&HB4DCFC&}And Al Neri came one time with other bodyguards
+Dialogue: 0,1:07:29.52,1:07:31.82,Default,NTP,0,0,0,,把我和托尼带走了\N{\fs10\1c&HB4DCFC&}and just took me and Tony away.
+Dialogue: 0,1:07:33.38,1:07:35.65,Default,NTP,0,0,0,,是不是这一套又发生了？\N{\fs10\1c&HB4DCFC&}Is it all happening again?
+Dialogue: 0,1:07:36.97,1:07:39.12,Default,NTP,0,0,0,,跟那不一样，亲\N{\fs10\1c&HB4DCFC&}Not like that, sweetie.
+Dialogue: 0,1:07:40.79,1:07:44.80,Default,NTP,0,0,0,,那你为什么躲在这里？有什么事会对你不利吗？\N{\fs10\1c&HB4DCFC&}Then why are you hiding here? Is something going to happen to you?
+Dialogue: 0,1:07:46.40,1:07:48.80,Default,NTP,0,0,0,,我不会有事的，表亲\N{\fs10\1c&HB4DCFC&}Nothing's gonna happen to me, cugina.
+Dialogue: 0,1:07:49.08,1:07:51.10,Default,NTP,0,0,0,,我们会照顾你\N{\fs10\1c&HB4DCFC&}We'll take care of you.
+Dialogue: 0,1:08:01.56,1:08:03.62,Default,NTP,0,0,0,,我能跟你一起躲在这里吗？\N{\fs10\1c&HB4DCFC&}Can I stay here and hide out with you?
+Dialogue: 0,1:08:03.65,1:08:05.89,Default,NTP,0,0,0,,那你得为小伙子们做gnocchi团子\N{\fs10\1c&HB4DCFC&}You have to make gnocchi for the boys.
+Dialogue: 0,1:08:06.10,1:08:10.45,Default,NTP,0,0,0,,你知道我不懂怎么做菜，不过我可以帮忙\N{\fs10\1c&HB4DCFC&}You know I don't know how to cook, but I'll help.
+Dialogue: 0,1:08:22.84,1:08:23.71,Default,NTP,0,0,0,,好吧\N{\fs10\1c&HB4DCFC&}Okay.
+Dialogue: 0,1:08:25.05,1:08:26.11,Default,NTP,0,0,0,,我该怎么做？\N{\fs10\1c&HB4DCFC&}What do I do?
+Dialogue: 0,1:08:59.05,1:09:00.29,Default,NTP,0,0,0,,我爱你  堂哥\N{\fs10\1c&HB4DCFC&}I love you, cuz
+Dialogue: 0,1:09:00.30,1:09:01.68,Default,NTP,0,0,0,,我也爱你  堂妹\N{\fs10\1c&HB4DCFC&}I love you, too, cuz.
+Dialogue: 0,1:09:05.76,1:09:07.45,Default,NTP,0,0,0,,好了，做饭吧\N{\fs10\1c&HB4DCFC&}Okay, let's cook.
+Dialogue: 0,1:09:24.17,1:09:25.74,Default,NTP,0,0,0,,抱住我\N{\fs10\1c&HB4DCFC&}Hold me.
+Dialogue: 0,1:10:02.49,1:10:04.56,Default,NTP,0,0,0,,你们这些媒体人、警察…\N{\fs10\1c&HB4DCFC&}You know the people like you in the press, the police...
+Dialogue: 0,1:10:04.57,1:10:07.35,Default,NTP,0,0,0,,爱用“黑手党” “我们的事业”这种词\N{\fs10\1c&HB4DCFC&}use words like Mafia, Cosa Nostra.
+Dialogue: 0,1:10:07.41,1:10:09.11,Default,NTP,0,0,0,,这是幻想\N{\fs10\1c&HB4DCFC&}This is a fantasy.
+Dialogue: 0,1:10:09.16,1:10:11.15,Default,NTP,0,0,0,,我们意裔美国人是了不起的\N{\fs10\1c&HB4DCFC&}The Italian-Americans are great people.
+Dialogue: 0,1:10:11.29,1:10:13.70,Default,NTP,0,0,0,,我们铺下建设这城市的砖块，我们中有艺术家\N{\fs10\1c&HB4DCFC&}We laid the bricks that built this city. We have the artists.
+Dialogue: 0,1:10:13.79,1:10:15.66,Default,NTP,0,0,0,,我们有梅乌奇，他发明了电话\N{\fs10\1c&HB4DCFC&}We have Meucci. He invented the telephone.
+Dialogue: 0,1:10:15.69,1:10:18.96,Default,NTP,0,0,0,,我们有唐·阿米奇，他扮演了发明电话的人\N{\fs10\1c&HB4DCFC&}We have Don Ameche who played the guy who invented the telephone. Huh?
+Dialogue: 0,1:10:19.56,1:10:21.72,Default,NTP,0,0,0,,所以听好了，赶紧给自己买张抽奖券\N{\fs10\1c&HB4DCFC&}So, listen, come on, buy yourself a nice raffle ticket.
+Dialogue: 0,1:10:21.76,1:10:23.61,Default,NTP,0,0,0,,没准给自己赢一辆凯迪拉克\N{\fs10\1c&HB4DCFC&}Maybe win yourself a Cadillac.
+Dialogue: 0,1:10:25.00,1:10:27.47,Default,NTP,0,0,0,,这香肠棒极了\N{\fs10\1c&HB4DCFC&}The salciccia is wonderful.
+Dialogue: 0,1:10:27.65,1:10:29.94,Default,NTP,0,0,0,,给，吃个三明治吧，我们走\N{\fs10\1c&HB4DCFC&}Here, have a sandwich. Let's go.
+Dialogue: 0,1:10:30.71,1:10:31.74,Default,NTP,0,0,0,,乔伊\N{\fs10\1c&HB4DCFC&}Joey.
+Dialogue: 0,1:10:42.53,1:10:45.39,Default,NTP,0,0,0,,- 见到你真好，札萨先生  - 祝你愉快\N{\fs10\1c&HB4DCFC&}-Nice to see you, Mr. Zasa. -Have a nice time.
+Dialogue: 0,1:10:47.70,1:10:49.67,Default,NTP,0,0,0,,别忘了去买抽奖券  嗯？\N{\fs10\1c&HB4DCFC&}Don't forget to buy your raffle tickets, huh?
+Dialogue: 0,1:10:52.77,1:10:54.80,Default,NTP,0,0,0,,- 你干什么？  - 他不是故意的\N{\fs10\1c&HB4DCFC&}-What are you doin'?  -He didn't mean it.
+Dialogue: 0,1:10:55.27,1:10:57.43,Default,NTP,0,0,0,,真抱歉  过来，孩子\N{\fs10\1c&HB4DCFC&}He's sorry. Come here, son.
+Dialogue: 0,1:10:57.44,1:10:58.67,Default,NTP,0,0,0,,好了  我们走\N{\fs10\1c&HB4DCFC&}OK, OK, let's go.
+Dialogue: 0,1:11:18.26,1:11:21.36,Default,NTP,0,0,0,,乔伊，你好吗，朋友？\N{\fs10\1c&HB4DCFC&}Joey, how are you, pal?
+Dialogue: 0,1:11:21.60,1:11:23.97,Default,NTP,0,0,0,,嘿，你好吗，哥们？\N{\fs10\1c&HB4DCFC&}Hey, how are you, Buddy Boy!
+Dialogue: 0,1:11:24.70,1:11:26.27,Default,NTP,0,0,0,,喂，乔伊·札萨\N{\fs10\1c&HB4DCFC&}Hey, Joey Zasa!
+Dialogue: 0,1:11:26.56,1:11:28.47,Default,NTP,0,0,0,,乔伊，操你屁股\N{\fs10\1c&HB4DCFC&}Joey! Up your ass!
+Dialogue: 0,1:11:29.74,1:11:31.34,Default,NTP,0,0,0,,那是谁？你认识他？\N{\fs10\1c&HB4DCFC&}Who is this? You know him?
+Dialogue: 0,1:11:31.84,1:11:32.81,Default,NTP,0,0,0,,别理他\N{\fs10\1c&HB4DCFC&}Ignore him.
+Dialogue: 0,1:11:33.04,1:11:36.71,Default,NTP,0,0,0,,喂，乔伊，谁会赢这辆汽车？“蚂蚁”吗？\N{\fs10\1c&HB4DCFC&}Hey,Joey, who's gonna win the car? The Ant?
+Dialogue: 0,1:11:38.14,1:11:41.04,Default,NTP,0,0,0,,意裔美国人的坏名声就是这样来的\N{\fs10\1c&HB4DCFC&}This is the thing that gives the Italian-Americans a bad name, huh?
+Dialogue: 0,1:11:41.05,1:11:42.38,Default,NTP,0,0,0,,这种败类\N{\fs10\1c&HB4DCFC&}A caponi like this, huh?
+Dialogue: 0,1:11:42.39,1:11:45.36,Default,NTP,0,0,0,,喂，乔伊，操你屁股\N{\fs10\1c&HB4DCFC&}Hey, Joey, up your ass!
+Dialogue: 0,1:11:45.37,1:11:48.52,Default,NTP,0,0,0,,喂，你他妈下不下车？你有抽奖券吗？\N{\fs10\1c&HB4DCFC&}Hey, would you get off of that fuckin' car, all right? You got a raffle ticket?
+Dialogue: 0,1:11:48.93,1:11:52.16,Default,NTP,0,0,0,,乔伊，看看我的抽奖券，开始喽\N{\fs10\1c&HB4DCFC&}Hey, Joey, take a good look at my raffle ticket, here we go.
+Dialogue: 0,1:11:52.57,1:11:56.83,Default,NTP,0,0,0,,我就要这样对待你，和你的抽奖券\N{\fs10\1c&HB4DCFC&}Here's what I think of you and your raffle ticket.
+Dialogue: 0,1:11:56.97,1:12:00.47,Default,NTP,0,0,0,,我告诉你，快他妈离开这车，我要捏烂你他妈的蛋蛋\N{\fs10\1c&HB4DCFC&}I told you, get the fuck outta this car, I'll break your fucking balls.
+Dialogue: 0,1:12:01.02,1:12:02.47,Default,NTP,0,0,0,,我要你他妈的滚开\N{\fs10\1c&HB4DCFC&}I want you to get the fuck outta here.
+Dialogue: 0,1:12:03.97,1:12:05.29,Default,NTP,0,0,0,,滚开，滚开\N{\fs10\1c&HB4DCFC&}Get outta here. Get outta here.
+Dialogue: 0,1:12:05.30,1:12:06.37,Default,NTP,0,0,0,,斯库里亚诺\N{\fs10\1c&HB4DCFC&}Squigliaro.
+Dialogue: 0,1:12:21.11,1:12:23.25,Default,NTP,0,0,0,,还跑，乔，你这坨屎\N{\fs10\1c&HB4DCFC&}Run, Joey, you piece of shit!
+Dialogue: 0,1:12:36.57,1:12:38.57,Default,NTP,0,0,0,,开门  快开门\N{\fs10\1c&HB4DCFC&}Open the door! Open the door!
+Dialogue: 0,1:12:38.58,1:12:39.74,Default,NTP,0,0,0,,嗨，乔\N{\fs10\1c&HB4DCFC&}Hi, Joe.
+Dialogue: 0,1:12:43.65,1:12:44.98,Default,NTP,0,0,0,,札萨\N{\fs10\1c&HB4DCFC&}Zasa.
+Dialogue: 0,1:13:02.33,1:13:07.43,Default,NTP,0,0,0,,再也不准下这种命令\N{\fs10\1c&HB4DCFC&}Don't ever again give that kind of order.
+Dialogue: 0,1:13:07.69,1:13:09.44,Default,NTP,0,0,0,,只要我活着就不行\N{\fs10\1c&HB4DCFC&}Not while I'm alive.
+Dialogue: 0,1:13:09.51,1:13:10.84,Default,NTP,0,0,0,,懂吗？\N{\fs10\1c&HB4DCFC&}Understand?
+Dialogue: 0,1:13:12.78,1:13:14.97,Default,NTP,0,0,0,,你病得不能做决定\N{\fs10\1c&HB4DCFC&}You were too sick to make a decision.
+Dialogue: 0,1:13:15.24,1:13:19.61,Default,NTP,0,0,0,,我征得奈利同意，我征得康妮同意\N{\fs10\1c&HB4DCFC&}I got a go-ahead from Neri, I got a go-ahead from Connie.
+Dialogue: 0,1:13:19.99,1:13:21.25,Default,NTP,0,0,0,,康妮？\N{\fs10\1c&HB4DCFC&}Connie?
+Dialogue: 0,1:13:30.89,1:13:33.75,Default,NTP,0,0,0,,这是正确的决定，迈克尔叔叔\N{\fs10\1c&HB4DCFC&}It was the right decision, Uncle Michael.
+Dialogue: 0,1:13:34.44,1:13:36.04,Default,NTP,0,0,0,,这是错误的决定\N{\fs10\1c&HB4DCFC&}It was the wrong decision.
+Dialogue: 0,1:13:36.54,1:13:38.43,Default,NTP,0,0,0,,我指挥这个家族\N{\fs10\1c&HB4DCFC&}I command this family.
+Dialogue: 0,1:13:38.77,1:13:41.14,Default,NTP,0,0,0,,不管对错\N{\fs10\1c&HB4DCFC&}Right or wrong.
+Dialogue: 0,1:13:41.76,1:13:44.70,Default,NTP,0,0,0,,这不是我想要的\N{\fs10\1c&HB4DCFC&}it was not what I wanted!
+Dialogue: 0,1:14:03.09,1:14:04.92,Default,NTP,0,0,0,,你明不明白？\N{\fs10\1c&HB4DCFC&}Do you understand?
+Dialogue: 0,1:14:11.80,1:14:12.87,Default,NTP,0,0,0,,是\N{\fs10\1c&HB4DCFC&}Yes.
+Dialogue: 0,1:14:19.49,1:14:21.24,Default,NTP,0,0,0,,得了，迈克尔\N{\fs10\1c&HB4DCFC&}Come on, Michael.
+Dialogue: 0,1:14:32.86,1:14:33.95,Default,NTP,0,0,0,,是\N{\fs10\1c&HB4DCFC&}Yes!
+Dialogue: 0,1:14:36.43,1:14:40.33,Default,NTP,0,0,0,,好  文森特  扶我回床上\N{\fs10\1c&HB4DCFC&}Good. Vincent, help me to my bed.
+Dialogue: 0,1:14:40.37,1:14:43.43,Default,NTP,0,0,0,,我要跟你谈谈，单独，就一会儿\N{\fs10\1c&HB4DCFC&}I wanna talk to you, alone, for a minute.
+Dialogue: 0,1:14:50.61,1:14:51.87,Default,NTP,0,0,0,,你知道\N{\fs10\1c&HB4DCFC&}You know
+Dialogue: 0,1:14:52.47,1:14:55.04,Default,NTP,0,0,0,,我总是感觉对你负有责任\N{\fs10\1c&HB4DCFC&}I always felt responsible for you
+Dialogue: 0,1:14:55.58,1:14:56.37,Default,NTP,0,0,0,,你知道的…\N{\fs10\1c&HB4DCFC&}You know than...
+Dialogue: 0,1:14:57.99,1:14:59.47,Default,NTP,0,0,0,,你的父亲\N{\fs10\1c&HB4DCFC&}Your father
+Dialogue: 0,1:15:00.84,1:15:04.31,Default,NTP,0,0,0,,我的哥哥，我们个性相反\N{\fs10\1c&HB4DCFC&}my brother, we were opposites.
+Dialogue: 0,1:15:04.64,1:15:06.28,Default,NTP,0,0,0,,我们会吵架争辩\N{\fs10\1c&HB4DCFC&}We would fight and argue
+Dialogue: 0,1:15:07.09,1:15:09.52,Default,NTP,0,0,0,,但我从未怀疑过他的爱\N{\fs10\1c&HB4DCFC&}but I never doubted his love.
+Dialogue: 0,1:15:09.73,1:15:11.85,Default,NTP,0,0,0,,他愿意为我做任何事\N{\fs10\1c&HB4DCFC&}He would do anything for me.
+Dialogue: 0,1:15:13.00,1:15:14.59,Default,NTP,0,0,0,,但他的脾气\N{\fs10\1c&HB4DCFC&}But his temper
+Dialogue: 0,1:15:17.84,1:15:19.46,Default,NTP,0,0,0,,太急躁\N{\fs10\1c&HB4DCFC&}it was too much.
+Dialogue: 0,1:15:20.24,1:15:22.04,Default,NTP,0,0,0,,遮蔽了他的理智\N{\fs10\1c&HB4DCFC&}Clouded his reason.
+Dialogue: 0,1:15:23.21,1:15:25.54,Default,NTP,0,0,0,,我不想要你犯这种错误\N{\fs10\1c&HB4DCFC&}I don't want you to make that mistake
+Dialogue: 0,1:15:28.69,1:15:30.24,Default,NTP,0,0,0,,还有\N{\fs10\1c&HB4DCFC&}Also
+Dialogue: 0,1:15:30.99,1:15:34.32,Default,NTP,0,0,0,,他对女人也很有一套\N{\fs10\1c&HB4DCFC&}he, too, had a way with women.
+Dialogue: 0,1:15:35.55,1:15:38.25,Default,NTP,0,0,0,,- 文森特…  - 我也这么听说\N{\fs10\1c&HB4DCFC&}-Vincent.. -So I hear.
+Dialogue: 0,1:15:38.41,1:15:40.05,Default,NTP,0,0,0,,你跟我女儿是在做什么？\N{\fs10\1c&HB4DCFC&}what are you doing with my daughter?
+Dialogue: 0,1:15:43.33,1:15:45.09,Default,NTP,0,0,0,,你跟她是怎么回事？\N{\fs10\1c&HB4DCFC&}What are you doing with her?
+Dialogue: 0,1:15:50.04,1:15:52.63,Default,NTP,0,0,0,,这太危险\N{\fs10\1c&HB4DCFC&}It's too dangerous.
+Dialogue: 0,1:15:55.17,1:15:56.80,Default,NTP,0,0,0,,你听到了？\N{\fs10\1c&HB4DCFC&}You hear me?
+Dialogue: 0,1:16:02.95,1:16:04.41,Default,NTP,0,0,0,,好\N{\fs10\1c&HB4DCFC&}OK.
+Dialogue: 0,1:16:18.56,1:16:20.19,Default,NTP,0,0,0,,文森佐\N{\fs10\1c&HB4DCFC&}Vincenzo
+Dialogue: 0,1:16:24.07,1:16:25.49,Default,NTP,0,0,0,,他们动手时…\N{\fs10\1c&HB4DCFC&}When they come
+Dialogue: 0,1:16:26.40,1:16:28.39,Default,NTP,0,0,0,,会冲着你所爱的来\N{\fs10\1c&HB4DCFC&}they'll come at what you love.
+Dialogue: 0,1:17:20.87,1:17:22.07,Default,NTP,0,0,0,,你好吗？\N{\fs10\1c&HB4DCFC&}How are you?
+Dialogue: 0,1:17:23.34,1:17:25.98,Default,NTP,0,0,0,,唐·本蒂诺，我的老朋友\N{\fs10\1c&HB4DCFC&}Don Bendino, my old friend.
+Dialogue: 0,1:17:42.74,1:17:43.58,Default,NTP,0,0,0,,爸爸\N{\fs10\1c&HB4DCFC&}pap
+Dialogue: 0,1:17:57.51,1:17:59.27,Default,NTP,0,0,0,,我要带你们来这里\N{\fs10\1c&HB4DCFC&}I wanted to bring you here
+Dialogue: 0,1:17:59.30,1:18:03.16,Default,NTP,0,0,0,,好让我的老朋友及庇护人唐·汤马西诺\N{\fs10\1c&HB4DCFC&}so that my old friend and protector Don Tommasino
+Dialogue: 0,1:18:03.26,1:18:04.77,Default,NTP,0,0,0,,给我们出主意\N{\fs10\1c&HB4DCFC&}could advise us.
+Dialogue: 0,1:18:05.44,1:18:06.60,Default,NTP,0,0,0,,唐·汤马西诺\N{\fs10\1c&HB4DCFC&}Don Tommasino
+Dialogue: 0,1:18:06.64,1:18:09.74,Default,NTP,0,0,0,,{\1c&H96D4F7&}你对阿尔托贝洛有什么看法？
+Dialogue: 0,1:18:10.72,1:18:13.53,Default,NTP,0,0,0,,{\1c&H96D4F7&}一个很有才干的人
+Dialogue: 0,1:18:13.98,1:18:17.88,Default,NTP,0,0,0,,{\1c&H96D4F7&}他维持了我们西西里人与美国朋友之间的和平
+Dialogue: 0,1:18:18.97,1:18:21.26,Default,NTP,0,0,0,,{\1c&H96D4F7&}讲道理的圣人
+Dialogue: 0,1:18:23.34,1:18:25.27,Default,NTP,0,0,0,,亚特兰大城那次大屠杀\N{\fs10\1c&HB4DCFC&}The bloodbath in Atlantic City,
+Dialogue: 0,1:18:25.74,1:18:27.84,Default,NTP,0,0,0,,给纽约留下个烂摊子，现在…\N{\fs10\1c&HB4DCFC&}left New York a mess. Now...
+Dialogue: 0,1:18:28.27,1:18:30.90,Default,NTP,0,0,0,,乔伊·札萨起码曾经经营得有个样子\N{\fs10\1c&HB4DCFC&}Joey Zasa at least was running a very tight ship,
+Dialogue: 0,1:18:30.95,1:18:34.57,Default,NTP,0,0,0,,现在他出局了，我们有义务介入\N{\fs10\1c&HB4DCFC&}but now that he's out of the picture, we're obligated to step in.
+Dialogue: 0,1:18:34.74,1:18:36.34,Default,NTP,0,0,0,,介入回去\N{\fs10\1c&HB4DCFC&}Step back in.
+Dialogue: 0,1:18:36.62,1:18:38.84,Default,NTP,0,0,0,,我们不介入，中国人、哥伦比亚人就会\N{\fs10\1c&HB4DCFC&}If we don't, the Chinese, the Colombians will.
+Dialogue: 0,1:18:39.38,1:18:41.65,Default,NTP,0,0,0,,{\1c&H96D4F7&}柯利昂尼家族不贩毒
+Dialogue: 0,1:18:41.69,1:18:44.24,Default,NTP,0,0,0,,{\1c&H96D4F7&}所以纽约弱，巴勒莫强
+Dialogue: 0,1:18:45.84,1:18:49.86,Default,NTP,0,0,0,,{\1c&H96D4F7&}你的敌人总是会在你丢下的地方坐大
+Dialogue: 0,1:18:50.69,1:18:52.46,Default,NTP,0,0,0,,唐·汤马西诺\N{\fs10\1c&HB4DCFC&}Don Tommasino
+Dialogue: 0,1:18:52.56,1:18:56.96,Default,NTP,0,0,0,,{\1c&H96D4F7&}谁可能下令那场屠杀
+Dialogue: 0,1:18:58.84,1:19:02.74,Default,NTP,0,0,0,,{\1c&H96D4F7&}同时还能施压梵蒂冈的交易？
+Dialogue: 0,1:19:03.11,1:19:08.14,Default,NTP,0,0,0,,{\1c&H96D4F7&}只有卢凯西…势力范围能达这两地
+Dialogue: 0,1:19:10.14,1:19:13.26,Default,NTP,0,0,0,,我们的船必须朝同一个方向航行\N{\fs10\1c&HB4DCFC&}Our ships must all sail in the same direction
+Dialogue: 0,1:19:15.31,1:19:18.14,Default,NTP,0,0,0,,意大利政界几个世纪来都有这种人\N{\fs10\1c&HB4DCFC&}Italian politics have had these kind of men for centuries.
+Dialogue: 0,1:19:18.52,1:19:20.84,Default,NTP,0,0,0,,他们，是真正的黑手党\N{\fs10\1c&HB4DCFC&}They're, the true Mafia
+Dialogue: 0,1:19:21.19,1:19:24.54,Default,NTP,0,0,0,,总主教和梵蒂冈银行，才是大问题\N{\fs10\1c&HB4DCFC&}The Archbishop and the Vatican bank, that's the big problem.
+Dialogue: 0,1:19:24.56,1:19:26.22,Default,NTP,0,0,0,,他们是同一个问题\N{\fs10\1c&HB4DCFC&}They're the same problem
+Dialogue: 0,1:19:26.38,1:19:28.86,Default,NTP,0,0,0,,BJ，他们有勾结\N{\fs10\1c&HB4DCFC&}B.J., they're connected.
+Dialogue: 0,1:19:29.67,1:19:32.50,Default,NTP,0,0,0,,总主教有一些很有权势的朋友\N{\fs10\1c&HB4DCFC&}The Archbishop has very powerful friends.
+Dialogue: 0,1:19:35.02,1:19:36.46,Default,NTP,0,0,0,,他们全力保护他\N{\fs10\1c&HB4DCFC&}They totally protect him.
+Dialogue: 0,1:19:36.99,1:19:41.32,Default,NTP,0,0,0,,{\1c&H96D4F7&}教会方面有没有我们能投靠的人？
+Dialogue: 0,1:19:41.57,1:19:45.07,Default,NTP,0,0,0,,{\1c&H96D4F7&}能把我们的问题告诉这个人
+Dialogue: 0,1:19:46.45,1:19:48.46,Default,NTP,0,0,0,,{\1c&H96D4F7&}枢机主教龙巴度
+Dialogue: 0,1:19:48.70,1:19:54.07,Default,NTP,0,0,0,,{\1c&H96D4F7&}为人睿智和善，极有影响力
+Dialogue: 0,1:19:54.41,1:19:57.67,Default,NTP,0,0,0,,{\1c&H96D4F7&}他会见你的
+Dialogue: 0,1:19:59.08,1:19:59.89,Default,NTP,0,0,0,,{\1c&H96D4F7&}好
+Dialogue: 0,1:20:02.34,1:20:04.89,Default,NTP,0,0,0,,我会去见这位枢机主教龙巴度\N{\fs10\1c&HB4DCFC&}I will go see this Cardinal Lamberto
+Dialogue: 0,1:20:05.20,1:20:08.14,Default,NTP,0,0,0,,看看我们能不能用文明的方式解决问题\N{\fs10\1c&HB4DCFC&}and see if we can work things out in a civilized way
+Dialogue: 0,1:20:09.97,1:20:11.89,Default,NTP,0,0,0,,你遵守协约\N{\fs10\1c&HB4DCFC&}You honor your agreements
+Dialogue: 0,1:20:12.28,1:20:14.31,Default,NTP,0,0,0,,你要对付的这些人是无赖\N{\fs10\1c&HB4DCFC&}These people you're dealing with are crooks
+Dialogue: 0,1:20:15.56,1:20:17.16,Default,NTP,0,0,0,,他们不讲信义\N{\fs10\1c&HB4DCFC&}they have no honor.
+Dialogue: 0,1:20:19.91,1:20:21.30,Default,NTP,0,0,0,,我的话是最终决定\N{\fs10\1c&HB4DCFC&}My word is final.
+Dialogue: 0,1:20:32.55,1:20:36.91,Default,NTP,0,0,0,,{\1c&H96D4F7&}政治与犯罪，它们是一回事
+Dialogue: 0,1:20:52.71,1:20:56.27,Default,NTP,0,0,0,,精彩 精彩 精彩\N{\fs10\1c&HB4DCFC&}Bravo! Bravo, Bravo!
+Dialogue: 0,1:20:58.72,1:21:00.88,Default,NTP,0,0,0,,我邀请你们大家到此\N{\fs10\1c&HB4DCFC&}I have invited you all here
+Dialogue: 0,1:21:01.05,1:21:05.65,Default,NTP,0,0,0,,庆祝我的儿子首次歌剧院演出\N{\fs10\1c&HB4DCFC&}to celebrate, my son's first appearance in an opera house
+Dialogue: 0,1:21:05.99,1:21:09.05,Default,NTP,0,0,0,,- 我们玩“费城牌”  - 他将于三周后…\N{\fs10\1c&HB4DCFC&}- We'll play "Philadelphia" - He will be appearing, in about three weeks
+Dialogue: 0,1:21:09.06,1:21:13.65,Default,NTP,0,0,0,,- 7张牌，2张下，4张上…  - 在玛西摩剧院登台\N{\fs10\1c&HB4DCFC&}- 7 cards. 2 down, 4 up  -in the Theatre Maximo
+Dialogue: 0,1:21:13.74,1:21:15.89,Default,NTP,0,0,0,,演出歌剧“乡间骑士”\N{\fs10\1c&HB4DCFC&}in the opera, Cavalleria Rusticana.
+Dialogue: 0,1:21:16.20,1:21:19.00,Default,NTP,0,0,0,,是乡间骑士，爸爸\N{\fs10\1c&HB4DCFC&}It's Cavalleria Rusticana dad.
+Dialogue: 0,1:21:19.07,1:21:22.50,Default,NTP,0,0,0,,骑士 看来我买错歌剧票了\N{\fs10\1c&HB4DCFC&}Cavalleria. I think I've got tickets to the wrong opera.
+Dialogue: 0,1:21:23.11,1:21:24.47,Default,NTP,0,0,0,,我在纽约待得太久了\N{\fs10\1c&HB4DCFC&}I've been in New York too long.
+Dialogue: 0,1:21:24.64,1:21:28.14,Default,NTP,0,0,0,,总之，你们都会收到门票\N{\fs10\1c&HB4DCFC&}Anyway, you will all receive tickets.
+Dialogue: 0,1:21:28.24,1:21:29.58,Default,NTP,0,0,0,,多多捧场啊\N{\fs10\1c&HB4DCFC&}So come on down.
+Dialogue: 0,1:21:29.88,1:21:31.14,Default,NTP,0,0,0,,爸  我有一份礼物给你\N{\fs10\1c&HB4DCFC&}Uh, dad, I've got a present for you
+Dialogue: 0,1:21:35.99,1:21:38.25,Default,NTP,0,0,0,,它来自柯利昂尼小镇\N{\fs10\1c&HB4DCFC&}It comes from the town of Corleone and uh,
+Dialogue: 0,1:21:38.42,1:21:40.26,Default,NTP,0,0,0,,一首真正的西西里歌谣\N{\fs10\1c&HB4DCFC&}it's authentic Sicilian
+Dialogue: 0,1:21:41.56,1:21:42.53,Default,NTP,0,0,0,,而且…\N{\fs10\1c&HB4DCFC&}And uh
+Dialogue: 0,1:21:43.56,1:21:44.89,Default,NTP,0,0,0,,我是为你学的\N{\fs10\1c&HB4DCFC&}I learned it for you
+Dialogue: 0,1:21:50.84,1:21:57.08,Default,NTP,0,0,0,,{\1c&H93CFE0&}月在空中烧 我在爱中燃烧
+Dialogue: 0,1:21:58.14,1:22:04.38,Default,NTP,0,0,0,,{\1c&H93CFE0&}火焰殆尽 正如我心
+Dialogue: 0,1:22:05.40,1:22:11.06,Default,NTP,0,0,0,,{\1c&H93CFE0&}我的灵魂呼喊于痛苦中
+Dialogue: 0,1:22:12.41,1:22:18.64,Default,NTP,0,0,0,,{\1c&H93CFE0&}无法平静 多么可怕的夜
+Dialogue: 0,1:22:19.77,1:22:26.00,Default,NTP,0,0,0,,{\1c&H93CFE0&}时光消逝 但日子不再来
+Dialogue: 0,1:22:26.69,1:22:33.18,Default,NTP,0,0,0,,{\1c&H93CFE0&}太阳不再有 只因她没有归来
+Dialogue: 0,1:22:34.11,1:22:40.34,Default,NTP,0,0,0,,{\1c&H93CFE0&}燃烧我的土地 燃烧我的心
+Dialogue: 0,1:22:41.89,1:22:48.14,Default,NTP,0,0,0,,{\1c&H93CFE0&}她渴求清水 而我渴求爱
+Dialogue: 0,1:22:49.19,1:22:54.42,Default,NTP,0,0,0,,{\1c&H93CFE0&}我能向谁吟唱我的歌
+Dialogue: 0,1:22:55.70,1:23:03.98,Default,NTP,0,0,0,,{\1c&H93CFE0&}阳台上已然无人现身
+Dialogue: 0,1:23:14.44,1:23:18.26,Default,NTP,0,0,0,,她又漂亮又善良 我爱过她\N{\fs10\1c&HB4DCFC&}She was, wonderful, beautiful. I loved her.
+Dialogue: 0,1:23:18.66,1:23:20.22,Default,NTP,0,0,0,,然而她死了\N{\fs10\1c&HB4DCFC&}And then she died.
+Dialogue: 0,1:23:21.06,1:23:23.46,Default,NTP,0,0,0,,我的亲信保镖\N{\fs10\1c&HB4DCFC&}My trusted bodyguard
+Dialogue: 0,1:23:24.50,1:23:27.06,Default,NTP,0,0,0,,在我车上装了炸弹\N{\fs10\1c&HB4DCFC&}planted a bomb in my car
+Dialogue: 0,1:23:27.80,1:23:29.73,Default,NTP,0,0,0,,她在我之前去开车\N{\fs10\1c&HB4DCFC&}she drove it before I did.
+Dialogue: 0,1:23:31.47,1:23:35.10,Default,NTP,0,0,0,,为什么这么美丽的地方如此暴力？\N{\fs10\1c&HB4DCFC&}Why is such a beautiful country, so violent?
+Dialogue: 0,1:23:35.17,1:23:36.27,Default,NTP,0,0,0,,历史\N{\fs10\1c&HB4DCFC&}History.
+Dialogue: 0,1:23:36.76,1:23:38.86,Default,NTP,0,0,0,,你看，妈妈跟我说起从前…\N{\fs10\1c&HB4DCFC&}You know, mom was telling me about the old days,
+Dialogue: 0,1:23:38.87,1:23:41.30,Default,NTP,0,0,0,,她最担心的只是考试不及格\N{\fs10\1c&HB4DCFC&}when her biggest worry was just passing exams
+Dialogue: 0,1:23:41.48,1:23:42.98,Default,NTP,0,0,0,,对，那时候是的\N{\fs10\1c&HB4DCFC&}Yes it was, then.
+Dialogue: 0,1:23:43.48,1:23:45.28,Default,NTP,0,0,0,,现在我为你担心\N{\fs10\1c&HB4DCFC&}I worry about you now.
+Dialogue: 0,1:23:45.30,1:23:46.32,Default,NTP,0,0,0,,哦 玛丽\N{\fs10\1c&HB4DCFC&}Oh Mary.
+Dialogue: 0,1:23:47.05,1:23:50.62,Default,NTP,0,0,0,,玛丽，你真是个暖心的孩子，你一向如此\N{\fs10\1c&HB4DCFC&}Mary you're such a warm-hearted girl, you always were.
+Dialogue: 0,1:23:50.74,1:23:52.35,Default,NTP,0,0,0,,我爱我的家人\N{\fs10\1c&HB4DCFC&}I love my family.
+Dialogue: 0,1:23:52.83,1:23:54.52,Default,NTP,0,0,0,,甚至是你的堂兄文森？\N{\fs10\1c&HB4DCFC&}Even your cousin Vincent?
+Dialogue: 0,1:23:58.29,1:23:59.89,Default,NTP,0,0,0,,我真心爱他\N{\fs10\1c&HB4DCFC&}I really love him.
+Dialogue: 0,1:24:01.72,1:24:02.94,Default,NTP,0,0,0,,他是你的近亲\N{\fs10\1c&HB4DCFC&}He's your first cousin.
+Dialogue: 0,1:24:03.44,1:24:05.00,Default,NTP,0,0,0,,那我更得爱他\N{\fs10\1c&HB4DCFC&}Then I love him first.
+Dialogue: 0,1:24:06.07,1:24:09.14,Default,NTP,0,0,0,,玛丽，你不能见他\N{\fs10\1c&HB4DCFC&}Mary, you can't see him.
+Dialogue: 0,1:24:09.58,1:24:12.14,Default,NTP,0,0,0,,不要再见他了\N{\fs10\1c&HB4DCFC&}Just don't see him any more
+Dialogue: 0,1:24:12.74,1:24:15.91,Default,NTP,0,0,0,,他说的对 这样太危险\N{\fs10\1c&HB4DCFC&}He's right. it's too dangerous
+Dialogue: 0,1:24:18.44,1:24:19.65,Default,NTP,0,0,0,,玛丽，听我说\N{\fs10\1c&HB4DCFC&}Mary, listen to me.
+Dialogue: 0,1:24:19.70,1:24:22.94,Default,NTP,0,0,0,,你不能再见他了，不能以那种方式\N{\fs10\1c&HB4DCFC&}You can't see him anymore. Not in that fashion.
+Dialogue: 0,1:24:26.24,1:24:28.27,Default,NTP,0,0,0,,请你，跟我保证\N{\fs10\1c&HB4DCFC&}Please promise me.
+Dialogue: 0,1:24:29.56,1:24:30.59,Default,NTP,0,0,0,,不\N{\fs10\1c&HB4DCFC&}No.
+Dialogue: 0,1:24:45.24,1:24:48.37,Default,NTP,0,0,0,,美丽的堂妹，我的宝贝{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Bella cugina...Tesoro mio.
+Dialogue: 0,1:24:59.60,1:25:00.87,Default,NTP,0,0,0,,你要见我？\N{\fs10\1c&HB4DCFC&}You wanted to see me?
+Dialogue: 0,1:25:00.94,1:25:01.56,Default,NTP,0,0,0,,是的\N{\fs10\1c&HB4DCFC&}Yeah.
+Dialogue: 0,1:25:02.80,1:25:05.06,Default,NTP,0,0,0,,- 我要你为我办件事  - 好的\N{\fs10\1c&HB4DCFC&}-I want you to do something for me. -Okay.
+Dialogue: 0,1:25:05.28,1:25:06.59,Default,NTP,0,0,0,,很危险\N{\fs10\1c&HB4DCFC&}It's dangerous.
+Dialogue: 0,1:25:08.00,1:25:08.83,Default,NTP,0,0,0,,好\N{\fs10\1c&HB4DCFC&}Good.
+Dialogue: 0,1:25:09.59,1:25:11.83,Default,NTP,0,0,0,,我加入，你需要什么？\N{\fs10\1c&HB4DCFC&}I'm in. What do you need?
+Dialogue: 0,1:25:12.00,1:25:14.84,Default,NTP,0,0,0,,我要你出卖灵魂给唐·阿尔托贝洛\N{\fs10\1c&HB4DCFC&}I want you to sell your soul to Don Altobello.
+Dialogue: 0,1:25:15.74,1:25:17.26,Default,NTP,0,0,0,,背叛我\N{\fs10\1c&HB4DCFC&}To betray me.
+Dialogue: 0,1:25:21.05,1:25:22.47,Default,NTP,0,0,0,,他永远不会相信我\N{\fs10\1c&HB4DCFC&}He'll never believe me.
+Dialogue: 0,1:25:23.17,1:25:23.99,Default,NTP,0,0,0,,来\N{\fs10\1c&HB4DCFC&}Here.
+Dialogue: 0,1:25:24.06,1:25:26.92,Default,NTP,0,0,0,,- 那要看情形  - 坐下\N{\fs10\1c&HB4DCFC&}-That depends. -Sit down.
+Dialogue: 0,1:25:29.55,1:25:30.94,Default,NTP,0,0,0,,我有个想法\N{\fs10\1c&HB4DCFC&}I have an idea.
+Dialogue: 0,1:25:32.56,1:25:36.54,Default,NTP,0,0,0,,看你能不能弄清 阿尔托贝洛的关系有多高层\N{\fs10\1c&HB4DCFC&}See if you can learn how high Altobello is connected.
+Dialogue: 0,1:25:40.30,1:25:41.86,Default,NTP,0,0,0,,安排一次见面\N{\fs10\1c&HB4DCFC&}Arrange a meeting.
+Dialogue: 0,1:25:44.54,1:25:47.40,Default,NTP,0,0,0,,你说你对我多么忠心\N{\fs10\1c&HB4DCFC&}You say how devoted you are to me.
+Dialogue: 0,1:25:47.99,1:25:49.73,Default,NTP,0,0,0,,告诉他你的问题\N{\fs10\1c&HB4DCFC&}Tell him your problems.
+Dialogue: 0,1:25:50.24,1:25:51.93,Default,NTP,0,0,0,,你向他求助\N{\fs10\1c&HB4DCFC&}You ask for his help.
+Dialogue: 0,1:25:52.44,1:25:53.44,Default,NTP,0,0,0,,什么问题？\N{\fs10\1c&HB4DCFC&}What problems?
+Dialogue: 0,1:25:55.13,1:25:57.65,Default,NTP,0,0,0,,说你想和我女儿私奔\N{\fs10\1c&HB4DCFC&}That you want to run away with my daughter.
+Dialogue: 0,1:25:58.62,1:26:03.15,Default,NTP,0,0,0,,不过你知道如果这么做了，我就成了你的敌人\N{\fs10\1c&HB4DCFC&}Only you know that if you do, I will become your enemy.
+Dialogue: 0,1:26:07.63,1:26:09.79,Default,NTP,0,0,0,,你知道我绝不会做那种事，迈克尔叔叔\N{\fs10\1c&HB4DCFC&}You know I'd never do that, Uncle Mike.
+Dialogue: 0,1:26:10.26,1:26:11.24,Default,NTP,0,0,0,,我知道\N{\fs10\1c&HB4DCFC&}I know.
+Dialogue: 0,1:26:12.40,1:26:14.32,Default,NTP,0,0,0,,你求阿尔托贝洛来找我谈\N{\fs10\1c&HB4DCFC&}You ask Altobello to speak to me.
+Dialogue: 0,1:26:15.40,1:26:17.24,Default,NTP,0,0,0,,以成就你们的婚姻\N{\fs10\1c&HB4DCFC&}To further the marriage.
+Dialogue: 0,1:26:17.47,1:26:19.56,Default,NTP,0,0,0,,可你们毕竟是堂兄妹\N{\fs10\1c&HB4DCFC&}But you're cousins after all.
+Dialogue: 0,1:26:19.84,1:26:22.24,Default,NTP,0,0,0,,迈克尔向来有点老派\N{\fs10\1c&HB4DCFC&}Michael was always a little old fashioned.
+Dialogue: 0,1:26:23.47,1:26:27.14,Default,NTP,0,0,0,,跟他解释说 你多么不可能参与我的合法生意\N{\fs10\1c&HB4DCFC&}Explain to him how, you can never be part of my, legitimate world.
+Dialogue: 0,1:26:27.15,1:26:28.97,Default,NTP,0,0,0,,说你想要自立门户\N{\fs10\1c&HB4DCFC&}That you want your own family.
+Dialogue: 0,1:26:29.46,1:26:31.55,Default,NTP,0,0,0,,我能接下乔伊·札萨身后的摊子\N{\fs10\1c&HB4DCFC&}I could straighten out with Joey Zasa left behind.
+Dialogue: 0,1:26:34.14,1:26:36.72,Default,NTP,0,0,0,,如果你能够用你的友谊说服他\N{\fs10\1c&HB4DCFC&}If you could use your friendship to persuade him
+Dialogue: 0,1:26:38.16,1:26:40.58,Default,NTP,0,0,0,,我会永远承你的情\N{\fs10\1c&HB4DCFC&}I would be indebted to you forever.
+Dialogue: 0,1:26:42.93,1:26:44.62,Default,NTP,0,0,0,,柯利昂尼家的人\N{\fs10\1c&HB4DCFC&}A Corleone
+Dialogue: 0,1:26:44.95,1:26:47.24,Default,NTP,0,0,0,,懂得这种朋友的价值\N{\fs10\1c&HB4DCFC&}knows the value of such a friend.
+Dialogue: 0,1:26:48.43,1:26:51.02,Default,NTP,0,0,0,,所以你愿意为我做事？\N{\fs10\1c&HB4DCFC&}So, then, you would work for me?
+Dialogue: 0,1:26:51.70,1:26:52.86,Default,NTP,0,0,0,,是{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Si.
+Dialogue: 0,1:26:55.54,1:26:57.54,Default,NTP,0,0,0,,吻你的手，唐·阿尔托贝洛{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Bacio la mano, Don Altobello.
+Dialogue: 0,1:26:59.64,1:27:00.67,Default,NTP,0,0,0,,记住\N{\fs10\1c&HB4DCFC&}Remember
+Dialogue: 0,1:27:01.29,1:27:05.02,Default,NTP,0,0,0,,如果他暗示 要你背叛我\N{\fs10\1c&HB4DCFC&}if he hints that he wants you to betray me
+Dialogue: 0,1:27:05.38,1:27:06.57,Default,NTP,0,0,0,,要有被侮辱的样子\N{\fs10\1c&HB4DCFC&}get insulted.
+Dialogue: 0,1:27:06.82,1:27:09.07,Default,NTP,0,0,0,,因为那是他的陷阱\N{\fs10\1c&HB4DCFC&}Because that's his trap.
+Dialogue: 0,1:27:15.99,1:27:19.27,Default,NTP,0,0,0,,你没有告诉我全部实情，文森佐\N{\fs10\1c&HB4DCFC&}You're not telling me the whole truth, Vincenzo.
+Dialogue: 0,1:27:22.27,1:27:28.86,Default,NTP,0,0,0,,是不是真的，要是迈克尔没了，那女孩就控制一切？\N{\fs10\1c&HB4DCFC&}Isn't it true, with Michael gone, the girl controls everything?
+Dialogue: 0,1:27:32.08,1:27:34.02,Default,NTP,0,0,0,,你别扯上那女孩\N{\fs10\1c&HB4DCFC&}You leave the girl out of this.
+Dialogue: 0,1:27:34.65,1:27:37.69,Default,NTP,0,0,0,,当然 你爱她 她也爱你\N{\fs10\1c&HB4DCFC&}Of course, you love her. And she loves you.
+Dialogue: 0,1:27:55.50,1:27:58.56,Default,NTP,0,0,0,,我猜中了吧 文森佐\N{\fs10\1c&HB4DCFC&}I guessed it Vincenzo, huh?
+Dialogue: 0,1:27:59.94,1:28:02.35,Default,NTP,0,0,0,,你是位智者 唐·阿尔托贝洛\N{\fs10\1c&HB4DCFC&}You're a wise man, Don Altobello.
+Dialogue: 0,1:28:03.06,1:28:05.26,Default,NTP,0,0,0,,我会跟你学到很多\N{\fs10\1c&HB4DCFC&}I'm going to be learning a lot from you.
+Dialogue: 0,1:28:05.87,1:28:09.07,Default,NTP,0,0,0,,最富有的人是拥有最多权贵朋友的人\N{\fs10\1c&HB4DCFC&}The richest man is the one with the most powerful friends.
+Dialogue: 0,1:28:11.84,1:28:14.74,Default,NTP,0,0,0,,我有责任引介\N{\fs10\1c&HB4DCFC&}It's my duty to make the introductions.
+Dialogue: 0,1:28:21.35,1:28:22.81,Default,NTP,0,0,0,,唐·卢凯西\N{\fs10\1c&HB4DCFC&}Don Lucchesi
+Dialogue: 0,1:28:26.09,1:28:30.12,Default,NTP,0,0,0,,唐·阿尔托贝洛告诉我 你有良好的品质：坚强\N{\fs10\1c&HB4DCFC&}Don Altobello tells me you have good character, strong
+Dialogue: 0,1:28:30.59,1:28:31.85,Default,NTP,0,0,0,,是个值得尊重的人\N{\fs10\1c&HB4DCFC&}a man of respect.
+Dialogue: 0,1:28:32.09,1:28:35.81,Default,NTP,0,0,0,,这就是送乔伊·札萨入土的英雄\N{\fs10\1c&HB4DCFC&}This is the hero who put Joey Zasa in his grave.
+Dialogue: 0,1:28:35.86,1:28:37.55,Default,NTP,0,0,0,,如果我们早知道他的存在\N{\fs10\1c&HB4DCFC&}If we'd known of his existence
+Dialogue: 0,1:28:37.59,1:28:39.84,Default,NTP,0,0,0,,我们根本就不用支持乔伊了\N{\fs10\1c&HB4DCFC&}we would never have backed Joey.
+Dialogue: 0,1:28:40.34,1:28:42.38,Default,NTP,0,0,0,,没有人想要再来一个乔\N{\fs10\1c&HB4DCFC&}No one wants another Joe
+Dialogue: 0,1:28:44.30,1:28:45.84,Default,NTP,0,0,0,,让我当你的朋友吧\N{\fs10\1c&HB4DCFC&}Let me be your friend.
+Dialogue: 0,1:28:47.14,1:28:49.84,Default,NTP,0,0,0,,即便最强大的人也需要朋友\N{\fs10\1c&HB4DCFC&}Even the strongest man needs friends.
+Dialogue: 0,1:28:50.25,1:28:51.26,Default,NTP,0,0,0,,我深感荣幸\N{\fs10\1c&HB4DCFC&}I'm flattered.
+Dialogue: 0,1:28:52.78,1:28:55.49,Default,NTP,0,0,0,,你是金融和政治人物，唐·卢凯西\N{\fs10\1c&HB4DCFC&}You're a man of finance and politics, Don Lucchesi
+Dialogue: 0,1:28:55.51,1:28:57.37,Default,NTP,0,0,0,,那些事我都不懂\N{\fs10\1c&HB4DCFC&}these are things I don't understand.
+Dialogue: 0,1:28:58.95,1:29:00.65,Default,NTP,0,0,0,,你懂枪吗？\N{\fs10\1c&HB4DCFC&}You understand guns?
+Dialogue: 0,1:29:01.32,1:29:03.28,Default,NTP,0,0,0,,金融就是一把枪\N{\fs10\1c&HB4DCFC&}Finance is a gun.
+Dialogue: 0,1:29:03.79,1:29:04.82,Default,NTP,0,0,0,,政治\N{\fs10\1c&HB4DCFC&}Politics
+Dialogue: 0,1:29:06.05,1:29:08.26,Default,NTP,0,0,0,,就是知道何时该扣扳机\N{\fs10\1c&HB4DCFC&}is knowing when to pull the trigger.
+Dialogue: 0,1:29:12.55,1:29:13.74,Default,NTP,0,0,0,,我能帮什么忙？\N{\fs10\1c&HB4DCFC&}How can I help?
+Dialogue: 0,1:29:14.79,1:29:15.74,Default,NTP,0,0,0,,文尼？\N{\fs10\1c&HB4DCFC&}Vieni?
+Dialogue: 0,1:29:21.55,1:29:25.04,Default,NTP,0,0,0,,我相信了总主教对这笔生意的安排\N{\fs10\1c&HB4DCFC&}I trusted this business arrangement with the archbishop.
+Dialogue: 0,1:29:25.22,1:29:30.18,Default,NTP,0,0,0,,我信任他，我当时确信他的诚实经得起质疑\N{\fs10\1c&HB4DCFC&}I trusted him. I was sure his honesty was beyond a doubt.
+Dialogue: 0,1:29:30.42,1:29:34.59,Default,NTP,0,0,0,,但是，你也看见了，我现在成了诈骗的受害者\N{\fs10\1c&HB4DCFC&}But, as you see, I'm now the victim of a swindle.
+Dialogue: 0,1:29:35.56,1:29:37.14,Default,NTP,0,0,0,,他在拖延我\N{\fs10\1c&HB4DCFC&}He's stalling me.
+Dialogue: 0,1:29:37.60,1:29:41.67,Default,NTP,0,0,0,,巨额的钱财都到了身居高位的大政客手里\N{\fs10\1c&HB4DCFC&}Vast money have gone to the pezzonovante in high political places
+Dialogue: 0,1:29:41.71,1:29:44.67,Default,NTP,0,0,0,,而梵蒂冈银行就是担保人\N{\fs10\1c&HB4DCFC&}and the Vatican Bank is the guarantor.
+Dialogue: 0,1:29:44.69,1:29:47.16,Default,NTP,0,0,0,,如果你所言属实\N{\fs10\1c&HB4DCFC&}If uh, what you say is true
+Dialogue: 0,1:29:47.21,1:29:50.04,Default,NTP,0,0,0,,这将是个大丑闻\N{\fs10\1c&HB4DCFC&}there will be a great scandal.
+Dialogue: 0,1:29:51.98,1:29:53.51,Default,NTP,0,0,0,,看这块石头\N{\fs10\1c&HB4DCFC&}Look at this stone.
+Dialogue: 0,1:29:53.84,1:29:56.91,Default,NTP,0,0,0,,它泡在水里已经很久了\N{\fs10\1c&HB4DCFC&}It has been lying in the water for a very long time
+Dialogue: 0,1:29:57.19,1:30:01.45,Default,NTP,0,0,0,,但水仍然没有能够浸透它\N{\fs10\1c&HB4DCFC&}but the water has not penetrated it.
+Dialogue: 0,1:30:04.79,1:30:06.16,Default,NTP,0,0,0,,看\N{\fs10\1c&HB4DCFC&}Look.
+Dialogue: 0,1:30:07.33,1:30:09.32,Default,NTP,0,0,0,,完全是干的\N{\fs10\1c&HB4DCFC&}Perfectly dry.
+Dialogue: 0,1:30:10.11,1:30:12.62,Default,NTP,0,0,0,,同样的情况也发生在欧洲人身上\N{\fs10\1c&HB4DCFC&}The same thing has happened to men in Europe.
+Dialogue: 0,1:30:12.71,1:30:17.14,Default,NTP,0,0,0,,数世纪以来，他们一直为基督教所包围\N{\fs10\1c&HB4DCFC&}For centuries they have been surrounded by Christianity
+Dialogue: 0,1:30:17.57,1:30:20.23,Default,NTP,0,0,0,,但基督一直没渗入其中\N{\fs10\1c&HB4DCFC&}but Christ has not penetrated.
+Dialogue: 0,1:30:20.45,1:30:24.34,Default,NTP,0,0,0,,基督没有与他们同呼吸\N{\fs10\1c&HB4DCFC&}Christ doesn't breathe within them.
+Dialogue: 0,1:30:27.49,1:30:28.40,Default,NTP,0,0,0,,怎么回事？\N{\fs10\1c&HB4DCFC&}What's happened?
+Dialogue: 0,1:30:28.44,1:30:32.68,Default,NTP,0,0,0,,可能的话 给我点甜的东西？\N{\fs10\1c&HB4DCFC&}Is it possible, that you could get me something sweet?
+Dialogue: 0,1:30:33.05,1:30:35.72,Default,NTP,0,0,0,,橙汁 随便什么 糖果\N{\fs10\1c&HB4DCFC&}Orange juice, anything, candy.
+Dialogue: 0,1:30:38.96,1:30:41.56,Default,NTP,0,0,0,,糖尿病的问题\N{\fs10\1c&HB4DCFC&}Trouble with diabetes.
+Dialogue: 0,1:30:44.97,1:30:46.97,Default,NTP,0,0,0,,血糖水平必须得低\N{\fs10\1c&HB4DCFC&}Blood sugar levels must be low.
+Dialogue: 0,1:30:47.97,1:30:49.23,Default,NTP,0,0,0,,我了解\N{\fs10\1c&HB4DCFC&}I understand.
+Dialogue: 0,1:31:12.26,1:31:15.19,Default,NTP,0,0,0,,我压力大时有时就会发生这种事\N{\fs10\1c&HB4DCFC&}When I'm under stress sometimes this happens.
+Dialogue: 0,1:31:16.13,1:31:17.82,Default,NTP,0,0,0,,我了解\N{\fs10\1c&HB4DCFC&}I understand.
+Dialogue: 0,1:31:19.73,1:31:21.63,Default,NTP,0,0,0,,我来见你\N{\fs10\1c&HB4DCFC&}I come to you
+Dialogue: 0,1:31:22.05,1:31:24.54,Default,NTP,0,0,0,,为这种微妙的事件\N{\fs10\1c&HB4DCFC&}on such a delicate matter
+Dialogue: 0,1:31:26.41,1:31:28.67,Default,NTP,0,0,0,,指控你们的总主教\N{\fs10\1c&HB4DCFC&}accusations against your Archbishop
+Dialogue: 0,1:31:29.84,1:31:31.67,Default,NTP,0,0,0,,对我而言很难\N{\fs10\1c&HB4DCFC&}was difficult for me.
+Dialogue: 0,1:31:32.78,1:31:34.70,Default,NTP,0,0,0,,内心煎熬\N{\fs10\1c&HB4DCFC&}The mind suffers
+Dialogue: 0,1:31:35.14,1:31:38.65,Default,NTP,0,0,0,,身体反应在外\N{\fs10\1c&HB4DCFC&}and the body, cries out.
+Dialogue: 0,1:31:41.84,1:31:42.98,Default,NTP,0,0,0,,是的\N{\fs10\1c&HB4DCFC&}Yes.
+Dialogue: 0,1:31:43.89,1:31:45.14,Default,NTP,0,0,0,,的确如此\N{\fs10\1c&HB4DCFC&}That's true.
+Dialogue: 0,1:31:47.30,1:31:51.65,Default,NTP,0,0,0,,你想不想…做告解？\N{\fs10\1c&HB4DCFC&}Would you like, to make your confession?
+Dialogue: 0,1:31:58.06,1:31:59.87,Default,NTP,0,0,0,,大人，我…\N{\fs10\1c&HB4DCFC&}Your Eminence, I...
+Dialogue: 0,1:32:00.35,1:32:01.27,Default,NTP,0,0,0,,我…\N{\fs10\1c&HB4DCFC&}I'm uh
+Dialogue: 0,1:32:03.99,1:32:05.57,Default,NTP,0,0,0,,已经很久了\N{\fs10\1c&HB4DCFC&}it's been so long,
+Dialogue: 0,1:32:06.05,1:32:10.58,Default,NTP,0,0,0,,我不  不  不知道从哪里...\N{\fs10\1c&HB4DCFC&}I wouldn't, wouldn't, wouldn't know where to uh...
+Dialogue: 0,1:32:11.06,1:32:12.77,Default,NTP,0,0,0,,已经30年了\N{\fs10\1c&HB4DCFC&}it's been thirty years
+Dialogue: 0,1:32:14.19,1:32:17.66,Default,NTP,0,0,0,,我…我会耗用你太多时间的，我觉得\N{\fs10\1c&HB4DCFC&}I'd, I'd, I'd use up too much of your time, I think.
+Dialogue: 0,1:32:18.29,1:32:21.24,Default,NTP,0,0,0,,我总是有时间拯救灵魂的\N{\fs10\1c&HB4DCFC&}I always have time to save souls.
+Dialogue: 0,1:32:22.24,1:32:23.35,Default,NTP,0,0,0,,哦，我…\N{\fs10\1c&HB4DCFC&}Well, I'm...
+Dialogue: 0,1:32:23.77,1:32:25.54,Default,NTP,0,0,0,,我已经罪无可恕\N{\fs10\1c&HB4DCFC&}I'm beyond redemption.
+Dialogue: 0,1:32:26.20,1:32:27.34,Default,NTP,0,0,0,,不不不\N{\fs10\1c&HB4DCFC&}No, no, no.
+Dialogue: 0,1:32:36.41,1:32:40.84,Default,NTP,0,0,0,,我倾听我们这里自己的神父告解\N{\fs10\1c&HB4DCFC&}I hear the confessions of my own priests here.
+Dialogue: 0,1:32:41.55,1:32:45.51,Default,NTP,0,0,0,,有时候要告解的愿望无可阻挡\N{\fs10\1c&HB4DCFC&}Sometimes the desire to confess is overwhelming
+Dialogue: 0,1:32:45.84,1:32:48.48,Default,NTP,0,0,0,,我们就得把握时机\N{\fs10\1c&HB4DCFC&}and we must seize the moment.
+Dialogue: 0,1:32:52.71,1:32:54.89,Default,NTP,0,0,0,,假如我没有悔意\N{\fs10\1c&HB4DCFC&}What is the point of confessing
+Dialogue: 0,1:32:55.19,1:32:56.51,Default,NTP,0,0,0,,告解有什么用？\N{\fs10\1c&HB4DCFC&}if I don't repent?
+Dialogue: 0,1:32:58.93,1:33:01.54,Default,NTP,0,0,0,,我听说你是个实际的人\N{\fs10\1c&HB4DCFC&}I hear you are a practical man
+Dialogue: 0,1:33:02.46,1:33:05.57,Default,NTP,0,0,0,,你又有什么可损失的呢？\N{\fs10\1c&HB4DCFC&}What have you got to lose, huh?
+Dialogue: 0,1:33:16.27,1:33:17.54,Default,NTP,0,0,0,,说吧\N{\fs10\1c&HB4DCFC&}Go on.
+Dialogue: 0,1:33:24.46,1:33:26.58,Default,NTP,0,0,0,,我\N{\fs10\1c&HB4DCFC&}I
+Dialogue: 0,1:33:27.07,1:33:29.22,Default,NTP,0,0,0,,背叛了我妻子\N{\fs10\1c&HB4DCFC&}betrayed my wife.
+Dialogue: 0,1:33:30.63,1:33:32.69,Default,NTP,0,0,0,,说下去 我的孩子\N{\fs10\1c&HB4DCFC&}Go on, my son.
+Dialogue: 0,1:33:37.87,1:33:39.66,Default,NTP,0,0,0,,我背叛了我自己\N{\fs10\1c&HB4DCFC&}I betrayed myself.
+Dialogue: 0,1:33:42.58,1:33:44.37,Default,NTP,0,0,0,,我杀过人\N{\fs10\1c&HB4DCFC&}I killed men.
+Dialogue: 0,1:33:48.28,1:33:50.81,Default,NTP,0,0,0,,也曾下令杀过人\N{\fs10\1c&HB4DCFC&}And I ordered men to be killed.
+Dialogue: 0,1:33:52.26,1:33:55.30,Default,NTP,0,0,0,,接着说 我的孩子 接着说\N{\fs10\1c&HB4DCFC&}Go on, my son, go on
+Dialogue: 0,1:33:59.59,1:34:02.03,Default,NTP,0,0,0,,唉，这没用\N{\fs10\1c&HB4DCFC&}It's useless.
+Dialogue: 0,1:34:03.70,1:34:05.66,Default,NTP,0,0,0,,说吧 我的孩子\N{\fs10\1c&HB4DCFC&}Go on, my son.
+Dialogue: 0,1:34:06.87,1:34:08.10,Default,NTP,0,0,0,,我杀了\N{\fs10\1c&HB4DCFC&}I killed
+Dialogue: 0,1:34:13.31,1:34:16.24,Default,NTP,0,0,0,,我下令杀死了我的兄弟\N{\fs10\1c&HB4DCFC&}I ordered the death of my brother.
+Dialogue: 0,1:34:17.14,1:34:19.24,Default,NTP,0,0,0,,他伤害了我\N{\fs10\1c&HB4DCFC&}He injured me.
+Dialogue: 0,1:34:20.54,1:34:23.24,Default,NTP,0,0,0,,我杀了我母亲的儿子\N{\fs10\1c&HB4DCFC&}I killed my mother's son.
+Dialogue: 0,1:34:24.36,1:34:27.06,Default,NTP,0,0,0,,我杀了我母亲的儿子\N{\fs10\1c&HB4DCFC&}I killed my mother's son.
+Dialogue: 0,1:34:37.10,1:34:39.19,Default,NTP,0,0,0,,你的罪过是可怕的\N{\fs10\1c&HB4DCFC&}Your sins are terrible
+Dialogue: 0,1:34:39.50,1:34:42.56,Default,NTP,0,0,0,,你因此饱受折磨\N{\fs10\1c&HB4DCFC&}and it is just that you suffer
+Dialogue: 0,1:34:43.29,1:34:46.60,Default,NTP,0,0,0,,你的人生可获得救赎\N{\fs10\1c&HB4DCFC&}Your life could be redeemed
+Dialogue: 0,1:34:46.90,1:34:48.67,Default,NTP,0,0,0,,但我知道你并不相信这一点\N{\fs10\1c&HB4DCFC&}but I know that you don't believe that.
+Dialogue: 0,1:34:49.14,1:34:50.67,Default,NTP,0,0,0,,你不会改变\N{\fs10\1c&HB4DCFC&}You will not change.
+Dialogue: 0,1:35:16.12,1:35:22.69,Default,NTP,0,0,0,,{\1c&H93CFE0&\i1}教皇保禄六世 罗马天主教廷至尊教宗
+Dialogue: 0,1:35:23.71,1:35:26.84,Default,NTP,0,0,0,,{\1c&H93CFE0&\i1}于昨晚九时四十分辞世
+Dialogue: 0,1:35:27.69,1:35:31.04,Default,NTP,0,0,0,,{\1c&H93CFE0&\i1}教皇享年八十一岁
+Dialogue: 0,1:35:32.10,1:35:35.58,Default,NTP,0,0,0,,{\1c&H93CFE0&\i1}过去数月来一直健康状况不佳
+Dialogue: 0,1:35:42.99,1:35:43.96,Default,NTP,0,0,0,,康妮\N{\fs10\1c&HB4DCFC&}Connie
+Dialogue: 0,1:35:46.23,1:35:51.22,Default,NTP,0,0,0,,我这一生，都在尽力走向社会上层\N{\fs10\1c&HB4DCFC&}all my life I, kept trying to go up in society
+Dialogue: 0,1:35:51.47,1:35:55.40,Default,NTP,0,0,0,,那里一切更高的东西合法、干净\N{\fs10\1c&HB4DCFC&}where everything higher up was legal, straight.
+Dialogue: 0,1:35:56.21,1:36:00.47,Default,NTP,0,0,0,,但是我爬得越高，它就变得越扭曲\N{\fs10\1c&HB4DCFC&}But the higher I go, the crookeder it becomes.
+Dialogue: 0,1:36:02.48,1:36:04.64,Default,NTP,0,0,0,,这到底会怎么结束？\N{\fs10\1c&HB4DCFC&}How in the hell does it end?
+Dialogue: 0,1:36:13.82,1:36:16.78,Default,NTP,0,0,0,,这里互相残杀几个世纪\N{\fs10\1c&HB4DCFC&}Killing each other for centuries here.
+Dialogue: 0,1:36:18.53,1:36:20.16,Default,NTP,0,0,0,,为钱\N{\fs10\1c&HB4DCFC&}For money
+Dialogue: 0,1:36:20.48,1:36:23.96,Default,NTP,0,0,0,,为尊严 为家族\N{\fs10\1c&HB4DCFC&}for pride, for family.
+Dialogue: 0,1:36:25.87,1:36:30.53,Default,NTP,0,0,0,,为了免于沦为富有大亨的奴隶\N{\fs10\1c&HB4DCFC&}To keep from becoming the slaves of the rich pezzonovante.
+Dialogue: 0,1:36:36.98,1:36:39.34,Default,NTP,0,0,0,,我做了告解，康妮\N{\fs10\1c&HB4DCFC&}I made confession, Connie.
+Dialogue: 0,1:36:40.12,1:36:42.67,Default,NTP,0,0,0,,我坦白了我的罪过\N{\fs10\1c&HB4DCFC&}I confessed my sins.
+Dialogue: 0,1:36:43.85,1:36:46.38,Default,NTP,0,0,0,,为什么，迈克尔？这可不像你\N{\fs10\1c&HB4DCFC&}Why Michael, that's not like you.
+Dialogue: 0,1:36:46.70,1:36:49.49,Default,NTP,0,0,0,,你不必对一个陌生人坦白罪过\N{\fs10\1c&HB4DCFC&}You don't have to confess your sins to a stranger.
+Dialogue: 0,1:36:50.09,1:36:51.56,Default,NTP,0,0,0,,是因为这个人\N{\fs10\1c&HB4DCFC&}It was the man.
+Dialogue: 0,1:36:52.80,1:36:53.82,Default,NTP,0,0,0,,是个好人\N{\fs10\1c&HB4DCFC&}A good man.
+Dialogue: 0,1:36:55.14,1:36:56.79,Default,NTP,0,0,0,,真正的神父\N{\fs10\1c&HB4DCFC&}A true priest.
+Dialogue: 0,1:37:00.44,1:37:02.46,Default,NTP,0,0,0,,他改变了事情\N{\fs10\1c&HB4DCFC&}He changed things.
+Dialogue: 0,1:37:04.94,1:37:06.88,Default,NTP,0,0,0,,麦克\N{\fs10\1c&HB4DCFC&}Michael
+Dialogue: 0,1:37:07.81,1:37:09.36,Default,NTP,0,0,0,,你知道\N{\fs10\1c&HB4DCFC&}you know
+Dialogue: 0,1:37:09.94,1:37:12.54,Default,NTP,0,0,0,,有时候我想起可怜的弗雷多\N{\fs10\1c&HB4DCFC&}sometimes I think of poor Fredo
+Dialogue: 0,1:37:12.89,1:37:14.51,Default,NTP,0,0,0,,溺亡\N{\fs10\1c&HB4DCFC&}drowned.
+Dialogue: 0,1:37:14.89,1:37:16.91,Default,NTP,0,0,0,,那是天意\N{\fs10\1c&HB4DCFC&}It was God's will.
+Dialogue: 0,1:37:18.52,1:37:21.05,Default,NTP,0,0,0,,是个可怕的意外\N{\fs10\1c&HB4DCFC&}It was a terrible accident.
+Dialogue: 0,1:37:22.09,1:37:24.22,Default,NTP,0,0,0,,但它结束了\N{\fs10\1c&HB4DCFC&}But it's finished.
+Dialogue: 0,1:37:29.37,1:37:31.02,Default,NTP,0,0,0,,迈克尔，我爱你\N{\fs10\1c&HB4DCFC&}Michael, I love you.
+Dialogue: 0,1:37:33.37,1:37:36.06,Default,NTP,0,0,0,,我永远会帮你\N{\fs10\1c&HB4DCFC&}I'll always help you.
+Dialogue: 0,1:37:47.84,1:37:49.32,Default,NTP,0,0,0,,康妮\N{\fs10\1c&HB4DCFC&}Connie.
+Dialogue: 0,1:38:19.18,1:38:21.84,Default,NTP,0,0,0,,{\1c&H93CFE0&}唐·阿尔托贝洛  太荣幸了
+Dialogue: 0,1:38:22.02,1:38:26.70,Default,NTP,0,0,0,,{\1c&H93CFE0&}你还从巴勒莫来探望我
+Dialogue: 0,1:38:29.50,1:38:34.52,Default,NTP,0,0,0,,{\1c&H93CFE0&}嘿，那个小孩，他长大了
+Dialogue: 0,1:38:35.21,1:38:36.91,Default,NTP,0,0,0,,{\1c&H93CFE0&}给我学个毛驴
+Dialogue: 0,1:38:54.53,1:38:58.62,Default,NTP,0,0,0,,{\1c&H93CFE0&}离我们当初一起做买卖有些日子了
+Dialogue: 0,1:39:02.59,1:39:07.64,Default,NTP,0,0,0,,{\1c&H93CFE0&}套一句美国话 你是我“盖着的王牌”
+Dialogue: 0,1:39:07.76,1:39:10.91,Default,NTP,0,0,0,,{\1c&H93CFE0&}我鞋里有颗硌脚的石头
+Dialogue: 0,1:39:10.94,1:39:13.52,Default,NTP,0,0,0,,{\1c&H93CFE0&}你能帮我除掉
+Dialogue: 0,1:39:20.84,1:39:23.29,Default,NTP,0,0,0,,{\1c&H93CFE0&}只有一个吗？
+Dialogue: 0,1:39:35.85,1:39:37.11,Default,NTP,0,0,0,,凯伊\N{\fs10\1c&HB4DCFC&}Kay!
+Dialogue: 0,1:39:37.61,1:39:39.31,Default,NTP,0,0,0,,康妮，你好吗？\N{\fs10\1c&HB4DCFC&}Oh, Connie! How are you?
+Dialogue: 0,1:39:39.99,1:39:42.22,Default,NTP,0,0,0,,玛丽  好想你\N{\fs10\1c&HB4DCFC&}Mary, I've missed you!
+Dialogue: 0,1:39:43.45,1:39:45.64,Default,NTP,0,0,0,,- 哦，你好，迈克尔  - 你好，凯伊\N{\fs10\1c&HB4DCFC&}-Well, hello Michael. -Hello Kay.
+Dialogue: 0,1:39:45.72,1:39:47.35,Default,NTP,0,0,0,,妈 看这个\N{\fs10\1c&HB4DCFC&}Mom, look at this.
+Dialogue: 0,1:39:47.52,1:39:51.02,Default,NTP,0,0,0,,"乡间骑士"\N{\fs10\1c&HB4DCFC&}
+Dialogue: 0,1:39:51.26,1:39:53.51,Default,NTP,0,0,0,,你看，道格拉斯不能来太可惜了\N{\fs10\1c&HB4DCFC&}You know it's too bad that Douglas couldn't be with us.
+Dialogue: 0,1:39:53.53,1:39:55.62,Default,NTP,0,0,0,,不不，我知道，他很想来\N{\fs10\1c&HB4DCFC&}No, no, I know. He wanted to come very much,
+Dialogue: 0,1:39:55.65,1:39:57.44,Default,NTP,0,0,0,,可他有一场重要的官司\N{\fs10\1c&HB4DCFC&}but he had a very important trial.
+Dialogue: 0,1:39:57.45,1:39:59.40,Default,NTP,0,0,0,,- 我知道他一定想来  - 我知道\N{\fs10\1c&HB4DCFC&}-I know he wanted to come. -I know.
+Dialogue: 0,1:40:04.51,1:40:08.04,Default,NTP,0,0,0,,现在，你儿子是个艺术家了，嗯？\N{\fs10\1c&HB4DCFC&}Well, your son's an artist, huh?
+Dialogue: 0,1:40:08.58,1:40:11.05,Default,NTP,0,0,0,,是啊  应该谢谢你\N{\fs10\1c&HB4DCFC&}Oh yes. Thanks to you.
+Dialogue: 0,1:40:11.28,1:40:12.65,Default,NTP,0,0,0,,谢什么？\N{\fs10\1c&HB4DCFC&}Oh, what for?
+Dialogue: 0,1:40:13.32,1:40:15.81,Default,NTP,0,0,0,,谢你逼我放他走\N{\fs10\1c&HB4DCFC&}For making me, let him go.
+Dialogue: 0,1:40:17.92,1:40:19.31,Default,NTP,0,0,0,,经过这么多年…\N{\fs10\1c&HB4DCFC&}After all these years
+Dialogue: 0,1:40:19.32,1:40:21.61,Default,NTP,0,0,0,,我终于第一次来到西西里\N{\fs10\1c&HB4DCFC&}here I am in Sicily for the first time.
+Dialogue: 0,1:40:21.66,1:40:23.03,Default,NTP,0,0,0,,我要拍张你俩在一起的照片\N{\fs10\1c&HB4DCFC&}I want to get a picture of you together.
+Dialogue: 0,1:40:23.04,1:40:24.29,Default,NTP,0,0,0,,哦，好\N{\fs10\1c&HB4DCFC&}Oh, okay.
+Dialogue: 0,1:40:26.96,1:40:28.52,Default,NTP,0,0,0,,喂，爸爸，微笑\N{\fs10\1c&HB4DCFC&}Hey dad, smile.
+Dialogue: 0,1:40:33.10,1:40:36.66,Default,NTP,0,0,0,,我看见你还带着艾尔·奈利，为什么？\N{\fs10\1c&HB4DCFC&}I see you still have Al Neri. Why?
+Dialogue: 0,1:40:37.21,1:40:40.90,Default,NTP,0,0,0,,哦，我需要他，他帮我上下车\N{\fs10\1c&HB4DCFC&}Well, I need him. He helps me get in and out of the car.
+Dialogue: 0,1:40:41.91,1:40:43.61,Default,NTP,0,0,0,,帮我提公事包\N{\fs10\1c&HB4DCFC&}Carry my briefcase.
+Dialogue: 0,1:40:44.14,1:40:45.98,Default,NTP,0,0,0,,你还在撒谎，迈克尔\N{\fs10\1c&HB4DCFC&}You're still a liar Michael.
+Dialogue: 0,1:40:46.97,1:40:50.35,Default,NTP,0,0,0,,我带你看看西西里，真正的西西里\N{\fs10\1c&HB4DCFC&}Let me show you Sicily. The real Sicily.
+Dialogue: 0,1:40:50.48,1:40:52.95,Default,NTP,0,0,0,,也许你可以稍微多了解一点家族历史\N{\fs10\1c&HB4DCFC&}Maybe you'll understand the family history a little better.
+Dialogue: 0,1:40:53.45,1:40:55.78,Default,NTP,0,0,0,,哦，我认为我了解已经够多了\N{\fs10\1c&HB4DCFC&}Oh I think I understand it well enough.
+Dialogue: 0,1:41:25.09,1:41:26.45,Default,NTP,0,0,0,,拿着\N{\fs10\1c&HB4DCFC&}Take them.
+Dialogue: 0,1:41:47.74,1:41:49.23,Default,NTP,0,0,0,,安东尼\N{\fs10\1c&HB4DCFC&}Anthony
+Dialogue: 0,1:41:49.48,1:41:54.68,Default,NTP,0,0,0,,我有一件东西，是你很久前给我的\N{\fs10\1c&HB4DCFC&}I have something you made for me a very long time ago
+Dialogue: 0,1:41:55.45,1:41:57.68,Default,NTP,0,0,0,,它会给你带来好运\N{\fs10\1c&HB4DCFC&}It may bring you luck.
+Dialogue: 0,1:42:02.35,1:42:03.66,Default,NTP,0,0,0,,你保留着它？\N{\fs10\1c&HB4DCFC&}You saved it, huh?
+Dialogue: 0,1:42:04.16,1:42:05.72,Default,NTP,0,0,0,,- 你还记得吗？  - 我记得\N{\fs10\1c&HB4DCFC&}-Remember? -I remember.
+Dialogue: 0,1:42:09.90,1:42:11.23,Default,NTP,0,0,0,,谢谢你  爸爸\N{\fs10\1c&HB4DCFC&}Thank you dad.
+Dialogue: 0,1:42:13.17,1:42:14.60,Default,NTP,0,0,0,,我为你骄傲\N{\fs10\1c&HB4DCFC&}I'm proud of you.
+Dialogue: 0,1:42:15.57,1:42:17.37,Default,NTP,0,0,0,,谢谢 爸爸\N{\fs10\1c&HB4DCFC&}Thank you.
+Dialogue: 0,1:42:33.22,1:42:35.15,Default,NTP,0,0,0,,他们有外表那么厉害吗？\N{\fs10\1c&HB4DCFC&}Are they as good as they look?
+Dialogue: 0,1:42:35.36,1:42:37.97,Default,NTP,0,0,0,,更厉害，他们是最好的\N{\fs10\1c&HB4DCFC&}They're better. They're the best.
+Dialogue: 0,1:42:38.73,1:42:41.13,Default,NTP,0,0,0,,只要他们在身边，迈克尔叔叔一定安全\N{\fs10\1c&HB4DCFC&}As long as they're around, Uncle Michael is safe.
+Dialogue: 0,1:42:41.26,1:42:43.33,Default,NTP,0,0,0,,再见\N{\fs10\1c&HB4DCFC&}Bye.
+Dialogue: 0,1:42:45.50,1:42:47.10,Default,NTP,0,0,0,,告诉你父亲我回来吃晚饭\N{\fs10\1c&HB4DCFC&}Tell your father I'll be back for dinner.
+Dialogue: 0,1:42:47.14,1:42:48.03,Default,NTP,0,0,0,,好的\N{\fs10\1c&HB4DCFC&}Okay.
+Dialogue: 0,1:42:49.05,1:42:49.94,Default,NTP,0,0,0,,好好玩\N{\fs10\1c&HB4DCFC&}Have fun.
+Dialogue: 0,1:42:50.19,1:42:51.84,Default,NTP,0,0,0,,告诉托尼一定要等我\N{\fs10\1c&HB4DCFC&}And tell Tony to be sure to wait for me.
+Dialogue: 0,1:42:51.87,1:42:53.06,Default,NTP,0,0,0,,好的，我会的\N{\fs10\1c&HB4DCFC&}Okay. I will.
+Dialogue: 0,1:42:54.79,1:42:55.63,Default,NTP,0,0,0,,再见  妈妈\N{\fs10\1c&HB4DCFC&}Bye mom.
+Dialogue: 0,1:42:55.87,1:42:57.44,Default,NTP,0,0,0,,早上好，女士{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Buon giorno, Signora.
+Dialogue: 0,1:42:57.78,1:42:59.14,Default,NTP,0,0,0,,请您吩咐\N{\fs10\1c&HB4DCFC&}At your service
+Dialogue: 0,1:43:03.42,1:43:06.55,Default,NTP,0,0,0,,要是我见到爸爸，会告诉他你走了\N{\fs10\1c&HB4DCFC&}If I see dad, I'll tell him you left
+Dialogue: 0,1:43:11.69,1:43:15.97,Default,NTP,0,0,0,,你是这家族里剩下唯一有我父亲那种力量的人\N{\fs10\1c&HB4DCFC&}You are the only one left in this family with my father's strength.
+Dialogue: 0,1:43:17.57,1:43:21.40,Default,NTP,0,0,0,,假如迈克尔出了什么事，我要你还击\N{\fs10\1c&HB4DCFC&}If anything happens to Michael, I want you to strike back.
+Dialogue: 0,1:43:24.65,1:43:26.54,Default,NTP,0,0,0,,我会让人准备好一切\N{\fs10\1c&HB4DCFC&}I'll have everything ready.
+Dialogue: 0,1:43:30.13,1:43:31.44,Default,NTP,0,0,0,,你发誓？\N{\fs10\1c&HB4DCFC&}You swear?
+Dialogue: 0,1:43:39.19,1:43:40.71,Default,NTP,0,0,0,,我对你发誓\N{\fs10\1c&HB4DCFC&}I swear to you.
+Dialogue: 0,1:44:05.16,1:44:06.22,Default,NTP,0,0,0,,在这里\N{\fs10\1c&HB4DCFC&}Here it is.
+Dialogue: 0,1:44:08.51,1:44:10.62,Default,NTP,0,0,0,,我父亲出生的房子\N{\fs10\1c&HB4DCFC&}The house where my father was born.
+Dialogue: 0,1:44:12.26,1:44:14.16,Default,NTP,0,0,0,,他们就是来这里…\N{\fs10\1c&HB4DCFC&}This is where they came
+Dialogue: 0,1:44:14.40,1:44:16.50,Default,NTP,0,0,0,,要带走还是孩子的他\N{\fs10\1c&HB4DCFC&}to take him when he was a boy.
+Dialogue: 0,1:44:16.81,1:44:17.80,Default,NTP,0,0,0,,要杀了他\N{\fs10\1c&HB4DCFC&}To kill him.
+Dialogue: 0,1:44:20.94,1:44:22.57,Default,NTP,0,0,0,,等等\N{\fs10\1c&HB4DCFC&}Wait.
+Dialogue: 0,1:44:23.45,1:44:25.04,Default,NTP,0,0,0,,你听\N{\fs10\1c&HB4DCFC&}Listen to that.
+Dialogue: 0,1:44:44.43,1:44:46.73,Default,NTP,0,0,0,,你知道吗，玛丽恋爱了\N{\fs10\1c&HB4DCFC&}You know, Mary's in love.
+Dialogue: 0,1:44:47.93,1:44:49.46,Default,NTP,0,0,0,,是的，我知道\N{\fs10\1c&HB4DCFC&}Yes, I know.
+Dialogue: 0,1:44:50.80,1:44:55.03,Default,NTP,0,0,0,,跟一个英俊的意大利男人，黑眼睛\N{\fs10\1c&HB4DCFC&}With a handsome young Italian man. Dark eyes.
+Dialogue: 0,1:44:56.11,1:44:57.94,Default,NTP,0,0,0,,我不会允许的\N{\fs10\1c&HB4DCFC&}I won't allow it
+Dialogue: 0,1:45:00.61,1:45:01.98,Default,NTP,0,0,0,,这是错误的\N{\fs10\1c&HB4DCFC&}It's wrong.
+Dialogue: 0,1:45:02.38,1:45:04.61,Default,NTP,0,0,0,,错误而且危险\N{\fs10\1c&HB4DCFC&}It's wrong and it's dangerous.
+Dialogue: 0,1:45:04.64,1:45:07.47,Default,NTP,0,0,0,,{\1c&H8DD3F7&}哦，父亲，我的父亲
+Dialogue: 0,1:45:08.17,1:45:10.52,Default,NTP,0,0,0,,{\1c&H8DD3F7&}给我一点时间向主祈祷
+Dialogue: 0,1:45:11.71,1:45:14.65,Default,NTP,0,0,0,,{\1c&H8DD3F7&}卡里尼男爵夫人对丈夫不贞
+Dialogue: 0,1:45:15.34,1:45:18.09,Default,NTP,0,0,0,,{\1c&H8DD3F7&}同她的堂兄相恋
+Dialogue: 0,1:45:18.48,1:45:20.44,Default,NTP,0,0,0,,{\1c&H8DD3F7&}这不可饶恕
+Dialogue: 0,1:45:20.79,1:45:24.39,Default,NTP,0,0,0,,{\1c&H8DD3F7&}她的父亲刺穿了她的心
+Dialogue: 0,1:45:36.78,1:45:38.27,Default,NTP,0,0,0,,名誉，是吗？\N{\fs10\1c&HB4DCFC&}Honor, huh?
+Dialogue: 0,1:45:58.00,1:46:00.87,Default,NTP,0,0,0,,知道吗，我想起那次你来我父母家\N{\fs10\1c&HB4DCFC&}You know, I remember the time that you came to my parent's house.
+Dialogue: 0,1:46:00.89,1:46:02.65,Default,NTP,0,0,0,,你把我带进房间\N{\fs10\1c&HB4DCFC&}And you took me into that room.
+Dialogue: 0,1:46:02.76,1:46:04.51,Default,NTP,0,0,0,,告诉我你的家族生意…\N{\fs10\1c&HB4DCFC&}And you told me about the family business
+Dialogue: 0,1:46:04.52,1:46:07.71,Default,NTP,0,0,0,,以及你是如何不会跟它有任何牵连\N{\fs10\1c&HB4DCFC&}and how you were never going to have anything to do with it.
+Dialogue: 0,1:46:08.26,1:46:10.48,Default,NTP,0,0,0,,那口气就像托尼\N{\fs10\1c&HB4DCFC&}You sounded like Tony
+Dialogue: 0,1:46:10.83,1:46:12.72,Default,NTP,0,0,0,,我那时是很像托尼\N{\fs10\1c&HB4DCFC&}I was a lot like Tony.
+Dialogue: 0,1:46:20.36,1:46:21.55,Default,NTP,0,0,0,,我几乎看不见他\N{\fs10\1c&HB4DCFC&}I can barely see him.
+Dialogue: 0,1:46:21.57,1:46:22.65,Default,NTP,0,0,0,,- 凯伊  - 什么？\N{\fs10\1c&HB4DCFC&}-Kay. -What?
+Dialogue: 0,1:46:23.61,1:46:24.48,Default,NTP,0,0,0,,你来开车吧？\N{\fs10\1c&HB4DCFC&}you mind driving?
+Dialogue: 0,1:46:24.52,1:46:25.66,Default,NTP,0,0,0,,行，怎么了？\N{\fs10\1c&HB4DCFC&}No, what's wrong.
+Dialogue: 0,1:46:26.00,1:46:28.70,Default,NTP,0,0,0,,我的眼睛，有时侯还好，不过…\N{\fs10\1c&HB4DCFC&}My eyes. Sometimes they're all right. But...
+Dialogue: 0,1:46:30.80,1:46:32.43,Default,NTP,0,0,0,,还有，我得去见唐·汤马西诺\N{\fs10\1c&HB4DCFC&}Listen, I have to see Don Tommasino
+Dialogue: 0,1:46:32.44,1:46:33.90,Default,NTP,0,0,0,,你好，夫人{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Benday, signora.
+Dialogue: 0,1:46:39.31,1:46:40.94,Default,NTP,0,0,0,,今天没有随身保镖啊\N{\fs10\1c&HB4DCFC&}There's no bodyguards today.
+Dialogue: 0,1:46:41.28,1:46:42.80,Default,NTP,0,0,0,,我真是偷跑出来的\N{\fs10\1c&HB4DCFC&}I really snuck away.
+Dialogue: 0,1:46:49.92,1:46:54.31,Default,NTP,0,0,0,,{\1c&H90C8EE&}神父，你们去哪儿？要搭便车吗？
+Dialogue: 0,1:47:03.44,1:47:07.69,Default,NTP,0,0,0,,{\1c&H90C8EE&}我认得你，你是蒙特莱普家的莫斯卡
+Dialogue: 0,1:47:09.24,1:47:12.64,Default,NTP,0,0,0,,{\1c&H90C8EE&}以前当过杀手，现在也是杀手
+Dialogue: 0,1:47:12.94,1:47:16.24,Default,NTP,0,0,0,,{\1c&H90C8EE&}等等，我知道迈克尔·柯利昂尼在你家
+Dialogue: 0,1:47:16.58,1:47:18.84,Default,NTP,0,0,0,,{\1c&H90C8EE&}我会跟着你通过大门
+Dialogue: 0,1:47:36.13,1:47:37.16,Default,NTP,0,0,0,,你好吗？\N{\fs10\1c&HB4DCFC&}How are you?
+Dialogue: 0,1:47:37.84,1:47:39.35,Default,NTP,0,0,0,,凯伊，这是卡洛，我的老朋友\N{\fs10\1c&HB4DCFC&}Kay, this is Calo, my old friend.
+Dialogue: 0,1:47:39.85,1:47:41.07,Default,NTP,0,0,0,,我以前的一个保镖\N{\fs10\1c&HB4DCFC&}One of my bodyguards in the old days.
+Dialogue: 0,1:47:46.95,1:47:49.28,Default,NTP,0,0,0,,- 我们可以在这里等他  - 要喝一杯吗？\N{\fs10\1c&HB4DCFC&}-We can wait here. -You want drink?
+Dialogue: 0,1:47:49.48,1:47:50.71,Default,NTP,0,0,0,,好的  我们进去？\N{\fs10\1c&HB4DCFC&}Yeah. Shall we go?
+Dialogue: 0,1:47:55.04,1:47:57.58,Default,NTP,0,0,0,,我在这房间度过了很多时间\N{\fs10\1c&HB4DCFC&}I spent a lot of time in this room
+Dialogue: 0,1:47:59.10,1:48:00.52,Default,NTP,0,0,0,,想着你\N{\fs10\1c&HB4DCFC&}thinking of you.
+Dialogue: 0,1:48:04.10,1:48:05.56,Default,NTP,0,0,0,,然后你结婚了\N{\fs10\1c&HB4DCFC&}And then you got married.
+Dialogue: 0,1:48:10.00,1:48:11.43,Default,NTP,0,0,0,,仍然想着你\N{\fs10\1c&HB4DCFC&}I still thought of you.
+Dialogue: 0,1:48:12.46,1:48:13.67,Default,NTP,0,0,0,,那个房间里有什么？\N{\fs10\1c&HB4DCFC&}What's in that room?
+Dialogue: 0,1:48:18.08,1:48:20.24,Default,NTP,0,0,0,,你知道这对你很危险，迈克尔\N{\fs10\1c&HB4DCFC&}You know this is dangerous for you, Michael.
+Dialogue: 0,1:48:20.77,1:48:22.24,Default,NTP,0,0,0,,这里是西西里\N{\fs10\1c&HB4DCFC&}This is Sicily.
+Dialogue: 0,1:48:24.78,1:48:26.22,Default,NTP,0,0,0,,我爱这地方\N{\fs10\1c&HB4DCFC&}I love this country.
+Dialogue: 0,1:48:26.32,1:48:27.03,Default,NTP,0,0,0,,为什么？\N{\fs10\1c&HB4DCFC&}Why?
+Dialogue: 0,1:48:31.27,1:48:33.12,Default,NTP,0,0,0,,整个历史上\N{\fs10\1c&HB4DCFC&}Well, all through history
+Dialogue: 0,1:48:33.37,1:48:35.94,Default,NTP,0,0,0,,一直有可怕的事情发生在这些人身上\N{\fs10\1c&HB4DCFC&}terrible things have happened to these people.
+Dialogue: 0,1:48:36.65,1:48:38.94,Default,NTP,0,0,0,,可怕而不公的事\N{\fs10\1c&HB4DCFC&}Terrible injustice.
+Dialogue: 0,1:48:39.86,1:48:42.73,Default,NTP,0,0,0,,但是他们依旧期待好的…\N{\fs10\1c&HB4DCFC&}But they still expect good
+Dialogue: 0,1:48:42.97,1:48:45.24,Default,NTP,0,0,0,,而不是坏事情发生在自己身上\N{\fs10\1c&HB4DCFC&}rather than bad will happen to them.
+Dialogue: 0,1:48:45.35,1:48:47.33,Default,NTP,0,0,0,,就像我和你？\N{\fs10\1c&HB4DCFC&}Sort of like me and you, huh?
+Dialogue: 0,1:48:51.42,1:48:52.33,Default,NTP,0,0,0,,怎么会？\N{\fs10\1c&HB4DCFC&}How so?
+Dialogue: 0,1:48:52.54,1:48:54.07,Default,NTP,0,0,0,,我依然在这里，对吧\N{\fs10\1c&HB4DCFC&}Well I'm still here, right?
+Dialogue: 0,1:48:54.91,1:48:56.65,Default,NTP,0,0,0,,我们有糟糕的过去\N{\fs10\1c&HB4DCFC&}We do have a bad history
+Dialogue: 0,1:48:57.29,1:48:58.27,Default,NTP,0,0,0,,但我还是在这里\N{\fs10\1c&HB4DCFC&}but I'm still here.
+Dialogue: 0,1:48:58.45,1:49:01.20,Default,NTP,0,0,0,,是的，你还在，但心存畏惧\N{\fs10\1c&HB4DCFC&}Oh yes you are. But with dread.
+Dialogue: 0,1:49:05.72,1:49:07.69,Default,NTP,0,0,0,,下命令吧，来吧\N{\fs10\1c&HB4DCFC&}Gimme the order! C'mon!
+Dialogue: 0,1:49:08.14,1:49:11.05,Default,NTP,0,0,0,,这有什么意义呢？这样能让我不畏惧你？\N{\fs10\1c&HB4DCFC&}What's that supposed to do, is that supposed to make me not dread you?
+Dialogue: 0,1:49:13.53,1:49:15.76,Default,NTP,0,0,0,,我们是在西西里，歌剧嘛\N{\fs10\1c&HB4DCFC&}We’re in Sicily, the opera.
+Dialogue: 0,1:49:18.35,1:49:19.03,Default,NTP,0,0,0,,好吧\N{\fs10\1c&HB4DCFC&}Okay
+Dialogue: 0,1:49:22.17,1:49:24.11,Default,NTP,0,0,0,,我们现在干什么？\N{\fs10\1c&HB4DCFC&}what do we do now?
+Dialogue: 0,1:49:26.88,1:49:28.51,Default,NTP,0,0,0,,讲道理\N{\fs10\1c&HB4DCFC&}Be reasonable.
+Dialogue: 0,1:49:29.45,1:49:30.96,Default,NTP,0,0,0,,让我们努力不要互相伤害\N{\fs10\1c&HB4DCFC&}Let's try not to hurt each other.
+Dialogue: 0,1:49:38.42,1:49:40.45,Default,NTP,0,0,0,,我想要你原谅我\N{\fs10\1c&HB4DCFC&}I want you to forgive me.
+Dialogue: 0,1:49:43.33,1:49:44.69,Default,NTP,0,0,0,,原谅什么？\N{\fs10\1c&HB4DCFC&}For what?
+Dialogue: 0,1:49:45.70,1:49:47.19,Default,NTP,0,0,0,,所有事情\N{\fs10\1c&HB4DCFC&}Everything.
+Dialogue: 0,1:49:50.14,1:49:52.87,Default,NTP,0,0,0,,噢，像上帝那样？\N{\fs10\1c&HB4DCFC&}Oh, like God, huh?
+Dialogue: 0,1:49:53.94,1:49:57.03,Default,NTP,0,0,0,,不，我需要更为亲近些\N{\fs10\1c&HB4DCFC&}Oh, I, I need something a little closer.
+Dialogue: 0,1:49:59.51,1:50:03.36,Default,NTP,0,0,0,,你不能理解那些日子\N{\fs10\1c&HB4DCFC&}You couldn’t understand, back in those days.
+Dialogue: 0,1:50:04.18,1:50:06.15,Default,NTP,0,0,0,,我爱我的父亲\N{\fs10\1c&HB4DCFC&}I love my father
+Dialogue: 0,1:50:06.32,1:50:09.22,Default,NTP,0,0,0,,我曾发誓不会成为他那样的人\N{\fs10\1c&HB4DCFC&}I swore I would never be, a man like him
+Dialogue: 0,1:50:09.29,1:50:12.02,Default,NTP,0,0,0,,但是我爱他  而他有危险\N{\fs10\1c&HB4DCFC&}but I loved him. And he was in danger
+Dialogue: 0,1:50:12.09,1:50:13.12,Default,NTP,0,0,0,,我能怎么办？\N{\fs10\1c&HB4DCFC&}what could I do?
+Dialogue: 0,1:50:13.69,1:50:17.09,Default,NTP,0,0,0,,到后来，你有危险\N{\fs10\1c&HB4DCFC&}And then later, you were in danger.
+Dialogue: 0,1:50:17.36,1:50:20.93,Default,NTP,0,0,0,,我们的孩子们，有危险，我能怎么办？\N{\fs10\1c&HB4DCFC&}Our children, were in danger. what could I do?
+Dialogue: 0,1:50:21.63,1:50:23.11,Default,NTP,0,0,0,,你们全是我…\N{\fs10\1c&HB4DCFC&}You were all that I...
+Dialogue: 0,1:50:24.53,1:50:28.37,Default,NTP,0,0,0,,在这个世界上最爱、最珍惜的人\N{\fs10\1c&HB4DCFC&}...loved, valued, most in the world.
+Dialogue: 0,1:50:29.21,1:50:32.14,Default,NTP,0,0,0,,但是我正要失去你，最终失去了你\N{\fs10\1c&HB4DCFC&}And, I'm losing you, I lost you, anyway.
+Dialogue: 0,1:50:32.81,1:50:34.24,Default,NTP,0,0,0,,你走了\N{\fs10\1c&HB4DCFC&}You're gone
+Dialogue: 0,1:50:35.68,1:50:37.81,Default,NTP,0,0,0,,一切成了徒劳\N{\fs10\1c&HB4DCFC&}and it was all for nothing
+Dialogue: 0,1:50:38.16,1:50:39.92,Default,NTP,0,0,0,,所以\N{\fs10\1c&HB4DCFC&}so
+Dialogue: 0,1:50:43.19,1:50:44.76,Default,NTP,0,0,0,,你必须理解，我…\N{\fs10\1c&HB4DCFC&}you have to understand, I...
+Dialogue: 0,1:50:45.93,1:50:48.31,Default,NTP,0,0,0,,我当时计划了整个不一样的命运\N{\fs10\1c&HB4DCFC&}I had a whole different destiny planned.
+Dialogue: 0,1:50:51.86,1:50:53.56,Default,NTP,0,0,0,,好吧  我不说了\N{\fs10\1c&HB4DCFC&}All right, I'll stop
+Dialogue: 0,1:51:04.31,1:51:06.27,Default,NTP,0,0,0,,我真不知道你要我怎么做，迈克尔\N{\fs10\1c&HB4DCFC&}I really don’t know what you want from me, Michael
+Dialogue: 0,1:51:06.31,1:51:08.21,Default,NTP,0,0,0,,我真的不知道\N{\fs10\1c&HB4DCFC&}I really don’t know.
+Dialogue: 0,1:51:08.68,1:51:10.14,Default,NTP,0,0,0,,我是说\N{\fs10\1c&HB4DCFC&}I mean
+Dialogue: 0,1:51:10.48,1:51:13.74,Default,NTP,0,0,0,,我并不是你想像的那种人\N{\fs10\1c&HB4DCFC&}I'm not the man that you think I am.
+Dialogue: 0,1:51:14.70,1:51:16.55,Default,NTP,0,0,0,,我不知道\N{\fs10\1c&HB4DCFC&}I don't know
+Dialogue: 0,1:51:17.02,1:51:18.77,Default,NTP,0,0,0,,我爱你，凯伊\N{\fs10\1c&HB4DCFC&}I love you, Kay.
+Dialogue: 0,1:51:19.96,1:51:23.03,Default,NTP,0,0,0,,不要再畏惧我了\N{\fs10\1c&HB4DCFC&}Don't dread me, anymore.
+Dialogue: 0,1:51:27.83,1:51:28.93,Default,NTP,0,0,0,,你看\N{\fs10\1c&HB4DCFC&}You know
+Dialogue: 0,1:51:30.13,1:51:33.03,Default,NTP,0,0,0,,在西西里这里的每一个晚上\N{\fs10\1c&HB4DCFC&}every night here in Sicily
+Dialogue: 0,1:51:33.81,1:51:35.51,Default,NTP,0,0,0,,我做梦\N{\fs10\1c&HB4DCFC&}I dream
+Dialogue: 0,1:51:36.88,1:51:39.94,Default,NTP,0,0,0,,梦见我的妻子和我的孩子\N{\fs10\1c&HB4DCFC&}about my wife and my children.
+Dialogue: 0,1:51:42.41,1:51:44.94,Default,NTP,0,0,0,,我如何失去了他们\N{\fs10\1c&HB4DCFC&}And how I lost them.
+Dialogue: 0,1:51:46.52,1:51:51.00,Default,NTP,0,0,0,,我想…如果这能有所安慰的话\N{\fs10\1c&HB4DCFC&}I guess, if it's any consolation
+Dialogue: 0,1:51:51.18,1:51:52.65,Default,NTP,0,0,0,,我想让你知道…\N{\fs10\1c&HB4DCFC&}I want you to know that
+Dialogue: 0,1:51:55.73,1:51:56.51,Default,NTP,0,0,0,,那就是…\N{\fs10\1c&HB4DCFC&}That...
+Dialogue: 0,1:51:58.13,1:52:00.71,Default,NTP,0,0,0,,我一直爱你，迈克尔\N{\fs10\1c&HB4DCFC&}I always loved you, Michael.
+Dialogue: 0,1:52:02.03,1:52:03.21,Default,NTP,0,0,0,,而且你知道吗\N{\fs10\1c&HB4DCFC&}And you know...
+Dialogue: 0,1:52:05.43,1:52:09.21,Default,NTP,0,0,0,,我会一直，一直爱下去\N{\fs10\1c&HB4DCFC&}I always, I always will.
+Dialogue: 0,1:52:36.56,1:52:38.83,Default,NTP,0,0,0,,{\1c&H93D1F3&}怎么了？出什么事了？
+Dialogue: 0,1:52:39.32,1:52:42.01,Default,NTP,0,0,0,,{\1c&H93D1F3&}他们发现唐·汤马西诺中枪了
+Dialogue: 0,1:52:43.24,1:52:45.44,Default,NTP,0,0,0,,{\1c&H93D1F3&}他死了？
+Dialogue: 0,1:52:47.29,1:52:50.71,Default,NTP,0,0,0,,{\1c&H93D1F3&}我的主人死了，血债要血偿
+Dialogue: 0,1:52:51.32,1:52:54.19,Default,NTP,0,0,0,,{\1c&H93D1F3&}我一定要报仇
+Dialogue: 0,1:52:58.01,1:53:03.21,Default,NTP,0,0,0,,{\1c&H93D1F3&}有一天，你可能的为我办一件难事
+Dialogue: 0,1:53:03.51,1:53:05.01,Default,NTP,0,0,0,,{\1c&H93D1F3&}尽管吩咐
+Dialogue: 0,1:53:08.16,1:53:10.35,Default,NTP,0,0,0,,{\1c&H93D1F3&}我会为他报仇的
+Dialogue: 0,1:53:17.04,1:53:17.87,Default,NTP,0,0,0,,西里\N{\fs10\1c&HB4DCFC&}Siri
+Dialogue: 0,1:53:19.31,1:53:20.33,Default,NTP,0,0,0,,龙巴度\N{\fs10\1c&HB4DCFC&}Lamberto
+Dialogue: 0,1:53:22.43,1:53:23.43,Default,NTP,0,0,0,,罗塞德\N{\fs10\1c&HB4DCFC&}Lorscheider
+Dialogue: 0,1:53:25.51,1:53:26.99,Default,NTP,0,0,0,,{\1c&H83C8F2&}总计
+Dialogue: 0,1:53:29.10,1:53:31.39,Default,NTP,0,0,0,,{\1c&H83C8F2&}罗塞德  1票
+Dialogue: 0,1:53:32.20,1:53:35.02,Default,NTP,0,0,0,,{\1c&H83C8F2&}西里  11票
+Dialogue: 0,1:53:35.88,1:53:38.83,Default,NTP,0,0,0,,{\1c&H83C8F2&}龙巴度  99票
+Dialogue: 0,1:53:44.47,1:53:49.65,Default,NTP,0,0,0,,{\1c&H87CCF1&}你是否接受推举担任教皇至尊？
+Dialogue: 0,1:53:50.30,1:53:56.20,Default,NTP,0,0,0,,{\1c&H87CCF1&}上帝明鉴  赐福吾同僚之决策
+Dialogue: 0,1:53:57.06,1:53:58.68,Default,NTP,0,0,0,,{\1c&H87CCF1&}我接受
+Dialogue: 0,1:53:58.94,1:54:01.44,Default,NTP,0,0,0,,{\1c&H87CCF1&}你希望以何名义为称号？
+Dialogue: 0,1:54:01.90,1:54:04.81,Default,NTP,0,0,0,,{\1c&H87CCF1&}若望·保禄一世
+Dialogue: 0,1:54:34.50,1:54:39.24,Default,NTP,0,0,0,,{\1c&H87CCF1&}我将即刻执事 而不愿有所拖延
+Dialogue: 0,1:54:41.67,1:54:45.25,Default,NTP,0,0,0,,{\i1}弗雷德里克·凯恩济格，过去十年里的“上帝的银行家”\N{\fs10\1c&HB4DCFC&}Frederik Keinszig, known for a decade as "God's banker,"
+Dialogue: 0,1:54:45.25,1:54:48.84,Default,NTP,0,0,0,,{\i1}被报告失踪，最后被见于3天前\N{\fs10\1c&HB4DCFC&}has been reported missing. He was last seen three days ago,
+Dialogue: 0,1:54:49.11,1:54:54.33,Default,NTP,0,0,0,,{\i1}离开梵蒂冈所有的“屹莫比国际”公司在罗马的办公室\N{\fs10\1c&HB4DCFC&}leaving the Rome offices of the Vatican owned corporation International Immobiliare.
+Dialogue: 0,1:54:54.55,1:54:58.34,Default,NTP,0,0,0,,{\i1}随之失踪的还有大笔款项 及多份文件\N{\fs10\1c&HB4DCFC&}Also missing was a large sum of money, and several documents.
+Dialogue: 0,1:54:58.52,1:55:02.62,Default,NTP,0,0,0,,接啊，凯恩济格，你这蠢货\N{\fs10\1c&HB4DCFC&}Come on, Keinszig, you fool.
+Dialogue: 0,1:55:05.03,1:55:06.73,Default,NTP,0,0,0,,{\i1}凯恩济格先生的失踪\N{\fs10\1c&HB4DCFC&}Mr. Keinszig's absence
+Dialogue: 0,1:55:06.80,1:55:10.13,Default,NTP,0,0,0,,{\i1}引起了对梵蒂冈银行交易的更多疑窦\N{\fs10\1c&HB4DCFC&}casts further suspicion on the dealings of the Vatican bank.
+Dialogue: 0,1:55:10.20,1:55:12.90,Default,NTP,0,0,0,,{\i1}多年以来该银行及其下属子公司\N{\fs10\1c&HB4DCFC&}For several years the bank and its subsidiary companies
+Dialogue: 0,1:55:13.07,1:55:17.03,Default,NTP,0,0,0,,{\i1}一直被指为不名誉商业活动的对象\N{\fs10\1c&HB4DCFC&}have been the object of allegations of disreputable business practices.
+Dialogue: 0,1:55:17.22,1:55:18.73,Default,NTP,0,0,0,,{\i1}这些活动包括…\N{\fs10\1c&HB4DCFC&}These practices include...
+Dialogue: 0,1:55:18.78,1:55:23.11,Default,NTP,0,0,0,,卢凯西  请你尽量要了解\N{\fs10\1c&HB4DCFC&}Lucchesi, will you please try and understand.
+Dialogue: 0,1:55:24.15,1:55:25.81,Default,NTP,0,0,0,,我打电话找过他\N{\fs10\1c&HB4DCFC&}I have phoned him.
+Dialogue: 0,1:55:26.02,1:55:28.28,Default,NTP,0,0,0,,我也一直在等他的电话\N{\fs10\1c&HB4DCFC&}I have waited here by the phone.
+Dialogue: 0,1:55:31.42,1:55:35.32,Default,NTP,0,0,0,,你一定要记住，卢凯西先生\N{\fs10\1c&HB4DCFC&}You would do well to remember, Mr. Lucchesi
+Dialogue: 0,1:55:35.45,1:55:37.39,Default,NTP,0,0,0,,这一位教皇\N{\fs10\1c&HB4DCFC&}that this Pope
+Dialogue: 0,1:55:37.91,1:55:42.36,Default,NTP,0,0,0,,与上一位有着非常不一样的想法\N{\fs10\1c&HB4DCFC&}has very, different ideas from the last one.
+Dialogue: 0,1:55:54.86,1:55:57.12,Default,NTP,0,0,0,,再见，我的老朋友\N{\fs10\1c&HB4DCFC&}Goodbye my old friend.
+Dialogue: 0,1:56:06.82,1:56:08.11,Default,NTP,0,0,0,,我发誓\N{\fs10\1c&HB4DCFC&}I swear
+Dialogue: 0,1:56:09.13,1:56:11.92,Default,NTP,0,0,0,,以我子女的性命发誓\N{\fs10\1c&HB4DCFC&}on the lives of my children
+Dialogue: 0,1:56:15.92,1:56:19.61,Default,NTP,0,0,0,,给我一个机会挽回自己\N{\fs10\1c&HB4DCFC&}Give me a chance to redeem myself
+Dialogue: 0,1:56:22.59,1:56:27.03,Default,NTP,0,0,0,,我将不再犯下罪过\N{\fs10\1c&HB4DCFC&}and I will sin, no more.
+Dialogue: 0,1:56:51.42,1:56:53.57,Default,NTP,0,0,0,,这不单是一次糟糕的银行交易\N{\fs10\1c&HB4DCFC&}It's not just a bad banking deal.
+Dialogue: 0,1:56:55.12,1:56:57.09,Default,NTP,0,0,0,,这些人就是屠夫\N{\fs10\1c&HB4DCFC&}These guys are butchers.
+Dialogue: 0,1:56:58.26,1:56:59.86,Default,NTP,0,0,0,,哪些人？\N{\fs10\1c&HB4DCFC&}What guys?
+Dialogue: 0,1:57:00.23,1:57:01.82,Default,NTP,0,0,0,,卢凯西\N{\fs10\1c&HB4DCFC&}Lucchesi.
+Dialogue: 0,1:57:02.76,1:57:04.13,Default,NTP,0,0,0,,他控制了他们全体\N{\fs10\1c&HB4DCFC&}He controls all of them
+Dialogue: 0,1:57:04.30,1:57:05.60,Default,NTP,0,0,0,,阿尔托贝洛\N{\fs10\1c&HB4DCFC&}Altobello,
+Dialogue: 0,1:57:05.87,1:57:07.83,Default,NTP,0,0,0,,总主教\N{\fs10\1c&HB4DCFC&}the Archbishop
+Dialogue: 0,1:57:08.48,1:57:11.30,Default,NTP,0,0,0,,还有更高的人，也许有P2{\fs12}[不懂啥意思]{\r}\N{\fs10\1c&HB4DCFC&}other people higher up, P2, maybe
+Dialogue: 0,1:57:11.36,1:57:13.37,Default,NTP,0,0,0,,秘密的，未知的\N{\fs10\1c&HB4DCFC&}Secret, unknown.
+Dialogue: 0,1:57:13.57,1:57:15.35,Default,NTP,0,0,0,,他们在操作事情\N{\fs10\1c&HB4DCFC&}They're running things.
+Dialogue: 0,1:57:18.04,1:57:19.25,Default,NTP,0,0,0,,我挡了他们的路\N{\fs10\1c&HB4DCFC&}I'm in their way.
+Dialogue: 0,1:57:19.27,1:57:20.11,Default,NTP,0,0,0,,对\N{\fs10\1c&HB4DCFC&}Ya.
+Dialogue: 0,1:57:20.95,1:57:23.22,Default,NTP,0,0,0,,他雇了个职业杀手要杀你\N{\fs10\1c&HB4DCFC&}He's hired a professional assassin to kill you.
+Dialogue: 0,1:57:23.51,1:57:24.62,Default,NTP,0,0,0,,是西西里人\N{\fs10\1c&HB4DCFC&}He's Sicilian.
+Dialogue: 0,1:57:25.08,1:57:26.60,Default,NTP,0,0,0,,我不知道名字\N{\fs10\1c&HB4DCFC&}I don't know his name,
+Dialogue: 0,1:57:28.18,1:57:30.10,Default,NTP,0,0,0,,但据说他从未失过手\N{\fs10\1c&HB4DCFC&}but they say he never fails.
+Dialogue: 0,1:57:31.60,1:57:33.55,Default,NTP,0,0,0,,那么谁也不安全了\N{\fs10\1c&HB4DCFC&}Then no one is safe.
+Dialogue: 0,1:57:36.58,1:57:39.37,Default,NTP,0,0,0,,连新教皇也很危险\N{\fs10\1c&HB4DCFC&}Even the new pope is in danger.
+Dialogue: 0,1:57:40.18,1:57:44.23,Default,NTP,0,0,0,,我们还有时间，我们能预防\N{\fs10\1c&HB4DCFC&}We still have time. We can prevent this.
+Dialogue: 0,1:57:48.51,1:57:49.70,Default,NTP,0,0,0,,我试过了\N{\fs10\1c&HB4DCFC&}I tried
+Dialogue: 0,1:57:50.11,1:57:50.97,Default,NTP,0,0,0,,文森\N{\fs10\1c&HB4DCFC&}Vincen
+Dialogue: 0,1:57:53.01,1:57:54.58,Default,NTP,0,0,0,,我试过了\N{\fs10\1c&HB4DCFC&}I tried
+Dialogue: 0,1:57:56.08,1:57:58.62,Default,NTP,0,0,0,,想要避免一切走到这一步\N{\fs10\1c&HB4DCFC&}to keep everything from coming to this.
+Dialogue: 0,1:57:59.02,1:58:00.32,Default,NTP,0,0,0,,但就是不可能\N{\fs10\1c&HB4DCFC&}But it's not possible,
+Dialogue: 0,1:58:01.96,1:58:04.09,Default,NTP,0,0,0,,在这个世界不可能\N{\fs10\1c&HB4DCFC&}not in this world.
+Dialogue: 0,1:58:05.22,1:58:07.00,Default,NTP,0,0,0,,给我下命令吧\N{\fs10\1c&HB4DCFC&}Give me the order.
+Dialogue: 0,1:58:10.76,1:58:12.76,Default,NTP,0,0,0,,那你就没有回头路了\N{\fs10\1c&HB4DCFC&}You won't be able to go back.
+Dialogue: 0,1:58:14.02,1:58:15.52,Default,NTP,0,0,0,,你会像我一样\N{\fs10\1c&HB4DCFC&}You'll be like me.
+Dialogue: 0,1:58:15.60,1:58:16.80,Default,NTP,0,0,0,,好啊\N{\fs10\1c&HB4DCFC&}Good.
+Dialogue: 0,1:58:17.96,1:58:19.91,Default,NTP,0,0,0,,我一辈子都想退出\N{\fs10\1c&HB4DCFC&}All my life I wanted out.
+Dialogue: 0,1:58:20.80,1:58:23.40,Default,NTP,0,0,0,,我曾想要家族退出\N{\fs10\1c&HB4DCFC&}I wanted the family out.
+Dialogue: 0,1:58:24.93,1:58:26.71,Default,NTP,0,0,0,,我可不想退出\N{\fs10\1c&HB4DCFC&}Well, I don't want out.
+Dialogue: 0,1:58:27.31,1:58:29.37,Default,NTP,0,0,0,,我想要权力来维系家族\N{\fs10\1c&HB4DCFC&}I want the power to preserve the family.
+Dialogue: 0,1:58:34.78,1:58:36.79,Default,NTP,0,0,0,,我请求你下命令\N{\fs10\1c&HB4DCFC&}I'm asking for the order.
+Dialogue: 0,1:58:53.75,1:58:55.92,Default,NTP,0,0,0,,我不能再做下去了\N{\fs10\1c&HB4DCFC&}I can't do it anymore.
+Dialogue: 0,1:59:00.70,1:59:01.83,Default,NTP,0,0,0,,没关系的\N{\fs10\1c&HB4DCFC&}Well, it doesn't matter.
+Dialogue: 0,1:59:02.15,1:59:03.90,Default,NTP,0,0,0,,文森特知道该做什么\N{\fs10\1c&HB4DCFC&}Vincent knows what to do.
+Dialogue: 0,1:59:03.95,1:59:05.40,Default,NTP,0,0,0,,来，出去吧\N{\fs10\1c&HB4DCFC&}Come on outside.
+Dialogue: 0,1:59:05.67,1:59:09.12,Default,NTP,0,0,0,,休息一下，别再费心了\N{\fs10\1c&HB4DCFC&}Take a rest and don't think about it.
+Dialogue: 0,1:59:09.20,1:59:10.78,Default,NTP,0,0,0,,我所做的就是为大家费心\N{\fs10\1c&HB4DCFC&}All I do is think about it.
+Dialogue: 0,1:59:10.79,1:59:12.39,Default,NTP,0,0,0,,我就是你的儿子\N{\fs10\1c&HB4DCFC&}I'm your son.
+Dialogue: 0,1:59:13.34,1:59:15.24,Default,NTP,0,0,0,,所有事情都交给我吧\N{\fs10\1c&HB4DCFC&}Command me in all things.
+Dialogue: 0,1:59:17.69,1:59:19.92,Default,NTP,0,0,0,,放弃我女儿\N{\fs10\1c&HB4DCFC&}Give up my daughter.
+Dialogue: 0,1:59:22.64,1:59:24.35,Default,NTP,0,0,0,,这是你要付的代价\N{\fs10\1c&HB4DCFC&}That's the price you pay
+Dialogue: 0,1:59:25.96,1:59:28.26,Default,NTP,0,0,0,,为你选择的人生\N{\fs10\1c&HB4DCFC&}for the life you choose.
+Dialogue: 0,1:59:54.52,1:59:55.60,Default,NTP,0,0,0,,侄子\N{\fs10\1c&HB4DCFC&}Nephew
+Dialogue: 0,1:59:58.24,1:59:59.49,Default,NTP,0,0,0,,从此刻起\N{\fs10\1c&HB4DCFC&}from this moment on
+Dialogue: 0,2:00:02.03,2:00:04.55,Default,NTP,0,0,0,,你可自称文森特·柯利昂尼\N{\fs10\1c&HB4DCFC&}call yourself Vincent Corleone.
+Dialogue: 0,2:00:25.66,2:00:26.89,Default,NTP,0,0,0,,文森佐\N{\fs10\1c&HB4DCFC&}Vincenzo.
+Dialogue: 0,2:00:29.50,2:00:31.12,Default,NTP,0,0,0,,谢谢{\fs12} [意大利语]{\r}，康妮\N{\fs10\1c&HB4DCFC&}Grazie Connie.
+Dialogue: 0,2:00:33.10,2:00:34.83,Default,NTP,0,0,0,,唐·柯利昂尼\N{\fs10\1c&HB4DCFC&}Don Corleone.
+Dialogue: 0,2:00:38.21,2:00:40.83,Default,NTP,0,0,0,,唐·文森佐·柯利昂尼\N{\fs10\1c&HB4DCFC&}Don Vincenzo Corleone.
+Dialogue: 0,2:01:29.32,2:01:30.38,Default,NTP,0,0,0,,玛丽\N{\fs10\1c&HB4DCFC&}Mary.
+Dialogue: 0,2:01:53.55,2:01:55.85,Default,NTP,0,0,0,,（“乡间骑士”歌剧）
+Dialogue: 0,2:02:13.90,2:02:15.84,Default,NTP,0,0,0,,文森佐\N{\fs10\1c&HB4DCFC&}Et Tu, Vincenzo
+Dialogue: 0,2:02:16.52,2:02:19.24,Default,NTP,0,0,0,,我了解你对迈克尔的感情\N{\fs10\1c&HB4DCFC&}I know how you feel about Michael
+Dialogue: 0,2:02:19.56,2:02:21.57,Default,NTP,0,0,0,,但你救不了他\N{\fs10\1c&HB4DCFC&}but you, you can't save him.
+Dialogue: 0,2:02:22.06,2:02:23.71,Default,NTP,0,0,0,,他迷失了\N{\fs10\1c&HB4DCFC&}He's lost.
+Dialogue: 0,2:02:25.00,2:02:26.99,Default,NTP,0,0,0,,为自己考虑一下\N{\fs10\1c&HB4DCFC&}Think of yourself.
+Dialogue: 0,2:02:27.97,2:02:30.53,Default,NTP,0,0,0,,你的答案是什么，文森特？\N{\fs10\1c&HB4DCFC&}What's your answer, Vincent?
+Dialogue: 0,2:02:32.64,2:02:34.37,Default,NTP,0,0,0,,好好欣赏歌剧\N{\fs10\1c&HB4DCFC&}Enjoy the opera.
+Dialogue: 0,2:02:36.37,2:02:38.17,Default,NTP,0,0,0,,全都安排好了\N{\fs10\1c&HB4DCFC&}It's all taken care of.
+Dialogue: 0,2:02:43.68,2:02:46.15,Default,NTP,0,0,0,,检查酒吧，我去检查屋顶\N{\fs10\1c&HB4DCFC&}Check the bar. I'll check the top floor.
+Dialogue: 0,2:02:50.36,2:02:53.19,Default,NTP,0,0,0,,但愿安东尼在马克西莫剧院演唱\N{\fs10\1c&HB4DCFC&}Here's hoping Tony sings better at Theatre Maximo
+Dialogue: 0,2:02:53.39,2:02:54.79,Default,NTP,0,0,0,,胜过他在洗澡时的歌声\N{\fs10\1c&HB4DCFC&}than he does in the shower.
+Dialogue: 0,2:02:57.13,2:02:58.99,Default,NTP,0,0,0,,亲爱的康斯坦琪娅\N{\fs10\1c&HB4DCFC&}My darling, Constanzia.
+Dialogue: 0,2:02:59.79,2:03:01.39,Default,NTP,0,0,0,,唐·阿尔托贝洛\N{\fs10\1c&HB4DCFC&}Oh, Don Altobello.
+Dialogue: 0,2:03:01.67,2:03:03.16,Default,NTP,0,0,0,,这是个大场面\N{\fs10\1c&HB4DCFC&}This is a great occasion.
+Dialogue: 0,2:03:03.33,2:03:04.89,Default,NTP,0,0,0,,来  坐\N{\fs10\1c&HB4DCFC&}Come and sit down.
+Dialogue: 0,2:03:09.11,2:03:10.87,Default,NTP,0,0,0,,生日快乐\N{\fs10\1c&HB4DCFC&}Happy birthday.
+Dialogue: 0,2:03:11.38,2:03:13.78,Default,NTP,0,0,0,,你80岁了，看起来没超过60\N{\fs10\1c&HB4DCFC&}You're eighty years old。 You don't look more than sixty.
+Dialogue: 0,2:03:13.95,2:03:16.00,Default,NTP,0,0,0,,你是唯一记得的人\N{\fs10\1c&HB4DCFC&}You're the only one who remembered.
+Dialogue: 0,2:03:16.25,2:03:17.89,Default,NTP,0,0,0,,迈克尔，我们刚收到消息\N{\fs10\1c&HB4DCFC&}Michael, we just got the word.
+Dialogue: 0,2:03:18.09,2:03:19.88,Default,NTP,0,0,0,,教皇批准了“屹莫比”的交易\N{\fs10\1c&HB4DCFC&}The Pope's ratified the Immobiliare deal.
+Dialogue: 0,2:03:19.94,2:03:21.11,Default,NTP,0,0,0,,我们赢了\N{\fs10\1c&HB4DCFC&}We've won.
+Dialogue: 0,2:03:21.59,2:03:22.98,Default,NTP,0,0,0,,恭喜\N{\fs10\1c&HB4DCFC&}Congratulations.
+Dialogue: 0,2:03:26.02,2:03:28.36,Default,NTP,0,0,0,,世事多么难料\N{\fs10\1c&HB4DCFC&}How strange, the way things work.
+Dialogue: 0,2:03:28.61,2:03:30.34,Default,NTP,0,0,0,,教皇在做的正是你说他会做的事\N{\fs10\1c&HB4DCFC&}The Pope's doing exactly what you said he'd do
+Dialogue: 0,2:03:30.36,2:03:31.76,Default,NTP,0,0,0,,他在清理门户\N{\fs10\1c&HB4DCFC&}he's cleaning house.
+Dialogue: 0,2:03:33.34,2:03:35.09,Default,NTP,0,0,0,,他应该小心\N{\fs10\1c&HB4DCFC&}He should be careful.
+Dialogue: 0,2:03:35.45,2:03:36.96,Default,NTP,0,0,0,,做个诚实的人会有危险\N{\fs10\1c&HB4DCFC&}It's dangerous to be an honest man.
+Dialogue: 0,2:03:43.64,2:03:46.50,Default,NTP,0,0,0,,我要加派人手到后台保护托尼\N{\fs10\1c&HB4DCFC&}I wanna put a little more muscle backstage with Tony
+Dialogue: 0,2:03:58.85,2:04:02.06,Default,NTP,0,0,0,,你以前过生日总请我吃东西\N{\fs10\1c&HB4DCFC&}On your birthday, you used to shower me with treats.
+Dialogue: 0,2:04:02.26,2:04:03.75,Default,NTP,0,0,0,,奶油卷\N{\fs10\1c&HB4DCFC&}Tootsie Rolls!
+Dialogue: 0,2:04:04.93,2:04:08.33,Default,NTP,0,0,0,,制作这些奶油卷的修女发誓缄口\N{\fs10\1c&HB4DCFC&}The nuns who made these cannolis took a vow of silence.
+Dialogue: 0,2:04:08.60,2:04:10.26,Default,NTP,0,0,0,,这是最优质的\N{\fs10\1c&HB4DCFC&}They're the very finest.
+Dialogue: 0,2:04:16.24,2:04:17.57,Default,NTP,0,0,0,,堂妹\N{\fs10\1c&HB4DCFC&}Hey, coz.
+Dialogue: 0,2:04:20.85,2:04:22.31,Default,NTP,0,0,0,,你的皮衣呢？\N{\fs10\1c&HB4DCFC&}Where's your leather?
+Dialogue: 0,2:04:25.81,2:04:27.15,Default,NTP,0,0,0,,别说了\N{\fs10\1c&HB4DCFC&}Stop it.
+Dialogue: 0,2:04:33.22,2:04:37.42,Default,NTP,0,0,0,,你这么瘦，你来吃\N{\fs10\1c&HB4DCFC&}You're so thin. You eat it.
+Dialogue: 0,2:04:53.18,2:04:58.91,Default,NTP,0,0,0,,很好，谢谢，谢谢{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}E buono. Grazie, grazie.
+Dialogue: 0,2:05:00.38,2:05:01.65,Default,NTP,0,0,0,,结束了，玛丽\N{\fs10\1c&HB4DCFC&}It's over, Mary.
+Dialogue: 0,2:05:01.72,2:05:04.41,Default,NTP,0,0,0,,我有事情不得不做，你不能参与\N{\fs10\1c&HB4DCFC&}There are things I have to do that you can't be a part of.
+Dialogue: 0,2:05:04.87,2:05:08.14,Default,NTP,0,0,0,,别看你父亲，这不是你父亲的决定，是我的\N{\fs10\1c&HB4DCFC&}Don't look at your father, it's not your father's decision, it's mine.
+Dialogue: 0,2:05:09.54,2:05:11.45,Default,NTP,0,0,0,,不要恨你父亲\N{\fs10\1c&HB4DCFC&}Don't hate your father.
+Dialogue: 0,2:05:13.97,2:05:17.94,Default,NTP,0,0,0,,有些事情我要参与，你不能在身边\N{\fs10\1c&HB4DCFC&}There are things I'm going to be part of, you can't be around.
+Dialogue: 0,2:05:19.50,2:05:22.53,Default,NTP,0,0,0,,今晚之后，你再也见不到我了\N{\fs10\1c&HB4DCFC&}After tonight, you won't see me anymore.
+Dialogue: 0,2:05:23.21,2:05:24.41,Default,NTP,0,0,0,,不要\N{\fs10\1c&HB4DCFC&}No.
+Dialogue: 0,2:05:26.71,2:05:30.15,Default,NTP,0,0,0,,你得理解，玛丽，你得理解\N{\fs10\1c&HB4DCFC&}You gotta understand, Mary. You gotta understand.
+Dialogue: 0,2:05:31.35,2:05:33.32,Default,NTP,0,0,0,,我会永远爱你\N{\fs10\1c&HB4DCFC&}I'll always love you.
+Dialogue: 0,2:05:46.14,2:05:47.65,Default,NTP,0,0,0,,爱别人吧\N{\fs10\1c&HB4DCFC&}Love somebody else.
+Dialogue: 0,2:06:10.66,2:06:12.92,Default,NTP,0,0,0,,敬托尼  敬托尼\N{\fs10\1c&HB4DCFC&}To Tony! To Tony!
+Dialogue: 0,2:09:29.19,2:09:30.41,Default,NTP,0,0,0,,他们不会做什么了\N{\fs10\1c&HB4DCFC&}They won't try anything
+Dialogue: 0,2:09:30.44,2:09:32.48,Default,NTP,0,0,0,,对，一切正常，这边都安全\N{\fs10\1c&HB4DCFC&}Yeah, everything’s fine. It's all clear out here.
+Dialogue: 0,2:09:33.19,2:09:35.72,Default,NTP,0,0,0,,我已经派艾尔·奈利去了梵蒂冈\N{\fs10\1c&HB4DCFC&}I've already sent Al Neri to the Vatican.
+Dialogue: 0,2:09:48.42,2:09:51.04,Default,NTP,0,0,0,,{\1c&H92D7F1&}- 卢凯西先生的房子？  - 是
+Dialogue: 0,2:09:52.64,2:09:56.84,Default,NTP,0,0,0,,{\1c&H92D7F1&}我带来迈克尔·柯利昂尼的口信
+Dialogue: 0,2:09:58.27,2:09:59.58,Default,NTP,0,0,0,,{\1c&H92D7F1&}让他进来
+Dialogue: 0,2:11:28.71,2:11:29.84,Default,NTP,0,0,0,,{\1c&H92D7F1&}晚上好
+Dialogue: 0,2:14:51.63,2:14:53.33,Default,NTP,0,0,0,,好，你搞掂他了\N{\fs10\1c&HB4DCFC&}Good, you got him.
+Dialogue: 0,2:15:45.86,2:15:48.73,Default,NTP,0,0,0,,今天晚上柯利昂尼家族要算帐\N{\fs10\1c&HB4DCFC&}Tonight the Corleone family settles its accounts.
+Dialogue: 0,2:15:49.57,2:15:51.23,Default,NTP,0,0,0,,凯恩济格\N{\fs10\1c&HB4DCFC&}Keinszig
+Dialogue: 0,2:15:51.87,2:15:55.10,Default,NTP,0,0,0,,那个他妈的瑞士小银行家\N{\fs10\1c&HB4DCFC&}that little Swiss banker fuck
+Dialogue: 0,2:15:55.74,2:15:59.94,Default,NTP,0,0,0,,他从一开始就在玩弄每一个人，操他妈的\N{\fs10\1c&HB4DCFC&}he's been swindling everyone from the beginning. Fuck 'im.
+Dialogue: 0,2:16:00.86,2:16:02.87,Default,NTP,0,0,0,,唐·卢凯西，我的朋友\N{\fs10\1c&HB4DCFC&}Don Lucchesi. My friend.
+Dialogue: 0,2:16:03.75,2:16:07.19,Default,NTP,0,0,0,,卡洛会去拜访他，在他家\N{\fs10\1c&HB4DCFC&}Calo will pay him a visit at his home.
+Dialogue: 0,2:16:09.05,2:16:10.12,Default,NTP,0,0,0,,奈利\N{\fs10\1c&HB4DCFC&}Neri
+Dialogue: 0,2:16:10.92,2:16:12.82,Default,NTP,0,0,0,,搭火车去罗马\N{\fs10\1c&HB4DCFC&}take a train to Rome.
+Dialogue: 0,2:16:13.89,2:16:16.52,Default,NTP,0,0,0,,为总主教点一根蜡烛\N{\fs10\1c&HB4DCFC&}Light a candle for the Archbishop.
+Dialogue: 0,2:16:51.02,2:16:54.31,Default,NTP,0,0,0,,{\1c&H91D5FC&}茶，陛下，有助于你的睡眠
+Dialogue: 0,2:17:18.05,2:17:21.09,Default,NTP,0,0,0,,{\1c&H91D5FC&}这是文森特·柯利昂尼给你的
+Dialogue: 0,2:18:19.37,2:18:20.63,Default,NTP,0,0,0,,迈克尔，事情严重\N{\fs10\1c&HB4DCFC&}Michael, it's serious.
+Dialogue: 0,2:18:20.65,2:18:24.38,Default,NTP,0,0,0,,我们在梵蒂冈内部的人说 有人要暗算教宗\N{\fs10\1c&HB4DCFC&}Our man inside the Vatican says there's a plot against the Pope.
+Dialogue: 0,2:18:24.39,2:18:26.89,Default,NTP,0,0,0,,你是说晚上他会发心脏病？\N{\fs10\1c&HB4DCFC&}You mean he's going to have a heart attack in the night.
+Dialogue: 0,2:18:33.80,2:18:35.83,Default,NTP,0,0,0,,这位教皇有强大的敌人\N{\fs10\1c&HB4DCFC&}This Pope has powerful enemies.
+Dialogue: 0,2:18:36.34,2:18:39.19,Default,NTP,0,0,0,,我们可能没法及时救他了\N{\fs10\1c&HB4DCFC&}We may not be in time to save him.
+Dialogue: 0,2:18:41.83,2:18:43.46,Default,NTP,0,0,0,,咱们回去看歌剧吧\N{\fs10\1c&HB4DCFC&}Now let's go back to the opera.
+Dialogue: 0,2:19:10.37,2:19:11.83,Default,NTP,0,0,0,,{\1c&H9AD5F3&}陛下
+Dialogue: 0,2:19:12.45,2:19:14.08,Default,NTP,0,0,0,,教皇陛下{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}
+Dialogue: 0,2:19:18.31,2:19:19.39,Default,NTP,0,0,0,,{\1c&H9AD5F3&}至圣？
+Dialogue: 0,2:19:25.41,2:19:26.49,Default,NTP,0,0,0,,至圣？{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Eminenza?
+Dialogue: 0,2:19:28.05,2:19:29.79,Default,NTP,0,0,0,,至圣？{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Eminenza?
+Dialogue: 0,2:19:35.34,2:19:37.91,Default,NTP,0,0,0,,{\1c&H9AD5F3&}圣父死了
+Dialogue: 0,2:21:08.39,2:21:09.68,Default,NTP,0,0,0,,睡吧\N{\fs10\1c&HB4DCFC&}Sleep.
+Dialogue: 0,2:21:10.56,2:21:12.85,Default,NTP,0,0,0,,睡吧，教父\N{\fs10\1c&HB4DCFC&}Sleep, Godfather.
+Dialogue: 0,2:21:27.94,2:21:28.85,Default,NTP,0,0,0,,我可以进吗？{\fs12} [意大利语]{\r}\N{\fs10\1c&HB4DCFC&}Posso entrare io?
+Dialogue: 0,2:22:22.53,2:22:24.47,Default,NTP,0,0,0,,{\1c&H99D7F4&}说吧...告诉我
+Dialogue: 0,2:22:26.13,2:22:32.33,Default,NTP,0,0,0,,{\1c&H99D7F4&}你已失去了人们的信心
+Dialogue: 0,2:22:33.84,2:22:38.23,Default,NTP,0,0,0,,{\1c&H99D7F4&}立足于民心就是立足烂泥
+Dialogue: 0,2:22:38.71,2:22:42.34,Default,NTP,0,0,0,,{\1c&H99D7F4&}迈可尔·柯利昂尼的口信呢？
+Dialogue: 0,2:22:59.40,2:23:05.75,Default,NTP,0,0,0,,{\1c&H99D7F4&}它很重要 我必须口对耳告诉你
+Dialogue: 0,2:23:09.57,2:23:11.59,Default,NTP,0,0,0,,{\1c&H99D7F4&}他没带武器
+Dialogue: 0,2:23:29.99,2:23:32.64,Default,NTP,0,0,0,,{\1c&H99D7F4&}权力会耗尽没有权力的人
+Dialogue: 0,2:25:20.19,2:25:21.59,Default,NTP,0,0,0,,请问我现在能跟你谈谈吗？\N{\fs10\1c&HB4DCFC&}Can I please talk to you now?
+Dialogue: 0,2:25:21.61,2:25:23.57,Default,NTP,0,0,0,,现在不行，玛丽，时候不对\N{\fs10\1c&HB4DCFC&}Not now Mary, it's not a good time.
+Dialogue: 0,2:25:24.15,2:25:25.12,Default,NTP,0,0,0,,你就跟我父亲一样\N{\fs10\1c&HB4DCFC&}You're just like my father.
+Dialogue: 0,2:25:25.16,2:25:27.93,Default,NTP,0,0,0,,走吧，跟你的家人待在一起，走吧\N{\fs10\1c&HB4DCFC&}Come on, stay with the family. Go on.
+Dialogue: 0,2:25:29.37,2:25:31.20,Default,NTP,0,0,0,,- 跟我说吧  - 双胞胎都死了\N{\fs10\1c&HB4DCFC&}-Talk to me. -The twins are dead.
+Dialogue: 0,2:25:31.37,2:25:35.09,Default,NTP,0,0,0,,大约一分钟后，就会有宪兵遍布这地方\N{\fs10\1c&HB4DCFC&}In about one minute there's going to be carbanieri crawling all over this place.
+Dialogue: 0,2:25:36.34,2:25:39.27,Default,NTP,0,0,0,,好，带所有人上车，要不动声色\N{\fs10\1c&HB4DCFC&}Okay. Let's get everybody to the cars. Nice and quiet.
+Dialogue: 0,2:25:39.54,2:25:40.54,Default,NTP,0,0,0,,- 收到  - 不动声色\N{\fs10\1c&HB4DCFC&}-Got it. -Quiet.
+Dialogue: 0,2:25:55.89,2:25:59.01,Default,NTP,0,0,0,,当他们听到柯利昂尼这个名字，就会想起那歌声\N{\fs10\1c&HB4DCFC&}When they hear the name Corleone, they're going to think of that voice.
+Dialogue: 0,2:26:08.79,2:26:09.97,Default,NTP,0,0,0,,爸爸？\N{\fs10\1c&HB4DCFC&}Dad?
+Dialogue: 0,2:26:18.34,2:26:19.27,Default,NTP,0,0,0,,这是我妈妈\N{\fs10\1c&HB4DCFC&}This is my mom.
+Dialogue: 0,2:26:26.54,2:26:28.84,Default,NTP,0,0,0,,- 你不必这样对我，求你  - 玛丽，快来\N{\fs10\1c&HB4DCFC&}You don't have to do this to me, please. -Mary, come on...
+Dialogue: 0,2:26:28.86,2:26:31.24,Default,NTP,0,0,0,,- 怎样对你，亲爱的，你在说什么？ - 快来\N{\fs10\1c&HB4DCFC&}-Doing what, sweetheart. What do you mean? -Come on...
+Dialogue: 0,2:26:31.70,2:26:33.49,Default,NTP,0,0,0,,玛丽，请你…\N{\fs10\1c&HB4DCFC&}Mary, please...
+Dialogue: 0,2:26:57.00,2:26:58.08,Default,NTP,0,0,0,,爸？\N{\fs10\1c&HB4DCFC&}Dad?
+Dialogue: 0,2:27:08.76,2:27:11.43,Default,NTP,0,0,0,,- 哦不，不  - 哦，上帝\N{\fs10\1c&HB4DCFC&}-Oh, no, no! -Oh, god.
+Dialogue: 0,2:27:11.46,2:27:14.51,Default,NTP,0,0,0,,- 玛丽！ - 不！\N{\fs10\1c&HB4DCFC&}-Mary! -No!
+Dialogue: 0,2:27:15.23,2:27:19.49,Default,NTP,0,0,0,,不，玛丽\N{\fs10\1c&HB4DCFC&}NO! Mary!
+Dialogue: 0,2:27:19.56,2:27:23.17,Default,NTP,0,0,0,,天啊 不要\N{\fs10\1c&HB4DCFC&}Oh, God. Oh, God, NO!
+Dialogue: 0,2:27:23.20,2:27:26.18,Default,NTP,0,0,0,,上帝 求你 不要\N{\fs10\1c&HB4DCFC&}Oh, God, no, PLEASE!
+Dialogue: 0,2:30:05.04,2:30:17.94,Default,NTP,0,0,0,,{\fad(2100,1500)}{\1c&HB2F9F8&\shad0\bord0\fs14\\fscx90\fsp0.7\pos(107,140)}当西西里人祝你“百年”……
+Dialogue: 0,2:30:08.24,2:30:17.94,Default,NTP,0,0,0,,{\fad(2100,1200)}{\1c&HB2F9F8&\shad0\bord0\fs14\\fscx90\fsp0.7\pos(197,140)}其意思是“长长久久”
+Dialogue: 0,2:30:12.44,2:30:21.01,Default,NTP,0,0,0,,{\fad(2100,1500)}{\1c&HB2F9F8&\shad0\bord0\fs14\\fscx90\fsp0.7\pos(93,186)}而西西里人永不忘记
+Dialogue: 0,2:30:24.64,2:30:28.41,Default,NTP,0,0,0,,{\fad(800,800)}{\1c&HF1F2F2&\shad0\bord0\b1}制片及导演：弗朗西斯·福特·科波拉
+Dialogue: 0,2:30:28.94,2:30:32.79,Default,NTP,0,0,0,,{\fad(240,400)}{\1c&HF1F2F2&\shad0\bord0\b1}编剧：马里奥·普佐 弗朗西斯·福特·科波拉
+Dialogue: 0,2:30:33.34,2:30:36.49,Default,NTP,0,0,0,,{\fad(140,400)}{\1c&HF1F2F2&\shad0\bord0\b1}主演：阿尔·帕西诺
+Dialogue: 0,2:30:37.04,2:30:40.24,Default,NTP,0,0,0,,{\fad(140,400)}{\1c&HF1F2F2&\shad0\bord0\b1}黛安·基顿
+
+
+
