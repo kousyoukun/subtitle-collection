@@ -1,0 +1,1399 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: Ricco
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,24,&H00C0C0C0,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,1,134
+Style: E,Microsoft YaHei,14,&H00C0C0C0,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,1,134
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:15.29,0:00:19.91,Default,,0000,0000,0000,,‎NETFLIX 出品
+Dialogue: 0,0:01:17.50,0:01:21.16,Default,,0000,0000,0000,,‎（洛杉矶 1933年）
+Dialogue: 0,0:01:27.54,0:01:30.25,Default,,0000,0000,0000,,‎妈妈给你准备了一个惊喜 ‎在前面等着你呢\N{\rE}Mother has a surprise for you waiting up ahead.{\r}
+Dialogue: 0,0:01:32.37,0:01:33.58,Default,,0000,0000,0000,,‎一个惊喜？\N{\rE}A surprise?{\r}
+Dialogue: 0,0:01:34.29,0:01:36.04,Default,,0000,0000,0000,,‎生日惊喜\N{\rE}A birthday surprise.{\r}
+Dialogue: 0,0:01:49.33,0:01:52.29,Default,,0000,0000,0000,,‎诺玛简 看\N{\rE}Norma Jeane. Look.{\r}
+Dialogue: 0,0:01:53.12,0:01:54.95,Default,,0000,0000,0000,,‎那个男人是你的父亲\N{\rE}That man is your father.{\r}
+Dialogue: 0,0:01:57.75,0:01:58.79,Default,,0000,0000,0000,,‎我父亲？\N{\rE}My father?{\r}
+Dialogue: 0,0:02:00.29,0:02:01.20,Default,,0000,0000,0000,,‎他是我父亲？\N{\rE}He's my father?{\r}
+Dialogue: 0,0:02:02.54,0:02:05.20,Default,,0000,0000,0000,,‎看 你父亲\N{\rE}Look. Your father.{\r}
+Dialogue: 0,0:02:12.79,0:02:14.41,Default,,0000,0000,0000,,‎他的名字很好听\N{\rE}His name is a beautiful name.{\r}
+Dialogue: 0,0:02:16.62,0:02:18.00,Default,,0000,0000,0000,,‎也很重要\N{\rE}And an important name.{\r}
+Dialogue: 0,0:02:20.12,0:02:21.75,Default,,0000,0000,0000,,‎但我不能说出这个名字\N{\rE}But it's a name I can't utter.{\r}
+Dialogue: 0,0:02:35.54,0:02:36.41,Default,,0000,0000,0000,,‎不！\N{\rE}No!{\r}
+Dialogue: 0,0:02:39.70,0:02:41.75,Default,,0000,0000,0000,,‎你的手黏糊糊的 不能碰这个\N{\rE}You mustn't touch with sticky fingers.{\r}
+Dialogue: 0,0:02:44.62,0:02:45.87,Default,,0000,0000,0000,,‎没有人知道\N{\rE}So no one knows.{\r}
+Dialogue: 0,0:02:47.50,0:02:50.37,Default,,0000,0000,0000,,‎也绝不能让人知道 ‎即使你已经看到了这照片\N{\rE}And no one must know, even that you've seen this.{\r}
+Dialogue: 0,0:02:52.41,0:02:55.08,Default,,0000,0000,0000,,‎我们俩的生活都很复杂 你明白吗？\N{\rE}There are complications in both our lives, you see?{\r}
+Dialogue: 0,0:02:56.04,0:02:58.79,Default,,0000,0000,0000,,‎你出生时 你父亲在很远的地方\N{\rE}When you were born, your father was far away.{\r}
+Dialogue: 0,0:02:59.62,0:03:03.20,Default,,0000,0000,0000,,‎即使是现在他也离得很远 ‎我很担心他的安危\N{\rE}He's at a great distance, even now, and I worry for his safety.{\r}
+Dialogue: 0,0:03:05.33,0:03:08.37,Default,,0000,0000,0000,,‎但在我们心里 我们已经结婚了\N{\rE}But in our hearts, we're wed.{\r}
+Dialogue: 0,0:03:09.62,0:03:11.20,Default,,0000,0000,0000,,‎我们是合法夫妻\N{\rE}We're husband and wife.{\r}
+Dialogue: 0,0:03:14.41,0:03:17.00,Default,,0000,0000,0000,,‎虽然我们蔑视传统 也不会依循于它\N{\rE}Though we scorn convention and will not acquiesce to it.{\r}
+Dialogue: 0,0:03:19.79,0:03:21.83,Default,,0000,0000,0000,,‎但他在哪儿？\N{\rE}But where is he?{\r}
+Dialogue: 0,0:03:30.08,0:03:31.29,Default,,0000,0000,0000,,‎我的手在抖\N{\rE}Mmm. My hands are shaking.{\r}
+Dialogue: 0,0:03:33.62,0:03:36.33,Default,,0000,0000,0000,,‎这房间在颤抖吗？\N{\rE}Is this room vibrating?{\r}
+Dialogue: 0,0:03:36.41,0:03:37.25,Default,,0000,0000,0000,,‎（生日快乐）
+Dialogue: 0,0:03:40.25,0:03:41.37,Default,,0000,0000,0000,,‎在加州 你…\N{\rE}In California,{\r}
+Dialogue: 0,0:03:42.79,0:03:46.08,Default,,0000,0000,0000,,分不清什么是“真实” ‎什么是“你的错觉”\Nyou… can't tell what's "real" and what's "just yourself."
+Dialogue: 0,0:03:56.37,0:03:58.08,Default,,0000,0000,0000,,‎看起来很好吃 对吧？\N{\rE}Looks delicious, doesn't it?{\r}
+Dialogue: 0,0:04:18.00,0:04:19.87,Default,,0000,0000,0000,,‎别把口水流到我床单上\N{\rE}So you don't drool on my cover.{\r}
+Dialogue: 0,0:04:30.37,0:04:33.66,Default,,0000,0000,0000,,‎诺玛简 你记得 ‎谁过去睡在这儿的吗？\N{\rE}Do you remember, Norma Jeane, who used to sleep here?{\r}
+Dialogue: 0,0:04:33.75,0:04:36.12,Default,,0000,0000,0000,,‎在这抽屉里 你记得吗？\N{\rE}In this drawer? Do you remember?{\r}
+Dialogue: 0,0:04:41.00,0:04:41.83,Default,,0000,0000,0000,,‎你！\N{\rE}You!{\r}
+Dialogue: 0,0:04:42.41,0:04:45.50,Default,,0000,0000,0000,,‎是你 诺玛简！ ‎你以前就睡在这个抽屉里\N{\rE}You, Norma Jeane! You slept right in this very drawer.{\r}
+Dialogue: 0,0:04:47.50,0:04:49.87,Default,,0000,0000,0000,,‎我们当时很穷 ‎这个抽屉就是你的婴儿床\N{\rE}We were so poor, this drawer was your crib.{\r}
+Dialogue: 0,0:04:53.04,0:04:54.79,Default,,0000,0000,0000,,‎但对我们来说已经很好了 对吧？\N{\rE}But it was good enough for us, wasn't it?{\r}
+Dialogue: 0,0:04:59.66,0:05:03.54,Default,,0000,0000,0000,,‎（查理卓别林 《城市之光》）
+Dialogue: 0,0:05:21.66,0:05:23.37,Default,,0000,0000,0000,,‎我爱你 诺玛简\N{\rE}I love you, Norma Jeane.{\r}
+Dialogue: 0,0:05:24.87,0:05:28.54,Default,,0000,0000,0000,,‎总有一天 我会回洛杉矶与你相认\N{\rE}And one day, I will return to Los Angeles to claim you.{\r}
+Dialogue: 0,0:05:38.04,0:05:41.75,Default,,0000,0000,0000,,‎诺玛简？\N{\rE}Norma Jeane? Norma Jeane?{\r}
+Dialogue: 0,0:05:44.33,0:05:45.83,Default,,0000,0000,0000,,‎诺玛简 亲爱的 醒醒！\N{\rE}Norma Jeane, honey. Wake up!{\r}
+Dialogue: 0,0:05:47.83,0:05:48.83,Default,,0000,0000,0000,,‎醒醒！\N{\rE}Wake up!{\r}
+Dialogue: 0,0:05:49.58,0:05:52.00,Default,,0000,0000,0000,,‎来吧 上来！我们走吧！\N{\rE}Come on. Up, up! Let's go!{\r}
+Dialogue: 0,0:05:54.50,0:05:57.16,Default,,0000,0000,0000,,‎-我累了 ‎-跟我来\N{\rE}-I'm tired. -Come with me.{\r}
+Dialogue: 0,0:06:03.79,0:06:04.70,Default,,0000,0000,0000,,‎好的\N{\rE}Okay.{\r}
+Dialogue: 0,0:06:38.33,0:06:41.25,Default,,0000,0000,0000,,‎（好莱坞庄园）
+Dialogue: 0,0:06:55.08,0:06:57.58,Default,,0000,0000,0000,,‎别像要撒尿的小蛇一样蠕动\N{\rE}Stop squirming like a little snake needing to pee.{\r}
+Dialogue: 0,0:06:59.91,0:07:04.75,Default,,0000,0000,0000,,‎妈妈 如果房子烧了怎么办？ ‎我忘了拿我的老虎了\N{\rE}Mother? What if the house burns down? I forgot my tiger.{\r}
+Dialogue: 0,0:07:04.83,0:07:06.16,Default,,0000,0000,0000,,‎那个玩具\N{\rE}That toy.{\r}
+Dialogue: 0,0:07:07.00,0:07:09.33,Default,,0000,0000,0000,,回来\N{\rE}-Go back!{\r}
+Dialogue: 0,0:07:22.91,0:07:25.75,Default,,0000,0000,0000,,‎天啊\N{\rE}Oh God. Oh God.{\r}
+Dialogue: 0,0:07:25.83,0:07:28.20,Default,,0000,0000,0000,,‎天啊 我什么都看不到\N{\rE}Oh God, I can't see a fucking thing.{\r}
+Dialogue: 0,0:07:42.00,0:07:42.83,Default,,0000,0000,0000,,‎嘿！\N{\rE}Hey!{\r}
+Dialogue: 0,0:07:50.20,0:07:51.58,Default,,0000,0000,0000,,‎你到底在干什么？\N{\rE}What the hell are you doing?{\r}
+Dialogue: 0,0:07:54.62,0:07:58.16,Default,,0000,0000,0000,,‎我们被邀请去月桂谷顶的私人住宅\N{\rE}We've been invited to a private residence at the top of Laurel Canyon.{\r}
+Dialogue: 0,0:07:58.25,0:08:03.00,Default,,0000,0000,0000,,‎业主有一栋防火豪宅 ‎我女儿和我在那儿会很安全的\N{\rE}The owner has a fireproof mansion. My daughter and I will be safe there.{\r}
+Dialogue: 0,0:08:03.08,0:08:07.87,Default,,0000,0000,0000,,‎我不能说这个人的名字 警官 ‎但这是你们都知道的名字\N{\rE}I can't say this man's name, officer, but it's a name you all know.{\r}
+Dialogue: 0,0:08:07.95,0:08:09.83,Default,,0000,0000,0000,,‎他是行业巨头\N{\rE}He's a titan in the industry.{\r}
+Dialogue: 0,0:08:11.75,0:08:13.33,Default,,0000,0000,0000,,‎这个小女孩是他的女儿\N{\rE}This little girl is his daughter.{\r}
+Dialogue: 0,0:08:14.25,0:08:16.83,Default,,0000,0000,0000,,‎这是一座沙城 没什么事是能长久的\N{\rE}This is a city of sand, nothing will long endure,{\r}
+Dialogue: 0,0:08:16.91,0:08:18.37,Default,,0000,0000,0000,,‎但我们得去\N{\rE}but we are going.{\r}
+Dialogue: 0,0:08:19.37,0:08:20.95,Default,,0000,0000,0000,,‎女士 回家吧\N{\rE}Ma'am, go home.{\r}
+Dialogue: 0,0:08:21.04,0:08:23.91,Default,,0000,0000,0000,,‎让你女儿上床睡觉吧 好吗？ ‎已经很晚了\N{\rE}Put your little girl to bed, okay? It's late.{\r}
+Dialogue: 0,0:08:26.62,0:08:29.25,Default,,0000,0000,0000,,‎事实上 长官 我想近距离看看地狱\N{\rE}Actually, officer, I'd like to see hell close-up.{\r}
+Dialogue: 0,0:08:30.12,0:08:31.20,Default,,0000,0000,0000,,‎预览一下\N{\rE}A preview.{\r}
+Dialogue: 0,0:08:34.12,0:08:37.29,Default,,0000,0000,0000,,‎女士 你得调头回去\N{\rE}Ma'am, you need to turn around.{\r}
+Dialogue: 0,0:08:37.37,0:08:40.50,Default,,0000,0000,0000,,‎如果你需要 我可以护送你回去 ‎但是这是命令\N{\rE}I can give you an escort if you need one, but this is an order.{\r}
+Dialogue: 0,0:08:40.58,0:08:42.75,Default,,0000,0000,0000,,‎现在调头 否则我不得不逮捕你\N{\rE}If you don't turn around, I'll have to put you under arrest.{\r}
+Dialogue: 0,0:08:42.83,0:08:45.41,Default,,0000,0000,0000,,‎因为我开自己的车而逮捕我吗？\N{\rE}Under arrest for driving my car?{\r}
+Dialogue: 0,0:08:56.41,0:08:58.70,Default,,0000,0000,0000,,‎抱歉 警官 请别逮捕我\N{\rE}I'm sorry, officer. Please don't arrest me.{\r}
+Dialogue: 0,0:09:03.50,0:09:04.87,Default,,0000,0000,0000,,‎我希望你开枪杀了我\N{\rE}I wish you would shoot me.{\r}
+Dialogue: 0,0:09:13.29,0:09:14.75,Default,,0000,0000,0000,,‎回家吧 好吗？\N{\rE}Lady, look, go home, okay?{\r}
+Dialogue: 0,0:09:14.83,0:09:18.37,Default,,0000,0000,0000,,‎你喝醉嗑了药 ‎今晚没人有空处理这事\N{\rE}You're drunk, you're doped up, and no one's got time for this tonight.{\r}
+Dialogue: 0,0:09:18.45,0:09:21.37,Default,,0000,0000,0000,,‎你现在说的话会给你惹麻烦的\N{\rE}You're saying things to get you into trouble.{\r}
+Dialogue: 0,0:09:23.25,0:09:24.41,Default,,0000,0000,0000,,‎快走吧 走\N{\rE}Come on. Go.{\r}
+Dialogue: 0,0:10:18.41,0:10:21.20,Default,,0000,0000,0000,,‎妈妈？他在这儿吗？\N{\rE}Mother? Was he here?{\r}
+Dialogue: 0,0:10:21.29,0:10:24.33,Default,,0000,0000,0000,,‎我父亲？一直都在这儿吗？\N{\rE}My father? All this time?{\r}
+Dialogue: 0,0:10:24.41,0:10:26.00,Default,,0000,0000,0000,,‎他为什么不来看我们？\N{\rE}Why didn't he come to see us?{\r}
+Dialogue: 0,0:10:30.50,0:10:33.70,Default,,0000,0000,0000,,‎什么？\N{\rE}What? What?{\r}
+Dialogue: 0,0:10:57.45,0:10:58.50,Default,,0000,0000,0000,,‎水太烫了\N{\rE}It's too hot.{\r}
+Dialogue: 0,0:11:03.66,0:11:05.12,Default,,0000,0000,0000,,‎诺玛简 进浴缸里去\N{\rE}Norma Jeane, get in the bath.{\r}
+Dialogue: 0,0:11:06.29,0:11:08.08,Default,,0000,0000,0000,,‎你乖乖的 进浴缸里去\N{\rE}Be a good girl and get in the bath.{\r}
+Dialogue: 0,0:11:14.79,0:11:17.33,Default,,0000,0000,0000,,‎-水太烫了 ‎-进浴缸里去！\N{\rE}-It's too hot. -Get in the bath!{\r}
+Dialogue: 0,0:11:23.25,0:11:25.66,Default,,0000,0000,0000,,‎好姑娘\N{\rE}Good girl. Good girl. Okay.{\r}
+Dialogue: 0,0:11:27.25,0:11:33.04,Default,,0000,0000,0000,,‎因为她爱这孩子 希望她不要悲伤\N{\rE}Because she loved the child and wished to spare her grief.{\r}
+Dialogue: 0,0:11:34.83,0:11:39.16,Default,,0000,0000,0000,,‎因为这孩子就像 ‎是她秘密的一面 却暴露了\N{\rE}Because the child was her own secret self, exposed.{\r}
+Dialogue: 0,0:11:46.58,0:11:51.08,Default,,0000,0000,0000,,‎因为这孩子的父亲不希望她出生\N{\rE}Because the very father of the child had wished it not to be born.{\r}
+Dialogue: 0,0:11:54.87,0:11:58.75,Default,,0000,0000,0000,,‎因为他给了她钱 把钞票撒在床上\N{\rE}Because he had given her money, scattering bills across the bed.{\r}
+Dialogue: 0,0:12:01.66,0:12:04.25,Default,,0000,0000,0000,,‎因为他告诉她 他从不爱她\N{\rE}Because he told her he had never loved her.{\r}
+Dialogue: 0,0:12:05.20,0:12:06.75,Default,,0000,0000,0000,,‎她误会了\N{\rE}She had misunderstood.{\r}
+Dialogue: 0,0:12:09.16,0:12:11.50,Default,,0000,0000,0000,,‎因为在她怀孕前 他爱过她\N{\rE}Because before the pregnancy, he had loved her.{\r}
+Dialogue: 0,0:12:14.33,0:12:16.00,Default,,0000,0000,0000,,‎有了孩子之后 他就不爱了\N{\rE}And after, he had not.{\r}
+Dialogue: 0,0:12:20.29,0:12:23.16,Default,,0000,0000,0000,,‎因为他本来会娶她 她当时很确定\N{\rE}Because he would have married her. She was certain.{\r}
+Dialogue: 0,0:12:26.25,0:12:30.16,Default,,0000,0000,0000,,‎因为没人会疼爱深受诅咒的孩子\N{\rE}Because no one could love a child so accursed.{\r}
+Dialogue: 0,0:12:31.29,0:12:32.54,Default,,0000,0000,0000,,‎是因为你！\N{\rE}It's because of you!{\r}
+Dialogue: 0,0:12:33.54,0:12:37.25,Default,,0000,0000,0000,,‎因为你 他离开了！他不想要你！\N{\rE}You're the reason he went away! He didn't want you!{\r}
+Dialogue: 0,0:12:45.75,0:12:51.54,Default,,0000,0000,0000,,‎救命啊！帮帮我们！\N{\rE}Help! Help us! --Help! Help us!{\r}
+Dialogue: 0,0:12:54.25,0:12:55.70,Default,,0000,0000,0000,,‎救命啊 我妈妈病了！\N{\rE}Help, my mother's sick!{\r}
+Dialogue: 0,0:12:55.79,0:12:57.75,Default,,0000,0000,0000,,‎-诺玛简？ ‎-帮帮我妈妈吧\N{\rE}-Norma Jeane? -Help my mother.{\r}
+Dialogue: 0,0:12:57.83,0:13:00.12,Default,,0000,0000,0000,,‎克莱夫 带她进来 拿毛巾给她盖住\N{\rE}Clive, bring her in. Cover her.{\r}
+Dialogue: 0,0:13:00.20,0:13:01.70,Default,,0000,0000,0000,,‎-来这儿 ‎-来这儿\N{\rE}Come here.{\r}
+Dialogue: 0,0:13:01.79,0:13:03.29,Default,,0000,0000,0000,,‎来这儿 诺玛简\N{\rE}Come here, Norma Jeane.{\r}
+Dialogue: 0,0:13:03.37,0:13:04.66,Default,,0000,0000,0000,,‎你妈妈出事了吗？\N{\rE}-There's something wrong with your mother?{\r}
+Dialogue: 0,0:13:05.66,0:13:06.87,Default,,0000,0000,0000,,她需要帮助\N{\rE}-She needs help.{\r}
+Dialogue: 0,0:13:08.00,0:13:08.95,Default,,0000,0000,0000,,‎她需要帮助？\N{\rE}-She needs help?{\r}
+Dialogue: 0,0:13:16.70,0:13:19.08,Default,,0000,0000,0000,,‎你和我进来 诺玛简\N{\rE}You come inside with me, Norma Jeane.{\r}
+Dialogue: 0,0:13:19.16,0:13:22.66,Default,,0000,0000,0000,,‎我们在这儿等 好吗？\N{\rE}-You wait right here. Okay?{\r}
+Dialogue: 0,0:13:22.75,0:13:24.08,Default,,0000,0000,0000,,‎跟我在一起\N{\rE}You just stay with me.{\r}
+Dialogue: 0,0:13:24.16,0:13:26.50,Default,,0000,0000,0000,,‎你没事了 你现在没事了\N{\rE}You're okay. You're okay now.{\r}
+Dialogue: 0,0:13:27.50,0:13:28.87,Default,,0000,0000,0000,,‎你安全了 诺玛简\N{\rE}You're safe, Norma Jeane.{\r}
+Dialogue: 0,0:13:35.20,0:13:38.29,Default,,0000,0000,0000,,‎你妈妈现在好多了 ‎可以见你了 诺玛简\N{\rE}Your mama's well enough to see you now, Norma Jeane.{\r}
+Dialogue: 0,0:13:41.20,0:13:42.91,Default,,0000,0000,0000,,‎你妈妈一直在问你的事\N{\rE}Your mama's been askin' for you.{\r}
+Dialogue: 0,0:13:45.00,0:13:47.37,Default,,0000,0000,0000,,‎医生说她状态很好 可以让你去看她\N{\rE}The doctors say she's well enough for you to visit her.{\r}
+Dialogue: 0,0:13:48.54,0:13:49.45,Default,,0000,0000,0000,,‎我们去吗？\N{\rE}Shall we go?{\r}
+Dialogue: 0,0:13:54.12,0:13:55.12,Default,,0000,0000,0000,,‎她在哪儿？\N{\rE}Where is she?{\r}
+Dialogue: 0,0:13:59.33,0:14:00.83,Default,,0000,0000,0000,,‎她在诺尔沃克的医院里\N{\rE}She's in the hospital in Norwalk.{\r}
+Dialogue: 0,0:14:04.75,0:14:06.12,Default,,0000,0000,0000,,‎她现在好点了吗？\NSh… she's better now?
+Dialogue: 0,0:14:08.62,0:14:10.70,Default,,0000,0000,0000,,‎她现在还不错 可以让你探望她了\N{\rE}Well, she's well enough for you to visit with her.{\r}
+Dialogue: 0,0:14:23.58,0:14:25.83,Default,,0000,0000,0000,,‎克莱夫叔叔会开车带我们去\N{\rE}Uncle Clive is gonna take us in the car.{\r}
+Dialogue: 0,0:14:26.75,0:14:29.33,Default,,0000,0000,0000,,‎我会替你把一些东西放在手提箱里\N{\rE}And I'm gonna put a few things in a suitcase for you.{\r}
+Dialogue: 0,0:14:30.25,0:14:31.75,Default,,0000,0000,0000,,‎你什么都不用做\N{\rE}You don't have to do anything.{\r}
+Dialogue: 0,0:14:34.45,0:14:35.29,Default,,0000,0000,0000,,‎好的\N{\rE}Okay.{\r}
+Dialogue: 0,0:15:06.45,0:15:09.91,Default,,0000,0000,0000,,‎（洛杉矶孤儿之家协会）
+Dialogue: 0,0:15:48.29,0:15:50.04,Default,,0000,0000,0000,,‎请原谅我 诺玛简\N{\rE}Please forgive me, Norma Jeane.{\r}
+Dialogue: 0,0:15:51.50,0:15:53.62,Default,,0000,0000,0000,,‎现在你没有别的地方可去了\N{\rE}There's no other place for you right now.{\r}
+Dialogue: 0,0:15:54.50,0:15:55.58,Default,,0000,0000,0000,,‎你妈妈病了\N{\rE}Your mother is sick.{\r}
+Dialogue: 0,0:15:56.62,0:15:59.00,Default,,0000,0000,0000,,‎医生说她病得很严重\N{\rE}The doctors say that she is very sick.{\r}
+Dialogue: 0,0:16:00.50,0:16:01.87,Default,,0000,0000,0000,,‎她想伤害你\N{\rE}She tried to hurt you.{\r}
+Dialogue: 0,0:16:03.37,0:16:05.50,Default,,0000,0000,0000,,‎她现在不能做你的母亲\N{\rE}She can't be a mother to you just now.{\r}
+Dialogue: 0,0:16:06.87,0:16:09.75,Default,,0000,0000,0000,,‎我现在也不能做你的母亲\N{\rE}I can't be a mother to you just now.{\r}
+Dialogue: 0,0:16:12.25,0:16:13.91,Default,,0000,0000,0000,,‎但我不是孤儿\N{\rE}But I'm not an orphan.{\r}
+Dialogue: 0,0:16:14.54,0:16:17.54,Default,,0000,0000,0000,,‎我有母亲 也有父亲\N{\rE}I have a mother, and I have a father.{\r}
+Dialogue: 0,0:16:18.45,0:16:19.79,Default,,0000,0000,0000,,‎我不是孤儿\N{\rE}I'm not an orphan.{\r}
+Dialogue: 0,0:16:20.54,0:16:24.12,Default,,0000,0000,0000,,‎我父亲很快就会回家 他保证过的\N{\rE}My father is coming home soon. He promised.{\r}
+Dialogue: 0,0:16:26.37,0:16:30.50,Default,,0000,0000,0000,,‎来吧 诺玛简 快来 你乖乖的\N{\rE}Come on now, Norma Jeane. Come on. Be a good girl. Be a good girl.{\r}
+Dialogue: 0,0:16:30.58,0:16:31.41,Default,,0000,0000,0000,,‎不！\N{\rE}No!{\r}
+Dialogue: 0,0:16:33.58,0:16:35.54,Default,,0000,0000,0000,,‎拜托 诺玛简 拜托你\N{\rE}Please, Norma Jeane? Please?{\r}
+Dialogue: 0,0:16:35.62,0:16:37.12,Default,,0000,0000,0000,,‎-不要！ ‎-别闹了！\N{\rE}-No! I'm not an orphan! -Stop it! Come on!{\r}
+Dialogue: 0,0:16:37.20,0:16:38.70,Default,,0000,0000,0000,,‎-我不是孤儿！ ‎-来吧！
+Dialogue: 0,0:16:38.79,0:16:40.66,Default,,0000,0000,0000,,‎来吧！做个好女孩\N{\rE}Come on! Please be a good girl.{\r}
+Dialogue: 0,0:16:40.75,0:16:42.83,Default,,0000,0000,0000,,‎我不是孤儿！\N{\rE}I am not an orphan!{\r}
+Dialogue: 0,0:16:43.66,0:16:46.29,Default,,0000,0000,0000,,‎克莱夫 至少把行李箱拿进去 ‎你这该死的！\N{\rE}At least bring in the suitcases, Clive, damn you!{\r}
+Dialogue: 0,0:16:46.37,0:16:50.20,Default,,0000,0000,0000,,‎我爸爸很快就会回来！他保证过的！\N{\rE}My father is coming back soon! He promised!{\r}
+Dialogue: 0,0:16:50.29,0:16:51.83,Default,,0000,0000,0000,,‎不 停！\N{\rE}No. Stop it!{\r}
+Dialogue: 0,0:16:51.91,0:16:53.25,Default,,0000,0000,0000,,‎别哭了！停！\N{\rE}Stop crying! Stop!{\r}
+Dialogue: 0,0:16:53.33,0:16:56.66,Default,,0000,0000,0000,,‎每个孩子都需要爸爸
+Dialogue: 0,0:16:56.75,0:16:59.58,Default,,0000,0000,0000,,‎让她生活无忧
+Dialogue: 0,0:17:01.75,0:17:05.75,Default,,0000,0000,0000,,‎每个孩子都需要爸爸
+Dialogue: 0,0:17:05.83,0:17:09.95,Default,,0000,0000,0000,,‎但我的爸爸在哪？
+Dialogue: 0,0:17:10.04,0:17:14.25,Default,,0000,0000,0000,,‎无论富贵贫穷 我不在乎是谁
+Dialogue: 0,0:17:14.33,0:17:19.41,Default,,0000,0000,0000,,‎如果他没有一百万 五十万也可
+Dialogue: 0,0:17:19.50,0:17:23.20,Default,,0000,0000,0000,,‎每个孩子都需要爸爸
+Dialogue: 0,0:17:23.29,0:17:26.66,Default,,0000,0000,0000,,‎我的爸爸会是你吗？
+Dialogue: 0,0:17:28.70,0:17:31.45,Default,,0000,0000,0000,,‎这光圈是你的\N{\rE}The circle of light is yours.{\r}
+Dialogue: 0,0:17:32.33,0:17:35.29,Default,,0000,0000,0000,,‎这是个光圈 也象征着关注\N{\rE}It's a circle of light and attention.{\r}
+Dialogue: 0,0:17:39.33,0:17:41.50,Default,,0000,0000,0000,,‎你把自己置于圈中\N{\rE}You enclose yourself in the circle.{\r}
+Dialogue: 0,0:17:44.58,0:17:47.54,Default,,0000,0000,0000,,‎无论你走到哪儿都带着它\N{\rE}You carry it with you wherever you go.{\r}
+Dialogue: 0,0:17:48.45,0:17:51.87,Default,,0000,0000,0000,,‎你要想象在你真实的肉体旁边的\N{\rE}You're going to imagine that next to your own real body,{\r}
+Dialogue: 0,0:17:51.95,0:17:54.75,Default,,0000,0000,0000,,‎是你用自己的头脑创造的\N{\rE}is the imaginary body of your character,{\r}
+Dialogue: 0,0:17:54.83,0:17:56.62,Default,,0000,0000,0000,,‎假想角色的身体\N{\rE}whom you've created with your mind.{\r}
+Dialogue: 0,0:17:57.66,0:18:01.33,Default,,0000,0000,0000,,‎每个孩子都需要爸爸
+Dialogue: 0,0:18:01.41,0:18:05.45,Default,,0000,0000,0000,,‎他银发苍苍
+Dialogue: 0,0:18:06.37,0:18:09.79,Default,,0000,0000,0000,,‎爸爸 我不知道该穿什么\N{\rE}Daddy, I couldn't imagine what to wear.{\r}
+Dialogue: 0,0:18:09.87,0:18:11.62,Default,,0000,0000,0000,,‎你看起来很棒\N{\rE}You look fine.{\r}
+Dialogue: 0,0:18:12.25,0:18:13.25,Default,,0000,0000,0000,,‎你确定吗？\N{\rE}Are you sure?{\r}
+Dialogue: 0,0:18:14.50,0:18:16.20,Default,,0000,0000,0000,,‎我很焦虑\N{\rE}I mean, I'm so jumpy.{\r}
+Dialogue: 0,0:18:16.29,0:18:19.41,Default,,0000,0000,0000,,‎5点的约会别迟到了\N{\rE}Just don't be late for your appointment at 5:00.{\r}
+Dialogue: 0,0:18:19.50,0:18:23.00,Default,,0000,0000,0000,,‎说得好像我会迟到一样 天啊\N{\rE}As if I would be late. My God.{\r}
+Dialogue: 0,0:18:25.37,0:18:27.50,Default,,0000,0000,0000,,‎你不明白吗 诺玛简？\N{\rE}Don't you see, Norma Jeane?{\r}
+Dialogue: 0,0:18:27.58,0:18:30.75,Default,,0000,0000,0000,,‎未来就在你手中\N{\rE}The future is in the palm of your hand.{\r}
+Dialogue: 0,0:18:32.00,0:18:35.95,Default,,0000,0000,0000,,‎我是玛丽莲梦露 来见扎先生\N{\rE}Marilyn Monroe for Mr. Z?{\r}
+Dialogue: 0,0:18:43.08,0:18:48.12,Default,,0000,0000,0000,,‎“想象一下 知道每晚\N{\rE}"Imagine, to know every night{\r}
+Dialogue: 0,0:18:48.20,0:18:50.87,Default,,0000,0000,0000,,‎有众多不同的人爱着你”\N{\rE}that differing hundreds of people love you."{\r}
+Dialogue: 0,0:18:51.58,0:18:52.87,Default,,0000,0000,0000,,‎“他们想要你”\N{\rE}"They want you."{\r}
+Dialogue: 0,0:18:53.91,0:18:55.04,Default,,0000,0000,0000,,‎“你属于此”\N{\rE}"You belong."{\r}
+Dialogue: 0,0:18:57.29,0:18:59.75,Default,,0000,0000,0000,,‎“仅此一点就值了”\N{\rE}"Just that alone is worth anything."{\r}
+Dialogue: 0,0:19:22.79,0:19:24.83,Default,,0000,0000,0000,,‎“无论你走到哪儿都带着它”\N{\rE}"You carry it with you wherever you go."{\r}
+Dialogue: 0,0:19:25.79,0:19:27.37,Default,,0000,0000,0000,,‎“这光圈是你的”\N{\rE}"The circle of light is yours."{\r}
+Dialogue: 0,0:19:27.45,0:19:33.04,Default,,0000,0000,0000,,‎每个孩子都需要爸爸 ‎以免她深陷泥潭
+Dialogue: 0,0:19:33.12,0:19:35.12,Default,,0000,0000,0000,,‎（总裁室 - 私人区域）
+Dialogue: 0,0:19:35.91,0:19:39.83,Default,,0000,0000,0000,,‎每个孩子都需要爸爸
+Dialogue: 0,0:19:39.91,0:19:43.33,Default,,0000,0000,0000,,‎护她安全
+Dialogue: 0,0:19:43.41,0:19:47.95,Default,,0000,0000,0000,,‎对 我们感觉就像小红帽
+Dialogue: 0,0:19:48.04,0:19:50.16,Default,,0000,0000,0000,,‎因为大灰狼饥饿难耐…
+Dialogue: 0,0:19:50.25,0:19:51.37,Default,,0000,0000,0000,,‎你不必读台词\N{\rE}You don't have to read.{\r}
+Dialogue: 0,0:19:52.91,0:19:54.20,Default,,0000,0000,0000,,‎我不明白\N{\rE}I don't understand.{\r}
+Dialogue: 0,0:19:55.16,0:19:59.08,Default,,0000,0000,0000,,‎你入选了 你是剧组演员了 ‎他钦点的玛丽莲梦露\N{\rE}You're in. You're cast. If your name is Marilyn Monroe.{\r}
+Dialogue: 0,0:20:01.08,0:20:02.33,Default,,0000,0000,0000,,‎对 是我\N{\rE}Yes, that's me.{\r}
+Dialogue: 0,0:20:03.33,0:20:05.29,Default,,0000,0000,0000,,‎但我不明白\N{\rE}But I don't understand.{\r}
+Dialogue: 0,0:20:06.16,0:20:09.79,Default,,0000,0000,0000,,‎你看见那个人了吗？ ‎那是制作人马克斯费边\N{\rE}Do you see that man? That's Max Fabian, the producer.{\r}
+Dialogue: 0,0:20:09.87,0:20:11.70,Default,,0000,0000,0000,,‎现在去为自己争取权益吧\N{\rE}Now go and do yourself some good.{\r}
+Dialogue: 0,0:20:12.50,0:20:15.08,Default,,0000,0000,0000,,‎他们为什么看起来总是不开心？\N{\rE}Why do they always look like unhappy rabbits?{\r}
+Dialogue: 0,0:20:15.16,0:20:18.41,Default,,0000,0000,0000,,‎因为他们就是不开心 ‎现在去让他开心吧\N{\rE}'Cause that's what they are. Now go and make him happy.{\r}
+Dialogue: 0,0:20:18.50,0:20:23.33,Default,,0000,0000,0000,,‎每个孩子都需要爸爸
+Dialogue: 0,0:20:23.41,0:20:26.91,Default,,0000,0000,0000,,‎我的爸爸会是你吗？
+Dialogue: 0,0:20:27.83,0:20:31.62,Default,,0000,0000,0000,,‎我的爸爸会是你吗？
+Dialogue: 0,0:20:36.04,0:20:39.12,Default,,0000,0000,0000,,‎没事 诺玛简 回过神来吧 诺玛简\N{\rE}It's all right, Norma Jeane. Come back, Norma Jeane.{\r}
+Dialogue: 0,0:20:39.20,0:20:40.83,Default,,0000,0000,0000,,‎回到现实 诺玛简\N{\rE}Come back here, Norma Jeane.{\r}
+Dialogue: 0,0:20:46.37,0:20:49.83,Default,,0000,0000,0000,,‎嘿 没关系\N{\rE}Hey. It's okay.{\r}
+Dialogue: 0,0:20:50.70,0:20:51.70,Default,,0000,0000,0000,,‎没事的\N{\rE}It's okay.{\r}
+Dialogue: 0,0:21:03.75,0:21:04.70,Default,,0000,0000,0000,,‎没关系\N{\rE}It's okay.{\r}
+Dialogue: 0,0:21:18.08,0:21:19.37,Default,,0000,0000,0000,,‎没事的 诺玛简\N{\rE}-It's all right, Norma Jeane.{\r}
+Dialogue: 0,0:21:20.58,0:21:23.50,Default,,0000,0000,0000,,‎嘿 一切都很好\N{\rE}Hey. Everything's all right.{\r}
+Dialogue: 0,0:21:26.54,0:21:31.04,Default,,0000,0000,0000,,‎诺玛简？你刚才在想什么？\N{\rE}Norma Jeane? What were you thinking of?{\r}
+Dialogue: 0,0:21:33.95,0:21:35.25,Default,,0000,0000,0000,,‎我没想什么\N{\rE}I wasn't thinking.{\r}
+Dialogue: 0,0:21:40.87,0:21:41.79,Default,,0000,0000,0000,,‎或许…\NUm, maybe…
+Dialogue: 0,0:21:44.45,0:21:47.08,Default,,0000,0000,0000,,‎我是在回忆？\N…I was remembering?
+Dialogue: 0,0:21:50.16,0:21:52.16,Default,,0000,0000,0000,,‎（试镜 ‎片名-无需敲门》）
+Dialogue: 0,0:21:52.25,0:21:54.04,Default,,0000,0000,0000,,‎（角色-“奈尔” ‎1951年12月6日）
+Dialogue: 0,0:22:08.75,0:22:12.29,Default,,0000,0000,0000,,‎我读了剧本 整个剧本\NI… I read the script, the whole script.
+Dialogue: 0,0:22:13.62,0:22:18.91,Default,,0000,0000,0000,,‎这个故事很奇怪、让人不安\NIt's, um… such a strange, disturbing story.
+Dialogue: 0,0:22:20.12,0:22:23.83,Default,,0000,0000,0000,,‎这个心理不平衡的女人 ‎差点杀害了一个小女孩\N{\rE}This mentally unbalanced woman almost killing a little girl.{\r}
+Dialogue: 0,0:22:25.66,0:22:29.29,Default,,0000,0000,0000,,‎就像陀思妥耶夫斯基的小说 ‎你会同情犯人\N{\rE}Like a novel by Dostoyevsky, where you feel sympathy for the criminal{\r}
+Dialogue: 0,0:22:30.12,0:22:31.87,Default,,0000,0000,0000,,‎不希望看到她受罚\N{\rE}and don't wish to see her punished.{\r}
+Dialogue: 0,0:22:33.83,0:22:36.41,Default,,0000,0000,0000,,‎亲爱的 你读过 ‎陀思妥耶夫斯基的书？\N{\rE}Oh, you've read Dostoyevsky, have you, honey?{\r}
+Dialogue: 0,0:22:38.66,0:22:39.70,Default,,0000,0000,0000,,‎是的\N{\rE}All right.{\r}
+Dialogue: 0,0:22:46.16,0:22:49.04,Default,,0000,0000,0000,,‎好吧 梦露小姐 我们开始吧\NWell, Miss Monroe, let's, uh… let's begin.
+Dialogue: 0,0:23:02.58,0:23:03.58,Default,,0000,0000,0000,,‎梦露小姐？\N{\rE}Miss Monroe?{\r}
+Dialogue: 0,0:23:39.04,0:23:42.04,Default,,0000,0000,0000,,‎你现在回去 回去\N{\rE}You go back now. Go back.{\r}
+Dialogue: 0,0:23:43.08,0:23:44.16,Default,,0000,0000,0000,,‎“她是你的孩子？”\N{\rE}"She yours?"{\r}
+Dialogue: 0,0:23:45.16,0:23:48.50,Default,,0000,0000,0000,,‎不 她不是我的孩子\N{\rE}No. She doesn't belong to me.{\r}
+Dialogue: 0,0:23:50.20,0:23:53.91,Default,,0000,0000,0000,,‎这不是你的房间 你回里面去睡觉\N{\rE}This isn't your room. You go back in there and go to sleep.{\r}
+Dialogue: 0,0:23:54.50,0:23:55.83,Default,,0000,0000,0000,,‎“她在哭”\N{\rE}"She's crying."{\r}
+Dialogue: 0,0:23:57.66,0:23:59.87,Default,,0000,0000,0000,,‎如果你不理他们 他们自然会停\N{\rE}If you don't pay any attention to them, they stop.{\r}
+Dialogue: 0,0:24:04.29,0:24:08.54,Default,,0000,0000,0000,,‎“我觉得我最好离开 ‎免得会有双胞胎从柜子里出来”\N{\rE}"I think I'd better leave before twins pop out of the closet."{\r}
+Dialogue: 0,0:24:14.25,0:24:16.33,Default,,0000,0000,0000,,‎但你现在没有任何离开的理由\N{\rE}But you haven't any reason to leave now.{\r}
+Dialogue: 0,0:24:19.58,0:24:21.50,Default,,0000,0000,0000,,‎“当然有 我想走”\N{\rE}"Sure, I have. I want to."{\r}
+Dialogue: 0,0:24:24.91,0:24:26.12,Default,,0000,0000,0000,,‎我跟你走\N{\rE}I'll go with you.{\r}
+Dialogue: 0,0:24:27.54,0:24:30.83,Default,,0000,0000,0000,,‎-我们去跳舞吧 ‎-“你有什么毛病？”\N{\rE}-Let's go dancing. -"What's the matter with you?"{\r}
+Dialogue: 0,0:24:31.79,0:24:33.91,Default,,0000,0000,0000,,‎“你应该留在这里照顾那孩子”\N{\rE}"You're supposed to be here with that kid."{\r}
+Dialogue: 0,0:24:36.29,0:24:37.29,Default,,0000,0000,0000,,‎那留下来吧\N{\rE}Then stay.{\r}
+Dialogue: 0,0:24:39.29,0:24:41.08,Default,,0000,0000,0000,,‎她再也不会烦你了\N{\rE}She won't bother you anymore.{\r}
+Dialogue: 0,0:24:42.41,0:24:43.58,Default,,0000,0000,0000,,‎“是你在烦我\N{\rE}"You bother me."{\r}
+Dialogue: 0,0:24:44.58,0:24:45.95,Default,,0000,0000,0000,,‎我搞不懂你”\N{\rE}"I can't figure you out."{\r}
+Dialogue: 0,0:24:54.83,0:24:56.66,Default,,0000,0000,0000,,‎我会按照你的想法改变自己\N{\rE}I'll be any way you want me to be.{\r}
+Dialogue: 0,0:24:57.95,0:25:02.25,Default,,0000,0000,0000,,‎“为什么？为什么非要跟我在一起？”\N{\rE}"Why? Why is it so important?"{\r}
+Dialogue: 0,0:25:02.33,0:25:03.62,Default,,0000,0000,0000,,‎因为…\NBecause…
+Dialogue: 0,0:25:05.91,0:25:08.54,Default,,0000,0000,0000,,‎我们注定要在一起 菲利普\N{\rE}I belong with you, Philip.{\r}
+Dialogue: 0,0:25:12.95,0:25:15.08,Default,,0000,0000,0000,,‎我从没想过你会回来\N{\rE}I didn't think you were ever coming back.{\r}
+Dialogue: 0,0:25:17.12,0:25:18.25,Default,,0000,0000,0000,,‎“我是杰德 奈尔\N{\rE}"I'm Jed, Nell."{\r}
+Dialogue: 0,0:25:20.12,0:25:21.75,Default,,0000,0000,0000,,‎我不是你想的那个人\N{\rE}"I'm not the man you think I am."{\r}
+Dialogue: 0,0:25:23.66,0:25:24.50,Default,,0000,0000,0000,,‎记得吗？\N{\rE}"Remember?"{\r}
+Dialogue: 0,0:25:25.91,0:25:27.16,Default,,0000,0000,0000,,‎你记得菲利普吗？”\N{\rE}"Remember Philip?"{\r}
+Dialogue: 0,0:25:33.12,0:25:34.00,Default,,0000,0000,0000,,‎记得\N{\rE}Yes.{\r}
+Dialogue: 0,0:25:36.41,0:25:40.70,Default,,0000,0000,0000,,‎“现在回想一下\N{\rE}"Now, think back."{\r}
+Dialogue: 0,0:25:45.37,0:25:46.37,Default,,0000,0000,0000,,‎想想\N{\rE}"Think."{\r}
+Dialogue: 0,0:25:49.58,0:25:52.66,Default,,0000,0000,0000,,‎他长什么样？”\N{\rE}"What did he look like?"{\r}
+Dialogue: 0,0:26:00.12,0:26:01.12,Default,,0000,0000,0000,,‎他有…\NHe had…
+Dialogue: 0,0:26:03.91,0:26:05.04,Default,,0000,0000,0000,,‎棕色的眼睛\N{\rE}brown eyes.{\r}
+Dialogue: 0,0:26:09.04,0:26:10.75,Default,,0000,0000,0000,,‎乌黑锃亮的头发\N{\rE}Shiny black hair.{\r}
+Dialogue: 0,0:26:21.08,0:26:24.75,Default,,0000,0000,0000,,‎“我不是菲利普 我是杰德 奈尔\N{\rE}"I'm not Philip. I'm Jed, Nell."{\r}
+Dialogue: 0,0:26:26.29,0:26:27.75,Default,,0000,0000,0000,,‎我是杰德”\N{\rE}"I'm Jed."{\r}
+Dialogue: 0,0:26:31.16,0:26:32.66,Default,,0000,0000,0000,,‎人的名字…\NPeople's names…
+Dialogue: 0,0:26:35.37,0:26:36.66,Default,,0000,0000,0000,,‎你不是他\N{\rE}You're not him.{\r}
+Dialogue: 0,0:26:41.66,0:26:42.91,Default,,0000,0000,0000,,‎你从来都不是\N{\rE}You never were.{\r}
+Dialogue: 0,0:26:55.16,0:26:56.66,Default,,0000,0000,0000,,‎谢谢你 梦露小姐\N{\rE}Thank you, Miss Monroe.{\r}
+Dialogue: 0,0:27:06.66,0:27:07.66,Default,,0000,0000,0000,,‎拜托\N{\rE}Please.{\r}
+Dialogue: 0,0:27:09.54,0:27:10.70,Default,,0000,0000,0000,,‎我能再试试吗？\N{\rE}Can I try again?{\r}
+Dialogue: 0,0:27:16.12,0:27:19.41,Default,,0000,0000,0000,,‎我知道我能演奈尔\NI… I know I could be Nell.
+Dialogue: 0,0:27:20.91,0:27:22.25,Default,,0000,0000,0000,,‎我觉得我就是奈尔\N{\rE}I think I am Nell.{\r}
+Dialogue: 0,0:27:23.41,0:27:24.83,Default,,0000,0000,0000,,‎她会梦游\N{\rE}She's a sleepwalker.{\r}
+Dialogue: 0,0:27:25.62,0:27:29.58,Default,,0000,0000,0000,,‎她看见的不是他 ‎而是她死去的未婚夫\N{\rE}She doesn't see him. She sees her dead fiancé.{\r}
+Dialogue: 0,0:27:29.66,0:27:31.25,Default,,0000,0000,0000,,‎她陷入了幻想\N{\rE}She's trapped in delusion.{\r}
+Dialogue: 0,0:27:33.04,0:27:35.54,Default,,0000,0000,0000,,‎但梦在哪里结束 ‎疯狂又在哪里开始？\N{\rE}But where does dreaming end and madness begin?{\r}
+Dialogue: 0,0:27:37.62,0:27:41.79,Default,,0000,0000,0000,,‎总之 爱不都是基于幻想吗？\N{\rE}Anyway, isn't all love based on delusion?{\r}
+Dialogue: 0,0:27:44.91,0:27:46.12,Default,,0000,0000,0000,,‎这太棒了…\NIt was beautiful…
+Dialogue: 0,0:27:48.45,0:27:51.87,Default,,0000,0000,0000,,‎-我很想… ‎-谢谢你 约翰 谢谢你们 先生们\N-I really wanted… -Thank you, John. Thank you, gentlemen.
+Dialogue: 0,0:27:51.95,0:27:54.54,Default,,0000,0000,0000,,‎-那… ‎-我们会等你们的消息\NThat was, uh…We'll hear from you.
+Dialogue: 0,0:27:54.62,0:27:55.75,Default,,0000,0000,0000,,‎很糟吧？\N…pretty bad, wasn't it?
+Dialogue: 0,0:27:59.62,0:28:00.45,Default,,0000,0000,0000,,‎就像…\N{\rE}Like, um,{\r}
+Dialogue: 0,0:28:02.16,0:28:04.25,Default,,0000,0000,0000,,‎是在看一个精神病人 可以这么说\N{\rE}watching a mental patient, maybe.{\r}
+Dialogue: 0,0:28:05.04,0:28:07.66,Default,,0000,0000,0000,,‎不是在演 没有技巧\N{\rE}Not acting. No technique.{\r}
+Dialogue: 0,0:28:07.75,0:28:11.00,Default,,0000,0000,0000,,‎像那样的人之所以会迷上表演 ‎原因显而易见\N{\rE}People like that, you can see why they're drawn to acting.{\r}
+Dialogue: 0,0:28:11.08,0:28:13.87,Default,,0000,0000,0000,,‎因为演员在饰演一个角色时 ‎能清楚地知道自己是谁\N{\rE}Because the actor in her role always knows who she is.{\r}
+Dialogue: 0,0:28:14.79,0:28:15.95,Default,,0000,0000,0000,,‎你觉得呢 老板？\N{\rE}What do you think, boss?{\r}
+Dialogue: 0,0:28:20.83,0:28:21.79,Default,,0000,0000,0000,,‎天啊\N{\rE}Sweet Jesus.{\r}
+Dialogue: 0,0:28:23.45,0:28:25.16,Default,,0000,0000,0000,,‎看看那个小姑娘的屁股\N{\rE}Look at the ass on that little girl.{\r}
+Dialogue: 0,0:28:31.20,0:28:34.50,Default,,0000,0000,0000,,‎（诺尔沃克州医院）
+Dialogue: 0,0:28:45.08,0:28:47.79,Default,,0000,0000,0000,,‎你确定去探望她不会太伤心吗？\N{\rE}Are you sure a visit with her won't be too upsetting?{\r}
+Dialogue: 0,0:28:48.95,0:28:52.20,Default,,0000,0000,0000,,‎让你妈妈伤心 ‎还是让你伤心 贝克小姐？\N{\rE}Upsetting to your mother or to you, Miss Baker?{\r}
+Dialogue: 0,0:28:58.00,0:29:00.25,Default,,0000,0000,0000,,‎我十年没见我妈妈了\N{\rE}I haven't seen my mother in ten years.{\r}
+Dialogue: 0,0:29:15.62,0:29:17.75,Default,,0000,0000,0000,,‎那是一些更棘手的病人\N{\rE}Those are some of our more troubled patients.{\r}
+Dialogue: 0,0:29:21.20,0:29:22.41,Default,,0000,0000,0000,,‎我们到了\N{\rE}Here we are.{\r}
+Dialogue: 0,0:29:40.04,0:29:41.25,Default,,0000,0000,0000,,‎妈妈\N{\rE}Oh, Mother.{\r}
+Dialogue: 0,0:30:20.41,0:30:21.50,Default,,0000,0000,0000,,‎妈妈？\N{\rE}Mother?{\r}
+Dialogue: 0,0:30:25.83,0:30:29.45,Default,,0000,0000,0000,,‎妈妈 是我 诺玛简\N{\rE}Mother, it's me. It's me, Norma Jeane.{\r}
+Dialogue: 0,0:31:17.58,0:31:19.50,Default,,0000,0000,0000,,‎妈妈 这儿真不错\N{\rE}Mother, it's so nice here.{\r}
+Dialogue: 0,0:31:25.00,0:31:26.37,Default,,0000,0000,0000,,‎这儿还不错吧？\N{\rE}Isn't it nice here?{\r}
+Dialogue: 0,0:31:46.00,0:31:47.29,Default,,0000,0000,0000,,‎你现在暖和点了吗？\N{\rE}Are you warmer now?{\r}
+Dialogue: 0,0:31:49.62,0:31:52.16,Default,,0000,0000,0000,,‎这条围巾 你戴着真漂亮\N{\rE}Oh, this shawl, it's so pretty on you.{\r}
+Dialogue: 0,0:32:13.37,0:32:16.12,Default,,0000,0000,0000,,‎过去这一年真是太让人兴奋了\N{\rE}It's been so exciting this past year.{\r}
+Dialogue: 0,0:32:17.25,0:32:20.29,Default,,0000,0000,0000,,‎太棒了 像童话一样\N{\rE}So wonderful. Like a fairy tale.{\r}
+Dialogue: 0,0:32:22.66,0:32:24.41,Default,,0000,0000,0000,,‎有时候 我都不敢相信\N{\rE}Sometimes, I can't believe it.{\r}
+Dialogue: 0,0:32:32.20,0:32:34.45,Default,,0000,0000,0000,,‎我跟制片厂签约了\N{\rE}I'm under contract at the studio.{\r}
+Dialogue: 0,0:32:35.25,0:32:36.75,Default,,0000,0000,0000,,‎你以前在那儿工作\N{\rE}Where you used to work.{\r}
+Dialogue: 0,0:32:38.37,0:32:40.87,Default,,0000,0000,0000,,‎我拍拍照就能养活自己了\N{\rE}I can make a living just being photographed.{\r}
+Dialogue: 0,0:32:57.45,0:33:00.08,Default,,0000,0000,0000,,‎我想这些照片里 ‎没有诺玛简的影子 对吧？\N{\rE}I guess there isn't any Norma Jeane, is there?{\r}
+Dialogue: 0,0:33:11.66,0:33:12.66,Default,,0000,0000,0000,,‎妈妈？\N{\rE}Mother?{\r}
+Dialogue: 0,0:33:19.25,0:33:22.50,Default,,0000,0000,0000,,‎你说过 我父亲是跟制片厂签了约的\N{\rE}My father was under contract to the studio, you said.{\r}
+Dialogue: 0,0:33:24.75,0:33:26.75,Default,,0000,0000,0000,,‎大约在1925年？\N{\rE}Around 1925?{\r}
+Dialogue: 0,0:33:31.87,0:33:35.75,Default,,0000,0000,0000,,‎我一直在制片厂里偷偷摸摸地 ‎试着在档案中找他的照片…\N{\rE}I've been sneaking around there trying to find his picture in the files--{\r}
+Dialogue: 0,0:33:35.83,0:33:37.16,Default,,0000,0000,0000,,‎我女儿在哪儿？\N{\rE}Where's my daughter?{\r}
+Dialogue: 0,0:33:38.20,0:33:40.00,Default,,0000,0000,0000,,‎他们说我女儿要来\N{\rE}They said my daughter was coming.{\r}
+Dialogue: 0,0:33:41.29,0:33:42.70,Default,,0000,0000,0000,,‎我不认识你 你是谁？\N{\rE}I don't know you. Who are you?{\r}
+Dialogue: 0,0:34:54.62,0:34:56.20,Default,,0000,0000,0000,,‎停\N{\rE}And cut.{\r}
+Dialogue: 0,0:34:58.83,0:35:03.16,Default,,0000,0000,0000,,‎对 割吧 别这么懦弱 割下去\N{\rE}Yes, cut. Don't be a coward. Cut.{\r}
+Dialogue: 0,0:35:03.25,0:35:04.29,Default,,0000,0000,0000,,‎动手啊！\N{\rE}Do it!{\r}
+Dialogue: 0,0:35:21.79,0:35:22.75,Default,,0000,0000,0000,,‎你没事吧？\N{\rE}You all right?{\r}
+Dialogue: 0,0:35:25.25,0:35:26.70,Default,,0000,0000,0000,,‎嘿 来吧\N{\rE}Hey.{\r}
+Dialogue: 0,0:35:27.70,0:35:29.58,Default,,0000,0000,0000,,‎怎么了？你还好吗？\N{\rE}Hey, what's wrong? You okay?{\r}
+Dialogue: 0,0:35:33.00,0:35:36.50,Default,,0000,0000,0000,,‎迪迪 没事 一切尽在掌控中 ‎我们没事 谢谢\N{\rE}Dee-Dee, it's okay. I have it. We're fine, thank you.{\r}
+Dialogue: 0,0:35:38.91,0:35:40.04,Default,,0000,0000,0000,,‎亲爱的\N{\rE}-Oh, dear.{\r}
+Dialogue: 0,0:35:42.25,0:35:44.91,Default,,0000,0000,0000,,‎嘿 没事的 一切都好 谢谢\N{\rE}Hey, that's all right. Everything is okay. Thank you.{\r}
+Dialogue: 0,0:35:45.75,0:35:46.75,Default,,0000,0000,0000,,‎给我们点时间\N{\rE}Give us a second.{\r}
+Dialogue: 0,0:35:50.62,0:35:53.87,Default,,0000,0000,0000,,‎“玛丽莲梦露 ‎冉冉升起的好莱坞新星\N{\rE}Marilyn Monroe, a rising new Hollywood talent{\r}
+Dialogue: 0,0:35:53.95,0:35:57.91,Default,,0000,0000,0000,,‎在这部阴暗得令人心颤的惊悚片中 ‎以突出及多变的表演证明了自己\N{\rE}proves herself a strong dynamic presence in this darkly disturbing thriller.{\r}
+Dialogue: 0,0:35:58.00,0:35:59.83,Default,,0000,0000,0000,,‎由理查德韦德马克领衔主演\N{\rE}Also starring Richard Widmark.{\r}
+Dialogue: 0,0:35:59.91,0:36:05.41,Default,,0000,0000,0000,,‎她演绎的精神失常的年轻保姆 ‎令人不寒而栗…”\N{\rE}Her portrayal of a mentally unbalanced young babysitter is so chillingly convincing--{\r}
+Dialogue: 0,0:36:05.50,0:36:10.87,Default,,0000,0000,0000,,‎西恩先生 在首映上 我频频闭眼\N{\rE}Mr. Shinn, at the premiere, I shut my eyes a lot.{\r}
+Dialogue: 0,0:36:12.08,0:36:14.50,Default,,0000,0000,0000,,‎我不敢相信那个女孩就是我\N{\rE}I couldn't believe that girl was me.{\r}
+Dialogue: 0,0:36:15.25,0:36:18.83,Default,,0000,0000,0000,,‎但每位观众都会觉得那就是我 奈尔\N{\rE}But everyone in the audience would think it was me, Nell.{\r}
+Dialogue: 0,0:36:20.58,0:36:23.95,Default,,0000,0000,0000,,‎稍后在派对上才是玛丽莲\N{\rE}And later at the party, Marilyn.{\r}
+Dialogue: 0,0:36:25.20,0:36:26.58,Default,,0000,0000,0000,,‎你在吃止痛片吗？\N{\rE}Are you on painkillers?{\r}
+Dialogue: 0,0:36:28.70,0:36:30.00,Default,,0000,0000,0000,,‎你来姨妈了？\N{\rE}Is it your period?{\r}
+Dialogue: 0,0:36:33.29,0:36:34.91,Default,,0000,0000,0000,,‎没 没来\N{\rE}No. No, it's not.{\r}
+Dialogue: 0,0:36:36.75,0:36:38.00,Default,,0000,0000,0000,,这关你什么事…\N{\rE}Um, what business of yours--{\r}
+Dialogue: 0,0:36:38.08,0:36:41.70,Default,,0000,0000,0000,,‎亲爱的 下一部电影会很棒的 ‎我向你保证\N{\rE}Sweetheart, the next film is going to be terrific, I promise you.{\r}
+Dialogue: 0,0:36:41.79,0:36:44.16,Default,,0000,0000,0000,,‎比《无需敲门》经典得多\N{\rE}A whole lot classier than Don't Bother,{\r}
+Dialogue: 0,0:36:44.25,0:36:47.95,Default,,0000,0000,0000,,‎我觉得这部要是没有你来演的话 ‎就是个垃圾 但不要引用我的话\N{\rE}which I think is a stagy piece of crap except for you, but don't quote me.{\r}
+Dialogue: 0,0:37:08.83,0:37:14.04,Default,,0000,0000,0000,,‎（洛杉矶演员圈 1952年）
+Dialogue: 0,0:38:13.83,0:38:15.70,Default,,0000,0000,0000,,‎玛丽莲值得拥有更好的\N{\rE}Marilyn deserves better than this.{\r}
+Dialogue: 0,0:38:18.41,0:38:20.16,Default,,0000,0000,0000,,‎玛丽莲会成为明星\N{\rE}Marilyn is gonna be a star.{\r}
+Dialogue: 0,0:38:26.41,0:38:27.66,Default,,0000,0000,0000,,‎这地方…\NThis place…
+Dialogue: 0,0:38:28.95,0:38:30.37,Default,,0000,0000,0000,,‎知道这是什么气味吗？\N{\rE}Know what it smells of?{\r}
+Dialogue: 0,0:38:31.83,0:38:34.50,Default,,0000,0000,0000,,‎沉闷、陈旧的爱液\N{\rE}Dreary old love-paste.{\r}
+Dialogue: 0,0:38:35.75,0:38:39.33,Default,,0000,0000,0000,,‎没有什么比这腐臭的 ‎陈旧的爱液更沉闷的了\N{\rE}Nothing more dreary than rancid old love-paste.{\r}
+Dialogue: 0,0:38:43.33,0:38:45.70,Default,,0000,0000,0000,,‎我们演过色情电影\N{\rE}You know, we've performed in porn films.{\r}
+Dialogue: 0,0:38:47.25,0:38:53.41,Default,,0000,0000,0000,,‎-就为了享受 不是为了钱 ‎-我没嘲笑钱 我从来不会\N{\rE}Just for the hell of it. Not for cash.I didn't sneer at the cash. I never do.{\r}
+Dialogue: 0,0:38:58.20,0:38:59.91,Default,,0000,0000,0000,,‎她是个正经人\N{\rE}-She's a prude.{\r}
+Dialogue: 0,0:39:01.37,0:39:03.70,Default,,0000,0000,0000,,‎全民金色梦幻小姐\N{\rE}Miss Golden Dreams of all people.{\r}
+Dialogue: 0,0:39:12.33,0:39:14.91,Default,,0000,0000,0000,,‎人的身体就是要让别人看见\N{\rE}The human body is meant to be seen.{\r}
+Dialogue: 0,0:39:22.04,0:39:23.62,Default,,0000,0000,0000,,‎让别人爱慕\NAdmired and…
+Dialogue: 0,0:39:25.62,0:39:26.58,Default,,0000,0000,0000,,‎以及渴望\N{\rE}desired.{\r}
+Dialogue: 0,0:39:32.25,0:39:37.16,Default,,0000,0000,0000,,‎不要像丑陋的溃烂伤口一样藏起来\N{\rE}Not hidden away like some ugly festering wound.{\r}
+Dialogue: 0,0:39:38.20,0:39:40.75,Default,,0000,0000,0000,,‎有很多身体应该藏起来\N{\rE}There's plenty of bodies that should be hidden away.{\r}
+Dialogue: 0,0:39:40.83,0:39:43.33,Default,,0000,0000,0000,,‎但是卡西 你的不需要 我的也不用\N{\rE}But not yours, Cassie, and not mine.{\r}
+Dialogue: 0,0:39:44.20,0:39:45.91,Default,,0000,0000,0000,,‎我们的姑娘诺玛的当然也不用\N{\rE}And for sure not our girl Norma's.{\r}
+Dialogue: 0,0:39:48.79,0:39:50.20,Default,,0000,0000,0000,,‎你在干什么？\N{\rE}What are you doing?{\r}
+Dialogue: 0,0:39:52.00,0:39:53.41,Default,,0000,0000,0000,,‎你在看她吗？\N{\rE}Are you looking at her?{\r}
+Dialogue: 0,0:39:58.16,0:39:59.37,Default,,0000,0000,0000,,‎你能看见她吗？\N{\rE}Can you see her?{\r}
+Dialogue: 0,0:40:02.66,0:40:04.75,Default,,0000,0000,0000,,‎我喜欢看镜中的自己\N{\rE}I like to watch myself in the mirror.{\r}
+Dialogue: 0,0:40:06.66,0:40:09.08,Default,,0000,0000,0000,,‎我甚至喜欢看自己上厕所的样子\N{\rE}I like to watch myself on the toilet even.{\r}
+Dialogue: 0,0:40:12.25,0:40:16.20,Default,,0000,0000,0000,,‎在我们家 我的父亲卓别林\N{\rE}In our household, my father, Chaplin,{\r}
+Dialogue: 0,0:40:17.33,0:40:18.79,Default,,0000,0000,0000,,‎是个神奇的人\N{\rE}was all the magic.{\r}
+Dialogue: 0,0:40:20.33,0:40:22.20,Default,,0000,0000,0000,,‎他把所有的目光都吸到他身上\N{\rE}He drew all the light into himself{\r}
+Dialogue: 0,0:40:22.29,0:40:25.04,Default,,0000,0000,0000,,‎直到我的内心除了麻木 一无所有\N{\rE}until there was nothing left inside me but numbness.{\r}
+Dialogue: 0,0:40:26.25,0:40:27.25,Default,,0000,0000,0000,,‎宛如沉睡\N{\rE}Like sleep.{\r}
+Dialogue: 0,0:40:28.95,0:40:31.29,Default,,0000,0000,0000,,‎唯有镜子能让我看见自己\N{\rE}Only in the mirror could I see myself.{\r}
+Dialogue: 0,0:40:33.12,0:40:34.75,Default,,0000,0000,0000,,‎我在镜子里做的一切事情\N{\rE}Anything I did in the mirror,{\r}
+Dialogue: 0,0:40:36.25,0:40:40.12,Default,,0000,0000,0000,,‎我都能听到人潮和他们的欢呼声\N{\rE}I could hear waves and waves of applause.{\r}
+Dialogue: 0,0:40:45.50,0:40:46.70,Default,,0000,0000,0000,,‎看 诺玛简\N{\rE}Look, Norma Jeane.{\r}
+Dialogue: 0,0:40:51.62,0:40:52.83,Default,,0000,0000,0000,,‎她在那儿\N{\rE}There she is.{\r}
+Dialogue: 0,0:40:54.83,0:40:56.04,Default,,0000,0000,0000,,‎你的神奇朋友\N{\rE}Your magic friend.{\r}
+Dialogue: 0,0:42:03.79,0:42:05.54,Default,,0000,0000,0000,,‎你在等我们吗？\N{\rE}Were you waiting for us?{\r}
+Dialogue: 0,0:42:08.66,0:42:09.79,Default,,0000,0000,0000,,‎诺玛？\N{\rE}Norma?{\r}
+Dialogue: 0,0:42:13.41,0:42:14.25,Default,,0000,0000,0000,,‎是的\N{\rE}Yes.{\r}
+Dialogue: 0,0:42:16.08,0:42:17.41,Default,,0000,0000,0000,,‎你渴望我们吗？\N{\rE}Were you starved for us?{\r}
+Dialogue: 0,0:42:19.29,0:42:20.29,Default,,0000,0000,0000,,‎对\N{\rE}Yes.{\r}
+Dialogue: 0,0:42:22.25,0:42:24.41,Default,,0000,0000,0000,,‎但别对我们太好\N{\rE}But don't be nice to us.{\r}
+Dialogue: 0,0:42:26.70,0:42:29.16,Default,,0000,0000,0000,,‎对 就像喂眼镜蛇一样\N{\rE}Yeah. Like feeding a cobra.{\r}
+Dialogue: 0,0:42:29.87,0:42:32.20,Default,,0000,0000,0000,,‎我对自己会避之唯恐不及\N{\rE}I'd use a ten-foot stick on me, myself.{\r}
+Dialogue: 0,0:42:40.20,0:42:42.83,Default,,0000,0000,0000,,‎带上我
+Dialogue: 0,0:42:42.91,0:42:45.41,Default,,0000,0000,0000,,‎让我兴奋
+Dialogue: 0,0:42:45.50,0:42:48.79,Default,,0000,0000,0000,,‎带上我
+Dialogue: 0,0:42:48.87,0:42:53.37,Default,,0000,0000,0000,,‎就在此刻 让我兴奋
+Dialogue: 0,0:42:57.41,0:43:00.54,Default,,0000,0000,0000,,‎（汹涌澎湃的情感…）
+Dialogue: 0,0:43:01.50,0:43:05.33,Default,,0000,0000,0000,,‎（甚至连天性都无法控制！）
+Dialogue: 0,0:43:05.41,0:43:10.04,Default,,0000,0000,0000,,‎带上我 把我抱在怀里…
+Dialogue: 0,0:43:10.58,0:43:13.62,Default,,0000,0000,0000,,‎她歌唱爱情 正如她为爱而活\N{\rE}She sang of love just as she lived for love.{\r}
+Dialogue: 0,0:43:13.70,0:43:17.95,Default,,0000,0000,0000,,‎她像罗蕾莱女妖一样 ‎不断引诱着男人走向永恒的毁灭\N{\rE}Like a Lorelei, flaunting her charms as she lured men on and on{\r}
+Dialogue: 0,0:43:18.04,0:43:19.87,Default,,0000,0000,0000,,‎炫耀她的魅力\N{\rE}to their eternal destruction.{\r}
+Dialogue: 0,0:43:21.20,0:43:24.37,Default,,0000,0000,0000,,‎玛丽莲梦露一跃冲上了演艺新高度\N{\rE}It's Marilyn Monroe, skyrocketing to new dramatic heights.{\r}
+Dialogue: 0,0:43:24.45,0:43:25.37,Default,,0000,0000,0000,,‎（致命诱惑…）
+Dialogue: 0,0:43:25.45,0:43:27.54,Default,,0000,0000,0000,,‎当一个男人将可爱的她拥入怀中\N{\rE}When a man took her loveliness in his arms,{\r}
+Dialogue: 0,0:43:27.62,0:43:28.91,Default,,0000,0000,0000,,‎他的性命就握在她的手中\N{\rE}he took his life in his hands.{\r}
+Dialogue: 0,0:43:29.00,0:43:31.12,Default,,0000,0000,0000,,‎你闻着有种廉价的感觉 ‎我知道那意味着什么\N{\rE}You smell like a dime store. I know what that means.{\r}
+Dialogue: 0,0:43:31.70,0:43:33.83,Default,,0000,0000,0000,,‎对 我在约会\N{\rE}Sure, I'm meeting somebody.{\r}
+Dialogue: 0,0:43:33.91,0:43:36.45,Default,,0000,0000,0000,,‎随便谁都行 只要他是个男人\N{\rE}Just anybody handy, as long as he's a man.{\r}
+Dialogue: 0,0:43:36.54,0:43:38.66,Default,,0000,0000,0000,,‎约瑟夫克顿无可救药地迷恋她\N{\rE}Joseph Cotten, helpless in her siren spell.{\r}
+Dialogue: 0,0:43:38.75,0:43:40.58,Default,,0000,0000,0000,,‎那不是我们的诺玛\N{\rE}That is not our Norma.{\r}
+Dialogue: 0,0:43:41.95,0:43:43.87,Default,,0000,0000,0000,,‎那不是我们的小鱼儿\N{\rE}That's not our little Fishie.{\r}
+Dialogue: 0,0:43:43.95,0:43:47.91,Default,,0000,0000,0000,,‎但她永远都不会 ‎彻底属于他或任何男人\N{\rE}But she could never be his nor any man's completely.{\r}
+Dialogue: 0,0:43:48.00,0:43:49.87,Default,,0000,0000,0000,,‎这个念头让他发疯\N{\rE}And that thought whipped him into a frenzy{\r}
+Dialogue: 0,0:43:49.95,0:43:53.04,Default,,0000,0000,0000,,‎这让荧幕一阵轰鸣 充满悬念\N{\rE}that makes the screen thunder with unparalleled suspense.{\r}
+Dialogue: 0,0:43:56.41,0:44:03.41,Default,,0000,0000,0000,,‎（激情可以把人带到世界之巅！）
+Dialogue: 0,0:44:03.50,0:44:05.41,Default,,0000,0000,0000,,‎（也可让人坠入谷底！）
+Dialogue: 0,0:44:11.79,0:44:15.04,Default,,0000,0000,0000,,‎（尼亚加拉和玛丽莲梦露）
+Dialogue: 0,0:44:15.12,0:44:19.12,Default,,0000,0000,0000,,‎（全世界最引人入胜的两个景致！）
+Dialogue: 0,0:44:22.91,0:44:24.91,Default,,0000,0000,0000,,‎我猜她很美\N{\rE}She is pretty, I guess.{\r}
+Dialogue: 0,0:44:25.00,0:44:27.62,Default,,0000,0000,0000,,‎但那不是我 对吗？\N{\rE}But it isn't me, is it?{\r}
+Dialogue: 0,0:44:31.79,0:44:33.50,Default,,0000,0000,0000,,‎（《真实故事》）
+Dialogue: 0,0:44:36.91,0:44:38.62,Default,,0000,0000,0000,,‎等人们发现的时候怎么办？\N{\rE}How about when people find out?{\r}
+Dialogue: 0,0:44:39.50,0:44:42.33,Default,,0000,0000,0000,,‎宝贝 我们发现了 但我们仍然爱你\N{\rE}Hell, baby, we found out, and we still love you.{\r}
+Dialogue: 0,0:44:46.79,0:44:49.91,Default,,0000,0000,0000,,‎我只是…我希望能躲在你们的怀抱里\NI just… I wish I could just hide in your arms.
+Dialogue: 0,0:44:50.87,0:44:52.91,Default,,0000,0000,0000,,‎永远在你们怀里\N{\rE}Forever and ever in your arms.{\r}
+Dialogue: 0,0:44:54.58,0:44:56.29,Default,,0000,0000,0000,,‎但你不是认真的 诺玛\N{\rE}But you don't mean that, Norma.{\r}
+Dialogue: 0,0:44:57.25,0:44:59.04,Default,,0000,0000,0000,,‎女演员需要被人看到\N{\rE}An actress wants to be seen.{\r}
+Dialogue: 0,0:45:00.54,0:45:04.16,Default,,0000,0000,0000,,‎女演员需要被众多人喜爱\N{\rE}An actress wants to be loved by a multitude of people.{\r}
+Dialogue: 0,0:45:04.25,0:45:07.79,Default,,0000,0000,0000,,‎不 我真正想要的是你\N{\rE}No. What I really want is you.{\r}
+Dialogue: 0,0:45:10.79,0:45:12.00,Default,,0000,0000,0000,,‎你太贴心了\N{\rE}You're so sweet.{\r}
+Dialogue: 0,0:45:14.08,0:45:16.70,Default,,0000,0000,0000,,‎我讨厌这照片 我看起来像个混蛋\N{\rE}I hate this one. I look like an asshole.{\r}
+Dialogue: 0,0:45:16.79,0:45:17.62,Default,,0000,0000,0000,,‎（《机密》）
+Dialogue: 0,0:45:17.70,0:45:20.08,Default,,0000,0000,0000,,‎我的嘴巴张开 气喘吁吁的样子\N{\rE}With my mouth open, like I'm panting.{\r}
+Dialogue: 0,0:45:25.87,0:45:28.95,Default,,0000,0000,0000,,‎“年轻的花花公子小查理卓别林\N{\rE}"Young men-about-town, Charlie Chaplin Jr.{\r}
+Dialogue: 0,0:45:29.58,0:45:32.16,Default,,0000,0000,0000,,‎和小爱德华G罗宾逊\N{\rE}and Edward G. Robinson Jr."{\r}
+Dialogue: 0,0:45:34.00,0:45:37.66,Default,,0000,0000,0000,,‎以及金发性感女郎玛丽莲梦露\N{\rE}"And blonde sexpot, Marilyn Monroe."{\r}
+Dialogue: 0,0:45:38.16,0:45:39.08,Default,,0000,0000,0000,,‎三人行”\N{\rE}"A threesome."{\r}
+Dialogue: 0,0:45:40.58,0:45:41.83,Default,,0000,0000,0000,,‎多粗俗啊\N{\rE}How vulgar.{\r}
+Dialogue: 0,0:45:44.00,0:45:45.20,Default,,0000,0000,0000,,‎“性感女郎”\N{\rE}"A sexpot."{\r}
+Dialogue: 0,0:45:46.87,0:45:48.41,Default,,0000,0000,0000,,‎“性感女郎”是什么？\N{\rE}What is a "sexpot"?{\r}
+Dialogue: 0,0:45:49.66,0:45:54.00,Default,,0000,0000,0000,,‎这是性感女郎吗？\N{\rE}Is this the sexpot?{\r}
+Dialogue: 0,0:45:55.04,0:45:56.25,Default,,0000,0000,0000,,‎-不！ ‎-或者是这个？\N{\rE}-No! -Or this?{\r}
+Dialogue: 0,0:45:56.33,0:45:58.87,Default,,0000,0000,0000,,‎不！\N{\rE}No! No!{\r}
+Dialogue: 0,0:46:02.41,0:46:03.25,Default,,0000,0000,0000,,‎不！\N{\rE}No!{\r}
+Dialogue: 0,0:46:03.33,0:46:04.95,Default,,0000,0000,0000,,‎（最高机密 ‎梦露卷入三角关系）
+Dialogue: 0,0:46:07.45,0:46:09.75,Default,,0000,0000,0000,,‎我不希望你和他们 ‎在公共场合一起露面\N{\rE}I don't want you seen in public with them, Norma Jeane.{\r}
+Dialogue: 0,0:46:15.12,0:46:16.45,Default,,0000,0000,0000,,‎那私下呢？\N{\rE}And in private?{\r}
+Dialogue: 0,0:46:20.12,0:46:21.37,Default,,0000,0000,0000,,‎私下\NIn private…
+Dialogue: 0,0:46:24.33,0:46:25.79,Default,,0000,0000,0000,,‎也最好不要\N{\rE}take precautions.{\r}
+Dialogue: 0,0:46:25.87,0:46:27.83,Default,,0000,0000,0000,,‎西恩先生 那太残忍了\N{\rE}Oh, Mr. Shinn, that's so cruel.{\r}
+Dialogue: 0,0:46:28.79,0:46:31.91,Default,,0000,0000,0000,,‎粗鲁且残忍 而且你…你知道的\NIt's crude and cruel. And you… you know it.
+Dialogue: 0,0:46:32.66,0:46:36.83,Default,,0000,0000,0000,,‎我只是在为你的事业和幸福考虑\N{\rE}I'm just thinking of your career and your well-being.{\r}
+Dialogue: 0,0:46:38.66,0:46:40.04,Default,,0000,0000,0000,,‎你是在为玛丽莲考虑\N{\rE}You're thinking of Marilyn.{\r}
+Dialogue: 0,0:46:40.79,0:46:42.62,Default,,0000,0000,0000,,‎-对 ‎-她的事业\N{\rE}-Yes. -Her career.{\r}
+Dialogue: 0,0:46:42.70,0:46:46.12,Default,,0000,0000,0000,,‎对 还有她的幸福\N{\rE}Yes. And her well-being.{\r}
+Dialogue: 0,0:46:46.75,0:46:48.58,Default,,0000,0000,0000,,‎她一点都不幸福\N{\rE}She doesn't have any well-being.{\r}
+Dialogue: 0,0:46:50.33,0:46:51.66,Default,,0000,0000,0000,,‎她只是个职业\N{\rE}She's only a career.{\r}
+Dialogue: 0,0:46:55.62,0:46:57.12,Default,,0000,0000,0000,,‎他们知道我是诺玛\N{\rE}They know I'm Norma.{\r}
+Dialogue: 0,0:46:58.12,0:46:59.20,Default,,0000,0000,0000,,‎不是玛丽莲\N{\rE}Not Marilyn.{\r}
+Dialogue: 0,0:47:01.87,0:47:03.50,Default,,0000,0000,0000,,‎他们理解我\N{\rE}They understand me.{\r}
+Dialogue: 0,0:47:05.04,0:47:08.62,Default,,0000,0000,0000,,‎我理解你 我创造了你\N{\rE}I understand you. I invented you.{\r}
+Dialogue: 0,0:47:16.50,0:47:18.12,Default,,0000,0000,0000,,‎诺玛\N{\rE}Oh, Norma.{\r}
+Dialogue: 0,0:47:20.87,0:47:22.37,Default,,0000,0000,0000,,‎我猜我确实爱你\N{\rE}I guess I do love you.{\r}
+Dialogue: 0,0:47:24.79,0:47:26.33,Default,,0000,0000,0000,,‎你和艾迪在一起时我会吃醋\N{\rE}I'm jealous of you and Eddy.{\r}
+Dialogue: 0,0:47:28.70,0:47:30.66,Default,,0000,0000,0000,,‎我嫉妒任何看着你的人\N{\rE}Jealous of anybody who looks at you.{\r}
+Dialogue: 0,0:47:33.95,0:47:36.37,Default,,0000,0000,0000,,‎若我有朝一日会爱上一个女人\N{\rE}If I could love any woman,{\r}
+Dialogue: 0,0:47:37.83,0:47:38.87,Default,,0000,0000,0000,,‎那一定会是你\N{\rE}it'd be you.{\r}
+Dialogue: 0,0:47:41.79,0:47:43.25,Default,,0000,0000,0000,,‎当你说你爱我的时候\N{\rE}When you say you love me{\r}
+Dialogue: 0,0:47:44.95,0:47:46.20,Default,,0000,0000,0000,,‎当你看着我的时候\Nand when you look at me…
+Dialogue: 0,0:47:49.29,0:47:52.75,Default,,0000,0000,0000,,‎你看到的人到底是谁？\N{\rE}who do you see, truly?{\r}
+Dialogue: 0,0:47:53.54,0:47:55.54,Default,,0000,0000,0000,,‎小卓别林吗？你看到的是他吗？\N{\rE}The Little Tramp? Do you see him?{\r}
+Dialogue: 0,0:47:56.45,0:47:57.41,Default,,0000,0000,0000,,‎不\N{\rE}No.{\r}
+Dialogue: 0,0:47:58.95,0:48:00.25,Default,,0000,0000,0000,,‎我看到的只是你\N{\rE}I see only you.{\r}
+Dialogue: 0,0:48:05.33,0:48:09.70,Default,,0000,0000,0000,,‎人们觉得当查理卓别林的儿子很幸运\N{\rE}People think it's a blessing being Charlie Chaplin's son.{\r}
+Dialogue: 0,0:48:11.33,0:48:14.75,Default,,0000,0000,0000,,‎像童话一样 我是国王的儿子\N{\rE}Like it's a fairy tale, and I'm the king's son.{\r}
+Dialogue: 0,0:48:15.91,0:48:17.54,Default,,0000,0000,0000,,‎但我们被诅咒了 艾迪和我\N{\rE}But we're cursed, Eddy and me.{\r}
+Dialogue: 0,0:48:21.08,0:48:24.20,Default,,0000,0000,0000,,‎我们是从来不想要我们的男人的后裔\NWe're juniors… of men who never wanted us.
+Dialogue: 0,0:48:29.41,0:48:31.54,Default,,0000,0000,0000,,‎但至少你们俩有父亲\N{\rE}But at least you two have fathers.{\r}
+Dialogue: 0,0:48:32.91,0:48:34.54,Default,,0000,0000,0000,,‎至少你们知道自己是谁\N{\rE}At least you know who you are.{\r}
+Dialogue: 0,0:48:37.41,0:48:40.16,Default,,0000,0000,0000,,‎我们在出生前就知道自己是谁了\N{\rE}Oh, we knew who we were before we were born.{\r}
+Dialogue: 0,0:48:42.08,0:48:43.58,Default,,0000,0000,0000,,‎你从不知道自己的父亲\N{\rE}You never knew your father.{\r}
+Dialogue: 0,0:48:44.66,0:48:45.87,Default,,0000,0000,0000,,‎所以你是自由的\N{\rE}So you're free.{\r}
+Dialogue: 0,0:48:47.12,0:48:48.41,Default,,0000,0000,0000,,‎你可以创造自己\N{\rE}You can invent yourself.{\r}
+Dialogue: 0,0:48:50.70,0:48:52.20,Default,,0000,0000,0000,,‎我爱你的名字\N{\rE}I love your name.{\r}
+Dialogue: 0,0:48:52.83,0:48:54.37,Default,,0000,0000,0000,,‎玛丽莲梦露\N{\rE}-Marilyn Monroe. -Mm-hmm.{\r}
+Dialogue: 0,0:48:58.54,0:49:00.08,Default,,0000,0000,0000,,‎太假了 我喜欢\N{\rE}-It's so totally phony.-I love it.{\r}
+Dialogue: 0,0:49:02.66,0:49:05.08,Default,,0000,0000,0000,,‎就像你给了自己新生一样\N{\rE}Like you gave birth to yourself.{\r}
+Dialogue: 0,0:49:07.45,0:49:08.87,Default,,0000,0000,0000,,‎因为他的眼睛\N{\rE}Because of his eyes.{\r}
+Dialogue: 0,0:49:09.62,0:49:11.75,Default,,0000,0000,0000,,‎他拥有最美的眼睛\N{\rE}He had the most beautiful eyes.{\r}
+Dialogue: 0,0:49:12.75,0:49:15.20,Default,,0000,0000,0000,,‎因为他会用这眼睛注视着我\N{\rE}Because he'd gazed upon me with those eyes.{\r}
+Dialogue: 0,0:49:16.04,0:49:18.37,Default,,0000,0000,0000,,‎这深情而深邃的眼睛\N{\rE}Haunting, soulful eyes.{\r}
+Dialogue: 0,0:49:18.45,0:49:20.95,Default,,0000,0000,0000,,‎很久以前 在母亲的公寓的墙上 ‎也有这么一双眼睛\N{\rE}From a wall of Mother's long-ago apartment.{\r}
+Dialogue: 0,0:49:23.20,0:49:25.66,Default,,0000,0000,0000,,‎因为他会看着我说…\NBecause he would say, seeing me…
+Dialogue: 0,0:49:26.58,0:49:28.75,Default,,0000,0000,0000,,‎我一见到你就看出来了\N{\rE}I knew you as soon as I saw you.{\r}
+Dialogue: 0,0:49:31.83,0:49:33.08,Default,,0000,0000,0000,,‎你没有父亲\N{\rE}Fatherless.{\r}
+Dialogue: 0,0:49:34.70,0:49:35.83,Default,,0000,0000,0000,,‎像我一样\N{\rE}Like me.{\r}
+Dialogue: 0,0:49:38.16,0:49:39.83,Default,,0000,0000,0000,,‎然后你妈妈被抛弃了\NAnd then your mother abandoned…
+Dialogue: 0,0:49:42.25,0:49:43.45,Default,,0000,0000,0000,,‎被人羞辱\N{\rE}and debased.{\r}
+Dialogue: 0,0:49:44.16,0:49:45.29,Default,,0000,0000,0000,,‎像我妈妈一样\N{\rE}Like mine.{\r}
+Dialogue: 0,0:49:47.00,0:49:49.91,Default,,0000,0000,0000,,‎因为他会爱我 和其他男人的爱不同\N{\rE}Because he would love me as other men would not.{\r}
+Dialogue: 0,0:49:51.87,0:49:52.95,Default,,0000,0000,0000,,‎其他男人也做不到\N{\rE}Or could not.{\r}
+Dialogue: 0,0:49:54.08,0:49:55.33,Default,,0000,0000,0000,,‎我们像双胞胎\N{\rE}As a twin.{\r}
+Dialogue: 0,0:49:56.25,0:49:57.66,Default,,0000,0000,0000,,‎是灵魂伴侣\N{\rE}With his soul.{\r}
+Dialogue: 0,0:49:57.75,0:49:58.95,Default,,0000,0000,0000,,‎那是双子座\N{\rE}There's Gemini.{\r}
+Dialogue: 0,0:50:00.16,0:50:01.16,Default,,0000,0000,0000,,‎看见了吗？\N{\rE}See?{\r}
+Dialogue: 0,0:50:03.08,0:50:04.75,Default,,0000,0000,0000,,‎诺玛和我像双子座一样\N{\rE}Both Norma and I are Geminis.{\r}
+Dialogue: 0,0:50:06.41,0:50:07.87,Default,,0000,0000,0000,,‎命中注定的双胞胎\N{\rE}The fated twins.{\r}
+Dialogue: 0,0:50:12.08,0:50:13.08,Default,,0000,0000,0000,,‎哪里？\N{\rE}Where?{\r}
+Dialogue: 0,0:50:13.95,0:50:17.08,Default,,0000,0000,0000,,‎-我没看见 在哪儿？ ‎-那儿\N{\rE}-I don't see it. Where? -There.{\r}
+Dialogue: 0,0:50:22.16,0:50:24.12,Default,,0000,0000,0000,,‎这一切有数十亿年的历史了\N{\rE}It's all billions of years old.{\r}
+Dialogue: 0,0:50:25.58,0:50:27.20,Default,,0000,0000,0000,,‎难以想象的广阔\N{\rE}Unimaginably vast.{\r}
+Dialogue: 0,0:50:28.62,0:50:30.04,Default,,0000,0000,0000,,‎然而它是从什么开始的？\N{\rE}Yet it began out of what?{\r}
+Dialogue: 0,0:50:32.04,0:50:35.08,Default,,0000,0000,0000,,‎肉眼几乎看不见的微小颗粒\N{\rE}Particles so small it couldn't be seen by the human eye.{\r}
+Dialogue: 0,0:50:36.83,0:50:39.50,Default,,0000,0000,0000,,‎看看上面的它们 如此明亮耀眼\N{\rE}Look at them up there, shining so brightly.{\r}
+Dialogue: 0,0:50:42.08,0:50:44.45,Default,,0000,0000,0000,,‎然而每一颗都那么孤单\N{\rE}And yet, each one is so very much alone.{\r}
+Dialogue: 0,0:50:46.95,0:50:48.25,Default,,0000,0000,0000,,‎我会为此干一杯\N{\rE}I'll drink to that.{\r}
+Dialogue: 0,0:50:53.95,0:50:57.00,Default,,0000,0000,0000,,‎我们发誓吧 我们三个人\N{\rE}Let's vow, okay? The three of us.{\r}
+Dialogue: 0,0:50:58.29,0:51:01.29,Default,,0000,0000,0000,,‎永远都会像现在一样爱着彼此\N{\rE}To always love each other like right now.{\r}
+Dialogue: 0,0:51:02.16,0:51:04.29,Default,,0000,0000,0000,,‎如果需要 我们会为彼此而死\N{\rE}And to die for each other, if needed.{\r}
+Dialogue: 0,0:51:06.66,0:51:07.87,Default,,0000,0000,0000,,‎我们是个三角形\N{\rE}We're a triangle.{\r}
+Dialogue: 0,0:51:09.45,0:51:12.33,Default,,0000,0000,0000,,‎三角形不能一分为二 ‎它比两个人坚强\N{\rE}A triangle can't be divided in two, like two can be.{\r}
+Dialogue: 0,0:51:13.87,0:51:17.54,Default,,0000,0000,0000,,‎我们是双子座 我们三个人\N{\rE}We're the Gemini, the three of us.{\r}
+Dialogue: 0,0:51:17.62,0:51:20.45,Default,,0000,0000,0000,,‎就像双胞胎 但我们是三个人\N{\rE}Like twins. But there's three.{\r}
+Dialogue: 0,0:51:28.00,0:51:29.20,Default,,0000,0000,0000,,‎敬双子座\N{\rE}To the Gemini.{\r}
+Dialogue: 0,0:51:33.54,0:51:34.75,Default,,0000,0000,0000,,‎敬双子座\N{\rE}To the Gemini.{\r}
+Dialogue: 0,0:52:12.20,0:52:14.54,Default,,0000,0000,0000,,‎天啊 我就知道\N{\rE}Oh God, I knew.{\r}
+Dialogue: 0,0:52:16.95,0:52:21.75,Default,,0000,0000,0000,,‎我就知道 ‎我最近感觉很肿胀、很开心\N{\rE}I guess I knew. I've been feeling so swollen and so happy.{\r}
+Dialogue: 0,0:52:23.41,0:52:24.87,Default,,0000,0000,0000,,‎亲爱的 你很健康\N{\rE}My dear, you're healthy.{\r}
+Dialogue: 0,0:52:27.04,0:52:28.29,Default,,0000,0000,0000,,‎一切都会变好的\N{\rE}Everything's gonna be fine.{\r}
+Dialogue: 0,0:52:31.29,0:52:33.04,Default,,0000,0000,0000,,‎我说 我很开心\N{\rE}I'm happy, I said.{\r}
+Dialogue: 0,0:52:34.25,0:52:36.37,Default,,0000,0000,0000,,‎我想要这个孩子\N{\rE}I want this baby.{\r}
+Dialogue: 0,0:52:36.45,0:52:39.25,Default,,0000,0000,0000,,‎我和我的丈夫试了很多年了\N{\rE}My husband and I have been trying for years.{\r}
+Dialogue: 0,0:52:50.50,0:52:51.50,Default,,0000,0000,0000,,‎嘿 诺玛\N{\rE}Hey, Norma.{\r}
+Dialogue: 0,0:52:55.04,0:52:59.12,Default,,0000,0000,0000,,‎怎么了？你看起来很紧张而且很开心\NWhat is it? You look… fraught. And happy.
+Dialogue: 0,0:53:06.54,0:53:07.62,Default,,0000,0000,0000,,‎哦 诺玛…\NOh, Norma…
+Dialogue: 0,0:53:09.79,0:53:10.91,Default,,0000,0000,0000,,‎你觉得你怀上了？\N{\rE}You think you are?{\r}
+Dialogue: 0,0:53:15.29,0:53:17.37,Default,,0000,0000,0000,,‎-是我想的那样吗？ ‎-对！\N{\rE}-Is this what I think it is? -Yes!{\r}
+Dialogue: 0,0:53:18.45,0:53:19.87,Default,,0000,0000,0000,,‎天啊！\N{\rE}Oh, man!{\r}
+Dialogue: 0,0:53:24.08,0:53:25.45,Default,,0000,0000,0000,,‎你们为我高兴吗？\N{\rE}Are you happy for me?{\r}
+Dialogue: 0,0:53:27.41,0:53:30.04,Default,,0000,0000,0000,,‎我们？我是说双子座\N{\rE}Us? The Gemini, I mean?{\r}
+Dialogue: 0,0:53:34.04,0:53:35.54,Default,,0000,0000,0000,,‎-开心！ ‎-开心！\N{\rE}-Yes! -Yes!{\r}
+Dialogue: 0,0:53:45.20,0:53:46.54,Default,,0000,0000,0000,,‎就像电影一样\N{\rE}It's like the movies.{\r}
+Dialogue: 0,0:53:48.00,0:53:50.66,Default,,0000,0000,0000,,‎那种只在电影里发生的事\N{\rE}The kind of thing that only happens in the movies.{\r}
+Dialogue: 0,0:53:50.75,0:53:51.62,Default,,0000,0000,0000,,‎什么？\N{\rE}What?{\r}
+Dialogue: 0,0:53:54.41,0:53:55.66,Default,,0000,0000,0000,,‎那只小老虎\N{\rE}That little tiger.{\r}
+Dialogue: 0,0:54:03.33,0:54:04.79,Default,,0000,0000,0000,,‎我以前有过一个类似的\N{\rE}I had one like him once.{\r}
+Dialogue: 0,0:54:06.00,0:54:08.20,Default,,0000,0000,0000,,‎那是很久以前 我还小的时候\N{\rE}A long time ago when I was a little girl.{\r}
+Dialogue: 0,0:54:09.75,0:54:11.20,Default,,0000,0000,0000,,‎宝宝的第一个玩具\N{\rE}Baby's first plaything.{\r}
+Dialogue: 0,0:54:12.91,0:54:13.75,Default,,0000,0000,0000,,‎真可爱\N{\rE}Cute.{\r}
+Dialogue: 0,0:54:16.50,0:54:19.50,Default,,0000,0000,0000,,‎卡西 你要带我们去哪儿？\N{\rE}Cass, where are you taking us?{\r}
+Dialogue: 0,0:54:21.00,0:54:22.33,Default,,0000,0000,0000,,‎我想回家\N{\rE}I wanna go home.{\r}
+Dialogue: 0,0:54:23.91,0:54:24.91,Default,,0000,0000,0000,,‎好吗？\N{\rE}Right?{\r}
+Dialogue: 0,0:54:26.25,0:54:27.75,Default,,0000,0000,0000,,‎宝宝太困了\N{\rE}Baby's so sleepy.{\r}
+Dialogue: 0,0:54:30.25,0:54:32.91,Default,,0000,0000,0000,,‎这是要让宝宝看到的景色\N{\rE}Oh, this is a vision for baby to see.{\r}
+Dialogue: 0,0:54:34.54,0:54:35.54,Default,,0000,0000,0000,,‎等等嘛\N{\rE}Just wait.{\r}
+Dialogue: 0,0:54:44.41,0:54:49.62,Default,,0000,0000,0000,,‎诺玛 你可以选择看或者不看…\N{\rE}Norma, you can look or not,{\r}
+Dialogue: 0,0:54:51.50,0:54:52.95,Default,,0000,0000,0000,,但她就在那儿\Nbut… there she is.
+Dialogue: 0,0:54:56.58,0:54:57.50,Default,,0000,0000,0000,,-玛丽莲 ‎-玛丽莲\NMmm… Marilyn.-Marilyn.
+Dialogue: 0,0:55:08.70,0:55:12.50,Default,,0000,0000,0000,,‎我不能接这个角色 抱歉\N{\rE}I can't take the role.I'm sorry.{\r}
+Dialogue: 0,0:55:16.12,0:55:17.45,Default,,0000,0000,0000,,‎你还在听电话吗？\N{\rE}Are you still on the line?{\r}
+Dialogue: 0,0:55:19.12,0:55:20.33,Default,,0000,0000,0000,,‎出什么事了吗？\N{\rE}Is something wrong?{\r}
+Dialogue: 0,0:55:21.08,0:55:26.45,Default,,0000,0000,0000,,‎没 没出事 ‎我只是不能接 现在不行\N{\rE}No, nothing's wrong.-I just can't.-Not now{\r}
+Dialogue: 0,0:55:27.25,0:55:30.79,Default,,0000,0000,0000,,‎现在不行？为什么现在不行？\N{\rE}Not now? Why not now?{\r}
+Dialogue: 0,0:55:33.29,0:55:37.00,Default,,0000,0000,0000,,‎你现在是票房新秀\N{\rE}You're the newest box office sensation now.{\r}
+Dialogue: 0,0:55:37.87,0:55:42.95,Default,,0000,0000,0000,,‎扎努克为你买下了《绅士爱美人》\N{\rE}Zanuck has bought Gentlemen Prefer Blondes for you.{\r}
+Dialogue: 0,0:55:43.04,0:55:46.66,Default,,0000,0000,0000,,‎他想让你在里面大放异彩\N{\rE}He wants it as a showcase for you.{\r}
+Dialogue: 0,0:55:50.45,0:55:51.75,Default,,0000,0000,0000,,‎我能拿到多少钱？\N{\rE}How much would I get?{\r}
+Dialogue: 0,0:55:56.70,0:55:58.00,Default,,0000,0000,0000,,‎你的合同工资\N{\rE}Your contract salary.{\r}
+Dialogue: 0,0:55:59.54,0:56:00.79,Default,,0000,0000,0000,,‎一周五百\N{\rE}Five hundred a week.{\r}
+Dialogue: 0,0:56:05.20,0:56:07.29,Default,,0000,0000,0000,,‎简拉塞尔能拿多少？\N{\rE}How much would Jane Russell get?{\r}
+Dialogue: 0,0:56:09.20,0:56:10.41,Default,,0000,0000,0000,,‎交易待定中\N{\rE}The deal is pending.{\r}
+Dialogue: 0,0:56:11.25,0:56:13.50,Default,,0000,0000,0000,,‎拉塞尔正在另一个制片厂拍戏 ‎得借她过来\N{\rE}And Russell has to be lent by another studio.{\r}
+Dialogue: 0,0:56:16.37,0:56:17.87,Default,,0000,0000,0000,,‎对 但是多少钱？\N{\rE}Yes, but how much?{\r}
+Dialogue: 0,0:56:19.45,0:56:21.91,Default,,0000,0000,0000,,‎-金额还没定下来 ‎-多少钱？\N{\rE}The figures aren't finalized.How much?{\r}
+Dialogue: 0,0:56:24.58,0:56:29.16,Default,,0000,0000,0000,,‎他们要价十万\NThey're asking… $100,000.
+Dialogue: 0,0:56:32.41,0:56:34.08,Default,,0000,0000,0000,,‎十万？\N{\rE}$100,000?{\r}
+Dialogue: 0,0:56:39.12,0:56:43.41,Default,,0000,0000,0000,,‎我拿五千 而简拉塞尔能拿十万？\N{\rE}I'll get about $5,000, and Jane Russell gets $100,000?{\r}
+Dialogue: 0,0:56:44.00,0:56:48.50,Default,,0000,0000,0000,,‎而我演《绅士爱美女》中的 ‎金发女人？\N{\rE}And I'm playing the blonde in Gentlemen Prefer Blondes?{\r}
+Dialogue: 0,0:56:50.37,0:56:51.62,Default,,0000,0000,0000,,‎这太侮辱人了\N{\rE}That's an insult.{\r}
+Dialogue: 0,0:56:53.45,0:56:56.95,Default,,0000,0000,0000,,‎-我要挂电话了 再见 ‎-玛丽莲 等等\N{\rE}-I'm gonna hang up now. Goodbye. - Marilyn, wait.{\r}
+Dialogue: 0,0:56:57.04,0:56:59.20,Default,,0000,0000,0000,,‎让玛丽莲去死吧 她不在这儿\N{\rE}Fuck Marilyn. She's not here.{\r}
+Dialogue: 0,0:57:26.87,0:57:28.20,Default,,0000,0000,0000,,‎致我的宝宝\N{\rE}"To My Baby."{\r}
+Dialogue: 0,0:57:30.41,0:57:31.41,Default,,0000,0000,0000,,‎在你身上\N{\rE}In you{\r}
+Dialogue: 0,0:57:32.91,0:57:38.29,Default,,0000,0000,0000,,‎世界重生\N{\rE}The world is born anew{\r}
+Dialogue: 0,0:57:40.95,0:57:47.33,Default,,0000,0000,0000,,‎在你之前 一无所有\N{\rE}Before you There was none{\r}
+Dialogue: 0,0:57:49.87,0:57:51.95,Default,,0000,0000,0000,,‎你想当外婆吗？\N{\rE}How'd you like to be a grandmother?{\r}
+Dialogue: 0,0:57:54.37,0:57:55.54,Default,,0000,0000,0000,,‎现在是哪一年了？\N{\rE}What year is it?{\r}
+Dialogue: 0,0:57:56.83,0:57:58.45,Default,,0000,0000,0000,,‎我们到了什么时候？\N{\rE}What time did we travel to?{\r}
+Dialogue: 0,0:58:01.37,0:58:03.91,Default,,0000,0000,0000,,‎妈妈 现在是1953年5月\N{\rE}Mother, it's May 1953.{\r}
+Dialogue: 0,0:58:06.12,0:58:07.33,Default,,0000,0000,0000,,‎我是诺玛简\N{\rE}I'm Norma Jeane.{\r}
+Dialogue: 0,0:58:08.37,0:58:10.00,Default,,0000,0000,0000,,‎我来这儿照顾你\N{\rE}I'm here to take care of you.{\r}
+Dialogue: 0,0:58:12.29,0:58:13.70,Default,,0000,0000,0000,,‎但你的头发太白了\N{\rE}But your hair is so white.{\r}
+Dialogue: 0,0:58:24.50,0:58:28.33,Default,,0000,0000,0000,,‎当你生下我的时候 妈妈 ‎我猜你当时没结婚\N{\rE}When you had me, Mother, you weren't married, I guess.{\r}
+Dialogue: 0,0:58:29.29,0:58:31.70,Default,,0000,0000,0000,,‎你没有男人支持你\N{\rE}You didn't have a man supporting you.{\r}
+Dialogue: 0,0:58:33.50,0:58:34.91,Default,,0000,0000,0000,,‎可你却生下了一个孩子\N{\rE}And you had a baby.{\r}
+Dialogue: 0,0:58:45.66,0:58:46.95,Default,,0000,0000,0000,,‎那太勇敢了\N{\rE}That was so brave.{\r}
+Dialogue: 0,0:58:50.41,0:58:51.83,Default,,0000,0000,0000,,‎换成其他女孩…\NAnother girl would've…
+Dialogue: 0,0:58:54.75,0:58:58.08,Default,,0000,0000,0000,,‎可能会打掉孩子\N{\rE}well, you know, gotten rid of it.{\r}
+Dialogue: 0,0:58:59.83,0:59:00.79,Default,,0000,0000,0000,,‎打掉我\N{\rE}Of me.{\r}
+Dialogue: 0,0:59:03.95,0:59:08.33,Default,,0000,0000,0000,,‎那我根本不会在这儿 ‎也就不会有玛丽莲了\N{\rE}And I wouldn't be here at all. There wouldn't be any Marilyn.{\r}
+Dialogue: 0,0:59:11.00,0:59:13.25,Default,,0000,0000,0000,,‎她现在很出名了\N{\rE}And she's getting so famous now.{\r}
+Dialogue: 0,0:59:15.45,0:59:17.62,Default,,0000,0000,0000,,‎粉丝来信、电报…\N{\rE}Fan letters, telegrams.{\r}
+Dialogue: 0,0:59:19.20,0:59:20.79,Default,,0000,0000,0000,,‎陌生人的花接踵而至\N{\rE}Flowers from strangers.{\r}
+Dialogue: 0,0:59:36.75,0:59:38.12,Default,,0000,0000,0000,,‎但你当时很勇敢\N{\rE}But you were brave.{\r}
+Dialogue: 0,0:59:44.29,0:59:45.91,Default,,0000,0000,0000,,‎你做了正确的事\N{\rE}You did the right thing.{\r}
+Dialogue: 0,0:59:49.62,0:59:51.00,Default,,0000,0000,0000,,‎你生下了你的孩子\N{\rE}You had your baby.{\r}
+Dialogue: 0,0:59:56.04,0:59:57.04,Default,,0000,0000,0000,,‎你生下了我\N{\rE}You had me.{\r}
+Dialogue: 0,1:00:01.70,1:00:03.87,Default,,0000,0000,0000,,‎她得的是一种神秘的疾病\N{\rE}Hers is a mystery illness.{\r}
+Dialogue: 0,1:00:09.00,1:00:10.95,Default,,0000,0000,0000,,‎一种人们并不真正理解的病\N{\rE}An illness no one truly understands.{\r}
+Dialogue: 0,1:00:12.83,1:00:14.16,Default,,0000,0000,0000,,‎一种症状综合症\N{\rE}A syndrome of symptoms.{\r}
+Dialogue: 0,1:00:22.70,1:00:24.12,Default,,0000,0000,0000,,‎这是遗传的吗？\N{\rE}Is it inherited?{\r}
+Dialogue: 0,1:00:25.45,1:00:26.45,Default,,0000,0000,0000,,‎什么？\N{\rE}Excuse me?{\r}
+Dialogue: 0,1:00:30.50,1:00:33.62,Default,,0000,0000,0000,,‎我妈妈的病 是不是…\NMy mother's illness, are you…
+Dialogue: 0,1:00:36.29,1:00:37.50,Default,,0000,0000,0000,,‎是不是…\NAre you…
+Dialogue: 0,1:00:38.66,1:00:40.62,Default,,0000,0000,0000,,‎是不是与生俱来的呢？\N{\rE}Are you born with it in your blood?{\r}
+Dialogue: 0,1:01:05.50,1:01:09.04,Default,,0000,0000,0000,,‎好吧 玛丽莲 ‎我会把你的电话转接伊薇特\N{\rE}All right, Marilyn, what I'll do is I'll turn you over to Yvet.{\r}
+Dialogue: 0,1:01:09.12,1:01:11.91,Default,,0000,0000,0000,,‎你记得伊薇特吗？她会帮你的\N{\rE}You remember Yvet? She'll help you.{\r}
+Dialogue: 0,1:01:12.00,1:01:13.41,Default,,0000,0000,0000,,‎玛丽莲？\N{\rE}Marilyn?{\r}
+Dialogue: 0,1:01:15.91,1:01:20.91,Default,,0000,0000,0000,,‎-我需要帮助 我迫切需要帮助 ‎-亲爱的 我会安排的\N{\rE}-I need help. I need help so badly. -Dear, I'll make the arrangements.{\r}
+Dialogue: 0,1:01:21.00,1:01:24.20,Default,,0000,0000,0000,,‎计划明早8点出发 ‎我们派车去你家接你\N{\rE}Plan on tomorrow morning at 8:00 a.m. You'll be picked up at home.{\r}
+Dialogue: 0,1:02:16.70,1:02:18.33,Default,,0000,0000,0000,,‎（停）
+Dialogue: 0,1:02:21.12,1:02:22.45,Default,,0000,0000,0000,,‎拜托 我想回去\N{\rE}Please, I wanna go back.{\r}
+Dialogue: 0,1:02:30.08,1:02:32.20,Default,,0000,0000,0000,,‎嘿 我改变主意了\N{\rE}-Hey, I've changed my mind.{\r}
+Dialogue: 0,1:02:33.66,1:02:35.16,Default,,0000,0000,0000,,‎我改变想法了\N{\rE}My mind's my own to change.{\r}
+Dialogue: 0,1:02:40.20,1:02:41.75,Default,,0000,0000,0000,,‎哦 刺眼的光\N{\rE}Oh, the bright lights.{\r}
+Dialogue: 0,1:02:52.45,1:02:54.12,Default,,0000,0000,0000,,‎亲爱的 我们会照顾好你的\N{\rE}You're in good hands, dear.{\r}
+Dialogue: 0,1:02:57.70,1:03:01.37,Default,,0000,0000,0000,,‎拜托 你们没听到吗？我改变想法了\N{\rE}Please, won't you listen? I've changed my mind.{\r}
+Dialogue: 0,1:03:10.29,1:03:12.20,Default,,0000,0000,0000,,‎求你们了 别 你们不听我说话吗？\N{\rE}Please, don't. Won't you listen?{\r}
+Dialogue: 0,1:03:15.45,1:03:18.37,Default,,0000,0000,0000,,‎这会让你陷入昏睡\N{\rE}This will put you in twilight sleep.{\r}
+Dialogue: 0,1:03:19.83,1:03:22.04,Default,,0000,0000,0000,,‎不 我想回去\NNo, I… wanna go back.
+Dialogue: 0,1:03:39.62,1:03:42.16,Default,,0000,0000,0000,,‎不 等等\N{\rE}No. Wait.{\r}
+Dialogue: 0,1:03:42.75,1:03:45.58,Default,,0000,0000,0000,,‎等等！不！\N{\rE}Wait! Wait! No! No!{\r}
+Dialogue: 0,1:03:47.12,1:03:48.12,Default,,0000,0000,0000,,‎诺玛！
+Dialogue: 0,1:03:51.45,1:03:52.29,Default,,0000,0000,0000,,‎不！\N{\rE}No!{\r}
+Dialogue: 0,1:04:59.66,1:05:00.79,Default,,0000,0000,0000,,‎梦露小姐？\N{\rE}Miss Monroe?{\r}
+Dialogue: 0,1:05:03.50,1:05:07.75,Default,,0000,0000,0000,,‎再见 宝贝
+Dialogue: 0,1:05:09.12,1:05:13.04,Default,,0000,0000,0000,,‎记得你是我的宝贝
+Dialogue: 0,1:05:13.12,1:05:13.95,Default,,0000,0000,0000,,‎梦露小姐\N{\rE}Miss Monroe.{\r}
+Dialogue: 0,1:05:17.12,1:05:18.91,Default,,0000,0000,0000,,‎梦露小姐 是时候了\N{\rE}Miss Monroe, it's time.{\r}
+Dialogue: 0,1:05:26.16,1:05:30.08,Default,,0000,0000,0000,,‎我一直很孤独
+Dialogue: 0,1:05:33.00,1:05:33.91,Default,,0000,0000,0000,,‎梦露小姐？\N{\rE}Miss Monroe?{\r}
+Dialogue: 0,1:05:38.12,1:05:44.75,Default,,0000,0000,0000,,‎不会有其他人
+Dialogue: 0,1:05:45.66,1:05:47.58,Default,,0000,0000,0000,,‎我的名声和财富源自我的运气\N{\rE}I'm one of the winners of the American lottery.{\r}
+Dialogue: 0,1:05:48.70,1:05:50.95,Default,,0000,0000,0000,,‎我是知道的 我为此很感激\N{\rE}I know it. I'm grateful for it.{\r}
+Dialogue: 0,1:05:52.04,1:05:55.54,Default,,0000,0000,0000,,‎我从不认为这是理所当然的 ‎棒球是我的生命\N{\rE}And I never take it for granted. Baseball was my life.{\r}
+Dialogue: 0,1:05:56.41,1:05:57.91,Default,,0000,0000,0000,,‎棒球是我改变人生的入场券\N{\rE}Baseball was my ticket up and out.{\r}
+Dialogue: 0,1:05:58.50,1:06:00.25,Default,,0000,0000,0000,,‎现在…\N{\rE}And now, well,{\r}
+Dialogue: 0,1:06:01.33,1:06:02.29,Default,,0000,0000,0000,,‎我退役了\N{\rE}I'm retired.{\r}
+Dialogue: 0,1:06:03.08,1:06:05.33,Default,,0000,0000,0000,,‎我有很多事要做 代言…\NI mean, I have plenty to do, you know, endorsements and… personal appearances,
+Dialogue: 0,1:06:08.29,1:06:09.91,Default,,0000,0000,0000,,‎私人露面和顾问委员会会议\N{\rE}advisory board meetings.{\r}
+Dialogue: 0,1:06:14.50,1:06:16.16,Default,,0000,0000,0000,,‎我猜我听起来像个傻瓜\N{\rE}I guess I sound like a sap.{\r}
+Dialogue: 0,1:06:16.79,1:06:19.33,Default,,0000,0000,0000,,‎不会\N{\rE}No. No. No, no.{\r}
+Dialogue: 0,1:06:20.58,1:06:23.08,Default,,0000,0000,0000,,‎感觉一定很奇怪吧 毕竟你得做个…\NIt must be awfully strange to be a…
+Dialogue: 0,1:06:24.41,1:06:25.25,Default,,0000,0000,0000,,‎嗯…\Nwell… a hero.
+Dialogue: 0,1:06:26.91,1:06:28.54,Default,,0000,0000,0000,,‎英雄
+Dialogue: 0,1:06:33.66,1:06:35.54,Default,,0000,0000,0000,,‎而且你不像是退役了\N{\rE}Anyway, you don't seem retired.{\r}
+Dialogue: 0,1:06:36.70,1:06:38.91,Default,,0000,0000,0000,,‎经常能在报纸里看见关于你的报道\N{\rE}You're in the paper so much.{\r}
+Dialogue: 0,1:06:39.70,1:06:42.91,Default,,0000,0000,0000,,‎见报率不及你的一半 玛丽莲\N{\rE}Well, not half as much as you, Marilyn.{\r}
+Dialogue: 0,1:06:45.04,1:06:46.04,Default,,0000,0000,0000,,‎谁 我吗？\N{\rE}Who, me?{\r}
+Dialogue: 0,1:06:47.91,1:06:48.91,Default,,0000,0000,0000,,‎嗯…\NWell…
+Dialogue: 0,1:06:51.12,1:06:53.16,Default,,0000,0000,0000,,‎那只是制片厂的宣传\N{\rE}That's just studio publicity.{\r}
+Dialogue: 0,1:06:56.12,1:06:57.37,Default,,0000,0000,0000,,‎它们很糟\N{\rE}Oh, they're awful.{\r}
+Dialogue: 0,1:06:59.79,1:07:01.29,Default,,0000,0000,0000,,‎他们会胡编乱造\N{\rE}The things they make up.{\r}
+Dialogue: 0,1:07:03.33,1:07:05.45,Default,,0000,0000,0000,,‎我知道做这一行应该习惯于此\N{\rE}I know you're supposed to get used to it.{\r}
+Dialogue: 0,1:07:08.37,1:07:09.70,Default,,0000,0000,0000,,‎但我就是不习惯\N{\rE}But I just can't.{\r}
+Dialogue: 0,1:07:11.75,1:07:13.04,Default,,0000,0000,0000,,‎这太令人伤心了\N{\rE}It really hurts.{\r}
+Dialogue: 0,1:07:21.54,1:07:23.29,Default,,0000,0000,0000,,‎你怎么开始的？\N{\rE}How'd you get your start?{\r}
+Dialogue: 0,1:07:37.08,1:07:38.08,Default,,0000,0000,0000,,‎开始什么？\N{\rE}What start?{\r}
+Dialogue: 0,1:07:38.87,1:07:40.04,Default,,0000,0000,0000,,‎开始演艺之路\N{\rE}In movies.{\r}
+Dialogue: 0,1:07:41.16,1:07:42.12,Default,,0000,0000,0000,,‎开始当演员\N{\rE}In acting.{\r}
+Dialogue: 0,1:07:50.29,1:07:51.50,Default,,0000,0000,0000,,‎我不知道\N{\rE}I don't know.{\r}
+Dialogue: 0,1:07:57.25,1:07:58.08,Default,,0000,0000,0000,,‎我…\NI…
+Dialogue: 0,1:07:59.16,1:08:00.37,Default,,0000,0000,0000,,‎我猜…\NI… I guess…
+Dialogue: 0,1:08:10.62,1:08:12.20,Default,,0000,0000,0000,,‎我猜我是被人挖掘的\N{\rE}I guess I was discovered.{\r}
+Dialogue: 0,1:08:15.00,1:08:16.29,Default,,0000,0000,0000,,‎被挖掘 怎么挖掘的？\N{\rE}-Oh, discovered. How?{\r}
+Dialogue: 0,1:08:28.54,1:08:30.04,Default,,0000,0000,0000,,‎我们也许应该走了\N{\rE}Maybe we should leave.{\r}
+Dialogue: 0,1:08:33.08,1:08:35.12,Default,,0000,0000,0000,,‎我害怕这里的一些人\N{\rE}I'm afraid of some of the people here.{\r}
+Dialogue: 0,1:08:42.83,1:08:43.83,Default,,0000,0000,0000,,‎嘿\N{\rE}Hey.{\r}
+Dialogue: 0,1:08:46.75,1:08:48.29,Default,,0000,0000,0000,,‎我知道那是什么感觉\NI know what it's like…
+Dialogue: 0,1:08:51.16,1:08:52.37,Default,,0000,0000,0000,,‎知道孤独是什么感觉\Nto be lonely…
+Dialogue: 0,1:08:54.91,1:08:56.33,Default,,0000,0000,0000,,‎追求更好的生活是什么感觉\N{\rE}to want a better life.{\r}
+Dialogue: 0,1:08:58.08,1:08:59.79,Default,,0000,0000,0000,,‎一个美好而简单的生活\N{\rE}A good, simple life.{\r}
+Dialogue: 0,1:09:01.75,1:09:03.16,Default,,0000,0000,0000,,‎一个体面的生活\N{\rE}A decent life.{\r}
+Dialogue: 0,1:09:11.62,1:09:13.79,Default,,0000,0000,0000,,‎我只是想再次从零开始\N{\rE}I just wanna begin again from zero.{\r}
+Dialogue: 0,1:09:16.16,1:09:17.41,Default,,0000,0000,0000,,‎我想住在…\NI wanna live in…
+Dialogue: 0,1:09:18.75,1:09:22.79,Default,,0000,0000,0000,,‎我想住在另一个世界 远离好莱坞\N{\rE}I wanna live in another world. Away from Hollywood.{\r}
+Dialogue: 0,1:09:24.29,1:09:25.70,Default,,0000,0000,0000,,‎我想住在…\NI wanna live in…
+Dialogue: 0,1:09:29.45,1:09:30.62,Default,,0000,0000,0000,,‎契诃夫！\N…Chekhov!
+Dialogue: 0,1:09:34.50,1:09:36.29,Default,,0000,0000,0000,,‎我想搬去纽约\N{\rE}I wanna move to New York.{\r}
+Dialogue: 0,1:09:39.79,1:09:41.08,Default,,0000,0000,0000,,‎学习表演\N{\rE}And study acting.{\r}
+Dialogue: 0,1:09:42.91,1:09:44.62,Default,,0000,0000,0000,,‎认真的表演\N{\rE}Serious acting.{\r}
+Dialogue: 0,1:09:44.70,1:09:47.29,Default,,0000,0000,0000,,‎在电影里 ‎他们会把你的片段剪成碎片\N{\rE}In the movies, they chop you all to bits.{\r}
+Dialogue: 0,1:09:47.37,1:09:51.04,Default,,0000,0000,0000,,‎剪啊剪 这是个拼图游戏\N{\rE}Cut, cut, cut. It's a jigsaw puzzle.{\r}
+Dialogue: 0,1:09:51.12,1:09:53.00,Default,,0000,0000,0000,,‎但这个拼图并不由你拼出来\N{\rE}But you're not the one to put the pieces together.{\r}
+Dialogue: 0,1:09:55.41,1:09:57.45,Default,,0000,0000,0000,,‎但你是拼图的一部分\N{\rE}Oh, but to live in a part.{\r}
+Dialogue: 0,1:09:57.54,1:10:01.41,Default,,0000,0000,0000,,‎在里面 直到每晚电影闭幕\N{\rE}To just be in it till the closing curtain every night.{\r}
+Dialogue: 0,1:10:17.04,1:10:18.45,Default,,0000,0000,0000,,‎但我主要是…\NBut mostly, I…
+Dialogue: 0,1:10:23.37,1:10:24.79,Default,,0000,0000,0000,,‎我想安顿下来\N{\rE}I wanna settle down.{\r}
+Dialogue: 0,1:10:26.66,1:10:27.91,Default,,0000,0000,0000,,‎像任何女孩一样\N{\rE}Like any girl.{\r}
+Dialogue: 0,1:10:28.95,1:10:30.37,Default,,0000,0000,0000,,‎拥有一个家\N{\rE}And have a family.{\r}
+Dialogue: 0,1:10:34.04,1:10:35.79,Default,,0000,0000,0000,,‎我非常爱孩子\N{\rE}Oh, I love children so.{\r}
+Dialogue: 0,1:10:37.45,1:10:39.45,Default,,0000,0000,0000,,‎我很想要孩子\N{\rE}I'm crazy about babies.{\r}
+Dialogue: 0,1:10:45.37,1:10:46.79,Default,,0000,0000,0000,,‎有人死了吗？\N{\rE}Did somebody die?{\r}
+Dialogue: 0,1:10:50.29,1:10:51.50,Default,,0000,0000,0000,,‎这些是什么？\N{\rE}What is all this?{\r}
+Dialogue: 0,1:10:53.58,1:10:54.91,Default,,0000,0000,0000,,‎这些花\N{\rE}These flowers.{\r}
+Dialogue: 0,1:10:58.29,1:10:59.50,Default,,0000,0000,0000,,‎我是一具尸体吗？\N{\rE}Am I a corpse?{\r}
+Dialogue: 0,1:11:00.33,1:11:01.83,Default,,0000,0000,0000,,‎这是殡仪馆吗？\N{\rE}Is this a funeral home?{\r}
+Dialogue: 0,1:11:05.16,1:11:07.83,Default,,0000,0000,0000,,‎我是这个玛丽莲梦露的奴隶\N{\rE}I'm a slave to this Marilyn Monroe.{\r}
+Dialogue: 0,1:11:08.75,1:11:11.29,Default,,0000,0000,0000,,‎我原以为是来乘坐豪华邮轮的\N{\rE}I signed up for a luxury cruise,{\r}
+Dialogue: 0,1:11:11.37,1:11:14.58,Default,,0000,0000,0000,,‎却落得跟罗莉拉一样 ‎在统舱里拼命地划船\N{\rE}but like Lorelei Lee, I'm in fucking steerage, paddling.{\r}
+Dialogue: 0,1:11:17.33,1:11:20.75,Default,,0000,0000,0000,,‎梦露小姐 你这话不是认真的\N{\rE}Now, Miss Monroe, you don't mean a word of what you say.{\r}
+Dialogue: 0,1:11:21.66,1:11:23.83,Default,,0000,0000,0000,,‎如果你不是玛丽莲 你会成为谁呢？\N{\rE}If you weren't Marilyn, who'd you be?{\r}
+Dialogue: 0,1:11:24.87,1:11:26.33,Default,,0000,0000,0000,,‎梦露小姐 你真残忍\N{\rE}Miss Monroe, you're cruel.{\r}
+Dialogue: 0,1:11:27.45,1:11:30.41,Default,,0000,0000,0000,,‎我们每个人 世界上的每个人\N{\rE}Every one of us, everybody in the world,{\r}
+Dialogue: 0,1:11:30.50,1:11:33.75,Default,,0000,0000,0000,,‎都愿意不顾一切地成为你 你知道的\N{\rE}would give their right arm to be you, and you know it.{\r}
+Dialogue: 0,1:11:37.12,1:11:38.04,Default,,0000,0000,0000,,‎我知道\N{\rE}Oh, I do.{\r}
+Dialogue: 0,1:11:39.95,1:11:44.91,Default,,0000,0000,0000,,‎“玛丽莲 你一直以来都是甜心”\N{\rE}"Marilyn, you are the sweetheart of this and any other month."{\r}
+Dialogue: 0,1:11:46.70,1:11:50.16,Default,,0000,0000,0000,,‎“玛丽莲 你是个婊子 ‎一个金发荡妇\N{\rE}"Marilyn, you are a whore, a blonde tramp."{\r}
+Dialogue: 0,1:11:50.25,1:11:54.79,Default,,0000,0000,0000,,‎没有人会爱你 你这恶心的荡妇\N{\rE}"Nobody will ever love you, you disgusting tramp."{\r}
+Dialogue: 0,1:11:54.87,1:12:00.33,Default,,0000,0000,0000,,‎离我们的收音机、电视、电影远点\N{\rE}"Get off our radio, television, and out of our movies."{\r}
+Dialogue: 0,1:12:00.41,1:12:02.08,Default,,0000,0000,0000,,‎你在毒害我们的孩子\N{\rE}"You're poisoning our children."{\r}
+Dialogue: 0,1:12:02.83,1:12:03.83,Default,,0000,0000,0000,,‎不是粉丝”\N{\rE}"Not a fan."{\r}
+Dialogue: 0,1:12:07.75,1:12:08.95,Default,,0000,0000,0000,,‎像影评人\N{\rE}Like movie critics.{\r}
+Dialogue: 0,1:12:10.62,1:12:13.66,Default,,0000,0000,0000,,‎有些人爱玛丽莲 有些人恨玛丽莲\N{\rE}Some of them love Marilyn, some of them hate Marilyn.{\r}
+Dialogue: 0,1:12:15.87,1:12:17.50,Default,,0000,0000,0000,,‎那跟我有什么关系呢？\N{\rE}What's that got to do with me?{\r}
+Dialogue: 0,1:12:18.41,1:12:21.66,Default,,0000,0000,0000,,‎对 她是本月头号婊子\N{\rE}Yes.{\r}
+Dialogue: 0,1:12:21.75,1:12:23.66,Default,,0000,0000,0000,,‎-怀特利！ ‎-她是个甜美的小荡妇\N{\rE}-Whitey!{\r}
+Dialogue: 0,1:12:24.62,1:12:27.12,Default,,0000,0000,0000,,‎我会写封信 并贴上邮票
+Dialogue: 0,1:12:28.79,1:12:32.58,Default,,0000,0000,0000,,‎梦露小姐 我觉得这是一封密件\N{\rE}Miss Monroe, this is a confidential letter, I think.{\r}
+Dialogue: 0,1:12:35.45,1:12:38.16,Default,,0000,0000,0000,,‎他的鸡巴像棒球棍一样 抱歉\N{\rE}He's got a bat for a cock. Sorry.{\r}
+Dialogue: 0,1:12:43.58,1:12:44.70,Default,,0000,0000,0000,,‎“亲爱的诺玛简\N{\rE}"Dear Norma Jeane."{\r}
+Dialogue: 0,1:12:45.70,1:12:49.20,Default,,0000,0000,0000,,‎这可能是有史以来 ‎我写过的最难的信”\N{\rE}"This is possibly the most difficult letter I have ever penned."{\r}
+Dialogue: 0,1:12:53.25,1:12:55.25,Default,,0000,0000,0000,,‎说实话 我不知道为什么 ‎我要在这么多年后 现在来联系你\NHonestly, I… I do not know why I'm contacting you now\N{\rE}after so many years.{\r}
+Dialogue: 0,1:12:55.33,1:12:58.37,Default,,0000,0000,0000,,‎事实上 我得了心脏病\N{\rE}The truth is, I have suffered a heart attack,{\r}
+Dialogue: 0,1:12:58.45,1:13:01.08,Default,,0000,0000,0000,,‎我严肃地反思了我的人生\N{\rE}and I have contemplated my life with gravity.{\r}
+Dialogue: 0,1:13:01.83,1:13:05.41,Default,,0000,0000,0000,,‎我的一些行为 我并不引以为傲\N{\rE}I cannot say I am proud of my behavior in all cases.{\r}
+Dialogue: 0,1:13:06.54,1:13:07.37,Default,,0000,0000,0000,,‎是他\N{\rE}Oh, it's him.{\r}
+Dialogue: 0,1:13:07.91,1:13:10.54,Default,,0000,0000,0000,,‎我是你的父亲 诺玛简\N{\rE}I am your father, Norma Jeane.{\r}
+Dialogue: 0,1:13:12.29,1:13:14.16,Default,,0000,0000,0000,,‎我面前有玛丽莲梦露\N{\rE}And I have here before me{\r}
+Dialogue: 0,1:13:14.25,1:13:19.08,Default,,0000,0000,0000,,‎在新《佳丽》杂志的一篇采访\N{\rE}an interview with Marilyn Monroe in the new Pageant.{\r}
+Dialogue: 0,1:13:20.04,1:13:21.95,Default,,0000,0000,0000,,‎读到这个采访 我泪流满面\N{\rE}Reading it, it brought tears to my eyes{\r}
+Dialogue: 0,1:13:23.16,1:13:25.54,Default,,0000,0000,0000,,‎你说你妈妈进了医院\N{\rE}when you said that your mother has been hospitalized,{\r}
+Dialogue: 0,1:13:25.62,1:13:27.45,Default,,0000,0000,0000,,‎而你不知道你父亲是谁\N{\rE}and you do not know your father.{\r}
+Dialogue: 0,1:13:28.87,1:13:31.91,Default,,0000,0000,0000,,‎虽然你每时每刻都在等他\N{\rE}Although you await him with every passing hour.{\r}
+Dialogue: 0,1:13:33.33,1:13:34.79,Default,,0000,0000,0000,,‎我可怜的女儿\N{\rE}Oh, my poor daughter.{\r}
+Dialogue: 0,1:13:36.16,1:13:37.41,Default,,0000,0000,0000,,‎天啊\N{\rE}Oh God.{\r}
+Dialogue: 0,1:13:38.41,1:13:39.45,Default,,0000,0000,0000,,‎我以前不知道\N{\rE}-I did not know.{\r}
+Dialogue: 0,1:13:39.54,1:13:40.70,Default,,0000,0000,0000,,‎是他\N{\rE}-Oh, it's him.{\r}
+Dialogue: 0,1:13:42.95,1:13:43.95,Default,,0000,0000,0000,,‎我就知道\N{\rE}I knew.{\r}
+Dialogue: 0,1:13:45.87,1:13:47.95,Default,,0000,0000,0000,,‎这些年来 他在关注我\N{\rE}Watching over me all these years.{\r}
+Dialogue: 0,1:13:49.58,1:13:50.70,Default,,0000,0000,0000,,‎我能感觉到\N{\rE}I felt it.{\r}
+Dialogue: 0,1:13:52.12,1:13:55.79,Default,,0000,0000,0000,,‎我会再跟你联系的 诺玛简 ‎我会亲自前来\N{\rE}I will contact you again soon, Norma Jeane, in person.{\r}
+Dialogue: 0,1:13:57.08,1:13:59.95,Default,,0000,0000,0000,,‎所以来找我吧 我的宝贝女儿…\N{\rE}So look for me, my precious daughter,{\r}
+Dialogue: 0,1:14:01.79,1:14:03.75,Default,,0000,0000,0000,,‎在你人生中一个特殊的场合…\N{\rE}upon a special occasion in your life{\r}
+Dialogue: 0,1:14:04.70,1:14:08.62,Default,,0000,0000,0000,,‎我们父女可以庆祝我们久违的爱\N{\rE}where both father and daughter can celebrate our long-denied love.{\r}
+Dialogue: 0,1:14:10.70,1:14:11.70,Default,,0000,0000,0000,,‎你泪流满面的父亲\N{\rE}Your tearful father.{\r}
+Dialogue: 0,1:14:12.95,1:14:15.75,Default,,0000,0000,0000,,‎玛丽莲！\N{\rE}Marilyn! Marilyn! Marilyn!{\r}
+Dialogue: 0,1:14:15.83,1:14:22.83,Default,,0000,0000,0000,,‎（简拉塞尔 玛丽莲梦露 ‎《绅士爱美女》）
+Dialogue: 0,1:14:30.00,1:14:32.70,Default,,0000,0000,0000,,‎玛丽莲！\N{\rE}Marilyn! Marilyn!{\r}
+Dialogue: 0,1:14:34.58,1:14:37.00,Default,,0000,0000,0000,,‎能占用你一点时间吗？谢谢\N{\rE}Can I have a moment of your time, please? Thank you.{\r}
+Dialogue: 0,1:14:39.91,1:14:43.20,Default,,0000,0000,0000,,{\rE}Marilyn! Marilyn! Marilyn!{\r}
+Dialogue: 0,1:14:44.58,1:14:48.12,Default,,0000,0000,0000,,‎玛丽莲！\N{\rE}Marilyn! Marilyn! Marilyn!{\r}
+Dialogue: 0,1:14:50.29,1:14:51.54,Default,,0000,0000,0000,,‎我刚知道\N{\rE}I've just learned.{\r}
+Dialogue: 0,1:14:52.66,1:14:56.29,Default,,0000,0000,0000,,‎今晚一定要一个人回你的酒店套房\N{\rE}Be sure to go alone to your hotel suite tonight.{\r}
+Dialogue: 0,1:14:56.37,1:14:58.75,Default,,0000,0000,0000,,‎有个特别的人在那儿等你\N{\rE}Someone special will be waiting for you there.{\r}
+Dialogue: 0,1:15:00.58,1:15:02.00,Default,,0000,0000,0000,,‎特别的人？\N{\rE}Someone special? Oh.{\r}
+Dialogue: 0,1:15:13.12,1:15:14.29,Default,,0000,0000,0000,,‎是我父亲吗？\N{\rE}Is it my father?{\r}
+Dialogue: 0,1:15:28.95,1:15:32.79,Default,,0000,0000,0000,,‎玛丽莲 跟你的广播听众说说 ‎你今晚寂寞吗？\N{\rE}Marilyn, tell our radio audience. Are you lonely tonight?{\r}
+Dialogue: 0,1:15:34.33,1:15:36.25,Default,,0000,0000,0000,,‎你们俩什么时候结婚？\N{\rE}When are you two gonna get married?{\r}
+Dialogue: 0,1:15:37.29,1:15:38.29,Default,,0000,0000,0000,,‎结婚？\N{\rE}Married?{\r}
+Dialogue: 0,1:15:39.79,1:15:40.62,Default,,0000,0000,0000,,‎不\N{\rE}No.{\r}
+Dialogue: 0,1:15:59.95,1:16:02.04,Default,,0000,0000,0000,,‎他在这儿吗？我父亲？\N{\rE}Is he here? My father?{\r}
+Dialogue: 0,1:16:04.95,1:16:08.04,Default,,0000,0000,0000,,‎这就像一部冗长而困惑的 ‎电影的快乐大结局\N{\rE}It's like a happy ending of a long, confused movie.{\r}
+Dialogue: 0,1:16:08.12,1:16:09.16,Default,,0000,0000,0000,,‎你的父亲？\N{\rE}Your father?{\r}
+Dialogue: 0,1:16:12.08,1:16:14.37,Default,,0000,0000,0000,,‎我知道我有一个特别的约会\N{\rE}I understand that I have a special date?{\r}
+Dialogue: 0,1:16:16.04,1:16:18.95,Default,,0000,0000,0000,,‎在派对之后 就在我酒店套房里？\N{\rE}After the party, in my hotel suite?{\r}
+Dialogue: 0,1:16:29.70,1:16:34.54,Default,,0000,0000,0000,,‎法国人总爱为爱情献身
+Dialogue: 0,1:16:34.62,1:16:39.45,Default,,0000,0000,0000,,‎他们热衷决斗争胜
+Dialogue: 0,1:16:40.20,1:16:43.91,Default,,0000,0000,0000,,‎但我喜欢活着的男人
+Dialogue: 0,1:16:44.00,1:16:50.95,Default,,0000,0000,0000,,‎给我昂贵的珠宝首饰
+Dialogue: 0,1:16:51.04,1:16:53.20,Default,,0000,0000,0000,,‎执手轻吻
+Dialogue: 0,1:16:53.29,1:16:56.25,Default,,0000,0000,0000,,‎或许有些欧陆情调
+Dialogue: 0,1:16:56.33,1:16:59.91,Default,,0000,0000,0000,,‎但钻石是女孩最好的朋友
+Dialogue: 0,1:17:01.50,1:17:03.95,Default,,0000,0000,0000,,‎热吻也许美妙
+Dialogue: 0,1:17:04.66,1:17:08.37,Default,,0000,0000,0000,,‎但它不能支付你简陋公寓的房租
+Dialogue: 0,1:17:09.08,1:17:12.12,Default,,0000,0000,0000,,‎或者帮你在自动贩卖机买饮料
+Dialogue: 0,1:17:12.20,1:17:16.87,Default,,0000,0000,0000,,‎随着女孩变老 男人越发冷淡
+Dialogue: 0,1:17:16.95,1:17:21.25,Default,,0000,0000,0000,,‎我们最终都会失去魅力
+Dialogue: 0,1:17:22.33,1:17:27.54,Default,,0000,0000,0000,,‎但无论如何切割 这些石头永不变形
+Dialogue: 0,1:17:27.62,1:17:28.87,Default,,0000,0000,0000,,‎钻石是女孩最好的朋友…
+Dialogue: 0,1:17:28.95,1:17:30.12,Default,,0000,0000,0000,,‎爸爸\N{\rE}Oh, Daddy.{\r}
+Dialogue: 0,1:17:32.20,1:17:34.54,Default,,0000,0000,0000,,‎屏幕上的那个人不是我\N{\rE}That thing up on the screen, it isn't me.{\r}
+Dialogue: 0,1:17:34.62,1:17:35.62,Default,,0000,0000,0000,,‎蒂芙尼！
+Dialogue: 0,1:17:39.41,1:17:40.50,Default,,0000,0000,0000,,‎卡地亚！
+Dialogue: 0,1:17:43.08,1:17:44.50,Default,,0000,0000,0000,,‎布莱克斯塔尔！
+Dialogue: 0,1:17:44.58,1:17:45.87,Default,,0000,0000,0000,,‎弗雷斯特格雷姆！
+Dialogue: 0,1:17:45.95,1:17:48.45,Default,,0000,0000,0000,,‎跟我说说 海瑞温斯顿 ‎告诉我一切！
+Dialogue: 0,1:17:53.54,1:17:58.58,Default,,0000,0000,0000,,‎或许有一天 ‎年轻女孩也需要律师的关照
+Dialogue: 0,1:17:58.66,1:18:02.29,Default,,0000,0000,0000,,‎但钻石是女孩最好的朋友
+Dialogue: 0,1:18:08.37,1:18:09.41,Default,,0000,0000,0000,,‎好了
+Dialogue: 0,1:18:22.87,1:18:24.66,Default,,0000,0000,0000,,‎为了这一幕 你杀了你自己的孩子？\N{\rE}For this, you killed your baby?{\r}
+Dialogue: 0,1:19:03.75,1:19:04.75,Default,,0000,0000,0000,,‎爸爸？\N{\rE}Daddy?{\r}
+Dialogue: 0,1:19:14.37,1:19:15.37,Default,,0000,0000,0000,,‎宝贝\N{\rE}Baby.{\r}
+Dialogue: 0,1:19:20.79,1:19:21.79,Default,,0000,0000,0000,,‎是你\N{\rE}Oh, it's you.{\r}
+Dialogue: 0,1:19:31.45,1:19:32.62,Default,,0000,0000,0000,,‎玛丽莲 我…\NMarilyn, I…
+Dialogue: 0,1:19:34.41,1:19:36.12,Default,,0000,0000,0000,,‎我只想让你开心\N{\rE}I just want you to be happy.{\r}
+Dialogue: 0,1:19:43.12,1:19:44.37,Default,,0000,0000,0000,,‎我很开心\N{\rE}I am happy.{\r}
+Dialogue: 0,1:19:45.87,1:19:47.83,Default,,0000,0000,0000,,‎我这辈子都很开心\N{\rE}I've been happy all my life.{\r}
+Dialogue: 0,1:19:50.87,1:19:52.37,Default,,0000,0000,0000,,‎玛丽莲 我们爱着彼此\N{\rE}Marilyn, we love each other.{\r}
+Dialogue: 0,1:19:54.70,1:19:55.95,Default,,0000,0000,0000,,‎是时候结婚了\N{\rE}It's time we were married.{\r}
+Dialogue: 0,1:20:11.25,1:20:12.58,Default,,0000,0000,0000,,‎对 我猜是的\N{\rE}Yes, I guess.{\r}
+Dialogue: 0,1:20:28.58,1:20:32.50,Default,,0000,0000,0000,,‎嘿…\NHey… Hey. Hey.
+Dialogue: 0,1:20:32.58,1:20:34.41,Default,,0000,0000,0000,,‎我太爱你了\N{\rE}I just love you so much.{\r}
+Dialogue: 0,1:20:39.25,1:20:41.62,Default,,0000,0000,0000,,‎我只是想保护你免受那些豺狼伤害\N{\rE}I just want to protect you from all these jackals.{\r}
+Dialogue: 0,1:20:42.66,1:20:44.75,Default,,0000,0000,0000,,‎我想带你远离这一切\N{\rE}I want to take you away from all of this.{\r}
+Dialogue: 0,1:20:48.20,1:20:49.20,Default,,0000,0000,0000,,‎好啊\N{\rE}Yeah.{\r}
+Dialogue: 0,1:20:56.37,1:21:00.91,Default,,0000,0000,0000,,‎在你身上 世界重生\N{\rE}In you, the world is born anew{\r}
+Dialogue: 0,1:21:02.29,1:21:03.45,Default,,0000,0000,0000,,‎两人一起\N{\rE}As two{\r}
+Dialogue: 0,1:21:05.58,1:21:06.95,Default,,0000,0000,0000,,‎在你之前…\N{\rE}Before you{\r}
+Dialogue: 0,1:21:08.54,1:21:10.08,Default,,0000,0000,0000,,‎只有一人\N{\rE}There was but one{\r}
+Dialogue: 0,1:21:20.08,1:21:21.08,Default,,0000,0000,0000,,‎就这样？\N{\rE}-That's it, huh?{\r}
+Dialogue: 0,1:21:22.33,1:21:23.50,Default,,0000,0000,0000,,‎这就是整首诗吗？\N{\rE}-Is that the whole poem? -Huh?{\r}
+Dialogue: 0,1:21:25.04,1:21:27.12,Default,,0000,0000,0000,,‎-对 ‎-嗯 这很棒 亲爱的\N{\rE}-Yeah. -Well, it's good, honey.{\r}
+Dialogue: 0,1:21:38.16,1:21:39.79,Default,,0000,0000,0000,,‎人们会自己做意面？\N{\rE}People make spaghetti?{\r}
+Dialogue: 0,1:21:41.58,1:21:43.41,Default,,0000,0000,0000,,‎我是说 这不是店里才能买到的吗？\N{\rE}I mean, not just in a store?{\r}
+Dialogue: 0,1:21:49.87,1:21:51.41,Default,,0000,0000,0000,,‎这闻起来太香了\N{\rE}That smells delicious.{\r}
+Dialogue: 0,1:21:52.62,1:21:54.12,Default,,0000,0000,0000,,‎她不会做饭
+Dialogue: 0,1:21:55.08,1:21:56.00,Default,,0000,0000,0000,,‎我能试试吗？\N{\rE}Can I try it?{\r}
+Dialogue: 0,1:22:04.50,1:22:05.91,Default,,0000,0000,0000,,‎这是吃的吗？\N{\rE}Is this to eat?{\r}
+Dialogue: 0,1:22:06.75,1:22:08.12,Default,,0000,0000,0000,,‎我意思是 站着吃？\N{\rE}I mean, standing up?{\r}
+Dialogue: 0,1:22:13.41,1:22:15.91,Default,,0000,0000,0000,,‎玛丽莲 当电影明星是什么样的？\N{\rE}So, Marilyn, what's it like being a movie star?{\r}
+Dialogue: 0,1:22:19.04,1:22:21.08,Default,,0000,0000,0000,,‎我不是明星\N{\rE}I'm not a star.{\r}
+Dialogue: 0,1:22:21.16,1:22:23.00,Default,,0000,0000,0000,,‎我只是个普通的金发女郎\N{\rE}I'm just some blonde.{\r}
+Dialogue: 0,1:22:24.04,1:22:25.41,Default,,0000,0000,0000,,‎这头发是真的吗？\N{\rE}So the hair's real?{\r}
+Dialogue: 0,1:22:26.20,1:22:27.41,Default,,0000,0000,0000,,‎不是\N{\rE}No, no.{\r}
+Dialogue: 0,1:22:38.62,1:22:40.87,Default,,0000,0000,0000,,‎爸爸 太吓人了\N{\rE}Daddy, it's so scary{\r}
+Dialogue: 0,1:22:41.62,1:22:44.83,Default,,0000,0000,0000,,‎在真实生活中与人相处\N{\rE}how a scene with actual people{\r}
+Dialogue: 0,1:22:46.16,1:22:48.79,Default,,0000,0000,0000,,‎人来人往 永无止尽\N{\rE}just goes on and on.{\r}
+Dialogue: 0,1:22:49.58,1:22:50.79,Default,,0000,0000,0000,,‎就像在公交车上一样\N{\rE}Like on a bus.{\r}
+Dialogue: 0,1:22:54.20,1:22:55.54,Default,,0000,0000,0000,,‎有什么方法能停止吗？\N{\rE}What's to stop it?{\r}
+Dialogue: 0,1:22:56.37,1:22:57.20,Default,,0000,0000,0000,,‎或者…\NOr…
+Dialogue: 0,1:22:58.87,1:23:02.12,Default,,0000,0000,0000,,‎或者如何弄清楚人们的意图\N{\rE}Or how to figure out what people mean{\r}
+Dialogue: 0,1:23:02.20,1:23:04.50,Default,,0000,0000,0000,,‎而他们可能没什么特别的意思\N{\rE}when probably they don't mean anything.{\r}
+Dialogue: 0,1:23:08.12,1:23:09.45,Default,,0000,0000,0000,,‎不像剧本一样精心编排\N{\rE}Not like a script.{\r}
+Dialogue: 0,1:23:10.91,1:23:12.37,Default,,0000,0000,0000,,‎只是毫无意义的谈话\N{\rE}There's no point.{\r}
+Dialogue: 0,1:23:15.00,1:23:16.41,Default,,0000,0000,0000,,‎自然而然地发生\N{\rE}It just happens.{\r}
+Dialogue: 0,1:23:19.37,1:23:20.79,Default,,0000,0000,0000,,‎就像天气一样？\N{\rE}Like the weather?{\r}
+Dialogue: 0,1:23:26.83,1:23:28.58,Default,,0000,0000,0000,,‎亲爱的 在拳击里…\N{\rE}You know, honey, in boxing,{\r}
+Dialogue: 0,1:23:30.25,1:23:32.54,Default,,0000,0000,0000,,‎当一个人被打得很惨的时候\Nthey say, "That got his attention"…
+Dialogue: 0,1:23:34.75,1:23:36.41,Default,,0000,0000,0000,,‎人们说：“这引起了他的注意”\N{\rE}when a guy gets hit hard.{\r}
+Dialogue: 0,1:23:38.25,1:23:42.25,Default,,0000,0000,0000,,‎重点在于注意力 亲爱的 要专注\N{\rE}Well, it's about attention, honey. It's about concentration.{\r}
+Dialogue: 0,1:23:44.00,1:23:45.79,Default,,0000,0000,0000,,‎如果你不够专注 你…\NAnd if you don't have that…
+Dialogue: 0,1:24:35.08,1:24:37.12,Default,,0000,0000,0000,,‎我可以找人弄你们 王八蛋\N{\rE}I could have you hurt, you cocksuckers.{\r}
+Dialogue: 0,1:24:40.79,1:24:41.83,Default,,0000,0000,0000,,‎嘿 哟\N{\rE}-Hey, now.{\r}
+Dialogue: 0,1:24:43.83,1:24:45.58,Default,,0000,0000,0000,,‎这态度可不对\N{\rE}That's not the right attitude.{\r}
+Dialogue: 0,1:24:49.33,1:24:51.58,Default,,0000,0000,0000,,‎我们跟你是一伙的\N{\rE}I mean, we're on your side.{\r}
+Dialogue: 0,1:24:51.66,1:24:54.70,Default,,0000,0000,0000,,‎也站在女士这一边 她真的是个…\NAnd the lady's too. She's a real…
+Dialogue: 0,1:24:55.29,1:24:56.95,Default,,0000,0000,0000,,‎很高级的女士\N{\rE}High-class lady, in fact.{\r}
+Dialogue: 0,1:24:58.29,1:25:01.37,Default,,0000,0000,0000,,‎我们强烈地认为\N{\rE}What we feel, strongly,{\r}
+Dialogue: 0,1:25:01.45,1:25:05.25,Default,,0000,0000,0000,,‎这些不良照片应该远离市场…\N{\rE}is that these, uh, negatives, well, should be off the market.{\r}
+Dialogue: 0,1:25:07.00,1:25:10.00,Default,,0000,0000,0000,,‎那样它们就不能被滥用\N{\rE}So they can't be misappropriated.{\r}
+Dialogue: 0,1:25:46.83,1:25:47.95,Default,,0000,0000,0000,,‎他妈的在哪儿…\NWhere the fuck is…
+Dialogue: 0,1:25:51.08,1:25:53.00,Default,,0000,0000,0000,,‎嗨 爸爸 你去哪儿了？\N{\rE}Hi, Daddy. Where'd you go to?{\r}
+Dialogue: 0,1:26:00.54,1:26:03.66,Default,,0000,0000,0000,,‎哦 爸爸 这是我的错\N{\rE}Oh, Daddy. It's my fault.{\r}
+Dialogue: 0,1:26:04.83,1:26:08.33,Default,,0000,0000,0000,,‎我不知道房间怎么变成这样了 ‎我猜我病了\N{\rE}I don't know how the room got this way. I've been sick, I guess.{\r}
+Dialogue: 0,1:26:13.91,1:26:16.91,Default,,0000,0000,0000,,‎这些照片 那就是你 一具肉体\N{\rE}Those photos. That's what you are. Meat.{\r}
+Dialogue: 0,1:26:20.16,1:26:21.25,Default,,0000,0000,0000,,‎爸爸 不\N{\rE}Daddy, no.{\r}
+Dialogue: 0,1:26:23.25,1:26:24.91,Default,,0000,0000,0000,,‎我不希望如此\N{\rE}I don't want to be.{\r}
+Dialogue: 0,1:26:27.41,1:26:28.58,Default,,0000,0000,0000,,‎告诉他们你不演\N{\rE}Tell them you won't.{\r}
+Dialogue: 0,1:26:29.50,1:26:31.16,Default,,0000,0000,0000,,‎这部新电影？不演\N{\rE}This new movie? No deal.{\r}
+Dialogue: 0,1:26:33.08,1:26:34.75,Default,,0000,0000,0000,,‎爸爸 我得工作\N{\rE}Daddy, I have to work.{\r}
+Dialogue: 0,1:26:35.83,1:26:37.25,Default,,0000,0000,0000,,‎这是我的生命\N{\rE}It's my life.{\r}
+Dialogue: 0,1:26:39.00,1:26:41.08,Default,,0000,0000,0000,,‎告诉他们你想要更好的角色\N{\rE}You tell them you want better roles.{\r}
+Dialogue: 0,1:26:42.33,1:26:44.45,Default,,0000,0000,0000,,‎更严肃的角色 告诉他们你要退出\N{\rE}More serious roles. You tell them you're quitting.{\r}
+Dialogue: 0,1:26:44.54,1:26:47.45,Default,,0000,0000,0000,,‎告诉他们你丈夫让你退出\N{\rE}You tell them your husband says you're quitting.{\r}
+Dialogue: 0,1:26:48.41,1:26:49.25,Default,,0000,0000,0000,,‎好\N{\rE}Yes.{\r}
+Dialogue: 0,1:26:50.83,1:26:52.50,Default,,0000,0000,0000,,‎好 我会告诉他们\N{\rE}Yes, I will tell them.{\r}
+Dialogue: 0,1:27:15.50,1:27:18.41,Default,,0000,0000,0000,,‎你不知道我有多爱你吗？ ‎你不明白吗？\N{\rE}Don't you see how much I love you? Don't you understand?{\r}
+Dialogue: 0,1:27:18.50,1:27:19.79,Default,,0000,0000,0000,,‎我知道\N{\rE}I know.{\r}
+Dialogue: 0,1:27:21.91,1:27:24.25,Default,,0000,0000,0000,,‎我不忍心看到你这样作贱自己\N{\rE}I can't bear to see you cheapen yourself like that.{\r}
+Dialogue: 0,1:27:26.75,1:27:30.45,Default,,0000,0000,0000,,‎最后我只是为这个生物感到遗憾\N{\rE}I just felt so sorry for the creature at the end.{\r}
+Dialogue: 0,1:27:31.62,1:27:32.87,Default,,0000,0000,0000,,‎“为这个生物感到遗憾？”\N{\rE}"Sorry for the creature"?{\r}
+Dialogue: 0,1:27:33.91,1:27:36.33,Default,,0000,0000,0000,,‎你要他做什么？娶那个女孩？\N{\rE}What'd you want him to do? Marry the girl?{\r}
+Dialogue: 0,1:27:36.41,1:27:40.70,Default,,0000,0000,0000,,‎他长得确实有点吓人 ‎但他并没有坏透顶\N{\rE}He was kind of scary-looking, but he wasn't really all bad.{\r}
+Dialogue: 0,1:27:41.41,1:27:44.54,Default,,0000,0000,0000,,‎我想他只是渴望一点感情 ‎你知道吗？\N{\rE}I think he just craved a little affection, you know?{\r}
+Dialogue: 0,1:27:44.62,1:27:47.79,Default,,0000,0000,0000,,‎一种被爱、被需要、被渴望的感觉\N{\rE}A sense of being loved and needed and wanted.{\r}
+Dialogue: 0,1:27:48.66,1:27:50.41,Default,,0000,0000,0000,,‎这个观点非常有趣\N{\rE}That's a very interesting point of view.{\r}
+Dialogue: 0,1:27:52.66,1:27:56.79,Default,,0000,0000,0000,,‎你感受到地铁的微风了吗？ ‎真舒服 不是吗？\N{\rE}You feel the breeze from the subway? Isn't it delicious?{\r}
+Dialogue: 0,1:27:58.79,1:28:00.75,Default,,0000,0000,0000,,‎脚踝感觉凉凉的吧？\N{\rE}Sort of cools the ankles, doesn't it?{\r}
+Dialogue: 0,1:28:03.00,1:28:04.79,Default,,0000,0000,0000,,‎你觉得现在做什么会很有趣？\N{\rE}What do you think would be fun to do now?{\r}
+Dialogue: 0,1:28:05.50,1:28:06.41,Default,,0000,0000,0000,,‎停！\N{\rE}And cut!{\r}
+Dialogue: 0,1:29:19.87,1:29:21.37,Default,,0000,0000,0000,,‎真舒服 不是吗？\N{\rE}Isn't it delicious?{\r}
+Dialogue: 0,1:30:39.25,1:30:40.25,Default,,0000,0000,0000,,‎爸爸？\N{\rE}Daddy?{\r}
+Dialogue: 0,1:30:45.08,1:30:47.66,Default,,0000,0000,0000,,‎爸爸 天啊 抱歉…\N{\rE}Daddy, gosh, I'm sorry.{\r}
+Dialogue: 0,1:30:48.70,1:30:50.87,Default,,0000,0000,0000,,‎-让你等了这么久 ‎-她来了\N{\rE}-Keeping you waiting so long. -There she is.{\r}
+Dialogue: 0,1:30:52.95,1:30:54.20,Default,,0000,0000,0000,,‎你为自己而骄傲？\N{\rE}You proud of yourself, hmm?{\r}
+Dialogue: 0,1:30:55.83,1:30:56.70,Default,,0000,0000,0000,,‎不\N{\rE}No.{\r}
+Dialogue: 0,1:30:56.79,1:30:58.20,Default,,0000,0000,0000,,‎你为自己而骄傲吗？\N{\rE}Are you proud of yourself, huh?{\r}
+Dialogue: 0,1:30:58.29,1:31:00.79,Default,,0000,0000,0000,,‎-爸爸 不… ‎-别碰我\N-Daddy, don't… -Don't touch me. Don't touch me.
+Dialogue: 0,1:31:00.87,1:31:02.16,Default,,0000,0000,0000,,‎-请别… ‎-你很得意吧？\N-Please… -Proud of yourself?
+Dialogue: 0,1:31:02.25,1:31:04.04,Default,,0000,0000,0000,,‎-什么？ ‎-不\N{\rE}-What? Huh? Huh? -No.{\r}
+Dialogue: 0,1:31:04.12,1:31:06.54,Default,,0000,0000,0000,,‎-我明天要工作 ‎-把你的私处露给所有人看？\N{\rE}-I'm workin' tomorrow. -Showing off your crotch?{\r}
+Dialogue: 0,1:31:06.62,1:31:08.00,Default,,0000,0000,0000,,‎拜托别\N{\rE}-Please don't. -Huh? Huh?{\r}
+Dialogue: 0,1:31:08.08,1:31:11.33,Default,,0000,0000,0000,,‎你觉得我吃那套吗？是吗？\N{\rE}You think that shit works on me? Think that works on me? Oh, yeah?{\r}
+Dialogue: 0,1:31:11.41,1:31:14.58,Default,,0000,0000,0000,,‎所有人都会知道你他妈是个婊子！\N{\rE}Everybody, they're gonna fuckin' know what a fuckin' whore you are!{\r}
+Dialogue: 0,1:31:14.66,1:31:16.25,Default,,0000,0000,0000,,‎操 起来！\N{\rE}Fuckin' get up! Huh? Huh?{\r}
+Dialogue: 0,1:31:17.58,1:31:18.70,Default,,0000,0000,0000,,‎臭婊子！\N{\rE}-You fucking whore! Huh?{\r}
+Dialogue: 0,1:31:19.70,1:31:22.62,Default,,0000,0000,0000,,‎来这儿！\N{\rE}-Get over here! Get over here!{\r}
+Dialogue: 0,1:31:22.70,1:31:24.54,Default,,0000,0000,0000,,‎我亲爱的女儿 诺玛简\N{\rE}My dear daughter, Norma Jeane.{\r}
+Dialogue: 0,1:31:26.41,1:31:28.33,Default,,0000,0000,0000,,‎我没有看你的新电影\N{\rE}I did not see your new movie.{\r}
+Dialogue: 0,1:31:29.66,1:31:32.79,Default,,0000,0000,0000,,‎那粗俗的标题和宣传\N{\rE}Its vulgar title and publicity attending it,{\r}
+Dialogue: 0,1:31:32.87,1:31:36.83,Default,,0000,0000,0000,,‎在那些丑化你的巨型广告牌上\N{\rE}these giant billboards of your crude likeness{\r}
+Dialogue: 0,1:31:36.91,1:31:39.41,Default,,0000,0000,0000,,‎你的裙子飘起来 ‎让全世界看你的私处\N{\rE}posed with your dress lifted up for all the world to see your private parts,{\r}
+Dialogue: 0,1:31:39.50,1:31:41.79,Default,,0000,0000,0000,,‎这一切让我不想买票看你的表演\N{\rE}did not make me wish to purchase a ticket.{\r}
+Dialogue: 0,1:31:45.62,1:31:46.45,Default,,0000,0000,0000,,‎操…\N-Fuckin'… Huh?
+Dialogue: 0,1:31:48.62,1:31:50.58,Default,,0000,0000,0000,,‎我本来希望见见你的丈夫\N{\rE}I had hoped to meet your husband.{\r}
+Dialogue: 0,1:31:51.37,1:31:53.37,Default,,0000,0000,0000,,‎我一直是他的崇拜者\N{\rE}I've long been an admirer of his.{\r}
+Dialogue: 0,1:31:54.95,1:31:58.70,Default,,0000,0000,0000,,‎我很失望你跟如此一流的运动员\N{\rE}I was disappointed that your marriage to such a stellar athlete{\r}
+Dialogue: 0,1:31:58.79,1:32:01.75,Default,,0000,0000,0000,,‎以离婚收场 而且宣传如此拙劣\N{\rE}ended in divorce and such ugly publicity.{\r}
+Dialogue: 0,1:32:04.41,1:32:07.12,Default,,0000,0000,0000,,‎幸好你们没有孩子 他们不必受侮辱\N{\rE}At least there are no children to reap the shame.{\r}
+Dialogue: 0,1:32:26.83,1:32:29.04,Default,,0000,0000,0000,,‎（玛格达 1930年）
+Dialogue: 0,1:32:33.70,1:32:34.75,Default,,0000,0000,0000,,‎我的玛格达\N{\rE}My Magda.{\r}
+Dialogue: 0,1:32:36.25,1:32:38.41,Default,,0000,0000,0000,,‎（剧院后门）
+Dialogue: 0,1:32:38.50,1:32:39.62,Default,,0000,0000,0000,,‎我的玛格达\N{\rE}My Magda.{\r}
+Dialogue: 0,1:32:41.20,1:32:48.16,Default,,0000,0000,0000,,‎玛格达\N{\rE}Magda. Magda. Magda.{\r}
+Dialogue: 0,1:32:50.91,1:32:52.00,Default,,0000,0000,0000,,‎玛格达\N{\rE}Magda.{\r}
+Dialogue: 0,1:33:16.62,1:33:20.37,Default,,0000,0000,0000,,‎（纽约城 1955年）
+Dialogue: 0,1:33:40.75,1:33:41.83,Default,,0000,0000,0000,,‎玛丽莲梦露？\N{\rE}Marilyn Monroe?{\r}
+Dialogue: 0,1:33:44.16,1:33:45.08,Default,,0000,0000,0000,,‎在这儿？\N{\rE}Here?{\r}
+Dialogue: 0,1:33:47.75,1:33:49.50,Default,,0000,0000,0000,,‎玛格达？她来演？\N{\rE}Magda? Her?{\r}
+Dialogue: 0,1:33:50.87,1:33:55.37,Default,,0000,0000,0000,,‎“当我梦到那儿的时候 ‎我梦到了洗衣房的气味\N{\rE}"When I dream of back there, I dream of the smell of laundry."{\r}
+Dialogue: 0,1:33:56.70,1:34:02.50,Default,,0000,0000,0000,,‎浴缸里满是水 我写的诗 ‎《玛格达》浸湿了 漂在水面\N{\rE}"The tub overflowing and the poem I wrote, 'Magda,' floating, soaked."{\r}
+Dialogue: 0,1:34:03.41,1:34:05.37,Default,,0000,0000,0000,,‎我疯了似地试着捞起纸页\N{\rE}"I'm frantically trying to collect the pages{\r}
+Dialogue: 0,1:34:05.45,1:34:08.70,Default,,0000,0000,0000,,‎在墨水褪去前 ‎在诗歌在我手中分崩离析前”\N{\rE}before the ink runs in streaks and the poem comes apart in my hands."{\r}
+Dialogue: 0,1:34:10.54,1:34:11.87,Default,,0000,0000,0000,,‎他爱上她了\N{\rE}He's in love with her.{\r}
+Dialogue: 0,1:34:12.75,1:34:14.50,Default,,0000,0000,0000,,‎“这是我写给她的话…\N"These words I wrote her…"
+Dialogue: 0,1:34:14.58,1:34:16.33,Default,,0000,0000,0000,,‎两百个字\N{\rE}"Two hundred words."{\r}
+Dialogue: 0,1:34:16.41,1:34:19.20,Default,,0000,0000,0000,,‎一种祈祷\N"A kind of… prayer."
+Dialogue: 0,1:34:21.04,1:34:24.20,Default,,0000,0000,0000,,‎大约40年后 我在布鲁克林醒来\N{\rE}"And I wake in Brooklyn, nearly 40 years later,{\r}
+Dialogue: 0,1:34:24.29,1:34:25.91,Default,,0000,0000,0000,,‎我的心脏在胸腔跳动着\N{\rE}my heart knocking in my chest."{\r}
+Dialogue: 0,1:34:27.12,1:34:29.66,Default,,0000,0000,0000,,‎我记得她的脸 微微泛红\N{\rE}"And I remember her face, blushing,{\r}
+Dialogue: 0,1:34:30.75,1:34:34.41,Default,,0000,0000,0000,,‎她那双美丽的大眼睛 ‎从诗中抬起头 说…”\Nand her beautiful wide-set eyes looking up from the poem, and saying…"
+Dialogue: 0,1:34:40.66,1:34:42.00,Default,,0000,0000,0000,,‎不是我的玛格达\N{\rE}Not my Magda.{\r}
+Dialogue: 0,1:35:56.37,1:36:03.00,Default,,0000,0000,0000,,‎（玛丽莲梦露 汤姆伊威尔 ‎出演《七年之痒》）
+Dialogue: 0,1:36:03.08,1:36:05.91,Default,,0000,0000,0000,,‎玛格达是我自己的初恋\N{\rE}Magda was my own first love.{\r}
+Dialogue: 0,1:36:08.91,1:36:10.41,Default,,0000,0000,0000,,‎我们从未做过爱\N{\rE}Never consummated.{\r}
+Dialogue: 0,1:36:12.54,1:36:14.37,Default,,0000,0000,0000,,‎我们甚至没公开\N{\rE}Never even really declared.{\r}
+Dialogue: 0,1:36:18.95,1:36:20.20,Default,,0000,0000,0000,,‎如果她还活着\N{\rE}She would be,{\r}
+Dialogue: 0,1:36:21.95,1:36:25.75,Default,,0000,0000,0000,,‎她现在应该五十多岁了\Nif she was even still alive, in her… in her mid-fifties.
+Dialogue: 0,1:36:28.54,1:36:29.79,Default,,0000,0000,0000,,‎美丽的玛格达\N{\rE}Beautiful Magda.{\r}
+Dialogue: 0,1:36:31.16,1:36:32.12,Default,,0000,0000,0000,,‎中年女人\N{\rE}Middle-aged.{\r}
+Dialogue: 0,1:36:41.83,1:36:42.66,Default,,0000,0000,0000,,‎我…\NI…
+Dialogue: 0,1:36:43.91,1:36:47.41,Default,,0000,0000,0000,,‎关于玛格达 我有一些想法\N{\rE}I had some ideas about Magda,{\r}
+Dialogue: 0,1:36:48.41,1:36:49.70,Default,,0000,0000,0000,,‎如果你感兴趣的话\N{\rE}if you're interested.{\r}
+Dialogue: 0,1:36:51.87,1:36:53.37,Default,,0000,0000,0000,,‎当然了 我很感兴趣\N{\rE}Of course I'm interested.{\r}
+Dialogue: 0,1:36:55.79,1:36:57.29,Default,,0000,0000,0000,,‎你这么用心非常好\N{\rE}It's very good of you to care.{\r}
+Dialogue: 0,1:37:01.70,1:37:07.16,Default,,0000,0000,0000,,‎这姑娘 玛格达 ‎她就像《三姐妹》中的娜塔莎\N{\rE}Um, this girl, Magda, she's like Natasha in The Three Sisters.{\r}
+Dialogue: 0,1:37:07.25,1:37:10.16,Default,,0000,0000,0000,,‎就是因为裙子颜色不对 ‎被人嘲笑那个\N{\rE}The one they laugh at because her dress is the wrong color.{\r}
+Dialogue: 0,1:37:10.79,1:37:13.08,Default,,0000,0000,0000,,‎不过玛格达被人嘲笑 ‎是因为她说的英语\N{\rE}Except, with Magda, it's the way she speaks English.{\r}
+Dialogue: 0,1:37:16.50,1:37:18.20,Default,,0000,0000,0000,,‎谁告诉你的？\N{\rE}Who told you that?{\r}
+Dialogue: 0,1:37:20.87,1:37:21.70,Default,,0000,0000,0000,,‎什么？\N{\rE}What?{\r}
+Dialogue: 0,1:37:23.50,1:37:26.33,Default,,0000,0000,0000,,‎关于《三姐妹》和我的剧的事？\N{\rE}About The Three Sisters and my play?{\r}
+Dialogue: 0,1:37:33.37,1:37:35.45,Default,,0000,0000,0000,,‎-没人 ‎-卡赞？\N{\rE}-Nobody. -Kazan?{\r}
+Dialogue: 0,1:37:37.29,1:37:38.91,Default,,0000,0000,0000,,‎说我受了那部作品的影响？\N{\rE}That I'd been influenced?{\r}
+Dialogue: 0,1:37:41.00,1:37:41.83,Default,,0000,0000,0000,,‎不是\N{\rE}Uh, no.{\r}
+Dialogue: 0,1:37:44.25,1:37:47.37,Default,,0000,0000,0000,,‎不 我自己读的剧本\N{\rE}No, I read the play myself.{\r}
+Dialogue: 0,1:37:48.83,1:37:50.12,Default,,0000,0000,0000,,‎我总觉得我…\NI always thought I…
+Dialogue: 0,1:37:54.20,1:37:56.58,Default,,0000,0000,0000,,‎我总觉得我可以演娜塔莎\N{\rE}I always thought I could play Natasha.{\r}
+Dialogue: 0,1:38:02.75,1:38:08.08,Default,,0000,0000,0000,,‎我在想 契诃夫塑造的娜塔莎 他…\NI was thinking, what Chekhov does with Natasha, he… he…
+Dialogue: 0,1:38:09.08,1:38:10.79,Default,,0000,0000,0000,,他会让你惊讶…\NHe… he surprises you,
+Dialogue: 0,1:38:12.16,1:38:16.08,Default,,0000,0000,0000,,‎因为娜塔莎原来如此坚强、狡猾\N{\rE}because Natasha turns out to be so strong and devious.{\r}
+Dialogue: 0,1:38:17.12,1:38:18.20,Default,,0000,0000,0000,,‎而且残忍\N{\rE}And cruel.{\r}
+Dialogue: 0,1:38:20.16,1:38:24.12,Default,,0000,0000,0000,,‎但你的玛格达 她没有大的变化\N{\rE}But your Magda, she never changes much.{\r}
+Dialogue: 0,1:38:24.20,1:38:25.91,Default,,0000,0000,0000,,‎她一直都很好\N{\rE}She's always so good.{\r}
+Dialogue: 0,1:38:26.00,1:38:27.00,Default,,0000,0000,0000,,‎是的\N{\rE}Yes.{\r}
+Dialogue: 0,1:38:28.04,1:38:29.12,Default,,0000,0000,0000,,‎玛格达很好\N{\rE}Magda is good.{\r}
+Dialogue: 0,1:38:29.95,1:38:31.50,Default,,0000,0000,0000,,‎她的原型就是个好人\N{\rE}Was good. The original.{\r}
+Dialogue: 0,1:38:34.00,1:38:36.29,Default,,0000,0000,0000,,‎她决不会想做个残忍的人\N{\rE}She wouldn't dream of being cruel.{\r}
+Dialogue: 0,1:38:39.37,1:38:40.20,Default,,0000,0000,0000,,‎对\N{\rE}Yeah.{\r}
+Dialogue: 0,1:38:44.00,1:38:48.54,Default,,0000,0000,0000,,‎你对玛格达有其他的想法吗？\N{\rE}And, uh, you have any other thoughts about Magda?{\r}
+Dialogue: 0,1:38:59.83,1:39:01.25,Default,,0000,0000,0000,,‎我在想…\N{\rE}One thing I was thinking,{\r}
+Dialogue: 0,1:39:02.70,1:39:04.45,Default,,0000,0000,0000,,‎玛格达应该不识字\N{\rE}Magda wouldn't know how to read.{\r}
+Dialogue: 0,1:39:05.66,1:39:08.91,Default,,0000,0000,0000,,‎伊萨克把他的诗给她看 ‎她只是假装在读\N{\rE}Isaac shows his poem to her, and she's only pretending to read it.{\r}
+Dialogue: 0,1:39:14.25,1:39:15.45,Default,,0000,0000,0000,,‎天啊\N{\rE}Oh my God.{\r}
+Dialogue: 0,1:39:18.12,1:39:20.25,Default,,0000,0000,0000,,‎她是文盲 就是这样\N{\rE}She was illiterate. That's what it was.{\r}
+Dialogue: 0,1:39:24.33,1:39:25.29,Default,,0000,0000,0000,,‎当然了\N{\rE}Of course.{\r}
+Dialogue: 0,1:39:28.87,1:39:31.08,Default,,0000,0000,0000,,‎谢谢你\N{\rE}Well, thank you. Thank you.{\r}
+Dialogue: 0,1:39:39.91,1:39:43.41,Default,,0000,0000,0000,,‎我应该叫你玛丽莲 对吧？\NI… I suppose I should call you Marilyn, shouldn't I?
+Dialogue: 0,1:39:46.25,1:39:48.00,Default,,0000,0000,0000,,‎还是那只是艺名吗？\N{\rE}Or is that just a stage name?{\r}
+Dialogue: 0,1:39:49.33,1:39:50.79,Default,,0000,0000,0000,,‎你可以叫我诺玛\N{\rE}You could call me Norma.{\r}
+Dialogue: 0,1:39:51.91,1:39:53.29,Default,,0000,0000,0000,,‎那是我真正的名字\N{\rE}That's my true name.{\r}
+Dialogue: 0,1:39:54.50,1:39:57.25,Default,,0000,0000,0000,,‎如果你喜欢的话 我可以叫你诺玛\N{\rE}I could call you Norma, if you prefer.{\r}
+Dialogue: 0,1:39:59.95,1:40:02.83,Default,,0000,0000,0000,,‎或者我可以叫你…\NOr, uh, I could call you, uh…
+Dialogue: 0,1:40:05.00,1:40:06.04,Default,,0000,0000,0000,,‎我的玛格达\N{\rE}my Magda.{\r}
+Dialogue: 0,1:40:10.04,1:40:11.08,Default,,0000,0000,0000,,‎我很喜欢\N{\rE}I'd like that.{\r}
+Dialogue: 0,1:40:12.08,1:40:13.54,Default,,0000,0000,0000,,‎我的秘密玛格达\N{\rE}My secret Magda.{\r}
+Dialogue: 0,1:40:14.54,1:40:15.37,Default,,0000,0000,0000,,‎好\N{\rE}Yes.{\r}
+Dialogue: 0,1:40:16.33,1:40:19.41,Default,,0000,0000,0000,,‎但其他人在旁边的时候 ‎或许该叫玛丽莲\N{\rE}But maybe "Marilyn" when others are around{\r}
+Dialogue: 0,1:40:19.50,1:40:22.08,Default,,0000,0000,0000,,‎这样就不会有人误解了\N{\rE}so there wouldn't be any misunderstandings.{\r}
+Dialogue: 0,1:40:22.16,1:40:25.12,Default,,0000,0000,0000,,‎别人在身边的时候 ‎你叫我什么都不重要\N{\rE}When others are around, it doesn't matter what you call me.{\r}
+Dialogue: 0,1:40:25.20,1:40:26.37,Default,,0000,0000,0000,,‎你可以吹口哨\N{\rE}You can whistle.{\r}
+Dialogue: 0,1:40:27.25,1:40:29.25,Default,,0000,0000,0000,,‎你可以叫我：“嘿 你”\N{\rE}You can call me, "Hey, you."{\r}
+Dialogue: 0,1:40:33.70,1:40:34.79,Default,,0000,0000,0000,,‎嘿 你\N{\rE}Hey, you.{\r}
+Dialogue: 0,1:40:38.29,1:40:39.29,Default,,0000,0000,0000,,‎嘿 你\N{\rE}Hey, you.{\r}
+Dialogue: 0,1:40:43.95,1:40:45.75,Default,,0000,0000,0000,,‎（亚瑟米勒和玛丽莲梦露即将结婚）
+Dialogue: 0,1:40:45.83,1:40:47.41,Default,,0000,0000,0000,,‎所有猜想最终尘埃落定\N{\rE}Putting an end to all speculation,{\r}
+Dialogue: 0,1:40:47.50,1:40:52.16,Default,,0000,0000,0000,,‎亚瑟米勒和玛丽莲梦露 ‎确认他们很快就会结婚\N{\rE}Arthur Miller and Marilyn Monroe confirmed they will soon marry.{\r}
+Dialogue: 0,1:40:52.25,1:40:55.33,Default,,0000,0000,0000,,‎能告诉我们你们会举行哪种婚礼吗？\N{\rE}Could you tell us what kind of a wedding you're going to have?{\r}
+Dialogue: 0,1:40:55.41,1:40:57.33,Default,,0000,0000,0000,,‎希望是很安静的那种\N{\rE}Very quiet, I hope.{\r}
+Dialogue: 0,1:41:03.75,1:41:05.91,Default,,0000,0000,0000,,‎爸爸 这太漂亮了！\N{\rE}Daddy, this is so beautiful!{\r}
+Dialogue: 0,1:41:06.75,1:41:08.33,Default,,0000,0000,0000,,‎我永远不想离开！\N{\rE}I don't ever wanna leave!{\r}
+Dialogue: 0,1:41:27.25,1:41:28.75,Default,,0000,0000,0000,,‎这太美了\N{\rE}It's so beautiful.{\r}
+Dialogue: 0,1:41:32.87,1:41:34.20,Default,,0000,0000,0000,,‎哦 爸爸！\N{\rE}Oh, Daddy!{\r}
+Dialogue: 0,1:41:36.16,1:41:37.66,Default,,0000,0000,0000,,‎我永远不想离开\N{\rE}I don't ever want to leave.{\r}
+Dialogue: 0,1:42:14.70,1:42:15.91,Default,,0000,0000,0000,,‎我爱你\N{\rE}I love you.{\r}
+Dialogue: 0,1:42:25.50,1:42:26.70,Default,,0000,0000,0000,,‎我们爱你\N{\rE}We love you.{\r}
+Dialogue: 0,1:42:51.87,1:42:53.00,Default,,0000,0000,0000,,‎爸爸 来吧\N{\rE}Daddy, come on.{\r}
+Dialogue: 0,1:42:54.58,1:42:58.08,Default,,0000,0000,0000,,‎宝宝饿了 他想让他的妈妈吃东西\N{\rE}Baby's hungry. He wants his mama to eat.{\r}
+Dialogue: 0,1:42:58.16,1:42:59.00,Default,,0000,0000,0000,,‎是吗？\N{\rE}Mm, yeah?{\r}
+Dialogue: 0,1:43:04.08,1:43:05.70,Default,,0000,0000,0000,,‎宝宝把愿望告诉了我\N{\rE}Baby makes his wishes known.{\r}
+Dialogue: 0,1:43:06.37,1:43:07.75,Default,,0000,0000,0000,,‎诺玛只是执行宝宝的愿望\N{\rE}Norma's just the vessel.{\r}
+Dialogue: 0,1:43:09.29,1:43:10.37,Default,,0000,0000,0000,,‎好的\N{\rE}Okay.{\r}
+Dialogue: 0,1:43:11.66,1:43:13.70,Default,,0000,0000,0000,,‎吃完土豆以后才行\N{\rE}Not after those potatoes.{\r}
+Dialogue: 0,1:43:22.58,1:43:24.45,Default,,0000,0000,0000,,‎我是你的好女孩吗 爸爸？\N{\rE}Am I your good girl, Daddy?{\r}
+Dialogue: 0,1:43:27.25,1:43:29.66,Default,,0000,0000,0000,,‎是的 你是我的好女孩 亲爱的\N{\rE}Yeah. You're my good girl, darling.{\r}
+Dialogue: 0,1:43:35.12,1:43:36.12,Default,,0000,0000,0000,,‎靠过来\N{\rE}Come here.{\r}
+Dialogue: 0,1:43:38.79,1:43:40.45,Default,,0000,0000,0000,,‎你是我唯一的爱\N{\rE}You're my only love.{\r}
+Dialogue: 0,1:44:36.00,1:44:40.12,Default,,0000,0000,0000,,‎爸爸 你永远都不会写我的 对吗？\N{\rE}Daddy, you won't ever write about me, will you?{\r}
+Dialogue: 0,1:44:41.33,1:44:43.66,Default,,0000,0000,0000,,‎亲爱的 当然不写了\N{\rE}Darling, of course not.{\r}
+Dialogue: 0,1:44:45.83,1:44:47.29,Default,,0000,0000,0000,,‎我为什么要做这种事？\N{\rE}Why would I do such a thing?{\r}
+Dialogue: 0,1:44:47.37,1:44:49.00,Default,,0000,0000,0000,,‎人们都会这么做\N{\rE}It's what people do.{\r}
+Dialogue: 0,1:44:50.29,1:44:51.20,Default,,0000,0000,0000,,‎有时吧\N{\rE}Sometimes.{\r}
+Dialogue: 0,1:44:52.54,1:44:53.41,Default,,0000,0000,0000,,‎作家会\N{\rE}Writers.{\r}
+Dialogue: 0,1:44:54.62,1:44:56.08,Default,,0000,0000,0000,,‎我不是其他人\N{\rE}I'm not other people.{\r}
+Dialogue: 0,1:44:57.16,1:44:58.87,Default,,0000,0000,0000,,‎你和我都不是其他普通人\N{\rE}You and I are not other people.{\r}
+Dialogue: 0,1:45:07.79,1:45:11.66,Default,,0000,0000,0000,,‎亲爱的 你消失的时候会去哪儿？\N{\rE}Darling,\Nwhere do you go when you disappear?{\r}
+Dialogue: 0,1:45:18.37,1:45:19.20,Default,,0000,0000,0000,,‎爸爸…\NDaddy…
+Dialogue: 0,1:45:23.95,1:45:25.62,Default,,0000,0000,0000,,‎别让我回去\N{\rE}Don't make me go back.{\r}
+Dialogue: 0,1:45:29.54,1:45:31.58,Default,,0000,0000,0000,,‎我不想再做她了\N{\rE}I never wanna be her again.{\r}
+Dialogue: 0,1:45:37.29,1:45:41.58,Default,,0000,0000,0000,,‎我上次活着离开了 但也丢了半条命\N{\rE}I got out with my life last time but only just barely.{\r}
+Dialogue: 0,1:45:45.50,1:45:46.79,Default,,0000,0000,0000,,‎对 她很好\N{\rE}Yeah, she's wonderful.{\r}
+Dialogue: 0,1:45:48.83,1:45:50.95,Default,,0000,0000,0000,,‎对 她怀孕了很高兴\N{\rE}Yeah, pregnancy agrees with her.{\r}
+Dialogue: 0,1:45:52.25,1:45:54.62,Default,,0000,0000,0000,,‎甚至连每天的晨吐都让她很高兴\N{\rE}Even morning sickness, she's cheerful about.{\r}
+Dialogue: 0,1:45:56.70,1:45:57.75,Default,,0000,0000,0000,,‎然后她说\N{\rE}And then she says, "Oh!"{\r}
+Dialogue: 0,1:45:58.79,1:46:01.75,Default,,0000,0000,0000,,‎“我猜就应该是这样的”\N{\rE}"Well, this is how it's supposed to be, I guess."{\r}
+Dialogue: 0,1:46:05.00,1:46:08.87,Default,,0000,0000,0000,,‎对 艾斯特总是那么残忍\N{\rE}Yeah. Esther was always so cruel.{\r}
+Dialogue: 0,1:46:10.62,1:46:12.62,Default,,0000,0000,0000,,‎诺玛不会想变得残忍\N{\rE}It wouldn't occur to Norma to be cruel.{\r}
+Dialogue: 0,1:46:15.95,1:46:17.45,Default,,0000,0000,0000,,‎如果说我有遗憾…\NIf I have one regret…
+Dialogue: 0,1:46:19.29,1:46:21.45,Default,,0000,0000,0000,,‎那就是时间过得太快了\N…it's that time passes so quickly.
+Dialogue: 0,1:46:32.87,1:46:34.87,Default,,0000,0000,0000,,‎你这次不会伤害我吧？\N{\rE}You won't hurt me this time, will you?{\r}
+Dialogue: 0,1:46:36.91,1:46:40.50,Default,,0000,0000,0000,,‎不会做你上次做的事吧？\N{\rE}Not do what you did the last time?{\r}
+Dialogue: 0,1:46:43.91,1:46:45.04,Default,,0000,0000,0000,,‎我没有\N{\rE}I didn't.{\r}
+Dialogue: 0,1:46:48.58,1:46:52.25,Default,,0000,0000,0000,,‎-我不是故意的 ‎-你就是故意的\N{\rE}-I didn't mean to. -Yes, you meant to.{\r}
+Dialogue: 0,1:46:52.33,1:46:53.54,Default,,0000,0000,0000,,‎那是你的决定\N{\rE}It was your decision.{\r}
+Dialogue: 0,1:46:58.41,1:47:00.41,Default,,0000,0000,0000,,‎你不是同一个孩子\N{\rE}You're not the same baby.{\r}
+Dialogue: 0,1:47:02.45,1:47:03.91,Default,,0000,0000,0000,,‎你是这个孩子\N{\rE}You're this baby.{\r}
+Dialogue: 0,1:47:04.75,1:47:08.20,Default,,0000,0000,0000,,‎以前那个是我 一直都是我\N{\rE}That was me. It's always me.{\r}
+Dialogue: 0,1:47:13.16,1:47:14.45,Default,,0000,0000,0000,,‎他爱我们\N{\rE}He loves us.{\r}
+Dialogue: 0,1:47:17.87,1:47:19.20,Default,,0000,0000,0000,,‎他愿意为我们而死\N{\rE}He would die for us.{\r}
+Dialogue: 0,1:47:20.54,1:47:21.83,Default,,0000,0000,0000,,‎他是这么说的\N{\rE}He said so.{\r}
+Dialogue: 0,1:47:26.62,1:47:28.79,Default,,0000,0000,0000,,‎花让人们觉得自己受欢迎\N{\rE}Flowers make people feel welcome.{\r}
+Dialogue: 0,1:47:30.29,1:47:31.70,Default,,0000,0000,0000,,‎让他们有被需要的感觉\N{\rE}Like they're wanted.{\r}
+Dialogue: 0,1:47:56.58,1:47:59.20,Default,,0000,0000,0000,,‎亲爱的 你把花剪得太短了\N{\rE}Mm, darling, you cut 'em a little too short. See?{\r}
+Dialogue: 0,1:48:03.08,1:48:05.45,Default,,0000,0000,0000,,‎我做了…什么？\NWhat did I… What?
+Dialogue: 0,1:48:07.62,1:48:09.87,Default,,0000,0000,0000,,‎别担心 我们能弥补\N{\rE}Well, don't worry, we can repair the damage. Hmm?{\r}
+Dialogue: 0,1:48:12.66,1:48:13.62,Default,,0000,0000,0000,,‎来这儿\N{\rE}Come here.{\r}
+Dialogue: 0,1:48:16.75,1:48:18.29,Default,,0000,0000,0000,,‎诺玛去哪儿了？\N{\rE}Where's Norma gone to?{\r}
+Dialogue: 0,1:48:20.04,1:48:24.16,Default,,0000,0000,0000,,‎她太可爱了 她跟我想象的完全不同\N{\rE}She's absolutely adorable. She's nothing like I expected.{\r}
+Dialogue: 0,1:48:25.00,1:48:28.29,Default,,0000,0000,0000,,‎-她博览群书 ‎-对 比如她读过鲁比的书\N{\rE}She's so well-read.\NYeah, like she's read Rudy's book.{\r}
+Dialogue: 0,1:48:29.37,1:48:31.29,Default,,0000,0000,0000,,‎我太开心有人看过了\N{\rE}I'm just glad somebody has.{\r}
+Dialogue: 0,1:48:32.45,1:48:34.50,Default,,0000,0000,0000,,‎看看那个 天啊 你…\N{\rE}Look at that out there. Oh my God. Do you guys see that?{\r}
+Dialogue: 0,1:48:34.58,1:48:36.16,Default,,0000,0000,0000,,‎-你能看见那个吗？ ‎-太美了
+Dialogue: 0,1:48:36.25,1:48:37.45,Default,,0000,0000,0000,,‎这太令人难以置信了\N{\rE}This is incredible.{\r}
+Dialogue: 0,1:48:47.16,1:48:48.16,Default,,0000,0000,0000,,‎亲爱的…\NDarling…
+Dialogue: 0,1:48:49.95,1:48:52.12,Default,,0000,0000,0000,,‎你不和我们一起去海滩吗？\N{\rE}Aren't you gonna come down to the beach with us?{\r}
+Dialogue: 0,1:48:53.50,1:48:55.00,Default,,0000,0000,0000,,‎你为什么躲在这里？\N{\rE}Why you hiding in here?{\r}
+Dialogue: 0,1:49:02.75,1:49:06.45,Default,,0000,0000,0000,,‎我会过去的 爸爸 我只是…\NI'm coming, Daddy. I was just…
+Dialogue: 0,1:49:06.54,1:49:10.54,Default,,0000,0000,0000,,‎亲爱的 没必要 ‎因为他们的来访而如此紧张\N{\rE}Darling, it isn't necessary to make so much of this visit.{\r}
+Dialogue: 0,1:49:10.62,1:49:12.04,Default,,0000,0000,0000,,‎你认识鲁比和珍\N{\rE}You know Rudy and Jean.{\r}
+Dialogue: 0,1:49:19.12,1:49:20.54,Default,,0000,0000,0000,,‎但他们不喜欢我\N{\rE}But they don't like me.{\r}
+Dialogue: 0,1:49:21.58,1:49:22.95,Default,,0000,0000,0000,,‎他们是来见你的\N{\rE}They've come to see you.{\r}
+Dialogue: 0,1:49:24.83,1:49:27.91,Default,,0000,0000,0000,,‎诺玛 别无理取闹了\N{\rE}Norma, stop being so ridiculous.{\r}
+Dialogue: 0,1:49:29.00,1:49:30.75,Default,,0000,0000,0000,,‎你知道他们是来见我们俩的\N{\rE}You know they've come to see us both.{\r}
+Dialogue: 0,1:49:34.37,1:49:38.45,Default,,0000,0000,0000,,‎亲爱的 跟我下去吧 好吗？ ‎他们等着呢\N{\rE}Darling, come down there with me, huh, will ya? They're waiting.{\r}
+Dialogue: 0,1:49:45.20,1:49:46.04,Default,,0000,0000,0000,,‎嘿\N{\rE}Hey.{\r}
+Dialogue: 0,1:49:48.00,1:49:49.20,Default,,0000,0000,0000,,‎跟我出去吧\N{\rE}Come out there with me.{\r}
+Dialogue: 0,1:49:51.25,1:49:52.70,Default,,0000,0000,0000,,‎你看起来很美\N{\rE}You're looking very beautiful.{\r}
+Dialogue: 0,1:49:56.45,1:49:59.54,Default,,0000,0000,0000,,‎来吧 好吗？来\N{\rE}-Come, yeah? Come.{\r}
+Dialogue: 0,1:50:03.50,1:50:04.54,Default,,0000,0000,0000,,‎你还好吗 亲爱的？\N{\rE}You all right, darling?{\r}
+Dialogue: 0,1:50:10.00,1:50:11.25,Default,,0000,0000,0000,,‎我给他们拿点啤酒去\N{\rE}I'll bring them the beer.{\r}
+Dialogue: 0,1:50:31.41,1:50:32.41,Default,,0000,0000,0000,,‎我没事\N{\rE}I'm okay.{\r}
+Dialogue: 0,1:50:33.79,1:50:34.79,Default,,0000,0000,0000,,‎我没事\N{\rE}I'm okay.{\r}
+Dialogue: 0,1:50:59.70,1:51:00.79,Default,,0000,0000,0000,,‎帮帮我\N{\rE}Help me.{\r}
+Dialogue: 0,1:51:02.16,1:51:04.79,Default,,0000,0000,0000,,‎帮帮我 救救我的孩子\N{\rE}Help me. Save my baby.{\r}
+Dialogue: 0,1:51:05.45,1:51:09.20,Default,,0000,0000,0000,,‎拜托爸爸 帮帮我！救救宝宝！\N{\rE}Please, Daddy, help me! Deliver the baby!{\r}
+Dialogue: 0,1:51:10.12,1:51:12.62,Default,,0000,0000,0000,,‎-爸爸！爸爸 救命！ ‎-诺玛！\N{\rE}-Daddy! Daddy, help! -Norma!{\r}
+Dialogue: 0,1:51:16.58,1:51:19.50,Default,,0000,0000,0000,,‎我想要你的爱
+Dialogue: 0,1:51:19.58,1:51:23.25,Default,,0000,0000,0000,,‎只有你 除了你没有其他人
+Dialogue: 0,1:51:24.08,1:51:29.20,Default,,0000,0000,0000,,‎我只想要你的爱
+Dialogue: 0,1:51:31.62,1:51:34.41,Default,,0000,0000,0000,,‎我想要你的吻
+Dialogue: 0,1:51:34.50,1:51:38.29,Default,,0000,0000,0000,,‎只有你 除了你没有其他人
+Dialogue: 0,1:51:39.25,1:51:44.75,Default,,0000,0000,0000,,‎我只想要你的吻
+Dialogue: 0,1:51:44.83,1:51:48.45,Default,,0000,0000,0000,,‎我不能期盼
+Dialogue: 0,1:51:48.54,1:51:52.29,Default,,0000,0000,0000,,‎更高的要求
+Dialogue: 0,1:51:52.37,1:51:55.16,Default,,0000,0000,0000,,‎只想填满我的欲望
+Dialogue: 0,1:51:55.25,1:51:57.95,Default,,0000,0000,0000,,‎让你成为我的…
+Dialogue: 0,1:52:01.70,1:52:04.33,Default,,0000,0000,0000,,‎我想要你的爱
+Dialogue: 0,1:52:04.41,1:52:09.33,Default,,0000,0000,0000,,‎只有你 除了你没有其他人
+Dialogue: 0,1:52:09.41,1:52:13.33,Default,,0000,0000,0000,,‎我只想要你的爱…
+Dialogue: 0,1:52:15.70,1:52:19.12,Default,,0000,0000,0000,,‎你觉得我太蠢了 ‎无法理解你们说的关于我的玩笑吗？\N{\rE}You think I'm too dumb to comprehend the joke's on me?{\r}
+Dialogue: 0,1:52:19.20,1:52:22.04,Default,,0000,0000,0000,,‎-什么玩笑？ ‎-弹簧上的果冻！\N{\rE}-What joke? -Jell-O on springs!{\r}
+Dialogue: 0,1:52:25.00,1:52:25.91,Default,,0000,0000,0000,,‎玛丽莲…\NMarilyn…
+Dialogue: 0,1:52:27.16,1:52:30.29,Default,,0000,0000,0000,,‎-不 玛丽莲！ ‎-我不需要这个！\N{\rE}-No! No! No, no, no, Marilyn! -I don't need this!{\r}
+Dialogue: 0,1:52:30.37,1:52:33.29,Default,,0000,0000,0000,,‎-出去！ ‎-老天爷！玛丽莲！\N{\rE}-Get out! -For God's sake! Marilyn!{\r}
+Dialogue: 0,1:52:33.37,1:52:35.00,Default,,0000,0000,0000,,‎-你还好吗？ ‎-我受不了了\N{\rE}-You okay? -I can't take it.{\r}
+Dialogue: 0,1:52:35.08,1:52:36.87,Default,,0000,0000,0000,,‎-我知道 玛丽莲 ‎-我受不了了！\N{\rE}-I know. -I can't take it!{\r}
+Dialogue: 0,1:52:36.95,1:52:38.70,Default,,0000,0000,0000,,‎来 亲爱的 我带你去后台\N{\rE}I'll take you in the back here.{\r}
+Dialogue: 0,1:52:38.79,1:52:40.50,Default,,0000,0000,0000,,‎-给你准备了点东西 ‎-我一会就到\N{\rE}-We got something for you. -Be there in a second.{\r}
+Dialogue: 0,1:52:40.58,1:52:43.04,Default,,0000,0000,0000,,‎-来吧 平静下来 ‎-我会去的\N{\rE}-Settle down. -I'll be there in a minute.{\r}
+Dialogue: 0,1:52:43.12,1:52:46.33,Default,,0000,0000,0000,,‎来吧 甜心 来这儿 你做得非常好\N{\rE}Come on, sweetie. Over here. You're doing such a good job.{\r}
+Dialogue: 0,1:52:47.00,1:52:49.12,Default,,0000,0000,0000,,‎做得太棒了 来这儿\N{\rE}Such a good job. Come on in here. Come on, come on, come on. How about here?{\r}
+Dialogue: 0,1:52:51.75,1:52:54.04,Default,,0000,0000,0000,,‎比利 她现在不太健康\N{\rE}-Billy? -Hmm?\NShe's not a well girl. Hmm?{\r}
+Dialogue: 0,1:52:56.08,1:52:57.62,Default,,0000,0000,0000,,‎如果她能好起来 她就会很好\N{\rE}If she could be well, she would be.{\r}
+Dialogue: 0,1:53:03.95,1:53:06.66,Default,,0000,0000,0000,,‎没事 亲爱的 有我在\N{\rE}It's okay, honey. I have you. I have you.{\r}
+Dialogue: 0,1:53:07.25,1:53:09.75,Default,,0000,0000,0000,,‎没事 深呼吸\N{\rE}-It's okay. Breathe.{\r}
+Dialogue: 0,1:53:10.70,1:53:11.70,Default,,0000,0000,0000,,‎没事\N{\rE}It's okay.{\r}
+Dialogue: 0,1:53:16.12,1:53:18.08,Default,,0000,0000,0000,,‎就这样 玛丽莲 就这样 甜心\N{\rE}That's it, Marilyn. That's it, sweetie.{\r}
+Dialogue: 0,1:53:18.16,1:53:21.87,Default,,0000,0000,0000,,‎只要保持不动就好 这…你之前见过\NOnly just hold still. It's… You've seen it before.
+Dialogue: 0,1:53:23.16,1:53:24.29,Default,,0000,0000,0000,,‎等等\N{\rE}Just a minute.{\r}
+Dialogue: 0,1:53:24.37,1:53:27.04,Default,,0000,0000,0000,,‎-没事 好了 坚持一下 ‎-好的\N{\rE}-It's okay, here you go. Just hold on. -It's okay.{\r}
+Dialogue: 0,1:53:28.83,1:53:31.00,Default,,0000,0000,0000,,‎好的 就这样\N{\rE}Okay. That's it.{\r}
+Dialogue: 0,1:53:34.12,1:53:35.12,Default,,0000,0000,0000,,‎深呼吸\N{\rE}Just breathe.{\r}
+Dialogue: 0,1:53:47.58,1:53:49.45,Default,,0000,0000,0000,,‎-我没事 ‎-看吧？\N{\rE}-I'm okay. -See?{\r}
+Dialogue: 0,1:53:54.00,1:53:55.00,Default,,0000,0000,0000,,‎我没事\N{\rE}I'm okay.{\r}
+Dialogue: 0,1:54:56.29,1:54:58.08,Default,,0000,0000,0000,,‎需要帮忙吗 亲爱的？\N{\rE}What can I do to help you, darling?{\r}
+Dialogue: 0,1:54:59.00,1:55:00.12,Default,,0000,0000,0000,,‎帮我们？\N{\rE}To help us?{\r}
+Dialogue: 0,1:55:01.75,1:55:04.62,Default,,0000,0000,0000,,‎缅因州那件事之后的每一天\N{\rE}Yeah, every day since Maine,{\r}
+Dialogue: 0,1:55:04.70,1:55:07.08,Default,,0000,0000,0000,,‎我觉得我们渐行渐远\N{\rE}I feel like we're getting more and more distant.{\r}
+Dialogue: 0,1:55:09.04,1:55:11.41,Default,,0000,0000,0000,,‎我很担心你 亲爱的\N{\rE}I'm so worried about you, darling.{\r}
+Dialogue: 0,1:55:11.50,1:55:14.91,Default,,0000,0000,0000,,‎你的健康 这些药物…\NYour health. And these drugs…
+Dialogue: 0,1:55:17.20,1:55:19.79,Default,,0000,0000,0000,,‎你是想毁了自己吗 诺玛？\N{\rE}Are you trying to destroy yourself, Norma?{\r}
+Dialogue: 0,1:55:19.87,1:55:22.00,Default,,0000,0000,0000,,‎你对你的人生做了什么？\N{\rE}I mean, what are you doing to your life?{\r}
+Dialogue: 0,1:55:24.75,1:55:27.04,Default,,0000,0000,0000,,‎我的生活关你什么事？\N{\rE}What business of yours is my life?{\r}
+Dialogue: 0,1:55:32.87,1:55:35.25,Default,,0000,0000,0000,,‎甜心 你这是自找麻烦\N{\rE}You're gonna get yourself into a lot of trouble.{\r}
+Dialogue: 0,1:55:35.33,1:55:36.83,Default,,0000,0000,0000,,‎对 你最好留意一下\N{\rE}Yes, you better keep a lookout.{\r}
+Dialogue: 0,1:55:36.91,1:55:38.58,Default,,0000,0000,0000,,‎如果比恩斯托克再抓到你…\NIf Bienstock catches you again…
+Dialogue: 0,1:55:39.41,1:55:42.79,Default,,0000,0000,0000,,‎-而且你到底怎么回事啊？ ‎-我猜我不太聪明\N{\rE}-What's the matter with you anyway? -I'm not very bright, I guess.{\r}
+Dialogue: 0,1:55:43.91,1:55:46.16,Default,,0000,0000,0000,,‎我不会这么说 也许该说粗心大意\N{\rE}I wouldn't say that. Careless, maybe.{\r}
+Dialogue: 0,1:55:59.33,1:56:01.95,Default,,0000,0000,0000,,‎不 就是蠢 如果我有…\NNo, just dumb. If I had any…
+Dialogue: 0,1:56:02.87,1:56:04.91,Default,,0000,0000,0000,,‎如果我有脑子 ‎就不会和这个破女子乐队\N{\rE}If I had any brains, I wouldn't be on this crummy train{\r}
+Dialogue: 0,1:56:05.00,1:56:06.83,Default,,0000,0000,0000,,‎上这辆破火车了\N{\rE}with this crummy girl's band.{\r}
+Dialogue: 0,1:56:06.91,1:56:08.54,Default,,0000,0000,0000,,‎脑子不是一切\N{\rE}Brains aren't everything.{\r}
+Dialogue: 0,1:56:11.54,1:56:17.00,Default,,0000,0000,0000,,‎它只是个动静脉网络 支撑我们存活\NYou know, it's just a network of veins, arteries… holding us together.
+Dialogue: 0,1:56:17.95,1:56:20.20,Default,,0000,0000,0000,,‎如果它们破裂了 就会开始流血\N{\rE}And if they burst, they start bleeding.{\r}
+Dialogue: 0,1:56:21.66,1:56:22.75,Default,,0000,0000,0000,,‎停！\N{\rE}And cut!{\r}
+Dialogue: 0,1:56:30.87,1:56:31.87,Default,,0000,0000,0000,,‎操！\N{\rE}Fuck!{\r}
+Dialogue: 0,1:56:33.95,1:56:36.95,Default,,0000,0000,0000,,‎操你妈！这他妈的电影！\N{\rE}Fuck you! And fuck this movie!{\r}
+Dialogue: 0,1:56:44.04,1:56:45.12,Default,,0000,0000,0000,,‎亲爱的？\N{\rE}Hon?{\r}
+Dialogue: 0,1:56:56.50,1:56:58.45,Default,,0000,0000,0000,,‎-医生？ ‎-我在这儿\N{\rE}-Doc? -Right here.{\r}
+Dialogue: 0,1:56:58.54,1:56:59.54,Default,,0000,0000,0000,,‎怀特利？\N{\rE}Whitey?{\r}
+Dialogue: 0,1:56:59.62,1:57:01.62,Default,,0000,0000,0000,,‎-来这儿 ‎-嗨 亲爱的\N{\rE}-Come here, come here. -Hi, sweetie. Hi.{\r}
+Dialogue: 0,1:57:02.33,1:57:04.83,Default,,0000,0000,0000,,‎来点苯丙胺 可待因？\N{\rE}Have a little Benzedrine. Codeine?{\r}
+Dialogue: 0,1:57:05.41,1:57:07.12,Default,,0000,0000,0000,,‎-你没事 亲爱的 ‎-我想回家\N{\rE}-You're okay. -I wanna go home.{\r}
+Dialogue: 0,1:57:07.91,1:57:09.75,Default,,0000,0000,0000,,‎-我想回家 ‎-如果你能熬过去吗？\N{\rE}-I wanna go home. -What if you get through this?{\r}
+Dialogue: 0,1:57:09.83,1:57:16.29,Default,,0000,0000,0000,,‎我想回家！\N{\rE}I wanna go home! I wanna go home! I wanna go home!\NI wanna go home!{\r}
+Dialogue: 0,1:57:18.08,1:57:20.16,Default,,0000,0000,0000,,‎我听说了你的悲惨遭遇\N{\rE}Having heard of your tragic loss,{\r}
+Dialogue: 0,1:57:21.25,1:57:24.20,Default,,0000,0000,0000,,‎我谨表示衷心的哀悼\N{\rE}I wish to offer my heartfelt condolences.{\r}
+Dialogue: 0,1:57:29.58,1:57:34.79,Default,,0000,0000,0000,,‎未出生的灵魂的死亡 ‎可能会让我们加倍痛苦\N{\rE}The death of an unborn soul may lodge more painfully within us.{\r}
+Dialogue: 0,1:57:34.87,1:57:38.62,Default,,0000,0000,0000,,‎那么多人 太多人了！\N{\rE}So many people. It's just so many!{\r}
+Dialogue: 0,1:57:38.70,1:57:40.87,Default,,0000,0000,0000,,‎为什么上帝造了那么多人？\N{\rE}Why did God make so many?{\r}
+Dialogue: 0,1:57:41.95,1:57:44.00,Default,,0000,0000,0000,,‎因为纯真的灵魂是未经污染的\N{\rE}'Cause the innocence is unsullied.{\r}
+Dialogue: 0,1:57:45.00,1:57:47.83,Default,,0000,0000,0000,,‎当然 现在媒体已经报道了此事\N{\rE}Of course, it has been in the press by now.{\r}
+Dialogue: 0,1:57:52.62,1:57:55.45,Default,,0000,0000,0000,,‎我很快就会亲自联系你的\N{\rE}I will contact you soon in person.{\r}
+Dialogue: 0,1:57:56.79,1:57:58.20,Default,,0000,0000,0000,,‎看 诺玛简…\NSee, Norma Jeane…
+Dialogue: 0,1:58:00.41,1:58:01.75,Default,,0000,0000,0000,,‎那男人是你的父亲\N{\rE}that man is your father.{\r}
+Dialogue: 0,1:58:04.66,1:58:07.41,Default,,0000,0000,0000,,‎我很快就会联系你的 我保证\N{\rE}Soon I will contact you, I promise.{\r}
+Dialogue: 0,1:58:12.08,1:58:15.91,Default,,0000,0000,0000,,‎看 诺玛简 那男人是你的父亲\N{\rE}See, Norma Jeane, that man is your father.{\r}
+Dialogue: 0,1:58:21.79,1:58:25.79,Default,,0000,0000,0000,,‎看 诺玛简 那男人是你的父亲\N{\rE}See, Norma Jeane, that man is your father.{\r}
+Dialogue: 0,1:58:25.87,1:58:29.33,Default,,0000,0000,0000,,‎我能解释我们关系的情况\N{\rE}I can explain the circumstances of our relationship{\r}
+Dialogue: 0,1:58:29.41,1:58:31.04,Default,,0000,0000,0000,,‎我们要亲自见面谈\N{\rE}when we meet face-to-face.{\r}
+Dialogue: 0,1:58:34.95,1:58:36.95,Default,,0000,0000,0000,,‎“你泪流满面、慈爱的父亲”\N{\rE}"Your tearful and loving father."{\r}
+Dialogue: 0,1:59:22.50,1:59:23.50,Default,,0000,0000,0000,,‎你是谁？\N{\rE}Who are you?{\r}
+Dialogue: 0,1:59:24.83,1:59:26.75,Default,,0000,0000,0000,,‎亲爱的 我是你的丈夫\NDarling, I'm… I'm your husband.
+Dialogue: 0,1:59:43.00,1:59:43.83,Default,,0000,0000,0000,,‎你好\N{\rE}Hello.{\r}
+Dialogue: 0,1:59:44.54,1:59:46.58,Default,,0000,0000,0000,,‎梦露小姐 你今天要来吗？\N{\rE}Miss Monroe, are you coming in today?{\r}
+Dialogue: 0,1:59:46.66,1:59:47.62,Default,,0000,0000,0000,,‎不\N{\rE}No.{\r}
+Dialogue: 0,1:59:47.70,1:59:53.41,Default,,0000,0000,0000,,‎玛丽莲梦露今天 ‎不会来冒充且贬低自己\N{\rE}Marilyn Monroe will not be coming in today to impersonate and demean herself.{\r}
+Dialogue: 0,1:59:53.50,1:59:55.62,Default,,0000,0000,0000,,‎你不得不拍她周围的人或者景\N{\rE}And you will have to shoot around her.{\r}
+Dialogue: 0,2:00:40.66,2:00:44.37,Default,,0000,0000,0000,,‎怀特利？\N{\rE}Whitey? Whitey?{\r}
+Dialogue: 0,2:00:45.70,2:00:48.25,Default,,0000,0000,0000,,‎我发誓 我一小时 ‎就能给玛丽莲准备好\N{\rE}I'm going to conjure Marilyn within the hour, I promise.{\r}
+Dialogue: 0,2:00:48.33,2:00:50.75,Default,,0000,0000,0000,,‎抱一个 一切都会好起来的\N{\rE}Come here. It's gonna be all right.{\r}
+Dialogue: 0,2:00:58.37,2:01:00.87,Default,,0000,0000,0000,,‎好的 很好\N{\rE}Okay. Good.{\r}
+Dialogue: 0,2:01:05.58,2:01:06.66,Default,,0000,0000,0000,,‎宝宝没了\N{\rE}Baby's gone.{\r}
+Dialogue: 0,2:01:19.29,2:01:21.08,Default,,0000,0000,0000,,‎宝宝没了 怀特利\N{\rE}Baby's gone, Whitey.{\r}
+Dialogue: 0,2:01:22.66,2:01:23.54,Default,,0000,0000,0000,,‎我知道\N{\rE}I know.{\r}
+Dialogue: 0,2:01:27.87,2:01:28.87,Default,,0000,0000,0000,,‎没事的\N{\rE}It'll be okay.{\r}
+Dialogue: 0,2:01:33.12,2:01:34.00,Default,,0000,0000,0000,,‎梦露小姐\N{\rE}Oh, Miss Monroe.{\r}
+Dialogue: 0,2:01:50.41,2:01:51.29,Default,,0000,0000,0000,,‎好的\N{\rE}Okay.{\r}
+Dialogue: 0,2:02:06.54,2:02:07.79,Default,,0000,0000,0000,,‎请过来\N{\rE}Here.Please come.{\r}
+Dialogue: 0,2:02:10.62,2:02:13.08,Default,,0000,0000,0000,,‎请过来 别抛弃我\N{\rE}Please come. Don't abandon me.{\r}
+Dialogue: 0,2:02:15.04,2:02:17.41,Default,,0000,0000,0000,,‎-求你了 ‎-她来了\N{\rE}-Please. -She's coming.{\r}
+Dialogue: 0,2:02:17.50,2:02:18.58,Default,,0000,0000,0000,,‎请来吧\N{\rE}Please come.{\r}
+Dialogue: 0,2:02:20.25,2:02:21.20,Default,,0000,0000,0000,,‎她来了\N{\rE}She's coming.{\r}
+Dialogue: 0,2:02:22.87,2:02:25.45,Default,,0000,0000,0000,,‎-别抛弃我 ‎-她来了\N{\rE}-Don't abandon me. -She's coming.{\r}
+Dialogue: 0,2:02:27.08,2:02:28.25,Default,,0000,0000,0000,,‎她快到了\N{\rE}-She's almost here.{\r}
+Dialogue: 0,2:02:30.95,2:02:32.12,Default,,0000,0000,0000,,‎请过来\N{\rE}Please come.{\r}
+Dialogue: 0,2:02:52.66,2:02:56.29,Default,,0000,0000,0000,,‎玛丽莲！\N{\rE}-Marilyn! Marilyn!\NMarilyn! Marilyn! Marilyn! Marilyn!{\r}
+Dialogue: 0,2:03:09.66,2:03:13.04,Default,,0000,0000,0000,,‎玛丽莲！\N{\rE}Marilyn! Marilyn! Marilyn!\NMarilyn! Marilyn! Marilyn! Marilyn! Marilyn!{\r}
+Dialogue: 0,2:04:28.41,2:04:32.83,Default,,0000,0000,0000,,‎玛丽莲！\N{\rE}Marilyn! Marilyn!\NMarilyn! Marilyn! Marilyn! Marilyn!{\r}
+Dialogue: 0,2:04:35.75,2:04:39.33,Default,,0000,0000,0000,,‎（玛丽莲梦露出演比利怀尔德的 ‎《热情似火》）\N{\rE}Marilyn! Marilyn! Marilyn! Marilyn! Marilyn!{\r}
+Dialogue: 0,2:05:37.70,2:05:43.50,Default,,0000,0000,0000,,‎我爱你们 我爱你们所有人\N{\rE}I love you. I love, love, love you all.{\r}
+Dialogue: 0,2:06:06.54,2:06:08.45,Default,,0000,0000,0000,,‎人无完人\N{\rE}Well, nobody's perfect.{\r}
+Dialogue: 0,2:06:12.50,2:06:16.04,Default,,0000,0000,0000,,‎（剧终）
+Dialogue: 0,2:06:22.87,2:06:26.79,Default,,0000,0000,0000,,‎（1962年）
+Dialogue: 0,2:06:53.25,2:06:54.58,Default,,0000,0000,0000,,‎要香槟吗 梦露小姐？\N{\rE}Champagne, Miss Monroe?{\r}
+Dialogue: 0,2:06:56.25,2:06:57.62,Default,,0000,0000,0000,,‎要一点点\N{\rE}Yeah, just a little.{\r}
+Dialogue: 0,2:06:59.25,2:07:00.83,Default,,0000,0000,0000,,‎这能帮助我入眠\N{\rE}Oh, it's just to help me sleep.{\r}
+Dialogue: 0,2:07:16.70,2:07:18.83,Default,,0000,0000,0000,,‎我经常看到你美丽的脸庞\N{\rE}I see your beautiful face often.{\r}
+Dialogue: 0,2:07:24.70,2:07:25.95,Default,,0000,0000,0000,,‎我想知道你怎么保养得那么好\NAnd I wonder how you look so…\N…untouched.
+Dialogue: 0,2:07:30.66,2:07:34.37,Default,,0000,0000,0000,,‎但我猜灵魂并不总是显露在脸上\N{\rE}But the soul does not always show in the face, I suppose.{\r}
+Dialogue: 0,2:07:54.45,2:07:56.41,Default,,0000,0000,0000,,‎已经过去太多年了\N{\rE}Too many years have slipped away.{\r}
+Dialogue: 0,2:08:01.33,2:08:04.62,Default,,0000,0000,0000,,‎我必须见你 我美丽而迷茫的女儿\N{\rE}And I must see you, my beautiful lost daughter.{\r}
+Dialogue: 0,2:08:09.37,2:08:13.25,Default,,0000,0000,0000,,‎在我踏上那漫长的漂洋过海的旅程前\N{\rE}Before I embark on that long journey across the sea.{\r}
+Dialogue: 0,2:08:29.75,2:08:31.00,Default,,0000,0000,0000,,‎你泪流满面的父亲\N{\rE}Your tearful father.{\r}
+Dialogue: 0,2:09:07.50,2:09:08.54,Default,,0000,0000,0000,,‎梦露小姐\N{\rE}Miss Monroe.{\r}
+Dialogue: 0,2:09:10.08,2:09:11.16,Default,,0000,0000,0000,,‎梦露小姐？\N{\rE}Miss Monroe?{\r}
+Dialogue: 0,2:09:14.33,2:09:16.54,Default,,0000,0000,0000,,‎剧院里真热\N{\rE}It's so hot in this theater.{\r}
+Dialogue: 0,2:09:17.25,2:09:19.91,Default,,0000,0000,0000,,‎梦露小姐？\N{\rE}Miss Monroe? Miss Monroe?{\r}
+Dialogue: 0,2:09:22.33,2:09:23.58,Default,,0000,0000,0000,,‎嗨 梦露小姐？\N{\rE}Hi, Miss Monroe?{\r}
+Dialogue: 0,2:09:26.25,2:09:28.79,Default,,0000,0000,0000,,‎我们已经在纽约降落了\N{\rE}We've landed in New York.{\r}
+Dialogue: 0,2:09:30.54,2:09:34.33,Default,,0000,0000,0000,,‎我们到了 对 让我来帮你\N{\rE}We're here. Yeah. Let me help you.{\r}
+Dialogue: 0,2:09:35.45,2:09:36.83,Default,,0000,0000,0000,,‎我可以帮你拿外套\N{\rE}I can take your coat.{\r}
+Dialogue: 0,2:09:39.08,2:09:41.16,Default,,0000,0000,0000,,-给，拿着 我带她去\N{\rE}Here, take this. I'll get her to customs.{\r}
+Dialogue: 0,2:09:43.29,2:09:46.70,Default,,0000,0000,0000,,‎准备好了吗？一、二\N{\rE}Ready? One, two.{\r}
+Dialogue: 0,2:09:48.87,2:09:50.50,Default,,0000,0000,0000,,‎-好 ‎-小心头\N{\rE}-Yeah. -Oh, watch your head.{\r}
+Dialogue: 0,2:09:52.45,2:09:53.41,Default,,0000,0000,0000,,‎没事\N{\rE}It's okay.{\r}
+Dialogue: 0,2:09:55.04,2:09:56.25,Default,,0000,0000,0000,,‎我们这边走\N{\rE}Let's go this way.{\r}
+Dialogue: 0,2:09:59.25,2:10:00.16,Default,,0000,0000,0000,,‎好的\N{\rE}Okay.{\r}
+Dialogue: 0,2:10:03.75,2:10:04.79,Default,,0000,0000,0000,,‎快到了\N{\rE}Almost there.{\r}
+Dialogue: 0,2:10:13.54,2:10:14.83,Default,,0000,0000,0000,,‎我被捕了吗？\N{\rE}Am I under arrest?{\r}
+Dialogue: 0,2:10:15.95,2:10:17.33,Default,,0000,0000,0000,,‎我会遇到什么事？\N{\rE}What will happen to me?{\r}
+Dialogue: 0,2:10:26.41,2:10:27.37,Default,,0000,0000,0000,,‎梦露小姐？\N{\rE}Miss Monroe?{\r}
+Dialogue: 0,2:10:30.25,2:10:33.70,Default,,0000,0000,0000,,‎梦露小姐？别躺在这儿 好吗？\N{\rE}Miss Monroe? You don't wanna lay down here. Okay?{\r}
+Dialogue: 0,2:10:35.04,2:10:36.04,Default,,0000,0000,0000,,‎拜托\N{\rE}Please.{\r}
+Dialogue: 0,2:10:38.95,2:10:41.20,Default,,0000,0000,0000,,‎-来吧 ‎-我们扶住她了 起来吧\N{\rE}-Come on. -We got her. Up you come.{\r}
+Dialogue: 0,2:10:56.91,2:11:01.16,Default,,0000,0000,0000,,‎总统和我之间不是性关系\N{\rE}It isn't sexual between the president and me.{\r}
+Dialogue: 0,2:11:02.87,2:11:05.04,Default,,0000,0000,0000,,‎跟性无关\N{\rE}It has very little to do with sex.{\r}
+Dialogue: 0,2:11:07.16,2:11:08.87,Default,,0000,0000,0000,,‎这是我们灵魂的相遇\N{\rE}It's a meeting of our souls.{\r}
+Dialogue: 0,2:11:11.62,2:11:13.45,Default,,0000,0000,0000,,‎我刚刚大声说出来了吗？\N{\rE}Oh. Did I say that out loud?{\r}
+Dialogue: 0,2:11:19.91,2:11:22.50,Default,,0000,0000,0000,,‎女士 你今晚回洛杉矶的票\N{\rE}Your ticket, ma'am, for your return to LA this evening.{\r}
+Dialogue: 0,2:11:25.62,2:11:28.25,Default,,0000,0000,0000,,‎今晚？但是…\NThis evening? But…
+Dialogue: 0,2:11:28.33,2:11:31.75,Default,,0000,0000,0000,,‎总统行程变了 女士 ‎所以你的行程也变了\N{\rE}President's plans have changed, ma'am, so your plans have changed.{\r}
+Dialogue: 0,2:11:33.00,2:11:36.00,Default,,0000,0000,0000,,‎有紧急情况 需要他回华盛顿\N{\rE}There's an emergency situation calling him back to Washington.{\r}
+Dialogue: 0,2:11:37.25,2:11:39.08,Default,,0000,0000,0000,,‎毕竟他不能过夜\N{\rE}He can't stay overnight after all.{\r}
+Dialogue: 0,2:11:42.83,2:11:43.83,Default,,0000,0000,0000,,‎我知道了\N{\rE}Oh, I see.{\r}
+Dialogue: 0,2:11:51.29,2:11:53.62,Default,,0000,0000,0000,,‎-退后 退回去 ‎-请给我们一点空间\N{\rE}-Step back. -Give us some space.{\r}
+Dialogue: 0,2:11:53.70,2:11:54.83,Default,,0000,0000,0000,,‎后退\N{\rE}Get back.{\r}
+Dialogue: 0,2:11:54.91,2:11:57.29,Default,,0000,0000,0000,,‎该死！天啊！\N{\rE}Goddamn it! Jesus!{\r}
+Dialogue: 0,2:11:57.79,2:12:00.45,Default,,0000,0000,0000,,‎-去别的地方 让开 ‎-我们需要一些空间 借过\N{\rE}-Go somewhere else. Clear. -We need some room. Excuse us.{\r}
+Dialogue: 0,2:12:02.29,2:12:03.50,Default,,0000,0000,0000,,‎小心楼梯 女士\N{\rE}Watch your step, ma'am.{\r}
+Dialogue: 0,2:12:05.70,2:12:06.66,Default,,0000,0000,0000,,‎小心\N{\rE}-Watch it.{\r}
+Dialogue: 0,2:12:08.54,2:12:11.37,Default,,0000,0000,0000,,‎来吧 女士 跟上来 女士\N{\rE}Come on, ma'am. Step along, please, ma'am.{\r}
+Dialogue: 0,2:12:11.45,2:12:15.70,Default,,0000,0000,0000,,‎我可以自己走 谢谢 我没残废\N{\rE}I can walk myself. Thank you. I'm not crippled.{\r}
+Dialogue: 0,2:12:17.25,2:12:18.58,Default,,0000,0000,0000,,‎天啊！\N{\rE}Oh my God!{\r}
+Dialogue: 0,2:12:22.41,2:12:27.66,Default,,0000,0000,0000,,‎我就该被押送过去吗？ ‎这算什么？客房服务吗？\N{\rE}Am I meat to be delivered? Is that what this is? Room service?{\r}
+Dialogue: 0,2:12:30.45,2:12:31.45,Default,,0000,0000,0000,,‎等等\N{\rE}Hang on.{\r}
+Dialogue: 0,2:12:32.87,2:12:35.20,Default,,0000,0000,0000,,‎你需要补妆吗 梦露小姐？\N{\rE}Would you wish to freshen up, Miss Monroe?{\r}
+Dialogue: 0,2:12:36.70,2:12:37.70,Default,,0000,0000,0000,,‎天啊\N{\rE}Oh God.{\r}
+Dialogue: 0,2:12:56.04,2:12:57.20,Default,,0000,0000,0000,,‎这边 梦露小姐\N{\rE}This way, Miss Monroe.{\r}
+Dialogue: 0,2:13:01.70,2:13:02.83,Default,,0000,0000,0000,,‎这里\N{\rE}Right here.{\r}
+Dialogue: 0,2:13:15.45,2:13:16.33,Default,,0000,0000,0000,,‎女士\N{\rE}Ma'am.{\r}
+Dialogue: 0,2:13:17.20,2:13:18.79,Default,,0000,0000,0000,,‎这边 梦露小姐\N{\rE}This way, Miss Monroe.{\r}
+Dialogue: 0,2:13:26.54,2:13:28.12,Default,,0000,0000,0000,,‎我们把梦露小姐带到了 先生\N{\rE}We have Miss Monroe here, sir.{\r}
+Dialogue: 0,2:13:47.16,2:13:48.12,Default,,0000,0000,0000,,‎问题是？\N{\rE}The matter being?{\r}
+Dialogue: 0,2:13:52.29,2:13:53.16,Default,,0000,0000,0000,,‎知道了\N{\rE}-I see.{\r}
+Dialogue: 0,2:14:01.04,2:14:03.66,Default,,0000,0000,0000,,‎那这个男人是谁呢？\N{\rE}And just who might this man be?{\r}
+Dialogue: 0,2:14:07.87,2:14:11.79,Default,,0000,0000,0000,,‎很高兴见到你 宝贝 ‎今天真是糟透了\N{\rE}Am I glad to see you, baby. This has been one hell of a day.{\r}
+Dialogue: 0,2:14:12.66,2:14:14.54,Default,,0000,0000,0000,,‎天啊 我听说了 亲爱的\N{\rE}Oh, gosh, I've been told, darling.{\r}
+Dialogue: 0,2:14:17.25,2:14:18.41,Default,,0000,0000,0000,,‎我能怎么帮你吗？\N{\rE}How can I help?{\r}
+Dialogue: 0,2:14:34.54,2:14:37.45,Default,,0000,0000,0000,,‎若你看过照片 ‎就会知道她一点也不“普通”\N{\rE}If you've got pictures, you'll see she can hardly be called "common."{\r}
+Dialogue: 0,2:14:43.66,2:14:45.25,Default,,0000,0000,0000,,‎你也不需要教训我 先生\N{\rE}Nor will you lecture me, sir.{\r}
+Dialogue: 0,2:14:45.91,2:14:47.91,Default,,0000,0000,0000,,‎宝贝 别害羞 来吧\N{\rE}Baby. Don't be shy. Come on, come on.{\r}
+Dialogue: 0,2:14:53.00,2:14:54.04,Default,,0000,0000,0000,,‎总统先生\N{\rE}-Mr. President.{\r}
+Dialogue: 0,2:14:57.87,2:14:59.95,Default,,0000,0000,0000,,‎-总统先生 ‎-别害羞 来吧\N{\rE}- Mr. President. -Don't be shy. Come on.{\r}
+Dialogue: 0,2:15:03.66,2:15:07.70,Default,,0000,0000,0000,,‎总统先生 德克萨斯州的 ‎一位州长助理指控你骚扰她\N{\rE}Mr. President, a gubernatorial aide in Texas alleges you molested her.{\r}
+Dialogue: 0,2:15:07.79,2:15:11.00,Default,,0000,0000,0000,,‎联邦调查局还发现了一个白宫官员\N{\rE}The Bureau has also uncovered a member of White House personnel{\r}
+Dialogue: 0,2:15:11.08,2:15:14.95,Default,,0000,0000,0000,,‎愿意出庭作证 ‎称你和她有不正当性关系\N{\rE}willing to testify that you and she conducted an inappropriate sexual liaison.{\r}
+Dialogue: 0,2:15:16.79,2:15:20.91,Default,,0000,0000,0000,,‎这些女性 总统先生 ‎这些指控不仅对总统办公室造成了…\NThese women, these allegations, they not only inflict irreparable harm…
+Dialogue: 0,2:15:21.00,2:15:23.79,Default,,0000,0000,0000,,‎-宝贝 快 ‎-…无法弥补的伤害 还威胁到美国\N-Baby, come on. -…on the presidency, but also on America.
+Dialogue: 0,2:15:23.87,2:15:27.41,Default,,0000,0000,0000,,‎我的私生活与任何人无关\N{\rE}My personal life is no one's business but my own.{\r}
+Dialogue: 0,2:15:41.41,2:15:44.70,Default,,0000,0000,0000,,‎谁把我带到了这地方的？\N{\rE}Who brought me here\Nto this place?{\r}
+Dialogue: 0,2:15:47.29,2:15:48.50,Default,,0000,0000,0000,,‎是玛丽莲吗？\N{\rE}Was it Marilyn?{\r}
+Dialogue: 0,2:15:49.41,2:15:53.87,Default,,0000,0000,0000,,‎但为什么玛丽莲要做这些事？ ‎玛丽莲想要什么？\N{\rE}But why does Marilyn do these things?\NWhat does Marilyn want?{\r}
+Dialogue: 0,2:15:55.95,2:15:57.54,Default,,0000,0000,0000,,‎还是说这是电影片段？\N{\rE}Or is it a movie scene?{\r}
+Dialogue: 0,2:15:58.41,2:16:01.41,Default,,0000,0000,0000,,‎我在扮演一个著名的金发女郎\N{\rE}I'm playing the part of a famous blonde actress{\r}
+Dialogue: 0,2:16:01.50,2:16:05.41,Default,,0000,0000,0000,,‎与自由世界里英俊潇洒的领导人见面\N{\rE}meeting the boyishly handsome leader of the free world,{\r}
+Dialogue: 0,2:16:05.50,2:16:10.00,Default,,0000,0000,0000,,‎与美国总统来一次浪漫约会\N{\rE}the President of the United States, for a romantic rendezvous.{\r}
+Dialogue: 0,2:16:11.45,2:16:16.04,Default,,0000,0000,0000,,‎“无害的姑娘”出演无害的软色情片\N{\rE}The girl upstairs in harmless soft porn film.{\r}
+Dialogue: 0,2:16:16.12,2:16:21.08,Default,,0000,0000,0000,,‎只此一次 为什么不呢？ ‎任何场景都可以演\N{\rE}Just once. Why not? Any scene can be played.{\r}
+Dialogue: 0,2:16:21.16,2:16:23.75,Default,,0000,0000,0000,,‎无论演得好坏 都可以演\N{\rE}Whether well or badly, it can be played.{\r}
+Dialogue: 0,2:16:25.87,2:16:28.25,Default,,0000,0000,0000,,‎而且它不会超过几分钟\N{\rE}And it won't last more than a few minutes.{\r}
+Dialogue: 0,2:16:28.33,2:16:32.66,Default,,0000,0000,0000,,‎你这个肮脏的荡妇\N{\rE}Dirty slut. Oh! Oh, you dirty slut.{\r}
+Dialogue: 0,2:16:33.54,2:16:34.79,Default,,0000,0000,0000,,‎别吐\N{\rE}Just don't puke.{\r}
+Dialogue: 0,2:16:35.58,2:16:38.83,Default,,0000,0000,0000,,‎别吐在这儿 别吐床上\N{\rE}- Not here. Not in this bed.{\r}
+Dialogue: 0,2:16:38.91,2:16:43.00,Default,,0000,0000,0000,,‎别咳 别作呕 你得吞下去\N{\rE}Don't cough. Don't gag.\NYou have to swallow.{\r}
+Dialogue: 0,2:16:43.91,2:16:46.45,Default,,0000,0000,0000,,‎-你得吞下去 ‎-你这肮脏的女孩…\N-You have to swallow. -Oh, you dirty girl…
+Dialogue: 0,2:16:48.16,2:16:50.08,Default,,0000,0000,0000,,‎宝贝！\N{\rE}Oh, baby!{\r}
+Dialogue: 0,2:16:51.75,2:16:54.29,Default,,0000,0000,0000,,‎你…太棒了\N{\rE}Yes. Ah, fantastic.{\r}
+Dialogue: 0,2:17:34.16,2:17:38.20,Default,,0000,0000,0000,,‎总统先生…\NMr. President… Mr. President…
+Dialogue: 0,2:17:39.83,2:17:41.70,Default,,0000,0000,0000,,‎这些女人 总统先生…\NThese women, Mr. President…
+Dialogue: 0,2:17:43.50,2:17:44.95,Default,,0000,0000,0000,,‎这些指控…\N{\rE}These allegations,{\r}
+Dialogue: 0,2:17:46.66,2:17:49.37,Default,,0000,0000,0000,,‎对美国造成了无法挽回的伤害\N{\rE}they inflict irreparable harm on America.{\r}
+Dialogue: 0,2:17:52.50,2:17:53.70,Default,,0000,0000,0000,,‎总统先生\N{\rE}Mr. President.{\r}
+Dialogue: 0,2:17:59.50,2:18:02.58,Default,,0000,0000,0000,,‎天啊 普龙托 这些女孩？\N{\rE}Gee, Pronto, these girls?{\r}
+Dialogue: 0,2:18:03.83,2:18:08.00,Default,,0000,0000,0000,,‎天啊 我知道你是个成熟的男人 ‎我也不是小孩子\N{\rE}Gosh, I know you're a man of the world.\NI'm not a child.{\r}
+Dialogue: 0,2:18:09.20,2:18:11.00,Default,,0000,0000,0000,,‎你不必担心我\N{\rE}You don't have to worry about me.{\r}
+Dialogue: 0,2:18:17.29,2:18:19.58,Default,,0000,0000,0000,,‎梦露…梦露小姐\NMonroe… Miss Monroe.
+Dialogue: 0,2:18:20.37,2:18:22.29,Default,,0000,0000,0000,,‎来吧 起来\N-Get up. Get… Just…\N{\rE}Come on. Just get up.{\r}
+Dialogue: 0,2:18:23.70,2:18:27.16,Default,,0000,0000,0000,,‎-天啊 把她拉起来 ‎-我抱住她了 来吧\N{\rE}-Oh, Jesus. Grab her. -I got her. Come on.{\r}
+Dialogue: 0,2:18:29.62,2:18:33.37,Default,,0000,0000,0000,,‎梦露小姐 这边 你需要帮助吗？\N{\rE}Miss Monroe, this way, ma'am. Do you need assistance?{\r}
+Dialogue: 0,2:18:42.41,2:18:44.08,Default,,0000,0000,0000,,‎我爱总统\N{\rE}I love the president.{\r}
+Dialogue: 0,2:18:47.62,2:18:49.08,Default,,0000,0000,0000,,‎我爱总统\N{\rE}I love the president.{\r}
+Dialogue: 0,2:19:09.25,2:19:13.41,Default,,0000,0000,0000,,‎-女士？ ‎-不用 我没事\N{\rE}Ma'am?\NNo. I'm fine.{\r}
+Dialogue: 0,2:19:14.37,2:19:16.20,Default,,0000,0000,0000,,‎请别进来\N{\rE}Don't come inside, please.{\r}
+Dialogue: 0,2:19:43.45,2:19:48.20,Default,,0000,0000,0000,,‎-梦露小姐！怎么了？ ‎-天啊 怀特利 我还以为我死了\N{\rE}Miss Monroe! What's wrong? What's wrong?\NOh, gosh, Whitey. I thought I was dead.{\r}
+Dialogue: 0,2:19:48.29,2:19:50.25,Default,,0000,0000,0000,,‎-你刚刚在打瞌睡 ‎-只是一秒钟\N{\rE}-You just dozed off. -Just for a second.{\r}
+Dialogue: 0,2:19:54.29,2:19:57.08,Default,,0000,0000,0000,,‎-天啊 ‎-别闹了\N{\rE}Oh God.\NOh, stop.{\r}
+Dialogue: 0,2:20:01.79,2:20:04.08,Default,,0000,0000,0000,,‎你觉得你…你看起来是像死了一样\NAnd you thought you were… You look dead.
+Dialogue: 0,2:20:04.87,2:20:08.16,Default,,0000,0000,0000,,‎-我需要这个 ‎-天啊 来一点\N{\rE}-I need this. -My God. Have it.{\r}
+Dialogue: 0,2:20:11.79,2:20:12.75,Default,,0000,0000,0000,,‎你还好吗？\N{\rE}You all right?{\r}
+Dialogue: 0,2:20:13.37,2:20:14.58,Default,,0000,0000,0000,,‎别叫了\N{\rE}Stop screaming.{\r}
+Dialogue: 0,2:21:25.83,2:21:26.95,Default,,0000,0000,0000,,‎你是谁？\N{\rE}Who is it?{\r}
+Dialogue: 0,2:23:06.50,2:23:08.83,Default,,0000,0000,0000,,‎你做出的牺牲…\N{\rE}The circle of light is yours.{\r}
+Dialogue: 0,2:23:08.91,2:23:13.04,Default,,0000,0000,0000,,‎你把自己置于圈中 ‎无论你走到哪儿都带着它\N{\rE}You enclose yourself in the circle. You carry it with you wherever you go.{\r}
+Dialogue: 0,2:23:16.50,2:23:18.79,Default,,0000,0000,0000,,‎这光圈是你的\N{\rE}The circle of light is yours.{\r}
+Dialogue: 0,2:23:18.87,2:23:22.91,Default,,0000,0000,0000,,‎你把自己置于圈中 ‎无论你走到哪儿都带着它\N{\rE}You enclose yourself in the circle. You carry it with you wherever you go.{\r}
+Dialogue: 0,2:23:50.41,2:23:54.00,Default,,0000,0000,0000,,‎这只是个梦\N{\rE}It's just a dream. It's just a dream.{\r}
+Dialogue: 0,2:24:00.95,2:24:04.12,Default,,0000,0000,0000,,‎这只是个梦\N{\rE}It's just a dream.\NIt's just a dream.{\r}
+Dialogue: 0,2:24:08.33,2:24:10.95,Default,,0000,0000,0000,,‎这只是个梦 这只是…\NIt's just a dream. It's just a…
+Dialogue: 0,2:24:30.50,2:24:32.54,Default,,0000,0000,0000,,‎这只是个疯狂的梦\N{\rE}It's just a crazy dream.{\r}
+Dialogue: 0,2:25:18.37,2:25:23.08,Default,,0000,0000,0000,,‎天啊 多丑陋的梦啊\N{\rE}Oh Christ.\NWhat an ugly dream.{\r}
+Dialogue: 0,2:25:35.29,2:25:36.95,Default,,0000,0000,0000,,‎多疯狂的梦啊\N{\rE}What a crazy dream.{\r}
+Dialogue: 0,2:25:44.41,2:25:46.41,Default,,0000,0000,0000,,‎我不想变得残忍\N{\rE}I have not intended to be cruel.{\r}
+Dialogue: 0,2:25:47.37,2:25:48.87,Default,,0000,0000,0000,,‎也不想玩弄你的心\N{\rE}Or to toy with your heart.{\r}
+Dialogue: 0,2:25:52.20,2:25:54.66,Default,,0000,0000,0000,,‎我因生病而无法正常活动\N{\rE}I have been incapacitated by illness.{\r}
+Dialogue: 0,2:25:56.75,2:25:58.58,Default,,0000,0000,0000,,‎但你经常出现在我脑海中\N{\rE}But you are in my thoughts often.{\r}
+Dialogue: 0,2:26:03.91,2:26:06.20,Default,,0000,0000,0000,,‎我只在远处了解你\N{\rE}I have known you only at a distance.{\r}
+Dialogue: 0,2:26:07.29,2:26:11.58,Default,,0000,0000,0000,,‎这么多年过去了 ‎我们的距离似乎无法跨越\N{\rE}Years passed, and that distance seemed too great to surmount.{\r}
+Dialogue: 0,2:26:15.91,2:26:18.87,Default,,0000,0000,0000,,‎时间就是阻挡在我们之间的鸿沟\N{\rE}Time is like a fast river running through us.{\r}
+Dialogue: 0,2:26:20.62,2:26:22.04,Default,,0000,0000,0000,,‎已经如此…\N{\rE}Already it isn't.{\r}
+Dialogue: 0,2:26:24.20,2:26:27.45,Default,,0000,0000,0000,,‎我发誓我很快就会联系你\N{\rE}Soon I will contact you, I promise.{\r}
+Dialogue: 0,2:26:27.54,2:26:31.12,Default,,0000,0000,0000,,‎好 但你为什么等待？\N{\rE}Yes. Yes, but why are you waiting?{\r}
+Dialogue: 0,2:26:32.66,2:26:34.00,Default,,0000,0000,0000,,‎你泪流满面的父亲\N{\rE}Your tearful father.{\r}
+Dialogue: 0,2:26:45.95,2:26:46.87,Default,,0000,0000,0000,,诺玛…\N-Norma…
+Dialogue: 0,2:26:49.66,2:26:50.62,Default,,0000,0000,0000,,‎我是艾迪G\N{\rE}It's Eddy G.{\r}
+Dialogue: 0,2:26:52.16,2:26:53.20,Default,,0000,0000,0000,,‎卡西死了\N{\rE}Cass is dead.{\r}
+Dialogue: 0,2:26:58.83,2:27:03.54,Default,,0000,0000,0000,,‎被呕吐物噎住 窒息而亡 ‎经典的醉酒死法 对吧？\N{\rE}Choked on his puke and strangled. Classic alky death, huh?{\r}
+Dialogue: 0,2:27:04.45,2:27:06.87,Default,,0000,0000,0000,,‎我今早过来的时候发现了他的遗体\N{\rE}I found him when I came over this morning.{\r}
+Dialogue: 0,2:27:11.25,2:27:13.25,Default,,0000,0000,0000,,‎卡西给你留了个纪念品 诺玛\N{\rE}Cass left a memento for you, Norma.{\r}
+Dialogue: 0,2:27:16.87,2:27:18.33,Default,,0000,0000,0000,,‎他大部分的东西都留给我了\N{\rE}Most of his things, he left to me.{\r}
+Dialogue: 0,2:27:18.41,2:27:20.16,Default,,0000,0000,0000,,‎我是他的好兄弟 从没让他失望\N{\rE}I was his good buddy, never let him down, so he left most of his things to me.{\r}
+Dialogue: 0,2:27:20.25,2:27:22.04,Default,,0000,0000,0000,,‎所以他把大部分东西留给了我
+Dialogue: 0,2:27:23.29,2:27:24.75,Default,,0000,0000,0000,,‎但这个纪念品\NBut this memento…
+Dialogue: 0,2:27:26.58,2:27:28.66,Default,,0000,0000,0000,,‎他说：“这东西某天要给诺玛”\N…"This is for Norma someday," he'd say.
+Dialogue: 0,2:27:31.75,2:27:33.25,Default,,0000,0000,0000,,‎这对他来说意义非凡\N{\rE}It meant a lot to him.{\r}
+Dialogue: 0,2:27:34.91,2:27:37.91,Default,,0000,0000,0000,,‎他说：“诺玛总是让我心动”\N{\rE}"Norma always had my heart," he'd say.{\r}
+Dialogue: 0,2:27:42.50,2:27:43.37,Default,,0000,0000,0000,,‎不\N{\rE}No.{\r}
+Dialogue: 0,2:27:46.08,2:27:47.20,Default,,0000,0000,0000,,‎“不”什么？\N{\rE}"No" what?{\r}
+Dialogue: 0,2:27:52.33,2:27:53.62,Default,,0000,0000,0000,,‎我不想要\N{\rE}I don't want it.{\r}
+Dialogue: 0,2:27:54.66,2:27:58.62,Default,,0000,0000,0000,,‎-我不想要 艾迪 ‎-你怎么知道你不想要呢 诺玛？\N{\rE}I don't want it, Eddy.\NHow do you know you don't want it, Norma?{\r}
+Dialogue: 0,2:28:01.20,2:28:02.54,Default,,0000,0000,0000,,‎你不知道这是什么东西\N{\rE}You don't know what it is.{\r}
+Dialogue: 0,2:28:06.54,2:28:09.91,Default,,0000,0000,0000,,‎好吧 宝贝 我会寄过去\N{\rE}Right, baby. I'll send it.{\r}
+Dialogue: 0,2:28:11.33,2:28:12.83,Default,,0000,0000,0000,,‎记得查特别快递\N{\rE}Look for special delivery.{\r}
+Dialogue: 0,2:28:24.04,2:28:24.91,Default,,0000,0000,0000,,‎（玛丽莲）
+Dialogue: 0,2:28:29.33,2:28:30.33,Default,,0000,0000,0000,,‎谢谢\N{\rE}Thank you.{\r}
+Dialogue: 0,2:28:32.25,2:28:33.25,Default,,0000,0000,0000,,‎等等\N{\rE}Oh, just a minute.{\r}
+Dialogue: 0,2:28:42.04,2:28:43.41,Default,,0000,0000,0000,,‎我的钱包呢？\N{\rE}Where's my wallet?{\r}
+Dialogue: 0,2:28:44.95,2:28:46.12,Default,,0000,0000,0000,,‎不在我的手提袋里？\N{\rE}Not in my purse?{\r}
+Dialogue: 0,2:29:00.16,2:29:01.50,Default,,0000,0000,0000,,‎我放哪儿去了？\N{\rE}Where did I put it?{\r}
+Dialogue: 0,2:31:55.91,2:31:58.29,Default,,0000,0000,0000,,‎但你也想让那孩子死\N{\rE}But you wanted baby dead too.{\r}
+Dialogue: 0,2:32:02.83,2:32:04.41,Default,,0000,0000,0000,,‎你知道你想\N{\rE}You know you did.{\r}
+Dialogue: 0,2:32:19.79,2:32:24.45,Default,,0000,0000,0000,,‎（诺玛简）
+Dialogue: 0,2:32:37.45,2:32:40.79,Default,,0000,0000,0000,,‎（致我的女儿）
+Dialogue: 0,2:33:00.20,2:33:07.08,Default,,0000,0000,0000,,‎（从来就没有什么泪流满面的父亲 ‎爱你的 卡西）
+Dialogue: 0,2:37:09.62,2:37:11.58,Default,,0000,0000,0000,,‎诺玛简 看\N{\rE}Norma Jeane, look.{\r}
+Dialogue: 0,2:37:14.95,2:37:16.37,Default,,0000,0000,0000,,‎那男人是你的父亲\N{\rE}That man is your father.{\r}
+Dialogue: 0,2:39:10.20,2:39:16.79,Default,,0000,0000,0000,,‎（改编自乔伊斯卡罗尔欧茨的小说）
+Dialogue: 0,2:45:31.25,2:45:35.91,Default,,0000,0000,0000,,‎（若你或你认识的人正在经历挣扎）
+Dialogue: 0,2:45:42.75,2:45:45.45,Default,,0000,0000,0000,,感谢匡思颖
+
+
