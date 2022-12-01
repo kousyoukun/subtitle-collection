@@ -1,0 +1,1456 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: Gemini Man 2019
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CHT,標楷體,15,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1
+Style: ENG,Microsoft YaHei UI,16,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1  
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:01:00.99,0:01:05.63,CHT,,0,0,0,,{\fs40\bord0\fad(400,400)}雙 子 殺 手
+Dialogue: 0,0:01:18.70,0:01:22.59,CHT,,0,0,0,,{\bord0\fad(400,0)\pos(300,219)}比利時 列日市
+Dialogue: 0,0:01:42.40,0:01:44.61,CHT,,0,0,0,,六號車  我們已經出發\N{\rENG}Car number 6, we are moving.
+Dialogue: 0,0:01:45.72,0:01:47.83,CHT,,0,0,0,,座位號4A  重複  座位號4A\N{\rENG}"4 alpha", repeat, "4 alpha".
+Dialogue: 0,0:01:47.83,0:01:49.81,CHT,,0,0,0,,靠窗  周圍都是他的人\N{\rENG}Window seat, his team's on all sides.
+Dialogue: 0,0:01:49.99,0:01:50.84,CHT,,0,0,0,,收到\N{\rENG}Copy that.
+Dialogue: 0,0:02:52.11,0:02:53.05,CHT,,0,0,0,,速度是多少\N{\rENG}Speed?
+Dialogue: 0,0:02:53.89,0:02:56.02,CHT,,0,0,0,,每小時238千米  勻速行進\N{\rENG}238 km/h and holding steady.
+Dialogue: 0,0:02:56.76,0:02:58.09,CHT,,0,0,0,,你那邊還好嗎\N{\rENG}You alright over there?
+Dialogue: 0,0:02:58.56,0:03:00.69,CHT,,0,0,0,,弄點壞蛋給我玩  我還挺開心的\N{\rENG}I do love getting me some bad guys.
+Dialogue: 0,0:03:14.51,0:03:16.56,CHT,,0,0,0,,等等  停下  有平民  重複\N{\rENG}Wait! Wait! Civilian in play, I repeat
+Dialogue: 0,0:03:16.56,0:03:17.86,CHT,,0,0,0,,有平民\N{\rENG}civilian in play.
+Dialogue: 0,0:03:35.61,0:03:36.61,CHT,,0,0,0,,-可以射擊  -請確認\N{\rENG}- Clear.  - Confirm.
+Dialogue: 0,0:03:37.04,0:03:38.32,CHT,,0,0,0,,已確認  可以射擊\N{\rENG}Confirmed. Clear, code green.
+Dialogue: 0,0:03:45.56,0:03:46.86,CHT,,0,0,0,,媽的\N{\rENG}Shit.
+Dialogue: 0,0:03:50.48,0:03:51.71,CHT,,0,0,0,,我們要去同一個地方嗎\N{\rENG}Are we shipping to the same place?
+Dialogue: 0,0:03:51.83,0:03:52.75,CHT,,0,0,0,,是  長官\N{\rENG}Yes, sir.
+Dialogue: 0,0:03:53.03,0:03:54.26,CHT,,0,0,0,,好吧\N{\rENG}Alright.
+Dialogue: 0,0:03:54.66,0:03:56.27,CHT,,0,0,0,,那可是你的最好一擊\N{\rENG}That was your best ever.
+Dialogue: 0,0:03:56.80,0:03:57.94,CHT,,0,0,0,,我  我真的被驚豔了\N{\rENG}I was... I was impressed.
+Dialogue: 0,0:03:58.23,0:03:59.56,CHT,,0,0,0,,我擊中哪裡了\N{\rENG}Where I hit him?
+Dialogue: 0,0:03:59.94,0:04:00.88,CHT,,0,0,0,,頸部\N{\rENG}Neck.
+Dialogue: 0,0:04:01.70,0:04:03.31,CHT,,0,0,0,,火車可還在行進中呢\N{\rENG}On a moving train.
+Dialogue: 0,0:04:04.82,0:04:06.67,CHT,,0,0,0,,-你還拍視頻了嗎  -對啊  我拍了\N{\rENG}- You took a video?  - Yeah, I took video.
+Dialogue: 0,0:04:06.70,0:04:08.13,CHT,,0,0,0,,老兄  來跟大家認識認識\N{\rENG}Man, meet everybody else, look.
+Dialogue: 0,0:04:17.22,0:04:18.49,CHT,,0,0,0,,-刪了  -亨利\N{\rENG}- Delete it.  - Henry.
+Dialogue: 0,0:04:18.68,0:04:20.10,CHT,,0,0,0,,得了  聽著\N{\rENG}Come on, listen.
+Dialogue: 0,0:04:20.73,0:04:22.70,CHT,,0,0,0,,在你接任務之前有四個槍手接連失敗\N{\rENG}4 shooters wift on this guy before you got the call.
+Dialogue: 0,0:04:22.86,0:04:23.86,CHT,,0,0,0,,足足四個\N{\rENG}Alright, 4.
+Dialogue: 0,0:04:23.92,0:04:25.22,CHT,,0,0,0,,都跟樁子似的\N{\rENG}All of 'em studs.
+Dialogue: 0,0:04:25.47,0:04:27.14,CHT,,0,0,0,,你才是那個幹掉他的人\N{\rENG}And you bring him off.
+Dialogue: 0,0:04:27.83,0:04:28.90,CHT,,0,0,0,,那場面太漂亮了\N{\rENG}That was beautiful, alright.
+Dialogue: 0,0:04:28.90,0:04:30.47,CHT,,0,0,0,,我激動得眼淚都掉下來了\N{\rENG}I got emotional, tear fell.
+Dialogue: 0,0:04:30.80,0:04:31.77,CHT,,0,0,0,,刪了\N{\rENG}Delete it.
+Dialogue: 0,0:04:32.11,0:04:33.02,CHT,,0,0,0,,我會刪的\N{\rENG}I'll delete it.
+Dialogue: 0,0:04:33.34,0:04:34.90,CHT,,0,0,0,,我到時候就刪了  好吧\N{\rENG}I'll delete it, alright.
+Dialogue: 0,0:04:52.36,0:04:55.50,Default,,0,0,0,,{\r原文字幕\fn方正蘭亭中黑_GBK\pos(280,240)}佐治亞州
+Dialogue: 0,0:05:23.29,0:05:24.41,CHT,,0,0,0,,愛莫能助\N{\rENG}Can't do this.
+Dialogue: 0,0:05:26.29,0:05:27.89,CHT,,0,0,0,,怎麼樣  大哥\N{\rENG}What's up, my brother?
+Dialogue: 0,0:05:28.94,0:05:30.25,CHT,,0,0,0,,你還好嗎\N{\rENG}You alright?
+Dialogue: 0,0:05:32.11,0:05:33.30,CHT,,0,0,0,,我擊中了他的頸部\N{\rENG}I got him in his neck.
+Dialogue: 0,0:05:33.62,0:05:35.56,CHT,,0,0,0,,但我當時瞄準的是他的腦袋\N{\rENG}But I was aiming at his head.
+Dialogue: 0,0:05:36.22,0:05:38.25,CHT,,0,0,0,,別的環節出點岔子沒什麼\N{\rENG}Other lines of work you can lose a step.
+Dialogue: 0,0:05:38.26,0:05:39.16,CHT,,0,0,0,,這個不行\N{\rENG}Not this one.
+Dialogue: 0,0:05:39.24,0:05:41.79,CHT,,0,0,0,,你還是我們中最優秀的  同行裡最優秀的\N{\rENG}You still the best we got. Best anyone's got.
+Dialogue: 0,0:05:42.21,0:05:43.57,CHT,,0,0,0,,相信我  我眼觀六路  耳聽八方\N{\rENG}Believe me, I keep track.
+Dialogue: 0,0:05:43.70,0:05:44.95,CHT,,0,0,0,,不喝飲料  今天不喝\N{\rENG}Not a soda, not today.
+Dialogue: 0,0:05:45.08,0:05:46.75,CHT,,0,0,0,,-啥意思  -來點啤酒\N{\rENG}- Meaning?  - Give me a beer.
+Dialogue: 0,0:05:46.88,0:05:48.29,CHT,,0,0,0,,你確定嗎\N{\rENG}Are you sure?
+Dialogue: 0,0:05:48.38,0:05:50.18,CHT,,0,0,0,,-你真要退休了嗎  -是  長官\N{\rENG}- Are you really retiring?  - Yes, sir.
+Dialogue: 0,0:05:50.31,0:05:51.74,CHT,,0,0,0,,那我就確定要啤酒\N{\rENG}Then I'm sure.
+Dialogue: 0,0:05:51.89,0:05:52.89,CHT,,0,0,0,,好嘞\N{\rENG}Okay.
+Dialogue: 0,0:05:56.73,0:05:58.62,CHT,,0,0,0,,能開槍的人多了  戴爾\N{\rENG}A lot of guys can shoot, Dell.
+Dialogue: 0,0:06:00.32,0:06:02.96,CHT,,0,0,0,,但是你是唯一的  你有別人沒有的經歷\N{\rENG}They aren't you, they don't have the history you do.
+Dialogue: 0,0:06:03.02,0:06:04.78,CHT,,0,0,0,,我覺得  這經歷\N{\rENG}Yeah, I think the... the history
+Dialogue: 0,0:06:04.95,0:06:06.23,CHT,,0,0,0,,可能也算不上什麼好事\N{\rENG}might be the problem.
+Dialogue: 0,0:06:07.03,0:06:07.69,CHT,,0,0,0,,亨利\N{\rENG}Henry.
+Dialogue: 0,0:06:09.58,0:06:11.32,CHT,,0,0,0,,我們一起經歷了太多  你我二人\N{\rENG}We've been through a lot together, you and me.
+Dialogue: 0,0:06:11.80,0:06:13.21,CHT,,0,0,0,,讓世界變得更安全\N{\rENG}We do world safer.
+Dialogue: 0,0:06:13.93,0:06:16.83,CHT,,0,0,0,,我就是沒法將對你的信任轉給新來的人\N{\rENG}I just not gonna trust a new guy like I trust you.
+Dialogue: 0,0:06:20.00,0:06:22.02,CHT,,0,0,0,,當時有個小孩\N{\rENG}There was a kid...
+Dialogue: 0,0:06:22.79,0:06:24.85,CHT,,0,0,0,,一個漂亮小女孩\N{\rENG}beautiful little girl.
+Dialogue: 0,0:06:25.14,0:06:26.82,CHT,,0,0,0,,就在他旁邊\N{\rENG}Right next to him.
+Dialogue: 0,0:06:27.67,0:06:30.62,CHT,,0,0,0,,如果我偏個15釐米\N{\rENG}If I'm 6 inches off -
+Dialogue: 0,0:06:31.81,0:06:33.75,CHT,,0,0,0,,死的就是她了\N{\rENG}she's dead.
+Dialogue: 0,0:06:34.48,0:06:36.05,CHT,,0,0,0,,你懂嗎\N{\rENG}Understand?
+Dialogue: 0,0:06:36.71,0:06:38.08,CHT,,0,0,0,,這次\N{\rENG}This time
+Dialogue: 0,0:06:39.61,0:06:41.32,CHT,,0,0,0,,是我走運\N{\rENG}I got lucky.
+Dialogue: 0,0:06:42.21,0:06:44.20,CHT,,0,0,0,,我射出子彈的時候沒有那種掌控感\N{\rENG}I didn't feel the shot.
+Dialogue: 0,0:06:45.21,0:06:47.22,CHT,,0,0,0,,但本來應該有的\N{\rENG}Not like I should have.
+Dialogue: 0,0:06:48.48,0:06:50.67,CHT,,0,0,0,,戴爾  我殺過72個人\N{\rENG}72 kills, Dell.
+Dialogue: 0,0:06:51.13,0:06:53.85,CHT,,0,0,0,,這些破事真的會影響你的\N{\rENG}That shit starts to mess with you a little bit.
+Dialogue: 0,0:06:55.80,0:06:57.99,CHT,,0,0,0,,在內心深處  我感覺到\N{\rENG}Deep down it's like...
+Dialogue: 0,0:06:58.63,0:07:01.22,CHT,,0,0,0,,我的靈魂好像受傷了\N{\rENG}my soul was hurt.
+Dialogue: 0,0:07:02.76,0:07:03.96,CHT,,0,0,0,,我想要回歸平靜\N{\rENG}I just want some peace.
+Dialogue: 0,0:07:07.45,0:07:09.31,CHT,,0,0,0,,所以  我現在該怎麼辦呢\N{\rENG}So, what do I do now?
+Dialogue: 0,0:07:11.78,0:07:13.51,CHT,,0,0,0,,祝我好運吧\N{\rENG}Wish me well.
+Dialogue: 0,0:07:34.23,0:07:35.14,CHT,,0,0,0,,早上好\N{\rENG}Good morning.
+Dialogue: 0,0:07:35.68,0:07:37.00,CHT,,0,0,0,,傑瑞去哪了\N{\rENG}Hey, where's Jerry?
+Dialogue: 0,0:07:37.16,0:07:38.21,CHT,,0,0,0,,傑瑞退休了\N{\rENG}Jerry retired.
+Dialogue: 0,0:07:38.44,0:07:40.37,CHT,,0,0,0,,他們受不了他每天那麼忙了\N{\rENG}They couldn't take anymore of his bustling pace.
+Dialogue: 0,0:07:40.51,0:07:41.51,CHT,,0,0,0,,我叫丹尼\N{\rENG}I'm Danny.
+Dialogue: 0,0:07:42.51,0:07:44.18,CHT,,0,0,0,,你好丹尼  我是亨利\N{\rENG}Hey Danny, I'm Henry.
+Dialogue: 0,0:07:45.60,0:07:48.74,CHT,,0,0,0,,我欠你23.46美元\N{\rENG}I owe you $23.46.
+Dialogue: 0,0:07:48.88,0:07:50.18,CHT,,0,0,0,,好的  謝謝你  亨利\N{\rENG}Okay, thank you, Henry.
+Dialogue: 0,0:07:52.71,0:07:54.38,CHT,,0,0,0,,你是為了什麼來釣魚呢\N{\rENG}So, what are you fishing for?
+Dialogue: 0,0:07:54.78,0:07:56.25,CHT,,0,0,0,,平和  靜謐\N{\rENG}Peace and quiet
+Dialogue: 0,0:07:56.94,0:07:58.20,CHT,,0,0,0,,還有馬鮫魚\N{\rENG}and mackerel.
+Dialogue: 0,0:07:58.79,0:08:00.24,CHT,,0,0,0,,現在你要向牧師點進發了嗎\N{\rENG}Head now to Preachers Point?
+Dialogue: 0,0:08:00.77,0:08:02.28,CHT,,0,0,0,,你建議我去那邊嗎\N{\rENG}Is that what you recommend?
+Dialogue: 0,0:08:02.40,0:08:04.31,CHT,,0,0,0,,陽光尚好  白晝且長  何樂而不為呢\N{\rENG}Well, seems like a nice enough day for it.
+Dialogue: 0,0:08:12.83,0:08:15.37,CHT,,0,0,0,,你好像不是很贊成共生共榮\N{\rENG}Not much of a "live and let live" guy, I take it.
+Dialogue: 0,0:08:15.50,0:08:17.56,CHT,,0,0,0,,我對蜜蜂嚴重過敏\N{\rENG}I'm deathly allergic to bees.
+Dialogue: 0,0:08:18.66,0:08:21.12,CHT,,0,0,0,,你是學生嗎  還是全職看店的\N{\rENG}You a student or just a fish whisperer?
+Dialogue: 0,0:08:21.42,0:08:23.62,CHT,,0,0,0,,我還在為畢業而努力奮鬥\N{\rENG}I'm working my way to grad school.
+Dialogue: 0,0:08:23.62,0:08:24.62,CHT,,0,0,0,,研究海洋生物學\N{\rENG}Marine biology.
+Dialogue: 0,0:08:25.78,0:08:27.20,CHT,,0,0,0,,佐治亞大學  達裡安學院\N{\rENG}UGA, Darian?
+Dialogue: 0,0:08:27.46,0:08:28.90,CHT,,0,0,0,,沖啊狗狗！\N{\rENG}Go Dawgs!
+Dialogue: 0,0:08:27.46,0:08:28.90,Default,,0,0,0,,{\an8}佐治亞大學的吉祥物是鬥牛犬
+Dialogue: 0,0:08:29.41,0:08:30.87,CHT,,0,0,0,,你自己可要小心了\N{\rENG}Well, you be careful around here.
+Dialogue: 0,0:08:30.87,0:08:33.91,CHT,,0,0,0,,碼頭那邊也有不少狗呢\N{\rENG}There is some dogs out on these docks too.
+Dialogue: 0,0:08:34.63,0:08:36.41,CHT,,0,0,0,,我應付得來\N{\rENG}Nothing I can't handle.
+Dialogue: 0,0:08:52.72,0:08:55.27,CHT,,0,0,0,,我猜我沒必要問你生意如何吧\N{\rENG}Well, I guess I don't have to ask how business is.
+Dialogue: 0,0:08:56.64,0:08:58.25,CHT,,0,0,0,,本來應該是你的生意\N{\rENG}Could have been yours.
+Dialogue: 0,0:08:58.73,0:09:00.58,CHT,,0,0,0,,也就求了你十次而已\N{\rENG}Only asked you 10 times.
+Dialogue: 0,0:09:04.99,0:09:06.31,CHT,,0,0,0,,又見面了兄弟\N{\rENG}Hey brother.
+Dialogue: 0,0:09:07.50,0:09:08.79,CHT,,0,0,0,,見到你可真開心啊  亨利\N{\rENG}It's good to see you, Henry.
+Dialogue: 0,0:09:08.79,0:09:09.70,CHT,,0,0,0,,我也是  傑克\N{\rENG}You too, Jack.
+Dialogue: 0,0:09:11.88,0:09:14.26,CHT,,0,0,0,,你在那邊都幹嘛呢  揮霍荷爾蒙嗎\N{\rENG}What you doing there? Feeling sexy?
+Dialogue: 0,0:09:15.82,0:09:17.10,CHT,,0,0,0,,你這麼快就趕到我真的很感激\N{\rENG}Thanks for coming so quickly.
+Dialogue: 0,0:09:17.10,0:09:19.46,CHT,,0,0,0,,應該的  你還沒離婚吧\N{\rENG}Of course. You still married?
+Dialogue: 0,0:09:19.46,0:09:23.59,CHT,,0,0,0,,是啊  老婆在巴黎購物呢\N{\rENG}Yup. Wife's on a shopping trip to Paris.
+Dialogue: 0,0:09:24.03,0:09:25.74,CHT,,0,0,0,,兒子上了寄宿學校\N{\rENG}Son's in boarding school.
+Dialogue: 0,0:09:26.27,0:09:27.00,CHT,,0,0,0,,你呢\N{\rENG}You?
+Dialogue: 0,0:09:27.00,0:09:29.89,CHT,,0,0,0,,三無  沒老婆沒娃  也去不成巴黎\N{\rENG}No, no wife, no kids, no Paris.
+Dialogue: 0,0:09:30.89,0:09:32.68,CHT,,0,0,0,,敬  下一次戰爭\N{\rENG}Here's to the next war -
+Dialogue: 0,0:09:32.72,0:09:34.77,CHT,,0,0,0,,-永遠不會發生  -永遠不會發生\N{\rENG}- which is no war.  - which is no war.
+Dialogue: 0,0:09:39.97,0:09:41.43,CHT,,0,0,0,,你準備了什麼好東西給我\N{\rENG}So, what've you got?
+Dialogue: 0,0:09:47.19,0:09:48.66,CHT,,0,0,0,,認識他嗎\N{\rENG}Recognise him?
+Dialogue: 0,0:09:50.69,0:09:51.79,CHT,,0,0,0,,問這個幹什麼\N{\rENG}Who's asking?
+Dialogue: 0,0:09:52.17,0:09:54.31,CHT,,0,0,0,,老朋友擔心你可能惹上麻煩了\N{\rENG}Your old friend who's afraid you're in trouble.
+Dialogue: 0,0:09:55.77,0:09:57.18,CHT,,0,0,0,,你認識嗎\N{\rENG}Do you?
+Dialogue: 0,0:09:58.75,0:10:00.26,CHT,,0,0,0,,我在列日市幹掉他了\N{\rENG}I AMF'ed him in Liège.
+Dialogue: 0,0:10:00.38,0:10:02.05,CHT,,0,0,0,,他們告訴你他的身份了嗎\N{\rENG}They tell you who he was?
+Dialogue: 0,0:10:02.93,0:10:04.99,CHT,,0,0,0,,瓦萊利·多莫夫  恐怖分子\N{\rENG}Valery Dormov. Terrorist.
+Dialogue: 0,0:10:05.04,0:10:06.04,CHT,,0,0,0,,不\N{\rENG}No.
+Dialogue: 0,0:10:06.66,0:10:09.49,CHT,,0,0,0,,瓦萊利·多莫夫是分子生物學家\N{\rENG}Valery Dormov. Molecular biologist.
+Dialogue: 0,0:10:09.70,0:10:13.57,CHT,,0,0,0,,他在美國工作了三十年\N{\rENG}Who worked here in the States for 30 years.
+Dialogue: 0,0:10:14.89,0:10:16.02,CHT,,0,0,0,,我看過他的資料\N{\rENG}I read his file.
+Dialogue: 0,0:10:16.59,0:10:17.65,CHT,,0,0,0,,生化恐怖分子\N{\rENG}Bio-terrorist.
+Dialogue: 0,0:10:18.29,0:10:20.26,CHT,,0,0,0,,資料被人改過了\N{\rENG}The file was spiked.
+Dialogue: 0,0:10:20.78,0:10:22.17,CHT,,0,0,0,,我不知道是誰做了手腳\N{\rENG}I don't know by who.
+Dialogue: 0,0:10:22.72,0:10:23.98,CHT,,0,0,0,,但是動機呢\N{\rENG}Why?
+Dialogue: 0,0:10:24.16,0:10:25.82,CHT,,0,0,0,,我也無從知曉\N{\rENG}I don't know that, either.
+Dialogue: 0,0:10:26.01,0:10:27.68,CHT,,0,0,0,,你是從哪知道的\N{\rENG}Where are you getting this from?
+Dialogue: 0,0:10:28.63,0:10:30.25,CHT,,0,0,0,,一個朋友\N{\rENG}A friend.
+Dialogue: 0,0:10:30.84,0:10:31.63,CHT,,0,0,0,,另一邊的朋友\N{\rENG}From the other side.
+Dialogue: 0,0:10:31.90,0:10:32.53,CHT,,0,0,0,,好吧\N{\rENG}Alright, well.
+Dialogue: 0,0:10:32.53,0:10:33.83,CHT,,0,0,0,,我要和他談談\N{\rENG}I need to talk to him.
+Dialogue: 0,0:10:33.83,0:10:37.45,CHT,,0,0,0,,沒問題  電話還是視頻\N{\rENG}Sure. Skype? Facetime?
+Dialogue: 0,0:10:39.04,0:10:41.11,CHT,,0,0,0,,我得和他面談  傑克\N{\rENG}I need to talk to him, Jack.
+Dialogue: 0,0:10:43.06,0:10:44.78,CHT,,0,0,0,,好吧  管他呢\N{\rENG}Oh, what a hell.
+Dialogue: 0,0:10:44.93,0:10:46.44,CHT,,0,0,0,,他欠我的\N{\rENG}He owes me.
+Dialogue: 0,0:10:51.94,0:10:53.61,CHT,,0,0,0,,我也希望這不是真的\N{\rENG}I hope I'm wrong.
+Dialogue: 0,0:10:54.92,0:10:56.71,CHT,,0,0,0,,我只是想讓你小心點\N{\rENG}I just want you to be careful.
+Dialogue: 0,0:11:04.88,0:11:08.38,CHT,,0,0,0,,我要把在DIA任職時錯過的東西都補回來\N{\rENG}It's me got full of things I didn't do in my DIA years.
+Dialogue: 0,0:11:04.89,0:11:08.39,CHT,,0,0,0,,{\fs16\an8}DIA:美國國防情報總署
+Dialogue: 0,0:11:09.97,0:11:12.95,CHT,,0,0,0,,你覺得你在DIA的時候沒幹過這事嗎\N{\rENG}You think you didn't do that in your DIA years?
+Dialogue: 0,0:11:15.76,0:11:17.10,CHT,,0,0,0,,這人真是\N{\rENG}This guy.
+Dialogue: 0,0:11:22.92,0:11:24.24,CHT,,0,0,0,,{\pos(290,280)}他們告訴你他的身份了嗎\N{\rENG}They tell you who he was?
+Dialogue: 0,0:11:23.60,0:11:27.03,CHT,,0,0,0,,{\fad(400,400)\pos(130,230)}維吉尼亞州 美國國防情報總署
+Dialogue: 0,0:11:25.24,0:11:27.36,CHT,,0,0,0,,{\pos(290,280)}瓦萊利·多莫夫  恐怖分子\N{\rENG}Valery Dormov. Terrorist.
+Dialogue: 0,0:11:27.75,0:11:28.71,CHT,,0,0,0,,不\N{\rENG}No.
+Dialogue: 0,0:11:28.86,0:11:31.70,CHT,,0,0,0,,瓦萊利·多莫夫是分子生物學家\N{\rENG}Valery Dormov. Molecular biologist.
+Dialogue: 0,0:11:31.70,0:11:35.48,CHT,,0,0,0,,他在美國工作了三十年\N{\rENG}Who worked here in the States for 30 years.
+Dialogue: 0,0:11:38.15,0:11:40.07,CHT,,0,0,0,,聯繫我真的是風險很大的事\N{\rENG}You took a real risk contacting me.
+Dialogue: 0,0:11:40.12,0:11:41.12,CHT,,0,0,0,,真希望你沒聯繫我\N{\rENG}I wish you hadn't.
+Dialogue: 0,0:11:41.58,0:11:43.42,CHT,,0,0,0,,我還能怎麼辦呢\N{\rENG}What was I supposed to do?
+Dialogue: 0,0:11:43.70,0:11:44.70,CHT,,0,0,0,,我真愛你  兄弟\N{\rENG}I love you, brother.
+Dialogue: 0,0:11:46.58,0:11:47.94,CHT,,0,0,0,,我也是\N{\rENG}You too.
+Dialogue: 0,0:11:50.11,0:11:51.36,CHT,,0,0,0,,真遺憾\N{\rENG}It's a pitty.
+Dialogue: 0,0:11:51.97,0:11:53.40,CHT,,0,0,0,,我一直挺喜歡亨利\N{\rENG}I've always liked Henry.
+Dialogue: 0,0:11:53.79,0:11:55.03,CHT,,0,0,0,,克雷  亨利是DIA的人\N{\rENG}Henry is DIA, Clay.
+Dialogue: 0,0:11:55.41,0:11:56.30,CHT,,0,0,0,,是我手下的人\N{\rENG}He's one of mine.
+Dialogue: 0,0:11:56.30,0:11:57.81,CHT,,0,0,0,,他知道你騙他了\N{\rENG}He knows you lied to him.
+Dialogue: 0,0:11:57.81,0:11:59.22,CHT,,0,0,0,,我們抓著他的小辮子\N{\rENG}We have a tail on him.
+Dialogue: 0,0:11:59.22,0:12:02.41,CHT,,0,0,0,,退休的基本章程  我們還是控制著他\N{\rENG}Standard protocol for retirement. He'll be contained.
+Dialogue: 0,0:12:02.69,0:12:04.89,CHT,,0,0,0,,誰能控制得了亨利·布洛根\N{\rENG}Contained? Henry Brogan?
+Dialogue: 0,0:12:06.01,0:12:08.15,CHT,,0,0,0,,他現在知道多莫夫的聯繫方式了\N{\rENG}He has Dormov's contact.
+Dialogue: 0,0:12:08.79,0:12:10.60,CHT,,0,0,0,,他會死死抓住這根稻草\N{\rENG}He's gonna pull on that thread
+Dialogue: 0,0:12:10.60,0:12:13.03,CHT,,0,0,0,,一路走上前來  用槍指著我們的鼻子\N{\rENG}until he's pointing a gun at our faces.
+Dialogue: 0,0:12:13.84,0:12:16.22,CHT,,0,0,0,,他的監管人呢  那個光頭\N{\rENG}What about his handler, the bald guy?
+Dialogue: 0,0:12:16.38,0:12:17.02,CHT,,0,0,0,,派特森嗎\N{\rENG}Patterson?
+Dialogue: 0,0:12:17.02,0:12:20.03,CHT,,0,0,0,,他肯定不高興  但他不會違抗我  沒有威脅\N{\rENG}He won't be happy, but he won't cross me, he'll fall in line.
+Dialogue: 0,0:12:20.15,0:12:21.79,CHT,,0,0,0,,這事我來了結\N{\rENG}I'll tie this off.
+Dialogue: 0,0:12:22.49,0:12:24.32,CHT,,0,0,0,,偽裝成俄國人的行動\N{\rENG}Make it look like a Russian op.
+Dialogue: 0,0:12:24.32,0:12:25.77,CHT,,0,0,0,,這事你別插手\N{\rENG}You'll do nothing!
+Dialogue: 0,0:12:25.93,0:12:27.73,CHT,,0,0,0,,我會告訴我的隊員  說亨利失控了\N{\rENG}I'll tell my team that Henry's gone rogue.
+Dialogue: 0,0:12:27.73,0:12:28.91,CHT,,0,0,0,,我會處理好的\N{\rENG}I can handle this.
+Dialogue: 0,0:12:28.91,0:12:30.86,CHT,,0,0,0,,在多莫夫身上你失手四次  還好意思說\N{\rENG}Right after you wift 4 times on Dormov.
+Dialogue: 0,0:12:30.99,0:12:32.82,CHT,,0,0,0,,不  你需要雙子殺手\N{\rENG}No. You need Gemini.
+Dialogue: 0,0:12:33.26,0:12:35.87,CHT,,0,0,0,,我絕不會允許你在美國領土上做這種事\N{\rENG}I will not let you do hints on American soil.
+Dialogue: 0,0:12:35.96,0:12:38.89,CHT,,0,0,0,,你找不到能制住亨利·布洛根的人\N{\rENG}You don't have anyone who can take on Henry Brogan.
+Dialogue: 0,0:12:39.94,0:12:40.94,CHT,,0,0,0,,我能\N{\rENG}I do.
+Dialogue: 0,0:12:42.25,0:12:44.79,CHT,,0,0,0,,我們內部事務內部解決  謝謝你\N{\rENG}We'll clean up our own messes, thank you.
+Dialogue: 0,0:12:45.34,0:12:47.52,CHT,,0,0,0,,拜您的失誤所賜\N{\rENG}Everything that we worked for is
+Dialogue: 0,0:12:47.52,0:12:49.83,CHT,,0,0,0,,我們苦心經營的所有現在都岌岌可危\N{\rENG}at stake thanks to your failures.
+Dialogue: 0,0:12:49.83,0:12:52.46,CHT,,0,0,0,,我只給你一次機會  你可別搞砸\N{\rENG}You have one chance not to screw this up.
+Dialogue: 0,0:12:53.32,0:12:54.40,CHT,,0,0,0,,拜託你\N{\rENG}Please.
+Dialogue: 0,0:12:55.77,0:12:57.28,CHT,,0,0,0,,給我點驚喜\N{\rENG}Surprise me.
+Dialogue: 0,0:13:43.31,0:13:44.79,CHT,,0,0,0,,捕到什麼寶貝了嗎\N{\rENG}Any luck?
+Dialogue: 0,0:13:47.82,0:13:48.92,CHT,,0,0,0,,好吧\N{\rENG}Okay.
+Dialogue: 0,0:13:49.26,0:13:50.42,CHT,,0,0,0,,大多數人都會選擇送花或者\N{\rENG}Most guys try flowers or a
+Dialogue: 0,0:13:50.42,0:13:52.19,CHT,,0,0,0,,放個浪漫點的歌單\N{\rENG}playlist they think I'll find romantic.
+Dialogue: 0,0:13:52.19,0:13:53.61,CHT,,0,0,0,,你是DIA的人嗎\N{\rENG}Are you DIA?
+Dialogue: 0,0:13:54.94,0:13:56.96,CHT,,0,0,0,,你要不要先告訴我DIA是啥\N{\rENG}That depends what's DIA?
+Dialogue: 0,0:13:57.13,0:13:58.72,CHT,,0,0,0,,美國舞蹈教練協會\N{\rENG}Dance Instructors of America.
+Dialogue: 0,0:13:59.48,0:14:01.30,CHT,,0,0,0,,是派特森派你來監視我的嗎\N{\rENG}Did Patterson send you to surveil me?
+Dialogue: 0,0:14:02.25,0:14:03.59,CHT,,0,0,0,,哪個派特森\N{\rENG}Patterson?
+Dialogue: 0,0:14:03.59,0:14:04.49,CHT,,0,0,0,,你不認識戴爾·派特森嗎\N{\rENG}Del Patterson?
+Dialogue: 0,0:14:04.78,0:14:07.03,CHT,,0,0,0,,那真是巧了  他剛就在這裡\N{\rENG}Funny coincidence, he was just here.
+Dialogue: 0,0:14:07.46,0:14:08.67,CHT,,0,0,0,,聽著  你完了\N{\rENG}Look, you're burnt.
+Dialogue: 0,0:14:08.67,0:14:10.00,CHT,,0,0,0,,你的身份暴露了\N{\rENG}Your cover's blown.
+Dialogue: 0,0:14:11.26,0:14:12.21,CHT,,0,0,0,,行吧  我剛聽\N{\rENG}Okay, well I was just...
+Dialogue: 0,0:14:12.36,0:14:13.67,CHT,,0,0,0,,馬文·蓋伊的歌聽到一半\N{\rENG}in the middle of Marvin Gaye song,
+Dialogue: 0,0:14:13.67,0:14:14.74,CHT,,0,0,0,,我現在要繼續了\N{\rENG}so I'm gonna go back to that.
+Dialogue: 0,0:14:14.84,0:14:17.11,CHT,,0,0,0,,說出達裡安學院裡三棟建築的名稱\N{\rENG}Name 3 buildings on a Darian Campus.
+Dialogue: 0,0:14:17.73,0:14:18.27,CHT,,0,0,0,,你認真的嗎\N{\rENG}Really?
+Dialogue: 0,0:14:18.27,0:14:20.27,CHT,,0,0,0,,來啊海洋生物學家\N{\rENG}Come on, marine biologist.
+Dialogue: 0,0:14:21.26,0:14:23.51,CHT,,0,0,0,,羅德斯樓  麥考特樓  洛克樓\N{\rENG}Rhodes Hall, McCourter Hall, Rocker Hall.
+Dialogue: 0,0:14:23.51,0:14:24.74,CHT,,0,0,0,,現在我知道你就是DIA的人了\N{\rENG}Now I know you're DIA.
+Dialogue: 0,0:14:25.18,0:14:26.96,CHT,,0,0,0,,平民會叫我滾開\N{\rENG}Civilian would've told me to piss off.
+Dialogue: 0,0:14:27.09,0:14:28.77,CHT,,0,0,0,,有禮貌的平民不會\N{\rENG}Not a polite civilian.
+Dialogue: 0,0:14:29.73,0:14:31.79,CHT,,0,0,0,,你可以啊  真挺可以的\N{\rENG}You are good, you are good.
+Dialogue: 0,0:14:31.79,0:14:32.99,CHT,,0,0,0,,你住在哪\N{\rENG}Where you live?
+Dialogue: 0,0:14:33.28,0:14:34.28,CHT,,0,0,0,,什麼\N{\rENG}What?
+Dialogue: 0,0:14:34.58,0:14:36.19,CHT,,0,0,0,,我想看看你的住處\N{\rENG}No, I wanna see your place.
+Dialogue: 0,0:14:37.19,0:14:38.19,CHT,,0,0,0,,你說什麼\N{\rENG}Excuse me?
+Dialogue: 0,0:14:38.44,0:14:41.40,CHT,,0,0,0,,我肯定找不到一本\N{\rENG}Where, I am sure I won't find a single book
+Dialogue: 0,0:14:41.40,0:14:42.54,CHT,,0,0,0,,海洋生物學的書\N{\rENG}on marine biology.
+Dialogue: 0,0:14:43.40,0:14:46.75,CHT,,0,0,0,,但我敢肯定有一堆亨利·布洛根的情報\N{\rENG}But I'm certain I'll find a big ol' fold on Henry Brogan.
+Dialogue: 0,0:14:46.75,0:14:48.09,CHT,,0,0,0,,打擾一下\N{\rENG}Excuse me?
+Dialogue: 0,0:14:48.20,0:14:51.19,CHT,,0,0,0,,跟你聊的很開心  但我得做工作了\N{\rENG}Okay, this has been fun, but I kinda have to do that job.
+Dialogue: 0,0:14:51.27,0:14:52.42,CHT,,0,0,0,,對不起  先生\N{\rENG}Sorry, sir.
+Dialogue: 0,0:14:52.57,0:14:54.03,CHT,,0,0,0,,我有條九米的小遊艇\N{\rENG}Yeah, I got the 30-feet bowrider.
+Dialogue: 0,0:14:54.03,0:14:55.30,CHT,,0,0,0,,-好的  -需要些汽油還有\N{\rENG}- Okay. - Needs some gas and...
+Dialogue: 0,0:14:55.30,0:14:56.07,CHT,,0,0,0,,先生\N{\rENG}Hey, sir.
+Dialogue: 0,0:14:56.40,0:14:57.16,CHT,,0,0,0,,等一下\N{\rENG}One sec.
+Dialogue: 0,0:14:59.80,0:15:01.42,CHT,,0,0,0,,對不起\N{\rENG}I'm sorry, I...
+Dialogue: 0,0:15:01.51,0:15:02.98,CHT,,0,0,0,,我能請你喝一杯嗎\N{\rENG}Can I buy you a drink?
+Dialogue: 0,0:15:04.10,0:15:06.05,CHT,,0,0,0,,怎麼  還想繼續審問我啊\N{\rENG}Why, so you can keep interrogating me?
+Dialogue: 0,0:15:06.10,0:15:09.55,CHT,,0,0,0,,不  可能我會一直朝你道歉\N{\rENG}No, I'm probably gonna spend the whole time apologising.
+Dialogue: 0,0:15:10.13,0:15:11.37,CHT,,0,0,0,,鵜鶘點怎麼樣\N{\rENG}Pelican Point?
+Dialogue: 0,0:15:11.56,0:15:13.69,CHT,,0,0,0,,星期天晚上他們有很棒的樂隊\N{\rENG}Sunday nights, they have a great band.
+Dialogue: 0,0:15:14.43,0:15:16.56,CHT,,0,0,0,,拜託了  你幾點下班\N{\rENG}Please, what time do you get off work?
+Dialogue: 0,0:15:21.11,0:15:23.83,CHT,,0,0,0,,-七點  -可能我還要一個12伏的艙底泵\N{\rENG}- 7. - Think I also need a 12-volt bilge pump.
+Dialogue: 0,0:15:23.83,0:15:25.35,CHT,,0,0,0,,-12伏  -好吧  那就七點見\N{\rENG}- 12 volt. - Alright, I'll see you at 7.
+Dialogue: 0,0:15:26.40,0:15:28.60,CHT,,0,0,0,,別再那麼瘋癲了\N{\rENG}Just leave the crazy at home, please.
+Dialogue: 0,0:15:28.80,0:15:29.80,CHT,,0,0,0,,好吧\N{\rENG}Alright.
+Dialogue: 0,0:15:50.65,0:15:51.69,CHT,,0,0,0,,之前對不起\N{\rENG}Sorry about earlier.
+Dialogue: 0,0:15:52.03,0:15:54.76,CHT,,0,0,0,,壞習慣  我不那麼容易相信別人\N{\rENG}Bad habits. I don't trust people easily.
+Dialogue: 0,0:15:55.03,0:15:56.63,CHT,,0,0,0,,但我肯定你也是這樣\N{\rENG}But I'm sure you don't either.
+Dialogue: 0,0:15:57.83,0:15:59.40,CHT,,0,0,0,,為什麼這麼說\N{\rENG}Why would you say that?
+Dialogue: 0,0:16:02.79,0:16:05.73,CHT,,0,0,0,,DIA  丹妮爾·紮卡盧夫斯基
+Dialogue: 0,0:16:09.03,0:16:10.60,CHT,,0,0,0,,你從哪得到的\N{\rENG}Where did you get that?
+Dialogue: 0,0:16:10.81,0:16:14.59,CHT,,0,0,0,,25年忠心盡職你也會交些朋友的\N{\rENG}25 years of faithful service you make some friends.
+Dialogue: 0,0:16:16.23,0:16:18.03,CHT,,0,0,0,,現在我暴露了\N{\rENG}Now I'm burnt.
+Dialogue: 0,0:16:19.05,0:16:20.43,CHT,,0,0,0,,糊糊了\N{\rENG}Toast.
+Dialogue: 0,0:16:20.66,0:16:22.77,CHT,,0,0,0,,是派特森在指揮你嗎\N{\rENG}Is Patterson running you?
+Dialogue: 0,0:16:22.93,0:16:24.29,CHT,,0,0,0,,你們的酒\N{\rENG}OK, here you go
+Dialogue: 0,0:16:29.36,0:16:31.25,CHT,,0,0,0,,-謝謝你  -不客氣\N{\rENG}- Thank you. - You're welcome.
+Dialogue: 0,0:16:33.42,0:16:36.21,CHT,,0,0,0,,鍋爐工是條子的酒啊  你們家有條子嗎\N{\rENG}Boilermaker is a cop drink. You got cops in your family?
+Dialogue: 0,0:16:36.36,0:16:37.73,CHT,,0,0,0,,我爸以前是FBI\N{\rENG}My dad was FBI.
+Dialogue: 0,0:16:38.44,0:16:40.59,CHT,,0,0,0,,為我們國家做了不少貢獻\N{\rENG}And pretty big on serving our country.
+Dialogue: 0,0:16:41.66,0:16:42.55,CHT,,0,0,0,,之前\N{\rENG}Was?
+Dialogue: 0,0:16:43.07,0:16:44.63,CHT,,0,0,0,,是啊  他殉職了\N{\rENG}Yeah, he died off duty.
+Dialogue: 0,0:16:44.78,0:16:46.36,CHT,,0,0,0,,為了阻止銀行搶劫案\N{\rENG}Trying to stop a bank robbery.
+Dialogue: 0,0:16:47.27,0:16:48.46,CHT,,0,0,0,,很抱歉\N{\rENG}Sorry about that.
+Dialogue: 0,0:16:50.48,0:16:53.80,CHT,,0,0,0,,檔案說你在巴林島海軍第五艦隊服役了四年\N{\rENG}File says you were 4 years in Navy "Fifth Fleet", Bahrain.
+Dialogue: 0,0:16:53.93,0:16:55.98,CHT,,0,0,0,,是啊  挺愛大海的\N{\rENG}Yeah, did love the sea.
+Dialogue: 0,0:16:55.98,0:16:57.74,CHT,,0,0,0,,但不是很喜歡跟幾百個\N{\rENG}Didn't love being stuck on a tin can with
+Dialogue: 0,0:16:57.74,0:16:59.29,CHT,,0,0,0,,海員擠在一個大鐵罐裡\N{\rENG}couple of hundreds sailors, though.
+Dialogue: 0,0:17:00.17,0:17:02.21,CHT,,0,0,0,,比摩加迪休的地堡要好吧\N{\rENG}Beats a bunker in Mogadishu.
+Dialogue: 0,0:17:05.29,0:17:07.87,CHT,,0,0,0,,然後是DIA\N{\rENG}So, then DIA.
+Dialogue: 0,0:17:07.98,0:17:10.46,CHT,,0,0,0,,國防秘密服務\N{\rENG}Defence Clandestine Services.
+Dialogue: 0,0:17:10.46,0:17:12.26,CHT,,0,0,0,,招募和指揮特工\N{\rENG}Recruiting, running assets.
+Dialogue: 0,0:17:13.21,0:17:15.27,CHT,,0,0,0,,沒被記過一次過\N{\rENG}Not a single demerit.
+Dialogue: 0,0:17:16.14,0:17:16.89,CHT,,0,0,0,,我說\N{\rENG}I mean...
+Dialogue: 0,0:17:17.54,0:17:20.41,CHT,,0,0,0,,然後檢察長派你來碼頭\N{\rENG}So then the Inspector General sticks you on a dock
+Dialogue: 0,0:17:20.41,0:17:23.08,CHT,,0,0,0,,監視一個想著退休的老傢伙\N{\rENG}to watch a guy who just wants to retire?
+Dialogue: 0,0:17:24.40,0:17:26.15,CHT,,0,0,0,,你也不嫌麻煩\N{\rENG}That doesn't bother you?
+Dialogue: 0,0:17:32.07,0:17:33.72,CHT,,0,0,0,,這就要說再見了  亨利\N{\rENG}Well, this is adios, Henry.
+Dialogue: 0,0:17:34.32,0:17:36.24,CHT,,0,0,0,,監視你很愉快\N{\rENG}It's been nice surveilling you.
+Dialogue: 0,0:17:36.73,0:17:38.84,CHT,,0,0,0,,明天我就會被派去其他地方了\N{\rENG}I'll be sent somewhere else tomorrow.
+Dialogue: 0,0:17:39.19,0:17:39.91,CHT,,0,0,0,,是啊\N{\rENG}Yeah.
+Dialogue: 0,0:17:39.91,0:17:41.20,CHT,,0,0,0,,你要搭我車回家嗎\N{\rENG}You... you want a ride home?
+Dialogue: 0,0:17:41.41,0:17:43.98,CHT,,0,0,0,,不用了  謝謝  我公寓就在那\N{\rENG}No, thanks, my apartment is just right over there.
+Dialogue: 0,0:17:47.87,0:17:50.02,CHT,,0,0,0,,亨利  你為什麼要退休\N{\rENG}Henry, why are you retiring?
+Dialogue: 0,0:17:53.88,0:17:58.53,CHT,,0,0,0,,我發現最近我總躲著鏡子\N{\rENG}I'm finding myself avoiding mirrors lately, so...
+Dialogue: 0,0:17:59.21,0:18:01.25,CHT,,0,0,0,,我就當這是個徵兆吧\N{\rENG}I'm gonna take that as a sign.
+Dialogue: 0,0:18:02.46,0:18:03.75,CHT,,0,0,0,,在外面小心點\N{\rENG}Watch your six out there.
+Dialogue: 0,0:18:04.13,0:18:05.13,CHT,,0,0,0,,你也是\N{\rENG}You too.
+Dialogue: 0,0:18:06.85,0:18:08.65,CHT,,0,0,0,,晚安  糊糊\N{\rENG}Night, Toast.
+Dialogue: 0,0:18:18.06,0:18:20.46,CHT,,0,0,0,,過來看星星  傑克\N{\rENG}You should come look at the stars, Jack.
+Dialogue: 0,0:19:10.84,0:19:12.84,CHT,,0,0,0,,-你要多練練蹬腿  -查理\N{\rENG}- You have to work on your kick. - Charlie.
+Dialogue: 0,0:19:12.99,0:19:14.18,CHT,,0,0,0,,-集中注意力  亨利  -夠了\N{\rENG}- Concentrate, Henry. - Come on!
+Dialogue: 0,0:19:14.32,0:19:16.00,CHT,,0,0,0,,你五歲了  這個不難\N{\rENG}You are 5 now and this is not hard.
+Dialogue: 0,0:19:16.32,0:19:17.76,CHT,,0,0,0,,現在  再試一次\N{\rENG}Now. Try again.
+Dialogue: 0,0:19:37.03,0:19:38.56,Default,,0,0,0,,{\r譯文字幕\an8}警告\N有人侵入
+Dialogue: 0,0:20:08.12,0:20:10.07,CHT,,0,0,0,,這裡是傑克  出海中\N{\rENG}Hi, this is Jack, I'm sailing.
+Dialogue: 0,0:20:15.76,0:20:17.96,CHT,,0,0,0,,這是不是意味著我們有生意了\N{\rENG}Please tell me this means we're back in business.
+Dialogue: 0,0:20:18.12,0:20:18.93,CHT,,0,0,0,,你在哪\N{\rENG}Where are you?
+Dialogue: 0,0:20:19.39,0:20:20.88,CHT,,0,0,0,,百無聊賴地監視別人\N{\rENG}Just some goddamn surveliance.
+Dialogue: 0,0:20:20.88,0:20:21.88,CHT,,0,0,0,,立刻離開那\N{\rENG}Get out of there, now!
+Dialogue: 0,0:20:22.00,0:20:24.61,CHT,,0,0,0,,別回家  別回你女友家\N{\rENG}Do not go home, do not go to your girl's house.
+Dialogue: 0,0:20:24.61,0:20:27.11,CHT,,0,0,0,,-到車站  用現金買張票  -操\N{\rENG}- Go to the bus station, get a ticket, in cash. - Shit.
+Dialogue: 0,0:20:27.35,0:20:30.22,CHT,,0,0,0,,別用取款機  去一個沒人認識你的地方\N{\rENG}Do not use ATM. Go somewhere where nobody knows you.
+Dialogue: 0,0:20:30.77,0:20:31.95,CHT,,0,0,0,,你確定嗎\N{\rENG}You sure?
+Dialogue: 0,0:20:32.37,0:20:35.57,CHT,,0,0,0,,有人到我窗戶外面了  抱歉我拖你下水了\N{\rENG}They're outside my window, sorry man I made you a loose end.
+Dialogue: 0,0:20:35.60,0:20:36.69,CHT,,0,0,0,,沒事的  我會沒事的\N{\rENG}Come on man, I'll be fine.
+Dialogue: 0,0:20:36.84,0:20:37.99,CHT,,0,0,0,,怎麼聯繫你\N{\rENG}How do I contact with you?
+Dialogue: 0,0:20:37.99,0:20:40.03,CHT,,0,0,0,,別聯繫  誰也別聯繫\N{\rENG}You don't. Don't contact anybody.
+Dialogue: 0,0:20:40.11,0:20:41.43,CHT,,0,0,0,,特別是DIA的人\N{\rENG}Especially anybody from the DIA.
+Dialogue: 0,0:20:41.51,0:20:43.36,CHT,,0,0,0,,還有把手機扔掉  快點\N{\rENG}And get rid of your phone. Now.
+Dialogue: 0,0:20:43.41,0:20:44.89,CHT,,0,0,0,,怎麼了  亨利  停下\N{\rENG}Oh, come on, Henry. Stop.
+Dialogue: 0,0:20:47.09,0:20:48.34,CHT,,0,0,0,,馬里諾\N{\rENG}Marino?
+Dialogue: 0,0:21:18.28,0:21:19.91,CHT,,0,0,0,,我不是來打架的\N{\rENG}It's not gun time.
+Dialogue: 0,0:21:20.35,0:21:21.49,CHT,,0,0,0,,是來請你喝咖啡的\N{\rENG}It's coffee time.
+Dialogue: 0,0:21:22.73,0:21:23.73,CHT,,0,0,0,,你有應急包嗎\N{\rENG}Do you have a burn bag?
+Dialogue: 0,0:21:23.78,0:21:25.77,CHT,,0,0,0,,首先  告訴我你在這幹嘛\N{\rENG}First, tell me what you're doing here.
+Dialogue: 0,0:21:25.77,0:21:27.77,CHT,,0,0,0,,有人派了一個小隊來殺我\N{\rENG}Somebody just sent a team to kill me.
+Dialogue: 0,0:21:29.06,0:21:30.56,CHT,,0,0,0,,然後你還在睡覺\N{\rENG}And you're still asleep.
+Dialogue: 0,0:21:30.80,0:21:33.14,CHT,,0,0,0,,說明你不知道  對嗎\N{\rENG}That means you didn't know about it, correct?
+Dialogue: 0,0:21:33.22,0:21:35.21,CHT,,0,0,0,,當然不知道  不然我早告訴你了\N{\rENG}No, of course not. I would've told you.
+Dialogue: 0,0:21:39.52,0:21:41.24,CHT,,0,0,0,,這說明你是下一個\N{\rENG}That means you're next.
+Dialogue: 0,0:21:42.02,0:21:43.00,CHT,,0,0,0,,穿好衣服\N{\rENG}Get dressed.
+Dialogue: 0,0:21:46.62,0:21:49.27,CHT,,0,0,0,,那些船有備用鑰匙在辦公室  對吧\N{\rENG}All the boats have dupe keys in the office, right?
+Dialogue: 0,0:21:49.64,0:21:51.12,CHT,,0,0,0,,有快艇嗎\N{\rENG}You got a fast one?
+Dialogue: 0,0:22:00.82,0:22:02.53,CHT,,0,0,0,,感受到海洋的呼喚了嗎\N{\rENG}Feeling the call of the sea?
+Dialogue: 0,0:22:06.62,0:22:07.87,CHT,,0,0,0,,他在哪\N{\rENG}Where is he?
+Dialogue: 0,0:22:08.62,0:22:09.82,CHT,,0,0,0,,你可以現在告訴我\N{\rENG}You can tell me now.
+Dialogue: 0,0:22:11.24,0:22:12.27,CHT,,0,0,0,,嘿  放下\N{\rENG}Hey, drop!
+Dialogue: 0,0:22:14.51,0:22:15.77,CHT,,0,0,0,,婊子\N{\rENG}Bitch!
+Dialogue: 0,0:22:16.59,0:22:18.21,CHT,,0,0,0,,你是想現在說  還是想\N{\rENG}You can tell me now, or you can
+Dialogue: 0,0:22:18.21,0:22:20.24,CHT,,0,0,0,,等五分鐘以後  我把你打得鼻青臉腫了再說\N{\rENG}tell me in 5 minutes minus your teeth.
+Dialogue: 0,0:22:20.37,0:22:21.74,CHT,,0,0,0,,但你得告訴我\N{\rENG}But you gonna tell me.
+Dialogue: 0,0:22:39.10,0:22:40.04,CHT,,0,0,0,,我聽到三聲槍響\N{\rENG}I counted 3.
+Dialogue: 0,0:22:40.22,0:22:41.45,CHT,,0,0,0,,你帶了幾個人\N{\rENG}How many did you bring?
+Dialogue: 0,0:23:06.68,0:23:07.79,CHT,,0,0,0,,誰派你過來的\N{\rENG}Who sent you?
+Dialogue: 0,0:23:08.37,0:23:11.15,CHT,,0,0,0,,你是想現在說  還是想等五分鐘以後\N{\rENG}You can tell me now or you can tell me in 5 minutes...
+Dialogue: 0,0:23:11.15,0:23:12.63,CHT,,0,0,0,,我把你打得鼻青臉腫了再說\N{\rENG}minus your teeth.
+Dialogue: 0,0:23:18.63,0:23:19.83,CHT,,0,0,0,,你還好嗎\N{\rENG}You alright?
+Dialogue: 0,0:23:20.77,0:23:22.72,CHT,,0,0,0,,-是萊希特  -你怎麼知道的\N{\rENG}- It's Lassiter. - How do you know?
+Dialogue: 0,0:23:37.77,0:23:39.19,CHT,,0,0,0,,上了這船  你就要拋棄\N{\rENG}You get on this boat you leave behind
+Dialogue: 0,0:23:39.19,0:23:41.14,CHT,,0,0,0,,你所有東西和所有認識的人\N{\rENG}everything and everybody you've ever known.
+Dialogue: 0,0:23:41.14,0:23:42.38,CHT,,0,0,0,,明白嗎\N{\rENG}Do you understand that?
+Dialogue: 0,0:23:56.12,0:23:57.26,CHT,,0,0,0,,害怕是好事\N{\rENG}Scared is good.
+Dialogue: 0,0:23:57.40,0:23:58.80,CHT,,0,0,0,,說明你警覺起來了\N{\rENG}It means you're alert.
+Dialogue: 0,0:23:59.75,0:24:01.63,CHT,,0,0,0,,還沒有人想來殺過我呢\N{\rENG}Never had anybody trying to kill me before.
+Dialogue: 0,0:24:01.77,0:24:03.89,CHT,,0,0,0,,重要的是  你沒死\N{\rENG}Yeah, well, the important thing is - you didn't.
+Dialogue: 0,0:24:06.33,0:24:09.30,CHT,,0,0,0,,你除了蜜蜂還害怕什麼\N{\rENG}What scares you? Other than bees.
+Dialogue: 0,0:24:09.83,0:24:11.23,CHT,,0,0,0,,溺水\N{\rENG}Drowning.
+Dialogue: 0,0:24:39.25,0:24:41.93,CHT,,0,0,0,,這就是你說的善後嗎\N{\rENG}So this is you cleaning up your own messes?
+Dialogue: 0,0:24:41.93,0:24:43.28,CHT,,0,0,0,,別訓我了\N{\rENG}Spare me the lecture.
+Dialogue: 0,0:24:43.59,0:24:46.67,CHT,,0,0,0,,就像看興登堡號撞上了泰坦尼克\N{\rENG}It's like watching the Hindenburg crash into the Titanic.
+Dialogue: 0,0:24:43.59,0:24:46.67,Default,,0,0,0,,{\r譯文字幕\an8}1937年興登堡號客運飛艇空難
+Dialogue: 0,0:24:46.79,0:24:48.64,CHT,,0,0,0,,告訴我我們拿亨利怎麼辦\N{\rENG}Tell me what we're going to do about Henry.
+Dialogue: 0,0:24:48.77,0:24:50.91,CHT,,0,0,0,,亨利·布洛根跟其他士兵一樣\N{\rENG}Henry Brogan is like any other soldier.
+Dialogue: 0,0:24:51.41,0:24:52.44,CHT,,0,0,0,,年輕的時候沒腦子\N{\rENG}When they're young and stupid
+Dialogue: 0,0:24:52.44,0:24:53.76,CHT,,0,0,0,,你說什麼他們都相信\N{\rENG}they believe anything you tell them.
+Dialogue: 0,0:24:53.76,0:24:55.12,CHT,,0,0,0,,再老一點之後  他們\N{\rENG}Then they get older, they
+Dialogue: 0,0:24:55.24,0:24:56.24,CHT,,0,0,0,,沒那麼多精力了\N{\rENG}wear out.
+Dialogue: 0,0:24:56.96,0:24:58.63,CHT,,0,0,0,,長心眼了\N{\rENG}Grow a conscious.
+Dialogue: 0,0:25:00.04,0:25:03.24,CHT,,0,0,0,,這也是我們需要新型士兵的原因\N{\rENG}This is why we need a new breed of soldier.
+Dialogue: 0,0:25:04.93,0:25:06.37,CHT,,0,0,0,,雙子殺手可以搞定\N{\rENG}Gemini will handle this.
+Dialogue: 0,0:25:07.00,0:25:08.23,CHT,,0,0,0,,對不起  我不允許\N{\rENG}I'm sorry, I can't allow that.
+Dialogue: 0,0:25:08.35,0:25:09.83,CHT,,0,0,0,,我可不是在要你允許\N{\rENG}I'm not asking your permission.
+Dialogue: 0,0:25:09.83,0:25:11.44,CHT,,0,0,0,,你想去找上頭嗎\N{\rENG}You wanna go to your bosses?
+Dialogue: 0,0:25:11.44,0:25:14.44,CHT,,0,0,0,,他們聽到這失敗的行動肯定樂壞了\N{\rENG}I am sure they'd love to hear about our little rogue project.
+Dialogue: 0,0:25:16.28,0:25:18.82,CHT,,0,0,0,,我把現場佈置成俄羅斯殺手幹的\N{\rENG}I'll make it look like a Russian hit.
+Dialogue: 0,0:25:18.82,0:25:20.72,CHT,,0,0,0,,你準備給亨利舉行國葬\N{\rENG}You give Henry a state funeral.
+Dialogue: 0,0:25:21.46,0:25:24.34,CHT,,0,0,0,,棺材鋪上國旗  鳴炮21響致敬\N{\rENG}Flag on the coffin. 21-gun salute.
+Dialogue: 0,0:25:25.39,0:25:27.41,CHT,,0,0,0,,再準備個感人的演講  大家都哭了\N{\rENG}You give a nice speech, everyone cries.
+Dialogue: 0,0:25:27.48,0:25:29.09,CHT,,0,0,0,,他會被記成英雄\N{\rENG}He'd be remembered as a hero.
+Dialogue: 0,0:25:29.09,0:25:30.57,CHT,,0,0,0,,生活還得繼續\N{\rENG}Life goes on.
+Dialogue: 0,0:25:31.29,0:25:33.47,CHT,,0,0,0,,-亨利卻不能了  -少來\N{\rENG}- Not for Henry. - Oh, come on.
+Dialogue: 0,0:25:33.47,0:25:36.51,CHT,,0,0,0,,亨利這種人天生就是用來犧牲的\N{\rENG}Muds like Henry look born to be collateral damage.
+Dialogue: 0,0:25:36.85,0:25:38.52,CHT,,0,0,0,,別假裝好人\N{\rENG}Let's not pretend otherwise.
+Dialogue: 0,0:25:39.44,0:25:41.04,CHT,,0,0,0,,你有合適人選了嗎\N{\rENG}Do you have an asset in place?
+Dialogue: 0,0:25:41.17,0:25:43.22,CHT,,0,0,0,,我已經有完美人選了\N{\rENG}I have the perfect asset.
+Dialogue: 0,0:25:48.54,0:25:49.76,CHT,,0,0,0,,-好了  -稍微\N{\rENG}- Alright - Just...
+Dialogue: 0,0:25:50.04,0:25:50.96,CHT,,0,0,0,,我沒事了\N{\rENG}No, I'm good.
+Dialogue: 0,0:25:55.55,0:25:56.46,CHT,,0,0,0,,你餓嗎\N{\rENG}You hungry?
+Dialogue: 0,0:25:57.19,0:26:00.05,CHT,,0,0,0,,我餓死了  但那玩意三年前就過期了\N{\rENG}Yeah, I'm starving, but those things expired 3 years ago.
+Dialogue: 0,0:26:01.79,0:26:02.51,CHT,,0,0,0,,真的嗎\N{\rENG}Really?
+Dialogue: 0,0:26:03.77,0:26:04.95,CHT,,0,0,0,,還很好吃呢\N{\rENG}Still taste good.
+Dialogue: 0,0:26:07.16,0:26:10.05,CHT,,0,0,0,,那傢伙嘴裡還有牙的時候說你叛變了\N{\rENG}While he still had teeth that guy said you were the rogue.
+Dialogue: 0,0:26:10.92,0:26:12.11,CHT,,0,0,0,,你相信他了嗎\N{\rENG}And you believed him?
+Dialogue: 0,0:26:13.49,0:26:15.71,CHT,,0,0,0,,他百分之99在說謊\N{\rENG}99% sure he was lying.
+Dialogue: 0,0:26:16.64,0:26:18.47,CHT,,0,0,0,,但百分之一也難受啊  對吧\N{\rENG}But 1% sucks, doesn't it?
+Dialogue: 0,0:26:24.47,0:26:26.34,CHT,,0,0,0,,亨利  你之前碰到過這種事嗎\N{\rENG}Henry, has this ever happened to you before?
+Dialogue: 0,0:26:26.46,0:26:27.49,CHT,,0,0,0,,那一部分\N{\rENG}Which part?
+Dialogue: 0,0:26:27.92,0:26:29.89,CHT,,0,0,0,,你自己的政府想來殺你\N{\rENG}Your own government trying to kill you.
+Dialogue: 0,0:26:31.37,0:26:32.92,CHT,,0,0,0,,沒碰到過\N{\rENG}Nah, that's new.
+Dialogue: 0,0:26:33.89,0:26:35.31,CHT,,0,0,0,,你在局裡這麼長時間\N{\rENG}You've been in agency a while and
+Dialogue: 0,0:26:35.31,0:26:37.02,CHT,,0,0,0,,都猜不到這是怎麼了嗎\N{\rENG}can't you guess what this is all about?
+Dialogue: 0,0:26:37.39,0:26:39.34,CHT,,0,0,0,,相信我  我要是能猜到\N{\rENG}Trust me, if I could I would not be
+Dialogue: 0,0:26:39.34,0:26:41.22,CHT,,0,0,0,,就不會跟你在這度假了\N{\rENG}on this lovely vacation with you.
+Dialogue: 0,0:26:45.28,0:26:46.87,CHT,,0,0,0,,等我當上局長\N{\rENG}When I'm the head of the agency we
+Dialogue: 0,0:26:46.87,0:26:48.83,CHT,,0,0,0,,一定把退休機制全改了\N{\rENG}gonna handle retirement very differently.
+Dialogue: 0,0:27:08.15,0:27:09.14,CHT,,0,0,0,,我哥們\N{\rENG}My man.
+Dialogue: 0,0:27:16.46,0:27:18.65,CHT,,0,0,0,,巴倫旅遊來接布洛根\N{\rENG}Baron tour is here to pick up Brogan.
+Dialogue: 0,0:27:18.90,0:27:19.90,CHT,,0,0,0,,兩位旅客\N{\rENG}Party of two.
+Dialogue: 0,0:27:24.51,0:27:26.66,CHT,,0,0,0,,-很高興見到你  -你也是\N{\rENG}- Good to see you man. - You too.
+Dialogue: 0,0:27:27.35,0:27:28.86,CHT,,0,0,0,,丹尼  這是巴倫\N{\rENG}Danny, meet the Baron.
+Dialogue: 0,0:27:29.00,0:27:32.08,CHT,,0,0,0,,中年無賴  我認識的最棒的飛行員\N{\rENG}Middle-aged reprobate and best pilot I've ever known.
+Dialogue: 0,0:27:32.36,0:27:33.63,CHT,,0,0,0,,丹尼  巴倫\N{\rENG}Danny, Baron.
+Dialogue: 0,0:27:33.83,0:27:34.83,CHT,,0,0,0,,你好  糊糊\N{\rENG}Hey, Toast.
+Dialogue: 0,0:27:36.62,0:27:38.20,CHT,,0,0,0,,你要的裝備都準備好了\N{\rENG}Got your appliences requested.
+Dialogue: 0,0:27:38.55,0:27:41.06,CHT,,0,0,0,,你們可以先去我那裡呆一陣  在喀他赫納\N{\rENG}For now, you can hold up to my place at Cartagena.
+Dialogue: 0,0:27:41.70,0:27:43.20,CHT,,0,0,0,,沒有人認識你  很安全\N{\rENG}You'll be anonymous and safe.
+Dialogue: 0,0:27:43.35,0:27:46.41,CHT,,0,0,0,,是啊  我們現在水深火熱呢\N{\rENG}Yeah, we're kinda in the shit here, man.
+Dialogue: 0,0:27:47.15,0:27:48.93,CHT,,0,0,0,,我覺得傑克已經死了\N{\rENG}I think Jack is dead.
+Dialogue: 0,0:27:51.42,0:27:53.40,CHT,,0,0,0,,-天哪  -是啊\N{\rENG}- Jesus. - Yeah.
+Dialogue: 0,0:27:54.10,0:27:55.84,CHT,,0,0,0,,-有人跟蹤你們嗎  -沒有\N{\rENG}- Anyone follow you? - No.
+Dialogue: 0,0:27:55.84,0:27:57.38,CHT,,0,0,0,,會跟來的  出發吧\N{\rENG}They will. Let's go.
+Dialogue: 0,0:27:57.83,0:27:59.78,CHT,,0,0,0,,-我能吃一片餅乾嗎  -當然\N{\rENG}- Can I have one of those crackers? - Sure.
+Dialogue: 0,0:28:00.09,0:28:01.09,CHT,,0,0,0,,謝謝\N{\rENG}Thanks.
+Dialogue: 0,0:28:11.58,0:28:13.14,CHT,,0,0,0,,他在家也這麼做嗎\N{\rENG}Does he do this at home?
+Dialogue: 0,0:28:13.60,0:28:14.85,CHT,,0,0,0,,我不覺得  我不知道\N{\rENG}I don't think so, I don't know.
+Dialogue: 0,0:28:14.85,0:28:16.28,CHT,,0,0,0,,-你會嗎  -當然不\N{\rENG}- Do you? - No.
+Dialogue: 0,0:28:16.28,0:28:19.43,CHT,,0,0,0,,如果在家做這種事不像話\N{\rENG}If it's inappropriate to do this sort of thing at home.
+Dialogue: 0,0:28:19.43,0:28:20.82,CHT,,0,0,0,,你覺得在科學課上\N{\rENG}Why would you think it's appropriate
+Dialogue: 0,0:28:20.82,0:28:22.07,CHT,,0,0,0,,做這種事像話嗎\N{\rENG}to do it in your science class?
+Dialogue: 0,0:28:22.18,0:28:25.04,CHT,,0,0,0,,我不知道  大概因為理科太無聊了\N{\rENG}I don't know, probably because science is so wicked boring.
+Dialogue: 0,0:28:30.81,0:28:31.67,CHT,,0,0,0,,你好\N{\rENG}Hello.
+Dialogue: 0,0:28:31.83,0:28:33.67,CHT,,0,0,0,,我想你大概也不希望我退休\N{\rENG}Guess you really didn't want me to retire.
+Dialogue: 0,0:28:33.67,0:28:36.11,CHT,,0,0,0,,亨利  你還好  謝天謝地\N{\rENG}Henry, you're okay! Thank God!
+Dialogue: 0,0:28:36.11,0:28:37.07,CHT,,0,0,0,,省省吧\N{\rENG}Stop it!
+Dialogue: 0,0:28:37.88,0:28:39.30,CHT,,0,0,0,,馬里諾死了嗎\N{\rENG}Is Marino dead?
+Dialogue: 0,0:28:40.15,0:28:40.92,CHT,,0,0,0,,是的\N{\rENG}Yes.
+Dialogue: 0,0:28:42.43,0:28:43.61,CHT,,0,0,0,,傑克·威利斯呢\N{\rENG}Jack Willis?
+Dialogue: 0,0:28:44.25,0:28:45.66,CHT,,0,0,0,,不是我幹的  都不是我幹的\N{\rENG}It wasn't me. None of this was me
+Dialogue: 0,0:28:45.66,0:28:46.71,CHT,,0,0,0,,亨利  我發誓\N{\rENG}Henry, I swear it.
+Dialogue: 0,0:28:46.94,0:28:47.93,CHT,,0,0,0,,我相信過你  戴爾\N{\rENG}I trusted you, Dell.
+Dialogue: 0,0:28:48.06,0:28:51.07,CHT,,0,0,0,,你可以繼續相信  我換個手機給你打電話\N{\rENG}You still can. Let me call you on another line.
+Dialogue: 0,0:28:52.13,0:28:55.94,Default,,0,0,0,,604 555 0131
+Dialogue: 0,0:28:55.95,0:28:56.95,CHT,,0,0,0,,我給你30秒\N{\rENG}You got 30 seconds.
+Dialogue: 0,0:29:02.03,0:29:03.06,CHT,,0,0,0,,抱歉\N{\rENG}Hey, excuse me.
+Dialogue: 0,0:29:03.06,0:29:04.38,CHT,,0,0,0,,我能借你手機5分鐘時間嗎\N{\rENG}Could you borrow a phone for 5 minutes
+Dialogue: 0,0:29:04.38,0:29:06.38,CHT,,0,0,0,,我給你100美金\N{\rENG}if I gave you a hundred bucks?
+Dialogue: 0,0:29:08.90,0:29:10.87,CHT,,0,0,0,,我們先談談是誰想到的\N{\rENG}We'll start with who's idea it was to send a team
+Dialogue: 0,0:29:10.87,0:29:13.87,CHT,,0,0,0,,派支小隊去紮卡維斯基探員家裡  有必要嗎\N{\rENG}to agent Zakarweski's apartment, was that necessary?
+Dialogue: 0,0:29:13.87,0:29:15.45,CHT,,0,0,0,,也不是我的決定\N{\rENG}Also not my call, she's working
+Dialogue: 0,0:29:15.45,0:29:17.23,CHT,,0,0,0,,她在為督察長工作  不是我\N{\rENG}for the Inspector General, not me.
+Dialogue: 0,0:29:17.30,0:29:18.33,CHT,,0,0,0,,她和你在一起嗎\N{\rENG}Is she with you?
+Dialogue: 0,0:29:18.33,0:29:19.07,CHT,,0,0,0,,是的\N{\rENG}Yes.
+Dialogue: 0,0:29:19.23,0:29:20.35,CHT,,0,0,0,,不是自願的吧\N{\rENG}Not voluntarily.
+Dialogue: 0,0:29:20.35,0:29:23.82,CHT,,0,0,0,,好了聽著  我不想在電話上說這事\N{\rENG}Okay, listen, this is not something I wanna say over the phone.
+Dialogue: 0,0:29:24.00,0:29:25.93,CHT,,0,0,0,,我他媽現在在我孩子的學校\N{\rENG}I'm at my kids, goddamn, school!
+Dialogue: 0,0:29:26.00,0:29:28.05,CHT,,0,0,0,,這他媽都是什麼事\N{\rENG}What a hell is all of this?!
+Dialogue: 0,0:29:30.32,0:29:31.88,CHT,,0,0,0,,我們出了點問題\N{\rENG}We have a problem.
+Dialogue: 0,0:29:32.52,0:29:33.95,CHT,,0,0,0,,雙子殺手\N{\rENG}Gemini.
+Dialogue: 0,0:29:34.05,0:29:37.38,CHT,,0,0,0,,你的老朋友  在和珍內特·萊希特的人合作\N{\rENG}Your old friend, working with Janet Lassiter and her people.
+Dialogue: 0,0:29:37.50,0:29:39.35,CHT,,0,0,0,,我沒法阻止他們\N{\rENG}I can't stop them.
+Dialogue: 0,0:29:40.92,0:29:42.90,CHT,,0,0,0,,好的  多莫夫\N{\rENG}Okay, Dormov.
+Dialogue: 0,0:29:43.30,0:29:45.78,CHT,,0,0,0,,他和雙子殺手有關係嗎\N{\rENG}Did he have something to do with Gemini?
+Dialogue: 0,0:29:46.75,0:29:49.68,CHT,,0,0,0,,多莫夫  你讓我在火車上殺的那個\N{\rENG}Dormov, the guy that you had me popped on the train.
+Dialogue: 0,0:29:49.68,0:29:52.04,CHT,,0,0,0,,因為你說他是俄羅斯恐怖分子\N{\rENG}Because you said he was a Russian terrorist.
+Dialogue: 0,0:29:52.04,0:29:53.64,CHT,,0,0,0,,他在為雙子殺手工作嗎\N{\rENG}Was he working for Gemini?
+Dialogue: 0,0:29:54.73,0:29:56.27,CHT,,0,0,0,,以前是\N{\rENG}Once upon a time.
+Dialogue: 0,0:29:57.54,0:30:01.02,CHT,,0,0,0,,所以你讓我給克雷·維裡斯挑的頭\N{\rENG}So you got me pulling triggers for Clay Verris.
+Dialogue: 0,0:30:01.24,0:30:04.03,CHT,,0,0,0,,亨利  我很後悔沒對你坦誠相待  但聽好\N{\rENG}Henry, I regret my lack of candor, but listen...
+Dialogue: 0,0:30:04.04,0:30:06.80,CHT,,0,0,0,,你有多少次這樣對我了  戴爾\N{\rENG}How many other times you do this to me, Dell?
+Dialogue: 0,0:30:07.93,0:30:09.09,CHT,,0,0,0,,有多少次你改了檔\N{\rENG}How many times you spiked a file,
+Dialogue: 0,0:30:09.21,0:30:11.95,CHT,,0,0,0,,讓我把不該死的人送上西天\N{\rENG}send me off to AMF somebody who didn't deserve it?
+Dialogue: 0,0:30:12.14,0:30:14.39,CHT,,0,0,0,,從來沒有  就這麼一次\N{\rENG}Never, ever. This was the one-off.
+Dialogue: 0,0:30:14.39,0:30:15.99,CHT,,0,0,0,,我以我兒子的性命發誓\N{\rENG}I swear on my son's life.
+Dialogue: 0,0:30:19.97,0:30:20.82,CHT,,0,0,0,,好吧  聽著\N{\rENG}Alright, look.
+Dialogue: 0,0:30:20.82,0:30:23.25,CHT,,0,0,0,,紮卡維斯基探員和這事無關\N{\rENG}Agent Zakarweski is not a part of this.
+Dialogue: 0,0:30:23.38,0:30:26.41,CHT,,0,0,0,,亨利  我們能行  我發誓\N{\rENG}Henry, we can fix this. I swear, but I need
+Dialogue: 0,0:30:26.41,0:30:28.08,CHT,,0,0,0,,但我需要你們倆一起回來\N{\rENG}both of you to come back.
+Dialogue: 0,0:30:29.41,0:30:30.63,CHT,,0,0,0,,回哪裡  戴爾\N{\rENG}To what, Dell?
+Dialogue: 0,0:30:33.89,0:30:35.99,CHT,,0,0,0,,好吧  雙子殺手\N{\rENG}Okay, Gemini.
+Dialogue: 0,0:30:35.99,0:30:36.98,CHT,,0,0,0,,你對他瞭解多少\N{\rENG}What do you know about it?
+Dialogue: 0,0:30:36.98,0:30:39.55,CHT,,0,0,0,,克雷·維裡斯擁有的私營准軍事團隊\N{\rENG}Privatized paramilitary owned by Clay Verris.
+Dialogue: 0,0:30:39.55,0:30:41.29,CHT,,0,0,0,,局裡和他們在業務上有很多往來\N{\rENG}Agency does a lot of business with them.
+Dialogue: 0,0:30:41.29,0:30:42.29,CHT,,0,0,0,,還有呢\N{\rENG}Is there more?
+Dialogue: 0,0:30:43.25,0:30:45.45,CHT,,0,0,0,,巴倫和我在海軍裡在維裡斯手下\N{\rENG}Baron and I served under Verris in the Marines:
+Dialogue: 0,0:30:45.45,0:30:47.45,CHT,,0,0,0,,去過巴拿馬  科威特  索馬里\N{\rENG}in Panama, Kuwait, Somalia.
+Dialogue: 0,0:30:48.40,0:30:50.28,CHT,,0,0,0,,之後他就離開了軍隊\N{\rENG}After he left the military, he started
+Dialogue: 0,0:30:50.28,0:30:51.72,CHT,,0,0,0,,他建立了雙子殺手  想雇我們\N{\rENG}Gemini and tried to hire us.
+Dialogue: 0,0:30:51.72,0:30:52.82,CHT,,0,0,0,,我們都拒絕他了\N{\rENG}We both told him "no".
+Dialogue: 0,0:30:52.82,0:30:55.25,CHT,,0,0,0,,我學聰明了  搬家去了2400公里外的地方\N{\rENG}Except I was smart enough to move 1500 miles away.
+Dialogue: 0,0:30:55.37,0:30:56.51,CHT,,0,0,0,,是啊\N{\rENG}Yeah.
+Dialogue: 0,0:30:56.85,0:30:58.78,CHT,,0,0,0,,我搞砸了\N{\rENG}I blowed that one.
+Dialogue: 0,0:31:10.76,0:31:13.60,Default,,0,0,0,,{\r譯文字幕\pos(123,209)\bord0\fad(400,400)}哥倫比亞  卡塔赫納
+Dialogue: 0,0:31:13.64,0:31:20.66,Default,,0,0,0,,{\r譯文字幕\pos(311.1,78.4)\bord0\fs24\c&H7BA1D0&\1a&H00&}歡迎來到哥倫比亞
+Dialogue: 0,0:31:15.28,0:31:17.64,CHT,,0,0,0,,維裡斯靠各種手段幹掉目標\N{\rENG}Verris gets billions of dollars a year to take
+Dialogue: 0,0:31:17.64,0:31:20.62,CHT,,0,0,0,,一年能賺幾十億美元\N{\rENG}out targets in any way he sees fit.
+Dialogue: 0,0:31:21.10,0:31:22.52,CHT,,0,0,0,,這就是雙子殺手\N{\rENG}That's Gemini:
+Dialogue: 0,0:31:22.52,0:31:25.95,CHT,,0,0,0,,私下綁架  拷問\N{\rENG}off-book kidnappings, tortures.
+Dialogue: 0,0:31:26.42,0:31:29.41,CHT,,0,0,0,,你想讓12個沙特王子悄悄消失的話\N{\rENG}They who you call when you need 12 Saudi princes
+Dialogue: 0,0:31:29.41,0:31:31.65,CHT,,0,0,0,,找他們就對了\N{\rENG}to quietly disappear.
+Dialogue: 0,0:31:31.88,0:31:34.53,CHT,,0,0,0,,或者你想找人訓練你的敢死隊\N{\rENG}Or you want somebody to train your death squads.
+Dialogue: 0,0:31:36.20,0:31:38.02,CHT,,0,0,0,,我上狙擊學校六周之後\N{\rENG}6 weeks into Sniper School
+Dialogue: 0,0:31:38.30,0:31:40.90,CHT,,0,0,0,,克雷·維裡斯帶我出海八公里\N{\rENG}Clay Verris takes me out on this boat for 5 miles.
+Dialogue: 0,0:31:41.86,0:31:44.55,CHT,,0,0,0,,在我腳踝上綁上負重  把我扔到海裡\N{\rENG}Ties this weights to my ankles, tosses me overboard.
+Dialogue: 0,0:31:44.55,0:31:47.14,CHT,,0,0,0,,叫我盡可能久地踩水\N{\rENG}Tells me tread water as long as I can.
+Dialogue: 0,0:31:48.19,0:31:49.69,CHT,,0,0,0,,他不知道你怕\N{\rENG}And he didn't know about your fear of...
+Dialogue: 0,0:31:49.69,0:31:51.70,CHT,,0,0,0,,他當然知道  這就是他的目的\N{\rENG}Of course did. That was the point.
+Dialogue: 0,0:31:52.61,0:31:54.23,CHT,,0,0,0,,那你怎麼辦呢\N{\rENG}So what did you do?
+Dialogue: 0,0:31:58.63,0:32:01.12,CHT,,0,0,0,,我盡可能久地踩水\N{\rENG}I tread water for as long as I could.
+Dialogue: 0,0:32:03.34,0:32:05.19,CHT,,0,0,0,,然後淹死了\N{\rENG}And then I drowned.
+Dialogue: 0,0:32:07.21,0:32:08.54,CHT,,0,0,0,,死了\N{\rENG}Dead.
+Dialogue: 0,0:32:11.21,0:32:13.79,CHT,,0,0,0,,他把我撈出來  拍拍我的胸口\N{\rENG}He fished me out, pat on my chest.
+Dialogue: 0,0:32:15.34,0:32:19.76,CHT,,0,0,0,,告訴我我現在夠格做他的手下了\N{\rENG}Told me I was now ready to serve under his command.
+Dialogue: 0,0:32:23.83,0:32:25.29,CHT,,0,0,0,,乾杯\N{\rENG}A toast.
+Dialogue: 0,0:32:29.01,0:32:30.87,CHT,,0,0,0,,敬下一次戰爭\N{\rENG}To the next war...
+Dialogue: 0,0:32:30.87,0:32:32.60,CHT,,0,0,0,,-永遠不會發生  -永遠不會發生\N{\rENG}- which is no war. - which is no war.
+Dialogue: 0,0:32:32.61,0:32:33.61,CHT,,0,0,0,,沒有戰爭\N{\rENG}No war.
+Dialogue: 0,0:32:34.39,0:32:35.74,CHT,,0,0,0,,我們明早再商量\N{\rENG}We'll figure out in the morning.
+Dialogue: 0,0:32:35.74,0:32:37.33,CHT,,0,0,0,,現在需要先歇一歇\N{\rENG}Right now we can use some shelter.
+Dialogue: 0,0:32:37.33,0:32:39.66,CHT,,0,0,0,,當然  你們想要一間房還是\N{\rENG}Sure, you folks want one room or...
+Dialogue: 0,0:32:39.66,0:32:41.19,CHT,,0,0,0,,兩間\N{\rENG}Two.
+Dialogue: 0,0:32:43.68,0:32:44.68,CHT,,0,0,0,,兩間  兩間\N{\rENG}Two, two.
+Dialogue: 0,0:32:48.00,0:32:50.68,CHT,,0,0,0,,好啊  如果你想的話我還能把他塞去車庫\N{\rENG}Yeah, I can put him in the garage if you want.
+Dialogue: 0,0:32:50.68,0:32:52.28,CHT,,0,0,0,,好了  那就兩間房\N{\rENG}Alright, two rooms will be fine.
+Dialogue: 0,0:32:52.32,0:32:55.26,CHT,,0,0,0,,就給你們個選擇  這裡走\N{\rENG}Just giving you options. Okay, right this way.
+Dialogue: 0,0:33:36.11,0:33:39.28,CHT,,0,0,0,,樓頂有狙擊手  我去引開他\N{\rENG}Sniper, rooftop, I leave, he's gonna follow.
+Dialogue: 0,0:33:39.72,0:33:41.68,CHT,,0,0,0,,你和巴倫一起去安全的地方\N{\rENG}I need you to go with Baron some place safe.
+Dialogue: 0,0:33:41.77,0:33:42.77,CHT,,0,0,0,,好嗎\N{\rENG}Alright?
+Dialogue: 0,0:33:47.23,0:33:49.20,CHT,,0,0,0,,狙擊手  在樓頂\N{\rENG}Shooter, on the roof.
+Dialogue: 0,0:33:50.05,0:33:52.66,CHT,,0,0,0,,你真是個糟糕的房客  你知道嗎\N{\rENG}You are a shitty house guest, you know that?
+Dialogue: 0,0:33:52.66,0:33:54.41,CHT,,0,0,0,,他們怎麼找到我們的\N{\rENG}How the hell did they find us?
+Dialogue: 0,0:33:54.41,0:33:56.16,CHT,,0,0,0,,她是好人  真的是好人\N{\rENG}She's good, she's really good.
+Dialogue: 0,0:33:56.16,0:33:58.01,CHT,,0,0,0,,她只是不知道自己被人利用了\N{\rENG}She just doesn't know what she doesn't know.
+Dialogue: 0,0:33:58.20,0:33:59.69,CHT,,0,0,0,,照顧好她  好嗎\N{\rENG}Take care of her, alright?
+Dialogue: 0,0:36:18.37,0:36:19.59,CHT,,0,0,0,,停下別動\N{\rENG}Stop right there!
+Dialogue: 0,0:36:22.29,0:36:23.62,CHT,,0,0,0,,你是誰\N{\rENG}Who are you?
+Dialogue: 0,0:36:24.68,0:36:26.34,CHT,,0,0,0,,我不想對你開槍\N{\rENG}I don't wanna shoot you!
+Dialogue: 0,0:36:27.48,0:36:28.78,CHT,,0,0,0,,好啊\N{\rENG}Fine.
+Dialogue: 0,0:36:29.56,0:36:30.58,CHT,,0,0,0,,別對我開槍\N{\rENG}Don't shoot me.
+Dialogue: 0,0:36:31.21,0:36:32.58,CHT,,0,0,0,,那我對你開槍好嗎\N{\rENG}Mind if I shoot you?
+Dialogue: 0,0:36:35.13,0:36:36.89,CHT,,0,0,0,,你剛剛在樓頂上我就能殺了你\N{\rENG}I could have killed you on the roof.
+Dialogue: 0,0:36:38.28,0:36:40.03,CHT,,0,0,0,,也許你那時應該殺了我\N{\rENG}Maybe you should have.
+Dialogue: 0,0:36:42.34,0:36:44.60,CHT,,0,0,0,,他們是給你看過我的照片嗎\N{\rENG}Did they show you a picture of me?
+Dialogue: 0,0:36:45.56,0:36:47.42,CHT,,0,0,0,,是啊  你看起來真老\N{\rENG}Yeah, you look old.
+Dialogue: 0,0:36:51.44,0:36:54.42,CHT,,0,0,0,,小鬼  你要是再靠近一步\N{\rENG}Kid, you take one step closer.
+Dialogue: 0,0:36:54.63,0:36:56.68,CHT,,0,0,0,,我就別無選擇了\N{\rENG}You gonna leave me no choice.
+Dialogue: 0,0:38:03.63,0:38:05.06,CHT,,0,0,0,,鬆手  鬆手\N{\rENG}Get off! Get off!
+Dialogue: 0,0:38:20.98,0:38:21.98,CHT,,0,0,0,,閃開  閃開\N{\rENG}Move, move!
+Dialogue: 0,0:38:33.47,0:38:34.83,CHT,,0,0,0,,別擋我路\N{\rENG}Get out of the way!
+Dialogue: 0,0:41:25.07,0:41:27.29,CHT,,0,0,0,,停下  停下  停下\N{\rENG}Stop. Stop. Stop!
+Dialogue: 0,0:41:46.20,0:41:47.64,CHT,,0,0,0,,舉起手來\N{\rENG}Hands up!
+Dialogue: 0,0:42:02.61,0:42:04.14,CHT,,0,0,0,,剛剛是什麼鬼\N{\rENG}What the hell was that?
+Dialogue: 0,0:42:07.41,0:42:10.51,Default,,0,0,0,,{\r譯文字幕\c&H00250F&\1a&H00&\an6\bord0}國 家 警 察 局
+Dialogue: 0,0:42:20.28,0:42:21.43,CHT,,0,0,0,,布洛根\N{\rENG}Brogan.
+Dialogue: 0,0:42:31.46,0:42:32.49,CHT,,0,0,0,,謝謝你  警官\N{\rENG}Thank you, sir.
+Dialogue: 0,0:42:33.03,0:42:34.99,CHT,,0,0,0,,-謝謝你  隊長  -不客氣\N{\rENG}- Thank you, Captain. - No problem.
+Dialogue: 0,0:42:36.79,0:42:37.81,CHT,,0,0,0,,你那邊已經暴露了\N{\rENG}Your place is burnt,
+Dialogue: 0,0:42:37.81,0:42:39.83,CHT,,0,0,0,,給我找個視野開闊的地方\N{\rENG}give me somewhere I can see him coming.
+Dialogue: 0,0:42:42.59,0:42:44.50,CHT,,0,0,0,,我本來想拿槍進去救你的\N{\rENG}I wanted to go in there guns blazing.
+Dialogue: 0,0:42:44.65,0:42:47.15,CHT,,0,0,0,,但她覺得外交手段更好\N{\rENG}But she thought that diplomatic approach made more sense.
+Dialogue: 0,0:42:47.68,0:42:50.18,CHT,,0,0,0,,是啊  開火可能反而更好\N{\rENG}Yeah, gunfire might have been kinder.
+Dialogue: 0,0:42:50.46,0:42:51.92,CHT,,0,0,0,,幹得不錯\N{\rENG}Great work in there.
+Dialogue: 0,0:42:52.18,0:42:53.50,CHT,,0,0,0,,現在呢\N{\rENG}What now?
+Dialogue: 0,0:42:53.78,0:42:55.44,CHT,,0,0,0,,帶我去布達佩斯\N{\rENG}I need you to get me to Budapest.
+Dialogue: 0,0:42:56.08,0:42:57.37,CHT,,0,0,0,,-為什麼去布達佩斯  -為什麼去布達佩斯\N{\rENG}- What's in Budapest? - What's in Budapest?
+Dialogue: 0,0:42:58.14,0:43:00.21,CHT,,0,0,0,,傑克的線人  尤裡\N{\rENG}Jack's informant Yuri.
+Dialogue: 0,0:43:00.65,0:43:04.73,CHT,,0,0,0,,他們不是因為我想退休所以追殺我\N{\rENG}These guys aren't trying to kill me because I wanna retire.
+Dialogue: 0,0:43:05.10,0:43:06.70,CHT,,0,0,0,,他們追殺我是因為\N{\rENG}They're coming after me because they
+Dialogue: 0,0:43:06.70,0:43:08.52,CHT,,0,0,0,,他們覺得傑克告訴了我機密資訊\N{\rENG}think Jack told me something classified.
+Dialogue: 0,0:43:09.00,0:43:10.54,CHT,,0,0,0,,尤裡應該知道這事\N{\rENG}Yuri ought to know about it.
+Dialogue: 0,0:43:10.93,0:43:12.54,CHT,,0,0,0,,抱歉兄弟  但我的阿茲特克\N{\rENG}I'm sorry, partner, but my Aztec
+Dialogue: 0,0:43:12.54,0:43:14.26,CHT,,0,0,0,,飛不了這麼遠\N{\rENG}doesn't have that kind of voyage.
+Dialogue: 0,0:43:14.36,0:43:17.02,CHT,,0,0,0,,那我希望能借一架能飛過去的\N{\rENG}Well, I was hoping we would borrow something that does.
+Dialogue: 0,0:43:17.61,0:43:18.61,CHT,,0,0,0,,比如G系\N{\rENG}Maybe a G?
+Dialogue: 0,0:43:21.07,0:43:22.76,CHT,,0,0,0,,要借一架灣流嗎\N{\rENG}Taking someone's Gulfstream?
+Dialogue: 0,0:43:22.76,0:43:25.43,CHT,,0,0,0,,你得多愛一個人才肯把灣流借給他\N{\rENG}I mean you.. you'd really have to love the guy to do that.
+Dialogue: 0,0:43:27.61,0:43:30.24,CHT,,0,0,0,,我正好知道有個人  等我一會兒\N{\rENG}I know just the fellow. Give me a minute.
+Dialogue: 0,0:43:32.71,0:43:39.80,Default,,0,0,0,,{\r譯文字幕\an9}♪ 我在小鎮那頭  有個馬子 ♪\N{\rENG}♪ Well, I got a woman, way over town ♪
+Dialogue: 0,0:43:39.96,0:43:44.56,Default,,0,0,0,,{\r譯文字幕\an9}♪ 她對我很好 ♪\N{\rENG}♪ That's good to me, oh yeah ♪
+Dialogue: 0,0:43:44.87,0:43:49.47,Default,,0,0,0,,{\r譯文字幕\an9}♪ 我在小鎮那頭  有個馬子 ♪\N{\rENG}♪ I got a woman, way over town ♪
+Dialogue: 0,0:43:50.13,0:43:54.24,Default,,0,0,0,,{\r譯文字幕\an9}♪ 對我很好 ♪\N{\rENG}♪ Good to me, oh yeah ♪
+Dialogue: 0,0:43:54.68,0:43:58.86,Default,,0,0,0,,{\r譯文字幕\an9}♪ 我要錢  她就會給我 ♪\N{\rENG}♪ She give me money when I'm in need ♪
+Dialogue: 0,0:44:04.49,0:44:05.35,CHT,,0,0,0,,亨利\N{\rENG}Henry?
+Dialogue: 0,0:44:07.48,0:44:08.92,CHT,,0,0,0,,你有過小孩嗎\N{\rENG}Did you ever have a kid?
+Dialogue: 0,0:44:09.57,0:44:11.05,CHT,,0,0,0,,沒有  怎麼了\N{\rENG}No, why?
+Dialogue: 0,0:44:12.28,0:44:13.66,CHT,,0,0,0,,那個摩托男\N{\rENG}Guy on a motorcycle.
+Dialogue: 0,0:44:14.96,0:44:16.71,CHT,,0,0,0,,你注意到什麼了嗎\N{\rENG}Did you notice anything funny about him?
+Dialogue: 0,0:44:17.45,0:44:19.26,CHT,,0,0,0,,我注意到他特別厲害\N{\rENG}I noticed he was very good.
+Dialogue: 0,0:44:19.48,0:44:20.48,CHT,,0,0,0,,沒錯\N{\rENG}Right.
+Dialogue: 0,0:44:21.33,0:44:23.01,CHT,,0,0,0,,那臉呢\N{\rENG}And the face?
+Dialogue: 0,0:44:24.56,0:44:25.53,CHT,,0,0,0,,有點熟悉嗎\N{\rENG}Similarity?
+Dialogue: 0,0:44:27.83,0:44:29.73,CHT,,0,0,0,,是啊  我也注意到了\N{\rENG}Yeah, I noticed that too.
+Dialogue: 0,0:44:30.26,0:44:31.26,CHT,,0,0,0,,那麼\N{\rENG}So...
+Dialogue: 0,0:44:32.08,0:44:34.19,CHT,,0,0,0,,你有過長期的親密關係嗎\N{\rENG}You never had a long-term relationship?
+Dialogue: 0,0:44:34.25,0:44:35.25,CHT,,0,0,0,,沒有\N{\rENG}No.
+Dialogue: 0,0:44:35.41,0:44:36.75,CHT,,0,0,0,,除非把你算上\N{\rENG}Unless we count you.
+Dialogue: 0,0:44:39.25,0:44:41.94,CHT,,0,0,0,,有沒有可能你有個小孩  但你不知道\N{\rENG}Is it possible that you could've had kid without knowing it?
+Dialogue: 0,0:44:42.24,0:44:43.24,CHT,,0,0,0,,不可能\N{\rENG}No.
+Dialogue: 0,0:44:44.80,0:44:47.10,CHT,,0,0,0,,-那你怎麼解釋  -丹尼\N{\rENG}- Then how do you explain... - Danny.
+Dialogue: 0,0:44:49.65,0:44:50.88,CHT,,0,0,0,,別問了\N{\rENG}Alright?
+Dialogue: 0,0:45:01.87,0:45:03.80,CHT,,0,0,0,,順便  謝謝\N{\rENG}Thank you, by the way.
+Dialogue: 0,0:45:04.87,0:45:05.87,CHT,,0,0,0,,謝什麼\N{\rENG}For?
+Dialogue: 0,0:45:06.17,0:45:07.53,CHT,,0,0,0,,謝謝你離開了巴倫的公寓\N{\rENG}For leaving Baron's appartment,
+Dialogue: 0,0:45:07.53,0:45:09.23,CHT,,0,0,0,,我就不是他們的目標了\N{\rENG}so I wouldn't be a target.
+Dialogue: 0,0:45:10.56,0:45:11.96,CHT,,0,0,0,,來佐治亞州救我\N{\rENG}Coming and getting me in Georgia
+Dialogue: 0,0:45:11.96,0:45:13.76,CHT,,0,0,0,,那時你明明可以一走了之\N{\rENG}when you could've just ran for you life.
+Dialogue: 0,0:45:14.24,0:45:15.32,CHT,,0,0,0,,我只是\N{\rENG}I just...
+Dialogue: 0,0:45:15.39,0:45:17.79,CHT,,0,0,0,,想讓你坐私人飛機\N{\rENG}wanted to put you on a private plane
+Dialogue: 0,0:45:17.79,0:45:20.24,CHT,,0,0,0,,去匈牙利免費旅遊一次\N{\rENG}and give you a free trip to Hungary.
+Dialogue: 0,0:45:20.99,0:45:23.09,CHT,,0,0,0,,我在那兒能看到\N{\rENG}Where I am gonna find...?
+Dialogue: 0,0:45:23.26,0:45:25.14,CHT,,0,0,0,,匈牙利人\N{\rENG}"Hungarians".
+Dialogue: 0,0:45:26.59,0:45:27.77,CHT,,0,0,0,,沒錯\N{\rENG}Right.
+Dialogue: 0,0:45:31.82,0:45:33.55,CHT,,0,0,0,,我看到他時\N{\rENG}When I saw him.
+Dialogue: 0,0:45:35.19,0:45:37.82,CHT,,0,0,0,,就像看到鬼了一樣\N{\rENG}It was like I was seeing a ghost.
+Dialogue: 0,0:45:38.97,0:45:40.65,CHT,,0,0,0,,拿著槍的鬼\N{\rENG}Ghost with a gun.
+Dialogue: 0,0:45:42.67,0:45:43.72,CHT,,0,0,0,,就像\N{\rENG}Like...
+Dialogue: 0,0:45:43.99,0:45:46.32,CHT,,0,0,0,,死在我搶下的每一個鬼\N{\rENG}every trigger I've ever pulled.
+Dialogue: 0,0:45:57.25,0:46:01.33,Default,,0,0,0,,{\r譯文字幕\pos(300,240)\fad(300,0)\shad0\bord0}佐治亞州  葛籣維爾
+Dialogue: 0,0:46:18.07,0:46:21.67,CHT,,0,0,0,,我告訴過你在哥倫比亞待命\N{\rENG}I told you to stay in Colombia and wait for orders.
+Dialogue: 0,0:46:23.87,0:46:26.07,CHT,,0,0,0,,我想和你談談\N{\rENG}I wanted to talk to you.
+Dialogue: 0,0:46:39.37,0:46:41.42,CHT,,0,0,0,,他很厲害\N{\rENG}He is very good.
+Dialogue: 0,0:46:42.26,0:46:43.66,CHT,,0,0,0,,他是最厲害的\N{\rENG}He's the best.
+Dialogue: 0,0:46:44.50,0:46:45.96,CHT,,0,0,0,,所以我派你去\N{\rENG}That's why I sent you.
+Dialogue: 0,0:46:48.66,0:46:52.96,CHT,,0,0,0,,我每一步行動前他都能知道\N{\rENG}He knew every move of mine before I made it.
+Dialogue: 0,0:46:53.96,0:46:57.52,CHT,,0,0,0,,我本可以拿下他  就在那兒  扣下扳機\N{\rENG}I'd have him, right there, and... take the shot
+Dialogue: 0,0:46:58.37,0:46:59.32,CHT,,0,0,0,,然後\N{\rENG}and...
+Dialogue: 0,0:46:59.32,0:47:01.02,CHT,,0,0,0,,他就死了\N{\rENG}he'd be gone.
+Dialogue: 0,0:47:02.55,0:47:04.18,CHT,,0,0,0,,像鬼一樣\N{\rENG}Like a ghost.
+Dialogue: 0,0:47:04.75,0:47:07.01,CHT,,0,0,0,,你看到他的臉了嗎\N{\rENG}Did you get a look at his face?
+Dialogue: 0,0:47:07.85,0:47:12.48,CHT,,0,0,0,,沒看清  我在臺階的髒鏡子裡看到了\N{\rENG}Not really, I saw him at the stairs through a dirty mirror.
+Dialogue: 0,0:47:12.55,0:47:14.63,CHT,,0,0,0,,我以為你在樓頂上\N{\rENG}I thought you were on the roof.
+Dialogue: 0,0:47:14.68,0:47:16.94,CHT,,0,0,0,,我開始是的  他瞄準我了  我得下去\N{\rENG}I was, he got a line on me, I had to jump down.
+Dialogue: 0,0:47:16.94,0:47:18.54,CHT,,0,0,0,,我們是怎麼演習的\N{\rENG}What do we always drill?
+Dialogue: 0,0:47:19.44,0:47:22.26,CHT,,0,0,0,,佔領高地  把他逼向絕路\N{\rENG}You hold the high ground, you put his back against the wall
+Dialogue: 0,0:47:22.27,0:47:23.80,CHT,,0,0,0,,不能讓他逃跑\N{\rENG}and you don't let him go.
+Dialogue: 0,0:47:25.61,0:47:27.07,CHT,,0,0,0,,我知道\N{\rENG}I know that.
+Dialogue: 0,0:47:30.39,0:47:32.31,CHT,,0,0,0,,整件事就很怪\N{\rENG}Whole thing was weird.
+Dialogue: 0,0:47:32.45,0:47:33.18,CHT,,0,0,0,,就是\N{\rENG}Just...
+Dialogue: 0,0:47:33.58,0:47:34.58,CHT,,0,0,0,,詭異\N{\rENG}wicky.
+Dialogue: 0,0:47:35.07,0:47:36.35,CHT,,0,0,0,,怎麼怪了\N{\rENG}How?
+Dialogue: 0,0:47:37.22,0:47:38.35,CHT,,0,0,0,,我不知道  就是\N{\rENG}I don't know, it was...
+Dialogue: 0,0:47:38.53,0:47:39.32,CHT,,0,0,0,,就好像我游離在\N{\rENG}As if I were...
+Dialogue: 0,0:47:39.83,0:47:41.63,CHT,,0,0,0,,身體之外看著一樣\N{\rENG}watching it all.
+Dialogue: 0,0:47:42.35,0:47:43.86,CHT,,0,0,0,,他是誰\N{\rENG}Who is he?
+Dialogue: 0,0:47:44.82,0:47:46.44,CHT,,0,0,0,,孩子  困擾著你的\N{\rENG}Junior, this thing, that you
+Dialogue: 0,0:47:46.44,0:47:48.68,CHT,,0,0,0,,這件事情  這種陌生感\N{\rENG}are struggling with, this strangeness.
+Dialogue: 0,0:47:48.72,0:47:50.18,CHT,,0,0,0,,是恐懼\N{\rENG}It's fear.
+Dialogue: 0,0:47:50.92,0:47:51.96,CHT,,0,0,0,,不要厭惡它\N{\rENG}Don't hate it -
+Dialogue: 0,0:47:53.05,0:47:54.34,CHT,,0,0,0,,要依靠它\N{\rENG}lean into it.
+Dialogue: 0,0:47:54.89,0:47:56.36,CHT,,0,0,0,,擁抱它\N{\rENG}Embraced it.
+Dialogue: 0,0:47:56.36,0:47:57.23,CHT,,0,0,0,,最終克服它\N{\rENG}And then overcome it.
+Dialogue: 0,0:47:57.23,0:48:01.20,CHT,,0,0,0,,只要你能跨過這道門檻  孩子\N{\rENG}You, are right in the threshold, son.
+Dialogue: 0,0:48:03.12,0:48:04.62,CHT,,0,0,0,,就是這樣\N{\rENG}This cause.
+Dialogue: 0,0:48:08.36,0:48:09.79,CHT,,0,0,0,,你餓嗎\N{\rENG}You hungry?
+Dialogue: 0,0:48:12.36,0:48:13.66,CHT,,0,0,0,,是的  長官\N{\rENG}Yes, sir.
+Dialogue: 0,0:48:14.43,0:48:16.66,CHT,,0,0,0,,來碗甜麥片嗎\N{\rENG}Bowl of cereals hungry?
+Dialogue: 0,0:48:18.66,0:48:20.01,CHT,,0,0,0,,好的  長官\N{\rENG}Yes, sir.
+Dialogue: 0,0:49:18.93,0:49:21.33,Default,,0,0,0,,{\r譯文字幕\bord0\pos(190.4,170.8)}訓 練 完 成
+Dialogue: 0,0:49:23.33,0:49:25.79,CHT,,0,0,0,,謝謝  訓練完畢  舉起手來\N{\rENG}Thank you. That's it. Hands up.
+Dialogue: 0,0:49:29.22,0:49:31.26,CHT,,0,0,0,,過來  所有人排隊\N{\rENG}Over here, everyboy take the line.
+Dialogue: 0,0:49:31.26,0:49:32.63,CHT,,0,0,0,,都歸隊\N{\rENG}Everybody back to one.
+Dialogue: 0,0:49:34.51,0:49:36.49,CHT,,0,0,0,,好了  出發\N{\rENG}That's one, let's go!
+Dialogue: 0,0:49:45.38,0:49:47.55,CHT,,0,0,0,,來了許多新面孔  是啊\N{\rENG}Lots of new faces. Yeap.
+Dialogue: 0,0:49:48.58,0:49:51.28,CHT,,0,0,0,,他們會是第一批被派到葉門的\N{\rENG}They'll be the first boots on the ground in Yemen.
+Dialogue: 0,0:49:52.52,0:49:55.70,CHT,,0,0,0,,他們知道作戰規則嗎  還是\N{\rENG}Do they understand the rules of engagement, or, just...
+Dialogue: 0,0:49:55.70,0:49:57.76,CHT,,0,0,0,,只要看到動的東西就開槍\N{\rENG}whatever moves - they shoot it?
+Dialogue: 0,0:49:58.41,0:50:01.41,CHT,,0,0,0,,他們是精英  訓練有素\N{\rENG}They are elite, they're disciplined.
+Dialogue: 0,0:50:01.76,0:50:03.34,CHT,,0,0,0,,如果他們能夠通過公寓窗戶\N{\rENG}And if they get a clean shot at their
+Dialogue: 0,0:50:03.34,0:50:04.80,CHT,,0,0,0,,精准迅速地擊中目標\N{\rENG}target through an appartment window
+Dialogue: 0,0:50:04.80,0:50:05.89,CHT,,0,0,0,,他們就會出手\N{\rENG}they'll take it.
+Dialogue: 0,0:50:07.84,0:50:11.09,CHT,,0,0,0,,你應該在去布達佩斯的路上好好想想\N{\rENG}You should think about that on your way to Budapest.
+Dialogue: 0,0:50:12.79,0:50:14.74,CHT,,0,0,0,,亨利剛在那邊落地\N{\rENG}Henry's just landed there.
+Dialogue: 0,0:50:16.44,0:50:17.86,CHT,,0,0,0,,你動身吧\N{\rENG}You're moving out.
+Dialogue: 0,0:50:25.76,0:50:29.56,Default,,0,0,0,,{\r譯文字幕\bord0\pos(297.4,77.9)}匈牙利  布達佩斯
+Dialogue: 0,0:50:37.06,0:50:38.22,CHT,,0,0,0,,阿妮科\N{\rENG}Aniko?
+Dialogue: 0,0:50:40.77,0:50:41.97,CHT,,0,0,0,,謝謝你為我服務\N{\rENG}Thank you for your time.
+Dialogue: 0,0:50:43.65,0:50:45.02,CHT,,0,0,0,,這是樣本\N{\rENG}Here are the samples.
+Dialogue: 0,0:50:51.01,0:50:52.49,CHT,,0,0,0,,結果至少得等到\N{\rENG}Least I can do for you in...
+Dialogue: 0,0:50:52.93,0:50:53.93,CHT,,0,0,0,,2天后\N{\rENG}2 days.
+Dialogue: 0,0:50:58.00,0:50:59.85,CHT,,0,0,0,,我2小時後就要\N{\rENG}This I need in 2 hours.
+Dialogue: 0,0:51:04.30,0:51:05.48,CHT,,0,0,0,,我們約到了尤裡\N{\rENG}We have a meeting with Yuri.
+Dialogue: 0,0:51:06.12,0:51:07.68,CHT,,0,0,0,,他同意跟我們會面了\N{\rENG}He agreed to sit with us.
+Dialogue: 0,0:51:08.70,0:51:09.98,CHT,,0,0,0,,你還好嗎\N{\rENG}You alright?
+Dialogue: 0,0:51:11.52,0:51:13.98,CHT,,0,0,0,,我想我已經知道了為什麼他和你那麼像了  亨利\N{\rENG}I think I know why is he as good as you, Henry.
+Dialogue: 0,0:51:16.10,0:51:17.65,CHT,,0,0,0,,他就是你\N{\rENG}He is you.
+Dialogue: 0,0:51:19.32,0:51:20.38,CHT,,0,0,0,,你說什麼\N{\rENG}What?
+Dialogue: 0,0:51:21.50,0:51:24.30,CHT,,0,0,0,,這裡有個基因檢測站  我去找了他們\N{\rENG}There's a DNA lab here, I gave them samples.
+Dialogue: 0,0:51:25.50,0:51:27.95,CHT,,0,0,0,,化驗了你的  還有他棒球帽上的樣本\N{\rENG}Yours and the baseball cap he was wearing.
+Dialogue: 0,0:51:29.05,0:51:30.52,CHT,,0,0,0,,他真的和你長得太像了\N{\rENG}He just, he looks so much like you.
+Dialogue: 0,0:51:30.52,0:51:32.25,CHT,,0,0,0,,我想他可能是你的兒子  所以我才\N{\rENG}I thought he had to be your son, so I...
+Dialogue: 0,0:51:34.52,0:51:36.20,CHT,,0,0,0,,他們化驗了3次\N{\rENG}They did 3 tests.
+Dialogue: 0,0:51:36.32,0:51:38.00,CHT,,0,0,0,,檢測你和他的基因\N{\rENG}Your DNA and his.
+Dialogue: 0,0:51:38.92,0:51:40.78,CHT,,0,0,0,,3次的化驗結果都是一致的\N{\rENG}All 3 came back identical.
+Dialogue: 0,0:51:41.55,0:51:43.65,CHT,,0,0,0,,不是相近  是一致\N{\rENG}Not close, identical.
+Dialogue: 0,0:51:44.61,0:51:46.47,CHT,,0,0,0,,也就是說  你們是同一個人\N{\rENG}As in, same person.
+Dialogue: 0,0:51:49.31,0:51:50.84,CHT,,0,0,0,,他是你的克隆\N{\rENG}He's your clone.
+Dialogue: 0,0:51:53.60,0:51:54.78,CHT,,0,0,0,,我想過我是不是錯把兩份\N{\rENG}I thought I've made a mistake that I
+Dialogue: 0,0:51:54.78,0:51:56.16,CHT,,0,0,0,,同一個人的樣本給了他們\N{\rENG}gave them two samples of the same person.
+Dialogue: 0,0:51:56.26,0:51:57.26,CHT,,0,0,0,,但是我沒有\N{\rENG}But I didn't.
+Dialogue: 0,0:51:59.18,0:52:00.68,CHT,,0,0,0,,他就是你\N{\rENG}He is you.
+Dialogue: 0,0:52:01.24,0:52:02.51,CHT,,0,0,0,,這怎麼可能呢\N{\rENG}How's that even possible?
+Dialogue: 0,0:52:02.51,0:52:04.78,CHT,,0,0,0,,這很複雜  不過是有可能的\N{\rENG}It's complicated, but it's doable.
+Dialogue: 0,0:52:04.96,0:52:07.48,CHT,,0,0,0,,只需要有一個代孕母親和一份基因樣本\N{\rENG}All you'd really need is a surrogate mother and a DNA sample.
+Dialogue: 0,0:52:07.48,0:52:09.42,CHT,,0,0,0,,如果他們可以克隆人的話\N{\rENG}If they could clone a person.
+Dialogue: 0,0:52:09.61,0:52:11.61,CHT,,0,0,0,,他們怎麼不去多克隆一些\N{\rENG}You'd think that they'd clone more
+Dialogue: 0,0:52:11.67,0:52:13.61,CHT,,0,0,0,,醫生或者科學家  而是克隆\N{\rENG}doctors or scientists, not...
+Dialogue: 0,0:52:13.94,0:52:14.94,CHT,,0,0,0,,我\N{\rENG}me.
+Dialogue: 0,0:52:15.27,0:52:17.00,CHT,,0,0,0,,他們應該克隆納爾遜·曼德拉\N{\rENG}They could've cloned Nelson Mandela.
+Dialogue: 0,0:52:17.06,0:52:18.78,CHT,,0,0,0,,納爾遜·曼德拉做不到從兩公里外\N{\rENG}Nelson Mandela couldn't kill a man
+Dialogue: 0,0:52:18.78,0:52:20.91,CHT,,0,0,0,,殺死一個在行駛中的火車上的人\N{\rENG}on a moving train from 2 kilometers away.
+Dialogue: 0,0:52:40.40,0:52:41.40,CHT,,0,0,0,,尤裡\N{\rENG}Yuri?
+Dialogue: 0,0:52:44.91,0:52:46.27,CHT,,0,0,0,,布洛根先生\N{\rENG}Mr. Brogan?
+Dialogue: 0,0:52:57.41,0:52:59.30,CHT,,0,0,0,,開始之前  我必須承認\N{\rENG}Before we begin, I must confess.
+Dialogue: 0,0:52:59.30,0:53:01.90,CHT,,0,0,0,,我多年來一直都很欽佩您的工作\N{\rENG}I have admired your work for many years.
+Dialogue: 0,0:53:02.91,0:53:06.52,CHT,,0,0,0,,等等  所以你知道我是誰\N{\rENG}Wait. So you know who I am?
+Dialogue: 0,0:53:07.82,0:53:09.58,CHT,,0,0,0,,用你們的話來說就是\N{\rENG}"Long time listener, first time caller", -
+Dialogue: 0,0:53:09.58,0:53:11.58,CHT,,0,0,0,,久聞大名  今日得見\N{\rENG}as they say in your country.
+Dialogue: 0,0:53:13.24,0:53:14.94,CHT,,0,0,0,,我本應該恭喜你\N{\rENG}I would congratulate you
+Dialogue: 0,0:53:15.63,0:53:17.36,CHT,,0,0,0,,光榮退休  但是\N{\rENG}on your retirement, but...
+Dialogue: 0,0:53:17.71,0:53:19.28,CHT,,0,0,0,,你最後一次任務\N{\rENG}your last job has...
+Dialogue: 0,0:53:19.54,0:53:20.61,CHT,,0,0,0,,並不順利  是嗎\N{\rENG}loose ends, yes?
+Dialogue: 0,0:53:20.85,0:53:23.58,CHT,,0,0,0,,是啊  我的政府不僅騙了我  還打算殺掉我\N{\rENG}Yeah, well... My government lied to me and then tried to kill me.
+Dialogue: 0,0:53:23.58,0:53:24.49,CHT,,0,0,0,,你是指這個吧\N{\rENG}If that's what you mean.
+Dialogue: 0,0:53:24.88,0:53:25.87,CHT,,0,0,0,,是的\N{\rENG}Yes.
+Dialogue: 0,0:53:25.87,0:53:28.50,CHT,,0,0,0,,在俄羅斯  這就是家常便飯\N{\rENG}In Russia, you call that "Tuesday".
+Dialogue: 0,0:53:28.95,0:53:32.28,CHT,,0,0,0,,但美國人會覺得很受傷\N{\rENG}But Americans, it hurts your feelings.
+Dialogue: 0,0:53:33.64,0:53:34.47,CHT,,0,0,0,,所以呢\N{\rENG}So.
+Dialogue: 0,0:53:34.47,0:53:37.04,CHT,,0,0,0,,所以多莫夫為什麼要回俄羅斯\N{\rENG}So, why was Dormov trying to go back to Russia?
+Dialogue: 0,0:53:37.08,0:53:38.51,CHT,,0,0,0,,為什麼派我去殺掉他\N{\rENG}And why was I sent to kill him?
+Dialogue: 0,0:53:38.51,0:53:39.90,CHT,,0,0,0,,開門見山\N{\rENG}Yeah, down to business.
+Dialogue: 0,0:53:39.90,0:53:41.24,CHT,,0,0,0,,果然是美國作風\N{\rENG}Very American.
+Dialogue: 0,0:53:42.13,0:53:43.88,CHT,,0,0,0,,你是個大忙人\N{\rENG}You are a busy man.
+Dialogue: 0,0:53:45.37,0:53:47.83,CHT,,0,0,0,,我們都是傑克的朋友\N{\rENG}We were both friends with Jack.
+Dialogue: 0,0:53:48.25,0:53:50.00,CHT,,0,0,0,,他是個很好的人\N{\rENG}He was a good man.
+Dialogue: 0,0:53:50.37,0:53:52.93,CHT,,0,0,0,,我和你一樣悼念他的死亡\N{\rENG}I mourn his death, like you.
+Dialogue: 0,0:53:53.38,0:53:55.37,CHT,,0,0,0,,但你現在還能來到這裡\N{\rENG}But the reason you are here
+Dialogue: 0,0:53:55.37,0:53:57.11,CHT,,0,0,0,,並且我目前還沒有\N{\rENG}and I have not killed you
+Dialogue: 0,0:53:57.62,0:53:58.62,CHT,,0,0,0,,殺掉你\N{\rENG}yet.
+Dialogue: 0,0:53:59.29,0:54:01.94,CHT,,0,0,0,,是因為我們有著共同的敵人\N{\rENG}Is we share a common enemy.
+Dialogue: 0,0:54:02.34,0:54:03.77,CHT,,0,0,0,,克雷·維裡斯\N{\rENG}Clay Verris.
+Dialogue: 0,0:54:05.31,0:54:08.57,CHT,,0,0,0,,他把多莫夫引到西方去  投資他的實驗室\N{\rENG}He lured Dormov to the west, funded his lab.
+Dialogue: 0,0:54:09.61,0:54:11.94,CHT,,0,0,0,,你已經領教過他們的成果了吧\N{\rENG}And now you have met the fruits of their labor.
+Dialogue: 0,0:54:12.49,0:54:14.97,CHT,,0,0,0,,多莉羊是1996年被克隆的\N{\rENG}Dolly the Sheep was cloned in '96.
+Dialogue: 0,0:54:14.97,0:54:17.54,CHT,,0,0,0,,-但在1995年  -我就是那只羊\N{\rENG}- But in '95... - I was the sheep.
+Dialogue: 0,0:54:17.90,0:54:18.77,CHT,,0,0,0,,把它當作一種榮譽吧\N{\rENG}Take it as a compliment.
+Dialogue: 0,0:54:19.62,0:54:21.42,CHT,,0,0,0,,你可是獨一無二的\N{\rENG}And you're the only one.
+Dialogue: 0,0:54:21.76,0:54:25.16,CHT,,0,0,0,,他用你的基因培育那個男孩成為他的孩子\N{\rENG}With your DNA Verris raised the boy as his son.
+Dialogue: 0,0:54:26.14,0:54:28.80,CHT,,0,0,0,,訓練他成為最完美的殺手\N{\rENG}Trained him to be the perfect assassin.
+Dialogue: 0,0:54:30.02,0:54:32.10,CHT,,0,0,0,,那多莫夫為什麼要離開\N{\rENG}So why was Dormov trying to leave?
+Dialogue: 0,0:54:32.14,0:54:34.23,CHT,,0,0,0,,一直以來我們都想引他回來\N{\rENG}For years, we tried to lure him back.
+Dialogue: 0,0:54:34.52,0:54:35.52,CHT,,0,0,0,,但沒有成功\N{\rENG}Nothing.
+Dialogue: 0,0:54:35.63,0:54:37.51,CHT,,0,0,0,,直到去年他們出現了分歧\N{\rENG}Then last year they had a fallen out.
+Dialogue: 0,0:54:37.73,0:54:40.06,CHT,,0,0,0,,多莫夫害怕了  就來聯繫我\N{\rENG}Dormov got scared, reached out to me.
+Dialogue: 0,0:54:40.06,0:54:41.06,CHT,,0,0,0,,所以我\N{\rENG}So I...
+Dialogue: 0,0:54:41.10,0:54:44.23,CHT,,0,0,0,,這還是解釋不了為什麼我被派去殺他\N{\rENG}That still doesn't explain why I was sent to kill him.
+Dialogue: 0,0:54:45.15,0:54:48.40,CHT,,0,0,0,,我們有跡象表明多莫夫取得了突破\N{\rENG}We have indications Dormov made a breakthrough.
+Dialogue: 0,0:54:48.65,0:54:50.30,CHT,,0,0,0,,人類基因改造\N{\rENG}Modified human DNA.
+Dialogue: 0,0:54:50.97,0:54:53.00,CHT,,0,0,0,,還能投入大規模生產\N{\rENG}A path to mass produciton.
+Dialogue: 0,0:54:53.30,0:54:56.83,CHT,,0,0,0,,多莫夫希望能提高士兵的體力和智力\N{\rENG}But Dormov wanted soldiers to be stroger, smarter.
+Dialogue: 0,0:54:56.87,0:54:58.42,CHT,,0,0,0,,而維裡斯\N{\rENG}Verris...
+Dialogue: 0,0:54:59.15,0:55:01.48,CHT,,0,0,0,,他想要別的東西\N{\rENG}Verris wanted something else.
+Dialogue: 0,0:55:03.07,0:55:04.42,CHT,,0,0,0,,他想要什麼\N{\rENG}What something else?
+Dialogue: 0,0:55:04.92,0:55:05.92,CHT,,0,0,0,,布洛根先生\N{\rENG}Mr. Brogan.
+Dialogue: 0,0:55:06.77,0:55:09.32,CHT,,0,0,0,,儘管你已經是最好的殺手\N{\rENG}You are the best at what you do.
+Dialogue: 0,0:55:09.62,0:55:11.39,CHT,,0,0,0,,但還是會感到分身乏術\N{\rENG}But still you get tired,
+Dialogue: 0,0:55:11.60,0:55:13.19,CHT,,0,0,0,,你也有恐懼  疑慮\N{\rENG}you have fears, doubts,
+Dialogue: 0,0:55:13.19,0:55:15.49,CHT,,0,0,0,,會感到痛苦甚至悔恨\N{\rENG}you feel pain, perhaps remorse.
+Dialogue: 0,0:55:16.93,0:55:18.48,CHT,,0,0,0,,你有良知\N{\rENG}You have a conscience.
+Dialogue: 0,0:55:19.34,0:55:20.80,CHT,,0,0,0,,這些讓你成為了一個人類\N{\rENG}These makes you human.
+Dialogue: 0,0:55:21.40,0:55:23.75,CHT,,0,0,0,,但不能讓你成為最理想的戰士\N{\rENG}But sub-optimital as a soldier.
+Dialogue: 0,0:55:23.94,0:55:25.97,CHT,,0,0,0,,不夠完美\N{\rENG}Less than perfect.
+Dialogue: 0,0:55:26.04,0:55:27.74,CHT,,0,0,0,,利潤就會降低\N{\rENG}Less profitable.
+Dialogue: 0,0:55:30.69,0:55:34.19,CHT,,0,0,0,,克雷頓 維裡斯想利用基因逆天而行\N{\rENG}Clayton Verris is playing God with DNA.
+Dialogue: 0,0:55:35.12,0:55:36.97,CHT,,0,0,0,,他必須被阻止\N{\rENG}He must be stopped.
+Dialogue: 0,0:55:38.58,0:55:41.18,CHT,,0,0,0,,如果他這麼危險  為什麼你不直接發射導彈\N{\rENG}If he's that dangerous why don't you send a missile?
+Dialogue: 0,0:55:41.18,0:55:42.74,CHT,,0,0,0,,炸了他的實驗室\N{\rENG}Blow up his lab.
+Dialogue: 0,0:55:43.68,0:55:45.54,CHT,,0,0,0,,我們正是要這樣做\N{\rENG}That is what we're doing.
+Dialogue: 0,0:55:45.96,0:55:46.69,CHT,,0,0,0,,只不過\N{\rENG}Except...
+Dialogue: 0,0:55:47.09,0:55:48.16,CHT,,0,0,0,,你\N{\rENG}you
+Dialogue: 0,0:55:48.54,0:55:50.30,CHT,,0,0,0,,就是那枚導彈\N{\rENG}are the missile.
+Dialogue: 0,0:55:51.12,0:55:52.87,CHT,,0,0,0,,祝你好運\N{\rENG}I wish you luck.
+Dialogue: 0,0:55:55.08,0:55:56.52,CHT,,0,0,0,,還有一件事\N{\rENG}One last thing.
+Dialogue: 0,0:55:56.74,0:55:59.07,CHT,,0,0,0,,你兩天前從家裡逃出來了\N{\rENG}You escaped from home two days ago?
+Dialogue: 0,0:55:59.66,0:56:00.67,CHT,,0,0,0,,該死\N{\rENG}Shit.
+Dialogue: 0,0:56:00.67,0:56:01.67,CHT,,0,0,0,,真是太精彩了\N{\rENG}Amazing work.
+Dialogue: 0,0:56:02.31,0:56:04.47,CHT,,0,0,0,,我當時真是替你捏了把汗\N{\rENG}I was on the edge of my seat.
+Dialogue: 0,0:56:05.47,0:56:06.66,CHT,,0,0,0,,等等  什麼\N{\rENG}Wait, what?
+Dialogue: 0,0:56:07.45,0:56:09.31,CHT,,0,0,0,,你他媽是怎麼知道的\N{\rENG}How the hell you know about that?
+Dialogue: 0,0:56:10.95,0:56:14.01,CHT,,0,0,0,,我可是你的超級粉絲啊\N{\rENG}I'm a big fan, what can I say?
+Dialogue: 0,0:56:18.73,0:56:21.01,CHT,,0,0,0,,如果他說的話有一半是真的\N{\rENG}If even half of what he's saying is true.
+Dialogue: 0,0:56:21.01,0:56:22.59,CHT,,0,0,0,,我們就得跟這個孩子聊聊\N{\rENG}We gotta talk to this kid.
+Dialogue: 0,0:56:22.73,0:56:24.98,CHT,,0,0,0,,不然在此之前你都處於危險之中\N{\rENG}You're not gonna be safe until you do.
+Dialogue: 0,0:56:24.98,0:56:27.74,CHT,,0,0,0,,你覺得如果一個50歲的你出現在你面前跟你說\N{\rENG}So you think if your 50-year old self showed up and told you
+Dialogue: 0,0:56:27.74,0:56:29.69,CHT,,0,0,0,,你是她的克隆  你能冷靜下來嗎\N{\rENG}you're her clone that would make you calmer?
+Dialogue: 0,0:56:29.69,0:56:30.54,CHT,,0,0,0,,51歲\N{\rENG}51.
+Dialogue: 0,0:56:31.60,0:56:33.09,CHT,,0,0,0,,-什麼  -就是提醒你一下\N{\rENG}- What? - Just saying, you're...
+Dialogue: 0,0:56:34.36,0:56:36.74,CHT,,0,0,0,,-你知道你已經51歲了吧  -已經知道了\N{\rENG}-You know you're 51, yeah? - I rounded.
+Dialogue: 0,0:56:37.98,0:56:40.56,CHT,,0,0,0,,他是一面你不願意照的鏡子  亨利\N{\rENG}He's the mirror you don't want to look into, Henry.
+Dialogue: 0,0:56:41.26,0:56:43.74,CHT,,0,0,0,,但他是我們找到維裡斯最好的機會\N{\rENG}But he's our best shot in getting to Verris.
+Dialogue: 0,0:56:52.38,0:56:53.76,CHT,,0,0,0,,珍內特·萊希特\N{\rENG}Janet Lassiter?
+Dialogue: 0,0:56:54.49,0:56:56.04,CHT,,0,0,0,,誰找我\N{\rENG}Who wants to know?
+Dialogue: 0,0:56:56.31,0:56:57.48,CHT,,0,0,0,,我給您傳個信  女士\N{\rENG}I got a message for you, ma'am.
+Dialogue: 0,0:56:57.97,0:57:00.38,CHT,,0,0,0,,有個人給我的羽毛幣帳戶轉了1000美元\N{\rENG}From a man who transferred a $1000 into my Featherquin account
+Dialogue: 0,0:57:00.38,0:57:01.92,CHT,,0,0,0,,讓我務必傳信給你\N{\rENG}just to make sure you got it.
+Dialogue: 0,0:57:02.36,0:57:03.78,CHT,,0,0,0,,那個人叫什麼名字\N{\rENG}Does this person have a name?
+Dialogue: 0,0:57:04.69,0:57:07.07,CHT,,0,0,0,,他叫  匯1000美元到我的羽毛幣帳戶\N{\rENG}His name is "$1000 into my Featherquin account".
+Dialogue: 0,0:57:09.66,0:57:10.47,CHT,,0,0,0,,你好  珍內特\N{\rENG}Hello, Janet.
+Dialogue: 0,0:57:10.62,0:57:13.08,CHT,,0,0,0,,在你試圖又一次殺掉我之前  好好考慮\N{\rENG}Before you try to kill me again, consider this.
+Dialogue: 0,0:57:13.36,0:57:16.29,CHT,,0,0,0,,你的家庭地址是卡羅爾·格羅夫街1362號\N{\rENG}Your home address is 1362, Carol Grove.
+Dialogue: 0,0:57:16.59,0:57:19.46,CHT,,0,0,0,,安全警報密碼是1776\N{\rENG}The security alarm code is 1776.
+Dialogue: 0,0:57:19.65,0:57:21.81,CHT,,0,0,0,,你每天早上6點12分起床\N{\rENG}You awaken at 6:12 every morning.
+Dialogue: 0,0:57:21.86,0:57:25.35,CHT,,0,0,0,,在6點42分前喝一杯無咖啡因的拿鐵咖啡\N{\rENG}and stop for your decaf soy latte with an extra shot by 6:42.
+Dialogue: 0,0:57:25.89,0:57:28.26,CHT,,0,0,0,,每晚你都會站在客廳的大窗戶前面\N{\rENG}Every night you stand in front of your huge living room window,
+Dialogue: 0,0:57:28.26,0:57:30.39,CHT,,0,0,0,,一邊喝著豪帥快活的瑪格麗塔酒\N{\rENG}sipping a Jose Cuervo Margarita
+Dialogue: 0,0:57:30.71,0:57:32.77,CHT,,0,0,0,,一邊看電視上的《法醫檔案》\N{\rENG}with Forensic Files on the TV.
+Dialogue: 0,0:57:33.27,0:57:36.35,CHT,,0,0,0,,穿著你高級舒適的運動褲\N{\rENG}Wearing your nice, comfy sweatpants.
+Dialogue: 0,0:57:40.74,0:57:41.86,CHT,,0,0,0,,我是萊希特\N{\rENG}This is Lassiter.
+Dialogue: 0,0:57:41.86,0:57:44.34,CHT,,0,0,0,,在你10點和2點方向都有搶手\N{\rENG}There are shooters at your 10 and 2.
+Dialogue: 0,0:57:44.34,0:57:47.27,CHT,,0,0,0,,一旦離開這個椅子  就會立刻喪命\N{\rENG}Get above of that chair, you will be AMF'ed.
+Dialogue: 0,0:57:48.17,0:57:50.13,CHT,,0,0,0,,如果我認為世界上還需要有另外一個我的話\N{\rENG}Now, if I thought the world needed another me
+Dialogue: 0,0:57:50.13,0:57:51.58,CHT,,0,0,0,,我會生個孩子\N{\rENG}I would've had a kid.
+Dialogue: 0,0:57:52.36,0:57:54.53,CHT,,0,0,0,,這個項目在我來之前已經啟動了\N{\rENG}The program predates my arrival at the agency,
+Dialogue: 0,0:57:54.53,0:57:55.58,CHT,,0,0,0,,你知道這一點\N{\rENG}You must know that.
+Dialogue: 0,0:57:55.58,0:57:57.06,CHT,,0,0,0,,是的  真是標準的華盛頓式回答\N{\rENG}Yeah, perfect DC answer.
+Dialogue: 0,0:57:57.10,0:57:59.33,CHT,,0,0,0,,出現問題只會開溜\N{\rENG}If something goes wrong - duck.
+Dialogue: 0,0:58:00.10,0:58:02.12,CHT,,0,0,0,,給那個騎自行車的小子一點小費\N{\rENG}Tip the bike guy.
+Dialogue: 0,0:58:02.83,0:58:03.83,CHT,,0,0,0,,你可以走了\N{\rENG}You can go.
+Dialogue: 0,0:58:05.12,0:58:08.47,CHT,,0,0,0,,聽著  我挾持了一名你的探員\N{\rENG}Now, I have your agent with me against her will.
+Dialogue: 0,0:58:08.62,0:58:10.51,CHT,,0,0,0,,丹妮爾·紮卡維斯基\N{\rENG}Danielle Zakarweski.
+Dialogue: 0,0:58:10.73,0:58:12.13,CHT,,0,0,0,,她想加入\N{\rENG}She wants to come in.
+Dialogue: 0,0:58:12.87,0:58:13.87,CHT,,0,0,0,,行\N{\rENG}Fine.
+Dialogue: 0,0:58:13.97,0:58:16.43,CHT,,0,0,0,,她和我一樣  是個愛國者\N{\rENG}Now, like me, she is a patriot.
+Dialogue: 0,0:58:16.61,0:58:17.71,CHT,,0,0,0,,不同的是\N{\rENG}Unlike me,
+Dialogue: 0,0:58:18.16,0:58:20.29,CHT,,0,0,0,,她仍然想要在未來的幾十年裡\N{\rENG}she still wants to spend the next couple decades
+Dialogue: 0,0:58:20.44,0:58:22.48,CHT,,0,0,0,,為你們這些混蛋衝鋒陷陣\N{\rENG}scoring touchdowns for you assholes.
+Dialogue: 0,0:58:23.43,0:58:25.63,CHT,,0,0,0,,她的安全必須要得到保證\N{\rENG}Her safety is non-negotiable.
+Dialogue: 0,0:58:26.17,0:58:27.78,CHT,,0,0,0,,10點和2點方向  珍內特\N{\rENG}10 and 2, Janet.
+Dialogue: 0,0:58:27.78,0:58:29.81,CHT,,0,0,0,,珍內特點的另一杯無咖啡因拿鐵咖啡\N{\rENG}Decaf soy latte, an extra shot for Janet?
+Dialogue: 0,0:58:29.86,0:58:31.96,CHT,,0,0,0,,我只會把她交給一個人\N{\rENG}The only person I'll turn her over to
+Dialogue: 0,0:58:32.00,0:58:34.50,CHT,,0,0,0,,就是在卡塔赫納你派來追殺我的那個\N{\rENG}is the guy you sent after me in Cartagena.
+Dialogue: 0,0:58:34.71,0:58:36.96,CHT,,0,0,0,,派其他人來的這個念頭想都別想\N{\rENG}Don't even think about sending anybody else.
+Dialogue: 0,0:58:37.03,0:58:39.61,CHT,,0,0,0,,家人團聚  很甜蜜\N{\rENG}Family reunion, very sweet.
+Dialogue: 0,0:58:39.95,0:58:40.49,CHT,,0,0,0,,是\N{\rENG}Yeah.
+Dialogue: 0,0:58:40.64,0:58:41.28,CHT,,0,0,0,,你最好把你該做的事做了\N{\rENG}Keep it up,
+Dialogue: 0,0:58:41.28,0:58:43.69,CHT,,0,0,0,,否則  你就是我第一次無償殺人的小白鼠\N{\rENG}you'll be the first person I've ever killed for free.
+Dialogue: 0,0:58:44.29,0:58:46.34,CHT,,0,0,0,,你多快能把他送到布達佩斯\N{\rENG}How quickly can you get him to Budapest?
+Dialogue: 0,0:58:47.86,0:58:49.32,CHT,,0,0,0,,5分鐘\N{\rENG}5 minutes.
+Dialogue: 0,0:58:52.14,0:58:53.24,CHT,,0,0,0,,很好\N{\rENG}Good.
+Dialogue: 0,0:58:53.69,0:58:55.41,CHT,,0,0,0,,她今晚午夜會在\N{\rENG}She'll be in the courtyard of the
+Dialogue: 0,0:58:55.41,0:58:57.54,CHT,,0,0,0,,瓦伊達洪城堡的院子等你\N{\rENG}Vajdahunyad Castle at midnight, tonight.
+Dialogue: 0,0:58:57.79,0:58:59.44,CHT,,0,0,0,,慢慢享用你的拿鐵吧\N{\rENG}Enjoy your latte.
+Dialogue: 0,0:59:00.50,0:59:01.61,CHT,,0,0,0,,AMF是什麼意思\N{\rENG}What's AMF?
+Dialogue: 0,0:59:02.00,0:59:03.27,CHT,,0,0,0,,再您媽的見\N{\rENG}Adios mother fucker.
+Dialogue: 0,0:59:04.75,0:59:06.31,CHT,,0,0,0,,他是怎麼知道我們在這兒的\N{\rENG}How the hell does he know we're here?
+Dialogue: 0,0:59:18.47,0:59:20.38,CHT,,0,0,0,,這樣會有用嗎\N{\rENG}This is gonna work, right?
+Dialogue: 0,0:59:20.96,0:59:21.96,CHT,,0,0,0,,會的\N{\rENG}Yes.
+Dialogue: 0,0:59:22.76,0:59:23.78,CHT,,0,0,0,,你怎麼知道\N{\rENG}How do you know?
+Dialogue: 0,0:59:24.74,0:59:26.92,CHT,,0,0,0,,我還不知道他的喜好嗎\N{\rENG}I know his taste.
+Dialogue: 0,0:59:28.07,0:59:30.12,CHT,,0,0,0,,等等  你的意思是你對我有興趣嗎\N{\rENG}Wait, are you saying you are attracted to me?
+Dialogue: 0,0:59:31.02,0:59:31.90,CHT,,0,0,0,,我嗎\N{\rENG}Me?
+Dialogue: 0,0:59:32.44,0:59:34.20,CHT,,0,0,0,,現在的我嗎  怎麼可能\N{\rENG}Now? Hell no.
+Dialogue: 0,0:59:34.29,0:59:37.92,CHT,,0,0,0,,不過那個年輕稚嫩版本的我或許會考慮下\N{\rENG}But the younger, less mature version, maybe.
+Dialogue: 0,0:59:44.30,0:59:47.63,CHT,,0,0,0,,我在佐治亞州找你的時候\N{\rENG}When I came for you in Georgia,
+Dialogue: 0,0:59:48.14,0:59:52.02,CHT,,0,0,0,,我完全是沒經過大腦思考的  是一種直覺\N{\rENG}I didn't have to think about that, it was instinct.
+Dialogue: 0,0:59:52.94,0:59:55.02,CHT,,0,0,0,,所以他也一樣會有這種本能\N{\rENG}He was born with that too.
+Dialogue: 0,0:59:55.61,0:59:58.17,CHT,,0,0,0,,況且  他想要的是我\N{\rENG}Besides, he wants me.
+Dialogue: 0,1:01:07.24,1:01:08.59,CHT,,0,0,0,,右轉\N{\rENG}Right.
+Dialogue: 0,1:01:15.81,1:01:17.34,CHT,,0,0,0,,院子挺漂亮\N{\rENG}Lovely courtyard.
+Dialogue: 0,1:01:18.81,1:01:20.23,CHT,,0,0,0,,抱歉  女士\N{\rENG}I'm sorry, ma'am.
+Dialogue: 0,1:01:20.55,1:01:23.35,CHT,,0,0,0,,在進行下一步前  我需要你卸下所有衣物\N{\rENG}Before we go any further, I'm gonna need you to strip.
+Dialogue: 0,1:01:24.75,1:01:26.25,CHT,,0,0,0,,你再說一遍\N{\rENG}I beg you pardon?
+Dialogue: 0,1:01:27.07,1:01:29.50,CHT,,0,0,0,,我必須要確認你身上沒有任何設備\N{\rENG}Need to be certain you're not wearing a wire.
+Dialogue: 0,1:01:32.25,1:01:33.75,CHT,,0,0,0,,好吧  首先\N{\rENG}Okay, first of all.
+Dialogue: 0,1:01:34.05,1:01:35.53,CHT,,0,0,0,,"女士"是什麼意思\N{\rENG}Ma'am?
+Dialogue: 0,1:01:36.05,1:01:38.65,CHT,,0,0,0,,我從小就被教導要尊重長輩\N{\rENG}I was raised to respect my elders.
+Dialogue: 0,1:01:40.70,1:01:42.70,CHT,,0,0,0,,請脫下你的衣服\N{\rENG}Take off your clothes, please.
+Dialogue: 0,1:02:10.89,1:02:12.62,CHT,,0,0,0,,請轉一下身\N{\rENG}Turn around, please.
+Dialogue: 0,1:02:42.01,1:02:43.56,CHT,,0,0,0,,看來你很嚴謹啊\N{\rENG}I see you like to be thorough?
+Dialogue: 0,1:02:45.02,1:02:47.08,CHT,,0,0,0,,唯有警惕讓我得以生存下去\N{\rENG}Caution is kept me alive.
+Dialogue: 0,1:02:51.45,1:02:52.90,CHT,,0,0,0,,打給這個一次性手機\N{\rENG}Call this burner.
+Dialogue: 0,1:03:01.50,1:03:02.58,CHT,,0,0,0,,謝謝\N{\rENG}Thank you.
+Dialogue: 0,1:03:04.10,1:03:05.10,CHT,,0,0,0,,布洛根\N{\rENG}Brogan.
+Dialogue: 0,1:03:05.60,1:03:06.42,CHT,,0,0,0,,你有12分鐘\N{\rENG}In 12 minutes,
+Dialogue: 0,1:03:06.42,1:03:08.80,CHT,,0,0,0,,不然我就讓她腦殼裡多兩顆子彈\N{\rENG}I'm putting 2 bullets in the back of her head.
+Dialogue: 0,1:03:09.20,1:03:11.40,CHT,,0,0,0,,你的指令是把她安全地送過去\N{\rENG}Your orders are to deliver her safely.
+Dialogue: 0,1:03:11.50,1:03:13.45,CHT,,0,0,0,,我的指令是殺了你\N{\rENG}My orders are to kill you.
+Dialogue: 0,1:03:14.00,1:03:17.11,CHT,,0,0,0,,你熟悉地下墓穴的石英室嗎\N{\rENG}Are you familiar with the quartz chamber at the catacombs?
+Dialogue: 0,1:03:17.11,1:03:17.86,CHT,,0,0,0,,不行\N{\rENG}Negative.
+Dialogue: 0,1:03:17.86,1:03:20.58,CHT,,0,0,0,,必須得在顯眼的地方  我要能看到你\N{\rENG}We're doing it someplace visible, where I can see you.
+Dialogue: 0,1:03:21.02,1:03:22.85,CHT,,0,0,0,,你還有11分鐘\N{\rENG}Now you have 11 minutes.
+Dialogue: 0,1:03:25.92,1:03:27.98,CHT,,0,0,0,,把衣服穿好  我們要坐車走了\N{\rENG}Get dressed. We're taking a ride.
+Dialogue: 0,1:03:40.88,1:03:42.54,CHT,,0,0,0,,計程車  不錯的選擇\N{\rENG}Cab was a smart move.
+Dialogue: 0,1:03:43.77,1:03:44.72,CHT,,0,0,0,,你是哪兒人\N{\rENG}Where are you from?
+Dialogue: 0,1:03:46.43,1:03:48.03,CHT,,0,0,0,,這麼有禮節  是南方人吧\N{\rENG}Your formality, it's Southern.
+Dialogue: 0,1:03:53.73,1:03:55.07,CHT,,0,0,0,,你要是想把我當成誘餌\N{\rENG}You know if you gonna use me as bait
+Dialogue: 0,1:03:55.08,1:03:56.05,CHT,,0,0,0,,並且最後可能殺了我的話\N{\rENG}and possible murder me
+Dialogue: 0,1:03:56.05,1:03:58.52,CHT,,0,0,0,,那你至少也應該和我說說話減輕我的壓力\N{\rENG}then the least you can do is indulge me in some conversation.
+Dialogue: 0,1:04:00.82,1:04:02.56,CHT,,0,0,0,,就在亞特蘭大附近\N{\rENG}Just outside Atlanta.
+Dialogue: 0,1:04:03.96,1:04:05.82,CHT,,0,0,0,,你們兩個很像呢\N{\rENG}You two have a lot in common.
+Dialogue: 0,1:04:06.46,1:04:07.50,CHT,,0,0,0,,這我不太信\N{\rENG}I doubt that.
+Dialogue: 0,1:04:07.85,1:04:09.61,CHT,,0,0,0,,你會驚訝的\N{\rENG}You'd be surprised.
+Dialogue: 0,1:04:11.35,1:04:13.02,CHT,,0,0,0,,我一開始也是這麼跟著他\N{\rENG}You know I started following him too
+Dialogue: 0,1:04:13.20,1:04:14.24,CHT,,0,0,0,,就像你一樣\N{\rENG}just like you're doing.
+Dialogue: 0,1:04:15.21,1:04:16.76,CHT,,0,0,0,,後來我對他有了更深入的瞭解\N{\rENG}Then I got to know him.
+Dialogue: 0,1:04:17.92,1:04:19.41,CHT,,0,0,0,,他和你一樣  有一顆寬容的心\N{\rENG}He's got a big heart, like you.
+Dialogue: 0,1:04:21.71,1:04:23.94,CHT,,0,0,0,,你又怎麼知道我的心怎麼了\N{\rENG}What do you know about my heart?
+Dialogue: 0,1:04:25.37,1:04:27.17,CHT,,0,0,0,,反正我知道你有那麼一顆心\N{\rENG}I know that you have one.
+Dialogue: 0,1:04:28.29,1:04:30.21,CHT,,0,0,0,,我還知道你的心在告訴你\N{\rENG}And I know that it's telling you that something
+Dialogue: 0,1:04:30.21,1:04:32.12,CHT,,0,0,0,,說你的肩負的工作總有些不對勁\N{\rENG}about the job you've been given isn't right.
+Dialogue: 0,1:04:32.60,1:04:34.07,CHT,,0,0,0,,工作就是工作  女士\N{\rENG}Job is the job, ma'am.
+Dialogue: 0,1:04:47.67,1:04:49.66,CHT,,0,0,0,,真好奇你給這兒的管理員塞了多少錢\N{\rENG}I wonder how much you payed the custodian.
+Dialogue: 0,1:04:53.23,1:04:54.66,CHT,,0,0,0,,左轉\N{\rENG}Left.
+Dialogue: 0,1:04:57.44,1:04:58.90,CHT,,0,0,0,,把鏈條打開\N{\rENG}Undo the chain.
+Dialogue: 0,1:05:03.47,1:05:04.34,CHT,,0,0,0,,地下室啊\N{\rENG}Basement.
+Dialogue: 0,1:05:05.28,1:05:06.85,CHT,,0,0,0,,看來你很瞭解這座城市啊\N{\rENG}You must really know the city.
+Dialogue: 0,1:05:07.03,1:05:08.57,CHT,,0,0,0,,我經常看國家地理\N{\rENG}I watch a lot of Nat Geo.
+Dialogue: 0,1:05:08.73,1:05:10.79,CHT,,0,0,0,,-這兒寫著"越界"  -請吧\N{\rENG}- It says "Off limits". - Ma'am.
+Dialogue: 0,1:05:18.37,1:05:20.35,CHT,,0,0,0,,不知道有多少人被埋葬在這裡呢\N{\rENG}I wonder how many people are buried down here.
+Dialogue: 0,1:05:20.53,1:05:21.84,CHT,,0,0,0,,站到那邊去\N{\rENG}Stand over there.
+Dialogue: 0,1:05:51.38,1:05:52.53,CHT,,0,0,0,,走\N{\rENG}Go.
+Dialogue: 0,1:05:54.58,1:05:55.83,CHT,,0,0,0,,你要是把燈全給打壞了\N{\rENG}If you knock out all the lights,
+Dialogue: 0,1:05:55.83,1:05:58.30,CHT,,0,0,0,,你待會出去的時候怎麼看得清你的陷阱呢\N{\rENG}how are you gonna see your own tripwire on the way out?
+Dialogue: 0,1:05:58.79,1:06:00.98,CHT,,0,0,0,,炸彈可不是開玩笑的  我知道是怎麼回事\N{\rENG}The granade is no joke, I mean I get the idea.
+Dialogue: 0,1:06:01.14,1:06:03.02,CHT,,0,0,0,,黑暗能削弱他的力量\N{\rENG}Darkness neutralizes his biggest strength,
+Dialogue: 0,1:06:03.02,1:06:04.54,CHT,,0,0,0,,讓他成為你的甕中之鼈  對吧\N{\rENG}enclosed court favors you, right?
+Dialogue: 0,1:06:04.72,1:06:07.00,CHT,,0,0,0,,但他要是扔炸彈  肯定會把我也誤殺了的\N{\rENG}I mean he can't throw a grenade without killing me too.
+Dialogue: 0,1:06:07.35,1:06:09.19,CHT,,0,0,0,,但我要是用氣體來對付你呢\N{\rENG}But what if I tries gas?
+Dialogue: 0,1:06:09.32,1:06:10.94,CHT,,0,0,0,,你懂的  包含點兒鎮靜劑的那種\N{\rENG}You know, or some sort of sedative agent?
+Dialogue: 0,1:06:11.85,1:06:12.58,CHT,,0,0,0,,你還真是想得遠多過我\N{\rENG}Way ahead of me.
+Dialogue: 0,1:06:12.58,1:06:14.56,CHT,,0,0,0,,防毒面具加夜視眼鏡  很聰明\N{\rENG}Gas mask and night vision, very smart.
+Dialogue: 0,1:06:14.56,1:06:16.07,CHT,,0,0,0,,-到那兒去  -鏈條哎\N{\rENG}- Over there. - Zip ties!
+Dialogue: 0,1:06:16.07,1:06:17.59,CHT,,0,0,0,,是給我準備的吧\N{\rENG}These must be for me?
+Dialogue: 0,1:06:18.31,1:06:19.68,CHT,,0,0,0,,我能再問你一個問題嗎\N{\rENG}But can I ask you something?
+Dialogue: 0,1:06:19.68,1:06:22.78,CHT,,0,0,0,,你有停下來給我回答的時間嗎\N{\rENG}Would you actually stop talking long enough for me to answer?
+Dialogue: 0,1:06:22.97,1:06:24.60,CHT,,0,0,0,,你有多瞭解他\N{\rENG}How much do you know about him?
+Dialogue: 0,1:06:24.74,1:06:26.23,CHT,,0,0,0,,或者  他們有告訴你他們想殺他的原因嗎\N{\rENG}I mean, would they tell you why they wanted him dead?
+Dialogue: 0,1:06:26.23,1:06:27.18,CHT,,0,0,0,,是這傢伙瘋了\N{\rENG}Guy cracked.
+Dialogue: 0,1:06:27.48,1:06:29.96,CHT,,0,0,0,,一晚上殺了八個特工  包括蹲他的眼線\N{\rENG}Killed 8 ops in a single night and his spotter.
+Dialogue: 0,1:06:30.03,1:06:31.87,CHT,,0,0,0,,-這只是他們告訴你的  -這就是他做的事\N{\rENG}- That's what they told you? - That's what he did.
+Dialogue: 0,1:06:31.87,1:06:32.36,CHT,,0,0,0,,不\N{\rENG}No.
+Dialogue: 0,1:06:33.11,1:06:33.91,CHT,,0,0,0,,不  不完全是\N{\rENG}No, not exactly.
+Dialogue: 0,1:06:33.91,1:06:35.23,CHT,,0,0,0,,我當時也在\N{\rENG}I was there.
+Dialogue: 0,1:06:35.37,1:06:36.80,CHT,,0,0,0,,那晚  所有的特工都被打了\N{\rENG}The night all those operatives were hit.
+Dialogue: 0,1:06:36.92,1:06:38.20,CHT,,0,0,0,,他們被下令去殺他\N{\rENG}They'd been sent to kill him,
+Dialogue: 0,1:06:38.34,1:06:40.03,CHT,,0,0,0,,還有我  都是雙子殺手指使的\N{\rENG}and me, by Gemini.
+Dialogue: 0,1:06:40.03,1:06:42.51,CHT,,0,0,0,,還有  他的眼線是在維吉尼亞州被射殺的\N{\rENG}And not that it matters, but his spotter were shot in Virginia
+Dialogue: 0,1:06:42.51,1:06:44.90,CHT,,0,0,0,,而剩下的那些人則是在薩凡納被打死的\N{\rENG}and the rest of those men went down in Savannah.
+Dialogue: 0,1:06:47.91,1:06:51.24,CHT,,0,0,0,,亨利是能狙擊  但他也狙不了那麼遠\N{\rENG}Henry can shoot long distance, but he can't shoot that long.
+Dialogue: 0,1:06:55.24,1:06:58.47,CHT,,0,0,0,,拜託你想想  你不覺得這樣很沒邏輯嗎\N{\rENG}Come on, just think. Does that make any sense to you?
+Dialogue: 0,1:06:58.54,1:07:01.21,CHT,,0,0,0,,你明白我在說什麼嗎  這不\N{\rENG}So you understand what I'm saying? It doesn't...
+Dialogue: 0,1:07:01.94,1:07:02.72,CHT,,0,0,0,,清靜多了\N{\rENG}Better.
+Dialogue: 0,1:07:03.28,1:07:04.28,CHT,,0,0,0,,操你媽\N{\rENG}Fuck you.
+Dialogue: 0,1:08:06.41,1:08:07.97,CHT,,0,0,0,,起來  走\N{\rENG}Get up. Go.
+Dialogue: 0,1:08:22.08,1:08:23.51,CHT,,0,0,0,,待在那兒別動\N{\rENG}Stay right there.
+Dialogue: 0,1:08:31.68,1:08:33.17,CHT,,0,0,0,,-謝謝  -小意思\N{\rENG}- Thank you. - Yeah.
+Dialogue: 0,1:08:33.71,1:08:35.28,CHT,,0,0,0,,你知道怎麼把那玩意兒點起來嗎\N{\rENG}Do you know how to light one of those?
+Dialogue: 0,1:08:35.28,1:08:36.28,CHT,,0,0,0,,老天呐  亨利\N{\rENG}Jesus, Henry.
+Dialogue: 0,1:08:44.62,1:08:46.48,CHT,,0,0,0,,謝謝你提醒了炸彈的事情\N{\rENG}Thanks for the tip on the granade.
+Dialogue: 0,1:08:47.73,1:08:49.56,CHT,,0,0,0,,你一直在和他說話\N{\rENG}You were talking to him all the time?
+Dialogue: 0,1:08:49.56,1:08:50.56,CHT,,0,0,0,,沒錯\N{\rENG}Yeah.
+Dialogue: 0,1:08:50.73,1:08:52.33,CHT,,0,0,0,,你要麼搜身\N{\rENG}You either search somebody.
+Dialogue: 0,1:08:52.49,1:08:53.49,CHT,,0,0,0,,要麼不搜\N{\rENG}Or you don't.
+Dialogue: 0,1:08:55.51,1:08:56.66,CHT,,0,0,0,,我先警告你一句\N{\rENG}And for the record.
+Dialogue: 0,1:08:57.44,1:08:59.50,CHT,,0,0,0,,我是不想殺你的\N{\rENG}I do not want to kill you.
+Dialogue: 0,1:08:59.84,1:09:02.47,CHT,,0,0,0,,但如果真有那個必要  我也不會心軟\N{\rENG}But I absolutely will if I have to.
+Dialogue: 0,1:09:03.74,1:09:05.88,CHT,,0,0,0,,克雷·維裡斯都告訴你關於我的什麼了\N{\rENG}What did Clay Verris tell you about me?
+Dialogue: 0,1:09:07.97,1:09:10.32,CHT,,0,0,0,,好  那我來跟你講講他吧\N{\rENG}Okay, let me tell you about him.
+Dialogue: 0,1:09:10.84,1:09:13.47,CHT,,0,0,0,,因為我很瞭解維裡斯先生\N{\rENG}Cause I know Mr. Verris very well.
+Dialogue: 0,1:09:14.12,1:09:15.66,CHT,,0,0,0,,他是怎麼開始訓練你的\N{\rENG}How did he start you?
+Dialogue: 0,1:09:15.94,1:09:17.57,CHT,,0,0,0,,打鳥  射兔子嗎\N{\rENG}Hunting birds, rabbit?
+Dialogue: 0,1:09:17.57,1:09:20.19,CHT,,0,0,0,,在你12歲左右時  他開始讓你打鹿\N{\rENG}About 12 years old, he moved you up to deer.
+Dialogue: 0,1:09:20.49,1:09:22.90,CHT,,0,0,0,,接著我猜應該是在你19或20歲那會兒\N{\rENG}I'm guessing 19 or 20 years old,
+Dialogue: 0,1:09:22.90,1:09:25.70,CHT,,0,0,0,,他第一次讓你去殺人了\N{\rENG}the first time he ordered you to shoot a person.
+Dialogue: 0,1:09:26.75,1:09:28.53,CHT,,0,0,0,,我剛剛說的那些都是對的吧\N{\rENG}Any of these ring a true?
+Dialogue: 0,1:09:29.68,1:09:30.73,CHT,,0,0,0,,是啊\N{\rENG}Yeah.
+Dialogue: 0,1:09:30.89,1:09:33.55,CHT,,0,0,0,,他還告訴你要直面你的恐懼\N{\rENG}He told you to lean into your fear.
+Dialogue: 0,1:09:33.87,1:09:35.72,CHT,,0,0,0,,因為你是個戰士\N{\rENG}Because you were a warrior.
+Dialogue: 0,1:09:35.72,1:09:38.49,CHT,,0,0,0,,天生就註定有能力打敗弱小\N{\rENG}Blessed with great gifts to defend the weak.
+Dialogue: 0,1:09:40.35,1:09:42.75,CHT,,0,0,0,,但他永遠都阻止不了你心裡的那個聲音\N{\rENG}But he couldn't stop the noise.
+Dialogue: 0,1:09:43.30,1:09:45.53,CHT,,0,0,0,,你心底裡總有一塊疙瘩\N{\rENG}That secret part of you that always felt
+Dialogue: 0,1:09:45.53,1:09:47.75,CHT,,0,0,0,,你就是和其他人有點不一樣\N{\rENG}a little different than everybody else.
+Dialogue: 0,1:09:48.49,1:09:50.52,CHT,,0,0,0,,讓你覺得自己是個怪人\N{\rENG}Part that felt like a weirdo.
+Dialogue: 0,1:09:51.34,1:09:52.76,CHT,,0,0,0,,你什麼都不知道\N{\rENG}You don't know shit.
+Dialogue: 0,1:09:52.76,1:09:55.16,CHT,,0,0,0,,小子  我對你瞭若指掌\N{\rENG}Kid, I know your inside out and backwards.
+Dialogue: 0,1:09:56.01,1:09:58.69,CHT,,0,0,0,,你對蜜蜂過敏  討厭香菜\N{\rENG}You allergic to bees, you hate cilantro.
+Dialogue: 0,1:09:58.76,1:10:00.99,CHT,,0,0,0,,打噴嚏總是一連打4個\N{\rENG}You always sneeze 4 times.
+Dialogue: 0,1:10:01.46,1:10:03.59,CHT,,0,0,0,,沒人喜歡吃香菜\N{\rENG}Everybody hates cilantro.
+Dialogue: 0,1:10:05.23,1:10:09.47,CHT,,0,0,0,,你一絲不苟  嚴謹  威嚴  無情\N{\rENG}You're meticulous, thorough, disciplined, relentless.
+Dialogue: 0,1:10:09.92,1:10:11.05,CHT,,0,0,0,,你還熱衷於解謎\N{\rENG}You love puzzles.
+Dialogue: 0,1:10:12.61,1:10:15.39,CHT,,0,0,0,,你會下棋  對吧\N{\rENG}You are a chess player, right?
+Dialogue: 0,1:10:15.84,1:10:17.26,CHT,,0,0,0,,而且  我賭你下得還不賴\N{\rENG}Good too, I bet.
+Dialogue: 0,1:10:17.95,1:10:19.69,CHT,,0,0,0,,但你一直被失眠所折磨著\N{\rENG}But you suffer from insomnia,
+Dialogue: 0,1:10:19.69,1:10:21.48,CHT,,0,0,0,,你的大腦不允許你入睡\N{\rENG}your mind never lets you sleep.
+Dialogue: 0,1:10:22.72,1:10:24.69,CHT,,0,0,0,,就算有時你能入睡  也會被噩夢糾纏\N{\rENG}And even when it does, it attacks you with nightmares.
+Dialogue: 0,1:10:24.69,1:10:27.23,CHT,,0,0,0,,我指的是那種你從淩晨三點做的那種\N{\rENG}I am talking about those 3 o'clock in the morning -
+Dialogue: 0,1:10:27.23,1:10:29.96,CHT,,0,0,0,,"誰來救救我"的絕望噩夢\N{\rENG}"somebody please save me" kind of nightmares.
+Dialogue: 0,1:10:30.78,1:10:32.25,CHT,,0,0,0,,這時候你就開始懷疑了\N{\rENG}And then there's the doubts.
+Dialogue: 0,1:10:32.25,1:10:33.25,CHT,,0,0,0,,而懷疑從來不會有好結果\N{\rENG}And those are the worst.
+Dialogue: 0,1:10:33.91,1:10:36.58,CHT,,0,0,0,,你很討厭它們  更討厭擁有它們的自己\N{\rENG}You hate them, and you hate yourself for having them.
+Dialogue: 0,1:10:36.58,1:10:38.00,CHT,,0,0,0,,這讓你覺得自己很軟弱\N{\rENG}They make you feel weak.
+Dialogue: 0,1:10:38.32,1:10:40.91,CHT,,0,0,0,,真正的士兵才不會處心積慮  不是嗎\N{\rENG}A real soldier doesn't doubt, right?
+Dialogue: 0,1:10:41.97,1:10:45.77,CHT,,0,0,0,,唯一能讓你感到真正的快樂的時候\N{\rENG}The only time you ever trully feel happy
+Dialogue: 0,1:10:46.00,1:10:49.31,CHT,,0,0,0,,是當你趴在地上準備扣下扳機的那一瞬間\N{\rENG}is when you're flat on your belly about to squeeze the trigger.
+Dialogue: 0,1:10:50.10,1:10:53.94,CHT,,0,0,0,,在那一刹那  整個世界都完整了\N{\rENG}And at that moment, the world makes perfect sense.
+Dialogue: 0,1:10:55.89,1:10:57.45,CHT,,0,0,0,,你覺得我是怎麼知道這些事情的\N{\rENG}How do you think I know all of that?
+Dialogue: 0,1:10:57.54,1:10:59.39,CHT,,0,0,0,,你怎麼知道的關我屁事\N{\rENG}I don't give a shit how you know anything.
+Dialogue: 0,1:10:59.55,1:11:01.75,CHT,,0,0,0,,看著我  蠢貨\N{\rENG}Look at me, dummy!
+Dialogue: 0,1:11:02.20,1:11:03.75,CHT,,0,0,0,,看看我們\N{\rENG}Look at us!
+Dialogue: 0,1:11:04.50,1:11:08.83,CHT,,0,0,0,,25年前  你父親提取了我的血並克隆了我\N{\rENG}25 years ago, your father took my blood and he cloned me.
+Dialogue: 0,1:11:08.97,1:11:10.24,CHT,,0,0,0,,而後  他創造了你\N{\rENG}He made you
+Dialogue: 0,1:11:10.24,1:11:11.95,CHT,,0,0,0,,從我這兒創造出來的\N{\rENG}from me.
+Dialogue: 0,1:11:12.12,1:11:14.15,CHT,,0,0,0,,我們的基因一模一樣\N{\rENG}Our DNA is identical.
+Dialogue: 0,1:11:14.66,1:11:16.25,CHT,,0,0,0,,他說的都是真相\N{\rENG}He's telling you the truth.
+Dialogue: 0,1:11:16.34,1:11:17.34,CHT,,0,0,0,,閉嘴\N{\rENG}Shut up!
+Dialogue: 0,1:11:17.54,1:11:19.96,CHT,,0,0,0,,他選了我  是因為從來沒人能到我這種境界\N{\rENG}He chose me cause there's never been anybody like me,
+Dialogue: 0,1:11:19.96,1:11:21.91,CHT,,0,0,0,,而他深知  終有一天我會變老\N{\rENG}and he knew one day I was gonna get old
+Dialogue: 0,1:11:21.91,1:11:23.17,CHT,,0,0,0,,而這就是你步入的時候了\N{\rENG}and then you'd step in.
+Dialogue: 0,1:11:23.31,1:11:25.58,CHT,,0,0,0,,他一直在對你說謊\N{\rENG}He's been lying to you the whole time.
+Dialogue: 0,1:11:25.72,1:11:27.58,CHT,,0,0,0,,他告訴你  說你是個孤兒\N{\rENG}He told you you were an orphan.
+Dialogue: 0,1:11:28.19,1:11:29.76,CHT,,0,0,0,,而在整個世界這麼多人裡\N{\rENG}And of all the people in the world to
+Dialogue: 0,1:11:29.76,1:11:31.32,CHT,,0,0,0,,他為什麼偏偏要送你來追我\N{\rENG}come after me why would he send you?
+Dialogue: 0,1:11:31.32,1:11:32.87,CHT,,0,0,0,,因為我是最厲害的\N{\rENG}Because I'm the best.
+Dialogue: 0,1:11:34.25,1:11:36.40,CHT,,0,0,0,,你很明顯不是最厲害的\N{\rENG}You are obviously not the best.
+Dialogue: 0,1:11:39.45,1:11:41.03,CHT,,0,0,0,,你就是塊硬骨頭\N{\rENG}You're a hard ass hit.
+Dialogue: 0,1:11:42.97,1:11:46.02,CHT,,0,0,0,,這本來應該是你的重生之日什麼的吧\N{\rENG}Guess this was supposed to be your birthday or something that.
+Dialogue: 0,1:11:46.22,1:11:49.02,CHT,,0,0,0,,我必須得死  還必須得死在你的手裡\N{\rENG}I had to die, and you had to do it.
+Dialogue: 0,1:11:49.24,1:11:50.96,CHT,,0,0,0,,只要我還活著\N{\rENG}As long as I was alive somehow,
+Dialogue: 0,1:11:51.14,1:11:53.79,CHT,,0,0,0,,克雷的那個小實驗就永遠不是完美的\N{\rENG}Clay's little experiment was incomplete.
+Dialogue: 0,1:11:53.96,1:11:56.45,CHT,,0,0,0,,你就是在為這樣的一個瘋子在扣扳機\N{\rENG}That's the maniac you're pulling the trigger for.
+Dialogue: 0,1:11:56.55,1:11:58.59,CHT,,0,0,0,,閉上你的狗嘴\N{\rENG}Shut your mouth about him!
+Dialogue: 0,1:11:58.75,1:11:59.71,CHT,,0,0,0,,你只是想打擊我而已\N{\rENG}You just trying to rattle me.
+Dialogue: 0,1:11:59.87,1:12:01.40,CHT,,0,0,0,,我是想救你\N{\rENG}I'm trying to save you!
+Dialogue: 0,1:12:03.49,1:12:05.96,CHT,,0,0,0,,你多大了  23歲吧\N{\rENG}What are you, 23?
+Dialogue: 0,1:12:06.54,1:12:08.28,CHT,,0,0,0,,還是個處吧\N{\rENG}Still a virgin, right?
+Dialogue: 0,1:12:08.96,1:12:09.96,CHT,,0,0,0,,是啊\N{\rENG}Yeah.
+Dialogue: 0,1:12:10.54,1:12:12.55,CHT,,0,0,0,,苦苦地想要找個伴侶與之深入交流\N{\rENG}Dying to be in a relationship and connect,
+Dialogue: 0,1:12:12.55,1:12:15.08,CHT,,0,0,0,,卻又唯恐有人和你走太近\N{\rENG}but terrified to let anybody near you.
+Dialogue: 0,1:12:16.85,1:12:21.20,CHT,,0,0,0,,要是有人發現了真實的你怎麼辦\N{\rENG}Because what if somebody actually saw who you are?
+Dialogue: 0,1:12:21.71,1:12:23.48,CHT,,0,0,0,,那他們還怎麼可能會愛你\N{\rENG}How could they love you?
+Dialogue: 0,1:12:24.37,1:12:26.39,CHT,,0,0,0,,所以  大家在你眼裡都變成了一個個活靶子\N{\rENG}So, everybody is just targets.
+Dialogue: 0,1:12:27.02,1:12:28.85,CHT,,0,0,0,,而你則是一把冷酷無情的武器\N{\rENG}And you're just a weapon.
+Dialogue: 0,1:13:19.42,1:13:20.69,CHT,,0,0,0,,別對他開槍\N{\rENG}Don't shoot him!
+Dialogue: 0,1:13:38.30,1:13:39.43,CHT,,0,0,0,,別打他\N{\rENG}Don't shoot him
+Dialogue: 0,1:14:32.94,1:14:34.11,CHT,,0,0,0,,不  不要\N{\rENG}No! Don't!
+Dialogue: 0,1:14:34.35,1:14:35.30,CHT,,0,0,0,,放下\N{\rENG}Drop it!
+Dialogue: 0,1:14:35.94,1:14:37.46,CHT,,0,0,0,,放下  不然我就斃了你\N{\rENG}Drop it! I will shoot you!
+Dialogue: 0,1:14:38.74,1:14:39.92,CHT,,0,0,0,,你不會的\N{\rENG}No, you won't.
+Dialogue: 0,1:15:19.26,1:15:21.16,CHT,,0,0,0,,把他放開\N{\rENG}Take your hands off of him!
+Dialogue: 0,1:15:22.02,1:15:23.02,CHT,,0,0,0,,放開他\N{\rENG}Let him go!
+Dialogue: 0,1:15:25.79,1:15:26.79,CHT,,0,0,0,,馬上\N{\rENG}Right now!
+Dialogue: 0,1:15:35.15,1:15:36.75,CHT,,0,0,0,,我不是你\N{\rENG}I'm not you!
+Dialogue: 0,1:15:37.77,1:15:39.10,CHT,,0,0,0,,聽到了沒  老頭\N{\rENG}You hear me, old man?
+Dialogue: 0,1:15:40.60,1:15:42.30,CHT,,0,0,0,,我不是你\N{\rENG}I'm not you!
+Dialogue: 0,1:15:44.85,1:15:47.27,CHT,,0,0,0,,-他在哪裡  -他已經走了\N{\rENG}- Where is he? - He's gone.
+Dialogue: 0,1:15:47.60,1:15:49.76,CHT,,0,0,0,,-擊中他了嗎  -應該是的\N{\rENG}- Did you hit him? - I think so, yeah.
+Dialogue: 0,1:15:50.26,1:15:52.50,CHT,,0,0,0,,-傷到哪裡  -應該是肩膀\N{\rENG}- Where? - Shoulder, I think.
+Dialogue: 0,1:15:55.12,1:15:56.90,CHT,,0,0,0,,那他會痊癒的\N{\rENG}Then he'll recover.
+Dialogue: 0,1:15:58.04,1:15:59.57,CHT,,0,0,0,,那是好事嗎\N{\rENG}Is that a good thing?
+Dialogue: 0,1:16:18.49,1:16:18.80,CHT,,0,0,0,,要知道\N{\rENG}You know,
+Dialogue: 0,1:16:18.80,1:16:20.78,CHT,,0,0,0,,不是每天都有這樣的機會\N{\rENG}It's not every day you see a guy
+Dialogue: 0,1:16:20.78,1:16:23.01,CHT,,0,0,0,,能看到一個人在兩個大洲被他自己\N{\rENG}get his ass kicked on 2 continents.
+Dialogue: 0,1:16:23.03,1:16:24.26,CHT,,0,0,0,,打得落花流水\N{\rENG}By himself.
+Dialogue: 0,1:16:31.84,1:16:32.88,CHT,,0,0,0,,去哪裡\N{\rENG}Where to?
+Dialogue: 0,1:16:33.98,1:16:34.98,CHT,,0,0,0,,佐治亞州\N{\rENG}Georgia.
+Dialogue: 0,1:16:35.69,1:16:37.75,CHT,,0,0,0,,維裡斯在的地方\N{\rENG}Is where Verris is.
+Dialogue: 0,1:16:51.89,1:16:52.87,CHT,,0,0,0,,天哪\N{\rENG}Man.
+Dialogue: 0,1:16:54.73,1:16:56.38,CHT,,0,0,0,,那個可憐孩子\N{\rENG}That poor kid.
+Dialogue: 0,1:16:57.24,1:16:59.01,CHT,,0,0,0,,他一定被嚇壞了\N{\rENG}He must be terrified.
+Dialogue: 0,1:17:00.05,1:17:03.43,CHT,,0,0,0,,他回家時一定感覺心如刀割\N{\rENG}Then he's going home, walking into a buzz saw.
+Dialogue: 0,1:17:08.67,1:17:11.90,CHT,,0,0,0,,我稍微睡會兒  你也睡吧\N{\rENG}I gonna get some sleep, you too.
+Dialogue: 0,1:17:13.45,1:17:16.15,CHT,,0,0,0,,睡不著  夢裡都是鬼魂\N{\rENG}Not me, that's where the ghosts are.
+Dialogue: 0,1:17:17.05,1:17:18.43,CHT,,0,0,0,,睡吧\N{\rENG}Sleep.
+Dialogue: 0,1:17:43.85,1:17:45.25,CHT,,0,0,0,,回答我\N{\rENG}Tell me something.
+Dialogue: 0,1:17:46.37,1:17:49.43,CHT,,0,0,0,,為什麼要你殺他這麼難\N{\rENG}Why is it so hard for you to kill this man?
+Dialogue: 0,1:17:51.90,1:17:56.00,CHT,,0,0,0,,你知道我有多討厭大吊床公園嗎  爸爸？\N{\rENG}You know how much I hate Big Hammock Park, pop?
+Dialogue: 0,1:17:57.35,1:17:58.53,CHT,,0,0,0,,什麼\N{\rENG}What?
+Dialogue: 0,1:17:59.55,1:18:02.83,CHT,,0,0,0,,從我12歲開始\N{\rENG}Ever since I was about 12 years old.
+Dialogue: 0,1:18:03.35,1:18:07.65,CHT,,0,0,0,,每到生日  我們就去那裡打火雞慶祝\N{\rENG}We were to shoot turkeys there for my birthday.
+Dialogue: 0,1:18:09.30,1:18:11.25,CHT,,0,0,0,,我一直都不喜歡\N{\rENG}And I always hated it.
+Dialogue: 0,1:18:12.60,1:18:13.78,CHT,,0,0,0,,但我難道不是孤兒嗎\N{\rENG}But I was an orphan, right?
+Dialogue: 0,1:18:13.78,1:18:14.99,CHT,,0,0,0,,那你是怎麼知道\N{\rENG}So, how would we
+Dialogue: 0,1:18:15.53,1:18:17.60,CHT,,0,0,0,,我出生在哪天\N{\rENG}even know when my Birthday was?
+Dialogue: 0,1:18:19.34,1:18:23.16,CHT,,0,0,0,,但你從未察覺到  所以我們每年都如此\N{\rENG}But you never seen me notice so we just keep going.
+Dialogue: 0,1:18:23.16,1:18:24.26,CHT,,0,0,0,,好的  那你明年生日\N{\rENG}Okay, so...
+Dialogue: 0,1:18:24.26,1:18:26.29,CHT,,0,0,0,,我們去吃查克芝士 {\fs16}[親子餐廳]\N{\rENG}Next year we'll try Chuck E. Cheese.
+Dialogue: 0,1:18:28.08,1:18:29.08,CHT,,0,0,0,,好啊\N{\rENG}Yeah.
+Dialogue: 0,1:18:29.71,1:18:31.71,CHT,,0,0,0,,那你  我\N{\rENG}You, me
+Dialogue: 0,1:18:31.71,1:18:33.45,CHT,,0,0,0,,還有實驗室裡那幫\N{\rENG}and the lab guys,
+Dialogue: 0,1:18:33.60,1:18:34.60,CHT,,0,0,0,,製造我的人一起\N{\rENG}who made me.
+Dialogue: 0,1:18:41.60,1:18:42.63,CHT,,0,0,0,,好\N{\rENG}Yeah.
+Dialogue: 0,1:18:46.41,1:18:48.06,CHT,,0,0,0,,我\N{\rENG}I...
+Dialogue: 0,1:18:50.13,1:18:52.16,CHT,,0,0,0,,一直覺得\N{\rENG}Always believed
+Dialogue: 0,1:18:53.53,1:18:56.51,CHT,,0,0,0,,你不知道的話能快樂點\N{\rENG}you'd be happier not knowing.
+Dialogue: 0,1:18:58.93,1:19:00.39,CHT,,0,0,0,,快樂\N{\rENG}Happy?
+Dialogue: 0,1:19:01.93,1:19:03.96,CHT,,0,0,0,,你知道我什麼時候覺得快樂嗎  爸爸\N{\rENG}You know when I'm happy, pop?
+Dialogue: 0,1:19:05.21,1:19:07.31,CHT,,0,0,0,,當我伏在地上\N{\rENG}When I'm flat on my belly,
+Dialogue: 0,1:19:07.73,1:19:09.96,CHT,,0,0,0,,準備扣動扳機的那一刻\N{\rENG}about to squeeze the trigger.
+Dialogue: 0,1:19:11.86,1:19:13.86,CHT,,0,0,0,,這是我唯一覺得快樂的時候\N{\rENG}It's the only time I'm happy.
+Dialogue: 0,1:19:15.41,1:19:18.20,CHT,,0,0,0,,這整件事甚至都不是意外\N{\rENG}And this wasn't even a mistake.
+Dialogue: 0,1:19:19.64,1:19:22.08,CHT,,0,0,0,,不是你搞大了誰的肚子\N{\rENG}It's not like you got someone pregnant
+Dialogue: 0,1:19:22.08,1:19:25.30,CHT,,0,0,0,,不得不擔負起責任撫養我\N{\rENG}and then had to man up and raise me.
+Dialogue: 0,1:19:25.46,1:19:26.84,CHT,,0,0,0,,不  是你\N{\rENG}No, you...
+Dialogue: 0,1:19:27.27,1:19:28.34,CHT,,0,0,0,,做了個決定\N{\rENG}made a decision.
+Dialogue: 0,1:19:29.43,1:19:32.29,CHT,,0,0,0,,要讓一群科學家用一個人當範本\N{\rENG}To have a scientist make a person
+Dialogue: 0,1:19:32.29,1:19:33.67,CHT,,0,0,0,,製造令一個人\N{\rENG}out of another person.
+Dialogue: 0,1:19:33.67,1:19:35.02,CHT,,0,0,0,,不  事情不是這樣的\N{\rENG}No, that's not what it was.
+Dialogue: 0,1:19:35.02,1:19:36.74,CHT,,0,0,0,,事情就是這樣的\N{\rENG}That's exactly what it was.
+Dialogue: 0,1:19:38.13,1:19:39.79,CHT,,0,0,0,,然後你派我\N{\rENG}Then you sent me
+Dialogue: 0,1:19:41.35,1:19:42.30,CHT,,0,0,0,,去殺他\N{\rENG}to kill him.
+Dialogue: 0,1:19:42.30,1:19:45.80,CHT,,0,0,0,,世界上那麼多槍手  為什麼偏偏派我\N{\rENG}Of all the shooters in the world, why would you send me?
+Dialogue: 0,1:19:45.80,1:19:49.65,CHT,,0,0,0,,這是你的夢魘  你需要自己經歷這一切\N{\rENG}It's your darkness, you had to walk through this on your own.
+Dialogue: 0,1:19:51.35,1:19:53.33,CHT,,0,0,0,,或許你才是我的夢魘\N{\rENG}Maybe you're my darkness.
+Dialogue: 0,1:19:55.25,1:19:58.23,CHT,,0,0,0,,你騙我說\N{\rENG}That lie you told me.
+Dialogue: 0,1:19:59.41,1:20:01.73,CHT,,0,0,0,,我的父母\N{\rENG}That my parents
+Dialogue: 0,1:20:02.68,1:20:06.07,CHT,,0,0,0,,把我丟棄在消防站\N{\rENG}dumped me at a fire station.
+Dialogue: 0,1:20:07.77,1:20:09.48,CHT,,0,0,0,,我信了你的話\N{\rENG}And I believed that.
+Dialogue: 0,1:20:10.94,1:20:12.99,CHT,,0,0,0,,你知道這話讓我多難過嗎\N{\rENG}Do you know how that made me feel?
+Dialogue: 0,1:20:13.06,1:20:15.29,CHT,,0,0,0,,這是個必要的謊言\N{\rENG}It was a necessary lie.
+Dialogue: 0,1:20:15.29,1:20:17.74,CHT,,0,0,0,,這一切都不是必要的\N{\rENG}None of this shit is necessary!
+Dialogue: 0,1:20:18.75,1:20:20.89,CHT,,0,0,0,,是你選擇了要對我做這一切\N{\rENG}You made a choice to do this to me.
+Dialogue: 0,1:20:20.89,1:20:25.14,CHT,,0,0,0,,-你難道看不出我現在有多"好"嗎  -放屁\N{\rENG}- Can't you see how not okay I am? - Bullshit!
+Dialogue: 0,1:20:25.66,1:20:27.99,CHT,,0,0,0,,別忘了你是在和誰說話  小克\N{\rENG}You forget who you are talking to, Junior.
+Dialogue: 0,1:20:28.06,1:20:29.35,CHT,,0,0,0,,我經歷過戰爭\N{\rENG}I've seen battle.
+Dialogue: 0,1:20:29.90,1:20:31.56,CHT,,0,0,0,,看過戰士們崩潰于\N{\rENG}I've seen soldiers go over the edge because
+Dialogue: 0,1:20:31.70,1:20:33.58,CHT,,0,0,0,,無法勝任的重擔\N{\rENG}more was being asked of them than they can give.
+Dialogue: 0,1:20:33.58,1:20:35.02,CHT,,0,0,0,,但你不一樣\N{\rENG}That's not you.
+Dialogue: 0,1:20:35.32,1:20:37.74,CHT,,0,0,0,,你的世界穩固可靠\N{\rENG}Your world is stable and dependable.
+Dialogue: 0,1:20:37.74,1:20:38.97,CHT,,0,0,0,,是我確保的這一切\N{\rENG}I made sure of that.
+Dialogue: 0,1:20:39.27,1:20:41.87,CHT,,0,0,0,,你擁有亨利從來沒有過的\N{\rENG}You have something that Henry himself never had.
+Dialogue: 0,1:20:41.87,1:20:45.99,CHT,,0,0,0,,你有一個慈愛  無私  盡職的父親\N{\rENG}You have a loving, dedicated, present father.
+Dialogue: 0,1:20:46.06,1:20:47.93,CHT,,0,0,0,,他他媽每天都告訴你\N{\rENG}Who tells you every goddamnit day that
+Dialogue: 0,1:20:47.93,1:20:49.71,CHT,,0,0,0,,你很珍貴你很重要\N{\rENG}you are precious and that you matter.
+Dialogue: 0,1:20:49.71,1:20:51.67,CHT,,0,0,0,,上帝啊  我做這一切的目的\N{\rENG}Jesus, the whole point of this thing.
+Dialogue: 0,1:20:51.67,1:20:54.31,CHT,,0,0,0,,就是讓你不用經歷亨利的痛苦\N{\rENG}Was to give you all of Henry's gifts
+Dialogue: 0,1:20:54.31,1:20:55.61,CHT,,0,0,0,,就能擁有他的天賦  我做到了\N{\rENG}without his pain, and I did.
+Dialogue: 0,1:20:56.87,1:21:00.18,CHT,,0,0,0,,不要懷疑  小克\N{\rENG}Don't doubt, Junior.
+Dialogue: 0,1:21:02.48,1:21:04.43,CHT,,0,0,0,,你能做得更好\N{\rENG}You're better than that.
+Dialogue: 0,1:21:14.81,1:21:16.18,CHT,,0,0,0,,過來\N{\rENG}Come here.
+Dialogue: 0,1:21:21.22,1:21:23.43,CHT,,0,0,0,,我愛你  兒子\N{\rENG}I love you, son.
+Dialogue: 0,1:21:26.28,1:21:29.33,CHT,,0,0,0,,不要讓自己失望\N{\rENG}Just don't let yourself down.
+Dialogue: 0,1:21:57.88,1:22:01.08,CHT,,0,0,0,,這次邂逅一如既往  短暫卻甜蜜\N{\rENG}Like so many of my encounters, it was short, but sweet.
+Dialogue: 0,1:22:01.82,1:22:03.54,CHT,,0,0,0,,謝了  寶貝\N{\rENG}Thanks, baby.
+Dialogue: 0,1:22:16.54,1:22:18.79,CHT,,0,0,0,,這附近應該有輛卡車\N{\rENG}It should be truck here somewhere.
+Dialogue: 0,1:22:27.62,1:22:29.06,CHT,,0,0,0,,不許動\N{\rENG}Don't move.
+Dialogue: 0,1:22:34.32,1:22:35.39,CHT,,0,0,0,,裡面是什麼\N{\rENG}What was in that?
+Dialogue: 0,1:22:36.06,1:22:37.06,CHT,,0,0,0,,蜂毒\N{\rENG}Bee venom.
+Dialogue: 0,1:22:42.24,1:22:43.73,CHT,,0,0,0,,你不能那麼做\N{\rENG}You can't do that.
+Dialogue: 0,1:22:44.33,1:22:45.92,CHT,,0,0,0,,你不能那麼做  他對蜂毒過敏\N{\rENG}You can't do that, he's allergic.
+Dialogue: 0,1:22:45.92,1:22:48.07,CHT,,0,0,0,,亨利  你能呼吸嗎\N{\rENG}Henry, can you breathe?
+Dialogue: 0,1:22:48.50,1:22:49.69,CHT,,0,0,0,,亨利  努力呼吸\N{\rENG}Henry, try to breathe.
+Dialogue: 0,1:22:50.58,1:22:51.90,CHT,,0,0,0,,-你還好嗎  -求你了\N{\rENG}- You okay? - Please.
+Dialogue: 0,1:22:52.06,1:22:54.31,CHT,,0,0,0,,亨利  亨利  你能呼吸嗎\N{\rENG}Henry, Henry, can you breathe?
+Dialogue: 0,1:22:54.48,1:22:55.33,CHT,,0,0,0,,求求你了\N{\rENG}Please!
+Dialogue: 0,1:22:55.73,1:22:57.64,CHT,,0,0,0,,努力呼吸  亨利  亨利\N{\rENG}Try to breathe, Henry. Henry!
+Dialogue: 0,1:22:58.97,1:23:00.24,CHT,,0,0,0,,呼吸\N{\rENG}Breathe!
+Dialogue: 0,1:23:00.61,1:23:02.41,CHT,,0,0,0,,-你為什麼要這麼做  -拜託\N{\rENG}- Why are you doing this? - Come on!
+Dialogue: 0,1:23:05.08,1:23:07.72,CHT,,0,0,0,,亨利  亨利  呼吸\N{\rENG}Henry, Henry, breathe!
+Dialogue: 0,1:23:07.92,1:23:08.87,CHT,,0,0,0,,拜託\N{\rENG}Come on!
+Dialogue: 0,1:23:10.99,1:23:11.99,CHT,,0,0,0,,亨利  呼吸\N{\rENG}Breathe, Henry.
+Dialogue: 0,1:23:23.23,1:23:25.12,CHT,,0,0,0,,腎上腺素抗組胺藥 {\fs14}[抗過敏]\N{\rENG}Epinephrine antihistamine.
+Dialogue: 0,1:23:28.33,1:23:29.59,CHT,,0,0,0,,你會沒事的\N{\rENG}You'll be fine.
+Dialogue: 0,1:23:33.65,1:23:34.63,CHT,,0,0,0,,我很抱歉\N{\rENG}I'm sorry.
+Dialogue: 0,1:23:35.79,1:23:37.18,CHT,,0,0,0,,我只是想確認\N{\rENG}I had to be sure.
+Dialogue: 0,1:23:37.66,1:23:39.51,CHT,,0,0,0,,不  沒事\N{\rENG}No, it's all good.
+Dialogue: 0,1:23:39.84,1:23:42.15,CHT,,0,0,0,,這件事大家都很難接受\N{\rENG}This whole shit's been a little difficult.
+Dialogue: 0,1:23:42.34,1:23:44.19,CHT,,0,0,0,,我不忍心打斷你們  但是\N{\rENG}I hate to break up the party, but
+Dialogue: 0,1:23:44.41,1:23:46.96,CHT,,0,0,0,,你他媽怎麼總知道我們在哪\N{\rENG}how the hell do you always know where we are?
+Dialogue: 0,1:23:49.06,1:23:50.73,CHT,,0,0,0,,他們在追蹤你\N{\rENG}They're tracking you.
+Dialogue: 0,1:23:53.73,1:23:55.40,CHT,,0,0,0,,你相信我嗎\N{\rENG}Do you trust me?
+Dialogue: 0,1:24:18.61,1:24:22.41,CHT,,0,0,0,,三年前的手術中給你裝的晶片\N{\rENG}They chipped you. During your surgery 3 years ago.
+Dialogue: 0,1:24:27.24,1:24:28.29,CHT,,0,0,0,,維裡斯\N{\rENG}Verris.
+Dialogue: 0,1:24:30.28,1:24:31.83,CHT,,0,0,0,,你也認識他\N{\rENG}You know him too?
+Dialogue: 0,1:24:32.05,1:24:34.76,CHT,,0,0,0,,一起去過巴拿馬  科威特  索馬里\N{\rENG}Panama, Kuwait, Somalia.
+Dialogue: 0,1:24:35.18,1:24:36.96,CHT,,0,0,0,,你能帶我們去找他嗎\N{\rENG}Can you take us to him?
+Dialogue: 0,1:24:38.81,1:24:40.71,CHT,,0,0,0,,我們得阻止他\N{\rENG}We need to shut him down.
+Dialogue: 0,1:24:41.38,1:24:42.38,CHT,,0,0,0,,我們兩個一起\N{\rENG}Both of us.
+Dialogue: 0,1:24:54.28,1:24:56.10,CHT,,0,0,0,,你在費城長大對吧\N{\rENG}You grew up in Philadelphia, right?
+Dialogue: 0,1:24:56.47,1:24:57.14,CHT,,0,0,0,,是的\N{\rENG}Yeah.
+Dialogue: 0,1:24:57.32,1:24:59.10,CHT,,0,0,0,,叫波頓的一個地方\N{\rENG}The place called the Bottom.
+Dialogue: 0,1:24:59.97,1:25:01.44,CHT,,0,0,0,,波頓\N{\rENG}The Bottom.
+Dialogue: 0,1:25:03.00,1:25:04.85,CHT,,0,0,0,,跟我說說母親的事情\N{\rENG}Tell me about my mother.
+Dialogue: 0,1:25:07.74,1:25:09.44,CHT,,0,0,0,,海倫·傑克遜·布洛根\N{\rENG}Helen Jackson Brogan.
+Dialogue: 0,1:25:09.62,1:25:11.69,CHT,,0,0,0,,兩份工作幹了四十年\N{\rENG}Worked two jobs for 40 years.
+Dialogue: 0,1:25:12.53,1:25:14.83,CHT,,0,0,0,,那女人以前經常抽我屁股\N{\rENG}That woman used to whip my ass.
+Dialogue: 0,1:25:15.57,1:25:16.99,CHT,,0,0,0,,是不是你活該\N{\rENG}Did you deserve it?
+Dialogue: 0,1:25:17.31,1:25:18.31,CHT,,0,0,0,,大多數時候\N{\rENG}Usually.
+Dialogue: 0,1:25:18.66,1:25:20.88,CHT,,0,0,0,,我那時憤怒  愚蠢  從未真正\N{\rENG}Does being angry and stupid
+Dialogue: 0,1:25:21.03,1:25:23.49,CHT,,0,0,0,,嘗試過任何事情  是不是活該\N{\rENG}and never really trying at anything mean you deserve it?
+Dialogue: 0,1:25:25.52,1:25:28.77,CHT,,0,0,0,,父親不常在家  在我5歲時離開了\N{\rENG}Our father wasn't around much, he left when I was 5.
+Dialogue: 0,1:25:28.96,1:25:32.46,CHT,,0,0,0,,我想母親每次都會在我臉上看見父親\N{\rENG}And I think every time she looked at me, she just saw him.
+Dialogue: 0,1:25:33.89,1:25:35.64,CHT,,0,0,0,,我必須離開那裡\N{\rENG}I had to get the hell outta there.
+Dialogue: 0,1:25:36.09,1:25:37.62,CHT,,0,0,0,,參了軍\N{\rENG}Joined the Core.
+Dialogue: 0,1:25:38.32,1:25:40.66,CHT,,0,0,0,,我第一次交到了真正的朋友\N{\rENG}First time I've ever made any real friends.
+Dialogue: 0,1:25:41.00,1:25:41.92,CHT,,0,0,0,,烏拉\N{\rENG}'Oorah!'
+Dialogue: 0,1:25:44.01,1:25:45.57,CHT,,0,0,0,,在那認識了克雷·維裡斯\N{\rENG}Met Clay Verris there.
+Dialogue: 0,1:25:46.42,1:25:50.00,CHT,,0,0,0,,發現了我非常非常擅長的東西\N{\rENG}Found something I was really, really good at.
+Dialogue: 0,1:25:50.95,1:25:53.29,CHT,,0,0,0,,我離開的時候  胸前掛著獎章\N{\rENG}By the time I left, I had medals on the chest.
+Dialogue: 0,1:25:54.08,1:25:56.06,CHT,,0,0,0,,母親已經去世了  然後\N{\rENG}She was gone, and...
+Dialogue: 0,1:25:56.42,1:25:57.89,CHT,,0,0,0,,我就成了這幅樣子\N{\rENG}I have become this.
+Dialogue: 0,1:26:00.29,1:26:03.49,CHT,,0,0,0,,你得在深陷泥潭前就離開那裡\N{\rENG}You gotta walk away while you still can.
+Dialogue: 0,1:26:04.83,1:26:07.93,CHT,,0,0,0,,-我只會這些  -不  是他只教了你這些\N{\rENG}- This is all I know. - No, this is all he taught you.
+Dialogue: 0,1:26:08.15,1:26:11.93,CHT,,0,0,0,,停手吧  你還來得及過另外一種生活\N{\rENG}Stop now, you can still become something else.
+Dialogue: 0,1:26:13.97,1:26:14.98,CHT,,0,0,0,,當然了\N{\rENG}Sure.
+Dialogue: 0,1:26:15.34,1:26:18.01,CHT,,0,0,0,,醫生還是律師\N{\rENG}A Doctor? Lawyer?
+Dialogue: 0,1:26:18.68,1:26:21.08,CHT,,0,0,0,,丈夫  父親\N{\rENG}Husband, father.
+Dialogue: 0,1:26:21.14,1:26:24.57,CHT,,0,0,0,,所有因為這份工作無法去做的事\N{\rENG}And all the things this job gives you the excuse not to be.
+Dialogue: 0,1:26:26.45,1:26:27.84,CHT,,0,0,0,,我都未曾經歷過\N{\rENG}I threw all of that away.
+Dialogue: 0,1:26:30.03,1:26:33.21,CHT,,0,0,0,,第二次機會再浪費掉實在可惜\N{\rENG}It's shame to waste these gifts the second time around.
+Dialogue: 0,1:26:37.77,1:26:39.75,CHT,,0,0,0,,抱歉  還沒問過你名字\N{\rENG}I'm sorry, what is your name?
+Dialogue: 0,1:26:41.59,1:26:43.23,CHT,,0,0,0,,他們一直叫我小克\N{\rENG}It's always been Junior.
+Dialogue: 0,1:26:43.92,1:26:45.24,CHT,,0,0,0,,小克雷\N{\rENG}Clay Junior.
+Dialogue: 0,1:26:46.89,1:26:48.74,CHT,,0,0,0,,我也不知道我該叫什麼了\N{\rENG}I don't really know anymore.
+Dialogue: 0,1:26:49.86,1:26:52.31,CHT,,0,0,0,,這又是一個金盆洗手的好理由\N{\rENG}That's another really good reason to quit.
+Dialogue: 0,1:26:58.33,1:27:00.02,CHT,,0,0,0,,你確定要去嗎\N{\rENG}Do you sure about this?
+Dialogue: 0,1:27:01.01,1:27:02.61,CHT,,0,0,0,,我要和他談談\N{\rENG}I need to talk to him.
+Dialogue: 0,1:27:04.21,1:27:07.38,CHT,,0,0,0,,我們見到他時怎麼做\N{\rENG}So, what happens when we get to him?
+Dialogue: 0,1:27:07.58,1:27:09.42,CHT,,0,0,0,,他不會投降的\N{\rENG}He's not gonna surrender.
+Dialogue: 0,1:27:17.75,1:27:18.54,CHT,,0,0,0,,他的電話\N{\rENG}That's him.
+Dialogue: 0,1:27:19.00,1:27:20.04,CHT,,0,0,0,,我能跟他說話嗎\N{\rENG}Can I talk to him?
+Dialogue: 0,1:27:20.18,1:27:23.19,CHT,,0,0,0,,我想第一個告訴他我們成為好朋友了\N{\rENG}I want to be the one to tell him we all BFFs now.
+Dialogue: 0,1:27:24.35,1:27:25.73,CHT,,0,0,0,,接吧\N{\rENG}Take it.
+Dialogue: 0,1:27:27.16,1:27:28.34,CHT,,0,0,0,,我是小克\N{\rENG}This is Junior.
+Dialogue: 0,1:27:28.34,1:27:29.67,CHT,,0,0,0,,你和布洛根在一起嗎\N{\rENG}Are you with Brogan?
+Dialogue: 0,1:27:30.22,1:27:31.38,CHT,,0,0,0,,我為什麼會和他在一起\N{\rENG}Why would I be with him?
+Dialogue: 0,1:27:31.38,1:27:32.58,CHT,,0,0,0,,你派我去殺他的  不記得了嗎\N{\rENG}You sent me to kill him, didn't you?
+Dialogue: 0,1:27:32.58,1:27:34.39,CHT,,0,0,0,,不重要了  快跑\N{\rENG}It doesn't matter, just run.
+Dialogue: 0,1:27:36.37,1:27:37.26,CHT,,0,0,0,,什麼\N{\rENG}What?
+Dialogue: 0,1:27:37.26,1:27:39.30,CHT,,0,0,0,,跑  離他遠點  快\N{\rENG}Run, get away from him. Now.
+Dialogue: 0,1:27:39.77,1:27:42.00,CHT,,0,0,0,,小克  我只希望你安全無恙\N{\rENG}Junior, I just want you safe.
+Dialogue: 0,1:27:42.07,1:27:42.70,CHT,,0,0,0,,為什麼\N{\rENG}Why?
+Dialogue: 0,1:27:43.30,1:27:45.32,CHT,,0,0,0,,因為我是你最愛的實驗品嗎\N{\rENG}Because I'm your favorite experiment?
+Dialogue: 0,1:27:45.32,1:27:48.71,CHT,,0,0,0,,不  因為我是你父親你必須聽我的\N{\rENG}No, because I'm your father and you need to listen to me.
+Dialogue: 0,1:27:48.71,1:27:49.72,CHT,,0,0,0,,跑\N{\rENG}Run!
+Dialogue: 0,1:27:52.48,1:27:53.89,CHT,,0,0,0,,下車  快跑\N{\rENG}Get out off the car! Go!
+Dialogue: 0,1:27:59.79,1:28:01.13,CHT,,0,0,0,,巴倫\N{\rENG}Baron!
+Dialogue: 0,1:28:01.69,1:28:02.54,CHT,,0,0,0,,不\N{\rENG}No!
+Dialogue: 0,1:28:15.37,1:28:16.68,CHT,,0,0,0,,快走\N{\rENG}Come on!
+Dialogue: 0,1:28:25.12,1:28:26.68,CHT,,0,0,0,,我很遺憾  亨利\N{\rENG}I'm sorry, Henry.
+Dialogue: 0,1:28:34.22,1:28:36.04,CHT,,0,0,0,,-蜜雪兒警長  -請講\N{\rENG}- Chief Mitchell? - Go ahead.
+Dialogue: 0,1:28:36.12,1:28:38.84,CHT,,0,0,0,,我是克雷·維裡斯  我希望你的小隊撤退\N{\rENG}Clay Verris, I need your units to stand down.
+Dialogue: 0,1:28:39.54,1:28:40.00,CHT,,0,0,0,,長官\N{\rENG}Sir?
+Dialogue: 0,1:28:40.16,1:28:42.44,CHT,,0,0,0,,我們正在與一個有生化武器的\N{\rENG}We're engaging with a terrorist cell that
+Dialogue: 0,1:28:42.44,1:28:44.68,CHT,,0,0,0,,恐怖組織交火\N{\rENG}has a weaponized biological capability.
+Dialogue: 0,1:28:44.68,1:28:47.25,CHT,,0,0,0,,所有小隊  馬上後撤  快\N{\rENG}All units, go back, immediately!
+Dialogue: 0,1:28:48.75,1:28:51.99,CHT,,0,0,0,,聯邦當局已接到通知  正在來的路上\N{\rENG}Federal authorities have been notified and they en route.
+Dialogue: 0,1:28:52.09,1:28:54.24,CHT,,0,0,0,,收到  有消息隨時通知  克雷\N{\rENG}Affirmative, keep me posting, Clay.
+Dialogue: 0,1:28:54.40,1:28:55.40,CHT,,0,0,0,,是  長官\N{\rENG}Yes, sir.
+Dialogue: 0,1:28:57.83,1:28:59.99,CHT,,0,0,0,,你現在得讓你的人撤退  快\N{\rENG}You gotta stand your men down, now!
+Dialogue: 0,1:29:00.18,1:29:01.66,CHT,,0,0,0,,你做了正確的選擇  小克\N{\rENG}You did the right thing, Junior
+Dialogue: 0,1:29:01.66,1:29:02.66,CHT,,0,0,0,,離開他\N{\rENG}of walking away from him.
+Dialogue: 0,1:29:03.05,1:29:04.43,CHT,,0,0,0,,我這是懦夫之舉\N{\rENG}I did what a coward would do.
+Dialogue: 0,1:29:04.99,1:29:05.99,CHT,,0,0,0,,令我自己噁心\N{\rENG}Makes me sick!
+Dialogue: 0,1:29:06.83,1:29:08.76,CHT,,0,0,0,,是我對你要求的太多了\N{\rENG}I was asking too much of you.
+Dialogue: 0,1:29:09.28,1:29:10.28,CHT,,0,0,0,,我現在明白了\N{\rENG}I can see that now.
+Dialogue: 0,1:29:11.04,1:29:14.34,CHT,,0,0,0,,他不應該在車裡被導彈射死  父親\N{\rENG}He deserves better than a missile shot into his car, pop.
+Dialogue: 0,1:29:14.34,1:29:17.61,CHT,,0,0,0,,他應該怎樣都無所謂  他非死不可\N{\rENG}It doesn't matter what he deserves, he has to die.
+Dialogue: 0,1:29:56.90,1:29:58.62,CHT,,0,0,0,,你會命令那些暴徒們停手嗎\N{\rENG}Are you gonna call those goons off now?
+Dialogue: 0,1:29:58.65,1:30:00.38,CHT,,0,0,0,,不會  但你可以\N{\rENG}No. But you can.
+Dialogue: 0,1:30:01.28,1:30:03.59,CHT,,0,0,0,,開槍射死我  你來下命令\N{\rENG}Just fire that. Take command.
+Dialogue: 0,1:30:04.89,1:30:06.25,CHT,,0,0,0,,盔甲的弱點在關節處\N{\rENG}Armor's weak at the joints.
+Dialogue: 0,1:30:06.25,1:30:07.56,CHT,,0,0,0,,眼睛和脖子是致命點\N{\rENG}Eyes and neck are the kill shots.
+Dialogue: 0,1:30:08.23,1:30:09.80,CHT,,0,0,0,,你右邊  我處理左邊\N{\rENG}Take right, I'll take left.
+Dialogue: 0,1:30:16.29,1:30:17.43,CHT,,0,0,0,,槍口朝下\N{\rENG}Muscle, discipline.
+Dialogue: 0,1:30:17.71,1:30:18.89,CHT,,0,0,0,,注意子彈數量\N{\rENG}Watch you round count.
+Dialogue: 0,1:30:19.09,1:30:20.36,CHT,,0,0,0,,你掩護  我命中\N{\rENG}You set, I spike.
+Dialogue: 0,1:30:20.62,1:30:22.17,CHT,,0,0,0,,-準備好了嗎  -明白\N{\rENG}- Ready? - Roger that.
+Dialogue: 0,1:30:39.50,1:30:40.51,CHT,,0,0,0,,-我出來了  -找掩體\N{\rENG}- I'm out! - Take cover!
+Dialogue: 0,1:30:49.11,1:30:50.11,CHT,,0,0,0,,去吧\N{\rENG}Set!
+Dialogue: 0,1:31:02.07,1:31:03.00,CHT,,0,0,0,,趴下\N{\rENG}Get down!
+Dialogue: 0,1:31:21.58,1:31:25.24,CHT,,0,0,0,,我是想讓你成為一個男子漢\N{\rENG}I am trying to make you a man!
+Dialogue: 0,1:31:27.72,1:31:29.77,CHT,,0,0,0,,我應該克隆我自己的\N{\rENG}I should have cloned myself.
+Dialogue: 0,1:31:37.10,1:31:40.69,CHT,,0,0,0,,慈愛  無私  盡職的父親\N{\rENG}Loving, dedicated, present father?
+Dialogue: 0,1:31:42.89,1:31:43.85,CHT,,0,0,0,,就在那\N{\rENG}Right there!
+Dialogue: 0,1:31:49.61,1:31:50.99,CHT,,0,0,0,,來吧\N{\rENG}Go ahead.
+Dialogue: 0,1:31:52.04,1:31:53.39,CHT,,0,0,0,,動手吧\N{\rENG}Do it.
+Dialogue: 0,1:32:04.19,1:32:05.52,CHT,,0,0,0,,你還有幾發子彈\N{\rENG}How many rounds you got left?
+Dialogue: 0,1:32:09.13,1:32:10.07,CHT,,0,0,0,,一發\N{\rENG}One.
+Dialogue: 0,1:32:10.69,1:32:12.04,CHT,,0,0,0,,好吧\N{\rENG}Okay.
+Dialogue: 0,1:32:20.97,1:32:22.28,CHT,,0,0,0,,真抱歉\N{\rENG}I'm sorry.
+Dialogue: 0,1:32:22.40,1:32:23.50,CHT,,0,0,0,,為什麼\N{\rENG}For what?
+Dialogue: 0,1:32:24.19,1:32:25.47,CHT,,0,0,0,,把你牽扯進來\N{\rENG}For getting you into this.
+Dialogue: 0,1:32:25.82,1:32:27.18,CHT,,0,0,0,,是我一直在監視你\N{\rENG}I was the one surveilling you.
+Dialogue: 0,1:32:27.33,1:32:28.33,CHT,,0,0,0,,沒錯\N{\rENG}Yeah.
+Dialogue: 0,1:32:29.26,1:32:31.88,CHT,,0,0,0,,不管怎麼說  抱歉\N{\rENG}Anyway, sorry.
+Dialogue: 0,1:32:32.91,1:32:35.02,CHT,,0,0,0,,現在我們一起殺出去吧\N{\rENG}Now let's fight our way out of this thing.
+Dialogue: 0,1:33:10.65,1:33:12.16,CHT,,0,0,0,,你是個好搭檔\N{\rENG}You're a great partner.
+Dialogue: 0,1:33:41.54,1:33:42.92,CHT,,0,0,0,,謝謝你\N{\rENG}Thank you.
+Dialogue: 0,1:33:43.30,1:33:44.86,CHT,,0,0,0,,對不起丟下你跑了\N{\rENG}Sorry I ran.
+Dialogue: 0,1:33:45.14,1:33:46.41,CHT,,0,0,0,,沒關係  今晚確實很艱辛\N{\rENG}Yeah, that's been a rough night.
+Dialogue: 0,1:33:46.75,1:33:48.35,CHT,,0,0,0,,外面還有多少人\N{\rENG}How many more out there?
+Dialogue: 0,1:33:48.58,1:33:50.13,CHT,,0,0,0,,我沒看到還有\N{\rENG}I didn't see any.
+Dialogue: 0,1:33:50.26,1:33:51.26,CHT,,0,0,0,,維裡斯呢\N{\rENG}Verris?
+Dialogue: 0,1:33:52.25,1:33:53.61,CHT,,0,0,0,,不省人事了\N{\rENG}Out of commission.
+Dialogue: 0,1:33:54.20,1:33:55.94,CHT,,0,0,0,,但還活著嗎\N{\rENG}But still alive?
+Dialogue: 0,1:33:58.21,1:33:59.51,CHT,,0,0,0,,是\N{\rENG}Yes.
+Dialogue: 0,1:34:29.12,1:34:29.77,CHT,,0,0,0,,拿著\N{\rENG}Here.
+Dialogue: 0,1:34:30.57,1:34:31.64,CHT,,0,0,0,,傷口嚴重嗎\N{\rENG}How bad is that?
+Dialogue: 0,1:34:31.98,1:34:32.98,CHT,,0,0,0,,我沒事\N{\rENG}I'm fine.
+Dialogue: 0,1:34:34.60,1:34:36.06,CHT,,0,0,0,,你有事\N{\rENG}You're not.
+Dialogue: 0,1:34:37.37,1:34:38.71,CHT,,0,0,0,,去守住電梯\N{\rENG}Hold the elevator position.
+Dialogue: 0,1:34:38.71,1:34:40.15,CHT,,0,0,0,,我們去斷後\N{\rENG}We gonna secure an out.
+Dialogue: 0,1:35:51.47,1:35:52.30,CHT,,0,0,0,,退後\N{\rENG}Back off!
+Dialogue: 0,1:37:19.09,1:37:20.98,CHT,,0,0,0,,你不疼嗎\N{\rENG}Don't you feel pain?
+Dialogue: 0,1:37:52.34,1:37:54.81,CHT,,0,0,0,,我不懂你為什麼這麼生氣  亨利\N{\rENG}I don't know why you're so angry, Henry?
+Dialogue: 0,1:38:05.55,1:38:08.00,CHT,,0,0,0,,你是這一切的靈感來源\N{\rENG}You were the inspiration for all of this.
+Dialogue: 0,1:38:20.02,1:38:22.08,CHT,,0,0,0,,你知道我是怎麼想的這個主意的嗎\N{\rENG}You know where I got the idea?
+Dialogue: 0,1:38:22.08,1:38:22.88,CHT,,0,0,0,,你還好嗎\N{\rENG}Are you okay?
+Dialogue: 0,1:38:25.69,1:38:27.08,CHT,,0,0,0,,在海夫吉\N{\rENG}Khafji.
+Dialogue: 0,1:38:28.42,1:38:29.91,CHT,,0,0,0,,看到你在戰場上的風采\N{\rENG}Watching you go house to house,
+Dialogue: 0,1:38:29.91,1:38:31.83,CHT,,0,0,0,,我不禁希望我手下有這樣一群人\N{\rENG}wishing I had a whole division of men -
+Dialogue: 0,1:38:32.11,1:38:33.36,CHT,,0,0,0,,都和你一樣出色\N{\rENG}all as good as you.
+Dialogue: 0,1:38:34.01,1:38:36.21,CHT,,0,0,0,,想著是否有這個可能\N{\rENG}Wondering if that could be possible.
+Dialogue: 0,1:38:36.81,1:38:38.33,CHT,,0,0,0,,你應該感到受寵若驚\N{\rENG}You should be flattered.
+Dialogue: 0,1:38:41.01,1:38:42.73,CHT,,0,0,0,,你該去死\N{\rENG}You should be dead.
+Dialogue: 0,1:38:42.98,1:38:45.14,CHT,,0,0,0,,你看到這發生的一切了\N{\rENG}You saw what happened over there.
+Dialogue: 0,1:38:46.02,1:38:47.58,CHT,,0,0,0,,一場暴行\N{\rENG}An atrocities.
+Dialogue: 0,1:38:49.45,1:38:51.89,CHT,,0,0,0,,朋友的骨灰被送回家鄉\N{\rENG}Friends being sent home in a pine box.
+Dialogue: 0,1:38:51.92,1:38:53.81,CHT,,0,0,0,,如果有更好的方法\N{\rENG}Why should we accept that
+Dialogue: 0,1:38:53.81,1:38:55.49,CHT,,0,0,0,,為什麼我們要接受這一切\N{\rENG}If there is a better way?
+Dialogue: 0,1:38:58.93,1:39:01.72,CHT,,0,0,0,,看看我們創造的一切\N{\rENG}And look what we created.
+Dialogue: 0,1:39:06.69,1:39:08.22,CHT,,0,0,0,,他是你和我的合體\N{\rENG}It's got both of us in.
+Dialogue: 0,1:39:09.82,1:39:12.40,CHT,,0,0,0,,你難道不認為你的國家\N{\rENG}Don't you think your country deserves
+Dialogue: 0,1:39:12.40,1:39:14.07,CHT,,0,0,0,,值得擁有一個完美版本的你嗎\N{\rENG}a perfect version of you?
+Dialogue: 0,1:39:14.52,1:39:17.18,CHT,,0,0,0,,從來都沒有完美版本的我\N{\rENG}There is no perfect version of me,
+Dialogue: 0,1:39:17.90,1:39:19.90,CHT,,0,0,0,,或他  或任何人\N{\rENG}or him, or anybody.
+Dialogue: 0,1:39:20.16,1:39:21.18,CHT,,0,0,0,,沒有嗎\N{\rENG}No?
+Dialogue: 0,1:39:22.29,1:39:23.40,CHT,,0,0,0,,他本來要去葉門的\N{\rENG}He was on his way to Yemen.
+Dialogue: 0,1:39:23.53,1:39:24.33,CHT,,0,0,0,,現在多虧了你\N{\rENG}Now thanks to you
+Dialogue: 0,1:39:24.33,1:39:27.04,CHT,,0,0,0,,他的位置要被某個父母健在的人取代\N{\rENG}his place is gonna be taken by someone with parents.
+Dialogue: 0,1:39:27.21,1:39:28.63,CHT,,0,0,0,,能感覺到疼痛\N{\rENG}Someone who feels pain.
+Dialogue: 0,1:39:29.17,1:39:30.17,CHT,,0,0,0,,和恐懼\N{\rENG}Fear.
+Dialogue: 0,1:39:30.34,1:39:32.43,CHT,,0,0,0,,那些我們在他身上剔除了的情感\N{\rENG}Which we had edited out of him.
+Dialogue: 0,1:39:32.43,1:39:35.16,CHT,,0,0,0,,一個有諸多弱點的人\N{\rENG}Someone with just as many weaknesses,
+Dialogue: 0,1:39:35.16,1:39:36.65,CHT,,0,0,0,,正如我們想要除掉的恐怖分子一樣\N{\rENG}as the terrorists that we're trying to kill.
+Dialogue: 0,1:39:36.65,1:39:38.36,CHT,,0,0,0,,你覺得那樣更好嗎\N{\rENG}And you gonna tell me that's better?
+Dialogue: 0,1:39:39.65,1:39:41.89,CHT,,0,0,0,,那你怎麼不把他們組建支軍隊\N{\rENG}So why not make a whole army of 'em?
+Dialogue: 0,1:39:42.35,1:39:43.35,CHT,,0,0,0,,是啊  為什麼不呢\N{\rENG}Yeah, why not?
+Dialogue: 0,1:39:44.90,1:39:47.36,CHT,,0,0,0,,想想看我們能拯救多少美國家庭\N{\rENG}Think how many American families we can spare.
+Dialogue: 0,1:39:47.52,1:39:50.20,CHT,,0,0,0,,再沒有人的兒子  或女兒會戰死\N{\rENG}Nobody's son, or daughter would ever have to die.
+Dialogue: 0,1:39:50.21,1:39:52.24,CHT,,0,0,0,,再也沒有老兵回家後患上創傷後應激障礙\N{\rENG}No vet comes home with PTSD
+Dialogue: 0,1:39:52.24,1:39:53.25,CHT,,0,0,0,,然後自殺\N{\rENG}and kills himself.
+Dialogue: 0,1:39:54.04,1:39:56.24,CHT,,0,0,0,,我們可以保障世界的安全\N{\rENG}We can keep the whole world safe
+Dialogue: 0,1:39:56.24,1:39:58.79,CHT,,0,0,0,,不再有悲痛  所以\N{\rENG}without any actual grief, so...
+Dialogue: 0,1:39:59.04,1:40:01.00,CHT,,0,0,0,,我傷害誰了嗎\N{\rENG}Who would I be hurting?
+Dialogue: 0,1:40:01.56,1:40:03.89,CHT,,0,0,0,,你在講的可是人  克雷\N{\rENG}You're talking about people, Clay.
+Dialogue: 0,1:40:04.79,1:40:05.79,CHT,,0,0,0,,亨利\N{\rENG}Henry.
+Dialogue: 0,1:40:06.93,1:40:10.07,CHT,,0,0,0,,這是雙子實驗室做過最人性化的事了\N{\rENG}This is the most humane thing that Gemini's ever done.
+Dialogue: 0,1:40:10.85,1:40:13.38,CHT,,0,0,0,,外面世界還有多少個我\N{\rENG}How many more of me are running around out there?
+Dialogue: 0,1:40:14.59,1:40:17.15,CHT,,0,0,0,,只有一個你  小克\N{\rENG}There's only one you, Junior.
+Dialogue: 0,1:40:18.53,1:40:20.19,CHT,,0,0,0,,他就是個武器\N{\rENG}He was a weapon.
+Dialogue: 0,1:40:20.84,1:40:22.40,CHT,,0,0,0,,而你是我兒子\N{\rENG}You're my son.
+Dialogue: 0,1:40:24.49,1:40:25.92,CHT,,0,0,0,,我愛你\N{\rENG}And I love you.
+Dialogue: 0,1:40:27.00,1:40:30.72,CHT,,0,0,0,,就像任何父親愛任何孩子一樣\N{\rENG}As much as any father ever loved any kid.
+Dialogue: 0,1:40:35.27,1:40:36.84,CHT,,0,0,0,,我沒有父親\N{\rENG}I don't have a father.
+Dialogue: 0,1:40:38.12,1:40:39.13,CHT,,0,0,0,,永別了  克雷\N{\rENG}Goodbye, Clay.
+Dialogue: 0,1:40:39.49,1:40:40.49,CHT,,0,0,0,,等等  等等\N{\rENG}Hey, hey.
+Dialogue: 0,1:40:48.78,1:40:50.42,CHT,,0,0,0,,所以我們應該怎麼辦\N{\rENG}So what the hell are we gonna do?
+Dialogue: 0,1:40:52.12,1:40:54.54,CHT,,0,0,0,,把他交出去嗎  他們不會審判他的\N{\rENG}Gonna turn him in? They not gonna try him.
+Dialogue: 0,1:40:54.54,1:40:56.44,CHT,,0,0,0,,他們不會關掉他的實驗室的\N{\rENG}They not gonna shot down his lab.
+Dialogue: 0,1:40:56.96,1:40:58.58,CHT,,0,0,0,,我們必須現在結束這一切\N{\rENG}We have to end this this right now.
+Dialogue: 0,1:40:58.71,1:40:59.71,CHT,,0,0,0,,等等\N{\rENG}Hey.
+Dialogue: 0,1:41:01.07,1:41:02.43,CHT,,0,0,0,,看著我\N{\rENG}Look at me.
+Dialogue: 0,1:41:02.43,1:41:05.36,CHT,,0,0,0,,看著我\N{\rENG}Look at me.
+Dialogue: 0,1:41:06.91,1:41:08.05,CHT,,0,0,0,,如果你按下了扳機\N{\rENG}You pull that trigger
+Dialogue: 0,1:41:08.41,1:41:11.24,CHT,,0,0,0,,你就會毀掉你內心的一部分\N{\rENG}and you gonna break something inside of yourself.
+Dialogue: 0,1:41:12.82,1:41:15.61,CHT,,0,0,0,,那部分再也不會癒合了\N{\rENG}That will never get fixed again.
+Dialogue: 0,1:41:23.56,1:41:24.72,CHT,,0,0,0,,別這樣\N{\rENG}Don't.
+Dialogue: 0,1:41:30.10,1:41:31.39,CHT,,0,0,0,,放手吧\N{\rENG}Let it go.
+Dialogue: 0,1:41:32.50,1:41:33.93,CHT,,0,0,0,,把槍給我\N{\rENG}Give it to me.
+Dialogue: 0,1:41:39.58,1:41:41.77,CHT,,0,0,0,,被鬼魂困擾的滋味可不好受\N{\rENG}You don't want those ghosts.
+Dialogue: 0,1:41:42.90,1:41:44.29,CHT,,0,0,0,,相信我\N{\rENG}Trust me.
+Dialogue: 0,1:42:23.77,1:42:25.49,CHT,,0,0,0,,你應該知道不該那樣做\N{\rENG}You should know better than that.
+Dialogue: 0,1:42:26.99,1:42:28.64,CHT,,0,0,0,,真令人驚訝你竟然在乎這個\N{\rENG}Surprised you give a shit.
+Dialogue: 0,1:42:29.76,1:42:30.48,CHT,,0,0,0,,既然這樣\N{\rENG}Well...
+Dialogue: 0,1:42:30.48,1:42:32.79,CHT,,0,0,0,,我們做不成朋友了\N{\rENG}We can't be friends anymore.
+Dialogue: 0,1:42:33.28,1:42:35.35,CHT,,0,0,0,,因為你的確讓他們殺我\N{\rENG}Because you did let them try to kill me.
+Dialogue: 0,1:42:35.58,1:42:38.72,CHT,,0,0,0,,但這不代表我要眼看著你喝酒喝死\N{\rENG}But, that doesn't mean I wanna see you drink yourself to death.
+Dialogue: 0,1:42:40.98,1:42:43.01,CHT,,0,0,0,,雙子實驗室被拆除了\N{\rENG}The Gemini lab's been dismantled.
+Dialogue: 0,1:42:43.67,1:42:45.73,CHT,,0,0,0,,克隆項目已成歷史了\N{\rENG}Cloning program is history.
+Dialogue: 0,1:42:47.44,1:42:48.88,CHT,,0,0,0,,那小克呢\N{\rENG}And Junior?
+Dialogue: 0,1:42:49.56,1:42:51.03,CHT,,0,0,0,,沒人動得了他\N{\rENG}He's untouchable.
+Dialogue: 0,1:42:51.17,1:42:53.64,CHT,,0,0,0,,沒人會去煩他了  再也不會了\N{\rENG}No one will bother him. Ever.
+Dialogue: 0,1:42:54.68,1:42:57.25,CHT,,0,0,0,,而且我們調查過了  再沒有克隆人了\N{\rENG}And we checked, there are no more clones.
+Dialogue: 0,1:42:58.44,1:42:59.93,CHT,,0,0,0,,那你有什麼打算\N{\rENG}What about you?
+Dialogue: 0,1:43:00.78,1:43:02.22,CHT,,0,0,0,,監察主任打電話了\N{\rENG}IG called.
+Dialogue: 0,1:43:02.22,1:43:04.26,CHT,,0,0,0,,我在等著起訴  但是\N{\rENG}I'm looking at charges, but
+Dialogue: 0,1:43:04.26,1:43:05.98,CHT,,0,0,0,,如果我出庭指證珍內特\N{\rENG}if I bury Janet,
+Dialogue: 0,1:43:05.98,1:43:07.24,CHT,,0,0,0,,可以爭取脫罪\N{\rENG}I can make a deal.
+Dialogue: 0,1:43:08.38,1:43:09.90,CHT,,0,0,0,,她自找的\N{\rENG}She earned it.
+Dialogue: 0,1:43:13.62,1:43:15.91,CHT,,0,0,0,,我真的很抱歉  亨利\N{\rENG}I'm really sorry, Henry.
+Dialogue: 0,1:43:19.79,1:43:22.65,CHT,,0,0,0,,-保重  戴爾  -你也是\N{\rENG}- Take care, Dell. - Yeah, you too.
+Dialogue: 0,1:43:23.12,1:43:25.01,CHT,,0,0,0,,退休快樂\N{\rENG}And happy retirement.
+Dialogue: 0,1:43:41.50,1:43:46.33,Default,,0,0,0,,{\r譯文字幕\pos(296.3,243.9)\bord0\fad(500,500)}六個月後
+Dialogue: 0,1:44:03.03,1:44:04.10,CHT,,0,0,0,,見到你真高興\N{\rENG}Good to see you.
+Dialogue: 0,1:44:04.56,1:44:06.13,CHT,,0,0,0,,祝賀你升職了\N{\rENG}Congrats on a promotion.
+Dialogue: 0,1:44:06.30,1:44:07.74,CHT,,0,0,0,,我聽說他們要搞點大計畫\N{\rENG}I heard they got big plans.
+Dialogue: 0,1:44:07.74,1:44:09.34,CHT,,0,0,0,,不過經歷過你的事以後\N{\rENG}Well, after you pretty sure
+Dialogue: 0,1:44:09.34,1:44:10.80,CHT,,0,0,0,,我覺得我什麼都應付得來了\N{\rENG}I can handle anything.
+Dialogue: 0,1:44:12.12,1:44:15.09,CHT,,0,0,0,,-你最近怎麼樣  -還好  就是\N{\rENG}- How've you been? - Good, just...
+Dialogue: 0,1:44:15.09,1:44:16.41,CHT,,0,0,0,,處理了巴倫的後事\N{\rENG}Settled Baron's estate.
+Dialogue: 0,1:44:16.41,1:44:18.79,CHT,,0,0,0,,把他的骨灰撒到了加勒比海\N{\rENG}Scattered his ashes in the Caribbean.
+Dialogue: 0,1:44:19.83,1:44:21.77,CHT,,0,0,0,,我也不知道  也許我現在想做的\N{\rENG}I don't know, all I wanna do now is
+Dialogue: 0,1:44:21.88,1:44:23.74,CHT,,0,0,0,,就是為世界做些好事\N{\rENG}put some good in the world.
+Dialogue: 0,1:44:23.74,1:44:25.37,CHT,,0,0,0,,但需要弄明白怎麼去做\N{\rENG}Just gotta figure out how.
+Dialogue: 0,1:44:26.02,1:44:27.02,CHT,,0,0,0,,你會弄明白的\N{\rENG}Yeah, you will.
+Dialogue: 0,1:44:27.95,1:44:29.64,CHT,,0,0,0,,你睡得還好嗎\N{\rENG}You sleeping okay?
+Dialogue: 0,1:44:30.10,1:44:31.10,CHT,,0,0,0,,好多了\N{\rENG}Better.
+Dialogue: 0,1:44:31.30,1:44:32.38,CHT,,0,0,0,,不再夢見鬼魂了\N{\rENG}No ghosts?
+Dialogue: 0,1:44:32.38,1:44:33.93,CHT,,0,0,0,,不像之前那麼頻繁了\N{\rENG}Not like before.
+Dialogue: 0,1:44:34.41,1:44:36.83,CHT,,0,0,0,,對了  前幾天我真的照了鏡子\N{\rENG}Oh, and I actually looked in the mirror the other day.
+Dialogue: 0,1:44:36.95,1:44:39.31,CHT,,0,0,0,,-是嗎  -一點都不恐怖\N{\rENG}- Really? - It wasn't horrendous.
+Dialogue: 0,1:44:40.98,1:44:42.74,CHT,,0,0,0,,說到照鏡子\N{\rENG}Speaking mirrors.
+Dialogue: 0,1:44:55.49,1:44:56.75,CHT,,0,0,0,,一會見\N{\rENG}Catch you later.
+Dialogue: 0,1:45:11.76,1:45:12.43,CHT,,0,0,0,,這是什麼\N{\rENG}What's this?
+Dialogue: 0,1:45:12.60,1:45:14.37,CHT,,0,0,0,,這就是你\N{\rENG}This is you.
+Dialogue: 0,1:45:14.53,1:45:18.08,CHT,,0,0,0,,護照  出生證明  駕照\N{\rENG}Passport, birth certificate, driver's license.
+Dialogue: 0,1:45:18.44,1:45:20.13,CHT,,0,0,0,,顯然你信用度很不錯\N{\rENG}Apparently you got pretty good credit.
+Dialogue: 0,1:45:21.59,1:45:23.23,CHT,,0,0,0,,我喜歡你選的名字\N{\rENG}I love the name you chose.
+Dialogue: 0,1:45:23.50,1:45:24.50,CHT,,0,0,0,,傑克遜嗎\N{\rENG}Jackson?
+Dialogue: 0,1:45:24.58,1:45:25.72,CHT,,0,0,0,,是我母親的名字\N{\rENG}It's my mother's name.
+Dialogue: 0,1:45:25.74,1:45:28.02,CHT,,0,0,0,,她先是我的母親\N{\rENG}She was my mother first.
+Dialogue: 0,1:45:28.32,1:45:29.32,CHT,,0,0,0,,好吧好吧\N{\rENG}Yeah, yeah.
+Dialogue: 0,1:45:29.43,1:45:31.38,CHT,,0,0,0,,別跟我來敷衍這一套  小夥子\N{\rENG}Don't you "yeah, yeah" me, young man.
+Dialogue: 0,1:45:33.13,1:45:35.33,CHT,,0,0,0,,走吧  我知道個吃午飯的好地方\N{\rENG}Come on, I know a good place for lunch.
+Dialogue: 0,1:45:39.25,1:45:40.97,CHT,,0,0,0,,你選定專業了嗎\N{\rENG}So you settled down on major yet?
+Dialogue: 0,1:45:40.97,1:45:42.66,CHT,,0,0,0,,傾向於選工程\N{\rENG}Leaning towards engineering.
+Dialogue: 0,1:45:42.66,1:45:43.55,CHT,,0,0,0,,工程嗎\N{\rENG}Engineering?
+Dialogue: 0,1:45:44.64,1:45:46.91,CHT,,0,0,0,,你應該聽她的\N{\rENG}Yeah, you should listen to her.
+Dialogue: 0,1:45:46.98,1:45:49.90,CHT,,0,0,0,,如果我是你  我也確實算是\N{\rENG}If I were you, which I sorta am,
+Dialogue: 0,1:45:50.00,1:45:51.46,CHT,,0,0,0,,我就選電腦科學\N{\rENG}I'd go with computer science.
+Dialogue: 0,1:45:51.46,1:45:52.48,CHT,,0,0,0,,那個留著研究生再學\N{\rENG}Save that for grad school.
+Dialogue: 0,1:45:52.48,1:45:53.94,CHT,,0,0,0,,應該先從人文學開始的\N{\rENG}You want start with humanities.
+Dialogue: 0,1:45:54.05,1:45:55.71,CHT,,0,0,0,,-好吧別聽她的  -別聽他的\N{\rENG}- Okay, don't listen to her. - Don't listen to him.
+Dialogue: 0,1:45:55.80,1:45:57.28,CHT,,0,0,0,,先學經典打好基礎\N{\rENG}You need a grounding on the classics.
+Dialogue: 0,1:45:57.44,1:45:59.75,CHT,,0,0,0,,不好意思  我正和我自己說話呢\N{\rENG}Excuse me, I'm trying to talk to myself over here.
+Dialogue: 0,1:45:59.75,1:46:01.76,CHT,,0,0,0,,你確實在自言自語  但你沒和他說話\N{\rENG}Yeah, you are talking to yourself, but you're not talking to him.
+Dialogue: 0,1:46:01.76,1:46:04.18,CHT,,0,0,0,,聽著  我只是想趁年輕多犯錯\N{\rENG}Look, I just made a lot of mistakes when I was young.
+Dialogue: 0,1:46:04.18,1:46:07.17,CHT,,0,0,0,,而且我真的想自己經歷錯誤\N{\rENG}And I'd actually like to make some of those mistakes myself.
+Dialogue: 0,1:46:07.48,1:46:08.75,CHT,,0,0,0,,我想說的是我已經經歷過那些錯誤了\N{\rENG}What I'm trying to say is, I made
+Dialogue: 0,1:46:08.75,1:46:10.10,CHT,,0,0,0,,所以你不必再經歷\N{\rENG}them already so you don't have to.
+Dialogue: 0,1:46:10.16,1:46:11.68,CHT,,0,0,0,,但他不是你\N{\rENG}But he's not you.
+Dialogue: 0,1:46:11.68,1:46:14.58,CHT,,0,0,0,,你們倆都冷靜一下\N{\rENG}Okay, everybody chill the hell out.
+Dialogue: 0,1:46:16.55,1:46:17.55,CHT,,0,0,0,,我會沒事的\N{\rENG}I'm gonna be okay.
+Dialogue: 0,1:46:23.04,1:46:24.04,CHT,,0,0,0,,如果你沒事\N{\rENG}If you're okay,
+Dialogue: 0,1:46:25.69,1:46:26.69,CHT,,0,0,0,,那我就沒事\N{\rENG}I'm okay.
+Dialogue: 0,1:46:30.20,1:46:31.52,CHT,,0,0,0,,怎麼了\N{\rENG}What?
+Dialogue: 0,1:46:32.20,1:46:36.31,CHT,,0,0,0,,我就是不敢相信三十年後我會長成你這樣\N{\rENG}I just can't believe that in 30 years I'm gonna look like you.
+Dialogue: 0,1:46:37.05,1:46:38.97,CHT,,0,0,0,,什麼  得了吧  你想得美\N{\rENG}What? Please. You wish.
+Dialogue: 0,1:46:40.36,1:46:43.46,CHT,,0,0,0,,小子  你巴不得三十年後長得像我呢\N{\rENG}Boy, you better hope you look like me in 30 years.
+Dialogue: 0,1:46:44.35,1:46:50.57,CHT,,0,0,0,,你面前的可是五十歲  成熟的老鮮肉\N{\rENG}This is 50-year old, mature man meat you're looking at.
+Dialogue: 0,1:46:50.57,1:46:51.29,CHT,,0,0,0,,五十一歲\N{\rENG}51.
+Dialogue: 0,1:46:51.71,1:46:54.84,CHT,,0,0,0,,我刷牙  我用牙線  我努力工作\N{\rENG}I brush, I floss. I work hard.
+Dialogue: 0,1:46:55.47,1:46:56.78,CHT,,0,0,0,,等你五十歲了  我打賭你不能像我一樣\N{\rENG}When you're 50, I bet you won't be
+Dialogue: 0,1:46:56.97,1:47:00.18,CHT,,0,0,0,,每天早上都爬起來跑步鍛煉\N{\rENG}dragging your ass around the track every morning like I do.
+Dialogue: 0,1:47:00.86,1:47:03.24,CHT,,0,0,0,,事實上  我們可以現在就比一下\N{\rENG}In fact, we can race now.
+Dialogue: 0,1:47:03.76,1:47:06.47,CHT,,0,0,0,,我們現在就比  現在就去那個拐角\N{\rENG}We can race right now, we take it to the corner right now.
+Dialogue: 0,1:47:07.56,1:47:10.48,Default,,0,0,0,,{\r譯文字幕\fad(5000,0)}導演\N李安
+
