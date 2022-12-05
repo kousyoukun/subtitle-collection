@@ -1,0 +1,1753 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 音乐,SimHei,14,&H00C080FF,&H00000000,&H00000000,&H00000000,-1,-1,0,0,100,100,0,0,0,1,1,2,0,0,1,1
+Style: CNXP英,Arial Narrow,12,&H00FFEEDD,&H00FFC286,&H80000000,&H80000000,-1,0,0,0,100,100,0,0,1,1,0,2,20,20,2,1
+Style: CNXP中,simhei,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,90,90,0,0,1,2,2,2,20,20,15,1
+Style: CMCT中,STKaiti,20,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,1,1
+Style: CMCT英,Cronos Pro Subhead,14,&H003CF1F3,&HF0000000,&H000D0500,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,1,1
+Style: 1080无阴影黑边,Microsoft YaHei,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 1080P微软雅黑,Microsoft YaHei,80,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,2,2,10,10,10,1
+Style: 70B MICROBLACK,Microsoft YaHei,70,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,2,2,10,10,10,1
+Style: 2,方正粗倩_GBK,20,&H00FFFFFF,&HFF0000FF,&HFF000000,&HFF000000,0,0,0,0,100,100,0,0,1,2,0,2,10,10,10,1
+Style: ScrRmk Frances Mac Bag Postit,Microsoft YaHei,42,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,321,1,2,2,2,10,10,263,1
+Style: ScrRmk Samantha Bag Postit,Microsoft YaHei,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,320,1,2,2,9,0,652,369,1
+Style: ScrRmk update time,Arial,32,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,9,0,94,40,1
+Style: ScrRmk Samantha IDcard,Microsoft YaHei,38,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,6,1,2,2,1,476,10,277,1
+Style: ScrRmk Snorkl time,Microsoft YaHei,49,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,15,1,2,2,7,460,10,229,1
+Style: ScrRmk Vivaldi Invierno,Arial,32,&H99FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,2,8,10,10,40,1
+Style: ScrRmk Note LoveGreta,思雨聪聪草书体,50,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,344,1,2,2,8,0,10,491,1
+Style: ScrRmk Note Sorry SwtHrt,思雨聪聪草书体,50,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,344,1,2,2,8,0,10,365,1
+Style: ScrRmk MovieTitle Greta,造字工房妙妙（非商用）常规体,80,&H3BC1D9D4,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,293,1
+Style: ScrRmk lostandfound,Auraka方黑檀,107,&HAAFFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,1,272,10,252,1
+Style: Chinese Main Subtitle,Microsoft YaHei,65,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,108,1
+Style: English Main Subtitle,Arial,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,40,1
+Style: OneFX,KaiTi,54,&H00FFFE67,&H000000FF,&H00A4671B,&H914F310D,-1,-1,-1,0,100,120,0,10,1,5,4,2,10,10,80,1
+Style: Yahei-1920x1080,Microsoft YaHei,60,&H00FFFFFF,&H00FFFFFF,&H19533B3B,&H910E0807,0,0,0,0,100,100,0,0,1,4,1,2,200,200,102,1
+Style: Yahei-1280x720,Microsoft YaHei,48,&H00FFFFFF,&H00FFFFFF,&H19533B3B,&H910E0807,0,0,0,0,100,100,0,0,1,3,1,2,135,135,72,1
+Style: chs-zimu,Microsoft YaHei,18,&H00371C00,&H0000FFFF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,85,0,0,1,3,0,2,5,5,48,134
+Style: eng-zimu,MV Boli,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H00FFFFFF,0,0,0,0,100,100,0,0,1,2,0,2,5,5,26,1
+Style: zusi,Microsoft YaHei,14,&H0000006C,&H0000FFFF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,90,0,0,1,2,0,2,5,5,230,134
+Style: p-name,SimHei,36,&H0015F8FC,&H0000FFFF,&H00000000,&H00000000,-1,0,0,0,60,100,0,0,1,1,4,2,5,5,70,134
+Style: Default4,Microsoft YaHei,33,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,2,2,10,10,10,1
+Style: Default3,叶根友疾风草书,120,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: Default1,Microsoft YaHei,30,&H0003BAF6,&H000000FF,&H0002CFFB,&H00000000,0,0,0,0,100,100,0,0,1,0,2,2,10,10,10,1
+Style: 后花园中字,Microsoft YaHei,50,&H00FFFFFF,&H000000FF,&H00DB0BAE,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+Style: 特效 - 遮挡,Microsoft YaHei,20,&H00FFFFFF,&HFF0000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,3,1,0,2,10,10,10,1
+Style: 歌词,Microsoft YaHei,14,&H00DEDEDE,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,7,12,5,22,1
+Style: 特效,Microsoft YaHei,20,&H00FFFFFF,&HFF0000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: Subtitle,Microsoft YaHei,27,&H00C1DFED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,11,11,11,1
+Style: Titles - 3 -,Microsoft YaHei,20,&H0001031B,&H00FFFFFF,&H00000000,&H00000429,0,0,0,0,100,100,0,0,1,0,1,2,11,11,11,1
+Style: Titles - 2,Microsoft YaHei,20,&H00000000,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,11,11,11,1
+Style: Titles - 1,Microsoft YaHei,20,&H00C1DFED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,5,11,11,11,1
+Style: QR code - code,Arial,20,&H00000000,&H000019FF,&H00000000,&H00000000,0,0,0,0,200,200,0,0,1,0,0,5,0,0,0,1
+Style: QR code - BG,Arial,20,&H00FFFFFF,&H000019FF,&H00000000,&H00000000,0,0,0,0,400,400,0,0,1,0,0,5,0,0,0,1
+Style: Author,Microsoft YaHei,20,&H00C1DFED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,1,11,11,11,1
+Style: Character_B,Microsoft YaHei,20,&H00C1DFED,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,11,11,11,1
+Style: Character_L,Microsoft YaHei,20,&H00C1DFED,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,4,11,11,11,1
+Style: Titles_L,Microsoft YaHei,20,&H00C1DFED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,1,11,11,11,1
+Style: Titles,Microsoft YaHei,20,&H00C1DFED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,11,11,11,1
+Style: en,Cronos Pro Subhead,14,&H0000FFFF,&H0000FFFF,&H00000000,&H2A000000,0,0,0,0,100,100,0,0,0,1,1,2,20,20,0,1
+Style: 片名,Microsoft YaHei,100,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,0,2,10,10,10,1
+Style: Default2,Arial,30,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,8,8,8,1
+Style: 译文字幕,方正黑体_GBK,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,15,1
+Style: 原文字幕,Microsoft YaHei,14,&H00FFFFFF,&HF0000000,&H00202020,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,15,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪ 一个崭新且荣耀的早晨 ♪  - ♪ 荣誉的早晨 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}- ♪ A new glorious morn ♪ - ♪ Glorious morn ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪ 兴奋的希望 ♪  - ♪ 兴奋的希望 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}- ♪ A thrill of hope ♪ - ♪ A thrill of hope ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪ 当他们成熟的时候 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ When they're both full grown ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪ 远处破晓的是 ♪  - ♪ 一个崭新... ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}- ♪ For yonder breaks ♪ - ♪ A new and... ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪ 鹿儿在奔跑 ♪  - 安静 \N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}- ♪ And the running of the deer ♪ - Quiet {\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪一起疯狂 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Are going crazy ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪一层又一层♪ \N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}- ♪ Snow on snow ♪ {\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪大地亦无法收留 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Nor earth sustain... ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪今夜见证了我主的诞生 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ It is the night of Our dear Savior's birth ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪充满了罪恶与过失 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ In sin and error pining ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪在本十岁的时候 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ When Ben was ten ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪在萧瑟的隆冬♪ \N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}- ♪ In the bleak midwinter ♪ {\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪如今我们欢聚一堂 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ And now we're all here ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪利亚姆还是种也许 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Liam was a maybe ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪直到上帝降临 世人有了存在的价值 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Till He appeared And the soul felt its worth ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪很久以前♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&} - ♪ Long ago ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪星光闪耀 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ The stars are brightly shining ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪哦 今夜 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ O night ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪哦 今夜神圣 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ O night divine ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪哦 太阳已升起 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ O the rising of the sun ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪哦 平安夜 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ O holy night ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪哦 耶稣诞生之夜 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ O night when Christ was born ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪哦 神圣之夜 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ O night divine ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪疲倦的世界欢喜 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ The weary world rejoices ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪神圣之夜 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Divine O night ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪聆听天使的歌唱 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ And hear the angels' voices ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪曾经的上天之下 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Long lay the world ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪霍莉和艾薇 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ The holly and the ivy ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪蕾西还是个婴儿 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Lacey was a baby ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪让我们...疯狂 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Let's go... crazy ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪让我们屈膝 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Fall on your knees ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪让我们疯狂 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Let's go crazy ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪让我们疯狂 ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ So let's go crazy ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: {\an9\bord0\fs16\i1}<font color=#00FF00>♪谁想要疯狂? ♪\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}♪ Who's going to go crazy? ♪{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: comm,Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: 保持安静\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}Meant to be quiet.,Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: 站直啰\N{\fn微软雅黑\fs14\b0\c&HFFDB00&\3c&H2F2F2F&\4c&H000000&}Stand up straight.{\r},Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: Default-Box-Copy,Microsoft YaHei,30,&H00FFFFFF,&H00FFFFFF,&H3D354A17,&HFF000000,-1,0,0,0,100,100,3,0,1,2,0,2,135,135,5,1
+Style: Default-Box,Microsoft YaHei,34,&H00FFFFFF,&H00FFFFFF,&H3D354A17,&HFF000000,-1,0,0,0,100,100,1,0,1,2,0,2,135,135,30,1
+Style: Default-L2,Microsoft YaHei,90,&H00000000,&H00FFFFFF,&H19533B3B,&H910E0807,-1,0,0,0,100,100,3,0,1,0,0,2,135,135,344,1
+Style: Effect,Microsoft YaHei,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,0,0,100,2,0,0,1,0
+Style: 中文,Microsoft YaHei,18,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,10,10,0,1
+Style: 英文,Microsoft YaHei,12,&H00F1D320,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,1,0,2,10,10,4,1
+Style: 中文章节,Microsoft YaHei,22,&H00F1D320,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,10,10,2,1
+Style: 注释,WenQuanYi Micro Hei,16,&H16FEFEFE,&HFFFFFFFF,&H1400010E,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,0,1
+Style: 片名1,Microsoft YaHei,32,&H00C7C4C6,&H000000FF,&HEF060606,&H00060606,0,0,0,0,100,120,2,0,1,1,1,2,10,10,2,1
+Style: 片名2,WenQuanYi Micro Hei,22,&H00FEFEFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,0,0,0,1
+Style: 2中文,WenQuanYi Micro Hei,17,&H00FFFFFF,&H000000FF,&H16000100,&H9D000100,0,0,0,0,100,100,0,0,1,0,0,2,0,0,18,1
+Style: 1英文,Microsoft YaHei,12,&H0000F1F3,&H000000FF,&H00000000,&HA1000000,0,0,0,0,100,100,0,0,1,0,1,2,10,10,10,1
+Style: 2繁体中文,微軟雅黑,22,&H00FFFFFF,&H000000FF,&H00FF0000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,2,1
+Style: 1繁体英文,Arial,16,&H00F1D320,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,0,0,2,10,10,2,1
+Style: 纯英文,Arial,20,&H00F1D320,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,0,0,2,10,10,2,1
+Style: 译者,Microsoft YaHei,21,&HB087872D,&H000000FF,&H8B87872D,&H0087872D,-1,0,0,0,100,100,1,0,1,0,0,2,10,10,2,1
+Style: 译者2,Microsoft YaHei,21,&H60005BFF,&H000000FF,&H8B005BFF,&H00005BFF,-1,0,0,0,100,100,1,0,1,0,0,2,10,10,2,1
+Style: 注释特殊,Microsoft YaHei,28,&H00FFFFFF,&H000000FF,&H61000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,2,1
+Style: 注释特殊1,Microsoft YaHei,75,&H00FFFFFF,&H000000FF,&H2E000000,&H00A0CDD9,-1,0,0,0,108,75,6,0,1,2,1,2,217,217,8,1
+Style: 注释特殊2,Microsoft YaHei,50,&H00FFFFFF,&H00F9F833,&H00010072,&H00000000,-1,0,0,0,100,100,0,0,1,4,6,2,10,10,8,1
+Style: 1译者框,Microsoft YaHei,75,&H00FAF937,&H000000FF,&H2B005BFF,&H0087872D,-1,0,0,0,85,85,0,0,1,1,0,2,10,10,10,1
+Style: 2译者框,Microsoft YaHei,105,&H9C87862D,&H000000FF,&H86005BFF,&H00005BFF,-1,0,0,0,110,110,0,0,1,0,0,2,10,10,2,1
+Style: 注释特殊3,FZYaoTi,20,&H0098C7EC,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,8,1
+Style: 音乐-中,Microsoft YaHei,116,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,108,100,6,0,1,12,8,8,2030,2030,146,1
+Style: 音乐-英,WenQuanYi Micro Hei,14,&H00005BFF,&H000000FF,&H00000000,&H00000000,0,-1,0,0,100,100,0,0,1,0,0,2,10,10,18,1
+Style: 制作者,Arial,158,&H64D8DC16,&H000000FF,&H0087872D,&H00D8DC16,0,0,0,0,108,100,0,0,1,5,5,2,2030,2030,71,1
+Style: 制作者2,Arial,158,&HB087872D,&H000000FF,&H0087872D,&H0087872D,0,0,0,0,108,100,0,0,1,7,0,2,2030,2030,71,1
+Style: 注释特殊4,Microsoft YaHei,10,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,1,10,10,8,1
+Style: 注释特殊5,Microsoft YaHei,105,&H00DEEFF0,&H000000FF,&H001E2721,&H001E2721,0,0,0,0,108,100,5,0,1,1,2,2,217,217,8,1
+Style: 硬字幕对话,WenQuanYi Micro Hei,18,&H00ECFBFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,8,1
+Style: 注释框,Microsoft YaHei,105,&H7475741B,&H000000FF,&H3E005BFF,&H00000000,0,0,0,0,80,110,0,0,1,0,0,2,10,10,8,1
+Style: 字幕组logo,SimHei,105,&H00FFFFFF,&H000000FF,&H3E000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 3译者,Microsoft YaHei,24,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,1,10,10,8,1
+Style: 字幕组信息,Microsoft YaHei,105,&H16A7A60E,&H000000FF,&H3E005BFF,&H00000000,0,0,0,0,75,85,0,0,1,0,0,1,10,10,8,1
+Style: 字幕组信息1,SimHei,24,&H00FFFFFF,&HFFF9F833,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,1,5,5,8,1
+Style: 0英文,Microsoft YaHei,34,&H000061FF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,2,2,217,217,49,1
+Style: 注释框1,Microsoft YaHei,20,&H7475741B,&H000000FF,&H3E005BFF,&H00000000,0,0,0,0,90,110,0,0,1,0,0,2,10,10,2,1
+Style: 注释框2,Microsoft YaHei,20,&H7475741B,&H000000FF,&H3E005BFF,&H00000000,0,0,0,0,82,85,0,0,1,0,0,2,10,10,2,1
+Style: 2译者框-1,Microsoft YaHei,75,&H00C95D11,&H000000FF,&H2B005BFF,&H0087872D,-1,0,0,0,110,110,0,0,1,0,0,2,10,10,10,1
+Style: 2音乐-中,SimHei,16,&H00FFFFFF,&H000000FF,&H00FF0000,&H67000000,0,0,0,0,100,95,0,0,1,0,0,2,10,10,18,1
+Style: 1音乐-英,Microsoft YaHei,12,&H0000F1F3,&H000000FF,&H00000000,&H5B000000,0,-1,0,0,100,100,0,0,1,0,1,2,10,10,12,1
+Style: 备注23,Microsoft YaHei,48,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,1120,135,190,1
+Style: 备注22,Microsoft YaHei,48,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,1093,135,219,1
+Style: 备注21,Microsoft YaHei,48,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,1093,135,400,1
+Style: 备注20,Microsoft YaHei,46,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,1060,135,140,1
+Style: 备注19,Microsoft YaHei,46,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,1025,135,353,1
+Style: 备注18,Microsoft YaHei,55,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,218,135,276,1
+Style: 备注17,Microsoft YaHei,55,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,1127,135,177,1
+Style: 备注16,Microsoft YaHei,55,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,1127,135,379,1
+Style: 备注15,Microsoft YaHei,55,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,1127,135,160,1
+Style: 备注14《肉欲》 柯莱特 著,Microsoft YaHei,70,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,358,1,2,0,1,672,135,438,1
+Style: 备注13《肉欲》,Microsoft YaHei,70,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,358,1,2,0,1,77,135,563,1
+Style: 备注12克洛蒂娜的冒险 维里,Microsoft YaHei,70,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,343,1,2,0,1,650,135,347,1
+Style: 备注11取消,Microsoft YaHei,98,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,47,1,2,0,1,940,135,95,1
+Style: 备注9红磨坊,Microsoft YaHei,68,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,1,1,2,0,1,689,135,333,1
+Style: 备注9克洛蒂娜的时代,Microsoft YaHei,68,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,7,1,2,0,1,777,135,414,1
+Style: 备注8克洛蒂娜内衣,Microsoft YaHei,68,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,7,1,2,0,1,1338,135,228,1
+Style: 备注7,Microsoft YaHei,64,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,0,1,2,0,1,797,135,237,1
+Style: 备注6,Microsoft YaHei,68,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,323,1,2,0,1,1157,135,437,1
+Style: 备注5,Microsoft YaHei,68,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,343,1,2,0,1,994,135,217,1
+Style: music英文,方正舒体,38,&H00FFFFFF,&H000000FF,&H00C16894,&H00C06291,0,0,0,0,100,100,0,0,1,2,0,9,10,10,63,1
+Style: 备注4,Microsoft YaHei,68,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,343,1,2,0,1,994,135,217,1
+Style: 备注3,Microsoft YaHei,48,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,41,1,2,0,1,1177,135,257,1
+Style: 备注2,Microsoft YaHei,48,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,349,1,2,0,1,521,135,411,1
+Style: 备注信,Microsoft YaHei,42,&H00FFFFFF,&H00FFFFFF,&H1E000000,&H50020302,0,0,0,0,100,100,0,24,1,2,0,1,181,135,13,1
+Style: 标题1,汉仪菱心体简,80,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 电影英文字幕样式,Arial,30,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,10,10,10,1
+Style: 电影单语字幕样式,SimHei,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,10,10,20,1
+Style: 注释字体,等线,35,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,8,10,10,20,1
+Style: 视频标题 副,汉仪菱心体简,35,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 单语字幕样式2,幼圆,40,&H00FFFFFF,&H00FFFFFF,&H32949EFD,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+Style: 英文字幕样式,Comic Sans MS,35,&H00FFFFFF,&H00FFFFFF,&H00161618,&H00161618,0,0,0,0,100,100,0,0,1,1,0,2,10,10,0,1
+Style: 泰剧,华文中宋,40,&H00FFFFFF,&H00FFFFFF,&H00A9A3F1,&H0065656A,0,0,0,0,100,100,0,0,1,1,0,2,10,10,10,1
+Style: 浪花手写字体mv - 复制,逐浪小雪钢笔体,70,&H00FFFFFF,&H00FFFFFF,&H00C8C8D1,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: HUAWENLISHU,华文中宋,40,&H00FF8700,&H0064EDEF,&H00FFFFFF,&H00FFFFFF,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 红色小字体,汉仪霹雳体简,35,&H001B1BE8,&H00A9A3F1,&H00FFFFFF,&H00000000,0,0,0,0,100,100,0,0,1,2,0,2,7,7,7,1
+Style: 时间轴和翻译名字字体,Microsoft YaHei,40,&H00FFFFFF,&H000000FF,&H6B9D9DA0,&H00000000,0,0,0,0,100,100,0,0,1,0,1,2,10,10,10,1
+Style: 第二行英文字体,Century Gothic,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 逐浪小雪钢笔体,逐浪小雪钢笔体,80,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 单语字幕样式,幼圆,40,&H00FFFFFF,&H00FFFFFF,&H2A100E0E,&H0065656A,-1,0,0,0,100,100,0,0,1,1,0,2,10,10,10,1
+Style: 视频标题字体,造字工房星岩(非商用）常规体,80,&H00FFFFFF,&H00FFFFFF,&H00C8C8D1,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,20,1
+Style: 滚轴字样,Microsoft YaHei,35,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 仿宋,Adobe 仿宋 Std R,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 短信或注释 样式 短片 网剧通用,SimHei,27,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 短片的时间轴和翻译名字字体,华文琥珀,35,&H00FFFFFF,&H000000FF,&H6B000000,&H0065656A,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 短片比较综艺化或采访类的的字幕样式,Microsoft YaHei,40,&H00FFFFFF,&H00FFFFFF,&H2A000000,&H00FFFFFF,-1,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+Style: 推荐使用：剧情类短片和网剧通用字幕样式,华文中宋,40,&H00FFFFFF,&H00FFFFFF,&H2AE2A2B0,&H0065656A,-1,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+Style: 日语字幕样式,华文中宋,30,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 开头左上角2,方正舒体,30,&H00FFFFFF,&H000000FF,&H28C16894,&H50E697CD,0,-1,0,0,100,100,0,0,1,1,0,7,25,100,18,1
+Style: 开头左上角,KaiTi,25,&H00FFFFFF,&H000000FF,&H289CE6AF,&H509CE6AF,0,0,0,0,100,100,0,0,1,0,1,7,7,100,5,1
+Style: music中文,方正舒体,55,&H00FFFFFF,&H000000FF,&H00C16894,&H00C06291,0,0,0,0,100,100,0,0,1,2,0,9,10,10,8,1
+Style: 备注,Microsoft YaHei,52,&H00FFFFFF,&H000000FF,&H28533B3B,&H500E0A00,0,0,0,0,100,100,0,0,1,1,2,8,0,10,5,1
+Style: english,Microsoft YaHei,38,&H00FFFFFF,&H000000FF,&H28533B3B,&H500E0A00,0,0,0,0,100,100,0,0,1,1,2,2,0,10,6,1
+Style: chinese,Microsoft YaHei,58,&H00FFFFFF,&H000000FF,&H28533B3B,&H500E0A00,0,0,0,0,100,100,0,0,1,1,2,2,0,10,42,1
+Style: chs&eng,STKaiti,20,&H00F5F5F5,&H00000000,&H00000000,&H80000000,0,0,0,0,100,100,0,0,0,1,1,2,0,0,2,1
+Style: chs,STKaiti,20,&H00F5F5F5,&HF0000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,0,1,1,2,0,0,8,1
+Style: zimu 1,Arial,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 片头2,Microsoft YaHei,90,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 片头1,Microsoft YaHei,80,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 特殊04,Microsoft YaHei,20,&H00000000,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,4,10,10,10,1
+Style: 特殊03,Microsoft YaHei,60,&H00C5B7EE,&H000000FF,&H00190A30,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 特殊02,Microsoft YaHei,60,&H00089EC5,&H000000FF,&H007DDBEA,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 特殊01,KaiTi,80,&H001D1E19,&H000000FF,&H008D8158,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 硬字幕02,百度综艺简体,80,&H00B4CAC5,&H000F0C06,&H004D63A7,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 硬字幕01,Microsoft YaHei,50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 普通字幕,Microsoft YaHei,80,&H00FFFFFF,&H000000FF,&H003F1B18,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 17,百度综艺简体,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 16,哥特式字体,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 15,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 14,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 13,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 11,Arial,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: 12,Microsoft YaHei,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 10,百度综艺简体,20,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,10,10,10,1
+Style: 彩蛋,FZHei-B01,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,2,1
+Style: Default,FZHei-B01,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,2,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:49.42,0:00:55.68,Default,,0000,0000,0000,,{\pos(192,120)}舊金山的最后一個黑人
+Dialogue: 0,0:01:10.47,0:01:11.53,Default,,0000,0000,0000,,賈絲敏\NJasmine?
+Dialogue: 0,0:01:13.47,0:01:16.25,Default,,0000,0000,0000,,賈絲敏  我們要遲到了  快過來\NJasmine! We gonna be late, come on.
+Dialogue: 0,0:01:17.39,0:01:18.41,Default,,0000,0000,0000,,我們走吧\NLet's go.
+Dialogue: 0,0:01:18.60,0:01:21.17,Default,,0000,0000,0000,,為什么他們有防護服穿  而我們沒有\NWhy do they have on these suits and we don't?
+Dialogue: 0,0:01:23.31,0:01:25.23,Default,,0000,0000,0000,,有些事正在我們面前發生\NSomething's going on right in our face.
+Dialogue: 0,0:01:25.23,0:01:27.40,Default,,0000,0000,0000,,你們卻天天盯著iPhone\NYou're so stuck on those iPhones,
+Dialogue: 0,0:01:27.40,0:01:29.80,Default,,0000,0000,0000,,Jphone 12s什么的\NJphone 12s or whatever,
+Dialogue: 0,0:01:30.03,0:01:31.64,Default,,0000,0000,0000,,那玩意兒能在你手里爆炸\Nblow up in your hand.
+Dialogue: 0,0:01:33.16,0:01:35.85,Default,,0000,0000,0000,,你用谷歌可查不到正在發生的事情\NYou can't Google what's going on right now.
+Dialogue: 0,0:01:36.45,0:01:38.39,Default,,0000,0000,0000,,你們在聽嗎\NAre y'all paying attention?
+Dialogue: 0,0:01:39.95,0:01:43.90,Default,,0000,0000,0000,,為什么他們有防護服穿  而我們沒有\NWhy do they have on these suits and we don't?
+Dialogue: 0,0:01:44.12,0:01:45.32,Default,,0000,0000,0000,,為什么啊\NWhy?
+Dialogue: 0,0:01:46.75,0:01:48.61,Default,,0000,0000,0000,,他們是來凈化這片水域的嗎\NThey here to clean this water?
+Dialogue: 0,0:01:50.46,0:01:54.24,Default,,0000,0000,0000,,這片水域已經又臟又臭五十年了\NWhen this water been dirtier than the Devil's mouth for 50 years.
+Dialogue: 0,0:01:54.34,0:01:56.12,Default,,0000,0000,0000,,現在他們想起來清理了\NAnd now they want to clean it?
+Dialogue: 0,0:01:56.51,0:01:58.87,Default,,0000,0000,0000,,他們沒安好心  各位\NThey got plans for us, man.
+Dialogue: 0,0:01:59.06,0:02:01.89,Default,,0000,0000,0000,,就跟喬治·杰森被解雇一樣\NLooking like George Jetson rejects.
+Dialogue: 0,0:01:59.06,0:02:01.89,Default,,0000,0000,0000,,{\an8}1962年美國動畫《杰森一家》中的人物  該動畫講述了住在未來的一家人的生活  故事中他的老板總是會以憤怒的方式解雇喬治  直到同一集結束時才再次聘用他
+Dialogue: 0,0:02:01.89,0:02:03.13,Default,,0000,0000,0000,,因為他們不行\N'Cause they weak!
+Dialogue: 0,0:02:03.89,0:02:05.30,Default,,0000,0000,0000,,心臟不行\NWeak hearts!
+Dialogue: 0,0:02:05.35,0:02:06.67,Default,,0000,0000,0000,,肺也不行\NWeak lungs!
+Dialogue: 0,0:02:07.31,0:02:10.13,Default,,0000,0000,0000,,不戴個面具都不能在這里呼吸\NCan't even breathe up here without a mask.
+Dialogue: 0,0:02:14.45,0:02:17.72,Default,,0000,0000,0000,,但我們為了得到凈化  經歷煉獄之苦\NBut we was put through hell to be purified.
+Dialogue: 0,0:02:19.28,0:02:21.48,Default,,0000,0000,0000,,你們懂我在說什么嗎  兄弟姐妹們\NYou know what I'm sayin', brothers and sisters?
+Dialogue: 0,0:02:21.62,0:02:24.06,Default,,0000,0000,0000,,老天  看看監獄把黑人折磨成什么樣了\NMan, it's crazy what jail will do to a nigga.
+Dialogue: 0,0:02:24.58,0:02:26.37,Default,,0000,0000,0000,,他們根本就不在乎這片水域\NThey don't care about their water, man,
+Dialogue: 0,0:02:26.37,0:02:27.46,Default,,0000,0000,0000,,這事有隱情\Nthere's something going on,
+Dialogue: 0,0:02:27.46,0:02:29.32,Default,,0000,0000,0000,,我們必須追根究底\Nwe gonna get to the bottom of it.
+Dialogue: 0,0:02:29.59,0:02:32.05,Default,,0000,0000,0000,,算他們走運  我如今是上帝的子民\NAnd they lucky I'm a man of God right now.
+Dialogue: 0,0:02:32.05,0:02:34.01,Default,,0000,0000,0000,,你覺得他每天早上都會排練這段話嗎\NYou think he rehearses this every morning?
+Dialogue: 0,0:02:34.01,0:02:36.16,Default,,0000,0000,0000,,否則我會給他們好看\NOr they would catch these hands.
+Dialogue: 0,0:02:36.72,0:02:38.87,Default,,0000,0000,0000,,感覺即興的成分更多\NSeems a bit more impromptu.
+Dialogue: 0,0:02:39.14,0:02:40.76,Default,,0000,0000,0000,,2019年了\N2019 out here!
+Dialogue: 0,0:02:40.76,0:02:42.39,Default,,0000,0000,0000,,我們為這里的污水問題奔走的時候\NWe been yellin' about this water
+Dialogue: 0,0:02:42.39,0:02:44.17,Default,,0000,0000,0000,,他們還沒出生呢\Nsince before they were born.
+Dialogue: 0,0:02:45.31,0:02:47.25,Default,,0000,0000,0000,,那時候他們還沒出生呢\NBefore they were born!
+Dialogue: 0,0:02:49.65,0:02:52.05,Default,,0000,0000,0000,,公交車怎么還不來  我們來不及了\NWhere's this bus, man? We're not gonna make it.
+Dialogue: 0,0:02:52.23,0:02:54.39,Default,,0000,0000,0000,,你們離我們遠點\NY'all leave us the hell alone.
+Dialogue: 0,0:02:54.49,0:02:56.80,Default,,0000,0000,0000,,除非你們真的是來幫我們的\NUnless y'all really here to help us.
+Dialogue: 0,0:02:56.95,0:02:58.06,Default,,0000,0000,0000,,我們會到的\NWe'll get there.
+Dialogue: 0,0:02:58.37,0:03:00.28,Default,,0000,0000,0000,,他們另有目的  各位\NThey got plans for us, man.
+Dialogue: 0,0:03:00.28,0:03:01.41,Default,,0000,0000,0000,,我們來不及了  兄弟\NWe're not gonna make it, bro.
+Dialogue: 0,0:03:01.41,0:03:02.79,Default,,0000,0000,0000,,但是對你我沒有好處\NNot for you and me.
+Dialogue: 0,0:03:02.79,0:03:04.20,Default,,0000,0000,0000,,所以我勸諸位啊\NSo I urge you!
+Dialogue: 0,0:03:04.20,0:03:05.94,Default,,0000,0000,0000,,為你們的土地抗爭\NFight for your land!
+Dialogue: 0,0:03:06.87,0:03:08.69,Default,,0000,0000,0000,,為你們的家園抗爭\NFight for your home!
+Dialogue: 0,0:03:09.54,0:03:12.24,Default,,0000,0000,0000,,-為你們的...  -我們滑滑板吧\N- Fight for your... - Let's skate.
+Dialogue: 0,0:03:24.89,0:03:25.96,Default,,0000,0000,0000,,這里\NThis here?
+Dialogue: 0,0:03:26.98,0:03:28.88,Default,,0000,0000,0000,,這里就是邊境了  兄弟\NThis is the edge, bro!
+Dialogue: 0,0:03:29.98,0:03:33.42,Default,,0000,0000,0000,,命定擴張論的最后邊疆\NThe final frontier of Manifest Destiny.
+Dialogue: 0,0:03:29.98,0:03:33.42,Default,,0000,0000,0000,,{\an8}19世紀美國人的一種信條\N認為對外擴張是美國的天命
+Dialogue: 0,0:03:34.07,0:03:35.84,Default,,0000,0000,0000,,城市的最后界限\NLast edge of the city.
+Dialogue: 0,0:03:37.11,0:03:38.53,Default,,0000,0000,0000,,兄弟  再走兩步\NMan, two steps further,
+Dialogue: 0,0:03:38.53,0:03:41.18,Default,,0000,0000,0000,,你就要去喝那骯臟的咸水了\Nyou'll be drinking that filthy saltwater.
+Dialogue: 0,0:03:42.62,0:03:44.73,Default,,0000,0000,0000,,但我們造了這些船\NBut we built these ships.
+Dialogue: 0,0:03:45.04,0:03:46.77,Default,,0000,0000,0000,,疏浚了這些運河\NDredged these canals.
+Dialogue: 0,0:03:47.25,0:03:50.82,Default,,0000,0000,0000,,在舊金山這塊他們從不知道存在的土地上\NIn the San Francisco they never knew existed.
+Dialogue: 0,0:04:00.14,0:04:03.50,Default,,0000,0000,0000,,現在他們才來造點新東西是吧\NAnd now they come to build something new?
+Dialogue: 0,0:04:05.47,0:04:10.09,Default,,0000,0000,0000,,整個街區一半落后  一半先進\NWhole blocks half in the past, half in the future.
+Dialogue: 0,0:04:12.27,0:04:15.68,Default,,0000,0000,0000,,但如果你闖入他們的舊金山\NBut should you venture into their San Francisco,
+Dialogue: 0,0:04:16.03,0:04:18.01,Default,,0000,0000,0000,,被他們掠奪黃金的地方\Nthe one they pillaged for gold!
+Dialogue: 0,0:04:19.45,0:04:21.26,Default,,0000,0000,0000,,在那座虛偽之城\NRemember your truth!
+Dialogue: 0,0:04:21.78,0:04:23.68,Default,,0000,0000,0000,,堅守你的真理\NIn the city of facades.
+Dialogue: 0,0:05:15.38,0:05:16.94,Default,,0000,0000,0000,,帶上我\NTake me with you!
+Dialogue: 0,0:05:18.55,0:05:20.36,Default,,0000,0000,0000,,帶上我  伙計\NTake me with you, man!
+Dialogue: 0,0:05:20.72,0:05:21.99,Default,,0000,0000,0000,,拜托  我們要去哪\NCome on, where are we going?
+Dialogue: 0,0:05:22.09,0:05:23.41,Default,,0000,0000,0000,,我們要去哪\NWhere are we going?
+Dialogue: 0,0:05:25.93,0:05:28.33,Default,,0000,0000,0000,,來吧  我來了  我來了\NCome on, I'm coming! I'm coming!
+Dialogue: 0,0:05:35.02,0:05:36.80,Default,,0000,0000,0000,,看看他們看你的樣子\NLook at them look at you.
+Dialogue: 0,0:05:37.57,0:05:39.38,Default,,0000,0000,0000,,居高臨下  不屑一顧\NLook down at you.
+Dialogue: 0,0:05:40.11,0:05:41.76,Default,,0000,0000,0000,,但這些房子都是我們造的\NBut we built them!
+Dialogue: 0,0:05:42.70,0:05:44.47,Default,,0000,0000,0000,,我們就是這些房子\NWe are these homes!
+Dialogue: 0,0:05:45.37,0:05:46.81,Default,,0000,0000,0000,,他們的眼睛\NTheir eyes...
+Dialogue: 0,0:05:48.66,0:05:50.31,Default,,0000,0000,0000,,他們的尖頂\NTheir pointed brims...
+Dialogue: 0,0:05:52.00,0:05:53.98,Default,,0000,0000,0000,,他們搬家  我們也要搬家\NWe move if they move.
+Dialogue: 0,0:05:56.92,0:05:59.36,Default,,0000,0000,0000,,每一塊木頭都浸著我們的汗水\NOur sweat soaked in the wood.
+Dialogue: 0,0:06:01.51,0:06:03.16,Default,,0000,0000,0000,,以我們的意象鍍了金\NGilded in our image.
+Dialogue: 0,0:06:07.72,0:06:09.54,Default,,0000,0000,0000,,這是我們的家\NThis is our home!
+Dialogue: 0,0:06:10.97,0:06:12.46,Default,,0000,0000,0000,,我們的家\NOur home!
+Dialogue: 0,0:06:15.69,0:06:17.17,Default,,0000,0000,0000,,我們的家\NOur home.
+Dialogue: 0,0:06:21.65,0:06:22.76,Default,,0000,0000,0000,,謝了\NThanks.
+Dialogue: 0,0:06:27.37,0:06:28.85,Default,,0000,0000,0000,,你確定他們走了嗎\NAre you sure they're gone?
+Dialogue: 0,0:06:42.92,0:06:43.78,Default,,0000,0000,0000,,吉姆\NJim?
+Dialogue: 0,0:06:44.80,0:06:46.12,Default,,0000,0000,0000,,他們的車不在了\NI mean, their car is gone.
+Dialogue: 0,0:06:47.84,0:06:49.50,Default,,0000,0000,0000,,我們去后門看看  兄弟\NLet's check the back, man.
+Dialogue: 0,0:06:50.72,0:06:51.76,Default,,0000,0000,0000,,早上好\NGood morning.
+Dialogue: 0,0:06:51.77,0:06:52.83,Default,,0000,0000,0000,,你們好嗎\NHow are you?
+Dialogue: 0,0:06:55.85,0:06:57.55,Default,,0000,0000,0000,,還記得他們在廚房那次嗎\NRemember that time they were in the kitchen?
+Dialogue: 0,0:06:59.02,0:06:59.80,Default,,0000,0000,0000,,吉姆\NJim!
+Dialogue: 0,0:07:01.23,0:07:02.43,Default,,0000,0000,0000,,還記得廚房那次嗎\NRemember the kitchen?
+Dialogue: 0,0:07:03.82,0:07:04.97,Default,,0000,0000,0000,,當然記得\NYeah, sure.
+Dialogue: 0,0:07:06.78,0:07:07.76,Default,,0000,0000,0000,,但是兄弟...\NBut, bro...
+Dialogue: 0,0:07:08.95,0:07:12.39,Default,,0000,0000,0000,,我不是說過這些欄桿是藍紫色嗎  不是黑色\NDidn't I tell you these railings are periwinkle, not black.
+Dialogue: 0,0:07:17.46,0:07:18.65,Default,,0000,0000,0000,,嗯  知道了\NYeah, I got it.
+Dialogue: 0,0:07:20.09,0:07:22.53,Default,,0000,0000,0000,,我們不能再兩周來一次了  得更勤點\NWe gotta start coming more than every two weeks, bro.
+Dialogue: 0,0:07:27.88,0:07:30.04,Default,,0000,0000,0000,,這破花園簡直一團糟\NThis fuckin' garden's a nightmare.
+Dialogue: 0,0:07:30.51,0:07:32.46,Default,,0000,0000,0000,,下次來我可以帶上我爺爺的工具\NI'll bring my grandpa's tools next time.
+Dialogue: 0,0:07:32.89,0:07:34.04,Default,,0000,0000,0000,,你千萬得帶上\NPlease do.
+Dialogue: 0,0:07:46.28,0:07:47.85,Default,,0000,0000,0000,,墻紙在剝落\NWallpaper's chipping.
+Dialogue: 0,0:07:50.03,0:07:51.93,Default,,0000,0000,0000,,這房子要被他們毀了\NThese people are killing this house.
+Dialogue: 0,0:07:53.33,0:07:54.91,Default,,0000,0000,0000,,但你不能進去\NYou're not goin' in though.
+Dialogue: 0,0:07:54.91,0:07:55.85,Default,,0000,0000,0000,,吉姆\NJim?
+Dialogue: 0,0:07:57.12,0:07:58.23,Default,,0000,0000,0000,,我覺得...\NI mean...
+Dialogue: 0,0:07:59.87,0:08:01.07,Default,,0000,0000,0000,,我覺得...\NI mean...
+Dialogue: 0,0:08:01.38,0:08:02.40,Default,,0000,0000,0000,,不進去了\NNo?
+Dialogue: 0,0:08:05.34,0:08:06.78,Default,,0000,0000,0000,,但他們肯定走了\NThey're definitely gone, though.
+Dialogue: 0,0:08:07.59,0:08:09.03,Default,,0000,0000,0000,,這次最好動作快點\NBetter be quick this time.
+Dialogue: 0,0:08:10.05,0:08:11.08,Default,,0000,0000,0000,,是啊  我知道\NYeah, I know.
+Dialogue: 0,0:08:11.72,0:08:12.75,Default,,0000,0000,0000,,這事兒快不了\NTakes time.
+Dialogue: 0,0:08:13.72,0:08:14.71,Default,,0000,0000,0000,,是啊  我知道\NYeah, I know.
+Dialogue: 0,0:08:15.27,0:08:16.54,Default,,0000,0000,0000,,我去老地方\NI'll be at my spot.
+Dialogue: 0,0:08:17.02,0:08:18.13,Default,,0000,0000,0000,,好\NAll right.
+Dialogue: 0,0:08:20.52,0:08:21.63,Default,,0000,0000,0000,,快點\NQuick.
+Dialogue: 0,0:08:22.15,0:08:23.17,Default,,0000,0000,0000,,行\NOkay.
+Dialogue: 0,0:08:55.93,0:08:57.68,Default,,0000,0000,0000,,-老天爺  -親愛的\N- Jesus, man! - Honey.
+Dialogue: 0,0:08:57.68,0:08:59.35,Default,,0000,0000,0000,,你快給我下來\NJust get the heck out of here, man.
+Dialogue: 0,0:08:59.35,0:09:01.10,Default,,0000,0000,0000,,-什么鬼  -他又沒傷人  梅爾\N- What the fuck? - He's not hurting anyone, Mar.
+Dialogue: 0,0:09:01.10,0:09:02.56,Default,,0000,0000,0000,,現在他又漆上房子了\NHe's painting the house now?
+Dialogue: 0,0:09:02.56,0:09:03.44,Default,,0000,0000,0000,,是啊\NWell, yeah.
+Dialogue: 0,0:09:03.44,0:09:06.42,Default,,0000,0000,0000,,別再修繕我的房子了\NStop fixing my house!
+Dialogue: 0,0:09:06.48,0:09:08.26,Default,,0000,0000,0000,,我都快弄好了  再等等\NI'm almost done, just hold on.
+Dialogue: 0,0:09:08.61,0:09:10.65,Default,,0000,0000,0000,,你怎么不去漆鄰居家的房子\NWhy don't you just paint the neighbors' houses?
+Dialogue: 0,0:09:10.65,0:09:12.05,Default,,0000,0000,0000,,他們家比我們家還破\NTheirs are worse than ours.
+Dialogue: 0,0:09:12.11,0:09:13.78,Default,,0000,0000,0000,,再等一會兒就好\NJust hold on one second.
+Dialogue: 0,0:09:13.78,0:09:15.22,Default,,0000,0000,0000,,在某種程度上\NI mean, we appreciate it,
+Dialogue: 0,0:09:15.28,0:09:17.03,Default,,0000,0000,0000,,我們是很感謝你\Nin some way, but, yeah...
+Dialogue: 0,0:09:17.04,0:09:18.33,Default,,0000,0000,0000,,但你這樣很奇怪  小伙子\NIt's weird, man!
+Dialogue: 0,0:09:18.33,0:09:19.65,Default,,0000,0000,0000,,我都快弄完了\NI'm almost done.
+Dialogue: 0,0:09:20.41,0:09:22.29,Default,,0000,0000,0000,,我們會報警的  小伙子\NLook, we will call the cops, man.
+Dialogue: 0,0:09:22.29,0:09:23.58,Default,,0000,0000,0000,,這次我是認真的\NAnd I mean it this time.
+Dialogue: 0,0:09:23.58,0:09:25.88,Default,,0000,0000,0000,,不  我們不會報警的\NNo, we're not gonna call the cops.
+Dialogue: 0,0:09:25.88,0:09:28.30,Default,,0000,0000,0000,,我們不會報警  但你別再來了\NWe're not calling the cops, just stop coming back.
+Dialogue: 0,0:09:28.30,0:09:31.37,Default,,0000,0000,0000,,我快弄好了  再等一下  拜托  就一下\NI'm almost done, hold on, please, hold on.
+Dialogue: 0,0:09:31.63,0:09:34.04,Default,,0000,0000,0000,,從我的鳥池上下來\NJust get off my fucking birdie bath.
+Dialogue: 0,0:09:35.18,0:09:36.89,Default,,0000,0000,0000,,-別啊...  -下來  小伙子\N- No, just... - Get outta here, man.
+Dialogue: 0,0:09:36.89,0:09:39.00,Default,,0000,0000,0000,,-三塊錢的菜啊  -好吧\N- Those were $3. - Fine.
+Dialogue: 0,0:09:39.64,0:09:40.89,Default,,0000,0000,0000,,那我下次再來弄完\NI'll finish it next time.
+Dialogue: 0,0:09:40.89,0:09:42.23,Default,,0000,0000,0000,,-天哪  -還有下次\N- God! - Next time?
+Dialogue: 0,0:09:42.23,0:09:43.67,Default,,0000,0000,0000,,你就...\NJust get...
+Dialogue: 0,0:09:43.77,0:09:45.10,Default,,0000,0000,0000,,別再踩我的鳥池了\NGet the heck off my birdie bath!
+Dialogue: 0,0:09:45.10,0:09:47.09,Default,,0000,0000,0000,,記得給后院的植物澆水  不然我來澆\NJust water the plants in the back or I will.
+Dialogue: 0,0:09:49.03,0:09:52.14,Default,,0000,0000,0000,,兄弟  你本該負責把風的\NBro! You were supposed to be the lookout!
+Dialogue: 0,0:09:52.95,0:09:54.68,Default,,0000,0000,0000,,明明是你一直在擔心\NYou were the one that was so worried.
+Dialogue: 0,0:09:54.82,0:09:56.14,Default,,0000,0000,0000,,我分心了\NI got distracted.
+Dialogue: 0,0:09:57.70,0:09:58.73,Default,,0000,0000,0000,,兄弟\NBro!
+Dialogue: 0,0:09:59.41,0:10:01.27,Default,,0000,0000,0000,,如果政府是對的怎么辦\NWhat if OG is right though?
+Dialogue: 0,0:10:01.75,0:10:03.94,Default,,0000,0000,0000,,你真的不能再吃這里的魚了\NYou really gotta stop eating the fish out there.
+Dialogue: 0,0:10:04.17,0:10:05.44,Default,,0000,0000,0000,,我覺得沒事\NI think it's fine.
+Dialogue: 0,0:10:05.88,0:10:07.32,Default,,0000,0000,0000,,哪條魚里還沒點汞\NAll fish has mercury.
+Dialogue: 0,0:10:08.04,0:10:12.16,Default,,0000,0000,0000,,我知道  但我看見過一只有老二的海鷗\NI know, but I saw a seagull with a dick, bro.
+Dialogue: 0,0:10:13.13,0:10:14.70,Default,,0000,0000,0000,,那我猜那是只雄鳥\NWell, so I guess it's a male.
+Dialogue: 0,0:10:15.80,0:10:18.62,Default,,0000,0000,0000,,不  兄弟  我是說像人類的老二\NNo, like, bro, like a human dick.
+Dialogue: 0,0:10:21.14,0:10:23.98,Default,,0000,0000,0000,,一團討厭的亂頭發\NNasty-ass tumbleweave. Pussy.
+Dialogue: 0,0:10:23.98,0:10:25.64,Default,,0000,0000,0000,,-挺野啊  兄弟  -想挑事啊  伙計\N- Wild, bro. - Wassup, nigga?
+Dialogue: 0,0:10:25.65,0:10:26.77,Default,,0000,0000,0000,,-我沒想干什么  -把我的鞋擦干凈怎么樣\N- Ain't tryin' do nothin'. - Scuff my shoes up, huh?
+Dialogue: 0,0:10:26.77,0:10:28.17,Default,,0000,0000,0000,,我沒想過要做那破事...\NI ain't tryin' do that bullshit...
+Dialogue: 0,0:10:26.77,0:10:28.31,Default,,0000,0000,0000,,{\an8}別耍把戲了  當心我把你的臉打爛\NStop playin' before I slap the shit out your face.
+Dialogue: 0,0:10:28.40,0:10:29.92,Default,,0000,0000,0000,,閉上你的臭嘴吧  伙計\NMan, shut your ass up, nigga.
+Dialogue: 0,0:10:30.61,0:10:33.53,Default,,0000,0000,0000,,行了  我才不要追你  你玩得太過了\NAll right, I ain't finna chase you, you play too much, bro.
+Dialogue: 0,0:10:33.53,0:10:35.82,Default,,0000,0000,0000,,我沒揍你一頓算你走運  兄弟\NYou lucky I don't beat your ass out here, bro.
+Dialogue: 0,0:10:35.82,0:10:37.07,Default,,0000,0000,0000,,科菲\NKofi!
+Dialogue: 0,0:10:37.07,0:10:38.78,Default,,0000,0000,0000,,-最近如何  兄弟  -你們怎么樣\N- What's good, brother? - What's up with y'all?
+Dialogue: 0,0:10:38.78,0:10:41.10,Default,,0000,0000,0000,,我昨晚看見媽媽她們了\NYou know I seen Moms last night, right?
+Dialogue: 0,0:10:41.12,0:10:43.44,Default,,0000,0000,0000,,她看起來頭有點禿了\NShe was looking like she was missing a little bit on the top.
+Dialogue: 0,0:10:44.66,0:10:46.77,Default,,0000,0000,0000,,我們可都用一樣的水洗澡  吉姆\NI mean we shower in the same water, Jim.
+Dialogue: 0,0:10:53.30,0:10:55.87,Default,,0000,0000,0000,,所以現在伙計們都一起洗澡了\NSo niggas takin' showers together now?
+Dialogue: 0,0:10:57.05,0:10:58.49,Default,,0000,0000,0000,,大概是吧\NProbably was.
+Dialogue: 0,0:10:59.55,0:11:00.83,Default,,0000,0000,0000,,有點基\NThat's fruity.
+Dialogue: 0,0:11:02.89,0:11:05.10,Default,,0000,0000,0000,,我是在勸他別吃魚了\NI was trying to tell him not to eat the fish,
+Dialogue: 0,0:11:05.10,0:11:06.73,Default,,0000,0000,0000,,因為水有毒\Nbecause the water is toxic.
+Dialogue: 0,0:11:08.31,0:11:11.80,Default,,0000,0000,0000,,那是因為他們就在那兒造的原子彈  老兄\NThat's 'cause they built the atomic bomb right there, nigga.
+Dialogue: 0,0:11:24.00,0:11:26.02,Default,,0000,0000,0000,,我覺得那不是真的\NI don't think that's true.
+Dialogue: 0,0:11:26.96,0:11:28.02,Default,,0000,0000,0000,,他說什么\NWhat'd he say?
+Dialogue: 0,0:11:28.21,0:11:29.79,Default,,0000,0000,0000,,見鬼  首先  那肯定是真的\NDamn. First thing, that's true.
+Dialogue: 0,0:11:29.79,0:11:30.71,Default,,0000,0000,0000,,兄弟  你的鞋才不是真的呢\NBro, them shoes ain't true,
+Dialogue: 0,0:11:30.71,0:11:33.15,Default,,0000,0000,0000,,我就知道你這副圣人樣子無話可說\NI know your Jesus-lookin' ass ain't talkin', bro.
+Dialogue: 0,0:11:33.50,0:11:35.80,Default,,0000,0000,0000,,-那東西是仿的  -絕對是仿的\N- Them things is phony. - They're definitely phony.
+Dialogue: 0,0:11:36.19,0:11:37.34,Default,,0000,0000,0000,,親戚怎么樣  伙計\NWhat about cuz, man?
+Dialogue: 0,0:11:37.34,0:11:38.55,Default,,0000,0000,0000,,你說好昨晚打電話給我的\NYou was supposed to call me last night.
+Dialogue: 0,0:11:38.55,0:11:39.55,Default,,0000,0000,0000,,-發生了什么...  -這家伙很不靠譜\N- What happened with... - Oh, yeah, dude is a cat.
+Dialogue: 0,0:11:39.55,0:11:41.20,Default,,0000,0000,0000,,看看他那鳥窩頭  放鴿子誰能比過他\NYou see his hair, he might be a cheetah.
+Dialogue: 0,0:11:47.35,0:11:50.05,Default,,0000,0000,0000,,{\an8}出自1950年美國電影《死亡漩渦》
+Dialogue: 0,0:11:47.35,0:11:48.19,Default,,0000,0000,0000,,需要幫助嗎\NCan I help you?
+Dialogue: 0,0:11:48.19,0:11:50.05,Default,,0000,0000,0000,,我要見負責人\NI'd like to see the man in charge.
+Dialogue: 0,0:11:50.61,0:11:51.40,Default,,0000,0000,0000,,這邊\NIn here.
+Dialogue: 0,0:11:51.40,0:11:53.61,Default,,0000,0000,0000,,他帶他走進了警長辦公室\NHe's walking him into the Chief's office.
+Dialogue: 0,0:11:53.61,0:11:55.09,Default,,0000,0000,0000,,天哪\NOh, dear.
+Dialogue: 0,0:11:57.86,0:11:59.35,Default,,0000,0000,0000,,我想報告一起謀殺案\NI want to report a murder.
+Dialogue: 0,0:11:59.74,0:12:01.52,Default,,0000,0000,0000,,-坐下  -現在是誰說話\N- Sit down. - Now, who's that?
+Dialogue: 0,0:12:02.74,0:12:04.31,Default,,0000,0000,0000,,埃德加·奧瑞恩\NEdgar O'Ryan.
+Dialogue: 0,0:12:04.41,0:12:05.74,Default,,0000,0000,0000,,這起罪案是在哪發生的\NWhere was this murder committed?
+Dialogue: 0,0:12:05.75,0:12:07.81,Default,,0000,0000,0000,,-埃德加·奧瑞恩  -舊金山\N- Edmund O'Brien. - San Francisco.
+Dialogue: 0,0:12:08.08,0:12:10.08,Default,,0000,0000,0000,,是他啊\NHim, yeah, yeah.
+Dialogue: 0,0:12:10.08,0:12:11.40,Default,,0000,0000,0000,,被害人是誰\NWho was murdered?
+Dialogue: 0,0:12:13.75,0:12:15.45,Default,,0000,0000,0000,,是我\NI was.
+Dialogue: 0,0:12:19.76,0:12:20.83,Default,,0000,0000,0000,,什么\NWhat?
+Dialogue: 0,0:12:21.34,0:12:23.70,Default,,0000,0000,0000,,-怎么會  -接著看\N- How? - Just watch it.
+Dialogue: 0,0:12:23.81,0:12:25.54,Default,,0000,0000,0000,,我沒有太多的時間\NI don't have very much time.
+Dialogue: 0,0:12:27.90,0:12:29.10,Default,,0000,0000,0000,,把啤酒遞給我  孩子\NHand me my beer, son.
+Dialogue: 0,0:12:29.10,0:12:30.59,Default,,0000,0000,0000,,好的  先生\NYes, sir.
+Dialogue: 0,0:12:33.11,0:12:38.43,Default,,0000,0000,0000,,奧瑞恩在他的辦公室里抽煙\NO'Brien is smoking a cigarette in his office.
+Dialogue: 0,0:12:39.24,0:12:42.85,Default,,0000,0000,0000,,-秘書在休息  -她漂亮嗎\N- Secretary's perched. - She pretty?
+Dialogue: 0,0:12:45.58,0:12:47.23,Default,,0000,0000,0000,,-怎么樣  -我覺得漂亮\N- Yeah? - I'd say... I'd say she is.
+Dialogue: 0,0:12:50.58,0:12:51.65,Default,,0000,0000,0000,,老不修\NYou dog.
+Dialogue: 0,0:12:54.50,0:12:55.57,Default,,0000,0000,0000,,蒙特\NHey, Mont!
+Dialogue: 0,0:12:57.09,0:12:58.11,Default,,0000,0000,0000,,蒙特格馬利\NMontgomery!
+Dialogue: 0,0:12:59.17,0:13:02.33,Default,,0000,0000,0000,,我該怎么把那些扔牛角包的人趕出房子\NHow do I get their old croissant-throwing asses out of the house?
+Dialogue: 0,0:13:05.14,0:13:07.08,Default,,0000,0000,0000,,要是我在他們桌子上撒尿呢\NWhat if I peed on their table?
+Dialogue: 0,0:13:09.68,0:13:12.34,Default,,0000,0000,0000,,如果我爬到鳥池上\NLike, what if I climbed up the birdie bath,
+Dialogue: 0,0:13:13.27,0:13:16.30,Default,,0000,0000,0000,,闖進去  然后在他們的黃色小桌子上撒尿呢\Nbroke in and just peed all over that stupid little yellow table?
+Dialogue: 0,0:13:18.15,0:13:20.39,Default,,0000,0000,0000,,那不會把地板毀了嗎\NWouldn't that ruin the floors?
+Dialogue: 0,0:13:22.36,0:13:24.52,Default,,0000,0000,0000,,嗯  你說得有道理\NYeah, I guess you got a point there.
+Dialogue: 0,0:13:38.30,0:13:41.16,Default,,0000,0000,0000,,你覺得他們會讓我住在那嗎\NYou think they'd let me live there as, like,
+Dialogue: 0,0:13:41.63,0:13:43.83,Default,,0000,0000,0000,,作為房子的管理員\Na caretaker for the house?
+Dialogue: 0,0:13:47.64,0:13:48.71,Default,,0000,0000,0000,,不會\NNo.
+Dialogue: 0,0:13:50.93,0:13:52.38,Default,,0000,0000,0000,,太操蛋了\NThat's fucked up.
+Dialogue: 0,0:13:54.90,0:13:58.40,Default,,0000,0000,0000,,至少我覺得  我把那房子維護得挺好的\NI mean, I take pretty good care of the house, I think so at least.
+Dialogue: 0,0:13:58.40,0:13:59.51,Default,,0000,0000,0000,,是的  沒錯\NYeah, you do.
+Dialogue: 0,0:14:01.44,0:14:03.01,Default,,0000,0000,0000,,我們歡迎你住在這  吉姆\NWe like having you here, Jim.
+Dialogue: 0,0:14:03.82,0:14:04.81,Default,,0000,0000,0000,,我知道  兄弟\NI know, bro.
+Dialogue: 0,0:14:06.78,0:14:07.68,Default,,0000,0000,0000,,但是\NBut...
+Dialogue: 0,0:14:09.24,0:14:11.15,Default,,0000,0000,0000,,金窩銀窩不如自己的狗窩\NYou know there's no place like home.
+Dialogue: 0,0:14:14.17,0:14:15.11,Default,,0000,0000,0000,,是啊\NYeah.
+Dialogue: 0,0:14:16.79,0:14:18.19,Default,,0000,0000,0000,,晚安  桃樂絲\NGoodnight, Dorothy.
+Dialogue: 0,0:14:19.17,0:14:22.21,Default,,0000,0000,0000,,? 在家庭聚會上 ?\N♪ At the family reunion ♪
+Dialogue: 0,0:14:22.22,0:14:24.84,Default,,0000,0000,0000,,? 我們要隆重介紹 ?\N♪ Who we introducing ♪
+Dialogue: 0,0:14:24.84,0:14:26.72,Default,,0000,0000,0000,,? 我有位堂兄叫箭頭 ?\N♪ I got a cousin Arrow ♪
+Dialogue: 0,0:14:26.72,0:14:29.46,Default,,0000,0000,0000,,? 他過去常舉辦宴會 ?\N♪ He used to have a feast ♪
+Dialogue: 0,0:14:29.60,0:14:31.10,Default,,0000,0000,0000,,? 他跟狐朋狗友打交道 ?\N♪ He was with the shit ♪
+Dialogue: 0,0:14:31.10,0:14:33.52,Default,,0000,0000,0000,,? 現在這位兄弟成了一位神父 ?\N♪ Now that nigga is a priest ♪
+Dialogue: 0,0:14:33.52,0:14:36.63,Default,,0000,0000,0000,,? 在家庭聚會上 ?\N♪ At the family reunion ♪
+Dialogue: 0,0:15:27.49,0:15:29.35,Default,,0000,0000,0000,,為什么他們有防護服穿  而我們沒有\NWhy they got suits on and we don't?
+Dialogue: 0,0:15:30.28,0:15:31.23,Default,,0000,0000,0000,,先生\NSir?
+Dialogue: 0,0:15:31.37,0:15:33.19,Default,,0000,0000,0000,,我們是來保護你的\NWe're here for your protection.
+Dialogue: 0,0:15:33.33,0:15:34.85,Default,,0000,0000,0000,,我們是來幫你的\NWe're here to help you.
+Dialogue: 0,0:15:35.96,0:15:37.25,Default,,0000,0000,0000,,你們來幫我\NYou here to help me?
+Dialogue: 0,0:15:37.25,0:15:40.57,Default,,0000,0000,0000,,幫我  這片水域已經又臟又臭多少年了\NMe? This water been filthier than the Devil's mouth for years!
+Dialogue: 0,0:15:41.92,0:15:42.86,Default,,0000,0000,0000,,先生\NSir.
+Dialogue: 0,0:15:49.09,0:15:49.95,Default,,0000,0000,0000,,對\NYeah.
+Dialogue: 0,0:16:00.56,0:16:01.42,Default,,0000,0000,0000,,可以嗎\NAll right?
+Dialogue: 0,0:16:02.48,0:16:03.59,Default,,0000,0000,0000,,小的\NSmall guy.
+Dialogue: 0,0:16:03.69,0:16:04.72,Default,,0000,0000,0000,,這條很好\NHe's perfect.
+Dialogue: 0,0:16:09.82,0:16:11.68,Default,,0000,0000,0000,,你今天早上有寫點什么嗎\NYou get any writing done this morning?
+Dialogue: 0,0:16:15.54,0:16:16.77,Default,,0000,0000,0000,,寫作就是重寫\NWriting is rewriting.
+Dialogue: 0,0:16:20.12,0:16:21.57,Default,,0000,0000,0000,,這是整個過程的一部分\NIt's all part of the process.
+Dialogue: 0,0:16:24.09,0:16:25.36,Default,,0000,0000,0000,,是啊  不過你沒問題\NYeah, you got it, though.
+Dialogue: 0,0:16:27.97,0:16:29.03,Default,,0000,0000,0000,,是啊\NYeah, man.
+Dialogue: 0,0:16:50.24,0:16:51.56,Default,,0000,0000,0000,,搞什么\NWhat the f...
+Dialogue: 0,0:16:58.87,0:17:00.73,Default,,0000,0000,0000,,你們都在這住了十二年了\NY'all been here 12 years,
+Dialogue: 0,0:17:00.79,0:17:02.90,Default,,0000,0000,0000,,還是不會好好維護這房子\Nstill can't take care of this house.
+Dialogue: 0,0:17:14.30,0:17:15.29,Default,,0000,0000,0000,,保羅\NHey, Paul.
+Dialogue: 0,0:17:19.98,0:17:20.88,Default,,0000,0000,0000,,我扶著你\NI got you.
+Dialogue: 0,0:17:23.77,0:17:25.01,Default,,0000,0000,0000,,吃你的香蕉\NEat your banana.
+Dialogue: 0,0:17:25.77,0:17:26.88,Default,,0000,0000,0000,,去你的\NFuck you.
+Dialogue: 0,0:17:28.90,0:17:30.39,Default,,0000,0000,0000,,你是個好男人\NYou're a nice man.
+Dialogue: 0,0:17:32.24,0:17:33.39,Default,,0000,0000,0000,,你是個好女人\NYou're a nice woman.
+Dialogue: 0,0:17:33.99,0:17:35.56,Default,,0000,0000,0000,,但是我不認識你\NBut I don't know you.
+Dialogue: 0,0:17:40.75,0:17:41.90,Default,,0000,0000,0000,,是嗎\NWell, yeah.
+Dialogue: 0,0:17:42.46,0:17:44.23,Default,,0000,0000,0000,,其實  你跟我很熟了\NYou know me pretty well, actually.
+Dialogue: 0,0:17:45.88,0:17:49.03,Default,,0000,0000,0000,,但你不是我丈夫\NBut you aren't my husband.
+Dialogue: 0,0:17:50.67,0:17:52.12,Default,,0000,0000,0000,,你對我來說太年輕了\NYou're a little too young for me.
+Dialogue: 0,0:17:56.18,0:17:57.58,Default,,0000,0000,0000,,我的確很年輕\NI am young.
+Dialogue: 0,0:17:58.97,0:18:00.58,Default,,0000,0000,0000,,我一直很年輕\NI'm always young.
+Dialogue: 0,0:18:03.27,0:18:05.38,Default,,0000,0000,0000,,你是個好男人\NYou're a nice man.
+Dialogue: 0,0:18:06.02,0:18:07.01,Default,,0000,0000,0000,,謝謝夸獎\NThank you.
+Dialogue: 0,0:18:08.19,0:18:09.38,Default,,0000,0000,0000,,你是個好女人\NYou're a nice woman.
+Dialogue: 0,0:18:09.82,0:18:13.03,Default,,0000,0000,0000,,你這個軟趴趴的廢物\NYou old marshmallow, cream puff ass,
+Dialogue: 0,0:18:13.03,0:18:16.49,Default,,0000,0000,0000,,娘娘腔的廢物\Ncandied yam-ass nigga, cream puff-ass nigga.
+Dialogue: 0,0:18:16.49,0:18:18.18,Default,,0000,0000,0000,,閉嘴吧  孬種\NShut up, bitch, bro.
+Dialogue: 0,0:18:18.28,0:18:20.06,Default,,0000,0000,0000,,你個孬種  聽好了\NYou bitch. Hold this shit.
+Dialogue: 0,0:18:20.16,0:18:22.00,Default,,0000,0000,0000,,我就該扯爛你的臟辮\NI should snatch your one-ass dread,
+Dialogue: 0,0:18:22.00,0:18:25.23,Default,,0000,0000,0000,,你他媽看起來就像拉斯塔法里教徒\Nlookin' like a fuckin' Rastafarian sperm.
+Dialogue: 0,0:18:28.96,0:18:30.38,Default,,0000,0000,0000,,你們煩死了\NYou got me fucked up.
+Dialogue: 0,0:18:30.38,0:18:31.92,Default,,0000,0000,0000,,我們煩死了  沒錯\NWe got you fucked up! We did!
+Dialogue: 0,0:18:31.92,0:18:33.16,Default,,0000,0000,0000,,你就打算說這個\NThat's all you gotta say?
+Dialogue: 0,0:18:33.17,0:18:34.51,Default,,0000,0000,0000,,伙計  那我該怎么做  掉頭就走\NMan, what I'm supposed to do, take off?
+Dialogue: 0,0:18:34.51,0:18:35.72,Default,,0000,0000,0000,,我對這些一點都不在乎\NI don't care about none of that shit.
+Dialogue: 0,0:18:35.72,0:18:37.43,Default,,0000,0000,0000,,我知道  但我沒有別的話要說了\NI know, I just ain't got nothin' else to say.
+Dialogue: 0,0:18:37.43,0:18:40.31,Default,,0000,0000,0000,,說句實話  這個家伙就是個孬種\NMan, I put that on a fact, that this nigga's a bitch, man.
+Dialogue: 0,0:18:40.31,0:18:42.04,Default,,0000,0000,0000,,說得對  兄弟  讓他去死吧\NIs that sure, man. Man, fuck this nigga.
+Dialogue: 0,0:18:44.60,0:18:45.75,Default,,0000,0000,0000,,怎么樣  兄弟\N'Sup, nigga?
+Dialogue: 0,0:18:50.36,0:18:51.59,Default,,0000,0000,0000,,怎么樣  兄弟\N'Sup, nigga?
+Dialogue: 0,0:18:57.07,0:18:58.10,Default,,0000,0000,0000,,怎么樣  兄弟\N'Sup, nigga?
+Dialogue: 0,0:19:03.12,0:19:04.52,Default,,0000,0000,0000,,你好嗎  兄弟\NHow are you, nigga?
+Dialogue: 0,0:19:41.37,0:19:42.89,Default,,0000,0000,0000,,我希望她不在家\NI hope she's not home.
+Dialogue: 0,0:19:43.20,0:19:44.39,Default,,0000,0000,0000,,那個花園\NThat garden...
+Dialogue: 0,0:19:45.08,0:19:46.69,Default,,0000,0000,0000,,我們要干的事太多了\NWe have so much to do.
+Dialogue: 0,0:19:47.29,0:19:48.54,Default,,0000,0000,0000,,我們得犁地\NWe have to rake it.
+Dialogue: 0,0:19:48.54,0:19:49.79,Default,,0000,0000,0000,,我們得除草\NWe have to weed it.
+Dialogue: 0,0:19:49.79,0:19:51.07,Default,,0000,0000,0000,,-我們得...  -吉姆\N- We have to... - Jim.
+Dialogue: 0,0:19:52.88,0:19:54.78,Default,,0000,0000,0000,,那不是你以前住的車嗎\NIsn't that the car you used to live in?
+Dialogue: 0,0:19:55.80,0:19:56.71,Default,,0000,0000,0000,,天啊\NOh, God.
+Dialogue: 0,0:19:56.72,0:19:57.78,Default,,0000,0000,0000,,吉米\NJimmie!
+Dialogue: 0,0:19:59.09,0:20:01.37,Default,,0000,0000,0000,,你好嗎  臭烘烘的混蛋東西\NWhat up, filth-smellin' motherfucker?
+Dialogue: 0,0:20:04.52,0:20:05.83,Default,,0000,0000,0000,,需要我搭你一程嗎\NDo you need a ride?
+Dialogue: 0,0:20:12.48,0:20:13.59,Default,,0000,0000,0000,,吉米\NJimmie!
+Dialogue: 0,0:20:14.07,0:20:15.43,Default,,0000,0000,0000,,發生什么事了  寶貝\NWhat's happenin', baby?
+Dialogue: 0,0:20:16.11,0:20:18.76,Default,,0000,0000,0000,,未老先衰的混蛋  快上車\NGet your young, old-looking ass in the car.
+Dialogue: 0,0:20:19.11,0:20:20.31,Default,,0000,0000,0000,,長臉驢\NDaddy face.
+Dialogue: 0,0:20:20.70,0:20:21.66,Default,,0000,0000,0000,,吉米\NJimmie!
+Dialogue: 0,0:20:21.66,0:20:23.87,Default,,0000,0000,0000,,天啊  公交車怎么還沒來\NOh, my God, where is this bus?
+Dialogue: 0,0:20:23.87,0:20:25.33,Default,,0000,0000,0000,,你這個穿襯衫的老混蛋\NMan, if you don't get your up
+Dialogue: 0,0:20:25.33,0:20:28.77,Default,,0000,0000,0000,,要是還不快點滾到車上來\Nthe father from Good Times shirt-wearing ass in this car...
+Dialogue: 0,0:20:30.33,0:20:32.71,Default,,0000,0000,0000,,你真的要拿著鏟子坐公交車嗎\NYou really gonna ride in the bus with a shovel?
+Dialogue: 0,0:20:32.71,0:20:35.03,Default,,0000,0000,0000,,農夫小子  快點上車\NGet your farming ass in this car.
+Dialogue: 0,0:20:35.80,0:20:38.95,Default,,0000,0000,0000,,農夫吉米  你個混蛋\NJimmie the farmer with your bitch ass.
+Dialogue: 0,0:20:44.47,0:20:47.08,Default,,0000,0000,0000,,拜托  笑一下嘛  吉米\NCome on, laugh a little bit, Jimmie, shit.
+Dialogue: 0,0:20:47.93,0:20:49.13,Default,,0000,0000,0000,,還是老樣子\NStill the same.
+Dialogue: 0,0:20:49.64,0:20:52.34,Default,,0000,0000,0000,,是的  我喜歡你跟你爸的杰作\NYep, I like what you and your dad did with it.
+Dialogue: 0,0:20:53.86,0:20:55.76,Default,,0000,0000,0000,,喜歡到你直接把它開走了\NSo much you drove off with it?
+Dialogue: 0,0:20:55.86,0:20:57.94,Default,,0000,0000,0000,,不  我是借的  我沒有...\NNo, I borrowed it, I didn't, just, come on...
+Dialogue: 0,0:20:57.94,0:21:00.72,Default,,0000,0000,0000,,我把它開走了  靠  我借的\NI drove off with it... I borrowed it, shit.
+Dialogue: 0,0:21:01.49,0:21:03.72,Default,,0000,0000,0000,,其實  我前兩天還見了你爸\NMatter of fact, I seen your dad the other day.
+Dialogue: 0,0:21:03.99,0:21:05.60,Default,,0000,0000,0000,,他一人過得挺好\NHe was good and lonely.
+Dialogue: 0,0:21:05.87,0:21:07.06,Default,,0000,0000,0000,,孤身一人\NBy hisself.
+Dialogue: 0,0:21:08.66,0:21:09.69,Default,,0000,0000,0000,,好吧\NOkay.
+Dialogue: 0,0:21:09.91,0:21:12.25,Default,,0000,0000,0000,,我跟他說  你得養只貓或狗\NI told him you need to get you a cat or a dog,
+Dialogue: 0,0:21:12.25,0:21:15.19,Default,,0000,0000,0000,,或者找個女人之類的\Nor woman or something, nigga, damn.
+Dialogue: 0,0:21:15.54,0:21:16.46,Default,,0000,0000,0000,,他獨自在家\NHe's home alone...
+Dialogue: 0,0:21:16.46,0:21:19.03,Default,,0000,0000,0000,,那不是他家  但他孤身一人\NWell, he ain't at home, but he's alone.
+Dialogue: 0,0:21:20.22,0:21:22.62,Default,,0000,0000,0000,,他孤身一人  還沒有家\NHe's alone with no home.
+Dialogue: 0,0:21:25.64,0:21:27.91,Default,,0000,0000,0000,,你也是自己一個人  住在車里\NWell, you live in a car by yourself.
+Dialogue: 0,0:21:27.97,0:21:30.29,Default,,0000,0000,0000,,是住車里  但我不孤獨\NYeah, but I... But I'm not alone.
+Dialogue: 0,0:21:30.85,0:21:32.29,Default,,0000,0000,0000,,大家都喜歡我\NPeople like me.
+Dialogue: 0,0:21:33.23,0:21:34.30,Default,,0000,0000,0000,,我很受歡迎\NI'm liked.
+Dialogue: 0,0:21:35.36,0:21:37.30,Default,,0000,0000,0000,,孤獨的兄弟\NLonely ass nigga.
+Dialogue: 0,0:21:39.53,0:21:41.68,Default,,0000,0000,0000,,你上一次見你爸是什么時候\NWhen the last time you hung out with your daddy?
+Dialogue: 0,0:21:48.45,0:21:50.31,Default,,0000,0000,0000,,幾周前  說不清\NCouple weeks ago, I dunno.
+Dialogue: 0,0:21:50.33,0:21:52.69,Default,,0000,0000,0000,,幾周前  他現在就需要你\NCouple weeks ago? The nigga needs you today.
+Dialogue: 0,0:21:53.75,0:21:54.82,Default,,0000,0000,0000,,靠\NShit.
+Dialogue: 0,0:21:55.50,0:21:58.00,Default,,0000,0000,0000,,養兒防老  這就是大家生孩子的原因\NThat's what... That's what people have kids for,
+Dialogue: 0,0:21:58.00,0:22:00.74,Default,,0000,0000,0000,,這樣他們就能有人陪伴\Nso they can have some companionship!
+Dialogue: 0,0:22:00.80,0:22:02.32,Default,,0000,0000,0000,,有人一起玩\NSomebody to hang out with.
+Dialogue: 0,0:22:02.55,0:22:04.37,Default,,0000,0000,0000,,這就是我不要孩子的原因\NThat's why I ain't had no kids.
+Dialogue: 0,0:22:04.51,0:22:06.20,Default,,0000,0000,0000,,因為我不想被打擾\N'Cause I don't wanna be bothered.
+Dialogue: 0,0:22:06.76,0:22:09.21,Default,,0000,0000,0000,,你爸不想要這輛破車  伙計\NYour daddy don't want this fuckin' car, man.
+Dialogue: 0,0:22:10.43,0:22:12.46,Default,,0000,0000,0000,,這不是薩沃伊公寓嗎\NWasn't that the Savoy House?
+Dialogue: 0,0:22:13.32,0:22:14.38,Default,,0000,0000,0000,,曾經是\NSure was.
+Dialogue: 0,0:22:14.73,0:22:18.01,Default,,0000,0000,0000,,這里以前住了上百個人  廉租房\NIt was 100 motherfuckers in there, rent-controlled.
+Dialogue: 0,0:22:20.07,0:22:21.84,Default,,0000,0000,0000,,他們以為這地方是他們的\NThey thought they owned that shit.
+Dialogue: 0,0:22:23.86,0:22:26.43,Default,,0000,0000,0000,,房東把那些人全都趕走了\NThe landlord burned all of the people outta there.
+Dialogue: 0,0:22:27.37,0:22:28.52,Default,,0000,0000,0000,,因為你看  吉米\N'Cause see, Jimmie,
+Dialogue: 0,0:22:28.95,0:22:30.64,Default,,0000,0000,0000,,你其實一無所有\Nyou never really own shit.
+Dialogue: 0,0:22:31.95,0:22:33.48,Default,,0000,0000,0000,,這車不屬于我\NThis car ain't mine.
+Dialogue: 0,0:22:34.25,0:22:36.36,Default,,0000,0000,0000,,但是也從來不屬于你\NBut it never was yours.
+Dialogue: 0,0:22:43.42,0:22:45.24,Default,,0000,0000,0000,,你一無所有\NYou never own shit!
+Dialogue: 0,0:22:53.85,0:22:55.09,Default,,0000,0000,0000,,搞什么鬼\NWhat the fuck?
+Dialogue: 0,0:23:08.52,0:23:09.61,Default,,0000,0000,0000,,發生什么了  伙計\NWhat's goin' on, man?
+Dialogue: 0,0:23:09.61,0:23:11.06,Default,,0000,0000,0000,,不知道  兄弟\NNo se, bro.
+Dialogue: 0,0:23:20.32,0:23:21.34,Default,,0000,0000,0000,,先生\NSir...
+Dialogue: 0,0:23:22.39,0:23:24.00,Default,,0000,0000,0000,,發生什么了\NWhat's... What's going on?
+Dialogue: 0,0:23:24.00,0:23:25.48,Default,,0000,0000,0000,,天吶\NOh, God.
+Dialogue: 0,0:23:26.87,0:23:28.40,Default,,0000,0000,0000,,她要搬走了\NShe's moving.
+Dialogue: 0,0:23:29.12,0:23:31.69,Default,,0000,0000,0000,,跟她妹妹爭得死去活來\NFighting like crazy with her sister.
+Dialogue: 0,0:23:31.82,0:23:33.79,Default,,0000,0000,0000,,家里有人去世后\NWhen someone dies in the family,
+Dialogue: 0,0:23:33.84,0:23:35.61,Default,,0000,0000,0000,,白人總是這樣\Nthat's what white people do.
+Dialogue: 0,0:23:36.01,0:23:39.24,Default,,0000,0000,0000,,這是她的  這是他的  這是我的\NThis is for her, this is for him, this is mine.
+Dialogue: 0,0:23:39.52,0:23:41.20,Default,,0000,0000,0000,,這房子該歸誰\NWho's gonna have the house?
+Dialogue: 0,0:23:41.20,0:23:43.04,Default,,0000,0000,0000,,他們失去房子了\NSo they lost the house?
+Dialogue: 0,0:23:43.20,0:23:45.66,Default,,0000,0000,0000,,房子現在歸誰名下\NWho's gonna possess the house?
+Dialogue: 0,0:23:46.50,0:23:50.31,Default,,0000,0000,0000,,他們只是吵架  不停爭斗\NThey're just fighting, and fighting, and fighting.
+Dialogue: 0,0:24:01.65,0:24:03.54,Default,,0000,0000,0000,,現在會發生什么\NWhat's gonna happen to it now?
+Dialogue: 0,0:24:12.33,0:24:15.00,Default,,0000,0000,0000,,為什么她媽媽死了  他們就得搬出去\NWhy'd they have to move out 'cause her mom died?
+Dialogue: 0,0:24:16.82,0:24:18.31,Default,,0000,0000,0000,,我不知道\NI don't know.
+Dialogue: 0,0:24:18.86,0:24:21.59,Default,,0000,0000,0000,,他們毫無品味\NThey were tasteless,
+Dialogue: 0,0:24:21.59,0:24:23.72,Default,,0000,0000,0000,,但是至少他們沒把房子毀了\Nbut at least they didn't fuck it up.
+Dialogue: 0,0:24:23.98,0:24:26.62,Default,,0000,0000,0000,,總共十美元  親\NWell, that will be $10, hun.
+Dialogue: 0,0:24:26.62,0:24:27.66,Default,,0000,0000,0000,,怎么這么貴\NSince when?
+Dialogue: 0,0:24:27.66,0:24:30.73,Default,,0000,0000,0000,,六十塊特趣巧克力  這是最劃算價格了\NSince that's the best deal you're gonna get on 60 Twix.
+Dialogue: 0,0:24:30.73,0:24:33.86,Default,,0000,0000,0000,,我沒有說要六十塊  我說要十六塊\NI didn't say 60 Twix, Auntie. I said 16.
+Dialogue: 0,0:24:33.86,0:24:36.04,Default,,0000,0000,0000,,我怎么吃得了六十塊\NHow I'm gonna eat 60 Twix?
+Dialogue: 0,0:24:36.51,0:24:38.49,Default,,0000,0000,0000,,我哪知道你有什么毛病\NI don't know your life.
+Dialogue: 0,0:24:38.49,0:24:40.61,Default,,0000,0000,0000,,你以為你這是好又多那種批發超市嗎\NYou act like you in Costco or something like that.
+Dialogue: 0,0:24:40.61,0:24:42.04,Default,,0000,0000,0000,,你這可不是好又多\NYou ain't Costco.
+Dialogue: 0,0:24:42.04,0:24:44.35,Default,,0000,0000,0000,,要是想去好又多  那你就去啊\NYou can go to Costco if you need to.
+Dialogue: 0,0:24:44.35,0:24:46.06,Default,,0000,0000,0000,,-你個傻逼  -現在就去啊\N- You Rosco. - Go right now.
+Dialogue: 0,0:24:46.06,0:24:47.34,Default,,0000,0000,0000,,十六  你第一次...\NSixteen, first time you had...
+Dialogue: 0,0:24:47.34,0:24:50.60,Default,,0000,0000,0000,,吉姆  吉姆\NJim. Jim.
+Dialogue: 0,0:24:52.25,0:24:53.56,Default,,0000,0000,0000,,吉姆\NJim.
+Dialogue: 0,0:24:54.74,0:24:55.91,Default,,0000,0000,0000,,吉姆\NJim?
+Dialogue: 0,0:24:56.33,0:24:57.92,Default,,0000,0000,0000,,兩位先生\NSo, gentlemen.
+Dialogue: 0,0:25:00.17,0:25:01.59,Default,,0000,0000,0000,,有什么可以幫到你們的\NWhat can I do for you?
+Dialogue: 0,0:25:02.89,0:25:04.98,Default,,0000,0000,0000,,我們想打聽一棟房子\NYeah, we're curious about a house
+Dialogue: 0,0:25:04.98,0:25:07.05,Default,,0000,0000,0000,,位于金門大橋附近  菲爾莫爾街\Non Golden Gate near Fillmore.
+Dialogue: 0,0:25:08.90,0:25:10.40,Default,,0000,0000,0000,,959號\NIt's 959.
+Dialogue: 0,0:25:10.40,0:25:13.74,Default,,0000,0000,0000,,灰墻  金邊\NIt's the gray, it's got the gold trim.
+Dialogue: 0,0:25:14.12,0:25:15.51,Default,,0000,0000,0000,,對  對\NYup, yup.
+Dialogue: 0,0:25:15.51,0:25:17.84,Default,,0000,0000,0000,,對  還有...\NYup, with the, um...
+Dialogue: 0,0:25:18.16,0:25:19.52,Default,,0000,0000,0000,,女巫帽子一樣的尖頂\NThe witch hat.
+Dialogue: 0,0:25:21.03,0:25:22.14,Default,,0000,0000,0000,,就是那個\NYeah, exactly.
+Dialogue: 0,0:25:22.14,0:25:23.50,Default,,0000,0000,0000,,是的\NYeah!
+Dialogue: 0,0:25:23.90,0:25:25.10,Default,,0000,0000,0000,,我知道你們說的是哪一棟\NI know exactly what you're talking about,
+Dialogue: 0,0:25:25.10,0:25:27.07,Default,,0000,0000,0000,,那棟房子非常特別\Nthat place is very special.
+Dialogue: 0,0:25:27.08,0:25:30.13,Default,,0000,0000,0000,,我以前每天上學都會開車經過那棟房子\NI used to drive past that house on the way to school every day.
+Dialogue: 0,0:25:30.13,0:25:31.75,Default,,0000,0000,0000,,你是哪所學校的\NWhat school did you go to?
+Dialogue: 0,0:25:31.95,0:25:33.71,Default,,0000,0000,0000,,{\an8}{\pos(187.933,234.133)}天主教私立高中
+Dialogue: 0,0:25:31.95,0:25:33.71,Default,,0000,0000,0000,,圣依納爵高中\NI went to St. Ignatius.
+Dialogue: 0,0:25:33.71,0:25:34.89,Default,,0000,0000,0000,,你也是本地人嗎\NYou from here, too?
+Dialogue: 0,0:25:34.89,0:25:37.63,Default,,0000,0000,0000,,{\an8}{\pos(258.997,234.667)}天主教男子寄宿私立高中
+Dialogue: 0,0:25:34.89,0:25:37.63,Default,,0000,0000,0000,,是的  三代人都住在這里  我在里爾登讀的高中\NYeah, third generation, I went to Reardon, actually.
+Dialogue: 0,0:25:37.63,0:25:38.32,Default,,0000,0000,0000,,真的嗎\NReally?
+Dialogue: 0,0:25:38.32,0:25:39.98,Default,,0000,0000,0000,,我們以前經常和你們踢足球比賽\NYeah, we used to play y'all in football all the time.
+Dialogue: 0,0:25:39.98,0:25:41.60,Default,,0000,0000,0000,,去你的  你們以前總是在球場虐我們\NFuck you, you used to kill us in football.
+Dialogue: 0,0:25:41.60,0:25:42.60,Default,,0000,0000,0000,,是的  是的\NYeah, yeah.
+Dialogue: 0,0:25:42.60,0:25:43.81,Default,,0000,0000,0000,,我不想那樣說  但是...\NI didn't wanna say that, but...
+Dialogue: 0,0:25:43.81,0:25:45.74,Default,,0000,0000,0000,,太棒了  真的\NThat's awesome, right on.
+Dialogue: 0,0:25:46.62,0:25:48.90,Default,,0000,0000,0000,,但是  那房子在出售嗎  我沒聽說\NBut, so, it's for sale? I didn't hear about that.
+Dialogue: 0,0:25:48.90,0:25:50.97,Default,,0000,0000,0000,,我不確定\NWell, I'm not sure.
+Dialogue: 0,0:25:50.99,0:25:52.76,Default,,0000,0000,0000,,好像房主和她的妹妹\NIt seems like the owner and her sister
+Dialogue: 0,0:25:52.76,0:25:54.26,Default,,0000,0000,0000,,在爭奪產權\Nare fighting over it.
+Dialogue: 0,0:25:54.52,0:25:56.46,Default,,0000,0000,0000,,但是她們的媽媽好像去世了\NBut I guess her mom died.
+Dialogue: 0,0:25:57.90,0:25:59.04,Default,,0000,0000,0000,,伙計\NMan.
+Dialogue: 0,0:25:59.67,0:26:02.41,Default,,0000,0000,0000,,我不好說  這聽起來像是遺產的事\NI don't know, that sounds like an estate thing.
+Dialogue: 0,0:26:02.41,0:26:04.64,Default,,0000,0000,0000,,情況有些復雜\NThat's a sucky situation.
+Dialogue: 0,0:26:05.58,0:26:06.98,Default,,0000,0000,0000,,但是\NBut, I mean...
+Dialogue: 0,0:26:07.27,0:26:08.29,Default,,0000,0000,0000,,這樣的房子\NWith a house like that,
+Dialogue: 0,0:26:08.29,0:26:11.02,Default,,0000,0000,0000,,她們可能會爭上好幾年\Nthey could be fighting over that for years.
+Dialogue: 0,0:26:11.67,0:26:13.46,Default,,0000,0000,0000,,但房子就空置著\NWhile it just sits there.
+Dialogue: 0,0:26:14.20,0:26:15.60,Default,,0000,0000,0000,,真可惜\NIt's a pity.
+Dialogue: 0,0:26:16.34,0:26:19.34,Default,,0000,0000,0000,,所以它真的就...就那么空置著嗎\NSo it's really just... just empty?
+Dialogue: 0,0:26:19.68,0:26:20.97,Default,,0000,0000,0000,,很扯對吧\NIt's fucked up, right?
+Dialogue: 0,0:26:20.97,0:26:22.52,Default,,0000,0000,0000,,太扯了  就像我...\NSo fucked up, like I...
+Dialogue: 0,0:26:22.52,0:26:25.14,Default,,0000,0000,0000,,我也很苦惱  街上那么多人無家可歸\NBothers me, there's all these people in the street
+Dialogue: 0,0:26:25.14,0:26:26.76,Default,,0000,0000,0000,,然后這些又大又老的房子\Nand these big old houses
+Dialogue: 0,0:26:26.76,0:26:28.88,Default,,0000,0000,0000,,就那么空置著積灰\Nare just sitting there collecting dust.
+Dialogue: 0,0:26:28.88,0:26:31.27,Default,,0000,0000,0000,,但你還能說什么\NBut shit, what else can you say?
+Dialogue: 0,0:26:31.70,0:26:34.76,Default,,0000,0000,0000,,太他媽的不公平了\NThe fucking injustice of it!
+Dialogue: 0,0:26:37.22,0:26:38.49,Default,,0000,0000,0000,,是啊\NYeah.
+Dialogue: 0,0:27:51.23,0:27:53.66,Default,,0000,0000,0000,,蒙特  我們進來了  寶貝\NMont! We here, baby!
+Dialogue: 0,0:28:17.95,0:28:19.67,Default,,0000,0000,0000,,毀掉了所有的樂趣\NSpoiling all the fun,
+Dialogue: 0,0:28:19.67,0:28:22.36,Default,,0000,0000,0000,,以城市重建的名義\Nleveling most of this neighborhood
+Dialogue: 0,0:28:22.36,0:28:24.89,Default,,0000,0000,0000,,把附近大部分街區夷為平地\Nin the name of Urban Renewal.
+Dialogue: 0,0:28:25.04,0:28:28.06,Default,,0000,0000,0000,,對不住你的家和你的潮店了\NSorry about your homes and your funky shops.
+Dialogue: 0,0:28:28.06,0:28:30.19,Default,,0000,0000,0000,,{\an8}{\pos(178.515,231.467)}連鎖超市
+Dialogue: 0,0:28:28.06,0:28:30.19,Default,,0000,0000,0000,,你可以在西夫韋門口的停車場\NYou can set up a shoeshine stand
+Dialogue: 0,0:28:30.19,0:28:32.58,Default,,0000,0000,0000,,支一個擦鞋攤\Nin front of the parking lot at Safeway.
+Dialogue: 0,0:28:32.58,0:28:34.84,Default,,0000,0000,0000,,但你們這些睿智的真理追尋者\NBut you distinguished truth-seekers
+Dialogue: 0,0:28:34.84,0:28:38.34,Default,,0000,0000,0000,,想要了解混跡這一帶的真正的潮人\Nwant to know about the real hep cats who hung out here,
+Dialogue: 0,0:28:38.34,0:28:40.55,Default,,0000,0000,0000,,{\an8}{\pos(224.321,231.467)}紐約黑人區
+Dialogue: 0,0:28:38.34,0:28:40.55,Default,,0000,0000,0000,,在這個"西部哈林區"\Nin the "Harlem of the West,"
+Dialogue: 0,0:28:40.55,0:28:44.42,Default,,0000,0000,0000,,一些他們住的房屋得以幸存下來\Nwhere a few of these homes did survive.
+Dialogue: 0,0:28:44.42,0:28:46.16,Default,,0000,0000,0000,,比如這棟美麗的建筑\NLike this beauty here,
+Dialogue: 0,0:28:46.16,0:28:49.45,Default,,0000,0000,0000,,它顯然是建于19世紀\Nwhich was built clear back in the 1800s.
+Dialogue: 0,0:28:49.45,0:28:51.29,Default,,0000,0000,0000,,在黑人來之前\NBefore the black thing,
+Dialogue: 0,0:28:51.29,0:28:54.14,Default,,0000,0000,0000,,這里全都是日本人\Nthis was all Japanese,
+Dialogue: 0,0:28:54.14,0:28:57.46,Default,,0000,0000,0000,,{\an8}{\pos(101.458,224.533)}第32任美國總統
+Dialogue: 0,0:28:54.14,0:28:57.82,Default,,0000,0000,0000,,直到羅斯福的突擊隊員把他們全部關入集中營\Ntill FDR's stormtroopers rounded them up into camps.
+Dialogue: 0,0:28:57.84,0:29:00.76,Default,,0000,0000,0000,,這棟房子建于20世紀40年代\NThis house was built in the 1940s.
+Dialogue: 0,0:29:02.94,0:29:05.12,Default,,0000,0000,0000,,大家跟我們的鄰居打個招呼\NSay Hi to our neighbor here, everybody.
+Dialogue: 0,0:29:05.12,0:29:05.91,Default,,0000,0000,0000,,你好\NHi.
+Dialogue: 0,0:29:05.91,0:29:10.41,Default,,0000,0000,0000,,對于這種風格  你說的時期晚了大約一百年\NThat would actually be about 100 years late for this style.
+Dialogue: 0,0:29:10.41,0:29:13.65,Default,,0000,0000,0000,,我們可以通過它華而不實的裝飾看出\NWe can see from his gingerbread trim,
+Dialogue: 0,0:29:13.65,0:29:17.57,Default,,0000,0000,0000,,它建于19世紀50年代\Nthis was built sometime in the 1850s.
+Dialogue: 0,0:29:17.78,0:29:19.83,Default,,0000,0000,0000,,是1946年\N1946!
+Dialogue: 0,0:29:20.03,0:29:23.62,Default,,0000,0000,0000,,我要對此提出異議了  老兄\NI'm gonna have to disagree with you there, dude man.
+Dialogue: 0,0:29:23.62,0:29:27.91,Default,,0000,0000,0000,,20世紀40年代沒有這種風格的建筑師\NNo architect in the 1940s was building in this style.
+Dialogue: 0,0:29:27.91,0:29:32.20,Default,,0000,0000,0000,,很可能如此  但它并不是由建筑師建造的\NThat's probably true, but this wasn't built by an architect.
+Dialogue: 0,0:29:32.75,0:29:34.96,Default,,0000,0000,0000,,我爺爺建造了它\NMy grandfather built this.
+Dialogue: 0,0:29:37.26,0:29:39.37,Default,,0000,0000,0000,,他在二戰時來到這里\NHe came here World War II,
+Dialogue: 0,0:29:40.11,0:29:43.12,Default,,0000,0000,0000,,他買下了這塊地  建起了這棟房子\Nhe bought this lot and he built this house.
+Dialogue: 0,0:29:44.16,0:29:45.68,Default,,0000,0000,0000,,樓梯\NThe stairs.
+Dialogue: 0,0:29:45.68,0:29:47.50,Default,,0000,0000,0000,,窗戶\NThese windows.
+Dialogue: 0,0:29:47.50,0:29:50.72,Default,,0000,0000,0000,,立柱  拱廊\NThe columns. The archways.
+Dialogue: 0,0:29:51.38,0:29:52.82,Default,,0000,0000,0000,,女巫帽子一樣的尖頂\NThe witch hat.
+Dialogue: 0,0:29:53.17,0:29:54.45,Default,,0000,0000,0000,,欄桿\NThe balustrades.
+Dialogue: 0,0:29:54.45,0:29:56.69,Default,,0000,0000,0000,,魚鱗樣的外墻\NThe fish scales.
+Dialogue: 0,0:29:57.21,0:29:58.90,Default,,0000,0000,0000,,這個陽臺\NThis balcony.
+Dialogue: 0,0:29:59.60,0:30:02.01,Default,,0000,0000,0000,,那面把你們擋在外面的墻\NThat wall to keep y'all the fuck out.
+Dialogue: 0,0:30:03.46,0:30:05.11,Default,,0000,0000,0000,,全部所有\NAll of it.
+Dialogue: 0,0:30:06.24,0:30:11.88,Default,,0000,0000,0000,,吉米·菲爾斯一世  于1946年  親手建造而成\NBy Jimmie Fails I, with his own two hands. In 1946.
+Dialogue: 0,0:30:15.96,0:30:18.30,Default,,0000,0000,0000,,真了不起\NThat's pretty amazing.
+Dialogue: 0,0:30:20.87,0:30:23.07,Default,,0000,0000,0000,,我們去下一站吧\NLet's move on to our next stop.
+Dialogue: 0,0:30:23.07,0:30:24.99,Default,,0000,0000,0000,,派翠西亞·赫斯特\NThe closet Patty Hearst
+Dialogue: 0,0:30:24.99,0:30:28.40,Default,,0000,0000,0000,,故意藏身其中的衣柜  在她跑進...\Nwillfully hid herself in, before trotting on down...
+Dialogue: 0,0:30:28.40,0:30:30.96,Default,,0000,0000,0000,,怎么回事  發生什么了\NWhat's good with that? What's going on?
+Dialogue: 0,0:30:32.56,0:30:34.08,Default,,0000,0000,0000,,感覺像是英國國王一樣\NFeel like the King of England.
+Dialogue: 0,0:30:34.17,0:30:35.98,Default,,0000,0000,0000,,吉米國王  揮揮手\NKing Jimmie. Wave.
+Dialogue: 0,0:30:35.98,0:30:37.58,Default,,0000,0000,0000,,向將軍揮手致意\NWave to the General.
+Dialogue: 0,0:30:39.26,0:30:41.32,Default,,0000,0000,0000,,-將軍  你好  -對的  但要像畫圈一樣\N- Hey, General. - Yeah, but it's like a circle,
+Dialogue: 0,0:30:41.32,0:30:43.41,Default,,0000,0000,0000,,用你的...用你的手肘\Nwith your... with your elbow.
+Dialogue: 0,0:30:43.48,0:30:45.23,Default,,0000,0000,0000,,對  然后把手窩起來\NYeah, and then cup the air.
+Dialogue: 0,0:30:45.23,0:30:46.30,Default,,0000,0000,0000,,就是那樣\NThat's kind of the thing there.
+Dialogue: 0,0:30:46.30,0:30:48.49,Default,,0000,0000,0000,,-真不錯  -對  不錯\N- Oh, yeah. - Yeah, that's good.
+Dialogue: 0,0:31:30.36,0:31:32.44,Default,,0000,0000,0000,,這房子很漂亮  吉米\NIt's a beautiful house, Jimmie.
+Dialogue: 0,0:31:35.35,0:31:37.79,Default,,0000,0000,0000,,比我原本想象的還漂亮\NMore beautiful than I could have imagined.
+Dialogue: 0,0:31:38.85,0:31:40.13,Default,,0000,0000,0000,,是啊\NYeah.
+Dialogue: 0,0:31:41.48,0:31:43.80,Default,,0000,0000,0000,,還不夠完美\NIt's not quite there yet.
+Dialogue: 0,0:31:57.11,0:31:59.91,Default,,0000,0000,0000,,這么多狄更斯\NI mean, enough Dickens.
+Dialogue: 0,0:32:00.63,0:32:01.86,Default,,0000,0000,0000,,查爾斯·狄更斯\NCharles Dickens.
+Dialogue: 0,0:32:01.86,0:32:03.59,Default,,0000,0000,0000,,真沒文化 兄弟\NPhilistines, bro.
+Dialogue: 0,0:32:03.59,0:32:04.92,Default,,0000,0000,0000,,{\an8}{\pos(191.358,230.933)}法國意識流作家
+Dialogue: 0,0:32:03.59,0:32:04.92,Default,,0000,0000,0000,,普魯斯特\NProust!
+Dialogue: 0,0:32:04.99,0:32:06.29,Default,,0000,0000,0000,,{\an8}{\pos(193.498,226.133)}美國天才詩人
+Dialogue: 0,0:32:04.99,0:32:06.29,Default,,0000,0000,0000,,普拉斯\NPlath!
+Dialogue: 0,0:32:07.00,0:32:08.21,Default,,0000,0000,0000,,{\an8}{\pos(192.214,227.733)}美國作家
+Dialogue: 0,0:32:07.00,0:32:08.21,Default,,0000,0000,0000,,休斯\NHughes!
+Dialogue: 0,0:32:08.21,0:32:11.28,Default,,0000,0000,0000,,吉米  朗斯頓·休斯\NJimmie! Langston Hughes!
+Dialogue: 0,0:32:11.28,0:32:12.74,Default,,0000,0000,0000,,他們留下了他\NThey left him!
+Dialogue: 0,0:32:13.91,0:32:15.27,Default,,0000,0000,0000,,兄弟\NBro!
+Dialogue: 0,0:32:17.93,0:32:19.52,Default,,0000,0000,0000,,沒文化啊\NPhilistines!
+Dialogue: 0,0:32:30.38,0:32:31.70,Default,,0000,0000,0000,,蒙特\NMont.
+Dialogue: 0,0:32:33.64,0:32:34.96,Default,,0000,0000,0000,,蒙特\NMont.
+Dialogue: 0,0:32:37.15,0:32:38.53,Default,,0000,0000,0000,,醒醒\NWake up.
+Dialogue: 0,0:32:44.59,0:32:45.84,Default,,0000,0000,0000,,我有個計劃\NGot a plan.
+Dialogue: 0,0:33:08.28,0:33:09.65,Default,,0000,0000,0000,,這太瘋狂了\NIt's crazy.
+Dialogue: 0,0:33:09.66,0:33:12.39,Default,,0000,0000,0000,,我上次來這的時候  這些雜草比我還高\NLast time I was here, these weeds was taller than me.
+Dialogue: 0,0:33:15.02,0:33:16.57,Default,,0000,0000,0000,,她知道我們要來嗎\NShe's expecting us?
+Dialogue: 0,0:33:16.66,0:33:17.92,Default,,0000,0000,0000,,知道\NYes, sir.
+Dialogue: 0,0:33:31.19,0:33:32.87,Default,,0000,0000,0000,,-姑姑  -吉米\N- Auntie! - Jimmie!
+Dialogue: 0,0:33:34.35,0:33:35.77,Default,,0000,0000,0000,,太好了\NYes!
+Dialogue: 0,0:33:36.78,0:33:38.32,Default,,0000,0000,0000,,見到你太好了\NSo good to see you!
+Dialogue: 0,0:33:38.32,0:33:39.92,Default,,0000,0000,0000,,-你氣色真好  -謝謝\N- You look good! - Thank you.
+Dialogue: 0,0:33:39.92,0:33:41.49,Default,,0000,0000,0000,,-你好  -這是蒙特\N- Hey! - This is Mont.
+Dialogue: 0,0:33:41.49,0:33:43.54,Default,,0000,0000,0000,,很高興認識你\NNice to meet you.
+Dialogue: 0,0:33:44.48,0:33:46.17,Default,,0000,0000,0000,,你們都不熱嗎  你們要...\NY'all not hot? Like, you want...
+Dialogue: 0,0:33:46.17,0:33:47.96,Default,,0000,0000,0000,,-這里快熱瘋了  -把外套脫了\N- It's hot as hell out here. - Take your jacket off.
+Dialogue: 0,0:33:47.96,0:33:50.02,Default,,0000,0000,0000,,沒人會偷的\NAin't nobody gonna steal your jacket.
+Dialogue: 0,0:33:50.02,0:33:52.03,Default,,0000,0000,0000,,這里治安很好\NThis is a nice neighborhood.
+Dialogue: 0,0:33:54.71,0:33:57.49,Default,,0000,0000,0000,,他最好別把我的滑板玩壞\NMan, he better not break my damn board.
+Dialogue: 0,0:33:57.49,0:33:58.79,Default,,0000,0000,0000,,閉嘴\NShut up.
+Dialogue: 0,0:33:58.79,0:34:00.75,Default,,0000,0000,0000,,你應該要謝謝他\NYou should be thanking him.
+Dialogue: 0,0:34:00.87,0:34:03.40,Default,,0000,0000,0000,,是他幫我選的那塊滑板\NHe's the one that helped me pick out that board.
+Dialogue: 0,0:34:05.02,0:34:06.81,Default,,0000,0000,0000,,而且除此之外...\NAnd besides...
+Dialogue: 0,0:34:07.47,0:34:12.10,Default,,0000,0000,0000,,有時候光看著就很享受\NSometimes it's just nice to watch.
+Dialogue: 0,0:34:17.27,0:34:19.91,Default,,0000,0000,0000,,瑞奇  試試你經常玩的那一招  寶貝\NRicky, do that trick you used to do, baby.
+Dialogue: 0,0:34:22.51,0:34:24.24,Default,,0000,0000,0000,,真厲害  寶貝\NNice, baby.
+Dialogue: 0,0:34:25.90,0:34:27.77,Default,,0000,0000,0000,,你們好有愛\NY'all hella cute.
+Dialogue: 0,0:34:28.00,0:34:29.46,Default,,0000,0000,0000,,謝謝\NThank you.
+Dialogue: 0,0:34:30.58,0:34:31.86,Default,,0000,0000,0000,,那么\NSo,
+Dialogue: 0,0:34:32.26,0:34:34.55,Default,,0000,0000,0000,,那些東西你還剩下多少\Nhow much of this stuff do you still have?
+Dialogue: 0,0:34:35.00,0:34:36.36,Default,,0000,0000,0000,,不是吧\NReally?
+Dialogue: 0,0:34:36.57,0:34:38.83,Default,,0000,0000,0000,,那些東西你還剩下多少\NHow much of this stuff do you have?
+Dialogue: 0,0:34:38.93,0:34:41.00,Default,,0000,0000,0000,,連鋪墊都沒有\NYou just, no segue or nothin'?
+Dialogue: 0,0:34:41.00,0:34:42.73,Default,,0000,0000,0000,,你就是來看那些東西的  對吧\NYou just came to see the stuff, huh?
+Dialogue: 0,0:34:42.73,0:34:44.02,Default,,0000,0000,0000,,姑姑\NAuntie...
+Dialogue: 0,0:34:44.02,0:34:45.83,Default,,0000,0000,0000,,我有了第一個家\NI got my first place.
+Dialogue: 0,0:34:49.54,0:34:50.90,Default,,0000,0000,0000,,真的嗎\NReally?
+Dialogue: 0,0:34:51.52,0:34:52.62,Default,,0000,0000,0000,,在城里\NIn the city?
+Dialogue: 0,0:34:52.62,0:34:53.99,Default,,0000,0000,0000,,在城里\NIn the city.
+Dialogue: 0,0:34:54.06,0:34:55.38,Default,,0000,0000,0000,,看看你\NLook at you!
+Dialogue: 0,0:34:55.38,0:34:58.62,Default,,0000,0000,0000,,你們肯定賺得不少  才能負擔得起城里的房子\NY'all must be doing pretty well to afford a spot there.
+Dialogue: 0,0:34:58.63,0:35:00.57,Default,,0000,0000,0000,,嗯  我們很走運\NYeah, we got lucky.
+Dialogue: 0,0:35:03.28,0:35:05.12,Default,,0000,0000,0000,,不過房子很空\NIt's super empty, though.
+Dialogue: 0,0:35:08.46,0:35:10.67,Default,,0000,0000,0000,,不是你爸讓你來的吧\NYour daddy didn't send you here, right?
+Dialogue: 0,0:35:11.17,0:35:12.95,Default,,0000,0000,0000,,-不是  -你確定嗎\N- No. - You sure?
+Dialogue: 0,0:35:13.00,0:35:14.47,Default,,0000,0000,0000,,我對天發誓\NI swear to God.
+Dialogue: 0,0:35:17.02,0:35:20.20,Default,,0000,0000,0000,,因為我可不想再看他把你拖下水\N'Cause I hope he's done dragging you into his schemes.
+Dialogue: 0,0:35:21.20,0:35:23.90,Default,,0000,0000,0000,,姑姑  這是為了我們\NAuntie, this is for us.
+Dialogue: 0,0:35:27.90,0:35:29.19,Default,,0000,0000,0000,,好吧\NOkay.
+Dialogue: 0,0:35:30.39,0:35:31.66,Default,,0000,0000,0000,,好吧\NOkay.
+Dialogue: 0,0:35:34.28,0:35:36.20,Default,,0000,0000,0000,,我為你驕傲  杰博\NI'm proud of you, Jayboe.
+Dialogue: 0,0:35:36.38,0:35:38.43,Default,,0000,0000,0000,,-我說真的  -謝謝\N- Really am. - Thank you.
+Dialogue: 0,0:35:38.90,0:35:40.65,Default,,0000,0000,0000,,我很懷念那座城市\NI miss that city.
+Dialogue: 0,0:35:44.43,0:35:46.49,Default,,0000,0000,0000,,不過你看起來還是很性感  寶貝\NYou still look good though, baby.
+Dialogue: 0,0:35:46.49,0:35:48.21,Default,,0000,0000,0000,,你看起來還是很性感\NYou still look good!
+Dialogue: 0,0:35:51.90,0:35:54.18,Default,,0000,0000,0000,,我真受不了\NOh, my goodness.
+Dialogue: 0,0:36:00.57,0:36:03.70,Default,,0000,0000,0000,,見鬼  我知道你有一些  結果全都在你這嗎\NDamn, I knew you had some of it, but is this everything?
+Dialogue: 0,0:36:03.75,0:36:06.36,Default,,0000,0000,0000,,除了被你爸吸毒變賣的之外  都在這了\NEverything your dad didn't smoke up.
+Dialogue: 0,0:36:06.88,0:36:09.64,Default,,0000,0000,0000,,不好意思  玩笑開得有點重\NSorry, came out a little harsh.
+Dialogue: 0,0:36:09.64,0:36:11.04,Default,,0000,0000,0000,,沒關系\NI'm fine.
+Dialogue: 0,0:36:18.27,0:36:20.62,Default,,0000,0000,0000,,你真的全都保留下來了\NYou really got all of this.
+Dialogue: 0,0:36:20.94,0:36:22.33,Default,,0000,0000,0000,,對\NYep!
+Dialogue: 0,0:36:23.56,0:36:25.78,Default,,0000,0000,0000,,能放的都放在這里了\NGot as much as I could.
+Dialogue: 0,0:36:36.22,0:36:37.58,Default,,0000,0000,0000,,打開那個\NOpen that.
+Dialogue: 0,0:36:41.36,0:36:43.01,Default,,0000,0000,0000,,這太棒了\NThat's amazing.
+Dialogue: 0,0:36:43.12,0:36:44.82,Default,,0000,0000,0000,,我知道\NYeah, I knew that,
+Dialogue: 0,0:36:44.82,0:36:46.39,Default,,0000,0000,0000,,這個家族里的所有人之中\Nout of everybody in this family,
+Dialogue: 0,0:36:46.39,0:36:48.93,Default,,0000,0000,0000,,只有你會來找這些東西\Nyou would be the one that come looking for this stuff.
+Dialogue: 0,0:36:50.29,0:36:51.63,Default,,0000,0000,0000,,那么\NSo...
+Dialogue: 0,0:36:53.49,0:36:54.83,Default,,0000,0000,0000,,我可以\NI can...
+Dialogue: 0,0:36:54.90,0:36:56.33,Default,,0000,0000,0000,,全部拿走嗎\NEverything?
+Dialogue: 0,0:36:58.33,0:36:59.89,Default,,0000,0000,0000,,都歸你了\NIt's yours.
+Dialogue: 0,0:36:59.89,0:37:02.14,Default,,0000,0000,0000,,-謝謝  -是啊\N- Thank you. - Hell, yeah.
+Dialogue: 0,0:37:02.14,0:37:04.03,Default,,0000,0000,0000,,瑞奇  把卡車開過來\NRicky, get the truck!
+Dialogue: 0,0:37:06.30,0:37:08.04,Default,,0000,0000,0000,,你們倆在后面還好嗎\NYou guys good back there?
+Dialogue: 0,0:37:32.04,0:37:33.18,Default,,0000,0000,0000,,再見\NBye.
+Dialogue: 0,0:37:33.18,0:37:34.53,Default,,0000,0000,0000,,謝謝\NThank you.
+Dialogue: 0,0:37:36.14,0:37:38.25,Default,,0000,0000,0000,,所以瑞奇從沒在這房子里住過\NSo, Ricky never lived in the house?
+Dialogue: 0,0:37:38.25,0:37:40.59,Default,,0000,0000,0000,,沒有  我們失去這棟房子的時候\NNo, Wanda didn't meet him
+Dialogue: 0,0:37:40.59,0:37:41.70,Default,,0000,0000,0000,,旺達還不認識他\Nuntil after we lost it.
+Dialogue: 0,0:37:55.83,0:37:57.07,Default,,0000,0000,0000,,-你好  先生  -你好\N- Hello, sir. - Hey!
+Dialogue: 0,0:37:57.07,0:37:59.30,Default,,0000,0000,0000,,我叫吉米·菲爾斯  我們還沒機會認識一下\NI'm Jimmie Fails, we haven't had the chance to meet yet.
+Dialogue: 0,0:38:00.26,0:38:01.50,Default,,0000,0000,0000,,-是的  -是的\N- Yeah. - Yeah.
+Dialogue: 0,0:38:01.90,0:38:03.35,Default,,0000,0000,0000,,歡迎來到這個社區\NWelcome to the neighborhood.
+Dialogue: 0,0:38:03.35,0:38:05.15,Default,,0000,0000,0000,,是  對啊\NYeah, oh, yes...
+Dialogue: 0,0:38:05.15,0:38:06.56,Default,,0000,0000,0000,,歡迎\NWelcome.
+Dialogue: 0,0:38:06.86,0:38:08.27,Default,,0000,0000,0000,,我叫蒂姆  蒂姆·艾洛瑞\NTim! Tim Ellory.
+Dialogue: 0,0:38:08.27,0:38:09.85,Default,,0000,0000,0000,,好的  很高興認識你  伙計\NSure, sure, nice to meet you, man.
+Dialogue: 0,0:38:09.85,0:38:11.69,Default,,0000,0000,0000,,現在房子賣得太快了\NIt's a fast-moving market,
+Dialogue: 0,0:38:11.69,0:38:13.70,Default,,0000,0000,0000,,我都不記得這里豎過牌子\NI don't even remember a sign going up.
+Dialogue: 0,0:38:14.76,0:38:16.33,Default,,0000,0000,0000,,沒必要豎牌子  但...\NIt didn't need to, but...
+Dialogue: 0,0:38:16.33,0:38:18.91,Default,,0000,0000,0000,,聽著  蒂姆  我想告訴你\NLook, Tim, I want you to know
+Dialogue: 0,0:38:19.00,0:38:21.37,Default,,0000,0000,0000,,你絕對沒見過比我更好的鄰居\NI'm going to be the best damn neighbor you ever had.
+Dialogue: 0,0:38:22.66,0:38:23.95,Default,,0000,0000,0000,,好...\NWell...
+Dialogue: 0,0:38:23.95,0:38:27.90,Default,,0000,0000,0000,,-好的  吉米  謝謝  -樂意效勞\N- All right, Jimmie, thank you. - My pleasure.
+Dialogue: 0,0:38:28.48,0:38:29.93,Default,,0000,0000,0000,,抱歉  我先失陪了\NWell, you'll have to pardon me,
+Dialogue: 0,0:38:29.93,0:38:31.64,Default,,0000,0000,0000,,我們還有很多事要做  但...\Nwe've got lots to do, but...
+Dialogue: 0,0:38:32.19,0:38:34.66,Default,,0000,0000,0000,,-當然  好的  -認識你很高興  嗯\N- Of course, oh, yeah. - Very nice to meet you, yeah.
+Dialogue: 0,0:38:42.81,0:38:45.24,Default,,0000,0000,0000,,這到底是怎么回事\NWhat the fuck was that all about?
+Dialogue: 0,0:39:06.38,0:39:08.02,Default,,0000,0000,0000,,我想一邊喝咖啡\NI wanna drink my coffee
+Dialogue: 0,0:39:08.02,0:39:10.36,Default,,0000,0000,0000,,一邊看報紙一邊撓屁股\Nand scratch my ass while I read the paper.
+Dialogue: 0,0:39:12.13,0:39:13.96,Default,,0000,0000,0000,,你從不看報紙  吉米\NYou don't read the paper, Jimmie.
+Dialogue: 0,0:39:16.54,0:39:18.88,Default,,0000,0000,0000,,那是因為我沒有一個可以在里面看報紙的家\N'Cause I never had a home to read it in.
+Dialogue: 0,0:39:21.48,0:39:22.81,Default,,0000,0000,0000,,見鬼\NShit.
+Dialogue: 0,0:39:24.25,0:39:26.15,Default,,0000,0000,0000,,我們可以開派對\NWe could throw parties.
+Dialogue: 0,0:39:30.72,0:39:32.88,Default,,0000,0000,0000,,上演你的話劇\NYou could put on one of your plays.
+Dialogue: 0,0:39:34.47,0:39:36.06,Default,,0000,0000,0000,,大喊大叫\NWe could yell.
+Dialogue: 0,0:39:41.88,0:39:44.70,Default,,0000,0000,0000,,-注意鄰居  吉米  -鄰居\N- The neighbors, Jimmie. - Oh, the neighbors?
+Dialogue: 0,0:39:45.99,0:39:47.62,Default,,0000,0000,0000,,我現在有鄰居了\NI got neighbors now.
+Dialogue: 0,0:39:51.53,0:39:52.90,Default,,0000,0000,0000,,好樣的\NAttaboy.
+Dialogue: 0,0:40:57.55,0:41:01.46,Default,,0000,0000,0000,,這兄弟是個孬種\NThis nigga is a bitch.
+Dialogue: 0,0:41:45.08,0:41:47.60,Default,,0000,0000,0000,,我就是有點害怕  假裝逃跑\NI'm a soft nigga. Run the fake, nigga!
+Dialogue: 0,0:41:47.69,0:41:50.94,Default,,0000,0000,0000,,每次都這樣  兄弟\NOn everything, bro.
+Dialogue: 0,0:41:50.94,0:41:53.98,Default,,0000,0000,0000,,伙計  這小子是個慫包\NMan, this kid was a straight sucker.
+Dialogue: 0,0:41:53.98,0:41:55.00,Default,,0000,0000,0000,,你騙人  兄弟\NYou lyin', bro,
+Dialogue: 0,0:41:55.00,0:41:57.47,Default,,0000,0000,0000,,他每次都這樣  慫包  兄弟\Non everything, bro, straight sucker, bro.
+Dialogue: 0,0:41:57.47,0:41:58.22,Default,,0000,0000,0000,,-告訴他怎么回事  -我對天發誓\N- Tell him what happened. - I swear to God.
+Dialogue: 0,0:41:58.22,0:41:59.37,Default,,0000,0000,0000,,昨天晚上  一輛白色面包車停在路邊\NMan, last night, a white van pulled up.
+Dialogue: 0,0:41:59.37,0:41:59.71,Default,,0000,0000,0000,,我對天發誓  兄弟\NI swear to God, bro.
+Dialogue: 0,0:41:59.71,0:42:01.30,Default,,0000,0000,0000,,科菲像個慫包似的直接逃了\NThis nigga Kofi ran like a straight bitch!
+Dialogue: 0,0:42:01.30,0:42:03.29,Default,,0000,0000,0000,,-他沒騙你  -他會害死我們的\N- He not lyin'! - He gonna get us killed!
+Dialogue: 0,0:42:03.29,0:42:04.34,Default,,0000,0000,0000,,你們說我跑了  我沒跑  兄弟\NYou niggas sayin' I ran? I didn't run, nigga!
+Dialogue: 0,0:42:04.34,0:42:06.05,Default,,0000,0000,0000,,伙計  你他媽在說什么\NMan, fuck what you niggas talkin' about.
+Dialogue: 0,0:42:06.05,0:42:08.58,Default,,0000,0000,0000,,閉嘴  兄弟  他就是個慫包\NShut the fuck up, bro, he's a straight sucker, bro.
+Dialogue: 0,0:42:08.58,0:42:10.29,Default,,0000,0000,0000,,伙計  他這樣讓別人覺得我們都是孬種\NMan, he got us looking like bitches, bro.
+Dialogue: 0,0:42:10.29,0:42:11.29,Default,,0000,0000,0000,,如果讓我說\NIf I've gotta get on this thing,
+Dialogue: 0,0:42:11.29,0:42:12.38,Default,,0000,0000,0000,,我就會質問你\NI'm gonna be questioning you!
+Dialogue: 0,0:42:12.38,0:42:13.41,Default,,0000,0000,0000,,你是我表兄啊\NYou supposed to be my cousin.
+Dialogue: 0,0:42:13.41,0:42:15.33,Default,,0000,0000,0000,,你怎么能跑  兄弟\NI'mma bet you supposed to not run, nigga,
+Dialogue: 0,0:42:15.33,0:42:16.46,Default,,0000,0000,0000,,這才是你應該做的\Nand that's what you supposed to do.
+Dialogue: 0,0:42:16.46,0:42:19.39,Default,,0000,0000,0000,,好了  好了  好了  兄弟\NAll right, all right, all right, all right, bro.
+Dialogue: 0,0:42:19.39,0:42:20.52,Default,,0000,0000,0000,,好了  大家閉嘴  兄弟們\NAll right, everybody shut up, bro.
+Dialogue: 0,0:42:20.52,0:42:21.90,Default,,0000,0000,0000,,好了  大家閉嘴  兄弟們\NAll right, everybody shut up, bro.
+Dialogue: 0,0:42:21.90,0:42:23.45,Default,,0000,0000,0000,,科菲  到底怎么回事\NKofi, what happened, bro?
+Dialogue: 0,0:42:23.70,0:42:25.03,Default,,0000,0000,0000,,告訴他\NTell him.
+Dialogue: 0,0:42:26.95,0:42:28.30,Default,,0000,0000,0000,,為什么\NWhy?
+Dialogue: 0,0:42:28.44,0:42:30.70,Default,,0000,0000,0000,,-告訴他  -你跑了嗎\N- Tell him! - Did you run, nigga?
+Dialogue: 0,0:42:30.81,0:42:32.63,Default,,0000,0000,0000,,沒有  我沒跑  伙計\NNah, I didn't run, nigga.
+Dialogue: 0,0:42:32.63,0:42:33.79,Default,,0000,0000,0000,,我告訴過你\NI told you!
+Dialogue: 0,0:42:33.79,0:42:36.33,Default,,0000,0000,0000,,-騙人  胡扯  -去你的  兄弟\N- Lyin', lyin'. - Man, fuck you, nigga.
+Dialogue: 0,0:42:36.33,0:42:37.71,Default,,0000,0000,0000,,揍他\NGet on him!
+Dialogue: 0,0:42:41.55,0:42:43.48,Default,,0000,0000,0000,,-打我  兄弟  -什么\N- Hit me, bro. - Man, what?
+Dialogue: 0,0:42:43.74,0:42:45.17,Default,,0000,0000,0000,,打我  兄弟\NHit me, bro.
+Dialogue: 0,0:42:47.31,0:42:48.49,Default,,0000,0000,0000,,打我  兄弟\NHit me, bro.
+Dialogue: 0,0:42:48.49,0:42:50.19,Default,,0000,0000,0000,,為什么  你應該跟我是一邊的\NAnd for what, you supposed to be my folks.
+Dialogue: 0,0:42:50.19,0:42:52.08,Default,,0000,0000,0000,,科菲  打他  兄弟\NKofi, hit that nigga, bro.
+Dialogue: 0,0:42:52.56,0:42:54.69,Default,,0000,0000,0000,,對  來啊  兄弟\NYeah! Come on, bro!
+Dialogue: 0,0:42:54.89,0:42:57.93,Default,,0000,0000,0000,,好  來啊  來啊  揍他\NYeah! Let's go! Let's go! Get on him!
+Dialogue: 0,0:42:57.93,0:43:00.86,Default,,0000,0000,0000,,打我啊  兄弟  打我啊  兄弟\NHit me, bro! Hit me, bro!
+Dialogue: 0,0:43:00.86,0:43:02.28,Default,,0000,0000,0000,,這哥們就是個孬種\NThis nigga's a bitch!
+Dialogue: 0,0:43:02.28,0:43:03.05,Default,,0000,0000,0000,,打我啊  兄弟  來啊\NHit me, man! Come on!
+Dialogue: 0,0:43:03.05,0:43:04.91,Default,,0000,0000,0000,,各位  各位\NGuys! Guys!
+Dialogue: 0,0:43:05.89,0:43:07.93,Default,,0000,0000,0000,,好  很好\NGreat, it's great.
+Dialogue: 0,0:43:08.60,0:43:10.79,Default,,0000,0000,0000,,太好了  好極了\NVery good, very good.
+Dialogue: 0,0:43:11.17,0:43:14.46,Default,,0000,0000,0000,,停下  很好  很好\NCut! Very good, very good.
+Dialogue: 0,0:43:15.02,0:43:17.10,Default,,0000,0000,0000,,好  好  好極了\NGood, good, excellent.
+Dialogue: 0,0:43:17.10,0:43:19.80,Default,,0000,0000,0000,,好  有個好消息\NGood. Hey, great news
+Dialogue: 0,0:43:20.12,0:43:22.51,Default,,0000,0000,0000,,就是你們都干得太棒了\Nis you're all doing marvelous work.
+Dialogue: 0,0:43:22.55,0:43:24.12,Default,,0000,0000,0000,,-什么  -恭喜\N- What? - Congratulations,
+Dialogue: 0,0:43:24.12,0:43:25.42,Default,,0000,0000,0000,,這很不簡單\Nit's not easy.
+Dialogue: 0,0:43:30.83,0:43:32.23,Default,,0000,0000,0000,,我相信你\NI believe you.
+Dialogue: 0,0:43:32.72,0:43:34.80,Default,,0000,0000,0000,,但我知道我可以更信任你\NBut I know it can be deeper.
+Dialogue: 0,0:43:34.92,0:43:36.90,Default,,0000,0000,0000,,你他媽在說什么\NFuck you talkin' about?
+Dialogue: 0,0:43:38.85,0:43:40.71,Default,,0000,0000,0000,,記住斯坦尼斯拉夫斯基\NRemember Stanislavski.
+Dialogue: 0,0:43:41.05,0:43:42.09,Default,,0000,0000,0000,,你他媽在干什么  哥們\NFuck are you doin', man?
+Dialogue: 0,0:43:42.09,0:43:43.94,Default,,0000,0000,0000,,格洛托夫斯基或斯拉夫斯基\NGrotowski or Slavski...
+Dialogue: 0,0:43:43.94,0:43:45.70,Default,,0000,0000,0000,,契訶夫  等等\NChekhov, bruh.
+Dialogue: 0,0:43:45.70,0:43:48.16,Default,,0000,0000,0000,,-他們都是偉人  -我聽不明白\N- These are the greats. - I'm confused, bro.
+Dialogue: 0,0:43:58.96,0:44:00.45,Default,,0000,0000,0000,,你沒事的\NYou're okay there.
+Dialogue: 0,0:44:02.33,0:44:03.78,Default,,0000,0000,0000,,你沒事的\NYou're okay there.
+Dialogue: 0,0:44:05.70,0:44:07.66,Default,,0000,0000,0000,,兄弟  你又不是導演\NBro, you're not a director, bro.
+Dialogue: 0,0:44:11.12,0:44:12.78,Default,,0000,0000,0000,,帶著你那些奇談怪論滾蛋吧\NMan, take your weird ass outta here.
+Dialogue: 0,0:44:12.78,0:44:13.61,Default,,0000,0000,0000,,繼續醞釀\NKeep building it.
+Dialogue: 0,0:44:13.61,0:44:15.69,Default,,0000,0000,0000,,他一過來我就覺得不爽\NNigga, I don't like when that nigga come around here, bro.
+Dialogue: 0,0:44:15.69,0:44:16.66,Default,,0000,0000,0000,,這哥們就是個孬種\NBro, this nigga's a bitch.
+Dialogue: 0,0:44:16.66,0:44:18.75,Default,,0000,0000,0000,,你們一句話  我去搞定他\NSay the word, I get on this nigga, bro!
+Dialogue: 0,0:44:23.95,0:44:25.37,Default,,0000,0000,0000,,開始吧\NHere we go.
+Dialogue: 0,0:44:49.67,0:44:51.37,Default,,0000,0000,0000,,幫我看一會兒  兄弟\NWatch this for me real quick, bro.
+Dialogue: 0,0:44:52.69,0:44:53.88,Default,,0000,0000,0000,,我知道\NI know.
+Dialogue: 0,0:44:55.94,0:45:04.32,Default,,0000,0000,0000,,{\an8}大都會酒店
+Dialogue: 0,0:45:04.32,0:45:20.46,Default,,0000,0000,0000,,{\an8}停
+Dialogue: 0,0:45:38.66,0:45:40.93,Default,,0000,0000,0000,,我那天碰到你表兄艾爾了\NI seen your cousin, Al, the other day.
+Dialogue: 0,0:45:42.97,0:45:45.64,Default,,0000,0000,0000,,他說  "你好  詹姆斯叔叔"\NAight, "Hey, Uncle James!"
+Dialogue: 0,0:45:46.23,0:45:48.01,Default,,0000,0000,0000,,我說  "哥們  我不認識你啊"\NI look like, "Man, I don't know you,
+Dialogue: 0,0:45:48.01,0:45:49.34,Default,,0000,0000,0000,,"大搖大擺的在街上晃著"\N"Down there struttin' around,
+Dialogue: 0,0:45:49.16,0:45:51.74,Default,,0000,0000,0000,,{\an8}《愛國者》
+Dialogue: 0,0:45:49.34,0:45:50.97,Default,,0000,0000,0000,,"像個舊金山娘炮似的"\Nlike a Frisco fruit cup."
+Dialogue: 0,0:45:51.91,0:45:54.36,Default,,0000,0000,0000,,我知道他爸氣瘋了\NI know his daddy mad as hell.
+Dialogue: 0,0:45:57.69,0:45:59.30,Default,,0000,0000,0000,,你還玩滑板嗎\NYou still skateboarding?
+Dialogue: 0,0:46:00.72,0:46:01.48,Default,,0000,0000,0000,,不玩了\NNah.
+Dialogue: 0,0:46:08.68,0:46:09.38,Default,,0000,0000,0000,,怎么了\NWhat?
+Dialogue: 0,0:46:12.22,0:46:13.62,Default,,0000,0000,0000,,過來  幫我把這些剪了\NCome here, help me cut these out.
+Dialogue: 0,0:46:19.18,0:46:21.71,Default,,0000,0000,0000,,確保壓著線剪\NAnd make sure the color bleeds all the way through,
+Dialogue: 0,0:46:21.71,0:46:23.29,Default,,0000,0000,0000,,別留白邊  懂嗎\Nno white edges, aight?
+Dialogue: 0,0:46:23.92,0:46:25.80,Default,,0000,0000,0000,,是  長官  和以前一樣\NYes, sir. Same as always.
+Dialogue: 0,0:46:26.50,0:46:27.38,Default,,0000,0000,0000,,沒錯\NYeah.
+Dialogue: 0,0:46:28.44,0:46:29.82,Default,,0000,0000,0000,,和以前一樣\NSame as always.
+Dialogue: 0,0:46:31.80,0:46:34.27,Default,,0000,0000,0000,,你記得我們偷住過的那個倉庫嗎\Nyou remember that, warehouse we squatted at?
+Dialogue: 0,0:46:34.46,0:46:36.10,Default,,0000,0000,0000,,在我們離開埃爾多拉多之后\NAfter we lived in the El Dorado?
+Dialogue: 0,0:46:37.54,0:46:39.42,Default,,0000,0000,0000,,我們沒交稅所以失去了那棟房子  對嗎\NWe lost that ' cause we didn't pay taxes, right?
+Dialogue: 0,0:46:39.42,0:46:40.34,Default,,0000,0000,0000,,當然不是\NHell, nah.
+Dialogue: 0,0:46:41.06,0:46:42.99,Default,,0000,0000,0000,,我交的稅可不少了\NI paid our fair share of tax on that.
+Dialogue: 0,0:46:44.88,0:46:47.62,Default,,0000,0000,0000,,但誰在乎  通風管老化的蟑螂窩\NBut who cares, old drafty-ass roach nest.
+Dialogue: 0,0:46:48.19,0:46:49.10,Default,,0000,0000,0000,,破地方  但只有那里可以住\NShit, it was that,
+Dialogue: 0,0:46:49.11,0:46:52.16,Default,,0000,0000,0000,,否則就只能帶著你睡大街了\Nor sleeping on the street with your little ass.
+Dialogue: 0,0:46:53.67,0:46:54.83,Default,,0000,0000,0000,,爸  我很知足\NWell, I appreciate it, Dad.
+Dialogue: 0,0:46:57.92,0:47:00.61,Default,,0000,0000,0000,,那如果我現住的房子\NSo, say I'm at a place now
+Dialogue: 0,0:47:02.02,0:47:03.33,Default,,0000,0000,0000,,房主離開了\Nand the owners left it,
+Dialogue: 0,0:47:04.33,0:47:05.63,Default,,0000,0000,0000,,我會給這棟房子交稅\NI'm gonna pay taxes on it...
+Dialogue: 0,0:47:05.63,0:47:07.61,Default,,0000,0000,0000,,而且以你的名義付煤氣和電費\NAnd you put gas and electric in your name?
+Dialogue: 0,0:47:08.98,0:47:11.23,Default,,0000,0000,0000,,對  我接下來就去辦  你知道我會的\NRight, I'm gonna do that next, you know I know.
+Dialogue: 0,0:47:12.00,0:47:14.65,Default,,0000,0000,0000,,行  學你老爸\NOkay, doin' it like your old man.
+Dialogue: 0,0:47:15.55,0:47:16.37,Default,,0000,0000,0000,,不錯啊\NThat's good.
+Dialogue: 0,0:47:19.35,0:47:21.01,Default,,0000,0000,0000,,沒人會來看這棟房子嗎\NAnd nobody's come to check on it?
+Dialogue: 0,0:47:21.11,0:47:22.55,Default,,0000,0000,0000,,沒有  是棟空房子\NNope. It's empty.
+Dialogue: 0,0:47:24.66,0:47:25.52,Default,,0000,0000,0000,,好啊\NGood.
+Dialogue: 0,0:47:25.97,0:47:27.04,Default,,0000,0000,0000,,這能爭取些時間\NThat buys you time.
+Dialogue: 0,0:47:29.07,0:47:30.63,Default,,0000,0000,0000,,他們已經離開三年了嗎\NAnd they been gone three years?
+Dialogue: 0,0:47:31.62,0:47:33.29,Default,,0000,0000,0000,,沒有  最近剛走\NNah, just recently.
+Dialogue: 0,0:47:33.88,0:47:34.78,Default,,0000,0000,0000,,等等  什么\NWait, what?
+Dialogue: 0,0:47:36.05,0:47:37.95,Default,,0000,0000,0000,,他們還住在里面你就開始修繕了\NYou were workin' on it while they were still in it?
+Dialogue: 0,0:47:38.35,0:47:39.16,Default,,0000,0000,0000,,對\NYeah.
+Dialogue: 0,0:47:42.53,0:47:43.67,Default,,0000,0000,0000,,這房子在哪里\NWhere is this house?
+Dialogue: 0,0:47:46.43,0:47:47.37,Default,,0000,0000,0000,,就是菲爾莫爾街上那棟房子\NIt's the house in Fillmore.
+Dialogue: 0,0:47:58.02,0:47:59.01,Default,,0000,0000,0000,,什么房子\NWhat house?
+Dialogue: 0,0:48:05.43,0:48:06.15,Default,,0000,0000,0000,,我們的老房子\NOur old house.
+Dialogue: 0,0:48:10.51,0:48:12.15,Default,,0000,0000,0000,,你他媽什么意思  我們的老房子\NWhat the fuck you mean, our old house?
+Dialogue: 0,0:48:15.72,0:48:17.01,Default,,0000,0000,0000,,你去看過那棟房子嗎\NHave you seen that house?
+Dialogue: 0,0:48:20.05,0:48:21.02,Default,,0000,0000,0000,,看過  我是說\NWell, yeah, I mean,
+Dialogue: 0,0:48:21.33,0:48:22.58,Default,,0000,0000,0000,,我經常去\NI be over there all the time.
+Dialogue: 0,0:48:22.80,0:48:24.93,Default,,0000,0000,0000,,那你應該知道那不是你的老房子\NThen you know that's not your old house
+Dialogue: 0,0:48:24.93,0:48:26.92,Default,,0000,0000,0000,,那里也不是你的黑人社區\Nand that's not your black-ass neighborhood.
+Dialogue: 0,0:48:31.97,0:48:34.34,Default,,0000,0000,0000,,目無尊長滿嘴胡話的小兔崽子\NLittle disrespectful lyin' ass.
+Dialogue: 0,0:48:37.76,0:48:40.58,Default,,0000,0000,0000,,-你在說什么  -我知道你還在玩滑板\N- What are you talking about? - Nigga, I know you skateboard!
+Dialogue: 0,0:48:45.20,0:48:46.03,Default,,0000,0000,0000,,是的\NYeah.
+Dialogue: 0,0:48:46.78,0:48:48.43,Default,,0000,0000,0000,,我看到你在外面干什么了\NYeah, I see all that shit out there.
+Dialogue: 0,0:48:49.26,0:48:50.77,Default,,0000,0000,0000,,每個人的道路\NEverybody's little path.
+Dialogue: 0,0:48:52.64,0:48:54.48,Default,,0000,0000,0000,,我也就比你們領先三十步吧\NI'm like 30 steps ahead of y'all.
+Dialogue: 0,0:49:03.57,0:49:04.23,Default,,0000,0000,0000,,走吧\NGo on.
+Dialogue: 0,0:49:04.95,0:49:05.83,Default,,0000,0000,0000,,滾\NGet!
+Dialogue: 0,0:49:06.95,0:49:08.98,Default,,0000,0000,0000,,你知道我們再也不提那棟房子了\NYou know we don't talk about that house no more.
+Dialogue: 0,0:49:11.68,0:49:13.09,Default,,0000,0000,0000,,把東西放下滾吧\NPut the shit down and go!
+Dialogue: 0,0:49:57.10,0:49:58.38,Default,,0000,0000,0000,,你在這兒等很久了嗎\NYou been waiting here long?
+Dialogue: 0,0:49:59.90,0:50:01.00,Default,,0000,0000,0000,,很久了  兄弟\NHella long, bro.
+Dialogue: 0,0:50:02.33,0:50:03.55,Default,,0000,0000,0000,,我可能直接滑滑板了\NI might just skate.
+Dialogue: 0,0:50:06.09,0:50:07.01,Default,,0000,0000,0000,,那也不錯\NWell, that's nice.
+Dialogue: 0,0:50:23.02,0:50:24.13,Default,,0000,0000,0000,,這家伙瘋了\NThis guy fucks.
+Dialogue: 0,0:50:25.29,0:50:28.73,Default,,0000,0000,0000,,桑迪普  桑迪普  兄弟  這家伙瘋了\NSundeep. Sundeep, bro, this guy fucks.
+Dialogue: 0,0:50:29.16,0:50:30.58,Default,,0000,0000,0000,,這家伙瘋了\NThis guy fucks!
+Dialogue: 0,0:50:30.84,0:50:32.37,Default,,0000,0000,0000,,這家伙瘋了\NThis guy fucks!
+Dialogue: 0,0:50:32.37,0:50:35.12,Default,,0000,0000,0000,,這家伙瘋了  這家伙瘋了\NThis guy fucks! This guy fucks!
+Dialogue: 0,0:50:35.26,0:50:37.95,Default,,0000,0000,0000,,這家伙瘋了  這家伙瘋了\NThis guy fucks! This guy fucks!
+Dialogue: 0,0:50:38.08,0:50:40.77,Default,,0000,0000,0000,,這家伙瘋了  這家伙瘋了\NThis guy fucks! This guy fucks!
+Dialogue: 0,0:50:50.00,0:50:50.86,Default,,0000,0000,0000,,這城市就這德行\Nthis city.
+Dialogue: 0,0:50:52.90,0:50:54.13,Default,,0000,0000,0000,,我早明白了  兄弟\NI already know, bro.
+Dialogue: 0,0:51:35.74,0:51:36.58,Default,,0000,0000,0000,,操\NFuck!
+Dialogue: 0,0:51:38.54,0:51:39.36,Default,,0000,0000,0000,,你沒事吧\NAre you okay?
+Dialogue: 0,0:51:43.28,0:51:44.10,Default,,0000,0000,0000,,沒事\NYeah.
+Dialogue: 0,0:51:49.30,0:51:50.19,Default,,0000,0000,0000,,沒事\NYeah.
+Dialogue: 0,0:51:56.70,0:51:57.55,Default,,0000,0000,0000,,這是什么\NWhat is all this?
+Dialogue: 0,0:52:01.60,0:52:02.93,Default,,0000,0000,0000,,以前我爸做自己的事時\NA little room I used to come in
+Dialogue: 0,0:52:02.93,0:52:04.50,Default,,0000,0000,0000,,我就待在這個小房間里\Nwhen my dad was doing his thing.
+Dialogue: 0,0:52:06.68,0:52:07.62,Default,,0000,0000,0000,,很酷  對嗎\NIt's cool, right?
+Dialogue: 0,0:52:10.57,0:52:11.38,Default,,0000,0000,0000,,對  哥們\NYeah, man.
+Dialogue: 0,0:52:14.35,0:52:15.17,Default,,0000,0000,0000,,你今天去見他了嗎\NDid you see him today?
+Dialogue: 0,0:52:18.86,0:52:19.77,Default,,0000,0000,0000,,聊得怎樣\NHow'd it go?
+Dialogue: 0,0:52:21.68,0:52:23.48,Default,,0000,0000,0000,,他說這是個壞主意\NHe said this was a bad idea.
+Dialogue: 0,0:52:27.07,0:52:28.42,Default,,0000,0000,0000,,你不是說他就是個蠢貨嗎\NThought you said he was an idiot.
+Dialogue: 0,0:52:29.01,0:52:31.53,Default,,0000,0000,0000,,不  他就是氣自己把房子弄沒了\NNah, he's just mad 'cause he lost the house.
+Dialogue: 0,0:52:34.28,0:52:36.49,Default,,0000,0000,0000,,但是如果我們不該來這呢\NBut what if we shouldn't be here?
+Dialogue: 0,0:52:38.33,0:52:39.58,Default,,0000,0000,0000,,那還輪得到誰來\NWho should be here more?
+Dialogue: 0,0:52:44.01,0:52:45.02,Default,,0000,0000,0000,,某個百萬富翁\NSome millionaire?
+Dialogue: 0,0:52:49.46,0:52:50.92,Default,,0000,0000,0000,,他們喜歡這里只是因為這棟房子好看\NThey'd want it 'cause it looks nice.
+Dialogue: 0,0:52:52.81,0:52:54.86,Default,,0000,0000,0000,,因為你這房子才能完美如初  吉姆\NYou're the reason it looks nice, Jim.
+Dialogue: 0,0:52:59.45,0:53:00.26,Default,,0000,0000,0000,,這可說不好\NI don't know.
+Dialogue: 0,0:53:04.19,0:53:05.06,Default,,0000,0000,0000,,搞什么\NWhat the fuck?
+Dialogue: 0,0:53:07.15,0:53:08.43,Default,,0000,0000,0000,,我請了人過來\NI invited somebody.
+Dialogue: 0,0:53:19.00,0:53:20.07,Default,,0000,0000,0000,,怎么樣  兄弟\NWhat's good, nigga?
+Dialogue: 0,0:53:20.72,0:53:21.67,Default,,0000,0000,0000,,真高興你能過來\NGlad you could make it.
+Dialogue: 0,0:53:23.31,0:53:24.15,Default,,0000,0000,0000,,怎么回事\NWhat's goin' on?
+Dialogue: 0,0:53:30.16,0:53:31.56,Default,,0000,0000,0000,,一會兒就過來  稍等\NBe back in a sec, pardon me.
+Dialogue: 0,0:53:33.05,0:53:34.08,Default,,0000,0000,0000,,你們還有管風琴\NY'all got an organ?
+Dialogue: 0,0:53:45.03,0:53:46.11,Default,,0000,0000,0000,,還有立柱啥的\NColumns and shit.
+Dialogue: 0,0:54:06.93,0:54:07.96,Default,,0000,0000,0000,,只有你們兩個人嗎\NIt's just y'all here?
+Dialogue: 0,0:54:08.95,0:54:09.78,Default,,0000,0000,0000,,對\NYeah.
+Dialogue: 0,0:54:12.31,0:54:13.70,Default,,0000,0000,0000,,老房子自己會響\NIt just makes noises.
+Dialogue: 0,0:54:15.61,0:54:16.20,Default,,0000,0000,0000,,好吧\NOkay.
+Dialogue: 0,0:54:17.86,0:54:19.12,Default,,0000,0000,0000,,看你坐在這把椅子真不錯\NIt's nice to see you in that chair,
+Dialogue: 0,0:54:19.12,0:54:20.55,Default,,0000,0000,0000,,沒猜到你會挑這把\NI didn't know you'd pick that one.
+Dialogue: 0,0:54:21.48,0:54:22.40,Default,,0000,0000,0000,,多謝  哥們\NThanks a lot, bro.
+Dialogue: 0,0:54:23.46,0:54:27.15,Default,,0000,0000,0000,,有點奇怪  不過這地方挺棒的\NKinda awkward, but this place is cool.
+Dialogue: 0,0:54:28.37,0:54:29.22,Default,,0000,0000,0000,,是啊\NYeah.
+Dialogue: 0,0:54:29.55,0:54:31.18,Default,,0000,0000,0000,,吉米做了很多修繕工作\NJimmie's been doing a lot to fix it up.
+Dialogue: 0,0:54:32.04,0:54:33.06,Default,,0000,0000,0000,,你們怎么搞到這棟房子的\NHow'd y'all get this?
+Dialogue: 0,0:54:33.79,0:54:34.62,Default,,0000,0000,0000,,是吉米的\NIt's Jimmie's.
+Dialogue: 0,0:54:36.05,0:54:37.07,Default,,0000,0000,0000,,他爺爺建的\NHis grandpa built it.
+Dialogue: 0,0:54:37.88,0:54:39.79,Default,,0000,0000,0000,,他是第一個來舊金山的黑人\NHe was the first black man in San Francisco.
+Dialogue: 0,0:54:40.62,0:54:41.88,Default,,0000,0000,0000,,反正別人都是這么說的\NThat's what they call him anyways.
+Dialogue: 0,0:54:44.21,0:54:45.10,Default,,0000,0000,0000,,我去\NShit.
+Dialogue: 0,0:54:46.67,0:54:47.58,Default,,0000,0000,0000,,就是這棟房子嗎\NThis that house?
+Dialogue: 0,0:54:50.07,0:54:52.58,Default,,0000,0000,0000,,吉米之前總說起這地方\NJimmie used to talk about this spot all the time.
+Dialogue: 0,0:54:53.61,0:54:55.43,Default,,0000,0000,0000,,但是你也知道教養院里的那些家伙\NBut you know how niggas be in the group home.
+Dialogue: 0,0:54:56.44,0:54:58.11,Default,,0000,0000,0000,,牛逼吹破天\NOverexaggerating and shit.
+Dialogue: 0,0:54:59.92,0:55:01.32,Default,,0000,0000,0000,,顯得自己與眾不同\NTrying to be all special.
+Dialogue: 0,0:55:03.36,0:55:05.48,Default,,0000,0000,0000,,但是這個地方不是你胡編出來的  吉米\NYou weren't lying about this one, though, h Jimmie?
+Dialogue: 0,0:55:07.03,0:55:08.01,Default,,0000,0000,0000,,你住過教養院\NYou were in a group home?
+Dialogue: 0,0:55:11.24,0:55:12.04,Default,,0000,0000,0000,,對\NYeah.
+Dialogue: 0,0:55:14.16,0:55:14.81,Default,,0000,0000,0000,,住了一年吧\NFor like a year.
+Dialogue: 0,0:55:16.20,0:55:17.01,Default,,0000,0000,0000,,對\NYep.
+Dialogue: 0,0:55:22.50,0:55:24.47,Default,,0000,0000,0000,,想去做個汗蒸嗎\NYou guys wanna go for a schvitz?
+Dialogue: 0,0:55:31.18,0:55:31.99,Default,,0000,0000,0000,,啥東西\NA what?
+Dialogue: 0,0:55:40.95,0:55:42.55,Default,,0000,0000,0000,,等等  這也是你爺爺建的嗎\NWait, your grandfather made this too?
+Dialogue: 0,0:55:44.79,0:55:47.69,Default,,0000,0000,0000,,不  不  這是那些白人建的\NNah. Nah, these white people did.
+Dialogue: 0,0:55:51.59,0:55:53.45,Default,,0000,0000,0000,,但你怎么知道他是第一個來的\NWell, how you know he was the first one, though?
+Dialogue: 0,0:55:54.55,0:55:55.37,Default,,0000,0000,0000,,肯定說謊嘍\NNigga be lyin'.
+Dialogue: 0,0:55:55.41,0:55:58.29,Default,,0000,0000,0000,,兄弟  他從新奧爾良過來\NBro, he came over here from New Orleans.
+Dialogue: 0,0:55:58.91,0:56:01.00,Default,,0000,0000,0000,,這里全都是日本人\NThere was hella Japanese people, bro.
+Dialogue: 0,0:56:01.21,0:56:04.36,Default,,0000,0000,0000,,后來他們全都被關進了集中營\NAnd then they got thrown into little war camps
+Dialogue: 0,0:56:04.36,0:56:06.69,Default,,0000,0000,0000,,他不想住進別人的家里\Nand he wasn't tryin' to move into nobody else's shit,
+Dialogue: 0,0:56:06.69,0:56:08.33,Default,,0000,0000,0000,,所以他就建了這棟房子\Nso he built this, bro.
+Dialogue: 0,0:56:09.66,0:56:10.55,Default,,0000,0000,0000,,太屌了\NThis is great.
+Dialogue: 0,0:56:14.06,0:56:15.09,Default,,0000,0000,0000,,你還玩滑板嗎  兄弟\NYou still skate, bro?
+Dialogue: 0,0:56:17.39,0:56:18.21,Default,,0000,0000,0000,,不\NNah.
+Dialogue: 0,0:56:19.06,0:56:20.48,Default,,0000,0000,0000,,不  我不玩了\NNo, I don't skate no more.
+Dialogue: 0,0:56:21.48,0:56:23.92,Default,,0000,0000,0000,,靠  你以前可挺牛逼的\NShit, I mean, you used to be hella raw.
+Dialogue: 0,0:56:24.39,0:56:25.23,Default,,0000,0000,0000,,是啊\NYeah.
+Dialogue: 0,0:56:27.27,0:56:28.33,Default,,0000,0000,0000,,我不知道  我...\NI don't know, I'm, uh...
+Dialogue: 0,0:56:29.67,0:56:30.72,Default,,0000,0000,0000,,你還記得岡南嗎\Nyou remember Gunna?
+Dialogue: 0,0:56:30.97,0:56:33.38,Default,,0000,0000,0000,,他偷賣糖的女士的東西被抓了\NRemember when he got caught stealing from the candy lady?
+Dialogue: 0,0:56:37.79,0:56:39.87,Default,,0000,0000,0000,,他哭起來太他媽難看了\NYeah, he's an ugly-ass crier, really.
+Dialogue: 0,0:56:40.31,0:56:41.21,Default,,0000,0000,0000,,天啊\NMan.
+Dialogue: 0,0:56:42.25,0:56:43.50,Default,,0000,0000,0000,,丑到家了\NHurt as fuck!
+Dialogue: 0,0:56:44.54,0:56:46.55,Default,,0000,0000,0000,,記不記得侯默女士\NRemember, uh, Ms. Homer,
+Dialogue: 0,0:56:46.55,0:56:48.90,Default,,0000,0000,0000,,-開教養院的那個  -記得\N- the one that ran the group home? - Oh yeah!
+Dialogue: 0,0:56:48.90,0:56:51.67,Default,,0000,0000,0000,,她給那家伙剪頭發  歪歪扭扭的\NAnd she cut that nigga hair, had his line crooked!
+Dialogue: 0,0:56:51.97,0:56:53.10,Default,,0000,0000,0000,,我的天啊\NHella much!
+Dialogue: 0,0:56:53.10,0:56:55.52,Default,,0000,0000,0000,,他說  "操  那個白人女士就不會剪頭發"\NHe goin', "Damn, that white lady couldn't cut no hair!"
+Dialogue: 0,0:56:57.96,0:57:00.51,Default,,0000,0000,0000,,把那家伙的腦袋剪得像倫巴第大街似的\NHad that nigga's shit lookin' like Lombard Street.
+Dialogue: 0,0:56:57.96,0:57:00.51,Default,,0000,0000,0000,,{\an7}{\pos(212.763,213.867)}美國最彎曲的一條街道\N短短一條街上就有八個急轉彎
+Dialogue: 0,0:57:02.60,0:57:03.86,Default,,0000,0000,0000,,那家伙說倫巴...\NThat nigga said Lomb...
+Dialogue: 0,0:57:05.41,0:57:08.07,Default,,0000,0000,0000,,天吶  你們逗得我都要笑尿了\NMan, you niggas gonna make me piss on myself.
+Dialogue: 0,0:57:08.72,0:57:10.81,Default,,0000,0000,0000,,靠  你們這有廁所嗎\NShit, y'all got a bathroom up in here, man?
+Dialogue: 0,0:57:10.81,0:57:12.03,Default,,0000,0000,0000,,這個大房子里\NIn this big-ass house?
+Dialogue: 0,0:57:12.59,0:57:13.21,Default,,0000,0000,0000,,順著大廳走到頭\NIt's down the hall.
+Dialogue: 0,0:57:13.21,0:57:15.62,Default,,0000,0000,0000,,有爪足浴缸的那間\NIt's the room with the little claw-foot tub.
+Dialogue: 0,0:57:15.74,0:57:19.14,Default,,0000,0000,0000,,行了  這個炫酷的大房子\NAight, this cool as shit, big-ass house.
+Dialogue: 0,0:57:20.04,0:57:21.06,Default,,0000,0000,0000,,我去\NMans...
+Dialogue: 0,0:57:22.45,0:57:24.29,Default,,0000,0000,0000,,我也想要你這樣的爺爺\NI wish I had a grandpa like you.
+Dialogue: 0,0:57:24.87,0:57:26.31,Default,,0000,0000,0000,,我也想要這種房子\NNeed me some shit like this.
+Dialogue: 0,0:57:27.16,0:57:28.61,Default,,0000,0000,0000,,這也太爽了\NThis shit is enjoyable.
+Dialogue: 0,0:57:29.40,0:57:30.09,Default,,0000,0000,0000,,是啊\NRight on, bro.
+Dialogue: 0,0:57:31.34,0:57:33.49,Default,,0000,0000,0000,,真為你們驕傲  你也是  蒙特\NI'm proud of you niggas. You too, Mont.
+Dialogue: 0,0:57:34.04,0:57:35.16,Default,,0000,0000,0000,,真他媽屌\NCrazy-ass.
+Dialogue: 0,0:57:36.59,0:57:37.96,Default,,0000,0000,0000,,享受生活吧哥們\NJust living the life, man.
+Dialogue: 0,0:57:39.00,0:57:40.92,Default,,0000,0000,0000,,你們還真做到了\NY'all niggas just really done made it, man.
+Dialogue: 0,0:57:42.02,0:57:44.50,Default,,0000,0000,0000,,我趕緊去趟廁所\NShit, I'm gonna go use this bathroom real quick.
+Dialogue: 0,0:57:45.90,0:57:47.52,Default,,0000,0000,0000,,你太他媽逗了  吉米\NYou a funny motherfucker, Jimmie.
+Dialogue: 0,0:57:49.53,0:57:51.01,Default,,0000,0000,0000,,"你太他媽逗了  吉米"\N"You a funny motherfucker, Jimmie."
+Dialogue: 0,0:58:13.93,0:58:14.75,Default,,0000,0000,0000,,你應該\NYou should, uh...
+Dialogue: 0,0:58:16.71,0:58:17.99,Default,,0000,0000,0000,,你應該給自己找個房間\NYou should have your own room, bro.
+Dialogue: 0,0:58:20.79,0:58:21.80,Default,,0000,0000,0000,,沒關系的  吉姆\NThat's okay, Jim.
+Dialogue: 0,0:58:22.37,0:58:23.44,Default,,0000,0000,0000,,不  我是認真的  伙計\NNah, seriously, man.
+Dialogue: 0,0:58:24.97,0:58:26.37,Default,,0000,0000,0000,,我一直都在你家住\NI been in your space forever.
+Dialogue: 0,0:58:27.50,0:58:28.56,Default,,0000,0000,0000,,這里也是你的家了\NThis place is yours, too.
+Dialogue: 0,0:58:33.65,0:58:34.46,Default,,0000,0000,0000,,哪間都行嗎\NAny room?
+Dialogue: 0,0:58:59.60,0:59:00.63,Default,,0000,0000,0000,,這間怎么樣\NHow about this one?
+Dialogue: 0,0:59:04.22,0:59:05.65,Default,,0000,0000,0000,,你確定你要住在餐廳里嗎\NAre you sure you want the dining room?
+Dialogue: 0,0:59:07.38,0:59:08.20,Default,,0000,0000,0000,,對\NYeah.
+Dialogue: 0,0:59:10.95,0:59:11.81,Default,,0000,0000,0000,,完美無瑕\NIt's perfect.
+Dialogue: 0,0:59:19.08,0:59:20.20,Default,,0000,0000,0000,,志存高遠  兄弟\NDream big, bro.
+Dialogue: 0,0:59:21.53,0:59:22.33,Default,,0000,0000,0000,,是你的了\NIt's yours.
+Dialogue: 0,0:59:33.60,0:59:35.65,Default,,0000,0000,0000,,我們得把這件事搞清楚\NYeah, we're gonna have to figure something out.
+Dialogue: 0,0:59:36.45,0:59:37.91,Default,,0000,0000,0000,,我沒有那么多的時間\NI don't have that much time.
+Dialogue: 0,0:59:38.23,0:59:40.95,Default,,0000,0000,0000,,情況很復雜\NIt's a complicated situation.
+Dialogue: 0,0:59:41.57,0:59:44.14,Default,,0000,0000,0000,,不  供電恢復了  我要賬單上寫我的名字\NNo, the power's been on, i just need the bill in my name.
+Dialogue: 0,0:59:51.38,0:59:54.08,Default,,0000,0000,0000,,好  那我什么時候能收到首次賬單\NOkay, great. Well, when will I get the first invoice?
+Dialogue: 0,0:59:56.99,0:59:58.61,Default,,0000,0000,0000,,你不能再快一點寄過來嗎\NAnd you can't mail that any sooner?
+Dialogue: 0,1:00:06.99,1:00:08.83,Default,,0000,0000,0000,,他在說什么付賬單的事\NHe's talking about paying some bills.
+Dialogue: 0,1:00:09.34,1:00:12.43,Default,,0000,0000,0000,,他要是想多分擔一點我也不會拒絕\N'Cause I wouldn't say no if he offered to chip in a little more.
+Dialogue: 0,1:00:13.58,1:00:15.06,Default,,0000,0000,0000,,他已經分攤一半了  爺爺\NHe already pays half, Grandpa.
+Dialogue: 0,1:00:15.41,1:00:19.12,Default,,0000,0000,0000,,他在這也住了一陣子了  對吧\NWell, he's been here for a while, you know?
+Dialogue: 0,1:00:20.27,1:00:22.14,Default,,0000,0000,0000,,他又不是我們的家人\NAnd he is not exactly family.
+Dialogue: 0,1:00:23.92,1:00:25.01,Default,,0000,0000,0000,,我想他應該知道\NI think he knows that.
+Dialogue: 0,1:00:25.80,1:00:26.66,Default,,0000,0000,0000,,但愿如此\NLet's hope so.
+Dialogue: 0,1:00:27.02,1:00:29.00,Default,,0000,0000,0000,,你叮叮咣咣地在干什么\NWhat's all this noise up in here?
+Dialogue: 0,1:00:29.87,1:00:31.18,Default,,0000,0000,0000,,我在收拾東西\NI'm just packing some stuff.
+Dialogue: 0,1:00:33.11,1:00:34.00,Default,,0000,0000,0000,,要做個項目\NIt's for a project.
+Dialogue: 0,1:00:36.51,1:00:37.32,Default,,0000,0000,0000,,什么時候開始的\NSince when?
+Dialogue: 0,1:00:38.68,1:00:42.15,Default,,0000,0000,0000,,我們都還沒討論過人物呢\NI mean, we haven't even talked about the characters yet.
+Dialogue: 0,1:00:42.15,1:00:43.00,Default,,0000,0000,0000,,你知道我有多喜歡這部分\NYou know how much I like that.
+Dialogue: 0,1:00:43.00,1:00:45.60,Default,,0000,0000,0000,,這個  我還在修改\NYeah, well... I'm still working on it.
+Dialogue: 0,1:00:46.88,1:00:48.13,Default,,0000,0000,0000,,情節還沒設定好\NDon't quite have a plot yet.
+Dialogue: 0,1:00:49.71,1:00:52.35,Default,,0000,0000,0000,,我們可以來個頭腦風暴\NWell, we can brainstorm a little bit.
+Dialogue: 0,1:00:52.86,1:00:55.30,Default,,0000,0000,0000,,我覺得這是我們最擅長的\NYou know, that's where I think we the best at.
+Dialogue: 0,1:00:55.31,1:00:56.63,Default,,0000,0000,0000,,我們的頭腦風暴\NWhen we brainstorming.
+Dialogue: 0,1:00:57.67,1:01:01.96,Default,,0000,0000,0000,,我覺得這次我要自己頭腦風暴了\NI think I gotta brainstorm this one by myself right now.
+Dialogue: 0,1:01:05.29,1:01:06.82,Default,,0000,0000,0000,,但是過一陣可以跟你討論\NBut I'd love to talk about it soon.
+Dialogue: 0,1:01:10.08,1:01:11.06,Default,,0000,0000,0000,,準備好了嗎  兄弟\NYou 'bout ready, bro?
+Dialogue: 0,1:01:18.30,1:01:19.14,Default,,0000,0000,0000,,那...\NWell, um...
+Dialogue: 0,1:01:22.39,1:01:23.36,Default,,0000,0000,0000,,不管是什么項目\NWhatever it is, uh...
+Dialogue: 0,1:01:26.54,1:01:27.36,Default,,0000,0000,0000,,我都為你驕傲\NI'm proud of you.
+Dialogue: 0,1:01:33.29,1:01:33.94,Default,,0000,0000,0000,,看看他\NWow, look at him.
+Dialogue: 0,1:01:33.94,1:01:35.95,Default,,0000,0000,0000,,那是什么鞋\NWhat type of shoes are those?
+Dialogue: 0,1:01:36.13,1:01:37.91,Default,,0000,0000,0000,,你真該搖擺起來  哥們\NYeah, you should start rocking like that, bra-bra.
+Dialogue: 0,1:01:37.91,1:01:39.45,Default,,0000,0000,0000,,你那是什么破帽子  吉米\NWhat the fuck is up with your hat, Jimmie?
+Dialogue: 0,1:01:39.45,1:01:42.03,Default,,0000,0000,0000,,你看著就像個會走路的煙頭  真受不了\NYou look like a human cigarette, I can't handle it.
+Dialogue: 0,1:01:42.03,1:01:43.65,Default,,0000,0000,0000,,吉米  那是保齡球嗎\NJimmie, is that a bowling ball?
+Dialogue: 0,1:01:44.20,1:01:46.17,Default,,0000,0000,0000,,黑人愛麗絲夢游仙境\NIt's the black Alice and Wonderland.
+Dialogue: 0,1:01:46.53,1:01:48.32,Default,,0000,0000,0000,,蒙特  聽說你那根小老二\NMonty, bro, I heard you be whippin' out
+Dialogue: 0,1:01:48.32,1:01:50.90,Default,,0000,0000,0000,,最近在姑娘們身上耍得很爽啊\Nthat little weenie on all the girls.
+Dialogue: 0,1:01:51.71,1:01:53.78,Default,,0000,0000,0000,,兄弟  你那發型看著跟辛普森似的\NBro, with that hair, you look like a Simpson.
+Dialogue: 0,1:01:53.79,1:01:56.22,Default,,0000,0000,0000,,閉嘴吧  只有一件襯衫的傻逼\NNigga, shut up, bro, your one-shirt-havin' ass.
+Dialogue: 0,1:01:56.28,1:01:59.25,Default,,0000,0000,0000,,吉米  你他媽每天都穿這件襯衫\NJimmie, you wear the same shirt every motherfuckin' day.
+Dialogue: 0,1:01:59.25,1:02:01.62,Default,,0000,0000,0000,,跟個癮君子似的  吉米\NYou look like a fiend, Jimmie, come on!
+Dialogue: 0,1:02:02.21,1:02:03.66,Default,,0000,0000,0000,,跟你老爸一個德行\Njust like your daddy!
+Dialogue: 0,1:02:04.40,1:02:05.31,Default,,0000,0000,0000,,我記得\NI remember!
+Dialogue: 0,1:02:05.91,1:02:07.59,Default,,0000,0000,0000,,你那個嗑藥的老爸\NYour crackhead-ass daddy.
+Dialogue: 0,1:02:07.68,1:02:09.47,Default,,0000,0000,0000,,還有你那個吸毒的蠢老媽\NAnd your dumb-fiend-ass mom.
+Dialogue: 0,1:02:10.45,1:02:12.21,Default,,0000,0000,0000,,一家子癮君子\NFamily of fiends, dog.
+Dialogue: 0,1:02:12.22,1:02:14.35,Default,,0000,0000,0000,,以前他跟我買過可卡因\NI done sold him a rock back in the day.
+Dialogue: 0,1:02:14.70,1:02:15.84,Default,,0000,0000,0000,,你們打算干什么\NWhat you got up in there?
+Dialogue: 0,1:02:15.84,1:02:18.21,Default,,0000,0000,0000,,用蕾絲窗簾裝飾那棟大房子嗎\NSome lace curtains for that whole beautifyin'-ass house
+Dialogue: 0,1:02:18.21,1:02:19.17,Default,,0000,0000,0000,,你們就忙這破事嗎\Nthat y'all been makin' up and shit?
+Dialogue: 0,1:02:19.17,1:02:22.89,Default,,0000,0000,0000,,好了  科菲  行了  還有什么\NOkay, Kofi! Okay, what else?
+Dialogue: 0,1:02:22.89,1:02:24.82,Default,,0000,0000,0000,,聽著  你們知道他們倆那天干了什么嗎\NLook! These niggas the other day, they pulled up the other day.
+Dialogue: 0,1:02:24.82,1:02:26.68,Default,,0000,0000,0000,,他們兩個那棟房子里\NNiggas had all types of feminine shit
+Dialogue: 0,1:02:26.68,1:02:28.27,Default,,0000,0000,0000,,有一堆娘們唧唧的東西\Ngoin' on in that house, bro.
+Dialogue: 0,1:02:28.48,1:02:30.04,Default,,0000,0000,0000,,吉米  兩個大男人怎么會做這種事\NJimmie, what two men do that?
+Dialogue: 0,1:02:30.28,1:02:31.85,Default,,0000,0000,0000,,你們就算住在那棟大房子里\NJust 'cause you in that big ass house,
+Dialogue: 0,1:02:31.86,1:02:33.47,Default,,0000,0000,0000,,也不比我們優越  吉米\Nyou not better than us, Jimmie.
+Dialogue: 0,1:02:33.47,1:02:35.51,Default,,0000,0000,0000,,-絕不  -你永遠都不可能比我們優越\N- Never. - You're not better than us.
+Dialogue: 0,1:02:35.81,1:02:37.02,Default,,0000,0000,0000,,什么東西  蕾絲窗簾\NWhat is those, lace curtains
+Dialogue: 0,1:02:37.02,1:02:38.63,Default,,0000,0000,0000,,你要用這東西裝飾房子嗎\Nyou gonna beautify the house with?
+Dialogue: 0,1:02:39.43,1:02:41.15,Default,,0000,0000,0000,,不是吧  哥們  你個軟蛋\NCome on, man, soft-ass nigga.
+Dialogue: 0,1:02:41.48,1:02:43.99,Default,,0000,0000,0000,,我知道你是誰  吉米  記住\NI know who you is, Jimmie, remember!
+Dialogue: 0,1:02:44.71,1:02:45.77,Default,,0000,0000,0000,,你知道你們該做什么嗎\NYou know what y'all need to do?
+Dialogue: 0,1:02:45.77,1:02:46.74,Default,,0000,0000,0000,,你倆就該消失\NY'all need to disappear
+Dialogue: 0,1:02:46.74,1:02:48.63,Default,,0000,0000,0000,,就跟變戲法一樣\Nlike a motherfuckin' magic trick, nigga!
+Dialogue: 0,1:02:48.63,1:02:50.58,Default,,0000,0000,0000,,把兔子從禮帽里揪出去  趕緊滾吧\NRabbit out the hat, get the fuck out here.
+Dialogue: 0,1:02:51.09,1:02:51.97,Default,,0000,0000,0000,,趕緊滾蛋\NFuck outta here!
+Dialogue: 0,1:02:57.11,1:02:59.40,Default,,0000,0000,0000,,吉米  吉米  回家去吧\NJimmie! Jimmie! Go home!
+Dialogue: 0,1:03:11.29,1:03:12.50,Default,,0000,0000,0000,,你竟然在畫他們\NYou're really drawing them?
+Dialogue: 0,1:03:17.48,1:03:18.52,Default,,0000,0000,0000,,他們就會滿嘴噴糞\NThey just talk shit.
+Dialogue: 0,1:03:22.07,1:03:23.67,Default,,0000,0000,0000,,我剛認識你的時候你也滿嘴噴糞\NWell, you talked shit when I met you.
+Dialogue: 0,1:03:27.69,1:03:28.52,Default,,0000,0000,0000,,是嗎\NI did?
+Dialogue: 0,1:03:29.54,1:03:30.50,Default,,0000,0000,0000,,是啊\NYou did.
+Dialogue: 0,1:03:32.12,1:03:32.96,Default,,0000,0000,0000,,不過沒關系\NIt's fine, though.
+Dialogue: 0,1:03:38.97,1:03:40.24,Default,,0000,0000,0000,,那你為什么還跟我玩\NWhy'd you hang out with me, then?
+Dialogue: 0,1:03:43.36,1:03:44.84,Default,,0000,0000,0000,,你是個有心的人  我喜歡你\NYou care about things. I liked you.
+Dialogue: 0,1:03:48.69,1:03:50.84,Default,,0000,0000,0000,,你真的不在乎別人說的話嗎\NYou really don't give a fuck what anybody says?
+Dialogue: 0,1:03:53.33,1:03:57.08,Default,,0000,0000,0000,,因為他們對我刻薄我就不能喜歡他們了嗎\NI shouldn't get to appreciate them 'cause they're mean to me?
+Dialogue: 0,1:04:00.23,1:04:01.10,Default,,0000,0000,0000,,太傻了\NThat's silly.
+Dialogue: 0,1:05:59.08,1:05:59.81,Default,,0000,0000,0000,,你怎么在這\NWhat are you doing here?
+Dialogue: 0,1:06:02.32,1:06:03.80,Default,,0000,0000,0000,,你又是為什么在這\NWhat are you ever doing here?
+Dialogue: 0,1:06:08.33,1:06:09.90,Default,,0000,0000,0000,,你不是搬出去了嗎\NDidn't you move out, though?
+Dialogue: 0,1:06:11.42,1:06:12.22,Default,,0000,0000,0000,,是啊\NYeah.
+Dialogue: 0,1:06:14.63,1:06:16.45,Default,,0000,0000,0000,,他們把鎖都換了\NThey changed the fuckin' locks on me.
+Dialogue: 0,1:06:20.71,1:06:22.83,Default,,0000,0000,0000,,我很遺憾  真糟糕\NI'm sorry, that sucks.
+Dialogue: 0,1:06:25.68,1:06:26.82,Default,,0000,0000,0000,,你想怎樣  伙計\NWhat do you want, man?
+Dialogue: 0,1:06:30.37,1:06:31.56,Default,,0000,0000,0000,,你要在這里待多久\NHow long you gonna be here?
+Dialogue: 0,1:06:33.05,1:06:34.02,Default,,0000,0000,0000,,我還沒想好\NI don't know yet.
+Dialogue: 0,1:06:34.74,1:06:35.73,Default,,0000,0000,0000,,我只是想試著...\NI'm just tryin' to...
+Dialogue: 0,1:06:37.96,1:06:38.84,Default,,0000,0000,0000,,放手\NLet go.
+Dialogue: 0,1:06:40.74,1:06:41.72,Default,,0000,0000,0000,,好吧  那...\NOkay, well...
+Dialogue: 0,1:06:43.10,1:06:45.21,Default,,0000,0000,0000,,我們明天再來好了\NI guess we'll just come back tomorrow then.
+Dialogue: 0,1:06:46.43,1:06:47.25,Default,,0000,0000,0000,,好極了\NGreat.
+Dialogue: 0,1:06:48.58,1:06:49.21,Default,,0000,0000,0000,,真不錯\NThat's nice.
+Dialogue: 0,1:06:52.76,1:06:54.65,Default,,0000,0000,0000,,走吧  吉姆  我們回我家\NCome on, Jim, we'll go to my house.
+Dialogue: 0,1:06:55.46,1:06:58.45,Default,,0000,0000,0000,,這座城市在發瘋  而你還在這里\NIn this crazy fuckin' city, you're still here.
+Dialogue: 0,1:07:09.43,1:07:13.28,Default,,0000,0000,0000,,伙計  這些死小孩把泡泡糖吐得滿地都是\NMan, those damn kids dropping bubble gum all over the place,
+Dialogue: 0,1:07:13.29,1:07:15.43,Default,,0000,0000,0000,,你的座位會遭殃的\Nit'll get all over your seat, man.
+Dialogue: 0,1:07:15.57,1:07:16.41,Default,,0000,0000,0000,,你說是吧\NYou know what I'm sayin'?
+Dialogue: 0,1:07:18.38,1:07:19.74,Default,,0000,0000,0000,,你覺得她會在那里待一晚上嗎\NThink she'll stay there all night?
+Dialogue: 0,1:07:23.04,1:07:23.95,Default,,0000,0000,0000,,你看著吧  等我們回去\NWatch, we'll come back
+Dialogue: 0,1:07:23.95,1:07:25.64,Default,,0000,0000,0000,,她還在那里給窗沿上漆呢\Nand she'll be painting the windowsill.
+Dialogue: 0,1:07:36.65,1:07:39.43,Default,,0000,0000,0000,,對  寶貝  是  我會去的\NYes, baby. Yes, I will be there.
+Dialogue: 0,1:07:39.43,1:07:40.34,Default,,0000,0000,0000,,我戒了三年了\NI've been clean for three years,
+Dialogue: 0,1:07:40.34,1:07:41.67,Default,,0000,0000,0000,,我知道這種集會在哪里\NI know where those meetings are.
+Dialogue: 0,1:07:42.09,1:07:43.30,Default,,0000,0000,0000,,好的  我保證\NAll right, you got it.
+Dialogue: 0,1:07:43.36,1:07:45.00,Default,,0000,0000,0000,,我會提前十五分鐘到\NI'll be there 15 minutes early.
+Dialogue: 0,1:07:45.55,1:07:47.30,Default,,0000,0000,0000,,是  是  我說了\NYes. Yes, I told...
+Dialogue: 0,1:07:49.56,1:07:50.43,Default,,0000,0000,0000,,杰博\NJayboe?
+Dialogue: 0,1:07:54.06,1:07:54.88,Default,,0000,0000,0000,,杰博\NJayboe.
+Dialogue: 0,1:07:59.62,1:08:00.46,Default,,0000,0000,0000,,媽\NMom.
+Dialogue: 0,1:08:04.49,1:08:05.19,Default,,0000,0000,0000,,媽\NMom.
+Dialogue: 0,1:08:05.19,1:08:06.05,Default,,0000,0000,0000,,見到你真高興\NGood to see you.
+Dialogue: 0,1:08:14.24,1:08:16.79,Default,,0000,0000,0000,,- 是啊  不好意思  -沒事的\N- Yeah. I'm sorry. - That's all right.
+Dialogue: 0,1:08:16.99,1:08:18.57,Default,,0000,0000,0000,,我以為你和羅恩在洛杉磯\NI thought you and Ron were in LA.
+Dialogue: 0,1:08:19.35,1:08:20.84,Default,,0000,0000,0000,,不  我們搬回來三個月了\NNo, we been back for three months now.
+Dialogue: 0,1:08:25.52,1:08:26.59,Default,,0000,0000,0000,,這是我朋友  蒙特\NThis is my friend, Mont.
+Dialogue: 0,1:08:27.49,1:08:28.94,Default,,0000,0000,0000,,不好意思  我是吉米的媽媽\N'Scuse me, I'm Jimmie's mom,
+Dialogue: 0,1:08:28.95,1:08:29.79,Default,,0000,0000,0000,,很高興認識你\NNice to meet you.
+Dialogue: 0,1:08:30.24,1:08:31.12,Default,,0000,0000,0000,,很高興認識你\NPleasure to meet you.
+Dialogue: 0,1:08:31.69,1:08:33.22,Default,,0000,0000,0000,,-我也是  先生  -話說...\N- You too, sir. - Yeah, well...
+Dialogue: 0,1:08:33.48,1:08:34.75,Default,,0000,0000,0000,,我們現在住在房子里\NWe been staying at the house.
+Dialogue: 0,1:08:34.85,1:08:36.37,Default,,0000,0000,0000,,如果你愿意\NIf, you know...
+Dialogue: 0,1:08:36.49,1:08:37.33,Default,,0000,0000,0000,,你可以順便過來\NYou should stop by.
+Dialogue: 0,1:08:37.68,1:08:38.88,Default,,0000,0000,0000,,隨便看看\NYou know, come check it out.
+Dialogue: 0,1:08:39.36,1:08:41.09,Default,,0000,0000,0000,,挺好的  行\NThat's nice. Yeah.
+Dialogue: 0,1:08:42.64,1:08:44.14,Default,,0000,0000,0000,,房子  就是我爸的老房子\NThe house, my dad's old house.
+Dialogue: 0,1:08:44.87,1:08:45.91,Default,,0000,0000,0000,,你們家的房子\NYour family house,
+Dialogue: 0,1:08:45.92,1:08:47.41,Default,,0000,0000,0000,,-金門大橋那里  -對\N- on Golden Gate? - Yeah.
+Dialogue: 0,1:08:47.78,1:08:50.28,Default,,0000,0000,0000,,好啊  我有你電話  我會打給你的\NOkay. Well, I got your number, I'll call you.
+Dialogue: 0,1:08:50.46,1:08:51.63,Default,,0000,0000,0000,,看看明天有沒有空來\NTry to come over there tomorrow.
+Dialogue: 0,1:08:53.61,1:08:54.95,Default,,0000,0000,0000,,我沒有電話\NI don't have a phone.
+Dialogue: 0,1:08:57.93,1:08:59.45,Default,,0000,0000,0000,,那我就只能直接過去了\NWell, I just have to come over there, then.
+Dialogue: 0,1:09:00.83,1:09:03.59,Default,,0000,0000,0000,,你什么時候方便  我明天來\NWhat's the best time to come? I'll be over there tomorrow.
+Dialogue: 0,1:09:04.59,1:09:05.96,Default,,0000,0000,0000,,好啊  隨時都可以\NWell, yeah, whenever.
+Dialogue: 0,1:09:06.05,1:09:07.88,Default,,0000,0000,0000,,來吧\NCome... Yeah.
+Dialogue: 0,1:09:08.05,1:09:09.76,Default,,0000,0000,0000,,明天  管它呢\NTomorrow, yeah, fuck it.
+Dialogue: 0,1:09:09.97,1:09:12.47,Default,,0000,0000,0000,,好啊  行  我明天來\NOkay. Cool, I'll be there tomorrow.
+Dialogue: 0,1:09:12.47,1:09:13.39,Default,,0000,0000,0000,,好\NOkay.
+Dialogue: 0,1:09:15.10,1:09:17.10,Default,,0000,0000,0000,,好吧\NYeah. Well...
+Dialogue: 0,1:09:17.52,1:09:19.27,Default,,0000,0000,0000,,我們到站了  不過\NOur stop's coming up, but...
+Dialogue: 0,1:09:20.98,1:09:22.27,Default,,0000,0000,0000,,見到你很高興  媽\NIt was really nice to see you, Mom.
+Dialogue: 0,1:09:22.27,1:09:24.40,Default,,0000,0000,0000,,我也是  兒子  好嗎\NWell, it was good to see you too, son, okay?
+Dialogue: 0,1:09:24.40,1:09:26.82,Default,,0000,0000,0000,,-是啊  -好了好了\N- Yeah. - All right. All right.
+Dialogue: 0,1:09:26.82,1:09:28.48,Default,,0000,0000,0000,,-好  再見  -好\N- All right, bye now. - Okay.
+Dialogue: 0,1:09:28.48,1:09:30.90,Default,,0000,0000,0000,,好  我的天  你現在都比我高了\NOkay. Oh, my God, you taller than me now.
+Dialogue: 0,1:09:30.90,1:09:32.53,Default,,0000,0000,0000,,-是啊  -好  再見  兒子\N- Yeah... - Okay, bye, son.
+Dialogue: 0,1:09:32.53,1:09:33.57,Default,,0000,0000,0000,,好  再見\NYeah, bye.
+Dialogue: 0,1:09:42.16,1:09:45.50,Default,,0000,0000,0000,,為什么  為什么\NWhy? Why?
+Dialogue: 0,1:09:45.50,1:09:47.30,Default,,0000,0000,0000,,-怎么回事  -為什么\N- What happened? - Why?
+Dialogue: 0,1:10:24.67,1:10:25.92,Default,,0000,0000,0000,,什么情況\NWhat the fuck?
+Dialogue: 0,1:10:30.14,1:10:36.23,Default,,0000,0000,0000,,{\an8}安息吧  科菲
+Dialogue: 0,1:10:33.17,1:10:34.22,Default,,0000,0000,0000,,怎么回事\NWhat happened?
+Dialogue: 0,1:10:41.31,1:10:43.56,Default,,0000,0000,0000,,-這他媽怎么回事  -他中槍了\N- What the fuck happened? - He got shot.
+Dialogue: 0,1:10:45.19,1:10:46.11,Default,,0000,0000,0000,,他們開槍打了他\NThey shot him.
+Dialogue: 0,1:10:48.23,1:10:49.94,Default,,0000,0000,0000,,誰  誰開的槍\NWho? Who shot him?
+Dialogue: 0,1:10:54.86,1:10:55.66,Default,,0000,0000,0000,,誰\NWho?
+Dialogue: 0,1:10:56.49,1:10:57.66,Default,,0000,0000,0000,,灣區的黑人\NBay niggas.
+Dialogue: 0,1:10:59.08,1:11:00.08,Default,,0000,0000,0000,,為什么\NFor what?
+Dialogue: 0,1:11:02.91,1:11:04.00,Default,,0000,0000,0000,,為什么\NFor what?
+Dialogue: 0,1:11:07.42,1:11:09.67,Default,,0000,0000,0000,,他說錯了話\NHe was talking shit to the wrong niggas.
+Dialogue: 0,1:11:10.13,1:11:11.84,Default,,0000,0000,0000,,本來是想把他們嚇走的\NTried to bluff some niggas out.
+Dialogue: 0,1:11:13.05,1:11:14.59,Default,,0000,0000,0000,,把他們嚇走\NTried to bluff them out?
+Dialogue: 0,1:11:14.59,1:11:17.22,Default,,0000,0000,0000,,伙計  你哪來的這么多問題\NMan, what's with all the questions, bro?
+Dialogue: 0,1:11:19.43,1:11:20.81,Default,,0000,0000,0000,,我只是不明白\NI just don't get it.
+Dialogue: 0,1:11:21.76,1:11:23.14,Default,,0000,0000,0000,,我之前才見過你們\NI just fuckin' seen y'all.
+Dialogue: 0,1:11:23.14,1:11:24.27,Default,,0000,0000,0000,,所以呢\NAnd nigga?
+Dialogue: 0,1:11:24.27,1:11:26.23,Default,,0000,0000,0000,,我他媽沒聽明白\NAnd I don't fucking get it!
+Dialogue: 0,1:11:26.23,1:11:27.40,Default,,0000,0000,0000,,伙計\NMan.
+Dialogue: 0,1:11:27.65,1:11:29.15,Default,,0000,0000,0000,,趕緊滾蛋\NGet the fuck up outta here, bro.
+Dialogue: 0,1:11:29.48,1:11:30.73,Default,,0000,0000,0000,,讓我滾蛋\NMe get the fuck outta here?
+Dialogue: 0,1:11:30.73,1:11:32.82,Default,,0000,0000,0000,,-對  老兄  滾  -這都是你們的錯\N- Yes, nigga, go! - It's your fucking fault!
+Dialogue: 0,1:11:32.82,1:11:34.57,Default,,0000,0000,0000,,那他媽也是我的朋友\NThat's my fuckin' friend, too!
+Dialogue: 0,1:11:35.44,1:11:37.65,Default,,0000,0000,0000,,-好吧  老兄  -干掉他\N- All right, nigga. - Get on this nigga!
+Dialogue: 0,1:11:37.66,1:11:38.49,Default,,0000,0000,0000,,好吧\NAll right.
+Dialogue: 0,1:11:40.78,1:11:42.33,Default,,0000,0000,0000,,上啊  兄弟\NPush up on this nigga, bro.
+Dialogue: 0,1:11:42.58,1:11:43.91,Default,,0000,0000,0000,,你就這么放過他了\NYou finna let him say that?
+Dialogue: 0,1:12:18.11,1:12:20.37,Default,,0000,0000,0000,,那可憐的孩子和他的朋友們\NThat poor boy and his friends.
+Dialogue: 0,1:12:25.54,1:12:26.87,Default,,0000,0000,0000,,我很遺憾  吉米\NI'm sorry, Jimmie.
+Dialogue: 0,1:12:29.33,1:12:33.00,Default,,0000,0000,0000,,我希望你知道這里永遠對你敞開大門\NI hope I never made you feel like you weren't welcome here.
+Dialogue: 0,1:12:35.42,1:12:38.22,Default,,0000,0000,0000,,嗯  我一直都知道\NNo, I... I never felt like that.
+Dialogue: 0,1:12:40.43,1:12:43.93,Default,,0000,0000,0000,,因為我不在乎你們去了哪里\N'Cause I don't care where you been.
+Dialogue: 0,1:12:45.47,1:12:46.98,Default,,0000,0000,0000,,你們不需要告訴我\NYou don't have to tell me.
+Dialogue: 0,1:12:49.39,1:12:50.85,Default,,0000,0000,0000,,只要你們倆\NIt's just, you two
+Dialogue: 0,1:12:52.65,1:12:54.07,Default,,0000,0000,0000,,一條心就好\Nstick together.
+Dialogue: 0,1:13:01.41,1:13:06.33,Default,,0000,0000,0000,,{\an8}英年早逝  我還是不敢相信
+Dialogue: 0,1:13:06.33,1:13:07.53,Default,,0000,0000,0000,,{\an8}#科菲萬歲
+Dialogue: 0,1:13:09.37,1:13:11.46,Default,,0000,0000,0000,,你知道嗎  我之前在寫關于他的劇\NYou know, I was writing a play about him.
+Dialogue: 0,1:13:18.59,1:13:20.18,Default,,0000,0000,0000,,你可以接著寫\NYou don't have to stop now.
+Dialogue: 0,1:13:25.47,1:13:27.52,Default,,0000,0000,0000,,"你太他媽逗了  吉米"\N"You a funny motherfucker, Jimmie."
+Dialogue: 0,1:13:37.94,1:13:40.20,Default,,0000,0000,0000,,我知道這聽起來有點怪  但是\NI know it sounds weird, but...
+Dialogue: 0,1:13:41.65,1:13:43.57,Default,,0000,0000,0000,,我感覺本來出事的有可能是我\NI kinda feel like that could've been me.
+Dialogue: 0,1:13:45.41,1:13:46.99,Default,,0000,0000,0000,,如果不是因為有房子的話\NIf not for the house.
+Dialogue: 0,1:14:02.26,1:14:03.72,Default,,0000,0000,0000,,我想回家\NMan, I wanna go home.
+Dialogue: 0,1:14:23.86,1:14:26.45,Default,,0000,0000,0000,,骯臟腥臭的咸水\NFilthy, fishy salt water.
+Dialogue: 0,1:14:27.20,1:14:32.29,Default,,0000,0000,0000,,這片水域已經又臟又臭五十年了\NWater been funkier than the Devil's mouth for 50 years.
+Dialogue: 0,1:14:32.87,1:14:34.79,Default,,0000,0000,0000,,現在他們想起來清理了\NNow they wanna clean it up.
+Dialogue: 0,1:14:36.13,1:14:37.96,Default,,0000,0000,0000,,他們沒安好心\NThey've got plans for us.
+Dialogue: 0,1:14:39.75,1:14:42.26,Default,,0000,0000,0000,,我們經歷煉獄之苦\NWe were made to be put through Hell.
+Dialogue: 0,1:14:43.05,1:14:46.76,Default,,0000,0000,0000,,凈化  我們經歷煉獄之苦\NPurified... We were made to be put through Hell.
+Dialogue: 0,1:14:48.22,1:14:50.02,Default,,0000,0000,0000,,凈化我們\NBe purified.
+Dialogue: 0,1:15:02.53,1:15:03.36,Default,,0000,0000,0000,,操\NFuck!
+Dialogue: 0,1:15:05.11,1:15:06.24,Default,,0000,0000,0000,,天啊\NOh, God.
+Dialogue: 0,1:15:09.24,1:15:10.24,Default,,0000,0000,0000,,操\NFuck!
+Dialogue: 0,1:15:21.88,1:15:23.88,Default,,0000,0000,0000,,她是怎么把我們的東西扔出來的\NHow did she toss all of our shit?
+Dialogue: 0,1:15:33.72,1:15:35.10,Default,,0000,0000,0000,,我覺得不是她干的\NI don't think it was her.
+Dialogue: 0,1:15:37.39,1:15:40.80,Default,,0000,0000,0000,,{\an8}房屋出售\N克萊頓·紐森
+Dialogue: 0,1:15:45.19,1:15:46.45,Default,,0000,0000,0000,,該死的叛徒\NFuckin' traitor.
+Dialogue: 0,1:15:59.46,1:16:00.21,Default,,0000,0000,0000,,好吧\NOkay.
+Dialogue: 0,1:16:09.47,1:16:10.97,Default,,0000,0000,0000,,你能待在這里看著東西嗎\NCan you stay here and watch the shit?
+Dialogue: 0,1:16:11.26,1:16:12.39,Default,,0000,0000,0000,,行  你要去哪\NYeah, where you going?
+Dialogue: 0,1:16:15.27,1:16:16.98,Default,,0000,0000,0000,,-你要去哪  -我會回來的\N- Where you going? - I'll be back.
+Dialogue: 0,1:16:17.43,1:16:18.40,Default,,0000,0000,0000,,會回來的\NI'll be back.
+Dialogue: 0,1:16:21.44,1:16:22.44,Default,,0000,0000,0000,,吉米\NJimmie!
+Dialogue: 0,1:16:27.95,1:16:30.62,Default,,0000,0000,0000,,不好意思  有什么需要嗎\NSorry, how can I help you today?
+Dialogue: 0,1:16:36.29,1:16:38.79,Default,,0000,0000,0000,,-我想買一棟房子  -一棟房子\N- I want to buy a house. - A house?
+Dialogue: 0,1:16:39.83,1:16:40.92,Default,,0000,0000,0000,,真令人激動\NThat's exciting.
+Dialogue: 0,1:16:41.33,1:16:42.88,Default,,0000,0000,0000,,你有中介嗎\NAre you working with an agent?
+Dialogue: 0,1:16:43.96,1:16:45.92,Default,,0000,0000,0000,,沒有  需要有嗎\NNo. Do I need to?
+Dialogue: 0,1:16:46.42,1:16:49.47,Default,,0000,0000,0000,,不  不需要\NNo. Not necessarily.
+Dialogue: 0,1:16:49.72,1:16:51.47,Default,,0000,0000,0000,,你心里有大概的房價范圍嗎\NDo you have a price range in mind?
+Dialogue: 0,1:16:51.47,1:16:52.97,Default,,0000,0000,0000,,我心里有一棟房子\NI have a house in mind.
+Dialogue: 0,1:16:57.47,1:16:59.19,Default,,0000,0000,0000,,我想它已經上市了對嗎\NIt's on the market, I assume?
+Dialogue: 0,1:16:59.81,1:17:01.19,Default,,0000,0000,0000,,他們開價多少\NHow much are they asking?
+Dialogue: 0,1:17:02.27,1:17:03.73,Default,,0000,0000,0000,,至少四百萬\NAt least $4 million.
+Dialogue: 0,1:17:05.77,1:17:08.24,Default,,0000,0000,0000,,你愿意付多少首付\NAnd how much are you willing to put down?
+Dialogue: 0,1:17:09.74,1:17:11.11,Default,,0000,0000,0000,,一般付多少\NHow much is usual?
+Dialogue: 0,1:17:12.53,1:17:16.16,Default,,0000,0000,0000,,一般來說  首付至少要百分之二十\NWell, typically, we'd be looking to secure at least 20%.
+Dialogue: 0,1:17:24.21,1:17:25.55,Default,,0000,0000,0000,,我沒那么多錢\NI wouldn't have that.
+Dialogue: 0,1:17:29.30,1:17:30.63,Default,,0000,0000,0000,,可以理解\NThat's understandable.
+Dialogue: 0,1:17:30.63,1:17:32.80,Default,,0000,0000,0000,,想買下那種房子是很困難的\NIt's going to be hard to land a place like that.
+Dialogue: 0,1:17:33.22,1:17:35.47,Default,,0000,0000,0000,,但假如我換個問法...\NBut suppose I ask instead...
+Dialogue: 0,1:17:35.93,1:17:37.47,Default,,0000,0000,0000,,不  不\NNo, no, look.
+Dialogue: 0,1:17:38.85,1:17:39.68,Default,,0000,0000,0000,,我明白\NI get it.
+Dialogue: 0,1:17:41.64,1:17:44.52,Default,,0000,0000,0000,,我還年輕  我是黑人\NI'm young. I'm black.
+Dialogue: 0,1:17:45.19,1:17:46.36,Default,,0000,0000,0000,,我不富裕\NI'm not rich.
+Dialogue: 0,1:17:47.57,1:17:49.32,Default,,0000,0000,0000,,我來這里之前心里就有數了\NI came here knowing all that.
+Dialogue: 0,1:17:49.61,1:17:52.20,Default,,0000,0000,0000,,但我們現實一點  你也有指標要完成\NBut let's be real, you also got a quota to meet.
+Dialogue: 0,1:17:52.65,1:17:54.57,Default,,0000,0000,0000,,我不是說你是個掠奪者  先生\NNow I'm not calling you a predator... Sir.
+Dialogue: 0,1:17:54.57,1:17:55.62,Default,,0000,0000,0000,,但你也想賺錢\NBut you're trying to make your money.
+Dialogue: 0,1:17:55.62,1:17:57.41,Default,,0000,0000,0000,,所以讓我幫你吧  先生\NSo let me help you do that. Sir.
+Dialogue: 0,1:17:57.16,1:17:59.12,Default,,0000,0000,0000,,{\an8}不是這樣辦事的\NThat's not the way this works.
+Dialogue: 0,1:17:57.41,1:17:59.12,Default,,0000,0000,0000,,你可以給我隨便開價\NYou can give me whatever deal you gotta give me.
+Dialogue: 0,1:17:59.12,1:18:00.62,Default,,0000,0000,0000,,我不在乎\NI don't care what it is.
+Dialogue: 0,1:18:01.25,1:18:03.79,Default,,0000,0000,0000,,因為不像那些違約的人\N'Cause unlike all the other people that default,
+Dialogue: 0,1:18:05.04,1:18:07.21,Default,,0000,0000,0000,,這是我唯一想要的房子\Nthis is the only house I'll ever want.
+Dialogue: 0,1:18:07.75,1:18:10.72,Default,,0000,0000,0000,,所以我絕不會拖欠每月的賬單\NSo I'll never miss a monthly bill, ever.
+Dialogue: 0,1:18:11.26,1:18:13.05,Default,,0000,0000,0000,,{\an8}我完全理解你的感受  先生\NI completely understand how you feel, sir.
+Dialogue: 0,1:18:11.34,1:18:13.05,Default,,0000,0000,0000,,你可以給我開最高的利率\NYou can give me your highest interest rate.
+Dialogue: 0,1:18:13.05,1:18:14.51,Default,,0000,0000,0000,,你可以給我開最高的利率  好嗎\NYou can give me your highest interest rate, okay?
+Dialogue: 0,1:18:14.51,1:18:16.72,Default,,0000,0000,0000,,-隨便坑我  -不  我完全...\N- Fuck... Fuck me. - No, I completely...
+Dialogue: 0,1:18:16.72,1:18:17.85,Default,,0000,0000,0000,,你甚至都不需要良心不安\NYou don't even have to feel bad.
+Dialogue: 0,1:18:17.85,1:18:19.35,Default,,0000,0000,0000,,你甚至都不需要良心不安\NYou don't even have to feel bad.
+Dialogue: 0,1:18:20.64,1:18:23.90,Default,,0000,0000,0000,,好嗎  我會還上每一分錢\NOkay? I will pay back every single cent.
+Dialogue: 0,1:18:26.36,1:18:27.23,Default,,0000,0000,0000,,我很抱歉  先生\NI'm sorry, sir.
+Dialogue: 0,1:18:27.98,1:18:30.40,Default,,0000,0000,0000,,我會還上每一分錢\NI will pay back every single cent.
+Dialogue: 0,1:18:32.36,1:18:34.57,Default,,0000,0000,0000,,好吧  好吧  你贏了\NOkay, okay, you win!
+Dialogue: 0,1:18:36.03,1:18:38.20,Default,,0000,0000,0000,,好吧  歸你了\NOkay, yep, it's yours.
+Dialogue: 0,1:18:38.78,1:18:41.08,Default,,0000,0000,0000,,你這個迷人的混蛋  好吧\NYou charming bastard, okay.
+Dialogue: 0,1:18:41.50,1:18:43.37,Default,,0000,0000,0000,,以后再聊  再見\NTalk to you soon, buh-bye.
+Dialogue: 0,1:18:44.71,1:18:45.92,Default,,0000,0000,0000,,最近怎樣  兄弟\NHow's it going, man?
+Dialogue: 0,1:18:46.54,1:18:47.54,Default,,0000,0000,0000,,還不錯  先生\NFine, sir.
+Dialogue: 0,1:18:49.38,1:18:51.63,Default,,0000,0000,0000,,我注意到我們談過房子正在出售\NI noticed the house we discussed is now for sale.
+Dialogue: 0,1:18:53.92,1:18:55.63,Default,,0000,0000,0000,,你的宣傳單里有些嚴重的漏洞\NThere are some alarming elements in your literature
+Dialogue: 0,1:18:55.63,1:18:57.39,Default,,0000,0000,0000,,我認為你可能想知道\NI thought you would like to know.
+Dialogue: 0,1:18:57.80,1:19:00.02,Default,,0000,0000,0000,,房地產總局肯定也想知道\NAnd certainly the Bureau of Real Estate would.
+Dialogue: 0,1:19:03.02,1:19:06.52,Default,,0000,0000,0000,,這上面說從房子里能看到金門大橋\NThis claims the property has a view of the Golden Gate.
+Dialogue: 0,1:19:06.52,1:19:09.27,Default,,0000,0000,0000,,我覺得這不是真的\NWhich... I don't think is true.
+Dialogue: 0,1:19:10.07,1:19:12.78,Default,,0000,0000,0000,,這不對  這不是真的\NWell, it isn't. It isn't true.
+Dialogue: 0,1:19:12.78,1:19:14.86,Default,,0000,0000,0000,,它還說它有原裝的\NIt also claims to have all the original
+Dialogue: 0,1:19:14.86,1:19:16.70,Default,,0000,0000,0000,,"室內設備  地板  和水龍頭"\N"fixtures, floors, and faucets."
+Dialogue: 0,1:19:16.70,1:19:17.62,Default,,0000,0000,0000,,這也不是真的\NIsn't true.
+Dialogue: 0,1:19:17.95,1:19:20.83,Default,,0000,0000,0000,,還有你打算公開沒有化糞池的事實嗎\NAnd are you planning on disclosing that there's no septic tank?
+Dialogue: 0,1:19:20.87,1:19:23.54,Default,,0000,0000,0000,,這意味著\NWhich means, any day now,
+Dialogue: 0,1:19:24.12,1:19:28.21,Default,,0000,0000,0000,,花園隨時可能被屎淹沒\Nthe garden could be flooded with shit.
+Dialogue: 0,1:19:30.46,1:19:31.76,Default,,0000,0000,0000,,你想說什么  伙計\NWhere's this going, man?
+Dialogue: 0,1:19:34.55,1:19:37.39,Default,,0000,0000,0000,,這些加在一起算得上是虛假廣告\NAll this together seems like false advertisement.
+Dialogue: 0,1:19:37.76,1:19:39.39,Default,,0000,0000,0000,,能構成交易作廢\NWhich is grounds for void a sale.
+Dialogue: 0,1:19:39.39,1:19:41.51,Default,,0000,0000,0000,,有可能吊銷房產經紀執照\NPotential revoke of license.
+Dialogue: 0,1:19:41.51,1:19:43.18,Default,,0000,0000,0000,,我想到了可能是你們\NI thought it might've been you guys.
+Dialogue: 0,1:19:47.90,1:19:49.61,Default,,0000,0000,0000,,你想怎么樣\NWhat's your deal, man?
+Dialogue: 0,1:19:50.94,1:19:51.94,Default,,0000,0000,0000,,我不想怎么樣\NDon't have a deal.
+Dialogue: 0,1:19:55.03,1:19:55.90,Default,,0000,0000,0000,,聽著\NLook...
+Dialogue: 0,1:19:56.49,1:19:58.45,Default,,0000,0000,0000,,即使不是我  這層樓也會有別人\NSomebody on this floor would've gotten that house
+Dialogue: 0,1:19:58.45,1:19:59.78,Default,,0000,0000,0000,,拿下那棟房子\Nif it wasn't me.
+Dialogue: 0,1:20:01.07,1:20:03.33,Default,,0000,0000,0000,,至少我是本地人  好嗎\NAt least I'm from here, right?
+Dialogue: 0,1:20:04.70,1:20:08.21,Default,,0000,0000,0000,,-我把你們的東西放在路邊是好意  -好吧\N- I put your stuff on the street as a favor. - Okay.
+Dialogue: 0,1:20:08.21,1:20:09.62,Default,,0000,0000,0000,,我本來可以把東西拖走\NI could've had it trucked away,
+Dialogue: 0,1:20:09.63,1:20:10.83,Default,,0000,0000,0000,,但我給你們留了下來了\Nbut I left it out for you.
+Dialogue: 0,1:20:10.83,1:20:12.63,Default,,0000,0000,0000,,聽著  混蛋\NLook, dick wad.
+Dialogue: 0,1:20:12.63,1:20:14.92,Default,,0000,0000,0000,,我不是在唬人  我會舉報你的\NI'm not fucking around, I will report you.
+Dialogue: 0,1:20:14.92,1:20:15.84,Default,,0000,0000,0000,,舉報什么呢\NFor what?
+Dialogue: 0,1:20:16.34,1:20:19.34,Default,,0000,0000,0000,,掛出了能看到橋景  有室內設施的廣告嗎\NListing a view of the bridge? And fixtures?
+Dialogue: 0,1:20:19.34,1:20:20.60,Default,,0000,0000,0000,,大家都這么干\NEverybody does that.
+Dialogue: 0,1:20:20.64,1:20:22.72,Default,,0000,0000,0000,,那玩意其實是我復制粘貼的\NI literally copy-pasted that shit.
+Dialogue: 0,1:20:22.72,1:20:24.98,Default,,0000,0000,0000,,關于那棟房子的歷史  你在騙人\NWell, you're lying about the history of the house.
+Dialogue: 0,1:20:25.85,1:20:27.73,Default,,0000,0000,0000,,-我沒有騙人  -你有\N- I'm not lying about that. - Yes, you are!
+Dialogue: 0,1:20:27.73,1:20:30.52,Default,,0000,0000,0000,,你說它是在一百年前建的  比實際時間要早\NYou say it was built one hundred years earlier than it actually was.
+Dialogue: 0,1:20:30.52,1:20:31.90,Default,,0000,0000,0000,,聽著  這不是我編的\NLook, I'm not making this up.
+Dialogue: 0,1:20:31.90,1:20:33.15,Default,,0000,0000,0000,,就是你編的\NYes, you are!
+Dialogue: 0,1:20:33.44,1:20:35.98,Default,,0000,0000,0000,,1946年詹姆斯·菲爾斯建了這棟房子\NJames Fails built this house in 1946.
+Dialogue: 0,1:20:35.98,1:20:37.78,Default,,0000,0000,0000,,-詹姆斯  -菲爾斯\N- James? - Fails!
+Dialogue: 0,1:20:37.95,1:20:39.40,Default,,0000,0000,0000,,你在說什么\NWhat are you talking about?
+Dialogue: 0,1:20:39.40,1:20:40.49,Default,,0000,0000,0000,,聽著  伙計\NLook, man.
+Dialogue: 0,1:20:43.95,1:20:46.12,Default,,0000,0000,0000,,1857年的信托契約\NDeed of Trust, 1857.
+Dialogue: 0,1:20:46.12,1:20:49.25,Default,,0000,0000,0000,,建筑師吉爾胡利什么的\NArchitect Gil-hoo-ley, some shit.
+Dialogue: 0,1:20:50.96,1:20:54.05,Default,,0000,0000,0000,,九十年代的時候  你說的菲爾斯沒保住房子\NYour guy Fails lost it in the '90s.
+Dialogue: 0,1:20:54.09,1:20:55.34,Default,,0000,0000,0000,,看  就在這寫著\NSee, right there.
+Dialogue: 0,1:20:57.09,1:20:58.05,Default,,0000,0000,0000,,聽著  伙計\NLook, man.
+Dialogue: 0,1:20:58.47,1:20:59.93,Default,,0000,0000,0000,,如果你們需要一周時間來另找住處\NIf you need a week to find somewhere else,
+Dialogue: 0,1:20:59.93,1:21:01.05,Default,,0000,0000,0000,,那就先住在那里\Nthen take it.
+Dialogue: 0,1:21:01.43,1:21:02.26,Default,,0000,0000,0000,,但是...\NBut...
+Dialogue: 0,1:21:02.84,1:21:07.27,Default,,0000,0000,0000,,別跟我扯那些占屋者權利的屁話\NDon't go pulling some squatters rights shit on me, man.
+Dialogue: 0,1:21:08.85,1:21:09.85,Default,,0000,0000,0000,,我有你的信件\NI got your mail.
+Dialogue: 0,1:21:12.19,1:21:13.19,Default,,0000,0000,0000,,我知道你的名字\NI know your name.
+Dialogue: 0,1:21:14.06,1:21:15.57,Default,,0000,0000,0000,,我不想搞到報警\NI don't want to call the cops.
+Dialogue: 0,1:21:17.07,1:21:18.32,Default,,0000,0000,0000,,我不想對你這么做\NI don't want to do that to you.
+Dialogue: 0,1:22:10.50,1:22:11.46,Default,,0000,0000,0000,,你去哪了\NWhere'd you go?
+Dialogue: 0,1:22:14.21,1:22:15.54,Default,,0000,0000,0000,,不重要  兄弟\NDoesn't matter, bro.
+Dialogue: 0,1:22:18.38,1:22:19.96,Default,,0000,0000,0000,,我把所有東西都搬進來了\NI got everything inside.
+Dialogue: 0,1:22:20.30,1:22:21.67,Default,,0000,0000,0000,,除了沙發\NExcept the couch.
+Dialogue: 0,1:22:23.51,1:22:25.05,Default,,0000,0000,0000,,那玩意差點砸在我身上\NThat shit almost fell on me.
+Dialogue: 0,1:22:29.60,1:22:30.48,Default,,0000,0000,0000,,吉姆\NJim...
+Dialogue: 0,1:22:32.73,1:22:34.10,Default,,0000,0000,0000,,我和房產經紀人談過了\NI spoke to the realtor.
+Dialogue: 0,1:22:34.39,1:22:35.81,Default,,0000,0000,0000,,讓他去死吧\NYeah, fuck that guy.
+Dialogue: 0,1:22:41.32,1:22:42.74,Default,,0000,0000,0000,,他會把我們趕出去\NHe's gonna throw us out.
+Dialogue: 0,1:22:44.49,1:22:46.62,Default,,0000,0000,0000,,最終還會報警\NAnd eventually call the cops.
+Dialogue: 0,1:22:48.99,1:22:51.62,Default,,0000,0000,0000,,我不知道我們還能堅持這樣多久\NI don't know how much longer we can keep doing this.
+Dialogue: 0,1:22:54.41,1:22:56.00,Default,,0000,0000,0000,,如果你不能堅持  我理解\NI understand if you can't.
+Dialogue: 0,1:22:57.00,1:22:57.84,Default,,0000,0000,0000,,我真的理解\NI do.
+Dialogue: 0,1:22:59.67,1:23:00.76,Default,,0000,0000,0000,,但我不會走的\NBut I'm not leaving.
+Dialogue: 0,1:23:06.72,1:23:09.18,Default,,0000,0000,0000,,-吉姆  他說你爺...  -我要去哪呢\N- Jim, he said your grand... - Where am I gonna go?
+Dialogue: 0,1:23:11.77,1:23:13.56,Default,,0000,0000,0000,,我爸住在單人房里\NMy dad's in the SRO.
+Dialogue: 0,1:23:15.27,1:23:17.61,Default,,0000,0000,0000,,我姑姑遠在鳥不拉屎的地方\NMy aunt's out in bum fuck.
+Dialogue: 0,1:23:19.94,1:23:20.82,Default,,0000,0000,0000,,我媽...\NMy mom...
+Dialogue: 0,1:23:22.65,1:23:25.11,Default,,0000,0000,0000,,我根本不知道我媽在哪\NBro, I don't even know where my mom is.
+Dialogue: 0,1:23:28.20,1:23:29.58,Default,,0000,0000,0000,,我不走\NI'm not leaving, bro.
+Dialogue: 0,1:23:33.66,1:23:35.25,Default,,0000,0000,0000,,我是最后一個人了\NI'm the last one left.
+Dialogue: 0,1:23:41.63,1:23:43.09,Default,,0000,0000,0000,,我們可以去我家\NWe have my house.
+Dialogue: 0,1:23:47.97,1:23:49.60,Default,,0000,0000,0000,,我不能回去那里  兄弟\NI can't go back there, bro.
+Dialogue: 0,1:23:55.06,1:23:55.85,Default,,0000,0000,0000,,蒙特\NMont,
+Dialogue: 0,1:23:57.48,1:23:58.56,Default,,0000,0000,0000,,這棟房子...\Nthis house...
+Dialogue: 0,1:24:00.44,1:24:01.57,Default,,0000,0000,0000,,這就是我該做的\NThis is what I do.
+Dialogue: 0,1:24:03.19,1:24:04.82,Default,,0000,0000,0000,,這是我們該做的  蒙特\NIt's what we do, Mont.
+Dialogue: 0,1:24:06.28,1:24:07.66,Default,,0000,0000,0000,,這是屬于我們的\NThis is our shit.
+Dialogue: 0,1:24:08.66,1:24:09.95,Default,,0000,0000,0000,,我們現在不能放棄\NWe can't give up now.
+Dialogue: 0,1:24:10.82,1:24:11.91,Default,,0000,0000,0000,,我們必須抗爭\NWe gotta fight.
+Dialogue: 0,1:24:13.99,1:24:14.83,Default,,0000,0000,0000,,對嗎\NRight?
+Dialogue: 0,1:24:20.58,1:24:21.54,Default,,0000,0000,0000,,對\NYeah.
+Dialogue: 0,1:24:25.34,1:24:26.34,Default,,0000,0000,0000,,我支持你  兄弟\NI'm with you, bro.
+Dialogue: 0,1:24:28.26,1:24:29.76,Default,,0000,0000,0000,,你總是支持我\NYou always been with me.
+Dialogue: 0,1:24:55.49,1:24:56.79,Default,,0000,0000,0000,,你在寫東西嗎\NShit, you're writing?
+Dialogue: 0,1:24:58.46,1:24:59.29,Default,,0000,0000,0000,,嗯\NYeah.
+Dialogue: 0,1:25:00.21,1:25:01.79,Default,,0000,0000,0000,,我覺得我想出了一部戲\NI think I cracked a play.
+Dialogue: 0,1:25:04.84,1:25:07.42,Default,,0000,0000,0000,,我想下周演  如果可以的話\NI'd like to put it on next week, if that's all right?
+Dialogue: 0,1:25:10.63,1:25:12.05,Default,,0000,0000,0000,,太好了  搞起來  兄弟\NHell, yeah, get it, bro!
+Dialogue: 0,1:25:18.06,1:25:25.19,Default,,0000,0000,0000,,{\an7}San Francisco - Scott McKenzie
+Dialogue: 0,1:25:18.06,1:25:25.19,Default,,0000,0000,0000,,? 倘若你要去舊金山 ?\N♪ If you're going to San Francisco ♪
+Dialogue: 0,1:25:26.36,1:25:33.41,Default,,0000,0000,0000,,? 請記得戴花在發上 ?\N♪ Be sure to wear flowers in your hair ♪
+Dialogue: 0,1:25:35.45,1:25:42.17,Default,,0000,0000,0000,,? 倘若你來到舊金山 ?\N♪ If you come to San Francisco ♪
+Dialogue: 0,1:25:43.29,1:25:45.71,Default,,0000,0000,0000,,{\an8}房屋出售\N克萊頓·紐森
+Dialogue: 0,1:25:44.21,1:25:50.47,Default,,0000,0000,0000,,? 你將遇見那里溫柔的人 ?\N♪ You're gonna meet some gentle people there ♪
+Dialogue: 0,1:25:52.43,1:25:55.10,Default,,0000,0000,0000,,? 溫柔的人 ?\N♪ Gentle people ♪
+Dialogue: 0,1:25:56.10,1:25:59.89,Default,,0000,0000,0000,,? 那里溫柔的人 ?\N♪ Gentle people there ♪
+Dialogue: 0,1:26:00.48,1:26:07.48,Default,,0000,0000,0000,,? 溫柔的人  愉快相伴 ?\N♪ Gentle people will be a love-in there ♪
+Dialogue: 0,1:26:26.08,1:26:33.68,Default,,0000,0000,0000,,? 那些來到舊金山的人 ?\N♪ For those who come to San Francisco ♪
+Dialogue: 0,1:26:35.01,1:26:41.81,Default,,0000,0000,0000,,? 夏日將會是好時光 ?\N♪ Summertime will be a love-in there ♪
+Dialogue: 0,1:26:43.60,1:26:50.23,Default,,0000,0000,0000,,? 走在舊金山大街上 ?\N♪ In the streets of San Francisco ♪
+Dialogue: 0,1:26:52.36,1:26:55.16,Default,,0000,0000,0000,,你怎么寫得這么快\NHow'd you write all this that fast?
+Dialogue: 0,1:26:55.61,1:26:56.49,Default,,0000,0000,0000,,還有更多呢\NThere's more.
+Dialogue: 0,1:26:57.78,1:26:59.87,Default,,0000,0000,0000,,但我更想讓你親自觀賞剩下的部分\NBut I'd rather you saw the rest in person.
+Dialogue: 0,1:27:00.70,1:27:07.84,Default,,0000,0000,0000,,? 倘若你來到舊金山  ?\N♪ If you come to San Francisco ♪
+Dialogue: 0,1:27:09.25,1:27:15.47,Default,,0000,0000,0000,,? 夏日將會是好時光 ?\N♪ Summertime will be a love-in there ♪
+Dialogue: 0,1:27:16.68,1:27:18.68,Default,,0000,0000,0000,,-唱得真好  -謝謝你  先生\N- That was good. - Thank you, sir.
+Dialogue: 0,1:27:19.10,1:27:20.10,Default,,0000,0000,0000,,你還會唱什么\NWhat else you got?
+Dialogue: 0,1:27:21.72,1:27:26.19,Default,,0000,0000,0000,,{\an7}I Got 5 on It - Luniz
+Dialogue: 0,1:27:21.72,1:27:24.31,Default,,0000,0000,0000,,? 哥買五塊錢的 ?\N♪ I got five on it ♪
+Dialogue: 0,1:27:25.02,1:27:26.19,Default,,0000,0000,0000,,? 拿上你的四... ?\N♪ Grab your four... ♪
+Dialogue: 0,1:27:26.19,1:27:28.02,Default,,0000,0000,0000,,-抱歉  -不  繼續唱\N- I'm sorry. - No, keep going!
+Dialogue: 0,1:27:33.36,1:27:36.86,Default,,0000,0000,0000,,{\an8}舊金山的最后一個黑人\N編劇  蒙特格馬利·艾倫
+Dialogue: 0,1:27:48.96,1:27:49.75,Default,,0000,0000,0000,,蒙特\NMont?
+Dialogue: 0,1:27:57.51,1:27:59.18,Default,,0000,0000,0000,,也太他媽早了\NHella fuckin' early.
+Dialogue: 0,1:28:03.22,1:28:04.18,Default,,0000,0000,0000,,開始吧\NHere we go.
+Dialogue: 0,1:28:15.69,1:28:17.49,Default,,0000,0000,0000,,你怎么穿得像個白人男孩\NWhy are you dressed like a white boy?
+Dialogue: 0,1:28:22.99,1:28:24.62,Default,,0000,0000,0000,,是為了你們的小演出嗎\NIt's for your little show, huh?
+Dialogue: 0,1:28:47.60,1:28:48.64,Default,,0000,0000,0000,,天吶\NMan.
+Dialogue: 0,1:28:56.07,1:28:58.03,Default,,0000,0000,0000,,你在亂搞我爸的椅子嗎  蒙特格馬利\NYou mess up my daddy's chair, Montgomery?
+Dialogue: 0,1:29:02.24,1:29:03.08,Default,,0000,0000,0000,,沒有\NNo.
+Dialogue: 0,1:29:03.41,1:29:05.03,Default,,0000,0000,0000,,沒有  先生  我們只是...\NNo, sir, we... we were just...
+Dialogue: 0,1:29:05.04,1:29:07.40,Default,,0000,0000,0000,,你結巴什么  已經開始怯場了嗎\NWhat you stuttering for? You got stage fright already?
+Dialogue: 0,1:29:09.50,1:29:10.25,Default,,0000,0000,0000,,沒有\NNo.
+Dialogue: 0,1:29:13.42,1:29:15.38,Default,,0000,0000,0000,,我不在乎椅子  孩子\NI don't care about the chair, son.
+Dialogue: 0,1:29:18.55,1:29:19.88,Default,,0000,0000,0000,,不過手腳輕點\NBut be easy with it.
+Dialogue: 0,1:29:21.26,1:29:22.05,Default,,0000,0000,0000,,謝謝\NThank you.
+Dialogue: 0,1:29:24.14,1:29:25.18,Default,,0000,0000,0000,,繼續\NCarry on.
+Dialogue: 0,1:30:04.43,1:30:07.27,Default,,0000,0000,0000,,我爸很討厭我彈這玩意\NMy daddy hated when I played that shit.
+Dialogue: 0,1:30:17.61,1:30:20.11,Default,,0000,0000,0000,,上來吧  別不好意思\NYeah, come on in, don't be shy.
+Dialogue: 0,1:30:21.28,1:30:22.82,Default,,0000,0000,0000,,這里是他爺爺建的\NHis grandpa built it.
+Dialogue: 0,1:30:24.16,1:30:25.99,Default,,0000,0000,0000,,對一個黑人來說還不錯對吧\NNot bad for a black man, huh?
+Dialogue: 0,1:30:25.99,1:30:27.29,Default,,0000,0000,0000,,是啊\NOh, no.
+Dialogue: 0,1:30:27.87,1:30:30.54,Default,,0000,0000,0000,,很好  非常好\NVery good. Very good.
+Dialogue: 0,1:30:37.92,1:30:40.80,Default,,0000,0000,0000,,這應該挺有意思的  真不錯\NSo, this is gonna be interesting. This is nice.
+Dialogue: 0,1:30:41.88,1:30:43.55,Default,,0000,0000,0000,,-觀眾也不少  -是啊\N- Nice crowd, too. - Yeah.
+Dialogue: 0,1:30:43.55,1:30:45.68,Default,,0000,0000,0000,,你靠糖果賺了很多錢嗎\NYou make a lot of money on candy?
+Dialogue: 0,1:30:45.97,1:30:47.22,Default,,0000,0000,0000,,賣糖\NSell candy?
+Dialogue: 0,1:30:47.64,1:30:49.60,Default,,0000,0000,0000,,-我以前賣過幾年  -是嗎\N- I used to, for years. - Oh, yeah?
+Dialogue: 0,1:30:49.60,1:30:51.55,Default,,0000,0000,0000,,大多數搬進黑人社區的\NMost of these new white people that's moving
+Dialogue: 0,1:30:51.55,1:30:52.98,Default,,0000,0000,0000,,這些新白人\Nin these black neighborhoods,
+Dialogue: 0,1:30:52.98,1:30:55.06,Default,,0000,0000,0000,,他們根本不知道自己正站著的廚房里\Nthey don't even know they standing in the kitchen
+Dialogue: 0,1:30:55.06,1:30:56.86,Default,,0000,0000,0000,,曾經有人被槍擊過\Nwhere a dude got shot at.
+Dialogue: 0,1:30:57.65,1:30:59.36,Default,,0000,0000,0000,,我不知道他要演一出戲\NI didn't know he was doing a play and shit.
+Dialogue: 0,1:30:59.36,1:31:00.27,Default,,0000,0000,0000,,他只是邀請了我們\NHe just invited us.
+Dialogue: 0,1:31:00.28,1:31:02.36,Default,,0000,0000,0000,,我不知道他們在搞什么奇怪的玩意\NI don't know what weird shit they got goin' on,
+Dialogue: 0,1:31:02.36,1:31:03.57,Default,,0000,0000,0000,,但真的很怪\Nbut it's pretty weird.
+Dialogue: 0,1:31:16.42,1:31:17.71,Default,,0000,0000,0000,,我為什么要打你\NWhat I'mma hit you for?
+Dialogue: 0,1:31:18.79,1:31:19.92,Default,,0000,0000,0000,,我們一家的\NYou my folks.
+Dialogue: 0,1:31:23.30,1:31:26.00,Default,,0000,0000,0000,,好吧  好吧\NAll right. All right.
+Dialogue: 0,1:31:27.55,1:31:29.97,Default,,0000,0000,0000,,但我受不了身邊有軟弱的家伙\NBut I can't have soft niggas hanging around me.
+Dialogue: 0,1:31:34.81,1:31:35.69,Default,,0000,0000,0000,,打我啊\NHit me.
+Dialogue: 0,1:31:38.52,1:31:39.36,Default,,0000,0000,0000,,不\NNah!
+Dialogue: 0,1:31:39.98,1:31:41.82,Default,,0000,0000,0000,,不要  為什么打你  哥們\NNah! For what, nigga?
+Dialogue: 0,1:31:42.28,1:31:43.07,Default,,0000,0000,0000,,打我啊\NHit me.
+Dialogue: 0,1:31:44.11,1:31:47.07,Default,,0000,0000,0000,,男人點  哥們  男人點\NMan up, nigga. Man up!
+Dialogue: 0,1:31:48.82,1:31:49.78,Default,,0000,0000,0000,,不  兄弟\NNo, bro!
+Dialogue: 0,1:31:50.16,1:31:52.04,Default,,0000,0000,0000,,不  不  兄弟  不\NNo! No, bro, no!
+Dialogue: 0,1:31:54.25,1:31:55.41,Default,,0000,0000,0000,,軟蛋\NYou soft.
+Dialogue: 0,1:31:57.25,1:31:58.83,Default,,0000,0000,0000,,你這個軟蛋\NYou soft, nigga.
+Dialogue: 0,1:31:59.80,1:32:02.23,Default,,0000,0000,0000,,他們會在你的葬禮上管你叫孬種\NThey gonna call you a bitch at your funeral.
+Dialogue: 0,1:32:02.23,1:32:03.60,Default,,0000,0000,0000,,我不是孬種\NI ain't no bitch!
+Dialogue: 0,1:32:03.60,1:32:05.82,Default,,0000,0000,0000,,我不是孬種  我是個男人\NI ain't no bitch! I'm a man!
+Dialogue: 0,1:32:05.82,1:32:06.93,Default,,0000,0000,0000,,那打我啊\NThen hit me.
+Dialogue: 0,1:32:07.89,1:32:10.71,Default,,0000,0000,0000,,打我  兄弟  打我\NHit me, bro. Hit me.
+Dialogue: 0,1:32:12.49,1:32:13.74,Default,,0000,0000,0000,,打我啊  哥們\NHit me, nigga.
+Dialogue: 0,1:32:24.89,1:32:25.79,Default,,0000,0000,0000,,好吧\NAll right!
+Dialogue: 0,1:32:26.08,1:32:27.88,Default,,0000,0000,0000,,好吧\NAll right! Yeah!
+Dialogue: 0,1:32:28.03,1:32:29.14,Default,,0000,0000,0000,,來啊  哥們\NHere, nigga.
+Dialogue: 0,1:32:29.27,1:32:30.79,Default,,0000,0000,0000,,我不在乎\NI don't give a fuck.
+Dialogue: 0,1:32:31.34,1:32:32.88,Default,,0000,0000,0000,,瞧瞧我的厲害  哥們\NCome see me, nigga.
+Dialogue: 0,1:32:32.96,1:32:34.34,Default,,0000,0000,0000,,誰在那邊躲著\NWho out there hiding?
+Dialogue: 0,1:32:34.60,1:32:35.69,Default,,0000,0000,0000,,男人點\NMan up!
+Dialogue: 0,1:32:35.73,1:32:36.95,Default,,0000,0000,0000,,男人點  哥們\NMan up, nigga!
+Dialogue: 0,1:32:36.96,1:32:38.00,Default,,0000,0000,0000,,男人點\NMan up!
+Dialogue: 0,1:32:45.08,1:32:46.62,Default,,0000,0000,0000,,無話可說\NNo words.
+Dialogue: 0,1:32:46.88,1:32:48.11,Default,,0000,0000,0000,,無話可說\NNo words!
+Dialogue: 0,1:32:49.13,1:32:51.71,Default,,0000,0000,0000,,請送上我的線上擁抱\NPlease send e-hugs.
+Dialogue: 0,1:32:51.57,1:32:55.92,Default,,0000,0000,0000,,{\an8}無話可說  無話可說  請送上我的線上擁抱  #科菲\N赫姿·格林  135個贊
+Dialogue: 0,1:32:53.90,1:32:55.26,Default,,0000,0000,0000,,赫姿·格林\NHazel Greene.
+Dialogue: 0,1:32:56.54,1:32:59.45,Default,,0000,0000,0000,,135個贊\NA hundred and thirty-five likes.
+Dialogue: 0,1:33:01.57,1:33:02.59,Default,,0000,0000,0000,,媽的\NDamn!
+Dialogue: 0,1:33:03.41,1:33:04.80,Default,,0000,0000,0000,,媽的\NDamn!
+Dialogue: 0,1:33:05.00,1:33:07.20,Default,,0000,0000,0000,,那天才剛跟你一起抽煙\NJust smoked with you the other day!
+Dialogue: 0,1:33:08.23,1:33:09.68,Default,,0000,0000,0000,,不可思議\NCrazy!
+Dialogue: 0,1:33:10.91,1:33:12.24,Default,,0000,0000,0000,,約翰·畢肖普\NJohn Bishop.
+Dialogue: 0,1:33:12.78,1:33:15.19,Default,,0000,0000,0000,,260個贊\NTwo hundred and sixty likes.
+Dialogue: 0,1:33:15.19,1:33:16.64,Default,,0000,0000,0000,,十個分享\NTen shares.
+Dialogue: 0,1:33:18.39,1:33:21.70,Default,,0000,0000,0000,,這些人了解科菲嗎\NAre these the people who knew Kofi?
+Dialogue: 0,1:33:23.93,1:33:27.94,Default,,0000,0000,0000,,因為遲到被我的賤人老板吼了\NGot yelled at by my bitch boss for being late!
+Dialogue: 0,1:33:27.95,1:33:29.09,Default,,0000,0000,0000,,抱歉\NSorry!
+Dialogue: 0,1:33:29.12,1:33:31.46,Default,,0000,0000,0000,,沒有時間悲痛\NThere's no time for grief.
+Dialogue: 0,1:33:32.28,1:33:36.30,Default,,0000,0000,0000,,利亞·田中  320個贊\NLeah Tanaka, 320 likes.
+Dialogue: 0,1:33:37.31,1:33:38.60,Default,,0000,0000,0000,,老天\NMan!
+Dialogue: 0,1:33:39.42,1:33:43.12,Default,,0000,0000,0000,,老天  不敢相信我們失去了我兄弟\NMan! Can't believe we lost my bro!
+Dialogue: 0,1:33:43.63,1:33:45.84,Default,,0000,0000,0000,,但你不會想讓我哀傷  科\NBut you wouldn't want me to be sad, Ko,
+Dialogue: 0,1:33:45.84,1:33:48.81,Default,,0000,0000,0000,,所以我把痛苦寄于音樂\Nso I put my pain into my music!
+Dialogue: 0,1:33:48.83,1:33:51.10,Default,,0000,0000,0000,,請記得一定要點贊\NMake sure you like the post.
+Dialogue: 0,1:33:51.10,1:33:53.47,Default,,0000,0000,0000,,羅羅羅  羅德尼·塔克\NRo-Ro-Ro-Rodney Tuck.
+Dialogue: 0,1:33:54.32,1:33:57.99,Default,,0000,0000,0000,,塔克先生十年前\NMr. Tuck moved to Florida
+Dialogue: 0,1:33:58.51,1:33:59.88,Default,,0000,0000,0000,,就搬去弗羅里達了\Nten years ago!
+Dialogue: 0,1:34:00.88,1:34:04.15,Default,,0000,0000,0000,,這些人了解科菲嗎\NAre these the people who knew Kofi?
+Dialogue: 0,1:34:05.70,1:34:08.87,Default,,0000,0000,0000,,科菲有方方面面\NKofi had dimensions.
+Dialogue: 0,1:34:09.49,1:34:13.84,Default,,0000,0000,0000,,一個帖子不足以反映  一出話劇不足以捕捉\NMore than a... a post could reflect or a play could capture.
+Dialogue: 0,1:34:16.03,1:34:17.53,Default,,0000,0000,0000,,所以我召集你們\NSo I summon you.
+Dialogue: 0,1:34:19.06,1:34:21.35,Default,,0000,0000,0000,,慶祝他過往的人生\NCelebrate the life he lived.
+Dialogue: 0,1:34:21.35,1:34:23.67,Default,,0000,0000,0000,,不是通過那些嗓門最大的人\NNot through those who speak the loudest.
+Dialogue: 0,1:34:23.67,1:34:26.18,Default,,0000,0000,0000,,而是通過他留給我們的記憶\NBut through the memories he left us all.
+Dialogue: 0,1:34:28.00,1:34:28.88,Default,,0000,0000,0000,,女士\NMa'am!
+Dialogue: 0,1:34:29.31,1:34:31.21,Default,,0000,0000,0000,,-我嗎  -你怎么...\N- Me? - How will you...
+Dialogue: 0,1:34:32.74,1:34:34.48,Default,,0000,0000,0000,,你怎么回憶科菲\NHow will you remember Kofi?
+Dialogue: 0,1:34:43.79,1:34:47.27,Default,,0000,0000,0000,,我侄女剛搬來這里時\NHe, you know, he used to come and walk my niece
+Dialogue: 0,1:34:47.27,1:34:50.34,Default,,0000,0000,0000,,他常常陪她放學回家\Nhome from school when she first moved up here.
+Dialogue: 0,1:34:50.57,1:34:53.20,Default,,0000,0000,0000,,他是個小紳士  差不多吧\NHe was a little gentleman, or whatnot,
+Dialogue: 0,1:34:53.20,1:34:55.68,Default,,0000,0000,0000,,很貼心...\Nyou know, sweet, um...
+Dialogue: 0,1:34:56.94,1:34:58.54,Default,,0000,0000,0000,,實在悲傷\NIt's just sad.
+Dialogue: 0,1:35:00.97,1:35:04.72,Default,,0000,0000,0000,,我訓練科菲打波普·華納橄欖球賽\NI coached Kofi in Pop Warner.
+Dialogue: 0,1:35:04.72,1:35:07.53,Default,,0000,0000,0000,,他總留下來幫我整理\NHe stayed behind and helped me pack up.
+Dialogue: 0,1:35:07.86,1:35:09.15,Default,,0000,0000,0000,,每天都是\NEvery day.
+Dialogue: 0,1:35:10.41,1:35:11.37,Default,,0000,0000,0000,,是的\NYeah.
+Dialogue: 0,1:35:13.86,1:35:15.27,Default,,0000,0000,0000,,你呢  年輕人\NAnd how 'bout you, young man?
+Dialogue: 0,1:35:21.61,1:35:22.74,Default,,0000,0000,0000,,見鬼\NShit, man.
+Dialogue: 0,1:35:24.18,1:35:25.28,Default,,0000,0000,0000,,我不知道\NI don't know.
+Dialogue: 0,1:35:27.60,1:35:29.41,Default,,0000,0000,0000,,我把他逼得太緊了嗎\NDid I push him too hard?
+Dialogue: 0,1:35:31.17,1:35:33.04,Default,,0000,0000,0000,,科菲是我兄弟\NKofi was my nigga, man.
+Dialogue: 0,1:35:36.88,1:35:38.41,Default,,0000,0000,0000,,我逼他太緊了嗎\NDid I push him too hard?
+Dialogue: 0,1:35:47.84,1:35:48.96,Default,,0000,0000,0000,,你呢\NHow 'bout you?
+Dialogue: 0,1:35:56.56,1:35:57.46,Default,,0000,0000,0000,,好吧\NWell...
+Dialogue: 0,1:35:59.66,1:36:01.80,Default,,0000,0000,0000,,我對科菲最后的記憶\NMy last memory of Kofi
+Dialogue: 0,1:36:02.64,1:36:04.37,Default,,0000,0000,0000,,是他對我滿嘴噴糞\Nwas him talking shit to me.
+Dialogue: 0,1:36:06.84,1:36:08.95,Default,,0000,0000,0000,,他說了一些我聽過的\NHe said some of the most fucked-up shit
+Dialogue: 0,1:36:09.05,1:36:10.90,Default,,0000,0000,0000,,最操蛋的話\Nanybody's ever said to me.
+Dialogue: 0,1:36:14.80,1:36:16.60,Default,,0000,0000,0000,,但科菲也曾\NBut Kofi also got jumped
+Dialogue: 0,1:36:16.60,1:36:19.41,Default,,0000,0000,0000,,因在教養院幫我跟大孩子對峙而被突襲\Nfor defending me against the older kids in the group home.
+Dialogue: 0,1:36:20.88,1:36:21.75,Default,,0000,0000,0000,,他不喜歡打架\NHe didn't like to fight,
+Dialogue: 0,1:36:21.75,1:36:25.33,Default,,0000,0000,0000,,但他那時為了我打架\Nbut he fought for me then.
+Dialogue: 0,1:36:28.86,1:36:30.25,Default,,0000,0000,0000,,人不止一面\NPeople aren't one thing.
+Dialogue: 0,1:36:40.03,1:36:40.90,Default,,0000,0000,0000,,聽聽\NThat.
+Dialogue: 0,1:36:45.14,1:36:48.38,Default,,0000,0000,0000,,所有...所有這些\NAll... all of it.
+Dialogue: 0,1:36:51.98,1:36:53.41,Default,,0000,0000,0000,,如果科菲能夠\NWhat would have happened
+Dialogue: 0,1:36:54.28,1:36:56.15,Default,,0000,0000,0000,,表現自己\Nif Kofi could've
+Dialogue: 0,1:36:57.15,1:36:58.77,Default,,0000,0000,0000,,會發生什么\Nshowed himself?
+Dialogue: 0,1:36:59.86,1:37:02.67,Default,,0000,0000,0000,,他各方面的自己\NAll forms of himself.
+Dialogue: 0,1:37:05.41,1:37:06.58,Default,,0000,0000,0000,,世界\NThe world
+Dialogue: 0,1:37:08.91,1:37:10.52,Default,,0000,0000,0000,,把他困在一個盒子里\Nput him in a box!
+Dialogue: 0,1:37:12.34,1:37:13.62,Default,,0000,0000,0000,,而他從未\NAnd he never
+Dialogue: 0,1:37:14.31,1:37:15.84,Default,,0000,0000,0000,,推開盒子\Npushed beyond it.
+Dialogue: 0,1:37:20.15,1:37:21.22,Default,,0000,0000,0000,,讓我們來\NLet us.
+Dialogue: 0,1:37:22.46,1:37:25.08,Default,,0000,0000,0000,,讓我們打破盒子\NLet us break the boxes!
+Dialogue: 0,1:37:25.97,1:37:28.59,Default,,0000,0000,0000,,讓我們給彼此勇氣\NLet us give each other the courage!
+Dialogue: 0,1:37:28.59,1:37:30.19,Default,,0000,0000,0000,,去...去看\NTo... to see!
+Dialogue: 0,1:37:30.66,1:37:33.69,Default,,0000,0000,0000,,看我們的出身之外的世界\NBeyond the stories we are born into!
+Dialogue: 0,1:37:35.29,1:37:36.43,Default,,0000,0000,0000,,讓我們所有人\NLet us all
+Dialogue: 0,1:37:37.87,1:37:39.19,Default,,0000,0000,0000,,好好看看\Nreally look
+Dialogue: 0,1:37:39.76,1:37:42.36,Default,,0000,0000,0000,,吉米·菲爾斯四世\Nat Jimmie Fails IV.
+Dialogue: 0,1:37:51.09,1:37:52.83,Default,,0000,0000,0000,,自學成才的歷史學家\NSelf-taught historian.
+Dialogue: 0,1:37:54.08,1:37:55.26,Default,,0000,0000,0000,,木匠\NCarpenter.
+Dialogue: 0,1:37:56.51,1:37:58.77,Default,,0000,0000,0000,,溫和善良的人\NGentle, loving man.
+Dialogue: 0,1:37:58.77,1:38:01.04,Default,,0000,0000,0000,,一個真正的幸存者  吉米\NA true survivor. Jimmie!
+Dialogue: 0,1:38:01.04,1:38:03.13,Default,,0000,0000,0000,,你住過多少地方\NHow many places have you lived?
+Dialogue: 0,1:38:03.13,1:38:05.10,Default,,0000,0000,0000,,如果他們明天把你趕出去\NAnd if they kicked you out tomorrow,
+Dialogue: 0,1:38:05.11,1:38:08.07,Default,,0000,0000,0000,,你還是這樣的人\Nyou would still be all those things!
+Dialogue: 0,1:38:08.07,1:38:09.97,Default,,0000,0000,0000,,你的存在超越...\NYou exist beyond the...
+Dialogue: 0,1:38:10.01,1:38:13.27,Default,,0000,0000,0000,,這些墻  你超越你的...\Nthese walls, you extend beyond your...
+Dialogue: 0,1:38:13.27,1:38:15.19,Default,,0000,0000,0000,,你的祖先\Nyour... your forefathers!
+Dialogue: 0,1:38:15.46,1:38:17.16,Default,,0000,0000,0000,,你超越這個房子\NYou are more than this house!
+Dialogue: 0,1:38:17.24,1:38:19.66,Default,,0000,0000,0000,,吉米  你不是這些...這些墻\NJimmie, you are not these... these walls!
+Dialogue: 0,1:38:19.66,1:38:21.70,Default,,0000,0000,0000,,你不是這些地板  你不是這個天花板\NYou're not these floors, you're not this ceiling!
+Dialogue: 0,1:38:21.70,1:38:23.28,Default,,0000,0000,0000,,-該讓你知道了  -兄弟  你在做什么\N- It's time you know! - Bro, what are you doing?
+Dialogue: 0,1:38:23.28,1:38:24.69,Default,,0000,0000,0000,,-你在做什么  -是時候了\N- What are you doing? - It is time!
+Dialogue: 0,1:38:24.82,1:38:26.66,Default,,0000,0000,0000,,-該讓你知道了  -我不需要知道\N- It is time you know! - I don't need to know,
+Dialogue: 0,1:38:26.66,1:38:29.51,Default,,0000,0000,0000,,我不需要知道  停下  停下\NI don't need to know. Let's stop. Let's stop.
+Dialogue: 0,1:38:32.57,1:38:34.75,Default,,0000,0000,0000,,-吉米  你不...  -夠了  停下\N- Jimmie... You don't! - Enough, stop!
+Dialogue: 0,1:38:34.75,1:38:36.21,Default,,0000,0000,0000,,-停下好嗎  蒙特  -吉米\N- Please, stop. Mont! - Jimmie!
+Dialogue: 0,1:38:36.21,1:38:38.77,Default,,0000,0000,0000,,-這房子不是你爺爺建的  -夠了\N- Your grandpa didn't build this house! - Enough!
+Dialogue: 0,1:38:43.13,1:38:44.95,Default,,0000,0000,0000,,不是他建的  吉米\NHe didn't build it, Jimmie!
+Dialogue: 0,1:38:54.81,1:38:55.94,Default,,0000,0000,0000,,是他建的\NYes, he did.
+Dialogue: 0,1:38:58.44,1:39:01.05,Default,,0000,0000,0000,,-這房子是他建的  -不是他  我看到了\N- He built this house! - He didn't, I saw it, man,
+Dialogue: 0,1:39:01.05,1:39:02.43,Default,,0000,0000,0000,,我看到了契約\NI saw the deed.
+Dialogue: 0,1:39:04.44,1:39:05.57,Default,,0000,0000,0000,,我看到了\NI saw it.
+Dialogue: 0,1:39:40.51,1:39:42.93,Default,,0000,0000,0000,,不知道那是什么情況\NI don't know what the hell that thing was.
+Dialogue: 0,1:39:56.87,1:39:57.99,Default,,0000,0000,0000,,然后他左勾拳\NThen he shoots a left.
+Dialogue: 0,1:40:01.33,1:40:02.95,Default,,0000,0000,0000,,讓他們走吧\NMan, let 'em leave.
+Dialogue: 0,1:40:02.95,1:40:05.39,Default,,0000,0000,0000,,反正他們也不配待在這里\NThey don't deserve to be in here anyway.
+Dialogue: 0,1:40:10.52,1:40:11.79,Default,,0000,0000,0000,,我們也不配\NNeither do we.
+Dialogue: 0,1:40:16.12,1:40:17.36,Default,,0000,0000,0000,,你真的要聽\NYou gonna really listen to what
+Dialogue: 0,1:40:17.36,1:40:19.61,Default,,0000,0000,0000,,另一個黑人給你說的真相嗎\Nanother-ass nigga tell you what's true?
+Dialogue: 0,1:40:21.73,1:40:24.34,Default,,0000,0000,0000,,拜托  杰博  挺起脊梁\NCome on, Jayboe, get your spine up, son.
+Dialogue: 0,1:40:24.53,1:40:27.20,Default,,0000,0000,0000,,-多些驕傲  -我一直在那么做\N- Have some pride, man. - I've been doin'.
+Dialogue: 0,1:40:35.77,1:40:36.98,Default,,0000,0000,0000,,但是你說出來吧\NBut you say it.
+Dialogue: 0,1:40:38.79,1:40:39.88,Default,,0000,0000,0000,,說什么\NSay what?
+Dialogue: 0,1:40:42.50,1:40:43.67,Default,,0000,0000,0000,,真相\NThe truth.
+Dialogue: 0,1:40:44.72,1:40:45.64,Default,,0000,0000,0000,,什么\NWhat?
+Dialogue: 0,1:40:47.12,1:40:49.42,Default,,0000,0000,0000,,這房子不是爺爺建的\NThat grandpa didn't build this house.
+Dialogue: 0,1:40:50.97,1:40:52.94,Default,,0000,0000,0000,,老天  不要相信那些胡說八道\NMan, get outta here with that bullshit.
+Dialogue: 0,1:40:52.94,1:40:54.52,Default,,0000,0000,0000,,拜托  杰博\NCome on, Jayboe.
+Dialogue: 0,1:41:00.93,1:41:02.11,Default,,0000,0000,0000,,說吧\NJust say it.
+Dialogue: 0,1:41:16.64,1:41:18.13,Default,,0000,0000,0000,,我說不出來\NCan't tell you shit.
+Dialogue: 0,1:41:21.12,1:41:22.60,Default,,0000,0000,0000,,我要走了\NI'm outta here, man.
+Dialogue: 0,1:41:23.37,1:41:25.53,Default,,0000,0000,0000,,你愿意信就信吧\NYou sit in that bullshit if you want.
+Dialogue: 0,1:42:56.23,1:42:57.27,Default,,0000,0000,0000,,杰博\NJayboe.
+Dialogue: 0,1:43:05.38,1:43:08.34,Default,,0000,0000,0000,,這么久以來我一直跟人說是他建的\NI been telling people he built it for so long.
+Dialogue: 0,1:43:13.61,1:43:15.67,Default,,0000,0000,0000,,差點忘了這不是真的\NAlmost forgot it wasn't true.
+Dialogue: 0,1:43:21.59,1:43:23.18,Default,,0000,0000,0000,,這曾是我們的\NThis was ours.
+Dialogue: 0,1:43:23.90,1:43:25.01,Default,,0000,0000,0000,,然后又不是了\NAnd then it wasn't.
+Dialogue: 0,1:43:27.30,1:43:29.54,Default,,0000,0000,0000,,所以你只是告訴自己一些話\NSo you just tell yourself what you need
+Dialogue: 0,1:43:29.54,1:43:31.83,Default,,0000,0000,0000,,讓你感覺這仍是我們的\Nto make you feel like it still is.
+Dialogue: 0,1:43:35.13,1:43:36.03,Default,,0000,0000,0000,,見鬼\NShit.
+Dialogue: 0,1:43:37.38,1:43:38.65,Default,,0000,0000,0000,,我也是一樣\NI did it, too.
+Dialogue: 0,1:43:44.19,1:43:45.67,Default,,0000,0000,0000,,會讓你覺得\NIt makes you feel
+Dialogue: 0,1:43:47.46,1:43:48.43,Default,,0000,0000,0000,,與眾不同\Nspecial.
+Dialogue: 0,1:43:51.67,1:43:53.41,Default,,0000,0000,0000,,但你現在有機會\NBut you got a chance to get out
+Dialogue: 0,1:43:53.69,1:43:55.77,Default,,0000,0000,0000,,拋開這一切了\Nfrom underneath all of that now.
+Dialogue: 0,1:43:57.99,1:43:59.37,Default,,0000,0000,0000,,我不想\NI don't want to.
+Dialogue: 0,1:44:01.53,1:44:03.09,Default,,0000,0000,0000,,我只想要這房子\NI just want it.
+Dialogue: 0,1:44:06.91,1:44:08.56,Default,,0000,0000,0000,,這是你真正想要的嗎\NIs that what you really want?
+Dialogue: 0,1:44:11.95,1:44:15.59,Default,,0000,0000,0000,,下半輩子都為此努力\NTo spend the rest of your life working for this?
+Dialogue: 0,1:44:16.74,1:44:18.33,Default,,0000,0000,0000,,為此奮斗嗎\NFighting for this?
+Dialogue: 0,1:44:22.22,1:44:26.10,Default,,0000,0000,0000,,我相信你能把這里變成自己的\NI believe that you could make this place yours.
+Dialogue: 0,1:44:26.10,1:44:27.39,Default,,0000,0000,0000,,我真的相信\NI really do.
+Dialogue: 0,1:44:34.95,1:44:36.52,Default,,0000,0000,0000,,但是如果你離開\NBut if you leave
+Dialogue: 0,1:44:40.83,1:44:42.53,Default,,0000,0000,0000,,也不是你的損失\Nit's not your loss.
+Dialogue: 0,1:44:44.62,1:44:46.39,Default,,0000,0000,0000,,是舊金山的損失\NIt's San Francisco's.
+Dialogue: 0,1:44:53.12,1:44:55.15,Default,,0000,0000,0000,,去它的舊金山\NFuck San Francisco.
+Dialogue: 0,1:45:37.15,1:45:39.04,Default,,0000,0000,0000,,-這個城市太遜了  -遜爆了\N- This city blows. - Big time.
+Dialogue: 0,1:45:39.05,1:45:40.95,Default,,0000,0000,0000,,我是說  我不介意\NI mean, whatever, I'm not above
+Dialogue: 0,1:45:40.95,1:45:43.54,Default,,0000,0000,0000,,住在從前的毒品屋里\Nliving in a former crack house, you know?
+Dialogue: 0,1:45:43.61,1:45:46.10,Default,,0000,0000,0000,,但是我來這里是為了珍妮絲和飛機樂隊\NBut, I came here for Janis and the Airplane,
+Dialogue: 0,1:45:46.10,1:45:48.50,Default,,0000,0000,0000,,不是為了在該死的初創公司工作\Nnot to work at a fucking startup.
+Dialogue: 0,1:45:48.50,1:45:50.35,Default,,0000,0000,0000,,姐們  我說了幾個月了\NDude, I've been saying for months,
+Dialogue: 0,1:45:50.35,1:45:52.05,Default,,0000,0000,0000,,我們搬去東洛杉磯吧\Nlet's just move to East LA.
+Dialogue: 0,1:45:52.31,1:45:53.51,Default,,0000,0000,0000,,這個城市已經死了\NThis city's dead.
+Dialogue: 0,1:45:54.30,1:45:55.23,Default,,0000,0000,0000,,不\NNah.
+Dialogue: 0,1:45:55.42,1:45:57.24,Default,,0000,0000,0000,,說真的  這城市見鬼去吧\NSeriously, fuck this city.
+Dialogue: 0,1:45:58.94,1:46:00.10,Default,,0000,0000,0000,,打擾一下\N'Scuse me?
+Dialogue: 0,1:46:03.37,1:46:05.46,Default,,0000,0000,0000,,你們不能恨舊金山\NYou don't get to hate San Francisco.
+Dialogue: 0,1:46:08.91,1:46:10.14,Default,,0000,0000,0000,,你說什么\NI'm sorry, what?
+Dialogue: 0,1:46:11.14,1:46:12.70,Default,,0000,0000,0000,,是啊  老兄\NYeah, dude, I mean...
+Dialogue: 0,1:46:12.70,1:46:14.91,Default,,0000,0000,0000,,不好意思  但我想恨什么就恨什么\NSorry, but I'll hate what I want.
+Dialogue: 0,1:46:17.40,1:46:18.52,Default,,0000,0000,0000,,你們愛這里嗎\NDo you love it?
+Dialogue: 0,1:46:20.79,1:46:23.47,Default,,0000,0000,0000,,是啊  我住在這里\NIt's... I mean yeah, I'm here.
+Dialogue: 0,1:46:23.92,1:46:25.72,Default,,0000,0000,0000,,但我一定要愛這里嗎\NBut do I have to love it?
+Dialogue: 0,1:46:26.99,1:46:29.22,Default,,0000,0000,0000,,沒有愛就不能恨\NYou don't get to hate it unless you love it.
+Dialogue: 0,1:46:32.37,1:46:34.50,Default,,0000,0000,0000,,典型的公交破事\NClassic Muni shit.
+Dialogue: 0,1:46:43.90,1:46:46.07,Default,,0000,0000,0000,,誰贏錢了  快點  快點\NWho call the money man, come on now, hurry up.
+Dialogue: 0,1:46:46.65,1:46:47.73,Default,,0000,0000,0000,,注意點\NPay attention!
+Dialogue: 0,1:46:50.16,1:46:52.49,Default,,0000,0000,0000,,亞歷山大大帝是個黑人\NAlexander the Great was a black man.
+Dialogue: 0,1:46:52.49,1:46:55.01,Default,,0000,0000,0000,,邪惡的教育體系里不會教這個\NThey don't teach you that in the devil school system.
+Dialogue: 0,1:46:57.27,1:46:59.73,Default,,0000,0000,0000,,這破日子我一天也忍不下去了\NI can't take another day of this bullshit.
+Dialogue: 0,1:48:07.71,1:48:08.56,Default,,0000,0000,0000,,吉姆\NJim.
+Dialogue: 0,1:48:15.30,1:48:16.70,Default,,0000,0000,0000,,很抱歉我那么做了\NI'm sorry I did that.
+Dialogue: 0,1:48:19.36,1:48:20.70,Default,,0000,0000,0000,,那是個愚蠢的話劇\NIt was a stupid play.
+Dialogue: 0,1:48:24.23,1:48:25.16,Default,,0000,0000,0000,,不\NNah.
+Dialogue: 0,1:48:27.06,1:48:29.06,Default,,0000,0000,0000,,很抱歉我沒告訴你真相\NI'm sorry I didn't tell you the truth.
+Dialogue: 0,1:48:32.67,1:48:34.81,Default,,0000,0000,0000,,我只是希望那是真的\NI just wanted it to be true.
+Dialogue: 0,1:48:36.91,1:48:38.54,Default,,0000,0000,0000,,那感覺特別好  你知道嗎\NIt felt so good, you know?
+Dialogue: 0,1:48:44.70,1:48:45.67,Default,,0000,0000,0000,,沒事的\NIt's okay.
+Dialogue: 0,1:49:05.87,1:49:06.75,Default,,0000,0000,0000,,吉米\NJimmie.
+Dialogue: 0,1:49:07.22,1:49:08.28,Default,,0000,0000,0000,,你餓嗎\NAre you hungry?
+Dialogue: 0,1:49:09.25,1:49:10.92,Default,,0000,0000,0000,,餓死了\NFucking starving.
+Dialogue: 0,1:49:15.94,1:49:17.12,Default,,0000,0000,0000,,他放棄了\NHe's giving up.
+Dialogue: 0,1:49:18.33,1:49:20.23,Default,,0000,0000,0000,,我忍不下去了\NI can't take no more.
+Dialogue: 0,1:49:21.45,1:49:22.67,Default,,0000,0000,0000,,他崩潰了\NHe's breaking down.
+Dialogue: 0,1:49:23.76,1:49:25.93,Default,,0000,0000,0000,,他真的把這公寓拆了個底朝天\NHe's really tearing this apartment apart.
+Dialogue: 0,1:49:27.50,1:49:29.82,Default,,0000,0000,0000,,不過這看著讓人激動\NThis looks exciting though, you know?
+Dialogue: 0,1:49:30.06,1:49:32.68,Default,,0000,0000,0000,,-沒錯  是的  -是嗎  真的嗎\N- Yeah. Yeah, it is. - Yeah? Oh, yeah?
+Dialogue: 0,1:49:36.17,1:49:37.49,Default,,0000,0000,0000,,我現在懂了\NI got it now.
+Dialogue: 0,1:49:37.49,1:49:39.62,Default,,0000,0000,0000,,他看起來很饑渴之類的\NHe seems like he's horny or something.
+Dialogue: 0,1:49:45.49,1:49:47.37,Default,,0000,0000,0000,,他又在砸門了\NHe's banging on the door again.
+Dialogue: 0,1:50:22.89,1:50:24.97,Default,,0000,0000,0000,,{\an8}出自1950年美國電影《死亡漩渦》
+Dialogue: 0,1:50:22.89,1:50:23.53,Default,,0000,0000,0000,,你好  威爾\NHi, Will.
+Dialogue: 0,1:50:23.54,1:50:24.97,Default,,0000,0000,0000,,我今天要出發去舊金山\NI'm leaving for San Francisco today,
+Dialogue: 0,1:50:24.97,1:50:26.05,Default,,0000,0000,0000,,不過我大約一周后回來\Nbut I'll be back in about a week,
+Dialogue: 0,1:50:26.05,1:50:27.74,Default,,0000,0000,0000,,到時候我會幫你處理的\NI'll take care of it for you then.
+Dialogue: 0,1:50:27.74,1:50:28.85,Default,,0000,0000,0000,,他可真刻薄  不是嗎\NSure is a scorcher, isn't it
+Dialogue: 0,1:50:28.85,1:50:30.13,Default,,0000,0000,0000,,我見過他更刻薄的樣子\NWell, I've seen him worse.
+Dialogue: 0,1:50:30.13,1:50:31.47,Default,,0000,0000,0000,,祝你愉快  伯特\NWell have a nice time, Bert.
+Dialogue: 0,1:50:31.47,1:50:33.94,Default,,0000,0000,0000,,-謝了  -你為什么不...\N- Yeah, thanks. - Why don't you...
+Dialogue: 0,1:50:42.59,1:50:46.84,Default,,0000,0000,0000,,{\an8}舊金山的最后一個黑人\N親愛的蒙特格馬利
+Dialogue: 0,1:50:47.80,1:50:52.74,Default,,0000,0000,0000,,{\an8}抱歉  我不知該如何告別\N謝謝你一直做我最好的朋友\N吉米·菲爾斯四世
+Dialogue: 0,1:53:50.06,1:53:57.05,Default,,0000,0000,0000,,{\pos(192,120)}舊金山的最后一個黑人
+
+
