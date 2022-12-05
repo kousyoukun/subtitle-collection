@@ -1,0 +1,1058 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: LOGO,FZHei-B01,18,&H00FFFFFF,&H00000000,&H006C3300,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,5,5,5,1
+Style: Default,WenQuanYi Micro Hei,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,1,1,1,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:23.45,0:00:28.45,Default,,0000,0000,0000,,{\fad(300,600)\fnMicrosoft YaHei\fs14\bord0\shad1\fsp1\pos(236.5,124)\fscx104\fscy90\1c&HEDEDED&}-鲁道夫·斯曼兹
+Dialogue: 0,0:00:23.45,0:00:28.45,Default,,0000,0000,0000,,{\fad(300,600)\fnMicrosoft YaHei\fs14\bord0\shad1\fsp2\pos(181,108)\fscx110\fscy90\1c&HEDEDED&}“没有绳子的世界是混乱的”
+Dialogue: 0,0:01:06.40,0:01:08.65,Default,,0000,0000,0000,,你那边抬高点儿 你根本没有用劲儿{\r}\N{\fs14\1c&H42CEFD&}Hold your end up higher. You're not holding it.{\r}
+Dialogue: 0,0:01:09.05,0:01:10.35,Default,,0000,0000,0000,,我用劲儿了{\r}\N{\fs14\1c&H42CEFD&}I am too.{\r}
+Dialogue: 0,0:01:10.65,0:01:13.65,Default,,0000,0000,0000,,- 你才没呢  - 我这边儿你放心{\r}\N{\fs14\1c&H42CEFD&}- You are not.   - Don't worry about me.{\r}
+Dialogue: 0,0:01:16.30,0:01:19.95,Default,,0000,0000,0000,,- 嘿 你的西装是炭灰色？  - 不是{\r}\N{\fs14\1c&H42CEFD&}- Hey, isn't that suit charcoal?   - No.{\r}
+Dialogue: 0,0:01:20.30,0:01:23.47,Default,,0000,0000,0000,,我觉得是炭灰色 炭灰色化纤的{\r}\N{\fs14\1c&H42CEFD&}Looks charcoal gray to me. Some gray polyester blend.{\r}
+Dialogue: 0,0:01:24.55,0:01:27.40,Default,,0000,0000,0000,,参加亲爹的葬礼 应该穿黑色的{\r}\N{\fs14\1c&H42CEFD&}You'd think you could find a black suit for your own father's funeral.{\r}
+Dialogue: 0,0:01:27.60,0:01:30.05,Default,,0000,0000,0000,,- 这是黑的  - 不 我确定是灰的{\r}\N{\fs14\1c&H42CEFD&}- It's black.   - No. I'm sure it's gray.{\r}
+Dialogue: 0,0:01:30.20,0:01:31.95,Default,,0000,0000,0000,,- 黑的  - 灰的  - 黑的！  - 灰的！{\r}\N{\fs14\1c&H42CEFD&}- It's black. Black!   - Gray. Gray!{\r}
+Dialogue: 0,0:01:32.00,0:01:33.30,Default,,0000,0000,0000,,- 黑的！  - 好吧 黑的{\r}\N{\fs14\1c&H42CEFD&}- Black!   - Fine, it's black.{\r}
+Dialogue: 0,0:01:35.45,0:01:37.18,Default,,0000,0000,0000,,这是最发灰的黑色{\r}\N{\fs14\1c&H42CEFD&}It's the grayest black I've ever seen.{\r}
+Dialogue: 0,0:01:37.26,0:01:40.25,Default,,0000,0000,0000,,- 是什么颜色不重要！啊！  - 啊！{\r}\N{\fs14\1c&H42CEFD&}- It doesn't matter what color it is! Ah!   - Oww!{\r}
+Dialogue: 0,0:01:44.35,0:01:46.69,Default,,0000,0000,0000,,对不起 爸爸 对不起！{\r}\N{\fs14\1c&H42CEFD&}I'm sorry, Pop. I'm sorry!{\r}
+Dialogue: 0,0:01:59.35,0:02:02.75,Default,,0000,0000,0000,,- 快！把他弄出来！  - 他现在都快到港口了{\r}\N{\fs14\1c&H42CEFD&}- Quick! Get him out of there!   - He's halfway to the harbor by now, bub.{\r}
+Dialogue: 0,0:02:02.85,0:02:03.85,Default,,0000,0000,0000,,不妙啊{\r}\N{\fs14\1c&H42CEFD&}Ah, well.{\r}
+Dialogue: 0,0:02:08.00,0:02:11.30,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs16\bord0\shad0\fsp6\pos(252.4,121)\fscx110\fscy90\1c&HC08080&}饰演：
+Dialogue: 0,0:02:08.00,0:02:11.30,Default,,0000,0000,0000,,{\fad(600,600)\fnKaiTi\fs20\bord0\shad1\fsp6\pos(297,123)\1c&HD5D500&}厄尼
+Dialogue: 0,0:02:08.00,0:02:11.30,Default,,0000,0000,0000,,{\fad(600,600)\fnSimHei\fs18\bord1\shad1\fsp2\pos(270,80)\fscx115\fscy90\1c&HF1FEFF&\3c&H8D8E9F&}内森·连恩
+Dialogue: 0,0:02:12.10,0:02:15.30,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs14\bord0\shad0\fsp2\pos(255,121)\fscx110\fscy90\1c&HC08080&}饰演：
+Dialogue: 0,0:02:12.10,0:02:15.30,Default,,0000,0000,0000,,{\fad(600,600)\fnKaiTi\fs16\bord0\shad1\fsp0\pos(286,123)\1c&HD5D500&}拉尔斯
+Dialogue: 0,0:02:12.10,0:02:15.30,Default,,0000,0000,0000,,{\fad(600,600)\fnSimHei\fs16\bord1\shad1\fsp2\pos(271.5,80)\fscx98\fscy90\1c&HF1FEFF&\3c&H8D8E9F&}李·伊万斯
+Dialogue: 0,0:02:21.00,0:02:30.40,Default,,0000,0000,0000,,{\fad(0,1500)\fnKaiTi\fs74\t(0,8000,\fs38)\bord0\shad2\pos(192,120)\frz6\1c&H4080FF&\4c&H001540&\i1}鼠
+Dialogue: 0,0:02:21.00,0:02:30.40,Default,,0000,0000,0000,,{\fad(0,1500)\fnKaiTi\fs74\t(0,8000,\fs38)\bord0\shad2\move(366,30,248,120,0,4000)\frz352\1c&H000080&\4c&H000040&\i1}记
+Dialogue: 0,0:02:21.00,0:02:30.40,Default,,0000,0000,0000,,{\fad(0,1500)\fnKaiTi\fs74\t(0,8000,\fs38)\bord0\shad2\move(10,30,126,120,0,4000)\1c&HD5D500&\4c&H404000&\i1}捕
+Dialogue: 0,0:02:34.65,0:02:36.85,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs16\bord0\shad1\fsp13\pos(201,114)\fscx110\fscy126\frx45\fry42\frz334\1c&H555500&}斯曼兹制绳厂
+Dialogue: 0,0:03:25.20,0:03:28.00,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs17\bord0\shad1\fsp1\pos(165,258)\fscx104\fscy110\1c&HF6F9F9&}艾伦·西尔维斯特里
+Dialogue: 0,0:03:25.20,0:03:28.00,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs16\bord0\shad0\fsp4\pos(101.8,256)\fscx112\fscy80\1c&HC08080&}音乐：
+Dialogue: 0,0:03:53.40,0:03:56.15,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs17\bord0\shad1\fsp7\pos(215,258)\fscx119\fscy110\1c&HFCFAFF&}菲登·帕帕迈克尔
+Dialogue: 0,0:03:53.40,0:03:56.15,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs16\bord0\shad0\fsp7\pos(119.5,256)\fscx112\fscy80\1c&HC08080&}摄影：
+Dialogue: 0,0:04:05.80,0:04:08.70,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs17\bord0\shad1\fsp4\pos(192.5,174)\fscx114.5\fscy110\1c&HFCE0DE&}亚当·莱福金
+Dialogue: 0,0:04:05.80,0:04:08.70,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs16\bord0\shad0\fsp5\pos(130.7,172)\fscx116\fscy70\1c&HC08080&}编剧：
+Dialogue: 0,0:04:10.35,0:04:15.25,Default,,0000,0000,0000,,“我留给你们的不单是一家模范工厂…”{\r}\N{\fs14\1c&H42CEFD&}"I leave you not just a model factory..."{\r}
+Dialogue: 0,0:04:15.85,0:04:18.85,Default,,0000,0000,0000,,“而是更有价值的东西”{\r}\N{\fs14\1c&H42CEFD&}"but something infinitely more valuable."{\r}
+Dialogue: 0,0:04:19.55,0:04:23.65,Default,,0000,0000,0000,,“绳子本身… 的未来”{\r}\N{\fs14\1c&H42CEFD&}"The future of string... itself."{\r}
+Dialogue: 0,0:04:28.40,0:04:31.75,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs17\bord0\shad1\fsp4\pos(219.5,170)\fscx119\fscy110\1c&HFDFDFF&}戈尔·维宾斯基
+Dialogue: 0,0:04:28.40,0:04:31.75,Default,,0000,0000,0000,,{\fad(600,600)\fnMicrosoft YaHei\fs16\bord0\shad0\fsp8\pos(144.5,168)\fscx116\fscy70\1c&HC08080&}导演：
+Dialogue: 0,0:04:33.65,0:04:36.65,Default,,0000,0000,0000,,“因此 我的遗愿是…”{\r}\N{\fs14\1c&H42CEFD&}"And thus it is my dying wish..."{\r}
+Dialogue: 0,0:04:37.25,0:04:41.40,Default,,0000,0000,0000,,“将制绳厂 交由我的两个儿子共同经营”{\r}\N{\fs14\1c&H42CEFD&}"that my two sons run Smuntz String together."{\r}
+Dialogue: 0,0:04:41.45,0:04:44.45,Default,,0000,0000,0000,,太好了 竖块“出售”的牌子 看能卖多少钱{\r}\N{\fs14\1c&H42CEFD&}Great. Let's stick a "For Sale" sign on the lawn and see what we can get.{\r}
+Dialogue: 0,0:04:44.56,0:04:48.25,Default,,0000,0000,0000,,厄尼 爸爸没有让我们卖 他让咱们俩共同经营{\r}\N{\fs14\1c&H42CEFD&}Ernie, we're not supposed to sell it. We're supposed to run it together.{\r}
+Dialogue: 0,0:04:48.60,0:04:49.65,Default,,0000,0000,0000,,怎么着都行{\r}\N{\fs14\1c&H42CEFD&}Either way,{\r}
+Dialogue: 0,0:04:49.75,0:04:52.20,Default,,0000,0000,0000,,反正这个博物馆似的老厂子也值不了{\r}\N{\fs14\1c&H42CEFD&}this godforsaken museum piece is not worth a dime,{\r}
+Dialogue: 0,0:04:52.20,0:04:53.45,Default,,0000,0000,0000,,两个钱 拉尔斯{\r}\N{\fs14\1c&H42CEFD&}now is it, Lars?{\r}
+Dialogue: 0,0:04:53.85,0:04:56.25,Default,,0000,0000,0000,,有些事比钱要重要 厄尼{\r}\N{\fs14\1c&H42CEFD&}Some things are more important than money, Ernie.{\r}
+Dialogue: 0,0:04:56.90,0:04:59.45,Default,,0000,0000,0000,,我发现兜里没钱的人都爱这么说？{\r}\N{\fs14\1c&H42CEFD&}Notice it's always the financially challenged who say that?{\r}
+Dialogue: 0,0:05:00.25,0:05:02.45,Default,,0000,0000,0000,,哎 还没完呢{\r}\N{\fs14\1c&H42CEFD&}Uh, please, please.{\r}
+Dialogue: 0,0:05:03.45,0:05:07.25,Default,,0000,0000,0000,,“我的儿子们 将得到我的个人财产”{\r}\N{\fs14\1c&H42CEFD&}"I also bequeath to you my personal effects,"{\r}
+Dialogue: 0,0:05:08.75,0:05:10.95,Default,,0000,0000,0000,,“包括一个陶瓷蛋”{\r}\N{\fs14\1c&H42CEFD&}"including my ceramic egg,"{\r}
+Dialogue: 0,0:05:13.95,0:05:17.05,Default,,0000,0000,0000,,“半盒古巴雪茄”{\r}\N{\fs14\1c&H42CEFD&}"half box of Cuban cigars,"{\r}
+Dialogue: 0,0:05:17.48,0:05:19.45,Default,,0000,0000,0000,,噢！还有 还有…{\r}\N{\fs14\1c&H42CEFD&}Oh! Yes, yes, yes, yes.{\r}
+Dialogue: 0,0:05:20.90,0:05:23.25,Default,,0000,0000,0000,,“勺子 收藏品”{\r}\N{\fs14\1c&H42CEFD&}my-my collection of spoons."{\r}
+Dialogue: 0,0:05:25.40,0:05:28.65,Default,,0000,0000,0000,,上帝啊 大宝藏 大遗产啊{\r}\N{\fs14\1c&H42CEFD&}My goodness, what a treasure. What a legacy.{\r}
+Dialogue: 0,0:05:29.20,0:05:31.70,Default,,0000,0000,0000,,勺子！勺子！这么多{\r}\N{\fs14\1c&H42CEFD&}Spoons! Spoons! So many spoons,{\r}
+Dialogue: 0,0:05:31.85,0:05:33.45,Default,,0000,0000,0000,,一辈子都用不完{\r}\N{\fs14\1c&H42CEFD&}so little time.{\r}
+Dialogue: 0,0:05:34.80,0:05:38.25,Default,,0000,0000,0000,,噢！还有每个家庭都不能缺少的{\r}\N{\fs14\1c&H42CEFD&}Oh! And, of course, something no household should be without.{\r}
+Dialogue: 0,0:05:38.65,0:05:40.85,Default,,0000,0000,0000,,陶瓷蛋！呵呵呵{\r}\N{\fs14\1c&H42CEFD&}The ceramic egg! Ooh-hoo-hoo.{\r}
+Dialogue: 0,0:05:41.10,0:05:44.05,Default,,0000,0000,0000,,肯给我吧？行吗？嗯？嗯？不{\r}\N{\fs14\1c&H42CEFD&}Can I have the egg? Can l? Huh? Huh? No.{\r}
+Dialogue: 0,0:05:44.45,0:05:47.25,Default,,0000,0000,0000,,- 我希望你能收下  - 好 我要了！{\r}\N{\fs14\1c&H42CEFD&}- I want you to have it.   - Fine, I'll take it!{\r}
+Dialogue: 0,0:05:47.90,0:05:50.55,Default,,0000,0000,0000,,要是有地契之类的 记得告诉我{\r}\N{\fs14\1c&H42CEFD&}If you find any real estate on that desk, let me know.{\r}
+Dialogue: 0,0:05:50.65,0:05:53.75,Default,,0000,0000,0000,,没错 遗产还包括一栋房子{\r}\N{\fs14\1c&H42CEFD&}Well, It seems there is also a house.{\r}
+Dialogue: 0,0:05:54.15,0:05:57.45,Default,,0000,0000,0000,,- 房子？  - “诺顿街5120号”{\r}\N{\fs14\1c&H42CEFD&}- A house?   - Yes, "5120 Nortondale."{\r}
+Dialogue: 0,0:05:58.25,0:06:02.28,Default,,0000,0000,0000,,是多年前抵给你父亲的欠债抵押品{\r}\N{\fs14\1c&H42CEFD&}Your father acquired it many years ago as payment of a debt.{\r}
+Dialogue: 0,0:06:03.05,0:06:06.85,Default,,0000,0000,0000,,他一直没去住 有意思的是{\r}\N{\fs14\1c&H42CEFD&}He-He never lived there, but i-i-it's interesting.{\r}
+Dialogue: 0,0:06:07.05,0:06:11.50,Default,,0000,0000,0000,,以前的房主被人发现锁在阁楼上的箱子里{\r}\N{\fs14\1c&H42CEFD&}It seems the previous owner was found locked in a trunk in the attic.{\r}
+Dialogue: 0,0:06:11.85,0:06:13.65,Default,,0000,0000,0000,,等等 值钱吗？{\r}\N{\fs14\1c&H42CEFD&}Wait a minute. Is it worth anything?{\r}
+Dialogue: 0,0:06:14.15,0:06:18.05,Default,,0000,0000,0000,,当年房主用它抵押借了五万美元给工人发工资{\r}\N{\fs14\1c&H42CEFD&}Well, he was able to borrow $50,000 against it to pay his workers.{\r}
+Dialogue: 0,0:06:18.25,0:06:19.90,Default,,0000,0000,0000,,真的？那现在能值多少？{\r}\N{\fs14\1c&H42CEFD&}Really? So, what is its value today?{\r}
+Dialogue: 0,0:06:21.05,0:06:23.09,Default,,0000,0000,0000,,呃 五万美元{\r}\N{\fs14\1c&H42CEFD&}$50,000.{\r}
+Dialogue: 0,0:06:23.85,0:06:27.90,Default,,0000,0000,0000,,太好了 一栋破房子和一家破制绳工厂{\r}\N{\fs14\1c&H42CEFD&}Great. A worthless house and a broken-down string factory.{\r}
+Dialogue: 0,0:06:28.15,0:06:31.65,Default,,0000,0000,0000,,噢 好吧 今天也算没白跑一趟{\r}\N{\fs14\1c&H42CEFD&}Oh, well. At least the day wasn't a total loss.{\r}
+Dialogue: 0,0:06:32.05,0:06:33.85,Default,,0000,0000,0000,,谢谢 你的便宜烟{\r}\N{\fs14\1c&H42CEFD&}Thanks for the stogies, Pop.{\r}
+Dialogue: 0,0:06:35.45,0:06:38.95,Default,,0000,0000,0000,,哎 你不能走 厄尼 我们得看完所有的文件{\r}\N{\fs14\1c&H42CEFD&}Wait. You can't go. Ernie, we-we have to go through all these papers.{\r}
+Dialogue: 0,0:06:43.30,0:06:44.55,Default,,0000,0000,0000,,恕我失陪了{\r}\N{\fs14\1c&H42CEFD&}You'll have to excuse me.{\r}
+Dialogue: 0,0:06:46.05,0:06:47.85,Default,,0000,0000,0000,,我要接待市长{\r}\N{\fs14\1c&H42CEFD&}I've got a date with the mayor.{\r}
+Dialogue: 0,0:06:53.60,0:06:56.85,Default,,0000,0000,0000,,市长先生！市长先生 这边！市长先生！{\r}\N{\fs14\1c&H42CEFD&}Mr. Mayor! Mr. Mayor, over here! Mr. Mayor!{\r}
+Dialogue: 0,0:06:57.10,0:06:57.70,Default,,0000,0000,0000,,市长先生{\r}\N{\fs14\1c&H42CEFD&}Mr. Mayor,{\r}
+Dialogue: 0,0:06:57.75,0:07:00.70,Default,,0000,0000,0000,,您最近刚做了心脏分流术 是否会影响你的竞选连任？{\r}\N{\fs14\1c&H42CEFD&}do you think your recent triple heart bypass will affect your campaign strategy?{\r}
+Dialogue: 0,0:07:00.85,0:07:02.55,Default,,0000,0000,0000,,莱斯莉 我是来吃饭的{\r}\N{\fs14\1c&H42CEFD&}Now, Leslie, I'm just here to eat.{\r}
+Dialogue: 0,0:07:04.45,0:07:09.35,Default,,0000,0000,0000,,噢 市长大人 市长夫人 欢迎光临厄尼餐厅{\r}\N{\fs14\1c&H42CEFD&}Ah, monsieur le maire, Madame maire, welcome to Chez Ernie.{\r}
+Dialogue: 0,0:07:09.85,0:07:13.55,Default,,0000,0000,0000,,啊 您二位的大驾光临 令小店蓬荜生辉{\r}\N{\fs14\1c&H42CEFD&}Ah, what an honor it is to have you in my humble bistro.{\r}
+Dialogue: 0,0:07:13.65,0:07:17.45,Default,,0000,0000,0000,,请跟我来 噢 您把二位美丽的千金也带来了{\r}\N{\fs14\1c&H42CEFD&}Suivez-moi. Oh, you brought the little ones. The little bicycle thieves.{\r}
+Dialogue: 0,0:07:18.05,0:07:20.80,Default,,0000,0000,0000,,请坐！这是最好的位子 请{\r}\N{\fs14\1c&H42CEFD&}Bonjour! Our very best table.{\r}
+Dialogue: 0,0:07:21.20,0:07:23.20,Default,,0000,0000,0000,,- 您是不是瘦了？  - 呃 我…{\r}\N{\fs14\1c&H42CEFD&}- Have you lost a little weight?   - Oh, I...{\r}
+Dialogue: 0,0:07:23.25,0:07:25.90,Default,,0000,0000,0000,,不 不 一定是苗条并且强壮！{\r}\N{\fs14\1c&H42CEFD&}I think so! I think you may be buff!{\r}
+Dialogue: 0,0:07:26.00,0:07:29.30,Default,,0000,0000,0000,,噢嚯 您的美貌 令我目羡神迷{\r}\N{\fs14\1c&H42CEFD&}Je suisse enchante pour votre beaute.{\r}
+Dialogue: 0,0:07:29.60,0:07:32.05,Default,,0000,0000,0000,,- 您知道吧？  - 噢 厄尼先生…{\r}\N{\fs14\1c&H42CEFD&}- You know what I mean?   - Oh, monsieur Ernie...{\r}
+Dialogue: 0,0:07:32.85,0:07:35.25,Default,,0000,0000,0000,,恕我失陪 再见 孩子们！{\r}\N{\fs14\1c&H42CEFD&}Excusez-moi. Au revoir, les enfants!{\r}
+Dialogue: 0,0:07:39.25,0:07:41.65,Default,,0000,0000,0000,,唉… 往高处走不算难{\r}\N{\fs14\1c&H42CEFD&}Alas... The air's not so thin at the top.{\r}
+Dialogue: 0,0:07:43.40,0:07:46.45,Default,,0000,0000,0000,,故意早死 不看我成就大业{\r}\N{\fs14\1c&H42CEFD&}Just like the old man to die before I hit it big.{\r}
+Dialogue: 0,0:07:49.45,0:07:53.85,Default,,0000,0000,0000,,大家记住 细节是最重要的！{\r}\N{\fs14\1c&H42CEFD&}Remember, everyone. Attention to detail is vital!{\r}
+Dialogue: 0,0:07:54.25,0:07:57.85,Default,,0000,0000,0000,,卖相就是一切{\r}\N{\fs14\1c&H42CEFD&}Presentation is everything.{\r}
+Dialogue: 0,0:07:58.45,0:08:02.25,Default,,0000,0000,0000,,噢 不 不 不 不 不！必须由我亲自上菜{\r}\N{\fs14\1c&H42CEFD&}No, no, no, no, no! These I must deliver myself.{\r}
+Dialogue: 0,0:08:12.00,0:08:14.15,Default,,0000,0000,0000,,香橙鸭肉 配法国酱汁…(法语){\r}\N{\fs14\1c&H42CEFD&}Duck a l'Orange avec du quack sauce...{\r}
+Dialogue: 0,0:08:14.20,0:08:15.25,Default,,0000,0000,0000,,噢 太棒了！(法语){\r}\N{\fs14\1c&H42CEFD&}Oh, Super!{\r}
+Dialogue: 0,0:08:15.75,0:08:18.45,Default,,0000,0000,0000,,为市长先生准备的佳肴是(法语){\r}\N{\fs14\1c&H42CEFD&}And for ze Mayor, la specialite de la maison,{\r}
+Dialogue: 0,0:08:18.85,0:08:22.35,Default,,0000,0000,0000,,本店的特色菜 厄尼秘制焗龙虾(法语){\r}\N{\fs14\1c&H42CEFD&}Lobster Loaf a la Ernst ou la bibliotheque.{\r}
+Dialogue: 0,0:08:22.75,0:08:24.35,Default,,0000,0000,0000,,- 噢…  - 请慢用(法语){\r}\N{\fs14\1c&H42CEFD&}- Oh...   - Bon appetit.{\r}
+Dialogue: 0,0:08:28.25,0:08:29.25,Default,,0000,0000,0000,,噢 你好！(法语){\r}\N{\fs14\1c&H42CEFD&}Ah, bonjour!{\r}
+Dialogue: 0,0:08:29.40,0:08:33.07,Default,,0000,0000,0000,,厄尼大厨 在竞选连任前夕接待市长 你作何感想？{\r}\N{\fs14\1c&H42CEFD&}Chef Ernie, how does it feel to be serving the mayor on the eve of his campaign reelection?{\r}
+Dialogue: 0,0:08:33.35,0:08:36.30,Default,,0000,0000,0000,,- 呃 莱斯莉… 能叫你莱斯莉吧？  - 当然{\r}\N{\fs14\1c&H42CEFD&}- Well, Leslie... May I call you Leslie?   - Of course.{\r}
+Dialogue: 0,0:08:36.85,0:08:38.05,Default,,0000,0000,0000,,哦 是这样的…{\r}\N{\fs14\1c&H42CEFD&}Oh, this is how it...{\r}
+Dialogue: 0,0:08:40.60,0:08:44.50,Default,,0000,0000,0000,,嗯 很脆！我喜欢杏仁儿{\r}\N{\fs14\1c&H42CEFD&}Crunchy! Hmm. I love the almonds.{\r}
+Dialogue: 0,0:08:44.95,0:08:47.65,Default,,0000,0000,0000,,烹饪 就像喜怒无常的情妇…{\r}\N{\fs14\1c&H42CEFD&}Leslie, cuisine, she is a fickle mistress...{\r}
+Dialogue: 0,0:08:48.25,0:08:50.05,Default,,0000,0000,0000,,啊！看呐！{\r}\N{\fs14\1c&H42CEFD&}Ee-yew! Look!{\r}
+Dialogue: 0,0:08:51.70,0:08:53.05,Default,,0000,0000,0000,,一只蟑螂！{\r}\N{\fs14\1c&H42CEFD&}A cockroach!{\r}
+Dialogue: 0,0:08:56.55,0:08:58.03,Default,,0000,0000,0000,,这是半只蟑螂{\r}\N{\fs14\1c&H42CEFD&}That's only half a cockroach.{\r}
+Dialogue: 0,0:08:58.85,0:09:01.55,Default,,0000,0000,0000,,爸爸 吃了它的脑袋！{\r}\N{\fs14\1c&H42CEFD&}Daddy! You ate the head!{\r}
+Dialogue: 0,0:09:01.65,0:09:02.85,Default,,0000,0000,0000,,亲爱的 你还好吗？{\r}\N{\fs14\1c&H42CEFD&}Honey, are you okay?{\r}
+Dialogue: 0,0:09:03.65,0:09:04.85,Default,,0000,0000,0000,,又发作了！{\r}\N{\fs14\1c&H42CEFD&}Not again!{\r}
+Dialogue: 0,0:09:18.40,0:09:19.15,Default,,0000,0000,0000,,厄尼先生{\r}\N{\fs14\1c&H42CEFD&}Mr. Ernie,{\r}
+Dialogue: 0,0:09:19.25,0:09:21.31,Default,,0000,0000,0000,,请问这是意外 还是蓄意谋杀…{\r}\N{\fs14\1c&H42CEFD&}Was this an accident, or did you murder...{\r}
+Dialogue: 0,0:09:21.70,0:09:22.65,Default,,0000,0000,0000,,电击！{\r}\N{\fs14\1c&H42CEFD&}Clear!{\r}
+Dialogue: 0,0:09:23.95,0:09:25.55,Default,,0000,0000,0000,,我跳得比你好！{\r}\N{\fs14\1c&H42CEFD&}I can do that better!{\r}
+Dialogue: 0,0:09:26.45,0:09:27.65,Default,,0000,0000,0000,,不可能！{\r}\N{\fs14\1c&H42CEFD&}Impossible!{\r}
+Dialogue: 0,0:09:34.00,0:09:39.55,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs16\bord0\shad1\fsp12\pos(195,114)\fscx109\fscy126\frx45\fry42\frz335\1c&H555500&}斯曼兹制绳厂
+Dialogue: 0,0:09:36.11,0:09:39.45,Default,,0000,0000,0000,,斯曼兹线绳法已经成为历史{\r}\N{\fs14\1c&H42CEFD&}Smuntz String is a relic of history.{\r}
+Dialogue: 0,0:09:40.60,0:09:44.21,Default,,0000,0000,0000,,现在没有人用两股麻绳来绑东西{\r}\N{\fs14\1c&H42CEFD&}You don't make string by twining two strands together anymore.{\r}
+Dialogue: 0,0:09:44.35,0:09:48.75,Default,,0000,0000,0000,,不 大家选用简单的 结实的单根尼龙绳{\r}\N{\fs14\1c&H42CEFD&}No. You make it simple, singular, strong, with nylon.{\r}
+Dialogue: 0,0:09:49.15,0:09:51.45,Default,,0000,0000,0000,,那 那不是绳子 而是尼龙线{\r}\N{\fs14\1c&H42CEFD&}Bu-But that's not string. Tha-That's cord.{\r}
+Dialogue: 0,0:09:51.75,0:09:53.95,Default,,0000,0000,0000,,- 完全正确  - 麻绳过时了{\r}\N{\fs14\1c&H42CEFD&}- Exactly.   - Twine is yesterday.{\r}
+Dialogue: 0,0:09:54.00,0:09:56.40,Default,,0000,0000,0000,,- 这是尼龙线的时代  - 泽普科财团…{\r}\N{\fs14\1c&H42CEFD&}- Single-strand cord is today.   - Zeppco International...{\r}
+Dialogue: 0,0:09:56.45,0:10:00.30,Default,,0000,0000,0000,,一直对你的工厂很感兴趣 但你父亲拒绝出售{\r}\N{\fs14\1c&H42CEFD&}has been interested in your factory for years, but your father refused to sell.{\r}
+Dialogue: 0,0:10:00.40,0:10:02.40,Default,,0000,0000,0000,,我们希望你会更聪明{\r}\N{\fs14\1c&H42CEFD&}We are hopin' you would be a little smarter.{\r}
+Dialogue: 0,0:10:02.50,0:10:04.05,Default,,0000,0000,0000,,我们愿意收购工厂…{\r}\N{\fs14\1c&H42CEFD&}Zeppco is willin' to buy you out...{\r}
+Dialogue: 0,0:10:04.25,0:10:07.05,Default,,0000,0000,0000,,并将这老古董带到21世纪{\r}\N{\fs14\1c&H42CEFD&}and bring this museum into the 21st century.{\r}
+Dialogue: 0,0:10:07.40,0:10:10.55,Default,,0000,0000,0000,,当然 你可以留下来担任绳子顾问{\r}\N{\fs14\1c&H42CEFD&}'Course, we would keep you on as a string consultant,{\r}
+Dialogue: 0,0:10:10.85,0:10:12.95,Default,,0000,0000,0000,,享受高额薪水和退休金{\r}\N{\fs14\1c&H42CEFD&}with a huge salary and a hefty pension.{\r}
+Dialogue: 0,0:10:14.60,0:10:15.55,Default,,0000,0000,0000,,那么…{\r}\N{\fs14\1c&H42CEFD&}So...{\r}
+Dialogue: 0,0:10:18.05,0:10:19.00,Default,,0000,0000,0000,,你意下如何？{\r}\N{\fs14\1c&H42CEFD&}what do you say?{\r}
+Dialogue: 0,0:10:40.25,0:10:43.45,Default,,0000,0000,0000,,- 儿子们…  - 厄尼{\r}\N{\fs14\1c&H42CEFD&}- My sons...   - Ernie.{\r}
+Dialogue: 0,0:10:44.50,0:10:45.45,Default,,0000,0000,0000,,厄尼！{\r}\N{\fs14\1c&H42CEFD&}Ernie!{\r}
+Dialogue: 0,0:10:46.45,0:10:47.65,Default,,0000,0000,0000,,好 稍等{\r}\N{\fs14\1c&H42CEFD&}Yeah. Just a sec.{\r}
+Dialogue: 0,0:10:48.15,0:10:52.07,Default,,0000,0000,0000,,我希望 你们… 收下{\r}\N{\fs14\1c&H42CEFD&}I want you...to have...omething.{\r}
+Dialogue: 0,0:10:52.70,0:10:55.70,Default,,0000,0000,0000,,我最宝贵的财产{\r}\N{\fs14\1c&H42CEFD&}My most prized possession.{\r}
+Dialogue: 0,0:10:57.25,0:10:59.65,Default,,0000,0000,0000,,呃 这是一段绳子{\r}\N{\fs14\1c&H42CEFD&}Oh, it's a piece of st-string.{\r}
+Dialogue: 0,0:10:59.85,0:11:04.05,Default,,0000,0000,0000,,不是普通的绳子 这是我{\r}\N{\fs14\1c&H42CEFD&}Not just any string. The string.{\r}
+Dialogue: 0,0:11:04.85,0:11:08.85,Default,,0000,0000,0000,,来美国第一天时 发现的{\r}\N{\fs14\1c&H42CEFD&}I found it my first day in America.{\r}
+Dialogue: 0,0:11:09.85,0:11:13.15,Default,,0000,0000,0000,,- 它特别在哪儿？  - 我把它装在兜里{\r}\N{\fs14\1c&H42CEFD&}- What's with the string?   - It's been in my pocket{\r}
+Dialogue: 0,0:11:13.65,0:11:17.85,Default,,0000,0000,0000,,六十年了 给！我要你们分享{\r}\N{\fs14\1c&H42CEFD&}for 60 years. Here! I want you two to share it.{\r}
+Dialogue: 0,0:11:18.05,0:11:20.70,Default,,0000,0000,0000,,也许它能将你们绑在一起{\r}\N{\fs14\1c&H42CEFD&}Maybe it'll bring you closer together.{\r}
+Dialogue: 0,0:11:20.90,0:11:23.45,Default,,0000,0000,0000,,- 你们最近很少交谈  - 对{\r}\N{\fs14\1c&H42CEFD&}- You haven't talked much lately.   - Yeah.{\r}
+Dialogue: 0,0:11:24.45,0:11:27.50,Default,,0000,0000,0000,,- 啊！你要干什么？  - 分成两半{\r}\N{\fs14\1c&H42CEFD&}- Ah! What are you doing?   - I'm breaking it in half.{\r}
+Dialogue: 0,0:11:27.65,0:11:28.95,Default,,0000,0000,0000,,- 不！  - 不吗？{\r}\N{\fs14\1c&H42CEFD&}- No!   - No?{\r}
+Dialogue: 0,0:11:29.05,0:11:30.88,Default,,0000,0000,0000,,你们要共同拥有{\r}\N{\fs14\1c&H42CEFD&}I want you to share it.{\r}
+Dialogue: 0,0:11:31.10,0:11:33.90,Default,,0000,0000,0000,,- 直到永远  - 行 老爸 放心{\r}\N{\fs14\1c&H42CEFD&}- Forever.   - Sure, Pop, sure.{\r}
+Dialogue: 0,0:11:34.15,0:11:37.05,Default,,0000,0000,0000,,呃 头50年你装着 之后 再给我{\r}\N{\fs14\1c&H42CEFD&}Here, uh, you carry it the first 50 years, I'll take it the next.{\r}
+Dialogue: 0,0:11:37.15,0:11:39.45,Default,,0000,0000,0000,,- 好的  - 让吗啡快点儿滴{\r}\N{\fs14\1c&H42CEFD&}- Sure.   - And, uh, turn up the morphine drip a little.{\r}
+Dialogue: 0,0:11:40.10,0:11:42.05,Default,,0000,0000,0000,,- 好  - 我听见了{\r}\N{\fs14\1c&H42CEFD&}- Sure.   - I heard that.{\r}
+Dialogue: 0,0:11:45.10,0:11:46.25,Default,,0000,0000,0000,,答应我…{\r}\N{\fs14\1c&H42CEFD&}Promise me...{\r}
+Dialogue: 0,0:11:46.85,0:11:48.85,Default,,0000,0000,0000,,你们永远不把…{\r}\N{\fs14\1c&H42CEFD&}that you will never sell...{\r}
+Dialogue: 0,0:11:49.55,0:11:55.45,Default,,0000,0000,0000,,斯曼兹制绳厂… 卖给那些大财团{\r}\N{\fs14\1c&H42CEFD&}Smuntz String... to one of those big conglomerates.{\r}
+Dialogue: 0,0:11:56.15,0:11:58.05,Default,,0000,0000,0000,,你们来经营{\r}\N{\fs14\1c&H42CEFD&}Keep it between you.{\r}
+Dialogue: 0,0:11:58.60,0:12:01.69,Default,,0000,0000,0000,,兄弟俩 一家人{\r}\N{\fs14\1c&H42CEFD&}Brothers. Family.{\r}
+Dialogue: 0,0:12:02.25,0:12:05.45,Default,,0000,0000,0000,,- 答应我  - 我答应你 爸爸{\r}\N{\fs14\1c&H42CEFD&}- Promise.   - I promise, Pop.{\r}
+Dialogue: 0,0:12:06.75,0:12:09.73,Default,,0000,0000,0000,,- 我答应你  - 意下如何？{\r}\N{\fs14\1c&H42CEFD&}- I promise.   - So, you were sayin'?{\r}
+Dialogue: 0,0:12:11.40,0:12:12.85,Default,,0000,0000,0000,,我只能拒绝{\r}\N{\fs14\1c&H42CEFD&}I'll have to pass.{\r}
+Dialogue: 0,0:12:14.15,0:12:14.94,Default,,0000,0000,0000,,什么？{\r}\N{\fs14\1c&H42CEFD&}What?{\r}
+Dialogue: 0,0:12:16.75,0:12:20.86,Default,,0000,0000,0000,,“没有绳子 世界就乱套了”{\r}\N{\fs14\1c&H42CEFD&}"A world without string is chaos."{\r}
+Dialogue: 0,0:12:23.65,0:12:27.65,Default,,0000,0000,0000,,好不容易 斯曼兹这个姓能值点儿钱！{\r}\N{\fs14\1c&H42CEFD&}For once the Smuntz name was worth something!{\r}
+Dialogue: 0,0:12:30.35,0:12:32.70,Default,,0000,0000,0000,,你 你… 你以前喜欢绳子啊！{\r}\N{\fs14\1c&H42CEFD&}You...You used to love string!{\r}
+Dialogue: 0,0:12:32.85,0:12:37.00,Default,,0000,0000,0000,,那是以前 在我和制绳大王的儿子约会的时候！{\r}\N{\fs14\1c&H42CEFD&}That was before, when I was dating the son of a wealthy string magnate!{\r}
+Dialogue: 0,0:12:37.30,0:12:38.45,Default,,0000,0000,0000,,现在不了{\r}\N{\fs14\1c&H42CEFD&}Not now,{\r}
+Dialogue: 0,0:12:38.60,0:12:42.30,Default,,0000,0000,0000,,因为我的丈夫只是个拥有半栋危楼的穷光蛋！{\r}\N{\fs14\1c&H42CEFD&}when I am married to the half-owner of a worthless deathtrap!{\r}
+Dialogue: 0,0:12:44.75,0:12:47.05,Default,,0000,0000,0000,,我以为我立场坚定 你会很高兴的！{\r}\N{\fs14\1c&H42CEFD&}I thought you'd be happy! I stood up for myself today!{\r}
+Dialogue: 0,0:12:48.25,0:12:50.31,Default,,0000,0000,0000,,艾普尔 我对工厂有新想法{\r}\N{\fs14\1c&H42CEFD&}April, I've got new ideas for the factory.{\r}
+Dialogue: 0,0:12:50.85,0:12:52.35,Default,,0000,0000,0000,,我有一个大计划！{\r}\N{\fs14\1c&H42CEFD&}You know, I've got big plans!{\r}
+Dialogue: 0,0:12:52.45,0:12:56.75,Default,,0000,0000,0000,,你还不懂吗？一直以来你有的只是计划{\r}\N{\fs14\1c&H42CEFD&}Don't you see, Lars? That's all you've ever had are plans.{\r}
+Dialogue: 0,0:12:57.05,0:12:59.10,Default,,0000,0000,0000,,我的美好年华就这样没了{\r}\N{\fs14\1c&H42CEFD&}But my life is passing me by,{\r}
+Dialogue: 0,0:13:00.05,0:13:01.65,Default,,0000,0000,0000,,我要的不只是这些！{\r}\N{\fs14\1c&H42CEFD&}and I...I need more!{\r}
+Dialogue: 0,0:13:02.25,0:13:06.25,Default,,0000,0000,0000,,中产阶级是死路一条 我不想死{\r}\N{\fs14\1c&H42CEFD&}There's no air in the middle class, Lars. I can't breathe here.{\r}
+Dialogue: 0,0:13:06.45,0:13:08.05,Default,,0000,0000,0000,,求你 艾普尔 你不要走{\r}\N{\fs14\1c&H42CEFD&}Please, April, don't go.{\r}
+Dialogue: 0,0:13:09.70,0:13:10.85,Default,,0000,0000,0000,,要走的不是我{\r}\N{\fs14\1c&H42CEFD&}I'm not going anywhere.{\r}
+Dialogue: 0,0:13:28.65,0:13:31.95,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}转眼之间 愉快的假期被打乱了…{\r}\N{\fs14\1c&H42CEFD&}In a few brief moments, the joy of the holidays was shattered...{\r}
+Dialogue: 0,0:13:32.15,0:13:34.45,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}很多人的世界从此改变{\r}\N{\fs14\1c&H42CEFD&}and the world changed for many people.{\r}
+Dialogue: 0,0:13:34.70,0:13:38.05,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}本市市长 今天下午四点三十分{\r}\N{\fs14\1c&H42CEFD&}Mayor McKrinkle died this afternoon at 4:30 p.m.,{\r}
+Dialogue: 0,0:13:38.25,0:13:39.50,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}在圣母慈善医院{\r}\N{\fs14\1c&H42CEFD&}at Our Lady of{\r}
+Dialogue: 0,0:13:39.65,0:13:42.65,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}不治身亡 医生说 正式的死因…{\r}\N{\fs14\1c&H42CEFD&}Sorrows Hospital. Doctors here say the official cause of death is...{\r}
+Dialogue: 0,0:13:42.65,0:13:46.85,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}是用餐时受到惊吓所引起的心力衰竭{\r}\N{\fs14\1c&H42CEFD&}heart failure due to the mayor's recent culinary disaster.{\r}
+Dialogue: 0,0:13:47.05,0:13:50.40,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}码头上往日风光无限的厄尼大厨餐厅…{\r}\N{\fs14\1c&H42CEFD&}And once the hottest restaurant on the wharf, Chez Ernie...{\r}
+Dialogue: 0,0:13:50.45,0:13:53.20,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}倍受指责 将于今日强行拆除{\r}\N{\fs14\1c&H42CEFD&}has been condemned and scheduled for demolition.{\r}
+Dialogue: 0,0:13:51.60,0:13:52.45,Default,,0000,0000,0000,,呃 对不起！{\r}\N{\fs14\1c&H42CEFD&}Excuse me!{\r}
+Dialogue: 0,0:13:52.65,0:13:56.29,Default,,0000,0000,0000,,我没说要给干酪三明治加酸豆 很抱歉{\r}\N{\fs14\1c&H42CEFD&}I-I don't think I ordered my cheese sandwich with capers. I'm sorry.{\r}
+Dialogue: 0,0:13:58.35,0:13:59.42,Default,,0000,0000,0000,,真对不起{\r}\N{\fs14\1c&H42CEFD&}I'm sorry.{\r}
+Dialogue: 0,0:13:59.85,0:14:02.90,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}悲剧的罪魁祸首是厄尼·斯曼兹…{\r}\N{\fs14\1c&H42CEFD&}If there is a villain in this tragedy, it is Ernie Smuntz.{\r}
+Dialogue: 0,0:14:03.05,0:14:04.85,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}本地餐饮业的神话人物…{\r}\N{\fs14\1c&H42CEFD&}Mythological figures in the local restaurant industry...{\r}
+Dialogue: 0,0:14:05.45,0:14:06.40,Default,,0000,0000,0000,,- 嗨 厄尼  - 什么？{\r}\N{\fs14\1c&H42CEFD&}- Hi, Ernie,   - What?{\r}
+Dialogue: 0,0:14:06.45,0:14:08.05,Default,,0000,0000,0000,,- 你又上电视了！  - 噢{\r}\N{\fs14\1c&H42CEFD&}- you're on TV again!   - Oh.{\r}
+Dialogue: 0,0:14:08.85,0:14:10.40,Default,,0000,0000,0000,,这叫什么？我告诉你{\r}\N{\fs14\1c&H42CEFD&}You know what this is? I'll tell ya.{\r}
+Dialogue: 0,0:14:10.45,0:14:13.45,Default,,0000,0000,0000,,- 欲加之罪 何患无辞  - 不要酸豆{\r}\N{\fs14\1c&H42CEFD&}- Guilt by accusation.   - No capers.{\r}
+Dialogue: 0,0:14:13.80,0:14:16.85,Default,,0000,0000,0000,,不要酸豆？就剩烤干酪怎么吃？{\r}\N{\fs14\1c&H42CEFD&}No capers? But that's just grilled cheese. What's the point?{\r}
+Dialogue: 0,0:14:17.05,0:14:18.65,Default,,0000,0000,0000,,这种客人应该去猪圈！{\r}\N{\fs14\1c&H42CEFD&}Why don't they eat out of a trough?{\r}
+Dialogue: 0,0:14:19.75,0:14:20.55,Default,,0000,0000,0000,,听着{\r}\N{\fs14\1c&H42CEFD&}All right.{\r}
+Dialogue: 0,0:14:20.65,0:14:23.05,Default,,0000,0000,0000,,是哪个笨蛋把三明治给退回来的？{\r}\N{\fs14\1c&H42CEFD&}Which one of you palateless sheep sent my sandwich back?{\r}
+Dialogue: 0,0:14:24.70,0:14:25.85,Default,,0000,0000,0000,,嗨 厄尼！{\r}\N{\fs14\1c&H42CEFD&}Hi, Ernie!{\r}
+Dialogue: 0,0:14:26.45,0:14:27.05,Default,,0000,0000,0000,,拉尔斯？{\r}\N{\fs14\1c&H42CEFD&}Lars?{\r}
+Dialogue: 0,0:14:27.45,0:14:28.45,Default,,0000,0000,0000,,嗨{\r}\N{\fs14\1c&H42CEFD&}Hey.{\r}
+Dialogue: 0,0:14:29.90,0:14:31.20,Default,,0000,0000,0000,,我在厨房做饭{\r}\N{\fs14\1c&H42CEFD&}When I'm in the kitchen, I cook.{\r}
+Dialogue: 0,0:14:31.35,0:14:34.00,Default,,0000,0000,0000,,不可能管着整个餐厅的所有事{\r}\N{\fs14\1c&H42CEFD&}I can't control every single thing that goes on in there.{\r}
+Dialogue: 0,0:14:34.35,0:14:36.65,Default,,0000,0000,0000,,大家都指责你 真的很不公平{\r}\N{\fs14\1c&H42CEFD&}You know, it really isn't fair for everybody to blame you.{\r}
+Dialogue: 0,0:14:36.95,0:14:38.25,Default,,0000,0000,0000,,你没有做错什么{\r}\N{\fs14\1c&H42CEFD&}You didn't do anything wrong.{\r}
+Dialogue: 0,0:14:39.05,0:14:42.65,Default,,0000,0000,0000,,对呀 可社会需要找个替罪羊{\r}\N{\fs14\1c&H42CEFD&}Yes, but society always needs someone to persecute.{\r}
+Dialogue: 0,0:14:43.05,0:14:47.45,Default,,0000,0000,0000,,需要把好人丑化成魔鬼 伽利略当年也是这样{\r}\N{\fs14\1c&H42CEFD&}A scapegoat, someone to demonize. The same thing happened to Galileo.{\r}
+Dialogue: 0,0:14:47.63,0:14:49.65,Default,,0000,0000,0000,,是吗？难以置信{\r}\N{\fs14\1c&H42CEFD&}Really? That's unbelievable.{\r}
+Dialogue: 0,0:14:50.47,0:14:52.25,Default,,0000,0000,0000,,他的蟑螂也吃死人了？{\r}\N{\fs14\1c&H42CEFD&}With a cockroach and everything?{\r}
+Dialogue: 0,0:14:52.90,0:14:57.95,Default,,0000,0000,0000,,不 重要的是 我把一切都投入到餐馆{\r}\N{\fs14\1c&H42CEFD&}No. The point is, I put everything I had into that restaurant.{\r}
+Dialogue: 0,0:14:58.15,0:14:59.85,Default,,0000,0000,0000,,这是我的工作 我的家{\r}\N{\fs14\1c&H42CEFD&}It was my livelihood and my home.{\r}
+Dialogue: 0,0:15:00.05,0:15:02.85,Default,,0000,0000,0000,,客人一口咬错地方 一切就没了{\r}\N{\fs14\1c&H42CEFD&}In one fatal bite, it was all taken away from me.{\r}
+Dialogue: 0,0:15:03.35,0:15:05.05,Default,,0000,0000,0000,,我们只能卖掉工厂{\r}\N{\fs14\1c&H42CEFD&}If only we could sell the factory.{\r}
+Dialogue: 0,0:15:05.50,0:15:09.45,Default,,0000,0000,0000,,我很想请你住到我的家 可是艾普尔把我赶出来了{\r}\N{\fs14\1c&H42CEFD&}Uh...I'd let you stay with me, you know, but, uh, April threw me out.{\r}
+Dialogue: 0,0:15:11.05,0:15:15.35,Default,,0000,0000,0000,,- 噢 那太糟了  - 是啊 不过不要担心我 厄尼{\r}\N{\fs14\1c&H42CEFD&}- Oh, that's too bad.   - Yeah, well, don't worry about me, though, Ernie.{\r}
+Dialogue: 0,0:15:15.45,0:15:18.15,Default,,0000,0000,0000,,这是暂时的 艾普尔从高中起就是这样{\r}\N{\fs14\1c&H42CEFD&}Th-This is temporary. April's been like this since high school.{\r}
+Dialogue: 0,0:15:18.35,0:15:21.15,Default,,0000,0000,0000,,- 她会想通的 呃…  - 你来看看{\r}\N{\fs14\1c&H42CEFD&}- She'll be back. I...   - Would you look at them?{\r}
+Dialogue: 0,0:15:21.45,0:15:25.25,Default,,0000,0000,0000,,睡在大街上 太惨了{\r}\N{\fs14\1c&H42CEFD&}Sleeping in the street. Pitiful.{\r}
+Dialogue: 0,0:15:27.50,0:15:30.35,Default,,0000,0000,0000,,我也想睡在房子里！{\r}\N{\fs14\1c&H42CEFD&}If I had a house, I'd sleep in it!{\r}
+Dialogue: 0,0:15:30.95,0:15:34.85,Default,,0000,0000,0000,,- 厄尼 你还记得小时候我们有多亲吗？  - 不记得{\r}\N{\fs14\1c&H42CEFD&}- Ernie, do you remember how close we were as kids?   - No.{\r}
+Dialogue: 0,0:15:35.70,0:15:37.85,Default,,0000,0000,0000,,嘿！圣诞快乐！{\r}\N{\fs14\1c&H42CEFD&}Hey! Merry Christmas!{\r}
+Dialogue: 0,0:15:39.75,0:15:41.55,Default,,0000,0000,0000,,对 以前我也风光过{\r}\N{\fs14\1c&H42CEFD&}Yeah, I was on top once too.{\r}
+Dialogue: 0,0:15:41.85,0:15:46.55,Default,,0000,0000,0000,,但顶峰只有一条路 那就是下坡路 下坡路！{\r}\N{\fs14\1c&H42CEFD&}But there's only one way to go from there, and that's down, baby, down!{\r}
+Dialogue: 0,0:15:50.40,0:15:51.32,Default,,0000,0000,0000,,厄尼{\r}\N{\fs14\1c&H42CEFD&}Ernie.{\r}
+Dialogue: 0,0:15:52.85,0:15:56.25,Default,,0000,0000,0000,,厄尼！厄尼 那是两毛五的硬币呀{\r}\N{\fs14\1c&H42CEFD&}Ernie! Ernie, there was a quarter in there.{\r}
+Dialogue: 0,0:15:56.85,0:16:00.37,Default,,0000,0000,0000,,两毛五？你真是目光短浅 拉尔斯{\r}\N{\fs14\1c&H42CEFD&}A quarter? You think so small, Lars.{\r}
+Dialogue: 0,0:15:56.85,0:16:03.45,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an8\1c&HEAEAFF&\4c&H000040&\b0\i1}♪ 我将迎来那平安夜 ♪{\r}\N{\fs14\1c&H42CEFD&}# Christmas Eve will find me #{\r}
+Dialogue: 0,0:16:01.05,0:16:05.25,Default,,0000,0000,0000,,看看你现在 你没有家 没有老婆 没有钱…{\r}\N{\fs14\1c&H42CEFD&}Look at the bigger picture. You have no home, you have no wife, you have no money.{\r}
+Dialogue: 0,0:16:03.85,0:16:10.25,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an8\1c&HEAEAFF&\4c&H000040&\b0\i1}♪ 爱的光芒闪烁不断 ♪{\r}\N{\fs14\1c&H42CEFD&}# Where the love light gleams, #{\r}
+Dialogue: 0,0:16:05.35,0:16:09.13,Default,,0000,0000,0000,,没有可谋生的才能 你却视而不见？{\r}\N{\fs14\1c&H42CEFD&}You have no discernible talents. How can you ignore that?{\r}
+Dialogue: 0,0:16:10.45,0:16:12.25,Default,,0000,0000,0000,,厄尼 这是圣诞节{\r}\N{\fs14\1c&H42CEFD&}Ernie, it's Christmas.{\r}
+Dialogue: 0,0:16:10.65,0:16:17.05,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an8\1c&HEAEAFF&\4c&H000040&\b0\i1}♪ 圣诞节我会回到家中 ♪{\r}\N{\fs14\1c&H42CEFD&}# I'll be home for Christmas #{\r}
+Dialogue: 0,0:16:13.65,0:16:17.45,Default,,0000,0000,0000,,与其抱怨没有什么 不如对已经拥有的东西感恩{\r}\N{\fs14\1c&H42CEFD&}Instead of dwelling on what we don't have, we should be thankful for what we do have.{\r}
+Dialogue: 0,0:16:17.45,0:16:23.85,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an8\1c&HEAEAFF&\4c&H000040&\b0\i1}♪ 即使只在我的梦里… ♪{\r}\N{\fs14\1c&H42CEFD&}# If I'm only in my dreams... #{\r}
+Dialogue: 0,0:16:23.85,0:16:28.65,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs14\bord0\shad2\fsp1\pos(195,23)\1c&H3D4E5A&\4c&H182229&}爱泼斯坦面包店
+Dialogue: 0,0:16:23.85,0:16:28.65,Default,,0000,0000,0000,,{\fnSimHei\fs42\bord0\shad0\pos(194,25)\fscx300\fscy40\frz0\1c&H1C2A32&\b0}■
+Dialogue: 0,0:16:33.50,0:16:42.40,Default,,0000,0000,0000,,{\fad(0,2000)\fnKaiTi\fs20\bord4\shad0\fsp8\pos(200,176)\1c&H0D0E12&\3c&H696E6C&}欢迎回家
+Dialogue: 0,0:17:11.35,0:17:12.95,Default,,0000,0000,0000,,像垃圾场{\r}\N{\fs14\1c&H42CEFD&}What a dump.{\r}
+Dialogue: 0,0:17:22.70,0:17:26.05,Default,,0000,0000,0000,,噢！爸爸居然没有跟我们提过这个房子{\r}\N{\fs14\1c&H42CEFD&}Wow! I can't believe Pops never told us about this house.{\r}
+Dialogue: 0,0:17:28.05,0:17:29.45,Default,,0000,0000,0000,,真大呀{\r}\N{\fs14\1c&H42CEFD&}It's huge.{\r}
+Dialogue: 0,0:17:30.65,0:17:32.65,Default,,0000,0000,0000,,这正像老爸喜欢的房子{\r}\N{\fs14\1c&H42CEFD&}This is just the kind of house I'd expect him to have.{\r}
+Dialogue: 0,0:17:33.35,0:17:35.85,Default,,0000,0000,0000,,跟他一样 又冷又吓人{\r}\N{\fs14\1c&H42CEFD&}It's just like him. Cold and spooky.{\r}
+Dialogue: 0,0:17:40.45,0:17:43.45,Default,,0000,0000,0000,,- 噢！你也打了吗？  - 什么？{\r}\N{\fs14\1c&H42CEFD&}- Wow! Did you feel that?   - What?{\r}
+Dialogue: 0,0:17:44.15,0:17:47.55,Default,,0000,0000,0000,,打冷颤 你不该那样说我们的爸爸{\r}\N{\fs14\1c&H42CEFD&}I got a chill. You shouldn't talk about Pop like that.{\r}
+Dialogue: 0,0:17:48.05,0:17:50.25,Default,,0000,0000,0000,,是吗？那你看这样呢？{\r}\N{\fs14\1c&H42CEFD&}Really? What's this do for you?{\r}
+Dialogue: 0,0:17:51.15,0:17:55.85,Default,,0000,0000,0000,,你真是小气 喜欢绳子的老笨蛋！{\r}\N{\fs14\1c&H42CEFD&}Thanks for nothing, you string-sucking old loon!{\r}
+Dialogue: 0,0:17:58.00,0:18:00.05,Default,,0000,0000,0000,,他 他不是那意思{\r}\N{\fs14\1c&H42CEFD&}He didn't mean it, Pop.{\r}
+Dialogue: 0,0:18:03.15,0:18:05.05,Default,,0000,0000,0000,,厄尼！厄尼！{\r}\N{\fs14\1c&H42CEFD&}Ernie! Ernie!{\r}
+Dialogue: 0,0:18:13.45,0:18:15.85,Default,,0000,0000,0000,,就一张床 扔硬币吧{\r}\N{\fs14\1c&H42CEFD&}Only one bed. I'll flip you for it.{\r}
+Dialogue: 0,0:18:19.00,0:18:19.95,Default,,0000,0000,0000,,人头{\r}\N{\fs14\1c&H42CEFD&}Heads.{\r}
+Dialogue: 0,0:18:40.90,0:18:41.75,Default,,0000,0000,0000,,厄尼{\r}\N{\fs14\1c&H42CEFD&}E-Ernie?{\r}
+Dialogue: 0,0:18:43.45,0:18:44.95,Default,,0000,0000,0000,,厄尼 厄尼{\r}\N{\fs14\1c&H42CEFD&}Ernie. Ernie.{\r}
+Dialogue: 0,0:18:47.15,0:18:50.54,Default,,0000,0000,0000,,- 睡着了吗？  - 是的{\r}\N{\fs14\1c&H42CEFD&}- You asleep?   - I was.{\r}
+Dialogue: 0,0:18:51.05,0:18:53.35,Default,,0000,0000,0000,,这么吵你都能睡得着？{\r}\N{\fs14\1c&H42CEFD&}How can you sleep through that?{\r}
+Dialogue: 0,0:18:54.05,0:18:56.95,Default,,0000,0000,0000,,- 怎么了？我什么都没听见  - 嘘 嘘 这个{\r}\N{\fs14\1c&H42CEFD&}- What? I don't hear anything.   - Shh-shh-shh-shh. That.{\r}
+Dialogue: 0,0:18:57.15,0:19:00.85,Default,,0000,0000,0000,,你听 听到了吗？是楼上传来的声音{\r}\N{\fs14\1c&H42CEFD&}Listen. Hear it? It's coming from upstairs.{\r}
+Dialogue: 0,0:19:21.65,0:19:22.85,Default,,0000,0000,0000,,樟脑球{\r}\N{\fs14\1c&H42CEFD&}Mothballs.{\r}
+Dialogue: 0,0:19:25.95,0:19:31.15,Default,,0000,0000,0000,,嗷 快住手！嘿！噢！{\r}\N{\fs14\1c&H42CEFD&}He-Hey, stop it! Hey! Ow!{\r}
+Dialogue: 0,0:19:39.70,0:19:42.25,Default,,0000,0000,0000,,厄尼！厄尼！{\r}\N{\fs14\1c&H42CEFD&}Ernie! Ernie!{\r}
+Dialogue: 0,0:20:22.75,0:20:24.75,Default,,0000,0000,0000,,等等 等等 别叫了！{\r}\N{\fs14\1c&H42CEFD&}Wait. Wait a minute. Stop. Stop!{\r}
+Dialogue: 0,0:20:24.85,0:20:28.45,Default,,0000,0000,0000,,你看 别叫了 只是一个玩具而已{\r}\N{\fs14\1c&H42CEFD&}Look. Look, look, look. It's only a toy.{\r}
+Dialogue: 0,0:20:35.95,0:20:37.45,Default,,0000,0000,0000,,啊 闭嘴！{\r}\N{\fs14\1c&H42CEFD&}Ah, shut up!{\r}
+Dialogue: 0,0:20:44.95,0:20:46.33,Default,,0000,0000,0000,,声音是从那儿来的！{\r}\N{\fs14\1c&H42CEFD&}It's coming from up there!{\r}
+Dialogue: 0,0:20:50.00,0:20:52.95,Default,,0000,0000,0000,,一 二 三！{\r}\N{\fs14\1c&H42CEFD&}One, two, three!{\r}
+Dialogue: 0,0:21:01.95,0:21:04.45,Default,,0000,0000,0000,,- 是一只老鼠  - 什么？{\r}\N{\fs14\1c&H42CEFD&}- It's just a mouse.   - What?{\r}
+Dialogue: 0,0:21:04.90,0:21:08.18,Default,,0000,0000,0000,,一只小老鼠 不用理它{\r}\N{\fs14\1c&H42CEFD&}It's just a mouse. Never mind.{\r}
+Dialogue: 0,0:21:09.05,0:21:11.70,Default,,0000,0000,0000,,哎 这儿有几张海报{\r}\N{\fs14\1c&H42CEFD&}Hey, there are some posters up here.{\r}
+Dialogue: 0,0:21:12.55,0:21:14.45,Default,,0000,0000,0000,,噢！别乱动！{\r}\N{\fs14\1c&H42CEFD&}Oh! Stand still!{\r}
+Dialogue: 0,0:21:16.85,0:21:18.45,Default,,0000,0000,0000,,啊！{\r}\N{\fs14\1c&H42CEFD&}Ah!{\r}
+Dialogue: 0,0:21:29.05,0:21:31.45,Default,,0000,0000,0000,,- 是设计图  - 哇噢！{\r}\N{\fs14\1c&H42CEFD&}- They're blueprints.   - Wow!{\r}
+Dialogue: 0,0:21:31.85,0:21:35.45,Default,,0000,0000,0000,,等等 你看这日期 1876年{\r}\N{\fs14\1c&H42CEFD&}Wait a minute. Look at this date. 1876.{\r}
+Dialogue: 0,0:21:35.85,0:21:38.95,Default,,0000,0000,0000,,有一百年历史的房子应该能值点儿钱{\r}\N{\fs14\1c&H42CEFD&}A centennial house could actually be worth something.{\r}
+Dialogue: 0,0:21:39.55,0:21:41.85,Default,,0000,0000,0000,,瞧 这一定是建筑师的名字 瞧这儿{\r}\N{\fs14\1c&H42CEFD&}Look, this must be the architect. Here, look.{\r}
+Dialogue: 0,0:21:42.22,0:21:45.20,Default,,0000,0000,0000,,“查尔斯·莱尔·拉鲁”{\r}\N{\fs14\1c&H42CEFD&}"Charles Lyle LaRue."{\r}
+Dialogue: 0,0:21:46.75,0:21:48.65,Default,,0000,0000,0000,,查尔斯·莱尔·拉鲁{\r}\N{\fs14\1c&H42CEFD&}Charles Lyle Larue.{\r}
+Dialogue: 0,0:21:49.80,0:21:51.85,Default,,0000,0000,0000,,查尔斯·莱尔·拉鲁？{\r}\N{\fs14\1c&H42CEFD&}Charles Lyle LaRue?{\r}
+Dialogue: 0,0:21:51.85,0:21:52.95,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs20\bord1\shad2\fsp10\pos(204,250)\fscx140\fscy90\frz1.3\1c&H16273A&\3c&H374C63&\b0}历史协会
+Dialogue: 0,0:21:55.85,0:21:58.25,Default,,0000,0000,0000,,查尔斯·莱尔·拉鲁{\r}\N{\fs14\1c&H42CEFD&}Charles Lyle LaRue.{\r}
+Dialogue: 0,0:22:00.45,0:22:03.55,Default,,0000,0000,0000,,查尔斯·莱尔·拉鲁！{\r}\N{\fs14\1c&H42CEFD&}Charles Lyle LaRue!{\r}
+Dialogue: 0,0:22:04.15,0:22:06.65,Default,,0000,0000,0000,,查尔斯·莱尔·拉鲁！{\r}\N{\fs14\1c&H42CEFD&}Charles Lyle LaRue!{\r}
+Dialogue: 0,0:22:07.35,0:22:10.75,Default,,0000,0000,0000,,我站在拉鲁不为人知的杰作当中！{\r}\N{\fs14\1c&H42CEFD&}I'm actually standing in the missing LaRue!{\r}
+Dialogue: 0,0:22:11.85,0:22:16.25,Default,,0000,0000,0000,,- 粗犷 不失细腻  - 古典而又反传统{\r}\N{\fs14\1c&H42CEFD&}- It's bold yet subtle.   - Classical yet nontraditional.{\r}
+Dialogue: 0,0:22:16.45,0:22:18.20,Default,,0000,0000,0000,,传说中的遗作{\r}\N{\fs14\1c&H42CEFD&}The missing LaRue.{\r}
+Dialogue: 0,0:22:18.25,0:22:22.65,Default,,0000,0000,0000,,据说是拉鲁被关进精神病院之前 最后的作品{\r}\N{\fs14\1c&H42CEFD&}The rumored design completed shortly before his committal is a rumor no more.{\r}
+Dialogue: 0,0:22:23.05,0:22:24.35,Default,,0000,0000,0000,,精神病院？{\r}\N{\fs14\1c&H42CEFD&}Before his committal?{\r}
+Dialogue: 0,0:22:24.55,0:22:29.00,Default,,0000,0000,0000,,噢 很真高兴他在去精神病院之前盖好了这房子{\r}\N{\fs14\1c&H42CEFD&}Well, I'm just glad he finished the place before they carted him off to the laughing academy.{\r}
+Dialogue: 0,0:22:32.25,0:22:36.25,Default,,0000,0000,0000,,那么 像这样华丽的建筑值多少钱？{\r}\N{\fs14\1c&H42CEFD&}So, what do you think a magnificent edifice like this is worth?{\r}
+Dialogue: 0,0:22:37.25,0:22:38.55,Default,,0000,0000,0000,,当然 是在翻修之后{\r}\N{\fs14\1c&H42CEFD&}Properly restored, of course.{\r}
+Dialogue: 0,0:22:39.20,0:22:43.05,Default,,0000,0000,0000,,这个嘛 他设计的“灵堂”买到了六…{\r}\N{\fs14\1c&H42CEFD&}Well, his Parma Charnel House went for six...{\r}
+Dialogue: 0,0:22:43.55,0:22:46.40,Default,,0000,0000,0000,,而且是十年前 造型也不如这精美{\r}\N{\fs14\1c&H42CEFD&}But that was ten years ago, and it didn't have this exquisite molding.{\r}
+Dialogue: 0,0:22:46.45,0:22:49.15,Default,,0000,0000,0000,,懂了 造型精美最重要{\r}\N{\fs14\1c&H42CEFD&}I see. I can't get enough of good molding.{\r}
+Dialogue: 0,0:22:52.25,0:22:55.45,Default,,0000,0000,0000,,- 听见了吗？他说能卖到六十万  - 厄尼{\r}\N{\fs14\1c&H42CEFD&}- Did you hear that? $600,000.   - Ernie.{\r}
+Dialogue: 0,0:22:55.85,0:22:57.85,Default,,0000,0000,0000,,亚历山大·法尔科！{\r}\N{\fs14\1c&H42CEFD&}Alexander Falko!{\r}
+Dialogue: 0,0:22:58.45,0:22:59.45,Default,,0000,0000,0000,,让开！{\r}\N{\fs14\1c&H42CEFD&}Back!{\r}
+Dialogue: 0,0:23:00.05,0:23:02.05,Default,,0000,0000,0000,,二位 祝贺你们{\r}\N{\fs14\1c&H42CEFD&}Gentlemen, congratulations.{\r}
+Dialogue: 0,0:23:02.85,0:23:04.85,Default,,0000,0000,0000,,- 你们发现了宝藏  - 谢谢{\r}\N{\fs14\1c&H42CEFD&}- Congratulations on your find.   - Thank you.{\r}
+Dialogue: 0,0:23:04.90,0:23:06.65,Default,,0000,0000,0000,,我非常崇拜拉鲁{\r}\N{\fs14\1c&H42CEFD&}I'm a great admirer of LaRue.{\r}
+Dialogue: 0,0:23:06.90,0:23:07.92,Default,,0000,0000,0000,,给我一杯雨水{\r}\N{\fs14\1c&H42CEFD&}Glass of rainwater, please.{\r}
+Dialogue: 0,0:23:07.93,0:23:11.05,Default,,0000,0000,0000,,法尔科先生是世上头号拉鲁收藏家{\r}\N{\fs14\1c&H42CEFD&}Yes, Mr. Falko is the world's leading collector of LaRues.{\r}
+Dialogue: 0,0:23:11.10,0:23:15.35,Default,,0000,0000,0000,,- 哦  - 哦 就像是收集邮票 只不过更大？{\r}\N{\fs14\1c&H42CEFD&}- Ah.   - Ah, sort of like collecting stamps, but they're bigger, right?{\r}
+Dialogue: 0,0:23:15.60,0:23:20.35,Default,,0000,0000,0000,,我直说了吧 拉鲁 我有他的书 我有他的信{\r}\N{\fs14\1c&H42CEFD&}I'll get to the point. LaRue. I have his books. I have his letters.{\r}
+Dialogue: 0,0:23:20.70,0:23:22.05,Default,,0000,0000,0000,,你们看这双鞋{\r}\N{\fs14\1c&H42CEFD&}You see these shoes?{\r}
+Dialogue: 0,0:23:22.42,0:23:25.15,Default,,0000,0000,0000,,- 拉鲁的？  - 不 但拉鲁一定喜欢{\r}\N{\fs14\1c&H42CEFD&}- LaRues?   - No, but I'm sure he would have loved them.{\r}
+Dialogue: 0,0:23:25.35,0:23:28.05,Default,,0000,0000,0000,,蔬菜 小吃… 我拥有…{\r}\N{\fs14\1c&H42CEFD&}Vegetarian snack. I own...{\r}
+Dialogue: 0,0:23:28.25,0:23:30.10,Default,,0000,0000,0000,,四十二幢拉鲁的建筑{\r}\N{\fs14\1c&H42CEFD&}Forty-two LaRue houses.{\r}
+Dialogue: 0,0:23:30.30,0:23:33.10,Default,,0000,0000,0000,,四十二 我希望能变成四十三{\r}\N{\fs14\1c&H42CEFD&}Forty-two. I want to make it 43.{\r}
+Dialogue: 0,0:23:33.30,0:23:35.10,Default,,0000,0000,0000,,我怎样才能如愿以偿？{\r}\N{\fs14\1c&H42CEFD&}You tell me how I'm going to do this.{\r}
+Dialogue: 0,0:23:35.26,0:23:38.70,Default,,0000,0000,0000,,告诉我我要怎么做 你们帮个忙 说 我该怎么做？{\r}\N{\fs14\1c&H42CEFD&}Tell me how I will do this. You help me. How will I do this?{\r}
+Dialogue: 0,0:23:38.85,0:23:40.45,Default,,0000,0000,0000,,很高兴你有这想法{\r}\N{\fs14\1c&H42CEFD&}Well, I'm, uh, glad you asked.{\r}
+Dialogue: 0,0:23:40.55,0:23:42.70,Default,,0000,0000,0000,,他设计的“灵堂”能卖六…{\r}\N{\fs14\1c&H42CEFD&}His, uh, Parma Charnel House went for six,{\r}
+Dialogue: 0,0:23:42.75,0:23:45.25,Default,,0000,0000,0000,,而且是十年前 造型也差一些{\r}\N{\fs14\1c&H42CEFD&}but that was ten years ago, and it didn't have this molding.{\r}
+Dialogue: 0,0:23:45.40,0:23:49.45,Default,,0000,0000,0000,,这种精美的大宅子 以现在的行情起码得翻倍{\r}\N{\fs14\1c&H42CEFD&}I see, a find like this in today's market is worth twice as much.{\r}
+Dialogue: 0,0:23:50.15,0:23:53.25,Default,,0000,0000,0000,,- 他对拉鲁很懂行  - 我愿意认罪{\r}\N{\fs14\1c&H42CEFD&}- He's a LaRue connoisseur.   - Guilty as charged.{\r}
+Dialogue: 0,0:23:53.85,0:23:56.45,Default,,0000,0000,0000,,先生们 我来给你们开个价{\r}\N{\fs14\1c&H42CEFD&}Gentlemen, I'm going to make you an offer.{\r}
+Dialogue: 0,0:23:56.60,0:24:00.45,Default,,0000,0000,0000,,不… 我不可能那么傻 任凭你的摆布{\r}\N{\fs14\1c&H42CEFD&}No, no, no, no, no, I couldn't possibly be so crass as to allow you to do that.{\r}
+Dialogue: 0,0:24:00.55,0:24:02.25,Default,,0000,0000,0000,,欢迎参加拍卖会{\r}\N{\fs14\1c&H42CEFD&}But you are welcome to come to the auction.{\r}
+Dialogue: 0,0:24:02.95,0:24:05.25,Default,,0000,0000,0000,,- 拍卖？  - 拍卖？  - 拍卖 没错{\r}\N{\fs14\1c&H42CEFD&}- Auction?   - Auction?   - Auction, yes.{\r}
+Dialogue: 0,0:24:05.45,0:24:09.45,Default,,0000,0000,0000,,剥夺他人购买拉鲁遗作的机会 非常不公平{\r}\N{\fs14\1c&H42CEFD&}It would be grossly unfair of us to deprive others of the chance to bid on the missing LaRue.{\r}
+Dialogue: 0,0:24:12.30,0:24:15.55,Default,,0000,0000,0000,,我要跟我哥哥单独说句话 行吗？{\r}\N{\fs14\1c&H42CEFD&}May I have just one moment with my brother, please?{\r}
+Dialogue: 0,0:24:15.65,0:24:17.65,Default,,0000,0000,0000,,- 哦 当然可以  - 谢谢 失陪一下  - 没问题{\r}\N{\fs14\1c&H42CEFD&}- Sure. Of course.   - Thank you Excuse me.{\r}
+Dialogue: 0,0:24:19.25,0:24:20.45,Default,,0000,0000,0000,,这算什么？{\r}\N{\fs14\1c&H42CEFD&}What is this?{\r}
+Dialogue: 0,0:24:21.35,0:24:23.95,Default,,0000,0000,0000,,- 这算什么？不 不  - 我也是第一次听说…{\r}\N{\fs14\1c&H42CEFD&}- What is this? No. No.   - It's the first I've heard of...{\r}
+Dialogue: 0,0:24:26.55,0:24:30.40,Default,,0000,0000,0000,,- 你到底想干什么？  - 我干什么？让你的祈祷灵验{\r}\N{\fs14\1c&H42CEFD&}- What are you doing?   - What am I doing? I'm answering your prayers.{\r}
+Dialogue: 0,0:24:30.50,0:24:31.70,Default,,0000,0000,0000,,把买家聚在一起{\r}\N{\fs14\1c&H42CEFD&}These pigeons are ripe for the plucking.{\r}
+Dialogue: 0,0:24:31.75,0:24:34.00,Default,,0000,0000,0000,,让他们自相残杀 比着出高价{\r}\N{\fs14\1c&H42CEFD&}Put them in a room together. Try and outbid each other?{\r}
+Dialogue: 0,0:24:34.10,0:24:38.05,Default,,0000,0000,0000,,- 很容易就能卖到七八十万  - 噢 老哥 真聪明！{\r}\N{\fs14\1c&H42CEFD&}- We can make $700,000, $800,000 easy.   - Oh, man, smart!{\r}
+Dialogue: 0,0:24:38.45,0:24:39.45,Default,,0000,0000,0000,,噢！{\r}\N{\fs14\1c&H42CEFD&}Ooh!{\r}
+Dialogue: 0,0:24:40.55,0:24:42.90,Default,,0000,0000,0000,,- 接受现实吧 你…  - 不！不！你闭嘴！  - 那么{\r}\N{\fs14\1c&H42CEFD&}- You're going to get this one. You...   - Don't talk to me! Shh!   - So,{\r}
+Dialogue: 0,0:24:43.00,0:24:46.10,Default,,0000,0000,0000,,拍卖会最早可以安排在哪天呢？{\r}\N{\fs14\1c&H42CEFD&}when is the, uh, earliest we can set the auction?{\r}
+Dialogue: 0,0:24:46.45,0:24:50.45,Default,,0000,0000,0000,,我想 筹备工作一周之内就能做好{\r}\N{\fs14\1c&H42CEFD&}Well, I suppose all arrangements could be completed within the week.{\r}
+Dialogue: 0,0:24:51.00,0:24:52.55,Default,,0000,0000,0000,,- 那就一周  - 很好！{\r}\N{\fs14\1c&H42CEFD&}- A week it is.   - Great!{\r}
+Dialogue: 0,0:24:52.80,0:24:55.95,Default,,0000,0000,0000,,- 你们比看着聪明  - 谢谢{\r}\N{\fs14\1c&H42CEFD&}- You're smarter than you look.   - Thank you.{\r}
+Dialogue: 0,0:24:57.90,0:24:59.25,Default,,0000,0000,0000,,但要知道…{\r}\N{\fs14\1c&H42CEFD&}But know this.{\r}
+Dialogue: 0,0:24:59.55,0:25:04.05,Default,,0000,0000,0000,,我这辈子从没花过一千万以上买房子！{\r}\N{\fs14\1c&H42CEFD&}I have never paid more than $10 million for a house in my life!{\r}
+Dialogue: 0,0:25:18.80,0:25:20.45,Default,,0000,0000,0000,,好的 改天见{\r}\N{\fs14\1c&H42CEFD&}Okay, see you then.{\r}
+Dialogue: 0,0:25:20.70,0:25:23.45,Default,,0000,0000,0000,,对 谢谢你的到访{\r}\N{\fs14\1c&H42CEFD&}Yeah. Thanks for stopping by.{\r}
+Dialogue: 0,0:25:29.45,0:25:31.45,Default,,0000,0000,0000,,一千万包亚麻餐巾{\r}\N{\fs14\1c&H42CEFD&}Ten million linen napkins.{\r}
+Dialogue: 0,0:25:32.10,0:25:35.85,Default,,0000,0000,0000,,五百万包顶级纯棉细纱{\r}\N{\fs14\1c&H42CEFD&}Five million bales of top-grade cotton fiber.{\r}
+Dialogue: 0,0:25:36.90,0:25:40.65,Default,,0000,0000,0000,,四万个带旋转托盘的加热灯{\r}\N{\fs14\1c&H42CEFD&}Forty thousand hot lamps complete with rotating plate-warming trays.{\r}
+Dialogue: 0,0:25:41.00,0:25:44.75,Default,,0000,0000,0000,,两千台麻绳纺车 在灯光下闪闪发光{\r}\N{\fs14\1c&H42CEFD&}Two thousand twine threaders, gleaming under real lights.{\r}
+Dialogue: 0,0:25:44.95,0:25:47.45,Default,,0000,0000,0000,,属于我的五星级连锁餐厅{\r}\N{\fs14\1c&H42CEFD&}My own chain of five-star gourmet restaurants.{\r}
+Dialogue: 0,0:25:47.85,0:25:51.20,Default,,0000,0000,0000,,艾普尔想什么都行！车 大衣 瓷器{\r}\N{\fs14\1c&H42CEFD&}April can have anything she's ever wanted! Cars, coats, china.{\r}
+Dialogue: 0,0:25:51.35,0:25:52.85,Default,,0000,0000,0000,,她喜欢瓷器{\r}\N{\fs14\1c&H42CEFD&}She loves china.{\r}
+Dialogue: 0,0:25:59.25,0:26:00.91,Default,,0000,0000,0000,,我要建一个奥林匹克规格的游泳池…{\r}\N{\fs14\1c&H42CEFD&}I'm gonna build an Olympic-sized swimming pool...{\r}
+Dialogue: 0,0:26:01.25,0:26:04.85,Default,,0000,0000,0000,,装满朗姆鸡尾酒 请一大堆姑娘{\r}\N{\fs14\1c&H42CEFD&}and fill it with pina coladas and a college sorority.{\r}
+Dialogue: 0,0:26:05.65,0:26:07.95,Default,,0000,0000,0000,,可惜老爸没有看过这个！{\r}\N{\fs14\1c&H42CEFD&}If only Pop were here to see this house!{\r}
+Dialogue: 0,0:26:10.15,0:26:13.05,Default,,0000,0000,0000,,他看过 只是太傻不知道卖{\r}\N{\fs14\1c&H42CEFD&}He did. He just wasn't smart enough to sell it.{\r}
+Dialogue: 0,0:26:13.25,0:26:16.55,Default,,0000,0000,0000,,拉尔斯 我们转运了 美好的未来就在眼前{\r}\N{\fs14\1c&H42CEFD&}Lars, we've turned a corner. Our future is staring us in the face.{\r}
+Dialogue: 0,0:26:16.75,0:26:21.45,Default,,0000,0000,0000,,我们只需要抓住它 刷上酱汁 咽下去！{\r}\N{\fs14\1c&H42CEFD&}All we have to do is grab it, baste it, and scarf it down!{\r}
+Dialogue: 0,0:26:31.80,0:26:34.95,Default,,0000,0000,0000,,呵呵！找到小朋友的窝了！{\r}\N{\fs14\1c&H42CEFD&}Aha! We've finally found our friend's home!{\r}
+Dialogue: 0,0:26:35.15,0:26:37.40,Default,,0000,0000,0000,,我要送你个小礼物{\r}\N{\fs14\1c&H42CEFD&}Well, I bought a little present for ya, buddy.{\r}
+Dialogue: 0,0:26:38.25,0:26:42.05,Default,,0000,0000,0000,,厄尼 那只是个小老鼠 有必要弄死它吗？{\r}\N{\fs14\1c&H42CEFD&}Ernie, i-it's just a little mouse. Do we really have to kill it?{\r}
+Dialogue: 0,0:26:42.90,0:26:46.55,Default,,0000,0000,0000,,当然 听我说 一个小祸害能毁了一切{\r}\N{\fs14\1c&H42CEFD&}Yes. Listen to me. A single vermin can bring you down.{\r}
+Dialogue: 0,0:26:46.70,0:26:48.05,Default,,0000,0000,0000,,我有经验{\r}\N{\fs14\1c&H42CEFD&}Believe me, I know.{\r}
+Dialogue: 0,0:27:36.25,0:27:40.05,Default,,0000,0000,0000,,- 睡得不错吧  - 嗯！像婴儿一样{\r}\N{\fs14\1c&H42CEFD&}- I trust you slept well.   - Oh! Like a baby.{\r}
+Dialogue: 0,0:27:49.50,0:27:51.55,Default,,0000,0000,0000,,昨晚你有没有听见 呃…{\r}\N{\fs14\1c&H42CEFD&}Hey, last night, did you happen to hear the, uh...{\r}
+Dialogue: 0,0:27:52.05,0:27:55.55,Default,,0000,0000,0000,,- 哦 是啊 去看看  - 好{\r}\N{\fs14\1c&H42CEFD&}- Oh, yeah. Let's see.   - Yeah.{\r}
+Dialogue: 0,0:28:03.03,0:28:07.05,Default,,0000,0000,0000,,- 跑到哪儿去了？  - 不知道 也许夹子自己合上了{\r}\N{\fs14\1c&H42CEFD&}- Well, where'd he go?   - I don't know. Maybe it snapped by itself.{\r}
+Dialogue: 0,0:28:08.75,0:28:10.05,Default,,0000,0000,0000,,难以置信{\r}\N{\fs14\1c&H42CEFD&}I don't believe it.{\r}
+Dialogue: 0,0:28:11.35,0:28:16.65,Default,,0000,0000,0000,,它合上了老鼠夹 吃掉橄榄 留下橄榄核来嘲笑我们{\r}\N{\fs14\1c&H42CEFD&}He snapped the trap, ate the olive, and left the pit just to mock us.{\r}
+Dialogue: 0,0:28:17.45,0:28:19.95,Default,,0000,0000,0000,,我看你把它想得太高明了{\r}\N{\fs14\1c&H42CEFD&}I think you're giving him a little too much credit.{\r}
+Dialogue: 0,0:28:20.92,0:28:24.45,Default,,0000,0000,0000,,老鼠不嘲笑人 它们不懂幽默或讽刺{\r}\N{\fs14\1c&H42CEFD&}Mice don't mock. They don't have a sense of humor or irony.{\r}
+Dialogue: 0,0:28:24.85,0:28:28.25,Default,,0000,0000,0000,,它不会穿着便服 坐在洞里 品着白兰地{\r}\N{\fs14\1c&H42CEFD&}He's not sitting in his hole in a smoking jacket sipping cognac,{\r}
+Dialogue: 0,0:28:28.45,0:28:30.90,Default,,0000,0000,0000,,咯咯地笑着说“我留下了核”{\r}\N{\fs14\1c&H42CEFD&}and giggling to himself, "I left the pit."{\r}
+Dialogue: 0,0:28:31.15,0:28:34.45,Default,,0000,0000,0000,,夹子是自己合上的 橄榄弹出来被老鼠吃了{\r}\N{\fs14\1c&H42CEFD&}The trap snapped itself, the olive flew off, and he ate it.{\r}
+Dialogue: 0,0:28:34.55,0:28:36.90,Default,,0000,0000,0000,,就这么简单 如果它知道我们来了{\r}\N{\fs14\1c&H42CEFD&}It's that simple. But now that he knows we're here,{\r}
+Dialogue: 0,0:28:37.00,0:28:38.90,Default,,0000,0000,0000,,肯定躲到一英里以外去了{\r}\N{\fs14\1c&H42CEFD&}he won't come within a mile of us.{\r}
+Dialogue: 0,0:28:39.00,0:28:40.85,Default,,0000,0000,0000,,我们以后不会再看到那…{\r}\N{\fs14\1c&H42CEFD&}I don't think we'll be seeing any more of that...{\r}
+Dialogue: 0,0:28:41.45,0:28:42.25,Default,,0000,0000,0000,,老鼠！{\r}\N{\fs14\1c&H42CEFD&}Mouse!{\r}
+Dialogue: 0,0:28:44.65,0:28:47.07,Default,,0000,0000,0000,,- 啊哈！噢！  - 哎哟！{\r}\N{\fs14\1c&H42CEFD&}- Aha! Ow!   - Ah!{\r}
+Dialogue: 0,0:28:48.25,0:28:50.05,Default,,0000,0000,0000,,你要干嘛？你个白痴{\r}\N{\fs14\1c&H42CEFD&}What are you doing, ya stupid nitwit?{\r}
+Dialogue: 0,0:28:54.10,0:28:56.21,Default,,0000,0000,0000,,快给我！别让它跑了！{\r}\N{\fs14\1c&H42CEFD&}Don't! Give me that! Don't let him get away!{\r}
+Dialogue: 0,0:28:59.21,0:29:00.05,Default,,0000,0000,0000,,吔！{\r}\N{\fs14\1c&H42CEFD&}Yeah!{\r}
+Dialogue: 0,0:29:22.30,0:29:23.25,Default,,0000,0000,0000,,白痴！{\r}\N{\fs14\1c&H42CEFD&}Idiot!{\r}
+Dialogue: 0,0:29:25.15,0:29:27.05,Default,,0000,0000,0000,,你想要我的命吗？{\r}\N{\fs14\1c&H42CEFD&}Are you trying to kill me?{\r}
+Dialogue: 0,0:29:29.24,0:29:30.25,Default,,0000,0000,0000,,啊{\r}\N{\fs14\1c&H42CEFD&}Ah,{\r}
+Dialogue: 0,0:29:33.85,0:29:35.45,Default,,0000,0000,0000,,啊 那只老鼠！{\r}\N{\fs14\1c&H42CEFD&}the mouse!{\r}
+Dialogue: 0,0:29:35.65,0:29:37.15,Default,,0000,0000,0000,,你起来 让我看看！{\r}\N{\fs14\1c&H42CEFD&}Let me see. Let me see!{\r}
+Dialogue: 0,0:29:37.25,0:29:38.45,Default,,0000,0000,0000,,看着它了吗？{\r}\N{\fs14\1c&H42CEFD&}Can you see him?{\r}
+Dialogue: 0,0:29:38.90,0:29:40.25,Default,,0000,0000,0000,,把干酪拿过来{\r}\N{\fs14\1c&H42CEFD&}Get me my Gouda.{\r}
+Dialogue: 0,0:29:44.30,0:29:48.30,Default,,0000,0000,0000,,- 小心 小心！  - 别 别碰我 小心夹子{\r}\N{\fs14\1c&H42CEFD&}- Careful, careful!   - Don't. Don't touch me. You'll snap it.{\r}
+Dialogue: 0,0:29:48.35,0:29:50.95,Default,,0000,0000,0000,,- 你这么放不对  - 别动 我要集中精神 行吗？{\r}\N{\fs14\1c&H42CEFD&}- You're not doin' it right.   - Please, let me concentrate, will you?{\r}
+Dialogue: 0,0:29:51.05,0:29:53.75,Default,,0000,0000,0000,,- 小心点儿放 别触动机关  - 我已经非常小心了{\r}\N{\fs14\1c&H42CEFD&}- Put it on carefully.   - I'm putting it on carefully.{\r}
+Dialogue: 0,0:29:53.95,0:29:56.05,Default,,0000,0000,0000,,我没有… 噢 冷静 这是干酪{\r}\N{\fs14\1c&H42CEFD&}I'm not... Oh, relax. It's cheese.{\r}
+Dialogue: 0,0:29:58.25,0:29:59.69,Default,,0000,0000,0000,,祝你胃口好{\r}\N{\fs14\1c&H42CEFD&}Bon appetit.{\r}
+Dialogue: 0,0:30:02.65,0:30:04.85,Default,,0000,0000,0000,,这就行了 嗯？{\r}\N{\fs14\1c&H42CEFD&}That takes care of that. Huh?{\r}
+Dialogue: 0,0:30:26.90,0:30:27.95,Default,,0000,0000,0000,,嘿！{\r}\N{\fs14\1c&H42CEFD&}Hey!{\r}
+Dialogue: 0,0:30:29.55,0:30:31.85,Default,,0000,0000,0000,,嘿！是你扔的吗？{\r}\N{\fs14\1c&H42CEFD&}Hey! What are you doin'?{\r}
+Dialogue: 0,0:32:50.65,0:32:52.40,Default,,0000,0000,0000,,拉尔斯！过来帮个忙{\r}\N{\fs14\1c&H42CEFD&}Lars! Gimme a hand with this.{\r}
+Dialogue: 0,0:32:58.45,0:33:00.83,Default,,0000,0000,0000,,这浴缸和房子的风格般配吗？{\r}\N{\fs14\1c&H42CEFD&}Are you sure this tub fits in with the rest of the house?{\r}
+Dialogue: 0,0:33:00.91,0:33:03.65,Default,,0000,0000,0000,,这是“按摩浴缸” 拉尔斯 “按摩”浴缸啊{\r}\N{\fs14\1c&H42CEFD&}Jacuzzi tub, Lars. It's a Jacuzzi tub.{\r}
+Dialogue: 0,0:33:03.83,0:33:06.65,Default,,0000,0000,0000,,而这不是一般的房子 这是拉鲁{\r}\N{\fs14\1c&H42CEFD&}And this isn't just a house. It's a LaRue.{\r}
+Dialogue: 0,0:33:06.85,0:33:08.25,Default,,0000,0000,0000,,二者当然很般配{\r}\N{\fs14\1c&H42CEFD&}Of course it fits in with the decor.{\r}
+Dialogue: 0,0:33:08.85,0:33:11.65,Default,,0000,0000,0000,,- 奢华是永恒的  - 浴缸多少钱啊？厄尼{\r}\N{\fs14\1c&H42CEFD&}- Luxury is timeless.   - How much, Ernie?{\r}
+Dialogue: 0,0:33:12.25,0:33:14.85,Default,,0000,0000,0000,,打完折 一千两百块{\r}\N{\fs14\1c&H42CEFD&}It was a steal at $1,200.{\r}
+Dialogue: 0,0:33:15.25,0:33:16.85,Default,,0000,0000,0000,,一千两百块？{\r}\N{\fs14\1c&H42CEFD&}Twelve hundred dollars?{\r}
+Dialogue: 0,0:33:17.25,0:33:19.45,Default,,0000,0000,0000,,你把所有的钱都拿去买浴缸了！{\r}\N{\fs14\1c&H42CEFD&}You spent our last money on a tub!{\r}
+Dialogue: 0,0:33:19.65,0:33:21.25,Default,,0000,0000,0000,,是“按摩”浴缸！{\r}\N{\fs14\1c&H42CEFD&}A Jacuzzi tub!{\r}
+Dialogue: 0,0:33:21.35,0:33:23.45,Default,,0000,0000,0000,,想挣钱就得先投入{\r}\N{\fs14\1c&H42CEFD&}You have to spend money to make money.{\r}
+Dialogue: 0,0:33:23.85,0:33:26.70,Default,,0000,0000,0000,,他们送了一个纸板美人儿 作为赠品{\r}\N{\fs14\1c&H42CEFD&}And they threw in the cardboard lady just to sweeten the deal.{\r}
+Dialogue: 0,0:34:06.05,0:34:06.85,Default,,0000,0000,0000,,啊{\r}\N{\fs14\1c&H42CEFD&}Oh,{\r}
+Dialogue: 0,0:34:08.10,0:34:08.90,Default,,0000,0000,0000,,还好…{\r}\N{\fs14\1c&H42CEFD&}Well...{\r}
+Dialogue: 0,0:34:18.05,0:34:20.45,Default,,0000,0000,0000,,你不觉得有点儿太多了吗？{\r}\N{\fs14\1c&H42CEFD&}Don't you think this is a little much?{\r}
+Dialogue: 0,0:34:21.85,0:34:23.65,Default,,0000,0000,0000,,永远不要低估对手{\r}\N{\fs14\1c&H42CEFD&}Never underestimate your opponent.{\r}
+Dialogue: 0,0:34:24.85,0:34:29.85,Default,,0000,0000,0000,,你看 这家伙有办法 合上老鼠夹偷东西吃{\r}\N{\fs14\1c&H42CEFD&}Let's say he has mastered a way to empty a mousetrap without getting caught.{\r}
+Dialogue: 0,0:34:30.65,0:34:32.65,Default,,0000,0000,0000,,现在只要它触发这个{\r}\N{\fs14\1c&H42CEFD&}If he snaps one of these babies,{\r}
+Dialogue: 0,0:34:33.05,0:34:36.05,Default,,0000,0000,0000,,就会引起连锁反应 它会乱窜{\r}\N{\fs14\1c&H42CEFD&}a chain reaction will start snapping them all. He'll panic,{\r}
+Dialogue: 0,0:34:36.35,0:34:40.05,Default,,0000,0000,0000,,从概率上说 至少有一个夹子能夹住它{\r}\N{\fs14\1c&H42CEFD&}and the law of averages says one of them has to nab him.{\r}
+Dialogue: 0,0:34:42.95,0:34:43.65,Default,,0000,0000,0000,,不赖啊{\r}\N{\fs14\1c&H42CEFD&}Not bad.{\r}
+Dialogue: 0,0:34:44.55,0:34:47.75,Default,,0000,0000,0000,,是的 你看 我喜欢多动动脑子{\r}\N{\fs14\1c&H42CEFD&}Yes. Well, I like to use both sides of my brain.{\r}
+Dialogue: 0,0:34:47.90,0:34:49.44,Default,,0000,0000,0000,,来吧 去睡觉{\r}\N{\fs14\1c&H42CEFD&}Come on. Let's hit the sack.{\r}
+Dialogue: 0,0:34:50.60,0:34:51.80,Default,,0000,0000,0000,,噢 好{\r}\N{\fs14\1c&H42CEFD&}All right.{\r}
+Dialogue: 0,0:35:27.10,0:35:28.95,Default,,0000,0000,0000,,- 想出办法没有？  - 闭嘴{\r}\N{\fs14\1c&H42CEFD&}- Have you figured it out yet?   - Shut up.{\r}
+Dialogue: 0,0:35:29.35,0:35:32.05,Default,,0000,0000,0000,,我正在想 正在想！{\r}\N{\fs14\1c&H42CEFD&}I'm thinking. I'm thinking!{\r}
+Dialogue: 0,0:35:45.55,0:35:47.65,Default,,0000,0000,0000,,厄尼 看！{\r}\N{\fs14\1c&H42CEFD&}Ernie. Ernie!{\r}
+Dialogue: 0,0:35:52.42,0:35:57.21,Default,,0000,0000,0000,,千万不要动 它死定了{\r}\N{\fs14\1c&H42CEFD&}Keep perfectly still. This is it.{\r}
+Dialogue: 0,0:36:16.25,0:36:18.50,Default,,0000,0000,0000,,- 它要干什么？  - 不知道{\r}\N{\fs14\1c&H42CEFD&}- What's he doing?   - I dunno.{\r}
+Dialogue: 0,0:36:31.15,0:36:32.25,Default,,0000,0000,0000,,挺厉害{\r}\N{\fs14\1c&H42CEFD&}That was good.{\r}
+Dialogue: 0,0:36:54.10,0:36:56.85,Default,,0000,0000,0000,,嘘！它要去吃樱桃！{\r}\N{\fs14\1c&H42CEFD&}Shh! He's goin' for the cherries!{\r}
+Dialogue: 0,0:36:59.94,0:37:01.65,Default,,0000,0000,0000,,你不是说它爱吃干酪吗？{\r}\N{\fs14\1c&H42CEFD&}I thought you said mice like Gouda.{\r}
+Dialogue: 0,0:37:01.70,0:37:05.07,Default,,0000,0000,0000,,这是早上！干酪太腻 它需要水果来提神{\r}\N{\fs14\1c&H42CEFD&}Not in the morning! Cheese tires them out. They need fruit for energy.{\r}
+Dialogue: 0,0:37:24.17,0:37:27.76,Default,,0000,0000,0000,,- 啊！  - 噢 不！{\r}\N{\fs14\1c&H42CEFD&}- Ah!   - Oh, no!{\r}
+Dialogue: 0,0:37:57.25,0:37:59.00,Default,,0000,0000,0000,,往那儿跑了！{\r}\N{\fs14\1c&H42CEFD&}There he goes!{\r}
+Dialogue: 0,0:38:02.25,0:38:04.84,Default,,0000,0000,0000,,- 通电！  - 好了！{\r}\N{\fs14\1c&H42CEFD&}- Juice!   - Got it!{\r}
+Dialogue: 0,0:38:09.45,0:38:11.05,Default,,0000,0000,0000,,游戏结束了！{\r}\N{\fs14\1c&H42CEFD&}This game is over!{\r}
+Dialogue: 0,0:38:26.95,0:38:28.65,Default,,0000,0000,0000,,- 该管用了！  - 是啊{\r}\N{\fs14\1c&H42CEFD&}- I think it's working!   - Yeah.{\r}
+Dialogue: 0,0:38:34.10,0:38:37.05,Default,,0000,0000,0000,,哇啊！嗯！吸到东西了{\r}\N{\fs14\1c&H42CEFD&}Whoa! Uh! I felt something.{\r}
+Dialogue: 0,0:38:39.25,0:38:40.65,Default,,0000,0000,0000,,继续吸！{\r}\N{\fs14\1c&H42CEFD&}Keep sucking!{\r}
+Dialogue: 0,0:38:48.25,0:38:50.65,Default,,0000,0000,0000,,见鬼 老鼠可真臭！{\r}\N{\fs14\1c&H42CEFD&}Goddamn, that mouse stinks!{\r}
+Dialogue: 0,0:38:51.65,0:38:53.85,Default,,0000,0000,0000,,对 死耗子就是这个味儿{\r}\N{\fs14\1c&H42CEFD&}Yeah. Dead animals always do.{\r}
+Dialogue: 0,0:39:06.65,0:39:07.85,Default,,0000,0000,0000,,继续吸！厄尼{\r}\N{\fs14\1c&H42CEFD&}Keep sucking, Ernie!{\r}
+Dialogue: 0,0:39:10.05,0:39:11.65,Default,,0000,0000,0000,,噢 是的 这下它完蛋了！{\r}\N{\fs14\1c&H42CEFD&}Oh, yeah, this'll get him!{\r}
+Dialogue: 0,0:39:28.35,0:39:30.25,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs12\bord3\shad0\fsp1\pos(160,26)\fscx110\fscy90\1c&H000055&\3c&H7B837C&\b0}终止抵押房产赎回权的通知
+Dialogue: 0,0:39:34.65,0:39:35.95,Default,,0000,0000,0000,,你这是什么东西？{\r}\N{\fs14\1c&H42CEFD&}What's this?{\r}
+Dialogue: 0,0:39:36.45,0:39:38.20,Default,,0000,0000,0000,,你没有按期还款{\r}\N{\fs14\1c&H42CEFD&}We're foreclosing on your house.{\r}
+Dialogue: 0,0:39:38.35,0:39:40.30,Default,,0000,0000,0000,,所以银行要没收房产{\r}\N{\fs14\1c&H42CEFD&}You've quit paying your mortgage.{\r}
+Dialogue: 0,0:39:40.35,0:39:44.90,Default,,0000,0000,0000,,噢 等等 这一定是个误会 房款早就付清了{\r}\N{\fs14\1c&H42CEFD&}Oh, wait a minute. I think there's been some mistake. This house is paid for.{\r}
+Dialogue: 0,0:39:44.95,0:39:47.53,Default,,0000,0000,0000,,付清了 但你又抵押借款了{\r}\N{\fs14\1c&H42CEFD&}No, it was paid for, but you borrowed against it.{\r}
+Dialogue: 0,0:39:47.60,0:39:51.05,Default,,0000,0000,0000,,不偿还一千二百美元借款 房子就没收{\r}\N{\fs14\1c&H42CEFD&}If you don't pay the $1,200 overdue, we repossess it.{\r}
+Dialogue: 0,0:39:51.45,0:39:54.99,Default,,0000,0000,0000,,- 一千二百美元？  - 呃 哪天还钱？{\r}\N{\fs14\1c&H42CEFD&}- Twelve hundred dollars?   - Well, how long do we have?{\r}
+Dialogue: 0,0:39:56.41,0:39:57.85,Default,,0000,0000,0000,,一周之内{\r}\N{\fs14\1c&H42CEFD&}One week from, uh,{\r}
+Dialogue: 0,0:39:59.15,0:40:03.45,Default,,0000,0000,0000,,- 从五天前算起  - 那… 呃 那 那就剩两天了！{\r}\N{\fs14\1c&H42CEFD&}- five days ago.   - But, uh, that's two days!{\r}
+Dialogue: 0,0:40:03.90,0:40:06.70,Default,,0000,0000,0000,,我们现在没有时间和精力应付这些小事儿{\r}\N{\fs14\1c&H42CEFD&}We don't have the time or energy to deal with these petty problems now.{\r}
+Dialogue: 0,0:40:06.85,0:40:09.05,Default,,0000,0000,0000,,我们正在给房子改头换面{\r}\N{\fs14\1c&H42CEFD&}We're in the midst of an extensive renovation.{\r}
+Dialogue: 0,0:40:10.25,0:40:11.40,Default,,0000,0000,0000,,看来你们干得不错{\r}\N{\fs14\1c&H42CEFD&}Looks like you're off to a great start.{\r}
+Dialogue: 0,0:40:13.95,0:40:15.80,Default,,0000,0000,0000,,你去向老板预支一点儿工资吧{\r}\N{\fs14\1c&H42CEFD&}You could ask your boss at Rimpy's for an advance.{\r}
+Dialogue: 0,0:40:16.00,0:40:17.65,Default,,0000,0000,0000,,等拍卖之后就还给他{\r}\N{\fs14\1c&H42CEFD&}You can pay him back after the auction.{\r}
+Dialogue: 0,0:40:17.75,0:40:20.15,Default,,0000,0000,0000,,你不能过几个星期再给工人发薪水吗？{\r}\N{\fs14\1c&H42CEFD&}Couldn't you ask your workers to forfeit their salaries for a few weeks?{\r}
+Dialogue: 0,0:40:20.35,0:40:21.55,Default,,0000,0000,0000,,你是老板嘛{\r}\N{\fs14\1c&H42CEFD&}You are the boss.{\r}
+Dialogue: 0,0:40:22.15,0:40:24.10,Default,,0000,0000,0000,,要不是你把钱都拿去买按摩浴缸{\r}\N{\fs14\1c&H42CEFD&}If you hadn't spent all our money on that tub,{\r}
+Dialogue: 0,0:40:24.30,0:40:26.05,Default,,0000,0000,0000,,我们能够还清贷款的{\r}\N{\fs14\1c&H42CEFD&}we might be able to pay the mortgage.{\r}
+Dialogue: 0,0:40:26.15,0:40:27.85,Default,,0000,0000,0000,,现在抱怨也于事无补{\r}\N{\fs14\1c&H42CEFD&}It doesn't help to start crying now.{\r}
+Dialogue: 0,0:40:28.05,0:40:29.45,Default,,0000,0000,0000,,不  不！{\r}\N{\fs14\1c&H42CEFD&}No, no!{\r}
+Dialogue: 0,0:40:29.50,0:40:32.15,Default,,0000,0000,0000,,猫猫！我的猫猫！{\r}\N{\fs14\1c&H42CEFD&}No, Fluffy! No!{\r}
+Dialogue: 0,0:40:32.35,0:40:35.45,Default,,0000,0000,0000,,不！不！{\r}\N{\fs14\1c&H42CEFD&}No! I want my kitty!{\r}
+Dialogue: 0,0:40:35.80,0:40:39.90,Default,,0000,0000,0000,,不 不！{\r}\N{\fs14\1c&H42CEFD&}No, no, no!{\r}
+Dialogue: 0,0:40:54.05,0:40:55.65,Default,,0000,0000,0000,,啊 这只真可爱{\r}\N{\fs14\1c&H42CEFD&}That one's cute.{\r}
+Dialogue: 0,0:40:56.10,0:40:58.65,Default,,0000,0000,0000,,不行 它没有杀手的本能{\r}\N{\fs14\1c&H42CEFD&}No. He doesn't have that killer instinct.{\r}
+Dialogue: 0,0:41:16.45,0:41:20.30,Default,,0000,0000,0000,,早上好 先生们 我叫莫里 需要我帮忙吗？{\r}\N{\fs14\1c&H42CEFD&}Morning, gentlemen. I'm Maury. Anything I can help you with?{\r}
+Dialogue: 0,0:41:20.40,0:41:22.95,Default,,0000,0000,0000,,呃 嗨 莫里 我们想养一只猫{\r}\N{\fs14\1c&H42CEFD&}Uh, hi, Maury. W-We need a cat.{\r}
+Dialogue: 0,0:41:24.45,0:41:26.25,Default,,0000,0000,0000,,找好想要的{\r}\N{\fs14\1c&H42CEFD&}Find the one you want,{\r}
+Dialogue: 0,0:41:26.35,0:41:28.45,Default,,0000,0000,0000,,我亲自给它做绝育手术{\r}\N{\fs14\1c&H42CEFD&}and I'll spay or neuter it myself.{\r}
+Dialogue: 0,0:41:29.25,0:41:31.45,Default,,0000,0000,0000,,这些都是小猫{\r}\N{\fs14\1c&H42CEFD&}Well, these are all kittens.{\r}
+Dialogue: 0,0:41:32.10,0:41:35.10,Default,,0000,0000,0000,,我们想要只大的 经验丰富的{\r}\N{\fs14\1c&H42CEFD&}We were hoping for an older cat. One with experience.{\r}
+Dialogue: 0,0:41:35.25,0:41:38.47,Default,,0000,0000,0000,,你们想要的真不多见 一般人都喜欢小猫{\r}\N{\fs14\1c&H42CEFD&}That's a switch. Most people like the cute little ones.{\r}
+Dialogue: 0,0:41:38.50,0:41:40.50,Default,,0000,0000,0000,,- 要什么经验？  - 抓老鼠{\r}\N{\fs14\1c&H42CEFD&}- Experience with what?   - Mouse hunting.{\r}
+Dialogue: 0,0:41:40.60,0:41:41.80,Default,,0000,0000,0000,,所有的猫都会抓老鼠{\r}\N{\fs14\1c&H42CEFD&}Oh, all cats are good mousers.{\r}
+Dialogue: 0,0:41:41.85,0:41:42.90,Default,,0000,0000,0000,,呃 对 但问题是{\r}\N{\fs14\1c&H42CEFD&}Yes, but you see,{\r}
+Dialogue: 0,0:41:42.95,0:41:46.80,Default,,0000,0000,0000,,我家有好多好多相扑选手级别的特大号老鼠{\r}\N{\fs14\1c&H42CEFD&}we have huge rats the size of sumo wrestlers, and lots of them.{\r}
+Dialogue: 0,0:41:46.95,0:41:50.85,Default,,0000,0000,0000,,所以我们需要一只凶猛的猫 有精神病史的最好{\r}\N{\fs14\1c&H42CEFD&}So, we really need a ferocious feline, preferably with a history of mental illness.{\r}
+Dialogue: 0,0:41:51.25,0:41:53.45,Default,,0000,0000,0000,,我们要… 最凶残的{\r}\N{\fs14\1c&H42CEFD&}I'm talkin'...one mean pussy.{\r}
+Dialogue: 0,0:41:53.60,0:41:56.70,Default,,0000,0000,0000,,对！恶毒的猫 不招人痛的{\r}\N{\fs14\1c&H42CEFD&}Yeah! A vicious cat, difficult to love.{\r}
+Dialogue: 0,0:41:56.90,0:41:59.65,Default,,0000,0000,0000,,你的笼子里面有这种猫吗？{\r}\N{\fs14\1c&H42CEFD&}Do you have any of those knocking around your cages?{\r}
+Dialogue: 0,0:41:59.75,0:42:03.75,Default,,0000,0000,0000,,真是太巧了 有一只送不出去的猫{\r}\N{\fs14\1c&H42CEFD&}Funny you should ask. I had all but given up on anyone wanting him.{\r}
+Dialogue: 0,0:42:03.95,0:42:07.05,Default,,0000,0000,0000,,我们正要第二次给它下毒{\r}\N{\fs14\1c&H42CEFD&}We were about to gas him again.{\r}
+Dialogue: 0,0:42:09.20,0:42:10.25,Default,,0000,0000,0000,,- 第二次？  - 第二次？{\r}\N{\fs14\1c&H42CEFD&}- Again?   - Again?{\r}
+Dialogue: 0,0:42:11.25,0:42:14.45,Default,,0000,0000,0000,,它大半辈子都被关在这箱子里{\r}\N{\fs14\1c&H42CEFD&}He's spent most of his whole life in that box, I expect.{\r}
+Dialogue: 0,0:42:15.60,0:42:16.90,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs20\bord4\shad0\fsp8\pos(220,218)\fscx120\fscy100\frz352\1c&H1A1412&\3c&H455051&}哥斯拉
+Dialogue: 0,0:42:16.45,0:42:17.45,Default,,0000,0000,0000,,“哥斯拉”？{\r}\N{\fs14\1c&H42CEFD&}"Catzilla"?{\r}
+Dialogue: 0,0:42:17.50,0:42:19.35,Default,,0000,0000,0000,,这是清洁工给它取的名字{\r}\N{\fs14\1c&H42CEFD&}The guys who clean up call him that.{\r}
+Dialogue: 0,0:42:19.45,0:42:21.65,Default,,0000,0000,0000,,当然 你们可以随便改{\r}\N{\fs14\1c&H42CEFD&}But, uh, you can call him anything you want.{\r}
+Dialogue: 0,0:42:22.05,0:42:24.50,Default,,0000,0000,0000,,我觉得 它长得像“毛球”{\r}\N{\fs14\1c&H42CEFD&}I'd say he looks like a "Fluffy."{\r}
+Dialogue: 0,0:42:28.45,0:42:31.75,Default,,0000,0000,0000,,哦 可怜的哥斯拉{\r}\N{\fs14\1c&H42CEFD&}Ah, poor little Catzilla.{\r}
+Dialogue: 0,0:42:32.70,0:42:36.25,Default,,0000,0000,0000,,你想要个家对吗？你想要离开这里{\r}\N{\fs14\1c&H42CEFD&}You want a home, don't you? You wanna get out of here.{\r}
+Dialogue: 0,0:42:36.78,0:42:40.30,Default,,0000,0000,0000,,那你就得好好地杀 杀 杀老鼠{\r}\N{\fs14\1c&H42CEFD&}Well, you're gonna have to kill, kill, kill for it.{\r}
+Dialogue: 0,0:42:40.35,0:42:41.99,Default,,0000,0000,0000,,你是笨猫 对吗？{\r}\N{\fs14\1c&H42CEFD&}You're a stupid cat, aren't you?{\r}
+Dialogue: 0,0:42:42.08,0:42:45.45,Default,,0000,0000,0000,,嘿 嘿 哦 你长得很难看！{\r}\N{\fs14\1c&H42CEFD&}Yes, you are. And you're ugly. Extremely ugly!{\r}
+Dialogue: 0,0:42:50.55,0:42:55.25,Default,,0000,0000,0000,,- 噢！你这个小混蛋  - 我们要了{\r}\N{\fs14\1c&H42CEFD&}- Oh! Oh, you little bastard.   - We'll take him.{\r}
+Dialogue: 0,0:43:00.00,0:43:00.85,Default,,0000,0000,0000,,来 啊{\r}\N{\fs14\1c&H42CEFD&}Here, boy.{\r}
+Dialogue: 0,0:43:14.15,0:43:16.11,Default,,0000,0000,0000,,噢 肯定是闻到气味儿了{\r}\N{\fs14\1c&H42CEFD&}Ooh...He's got the scent now.{\r}
+Dialogue: 0,0:43:16.15,0:43:18.11,Default,,0000,0000,0000,,对 抓老鼠{\r}\N{\fs14\1c&H42CEFD&}Yeah, uh, go get'im, boy.{\r}
+Dialogue: 0,0:43:21.95,0:43:23.24,Default,,0000,0000,0000,,慢点儿 慢点儿 别冲动！{\r}\N{\fs14\1c&H42CEFD&}Oh, easy, easy, easy, easy!{\r}
+Dialogue: 0,0:43:31.10,0:43:34.45,Default,,0000,0000,0000,,噢 我几乎要为老鼠难过了{\r}\N{\fs14\1c&H42CEFD&}Wow. I almost feel sorry for the little fella.{\r}
+Dialogue: 0,0:43:35.55,0:43:37.05,Default,,0000,0000,0000,,- 几乎！  - 几乎！{\r}\N{\fs14\1c&H42CEFD&}- Almost!   - Almost!{\r}
+Dialogue: 0,0:44:46.05,0:44:48.15,Default,,0000,0000,0000,,现在不用担心老鼠的问题了…{\r}\N{\fs14\1c&H42CEFD&}It's time to stop worrying about that mouse...{\r}
+Dialogue: 0,0:44:48.50,0:44:50.85,Default,,0000,0000,0000,,想想去哪儿找一千两百块钱吧{\r}\N{\fs14\1c&H42CEFD&}and start thinking about how we're going to locate $1,200.{\r}
+Dialogue: 0,0:44:51.05,0:44:52.65,Default,,0000,0000,0000,,别担心 厄尼{\r}\N{\fs14\1c&H42CEFD&}Don't worry, Ernie.{\r}
+Dialogue: 0,0:44:54.15,0:44:55.85,Default,,0000,0000,0000,,工人们会帮我们的{\r}\N{\fs14\1c&H42CEFD&}The workers will help us out.{\r}
+Dialogue: 0,0:44:57.25,0:44:59.85,Default,,0000,0000,0000,,事实上 我们连一毛钱都没有{\r}\N{\fs14\1c&H42CEFD&}You see, the truth is, we don't actually have any money.{\r}
+Dialogue: 0,0:45:06.10,0:45:09.05,Default,,0000,0000,0000,,所以 我们不得不{\r}\N{\fs14\1c&H42CEFD&}We may have to{\r}
+Dialogue: 0,0:45:10.00,0:45:12.45,Default,,0000,0000,0000,,晚一两个月再给大家发工资{\r}\N{\fs14\1c&H42CEFD&}defer your next paycheck or-or two.{\r}
+Dialogue: 0,0:45:13.35,0:45:16.65,Default,,0000,0000,0000,,我和我的哥哥要偿还房子的抵押款{\r}\N{\fs14\1c&H42CEFD&}So my brother and I can pay the mortgage on the house.{\r}
+Dialogue: 0,0:45:17.15,0:45:19.25,Default,,0000,0000,0000,,那是拉鲁的作品！{\r}\N{\fs14\1c&H42CEFD&}It's the missing LaRue!{\r}
+Dialogue: 0,0:45:20.65,0:45:22.65,Default,,0000,0000,0000,,不 请大家不要这样{\r}\N{\fs14\1c&H42CEFD&}I mean, there's no need for violence, you know.{\r}
+Dialogue: 0,0:45:25.25,0:45:27.25,Default,,0000,0000,0000,,把东西放下 哇噢！{\r}\N{\fs14\1c&H42CEFD&}Put that thing down. Whoa!{\r}
+Dialogue: 0,0:45:26.45,0:45:28.15,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs12\bord0\shad0\fsp1\pos(176,90)\fscx110\fscy90\frz9\1c&H111A18&\b1}泽普克财团 业务代表
+Dialogue: 0,0:45:34.86,0:45:37.35,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs16\bord0\shad0\fsp1\pos(168,116)\fscx110\fscy90\frz9.5\1c&H00040A&\b1}…一千万现金收购…
+Dialogue: 0,0:45:48.10,0:45:49.10,Default,,0000,0000,0000,,厄尼！{\r}\N{\fs14\1c&H42CEFD&}Ernie!{\r}
+Dialogue: 0,0:45:51.01,0:45:53.35,Default,,0000,0000,0000,,- 出什么事了？  - 那些工人…{\r}\N{\fs14\1c&H42CEFD&}- What's the matter?   - Well, the, uh, the workers.{\r}
+Dialogue: 0,0:45:53.55,0:45:56.30,Default,,0000,0000,0000,,他们的反应不像我预想的那么积极{\r}\N{\fs14\1c&H42CEFD&}They didn't react as positively as I had hoped.{\r}
+Dialogue: 0,0:45:59.65,0:46:02.85,Default,,0000,0000,0000,,是吗？呃 你要干嘛？{\r}\N{\fs14\1c&H42CEFD&}No? Uh, what are you doing?{\r}
+Dialogue: 0,0:46:03.15,0:46:04.90,Default,,0000,0000,0000,,你能从窗户钻出去吗？{\r}\N{\fs14\1c&H42CEFD&}Uh, you could fit through this window, right?{\r}
+Dialogue: 0,0:46:05.00,0:46:05.70,Default,,0000,0000,0000,,什么？{\r}\N{\fs14\1c&H42CEFD&}What?{\r}
+Dialogue: 0,0:46:05.75,0:46:07.30,Default,,0000,0000,0000,,哦 呃 应该可以{\r}\N{\fs14\1c&H42CEFD&}Wh... I guess so.{\r}
+Dialogue: 0,0:46:07.35,0:46:08.25,Default,,0000,0000,0000,,很好{\r}\N{\fs14\1c&H42CEFD&}Come on.{\r}
+Dialogue: 0,0:46:09.45,0:46:10.25,Default,,0000,0000,0000,,开门！{\r}\N{\fs14\1c&H42CEFD&}Open the door!{\r}
+Dialogue: 0,0:46:13.10,0:46:13.85,Default,,0000,0000,0000,,开门！{\r}\N{\fs14\1c&H42CEFD&}Open the door!{\r}
+Dialogue: 0,0:46:14.45,0:46:17.20,Default,,0000,0000,0000,,噢 可是 拉尔斯 这是我们最后的办法！{\r}\N{\fs14\1c&H42CEFD&}Oh, but, Lars, that was our last resort!{\r}
+Dialogue: 0,0:46:17.25,0:46:19.33,Default,,0000,0000,0000,,我们只能去别处弄钱了{\r}\N{\fs14\1c&H42CEFD&}Well, we're gonna have to find the money someplace else.{\r}
+Dialogue: 0,0:46:23.35,0:46:24.55,Default,,0000,0000,0000,,该死的！{\r}\N{\fs14\1c&H42CEFD&}Damn it!{\r}
+Dialogue: 0,0:46:25.85,0:46:28.65,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs26\bord0\shad1\fsp10\pos(206,120)\fscx110\fscy90\frz8.5\1c&H292D31&\b1}收购合同
+Dialogue: 0,0:46:25.85,0:46:28.65,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs22\bord0\shad1\fsp10\pos(226,165)\fscx120\fscy80\frz9.5\1c&H1A2024&\b1}拟议收购：
+Dialogue: 0,0:46:25.85,0:46:28.65,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs22\bord0\shad1\fsp3\pos(223,236)\fscx120\fscy100\frz9.5\1c&H222A2C&\4c&H222A2C&\b1}布里克县 斯曼兹制绳厂
+Dialogue: 0,0:46:25.85,0:46:28.65,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs20\bord0\shad0\fsp4\pos(188,33)\fscx140\fscy100\frz8.2\1c&H222124&\b1}泽普科财团
+Dialogue: 0,0:46:26.25,0:46:28.25,Default,,0000,0000,0000,,你们这些吸血鬼！{\r}\N{\fs14\1c&H42CEFD&}You vampires!{\r}
+Dialogue: 0,0:46:37.65,0:46:40.85,Default,,0000,0000,0000,,哎呀 可惜没有人愿意买咱们的工厂{\r}\N{\fs14\1c&H42CEFD&}Gosh, it's a shame nobody's interested in buying the factory.{\r}
+Dialogue: 0,0:46:41.30,0:46:42.85,Default,,0000,0000,0000,,对 对 真可惜{\r}\N{\fs14\1c&H42CEFD&}Yeah, yeah, it's a shame.{\r}
+Dialogue: 0,0:46:43.45,0:46:45.86,Default,,0000,0000,0000,,谁会犯傻买这个玩意儿 不是吗？{\r}\N{\fs14\1c&H42CEFD&}But who'd be stupid enough to buy the factory, right?{\r}
+Dialogue: 0,0:46:45.94,0:46:48.25,Default,,0000,0000,0000,,哈哈哈 对{\r}\N{\fs14\1c&H42CEFD&}Yeah.{\r}
+Dialogue: 0,0:48:33.45,0:48:36.55,Default,,0000,0000,0000,,哦 你一定是凯撒{\r}\N{\fs14\1c&H42CEFD&}Ah, you must be Caesar.{\r}
+Dialogue: 0,0:48:36.60,0:48:39.50,Default,,0000,0000,0000,,凯撒先生 很高兴您这么快赶过来{\r}\N{\fs14\1c&H42CEFD&}Well, Mr. Caesar, uh, glad you could get here so quickly...{\r}
+Dialogue: 0,0:48:39.55,0:48:40.45,Default,,0000,0000,0000,,嘘！{\r}\N{\fs14\1c&H42CEFD&}Shh!{\r}
+Dialogue: 0,0:49:12.75,0:49:13.75,Default,,0000,0000,0000,,有老鼠{\r}\N{\fs14\1c&H42CEFD&}You have mice.{\r}
+Dialogue: 0,0:49:16.05,0:49:17.55,Default,,0000,0000,0000,,他真历害{\r}\N{\fs14\1c&H42CEFD&}He's good.{\r}
+Dialogue: 0,0:49:18.20,0:49:20.60,Default,,0000,0000,0000,,诺顿街5120号{\r}\N{\fs14\1c&H42CEFD&}5120 Nortondale.{\r}
+Dialogue: 0,0:49:21.00,0:49:23.25,Default,,0000,0000,0000,,一月四号 早晨八点整{\r}\N{\fs14\1c&H42CEFD&}January 4. 08:00 hours.{\r}
+Dialogue: 0,0:49:23.50,0:49:26.35,Default,,0000,0000,0000,,别忘了带牙膏和防水外套{\r}\N{\fs14\1c&H42CEFD&}Don't forget to get toothpaste and Saran Wrap.{\r}
+Dialogue: 0,0:49:26.50,0:49:29.70,Default,,0000,0000,0000,,我们急着出门 我只想说 这老鼠很难缠{\r}\N{\fs14\1c&H42CEFD&}We're in sort of a hurry. Uh, I just want to warn you about this mouse.{\r}
+Dialogue: 0,0:49:29.70,0:49:32.65,Default,,0000,0000,0000,,对 房子里有石棉{\r}\N{\fs14\1c&H42CEFD&}Yeah. You got asbestos, all right.{\r}
+Dialogue: 0,0:49:34.35,0:49:36.57,Default,,0000,0000,0000,,大部分都铺在天花板{\r}\N{\fs14\1c&H42CEFD&}I'll bet it's up in the ceiling, mostly.{\r}
+Dialogue: 0,0:49:38.25,0:49:42.45,Default,,0000,0000,0000,,拆除的话大概需要一到两天{\r}\N{\fs14\1c&H42CEFD&}Shouldn't take me more than a day or two to remove it.{\r}
+Dialogue: 0,0:49:43.50,0:49:45.55,Default,,0000,0000,0000,,- 他是说给老鼠听的  - 好吧{\r}\N{\fs14\1c&H42CEFD&}- He said it was for the mice.   - All right.{\r}
+Dialogue: 0,0:49:45.85,0:49:47.05,Default,,0000,0000,0000,,好 我懂了{\r}\N{\fs14\1c&H42CEFD&}Okay, then.{\r}
+Dialogue: 0,0:49:47.45,0:49:51.15,Default,,0000,0000,0000,,呃 呃 那我 那我们… 呃 上楼去吧{\r}\N{\fs14\1c&H42CEFD&}Um, uh, so, we're gonna go upstairs.{\r}
+Dialogue: 0,0:49:51.75,0:49:54.22,Default,,0000,0000,0000,,呃 对 我们全到楼上去{\r}\N{\fs14\1c&H42CEFD&}All right, well, we'll all go upstairs.{\r}
+Dialogue: 0,0:49:54.30,0:49:55.35,Default,,0000,0000,0000,,是的{\r}\N{\fs14\1c&H42CEFD&}Yeah.{\r}
+Dialogue: 0,0:49:58.05,0:50:00.10,Default,,0000,0000,0000,,- 非常好  - 是的{\r}\N{\fs14\1c&H42CEFD&}- Okay, then.   - Yeah.{\r}
+Dialogue: 0,0:50:04.95,0:50:06.00,Default,,0000,0000,0000,,你们干嘛？{\r}\N{\fs14\1c&H42CEFD&}What are you doing?{\r}
+Dialogue: 0,0:50:08.45,0:50:11.45,Default,,0000,0000,0000,,- 老鼠没在听  - 噢{\r}\N{\fs14\1c&H42CEFD&}- He's not listening anymore.   - Oh.{\r}
+Dialogue: 0,0:50:11.85,0:50:14.24,Default,,0000,0000,0000,,太好了 您真专业{\r}\N{\fs14\1c&H42CEFD&}Good. Well, you're the expert.{\r}
+Dialogue: 0,0:50:14.32,0:50:16.95,Default,,0000,0000,0000,,请您不惜一切代价干掉那只老鼠{\r}\N{\fs14\1c&H42CEFD&}I just hope you can take care of this, whatever it takes.{\r}
+Dialogue: 0,0:50:17.05,0:50:19.45,Default,,0000,0000,0000,,整个星期我们都想抓住它{\r}\N{\fs14\1c&H42CEFD&}We've been trying to catch this little menace all week.{\r}
+Dialogue: 0,0:50:20.30,0:50:22.00,Default,,0000,0000,0000,,这就是你们的问题{\r}\N{\fs14\1c&H42CEFD&}Here's your problem.{\r}
+Dialogue: 0,0:50:22.20,0:50:27.00,Default,,0000,0000,0000,,一般人不懂得除鼠的心理学常识{\r}\N{\fs14\1c&H42CEFD&}Normal people are not psychologically equipped to catch mice.{\r}
+Dialogue: 0,0:50:27.20,0:50:30.90,Default,,0000,0000,0000,,你们得进入老鼠的脑袋{\r}\N{\fs14\1c&H42CEFD&}You have to get inside their mind.{\r}
+Dialogue: 0,0:50:31.80,0:50:34.25,Default,,0000,0000,0000,,了解它的想法和需要{\r}\N{\fs14\1c&H42CEFD&}You have to know what they want... need.{\r}
+Dialogue: 0,0:50:34.90,0:50:37.65,Default,,0000,0000,0000,,像老鼠一样思维{\r}\N{\fs14\1c&H42CEFD&}You have to think like a mouse.{\r}
+Dialogue: 0,0:50:38.05,0:50:41.25,Default,,0000,0000,0000,,如果能从老鼠的视角思考…{\r}\N{\fs14\1c&H42CEFD&}If you can do that... if you can think like a mouse...{\r}
+Dialogue: 0,0:50:41.50,0:50:44.10,Default,,0000,0000,0000,,你们就能预测它的行动{\r}\N{\fs14\1c&H42CEFD&}you can anticipate their moves.{\r}
+Dialogue: 0,0:50:44.30,0:50:45.85,Default,,0000,0000,0000,,然后 砰！{\r}\N{\fs14\1c&H42CEFD&}Then, boom!{\r}
+Dialogue: 0,0:50:46.80,0:50:48.25,Default,,0000,0000,0000,,永别了 老鼠{\r}\N{\fs14\1c&H42CEFD&}Sayonara, mouse.{\r}
+Dialogue: 0,0:50:48.63,0:50:51.85,Default,,0000,0000,0000,,呃 装备不错啊…{\r}\N{\fs14\1c&H42CEFD&}Well, got some great stuff...{\r}
+Dialogue: 0,0:50:52.85,0:50:53.65,Default,,0000,0000,0000,,啊！{\r}\N{\fs14\1c&H42CEFD&}Whoa!{\r}
+Dialogue: 0,0:50:54.05,0:50:55.25,Default,,0000,0000,0000,,别碰那个！{\r}\N{\fs14\1c&H42CEFD&}Never touch that!{\r}
+Dialogue: 0,0:50:56.80,0:50:57.65,Default,,0000,0000,0000,,好！{\r}\N{\fs14\1c&H42CEFD&}All right!{\r}
+Dialogue: 0,0:50:58.80,0:50:59.80,Default,,0000,0000,0000,,那是什么？{\r}\N{\fs14\1c&H42CEFD&}What is it?{\r}
+Dialogue: 0,0:51:01.95,0:51:05.25,Default,,0000,0000,0000,,- 大炸弹  - 那是杀跳蚤的！{\r}\N{\fs14\1c&H42CEFD&}- The big one.   - It's a flea bomb!{\r}
+Dialogue: 0,0:51:05.70,0:51:07.05,Default,,0000,0000,0000,,对老鼠也管用{\r}\N{\fs14\1c&H42CEFD&}Works on mice too.{\r}
+Dialogue: 0,0:51:07.65,0:51:08.45,Default,,0000,0000,0000,,是吗？{\r}\N{\fs14\1c&H42CEFD&}Yeah?{\r}
+Dialogue: 0,0:51:08.85,0:51:11.85,Default,,0000,0000,0000,,那就好 入侵者赶紧走吧{\r}\N{\fs14\1c&H42CEFD&}Well, it better. Because we can't handle any more intrusions.{\r}
+Dialogue: 0,0:51:12.40,0:51:15.45,Default,,0000,0000,0000,,当然 这是你的想法{\r}\N{\fs14\1c&H42CEFD&}Sure. That's how you perceive it.{\r}
+Dialogue: 0,0:51:17.15,0:51:18.80,Default,,0000,0000,0000,,对于那只老鼠{\r}\N{\fs14\1c&H42CEFD&}But to that mouse,{\r}
+Dialogue: 0,0:51:19.20,0:51:21.93,Default,,0000,0000,0000,,你们才是入侵者{\r}\N{\fs14\1c&H42CEFD&}you are the intruder.{\r}
+Dialogue: 0,0:51:34.00,0:51:36.99,Default,,0000,0000,0000,,如果加班加点 应该能够生产出足够的绳子交货{\r}\N{\fs14\1c&H42CEFD&}I think if we work fast, we can make enough string to meet our orders.{\r}
+Dialogue: 0,0:51:37.00,0:51:40.20,Default,,0000,0000,0000,,这么想就对了 我生产几箱 就能保住拉鲁{\r}\N{\fs14\1c&H42CEFD&}That's the spirit. Just a few cases, so we can keep the LaRue.{\r}
+Dialogue: 0,0:51:40.25,0:51:41.99,Default,,0000,0000,0000,,- 不 等等！  - 祝你好运  - 你要去哪儿？{\r}\N{\fs14\1c&H42CEFD&}- Good luck.   - Wait! Where are you going?{\r}
+Dialogue: 0,0:51:42.00,0:51:43.60,Default,,0000,0000,0000,,- 我去办点事儿 待会儿见  - 你不帮忙吗？{\r}\N{\fs14\1c&H42CEFD&}- Aren't you gonna help?   - I have to run a little errand.{\r}
+Dialogue: 0,0:51:43.70,0:51:46.50,Default,,0000,0000,0000,,待会儿见啊 哎 生产价值一千二的绳子{\r}\N{\fs14\1c&H42CEFD&}All you have to do is make $1,200 worth.{\r}
+Dialogue: 0,0:51:46.55,0:51:47.85,Default,,0000,0000,0000,,要花多少时间？{\r}\N{\fs14\1c&H42CEFD&}How long can that take?{\r}
+Dialogue: 0,0:51:47.95,0:51:50.45,Default,,0000,0000,0000,,划根火柴 用火吓住他们{\r}\N{\fs14\1c&H42CEFD&}Light a match. They're frightened by fire.{\r}
+Dialogue: 0,0:53:55.05,0:53:57.00,Default,,0000,0000,0000,,不讲卫生的动物{\r}\N{\fs14\1c&H42CEFD&}Unsanitary creature.{\r}
+Dialogue: 0,0:53:59.30,0:54:03.30,Default,,0000,0000,0000,,竟然在饭厅大便{\r}\N{\fs14\1c&H42CEFD&}Defecating in the dining room.{\r}
+Dialogue: 0,0:54:07.25,0:54:10.22,Default,,0000,0000,0000,,九点十五分 发现证物{\r}\N{\fs14\1c&H42CEFD&}09:15. Evidence found.{\r}
+Dialogue: 0,0:54:14.05,0:54:18.06,Default,,0000,0000,0000,,老鼠排泄物 啊 雄性{\r}\N{\fs14\1c&H42CEFD&}Mus communis. Ugh. Male.{\r}
+Dialogue: 0,0:54:22.25,0:54:27.05,Default,,0000,0000,0000,,十 到十二厘米长{\r}\N{\fs14\1c&H42CEFD&}Ten to, uh, twelve centimeters long,{\r}
+Dialogue: 0,0:54:29.25,0:54:32.54,Default,,0000,0000,0000,,什么 嗯…{\r}\N{\fs14\1c&H42CEFD&}with a... hmm...{\r}
+Dialogue: 0,0:54:34.95,0:54:35.80,Default,,0000,0000,0000,,什么？{\r}\N{\fs14\1c&H42CEFD&}What's this?{\r}
+Dialogue: 0,0:54:36.65,0:54:38.15,Default,,0000,0000,0000,,轻度缺钙体质{\r}\N{\fs14\1c&H42CEFD&}A slight calcium deficiency.{\r}
+Dialogue: 0,0:54:39.55,0:54:40.65,Default,,0000,0000,0000,,有意思{\r}\N{\fs14\1c&H42CEFD&}That's interesting.{\r}
+Dialogue: 0,0:54:48.40,0:54:51.75,Default,,0000,0000,0000,,哦 嗨 我是斯曼兹制绳厂的厄尼·斯曼兹{\r}\N{\fs14\1c&H42CEFD&}Uh, hi. This is Ernest Smuntz of Smuntz String.{\r}
+Dialogue: 0,0:54:51.20,0:54:53.75,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs12\bord0\shad0\fsp1\pos(114,134)\fscx110\fscy90\frz44.5\1c&H111A18&\b1}泽普克财团 业务代表
+Dialogue: 0,0:54:51.85,0:54:53.75,Default,,0000,0000,0000,,您是泽普科财团的业务代表吗？{\r}\N{\fs14\1c&H42CEFD&}Is this the business representative for Zeppco International?{\r}
+Dialogue: 0,0:54:54.90,0:54:58.10,Default,,0000,0000,0000,,威尼？哦 嗨 威尼 很高兴能叫你威尼{\r}\N{\fs14\1c&H42CEFD&}Vinny? Hi, Vinny. Oh, I'm glad I can call you Vinny.{\r}
+Dialogue: 0,0:54:58.70,0:55:02.15,Default,,0000,0000,0000,,呃 我弟弟和我打算重新考虑你们的慷慨的报价{\r}\N{\fs14\1c&H42CEFD&}Uh, my brother and I have decided to reconsider your generous offer.{\r}
+Dialogue: 0,0:55:02.35,0:55:04.40,Default,,0000,0000,0000,,我想和你谈谈卖厂的事{\r}\N{\fs14\1c&H42CEFD&}I'd love to discuss selling our factory to you.{\r}
+Dialogue: 0,0:55:04.80,0:55:07.35,Default,,0000,0000,0000,,呃 呃 呃… 不 别在办公室{\r}\N{\fs14\1c&H42CEFD&}Oh, no, not at the office.{\r}
+Dialogue: 0,0:55:07.50,0:55:10.90,Default,,0000,0000,0000,,我们中午在埃尔曼广场的钟楼底下见好吗？{\r}\N{\fs14\1c&H42CEFD&}How about Ellman Square under the big clock at noon?{\r}
+Dialogue: 0,0:56:36.35,0:56:40.65,Default,,0000,0000,0000,,呃 你一定是拉尔斯·斯曼兹的太太？{\r}\N{\fs14\1c&H42CEFD&}Uh, you, you must be Mrs. Lars Smuntz?{\r}
+Dialogue: 0,0:56:40.75,0:56:43.35,Default,,0000,0000,0000,,恐怕这个身份很快就要变了{\r}\N{\fs14\1c&H42CEFD&}I'm afraid that status is in transition.{\r}
+Dialogue: 0,0:56:43.70,0:56:45.80,Default,,0000,0000,0000,,哦 拉尔斯在吗？{\r}\N{\fs14\1c&H42CEFD&}Oh, well, is Lars in?{\r}
+Dialogue: 0,0:56:46.05,0:56:50.05,Default,,0000,0000,0000,,- 我想和他谈谈拍卖会筹备的事  - 拍卖会？{\r}\N{\fs14\1c&H42CEFD&}- I'd like to discuss preparations for the auction.   - The auction?{\r}
+Dialogue: 0,0:57:06.15,0:57:08.90,Default,,0000,0000,0000,,当心 拉尔斯 你会着凉的{\r}\N{\fs14\1c&H42CEFD&}Careful, Lars. You might catch a cold.{\r}
+Dialogue: 0,0:57:10.80,0:57:11.90,Default,,0000,0000,0000,,艾普尔！{\r}\N{\fs14\1c&H42CEFD&}April!{\r}
+Dialogue: 0,0:57:14.30,0:57:17.90,Default,,0000,0000,0000,,你似乎需要暖暖身子{\r}\N{\fs14\1c&H42CEFD&}You look like you could use some warming up.{\r}
+Dialogue: 0,0:57:24.00,0:57:28.50,Default,,0000,0000,0000,,十三点正 开启“抓耗子能手2000”{\r}\N{\fs14\1c&H42CEFD&}13:00 hours. I've activated the Squeak Seeker 2000.{\r}
+Dialogue: 0,0:57:29.10,0:57:31.50,Default,,0000,0000,0000,,猎物将无所遁形{\r}\N{\fs14\1c&H42CEFD&}I'm about to join with the prey.{\r}
+Dialogue: 0,0:57:47.67,0:57:51.55,Default,,0000,0000,0000,,等离子屏幕出现故障 待命{\r}\N{\fs14\1c&H42CEFD&}I'm experiencing malfunction with the plasma screen. Stand by.{\r}
+Dialogue: 0,0:58:02.50,0:58:03.50,Default,,0000,0000,0000,,垃圾{\r}\N{\fs14\1c&H42CEFD&}Junk.{\r}
+Dialogue: 0,0:58:13.70,0:58:14.95,Default,,0000,0000,0000,,报废了{\r}\N{\fs14\1c&H42CEFD&}Nothing works.{\r}
+Dialogue: 0,0:58:43.90,0:58:44.90,Default,,0000,0000,0000,,什么？{\r}\N{\fs14\1c&H42CEFD&}What?{\r}
+Dialogue: 0,0:58:52.75,0:58:53.75,Default,,0000,0000,0000,,噢 完了！{\r}\N{\fs14\1c&H42CEFD&}Ah, nuts!{\r}
+Dialogue: 0,0:59:40.30,0:59:44.04,Default,,0000,0000,0000,,心电图 颈椎 胸腔 盆骨 X光扫描 快 快！{\r}\N{\fs14\1c&H42CEFD&}EKG, a C-spine, a chest X ray and pelvis. Now move!{\r}
+Dialogue: 0,0:59:44.30,0:59:46.05,Default,,0000,0000,0000,,一千两百块呀{\r}\N{\fs14\1c&H42CEFD&}Twelve hundred dollars.{\r}
+Dialogue: 0,0:59:46.35,0:59:48.30,Default,,0000,0000,0000,,躺好 斯曼兹先生 你被公共汽车撞了{\r}\N{\fs14\1c&H42CEFD&}Lie still, Mr. Smuntz. You've just been hit by a bus.{\r}
+Dialogue: 0,0:59:48.40,0:59:50.70,Default,,0000,0000,0000,,我很好 几点了？{\r}\N{\fs14\1c&H42CEFD&}I feel fine. What time is it?{\r}
+Dialogue: 0,0:59:51.00,0:59:53.75,Default,,0000,0000,0000,,可能有脑震荡 我们需要拍一系列的X光片{\r}\N{\fs14\1c&H42CEFD&}You may have had a concussion. We're gonna do a series of X rays.{\r}
+Dialogue: 0,0:59:53.90,0:59:56.20,Default,,0000,0000,0000,,你不明白 医生 我必须离开这儿{\r}\N{\fs14\1c&H42CEFD&}You don't understand, Doc. I have to get out of here.{\r}
+Dialogue: 0,0:59:56.40,0:59:57.65,Default,,0000,0000,0000,,说不定还有机会{\r}\N{\fs14\1c&H42CEFD&}I might still have a chance.{\r}
+Dialogue: 0,0:59:57.75,0:59:59.15,Default,,0000,0000,0000,,你的帽子呢{\r}\N{\fs14\1c&H42CEFD&}We saved your hat.{\r}
+Dialogue: 0,0:59:59.90,1:00:02.20,Default,,0000,0000,0000,,- 对不起 是家属吗？  - 对 亲姐妹{\r}\N{\fs14\1c&H42CEFD&}- I'm sorry. Are you family?   - Yes, we are sisters.{\r}
+Dialogue: 0,1:00:02.35,1:00:04.15,Default,,0000,0000,0000,,太好了 请你们填几张表{\r}\N{\fs14\1c&H42CEFD&}Great. There's some paperwork I need for you to fill out.{\r}
+Dialogue: 0,1:00:04.35,1:00:05.40,Default,,0000,0000,0000,,他能捐赠器官吗？{\r}\N{\fs14\1c&H42CEFD&}Is he an organ donor?{\r}
+Dialogue: 0,1:00:05.45,1:00:07.69,Default,,0000,0000,0000,,一个字都别让她们写 我不认识她们{\r}\N{\fs14\1c&H42CEFD&}Don't let them fill anything out. I don't even know them.{\r}
+Dialogue: 0,1:00:07.70,1:00:10.25,Default,,0000,0000,0000,,哦 我叫希尔德 她是英格丽{\r}\N{\fs14\1c&H42CEFD&}Oh, I'm Hilde, and this is Ingrid.{\r}
+Dialogue: 0,1:00:10.40,1:00:13.95,Default,,0000,0000,0000,,- 从比利时来的发型模特儿  - 充满异域风情{\r}\N{\fs14\1c&H42CEFD&}- We are hair models from Belgium.   - Belgian hair models. How exotic.{\r}
+Dialogue: 0,1:00:14.75,1:00:16.75,Default,,0000,0000,0000,,听我说 医生 我要打电话{\r}\N{\fs14\1c&H42CEFD&}Listen to me, Doc. I need to find a phone{\r}
+Dialogue: 0,1:00:16.80,1:00:19.25,Default,,0000,0000,0000,,不然我就会错过人生中最重要的事{\r}\N{\fs14\1c&H42CEFD&}before I miss out on the deal of my life.{\r}
+Dialogue: 0,1:00:19.46,1:00:22.50,Default,,0000,0000,0000,,- 你哥哥有点儿神智不清了  - 我不是她的哥哥！{\r}\N{\fs14\1c&H42CEFD&}- I think your brother's a little delirious.   - I am not their brother!{\r}
+Dialogue: 0,1:00:22.60,1:00:23.60,Default,,0000,0000,0000,,我没有妹妹！{\r}\N{\fs14\1c&H42CEFD&}I don't have any sisters!{\r}
+Dialogue: 0,1:00:24.15,1:00:26.30,Default,,0000,0000,0000,,厄尼 你没事吧？我一听说就赶来了{\r}\N{\fs14\1c&H42CEFD&}Ernie, are you okay? I came as soon as I heard.{\r}
+Dialogue: 0,1:00:27.15,1:00:28.90,Default,,0000,0000,0000,,你干嘛穿粉外套？{\r}\N{\fs14\1c&H42CEFD&}Why are you wearing a pink overcoat?{\r}
+Dialogue: 0,1:00:30.85,1:00:33.15,Default,,0000,0000,0000,,因为艾普尔给了我一千两百美元！{\r}\N{\fs14\1c&H42CEFD&}Because April gave us the twelve hundred dollars!{\r}
+Dialogue: 0,1:00:38.45,1:00:41.80,Default,,0000,0000,0000,,她无缘无故给你钱？她早知道拍卖的事了？{\r}\N{\fs14\1c&H42CEFD&}She gave you the money? You don't think she heard about the auction?{\r}
+Dialogue: 0,1:00:42.45,1:00:46.55,Default,,0000,0000,0000,,不会 在和好之前 我一个字都没有跟她说{\r}\N{\fs14\1c&H42CEFD&}No. I didn't even tell her about the auction until after she took me back.{\r}
+Dialogue: 0,1:00:47.25,1:00:51.95,Default,,0000,0000,0000,,她突然来到工厂 脱掉外套 求我要她{\r}\N{\fs14\1c&H42CEFD&}She just showed up at the factory, took off her coat and begged me to take her.{\r}
+Dialogue: 0,1:00:52.40,1:00:54.85,Default,,0000,0000,0000,,噢 那种激情迸发的场面{\r}\N{\fs14\1c&H42CEFD&}Oh. We made love in a way{\r}
+Dialogue: 0,1:00:55.05,1:00:56.95,Default,,0000,0000,0000,,我只在“动物世界”里面见过{\r}\N{\fs14\1c&H42CEFD&}I've only ever seen in nature films.{\r}
+Dialogue: 0,1:00:57.45,1:00:59.35,Default,,0000,0000,0000,,噢 我真不敢相信{\r}\N{\fs14\1c&H42CEFD&}Wow. I almost can't believe it.{\r}
+Dialogue: 0,1:00:59.45,1:01:02.85,Default,,0000,0000,0000,,我能再开一家餐厅了 你和艾普尔和好了{\r}\N{\fs14\1c&H42CEFD&}I'll be able to open up another restaurant, you're back with April,{\r}
+Dialogue: 0,1:01:03.25,1:01:05.95,Default,,0000,0000,0000,,我们还保住了那个不值钱的工厂{\r}\N{\fs14\1c&H42CEFD&}and you'll even be able to keep that worthless factory.{\r}
+Dialogue: 0,1:01:06.40,1:01:09.35,Default,,0000,0000,0000,,有意思 你居然说工厂不值钱{\r}\N{\fs14\1c&H42CEFD&}You know it's funny that you call the factory worthless,{\r}
+Dialogue: 0,1:01:10.25,1:01:13.95,Default,,0000,0000,0000,,有一件事情 我想我应该跟你说过…{\r}\N{\fs14\1c&H42CEFD&}because, well, there's something l probably should have mentioned before...{\r}
+Dialogue: 0,1:01:14.35,1:01:18.35,Default,,0000,0000,0000,,是吗？呃 我也得跟你坦白一件事{\r}\N{\fs14\1c&H42CEFD&}Yeah? Well, I guess I have something to confess too.{\r}
+Dialogue: 0,1:01:20.00,1:01:21.90,Default,,0000,0000,0000,,那辆是凯撒的车吗？{\r}\N{\fs14\1c&H42CEFD&}Hey, isn't that Caesar's truck?{\r}
+Dialogue: 0,1:01:34.45,1:01:37.15,Default,,0000,0000,0000,,- 噢 我的天呐！  - 凯撒！出什么事了？{\r}\N{\fs14\1c&H42CEFD&}- Oh, my God!   - Caesar! What happened?{\r}
+Dialogue: 0,1:01:37.35,1:01:40.25,Default,,0000,0000,0000,,- 别这样 他受不了  - 好好想想 老鼠死了吗？{\r}\N{\fs14\1c&H42CEFD&}- Please, sir. He's not well.   - Try to think. Did you kill the mouse?{\r}
+Dialogue: 0,1:01:40.45,1:01:43.08,Default,,0000,0000,0000,,什么？什么？{\r}\N{\fs14\1c&H42CEFD&}What's that? Horse?{\r}
+Dialogue: 0,1:01:43.20,1:01:46.95,Default,,0000,0000,0000,,臭东西！我才不吃呢{\r}\N{\fs14\1c&H42CEFD&}Fiendish! I won't eat it.{\r}
+Dialogue: 0,1:01:53.65,1:01:55.25,Default,,0000,0000,0000,,你们是怎么找到他的？{\r}\N{\fs14\1c&H42CEFD&}How'd you find him? Where was he?{\r}
+Dialogue: 0,1:01:55.45,1:01:58.15,Default,,0000,0000,0000,,- 有人报警 但不说话  - 消灭他们！{\r}\N{\fs14\1c&H42CEFD&}- 911 call. No voice.   - Exterminate them!{\r}
+Dialogue: 0,1:01:58.35,1:01:59.95,Default,,0000,0000,0000,,我们听到尖叫声{\r}\N{\fs14\1c&H42CEFD&}We could hear screaming in the background.{\r}
+Dialogue: 0,1:02:00.35,1:02:01.85,Default,,0000,0000,0000,,他被锁在阁楼的箱子里{\r}\N{\fs14\1c&H42CEFD&}He was locked in a trunk in the attic.{\r}
+Dialogue: 0,1:02:02.40,1:02:04.15,Default,,0000,0000,0000,,有消息就会通知你们{\r}\N{\fs14\1c&H42CEFD&}We'll call you if we get any leads.{\r}
+Dialogue: 0,1:02:27.00,1:02:28.15,Default,,0000,0000,0000,,这是什么？{\r}\N{\fs14\1c&H42CEFD&}What's that?{\r}
+Dialogue: 0,1:02:31.35,1:02:34.75,Default,,0000,0000,0000,,{\fnKaiTi\bord1\shad2\pos(192,287)\1c&HFFF9EA&\4c&H402C00&\b0\i1}啊 快放下 那是什么？{\r}\N{\fs14\1c&H42CEFD&}Ah. Put that down. What is that?{\r}
+Dialogue: 0,1:02:35.55,1:02:36.95,Default,,0000,0000,0000,,{\fnKaiTi\bord1\shad2\pos(192,287)\1c&HFFF9EA&\4c&H402C00&\b0\i1}呃 有声音！{\r}\N{\fs14\1c&H42CEFD&}Uh, that tickles!{\r}
+Dialogue: 0,1:02:45.55,1:02:48.74,Default,,0000,0000,0000,,我们要对付的不是一只普通的老鼠{\r}\N{\fs14\1c&H42CEFD&}I don't think we're dealing with an ordinary mouse.{\r}
+Dialogue: 0,1:03:00.50,1:03:02.35,Default,,0000,0000,0000,,我的厨房！{\r}\N{\fs14\1c&H42CEFD&}My kitchen!{\r}
+Dialogue: 0,1:03:09.35,1:03:12.15,Default,,0000,0000,0000,,看起来凯撒想做个三明治{\r}\N{\fs14\1c&H42CEFD&}Looks like Caesar decided to make himself a sandwich.{\r}
+Dialogue: 0,1:03:14.95,1:03:18.15,Default,,0000,0000,0000,,腌菜 芝麻菜和酸豆{\r}\N{\fs14\1c&H42CEFD&}Pickles, arugula and capers.{\r}
+Dialogue: 0,1:03:19.45,1:03:21.95,Default,,0000,0000,0000,,涂奶酪的这一面烤过…{\r}\N{\fs14\1c&H42CEFD&}He toasted the side with the cheese...{\r}
+Dialogue: 0,1:03:23.25,1:03:28.05,Default,,0000,0000,0000,,但另一面没有 所以菜叶还新鲜{\r}\N{\fs14\1c&H42CEFD&}but not the other side, so the arugula doesn't wilt.{\r}
+Dialogue: 0,1:03:30.05,1:03:32.15,Default,,0000,0000,0000,,这窍门儿它也懂？{\r}\N{\fs14\1c&H42CEFD&}How did he know that?{\r}
+Dialogue: 0,1:03:42.40,1:03:44.15,Default,,0000,0000,0000,,- 你好  - 你好{\r}\N{\fs14\1c&H42CEFD&}- Hello.   - Hello.{\r}
+Dialogue: 0,1:04:20.35,1:04:23.95,Default,,0000,0000,0000,,- 看见它了吗？  - 对 我看见了{\r}\N{\fs14\1c&H42CEFD&}- Do you see him?   - Yeah, I see him.{\r}
+Dialogue: 0,1:04:31.15,1:04:34.50,Default,,0000,0000,0000,,拉尔斯 我卡住了！拉我出来！{\r}\N{\fs14\1c&H42CEFD&}Lars, I'm stuck! Get me out of here!{\r}
+Dialogue: 0,1:04:34.55,1:04:36.95,Default,,0000,0000,0000,,- 我去拿手电筒  - 憋死我了！{\r}\N{\fs14\1c&H42CEFD&}- I-I'll get a flashlight.   - I can't breathe!{\r}
+Dialogue: 0,1:04:38.00,1:04:38.95,Default,,0000,0000,0000,,快点儿！{\r}\N{\fs14\1c&H42CEFD&}Hurry!{\r}
+Dialogue: 0,1:04:46.25,1:04:49.25,Default,,0000,0000,0000,,- 行了 厄尼 手电筒在这儿  - 看出来了{\r}\N{\fs14\1c&H42CEFD&}- Here, Ernie, I got it.   - I can see that.{\r}
+Dialogue: 0,1:04:52.75,1:04:56.45,Default,,0000,0000,0000,,挺住 厄尼 手电筒不亮了{\r}\N{\fs14\1c&H42CEFD&}Hang on, Ernie. The flashlight's broken.{\r}
+Dialogue: 0,1:05:03.55,1:05:05.60,Default,,0000,0000,0000,,哎 厄尼 是火柴{\r}\N{\fs14\1c&H42CEFD&}Okay, Ernie. I got a light.{\r}
+Dialogue: 0,1:05:06.05,1:05:07.15,Default,,0000,0000,0000,,太好了{\r}\N{\fs14\1c&H42CEFD&}Great.{\r}
+Dialogue: 0,1:05:12.55,1:05:13.55,Default,,0000,0000,0000,,拉尔斯{\r}\N{\fs14\1c&H42CEFD&}Lars,{\r}
+Dialogue: 0,1:05:14.40,1:05:15.55,Default,,0000,0000,0000,,你闻到了吗？{\r}\N{\fs14\1c&H42CEFD&}do you smell something?{\r}
+Dialogue: 0,1:05:18.05,1:05:19.75,Default,,0000,0000,0000,,像煤气味儿{\r}\N{\fs14\1c&H42CEFD&}Smells like gas.{\r}
+Dialogue: 0,1:06:44.40,1:06:45.55,Default,,0000,0000,0000,,你要干什么？{\r}\N{\fs14\1c&H42CEFD&}What are you gonna do?{\r}
+Dialogue: 0,1:06:45.75,1:06:49.21,Default,,0000,0000,0000,,我要一劳永逸 干掉那该死的小杂种{\r}\N{\fs14\1c&H42CEFD&}I'm gonna kill that unspeakable thing once and for all.{\r}
+Dialogue: 0,1:06:49.29,1:06:51.54,Default,,0000,0000,0000,,- 好了 厄尼 不要…  - 别拦着我！拉尔斯{\r}\N{\fs14\1c&H42CEFD&}- Come on, Ernie, no, no...   - Stand back, Lars!{\r}
+Dialogue: 0,1:06:51.95,1:06:53.71,Default,,0000,0000,0000,,我要替天行道！{\r}\N{\fs14\1c&H42CEFD&}I'm a man on a mission!{\r}
+Dialogue: 0,1:06:53.79,1:06:56.13,Default,,0000,0000,0000,,意外就是这样发生的！好了 厄尼{\r}\N{\fs14\1c&H42CEFD&}Look, this is how accidents happen! Come on, Ernie.{\r}
+Dialogue: 0,1:06:56.21,1:06:58.60,Default,,0000,0000,0000,,- 行啊！  - 放下枪 冷静一点儿 厄尼{\r}\N{\fs14\1c&H42CEFD&}- Ok!   - Put the gun down. Calm down. Come on.{\r}
+Dialogue: 0,1:06:59.15,1:07:01.80,Default,,0000,0000,0000,,我要一枪轰掉那毛茸茸的小脑袋{\r}\N{\fs14\1c&H42CEFD&}I'm gonna blow his furry little head off,{\r}
+Dialogue: 0,1:07:01.95,1:07:06.45,Default,,0000,0000,0000,,我要让它冒坏水的脑浆子一路溅到天国！{\r}\N{\fs14\1c&H42CEFD&}and I'm gonna splatter his devious little mouse brain from here to kingdom come!{\r}
+Dialogue: 0,1:07:06.65,1:07:08.75,Default,,0000,0000,0000,,不 不 不！你会把墙打成窟窿的{\r}\N{\fs14\1c&H42CEFD&}No, no! You're gonna blow a hole in the wall.{\r}
+Dialogue: 0,1:07:08.95,1:07:11.55,Default,,0000,0000,0000,,- 那我也觉得值！  - 不要这样！厄尼{\r}\N{\fs14\1c&H42CEFD&}- It'll be worth it!   - Come onz, Ernie!{\r}
+Dialogue: 0,1:07:11.75,1:07:13.85,Default,,0000,0000,0000,,想想拍卖会！看在上帝份上！{\r}\N{\fs14\1c&H42CEFD&}Think of the auction! For God's sakes!{\r}
+Dialogue: 0,1:07:13.95,1:07:15.65,Default,,0000,0000,0000,,- 想想钱！厄尼  - 钱？{\r}\N{\fs14\1c&H42CEFD&}- Think of the money, Ernie!   - The money?{\r}
+Dialogue: 0,1:07:15.73,1:07:17.95,Default,,0000,0000,0000,,墙上有弹孔 买家会压价的{\r}\N{\fs14\1c&H42CEFD&}They're gonna cut our price if there's bullet holes in the walls.{\r}
+Dialogue: 0,1:07:18.35,1:07:21.15,Default,,0000,0000,0000,,- 对 钱  - 钱？  - 钞票 没错{\r}\N{\fs14\1c&H42CEFD&}- The money?   - Yeah, the money, the moola.{\r}
+Dialogue: 0,1:07:22.65,1:07:23.65,Default,,0000,0000,0000,,它在那儿{\r}\N{\fs14\1c&H42CEFD&}There he goes.{\r}
+Dialogue: 0,1:07:23.90,1:07:25.75,Default,,0000,0000,0000,,啊！开枪！{\r}\N{\fs14\1c&H42CEFD&}Shoot! Shoot!{\r}
+Dialogue: 0,1:07:30.25,1:07:34.35,Default,,0000,0000,0000,,- 吔…  - 你打中了钢琴！你打中了钢琴！{\r}\N{\fs14\1c&H42CEFD&}- Yes...   - You hit the piano! You hit the piano!{\r}
+Dialogue: 0,1:07:35.15,1:07:35.95,Default,,0000,0000,0000,,嘘…{\r}\N{\fs14\1c&H42CEFD&}Shh...{\r}
+Dialogue: 0,1:07:48.30,1:07:51.05,Default,,0000,0000,0000,,你疯了吗？你在房子里乱开枪！{\r}\N{\fs14\1c&H42CEFD&}What are you, crazy? You're blowin' the whole house up!{\r}
+Dialogue: 0,1:07:51.25,1:07:53.00,Default,,0000,0000,0000,,毁了一切都没有打到老鼠！{\r}\N{\fs14\1c&H42CEFD&}The only thing you haven't hit is the mouse!{\r}
+Dialogue: 0,1:07:53.20,1:07:55.35,Default,,0000,0000,0000,,你干嘛不把枪给我试一试？{\r}\N{\fs14\1c&H42CEFD&}Why don't you give somebody else a chance with that gun?{\r}
+Dialogue: 0,1:07:56.90,1:07:58.75,Default,,0000,0000,0000,,你干得非常好{\r}\N{\fs14\1c&H42CEFD&}You're doing a wonderful job.{\r}
+Dialogue: 0,1:08:06.55,1:08:08.95,Default,,0000,0000,0000,,噢！你打中它了！{\r}\N{\fs14\1c&H42CEFD&}Whoa! You got him!{\r}
+Dialogue: 0,1:08:14.15,1:08:16.15,Default,,0000,0000,0000,,快快快 快！{\r}\N{\fs14\1c&H42CEFD&}G-G-Get him!{\r}
+Dialogue: 0,1:08:19.50,1:08:21.55,Default,,0000,0000,0000,,下地狱吧！老鼠{\r}\N{\fs14\1c&H42CEFD&}See you in hell, mouse!{\r}
+Dialogue: 0,1:08:25.80,1:08:26.75,Default,,0000,0000,0000,,开枪！{\r}\N{\fs14\1c&H42CEFD&}Fire!{\r}
+Dialogue: 0,1:08:54.25,1:08:56.75,Default,,0000,0000,0000,,我讨厌那只老鼠！{\r}\N{\fs14\1c&H42CEFD&}God, I hate that mouse!{\r}
+Dialogue: 0,1:09:04.35,1:09:06.75,Default,,0000,0000,0000,,{\fnKaiTi\bord1\shad2\pos(192,287)\1c&HFFF9EA&\4c&H402C00&\b0\i1}听到提示音后 请留言{\r}\N{\fs14\1c&H42CEFD&}When you hear the beep, start talking.{\r}
+Dialogue: 0,1:09:07.45,1:09:11.75,Default,,0000,0000,0000,,{\fnKaiTi\bord1\shad2\pos(192,287)\1c&HFFF9EA&\4c&H402C00&\b0\i1}斯曼兹先生 我是泽普科财团的威尼{\r}\N{\fs14\1c&H42CEFD&}Mr. Smuntz, this is Vinny from Zeppco calling.{\r}
+Dialogue: 0,1:09:12.60,1:09:16.15,Default,,0000,0000,0000,,{\fnKaiTi\bord1\shad2\pos(192,287)\1c&HFFF9EA&\4c&H402C00&\b0\i1}我们在广场等了一个小时 你却没来{\r}\N{\fs14\1c&H42CEFD&}We waited in the square for over an hour, but you never showed.{\r}
+Dialogue: 0,1:09:17.15,1:09:19.20,Default,,0000,0000,0000,,{\fnKaiTi\bord1\shad2\pos(192,287)\1c&HFFF9EA&\4c&H402C00&\b0\i1}这种态度 我们很不满意{\r}\N{\fs14\1c&H42CEFD&}We do not appreciate being treated this way,{\r}
+Dialogue: 0,1:09:19.60,1:09:22.55,Default,,0000,0000,0000,,{\fnKaiTi\bord1\shad2\pos(192,287)\1c&HFFF9EA&\4c&H402C00&\b0\i1}尤其在你弟弟拒绝了我们慷慨报价之后{\r}\N{\fs14\1c&H42CEFD&}especially after your brother already turned down our generous offer.{\r}
+Dialogue: 0,1:09:23.85,1:09:26.95,Default,,0000,0000,0000,,{\fnKaiTi\bord1\shad2\pos(192,287)\1c&HFFF9EA&\4c&H402C00&\b0\i1}这次交易 就此作罢{\r}\N{\fs14\1c&H42CEFD&}Consider our proposal withdraw.{\r}
+Dialogue: 0,1:09:31.10,1:09:31.95,Default,,0000,0000,0000,,拉尔斯{\r}\N{\fs14\1c&H42CEFD&}Lars,{\r}
+Dialogue: 0,1:09:32.40,1:09:35.25,Default,,0000,0000,0000,,- 被亲哥哥背叛！  - 背叛？{\r}\N{\fs14\1c&H42CEFD&}- Betrayed by my own brother!   - Betrayal?{\r}
+Dialogue: 0,1:09:36.15,1:09:40.05,Default,,0000,0000,0000,,少跟我说什么背叛 你应该告诉我报价的事！{\r}\N{\fs14\1c&H42CEFD&}Don't talk to me about betrayal. You should have told me about that offer!{\r}
+Dialogue: 0,1:09:40.50,1:09:44.35,Default,,0000,0000,0000,,- 厂子有一半是我的  - 还有一半…{\r}\N{\fs14\1c&H42CEFD&}- Half that factory is mine.   - And half is mi...{\r}
+Dialogue: 0,1:09:44.90,1:09:49.00,Default,,0000,0000,0000,,那另一半是我的 你没有权利卖掉{\r}\N{\fs14\1c&H42CEFD&}And half is mine, including the half that you tried to sell.{\r}
+Dialogue: 0,1:09:49.15,1:09:51.95,Default,,0000,0000,0000,,如果不是被公交车撞了 我早卖了！{\r}\N{\fs14\1c&H42CEFD&}Yes, and would have, if it hadn't been for that stinkin' bus!{\r}
+Dialogue: 0,1:09:52.20,1:09:57.85,Default,,0000,0000,0000,,公交？你一个人呆着就惹事 对吗？你毁了这一切！{\r}\N{\fs14\1c&H42CEFD&}Bus? You can't leave well enough alone, can you? You ruin everything!{\r}
+Dialogue: 0,1:09:58.05,1:10:00.77,Default,,0000,0000,0000,,我？这事你怪我？{\r}\N{\fs14\1c&H42CEFD&}Me? You... You blame me for this?{\r}
+Dialogue: 0,1:10:00.86,1:10:03.32,Default,,0000,0000,0000,,看呐！你把地板打了个洞！{\r}\N{\fs14\1c&H42CEFD&}Well, look! You blew a hole in the floor!{\r}
+Dialogue: 0,1:10:03.40,1:10:07.35,Default,,0000,0000,0000,,对 但我清楚地记得有人大喊“开枪！开枪！”{\r}\N{\fs14\1c&H42CEFD&}Yeah, well, I distinctly remember somebody yelling, "Shoot! Shoot!"{\r}
+Dialogue: 0,1:10:07.60,1:10:10.10,Default,,0000,0000,0000,,对 可是你以前从不听我的话！{\r}\N{\fs14\1c&H42CEFD&}Y-Yeah, well, you've never listened to me before!{\r}
+Dialogue: 0,1:10:10.35,1:10:12.30,Default,,0000,0000,0000,,- 知道为什么吗？  - 为什么？{\r}\N{\fs14\1c&H42CEFD&}- And you know why?   - Why?{\r}
+Dialogue: 0,1:10:12.40,1:10:14.95,Default,,0000,0000,0000,,因为我根本看不起你！{\r}\N{\fs14\1c&H42CEFD&}Because I have no respect for you!{\r}
+Dialogue: 0,1:10:15.75,1:10:19.15,Default,,0000,0000,0000,,你一辈子耗在那家破烂工厂里！{\r}\N{\fs14\1c&H42CEFD&}Spending your whole life in that stupid factory!{\r}
+Dialogue: 0,1:10:19.95,1:10:21.75,Default,,0000,0000,0000,,真可悲{\r}\N{\fs14\1c&H42CEFD&}It's tragic.{\r}
+Dialogue: 0,1:10:22.15,1:10:24.35,Default,,0000,0000,0000,,你以为我没有其他的人生目标吗？{\r}\N{\fs14\1c&H42CEFD&}You think I didn't have other things I wanted to do with my life?{\r}
+Dialogue: 0,1:10:24.55,1:10:26.92,Default,,0000,0000,0000,,你以为我没有自己的抱负吗？{\r}\N{\fs14\1c&H42CEFD&}You think I didn't have ambitions of my own?{\r}
+Dialogue: 0,1:10:26.95,1:10:30.43,Default,,0000,0000,0000,,- 噢 得了 你喜欢绳子  - 我不喜欢绳子！{\r}\N{\fs14\1c&H42CEFD&}- Come on. You loved string.   - I didn't love string!{\r}
+Dialogue: 0,1:10:30.50,1:10:31.85,Default,,0000,0000,0000,,行了 别骗我了！{\r}\N{\fs14\1c&H42CEFD&}Come on, don't lie to me!{\r}
+Dialogue: 0,1:10:31.95,1:10:33.55,Default,,0000,0000,0000,,你和爸爸总是挤在一起{\r}\N{\fs14\1c&H42CEFD&}You and Pop were always huddled together{\r}
+Dialogue: 0,1:10:33.65,1:10:34.90,Default,,0000,0000,0000,,摆弄破绳子{\r}\N{\fs14\1c&H42CEFD&}running some piece of something through your fingers.{\r}
+Dialogue: 0,1:10:35.45,1:10:38.75,Default,,0000,0000,0000,,我干什么都不重要 好像我根本不存在一样！{\r}\N{\fs14\1c&H42CEFD&}It didn't matter what I did. I didn't even exist!{\r}
+Dialogue: 0,1:10:38.90,1:10:41.15,Default,,0000,0000,0000,,他七十大寿那天 我特意为他做了小羊排…{\r}\N{\fs14\1c&H42CEFD&}I made him my special rack of lamb for his 70th birthday...{\r}
+Dialogue: 0,1:10:41.15,1:10:43.75,Default,,0000,0000,0000,,- 噢 不！  - 是的！你记得{\r}\N{\fs14\1c&H42CEFD&}- Oh, no!   - Yes! You remember.{\r}
+Dialogue: 0,1:10:44.30,1:10:48.35,Default,,0000,0000,0000,,我费劲了心思 确保一切都做得很完美{\r}\N{\fs14\1c&H42CEFD&}I slaved over that meal, making sure everything was perfect.{\r}
+Dialogue: 0,1:10:49.05,1:10:51.15,Default,,0000,0000,0000,,他说过:“谢谢 厄尼 真好吃”吗？{\r}\N{\fs14\1c&H42CEFD&}Did he say, "Thanks, Ernie, it was delicious"?{\r}
+Dialogue: 0,1:10:52.20,1:10:53.15,Default,,0000,0000,0000,,没有{\r}\N{\fs14\1c&H42CEFD&}No.{\r}
+Dialogue: 0,1:10:53.75,1:10:56.35,Default,,0000,0000,0000,,他只注意到我绑肉的绳子{\r}\N{\fs14\1c&H42CEFD&}He only noticed the string I had tied it with.{\r}
+Dialogue: 0,1:10:59.60,1:11:01.15,Default,,0000,0000,0000,,他是疯子！{\r}\N{\fs14\1c&H42CEFD&}He was crazy!{\r}
+Dialogue: 0,1:11:02.80,1:11:04.75,Default,,0000,0000,0000,,可我想得到他的认可{\r}\N{\fs14\1c&H42CEFD&}But I still wanted his approval.{\r}
+Dialogue: 0,1:11:05.80,1:11:08.15,Default,,0000,0000,0000,,不是我要走 我是被赶走的{\r}\N{\fs14\1c&H42CEFD&}I didn't leave, Lars. I was cast out.{\r}
+Dialogue: 0,1:11:10.40,1:11:11.75,Default,,0000,0000,0000,,你又来了！{\r}\N{\fs14\1c&H42CEFD&}There you go again!{\r}
+Dialogue: 0,1:11:12.30,1:11:14.35,Default,,0000,0000,0000,,把一切都怪到别人的头上{\r}\N{\fs14\1c&H42CEFD&}Blaming everything else but yourself.{\r}
+Dialogue: 0,1:11:15.00,1:11:16.40,Default,,0000,0000,0000,,你以为你很成功吗？{\r}\N{\fs14\1c&H42CEFD&}You think you're a success!{\r}
+Dialogue: 0,1:11:16.95,1:11:17.75,Default,,0000,0000,0000,,嗯？{\r}\N{\fs14\1c&H42CEFD&}Huh?{\r}
+Dialogue: 0,1:11:19.35,1:11:21.90,Default,,0000,0000,0000,,你… 不懂… 烹饪！{\r}\N{\fs14\1c&H42CEFD&}Well, you... can't... cook!{\r}
+Dialogue: 0,1:11:23.23,1:11:24.45,Default,,0000,0000,0000,,我恨你！{\r}\N{\fs14\1c&H42CEFD&}I hate you!{\r}
+Dialogue: 0,1:11:24.65,1:11:26.32,Default,,0000,0000,0000,,我也恨你！{\r}\N{\fs14\1c&H42CEFD&}And I hate you!{\r}
+Dialogue: 0,1:11:26.40,1:11:28.60,Default,,0000,0000,0000,,- 比不上我恨你！  - 是吗？{\r}\N{\fs14\1c&H42CEFD&}- Not as much as I hate you!   - Yeah?{\r}
+Dialogue: 0,1:11:28.92,1:11:30.61,Default,,0000,0000,0000,,对 翻倍 翻倍！{\r}\N{\fs14\1c&H42CEFD&}Yeah. Double. Double!{\r}
+Dialogue: 0,1:11:30.70,1:11:34.30,Default,,0000,0000,0000,,- 哈哈哈  - 给我一样东西 我要砸你的脑袋！{\r}\N{\fs14\1c&H42CEFD&}Oh, give me something! I'm gonna brain you!{\r}
+Dialogue: 0,1:11:34.35,1:11:35.05,Default,,0000,0000,0000,,这个怎么样？{\r}\N{\fs14\1c&H42CEFD&}Here it is!{\r}
+Dialogue: 0,1:11:35.15,1:11:37.55,Default,,0000,0000,0000,,有本事扔啊 来啊！{\r}\N{\fs14\1c&H42CEFD&}Oh, yeah, give it to me, then! Go ahead!{\r}
+Dialogue: 0,1:11:43.05,1:11:44.35,Default,,0000,0000,0000,,你杀了它！{\r}\N{\fs14\1c&H42CEFD&}You killed him!{\r}
+Dialogue: 0,1:11:46.85,1:11:47.50,Default,,0000,0000,0000,,哇嗷！{\r}\N{\fs14\1c&H42CEFD&}Wow!{\r}
+Dialogue: 0,1:11:47.60,1:11:49.40,Default,,0000,0000,0000,,我 我不知道它在那儿！{\r}\N{\fs14\1c&H42CEFD&}I-I didn't even know he was there!{\r}
+Dialogue: 0,1:11:49.60,1:11:52.60,Default,,0000,0000,0000,,早知道这样 一开始就该向它扔水果…{\r}\N{\fs14\1c&H42CEFD&}Just think of all the trouble we could have saved ourselves...{\r}
+Dialogue: 0,1:11:52.75,1:11:54.25,Default,,0000,0000,0000,,能省多少麻烦呐！{\r}\N{\fs14\1c&H42CEFD&}if we just threw fruit at him in the first place!{\r}
+Dialogue: 0,1:11:54.30,1:11:57.10,Default,,0000,0000,0000,,噢 看呐！它还在喘气！{\r}\N{\fs14\1c&H42CEFD&}Oh, look! H-He's still breathing!{\r}
+Dialogue: 0,1:11:57.15,1:11:59.95,Default,,0000,0000,0000,,哎 杀了它！杀了它！去找硬东西 快！{\r}\N{\fs14\1c&H42CEFD&}Well, kill him! Kill him! Find a blunt object!{\r}
+Dialogue: 0,1:12:00.35,1:12:01.75,Default,,0000,0000,0000,,我去找 那儿有…{\r}\N{\fs14\1c&H42CEFD&}There you go. Get the...{\r}
+Dialogue: 0,1:12:01.95,1:12:04.04,Default,,0000,0000,0000,,- 来吧 等着瞧…  - 给它一下子{\r}\N{\fs14\1c&H42CEFD&}- Come on, wait and see...   - Let him have it.{\r}
+Dialogue: 0,1:12:04.05,1:12:06.15,Default,,0000,0000,0000,,- 我 我…  - 你还在等什么？{\r}\N{\fs14\1c&H42CEFD&}- I-I...   - What the hell are you waiting for?{\r}
+Dialogue: 0,1:12:06.23,1:12:08.69,Default,,0000,0000,0000,,- 我不能用铲子拍它  - 为什么？{\r}\N{\fs14\1c&H42CEFD&}- I can't just hit him with a shovel.   - Why not?{\r}
+Dialogue: 0,1:12:08.75,1:12:11.05,Default,,0000,0000,0000,,你看 它多可怜啊{\r}\N{\fs14\1c&H42CEFD&}Well, look at him. He's pathetic.{\r}
+Dialogue: 0,1:12:11.15,1:12:13.40,Default,,0000,0000,0000,,可怜？它是长着尾巴的希特勒{\r}\N{\fs14\1c&H42CEFD&}Pathetic? He's Hitler with a tail.{\r}
+Dialogue: 0,1:12:13.50,1:12:17.15,Default,,0000,0000,0000,,是长胡子的恶灵 连大预言家都没料到它的出现{\r}\N{\fs14\1c&H42CEFD&}This is The Omen with whiskers. Nostradamus didn't see this thing coming.{\r}
+Dialogue: 0,1:12:18.08,1:12:21.91,Default,,0000,0000,0000,,- 厄尼 它… 它是一条生命啊  - 活不长了 给我！{\r}\N{\fs14\1c&H42CEFD&}- We... Well, Ernie, he's a living thing.   - Not for long. Gimme that!{\r}
+Dialogue: 0,1:12:26.35,1:12:27.95,Default,,0000,0000,0000,,我做不到！{\r}\N{\fs14\1c&H42CEFD&}I can't!{\r}
+Dialogue: 0,1:12:31.05,1:12:32.13,Default,,0000,0000,0000,,天呐！{\r}\N{\fs14\1c&H42CEFD&}God!{\r}
+Dialogue: 0,1:12:32.75,1:12:34.35,Default,,0000,0000,0000,,你看它那么躺着{\r}\N{\fs14\1c&H42CEFD&}Look at him just lying there.{\r}
+Dialogue: 0,1:12:34.45,1:12:37.35,Default,,0000,0000,0000,,这样做不符合体育精神{\r}\N{\fs14\1c&H42CEFD&}It just doesn't feel very sportsmanlike.{\r}
+Dialogue: 0,1:12:37.50,1:12:39.85,Default,,0000,0000,0000,,要行动就得快！它要醒了{\r}\N{\fs14\1c&H42CEFD&}We better do something quick! I think he's coming to.{\r}
+Dialogue: 0,1:12:46.45,1:12:49.75,Default,,0000,0000,0000,,哦 我忘了给盒子钻孔了{\r}\N{\fs14\1c&H42CEFD&}Ah, I forgot to put holes in the box.{\r}
+Dialogue: 0,1:12:52.80,1:13:07.25,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs16\bord4\shad0\fsp8\pos(210,50)\fscx110\fscy90\frz2\1c&H0C141B&\3c&H273342&\b0}美国邮局
+Dialogue: 0,1:13:10.80,1:13:13.35,Default,,0000,0000,0000,,祝你一路顺风 小臭耗子！{\r}\N{\fs14\1c&H42CEFD&}Hasta la vista, you little rat bastard!{\r}
+Dialogue: 0,1:13:15.75,1:13:17.35,Default,,0000,0000,0000,,快点儿 还有正事要干呐{\r}\N{\fs14\1c&H42CEFD&}Come on. We got work to do.{\r}
+Dialogue: 0,1:13:17.55,1:13:20.75,Default,,0000,0000,0000,,- 两天以后 我们就发财了  - 没错{\r}\N{\fs14\1c&H42CEFD&}- Two days till payday, my friend.   - Yeah.{\r}
+Dialogue: 0,1:14:03.70,1:14:05.14,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs16\bord0\shad4\fsp5\pos(196,256)\fscx112\fscy80\1c&HF6FFFF&}该死的美国佬
+Dialogue: 0,1:14:05.14,1:14:07.13,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs16\bord0\shad4\fsp5\pos(196,256)\fscx113\fscy80\1c&HF6FFFF&}总是想占我们的便宜
+Dialogue: 0,1:14:08.05,1:14:10.15,Default,,0000,0000,0000,,{\fnSimHei\fs42\bord0\shad0\pos(320,236)\fscx300\fscy180\frz354\1c&H346585&\b0}■
+Dialogue: 0,1:14:08.05,1:14:10.15,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs14\bord0\shad1\fsp6\pos(328,184)\fscx130\fscy110\frz354\1c&H11277C&}邮资不足
+Dialogue: 0,1:14:08.05,1:14:10.15,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs14\bord0\shad1\fsp0\pos(322,198)\fscx120\fscy110\frz354\1c&H091727&\i1}古巴 哈瓦那市
+Dialogue: 0,1:14:08.05,1:14:10.15,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs14\bord0\shad1\fsp0\pos(320,213)\fscx104\fscy120\frz354\1c&H091727&\i1}菲德尔·卡斯特罗 收
+Dialogue: 0,1:14:08.05,1:14:10.15,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs14\bord0\shad1\fsp4\pos(322.5,226)\fscx120\fscy100\frz354\1c&H030530&}退回寄件人
+Dialogue: 0,1:14:08.05,1:14:10.15,Default,,0000,0000,0000,,{\fnSimHei\fs42\bord0\shad0\pos(320,240)\fscx320\fscy200\frz354\1c&H112772&\b0}□
+Dialogue: 0,1:14:13.00,1:14:16.25,Default,,0000,0000,0000,,太棒了 十年来建筑史最大的发现{\r}\N{\fs14\1c&H42CEFD&}Perfect. It's the architectural find of the decade.{\r}
+Dialogue: 0,1:14:16.40,1:14:17.40,Default,,0000,0000,0000,,噢 我们走…{\r}\N{\fs14\1c&H42CEFD&}Oh, let's go...{\r}
+Dialogue: 0,1:14:18.45,1:14:20.95,Default,,0000,0000,0000,,- 来吧？  - 好的{\r}\N{\fs14\1c&H42CEFD&}- Shall we?   - Yes.{\r}
+Dialogue: 0,1:14:30.10,1:14:35.35,Default,,0000,0000,0000,,- 说实话 很不容易 但我们终于做到了  - 嗯哼{\r}\N{\fs14\1c&H42CEFD&}- Well, it wasn't easy, but we finally made it.   - Mm-hmm.{\r}
+Dialogue: 0,1:14:36.25,1:14:39.75,Default,,0000,0000,0000,,厄尼 我要送你一件东西{\r}\N{\fs14\1c&H42CEFD&}Ernie, I want you to have something.{\r}
+Dialogue: 0,1:14:45.55,1:14:47.45,Default,,0000,0000,0000,,是老爸的幸运绳{\r}\N{\fs14\1c&H42CEFD&}Pop's lucky piece of string.{\r}
+Dialogue: 0,1:14:49.65,1:14:53.95,Default,,0000,0000,0000,,- 很高兴你没扔  - 他希望我们分享{\r}\N{\fs14\1c&H42CEFD&}- I'm glad you kept it.   - He, uh, he wanted us to share it.{\r}
+Dialogue: 0,1:14:54.25,1:14:56.05,Default,,0000,0000,0000,,我有一种感觉…{\r}\N{\fs14\1c&H42CEFD&}I don't know why, but...{\r}
+Dialogue: 0,1:14:56.85,1:14:58.55,Default,,0000,0000,0000,,如果老爸在这里…{\r}\N{\fs14\1c&H42CEFD&}I think if he were here right now,{\r}
+Dialogue: 0,1:14:59.45,1:15:01.15,Default,,0000,0000,0000,,他会为你感到骄傲的{\r}\N{\fs14\1c&H42CEFD&}he'd be proud of you.{\r}
+Dialogue: 0,1:15:02.95,1:15:05.35,Default,,0000,0000,0000,,他会为我们骄傲{\r}\N{\fs14\1c&H42CEFD&}I think he'd be proud of us.{\r}
+Dialogue: 0,1:15:10.85,1:15:14.55,Default,,0000,0000,0000,,你们好 小姐们 多么迷人呐！欢迎！{\r}\N{\fs14\1c&H42CEFD&}Hello, ladies. How magnificent! Welcome!{\r}
+Dialogue: 0,1:15:15.30,1:15:17.95,Default,,0000,0000,0000,,拉尔斯 记得英格丽和希尔德吗？{\r}\N{\fs14\1c&H42CEFD&}Lars, you remember Ingrid and Hilde.{\r}
+Dialogue: 0,1:15:18.10,1:15:19.15,Default,,0000,0000,0000,,您好{\r}\N{\fs14\1c&H42CEFD&}Hello.{\r}
+Dialogue: 0,1:15:19.20,1:15:20.20,Default,,0000,0000,0000,,噢 小姐们{\r}\N{\fs14\1c&H42CEFD&}Ah, ladies,{\r}
+Dialogue: 0,1:15:20.25,1:15:22.95,Default,,0000,0000,0000,,你们的发型就像得到了圣经的保佑！{\r}\N{\fs14\1c&H42CEFD&}your hair looks positively biblical!{\r}
+Dialogue: 0,1:15:23.25,1:15:25.15,Default,,0000,0000,0000,,噢 谢谢{\r}\N{\fs14\1c&H42CEFD&}Oh, thank you.{\r}
+Dialogue: 0,1:15:27.35,1:15:30.60,Default,,0000,0000,0000,,噢 失陪一下 我得去看看法式薄饼{\r}\N{\fs14\1c&H42CEFD&}Well, if you will excuse me, I have to check on my crepes.{\r}
+Dialogue: 0,1:15:36.25,1:15:39.90,Default,,0000,0000,0000,,继续上香槟 他们喝得越多 出价越高{\r}\N{\fs14\1c&H42CEFD&}Keep the champagne coming, boys. The more they drink, the higher they bid.{\r}
+Dialogue: 0,1:15:39.95,1:15:42.75,Default,,0000,0000,0000,,嗨 好一场盛大的聚会呀{\r}\N{\fs14\1c&H42CEFD&}Hey, you boys put on quite a shindig here, huh?{\r}
+Dialogue: 0,1:15:43.20,1:15:44.75,Default,,0000,0000,0000,,承蒙夸奖 法尔科先生{\r}\N{\fs14\1c&H42CEFD&}Thank you so much, Mr. Falko.{\r}
+Dialogue: 0,1:15:57.85,1:16:00.85,Default,,0000,0000,0000,,你看 这么盛大的拍卖会…{\r}\N{\fs14\1c&H42CEFD&}You know, it would be very, very sad...{\r}
+Dialogue: 0,1:16:01.55,1:16:04.70,Default,,0000,0000,0000,,如果没人出价 那该多惨呐{\r}\N{\fs14\1c&H42CEFD&}if you boys put on this auction and nobody bid.{\r}
+Dialogue: 0,1:16:04.80,1:16:06.70,Default,,0000,0000,0000,,我们一定会非常难过{\r}\N{\fs14\1c&H42CEFD&}That would put a real crimp in our evening,{\r}
+Dialogue: 0,1:16:06.90,1:16:09.75,Default,,0000,0000,0000,,不过… 我认为不会发生那种事{\r}\N{\fs14\1c&H42CEFD&}but...I don't think there's any danger of that happening.{\r}
+Dialogue: 0,1:16:09.80,1:16:14.15,Default,,0000,0000,0000,,不好说 有一帮欧洲败类 围着虾狼吞虎咽呐{\r}\N{\fs14\1c&H42CEFD&}I don't know. There's a lot of Eurotrash out there scarfin' up the shrimps.{\r}
+Dialogue: 0,1:16:14.65,1:16:15.75,Default,,0000,0000,0000,,这样吧{\r}\N{\fs14\1c&H42CEFD&}I tell you what.{\r}
+Dialogue: 0,1:16:16.45,1:16:19.55,Default,,0000,0000,0000,,你取消拍卖… 就现在…{\r}\N{\fs14\1c&H42CEFD&}You call off the auction... now...{\r}
+Dialogue: 0,1:16:20.40,1:16:23.30,Default,,0000,0000,0000,,我给你开张支票…{\r}\N{\fs14\1c&H42CEFD&}and I will write you a check...{\r}
+Dialogue: 0,1:16:23.90,1:16:25.35,Default,,0000,0000,0000,,一千万{\r}\N{\fs14\1c&H42CEFD&}for ten millions.{\r}
+Dialogue: 0,1:16:29.35,1:16:32.45,Default,,0000,0000,0000,,这种丧失理智的慷慨 我必须拒绝{\r}\N{\fs14\1c&H42CEFD&}As insanely generous as that is, I have to decline,{\r}
+Dialogue: 0,1:16:33.05,1:16:35.71,Default,,0000,0000,0000,,不过我很感激你的细心体贴{\r}\N{\fs14\1c&H42CEFD&}but I do appreciate your thoughtful concern.{\r}
+Dialogue: 0,1:16:36.15,1:16:37.95,Default,,0000,0000,0000,,祝你玩儿得开心{\r}\N{\fs14\1c&H42CEFD&}Enjoy the party.{\r}
+Dialogue: 0,1:16:38.45,1:16:41.00,Default,,0000,0000,0000,,难道你喜欢线轴？{\r}\N{\fs14\1c&H42CEFD&}Are you interested in spooling?{\r}
+Dialogue: 0,1:16:41.90,1:16:43.55,Default,,0000,0000,0000,,呃 那当然 我父亲…{\r}\N{\fs14\1c&H42CEFD&}Oh, sure. My father...{\r}
+Dialogue: 0,1:16:43.60,1:16:46.95,Default,,0000,0000,0000,,呃 我是说 我和我哥哥拥有一家制绳厂{\r}\N{\fs14\1c&H42CEFD&}I mean, my brother and l own a string factory.{\r}
+Dialogue: 0,1:16:47.25,1:16:48.45,Default,,0000,0000,0000,,哦 真的？{\r}\N{\fs14\1c&H42CEFD&}Really?{\r}
+Dialogue: 0,1:16:48.65,1:16:49.35,Default,,0000,0000,0000,,嗯{\r}\N{\fs14\1c&H42CEFD&}Um.{\r}
+Dialogue: 0,1:16:51.35,1:16:54.05,Default,,0000,0000,0000,,有机会能去你的工厂看看吗？{\r}\N{\fs14\1c&H42CEFD&}I would love to see your factory sometime.{\r}
+Dialogue: 0,1:16:54.25,1:16:55.45,Default,,0000,0000,0000,,真的吗？{\r}\N{\fs14\1c&H42CEFD&}Really?{\r}
+Dialogue: 0,1:16:58.11,1:17:00.70,Default,,0000,0000,0000,,噢 你好 艾普尔 太意外了{\r}\N{\fs14\1c&H42CEFD&}Oh, hello, April. What a surprise.{\r}
+Dialogue: 0,1:17:00.95,1:17:02.55,Default,,0000,0000,0000,,你突发奇想 想过来看看？{\r}\N{\fs14\1c&H42CEFD&}Just dropping by for no reason, I suppose?{\r}
+Dialogue: 0,1:17:02.60,1:17:06.65,Default,,0000,0000,0000,,妻子不需要理由 哦 你在办聚会？{\r}\N{\fs14\1c&H42CEFD&}Does a wife need a reason? Oh, are you entertaining?{\r}
+Dialogue: 0,1:17:06.75,1:17:09.50,Default,,0000,0000,0000,,- 你是说“前妻”吧？  - 还不是{\r}\N{\fs14\1c&H42CEFD&}- Don't you mean "ex-wife"?   - Not quite yet.{\r}
+Dialogue: 0,1:17:11.60,1:17:15.95,Default,,0000,0000,0000,,- 啊 伟大的酋长  - 这薄饼… 太没味了{\r}\N{\fs14\1c&H42CEFD&}- Ah, hakuna matata.   - This crepe... c'est magnifique.{\r}
+Dialogue: 0,1:17:16.00,1:17:19.35,Default,,0000,0000,0000,,- 葡萄干 口感太棒了  - 的确很好吃{\r}\N{\fs14\1c&H42CEFD&}- The raisins are a nice touch.   - They are good, aren't they?{\r}
+Dialogue: 0,1:17:21.10,1:17:23.13,Default,,0000,0000,0000,,葡萄干？{\r}\N{\fs14\1c&H42CEFD&}Raisins?{\r}
+Dialogue: 0,1:17:42.85,1:17:44.05,Default,,0000,0000,0000,,{\fnSimHei\fs42\bord0\shad0\pos(250,240)\fscx300\fscy180\frz26\1c&H23323C&\b0}■
+Dialogue: 0,1:17:42.85,1:17:44.05,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs14\bord0\shad1\fsp6\pos(235,190)\fscx130\fscy110\frz26\1c&H030530&}邮资不足
+Dialogue: 0,1:17:42.85,1:17:44.05,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs14\bord0\shad1\fsp0\pos(235,207)\fscx120\fscy110\frz26\1c&H02030A&\i1}古巴 哈瓦那市
+Dialogue: 0,1:17:42.85,1:17:44.05,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs14\bord0\shad1\fsp0\pos(241,220)\fscx104\fscy120\frz26\1c&H02030A&\i1}菲德尔·卡斯特罗 收
+Dialogue: 0,1:17:42.85,1:17:44.05,Default,,0000,0000,0000,,{\fnMicrosoft YaHei\fs14\bord0\shad1\fsp4\pos(248,230)\fscx120\fscy100\frz26\1c&H030530&}退回寄件人
+Dialogue: 0,1:17:42.85,1:17:44.05,Default,,0000,0000,0000,,{\fnSimHei\fs42\bord0\shad0\pos(252,244)\fscx320\fscy200\frz26\1c&H00022A&\b0}□
+Dialogue: 0,1:17:48.28,1:17:50.70,Default,,0000,0000,0000,,女士们先生们 请大家就座{\r}\N{\fs14\1c&H42CEFD&}Ladies and gentlemen, please take your seats.{\r}
+Dialogue: 0,1:17:50.75,1:17:52.62,Default,,0000,0000,0000,,本次拍卖即将开始{\r}\N{\fs14\1c&H42CEFD&}We are about to start the auction.{\r}
+Dialogue: 0,1:17:56.15,1:17:59.45,Default,,0000,0000,0000,,真不知道该祝贺你 还是为你祈祷{\r}\N{\fs14\1c&H42CEFD&}Lars, I don't know whether to congratulate you or wish you luck.{\r}
+Dialogue: 0,1:17:59.60,1:18:01.46,Default,,0000,0000,0000,,- 祝我们好运吧！  - 你好 艾普尔{\r}\N{\fs14\1c&H42CEFD&}- Wish us luck!   - Hello, April.{\r}
+Dialogue: 0,1:18:01.50,1:18:04.80,Default,,0000,0000,0000,,- 哦 你好  - 很高兴又见面了{\r}\N{\fs14\1c&H42CEFD&}- Oh, hello.   - Nice to see you again.{\r}
+Dialogue: 0,1:18:04.85,1:18:08.55,Default,,0000,0000,0000,,- 你认识我们的律师？  - 我随便客套两句{\r}\N{\fs14\1c&H42CEFD&}- I didn't know you knew our lawyer.   - It's just an expression.{\r}
+Dialogue: 0,1:18:12.43,1:18:16.30,Default,,0000,0000,0000,,女士们先生们 感谢大家参与这个重大的时刻{\r}\N{\fs14\1c&H42CEFD&}Thank you, ladies and gentlemen, for joining us for this momentous occasion,{\r}
+Dialogue: 0,1:18:16.40,1:18:18.30,Default,,0000,0000,0000,,本次拍卖的标的物是…{\r}\N{\fs14\1c&H42CEFD&}the auction of our one item up for bid,{\r}
+Dialogue: 0,1:18:19.80,1:18:21.15,Default,,0000,0000,0000,,拉鲁的遗作{\r}\N{\fs14\1c&H42CEFD&}the missing LaRue.{\r}
+Dialogue: 0,1:18:23.70,1:18:26.94,Default,,0000,0000,0000,,在拍卖开始之前 我想向大家介绍…{\r}\N{\fs14\1c&H42CEFD&}Before we start, I would like to introduce you...{\r}
+Dialogue: 0,1:18:26.95,1:18:29.05,Default,,0000,0000,0000,,这一建筑奇迹的拥有者{\r}\N{\fs14\1c&H42CEFD&}to the very fortunate owner of this architectural wonder,{\r}
+Dialogue: 0,1:18:29.15,1:18:31.24,Default,,0000,0000,0000,,厄尼·斯曼兹先生{\r}\N{\fs14\1c&H42CEFD&}Mr. Ernest Smuntz.{\r}
+Dialogue: 0,1:18:45.80,1:18:47.35,Default,,0000,0000,0000,,感谢大家的光临{\r}\N{\fs14\1c&H42CEFD&}Thank you, all, for coming.{\r}
+Dialogue: 0,1:18:48.35,1:18:53.35,Default,,0000,0000,0000,,先父将这栋了不起的房子留给了我弟弟拉尔斯…{\r}\N{\fs14\1c&H42CEFD&}When my father left this extraordinary house to my brother Lars...{\r}
+Dialogue: 0,1:18:58.45,1:19:01.30,Default,,0000,0000,0000,,和我时 我们…{\r}\N{\fs14\1c&H42CEFD&}and myself, uh, we...{\r}
+Dialogue: 0,1:19:01.30,1:19:05.55,Default,,0000,0000,0000,,并不知道等待我们的是何种奇迹 或者是…{\r}\N{\fs14\1c&H42CEFD&}had no idea what surprises were in store for us or...{\r}
+Dialogue: 0,1:19:05.95,1:19:07.35,Default,,0000,0000,0000,,何种命运{\r}\N{\fs14\1c&H42CEFD&}what was going to happen next.{\r}
+Dialogue: 0,1:19:18.75,1:19:19.55,Default,,0000,0000,0000,,呃{\r}\N{\fs14\1c&H42CEFD&}Uh,{\r}
+Dialogue: 0,1:19:20.55,1:19:22.55,Default,,0000,0000,0000,,历史协会的索普先生{\r}\N{\fs14\1c&H42CEFD&}when Quincy Thorpe of the, uh...{\r}
+Dialogue: 0,1:19:22.75,1:19:24.75,Default,,0000,0000,0000,,告诉我们房子的价值后{\r}\N{\fs14\1c&H42CEFD&}Historical Society told us of its value,{\r}
+Dialogue: 0,1:19:25.70,1:19:26.75,Default,,0000,0000,0000,,我们…{\r}\N{\fs14\1c&H42CEFD&}you, uh...{\r}
+Dialogue: 0,1:19:27.95,1:19:28.95,Default,,0000,0000,0000,,我们…{\r}\N{\fs14\1c&H42CEFD&}you could have knocked...{\r}
+Dialogue: 0,1:19:31.65,1:19:33.05,Default,,0000,0000,0000,,大吃一惊{\r}\N{\fs14\1c&H42CEFD&}us over with a feather.{\r}
+Dialogue: 0,1:19:33.90,1:19:34.95,Default,,0000,0000,0000,,像被…{\r}\N{\fs14\1c&H42CEFD&}We...{\r}
+Dialogue: 0,1:19:36.00,1:19:37.50,Default,,0000,0000,0000,,幸运星… 砸中了！{\r}\N{\fs14\1c&H42CEFD&}didn't know what...hit us!{\r}
+Dialogue: 0,1:19:41.90,1:19:45.75,Default,,0000,0000,0000,,翻新工程耗时耗力 但是非常值得{\r}\N{\fs14\1c&H42CEFD&}The renovation was exhausting but ultimately rewarding.{\r}
+Dialogue: 0,1:19:46.50,1:19:48.95,Default,,0000,0000,0000,,这座年久失修的老房子{\r}\N{\fs14\1c&H42CEFD&}The house was in terrible disrepair,{\r}
+Dialogue: 0,1:19:49.35,1:19:50.75,Default,,0000,0000,0000,,只需要钉几个钉子…{\r}\N{\fs14\1c&H42CEFD&}but nothing that a few nails...{\r}
+Dialogue: 0,1:20:03.90,1:20:07.15,Default,,0000,0000,0000,,我想 再干点儿力气活儿就修好了{\r}\N{\fs14\1c&H42CEFD&}and some old-fashioned elbow grease couldn't fix.{\r}
+Dialogue: 0,1:20:08.15,1:20:10.35,Default,,0000,0000,0000,,- 我相信大家等不及 想出价了  - 什么？{\r}\N{\fs14\1c&H42CEFD&}- I'm sure the people are eager to get to the bidding.   - What?{\r}
+Dialogue: 0,1:20:10.35,1:20:11.25,Default,,0000,0000,0000,,出价？{\r}\N{\fs14\1c&H42CEFD&}The bidding?{\r}
+Dialogue: 0,1:20:11.35,1:20:14.15,Default,,0000,0000,0000,,- 出价！  - 好的 谢谢{\r}\N{\fs14\1c&H42CEFD&}- The bidding!   - All right. Thank you.{\r}
+Dialogue: 0,1:20:14.65,1:20:16.70,Default,,0000,0000,0000,,谢谢你 斯曼兹先生{\r}\N{\fs14\1c&H42CEFD&}Thank you, Mr. Smuntz.{\r}
+Dialogue: 0,1:20:21.10,1:20:23.15,Default,,0000,0000,0000,,无论发生什么事都别停{\r}\N{\fs14\1c&H42CEFD&}No matter what happens, keep going.{\r}
+Dialogue: 0,1:20:30.70,1:20:35.65,Default,,0000,0000,0000,,建于1876年 拉鲁已知的最后一件作品{\r}\N{\fs14\1c&H42CEFD&}Built in 1876, the last LaRue known in existence{\r}
+Dialogue: 0,1:20:36.05,1:20:37.55,Default,,0000,0000,0000,,{\fnKaiTi\fs14\bord1\shad2\an7\1c&HFFF9EA&\4c&H402C00&\b0\i1}拥有五间卧室…{\r}\N{\fs14\1c&H42CEFD&}has five bedrooms...{\r}
+Dialogue: 0,1:20:36.05,1:20:38.55,Default,,0000,0000,0000,,- 看见了吗？  - 是的！  - 我就知道{\r}\N{\fs14\1c&H42CEFD&}- Did you see him?   - Yes!   - I thought so.{\r}
+Dialogue: 0,1:20:39.35,1:20:41.95,Default,,0000,0000,0000,,- 它吃了绳子  - 什么？{\r}\N{\fs14\1c&H42CEFD&}- He ate the string.   - What?{\r}
+Dialogue: 0,1:20:42.10,1:20:44.75,Default,,0000,0000,0000,,绳子 老爸的幸运绳！{\r}\N{\fs14\1c&H42CEFD&}The string. Pop's lucky string!{\r}
+Dialogue: 0,1:20:45.00,1:20:46.75,Default,,0000,0000,0000,,它把绳子给吃了！{\r}\N{\fs14\1c&H42CEFD&}The son of a bitch ate it!{\r}
+Dialogue: 0,1:20:46.95,1:20:48.40,Default,,0000,0000,0000,,你是不是早就看见了？{\r}\N{\fs14\1c&H42CEFD&}Why didn't you tell me you saw him?{\r}
+Dialogue: 0,1:20:48.50,1:20:50.15,Default,,0000,0000,0000,,我没看见 我只找到了这个{\r}\N{\fs14\1c&H42CEFD&}I didn't, but I found this.{\r}
+Dialogue: 0,1:20:51.95,1:20:54.25,Default,,0000,0000,0000,,- 你该按重量贴邮票  - 抱歉{\r}\N{\fs14\1c&H42CEFD&}- I told you you should have weighed him.   - I'm sorry.{\r}
+Dialogue: 0,1:20:56.80,1:20:59.30,Default,,0000,0000,0000,,- 它往哪儿跑了？  - 不知道 但跑不远{\r}\N{\fs14\1c&H42CEFD&}- Did you see where it went?   - No, but it can't have gone far.{\r}
+Dialogue: 0,1:21:00.85,1:21:03.35,Default,,0000,0000,0000,,那么 底价是一百万美元？{\r}\N{\fs14\1c&H42CEFD&}Well, shall we start the bidding at $1 million?{\r}
+Dialogue: 0,1:21:04.50,1:21:07.35,Default,,0000,0000,0000,,我们都知道 这是拉鲁的遗作{\r}\N{\fs14\1c&H42CEFD&}Now, we all know we're here to bid on the missing LaRue.{\r}
+Dialogue: 0,1:21:07.95,1:21:10.23,Default,,0000,0000,0000,,那么有人愿意出五十万美元吗？{\r}\N{\fs14\1c&H42CEFD&}Shall we start the bidding at $500,000?{\r}
+Dialogue: 0,1:21:11.95,1:21:14.70,Default,,0000,0000,0000,,很好 日本先生愿意出价五十万{\r}\N{\fs14\1c&H42CEFD&}Very good. I have $500,000 from the gentleman from Japan.{\r}
+Dialogue: 0,1:21:15.40,1:21:19.55,Default,,0000,0000,0000,,- 有人出一百万吗？一百万美元？  - 一百万{\r}\N{\fs14\1c&H42CEFD&}- Now can I hear a million? Can I hear one million?   - A million.{\r}
+Dialogue: 0,1:21:20.05,1:21:21.35,Default,,0000,0000,0000,,我出一百五十万{\r}\N{\fs14\1c&H42CEFD&}I'll give you one and a half.{\r}
+Dialogue: 0,1:21:21.65,1:21:24.35,Default,,0000,0000,0000,,一百五十万美元 有人出两百万吗？{\r}\N{\fs14\1c&H42CEFD&}I have $1.5 million. Will someone give me two?{\r}
+Dialogue: 0,1:21:24.55,1:21:25.35,Default,,0000,0000,0000,,噢…{\r}\N{\fs14\1c&H42CEFD&}Oh...{\r}
+Dialogue: 0,1:21:26.35,1:21:27.35,Default,,0000,0000,0000,,它在那儿！{\r}\N{\fs14\1c&H42CEFD&}There he is!{\r}
+Dialogue: 0,1:21:27.95,1:21:31.55,Default,,0000,0000,0000,,女士们先生们 请允许我提醒各位…{\r}\N{\fs14\1c&H42CEFD&}Ladies and gentleman, I'd like to remind you...{\r}
+Dialogue: 0,1:21:31.90,1:21:34.00,Default,,0000,0000,0000,,这里所有的地毯和挂毯{\r}\N{\fs14\1c&H42CEFD&}that all the carpets and tapestries{\r}
+Dialogue: 0,1:21:34.15,1:21:36.70,Default,,0000,0000,0000,,均为土耳其高档手织工艺品…{\r}\N{\fs14\1c&H42CEFD&}were woven by hand in the Honess Valley in Northern Turkey.{\r}
+Dialogue: 0,1:21:36.70,1:21:37.55,Default,,0000,0000,0000,,你好{\r}\N{\fs14\1c&H42CEFD&}Hello.{\r}
+Dialogue: 0,1:21:37.80,1:21:40.75,Default,,0000,0000,0000,,现在 有高于一百五十万的吗？{\r}\N{\fs14\1c&H42CEFD&}Now, can I have an advance on 1.5? May I have two?{\r}
+Dialogue: 0,1:21:41.45,1:21:45.15,Default,,0000,0000,0000,,两百万 谁愿意出价两百万？{\r}\N{\fs14\1c&H42CEFD&}Can I have two, ladies and gentlemen?{\r}
+Dialogue: 0,1:21:45.85,1:21:46.70,Default,,0000,0000,0000,,两百万！{\r}\N{\fs14\1c&H42CEFD&}Two million!{\r}
+Dialogue: 0,1:21:47.10,1:21:48.55,Default,,0000,0000,0000,,有人出两百万了{\r}\N{\fs14\1c&H42CEFD&}I have $2 million.{\r}
+Dialogue: 0,1:21:50.90,1:21:54.35,Default,,0000,0000,0000,,两百万 女士们先生们 还有更高的吗？{\r}\N{\fs14\1c&H42CEFD&}I have $2 million, ladies and gentlemen. Can I have an advance?{\r}
+Dialogue: 0,1:21:55.25,1:21:57.55,Default,,0000,0000,0000,,- 高于两百万的出价？  - 噢 你真漂亮{\r}\N{\fs14\1c&H42CEFD&}- Can I have an advance on $2 million?   - Oh, you look so beautiful.{\r}
+Dialogue: 0,1:21:59.30,1:22:02.20,Default,,0000,0000,0000,,女士们先生们 我想请大家注意看这些…{\r}\N{\fs14\1c&H42CEFD&}Ladies and gentlemen, I'd like to draw your attention to the Lincrusia details...{\r}
+Dialogue: 0,1:22:02.21,1:22:05.25,Default,,0000,0000,0000,,铜器 镶金边 以及锡铅合金的叶子…{\r}\N{\fs14\1c&H42CEFD&}of the gold and silver-leafed copper and pewter...{\r}
+Dialogue: 0,1:22:07.12,1:22:10.05,Default,,0000,0000,0000,,女士们先生们 有人出价吗？{\r}\N{\fs14\1c&H42CEFD&}Ladies and gentlemen, can I have an advance?{\r}
+Dialogue: 0,1:22:10.35,1:22:12.15,Default,,0000,0000,0000,,高于两百万的出价？{\r}\N{\fs14\1c&H42CEFD&}An advance on $2 million?{\r}
+Dialogue: 0,1:22:12.30,1:22:14.05,Default,,0000,0000,0000,,有人出三百万吗？{\r}\N{\fs14\1c&H42CEFD&}May I hear $3 million?{\r}
+Dialogue: 0,1:22:14.25,1:22:16.47,Default,,0000,0000,0000,,纽约来的女士愿意出价三百万{\r}\N{\fs14\1c&H42CEFD&}I have $3 million from the lady from New York City.{\r}
+Dialogue: 0,1:22:16.55,1:22:17.95,Default,,0000,0000,0000,,- 哼！  - 你在干什么？{\r}\N{\fs14\1c&H42CEFD&}- Hum!   - What are you doing?{\r}
+Dialogue: 0,1:22:18.15,1:22:19.35,Default,,0000,0000,0000,,- 呃 呃 呃…  - 四百万呢？{\r}\N{\fs14\1c&H42CEFD&}- Uh, uh, uh...   - Four million?{\r}
+Dialogue: 0,1:22:19.40,1:22:20.50,Default,,0000,0000,0000,,有人出更高价吗？{\r}\N{\fs14\1c&H42CEFD&}Can I have an advance?{\r}
+Dialogue: 0,1:22:20.60,1:22:21.20,Default,,0000,0000,0000,,没什么！{\r}\N{\fs14\1c&H42CEFD&}Nothing!{\r}
+Dialogue: 0,1:22:21.25,1:22:22.75,Default,,0000,0000,0000,,- 把你的手拿出来！  - 谁愿意出四百万？{\r}\N{\fs14\1c&H42CEFD&}- Get your hand out of there immediately!   - May I hear $4 million?{\r}
+Dialogue: 0,1:22:22.80,1:22:23.65,Default,,0000,0000,0000,,太过份了！{\r}\N{\fs14\1c&H42CEFD&}Too much!{\r}
+Dialogue: 0,1:22:23.70,1:22:24.85,Default,,0000,0000,0000,,女士们先生们{\r}\N{\fs14\1c&H42CEFD&}Ladies and gentlemen,{\r}
+Dialogue: 0,1:22:24.95,1:22:26.40,Default,,0000,0000,0000,,- 或许大家已经注意到了…  - 马上就好 马上就好了！{\r}\N{\fs14\1c&H42CEFD&}Wait! Wait just a minute!{\r}
+Dialogue: 0,1:22:26.45,1:22:26.95,Default,,0000,0000,0000,,拿出来！{\r}\N{\fs14\1c&H42CEFD&}Take it out!{\r}
+Dialogue: 0,1:22:26.95,1:22:28.45,Default,,0000,0000,0000,,…这两块镶花地板…{\r}\N{\fs14\1c&H42CEFD&}...These two parquet floor boards...{\r}
+Dialogue: 0,1:22:28.50,1:22:30.25,Default,,0000,0000,0000,,- 马上就好！马上就好！  - …是摩洛哥所设计{\r}\N{\fs14\1c&H42CEFD&}- Wait! Wait just a minute!   - ...are designed by Morocco.{\r}
+Dialogue: 0,1:22:33.05,1:22:34.95,Default,,0000,0000,0000,,现在有人出价四百万吗？{\r}\N{\fs14\1c&H42CEFD&}Now may I hear four million dollars?{\r}
+Dialogue: 0,1:22:36.75,1:22:37.55,Default,,0000,0000,0000,,太棒了！{\r}\N{\fs14\1c&H42CEFD&}That's great!{\r}
+Dialogue: 0,1:22:37.75,1:22:38.55,Default,,0000,0000,0000,,四百万！{\r}\N{\fs14\1c&H42CEFD&}Four million!{\r}
+Dialogue: 0,1:22:38.80,1:22:41.16,Default,,0000,0000,0000,,呃 日本先生出价四百万美元{\r}\N{\fs14\1c&H42CEFD&}$4 million from the gentleman from Japan.{\r}
+Dialogue: 0,1:22:41.65,1:22:42.75,Default,,0000,0000,0000,,摸到了！{\r}\N{\fs14\1c&H42CEFD&}I got it!{\r}
+Dialogue: 0,1:22:47.45,1:22:47.90,Default,,0000,0000,0000,,呃{\r}\N{\fs14\1c&H42CEFD&}Uh,{\r}
+Dialogue: 0,1:22:47.95,1:22:49.55,Default,,0000,0000,0000,,酋长出五百万{\r}\N{\fs14\1c&H42CEFD&}the sheikh bids $5 million.{\r}
+Dialogue: 0,1:22:51.70,1:22:52.95,Default,,0000,0000,0000,,- 谢谢酋长  - 我抓到了{\r}\N{\fs14\1c&H42CEFD&}- Thank you, sir.   - I've got you now.{\r}
+Dialogue: 0,1:22:53.10,1:22:54.15,Default,,0000,0000,0000,,五百万美元{\r}\N{\fs14\1c&H42CEFD&}$5 million.{\r}
+Dialogue: 0,1:22:54.70,1:22:56.15,Default,,0000,0000,0000,,五百万美元{\r}\N{\fs14\1c&H42CEFD&}$5 million.{\r}
+Dialogue: 0,1:22:57.95,1:22:59.75,Default,,0000,0000,0000,,有人愿意出更高的价格吗？{\r}\N{\fs14\1c&H42CEFD&}Can I have an advance on...on $5 million?{\r}
+Dialogue: 0,1:23:00.55,1:23:03.05,Default,,0000,0000,0000,,女士们先生们 五百万美元{\r}\N{\fs14\1c&H42CEFD&}Ladies and gentlemen, $5 million.{\r}
+Dialogue: 0,1:23:03.15,1:23:04.70,Default,,0000,0000,0000,,还有更高价吗？{\r}\N{\fs14\1c&H42CEFD&}Can I have an advance?{\r}
+Dialogue: 0,1:23:04.95,1:23:06.55,Default,,0000,0000,0000,,这可是拉鲁的遗作{\r}\N{\fs14\1c&H42CEFD&}It's the missing LaRue.{\r}
+Dialogue: 0,1:23:07.05,1:23:08.75,Default,,0000,0000,0000,,现在出价五百万{\r}\N{\fs14\1c&H42CEFD&}The bidding stands at $5 million,{\r}
+Dialogue: 0,1:23:08.95,1:23:10.35,Default,,0000,0000,0000,,- 女士们先生们…  - 小子！  - 哎 别松手{\r}\N{\fs14\1c&H42CEFD&}- ladies and gentlemen...   - my little friend!   - Hold on tight.{\r}
+Dialogue: 0,1:23:10.40,1:23:11.50,Default,,0000,0000,0000,,我把它弄出来！{\r}\N{\fs14\1c&H42CEFD&}I'm gonna get it out!{\r}
+Dialogue: 0,1:23:11.70,1:23:12.75,Default,,0000,0000,0000,,噢 天呐{\r}\N{\fs14\1c&H42CEFD&}Oh, god.{\r}
+Dialogue: 0,1:23:13.35,1:23:14.35,Default,,0000,0000,0000,,哎 好了{\r}\N{\fs14\1c&H42CEFD&}Hey. Okay.{\r}
+Dialogue: 0,1:23:14.75,1:23:16.24,Default,,0000,0000,0000,,拉鲁遗作五百万美元{\r}\N{\fs14\1c&H42CEFD&}Uh, $5 million for the missing LaRue.{\r}
+Dialogue: 0,1:23:16.35,1:23:19.20,Default,,0000,0000,0000,,- 它就在我的手里  - 是吗？好了{\r}\N{\fs14\1c&H42CEFD&}- It's in my hand.   - Is it? Okay.{\r}
+Dialogue: 0,1:23:19.25,1:23:20.35,Default,,0000,0000,0000,,你还没碰到它吗？{\r}\N{\fs14\1c&H42CEFD&}Haven't you touched it yet?{\r}
+Dialogue: 0,1:23:20.70,1:23:24.10,Default,,0000,0000,0000,,- 女士们先生们 有人愿意出六百万吗？  - 它跑了！{\r}\N{\fs14\1c&H42CEFD&}- Ladies and gentlemen, can I have an advance on five? Will someone give me $6 million?   - It's gone!{\r}
+Dialogue: 0,1:23:24.25,1:23:26.15,Default,,0000,0000,0000,,- 六百万  - 谢谢 先生{\r}\N{\fs14\1c&H42CEFD&}- Six million.   - Thank you, sir.{\r}
+Dialogue: 0,1:23:26.20,1:23:28.55,Default,,0000,0000,0000,,- 希尔德 你的线轴冒烟了！  - 有人出价六百万美元{\r}\N{\fs14\1c&H42CEFD&}- Hilde, the spool is smoking!   - I have $6 million.{\r}
+Dialogue: 0,1:23:28.60,1:23:30.35,Default,,0000,0000,0000,,还有人出更高价吗？{\r}\N{\fs14\1c&H42CEFD&}May I have an advance?{\r}
+Dialogue: 0,1:23:34.85,1:23:35.95,Default,,0000,0000,0000,,女士们先生们{\r}\N{\fs14\1c&H42CEFD&}Ladies and gentlemen.{\r}
+Dialogue: 0,1:23:36.25,1:23:37.25,Default,,0000,0000,0000,,高于六百万？{\r}\N{\fs14\1c&H42CEFD&}An advance on $6 million?{\r}
+Dialogue: 0,1:23:37.60,1:23:40.20,Default,,0000,0000,0000,,现在的出价是六百万美元{\r}\N{\fs14\1c&H42CEFD&}The bidding stands at six million dollars.{\r}
+Dialogue: 0,1:23:40.25,1:23:41.45,Default,,0000,0000,0000,,- 噢 快想办法！  - 七百万{\r}\N{\fs14\1c&H42CEFD&}- Oh, do something!   - Seven million.{\r}
+Dialogue: 0,1:23:41.55,1:23:44.05,Default,,0000,0000,0000,,- 快想办法！  - 七百万美元 谢谢你 先生{\r}\N{\fs14\1c&H42CEFD&}- Find a way!   - Seven million dollars. Thank you, sir.{\r}
+Dialogue: 0,1:23:44.25,1:23:46.95,Default,,0000,0000,0000,,七百万美元 还有更高价吗？{\r}\N{\fs14\1c&H42CEFD&}I have seven. Any advance on seven?{\r}
+Dialogue: 0,1:23:48.35,1:23:49.25,Default,,0000,0000,0000,,七百万{\r}\N{\fs14\1c&H42CEFD&}Seven million.{\r}
+Dialogue: 0,1:23:49.30,1:23:51.55,Default,,0000,0000,0000,,女士们先生们 七百万美元{\r}\N{\fs14\1c&H42CEFD&}Ladies and gentlemen. Seven million dollars.{\r}
+Dialogue: 0,1:23:51.75,1:23:53.55,Default,,0000,0000,0000,,有人出八百万元吗？{\r}\N{\fs14\1c&H42CEFD&}May I hear Eight million dollars?{\r}
+Dialogue: 0,1:23:54.95,1:23:56.75,Default,,0000,0000,0000,,- 天呐！  - 让她离墙远一点儿！{\r}\N{\fs14\1c&H42CEFD&}- God!   - Keep her away from the walls!{\r}
+Dialogue: 0,1:23:56.90,1:23:57.95,Default,,0000,0000,0000,,这房子是无价之宝！{\r}\N{\fs14\1c&H42CEFD&}The house is priceless!{\r}
+Dialogue: 0,1:23:58.55,1:23:59.45,Default,,0000,0000,0000,,您继续！{\r}\N{\fs14\1c&H42CEFD&}Keep goin'!{\r}
+Dialogue: 0,1:23:59.85,1:24:00.75,Default,,0000,0000,0000,,哦 好 好 好{\r}\N{\fs14\1c&H42CEFD&}Oh, yes, yes, yes.{\r}
+Dialogue: 0,1:24:00.95,1:24:02.15,Default,,0000,0000,0000,,七百五十万？{\r}\N{\fs14\1c&H42CEFD&}C-C-Can I have 7.5?{\r}
+Dialogue: 0,1:24:02.55,1:24:03.15,Default,,0000,0000,0000,,法尔科先生！{\r}\N{\fs14\1c&H42CEFD&}Mr. Falko!{\r}
+Dialogue: 0,1:24:03.25,1:24:04.65,Default,,0000,0000,0000,,- 现在我们…  - 法尔科先生！{\r}\N{\fs14\1c&H42CEFD&}- I have...   - Mr. Falko!{\r}
+Dialogue: 0,1:24:06.25,1:24:07.95,Default,,0000,0000,0000,,…哦 有人出八百万{\r}\N{\fs14\1c&H42CEFD&}...Oh, $8 million over there.{\r}
+Dialogue: 0,1:24:08.25,1:24:09.75,Default,,0000,0000,0000,,八百万美元一次{\r}\N{\fs14\1c&H42CEFD&}$8 million going once,{\r}
+Dialogue: 0,1:24:10.25,1:24:11.55,Default,,0000,0000,0000,,八百万两次…{\r}\N{\fs14\1c&H42CEFD&}$8 million going twice...{\r}
+Dialogue: 0,1:24:11.55,1:24:14.88,Default,,0000,0000,0000,,八百万？八百万？你应该接受那张支票！{\r}\N{\fs14\1c&H42CEFD&}$8 million? $8 million? You should have taken the check!{\r}
+Dialogue: 0,1:24:14.96,1:24:17.35,Default,,0000,0000,0000,,- 真是大白痴！  - 你给我闭嘴！你这个…{\r}\N{\fs14\1c&H42CEFD&}- What an idiot!   - You shut up! You...{\r}
+Dialogue: 0,1:24:18.10,1:24:19.05,Default,,0000,0000,0000,,一千万！{\r}\N{\fs14\1c&H42CEFD&}Ten millions!{\r}
+Dialogue: 0,1:24:19.15,1:24:21.05,Default,,0000,0000,0000,,哦 一千万 一千一百万呢？{\r}\N{\fs14\1c&H42CEFD&}Oh, ten million dollars. Can I have 11?{\r}
+Dialogue: 0,1:24:21.30,1:24:23.15,Default,,0000,0000,0000,,日本先生出价一千一百万{\r}\N{\fs14\1c&H42CEFD&}I have $11 million from the gentleman from Japan.{\r}
+Dialogue: 0,1:24:23.45,1:24:24.55,Default,,0000,0000,0000,,一千二百五十万{\r}\N{\fs14\1c&H42CEFD&}Twelve.{\r}
+Dialogue: 0,1:24:24.65,1:24:25.80,Default,,0000,0000,0000,,一千三百万{\r}\N{\fs14\1c&H42CEFD&}Thirteen.{\r}
+Dialogue: 0,1:24:25.90,1:24:26.85,Default,,0000,0000,0000,,一千四百{\r}\N{\fs14\1c&H42CEFD&}Fourteen.{\r}
+Dialogue: 0,1:24:26.95,1:24:27.95,Default,,0000,0000,0000,,一千五百{\r}\N{\fs14\1c&H42CEFD&}Fifteen.{\r}
+Dialogue: 0,1:24:28.20,1:24:31.35,Default,,0000,0000,0000,,- 厄尼·斯曼兹先生出价一千六百万  - 错了！{\r}\N{\fs14\1c&H42CEFD&}- $16 million from Ernie Smuntz.   - No!{\r}
+Dialogue: 0,1:24:32.65,1:24:33.45,Default,,0000,0000,0000,,大白痴！{\r}\N{\fs14\1c&H42CEFD&}Big idiot!{\r}
+Dialogue: 0,1:24:33.50,1:24:36.61,Default,,0000,0000,0000,,- 一千七百万  - 一千七百万 谢谢 先生 一千七百万{\r}\N{\fs14\1c&H42CEFD&}- 17 million.   - $17 million. Thank you, sir. I have $17 million.{\r}
+Dialogue: 0,1:24:36.80,1:24:38.75,Default,,0000,0000,0000,,有人愿意出更高的价钱吗？{\r}\N{\fs14\1c&H42CEFD&}Any advance on seventeen?{\r}
+Dialogue: 0,1:24:40.00,1:24:41.00,Default,,0000,0000,0000,,灭火呀！{\r}\N{\fs14\1c&H42CEFD&}Fire fighting!{\r}
+Dialogue: 0,1:24:41.75,1:24:42.75,Default,,0000,0000,0000,,灭火呀！{\r}\N{\fs14\1c&H42CEFD&}Fire fighting!{\r}
+Dialogue: 0,1:24:48.20,1:24:50.12,Default,,0000,0000,0000,,- 好险呐！  - 好主意{\r}\N{\fs14\1c&H42CEFD&}- How dangerous!   - Good idea.{\r}
+Dialogue: 0,1:24:54.67,1:24:58.40,Default,,0000,0000,0000,,等我口令 把水龙头开到最大 把它冲出来{\r}\N{\fs14\1c&H42CEFD&}When I tell you to, turn it on full blast. We'll flush him out.{\r}
+Dialogue: 0,1:25:01.20,1:25:02.45,Default,,0000,0000,0000,,开！{\r}\N{\fs14\1c&H42CEFD&}Now!{\r}
+Dialogue: 0,1:25:09.01,1:25:12.64,Default,,0000,0000,0000,,- 一千八百万  - 纽约小姐出价一千八百万{\r}\N{\fs14\1c&H42CEFD&}- $18 million.   - $18 million from the lady from New York City.{\r}
+Dialogue: 0,1:25:12.73,1:25:15.27,Default,,0000,0000,0000,,- 谢谢 一千八百万  - 你根本没那么多钱{\r}\N{\fs14\1c&H42CEFD&}- Thank you. $18 million.   - You don't have that kind of money.{\r}
+Dialogue: 0,1:25:18.95,1:25:21.35,Default,,0000,0000,0000,,- 厄尼  - 等会  - 有人出价一千九百万吗？{\r}\N{\fs14\1c&H42CEFD&}- Ernie?   - Not now.   - May I hear $19 million?{\r}
+Dialogue: 0,1:25:21.50,1:25:22.95,Default,,0000,0000,0000,,一千九百万？{\r}\N{\fs14\1c&H42CEFD&}$19 million?{\r}
+Dialogue: 0,1:25:26.40,1:25:29.65,Default,,0000,0000,0000,,- 两千万  - 两千万 谢谢 法尔科先生！{\r}\N{\fs14\1c&H42CEFD&}- Twenty millions.   - Twenty million. Thank you. Mr. Falko.{\r}
+Dialogue: 0,1:25:29.90,1:25:31.55,Default,,0000,0000,0000,,有人出两千一百万吗？{\r}\N{\fs14\1c&H42CEFD&}Can I hear twenty-one?{\r}
+Dialogue: 0,1:25:50.20,1:25:51.95,Default,,0000,0000,0000,,日本先生出价两千一百万{\r}\N{\fs14\1c&H42CEFD&}$21 million from the gentleman from Japan.{\r}
+Dialogue: 0,1:25:52.10,1:25:53.75,Default,,0000,0000,0000,,还有人出更高价吗？{\r}\N{\fs14\1c&H42CEFD&}May I have an advance?{\r}
+Dialogue: 0,1:25:57.35,1:26:01.05,Default,,0000,0000,0000,,- 两千一百万？  - 两千二百万 不能再高了{\r}\N{\fs14\1c&H42CEFD&}- Any advance?   - Twenty-two million. That's my last offer.{\r}
+Dialogue: 0,1:26:05.60,1:26:07.32,Default,,0000,0000,0000,,两千二百万一次…{\r}\N{\fs14\1c&H42CEFD&}Twenty-two million going once...{\r}
+Dialogue: 0,1:26:10.70,1:26:12.20,Default,,0000,0000,0000,,两千五百万{\r}\N{\fs14\1c&H42CEFD&}25 millions.{\r}
+Dialogue: 0,1:26:12.55,1:26:14.45,Default,,0000,0000,0000,,两千五百万{\r}\N{\fs14\1c&H42CEFD&}25 million dollars.{\r}
+Dialogue: 0,1:26:18.60,1:26:19.75,Default,,0000,0000,0000,,谢谢 先生{\r}\N{\fs14\1c&H42CEFD&}Thank you, sir.{\r}
+Dialogue: 0,1:26:20.45,1:26:21.95,Default,,0000,0000,0000,,两千五百万{\r}\N{\fs14\1c&H42CEFD&}25 million dollars.{\r}
+Dialogue: 0,1:26:22.95,1:26:24.35,Default,,0000,0000,0000,,两千五百万{\r}\N{\fs14\1c&H42CEFD&}25 million dollars.{\r}
+Dialogue: 0,1:26:24.75,1:26:28.70,Default,,0000,0000,0000,,当前出价是两千五百万美元 还有更高价吗？{\r}\N{\fs14\1c&H42CEFD&}The bidding stands at $25 million. Do I have an advance?{\r}
+Dialogue: 0,1:26:30.48,1:26:33.05,Default,,0000,0000,0000,,两千五百万美元一次{\r}\N{\fs14\1c&H42CEFD&}$25 million going once,{\r}
+Dialogue: 0,1:26:35.27,1:26:37.52,Default,,0000,0000,0000,,两千五百万美元两次…{\r}\N{\fs14\1c&H42CEFD&}$25 million going twice...{\r}
+Dialogue: 0,1:27:05.25,1:27:06.80,Default,,0000,0000,0000,,哎 等等 你们去哪儿？{\r}\N{\fs14\1c&H42CEFD&}Hey, wait. Where are you going?{\r}
+Dialogue: 0,1:27:06.95,1:27:08.70,Default,,0000,0000,0000,,我还能找到 真的 等等 女士{\r}\N{\fs14\1c&H42CEFD&}I can still find it. Really. Wait, ma'am.{\r}
+Dialogue: 0,1:27:08.85,1:27:10.75,Default,,0000,0000,0000,,就一小会儿 我能再找个拉鲁的房子{\r}\N{\fs14\1c&H42CEFD&}Just a little while. I can find another LaRu's house.{\r}
+Dialogue: 0,1:27:10.75,1:27:13.05,Default,,0000,0000,0000,,嘿！别走！{\r}\N{\fs14\1c&H42CEFD&}Hey! Don't go!{\r}
+Dialogue: 0,1:27:14.45,1:27:17.55,Default,,0000,0000,0000,,这些水只是 只是…{\r}\N{\fs14\1c&H42CEFD&}The water was just a...{\r}
+Dialogue: 0,1:27:18.05,1:27:20.75,Default,,0000,0000,0000,,为了演示… 拉鲁的房子{\r}\N{\fs14\1c&H42CEFD&}a demonstration of... of how durable...{\r}
+Dialogue: 0,1:27:21.00,1:27:22.65,Default,,0000,0000,0000,,有多么坚固{\r}\N{\fs14\1c&H42CEFD&}a LaRue really is.{\r}
+Dialogue: 0,1:27:24.70,1:27:25.95,Default,,0000,0000,0000,,怎么样？{\r}\N{\fs14\1c&H42CEFD&}How about that?{\r}
+Dialogue: 0,1:27:26.35,1:27:30.15,Default,,0000,0000,0000,,知道了吧？这房子永远不会塌{\r}\N{\fs14\1c&H42CEFD&}Now you know this house will last forever.{\r}
+Dialogue: 0,1:28:39.30,1:28:40.90,Default,,0000,0000,0000,,爸爸的幸运绳{\r}\N{\fs14\1c&H42CEFD&}Pop's lucky string.{\r}
+Dialogue: 0,1:28:41.80,1:28:43.40,Default,,0000,0000,0000,,我们干掉它了{\r}\N{\fs14\1c&H42CEFD&}I guess we got him.{\r}
+Dialogue: 0,1:28:46.55,1:28:48.45,Default,,0000,0000,0000,,是 应该是{\r}\N{\fs14\1c&H42CEFD&}Yeah, I guess we did.{\r}
+Dialogue: 0,1:30:17.30,1:30:18.75,Default,,0000,0000,0000,,什么声音？{\r}\N{\fs14\1c&H42CEFD&}What was that?{\r}
+Dialogue: 0,1:30:32.20,1:30:34.35,Default,,0000,0000,0000,,拉尔斯！你看！{\r}\N{\fs14\1c&H42CEFD&}Lars! Look!{\r}
+Dialogue: 0,1:31:05.95,1:31:07.75,Default,,0000,0000,0000,,是绳子{\r}\N{\fs14\1c&H42CEFD&}It's string.{\r}
+Dialogue: 0,1:31:15.35,1:31:16.75,Default,,0000,0000,0000,,奶酪的{\r}\N{\fs14\1c&H42CEFD&}It's cheese.{\r}
+Dialogue: 0,1:31:44.15,1:31:46.15,Default,,0000,0000,0000,,工厂经过整体改造之后…{\r}\N{\fs14\1c&H42CEFD&}The entire factory has been retrofitted...{\r}
+Dialogue: 0,1:31:46.35,1:31:48.95,Default,,0000,0000,0000,,积极投入奶酪制品的加工生产{\r}\N{\fs14\1c&H42CEFD&}to facilitate the manufacturing of cheese-based products.{\r}
+Dialogue: 0,1:31:49.55,1:31:50.55,Default,,0000,0000,0000,,是这样{\r}\N{\fs14\1c&H42CEFD&}I see.{\r}
+Dialogue: 0,1:31:50.85,1:31:53.75,Default,,0000,0000,0000,,那是新型无乳糖奶糖生产线{\r}\N{\fs14\1c&H42CEFD&}And over here we're developing our new lactose-free line.{\r}
+Dialogue: 0,1:31:54.30,1:31:56.50,Default,,0000,0000,0000,,- 那边呢？  - 哦 那是质检处{\r}\N{\fs14\1c&H42CEFD&}- What is that?   - Oh, that's quality control.{\r}
+Dialogue: 0,1:31:57.95,1:31:59.55,Default,,0000,0000,0000,,尽情吃吧{\r}\N{\fs14\1c&H42CEFD&}Here you go. Knock yourself out.{\r}
+Dialogue: 0,1:32:01.50,1:32:04.95,Default,,0000,0000,0000,,哦 不好吃？奥蒂斯 多放咖喱{\r}\N{\fs14\1c&H42CEFD&}Oh. No good, huh? Otis, more curry.{\r}
+Dialogue: 0,1:32:05.15,1:32:06.95,Default,,0000,0000,0000,,好 尝尝这个{\r}\N{\fs14\1c&H42CEFD&}Okay. Try this one.{\r}
+Dialogue: 0,1:32:08.35,1:32:12.10,Default,,0000,0000,0000,,嗯？马苏里拉奶酪加青鱼{\r}\N{\fs14\1c&H42CEFD&}Huh? It's mozzarella and herring.{\r}
+Dialogue: 0,1:32:12.15,1:32:13.86,Default,,0000,0000,0000,,有鱼味儿吧？{\r}\N{\fs14\1c&H42CEFD&}You can taste the herring, right?{\r}
+Dialogue: 0,1:32:13.94,1:32:16.95,Default,,0000,0000,0000,,我还要为孩子生产鱼子酱加布里干酪…{\r}\N{\fs14\1c&H42CEFD&}I've also got a great idea for a caviar-brie swirl,{\r}
+Dialogue: 0,1:32:17.15,1:32:19.45,Default,,0000,0000,0000,,和花生酱 加波萝伏洛干酪{\r}\N{\fs14\1c&H42CEFD&}and a peanut butter and jelly provolone for the kids.{\r}
+Dialogue: 0,1:32:19.70,1:32:22.25,Default,,0000,0000,0000,,不过我真正想和你商量的是开拓市场{\r}\N{\fs14\1c&H42CEFD&}But what I really want to talk to you about is expansion and marketing.{\r}
+Dialogue: 0,1:32:22.50,1:32:24.20,Default,,0000,0000,0000,,让你来做我们的代言人{\r}\N{\fs14\1c&H42CEFD&}I think you should be our spokesperson.{\r}
+Dialogue: 0,1:32:24.35,1:32:28.15,Default,,0000,0000,0000,,以前有人用老鼠做过代言 效果相当不错{\r}\N{\fs14\1c&H42CEFD&}I know some people who've used a mouse as a spokesperson, and it seemed to work out well.{\r}
+Dialogue: 0,1:32:28.65,1:32:31.95,Default,,0000,0000,0000,,我想把这里变成最先进的绳子奶酪工厂{\r}\N{\fs14\1c&H42CEFD&}You see, I want to turn this into the string cheese factory of tomorrow today...{\r}
+Dialogue: 0,1:32:32.25,1:32:34.55,Default,,0000,0000,0000,,让它成为经久不衰的佳肴…{\r}\N{\fs14\1c&H42CEFD&}Make it an enduring delicacy...{\r}
+Dialogue: 0,1:32:42.65,1:32:47.15,Default,,0000,0000,0000,,{\fad(1000,2000)\fnMicrosoft YaHei\fs12\bord3\shad0\fsp1\pos(256,177)\fscx110\fscy86\frz354\1c&H132D33&\3c&H608A91&}--鲁道夫·斯曼兹
+Dialogue: 0,1:32:42.65,1:32:47.15,Default,,0000,0000,0000,,{\fad(1000,2000)\fnMicrosoft YaHei\fs14\bord4\shad0\fsp3\pos(222,160)\fscx110\fscy86\frz353.5\1c&H132D33&\3c&H608A91&}“没有绳子的世界是混乱的”
+
+
