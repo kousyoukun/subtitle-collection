@@ -1,0 +1,2298 @@
+[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 注释,Arial,13,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,68,1
+Style: 演职员,SimHei,18,&H00000000,&H0000FFFF,&H00FF0000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,98,1
+Style: 片名,SimHei,23,&H00393939,&H0000FFFF,&H00FF0000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,98,1
+Style: CN,SimHei,14,&H00EEFFFF,&H0000FFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: EN,Arial Narrow,12,&H00EEFFFF,&H0000FFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,0,2,3,2,20,20,20,1
+Style: Default,Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2,3,2,20,20,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:01:29.90,0:01:32.83,EN,,0000,0000,0000,,I ask you now to pronounce judgment...
+Dialogue: 0,0:01:33.00,0:01:34.53,EN,,0000,0000,0000,,...on those accused.
+Dialogue: 0,0:01:37.01,0:01:38.30,EN,,0000,0000,0000,,On this...
+Dialogue: 0,0:01:38.47,0:01:42.64,EN,,0000,0000,0000,,This mindless aberration, whose only means of expression...
+Dialogue: 0,0:01:42.81,0:01:45.18,EN,,0000,0000,0000,,...are wanton violence and destruction.
+Dialogue: 0,0:01:46.45,0:01:47.71,EN,,0000,0000,0000,,On the woman, Ursa...
+Dialogue: 0,0:01:48.18,0:01:51.41,EN,,0000,0000,0000,,...whose perversions and unreasoning hatred of all mankind...
+Dialogue: 0,0:01:51.92,0:01:55.48,EN,,0000,0000,0000,,...have threatened even the children of the planet Krypton.
+Dialogue: 0,0:01:56.69,0:01:59.42,EN,,0000,0000,0000,,Finally, General Zod.
+Dialogue: 0,0:01:59.60,0:02:01.83,EN,,0000,0000,0000,,Chief architect of this intended revolution...
+Dialogue: 0,0:02:02.00,0:02:07.06,EN,,0000,0000,0000,,...and author of this insidious plot to establish a new order amongst us...
+Dialogue: 0,0:02:07.44,0:02:10.96,EN,,0000,0000,0000,,...with himself as absolute ruler.
+Dialogue: 0,0:02:11.94,0:02:14.38,EN,,0000,0000,0000,,The decision of the council will now be heard.
+Dialogue: 0,0:02:14.54,0:02:15.84,EN,,0000,0000,0000,,Guilty.
+Dialogue: 0,0:02:16.85,0:02:18.04,EN,,0000,0000,0000,,- Guilty. - Guilty.
+Dialogue: 0,0:02:20.02,0:02:21.61,EN,,0000,0000,0000,,Guilty.
+Dialogue: 0,0:02:23.95,0:02:25.85,EN,,0000,0000,0000,,The vote must be unanimous, Jor-EI.
+Dialogue: 0,0:02:26.86,0:02:29.29,EN,,0000,0000,0000,,It has therefore now become your decision.
+Dialogue: 0,0:02:29.46,0:02:31.79,EN,,0000,0000,0000,,You alone will condemn us if you wish...
+Dialogue: 0,0:02:31.96,0:02:34.90,EN,,0000,0000,0000,,...and you alone will be held responsible by me.
+Dialogue: 0,0:02:45.47,0:02:47.94,EN,,0000,0000,0000,,You will bow down before me, Jor-EI.
+Dialogue: 0,0:02:48.11,0:02:49.30,EN,,0000,0000,0000,,I swear it.
+Dialogue: 0,0:02:49.48,0:02:54.47,EN,,0000,0000,0000,,No matter that it takes an eternity, you will bow down before me!
+Dialogue: 0,0:02:54.65,0:02:55.74,EN,,0000,0000,0000,,Both you...
+Dialogue: 0,0:02:56.02,0:02:57.11,EN,,0000,0000,0000,,...and then one day...
+Dialogue: 0,0:02:57.29,0:02:59.19,EN,,0000,0000,0000,,...your heirs!
+Dialogue: 0,0:03:28.58,0:03:32.15,EN,,0000,0000,0000,,You will bow down before me!
+Dialogue: 0,0:03:34.12,0:03:36.49,EN,,0000,0000,0000,,- Forgive me! - I'll be back!
+Dialogue: 0,0:03:36.66,0:03:37.78,EN,,0000,0000,0000,,Forgive me!
+Dialogue: 0,0:04:10.86,0:04:15.35,EN,,0000,0000,0000,,Your mother Lara has sent you three blankets, of red, yellow and blue.
+Dialogue: 0,0:04:16.80,0:04:19.20,EN,,0000,0000,0000,,Their protection will ensure your strength.
+Dialogue: 0,0:05:28.80,0:05:32.74,EN,,0000,0000,0000,,It's kryptonite, Superman. A little souvenir from the old hometown.
+Dialogue: 0,0:05:37.91,0:05:42.48,EN,,0000,0000,0000,,You were great in your day, Superman. But it just stands to reason...
+Dialogue: 0,0:05:42.65,0:05:45.09,EN,,0000,0000,0000,,...when it came time to cash in your chips...
+Dialogue: 0,0:05:45.25,0:05:48.69,EN,,0000,0000,0000,,...this old, diseased maniac...
+Dialogue: 0,0:05:48.86,0:05:50.79,EN,,0000,0000,0000,,...would be your banker.
+Dialogue: 0,0:05:54.23,0:05:56.16,EN,,0000,0000,0000,,Mind over muscle.
+Dialogue: 0,0:06:29.93,0:06:32.13,EN,,0000,0000,0000,,Why did you kiss me first?
+Dialogue: 0,0:06:33.40,0:06:36.43,EN,,0000,0000,0000,,It... I didn't think you'd let me later.
+Dialogue: 0,0:06:36.61,0:06:38.40,EN,,0000,0000,0000,,Stand aside, now.
+Dialogue: 0,0:08:15.57,0:08:17.60,EN,,0000,0000,0000,,Free!
+Dialogue: 0,0:12:02.20,0:12:06.13,EN,,0000,0000,0000,,Nice fresh melons. Nice fresh melons. Get them fresh here.
+Dialogue: 0,0:12:06.30,0:12:09.17,EN,,0000,0000,0000,,Good for the cooking, huh? Look at this, the best.
+Dialogue: 0,0:12:10.94,0:12:13.46,EN,,0000,0000,0000,,"Lex Luthor's scheme bombs. Superman saves nation.
+Dialogue: 0,0:12:13.64,0:12:17.08,EN,,0000,0000,0000,,Master criminal draws harsh sentence. Exclusive story by Lois Lane.
+Dialogue: 0,0:12:17.25,0:12:19.37,EN,,0000,0000,0000,,Photographs by James Olsen."
+Dialogue: 0,0:12:19.55,0:12:22.75,EN,,0000,0000,0000,,Luthor, you never looked lovelier.
+Dialogue: 0,0:12:22.92,0:12:24.08,EN,,0000,0000,0000,,Lois, terrific job.
+Dialogue: 0,0:12:24.25,0:12:26.22,EN,,0000,0000,0000,,- Thanks, chief. - Great story, really great.
+Dialogue: 0,0:12:26.39,0:12:28.58,EN,,0000,0000,0000,,Hey, good morning, chief. You're late.
+Dialogue: 0,0:12:28.76,0:12:31.66,EN,,0000,0000,0000,,Yeah, Miss Lane, that's a great story. One of the best.
+Dialogue: 0,0:12:31.83,0:12:36.16,EN,,0000,0000,0000,,Well, Jimmy, usually a picture isn't worth a thousand words when I write the story...
+Dialogue: 0,0:12:36.33,0:12:38.16,EN,,0000,0000,0000,,...but in this case, congratulations.
+Dialogue: 0,0:12:38.33,0:12:39.70,EN,,0000,0000,0000,,- Yeah, thanks a lot. - Yeah.
+Dialogue: 0,0:12:40.77,0:12:44.21,EN,,0000,0000,0000,,There's Mr. Kent. Bet he wishes he'd been around when it all happened.
+Dialogue: 0,0:12:44.37,0:12:46.90,EN,,0000,0000,0000,,Clark, he's never around when Superman appears.
+Dialogue: 0,0:12:47.08,0:12:48.57,EN,,0000,0000,0000,,Poor guy.
+Dialogue: 0,0:12:57.75,0:12:59.38,EN,,0000,0000,0000,,- You got a page in the front? - Yeah.
+Dialogue: 0,0:13:02.49,0:13:04.82,EN,,0000,0000,0000,,Miss Lane got the best story.
+Dialogue: 0,0:13:12.20,0:13:14.13,EN,,0000,0000,0000,,Good morning, Lois.
+Dialogue: 0,0:13:15.50,0:13:16.80,EN,,0000,0000,0000,,Hi.
+Dialogue: 0,0:13:54.28,0:13:56.57,EN,,0000,0000,0000,,Lane, Kent, get in here!
+Dialogue: 0,0:13:56.75,0:13:58.58,EN,,0000,0000,0000,,Now, see, Jimmy, you got me in trouble.
+Dialogue: 0,0:13:58.75,0:14:01.91,EN,,0000,0000,0000,,- We were talking. - So long. A big mistake.
+Dialogue: 0,0:14:02.75,0:14:05.08,EN,,0000,0000,0000,,Next time, don't do that to me.
+Dialogue: 0,0:14:05.42,0:14:09.05,EN,,0000,0000,0000,,- Good morning, Lois. How are you today? - Oh, I'm just super. Thanks.
+Dialogue: 0,0:14:09.22,0:14:10.89,EN,,0000,0000,0000,,- Good morning, Mr. White. - I'm super.
+Dialogue: 0,0:14:11.06,0:14:14.43,EN,,0000,0000,0000,,- Yeah, morning. You're late, Kent. - I know. I'm sorry, Mr. White.
+Dialogue: 0,0:14:14.60,0:14:16.86,EN,,0000,0000,0000,,- I got stuck in traffic. - Oh, that's a new one.
+Dialogue: 0,0:14:17.03,0:14:18.80,EN,,0000,0000,0000,,- Excuse me? - I mean, as opposed to:
+Dialogue: 0,0:14:18.97,0:14:22.43,EN,,0000,0000,0000,,"I was stuck in a phone booth" or "I got locked into the men's bathroom."
+Dialogue: 0,0:14:22.60,0:14:25.23,EN,,0000,0000,0000,,Lois, what are you talking about? I'm sorry I was late.
+Dialogue: 0,0:14:25.41,0:14:28.17,EN,,0000,0000,0000,,If you two wanna bicker, I have just the assignment for you.
+Dialogue: 0,0:14:28.34,0:14:32.34,EN,,0000,0000,0000,,You're gonna pose as a honeymoon couple to get an expose on the newlywed racket.
+Dialogue: 0,0:14:32.51,0:14:36.21,EN,,0000,0000,0000,,Some of those hotels are bilking those poor kids for every cent they can get.
+Dialogue: 0,0:14:36.38,0:14:39.62,EN,,0000,0000,0000,,Real human-interest stuff. Make your Aunt Hattie cry her eyes out.
+Dialogue: 0,0:14:39.89,0:14:42.91,EN,,0000,0000,0000,,- Newlyweds? - That is a great idea, Mr. White.
+Dialogue: 0,0:14:43.09,0:14:46.72,EN,,0000,0000,0000,,- I'm sorry, but I'm in the middle of a series... - I mean, it wouldn't take long.
+Dialogue: 0,0:14:46.90,0:14:51.39,EN,,0000,0000,0000,,We could just fly right up there and zoom back down again.
+Dialogue: 0,0:14:51.57,0:14:53.83,EN,,0000,0000,0000,,No, Superman?
+Dialogue: 0,0:14:54.00,0:14:57.20,EN,,0000,0000,0000,,Yeah. If he'd give you two a ride, maybe we could save a couple bucks.
+Dialogue: 0,0:14:57.47,0:14:59.84,EN,,0000,0000,0000,,I gotta see young Olsen. Six lousy photographs...
+Dialogue: 0,0:15:00.01,0:15:04.45,EN,,0000,0000,0000,,...and that kid's hitting me up for a raise. - Excuse me. Mr. White? Could we talk?
+Dialogue: 0,0:15:04.61,0:15:06.14,EN,,0000,0000,0000,,Darn.
+Dialogue: 0,0:15:07.08,0:15:09.98,EN,,0000,0000,0000,,You look like the cat who swallowed the canary this morning.
+Dialogue: 0,0:15:10.15,0:15:13.99,EN,,0000,0000,0000,,A canary? No, actually I was thinking of something bigger...
+Dialogue: 0,0:15:14.16,0:15:17.12,EN,,0000,0000,0000,,...something that flies, something more in blue.
+Dialogue: 0,0:15:17.59,0:15:19.56,EN,,0000,0000,0000,,Lois, as usual, I'm totally in the dark...
+Dialogue: 0,0:15:19.73,0:15:22.96,EN,,0000,0000,0000,,Let me just turn on the lights for you then.
+Dialogue: 0,0:15:24.87,0:15:26.63,EN,,0000,0000,0000,,Get the picture?
+Dialogue: 0,0:15:28.54,0:15:32.13,EN,,0000,0000,0000,,I didn't put this together until this morning. Which is really strange...
+Dialogue: 0,0:15:32.31,0:15:35.61,EN,,0000,0000,0000,,...because a good reporter isn't supposed to let anything slip by her.
+Dialogue: 0,0:15:35.78,0:15:38.21,EN,,0000,0000,0000,,Well, that's very amusing. Yes.
+Dialogue: 0,0:15:38.38,0:15:39.85,EN,,0000,0000,0000,,- Excuse me. - Amusing?
+Dialogue: 0,0:15:40.01,0:15:44.42,EN,,0000,0000,0000,,- Yes, sirree, that's... That's very amusing. - Amusing, huh?
+Dialogue: 0,0:15:44.65,0:15:48.75,EN,,0000,0000,0000,,Tall, broad shoulders...
+Dialogue: 0,0:15:49.16,0:15:51.18,EN,,0000,0000,0000,,...dark hair.
+Dialogue: 0,0:15:51.36,0:15:54.29,EN,,0000,0000,0000,,Gotta give you credit, you really had me fooled.
+Dialogue: 0,0:15:54.46,0:15:57.06,EN,,0000,0000,0000,,And I'm nobody's fool...
+Dialogue: 0,0:15:57.87,0:15:59.60,EN,,0000,0000,0000,,...Superman.
+Dialogue: 0,0:16:00.07,0:16:01.40,EN,,0000,0000,0000,,Superman?
+Dialogue: 0,0:16:01.57,0:16:05.73,EN,,0000,0000,0000,,You mean you think I'm Superman?
+Dialogue: 0,0:16:06.37,0:16:09.50,EN,,0000,0000,0000,,- Willing to bet my life on it. - Lois, you know, you are priceless.
+Dialogue: 0,0:16:09.68,0:16:12.67,EN,,0000,0000,0000,,Really. That is the single most ridiculous thing I've ever...
+Dialogue: 0,0:16:14.08,0:16:16.95,EN,,0000,0000,0000,,- Lois, what are you doing? - You wouldn't let me die, Superman.
+Dialogue: 0,0:16:56.93,0:17:00.59,EN,,0000,0000,0000,,- Oh, God. - Help her out. Help her out.
+Dialogue: 0,0:17:01.00,0:17:03.79,EN,,0000,0000,0000,,- Clark! - Lois, what have you done?
+Dialogue: 0,0:17:04.20,0:17:06.83,EN,,0000,0000,0000,,Clark, the... You're not...
+Dialogue: 0,0:17:09.44,0:17:12.77,EN,,0000,0000,0000,,Hey, Clark, you seen Lois?
+Dialogue: 0,0:17:15.71,0:17:17.51,EN,,0000,0000,0000,,She just stepped out for a minute.
+Dialogue: 0,0:17:34.93,0:17:37.92,EN,,0000,0000,0000,,This is how it ends for the greatest criminal mind of our time.
+Dialogue: 0,0:17:38.10,0:17:40.36,EN,,0000,0000,0000,,Not with a whimper, not with a bang.
+Dialogue: 0,0:17:40.54,0:17:43.06,EN,,0000,0000,0000,,How do they choose to reward Lex Luthor...
+Dialogue: 0,0:17:43.24,0:17:45.17,EN,,0000,0000,0000,,...the greatest genius in this world?
+Dialogue: 0,0:17:45.34,0:17:49.24,EN,,0000,0000,0000,,Do they give him glory or treasure? What, matter of fact, do they give him?
+Dialogue: 0,0:17:49.41,0:17:53.51,EN,,0000,0000,0000,,Life plus 25, Luthor. Get to work.
+Dialogue: 0,0:17:57.82,0:18:00.45,EN,,0000,0000,0000,,Don't feel bad, Mr. Luthor. It almost worked.
+Dialogue: 0,0:18:00.62,0:18:03.46,EN,,0000,0000,0000,,I mean, California almost fell down, right in the ocean.
+Dialogue: 0,0:18:03.63,0:18:05.42,EN,,0000,0000,0000,,Millions of people was almost killed.
+Dialogue: 0,0:18:05.59,0:18:08.79,EN,,0000,0000,0000,,If it hadn't been for that guy Superman, that overgrown Boy Scout.
+Dialogue: 0,0:18:08.96,0:18:12.19,EN,,0000,0000,0000,,- I want my Liberace record back tonight. - Tonight?
+Dialogue: 0,0:18:12.37,0:18:17.43,EN,,0000,0000,0000,,What are you gonna do with a guy like that? He flies around so fast and everything.
+Dialogue: 0,0:18:18.44,0:18:21.64,EN,,0000,0000,0000,,I mean, they can't even trace that guy on that radar they got.
+Dialogue: 0,0:18:21.84,0:18:24.78,EN,,0000,0000,0000,,Every time they try, he just flies off.
+Dialogue: 0,0:18:24.95,0:18:26.31,EN,,0000,0000,0000,,- Where? - North.
+Dialogue: 0,0:18:26.51,0:18:28.31,EN,,0000,0000,0000,,Why?
+Dialogue: 0,0:18:28.48,0:18:29.78,EN,,0000,0000,0000,,To ski?
+Dialogue: 0,0:18:29.95,0:18:33.35,EN,,0000,0000,0000,,Otis, every man has his vulnerable point.
+Dialogue: 0,0:18:33.52,0:18:36.75,EN,,0000,0000,0000,,Some, like you, Otis, have more than one.
+Dialogue: 0,0:18:36.93,0:18:38.86,EN,,0000,0000,0000,,I didn't see Superman's in time.
+Dialogue: 0,0:18:39.03,0:18:42.66,EN,,0000,0000,0000,,But now, through patience, invention, and skill...
+Dialogue: 0,0:18:43.70,0:18:46.79,EN,,0000,0000,0000,,...my little black box is just about ready.
+Dialogue: 0,0:18:46.97,0:18:50.20,EN,,0000,0000,0000,,Oh, that little black box in our cell?
+Dialogue: 0,0:18:53.21,0:18:56.27,EN,,0000,0000,0000,,That little black box, Mr. Luthor...
+Dialogue: 0,0:18:57.81,0:18:59.71,EN,,0000,0000,0000,,...what's it for?
+Dialogue: 0,0:18:59.88,0:19:05.68,EN,,0000,0000,0000,,That little black box goes beyond any normal, conventional radar.
+Dialogue: 0,0:19:05.85,0:19:08.52,EN,,0000,0000,0000,,It tracks alpha waves.
+Dialogue: 0,0:19:11.03,0:19:13.69,EN,,0000,0000,0000,,Alpha waves. Yeah.
+Dialogue: 0,0:19:13.86,0:19:16.59,EN,,0000,0000,0000,,I could've said it tracked pasta e fagioli, couldn't I?
+Dialogue: 0,0:19:16.76,0:19:20.39,EN,,0000,0000,0000,,Oh, with garlic, Mr. Luthor. And butter.
+Dialogue: 0,0:19:20.57,0:19:21.97,EN,,0000,0000,0000,,Boy.
+Dialogue: 0,0:19:25.14,0:19:30.70,EN,,0000,0000,0000,,Those alpha waves will take me north to his secret.
+Dialogue: 0,0:19:30.88,0:19:35.61,EN,,0000,0000,0000,,And when I have his secret, I'll have Superman.
+Dialogue: 0,0:19:38.49,0:19:41.25,EN,,0000,0000,0000,,Slasher Fogelstein's a bed wetter.
+Dialogue: 0,0:19:45.89,0:19:49.83,EN,,0000,0000,0000,,Slasher Fogelstein's a bed wetter. Pass it.
+Dialogue: 0,0:19:55.30,0:19:57.24,EN,,0000,0000,0000,,Hi, Mr. Fogelstein.
+Dialogue: 0,0:19:57.71,0:20:00.23,EN,,0000,0000,0000,,- Too fast. Can you get the speed right?
+Dialogue: 0,0:20:00.41,0:20:03.34,EN,,0000,0000,0000,,I told you, they installed those three weeks ago.
+Dialogue: 0,0:20:04.28,0:20:05.27,EN,,0000,0000,0000,,Hey.
+Dialogue: 0,0:20:06.18,0:20:10.38,EN,,0000,0000,0000,,You follow the bouncing ball for a while. Thing's giving me a headache.
+Dialogue: 0,0:20:10.55,0:20:13.65,EN,,0000,0000,0000,,Anyway, somebody's gotta check up on those guys.
+Dialogue: 0,0:20:13.82,0:20:16.65,EN,,0000,0000,0000,,Yeah, I keep on forgetting about them.
+Dialogue: 0,0:20:16.82,0:20:19.59,EN,,0000,0000,0000,,How long they been up there, 45 days?
+Dialogue: 0,0:20:19.76,0:20:22.70,EN,,0000,0000,0000,,The whole world's forgotten about it.
+Dialogue: 0,0:20:24.93,0:20:27.09,EN,,0000,0000,0000,,Houston calling Artemis II.
+Dialogue: 0,0:20:27.90,0:20:30.74,EN,,0000,0000,0000,,Houston calling Artemis II. Come in.
+Dialogue: 0,0:20:30.91,0:20:33.47,EN,,0000,0000,0000,,Morning, Houston. Hold on, Nate.
+Dialogue: 0,0:20:33.64,0:20:35.58,EN,,0000,0000,0000,,- Yo. - How are things going?
+Dialogue: 0,0:20:36.34,0:20:38.81,EN,,0000,0000,0000,,All systems normal, Houston.
+Dialogue: 0,0:20:38.98,0:20:41.88,EN,,0000,0000,0000,,Andy is out doing the geological survey.
+Dialogue: 0,0:20:42.05,0:20:44.35,EN,,0000,0000,0000,,More rocks. Nice.
+Dialogue: 0,0:20:44.52,0:20:47.61,EN,,0000,0000,0000,,And cosmonaut Boris is getting some soil samples.
+Dialogue: 0,0:20:47.79,0:20:50.35,EN,,0000,0000,0000,,By the way, Boris and I are engaged.
+Dialogue: 0,0:20:50.86,0:20:53.99,EN,,0000,0000,0000,,I had a feeling about you guys when I saw your Rorschach tests.
+Dialogue: 0,0:20:54.16,0:20:56.46,EN,,0000,0000,0000,,Just a little detente humor there, Houston.
+Dialogue: 0,0:20:56.63,0:20:58.62,EN,,0000,0000,0000,,Surface conditions unchanged?
+Dialogue: 0,0:20:58.80,0:21:01.83,EN,,0000,0000,0000,,Well, it's mighty pretty out there. Mighty...
+Dialogue: 0,0:21:03.97,0:21:06.03,EN,,0000,0000,0000,,...pretty. - Mighty pretty.
+Dialogue: 0,0:21:06.24,0:21:08.37,EN,,0000,0000,0000,,Right.
+Dialogue: 0,0:21:08.74,0:21:10.61,EN,,0000,0000,0000,,Look, Nate?
+Dialogue: 0,0:21:10.78,0:21:12.37,EN,,0000,0000,0000,,Nate, wake up, will you?
+Dialogue: 0,0:21:12.55,0:21:15.11,EN,,0000,0000,0000,,That's it. I'm dreaming.
+Dialogue: 0,0:21:15.28,0:21:17.55,EN,,0000,0000,0000,,Artemis, come in.
+Dialogue: 0,0:21:17.75,0:21:21.81,EN,,0000,0000,0000,,Well, Houston, we seem to have an unidentified flying object.
+Dialogue: 0,0:21:21.99,0:21:23.39,EN,,0000,0000,0000,,Unidentified?
+Dialogue: 0,0:21:24.06,0:21:26.69,EN,,0000,0000,0000,,- What does it look like? - Well...
+Dialogue: 0,0:21:26.86,0:21:29.56,EN,,0000,0000,0000,,...a lot like a girl.
+Dialogue: 0,0:21:50.89,0:21:52.68,EN,,0000,0000,0000,,You.
+Dialogue: 0,0:21:53.42,0:21:56.91,EN,,0000,0000,0000,,- What kind of a creature are you? - Just a man.
+Dialogue: 0,0:21:57.69,0:21:59.79,EN,,0000,0000,0000,,A man?
+Dialogue: 0,0:22:56.55,0:22:59.28,EN,,0000,0000,0000,,What a fragile sort of life form this is.
+Dialogue: 0,0:23:24.65,0:23:27.31,EN,,0000,0000,0000,,Houston, come in. Come in, Houston.
+Dialogue: 0,0:23:35.82,0:23:37.22,EN,,0000,0000,0000,,Come in, Houston. Come in.
+Dialogue: 0,0:23:37.39,0:23:39.02,EN,,0000,0000,0000,,Attempting manual liftoff.
+Dialogue: 0,0:23:39.23,0:23:40.46,EN,,0000,0000,0000,,Can somebody hear me?
+Dialogue: 0,0:23:40.93,0:23:42.76,EN,,0000,0000,0000,,Houston!
+Dialogue: 0,0:23:43.76,0:23:44.89,EN,,0000,0000,0000,,Come on.
+Dialogue: 0,0:23:47.77,0:23:49.57,EN,,0000,0000,0000,,Come on, Houston!
+Dialogue: 0,0:23:50.44,0:23:52.87,EN,,0000,0000,0000,,Oh, no. No!
+Dialogue: 0,0:23:53.41,0:23:55.27,EN,,0000,0000,0000,,Somebody help me!
+Dialogue: 0,0:24:01.85,0:24:04.84,EN,,0000,0000,0000,,- Artemis, Houston calling. Come in. - What's going on?
+Dialogue: 0,0:24:05.02,0:24:08.46,EN,,0000,0000,0000,,- I don't know. We've lost contact. - So?
+Dialogue: 0,0:24:08.62,0:24:10.32,EN,,0000,0000,0000,,Well, we really...
+Dialogue: 0,0:24:10.93,0:24:12.76,EN,,0000,0000,0000,,Artemis, come in, please.
+Dialogue: 0,0:24:15.10,0:24:18.79,EN,,0000,0000,0000,,All right, which one of you guys is using the hair dryer?
+Dialogue: 0,0:24:21.14,0:24:25.97,EN,,0000,0000,0000,,Strange. I tore those metal fibers like paper.
+Dialogue: 0,0:24:26.14,0:24:30.08,EN,,0000,0000,0000,,And what he did was amazing.
+Dialogue: 0,0:24:30.24,0:24:34.68,EN,,0000,0000,0000,,- Something is happening. - Yes, to all of us.
+Dialogue: 0,0:24:36.88,0:24:41.08,EN,,0000,0000,0000,,The closer we come to an atmosphere with only one sun...
+Dialogue: 0,0:24:41.26,0:24:43.09,EN,,0000,0000,0000,,...a yellow sun...
+Dialogue: 0,0:24:43.26,0:24:47.22,EN,,0000,0000,0000,,...the more our molecular density gives us unlimited powers.
+Dialogue: 0,0:24:47.40,0:24:49.19,EN,,0000,0000,0000,,They come from there.
+Dialogue: 0,0:24:49.36,0:24:51.35,EN,,0000,0000,0000,,A place called Houston.
+Dialogue: 0,0:24:51.53,0:24:53.93,EN,,0000,0000,0000,,Then we will go there too...
+Dialogue: 0,0:24:54.10,0:24:56.04,EN,,0000,0000,0000,,...to rule.
+Dialogue: 0,0:24:56.50,0:24:59.17,EN,,0000,0000,0000,,Finally, to rule.
+Dialogue: 0,0:25:09.65,0:25:11.38,EN,,0000,0000,0000,,Three-eighty-two, out.
+Dialogue: 0,0:25:12.29,0:25:14.65,EN,,0000,0000,0000,,Three-eighty-three, out.
+Dialogue: 0,0:25:15.42,0:25:17.69,EN,,0000,0000,0000,,Three-eighty-four, out.
+Dialogue: 0,0:25:18.66,0:25:20.96,EN,,0000,0000,0000,,Three-eighty-five, out.
+Dialogue: 0,0:25:24.33,0:25:26.66,EN,,0000,0000,0000,,Lights out, Luthor.
+Dialogue: 0,0:25:27.23,0:25:29.46,EN,,0000,0000,0000,,I said, lights out.
+Dialogue: 0,0:25:32.04,0:25:35.74,EN,,0000,0000,0000,,You guys are about 10 seconds away from solitary, you know that?
+Dialogue: 0,0:25:37.85,0:25:39.87,EN,,0000,0000,0000,,I told you to...
+Dialogue: 0,0:25:55.36,0:25:57.52,EN,,0000,0000,0000,,Freeze, freeze.
+Dialogue: 0,0:26:30.40,0:26:32.30,EN,,0000,0000,0000,,Mr. Luthor.
+Dialogue: 0,0:26:33.63,0:26:36.13,EN,,0000,0000,0000,,- How we gonna get over that wall? - How'd we get in?
+Dialogue: 0,0:26:36.94,0:26:39.50,EN,,0000,0000,0000,,- We flew in here, remember? - That's how we'll get out.
+Dialogue: 0,0:26:39.67,0:26:42.01,EN,,0000,0000,0000,,Oh, no, not that guy.
+Dialogue: 0,0:26:45.81,0:26:47.54,EN,,0000,0000,0000,,Did you just go "psst"?
+Dialogue: 0,0:26:47.72,0:26:50.88,EN,,0000,0000,0000,,I wish I had, Mr. Luthor, before we left.
+Dialogue: 0,0:26:52.52,0:26:54.78,EN,,0000,0000,0000,,Not that "psst," that "psst."
+Dialogue: 0,0:26:58.16,0:27:00.96,EN,,0000,0000,0000,,- Don't go "psst" when I go "psst." - You do it.
+Dialogue: 0,0:27:04.47,0:27:06.63,EN,,0000,0000,0000,,Go out there and find it.
+Dialogue: 0,0:27:07.33,0:27:11.79,EN,,0000,0000,0000,,- What am I looking for? - You'll know when you see it.
+Dialogue: 0,0:27:22.98,0:27:25.68,EN,,0000,0000,0000,,I think I found it.
+Dialogue: 0,0:27:30.86,0:27:32.72,EN,,0000,0000,0000,,What is it?
+Dialogue: 0,0:27:33.73,0:27:36.59,EN,,0000,0000,0000,,It's a ladder, you dummy.
+Dialogue: 0,0:27:37.36,0:27:38.80,EN,,0000,0000,0000,,Hi, Miss Teschmacher.
+Dialogue: 0,0:27:47.78,0:27:48.94,EN,,0000,0000,0000,,Come on.
+Dialogue: 0,0:27:49.74,0:27:53.37,EN,,0000,0000,0000,,Hurry up. Hurry up.
+Dialogue: 0,0:27:53.95,0:27:56.18,EN,,0000,0000,0000,,Come on, hurry.
+Dialogue: 0,0:27:57.18,0:27:59.55,EN,,0000,0000,0000,,Otis, hold that ladder. Hurry up.
+Dialogue: 0,0:27:59.72,0:28:03.55,EN,,0000,0000,0000,,- Yard line, touchdown! Oh, what a beautiful play.
+Dialogue: 0,0:28:03.72,0:28:06.45,EN,,0000,0000,0000,,But there's a marker downfield. It could be against...
+Dialogue: 0,0:28:12.03,0:28:13.09,EN,,0000,0000,0000,,- Come up. - Come on.
+Dialogue: 0,0:28:13.27,0:28:15.86,EN,,0000,0000,0000,,Here I come, Mr. Luthor.
+Dialogue: 0,0:28:17.64,0:28:18.80,EN,,0000,0000,0000,,- Get off. Get off. - Otis!
+Dialogue: 0,0:28:20.61,0:28:23.30,EN,,0000,0000,0000,,- We're sinking! - Get off, get off!
+Dialogue: 0,0:28:40.33,0:28:42.49,EN,,0000,0000,0000,,Very good, Miss Teschmacher. Very good.
+Dialogue: 0,0:28:42.66,0:28:45.36,EN,,0000,0000,0000,,- What am I doing here? Why am I here? - Miss Teschmacher...
+Dialogue: 0,0:28:45.53,0:28:47.43,EN,,0000,0000,0000,,...is this a philosophy seminar?
+Dialogue: 0,0:28:47.60,0:28:49.33,EN,,0000,0000,0000,,- No. This is a getaway. - No.
+Dialogue: 0,0:28:49.50,0:28:50.73,EN,,0000,0000,0000,,- Getaway. - Right.
+Dialogue: 0,0:28:50.91,0:28:53.90,EN,,0000,0000,0000,,It's ingenious. I don't know where you got the inspiration from.
+Dialogue: 0,0:28:54.07,0:28:55.80,EN,,0000,0000,0000,,I got it from you, Lex.
+Dialogue: 0,0:28:56.74,0:28:58.68,EN,,0000,0000,0000,,Hot air rises.
+Dialogue: 0,0:29:00.55,0:29:02.28,EN,,0000,0000,0000,,Would you like to take a trip?
+Dialogue: 0,0:29:02.45,0:29:04.71,EN,,0000,0000,0000,,A trip? A vacation.
+Dialogue: 0,0:29:04.89,0:29:07.75,EN,,0000,0000,0000,,Lex, I can go shopping. I can buy a bikini.
+Dialogue: 0,0:29:07.92,0:29:10.32,EN,,0000,0000,0000,,You thought about me in a bikini while in prison?
+Dialogue: 0,0:29:10.66,0:29:12.99,EN,,0000,0000,0000,,No, I didn't, actually.
+Dialogue: 0,0:29:13.16,0:29:16.43,EN,,0000,0000,0000,,I thought about you in a parka.
+Dialogue: 0,0:29:16.60,0:29:18.72,EN,,0000,0000,0000,,You thought about me in a parka?
+Dialogue: 0,0:29:18.90,0:29:21.13,EN,,0000,0000,0000,,You are sick, Lex. You are really sick.
+Dialogue: 0,0:29:21.87,0:29:23.36,EN,,0000,0000,0000,,That's possible.
+Dialogue: 0,0:29:27.17,0:29:28.97,EN,,0000,0000,0000,,North, Miss Teschmacher.
+Dialogue: 0,0:29:29.14,0:29:30.34,EN,,0000,0000,0000,,Due north.
+Dialogue: 0,0:29:31.68,0:29:33.20,EN,,0000,0000,0000,,Lex, north.
+Dialogue: 0,0:29:34.68,0:29:36.88,EN,,0000,0000,0000,,That's what I said, due north.
+Dialogue: 0,0:29:37.38,0:29:39.72,EN,,0000,0000,0000,,- That's what you said. - I know I said I said that.
+Dialogue: 0,0:29:39.89,0:29:41.65,EN,,0000,0000,0000,,- I just heard it. - Yes, Lex.
+Dialogue: 0,0:29:41.82,0:29:44.19,EN,,0000,0000,0000,,Don't repeat what I say when I say something.
+Dialogue: 0,0:29:44.36,0:29:46.52,EN,,0000,0000,0000,,- I won't repeat what you say. - Okay, don't.
+Dialogue: 0,0:29:46.69,0:29:48.96,EN,,0000,0000,0000,,Well, stop repeating me.
+Dialogue: 0,0:30:16.42,0:30:18.25,EN,,0000,0000,0000,,Excuse me.
+Dialogue: 0,0:30:19.83,0:30:24.99,EN,,0000,0000,0000,,Would you like to carry Mrs. Smith over the threshold?
+Dialogue: 0,0:30:25.17,0:30:26.93,EN,,0000,0000,0000,,It's sort of traditional.
+Dialogue: 0,0:30:27.10,0:30:29.93,EN,,0000,0000,0000,,I can give you a hand if you have trouble lifting.
+Dialogue: 0,0:30:30.10,0:30:33.63,EN,,0000,0000,0000,,- No, of course not. - Honey. Thanks, I'll walk.
+Dialogue: 0,0:30:33.81,0:30:35.21,EN,,0000,0000,0000,,Certainly, dear.
+Dialogue: 0,0:30:45.59,0:30:47.45,EN,,0000,0000,0000,,Mush! Mush!
+Dialogue: 0,0:30:47.62,0:30:49.65,EN,,0000,0000,0000,,I am mushing.
+Dialogue: 0,0:30:52.96,0:30:54.93,EN,,0000,0000,0000,,North, Miss Teschmacher.
+Dialogue: 0,0:30:55.10,0:30:59.19,EN,,0000,0000,0000,,- North, north! - Yes, Lex. North.
+Dialogue: 0,0:31:26.59,0:31:29.86,EN,,0000,0000,0000,,Oh, you must be wrong, Lex. This couldn't be his home way up here.
+Dialogue: 0,0:31:30.03,0:31:31.73,EN,,0000,0000,0000,,"Wrong, Lex."
+Dialogue: 0,0:31:31.90,0:31:35.46,EN,,0000,0000,0000,,Miss Teschmacher, those are two words we do not use in the same sentence.
+Dialogue: 0,0:31:35.64,0:31:38.54,EN,,0000,0000,0000,,Well, it's funny there's no front door.
+Dialogue: 0,0:31:38.71,0:31:43.51,EN,,0000,0000,0000,,Miss Teschmacher, "funny" is a person trying to smile without any teeth.
+Dialogue: 0,0:31:46.01,0:31:47.00,EN,,0000,0000,0000,,Right.
+Dialogue: 0,0:31:53.49,0:31:55.65,EN,,0000,0000,0000,,All right, come on, Lex. Come on.
+Dialogue: 0,0:31:55.82,0:31:57.69,EN,,0000,0000,0000,,Move out of the way.
+Dialogue: 0,0:31:59.83,0:32:01.56,EN,,0000,0000,0000,,- This way. - It's this way.
+Dialogue: 0,0:32:01.73,0:32:03.46,EN,,0000,0000,0000,,Lex, it's this way.
+Dialogue: 0,0:32:03.63,0:32:05.53,EN,,0000,0000,0000,,It's this way, Lex.
+Dialogue: 0,0:32:05.93,0:32:09.06,EN,,0000,0000,0000,,- Come on. Come on. - Get off!
+Dialogue: 0,0:32:12.74,0:32:14.30,EN,,0000,0000,0000,,Come on.
+Dialogue: 0,0:32:26.22,0:32:28.21,EN,,0000,0000,0000,,- Fantastic. - Fantastic.
+Dialogue: 0,0:32:28.99,0:32:31.39,EN,,0000,0000,0000,,It's fantastic!
+Dialogue: 0,0:32:35.23,0:32:39.00,EN,,0000,0000,0000,,The construction goes far beyond any known architectural theory.
+Dialogue: 0,0:32:42.24,0:32:44.53,EN,,0000,0000,0000,,- It's beautiful. - It's beautiful.
+Dialogue: 0,0:32:45.07,0:32:46.44,EN,,0000,0000,0000,,- Lex. - I'll be all right.
+Dialogue: 0,0:32:46.61,0:32:48.30,EN,,0000,0000,0000,,No, me.
+Dialogue: 0,0:32:52.08,0:32:54.01,EN,,0000,0000,0000,,Why can't you be more careful?
+Dialogue: 0,0:32:56.42,0:32:58.08,EN,,0000,0000,0000,,- It's beautiful. - Beautiful.
+Dialogue: 0,0:32:58.25,0:33:00.69,EN,,0000,0000,0000,,- It has everything. - Wrong.
+Dialogue: 0,0:33:02.12,0:33:06.25,EN,,0000,0000,0000,,- Why didn't you go before we left? - That was two days ago.
+Dialogue: 0,0:33:09.83,0:33:11.42,EN,,0000,0000,0000,,Be careful, Lex.
+Dialogue: 0,0:33:14.30,0:33:15.60,EN,,0000,0000,0000,,Get...!
+Dialogue: 0,0:33:16.60,0:33:20.44,EN,,0000,0000,0000,,Frankly, I think this place is a little boring. It's all white.
+Dialogue: 0,0:33:20.61,0:33:22.91,EN,,0000,0000,0000,,Why doesn't the guy put up some pictures?
+Dialogue: 0,0:33:23.08,0:33:25.60,EN,,0000,0000,0000,,Maybe some bullfighting posters.
+Dialogue: 0,0:33:29.62,0:33:32.05,EN,,0000,0000,0000,,- Don't touch anything. - Don't touch anything.
+Dialogue: 0,0:33:33.59,0:33:36.65,EN,,0000,0000,0000,,- Ice. - I said, don't touch it.
+Dialogue: 0,0:33:37.39,0:33:39.76,EN,,0000,0000,0000,,- It's not ice. - It looks like a crystal.
+Dialogue: 0,0:34:03.12,0:34:07.95,EN,,0000,0000,0000,,The virtuous spirit has no need for thankful approval...
+Dialogue: 0,0:34:08.16,0:34:10.32,EN,,0000,0000,0000,,- What the...? ...owning a certain conviction...
+Dialogue: 0,0:34:10.49,0:34:13.32,EN,,0000,0000,0000,,...that what has been done is right.
+Dialogue: 0,0:34:13.53,0:34:15.65,EN,,0000,0000,0000,,That's the old man. He looks just like the kid.
+Dialogue: 0,0:34:15.83,0:34:18.70,EN,,0000,0000,0000,,- Are you the old man? - Ask him where the bathroom is.
+Dialogue: 0,0:34:18.87,0:34:21.30,EN,,0000,0000,0000,,Develop such conviction in yourself.
+Dialogue: 0,0:34:21.57,0:34:22.80,EN,,0000,0000,0000,,Are you here?
+Dialogue: 0,0:34:23.00,0:34:27.00,EN,,0000,0000,0000,,- The human heart on your planet... - He's not here.
+Dialogue: 0,0:34:27.17,0:34:31.51,EN,,0000,0000,0000,,It's a voice from the past. That's cute. That's really cute. Nice.
+Dialogue: 0,0:34:31.68,0:34:33.67,EN,,0000,0000,0000,,Lies, monstrous deceptions.
+Dialogue: 0,0:34:37.05,0:34:39.52,EN,,0000,0000,0000,,So much for moral rearmament.
+Dialogue: 0,0:34:39.69,0:34:41.55,EN,,0000,0000,0000,,Give me another crystal.
+Dialogue: 0,0:34:51.43,0:34:54.96,EN,,0000,0000,0000,,Education crystal 108. Earth culture.
+Dialogue: 0,0:34:55.74,0:34:59.76,EN,,0000,0000,0000,,A typical ode much loved by the people you will live among, Kal-EI.
+Dialogue: 0,0:34:59.94,0:35:02.53,EN,,0000,0000,0000,,Trees by Joyce Kilmer.
+Dialogue: 0,0:35:03.11,0:35:04.94,EN,,0000,0000,0000,,I think that I shall never see
+Dialogue: 0,0:35:05.11,0:35:08.01,EN,,0000,0000,0000,,A poem as lovely as a tree.
+Dialogue: 0,0:35:09.95,0:35:11.44,EN,,0000,0000,0000,,Come on, I like trees.
+Dialogue: 0,0:35:11.62,0:35:14.05,EN,,0000,0000,0000,,So does your average cocker spaniel. Give me another.
+Dialogue: 0,0:35:14.22,0:35:15.92,EN,,0000,0000,0000,,Cute.
+Dialogue: 0,0:35:22.40,0:35:23.52,EN,,0000,0000,0000,,My son...
+Dialogue: 0,0:35:23.86,0:35:25.70,EN,,0000,0000,0000,,- The man never ages. - Never ages.
+Dialogue: 0,0:35:25.87,0:35:31.00,EN,,0000,0000,0000,,...the time has come to tell you of the darkest episode in Krypton history.
+Dialogue: 0,0:35:31.17,0:35:33.90,EN,,0000,0000,0000,,- Now, this I wanna hear. - Unfortunately...
+Dialogue: 0,0:35:34.07,0:35:37.37,EN,,0000,0000,0000,,...even on our peaceful planet...
+Dialogue: 0,0:35:37.68,0:35:39.91,EN,,0000,0000,0000,,...there have appeared once in a great while...
+Dialogue: 0,0:35:40.08,0:35:43.35,EN,,0000,0000,0000,,...certain antisocial elements.
+Dialogue: 0,0:35:43.68,0:35:45.08,EN,,0000,0000,0000,,Deviants...
+Dialogue: 0,0:35:45.25,0:35:47.19,EN,,0000,0000,0000,,...what you call on Earth "criminals."
+Dialogue: 0,0:35:47.45,0:35:48.68,EN,,0000,0000,0000,,Criminals.
+Dialogue: 0,0:35:48.86,0:35:51.35,EN,,0000,0000,0000,,Deviants. He was right in the first place.
+Dialogue: 0,0:35:51.53,0:35:54.49,EN,,0000,0000,0000,,Though of course, we are not a penalty planet like Earth...
+Dialogue: 0,0:35:54.66,0:35:58.22,EN,,0000,0000,0000,,...and these unhappy souls were almost always successfully transformed...
+Dialogue: 0,0:35:58.40,0:36:01.30,EN,,0000,0000,0000,,...into productive citizens. - You never heard of Lex Luthor?
+Dialogue: 0,0:36:01.47,0:36:04.80,EN,,0000,0000,0000,,There were, however, three exceptions... Only three.
+Dialogue: 0,0:36:04.97,0:36:07.67,EN,,0000,0000,0000,,- Who proved impossible to rehabilitate.
+Dialogue: 0,0:36:08.41,0:36:09.50,EN,,0000,0000,0000,,There's hope.
+Dialogue: 0,0:36:09.68,0:36:11.84,EN,,0000,0000,0000,,Non, the destroyer.
+Dialogue: 0,0:36:12.01,0:36:16.31,EN,,0000,0000,0000,,Unreasoning violence in the shape of a being.
+Dialogue: 0,0:36:17.22,0:36:21.05,EN,,0000,0000,0000,,Ursa. Vicious, cruel, obsessed by a single-minded hatred...
+Dialogue: 0,0:36:21.22,0:36:23.25,EN,,0000,0000,0000,,...which could never be determined.
+Dialogue: 0,0:36:23.42,0:36:25.39,EN,,0000,0000,0000,,And the one force that could unite them...
+Dialogue: 0,0:36:25.56,0:36:30.12,EN,,0000,0000,0000,,...the only one whose warped genius could harness these forces of evil:
+Dialogue: 0,0:36:30.30,0:36:31.56,EN,,0000,0000,0000,,General Zod.
+Dialogue: 0,0:36:31.73,0:36:34.60,EN,,0000,0000,0000,,- He looks kind of cute. - His intended insurrection...
+Dialogue: 0,0:36:34.84,0:36:39.10,EN,,0000,0000,0000,,...was the most painful episode our people ever had to endure.
+Dialogue: 0,0:36:39.54,0:36:41.60,EN,,0000,0000,0000,,But after a long and terrible battle...
+Dialogue: 0,0:36:42.21,0:36:44.87,EN,,0000,0000,0000,,...peace and harmony were once again restored.
+Dialogue: 0,0:36:45.05,0:36:46.57,EN,,0000,0000,0000,,Kind of an anticlimax.
+Dialogue: 0,0:36:46.75,0:36:50.11,EN,,0000,0000,0000,,We had, of course, no death penalty.
+Dialogue: 0,0:36:50.52,0:36:52.08,EN,,0000,0000,0000,,Sensible enough.
+Dialogue: 0,0:36:52.62,0:36:55.65,EN,,0000,0000,0000,,And so they were placed in the Phantom Zone...
+Dialogue: 0,0:37:00.03,0:37:02.66,EN,,0000,0000,0000,,...to be imprisoned for all eternity.
+Dialogue: 0,0:37:03.36,0:37:06.59,EN,,0000,0000,0000,,I do not know what could be done if they were to escape.
+Dialogue: 0,0:37:07.37,0:37:09.53,EN,,0000,0000,0000,,On Krypton, these villains were uncontrollable.
+Dialogue: 0,0:37:09.70,0:37:14.44,EN,,0000,0000,0000,,On Earth, each of them would have the identical powers...
+Dialogue: 0,0:37:15.34,0:37:17.11,EN,,0000,0000,0000,,...that you have.
+Dialogue: 0,0:37:19.85,0:37:21.97,EN,,0000,0000,0000,,Think of it. Three super villains.
+Dialogue: 0,0:37:22.15,0:37:25.05,EN,,0000,0000,0000,,All three with the same power he has.
+Dialogue: 0,0:37:25.22,0:37:29.38,EN,,0000,0000,0000,,All three totally dedicated to corruption, violence, evil.
+Dialogue: 0,0:37:31.29,0:37:34.19,EN,,0000,0000,0000,,They need a contact on Earth.
+Dialogue: 0,0:37:34.39,0:37:37.19,EN,,0000,0000,0000,,Someone who felt the same as they did, someone who...
+Dialogue: 0,0:37:37.36,0:37:41.80,EN,,0000,0000,0000,,...had the same wonderful contempt for life, liberty and the pursuit of happiness.
+Dialogue: 0,0:37:42.60,0:37:44.76,EN,,0000,0000,0000,,Too true to be good.
+Dialogue: 0,0:37:45.97,0:37:47.37,EN,,0000,0000,0000,,Right?
+Dialogue: 0,0:37:53.85,0:37:56.65,EN,,0000,0000,0000,,- Miss Teschmacher? - I found it.
+Dialogue: 0,0:37:57.12,0:37:58.91,EN,,0000,0000,0000,,I think.
+Dialogue: 0,0:37:59.25,0:38:02.55,EN,,0000,0000,0000,,- Where's Jimmy Olsen when I need him? - Golly, isn't it beautiful?
+Dialogue: 0,0:38:02.72,0:38:05.59,EN,,0000,0000,0000,,Yeah, it's gorgeous. Gorgeous.
+Dialogue: 0,0:38:05.79,0:38:07.05,EN,,0000,0000,0000,,- Lois? - Yeah?
+Dialogue: 0,0:38:07.23,0:38:12.06,EN,,0000,0000,0000,,Look. Everybody's holding hands. Maybe we should hold hands too, huh?
+Dialogue: 0,0:38:12.23,0:38:15.33,EN,,0000,0000,0000,,- Here's my hand, Clark. Hold it. - Thanks.
+Dialogue: 0,0:38:16.17,0:38:18.73,EN,,0000,0000,0000,,You know what? They're afraid to let go.
+Dialogue: 0,0:38:18.91,0:38:21.84,EN,,0000,0000,0000,,- Why? - They let go, straight to the lawyer.
+Dialogue: 0,0:38:22.01,0:38:24.88,EN,,0000,0000,0000,,Oh, I don't know about that. They look kind of happy to me.
+Dialogue: 0,0:38:25.05,0:38:27.41,EN,,0000,0000,0000,,That's because you're blind, Clark.
+Dialogue: 0,0:38:27.85,0:38:29.44,EN,,0000,0000,0000,,- Oh, yeah. - Here.
+Dialogue: 0,0:38:29.62,0:38:31.45,EN,,0000,0000,0000,,- No, I've got it. No, l... - Yeah. Clark.
+Dialogue: 0,0:38:31.62,0:38:34.71,EN,,0000,0000,0000,,You've gotta look after yourself. You've only got one pair of eyes.
+Dialogue: 0,0:38:34.89,0:38:36.55,EN,,0000,0000,0000,,- God. - Lois?
+Dialogue: 0,0:38:36.72,0:38:37.88,EN,,0000,0000,0000,,- Now, here. - Right.
+Dialogue: 0,0:38:38.06,0:38:40.93,EN,,0000,0000,0000,,- Don't say I never did anything for you. - Thank you.
+Dialogue: 0,0:38:44.63,0:38:46.03,EN,,0000,0000,0000,,Son! Excuse me, please.
+Dialogue: 0,0:38:46.37,0:38:47.70,EN,,0000,0000,0000,,- Be careful. - What are you doing?
+Dialogue: 0,0:38:47.87,0:38:49.89,EN,,0000,0000,0000,,Get down! Get down!
+Dialogue: 0,0:38:52.57,0:38:56.06,EN,,0000,0000,0000,,You embarrass me here in front of everybody.
+Dialogue: 0,0:38:58.48,0:39:01.94,EN,,0000,0000,0000,,Lois, did you see what almost happened there? That little boy...
+Dialogue: 0,0:39:02.78,0:39:05.81,EN,,0000,0000,0000,,Hey, I'm hungry. You hungry?
+Dialogue: 0,0:39:05.99,0:39:08.32,EN,,0000,0000,0000,,- Lois, you're amazing. - Why, because I'm hungry?
+Dialogue: 0,0:39:08.49,0:39:12.32,EN,,0000,0000,0000,,No. Here you are standing in front of one of nature's most awesome spectacles...
+Dialogue: 0,0:39:12.49,0:39:15.46,EN,,0000,0000,0000,,...and you're thinking about food. Aren't you impressed?
+Dialogue: 0,0:39:15.63,0:39:19.07,EN,,0000,0000,0000,,Clark, once a girl's seen Superman in action...
+Dialogue: 0,0:39:19.23,0:39:21.72,EN,,0000,0000,0000,,...Niagara Falls kind of leaves you cold, you know?
+Dialogue: 0,0:39:21.90,0:39:23.67,EN,,0000,0000,0000,,Him again, huh?
+Dialogue: 0,0:39:24.74,0:39:26.17,EN,,0000,0000,0000,,Oh, I'm sorry.
+Dialogue: 0,0:39:26.37,0:39:28.64,EN,,0000,0000,0000,,I have a one-track mind, don't I?
+Dialogue: 0,0:39:28.81,0:39:32.01,EN,,0000,0000,0000,,Well, my one-track mind is telling me that I'm hungry.
+Dialogue: 0,0:39:32.18,0:39:33.27,EN,,0000,0000,0000,,- Hot dog? - Hot dog.
+Dialogue: 0,0:39:33.45,0:39:34.85,EN,,0000,0000,0000,,Hot dog.
+Dialogue: 0,0:39:35.02,0:39:36.57,EN,,0000,0000,0000,,Could I have some orange juice?
+Dialogue: 0,0:39:36.75,0:39:38.81,EN,,0000,0000,0000,,- Freshly squeezed. - Freshly squeezed, I know.
+Dialogue: 0,0:39:46.13,0:39:48.12,EN,,0000,0000,0000,,Hey, Mom. Look!
+Dialogue: 0,0:39:48.30,0:39:50.29,EN,,0000,0000,0000,,Yeah, honey. That's nice.
+Dialogue: 0,0:39:53.13,0:39:56.36,EN,,0000,0000,0000,,Okay, it's two mustard and relish, and...
+Dialogue: 0,0:40:00.31,0:40:01.80,EN,,0000,0000,0000,,Oh, my God!
+Dialogue: 0,0:40:02.91,0:40:04.47,EN,,0000,0000,0000,,Help!
+Dialogue: 0,0:40:04.64,0:40:06.41,EN,,0000,0000,0000,,Help!
+Dialogue: 0,0:40:07.61,0:40:09.84,EN,,0000,0000,0000,,Somebody help!
+Dialogue: 0,0:40:11.25,0:40:13.12,EN,,0000,0000,0000,,Do something!
+Dialogue: 0,0:40:17.66,0:40:18.65,EN,,0000,0000,0000,,Good.
+Dialogue: 0,0:40:19.99,0:40:21.29,EN,,0000,0000,0000,,Hey, Superman!
+Dialogue: 0,0:40:23.06,0:40:24.83,EN,,0000,0000,0000,,Way to go, Superman!
+Dialogue: 0,0:40:28.24,0:40:29.29,EN,,0000,0000,0000,,We got a great shot.
+Dialogue: 0,0:40:29.47,0:40:32.46,EN,,0000,0000,0000,,What a nice man. Of course he's Jewish.
+Dialogue: 0,0:40:36.11,0:40:37.60,EN,,0000,0000,0000,,Incredible.
+Dialogue: 0,0:40:45.15,0:40:47.45,EN,,0000,0000,0000,,- There you go. - Again, again!
+Dialogue: 0,0:40:47.62,0:40:50.85,EN,,0000,0000,0000,,No, I'm sorry. Only one ride to a customer.
+Dialogue: 0,0:40:51.02,0:40:54.98,EN,,0000,0000,0000,,- Superman. Superman, it's me, it's Lois! - Bye.
+Dialogue: 0,0:40:55.16,0:40:57.36,EN,,0000,0000,0000,,Come here. You're gonna get it!
+Dialogue: 0,0:40:57.53,0:41:00.97,EN,,0000,0000,0000,,- Give me a heart attack here. - It's me. It's Lois.
+Dialogue: 0,0:41:01.13,0:41:03.30,EN,,0000,0000,0000,,It's Lois Lane.
+Dialogue: 0,0:41:03.87,0:41:06.43,EN,,0000,0000,0000,,Well, hello and goodbye.
+Dialogue: 0,0:41:31.90,0:41:35.20,EN,,0000,0000,0000,,So this is planet Houston.
+Dialogue: 0,0:41:37.40,0:41:39.57,EN,,0000,0000,0000,,A very strange surface.
+Dialogue: 0,0:42:07.93,0:42:09.66,EN,,0000,0000,0000,,- Oh, my gosh. - Oh, that's all right.
+Dialogue: 0,0:42:09.84,0:42:12.83,EN,,0000,0000,0000,,- I just didn't hear you knock, that's all. - Lois...
+Dialogue: 0,0:42:13.01,0:42:16.50,EN,,0000,0000,0000,,...the door wasn't even locked. Just anybody can walk in here.
+Dialogue: 0,0:42:16.68,0:42:19.30,EN,,0000,0000,0000,,- There you go putting yourself down again. - Very funny.
+Dialogue: 0,0:42:19.48,0:42:21.57,EN,,0000,0000,0000,,No, really, I'm serious.
+Dialogue: 0,0:42:22.68,0:42:24.38,EN,,0000,0000,0000,,Well, anyway...
+Dialogue: 0,0:42:24.55,0:42:27.78,EN,,0000,0000,0000,,...here, a little something for the newlyweds' dinner tonight.
+Dialogue: 0,0:42:27.95,0:42:30.62,EN,,0000,0000,0000,,Pansies. Clark, how... How different.
+Dialogue: 0,0:42:30.79,0:42:33.19,EN,,0000,0000,0000,,Would you believe they grow wild all around here?
+Dialogue: 0,0:42:33.36,0:42:35.66,EN,,0000,0000,0000,,You should see what they charge for roses at the gift shop.
+Dialogue: 0,0:42:35.83,0:42:37.59,EN,,0000,0000,0000,,I'll bet, huh?
+Dialogue: 0,0:42:39.20,0:42:40.72,EN,,0000,0000,0000,,- You know something, Lois? - What?
+Dialogue: 0,0:42:40.90,0:42:45.39,EN,,0000,0000,0000,,Well, you know, in spite of the unreality of all this...
+Dialogue: 0,0:42:45.57,0:42:48.84,EN,,0000,0000,0000,,Well, you know, posing as newlyweds for the sake of a newspaper story.
+Dialogue: 0,0:42:49.01,0:42:51.07,EN,,0000,0000,0000,,Well, in spite of myself even...
+Dialogue: 0,0:42:51.24,0:42:53.97,EN,,0000,0000,0000,,...I'm kind of starting to feel like one in a way.
+Dialogue: 0,0:42:54.15,0:42:57.74,EN,,0000,0000,0000,,- A newlywed, you? - I don't see why that should be so strange.
+Dialogue: 0,0:42:57.92,0:42:59.54,EN,,0000,0000,0000,,I'm sorry. I didn't mean that.
+Dialogue: 0,0:42:59.72,0:43:02.85,EN,,0000,0000,0000,,I mean, I'm sure there's thousands of girls who'd...
+Dialogue: 0,0:43:03.39,0:43:05.15,EN,,0000,0000,0000,,Well, a few girls anyway.
+Dialogue: 0,0:43:05.33,0:43:07.32,EN,,0000,0000,0000,,- Go ahead and say it. - Say what?
+Dialogue: 0,0:43:07.49,0:43:12.96,EN,,0000,0000,0000,,That somehow you're not satisfied being here with me.
+Dialogue: 0,0:43:14.00,0:43:18.84,EN,,0000,0000,0000,,That in some way I don't seem to shape up very well in your eyes.
+Dialogue: 0,0:43:19.01,0:43:21.84,EN,,0000,0000,0000,,I don't have anything to apologize for. I'm a good reporter.
+Dialogue: 0,0:43:22.01,0:43:26.07,EN,,0000,0000,0000,,No, I'm a very good reporter. And an even better friend to you.
+Dialogue: 0,0:43:27.08,0:43:28.55,EN,,0000,0000,0000,,- Stand up. - Stand up?
+Dialogue: 0,0:43:28.85,0:43:30.32,EN,,0000,0000,0000,,Yeah, stand up, just for fun.
+Dialogue: 0,0:43:32.82,0:43:36.45,EN,,0000,0000,0000,,Now, come here. Look at yourself. Just look at yourself.
+Dialogue: 0,0:43:37.46,0:43:41.62,EN,,0000,0000,0000,,What we have here is a potentially aggressive, dynamite guy...
+Dialogue: 0,0:43:41.80,0:43:43.42,EN,,0000,0000,0000,,...who can do anything he wants.
+Dialogue: 0,0:43:43.60,0:43:46.26,EN,,0000,0000,0000,,I mean, it's not my fault you keep putting yourself down.
+Dialogue: 0,0:43:46.43,0:43:48.46,EN,,0000,0000,0000,,- Oh, yeah? How? - Well, for starters...
+Dialogue: 0,0:43:48.64,0:43:51.10,EN,,0000,0000,0000,,...you slouch all the time. Here, stand up straight.
+Dialogue: 0,0:43:51.27,0:43:52.86,EN,,0000,0000,0000,,There, that's better.
+Dialogue: 0,0:43:53.04,0:43:56.50,EN,,0000,0000,0000,,And get yourself a jacket with a vent and shoes that don't lace up...
+Dialogue: 0,0:43:56.68,0:44:00.48,EN,,0000,0000,0000,,...and a shirt with a little color or a pattern or something.
+Dialogue: 0,0:44:00.65,0:44:03.24,EN,,0000,0000,0000,,And a bow tie that doesn't look like a letter opener.
+Dialogue: 0,0:44:03.42,0:44:05.68,EN,,0000,0000,0000,,All right, Lois. All right.
+Dialogue: 0,0:44:05.85,0:44:09.29,EN,,0000,0000,0000,,- We've been through this, haven't we? - Yes.
+Dialogue: 0,0:44:10.09,0:44:13.02,EN,,0000,0000,0000,,I know where this is all leading to.
+Dialogue: 0,0:44:14.46,0:44:17.23,EN,,0000,0000,0000,,And I'm sorry. I mean, I'm sorry...
+Dialogue: 0,0:44:17.40,0:44:20.26,EN,,0000,0000,0000,,...but no matter how hard I try, I just...
+Dialogue: 0,0:44:20.43,0:44:22.99,EN,,0000,0000,0000,,Just... Just never will be him.
+Dialogue: 0,0:44:23.17,0:44:24.53,EN,,0000,0000,0000,,Him who?
+Dialogue: 0,0:44:24.70,0:44:28.23,EN,,0000,0000,0000,,"Him who"? Him Superman.
+Dialogue: 0,0:44:28.41,0:44:31.61,EN,,0000,0000,0000,,Now, I can't help the fact that you seem to think that you love him.
+Dialogue: 0,0:44:31.78,0:44:35.44,EN,,0000,0000,0000,,That's something I'll have to live with. But darn it, Lois, that's enough now.
+Dialogue: 0,0:44:36.58,0:44:39.14,EN,,0000,0000,0000,,Maybe I just can't stand the competition anymore.
+Dialogue: 0,0:44:39.32,0:44:42.65,EN,,0000,0000,0000,,And just maybe you've been the competition all along.
+Dialogue: 0,0:44:42.82,0:44:45.22,EN,,0000,0000,0000,,Lois, I've never been particularly good at riddles.
+Dialogue: 0,0:44:45.39,0:44:47.66,EN,,0000,0000,0000,,Let me make this one really easy for you.
+Dialogue: 0,0:44:47.89,0:44:51.83,EN,,0000,0000,0000,,Why, with thousands of children potentially falling off something lethal...
+Dialogue: 0,0:44:52.00,0:44:55.87,EN,,0000,0000,0000,,...all around the world, would Superman be in Niagara Falls today?
+Dialogue: 0,0:44:56.04,0:44:57.43,EN,,0000,0000,0000,,Why not the Grand Canyon?
+Dialogue: 0,0:44:57.60,0:45:01.44,EN,,0000,0000,0000,,- Ask the child's family. I'm sure they know. - Why is it always when I'm with you...
+Dialogue: 0,0:45:01.61,0:45:05.07,EN,,0000,0000,0000,,...until Superman appears? And then you seem to disappear.
+Dialogue: 0,0:45:05.25,0:45:08.98,EN,,0000,0000,0000,,- Very conveniently, it seems to me. - I was out for hot dogs. For Pete's sake...
+Dialogue: 0,0:45:09.15,0:45:11.84,EN,,0000,0000,0000,,When Superman appeared, I looked at that hot dog stand...
+Dialogue: 0,0:45:12.02,0:45:13.25,EN,,0000,0000,0000,,...and you were gone.
+Dialogue: 0,0:45:13.42,0:45:14.61,EN,,0000,0000,0000,,- I was... - Nowhere.
+Dialogue: 0,0:45:16.19,0:45:18.12,EN,,0000,0000,0000,,I can't help it if I had to go to the...
+Dialogue: 0,0:45:18.96,0:45:21.19,EN,,0000,0000,0000,,You are Superman, aren't you?
+Dialogue: 0,0:45:21.36,0:45:24.85,EN,,0000,0000,0000,,Lois, look, we've been through these hallucinations of yours before.
+Dialogue: 0,0:45:25.03,0:45:26.83,EN,,0000,0000,0000,,Can't you see what you almost did?
+Dialogue: 0,0:45:27.00,0:45:29.26,EN,,0000,0000,0000,,Throwing yourself off a building 30 stories high?
+Dialogue: 0,0:45:29.44,0:45:31.67,EN,,0000,0000,0000,,Can't you see the tragic mistake you almost made?
+Dialogue: 0,0:45:31.84,0:45:35.77,EN,,0000,0000,0000,,Yeah, I made a mistake. I made a mistake because...
+Dialogue: 0,0:45:37.64,0:45:39.64,EN,,0000,0000,0000,,...I risked my life instead of yours.
+Dialogue: 0,0:45:39.81,0:45:41.87,EN,,0000,0000,0000,,Lois, don't be insane.
+Dialogue: 0,0:45:42.05,0:45:45.25,EN,,0000,0000,0000,,And don't fall down because you're just gonna have to get up again.
+Dialogue: 0,0:45:45.42,0:45:47.48,EN,,0000,0000,0000,,Lois, now, don't be crazy now. Lois!
+Dialogue: 0,0:46:00.37,0:46:01.56,EN,,0000,0000,0000,,It is you.
+Dialogue: 0,0:46:07.81,0:46:10.83,EN,,0000,0000,0000,,I guess I've known this for the longest time.
+Dialogue: 0,0:46:13.71,0:46:15.51,EN,,0000,0000,0000,,You realize, of course...
+Dialogue: 0,0:46:15.68,0:46:18.67,EN,,0000,0000,0000,,...if you'd been wrong, Clark Kent would have been killed.
+Dialogue: 0,0:46:20.59,0:46:21.82,EN,,0000,0000,0000,,With a blank?
+Dialogue: 0,0:46:26.19,0:46:27.39,EN,,0000,0000,0000,,Gotcha.
+Dialogue: 0,0:46:51.72,0:46:54.41,EN,,0000,0000,0000,,A primitive sort of life form.
+Dialogue: 0,0:47:03.56,0:47:04.79,EN,,0000,0000,0000,,Did you see that?
+Dialogue: 0,0:47:06.10,0:47:08.29,EN,,0000,0000,0000,,Did you see what I did?
+Dialogue: 0,0:47:08.47,0:47:11.03,EN,,0000,0000,0000,,I have powers beyond reason here.
+Dialogue: 0,0:47:11.34,0:47:13.17,EN,,0000,0000,0000,,We all have them, my dear.
+Dialogue: 0,0:47:55.58,0:47:58.71,EN,,0000,0000,0000,,- Wow, this is your home? - No.
+Dialogue: 0,0:47:58.89,0:48:01.95,EN,,0000,0000,0000,,Actually, I live in the city, about three blocks from you.
+Dialogue: 0,0:48:03.42,0:48:05.76,EN,,0000,0000,0000,,No, this is a very special place for me.
+Dialogue: 0,0:48:05.93,0:48:08.22,EN,,0000,0000,0000,,I wanted you to see it.
+Dialogue: 0,0:48:08.63,0:48:10.82,EN,,0000,0000,0000,,Listen, you warm enough?
+Dialogue: 0,0:48:12.10,0:48:14.16,EN,,0000,0000,0000,,I guess I should be freezing, but I'm not.
+Dialogue: 0,0:48:14.33,0:48:15.96,EN,,0000,0000,0000,,Good.
+Dialogue: 0,0:48:16.14,0:48:18.30,EN,,0000,0000,0000,,Come on, let me show you.
+Dialogue: 0,0:48:37.26,0:48:38.45,EN,,0000,0000,0000,,I don't know.
+Dialogue: 0,0:48:39.39,0:48:42.59,EN,,0000,0000,0000,,From the look of them, I'll bet $ 10 they're from Los Angeles.
+Dialogue: 0,0:48:51.94,0:48:55.81,EN,,0000,0000,0000,,Hey, you hippies, get your butts off the road!
+Dialogue: 0,0:48:56.18,0:48:59.27,EN,,0000,0000,0000,,I like the globe. It flashes red like our Krypton sun.
+Dialogue: 0,0:48:59.68,0:49:01.87,EN,,0000,0000,0000,,But not this irritating noise.
+Dialogue: 0,0:49:02.55,0:49:04.38,EN,,0000,0000,0000,,Make way.
+Dialogue: 0,0:49:05.25,0:49:07.01,EN,,0000,0000,0000,,Did I hear right?
+Dialogue: 0,0:49:07.19,0:49:08.98,EN,,0000,0000,0000,,That son of a bitch give me an order?
+Dialogue: 0,0:49:09.52,0:49:11.51,EN,,0000,0000,0000,,Duane, you take care of it.
+Dialogue: 0,0:49:16.56,0:49:19.33,EN,,0000,0000,0000,,Just what in the hell do you think you're doing here?
+Dialogue: 0,0:49:19.50,0:49:21.52,EN,,0000,0000,0000,,What is this symbol?
+Dialogue: 0,0:49:21.70,0:49:23.50,EN,,0000,0000,0000,,Do you follow another leader?
+Dialogue: 0,0:49:23.67,0:49:26.00,EN,,0000,0000,0000,,Follow the leader?
+Dialogue: 0,0:49:27.17,0:49:29.54,EN,,0000,0000,0000,,Holy skunk sweat.
+Dialogue: 0,0:49:29.71,0:49:31.90,EN,,0000,0000,0000,,- All right. - A weapon of some sort.
+Dialogue: 0,0:49:41.75,0:49:43.48,EN,,0000,0000,0000,,How the hell did you do that?
+Dialogue: 0,0:49:51.13,0:49:52.56,EN,,0000,0000,0000,,Jesus H. Christ.
+Dialogue: 0,0:49:55.10,0:49:58.50,EN,,0000,0000,0000,,- That was good. - I thought we might...
+Dialogue: 0,0:49:59.97,0:50:02.57,EN,,0000,0000,0000,,...abandon the orange juice for once.
+Dialogue: 0,0:50:09.95,0:50:12.61,EN,,0000,0000,0000,,- Here, cheers. - Cheers.
+Dialogue: 0,0:50:16.92,0:50:20.02,EN,,0000,0000,0000,,Must be tough being Clark Kent, isn't it?
+Dialogue: 0,0:50:20.39,0:50:23.12,EN,,0000,0000,0000,,No. No, I really...
+Dialogue: 0,0:50:23.30,0:50:25.46,EN,,0000,0000,0000,,I really like it sometimes.
+Dialogue: 0,0:50:25.63,0:50:27.79,EN,,0000,0000,0000,,Even though I do make a fool of myself.
+Dialogue: 0,0:50:29.50,0:50:33.94,EN,,0000,0000,0000,,But, you know, if it weren't for him, I never would have met you.
+Dialogue: 0,0:50:35.84,0:50:39.28,EN,,0000,0000,0000,,But he is you.
+Dialogue: 0,0:50:40.05,0:50:43.38,EN,,0000,0000,0000,,- It's kind of confusing. - Not to me, it isn't.
+Dialogue: 0,0:50:45.82,0:50:47.25,EN,,0000,0000,0000,,Everything's clear.
+Dialogue: 0,0:50:51.92,0:50:55.69,EN,,0000,0000,0000,,Until yesterday, a middle-American town that Middle America had forgotten.
+Dialogue: 0,0:50:55.86,0:51:00.27,EN,,0000,0000,0000,,But today, the population... Exaggerated reports put it at 123.
+Dialogue: 0,0:51:00.43,0:51:01.87,EN,,0000,0000,0000,,- Has increased by three.
+Dialogue: 0,0:51:02.03,0:51:05.06,EN,,0000,0000,0000,,And these three new arrivals bring destruction in their wake.
+Dialogue: 0,0:51:05.24,0:51:07.93,EN,,0000,0000,0000,,As I look west into East Houston this morning...
+Dialogue: 0,0:51:08.11,0:51:11.30,EN,,0000,0000,0000,,...I see a town gripped with fear. - Who's the guy?
+Dialogue: 0,0:51:11.48,0:51:13.45,EN,,0000,0000,0000,,Get that guy. Follow the guy.
+Dialogue: 0,0:51:13.61,0:51:15.24,EN,,0000,0000,0000,,Who's the big guy?
+Dialogue: 0,0:51:16.05,0:51:17.95,EN,,0000,0000,0000,,Okay, yeah, we've got a...
+Dialogue: 0,0:51:18.28,0:51:19.98,EN,,0000,0000,0000,,- You got that? - No.
+Dialogue: 0,0:51:24.29,0:51:26.09,EN,,0000,0000,0000,,- That's fine. - Try to wiggle it.
+Dialogue: 0,0:51:26.26,0:51:28.19,EN,,0000,0000,0000,,Who else is seeing this?
+Dialogue: 0,0:51:28.36,0:51:32.23,EN,,0000,0000,0000,,Well, with this satellite linkup, just about everybody. The whole planet.
+Dialogue: 0,0:51:32.40,0:51:34.59,EN,,0000,0000,0000,,The whole planet Houston?
+Dialogue: 0,0:51:34.77,0:51:38.13,EN,,0000,0000,0000,,Earth. The whole planet Earth.
+Dialogue: 0,0:51:40.44,0:51:42.50,EN,,0000,0000,0000,,You may continue.
+Dialogue: 0,0:51:42.68,0:51:46.34,EN,,0000,0000,0000,,As the extraordinary story continues...
+Dialogue: 0,0:51:47.38,0:51:49.41,EN,,0000,0000,0000,,- Enough of this man. - As this extraordinary...
+Dialogue: 0,0:51:49.58,0:51:53.02,EN,,0000,0000,0000,,If the whole planet is watching, let's show them something interesting.
+Dialogue: 0,0:51:53.19,0:51:55.92,EN,,0000,0000,0000,,Throw down your arms and surrender!
+Dialogue: 0,0:51:56.49,0:51:58.96,EN,,0000,0000,0000,,This is an order.
+Dialogue: 0,0:52:00.99,0:52:04.55,EN,,0000,0000,0000,,General Zod does not take orders. He gives them.
+Dialogue: 0,0:52:26.95,0:52:29.95,EN,,0000,0000,0000,,He was in the line of that fire and nothing happened to him.
+Dialogue: 0,0:52:30.12,0:52:32.39,EN,,0000,0000,0000,,I haven't seen the likes of this since Superman.
+Dialogue: 0,0:52:33.29,0:52:35.02,EN,,0000,0000,0000,,Yes? Yes.
+Dialogue: 0,0:52:35.19,0:52:39.93,EN,,0000,0000,0000,,The Newsbeat control room has informed me that a fleet of helicopter gunships is...
+Dialogue: 0,0:52:40.10,0:52:43.63,EN,,0000,0000,0000,,- Mr. President, sir, can't we...? - There's nothing anybody can do.
+Dialogue: 0,0:52:43.80,0:52:46.10,EN,,0000,0000,0000,,They have such powers, nothing can stop them.
+Dialogue: 0,0:52:46.27,0:52:47.71,EN,,0000,0000,0000,,Where's Superman?
+Dialogue: 0,0:52:47.87,0:52:50.93,EN,,0000,0000,0000,,Where is he? Why doesn't he do something?
+Dialogue: 0,0:53:03.36,0:53:04.55,EN,,0000,0000,0000,,Fire again.
+Dialogue: 0,0:53:06.86,0:53:08.33,EN,,0000,0000,0000,,Fire again.
+Dialogue: 0,0:53:11.56,0:53:15.02,EN,,0000,0000,0000,,Look. They need machines to fly.
+Dialogue: 0,0:53:15.84,0:53:18.50,EN,,0000,0000,0000,,- Banking now. - What bravery.
+Dialogue: 0,0:53:18.84,0:53:22.80,EN,,0000,0000,0000,,Be nice to them, my dear. Blow them a kiss.
+Dialogue: 0,0:53:25.71,0:53:28.41,EN,,0000,0000,0000,,Rockets ready. Coming in on target. Wait, wait.
+Dialogue: 0,0:53:30.55,0:53:31.74,EN,,0000,0000,0000,,We're out of control.
+Dialogue: 0,0:53:33.85,0:53:37.15,EN,,0000,0000,0000,,We're coming in, coming down. Can't control it!
+Dialogue: 0,0:53:37.32,0:53:38.59,EN,,0000,0000,0000,,We're coming down.
+Dialogue: 0,0:53:44.60,0:53:46.50,EN,,0000,0000,0000,,I win.
+Dialogue: 0,0:53:47.90,0:53:49.99,EN,,0000,0000,0000,,I always win.
+Dialogue: 0,0:53:51.14,0:53:54.47,EN,,0000,0000,0000,,Is there no one on this planet to even challenge me?
+Dialogue: 0,0:54:14.46,0:54:15.93,EN,,0000,0000,0000,,Come forward.
+Dialogue: 0,0:54:16.26,0:54:18.16,EN,,0000,0000,0000,,Your general wishes to speak.
+Dialogue: 0,0:54:18.43,0:54:22.66,EN,,0000,0000,0000,,I am General Zod, your ruler.
+Dialogue: 0,0:54:24.00,0:54:28.03,EN,,0000,0000,0000,,Yes, today begins a new order!
+Dialogue: 0,0:54:28.31,0:54:30.78,EN,,0000,0000,0000,,Your lands, your possessions...
+Dialogue: 0,0:54:30.94,0:54:35.90,EN,,0000,0000,0000,,...your very lives will gladly be given in tribute to me.
+Dialogue: 0,0:54:36.45,0:54:38.61,EN,,0000,0000,0000,,In return for your obedience...
+Dialogue: 0,0:54:38.78,0:54:41.45,EN,,0000,0000,0000,,...you will enjoy my generous protection.
+Dialogue: 0,0:54:41.62,0:54:45.49,EN,,0000,0000,0000,,In other words, you will be allowed to live.
+Dialogue: 0,0:54:47.99,0:54:50.99,EN,,0000,0000,0000,,So you are a general?
+Dialogue: 0,0:54:52.03,0:54:54.19,EN,,0000,0000,0000,,And who is your superior?
+Dialogue: 0,0:54:54.97,0:55:00.10,EN,,0000,0000,0000,,- I answer only to the president. - And he will answer to me.
+Dialogue: 0,0:55:01.37,0:55:05.17,EN,,0000,0000,0000,,Or all of his cities will end up like this one.
+Dialogue: 0,0:55:11.18,0:55:14.81,EN,,0000,0000,0000,,Thousands of hours to create, and they defaced it in seconds.
+Dialogue: 0,0:55:14.99,0:55:18.12,EN,,0000,0000,0000,,Imagine what they'll do to the world if we resist.
+Dialogue: 0,0:55:22.03,0:55:25.36,EN,,0000,0000,0000,,The people of your planet are well-pleased with you, Kal-EI.
+Dialogue: 0,0:55:25.53,0:55:29.26,EN,,0000,0000,0000,,You have served them faithfully, and they are grateful for it.
+Dialogue: 0,0:55:31.17,0:55:36.20,EN,,0000,0000,0000,,And yet you have returned to reason with me once again.
+Dialogue: 0,0:55:38.68,0:55:41.65,EN,,0000,0000,0000,,My son, I have tried to anticipate your every question.
+Dialogue: 0,0:55:41.81,0:55:43.65,EN,,0000,0000,0000,,This was one I'd...
+Dialogue: 0,0:55:45.08,0:55:47.02,EN,,0000,0000,0000,,I'd hoped you would not ask.
+Dialogue: 0,0:55:50.19,0:55:52.16,EN,,0000,0000,0000,,My attachment...
+Dialogue: 0,0:55:54.19,0:55:59.50,EN,,0000,0000,0000,,...the feelings which I have developed for a certain human being...
+Dialogue: 0,0:55:59.80,0:56:02.13,EN,,0000,0000,0000,,...have deeply affected me, Father.
+Dialogue: 0,0:56:02.30,0:56:06.76,EN,,0000,0000,0000,,You cannot serve humanity by investing your time and emotion in one human being...
+Dialogue: 0,0:56:06.94,0:56:09.07,EN,,0000,0000,0000,,...at the expense of the rest.
+Dialogue: 0,0:56:09.28,0:56:14.08,EN,,0000,0000,0000,,- The concepts are mutally exclusive. - And...
+Dialogue: 0,0:56:15.88,0:56:20.08,EN,,0000,0000,0000,,...if I no longer wish to serve humanity...
+Dialogue: 0,0:56:21.02,0:56:24.46,EN,,0000,0000,0000,,Is this how you repay their gratitude?
+Dialogue: 0,0:56:24.62,0:56:28.42,EN,,0000,0000,0000,,By abandoning the weak, the defenseless, the needy...
+Dialogue: 0,0:56:28.59,0:56:31.22,EN,,0000,0000,0000,,...for the sake of your selfish pursuits?
+Dialogue: 0,0:56:31.43,0:56:34.87,EN,,0000,0000,0000,,Selfish? After all I've done for them?
+Dialogue: 0,0:56:35.03,0:56:37.63,EN,,0000,0000,0000,,Will there ever come a time when I've served enough?
+Dialogue: 0,0:56:37.80,0:56:40.36,EN,,0000,0000,0000,,At least they get a chance for happiness.
+Dialogue: 0,0:56:40.54,0:56:43.17,EN,,0000,0000,0000,,I only ask as much, no more.
+Dialogue: 0,0:56:43.91,0:56:46.61,EN,,0000,0000,0000,,Yours is a higher happiness.
+Dialogue: 0,0:56:46.78,0:56:51.15,EN,,0000,0000,0000,,The fulfillment of your mission, an inspiration you must have felt.
+Dialogue: 0,0:56:51.75,0:56:54.69,EN,,0000,0000,0000,,You must have felt that happiness within you.
+Dialogue: 0,0:56:54.99,0:56:58.12,EN,,0000,0000,0000,,My son, surely you cannot deny that feeling.
+Dialogue: 0,0:56:58.49,0:57:01.82,EN,,0000,0000,0000,,No, I cannot...
+Dialogue: 0,0:57:02.53,0:57:06.36,EN,,0000,0000,0000,,...any more than I can deny the other, which is stronger in me, Father.
+Dialogue: 0,0:57:07.80,0:57:09.03,EN,,0000,0000,0000,,So much stronger.
+Dialogue: 0,0:57:15.04,0:57:17.17,EN,,0000,0000,0000,,Is there no way then, Father?
+Dialogue: 0,0:57:17.81,0:57:21.77,EN,,0000,0000,0000,,Must I finally be denied the one thing in life which I truly desire?
+Dialogue: 0,0:57:23.45,0:57:26.25,EN,,0000,0000,0000,,If you will not be Kal-EI...
+Dialogue: 0,0:57:26.62,0:57:28.55,EN,,0000,0000,0000,,...if you will live as one of them...
+Dialogue: 0,0:57:29.12,0:57:31.11,EN,,0000,0000,0000,,...love their kind as one of them...
+Dialogue: 0,0:57:31.69,0:57:33.89,EN,,0000,0000,0000,,...then it follows that you must...
+Dialogue: 0,0:57:34.59,0:57:36.69,EN,,0000,0000,0000,,...become one of them.
+Dialogue: 0,0:58:05.19,0:58:11.03,EN,,0000,0000,0000,,This crystal chamber has in it the harnessed rays of the red sun of Krypton.
+Dialogue: 0,0:58:11.53,0:58:12.93,EN,,0000,0000,0000,,Once exposed to them...
+Dialogue: 0,0:58:13.10,0:58:16.63,EN,,0000,0000,0000,,...all your great powers on Earth will disappear.
+Dialogue: 0,0:58:17.57,0:58:19.06,EN,,0000,0000,0000,,Forever.
+Dialogue: 0,0:58:19.74,0:58:21.76,EN,,0000,0000,0000,,Once this is done, there's no going back.
+Dialogue: 0,0:58:23.24,0:58:25.64,EN,,0000,0000,0000,,You will feel like an ordinary man.
+Dialogue: 0,0:58:26.68,0:58:29.74,EN,,0000,0000,0000,,And you can be harmed like an ordinary man.
+Dialogue: 0,0:58:31.95,0:58:33.82,EN,,0000,0000,0000,,Think, Kal-EI.
+Dialogue: 0,0:58:35.25,0:58:36.92,EN,,0000,0000,0000,,I beg you.
+Dialogue: 0,0:58:37.99,0:58:39.62,EN,,0000,0000,0000,,Father...
+Dialogue: 0,0:58:40.86,0:58:42.09,EN,,0000,0000,0000,,...I love her.
+Dialogue: 0,0:59:00.15,0:59:01.64,EN,,0000,0000,0000,,Think, Kal-EI.
+Dialogue: 0,1:00:58.46,1:01:00.13,EN,,0000,0000,0000,,Come on. Come on.
+Dialogue: 0,1:01:11.01,1:01:12.20,EN,,0000,0000,0000,,Look out!
+Dialogue: 0,1:02:03.43,1:02:05.33,EN,,0000,0000,0000,,You are the one they call president?
+Dialogue: 0,1:02:06.10,1:02:07.73,EN,,0000,0000,0000,,I am.
+Dialogue: 0,1:02:09.80,1:02:13.67,EN,,0000,0000,0000,,I see you are practiced in worshipping things that fly.
+Dialogue: 0,1:02:15.04,1:02:16.74,EN,,0000,0000,0000,,Good.
+Dialogue: 0,1:02:17.61,1:02:19.77,EN,,0000,0000,0000,,Rise before Zod.
+Dialogue: 0,1:02:23.75,1:02:26.72,EN,,0000,0000,0000,,Now, kneel before Zod.
+Dialogue: 0,1:02:40.93,1:02:42.46,EN,,0000,0000,0000,,You are not the president.
+Dialogue: 0,1:02:42.77,1:02:47.54,EN,,0000,0000,0000,,No one who leads so many could possibly kneel so quickly.
+Dialogue: 0,1:02:47.71,1:02:49.50,EN,,0000,0000,0000,,I am the man they are protecting.
+Dialogue: 0,1:02:50.84,1:02:52.71,EN,,0000,0000,0000,,I am the president.
+Dialogue: 0,1:02:53.65,1:02:55.88,EN,,0000,0000,0000,,I'll kneel before you if it will save lives.
+Dialogue: 0,1:02:56.32,1:02:58.04,EN,,0000,0000,0000,,It will.
+Dialogue: 0,1:02:58.22,1:03:00.78,EN,,0000,0000,0000,,Starting with your own.
+Dialogue: 0,1:03:04.49,1:03:07.69,EN,,0000,0000,0000,,What a backward planet this must be...
+Dialogue: 0,1:03:08.13,1:03:10.96,EN,,0000,0000,0000,,...where the men wear the ribbons...
+Dialogue: 0,1:03:11.50,1:03:13.12,EN,,0000,0000,0000,,...and the jewelry.
+Dialogue: 0,1:03:26.58,1:03:28.48,EN,,0000,0000,0000,,What I do now...
+Dialogue: 0,1:03:28.65,1:03:31.84,EN,,0000,0000,0000,,...I do for the sake of the people of the world.
+Dialogue: 0,1:03:32.02,1:03:36.01,EN,,0000,0000,0000,,But there is one man here on Earth who will never kneel before you.
+Dialogue: 0,1:03:36.32,1:03:39.59,EN,,0000,0000,0000,,Who is this imbecile? Where is he?
+Dialogue: 0,1:03:39.76,1:03:41.75,EN,,0000,0000,0000,,I wish I knew.
+Dialogue: 0,1:03:46.10,1:03:47.46,EN,,0000,0000,0000,,Oh, God.
+Dialogue: 0,1:03:47.97,1:03:49.49,EN,,0000,0000,0000,,Zod.
+Dialogue: 0,1:03:52.14,1:03:53.57,EN,,0000,0000,0000,,Hey.
+Dialogue: 0,1:03:53.74,1:03:56.26,EN,,0000,0000,0000,,You're awfully quiet over there.
+Dialogue: 0,1:03:57.98,1:04:01.28,EN,,0000,0000,0000,,Yeah, I was just thinking...
+Dialogue: 0,1:04:01.45,1:04:04.97,EN,,0000,0000,0000,,...I can't believe what you've given up for me.
+Dialogue: 0,1:04:05.78,1:04:09.31,EN,,0000,0000,0000,,Are you kidding? I didn't do it for you, Lois, I did it for us.
+Dialogue: 0,1:04:09.92,1:04:12.98,EN,,0000,0000,0000,,See, I told you there'd be a hot dog place somewhere.
+Dialogue: 0,1:04:13.16,1:04:17.09,EN,,0000,0000,0000,,Okay. It sure takes longer when you can't fly.
+Dialogue: 0,1:04:17.26,1:04:18.99,EN,,0000,0000,0000,,Hurry up.
+Dialogue: 0,1:04:19.16,1:04:21.06,EN,,0000,0000,0000,,- Come on. - Okay.
+Dialogue: 0,1:04:24.27,1:04:26.60,EN,,0000,0000,0000,,Come on, it's my treat. Come on.
+Dialogue: 0,1:04:30.34,1:04:32.71,EN,,0000,0000,0000,,Oh, boy, it's Mr. Wonderful.
+Dialogue: 0,1:04:34.35,1:04:36.61,EN,,0000,0000,0000,,Thank you.
+Dialogue: 0,1:04:38.85,1:04:41.58,EN,,0000,0000,0000,,- Do you have a men's room? - Yeah. Right in the corner.
+Dialogue: 0,1:04:41.75,1:04:44.28,EN,,0000,0000,0000,,- Want to sit down? - Yeah.
+Dialogue: 0,1:04:46.26,1:04:47.75,EN,,0000,0000,0000,,Hi, what would you folks like?
+Dialogue: 0,1:04:47.93,1:04:51.52,EN,,0000,0000,0000,,I'd like a cheeseburger with everything on it, and a Coke...
+Dialogue: 0,1:04:51.70,1:04:55.36,EN,,0000,0000,0000,,...an order of fries and a side salad, please.
+Dialogue: 0,1:04:56.40,1:04:59.39,EN,,0000,0000,0000,,- And for you, sir? - I'll think about it when I get back.
+Dialogue: 0,1:04:59.57,1:05:01.10,EN,,0000,0000,0000,,Right. That's one cheeseburger...
+Dialogue: 0,1:05:01.34,1:05:04.00,EN,,0000,0000,0000,,- Steak and eggs, over easy, coffee. - Can I have my Coke?
+Dialogue: 0,1:05:04.18,1:05:05.94,EN,,0000,0000,0000,,Coming right up.
+Dialogue: 0,1:05:06.31,1:05:09.80,EN,,0000,0000,0000,,- I'm sorry, that seat's taken. - It is now, sweetheart.
+Dialogue: 0,1:05:10.95,1:05:12.92,EN,,0000,0000,0000,,Can I buy you something to eat?
+Dialogue: 0,1:05:13.59,1:05:15.28,EN,,0000,0000,0000,,No, thank you.
+Dialogue: 0,1:05:16.19,1:05:18.49,EN,,0000,0000,0000,,Excuse me. I think you're sitting in my seat.
+Dialogue: 0,1:05:19.32,1:05:21.82,EN,,0000,0000,0000,,Your seat's in there, four-eyes.
+Dialogue: 0,1:05:24.83,1:05:28.70,EN,,0000,0000,0000,,Gee, I think perhaps somebody ought to teach you some manners, sir.
+Dialogue: 0,1:05:29.84,1:05:32.33,EN,,0000,0000,0000,,Yeah? Well, let me know when he comes in.
+Dialogue: 0,1:05:32.50,1:05:35.00,EN,,0000,0000,0000,,- Look, Clark, we can just... - Honey.
+Dialogue: 0,1:05:36.31,1:05:38.71,EN,,0000,0000,0000,,Excuse me, sir, would you care to step outside?
+Dialogue: 0,1:05:38.91,1:05:41.64,EN,,0000,0000,0000,,I said, excuse me, sir, would you care to step outside?
+Dialogue: 0,1:05:44.92,1:05:47.65,EN,,0000,0000,0000,,Now, listen, Rocky, your steak's coming right up.
+Dialogue: 0,1:05:48.22,1:05:51.99,EN,,0000,0000,0000,,Keep it on the flame, Ron. This is just a minute steak.
+Dialogue: 0,1:05:53.23,1:05:54.78,EN,,0000,0000,0000,,After you.
+Dialogue: 0,1:05:55.46,1:05:57.33,EN,,0000,0000,0000,,- Clark. - It's all right, honey.
+Dialogue: 0,1:06:00.63,1:06:01.72,EN,,0000,0000,0000,,Clark!
+Dialogue: 0,1:06:03.94,1:06:05.37,EN,,0000,0000,0000,,You all right, fella?
+Dialogue: 0,1:06:05.54,1:06:08.30,EN,,0000,0000,0000,,He's gonna be fine, just give me that.
+Dialogue: 0,1:06:08.64,1:06:12.17,EN,,0000,0000,0000,,- Clark? - Blood. It's my blood.
+Dialogue: 0,1:06:13.01,1:06:17.21,EN,,0000,0000,0000,,I think maybe we ought to hire a bodyguard from now on.
+Dialogue: 0,1:06:17.38,1:06:20.84,EN,,0000,0000,0000,,I don't want a bodyguard. I want the man I fell in love with.
+Dialogue: 0,1:06:21.02,1:06:23.15,EN,,0000,0000,0000,,I know that, Lois.
+Dialogue: 0,1:06:23.32,1:06:25.55,EN,,0000,0000,0000,,I wish he were here.
+Dialogue: 0,1:06:31.23,1:06:32.96,EN,,0000,0000,0000,,Clark.
+Dialogue: 0,1:06:34.33,1:06:37.56,EN,,0000,0000,0000,,Boy, you just don't have enough sense to stay down, do you?
+Dialogue: 0,1:06:44.54,1:06:48.74,EN,,0000,0000,0000,,You... You... You are no good.
+Dialogue: 0,1:06:49.48,1:06:51.68,EN,,0000,0000,0000,,Settle down!
+Dialogue: 0,1:06:52.25,1:06:54.68,EN,,0000,0000,0000,,I don't like your meat anyway.
+Dialogue: 0,1:06:56.86,1:06:58.72,EN,,0000,0000,0000,,Oh, God.
+Dialogue: 0,1:07:05.80,1:07:08.77,EN,,0000,0000,0000,,Clark? Clark?
+Dialogue: 0,1:07:08.93,1:07:10.73,EN,,0000,0000,0000,,Clark, can you get up?
+Dialogue: 0,1:07:10.94,1:07:13.60,EN,,0000,0000,0000,,- All right. Come on. I got you. - Go slow. Go slow.
+Dialogue: 0,1:07:13.81,1:07:15.57,EN,,0000,0000,0000,,Try and get up in that chair.
+Dialogue: 0,1:07:17.41,1:07:20.07,EN,,0000,0000,0000,,- Sit down. - I'm all right. I'm all right.
+Dialogue: 0,1:07:21.51,1:07:25.11,EN,,0000,0000,0000,,Okay, everybody, he's all right. Just relax. We'll have some fresh coffee.
+Dialogue: 0,1:07:25.28,1:07:27.58,EN,,0000,0000,0000,,I'll turn the box on.
+Dialogue: 0,1:07:28.42,1:07:31.25,EN,,0000,0000,0000,,We interrupt this program for an urgent message...
+Dialogue: 0,1:07:31.42,1:07:34.32,EN,,0000,0000,0000,,...from the President of the United States.
+Dialogue: 0,1:07:34.56,1:07:36.89,EN,,0000,0000,0000,,This is your president.
+Dialogue: 0,1:07:37.16,1:07:42.00,EN,,0000,0000,0000,,On behalf of my country, and in the name of the other leaders of the world...
+Dialogue: 0,1:07:42.50,1:07:45.23,EN,,0000,0000,0000,,...with whom I have today consulted...
+Dialogue: 0,1:07:45.77,1:07:48.53,EN,,0000,0000,0000,,...I hereby abdicate...
+Dialogue: 0,1:07:48.77,1:07:53.04,EN,,0000,0000,0000,,...all authority and control over this planet...
+Dialogue: 0,1:07:53.58,1:07:55.10,EN,,0000,0000,0000,,...to General Zod.
+Dialogue: 0,1:07:55.91,1:07:57.11,EN,,0000,0000,0000,,Zod.
+Dialogue: 0,1:07:57.28,1:08:00.81,EN,,0000,0000,0000,,Only by strict compliance with all his directions...
+Dialogue: 0,1:08:01.62,1:08:05.58,EN,,0000,0000,0000,,...will the lives of innocent millions be spared.
+Dialogue: 0,1:08:06.12,1:08:07.72,EN,,0000,0000,0000,,Superman, can you hear me?
+Dialogue: 0,1:08:07.89,1:08:11.66,EN,,0000,0000,0000,,- Superman, where...? - Who is this Superman?
+Dialogue: 0,1:08:11.83,1:08:17.89,EN,,0000,0000,0000,,- You'll find out. And when you do... - Come to me, Superman, if you dare.
+Dialogue: 0,1:08:18.07,1:08:19.66,EN,,0000,0000,0000,,I defy you.
+Dialogue: 0,1:08:19.84,1:08:23.30,EN,,0000,0000,0000,,Come! Come and kneel before Zod.
+Dialogue: 0,1:08:25.74,1:08:27.18,EN,,0000,0000,0000,,Zod!
+Dialogue: 0,1:08:28.75,1:08:30.51,EN,,0000,0000,0000,,- Here? When? - When?
+Dialogue: 0,1:08:30.68,1:08:34.45,EN,,0000,0000,0000,,Where the hell have you been, Mac? On a desert island?
+Dialogue: 0,1:08:37.19,1:08:38.92,EN,,0000,0000,0000,,I have to go back.
+Dialogue: 0,1:08:39.09,1:08:41.06,EN,,0000,0000,0000,,You can't go back.
+Dialogue: 0,1:08:41.23,1:08:43.75,EN,,0000,0000,0000,,- There's no way now. - I have to.
+Dialogue: 0,1:08:43.93,1:08:47.13,EN,,0000,0000,0000,,I've gotta try, damn it. I've gotta try something, anything.
+Dialogue: 0,1:08:47.30,1:08:50.17,EN,,0000,0000,0000,,It's not your fault.
+Dialogue: 0,1:08:50.34,1:08:53.74,EN,,0000,0000,0000,,You didn't know this was gonna happen.
+Dialogue: 0,1:08:55.14,1:08:56.97,EN,,0000,0000,0000,,He knew.
+Dialogue: 0,1:08:57.14,1:08:59.41,EN,,0000,0000,0000,,I heard him.
+Dialogue: 0,1:08:59.58,1:09:01.84,EN,,0000,0000,0000,,I just didn't listen.
+Dialogue: 0,1:09:18.50,1:09:21.09,EN,,0000,0000,0000,,You're master of all you survey.
+Dialogue: 0,1:09:21.30,1:09:23.23,EN,,0000,0000,0000,,And so I was yesterday.
+Dialogue: 0,1:09:23.40,1:09:25.89,EN,,0000,0000,0000,,And the day before.
+Dialogue: 0,1:09:39.85,1:09:41.05,EN,,0000,0000,0000,,Hello, there.
+Dialogue: 0,1:09:42.62,1:09:44.52,EN,,0000,0000,0000,,Lex Luthor.
+Dialogue: 0,1:09:46.93,1:09:49.05,EN,,0000,0000,0000,,Lex Luthor.
+Dialogue: 0,1:09:49.53,1:09:52.43,EN,,0000,0000,0000,,You've heard the name? The greatest criminal mind on Earth.
+Dialogue: 0,1:09:52.96,1:09:55.59,EN,,0000,0000,0000,,I told you this was a puny planet.
+Dialogue: 0,1:09:55.77,1:09:57.39,EN,,0000,0000,0000,,Wait just a moment.
+Dialogue: 0,1:09:57.57,1:10:00.70,EN,,0000,0000,0000,,Wait until you get to know me better. Will you, please?
+Dialogue: 0,1:10:00.87,1:10:04.57,EN,,0000,0000,0000,,Wait. Look, I can give you anything you want.
+Dialogue: 0,1:10:04.74,1:10:06.73,EN,,0000,0000,0000,,I can give you the brass ring...
+Dialogue: 0,1:10:06.91,1:10:11.64,EN,,0000,0000,0000,,...the unlimited freedom to maim, kill, destroy.
+Dialogue: 0,1:10:12.15,1:10:16.75,EN,,0000,0000,0000,,Plus, Lex Luthor's keen mind. Lex Luthor's savvy.
+Dialogue: 0,1:10:16.92,1:10:21.26,EN,,0000,0000,0000,,Lex Luthor's career guidance. Lex Luthor's School of Better...
+Dialogue: 0,1:10:23.16,1:10:25.63,EN,,0000,0000,0000,,We have all of this without you.
+Dialogue: 0,1:10:26.43,1:10:28.59,EN,,0000,0000,0000,,You cannot bargain with what you don't have.
+Dialogue: 0,1:10:29.30,1:10:31.46,EN,,0000,0000,0000,,Magnificent One...
+Dialogue: 0,1:10:32.44,1:10:35.84,EN,,0000,0000,0000,,...what I am bargaining with is what you do not have.
+Dialogue: 0,1:10:36.01,1:10:37.37,EN,,0000,0000,0000,,The son of Jor-EI.
+Dialogue: 0,1:10:41.18,1:10:43.48,EN,,0000,0000,0000,,The son of Jor-EI?
+Dialogue: 0,1:10:43.85,1:10:45.34,EN,,0000,0000,0000,,I said that, didn't I?
+Dialogue: 0,1:10:45.85,1:10:48.51,EN,,0000,0000,0000,,Jor-EI, our jailer?
+Dialogue: 0,1:10:48.75,1:10:50.91,EN,,0000,0000,0000,,No, Jor-EI, the baseball player.
+Dialogue: 0,1:10:51.09,1:10:53.08,EN,,0000,0000,0000,,Yes, Jor-EI, your jailer.
+Dialogue: 0,1:10:53.39,1:10:56.88,EN,,0000,0000,0000,,- The son of Jor-EI? On this planet? - Aye.
+Dialogue: 0,1:10:57.06,1:10:59.66,EN,,0000,0000,0000,,Possibly you know him better by his nom de voyage...
+Dialogue: 0,1:10:59.83,1:11:02.93,EN,,0000,0000,0000,,...or his name he travels under:
+Dialogue: 0,1:11:03.10,1:11:04.90,EN,,0000,0000,0000,,Superman.
+Dialogue: 0,1:11:07.21,1:11:08.87,EN,,0000,0000,0000,,So this is Superman.
+Dialogue: 0,1:11:10.21,1:11:11.51,EN,,0000,0000,0000,,How do you know of Jor-EI?
+Dialogue: 0,1:11:11.68,1:11:16.11,EN,,0000,0000,0000,,My Fullness, as I explained to you before...
+Dialogue: 0,1:11:17.18,1:11:18.67,EN,,0000,0000,0000,,...I'm about the best there is.
+Dialogue: 0,1:11:18.85,1:11:20.15,EN,,0000,0000,0000,,Revenge.
+Dialogue: 0,1:11:20.32,1:11:22.31,EN,,0000,0000,0000,,We will kill the son of our jailer.
+Dialogue: 0,1:11:22.49,1:11:25.46,EN,,0000,0000,0000,,- Revenge. - Revenge! Now we're cooking.
+Dialogue: 0,1:11:25.66,1:11:27.65,EN,,0000,0000,0000,,- He flies, then? - Constantly.
+Dialogue: 0,1:11:27.83,1:11:29.85,EN,,0000,0000,0000,,- He has powers as we do? - Certainly.
+Dialogue: 0,1:11:30.03,1:11:34.36,EN,,0000,0000,0000,,But, Magnificent One...
+Dialogue: 0,1:11:34.53,1:11:37.37,EN,,0000,0000,0000,,...he's just one...
+Dialogue: 0,1:11:37.54,1:11:40.10,EN,,0000,0000,0000,,...where you are three.
+Dialogue: 0,1:11:40.84,1:11:44.24,EN,,0000,0000,0000,,- Or four, if you count him twice. - We will bring him to his knees.
+Dialogue: 0,1:11:44.51,1:11:46.17,EN,,0000,0000,0000,,Wait!
+Dialogue: 0,1:11:47.75,1:11:49.01,EN,,0000,0000,0000,,First, you must find him.
+Dialogue: 0,1:11:49.31,1:11:52.61,EN,,0000,0000,0000,,And Lex Baby is the only one who knows where he is.
+Dialogue: 0,1:11:54.15,1:11:56.64,EN,,0000,0000,0000,,What do you want?
+Dialogue: 0,1:11:56.86,1:11:58.98,EN,,0000,0000,0000,,Well, general...
+Dialogue: 0,1:11:59.16,1:12:01.72,EN,,0000,0000,0000,,...the world is a big place.
+Dialogue: 0,1:12:01.89,1:12:04.33,EN,,0000,0000,0000,,Thank goodness...
+Dialogue: 0,1:12:04.50,1:12:06.46,EN,,0000,0000,0000,,...my needs are small.
+Dialogue: 0,1:12:07.90,1:12:13.74,EN,,0000,0000,0000,,As it turns out, I have this affinity for beachfront property.
+Dialogue: 0,1:12:15.47,1:12:17.96,EN,,0000,0000,0000,,What do you want?
+Dialogue: 0,1:12:18.14,1:12:19.91,EN,,0000,0000,0000,,Australia.
+Dialogue: 0,1:12:51.44,1:12:52.97,EN,,0000,0000,0000,,Hey.
+Dialogue: 0,1:12:55.71,1:13:00.17,EN,,0000,0000,0000,,Listen... Hey, come on, where are you...? Please!
+Dialogue: 0,1:13:37.76,1:13:39.35,EN,,0000,0000,0000,,Father?
+Dialogue: 0,1:13:41.96,1:13:44.02,EN,,0000,0000,0000,,If you can hear me...
+Dialogue: 0,1:13:45.73,1:13:47.63,EN,,0000,0000,0000,,...I failed.
+Dialogue: 0,1:13:50.03,1:13:51.93,EN,,0000,0000,0000,,I failed you...
+Dialogue: 0,1:13:52.24,1:13:54.00,EN,,0000,0000,0000,,...I failed myself...
+Dialogue: 0,1:13:55.87,1:13:57.97,EN,,0000,0000,0000,,...and all humanity.
+Dialogue: 0,1:14:00.88,1:14:03.04,EN,,0000,0000,0000,,I've traded my birthright...
+Dialogue: 0,1:14:04.15,1:14:08.95,EN,,0000,0000,0000,,...for a life of submission in a world that's now ruled by your enemies.
+Dialogue: 0,1:14:10.66,1:14:13.15,EN,,0000,0000,0000,,There's nobody left to help them now...
+Dialogue: 0,1:14:13.96,1:14:15.89,EN,,0000,0000,0000,,...the people of the world.
+Dialogue: 0,1:14:16.96,1:14:18.99,EN,,0000,0000,0000,,Not since I...
+Dialogue: 0,1:14:19.90,1:14:23.03,EN,,0000,0000,0000,,Father!
+Dialogue: 0,1:15:34.10,1:15:38.69,EN,,0000,0000,0000,,Listen carefully, my son, for we shall never speak again.
+Dialogue: 0,1:15:40.57,1:15:43.16,EN,,0000,0000,0000,,If you hear me now...
+Dialogue: 0,1:15:43.34,1:15:46.36,EN,,0000,0000,0000,,...then you have made use of the only means left to you:
+Dialogue: 0,1:15:47.27,1:15:51.21,EN,,0000,0000,0000,,The crystal source through which our communications begun.
+Dialogue: 0,1:15:52.18,1:15:54.58,EN,,0000,0000,0000,,The circle is now complete.
+Dialogue: 0,1:15:54.95,1:15:58.15,EN,,0000,0000,0000,,You have made a dreadful mistake, Kal-EI.
+Dialogue: 0,1:16:01.56,1:16:05.08,EN,,0000,0000,0000,,You did this of your own free will...
+Dialogue: 0,1:16:05.63,1:16:08.42,EN,,0000,0000,0000,,...in spite of all I could say to dissuade you.
+Dialogue: 0,1:16:10.73,1:16:12.32,EN,,0000,0000,0000,,I...
+Dialogue: 0,1:16:12.50,1:16:16.99,EN,,0000,0000,0000,,Now you have returned to me for one last chance to redeem yourself.
+Dialogue: 0,1:16:17.17,1:16:22.07,EN,,0000,0000,0000,,This too finally I have anticipated, my son.
+Dialogue: 0,1:16:24.75,1:16:26.91,EN,,0000,0000,0000,,Look at me, Kal-EI.
+Dialogue: 0,1:16:29.35,1:16:33.95,EN,,0000,0000,0000,,Once before when you were small, I died...
+Dialogue: 0,1:16:35.19,1:16:38.16,EN,,0000,0000,0000,,...while giving you a chance for life.
+Dialogue: 0,1:16:39.29,1:16:43.25,EN,,0000,0000,0000,,And now, even though it will exhaust the final energy left within me...
+Dialogue: 0,1:16:43.96,1:16:45.80,EN,,0000,0000,0000,,Father, no.
+Dialogue: 0,1:16:47.30,1:16:49.77,EN,,0000,0000,0000,,Look at me, Kal-EI.
+Dialogue: 0,1:16:52.51,1:16:57.31,EN,,0000,0000,0000,,The Kryptonian prophecy will be at last fulfilled.
+Dialogue: 0,1:16:57.61,1:17:03.14,EN,,0000,0000,0000,,The son becomes the father, the father becomes the son.
+Dialogue: 0,1:17:07.66,1:17:11.56,EN,,0000,0000,0000,,Farewell forever, Kal-EI.
+Dialogue: 0,1:17:14.83,1:17:17.30,EN,,0000,0000,0000,,Remember me, my son.
+Dialogue: 0,1:17:47.33,1:17:48.92,EN,,0000,0000,0000,,My son.
+Dialogue: 0,1:18:04.51,1:18:06.21,EN,,0000,0000,0000,,Father!
+Dialogue: 0,1:18:19.86,1:18:23.32,EN,,0000,0000,0000,,Harold. Coffee, black, no sugar.
+Dialogue: 0,1:18:23.50,1:18:26.59,EN,,0000,0000,0000,,Black, no sug... Yeah. Yeah.
+Dialogue: 0,1:18:27.47,1:18:29.03,EN,,0000,0000,0000,,Who's paying, huh?
+Dialogue: 0,1:18:30.07,1:18:32.80,EN,,0000,0000,0000,,No, no! There's three of them. That cockamamie general...
+Dialogue: 0,1:18:32.97,1:18:37.10,EN,,0000,0000,0000,,...and a big truck with hair on it and a broad that looks like the queen of the runway.
+Dialogue: 0,1:18:37.28,1:18:42.01,EN,,0000,0000,0000,,They can fly, they can see through things. Anything Superman can do, they can do.
+Dialogue: 0,1:18:42.48,1:18:44.78,EN,,0000,0000,0000,,Where is he, anyway?
+Dialogue: 0,1:18:44.99,1:18:46.98,EN,,0000,0000,0000,,Maybe he hasn't heard about it yet, chief.
+Dialogue: 0,1:18:47.15,1:18:49.32,EN,,0000,0000,0000,,- Maybe... - Maybe he's just run out of guts.
+Dialogue: 0,1:18:49.49,1:18:52.12,EN,,0000,0000,0000,,- No sugar. And don't call me "chief." - He'll be here.
+Dialogue: 0,1:18:52.29,1:18:55.82,EN,,0000,0000,0000,,- Lf there's any way at all, he'll be here. - Yeah, he'll be here.
+Dialogue: 0,1:18:58.37,1:19:00.63,EN,,0000,0000,0000,,- What's going on? - I don't know.
+Dialogue: 0,1:19:01.34,1:19:03.24,EN,,0000,0000,0000,,- Hey, Charlie, you feel that? - Yeah.
+Dialogue: 0,1:19:03.54,1:19:04.94,EN,,0000,0000,0000,,Sounds like an earthquake.
+Dialogue: 0,1:19:07.04,1:19:08.60,EN,,0000,0000,0000,,Oh, my!
+Dialogue: 0,1:19:14.72,1:19:17.38,EN,,0000,0000,0000,,- It's those three. - Stop!
+Dialogue: 0,1:19:17.55,1:19:20.85,EN,,0000,0000,0000,,- Oh, my God, they're here now! - Oh, no!
+Dialogue: 0,1:19:32.43,1:19:33.66,EN,,0000,0000,0000,,This is scary!
+Dialogue: 0,1:20:22.75,1:20:24.88,EN,,0000,0000,0000,,You all right, chief?
+Dialogue: 0,1:20:25.39,1:20:26.79,EN,,0000,0000,0000,,Hi.
+Dialogue: 0,1:20:28.72,1:20:31.62,EN,,0000,0000,0000,,You should see the White House. They'll be cleaning for months.
+Dialogue: 0,1:20:31.79,1:20:33.12,EN,,0000,0000,0000,,Lex Luthor.
+Dialogue: 0,1:20:33.69,1:20:34.92,EN,,0000,0000,0000,,Wouldn't you know it?
+Dialogue: 0,1:20:35.56,1:20:38.40,EN,,0000,0000,0000,,This is the son of Jor-EI?
+Dialogue: 0,1:20:38.57,1:20:40.47,EN,,0000,0000,0000,,- No, but I bet you're a son of a... - Jimmy!
+Dialogue: 0,1:20:41.70,1:20:44.69,EN,,0000,0000,0000,,You promised me the son of Jor-EI.
+Dialogue: 0,1:20:46.17,1:20:47.33,EN,,0000,0000,0000,,Yes, Your Grace.
+Dialogue: 0,1:20:47.94,1:20:51.54,EN,,0000,0000,0000,,But what I've given you is the next best thing.
+Dialogue: 0,1:20:51.71,1:20:54.74,EN,,0000,0000,0000,,You just hold on to that little lady, and he'll be along.
+Dialogue: 0,1:20:54.92,1:20:56.47,EN,,0000,0000,0000,,See, they have this relationship.
+Dialogue: 0,1:20:56.65,1:21:00.98,EN,,0000,0000,0000,,She does all his public relations, and he gives her every exclusive.
+Dialogue: 0,1:21:01.16,1:21:03.82,EN,,0000,0000,0000,,They're the best of friends. You know what I mean?
+Dialogue: 0,1:21:04.16,1:21:07.39,EN,,0000,0000,0000,,What an undemanding male this Superman must be.
+Dialogue: 0,1:21:07.83,1:21:10.46,EN,,0000,0000,0000,,You could use a tuck here and there yourself, sister.
+Dialogue: 0,1:21:10.96,1:21:12.56,EN,,0000,0000,0000,,Wait!
+Dialogue: 0,1:21:12.73,1:21:14.10,EN,,0000,0000,0000,,- I'm sorry! - She lives for now.
+Dialogue: 0,1:21:15.04,1:21:17.40,EN,,0000,0000,0000,,Kill the rest, starting with him.
+Dialogue: 0,1:21:19.94,1:21:22.43,EN,,0000,0000,0000,,Wait. Wait, wait, wait!
+Dialogue: 0,1:21:22.61,1:21:24.17,EN,,0000,0000,0000,,Wait. Wait.
+Dialogue: 0,1:21:24.34,1:21:28.44,EN,,0000,0000,0000,,Don't you remember the White House? The Oval Room? We had a few laughs there.
+Dialogue: 0,1:21:29.02,1:21:30.57,EN,,0000,0000,0000,,You ought to have that fixed.
+Dialogue: 0,1:21:42.16,1:21:43.36,EN,,0000,0000,0000,,General...
+Dialogue: 0,1:21:44.26,1:21:46.39,EN,,0000,0000,0000,,...haven't you heard of freedom of the press?
+Dialogue: 0,1:21:46.60,1:21:48.63,EN,,0000,0000,0000,,- Superman! - Superman, thank God.
+Dialogue: 0,1:21:49.60,1:21:50.97,EN,,0000,0000,0000,,I mean, get him!
+Dialogue: 0,1:21:51.37,1:21:53.20,EN,,0000,0000,0000,,Come to me, son of Jor-EI!
+Dialogue: 0,1:21:53.71,1:21:56.54,EN,,0000,0000,0000,,Kneel before Zod!
+Dialogue: 0,1:22:11.16,1:22:13.15,EN,,0000,0000,0000,,Watch out. You all right?
+Dialogue: 0,1:22:32.75,1:22:34.30,EN,,0000,0000,0000,,Son of Jor-EI.
+Dialogue: 0,1:22:34.78,1:22:37.34,EN,,0000,0000,0000,,We were beginning to think you were a coward.
+Dialogue: 0,1:22:37.72,1:22:38.98,EN,,0000,0000,0000,,I'm not a coward, Zod.
+Dialogue: 0,1:22:39.25,1:22:42.31,EN,,0000,0000,0000,,It is extremely likely you are merely a fool.
+Dialogue: 0,1:22:42.49,1:22:44.86,EN,,0000,0000,0000,,Like father, like son.
+Dialogue: 0,1:23:01.14,1:23:02.54,EN,,0000,0000,0000,,Look out!
+Dialogue: 0,1:23:05.61,1:23:08.38,EN,,0000,0000,0000,,Then die as you deserve to!
+Dialogue: 0,1:23:18.53,1:23:20.72,EN,,0000,0000,0000,,Come on, come on, Superman! Get him!
+Dialogue: 0,1:23:20.99,1:23:23.05,EN,,0000,0000,0000,,Man, this is gonna be good.
+Dialogue: 0,1:23:59.07,1:24:00.66,EN,,0000,0000,0000,,Superman.
+Dialogue: 0,1:24:21.69,1:24:24.05,EN,,0000,0000,0000,,- Hey, that's the chief's. - The chief's got it.
+Dialogue: 0,1:24:32.77,1:24:34.73,EN,,0000,0000,0000,,What, you hit a woman?
+Dialogue: 0,1:24:57.86,1:25:01.02,EN,,0000,0000,0000,,Oh, my God! My baby!
+Dialogue: 0,1:25:01.40,1:25:03.83,EN,,0000,0000,0000,,Help my baby!
+Dialogue: 0,1:25:06.70,1:25:08.40,EN,,0000,0000,0000,,Thank you.
+Dialogue: 0,1:25:09.97,1:25:13.53,EN,,0000,0000,0000,,This Superman is nothing of the kind.
+Dialogue: 0,1:25:13.74,1:25:16.14,EN,,0000,0000,0000,,- I've discovered his weakness. - Yes.
+Dialogue: 0,1:25:16.31,1:25:17.71,EN,,0000,0000,0000,,He cares.
+Dialogue: 0,1:25:17.98,1:25:21.24,EN,,0000,0000,0000,,He actually cares for these Earth people.
+Dialogue: 0,1:25:21.42,1:25:24.58,EN,,0000,0000,0000,,- Like pets? - I suppose so.
+Dialogue: 0,1:25:32.76,1:25:34.66,EN,,0000,0000,0000,,I'll draw his fire...
+Dialogue: 0,1:25:34.83,1:25:36.76,EN,,0000,0000,0000,,...with some of my own.
+Dialogue: 0,1:26:04.32,1:26:05.99,EN,,0000,0000,0000,,What's happening to those cars?
+Dialogue: 0,1:26:09.43,1:26:10.90,EN,,0000,0000,0000,,Get out of the way!
+Dialogue: 0,1:27:26.07,1:27:27.17,EN,,0000,0000,0000,,Superman.
+Dialogue: 0,1:28:12.72,1:28:14.12,EN,,0000,0000,0000,,Oh, thank you!
+Dialogue: 0,1:28:14.29,1:28:16.85,EN,,0000,0000,0000,,I never thought this thing would go the distance.
+Dialogue: 0,1:28:31.07,1:28:33.16,EN,,0000,0000,0000,,No! Don't do it!
+Dialogue: 0,1:28:33.61,1:28:35.27,EN,,0000,0000,0000,,The people!
+Dialogue: 0,1:28:39.91,1:28:41.71,EN,,0000,0000,0000,,Throw it!
+Dialogue: 0,1:29:02.94,1:29:06.24,EN,,0000,0000,0000,,- Get away from there. Get away from there. - Let's help them out!
+Dialogue: 0,1:29:09.78,1:29:13.23,EN,,0000,0000,0000,,- I got her. I got her. Don't worry. - He's dead.
+Dialogue: 0,1:29:14.88,1:29:16.87,EN,,0000,0000,0000,,Superman is dead.
+Dialogue: 0,1:29:20.12,1:29:21.38,EN,,0000,0000,0000,,They've killed Superman.
+Dialogue: 0,1:29:22.82,1:29:25.12,EN,,0000,0000,0000,,- He's dead. - Let's go get them!
+Dialogue: 0,1:29:25.29,1:29:27.89,EN,,0000,0000,0000,,- Come on, we'll show them! - I know some judo. Let's go!
+Dialogue: 0,1:29:28.43,1:29:29.95,EN,,0000,0000,0000,,Come on!
+Dialogue: 0,1:30:00.39,1:30:03.02,EN,,0000,0000,0000,,I'm holding it, I'm holding it!
+Dialogue: 0,1:30:03.20,1:30:05.60,EN,,0000,0000,0000,,What can you do if you can't see what's happening?
+Dialogue: 0,1:30:10.57,1:30:13.70,EN,,0000,0000,0000,,- Hold on! - Oh, my God!
+Dialogue: 0,1:31:22.61,1:31:25.08,EN,,0000,0000,0000,,You can't leave us!
+Dialogue: 0,1:31:29.78,1:31:34.08,EN,,0000,0000,0000,,So he is a coward after all.
+Dialogue: 0,1:31:34.49,1:31:36.01,EN,,0000,0000,0000,,He's gone.
+Dialogue: 0,1:31:36.19,1:31:37.71,EN,,0000,0000,0000,,Come back, Superman!
+Dialogue: 0,1:31:42.80,1:31:44.46,EN,,0000,0000,0000,,Don't leave us!
+Dialogue: 0,1:31:47.37,1:31:49.36,EN,,0000,0000,0000,,He chickened out.
+Dialogue: 0,1:31:49.87,1:31:50.93,EN,,0000,0000,0000,,Phony!
+Dialogue: 0,1:31:52.27,1:31:54.21,EN,,0000,0000,0000,,Superman didn't even do nothing.
+Dialogue: 0,1:31:54.47,1:31:56.60,EN,,0000,0000,0000,,Come on, let's go.
+Dialogue: 0,1:32:03.62,1:32:07.42,EN,,0000,0000,0000,,- There they are. - Get away from here. Jimmy.
+Dialogue: 0,1:32:16.43,1:32:18.26,EN,,0000,0000,0000,,Our victory is complete.
+Dialogue: 0,1:32:18.43,1:32:20.19,EN,,0000,0000,0000,,The son of Jor-El has fled.
+Dialogue: 0,1:32:20.37,1:32:23.06,EN,,0000,0000,0000,,- Superman fled? - I don't believe you.
+Dialogue: 0,1:32:23.24,1:32:27.30,EN,,0000,0000,0000,,You heard him. Three against one, you should've taken two ears and a tail.
+Dialogue: 0,1:32:27.47,1:32:30.57,EN,,0000,0000,0000,,- He fled in fear of us. - He'll be back.
+Dialogue: 0,1:32:30.74,1:32:33.11,EN,,0000,0000,0000,,As long as he's alive, he's gonna try again.
+Dialogue: 0,1:32:33.28,1:32:36.72,EN,,0000,0000,0000,,- The next time, we will kill him. - The next time?
+Dialogue: 0,1:32:37.75,1:32:39.81,EN,,0000,0000,0000,,The next time?
+Dialogue: 0,1:32:40.55,1:32:42.65,EN,,0000,0000,0000,,What am I gonna do with you people?
+Dialogue: 0,1:32:42.82,1:32:45.42,EN,,0000,0000,0000,,I held up my end. I delivered you the blue boy.
+Dialogue: 0,1:32:45.59,1:32:47.89,EN,,0000,0000,0000,,What do I get from my triple threat?
+Dialogue: 0,1:32:48.06,1:32:52.40,EN,,0000,0000,0000,,"Bow, yield, kneel." That kind of stuff closes out a town.
+Dialogue: 0,1:32:53.97,1:32:57.77,EN,,0000,0000,0000,,Why do you say this to me when you know I will kill you for it?
+Dialogue: 0,1:32:57.97,1:33:01.77,EN,,0000,0000,0000,,Kill me? Lex Luthor?
+Dialogue: 0,1:33:02.21,1:33:04.97,EN,,0000,0000,0000,,Extinguish the greatest criminal flame of our age?
+Dialogue: 0,1:33:05.15,1:33:09.28,EN,,0000,0000,0000,,- Eradicate the only man on earth with... - Let me kill him!
+Dialogue: 0,1:33:09.75,1:33:11.34,EN,,0000,0000,0000,,- Superman's address?
+Dialogue: 0,1:33:15.22,1:33:20.56,EN,,0000,0000,0000,,What more do you want? I can see the greed written on your face.
+Dialogue: 0,1:33:20.73,1:33:23.59,EN,,0000,0000,0000,,A small incentive, O Fullest One.
+Dialogue: 0,1:33:23.76,1:33:26.79,EN,,0000,0000,0000,,A mere bauble to jog the memory.
+Dialogue: 0,1:33:27.40,1:33:28.59,EN,,0000,0000,0000,,What more?
+Dialogue: 0,1:33:29.57,1:33:30.76,EN,,0000,0000,0000,,Cuba.
+Dialogue: 0,1:33:38.78,1:33:45.01,EN,,0000,0000,0000,,I trust you are not wasting my time, Lex Luthor.
+Dialogue: 0,1:33:45.22,1:33:47.45,EN,,0000,0000,0000,,Of course not, Your Turbulence.
+Dialogue: 0,1:34:33.63,1:34:35.73,EN,,0000,0000,0000,,Show yourself, coward!
+Dialogue: 0,1:34:38.64,1:34:40.83,EN,,0000,0000,0000,,Son of a coward!
+Dialogue: 0,1:34:47.21,1:34:48.51,EN,,0000,0000,0000,,I'm here, Zod.
+Dialogue: 0,1:34:48.92,1:34:51.94,EN,,0000,0000,0000,,- Let Miss Lane go, step inside. We'll talk. - No, don't, Superman!
+Dialogue: 0,1:34:52.12,1:34:54.09,EN,,0000,0000,0000,,Please don't listen to him. He's just...
+Dialogue: 0,1:34:54.52,1:34:55.78,EN,,0000,0000,0000,,Stop.
+Dialogue: 0,1:34:55.96,1:34:57.95,EN,,0000,0000,0000,,Your powers are identical to mine.
+Dialogue: 0,1:34:58.12,1:35:01.36,EN,,0000,0000,0000,,But we are three. We could tear you limb from limb.
+Dialogue: 0,1:35:01.66,1:35:02.89,EN,,0000,0000,0000,,Do it, Your Grace.
+Dialogue: 0,1:35:03.26,1:35:05.42,EN,,0000,0000,0000,,Just grab a leg and just make a wish.
+Dialogue: 0,1:35:06.93,1:35:09.33,EN,,0000,0000,0000,,But you are victim to another fatal weakness...
+Dialogue: 0,1:35:09.77,1:35:11.20,EN,,0000,0000,0000,,...your compassion.
+Dialogue: 0,1:35:11.37,1:35:13.84,EN,,0000,0000,0000,,The death of others means more to you than your own.
+Dialogue: 0,1:35:14.01,1:35:15.47,EN,,0000,0000,0000,,Yes, with rare exceptions.
+Dialogue: 0,1:35:15.91,1:35:21.44,EN,,0000,0000,0000,,Your father condemned us to an eternal living death. Your fate will be the same.
+Dialogue: 0,1:35:21.71,1:35:23.77,EN,,0000,0000,0000,,You will live, Kal-EI, forever...
+Dialogue: 0,1:35:23.95,1:35:28.94,EN,,0000,0000,0000,,...as my slave. If not, then others will pay for your obstinate attitude.
+Dialogue: 0,1:35:29.12,1:35:34.65,EN,,0000,0000,0000,,Innocent people, millions if necessary, beginning with this Lois person.
+Dialogue: 0,1:35:34.83,1:35:36.45,EN,,0000,0000,0000,,- Don't, Superman, don't! - Stop it!
+Dialogue: 0,1:35:40.67,1:35:42.90,EN,,0000,0000,0000,,All right, Zod.
+Dialogue: 0,1:35:43.57,1:35:45.00,EN,,0000,0000,0000,,It's over.
+Dialogue: 0,1:35:47.84,1:35:51.61,EN,,0000,0000,0000,,Your Grace, don't believe him! You don't know him the way that I do.
+Dialogue: 0,1:35:53.81,1:35:56.01,EN,,0000,0000,0000,,I sense the presence of Jor-El here.
+Dialogue: 0,1:35:58.02,1:35:59.88,EN,,0000,0000,0000,,We will destroy this place.
+Dialogue: 0,1:36:00.39,1:36:01.79,EN,,0000,0000,0000,,And then kill him.
+Dialogue: 0,1:36:04.09,1:36:05.96,EN,,0000,0000,0000,,Him.
+Dialogue: 0,1:36:07.13,1:36:10.06,EN,,0000,0000,0000,,Him? Me?
+Dialogue: 0,1:36:11.46,1:36:13.40,EN,,0000,0000,0000,,General, this is Lex Luthor.
+Dialogue: 0,1:36:14.07,1:36:17.63,EN,,0000,0000,0000,,Remember...? I helped you through the tough times.
+Dialogue: 0,1:36:17.80,1:36:19.67,EN,,0000,0000,0000,,I filled your inside straight.
+Dialogue: 0,1:36:20.21,1:36:24.27,EN,,0000,0000,0000,,You came to me with nothing. I gave you Superman.
+Dialogue: 0,1:36:24.44,1:36:25.91,EN,,0000,0000,0000,,Silence!
+Dialogue: 0,1:36:26.08,1:36:27.67,EN,,0000,0000,0000,,Well, look...
+Dialogue: 0,1:36:30.18,1:36:31.71,EN,,0000,0000,0000,,Guy's a clod.
+Dialogue: 0,1:36:32.32,1:36:34.38,EN,,0000,0000,0000,,You think you know people, right?
+Dialogue: 0,1:36:34.99,1:36:38.12,EN,,0000,0000,0000,,Promises were made, gifts were exchanged.
+Dialogue: 0,1:36:38.29,1:36:41.69,EN,,0000,0000,0000,,I gotta hand it to you, you know. You always told the truth.
+Dialogue: 0,1:36:41.89,1:36:44.69,EN,,0000,0000,0000,,A guy always knew where he stood with you.
+Dialogue: 0,1:36:46.80,1:36:49.67,EN,,0000,0000,0000,,Try to get them all into this molecule chamber here.
+Dialogue: 0,1:36:49.84,1:36:51.96,EN,,0000,0000,0000,,It takes away their powers, see...
+Dialogue: 0,1:36:52.14,1:36:54.73,EN,,0000,0000,0000,,...and turns them into ordinary human beings.
+Dialogue: 0,1:36:54.91,1:36:56.10,EN,,0000,0000,0000,,Now, if you could...
+Dialogue: 0,1:36:59.28,1:37:02.48,EN,,0000,0000,0000,,- Don't go in there. It's a trap. - Luthor, you poisonous snake!
+Dialogue: 0,1:37:02.85,1:37:04.34,EN,,0000,0000,0000,,That's a molecule chamber.
+Dialogue: 0,1:37:04.55,1:37:08.38,EN,,0000,0000,0000,,It makes people like you into people like me.
+Dialogue: 0,1:37:08.82,1:37:11.02,EN,,0000,0000,0000,,- You've done well, Lex Luthor. - I thought so.
+Dialogue: 0,1:37:12.23,1:37:13.82,EN,,0000,0000,0000,,Seize him.
+Dialogue: 0,1:37:15.50,1:37:17.62,EN,,0000,0000,0000,,- Kill her. - No! Superman, no!
+Dialogue: 0,1:37:17.80,1:37:19.92,EN,,0000,0000,0000,,All right! All right, leave her alone, Zod!
+Dialogue: 0,1:37:20.47,1:37:22.13,EN,,0000,0000,0000,,You win.
+Dialogue: 0,1:37:25.34,1:37:29.90,EN,,0000,0000,0000,,General, the crystal there activates the mechanism.
+Dialogue: 0,1:37:30.08,1:37:32.91,EN,,0000,0000,0000,,Lex Luthor, ruler of Australia...
+Dialogue: 0,1:37:33.08,1:37:34.77,EN,,0000,0000,0000,,...activate the machine.
+Dialogue: 0,1:37:45.96,1:37:47.95,EN,,0000,0000,0000,,With your permission.
+Dialogue: 0,1:39:01.10,1:39:03.97,EN,,0000,0000,0000,,And now, finally...
+Dialogue: 0,1:39:08.21,1:39:09.83,EN,,0000,0000,0000,,Kneel.
+Dialogue: 0,1:39:14.35,1:39:16.75,EN,,0000,0000,0000,,Take my hand...
+Dialogue: 0,1:39:16.95,1:39:22.72,EN,,0000,0000,0000,,...and swear eternal loyalty to Zod.
+Dialogue: 0,1:40:02.80,1:40:04.16,EN,,0000,0000,0000,,He switched it.
+Dialogue: 0,1:40:04.80,1:40:06.73,EN,,0000,0000,0000,,He did it to them.
+Dialogue: 0,1:40:07.47,1:40:12.87,EN,,0000,0000,0000,,The lights were on out here while he was safe in there.
+Dialogue: 0,1:40:14.24,1:40:16.23,EN,,0000,0000,0000,,Hey, you know something?
+Dialogue: 0,1:40:16.58,1:40:18.70,EN,,0000,0000,0000,,You're a real pain in the neck!
+Dialogue: 0,1:40:28.65,1:40:30.45,EN,,0000,0000,0000,,Are you all right?
+Dialogue: 0,1:40:31.62,1:40:35.36,EN,,0000,0000,0000,,I knew you'd double-cross me, Luthor. A lying weasel like you couldn't resist.
+Dialogue: 0,1:40:35.83,1:40:37.69,EN,,0000,0000,0000,,Who, me? Are you kidding?
+Dialogue: 0,1:40:37.86,1:40:41.93,EN,,0000,0000,0000,,Hey, I was with you all the time. That was beautiful.
+Dialogue: 0,1:40:42.10,1:40:44.26,EN,,0000,0000,0000,,Did you see the way they fell into our trap?
+Dialogue: 0,1:40:44.50,1:40:46.94,EN,,0000,0000,0000,,Too late, Luthor. Too late.
+Dialogue: 0,1:40:47.21,1:40:50.40,EN,,0000,0000,0000,,Look. Look, Superman.
+Dialogue: 0,1:40:50.84,1:40:52.81,EN,,0000,0000,0000,,I got a proposition for you.
+Dialogue: 0,1:40:52.98,1:40:55.31,EN,,0000,0000,0000,,Now, don't stop me till you've heard this...
+Dialogue: 0,1:40:55.48,1:40:58.75,EN,,0000,0000,0000,,...because I know I owe you one, but we're in the North Pole, right?
+Dialogue: 0,1:42:15.96,1:42:17.52,EN,,0000,0000,0000,,Look, Lois...
+Dialogue: 0,1:42:18.66,1:42:20.96,EN,,0000,0000,0000,,No regrets, okay? I did it.
+Dialogue: 0,1:42:21.13,1:42:23.73,EN,,0000,0000,0000,,I got the man I loved to love me.
+Dialogue: 0,1:42:26.64,1:42:30.30,EN,,0000,0000,0000,,- Didn't I? - Oh, yeah.
+Dialogue: 0,1:42:32.48,1:42:35.21,EN,,0000,0000,0000,,Well, okay then. Those people need you.
+Dialogue: 0,1:42:35.38,1:42:37.78,EN,,0000,0000,0000,,Do you think I don't understand that?
+Dialogue: 0,1:42:42.25,1:42:46.66,EN,,0000,0000,0000,,We can still see each other, you know. I mean, all the time.
+Dialogue: 0,1:42:49.03,1:42:51.29,EN,,0000,0000,0000,,But it just can't be...
+Dialogue: 0,1:43:13.75,1:43:15.98,EN,,0000,0000,0000,,Just don't forget, that's all.
+Dialogue: 0,1:43:16.82,1:43:18.19,EN,,0000,0000,0000,,Don't ever forget.
+Dialogue: 0,1:43:42.68,1:43:45.84,EN,,0000,0000,0000,,- Well, here we are. - Home sweet home.
+Dialogue: 0,1:43:47.05,1:43:50.51,EN,,0000,0000,0000,,- See you at work in the morning. - Bright and early, huh?
+Dialogue: 0,1:43:50.69,1:43:54.59,EN,,0000,0000,0000,,- The same old Clark and the same old Lois. - Yup.
+Dialogue: 0,1:43:55.39,1:44:00.42,EN,,0000,0000,0000,,Except... maybe I won't be quite so mean to you from now on.
+Dialogue: 0,1:44:08.11,1:44:09.37,EN,,0000,0000,0000,,You don't have to worry.
+Dialogue: 0,1:44:09.94,1:44:11.53,EN,,0000,0000,0000,,Your secret's safe with me.
+Dialogue: 0,1:44:12.81,1:44:16.37,EN,,0000,0000,0000,,I know. I know that, Lois.
+Dialogue: 0,1:44:41.61,1:44:44.01,EN,,0000,0000,0000,,Well, there he goes, kid.
+Dialogue: 0,1:44:44.94,1:44:46.91,EN,,0000,0000,0000,,Up, up and away.
+Dialogue: 0,1:46:12.36,1:46:15.16,EN,,0000,0000,0000,,- No! - No!
+Dialogue: 0,1:46:42.53,1:46:44.66,EN,,0000,0000,0000,,- Hey, is Mr. White free? - On the telephone.
+Dialogue: 0,1:46:44.83,1:46:48.77,EN,,0000,0000,0000,,- He's in conference at the moment. - Yeah, that's what he says.
+Dialogue: 0,1:47:05.12,1:47:07.31,EN,,0000,0000,0000,,All right, give me three carbons of that.
+Dialogue: 0,1:47:07.49,1:47:09.82,EN,,0000,0000,0000,,- Hi. - It's gonna be an insert in the paper.
+Dialogue: 0,1:47:09.99,1:47:11.72,EN,,0000,0000,0000,,That's what they said.
+Dialogue: 0,1:47:13.26,1:47:15.73,EN,,0000,0000,0000,,Good morning. Hi.
+Dialogue: 0,1:47:21.40,1:47:23.03,EN,,0000,0000,0000,,Good morning, Lois.
+Dialogue: 0,1:47:28.74,1:47:30.57,EN,,0000,0000,0000,,- Good morning, Lois. - Hi, Clark.
+Dialogue: 0,1:47:30.74,1:47:33.47,EN,,0000,0000,0000,,Jeepers, I have seen some faraway looks in my time...
+Dialogue: 0,1:47:33.65,1:47:36.88,EN,,0000,0000,0000,,...but with that look, you might as well be on the North Pole.
+Dialogue: 0,1:47:37.85,1:47:40.05,EN,,0000,0000,0000,,The North Pole.
+Dialogue: 0,1:47:41.25,1:47:42.85,EN,,0000,0000,0000,,No, that's too silly.
+Dialogue: 0,1:47:43.82,1:47:49.42,EN,,0000,0000,0000,,Did you ever feel like you knew something that was so important that...
+Dialogue: 0,1:47:49.76,1:47:51.59,EN,,0000,0000,0000,,No, you never did.
+Dialogue: 0,1:47:52.40,1:47:58.10,EN,,0000,0000,0000,,I mean, I feel like I'm sitting on the single most important story of my career...
+Dialogue: 0,1:47:58.27,1:48:00.36,EN,,0000,0000,0000,,...and I can't remember what it is.
+Dialogue: 0,1:48:00.91,1:48:04.50,EN,,0000,0000,0000,,Well, knowing you, it must have been about Superman.
+Dialogue: 0,1:48:04.68,1:48:07.94,EN,,0000,0000,0000,,Maybe how he saved the city or saved the world or saved the universe.
+Dialogue: 0,1:48:08.11,1:48:12.05,EN,,0000,0000,0000,,Clark, Clark. Listen. Jealousy's really counterproductive.
+Dialogue: 0,1:48:12.22,1:48:14.91,EN,,0000,0000,0000,,Now, there's some things that you can do too.
+Dialogue: 0,1:48:15.92,1:48:17.51,EN,,0000,0000,0000,,Oh, yeah?
+Dialogue: 0,1:48:17.69,1:48:20.45,EN,,0000,0000,0000,,Really? Like what?
+Dialogue: 0,1:48:21.96,1:48:23.15,EN,,0000,0000,0000,,Get us a pizza.
+Dialogue: 0,1:48:23.93,1:48:27.66,EN,,0000,0000,0000,,- A pizza. Now? - Yeah, I'm hungry.
+Dialogue: 0,1:48:28.13,1:48:30.66,EN,,0000,0000,0000,,Actually, I don't think Mr. White would like it if...
+Dialogue: 0,1:48:30.84,1:48:32.77,EN,,0000,0000,0000,,I'll pay for half of it, all right?
+Dialogue: 0,1:48:32.94,1:48:34.37,EN,,0000,0000,0000,,I'm going.
+Dialogue: 0,1:48:39.55,1:48:40.98,EN,,0000,0000,0000,,Lois?
+Dialogue: 0,1:48:41.45,1:48:42.74,EN,,0000,0000,0000,,You know, about the pizza?
+Dialogue: 0,1:48:44.02,1:48:47.45,EN,,0000,0000,0000,,It's okay. I'll pay for the whole thing.
+Dialogue: 0,1:48:49.66,1:48:51.65,EN,,0000,0000,0000,,You know, you're really super.
+Dialogue: 0,1:49:13.35,1:49:15.75,EN,,0000,0000,0000,,- Hey, Ron. - Yeah?
+Dialogue: 0,1:49:15.91,1:49:17.71,EN,,0000,0000,0000,,Give me another plate of this garbage.
+Dialogue: 0,1:49:17.88,1:49:20.65,EN,,0000,0000,0000,,Garbage? That's my number-one special, Rocky.
+Dialogue: 0,1:49:20.85,1:49:24.48,EN,,0000,0000,0000,,All right. Get me some more coffee too, will you?
+Dialogue: 0,1:49:25.79,1:49:30.13,EN,,0000,0000,0000,,Gee, that's funny. I've never seen garbage eat garbage before.
+Dialogue: 0,1:49:38.17,1:49:42.07,EN,,0000,0000,0000,,Excuse me, sir. I think you're sitting in my favorite seat.
+Dialogue: 0,1:49:42.24,1:49:43.57,EN,,0000,0000,0000,,Come and get it, four-eyes.
+Dialogue: 0,1:49:48.21,1:49:49.98,EN,,0000,0000,0000,,Now cool it, Rocky.
+Dialogue: 0,1:49:51.15,1:49:52.28,EN,,0000,0000,0000,,Take it easy, will you?
+Dialogue: 0,1:49:52.45,1:49:55.89,EN,,0000,0000,0000,,I just had this joint fixed. It cost me a fortune.
+Dialogue: 0,1:50:12.50,1:50:14.60,EN,,0000,0000,0000,,Oh, God!
+Dialogue: 0,1:50:26.32,1:50:28.45,EN,,0000,0000,0000,,This order's to go.
+Dialogue: 0,1:50:36.20,1:50:40.06,EN,,0000,0000,0000,,I'm terribly sorry about all the damage, sir.
+Dialogue: 0,1:50:42.43,1:50:46.34,EN,,0000,0000,0000,,I've been working out.
+Dialogue: 0,0:00:02.48,0:00:08.28,注释,,0000,0000,0000,,以下影片描述《超人Ⅱ》\N当初构思及筹划开拍的过程
+Dialogue: 0,0:00:05.18,0:00:07.98,注释,,0000,0000,0000,,
+Dialogue: 0,0:00:09.88,0:00:14.45,注释,,0000,0000,0000,,有些片段来自划面测试中\N我们无法拍摄的桥段
+Dialogue: 0,0:00:43.18,0:00:49.12,注释,,0000,0000,0000,,这部电影是用以纪念\N克里斯多夫李维
+Dialogue: 0,0:00:50.08,0:00:54.82,注释,,0000,0000,0000,,没有他，我们绝不会相信人类能飞
+Dialogue: 0,0:01:29.90,0:01:32.83,CN,,0000,0000,0000,,我要求你们念出
+Dialogue: 0,0:01:33.00,0:01:34.53,CN,,0000,0000,0000,,判决的内容
+Dialogue: 0,0:01:37.01,0:01:38.30,CN,,0000,0000,0000,,对这些被告
+Dialogue: 0,0:01:38.47,0:01:42.64,CN,,0000,0000,0000,,对这个无情的叛离者 他只想以暴力和破坏
+Dialogue: 0,0:01:42.81,0:01:45.18,CN,,0000,0000,0000,,来表现其情感
+Dialogue: 0,0:01:46.45,0:01:47.71,CN,,0000,0000,0000,,对这个女人亚莎
+Dialogue: 0,0:01:48.18,0:01:51.41,CN,,0000,0000,0000,,她对所有全体人类的 曲解及不合理的仇恨心态
+Dialogue: 0,0:01:51.92,0:01:55.48,CN,,0000,0000,0000,,已经威胁到 全体氪星的儿童
+Dialogue: 0,0:01:56.69,0:01:59.42,CN,,0000,0000,0000,,最后一位是查德将军
+Dialogue: 0,0:01:59.60,0:02:01.83,CN,,0000,0000,0000,,创造者希望对这种预谋
+Dialogue: 0,0:02:02.00,0:02:07.06,CN,,0000,0000,0000,,重新建立一项秩序所作之革命 加以摧毁
+Dialogue: 0,0:02:07.44,0:02:10.96,CN,,0000,0000,0000,,好让自己仍然成为 绝对之统治者
+Dialogue: 0,0:02:11.94,0:02:14.38,CN,,0000,0000,0000,,现在宣布判决的结果
+Dialogue: 0,0:02:14.54,0:02:15.84,CN,,0000,0000,0000,,有罪
+Dialogue: 0,0:02:16.85,0:02:18.04,CN,,0000,0000,0000,,-有罪 -有罪
+Dialogue: 0,0:02:20.02,0:02:21.61,CN,,0000,0000,0000,,有罪
+Dialogue: 0,0:02:23.95,0:02:25.85,CN,,0000,0000,0000,,本项表决具有敌意，乔艾尔
+Dialogue: 0,0:02:26.86,0:02:29.29,CN,,0000,0000,0000,,现在已经变成你的判决
+Dialogue: 0,0:02:29.46,0:02:31.79,CN,,0000,0000,0000,,如果你希望的话 你就判我们有罪吧
+Dialogue: 0,0:02:31.96,0:02:34.90,CN,,0000,0000,0000,,那你就要对我这件事负责了
+Dialogue: 0,0:02:45.47,0:02:47.94,CN,,0000,0000,0000,,你会在我面前屈服的，乔艾尔
+Dialogue: 0,0:02:48.11,0:02:49.30,CN,,0000,0000,0000,,我发誓！
+Dialogue: 0,0:02:49.48,0:02:54.47,CN,,0000,0000,0000,,不管天长地久 你终会在我面前屈服的
+Dialogue: 0,0:02:54.65,0:02:55.74,CN,,0000,0000,0000,,你们两个
+Dialogue: 0,0:02:56.02,0:02:57.11,CN,,0000,0000,0000,,将来
+Dialogue: 0,0:02:57.29,0:02:59.19,CN,,0000,0000,0000,,还有你的子孙
+Dialogue: 0,0:03:28.58,0:03:32.15,CN,,0000,0000,0000,,你会在我面前屈服的！
+Dialogue: 0,0:03:34.12,0:03:36.49,CN,,0000,0000,0000,,-原谅我 -我会回来的
+Dialogue: 0,0:03:36.66,0:03:37.78,CN,,0000,0000,0000,,原谅我
+Dialogue: 0,0:04:10.86,0:04:15.35,CN,,0000,0000,0000,,你母亲诺拉寄给你 红、黄、蓝，三条毯子
+Dialogue: 0,0:04:16.80,0:04:19.20,CN,,0000,0000,0000,,它们能保护你，确保你的力量
+Dialogue: 0,0:05:28.80,0:05:32.74,CN,,0000,0000,0000,,是氪石，超人 从古老家乡来的纪念品
+Dialogue: 0,0:05:37.91,0:05:42.48,CN,,0000,0000,0000,,你是很厉害，超人 不过应该是
+Dialogue: 0,0:05:42.65,0:05:45.09,CN,,0000,0000,0000,,要收拾你的时候了
+Dialogue: 0,0:05:45.25,0:05:48.69,CN,,0000,0000,0000,,这位老而有病的疯子
+Dialogue: 0,0:05:48.86,0:05:50.79,CN,,0000,0000,0000,,将成为你的主宰
+Dialogue: 0,0:05:54.23,0:05:56.16,CN,,0000,0000,0000,,小心肌肉过度紧绷
+Dialogue: 0,0:06:29.93,0:06:32.13,CN,,0000,0000,0000,,你为何先吻我？
+Dialogue: 0,0:06:33.40,0:06:36.43,CN,,0000,0000,0000,,我觉得你待会儿不会让我吻你
+Dialogue: 0,0:06:36.61,0:06:38.40,CN,,0000,0000,0000,,站一边去
+Dialogue: 0,0:08:15.57,0:08:17.60,CN,,0000,0000,0000,,自由了！
+Dialogue: 0,0:08:37.26,0:08:38.49,演职员,,0000,0000,0000,,主演：金哈克曼
+Dialogue: 0,0:08:43.40,0:08:45.53,演职员,,0000,0000,0000,,主演：克里斯多夫李维
+Dialogue: 0,0:08:50.31,0:08:52.64,演职员,,0000,0000,0000,,主演：马龙白兰度
+Dialogue: 0,0:09:13.63,0:09:16.62,片名,,0000,0000,0000,,超  人  Ⅱ
+Dialogue: 0,0:09:20.70,0:09:23.43,演职员,,0000,0000,0000,,主演：奈德比提
+Dialogue: 0,0:09:25.91,0:09:28.14,演职员,,0000,0000,0000,,主演：贾基库伯
+Dialogue: 0,0:09:31.51,0:09:34.38,演职员,,0000,0000,0000,,主演：莎拉道格拉斯
+Dialogue: 0,0:09:36.75,0:09:39.35,演职员,,0000,0000,0000,,主演：犸歌基德
+Dialogue: 0,0:09:42.66,0:09:45.56,演职员,,0000,0000,0000,,主演：杰克欧哈洛伦
+Dialogue: 0,0:09:47.66,0:09:49.96,演职员,,0000,0000,0000,,主演：梵乐莉派琳
+Dialogue: 0,0:09:55.77,0:09:58.17,演职员,,0000,0000,0000,,主演：克里夫顿詹姆斯
+Dialogue: 0,0:09:59.37,0:10:01.77,演职员,,0000,0000,0000,,EG马歇尔饰演总统
+Dialogue: 0,0:10:05.68,0:10:08.62,演职员,,0000,0000,0000,,主演：马克麦克卢尔
+Dialogue: 0,0:10:12.75,0:10:15.59,演职员,,0000,0000,0000,,主演：泰伦斯史坦普
+Dialogue: 0,0:10:55.70,0:10:58.22,演职员,,0000,0000,0000,,故事：马里欧普柔
+Dialogue: 0,0:11:02.47,0:11:06.10,演职员,,0000,0000,0000,,编剧：马里欧普柔
+Dialogue: 0,0:11:08.98,0:11:11.31,演职员,,0000,0000,0000,,编剧：大卫纽曼 与雷斯利纽曼
+Dialogue: 0,0:11:35.84,0:11:39.20,演职员,,0000,0000,0000,,制片：皮尔史班葛
+Dialogue: 0,0:11:41.61,0:11:44.08,演职员,,0000,0000,0000,,导演：李察唐纳
+Dialogue: 0,0:12:02.20,0:12:06.13,CN,,0000,0000,0000,,新鲜哈密瓜！非常新鲜的哈密瓜 要买新鲜就在这里
+Dialogue: 0,0:12:06.30,0:12:09.17,CN,,0000,0000,0000,,用来烹饪也很好喔 你看看，最好的
+Dialogue: 0,0:12:10.94,0:12:13.46,CN,,0000,0000,0000,,雷克斯路瑟的炸弹阴谋 超人拯救国家
+Dialogue: 0,0:12:13.64,0:12:17.08,CN,,0000,0000,0000,,犯罪之王被判重刑 露薏丝莲恩独家报导
+Dialogue: 0,0:12:17.25,0:12:19.37,CN,,0000,0000,0000,,吉姆欧森摄影
+Dialogue: 0,0:12:19.55,0:12:22.75,CN,,0000,0000,0000,,雷克斯路瑟 你看起来永远这么邪恶
+Dialogue: 0,0:12:22.92,0:12:24.08,CN,,0000,0000,0000,,露薏丝，做得好
+Dialogue: 0,0:12:24.25,0:12:26.22,CN,,0000,0000,0000,,-谢了，老编 -非常好的报导，非常好
+Dialogue: 0,0:12:26.39,0:12:28.58,CN,,0000,0000,0000,,早安，老编，你迟到了
+Dialogue: 0,0:12:28.76,0:12:31.66,CN,,0000,0000,0000,,莲恩小姐，这故事很棒 是最棒的之一
+Dialogue: 0,0:12:31.83,0:12:36.16,CN,,0000,0000,0000,,吉姆，通常一张照片 不值得我写一千字
+Dialogue: 0,0:12:36.33,0:12:38.16,CN,,0000,0000,0000,,但以这则报导来说，恭喜你
+Dialogue: 0,0:12:38.33,0:12:39.70,CN,,0000,0000,0000,,-多谢了 -是啊
+Dialogue: 0,0:12:40.77,0:12:44.21,CN,,0000,0000,0000,,肯特先生来了，我赌他希望 事件发生时他能在场
+Dialogue: 0,0:12:44.37,0:12:46.90,CN,,0000,0000,0000,,超人出现时克拉克都不在场
+Dialogue: 0,0:12:47.08,0:12:48.57,CN,,0000,0000,0000,,可怜的家伙
+Dialogue: 0,0:12:51.75,0:12:53.34,CN,,0000,0000,0000,,（揭开超人的秘密）
+Dialogue: 0,0:12:57.75,0:12:59.38,CN,,0000,0000,0000,,-头版还有位置吗？ -有
+Dialogue: 0,0:13:02.49,0:13:04.82,CN,,0000,0000,0000,,莲恩小姐有绝对正点的报导
+Dialogue: 0,0:13:12.20,0:13:14.13,CN,,0000,0000,0000,,早安，露薏丝
+Dialogue: 0,0:13:15.50,0:13:16.80,CN,,0000,0000,0000,,嗨
+Dialogue: 0,0:13:54.28,0:13:56.57,CN,,0000,0000,0000,,莲恩、肯特，进来
+Dialogue: 0,0:13:56.75,0:13:58.58,CN,,0000,0000,0000,,看吧，吉姆，你害我有麻烦了
+Dialogue: 0,0:13:58.75,0:14:01.91,CN,,0000,0000,0000,,-我们刚刚正在谈话 -再见，是个天大的错误
+Dialogue: 0,0:14:02.75,0:14:05.08,CN,,0000,0000,0000,,下一次别这样对我
+Dialogue: 0,0:14:05.42,0:14:09.05,CN,,0000,0000,0000,,-早安，露薏丝，你今天好吗？ -非常好，谢谢
+Dialogue: 0,0:14:09.22,0:14:10.89,CN,,0000,0000,0000,,-早安，白先生 -我很好
+Dialogue: 0,0:14:11.06,0:14:14.43,CN,,0000,0000,0000,,-早安，你迟到了，肯特 -我知道，很抱歉，白先生
+Dialogue: 0,0:14:14.60,0:14:16.86,CN,,0000,0000,0000,,-路上塞车 -又有新借口了
+Dialogue: 0,0:14:17.03,0:14:18.80,CN,,0000,0000,0000,,-你说什么？ -我是说
+Dialogue: 0,0:14:18.97,0:14:22.43,CN,,0000,0000,0000,,除了“我被卡在电话亭里”或 “我被锁在男厕里”之外
+Dialogue: 0,0:14:22.60,0:14:25.23,CN,,0000,0000,0000,,露薏丝，你在说什么？ 我很抱歉我迟到了
+Dialogue: 0,0:14:25.41,0:14:28.17,CN,,0000,0000,0000,,你们想吵闹的话 我刚好有任务给你们
+Dialogue: 0,0:14:28.34,0:14:32.34,CN,,0000,0000,0000,,你们要扮成蜜月小夫妻 参加一个新婚宴会
+Dialogue: 0,0:14:32.51,0:14:36.21,CN,,0000,0000,0000,,有些饭店压榨这些可怜孩子 的微薄收入
+Dialogue: 0,0:14:36.38,0:14:39.62,CN,,0000,0000,0000,,是条令人感兴趣的新闻 保证那些婆婆妈妈痛哭流涕
+Dialogue: 0,0:14:39.89,0:14:42.91,CN,,0000,0000,0000,,-新婚夫妇？ -这主意真棒，白先生
+Dialogue: 0,0:14:43.09,0:14:46.72,CN,,0000,0000,0000,,-对不起，但我正在追踪一系列 -那不会花上你很多时间
+Dialogue: 0,0:14:46.90,0:14:51.39,CN,,0000,0000,0000,,我们可以直接飞过去 再飞回来
+Dialogue: 0,0:14:51.57,0:14:53.83,CN,,0000,0000,0000,,不好吗，超人？
+Dialogue: 0,0:14:54.00,0:14:57.20,CN,,0000,0000,0000,,对，要是他愿意载你们一程 也许我们能省下一些钱
+Dialogue: 0,0:14:57.47,0:14:59.30,CN,,0000,0000,0000,,我要找小欧森，六张龌龊的照片
+Dialogue: 0,0:15:00.01,0:15:04.45,CN,,0000,0000,0000,,-那小子还一直吵加薪 -抱歉，白先生，我们能谈谈吗？
+Dialogue: 0,0:15:04.61,0:15:06.14,CN,,0000,0000,0000,,可恶
+Dialogue: 0,0:15:07.08,0:15:09.98,CN,,0000,0000,0000,,你看起来像吞了一只金丝雀的猫
+Dialogue: 0,0:15:10.15,0:15:13.99,CN,,0000,0000,0000,,金丝雀？才不，是更大的东西
+Dialogue: 0,0:15:14.16,0:15:17.12,CN,,0000,0000,0000,,一种会飞的、颜色更蓝的东西
+Dialogue: 0,0:15:17.59,0:15:19.56,CN,,0000,0000,0000,,露薏丝 我和以往一样，身陷黑暗中
+Dialogue: 0,0:15:19.73,0:15:22.96,CN,,0000,0000,0000,,让我为你把灯点亮
+Dialogue: 0,0:15:24.87,0:15:26.63,CN,,0000,0000,0000,,懂了吗？
+Dialogue: 0,0:15:28.54,0:15:32.13,CN,,0000,0000,0000,,我到现在才拼凑出全貌，真的蛮有趣的
+Dialogue: 0,0:15:32.31,0:15:35.61,CN,,0000,0000,0000,,因为一名记者 绝不会忽略任何细节
+Dialogue: 0,0:15:35.78,0:15:38.21,CN,,0000,0000,0000,,那很有趣，没错
+Dialogue: 0,0:15:38.38,0:15:39.85,CN,,0000,0000,0000,,-不好意思 -有趣？
+Dialogue: 0,0:15:40.01,0:15:44.42,CN,,0000,0000,0000,,-是的，非常有趣 -有趣是吧？
+Dialogue: 0,0:15:44.65,0:15:48.75,CN,,0000,0000,0000,,高大、宽阔的肩膀
+Dialogue: 0,0:15:49.16,0:15:51.18,CN,,0000,0000,0000,,深色头发
+Dialogue: 0,0:15:51.36,0:15:54.29,CN,,0000,0000,0000,,我得承认你伪装的很成功
+Dialogue: 0,0:15:54.46,0:15:57.06,CN,,0000,0000,0000,,我没有骗任何人
+Dialogue: 0,0:15:57.87,0:15:59.60,CN,,0000,0000,0000,,超人
+Dialogue: 0,0:16:00.07,0:16:01.40,CN,,0000,0000,0000,,超人？
+Dialogue: 0,0:16:01.57,0:16:05.73,CN,,0000,0000,0000,,你是说你以为我是超人？
+Dialogue: 0,0:16:06.37,0:16:09.50,CN,,0000,0000,0000,,-我愿意用生命作赌注 -露薏丝，你知道吗？你是无价的
+Dialogue: 0,0:16:09.68,0:16:12.67,CN,,0000,0000,0000,,真的，那是我知道最可笑的事了
+Dialogue: 0,0:16:14.08,0:16:16.95,CN,,0000,0000,0000,,-露薏丝，你在做什么？ -你不会让我死的，超人
+Dialogue: 0,0:16:56.93,0:17:00.59,CN,,0000,0000,0000,,-老天 -救她出来，救她出来
+Dialogue: 0,0:17:01.00,0:17:03.79,CN,,0000,0000,0000,,-克拉克 -露薏丝，你做了什么？
+Dialogue: 0,0:17:04.20,0:17:06.83,CN,,0000,0000,0000,,克拉克，你不是
+Dialogue: 0,0:17:09.44,0:17:12.77,CN,,0000,0000,0000,,克拉克，你有见到露薏丝吗？
+Dialogue: 0,0:17:15.71,0:17:17.51,CN,,0000,0000,0000,,她刚刚出去了
+Dialogue: 0,0:17:34.93,0:17:37.92,CN,,0000,0000,0000,,这是本世代最伟大罪犯的下场
+Dialogue: 0,0:17:38.10,0:17:40.36,CN,,0000,0000,0000,,没有人哭也没有人闹
+Dialogue: 0,0:17:40.54,0:17:43.06,CN,,0000,0000,0000,,他们将如何纪念雷克斯路瑟
+Dialogue: 0,0:17:43.24,0:17:45.17,CN,,0000,0000,0000,,这位世上最伟大的天才？
+Dialogue: 0,0:17:45.34,0:17:49.24,CN,,0000,0000,0000,,他们给他荣耀还是宝藏？ 说实话，他们给了什么？
+Dialogue: 0,0:17:49.41,0:17:53.51,CN,,0000,0000,0000,,终生监禁外加ぼ五年，快工作！
+Dialogue: 0,0:17:57.82,0:18:00.45,CN,,0000,0000,0000,,别伤心，路瑟先生 你差点就成功了
+Dialogue: 0,0:18:00.62,0:18:03.46,CN,,0000,0000,0000,,我说的是加州差点就沉入海底
+Dialogue: 0,0:18:03.63,0:18:05.42,CN,,0000,0000,0000,,百万人几乎丧命
+Dialogue: 0,0:18:05.59,0:18:08.79,CN,,0000,0000,0000,,如果不是超人 那个成长过度的男童军
+Dialogue: 0,0:18:08.96,0:18:12.19,CN,,0000,0000,0000,,-今晚我将要回我的自由 -今晚？
+Dialogue: 0,0:18:12.37,0:18:17.43,CN,,0000,0000,0000,,那种人你要怎么对付？ 他飞那么快又什么都会
+Dialogue: 0,0:18:18.44,0:18:21.64,CN,,0000,0000,0000,,甚至连雷达都无法追踪
+Dialogue: 0,0:18:21.84,0:18:24.78,CN,,0000,0000,0000,,只要他们想追踪，他马上飞走
+Dialogue: 0,0:18:24.95,0:18:26.31,CN,,0000,0000,0000,,-往哪个方向？ -北方
+Dialogue: 0,0:18:26.51,0:18:28.31,CN,,0000,0000,0000,,为什么？
+Dialogue: 0,0:18:28.48,0:18:29.78,CN,,0000,0000,0000,,为了去滑雪？
+Dialogue: 0,0:18:29.95,0:18:33.35,CN,,0000,0000,0000,,欧提斯，每个人都有弱点
+Dialogue: 0,0:18:33.52,0:18:36.75,CN,,0000,0000,0000,,像你这种人的弱点不止一个
+Dialogue: 0,0:18:36.93,0:18:38.86,CN,,0000,0000,0000,,我没能及时看到超人
+Dialogue: 0,0:18:39.03,0:18:42.66,CN,,0000,0000,0000,,现在借由耐心、创造力及技术
+Dialogue: 0,0:18:43.70,0:18:46.79,CN,,0000,0000,0000,,我的小黑箱就快完成了
+Dialogue: 0,0:18:46.97,0:18:50.20,CN,,0000,0000,0000,,我们囚房中的小黑箱
+Dialogue: 0,0:18:53.21,0:18:56.27,CN,,0000,0000,0000,,那个小黑箱，路瑟先生
+Dialogue: 0,0:18:57.81,0:18:59.71,CN,,0000,0000,0000,,那有什么用途？
+Dialogue: 0,0:18:59.88,0:19:05.68,CN,,0000,0000,0000,,那个小黑箱比传统雷达有用
+Dialogue: 0,0:19:05.85,0:19:08.52,CN,,0000,0000,0000,,它能追踪阿尔发波
+Dialogue: 0,0:19:11.03,0:19:13.69,CN,,0000,0000,0000,,阿尔发波
+Dialogue: 0,0:19:13.86,0:19:16.59,CN,,0000,0000,0000,,我可以说这模仿青豆面条，是吧？
+Dialogue: 0,0:19:16.76,0:19:20.39,CN,,0000,0000,0000,,要加上大蒜和奶油，路瑟先生
+Dialogue: 0,0:19:20.57,0:19:21.97,CN,,0000,0000,0000,,老天
+Dialogue: 0,0:19:25.14,0:19:30.70,CN,,0000,0000,0000,,阿尔发波能引我到北极 到他的秘密
+Dialogue: 0,0:19:30.88,0:19:35.61,CN,,0000,0000,0000,,当我知道超人的秘密 我就不怕他了
+Dialogue: 0,0:19:38.49,0:19:41.25,CN,,0000,0000,0000,,屠杀者佛吉斯顿是个尿床小鬼
+Dialogue: 0,0:19:45.89,0:19:49.83,CN,,0000,0000,0000,,屠杀者佛吉斯顿是个尿床小鬼 传下去
+Dialogue: 0,0:19:55.30,0:19:57.24,CN,,0000,0000,0000,,你好，佛吉斯顿先生
+Dialogue: 0,0:19:57.71,0:19:59.61,CN,,0000,0000,0000,,太快了，你能用正常速度吗？
+Dialogue: 0,0:20:00.41,0:20:03.34,CN,,0000,0000,0000,,我告诉你，他们三周前就装好了
+Dialogue: 0,0:20:04.28,0:20:05.27,CN,,0000,0000,0000,,嗨
+Dialogue: 0,0:20:06.18,0:20:10.38,CN,,0000,0000,0000,,你来监视一下这跳动符号 它让我头很痛
+Dialogue: 0,0:20:10.55,0:20:13.65,CN,,0000,0000,0000,,总之，派人去查看那些家伙
+Dialogue: 0,0:20:13.82,0:20:16.65,CN,,0000,0000,0000,,说得对！我老是把他们忘了
+Dialogue: 0,0:20:16.82,0:20:19.59,CN,,0000,0000,0000,,他们在上面多久了？45天？
+Dialogue: 0,0:20:19.76,0:20:22.70,CN,,0000,0000,0000,,全世界都已将我们遗忘了
+Dialogue: 0,0:20:24.93,0:20:27.09,CN,,0000,0000,0000,,休士顿呼叫阿特蜜丝二号
+Dialogue: 0,0:20:27.90,0:20:30.74,CN,,0000,0000,0000,,休士顿呼叫阿特蜜丝二号 请回答
+Dialogue: 0,0:20:30.91,0:20:33.47,CN,,0000,0000,0000,,-早安，休士顿 -等一下，纳特
+Dialogue: 0,0:20:33.64,0:20:35.58,CN,,0000,0000,0000,,-喂！ -情况如何？
+Dialogue: 0,0:20:36.34,0:20:38.81,CN,,0000,0000,0000,,一切系统都很正常，休士顿
+Dialogue: 0,0:20:38.98,0:20:41.88,CN,,0000,0000,0000,,安迪正在外面进行地质调查
+Dialogue: 0,0:20:42.05,0:20:44.35,CN,,0000,0000,0000,,更多石头
+Dialogue: 0,0:20:44.52,0:20:47.61,CN,,0000,0000,0000,,柯斯墨诺伯里斯正在采土样
+Dialogue: 0,0:20:47.79,0:20:50.35,CN,,0000,0000,0000,,对了，伯里斯跟我订婚了
+Dialogue: 0,0:20:50.86,0:20:53.99,CN,,0000,0000,0000,,当我看到你的罗夏墨渍测验时 心中已经有数
+Dialogue: 0,0:20:54.16,0:20:56.46,CN,,0000,0000,0000,,只是开玩笑舒缓一下，休士顿
+Dialogue: 0,0:20:56.63,0:20:58.62,CN,,0000,0000,0000,,表面状况没有改变吗？
+Dialogue: 0,0:20:58.80,0:21:01.83,CN,,0000,0000,0000,,外太空的景色非常美丽
+Dialogue: 0,0:21:03.97,0:21:06.03,CN,,0000,0000,0000,,-非常美丽 -没错
+Dialogue: 0,0:21:06.24,0:21:08.37,CN,,0000,0000,0000,,对
+Dialogue: 0,0:21:08.74,0:21:10.61,CN,,0000,0000,0000,,听我说，纳特
+Dialogue: 0,0:21:10.78,0:21:12.37,CN,,0000,0000,0000,,纳特，专心点好吗？
+Dialogue: 0,0:21:12.55,0:21:15.11,CN,,0000,0000,0000,,没错，我是在作梦
+Dialogue: 0,0:21:15.28,0:21:17.55,CN,,0000,0000,0000,,阿特蜜丝，请回答
+Dialogue: 0,0:21:17.75,0:21:21.81,CN,,0000,0000,0000,,休士顿 这里好像出现不明飞行物
+Dialogue: 0,0:21:21.99,0:21:23.39,CN,,0000,0000,0000,,不明飞行物？
+Dialogue: 0,0:21:24.06,0:21:26.69,CN,,0000,0000,0000,,-它是什么样子？ -很像是
+Dialogue: 0,0:21:26.86,0:21:29.56,CN,,0000,0000,0000,,一个女孩
+Dialogue: 0,0:21:50.89,0:21:52.68,CN,,0000,0000,0000,,你
+Dialogue: 0,0:21:53.42,0:21:56.91,CN,,0000,0000,0000,,-你是何种生物？ -我是个男人
+Dialogue: 0,0:21:57.69,0:21:59.79,CN,,0000,0000,0000,,你是男人？
+Dialogue: 0,0:22:56.55,0:22:59.28,CN,,0000,0000,0000,,真脆弱的生命
+Dialogue: 0,0:23:24.65,0:23:27.31,CN,,0000,0000,0000,,休士顿，请回答，休士顿
+Dialogue: 0,0:23:35.82,0:23:37.22,CN,,0000,0000,0000,,请回答，休士顿，请回答
+Dialogue: 0,0:23:37.39,0:23:39.02,CN,,0000,0000,0000,,尝试手动起飞
+Dialogue: 0,0:23:39.23,0:23:40.46,CN,,0000,0000,0000,,有人听到我吗？
+Dialogue: 0,0:23:40.93,0:23:42.76,CN,,0000,0000,0000,,休士顿！
+Dialogue: 0,0:23:43.76,0:23:44.89,CN,,0000,0000,0000,,快啊
+Dialogue: 0,0:23:47.77,0:23:49.57,CN,,0000,0000,0000,,快点啊，休士顿！
+Dialogue: 0,0:23:50.44,0:23:52.87,CN,,0000,0000,0000,,喔，不
+Dialogue: 0,0:23:53.41,0:23:55.27,CN,,0000,0000,0000,,谁来救我
+Dialogue: 0,0:24:01.85,0:24:04.84,CN,,0000,0000,0000,,-休士顿呼叫阿特蜜丝，请回答 -怎么回事？
+Dialogue: 0,0:24:05.02,0:24:08.46,CN,,0000,0000,0000,,-我不知道，我们失去连系了 -所以呢？
+Dialogue: 0,0:24:08.62,0:24:10.32,CN,,0000,0000,0000,,我说的是真的
+Dialogue: 0,0:24:10.93,0:24:12.76,CN,,0000,0000,0000,,阿特蜜丝，请回答
+Dialogue: 0,0:24:15.10,0:24:18.79,CN,,0000,0000,0000,,好了，你们谁在用吹风机？
+Dialogue: 0,0:24:21.14,0:24:25.97,CN,,0000,0000,0000,,好奇怪！ 那些金属我撕起来像在撕纸
+Dialogue: 0,0:24:26.14,0:24:30.08,CN,,0000,0000,0000,,而他的举动 真是太惊人了
+Dialogue: 0,0:24:30.24,0:24:34.68,CN,,0000,0000,0000,,-有些改变发生了 -没错！我们三个都一样
+Dialogue: 0,0:24:36.88,0:24:41.08,CN,,0000,0000,0000,,我们愈接近 只有一个太阳的大气层
+Dialogue: 0,0:24:41.26,0:24:43.09,CN,,0000,0000,0000,,一个黄色的太阳
+Dialogue: 0,0:24:43.26,0:24:47.22,CN,,0000,0000,0000,,我们的分子密度愈大 也给予我们无穷的力量
+Dialogue: 0,0:24:47.40,0:24:49.19,CN,,0000,0000,0000,,他们来自那里
+Dialogue: 0,0:24:49.36,0:24:51.35,CN,,0000,0000,0000,,一个叫做休士顿的地方
+Dialogue: 0,0:24:51.53,0:24:53.93,CN,,0000,0000,0000,,那么我们也去那里
+Dialogue: 0,0:24:54.10,0:24:56.04,CN,,0000,0000,0000,,去统治那个星球
+Dialogue: 0,0:24:56.50,0:24:59.17,CN,,0000,0000,0000,,终于能够统治星球了
+Dialogue: 0,0:25:09.65,0:25:11.38,CN,,0000,0000,0000,,382室，熄灯
+Dialogue: 0,0:25:12.29,0:25:14.65,CN,,0000,0000,0000,,383室，熄灯
+Dialogue: 0,0:25:15.42,0:25:17.69,CN,,0000,0000,0000,,384室，熄灯
+Dialogue: 0,0:25:18.66,0:25:20.96,CN,,0000,0000,0000,,385室，熄灯
+Dialogue: 0,0:25:24.33,0:25:26.66,CN,,0000,0000,0000,,熄灯，路瑟
+Dialogue: 0,0:25:27.23,0:25:29.46,CN,,0000,0000,0000,,我叫你熄灯！
+Dialogue: 0,0:25:32.04,0:25:35.74,CN,,0000,0000,0000,,再十秒我就会进去找你们 听到了没有？
+Dialogue: 0,0:25:37.85,0:25:39.87,CN,,0000,0000,0000,,我叫你们
+Dialogue: 0,0:25:55.36,0:25:57.52,CN,,0000,0000,0000,,不要动！不要动！
+Dialogue: 0,0:26:30.40,0:26:32.30,CN,,0000,0000,0000,,路瑟先生
+Dialogue: 0,0:26:33.63,0:26:36.13,CN,,0000,0000,0000,,-我们要怎么越过那道墙？ -我们怎么进来的？
+Dialogue: 0,0:26:36.94,0:26:39.50,CN,,0000,0000,0000,,-我们飞进来的，记得吗？ -那我们就飞出去
+Dialogue: 0,0:26:39.67,0:26:42.01,CN,,0000,0000,0000,,不，不是那家伙
+Dialogue: 0,0:26:45.81,0:26:47.54,CN,,0000,0000,0000,,你刚刚叫我吗？
+Dialogue: 0,0:26:47.72,0:26:50.88,CN,,0000,0000,0000,,我希望我有，路瑟先生 在我们离开前
+Dialogue: 0,0:26:52.52,0:26:54.78,CN,,0000,0000,0000,,不是那个，是那个
+Dialogue: 0,0:26:58.16,0:27:00.96,CN,,0000,0000,0000,,-当我这样时别那样 -你去做
+Dialogue: 0,0:27:04.47,0:27:06.63,CN,,0000,0000,0000,,快出去找一找
+Dialogue: 0,0:27:07.33,0:27:11.79,CN,,0000,0000,0000,,-我要找什么？ -你看到时就会知道
+Dialogue: 0,0:27:22.98,0:27:25.68,CN,,0000,0000,0000,,我想我找到了
+Dialogue: 0,0:27:30.86,0:27:32.72,CN,,0000,0000,0000,,这是什么？
+Dialogue: 0,0:27:33.73,0:27:36.59,CN,,0000,0000,0000,,这是个楼梯，傻瓜
+Dialogue: 0,0:27:37.36,0:27:38.80,CN,,0000,0000,0000,,黛丝犸克小姐，你好
+Dialogue: 0,0:27:47.78,0:27:48.94,CN,,0000,0000,0000,,来
+Dialogue: 0,0:27:49.74,0:27:53.37,CN,,0000,0000,0000,,动作快！
+Dialogue: 0,0:27:53.95,0:27:56.18,CN,,0000,0000,0000,,快一点！
+Dialogue: 0,0:27:57.18,0:27:59.55,CN,,0000,0000,0000,,欧提斯，抓住楼梯！快点
+Dialogue: 0,0:27:59.72,0:28:03.55,CN,,0000,0000,0000,,码线，达阵！ 喔，打得真是太好了
+Dialogue: 0,0:28:03.72,0:28:06.45,CN,,0000,0000,0000,,不过裁判丢了手帕 它可能是某队犯规
+Dialogue: 0,0:28:12.03,0:28:13.09,CN,,0000,0000,0000,,-上来啊 -快点
+Dialogue: 0,0:28:13.27,0:28:15.86,CN,,0000,0000,0000,,我来了，路瑟先生
+Dialogue: 0,0:28:17.64,0:28:18.80,CN,,0000,0000,0000,,-下去，下去 -欧提斯！
+Dialogue: 0,0:28:20.61,0:28:23.30,CN,,0000,0000,0000,,欧提斯，我们在往下掉 下去！快下去！
+Dialogue: 0,0:28:40.33,0:28:42.49,CN,,0000,0000,0000,,黛丝犸克小姐，你做得很好
+Dialogue: 0,0:28:42.66,0:28:45.36,CN,,0000,0000,0000,,-我来这里干嘛？我为什么在这里？ -黛丝犸克小姐
+Dialogue: 0,0:28:45.53,0:28:47.43,CN,,0000,0000,0000,,这是哲学课吗？
+Dialogue: 0,0:28:47.60,0:28:49.33,CN,,0000,0000,0000,,不，这是通道
+Dialogue: 0,0:28:49.50,0:28:50.73,CN,,0000,0000,0000,,-通道？ -没错
+Dialogue: 0,0:28:50.91,0:28:53.90,CN,,0000,0000,0000,,这很天才 我不知道你哪儿来的灵感
+Dialogue: 0,0:28:54.07,0:28:55.80,CN,,0000,0000,0000,,从你那里得来的，雷克斯
+Dialogue: 0,0:28:56.74,0:28:58.68,CN,,0000,0000,0000,,热气上升
+Dialogue: 0,0:29:00.55,0:29:02.28,CN,,0000,0000,0000,,你想来趟旅行吗？
+Dialogue: 0,0:29:02.45,0:29:04.71,CN,,0000,0000,0000,,旅行？放大假吗？
+Dialogue: 0,0:29:04.89,0:29:07.75,CN,,0000,0000,0000,,雷克斯，我可以去血拼 买件比基尼
+Dialogue: 0,0:29:07.92,0:29:10.32,CN,,0000,0000,0000,,你想要我在监狱里穿着比基尼？
+Dialogue: 0,0:29:10.66,0:29:12.99,CN,,0000,0000,0000,,不，我其实没那么想
+Dialogue: 0,0:29:13.16,0:29:16.43,CN,,0000,0000,0000,,我想的你是穿着毛皮外套
+Dialogue: 0,0:29:16.60,0:29:18.72,CN,,0000,0000,0000,,我穿毛皮外套？
+Dialogue: 0,0:29:18.90,0:29:21.13,CN,,0000,0000,0000,,你很病态，雷克斯，你真的病了
+Dialogue: 0,0:29:21.87,0:29:23.36,CN,,0000,0000,0000,,有可能
+Dialogue: 0,0:29:27.17,0:29:28.97,CN,,0000,0000,0000,,往北！黛丝犸克小姐
+Dialogue: 0,0:29:29.14,0:29:30.34,CN,,0000,0000,0000,,正北方
+Dialogue: 0,0:29:31.68,0:29:33.20,CN,,0000,0000,0000,,雷克斯，北方
+Dialogue: 0,0:29:34.68,0:29:36.88,CN,,0000,0000,0000,,就像我所说的，正北方
+Dialogue: 0,0:29:37.38,0:29:39.72,CN,,0000,0000,0000,,-你的确说过 -我知道我说我说过了
+Dialogue: 0,0:29:39.89,0:29:41.65,CN,,0000,0000,0000,,-我刚刚才听到 -对，雷克斯
+Dialogue: 0,0:29:41.82,0:29:44.19,CN,,0000,0000,0000,,别重复我说的话
+Dialogue: 0,0:29:44.36,0:29:46.52,CN,,0000,0000,0000,,-我不会重复你说的话 -好，别重复就是
+Dialogue: 0,0:29:46.69,0:29:48.96,CN,,0000,0000,0000,,别再重复我的话
+Dialogue: 0,0:30:11.09,0:30:13.58,CN,,0000,0000,0000,,（蜜月天堂饭店）
+Dialogue: 0,0:30:16.42,0:30:18.25,CN,,0000,0000,0000,,对不起
+Dialogue: 0,0:30:19.83,0:30:24.99,CN,,0000,0000,0000,,你是否想抱着史密斯太太 进入门槛
+Dialogue: 0,0:30:25.17,0:30:26.93,CN,,0000,0000,0000,,那是一种传统
+Dialogue: 0,0:30:27.10,0:30:29.93,CN,,0000,0000,0000,,如果你抱不动，我可以帮忙
+Dialogue: 0,0:30:30.10,0:30:33.63,CN,,0000,0000,0000,,不用了！当然不用 亲爱的，谢谢，我自己走
+Dialogue: 0,0:30:33.81,0:30:35.21,CN,,0000,0000,0000,,没问题，亲爱的
+Dialogue: 0,0:30:45.59,0:30:47.45,CN,,0000,0000,0000,,快跑！快跑！
+Dialogue: 0,0:30:47.62,0:30:49.65,CN,,0000,0000,0000,,我已经在跑了
+Dialogue: 0,0:30:52.96,0:30:54.93,CN,,0000,0000,0000,,往北！黛丝犸克小姐
+Dialogue: 0,0:30:55.10,0:30:59.19,CN,,0000,0000,0000,,-往北，往北！ -是的，雷克斯，往北
+Dialogue: 0,0:31:26.59,0:31:29.86,CN,,0000,0000,0000,,你一定弄错了，雷克斯 这种地方一定不是他的家
+Dialogue: 0,0:31:30.03,0:31:31.73,CN,,0000,0000,0000,,“你错了，雷克斯”
+Dialogue: 0,0:31:31.90,0:31:35.46,CN,,0000,0000,0000,,黛丝犸克小姐，那两个词 不能出现在同一个句子里
+Dialogue: 0,0:31:35.64,0:31:38.54,CN,,0000,0000,0000,,这很古怪，它没有大门
+Dialogue: 0,0:31:38.71,0:31:43.51,CN,,0000,0000,0000,,黛丝犸克小姐 “古怪”是指有人不露齿而笑
+Dialogue: 0,0:31:46.01,0:31:47.00,CN,,0000,0000,0000,,是的
+Dialogue: 0,0:31:53.49,0:31:55.65,CN,,0000,0000,0000,,好了，过来，雷克斯，过来
+Dialogue: 0,0:31:55.82,0:31:57.69,CN,,0000,0000,0000,,让开
+Dialogue: 0,0:31:59.83,0:32:01.56,CN,,0000,0000,0000,,-这边 -是这边
+Dialogue: 0,0:32:01.73,0:32:03.46,CN,,0000,0000,0000,,雷克斯，是这边
+Dialogue: 0,0:32:03.63,0:32:05.53,CN,,0000,0000,0000,,是这边，雷克斯
+Dialogue: 0,0:32:05.93,0:32:09.06,CN,,0000,0000,0000,,-来吧，来啊 -别碰我！
+Dialogue: 0,0:32:12.74,0:32:14.30,CN,,0000,0000,0000,,来吧
+Dialogue: 0,0:32:26.22,0:32:28.21,CN,,0000,0000,0000,,-太好了！ -太好了
+Dialogue: 0,0:32:28.99,0:32:31.39,CN,,0000,0000,0000,,真是好极了！
+Dialogue: 0,0:32:35.23,0:32:39.00,CN,,0000,0000,0000,,目前所知的建筑理论 都无法完成这栋建筑物
+Dialogue: 0,0:32:42.24,0:32:44.53,CN,,0000,0000,0000,,-真的是很美 -很美
+Dialogue: 0,0:32:45.07,0:32:46.44,CN,,0000,0000,0000,,-雷克斯 -我没事的
+Dialogue: 0,0:32:46.61,0:32:48.30,CN,,0000,0000,0000,,不，是我
+Dialogue: 0,0:32:52.08,0:32:54.01,CN,,0000,0000,0000,,你为什么不能更小心一点？
+Dialogue: 0,0:32:56.42,0:32:58.08,CN,,0000,0000,0000,,-真的是很美 -很美
+Dialogue: 0,0:32:58.25,0:33:00.69,CN,,0000,0000,0000,,-这里什么都有 -错了
+Dialogue: 0,0:33:02.12,0:33:06.25,CN,,0000,0000,0000,,-我们出发前，你为何不去上？ -那是两天前的事了
+Dialogue: 0,0:33:09.83,0:33:11.42,CN,,0000,0000,0000,,小心点，雷克斯
+Dialogue: 0,0:33:14.30,0:33:15.60,CN,,0000,0000,0000,,别碰
+Dialogue: 0,0:33:16.60,0:33:20.44,CN,,0000,0000,0000,,坦白说我觉得这地方有点无聊 到处一片洁白
+Dialogue: 0,0:33:20.61,0:33:22.91,CN,,0000,0000,0000,,这家伙赶嘛不放些照片上去？
+Dialogue: 0,0:33:23.08,0:33:25.60,CN,,0000,0000,0000,,或许可以放些斗牛海报
+Dialogue: 0,0:33:29.62,0:33:32.05,CN,,0000,0000,0000,,-什么都别碰 -什么都别碰
+Dialogue: 0,0:33:33.59,0:33:36.65,CN,,0000,0000,0000,,-是冰 -我说过别碰它
+Dialogue: 0,0:33:37.39,0:33:39.76,CN,,0000,0000,0000,,-这不是冰 -看起来像是水晶
+Dialogue: 0,0:34:03.12,0:34:07.95,CN,,0000,0000,0000,,正直的灵魂 不需要别人的感谢
+Dialogue: 0,0:34:08.16,0:34:10.32,CN,,0000,0000,0000,,-搞什么？ -来获得一些肯定
+Dialogue: 0,0:34:10.49,0:34:13.32,CN,,0000,0000,0000,,确定自己做的那件事是对的
+Dialogue: 0,0:34:13.53,0:34:15.65,CN,,0000,0000,0000,,这就是他老爸 他看起来跟超人很像
+Dialogue: 0,0:34:15.83,0:34:18.70,CN,,0000,0000,0000,,-你就是老爸吗？ -问他厕所在哪里？
+Dialogue: 0,0:34:18.87,0:34:21.30,CN,,0000,0000,0000,,你必须靠自己来肯定
+Dialogue: 0,0:34:21.57,0:34:22.80,CN,,0000,0000,0000,,你在吗？
+Dialogue: 0,0:34:23.00,0:34:27.00,CN,,0000,0000,0000,,-在你的星球上的人心 -他不在这里
+Dialogue: 0,0:34:27.17,0:34:31.51,CN,,0000,0000,0000,,这声音来自过去，真聪明！
+Dialogue: 0,0:34:31.68,0:34:33.67,CN,,0000,0000,0000,,谎言，骇人听闻的诡计
+Dialogue: 0,0:34:37.05,0:34:39.52,CN,,0000,0000,0000,,真会说教
+Dialogue: 0,0:34:39.69,0:34:41.55,CN,,0000,0000,0000,,给我另一块水晶
+Dialogue: 0,0:34:51.43,0:34:54.96,CN,,0000,0000,0000,,第108号教育水晶，地球文化
+Dialogue: 0,0:34:55.74,0:34:59.76,CN,,0000,0000,0000,,这是地球人们 相当喜爱的一首词赋，凯尔
+Dialogue: 0,0:34:59.94,0:35:02.53,CN,,0000,0000,0000,,乔尹斯基尔默讲述“树”
+Dialogue: 0,0:35:03.11,0:35:04.94,CN,,0000,0000,0000,,我认为我永远不会看到
+Dialogue: 0,0:35:05.11,0:35:08.01,CN,,0000,0000,0000,,一首如树木般美丽的诗
+Dialogue: 0,0:35:09.95,0:35:11.44,CN,,0000,0000,0000,,别这样，我喜欢树木
+Dialogue: 0,0:35:11.62,0:35:14.05,CN,,0000,0000,0000,,你那只柯卡猎犬也一样 再给我另外一个
+Dialogue: 0,0:35:14.22,0:35:15.92,CN,,0000,0000,0000,,真好笑
+Dialogue: 0,0:35:22.40,0:35:23.52,CN,,0000,0000,0000,,我的儿子
+Dialogue: 0,0:35:23.86,0:35:25.70,CN,,0000,0000,0000,,-他长生不老 -长生不老
+Dialogue: 0,0:35:25.87,0:35:31.00,CN,,0000,0000,0000,,是该告诉你我们星球历史中 的黑暗时期了
+Dialogue: 0,0:35:31.17,0:35:33.90,CN,,0000,0000,0000,,-这才是我想听的 -很不幸地
+Dialogue: 0,0:35:34.07,0:35:37.37,CN,,0000,0000,0000,,即使在我们平静的星球上
+Dialogue: 0,0:35:37.68,0:35:39.91,CN,,0000,0000,0000,,一些扰乱世界的元素
+Dialogue: 0,0:35:40.08,0:35:43.35,CN,,0000,0000,0000,,依旧每隔一阵子出现一次
+Dialogue: 0,0:35:43.68,0:35:45.08,CN,,0000,0000,0000,,异常者
+Dialogue: 0,0:35:45.25,0:35:47.19,CN,,0000,0000,0000,,也就是地球上所说的罪犯
+Dialogue: 0,0:35:47.45,0:35:48.68,CN,,0000,0000,0000,,罪犯？
+Dialogue: 0,0:35:48.86,0:35:51.35,CN,,0000,0000,0000,,异常者，他一开始就说对了
+Dialogue: 0,0:35:51.53,0:35:54.49,CN,,0000,0000,0000,,虽然我们不像地球一样 是个苦难的星球
+Dialogue: 0,0:35:54.66,0:35:58.22,CN,,0000,0000,0000,,这些不快乐的灵魂 几乎全数成功转换为
+Dialogue: 0,0:35:58.40,0:36:01.30,CN,,0000,0000,0000,,-奉公守法的市民 -你没听过雷克斯路瑟吗？
+Dialogue: 0,0:36:01.47,0:36:04.80,CN,,0000,0000,0000,,只有三者例外，只有这三者
+Dialogue: 0,0:36:04.97,0:36:07.67,CN,,0000,0000,0000,,证明了自己不可能脱离邪恶
+Dialogue: 0,0:36:08.41,0:36:09.50,CN,,0000,0000,0000,,还有希望
+Dialogue: 0,0:36:09.68,0:36:11.84,CN,,0000,0000,0000,,零，是毁灭者
+Dialogue: 0,0:36:12.01,0:36:16.31,CN,,0000,0000,0000,,以人类的形体进行无理由的暴力
+Dialogue: 0,0:36:17.22,0:36:21.05,CN,,0000,0000,0000,,亚莎，邪恶又残忍
+Dialogue: 0,0:36:21.22,0:36:23.25,CN,,0000,0000,0000,,一心被无法确定的仇恨驱使
+Dialogue: 0,0:36:23.42,0:36:25.39,CN,,0000,0000,0000,,还有一股汇集他们的力量
+Dialogue: 0,0:36:25.56,0:36:30.12,CN,,0000,0000,0000,,唯一能以他异常的聪颖 驾驭邪恶力量的人
+Dialogue: 0,0:36:30.30,0:36:31.56,CN,,0000,0000,0000,,查德将军
+Dialogue: 0,0:36:31.73,0:36:34.60,CN,,0000,0000,0000,,-他看起来满可爱的 -他意图叛乱
+Dialogue: 0,0:36:34.84,0:36:39.10,CN,,0000,0000,0000,,那是我们人民最痛苦的一段历史
+Dialogue: 0,0:36:39.54,0:36:41.60,CN,,0000,0000,0000,,在漫长恐怖的一役后
+Dialogue: 0,0:36:42.21,0:36:44.87,CN,,0000,0000,0000,,星球再次恢复和平与和谐
+Dialogue: 0,0:36:45.05,0:36:46.57,CN,,0000,0000,0000,,满令人扫兴的结局
+Dialogue: 0,0:36:46.75,0:36:50.11,CN,,0000,0000,0000,,我们并没有死刑
+Dialogue: 0,0:36:50.52,0:36:52.08,CN,,0000,0000,0000,,非常合理
+Dialogue: 0,0:36:52.62,0:36:55.65,CN,,0000,0000,0000,,他们因而被封印在幽灵区
+Dialogue: 0,0:37:00.03,0:37:02.66,CN,,0000,0000,0000,,永远监禁他们
+Dialogue: 0,0:37:03.36,0:37:06.59,CN,,0000,0000,0000,,我们并不知道 若让他们逃走会有什么后果
+Dialogue: 0,0:37:07.37,0:37:09.53,CN,,0000,0000,0000,,在氪星 无法控制这些恶徒
+Dialogue: 0,0:37:09.70,0:37:14.44,CN,,0000,0000,0000,,在地球上，他们每个人 都可能拥有强大的力量
+Dialogue: 0,0:37:15.34,0:37:17.11,CN,,0000,0000,0000,,跟你的力量完全一样
+Dialogue: 0,0:37:19.85,0:37:21.97,CN,,0000,0000,0000,,想想看！有三名超级恶徒
+Dialogue: 0,0:37:22.15,0:37:25.05,CN,,0000,0000,0000,,每个人的力量都跟他一样
+Dialogue: 0,0:37:25.22,0:37:29.38,CN,,0000,0000,0000,,每一位都具都有毁坏 暴力及邪恶倾向
+Dialogue: 0,0:37:31.29,0:37:34.19,CN,,0000,0000,0000,,他们需要一位地球联络人
+Dialogue: 0,0:37:34.39,0:37:37.19,CN,,0000,0000,0000,,和他们拥有同样感受的人
+Dialogue: 0,0:37:37.36,0:37:41.80,CN,,0000,0000,0000,,某位与他们同样争取生命自由 并追求快乐的人
+Dialogue: 0,0:37:42.60,0:37:44.76,CN,,0000,0000,0000,,一位好的不可思议的人
+Dialogue: 0,0:37:45.97,0:37:47.37,CN,,0000,0000,0000,,对吗？
+Dialogue: 0,0:37:53.85,0:37:56.65,CN,,0000,0000,0000,,-黛丝犸克小姐？ -我找到了
+Dialogue: 0,0:37:57.12,0:37:58.91,CN,,0000,0000,0000,,我想是
+Dialogue: 0,0:37:59.25,0:38:01.19,CN,,0000,0000,0000,,-我需要吉姆时，他在哪里？ -风景真美，不是吗？
+Dialogue: 0,0:38:02.72,0:38:05.59,CN,,0000,0000,0000,,太美了！美极了
+Dialogue: 0,0:38:05.79,0:38:07.05,CN,,0000,0000,0000,,-露薏丝 -什么事？
+Dialogue: 0,0:38:07.23,0:38:12.06,CN,,0000,0000,0000,,你看，每个人都牵着手 或许我们也该牵手？
+Dialogue: 0,0:38:12.23,0:38:15.33,CN,,0000,0000,0000,,-克拉克，牵着我的手吧！ -谢谢
+Dialogue: 0,0:38:16.17,0:38:18.73,CN,,0000,0000,0000,,你知道吗？他们都不敢放手
+Dialogue: 0,0:38:18.91,0:38:21.84,CN,,0000,0000,0000,,-为什么？ -因为他们一放手就会离婚
+Dialogue: 0,0:38:22.01,0:38:24.88,CN,,0000,0000,0000,,这点我并不清楚 我觉得他们看来都很快乐
+Dialogue: 0,0:38:25.05,0:38:27.41,CN,,0000,0000,0000,,因为你视而不见，克拉克
+Dialogue: 0,0:38:27.85,0:38:29.44,CN,,0000,0000,0000,,-是吧！ -过来
+Dialogue: 0,0:38:29.62,0:38:31.45,CN,,0000,0000,0000,,不用了，我戴着就行
+Dialogue: 0,0:38:31.62,0:38:34.71,CN,,0000,0000,0000,,你得好好照顾自己 你只有一双眼睛
+Dialogue: 0,0:38:34.89,0:38:36.55,CN,,0000,0000,0000,,-天啊 -露薏丝
+Dialogue: 0,0:38:36.72,0:38:37.88,CN,,0000,0000,0000,,-拿去 -是的
+Dialogue: 0,0:38:38.06,0:38:40.93,CN,,0000,0000,0000,,-别说我什么都没做 -谢谢
+Dialogue: 0,0:38:44.63,0:38:46.03,CN,,0000,0000,0000,,小子！对不起！
+Dialogue: 0,0:38:46.37,0:38:47.70,CN,,0000,0000,0000,,小心点！
+Dialogue: 0,0:38:47.87,0:38:49.89,CN,,0000,0000,0000,,下来！快下来！
+Dialogue: 0,0:38:52.57,0:38:56.06,CN,,0000,0000,0000,,你在众人面前害我丢脸
+Dialogue: 0,0:38:58.48,0:39:01.94,CN,,0000,0000,0000,,你看到差点出事了吗？ 那个小男孩
+Dialogue: 0,0:39:02.78,0:39:05.81,CN,,0000,0000,0000,,我饿了，你饿了吗？
+Dialogue: 0,0:39:05.99,0:39:08.32,CN,,0000,0000,0000,,-露薏丝，你真是不可思议 -因为我肚子饿？
+Dialogue: 0,0:39:08.49,0:39:12.32,CN,,0000,0000,0000,,不是，站在自然界中 最壮观的景色之前
+Dialogue: 0,0:39:12.49,0:39:15.46,CN,,0000,0000,0000,,而你只想到要吃东西 难道你不为美景所震撼？
+Dialogue: 0,0:39:15.63,0:39:19.07,CN,,0000,0000,0000,,克拉克，当女孩子看过行动中的超人后
+Dialogue: 0,0:39:19.23,0:39:21.72,CN,,0000,0000,0000,,尼亚加拉瀑布只会让你觉得冷 你了解我的意思吗？
+Dialogue: 0,0:39:21.90,0:39:23.67,CN,,0000,0000,0000,,又是他
+Dialogue: 0,0:39:24.74,0:39:26.17,CN,,0000,0000,0000,,对不起
+Dialogue: 0,0:39:26.37,0:39:28.64,CN,,0000,0000,0000,,我的心胸很狭窄的吧
+Dialogue: 0,0:39:28.81,0:39:32.01,CN,,0000,0000,0000,,我狭窄的心胸告诉我，我饿了
+Dialogue: 0,0:39:32.18,0:39:33.27,CN,,0000,0000,0000,,-吃热狗好吗？ -吃热狗
+Dialogue: 0,0:39:33.45,0:39:34.85,CN,,0000,0000,0000,,热狗
+Dialogue: 0,0:39:35.02,0:39:36.57,CN,,0000,0000,0000,,我还要柳橙汁
+Dialogue: 0,0:39:36.75,0:39:38.81,CN,,0000,0000,0000,,-现榨的 -现榨的，我知道
+Dialogue: 0,0:39:46.13,0:39:48.12,CN,,0000,0000,0000,,嘿，妈，你看！
+Dialogue: 0,0:39:48.30,0:39:50.29,CN,,0000,0000,0000,,亲爱的，你很棒
+Dialogue: 0,0:39:53.13,0:39:56.36,CN,,0000,0000,0000,,好，我要两个加芥末和碎酸黄瓜的 还有
+Dialogue: 0,0:40:00.31,0:40:01.80,CN,,0000,0000,0000,,我的天啊！
+Dialogue: 0,0:40:02.91,0:40:04.47,CN,,0000,0000,0000,,救命！
+Dialogue: 0,0:40:04.64,0:40:06.41,CN,,0000,0000,0000,,救命！
+Dialogue: 0,0:40:07.61,0:40:09.84,CN,,0000,0000,0000,,快来人帮帮忙！
+Dialogue: 0,0:40:11.25,0:40:13.12,CN,,0000,0000,0000,,快帮忙啊！
+Dialogue: 0,0:40:17.66,0:40:18.65,CN,,0000,0000,0000,,很好
+Dialogue: 0,0:40:19.99,0:40:21.29,CN,,0000,0000,0000,,超人
+Dialogue: 0,0:40:23.06,0:40:24.83,CN,,0000,0000,0000,,干得好！超人
+Dialogue: 0,0:40:28.24,0:40:29.29,CN,,0000,0000,0000,,我们拍到一个好镜头
+Dialogue: 0,0:40:29.47,0:40:32.46,CN,,0000,0000,0000,,真是个大好人
+Dialogue: 0,0:40:36.11,0:40:37.60,CN,,0000,0000,0000,,真不可思议
+Dialogue: 0,0:40:40.01,0:40:41.78,CN,,0000,0000,0000,,（迷雾之女四号）
+Dialogue: 0,0:40:45.15,0:40:47.45,CN,,0000,0000,0000,,-你到了 -再飞一次！再飞一次！
+Dialogue: 0,0:40:47.62,0:40:50.85,CN,,0000,0000,0000,,对不起，每个人只能飞一次
+Dialogue: 0,0:40:51.02,0:40:54.98,CN,,0000,0000,0000,,-超人！超人，是我！露薏丝 -再见
+Dialogue: 0,0:40:55.16,0:40:57.36,CN,,0000,0000,0000,,过来！我要好好修理你
+Dialogue: 0,0:40:57.53,0:41:00.97,CN,,0000,0000,0000,,-你害我差点心脏病发作 -是我，露薏丝！
+Dialogue: 0,0:41:01.13,0:41:03.30,CN,,0000,0000,0000,,是露薏丝莲恩啊！
+Dialogue: 0,0:41:03.87,0:41:06.43,CN,,0000,0000,0000,,你好，再见
+Dialogue: 0,0:41:31.90,0:41:35.20,CN,,0000,0000,0000,,这就是休士顿星吗？
+Dialogue: 0,0:41:37.40,0:41:39.57,CN,,0000,0000,0000,,好奇怪的地表
+Dialogue: 0,0:42:07.93,0:42:09.66,CN,,0000,0000,0000,,-我的天啊 -没关系
+Dialogue: 0,0:42:09.84,0:42:12.83,CN,,0000,0000,0000,,-我只是没听见你敲门，就这样 -露薏丝
+Dialogue: 0,0:42:13.01,0:42:16.50,CN,,0000,0000,0000,,门根本没锁，任何人都进得来
+Dialogue: 0,0:42:16.68,0:42:19.30,CN,,0000,0000,0000,,-你又把自己比喻为凡人了 -很幽默
+Dialogue: 0,0:42:19.48,0:42:21.57,CN,,0000,0000,0000,,不，我很认真
+Dialogue: 0,0:42:22.68,0:42:24.38,CN,,0000,0000,0000,,无论如何
+Dialogue: 0,0:42:24.55,0:42:27.78,CN,,0000,0000,0000,,这是给今晚新婚晚宴的一点小东西
+Dialogue: 0,0:42:27.95,0:42:30.62,CN,,0000,0000,0000,,是紫罗兰，克拉克 这很很特别
+Dialogue: 0,0:42:30.79,0:42:33.19,CN,,0000,0000,0000,,你相信它们在这儿 都是野生的吗？
+Dialogue: 0,0:42:33.36,0:42:35.66,CN,,0000,0000,0000,,你应该看看花店里玫瑰的价格
+Dialogue: 0,0:42:35.83,0:42:37.59,CN,,0000,0000,0000,,我想也是
+Dialogue: 0,0:42:39.20,0:42:40.72,CN,,0000,0000,0000,,-你知道吗，露薏丝？ -什么？
+Dialogue: 0,0:42:40.90,0:42:45.39,CN,,0000,0000,0000,,除了这件事的不真实感以外
+Dialogue: 0,0:42:45.57,0:42:48.84,CN,,0000,0000,0000,,你知道的 为了报导装扮成新婚夫妻
+Dialogue: 0,0:42:49.01,0:42:51.07,CN,,0000,0000,0000,,除了我自己甚至都
+Dialogue: 0,0:42:51.24,0:42:53.97,CN,,0000,0000,0000,,我开始觉得自己是其中之一了
+Dialogue: 0,0:42:54.15,0:42:57.74,CN,,0000,0000,0000,,-新婚夫妻，你？ -我不觉得那有什么好奇怪
+Dialogue: 0,0:42:57.92,0:42:59.54,CN,,0000,0000,0000,,抱歉，我不是那个意思
+Dialogue: 0,0:42:59.72,0:43:02.85,CN,,0000,0000,0000,,我是说 我确定有成千上万的女孩愿意
+Dialogue: 0,0:43:03.39,0:43:05.15,CN,,0000,0000,0000,,至少有几个
+Dialogue: 0,0:43:05.33,0:43:07.32,CN,,0000,0000,0000,,-尽管说出来 -说什么？
+Dialogue: 0,0:43:07.49,0:43:12.96,CN,,0000,0000,0000,,说你不满意和我一起待在这里
+Dialogue: 0,0:43:14.00,0:43:18.84,CN,,0000,0000,0000,,我在你眼里看来不太完美
+Dialogue: 0,0:43:19.01,0:43:21.84,CN,,0000,0000,0000,,我无需为任何事道歉 我是个好记者
+Dialogue: 0,0:43:22.01,0:43:26.07,CN,,0000,0000,0000,,不，我是个非常好的记者 还是你更好的朋友
+Dialogue: 0,0:43:27.08,0:43:28.55,CN,,0000,0000,0000,,-站起来 -站起来？
+Dialogue: 0,0:43:28.85,0:43:30.32,CN,,0000,0000,0000,,对，站起来，好玩嘛
+Dialogue: 0,0:43:32.82,0:43:36.45,CN,,0000,0000,0000,,过来这里，看看你自己 看看你自己
+Dialogue: 0,0:43:37.46,0:43:41.62,CN,,0000,0000,0000,,这是个有潜在攻击性 与威胁性的男人
+Dialogue: 0,0:43:41.80,0:43:43.42,CN,,0000,0000,0000,,他能呼风唤雨
+Dialogue: 0,0:43:43.60,0:43:46.26,CN,,0000,0000,0000,,这不是我的错，你一直自贬身价
+Dialogue: 0,0:43:46.43,0:43:48.46,CN,,0000,0000,0000,,-是吗？怎么说？ -首先
+Dialogue: 0,0:43:48.64,0:43:51.10,CN,,0000,0000,0000,,你装作一副笨拙的样子 来，站直
+Dialogue: 0,0:43:51.27,0:43:52.86,CN,,0000,0000,0000,,这样好多了
+Dialogue: 0,0:43:53.04,0:43:56.50,CN,,0000,0000,0000,,替自己买件有开口的夹克 和不用带子束紧的鞋
+Dialogue: 0,0:43:56.68,0:44:00.48,CN,,0000,0000,0000,,和一件有点颜色 或图形之类的衬衫
+Dialogue: 0,0:44:00.65,0:44:03.24,CN,,0000,0000,0000,,和一个看起来不像拆信刀的领结
+Dialogue: 0,0:44:03.42,0:44:05.68,CN,,0000,0000,0000,,好吧，露薏丝，好吧
+Dialogue: 0,0:44:05.85,0:44:09.29,CN,,0000,0000,0000,,-我们讨论过这个了不是？ -是的
+Dialogue: 0,0:44:10.09,0:44:13.02,CN,,0000,0000,0000,,我知道这一切的结局
+Dialogue: 0,0:44:14.46,0:44:17.23,CN,,0000,0000,0000,,我很抱歉、我很抱歉
+Dialogue: 0,0:44:17.40,0:44:20.26,CN,,0000,0000,0000,,不论我多努力尝试，我就是
+Dialogue: 0,0:44:20.43,0:44:22.99,CN,,0000,0000,0000,,就是永远不会变成他
+Dialogue: 0,0:44:23.17,0:44:24.53,CN,,0000,0000,0000,,他是谁？
+Dialogue: 0,0:44:24.70,0:44:28.23,CN,,0000,0000,0000,,“他是谁”？当然是超人
+Dialogue: 0,0:44:28.41,0:44:31.61,CN,,0000,0000,0000,,你似乎以为自己爱他 我无力改变这点
+Dialogue: 0,0:44:31.78,0:44:35.44,CN,,0000,0000,0000,,这是我要忍受的地方 可恶，露薏丝，我受够了
+Dialogue: 0,0:44:36.58,0:44:39.14,CN,,0000,0000,0000,,或许我受够和他较劲了
+Dialogue: 0,0:44:39.32,0:44:42.65,CN,,0000,0000,0000,,也许你一直以来就是那个对手？
+Dialogue: 0,0:44:42.82,0:44:45.22,CN,,0000,0000,0000,,露薏丝，我从不擅长猜谜
+Dialogue: 0,0:44:45.39,0:44:47.66,CN,,0000,0000,0000,,让我把话说白一点
+Dialogue: 0,0:44:47.89,0:44:51.83,CN,,0000,0000,0000,,全世界有无数孩子可能身陷危险
+Dialogue: 0,0:44:52.00,0:44:55.87,CN,,0000,0000,0000,,为什么超人今天会在尼加拉瀑布？
+Dialogue: 0,0:44:56.04,0:44:57.43,CN,,0000,0000,0000,,为什么不是大峡谷？
+Dialogue: 0,0:44:57.60,0:45:01.44,CN,,0000,0000,0000,,-问问孩子的家人，他们知道答案 -为何每次都是我和你在一起
+Dialogue: 0,0:45:01.61,0:45:05.07,CN,,0000,0000,0000,,直到超人现身？ 然后你似乎就消失了
+Dialogue: 0,0:45:05.25,0:45:08.98,CN,,0000,0000,0000,,-我一直觉得这巧合并不单纯 -天啊，我是去买热狗
+Dialogue: 0,0:45:09.15,0:45:11.84,CN,,0000,0000,0000,,当超人来到现场时 我转头看热狗摊
+Dialogue: 0,0:45:12.02,0:45:13.25,CN,,0000,0000,0000,,你已经不在了
+Dialogue: 0,0:45:13.42,0:45:14.61,CN,,0000,0000,0000,,-我是 -消失无踪
+Dialogue: 0,0:45:16.19,0:45:18.12,CN,,0000,0000,0000,,我非去不可也没办法
+Dialogue: 0,0:45:18.96,0:45:21.19,CN,,0000,0000,0000,,你就是超人，对吧？
+Dialogue: 0,0:45:21.36,0:45:24.85,CN,,0000,0000,0000,,露薏丝，我们以前就谈过 你的这种幻觉
+Dialogue: 0,0:45:25.03,0:45:26.83,CN,,0000,0000,0000,,你知道你差点做了什么事吗？
+Dialogue: 0,0:45:27.00,0:45:29.26,CN,,0000,0000,0000,,从30楼高跳下？
+Dialogue: 0,0:45:29.44,0:45:31.67,CN,,0000,0000,0000,,你知道那差点 铸成不幸的错误吗？
+Dialogue: 0,0:45:31.84,0:45:35.77,CN,,0000,0000,0000,,对，我的确是犯了错，因为
+Dialogue: 0,0:45:37.64,0:45:39.64,CN,,0000,0000,0000,,我用的生命冒险 而不是你的
+Dialogue: 0,0:45:39.81,0:45:41.87,CN,,0000,0000,0000,,露薏丝，别这样
+Dialogue: 0,0:45:42.05,0:45:45.25,CN,,0000,0000,0000,,别想假装倒下去 因为你还得站起来
+Dialogue: 0,0:45:45.42,0:45:47.48,CN,,0000,0000,0000,,露薏丝，别闹了，露薏丝
+Dialogue: 0,0:46:00.37,0:46:01.56,CN,,0000,0000,0000,,就是你
+Dialogue: 0,0:46:07.81,0:46:10.83,CN,,0000,0000,0000,,我想我一定知道很久了
+Dialogue: 0,0:46:13.71,0:46:15.51,CN,,0000,0000,0000,,你一定很清楚
+Dialogue: 0,0:46:15.68,0:46:18.67,CN,,0000,0000,0000,,若猜错的话，克拉克肯特就死了
+Dialogue: 0,0:46:20.59,0:46:21.82,CN,,0000,0000,0000,,用空包弹也会死吗？
+Dialogue: 0,0:46:26.19,0:46:27.39,CN,,0000,0000,0000,,骗到你了吧
+Dialogue: 0,0:46:51.72,0:46:54.41,CN,,0000,0000,0000,,多么原始的生命啊！
+Dialogue: 0,0:47:03.56,0:47:04.79,CN,,0000,0000,0000,,你看到了吗？
+Dialogue: 0,0:47:06.10,0:47:08.29,CN,,0000,0000,0000,,你看到了吗？
+Dialogue: 0,0:47:08.47,0:47:11.03,CN,,0000,0000,0000,,我拥有超凡的力量
+Dialogue: 0,0:47:11.34,0:47:13.17,CN,,0000,0000,0000,,我们三个都有，亲爱的
+Dialogue: 0,0:47:55.58,0:47:58.71,CN,,0000,0000,0000,,-这里就是你家 -不是
+Dialogue: 0,0:47:58.89,0:48:01.95,CN,,0000,0000,0000,,事实上我住在城里 离你家三条街而已
+Dialogue: 0,0:48:03.42,0:48:05.76,CN,,0000,0000,0000,,这里对我是个很特殊的地方
+Dialogue: 0,0:48:05.93,0:48:08.22,CN,,0000,0000,0000,,我想让你看看这里
+Dialogue: 0,0:48:08.63,0:48:10.82,CN,,0000,0000,0000,,你感觉够暖和吗？
+Dialogue: 0,0:48:12.10,0:48:14.16,CN,,0000,0000,0000,,我应该觉得冷，但我并不冷
+Dialogue: 0,0:48:14.33,0:48:15.96,CN,,0000,0000,0000,,很好
+Dialogue: 0,0:48:16.14,0:48:18.30,CN,,0000,0000,0000,,来吧！我带你四处看看
+Dialogue: 0,0:48:37.26,0:48:38.45,CN,,0000,0000,0000,,不知道耶
+Dialogue: 0,0:48:39.39,0:48:42.59,CN,,0000,0000,0000,,从他们的外表看来 十元赌他们来自洛杉矶
+Dialogue: 0,0:48:51.94,0:48:55.81,CN,,0000,0000,0000,,痞子！别挡路
+Dialogue: 0,0:48:56.18,0:48:59.27,CN,,0000,0000,0000,,我喜欢那颗闪亮的红灯 就如同氪星的太阳
+Dialogue: 0,0:48:59.68,0:49:01.87,CN,,0000,0000,0000,,但不喜欢那恼人的噪音
+Dialogue: 0,0:49:02.55,0:49:04.38,CN,,0000,0000,0000,,让开！
+Dialogue: 0,0:49:05.25,0:49:07.01,CN,,0000,0000,0000,,我听对了吗？
+Dialogue: 0,0:49:07.19,0:49:08.98,CN,,0000,0000,0000,,那个混球对我下命令？
+Dialogue: 0,0:49:09.52,0:49:11.51,CN,,0000,0000,0000,,杜安，让你来处理
+Dialogue: 0,0:49:11.72,0:49:14.39,CN,,0000,0000,0000,,（郡立警长）
+Dialogue: 0,0:49:16.56,0:49:19.33,CN,,0000,0000,0000,,好吧！你以为你在做什么？
+Dialogue: 0,0:49:19.50,0:49:21.52,CN,,0000,0000,0000,,这是什么标志？
+Dialogue: 0,0:49:21.70,0:49:23.50,CN,,0000,0000,0000,,你追随其他领导人吗？
+Dialogue: 0,0:49:23.67,0:49:26.00,CN,,0000,0000,0000,,追随领导人？
+Dialogue: 0,0:49:27.17,0:49:29.54,CN,,0000,0000,0000,,痛死了！
+Dialogue: 0,0:49:29.71,0:49:31.90,CN,,0000,0000,0000,,-好吧 -这是什么武器？
+Dialogue: 0,0:49:41.75,0:49:43.48,CN,,0000,0000,0000,,你怎么办到的？
+Dialogue: 0,0:49:51.13,0:49:52.56,CN,,0000,0000,0000,,我的老天爷啊！
+Dialogue: 0,0:49:56.50,0:49:58.49,CN,,0000,0000,0000,,-那样很好 -我想或许我们
+Dialogue: 0,0:49:59.97,0:50:02.57,CN,,0000,0000,0000,,这次能够省略橘子汁
+Dialogue: 0,0:50:09.95,0:50:12.61,CN,,0000,0000,0000,,-干杯！ -干杯！
+Dialogue: 0,0:50:16.92,0:50:20.02,CN,,0000,0000,0000,,扮演克拉克肯特很辛苦吧？
+Dialogue: 0,0:50:20.39,0:50:23.12,CN,,0000,0000,0000,,不会
+Dialogue: 0,0:50:23.30,0:50:25.46,CN,,0000,0000,0000,,有时我还蛮喜欢的
+Dialogue: 0,0:50:25.63,0:50:27.79,CN,,0000,0000,0000,,虽然我是在愚弄自己
+Dialogue: 0,0:50:29.50,0:50:33.94,CN,,0000,0000,0000,,但如果不是因为他 我就不会认识你
+Dialogue: 0,0:50:35.84,0:50:39.28,CN,,0000,0000,0000,,但他就是你
+Dialogue: 0,0:50:40.05,0:50:43.38,CN,,0000,0000,0000,,-真让人搞不清楚 -对我而言并不会
+Dialogue: 0,0:50:45.82,0:50:47.25,CN,,0000,0000,0000,,一切都很清楚
+Dialogue: 0,0:50:51.92,0:50:53.79,CN,,0000,0000,0000,,直到昨天，我们一直遗忘 这座中部的中型美国市镇
+Dialogue: 0,0:50:55.86,0:51:00.27,CN,,0000,0000,0000,,现在人口已达123人
+Dialogue: 0,0:51:00.43,0:51:01.87,CN,,0000,0000,0000,,因为增加了3个人
+Dialogue: 0,0:51:02.03,0:51:05.06,CN,,0000,0000,0000,,这三名新来的人马上带来毁坏
+Dialogue: 0,0:51:05.24,0:51:07.93,CN,,0000,0000,0000,,今天早上我向东休士顿看去
+Dialogue: 0,0:51:08.11,0:51:11.30,CN,,0000,0000,0000,,-这座小镇充满了恐惧 -那是谁？
+Dialogue: 0,0:51:11.48,0:51:13.45,CN,,0000,0000,0000,,抓那个人，跟住他
+Dialogue: 0,0:51:13.61,0:51:15.24,CN,,0000,0000,0000,,那个大个子是谁？
+Dialogue: 0,0:51:16.05,0:51:17.95,CN,,0000,0000,0000,,是的，我们遇上
+Dialogue: 0,0:51:18.28,0:51:19.98,CN,,0000,0000,0000,,-知道吗？ -不知道
+Dialogue: 0,0:51:24.29,0:51:26.09,CN,,0000,0000,0000,,-没问题 -试着前后摆动一下
+Dialogue: 0,0:51:26.26,0:51:28.19,CN,,0000,0000,0000,,有哪些人能看到？
+Dialogue: 0,0:51:28.36,0:51:32.23,CN,,0000,0000,0000,,利用卫星连线 全世界所有人都能看到
+Dialogue: 0,0:51:32.40,0:51:34.59,CN,,0000,0000,0000,,整个休士顿星吗？
+Dialogue: 0,0:51:34.77,0:51:38.13,CN,,0000,0000,0000,,是地球，整个地球
+Dialogue: 0,0:51:40.44,0:51:42.50,CN,,0000,0000,0000,,你可以继续转播
+Dialogue: 0,0:51:42.68,0:51:46.34,CN,,0000,0000,0000,,随着这桩意外事件的发展
+Dialogue: 0,0:51:47.38,0:51:49.41,CN,,0000,0000,0000,,-随着这桩意外事件 -这男人够了吧
+Dialogue: 0,0:51:49.58,0:51:53.02,CN,,0000,0000,0000,,如果全世界都在收看 能否让他们看些有趣划面？
+Dialogue: 0,0:51:53.19,0:51:55.92,CN,,0000,0000,0000,,把武器放下投降
+Dialogue: 0,0:51:56.49,0:51:58.96,CN,,0000,0000,0000,,这是命令！
+Dialogue: 0,0:52:00.99,0:52:04.55,CN,,0000,0000,0000,,查德将军不接受命令 他是下命令的人
+Dialogue: 0,0:52:26.95,0:52:29.95,CN,,0000,0000,0000,,他就在火线上 但是却毫发无伤
+Dialogue: 0,0:52:30.12,0:52:32.39,CN,,0000,0000,0000,,我没有看过这种事 除了超人之外
+Dialogue: 0,0:52:33.29,0:52:35.02,CN,,0000,0000,0000,,是的
+Dialogue: 0,0:52:35.19,0:52:39.93,CN,,0000,0000,0000,,控制室已经通知我，有一队 武装直升机已经上路了
+Dialogue: 0,0:52:40.10,0:52:43.63,CN,,0000,0000,0000,,-总统先生，难道我们不能 -恐怕没有人有办法
+Dialogue: 0,0:52:43.80,0:52:46.10,CN,,0000,0000,0000,,他们拥有强大的力量 什么都阻挡不了他们
+Dialogue: 0,0:52:46.27,0:52:47.71,CN,,0000,0000,0000,,超人在哪里？
+Dialogue: 0,0:52:47.87,0:52:50.93,CN,,0000,0000,0000,,他在哪里？ 为什么他不想想办法？
+Dialogue: 0,0:53:03.36,0:53:04.55,CN,,0000,0000,0000,,再发射
+Dialogue: 0,0:53:06.86,0:53:08.33,CN,,0000,0000,0000,,再发射
+Dialogue: 0,0:53:11.56,0:53:15.02,CN,,0000,0000,0000,,你看！他们要利用机器才能飞
+Dialogue: 0,0:53:15.84,0:53:18.50,CN,,0000,0000,0000,,-降落了 -真是英勇啊！
+Dialogue: 0,0:53:18.84,0:53:22.80,CN,,0000,0000,0000,,对他们好一点！送他们个飞吻
+Dialogue: 0,0:53:25.71,0:53:28.41,CN,,0000,0000,0000,,火箭准备就绪，瞄准目标中 等等
+Dialogue: 0,0:53:30.55,0:53:31.74,CN,,0000,0000,0000,,我们要下坠了
+Dialogue: 0,0:53:33.85,0:53:37.15,CN,,0000,0000,0000,,我们要坠机了
+Dialogue: 0,0:53:37.32,0:53:38.59,CN,,0000,0000,0000,,我们要坠机了
+Dialogue: 0,0:53:44.60,0:53:46.50,CN,,0000,0000,0000,,我赢了
+Dialogue: 0,0:53:47.90,0:53:49.99,CN,,0000,0000,0000,,我每次都会赢
+Dialogue: 0,0:53:51.14,0:53:54.47,CN,,0000,0000,0000,,全地球没有人敢向我挑战吗？
+Dialogue: 0,0:54:14.46,0:54:15.93,CN,,0000,0000,0000,,过来！
+Dialogue: 0,0:54:16.26,0:54:18.16,CN,,0000,0000,0000,,将军阁下有话要说
+Dialogue: 0,0:54:18.43,0:54:22.66,CN,,0000,0000,0000,,我是查德将军 你们的统治者
+Dialogue: 0,0:54:24.00,0:54:28.03,CN,,0000,0000,0000,,是的，今天以新的命令开始
+Dialogue: 0,0:54:28.31,0:54:30.78,CN,,0000,0000,0000,,你们的土地，财产和生命
+Dialogue: 0,0:54:30.94,0:54:35.90,CN,,0000,0000,0000,,全部都要献给我，查德将军
+Dialogue: 0,0:54:36.45,0:54:38.61,CN,,0000,0000,0000,,为了回报你们的服从
+Dialogue: 0,0:54:38.78,0:54:41.45,CN,,0000,0000,0000,,你们将享有我慷慨的保护
+Dialogue: 0,0:54:41.62,0:54:45.49,CN,,0000,0000,0000,,换言之，我允许你们活下去
+Dialogue: 0,0:54:47.99,0:54:50.99,CN,,0000,0000,0000,,你是名将军
+Dialogue: 0,0:54:52.03,0:54:54.19,CN,,0000,0000,0000,,谁是你的上级长官？
+Dialogue: 0,0:54:54.97,0:55:00.10,CN,,0000,0000,0000,,-我只对总统负责 -而他将对我负责
+Dialogue: 0,0:55:01.37,0:55:05.17,CN,,0000,0000,0000,,否则所有城市的下场 都将像这座小镇一样
+Dialogue: 0,0:55:11.18,0:55:14.81,CN,,0000,0000,0000,,花了数千小时才创造完成 几秒钟之内就已模糊不清
+Dialogue: 0,0:55:14.99,0:55:18.12,CN,,0000,0000,0000,,如果我们反抗 想想看他们会怎么做
+Dialogue: 0,0:55:22.03,0:55:25.36,CN,,0000,0000,0000,,你的星球的人对你很满意，凯尔
+Dialogue: 0,0:55:25.53,0:55:29.26,CN,,0000,0000,0000,,你很诚为他们服务，他们也很感激
+Dialogue: 0,0:55:31.17,0:55:36.20,CN,,0000,0000,0000,,但你居然又回来与我理论
+Dialogue: 0,0:55:38.68,0:55:41.65,CN,,0000,0000,0000,,儿子，我一直尝试 预测你所有的问题，卡尔
+Dialogue: 0,0:55:41.81,0:55:43.65,CN,,0000,0000,0000,,我连想都没
+Dialogue: 0,0:55:45.08,0:55:47.02,CN,,0000,0000,0000,,我希望你不会问到这个问题
+Dialogue: 0,0:55:50.19,0:55:52.16,CN,,0000,0000,0000,,我的情感
+Dialogue: 0,0:55:54.19,0:55:59.50,CN,,0000,0000,0000,,我对某位人类发展出的情愫
+Dialogue: 0,0:55:59.80,0:56:02.13,CN,,0000,0000,0000,,已深深影响我，父亲
+Dialogue: 0,0:56:02.30,0:56:06.76,CN,,0000,0000,0000,,你投注原本该给所有人的 时间与情感，在一个人身上
+Dialogue: 0,0:56:06.94,0:56:09.07,CN,,0000,0000,0000,,便无法服务全人类
+Dialogue: 0,0:56:09.28,0:56:14.08,CN,,0000,0000,0000,,-这两件事互不相容 -那么
+Dialogue: 0,0:56:15.88,0:56:20.08,CN,,0000,0000,0000,,若我再也不愿为全人类服务
+Dialogue: 0,0:56:21.02,0:56:24.46,CN,,0000,0000,0000,,你要这样回报他们的感恩吗？
+Dialogue: 0,0:56:24.62,0:56:28.42,CN,,0000,0000,0000,,丢下弱小的、无法自我保护的 有需要的人
+Dialogue: 0,0:56:28.59,0:56:31.22,CN,,0000,0000,0000,,只为了你自私的追求？
+Dialogue: 0,0:56:31.43,0:56:34.87,CN,,0000,0000,0000,,自私？在我为他们做了那么多之后？
+Dialogue: 0,0:56:35.03,0:56:37.63,CN,,0000,0000,0000,,我的服务 会有功德圆满的一天吗？
+Dialogue: 0,0:56:37.80,0:56:40.36,CN,,0000,0000,0000,,至少他们有幸福的机会
+Dialogue: 0,0:56:40.54,0:56:43.17,CN,,0000,0000,0000,,我也只要幸福，不需要更多
+Dialogue: 0,0:56:43.91,0:56:46.61,CN,,0000,0000,0000,,你的幸福层次更高
+Dialogue: 0,0:56:46.78,0:56:51.15,CN,,0000,0000,0000,,你一定有感觉到 完成使命的鼓舞
+Dialogue: 0,0:56:51.75,0:56:54.69,CN,,0000,0000,0000,,你心里一定体会过那种幸福
+Dialogue: 0,0:56:54.99,0:56:58.12,CN,,0000,0000,0000,,儿子，你无法否定那种感受
+Dialogue: 0,0:56:58.49,0:57:01.82,CN,,0000,0000,0000,,不，我的确不能
+Dialogue: 0,0:57:02.53,0:57:06.36,CN,,0000,0000,0000,,但也无法否定另外这股 更强的感觉，父亲
+Dialogue: 0,0:57:07.80,0:57:09.03,CN,,0000,0000,0000,,它强烈的多了
+Dialogue: 0,0:57:15.04,0:57:17.17,CN,,0000,0000,0000,,真的没有办法吗，父亲？
+Dialogue: 0,0:57:17.81,0:57:21.77,CN,,0000,0000,0000,,难道我将得不到 生命中唯一真正渴望之物？
+Dialogue: 0,0:57:23.45,0:57:26.25,CN,,0000,0000,0000,,若你不当凯尔
+Dialogue: 0,0:57:26.62,0:57:28.55,CN,,0000,0000,0000,,若你当他们的一员
+Dialogue: 0,0:57:29.12,0:57:31.11,CN,,0000,0000,0000,,并如此爱他们的一员
+Dialogue: 0,0:57:31.69,0:57:33.89,CN,,0000,0000,0000,,你必须变成
+Dialogue: 0,0:57:34.59,0:57:36.69,CN,,0000,0000,0000,,一个普通人
+Dialogue: 0,0:58:05.19,0:58:11.03,CN,,0000,0000,0000,,这座水晶舱中充满 氪星的太阳光
+Dialogue: 0,0:58:11.53,0:58:12.93,CN,,0000,0000,0000,,一旦受到这些光线曝晒
+Dialogue: 0,0:58:13.10,0:58:16.63,CN,,0000,0000,0000,,你在地球上所有的力量
+Dialogue: 0,0:58:17.57,0:58:19.06,CN,,0000,0000,0000,,都将永远消失
+Dialogue: 0,0:58:19.74,0:58:21.76,CN,,0000,0000,0000,,因为一旦做了将无法回头
+Dialogue: 0,0:58:23.24,0:58:25.64,CN,,0000,0000,0000,,你会感觉像个普通人
+Dialogue: 0,0:58:26.68,0:58:29.74,CN,,0000,0000,0000,,也会像普通人一样受伤
+Dialogue: 0,0:58:31.95,0:58:33.82,CN,,0000,0000,0000,,三思啊，凯尔
+Dialogue: 0,0:58:35.25,0:58:36.92,CN,,0000,0000,0000,,我求求你
+Dialogue: 0,0:58:37.99,0:58:39.62,CN,,0000,0000,0000,,父亲
+Dialogue: 0,0:58:40.86,0:58:42.09,CN,,0000,0000,0000,,我爱她
+Dialogue: 0,0:59:00.15,0:59:01.64,CN,,0000,0000,0000,,要三思，凯尔
+Dialogue: 0,1:00:58.46,1:01:00.13,CN,,0000,0000,0000,,快走
+Dialogue: 0,1:01:11.01,1:01:12.20,CN,,0000,0000,0000,,小心！
+Dialogue: 0,1:02:03.43,1:02:05.33,CN,,0000,0000,0000,,你就是他们称为总统的人？
+Dialogue: 0,1:02:06.10,1:02:07.73,CN,,0000,0000,0000,,我就是
+Dialogue: 0,1:02:09.80,1:02:13.67,CN,,0000,0000,0000,,我认为你很崇敬飞行物
+Dialogue: 0,1:02:15.04,1:02:16.74,CN,,0000,0000,0000,,很好
+Dialogue: 0,1:02:17.61,1:02:19.77,CN,,0000,0000,0000,,在查德面前不能坐着
+Dialogue: 0,1:02:23.75,1:02:26.72,CN,,0000,0000,0000,,现在到查德面前跪下
+Dialogue: 0,1:02:40.93,1:02:42.46,CN,,0000,0000,0000,,你不是总统
+Dialogue: 0,1:02:42.77,1:02:47.54,CN,,0000,0000,0000,,一个统治那么多人的人 不会那么快就下跪
+Dialogue: 0,1:02:47.71,1:02:49.50,CN,,0000,0000,0000,,我是他们保护的对象
+Dialogue: 0,1:02:50.84,1:02:52.71,CN,,0000,0000,0000,,我是总统
+Dialogue: 0,1:02:53.65,1:02:55.88,CN,,0000,0000,0000,,如果能救大家的命，我愿下跪
+Dialogue: 0,1:02:56.32,1:02:58.04,CN,,0000,0000,0000,,会的！
+Dialogue: 0,1:02:58.22,1:03:00.78,CN,,0000,0000,0000,,从救你自己的命开始
+Dialogue: 0,1:03:04.49,1:03:07.69,CN,,0000,0000,0000,,这肯定是个落后的星球
+Dialogue: 0,1:03:08.13,1:03:10.96,CN,,0000,0000,0000,,男人们穿戴缎带
+Dialogue: 0,1:03:11.50,1:03:13.12,CN,,0000,0000,0000,,与珠宝
+Dialogue: 0,1:03:26.58,1:03:28.48,CN,,0000,0000,0000,,我现在做的
+Dialogue: 0,1:03:28.65,1:03:31.84,CN,,0000,0000,0000,,都是为了全球人类
+Dialogue: 0,1:03:32.02,1:03:36.01,CN,,0000,0000,0000,,但地球上还有一个人 绝不会向你下跪
+Dialogue: 0,1:03:36.32,1:03:39.59,CN,,0000,0000,0000,,那个笨蛋是谁？他在哪里？
+Dialogue: 0,1:03:39.76,1:03:41.75,CN,,0000,0000,0000,,我希望我知道
+Dialogue: 0,1:03:46.10,1:03:47.46,CN,,0000,0000,0000,,天啊！
+Dialogue: 0,1:03:47.97,1:03:49.49,CN,,0000,0000,0000,,查德
+Dialogue: 0,1:03:52.14,1:03:53.57,CN,,0000,0000,0000,,喂
+Dialogue: 0,1:03:53.74,1:03:56.26,CN,,0000,0000,0000,,你真的很安静
+Dialogue: 0,1:03:57.98,1:04:01.28,CN,,0000,0000,0000,,是的，我正在想
+Dialogue: 0,1:04:01.45,1:04:04.97,CN,,0000,0000,0000,,我不相信你竟会为我放弃一切
+Dialogue: 0,1:04:05.78,1:04:09.31,CN,,0000,0000,0000,,你在开玩笑？那么做不仅为你 露薏丝，我是为了我们而做
+Dialogue: 0,1:04:09.92,1:04:12.98,CN,,0000,0000,0000,,我告诉过你附近有家热狗店
+Dialogue: 0,1:04:13.16,1:04:17.09,CN,,0000,0000,0000,,好吧！因为你不能飞 所以得花多一点时间
+Dialogue: 0,1:04:17.26,1:04:18.99,CN,,0000,0000,0000,,快一点
+Dialogue: 0,1:04:19.16,1:04:21.06,CN,,0000,0000,0000,,快点  好的
+Dialogue: 0,1:04:24.27,1:04:26.60,CN,,0000,0000,0000,,来吧！我请客
+Dialogue: 0,1:04:30.34,1:04:32.71,CN,,0000,0000,0000,,天啊！是完美先生
+Dialogue: 0,1:04:34.35,1:04:36.61,CN,,0000,0000,0000,,哦？谢谢
+Dialogue: 0,1:04:38.85,1:04:41.58,CN,,0000,0000,0000,,-请问有男厕所吗？ -就在转角
+Dialogue: 0,1:04:41.75,1:04:44.28,CN,,0000,0000,0000,,-想要坐下吗？ -好的
+Dialogue: 0,1:04:46.26,1:04:47.75,CN,,0000,0000,0000,,你们想吃点什么？
+Dialogue: 0,1:04:47.93,1:04:51.52,CN,,0000,0000,0000,,我要一客总汇起士汉堡 和一杯可乐
+Dialogue: 0,1:04:51.70,1:04:55.36,CN,,0000,0000,0000,,还要一份薯条及一份沙拉
+Dialogue: 0,1:04:56.40,1:04:59.39,CN,,0000,0000,0000,,-你呢？先生 -等我回来再点
+Dialogue: 0,1:04:59.57,1:05:01.10,CN,,0000,0000,0000,,没问题，总汇起士汉堡
+Dialogue: 0,1:05:01.34,1:05:04.00,CN,,0000,0000,0000,,-牛排加蛋，只煎单面，咖啡 -我的可乐，谢谢
+Dialogue: 0,1:05:04.18,1:05:05.94,CN,,0000,0000,0000,,马上来
+Dialogue: 0,1:05:06.31,1:05:09.80,CN,,0000,0000,0000,,-对不起，这个位子有人坐 -就是现在，亲爱的
+Dialogue: 0,1:05:10.95,1:05:12.92,CN,,0000,0000,0000,,我能请你吃东西吗？
+Dialogue: 0,1:05:13.59,1:05:15.28,CN,,0000,0000,0000,,不用了，谢谢
+Dialogue: 0,1:05:16.19,1:05:18.49,CN,,0000,0000,0000,,对不起，你坐了我的位置
+Dialogue: 0,1:05:19.32,1:05:21.82,CN,,0000,0000,0000,,你的位置在那边，四眼田鸡
+Dialogue: 0,1:05:24.83,1:05:28.70,CN,,0000,0000,0000,,或许该有人教教你礼貌，先生
+Dialogue: 0,1:05:29.84,1:05:32.33,CN,,0000,0000,0000,,是吗？等他来了再告诉我
+Dialogue: 0,1:05:32.50,1:05:35.00,CN,,0000,0000,0000,,-我们只是想 -亲爱的
+Dialogue: 0,1:05:36.31,1:05:38.71,CN,,0000,0000,0000,,对不起，先生 你愿意到外面去吗？
+Dialogue: 0,1:05:38.91,1:05:41.64,CN,,0000,0000,0000,,我说，请问先生 你愿意到外面去吗？
+Dialogue: 0,1:05:44.92,1:05:47.65,CN,,0000,0000,0000,,听我说，你的牛排马上好
+Dialogue: 0,1:05:48.22,1:05:51.99,CN,,0000,0000,0000,,让它在炉上热着 这件事只需要一分钟就解决
+Dialogue: 0,1:05:53.23,1:05:54.78,CN,,0000,0000,0000,,你先请
+Dialogue: 0,1:05:55.46,1:05:57.33,CN,,0000,0000,0000,,-克拉克 -没关系的，宝贝
+Dialogue: 0,1:06:00.63,1:06:01.72,CN,,0000,0000,0000,,克拉克！
+Dialogue: 0,1:06:03.94,1:06:05.37,CN,,0000,0000,0000,,你还好吗？
+Dialogue: 0,1:06:05.54,1:06:08.30,CN,,0000,0000,0000,,他会没事的，把毛巾给我
+Dialogue: 0,1:06:08.64,1:06:12.17,CN,,0000,0000,0000,,-克拉克？ -血！是我的血
+Dialogue: 0,1:06:13.01,1:06:17.21,CN,,0000,0000,0000,,我想 或许从现在起，你该雇个保镖
+Dialogue: 0,1:06:17.38,1:06:20.84,CN,,0000,0000,0000,,我不需要保镖 我要我爱上的那个人
+Dialogue: 0,1:06:21.02,1:06:23.15,CN,,0000,0000,0000,,我知道，露薏丝
+Dialogue: 0,1:06:23.32,1:06:25.55,CN,,0000,0000,0000,,我希望他在这里
+Dialogue: 0,1:06:31.23,1:06:32.96,CN,,0000,0000,0000,,克拉克
+Dialogue: 0,1:06:34.33,1:06:37.56,CN,,0000,0000,0000,,天啊！你还不打算罢手吗？
+Dialogue: 0,1:06:44.54,1:06:48.74,CN,,0000,0000,0000,,你不是个好人
+Dialogue: 0,1:06:49.48,1:06:51.68,CN,,0000,0000,0000,,大家住手！
+Dialogue: 0,1:06:52.25,1:06:54.68,CN,,0000,0000,0000,,反正我不喜欢你的肉
+Dialogue: 0,1:06:56.86,1:06:58.72,CN,,0000,0000,0000,,天啊！
+Dialogue: 0,1:07:05.80,1:07:08.77,CN,,0000,0000,0000,,克拉克？
+Dialogue: 0,1:07:08.93,1:07:10.73,CN,,0000,0000,0000,,你站得起来吗？
+Dialogue: 0,1:07:10.94,1:07:13.60,CN,,0000,0000,0000,,-没事的，我来扶你 -慢慢来
+Dialogue: 0,1:07:13.81,1:07:15.57,CN,,0000,0000,0000,,试着坐到椅子上
+Dialogue: 0,1:07:17.41,1:07:20.07,CN,,0000,0000,0000,,-坐下 -我没事
+Dialogue: 0,1:07:22.88,1:07:25.11,CN,,0000,0000,0000,,他没事，大家放轻松 我们还有些新煮的咖啡
+Dialogue: 0,1:07:25.28,1:07:27.58,CN,,0000,0000,0000,,我把电视打开
+Dialogue: 0,1:07:28.42,1:07:31.25,CN,,0000,0000,0000,,本台节目暂时中断 播报一则紧急消息
+Dialogue: 0,1:07:31.42,1:07:34.32,CN,,0000,0000,0000,,由美国总统宣布
+Dialogue: 0,1:07:34.56,1:07:36.89,CN,,0000,0000,0000,,我是美国总统
+Dialogue: 0,1:07:37.16,1:07:42.00,CN,,0000,0000,0000,,我代表美国 和世上其他领袖之名
+Dialogue: 0,1:07:42.50,1:07:45.23,CN,,0000,0000,0000,,以及今天我所谘询过的相关人员
+Dialogue: 0,1:07:45.77,1:07:48.53,CN,,0000,0000,0000,,我在此宣布放弃
+Dialogue: 0,1:07:48.77,1:07:53.04,CN,,0000,0000,0000,,我所有的权力 以及地球的控制权
+Dialogue: 0,1:07:53.58,1:07:55.10,CN,,0000,0000,0000,,让予查德将军
+Dialogue: 0,1:07:55.91,1:07:57.11,CN,,0000,0000,0000,,查德
+Dialogue: 0,1:07:57.28,1:08:00.81,CN,,0000,0000,0000,,唯有完全听从 他的命令才能活命
+Dialogue: 0,1:08:01.62,1:08:05.58,CN,,0000,0000,0000,,才得以拯救千百万无辜性命
+Dialogue: 0,1:08:06.12,1:08:07.72,CN,,0000,0000,0000,,超人！你听到了吗？
+Dialogue: 0,1:08:07.89,1:08:11.66,CN,,0000,0000,0000,,-超人，你到底在哪 -谁是超人？
+Dialogue: 0,1:08:11.83,1:08:17.89,CN,,0000,0000,0000,,-你会知道的！到时候 -来找我，超人！如果你敢的话
+Dialogue: 0,1:08:18.07,1:08:19.66,CN,,0000,0000,0000,,我向你挑战
+Dialogue: 0,1:08:19.84,1:08:23.30,CN,,0000,0000,0000,,过来！到查德面前下跪
+Dialogue: 0,1:08:25.74,1:08:27.18,CN,,0000,0000,0000,,查德！
+Dialogue: 0,1:08:28.75,1:08:30.51,CN,,0000,0000,0000,,-这里？什么时候？ -什么时候？
+Dialogue: 0,1:08:30.68,1:08:34.45,CN,,0000,0000,0000,,你上哪儿去了？ 废弃的荒岛吗？
+Dialogue: 0,1:08:37.19,1:08:38.92,CN,,0000,0000,0000,,我必须回去
+Dialogue: 0,1:08:39.09,1:08:41.06,CN,,0000,0000,0000,,你不能回去
+Dialogue: 0,1:08:41.23,1:08:43.75,CN,,0000,0000,0000,,-现在已经没办法了 -我必须去
+Dialogue: 0,1:08:43.93,1:08:47.13,CN,,0000,0000,0000,,我一定要试试看！ 该死！我什么办法都要试
+Dialogue: 0,1:08:47.30,1:08:50.17,CN,,0000,0000,0000,,这不是你的错
+Dialogue: 0,1:08:50.34,1:08:53.74,CN,,0000,0000,0000,,你不知道会发生这种事
+Dialogue: 0,1:08:55.14,1:08:56.97,CN,,0000,0000,0000,,他知道
+Dialogue: 0,1:08:57.14,1:08:59.41,CN,,0000,0000,0000,,我听到他说的
+Dialogue: 0,1:08:59.58,1:09:01.84,CN,,0000,0000,0000,,但我却不在意
+Dialogue: 0,1:09:18.50,1:09:21.09,CN,,0000,0000,0000,,所有的调查都由你主导
+Dialogue: 0,1:09:21.30,1:09:23.23,CN,,0000,0000,0000,,我昨天也一样
+Dialogue: 0,1:09:23.40,1:09:25.89,CN,,0000,0000,0000,,还有前天也是
+Dialogue: 0,1:09:39.85,1:09:41.05,CN,,0000,0000,0000,,嗨！你们好
+Dialogue: 0,1:09:42.62,1:09:44.52,CN,,0000,0000,0000,,我是雷克斯路瑟
+Dialogue: 0,1:09:46.93,1:09:49.05,CN,,0000,0000,0000,,我是雷克斯路瑟
+Dialogue: 0,1:09:49.53,1:09:52.43,CN,,0000,0000,0000,,或许你们听过这个名字 我是地球上最伟大的罪犯
+Dialogue: 0,1:09:52.96,1:09:55.59,CN,,0000,0000,0000,,我告诉过你这只是个小星球
+Dialogue: 0,1:09:55.77,1:09:57.39,CN,,0000,0000,0000,,请等一下！
+Dialogue: 0,1:09:57.57,1:10:00.70,CN,,0000,0000,0000,,等你们更了解我再说好吗？
+Dialogue: 0,1:10:00.87,1:10:04.57,CN,,0000,0000,0000,,等等！你们想要什么 我都能提供
+Dialogue: 0,1:10:04.74,1:10:06.73,CN,,0000,0000,0000,,我可以给你勇气 让你们有无限自由去残害
+Dialogue: 0,1:10:06.91,1:10:11.64,CN,,0000,0000,0000,,杀戮和毁灭
+Dialogue: 0,1:10:12.15,1:10:16.75,CN,,0000,0000,0000,,加上雷克斯路瑟敏锐的心灵 雷克斯路瑟的见解
+Dialogue: 0,1:10:16.92,1:10:21.26,CN,,0000,0000,0000,,雷克斯路瑟是生涯导师 雷克斯路瑟是优质教师
+Dialogue: 0,1:10:23.16,1:10:25.63,CN,,0000,0000,0000,,不用你，我们这些早就有了
+Dialogue: 0,1:10:26.43,1:10:28.59,CN,,0000,0000,0000,,你不能用我们已有的东西协议
+Dialogue: 0,1:10:29.30,1:10:31.46,CN,,0000,0000,0000,,至尊
+Dialogue: 0,1:10:32.44,1:10:35.84,CN,,0000,0000,0000,,我要用你没有的来协议
+Dialogue: 0,1:10:36.01,1:10:37.37,CN,,0000,0000,0000,,乔尔的儿子
+Dialogue: 0,1:10:41.18,1:10:43.48,CN,,0000,0000,0000,,乔尔的儿子？
+Dialogue: 0,1:10:43.85,1:10:45.34,CN,,0000,0000,0000,,我是这么说的，对吧？
+Dialogue: 0,1:10:45.85,1:10:48.51,CN,,0000,0000,0000,,囚禁我们的乔尔？
+Dialogue: 0,1:10:48.75,1:10:50.91,CN,,0000,0000,0000,,不是，是棒球选手乔尔
+Dialogue: 0,1:10:51.09,1:10:53.08,CN,,0000,0000,0000,,对啦，囚禁你们的乔尔
+Dialogue: 0,1:10:53.39,1:10:56.88,CN,,0000,0000,0000,,-乔尔的儿子？他在地球？ -对
+Dialogue: 0,1:10:57.06,1:10:59.66,CN,,0000,0000,0000,,或许你们比较熟悉他的化名
+Dialogue: 0,1:10:59.83,1:11:02.93,CN,,0000,0000,0000,,或是他用旅行用的名字
+Dialogue: 0,1:11:03.10,1:11:04.90,CN,,0000,0000,0000,,超人
+Dialogue: 0,1:11:07.21,1:11:08.87,CN,,0000,0000,0000,,原来是超人
+Dialogue: 0,1:11:10.21,1:11:11.51,CN,,0000,0000,0000,,你怎么认识乔尔？
+Dialogue: 0,1:11:11.68,1:11:16.11,CN,,0000,0000,0000,,我是全心全意的 正如我先前向你解释的
+Dialogue: 0,1:11:17.18,1:11:18.67,CN,,0000,0000,0000,,我是地球上最棒的
+Dialogue: 0,1:11:18.85,1:11:20.15,CN,,0000,0000,0000,,复仇！
+Dialogue: 0,1:11:20.32,1:11:22.31,CN,,0000,0000,0000,,我们将杀了狱卒的儿子
+Dialogue: 0,1:11:22.49,1:11:25.46,CN,,0000,0000,0000,,-复仇 -复仇！我们正在进行
+Dialogue: 0,1:11:25.66,1:11:27.65,CN,,0000,0000,0000,,-他会飞吗？ -经常飞
+Dialogue: 0,1:11:27.83,1:11:29.85,CN,,0000,0000,0000,,-他的力量跟我们一样吗？ -当然
+Dialogue: 0,1:11:30.03,1:11:34.36,CN,,0000,0000,0000,,但是至尊
+Dialogue: 0,1:11:34.53,1:11:37.37,CN,,0000,0000,0000,,他只有一个人
+Dialogue: 0,1:11:37.54,1:11:40.10,CN,,0000,0000,0000,,而你们有三个
+Dialogue: 0,1:11:40.84,1:11:44.24,CN,,0000,0000,0000,,-如果你把他算两次，就有四个 -我们会让他下跪
+Dialogue: 0,1:11:44.51,1:11:46.17,CN,,0000,0000,0000,,等一下！
+Dialogue: 0,1:11:47.75,1:11:49.01,CN,,0000,0000,0000,,你们得先找到他才行
+Dialogue: 0,1:11:49.31,1:11:52.61,CN,,0000,0000,0000,,唯有雷克斯宝贝知道他在哪里
+Dialogue: 0,1:11:54.15,1:11:56.64,CN,,0000,0000,0000,,你想要什么？
+Dialogue: 0,1:11:56.86,1:11:58.98,CN,,0000,0000,0000,,将军
+Dialogue: 0,1:11:59.16,1:12:01.72,CN,,0000,0000,0000,,这个是个广大的星球
+Dialogue: 0,1:12:01.89,1:12:04.33,CN,,0000,0000,0000,,感谢上帝
+Dialogue: 0,1:12:04.50,1:12:06.46,CN,,0000,0000,0000,,我的需求很小
+Dialogue: 0,1:12:07.90,1:12:13.74,CN,,0000,0000,0000,,海景的资产对我特别有吸引力
+Dialogue: 0,1:12:15.47,1:12:17.96,CN,,0000,0000,0000,,你想要什么？
+Dialogue: 0,1:12:18.14,1:12:19.91,CN,,0000,0000,0000,,我要澳洲
+Dialogue: 0,1:12:51.44,1:12:52.97,CN,,0000,0000,0000,,嘿
+Dialogue: 0,1:12:55.71,1:13:00.17,CN,,0000,0000,0000,,听着，拜托！你去？ 请停下！
+Dialogue: 0,1:13:37.76,1:13:39.35,CN,,0000,0000,0000,,父亲？
+Dialogue: 0,1:13:41.96,1:13:44.02,CN,,0000,0000,0000,,若你听得到我的话
+Dialogue: 0,1:13:45.73,1:13:47.63,CN,,0000,0000,0000,,我失败了
+Dialogue: 0,1:13:50.03,1:13:51.93,CN,,0000,0000,0000,,我让你失望
+Dialogue: 0,1:13:52.24,1:13:54.00,CN,,0000,0000,0000,,我让自己失望
+Dialogue: 0,1:13:55.87,1:13:57.97,CN,,0000,0000,0000,,也让全人类失望
+Dialogue: 0,1:14:00.88,1:14:03.04,CN,,0000,0000,0000,,我用与生俱来的权利
+Dialogue: 0,1:14:04.15,1:14:08.95,CN,,0000,0000,0000,,在由你的敌人统治的世界里 换取屈从的一生
+Dialogue: 0,1:14:10.66,1:14:13.15,CN,,0000,0000,0000,,已经没有人能帮助
+Dialogue: 0,1:14:13.96,1:14:15.89,CN,,0000,0000,0000,,这个世界的人们
+Dialogue: 0,1:14:16.96,1:14:18.99,CN,,0000,0000,0000,,至少在我
+Dialogue: 0,1:14:19.90,1:14:23.03,CN,,0000,0000,0000,,父亲！
+Dialogue: 0,1:15:34.10,1:15:38.69,CN,,0000,0000,0000,,好好听着，吾儿 这将是我们最后一次谈话
+Dialogue: 0,1:15:40.57,1:15:43.16,CN,,0000,0000,0000,,若你现在听得到我
+Dialogue: 0,1:15:43.34,1:15:46.36,CN,,0000,0000,0000,,那你便使用到仅剩的能力之一
+Dialogue: 0,1:15:47.27,1:15:51.21,CN,,0000,0000,0000,,便是让我们开始沟通的水晶源头
+Dialogue: 0,1:15:52.18,1:15:54.58,CN,,0000,0000,0000,,这个过程已然完整
+Dialogue: 0,1:15:54.95,1:15:58.15,CN,,0000,0000,0000,,凯尔，你犯了极大的罪过
+Dialogue: 0,1:16:01.56,1:16:05.08,CN,,0000,0000,0000,,你以自由意志决定
+Dialogue: 0,1:16:05.63,1:16:08.42,CN,,0000,0000,0000,,枉顾我尽一切所能想说服你
+Dialogue: 0,1:16:10.73,1:16:12.32,CN,,0000,0000,0000,,我
+Dialogue: 0,1:16:12.50,1:16:16.99,CN,,0000,0000,0000,,现在你回到我面前 最后一次试着证明自己
+Dialogue: 0,1:16:17.17,1:16:22.07,CN,,0000,0000,0000,,这部分最后我也预料到了，吾儿
+Dialogue: 0,1:16:24.75,1:16:26.91,CN,,0000,0000,0000,,看着我，凯尔
+Dialogue: 0,1:16:29.35,1:16:33.95,CN,,0000,0000,0000,,当你小时候，我曾死过一次
+Dialogue: 0,1:16:35.19,1:16:38.16,CN,,0000,0000,0000,,是为了给你生命
+Dialogue: 0,1:16:39.29,1:16:43.25,CN,,0000,0000,0000,,现在，虽然这将用尽 我体内最后的能量
+Dialogue: 0,1:16:43.96,1:16:45.80,CN,,0000,0000,0000,,父亲，不要
+Dialogue: 0,1:16:47.30,1:16:49.77,CN,,0000,0000,0000,,看着我，凯尔
+Dialogue: 0,1:16:52.51,1:16:57.31,CN,,0000,0000,0000,,氪星的预言终于将被实现
+Dialogue: 0,1:16:57.61,1:17:03.14,CN,,0000,0000,0000,,儿子变成父亲，父亲化为儿子
+Dialogue: 0,1:17:07.66,1:17:11.56,CN,,0000,0000,0000,,永别了，凯尔
+Dialogue: 0,1:17:14.83,1:17:17.30,CN,,0000,0000,0000,,要记得我，吾儿
+Dialogue: 0,1:17:47.33,1:17:48.92,CN,,0000,0000,0000,,吾儿
+Dialogue: 0,1:18:04.51,1:18:06.21,CN,,0000,0000,0000,,父亲！
+Dialogue: 0,1:18:19.86,1:18:23.32,CN,,0000,0000,0000,,哈洛，黑咖啡，不加糖
+Dialogue: 0,1:18:23.50,1:18:26.59,CN,,0000,0000,0000,,黑咖啡，不加
+Dialogue: 0,1:18:27.47,1:18:29.03,CN,,0000,0000,0000,,谁付钱啊？
+Dialogue: 0,1:18:30.07,1:18:32.80,CN,,0000,0000,0000,,不，那里有三个人 有荒谬的将军
+Dialogue: 0,1:18:32.97,1:18:37.10,CN,,0000,0000,0000,,一台长头发的大卡车 和像伸展台皇后的女人
+Dialogue: 0,1:18:37.28,1:18:42.01,CN,,0000,0000,0000,,他们能飞，能透视 超人能做的，他们都办得到
+Dialogue: 0,1:18:42.48,1:18:44.78,CN,,0000,0000,0000,,他人呢？
+Dialogue: 0,1:18:44.99,1:18:46.98,CN,,0000,0000,0000,,也许他还没有听到消息，老编
+Dialogue: 0,1:18:47.15,1:18:49.32,CN,,0000,0000,0000,,-或许 -或许他的胆量用完了
+Dialogue: 0,1:18:49.49,1:18:52.12,CN,,0000,0000,0000,,-不加糖，而且别叫我老编 -他会来的
+Dialogue: 0,1:18:52.29,1:18:55.82,CN,,0000,0000,0000,,-如果他有办法他一定会来的 -没错，他一定会来的
+Dialogue: 0,1:18:58.37,1:19:00.63,CN,,0000,0000,0000,,-现在怎么样了？ -我不知道
+Dialogue: 0,1:19:01.34,1:19:03.24,CN,,0000,0000,0000,,-你感觉到了吗，查理？ -有
+Dialogue: 0,1:19:03.54,1:19:04.94,CN,,0000,0000,0000,,感觉好像地震
+Dialogue: 0,1:19:07.04,1:19:08.60,CN,,0000,0000,0000,,我的天啊
+Dialogue: 0,1:19:14.72,1:19:17.38,CN,,0000,0000,0000,,-就是那三个 -停！
+Dialogue: 0,1:19:17.55,1:19:20.85,CN,,0000,0000,0000,,-天啊，他们已经来了 -不好了
+Dialogue: 0,1:19:32.43,1:19:33.66,CN,,0000,0000,0000,,好恐怖
+Dialogue: 0,1:20:22.75,1:20:24.88,CN,,0000,0000,0000,,你没事吧？老编
+Dialogue: 0,1:20:25.39,1:20:26.79,CN,,0000,0000,0000,,嗨！
+Dialogue: 0,1:20:28.72,1:20:31.62,CN,,0000,0000,0000,,你们该看看白宫 得好几个月才能清干净
+Dialogue: 0,1:20:31.79,1:20:33.12,CN,,0000,0000,0000,,我是雷克斯路瑟
+Dialogue: 0,1:20:33.69,1:20:34.92,CN,,0000,0000,0000,,你猜不到吧？
+Dialogue: 0,1:20:35.56,1:20:38.40,CN,,0000,0000,0000,,这是乔尔的儿子？
+Dialogue: 0,1:20:38.57,1:20:40.47,CN,,0000,0000,0000,,-不，但你一定是个 -吉姆！
+Dialogue: 0,1:20:41.70,1:20:44.69,CN,,0000,0000,0000,,你答应给我乔尔的儿子
+Dialogue: 0,1:20:46.17,1:20:47.33,CN,,0000,0000,0000,,没错，阁下
+Dialogue: 0,1:20:47.94,1:20:51.54,CN,,0000,0000,0000,,但是 我所给你的是次好的
+Dialogue: 0,1:20:51.71,1:20:54.74,CN,,0000,0000,0000,,抓住那位小姐 他一定会来
+Dialogue: 0,1:20:54.92,1:20:56.47,CN,,0000,0000,0000,,他们有这种特殊关系
+Dialogue: 0,1:20:56.65,1:21:00.98,CN,,0000,0000,0000,,她替他做公共关系 而他给她所有独家新闻
+Dialogue: 0,1:21:01.16,1:21:03.82,CN,,0000,0000,0000,,他们是最好的朋友 了解我的意思吗？
+Dialogue: 0,1:21:04.16,1:21:07.39,CN,,0000,0000,0000,,这个超人还真随便
+Dialogue: 0,1:21:07.83,1:21:10.46,CN,,0000,0000,0000,,你也需要改进一点
+Dialogue: 0,1:21:10.96,1:21:12.56,CN,,0000,0000,0000,,等一下！
+Dialogue: 0,1:21:12.73,1:21:14.10,CN,,0000,0000,0000,,-对不起！ -她暂时可以活命
+Dialogue: 0,1:21:15.04,1:21:16.26,CN,,0000,0000,0000,,把其他人都杀了 就从他开始
+Dialogue: 0,1:21:19.94,1:21:22.43,CN,,0000,0000,0000,,等等
+Dialogue: 0,1:21:22.61,1:21:24.17,CN,,0000,0000,0000,,等一下！等一下！
+Dialogue: 0,1:21:24.34,1:21:28.44,CN,,0000,0000,0000,,还记得白宫吗？椭圆形办公室 我们曾有过欢笑
+Dialogue: 0,1:21:29.02,1:21:30.57,CN,,0000,0000,0000,,你们一定要改一改
+Dialogue: 0,1:21:30.78,1:21:32.68,CN,,0000,0000,0000,,（白宫投降）
+Dialogue: 0,1:21:42.16,1:21:43.36,CN,,0000,0000,0000,,将军
+Dialogue: 0,1:21:44.26,1:21:46.39,CN,,0000,0000,0000,,没听过媒体言论自由吗？
+Dialogue: 0,1:21:46.60,1:21:48.63,CN,,0000,0000,0000,,-超人！ -感谢老天，是超人
+Dialogue: 0,1:21:49.60,1:21:50.97,CN,,0000,0000,0000,,我叫你去抓他！
+Dialogue: 0,1:21:51.37,1:21:53.20,CN,,0000,0000,0000,,到我面前来，乔尔之子
+Dialogue: 0,1:21:53.71,1:21:56.54,CN,,0000,0000,0000,,到查德面前下跪
+Dialogue: 0,1:22:11.16,1:22:13.15,CN,,0000,0000,0000,,小心！你没事吧？
+Dialogue: 0,1:22:17.33,1:22:19.20,CN,,0000,0000,0000,,（白派瑞\N总编辑）
+Dialogue: 0,1:22:32.75,1:22:34.30,CN,,0000,0000,0000,,乔尔之子
+Dialogue: 0,1:22:34.78,1:22:37.34,CN,,0000,0000,0000,,我们开始以为你是个懦夫
+Dialogue: 0,1:22:37.72,1:22:38.98,CN,,0000,0000,0000,,我不是懦夫，查德
+Dialogue: 0,1:22:39.25,1:22:42.31,CN,,0000,0000,0000,,你八成只是个笨蛋
+Dialogue: 0,1:22:42.49,1:22:44.86,CN,,0000,0000,0000,,有其父必有其子
+Dialogue: 0,1:23:01.14,1:23:02.54,CN,,0000,0000,0000,,小心
+Dialogue: 0,1:23:05.61,1:23:08.38,CN,,0000,0000,0000,,你该死就得死！
+Dialogue: 0,1:23:18.53,1:23:20.72,CN,,0000,0000,0000,,快！抓住他！
+Dialogue: 0,1:23:20.99,1:23:23.05,CN,,0000,0000,0000,,一定会没事的
+Dialogue: 0,1:23:59.07,1:24:00.66,CN,,0000,0000,0000,,超人
+Dialogue: 0,1:24:21.69,1:24:24.05,CN,,0000,0000,0000,,-那是老编的 -老编已经有了
+Dialogue: 0,1:24:32.77,1:24:34.73,CN,,0000,0000,0000,,什么，你打了女人？
+Dialogue: 0,1:24:57.86,1:25:01.02,CN,,0000,0000,0000,,天啊，我的小孩！
+Dialogue: 0,1:25:01.40,1:25:03.83,CN,,0000,0000,0000,,救救我的宝贝
+Dialogue: 0,1:25:06.70,1:25:08.40,CN,,0000,0000,0000,,哦？谢谢
+Dialogue: 0,1:25:09.97,1:25:13.53,CN,,0000,0000,0000,,这个超人没什么了不起
+Dialogue: 0,1:25:13.74,1:25:16.14,CN,,0000,0000,0000,,我已经发现他的弱点了 -是啊
+Dialogue: 0,1:25:16.31,1:25:17.71,CN,,0000,0000,0000,,他关心
+Dialogue: 0,1:25:17.98,1:25:21.24,CN,,0000,0000,0000,,他真的很关心地球人
+Dialogue: 0,1:25:21.42,1:25:24.58,CN,,0000,0000,0000,,-就像宠物一样？ -我想是吧！
+Dialogue: 0,1:25:32.76,1:25:34.66,CN,,0000,0000,0000,,我来分散他的注意力
+Dialogue: 0,1:25:34.83,1:25:36.76,CN,,0000,0000,0000,,用我自己的力量
+Dialogue: 0,1:26:04.32,1:26:05.99,CN,,0000,0000,0000,,那些车子怎么了？
+Dialogue: 0,1:26:09.43,1:26:10.90,CN,,0000,0000,0000,,别挡路！
+Dialogue: 0,1:26:28.68,1:26:30.38,CN,,0000,0000,0000,,（冷静一下！）
+Dialogue: 0,1:27:26.07,1:27:27.17,CN,,0000,0000,0000,,超人
+Dialogue: 0,1:28:01.31,1:28:02.47,CN,,0000,0000,0000,,（请享用可口可乐）
+Dialogue: 0,1:28:12.72,1:28:14.12,CN,,0000,0000,0000,,真是谢谢你
+Dialogue: 0,1:28:14.29,1:28:16.85,CN,,0000,0000,0000,,我没想到这事会持续这么久
+Dialogue: 0,1:28:31.07,1:28:33.16,CN,,0000,0000,0000,,不要！别动手！
+Dialogue: 0,1:28:33.61,1:28:35.27,CN,,0000,0000,0000,,车上的人！
+Dialogue: 0,1:28:39.91,1:28:41.71,CN,,0000,0000,0000,,丢啊！
+Dialogue: 0,1:29:02.94,1:29:06.24,CN,,0000,0000,0000,,-别靠近那里，远离那个地方 -我们快去帮他们
+Dialogue: 0,1:29:09.78,1:29:13.23,CN,,0000,0000,0000,,-别担心，我去救她 -他死了
+Dialogue: 0,1:29:14.88,1:29:16.87,CN,,0000,0000,0000,,超人死了
+Dialogue: 0,1:29:20.12,1:29:21.38,CN,,0000,0000,0000,,他们杀了超人
+Dialogue: 0,1:29:22.82,1:29:25.12,CN,,0000,0000,0000,,-他死了 -我们去找他们报仇
+Dialogue: 0,1:29:25.29,1:29:27.89,CN,,0000,0000,0000,,-来，让他们知道我们的厉害 -我会空手道，上啊！
+Dialogue: 0,1:29:28.43,1:29:29.95,CN,,0000,0000,0000,,来吧
+Dialogue: 0,1:30:00.39,1:30:03.02,CN,,0000,0000,0000,,我抓住了！我抓住了！
+Dialogue: 0,1:30:03.20,1:30:05.60,CN,,0000,0000,0000,,什么都看不到能做什么？
+Dialogue: 0,1:30:10.57,1:30:13.70,CN,,0000,0000,0000,,-抓稳了 -天啊！
+Dialogue: 0,1:30:16.28,1:30:18.77,CN,,0000,0000,0000,,（不准进入）
+Dialogue: 0,1:30:21.31,1:30:23.44,CN,,0000,0000,0000,,（准备下地狱吧！ 世界末日到了！）
+Dialogue: 0,1:31:22.61,1:31:25.08,CN,,0000,0000,0000,,你不能丢下我们
+Dialogue: 0,1:31:29.78,1:31:34.08,CN,,0000,0000,0000,,那么，他毕竟是个懦夫
+Dialogue: 0,1:31:34.49,1:31:36.01,CN,,0000,0000,0000,,他走了
+Dialogue: 0,1:31:36.19,1:31:37.71,CN,,0000,0000,0000,,回来！超人
+Dialogue: 0,1:31:42.80,1:31:44.46,CN,,0000,0000,0000,,别丢下我们！
+Dialogue: 0,1:31:47.37,1:31:49.36,CN,,0000,0000,0000,,他临阵逃脱了
+Dialogue: 0,1:31:49.87,1:31:50.93,CN,,0000,0000,0000,,骗子！
+Dialogue: 0,1:31:52.27,1:31:54.21,CN,,0000,0000,0000,,超人什么都没做
+Dialogue: 0,1:31:54.47,1:31:56.60,CN,,0000,0000,0000,,我们走
+Dialogue: 0,1:32:03.62,1:32:07.42,CN,,0000,0000,0000,,-他们在那儿 -快走开，吉姆
+Dialogue: 0,1:32:16.43,1:32:18.26,CN,,0000,0000,0000,,我们已经战胜了
+Dialogue: 0,1:32:18.43,1:32:20.19,CN,,0000,0000,0000,,乔尔之子逃跑了
+Dialogue: 0,1:32:20.37,1:32:23.06,CN,,0000,0000,0000,,-超人跑掉了？ -我不相信你
+Dialogue: 0,1:32:23.24,1:32:27.30,CN,,0000,0000,0000,,你听到了，三对一 你大获全胜
+Dialogue: 0,1:32:27.47,1:32:30.57,CN,,0000,0000,0000,,-他被我们吓走了 -他会回来的
+Dialogue: 0,1:32:30.74,1:32:33.11,CN,,0000,0000,0000,,只要他还活着，就会再试一次
+Dialogue: 0,1:32:33.28,1:32:36.72,CN,,0000,0000,0000,,-下一次，我们会杀了他 -下一次？
+Dialogue: 0,1:32:37.75,1:32:39.81,CN,,0000,0000,0000,,下一次？
+Dialogue: 0,1:32:40.55,1:32:42.65,CN,,0000,0000,0000,,我该拿你们怎么办？
+Dialogue: 0,1:32:42.82,1:32:45.42,CN,,0000,0000,0000,,我在这里等着超人出现
+Dialogue: 0,1:32:45.59,1:32:47.89,CN,,0000,0000,0000,,你们三位要如何回报我？
+Dialogue: 0,1:32:48.06,1:32:52.40,CN,,0000,0000,0000,,“鞠躬，屈膝，下跪” 这种事在这里不管用
+Dialogue: 0,1:32:53.97,1:32:57.77,CN,,0000,0000,0000,,你为什么这样对我说话？ 你明知我可以因此而杀你
+Dialogue: 0,1:32:57.97,1:33:01.77,CN,,0000,0000,0000,,杀我？雷克斯路瑟？
+Dialogue: 0,1:33:02.21,1:33:04.97,CN,,0000,0000,0000,,杀掉本世代最伟大的罪犯
+Dialogue: 0,1:33:05.15,1:33:09.28,CN,,0000,0000,0000,,-杀掉地球上唯一 -杀了他
+Dialogue: 0,1:33:09.75,1:33:11.34,CN,,0000,0000,0000,,超人的地址？
+Dialogue: 0,1:33:15.22,1:33:20.56,CN,,0000,0000,0000,,你还要什么？ 我看到你脸上写满贪婪
+Dialogue: 0,1:33:20.73,1:33:23.59,CN,,0000,0000,0000,,一个小奖励，最棒的
+Dialogue: 0,1:33:23.76,1:33:26.79,CN,,0000,0000,0000,,一样挑起回忆的小东西
+Dialogue: 0,1:33:27.40,1:33:28.59,CN,,0000,0000,0000,,还要什么？
+Dialogue: 0,1:33:29.57,1:33:30.76,CN,,0000,0000,0000,,古巴
+Dialogue: 0,1:33:38.78,1:33:45.01,CN,,0000,0000,0000,,雷克斯路瑟 希望你不是在浪费我的时间
+Dialogue: 0,1:33:45.22,1:33:47.45,CN,,0000,0000,0000,,当然不是，难搞的大人
+Dialogue: 0,1:34:33.63,1:34:35.73,CN,,0000,0000,0000,,现身吧，懦夫
+Dialogue: 0,1:34:38.64,1:34:40.83,CN,,0000,0000,0000,,懦夫的儿子
+Dialogue: 0,1:34:47.21,1:34:48.51,CN,,0000,0000,0000,,我在这里，查德
+Dialogue: 0,1:34:48.92,1:34:51.94,CN,,0000,0000,0000,,-放莲恩小姐走，我们到里面谈谈 -不要，超人
+Dialogue: 0,1:34:52.12,1:34:54.09,CN,,0000,0000,0000,,别听他的，他只是个
+Dialogue: 0,1:34:54.52,1:34:55.78,CN,,0000,0000,0000,,停手
+Dialogue: 0,1:34:55.96,1:34:57.95,CN,,0000,0000,0000,,你的能力与我的相同
+Dialogue: 0,1:34:58.12,1:35:01.36,CN,,0000,0000,0000,,但我们有三个人 可以把你五马分尸
+Dialogue: 0,1:35:01.66,1:35:02.89,CN,,0000,0000,0000,,下手吧，将军大人
+Dialogue: 0,1:35:03.26,1:35:05.42,CN,,0000,0000,0000,,抱只腿，许个愿
+Dialogue: 0,1:35:06.93,1:35:09.33,CN,,0000,0000,0000,,但你是另一项致命弱点的受害者
+Dialogue: 0,1:35:09.77,1:35:11.20,CN,,0000,0000,0000,,就是你的同情心
+Dialogue: 0,1:35:11.37,1:35:13.84,CN,,0000,0000,0000,,对你来说 他人的死比你自己的更重要
+Dialogue: 0,1:35:14.01,1:35:15.47,CN,,0000,0000,0000,,是的，但偶有例外
+Dialogue: 0,1:35:15.91,1:35:21.44,CN,,0000,0000,0000,,你父亲让我们进人间炼狱永不得翻身 你的命运也将相同
+Dialogue: 0,1:35:21.71,1:35:23.77,CN,,0000,0000,0000,,凯尔，你将永远活着
+Dialogue: 0,1:35:23.95,1:35:28.94,CN,,0000,0000,0000,,做我的奴隶 否则他人将为你的固执付出代价
+Dialogue: 0,1:35:29.12,1:35:34.65,CN,,0000,0000,0000,,无辜的人，必要时可达上百万 就从这位露薏丝开始
+Dialogue: 0,1:35:34.83,1:35:36.45,CN,,0000,0000,0000,,-超人，不要 -停手
+Dialogue: 0,1:35:40.67,1:35:42.90,CN,,0000,0000,0000,,好吧，查德
+Dialogue: 0,1:35:43.57,1:35:45.00,CN,,0000,0000,0000,,一切都结束了
+Dialogue: 0,1:35:48.41,1:35:51.61,CN,,0000,0000,0000,,将军大人，别相信他 你不像我如此了解他
+Dialogue: 0,1:35:53.81,1:35:56.01,CN,,0000,0000,0000,,我感觉到乔尔在这里
+Dialogue: 0,1:35:58.02,1:35:59.88,CN,,0000,0000,0000,,我们会毁了这个地方
+Dialogue: 0,1:36:00.39,1:36:01.79,CN,,0000,0000,0000,,然后杀了他
+Dialogue: 0,1:36:04.09,1:36:05.96,CN,,0000,0000,0000,,他
+Dialogue: 0,1:36:07.13,1:36:10.06,CN,,0000,0000,0000,,是他还是我？
+Dialogue: 0,1:36:11.46,1:36:13.40,CN,,0000,0000,0000,,将军大人，我是雷克斯路瑟
+Dialogue: 0,1:36:14.07,1:36:17.63,CN,,0000,0000,0000,,记得吗？在你失意时我帮过你
+Dialogue: 0,1:36:17.80,1:36:19.67,CN,,0000,0000,0000,,我让你充满力量
+Dialogue: 0,1:36:20.21,1:36:24.27,CN,,0000,0000,0000,,当初你双手空空来找我 而我给了你超人
+Dialogue: 0,1:36:24.44,1:36:25.91,CN,,0000,0000,0000,,安静！
+Dialogue: 0,1:36:26.08,1:36:27.67,CN,,0000,0000,0000,,听好
+Dialogue: 0,1:36:30.18,1:36:31.71,CN,,0000,0000,0000,,这家伙真的很笨
+Dialogue: 0,1:36:32.32,1:36:34.38,CN,,0000,0000,0000,,你还以为了解人们，是吧？
+Dialogue: 0,1:36:34.99,1:36:38.12,CN,,0000,0000,0000,,协议已经达成也交换了礼物
+Dialogue: 0,1:36:38.29,1:36:41.69,CN,,0000,0000,0000,,我必须信任你 你说的都是实话
+Dialogue: 0,1:36:41.89,1:36:44.69,CN,,0000,0000,0000,,你很清楚谁跟你是同一阵线
+Dialogue: 0,1:36:46.80,1:36:49.67,CN,,0000,0000,0000,,试着把他们骗进这个分子室
+Dialogue: 0,1:36:49.84,1:36:51.96,CN,,0000,0000,0000,,它会夺走他们的力量
+Dialogue: 0,1:36:52.14,1:36:54.73,CN,,0000,0000,0000,,使他们成为平凡的人类！
+Dialogue: 0,1:36:54.91,1:36:56.10,CN,,0000,0000,0000,,如果你能够
+Dialogue: 0,1:36:59.28,1:37:02.48,CN,,0000,0000,0000,,-不要进去！那是个陷阱 -你这个狡猾的家伙
+Dialogue: 0,1:37:02.85,1:37:04.34,CN,,0000,0000,0000,,那是个分子室
+Dialogue: 0,1:37:04.55,1:37:08.38,CN,,0000,0000,0000,,它会把你们变成跟我一样
+Dialogue: 0,1:37:08.82,1:37:11.02,CN,,0000,0000,0000,,-你做的很好，雷克斯路瑟 -我也这么觉得
+Dialogue: 0,1:37:12.23,1:37:13.82,CN,,0000,0000,0000,,抓住他
+Dialogue: 0,1:37:15.50,1:37:17.62,CN,,0000,0000,0000,,-杀了她 -不要，超人
+Dialogue: 0,1:37:17.80,1:37:19.92,CN,,0000,0000,0000,,好啦，查德，别伤害她
+Dialogue: 0,1:37:20.47,1:37:22.13,CN,,0000,0000,0000,,你赢了
+Dialogue: 0,1:37:25.34,1:37:29.90,CN,,0000,0000,0000,,那颗水晶能够启动机器
+Dialogue: 0,1:37:30.08,1:37:32.91,CN,,0000,0000,0000,,雷克斯路瑟，澳洲统治者
+Dialogue: 0,1:37:33.08,1:37:34.77,CN,,0000,0000,0000,,去启动机器
+Dialogue: 0,1:37:45.96,1:37:47.95,CN,,0000,0000,0000,,请你允许
+Dialogue: 0,1:39:01.10,1:39:03.97,CN,,0000,0000,0000,,现在终于
+Dialogue: 0,1:39:08.21,1:39:09.83,CN,,0000,0000,0000,,跪下
+Dialogue: 0,1:39:14.35,1:39:16.75,CN,,0000,0000,0000,,握着我的手
+Dialogue: 0,1:39:16.95,1:39:22.72,CN,,0000,0000,0000,,发誓永远效忠查德
+Dialogue: 0,1:40:02.80,1:40:04.16,CN,,0000,0000,0000,,他转换了机器
+Dialogue: 0,1:40:04.80,1:40:06.73,CN,,0000,0000,0000,,他将他们变弱了
+Dialogue: 0,1:40:07.47,1:40:12.87,CN,,0000,0000,0000,,我是说光线在外面 而他在里面很安全
+Dialogue: 0,1:40:14.24,1:40:16.23,CN,,0000,0000,0000,,你知道吗？
+Dialogue: 0,1:40:16.58,1:40:18.70,CN,,0000,0000,0000,,你真的是个讨厌鬼
+Dialogue: 0,1:40:28.65,1:40:30.45,CN,,0000,0000,0000,,你没事吧？
+Dialogue: 0,1:40:31.62,1:40:35.36,CN,,0000,0000,0000,,我知道你会反叛我 狡猾如你忍不住会说谎
+Dialogue: 0,1:40:35.83,1:40:37.69,CN,,0000,0000,0000,,你在开玩笑吗？
+Dialogue: 0,1:40:37.86,1:40:41.93,CN,,0000,0000,0000,,我一直是跟你同阵线 真的好美
+Dialogue: 0,1:40:42.10,1:40:44.26,CN,,0000,0000,0000,,你看到他们掉入陷阱的样子？
+Dialogue: 0,1:40:44.50,1:40:46.94,CN,,0000,0000,0000,,太迟了！太迟了！
+Dialogue: 0,1:40:47.21,1:40:50.40,CN,,0000,0000,0000,,你看！是超人
+Dialogue: 0,1:40:50.84,1:40:52.81,CN,,0000,0000,0000,,我有个建议
+Dialogue: 0,1:40:52.98,1:40:55.31,CN,,0000,0000,0000,,不要阻止我 直到你听说这个
+Dialogue: 0,1:40:55.48,1:40:58.75,CN,,0000,0000,0000,,我知道我还欠你一次 但我们还在北极，对吧？
+Dialogue: 0,1:42:15.96,1:42:17.52,CN,,0000,0000,0000,,听着，露薏丝
+Dialogue: 0,1:42:18.66,1:42:20.96,CN,,0000,0000,0000,,我不后悔，好吗？ 我做到了
+Dialogue: 0,1:42:21.13,1:42:23.73,CN,,0000,0000,0000,,我让我爱的男人爱我
+Dialogue: 0,1:42:26.64,1:42:30.30,CN,,0000,0000,0000,,-对不对？\N-没错
+Dialogue: 0,1:42:32.48,1:42:35.21,CN,,0000,0000,0000,,好，就这样，那些人需要你
+Dialogue: 0,1:42:35.38,1:42:37.78,CN,,0000,0000,0000,,你以为我不懂吗？
+Dialogue: 0,1:42:42.25,1:42:46.66,CN,,0000,0000,0000,,你知道的，我们依然可以见面 常常见面
+Dialogue: 0,1:42:49.03,1:42:51.29,CN,,0000,0000,0000,,但就是不能
+Dialogue: 0,1:43:13.75,1:43:15.98,CN,,0000,0000,0000,,只要别忘记就好了
+Dialogue: 0,1:43:16.82,1:43:18.19,CN,,0000,0000,0000,,永远别忘记
+Dialogue: 0,1:43:42.68,1:43:45.84,CN,,0000,0000,0000,,-我们到了 -甜蜜的家
+Dialogue: 0,1:43:47.05,1:43:50.51,CN,,0000,0000,0000,,-早上在办公室见 -朝气蓬勃，是吧？
+Dialogue: 0,1:43:50.69,1:43:54.59,CN,,0000,0000,0000,,-原来的克拉克与原来的露薏丝 -没错
+Dialogue: 0,1:43:55.39,1:44:00.42,CN,,0000,0000,0000,,不过 或许以后我会对你好一点
+Dialogue: 0,1:44:08.11,1:44:09.37,CN,,0000,0000,0000,,你不用担心
+Dialogue: 0,1:44:09.94,1:44:11.53,CN,,0000,0000,0000,,我会保守你的秘密
+Dialogue: 0,1:44:12.81,1:44:16.37,CN,,0000,0000,0000,,我知道，露薏丝
+Dialogue: 0,1:44:41.61,1:44:44.01,CN,,0000,0000,0000,,他走了，孩子
+Dialogue: 0,1:44:44.94,1:44:46.91,CN,,0000,0000,0000,,在天空飞翔
+Dialogue: 0,1:45:20.68,1:45:24.71,CN,,0000,0000,0000,,（号外！超人拯救人类 免于永恒统治）
+Dialogue: 0,1:46:00.29,1:46:01.28,CN,,0000,0000,0000,,（畅饮\N可口可乐）
+Dialogue: 0,1:46:12.36,1:46:15.16,CN,,0000,0000,0000,,-不要！ -不要！
+Dialogue: 0,1:46:42.53,1:46:44.66,CN,,0000,0000,0000,,-白先生有空吗？ -他正在讲电话
+Dialogue: 0,1:46:44.83,1:46:48.77,CN,,0000,0000,0000,,-他现在正在开会 -对，这是他的说辞
+Dialogue: 0,1:47:03.18,1:47:04.95,CN,,0000,0000,0000,,（《星球日报》）
+Dialogue: 0,1:47:05.12,1:47:07.31,CN,,0000,0000,0000,,好，给我三份副本
+Dialogue: 0,1:47:07.49,1:47:09.82,CN,,0000,0000,0000,,-你好 -这将是报纸中的夹页
+Dialogue: 0,1:47:09.99,1:47:11.72,CN,,0000,0000,0000,,他们是这么说的
+Dialogue: 0,1:47:13.26,1:47:15.73,CN,,0000,0000,0000,,早安，你好
+Dialogue: 0,1:47:21.40,1:47:23.03,CN,,0000,0000,0000,,早安，露薏丝
+Dialogue: 0,1:47:28.74,1:47:30.57,CN,,0000,0000,0000,,-早安，露薏丝 -你好，克拉克
+Dialogue: 0,1:47:30.74,1:47:33.47,CN,,0000,0000,0000,,天啊，我看过不少人做白日梦
+Dialogue: 0,1:47:33.65,1:47:36.88,CN,,0000,0000,0000,,但你这副德行 大概已飘到北极去了
+Dialogue: 0,1:47:37.85,1:47:40.05,CN,,0000,0000,0000,,北极
+Dialogue: 0,1:47:41.25,1:47:42.85,CN,,0000,0000,0000,,不，那太傻了
+Dialogue: 0,1:47:43.82,1:47:49.42,CN,,0000,0000,0000,,你是否曾经觉得 你知道很重要的事，你得
+Dialogue: 0,1:47:49.76,1:47:51.59,CN,,0000,0000,0000,,不，你从来没有过
+Dialogue: 0,1:47:52.40,1:47:58.10,CN,,0000,0000,0000,,我是说，我觉得手上有 整个生涯最重要的新闻
+Dialogue: 0,1:47:58.27,1:48:00.36,CN,,0000,0000,0000,,却记不得那是什么
+Dialogue: 0,1:48:00.91,1:48:04.50,CN,,0000,0000,0000,,以我对你的了解 那一定跟超人有关
+Dialogue: 0,1:48:04.68,1:48:07.94,CN,,0000,0000,0000,,也许是他如何拯救这座城市 拯救地球，或拯救宇宙
+Dialogue: 0,1:48:08.11,1:48:12.05,CN,,0000,0000,0000,,克拉克听我说 忌妒会让生产力下降
+Dialogue: 0,1:48:12.22,1:48:14.91,CN,,0000,0000,0000,,你也可以做点别的事
+Dialogue: 0,1:48:15.92,1:48:17.51,CN,,0000,0000,0000,,是吗？
+Dialogue: 0,1:48:17.69,1:48:20.45,CN,,0000,0000,0000,,真的吗，做什么？
+Dialogue: 0,1:48:21.96,1:48:23.15,CN,,0000,0000,0000,,帮我们叫披萨
+Dialogue: 0,1:48:23.93,1:48:27.66,CN,,0000,0000,0000,,-现在要叫披萨？ -对，我饿了
+Dialogue: 0,1:48:28.13,1:48:30.66,CN,,0000,0000,0000,,说真的，我想白先生要是发现 不会太高兴
+Dialogue: 0,1:48:30.84,1:48:32.77,CN,,0000,0000,0000,,我出一半钱，好吗？
+Dialogue: 0,1:48:32.94,1:48:34.37,CN,,0000,0000,0000,,我去
+Dialogue: 0,1:48:39.55,1:48:40.98,CN,,0000,0000,0000,,露薏丝？
+Dialogue: 0,1:48:41.45,1:48:42.74,CN,,0000,0000,0000,,你知道，披萨的事
+Dialogue: 0,1:48:44.02,1:48:47.45,CN,,0000,0000,0000,,没关系，我请客
+Dialogue: 0,1:48:49.66,1:48:51.65,CN,,0000,0000,0000,,你知道吗，你人最好了
+Dialogue: 0,1:49:03.94,1:49:06.43,CN,,0000,0000,0000,,（超人今日休息！）
+Dialogue: 0,1:49:13.35,1:49:15.75,CN,,0000,0000,0000,,-你好，朗 -什么事？
+Dialogue: 0,1:49:15.91,1:49:17.71,CN,,0000,0000,0000,,再给我一盘这种垃圾
+Dialogue: 0,1:49:17.88,1:49:20.65,CN,,0000,0000,0000,,垃圾？这是最受欢迎的特餐
+Dialogue: 0,1:49:20.85,1:49:24.48,CN,,0000,0000,0000,,好！再多给我一些咖啡好吗？
+Dialogue: 0,1:49:25.79,1:49:30.13,CN,,0000,0000,0000,,哇！真有趣 我没看过垃圾在吃垃圾
+Dialogue: 0,1:49:38.17,1:49:42.07,CN,,0000,0000,0000,,对不起，先生 你坐了我最爱的位子
+Dialogue: 0,1:49:42.24,1:49:43.57,CN,,0000,0000,0000,,有本事过来抢！四眼田鸡
+Dialogue: 0,1:49:48.21,1:49:49.98,CN,,0000,0000,0000,,冷静点！
+Dialogue: 0,1:49:51.15,1:49:52.28,CN,,0000,0000,0000,,别激动！
+Dialogue: 0,1:49:52.45,1:49:55.89,CN,,0000,0000,0000,,这里我才刚修好 我可是花了一大笔钱
+Dialogue: 0,1:50:12.50,1:50:14.60,CN,,0000,0000,0000,,天啊！
+Dialogue: 0,1:50:26.32,1:50:28.45,CN,,0000,0000,0000,,外带！
+Dialogue: 0,1:50:34.33,1:50:35.76,CN,,0000,0000,0000,,（攻击吧）
+Dialogue: 0,1:50:36.20,1:50:40.06,CN,,0000,0000,0000,,对于你的损失我感到很抱歉
+Dialogue: 0,1:50:42.43,1:50:46.34,CN,,0000,0000,0000,,我一直在练健身
+Dialogue: 0,1:55:24.85,1:55:27.98,CN,,0000,0000,0000,,【自70年代此片拍摄以来 人们已有更高度的认知
+Dialogue: 0,1:55:28.15,1:55:30.64,CN,,0000,0000,0000,,不论是对皮草业 对动物造成的摧残
+Dialogue: 0,1:55:30.82,1:55:33.19,CN,,0000,0000,0000,,还是吸烟与二手烟 造成的健康危害
+Dialogue: 0,1:55:33.36,1:55:35.85,CN,,0000,0000,0000,,因此我将不宽恕 如本片描述般的
+Dialogue: 0,1:55:36.03,1:55:37.82,CN,,0000,0000,0000,,消费香烟与皮草——李察唐纳】
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0000,0000,0000,,
+
+
