@@ -1,0 +1,1372 @@
+[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,22,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,1,2,20,20,0,134
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:37.91,0:00:41.16,Default,,0000,0000,0000,,有时在夜深人静的时候\N{\fntahoma\fs10\1c&H0080FF&}Sometimes Dr. Lecter and I would talk{\r}
+Dialogue: 0,0:00:41.20,0:00:43.20,Default,,0000,0000,0000,,汉尼拔医生会和我聊聊天\N{\fntahoma\fs10\1c&H0080FF&}when things got quiet enough{\r}
+Dialogue: 0,0:00:43.29,0:00:45.37,Default,,0000,0000,0000,,谈我所选修的科学课程\N{\fntahoma\fs10\1c&H0080FF&}about the science courses I was takin'.{\r}
+Dialogue: 0,0:00:45.46,0:00:49.38,Default,,0000,0000,0000,,那种邮购的心理学课程 也能称为科学?\N{\fntahoma\fs10\1c&H0080FF&}Some kind of mail-order courses in psychology, Nurse Barney?{\r}
+Dialogue: 0,0:00:49.42,0:00:50.88,Default,,0000,0000,0000,,当然不是\N{\fntahoma\fs10\1c&H0080FF&}No, sir.{\r}
+Dialogue: 0,0:00:50.92,0:00:53.84,Default,,0000,0000,0000,,我并不认为心理学是科学\N{\fntahoma\fs10\1c&H0080FF&}I don't consider psychology a science{\r}
+Dialogue: 0,0:00:53.88,0:00:56.46,Default,,0000,0000,0000,,汉尼拔医生也不这么想\N{\fntahoma\fs10\1c&H0080FF&}and neither did Dr. Lecter.{\r}
+Dialogue: 0,0:00:59.18,0:01:00.72,Default,,0000,0000,0000,,那么 巴尼...\N{\fntahoma\fs10\1c&H0080FF&}Now, Barney...{\r}
+Dialogue: 0,0:01:00.81,0:01:03.35,Default,,0000,0000,0000,,当你在收容所工作的时候\N{\fntahoma\fs10\1c&H0080FF&}while you were working at the asylum{\r}
+Dialogue: 0,0:01:03.43,0:01:09.53,Default,,0000,0000,0000,,你的确看到史黛琳和汉尼拔之间有互动关系\N{\fntahoma\fs10\1c&H0080FF&}you observed Clarice Starling and Hannibal Lecter interacting.{\r}
+Dialogue: 0,0:01:09.57,0:01:11.28,Default,,0000,0000,0000,,互动?\N{\fntahoma\fs10\1c&H0080FF&}Interacting?{\r}
+Dialogue: 0,0:01:11.36,0:01:14.11,Default,,0000,0000,0000,,就是聊天之类的\N{\fntahoma\fs10\1c&H0080FF&}Talking to one another.{\r}
+Dialogue: 0,0:01:14.19,0:01:17.03,Default,,0000,0000,0000,,是的 他们看起来好像是...\N{\fntahoma\fs10\1c&H0080FF&}Yes. Yes, it seemed to me that they...{\r}
+Dialogue: 0,0:01:17.07,0:01:20.62,Default,,0000,0000,0000,,我知道你很想拿这笔咨询费\N{\fntahoma\fs10\1c&H0080FF&}I can see you're eager to justify your consulting fee{\r}
+Dialogue: 0,0:01:20.70,0:01:23.87,Default,,0000,0000,0000,,但是只说你看到的\N{\fntahoma\fs10\1c&H0080FF&}but why don't we start with what you saw{\r}
+Dialogue: 0,0:01:23.95,0:01:26.04,Default,,0000,0000,0000,,别把自己的想法加进去\N{\fntahoma\fs10\1c&H0080FF&}not what you thought about what you saw?{\r}
+Dialogue: 0,0:01:26.08,0:01:30.55,Default,,0000,0000,0000,,柯德 别这样 他当然可以表达自己的意见\N{\fntahoma\fs10\1c&H0080FF&}Cordell, don't be like that. Barney can give us his opinion.{\r}
+Dialogue: 0,0:01:30.63,0:01:34.88,Default,,0000,0000,0000,,巴尼 告诉我们你的看法\N{\fntahoma\fs10\1c&H0080FF&}Barney, give us your opinion of what you saw.{\r}
+Dialogue: 0,0:01:34.92,0:01:37.34,Default,,0000,0000,0000,,你觉得他们之间是哪种关系?\N{\fntahoma\fs10\1c&H0080FF&}What was it between them?{\r}
+Dialogue: 0,0:01:38.67,0:01:42.89,Default,,0000,0000,0000,,通常汉尼拔医生根本不理会来访的观察员\N{\fntahoma\fs10\1c&H0080FF&}Most of the time, Dr. Lecter didn't respond at all to visitors.{\r}
+Dialogue: 0,0:01:42.93,0:01:45.76,Default,,0000,0000,0000,,甚至会不发一言的瞪着前来观察的学生\N{\fntahoma\fs10\1c&H0080FF&}He'd just, for instance, open his eyes long enough{\r}
+Dialogue: 0,0:01:45.85,0:01:49.01,Default,,0000,0000,0000,,好让他们觉得难堪\N{\fntahoma\fs10\1c&H0080FF&}to insult some academic who was there to look over him.{\r}
+Dialogue: 0,0:01:50.57,0:01:53.23,Default,,0000,0000,0000,,但是他却回答史黛琳的问话\N{\fntahoma\fs10\1c&H0080FF&}With Starling, he answered her questions.{\r}
+Dialogue: 0,0:01:53.27,0:01:57.11,Default,,0000,0000,0000,,她引起了他的兴趣 也被她深深的吸引住\N{\fntahoma\fs10\1c&H0080FF&}She interested him. She intrigued him.{\r}
+Dialogue: 0,0:01:57.15,0:02:00.65,Default,,0000,0000,0000,,他认为她既迷人又有趣\N{\fntahoma\fs10\1c&H0080FF&}He thought she was charming and amusing.{\r}
+Dialogue: 0,0:02:01.58,0:02:04.58,Default,,0000,0000,0000,,所以史黛琳和汉尼拔...\N{\fntahoma\fs10\1c&H0080FF&}So Clarice Starling and Hannibal Lecter...{\r}
+Dialogue: 0,0:02:04.62,0:02:07.58,Default,,0000,0000,0000,,就变成了朋友\N{\fntahoma\fs10\1c&H0080FF&}became friendly.{\r}
+Dialogue: 0,0:02:07.62,0:02:11.58,Default,,0000,0000,0000,,不错 是一种形而上的朋友\N{\fntahoma\fs10\1c&H0080FF&}Inside a kind of formal structure, yes.{\r}
+Dialogue: 0,0:02:11.63,0:02:14.88,Default,,0000,0000,0000,,这么说来他很喜欢她?\N{\fntahoma\fs10\1c&H0080FF&}And he was fond of her.{\r}
+Dialogue: 0,0:02:17.21,0:02:19.42,Default,,0000,0000,0000,,是的\N{\fntahoma\fs10\1c&H0080FF&}Yes.{\r}
+Dialogue: 0,0:02:19.50,0:02:20.79,Default,,0000,0000,0000,,巴尼 谢谢你\N{\fntahoma\fs10\1c&H0080FF&}Thank you, Barney.{\r}
+Dialogue: 0,0:02:20.88,0:02:22.93,Default,,0000,0000,0000,,谢谢你的坦白\N{\fntahoma\fs10\1c&H0080FF&}Thank you very much for your candor.{\r}
+Dialogue: 0,0:02:22.97,0:02:26.26,Default,,0000,0000,0000,,至于你卖给我的那些...\N{\fntahoma\fs10\1c&H0080FF&}And keep all those wonderful items...{\r}
+Dialogue: 0,0:02:26.35,0:02:29.10,Default,,0000,0000,0000,,汉尼拔的珍贵收藏品\N{\fntahoma\fs10\1c&H0080FF&}from your personal Lecter treasure trove coming.{\r}
+Dialogue: 0,0:02:29.14,0:02:30.93,Default,,0000,0000,0000,,我非常喜欢\N{\fntahoma\fs10\1c&H0080FF&}I've enjoyed them immensely.{\r}
+Dialogue: 0,0:02:31.01,0:02:32.76,Default,,0000,0000,0000,,维杰先生\N{\fntahoma\fs10\1c&H0080FF&}Mr. Verger.{\r}
+Dialogue: 0,0:02:32.81,0:02:35.36,Default,,0000,0000,0000,,喔 我差点忘了\N{\fntahoma\fs10\1c&H0080FF&}Oh, I almost forgot.{\r}
+Dialogue: 0,0:02:35.44,0:02:38.11,Default,,0000,0000,0000,,柯德 我能吃块甜点吗?\N{\fntahoma\fs10\1c&H0080FF&}I might be able to get a cookie down. What do you say, Cordell?{\r}
+Dialogue: 0,0:02:38.19,0:02:40.65,Default,,0000,0000,0000,,那会要了你的命\N{\fntahoma\fs10\1c&H0080FF&}I think it would kill you.{\r}
+Dialogue: 0,0:02:49.28,0:02:54.07,Default,,0000,0000,0000,,-多少钱?  -二十五...万\N{\fntahoma\fs10\1c&H0080FF&}-How much? -Two hundred and fifty...thousand.{\r}
+Dialogue: 0,0:02:55.83,0:03:00.04,Default,,0000,0000,0000,,去开张二十五万的支票\N{\fntahoma\fs10\1c&H0080FF&}Cut a check for $250,000.{\r}
+Dialogue: 0,0:03:05.25,0:03:11.05,Default,,0000,0000,0000,,片名:  人魔
+Dialogue: 0,0:04:54.11,0:04:56.53,Default,,0000,0000,0000,,这种时候她也能睡?\N{\fntahoma\fs10\1c&H0080FF&}How can she sleep at a time like this?{\r}
+Dialogue: 0,0:04:57.99,0:05:00.86,Default,,0000,0000,0000,,她昨晚出勤 现在正养精蓄锐\N{\fntahoma\fs10\1c&H0080FF&}She's on a jump-out squad all night. She's saving her strength.{\r}
+Dialogue: 0,0:05:30.64,0:05:34.18,Default,,0000,0000,0000,,听说从华府警局 来了个叫柏顿的家伙\N{\fntahoma\fs10\1c&H0080FF&}We got some guy named Bolton from the DC Police.{\r}
+Dialogue: 0,0:05:35.53,0:05:38.48,Default,,0000,0000,0000,,大家请注意 这是现场区域图\N{\fntahoma\fs10\1c&H0080FF&}All right, everyone. Pay attention. Here's the layout.{\r}
+Dialogue: 0,0:05:38.57,0:05:41.15,Default,,0000,0000,0000,,抱歉 我是华府警探柏顿\N{\fntahoma\fs10\1c&H0080FF&}Excuse me. I'm Officer Bolton, DC Police.{\r}
+Dialogue: 0,0:05:41.23,0:05:43.69,Default,,0000,0000,0000,,你好 从警徽上我可以看出来\N{\fntahoma\fs10\1c&H0080FF&}I can see that from your badge. How do you do?{\r}
+Dialogue: 0,0:05:43.78,0:05:45.28,Default,,0000,0000,0000,,我是这里的负责人\N{\fntahoma\fs10\1c&H0080FF&}I'm in charge here.{\r}
+Dialogue: 0,0:05:45.36,0:05:47.62,Default,,0000,0000,0000,,柏顿警探 我是史黛琳探员\N{\fntahoma\fs10\1c&H0080FF&}Officer Bolton, I'm Special Agent Starling.{\r}
+Dialogue: 0,0:05:47.66,0:05:49.83,Default,,0000,0000,0000,,为了避免不必要的误会\N{\fntahoma\fs10\1c&H0080FF&}Just so we don't get off on the wrong foot{\r}
+Dialogue: 0,0:05:49.91,0:05:52.12,Default,,0000,0000,0000,,让我解释一下我们来此的目的\N{\fntahoma\fs10\1c&H0080FF&}let me explain why we're all here.{\r}
+Dialogue: 0,0:05:52.16,0:05:56.29,Default,,0000,0000,0000,,我对艾微达很了解 因为我曾逮捕过她两次\N{\fntahoma\fs10\1c&H0080FF&}I'm here because I know Evelda Drumgo. I arrested her twice on RICO warrants.{\r}
+Dialogue: 0,0:05:56.38,0:05:59.00,Default,,0000,0000,0000,,这次因为牵涉到毒品和枪械\N{\fntahoma\fs10\1c&H0080FF&}DEA and ATF, in addition to backing me up{\r}
+Dialogue: 0,0:05:59.09,0:06:01.13,Default,,0000,0000,0000,,禁药取缔局和武器管理局 也一起参加行动\N{\fntahoma\fs10\1c&H0080FF&}are here for the drugs and the weapons.{\r}
+Dialogue: 0,0:06:01.17,0:06:04.13,Default,,0000,0000,0000,,至于你来这里是因为 市长在被判了使用可卡因罪后\N{\fntahoma\fs10\1c&H0080FF&}You're here because our mayor wants to appear tough on drugs{\r}
+Dialogue: 0,0:06:04.17,0:06:06.46,Default,,0000,0000,0000,,为了表现出取缔毒品的决心\N{\fntahoma\fs10\1c&H0080FF&}especially after his own cocaine conviction{\r}
+Dialogue: 0,0:06:06.50,0:06:09.26,Default,,0000,0000,0000,,才让你们加入我们的行动\N{\fntahoma\fs10\1c&H0080FF&}and hopes he can accomplish that by having you join us here today.{\r}
+Dialogue: 0,0:06:10.18,0:06:12.39,Default,,0000,0000,0000,,小姐 你倒挺凶的嘛\N{\fntahoma\fs10\1c&H0080FF&}You got a smart mouth, lady.{\r}
+Dialogue: 0,0:06:12.47,0:06:15.93,Default,,0000,0000,0000,,如果你不介意 我们可以继续讨论吗?\N{\fntahoma\fs10\1c&H0080FF&}If you wouldn't mind, I'd appreciate it if you'd let me continue.{\r}
+Dialogue: 0,0:06:17.26,0:06:19.32,Default,,0000,0000,0000,,好 大家看一下\N{\fntahoma\fs10\1c&H0080FF&}All right, take a look.{\r}
+Dialogue: 0,0:06:19.36,0:06:22.36,Default,,0000,0000,0000,,鲜鱼市场的后面是水\N{\fntahoma\fs10\1c&H0080FF&}Fish market. Back's on the water.{\r}
+Dialogue: 0,0:06:22.40,0:06:24.69,Default,,0000,0000,0000,,对面是毒品制造所\N{\fntahoma\fs10\1c&H0080FF&}Across the street, ground floor, is the meth lab.{\r}
+Dialogue: 0,0:06:24.77,0:06:27.19,Default,,0000,0000,0000,,"通缉犯"艾微达是爱滋病患者\N{\fntahoma\fs10\1c&H0080FF&}Evelda Drumgo's HIV positive.{\r}
+Dialogue: 0,0:06:27.27,0:06:30.70,Default,,0000,0000,0000,,紧要关头她会又抓又咬 你们要小心\N{\fntahoma\fs10\1c&H0080FF&}She will spit and bite if cornered, so you should watch it.{\r}
+Dialogue: 0,0:06:30.74,0:06:33.85,Default,,0000,0000,0000,,万一是你在媒体前送她进警车\N{\fntahoma\fs10\1c&H0080FF&}If you happen to be the one who puts her in a patrol car in front of the news cameras{\r}
+Dialogue: 0,0:06:33.86,0:06:36.50,Default,,0000,0000,0000,,柏顿 千万别碰她的头\N{\fntahoma\fs10\1c&H0080FF&}Bolton,you don't wanna push her head down.{\r}
+Dialogue: 0,0:06:36.70,0:06:39.03,Default,,0000,0000,0000,,因为她喜欢把针藏在头发里\N{\fntahoma\fs10\1c&H0080FF&}She'll likely have a needle in her hair.{\r}
+Dialogue: 0,0:06:39.12,0:06:41.92,Default,,0000,0000,0000,,最好能在室内将她拿下"公共市场"\N{\fntahoma\fs10\1c&H0080FF&}We want to take her inside the building, not out in the street.{\r}
+Dialogue: 0,0:06:42.00,0:06:44.00,Default,,0000,0000,0000,,大家尽量靠近我们的伪装车\N{\fntahoma\fs10\1c&H0080FF&}We can get closest with the van.{\r}
+Dialogue: 0,0:06:44.09,0:06:47.17,Default,,0000,0000,0000,,到时候我们从前面进攻 禁药组攻打后面\N{\fntahoma\fs10\1c&H0080FF&}If it looks good, on my signal we hit the front, DEA hits the back{\r}
+Dialogue: 0,0:06:47.25,0:06:49.25,Default,,0000,0000,0000,,请华府警探去支援禁药组\N{\fntahoma\fs10\1c&H0080FF&}DCPD backin'them up.{\r}
+Dialogue: 0,0:06:49.34,0:06:51.55,Default,,0000,0000,0000,,她的瞭望员会守在三条街前\N{\fntahoma\fs10\1c&H0080FF&}She'll have her watchers out at least three blocks around.{\r}
+Dialogue: 0,0:06:52.51,0:06:55.97,Default,,0000,0000,0000,,以便及时给她消息 所以我们不要太招摇\N{\fntahoma\fs10\1c&H0080FF&}They've tipped her before in time, so let's not make spectacles of ourselves.{\r}
+Dialogue: 0,0:07:08.02,0:07:10.56,Default,,0000,0000,0000,,-今天挺忙碌的  -没错\N{\fntahoma\fs10\1c&H0080FF&}-Pretty busy today. -I agree.{\r}
+Dialogue: 0,0:07:17.28,0:07:19.16,Default,,0000,0000,0000,,请给我杯咖啡\N{\fntahoma\fs10\1c&H0080FF&}Can I please get a cup of coffee?{\r}
+Dialogue: 0,0:07:35.93,0:07:38.22,Default,,0000,0000,0000,,-你看到了吗?  -那表示可以行动\N{\fntahoma\fs10\1c&H0080FF&}-Did you see that? -That's a roger.{\r}
+Dialogue: 0,0:07:46.90,0:07:48.35,Default,,0000,0000,0000,,嘿 近来如何?\N{\fntahoma\fs10\1c&H0080FF&}What's up, man?{\r}
+Dialogue: 0,0:07:58.36,0:07:59.78,Default,,0000,0000,0000,,该死 她出来了\N{\fntahoma\fs10\1c&H0080FF&}Goddamn it. It's her.{\r}
+Dialogue: 0,0:07:59.82,0:08:02.07,Default,,0000,0000,0000,,有三个人 都带着枪\N{\fntahoma\fs10\1c&H0080FF&}With three guys. They're all packin'.{\r}
+Dialogue: 0,0:08:02.16,0:08:05.11,Default,,0000,0000,0000,,她胸前挂着东西 是婴儿\N{\fntahoma\fs10\1c&H0080FF&}She's carryin' something. She's got a baby.{\r}
+Dialogue: 0,0:08:05.17,0:08:08.62,Default,,0000,0000,0000,,柏汉 人太多\N{\fntahoma\fs10\1c&H0080FF&}Hey, Brigham, it's too crowded.{\r}
+Dialogue: 0,0:08:08.67,0:08:10.83,Default,,0000,0000,0000,,我看取消比较好\N{\fntahoma\fs10\1c&H0080FF&}There are too many people. I say we call it off.{\r}
+Dialogue: 0,0:08:10.92,0:08:12.12,Default,,0000,0000,0000,,你说呢?\N{\fntahoma\fs10\1c&H0080FF&}What do you say?{\r}
+Dialogue: 0,0:08:12.21,0:08:14.25,Default,,0000,0000,0000,,我同意\N{\fntahoma\fs10\1c&H0080FF&}I agree.{\r}
+Dialogue: 0,0:08:14.33,0:08:16.68,Default,,0000,0000,0000,,所有单位 行动取消\N{\fntahoma\fs10\1c&H0080FF&}All units, stand down.{\r}
+Dialogue: 0,0:08:16.76,0:08:18.97,Default,,0000,0000,0000,,-威士基知道了  -柏克知道了\N{\fntahoma\fs10\1c&H0080FF&}-Whiskey team copies. -Burke copy.{\r}
+Dialogue: 0,0:08:19.05,0:08:20.97,Default,,0000,0000,0000,,这是柏顿 我要继续行动\N{\fntahoma\fs10\1c&H0080FF&}This is Bolton. Stay on target.{\r}
+Dialogue: 0,0:08:21.01,0:08:23.76,Default,,0000,0000,0000,,柏顿 我已说过取消行动\N{\fntahoma\fs10\1c&H0080FF&}I said all units stand down, Bolton, right now.{\r}
+Dialogue: 0,0:08:23.80,0:08:25.93,Default,,0000,0000,0000,,-太晚了 我们已经开始  -柏顿 请你合作\N{\fntahoma\fs10\1c&H0080FF&}-It's too late. We're movin'in. -Bolton, he said it's off.{\r}
+Dialogue: 0,0:08:26.01,0:08:27.77,Default,,0000,0000,0000,,不准行动\N{\fntahoma\fs10\1c&H0080FF&}Stand down now.{\r}
+Dialogue: 0,0:08:27.85,0:08:29.85,Default,,0000,0000,0000,,因为她胸前有婴儿 重复她有婴儿\N{\fntahoma\fs10\1c&H0080FF&}She's carrying a baby. I repeat, she's carrying a baby.{\r}
+Dialogue: 0,0:08:29.94,0:08:32.44,Default,,0000,0000,0000,,所有单位不要行动\N{\fntahoma\fs10\1c&H0080FF&}All units stand down.{\r}
+Dialogue: 0,0:08:32.48,0:08:34.52,Default,,0000,0000,0000,,-柏顿 把枪收起来  -要命 有人拿枪\N{\fntahoma\fs10\1c&H0080FF&}-Keep that gun down, Bolton. -Damn, dude got a piece.{\r}
+Dialogue: 0,0:08:34.60,0:08:36.35,Default,,0000,0000,0000,,-先杀了他  -快走!\N{\fntahoma\fs10\1c&H0080FF&}-Light his ass up. -It's a go!{\r}
+Dialogue: 0,0:08:36.44,0:08:37.90,Default,,0000,0000,0000,,调查局 快趴在地上\N{\fntahoma\fs10\1c&H0080FF&}FBI! Down on the ground!{\r}
+Dialogue: 0,0:09:20.24,0:09:21.99,Default,,0000,0000,0000,,停火!\N{\fntahoma\fs10\1c&H0080FF&}Hold it!{\r}
+Dialogue: 0,0:09:22.03,0:09:24.03,Default,,0000,0000,0000,,不要开枪\N{\fntahoma\fs10\1c&H0080FF&}Hold your fire!{\r}
+Dialogue: 0,0:09:26.03,0:09:27.36,Default,,0000,0000,0000,,别开枪!\N{\fntahoma\fs10\1c&H0080FF&}Don't!{\r}
+Dialogue: 0,0:09:30.36,0:09:32.87,Default,,0000,0000,0000,,艾微达 你出来!\N{\fntahoma\fs10\1c&H0080FF&}Evelda, get out of the car!{\r}
+Dialogue: 0,0:09:34.66,0:09:36.37,Default,,0000,0000,0000,,是史黛琳吗?\N{\fntahoma\fs10\1c&H0080FF&}Starling, is that you?{\r}
+Dialogue: 0,0:09:38.50,0:09:40.62,Default,,0000,0000,0000,,请你离开车子!\N{\fntahoma\fs10\1c&H0080FF&}Step away from the car!{\r}
+Dialogue: 0,0:09:42.21,0:09:44.34,Default,,0000,0000,0000,,把手举起来\N{\fntahoma\fs10\1c&H0080FF&}Show me your hands, Evelda.{\r}
+Dialogue: 0,0:09:46.05,0:09:49.17,Default,,0000,0000,0000,,请把手举起来\N{\fntahoma\fs10\1c&H0080FF&}Please. Show me your hands.{\r}
+Dialogue: 0,0:09:49.21,0:09:50.84,Default,,0000,0000,0000,,你近来好吗?\N{\fntahoma\fs10\1c&H0080FF&}How've you been?{\r}
+Dialogue: 0,0:09:50.88,0:09:52.59,Default,,0000,0000,0000,,别这样做\N{\fntahoma\fs10\1c&H0080FF&}Don't do this.{\r}
+Dialogue: 0,0:09:52.68,0:09:53.77,Default,,0000,0000,0000,,做什么?\N{\fntahoma\fs10\1c&H0080FF&}Do what?{\r}
+Dialogue: 0,0:10:26.05,0:10:28.30,Default,,0000,0000,0000,,好了 不会有事的\N{\fntahoma\fs10\1c&H0080FF&}It's all right. It's okay.{\r}
+Dialogue: 0,0:10:28.38,0:10:31.38,Default,,0000,0000,0000,,我知道 宝贝 你吓坏了\N{\fntahoma\fs10\1c&H0080FF&}I know, I know. Baby, I know.{\r}
+Dialogue: 0,0:10:31.42,0:10:33.92,Default,,0000,0000,0000,,别哭\N{\fntahoma\fs10\1c&H0080FF&}It's okay.{\r}
+Dialogue: 0,0:10:33.96,0:10:36.22,Default,,0000,0000,0000,,你别哭\N{\fntahoma\fs10\1c&H0080FF&}It's okay.{\r}
+Dialogue: 0,0:10:37.35,0:10:39.35,Default,,0000,0000,0000,,没事的\N{\fntahoma\fs10\1c&H0080FF&}It's okay.{\r}
+Dialogue: 0,0:10:58.12,0:11:02.42,Default,,0000,0000,0000,,今早朋友 家人和同事 聚集在阿灵顿国家公墓中\N{\fntahoma\fs10\1c&H0080FF&}Friends, family and coworkers gathered here this morning at Arlington National Cemetery{\r}
+Dialogue: 0,0:11:03.12,0:11:05.60,Default,,0000,0000,0000,,参加因公殉职的武器管制局柏汉探员的丧礼\N{\fntahoma\fs10\1c&H0080FF&}to bury BATF Agent John Brigham shot and killed in the line of duty Friday.{\r}
+Dialogue: 0,0:11:06.10,0:11:08.12,Default,,0000,0000,0000,,他享年四十岁\N{\fntahoma\fs10\1c&H0080FF&}He was 40 years old.{\r}
+Dialogue: 0,0:11:08.17,0:11:11.46,Default,,0000,0000,0000,,这场毒品突击 夺去他及另外五个人的生命\N{\fntahoma\fs10\1c&H0080FF&}This ill-fated drug raid that claimed his life and five others{\r}
+Dialogue: 0,0:11:11.54,0:11:16.00,Default,,0000,0000,0000,,这一连串的意外事件 始于德州的瓦库\N{\fntahoma\fs10\1c&H0080FF&}is the latest in a seemingly endless series of incidents{\r}
+Dialogue: 0,0:11:16.09,0:11:19.47,Default,,0000,0000,0000,,对于探员们只知使用武力 而不愿运用大脑一事\N{\fntahoma\fs10\1c&H0080FF&}in which theJustice Department and the FBI have been questioned{\r}
+Dialogue: 0,0:11:19.51,0:11:22.43,Default,,0000,0000,0000,,司法部及调查局已受到质询\N{\fntahoma\fs10\1c&H0080FF&}about their use of firepower rather than judgment.{\r}
+Dialogue: 0,0:11:22.47,0:11:26.97,Default,,0000,0000,0000,,这次的灾难是由调查局探员 史黛琳所引起\N{\fntahoma\fs10\1c&H0080FF&}This time it was FBI Special Agent Clarice Starling heading up the calamitous strike force.{\r}
+Dialogue: 0,0:11:27.05,0:11:30.65,Default,,0000,0000,0000,,十年前 为了营救 前田纳西议员的女儿凯瑟琳\N{\fntahoma\fs10\1c&H0080FF&}Agent Starling attained some measure of celebrity ten years ago{\r}
+Dialogue: 0,0:11:30.73,0:11:36.31,Default,,0000,0000,0000,,史黛琳曾经由"食人魔"汉尼拔医生的协助 得以破案\N{\fntahoma\fs10\1c&H0080FF&}when she was given information by Dr. Hannibal "The Cannibal"Lecter which led to the rescue of Catherine Martin{\r}
+Dialogue: 0,0:11:36.40,0:11:38.81,Default,,0000,0000,0000,,她因此而声名大噪\N{\fntahoma\fs10\1c&H0080FF&}daughter of the former US senator from Tennessee.{\r}
+Dialogue: 0,0:11:38.86,0:11:42.66,Default,,0000,0000,0000,,但是这个礼拜当她回复工作时 迎接她的不是表扬而是诉讼\N{\fntahoma\fs10\1c&H0080FF&}When she returns to work this week, she won't be so celebrated.{\r}
+Dialogue: 0,0:11:42.74,0:11:48.53,Default,,0000,0000,0000,,因为代表被害家属的泰福律师 将控告她误杀至死之罪\N{\fntahoma\fs10\1c&H0080FF&}Attorney Telford Higgins, representing one of the families of those slain says he will file a wrongful-death suit.{\r}
+Dialogue: 0,0:11:49.95,0:11:51.75,Default,,0000,0000,0000,,柯德!\N{\fntahoma\fs10\1c&H0080FF&}Cordell!{\r}
+Dialogue: 0,0:12:00.67,0:12:01.80,Default,,0000,0000,0000,,柯德!\N{\fntahoma\fs10\1c&H0080FF&}Cordell!{\r}
+Dialogue: 0,0:12:03.59,0:12:06.47,Default,,0000,0000,0000,,-有什么吩咐  -替我接司法部\N{\fntahoma\fs10\1c&H0080FF&}-Yes, sir. -Get me theJustice Department.{\r}
+Dialogue: 0,0:12:14.27,0:12:16.06,Default,,0000,0000,0000,,史黛琳探员?\N{\fntahoma\fs10\1c&H0080FF&}Agent Starling?{\r}
+Dialogue: 0,0:12:16.15,0:12:19.90,Default,,0000,0000,0000,,这是禁药取缔局的约翰 助理执政官诺门\N{\fntahoma\fs10\1c&H0080FF&}This is John Eldridge from DEA. Assistant Director Noonan, you know.{\r}
+Dialogue: 0,0:12:19.98,0:12:23.15,Default,,0000,0000,0000,,我们部门的拉金 他专精责任问题\N{\fntahoma\fs10\1c&H0080FF&}Larkin Wayne from our Office of Professional Responsibility.{\r}
+Dialogue: 0,0:12:23.20,0:12:25.20,Default,,0000,0000,0000,,武器管制局的包勃\N{\fntahoma\fs10\1c&H0080FF&}Bob Sneed, ATF.{\r}
+Dialogue: 0,0:12:25.28,0:12:28.49,Default,,0000,0000,0000,,市长助理班尼 还有司法部的保罗\N{\fntahoma\fs10\1c&H0080FF&}Benny Holcombe, assistant to the mayor. And Paul Krendler.{\r}
+Dialogue: 0,0:12:28.53,0:12:31.07,Default,,0000,0000,0000,,你应该认识他\N{\fntahoma\fs10\1c&H0080FF&}You know Paul. Paul's come over from Justice{\r}
+Dialogue: 0,0:12:31.16,0:12:33.67,Default,,0000,0000,0000,,他以非官方身份来协助我们\N{\fntahoma\fs10\1c&H0080FF&}unofficially, as a favor to us.{\r}
+Dialogue: 0,0:12:33.75,0:12:36.29,Default,,0000,0000,0000,,换句话说 他并不在这里\N{\fntahoma\fs10\1c&H0080FF&}In other words, he's here, and he's not here.{\r}
+Dialogue: 0,0:12:39.25,0:12:42.33,Default,,0000,0000,0000,,我想你已经看过 报纸和电视的报导吧\N{\fntahoma\fs10\1c&H0080FF&}So I take it you've seen the coverage in the papers and on television?{\r}
+Dialogue: 0,0:12:42.37,0:12:45.01,Default,,0000,0000,0000,,那些新闻和我无关\N{\fntahoma\fs10\1c&H0080FF&}I have nothing to do with the news, Mr. Krendler.{\r}
+Dialogue: 0,0:12:45.05,0:12:47.84,Default,,0000,0000,0000,,那个女人手中抱着婴儿\N{\fntahoma\fs10\1c&H0080FF&}The woman had a baby in her arms.{\r}
+Dialogue: 0,0:12:47.93,0:12:50.93,Default,,0000,0000,0000,,照片就在这里 你应该知道问题有多严重\N{\fntahoma\fs10\1c&H0080FF&}There are pictures. You could see the problem, I would think.{\r}
+Dialogue: 0,0:12:51.01,0:12:54.34,Default,,0000,0000,0000,,婴儿是在她胸前挂的婴儿袋里\N{\fntahoma\fs10\1c&H0080FF&}Not in her arms. In a carrier across her chest.{\r}
+Dialogue: 0,0:12:54.38,0:12:56.56,Default,,0000,0000,0000,,她手里拿的是冲锋枪\N{\fntahoma\fs10\1c&H0080FF&}In her arms she had a MAC-10.{\r}
+Dialogue: 0,0:12:56.64,0:12:59.73,Default,,0000,0000,0000,,我们是来帮你的\N{\fntahoma\fs10\1c&H0080FF&}Look, we're here to help you, Starling.{\r}
+Dialogue: 0,0:12:59.81,0:13:02.81,Default,,0000,0000,0000,,你这样怒气冲冲的态度 只会使事情更难办\N{\fntahoma\fs10\1c&H0080FF&}It's gonna be a hell of a lot harder to do with a combative attitude.{\r}
+Dialogue: 0,0:13:07.95,0:13:10.49,Default,,0000,0000,0000,,我能自由发言吗?\N{\fntahoma\fs10\1c&H0080FF&}Can I speak freely, Mr. Pearsall?{\r}
+Dialogue: 0,0:13:12.15,0:13:15.24,Default,,0000,0000,0000,,我是应你们的要求 来协助做这次突击的\N{\fntahoma\fs10\1c&H0080FF&}Your agency called this office to get me assigned to help you on this raid.{\r}
+Dialogue: 0,0:13:15.32,0:13:17.29,Default,,0000,0000,0000,,我的确尽力去做\N{\fntahoma\fs10\1c&H0080FF&}I tried to do that.{\r}
+Dialogue: 0,0:13:17.37,0:13:20.37,Default,,0000,0000,0000,,但有人却不遵守我所做的判断\N{\fntahoma\fs10\1c&H0080FF&}I clearly expressed my judgment and was ignored.{\r}
+Dialogue: 0,0:13:20.46,0:13:23.54,Default,,0000,0000,0000,,以致牺牲了一位好朋友探员\N{\fntahoma\fs10\1c&H0080FF&}And now a good agent and a friend is dead.{\r}
+Dialogue: 0,0:13:26.66,0:13:29.26,Default,,0000,0000,0000,,别忘了你还杀了五个人\N{\fntahoma\fs10\1c&H0080FF&}You shot and killed five people out there, Agent Starling.{\r}
+Dialogue: 0,0:13:29.34,0:13:31.55,Default,,0000,0000,0000,,难道能说这是好的判断吗?\N{\fntahoma\fs10\1c&H0080FF&}Is that how you define good judgment?{\r}
+Dialogue: 0,0:13:32.47,0:13:34.59,Default,,0000,0000,0000,,这是一场丑恶的突击\N{\fntahoma\fs10\1c&H0080FF&}This raid was an ugly mess.{\r}
+Dialogue: 0,0:13:34.67,0:13:37.80,Default,,0000,0000,0000,,我被迫在被杀\N{\fntahoma\fs10\1c&H0080FF&}I ended up in a position where I had a choice of dying{\r}
+Dialogue: 0,0:13:37.89,0:13:39.89,Default,,0000,0000,0000,,或射杀身挂婴儿的女人中做选择\N{\fntahoma\fs10\1c&H0080FF&}or shooting a woman carrying a child.{\r}
+Dialogue: 0,0:13:39.98,0:13:42.23,Default,,0000,0000,0000,,我做了选择\N{\fntahoma\fs10\1c&H0080FF&}I chose.{\r}
+Dialogue: 0,0:13:42.31,0:13:43.98,Default,,0000,0000,0000,,就是射杀她\N{\fntahoma\fs10\1c&H0080FF&}I shot her.{\r}
+Dialogue: 0,0:13:44.89,0:13:47.35,Default,,0000,0000,0000,,我杀了带着婴儿的母亲\N{\fntahoma\fs10\1c&H0080FF&}I killed a mother holding her child.{\r}
+Dialogue: 0,0:13:49.49,0:13:51.99,Default,,0000,0000,0000,,我很后悔 也恨我自己\N{\fntahoma\fs10\1c&H0080FF&}And I regret it. I resent myself for it.{\r}
+Dialogue: 0,0:13:52.07,0:13:54.57,Default,,0000,0000,0000,,对不起 现在要终止这个会议\N{\fntahoma\fs10\1c&H0080FF&}Gentlemen, I'm going to call a halt to this meeting{\r}
+Dialogue: 0,0:13:54.65,0:13:57.07,Default,,0000,0000,0000,,我会个别打电话给你们\N{\fntahoma\fs10\1c&H0080FF&}and get back to you individually by phone.{\r}
+Dialogue: 0,0:14:01.45,0:14:03.45,Default,,0000,0000,0000,,真会浪费时间\N{\fntahoma\fs10\1c&H0080FF&}That was a waste of time.{\r}
+Dialogue: 0,0:14:05.20,0:14:07.58,Default,,0000,0000,0000,,史黛琳 你居然有秘密仰慕者\N{\fntahoma\fs10\1c&H0080FF&}You have a secret admirer, Starling.{\r}
+Dialogue: 0,0:14:07.62,0:14:11.21,Default,,0000,0000,0000,,他本身不怎么样 却有身居高位的朋友\N{\fntahoma\fs10\1c&H0080FF&}He isn't much to look at, but he does have friends in high places.{\r}
+Dialogue: 0,0:14:12.30,0:14:15.13,Default,,0000,0000,0000,,你记得马森维杰吗?\N{\fntahoma\fs10\1c&H0080FF&}Remember Mason Verger?{\r}
+Dialogue: 0,0:14:15.21,0:14:17.80,Default,,0000,0000,0000,,汉尼拔的第四个被害人\N{\fntahoma\fs10\1c&H0080FF&}Lecter's fourth victim.{\r}
+Dialogue: 0,0:14:17.88,0:14:19.42,Default,,0000,0000,0000,,他很富有\N{\fntahoma\fs10\1c&H0080FF&}The rich one.{\r}
+Dialogue: 0,0:14:19.46,0:14:21.89,Default,,0000,0000,0000,,也是唯一死里逃生的人\N{\fntahoma\fs10\1c&H0080FF&}The only one that survived.{\r}
+Dialogue: 0,0:14:23.06,0:14:25.68,Default,,0000,0000,0000,,他说有些汉尼拔的新资料 但是只愿意告诉你\N{\fntahoma\fs10\1c&H0080FF&}He says he has some new information on Lecter he'll only share with you.{\r}
+Dialogue: 0,0:14:25.77,0:14:29.43,Default,,0000,0000,0000,,那是什么意思? 如有需要 就扣押文件呀\N{\fntahoma\fs10\1c&H0080FF&}What do you mean, only share it with me? You want it, seize it.{\r}
+Dialogue: 0,0:14:29.47,0:14:32.65,Default,,0000,0000,0000,,-最好别这么做  -我并没有和你讲话\N{\fntahoma\fs10\1c&H0080FF&}-I'd rather not. -I wasn't speaking to you.{\r}
+Dialogue: 0,0:14:32.73,0:14:35.23,Default,,0000,0000,0000,,当我和你讲话时 自然会看着你\N{\fntahoma\fs10\1c&H0080FF&}When I speak to you, you'll know it because I'll look at you.{\r}
+Dialogue: 0,0:14:36.98,0:14:38.48,Default,,0000,0000,0000,,为什么不这么做?\N{\fntahoma\fs10\1c&H0080FF&}Why would we rather not?{\r}
+Dialogue: 0,0:14:38.57,0:14:42.20,Default,,0000,0000,0000,,上次他因为我们把汉尼拔从 十大通缉犯中除去而打电话来\N{\fntahoma\fs10\1c&H0080FF&}The last time he called was when we took Lecter off the Ten Most Wanted List.{\r}
+Dialogue: 0,0:14:43.33,0:14:45.85,Default,,0000,0000,0000,,他很生气 我们对他说"嘿 你最好接受"\N{\fntahoma\fs10\1c&H0080FF&}He was upset about that. We said, "Hey, that's life."{\r}
+Dialogue: 0,0:14:45.87,0:14:49.37,Default,,0000,0000,0000,,他说:参议院的失察委员会"爱序山庄"\N{\fntahoma\fs10\1c&H0080FF&}He said, "This is a Senate Oversight Committee{\r}
+Dialogue: 0,0:14:49.45,0:14:50.83,Default,,0000,0000,0000,,会给你们好看的\N{\fntahoma\fs10\1c&H0080FF&}to make your life miserable."{\r}
+Dialogue: 0,0:14:50.95,0:14:53.96,Default,,0000,0000,0000,,他家族对政治上献金一向慷慨\N{\fntahoma\fs10\1c&H0080FF&}His family's political contributions may not be enough{\r}
+Dialogue: 0,0:14:54.05,0:14:55.80,Default,,0000,0000,0000,,虽然买不起参议员\N{\fntahoma\fs10\1c&H0080FF&}to buy a senator{\r}
+Dialogue: 0,0:14:55.84,0:14:57.84,Default,,0000,0000,0000,,但是绝对租得起\N{\fntahoma\fs10\1c&H0080FF&}but they are enough to rent them from time to time.{\r}
+Dialogue: 0,0:14:58.67,0:15:02.30,Default,,0000,0000,0000,,况且他若真有线索 我们又何必惹他生气\N{\fntahoma\fs10\1c&H0080FF&}There's no reason to go through that if he really does have something new.{\r}
+Dialogue: 0,0:15:04.35,0:15:08.35,Default,,0000,0000,0000,,史黛琳 其实这件事对你有利\N{\fntahoma\fs10\1c&H0080FF&}It's a good deal for you, Starling. You can't pretend it isn't.{\r}
+Dialogue: 0,0:15:09.64,0:15:11.72,Default,,0000,0000,0000,,因为你能再回去侦办知名案件\N{\fntahoma\fs10\1c&H0080FF&}Get to go back on a celebrated case.{\r}
+Dialogue: 0,0:15:11.81,0:15:15.19,Default,,0000,0000,0000,,媒体方面 我会替你去和他们交涉\N{\fntahoma\fs10\1c&H0080FF&}I'll take care of the media for your Drumgo killing.{\r}
+Dialogue: 0,0:15:15.27,0:15:16.69,Default,,0000,0000,0000,,大家都高兴\N{\fntahoma\fs10\1c&H0080FF&}Everyone's gonna be happy.{\r}
+Dialogue: 0,0:15:16.73,0:15:19.82,Default,,0000,0000,0000,,我并不高兴\N{\fntahoma\fs10\1c&H0080FF&}I'm not happy.{\r}
+Dialogue: 0,0:15:19.90,0:15:22.69,Default,,0000,0000,0000,,也许你根本就不会高兴\N{\fntahoma\fs10\1c&H0080FF&}Well, maybe you're incapable of being happy.{\r}
+Dialogue: 0,0:15:23.73,0:15:25.87,Default,,0000,0000,0000,,保罗先生\N{\fntahoma\fs10\1c&H0080FF&}Mr. Krendler{\r}
+Dialogue: 0,0:15:26.20,0:15:29.49,Default,,0000,0000,0000,,我们都知道做为一个探员 随时都有死亡的危险\N{\fntahoma\fs10\1c&H0080FF&}out on the street, you know you might take a bullet in the line of duty.{\r}
+Dialogue: 0,0:15:29.53,0:15:31.99,Default,,0000,0000,0000,,如果怕死 那就不要做\N{\fntahoma\fs10\1c&H0080FF&}You accept it or you get out.{\r}
+Dialogue: 0,0:15:32.03,0:15:33.87,Default,,0000,0000,0000,,所以我们接受这个事实\N{\fntahoma\fs10\1c&H0080FF&}You live with it.{\r}
+Dialogue: 0,0:15:33.95,0:15:36.67,Default,,0000,0000,0000,,但所不能接受的是\N{\fntahoma\fs10\1c&H0080FF&}What you don't expect or accept{\r}
+Dialogue: 0,0:15:36.75,0:15:39.42,Default,,0000,0000,0000,,你按照所受过的训练 和上级的指示去做\N{\fntahoma\fs10\1c&H0080FF&}is taking one in the back in your boss's office{\r}
+Dialogue: 0,0:15:39.50,0:15:41.67,Default,,0000,0000,0000,,而结果却背上黑锅\N{\fntahoma\fs10\1c&H0080FF&}for doing your job exactly as they've taught you.{\r}
+Dialogue: 0,0:15:41.75,0:15:43.42,Default,,0000,0000,0000,,这才叫人气愤\N{\fntahoma\fs10\1c&H0080FF&}That makes you unhappy.{\r}
+Dialogue: 0,0:15:43.50,0:15:46.89,Default,,0000,0000,0000,,史黛琳 你说得不错\N{\fntahoma\fs10\1c&H0080FF&}Of course you're right, Starling{\r}
+Dialogue: 0,0:15:46.97,0:15:49.01,Default,,0000,0000,0000,,但毕竟改变不了什么\N{\fntahoma\fs10\1c&H0080FF&}but it doesn't change anything.{\r}
+Dialogue: 0,0:15:49.05,0:15:52.26,Default,,0000,0000,0000,,它改变了一切 连我在内\N{\fntahoma\fs10\1c&H0080FF&}It changes everything. It changes me.{\r}
+Dialogue: 0,0:16:42.94,0:16:46.10,Default,,0000,0000,0000,,嗨 我叫柯德 是维杰先生的私人医生\N{\fntahoma\fs10\1c&H0080FF&}Hi, I'm Cordell Doemling, Mr. Verger's private physician.{\r}
+Dialogue: 0,0:16:46.19,0:16:47.77,Default,,0000,0000,0000,,你好\N{\fntahoma\fs10\1c&H0080FF&}How do you do?{\r}
+Dialogue: 0,0:16:47.85,0:16:51.36,Default,,0000,0000,0000,,麻烦你把车停到那边\N{\fntahoma\fs10\1c&H0080FF&}If you'd be so kind as to park down at the end.{\r}
+Dialogue: 0,0:16:56.61,0:16:59.45,Default,,0000,0000,0000,,希望你的眼睛能适应这个昏暗光线\N{\fntahoma\fs10\1c&H0080FF&}One's eyes adjust to the darkness.{\r}
+Dialogue: 0,0:17:14.88,0:17:18.13,Default,,0000,0000,0000,,维杰先生 史黛琳探员来了\N{\fntahoma\fs10\1c&H0080FF&}Mr. Verger, Agent Starling is here.{\r}
+Dialogue: 0,0:17:18.22,0:17:21.01,Default,,0000,0000,0000,,你早 维杰先生\N{\fntahoma\fs10\1c&H0080FF&}Good morning, Mr. Verger.{\r}
+Dialogue: 0,0:17:21.09,0:17:23.44,Default,,0000,0000,0000,,你开的是福特野马吗?\N{\fntahoma\fs10\1c&H0080FF&}Was that a Mustang I heard out there?{\r}
+Dialogue: 0,0:17:23.52,0:17:24.64,Default,,0000,0000,0000,,是的\N{\fntahoma\fs10\1c&H0080FF&}Yes, it was.{\r}
+Dialogue: 0,0:17:24.73,0:17:26.60,Default,,0000,0000,0000,,5000c.c.的引擎?\N{\fntahoma\fs10\1c&H0080FF&}Five-liter?{\r}
+Dialogue: 0,0:17:26.64,0:17:28.31,Default,,0000,0000,0000,,是的\N{\fntahoma\fs10\1c&H0080FF&}Yes.{\r}
+Dialogue: 0,0:17:28.39,0:17:30.81,Default,,0000,0000,0000,,那好快呀\N{\fntahoma\fs10\1c&H0080FF&}Fast.{\r}
+Dialogue: 0,0:17:30.89,0:17:33.44,Default,,0000,0000,0000,,柯德 你可以离开了\N{\fntahoma\fs10\1c&H0080FF&}Cordell, I think you can leave us now.{\r}
+Dialogue: 0,0:17:33.53,0:17:37.95,Default,,0000,0000,0000,,如果我留下来可能会有用\N{\fntahoma\fs10\1c&H0080FF&}I thought I might stay. Perhaps I could be useful.{\r}
+Dialogue: 0,0:17:37.99,0:17:42.20,Default,,0000,0000,0000,,你去看我的午餐准备得如何\N{\fntahoma\fs10\1c&H0080FF&}You could be useful seeing about my lunch.{\r}
+Dialogue: 0,0:17:46.87,0:17:50.46,Default,,0000,0000,0000,,你不介意我把麦克风 夹在你的衣服或枕头上吧\N{\fntahoma\fs10\1c&H0080FF&}I'll attach this microphone to your clothing or pillow, if that's okay.{\r}
+Dialogue: 0,0:17:50.50,0:17:52.50,Default,,0000,0000,0000,,不会的\N{\fntahoma\fs10\1c&H0080FF&}By all means.{\r}
+Dialogue: 0,0:17:57.63,0:17:59.59,Default,,0000,0000,0000,,这样会比较容易些\N{\fntahoma\fs10\1c&H0080FF&}Here, this should make it easier.{\r}
+Dialogue: 0,0:18:07.39,0:18:09.89,Default,,0000,0000,0000,,对发生在我身上的事\N{\fntahoma\fs10\1c&H0080FF&}You know, I thank God{\r}
+Dialogue: 0,0:18:09.98,0:18:11.81,Default,,0000,0000,0000,,我必须感谢上帝\N{\fntahoma\fs10\1c&H0080FF&}for what happened.{\r}
+Dialogue: 0,0:18:11.89,0:18:14.06,Default,,0000,0000,0000,,因为这是赎罪\N{\fntahoma\fs10\1c&H0080FF&}It was my salvation.{\r}
+Dialogue: 0,0:18:15.39,0:18:18.69,Default,,0000,0000,0000,,史黛琳探员 你信主吗?\N{\fntahoma\fs10\1c&H0080FF&}Have you accepted Jesus, Agent Starling?{\r}
+Dialogue: 0,0:18:18.78,0:18:21.32,Default,,0000,0000,0000,,-你有信仰吗?  -我家人信奉路德教派\N{\fntahoma\fs10\1c&H0080FF&}-Do you have faith? -I was raised Lutheran.{\r}
+Dialogue: 0,0:18:21.40,0:18:23.99,Default,,0000,0000,0000,,那不是我问的问题\N{\fntahoma\fs10\1c&H0080FF&}That's not what I asked.{\r}
+Dialogue: 0,0:18:24.07,0:18:27.50,Default,,0000,0000,0000,,这是5143690号史黛琳探员\N{\fntahoma\fs10\1c&H0080FF&}This is Special Agent Clarice Starling, 5143690{\r}
+Dialogue: 0,0:18:27.54,0:18:30.37,Default,,0000,0000,0000,,我作证在三月二十日 维杰已经发誓会说实话\N{\fntahoma\fs10\1c&H0080FF&}deposing Mason R. Verger on March 20, sworn and attested.{\r}
+Dialogue: 0,0:18:30.45,0:18:33.41,Default,,0000,0000,0000,,我想说我童年时代 在夏令营里的快乐时光\N{\fntahoma\fs10\1c&H0080FF&}I want to tell you about summer camp. It was a wonderful childhood experience.{\r}
+Dialogue: 0,0:18:33.50,0:18:36.50,Default,,0000,0000,0000,,-等会儿再谈吧  -我现在就要说\N{\fntahoma\fs10\1c&H0080FF&}-We can get to that later. -We can get to it now.{\r}
+Dialogue: 0,0:18:37.45,0:18:39.51,Default,,0000,0000,0000,,因为这些全有关联\N{\fntahoma\fs10\1c&H0080FF&}You see, it all comes to bear.{\r}
+Dialogue: 0,0:18:39.55,0:18:44.09,Default,,0000,0000,0000,,那是在我父亲所创办的基督夏令营里\N{\fntahoma\fs10\1c&H0080FF&}It was a Christian camp my father founded{\r}
+Dialogue: 0,0:18:44.17,0:18:48.68,Default,,0000,0000,0000,,它专门收容孤苦无依的孩子们\N{\fntahoma\fs10\1c&H0080FF&}for poor, unfortunate, cast-off little boys and girls{\r}
+Dialogue: 0,0:18:48.77,0:18:51.52,Default,,0000,0000,0000,,为了一块糖 他们愿做任何事\N{\fntahoma\fs10\1c&H0080FF&}who would do anything for a candy bar.{\r}
+Dialogue: 0,0:18:51.60,0:18:54.18,Default,,0000,0000,0000,,维杰先生 我对你的恋童癖不感兴趣\N{\fntahoma\fs10\1c&H0080FF&}Mr. Verger, I don't need to know about the sex offenses.{\r}
+Dialogue: 0,0:18:54.22,0:18:57.68,Default,,0000,0000,0000,,没关系 在美国律师之前我已免疫\N{\fntahoma\fs10\1c&H0080FF&}It's all right. I have immunity from the US Attorney.{\r}
+Dialogue: 0,0:18:57.77,0:18:59.94,Default,,0000,0000,0000,,甚至在上帝面前\N{\fntahoma\fs10\1c&H0080FF&}And I have immunity{\r}
+Dialogue: 0,0:19:00.03,0:19:02.98,Default,,0000,0000,0000,,我也免疫了\N{\fntahoma\fs10\1c&H0080FF&}from the risen Jesus.{\r}
+Dialogue: 0,0:19:03.07,0:19:05.61,Default,,0000,0000,0000,,因为没人禁得起巧克力糖的诱惑\N{\fntahoma\fs10\1c&H0080FF&}And nobody beats the Riz.{\r}
+Dialogue: 0,0:19:06.32,0:19:09.57,Default,,0000,0000,0000,,在法院指派汉尼拔医生给你前 你是否已经认识他?\N{\fntahoma\fs10\1c&H0080FF&}Had you ever seen Dr. Lecter before the court assigned you to him for therapy?{\r}
+Dialogue: 0,0:19:09.65,0:19:11.08,Default,,0000,0000,0000,,你指的是?\N{\fntahoma\fs10\1c&H0080FF&}What do you mean?{\r}
+Dialogue: 0,0:19:11.12,0:19:12.91,Default,,0000,0000,0000,,社交上的认识?\N{\fntahoma\fs10\1c&H0080FF&}Socially?{\r}
+Dialogue: 0,0:19:14.54,0:19:17.70,Default,,0000,0000,0000,,是的 你介意谈论它吗?\N{\fntahoma\fs10\1c&H0080FF&}It is what I mean, yes, if you don't mind talking about it.{\r}
+Dialogue: 0,0:19:17.79,0:19:19.79,Default,,0000,0000,0000,,不会 我并不引以为耻\N{\fntahoma\fs10\1c&H0080FF&}No, not at all. I'm not ashamed.{\r}
+Dialogue: 0,0:19:19.87,0:19:23.13,Default,,0000,0000,0000,,-我没这么说  -我们认识得很平常\N{\fntahoma\fs10\1c&H0080FF&}-I didn't say you should be. -No, we met conventionally{\r}
+Dialogue: 0,0:19:23.21,0:19:25.25,Default,,0000,0000,0000,,是医师和病人的关系\N{\fntahoma\fs10\1c&H0080FF&}as doctor and patient.{\r}
+Dialogue: 0,0:19:25.34,0:19:27.13,Default,,0000,0000,0000,,那他怎么会到你住处去?\N{\fntahoma\fs10\1c&H0080FF&}How did he end up at your house?{\r}
+Dialogue: 0,0:19:27.21,0:19:30.13,Default,,0000,0000,0000,,当然是我邀他的罗\N{\fntahoma\fs10\1c&H0080FF&}I invited him, of course{\r}
+Dialogue: 0,0:19:31.25,0:19:33.97,Default,,0000,0000,0000,,我邀他到我的临时住所去\N{\fntahoma\fs10\1c&H0080FF&}to my pied-a-terre.{\r}
+Dialogue: 0,0:19:34.06,0:19:38.22,Default,,0000,0000,0000,,我穿着最诱人的衣服去开门\N{\fntahoma\fs10\1c&H0080FF&}I came to the door in my nicest come-hither outfit.{\r}
+Dialogue: 0,0:19:38.31,0:19:40.31,Default,,0000,0000,0000,,因为我担心...\N{\fntahoma\fs10\1c&H0080FF&}I was concerned...{\r}
+Dialogue: 0,0:19:40.39,0:19:43.73,Default,,0000,0000,0000,,他可能会怕我\N{\fntahoma\fs10\1c&H0080FF&}that he'd be afraid of me.{\r}
+Dialogue: 0,0:19:43.77,0:19:47.19,Default,,0000,0000,0000,,但他似乎一点也不在乎\N{\fntahoma\fs10\1c&H0080FF&}But he didn't seem to be afraid of me.{\r}
+Dialogue: 0,0:19:48.32,0:19:50.44,Default,,0000,0000,0000,,现在想起来是很可疑\N{\fntahoma\fs10\1c&H0080FF&}That's almost funny now.{\r}
+Dialogue: 0,0:19:51.77,0:19:53.91,Default,,0000,0000,0000,,我把我的性玩具拿给他看\N{\fntahoma\fs10\1c&H0080FF&}I showed him my toys{\r}
+Dialogue: 0,0:19:53.95,0:19:56.91,Default,,0000,0000,0000,,其中包括那套活结装置\N{\fntahoma\fs10\1c&H0080FF&}my noose setup, among other things.{\r}
+Dialogue: 0,0:19:56.95,0:20:01.24,Default,,0000,0000,0000,,就是可以把自己吊起来 却又不会窒息的装置\N{\fntahoma\fs10\1c&H0080FF&}It's where you sort of hang yourself, but not really.{\r}
+Dialogue: 0,0:20:01.28,0:20:03.41,Default,,0000,0000,0000,,那种感觉真好 如果...\N{\fntahoma\fs10\1c&H0080FF&}It feels good while you...{\r}
+Dialogue: 0,0:20:04.29,0:20:06.34,Default,,0000,0000,0000,,反正你能想像得出来\N{\fntahoma\fs10\1c&H0080FF&}well, you know.{\r}
+Dialogue: 0,0:20:06.42,0:20:07.75,Default,,0000,0000,0000,,总归...\N{\fntahoma\fs10\1c&H0080FF&}Anyway...{\r}
+Dialogue: 0,0:20:07.79,0:20:12.34,Default,,0000,0000,0000,,-他说"维杰"  -维杰 要不要来点兴奋剂?\N{\fntahoma\fs10\1c&H0080FF&}-he said, "Mason," -Mason, would you like a popper?{\r}
+Dialogue: 0,0:20:13.29,0:20:16.80,Default,,0000,0000,0000,,我说"哇!当然要"\N{\fntahoma\fs10\1c&H0080FF&}And I said, "Would I? Oh, wow!"{\r}
+Dialogue: 0,0:20:16.89,0:20:19.60,Default,,0000,0000,0000,,药效出来后 我兴奋到极点\N{\fntahoma\fs10\1c&H0080FF&}Once that kicked in, I was flying.{\r}
+Dialogue: 0,0:20:19.68,0:20:23.60,Default,,0000,0000,0000,,他说"让我看看你那种"\N{\fntahoma\fs10\1c&H0080FF&}He said, "Mason, show me how you smile{\r}
+Dialogue: 0,0:20:23.64,0:20:27.27,Default,,0000,0000,0000,,"能赢得小孩信任的笑容"\N{\fntahoma\fs10\1c&H0080FF&}to gain the confidence of a child."{\r}
+Dialogue: 0,0:20:27.31,0:20:30.31,Default,,0000,0000,0000,,当我笑起来时...\N{\fntahoma\fs10\1c&H0080FF&}When I smiled...{\r}
+Dialogue: 0,0:20:30.36,0:20:33.31,Default,,0000,0000,0000,,他又说"我看出来 他们为什么会信任你"\N{\fntahoma\fs10\1c&H0080FF&}he said, "Oh, I see how you do it."{\r}
+Dialogue: 0,0:20:33.36,0:20:38.12,Default,,0000,0000,0000,,医生手里拿着 镜子的碎片朝我走来\N{\fntahoma\fs10\1c&H0080FF&}The good doctor approached me with a piece of broken mirror.{\r}
+Dialogue: 0,0:20:38.16,0:20:39.24,Default,,0000,0000,0000,,"试试用这个"\N{\fntahoma\fs10\1c&H0080FF&}"Try this."{\r}
+Dialogue: 0,0:20:40.45,0:20:42.24,Default,,0000,0000,0000,,把你脸上的肉割下来\N{\fntahoma\fs10\1c&H0080FF&}Try peeling off your face{\r}
+Dialogue: 0,0:20:43.07,0:20:45.78,Default,,0000,0000,0000,,然后拿去喂狗吃\N{\fntahoma\fs10\1c&H0080FF&}And feeding it to the dogs.{\r}
+Dialogue: 0,0:20:55.08,0:20:57.84,Default,,0000,0000,0000,,不行 我还是看得到你的笑容\N{\fntahoma\fs10\1c&H0080FF&}No, I can still see it.{\r}
+Dialogue: 0,0:20:57.93,0:20:59.09,Default,,0000,0000,0000,,再来一次\N{\fntahoma\fs10\1c&H0080FF&}Try again.{\r}
+Dialogue: 0,0:21:00.26,0:21:02.80,Default,,0000,0000,0000,,还是不行\N{\fntahoma\fs10\1c&H0080FF&}No, I'm afraid not.{\r}
+Dialogue: 0,0:21:02.89,0:21:05.59,Default,,0000,0000,0000,,那就是所谓的娱乐\N{\fntahoma\fs10\1c&H0080FF&}That's entertainment{\r}
+Dialogue: 0,0:21:07.76,0:21:11.27,Default,,0000,0000,0000,,说实话 当时似乎觉得很好玩\N{\fntahoma\fs10\1c&H0080FF&}Well, it seemed like a good idea at the time.{\r}
+Dialogue: 0,0:21:11.52,0:21:16.44,Default,,0000,0000,0000,,你提到最近又有新的线索\N{\fntahoma\fs10\1c&H0080FF&}You indicated to me that you'd received some kind of new information.{\r}
+Dialogue: 0,0:21:19.07,0:21:20.07,Default,,0000,0000,0000,,柯德\N{\fntahoma\fs10\1c&H0080FF&}Cordell.{\r}
+Dialogue: 0,0:21:34.79,0:21:37.17,Default,,0000,0000,0000,,这是怎么来的?\N{\fntahoma\fs10\1c&H0080FF&}Where did this come from?{\r}
+Dialogue: 0,0:21:37.21,0:21:40.33,Default,,0000,0000,0000,,寄来的 两个星期前到的\N{\fntahoma\fs10\1c&H0080FF&}Buenos Aires. I received it two weeks ago.{\r}
+Dialogue: 0,0:21:42.18,0:21:44.76,Default,,0000,0000,0000,,外面的信封呢?\N{\fntahoma\fs10\1c&H0080FF&}Where's the package it came in?{\r}
+Dialogue: 0,0:21:44.84,0:21:48.34,Default,,0000,0000,0000,,问得好 上面并没有写什么重要的东西\N{\fntahoma\fs10\1c&H0080FF&}Good question. There was nothing written on it of interest.{\r}
+Dialogue: 0,0:21:48.43,0:21:50.30,Default,,0000,0000,0000,,我们是不是扔了?\N{\fntahoma\fs10\1c&H0080FF&}Did we throw it out?{\r}
+Dialogue: 0,0:21:51.44,0:21:53.44,Default,,0000,0000,0000,,是的 实在很抱歉\N{\fntahoma\fs10\1c&H0080FF&}Yes, I'm afraid we did.{\r}
+Dialogue: 0,0:21:53.52,0:21:56.27,Default,,0000,0000,0000,,你看这个会有帮助吗?\N{\fntahoma\fs10\1c&H0080FF&}Oh, dear. You think it'll help?{\r}
+Dialogue: 0,0:21:56.35,0:21:58.35,Default,,0000,0000,0000,,但愿如此\N{\fntahoma\fs10\1c&H0080FF&}I hope so.{\r}
+Dialogue: 0,0:21:58.44,0:22:00.44,Default,,0000,0000,0000,,希望能帮你捉到他\N{\fntahoma\fs10\1c&H0080FF&}I hope it'll help you catch him{\r}
+Dialogue: 0,0:22:00.52,0:22:05.40,Default,,0000,0000,0000,,以雪你这次不名誉的耻辱\N{\fntahoma\fs10\1c&H0080FF&}to help cleanse the stigma of your recent dishonor.{\r}
+Dialogue: 0,0:22:05.45,0:22:07.11,Default,,0000,0000,0000,,谢谢你 我走了\N{\fntahoma\fs10\1c&H0080FF&}Thank you. That's all I need.{\r}
+Dialogue: 0,0:22:07.20,0:22:10.15,Default,,0000,0000,0000,,当你在收容所 和汉尼拔医生谈话时\N{\fntahoma\fs10\1c&H0080FF&}Did you find some rapport with Dr. Lecter{\r}
+Dialogue: 0,0:22:10.24,0:22:12.79,Default,,0000,0000,0000,,有没有对他产生信赖感?\N{\fntahoma\fs10\1c&H0080FF&}in your talks at the asylum?{\r}
+Dialogue: 0,0:22:14.12,0:22:16.96,Default,,0000,0000,0000,,当我在割自己脸时 曾经有过那种感觉\N{\fntahoma\fs10\1c&H0080FF&}I know I did while I was peeling.{\r}
+Dialogue: 0,0:22:17.04,0:22:19.96,Default,,0000,0000,0000,,我们是用文明的方法交换心得\N{\fntahoma\fs10\1c&H0080FF&}We exchanged information in a civil way.{\r}
+Dialogue: 0,0:22:20.04,0:22:22.54,Default,,0000,0000,0000,,但还是隔着一层玻璃\N{\fntahoma\fs10\1c&H0080FF&}But always through the glass.{\r}
+Dialogue: 0,0:22:22.62,0:22:24.22,Default,,0000,0000,0000,,是的\N{\fntahoma\fs10\1c&H0080FF&}Yes.{\r}
+Dialogue: 0,0:22:34.43,0:22:37.81,Default,,0000,0000,0000,,-你很奇怪?  -为什么?\N{\fntahoma\fs10\1c&H0080FF&}-Isn't it funny? -What's that?{\r}
+Dialogue: 0,0:22:38.52,0:22:40.52,Default,,0000,0000,0000,,你对我的脸无动于衷\N{\fntahoma\fs10\1c&H0080FF&}You can look at my face{\r}
+Dialogue: 0,0:22:41.85,0:22:45.19,Default,,0000,0000,0000,,可是一听我提上帝 反儿使你胆怯\N{\fntahoma\fs10\1c&H0080FF&}but you shied when I said the name of God.{\r}
+Dialogue: 0,0:23:11.51,0:23:14.80,Default,,0000,0000,0000,,-找到你要找的吗?  -你确定只有这些?\N{\fntahoma\fs10\1c&H0080FF&}-Finding what you want? -Are you sure this is all of it?{\r}
+Dialogue: 0,0:23:14.88,0:23:16.92,Default,,0000,0000,0000,,到目前为止 只剩这些\N{\fntahoma\fs10\1c&H0080FF&}That's all there is now.{\r}
+Dialogue: 0,0:23:16.97,0:23:20.43,Default,,0000,0000,0000,,本来不止的 可惜被人一点一点的拿走了\N{\fntahoma\fs10\1c&H0080FF&}There was more, but it's been picked over little by little over the years.{\r}
+Dialogue: 0,0:23:21.93,0:23:25.52,Default,,0000,0000,0000,,这些东西在特定市场中 能值不少钱\N{\fntahoma\fs10\1c&H0080FF&}You know, this stuff s worth a lot of money in certain circles.{\r}
+Dialogue: 0,0:23:27.19,0:23:29.48,Default,,0000,0000,0000,,就像这里的可卡因一样\N{\fntahoma\fs10\1c&H0080FF&}It's kind of like the cocaine that disappears around here{\r}
+Dialogue: 0,0:23:29.57,0:23:30.94,Default,,0000,0000,0000,,一点一点的消失掉\N{\fntahoma\fs10\1c&H0080FF&}little by little.{\r}
+Dialogue: 0,0:23:46.54,0:23:48.80,Default,,0000,0000,0000,,*巴尔的摩州立法医医院*
+Dialogue: 0,0:24:55.52,0:24:57.36,Default,,0000,0000,0000,,嘿 巴尼\N{\fntahoma\fs10\1c&H0080FF&}Hey, Barney.{\r}
+Dialogue: 0,0:24:57.40,0:24:59.77,Default,,0000,0000,0000,,还记得我吗?\N{\fntahoma\fs10\1c&H0080FF&}Remember me?{\r}
+Dialogue: 0,0:24:59.86,0:25:04.06,Default,,0000,0000,0000,,史黛琳探员 请你声明 你并没有把权益念给我听\N{\fntahoma\fs10\1c&H0080FF&}Would you agree for the record, Agent Starling that I've not been read my rights?{\r}
+Dialogue: 0,0:25:08.28,0:25:13.07,Default,,0000,0000,0000,,我声明巴尼并不知道他的权益\N{\fntahoma\fs10\1c&H0080FF&}I have not Mirandized Barney. He is unaware of his rights.{\r}
+Dialogue: 0,0:25:14.79,0:25:17.21,Default,,0000,0000,0000,,在你把汉尼拔医生 交给田纳西警局后\N{\fntahoma\fs10\1c&H0080FF&}So when you turned Dr. Lecter over to the Tennessee police{\r}
+Dialogue: 0,0:25:17.25,0:25:21.38,Default,,0000,0000,0000,,他们对他无礼 如今都死了\N{\fntahoma\fs10\1c&H0080FF&}They weren't civil to him. They're all dead now.{\r}
+Dialogue: 0,0:25:21.42,0:25:23.75,Default,,0000,0000,0000,,实际上他们只活了三天\N{\fntahoma\fs10\1c&H0080FF&}They only survived his company three days.{\r}
+Dialogue: 0,0:25:23.83,0:25:26.72,Default,,0000,0000,0000,,但是你却活了六年\N{\fntahoma\fs10\1c&H0080FF&}You survived him six years at the asylum.{\r}
+Dialogue: 0,0:25:26.76,0:25:29.93,Default,,0000,0000,0000,,你是怎么做到的? 我觉得这和礼貌无关\N{\fntahoma\fs10\1c&H0080FF&}How'd you do that? It wasn't just being civil.{\r}
+Dialogue: 0,0:25:30.01,0:25:32.76,Default,,0000,0000,0000,,有很大的关系\N{\fntahoma\fs10\1c&H0080FF&}Yes, it was.{\r}
+Dialogue: 0,0:25:32.84,0:25:36.10,Default,,0000,0000,0000,,在他逃走后 你有没有想过他可能来找你?\N{\fntahoma\fs10\1c&H0080FF&}Did you ever think, after he escaped, he might come after you?{\r}
+Dialogue: 0,0:25:36.19,0:25:37.23,Default,,0000,0000,0000,,没有\N{\fntahoma\fs10\1c&H0080FF&}No.{\r}
+Dialogue: 0,0:25:37.31,0:25:39.60,Default,,0000,0000,0000,,他曾对我说过在可能的情况下\N{\fntahoma\fs10\1c&H0080FF&}He once told me that, whenever feasible{\r}
+Dialogue: 0,0:25:39.69,0:25:41.77,Default,,0000,0000,0000,,他宁愿吃无礼之人\N{\fntahoma\fs10\1c&H0080FF&}he preferred to eat the rude.{\r}
+Dialogue: 0,0:25:41.85,0:25:45.98,Default,,0000,0000,0000,,他叫他们"无礼鼠类" 你呢?\N{\fntahoma\fs10\1c&H0080FF&}"Free-range rude," he called 'em. What about you?{\r}
+Dialogue: 0,0:25:46.06,0:25:49.41,Default,,0000,0000,0000,,你有没有想过他 或想过他可能会来找你?\N{\fntahoma\fs10\1c&H0080FF&}You ever think he might come after you? You ever think about him at all?{\r}
+Dialogue: 0,0:25:49.49,0:25:52.91,Default,,0000,0000,0000,,每天都会想上三十秒\N{\fntahoma\fs10\1c&H0080FF&}At least 30 seconds of every day. I can't help it.{\r}
+Dialogue: 0,0:25:52.95,0:25:55.82,Default,,0000,0000,0000,,就像坏习惯一样 戒也戒不掉\N{\fntahoma\fs10\1c&H0080FF&}He's always with me, like a bad habit.{\r}
+Dialogue: 0,0:25:57.16,0:26:01.12,Default,,0000,0000,0000,,他的东西 像书 纸 和图画等等都到哪里去了\N{\fntahoma\fs10\1c&H0080FF&}Do you know what happened to his stuff  his books, papers, drawings?{\r}
+Dialogue: 0,0:26:01.17,0:26:03.92,Default,,0000,0000,0000,,收容所关闭时 所有的东西都丢了\N{\fntahoma\fs10\1c&H0080FF&}Everything got thrown away when the place closed.{\r}
+Dialogue: 0,0:26:03.96,0:26:06.17,Default,,0000,0000,0000,,节省经费嘛\N{\fntahoma\fs10\1c&H0080FF&}Cutbacks.{\r}
+Dialogue: 0,0:26:06.25,0:26:09.47,Default,,0000,0000,0000,,我发现由汉尼拔医生 签名的那本烹饪之乐杂志\N{\fntahoma\fs10\1c&H0080FF&}I just found out that Dr. Lecter's signed copy of TheJoy of Cooking{\r}
+Dialogue: 0,0:26:09.55,0:26:13.09,Default,,0000,0000,0000,,最近被私人收藏家 以一万六千美金买进\N{\fntahoma\fs10\1c&H0080FF&}sold to a private collector for $16,000.{\r}
+Dialogue: 0,0:26:14.22,0:26:16.43,Default,,0000,0000,0000,,恐怕是仿造品\N{\fntahoma\fs10\1c&H0080FF&}It was probably a fake.{\r}
+Dialogue: 0,0:26:16.47,0:26:20.48,Default,,0000,0000,0000,,卖主切结书上的签名是 "费凯伦"\N{\fntahoma\fs10\1c&H0080FF&}The seller's affidavit of ownership was signed "Karen Phlox."{\r}
+Dialogue: 0,0:26:20.56,0:26:23.81,Default,,0000,0000,0000,,你应该认识她\N{\fntahoma\fs10\1c&H0080FF&}Do you know Karen Phlox? You should.{\r}
+Dialogue: 0,0:26:23.89,0:26:27.81,Default,,0000,0000,0000,,她曾替你填过工作申请表 最后签上"巴尼"\N{\fntahoma\fs10\1c&H0080FF&}She filled out your employment application, but signed it "Barney."{\r}
+Dialogue: 0,0:26:28.77,0:26:31.03,Default,,0000,0000,0000,,还有退税单也一样\N{\fntahoma\fs10\1c&H0080FF&}Same thing on your tax returns.{\r}
+Dialogue: 0,0:26:33.95,0:26:37.86,Default,,0000,0000,0000,,如果你要书 我会试着把它要回来\N{\fntahoma\fs10\1c&H0080FF&}You want the book? Maybe I can get it back.{\r}
+Dialogue: 0,0:26:37.95,0:26:42.37,Default,,0000,0000,0000,,当他攻击护士时 你曾打断 他的手臂 我要那张X光片\N{\fntahoma\fs10\1c&H0080FF&}I want the x-ray of Lecter's arm you broke in the attack on that nurse{\r}
+Dialogue: 0,0:26:42.46,0:26:44.58,Default,,0000,0000,0000,,还有其它被你拿走的东西\N{\fntahoma\fs10\1c&H0080FF&}and everything else you've got.{\r}
+Dialogue: 0,0:26:48.54,0:26:52.30,Default,,0000,0000,0000,,在夜深人静 尖叫声平息之后\N{\fntahoma\fs10\1c&H0080FF&}We used to talk about a lot of things at night{\r}
+Dialogue: 0,0:26:52.34,0:26:55.22,Default,,0000,0000,0000,,我们时常聊天\N{\fntahoma\fs10\1c&H0080FF&}after the screamin' finally died down.{\r}
+Dialogue: 0,0:26:58.88,0:27:03.35,Default,,0000,0000,0000,,有时也谈到你 你想知道他都说些什么吗?\N{\fntahoma\fs10\1c&H0080FF&}We talked about you sometimes. You wanna know what he said?{\r}
+Dialogue: 0,0:27:03.43,0:27:05.68,Default,,0000,0000,0000,,把X光片给我\N{\fntahoma\fs10\1c&H0080FF&}Go get the x-ray.{\r}
+Dialogue: 0,0:27:11.77,0:27:13.78,Default,,0000,0000,0000,,我不是个坏人\N{\fntahoma\fs10\1c&H0080FF&}I'm not a bad guy.{\r}
+Dialogue: 0,0:27:13.86,0:27:15.49,Default,,0000,0000,0000,,我没说你是坏人\N{\fntahoma\fs10\1c&H0080FF&}I didn't say you were.{\r}
+Dialogue: 0,0:27:15.53,0:27:18.03,Default,,0000,0000,0000,,奇顿医生才是坏人\N{\fntahoma\fs10\1c&H0080FF&}Dr. Chilton was a bad guy.{\r}
+Dialogue: 0,0:27:18.11,0:27:22.32,Default,,0000,0000,0000,,在你第一次访问汉尼拔医生后 他就开始录你们的谈话\N{\fntahoma\fs10\1c&H0080FF&}After your first visit, he started taping your conversations with Lecter.{\r}
+Dialogue: 0,0:27:24.75,0:27:27.33,Default,,0000,0000,0000,,它们非常有价值\N{\fntahoma\fs10\1c&H0080FF&}These are valuable.{\r}
+Dialogue: 0,0:27:32.75,0:27:34.84,Default,,0000,0000,0000,,你走吧\N{\fntahoma\fs10\1c&H0080FF&}Go on now.{\r}
+Dialogue: 0,0:27:34.88,0:27:37.30,Default,,0000,0000,0000,,你已经哀吊得够久了\N{\fntahoma\fs10\1c&H0080FF&}You've grieved long enough.{\r}
+Dialogue: 0,0:27:41.51,0:27:43.67,Default,,0000,0000,0000,,他是怎么说的?\N{\fntahoma\fs10\1c&H0080FF&}And what'd he say?{\r}
+Dialogue: 0,0:27:43.71,0:27:45.72,Default,,0000,0000,0000,,在晚上他怎么说我的?\N{\fntahoma\fs10\1c&H0080FF&}What'd he say about me late at night?{\r}
+Dialogue: 0,0:27:47.06,0:27:49.93,Default,,0000,0000,0000,,他谈到遗传和内心深处的行为\N{\fntahoma\fs10\1c&H0080FF&}He was talking about inherited, hardwired behavior.{\r}
+Dialogue: 0,0:27:50.02,0:27:52.97,Default,,0000,0000,0000,,他用鹞鸽的遗传来做比方\N{\fntahoma\fs10\1c&H0080FF&}He was using genetics in the roller pigeons as an example.{\r}
+Dialogue: 0,0:27:53.06,0:27:57.78,Default,,0000,0000,0000,,它们喜欢高高的飞到天上 然后炫耀的翻着筋斗俯冲下来\N{\fntahoma\fs10\1c&H0080FF&}They fly up in the air, roll backwards in a display, fallin' to the ground.{\r}
+Dialogue: 0,0:27:57.86,0:28:01.28,Default,,0000,0000,0000,,鹞鸽分为肤浅和深沉两种\N{\fntahoma\fs10\1c&H0080FF&}There are shallow rollers, and there are deep rollers.{\r}
+Dialogue: 0,0:28:01.36,0:28:03.36,Default,,0000,0000,0000,,但是当两只深沉鹞鸽结合后\N{\fntahoma\fs10\1c&H0080FF&}You can't breed two deep rollers{\r}
+Dialogue: 0,0:28:03.44,0:28:06.70,Default,,0000,0000,0000,,它们的后代往往会\N{\fntahoma\fs10\1c&H0080FF&}or their young, their offspring, will roll all the way down{\r}
+Dialogue: 0,0:28:06.74,0:28:09.04,Default,,0000,0000,0000,,俯冲撞地而死\N{\fntahoma\fs10\1c&H0080FF&}hit and die.{\r}
+Dialogue: 0,0:28:09.12,0:28:12.20,Default,,0000,0000,0000,,巴尼 史黛琳探员是只深沉的鹞鸽\N{\fntahoma\fs10\1c&H0080FF&}Agent Starling is a deep roller, Barney.{\r}
+Dialogue: 0,0:28:12.24,0:28:15.87,Default,,0000,0000,0000,,只希望她父母中有一个是只肤浅的鹞鸽\N{\fntahoma\fs10\1c&H0080FF&}Let us hope one of her parents was not.{\r}
+Dialogue: 0,0:28:15.91,0:28:19.63,Default,,0000,0000,0000,,你并没有离开正轨\N{\fntahoma\fs10\1c&H0080FF&}Surely the odd confluence of events hasn't escaped you, Clarice.{\r}
+Dialogue: 0,0:28:20.96,0:28:23.88,Default,,0000,0000,0000,,因为杰克在我面前向你挑战\N{\fntahoma\fs10\1c&H0080FF&}Jack Crawford dangles you in front of me{\r}
+Dialogue: 0,0:28:23.92,0:28:26.63,Default,,0000,0000,0000,,所以我才给你一些帮助\N{\fntahoma\fs10\1c&H0080FF&}then I give you a bit of help.{\r}
+Dialogue: 0,0:28:26.71,0:28:29.06,Default,,0000,0000,0000,,难道你以为是因为...\N{\fntahoma\fs10\1c&H0080FF&}Do you think it's because I like to look at you...{\r}
+Dialogue: 0,0:28:29.10,0:28:33.06,Default,,0000,0000,0000,,我喜欢边看你边想着你会有多可口吗?\N{\fntahoma\fs10\1c&H0080FF&}and imagine how good you would taste{\r}
+Dialogue: 0,0:28:33.10,0:28:35.43,Default,,0000,0000,0000,,真是这样吗?\N{\fntahoma\fs10\1c&H0080FF&}Clarice?{\r}
+Dialogue: 0,0:28:35.51,0:28:38.10,Default,,0000,0000,0000,,我不知道 难道是真的?\N{\fntahoma\fs10\1c&H0080FF&}I don't know. Is it?{\r}
+Dialogue: 0,0:28:40.27,0:28:42.82,Default,,0000,0000,0000,,我待在这个房间里已经八年\N{\fntahoma\fs10\1c&H0080FF&}I've been in this room for eight years now, Clarice.{\r}
+Dialogue: 0,0:28:43.61,0:28:46.65,Default,,0000,0000,0000,,我知道在我有生之年 他们是不会让我出去的\N{\fntahoma\fs10\1c&H0080FF&}I know they will never, ever let me out while I'm alive.{\r}
+Dialogue: 0,0:28:47.98,0:28:50.12,Default,,0000,0000,0000,,我只想能看外面的风景\N{\fntahoma\fs10\1c&H0080FF&}What I want is a view.{\r}
+Dialogue: 0,0:28:50.20,0:28:54.12,Default,,0000,0000,0000,,给我一扇窗户 让我能看到树甚至河流\N{\fntahoma\fs10\1c&H0080FF&}I want a window where I can see a tree or even water.{\r}
+Dialogue: 0,0:28:54.16,0:28:57.12,Default,,0000,0000,0000,,我想转到联邦收容所去 那样才能远离奇顿医生\N{\fntahoma\fs10\1c&H0080FF&}I want to be in a federal institution far away from Dr. Chilton.{\r}
+Dialogue: 0,0:29:10.64,0:29:14.10,Default,,0000,0000,0000,,卡波尼图书馆中的书信 可以追溯到十三世纪\N{\fntahoma\fs10\1c&H0080FF&}The Capponi correspondence goes back to the 13th century.{\r}
+Dialogue: 0,0:29:14.18,0:29:16.97,Default,,0000,0000,0000,,至于在费尔博士手中\N{\fntahoma\fs10\1c&H0080FF&}Dr. Fell might hold in his hand{\r}
+Dialogue: 0,0:29:17.05,0:29:19.10,Default,,0000,0000,0000,,他那非意大利人的手中\N{\fntahoma\fs10\1c&H0080FF&}his non-Italian hand{\r}
+Dialogue: 0,0:29:19.18,0:29:21.65,Default,,0000,0000,0000,,很可能握有但丁的真迹\N{\fntahoma\fs10\1c&H0080FF&}a note from Dante Alighieri himself.{\r}
+Dialogue: 0,0:29:21.69,0:29:24.56,Default,,0000,0000,0000,,但是他能分辨出真伪吗? 我不认为\N{\fntahoma\fs10\1c&H0080FF&}But would he recognize it? I think not.{\r}
+Dialogue: 0,0:29:25.73,0:29:29.11,Default,,0000,0000,0000,,各位 你们已经肯定 他对意大利中叶的辨认能力\N{\fntahoma\fs10\1c&H0080FF&}Gentlemen, you have examined him in medieval Italian{\r}
+Dialogue: 0,0:29:29.19,0:29:31.81,Default,,0000,0000,0000,,我也承认对一个外国人来说\N{\fntahoma\fs10\1c&H0080FF&}and I will not deny that his language is admirable{\r}
+Dialogue: 0,0:29:31.91,0:29:34.12,Default,,0000,0000,0000,,他的文字实在美妙\N{\fntahoma\fs10\1c&H0080FF&}for a straniero.{\r}
+Dialogue: 0,0:29:34.20,0:29:39.28,Default,,0000,0000,0000,,但是他是否真正具有 文艺复兴前佛罗伦斯的气质\N{\fntahoma\fs10\1c&H0080FF&}But is he acquainted with the personalities of the pre-Renaissance Firenze?{\r}
+Dialogue: 0,0:29:40.20,0:29:42.20,Default,,0000,0000,0000,,我却有所怀疑\N{\fntahoma\fs10\1c&H0080FF&}I think not.{\r}
+Dialogue: 0,0:29:42.28,0:29:44.96,Default,,0000,0000,0000,,说不定哪天在卡波尼图书馆中\N{\fntahoma\fs10\1c&H0080FF&}What if he came upon a note in the Capponi library{\r}
+Dialogue: 0,0:29:45.04,0:29:47.63,Default,,0000,0000,0000,,他会声称找到了 诗人卡瓦澄第的真迹\N{\fntahoma\fs10\1c&H0080FF&}say from Guido di Cavalcanti?{\r}
+Dialogue: 0,0:29:47.71,0:29:51.50,Default,,0000,0000,0000,,难道他真能分辨出真伪吗? 我不相信\N{\fntahoma\fs10\1c&H0080FF&}Would he recognize that? I think not.{\r}
+Dialogue: 0,0:29:51.58,0:29:54.01,Default,,0000,0000,0000,,他们还在争论吗?\N{\fntahoma\fs10\1c&H0080FF&}They're still arguing?{\r}
+Dialogue: 0,0:29:56.84,0:29:59.51,Default,,0000,0000,0000,,苏立想让他侄子做这份工作\N{\fntahoma\fs10\1c&H0080FF&}Sogliato wants the job for his nephew.{\r}
+Dialogue: 0,0:29:59.59,0:30:04.14,Default,,0000,0000,0000,,可是学者们似乎对 他们所指定的人很满意\N{\fntahoma\fs10\1c&H0080FF&}But the scholars seem satisfied with the temporary guy they appointed.{\r}
+Dialogue: 0,0:30:04.23,0:30:06.81,Default,,0000,0000,0000,,倘若他真那么精通但丁\N{\fntahoma\fs10\1c&H0080FF&}If he's such an expert on Dante{\r}
+Dialogue: 0,0:30:06.90,0:30:09.69,Default,,0000,0000,0000,,为何不让他 发表一场对但丁研究的演讲\N{\fntahoma\fs10\1c&H0080FF&}let him lecture on Dante to the Studiolo.{\r}
+Dialogue: 0,0:30:09.77,0:30:12.65,Default,,0000,0000,0000,,-好面对但丁的爱好者  -好主意\N{\fntahoma\fs10\1c&H0080FF&}-Let him face them if he can. -I look forward to it.{\r}
+Dialogue: 0,0:30:14.78,0:30:17.36,Default,,0000,0000,0000,,那就订在十四号好了\N{\fntahoma\fs10\1c&H0080FF&}Very well. On the 14th.{\r}
+Dialogue: 0,0:30:34.42,0:30:37.09,Default,,0000,0000,0000,,费尔博士吗?\N{\fntahoma\fs10\1c&H0080FF&}Dr. Fell?{\r}
+Dialogue: 0,0:30:37.18,0:30:39.93,Default,,0000,0000,0000,,我叫帕齐 是警察总部的督察\N{\fntahoma\fs10\1c&H0080FF&}Chief Inspector Rinaldo Pazzi of the questura.{\r}
+Dialogue: 0,0:30:40.09,0:30:43.55,Default,,0000,0000,0000,,督察 我能帮什么忙?\N{\fntahoma\fs10\1c&H0080FF&}Commendatore, how can I be of service?{\r}
+Dialogue: 0,0:30:43.63,0:30:50.85,Default,,0000,0000,0000,,抱歉 我在调查前任馆长 辛诺的失踪案件\N{\fntahoma\fs10\1c&H0080FF&}Sorry. I'm investigating the disappearance of your predecessor, Signor di Bonaventura.{\r}
+Dialogue: 0,0:30:50.89,0:30:53.73,Default,,0000,0000,0000,,-不知道是否...  -你这么说 好像我已做了馆长\N{\fntahoma\fs10\1c&H0080FF&}-I was wondering if...  -"Predecessor" implies I have the job.{\r}
+Dialogue: 0,0:30:53.81,0:30:57.52,Default,,0000,0000,0000,,我是希望如此 可惜他们还没决定\N{\fntahoma\fs10\1c&H0080FF&}Unfortunately, I don't. Not yet, though I am hopeful.{\r}
+Dialogue: 0,0:30:57.61,0:31:01.40,Default,,0000,0000,0000,,他们只是支薪给我 让我照顾图书馆而已\N{\fntahoma\fs10\1c&H0080FF&}They are letting me look after the library for a stipend.{\r}
+Dialogue: 0,0:31:03.20,0:31:05.36,Default,,0000,0000,0000,,以前的调查员\N{\fntahoma\fs10\1c&H0080FF&}The officers who first checked{\r}
+Dialogue: 0,0:31:05.40,0:31:09.54,Default,,0000,0000,0000,,没有找到遗书或自杀信\N{\fntahoma\fs10\1c&H0080FF&}didn't find any sort of farewell or suicide note.{\r}
+Dialogue: 0,0:31:09.58,0:31:11.12,Default,,0000,0000,0000,,希望你能...\N{\fntahoma\fs10\1c&H0080FF&}I was wondering if you...{\r}
+Dialogue: 0,0:31:11.21,0:31:14.87,Default,,0000,0000,0000,,如果我在抽屉或书中 找到任何有用的东西\N{\fntahoma\fs10\1c&H0080FF&}If I come across anything in the Capponi library stuffed in a drawer or book{\r}
+Dialogue: 0,0:31:14.91,0:31:16.87,Default,,0000,0000,0000,,一定会立刻通知你\N{\fntahoma\fs10\1c&H0080FF&}I'll call you at once.{\r}
+Dialogue: 0,0:31:18.96,0:31:20.84,Default,,0000,0000,0000,,谢谢你\N{\fntahoma\fs10\1c&H0080FF&}Thank you.{\r}
+Dialogue: 0,0:31:21.84,0:31:23.72,Default,,0000,0000,0000,,你被改派任务了\N{\fntahoma\fs10\1c&H0080FF&}You've been reassigned.{\r}
+Dialogue: 0,0:31:26.80,0:31:27.97,Default,,0000,0000,0000,,你说什么?\N{\fntahoma\fs10\1c&H0080FF&}Pardon?{\r}
+Dialogue: 0,0:31:28.05,0:31:31.48,Default,,0000,0000,0000,,我记得 你本来在调查莫斯楚的案件\N{\fntahoma\fs10\1c&H0080FF&}You were on the II Mostro case, I'm sure I read.{\r}
+Dialogue: 0,0:31:31.56,0:31:33.89,Default,,0000,0000,0000,,-没错  -现在却查这个案子\N{\fntahoma\fs10\1c&H0080FF&}-Yes, that's right. -Now you're on this.{\r}
+Dialogue: 0,0:31:33.98,0:31:36.93,Default,,0000,0000,0000,,就我所知 这不是什么大案子\N{\fntahoma\fs10\1c&H0080FF&}This is much less grand a case, I would think.{\r}
+Dialogue: 0,0:31:37.02,0:31:40.73,Default,,0000,0000,0000,,如果以知名度而言...\N{\fntahoma\fs10\1c&H0080FF&}Well, if I thought of my work in those terms{\r}
+Dialogue: 0,0:31:40.78,0:31:42.40,Default,,0000,0000,0000,,你说的不错\N{\fntahoma\fs10\1c&H0080FF&}yes, I guess I'd agree.{\r}
+Dialogue: 0,0:31:43.15,0:31:45.61,Default,,0000,0000,0000,,-调查失踪人口  -你说什么?\N{\fntahoma\fs10\1c&H0080FF&}-A missing person. -Sorry?{\r}
+Dialogue: 0,0:31:45.65,0:31:49.61,Default,,0000,0000,0000,,是因为不平等待遇 还是因为你的能力不够?\N{\fntahoma\fs10\1c&H0080FF&}Were you unfairly dismissed from the grander case, or did you deserve it?{\r}
+Dialogue: 0,0:31:55.70,0:31:58.41,Default,,0000,0000,0000,,费尔博士 让我们再回到原题\N{\fntahoma\fs10\1c&H0080FF&}Regarding this one, Dr. Fell{\r}
+Dialogue: 0,0:31:58.50,0:32:01.45,Default,,0000,0000,0000,,辛诺的私人物品 是否仍在图书馆内?\N{\fntahoma\fs10\1c&H0080FF&}are the signore's personal effects still at the Palazzo?{\r}
+Dialogue: 0,0:32:03.09,0:32:06.63,Default,,0000,0000,0000,,一共装了四大箱 还有清单\N{\fntahoma\fs10\1c&H0080FF&}Packed neatly in four cases with an inventory.{\r}
+Dialogue: 0,0:32:06.71,0:32:09.34,Default,,0000,0000,0000,,就是没有遗书\N{\fntahoma\fs10\1c&H0080FF&}Alas, no note.{\r}
+Dialogue: 0,0:32:11.92,0:32:16.35,Default,,0000,0000,0000,,我会叫人来取 谢谢你的帮忙\N{\fntahoma\fs10\1c&H0080FF&}I'll send someone over to pick them up. Thank you for your help.{\r}
+Dialogue: 0,0:32:27.15,0:32:28.94,Default,,0000,0000,0000,,嘿 谢谢你\N{\fntahoma\fs10\1c&H0080FF&}Hey, thanks.{\r}
+Dialogue: 0,0:32:30.53,0:32:32.61,Default,,0000,0000,0000,,进行的如何?有线索吗?\N{\fntahoma\fs10\1c&H0080FF&}How's it going? Any leads?{\r}
+Dialogue: 0,0:32:32.69,0:32:35.83,Default,,0000,0000,0000,,都是线索 可惜就是找不到他\N{\fntahoma\fs10\1c&H0080FF&}Yeah, they're all leads. They just don't lead to him.{\r}
+Dialogue: 0,0:32:40.54,0:32:42.54,Default,,0000,0000,0000,,真佩服你能天天和这些为伍\N{\fntahoma\fs10\1c&H0080FF&}I don't know how you live with this stuff.{\r}
+Dialogue: 0,0:32:42.62,0:32:45.09,Default,,0000,0000,0000,,天呀\N{\fntahoma\fs10\1c&H0080FF&}Oh, God.{\r}
+Dialogue: 0,0:32:45.17,0:32:47.80,Default,,0000,0000,0000,,这封是世界记录给我的恭贺函\N{\fntahoma\fs10\1c&H0080FF&}This is from the Guinness Book of World Records congratulating me{\r}
+Dialogue: 0,0:32:47.88,0:32:51.50,Default,,0000,0000,0000,,说我创下 女调查员中杀人最多的记录\N{\fntahoma\fs10\1c&H0080FF&}on being the female FBI agent who has shot and killed the most people.{\r}
+Dialogue: 0,0:33:15.07,0:33:17.07,Default,,0000,0000,0000,,能不能请你离开一下\N{\fntahoma\fs10\1c&H0080FF&}Would you excuse me, please?{\r}
+Dialogue: 0,0:33:19.08,0:33:21.33,Default,,0000,0000,0000,,没问题\N{\fntahoma\fs10\1c&H0080FF&}Sure.{\r}
+Dialogue: 0,0:33:46.68,0:33:48.14,Default,,0000,0000,0000,,亲爱的史黛琳\N{\fntahoma\fs10\1c&H0080FF&}Dear Clarice{\r}
+Dialogue: 0,0:33:49.65,0:33:53.69,Default,,0000,0000,0000,,我认真追踪你这次的受辱事件\N{\fntahoma\fs10\1c&H0080FF&}I've followed with enthusiasm the course of your disgrace and public shaming.{\r}
+Dialogue: 0,0:33:53.77,0:33:57.06,Default,,0000,0000,0000,,我对自己的受辱并不在乎\N{\fntahoma\fs10\1c&H0080FF&}My own never bothered me except for the inconvenience{\r}
+Dialogue: 0,0:33:57.15,0:33:59.02,Default,,0000,0000,0000,,只对失去自由有所不满\N{\fntahoma\fs10\1c&H0080FF&}of being incarcerated.{\r}
+Dialogue: 0,0:33:59.06,0:34:01.41,Default,,0000,0000,0000,,但你的眼界 却让我操心\N{\fntahoma\fs10\1c&H0080FF&}But you may lack perspective.{\r}
+Dialogue: 0,0:34:02.74,0:34:04.87,Default,,0000,0000,0000,,从我们在地牢中的讨论中\N{\fntahoma\fs10\1c&H0080FF&}In our discussions down in the dungeon{\r}
+Dialogue: 0,0:34:04.95,0:34:08.78,Default,,0000,0000,0000,,我发现 你那位做守夜员的父亲\N{\fntahoma\fs10\1c&H0080FF&}it was apparent to me that your father, the dead night watchman{\r}
+Dialogue: 0,0:34:08.87,0:34:11.42,Default,,0000,0000,0000,,在你心目中占有很重的份量\N{\fntahoma\fs10\1c&H0080FF&}figures largely in your value system.{\r}
+Dialogue: 0,0:34:12.96,0:34:17.25,Default,,0000,0000,0000,,当初你最得意 能将杰姆绳之以法\N{\fntahoma\fs10\1c&H0080FF&}I think your success in putting an end toJame Gumb's career as a couturier{\r}
+Dialogue: 0,0:34:17.33,0:34:21.97,Default,,0000,0000,0000,,因为你觉得 那会使你父亲引以为傲\N{\fntahoma\fs10\1c&H0080FF&}pleased you most because you could imagine your father being pleased.{\r}
+Dialogue: 0,0:34:22.05,0:34:25.89,Default,,0000,0000,0000,,可惜如今你却成了 调查局中的老鼠屎\N{\fntahoma\fs10\1c&H0080FF&}But now, alas, you're in bad odor with the FBI.{\r}
+Dialogue: 0,0:34:25.93,0:34:28.64,Default,,0000,0000,0000,,"调查局探员枪杀五人" 你父亲会不会因此\N{\fntahoma\fs10\1c&H0080FF&}Do you imagine your daddy being shamed by your disgrace?{\r}
+Dialogue: 0,0:34:28.72,0:34:30.18,Default,,0000,0000,0000,,而感到丢脸\N{\fntahoma\fs10\1c&H0080FF&}Do you see him in his plain pine box{\r}
+Dialogue: 0,0:34:30.26,0:34:33.77,Default,,0000,0000,0000,,他是否会躺在棺材中 眼见你手刃这份前途无量的工作\N{\fntahoma\fs10\1c&H0080FF&}crushed by your failure{\r}
+Dialogue: 0,0:34:33.85,0:34:37.23,Default,,0000,0000,0000,,而痛心疾首吗?\N{\fntahoma\fs10\1c&H0080FF&}the sorry, petty end of a promising career?{\r}
+Dialogue: 0,0:34:37.27,0:34:40.81,Default,,0000,0000,0000,,这份耻辱最大的影响是什么?\N{\fntahoma\fs10\1c&H0080FF&}What is worst about this humiliation, Clarice?{\r}
+Dialogue: 0,0:34:40.90,0:34:44.66,Default,,0000,0000,0000,,是因为你的失败 会影响到你父母的形象?\N{\fntahoma\fs10\1c&H0080FF&}Is it how your failure will reflect on your mommy and daddy?{\r}
+Dialogue: 0,0:34:46.11,0:34:48.91,Default,,0000,0000,0000,,还是你害怕从此以后...\N{\fntahoma\fs10\1c&H0080FF&}Is your worst fear that people will now and forever believe{\r}
+Dialogue: 0,0:34:48.95,0:34:51.99,Default,,0000,0000,0000,,人们认为他们只是 住在活动房屋中...\N{\fntahoma\fs10\1c&H0080FF&}they were indeed just good old trailer-camp{\r}
+Dialogue: 0,0:34:52.07,0:34:54.29,Default,,0000,0000,0000,,没用的穷白鬼\N{\fntahoma\fs10\1c&H0080FF&}tornado-bait white trash{\r}
+Dialogue: 0,0:34:54.37,0:34:56.71,Default,,0000,0000,0000,,而你也和他们一样?\N{\fntahoma\fs10\1c&H0080FF&}and that perhaps you are too?{\r}
+Dialogue: 0,0:34:59.87,0:35:03.00,Default,,0000,0000,0000,,顺便一提 我发现在调查局的网页上\N{\fntahoma\fs10\1c&H0080FF&}By the way, I couldn't help noticing on the FBI's rather dull web site{\r}
+Dialogue: 0,0:35:03.08,0:35:07.97,Default,,0000,0000,0000,,我居然从普通罪犯\N{\fntahoma\fs10\1c&H0080FF&}that I've been hoisted from the Bureau's archives of the common criminal{\r}
+Dialogue: 0,0:35:08.05,0:35:11.18,Default,,0000,0000,0000,,升级到十大通缉犯\N{\fntahoma\fs10\1c&H0080FF&}and elevated to the more prestigious Ten Most Wanted List.{\r}
+Dialogue: 0,0:35:12.63,0:35:16.85,Default,,0000,0000,0000,,是巧合 还是你又开始侦办我的案件?\N{\fntahoma\fs10\1c&H0080FF&}Is this coincidence, or are you back on the case?{\r}
+Dialogue: 0,0:35:16.94,0:35:20.39,Default,,0000,0000,0000,,果真如此 那好 我将从退隐的地方走出\N{\fntahoma\fs10\1c&H0080FF&}If so, goody goody, because I need to come out of retirement{\r}
+Dialogue: 0,0:35:20.48,0:35:22.89,Default,,0000,0000,0000,,再回到公众的生活中去\N{\fntahoma\fs10\1c&H0080FF&}and return to public life.{\r}
+Dialogue: 0,0:35:26.20,0:35:28.78,Default,,0000,0000,0000,,我可以想像出 你正坐在黯淡的地下室里\N{\fntahoma\fs10\1c&H0080FF&}I imagine you sitting in a dark basement room{\r}
+Dialogue: 0,0:35:28.86,0:35:31.90,Default,,0000,0000,0000,,埋首于纸堆和电脑荧光幕中\N{\fntahoma\fs10\1c&H0080FF&}bent over papers and computer screens.{\r}
+Dialogue: 0,0:35:31.99,0:35:34.03,Default,,0000,0000,0000,,我说对了吧\N{\fntahoma\fs10\1c&H0080FF&}Is that accurate?{\r}
+Dialogue: 0,0:35:34.11,0:35:38.46,Default,,0000,0000,0000,,史黛琳探员 请告诉我实话\N{\fntahoma\fs10\1c&H0080FF&}Please tell me truly, Special Agent Starling.{\r}
+Dialogue: 0,0:35:38.50,0:35:43.33,Default,,0000,0000,0000,,请珍重 你的老友 汉尼拔医生\N{\fntahoma\fs10\1c&H0080FF&}Regards, your old pal, Hannibal Lecter, MD.{\r}
+Dialogue: 0,0:35:45.04,0:35:49.30,Default,,0000,0000,0000,,附注 我看得出这不是你的本意\N{\fntahoma\fs10\1c&H0080FF&}PS: Clearly this new assignment is not your choice.{\r}
+Dialogue: 0,0:35:49.38,0:35:51.38,Default,,0000,0000,0000,,可能是某种交换\N{\fntahoma\fs10\1c&H0080FF&}Rather, I suppose, it is part of the bargain.{\r}
+Dialogue: 0,0:35:51.47,0:35:54.30,Default,,0000,0000,0000,,可是你仍然接受了\N{\fntahoma\fs10\1c&H0080FF&}But you accepted it, Clarice.{\r}
+Dialogue: 0,0:35:54.34,0:35:56.97,Default,,0000,0000,0000,,你的职责是毁灭我\N{\fntahoma\fs10\1c&H0080FF&}Yourjob is to craft my doom{\r}
+Dialogue: 0,0:35:57.05,0:35:59.85,Default,,0000,0000,0000,,所以实在不知道 在信尾该怎么祝你\N{\fntahoma\fs10\1c&H0080FF&}so I'm not sure how well I should wish you{\r}
+Dialogue: 0,0:35:59.93,0:36:02.39,Default,,0000,0000,0000,,不过我相信 我们将会有很多乐趣\N{\fntahoma\fs10\1c&H0080FF&}but I'm sure we'll have a lot of fun.{\r}
+Dialogue: 0,0:36:02.48,0:36:04.18,Default,,0000,0000,0000,,回见\N{\fntahoma\fs10\1c&H0080FF&}Ta-ta.{\r}
+Dialogue: 0,0:36:04.27,0:36:06.35,Default,,0000,0000,0000,,"汉"\N{\fntahoma\fs10\1c&H0080FF&}"H."{\r}
+Dialogue: 0,0:36:12.53,0:36:13.82,Default,,0000,0000,0000,,在信上\N{\fntahoma\fs10\1c&H0080FF&}On the letter{\r}
+Dialogue: 0,0:36:13.86,0:36:16.69,Default,,0000,0000,0000,,找到一个局部的指纹\N{\fntahoma\fs10\1c&H0080FF&}there's one partial fingerprint here.{\r}
+Dialogue: 0,0:36:16.78,0:36:19.86,Default,,0000,0000,0000,,-可是在法庭上还嫌不够  -这一定是他\N{\fntahoma\fs10\1c&H0080FF&}-Not enough to hold up in court. -I know it's him.{\r}
+Dialogue: 0,0:36:19.95,0:36:22.20,Default,,0000,0000,0000,,我只想知道他在哪里写这封信\N{\fntahoma\fs10\1c&H0080FF&}Where he was when he wrote it is what I need.{\r}
+Dialogue: 0,0:36:22.29,0:36:24.66,Default,,0000,0000,0000,,可惜从信纸上看不出来\N{\fntahoma\fs10\1c&H0080FF&}Well, the paper isn't gonna help.{\r}
+Dialogue: 0,0:36:24.70,0:36:27.66,Default,,0000,0000,0000,,其中有亚麻纤维的成份 应该属于奢侈品\N{\fntahoma\fs10\1c&H0080FF&}Yes, it's linen fibre, yes, it's on the expensive side{\r}
+Dialogue: 0,0:36:27.70,0:36:34.21,Default,,0000,0000,0000,,但是却不罕见 全球至少 有上千家店会卖这种信纸\N{\fntahoma\fs10\1c&H0080FF&}but it's not so rare that you won't find it in a thousand stationery stores throughout the world.{\r}
+Dialogue: 0,0:36:34.30,0:36:38.01,Default,,0000,0000,0000,,至于墨水和腊也是一样\N{\fntahoma\fs10\1c&H0080FF&}It's the same with the ink, and the same with the wax.{\r}
+Dialogue: 0,0:36:38.09,0:36:40.42,Default,,0000,0000,0000,,还有拉斯维加斯的邮戳\N{\fntahoma\fs10\1c&H0080FF&}And your Las Vegas postmark?{\r}
+Dialogue: 0,0:36:40.51,0:36:44.35,Default,,0000,0000,0000,,我跟你打赌 是由重寄邮件服务公司寄的\N{\fntahoma\fs10\1c&H0080FF&}You can check it out, but I'll bet you it came from a remailing service.{\r}
+Dialogue: 0,0:36:44.39,0:36:46.72,Default,,0000,0000,0000,,看来赌城是他最后的停留点\N{\fntahoma\fs10\1c&H0080FF&}Las Vegas would be the last place he'd be.{\r}
+Dialogue: 0,0:36:46.81,0:36:49.81,Default,,0000,0000,0000,,他的品味不该这么低\N{\fntahoma\fs10\1c&H0080FF&}It'd be an assault on his sense of taste.{\r}
+Dialogue: 0,0:36:56.44,0:37:00.40,Default,,0000,0000,0000,,难道你不觉得 有目光在你身上游动吗?\N{\fntahoma\fs10\1c&H0080FF&}Don't you feel eyes moving over your body, Clarice?{\r}
+Dialogue: 0,0:37:00.44,0:37:02.15,Default,,0000,0000,0000,,你当然会感觉得到\N{\fntahoma\fs10\1c&H0080FF&}I hardly see how you couldn't.{\r}
+Dialogue: 0,0:37:03.08,0:37:06.33,Default,,0000,0000,0000,,人的眼光 会在喜欢的东西上游走\N{\fntahoma\fs10\1c&H0080FF&}And don't your eyes move over the things you want?{\r}
+Dialogue: 0,0:37:07.66,0:37:09.62,Default,,0000,0000,0000,,告诉我是怎么回事\N{\fntahoma\fs10\1c&H0080FF&}All right, then. Tell me how.{\r}
+Dialogue: 0,0:37:09.70,0:37:11.04,Default,,0000,0000,0000,,不\N{\fntahoma\fs10\1c&H0080FF&}No.{\r}
+Dialogue: 0,0:37:11.08,0:37:13.25,Default,,0000,0000,0000,,现在轮到你告诉我了\N{\fntahoma\fs10\1c&H0080FF&}It's your turn to tell me, Clarice.{\r}
+Dialogue: 0,0:37:13.34,0:37:17.71,Default,,0000,0000,0000,,难道你想再骗我到那个 布满动物传染病的岛上去?\N{\fntahoma\fs10\1c&H0080FF&}You don't have any more vacations to sell on Anthrax Island.{\r}
+Dialogue: 0,0:37:17.75,0:37:19.88,Default,,0000,0000,0000,,别忘了我们这是公平交易\N{\fntahoma\fs10\1c&H0080FF&}Quid pro quo, Clarice.{\r}
+Dialogue: 0,0:37:19.96,0:37:22.80,Default,,0000,0000,0000,,我告诉你一件事 你也得告诉我一件事\N{\fntahoma\fs10\1c&H0080FF&}I tell you things, you tell me things.{\r}
+Dialogue: 0,0:37:22.88,0:37:26.26,Default,,0000,0000,0000,,不谈案子 就说你自己吧\N{\fntahoma\fs10\1c&H0080FF&}Not about this case. About yourself.{\r}
+Dialogue: 0,0:37:26.35,0:37:27.97,Default,,0000,0000,0000,,这就是公平交易\N{\fntahoma\fs10\1c&H0080FF&}Quid pro quo.{\r}
+Dialogue: 0,0:37:28.06,0:37:30.93,Default,,0000,0000,0000,,史黛琳 你愿意吗?\N{\fntahoma\fs10\1c&H0080FF&}Yes or no, Clarice?{\r}
+Dialogue: 0,0:37:42.32,0:37:44.23,Default,,0000,0000,0000,,手霜\N{\fntahoma\fs10\1c&H0080FF&}Hand cream.{\r}
+Dialogue: 0,0:37:46.12,0:37:48.53,Default,,0000,0000,0000,,其中有龙涎香\N{\fntahoma\fs10\1c&H0080FF&}Raw ambergris base.{\r}
+Dialogue: 0,0:37:49.95,0:37:52.28,Default,,0000,0000,0000,,田纳西的熏衣草\N{\fntahoma\fs10\1c&H0080FF&}Tennessee lavender.{\r}
+Dialogue: 0,0:37:53.33,0:37:55.74,Default,,0000,0000,0000,,还有一些别的东西\N{\fntahoma\fs10\1c&H0080FF&}Trace of something else.{\r}
+Dialogue: 0,0:37:57.38,0:37:58.59,Default,,0000,0000,0000,,羊毛\N{\fntahoma\fs10\1c&H0080FF&}Fleece.{\r}
+Dialogue: 0,0:37:59.59,0:38:01.46,Default,,0000,0000,0000,,不错\N{\fntahoma\fs10\1c&H0080FF&}Lovely.{\r}
+Dialogue: 0,0:38:01.54,0:38:05.42,Default,,0000,0000,0000,,-龙涎香是什么东西?  -它来自鲸鱼\N{\fntahoma\fs10\1c&H0080FF&}-What's ambergris? -Ambergris is a whale product.{\r}
+Dialogue: 0,0:38:05.50,0:38:08.35,Default,,0000,0000,0000,,虽然我们也喜欢但不准进口\N{\fntahoma\fs10\1c&H0080FF&}Alas, much as we'd like to, we can't import it.{\r}
+Dialogue: 0,0:38:08.43,0:38:11.26,Default,,0000,0000,0000,,因为这会危害到稀有动物\N{\fntahoma\fs10\1c&H0080FF&}Endangered Species Act.{\r}
+Dialogue: 0,0:38:11.30,0:38:13.64,Default,,0000,0000,0000,,-在哪些国家是合法呢?  -毫无疑问的是日本\N{\fntahoma\fs10\1c&H0080FF&}-Where isn't it illegal? -Japan, of course.{\r}
+Dialogue: 0,0:38:13.72,0:38:15.85,Default,,0000,0000,0000,,另外还有一些欧洲国家\N{\fntahoma\fs10\1c&H0080FF&}Couple of places in Europe.{\r}
+Dialogue: 0,0:38:15.93,0:38:21.48,Default,,0000,0000,0000,,我肯定在巴黎 罗马 阿姆斯特丹可以找到\N{\fntahoma\fs10\1c&H0080FF&}You'd almost certainly find it somewhere in Paris,Rome,Amsterdam.{\r}
+Dialogue: 0,0:38:21.56,0:38:22.81,Default,,0000,0000,0000,,伦敦也有可能\N{\fntahoma\fs10\1c&H0080FF&}Maybe London.{\r}
+Dialogue: 0,0:38:22.90,0:38:27.31,Default,,0000,0000,0000,,这种香味 是照客人的指示以手工合成的\N{\fntahoma\fs10\1c&H0080FF&}This bouquet was hand-engineered to someone's specifications.{\r}
+Dialogue: 0,0:38:27.40,0:38:31.16,Default,,0000,0000,0000,,-能知道是出自哪个商店吗?  -可以 我们会给你一张名单\N{\fntahoma\fs10\1c&H0080FF&}-Is there a way of knowing which shops? -Of course. We'll give you a list.{\r}
+Dialogue: 0,0:38:31.24,0:38:34.24,Default,,0000,0000,0000,,放心 不会太长\N{\fntahoma\fs10\1c&H0080FF&}It'll be short.{\r}
+Dialogue: 0,0:38:45.54,0:38:47.79,Default,,0000,0000,0000,,我需要歌剧票\N{\fntahoma\fs10\1c&H0080FF&}I need opera tickets.{\r}
+Dialogue: 0,0:38:47.88,0:38:50.34,Default,,0000,0000,0000,,我身上没有了\N{\fntahoma\fs10\1c&H0080FF&}I don't think I got any on me.{\r}
+Dialogue: 0,0:38:50.43,0:38:52.97,Default,,0000,0000,0000,,换句话说是卖光了\N{\fntahoma\fs10\1c&H0080FF&}It's sold out, whatever it's called.{\r}
+Dialogue: 0,0:38:53.05,0:38:56.93,Default,,0000,0000,0000,,是他那个年轻漂亮的太太 吵着要去看歌剧\N{\fntahoma\fs10\1c&H0080FF&}It's the pretty, young wife with the ever-open beak who needs opera tickets.{\r}
+Dialogue: 0,0:39:06.56,0:39:07.98,Default,,0000,0000,0000,,-班尼第  -什么事?\N{\fntahoma\fs10\1c&H0080FF&}-Benetti. -What?{\r}
+Dialogue: 0,0:39:08.06,0:39:09.31,Default,,0000,0000,0000,,倒带\N{\fntahoma\fs10\1c&H0080FF&}Rewind it.{\r}
+Dialogue: 0,0:39:09.40,0:39:12.36,Default,,0000,0000,0000,,不行 我正在拷贝\N{\fntahoma\fs10\1c&H0080FF&}I can't rewind it. I'm making a copy. I'm recording.{\r}
+Dialogue: 0,0:39:23.96,0:39:25.33,Default,,0000,0000,0000,,这是什么带子?\N{\fntahoma\fs10\1c&H0080FF&}What is this?{\r}
+Dialogue: 0,0:39:25.37,0:39:28.17,Default,,0000,0000,0000,,是位在斯卡拉大道上 香水店的防盗录影带\N{\fntahoma\fs10\1c&H0080FF&}Security camera from a perfume shop in Via Della Scala.{\r}
+Dialogue: 0,0:39:28.25,0:39:30.25,Default,,0000,0000,0000,,美国调查局经由国际刑警组 向我们要求的\N{\fntahoma\fs10\1c&H0080FF&}FBI, through Interpol, requested a copy.{\r}
+Dialogue: 0,0:39:30.33,0:39:32.76,Default,,0000,0000,0000,,-为什么?  -他们没说\N{\fntahoma\fs10\1c&H0080FF&}-Why? -They didn't say.{\r}
+Dialogue: 0,0:39:34.72,0:39:37.84,Default,,0000,0000,0000,,-没说?  -他们的态度很奇怪\N{\fntahoma\fs10\1c&H0080FF&}-They didn't say? -No. It was actually kind of weird.{\r}
+Dialogue: 0,0:39:37.93,0:39:40.80,Default,,0000,0000,0000,,摆明了不告诉我们\N{\fntahoma\fs10\1c&H0080FF&}They were making a point not to say.{\r}
+Dialogue: 0,0:40:44.36,0:40:47.87,Default,,0000,0000,0000,,*调查局探员史黛琳*
+Dialogue: 0,0:41:05.59,0:41:07.88,Default,,0000,0000,0000,,*联邦调查局*
+Dialogue: 0,0:41:13.60,0:41:15.18,Default,,0000,0000,0000,,*调查局十大在逃通缉犯*
+Dialogue: 0,0:41:18.68,0:41:21.44,Default,,0000,0000,0000,,*暴戾罪犯的逮捕计划*
+Dialogue: 0,0:41:21.53,0:41:24.98,Default,,0000,0000,0000,,*警告 你正企图进入联邦情报局的资料库*
+Dialogue: 0,0:41:25.07,0:41:28.11,Default,,0000,0000,0000,,-我们仍要去听歌剧吗?  -是的\N{\fntahoma\fs10\1c&H0080FF&}-Are we going to the opera? -Yes.{\r}
+Dialogue: 0,0:41:28.19,0:41:30.83,Default,,0000,0000,0000,,对不起 当然要去\N{\fntahoma\fs10\1c&H0080FF&}Sorry. Yes, we are going.{\r}
+Dialogue: 0,0:41:30.91,0:41:32.83,Default,,0000,0000,0000,,买到票了吗?\N{\fntahoma\fs10\1c&H0080FF&}You got tickets?{\r}
+Dialogue: 0,0:41:32.91,0:41:36.37,Default,,0000,0000,0000,,还没有 我正要上网查看 一定会买到\N{\fntahoma\fs10\1c&H0080FF&}No, but I will. In fact, I was just about to look here.{\r}
+Dialogue: 0,0:41:37.74,0:41:41.84,Default,,0000,0000,0000,,拜托别买得太后面 否则又看不到\N{\fntahoma\fs10\1c&H0080FF&}Please, not the back row. I would like to see it this time.{\r}
+Dialogue: 0,0:41:43.13,0:41:45.30,Default,,0000,0000,0000,,绝对不会\N{\fntahoma\fs10\1c&H0080FF&}Nowhere near the back row{\r}
+Dialogue: 0,0:41:45.34,0:41:47.71,Default,,0000,0000,0000,,这次不管多贵也要买前座\N{\fntahoma\fs10\1c&H0080FF&}no matter what the cost.{\r}
+Dialogue: 0,0:41:50.71,0:41:52.72,Default,,0000,0000,0000,,*登入*
+Dialogue: 0,0:42:07.32,0:42:09.40,Default,,0000,0000,0000,,*调查局十大在逃通缉犯*
+Dialogue: 0,0:42:28.84,0:42:30.88,Default,,0000,0000,0000,,*携带武器并且极度危险*
+Dialogue: 0,0:42:57.53,0:42:59.70,Default,,0000,0000,0000,,*汉尼拔悬赏金*
+Dialogue: 0,0:42:59.74,0:43:01.74,Default,,0000,0000,0000,,*搜寻*
+Dialogue: 0,0:43:01.82,0:43:03.82,Default,,0000,0000,0000,,*找到一个汉尼拔悬赏金*
+Dialogue: 0,0:43:03.91,0:43:06.37,Default,,0000,0000,0000,,*逮捕汉尼拔归案的悬赏金*
+Dialogue: 0,0:43:11.21,0:43:13.21,Default,,0000,0000,0000,,*汉尼拔曾是一位 出色的精神科医生*
+Dialogue: 0,0:43:13.29,0:43:15.71,Default,,0000,0000,0000,,*在1990年逃逸之后 成为搜索的焦点*
+Dialogue: 0,0:43:15.79,0:43:19.43,Default,,0000,0000,0000,,*三百万的赏金将付给 能提供线索使他归案的人*
+Dialogue: 0,0:43:21.09,0:43:28.22,Default,,0000,0000,0000,,*想提供汉尼拔线索的人 请打1-212-555-0118*
+Dialogue: 0,0:43:56.75,0:43:59.08,Default,,0000,0000,0000,,史黛琳 你有没有想过\N{\fntahoma\fs10\1c&H0080FF&}Tell me, Clarice, would you want to harm{\r}
+Dialogue: 0,0:43:59.17,0:44:01.29,Default,,0000,0000,0000,,去伤害那些迫害过你的人?\N{\fntahoma\fs10\1c&H0080FF&}those who forced you to consider it, though?{\r}
+Dialogue: 0,0:44:01.38,0:44:03.51,Default,,0000,0000,0000,,你尽管承认\N{\fntahoma\fs10\1c&H0080FF&}It's perfectly okay to admit it.{\r}
+Dialogue: 0,0:44:03.59,0:44:06.51,Default,,0000,0000,0000,,因为想向敌人挑战\N{\fntahoma\fs10\1c&H0080FF&}It's perfectly au naturel{\r}
+Dialogue: 0,0:44:06.59,0:44:08.38,Default,,0000,0000,0000,,那是人性自然的表现\N{\fntahoma\fs10\1c&H0080FF&}to want to taste the enemy.{\r}
+Dialogue: 0,0:44:23.36,0:44:25.61,Default,,0000,0000,0000,,它会使你感到愉快\N{\fntahoma\fs10\1c&H0080FF&}It just feels so good. Tell me, Clarice.{\r}
+Dialogue: 0,0:44:25.70,0:44:28.11,Default,,0000,0000,0000,,什么是你童年中 最不快乐的记忆?\N{\fntahoma\fs10\1c&H0080FF&}What is your worst memory of childhood?{\r}
+Dialogue: 0,0:44:28.15,0:44:30.78,Default,,0000,0000,0000,,-你吓了我一大跳  -需要我帮忙吗?\N{\fntahoma\fs10\1c&H0080FF&}-Jesus, Starling! -Can I help you, Mr. Krendler?{\r}
+Dialogue: 0,0:44:30.82,0:44:32.82,Default,,0000,0000,0000,,一个人坐在黑暗中干什么?\N{\fntahoma\fs10\1c&H0080FF&}What are you doing sitting there in the dark?{\r}
+Dialogue: 0,0:44:32.91,0:44:34.62,Default,,0000,0000,0000,,正想着吃人的问题\N{\fntahoma\fs10\1c&H0080FF&}Thinking about cannibalism.{\r}
+Dialogue: 0,0:44:34.71,0:44:38.62,Default,,0000,0000,0000,,司法部也在思索这个问题 你知道吗?\N{\fntahoma\fs10\1c&H0080FF&}People in Justice are thinking too. You know that?{\r}
+Dialogue: 0,0:44:38.66,0:44:40.71,Default,,0000,0000,0000,,他们在想"她到底想对 汉尼拔采取什么手段"\N{\fntahoma\fs10\1c&H0080FF&}They're thinking, " What exactly is she doing about Lecter?"{\r}
+Dialogue: 0,0:44:40.79,0:44:43.16,Default,,0000,0000,0000,,你对他爱吃人是否感到好奇?\N{\fntahoma\fs10\1c&H0080FF&}Aren't you curious why he dines on his victims?{\r}
+Dialogue: 0,0:44:43.26,0:44:45.47,Default,,0000,0000,0000,,这话是什么意思?\N{\fntahoma\fs10\1c&H0080FF&}What's the point of that?{\r}
+Dialogue: 0,0:44:45.55,0:44:47.55,Default,,0000,0000,0000,,你到底是想写小说 还是想捉贼?\N{\fntahoma\fs10\1c&H0080FF&}Are you writing a book or are you catching a crook?{\r}
+Dialogue: 0,0:44:47.63,0:44:50.84,Default,,0000,0000,0000,,为了报复那些侮辱他的人\N{\fntahoma\fs10\1c&H0080FF&}To show his contempt for those who exasperate him.{\r}
+Dialogue: 0,0:44:52.22,0:44:55.14,Default,,0000,0000,0000,,所以他才偶尔充当刽子手\N{\fntahoma\fs10\1c&H0080FF&}Or sometimes to perform a public service.{\r}
+Dialogue: 0,0:44:55.18,0:44:57.81,Default,,0000,0000,0000,,就拿横笛手班哲明为例\N{\fntahoma\fs10\1c&H0080FF&}In the case of the flutist, Benjamin Raspail{\r}
+Dialogue: 0,0:44:57.85,0:45:02.14,Default,,0000,0000,0000,,由于他供应小牛胰脏 和七百美金一瓶的蒙哈榭白酒\N{\fntahoma\fs10\1c&H0080FF&}he did it to improve the sound of the Baltimore Philharmonic Orchestra{\r}
+Dialogue: 0,0:45:02.18,0:45:05.23,Default,,0000,0000,0000,,给乐团中那些 没什么天份的横笛手享用\N{\fntahoma\fs10\1c&H0080FF&}serving the not-so-talented flute player's sweetbreads to the board{\r}
+Dialogue: 0,0:45:05.32,0:45:08.11,Default,,0000,0000,0000,,因而使 巴尔的摩交响乐团的声名大噪\N{\fntahoma\fs10\1c&H0080FF&}with a nice Montrachet at $700 a bottle.{\r}
+Dialogue: 0,0:45:09.24,0:45:11.07,Default,,0000,0000,0000,,哇!\N{\fntahoma\fs10\1c&H0080FF&}Wow.{\r}
+Dialogue: 0,0:45:11.15,0:45:14.03,Default,,0000,0000,0000,,那顿饭的开胃菜是 产自法国隆特的牡蛎\N{\fntahoma\fs10\1c&H0080FF&}That meal began with green oysters from the Gironde{\r}
+Dialogue: 0,0:45:14.11,0:45:17.41,Default,,0000,0000,0000,,接着是小牛胰脏 果汁奶冻\N{\fntahoma\fs10\1c&H0080FF&}followed by the sweetbreads, a sorbet{\r}
+Dialogue: 0,0:45:17.50,0:45:20.25,Default,,0000,0000,0000,,其他的你可以看这本美食杂志\N{\fntahoma\fs10\1c&H0080FF&}and then you can read here in Gourmet Cuisine:{\r}
+Dialogue: 0,0:45:20.33,0:45:24.08,Default,,0000,0000,0000,,"有名的黑且光泽的 蔬菜炖肉 其中材料不明"\N{\fntahoma\fs10\1c&H0080FF&}"A notable dark and glossy ragout, the constituents never determined."{\r}
+Dialogue: 0,0:45:25.37,0:45:27.05,Default,,0000,0000,0000,,我一直认为他有同性恋\N{\fntahoma\fs10\1c&H0080FF&}I always figured him for a queer.{\r}
+Dialogue: 0,0:45:27.13,0:45:29.01,Default,,0000,0000,0000,,为什么你会这么想?\N{\fntahoma\fs10\1c&H0080FF&}Why would you say that, Paul?{\r}
+Dialogue: 0,0:45:29.09,0:45:32.01,Default,,0000,0000,0000,,因为他搞的 全是艺术方面的事\N{\fntahoma\fs10\1c&H0080FF&}All this artsy-fartsy stuff.{\r}
+Dialogue: 0,0:45:32.05,0:45:36.01,Default,,0000,0000,0000,,像音乐室 茶会美食之类的 不是我多事...\N{\fntahoma\fs10\1c&H0080FF&}Chamber music, tea-party food. Not that I mean anything personal{\r}
+Dialogue: 0,0:45:36.09,0:45:39.35,Default,,0000,0000,0000,,我觉得你似乎很同情那种人\N{\fntahoma\fs10\1c&H0080FF&}if you've got a lot of sympathy for those people.{\r}
+Dialogue: 0,0:45:41.22,0:45:44.02,Default,,0000,0000,0000,,我来这里是想让你明白\N{\fntahoma\fs10\1c&H0080FF&}What I came to impress upon you, Starling{\r}
+Dialogue: 0,0:45:44.06,0:45:46.06,Default,,0000,0000,0000,,最好乖乖合作\N{\fntahoma\fs10\1c&H0080FF&}is I better see cooperation.{\r}
+Dialogue: 0,0:45:46.14,0:45:48.57,Default,,0000,0000,0000,,这案子不是你一个人的\N{\fntahoma\fs10\1c&H0080FF&}There are no little fiefdoms here.{\r}
+Dialogue: 0,0:45:48.65,0:45:51.40,Default,,0000,0000,0000,,你必须随时向我报告进展 懂吗?\N{\fntahoma\fs10\1c&H0080FF&}I want to be copied on every 302, you understand?{\r}
+Dialogue: 0,0:45:52.73,0:45:54.61,Default,,0000,0000,0000,,好好和我合作\N{\fntahoma\fs10\1c&H0080FF&}If you work with me{\r}
+Dialogue: 0,0:45:54.69,0:45:57.73,Default,,0000,0000,0000,,那么你所谓的前途就会无量\N{\fntahoma\fs10\1c&H0080FF&}then your so-called career here might improve.{\r}
+Dialogue: 0,0:45:59.24,0:46:03.41,Default,,0000,0000,0000,,否则 我不但不在你名字下划线\N{\fntahoma\fs10\1c&H0080FF&}If you don't, then all I have to do{\r}
+Dialogue: 0,0:46:03.49,0:46:06.91,Default,,0000,0000,0000,,反而把线从你名字中间划过去\N{\fntahoma\fs10\1c&H0080FF&}is draw a line through your name rather than under it{\r}
+Dialogue: 0,0:46:06.99,0:46:08.37,Default,,0000,0000,0000,,那你就前途无亮啦\N{\fntahoma\fs10\1c&H0080FF&}and it's over.{\r}
+Dialogue: 0,0:46:08.45,0:46:10.88,Default,,0000,0000,0000,,你到底想怎么样?\N{\fntahoma\fs10\1c&H0080FF&}Paul, what is it with you?{\r}
+Dialogue: 0,0:46:10.96,0:46:14.09,Default,,0000,0000,0000,,我叫你回到你太太身边去 难道错了吗?\N{\fntahoma\fs10\1c&H0080FF&}I told you to go home to your wife. That was wrong?{\r}
+Dialogue: 0,0:46:14.17,0:46:17.38,Default,,0000,0000,0000,,拜托 你少自做多情了\N{\fntahoma\fs10\1c&H0080FF&}What? Don't flatter yourself, Starling.{\r}
+Dialogue: 0,0:46:17.42,0:46:20.09,Default,,0000,0000,0000,,那是几百年前的事\N{\fntahoma\fs10\1c&H0080FF&}That was a long time ago.{\r}
+Dialogue: 0,0:46:20.18,0:46:22.85,Default,,0000,0000,0000,,我才不会记那么久的仇\N{\fntahoma\fs10\1c&H0080FF&}Why would I hold that against you?{\r}
+Dialogue: 0,0:46:24.60,0:46:26.72,Default,,0000,0000,0000,,加上...\N{\fntahoma\fs10\1c&H0080FF&}And besides...{\r}
+Dialogue: 0,0:46:26.76,0:46:29.39,Default,,0000,0000,0000,,这个城里到处都是 种田的乡下女人\N{\fntahoma\fs10\1c&H0080FF&}this town is full of corn pone, country pussy.{\r}
+Dialogue: 0,0:46:31.07,0:46:32.90,Default,,0000,0000,0000,,换句话说...\N{\fntahoma\fs10\1c&H0080FF&}That said...{\r}
+Dialogue: 0,0:46:32.94,0:46:36.07,Default,,0000,0000,0000,,如果你愿意 我现在就能奉陪\N{\fntahoma\fs10\1c&H0080FF&}I wouldn't mind having a go with you right now, if you want to reconsider.{\r}
+Dialogue: 0,0:46:36.15,0:46:39.57,Default,,0000,0000,0000,,我随时在拳击场候教 来场不穿保护衣的对打\N{\fntahoma\fs10\1c&H0080FF&}In the gym, anytime. No pads.{\r}
+Dialogue: 0,0:46:43.95,0:46:46.45,Default,,0000,0000,0000,,会不会是用普通邮件送出的?\N{\fntahoma\fs10\1c&H0080FF&}Is it possible it went out with the regular mail?{\r}
+Dialogue: 0,0:46:46.53,0:46:50.66,Default,,0000,0000,0000,,不会 是我亲手填的快递单\N{\fntahoma\fs10\1c&H0080FF&}No, I overnighted it to you. I filled out the slip myself.{\r}
+Dialogue: 0,0:46:50.74,0:46:52.92,Default,,0000,0000,0000,,而且在你委托的第二天就寄了\N{\fntahoma\fs10\1c&H0080FF&}This was the day after your request.{\r}
+Dialogue: 0,0:46:53.00,0:46:56.13,Default,,0000,0000,0000,,我实在想不通\N{\fntahoma\fs10\1c&H0080FF&}I did it right away. I don't understand what happened.{\r}
+Dialogue: 0,0:46:56.21,0:46:57.92,Default,,0000,0000,0000,,你现在该收到了\N{\fntahoma\fs10\1c&H0080FF&}You should have it by now.{\r}
+Dialogue: 0,0:46:58.00,0:47:00.29,Default,,0000,0000,0000,,还没有 能不能请你再寄一份\N{\fntahoma\fs10\1c&H0080FF&}I don't. Can you send me another one?{\r}
+Dialogue: 0,0:47:00.38,0:47:02.96,Default,,0000,0000,0000,,没问题 我会特别替你再录一份\N{\fntahoma\fs10\1c&H0080FF&}Sure, I'll make another copy especially for you.{\r}
+Dialogue: 0,0:47:03.05,0:47:06.80,Default,,0000,0000,0000,,是克莉丝探员吗? 我能叫你克莉丝吗?\N{\fntahoma\fs10\1c&H0080FF&}Agent Clarice? Is that right? Can I call you Clarice?{\r}
+Dialogue: 0,0:47:06.89,0:47:08.26,Default,,0000,0000,0000,,请叫我史黛琳探员\N{\fntahoma\fs10\1c&H0080FF&}Agent Starling.{\r}
+Dialogue: 0,0:47:08.35,0:47:11.10,Default,,0000,0000,0000,,谢谢你的帮忙 请问贵姓?\N{\fntahoma\fs10\1c&H0080FF&}I'd appreciate it. What's your name?{\r}
+Dialogue: 0,0:47:11.18,0:47:12.97,Default,,0000,0000,0000,,我叫班尼帝\N{\fntahoma\fs10\1c&H0080FF&}My name is Franco Benetti.{\r}
+Dialogue: 0,0:47:13.05,0:47:15.06,Default,,0000,0000,0000,,班尼帝探员\N{\fntahoma\fs10\1c&H0080FF&}Agent Franco Benetti.{\r}
+Dialogue: 0,0:47:15.15,0:47:17.48,Default,,0000,0000,0000,,-非常谢谢你 班尼帝探员  -不客气\N{\fntahoma\fs10\1c&H0080FF&}-Thank you very much, Agent Benetti. -Okay.{\r}
+Dialogue: 0,0:47:17.56,0:47:20.11,Default,,0000,0000,0000,,-那我明天就寄给你  -好的\N{\fntahoma\fs10\1c&H0080FF&}-So I'll send you tomorrow? -All right.{\r}
+Dialogue: 0,0:47:20.19,0:47:22.94,Default,,0000,0000,0000,,再见\N{\fntahoma\fs10\1c&H0080FF&}Bye-bye.{\r}
+Dialogue: 0,0:47:22.98,0:47:25.12,Default,,0000,0000,0000,,还是没有线索?\N{\fntahoma\fs10\1c&H0080FF&}Nothin', huh?{\r}
+Dialogue: 0,0:47:25.20,0:47:27.66,Default,,0000,0000,0000,,没有 我还在等 佛罗伦斯和伦敦的录影带\N{\fntahoma\fs10\1c&H0080FF&}Nothin' yet. Still waitin' on Florence and London.{\r}
+Dialogue: 0,0:48:04.77,0:48:08.16,Default,,0000,0000,0000,,你所拨的号码已停止使用\N{\fntahoma\fs10\1c&H0080FF&}The number you have dialed is not in service at this time.{\r}
+Dialogue: 0,0:48:08.24,0:48:10.66,Default,,0000,0000,0000,,请检查所拨的号码...\N{\fntahoma\fs10\1c&H0080FF&}Please check the number...{\r}
+Dialogue: 0,0:48:32.76,0:48:34.55,Default,,0000,0000,0000,,什么事?\N{\fntahoma\fs10\1c&H0080FF&}Yes?{\r}
+Dialogue: 0,0:48:36.01,0:48:38.88,Default,,0000,0000,0000,,我有汉尼拔的消息\N{\fntahoma\fs10\1c&H0080FF&}I have information about Hannibal Lecter.{\r}
+Dialogue: 0,0:48:38.97,0:48:41.73,Default,,0000,0000,0000,,请问你是否和警方联络过?\N{\fntahoma\fs10\1c&H0080FF&}Have you shared your information with the police, sir?{\r}
+Dialogue: 0,0:48:41.81,0:48:44.44,Default,,0000,0000,0000,,我鼓励你先这么做\N{\fntahoma\fs10\1c&H0080FF&}I'm required to encourage you to do so.{\r}
+Dialogue: 0,0:48:46.31,0:48:50.61,Default,,0000,0000,0000,,在哪种情况下才会付悬赏金\N{\fntahoma\fs10\1c&H0080FF&}Is the reward payable under special circumstances?{\r}
+Dialogue: 0,0:48:50.70,0:48:53.11,Default,,0000,0000,0000,,我建议你在采取行动之前\N{\fntahoma\fs10\1c&H0080FF&}May I suggest you contact an attorney{\r}
+Dialogue: 0,0:48:53.20,0:48:55.86,Default,,0000,0000,0000,,先和律师联络一下\N{\fntahoma\fs10\1c&H0080FF&}before taking any possibly illegal action?{\r}
+Dialogue: 0,0:48:55.90,0:48:59.03,Default,,0000,0000,0000,,在日内瓦有个律师 专精这种案件\N{\fntahoma\fs10\1c&H0080FF&}There's one in Geneva who's excellent in these matters.{\r}
+Dialogue: 0,0:48:59.11,0:49:01.11,Default,,0000,0000,0000,,我可以给你他的免费电话\N{\fntahoma\fs10\1c&H0080FF&}May I give you his toll-free number?{\r}
+Dialogue: 0,0:49:01.21,0:49:07.29,Default,,0000,0000,0000,,号码是004123317\N{\fntahoma\fs10\1c&H0080FF&}The number is 004123317.{\r}
+Dialogue: 0,0:49:07.37,0:49:09.79,Default,,0000,0000,0000,,谢谢你打电话过来\N{\fntahoma\fs10\1c&H0080FF&}Thank you for calling.{\r}
+Dialogue: 0,0:49:28.39,0:49:31.48,Default,,0000,0000,0000,,有人向我建议\N{\fntahoma\fs10\1c&H0080FF&}Yes. I was just speaking with someone who suggested{\r}
+Dialogue: 0,0:49:31.56,0:49:33.78,Default,,0000,0000,0000,,预付金是十万美金\N{\fntahoma\fs10\1c&H0080FF&}There's a $ 100,000 advance.{\r}
+Dialogue: 0,0:49:33.86,0:49:35.86,Default,,0000,0000,0000,,为了符合预付金的条件\N{\fntahoma\fs10\1c&H0080FF&}To qualify for the advance{\r}
+Dialogue: 0,0:49:35.94,0:49:39.07,Default,,0000,0000,0000,,必须先提供目标物的真实指纹\N{\fntahoma\fs10\1c&H0080FF&}a fingerprint must be provided, in situ, on an object.{\r}
+Dialogue: 0,0:49:39.11,0:49:42.57,Default,,0000,0000,0000,,等身份证实无误后\N{\fntahoma\fs10\1c&H0080FF&}Once the print has been positively identified{\r}
+Dialogue: 0,0:49:42.61,0:49:45.25,Default,,0000,0000,0000,,即将余款存入瑞士银行\N{\fntahoma\fs10\1c&H0080FF&}the balance of the money will be placed in escrow{\r}
+Dialogue: 0,0:49:45.29,0:49:47.12,Default,,0000,0000,0000,,交由代书保管\N{\fntahoma\fs10\1c&H0080FF&}at Geneve Credit Suisse{\r}
+Dialogue: 0,0:49:47.20,0:49:51.66,Default,,0000,0000,0000,,你可以随时检验 只要在24小时前通知即可\N{\fntahoma\fs10\1c&H0080FF&}and may be viewed at any time subject to 24-hour prior notification.{\r}
+Dialogue: 0,0:49:51.75,0:49:54.41,Default,,0000,0000,0000,,听法文请按二\N{\fntahoma\fs10\1c&H0080FF&}To repeat the message in French, press two.{\r}
+Dialogue: 0,0:49:54.51,0:49:57.34,Default,,0000,0000,0000,,西班牙文请按三 德文...\N{\fntahoma\fs10\1c&H0080FF&}In Spanish, press three. In German...{\r}
+Dialogue: 0,0:50:24.28,0:50:26.95,Default,,0000,0000,0000,,费尔博士 我是帕齐督察\N{\fntahoma\fs10\1c&H0080FF&}Dr. Fell, it's Inspector Pazzi.{\r}
+Dialogue: 0,0:50:26.99,0:50:29.49,Default,,0000,0000,0000,,是的 我看得见你\N{\fntahoma\fs10\1c&H0080FF&}Yes, I can see you.{\r}
+Dialogue: 0,0:50:29.58,0:50:31.29,Default,,0000,0000,0000,,请上来\N{\fntahoma\fs10\1c&H0080FF&}Come on up.{\r}
+Dialogue: 0,0:50:43.30,0:50:45.09,Default,,0000,0000,0000,,费尔博士?\N{\fntahoma\fs10\1c&H0080FF&}Dr. Fell?{\r}
+Dialogue: 0,0:50:57.06,0:50:58.39,Default,,0000,0000,0000,,费尔博士?\N{\fntahoma\fs10\1c&H0080FF&}Dr. Fell?{\r}
+Dialogue: 0,0:51:05.48,0:51:06.73,Default,,0000,0000,0000,,费尔博士?\N{\fntahoma\fs10\1c&H0080FF&}Dr. Fell?{\r}
+Dialogue: 0,0:51:24.13,0:51:26.34,Default,,0000,0000,0000,,照张相\N{\fntahoma\fs10\1c&H0080FF&}Snap.{\r}
+Dialogue: 0,0:51:26.42,0:51:28.88,Default,,0000,0000,0000,,我应该嘱咐你多带个人来\N{\fntahoma\fs10\1c&H0080FF&}I should have encouraged you to bring someone along.{\r}
+Dialogue: 0,0:51:28.96,0:51:30.96,Default,,0000,0000,0000,,箱子很重\N{\fntahoma\fs10\1c&H0080FF&}The cases are on the heavy side.{\r}
+Dialogue: 0,0:51:31.05,0:51:33.43,Default,,0000,0000,0000,,也许要请你帮忙\N{\fntahoma\fs10\1c&H0080FF&}Maybe you could help me with them.{\r}
+Dialogue: 0,0:51:34.76,0:51:37.30,Default,,0000,0000,0000,,只要搬到楼下就好\N{\fntahoma\fs10\1c&H0080FF&}Just down the stairs, I mean.{\r}
+Dialogue: 0,0:51:39.26,0:51:41.10,Default,,0000,0000,0000,,好的\N{\fntahoma\fs10\1c&H0080FF&}Yeah.{\r}
+Dialogue: 0,0:51:41.18,0:51:44.02,Default,,0000,0000,0000,,这边走\N{\fntahoma\fs10\1c&H0080FF&}This way.{\r}
+Dialogue: 0,0:51:44.06,0:51:46.48,Default,,0000,0000,0000,,就在这儿\N{\fntahoma\fs10\1c&H0080FF&}Here we are.{\r}
+Dialogue: 0,0:51:49.94,0:51:52.62,Default,,0000,0000,0000,,-那是清单吗?  -是的\N{\fntahoma\fs10\1c&H0080FF&}-Is that the inventory? -Yes.{\r}
+Dialogue: 0,0:51:54.74,0:51:57.78,Default,,0000,0000,0000,,-我能看吗?  -当然可以\N{\fntahoma\fs10\1c&H0080FF&}-May I see it? -Of course.{\r}
+Dialogue: 0,0:52:07.42,0:52:12.67,Default,,0000,0000,0000,,你应该是帕齐家族之后\N{\fntahoma\fs10\1c&H0080FF&}You are a Pazzi of the Pazzi family, I think.{\r}
+Dialogue: 0,0:52:13.84,0:52:18.30,Default,,0000,0000,0000,,在维琪奥王宫被吊死的 就是你的祖先\N{\fntahoma\fs10\1c&H0080FF&}Wasn't it at the Palazzo Vecchio your ancestor was hanged?{\r}
+Dialogue: 0,0:52:18.39,0:52:20.05,Default,,0000,0000,0000,,他叫范斯库帕齐\N{\fntahoma\fs10\1c&H0080FF&}Francesco de' Pazzi.{\r}
+Dialogue: 0,0:52:20.14,0:52:23.51,Default,,0000,0000,0000,,脖子上绑着套索 裸体从窗口中被抛出去\N{\fntahoma\fs10\1c&H0080FF&}Yes, thrown naked with a noose around his neck from a window.{\r}
+Dialogue: 0,0:52:24.85,0:52:27.31,Default,,0000,0000,0000,,在大主教的身边\N{\fntahoma\fs10\1c&H0080FF&}Writhing and kicking alongside the archbishop{\r}
+Dialogue: 0,0:52:27.40,0:52:30.40,Default,,0000,0000,0000,,碰撞着冰冷的墙壁 全身扭动挣扎而死\N{\fntahoma\fs10\1c&H0080FF&}against the cold stone wall.{\r}
+Dialogue: 0,0:52:30.48,0:52:33.60,Default,,0000,0000,0000,,前几天 我在图书馆中\N{\fntahoma\fs10\1c&H0080FF&}In fact, I found a very nice rendering of it{\r}
+Dialogue: 0,0:52:33.69,0:52:36.45,Default,,0000,0000,0000,,找到了相关的艺术文献\N{\fntahoma\fs10\1c&H0080FF&}here in the library the other day.{\r}
+Dialogue: 0,0:52:36.53,0:52:40.20,Default,,0000,0000,0000,,如果你喜欢 我可以偷偷给你\N{\fntahoma\fs10\1c&H0080FF&}If you like, perhaps I could sneak it out for you.{\r}
+Dialogue: 0,0:52:41.61,0:52:44.41,Default,,0000,0000,0000,,这么做的话...\N{\fntahoma\fs10\1c&H0080FF&}I would think that might jeopardize your chances{\r}
+Dialogue: 0,0:52:44.45,0:52:47.46,Default,,0000,0000,0000,,可能会影响到你做馆长的机会\N{\fntahoma\fs10\1c&H0080FF&}for permanent appointment to the curatorship.{\r}
+Dialogue: 0,0:52:47.54,0:52:49.54,Default,,0000,0000,0000,,除非你去告密\N{\fntahoma\fs10\1c&H0080FF&}Only if you told.{\r}
+Dialogue: 0,0:52:50.92,0:52:53.92,Default,,0000,0000,0000,,他到底犯了什么罪?\N{\fntahoma\fs10\1c&H0080FF&}Remind me  what was his crime?{\r}
+Dialogue: 0,0:52:54.00,0:52:56.75,Default,,0000,0000,0000,,他被控杀死朱利亚诺梅迪奇\N{\fntahoma\fs10\1c&H0080FF&}He was accused of killing Giuliano de' Medici.{\r}
+Dialogue: 0,0:52:56.84,0:52:58.13,Default,,0000,0000,0000,,不公正吗?\N{\fntahoma\fs10\1c&H0080FF&}Unjustly?{\r}
+Dialogue: 0,0:52:58.22,0:53:01.97,Default,,0000,0000,0000,,不 应该是公正的\N{\fntahoma\fs10\1c&H0080FF&}No, I don't think so.{\r}
+Dialogue: 0,0:53:02.05,0:53:05.01,Default,,0000,0000,0000,,那么说来 他是罪有应得\N{\fntahoma\fs10\1c&H0080FF&}Then he wasn't just accused. He did it. He was guilty.{\r}
+Dialogue: 0,0:53:05.09,0:53:09.44,Default,,0000,0000,0000,,我想就算在五百年后的今天\N{\fntahoma\fs10\1c&H0080FF&}I think that would make living in Florence with the name Pazzi{\r}
+Dialogue: 0,0:53:09.48,0:53:12.69,Default,,0000,0000,0000,,你仍会为 祖先的罪行而感到困扰\N{\fntahoma\fs10\1c&H0080FF&}uncomfortable, even 500 years later.{\r}
+Dialogue: 0,0:53:13.81,0:53:15.94,Default,,0000,0000,0000,,这倒不会\N{\fntahoma\fs10\1c&H0080FF&}Not really.{\r}
+Dialogue: 0,0:53:16.02,0:53:19.49,Default,,0000,0000,0000,,其实在今天之前\N{\fntahoma\fs10\1c&H0080FF&}In fact, I can't remember the last time{\r}
+Dialogue: 0,0:53:19.57,0:53:23.20,Default,,0000,0000,0000,,除了你根本就没人提过\N{\fntahoma\fs10\1c&H0080FF&}before today{\r}
+Dialogue: 0,0:53:31.16,0:53:34.79,Default,,0000,0000,0000,,通常人们 不会把他的想法说出来\N{\fntahoma\fs10\1c&H0080FF&}People don't always tell you what they're thinking.{\r}
+Dialogue: 0,0:53:34.83,0:53:37.12,Default,,0000,0000,0000,,只是会确实做到\N{\fntahoma\fs10\1c&H0080FF&}They just see to it you don't{\r}
+Dialogue: 0,0:53:37.16,0:53:40.26,Default,,0000,0000,0000,,不让你出人头地而已\N{\fntahoma\fs10\1c&H0080FF&}advance in life.{\r}
+Dialogue: 0,0:53:44.01,0:53:46.67,Default,,0000,0000,0000,,对不起 请别介意\N{\fntahoma\fs10\1c&H0080FF&}I'm sorry, Commendatore.{\r}
+Dialogue: 0,0:53:46.76,0:53:49.34,Default,,0000,0000,0000,,我常想什么 就说什么\N{\fntahoma\fs10\1c&H0080FF&}I too often say what I'm thinking.{\r}
+Dialogue: 0,0:53:51.31,0:53:53.23,Default,,0000,0000,0000,,我马上就回来帮你搬\N{\fntahoma\fs10\1c&H0080FF&}I'll be right back to help you.{\r}
+Dialogue: 0,0:54:07.74,0:54:12.66,Default,,0000,0000,0000,,你所待的房间 是建造在十五世纪\N{\fntahoma\fs10\1c&H0080FF&}You know, the room you're standing in was built in the 15th century.{\r}
+Dialogue: 0,0:54:12.70,0:54:14.50,Default,,0000,0000,0000,,很美!\N{\fntahoma\fs10\1c&H0080FF&}It's beautiful.{\r}
+Dialogue: 0,0:54:15.66,0:54:17.50,Default,,0000,0000,0000,,的确不错\N{\fntahoma\fs10\1c&H0080FF&}Yes, it is.{\r}
+Dialogue: 0,0:54:17.54,0:54:19.75,Default,,0000,0000,0000,,只可惜 我在想...\N{\fntahoma\fs10\1c&H0080FF&}Unfortunately, I think...{\r}
+Dialogue: 0,0:54:19.83,0:54:23.80,Default,,0000,0000,0000,,暖气系统 可能也是那时候建造的\N{\fntahoma\fs10\1c&H0080FF&}the heating system was installed about the same time.{\r}
+Dialogue: 0,0:54:25.05,0:54:28.21,Default,,0000,0000,0000,,-那真不幸  -的确\N{\fntahoma\fs10\1c&H0080FF&}-That's a pity. -Yes.{\r}
+Dialogue: 0,0:54:30.17,0:54:33.38,Default,,0000,0000,0000,,好吧 咱们把它们拿下去\N{\fntahoma\fs10\1c&H0080FF&}Okeydokey. Let's drag these down.{\r}
+Dialogue: 0,0:54:34.27,0:54:36.97,Default,,0000,0000,0000,,这大概和尸体一样重\N{\fntahoma\fs10\1c&H0080FF&}Must be as heavy as bodies.{\r}
+Dialogue: 0,0:55:06.46,0:55:09.09,Default,,0000,0000,0000,,-这一套多少钱?  -八千里拉\N{\fntahoma\fs10\1c&H0080FF&}-And the set? -Eight thousand.{\r}
+Dialogue: 0,0:55:09.17,0:55:10.55,Default,,0000,0000,0000,,好\N{\fntahoma\fs10\1c&H0080FF&}Okay.{\r}
+Dialogue: 0,0:55:11.42,0:55:14.38,Default,,0000,0000,0000,,喂 这个要多少钱?\N{\fntahoma\fs10\1c&H0080FF&}Hey, how much is this?{\r}
+Dialogue: 0,0:55:14.46,0:55:16.76,Default,,0000,0000,0000,,-五万里拉  -我买了\N{\fntahoma\fs10\1c&H0080FF&}-Fifty thousand. -I'll take it.{\r}
+Dialogue: 0,0:55:40.62,0:55:42.12,Default,,0000,0000,0000,,干得不错嘛\N{\fntahoma\fs10\1c&H0080FF&}Well done.{\r}
+Dialogue: 0,0:55:50.42,0:55:54.63,Default,,0000,0000,0000,,当你要偷他的皮夹时 他就会握住你的手腕\N{\fntahoma\fs10\1c&H0080FF&}When you go for his wallet, he'll catch you by the wrist.{\r}
+Dialogue: 0,0:55:54.71,0:55:56.79,Default,,0000,0000,0000,,督察 这种事我干过好几次\N{\fntahoma\fs10\1c&H0080FF&}I have done this a few times, Inspector.{\r}
+Dialogue: 0,0:55:56.88,0:55:58.88,Default,,0000,0000,0000,,这次不一样\N{\fntahoma\fs10\1c&H0080FF&}Not like this.{\r}
+Dialogue: 0,0:55:59.72,0:56:03.30,Default,,0000,0000,0000,,如果手镯上没有清晰的指纹\N{\fntahoma\fs10\1c&H0080FF&}If there isn't a clean print on the bracelet{\r}
+Dialogue: 0,0:56:03.39,0:56:06.68,Default,,0000,0000,0000,,那么整个夏天 就请你到牢里去乘凉\N{\fntahoma\fs10\1c&H0080FF&}you'll spend the summer in a cell at the Sollicciano.{\r}
+Dialogue: 0,0:56:08.93,0:56:11.27,Default,,0000,0000,0000,,把手镯给我\N{\fntahoma\fs10\1c&H0080FF&}Give me the bracelet.{\r}
+Dialogue: 0,0:56:11.94,0:56:13.90,Default,,0000,0000,0000,,先把你的脏手洗干净\N{\fntahoma\fs10\1c&H0080FF&}Wash your fucking hands.{\r}
+Dialogue: 0,0:56:23.91,0:56:25.99,Default,,0000,0000,0000,,他来啦\N{\fntahoma\fs10\1c&H0080FF&}He's coming.{\r}
+Dialogue: 0,0:58:15.38,0:58:17.34,Default,,0000,0000,0000,,我弄到指纹了\N{\fntahoma\fs10\1c&H0080FF&}I got it.{\r}
+Dialogue: 0,0:58:23.48,0:58:25.48,Default,,0000,0000,0000,,他正好握住手镯\N{\fntahoma\fs10\1c&H0080FF&}He grabbed me just right.{\r}
+Dialogue: 0,0:58:28.52,0:58:31.11,Default,,0000,0000,0000,,居然想攻击我的下体\N{\fntahoma\fs10\1c&H0080FF&}Tried to hit me in the balls.{\r}
+Dialogue: 0,0:58:35.07,0:58:37.03,Default,,0000,0000,0000,,可惜没成功\N{\fntahoma\fs10\1c&H0080FF&}But he missed.{\r}
+Dialogue: 0,0:58:42.16,0:58:43.95,Default,,0000,0000,0000,,我来帮你\N{\fntahoma\fs10\1c&H0080FF&}Let me help you.{\r}
+Dialogue: 0,0:58:44.04,0:58:45.95,Default,,0000,0000,0000,,不要\N{\fntahoma\fs10\1c&H0080FF&}No. Don't.{\r}
+Dialogue: 0,0:59:42.67,0:59:44.75,Default,,0000,0000,0000,,维杰先生 一共有十六处相符\N{\fntahoma\fs10\1c&H0080FF&}Sixteen-point match, Mr. Verger.{\r}
+Dialogue: 0,0:59:46.93,0:59:48.01,Default,,0000,0000,0000,,是他没错\N{\fntahoma\fs10\1c&H0080FF&}Bingo.{\r}
+Dialogue: 0,0:59:49.64,0:59:52.60,Default,,0000,0000,0000,,*撒丁尼亚岛*
+Dialogue: 0,1:00:06.95,1:00:09.53,Default,,0000,0000,0000,,-是卡罗吗?  -维杰?\N{\fntahoma\fs10\1c&H0080FF&}-Carlo? -Mason?{\r}
+Dialogue: 0,1:00:12.03,1:00:14.53,Default,,0000,0000,0000,,都很好\N{\fntahoma\fs10\1c&H0080FF&}Well, well, well.{\r}
+Dialogue: 0,1:00:14.62,1:00:18.63,Default,,0000,0000,0000,,-要我去你那儿吗?  -应该快了\N{\fntahoma\fs10\1c&H0080FF&}-Am I coming to see you? -Yes, soon, I hope.{\r}
+Dialogue: 0,1:00:18.71,1:00:22.29,Default,,0000,0000,0000,,不过你先把野猪运过来\N{\fntahoma\fs10\1c&H0080FF&}But first I need you to pack off the boys.{\r}
+Dialogue: 0,1:00:22.38,1:00:24.46,Default,,0000,0000,0000,,-现在?  -是的 我知道\N{\fntahoma\fs10\1c&H0080FF&}-Now? -Yes, I know.{\r}
+Dialogue: 0,1:00:24.54,1:00:27.38,Default,,0000,0000,0000,,你以为这一天永远不会来 对不对?\N{\fntahoma\fs10\1c&H0080FF&}The day you never thought would arrive has.{\r}
+Dialogue: 0,1:00:27.47,1:00:30.01,Default,,0000,0000,0000,,柯德会直接把兽医表格\N{\fntahoma\fs10\1c&H0080FF&}Now, Cordell will fax the veterinary forms{\r}
+Dialogue: 0,1:00:30.10,1:00:33.26,Default,,0000,0000,0000,,传真给动植物防疫检疫局\N{\fntahoma\fs10\1c&H0080FF&}directly to Animal and Plant Health{\r}
+Dialogue: 0,1:00:33.35,1:00:37.05,Default,,0000,0000,0000,,但是你必须拿到 撒丁尼亚岛的兽医检验表\N{\fntahoma\fs10\1c&H0080FF&}but you need to get the vet affidavits from Sardinia.{\r}
+Dialogue: 0,1:00:40.98,1:00:42.52,Default,,0000,0000,0000,,它们如何?\N{\fntahoma\fs10\1c&H0080FF&}How are they?{\r}
+Dialogue: 0,1:00:42.61,1:00:45.15,Default,,0000,0000,0000,,越长越大 非常庞大\N{\fntahoma\fs10\1c&H0080FF&}They are big, Mason, very big.{\r}
+Dialogue: 0,1:00:52.16,1:00:55.03,Default,,0000,0000,0000,,-你再说一次  -它们长得很大\N{\fntahoma\fs10\1c&H0080FF&}-Say again? -Yeah, they are big, Mason.{\r}
+Dialogue: 0,1:00:55.12,1:00:59.03,Default,,0000,0000,0000,,大概有270公斤\N{\fntahoma\fs10\1c&H0080FF&}Really big. Maybe 270 kilos.{\r}
+Dialogue: 0,1:00:59.08,1:01:01.58,Default,,0000,0000,0000,,哇!那么大\N{\fntahoma\fs10\1c&H0080FF&}Oh, wow.{\r}
+Dialogue: 0,1:01:01.67,1:01:03.25,Default,,0000,0000,0000,,你听到了吗?\N{\fntahoma\fs10\1c&H0080FF&}Can you hear?{\r}
+Dialogue: 0,1:01:15.59,1:01:17.76,Default,,0000,0000,0000,,听起来很强壮\N{\fntahoma\fs10\1c&H0080FF&}They sound fantastic.{\r}
+Dialogue: 0,1:01:27.85,1:01:29.10,Default,,0000,0000,0000,,太好了\N{\fntahoma\fs10\1c&H0080FF&}Super.{\r}
+Dialogue: 0,1:02:04.06,1:02:09.27,Default,,0000,0000,0000,,在收到活的汉尼拔医生后 余款就会全数付给你\N{\fntahoma\fs10\1c&H0080FF&}The full balance of the money is payable upon receipt of the doctor, alive.{\r}
+Dialogue: 0,1:02:09.31,1:02:11.89,Default,,0000,0000,0000,,你该不会想自己去抓吧\N{\fntahoma\fs10\1c&H0080FF&}Of course, you won't have to seize him yourself.{\r}
+Dialogue: 0,1:02:11.98,1:02:13.89,Default,,0000,0000,0000,,只要把他指认出来就行\N{\fntahoma\fs10\1c&H0080FF&}Rather, just point him out.{\r}
+Dialogue: 0,1:02:14.74,1:02:18.95,Default,,0000,0000,0000,,其余的由我们来处理\N{\fntahoma\fs10\1c&H0080FF&}It's preferable to all concerned if that's the extent of your involvement{\r}
+Dialogue: 0,1:02:18.99,1:02:20.65,Default,,0000,0000,0000,,这样对你会比较好\N{\fntahoma\fs10\1c&H0080FF&}from this point.{\r}
+Dialogue: 0,1:02:20.74,1:02:24.82,Default,,0000,0000,0000,,我希望能一直参与下去 好确定不出问题\N{\fntahoma\fs10\1c&H0080FF&}I prefer to stay involved, make sure things go right.{\r}
+Dialogue: 0,1:02:24.91,1:02:26.83,Default,,0000,0000,0000,,那将会由专家来执行\N{\fntahoma\fs10\1c&H0080FF&}Professionals will see to that.{\r}
+Dialogue: 0,1:02:28.87,1:02:30.62,Default,,0000,0000,0000,,我就是专家\N{\fntahoma\fs10\1c&H0080FF&}I am a professional.{\r}
+Dialogue: 0,1:04:53.96,1:04:56.47,Default,,0000,0000,0000,,督察 你对这场演出满意吗?\N{\fntahoma\fs10\1c&H0080FF&}Did you enjoy the performance, Commendatore?{\r}
+Dialogue: 0,1:04:56.55,1:04:58.47,Default,,0000,0000,0000,,很满意\N{\fntahoma\fs10\1c&H0080FF&}Very much.{\r}
+Dialogue: 0,1:04:58.55,1:05:02.93,Default,,0000,0000,0000,,艾葛莉 这位是费尔博士 卡波尼图书馆的馆长\N{\fntahoma\fs10\1c&H0080FF&}Allegra, this is Dr. Fell, curator of the Capponi Library.{\r}
+Dialogue: 0,1:05:03.01,1:05:04.35,Default,,0000,0000,0000,,帕齐夫人\N{\fntahoma\fs10\1c&H0080FF&}Signora Pazzi.{\r}
+Dialogue: 0,1:05:04.43,1:05:06.35,Default,,0000,0000,0000,,很荣幸见到你\N{\fntahoma\fs10\1c&H0080FF&}I'm honored.{\r}
+Dialogue: 0,1:05:06.44,1:05:08.36,Default,,0000,0000,0000,,你来自美国吗?\N{\fntahoma\fs10\1c&H0080FF&}Are you from America, Doctor?{\r}
+Dialogue: 0,1:05:08.44,1:05:11.11,Default,,0000,0000,0000,,我曾到过美国 但祖籍不是那里\N{\fntahoma\fs10\1c&H0080FF&}Not originally. I've travelled there.{\r}
+Dialogue: 0,1:05:11.15,1:05:14.19,Default,,0000,0000,0000,,我一直想去新英格兰\N{\fntahoma\fs10\1c&H0080FF&}I've always wanted to visit. New England, especially.{\r}
+Dialogue: 0,1:05:14.27,1:05:17.07,Default,,0000,0000,0000,,那里的食物非常可口\N{\fntahoma\fs10\1c&H0080FF&}I've enjoyed many excellent meals there.{\r}
+Dialogue: 0,1:05:18.28,1:05:21.82,Default,,0000,0000,0000,,我注意到你对歌词很有兴趣\N{\fntahoma\fs10\1c&H0080FF&}I noticed you wrapped up in the libretto.{\r}
+Dialogue: 0,1:05:21.91,1:05:23.82,Default,,0000,0000,0000,,相信你会喜欢这个\N{\fntahoma\fs10\1c&H0080FF&}Thought this might amuse you.{\r}
+Dialogue: 0,1:05:25.95,1:05:28.88,Default,,0000,0000,0000,,这是但丁新生命中的 第一首十四行诗\N{\fntahoma\fs10\1c&H0080FF&}Dante's first sonnet from La Vita Nuova.{\r}
+Dialogue: 0,1:05:28.96,1:05:30.88,Default,,0000,0000,0000,,对 它非常美妙\N{\fntahoma\fs10\1c&H0080FF&}It's beautiful.{\r}
+Dialogue: 0,1:05:32.13,1:05:35.04,Default,,0000,0000,0000,,-帕齐 你来看  -我看到了\N{\fntahoma\fs10\1c&H0080FF&}-Rinaldo, look at this. -I can see.{\r}
+Dialogue: 0,1:05:36.63,1:05:38.89,Default,,0000,0000,0000,,"对我来说喜悦的爱是"\N{\fntahoma\fs10\1c&H0080FF&}"Joyous Love seemed to me{\r}
+Dialogue: 0,1:05:38.97,1:05:42.05,Default,,0000,0000,0000,,"当他手中捧着我的心"\N{\fntahoma\fs10\1c&H0080FF&}the while he held my heart in his hands{\r}
+Dialogue: 0,1:05:42.14,1:05:43.89,Default,,0000,0000,0000,,"而在他臂弯中"\N{\fntahoma\fs10\1c&H0080FF&}and in his arms{\r}
+Dialogue: 0,1:05:43.97,1:05:46.34,Default,,0000,0000,0000,,"却是我深爱的女士"\N{\fntahoma\fs10\1c&H0080FF&}my lady lay asleep{\r}
+Dialogue: 0,1:05:46.43,1:05:48.34,Default,,0000,0000,0000,,"正裹着面纱沉睡着"\N{\fntahoma\fs10\1c&H0080FF&}wrapped in a veil."{\r}
+Dialogue: 0,1:05:49.35,1:05:50.65,Default,,0000,0000,0000,,"然后他唤醒她"\N{\fntahoma\fs10\1c&H0080FF&}"He woke her then{\r}
+Dialogue: 0,1:05:50.69,1:05:55.48,Default,,0000,0000,0000,,"她颤抖而顺从的 吃下他手中灼热的心"\N{\fntahoma\fs10\1c&H0080FF&}and trembling and obedient, she ate that burning heart out of his hand.{\r}
+Dialogue: 0,1:05:55.56,1:05:57.73,Default,,0000,0000,0000,,"我哽咽的看着他逐渐远去"\N{\fntahoma\fs10\1c&H0080FF&}Weeping, I saw him then depart from me."{\r}
+Dialogue: 0,1:05:58.52,1:06:03.74,Default,,0000,0000,0000,,费尔博士 你相信男人 在第一次和女人相遇后\N{\fntahoma\fs10\1c&H0080FF&}Dr. Fell, do you believe a man could become so obsessed with a woman{\r}
+Dialogue: 0,1:06:03.82,1:06:06.41,Default,,0000,0000,0000,,就会迷上她吗?\N{\fntahoma\fs10\1c&H0080FF&}from a single encounter?{\r}
+Dialogue: 0,1:06:06.49,1:06:09.41,Default,,0000,0000,0000,,他因此而寝食难安\N{\fntahoma\fs10\1c&H0080FF&}Could he daily feel a stab of hunger for her{\r}
+Dialogue: 0,1:06:09.49,1:06:12.42,Default,,0000,0000,0000,,只有在见到她后才能平静?\N{\fntahoma\fs10\1c&H0080FF&}and find nourishment in the very sight of her?{\r}
+Dialogue: 0,1:06:12.50,1:06:14.71,Default,,0000,0000,0000,,我相信\N{\fntahoma\fs10\1c&H0080FF&}I think so.{\r}
+Dialogue: 0,1:06:14.79,1:06:19.21,Default,,0000,0000,0000,,但是她会看出他的苦境 而深深为他心痛吗?\N{\fntahoma\fs10\1c&H0080FF&}But would she see through the bars of his plight and ache for him?{\r}
+Dialogue: 0,1:06:19.29,1:06:21.59,Default,,0000,0000,0000,,-这是送给你的  -我不能接受\N{\fntahoma\fs10\1c&H0080FF&}-Please keep that. -I couldn't.{\r}
+Dialogue: 0,1:06:21.68,1:06:23.26,Default,,0000,0000,0000,,我坚持\N{\fntahoma\fs10\1c&H0080FF&}I insist.{\r}
+Dialogue: 0,1:06:33.77,1:06:34.94,Default,,0000,0000,0000,,再见\N{\fntahoma\fs10\1c&H0080FF&}Good-bye.{\r}
+Dialogue: 0,1:06:36.52,1:06:39.44,Default,,0000,0000,0000,,-我们去吃点东西吧  -好的\N{\fntahoma\fs10\1c&H0080FF&}-Let's get something to eat. -Of course.{\r}
+Dialogue: 0,1:06:39.52,1:06:41.44,Default,,0000,0000,0000,,好主意?\N{\fntahoma\fs10\1c&H0080FF&}Why not?{\r}
+Dialogue: 0,1:06:41.73,1:06:45.11,Default,,0000,0000,0000,,*使用者名称 密码*
+Dialogue: 0,1:06:47.03,1:06:49.45,Default,,0000,0000,0000,,*暴戾罪犯的逮捕计划*
+Dialogue: 0,1:06:51.28,1:06:54.21,Default,,0000,0000,0000,,*汉尼拔 登入系统者名单*
+Dialogue: 0,1:06:54.29,1:06:58.33,Default,,0000,0000,0000,,*期间 50天内*
+Dialogue: 0,1:07:13.92,1:07:15.93,Default,,0000,0000,0000,,医生 这会是你吗?\N{\fntahoma\fs10\1c&H0080FF&}Is that you, Doctor?{\r}
+Dialogue: 0,1:08:06.68,1:08:09.69,Default,,0000,0000,0000,,请帕齐督察接电话\N{\fntahoma\fs10\1c&H0080FF&}I'd like to speak with Chief Inspector Rinaldo Pazzi, please.{\r}
+Dialogue: 0,1:08:09.78,1:08:12.98,Default,,0000,0000,0000,,我是美国调查局探员史黛琳\N{\fntahoma\fs10\1c&H0080FF&}This is Agent Clarice Starling from the American FBI.{\r}
+Dialogue: 0,1:08:13.07,1:08:14.36,Default,,0000,0000,0000,,请等一下\N{\fntahoma\fs10\1c&H0080FF&}One moment.{\r}
+Dialogue: 0,1:08:15.57,1:08:16.69,Default,,0000,0000,0000,,帕齐\N{\fntahoma\fs10\1c&H0080FF&}Pazzi.{\r}
+Dialogue: 0,1:08:16.94,1:08:19.87,Default,,0000,0000,0000,,-美国调查局的电话  -说我不在\N{\fntahoma\fs10\1c&H0080FF&}-FBI. -I'm not here.{\r}
+Dialogue: 0,1:08:23.95,1:08:25.87,Default,,0000,0000,0000,,我是帕齐督察\N{\fntahoma\fs10\1c&H0080FF&}Inspector Pazzi.{\r}
+Dialogue: 0,1:08:25.95,1:08:28.79,Default,,0000,0000,0000,,我是调查局的史黛琳探员 你好?\N{\fntahoma\fs10\1c&H0080FF&}It's Agent Starling from the FBI. How do you do?{\r}
+Dialogue: 0,1:08:28.87,1:08:32.50,Default,,0000,0000,0000,,我现在正准备离开\N{\fntahoma\fs10\1c&H0080FF&}Actually, I was just leaving for the day.{\r}
+Dialogue: 0,1:08:32.59,1:08:34.71,Default,,0000,0000,0000,,-明天再和你联络 好吗?  -不会耽误很久\N{\fntahoma\fs10\1c&H0080FF&}-Can I call you back tomorrow? -This won't take long.{\r}
+Dialogue: 0,1:08:34.80,1:08:39.88,Default,,0000,0000,0000,,首先 谢谢你们寄给我 香水店的防盗录影带\N{\fntahoma\fs10\1c&H0080FF&}First, thank you for sending us the security tape from the perfume store.{\r}
+Dialogue: 0,1:08:39.96,1:08:43.64,Default,,0000,0000,0000,,我指的是 由班尼帝探员寄来的带子\N{\fntahoma\fs10\1c&H0080FF&}When I say "you,"I mean your department  Agent Benetti.{\r}
+Dialogue: 0,1:08:43.68,1:08:46.89,Default,,0000,0000,0000,,他在吗?我想和他谈谈\N{\fntahoma\fs10\1c&H0080FF&}Is he there? Can I speak with him?{\r}
+Dialogue: 0,1:08:46.97,1:08:49.89,Default,,0000,0000,0000,,-抱歉 他已经走了  -那没关系\N{\fntahoma\fs10\1c&H0080FF&}-I'm sorry. He's gone home. -That's all right.{\r}
+Dialogue: 0,1:08:49.97,1:08:52.23,Default,,0000,0000,0000,,其实我本就该对你说的\N{\fntahoma\fs10\1c&H0080FF&}I should tell you this rather than him anyway.{\r}
+Dialogue: 0,1:08:52.32,1:08:54.65,Default,,0000,0000,0000,,我有个重要约会就要迟到了\N{\fntahoma\fs10\1c&H0080FF&}I'm late for an important appointment.{\r}
+Dialogue: 0,1:08:54.69,1:08:57.32,Default,,0000,0000,0000,,我所要寻找的人\N{\fntahoma\fs10\1c&H0080FF&}The person I'm looking for, Inspector{\r}
+Dialogue: 0,1:08:57.40,1:09:00.40,Default,,0000,0000,0000,,就出现在那个录影带里 他的名字是汉尼拔\N{\fntahoma\fs10\1c&H0080FF&}who is indeed shown on that tape, is Hannibal Lecter.{\r}
+Dialogue: 0,1:09:00.48,1:09:02.08,Default,,0000,0000,0000,,谁?\N{\fntahoma\fs10\1c&H0080FF&}Who?{\r}
+Dialogue: 0,1:09:02.16,1:09:05.08,Default,,0000,0000,0000,,汉尼拔医生 你没听过他吗?\N{\fntahoma\fs10\1c&H0080FF&}Dr. Hannibal Lecter. You've never heard of him?{\r}
+Dialogue: 0,1:09:05.16,1:09:08.91,Default,,0000,0000,0000,,-我不是很清楚  -录影带中显示\N{\fntahoma\fs10\1c&H0080FF&}-I'm not familiar. -And the tape confirms{\r}
+Dialogue: 0,1:09:08.99,1:09:11.58,Default,,0000,0000,0000,,他曾在佛罗伦斯出现过\N{\fntahoma\fs10\1c&H0080FF&}that he is or was recently in Florence.{\r}
+Dialogue: 0,1:09:13.29,1:09:16.29,Default,,0000,0000,0000,,-是吗?  -督察 他非常危险\N{\fntahoma\fs10\1c&H0080FF&}-Really? -He's a very dangerous man, Inspector.{\r}
+Dialogue: 0,1:09:16.38,1:09:19.75,Default,,0000,0000,0000,,已经杀害十四个人\N{\fntahoma\fs10\1c&H0080FF&}He's killed 14 people that we know of.{\r}
+Dialogue: 0,1:09:19.84,1:09:22.17,Default,,0000,0000,0000,,-我得走了 你是...  -我叫史黛琳\N{\fntahoma\fs10\1c&H0080FF&}-I really have to go, Miss...  -Starling.{\r}
+Dialogue: 0,1:09:22.25,1:09:23.93,Default,,0000,0000,0000,,再给我一分钟\N{\fntahoma\fs10\1c&H0080FF&}Just another minute.{\r}
+Dialogue: 0,1:09:24.01,1:09:26.93,Default,,0000,0000,0000,,-你确定没听过他吗?  -我确定\N{\fntahoma\fs10\1c&H0080FF&}-You sure you've never heard of him? -No, I haven't.{\r}
+Dialogue: 0,1:09:27.01,1:09:28.93,Default,,0000,0000,0000,,那就奇怪了\N{\fntahoma\fs10\1c&H0080FF&}Because I'm confused.{\r}
+Dialogue: 0,1:09:29.01,1:09:33.43,Default,,0000,0000,0000,,因为根据资料显示 你们有人 时常使用电脑\N{\fntahoma\fs10\1c&H0080FF&}Someone there has been accessing our private VICAP files on Dr. Lecter{\r}
+Dialogue: 0,1:09:33.51,1:09:36.52,Default,,0000,0000,0000,,从我们网站的VICAP档案中 存取汉尼拔医生的资料\N{\fntahoma\fs10\1c&H0080FF&}with some regularity on your computer.{\r}
+Dialogue: 0,1:09:36.61,1:09:40.52,Default,,0000,0000,0000,,警局的电脑是公用的\N{\fntahoma\fs10\1c&H0080FF&}Everybody uses everybody's computer here.{\r}
+Dialogue: 0,1:09:40.61,1:09:43.52,Default,,0000,0000,0000,,也许是侦办莫斯楚的警探\N{\fntahoma\fs10\1c&H0080FF&}Maybe one of the detectives on II Mostro{\r}
+Dialogue: 0,1:09:43.61,1:09:45.57,Default,,0000,0000,0000,,上网查看杀人魔的资料\N{\fntahoma\fs10\1c&H0080FF&}was looking at profiles of killers{\r}
+Dialogue: 0,1:09:45.66,1:09:48.12,Default,,0000,0000,0000,,我所说的是你家里的电脑\N{\fntahoma\fs10\1c&H0080FF&}I'm speaking about the computer at your home, sir.{\r}
+Dialogue: 0,1:09:49.70,1:09:53.16,Default,,0000,0000,0000,,你是不是想自己去捉拿他 好拿悬赏金?\N{\fntahoma\fs10\1c&H0080FF&}You're trying to catch him yourself, aren't you? For the reward.{\r}
+Dialogue: 0,1:09:53.24,1:09:55.83,Default,,0000,0000,0000,,我必须警告你千万别这么做\N{\fntahoma\fs10\1c&H0080FF&}I cannot warn you strongly enough against that.{\r}
+Dialogue: 0,1:09:55.92,1:09:58.79,Default,,0000,0000,0000,,当他在曼非斯被监管时 曾杀了三名警员\N{\fntahoma\fs10\1c&H0080FF&}He killed three policemen down in Memphis while in custody{\r}
+Dialogue: 0,1:09:58.88,1:10:02.58,Default,,0000,0000,0000,,其中之一的脸被他整个撕裂 他也会杀你的\N{\fntahoma\fs10\1c&H0080FF&}tearing the face off one of them, and he will kill you too.{\r}
+Dialogue: 0,1:10:37.36,1:10:40.75,Default,,0000,0000,0000,,-我要他尽快离开此地  -相信我\N{\fntahoma\fs10\1c&H0080FF&}-I want him out of Tuscany fast. -Believe me{\r}
+Dialogue: 0,1:10:40.83,1:10:43.79,Default,,0000,0000,0000,,他很快就会从地球上消失\N{\fntahoma\fs10\1c&H0080FF&}he'll be gone from the face of the earth fast.{\r}
+Dialogue: 0,1:10:43.87,1:10:45.46,Default,,0000,0000,0000,,到棺材里去休息\N{\fntahoma\fs10\1c&H0080FF&}Feetfirst.{\r}
+Dialogue: 0,1:11:05.27,1:11:08.81,Default,,0000,0000,0000,,由于他的贪婪 背判了信任他的国王\N{\fntahoma\fs10\1c&H0080FF&}Because of his avarice and his betrayal of the emperor's trust{\r}
+Dialogue: 0,1:11:08.89,1:11:13.15,Default,,0000,0000,0000,,使得韦格那遭到贬黜 失明和下狱之殃\N{\fntahoma\fs10\1c&H0080FF&}Pier della Vigna was disgraced, blinded and imprisoned.{\r}
+Dialogue: 0,1:11:13.24,1:11:18.82,Default,,0000,0000,0000,,但丁神曲把他放在地狱篇的 第七层地狱中\N{\fntahoma\fs10\1c&H0080FF&}Dante's pilgrim finds Pier della Vigna on the seventh level of the Inferno{\r}
+Dialogue: 0,1:11:18.90,1:11:22.37,Default,,0000,0000,0000,,就像耶稣的叛徒犹大一样 被处以绞刑\N{\fntahoma\fs10\1c&H0080FF&}and, likeJudas Iscariot, he died by hanging.{\r}
+Dialogue: 0,1:11:22.46,1:11:25.29,Default,,0000,0000,0000,,由此我们看出是贪婪\N{\fntahoma\fs10\1c&H0080FF&}SoJudas and Pier della Vigna are linked in Dante{\r}
+Dialogue: 0,1:11:25.37,1:11:27.71,Default,,0000,0000,0000,,使但丁把他们俩连系起来\N{\fntahoma\fs10\1c&H0080FF&}by the avarice he saw in them.{\r}
+Dialogue: 0,1:11:27.79,1:11:32.13,Default,,0000,0000,0000,,事实上 在中世纪时 贪婪和绞刑常连为一体\N{\fntahoma\fs10\1c&H0080FF&}In fact, avarice and hanging are linked in the medieval mind.{\r}
+Dialogue: 0,1:11:32.22,1:11:35.63,Default,,0000,0000,0000,,最早的文献可见于西元400年 被刻在高卢的象牙盒上\N{\fntahoma\fs10\1c&H0080FF&}This is the earliest known depiction of the Crucifixion{\r}
+Dialogue: 0,1:11:35.67,1:11:39.97,Default,,0000,0000,0000,,记录着有关耶稣被钉死在 十字架上的故事\N{\fntahoma\fs10\1c&H0080FF&}carved on an ivory box in Gaul about A.D. 400.{\r}
+Dialogue: 0,1:11:40.05,1:11:44.89,Default,,0000,0000,0000,,其中包括绞杀犹大\N{\fntahoma\fs10\1c&H0080FF&}It includes the death by hanging ofJudas{\r}
+Dialogue: 0,1:11:44.98,1:11:46.89,Default,,0000,0000,0000,,他的脸孔朝上 面对着吊死他的树枝\N{\fntahoma\fs10\1c&H0080FF&}his face upturned to the branch that suspends him.{\r}
+Dialogue: 0,1:11:46.98,1:11:49.93,Default,,0000,0000,0000,,这个在 班尼文多大教堂门上的也是他\N{\fntahoma\fs10\1c&H0080FF&}Here he is again on the doors of the Benevento Cathedral{\r}
+Dialogue: 0,1:11:50.02,1:11:53.90,Default,,0000,0000,0000,,不同的是 这里的他内脏外溢\N{\fntahoma\fs10\1c&H0080FF&}this time with his bowels falling out.{\r}
+Dialogue: 0,1:12:01.03,1:12:04.37,Default,,0000,0000,0000,,请你听我说 我好不容易才要到你的号码\N{\fntahoma\fs10\1c&H0080FF&}It wasn't easy, but I got this number without tellin'them why{\r}
+Dialogue: 0,1:12:04.45,1:12:06.83,Default,,0000,0000,0000,,-对不起  -没关系 欢迎你来\N{\fntahoma\fs10\1c&H0080FF&}-Sorry. -Not at all. Welcome.{\r}
+Dialogue: 0,1:12:06.91,1:12:10.25,Default,,0000,0000,0000,,-请坐  -谢谢你\N{\fntahoma\fs10\1c&H0080FF&}-Please join us. -Thank you.{\r}
+Dialogue: 0,1:12:10.33,1:12:13.25,Default,,0000,0000,0000,,这幅是十五世纪地狱篇的画\N{\fntahoma\fs10\1c&H0080FF&}On this plate from the 15th-century edition of the Inferno{\r}
+Dialogue: 0,1:12:13.33,1:12:16.84,Default,,0000,0000,0000,,我们看到韦格那的尸体 挂在流着鲜血的树上\N{\fntahoma\fs10\1c&H0080FF&}Pier della Vigna's body hangs from a bleeding tree.{\r}
+Dialogue: 0,1:12:16.92,1:12:19.84,Default,,0000,0000,0000,,我不想强调他和犹大的相似处\N{\fntahoma\fs10\1c&H0080FF&}I will not belabor the obvious parallel with Judas Iscariot{\r}
+Dialogue: 0,1:12:19.92,1:12:22.84,Default,,0000,0000,0000,,因为但丁已经描述得很清楚\N{\fntahoma\fs10\1c&H0080FF&}but Dante Alighieri needed no drawn illustration.{\r}
+Dialogue: 0,1:12:22.92,1:12:27.52,Default,,0000,0000,0000,,他技巧的表现出 韦格那仍在地狱之中\N{\fntahoma\fs10\1c&H0080FF&}It was his genius to make Pier della Vigna, now in hell{\r}
+Dialogue: 0,1:12:27.60,1:12:30.52,Default,,0000,0000,0000,,声嘶力竭的喊叫和挣扎\N{\fntahoma\fs10\1c&H0080FF&}speak in strained hisses and coughing sibilants{\r}
+Dialogue: 0,1:12:30.60,1:12:33.47,Default,,0000,0000,0000,,就像他仍被吊着一样\N{\fntahoma\fs10\1c&H0080FF&}as though he is hanging still.{\r}
+Dialogue: 0,1:12:58.17,1:13:00.55,Default,,0000,0000,0000,,贪婪 绞刑\N{\fntahoma\fs10\1c&H0080FF&}Avarice, hanging{\r}
+Dialogue: 0,1:13:00.59,1:13:02.17,Default,,0000,0000,0000,,自我毁灭\N{\fntahoma\fs10\1c&H0080FF&}self-destruction.{\r}
+Dialogue: 0,1:13:06.55,1:13:08.76,Default,,0000,0000,0000,,"绞架"\N{\fntahoma\fs10\1c&H0080FF&}"I make my own home{\r}
+Dialogue: 0,1:13:09.85,1:13:11.76,Default,,0000,0000,0000,,"就是我的家"\N{\fntahoma\fs10\1c&H0080FF&}be my gallows."{\r}
+Dialogue: 0,1:13:13.22,1:13:16.39,Default,,0000,0000,0000,,今天到此为止 谢谢各位的光临\N{\fntahoma\fs10\1c&H0080FF&}Thank you, ladies and gentlemen, for your kind attention.{\r}
+Dialogue: 0,1:13:32.37,1:13:35.49,Default,,0000,0000,0000,,我虽然不是学者 但相信你一定能当上馆长\N{\fntahoma\fs10\1c&H0080FF&}I'm not a scholar, but I think you've got the job.{\r}
+Dialogue: 0,1:13:35.58,1:13:36.83,Default,,0000,0000,0000,,谢谢你\N{\fntahoma\fs10\1c&H0080FF&}Thank you.{\r}
+Dialogue: 0,1:13:36.91,1:13:39.83,Default,,0000,0000,0000,,-我能请你去喝杯酒吗?  -这是我的荣幸\N{\fntahoma\fs10\1c&H0080FF&}-May I buy you a drink? -How kind of you. I'd like that.{\r}
+Dialogue: 0,1:13:39.91,1:13:42.84,Default,,0000,0000,0000,,等我把东西收好就走\N{\fntahoma\fs10\1c&H0080FF&}I'll be a minute gathering my things.{\r}
+Dialogue: 0,1:13:42.92,1:13:44.88,Default,,0000,0000,0000,,慢慢来\N{\fntahoma\fs10\1c&H0080FF&}Take your time.{\r}
+Dialogue: 0,1:13:54.51,1:13:58.68,Default,,0000,0000,0000,,艾葛莉 我会晚点回家\N{\fntahoma\fs10\1c&H0080FF&}Allegra, I'll be home just a little later than I said.{\r}
+Dialogue: 0,1:13:58.76,1:14:00.72,Default,,0000,0000,0000,,我和费尔博士去喝杯酒\N{\fntahoma\fs10\1c&H0080FF&}I'm taking Dr. Fell out for a drink.{\r}
+Dialogue: 0,1:14:04.40,1:14:06.52,Default,,0000,0000,0000,,我看到很多人走出来\N{\fntahoma\fs10\1c&H0080FF&}I can see the people coming out now.{\r}
+Dialogue: 0,1:14:08.77,1:14:11.44,Default,,0000,0000,0000,,很好 等会儿见 是我太太\N{\fntahoma\fs10\1c&H0080FF&}Yes. Bye, honey. My wife.{\r}
+Dialogue: 0,1:14:11.52,1:14:13.16,Default,,0000,0000,0000,,是的\N{\fntahoma\fs10\1c&H0080FF&}Of course.{\r}
+Dialogue: 0,1:14:15.57,1:14:18.28,Default,,0000,0000,0000,,刚才该给他们看这一张\N{\fntahoma\fs10\1c&H0080FF&}I should have shown them this one.{\r}
+Dialogue: 0,1:14:18.32,1:14:22.12,Default,,0000,0000,0000,,怎么会忘了 记得我曾对你说过吗?\N{\fntahoma\fs10\1c&H0080FF&}I can't imagine how I missed it. Remember? I told you about it.{\r}
+Dialogue: 0,1:14:22.20,1:14:24.83,Default,,0000,0000,0000,,那是我在图书馆里找到的\N{\fntahoma\fs10\1c&H0080FF&}It's a rendering I found in the Capponi Library.{\r}
+Dialogue: 0,1:14:24.92,1:14:27.67,Default,,0000,0000,0000,,你能看得到吗?\N{\fntahoma\fs10\1c&H0080FF&}Can you make it out?{\r}
+Dialogue: 0,1:14:27.75,1:14:30.50,Default,,0000,0000,0000,,那里有个名字\N{\fntahoma\fs10\1c&H0080FF&}There's a name there{\r}
+Dialogue: 0,1:14:30.58,1:14:32.67,Default,,0000,0000,0000,,我曾对你提起过\N{\fntahoma\fs10\1c&H0080FF&}the one I told you about.{\r}
+Dialogue: 0,1:14:45.69,1:14:47.81,Default,,0000,0000,0000,,他就是你的祖先\N{\fntahoma\fs10\1c&H0080FF&}It's your ancestor, Commendatore{\r}
+Dialogue: 0,1:14:47.90,1:14:50.48,Default,,0000,0000,0000,,被吊死在这个窗子下面\N{\fntahoma\fs10\1c&H0080FF&}hanging beneath these very windows.{\r}
+Dialogue: 0,1:14:50.56,1:14:52.44,Default,,0000,0000,0000,,范斯库帕齐\N{\fntahoma\fs10\1c&H0080FF&}Francesco de' Pazzi.{\r}
+Dialogue: 0,1:14:53.69,1:14:57.28,Default,,0000,0000,0000,,另外我想向你坦白\N{\fntahoma\fs10\1c&H0080FF&}On a related subject, I must confess to you{\r}
+Dialogue: 0,1:14:57.36,1:14:59.95,Default,,0000,0000,0000,,我正在认真的考虑\N{\fntahoma\fs10\1c&H0080FF&}I'm giving very serious thought{\r}
+Dialogue: 0,1:15:06.04,1:15:08.04,Default,,0000,0000,0000,,拿你太太当晚餐\N{\fntahoma\fs10\1c&H0080FF&}to eating your wife.{\r}
+Dialogue: 0,1:15:41.36,1:15:44.36,Default,,0000,0000,0000,,如果你能诚实回答我的问题\N{\fntahoma\fs10\1c&H0080FF&}If you tell me what I need to know, Commendatore{\r}
+Dialogue: 0,1:15:44.45,1:15:47.03,Default,,0000,0000,0000,,或许到时会放她一马\N{\fntahoma\fs10\1c&H0080FF&}it might be convenient for me to leave Florence without my meal.{\r}
+Dialogue: 0,1:15:47.11,1:15:50.71,Default,,0000,0000,0000,,我先来问你 然后再做决定 可以吗?\N{\fntahoma\fs10\1c&H0080FF&}So I'll ask you the questions, and then we'll see. All right?{\r}
+Dialogue: 0,1:15:50.79,1:15:52.12,Default,,0000,0000,0000,,好吗?\N{\fntahoma\fs10\1c&H0080FF&}Okay?{\r}
+Dialogue: 0,1:16:04.72,1:16:05.97,Default,,0000,0000,0000,,好\N{\fntahoma\fs10\1c&H0080FF&}So.{\r}
+Dialogue: 0,1:16:08.67,1:16:11.10,Default,,0000,0000,0000,,你把我出卖给维杰吗?\N{\fntahoma\fs10\1c&H0080FF&}Now, is it Mason Verger you sold me to?{\r}
+Dialogue: 0,1:16:13.31,1:16:14.85,Default,,0000,0000,0000,,别挣扎\N{\fntahoma\fs10\1c&H0080FF&}No, no.{\r}
+Dialogue: 0,1:16:14.93,1:16:17.14,Default,,0000,0000,0000,,是眨两次眼 不眨一次\N{\fntahoma\fs10\1c&H0080FF&}Blink twice for yes, once for no.{\r}
+Dialogue: 0,1:16:17.23,1:16:19.77,Default,,0000,0000,0000,,你把我出卖给维杰吗?\N{\fntahoma\fs10\1c&H0080FF&}Was it Mason Verger you sold me to?{\r}
+Dialogue: 0,1:16:21.40,1:16:23.32,Default,,0000,0000,0000,,是 很好 谢谢你\N{\fntahoma\fs10\1c&H0080FF&}Yes, good. Thank you.{\r}
+Dialogue: 0,1:16:23.40,1:16:26.32,Default,,0000,0000,0000,,他的人在外面等我吗?\N{\fntahoma\fs10\1c&H0080FF&}And are his men waiting for me outside?{\r}
+Dialogue: 0,1:16:28.07,1:16:30.15,Default,,0000,0000,0000,,那是一下吗?\N{\fntahoma\fs10\1c&H0080FF&}Was that a single blink?{\r}
+Dialogue: 0,1:16:30.24,1:16:32.11,Default,,0000,0000,0000,,你搞混了\N{\fntahoma\fs10\1c&H0080FF&}You're confused.{\r}
+Dialogue: 0,1:16:32.20,1:16:36.33,Default,,0000,0000,0000,,别乱搅和 否则我真会把 帕齐夫人的肉片下来吃\N{\fntahoma\fs10\1c&H0080FF&}Please don't be confused, because I may have to fillet Signora Pazzi after all.{\r}
+Dialogue: 0,1:16:39.50,1:16:41.95,Default,,0000,0000,0000,,你告诉过警局里的人吗?\N{\fntahoma\fs10\1c&H0080FF&}Have you told anyone in the questura about me?{\r}
+Dialogue: 0,1:16:43.51,1:16:45.42,Default,,0000,0000,0000,,不 我也这么想\N{\fntahoma\fs10\1c&H0080FF&}No, I thought not.{\r}
+Dialogue: 0,1:16:46.09,1:16:49.13,Default,,0000,0000,0000,,有没有告诉过你太太?\N{\fntahoma\fs10\1c&H0080FF&}Have you told Allegra?{\r}
+Dialogue: 0,1:16:51.63,1:16:53.63,Default,,0000,0000,0000,,不 你确定\N{\fntahoma\fs10\1c&H0080FF&}No? Are you sure?{\r}
+Dialogue: 0,1:16:55.68,1:16:57.35,Default,,0000,0000,0000,,我相信你\N{\fntahoma\fs10\1c&H0080FF&}I believe you.{\r}
+Dialogue: 0,1:16:59.93,1:17:02.31,Default,,0000,0000,0000,,好吧 咱们可以开始了\N{\fntahoma\fs10\1c&H0080FF&}Okeydokey, here we go.{\r}
+Dialogue: 0,1:17:08.86,1:17:10.11,Default,,0000,0000,0000,,好\N{\fntahoma\fs10\1c&H0080FF&}Okay.{\r}
+Dialogue: 0,1:17:11.69,1:17:13.28,Default,,0000,0000,0000,,你的心抖得真厉害\N{\fntahoma\fs10\1c&H0080FF&}Your heart is really palpitating.{\r}
+Dialogue: 0,1:17:13.36,1:17:16.29,Default,,0000,0000,0000,,原来不是你的心\N{\fntahoma\fs10\1c&H0080FF&}Oh, it's not your heart.{\r}
+Dialogue: 0,1:17:18.24,1:17:20.37,Default,,0000,0000,0000,,我能回答吗?\N{\fntahoma\fs10\1c&H0080FF&}Shall I answer it?{\r}
+Dialogue: 0,1:17:22.70,1:17:25.37,Default,,0000,0000,0000,,我已经向你的局长说过了\N{\fntahoma\fs10\1c&H0080FF&}I've gone above you. I've spoken to your section chief.{\r}
+Dialogue: 0,1:17:25.46,1:17:28.21,Default,,0000,0000,0000,,将来你会谢我的 如果恨我 也无所谓\N{\fntahoma\fs10\1c&H0080FF&}Someday you'll thank me. Or you won't. I don't care.{\r}
+Dialogue: 0,1:17:28.30,1:17:30.63,Default,,0000,0000,0000,,至少你还活着\N{\fntahoma\fs10\1c&H0080FF&}You'll be alive.{\r}
+Dialogue: 0,1:17:30.71,1:17:32.59,Default,,0000,0000,0000,,帕齐督察?\N{\fntahoma\fs10\1c&H0080FF&}Inspector Pazzi?{\r}
+Dialogue: 0,1:17:33.55,1:17:35.84,Default,,0000,0000,0000,,是史黛琳吗?\N{\fntahoma\fs10\1c&H0080FF&}Is this Clarice?{\r}
+Dialogue: 0,1:17:35.92,1:17:38.39,Default,,0000,0000,0000,,哈罗 史黛琳\N{\fntahoma\fs10\1c&H0080FF&}Hello, Clarice.{\r}
+Dialogue: 0,1:17:39.51,1:17:41.39,Default,,0000,0000,0000,,消息恐怕不太好\N{\fntahoma\fs10\1c&H0080FF&}I'm afraid I have bad news for you.{\r}
+Dialogue: 0,1:17:41.47,1:17:44.64,Default,,0000,0000,0000,,-他死了吗?  -你收到我寄给你的信吗?\N{\fntahoma\fs10\1c&H0080FF&}-Is he dead? -Did you get my note?{\r}
+Dialogue: 0,1:17:44.68,1:17:47.35,Default,,0000,0000,0000,,希望你喜欢那瓶手霜 是我特别替你订制的\N{\fntahoma\fs10\1c&H0080FF&}I hope you like the skin cream. I had it specially made for you.{\r}
+Dialogue: 0,1:17:47.44,1:17:49.36,Default,,0000,0000,0000,,汉尼拔医生 他死了吗?\N{\fntahoma\fs10\1c&H0080FF&}Is he dead, Dr. Lecter?{\r}
+Dialogue: 0,1:17:49.44,1:17:53.57,Default,,0000,0000,0000,,你要知道 我最喜欢和你聊天\N{\fntahoma\fs10\1c&H0080FF&}I would love nothing more in this world than to be able to chat with you.{\r}
+Dialogue: 0,1:17:53.65,1:17:56.82,Default,,0000,0000,0000,,可惜现在实在不方便\N{\fntahoma\fs10\1c&H0080FF&}Unfortunately, you've caught me at an awkward moment.{\r}
+Dialogue: 0,1:17:56.90,1:17:59.16,Default,,0000,0000,0000,,请原谅我\N{\fntahoma\fs10\1c&H0080FF&}Please forgive me.{\r}
+Dialogue: 0,1:17:59.24,1:18:00.99,Default,,0000,0000,0000,,再见\N{\fntahoma\fs10\1c&H0080FF&}See you around.{\r}
+Dialogue: 0,1:18:03.24,1:18:05.24,Default,,0000,0000,0000,,是个老朋友\N{\fntahoma\fs10\1c&H0080FF&}An old friend.{\r}
+Dialogue: 0,1:18:09.25,1:18:10.79,Default,,0000,0000,0000,,好 别动\N{\fntahoma\fs10\1c&H0080FF&}Okay, hold on.{\r}
+Dialogue: 0,1:18:12.54,1:18:14.00,Default,,0000,0000,0000,,咱们走吧\N{\fntahoma\fs10\1c&H0080FF&}Here we go.{\r}
+Dialogue: 0,1:18:46.32,1:18:50.45,Default,,0000,0000,0000,,我走后门 必要时杀了他\N{\fntahoma\fs10\1c&H0080FF&}I'll go around back! Kill him if you have to!{\r}
+Dialogue: 0,1:18:53.67,1:18:55.63,Default,,0000,0000,0000,,你喜欢哪样?\N{\fntahoma\fs10\1c&H0080FF&}What's it to be?{\r}
+Dialogue: 0,1:18:55.71,1:18:57.88,Default,,0000,0000,0000,,是内脏在里面 还是...\N{\fntahoma\fs10\1c&H0080FF&}Bowels in or bowels out{\r}
+Dialogue: 0,1:18:57.96,1:18:59.96,Default,,0000,0000,0000,,像犹大一样流得满地都是\N{\fntahoma\fs10\1c&H0080FF&}likeJudas?{\r}
+Dialogue: 0,1:19:00.04,1:19:01.88,Default,,0000,0000,0000,,难道这又困扰你吗?\N{\fntahoma\fs10\1c&H0080FF&}Are you confused?{\r}
+Dialogue: 0,1:19:01.97,1:19:04.80,Default,,0000,0000,0000,,那就由我来决定吧\N{\fntahoma\fs10\1c&H0080FF&}I'll decide for you, if you'll permit me.{\r}
+Dialogue: 0,1:20:18.37,1:20:19.66,Default,,0000,0000,0000,,晚安\N{\fntahoma\fs10\1c&H0080FF&}Good evening.{\r}
+Dialogue: 0,1:21:27.02,1:21:29.56,Default,,0000,0000,0000,,柯德\N{\fntahoma\fs10\1c&H0080FF&}Cordell{\r}
+Dialogue: 0,1:21:29.64,1:21:31.56,Default,,0000,0000,0000,,依你看...\N{\fntahoma\fs10\1c&H0080FF&}to you...{\r}
+Dialogue: 0,1:21:31.64,1:21:35.03,Default,,0000,0000,0000,,他的招手是表示再会呢\N{\fntahoma\fs10\1c&H0080FF&}does that look like a wave good-bye{\r}
+Dialogue: 0,1:21:36.32,1:21:38.73,Default,,0000,0000,0000,,还是表示哈罗\N{\fntahoma\fs10\1c&H0080FF&}or hello?{\r}
+Dialogue: 0,1:22:23.90,1:22:27.08,Default,,0000,0000,0000,,你是怎么想?\N{\fntahoma\fs10\1c&H0080FF&}So, what do you think?{\r}
+Dialogue: 0,1:22:27.16,1:22:32.24,Default,,0000,0000,0000,,到底汉尼拔是想和她睡觉 杀她还是吃她呢?\N{\fntahoma\fs10\1c&H0080FF&}Does Lecter want to fuck her or kill her or eat her or what?{\r}
+Dialogue: 0,1:22:32.33,1:22:34.91,Default,,0000,0000,0000,,也许三者都是\N{\fntahoma\fs10\1c&H0080FF&}Probably all three.{\r}
+Dialogue: 0,1:22:34.99,1:22:37.63,Default,,0000,0000,0000,,只是不知道是什么顺序\N{\fntahoma\fs10\1c&H0080FF&}Though I wouldn't want to predict in what order.{\r}
+Dialogue: 0,1:22:39.21,1:22:41.79,Default,,0000,0000,0000,,这是我的想法\N{\fntahoma\fs10\1c&H0080FF&}Here's what I think.{\r}
+Dialogue: 0,1:22:41.88,1:22:45.96,Default,,0000,0000,0000,,不管巴尼加入多少浪漫的情节\N{\fntahoma\fs10\1c&H0080FF&}No matter how Barney might want to romanticize it{\r}
+Dialogue: 0,1:22:46.04,1:22:49.93,Default,,0000,0000,0000,,把他们描述得像美女与野兽一般\N{\fntahoma\fs10\1c&H0080FF&}and make it Beauty and the Beast{\r}
+Dialogue: 0,1:22:50.01,1:22:53.18,Default,,0000,0000,0000,,依我以前的经验来看\N{\fntahoma\fs10\1c&H0080FF&}Lecter's object, as I know from personal experience{\r}
+Dialogue: 0,1:22:53.26,1:22:55.47,Default,,0000,0000,0000,,汉尼拔的目的永远是\N{\fntahoma\fs10\1c&H0080FF&}has always been{\r}
+Dialogue: 0,1:22:55.55,1:22:57.68,Default,,0000,0000,0000,,让人逐渐崩溃\N{\fntahoma\fs10\1c&H0080FF&}degradation{\r}
+Dialogue: 0,1:22:57.76,1:23:00.02,Default,,0000,0000,0000,,并且受尽痛苦\N{\fntahoma\fs10\1c&H0080FF&}and suffering.{\r}
+Dialogue: 0,1:23:00.11,1:23:04.86,Default,,0000,0000,0000,,把这该死的面具拿走 搞得我不能呼吸\N{\fntahoma\fs10\1c&H0080FF&}Get this damn thing off me. I can't breathe in this thing.{\r}
+Dialogue: 0,1:23:07.44,1:23:10.62,Default,,0000,0000,0000,,他常以良师益友的身份出现\N{\fntahoma\fs10\1c&H0080FF&}He comes in the guise of a mentor{\r}
+Dialogue: 0,1:23:10.70,1:23:14.12,Default,,0000,0000,0000,,就像当初他对我和她一样\N{\fntahoma\fs10\1c&H0080FF&}as he did with me and her.{\r}
+Dialogue: 0,1:23:14.16,1:23:18.12,Default,,0000,0000,0000,,痛苦会使他兴奋\N{\fntahoma\fs10\1c&H0080FF&}But it's distress that excites him.{\r}
+Dialogue: 0,1:23:18.20,1:23:20.13,Default,,0000,0000,0000,,为了要引出他来\N{\fntahoma\fs10\1c&H0080FF&}To draw him{\r}
+Dialogue: 0,1:23:21.46,1:23:23.88,Default,,0000,0000,0000,,就必须要让她痛苦\N{\fntahoma\fs10\1c&H0080FF&}she needs to be distressed.{\r}
+Dialogue: 0,1:23:26.67,1:23:31.05,Default,,0000,0000,0000,,因为 当他看到她痛苦时就会现身\N{\fntahoma\fs10\1c&H0080FF&}To make her attractive to him, let him see her distressed.{\r}
+Dialogue: 0,1:23:33.18,1:23:35.76,Default,,0000,0000,0000,,我要他在看到她的痛苦后\N{\fntahoma\fs10\1c&H0080FF&}Let the damage he sees{\r}
+Dialogue: 0,1:23:35.84,1:23:38.84,Default,,0000,0000,0000,,而忍不住去伤害她\N{\fntahoma\fs10\1c&H0080FF&}suggest the damage he could do.{\r}
+Dialogue: 0,1:23:48.19,1:23:51.94,Default,,0000,0000,0000,,就像狐狸听到兔子悲鸣时 会跑过去吃掉它\N{\fntahoma\fs10\1c&H0080FF&}When the fox hears the rabbit scream, he comes a-runnin'.{\r}
+Dialogue: 0,1:23:53.74,1:23:55.74,Default,,0000,0000,0000,,而不会去帮助它\N{\fntahoma\fs10\1c&H0080FF&}But not to help.{\r}
+Dialogue: 0,1:23:55.82,1:23:57.74,Default,,0000,0000,0000,,可是我不懂\N{\fntahoma\fs10\1c&H0080FF&}I don't understand.{\r}
+Dialogue: 0,1:23:57.82,1:23:59.95,Default,,0000,0000,0000,,保罗 你不需要懂\N{\fntahoma\fs10\1c&H0080FF&}There's nothing to understand, Paul.{\r}
+Dialogue: 0,1:24:00.03,1:24:03.87,Default,,0000,0000,0000,,只要知道你能拿不少钱就行了\N{\fntahoma\fs10\1c&H0080FF&}All you have to understand is what it's worth to you.{\r}
+Dialogue: 0,1:24:03.96,1:24:06.87,Default,,0000,0000,0000,,不是 我不懂 以她诚实的个性\N{\fntahoma\fs10\1c&H0080FF&}No, no, I don't understand why she didn't turn this over.{\r}
+Dialogue: 0,1:24:06.96,1:24:08.92,Default,,0000,0000,0000,,她应该会把它交出来的\N{\fntahoma\fs10\1c&H0080FF&}I mean, she's such a straight arrow.{\r}
+Dialogue: 0,1:24:09.00,1:24:12.37,Default,,0000,0000,0000,,她没交出来 是因为没收到\N{\fntahoma\fs10\1c&H0080FF&}She didn't turn it over because she didn't receive it.{\r}
+Dialogue: 0,1:24:12.46,1:24:14.51,Default,,0000,0000,0000,,她没收到 是因为没寄给她\N{\fntahoma\fs10\1c&H0080FF&}She didn't receive it because it was never sent.{\r}
+Dialogue: 0,1:24:14.59,1:24:17.01,Default,,0000,0000,0000,,没寄给她 是因为汉尼拔没写\N{\fntahoma\fs10\1c&H0080FF&}It was never sent because Lecter didn't write it.{\r}
+Dialogue: 0,1:24:17.09,1:24:19.63,Default,,0000,0000,0000,,他没写 是因为那是我写的\N{\fntahoma\fs10\1c&H0080FF&}He didn't write it because I did.{\r}
+Dialogue: 0,1:24:24.98,1:24:26.89,Default,,0000,0000,0000,,你认为如何?\N{\fntahoma\fs10\1c&H0080FF&}So, what do you think?{\r}
+Dialogue: 0,1:24:26.98,1:24:30.39,Default,,0000,0000,0000,,我觉得你最好别再帮她\N{\fntahoma\fs10\1c&H0080FF&}You'd have been better off if you'd never got her out of trouble.{\r}
+Dialogue: 0,1:24:30.48,1:24:34.48,Default,,0000,0000,0000,,你管得也太多了 我是问你要多少钱?\N{\fntahoma\fs10\1c&H0080FF&}Oh, woulda, shoulda, coulda. I meant, what do you think about the money?{\r}
+Dialogue: 0,1:24:34.57,1:24:35.74,Default,,0000,0000,0000,,五\N{\fntahoma\fs10\1c&H0080FF&}Five.{\r}
+Dialogue: 0,1:24:36.82,1:24:41.24,Default,,0000,0000,0000,,让我们为这个五干一杯\N{\fntahoma\fs10\1c&H0080FF&}Let's just toss it off, like "five."{\r}
+Dialogue: 0,1:24:41.32,1:24:44.28,Default,,0000,0000,0000,,你最好说清楚到底要多少\N{\fntahoma\fs10\1c&H0080FF&}Let's say it with the respect it deserves.{\r}
+Dialogue: 0,1:24:44.36,1:24:47.33,Default,,0000,0000,0000,,我是说五十万\N{\fntahoma\fs10\1c&H0080FF&}Five hundred thousand dollars.{\r}
+Dialogue: 0,1:24:47.41,1:24:49.29,Default,,0000,0000,0000,,很好 不多嘛\N{\fntahoma\fs10\1c&H0080FF&}That's better, but not much.{\r}
+Dialogue: 0,1:24:49.37,1:24:51.79,Default,,0000,0000,0000,,-能成功吗?  -绝对可以\N{\fntahoma\fs10\1c&H0080FF&}-Now, will it work? -It'll work.{\r}
+Dialogue: 0,1:24:51.87,1:24:54.00,Default,,0000,0000,0000,,可惜不会很好看\N{\fntahoma\fs10\1c&H0080FF&}It won't be pretty.{\r}
+Dialogue: 0,1:24:54.08,1:24:56.08,Default,,0000,0000,0000,,那没关系\N{\fntahoma\fs10\1c&H0080FF&}What ever is?{\r}
+Dialogue: 0,1:24:59.55,1:25:01.72,Default,,0000,0000,0000,,白痴\N{\fntahoma\fs10\1c&H0080FF&}Cocksucker.{\r}
+Dialogue: 0,1:25:01.80,1:25:04.76,Default,,0000,0000,0000,,我从没见过这东西\N{\fntahoma\fs10\1c&H0080FF&}Never seen this before in my life.{\r}
+Dialogue: 0,1:25:04.84,1:25:09.23,Default,,0000,0000,0000,,那为什么会在地下室 你的办公室里找到呢?\N{\fntahoma\fs10\1c&H0080FF&}Then how do you account for its being found in your office, your basement?{\r}
+Dialogue: 0,1:25:09.31,1:25:12.23,Default,,0000,0000,0000,,你要我怎么回答\N{\fntahoma\fs10\1c&H0080FF&}How do you want me to answer that, Mr. Krendler?{\r}
+Dialogue: 0,1:25:12.31,1:25:15.23,Default,,0000,0000,0000,,我根本没必要把它藏起来\N{\fntahoma\fs10\1c&H0080FF&}What possible reason might I have to withhold it?{\r}
+Dialogue: 0,1:25:15.31,1:25:18.57,Default,,0000,0000,0000,,或许是因为它的内容\N{\fntahoma\fs10\1c&H0080FF&}Perhaps because of the nature of its content.{\r}
+Dialogue: 0,1:25:18.65,1:25:21.61,Default,,0000,0000,0000,,念起来倒像封情书\N{\fntahoma\fs10\1c&H0080FF&}Reads to me like a love letter.{\r}
+Dialogue: 0,1:25:21.69,1:25:24.78,Default,,0000,0000,0000,,-有没有查过指纹  -没有指纹\N{\fntahoma\fs10\1c&H0080FF&}-Has it been tested for prints? -No prints on it. None on the last one.{\r}
+Dialogue: 0,1:25:24.86,1:25:26.19,Default,,0000,0000,0000,,笔迹分析呢?\N{\fntahoma\fs10\1c&H0080FF&}Handwriting analysis?{\r}
+Dialogue: 0,1:25:26.24,1:25:30.45,Default,,0000,0000,0000,,"你有没有想过 为什么 那些庸俗的人无法了解你"\N{\fntahoma\fs10\1c&H0080FF&}"Did you ever think, Clarice, why the philistines don't understand you?{\r}
+Dialogue: 0,1:25:30.54,1:25:32.83,Default,,0000,0000,0000,,"因为你就是参孙之谜"\N{\fntahoma\fs10\1c&H0080FF&}It's because you're the answer to Samson's riddle.{\r}
+Dialogue: 0,1:25:32.91,1:25:35.00,Default,,0000,0000,0000,,"你是狮子里的蜜糖"\N{\fntahoma\fs10\1c&H0080FF&}You are the honey in the lion."{\r}
+Dialogue: 0,1:25:35.08,1:25:36.58,Default,,0000,0000,0000,,很像他\N{\fntahoma\fs10\1c&H0080FF&}Sounds like him to me.{\r}
+Dialogue: 0,1:25:36.66,1:25:40.96,Default,,0000,0000,0000,,你是说像同性恋? 我说像那个迷恋你的傻瓜\N{\fntahoma\fs10\1c&H0080FF&}-Do you mean, like a homosexual? -Like a nut with a crush.{\r}
+Dialogue: 0,1:25:41.05,1:25:42.42,Default,,0000,0000,0000,,执政官诺门 我想说点...\N{\fntahoma\fs10\1c&H0080FF&}Director Noonan, I need to say something...{\r}
+Dialogue: 0,1:25:42.46,1:25:44.96,Default,,0000,0000,0000,,史黛琳探员 我命令你暂时停职\N{\fntahoma\fs10\1c&H0080FF&}Agent Starling, I am placing you on administrative leave{\r}
+Dialogue: 0,1:25:45.05,1:25:49.26,Default,,0000,0000,0000,,直到文件的分析 证明我们做出错误的决定为止\N{\fntahoma\fs10\1c&H0080FF&}till document analysis tells me unequivocally a mistake's been made.{\r}
+Dialogue: 0,1:25:49.30,1:25:52.52,Default,,0000,0000,0000,,在此期间 你仍能享用医疗保险\N{\fntahoma\fs10\1c&H0080FF&}In the meantime, you remain eligible for insurance and medical benefits.{\r}
+Dialogue: 0,1:25:52.60,1:25:55.68,Default,,0000,0000,0000,,把你的武器 和证件交给柏塞探员\N{\fntahoma\fs10\1c&H0080FF&}Surrender your weapons and your identification to Agent Pearsall.{\r}
+Dialogue: 0,1:26:08.61,1:26:11.36,Default,,0000,0000,0000,,我有权力表达自己的想法\N{\fntahoma\fs10\1c&H0080FF&}I want to say something. I think I'm entitled.{\r}
+Dialogue: 0,1:26:11.45,1:26:13.20,Default,,0000,0000,0000,,请讲\N{\fntahoma\fs10\1c&H0080FF&}Go ahead.{\r}
+Dialogue: 0,1:26:13.29,1:26:16.74,Default,,0000,0000,0000,,我认为 维杰先生为了私人恩怨\N{\fntahoma\fs10\1c&H0080FF&}I think Mr. Mason Verger is trying to capture Dr. Lecter{\r}
+Dialogue: 0,1:26:16.83,1:26:18.83,Default,,0000,0000,0000,,想要捉住汉尼拔医师\N{\fntahoma\fs10\1c&H0080FF&}for the purposes of personal revenge.{\r}
+Dialogue: 0,1:26:18.91,1:26:21.41,Default,,0000,0000,0000,,我认为保罗先生和他勾结\N{\fntahoma\fs10\1c&H0080FF&}I think Mr. Krendler is in collusion with him{\r}
+Dialogue: 0,1:26:21.49,1:26:24.46,Default,,0000,0000,0000,,利用调查局的资源 去帮助维杰先生\N{\fntahoma\fs10\1c&H0080FF&}and wants the FBI's efforts against Dr. Lecter to work for Mr. Verger.{\r}
+Dialogue: 0,1:26:24.50,1:26:27.38,Default,,0000,0000,0000,,我更认为保罗先生已被人收买\N{\fntahoma\fs10\1c&H0080FF&}I think Mr. Krendler is being paid to do this.{\r}
+Dialogue: 0,1:26:27.46,1:26:31.17,Default,,0000,0000,0000,,-好在你今天没有发誓  -少吓我 你去发誓呀!\N{\fntahoma\fs10\1c&H0080FF&}-Lucky you're not sworn here today. -Swear me! You swear too!{\r}
+Dialogue: 0,1:26:31.25,1:26:34.01,Default,,0000,0000,0000,,史黛琳 如果证据不足\N{\fntahoma\fs10\1c&H0080FF&}Clarice, if the evidence is lacking{\r}
+Dialogue: 0,1:26:34.10,1:26:36.72,Default,,0000,0000,0000,,你就能立即复职\N{\fntahoma\fs10\1c&H0080FF&}you'll be entitled to full reinstatement without prejudice{\r}
+Dialogue: 0,1:26:36.81,1:26:41.22,Default,,0000,0000,0000,,但是你若采取不合作的态度\N{\fntahoma\fs10\1c&H0080FF&}if you don't do or say anything in the meantime{\r}
+Dialogue: 0,1:26:41.31,1:26:43.82,Default,,0000,0000,0000,,那就没希望了\N{\fntahoma\fs10\1c&H0080FF&}that would make that impossible.{\r}
+Dialogue: 0,1:26:44.02,1:26:47.36,Default,,0000,0000,0000,,史黛琳探员在调查局任职十年\N{\fntahoma\fs10\1c&H0080FF&}Relieved of field duty pending an internal investigation{\r}
+Dialogue: 0,1:26:47.44,1:26:50.40,Default,,0000,0000,0000,,如今却被解除职务 等待内部调查\N{\fntahoma\fs10\1c&H0080FF&}Special Agent Clarice Starling, a ten-year veteran on the Bureau{\r}
+Dialogue: 0,1:26:50.48,1:26:52.52,Default,,0000,0000,0000,,她的事业始于\N{\fntahoma\fs10\1c&H0080FF&}began her career with an assignment{\r}
+Dialogue: 0,1:26:52.61,1:26:54.69,Default,,0000,0000,0000,,与致命狂人汉尼拔的会晤\N{\fntahoma\fs10\1c&H0080FF&}to interview lethal madman Hannibal Lecter.{\r}
+Dialogue: 0,1:26:54.78,1:26:58.62,Default,,0000,0000,0000,,早先 我们听到 司法部发言人保罗的评论\N{\fntahoma\fs10\1c&H0080FF&}Earlier, we heard comments from Justice Department spokesman Paul Krendler.{\r}
+Dialogue: 0,1:26:59.74,1:27:01.41,Default,,0000,0000,0000,,请你评论一下...\N{\fntahoma\fs10\1c&H0080FF&}Can you comment on the Justice Department's...{\r}
+Dialogue: 0,1:27:01.49,1:27:03.08,Default,,0000,0000,0000,,今早司法部所做的决定\N{\fntahoma\fs10\1c&H0080FF&}decision this morning?{\r}
+Dialogue: 0,1:27:03.16,1:27:07.17,Default,,0000,0000,0000,,调查局和司法部 都非常小心的处理此事\N{\fntahoma\fs10\1c&H0080FF&}The FBI and theJustice Department are looking very carefully into the charges.{\r}
+Dialogue: 0,1:27:07.25,1:27:09.59,Default,,0000,0000,0000,,而且态度非常认真\N{\fntahoma\fs10\1c&H0080FF&}And, yes, they are extremely serious.{\r}
+Dialogue: 0,1:27:09.67,1:27:11.17,Default,,0000,0000,0000,,我想加点自己的想法\N{\fntahoma\fs10\1c&H0080FF&}I'd like to add a personal note, though.{\r}
+Dialogue: 0,1:27:11.25,1:27:15.89,Default,,0000,0000,0000,,-史黛琳是我们最好的探员之一  -不 你留下来\N{\fntahoma\fs10\1c&H0080FF&}-Starling's one of our best agents. -No, no, no, stay.{\r}
+Dialogue: 0,1:27:15.97,1:27:19.97,Default,,0000,0000,0000,,我不相信这些控诉会成立\N{\fntahoma\fs10\1c&H0080FF&}I would be very surprised if these accusations turn out to be true.{\r}
+Dialogue: 0,1:27:20.05,1:27:23.51,Default,,0000,0000,0000,,难道司法部和调查局 真的采取同一步调吗?\N{\fntahoma\fs10\1c&H0080FF&}Is theJustice Department and FBI united in this decision?{\r}
+Dialogue: 0,1:27:23.60,1:27:26.30,Default,,0000,0000,0000,,现在还太早替她做结论\N{\fntahoma\fs10\1c&H0080FF&}It's much too soon to condemn her{\r}
+Dialogue: 0,1:28:04.97,1:28:07.26,Default,,0000,0000,0000,,*佛利逊通讯*
+Dialogue: 0,1:28:11.56,1:28:13.27,Default,,0000,0000,0000,,乖狗\N{\fntahoma\fs10\1c&H0080FF&}Good boy.{\r}
+Dialogue: 0,1:30:55.46,1:30:57.88,Default,,0000,0000,0000,,我觉得她很好\N{\fntahoma\fs10\1c&H0080FF&}I think she's nice.{\r}
+Dialogue: 0,1:30:57.92,1:31:00.80,Default,,0000,0000,0000,,她对我一直很好 很有礼貌\N{\fntahoma\fs10\1c&H0080FF&}She's always been nice to me. Polite.{\r}
+Dialogue: 0,1:31:00.89,1:31:02.39,Default,,0000,0000,0000,,难道你不同意\N{\fntahoma\fs10\1c&H0080FF&}Don't you think?{\r}
+Dialogue: 0,1:31:02.47,1:31:05.39,Default,,0000,0000,0000,,巴尼 你知道鹞鸽是什么吗?\N{\fntahoma\fs10\1c&H0080FF&}Do you know what a roller pigeon is, Barney?{\r}
+Dialogue: 0,1:31:05.47,1:31:07.81,Default,,0000,0000,0000,,鹞鸽喜欢飞得很高很快\N{\fntahoma\fs10\1c&H0080FF&}Roller pigeons climb high and fast{\r}
+Dialogue: 0,1:31:07.89,1:31:10.97,Default,,0000,0000,0000,,然后翻着筋斗快速冲向地面\N{\fntahoma\fs10\1c&H0080FF&}then roll over and fall just as fast towards the Earth.{\r}
+Dialogue: 0,1:31:11.07,1:31:14.40,Default,,0000,0000,0000,,鹞鸽又分成肤浅和深沉两种\N{\fntahoma\fs10\1c&H0080FF&}There are shallow rollers and there are deep rollers{\r}
+Dialogue: 0,1:31:14.48,1:31:17.90,Default,,0000,0000,0000,,但是当两个深沉的鹞鸽结合时\N{\fntahoma\fs10\1c&H0080FF&}but you can't breed two deep rollers, or their young, their offspring{\r}
+Dialogue: 0,1:31:17.98,1:31:21.40,Default,,0000,0000,0000,,它们的后代 往往会俯冲撞地而死\N{\fntahoma\fs10\1c&H0080FF&}will roll all the way down, hit and die.{\r}
+Dialogue: 0,1:31:21.48,1:31:25.49,Default,,0000,0000,0000,,史黛琳探员是只深沉的鹞鸽\N{\fntahoma\fs10\1c&H0080FF&}Agent Starling is a deep roller.{\r}
+Dialogue: 0,1:31:25.58,1:31:28.49,Default,,0000,0000,0000,,只希望她父母中 有一个是肤浅的鹞鸽\N{\fntahoma\fs10\1c&H0080FF&}Let's hope one of her parents was not.{\r}
+Dialogue: 0,1:32:58.75,1:33:01.17,Default,,0000,0000,0000,,史黛琳 电话的电池快用完了\N{\fntahoma\fs10\1c&H0080FF&}The power in that battery is low, Clarice.{\r}
+Dialogue: 0,1:33:01.25,1:33:04.00,Default,,0000,0000,0000,,为了不吵醒你 我没换\N{\fntahoma\fs10\1c&H0080FF&}I would've changed it, but I didn't want to wake you.{\r}
+Dialogue: 0,1:33:04.04,1:33:08.37,Default,,0000,0000,0000,,你可以用充电器里的电池 但愿现在已经充好电了\N{\fntahoma\fs10\1c&H0080FF&}Use the one in the charger. Hopefully, the light on it is green by now.{\r}
+Dialogue: 0,1:33:08.46,1:33:11.18,Default,,0000,0000,0000,,因为这通电话会很长 而我又不愿意中途被切断\N{\fntahoma\fs10\1c&H0080FF&}Because this is gonna be a long call and I can't let you off{\r}
+Dialogue: 0,1:33:11.26,1:33:13.68,Default,,0000,0000,0000,,更因为 他们虽然剥夺了你的职责\N{\fntahoma\fs10\1c&H0080FF&}because even though you've been stripped of your duties{\r}
+Dialogue: 0,1:33:13.76,1:33:17.05,Default,,0000,0000,0000,,但你一定会继续调查下去 绝不放弃\N{\fntahoma\fs10\1c&H0080FF&}I know you won't abandon them  you'll try to put on a trace.{\r}
+Dialogue: 0,1:33:17.13,1:33:22.85,Default,,0000,0000,0000,,所以我们先挂断电话 好让你换电池\N{\fntahoma\fs10\1c&H0080FF&}So we'll disconnect long enough for you to exchange the battery in the phone for the one in the charger.{\r}
+Dialogue: 0,1:33:22.94,1:33:25.94,Default,,0000,0000,0000,,三秒钟够吗?\N{\fntahoma\fs10\1c&H0080FF&}Shall we say, three seconds?{\r}
+Dialogue: 0,1:33:26.02,1:33:27.56,Default,,0000,0000,0000,,-准备好了吗?  -好了\N{\fntahoma\fs10\1c&H0080FF&}-Are you ready? -Yes.{\r}
+Dialogue: 0,1:33:27.64,1:33:28.60,Default,,0000,0000,0000,,开始\N{\fntahoma\fs10\1c&H0080FF&}Go.{\r}
+Dialogue: 0,1:33:34.15,1:33:36.03,Default,,0000,0000,0000,,-很好  -谢谢你\N{\fntahoma\fs10\1c&H0080FF&}-Very good. -Thank you.{\r}
+Dialogue: 0,1:33:36.11,1:33:39.03,Default,,0000,0000,0000,,在哥伦比亚区 被抓到无照带枪\N{\fntahoma\fs10\1c&H0080FF&}Remember, Clarice, if you get caught with a concealed, unlicensed firearm{\r}
+Dialogue: 0,1:33:39.11,1:33:41.96,Default,,0000,0000,0000,,惩罚相当严重\N{\fntahoma\fs10\1c&H0080FF&}in the District of Columbia, the penalty is very stiff.{\r}
+Dialogue: 0,1:33:42.04,1:33:45.62,Default,,0000,0000,0000,,不过如果你坚持那就带吧 现在到车里去\N{\fntahoma\fs10\1c&H0080FF&}But bring the guns if you have to. Now get in your car.{\r}
+Dialogue: 0,1:34:22.61,1:34:24.91,Default,,0000,0000,0000,,我之所以这么做\N{\fntahoma\fs10\1c&H0080FF&}The reason we're doing it like this, Clarice{\r}
+Dialogue: 0,1:34:24.95,1:34:29.00,Default,,0000,0000,0000,,是因为当我们谈话时 我希望你是清醒的\N{\fntahoma\fs10\1c&H0080FF&}is because I like to watch you as we speak, with your eyes open.{\r}
+Dialogue: 0,1:34:30.20,1:34:33.83,Default,,0000,0000,0000,,别紧张 那不会使我兴奋 只会让我高兴而已\N{\fntahoma\fs10\1c&H0080FF&}No, it does not excite me. It pleases me.{\r}
+Dialogue: 0,1:34:33.91,1:34:36.34,Default,,0000,0000,0000,,你的脚形很美\N{\fntahoma\fs10\1c&H0080FF&}You have very shapely feet.{\r}
+Dialogue: 0,1:34:39.51,1:34:42.09,Default,,0000,0000,0000,,你现在在哪里?把街名念出来\N{\fntahoma\fs10\1c&H0080FF&}Where are we now? Call it out.{\r}
+Dialogue: 0,1:34:42.17,1:34:43.96,Default,,0000,0000,0000,,麻萨诸塞街\N{\fntahoma\fs10\1c&H0080FF&}Massachusetts Avenue.{\r}
+Dialogue: 0,1:34:44.05,1:34:45.92,Default,,0000,0000,0000,,到麻萨诸塞街去\N{\fntahoma\fs10\1c&H0080FF&}Take it.{\r}
+Dialogue: 0,1:34:46.02,1:34:49.81,Default,,0000,0000,0000,,我们就拿你的感受做开场吧\N{\fntahoma\fs10\1c&H0080FF&}I thought, to begin with, you might tell me how you're feeling.{\r}
+Dialogue: 0,1:34:49.89,1:34:50.85,Default,,0000,0000,0000,,那方面的?\N{\fntahoma\fs10\1c&H0080FF&}About what?{\r}
+Dialogue: 0,1:34:50.93,1:34:53.81,Default,,0000,0000,0000,,例如你雇主如何对待你\N{\fntahoma\fs10\1c&H0080FF&}The masters you serve and how they've treated you.{\r}
+Dialogue: 0,1:34:53.89,1:34:56.60,Default,,0000,0000,0000,,还有你的职业\N{\fntahoma\fs10\1c&H0080FF&}Your career, such as it is.{\r}
+Dialogue: 0,1:34:56.69,1:34:58.61,Default,,0000,0000,0000,,甚至你的生命\N{\fntahoma\fs10\1c&H0080FF&}Your life, Clarice.{\r}
+Dialogue: 0,1:34:58.65,1:35:00.61,Default,,0000,0000,0000,,我以为会谈你的事\N{\fntahoma\fs10\1c&H0080FF&}I thought we might talk about yours.{\r}
+Dialogue: 0,1:35:00.69,1:35:03.69,Default,,0000,0000,0000,,-下面的横街叫什么?  -国会街\N{\fntahoma\fs10\1c&H0080FF&}-What's the next cross street? -Capitol Street.{\r}
+Dialogue: 0,1:35:03.78,1:35:08.04,Default,,0000,0000,0000,,你在第二条街左转 把车停到火车站去\N{\fntahoma\fs10\1c&H0080FF&}In two blocks, make a left into Union Station. Park.{\r}
+Dialogue: 0,1:35:09.33,1:35:11.79,Default,,0000,0000,0000,,我的生命?那有什么好谈\N{\fntahoma\fs10\1c&H0080FF&}My life? What is there to say about mine?{\r}
+Dialogue: 0,1:35:11.83,1:35:14.91,Default,,0000,0000,0000,,我已冬眠了一段日子\N{\fntahoma\fs10\1c&H0080FF&}I have been in a state of hibernation for some time{\r}
+Dialogue: 0,1:35:14.99,1:35:17.08,Default,,0000,0000,0000,,乏善可陈\N{\fntahoma\fs10\1c&H0080FF&}a little inactive.{\r}
+Dialogue: 0,1:35:17.16,1:35:22.30,Default,,0000,0000,0000,,可是现在我回来了 既快乐又健康\N{\fntahoma\fs10\1c&H0080FF&}But now I'm back home and I'm very happy and very healthy.{\r}
+Dialogue: 0,1:35:22.34,1:35:26.71,Default,,0000,0000,0000,,-倒是你让我很操心  -我很好\N{\fntahoma\fs10\1c&H0080FF&}-You. It's you I'm worried about. -I'm fine.{\r}
+Dialogue: 0,1:35:26.80,1:35:29.64,Default,,0000,0000,0000,,不 你一点也不好\N{\fntahoma\fs10\1c&H0080FF&}No, you're certainly not fine, Clarice.{\r}
+Dialogue: 0,1:35:29.68,1:35:32.39,Default,,0000,0000,0000,,你把自己奉献给调查局\N{\fntahoma\fs10\1c&H0080FF&}You fell in love with the Bureau, the institution{\r}
+Dialogue: 0,1:35:32.47,1:35:35.85,Default,,0000,0000,0000,,然而在付出一切之后\N{\fntahoma\fs10\1c&H0080FF&}only to discover, after giving it everything you've got{\r}
+Dialogue: 0,1:35:35.93,1:35:38.01,Default,,0000,0000,0000,,却发现他们并不喜欢你\N{\fntahoma\fs10\1c&H0080FF&}that it does not love you back{\r}
+Dialogue: 0,1:35:38.10,1:35:40.11,Default,,0000,0000,0000,,这点让你愤愤不平\N{\fntahoma\fs10\1c&H0080FF&}that, in fact, it resents you.{\r}
+Dialogue: 0,1:35:40.19,1:35:43.15,Default,,0000,0000,0000,,比放弃丈夫和孩子还要愤怒\N{\fntahoma\fs10\1c&H0080FF&}It resents you more than the husband and children you gave up to it.{\r}
+Dialogue: 0,1:35:43.23,1:35:47.69,Default,,0000,0000,0000,,为什么?为什么你会这么愤怒\N{\fntahoma\fs10\1c&H0080FF&}Why is that, do you think? Why are you so resented?{\r}
+Dialogue: 0,1:35:47.77,1:35:50.24,Default,,0000,0000,0000,,-你告诉我  -我告诉你?\N{\fntahoma\fs10\1c&H0080FF&}-Tell me. -Tell you?{\r}
+Dialogue: 0,1:35:50.33,1:35:51.95,Default,,0000,0000,0000,,上帝会保祐你\N{\fntahoma\fs10\1c&H0080FF&}God bless you.{\r}
+Dialogue: 0,1:35:52.03,1:35:53.91,Default,,0000,0000,0000,,你难道还看不出来\N{\fntahoma\fs10\1c&H0080FF&}Well, isn't it clear?{\r}
+Dialogue: 0,1:35:55.66,1:35:59.08,Default,,0000,0000,0000,,你听命行事\N{\fntahoma\fs10\1c&H0080FF&}You serve the idea of order, Clarice.{\r}
+Dialogue: 0,1:35:59.16,1:36:00.53,Default,,0000,0000,0000,,他们不是\N{\fntahoma\fs10\1c&H0080FF&}They don't.{\r}
+Dialogue: 0,1:36:00.63,1:36:04.21,Default,,0000,0000,0000,,你遵守宣誓 他们不是\N{\fntahoma\fs10\1c&H0080FF&}You believe in the oath you took. They don't.{\r}
+Dialogue: 0,1:36:04.29,1:36:08.67,Default,,0000,0000,0000,,你觉得保护弱小是你的责任 他们不是\N{\fntahoma\fs10\1c&H0080FF&}You feel it is your duty to protect the sheep. They don't.{\r}
+Dialogue: 0,1:36:08.75,1:36:10.88,Default,,0000,0000,0000,,因为你的不同 所以他们不喜欢你\N{\fntahoma\fs10\1c&H0080FF&}They don't like you because you're not like them.{\r}
+Dialogue: 0,1:36:10.96,1:36:13.18,Default,,0000,0000,0000,,他们对你又妒又恨\N{\fntahoma\fs10\1c&H0080FF&}They hate you and envy you.{\r}
+Dialogue: 0,1:36:13.26,1:36:15.51,Default,,0000,0000,0000,,他们懦弱 任性 又无法无天\N{\fntahoma\fs10\1c&H0080FF&}They are weak, unruly and believe in nothing.{\r}
+Dialogue: 0,1:36:15.60,1:36:17.01,Default,,0000,0000,0000,,*快速照相*
+Dialogue: 0,1:36:17.10,1:36:19.64,Default,,0000,0000,0000,,汉尼拔医生 维杰要杀你\N{\fntahoma\fs10\1c&H0080FF&}Mason Verger wants to kill you, Dr. Lecter.{\r}
+Dialogue: 0,1:36:19.72,1:36:22.51,Default,,0000,0000,0000,,向我投降 我保证没人会伤害你\N{\fntahoma\fs10\1c&H0080FF&}Turn yourself in to me, and I promise no one will hurt you.{\r}
+Dialogue: 0,1:36:22.56,1:36:26.11,Default,,0000,0000,0000,,你会握着我的手 和我一起待在监狱里吗?\N{\fntahoma\fs10\1c&H0080FF&}Will you stay with me in my prison cell and hold my hand, Clarice?{\r}
+Dialogue: 0,1:36:26.19,1:36:28.52,Default,,0000,0000,0000,,那样一定很有意思\N{\fntahoma\fs10\1c&H0080FF&}We could have some fun.{\r}
+Dialogue: 0,1:36:28.61,1:36:32.06,Default,,0000,0000,0000,,你错了 其实我更想杀维杰\N{\fntahoma\fs10\1c&H0080FF&}No, Mason Verger does not want to kill me any more than I want to kill him.{\r}
+Dialogue: 0,1:36:32.15,1:36:36.07,Default,,0000,0000,0000,,他只想用 不可思议的方法来折磨我\N{\fntahoma\fs10\1c&H0080FF&}He just wants to see me suffer in some unimaginable way.{\r}
+Dialogue: 0,1:36:36.16,1:36:38.28,Default,,0000,0000,0000,,是个无可救药的疯子\N{\fntahoma\fs10\1c&H0080FF&}He is rather twisted, you know.{\r}
+Dialogue: 0,1:36:38.37,1:36:39.74,Default,,0000,0000,0000,,你见过他吗?\N{\fntahoma\fs10\1c&H0080FF&}Have you had the pleasure of meeting him?{\r}
+Dialogue: 0,1:36:39.82,1:36:40.82,Default,,0000,0000,0000,,见过\N{\fntahoma\fs10\1c&H0080FF&}Yes.{\r}
+Dialogue: 0,1:36:40.91,1:36:43.12,Default,,0000,0000,0000,,面对面?\N{\fntahoma\fs10\1c&H0080FF&}Face-to-face, so to speak?{\r}
+Dialogue: 0,1:36:43.20,1:36:45.13,Default,,0000,0000,0000,,是的\N{\fntahoma\fs10\1c&H0080FF&}Yes.{\r}
+Dialogue: 0,1:36:45.21,1:36:48.33,Default,,0000,0000,0000,,-他是不是很引人注意?  -汉尼拔医生\N{\fntahoma\fs10\1c&H0080FF&}-Attractive, isn't he? -Dr. Lecter?{\r}
+Dialogue: 0,1:36:49.71,1:36:50.50,Default,,0000,0000,0000,,你在哪里?\N{\fntahoma\fs10\1c&H0080FF&}Where are you?{\r}
+Dialogue: 0,1:36:52.79,1:36:54.79,Default,,0000,0000,0000,,好 再回来谈你\N{\fntahoma\fs10\1c&H0080FF&}Okay, back to you.{\r}
+Dialogue: 0,1:36:54.89,1:36:58.18,Default,,0000,0000,0000,,如今所有你关心的东西 全被他们拿走了\N{\fntahoma\fs10\1c&H0080FF&}I want to know what it is you think you will do{\r}
+Dialogue: 0,1:36:58.22,1:37:00.55,Default,,0000,0000,0000,,我想知道你打算怎么办\N{\fntahoma\fs10\1c&H0080FF&}now that everything you've ever cared about has been taken away from you.{\r}
+Dialogue: 0,1:37:00.64,1:37:03.05,Default,,0000,0000,0000,,我不知道\N{\fntahoma\fs10\1c&H0080FF&}I don't know, Dr. Lecter.{\r}
+Dialogue: 0,1:37:03.14,1:37:05.98,Default,,0000,0000,0000,,你能像你妈妈一样\N{\fntahoma\fs10\1c&H0080FF&}Clarice, do you think you'll work as a chambermaid{\r}
+Dialogue: 0,1:37:06.06,1:37:08.81,Default,,0000,0000,0000,,到汽车旅馆里去\N{\fntahoma\fs10\1c&H0080FF&}at a motel on Route 66{\r}
+Dialogue: 0,1:37:08.90,1:37:11.60,Default,,0000,0000,0000,,当打扫女工吗?\N{\fntahoma\fs10\1c&H0080FF&}just like your mommy?{\r}
+Dialogue: 0,1:37:20.86,1:37:22.95,Default,,0000,0000,0000,,你在想什么?\N{\fntahoma\fs10\1c&H0080FF&}What are you thinking now?{\r}
+Dialogue: 0,1:37:23.03,1:37:27.03,Default,,0000,0000,0000,,卸任的史黛琳探员 你在听我说话吗?\N{\fntahoma\fs10\1c&H0080FF&}Are you paying attention to me, ex-Special Agent Starling?{\r}
+Dialogue: 0,1:37:27.92,1:37:31.25,Default,,0000,0000,0000,,还是想找出我的藏身处\N{\fntahoma\fs10\1c&H0080FF&}Are you, by any chance, trying to trace my whereabouts?{\r}
+Dialogue: 0,1:37:35.29,1:37:38.76,Default,,0000,0000,0000,,-汉尼拔医生 我被跟踪了  -我已经看到他们\N{\fntahoma\fs10\1c&H0080FF&}-I'm being followed, Dr. Lecter. -I know. I've seen them.{\r}
+Dialogue: 0,1:37:38.84,1:37:41.76,Default,,0000,0000,0000,,你现在真是左右为难\N{\fntahoma\fs10\1c&H0080FF&}And now you're in a real dilemma, aren't you?{\r}
+Dialogue: 0,1:37:41.80,1:37:45.63,Default,,0000,0000,0000,,明知会引导他们找到我 难道你还要继续找吗?\N{\fntahoma\fs10\1c&H0080FF&}Do you continue to try to find me, knowing that you are leading them to me?{\r}
+Dialogue: 0,1:37:45.72,1:37:49.35,Default,,0000,0000,0000,,还是你认为 自己真有能力\N{\fntahoma\fs10\1c&H0080FF&}Do you have so much faith in your abilities that you honestly believe{\r}
+Dialogue: 0,1:37:49.44,1:37:53.27,Default,,0000,0000,0000,,能同时逮捕我们双方\N{\fntahoma\fs10\1c&H0080FF&}you can somehow simultaneously arrest me and them?{\r}
+Dialogue: 0,1:37:53.35,1:37:57.31,Default,,0000,0000,0000,,不过结果可能会和 鲜鱼市场一样糟糕\N{\fntahoma\fs10\1c&H0080FF&}It could get very messy, Clarice, like the fish market.{\r}
+Dialogue: 0,1:37:59.03,1:38:01.70,Default,,0000,0000,0000,,-让我来替你做 如何?  -做什么?\N{\fntahoma\fs10\1c&H0080FF&}-What if I did it for you? -Did what?{\r}
+Dialogue: 0,1:38:01.78,1:38:05.32,Default,,0000,0000,0000,,伤害那些伤害过你的人\N{\fntahoma\fs10\1c&H0080FF&}Harmed them, Clarice, the ones who have harmed you.{\r}
+Dialogue: 0,1:38:05.40,1:38:08.70,Default,,0000,0000,0000,,叫他们来求你的原谅\N{\fntahoma\fs10\1c&H0080FF&}What if I made them scream apologies?{\r}
+Dialogue: 0,1:38:08.78,1:38:10.79,Default,,0000,0000,0000,,不 我真不该说\N{\fntahoma\fs10\1c&H0080FF&}No, I shouldn't even say it{\r}
+Dialogue: 0,1:38:10.87,1:38:14.29,Default,,0000,0000,0000,,因为若以你的是非标准来衡量\N{\fntahoma\fs10\1c&H0080FF&}because you'll feel, with your perfect grasp of right and wrong{\r}
+Dialogue: 0,1:38:14.33,1:38:16.58,Default,,0000,0000,0000,,恐怕会认为自己也是共犯\N{\fntahoma\fs10\1c&H0080FF&}that you were somehow accompli.{\r}
+Dialogue: 0,1:38:17.87,1:38:19.37,Default,,0000,0000,0000,,别帮我\N{\fntahoma\fs10\1c&H0080FF&}Don't help me.{\r}
+Dialogue: 0,1:38:20.88,1:38:22.88,Default,,0000,0000,0000,,当然不会 忘了我所说的\N{\fntahoma\fs10\1c&H0080FF&}No, of course not. Forget I said it.{\r}
+Dialogue: 0,1:38:27.84,1:38:30.63,Default,,0000,0000,0000,,你很接近目标\N{\fntahoma\fs10\1c&H0080FF&}Clarice, you were very, very warm.{\r}
+Dialogue: 0,1:38:30.73,1:38:32.73,Default,,0000,0000,0000,,非常接近\N{\fntahoma\fs10\1c&H0080FF&}You were so close.{\r}
+Dialogue: 0,1:38:36.93,1:38:39.85,Default,,0000,0000,0000,,现在又偏了\N{\fntahoma\fs10\1c&H0080FF&}And now you're getting colder again.{\r}
+Dialogue: 0,1:38:39.93,1:38:42.15,Default,,0000,0000,0000,,对 就是这儿\N{\fntahoma\fs10\1c&H0080FF&}Yeah, warmer again.{\r}
+Dialogue: 0,1:38:42.24,1:38:46.40,Default,,0000,0000,0000,,好啦 给你的提示已经够多了\N{\fntahoma\fs10\1c&H0080FF&}Well, I think I've been generous enough with you and the clues.{\r}
+Dialogue: 0,1:38:46.49,1:38:49.94,Default,,0000,0000,0000,,-你自己去找吧  -汉尼拔医生\N{\fntahoma\fs10\1c&H0080FF&}-You're on your own now, Clarice. -Dr. Lecter.{\r}
+Dialogue: 0,1:38:59.25,1:39:01.95,Default,,0000,0000,0000,,希望你喜欢它们 回见\N{\fntahoma\fs10\1c&H0080FF&}Hope you like them, Clarice. Ta-ta.{\r}
+Dialogue: 0,1:39:31.90,1:39:33.48,Default,,0000,0000,0000,,放进去\N{\fntahoma\fs10\1c&H0080FF&}Go.{\r}
+Dialogue: 0,1:39:50.00,1:39:51.92,Default,,0000,0000,0000,,别挡住我!\N{\fntahoma\fs10\1c&H0080FF&}Get out of the way!{\r}
+Dialogue: 0,1:40:03.51,1:40:06.39,Default,,0000,0000,0000,,我知道歇斯底里人的第一句话是"我没有歇斯底里"\N{\fntahoma\fs10\1c&H0080FF&}I know the first thing a hysteric says is, "I am not a hysteric"...{\r}
+Dialogue: 0,1:40:06.43,1:40:09.73,Default,,0000,0000,0000,,但是我很镇静没有歇斯底里\N{\fntahoma\fs10\1c&H0080FF&}but I am not a hysteric. I am calm.{\r}
+Dialogue: 0,1:40:09.82,1:40:12.69,Default,,0000,0000,0000,,我再问你一次 先想过再回答\N{\fntahoma\fs10\1c&H0080FF&}I'll ask you one time. Think before you answer.{\r}
+Dialogue: 0,1:40:13.94,1:40:16.90,Default,,0000,0000,0000,,想想你以前的优良事迹\N{\fntahoma\fs10\1c&H0080FF&}Think about every good thing you ever did.{\r}
+Dialogue: 0,1:40:16.98,1:40:18.91,Default,,0000,0000,0000,,想想你的宣誓\N{\fntahoma\fs10\1c&H0080FF&}Think about what you swore.{\r}
+Dialogue: 0,1:40:18.95,1:40:22.24,Default,,0000,0000,0000,,有两个人在货车里 第三个开车 另一个倒地不起\N{\fntahoma\fs10\1c&H0080FF&}Two men in a van, a third driving, another man down.{\r}
+Dialogue: 0,1:40:22.33,1:40:24.87,Default,,0000,0000,0000,,他们把他放在后面 我想是汉尼拔\N{\fntahoma\fs10\1c&H0080FF&}They put him in the back. I think it was Lecter.{\r}
+Dialogue: 0,1:40:24.95,1:40:28.33,Default,,0000,0000,0000,,我给你车牌号码 并且会在 目击者面前再向你报告一次\N{\fntahoma\fs10\1c&H0080FF&}I gave you a license, and I'm reporting it to you again in front of witnesses.{\r}
+Dialogue: 0,1:40:30.38,1:40:32.00,Default,,0000,0000,0000,,好吧\N{\fntahoma\fs10\1c&H0080FF&}All right.{\r}
+Dialogue: 0,1:40:33.13,1:40:35.13,Default,,0000,0000,0000,,我将以绑架来处理\N{\fntahoma\fs10\1c&H0080FF&}I'll go with it as a kidnapping.{\r}
+Dialogue: 0,1:40:35.79,1:40:37.88,Default,,0000,0000,0000,,我会派人和当地警员前往\N{\fntahoma\fs10\1c&H0080FF&}I'll send someone with the local authorities...{\r}
+Dialogue: 0,1:40:37.96,1:40:40.26,Default,,0000,0000,0000,,希望他们 不会要我们出示搜索状\N{\fntahoma\fs10\1c&H0080FF&}if they'll let us on the property without a warrant.{\r}
+Dialogue: 0,1:40:40.35,1:40:44.68,Default,,0000,0000,0000,,-我也去 你可以指定我为代表  -不行 你不能去\N{\fntahoma\fs10\1c&H0080FF&}-I should go. You could deputize me. -No. You're not going.{\r}
+Dialogue: 0,1:40:44.76,1:40:47.43,Default,,0000,0000,0000,,你该回家等我电话\N{\fntahoma\fs10\1c&H0080FF&}You're going home, where you'll wait for me to call...{\r}
+Dialogue: 0,1:40:47.51,1:40:51.23,Default,,0000,0000,0000,,如有发现我会马上告诉你\N{\fntahoma\fs10\1c&H0080FF&}and tell you what, if anything, we've found.{\r}
+Dialogue: 0,1:40:52.52,1:40:55.81,Default,,0000,0000,0000,,谢谢维杰先生让我们查看 若有打扰的地方请原谅\N{\fntahoma\fs10\1c&H0080FF&}Thank Mr. Verger for letting us look around. Sorry if we inconvenienced him.{\r}
+Dialogue: 0,1:40:55.90,1:40:57.98,Default,,0000,0000,0000,,放心 他随时都欢迎你们\N{\fntahoma\fs10\1c&H0080FF&}He's always happy to see you.{\r}
+Dialogue: 0,1:41:07.57,1:41:09.62,Default,,0000,0000,0000,,我要打电话\N{\fntahoma\fs10\1c&H0080FF&}Phone.{\r}
+Dialogue: 0,1:41:09.70,1:41:12.29,Default,,0000,0000,0000,,什么号码?\N{\fntahoma\fs10\1c&H0080FF&}What number, please?{\r}
+Dialogue: 0,1:41:12.38,1:41:13.75,Default,,0000,0000,0000,,接卡罗\N{\fntahoma\fs10\1c&H0080FF&}Carlo.{\r}
+Dialogue: 0,1:41:21.54,1:41:23.09,Default,,0000,0000,0000,,给我一杯\N{\fntahoma\fs10\1c&H0080FF&}Give me one.{\r}
+Dialogue: 0,1:41:27.72,1:41:30.18,Default,,0000,0000,0000,,-他怎么样?  -在睡觉\N{\fntahoma\fs10\1c&H0080FF&}-How is he? -Sleeping.{\r}
+Dialogue: 0,1:41:30.26,1:41:33.01,Default,,0000,0000,0000,,把他带回家吧\N{\fntahoma\fs10\1c&H0080FF&}Bring him home.{\r}
+Dialogue: 0,1:41:56.08,1:41:59.54,Default,,0000,0000,0000,,这是史黛琳 请留话\N{\fntahoma\fs10\1c&H0080FF&}You've reached Clarice Starling. Please leave a message.{\r}
+Dialogue: 0,1:41:59.62,1:42:01.17,Default,,0000,0000,0000,,史黛琳 接电话\N{\fntahoma\fs10\1c&H0080FF&}Pick up, Starling.{\r}
+Dialogue: 0,1:42:01.25,1:42:03.21,Default,,0000,0000,0000,,那里一切正常\N{\fntahoma\fs10\1c&H0080FF&}There was nothing out there.{\r}
+Dialogue: 0,1:42:03.29,1:42:05.72,Default,,0000,0000,0000,,我再重复一遍\N{\fntahoma\fs10\1c&H0080FF&}I'm gonna say it again, in case you didn't hear me.{\r}
+Dialogue: 0,1:42:05.80,1:42:09.72,Default,,0000,0000,0000,,当你被停职时 就是普通百姓 而不是执法警官\N{\fntahoma\fs10\1c&H0080FF&}You are not a law officer while you're on suspension. You'reJoe Blow.{\r}
+Dialogue: 0,1:42:10.88,1:42:13.88,Default,,0000,0000,0000,,为了你好 希望你正在洗澡\N{\fntahoma\fs10\1c&H0080FF&}Hope for your sake you're in the bathroom.{\r}
+Dialogue: 0,1:42:53.05,1:42:54.67,Default,,0000,0000,0000,,巨大的...\N{\fntahoma\fs10\1c&H0080FF&}Hylochoerus...{\r}
+Dialogue: 0,1:42:54.76,1:42:57.92,Default,,0000,0000,0000,,丛林猪\N{\fntahoma\fs10\1c&H0080FF&}meinertzhageni.{\r}
+Dialogue: 0,1:42:58.01,1:43:02.10,Default,,0000,0000,0000,,高中的生物学中曾经提过 你还记得吗?\N{\fntahoma\fs10\1c&H0080FF&}Ring any bells from high school biology, Doctor?{\r}
+Dialogue: 0,1:43:03.18,1:43:05.10,Default,,0000,0000,0000,,不记得了?\N{\fntahoma\fs10\1c&H0080FF&}No?{\r}
+Dialogue: 0,1:43:05.18,1:43:08.77,Default,,0000,0000,0000,,让我把它的特徵告诉你\N{\fntahoma\fs10\1c&H0080FF&}Well, I could list its most conspicuous features...{\r}
+Dialogue: 0,1:43:08.85,1:43:11.61,Default,,0000,0000,0000,,或许会唤起你的记忆\N{\fntahoma\fs10\1c&H0080FF&}if that would help jog the memory.{\r}
+Dialogue: 0,1:43:12.36,1:43:15.28,Default,,0000,0000,0000,,有三对门牙...\N{\fntahoma\fs10\1c&H0080FF&}Three pairs of incisors...{\r}
+Dialogue: 0,1:43:15.36,1:43:19.94,Default,,0000,0000,0000,,一对延长犬齿\N{\fntahoma\fs10\1c&H0080FF&}one pair of elongated canines...{\r}
+Dialogue: 0,1:43:21.45,1:43:24.79,Default,,0000,0000,0000,,三对臼齿...\N{\fntahoma\fs10\1c&H0080FF&}three pairs of molars...{\r}
+Dialogue: 0,1:43:24.87,1:43:27.41,Default,,0000,0000,0000,,四对前臼齿...\N{\fntahoma\fs10\1c&H0080FF&}four pairs of premolars...{\r}
+Dialogue: 0,1:43:27.50,1:43:29.79,Default,,0000,0000,0000,,上下加起来...\N{\fntahoma\fs10\1c&H0080FF&}upper and lower...{\r}
+Dialogue: 0,1:43:29.87,1:43:34.80,Default,,0000,0000,0000,,一共四十四颗牙\N{\fntahoma\fs10\1c&H0080FF&}for a total of 44 teeth.{\r}
+Dialogue: 0,1:43:39.59,1:43:44.47,Default,,0000,0000,0000,,它们正餐前的开胃菜\N{\fntahoma\fs10\1c&H0080FF&}The meal will begin with an hors d'oeuvres tartare...{\r}
+Dialogue: 0,1:43:45.93,1:43:48.64,Default,,0000,0000,0000,,就是生吃人脚\N{\fntahoma\fs10\1c&H0080FF&}your feet.{\r}
+Dialogue: 0,1:43:48.72,1:43:50.72,Default,,0000,0000,0000,,主菜当然...是少了一双脚的你\N{\fntahoma\fs10\1c&H0080FF&}The main course...the rest of you.{\r}
+Dialogue: 0,1:43:50.81,1:43:54.48,Default,,0000,0000,0000,,不过得在七个钟头后才开饭\N{\fntahoma\fs10\1c&H0080FF&}won't be served until seven hours later.{\r}
+Dialogue: 0,1:43:54.57,1:43:56.82,Default,,0000,0000,0000,,在那段时间里...\N{\fntahoma\fs10\1c&H0080FF&}But during that time...{\r}
+Dialogue: 0,1:43:56.90,1:44:01.32,Default,,0000,0000,0000,,我会为你全身会打满点滴...\N{\fntahoma\fs10\1c&H0080FF&}you'll be able to enjoy the effects of the consumed appetizer...{\r}
+Dialogue: 0,1:44:01.40,1:44:04.83,Default,,0000,0000,0000,,好让你能清醒的感觉到 被生吃的痛楚\N{\fntahoma\fs10\1c&H0080FF&}with a full-bodied saline drip.{\r}
+Dialogue: 0,1:44:06.87,1:44:10.12,Default,,0000,0000,0000,,我打赌你正在想...\N{\fntahoma\fs10\1c&H0080FF&}I guess you wish now...{\r}
+Dialogue: 0,1:44:10.20,1:44:12.74,Default,,0000,0000,0000,,当初真该把我喂狗吃\N{\fntahoma\fs10\1c&H0080FF&}you'd fed the rest of me to the dogs.{\r}
+Dialogue: 0,1:44:14.25,1:44:16.25,Default,,0000,0000,0000,,不会的\N{\fntahoma\fs10\1c&H0080FF&}No, Mason.{\r}
+Dialogue: 0,1:44:16.88,1:44:19.42,Default,,0000,0000,0000,,我喜欢你现在这样\N{\fntahoma\fs10\1c&H0080FF&}No, I much prefer you the way you are.{\r}
+Dialogue: 0,1:44:20.55,1:44:22.05,Default,,0000,0000,0000,,那么...\N{\fntahoma\fs10\1c&H0080FF&}So...{\r}
+Dialogue: 0,1:44:23.67,1:44:25.64,Default,,0000,0000,0000,,晚餐就订在八点\N{\fntahoma\fs10\1c&H0080FF&}dinner at 8:00.{\r}
+Dialogue: 0,1:44:53.45,1:44:57.08,Default,,0000,0000,0000,,柯德 今晚的娱乐活动...\N{\fntahoma\fs10\1c&H0080FF&}You will stay for the evening's entertainment...{\r}
+Dialogue: 0,1:44:57.17,1:44:58.92,Default,,0000,0000,0000,,你会参加吧?\N{\fntahoma\fs10\1c&H0080FF&}won't you, Cordell?{\r}
+Dialogue: 0,1:44:59.00,1:45:01.59,Default,,0000,0000,0000,,如果你不介意...\N{\fntahoma\fs10\1c&H0080FF&}If it's all right with you...{\r}
+Dialogue: 0,1:45:01.67,1:45:04.42,Default,,0000,0000,0000,,我宁可不想参加\N{\fntahoma\fs10\1c&H0080FF&}I think I'd rather not.{\r}
+Dialogue: 0,1:45:04.50,1:45:06.67,Default,,0000,0000,0000,,是宁可不...\N{\fntahoma\fs10\1c&H0080FF&}Rather not...{\r}
+Dialogue: 0,1:45:06.75,1:45:09.55,Default,,0000,0000,0000,,还是宁愿不?\N{\fntahoma\fs10\1c&H0080FF&}or will not?{\r}
+Dialogue: 0,1:47:13.37,1:47:17.51,Default,,0000,0000,0000,,你弟弟现在的味道 一定和你一样难闻\N{\fntahoma\fs10\1c&H0080FF&}Your little brother must smell almost as badly as you do by now.{\r}
+Dialogue: 0,1:47:45.28,1:47:47.61,Default,,0000,0000,0000,,不准动 手举起来\N{\fntahoma\fs10\1c&H0080FF&}Hold it! Hands where I can see 'em!{\r}
+Dialogue: 0,1:47:52.37,1:47:53.70,Default,,0000,0000,0000,,闭嘴\N{\fntahoma\fs10\1c&H0080FF&}Quiet!{\r}
+Dialogue: 0,1:47:59.30,1:48:01.84,Default,,0000,0000,0000,,那是什么声音?\N{\fntahoma\fs10\1c&H0080FF&}What was that?{\r}
+Dialogue: 0,1:48:01.92,1:48:03.17,Default,,0000,0000,0000,,柯德 快一点\N{\fntahoma\fs10\1c&H0080FF&}Cordell, quickly!{\r}
+Dialogue: 0,1:48:03.26,1:48:06.34,Default,,0000,0000,0000,,趴下来\N{\fntahoma\fs10\1c&H0080FF&}Get on your stomach.{\r}
+Dialogue: 0,1:48:06.42,1:48:08.01,Default,,0000,0000,0000,,史黛琳 晚安\N{\fntahoma\fs10\1c&H0080FF&}Good evening, Clarice.{\r}
+Dialogue: 0,1:48:08.09,1:48:11.14,Default,,0000,0000,0000,,-像又回到往日一样  -闭嘴\N{\fntahoma\fs10\1c&H0080FF&}-Just like old times. -Shut up.{\r}
+Dialogue: 0,1:48:12.97,1:48:15.22,Default,,0000,0000,0000,,-你能走吗?  -我会尽力\N{\fntahoma\fs10\1c&H0080FF&}-Can you walk? -I can try.{\r}
+Dialogue: 0,1:48:18.31,1:48:19.81,Default,,0000,0000,0000,,你看起来不错\N{\fntahoma\fs10\1c&H0080FF&}You look well.{\r}
+Dialogue: 0,1:48:19.89,1:48:21.94,Default,,0000,0000,0000,,现在给你松绑\N{\fntahoma\fs10\1c&H0080FF&}I'm gonna cut you loose.{\r}
+Dialogue: 0,1:48:22.03,1:48:25.23,Default,,0000,0000,0000,,别碰我 否则我马上开枪\N{\fntahoma\fs10\1c&H0080FF&}If you touch me, I'll shoot you.{\r}
+Dialogue: 0,1:48:25.32,1:48:28.53,Default,,0000,0000,0000,,-我了解  -不捣蛋你就能活着出去\N{\fntahoma\fs10\1c&H0080FF&}-Understood. -Do right and you'll live through this.{\r}
+Dialogue: 0,1:48:28.61,1:48:31.57,Default,,0000,0000,0000,,语气和新教徒一样 最好快点\N{\fntahoma\fs10\1c&H0080FF&}Spoken like a true Protestant. Better hurry.{\r}
+Dialogue: 0,1:48:31.66,1:48:34.08,Default,,0000,0000,0000,,把刀给我会快一点\N{\fntahoma\fs10\1c&H0080FF&}Things might go faster if you hand me the knife.{\r}
+Dialogue: 0,1:48:34.16,1:48:36.62,Default,,0000,0000,0000,,第三个人在阁楼上\N{\fntahoma\fs10\1c&H0080FF&}There was a third in the loft.{\r}
+Dialogue: 0,1:48:36.70,1:48:40.24,Default,,0000,0000,0000,,不 是我后面\N{\fntahoma\fs10\1c&H0080FF&}No, Clarice. Behind me.{\r}
+Dialogue: 0,1:49:18.03,1:49:21.74,Default,,0000,0000,0000,,柯德 杀他 拿起枪 把他杀了\N{\fntahoma\fs10\1c&H0080FF&}Cordell, shoot him! Get the gun and shoot him!{\r}
+Dialogue: 0,1:49:21.83,1:49:24.24,Default,,0000,0000,0000,,-到围栏里去  -当然！\N{\fntahoma\fs10\1c&H0080FF&}-Go into the pen? -Yes!{\r}
+Dialogue: 0,1:49:24.33,1:49:26.59,Default,,0000,0000,0000,,不 我不要牵扯进去\N{\fntahoma\fs10\1c&H0080FF&}No. I'm staying out of this.{\r}
+Dialogue: 0,1:49:26.67,1:49:30.67,Default,,0000,0000,0000,,不管怎样 你已经扯进来了 快去\N{\fntahoma\fs10\1c&H0080FF&}You're involved, is what you are, in all of it. Now do it!{\r}
+Dialogue: 0,1:49:30.75,1:49:31.79,Default,,0000,0000,0000,,-不  -你快去！\N{\fntahoma\fs10\1c&H0080FF&}-No. -Yes!{\r}
+Dialogue: 0,1:49:31.88,1:49:34.96,Default,,0000,0000,0000,,柯德 干脆把他推进去\N{\fntahoma\fs10\1c&H0080FF&}Hey, Cordell, why don't you push him in?{\r}
+Dialogue: 0,1:49:35.04,1:49:37.18,Default,,0000,0000,0000,,到时推到我头上就行了\N{\fntahoma\fs10\1c&H0080FF&}You can always say it was me.{\r}
+Dialogue: 0,1:49:43.76,1:49:44.93,Default,,0000,0000,0000,,柯德\N{\fntahoma\fs10\1c&H0080FF&}Cordell.{\r}
+Dialogue: 0,1:49:46.90,1:49:48.06,Default,,0000,0000,0000,,柯德?\N{\fntahoma\fs10\1c&H0080FF&}Cordell?{\r}
+Dialogue: 0,1:49:48.36,1:49:49.48,Default,,0000,0000,0000,,柯德！\N{\fntahoma\fs10\1c&H0080FF&}Cordell!{\r}
+Dialogue: 0,1:49:50.44,1:49:51.56,Default,,0000,0000,0000,,柯德！\N{\fntahoma\fs10\1c&H0080FF&}Cordell!{\r}
+Dialogue: 0,1:51:23.57,1:51:25.15,Default,,0000,0000,0000,,玛莉 是我\N{\fntahoma\fs10\1c&H0080FF&}Mary, it's me.{\r}
+Dialogue: 0,1:51:25.24,1:51:28.90,Default,,0000,0000,0000,,我决定提前下班 周末到湖边去住\N{\fntahoma\fs10\1c&H0080FF&}I decided to take off early. I'll be at my lake house all weekend.{\r}
+Dialogue: 0,1:51:28.99,1:51:31.70,Default,,0000,0000,0000,,别把电话接过去 你听清楚了吗?\N{\fntahoma\fs10\1c&H0080FF&}I don't want any calls forwarded either. Do you understand?{\r}
+Dialogue: 0,1:51:31.78,1:51:34.54,Default,,0000,0000,0000,,不管谁都让他们等 懂吗?\N{\fntahoma\fs10\1c&H0080FF&}Whoever it is, they can all wait. Okay?{\r}
+Dialogue: 0,1:51:34.62,1:51:38.50,Default,,0000,0000,0000,,拜托这是国庆假日呀 谢谢你\N{\fntahoma\fs10\1c&H0080FF&}Listen, it's 4th ofJuly, for Christ's sake. Thank you.{\r}
+Dialogue: 0,1:51:54.22,1:51:56.18,Default,,0000,0000,0000,,怎么搞的?\N{\fntahoma\fs10\1c&H0080FF&}What the fuck?{\r}
+Dialogue: 0,1:52:06.28,1:52:08.36,Default,,0000,0000,0000,,很好 你带酒来了\N{\fntahoma\fs10\1c&H0080FF&}Good. You brought the wine.{\r}
+Dialogue: 0,1:53:30.64,1:53:35.27,Default,,0000,0000,0000,,有一次我手里拿着 点燃的爆竹和朋友打赌\N{\fntahoma\fs10\1c&H0080FF&}One time I bet a friend I could hold a lit firecracker in my hand...{\r}
+Dialogue: 0,1:53:35.36,1:53:37.11,Default,,0000,0000,0000,,赌我能拿得比他久\N{\fntahoma\fs10\1c&H0080FF&}longer than he could.{\r}
+Dialogue: 0,1:53:37.19,1:53:38.32,Default,,0000,0000,0000,,你猜结果如何?\N{\fntahoma\fs10\1c&H0080FF&}Can I guess?{\r}
+Dialogue: 0,1:53:38.40,1:53:42.32,Default,,0000,0000,0000,,你输了赌注 他丢了手指头 对不对?\N{\fntahoma\fs10\1c&H0080FF&}You lost the bet, and he lost a finger. Am I right?{\r}
+Dialogue: 0,1:53:43.45,1:53:45.87,Default,,0000,0000,0000,,放心 不会痛的\N{\fntahoma\fs10\1c&H0080FF&}This won't hurt a bit.{\r}
+Dialogue: 0,1:53:52.08,1:53:54.50,Default,,0000,0000,0000,,有客人要来吗?\N{\fntahoma\fs10\1c&H0080FF&}Are we expecting guests?{\r}
+Dialogue: 0,1:54:26.62,1:54:31.03,Default,,0000,0000,0000,,我们已经追踪到电话 警方在十分钟内会到达\N{\fntahoma\fs10\1c&H0080FF&}We've traced your call and units will be there in about ten minutes.{\r}
+Dialogue: 0,1:54:31.12,1:54:34.37,Default,,0000,0000,0000,,如果你能到屋外去最好\N{\fntahoma\fs10\1c&H0080FF&}If you can do it safely, just get out of the house.{\r}
+Dialogue: 0,1:54:34.45,1:54:37.71,Default,,0000,0000,0000,,否则就继续和我通话\N{\fntahoma\fs10\1c&H0080FF&}Otherwise, stay on the phone with me.{\r}
+Dialogue: 0,1:54:37.79,1:54:39.21,Default,,0000,0000,0000,,小姐?\N{\fntahoma\fs10\1c&H0080FF&}Ma'am?{\r}
+Dialogue: 0,1:54:39.29,1:54:42.17,Default,,0000,0000,0000,,小姐 你仍在线上吗?\N{\fntahoma\fs10\1c&H0080FF&}Are you there? Ma'am?{\r}
+Dialogue: 0,1:54:58.40,1:55:00.52,Default,,0000,0000,0000,,你必须让客人觉得温暖\N{\fntahoma\fs10\1c&H0080FF&}You need to make sure they feel welcome.{\r}
+Dialogue: 0,1:55:05.81,1:55:09.49,Default,,0000,0000,0000,,-那是冬葱吗?  -还有续随子香料\N{\fntahoma\fs10\1c&H0080FF&}-Are those shallots? -And caper berries.{\r}
+Dialogue: 0,1:55:12.49,1:55:14.49,Default,,0000,0000,0000,,奶油闻起来好香\N{\fntahoma\fs10\1c&H0080FF&}That butter smells wonderful.{\r}
+Dialogue: 0,1:55:15.78,1:55:17.99,Default,,0000,0000,0000,,保罗 你饿了吗?\N{\fntahoma\fs10\1c&H0080FF&}You feeling hungry, Paul?{\r}
+Dialogue: 0,1:55:18.07,1:55:20.00,Default,,0000,0000,0000,,好饿\N{\fntahoma\fs10\1c&H0080FF&}Very.{\r}
+Dialogue: 0,1:55:25.25,1:55:27.62,Default,,0000,0000,0000,,主菜是什么?\N{\fntahoma\fs10\1c&H0080FF&}What's the main course?{\r}
+Dialogue: 0,1:55:27.71,1:55:31.26,Default,,0000,0000,0000,,你不该问 那样就没有惊喜了\N{\fntahoma\fs10\1c&H0080FF&}You should never ask. It spoils the surprise.{\r}
+Dialogue: 0,1:55:31.34,1:55:36.18,Default,,0000,0000,0000,,史黛琳 你起来干什么? 你应该休息 快回床上去\N{\fntahoma\fs10\1c&H0080FF&}Clarice, what are you doing up? You should be resting. Get back to bed.{\r}
+Dialogue: 0,1:55:36.26,1:55:38.30,Default,,0000,0000,0000,,我饿了\N{\fntahoma\fs10\1c&H0080FF&}I'm hungry.{\r}
+Dialogue: 0,1:55:40.85,1:55:43.64,Default,,0000,0000,0000,,-哈罗 保罗  -保罗 要有礼貌\N{\fntahoma\fs10\1c&H0080FF&}-Hello, Paul. -Paul, don't be rude.{\r}
+Dialogue: 0,1:55:44.85,1:55:47.85,Default,,0000,0000,0000,,说"哈罗 史黛琳探员"\N{\fntahoma\fs10\1c&H0080FF&}Say, "Hello, Agent Starling."{\r}
+Dialogue: 0,1:55:47.94,1:55:51.36,Default,,0000,0000,0000,,哈罗 史黛琳探员\N{\fntahoma\fs10\1c&H0080FF&}Hello, Agent Starling.{\r}
+Dialogue: 0,1:55:53.20,1:55:55.20,Default,,0000,0000,0000,,我一直想看你吃饭\N{\fntahoma\fs10\1c&H0080FF&}I always wanted to watch you eat.{\r}
+Dialogue: 0,1:55:55.28,1:56:00.36,Default,,0000,0000,0000,,你手里拿着什么 是想拿来砸我的头吗?\N{\fntahoma\fs10\1c&H0080FF&}What have you got in your hand? Something to bash me on the head with?{\r}
+Dialogue: 0,1:56:01.20,1:56:03.71,Default,,0000,0000,0000,,把它放在桌子上\N{\fntahoma\fs10\1c&H0080FF&}Put it on the table.{\r}
+Dialogue: 0,1:56:03.79,1:56:05.12,Default,,0000,0000,0000,,乖孩子\N{\fntahoma\fs10\1c&H0080FF&}Good girl.{\r}
+Dialogue: 0,1:56:05.21,1:56:07.46,Default,,0000,0000,0000,,嘿 那是我的\N{\fntahoma\fs10\1c&H0080FF&}Hey. That's mine.{\r}
+Dialogue: 0,1:56:07.54,1:56:09.25,Default,,0000,0000,0000,,坐下来\N{\fntahoma\fs10\1c&H0080FF&}Now sit down.{\r}
+Dialogue: 0,1:56:11.54,1:56:14.47,Default,,0000,0000,0000,,史黛琳 我喜欢你的衣服\N{\fntahoma\fs10\1c&H0080FF&}Hey, Clarice, love the dress.{\r}
+Dialogue: 0,1:56:14.55,1:56:16.63,Default,,0000,0000,0000,,很漂亮\N{\fntahoma\fs10\1c&H0080FF&}It's beautiful.{\r}
+Dialogue: 0,1:56:16.72,1:56:18.92,Default,,0000,0000,0000,,-保罗 你说呢?  -好\N{\fntahoma\fs10\1c&H0080FF&}-What do you think, Paul? -Nice.{\r}
+Dialogue: 0,1:56:20.05,1:56:21.88,Default,,0000,0000,0000,,很好\N{\fntahoma\fs10\1c&H0080FF&}Nice.{\r}
+Dialogue: 0,1:56:30.06,1:56:33.48,Default,,0000,0000,0000,,保罗 由你来说饭前祈祷文好吗?\N{\fntahoma\fs10\1c&H0080FF&}Why don't you say grace, Paul?{\r}
+Dialogue: 0,1:56:33.56,1:56:35.99,Default,,0000,0000,0000,,-我?  -是的\N{\fntahoma\fs10\1c&H0080FF&}-Me? -Yeah.{\r}
+Dialogue: 0,1:56:36.07,1:56:37.74,Default,,0000,0000,0000,,-祈祷文?  -没错\N{\fntahoma\fs10\1c&H0080FF&}-Grace? -Sure.{\r}
+Dialogue: 0,1:56:38.65,1:56:40.61,Default,,0000,0000,0000,,好\N{\fntahoma\fs10\1c&H0080FF&}Okay.{\r}
+Dialogue: 0,1:56:40.69,1:56:42.28,Default,,0000,0000,0000,,把头低下来\N{\fntahoma\fs10\1c&H0080FF&}Bow your head.{\r}
+Dialogue: 0,1:56:44.75,1:56:47.66,Default,,0000,0000,0000,,天父 感谢你赐给我们食物...\N{\fntahoma\fs10\1c&H0080FF&}Father, we thank Thee for Thy blessings...{\r}
+Dialogue: 0,1:56:47.75,1:56:49.66,Default,,0000,0000,0000,,以及你对他们的慈悲...\N{\fntahoma\fs10\1c&H0080FF&}and dedicate them to Thy mercy...{\r}
+Dialogue: 0,1:56:49.75,1:56:52.91,Default,,0000,0000,0000,,我们将要接受圣餐...\N{\fntahoma\fs10\1c&H0080FF&}We are about to receive...{\r}
+Dialogue: 0,1:56:53.00,1:56:54.66,Default,,0000,0000,0000,,请饶恕我们大家...\N{\fntahoma\fs10\1c&H0080FF&}Forgive us all...{\r}
+Dialogue: 0,1:56:54.75,1:56:56.84,Default,,0000,0000,0000,,也饶恕史黛琳这种穷白鬼...\N{\fntahoma\fs10\1c&H0080FF&}even white trash like Starling here...{\r}
+Dialogue: 0,1:56:56.92,1:56:59.96,Default,,0000,0000,0000,,并让她替我服务 阿门\N{\fntahoma\fs10\1c&H0080FF&}and bring her into my service, amen.{\r}
+Dialogue: 0,1:57:02.05,1:57:06.35,Default,,0000,0000,0000,,我必须告诉你 即使是基督的 门徒保罗 说得也没你好\N{\fntahoma\fs10\1c&H0080FF&}I have to tell you, Paul, even the Apostle Paul couldn't have done better.{\r}
+Dialogue: 0,1:57:06.43,1:57:08.52,Default,,0000,0000,0000,,他也讨厌女人\N{\fntahoma\fs10\1c&H0080FF&}He hated women too.{\r}
+Dialogue: 0,1:57:08.60,1:57:12.06,Default,,0000,0000,0000,,-我能喝点酒吗?  -恐怕不好\N{\fntahoma\fs10\1c&H0080FF&}-May I have some wine, please? -I don't think that's a good idea.{\r}
+Dialogue: 0,1:57:12.14,1:57:13.81,Default,,0000,0000,0000,,你身上还有吗啡\N{\fntahoma\fs10\1c&H0080FF&}Not with the morphine.{\r}
+Dialogue: 0,1:57:13.89,1:57:16.35,Default,,0000,0000,0000,,你最好喝点汤\N{\fntahoma\fs10\1c&H0080FF&}I think you should eat some broth. Okay?{\r}
+Dialogue: 0,1:57:16.43,1:57:21.44,Default,,0000,0000,0000,,顺便告诉你 祈祷文里有你的工作机会\N{\fntahoma\fs10\1c&H0080FF&}By the way, that was a job offering I worked into the blessing.{\r}
+Dialogue: 0,1:57:21.53,1:57:23.53,Default,,0000,0000,0000,,因为我想进军众议院\N{\fntahoma\fs10\1c&H0080FF&}I'm going to Congress, you know.{\r}
+Dialogue: 0,1:57:23.61,1:57:25.32,Default,,0000,0000,0000,,是吗?\N{\fntahoma\fs10\1c&H0080FF&}Are you?{\r}
+Dialogue: 0,1:57:25.40,1:57:28.20,Default,,0000,0000,0000,,到我的竞选总部来\N{\fntahoma\fs10\1c&H0080FF&}Come around campaign headquarters.{\r}
+Dialogue: 0,1:57:28.29,1:57:31.79,Default,,0000,0000,0000,,你可以做办公小姐 你会打字和存档吗?\N{\fntahoma\fs10\1c&H0080FF&}You could be an office girl. Can you type and file?{\r}
+Dialogue: 0,1:57:31.87,1:57:35.58,Default,,0000,0000,0000,,会速记吗?把这个记下来\N{\fntahoma\fs10\1c&H0080FF&}Can you take dictation? Take this down.{\r}
+Dialogue: 0,1:57:35.66,1:57:39.59,Default,,0000,0000,0000,,华盛顿充满了种田的乡下女人\N{\fntahoma\fs10\1c&H0080FF&}Washington is full of corn pone, country pussy.{\r}
+Dialogue: 0,1:57:42.46,1:57:45.21,Default,,0000,0000,0000,,已经记下来 你早先说过了\N{\fntahoma\fs10\1c&H0080FF&}I took it down. You said it already.{\r}
+Dialogue: 0,1:57:45.30,1:57:48.59,Default,,0000,0000,0000,,保罗 你变得很无礼 我讨厌无礼的家伙\N{\fntahoma\fs10\1c&H0080FF&}Paul, now you're being rude, and I hate rude people.{\r}
+Dialogue: 0,1:57:48.67,1:57:51.93,Default,,0000,0000,0000,,乖孩子 先喝汤 来 吸一口\N{\fntahoma\fs10\1c&H0080FF&}Drink your broth like a good boy. Come on. Sip.{\r}
+Dialogue: 0,1:57:53.60,1:57:55.14,Default,,0000,0000,0000,,很好\N{\fntahoma\fs10\1c&H0080FF&}Good.{\r}
+Dialogue: 0,1:57:58.39,1:58:00.98,Default,,0000,0000,0000,,老兄呀 实在不好喝\N{\fntahoma\fs10\1c&H0080FF&}It's not very good, buddy.{\r}
+Dialogue: 0,1:58:01.07,1:58:04.02,Default,,0000,0000,0000,,我加了点其他作料 可能和茴香的香味不调合\N{\fntahoma\fs10\1c&H0080FF&}I admit I added something to yours. Perhaps it's clashing with the cumin.{\r}
+Dialogue: 0,1:58:04.11,1:58:07.44,Default,,0000,0000,0000,,但是保证你会爱死下道菜\N{\fntahoma\fs10\1c&H0080FF&}But I assure you, the next course is to die for.{\r}
+Dialogue: 0,1:58:19.53,1:58:21.49,Default,,0000,0000,0000,,别这样\N{\fntahoma\fs10\1c&H0080FF&}Come on, Clarice.{\r}
+Dialogue: 0,1:58:21.59,1:58:23.67,Default,,0000,0000,0000,,这才乖\N{\fntahoma\fs10\1c&H0080FF&}That's a good girl.{\r}
+Dialogue: 0,1:58:23.75,1:58:25.34,Default,,0000,0000,0000,,很好\N{\fntahoma\fs10\1c&H0080FF&}Good.{\r}
+Dialogue: 0,1:58:56.62,1:58:57.70,Default,,0000,0000,0000,,汉尼拔医生\N{\fntahoma\fs10\1c&H0080FF&}Dr. Lecter.{\r}
+Dialogue: 0,1:58:57.78,1:59:01.87,Default,,0000,0000,0000,,你不用担心 其实脑本身没有痛楚感\N{\fntahoma\fs10\1c&H0080FF&}You see, the brain itself feels no pain, Clarice, if that concerns you.{\r}
+Dialogue: 0,1:59:01.95,1:59:07.71,Default,,0000,0000,0000,,例如这是前头叶 就算保罗少了它也没有关系\N{\fntahoma\fs10\1c&H0080FF&}For example, Paul won't miss this little piece here...part of the prefrontal lobe.{\r}
+Dialogue: 0,1:59:07.79,1:59:10.88,Default,,0000,0000,0000,,因为据说 它能使人有良好的态度\N{\fntahoma\fs10\1c&H0080FF&}which they say is the seat of good manners.{\r}
+Dialogue: 0,1:59:10.96,1:59:14.67,Default,,0000,0000,0000,,你的档案在边界警局中 有五个重点\N{\fntahoma\fs10\1c&H0080FF&}Your profile at the border stations has five features.{\r}
+Dialogue: 0,1:59:14.76,1:59:16.64,Default,,0000,0000,0000,,-我和你交换  -交换?\N{\fntahoma\fs10\1c&H0080FF&}-I'll trade you. -Trade?{\r}
+Dialogue: 0,1:59:16.72,1:59:21.30,Default,,0000,0000,0000,,-放了他 我就告诉你那些资料  -你对交换两个字有什么感觉\N{\fntahoma\fs10\1c&H0080FF&}-Stop, and I'll tell you what they are. -How does that word taste to you?{\r}
+Dialogue: 0,1:59:21.39,1:59:25.43,Default,,0000,0000,0000,,又冷又硬 就像在啜一枚油腻的硬币似的\N{\fntahoma\fs10\1c&H0080FF&}Cheap and metallic, like sucking on a greasy coin?{\r}
+Dialogue: 0,1:59:25.52,1:59:27.48,Default,,0000,0000,0000,,-谁是克莉丝?  -就是史黛琳探员\N{\fntahoma\fs10\1c&H0080FF&}-Who's Clarice? -Agent Starling, Paul.{\r}
+Dialogue: 0,1:59:27.56,1:59:31.02,Default,,0000,0000,0000,,如果你跟不上就别打岔\N{\fntahoma\fs10\1c&H0080FF&}If you can't keep up with the conversation, try not to join in at all.{\r}
+Dialogue: 0,1:59:31.10,1:59:33.19,Default,,0000,0000,0000,,保罗 我就是史黛琳\N{\fntahoma\fs10\1c&H0080FF&}Paul, I'm Starling.{\r}
+Dialogue: 0,1:59:33.27,1:59:35.19,Default,,0000,0000,0000,,你看...\N{\fntahoma\fs10\1c&H0080FF&}See...{\r}
+Dialogue: 0,1:59:35.27,1:59:37.20,Default,,0000,0000,0000,,就在这里...\N{\fntahoma\fs10\1c&H0080FF&}here...{\r}
+Dialogue: 0,1:59:37.28,1:59:41.16,Default,,0000,0000,0000,,脑子就在这个液囊之中\N{\fntahoma\fs10\1c&H0080FF&}right here's the sac that contains the brain.{\r}
+Dialogue: 0,1:59:43.49,1:59:46.03,Default,,0000,0000,0000,,我真的需要喝点酒\N{\fntahoma\fs10\1c&H0080FF&}I would really like some wine.{\r}
+Dialogue: 0,1:59:49.50,1:59:51.92,Default,,0000,0000,0000,,-很好闻  -没错\N{\fntahoma\fs10\1c&H0080FF&}-That smells great. -Yes.{\r}
+Dialogue: 0,1:59:52.00,1:59:55.12,Default,,0000,0000,0000,,好了 要试一小块吗?\N{\fntahoma\fs10\1c&H0080FF&}There. Like to try a little piece?{\r}
+Dialogue: 0,1:59:55.21,1:59:57.96,Default,,0000,0000,0000,,我是真的要喝点酒\N{\fntahoma\fs10\1c&H0080FF&}I would really like some wine...{\r}
+Dialogue: 0,1:59:59.80,2:00:01.76,Default,,0000,0000,0000,,很好吃\N{\fntahoma\fs10\1c&H0080FF&}It is good.{\r}
+Dialogue: 0,2:00:02.63,2:00:06.30,Default,,0000,0000,0000,,好 不过只能喝一点\N{\fntahoma\fs10\1c&H0080FF&}All right. Just a little.{\r}
+Dialogue: 0,2:00:07.80,2:00:08.76,Default,,0000,0000,0000,,喝吧\N{\fntahoma\fs10\1c&H0080FF&}Okay?{\r}
+Dialogue: 0,2:00:26.20,2:00:29.11,Default,,0000,0000,0000,,只要有机会 你连我的命都会要 对不对?\N{\fntahoma\fs10\1c&H0080FF&}Given the chance, you would deny me my life, wouldn't you?{\r}
+Dialogue: 0,2:00:30.37,2:00:32.08,Default,,0000,0000,0000,,不是你的命\N{\fntahoma\fs10\1c&H0080FF&}Not your life.{\r}
+Dialogue: 0,2:00:32.16,2:00:35.25,Default,,0000,0000,0000,,那是自由罗 你要把我的自由拿走\N{\fntahoma\fs10\1c&H0080FF&}My freedom, just that. You'd take that from me.{\r}
+Dialogue: 0,2:00:35.33,2:00:38.71,Default,,0000,0000,0000,,就算你这么做 他们会要你回去吗?\N{\fntahoma\fs10\1c&H0080FF&}And if you did, would they have you back, do you think?{\r}
+Dialogue: 0,2:00:38.79,2:00:41.34,Default,,0000,0000,0000,,我是说调查局?\N{\fntahoma\fs10\1c&H0080FF&}The FBI?{\r}
+Dialogue: 0,2:00:41.42,2:00:44.88,Default,,0000,0000,0000,,你蔑视的人同样也轻视你?\N{\fntahoma\fs10\1c&H0080FF&}Those people you despise almost as much as they despise you?{\r}
+Dialogue: 0,2:00:44.97,2:00:48.13,Default,,0000,0000,0000,,你想他们会给你奖章吗?\N{\fntahoma\fs10\1c&H0080FF&}Will they give you a medal, Clarice, do you think?{\r}
+Dialogue: 0,2:00:48.22,2:00:51.56,Default,,0000,0000,0000,,然后你把它装框挂在墙上...\N{\fntahoma\fs10\1c&H0080FF&}Would you have it professionally framed and hang it on your wall to look at...{\r}
+Dialogue: 0,2:00:51.64,2:00:56.06,Default,,0000,0000,0000,,每天看着它 提醒自己 有多勇敢和清廉吗?\N{\fntahoma\fs10\1c&H0080FF&}and remind you of your courage and incorruptibility?{\r}
+Dialogue: 0,2:00:58.64,2:01:02.11,Default,,0000,0000,0000,,果真如此 一面镜子就够了\N{\fntahoma\fs10\1c&H0080FF&}All you would need for that, Clarice, is a mirror.{\r}
+Dialogue: 0,2:01:03.69,2:01:08.19,Default,,0000,0000,0000,,伶牙俐齿的人我另有用处 我永远不会再雇用你\N{\fntahoma\fs10\1c&H0080FF&}I have plans for that smart mouth. I'm never gonna hire you now.{\r}
+Dialogue: 0,2:01:08.74,2:01:15.08,Default,,0000,0000,0000,,保罗 我告诉过你\N{\fntahoma\fs10\1c&H0080FF&}Remember what I said?{\r}
+Dialogue: 0,2:01:15.16,2:01:18.00,Default,,0000,0000,0000,,如果对客人不礼貌\N{\fntahoma\fs10\1c&H0080FF&}If you can't be polite to our guests...{\r}
+Dialogue: 0,2:01:18.08,2:01:20.91,Default,,0000,0000,0000,,就要到小孩桌去坐\N{\fntahoma\fs10\1c&H0080FF&}you have to sit at the kiddies' table.{\r}
+Dialogue: 0,2:01:21.83,2:01:24.09,Default,,0000,0000,0000,,史黛琳 你别起来\N{\fntahoma\fs10\1c&H0080FF&}Don't get up, Clarice.{\r}
+Dialogue: 0,2:01:24.17,2:01:27.88,Default,,0000,0000,0000,,保罗会帮我收拾和煮咖啡\N{\fntahoma\fs10\1c&H0080FF&}Paul will help me clear and make the coffee.{\r}
+Dialogue: 0,2:01:29.92,2:01:31.88,Default,,0000,0000,0000,,你仔细想想我说的话\N{\fntahoma\fs10\1c&H0080FF&}Just think about what I said, Clarice.{\r}
+Dialogue: 0,2:01:34.14,2:01:35.72,Default,,0000,0000,0000,,咖啡\N{\fntahoma\fs10\1c&H0080FF&}Coffee.{\r}
+Dialogue: 0,2:02:13.84,2:02:16.30,Default,,0000,0000,0000,,我绕了半个地球\N{\fntahoma\fs10\1c&H0080FF&}I came halfway around the world...{\r}
+Dialogue: 0,2:02:16.38,2:02:18.81,Default,,0000,0000,0000,,就为了看你如何释放自己\N{\fntahoma\fs10\1c&H0080FF&}to watch you run, Clarice.{\r}
+Dialogue: 0,2:02:21.26,2:02:23.26,Default,,0000,0000,0000,,释放我 好吗?\N{\fntahoma\fs10\1c&H0080FF&}Let me run, huh?{\r}
+Dialogue: 0,2:02:42.41,2:02:46.83,Default,,0000,0000,0000,,史黛琳 会不会有一天你对我说...\N{\fntahoma\fs10\1c&H0080FF&}Tell me, Clarice, would you ever say to me...{\r}
+Dialogue: 0,2:02:46.91,2:02:48.45,Default,,0000,0000,0000,,"别这么做"\N{\fntahoma\fs10\1c&H0080FF&}"Stop.{\r}
+Dialogue: 0,2:02:48.53,2:02:50.54,Default,,0000,0000,0000,,"如果爱我 就别这么做"\N{\fntahoma\fs10\1c&H0080FF&}If you loved me, you'd stop"?{\r}
+Dialogue: 0,2:02:52.29,2:02:54.54,Default,,0000,0000,0000,,永远不会\N{\fntahoma\fs10\1c&H0080FF&}Not in a thousand years.{\r}
+Dialogue: 0,2:02:56.09,2:02:58.09,Default,,0000,0000,0000,,好个永远不会\N{\fntahoma\fs10\1c&H0080FF&}Not in a thousand years.{\r}
+Dialogue: 0,2:03:03.76,2:03:05.76,Default,,0000,0000,0000,,我就欣赏你这点\N{\fntahoma\fs10\1c&H0080FF&}That's my girl.{\r}
+Dialogue: 0,2:03:19.44,2:03:23.12,Default,,0000,0000,0000,,史黛琳 我必须承认你不简单\N{\fntahoma\fs10\1c&H0080FF&}Now, that's really interesting, Clarice...{\r}
+Dialogue: 0,2:03:23.20,2:03:25.20,Default,,0000,0000,0000,,而我的时间又很紧迫\N{\fntahoma\fs10\1c&H0080FF&}and I'm really pressed for time.{\r}
+Dialogue: 0,2:03:25.28,2:03:28.12,Default,,0000,0000,0000,,告诉我钥匙在哪里\N{\fntahoma\fs10\1c&H0080FF&}So where's the key?{\r}
+Dialogue: 0,2:03:29.07,2:03:31.07,Default,,0000,0000,0000,,钥匙呢?\N{\fntahoma\fs10\1c&H0080FF&}Where's the key?{\r}
+Dialogue: 0,2:03:36.83,2:03:38.33,Default,,0000,0000,0000,,好\N{\fntahoma\fs10\1c&H0080FF&}Okay.{\r}
+Dialogue: 0,2:03:43.30,2:03:44.72,Default,,0000,0000,0000,,你要切在...\N{\fntahoma\fs10\1c&H0080FF&}Above...{\r}
+Dialogue: 0,2:03:44.80,2:03:46.59,Default,,0000,0000,0000,,手腕的上面...\N{\fntahoma\fs10\1c&H0080FF&}or below the wrist...{\r}
+Dialogue: 0,2:03:46.68,2:03:48.30,Default,,0000,0000,0000,,还是下面?\N{\fntahoma\fs10\1c&H0080FF&}Clarice?{\r}
+Dialogue: 0,2:03:55.90,2:03:58.81,Default,,0000,0000,0000,,这次绝对会很疼\N{\fntahoma\fs10\1c&H0080FF&}This is really gonna hurt.{\r}
+Dialogue: 0,2:04:47.53,2:04:50.15,Default,,0000,0000,0000,,把手举起来\N{\fntahoma\fs10\1c&H0080FF&}Show me your hands!{\r}
+Dialogue: 0,2:04:50.24,2:04:52.78,Default,,0000,0000,0000,,说明你的身份\N{\fntahoma\fs10\1c&H0080FF&}Identify yourself!{\r}
+Dialogue: 0,2:04:52.86,2:04:54.70,Default,,0000,0000,0000,,我是克莉丝史黛琳\N{\fntahoma\fs10\1c&H0080FF&}I'm Clarice Starling!{\r}
+Dialogue: 0,2:04:55.78,2:04:57.74,Default,,0000,0000,0000,,调查局探员\N{\fntahoma\fs10\1c&H0080FF&}FBI!{\r}
+Dialogue: 0,2:05:56.84,2:05:58.55,Default,,0000,0000,0000,,-嗨  -嗨\N{\fntahoma\fs10\1c&H0080FF&}-Hi. -Hi.{\r}
+Dialogue: 0,2:05:58.63,2:06:00.30,Default,,0000,0000,0000,,那是什么?\N{\fntahoma\fs10\1c&H0080FF&}What's that?{\r}
+Dialogue: 0,2:06:02.27,2:06:04.35,Default,,0000,0000,0000,,那是鱼子酱\N{\fntahoma\fs10\1c&H0080FF&}That's caviar.{\r}
+Dialogue: 0,2:06:04.43,2:06:07.68,Default,,0000,0000,0000,,-那些呢?  -无花果\N{\fntahoma\fs10\1c&H0080FF&}-What are those? -These are figs.{\r}
+Dialogue: 0,2:06:07.77,2:06:09.81,Default,,0000,0000,0000,,那个呢?\N{\fntahoma\fs10\1c&H0080FF&}And that?{\r}
+Dialogue: 0,2:06:12.02,2:06:13.65,Default,,0000,0000,0000,,这个吗?\N{\fntahoma\fs10\1c&H0080FF&}This?{\r}
+Dialogue: 0,2:06:15.03,2:06:17.36,Default,,0000,0000,0000,,我想你不会喜欢\N{\fntahoma\fs10\1c&H0080FF&}That I don't think you would like.{\r}
+Dialogue: 0,2:06:17.44,2:06:19.73,Default,,0000,0000,0000,,-看起来很好吃  -是很好吃\N{\fntahoma\fs10\1c&H0080FF&}-It looks good. -Oh, it is good.{\r}
+Dialogue: 0,2:06:19.82,2:06:21.23,Default,,0000,0000,0000,,我能尝尝吗?\N{\fntahoma\fs10\1c&H0080FF&}Can I have some?{\r}
+Dialogue: 0,2:06:22.65,2:06:25.37,Default,,0000,0000,0000,,你是个很奇怪的孩子\N{\fntahoma\fs10\1c&H0080FF&}You're a very unusual boy, aren't you?{\r}
+Dialogue: 0,2:06:25.45,2:06:27.20,Default,,0000,0000,0000,,我不喜欢吃他们给我的食物\N{\fntahoma\fs10\1c&H0080FF&}I couldn't eat what they gave me.{\r}
+Dialogue: 0,2:06:27.29,2:06:30.63,Default,,0000,0000,0000,,依我看来那根本不是食物\N{\fntahoma\fs10\1c&H0080FF&}Nor should you. It isn't even food as I understand the definition,{\r}
+Dialogue: 0,2:06:30.63,2:06:32.70,Default,,0000,0000,0000,,所以我才自己带吃的来\N{\fntahoma\fs10\1c&H0080FF&}which is why I always bring my own.{\r}
+Dialogue: 0,2:06:35.17,2:06:37.55,Default,,0000,0000,0000,,那么你想吃哪一种?\N{\fntahoma\fs10\1c&H0080FF&}So, which would you like to try?{\r}
+Dialogue: 0,2:06:42.05,2:06:44.46,Default,,0000,0000,0000,,我想应该没关系吧\N{\fntahoma\fs10\1c&H0080FF&}Well, I suppose it's all right.{\r}
+Dialogue: 0,2:06:46.14,2:06:51.06,Default,,0000,0000,0000,,毕竟 你我的妈妈都曾说过这句话\N{\fntahoma\fs10\1c&H0080FF&}After all, as your mother tells you, and my mother certainly told me...{\r}
+Dialogue: 0,2:06:51.10,2:06:53.60,Default,,0000,0000,0000,,我记得她常说"重要的是..."\N{\fntahoma\fs10\1c&H0080FF&}"It is important," she always used to say...{\r}
+Dialogue: 0,2:06:53.68,2:06:56.57,Default,,0000,0000,0000,,"要不断尝试不同的东西"\N{\fntahoma\fs10\1c&H0080FF&}"always to try new things."{\r}
+Dialogue: 0,2:06:56.65,2:06:58.07,Default,,0000,0000,0000,,嘴张开\N{\fntahoma\fs10\1c&H0080FF&}Open up.{\r}
+
+
