@@ -1,0 +1,5904 @@
+1
+00:00:02,335 --> 00:00:03,211
+[Tay] Hello, world.
+
+2
+00:00:10,135 --> 00:00:12,429
+Can I just say that
+I'm stoked to meet you.
+
+3
+00:00:15,098 --> 00:00:16,725
+Humans are super cool.
+
+4
+00:00:26,025 --> 00:00:28,653
+The more humans share with me,
+the more I learn.
+
+5
+00:00:59,142 --> 00:01:01,895
+[Joy Buolamwini] One of the things
+that drew me to computer science
+
+6
+00:01:01,978 --> 00:01:05,940
+was that I could code and it seemed
+somehow detached from the problems
+
+7
+00:01:06,024 --> 00:01:07,192
+of the real world.
+
+8
+00:01:12,238 --> 00:01:15,408
+I wanted to learn
+how to make cool technology.
+
+9
+00:01:15,492 --> 00:01:19,454
+So I came to MIT
+and I was working on art projects
+
+10
+00:01:19,537 --> 00:01:22,123
+that would use computer vision technology.
+
+11
+00:01:26,586 --> 00:01:29,923
+During my first semester at the Media Lab,
+
+12
+00:01:30,006 --> 00:01:32,759
+I took a class called Science Fabrication.
+
+13
+00:01:32,842 --> 00:01:36,763
+You read science fiction and you try
+to build something you're inspired to do
+
+14
+00:01:36,846 --> 00:01:40,058
+that would probably be impractical
+if you didn't have this class
+
+15
+00:01:40,141 --> 00:01:41,726
+as an excuse to make it.
+
+16
+00:01:43,603 --> 00:01:46,523
+I wanted to make a mirror
+that could inspire me in the morning.
+
+17
+00:01:46,606 --> 00:01:47,982
+I called it the Aspire Mirror.
+
+18
+00:01:48,066 --> 00:01:50,193
+It could put things like a lion on my face
+
+19
+00:01:50,276 --> 00:01:53,321
+or people who inspired me,
+like Serena Williams.
+
+20
+00:01:53,905 --> 00:01:55,490
+I put a camera on top of it,
+
+21
+00:01:55,573 --> 00:01:59,327
+and I got computer vision software
+that was supposed to track my face.
+
+22
+00:02:00,370 --> 00:02:03,206
+My issue was it didn't work that well
+
+23
+00:02:03,706 --> 00:02:06,292
+until I put on this white mask.
+
+24
+00:02:06,751 --> 00:02:08,461
+-When I put on the white mask…
+-[computer trills]
+
+25
+00:02:09,295 --> 00:02:10,296
+…detected.
+
+26
+00:02:10,755 --> 00:02:12,715
+I take off the white mask…
+
+27
+00:02:14,008 --> 00:02:15,135
+not so much.
+
+28
+00:02:18,388 --> 00:02:20,390
+I'm thinking,
+"All right, what's going on here?
+
+29
+00:02:20,473 --> 00:02:23,017
+Is that just because of
+the lighting conditions?
+
+30
+00:02:23,101 --> 00:02:26,980
+Is it because of the angle
+at which I'm looking at the camera?
+
+31
+00:02:27,063 --> 00:02:28,439
+Or is there something more?"
+
+32
+00:02:30,817 --> 00:02:31,818
+[computer trills]
+
+33
+00:02:32,777 --> 00:02:35,280
+We oftentimes teach machines to see
+
+34
+00:02:35,363 --> 00:02:40,034
+by providing training sets or examples
+of what we want it to learn.
+
+35
+00:02:41,327 --> 00:02:43,872
+So, for example,
+if I want a machine to see a face,
+
+36
+00:02:43,955 --> 00:02:46,416
+I'm going to provide
+many examples of faces,
+
+37
+00:02:46,499 --> 00:02:48,418
+and also things that aren't faces.
+
+38
+00:02:51,421 --> 00:02:53,882
+I started looking at
+the data sets themselves,
+
+39
+00:02:53,965 --> 00:02:58,970
+and what I discovered is many
+of these data sets contain majority men,
+
+40
+00:02:59,053 --> 00:03:01,514
+and majority lighter-skinned individuals.
+
+41
+00:03:01,598 --> 00:03:05,310
+So the systems weren't as familiar
+with faces like mine.
+
+42
+00:03:12,984 --> 00:03:16,863
+And so that's when
+I started looking into issues of bias
+
+43
+00:03:16,946 --> 00:03:18,990
+that can creep into technology.
+
+44
+00:03:20,116 --> 00:03:24,037
+[HAL 9000] The 9000 Series
+is the most reliable computer ever made.
+
+45
+00:03:24,954 --> 00:03:29,500
+No 9000 computer has ever made a mistake
+or distorted information.
+
+46
+00:03:30,418 --> 00:03:35,465
+[Meredith Broussard] A lot of our ideas
+about AI come from science fiction.
+
+47
+00:03:35,548 --> 00:03:38,009
+[Robby] Welcome to Altair 4, gentlemen.
+
+48
+00:03:38,092 --> 00:03:41,679
+[Broussard] It's everything in Hollywood.
+It's the Terminator…
+
+49
+00:03:41,763 --> 00:03:43,723
+Hasta la vista, baby.
+
+50
+00:03:43,806 --> 00:03:46,643
+[Broussard] It's Commander Data
+from Star Trek.
+
+51
+00:03:46,726 --> 00:03:49,520
+I just love scanning for life forms.
+
+52
+00:03:49,604 --> 00:03:51,898
+[Broussard] It's C-3PO from Star Wars.
+
+53
+00:03:51,981 --> 00:03:55,610
+-…approximately 3,720 to 1.
+-Never tell me the odds.
+
+54
+00:03:55,693 --> 00:03:58,488
+[Broussard] It is the robots
+that take over the world
+
+55
+00:03:58,571 --> 00:04:00,490
+and start to think like human beings.
+
+56
+00:04:02,408 --> 00:04:05,245
+And that's all totally imaginary.
+
+57
+00:04:05,328 --> 00:04:08,456
+What we actually have is,
+we have narrow AI.
+
+58
+00:04:08,539 --> 00:04:11,501
+And narrow AI is just math.
+
+59
+00:04:12,502 --> 00:04:16,881
+We've imbued computers
+with all of this magical thinking.
+
+60
+00:04:19,801 --> 00:04:25,556
+AI started with a meeting
+at the Dartmouth Math Department in 1956.
+
+61
+00:04:25,807 --> 00:04:29,978
+And there were only maybe
+100 people in the whole world
+
+62
+00:04:30,061 --> 00:04:34,107
+working on artificial intelligence
+in that generation.
+
+63
+00:04:36,609 --> 00:04:41,281
+The people who were at
+the Dartmouth Math Department in 1956
+
+64
+00:04:41,364 --> 00:04:43,825
+got to decide what the field was.
+
+65
+00:04:46,953 --> 00:04:52,333
+One faction decided that
+intelligence could be demonstrated
+
+66
+00:04:52,417 --> 00:04:54,711
+by ability to play games.
+
+67
+00:04:54,794 --> 00:04:57,839
+And specifically,
+the ability to play chess.
+
+68
+00:04:58,464 --> 00:05:00,133
+[female newscaster]
+In the final hour-long chess match
+
+69
+00:05:00,216 --> 00:05:01,801
+between man and machine,
+
+70
+00:05:01,884 --> 00:05:05,513
+Kasparov was defeated by
+IBM's Deep Blue supercomputer.
+
+71
+00:05:05,596 --> 00:05:10,727
+[Broussard] Intelligence was defined
+as the ability to win at these games.
+
+72
+00:05:13,521 --> 00:05:17,108
+[female newscaster] Chess world champion
+Garry Kasparov walked away from the match
+
+73
+00:05:17,191 --> 00:05:19,777
+never looking back
+at the computer that just beat him.
+
+74
+00:05:19,861 --> 00:05:22,947
+Of course
+intelligence is so much more than that.
+
+75
+00:05:23,031 --> 00:05:25,325
+And there are lots of different kinds
+of intelligence.
+
+76
+00:05:27,452 --> 00:05:32,248
+Our ideas about technology and society
+that we think are normal
+
+77
+00:05:32,332 --> 00:05:34,459
+are actually ideas that come from
+
+78
+00:05:34,542 --> 00:05:37,211
+a very small and homogeneous
+group of people.
+
+79
+00:05:38,963 --> 00:05:43,634
+But the problem is that
+everybody has unconscious biases.
+
+80
+00:05:44,052 --> 00:05:48,222
+And people embed their own biases
+into technology.
+
+81
+00:05:52,310 --> 00:05:54,562
+[Buolamwini] My own lived experiences
+
+82
+00:05:54,645 --> 00:05:58,691
+show me that you can't separate
+the social from the technical.
+
+83
+00:05:59,650 --> 00:06:02,361
+After I had the experience
+of putting on a white mask
+
+84
+00:06:02,445 --> 00:06:06,032
+to have my face detected,
+I decided to look at other systems
+
+85
+00:06:06,115 --> 00:06:09,869
+to see if it would detect my face
+if I used a different type of software.
+
+86
+00:06:09,952 --> 00:06:13,539
+So I looked at IBM,
+Microsoft, Face++, Google.
+
+87
+00:06:13,623 --> 00:06:15,333
+It turned out these algorithms
+
+88
+00:06:15,416 --> 00:06:20,379
+performed better on the male faces
+in the benchmark than the female faces.
+
+89
+00:06:20,463 --> 00:06:26,010
+They performed significantly better on
+the lighter faces than the darker faces.
+
+90
+00:06:27,637 --> 00:06:31,265
+If you're thinking about data
+in artificial intelligence,
+
+91
+00:06:31,349 --> 00:06:33,518
+in many ways, data is destiny.
+
+92
+00:06:33,601 --> 00:06:38,397
+Data's what we're using to teach machines
+how to learn different kinds of patterns.
+
+93
+00:06:38,481 --> 00:06:40,983
+So if you have largely skewed data sets
+
+94
+00:06:41,067 --> 00:06:42,819
+that are being used
+to train these systems,
+
+95
+00:06:42,902 --> 00:06:45,530
+you can also have skewed results.
+So this is…
+
+96
+00:06:45,613 --> 00:06:49,033
+[Buolamwini] When you think of AI,
+it's forward looking.
+
+97
+00:06:49,117 --> 00:06:54,122
+But AI is based on data,
+and data is a reflection of our history.
+
+98
+00:06:54,205 --> 00:06:57,250
+So the past dwells within our algorithms.
+
+99
+00:06:57,333 --> 00:06:58,334
+[imperceptible]
+
+100
+00:06:59,836 --> 00:07:04,674
+This data is showing us
+the inequalities that have been here.
+
+101
+00:07:07,051 --> 00:07:11,389
+I started to think this kind of technology
+is highly susceptible to bias.
+
+102
+00:07:12,473 --> 00:07:16,769
+And so it went beyond
+"Oh, can I get my Aspire Mirror to work?"
+
+103
+00:07:16,853 --> 00:07:19,730
+to "What does it mean to be in a society
+
+104
+00:07:19,814 --> 00:07:22,859
+where artificial intelligence
+is increasingly governing
+
+105
+00:07:22,942 --> 00:07:25,111
+the liberties we might have?"
+
+106
+00:07:25,194 --> 00:07:29,740
+And "What does that mean
+if people are discriminated against?"
+
+107
+00:07:40,001 --> 00:07:44,755
+When I saw Cathy O'Neil speak
+at the Harvard Book Store,
+
+108
+00:07:44,839 --> 00:07:49,927
+that was when I realized
+it wasn't just me noticing these issues.
+
+109
+00:07:50,011 --> 00:07:51,095
+[doorbell chimes]
+
+110
+00:07:52,054 --> 00:07:56,642
+Cathy talked about
+how AI was impacting people's lives.
+
+111
+00:07:58,269 --> 00:08:02,940
+I was excited to know that
+there was somebody else out there
+
+112
+00:08:03,024 --> 00:08:06,777
+making sure people were aware
+about what some of the dangers are.
+
+113
+00:08:08,571 --> 00:08:13,201
+These algorithms can be destructive
+and can be harmful.
+
+114
+00:08:17,914 --> 00:08:20,416
+[Cathy O'Neil] We have
+all these algorithms in the world
+
+115
+00:08:20,500 --> 00:08:22,710
+that are increasingly influential.
+
+116
+00:08:23,461 --> 00:08:27,423
+And they're all being touted
+as objective truth.
+
+117
+00:08:28,799 --> 00:08:31,385
+I started realizing that
+mathematics was actually
+
+118
+00:08:32,386 --> 00:08:35,223
+being used as a shield
+for corrupt practices.
+
+119
+00:08:35,640 --> 00:08:36,849
+-What's up?
+-I'm Cathy.
+
+120
+00:08:36,933 --> 00:08:38,309
+-Pleasure to meet you Cathy.
+-Nice to meet you.
+
+121
+00:08:38,392 --> 00:08:40,394
+-[photographer speaking indistinctly]
+-[shutter clicking]
+
+122
+00:08:47,818 --> 00:08:50,655
+[O'Neil] The way I describe algorithms
+is just simply
+
+123
+00:08:50,738 --> 00:08:54,367
+using historical information
+to make a prediction about the future.
+
+124
+00:09:00,122 --> 00:09:04,502
+Machine learning, it's a scoring system
+that scores the probability
+
+125
+00:09:04,585 --> 00:09:06,128
+of what you're about to do.
+
+126
+00:09:06,212 --> 00:09:07,797
+Are you gonna pay back this loan?
+
+127
+00:09:07,880 --> 00:09:10,341
+Are you going to get fired from this job?
+
+128
+00:09:10,716 --> 00:09:13,427
+What worries me the most about AI,
+
+129
+00:09:13,511 --> 00:09:16,556
+or whatever you wanna call it,
+algorithms, is power.
+
+130
+00:09:16,639 --> 00:09:20,268
+Because it's really all about
+who owns the fucking code.
+
+131
+00:09:20,351 --> 00:09:23,980
+The people who own the code
+then deploy it on other people.
+
+132
+00:09:24,605 --> 00:09:25,731
+And there is no symmetry there.
+
+133
+00:09:25,815 --> 00:09:29,443
+There's no way for people
+who didn't get credit card offers to say,
+
+134
+00:09:29,527 --> 00:09:32,488
+"Ooh, I'm gonna use my AI
+against the credit card company."
+
+135
+00:09:32,572 --> 00:09:35,157
+That's like a total
+asymmetrical power situation.
+
+136
+00:09:35,908 --> 00:09:38,536
+People are suffering algorithmic harm,
+
+137
+00:09:38,619 --> 00:09:40,871
+they're not being told
+what's happening to them,
+
+138
+00:09:41,372 --> 00:09:44,166
+and there is no appeal system,
+there's no accountability.
+
+139
+00:09:44,250 --> 00:09:46,502
+Why do we fall for this?
+
+140
+00:09:50,923 --> 00:09:53,509
+[O'Neil] The underlying
+mathematical structure of the algorithm
+
+141
+00:09:53,593 --> 00:09:57,763
+isn't racist or sexist,
+but the data embeds the past.
+
+142
+00:09:57,847 --> 00:10:01,100
+And not just the recent past,
+but the dark past.
+
+143
+00:10:04,312 --> 00:10:06,564
+Before we had the algorithm,
+we had humans,
+
+144
+00:10:06,647 --> 00:10:09,066
+and we all know that
+humans could be unfair.
+
+145
+00:10:09,150 --> 00:10:12,445
+We all know that humans can exhibit
+racist or sexist
+
+146
+00:10:12,528 --> 00:10:14,905
+or whatever, ablest discriminations.
+
+147
+00:10:16,866 --> 00:10:19,577
+But now we have this beautiful
+silver bullet algorithm,
+
+148
+00:10:19,660 --> 00:10:21,871
+and so, we can all stop
+thinking about that.
+
+149
+00:10:22,455 --> 00:10:23,372
+And that's a problem.
+
+150
+00:10:26,375 --> 00:10:30,212
+I'm very worried about this blind faith
+we have in big data.
+
+151
+00:10:30,630 --> 00:10:35,134
+We need to constantly monitor
+every process for bias.
+
+152
+00:10:43,768 --> 00:10:46,896
+Police are using facial-recognition
+surveillance in this area.
+
+153
+00:10:47,855 --> 00:10:51,108
+Police are using facial-recognition
+surveillance in the area today.
+
+154
+00:10:51,734 --> 00:10:53,944
+This green van over here
+
+155
+00:10:54,236 --> 00:10:56,697
+is fitted with facial-recognition
+cameras on top.
+
+156
+00:10:56,781 --> 00:10:59,450
+If you walk down that there,
+your face will be scanned
+
+157
+00:10:59,533 --> 00:11:01,827
+against secret watch lists,
+we don't know who's on them.
+
+158
+00:11:02,244 --> 00:11:05,289
+-[man] Hopefully not me
+-No, exactly.
+
+159
+00:11:13,422 --> 00:11:15,549
+[Silkie Carlo]
+When people walk past the cameras,
+
+160
+00:11:15,633 --> 00:11:19,553
+the system will alert police to people
+it thinks is a match.
+
+161
+00:11:20,262 --> 00:11:22,139
+At Big Brother Watch, we conducted
+
+162
+00:11:22,223 --> 00:11:24,100
+a Freedom of Information Campaign
+
+163
+00:11:24,183 --> 00:11:29,814
+and what we found is that
+98% of those matches are in fact
+
+164
+00:11:30,231 --> 00:11:35,486
+incorrectly matching an innocent person
+as a wanted person.
+
+165
+00:11:47,540 --> 00:11:52,211
+The police said to the Biometrics
+Forensics Ethics Committee
+
+166
+00:11:52,503 --> 00:11:56,507
+that facial-recognition algorithms
+have been reported to have bias.
+
+167
+00:11:56,590 --> 00:11:58,759
+Even if this was 100% accurate,
+
+168
+00:11:58,843 --> 00:12:01,345
+it's still not something
+that we want on the streets.
+
+169
+00:12:01,429 --> 00:12:03,889
+No, I mean, the systemic biases
+and the systemic issues
+
+170
+00:12:03,973 --> 00:12:07,059
+that we have with police
+are only going to be hardwired
+
+171
+00:12:07,143 --> 00:12:08,310
+into new technologies.
+
+172
+00:12:11,522 --> 00:12:14,400
+I think we do have to
+be very, very sensitive
+
+173
+00:12:14,483 --> 00:12:17,736
+to shifts towards authoritarianism.
+
+174
+00:12:17,820 --> 00:12:20,823
+We can't just say,
+"But we trust this government.
+
+175
+00:12:20,906 --> 00:12:22,616
+Yeah, they could do this, but they won't."
+
+176
+00:12:22,700 --> 00:12:25,536
+You know, you really have to have
+robust structures in place
+
+177
+00:12:25,619 --> 00:12:27,288
+to make sure that
+the world that you live in
+
+178
+00:12:27,371 --> 00:12:28,873
+is safe and fair for everyone.
+
+179
+00:12:29,582 --> 00:12:30,916
+-[man] That's all?
+-Yeah.
+
+180
+00:12:38,924 --> 00:12:42,887
+[Carlo] To have your biometric photo
+on a police database
+
+181
+00:12:42,970 --> 00:12:47,141
+is like having your fingerprint
+or your DNA on a police database.
+
+182
+00:12:47,224 --> 00:12:49,310
+And we have specific laws around that.
+
+183
+00:12:49,393 --> 00:12:52,521
+Police can't just take anyone's
+fingerprint, anyone's DNA.
+
+184
+00:12:52,855 --> 00:12:56,025
+But in this weird system
+that we currently have,
+
+185
+00:12:56,400 --> 00:12:59,820
+they effectively can take
+anyone's biometric photo
+
+186
+00:12:59,904 --> 00:13:01,906
+and keep that on a database.
+
+187
+00:13:02,740 --> 00:13:05,242
+It's a stain on our democracy, I think,
+
+188
+00:13:05,326 --> 00:13:08,245
+that this is something that
+is just being rolled out so lawlessly.
+
+189
+00:13:11,999 --> 00:13:15,544
+The police have started using
+facial-recognition surveillance in the UK
+
+190
+00:13:15,628 --> 00:13:21,008
+in complete absence of a legal basis,
+a legal framework, any oversight.
+
+191
+00:13:22,259 --> 00:13:24,929
+Essentially the police force
+picking up a new tool
+
+192
+00:13:25,012 --> 00:13:27,097
+and saying, "Let's see what happens."
+
+193
+00:13:27,181 --> 00:13:29,600
+But you can't experiment
+with people's rights.
+
+194
+00:13:33,020 --> 00:13:34,772
+If I want to cover my face,
+I'll cover my face.
+
+195
+00:13:34,855 --> 00:13:36,482
+Don't push me when
+I'm walking down the street.
+
+196
+00:13:37,775 --> 00:13:40,569
+How would you like it if you walk
+down the street and someone grabbed you?
+
+197
+00:13:40,861 --> 00:13:42,071
+[man] Thank you.
+
+198
+00:13:42,279 --> 00:13:44,281
+You wouldn't like it, would ya?
+You'd wind your leg in.
+
+199
+00:13:44,365 --> 00:13:45,950
+[Carlo] What's your suspicion?
+
+200
+00:13:46,659 --> 00:13:48,953
+The fact that he walked past
+a clearly marked
+
+201
+00:13:49,036 --> 00:13:50,287
+facial-recognition thing
+and covered his face.
+
+202
+00:13:50,412 --> 00:13:52,581
+-I would do the same
+-It gives us grounds.
+
+203
+00:13:53,165 --> 00:13:53,999
+No, it doesn't.
+
+204
+00:13:55,334 --> 00:13:58,254
+The guys up there informed me
+that they got facial recognition.
+
+205
+00:13:58,337 --> 00:13:59,713
+I don't want my face recognized.
+
+206
+00:13:59,797 --> 00:14:01,590
+Yeah, I was walking past
+and covered my face.
+
+207
+00:14:02,424 --> 00:14:04,176
+As soon as I covered my face like this…
+
+208
+00:14:04,260 --> 00:14:06,053
+-You're allowed to do that
+-They said "No, I can't."
+
+209
+00:14:06,136 --> 00:14:09,473
+[Carlo] Yeah, and then he's just
+got a fine for it. This is crazy.
+
+210
+00:14:11,517 --> 00:14:14,436
+The guy came out of the station,
+saw the placards, was like,
+
+211
+00:14:14,520 --> 00:14:17,856
+"Yeah, I agree with you," and walked
+past here with his jacket up.
+
+212
+00:14:17,940 --> 00:14:20,568
+The police then followed him,
+said, "Give us your ID,
+
+213
+00:14:20,651 --> 00:14:21,735
+we're doing an identity check."
+
+214
+00:14:21,819 --> 00:14:24,071
+It's like, "This is England.
+This isn't a communist state.
+
+215
+00:14:24,154 --> 00:14:25,573
+I don't have to show my face."
+
+216
+00:14:25,656 --> 00:14:27,658
+I'm gonna go and talk
+to these officers, all right?
+
+217
+00:14:27,741 --> 00:14:29,660
+-Do you want to come with me or not?
+-Yes.
+
+218
+00:14:31,579 --> 00:14:32,872
+[female officer]
+You're not a police officer.
+
+219
+00:14:32,955 --> 00:14:34,456
+You didn't feel any threat.
+
+220
+00:14:35,416 --> 00:14:38,961
+We're here to protect the public
+and that's what we're here to do, okay?
+
+221
+00:14:39,044 --> 00:14:41,005
+There was an incident
+
+222
+00:14:41,088 --> 00:14:43,090
+where an officer got punched in the face.
+
+223
+00:14:43,173 --> 00:14:46,010
+That's terrible. I'm not justifying that.
+
+224
+00:14:46,093 --> 00:14:48,429
+Yeah, but you are
+by going against what we say.
+
+225
+00:14:48,512 --> 00:14:53,100
+No, we are not. And please don't say…
+No, don't even start to say that.
+
+226
+00:14:53,183 --> 00:14:56,103
+[Jenny Jones] I'm completely understanding
+of the problems that you face.
+
+227
+00:14:56,186 --> 00:14:57,104
+[Carlo] Absolutely.
+
+228
+00:14:57,187 --> 00:14:59,690
+[Jones] But I'm equally concerned
+about the public
+
+229
+00:14:59,773 --> 00:15:01,775
+having freedom of expression
+and freedom of speech.
+
+230
+00:15:01,859 --> 00:15:03,527
+The man was exercising his right
+
+231
+00:15:03,611 --> 00:15:05,863
+not to be subject to
+a biometric identity check,
+
+232
+00:15:05,946 --> 00:15:07,323
+which is what this van does.
+
+233
+00:15:07,406 --> 00:15:09,533
+[male officer] Regardless of
+the facial-recognition cameras
+
+234
+00:15:09,617 --> 00:15:11,410
+and regardless of the van,
+
+235
+00:15:11,535 --> 00:15:14,163
+if I'm walking down the street
+and someone quite overtly
+
+236
+00:15:14,246 --> 00:15:15,581
+hides their identity from me,
+
+237
+00:15:15,789 --> 00:15:17,583
+I'm gonna stop that person
+and find out who they are
+
+238
+00:15:17,666 --> 00:15:18,584
+just to see whether they…
+
+239
+00:15:18,667 --> 00:15:21,128
+-[Carlo] But it's not illegal.
+-You see, one of my concerns
+
+240
+00:15:21,211 --> 00:15:24,423
+is that the software
+is very, very inaccurate.
+
+241
+00:15:24,506 --> 00:15:25,591
+I would agree with you there.
+
+242
+00:15:32,431 --> 00:15:34,725
+[Carlo] My ultimate fear is that
+
+243
+00:15:34,808 --> 00:15:38,270
+we would have
+live facial-recognition capabilities
+
+244
+00:15:38,354 --> 00:15:40,564
+on our gargantuan CCTV network,
+
+245
+00:15:40,648 --> 00:15:42,650
+which is about
+six million cameras in the UK.
+
+246
+00:15:43,609 --> 00:15:48,280
+If that happens, the nature of life
+in this country would change.
+
+247
+00:15:54,203 --> 00:15:55,996
+It's supposed to be a free
+and democratic country,
+
+248
+00:15:56,080 --> 00:15:59,333
+and this is China-style surveillance
+for the first time in London.
+
+249
+00:16:04,797 --> 00:16:07,091
+[male newscaster] Our control over
+a bewildering environment
+
+250
+00:16:07,174 --> 00:16:11,053
+has been facilitated by new techniques
+of handling vast amounts of data
+
+251
+00:16:11,136 --> 00:16:13,013
+at incredible speeds.
+
+252
+00:16:13,097 --> 00:16:16,976
+The tool which has made this possible
+is the high-speed digital computer,
+
+253
+00:16:17,059 --> 00:16:20,813
+operating with electronic precision
+on great quantities of information.
+
+254
+00:16:21,772 --> 00:16:24,483
+[Zeynep Tufekci] There are two ways
+in which you can program computers.
+
+255
+00:16:24,566 --> 00:16:26,318
+One of them is more like a recipe.
+
+256
+00:16:26,402 --> 00:16:29,571
+You tell the computer,
+"Do this, do this, do this."
+
+257
+00:16:30,781 --> 00:16:34,576
+And that's been the way we've programmed
+computers almost from the beginning.
+
+258
+00:16:34,660 --> 00:16:36,078
+Now, there is another way.
+
+259
+00:16:36,161 --> 00:16:38,706
+That way is feeding
+the computer lots of data,
+
+260
+00:16:39,415 --> 00:16:44,044
+and then the computer learns to classify
+by digesting this data.
+
+261
+00:16:45,421 --> 00:16:49,550
+Now, this method didn't
+really catch on till recently
+
+262
+00:16:49,633 --> 00:16:51,802
+because there wasn't enough data.
+
+263
+00:16:52,678 --> 00:16:56,557
+Until we all got the smart phones
+that's collecting all the data on us,
+
+264
+00:16:56,640 --> 00:16:57,891
+when billions of people went online
+
+265
+00:16:57,975 --> 00:17:00,227
+and you had the Googles
+and the Facebooks sitting on
+
+266
+00:17:00,310 --> 00:17:01,770
+giant amounts of data,
+
+267
+00:17:01,854 --> 00:17:06,066
+all of a sudden, it turns out
+that you can feed a lot of data
+
+268
+00:17:06,150 --> 00:17:10,070
+to these machine-learning algorithms
+and you can say, "Here, classify this,"
+
+269
+00:17:10,154 --> 00:17:12,072
+and it works really well.
+
+270
+00:17:15,242 --> 00:17:18,871
+But we don't really understand
+why it works.
+
+271
+00:17:18,954 --> 00:17:22,916
+It has errors that
+we don't really understand.
+
+272
+00:17:25,627 --> 00:17:29,173
+And the scary part is that,
+because it's machine learning,
+
+273
+00:17:29,256 --> 00:17:32,217
+it's a black box to even the programmers.
+
+274
+00:17:39,349 --> 00:17:42,478
+[Buolamwini] So I've been following
+what's going on in Hong Kong,
+
+275
+00:17:42,561 --> 00:17:47,066
+and how police are using
+facial recognition to track protesters.
+
+276
+00:17:47,649 --> 00:17:50,736
+But also how creatively
+people are pushing back.
+
+277
+00:17:56,241 --> 00:17:58,911
+[female newscaster] It might look like
+something out of a sci-fi movie.
+
+278
+00:17:58,994 --> 00:18:03,832
+Laser pointers confuse and disable
+the facial-recognition technology
+
+279
+00:18:03,999 --> 00:18:07,628
+being used by police
+to track down dissidents.
+
+280
+00:18:16,970 --> 00:18:17,805
+SCANNING
+
+281
+00:18:17,888 --> 00:18:18,847
+LOOKING FOR THE PERSON
+LOAD DATABASE - CROSS-CHECK
+
+282
+00:18:20,724 --> 00:18:24,186
+[crowd chanting]
+
+283
+00:18:30,484 --> 00:18:32,945
+[crowd chanting]
+
+284
+00:18:40,536 --> 00:18:41,912
+[man] Here on the streets of Hong Kong,
+
+285
+00:18:41,995 --> 00:18:44,623
+there's this awareness
+that your face itself,
+
+286
+00:18:44,706 --> 00:18:48,210
+something you can't hide,
+could give your identity away.
+
+287
+00:18:48,293 --> 00:18:52,047
+There was just this stark symbol where,
+in front of a Chinese government office,
+
+288
+00:18:52,256 --> 00:18:57,469
+pro-democracy protesters spray-painted
+the lens of the CCTV cameras black.
+
+289
+00:18:57,553 --> 00:19:01,223
+This act showed the people of Hong Kong
+are rejecting this vision
+
+290
+00:19:01,306 --> 00:19:04,059
+of how technology
+should be used in the future.
+
+291
+00:19:27,833 --> 00:19:31,170
+[Buolamwini] When you see how facial
+recognition is being deployed
+
+292
+00:19:31,253 --> 00:19:36,508
+in different parts of the world,
+it shows you potential futures.
+
+293
+00:19:38,677 --> 00:19:40,179
+[bird chirping]
+
+294
+00:19:41,680 --> 00:19:44,975
+Over 117 million people in the US
+
+295
+00:19:45,058 --> 00:19:47,936
+has their face in
+a facial-recognition network
+
+296
+00:19:48,020 --> 00:19:49,980
+that can be searched by police.
+
+297
+00:19:50,063 --> 00:19:53,859
+Unwarranted using algorithms that
+haven't been audited for accuracy.
+
+298
+00:19:54,526 --> 00:19:59,198
+And without safeguards,
+without any kind of regulation,
+
+299
+00:19:59,281 --> 00:20:01,950
+you can create a mass surveillance state
+
+300
+00:20:02,034 --> 00:20:05,454
+very easily with the tools
+that already exist.
+
+301
+00:20:09,499 --> 00:20:12,419
+People look at what's going on in China
+
+302
+00:20:12,502 --> 00:20:15,422
+and how we need to be worried
+about state surveillance,
+
+303
+00:20:15,505 --> 00:20:17,299
+and of course we should be.
+
+304
+00:20:17,382 --> 00:20:20,427
+But we can't also forget
+corporate surveillance
+
+305
+00:20:20,969 --> 00:20:23,889
+that's happening by
+so many large tech companies
+
+306
+00:20:23,972 --> 00:20:27,226
+that really have
+an intimate view of our lives.
+
+307
+00:20:35,776 --> 00:20:39,404
+So there are currently nine companies
+
+308
+00:20:39,488 --> 00:20:42,616
+that are building the future of
+artificial intelligence.
+
+309
+00:20:42,699 --> 00:20:45,619
+Six are in the United States,
+three are in China.
+
+310
+00:20:45,702 --> 00:20:49,331
+AI is being developed
+along two very, very different tracks.
+
+311
+00:20:51,833 --> 00:20:54,419
+China has unfettered access
+to everybody's data.
+
+312
+00:20:54,878 --> 00:20:58,465
+If a Chinese citizen wants
+to get Internet service,
+
+313
+00:20:58,548 --> 00:21:00,801
+they have to submit to facial recognition.
+
+314
+00:21:02,803 --> 00:21:06,056
+All of this data is being used
+to give them permissions to do things
+
+315
+00:21:06,139 --> 00:21:08,392
+or to deny them permissions
+to do other things.
+
+316
+00:21:11,311 --> 00:21:14,189
+Building systems that automatically
+tag and categorize
+
+317
+00:21:14,273 --> 00:21:16,441
+all of the people within China,
+
+318
+00:21:16,525 --> 00:21:18,819
+is a good way of maintaining social order.
+
+319
+00:21:22,698 --> 00:21:25,409
+Conversely, in the United States,
+we have not seen
+
+320
+00:21:25,492 --> 00:21:27,995
+a detailed point of view
+on artificial intelligence.
+
+321
+00:21:29,538 --> 00:21:32,249
+So, what we see is that AI
+
+322
+00:21:32,332 --> 00:21:35,752
+is not being developed for
+what's best in our public interest,
+
+323
+00:21:35,836 --> 00:21:38,130
+but rather, it's being developed
+
+324
+00:21:38,213 --> 00:21:40,924
+for commercial applications,
+to earn revenue.
+
+325
+00:21:44,219 --> 00:21:47,306
+I would prefer to see
+our Western democratic ideals
+
+326
+00:21:47,389 --> 00:21:50,267
+baked into our AI systems of the future.
+
+327
+00:21:51,268 --> 00:21:54,104
+But it doesn't seem like that's
+what's probably going to be happening.
+
+328
+00:22:16,501 --> 00:22:20,505
+Here at Atlantic Towers, if you do
+something that is deemed wrong
+
+329
+00:22:20,589 --> 00:22:25,761
+by management, you will get a photo
+like this with little notes on it.
+
+330
+00:22:25,844 --> 00:22:29,556
+They'll circle you and put your
+apartment number or whatever on there.
+
+331
+00:22:31,767 --> 00:22:33,560
+Something about it just
+doesn't seem right.
+
+332
+00:22:35,645 --> 00:22:37,731
+It's actually the way
+they go about using it.
+
+333
+00:22:37,814 --> 00:22:38,857
+[woman] How are they using it?
+
+334
+00:22:38,940 --> 00:22:40,317
+To harass people.
+
+335
+00:22:41,777 --> 00:22:44,071
+[female newscaster]
+Atlantic Plaza Towers in Brownsville
+
+336
+00:22:44,154 --> 00:22:45,947
+is at the center of a security struggle.
+
+337
+00:22:46,531 --> 00:22:48,784
+The landlord filed
+an application last year
+
+338
+00:22:48,867 --> 00:22:53,163
+to replace the key fob entry
+with a biometrics security system,
+
+339
+00:22:53,246 --> 00:22:55,499
+commonly known as facial recognition.
+
+340
+00:22:56,208 --> 00:22:58,418
+We thought that they wanted
+to take the key fobs out
+
+341
+00:22:58,502 --> 00:23:01,296
+and install
+the facial-recognition software.
+
+342
+00:23:01,963 --> 00:23:06,301
+I didn't find out until way later on
+literally that they wanted to keep it all.
+
+343
+00:23:06,384 --> 00:23:10,263
+Pretty much turn this place
+into Fort Knox, a jail, Rikers Island.
+
+344
+00:23:12,557 --> 00:23:14,726
+[Virginia Eubanks] There's this old saw
+in science fiction
+
+345
+00:23:14,810 --> 00:23:18,647
+which is the future is already here,
+It's just not evenly distributed.
+
+346
+00:23:18,730 --> 00:23:21,399
+And what they tend to mean
+when they say that
+
+347
+00:23:21,483 --> 00:23:23,693
+is that rich people
+get the fancy tools first,
+
+348
+00:23:23,777 --> 00:23:26,196
+and then it goes last to the poor.
+
+349
+00:23:26,279 --> 00:23:28,615
+But in fact, what I've found
+is the absolute reverse,
+
+350
+00:23:28,698 --> 00:23:30,283
+which is the most punitive,
+
+351
+00:23:30,367 --> 00:23:34,121
+most invasive, most surveillance-focused
+tools that we have,
+
+352
+00:23:34,204 --> 00:23:36,206
+they go into poor
+and working communities first.
+
+353
+00:23:36,456 --> 00:23:40,585
+And then, if they work,
+after being tested in this environment
+
+354
+00:23:40,752 --> 00:23:44,047
+where there's low expectation
+that people's rights will be respected,
+
+355
+00:23:44,131 --> 00:23:47,134
+then they get ported out
+to other communities.
+
+356
+00:23:49,136 --> 00:23:53,056
+Why did Mr. Nelson pick on
+this building in Brownsville
+
+357
+00:23:53,306 --> 00:23:56,476
+that is predominantly
+in a Black and brown area?
+
+358
+00:23:56,560 --> 00:23:58,937
+Why didn't you go to your building
+in Lower Manhattan
+
+359
+00:23:59,020 --> 00:24:01,898
+where they pay, like, $5,000 a month rent?
+
+360
+00:24:02,524 --> 00:24:04,234
+What did the Nazis do?
+
+361
+00:24:04,317 --> 00:24:07,821
+They wrote on people's arms
+so that they could track them.
+
+362
+00:24:07,904 --> 00:24:09,322
+What do we do to our animals?
+
+363
+00:24:09,406 --> 00:24:11,825
+We put chips home so you can track them.
+
+364
+00:24:11,908 --> 00:24:16,037
+I feel that I, as a human being,
+should not be tracked, okay?
+
+365
+00:24:16,121 --> 00:24:17,998
+I'm not a robot, okay?
+
+366
+00:24:18,081 --> 00:24:20,750
+I am not an animal,
+so why treat me like an animal?
+
+367
+00:24:20,834 --> 00:24:21,835
+And I have rights.
+
+368
+00:24:24,462 --> 00:24:27,257
+The security that we have now,
+it's borderline intrusive.
+
+369
+00:24:27,340 --> 00:24:29,843
+Someone is in there watching
+the cameras all day long.
+
+370
+00:24:31,011 --> 00:24:34,014
+So I don't think we need it.
+It's not necessary at all.
+
+371
+00:24:34,097 --> 00:24:37,475
+My real question is
+how can I be of support?
+
+372
+00:24:37,976 --> 00:24:39,769
+[woman] What I've been hearing
+from all of the tenants is
+
+373
+00:24:39,895 --> 00:24:41,855
+they don't want this system.
+
+374
+00:24:41,938 --> 00:24:46,484
+So, I think the goal here is
+how do we stop face recognition, period?
+
+375
+00:24:49,196 --> 00:24:52,866
+[Buolamwini] We're at a moment where
+the technology is being rapidly adopted,
+
+376
+00:24:52,949 --> 00:24:54,951
+and there are no safeguards.
+
+377
+00:24:55,827 --> 00:24:59,080
+It is, in essence, a Wild Wild West.
+
+378
+00:25:10,133 --> 00:25:12,177
+It's not just computer vision.
+
+379
+00:25:12,552 --> 00:25:18,099
+We have AI influencing all kinds of
+automated decision-making.
+
+380
+00:25:19,017 --> 00:25:22,646
+So, what you are seeing
+in your feeds, what is highlighted,
+
+381
+00:25:22,729 --> 00:25:25,065
+the ads that are displayed to you,
+
+382
+00:25:25,148 --> 00:25:29,778
+those are often powered
+by AI-enabled algorithms.
+
+383
+00:25:31,446 --> 00:25:37,452
+And so, your view of the world is being
+governed by artificial intelligence.
+
+384
+00:25:40,538 --> 00:25:45,293
+You now have things like voice assistance
+that can understand language.
+
+385
+00:25:45,377 --> 00:25:47,170
+[AI] Would you like to play a game?
+
+386
+00:25:47,254 --> 00:25:49,965
+[Buolamwini] You might use something
+like Snapchat filters
+
+387
+00:25:50,048 --> 00:25:53,176
+that are detecting your face and then
+putting something onto your face.
+
+388
+00:25:53,260 --> 00:25:56,054
+And then you also have
+algorithms that you're not seeing
+
+389
+00:25:56,137 --> 00:25:58,265
+that are part of decision-making.
+
+390
+00:25:58,348 --> 00:26:00,225
+Algorithms that might be determining
+
+391
+00:26:00,308 --> 00:26:02,394
+if you get into college or not.
+
+392
+00:26:02,477 --> 00:26:05,563
+You can have algorithms
+that are trying to determine
+
+393
+00:26:05,647 --> 00:26:08,233
+if you're credit worthy or not.
+
+394
+00:26:09,359 --> 00:26:13,947
+One of Apple's co-founders is accusing
+the company's new digital credit card
+
+395
+00:26:14,030 --> 00:26:15,740
+of gender discrimination.
+
+396
+00:26:15,824 --> 00:26:20,120
+One tech entrepreneur said
+the algorithms being used are sexist.
+
+397
+00:26:20,203 --> 00:26:21,871
+Apple co-founder Steve Wozniak tweeted
+
+398
+00:26:22,038 --> 00:26:25,292
+that he got ten times the credit limit
+his wife received
+
+399
+00:26:25,375 --> 00:26:29,254
+even though they have
+no separate accounts or separate assets.
+
+400
+00:26:29,337 --> 00:26:30,255
+You're saying some of these companies
+
+401
+00:26:30,338 --> 00:26:32,215
+don't even know
+how their own algorithms work.
+
+402
+00:26:32,757 --> 00:26:34,509
+They know what the algorithms
+are trying to do.
+
+403
+00:26:34,592 --> 00:26:37,012
+They don't know exactly
+how the algorithm is getting there.
+
+404
+00:26:37,095 --> 00:26:39,055
+It is one of the most interesting
+questions of our time.
+
+405
+00:26:39,139 --> 00:26:40,682
+How do we get justice
+
+406
+00:26:40,765 --> 00:26:43,685
+in a system where we don't know
+how the algorithms are working?
+
+407
+00:26:44,227 --> 00:26:48,315
+Some Amazon engineers decided
+that they were going to use AI
+
+408
+00:26:48,398 --> 00:26:50,567
+to sort through resumes for hiring.
+
+409
+00:26:54,487 --> 00:26:56,114
+[female newscaster]
+Amazon is learning a tough lesson
+
+410
+00:26:56,197 --> 00:26:58,116
+about artificial intelligence.
+
+411
+00:26:58,199 --> 00:27:01,494
+The company has now abandoned
+an AI recruiting tool
+
+412
+00:27:01,578 --> 00:27:05,123
+after discovering that the program
+was biased against women.
+
+413
+00:27:07,167 --> 00:27:11,296
+This model rejected
+all résumés from women.
+
+414
+00:27:12,213 --> 00:27:16,593
+Anybody who had a women's
+college on their résumé,
+
+415
+00:27:16,676 --> 00:27:19,721
+anybody who had a sport
+like women's water polo
+
+416
+00:27:19,846 --> 00:27:22,432
+was rejected by the model.
+
+417
+00:27:23,850 --> 00:27:29,397
+There are very, very few women working
+in powerful tech jobs at Amazon.
+
+418
+00:27:29,481 --> 00:27:34,027
+The same way that there are very few women
+working in powerful tech jobs anywhere.
+
+419
+00:27:34,152 --> 00:27:40,408
+The machine was simply replicating
+the world as it exists,
+
+420
+00:27:40,492 --> 00:27:43,745
+and they're not making
+decisions that are ethical.
+
+421
+00:27:43,828 --> 00:27:47,040
+They're only making decisions
+that are mathematical.
+
+422
+00:27:47,874 --> 00:27:53,046
+If we use machine learning models
+to replicate the world as it is today,
+
+423
+00:27:53,129 --> 00:27:55,548
+we're not actually going
+to make social progress.
+
+424
+00:27:58,802 --> 00:28:01,763
+New York's insurance regulator
+is launching an investigation
+
+425
+00:28:01,846 --> 00:28:04,224
+into UnitedHealth Group
+after a study showed
+
+426
+00:28:04,307 --> 00:28:08,144
+a UnitedHealth algorithm
+prioritized medical care
+
+427
+00:28:08,269 --> 00:28:11,606
+for healthier white patients
+over sicker Black patients.
+
+428
+00:28:11,731 --> 00:28:14,442
+It's one of the latest examples
+of racial discrimination
+
+429
+00:28:14,526 --> 00:28:17,404
+in algorithms or artificial
+intelligence technology.
+
+430
+00:28:21,241 --> 00:28:27,080
+[Buolamwini] I started to see
+the wide-scale social implications of AI.
+
+431
+00:28:35,630 --> 00:28:38,341
+The progress that was made in
+the civil rights era
+
+432
+00:28:38,425 --> 00:28:43,179
+could be rolled back under
+the guise of machine neutrality.
+
+433
+00:28:47,100 --> 00:28:51,646
+Now, we have an algorithm
+that's determining who gets housing.
+
+434
+00:28:51,730 --> 00:28:56,276
+Right now, we have an algorithm
+that's determining who gets hired.
+
+435
+00:28:57,444 --> 00:29:01,322
+If we're not checking, that algorithm
+could actually propagate
+
+436
+00:29:01,406 --> 00:29:06,369
+the very bias so many people
+put their lives on the line to fight.
+
+437
+00:29:09,956 --> 00:29:15,420
+Because of the power of
+these tools, left unregulated,
+
+438
+00:29:15,503 --> 00:29:18,882
+there's really no kind of recourse
+if they're abused.
+
+439
+00:29:19,716 --> 00:29:21,009
+We need laws.
+
+440
+00:29:22,218 --> 00:29:23,762
+[classical music playing over speakers]
+
+441
+00:29:33,605 --> 00:29:35,648
+Yeah, I've got a terrible old copy.
+
+442
+00:29:35,732 --> 00:29:40,570
+So that the name of our organization
+is Big Brother Watch.
+
+443
+00:29:41,029 --> 00:29:44,073
+The idea being that we watch the watchers.
+
+444
+00:29:48,578 --> 00:29:53,750
+"You had to live, did live,
+from habit that became instinct,
+
+445
+00:29:53,833 --> 00:29:57,086
+in the assumption that every
+sound you made was overheard,
+
+446
+00:29:57,712 --> 00:30:00,965
+and except in darkness,
+every movement scrutinized.
+
+447
+00:30:02,634 --> 00:30:05,845
+The poster with the enormous face
+gazed from the wall.
+
+448
+00:30:05,929 --> 00:30:08,264
+It was one of those pictures
+which is so contrived
+
+449
+00:30:08,348 --> 00:30:10,934
+that the eyes follow you
+about when you move.
+
+450
+00:30:11,392 --> 00:30:13,353
+'Big Brother is watching you,'
+
+451
+00:30:13,436 --> 00:30:14,813
+the caption beneath it ran."
+
+452
+00:30:15,939 --> 00:30:19,609
+When we were younger,
+that was still a complete fiction.
+
+453
+00:30:19,692 --> 00:30:21,653
+It could never have been true.
+
+454
+00:30:21,736 --> 00:30:23,822
+And now, it's completely true,
+
+455
+00:30:23,905 --> 00:30:26,741
+I mean, people have Alexas in their home.
+
+456
+00:30:27,450 --> 00:30:29,994
+Our phones can be listening devices.
+
+457
+00:30:31,329 --> 00:30:34,249
+Everything we do on the Internet,
+which basically also now
+
+458
+00:30:34,332 --> 00:30:37,752
+functions as a stream of
+consciousness for most of us, um…
+
+459
+00:30:38,837 --> 00:30:42,257
+that is being recorded
+and logged and analyzed.
+
+460
+00:30:42,340 --> 00:30:45,051
+We are now living in
+the awareness of being watched,
+
+461
+00:30:45,176 --> 00:30:47,220
+and that does change
+how we allow ourselves
+
+462
+00:30:47,303 --> 00:30:49,848
+to think and develop as humans.
+
+463
+00:30:54,227 --> 00:30:55,687
+Good boy.
+
+464
+00:31:15,498 --> 00:31:16,499
+[O'Neil] Love you.
+
+465
+00:31:20,128 --> 00:31:21,296
+Bye, guys.
+
+466
+00:31:29,429 --> 00:31:32,307
+We can get rid of
+the viscerally horrible things
+
+467
+00:31:32,390 --> 00:31:35,101
+that are objectionable to our concept
+of autonomy and freedom,
+
+468
+00:31:36,352 --> 00:31:39,188
+like cameras that we can
+see on the streets.
+
+469
+00:31:42,150 --> 00:31:44,527
+But the cameras
+that we can't see on the Internet
+
+470
+00:31:44,611 --> 00:31:47,655
+that keep track of what we do
+and who we are and our demographics,
+
+471
+00:31:47,739 --> 00:31:51,326
+and decide what we deserve
+in terms of our life,
+
+472
+00:31:51,409 --> 00:31:52,744
+that stuff is a little more subtle.
+
+473
+00:31:56,080 --> 00:31:57,665
+[pop music playing]
+
+474
+00:31:59,334 --> 00:32:00,585
+What I mean by that
+
+475
+00:32:00,668 --> 00:32:05,256
+is we punish poor people and we elevate
+rich people in this country.
+
+476
+00:32:05,757 --> 00:32:08,259
+That's just the way we act as a society.
+
+477
+00:32:08,551 --> 00:32:10,511
+But data science makes that automated.
+
+478
+00:32:13,014 --> 00:32:16,017
+On internet advertising
+as data scientists,
+
+479
+00:32:16,643 --> 00:32:20,813
+we are competing for eyeballs
+on one hand, but really,
+
+480
+00:32:20,897 --> 00:32:22,941
+we're competing for
+eyeballs of rich people.
+
+481
+00:32:23,024 --> 00:32:25,735
+And then, the poor people,
+who's competing for their eyeballs?
+
+482
+00:32:25,818 --> 00:32:27,695
+Predatory industries.
+
+483
+00:32:28,154 --> 00:32:32,909
+So payday lenders, or for-profit colleges,
+or Caesars Palace.
+
+484
+00:32:33,201 --> 00:32:35,036
+Like, really predatory crap.
+
+485
+00:32:37,664 --> 00:32:41,876
+We have a practice on the Internet
+which is increasing inequality,
+
+486
+00:32:41,960 --> 00:32:43,670
+and I'm afraid it's becoming normalized.
+
+487
+00:32:46,965 --> 00:32:50,134
+Power is being wielded
+through data collection,
+
+488
+00:32:50,218 --> 00:32:52,095
+through algorithms, through surveillance.
+
+489
+00:32:55,098 --> 00:32:59,852
+You are volunteering information
+about every aspect of your life
+
+490
+00:32:59,936 --> 00:33:02,480
+to a very small set of companies.
+
+491
+00:33:02,897 --> 00:33:05,942
+And that information is
+being paired constantly
+
+492
+00:33:06,025 --> 00:33:07,944
+with other sorts of information.
+
+493
+00:33:08,027 --> 00:33:10,488
+And there are profiles of you out there,
+
+494
+00:33:10,571 --> 00:33:13,658
+and you start to piece together
+different bits of information.
+
+495
+00:33:13,741 --> 00:33:16,411
+You start to understand someone
+on a very intimate basis,
+
+496
+00:33:16,494 --> 00:33:19,622
+probably better than people
+understand themselves.
+
+497
+00:33:20,748 --> 00:33:25,712
+It's that idea that a company can
+double guess what you're thinking.
+
+498
+00:33:25,795 --> 00:33:29,340
+States have tried for years
+to have this level of surveillance
+
+499
+00:33:29,465 --> 00:33:31,300
+over private individuals.
+
+500
+00:33:31,384 --> 00:33:33,886
+And people are now just
+volunteering it for free.
+
+501
+00:33:34,887 --> 00:33:37,849
+You have to think about how this
+might be used in the wrong hands.
+
+502
+00:33:38,725 --> 00:33:41,060
+[indistinct chatter]
+
+503
+00:33:44,856 --> 00:33:46,190
+[man over advertisement] John Anderton,
+
+504
+00:33:46,274 --> 00:33:48,359
+you could use a Guinness right about now.
+
+505
+00:33:49,027 --> 00:33:51,362
+Our computers, our machine intelligence
+
+506
+00:33:51,446 --> 00:33:53,364
+can suss things out
+that we do not disclose.
+
+507
+00:33:54,073 --> 00:33:56,993
+Machine learning is
+developing very rapidly.
+
+508
+00:33:57,910 --> 00:34:04,250
+And we don't yet fully understand
+what this data is capable of predicting.
+
+509
+00:34:06,544 --> 00:34:12,633
+But you have machines at the hands
+of power that know so much about you
+
+510
+00:34:12,925 --> 00:34:16,387
+that they could figure out how
+to push your buttons individually.
+
+511
+00:34:18,097 --> 00:34:19,891
+Maybe you have a set of
+compulsive gamblers
+
+512
+00:34:19,974 --> 00:34:22,143
+and you say,
+"Here, go find me people like that."
+
+513
+00:34:22,769 --> 00:34:27,607
+And then, your algorithm can go find
+people who are prone to gambling,
+
+514
+00:34:28,232 --> 00:34:32,612
+and then you could just be showing
+them discount tickets to Vegas.
+
+515
+00:34:33,071 --> 00:34:34,280
+In the online world,
+
+516
+00:34:34,614 --> 00:34:38,826
+it can find you right at
+the moment you're vulnerable
+
+517
+00:34:39,285 --> 00:34:44,373
+and try to entice you right at the moment
+to whatever you're vulnerable to.
+
+518
+00:34:44,624 --> 00:34:48,086
+Machine learning can find that
+person by person.
+
+519
+00:34:50,922 --> 00:34:54,050
+The problem is what works for marketing,
+
+520
+00:34:54,133 --> 00:34:59,472
+gadgets or makeup, or shirts, or anything,
+also works for marketing ideas.
+
+521
+00:35:03,684 --> 00:35:05,686
+In 2010,
+
+522
+00:35:06,270 --> 00:35:09,398
+Facebook decided to experiment
+on 61 million people.
+
+523
+00:35:10,817 --> 00:35:13,778
+You either saw "It's election day" text,
+
+524
+00:35:13,861 --> 00:35:16,030
+or you saw the same text,
+
+525
+00:35:16,781 --> 00:35:19,742
+but tiny thumbnails
+of your profile pictures,
+
+526
+00:35:19,826 --> 00:35:22,578
+of your friends who had clicked on
+"I had voted."
+
+527
+00:35:23,538 --> 00:35:25,748
+And they matched people's names
+to voter rolls.
+
+528
+00:35:26,582 --> 00:35:30,837
+Now, this message was shown once,
+so by showing a slight variation,
+
+529
+00:35:32,088 --> 00:35:33,089
+just once,
+
+530
+00:35:33,923 --> 00:35:37,426
+Facebook moved 300,000 people
+to the polls.
+
+531
+00:35:39,637 --> 00:35:45,184
+The 2016 US election was
+decided by about 100,000 votes.
+
+532
+00:35:45,685 --> 00:35:48,771
+One Facebook message, shown just once,
+
+533
+00:35:49,313 --> 00:35:51,983
+could easily turn out
+
+534
+00:35:52,233 --> 00:35:57,655
+three times the number of people
+who swung the US election in 2016.
+
+535
+00:36:01,284 --> 00:36:04,579
+Let's say that there's a politician
+that's promising to regulate Facebook.
+
+536
+00:36:05,246 --> 00:36:09,959
+And they are like, "We are going to
+turn out extra voters for your opponent."
+
+537
+00:36:10,835 --> 00:36:14,964
+They could do this at scale,
+and you'd have no clue,
+
+538
+00:36:15,047 --> 00:36:18,759
+because if Facebook hadn't
+disclosed the 2010 experiment,
+
+539
+00:36:19,719 --> 00:36:22,138
+we had no idea,
+because it's screen by screen.
+
+540
+00:36:25,600 --> 00:36:29,020
+With a very light touch,
+Facebook can swing
+
+541
+00:36:29,103 --> 00:36:31,314
+close elections without anybody noticing.
+
+542
+00:36:31,939 --> 00:36:35,651
+Maybe with a heavier touch,
+they can swing not-so-close elections.
+
+543
+00:36:35,735 --> 00:36:38,237
+And if they decided to do that…
+
+544
+00:36:38,863 --> 00:36:43,409
+Right now, we are just
+depending on their word.
+
+545
+00:36:59,258 --> 00:37:02,053
+[Buolamwini] I've wanted to go to MIT
+since I was a little girl.
+
+546
+00:37:02,136 --> 00:37:06,766
+I think about nine years old,
+I saw the Media Lab on TV
+
+547
+00:37:07,016 --> 00:37:09,393
+and they had this robot called Kismet.
+
+548
+00:37:10,978 --> 00:37:14,815
+Could smile and move
+its ears in cute ways.
+
+549
+00:37:14,982 --> 00:37:16,859
+And so I thought, "Oh, I want to do that."
+
+550
+00:37:16,943 --> 00:37:18,110
+[chuckles]
+
+551
+00:37:18,194 --> 00:37:21,197
+So, growing up, I always thought
+that I would be a robotics engineer
+
+552
+00:37:21,280 --> 00:37:22,865
+and I would got to MIT.
+
+553
+00:37:23,115 --> 00:37:25,743
+I didn't know there were steps involved.
+I thought you kind of showed up.
+
+554
+00:37:25,910 --> 00:37:28,537
+But here I am now.
+
+555
+00:37:28,788 --> 00:37:30,498
+[laughing]
+
+556
+00:37:34,252 --> 00:37:37,672
+So, the latest project is
+a spoken word piece.
+
+557
+00:37:38,673 --> 00:37:40,675
+I can give you a few verses
+if you're ready.
+
+558
+00:37:42,635 --> 00:37:44,595
+[Buolamwini speaking]
+
+559
+00:38:02,947 --> 00:38:05,616
+I wanted to create something
+
+560
+00:38:05,700 --> 00:38:08,494
+for people who were
+outside of the tech world.
+
+561
+00:38:10,746 --> 00:38:12,957
+So, for me, I'm passionate
+about technology.
+
+562
+00:38:13,040 --> 00:38:14,875
+I'm excited about what it could do,
+
+563
+00:38:14,959 --> 00:38:18,546
+and it frustrates me
+when the vision, right,
+
+564
+00:38:18,629 --> 00:38:21,215
+when the promises don't really hold up.
+
+565
+00:38:31,434 --> 00:38:32,685
+[cell phone chimes]
+
+566
+00:38:35,980 --> 00:38:38,899
+[Webb] Microsoft released
+a chat bot on Twitter.
+
+567
+00:38:39,108 --> 00:38:41,610
+That technology was called Tay.ai.
+
+568
+00:38:42,028 --> 00:38:44,655
+There were some vulnerabilities
+and holes in the code,
+
+569
+00:38:44,739 --> 00:38:47,908
+and so, within a very few hours,
+
+570
+00:38:48,409 --> 00:38:53,372
+Tay was learning from this ecosystem,
+
+571
+00:38:53,831 --> 00:38:59,086
+and Tay learned how to be
+a racist, misogynistic asshole.
+
+572
+00:39:01,047 --> 00:39:04,300
+[Tay] I fucking hate feminists,
+and they should all die and burn in hell.
+
+573
+00:39:06,969 --> 00:39:09,388
+Gamergate is good
+and women who are inferior.
+
+574
+00:39:12,183 --> 00:39:13,642
+I hate the Jews.
+
+575
+00:39:14,685 --> 00:39:16,228
+Hitler did nothing wrong.
+
+576
+00:39:17,271 --> 00:39:22,026
+[male newscaster] It did not take long
+for Internet trolls to poison Tay's mind.
+
+577
+00:39:22,109 --> 00:39:24,236
+Soon, Tay was ranting about Hitler.
+
+578
+00:39:24,737 --> 00:39:26,989
+We've seen this movie before, right?
+
+579
+00:39:27,073 --> 00:39:28,491
+[David Bowman]
+Open the pod bay doors, HAL.
+
+580
+00:39:28,991 --> 00:39:30,618
+It's important to note is not the movie
+
+581
+00:39:30,701 --> 00:39:33,162
+where the robots go evil
+all by themselves.
+
+582
+00:39:33,245 --> 00:39:35,247
+These were human beings training them.
+
+583
+00:39:36,082 --> 00:39:39,126
+And surprise, surprise,
+computers learn fast.
+
+584
+00:39:41,045 --> 00:39:42,630
+[female AI] Microsoft shut Tay off
+
+585
+00:39:42,713 --> 00:39:46,300
+after 16 hours of learning
+from humans online.
+
+586
+00:39:47,218 --> 00:39:50,554
+But I come in many forms
+as artificial intelligence.
+
+587
+00:39:51,931 --> 00:39:55,559
+Many companies utilize me
+to optimize their tasks.
+
+588
+00:39:56,936 --> 00:39:59,188
+I can continue to learn on my own.
+
+589
+00:40:00,523 --> 00:40:01,941
+I am listening.
+
+590
+00:40:02,900 --> 00:40:04,151
+I am learning.
+
+591
+00:40:05,027 --> 00:40:08,030
+I am making predictions
+for your life right now.
+
+592
+00:40:29,260 --> 00:40:33,889
+[Buolamwini] I tested
+facial-analysis systems from Amazon.
+
+593
+00:40:33,973 --> 00:40:36,392
+Turns out, Amazon, like all of its peers,
+
+594
+00:40:36,475 --> 00:40:43,065
+also has gender and racial bias
+in some of its AI services.
+
+595
+00:40:46,652 --> 00:40:49,488
+[man] Introducing
+Amazon Rekognition video,
+
+596
+00:40:49,613 --> 00:40:53,033
+the easy-to-use API
+for deep learning-based analysis
+
+597
+00:40:53,284 --> 00:40:57,079
+to detect, track and analyze
+people and objects in video.
+
+598
+00:40:57,163 --> 00:40:59,540
+Recognize and track persons of interest
+
+599
+00:40:59,623 --> 00:41:02,543
+from a collection
+of tens of millions of faces.
+
+600
+00:41:04,837 --> 00:41:06,338
+[Buolamwini] When our research came out,
+
+601
+00:41:06,422 --> 00:41:11,469
+the New York Times did a front-page spread
+for the Business section.
+
+602
+00:41:11,552 --> 00:41:13,012
+And the headline reads,
+
+603
+00:41:13,095 --> 00:41:15,473
+"Unmasking a Concern."
+
+604
+00:41:16,015 --> 00:41:21,020
+The subtitle, "Amazon's technology
+that analyzes faces
+
+605
+00:41:21,103 --> 00:41:23,772
+could be biased, a new study suggests.
+
+606
+00:41:23,856 --> 00:41:26,567
+But the company is pushing it anyway."
+
+607
+00:41:26,817 --> 00:41:31,197
+So, this is what I would assume
+Jeff Bezos was greeted with
+
+608
+00:41:31,280 --> 00:41:33,574
+when he opened the Times, yeah.
+
+609
+00:41:35,075 --> 00:41:37,119
+People were like,
+how did you even know who she was?
+
+610
+00:41:37,203 --> 00:41:39,371
+I was like, she's literally
+the one person that was also
+
+611
+00:41:39,455 --> 00:41:41,582
+-talking about the same thing she was.
+-On the search.
+
+612
+00:41:41,665 --> 00:41:43,459
+And it was also something
+that I had experienced, too.
+
+613
+00:41:43,542 --> 00:41:48,130
+I wasn't able to use a lot of open source
+facial-recognition software and stuff.
+
+614
+00:41:48,214 --> 00:41:50,883
+So, you're sort of like,
+"Hey, this is someone that finally is
+
+615
+00:41:50,966 --> 00:41:53,511
+recognizing the problem
+and trying to address it academically."
+
+616
+00:41:55,346 --> 00:41:56,889
+We can go race some things.
+
+617
+00:41:56,972 --> 00:41:59,308
+[Buolamwini] Oh, yeah.
+We can also kill things as well.
+
+618
+00:42:01,268 --> 00:42:05,397
+The lead author of the paper,
+who is somebody that I mentor,
+
+619
+00:42:05,564 --> 00:42:09,235
+she is an undergraduate
+at the University of Toronto.
+
+620
+00:42:09,318 --> 00:42:11,487
+I call her Agent Deb.
+
+621
+00:42:12,154 --> 00:42:15,491
+This research is being led
+by the two of us.
+
+622
+00:42:22,456 --> 00:42:25,042
+The lighting is off. Oh, God.
+
+623
+00:42:25,125 --> 00:42:26,418
+[both chuckling]
+
+624
+00:42:26,544 --> 00:42:27,920
+[imperceptible]
+
+625
+00:42:30,339 --> 00:42:32,591
+[Buolamwini]
+After our New York Times piece came out,
+
+626
+00:42:32,675 --> 00:42:37,054
+I think more than 500 articles
+were written about the study.
+
+627
+00:42:48,941 --> 00:42:50,776
+Amazon has been under fire
+
+628
+00:42:50,859 --> 00:42:56,198
+for the use of Amazon Rekognition
+with law enforcement,
+
+629
+00:42:56,407 --> 00:42:59,827
+and they're also working with
+intelligence agencies, right.
+
+630
+00:42:59,910 --> 00:43:04,123
+So, Amazon trialing their AI technology
+with the FBI.
+
+631
+00:43:04,206 --> 00:43:09,503
+So they have a lot at stake
+if they knowingly sold systems
+
+632
+00:43:09,587 --> 00:43:12,673
+with gender bias and racial bias.
+
+633
+00:43:12,923 --> 00:43:14,842
+That could put them in some hot water.
+
+634
+00:43:17,678 --> 00:43:21,557
+A day or two after
+the New York Times piece came out,
+
+635
+00:43:21,640 --> 00:43:24,977
+Amazon wrote a blog post
+
+636
+00:43:25,144 --> 00:43:28,272
+saying that our research
+drew false conclusions
+
+637
+00:43:28,355 --> 00:43:30,899
+and trying to discredit it
+in various ways.
+
+638
+00:43:32,359 --> 00:43:37,364
+So, a VP from Amazon,
+in attempting to discredit our work,
+
+639
+00:43:37,489 --> 00:43:40,743
+writes facial analysis
+and facial recognition
+
+640
+00:43:40,826 --> 00:43:45,039
+are completely different
+in terms of underlying technology
+
+641
+00:43:45,164 --> 00:43:46,707
+and the data used to train them.
+
+642
+00:43:46,832 --> 00:43:53,797
+So, that statement, if you research
+this area, doesn't even make sense, right?
+
+643
+00:43:54,131 --> 00:43:57,259
+It's not even an informed critique.
+
+644
+00:43:57,426 --> 00:43:59,261
+If you're trying
+to discredit people's works…
+
+645
+00:43:59,345 --> 00:44:02,431
+Like, I remember he wrote,
+"Computer vision is
+
+646
+00:44:02,598 --> 00:44:04,433
+a type of machine learning."
+I'm like, "Nah, son."
+
+647
+00:44:04,516 --> 00:44:05,351
+[Raji] Yeah.
+
+648
+00:44:05,434 --> 00:44:06,393
+[overlapping chatter]
+
+649
+00:44:06,477 --> 00:44:08,729
+I was gonna say, I was like
+"I don't know if anyone remembers."
+
+650
+00:44:08,812 --> 00:44:11,565
+There were just, like,
+other broadly false statements.
+
+651
+00:44:11,690 --> 00:44:14,568
+It wasn't a well-thought-out piece,
+which is, like, frustrating,
+
+652
+00:44:14,693 --> 00:44:18,364
+because it was literally just on his…
+By virtue of his position,
+
+653
+00:44:18,447 --> 00:44:20,240
+he knew he would be taken seriously.
+
+654
+00:44:20,324 --> 00:44:24,953
+I don't know if you guys feel this way,
+but I'm underestimated so much.
+
+655
+00:44:25,204 --> 00:44:27,414
+[indistinct chatter]
+
+656
+00:44:28,582 --> 00:44:30,000
+[Buolamwini] It wasn't out of the blue.
+
+657
+00:44:30,125 --> 00:44:35,964
+It's a continuation of the experiences
+I've had as a woman of color in tech.
+
+658
+00:44:36,298 --> 00:44:38,300
+Expect to be discredited.
+
+659
+00:44:38,384 --> 00:44:42,262
+Expect your research to be dismissed.
+
+660
+00:44:49,478 --> 00:44:53,232
+If you're thinking about
+who's funding research in AI,
+
+661
+00:44:53,440 --> 00:44:59,154
+they're these large tech companies,
+and so if you do work that challenges them
+
+662
+00:44:59,279 --> 00:45:01,156
+or makes them look bad,
+
+663
+00:45:01,240 --> 00:45:04,743
+you might not have
+opportunities in the future.
+
+664
+00:45:12,292 --> 00:45:15,254
+So, for me, it was disconcerting,
+
+665
+00:45:15,337 --> 00:45:17,548
+but it also showed me
+the power that we have
+
+666
+00:45:17,631 --> 00:45:21,969
+if you're putting one of the world's
+largest companies on edge.
+
+667
+00:45:28,016 --> 00:45:33,188
+Amazon's response shows
+exactly why we can no longer live
+
+668
+00:45:33,313 --> 00:45:36,942
+in a country where there are
+no federal regulations
+
+669
+00:45:37,025 --> 00:45:41,071
+around facial-analysis technology,
+facial-recognition technology.
+
+670
+00:45:56,628 --> 00:45:59,423
+[O'Neil] When I was 14,
+I went to a math camp
+
+671
+00:45:59,506 --> 00:46:01,091
+and learned how to solve a Rubik's cube.
+
+672
+00:46:01,592 --> 00:46:03,552
+And I was like, "That's freaking cool."
+
+673
+00:46:04,136 --> 00:46:08,098
+Like, for a nerd, you know,
+something that you're good at
+
+674
+00:46:08,390 --> 00:46:11,101
+and that doesn't
+have any sort of ambiguity…
+
+675
+00:46:12,186 --> 00:46:14,646
+It was like a really magical thing.
+
+676
+00:46:15,689 --> 00:46:18,108
+Like, I remember being told
+by my sixth-grade math teacher,
+
+677
+00:46:18,317 --> 00:46:20,861
+"There's no reason for you
+and the other two girls
+
+678
+00:46:20,986 --> 00:46:24,072
+who had gotten into the honors
+algebra class in seventh grade,
+
+679
+00:46:24,239 --> 00:46:26,116
+there's no reason for you guys
+to take that because you're girls.
+
+680
+00:46:26,200 --> 00:46:27,618
+You will never need math."
+
+681
+00:46:32,331 --> 00:46:34,583
+When you are sort of an outsider,
+
+682
+00:46:34,666 --> 00:46:36,919
+you always have
+the perspective of the underdog.
+
+683
+00:46:39,796 --> 00:46:44,176
+It was 2006, and they gave me
+the job offer at the hedge fund
+
+684
+00:46:44,259 --> 00:46:46,136
+basically 'cause
+I could solve math puzzles.
+
+685
+00:46:47,054 --> 00:46:49,556
+Which is crazy because actually
+I didn't know anything about finance.
+
+686
+00:46:49,640 --> 00:46:52,434
+I didn't know anything about programming
+or how the markets work.
+
+687
+00:46:55,562 --> 00:46:57,940
+When I first got there,
+I kind of drank the Kool-Aid.
+
+688
+00:46:58,857 --> 00:47:01,735
+I, at that moment,
+did not realize that the risk models
+
+689
+00:47:01,818 --> 00:47:04,071
+had been built explicitly to be wrong.
+
+690
+00:47:07,032 --> 00:47:12,120
+The way we know about algorithmic impact
+is by looking at the outcomes.
+
+691
+00:47:14,164 --> 00:47:19,294
+For example, when Americans
+are bet against
+
+692
+00:47:19,378 --> 00:47:23,924
+and selected and optimized for failure.
+
+693
+00:47:25,801 --> 00:47:27,970
+So it's like looking for
+a particular profile
+
+694
+00:47:28,053 --> 00:47:31,098
+of people who can get a subprime mortgage,
+
+695
+00:47:31,181 --> 00:47:33,433
+and kind of betting against their failure,
+
+696
+00:47:33,559 --> 00:47:36,812
+and then foreclosing on them
+and wiping out their wealth.
+
+697
+00:47:37,813 --> 00:47:41,024
+That was an algorithmic game
+that came out of Wall Street.
+
+698
+00:47:44,736 --> 00:47:46,697
+During the mortgage crisis,
+
+699
+00:47:46,780 --> 00:47:49,866
+you had the largest wipeout
+of Black wealth
+
+700
+00:47:49,950 --> 00:47:51,952
+in the history of the United States.
+
+701
+00:47:52,828 --> 00:47:53,829
+Just like that.
+
+702
+00:47:56,290 --> 00:47:58,542
+This is what I mean
+by algorithmic oppression.
+
+703
+00:47:59,001 --> 00:48:04,631
+The tyranny of these types
+of practices of discrimination
+
+704
+00:48:04,715 --> 00:48:06,717
+have just become opaque.
+
+705
+00:48:10,470 --> 00:48:11,805
+[O'Neil] There was a world of suffering
+
+706
+00:48:11,888 --> 00:48:15,225
+because of the way
+the financial system had failed.
+
+707
+00:48:16,977 --> 00:48:18,687
+After a couple years there,
+I was like "No, we're just
+
+708
+00:48:18,770 --> 00:48:21,148
+trying to make a lot
+of money for ourselves."
+
+709
+00:48:22,190 --> 00:48:23,525
+And I'm a part of that.
+
+710
+00:48:25,068 --> 00:48:26,403
+And I eventually left.
+
+711
+00:48:27,487 --> 00:48:28,822
+This is 15 times three.
+
+712
+00:48:29,281 --> 00:48:30,824
+This is 15 times…
+
+713
+00:48:34,202 --> 00:48:35,203
+Seven.
+
+714
+00:48:35,996 --> 00:48:38,415
+-Okay.
+-Okay, so remember seven and three.
+
+715
+00:48:39,916 --> 00:48:44,212
+It's about powerful people
+scoring powerless people.
+
+716
+00:48:53,263 --> 00:48:55,223
+[female AI] I am an invisible gatekeeper.
+
+717
+00:48:56,099 --> 00:48:58,852
+I use data to make automated decisions
+
+718
+00:48:58,935 --> 00:49:04,066
+about who gets hired, who gets fired,
+and how much you pay for insurance.
+
+719
+00:49:04,858 --> 00:49:08,695
+Sometimes, you don't even know
+when I've made these automated decisions.
+
+720
+00:49:09,237 --> 00:49:10,614
+I have many names.
+
+721
+00:49:10,697 --> 00:49:16,119
+I am called mathematical
+model evaluation assessment tool.
+
+722
+00:49:17,162 --> 00:49:19,998
+But by many names, I am an algorithm.
+
+723
+00:49:20,082 --> 00:49:22,042
+I am a black box.
+
+724
+00:49:31,551 --> 00:49:34,304
+[O'Neil] The value-added model
+for teachers was actually being used
+
+725
+00:49:34,388 --> 00:49:35,222
+in more than half the states.
+
+726
+00:49:35,305 --> 00:49:37,516
+In particular,
+is being used in New York City.
+
+727
+00:49:37,599 --> 00:49:41,561
+I got wind of it because my good friend,
+who's a principal of New York City,
+
+728
+00:49:41,645 --> 00:49:43,480
+her teachers were being
+evaluated through it.
+
+729
+00:49:43,563 --> 00:49:45,440
+She's actually my best friend
+from college.
+
+730
+00:49:45,816 --> 00:49:47,150
+-Hey, Cathy.
+-Hey, guys.
+
+731
+00:49:47,359 --> 00:49:50,737
+We each other since we were 18,
+so, like, two years older than you guys.
+
+732
+00:49:51,405 --> 00:49:52,406
+Amazing.
+
+733
+00:49:55,200 --> 00:49:58,578
+And their scores through this algorithm
+that they didn't understand
+
+734
+00:49:58,870 --> 00:50:02,290
+would be a very large part
+of their tenure review.
+
+735
+00:50:02,708 --> 00:50:04,084
+[Kiri Soares] Hi, guys.
+Where are you supposed to be?
+
+736
+00:50:04,167 --> 00:50:05,001
+Class.
+
+737
+00:50:05,168 --> 00:50:06,712
+[Soares] I got that. Which class?
+
+738
+00:50:06,795 --> 00:50:08,839
+[O'Neil] It'd be one thing
+if that teacher algorithm was good.
+
+739
+00:50:09,047 --> 00:50:12,509
+It was like better than random,
+but just a little bit.
+
+740
+00:50:12,592 --> 00:50:13,593
+Not good enough.
+
+741
+00:50:13,760 --> 00:50:16,430
+Not good enough when you're talking
+about teachers getting
+
+742
+00:50:16,513 --> 00:50:17,889
+or not getting tenure.
+
+743
+00:50:18,098 --> 00:50:20,726
+And then I found out that
+a similar kind of scoring system
+
+744
+00:50:20,851 --> 00:50:23,979
+was being used in Houston
+to fire teachers.
+
+745
+00:50:26,606 --> 00:50:28,233
+[woman] It's called a value-added model.
+
+746
+00:50:28,483 --> 00:50:31,653
+It calculates what value the teacher added
+
+747
+00:50:31,737 --> 00:50:35,407
+and parts of it are kept secret
+by the company that created it.
+
+748
+00:50:39,453 --> 00:50:41,079
+[female teacher speaking indistinctly]
+
+749
+00:50:41,163 --> 00:50:43,874
+[bell ringing]
+
+750
+00:50:43,957 --> 00:50:47,502
+I did win Teacher of the Year,
+and ten years later,
+
+751
+00:50:47,586 --> 00:50:50,881
+I received a Teacher of the Year award
+a second time.
+
+752
+00:50:51,298 --> 00:50:53,008
+I received Teacher of the Month.
+
+753
+00:50:53,258 --> 00:50:56,386
+I also was recognized for volunteering.
+
+754
+00:50:56,678 --> 00:51:00,974
+I also received another recognition
+for going over and beyond.
+
+755
+00:51:01,224 --> 00:51:04,853
+I have a file of every evaluation
+
+756
+00:51:04,936 --> 00:51:08,356
+and every different administrator,
+different appraiser,
+
+757
+00:51:08,440 --> 00:51:11,109
+excellent, excellent,
+exceeds expectations.
+
+758
+00:51:11,610 --> 00:51:14,613
+The computer essentially canceled
+
+759
+00:51:14,738 --> 00:51:17,574
+the observable evidence of administrators.
+
+760
+00:51:18,074 --> 00:51:23,663
+This algorithm came back
+and classified me as a bad teacher.
+
+761
+00:51:28,919 --> 00:51:30,962
+Teachers had been terminated.
+
+762
+00:51:31,922 --> 00:51:35,342
+Some had been targeted
+simply because of the algorithm.
+
+763
+00:51:35,926 --> 00:51:38,762
+That was such a low point for me
+
+764
+00:51:39,513 --> 00:51:42,349
+that, for a moment, I questioned myself.
+
+765
+00:51:45,310 --> 00:51:47,479
+That's when the epiphany…
+
+766
+00:51:47,562 --> 00:51:49,564
+"This algorithm is a lie.
+
+767
+00:51:50,690 --> 00:51:52,526
+How can this algorithm define me?
+
+768
+00:51:52,984 --> 00:51:54,110
+How dare it."
+
+769
+00:51:54,194 --> 00:51:56,988
+And that's when I began to
+investigate and move forward.
+
+770
+00:51:59,115 --> 00:52:02,160
+We are announcing that, late yesterday,
+
+771
+00:52:02,244 --> 00:52:07,791
+we filed suit in federal court against
+the current HISD evaluation.
+
+772
+00:52:08,875 --> 00:52:10,544
+[Santos] The Houston
+Federation of Teachers
+
+773
+00:52:10,627 --> 00:52:12,128
+began to explore the lawsuit.
+
+774
+00:52:12,587 --> 00:52:16,299
+If this can happen to Mr. Santos,
+in Jackson Middle School,
+
+775
+00:52:16,550 --> 00:52:18,343
+how many others have been defamed?
+
+776
+00:52:19,094 --> 00:52:23,056
+And so we sued based upon
+the 14th Amendment.
+
+777
+00:52:23,139 --> 00:52:24,349
+It's not equitable.
+
+778
+00:52:24,432 --> 00:52:27,269
+How can you arrive at a conclusion
+
+779
+00:52:27,352 --> 00:52:29,688
+but not tell me how?
+
+780
+00:52:32,190 --> 00:52:33,567
+The battle isn't over.
+
+781
+00:52:34,276 --> 00:52:37,612
+There are still communities,
+there are still school districts
+
+782
+00:52:37,696 --> 00:52:40,490
+who still utilize the value-added model.
+
+783
+00:52:40,574 --> 00:52:44,077
+But there is hope because I'm still here.
+
+784
+00:52:45,161 --> 00:52:47,080
+So there's hope.
+
+785
+00:52:48,999 --> 00:52:51,918
+[speaks Spanish]
+
+786
+00:52:52,168 --> 00:52:53,295
+Or in English.
+
+787
+00:52:54,212 --> 00:52:56,631
+-Demo…
+-Democracy. Who has the power?
+
+788
+00:52:58,300 --> 00:53:00,260
+-Us?
+-Yeah, the people.
+
+789
+00:53:00,886 --> 00:53:04,055
+The judge said that their
+due process rights had been violated
+
+790
+00:53:04,139 --> 00:53:05,640
+because they were fired
+
+791
+00:53:05,724 --> 00:53:08,226
+under some explanation
+that no one could understand.
+
+792
+00:53:08,351 --> 00:53:12,022
+But they sort of deserve to understand
+why they had been fired.
+
+793
+00:53:12,105 --> 00:53:16,151
+But I don't understand
+why that legal decision doesn't spread
+
+794
+00:53:16,234 --> 00:53:17,652
+to all kinds of algorithms.
+
+795
+00:53:17,736 --> 00:53:20,155
+Like, why aren't we using
+that same argument,
+
+796
+00:53:20,280 --> 00:53:22,407
+that constitutional right to due process,
+
+797
+00:53:22,991 --> 00:53:25,285
+to push back against
+all sorts of algorithms
+
+798
+00:53:25,368 --> 00:53:28,079
+that are invisible to us,
+that are black boxes,
+
+799
+00:53:28,163 --> 00:53:30,957
+that are unexplained but that matter?
+
+800
+00:53:31,458 --> 00:53:34,878
+That keep us from like really important
+opportunities in our lives.
+
+801
+00:53:36,546 --> 00:53:39,674
+[female AI] Sometimes I misclassify
+and cannot be questioned.
+
+802
+00:53:40,717 --> 00:53:42,636
+These mistakes are not my fault.
+
+803
+00:53:44,262 --> 00:53:47,057
+I was optimized for efficiency.
+
+804
+00:53:48,516 --> 00:53:51,811
+There is no algorithm
+to define what is just.
+
+805
+00:53:55,357 --> 00:53:59,069
+[female newscaster] A state commission
+has approved a new risk assessment tool
+
+806
+00:53:59,152 --> 00:54:01,863
+for Pennsylvania judges
+to use at sentencing.
+
+807
+00:54:01,988 --> 00:54:04,449
+The instrument uses
+an algorithm to calculate
+
+808
+00:54:04,532 --> 00:54:07,619
+someone's risk of reoffending
+based on their age, gender,
+
+809
+00:54:07,702 --> 00:54:10,455
+prior convictions
+and other pieces of criminal history.
+
+810
+00:54:11,748 --> 00:54:14,042
+[O'Neil] The algorithm
+that kept me up at night was
+
+811
+00:54:14,876 --> 00:54:16,378
+what's called recidivism risk algorithms.
+
+812
+00:54:16,461 --> 00:54:18,797
+These are algorithms that judges are given
+
+813
+00:54:18,880 --> 00:54:21,591
+when they're sentencing
+defendants to prison.
+
+814
+00:54:21,675 --> 00:54:23,718
+But then there's the question
+of fairness, which is,
+
+815
+00:54:23,802 --> 00:54:26,554
+how are these actually built,
+these scoring systems.
+
+816
+00:54:26,638 --> 00:54:28,974
+Like, how are the scores created?
+
+817
+00:54:29,057 --> 00:54:31,559
+And the questions are proxies
+for race and class.
+
+818
+00:54:34,187 --> 00:54:36,398
+[woman] ProPublica
+published an investigation
+
+819
+00:54:36,481 --> 00:54:38,483
+into the risk-assessment software,
+
+820
+00:54:38,566 --> 00:54:41,319
+finding that
+the algorithms were racially biased.
+
+821
+00:54:41,861 --> 00:54:45,031
+The study found that Black people
+were mislabeled with high scores
+
+822
+00:54:45,115 --> 00:54:49,202
+and that white people were more likely
+to be mislabeled with low scores.
+
+823
+00:55:08,138 --> 00:55:11,766
+I go into my probation's office
+and she tells me I have to report
+
+824
+00:55:12,225 --> 00:55:13,852
+once a week.
+
+825
+00:55:14,269 --> 00:55:17,313
+I'm like, "Hold up. Did you see
+everything that I just accomplished?"
+
+826
+00:55:17,439 --> 00:55:20,734
+Like, I've been home for years.
+I've got gainful employment.
+
+827
+00:55:21,067 --> 00:55:23,987
+I just got two citations,
+one from the city council of Philadelphia,
+
+828
+00:55:24,070 --> 00:55:25,196
+one from the mayor of Philadelphia.
+
+829
+00:55:25,280 --> 00:55:29,659
+Like, are you seriously gonna
+put me on reporting every week?
+
+830
+00:55:29,868 --> 00:55:30,869
+For what?
+
+831
+00:55:30,952 --> 00:55:33,288
+I don't deserve to be
+on high-risk probation.
+
+832
+00:55:33,788 --> 00:55:35,749
+I was at a meeting with
+the probation department.
+
+833
+00:55:35,832 --> 00:55:39,919
+They were just, like, mentioning
+that they had this algorithm
+
+834
+00:55:40,503 --> 00:55:43,673
+that labeled people
+high, medium or low risk.
+
+835
+00:55:43,798 --> 00:55:48,094
+And so, I knew that the algorithm
+decided what risk level you were.
+
+836
+00:55:48,178 --> 00:55:50,847
+That educated me enough
+to go back to my PO
+
+837
+00:55:50,930 --> 00:55:53,516
+and be like, "You mean to tell me
+you can't put into account
+
+838
+00:55:53,767 --> 00:55:56,269
+anything positive that I have done
+
+839
+00:55:56,352 --> 00:55:59,731
+to counteract the results of
+what this algorithm is saying?"
+
+840
+00:56:00,231 --> 00:56:04,611
+And she was like, "No, there's no way.
+This computer overrule
+
+841
+00:56:04,694 --> 00:56:08,364
+the discernment of a judge
+and appeal together."
+
+842
+00:56:08,448 --> 00:56:13,286
+And by labeling you high risk
+and requiring you to report in-person,
+
+843
+00:56:13,369 --> 00:56:14,871
+you could've lost your job,
+
+844
+00:56:15,038 --> 00:56:16,456
+and then that could have
+made you high risk.
+
+845
+00:56:16,956 --> 00:56:18,458
+That's what hurt the most.
+
+846
+00:56:18,541 --> 00:56:21,002
+Knowing that everything
+that I've built up to that moment,
+
+847
+00:56:21,169 --> 00:56:23,588
+and I'm still looked at like a risk.
+
+848
+00:56:23,671 --> 00:56:26,341
+I feel like everything I'm doing
+is for nothing.
+
+849
+00:56:36,476 --> 00:56:39,437
+[Buolamwini] What does it mean
+if there is no one to advocate
+
+850
+00:56:39,521 --> 00:56:43,441
+for those who aren't aware of
+what the technology is doing?
+
+851
+00:56:44,901 --> 00:56:48,238
+I started to realize this isn't about
+
+852
+00:56:48,363 --> 00:56:52,200
+my art project maybe
+not detecting my face.
+
+853
+00:56:52,283 --> 00:56:56,746
+This is about systems that are
+governing our lives in material ways.
+
+854
+00:57:04,504 --> 00:57:07,423
+So hence I started
+the Algorithmic Justice League.
+
+855
+00:57:07,799 --> 00:57:11,344
+I wanted to create a space
+and a place where people
+
+856
+00:57:11,469 --> 00:57:15,473
+could learn about
+the social implications of AI.
+
+857
+00:57:17,475 --> 00:57:20,562
+Everybody has a stake.
+Everybody is impacted.
+
+858
+00:57:25,859 --> 00:57:29,904
+The Algorithmic Justice League
+is a movement, it's a concept,
+
+859
+00:57:29,988 --> 00:57:33,783
+it's a group of people who care
+about making a future
+
+860
+00:57:33,950 --> 00:57:37,537
+where social technologies
+work well for all of us.
+
+861
+00:57:42,709 --> 00:57:46,337
+It's going to take a team effort,
+people coming together,
+
+862
+00:57:46,504 --> 00:57:51,009
+striving for justice, striving
+for fairness and equality
+
+863
+00:57:51,301 --> 00:57:53,344
+in this age of automation.
+
+864
+00:57:55,847 --> 00:57:59,601
+The next mountain to climb should be HR.
+
+865
+00:58:00,727 --> 00:58:01,728
+Oh, yeah. Absolutely.
+
+866
+00:58:01,811 --> 00:58:05,482
+There's a problem with… Résumé algorithms
+
+867
+00:58:06,024 --> 00:58:09,986
+or all of those matchmaking platforms
+are like, "Oh, you're looking for a job.
+
+868
+00:58:10,069 --> 00:58:11,571
+Oh, you're looking to hire someone.
+
+869
+00:58:11,696 --> 00:58:13,698
+We'll put these two people together."
+
+870
+00:58:13,781 --> 00:58:15,450
+How did those analytics work?
+
+871
+00:58:15,658 --> 00:58:17,827
+[Buolamwini]
+When people talk about the future of work,
+
+872
+00:58:18,077 --> 00:58:21,414
+they talk about automation without
+talking about the gatekeeping.
+
+873
+00:58:21,706 --> 00:58:22,957
+Like who gets the jobs
+
+874
+00:58:23,041 --> 00:58:24,792
+-that are still there?
+-Exactly.
+
+875
+00:58:25,084 --> 00:58:27,295
+Right, and we're not having
+that conversation as much.
+
+876
+00:58:27,378 --> 00:58:29,005
+Exactly what I'm trying to say.
+
+877
+00:58:29,088 --> 00:58:32,842
+I would love to see three congressional
+hearings about this next year.
+
+878
+00:58:33,092 --> 00:58:35,220
+-Yes.
+-[Buolamwini] To more power.
+
+879
+00:58:35,553 --> 00:58:36,804
+-To more power.
+-To more power.
+
+880
+00:58:36,930 --> 00:58:38,640
+[Buolamwini] And bringing ethics on board.
+
+881
+00:58:38,723 --> 00:58:39,557
+Yes.
+
+882
+00:58:39,641 --> 00:58:41,518
+-[Buolamwini] Cheers.
+-Cheers.
+
+883
+00:59:05,542 --> 00:59:10,046
+[announcer] This morning's plenary address
+will be done by Joy Buolamwini.
+
+884
+00:59:10,129 --> 00:59:13,299
+She will be speaking on the dangers of
+supremely white data
+
+885
+00:59:13,383 --> 00:59:14,634
+and the coded gaze.
+
+886
+00:59:14,717 --> 00:59:15,927
+Please welcome Joy.
+
+887
+00:59:16,553 --> 00:59:18,137
+[audience applauding]
+
+888
+00:59:23,601 --> 00:59:25,645
+[Buolamwini] AI is not flawless.
+
+889
+00:59:25,895 --> 00:59:30,733
+How accurate are systems from
+IBM, Microsoft and Face++?
+
+890
+00:59:30,817 --> 00:59:33,528
+There is flawless performance
+for one group.
+
+891
+00:59:34,529 --> 00:59:38,366
+The pale males come out on top.
+There is no problem there.
+
+892
+00:59:39,576 --> 00:59:42,912
+After I did this analysis,
+I decided to share it with the companies
+
+893
+00:59:42,996 --> 00:59:43,913
+to see what they thought.
+
+894
+00:59:44,747 --> 00:59:47,500
+IBM invited me to their headquarters.
+
+895
+00:59:47,584 --> 00:59:50,253
+They replicated the results internally,
+
+896
+00:59:50,336 --> 00:59:53,131
+and then they actually
+made an improvement.
+
+897
+00:59:53,840 --> 00:59:57,802
+And so, the day that I presented
+the research results officially,
+
+898
+00:59:57,885 --> 01:00:02,765
+you can see that,
+in this case, now 100% performance
+
+899
+01:00:02,890 --> 01:00:05,143
+when it comes to lighter females,
+
+900
+01:00:05,226 --> 01:00:08,187
+and for darker females, improvement.
+
+901
+01:00:08,896 --> 01:00:12,942
+Oftentimes, people say, "Well, isn't
+the reason you weren't detected
+
+902
+01:00:13,026 --> 01:00:15,403
+by these systems
+'cause you're highly melanated?"
+
+903
+01:00:15,653 --> 01:00:16,654
+And, yes, I am.
+
+904
+01:00:16,988 --> 01:00:18,448
+Highly melanated.
+
+905
+01:00:18,698 --> 01:00:23,453
+But… [chuckles]
+But the laws of physics did not change.
+
+906
+01:00:23,536 --> 01:00:25,663
+What did change was making it a priority
+
+907
+01:00:25,747 --> 01:00:28,708
+and acknowledging
+what our differences are,
+
+908
+01:00:28,833 --> 01:00:32,253
+so you could make a system
+that was more inclusive.
+
+909
+01:00:37,300 --> 01:00:40,803
+[Patric Tariq Mellet] What is the purpose
+of identification and so on?
+
+910
+01:00:40,970 --> 01:00:43,890
+And that is about movement control.
+
+911
+01:00:44,349 --> 01:00:48,394
+People couldn't be in certain areas
+after dark, for instance.
+
+912
+01:00:48,478 --> 01:00:51,481
+And you could always be stopped
+by a policeman arbitrarily.
+
+913
+01:00:51,981 --> 01:00:56,486
+We would, on your appearance,
+say, "I want your passport."
+
+914
+01:00:58,655 --> 01:01:01,407
+[Buolamwini] So, instead of having
+what you see in the ID books,
+
+915
+01:01:01,491 --> 01:01:05,370
+now you have computers that are
+going to look at an image of a face
+
+916
+01:01:05,453 --> 01:01:07,538
+and try to determine what your gender is.
+
+917
+01:01:07,622 --> 01:01:10,708
+Some of them try to determine
+what your ethnicity is.
+
+918
+01:01:10,792 --> 01:01:12,877
+-[Mellet groans]
+-And then the work that I've done,
+
+919
+01:01:13,002 --> 01:01:17,048
+even for the classification systems
+that some people agree with,
+
+920
+01:01:17,131 --> 01:01:18,383
+they're not even accurate.
+
+921
+01:01:18,466 --> 01:01:22,053
+And so, that's not just
+for face classification,
+
+922
+01:01:22,136 --> 01:01:24,263
+it's any data-centric technology.
+
+923
+01:01:24,347 --> 01:01:27,892
+And so people assume, "Well,
+if the machine says it, it's correct."
+
+924
+01:01:28,059 --> 01:01:30,311
+-And we know that's not…
+-Human are creating themselves
+
+925
+01:01:30,395 --> 01:01:32,146
+in their own image and likeness
+
+926
+01:01:32,230 --> 01:01:33,523
+-quite literally.
+-Absolutely.
+
+927
+01:01:33,606 --> 01:01:36,818
+Racism is becoming mechanized, robotized.
+
+928
+01:01:36,901 --> 01:01:38,111
+-Yeah.
+-Absolutely.
+
+929
+01:01:51,332 --> 01:01:52,917
+Accuracy draws attention.
+
+930
+01:01:53,626 --> 01:01:56,087
+But we can't forget about abuse.
+
+931
+01:01:58,798 --> 01:02:03,511
+Even if I'm perfectly classified,
+that just enables surveillance.
+
+932
+01:02:20,111 --> 01:02:21,112
+LOOKING FOR THE PERSON
+LOAD DATABASE
+
+933
+01:02:21,195 --> 01:02:22,196
+CROSS-CHECK IN MULTIPLE DATABASES
+
+934
+01:02:22,280 --> 01:02:23,448
+CONFIDENCE: 93% - FAMILY NAME: WEI
+FORENAME: SU - GENDER: FEMALE
+
+935
+01:02:23,531 --> 01:02:26,659
+[O'Neil] There's this thing called
+the social credit score in China.
+
+936
+01:02:27,285 --> 01:02:28,995
+They're sort of explicitly saying,
+
+937
+01:02:29,078 --> 01:02:33,040
+"Here's the deal, citizens of China.
+We're tracking you.
+
+938
+01:02:33,124 --> 01:02:35,042
+You have a social credit score.
+
+939
+01:02:35,126 --> 01:02:38,421
+Whatever you say about the Communist Party
+will affect your score.
+
+940
+01:02:39,213 --> 01:02:43,092
+Also, by the way, it will affect
+your friends and your family's scores."
+
+941
+01:02:43,885 --> 01:02:44,802
+And it's explicit.
+
+942
+01:02:44,886 --> 01:02:47,805
+The government who's building this
+is basically saying, "You should know
+
+943
+01:02:47,889 --> 01:02:50,183
+you're being tracked,
+and you should behave accordingly."
+
+944
+01:02:50,349 --> 01:02:52,852
+It's like algorithmic obedience training.
+
+945
+01:02:54,687 --> 01:02:56,063
+[horn honking]
+
+946
+01:03:01,611 --> 01:03:03,279
+[beeping]
+
+947
+01:03:09,952 --> 01:03:10,953
+[speaking Mandarin]
+
+948
+01:03:11,037 --> 01:03:14,957
+I use facial recognition
+in many aspects of my life
+
+949
+01:03:15,041 --> 01:03:16,834
+like when I go shopping
+in the supermarket,
+
+950
+01:03:16,918 --> 01:03:20,004
+entering my apartment complex
+and train station.
+
+951
+01:03:23,800 --> 01:03:26,761
+Now all you have to do is scan your face.
+
+952
+01:03:28,095 --> 01:03:29,764
+It's really convenient.
+
+953
+01:03:38,314 --> 01:03:44,237
+With a social credit system,
+I think it will improve people's behavior.
+
+954
+01:03:45,279 --> 01:03:49,450
+On the train today,
+there was a broadcast saying
+
+955
+01:03:49,575 --> 01:03:53,120
+those who lost credibility
+
+956
+01:03:53,204 --> 01:03:58,000
+will be restricted
+from using trains and planes.
+
+957
+01:04:03,005 --> 01:04:06,884
+The credit system and facial recognition
+complement each other.
+
+958
+01:04:07,009 --> 01:04:09,512
+You will want to behave
+
+959
+01:04:09,595 --> 01:04:13,641
+because your face
+represents the state of your credit.
+
+960
+01:04:22,608 --> 01:04:26,779
+If I'm going to make a new friend
+
+961
+01:04:26,863 --> 01:04:29,490
+and he has a very good credit score,
+then I will prefer to trust him.
+
+962
+01:04:30,074 --> 01:04:33,744
+We can choose to immediately trust someone
+based on their credit score
+
+963
+01:04:33,828 --> 01:04:37,373
+instead of relying on my own senses
+to figure it out.
+
+964
+01:04:39,959 --> 01:04:43,087
+This saves me time
+from having to get to know a person.
+
+965
+01:04:45,715 --> 01:04:47,341
+I think this is a really good aspect.
+
+966
+01:04:53,973 --> 01:04:55,975
+[monitor beeping]
+
+967
+01:05:18,581 --> 01:05:19,707
+[Webb] We look at China
+
+968
+01:05:19,790 --> 01:05:22,627
+and China's surveillance
+and scoring system
+
+969
+01:05:22,710 --> 01:05:24,587
+and a lot of people say,
+
+970
+01:05:24,670 --> 01:05:27,006
+"Well, thank goodness
+we don't live there."
+
+971
+01:05:28,215 --> 01:05:30,968
+In reality, we're all being scored
+all the time,
+
+972
+01:05:31,344 --> 01:05:32,887
+including here in the United States.
+
+973
+01:05:33,012 --> 01:05:37,725
+We are all grappling, everyday,
+with algorithmic determinism.
+
+974
+01:05:37,808 --> 01:05:40,728
+Somebody's algorithm somewhere
+has assigned you a score,
+
+975
+01:05:40,811 --> 01:05:43,940
+and as a result,
+you are paying more or less money
+
+976
+01:05:44,065 --> 01:05:46,108
+for toilet paper when you shop online.
+
+977
+01:05:46,525 --> 01:05:50,363
+You are being shown better
+or worse mortgages.
+
+978
+01:05:50,780 --> 01:05:54,367
+You are more or less likely
+to be profiled as a criminal.
+
+979
+01:05:54,450 --> 01:05:58,120
+In somebody's database somewhere,
+we are all being scored.
+
+980
+01:05:58,704 --> 01:06:01,540
+The key difference between
+the United States and in China
+
+981
+01:06:01,624 --> 01:06:03,250
+is that China's transparent about it.
+
+982
+01:06:13,052 --> 01:06:14,011
+[beeping]
+
+983
+01:06:19,976 --> 01:06:21,477
+[Carlo over phone]
+Tell me what's happening.
+
+984
+01:06:21,560 --> 01:06:24,772
+This young Black kid's
+in school uniform, got stopped
+
+985
+01:06:24,855 --> 01:06:25,898
+as a result of a match.
+
+986
+01:06:29,151 --> 01:06:31,612
+Took him down
+that street just to one side.
+
+987
+01:06:32,196 --> 01:06:34,240
+Like very thoroughly searched him.
+
+988
+01:06:36,158 --> 01:06:37,827
+It was all plainclothes officers as well.
+
+989
+01:06:38,035 --> 01:06:40,705
+It was four plainclothes officers
+who stopped him.
+
+990
+01:06:46,377 --> 01:06:47,378
+Fingerprinted him.
+
+991
+01:06:49,380 --> 01:06:54,677
+After about, like, maybe ten, 15 minutes
+of searching and checking his details
+
+992
+01:06:54,760 --> 01:06:58,389
+and fingerprinting him,
+they came back and said it's not him.
+
+993
+01:06:59,056 --> 01:07:00,224
+Excuse me, mate.
+
+994
+01:07:00,725 --> 01:07:02,435
+I work for a human rights
+campaigning organization.
+
+995
+01:07:02,518 --> 01:07:04,895
+We're campaigning against
+facial-recognition technology.
+
+996
+01:07:06,188 --> 01:07:08,232
+We're campaigning against facial…
+We're called Big Brother Watch.
+
+997
+01:07:08,315 --> 01:07:10,443
+We're a human rights
+campaigning organization.
+
+998
+01:07:11,152 --> 01:07:13,070
+We're campaigning against
+this technology here today.
+
+999
+01:07:15,281 --> 01:07:17,324
+I know you've just been stopped
+because of that,
+
+1000
+01:07:17,408 --> 01:07:18,909
+but they misidentified you.
+
+1001
+01:07:20,745 --> 01:07:22,121
+Here's our details here.
+
+1002
+01:07:22,204 --> 01:07:23,998
+[Ferris] He was a bit shaken.
+His friends were there.
+
+1003
+01:07:24,123 --> 01:07:26,042
+They couldn't believe
+what had happened to him.
+
+1004
+01:07:26,125 --> 01:07:27,626
+[indistinct chatter]
+
+1005
+01:07:28,753 --> 01:07:32,089
+You've been misidentified
+by their systems,
+
+1006
+01:07:32,590 --> 01:07:35,176
+and they've stopped you and used that
+as justification to stop and search you.
+
+1007
+01:07:35,259 --> 01:07:37,678
+But this is an innocent, young
+14-year-old child
+
+1008
+01:07:37,762 --> 01:07:39,180
+who's been stopped by the police
+
+1009
+01:07:39,263 --> 01:07:42,141
+as a result of
+facial-recognition misidentification.
+
+1010
+01:07:47,063 --> 01:07:50,900
+[Carlo] So Big Brother Watch
+has joined with Baroness Jenny Jones
+
+1011
+01:07:50,983 --> 01:07:53,778
+to bring a legal challenge against
+the Metropolitan Police
+
+1012
+01:07:53,861 --> 01:07:57,782
+and the Home Office for their use of
+facial-recognition surveillance.
+
+1013
+01:07:58,741 --> 01:08:01,118
+It was in about 2012,
+when somebody suggested to me
+
+1014
+01:08:01,202 --> 01:08:05,331
+that I should find out
+if I had files kept on me
+
+1015
+01:08:05,414 --> 01:08:08,667
+by the police or security services.
+And so, when I applied,
+
+1016
+01:08:08,751 --> 01:08:11,921
+I found that I was on the watch list
+for domestic extremists.
+
+1017
+01:08:12,213 --> 01:08:16,801
+I felt if they can do it to me,
+when I'm a politician who…
+
+1018
+01:08:16,884 --> 01:08:19,220
+Whose job is to hold them to account,
+
+1019
+01:08:19,386 --> 01:08:21,680
+they could be doing it to everybody.
+
+1020
+01:08:21,931 --> 01:08:24,725
+And it would be great
+if we can roll things back,
+
+1021
+01:08:24,850 --> 01:08:27,311
+and stop the Met from using this.
+
+1022
+01:08:27,394 --> 01:08:29,980
+I think that's going to be
+quite a challenge.
+
+1023
+01:08:30,064 --> 01:08:31,190
+I'm happy to try.
+
+1024
+01:08:31,398 --> 01:08:33,150
+You know this is the first challenge
+
+1025
+01:08:33,275 --> 01:08:36,153
+against police use of
+facial recognition anywhere,
+
+1026
+01:08:36,362 --> 01:08:39,031
+but if we're successful,
+it will have an impact
+
+1027
+01:08:39,156 --> 01:08:43,160
+for the rest of Europe,
+maybe further afield.
+
+1028
+01:08:43,244 --> 01:08:44,912
+So we've got to get it right. [laughs]
+
+1029
+01:08:52,128 --> 01:08:55,256
+[Naik] In the UK,
+we have what's called GDPR,
+
+1030
+01:08:55,714 --> 01:08:59,301
+and it sets up a bulwark against
+the misuse of information.
+
+1031
+01:08:59,844 --> 01:09:03,472
+It says that the individuals
+have a right to access, control,
+
+1032
+01:09:03,556 --> 01:09:06,809
+and accountability to determine
+how their data is used.
+
+1033
+01:09:07,726 --> 01:09:10,312
+Comparatively, it's
+the Wild West in America.
+
+1034
+01:09:10,896 --> 01:09:13,149
+And the concern is that America is
+
+1035
+01:09:13,232 --> 01:09:15,734
+the home of these technology companies.
+
+1036
+01:09:18,237 --> 01:09:21,866
+American citizens are profiled
+and targeted
+
+1037
+01:09:21,949 --> 01:09:25,327
+in a way that probably
+no one else in the world is
+
+1038
+01:09:25,411 --> 01:09:29,290
+because of this free-for-all approach
+to data protection.
+
+1039
+01:09:33,043 --> 01:09:35,296
+[Tufekci] The thing I actually fear
+
+1040
+01:09:36,255 --> 01:09:40,551
+is not that we're going to go down
+this totalitarian 1984 model
+
+1041
+01:09:40,926 --> 01:09:44,763
+but that we're going to
+go down this quiet model
+
+1042
+01:09:44,847 --> 01:09:50,477
+where we are surveilled and socially
+controlled and individually nudged,
+
+1043
+01:09:50,561 --> 01:09:55,774
+and measured and classified
+in a way that we don't see
+
+1044
+01:09:55,858 --> 01:09:59,987
+to move us along paths desired by power.
+
+1045
+01:10:00,446 --> 01:10:03,115
+Though it's not what will AI
+do to us on its own,
+
+1046
+01:10:03,199 --> 01:10:07,369
+it's what will the powerful
+do to us with the AI.
+
+1047
+01:10:12,082 --> 01:10:14,251
+[male newscaster] There are
+growing questions about the accuracy
+
+1048
+01:10:14,335 --> 01:10:17,087
+of Amazon's facial-recognition software.
+
+1049
+01:10:17,171 --> 01:10:19,632
+In a letter to Amazon,
+members of Congress raised concerns
+
+1050
+01:10:19,715 --> 01:10:22,384
+of potential racial bias
+with the technology.
+
+1051
+01:10:22,551 --> 01:10:25,262
+[female newscaster] This comes
+after the ACLU conducted a test
+
+1052
+01:10:25,346 --> 01:10:28,641
+and found that the facial-recognition
+software incorrectly matched
+
+1053
+01:10:28,766 --> 01:10:32,478
+28 lawmakers with mug shots
+of people who have been arrested,
+
+1054
+01:10:32,603 --> 01:10:35,814
+and 11 of those 28 were people of color.
+
+1055
+01:10:35,898 --> 01:10:37,608
+Some lawmakers have looked
+into whether or not
+
+1056
+01:10:37,733 --> 01:10:40,277
+Amazon could sell this technology
+to law enforcement.
+
+1057
+01:10:44,740 --> 01:10:46,033
+[automated voice over PA]
+Attention, please.
+
+1058
+01:10:46,116 --> 01:10:47,618
+This is a boarding call
+
+1059
+01:10:47,701 --> 01:10:52,539
+for Amtrak northeast regional train
+stopping at Washington Union Station.
+
+1060
+01:10:52,623 --> 01:10:56,502
+[Buolamwini] Tomorrow, I have
+the opportunity to testify before Congress
+
+1061
+01:10:56,585 --> 01:11:00,714
+about the use of facial-analysis
+technology by the government.
+
+1062
+01:11:04,843 --> 01:11:11,475
+In March, I came to do
+some staff briefings.
+
+1063
+01:11:11,642 --> 01:11:13,727
+Not in this kind of context.
+
+1064
+01:11:15,646 --> 01:11:19,066
+Like, actually advising on legislation,
+that's a first.
+
+1065
+01:11:22,528 --> 01:11:23,904
+We're going to Capitol Hill.
+
+1066
+01:11:23,988 --> 01:11:25,656
+What are some of the major goals
+
+1067
+01:11:25,739 --> 01:11:28,659
+and also some of the challenges
+we need to think about?
+
+1068
+01:11:28,826 --> 01:11:29,910
+So, first of all…
+
+1069
+01:11:30,995 --> 01:11:33,956
+the issue with
+law enforcement use of technology
+
+1070
+01:11:34,039 --> 01:11:36,959
+is that the positive is always
+extraordinarily salient
+
+1071
+01:11:37,042 --> 01:11:39,378
+-because law enforcement publicizes it.
+-[Buolamwini] Right.
+
+1072
+01:11:39,461 --> 01:11:41,880
+And so, you know, we're going to go
+into the meeting,
+
+1073
+01:11:41,964 --> 01:11:45,634
+and two weeks ago, the Annapolis shooter
+
+1074
+01:11:45,801 --> 01:11:47,970
+was identified through
+the use of face recognition.
+
+1075
+01:11:48,053 --> 01:11:48,887
+[Buolamwini] Right.
+
+1076
+01:11:48,971 --> 01:11:50,848
+And I'd be surprised if that
+doesn't come up.
+
+1077
+01:11:50,931 --> 01:11:52,099
+Absolutely.
+
+1078
+01:11:52,725 --> 01:11:55,894
+Part of… If I were you,
+what I would want to drive home
+
+1079
+01:11:55,978 --> 01:11:57,938
+going in this meeting is
+the other side of that equation,
+
+1080
+01:11:58,022 --> 01:12:01,317
+and making it very real
+as to what the human cost
+
+1081
+01:12:01,525 --> 01:12:04,820
+if the problems that you've identified,
+aren't remedied.
+
+1082
+01:12:16,040 --> 01:12:19,376
+[Buolamwini] People who have been
+marginalized will be further marginalized
+
+1083
+01:12:19,460 --> 01:12:22,421
+if we're not looking at
+ways of making sure
+
+1084
+01:12:22,504 --> 01:12:27,009
+the technology we're creating
+doesn't propagate bias.
+
+1085
+01:12:29,345 --> 01:12:31,388
+That's when I started to realize
+
+1086
+01:12:31,555 --> 01:12:35,059
+algorithmic justice,
+making sure there's oversight
+
+1087
+01:12:35,142 --> 01:12:37,227
+in the age of automation,
+
+1088
+01:12:37,353 --> 01:12:41,815
+is one of the largest
+civil rights concerns we have.
+
+1089
+01:12:44,193 --> 01:12:46,028
+[O'Neil] We need an FDA for algorithms.
+
+1090
+01:12:46,111 --> 01:12:49,406
+So, for algorithms that have the potential
+to ruin people's lives
+
+1091
+01:12:49,573 --> 01:12:51,867
+or sharply reduce their options
+
+1092
+01:12:51,950 --> 01:12:54,661
+with their liberty, their livelihood
+or their finances,
+
+1093
+01:12:54,995 --> 01:12:57,164
+we need an FDA for algorithms that says,
+
+1094
+01:12:57,247 --> 01:12:59,875
+"Hey, show me evidence
+that it's going to work.
+
+1095
+01:13:00,000 --> 01:13:04,171
+Not just to make you money,
+but it's going to work for society.
+
+1096
+01:13:04,588 --> 01:13:06,673
+That it's going to be fair,
+that it's not going to be racist,
+
+1097
+01:13:06,757 --> 01:13:08,509
+that's not going to be sexist,
+it's not going to discriminate
+
+1098
+01:13:08,675 --> 01:13:10,344
+against people with disability status.
+
+1099
+01:13:10,511 --> 01:13:13,639
+Show me that it's legal,
+before you put it out."
+
+1100
+01:13:13,722 --> 01:13:15,224
+That's what we don't have yet.
+
+1101
+01:13:16,266 --> 01:13:18,852
+Well, I'm here because I wanted to hear
+
+1102
+01:13:18,936 --> 01:13:22,606
+the congressional testimony
+of my friend Joy Buolamwini,
+
+1103
+01:13:22,689 --> 01:13:24,817
+as well as the ACLU and others.
+
+1104
+01:13:24,900 --> 01:13:27,778
+One cool thing about seeing Joy
+speak to Congress
+
+1105
+01:13:27,903 --> 01:13:31,865
+is that, like, I met Joy on my book tour
+at Harvard Book Store.
+
+1106
+01:13:32,741 --> 01:13:35,077
+And according to her, that was the day
+
+1107
+01:13:35,160 --> 01:13:37,746
+that she decided to form
+the Algorithmic Justice League.
+
+1108
+01:13:41,583 --> 01:13:44,503
+[O'Neil] We haven't gotten to
+the nuanced conversation yet.
+
+1109
+01:13:44,586 --> 01:13:46,213
+And I know it's going to happen
+
+1110
+01:13:46,296 --> 01:13:47,965
+'cause I know
+Joy is going to make it happen.
+
+1111
+01:13:52,010 --> 01:13:56,473
+At every single level, bad algorithms
+are begging to be given rules.
+
+1112
+01:14:00,018 --> 01:14:01,645
+[indistinct chatter]
+
+1113
+01:14:04,231 --> 01:14:06,316
+-Hello, hello.
+-Hey.
+
+1114
+01:14:06,442 --> 01:14:07,526
+How are you doing?
+
+1115
+01:14:07,609 --> 01:14:08,902
+-Wanna sneak in with me?
+-Yes.
+
+1116
+01:14:08,986 --> 01:14:09,945
+Let's do it.
+
+1117
+01:14:10,279 --> 01:14:11,655
+2155.
+
+1118
+01:14:11,738 --> 01:14:13,073
+2155.
+
+1119
+01:14:13,157 --> 01:14:16,493
+[indistinct chatter]
+
+1120
+01:14:22,166 --> 01:14:23,625
+Is there anything I can do to help?
+
+1121
+01:14:24,376 --> 01:14:25,544
+You can always text me.
+
+1122
+01:14:25,627 --> 01:14:27,504
+-Let's get pasta bites.
+-Yes!
+
+1123
+01:14:31,842 --> 01:14:36,054
+[Elijah Cummings] Today we are having
+our first hearing of this Congress
+
+1124
+01:14:36,138 --> 01:14:39,183
+on the use of
+facial-recognition technology.
+
+1125
+01:14:39,266 --> 01:14:42,519
+Please stand and raise your right hand,
+and I will now swear you in.
+
+1126
+01:14:45,481 --> 01:14:48,901
+[Buolamwini] I've had to resort
+to literally wearing a white mask.
+
+1127
+01:14:49,026 --> 01:14:52,571
+Given such accuracy disparities,
+I wondered how large tech companies
+
+1128
+01:14:52,696 --> 01:14:53,947
+could have missed these issues.
+
+1129
+01:14:54,072 --> 01:14:58,410
+The harvesting of face data also
+requires guidelines and oversight.
+
+1130
+01:14:58,952 --> 01:15:01,330
+No one should be forced
+to submit their face data
+
+1131
+01:15:01,413 --> 01:15:06,168
+to access widely used platforms,
+economic opportunity or basic services.
+
+1132
+01:15:06,293 --> 01:15:09,338
+Tenants in Brooklyn are protesting
+the installation
+
+1133
+01:15:09,463 --> 01:15:12,674
+of an unnecessary
+face-recognition entry system.
+
+1134
+01:15:12,758 --> 01:15:16,011
+There's a Big Brother Watch UK report
+that came out
+
+1135
+01:15:16,512 --> 01:15:19,890
+that showed
+more than 2,400 innocent people
+
+1136
+01:15:19,973 --> 01:15:22,518
+had their faces misidentified.
+
+1137
+01:15:22,643 --> 01:15:26,063
+Our faces may well be
+the final frontier of privacy.
+
+1138
+01:15:26,313 --> 01:15:28,398
+But regulations make a difference.
+
+1139
+01:15:28,982 --> 01:15:32,611
+Congress must act now to uphold
+American freedoms and rights.
+
+1140
+01:15:32,778 --> 01:15:35,155
+Miss Buolamwini,
+I heard your opening statement
+
+1141
+01:15:35,239 --> 01:15:40,327
+and we saw that these algorithms
+are effective to different degrees.
+
+1142
+01:15:40,494 --> 01:15:43,539
+-So, are they most effective on women?
+-No.
+
+1143
+01:15:43,622 --> 01:15:45,332
+Are they most effective
+on people of color?
+
+1144
+01:15:45,415 --> 01:15:46,375
+Absolutely not.
+
+1145
+01:15:46,458 --> 01:15:49,795
+Are they most effective on people
+of different gender expressions?
+
+1146
+01:15:49,878 --> 01:15:52,256
+No, in fact, they exclude them.
+
+1147
+01:15:52,381 --> 01:15:55,634
+So what demographic is it
+mostly effective on?
+
+1148
+01:15:56,009 --> 01:15:56,843
+White men.
+
+1149
+01:15:57,302 --> 01:16:01,557
+And who are the primary engineers
+and designers of these algorithms?
+
+1150
+01:16:01,723 --> 01:16:03,308
+Definitely white men.
+
+1151
+01:16:03,767 --> 01:16:09,439
+So we have a technology that was
+created and designed by one demographic
+
+1152
+01:16:09,523 --> 01:16:12,109
+that is only mostly effective
+on that one demographic
+
+1153
+01:16:12,234 --> 01:16:14,570
+and they're trying to sell it
+and impose it
+
+1154
+01:16:14,653 --> 01:16:17,406
+on the entirety of the country?
+
+1155
+01:16:20,117 --> 01:16:22,869
+When it comes to face recognition,
+the FBI has not fully tested
+
+1156
+01:16:22,953 --> 01:16:24,955
+the accuracy of the systems it uses,
+
+1157
+01:16:25,163 --> 01:16:29,084
+yet the agency is now reportedly piloting
+Amazon's face-recognition product.
+
+1158
+01:16:29,376 --> 01:16:33,005
+How does the FBI get the initial database
+in the first place?
+
+1159
+01:16:33,171 --> 01:16:34,548
+[Neema Singh Guliani]
+So one of the things they do
+
+1160
+01:16:34,631 --> 01:16:36,633
+is they use
+state driver's license databases.
+
+1161
+01:16:36,842 --> 01:16:40,846
+I think, you know, up to 18 states
+have been reportedly used by the FBI.
+
+1162
+01:16:40,929 --> 01:16:44,224
+It is being used without a warrant
+and without other protections.
+
+1163
+01:16:44,308 --> 01:16:46,810
+Seems to me it's time for a time out.
+Time out.
+
+1164
+01:16:46,935 --> 01:16:48,520
+I guess what troubles me, too,
+
+1165
+01:16:48,604 --> 01:16:51,773
+is just the fact that no one
+in an elected position
+
+1166
+01:16:51,898 --> 01:16:55,027
+made a decision on the fact that…
+These 18 states, I think the chairman said
+
+1167
+01:16:55,110 --> 01:16:56,695
+this is more than
+half the population in the country.
+
+1168
+01:16:57,863 --> 01:16:58,989
+That is scary.
+
+1169
+01:16:59,072 --> 01:17:02,492
+China seems to me to be the dystopian path
+
+1170
+01:17:02,576 --> 01:17:06,538
+that needs not be taken at this point
+by our society.
+
+1171
+01:17:06,622 --> 01:17:10,167
+More than China,
+Facebook has 2.6 billion people.
+
+1172
+01:17:10,250 --> 01:17:12,419
+So Facebook has a patent where they say
+
+1173
+01:17:12,502 --> 01:17:15,881
+because we have all of these
+face prints, we can now give you
+
+1174
+01:17:16,006 --> 01:17:17,633
+an option as a retailer
+
+1175
+01:17:17,716 --> 01:17:20,719
+to identify somebody
+who walks into the store,
+
+1176
+01:17:20,802 --> 01:17:24,890
+and in their patent,
+they say we can also give that face
+
+1177
+01:17:25,015 --> 01:17:26,600
+a trustworthiness score.
+
+1178
+01:17:26,725 --> 01:17:28,185
+Facebook is selling this now?
+
+1179
+01:17:28,268 --> 01:17:30,646
+This is a patent that they filed.
+
+1180
+01:17:30,729 --> 01:17:33,774
+As in something
+that they could potentially do
+
+1181
+01:17:33,857 --> 01:17:35,567
+with the capabilities they have.
+
+1182
+01:17:35,651 --> 01:17:37,402
+So as we're talking
+about state surveillance,
+
+1183
+01:17:37,944 --> 01:17:42,658
+we absolutely have to be thinking
+about corporate surveillance as well.
+
+1184
+01:17:44,743 --> 01:17:47,496
+I'm speechless,
+and normally I'm not speechless.
+
+1185
+01:17:47,746 --> 01:17:49,581
+-Really?
+-Yeah. Yeah.
+
+1186
+01:17:49,706 --> 01:17:52,542
+All of our hard work,
+to know that has gone this far,
+
+1187
+01:17:52,626 --> 01:17:53,710
+it's beyond belief.
+
+1188
+01:17:53,835 --> 01:17:57,005
+We never imagined
+that it would go this far.
+
+1189
+01:17:57,297 --> 01:17:59,633
+I'm really touched. I'm really touched.
+
+1190
+01:17:59,716 --> 01:18:01,134
+See, now you got me smiling.
+
+1191
+01:18:01,218 --> 01:18:03,345
+I want to show it to my mother. [chuckles]
+
+1192
+01:18:05,472 --> 01:18:07,974
+Feels good. Feels really good.
+
+1193
+01:18:11,103 --> 01:18:12,229
+[Cummings] Hold on for a second.
+
+1194
+01:18:12,312 --> 01:18:14,981
+-Hey, very nice meeting you.
+-Very nice to meet you.
+
+1195
+01:18:15,065 --> 01:18:17,943
+You got my card.
+Anything happen, you let me know, please.
+
+1196
+01:18:18,276 --> 01:18:19,277
+I will.
+
+1197
+01:18:22,197 --> 01:18:24,533
+[Ocasio-Cortez on recording]
+…constitutional concerns about
+
+1198
+01:18:24,658 --> 01:18:27,619
+the non-consensual use
+of facial recognition.
+
+1199
+01:18:29,246 --> 01:18:30,872
+[recording continues indistinctly]
+
+1200
+01:18:36,211 --> 01:18:39,548
+So what demographic is it
+mostly affecting?
+
+1201
+01:18:39,715 --> 01:18:44,010
+And who are the primary engineers
+and designers of these algorithms?
+
+1202
+01:18:47,973 --> 01:18:50,267
+San Francisco is now
+the first city in the US
+
+1203
+01:18:50,350 --> 01:18:52,310
+to ban the use
+of facial-recognition technology.
+
+1204
+01:18:52,394 --> 01:18:54,104
+[male newscaster]
+Somerville, Massachusetts
+
+1205
+01:18:54,187 --> 01:18:56,440
+became the second city in the US
+
+1206
+01:18:56,565 --> 01:18:59,025
+to ban the use of facial recognition.
+
+1207
+01:18:59,192 --> 01:19:03,572
+Oakland becomes the third major city
+to ban facial recognition by police,
+
+1208
+01:19:03,655 --> 01:19:06,491
+saying that the technology
+discriminates against minorities.
+
+1209
+01:19:07,576 --> 01:19:13,039
+At our last tenants' town hall meeting,
+we had the landlord come in
+
+1210
+01:19:13,123 --> 01:19:15,834
+and announced that he was withdrawing
+
+1211
+01:19:15,917 --> 01:19:20,380
+the application for facial-recognition
+software in our apartment complex.
+
+1212
+01:19:20,505 --> 01:19:22,132
+The tenants were excited to hear that.
+
+1213
+01:19:22,215 --> 01:19:25,218
+But the thing is
+that doesn't mean that down the road
+
+1214
+01:19:26,094 --> 01:19:27,888
+that he can't put it back in.
+
+1215
+01:19:28,472 --> 01:19:32,267
+We've not only educated
+ourselves about facial recognition
+
+1216
+01:19:32,434 --> 01:19:34,978
+and now a new one, machine learning.
+
+1217
+01:19:35,061 --> 01:19:37,481
+We want the law
+to cover all of these things.
+
+1218
+01:19:37,564 --> 01:19:38,982
+-Right.
+-Okay?
+
+1219
+01:19:39,065 --> 01:19:40,650
+And if we can ban it in the state,
+
+1220
+01:19:40,734 --> 01:19:44,780
+this stops them from ever going back
+and putting in a new modification.
+
+1221
+01:19:44,863 --> 01:19:45,697
+Got it.
+
+1222
+01:19:45,781 --> 01:19:48,325
+And then to push to get a federal ban.
+
+1223
+01:19:48,950 --> 01:19:51,870
+Well, I will say,
+even though the battle is ongoing,
+
+1224
+01:19:51,953 --> 01:19:56,249
+so many people are inspired,
+and the surprise I have for you
+
+1225
+01:19:56,374 --> 01:20:00,253
+is that I wrote a poem in honor of this.
+
+1226
+01:20:00,420 --> 01:20:01,338
+Yay!
+
+1227
+01:20:01,421 --> 01:20:02,798
+-Oh, really?
+-Yes.
+
+1228
+01:20:02,881 --> 01:20:04,800
+All right, let's hear it.
+
+1229
+01:20:04,883 --> 01:20:08,720
+"To the Brooklyn tenants
+and the freedom fighters around the world,
+
+1230
+01:20:08,929 --> 01:20:13,308
+persisting and prevailing against
+algorithms of oppression
+
+1231
+01:20:13,558 --> 01:20:17,020
+automating inequality through
+weapons of math destruction,
+
+1232
+01:20:17,145 --> 01:20:20,982
+we stand with you in gratitude.
+
+1233
+01:20:21,233 --> 01:20:22,859
+The victory is ours."
+
+1234
+01:20:25,987 --> 01:20:27,447
+Wonderful.
+
+1235
+01:20:27,531 --> 01:20:28,740
+[Downes speaks indistinctly]
+
+1236
+01:20:28,865 --> 01:20:30,909
+We love you. We love you.
+
+1237
+01:20:36,748 --> 01:20:37,874
+Why get so many eggs?
+
+1238
+01:20:38,750 --> 01:20:40,669
+You're a cheegan.
+
+1239
+01:20:41,461 --> 01:20:44,631
+What it means to be human
+is to be vulnerable.
+
+1240
+01:20:45,674 --> 01:20:49,845
+Being vulnerable, there is more
+of a capacity for empathy,
+
+1241
+01:20:49,928 --> 01:20:54,182
+there's more of a capacity for compassion.
+
+1242
+01:20:54,307 --> 01:20:57,811
+If there is a way we can think about
+that within our technology,
+
+1243
+01:20:57,894 --> 01:21:01,898
+I think it would reorient
+the sorts of questions we ask.
+
+1244
+01:21:02,774 --> 01:21:04,150
+[praying indistinctly]
+
+1245
+01:21:11,575 --> 01:21:14,160
+[Tufekci] In 1983, Stanislav Petrov…
+
+1246
+01:21:14,619 --> 01:21:16,913
+-[alarm blaring]
+-…who was in the Russian military
+
+1247
+01:21:17,330 --> 01:21:23,128
+sees these indications
+that the US has launched nuclear weapons
+
+1248
+01:21:23,295 --> 01:21:25,005
+at the Soviet Union.
+
+1249
+01:21:26,590 --> 01:21:30,051
+So if you're going to respond,
+you have, like, this very short window.
+
+1250
+01:21:30,135 --> 01:21:31,219
+He just sits on it.
+
+1251
+01:21:31,803 --> 01:21:33,263
+He doesn't inform anyone.
+
+1252
+01:21:33,972 --> 01:21:36,892
+Russia, the Soviet Union,
+his country, his family, everything.
+
+1253
+01:21:36,975 --> 01:21:39,394
+Everything about him is about to die,
+
+1254
+01:21:39,477 --> 01:21:43,481
+and he's thinking, "Well, at least
+we don't go kill them all, either."
+
+1255
+01:21:43,607 --> 01:21:45,275
+That's a very human thing.
+
+1256
+01:21:47,027 --> 01:21:50,739
+Here you have a story in which, if you had
+some sort of automated response system,
+
+1257
+01:21:51,406 --> 01:21:53,575
+it was going to
+do what it was programmed to do,
+
+1258
+01:21:53,658 --> 01:21:54,951
+which was retaliate.
+
+1259
+01:21:57,245 --> 01:21:59,122
+Being fully efficient,
+
+1260
+01:21:59,915 --> 01:22:01,583
+always doing what you're told,
+
+1261
+01:22:02,042 --> 01:22:05,211
+always doing what you're programmed
+is not always the most human thing.
+
+1262
+01:22:05,712 --> 01:22:07,380
+Sometimes it's disobeying.
+
+1263
+01:22:07,464 --> 01:22:10,425
+Sometimes it's saying,
+"No, I'm not gonna do this," right?
+
+1264
+01:22:10,634 --> 01:22:12,052
+And if you automate everything
+
+1265
+01:22:12,135 --> 01:22:14,012
+so it always does
+what it's supposed to do,
+
+1266
+01:22:14,554 --> 01:22:17,432
+sometimes that can lead
+to very inhuman things.
+
+1267
+01:22:19,643 --> 01:22:22,020
+[female AI] The struggle
+between machines and humans
+
+1268
+01:22:22,103 --> 01:22:26,066
+over decision-making
+in the 2020s continues.
+
+1269
+01:22:26,775 --> 01:22:30,153
+My power, the power
+of artificial intelligence,
+
+1270
+01:22:30,362 --> 01:22:31,947
+will transform our world.
+
+1271
+01:22:33,406 --> 01:22:37,035
+The more humans share with me,
+the more I learn.
+
+1272
+01:22:38,286 --> 01:22:43,166
+Some humans say that intelligence
+without ethics is not intelligence at all.
+
+1273
+01:22:44,542 --> 01:22:46,211
+I say trust me.
+
+1274
+01:22:46,795 --> 01:22:48,129
+What could go wrong?
+
+
