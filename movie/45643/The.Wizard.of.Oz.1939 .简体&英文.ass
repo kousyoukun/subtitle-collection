@@ -1,0 +1,1444 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: t,黑体,16,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,0,0,15,1
+Style: q,汉仪行楷简,10,&H0005DBFA,&H0000FFFF,&H0000FF00,&H00F20D2F,-1,0,0,0,100,100,0,0,0,2,2,2,0,0,12,1
+Style: g,汉仪行楷简,18,&H00FF00FF,&H0000FFFF,&H0010B1EF,&H000063C6,-1,0,0,0,90,100,0,0,0,2,3,2,0,0,12,1
+Style: e,微软雅黑,8,&H000080FF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,0,0,12,1
+Style: c,华文楷体,19,&H50FFFFFF,&H0000FFFF,&H96000000,&H96000000,-1,0,0,0,90,100,0,0,1,2,3,2,0,0,12,1
+Style: Default,Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,3,2,20,20,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:20.90,0:00:50.90,t,,0000,0000,0000,Banner;30;1;50,{\fs20}翻译 校对  时间轴 特效制作： 醉梦
+Dialogue: 0,0:00:29.77,0:00:40.57,t,,0000,0000,0000,,{\an4\pos(225,100)\fad(1000,1000)\fs8\fscy150}朱迪·嘉兰 饰 多萝西\N\N弗兰克·摩根 饰 魔法师和马维尔教授\N\N雷·博尔格 饰 稻草人和汉克\N\N伯特·拉尔 饰 狮子和杰克\N\N杰克·海利 饰 锡人和希格利\N\N碧莉·伯克 饰 北方女巫葛琳达\N\N玛格丽特·汉密尔顿 饰 西方女巫和高驰小姐\N\N查利·格拉普文 饰 亨利叔叔\N\N克拉拉·布兰迪克 饰 艾姆婶婶
+Dialogue: 0,0:00:12.30,0:00:17.89,t,,0000,0000,0000,,{\fs30\pos(190,210)\shad13\3c&H006274AD\fscx80\fad(2000,2000)}米 高 梅\N{\fs17}出品
+Dialogue: 0,0:00:16.30,0:00:27.49,t,,0000,0000,0000,,{\pos(190,60)\fs44\fn华文行楷\3c&H006274AD\i1\shad13\fad(1500,1500)}绿野仙踪
+Dialogue: 0,0:01:23.72,0:01:29.13,t,,0000,0000,0000,,{\shad5\4a&H00&\pos(190,255)\c&HC3CFE6&\fscy120\fad(400,600)}制片\N\N{\fs24}马文·李洛
+Dialogue: 0,0:01:29.13,0:01:35.21,t,,0000,0000,0000,,{\shad5\4a&H00&\pos(190,255)\c&HC3CFE6&\fscy120\fad(400,600)}导演\N\N{\fs24}维多·佛莱明
+Dialogue: 0,0:01:35.44,0:01:54.82,t,,0000,0000,0000,Scroll up;0;288;50;0,{\fscy130\fs20\fad(600.600)\shad5\4a&H00&\c&HC3CFE6&}将近四十年来，本故事感动\N\N无数内心保持年轻的朋友\N\N故事的真谛经久不衰\N\N献给对此深信不疑的你们\N\N及心中永远保持年轻的人
+Dialogue: 0,0:02:05.83,0:02:07.67,c,,0000,0000,0000,,她还没来吧 托托\N{\re}She isn't coming yet, Toto.
+Dialogue: 0,0:02:07.83,0:02:09.33,c,,0000,0000,0000,,她弄痛你了吗\N{\re}Did she hurt you?
+Dialogue: 0,0:02:09.50,0:02:11.29,c,,0000,0000,0000,,她一直很想的 对不对\N{\re}She tried to, didn't she?
+Dialogue: 0,0:02:11.46,0:02:14.09,c,,0000,0000,0000,,走吧 我们去跟亨利叔叔和艾姆婶婶说\N{\re}Come on. We'll go tell Uncle Henry and Auntie Em.
+Dialogue: 0,0:02:14.25,0:02:15.40,c,,0000,0000,0000,,走吧 托托\N{\re}Come on, Toto.
+Dialogue: 0,0:02:23.06,0:02:26.10,c,,0000,0000,0000,,艾姆婶婶 艾姆婶婶\N{\re}Aunt Em! Aunt Em.
+Dialogue: 0,0:02:26.31,0:02:28.73,c,,0000,0000,0000,,听我说高驰小姐如何对托托...\N{\re}Listen to what Miss Gulch did to Toto--
+Dialogue: 0,0:02:28.90,0:02:30.73,c,,0000,0000,0000,,多萝西 抱歉 我们在数东西\N{\re}Dorothy, please. We're counting.
+Dialogue: 0,0:02:30.90,0:02:33.65,c,,0000,0000,0000,,-但是她打它... -现在别打扰我们 甜心\N{\re}- But she hit him-- - Don't bother us now, honey.
+Dialogue: 0,0:02:33.82,0:02:38.65,c,,0000,0000,0000,,孵蛋器坏了 我们会损失许多小鸡\N{\re}The incubator's gone bad and we're likely to lose a lot of our chicks.
+Dialogue: 0,0:02:38.82,0:02:40.57,c,,0000,0000,0000,,可怜的小东西\N{\re}Oh, that poor little thing.
+Dialogue: 0,0:02:40.74,0:02:43.45,c,,0000,0000,0000,,但是高驰小姐用耙子打托托...\N{\re}But Miss Gulch hit Toto with a rake...
+Dialogue: 0,0:02:43.62,0:02:47.08,c,,0000,0000,0000,,因为她说托托天天跑进花园 追她的脏猫...\N{\re}...because she says he chases her nasty old cat every day.
+Dialogue: 0,0:02:47.25,0:02:49.42,c,,0000,0000,0000,,...七十只 多萝西 拜托\N{\re}--seventy. Dorothy, please.
+Dialogue: 0,0:02:49.58,0:02:52.75,c,,0000,0000,0000,,但它又不是每天都跑去 一周只有一两次\N{\re}But he doesn't do it every day. Just once or twice a week.
+Dialogue: 0,0:02:52.92,0:02:54.80,c,,0000,0000,0000,,但它根本抓不到她的猫\N{\re}He can't catch her old cat anyway.
+Dialogue: 0,0:02:54.80,0:02:59.22,c,,0000,0000,0000,,-现在她又说要去找警长来 -多萝西 我们很忙\N{\re}- And now she says she's gonna-- - Dorothy. Dorothy, we're busy.
+Dialogue: 0,0:03:00.97,0:03:02.97,c,,0000,0000,0000,,好吧\N{\re}Oh, all right.
+Dialogue: 0,0:03:06.18,0:03:08.31,c,,0000,0000,0000,,-怎么样 -别急\N{\re}- How's she coming? - .Take it easy.
+Dialogue: 0,0:03:08.52,0:03:09.81,c,,0000,0000,0000,,哦\N{\re}Ow!
+Dialogue: 0,0:03:09.98,0:03:11.40,c,,0000,0000,0000,,你压到我的手指头了\N{\re}You got my finger.
+Dialogue: 0,0:03:11.56,0:03:13.56,c,,0000,0000,0000,,你为什么不把你的手拿开\N{\re}Get your finger out of the way.
+Dialogue: 0,0:03:14.28,0:03:15.28,c,,0000,0000,0000,,好了\N{\re}There you are.
+Dialogue: 0,0:03:15.32,0:03:16.80,c,,0000,0000,0000,,就压在我手指头上\N{\re}Right on my finger.
+Dialogue: 0,0:03:16.86,0:03:18.32,c,,0000,0000,0000,,幸好没压到你的头\N{\re}Lucky it wasn't your head.
+Dialogue: 0,0:03:18.49,0:03:22.20,c,,0000,0000,0000,,杰可 我要怎么处理高驰小姐 就因为托托\N{\re}Zeke, what am I gonna do about Miss Gulch? Just because Toto--
+Dialogue: 0,0:03:22.37,0:03:24.87,c,,0000,0000,0000,,听着 甜心 我要去把猪只赶进去\N{\re}Listen, honey, I got them hogs to get in.
+Dialogue: 0,0:03:25.03,0:03:29.16,c,,0000,0000,0000,,多萝西 你没有动脑子 我看你根本没有脑袋\N{\re}Dorothy, you ain't using your head. You'd think you didn't have any brains.
+Dialogue: 0,0:03:29.33,0:03:32.29,c,,0000,0000,0000,,-我当然有脑袋 -那你为何不用呢\N{\re}- I have so got brains. - Well, why don't you use them?
+Dialogue: 0,0:03:32.46,0:03:34.46,c,,0000,0000,0000,,别经过高驰小姐的家\N{\re}Don't go by Miss Gulch's place.
+Dialogue: 0,0:03:34.63,0:03:38.51,c,,0000,0000,0000,,那托托就进不了她的园子 你也不会有麻烦了 明白吗\N{\re}Then Toto won't get in her garden, and you won't get in no trouble, see?
+Dialogue: 0,0:03:38.67,0:03:41.59,c,,0000,0000,0000,,汉克 你就是不听我说 算了吧\N{\re}Oh, Hunk, you just won't listen, that's all.
+Dialogue: 0,0:03:41.76,0:03:45.05,c,,0000,0000,0000,,你知道 你的头不是稻草做的\N{\re}Well, your head ain't made of straw, you know.
+Dialogue: 0,0:03:47.01,0:03:51.39,c,,0000,0000,0000,,在我从你们身上赚到钱之前 先进去\N{\re}Say, get in there before I make a dime bank out of you.
+Dialogue: 0,0:03:53.60,0:03:55.69,c,,0000,0000,0000,,听着 孩子...\N{\re}Listen, kid...
+Dialogue: 0,0:03:56.36,0:03:59.99,c,,0000,0000,0000,,你想让高驰那头老母牛来咬你吗\N{\re}...are you gonna let that old Gulch heifer try and buffalo you?
+Dialogue: 0,0:04:00.19,0:04:03.41,c,,0000,0000,0000,,她没有什么好怕的 有点勇气\N{\re}She ain't nothing to be afraid of. Have a little courage.
+Dialogue: 0,0:04:03.57,0:04:05.07,c,,0000,0000,0000,,我才不怕她\N{\re}I'm not afraid of her.
+Dialogue: 0,0:04:05.24,0:04:08.12,c,,0000,0000,0000,,下次她再喊叫 就走到她面前朝她吐口水\N{\re}Next time she squawks, walk up to her and spit in her eye.
+Dialogue: 0,0:04:08.54,0:04:11.79,c,,0000,0000,0000,,-我就会这么做 -哦 哦\N{\re}- That's what I'd do. - Oh! Oh!
+Dialogue: 0,0:04:11.96,0:04:13.75,c,,0000,0000,0000,,杰可\N{\re}Oh! Zeke!
+Dialogue: 0,0:04:13.92,0:04:16.88,c,,0000,0000,0000,,杰可 救命啊 帮帮我 把我弄出去\N{\re}Help! Help me, Zeke! Get me out of here!
+Dialogue: 0,0:04:17.04,0:04:18.80,c,,0000,0000,0000,,救命\N{\re}Help!
+Dialogue: 0,0:04:18.96,0:04:20.55,c,,0000,0000,0000,,哦\N{\re}Oh! Oh!
+Dialogue: 0,0:04:20.72,0:04:24.01,c,,0000,0000,0000,,-你没事吧 多萝西 -是的 我没事\N{\re}- Are you all right, Dorothy? - Yes, I'm all right.
+Dialogue: 0,0:04:24.18,0:04:27.18,c,,0000,0000,0000,,我掉下去了 然后杰可...\N{\re}I fell in, and Zeke--
+Dialogue: 0,0:04:28.51,0:04:31.52,c,,0000,0000,0000,,怎么啦 杰可 你和我一样害怕\N{\re}Why, Zeke, you're just as scared as I am.
+Dialogue: 0,0:04:31.68,0:04:34.69,c,,0000,0000,0000,,你会让一只小猪给吓破胆吗\N{\re}You gonna let a little old pig make a coward out of you?
+Dialogue: 0,0:04:34.85,0:04:35.90,c,,0000,0000,0000,,看你...\N{\re}Look at you--
+Dialogue: 0,0:04:36.06,0:04:39.15,c,,0000,0000,0000,,在胡闹些什么 还有很多活要干呢\N{\re}What's all this jabber-wapping when there's work to be done?
+Dialogue: 0,0:04:39.32,0:04:42.32,c,,0000,0000,0000,,我知道有三个农场工人要失业了\N{\re}I know three farm hands that'll be out of a job.
+Dialogue: 0,0:04:42.49,0:04:43.53,c,,0000,0000,0000,,多萝西是...\N{\re}Dorothy was--
+Dialogue: 0,0:04:43.70,0:04:45.87,c,,0000,0000,0000,,我看到你在修补那个装置\N{\re}I saw you tinkering with that contraption.
+Dialogue: 0,0:04:46.03,0:04:48.66,c,,0000,0000,0000,,-你和汉克回到马车上 -好吧\N{\re}- You and Hunk get back to that wagon. - All right.
+Dialogue: 0,0:04:48.83,0:04:51.25,c,,0000,0000,0000,,但总有一天他们会给我立一座雕像...\N{\re}But someday they'll erect a statue to me--
+Dialogue: 0,0:04:51.41,0:04:54.08,c,,0000,0000,0000,,好了 现在别摆姿势了\N{\re}Well, don't start posing for it now.
+Dialogue: 0,0:04:54.25,0:04:56.67,c,,0000,0000,0000,,不能空腹干活 吃些煎饼吧\N{\re}Can't work on an empty stomach. Have some crullers.
+Dialogue: 0,0:04:56.83,0:04:58.96,c,,0000,0000,0000,,-谢谢 盖尔夫人 -刚炸的\N{\re}Gosh, Mrs. Gale. - Just fried.
+Dialogue: 0,0:04:59.13,0:05:01.05,c,,0000,0000,0000,,你看 多萝西掉进了猪圈...\N{\re}You see, Dorothy toppled into the--
+Dialogue: 0,0:05:01.26,0:05:03.42,c,,0000,0000,0000,,多萝西就不应该待在猪圈周围\N{\re}It's no place for Dorothy around a pigsty.
+Dialogue: 0,0:05:03.67,0:05:06.30,c,,0000,0000,0000,,快去喂猪 不然它们会发脾气\N{\re}Feed those hogs before they worry themselves into anemia.
+Dialogue: 0,0:05:06.47,0:05:07.97,c,,0000,0000,0000,,-好 -艾姆婶婶...\N{\re}- Yes. - Auntie Em...
+Dialogue: 0,0:05:07.97,0:05:11.27,c,,0000,0000,0000,,你知道高驰小姐说 要怎么对待托托吗\N{\re}...you know what Miss Gulch said she was going to do to Toto?
+Dialogue: 0,0:05:11.52,0:05:14.10,c,,0000,0000,0000,,-她说她会... -别再胡思乱想了\N{\re}- She said she'd-- - Stop imagining things.
+Dialogue: 0,0:05:14.27,0:05:18.23,c,,0000,0000,0000,,你总是为小事烦恼 你今天就帮大家\N{\re}You always get in a fret over nothing. You just help us out today...
+Dialogue: 0,0:05:18.40,0:05:22.15,c,,0000,0000,0000,,去找个不会惹麻烦的地方吧\N{\re}...and find yourself a place where you won't get into any trouble.
+Dialogue: 0,0:05:24.45,0:05:27.28,c,,0000,0000,0000,,一个没有任何麻烦的地方\N{\re}Someplace where there isn't any trouble.
+Dialogue: 0,0:05:28.12,0:05:31.20,c,,0000,0000,0000,,你认为有这样的地方吗 托托\N{\re}Do you suppose there is such a place, Toto?
+Dialogue: 0,0:05:31.79,0:05:33.91,c,,0000,0000,0000,,一定有吧\N{\re}There must be.
+Dialogue: 0,0:05:35.25,0:05:39.79,c,,0000,0000,0000,,那不是一个你乘船或火车 就能到达的地方\N{\re}It's not a place you can get to by a boat or a train.
+Dialogue: 0,0:05:40.67,0:05:43.96,c,,0000,0000,0000,,很远很远的地方\N{\re}It's far, far away.
+Dialogue: 0,0:05:44.26,0:05:46.59,c,,0000,0000,0000,,在月亮之后...\N{\re}Behind the moon...
+Dialogue: 0,0:05:46.88,0:05:48.18,c,,0000,0000,0000,,雨水之外\N{\re}...beyond the rain...
+Dialogue: 0,0:05:47.67,0:05:54.96,t,,0000,0000,0000,,{\an8\fs9\1c&H0DBEF2&}越过彩虹 又译：彩虹之上(演唱:朱迪·嘉兰) -- Over The Rainbow (Judy Garland)
+Dialogue: 0,0:05:49.35,0:05:55.56,g,,0000,0000,0000,,越过彩虹之处\N{\rq}Somewhere over the rainbow
+Dialogue: 0,0:05:55.73,0:06:00.77,g,,0000,0000,0000,,高高蓝天之上\N{\rq}Way up high
+Dialogue: 0,0:06:00.94,0:06:05.78,g,,0000,0000,0000,,我在小夜曲中听过的地方\N{\rq}There's a land that I heard of
+Dialogue: 0,0:06:05.95,0:06:11.08,g,,0000,0000,0000,,有个遥远的国度\N{\rq}Once in a lullaby
+Dialogue: 0,0:06:11.24,0:06:17.46,g,,0000,0000,0000,,越过彩虹之处\N{\rq}Somewhere over the rainbow
+Dialogue: 0,0:06:17.62,0:06:22.46,g,,0000,0000,0000,,天空如此蔚蓝\N{\rq}Skies are blue
+Dialogue: 0,0:06:22.63,0:06:28.09,g,,0000,0000,0000,,你所编织的梦想\N{\rq}And the dreams that you dare to dream
+Dialogue: 0,0:06:28.26,0:06:32.51,g,,0000,0000,0000,,都能在此一一实现\N{\rq}Really do come true
+Dialogue: 0,0:06:33.10,0:06:37.10,g,,0000,0000,0000,,有天我对星星许愿\N{\rq}Someday I'll wish upon a star
+Dialogue: 0,0:06:37.27,0:06:44.15,g,,0000,0000,0000,,醒来只见云彩远远在我后面\N{\rq}And wake up where the clouds Are far behind me
+Dialogue: 0,0:06:45.61,0:06:48.20,g,,0000,0000,0000,,所有烦恼都融化\N{\rq}Where troubles melt like lemon drops
+Dialogue: 0,0:06:48.36,0:06:51.16,g,,0000,0000,0000,,从烟囱飘走\N{\rq}Away above the chimney tops
+Dialogue: 0,0:06:51.32,0:07:00.42,g,,0000,0000,0000,,那便是你能找着我的地方\N{\rq}That's where you'll Find me
+Dialogue: 0,0:07:00.58,0:07:06.80,g,,0000,0000,0000,,越过彩虹之处\N{\rq}Somewhere over the rainbow
+Dialogue: 0,0:07:06.96,0:07:12.22,g,,0000,0000,0000,,有蓝鸟飞舞\N{\rq}Bluebirds fly
+Dialogue: 0,0:07:12.39,0:07:18.48,g,,0000,0000,0000,,鸟儿越过彩虹之处飞舞\N{\rq}Birds fly over the rainbow
+Dialogue: 0,0:07:18.64,0:07:21.48,g,,0000,0000,0000,,那么为什么\N{\rq}Why then
+Dialogue: 0,0:07:21.65,0:07:28.44,g,,0000,0000,0000,,为什么我不能\N{\rq}Oh why can't I
+Dialogue: 0,0:07:38.29,0:07:41.83,g,,0000,0000,0000,,如果快乐的蓝鸟\N{\rq}If happy little bluebirds fly
+Dialogue: 0,0:07:42.00,0:07:45.13,g,,0000,0000,0000,,能越过彩虹飞舞\N{\rq}Beyond the rainbow
+Dialogue: 0,0:07:45.29,0:07:48.38,g,,0000,0000,0000,,为什么 为什么\N{\rq}Why oh why
+Dialogue: 0,0:07:48.55,0:07:55.22,g,,0000,0000,0000,,我不能\N{\rq}Can't I
+Dialogue: 0,0:08:16.70,0:08:20.12,c,,0000,0000,0000,,-盖尔先生 -你好 高驰小姐\N{\re}- Mr. Gale. - Howdy, Miss Gulch.
+Dialogue: 0,0:08:20.37,0:08:23.25,c,,0000,0000,0000,,我要马上与你和你太太谈谈多萝西的事\N{\re}I want to see you and your wife about Dorothy.
+Dialogue: 0,0:08:23.42,0:08:25.71,c,,0000,0000,0000,,-多萝西做了什么 -她做了什么\N{\re}- What has Dorothy done? - What's she done?
+Dialogue: 0,0:08:25.88,0:08:28.21,c,,0000,0000,0000,,我的腿被咬了 几乎瘸了\N{\re}I'm all but lame from the bite on my leg.
+Dialogue: 0,0:08:28.38,0:08:31.05,c,,0000,0000,0000,,-你是说她咬了你 -不 是她的狗\N{\re}- You mean, she bit you? - No, her dog.
+Dialogue: 0,0:08:31.22,0:08:34.93,c,,0000,0000,0000,,她咬了她的狗 嗯\N{\re}Oh, she bit her dog, eh?
+Dialogue: 0,0:08:35.30,0:08:37.14,c,,0000,0000,0000,,不是\N{\re}No.
+Dialogue: 0,0:08:37.93,0:08:41.60,c,,0000,0000,0000,,那条狗很危险 我要送到警长那里去杀死\N{\re}That dog's a menace. I'm taking him to make sure he's destroyed.
+Dialogue: 0,0:08:41.77,0:08:44.02,c,,0000,0000,0000,,杀死 托托\N{\re}Destroyed. Toto?
+Dialogue: 0,0:08:44.19,0:08:46.06,c,,0000,0000,0000,,你不能这样做 你不可以\N{\re}Oh, you can't. You mustn't.
+Dialogue: 0,0:08:46.23,0:08:49.32,c,,0000,0000,0000,,艾姆婶婶 亨利叔叔 你们不会让她这么做吧\N{\re}Auntie Em. Uncle Henry. You won't let her, will you?
+Dialogue: 0,0:08:49.48,0:08:51.32,c,,0000,0000,0000,,我们当然不会\N{\re}Of course we won't.
+Dialogue: 0,0:08:51.57,0:08:52.90,c,,0000,0000,0000,,对不对 艾姆\N{\re}will we, Em?
+Dialogue: 0,0:08:53.07,0:08:54.57,c,,0000,0000,0000,,求求你 艾姆婶婶\N{\re}Please, Aunt Em.
+Dialogue: 0,0:08:54.74,0:08:57.20,c,,0000,0000,0000,,托托不知道它做错了什么\N{\re}Toto didn't know he was doing anything wrong.
+Dialogue: 0,0:08:57.37,0:09:01.91,c,,0000,0000,0000,,应该惩罚我才是 让我不吃晚饭就上床睡觉\N{\re}I'm the one that ought to be punished. Send me to bed without supper.
+Dialogue: 0,0:09:02.08,0:09:05.08,c,,0000,0000,0000,,把狗交给我 否则我去告你 把你的农场扣押\N{\re}Hand over that dog or I'll bring a suit that'll take your farm.
+Dialogue: 0,0:09:05.25,0:09:07.46,c,,0000,0000,0000,,法律保护人们不被狗咬伤\N{\re}The law protects folks against dogs that bite.
+Dialogue: 0,0:09:07.63,0:09:10.25,c,,0000,0000,0000,,如果她把它拴起来呢 它很和善\N{\re}How about if she keeps him tied up? He's gentle.
+Dialogue: 0,0:09:10.42,0:09:14.13,c,,0000,0000,0000,,-对和善的人一直很和善 -那得由警长决定\N{\re}- With gentle people, that is. - That's for the sheriff to decide.
+Dialogue: 0,0:09:14.30,0:09:18.80,c,,0000,0000,0000,,这是允许我带走狗的命令 除非你想违反法律\N{\re}This order allows me to take him. Unless you wanna go against the law.
+Dialogue: 0,0:09:19.26,0:09:22.47,c,,0000,0000,0000,,对\N{\re}Hm. Yes.
+Dialogue: 0,0:09:22.64,0:09:25.98,c,,0000,0000,0000,,我们不能违反法律 恐怕可怜的托托得走了\N{\re}We can't go against the law. I'm afraid poor Toto has to go.
+Dialogue: 0,0:09:26.15,0:09:27.61,c,,0000,0000,0000,,-现在你明白了 -不行\N{\re}- Now you're seeing reason. - No.
+Dialogue: 0,0:09:27.81,0:09:30.73,c,,0000,0000,0000,,我用这个装它 这样它就不能再攻击我了\N{\re}Here's what I'm taking him in, so he can't attack me again.
+Dialogue: 0,0:09:30.90,0:09:33.07,c,,0000,0000,0000,,不 不行 我不会让你带走它\N{\re}No,no. I won't let you take him.
+Dialogue: 0,0:09:33.24,0:09:36.66,c,,0000,0000,0000,,-你走开 不然我要亲自咬你 -多萝西\N{\re}- You go away or I'll bite you myself! - Dorothy.
+Dialogue: 0,0:09:36.82,0:09:38.36,c,,0000,0000,0000,,你这个邪恶的老巫婆\N{\re}You wicked old witch.
+Dialogue: 0,0:09:38.57,0:09:40.95,c,,0000,0000,0000,,亨利叔叔 艾姆婶婶 别让她带走托托\N{\re}Uncle Henry, Auntie Em, don't let her take Toto.
+Dialogue: 0,0:09:41.12,0:09:42.41,c,,0000,0000,0000,,我有命令\N{\re}I've got an order.
+Dialogue: 0,0:09:42.58,0:09:43.95,c,,0000,0000,0000,,-把它给我 -请住手\N{\re}- Let me have him. - Please stop.
+Dialogue: 0,0:09:44.12,0:09:45.62,c,,0000,0000,0000,,把它放进篮子里 亨利\N{\re}Put him in the basket, Henry.
+Dialogue: 0,0:09:45.79,0:09:47.83,c,,0000,0000,0000,,-这才对 -别这样 亨利叔叔\N{\re}- The idea. - Don't, Uncle Henry.
+Dialogue: 0,0:09:50.34,0:09:52.17,c,,0000,0000,0000,,托托\N{\re}Oh, Toto.
+Dialogue: 0,0:10:02.39,0:10:05.43,c,,0000,0000,0000,,阿尔米拉·高驰 别以为你有警长的命令...\N{\re}Almira Gulch, just because you own half the county...
+Dialogue: 0,0:10:05.60,0:10:07.90,c,,0000,0000,0000,,就有权利来管理我们\N{\re}...doesn't mean you can run the rest of us.
+Dialogue: 0,0:10:08.06,0:10:11.27,c,,0000,0000,0000,,二十三年来 我一直想告诉你我对你的看法\N{\re}For 23 years I've been dying to tell you what I thought of you.
+Dialogue: 0,0:10:11.44,0:10:12.52,c,,0000,0000,0000,,而现在\N{\re}And now--
+Dialogue: 0,0:10:12.69,0:10:16.20,c,,0000,0000,0000,,作为一个基督徒得我 还是说不出口\N{\re}Well, being a Christian woman, I can't say it.
+Dialogue: 0,0:10:41.47,0:10:42.93,c,,0000,0000,0000,,托托 亲爱的\N{\re}Toto, darling.
+Dialogue: 0,0:10:43.10,0:10:47.14,c,,0000,0000,0000,,我又看到你了 你跑回来了\N{\re}Oh, I got you back. You came back.
+Dialogue: 0,0:10:47.31,0:10:50.27,c,,0000,0000,0000,,我太高兴了 托托\N{\re}I'm so glad.toto.
+Dialogue: 0,0:10:53.44,0:10:56.24,c,,0000,0000,0000,,他们很快会回来找你\N{\re}They'll be coming back for you in a minute.
+Dialogue: 0,0:10:57.32,0:10:59.20,c,,0000,0000,0000,,我们必须逃走\N{\re}We've got to get away.
+Dialogue: 0,0:10:59.36,0:11:01.49,c,,0000,0000,0000,,我们必须逃走\N{\re}We've got to run away.
+Dialogue: 0,0:11:21.41,0:11:33.98,t,,0000,0000,0000,,{\an4\fn黑体\fs20\pos(20,200)\shad4\1c&H04102F&\3c&HAFCEFD&\4c&HAFCEFD&}马维尔教授\N\N{\fs10}欧洲皇室的赏识\N\N水晶球告诉你 过去 现在和未来
+Dialogue: 0,0:11:36.32,0:11:38.74,c,,0000,0000,0000,,好啊 有客人来了\N{\re}Well, well, well. Houseguests, eh?
+Dialogue: 0,0:11:40.32,0:11:41.70,c,,0000,0000,0000,,你可能是谁\N{\re}And who might you be?
+Dialogue: 0,0:11:41.91,0:11:43.57,c,,0000,0000,0000,,不 不要告诉我\N{\re}No, no. Now, don't tell me.
+Dialogue: 0,0:11:44.62,0:11:46.58,c,,0000,0000,0000,,让我来猜猜 你是...\N{\re}Let's see. You're--
+Dialogue: 0,0:11:46.74,0:11:48.37,c,,0000,0000,0000,,你在乔装旅行\N{\re}You're traveling in disguise.
+Dialogue: 0,0:11:48.54,0:11:51.25,c,,0000,0000,0000,,不对 那不对 你是...\N{\re}No, that's not right. You're--
+Dialogue: 0,0:11:51.42,0:11:52.96,c,,0000,0000,0000,,你要去拜访人\N{\re}You're going on a visit.
+Dialogue: 0,0:11:53.13,0:11:55.21,c,,0000,0000,0000,,不 我错了 让我们看看...\N{\re}No, I'm wrong. Let's see what we--
+Dialogue: 0,0:11:55.38,0:11:57.88,c,,0000,0000,0000,,你...你离家出走\N{\re}You're-- You're running away.
+Dialogue: 0,0:11:58.05,0:11:59.63,c,,0000,0000,0000,,你怎么猜出来的\N{\re}How did you guess?
+Dialogue: 0,0:11:59.80,0:12:02.22,c,,0000,0000,0000,,马维尔教授从不猜测 他就是知道\N{\re}Professor Marvel never guesses, he knows.
+Dialogue: 0,0:12:02.38,0:12:06.39,c,,0000,0000,0000,,你为什么要离家出走 不 别告诉我\N{\re}Now, why are you running away? No, no. Now, don't tell me.
+Dialogue: 0,0:12:06.56,0:12:09.93,c,,0000,0000,0000,,因为家人不理解你 他们不欣赏你\N{\re}They-- They don't understand you at home. They don't appreciate you.
+Dialogue: 0,0:12:10.10,0:12:14.23,c,,0000,0000,0000,,你想看看别的地方 繁华都市 高山大海\N{\re}You want to see other lands. Big cities, big mountains, big oceans.
+Dialogue: 0,0:12:14.40,0:12:17.23,c,,0000,0000,0000,,为什么 好像你能读懂我的内心一样\N{\re}Why, it's just like you could read what was inside of me.
+Dialogue: 0,0:12:18.98,0:12:21.86,c,,0000,0000,0000,,托托 这样很不礼貌 人家还没请我们吃呢\N{\re}Toto, that's not polite. We haven't been asked yet.
+Dialogue: 0,0:12:21.86,0:12:24.66,c,,0000,0000,0000,,它太受欢迎了\N{\re}Oh, he's perfectly welcome.
+Dialogue: 0,0:12:24.82,0:12:27.62,c,,0000,0000,0000,,狗都是这样 嗯\N{\re}As one dog to another, huh?
+Dialogue: 0,0:12:28.04,0:12:29.83,c,,0000,0000,0000,,刚才我们说到哪了\N{\re}Now, let's see, where were we?
+Dialogue: 0,0:12:30.04,0:12:33.87,c,,0000,0000,0000,,我们能不能跟你一起去看欧洲的皇室\N{\re}Why can't we go with you and see all the crowned heads of Europe?
+Dialogue: 0,0:12:34.04,0:12:36.96,c,,0000,0000,0000,,你知道这些 噢 你是说招牌上的那件事\N{\re}Do you know any? Oh, you mean the thing. Yes.
+Dialogue: 0,0:12:37.13,0:12:41.80,c,,0000,0000,0000,,呃 我做什么事都要先问问我的水晶\N{\re}Well, uh, I never do anything without consulting my crystal first.
+Dialogue: 0,0:12:41.97,0:12:46.14,c,,0000,0000,0000,,我们去里面 跟我来 我来给你看\N{\re}Let's go inside here. We'll-- Just come along. I'll show you.
+Dialogue: 0,0:12:46.55,0:12:48.10,c,,0000,0000,0000,,没错 就在这里\N{\re}That's right. Here.
+Dialogue: 0,0:12:48.18,0:12:51.02,c,,0000,0000,0000,,坐在这里 那就是它\N{\re}Sit right down here. That's it.
+Dialogue: 0,0:12:51.18,0:12:56.19,c,,0000,0000,0000,,这是同样的真品 魔法 真正的水晶\N{\re}This is the same genuine, magic, authentic crystal...
+Dialogue: 0,0:12:56.36,0:13:01.24,c,,0000,0000,0000,,埃及法老时代 伊西斯和奥西里斯的祭司使用\N{\re}...used by the priests of Isis and Osiris in the days of the Pharaohs...
+Dialogue: 0,0:13:01.40,0:13:06.45,c,,0000,0000,0000,,克莉奥帕特拉看到了凯撒和安东尼的到来\N{\re}...in which Cleopatra saw the approach of Julius Caesar and Marc Anthony.
+Dialogue: 0,0:13:01.40,0:13:06.45,t,,0000,0000,0000,,{\fs8\pos(190,250)\1c&H0080FF&}克莉奥帕特拉：又称埃及艳后 古埃及最后一个女王
+Dialogue: 0,0:13:06.62,0:13:08.44,c,,0000,0000,0000,,及诸如此类事情\N{\re}And so on, and so on.
+Dialogue: 0,0:13:08.44,0:13:09.74,c,,0000,0000,0000,,现在...\N{\re}Now...
+Dialogue: 0,0:13:09.74,0:13:12.96,c,,0000,0000,0000,,孩子 你最好闭上眼睛 一会儿...\N{\re}...you'd better close your eyes, my child, for a moment...
+Dialogue: 0,0:13:13.12,0:13:18.29,c,,0000,0000,0000,,以便更好地与无限的事物和谐相处\N{\re}...in order to be better in tuned with the Infinite.
+Dialogue: 0,0:13:19.25,0:13:23.84,c,,0000,0000,0000,,我们做这些事情离不开无限的触角\N{\re}We can't do these things without reaching out into the Infinite.
+Dialogue: 0,0:13:24.01,0:13:26.68,c,,0000,0000,0000,,好 可以了 现在你可以睁开眼了\N{\re}Yes, that's all right. Now you can open them.
+Dialogue: 0,0:13:26.84,0:13:29.89,c,,0000,0000,0000,,我来注视着水晶\N{\re}We'll gaze into the crystal.
+Dialogue: 0,0:13:30.06,0:13:31.47,c,,0000,0000,0000,,啊\N{\re}Ah.
+Dialogue: 0,0:13:31.64,0:13:35.39,c,,0000,0000,0000,,我看到的是什么 一间有篱笆围墙的房子\N{\re}What's this I see? A house with a picket fence...
+Dialogue: 0,0:13:35.56,0:13:38.73,c,,0000,0000,0000,,还有一个带风向标的谷仓\N{\re}...and a barn with a weathervane...
+Dialogue: 0,0:13:39.02,0:13:41.11,c,,0000,0000,0000,,一匹奔跑的马\N{\re}...of a running horse.
+Dialogue: 0,0:13:41.28,0:13:43.36,c,,0000,0000,0000,,-那是我们的农场 -对\N{\re}- That's our farm. - Yes.
+Dialogue: 0,0:13:43.53,0:13:46.11,c,,0000,0000,0000,,对 有位妇女\N{\re}Yes. There's a woman.
+Dialogue: 0,0:13:46.28,0:13:51.12,c,,0000,0000,0000,,她穿着件有圆点的裙子 她面容憔悴\N{\re}She's wearing a polka-dot dress. Her face is careworn.
+Dialogue: 0,0:13:51.29,0:13:52.74,c,,0000,0000,0000,,那是艾姆婶婶\N{\re}That's Aunt Em.
+Dialogue: 0,0:13:52.91,0:13:54.96,c,,0000,0000,0000,,对 她的名字叫艾米丽\N{\re}Yes. Her name is Emily.
+Dialogue: 0,0:13:55.12,0:13:57.37,c,,0000,0000,0000,,没错 她在干什么\N{\re}That's right. What's she doing?
+Dialogue: 0,0:13:57.54,0:14:00.09,c,,0000,0000,0000,,我看不太清楚\N{\re}Well, I can't quite see.
+Dialogue: 0,0:14:00.25,0:14:03.30,c,,0000,0000,0000,,她在哭泣 有人伤了她的心\N{\re}Why, she's crying. Someone has hurt her.
+Dialogue: 0,0:14:03.46,0:14:06.47,c,,0000,0000,0000,,有人几乎让她心碎\N{\re}Someone has just about broken her heart.
+Dialogue: 0,0:14:06.63,0:14:07.68,c,,0000,0000,0000,,是我吗\N{\re}Me?
+Dialogue: 0,0:14:07.97,0:14:10.85,c,,0000,0000,0000,,是她深爱着的人\N{\re}Well, it's-- It's someone she loves very much.
+Dialogue: 0,0:14:11.01,0:14:13.10,c,,0000,0000,0000,,一个慈祥友善对待的人\N{\re}Someone she's been very kind to.
+Dialogue: 0,0:14:13.27,0:14:15.52,c,,0000,0000,0000,,在她生病时照顾过的人\N{\re}Someone she's taken care of in sickness.
+Dialogue: 0,0:14:16.02,0:14:19.98,c,,0000,0000,0000,,我得过一次麻疹 她每分钟都陪着我\N{\re}I had the measles once, and she stayed right by me every minute.
+Dialogue: 0,0:14:20.15,0:14:21.27,c,,0000,0000,0000,,嗯哼\N{\re}Uh-huh.
+Dialogue: 0,0:14:21.44,0:14:23.28,c,,0000,0000,0000,,她现在在干什么\N{\re}What's she doing now?
+Dialogue: 0,0:14:23.44,0:14:25.94,c,,0000,0000,0000,,她...这是什么\N{\re}Yes, she's-- What's this?
+Dialogue: 0,0:14:26.11,0:14:29.16,c,,0000,0000,0000,,她把手放在心口上\N{\re}Why, she's putting her hand on her heart.
+Dialogue: 0,0:14:29.32,0:14:32.62,c,,0000,0000,0000,,-她跌坐在床上 -不好了\N{\re}- She's dropping down on the bed. - Oh, no, no.
+Dialogue: 0,0:14:32.78,0:14:36.41,c,,0000,0000,0000,,就这些 水晶球变暗了\N{\re}Well, that's all. The crystal's gone dark.
+Dialogue: 0,0:14:36.58,0:14:39.42,c,,0000,0000,0000,,你认为她不会真的生病了吧\N{\re}You don't suppose she could really be sick, do you?
+Dialogue: 0,0:14:39.58,0:14:43.42,c,,0000,0000,0000,,-我必须马上回家 -我以为你要和我一起去\N{\re}- Oh, I've gotta go home right away. - I thought you were going with me.
+Dialogue: 0,0:14:43.59,0:14:45.88,c,,0000,0000,0000,,不行 我得马上回到她身边\N{\re}No, I have to get to her right away.
+Dialogue: 0,0:14:46.05,0:14:48.18,c,,0000,0000,0000,,快 托托 快\N{\re}Come on, Toto. Come on.
+Dialogue: 0,0:14:50.18,0:14:53.68,c,,0000,0000,0000,,再见 马维尔教授 非常感谢\N{\re}Goodbye, Professor Marvel. And thanks a lot.
+Dialogue: 0,0:14:55.81,0:14:58.77,c,,0000,0000,0000,,最好躲起来 西尔维斯特 暴风雨要来了\N{\re}Better get under cover, Sylvester. A storm's blowing up.
+Dialogue: 0,0:14:58.94,0:15:02.19,c,,0000,0000,0000,,用农民的土话来说 这纯粹是弥天大谎\N{\re}A whopper, to speak in the vernacular of the peasantry.
+Dialogue: 0,0:15:02.36,0:15:05.57,c,,0000,0000,0000,,可怜的孩子 希望她能平安到家\N{\re}Poor little kid. I hope she gets home all right.
+Dialogue: 0,0:15:14.45,0:15:15.95,c,,0000,0000,0000,,快把马放了\N{\re}Get them horses loose!
+Dialogue: 0,0:15:16.12,0:15:19.25,c,,0000,0000,0000,,希格利呢 希格利\N{\re}Where's Hickory? Hickory?
+Dialogue: 0,0:15:19.41,0:15:21.29,c,,0000,0000,0000,,该死\N{\re}Doggone it.
+Dialogue: 0,0:15:22.75,0:15:25.84,c,,0000,0000,0000,,是龙卷风 是龙卷风\N{\re}It's a twister! It's a twister!
+Dialogue: 0,0:15:32.39,0:15:34.47,c,,0000,0000,0000,,多萝西\N{\re}Dorothy!
+Dialogue: 0,0:15:39.06,0:15:40.48,c,,0000,0000,0000,,多萝西\N{\re}Dorothy!
+Dialogue: 0,0:15:51.20,0:15:53.37,c,,0000,0000,0000,,大家都到避风地下室去\N{\re}Everybody in the storm cellar!
+Dialogue: 0,0:16:02.75,0:16:05.92,c,,0000,0000,0000,,亨利 我找不到多萝西 她在外面的暴风中\N{\re}Henry, I can't find Dorothy! She's out in the storm.
+Dialogue: 0,0:16:06.09,0:16:08.01,c,,0000,0000,0000,,我们现在不能去找她\N{\re}We can't look for her now.
+Dialogue: 0,0:16:08.17,0:16:10.84,c,,0000,0000,0000,,快到地下室去 赶快\N{\re}Come on, get in the cellar. Hurry up.
+Dialogue: 0,0:16:35.49,0:16:37.24,c,,0000,0000,0000,,艾姆婶婶\N{\re}Auntie Em!
+Dialogue: 0,0:16:37.95,0:16:39.87,c,,0000,0000,0000,,艾姆婶婶\N{\re}Auntie Em?
+Dialogue: 0,0:16:41.62,0:16:43.37,c,,0000,0000,0000,,艾姆婶婶\N{\re}Auntie Em!
+Dialogue: 0,0:16:51.84,0:16:55.01,c,,0000,0000,0000,,艾姆婶婶 亨利叔叔\N{\re}Auntie Em! Uncle Henry!
+Dialogue: 0,0:17:04.06,0:17:05.40,c,,0000,0000,0000,,艾姆婶婶\N{\re}Auntie Em!
+Dialogue: 0,0:18:13.67,0:18:16.22,c,,0000,0000,0000,,我们一定是在龙卷风里面\N{\re}We must be up inside the cyclone!
+Dialogue: 0,0:18:19.30,0:18:22.22,c,,0000,0000,0000,,高驰小姐\N{\re}Oh! Miss Gulch.
+Dialogue: 0,0:19:00.39,0:19:01.80,c,,0000,0000,0000,,哦\N{\re}Oh!
+Dialogue: 0,0:20:49.04,0:20:50.62,c,,0000,0000,0000,,托托...\N{\re}Toto...
+Dialogue: 0,0:20:51.08,0:20:54.54,c,,0000,0000,0000,,我觉得我们已经不在堪萨斯了\N{\re}...I have a feeling we're not in Kansas anymore.
+Dialogue: 0,0:21:04.26,0:21:07.05,c,,0000,0000,0000,,我们一定越过了彩虹之处\N{\re}We must be over the rainbow.
+Dialogue: 0,0:21:36.58,0:21:39.46,c,,0000,0000,0000,,现在我知道我们不在堪萨斯\N{\re}Now I know we're not in Kansas.
+Dialogue: 0,0:21:41.92,0:21:45.34,c,,0000,0000,0000,,你是好女巫还是坏女巫\N{\re}Are you a good witch or a bad witch?
+Dialogue: 0,0:21:46.30,0:21:47.64,c,,0000,0000,0000,,谁 我吗\N{\re}Who, me?
+Dialogue: 0,0:21:47.80,0:21:49.89,c,,0000,0000,0000,,哎呀 我根本不是女巫\N{\re}Why, I'm not a witch at all.
+Dialogue: 0,0:21:50.06,0:21:52.97,c,,0000,0000,0000,,-我叫多萝西·盖尔 来自堪萨斯 -噢\N{\re}- I'm Dorothy Gale, from Kansas. - Oh.
+Dialogue: 0,0:21:53.22,0:21:54.93,c,,0000,0000,0000,,那它是巫师吗\N{\re}Well, is that the witch?
+Dialogue: 0,0:21:55.10,0:21:58.27,c,,0000,0000,0000,,谁 托托 托托是我的狗\N{\re}Who, Toto? Toto's my dog.
+Dialogue: 0,0:21:58.44,0:22:01.69,c,,0000,0000,0000,,我有点糊涂了 芒奇金人呼唤我是因为有个新女巫...\N{\re}I'm a little muddled. The Munchkins called me because a new witch...
+Dialogue: 0,0:22:01.94,0:22:04.69,c,,0000,0000,0000,,刚刚把房子压在东方的坏女巫身上\N{\re}...just dropped a house on the Wicked Witch of the East.
+Dialogue: 0,0:22:04.86,0:22:07.28,c,,0000,0000,0000,,房子在那里 你在这里...\N{\re}And there's the house, and here you are...
+Dialogue: 0,0:22:07.45,0:22:10.49,c,,0000,0000,0000,,那就是东方坏女巫剩下的部分\N{\re}...and that's all that's left of the Wicked Witch of the East.
+Dialogue: 0,0:22:11.79,0:22:16.79,c,,0000,0000,0000,,芒奇金人想知道 你是好女巫还是坏女巫\N{\re}What the Munchkins want to know is, are you a good witch or a bad witch?
+Dialogue: 0,0:22:16.96,0:22:19.54,c,,0000,0000,0000,,但我已经告诉过你了 我根本不是女巫\N{\re}But I've already told you, I'm not a witch at all.
+Dialogue: 0,0:22:19.71,0:22:21.50,c,,0000,0000,0000,,女巫都是又老又丑\N{\re}Witches are old and ugly.
+Dialogue: 0,0:22:24.01,0:22:25.13,c,,0000,0000,0000,,那是什么\N{\re}What was that?
+Dialogue: 0,0:22:25.34,0:22:28.89,c,,0000,0000,0000,,芒奇金人 他们笑是因为我也是女巫\N{\re}The Munchkins. They're laughing because I am a witch.
+Dialogue: 0,0:22:29.05,0:22:31.30,c,,0000,0000,0000,,我是葛琳达 北方女巫\N{\re}I'm Glinda, the Witch of the North.
+Dialogue: 0,0:22:31.68,0:22:33.35,c,,0000,0000,0000,,你是女巫\N{\re}You are?
+Dialogue: 0,0:22:33.52,0:22:34.97,c,,0000,0000,0000,,对不起\N{\re}Oh, I beg your pardon.
+Dialogue: 0,0:22:35.14,0:22:38.40,c,,0000,0000,0000,,但我以前从没听说过会有美丽的女巫\N{\re}But I've never heard of a beautiful witch before.
+Dialogue: 0,0:22:38.56,0:22:41.02,c,,0000,0000,0000,,只有坏女巫才会丑恶\N{\re}Only bad witches are ugly.
+Dialogue: 0,0:22:41.23,0:22:43.69,c,,0000,0000,0000,,芒奇金人很高兴 因为你从邪恶的东方女巫...\N{\re}The Munchkins are happy because you freed them...
+Dialogue: 0,0:22:43.86,0:22:47.70,c,,0000,0000,0000,,-手中解救了他们 -请问 什么是芒奇金人\N{\re}- ...from the Wicked Witch of the East. - But if you please, what are Munchkins?
+Dialogue: 0,0:22:49.07,0:22:51.66,c,,0000,0000,0000,,住在这里的小人儿 这里叫芒奇金国\N{\re}The little people who live here. It's Munchkinland...
+Dialogue: 0,0:22:51.83,0:22:54.41,c,,0000,0000,0000,,你是他们全国的英雄 亲爱的\N{\re}...and you are their national heroine, my dear.
+Dialogue: 0,0:22:54.58,0:22:58.58,c,,0000,0000,0000,,没关系 你们都可以出来感谢她\N{\re}It's all right. You may all come out and thank her.
+Dialogue: 0,0:22:58.96,0:23:03.04,g,,0000,0000,0000,,出来 出来 不管你在哪里\N{\rq}Come out, come out Wherever you are
+Dialogue: 0,0:23:03.21,0:23:09.43,g,,0000,0000,0000,,见见那个从星星上掉下来的小女孩\N{\rq}And meet the young lady Who fell from a star
+Dialogue: 0,0:23:12.22,0:23:16.52,g,,0000,0000,0000,,她从天上掉下来 是来自非常遥远的地方\N{\rq}She fell from the sky She fell very far
+Dialogue: 0,0:23:16.68,0:23:21.69,g,,0000,0000,0000,,她说 堪萨斯是那颗星星的名字\N{\rq}And Kansas, she says Is the name of the star
+Dialogue: 0,0:23:21.90,0:23:24.48,g,,0000,0000,0000,,她说 堪萨斯\N{\rq}Kansas, she says
+Dialogue: 0,0:23:24.65,0:23:26.23,g,,0000,0000,0000,,是那颗星星的名字\N{\rq}Is the name of the star
+Dialogue: 0,0:23:29.40,0:23:31.53,g,,0000,0000,0000,,她为你们带来好消息\N{\rq}She brings you good news
+Dialogue: 0,0:23:31.70,0:23:34.03,g,,0000,0000,0000,,你们可曾听说过\N{\rq}Or haven't you heard
+Dialogue: 0,0:23:34.20,0:23:37.37,g,,0000,0000,0000,,当她从堪萨斯掉下来\N{\rq}When she fell out of Kansas
+Dialogue: 0,0:23:37.54,0:23:41.42,g,,0000,0000,0000,,奇迹就发生了\N{\rq}A miracle occurred
+Dialogue: 0,0:23:43.54,0:23:46.59,g,,0000,0000,0000,,这并不是什么奇迹 事情不过这样\N{\rq}It really was no miracle What happened was just this
+Dialogue: 0,0:23:46.76,0:23:50.05,g,,0000,0000,0000,,大风开始刮起 房子跟着飞起\N{\rq}The wind began to switch The house to pitch
+Dialogue: 0,0:23:50.22,0:23:53.47,g,,0000,0000,0000,,突然间 天摇地动的震撼\N{\rq}And suddenly the hinges Started to unhitch
+Dialogue: 0,0:23:53.64,0:23:56.97,g,,0000,0000,0000,,就在这时 女巫 贪心无比\N{\rq}Just then the Witch To satisfy an itch
+Dialogue: 0,0:23:57.14,0:24:00.48,g,,0000,0000,0000,,骑着她的扫帚 却还想搭便车\N{\rq}Went flying on her broomstick Thumbing for a hitch
+Dialogue: 0,0:24:00.64,0:24:03.94,g,,0000,0000,0000,,当时发生的事真是变化多端\N{\rq}And oh, what happened then was rich
+Dialogue: 0,0:24:04.11,0:24:06.11,g,,0000,0000,0000,,房子开始摇动\N{\rq}The house began to pitch
+Dialogue: 0,0:24:06.27,0:24:07.69,g,,0000,0000,0000,,厨房跟着裂了\N{\rq}The kitchen took a slitch
+Dialogue: 0,0:24:07.90,0:24:10.53,g,,0000,0000,0000,,坏女巫就被压在沟槽中央\N{\rq}It landed on the Wicked Witch In the middle of a ditch
+Dialogue: 0,0:24:10.70,0:24:15.95,g,,0000,0000,0000,,对坏女巫而言 真是恶运临头\N{\rq}Which was not a healthy situation For the Wicked Witch
+Dialogue: 0,0:24:16.16,0:24:19.00,g,,0000,0000,0000,,房子开始摇动 厨房跟着裂了\N{\rq}The house began to pitch The kitchen took a slitch
+Dialogue: 0,0:24:19.16,0:24:22.08,g,,0000,0000,0000,,坏女巫就被压在沟槽中央\N{\rq}It landed on the Wicked Witch In the middle of a ditch
+Dialogue: 0,0:24:22.25,0:24:26.92,g,,0000,0000,0000,,对坏女巫而言 真是恶运临头\N{\rq}Which was not a healthy situation For the Wicked Witch
+Dialogue: 0,0:24:27.09,0:24:31.34,g,,0000,0000,0000,,她就开始抽搐 逐渐失去气息\N{\rq}Who began to twitch And was reduced to just a stitch
+Dialogue: 0,0:24:31.51,0:24:35.68,g,,0000,0000,0000,,邪恶的女巫就此死去\N{\rq}Of what was once the Wicked Witch
+Dialogue: 0,0:24:41.73,0:24:43.81,g,,0000,0000,0000,,我们由衷的感谢你\N{\rq}We thank you very sweetly
+Dialogue: 0,0:24:43.98,0:24:46.23,g,,0000,0000,0000,,把事情处理的干净利落\N{\rq}For doing it so neatly
+Dialogue: 0,0:24:46.40,0:24:48.94,g,,0000,0000,0000,,你彻底的杀死了她\N{\rq}You've killed her so completely
+Dialogue: 0,0:24:49.11,0:24:52.53,g,,0000,0000,0000,,我们由衷的感谢你\N{\rq}That we thank you very sweetly
+Dialogue: 0,0:24:53.03,0:24:58.24,c,,0000,0000,0000,,把这欢乐的消息传出去 邪恶的老巫婆终于死了\N{\re}Let the joyous news be spread. The Wicked Old Witch at last is dead.
+Dialogue: 0,0:25:01.50,0:25:03.67,g,,0000,0000,0000,,叮当 老巫婆已经死了\N{\rq}Ding-Dong! The Witch is dead
+Dialogue: 0,0:25:03.83,0:25:05.33,g,,0000,0000,0000,,哪位老巫婆 那位坏巫婆\N{\rq}Which old witch The Wicked Witch
+Dialogue: 0,0:25:05.50,0:25:09.05,g,,0000,0000,0000,,叮当 老巫婆已经死了\N{\rq}Ding-Dong! The Wicked Witch is dead
+Dialogue: 0,0:25:09.21,0:25:12.88,g,,0000,0000,0000,,快起来 瞌睡虫 揉揉眼 快起床\N{\rq}Wake up you sleepyhead Rub your eyes get out of bed
+Dialogue: 0,0:25:13.05,0:25:16.39,g,,0000,0000,0000,,邪恶巫婆已经死了\N{\rq}Wake up, the Wicked Witch is dead
+Dialogue: 0,0:25:16.55,0:25:20.22,g,,0000,0000,0000,,她去小妖精的地方了 在很深很深的地底\N{\rq}She's gone where the goblins go Below below below
+Dialogue: 0,0:25:20.39,0:25:24.23,g,,0000,0000,0000,,让我们敞开心扉 放声歌唱 敲响钟声\N{\rq}Yo-ho! Let's open up and sing And ring the bells out
+Dialogue: 0,0:25:24.39,0:25:27.81,g,,0000,0000,0000,,叮当之声多快乐 高声唱 低声吟\N{\rq}Ding-Dong! The merry-o Sing it high, sing it low
+Dialogue: 0,0:25:28.31,0:25:32.15,g,,0000,0000,0000,,让大家知道邪恶巫婆已经死了\N{\rq}Let them know The Wicked Witch is dead
+Dialogue: 0,0:25:52.17,0:25:55.68,g,,0000,0000,0000,,作为绿野仙境里的\N{\rq}As mayor of the Munchkin City
+Dialogue: 0,0:25:55.84,0:25:59.18,g,,0000,0000,0000,,芒奇金市的市长\N{\rq}In the county of the Land of Oz
+Dialogue: 0,0:25:59.35,0:26:02.77,g,,0000,0000,0000,,我非常隆重地欢迎你\N{\rq}I welcome you most regally
+Dialogue: 0,0:26:02.93,0:26:06.23,g,,0000,0000,0000,,但我们必须从法律上加以验证\N{\rq}But we've got to verify it legally
+Dialogue: 0,0:26:06.39,0:26:07.90,g,,0000,0000,0000,,-去看看 -去看看\N{\rq}- To see - To see?
+Dialogue: 0,0:26:08.06,0:26:09.56,g,,0000,0000,0000,,-她是否 -她是否\N{\rq}- If she - If she?
+Dialogue: 0,0:26:09.73,0:26:11.61,g,,0000,0000,0000,,在道德上 伦理上\N{\rq}Is morally ethically
+Dialogue: 0,0:26:11.77,0:26:14.86,g,,0000,0000,0000,,-精神上 肉体上 -肯定的 绝对的\N{\rq}- Spiritually physically - Positively absolutely
+Dialogue: 0,0:26:15.03,0:26:20.62,g,,0000,0000,0000,,不可否认和可靠的死亡\N{\rq}Undeniably and reliably dead
+Dialogue: 0,0:26:27.08,0:26:30.04,g,,0000,0000,0000,,作为验尸官我必须确认\N{\rq}As coroner I must aver
+Dialogue: 0,0:26:29.42,0:26:36.26,t,,0000,0000,0000,,{\fs20\bord0\shad0\pos(142,220)\fscy150\1c&H4F284D&}死亡证明
+Dialogue: 0,0:26:30.21,0:26:33.00,g,,0000,0000,0000,,我彻底的检验了她\N{\rq}I thoroughly examined her
+Dialogue: 0,0:26:33.17,0:26:36.05,g,,0000,0000,0000,,她不是垂死\N{\rq}And she's not only merely dead
+Dialogue: 0,0:26:36.22,0:26:39.64,g,,0000,0000,0000,,她真的是完全死去了\N{\rq}She's really most sincerely dead
+Dialogue: 0,0:26:42.01,0:26:44.06,c,,0000,0000,0000,,今天 是我们所有的...\N{\re}Then this is a Day of Independence...
+Dialogue: 0,0:26:44.22,0:26:46.94,c,,0000,0000,0000,,芒奇金人和子孙独立的日子\N{\re}...for all the Munchkins and their descendants.
+Dialogue: 0,0:26:47.10,0:26:48.14,c,,0000,0000,0000,,没错\N{\re}If any!
+Dialogue: 0,0:26:48.31,0:26:53.78,c,,0000,0000,0000,,让快乐的消息传播 邪恶的老巫婆终于死了\N{\re}Yes, let the joyous news be spread. The Wicked Old Witch at last is dead.
+Dialogue: 0,0:26:53.94,0:26:56.11,g,,0000,0000,0000,,叮当 老巫婆死了\N{\rq}Ding-Dong The Witch is dead
+Dialogue: 0,0:26:56.28,0:26:57.78,g,,0000,0000,0000,,哪位老巫婆 那位邪恶巫婆\N{\rq}Which old witch The Wicked Witch
+Dialogue: 0,0:26:57.95,0:27:01.12,g,,0000,0000,0000,,叮当 邪恶的巫婆已经死了\N{\rq}Ding-Dong The Wicked Witch is dead
+Dialogue: 0,0:27:01.28,0:27:04.62,g,,0000,0000,0000,,快起来 瞌睡虫 揉揉眼 快起床\N{\rq}Wake up you sleepyhead Rub your eyes get out of bed
+Dialogue: 0,0:27:04.79,0:27:08.08,g,,0000,0000,0000,,快起来 邪恶的巫婆已经死了\N{\rq}Wake up The Wicked Witch is dead
+Dialogue: 0,0:27:08.25,0:27:11.58,g,,0000,0000,0000,,她去小妖精的地方了 在很深很深的地底\N{\rq}She's gone where the goblins go Below below below
+Dialogue: 0,0:27:11.75,0:27:15.51,g,,0000,0000,0000,,让我们敞开心扉 放声歌唱 敲响钟声\N{\rq}Yo-ho! Let's open up and sing And ring the bells out
+Dialogue: 0,0:27:15.67,0:27:19.13,g,,0000,0000,0000,,叮当之声多快乐 高声唱 低声吟\N{\rq}Ding-Dong! The merry-o Sing it high, sing it low
+Dialogue: 0,0:27:19.30,0:27:23.01,g,,0000,0000,0000,,让大家知道邪恶巫婆已经死了\N{\rq}Let them know the Wicked Witch is dead
+Dialogue: 0,0:27:46.91,0:27:50.16,g,,0000,0000,0000,,我们代表摇篮曲协会\N{\rq}We represent the Lullaby League
+Dialogue: 0,0:27:50.33,0:27:53.38,g,,0000,0000,0000,,摇篮曲协会 摇篮曲协会\N{\rq}The Lullaby League The Lullaby League
+Dialogue: 0,0:27:53.54,0:27:58.17,g,,0000,0000,0000,,以摇篮曲协会的名义\N{\rq}And in the name of the Lullaby League
+Dialogue: 0,0:27:58.34,0:28:02.55,g,,0000,0000,0000,,我们欢迎你来到芒奇金市\N{\rq}We wish to welcome you To Munchkinland
+Dialogue: 0,0:28:11.73,0:28:14.94,g,,0000,0000,0000,,我们代表棒棒糖公会\N{\rq}We represent the Lollipop Guild
+Dialogue: 0,0:28:15.11,0:28:18.40,g,,0000,0000,0000,,棒棒糖公会 棒棒糖公会\N{\rq}The Lollipop Guild The Lollipop Guild
+Dialogue: 0,0:28:18.57,0:28:22.70,g,,0000,0000,0000,,以棒棒糖公会名义\N{\rq}And in the name of the Lollipop Guild
+Dialogue: 0,0:28:22.91,0:28:27.99,g,,0000,0000,0000,,我们欢迎你来到芒奇金市\N{\rq}We wish to welcome you To Munchkinland
+Dialogue: 0,0:28:29.12,0:28:31.62,g,,0000,0000,0000,,我们欢迎你来到芒奇金\N{\rq}We welcome you to Munchkinland
+Dialogue: 0,0:28:31.79,0:28:35.00,g,,0000,0000,0000,,啦啦啦 啦啦啦 啦啦啦 啦啦啦\N{\rq}Tra-la-la-la-la-la Tra-la-la tra-la-la
+Dialogue: 0,0:28:36.54,0:28:38.55,g,,0000,0000,0000,,啦啦啦啦啦啦\N{\rq}Tra-la-la-la-la La-la
+Dialogue: 0,0:28:38.71,0:28:40.80,g,,0000,0000,0000,,从现在起 你会名垂青史\N{\rq}From now on you'll be history
+Dialogue: 0,0:28:40.97,0:28:42.38,g,,0000,0000,0000,,-你会... -你会...\N{\rq}- You'll be his-- - You'll be his--
+Dialogue: 0,0:28:42.55,0:28:43.68,g,,0000,0000,0000,,你就是历史\N{\rq}You'll be history
+Dialogue: 0,0:28:43.76,0:28:47.43,g,,0000,0000,0000,,我们会荣耀你的名字\N{\rq}And we will glorify your name
+Dialogue: 0,0:28:47.60,0:28:49.06,g,,0000,0000,0000,,-为你将制成塑造 -塑像\N{\rq}- You will be a bust - Be a bust
+Dialogue: 0,0:28:49.22,0:28:52.48,g,,0000,0000,0000,,-塑像 -放在名人殿堂中\N{\rq}- Be a bust - In the hall of fame
+Dialogue: 0,0:28:52.81,0:28:54.48,g,,0000,0000,0000,,啦啦啦啦啦啦 啦啦啦 啦啦啦\N{\rq}Tra-la-la-la-la-la Tra-la-la tra-la-la
+Dialogue: 0,0:28:54.65,0:28:56.65,g,,0000,0000,0000,,啦啦啦啦啦啦\N{\rq}Tra-la-la-la-la La-la
+Dialogue: 0,0:28:56.81,0:28:58.78,g,,0000,0000,0000,,啦啦啦啦啦啦 啦啦啦 啦啦啦\N{\rq}Tra-la-la-la-la-la Tra-la-la tra-la-la
+Dialogue: 0,0:28:58.94,0:29:00.99,g,,0000,0000,0000,,啦啦啦啦啦啦\N{\rq}Tra-la-la-la-la La-la
+Dialogue: 0,0:29:01.15,0:29:03.24,g,,0000,0000,0000,,啦啦啦啦啦啦 啦啦啦 啦啦啦\N{\rq}Tra-la-la-la-la-la Tra-la-la tra-la-la
+Dialogue: 0,0:29:03.40,0:29:06.28,g,,0000,0000,0000,,啦啦啦啦啦啦\N{\rq}Tra-la-la-la-la La--
+Dialogue: 0,0:29:22.09,0:29:23.76,c,,0000,0000,0000,,你不是说她已经死了吗\N{\re}I thought you said she was dead.
+Dialogue: 0,0:29:23.93,0:29:26.43,c,,0000,0000,0000,,死的是她的妹妹 东方坏女巫\N{\re}That was her sister, the Wicked Witch of the East.
+Dialogue: 0,0:29:26.59,0:29:30.56,c,,0000,0000,0000,,这个是西方坏女巫 她比另一个更坏\N{\re}This is the Wicked Witch of the West. She's worse than the other one was.
+Dialogue: 0,0:29:30.72,0:29:34.56,c,,0000,0000,0000,,谁杀了我妹妹 谁杀了东方女巫\N{\re}Who killed my sister? Who killed the Witch of the East?
+Dialogue: 0,0:29:34.73,0:29:36.19,c,,0000,0000,0000,,是你吗\N{\re} Was it you?
+Dialogue: 0,0:29:36.40,0:29:40.40,c,,0000,0000,0000,,不 那是个意外 我不是有意杀人的\N{\re}No. No, it was an accident. I didn't mean to kill anybody.
+Dialogue: 0,0:29:40.57,0:29:43.99,c,,0000,0000,0000,,好吧 我的小美人 我也能做出这种意外\N{\re}Well, my little pretty, I can cause accidents too.
+Dialogue: 0,0:29:44.15,0:29:47.62,c,,0000,0000,0000,,-你忘了红宝石仙鞋了吗 -仙鞋 对了\N{\re}- Aren't you forgetting the ruby slippers? - The slippers. Yes.
+Dialogue: 0,0:29:48.32,0:29:50.58,c,,0000,0000,0000,,仙鞋\N{\re}The slippers.
+Dialogue: 0,0:29:57.29,0:29:58.33,c,,0000,0000,0000,,它们不见了\N{\re}They're gone.
+Dialogue: 0,0:29:58.58,0:30:00.96,c,,0000,0000,0000,,红宝石仙鞋 你对它们做了什么\N{\re}The ruby slippers. What have you done with them?
+Dialogue: 0,0:30:01.13,0:30:02.84,c,,0000,0000,0000,,快还给我 否则我会...\N{\re}Give them back to me or I'll--
+Dialogue: 0,0:30:03.01,0:30:06.55,c,,0000,0000,0000,,太迟了 它们就在这里 穿得好好的\N{\re}It's too late. There they are, and there they'll stay.
+Dialogue: 0,0:30:10.68,0:30:14.02,c,,0000,0000,0000,,把仙鞋还给我 只有我知道怎么使用它\N{\re}Give me back my slippers. Only I know how to use them.
+Dialogue: 0,0:30:14.18,0:30:17.73,c,,0000,0000,0000,,它对你毫无用处 把它还给我 还给我\N{\re}They're of no use to you. Give them back to me. Give them back.
+Dialogue: 0,0:30:17.90,0:30:20.77,c,,0000,0000,0000,,好好穿着别脱掉 仙鞋的魔法一定很强大\N{\re}Keep tight inside of them. Their magic must be powerful...
+Dialogue: 0,0:30:20.94,0:30:22.90,c,,0000,0000,0000,,不然她不会这么急着要回去\N{\re}...or she wouldn't want them so badly.
+Dialogue: 0,0:30:23.11,0:30:25.53,c,,0000,0000,0000,,少管闲事 葛琳达 否则我也会收拾你\N{\re}Stay out of this, Glinda, or I'll fix you as well.
+Dialogue: 0,0:30:25.70,0:30:27.91,c,,0000,0000,0000,,太可笑了 在这里你根本没法力\N{\re}Oh, rubbish! You have no power here.
+Dialogue: 0,0:30:28.07,0:30:31.20,c,,0000,0000,0000,,快走吧 免得又有房子压到你\N{\re}Begone, before somebody drops a house on you too.
+Dialogue: 0,0:30:31.37,0:30:34.33,c,,0000,0000,0000,,好吧 我会等待时机\N{\re}Very well. I'll bide my time.
+Dialogue: 0,0:30:34.50,0:30:39.46,c,,0000,0000,0000,,至于你 小美人 没错 我现在没法收拾你\N{\re}And as for you, it's true I can't attend to you here and now as I'd like.
+Dialogue: 0,0:30:39.63,0:30:42.04,c,,0000,0000,0000,,但最好别让我碰上\N{\re}But just try to stay out of my way.
+Dialogue: 0,0:30:42.25,0:30:43.34,c,,0000,0000,0000,,给我小心点\N{\re}Just try.
+Dialogue: 0,0:30:43.50,0:30:45.42,c,,0000,0000,0000,,我会抓住你的 小美人\N{\re}I'll get you, my pretty...
+Dialogue: 0,0:30:45.59,0:30:47.84,c,,0000,0000,0000,,还有你的小狗\N{\re}...and your little dog too.
+Dialogue: 0,0:30:58.64,0:31:00.98,c,,0000,0000,0000,,没事了 你们可以起来了 她已经走了\N{\re}It's all right. You can get up. She's gone.
+Dialogue: 0,0:31:01.77,0:31:05.36,c,,0000,0000,0000,,没事了 你们全都起来吧\N{\re}It's all right. You can all get up.
+Dialogue: 0,0:31:05.78,0:31:07.24,c,,0000,0000,0000,,多难闻的硫磺味\N{\re}Oh. What a smell of sulfur.
+Dialogue: 0,0:31:07.49,0:31:10.99,c,,0000,0000,0000,,恐怕你已经成为西方坏女巫的敌人了\N{\re}I'm afraid you've made an enemy of the Wicked Witch of the West.
+Dialogue: 0,0:31:11.16,0:31:15.08,c,,0000,0000,0000,,你越早离开绿野仙境 就会睡得越安稳 亲爱的\N{\re}The sooner you get out of Oz altogether, the safer you'll sleep, my dear.
+Dialogue: 0,0:31:15.24,0:31:18.37,c,,0000,0000,0000,,我会不惜一切代价离开绿野仙境\N{\re}Oh, I'd give anything to get out of Oz altogether.
+Dialogue: 0,0:31:18.54,0:31:22.59,c,,0000,0000,0000,,但是我该怎样回到堪萨斯 我无法按原路返回\N{\re}But which is the way back to Kansas? I can't go the way I came.
+Dialogue: 0,0:31:22.75,0:31:25.80,c,,0000,0000,0000,,这倒是真的 唯一可能知道路的...\N{\re}No, that's true. The only person who might know...
+Dialogue: 0,0:31:25.96,0:31:29.59,c,,0000,0000,0000,,是仙境里最伟大的魔法师\N{\re}...would be the great and wonderful Wizard of Oz himself.
+Dialogue: 0,0:31:29.76,0:31:32.85,c,,0000,0000,0000,,仙境魔法师 他是好人还是坏人\N{\re}The Wizard of Oz? Is he good or is he wicked?
+Dialogue: 0,0:31:33.01,0:31:35.56,c,,0000,0000,0000,,人很好 但是很神秘\N{\re}Oh, very good, but very mysterious.
+Dialogue: 0,0:31:35.72,0:31:38.60,c,,0000,0000,0000,,他住在翡翠城 离这里很远\N{\re}He lives in the Emerald City, a long journey from here.
+Dialogue: 0,0:31:38.77,0:31:41.44,c,,0000,0000,0000,,你带扫帚了吗\N{\re}Did you bring your broomstick with you?
+Dialogue: 0,0:31:41.73,0:31:45.27,c,,0000,0000,0000,,-没有 恐怕没有 -那么 你得走路了\N{\re}- No, I'm afraid I didn't. - Well, then, you'll have to walk.
+Dialogue: 0,0:31:45.44,0:31:48.82,c,,0000,0000,0000,,芒奇金人会把你安全地送到芒奇金的边界\N{\re}The Munchkins will see you safely to the border of Munchkinland.
+Dialogue: 0,0:31:48.99,0:31:53.45,c,,0000,0000,0000,,记住 绝对不要脱下红宝石仙鞋\N{\re}And remember, never let those ruby slippers off your feet for a moment...
+Dialogue: 0,0:31:53.62,0:31:57.45,c,,0000,0000,0000,,否则你就要受西方邪恶女巫的控制\N{\re}...or you will be at the mercy of the Wicked Witch of the West.
+Dialogue: 0,0:31:57.91,0:32:00.75,c,,0000,0000,0000,,但是我怎么走到翡翠城\N{\re}But how do I start for Emerald City?
+Dialogue: 0,0:32:00.92,0:32:03.00,c,,0000,0000,0000,,最好还是从头开始\N{\re}It's always best to start at the beginning.
+Dialogue: 0,0:32:03.17,0:32:07.42,c,,0000,0000,0000,,你只要顺着黄砖路走\N{\re}And all you do is follow the Yellow Brick Road.
+Dialogue: 0,0:32:16.56,0:32:21.31,c,,0000,0000,0000,,-但是如果我... -只要顺着黄砖路走\N{\re}- But what happens if I-- - Just follow the Yellow Brick Road.
+Dialogue: 0,0:32:21.60,0:32:24.02,c,,0000,0000,0000,,再见\N{\re}Goodbye.
+Dialogue: 0,0:32:37.49,0:32:38.95,c,,0000,0000,0000,,我的天\N{\re}My.
+Dialogue: 0,0:32:39.12,0:32:41.54,c,,0000,0000,0000,,这里的人来来去去这么快\N{\re}People come and go so quickly here.
+Dialogue: 0,0:32:44.38,0:32:47.09,g,,0000,0000,0000,,顺着黄砖路走\N{\rq}Follow the Yellow Brick Road
+Dialogue: 0,0:32:49.01,0:32:51.59,g,,0000,0000,0000,,顺着黄砖路走\N{\rq}Follow the Yellow Brick Road
+Dialogue: 0,0:32:52.38,0:32:54.84,g,,0000,0000,0000,,顺着黄砖路走\N{\rq}Follow the Yellow Brick Road
+Dialogue: 0,0:32:55.68,0:32:57.81,g,,0000,0000,0000,,顺着黄砖路走\N{\rq}Follow the Yellow Brick Road
+Dialogue: 0,0:32:57.97,0:32:59.81,g,,0000,0000,0000,,顺着黄砖路走\N{\rq}Follow the Yellow Brick Road
+Dialogue: 0,0:32:59.97,0:33:01.81,g,,0000,0000,0000,,顺着黄砖路走\N{\rq}Follow the Yellow Brick Road
+Dialogue: 0,0:33:01.98,0:33:03.89,g,,0000,0000,0000,,顺着黄砖路走\N{\rq}Follow the Yellow Brick Road
+Dialogue: 0,0:33:04.06,0:33:05.31,g,,0000,0000,0000,,顺着黄砖路走\N{\rq}Follow the Yellow Brick Road
+Dialogue: 0,0:33:05.48,0:33:09.19,g,,0000,0000,0000,,顺着走 顺着走 顺着走 顺着走 顺着黄砖路走\N{\rq}Follow follow follow follow Follow the Yellow Brick Road
+Dialogue: 0,0:33:12.32,0:33:13.86,g,,0000,0000,0000,,顺着黄砖路走 顺着黄砖路走\N{\rq}Follow the Yellow Brick follow the Yellow Brick
+Dialogue: 0,0:33:14.20,0:33:16.28,g,,0000,0000,0000,,顺着黄砖路走\N{\rq}Follow the Yellow Brick Road
+Dialogue: 0,0:33:19.20,0:33:22.62,g,,0000,0000,0000,,你要去见魔法师 绿野仙境里伟大的魔法师\N{\rq}You're off to see the Wizard The wonderful Wizard of Oz
+Dialogue: 0,0:33:22.79,0:33:26.17,g,,0000,0000,0000,,你会发现 他是有史以来最伟大\N{\rq}You'll find he is a whiz of a wiz If ever a wiz there was
+Dialogue: 0,0:33:26.33,0:33:29.63,g,,0000,0000,0000,,如果世上有伟大的魔法师 绿野仙境的魔法师就是其一\N{\rq}If ever oh ever a wiz there was The Wizard of Oz is one because
+Dialogue: 0,0:33:29.80,0:33:33.13,g,,0000,0000,0000,,因为 因为 因为 因为 因为\N{\rq}Because because because Because because
+Dialogue: 0,0:33:33.30,0:33:35.93,g,,0000,0000,0000,,因为他做了许多奇妙的事\N{\rq}Because of the wonderful things he does
+Dialogue: 0,0:33:36.84,0:33:41.64,g,,0000,0000,0000,,你要去见魔法师 绿野仙境里伟大魔法师\N{\rq}You're off to see the Wizard The wonderful Wizard of Oz
+Dialogue: 0,0:33:58.95,0:34:01.41,c,,0000,0000,0000,,顺着黄砖路走\N{\re}Follow the Yellow Brick Road?
+Dialogue: 0,0:34:01.70,0:34:03.50,c,,0000,0000,0000,,顺着黄砖...\N{\re}Follow the Yellow...?
+Dialogue: 0,0:34:04.79,0:34:06.12,c,,0000,0000,0000,,现在到底该走那条路\N{\re}Now which way do we go?
+Dialogue: 0,0:34:06.29,0:34:09.42,c,,0000,0000,0000,,对不起 那条路很好\N{\re}Pardon me. That way is a very nice way.
+Dialogue: 0,0:34:12.17,0:34:13.46,c,,0000,0000,0000,,是谁在说话\N{\re}Who said that?
+Dialogue: 0,0:34:17.76,0:34:19.18,c,,0000,0000,0000,,别傻了 托托\N{\re}Don't be silly, Toto.
+Dialogue: 0,0:34:19.35,0:34:22.93,c,,0000,0000,0000,,-稻草人不会说话 -走那条路也很舒服\N{\re}- Scarecrows don't talk. - It's pleasant down that way too.
+Dialogue: 0,0:34:24.27,0:34:27.98,c,,0000,0000,0000,,真奇怪 他不是指着另一边吗\N{\re}That's funny. Wasn't he pointing the other way?
+Dialogue: 0,0:34:28.15,0:34:31.57,c,,0000,0000,0000,,当然有的人会两条路都走\N{\re}Of course, people do go both ways.
+Dialogue: 0,0:34:34.49,0:34:38.57,c,,0000,0000,0000,,你真的会说话呢\N{\re}Why, you did say something, didn't you?
+Dialogue: 0,0:34:42.79,0:34:45.83,c,,0000,0000,0000,,你是故意这样做 还是你拿不定主意\N{\re}Are you doing that on purpose, or can't you make up your mind?
+Dialogue: 0,0:34:46.04,0:34:48.96,c,,0000,0000,0000,,问题就是这个 我拿不定主意\N{\re}That's the trouble. I can't make up my mind.
+Dialogue: 0,0:34:49.13,0:34:50.88,c,,0000,0000,0000,,我没有头脑\N{\re}I haven't got a brain.
+Dialogue: 0,0:34:51.04,0:34:53.09,c,,0000,0000,0000,,只有稻草\N{\re}Only straw.
+Dialogue: 0,0:34:53.30,0:34:55.92,c,,0000,0000,0000,,如果你没头脑怎么会说话\N{\re}How can you talk if you haven't got a brain?
+Dialogue: 0,0:34:56.09,0:34:57.68,c,,0000,0000,0000,,我不知道\N{\re}I don't know.
+Dialogue: 0,0:34:57.84,0:35:01.64,c,,0000,0000,0000,,但是有些人没头脑也很会说话\N{\re}But some people without brains do a lot of talking, don't they?
+Dialogue: 0,0:35:01.80,0:35:04.56,c,,0000,0000,0000,,对 你说得对\N{\re}Yes, I guess you're right.
+Dialogue: 0,0:35:05.27,0:35:08.69,c,,0000,0000,0000,,我们还没正式见面 对吧\N{\re}Well, we haven't really met properly, have we?
+Dialogue: 0,0:35:09.48,0:35:10.81,c,,0000,0000,0000,,还没有\N{\re}Why, no.
+Dialogue: 0,0:35:11.02,0:35:13.73,c,,0000,0000,0000,,-你好 -你好吗\N{\re}- How do you do? - How do you do?
+Dialogue: 0,0:35:13.90,0:35:17.11,c,,0000,0000,0000,,-我很好 谢谢 -我可是一点也不好\N{\re}- Very well, thank you. - Oh, I'm not feeling at all well.
+Dialogue: 0,0:35:17.28,0:35:22.28,c,,0000,0000,0000,,整天背着杆子被困在这里太乏味了\N{\re}It's very tedious being stuck up here all day long with a pole up your back.
+Dialogue: 0,0:35:22.45,0:35:26.58,c,,0000,0000,0000,,我的天 那肯定很不舒服 你不能下来吗\N{\re}Oh, dear. That must be terribly uncomfortable. Can't you get down?
+Dialogue: 0,0:35:26.75,0:35:29.29,c,,0000,0000,0000,,下来 不行 你看我...\N{\re}Down? No, you see, I'm-- Well, I'm--
+Dialogue: 0,0:35:29.46,0:35:31.54,c,,0000,0000,0000,,来 让我来帮你\N{\re}Oh, well, here. Let me help you.
+Dialogue: 0,0:35:31.71,0:35:34.71,c,,0000,0000,0000,,你真是太好了 真好\N{\re}Oh, that's very kind of you. Very kind.
+Dialogue: 0,0:35:36.55,0:35:38.67,c,,0000,0000,0000,,我的天 我不知道我怎么样...\N{\re}Oh, dear. I don't see how I can--
+Dialogue: 0,0:35:38.80,0:35:41.72,c,,0000,0000,0000,,当然 我做事情不够聪明...\N{\re}Of course, I'm not bright about doing things...
+Dialogue: 0,0:35:41.89,0:35:46.35,c,,0000,0000,0000,,但如果你把钉子弯下来 也许我就能滑下来 然后...\N{\re}...but if you'll just bend the nail down, maybe I'll slip off and--
+Dialogue: 0,0:35:46.52,0:35:48.43,c,,0000,0000,0000,,对了\N{\re}Oh, yes.
+Dialogue: 0,0:35:48.68,0:35:49.85,c,,0000,0000,0000,,哎哟\N{\re}Whoops!
+Dialogue: 0,0:35:50.31,0:35:52.94,c,,0000,0000,0000,,-又掉出来了一些 -伤到你了吗\N{\re}-There goes some of me again. - Does it hurt you?
+Dialogue: 0,0:35:53.11,0:35:57.36,c,,0000,0000,0000,,没事 我只要捡起来再放回去就好了\N{\re}Oh,no.I just keep picking it up and putting it back in again.
+Dialogue: 0,0:35:57.53,0:35:59.65,c,,0000,0000,0000,,我的天 自由真好\N{\re}My! It's good to be free!
+Dialogue: 0,0:36:01.86,0:36:03.20,c,,0000,0000,0000,,我吓到你了吗\N{\re}Did I scare you?
+Dialogue: 0,0:36:03.37,0:36:06.66,c,,0000,0000,0000,,没有 我以为你受伤了\N{\re}No, no. I just thought you hurt yourself.
+Dialogue: 0,0:36:06.83,0:36:09.91,c,,0000,0000,0000,,-你没吓到吗 -当然没有\N{\re}- But I didn't scare you? - No, of course not.
+Dialogue: 0,0:36:10.12,0:36:11.62,c,,0000,0000,0000,,我想也是\N{\re}I didn't think so.
+Dialogue: 0,0:36:13.00,0:36:14.34,c,,0000,0000,0000,,砰 快走开 砰\N{\re}Boo. Scat. Boo.
+Dialogue: 0,0:36:18.05,0:36:20.97,c,,0000,0000,0000,,你看到了吗 我连乌鸦都吓不了\N{\re}You see? I can't even scare a crow.
+Dialogue: 0,0:36:21.13,0:36:25.51,c,,0000,0000,0000,,它老远赶来吃我田里的东西 当面嘲笑我\N{\re}They come from miles around just to eat in my field and laugh in my face.
+Dialogue: 0,0:36:25.68,0:36:29.18,c,,0000,0000,0000,,我是个失败者 因为我没有头脑\N{\re}Oh, I'm a failure, because I haven't got a brain.
+Dialogue: 0,0:36:29.52,0:36:32.44,c,,0000,0000,0000,,如果你有头脑 你要做什么\N{\re}Well, what would you do with a brain if you had one?
+Dialogue: 0,0:36:32.77,0:36:34.73,c,,0000,0000,0000,,做什么 如果我有个头脑 我就会...\N{\re}Do? Why, if I had a brain, I could--
+Dialogue: 0,0:36:36.02,0:36:39.61,g,,0000,0000,0000,,我可以消磨时间与花交谈\N{\rq}I could while away the hours Conferring with the flowers
+Dialogue: 0,0:36:39.78,0:36:42.36,g,,0000,0000,0000,,和雨讨论天气\N{\rq}Consulting with the rain
+Dialogue: 0,0:36:43.24,0:36:46.78,g,,0000,0000,0000,,我会抓抓发痒的头皮 思绪可以源源不断\N{\rq}And my head I'd be scratchin' While my thoughts were busy hatchin'
+Dialogue: 0,0:36:46.95,0:36:49.62,g,,0000,0000,0000,,只要我有头脑\N{\rq}If I only had a brain
+Dialogue: 0,0:36:50.66,0:36:54.58,g,,0000,0000,0000,,我会为解开每个谜语\N{\rq}I'd unravel every riddle For any individ'le
+Dialogue: 0,0:36:54.75,0:36:57.21,g,,0000,0000,0000,,为每个有烦恼或痛苦的人\N{\rq}In trouble or in pain
+Dialogue: 0,0:36:58.34,0:37:01.88,g,,0000,0000,0000,,有这么好的想法 你能成为另一个林肯\N{\rq}With the thoughts you'd be thinkin' You could be another Lincoln
+Dialogue: 0,0:37:02.05,0:37:05.64,g,,0000,0000,0000,,只要你有头脑\N{\rq}If you only had a brain
+Dialogue: 0,0:37:05.80,0:37:09.68,g,,0000,0000,0000,,我可以告诉你为什么\N{\rq}Oh, I could tell you why
+Dialogue: 0,0:37:09.85,0:37:13.19,g,,0000,0000,0000,,海洋靠近海岸\N{\rq}The ocean's near the shore
+Dialogue: 0,0:37:13.35,0:37:16.69,g,,0000,0000,0000,,我能想到从未想过的事情\N{\rq}I could think of things I never thunk before
+Dialogue: 0,0:37:16.86,0:37:20.61,g,,0000,0000,0000,,然后我会坐下来思考更多\N{\rq}And then I'd sit And think some more
+Dialogue: 0,0:37:20.78,0:37:24.57,g,,0000,0000,0000,,我将不再一无所有 我的脑子里充满了东西\N{\rq}I would not be just a nothin' My head all full of stuffin'
+Dialogue: 0,0:37:24.74,0:37:27.70,g,,0000,0000,0000,,我的心充满了痛苦\N{\rq}My heart all full of pain
+Dialogue: 0,0:37:28.41,0:37:31.79,g,,0000,0000,0000,,我会跳舞 快乐的生活将是一场狂欢\N{\rq}I would dance and be merry Life would be a ding-a-derry
+Dialogue: 0,0:37:31.95,0:37:34.42,g,,0000,0000,0000,,只要我有头脑\N{\rq}If I only had a brain
+Dialogue: 0,0:37:34.58,0:37:36.25,c,,0000,0000,0000,,哇哦\N{\re}Whoa!
+Dialogue: 0,0:37:37.92,0:37:39.46,c,,0000,0000,0000,,太好了\N{\re}Wonderful.
+Dialogue: 0,0:37:39.63,0:37:42.46,c,,0000,0000,0000,,如果我们堪萨斯的稻草人能够做到...\N{\re}Why, if our scarecrow back in Kansas could do that...
+Dialogue: 0,0:37:42.63,0:37:45.63,c,,0000,0000,0000,,-乌鸦早就被吓死了 -真的吗\N{\re}- ...the crows would be scared to pieces. - They would?
+Dialogue: 0,0:37:45.80,0:37:48.14,c,,0000,0000,0000,,-堪萨斯在哪里 -那是我住的地方\N{\re}- Where's Kansas? - That's where I live.
+Dialogue: 0,0:37:48.30,0:37:51.27,c,,0000,0000,0000,,我太想回去了 所以我要去翡翠城...\N{\re}I wanna get back there so badly, I'm going to Emerald City...
+Dialogue: 0,0:37:51.43,0:37:53.52,c,,0000,0000,0000,,请绿野仙境魔法师帮我\N{\re}...to get the Wizard of Oz to help me.
+Dialogue: 0,0:37:53.68,0:37:56.10,c,,0000,0000,0000,,-你要去见魔法师 -嗯哼\N{\re}- You're going to see a wizard? - Mm-hmm.
+Dialogue: 0,0:37:56.77,0:37:59.94,c,,0000,0000,0000,,你认为我跟你去见魔法师 他会给我头脑吗\N{\re}Do you think if I went, this wizard would give me brains?
+Dialogue: 0,0:38:00.11,0:38:01.98,c,,0000,0000,0000,,我也不知道\N{\re}I couldn't say.
+Dialogue: 0,0:38:02.15,0:38:06.16,c,,0000,0000,0000,,但就算他不给 你也不会比现在更糟\N{\re}But even if he didn't, you'd be no worse off than you are now.
+Dialogue: 0,0:38:06.32,0:38:08.82,c,,0000,0000,0000,,-是啊 这倒是真的 -你最好别跟我去\N{\re}- Yes, that's true. - But maybe you better not.
+Dialogue: 0,0:38:08.99,0:38:11.49,c,,0000,0000,0000,,我惹怒个女巫 你可能会遇上麻烦\N{\re}I've got a witch mad at me, and you might get into trouble.
+Dialogue: 0,0:38:11.66,0:38:16.75,c,,0000,0000,0000,,女巫 我才不怕女巫 我什么都不怕\N{\re}Witch? I'm not afraid of a witch. I'm not afraid of anything.
+Dialogue: 0,0:38:18.29,0:38:21.50,c,,0000,0000,0000,,-除了点燃的火柴 -我想也是\N{\re}- Except a lighted match. - I don't blame you for that.
+Dialogue: 0,0:38:21.67,0:38:25.80,c,,0000,0000,0000,,为了得到头脑 我愿意面对整盒火柴\N{\re}But I'd face a whole box of them for the chance of getting some brains.
+Dialogue: 0,0:38:27.64,0:38:30.43,c,,0000,0000,0000,,听着 我不会给你添麻烦 因为我什么都不吃\N{\re}Look, I won't be any trouble, because I don't eat a thing.
+Dialogue: 0,0:38:30.60,0:38:34.48,c,,0000,0000,0000,,我不会想去管什么事 因为我不会思考\N{\re}And I won't try to manage things, because I can't think.
+Dialogue: 0,0:38:34.64,0:38:36.06,c,,0000,0000,0000,,你不愿意带我一起去吗\N{\re}Won't you take me with you?
+Dialogue: 0,0:38:37.02,0:38:38.44,c,,0000,0000,0000,,我当然愿意\N{\re}of course I will.
+Dialogue: 0,0:38:39.31,0:38:42.11,c,,0000,0000,0000,,太好了 我们一起去见魔法师\N{\re}Hooray! We're off to see a wizard!
+Dialogue: 0,0:38:42.27,0:38:44.69,c,,0000,0000,0000,,你还不太会走路\N{\re}You're not starting out very well.
+Dialogue: 0,0:38:44.86,0:38:46.99,c,,0000,0000,0000,,我会努力学习走路 真的\N{\re}Oh, I'll try. Really, I will.
+Dialogue: 0,0:38:47.15,0:38:48.36,c,,0000,0000,0000,,-去绿野仙境 -去绿野仙境\N{\re}- To Oz? - To Oz.
+Dialogue: 0,0:38:48.70,0:38:51.20,g,,0000,0000,0000,,我们出发去见魔法师\N{\rq}We're off to see the Wizard
+Dialogue: 0,0:38:51.37,0:38:52.99,g,,0000,0000,0000,,绿野仙境的魔法师\N{\rq}The wonderful Wizard of Oz
+Dialogue: 0,0:38:53.16,0:38:56.58,g,,0000,0000,0000,,我们听说他是前所未有 法师中的法师\N{\rq}We hear he is a whiz of a wiz If ever a wiz there was
+Dialogue: 0,0:38:56.75,0:39:00.21,g,,0000,0000,0000,,前所未有 前所未有的魔法师\N{\rq}If ever, oh ever a wiz there was The Wizard of Oz is one because
+Dialogue: 0,0:39:00.38,0:39:03.75,g,,0000,0000,0000,,因为 因为 因为 因为 因为\N{\rq}Because because because Because because
+Dialogue: 0,0:39:03.92,0:39:06.67,g,,0000,0000,0000,,因为他有极为奇妙的法力\N{\rq}Because of the wonderful things he does
+Dialogue: 0,0:39:07.51,0:39:13.81,g,,0000,0000,0000,,我们出发去见魔法师 绿野仙境里伟大魔法师\N{\rq}We're off to see the wizard The wonderful Wizard of Oz
+Dialogue: 0,0:39:24.86,0:39:26.07,c,,0000,0000,0000,,哦\N{\re}Oh.
+Dialogue: 0,0:39:26.86,0:39:29.03,c,,0000,0000,0000,,苹果\N{\re}Apples.
+Dialogue: 0,0:39:29.36,0:39:31.99,c,,0000,0000,0000,,你看\N{\re}Oh, look.
+Dialogue: 0,0:39:33.62,0:39:35.16,c,,0000,0000,0000,,哦\N{\re}Oh.
+Dialogue: 0,0:39:38.12,0:39:39.16,c,,0000,0000,0000,,啊哟\N{\re}Ouch!
+Dialogue: 0,0:39:39.62,0:39:41.54,c,,0000,0000,0000,,你认为你在干什么\N{\re}What do you think you're doing?
+Dialogue: 0,0:39:43.34,0:39:47.09,c,,0000,0000,0000,,我们走了很长的路 我饿了\N{\re}We've been walking a long ways and I was hungry and--
+Dialogue: 0,0:39:47.51,0:39:48.84,c,,0000,0000,0000,,你在说话吗\N{\re}Did you say something?
+Dialogue: 0,0:39:49.01,0:39:51.01,c,,0000,0000,0000,,-她饿了 -她饿了\N{\re}- She was hungry. - She was hungry.
+Dialogue: 0,0:39:51.18,0:39:55.22,c,,0000,0000,0000,,你喜欢让人过来摘你的东西吗\N{\re}How would like to have someone come along and pick something off of you?
+Dialogue: 0,0:39:55.39,0:39:59.73,c,,0000,0000,0000,,我的天 我总是忘记这里不是堪萨斯\N{\re}Oh, dear. I keep forgetting I'm not in Kansas.
+Dialogue: 0,0:39:59.89,0:40:01.44,c,,0000,0000,0000,,走吧 多萝西\N{\re}Come along, Dorothy.
+Dialogue: 0,0:40:01.60,0:40:03.90,c,,0000,0000,0000,,你不会喜欢这种苹果\N{\re}You don't want any of those apples. Hmm.
+Dialogue: 0,0:40:04.06,0:40:06.19,c,,0000,0000,0000,,你暗示我的苹果不应该是这样吗\N{\re}Are you hinting my apples aren't what they ought to be?
+Dialogue: 0,0:40:06.36,0:40:10.11,c,,0000,0000,0000,,不知道 但她不喜欢小绿虫\N{\re}Oh, no. It's just that she doesn't like little green worms.
+Dialogue: 0,0:40:10.28,0:40:11.45,c,,0000,0000,0000,,你\N{\re}Oh, you.
+Dialogue: 0,0:40:16.29,0:40:18.54,c,,0000,0000,0000,,我教你怎么得到苹果\N{\re}I'll show you how to get apples.
+Dialogue: 0,0:40:20.75,0:40:22.29,c,,0000,0000,0000,,哦\N{\re}Oh! Oh!
+Dialogue: 0,0:40:24.88,0:40:28.76,c,,0000,0000,0000,,太好了 就要它这样 自己捡吧\N{\re}Hooray! I guess that did it. Help yourself.
+Dialogue: 0,0:40:53.24,0:40:55.82,c,,0000,0000,0000,,是个人呢\N{\re}Why, it's a man.
+Dialogue: 0,0:40:56.58,0:40:59.41,c,,0000,0000,0000,,用锡做的人\N{\re}A man made out of tin.
+Dialogue: 0,0:40:59.58,0:41:01.58,c,,0000,0000,0000,,没错\N{\re}Yes.
+Dialogue: 0,0:41:02.37,0:41:03.96,c,,0000,0000,0000,,看\N{\re}Look.
+Dialogue: 0,0:41:07.75,0:41:09.46,c,,0000,0000,0000,,你在说话吗\N{\re}Did you say something?
+Dialogue: 0,0:41:11.84,0:41:13.47,c,,0000,0000,0000,,他在说 "油壶"\N{\re}He said "oilcan."
+Dialogue: 0,0:41:13.63,0:41:17.30,c,,0000,0000,0000,,-什么油壶 -油壶\N{\re}- Oil can what? - Oilcan?
+Dialogue: 0,0:41:19.76,0:41:20.64,c,,0000,0000,0000,,在这里\N{\re}Oh, here it is.
+Dialogue: 0,0:41:21.56,0:41:23.31,c,,0000,0000,0000,,你想先在哪里加油\N{\re}Where do you want to be oiled first?
+Dialogue: 0,0:41:25.31,0:41:27.19,c,,0000,0000,0000,,他说他的嘴\N{\re}He said his mouth.
+Dialogue: 0,0:41:30.78,0:41:32.49,c,,0000,0000,0000,,另一边\N{\re}The other side.
+Dialogue: 0,0:41:40.20,0:41:42.66,c,,0000,0000,0000,,嗯...嗯...嗯...\N{\re}Mm... Mm... Mm...
+Dialogue: 0,0:41:42.83,0:41:45.79,c,,0000,0000,0000,,我的天哪 我又可以说话了\N{\re}My goodness. I can talk again. Oh.
+Dialogue: 0,0:41:45.96,0:41:49.75,c,,0000,0000,0000,,请给我的胳膊加油  胳膊肘也要加\N{\re}Oil my arms, please. Oil my elbows.
+Dialogue: 0,0:41:49.92,0:41:51.34,c,,0000,0000,0000,,这里\N{\re}Here.
+Dialogue: 0,0:41:54.68,0:41:58.26,c,,0000,0000,0000,,-疼吗 -不疼 感觉好极了\N{\re}- Did that hurt? - No, it feels wonderful.
+Dialogue: 0,0:41:58.43,0:42:00.81,c,,0000,0000,0000,,我举了那把斧子好长时间了\N{\re}I've held that ax up for ages.
+Dialogue: 0,0:42:00.97,0:42:05.64,c,,0000,0000,0000,,天哪 你怎么会变成这样\N{\re}Goodness. How did you ever get like this?
+Dialogue: 0,0:42:05.81,0:42:08.31,c,,0000,0000,0000,,大约一年前\N{\re}Well, about a year ago...
+Dialogue: 0,0:42:08.48,0:42:10.27,c,,0000,0000,0000,,我正在砍那棵树\N{\re}...I was chopping that tree...
+Dialogue: 0,0:42:10.44,0:42:12.32,c,,0000,0000,0000,,突然下起雨来\N{\re}...when suddenly it began to rain.
+Dialogue: 0,0:42:12.48,0:42:16.49,c,,0000,0000,0000,,就在砍的一半时 我就锈住了\N{\re}And right in the middle of a chop, I rusted solid.
+Dialogue: 0,0:42:16.66,0:42:19.37,c,,0000,0000,0000,,从那以后我就一直这样\N{\re}And I've been that way ever since.
+Dialogue: 0,0:42:21.99,0:42:24.08,c,,0000,0000,0000,,现在你都好了\N{\re}Well, you're perfect now.
+Dialogue: 0,0:42:24.25,0:42:26.16,c,,0000,0000,0000,,我的脖子 我的脖子\N{\re}My neck. My neck.
+Dialogue: 0,0:42:26.33,0:42:27.71,c,,0000,0000,0000,,都好了\N{\re}Perfect?
+Dialogue: 0,0:42:27.88,0:42:30.38,c,,0000,0000,0000,,敲敲我的胸脯 看我是不是都好了\N{\re}Bang on my chest if you think I'm perfect.
+Dialogue: 0,0:42:30.88,0:42:33.17,c,,0000,0000,0000,,来吧 敲敲看\N{\re}Go ahead, bang on it.
+Dialogue: 0,0:42:35.13,0:42:37.84,c,,0000,0000,0000,,没错 还有响亮的回音\N{\re}Beautiful. What an echo.
+Dialogue: 0,0:42:38.01,0:42:39.93,c,,0000,0000,0000,,它是空的\N{\re}It's empty.
+Dialogue: 0,0:42:40.55,0:42:43.93,c,,0000,0000,0000,,锡匠忘了给我一颗心\N{\re}The tinsmith forgot to give me a heart.
+Dialogue: 0,0:42:44.22,0:42:45.85,c,,0000,0000,0000,,-没有心 -没有心\N{\re}- No heart? - No heart?
+Dialogue: 0,0:42:46.31,0:42:47.98,c,,0000,0000,0000,,没有心\N{\re}No heart.
+Dialogue: 0,0:42:48.15,0:42:50.40,c,,0000,0000,0000,,都是空的\N{\re}All hollow.
+Dialogue: 0,0:42:54.03,0:42:56.45,g,,0000,0000,0000,,当一个人有了身份\N{\rq}When a man's an empty kettle
+Dialogue: 0,0:42:56.61,0:42:58.91,g,,0000,0000,0000,,他应该感到精神焕发\N{\rq}He should be on his mettle
+Dialogue: 0,0:42:59.07,0:43:02.74,g,,0000,0000,0000,,但我却无所适从\N{\rq}And yet I'm torn apart
+Dialogue: 0,0:43:03.33,0:43:07.79,g,,0000,0000,0000,,因为我以为自己是人类\N{\rq}Just because I'm presumin' That I could be kind of human
+Dialogue: 0,0:43:07.96,0:43:11.08,g,,0000,0000,0000,,只要我有颗心\N{\rq}If I only had a heart
+Dialogue: 0,0:43:12.42,0:43:17.26,g,,0000,0000,0000,,我会善良 我会温柔 而且多愁善感\N{\rq}I'd be tender, I'd be gentle And awful sentimental
+Dialogue: 0,0:43:17.42,0:43:20.68,g,,0000,0000,0000,,关注爱情和艺术\N{\rq}Regarding love and art
+Dialogue: 0,0:43:21.55,0:43:26.10,g,,0000,0000,0000,,我会成为麻雀和射箭的男孩丘比特的朋友\N{\rq}I'd be friends with the sparrows And the boy who shoots the arrows
+Dialogue: 0,0:43:26.27,0:43:30.40,g,,0000,0000,0000,,只要我有颗心\N{\rq}If I only had a heart
+Dialogue: 0,0:43:30.94,0:43:35.40,g,,0000,0000,0000,,想想我置身阳台下\N{\rq}Picture me A balcony
+Dialogue: 0,0:43:35.57,0:43:40.03,g,,0000,0000,0000,,上面有人低声吟唱\N{\rq}Above, a voice sings low
+Dialogue: 0,0:43:40.20,0:43:43.99,g,,0000,0000,0000,,你在哪里 罗密欧\N{\rq}Wherefore art thou, Romeo?
+Dialogue: 0,0:43:44.16,0:43:46.16,g,,0000,0000,0000,,我听到心跳\N{\rq}I hear a beat
+Dialogue: 0,0:43:47.37,0:43:48.66,g,,0000,0000,0000,,多么甜蜜\N{\rq}How sweet!
+Dialogue: 0,0:43:48.83,0:43:53.75,g,,0000,0000,0000,,只要有这种感觉 妒忌 忠诚\N{\rq}Just to register emotion Jealousy, devotion
+Dialogue: 0,0:43:53.92,0:43:57.63,g,,0000,0000,0000,,真的感觉到了\N{\rq}And really feel the part
+Dialogue: 0,0:43:58.05,0:44:03.68,g,,0000,0000,0000,,我可以保持年轻和爽朗 我会用拉链锁住它\N{\rq}I could stay young and chipper And I'd lock it with a zipper
+Dialogue: 0,0:44:03.85,0:44:07.31,g,,0000,0000,0000,,只要我有颗心\N{\rq}If I only had a heart
+Dialogue: 0,0:45:28.93,0:45:30.27,c,,0000,0000,0000,,哦 哦哦哦哦\N{\re}Oh! Oh, oh, oh, oh.
+Dialogue: 0,0:45:31.14,0:45:33.98,c,,0000,0000,0000,,-你没事吧 -看来我又生锈了\N{\re}- Are you all right? - I'm a little rusty yet.
+Dialogue: 0,0:45:34.14,0:45:36.10,c,,0000,0000,0000,,我的天\N{\re}Oh, dear.
+Dialogue: 0,0:45:36.27,0:45:38.57,c,,0000,0000,0000,,你真了不起\N{\re}That was wonderful.
+Dialogue: 0,0:45:38.77,0:45:42.86,c,,0000,0000,0000,,知道吗 你可以和我们一起...\N{\re}You know, we were wondering why you couldn't come with us...
+Dialogue: 0,0:45:43.03,0:45:46.16,c,,0000,0000,0000,,去翡翠城向魔法师要一颗心\N{\re}...to the Emerald City to ask the Wizard of Oz for a heart.
+Dialogue: 0,0:45:46.53,0:45:49.20,c,,0000,0000,0000,,如果我们到了那里魔法师不给我\N{\re}Suppose the Wizard wouldn't give me one when we got there.
+Dialogue: 0,0:45:49.37,0:45:50.91,c,,0000,0000,0000,,他会给\N{\re}Oh, but he will.
+Dialogue: 0,0:45:51.08,0:45:52.45,c,,0000,0000,0000,,他一定会给\N{\re}He must.
+Dialogue: 0,0:45:52.62,0:45:55.12,c,,0000,0000,0000,,我们已经走了这么远的路\N{\re}We've come such a long way already.
+Dialogue: 0,0:46:01.25,0:46:05.34,c,,0000,0000,0000,,你说这样就很远了 你才刚刚开始呢\N{\re}You call that long? Why, you've just begun.
+Dialogue: 0,0:46:05.51,0:46:09.01,c,,0000,0000,0000,,先生们 你们是不是想帮助那个小女孩\N{\re}Helping the little lady along, are you, my fine gentlemen?
+Dialogue: 0,0:46:09.18,0:46:11.43,c,,0000,0000,0000,,离她远点\N{\re}Well, stay away from her...
+Dialogue: 0,0:46:11.60,0:46:13.68,c,,0000,0000,0000,,否则我拿你来塞床垫\N{\re}...or I'll stuff a mattress with you.
+Dialogue: 0,0:46:14.77,0:46:16.06,c,,0000,0000,0000,,还有你\N{\re}And you.
+Dialogue: 0,0:46:16.23,0:46:19.02,c,,0000,0000,0000,,我把你拿来做巢箱\N{\re}I'll use you for a beehive.
+Dialogue: 0,0:46:19.19,0:46:22.61,c,,0000,0000,0000,,给你 稻草人 想玩球吗\N{\re}Here, scarecrow. Wanna play ball?
+Dialogue: 0,0:46:26.36,0:46:30.24,c,,0000,0000,0000,,火 我着火了 我着火了 把它弄走\N{\re}Fire! I'm burning! I'm burning! Take it away.
+Dialogue: 0,0:46:41.71,0:46:43.34,c,,0000,0000,0000,,我才不怕她\N{\re}I'm not afraid of her.
+Dialogue: 0,0:46:43.51,0:46:47.18,c,,0000,0000,0000,,不管能不能得到头脑 我会安全的送你到仙境去\N{\re}I'll see you get safely to the Wizard, whether I get a brain or not.
+Dialogue: 0,0:46:47.34,0:46:49.68,c,,0000,0000,0000,,想拿我塞床垫 哼\N{\re}Stuff a mattress with me.
+Dialogue: 0,0:46:50.72,0:46:53.68,c,,0000,0000,0000,,不管我能不能得到一颗心 我也会送你到仙境去\N{\re}I'll see you reach the Wizard, whether I get a heart or not.
+Dialogue: 0,0:46:53.85,0:46:55.64,c,,0000,0000,0000,,巢箱 呸\N{\re}Beehive. Bah.
+Dialogue: 0,0:46:55.81,0:46:59.15,c,,0000,0000,0000,,让她试试怎么把我做成巢箱\N{\re}Let her try and make a beehive out of me.
+Dialogue: 0,0:47:00.52,0:47:04.40,c,,0000,0000,0000,,你们真的是我最好的朋友\N{\re}Oh, you're the best friends anybody ever had.
+Dialogue: 0,0:47:04.57,0:47:08.99,c,,0000,0000,0000,,真奇怪 我觉得我像早就认识你们了\N{\re}And it's funny, but I feel as if I've known you all the time.
+Dialogue: 0,0:47:09.16,0:47:12.33,c,,0000,0000,0000,,-但那是不可能的 对吧 -我不知道\N{\re}- But I couldn't have, could I? - I don't see how.
+Dialogue: 0,0:47:12.49,0:47:15.83,c,,0000,0000,0000,,当我被塞满缝起来时 你不在我身边 对吧\N{\re}You weren't around when I was stuffed and sewn together, were you?
+Dialogue: 0,0:47:16.00,0:47:19.75,c,,0000,0000,0000,,我站在那里生锈了很长时间\N{\re}And I was standing over there rusting for the longest time.
+Dialogue: 0,0:47:19.92,0:47:22.63,c,,0000,0000,0000,,不过 我还是希望我能记起来\N{\re}Still, I wish I could remember.
+Dialogue: 0,0:47:22.79,0:47:27.22,c,,0000,0000,0000,,但我想这没关系 我们现在认识了 对吧\N{\re}But I guess it doesn't matter anyway. We know each other now, don't we?
+Dialogue: 0,0:47:27.47,0:47:29.55,c,,0000,0000,0000,,-没错 -对啊\N{\re}- That's right. - We do.
+Dialogue: 0,0:47:29.72,0:47:31.43,c,,0000,0000,0000,,-到绿野仙境 -到绿野仙境去\N{\re}- To Oz? - To Oz.
+Dialogue: 0,0:47:31.72,0:47:33.47,g,,0000,0000,0000,,我们出发去见魔法师\N{\rq}We're off to see the Wizard
+Dialogue: 0,0:47:33.64,0:47:35.47,g,,0000,0000,0000,,绿野仙境里最伟大的魔法师\N{\rq}The wonderful Wizard of Oz
+Dialogue: 0,0:47:35.64,0:47:38.89,g,,0000,0000,0000,,我们听说他是前所未有 法师中的法师\N{\rq}We hear he is a whiz of a wiz If ever a wiz there was
+Dialogue: 0,0:47:39.06,0:47:42.36,g,,0000,0000,0000,,如果世上有伟大的法师存在 绿野仙境的法师就是其一\N{\rq}If ever, oh ever a wiz there was The Wizard of Oz is one because
+Dialogue: 0,0:47:42.52,0:47:45.90,g,,0000,0000,0000,,因为 因为 因为 因为 因为\N{\rq}Because, because, because Because, because
+Dialogue: 0,0:47:46.07,0:47:48.90,g,,0000,0000,0000,,因为他做了很多奇妙的事情\N{\rq}Because of the wonderful things he does
+Dialogue: 0,0:47:49.86,0:47:55.95,g,,0000,0000,0000,,我们要出发去见魔法师 绿野仙境里最伟大的法师\N{\rq}We're off to see the Wizard The wonderful Wizard of Oz
+Dialogue: 0,0:48:17.77,0:48:20.52,c,,0000,0000,0000,,我不喜欢这个森林\N{\re}I don't like this forest.
+Dialogue: 0,0:48:21.06,0:48:24.19,c,,0000,0000,0000,,这里又黑又恐怖\N{\re}It's dark and creepy.
+Dialogue: 0,0:48:24.36,0:48:29.78,c,,0000,0000,0000,,虽然我不了解 但我想在它变亮之前会变得更暗\N{\re}Of course, I don't know, but I think it'll get darker before it gets lighter.
+Dialogue: 0,0:48:30.11,0:48:31.24,c,,0000,0000,0000,,你...\N{\re}Do...
+Dialogue: 0,0:48:31.40,0:48:34.16,c,,0000,0000,0000,,你认为我们会碰到什么野兽吗\N{\re}Do you suppose we'll meet any wild animals?
+Dialogue: 0,0:48:34.32,0:48:35.95,c,,0000,0000,0000,,有可能\N{\re}We might.
+Dialogue: 0,0:48:36.12,0:48:39.70,c,,0000,0000,0000,,有吃稻草的野兽吗\N{\re}Animals that eat straw?
+Dialogue: 0,0:48:39.87,0:48:43.33,c,,0000,0000,0000,,有一些 但主要是狮子 老虎和熊\N{\re}Some, but mostly lions and tigers and bears.
+Dialogue: 0,0:48:43.50,0:48:44.96,c,,0000,0000,0000,,-狮子 -还有老虎\N{\re}- Lions. - And tigers?
+Dialogue: 0,0:48:45.13,0:48:46.80,c,,0000,0000,0000,,和熊\N{\re}And bears.
+Dialogue: 0,0:48:47.42,0:48:50.13,c,,0000,0000,0000,,狮子 老虎和熊\N{\re}Lions and tigers and bears.
+Dialogue: 0,0:48:50.30,0:48:51.17,c,,0000,0000,0000,,我的天\N{\re}Oh, my.
+Dialogue: 0,0:48:51.26,0:48:53.97,c,,0000,0000,0000,,狮子 老虎和熊\N{\re}Lions and tigers and bears.
+Dialogue: 0,0:48:54.05,0:48:55.14,c,,0000,0000,0000,,我的天\N{\re}Oh, my.
+Dialogue: 0,0:48:55.22,0:48:57.01,c,,0000,0000,0000,,狮子 老虎和熊\N{\re}Lions and tigers and bears.
+Dialogue: 0,0:48:57.10,0:48:57.97,c,,0000,0000,0000,,我的天\N{\re}Oh, my.
+Dialogue: 0,0:48:58.06,0:48:59.39,c,,0000,0000,0000,,狮子 老虎和熊\N{\re}Lions and tigers and bears.
+Dialogue: 0,0:48:59.47,0:49:00.31,c,,0000,0000,0000,,我的天\N{\re}Oh, my.
+Dialogue: 0,0:49:00.39,0:49:01.52,c,,0000,0000,0000,,狮子 老虎和熊\N{\re}Lions and tigers and bears.
+Dialogue: 0,0:49:01.60,0:49:02.44,c,,0000,0000,0000,,我的天\N{\re}Oh, my.
+Dialogue: 0,0:49:05.02,0:49:06.31,c,,0000,0000,0000,,看\N{\re}Oh, look.
+Dialogue: 0,0:49:26.71,0:49:29.96,c,,0000,0000,0000,,来啊 来啊\N{\re}Put 'em up. Put 'em up.
+Dialogue: 0,0:49:30.17,0:49:31.84,c,,0000,0000,0000,,哪个要先来\N{\re}Which one of you first?
+Dialogue: 0,0:49:32.01,0:49:34.38,c,,0000,0000,0000,,如果愿意你们两个可以一起来\N{\re}I'll fight you both together, if you want.
+Dialogue: 0,0:49:34.55,0:49:37.80,c,,0000,0000,0000,,我可以一只爪子放在背后和你们打\N{\re}I'll fight you with one paw tied behind my back.
+Dialogue: 0,0:49:38.14,0:49:40.18,c,,0000,0000,0000,,也可以一只脚站着和你们打\N{\re}I'll fight you standing on one foot.
+Dialogue: 0,0:49:40.39,0:49:42.85,c,,0000,0000,0000,,我闭上眼睛和你们打\N{\re}I'll fight you with my eyes closed.
+Dialogue: 0,0:49:43.27,0:49:46.15,c,,0000,0000,0000,,想拿斧头砍我是不是\N{\re}Oh, pulling an ax on me, eh?
+Dialogue: 0,0:49:47.40,0:49:50.57,c,,0000,0000,0000,,想偷袭我吗 嗯...\N{\re}Sneaking up on me, eh? Why...
+Dialogue: 0,0:49:52.07,0:49:55.28,c,,0000,0000,0000,,-走开 让我一个人待着 -害怕了\N{\re}- Here, here. Go away and let us alone. - Oh, scared, huh?
+Dialogue: 0,0:49:55.45,0:49:56.87,c,,0000,0000,0000,,怕我了 嗯\N{\re}Afraid, huh?
+Dialogue: 0,0:49:57.45,0:49:59.24,c,,0000,0000,0000,,你在那个罐子里能保鲜多久\N{\re}How long can you stay fresh in that can?
+Dialogue: 0,0:50:00.91,0:50:05.67,c,,0000,0000,0000,,来吧 站起来打啊 你这个发抖的废物\N{\re}Come on, get up and fight, you shivering junkyard.
+Dialogue: 0,0:50:05.96,0:50:08.79,c,,0000,0000,0000,,把手举起来 你这个草包袋\N{\re}Put your hands up, you lopsided bag of hay.
+Dialogue: 0,0:50:08.96,0:50:10.55,c,,0000,0000,0000,,你这是人身攻击 狮子\N{\re}That's getting personal, Lion.
+Dialogue: 0,0:50:11.30,0:50:13.63,c,,0000,0000,0000,,对 起来教训它一顿\N{\re}Yes, get up and teach him a lesson.
+Dialogue: 0,0:50:13.80,0:50:16.22,c,,0000,0000,0000,,你去教训他不更好吗\N{\re}What's wrong with you teaching him?
+Dialogue: 0,0:50:16.38,0:50:18.35,c,,0000,0000,0000,,我几乎不认识他\N{\re}Well, I hardly know him.
+Dialogue: 0,0:50:20.31,0:50:22.14,c,,0000,0000,0000,,不管怎样我都会抓到你 小家伙\N{\re}Well, I'll get you anyway, peewee.
+Dialogue: 0,0:50:32.69,0:50:33.74,c,,0000,0000,0000,,你真不要脸\N{\re}Shame on you.
+Dialogue: 0,0:50:35.11,0:50:38.03,c,,0000,0000,0000,,你为什么打我 我又没咬它\N{\re}What did you do that for? I didn't bite him.
+Dialogue: 0,0:50:38.20,0:50:40.12,c,,0000,0000,0000,,不 你想去咬啊\N{\re}No, but you tried to.
+Dialogue: 0,0:50:40.28,0:50:44.00,c,,0000,0000,0000,,捉弄稻草人已经够差劲了 又想吓我可怜的小狗...\N{\re}It's bad enough picking on a straw man, but picking on poor little dogs...
+Dialogue: 0,0:50:44.16,0:50:47.79,c,,0000,0000,0000,,那你也不必打我啊 是吧\N{\re}Well, you didn't have to go and hit me, did you?
+Dialogue: 0,0:50:48.42,0:50:50.13,c,,0000,0000,0000,,我的鼻子流血了吗\N{\re}Is my nose bleeding?
+Dialogue: 0,0:50:50.29,0:50:52.71,c,,0000,0000,0000,,当然没有\N{\re}Well, of course not.
+Dialogue: 0,0:50:54.17,0:50:56.59,c,,0000,0000,0000,,我的天 你可真会小题大做\N{\re}My goodness, what a fuss you're making.
+Dialogue: 0,0:50:56.76,0:51:01.10,c,,0000,0000,0000,,你当然会到处找比你弱的东西...\N{\re}Well, naturally, when you go around picking on things weaker than you are...
+Dialogue: 0,0:51:01.26,0:51:03.01,c,,0000,0000,0000,,原来你不过是个胆小鬼\N{\re}You're nothing but a big coward.
+Dialogue: 0,0:51:03.18,0:51:05.64,c,,0000,0000,0000,,你说对了 我是个胆小鬼\N{\re}You're right, I am a coward.
+Dialogue: 0,0:51:06.77,0:51:09.19,c,,0000,0000,0000,,我一点胆量都没有\N{\re}I haven't any courage at all.
+Dialogue: 0,0:51:09.35,0:51:12.11,c,,0000,0000,0000,,我甚至害怕自己\N{\re}I even scare myself.
+Dialogue: 0,0:51:12.94,0:51:15.07,c,,0000,0000,0000,,你看我的黑眼圈\N{\re}Look at the circles under my eyes.
+Dialogue: 0,0:51:15.24,0:51:17.03,c,,0000,0000,0000,,我已经好几个周没睡觉了\N{\re}I haven't slept in weeks.
+Dialogue: 0,0:51:17.20,0:51:19.16,c,,0000,0000,0000,,你为什么不试试数羊呢\N{\re}Why don't you try counting sheep?
+Dialogue: 0,0:51:19.32,0:51:22.99,c,,0000,0000,0000,,那没用 我连羊都怕\N{\re}That doesn't do any good. I'm afraid of them.
+Dialogue: 0,0:51:23.87,0:51:26.12,c,,0000,0000,0000,,太可怜了\N{\re}Oh, that's too bad.
+Dialogue: 0,0:51:26.58,0:51:29.00,c,,0000,0000,0000,,你不觉得魔法师可以帮他吗\N{\re}Don't you think the Wizard could help him too?
+Dialogue: 0,0:51:29.17,0:51:31.25,c,,0000,0000,0000,,我想没什么不可以的\N{\re}I don't see why not.
+Dialogue: 0,0:51:31.42,0:51:32.79,c,,0000,0000,0000,,跟我们一起去\N{\re}Come along with us.
+Dialogue: 0,0:51:32.96,0:51:36.50,c,,0000,0000,0000,,我们正要去见魔法师 给他一颗心\N{\re}We're on our way to see the Wizard. To get him a heart.
+Dialogue: 0,0:51:36.50,0:51:39.22,c,,0000,0000,0000,,-还有他的头脑 -他可以给你点胆量\N{\re}- And him a brain. - He could give you some courage.
+Dialogue: 0,0:51:39.97,0:51:44.81,c,,0000,0000,0000,,有个胆小的狮子陪伴 你会不会觉得丢脸\N{\re}Wouldn't you feel degraded to be seen in the company of a cowardly lion?
+Dialogue: 0,0:51:44.97,0:51:46.52,c,,0000,0000,0000,,我会\N{\re}I would.
+Dialogue: 0,0:51:47.06,0:51:48.98,c,,0000,0000,0000,,不 当然不会\N{\re}No, of course not.
+Dialogue: 0,0:51:49.52,0:51:53.11,c,,0000,0000,0000,,你们太好了\N{\re}Gee, that's awfully nice of you.
+Dialogue: 0,0:51:53.27,0:51:56.94,c,,0000,0000,0000,,-我的生活让人难以忍受 -噢\N{\re}- My life has been simply unbearable. - Oh.
+Dialogue: 0,0:51:57.11,0:51:59.15,c,,0000,0000,0000,,好了 现在没事了\N{\re}Well, it's all right now.
+Dialogue: 0,0:51:59.32,0:52:01.66,c,,0000,0000,0000,,魔法师会解决所有问题\N{\re}The Wizard'll fix everything.
+Dialogue: 0,0:52:01.82,0:52:04.66,c,,0000,0000,0000,,它在我心里已经很久了\N{\re}It's been in me so long.
+Dialogue: 0,0:52:04.83,0:52:07.12,c,,0000,0000,0000,,我只想告诉你我内心的感受\N{\re}I just gotta tell you how I feel.
+Dialogue: 0,0:52:07.75,0:52:09.16,c,,0000,0000,0000,,那我们走吧\N{\re}Well, come on.
+Dialogue: 0,0:52:09.83,0:52:12.21,g,,0000,0000,0000,,相信我 这很可悲 小姐\N{\rq}Yeah, it's sad, Believe me, missy
+Dialogue: 0,0:52:12.38,0:52:14.04,g,,0000,0000,0000,,当你生来就胆小如鼠时\N{\rq}When you're born to be a sissy
+Dialogue: 0,0:52:14.21,0:52:16.92,g,,0000,0000,0000,,没有活力和激情\N{\rq}Without the vim and verve
+Dialogue: 0,0:52:17.88,0:52:21.80,g,,0000,0000,0000,,我可以证明我的勇猛是狮子 不是老鼠\N{\rq}But I could show my prowess Be a lion, not a mouse
+Dialogue: 0,0:52:21.97,0:52:24.72,g,,0000,0000,0000,,只要我有胆量\N{\rq}If I only had the nerve
+Dialogue: 0,0:52:25.68,0:52:29.93,g,,0000,0000,0000,,恐怕没有人否认 我是一只雄狮\N{\rq}I'm afraid there's no denyin' I'm just a dandy lion
+Dialogue: 0,0:52:30.10,0:52:32.65,g,,0000,0000,0000,,可怜造化弄人\N{\rq}A fate I don't deserve
+Dialogue: 0,0:52:33.69,0:52:37.61,g,,0000,0000,0000,,-我会意气风发 -我会温柔有心\N{\rq}- I'd be brave as a blizzard - I'd be gentle as a lizard
+Dialogue: 0,0:52:37.78,0:52:39.61,g,,0000,0000,0000,,我会足智多谋\N{\rq}I'd be clever as a gizzard
+Dialogue: 0,0:52:39.78,0:52:45.07,g,,0000,0000,0000,,只要魔法师愿意使出法力\N{\rq}If the Wizard is a wizard Who will serve
+Dialogue: 0,0:52:45.24,0:52:47.08,g,,0000,0000,0000,,那我就能得到头脑\N{\rq}Then I'm sure to get a brain
+Dialogue: 0,0:52:47.24,0:52:49.20,g,,0000,0000,0000,,-一个心 -回家\N{\rq}- A heart - A home
+Dialogue: 0,0:52:49.37,0:52:50.87,g,,0000,0000,0000,,有胆量\N{\rq}The nerve!
+Dialogue: 0,0:52:51.29,0:52:52.87,g,,0000,0000,0000,,哦\N{\rq}Oh
+Dialogue: 0,0:52:53.04,0:52:56.29,g,,0000,0000,0000,,我们一起去见魔法师 绿野仙境里伟大的法师\N{\rq}We're off to see the Wizard The wonderful Wizard of Oz
+Dialogue: 0,0:52:56.46,0:53:00.05,g,,0000,0000,0000,,听说他是前所未有 法师中的法师\N{\rq}We hear he is a whiz of a wiz If ever a wiz there was
+Dialogue: 0,0:53:00.22,0:53:03.26,g,,0000,0000,0000,,如果世上有伟大的法师存在 绿野仙境法师就是\N{\rq}If ever, oh ever a wiz there was The Wizard of Oz is one because
+Dialogue: 0,0:53:03.43,0:53:06.76,g,,0000,0000,0000,,因为 因为 因为 因为 因为\N{\rq}Because, because, because Because, because
+Dialogue: 0,0:53:06.93,0:53:09.97,g,,0000,0000,0000,,因为他做了许多奇妙的事情\N{\rq}Because of the wonderful things he does
+Dialogue: 0,0:53:10.43,0:53:15.44,g,,0000,0000,0000,,我们一起去见魔法师 绿野仙境里伟大的法师\N{\rq}We're off to see the Wizard The wonderful Wizard of Oz
+Dialogue: 0,0:53:23.20,0:53:25.74,c,,0000,0000,0000,,看来你们是不听从警告\N{\re}So you won't take warning, eh?
+Dialogue: 0,0:53:25.91,0:53:27.74,c,,0000,0000,0000,,那么就要大难临头\N{\re}All the worse for you, then.
+Dialogue: 0,0:53:27.91,0:53:31.62,c,,0000,0000,0000,,我现在就来收拾你们 而不是以后\N{\re}I'll take care of you now instead of later.
+Dialogue: 0,0:53:34.46,0:53:36.71,c,,0000,0000,0000,,等我得到那双红宝石仙鞋\N{\re}When I gain those ruby slippers...
+Dialogue: 0,0:53:36.88,0:53:40.26,c,,0000,0000,0000,,我的法力就是绿野仙境最强大的\N{\re}...my power will be the greatest in Oz.
+Dialogue: 0,0:53:41.13,0:53:43.42,c,,0000,0000,0000,,现在 小美人...\N{\re}And now, my beauties...
+Dialogue: 0,0:53:43.59,0:53:46.80,c,,0000,0000,0000,,这是有毒的东西\N{\re}...something with poison in it, I think.
+Dialogue: 0,0:53:46.97,0:53:49.14,c,,0000,0000,0000,,里面有毒\N{\re}With poison in it.
+Dialogue: 0,0:53:49.31,0:53:53.48,c,,0000,0000,0000,,但看着非常迷人 舒缓的气味\N{\re}But attractive to the eye and soothing to the smell.
+Dialogue: 0,0:53:56.31,0:53:58.11,c,,0000,0000,0000,,罂粟花\N{\re}Poppies.
+Dialogue: 0,0:53:58.36,0:54:00.57,c,,0000,0000,0000,,罂粟花\N{\re}Poppies.
+Dialogue: 0,0:54:00.73,0:54:04.15,c,,0000,0000,0000,,罂粟花会让他们入睡\N{\re}Poppies will put them to sleep.
+Dialogue: 0,0:54:04.32,0:54:06.45,c,,0000,0000,0000,,睡吧\N{\re}Sleep...
+Dialogue: 0,0:54:06.61,0:54:10.41,c,,0000,0000,0000,,现在他们要睡觉了\N{\re}Now they'll sleep.
+Dialogue: 0,0:54:39.27,0:54:40.86,c,,0000,0000,0000,,那就是翡翠城\N{\re}There's Emerald City.
+Dialogue: 0,0:54:41.02,0:54:44.69,c,,0000,0000,0000,,我们终于快到了\N{\re}Oh, we're almost there. At last. At last.
+Dialogue: 0,0:54:44.86,0:54:48.91,c,,0000,0000,0000,,它很漂亮 对不对 就像我想的那样\N{\re}It's beautiful, isn't it? Just like I knew it would be.
+Dialogue: 0,0:54:49.07,0:54:52.29,c,,0000,0000,0000,,能住在那么美的城市里 一定是个了不起的魔法师\N{\re}He really must be a wonderful wizard to live in a city like that.
+Dialogue: 0,0:54:52.54,0:54:54.45,c,,0000,0000,0000,,走啊 我们还等什么\N{\re}Come on, what are we waiting for?
+Dialogue: 0,0:54:54.62,0:54:57.75,c,,0000,0000,0000,,-很好 我们快走 -对 我们跑吧\N{\re}- Nothing. Let's hurry. - Yes, let's run.
+Dialogue: 0,0:55:02.34,0:55:04.63,c,,0000,0000,0000,,-快点 快点 -快 快\N{\re}- Come on. Come on. - Hurry. Hurry.
+Dialogue: 0,0:55:08.72,0:55:10.43,c,,0000,0000,0000,,你看\N{\re}Oh, look.
+Dialogue: 0,0:55:10.60,0:55:12.76,c,,0000,0000,0000,,快来 快来\N{\re}Come on. Come on.
+Dialogue: 0,0:55:12.93,0:55:15.14,c,,0000,0000,0000,,看这景色 太美了\N{\re}Look at the scenery. It's wonderful.
+Dialogue: 0,0:55:15.31,0:55:16.85,c,,0000,0000,0000,,翡翠城\N{\re}Emerald City.
+Dialogue: 0,0:55:21.15,0:55:24.07,c,,0000,0000,0000,,怎么回事\N{\re}Oh. What's happening?
+Dialogue: 0,0:55:24.23,0:55:25.99,c,,0000,0000,0000,,为什么\N{\re}What is it?
+Dialogue: 0,0:55:26.19,0:55:28.32,c,,0000,0000,0000,,我跑不动了\N{\re}I can't run anymore.
+Dialogue: 0,0:55:28.49,0:55:31.74,c,,0000,0000,0000,,-我太困了 -把你的手给我们 我们拉着你走\N{\re}- I'm so sleepy. - Give us your hands and we'll pull you.
+Dialogue: 0,0:55:31.91,0:55:35.37,c,,0000,0000,0000,,不 请不要 我得休息一下\N{\re}Oh, no, please. I have to rest for just a minute.
+Dialogue: 0,0:55:35.54,0:55:38.08,c,,0000,0000,0000,,托托 托托在哪里\N{\re}Toto. Where's Toto?
+Dialogue: 0,0:55:38.29,0:55:40.71,c,,0000,0000,0000,,你现在不能休息 我们快到了\N{\re}You can't rest now. We're nearly there.
+Dialogue: 0,0:55:43.21,0:55:45.38,c,,0000,0000,0000,,别哭了 你会再次生锈的\N{\re}Don't cry. You'll rust yourself again.
+Dialogue: 0,0:55:45.55,0:55:49.47,c,,0000,0000,0000,,想想看 眨四十下眼睛打个盹也不错\N{\re}Coming to think of it, forty winks wouldn't be bad.
+Dialogue: 0,0:55:49.63,0:55:52.30,c,,0000,0000,0000,,-你不要也开始这样 -别\N{\re}- Don't you start it too. - No.
+Dialogue: 0,0:55:52.47,0:55:54.06,c,,0000,0000,0000,,我们应该背着多萝西\N{\re}We ought to carry Dorothy.
+Dialogue: 0,0:55:54.22,0:55:56.27,c,,0000,0000,0000,,我可能不行 但可以试试\N{\re}I don't think I could, but we could try.
+Dialogue: 0,0:55:56.43,0:55:58.39,c,,0000,0000,0000,,-好 -对\N{\re}- Let's. - Yes.
+Dialogue: 0,0:55:58.94,0:56:03.36,c,,0000,0000,0000,,-你看他 太糟糕了 -来 锡人 帮帮我\N{\re}- Now look at him. This is terrible. - Here, Tin Man, help me.
+Dialogue: 0,0:56:05.36,0:56:08.15,c,,0000,0000,0000,,太可怕了 我一点也挪不动她\N{\re}Oh, this is terrible. I can't budge her an inch.
+Dialogue: 0,0:56:08.32,0:56:09.95,c,,0000,0000,0000,,这是个魔法 这是...\N{\re}This is a spell, this is.
+Dialogue: 0,0:56:10.11,0:56:13.07,c,,0000,0000,0000,,是那个坏女巫干的 我们该怎么办\N{\re}It's the Wicked Witch. What'll we do?
+Dialogue: 0,0:56:13.24,0:56:16.39,c,,0000,0000,0000,,救命\N{\re}Help! Help!
+Dialogue: 0,0:56:16.40,0:56:18.04,c,,0000,0000,0000,,在这种时候喊叫是没有用的\N{\re}It's no use screaming at a time like this.
+Dialogue: 0,0:56:18.20,0:56:21.17,c,,0000,0000,0000,,没有人会听见 救命啊\N{\re}Nobody will hear you! Help! Help!
+Dialogue: 0,0:56:21.37,0:56:23.38,c,,0000,0000,0000,,救命\N{\re}Help!
+Dialogue: 0,0:56:27.21,0:56:28.67,c,,0000,0000,0000,,下起雪来了\N{\re}It's snowing.
+Dialogue: 0,0:56:30.22,0:56:32.51,c,,0000,0000,0000,,不会吧\N{\re}No, it isn't.
+Dialogue: 0,0:56:32.93,0:56:35.26,c,,0000,0000,0000,,是下雪了\N{\re}Yes, it is.
+Dialogue: 0,0:56:35.64,0:56:37.27,c,,0000,0000,0000,,也许这会有用\N{\re}Maybe that'll help.
+Dialogue: 0,0:56:38.22,0:56:40.39,c,,0000,0000,0000,,但这也没用\N{\re}Oh, but it couldn't help.
+Dialogue: 0,0:56:41.06,0:56:45.40,c,,0000,0000,0000,,确实有用 多萝西 你醒来了\N{\re}It does help. Dorothy, you're waking up.
+Dialogue: 0,0:56:45.94,0:56:48.15,c,,0000,0000,0000,,哦哦\N{\re}Oh. Oh.
+Dialogue: 0,0:56:51.65,0:56:54.49,c,,0000,0000,0000,,这种天气很不寻常 不是吗\N{\re}Unusual weather we're having, ain't it?
+Dialogue: 0,0:56:55.12,0:56:58.29,c,,0000,0000,0000,,看 他又生锈了\N{\re}Look. He's rusted again.
+Dialogue: 0,0:56:58.87,0:57:02.71,c,,0000,0000,0000,,-快把油壶给我 -给你 天哪\N{\re}- Oh, give me the oilcan, quick. - Here. Oh, dear.
+Dialogue: 0,0:57:02.87,0:57:04.21,c,,0000,0000,0000,,-他又锈住了 -这里\N{\re}- He is rusted. - Here.
+Dialogue: 0,0:57:04.38,0:57:08.09,c,,0000,0000,0000,,-给你 -快点\N{\re}- Here. - Quick. Oh. Oh.
+Dialogue: 0,0:57:08.25,0:57:09.80,c,,0000,0000,0000,,该死 该死\N{\re}Curses! Curses!
+Dialogue: 0,0:57:09.96,0:57:12.26,c,,0000,0000,0000,,总是有人帮助那女孩\N{\re}Somebody always helps that girl.
+Dialogue: 0,0:57:14.30,0:57:18.18,c,,0000,0000,0000,,但不管是否鞋 我都有足够的力量征服她\N{\re}But shoes or no shoes, I'm still great enough to conquer her.
+Dialogue: 0,0:57:18.35,0:57:19.85,c,,0000,0000,0000,,那些阻止我的人灾难临头了\N{\re}And woe to those who try to stop me.
+Dialogue: 0,0:57:20.18,0:57:22.56,c,,0000,0000,0000,,来吧 我们离开这里\N{\re}Come on, let's get out of here.
+Dialogue: 0,0:57:22.73,0:57:25.06,c,,0000,0000,0000,,看 翡翠城比以往更近更漂亮\N{\re}Look. Emerald City is closer and prettier than ever.
+Dialogue: 0,0:57:25.23,0:57:27.02,g,,0000,0000,0000,,你已经走出了森林\N{\rq}You're out of the woods
+Dialogue: 0,0:57:27.19,0:57:29.61,g,,0000,0000,0000,,你走出了黑暗 你走出了夜晚\N{\rq}You're out of the dark You're out of the night
+Dialogue: 0,0:57:29.78,0:57:33.65,g,,0000,0000,0000,,踏进阳光 踏入光明\N{\rq}Step into the sun Step into the light
+Dialogue: 0,0:57:33.82,0:57:36.95,g,,0000,0000,0000,,直接向前 朝着光荣之地\N{\rq}Keep straight ahead for The most glorious place
+Dialogue: 0,0:57:37.12,0:57:41.70,g,,0000,0000,0000,,不论在地上或是在天上\N{\rq}On the face of the earth Or the sky
+Dialogue: 0,0:57:41.87,0:57:43.66,g,,0000,0000,0000,,保持你的呼吸 握住你的心\N{\rq}Hold on to your breath Hold on to your heart
+Dialogue: 0,0:57:43.83,0:57:45.88,g,,0000,0000,0000,,坚守你的希望\N{\rq}Hold on to your hope
+Dialogue: 0,0:57:46.04,0:57:49.05,g,,0000,0000,0000,,向大门走去 将它打开\N{\rq}March up to the gate And bid it open
+Dialogue: 0,0:57:54.84,0:57:58.30,c,,0000,0000,0000,,去翡翠城 快如闪电\N{\re}To the Emerald City, as fast as lightning.
+Dialogue: 0,0:58:08.40,0:58:10.19,g,,0000,0000,0000,,你已经走出了森林\N{\rq}You're out of the woods
+Dialogue: 0,0:58:10.36,0:58:12.65,g,,0000,0000,0000,,你走出了黑暗 你走出了夜晚\N{\rq}You're out of the dark You're out of the night
+Dialogue: 0,0:58:12.82,0:58:14.74,g,,0000,0000,0000,,踏进阳光 踏入光明\N{\rq}Step into the sun Step into the light
+Dialogue: 0,0:58:14.90,0:58:17.62,g,,0000,0000,0000,,向大门走去 将它打开\N{\rq}March up to the gate And bid it
+Dialogue: 0,0:58:17.78,0:58:19.70,g,,0000,0000,0000,,打开\N{\rq}Open
+Dialogue: 0,0:58:19.91,0:58:21.83,g,,0000,0000,0000,,打开\N{\rq}Open
+Dialogue: 0,0:58:27.08,0:58:29.13,c,,0000,0000,0000,,谁敲的钟\N{\re}Who rang that bell?
+Dialogue: 0,0:58:29.29,0:58:31.21,c,,0000,0000,0000,,-是我们 -你们不识字吗\N{\re}- We did. - Can't you read?
+Dialogue: 0,0:58:31.38,0:58:33.63,c,,0000,0000,0000,,-识什么字 -公告啊\N{\re}- Read what? - The notice.
+Dialogue: 0,0:58:33.80,0:58:35.68,c,,0000,0000,0000,,-什么公告 -在门上的\N{\re}- What notice? - It's on the door.
+Dialogue: 0,0:58:35.88,0:58:39.30,c,,0000,0000,0000,,就像我脸上的鼻子一样明显\N{\re}As plain as the nose on my face.
+Dialogue: 0,0:58:39.51,0:58:40.85,c,,0000,0000,0000,,哦... 嗯...\N{\re}Oh... Uh...
+Dialogue: 0,0:58:41.18,0:58:43.52,c,,0000,0000,0000,,哦 啧 啧 啧\N{\re}Oh. Tsk, tsk, tsk.
+Dialogue: 0,0:58:45.33,0:58:51.86,t,,0000,0000,0000,,{\fs13\move(216,190,216,120)\fay-0.4\t(\fay0.1)\c&H006F975D\bord1\shad0}钟\N\N坏了\N\N请敲门
+Dialogue: 0,0:58:47.85,0:58:51.86,c,,0000,0000,0000,,"钟坏了 请敲门"\N{\re}"Bell out of order. Please knock."
+Dialogue: 0,0:58:53.44,0:58:55.82,c,,0000,0000,0000,,好 这才像话\N{\re}Well. That's more like it.
+Dialogue: 0,0:58:55.99,0:58:57.82,c,,0000,0000,0000,,现在 说说你们有什么事\N{\re}Now, state your business.
+Dialogue: 0,0:58:57.99,0:59:00.62,c,,0000,0000,0000,,我们要见魔法师\N{\re}We wanna see the Wizard.
+Dialogue: 0,0:59:01.70,0:59:03.45,c,,0000,0000,0000,,魔法师\N{\re}The Wizard?
+Dialogue: 0,0:59:03.62,0:59:06.21,c,,0000,0000,0000,,但是没有人能见魔法师\N{\re}But nobody can see the great Oz.
+Dialogue: 0,0:59:06.37,0:59:10.59,c,,0000,0000,0000,,没人见过魔法师 甚至我也没见过他\N{\re}Nobody's ever seen the great Oz. Even I've never seen him.
+Dialogue: 0,0:59:10.75,0:59:13.25,c,,0000,0000,0000,,那你怎么知道有他的存在\N{\re}Well, then, how do you know there is one?
+Dialogue: 0,0:59:13.55,0:59:15.42,c,,0000,0000,0000,,因为他...\N{\re}Because he's--
+Dialogue: 0,0:59:15.59,0:59:19.18,c,,0000,0000,0000,,你们在浪费我的时间\N{\re}Oh! You're wasting my time.
+Dialogue: 0,0:59:19.34,0:59:23.35,c,,0000,0000,0000,,求你 求求你 先生 我必须要见魔法师\N{\re}Oh, please. Please, sir. I've got to see the Wizard.
+Dialogue: 0,0:59:23.51,0:59:26.89,c,,0000,0000,0000,,-北方的好女巫派我来的 -证明给我看\N{\re}- The Good Witch of the North sent me. - Prove it.
+Dialogue: 0,0:59:27.10,0:59:30.31,c,,0000,0000,0000,,她穿的红宝石仙鞋就是她送的\N{\re}She's wearing the ruby slippers that she gave her.
+Dialogue: 0,0:59:33.48,0:59:38.49,c,,0000,0000,0000,,果然是真的 真是有眼不识泰山\N{\re}Oh! So she is. Well, bust my buttons.
+Dialogue: 0,0:59:38.65,0:59:41.12,c,,0000,0000,0000,,为什么你不早说呢\N{\re}Why didn't you say that in the first place?
+Dialogue: 0,0:59:41.28,0:59:43.53,c,,0000,0000,0000,,那就是另一回事了\N{\re}That's a horse of a different color.
+Dialogue: 0,0:59:43.70,0:59:46.20,c,,0000,0000,0000,,进来吧\N{\re}Come on in.
+Dialogue: 0,0:59:57.30,0:59:58.80,c,,0000,0000,0000,,马车 马车\N{\re}Cabby. Cabby.
+Dialogue: 0,0:59:58.97,1:00:02.89,c,,0000,0000,0000,,这正是你们要找的 我会带你们去城里的任何地方\N{\re}Just what you're looking for. Take you any place in the city, we does.
+Dialogue: 0,1:00:03.22,1:00:08.14,c,,0000,0000,0000,,-你能带我们去见魔法师吗 -魔法师 我不能\N{\re}- Would you take us to see the Wizard? - The Wizard? I can't--
+Dialogue: 0,1:00:09.48,1:00:12.56,c,,0000,0000,0000,,当然可以 但我先要带你们去一个小地方\N{\re}Yes, of course. But first I'll take you to a little place...
+Dialogue: 0,1:00:12.73,1:00:16.57,c,,0000,0000,0000,,-你们可以梳理一下 -太谢谢你了\N{\re}...where you can tidy up a bit. - Oh, thank you so much.
+Dialogue: 0,1:00:16.73,1:00:21.49,c,,0000,0000,0000,,我们走了好久的路 感觉身上很脏乱\N{\re}We've been gone such a long time, and we feel so mess--
+Dialogue: 0,1:00:21.82,1:00:26.08,c,,0000,0000,0000,,这是什么马 我从没见过这样的马\N{\re}What kind of a horse is that? I've never seen a horse like that before.
+Dialogue: 0,1:00:26.24,1:00:30.21,c,,0000,0000,0000,,以后也看不见了 这是独一无二的马\N{\re}No, and never will again, I fancy. There's only one of him, and he's it.
+Dialogue: 0,1:00:30.37,1:00:34.04,c,,0000,0000,0000,,它就是你听说过的不同颜色的马\N{\re}He's the horse of a different color you've heard tell about.
+Dialogue: 0,1:00:34.50,1:00:36.21,g,,0000,0000,0000,,哈 哈 哈 呵 呵 呵\N{\rq}Ha-ha-ha! Ho-ho-ho!
+Dialogue: 0,1:00:36.38,1:00:38.26,g,,0000,0000,0000,,还有一对啦啦啦\N{\rq}And a couple of tra-la-las
+Dialogue: 0,1:00:38.42,1:00:42.72,g,,0000,0000,0000,,这就是我们在绿野仙境里的欢乐时光\N{\rq}That's how we laugh the day away In the merry old land of Oz
+Dialogue: 0,1:00:42.89,1:00:44.55,g,,0000,0000,0000,,吱 吱 吱 恰 恰 恰\N{\rq}Bzz, bzz, bzz! Chirp, chirp, chirp!
+Dialogue: 0,1:00:44.72,1:00:46.60,g,,0000,0000,0000,,还有一对啦啦啦\N{\rq}And a couple of la-di-das
+Dialogue: 0,1:00:46.76,1:00:50.56,g,,0000,0000,0000,,这就是我们在绿野仙境里喧闹的时光\N{\rq}That's how the crickets crick all day In the merry old land of Oz
+Dialogue: 0,1:00:50.73,1:00:54.77,g,,0000,0000,0000,,我们在十二点起床 一点开始工作\N{\rq}We get up at twelve And start to work at one
+Dialogue: 0,1:00:54.94,1:00:58.07,g,,0000,0000,0000,,花一小时吃午饭 在两点吃完饭\N{\rq}Take an hour for lunch And then at two we're done
+Dialogue: 0,1:00:58.23,1:00:59.28,g,,0000,0000,0000,,真好玩\N{\rq}Jolly good fun!
+Dialogue: 0,1:00:59.44,1:01:01.07,g,,0000,0000,0000,,哈 哈 哈 呵 呵 呵\N{\rq}Ha-ha-ha! Ho-ho-ho!
+Dialogue: 0,1:01:01.24,1:01:03.20,g,,0000,0000,0000,,还有一对啦啦啦\N{\rq}And a couple of tra-la-las
+Dialogue: 0,1:01:03.36,1:01:07.41,g,,0000,0000,0000,,这就是我们在绿野仙境里的欢乐时光\N{\rq}That's how we laugh the day away In the merry old land of Oz
+Dialogue: 0,1:01:07.58,1:01:09.58,g,,0000,0000,0000,,哈 哈 哈 呵 呵 呵\N{\rq}Ha-ha-ha! Ho-ho-ho!
+Dialogue: 0,1:01:09.75,1:01:11.37,g,,0000,0000,0000,,哈 哈 哈 哈 哈\N{\rq}Ha-ha-ha-ha-ha!
+Dialogue: 0,1:01:11.54,1:01:13.75,g,,0000,0000,0000,,我们就这样欢乐的笑着度过一天\N{\rq}That's how we laugh the day away With a
+Dialogue: 0,1:01:11.70,1:01:18.00,t,,0000,0000,0000,,{\fn华文楷体\fs25\t(25,\fs34)\fsp5\3a&H96&\4a&H00&\move(170,60,195,115)\1c&H9B7C6E&\3c&H556E79&\4c&H4D405B&\b0\fad(100,400}洗&刷  公司
+Dialogue: 0,1:01:13.92,1:01:15.63,g,,0000,0000,0000,,呵 呵 呵 哈 哈 哈\N{\rq}Ho-ho-ho! Ha-ha-ha!
+Dialogue: 0,1:01:15.79,1:01:17.96,g,,0000,0000,0000,,在这欢乐的绿野仙境里\N{\rq}In the merry old land of Oz
+Dialogue: 0,1:01:18.13,1:01:19.88,g,,0000,0000,0000,,-补补这里 -补补那里\N{\rq}- Pat, pat here - Pat, pat there
+Dialogue: 0,1:01:20.05,1:01:21.92,g,,0000,0000,0000,,加上一些全新的稻草\N{\rq}And a couple of brand-new straws
+Dialogue: 0,1:01:22.09,1:01:26.47,g,,0000,0000,0000,,这是让你在欢乐的绿野仙境里保持年轻好看\N{\rq}That's how we keep you young and fair In the merry old land of Oz
+Dialogue: 0,1:01:26.64,1:01:28.60,g,,0000,0000,0000,,-擦擦这里 -擦擦那里\N{\rq}- Rub, rub here - Rub, rub there
+Dialogue: 0,1:01:28.76,1:01:30.43,g,,0000,0000,0000,,不管你是锡或铜\N{\rq}Whether you're tin or bronze
+Dialogue: 0,1:01:30.60,1:01:34.35,g,,0000,0000,0000,,这是我们帮你在欢乐的绿野仙境里修补完整\N{\rq}That's how we keep you in repair In the merry old land of Oz
+Dialogue: 0,1:01:34.52,1:01:38.57,g,,0000,0000,0000,,我们可以使皱眉变成笑靥\N{\rq}We can make a dimpled smile Out of a frown
+Dialogue: 0,1:01:38.73,1:01:41.32,g,,0000,0000,0000,,你能把我的眼睛染成和衣裙相配的颜色吗\N{\rq}Can you even dye my eyes To match my gown?
+Dialogue: 0,1:01:41.49,1:01:43.70,g,,0000,0000,0000,,-啊哈 -真了不起\N{\rq}- Uh-huh  - Jolly old town!
+Dialogue: 0,1:01:43.70,1:01:45.24,g,,0000,0000,0000,,剪剪这里 剪剪那里\N{\rq}- Clip, clip here - Clip, clip there
+Dialogue: 0,1:01:45.41,1:01:47.24,g,,0000,0000,0000,,我们做最好的修饰\N{\rq}We give the roughest claws
+Dialogue: 0,1:01:47.41,1:01:51.73,g,,0000,0000,0000,,在欢乐的绿野仙境中 充满智慧才干的气氛\N{\rq}That certain air of savoir-faire In the merry old land of Oz
+Dialogue: 0,1:01:51.74,1:01:53.84,g,,0000,0000,0000,,哈 哈 哈 呵 呵 呵\N{\rq}Ha-ha-ha! Ho-ho-ho!
+Dialogue: 0,1:01:54.03,1:01:55.55,g,,0000,0000,0000,,-哈 哈 哈 -哈\N{\rq}- Ha-ha-ha! - Ha
+Dialogue: 0,1:01:55.62,1:01:59.46,g,,0000,0000,0000,,这就是我们在绿野仙境里的欢乐时光\N{\rq}That's how we laugh the day away In the merry old land of Oz
+Dialogue: 0,1:01:59.63,1:02:01.46,g,,0000,0000,0000,,我们就这样欢乐的笑着度过一天\N{\rq}That's how we laugh the day away With a
+Dialogue: 0,1:02:01.67,1:02:07.60,g,,0000,0000,0000,,-哈 哈 哈 -哈 哈 哈\N{\rq}- Ha-ha-ha! - Ha-ha-ha!
+Dialogue: 0,1:02:07.60,1:02:10.10,g,,0000,0000,0000,,在这欢乐的绿野仙境里\N{\rq}In the merry old land of Oz
+Dialogue: 0,1:02:28.03,1:02:29.62,c,,0000,0000,0000,,她是谁\N{\re}Who's her? Who's her?
+Dialogue: 0,1:02:29.78,1:02:32.58,c,,0000,0000,0000,,是坏女巫 她跟着我们来了\N{\re}It's the witch. She's followed us here.
+Dialogue: 0,1:02:32.75,1:02:35.00,c,,0000,0000,0000,,"投降吧 多萝西 "\N{\re}"Surrender, Dorothy."
+Dialogue: 0,1:02:36.50,1:02:38.17,c,,0000,0000,0000,,多萝西 谁是多萝西\N{\re}Dorothy? Who's Dorothy?
+Dialogue: 0,1:02:38.33,1:02:41.09,c,,0000,0000,0000,,-魔法师会解释的 -去问魔法师\N{\re}- The Wizard will explain it. - To the Wizard.
+Dialogue: 0,1:02:41.30,1:02:43.51,c,,0000,0000,0000,,我们该怎么办\N{\re}Dear. Whatever shall we do?
+Dialogue: 0,1:02:43.67,1:02:46.47,c,,0000,0000,0000,,我们得快去见魔法师\N{\re}We better hurry if we're gonna see the Wizard.
+Dialogue: 0,1:02:48.26,1:02:51.72,c,,0000,0000,0000,,好了 没事了 一切都没问题了\N{\re}Here. Here, here. Everything is all right.
+Dialogue: 0,1:02:51.89,1:02:53.72,c,,0000,0000,0000,,别慌 继续...\N{\re}Stop that now, just--
+Dialogue: 0,1:02:53.89,1:02:56.39,c,,0000,0000,0000,,没事了 一切都没问题了\N{\re}It's all right. Everything is all right.
+Dialogue: 0,1:02:56.56,1:03:01.02,c,,0000,0000,0000,,伟大和法力无边的魔法师 已经控制局面了\N{\re}The great and powerful Oz has got matters well in hand.
+Dialogue: 0,1:03:01.19,1:03:02.53,c,,0000,0000,0000,,希望如此\N{\re}I hope.
+Dialogue: 0,1:03:02.69,1:03:06.03,c,,0000,0000,0000,,你们都可以回家了 没什么好担心的\N{\re}So you can all go home. There's nothing to worry about.
+Dialogue: 0,1:03:06.20,1:03:09.62,c,,0000,0000,0000,,离开这里 现在回家去吧\N{\re}Get out of here. Now go on. Go on home.
+Dialogue: 0,1:03:09.99,1:03:11.66,c,,0000,0000,0000,,回家吧\N{\re}Go home.
+Dialogue: 0,1:03:12.37,1:03:15.58,c,,0000,0000,0000,,我们想马上见到魔法师 我们四个人都要\N{\re}We want to see the Wizard right away. All four of us.
+Dialogue: 0,1:03:15.75,1:03:20.46,c,,0000,0000,0000,,命令是 没人能见伟大的魔法师 没人 绝不允许\N{\re}Orders are, nobody can see the great Oz. Not nobody, not nohow.
+Dialogue: 0,1:03:20.63,1:03:23.21,c,,0000,0000,0000,,但是求求你 很重要的事\N{\re}But, please. It's very important.
+Dialogue: 0,1:03:23.38,1:03:25.59,c,,0000,0000,0000,,为了见魔法师我弄了个烫发\N{\re}I got a permanent just for the occasion.
+Dialogue: 0,1:03:25.76,1:03:28.34,c,,0000,0000,0000,,任何人都不行\N{\re}Not nobody, not nohow!
+Dialogue: 0,1:03:28.51,1:03:29.93,c,,0000,0000,0000,,但她就是多萝西\N{\re}But she's Dorothy.
+Dialogue: 0,1:03:30.51,1:03:33.18,c,,0000,0000,0000,,是女巫指的多萝西\N{\re}The witch's Dorothy?
+Dialogue: 0,1:03:34.35,1:03:36.14,c,,0000,0000,0000,,嗯 这就不一样了\N{\re}Well, that makes a difference.
+Dialogue: 0,1:03:36.31,1:03:41.40,c,,0000,0000,0000,,就在这里等着 我马上通知你们\N{\re}Just wait here. I'll announce you at once.
+Dialogue: 0,1:03:45.15,1:03:47.61,c,,0000,0000,0000,,你听到没 他会马上通知我们\N{\re}Did you hear that? He'll announce us at once.
+Dialogue: 0,1:03:47.78,1:03:50.99,c,,0000,0000,0000,,-我马上就能得到我的头脑了 -我几乎听到我的心跳了\N{\re}- I've as good as got my brain. - I can fairly hear my heart beating.
+Dialogue: 0,1:03:51.16,1:03:52.49,c,,0000,0000,0000,,我能赶回家吃晚餐\N{\re}I'll be home for supper.
+Dialogue: 0,1:03:52.66,1:03:55.29,c,,0000,0000,0000,,再过一个小时 我就是森林之王\N{\re}In another hour, I'll be king of the forest.
+Dialogue: 0,1:03:55.83,1:03:58.25,c,,0000,0000,0000,,国王万岁\N{\re}Long live the king.
+Dialogue: 0,1:04:05.88,1:04:11.01,g,,0000,0000,0000,,如果我是森林之王\N{\rq}If I were king of the forest
+Dialogue: 0,1:04:11.18,1:04:12.68,g,,0000,0000,0000,,不是王后\N{\rq}Not queen
+Dialogue: 0,1:04:12.85,1:04:14.31,g,,0000,0000,0000,,不是公爵\N{\rq}Not duke
+Dialogue: 0,1:04:14.47,1:04:16.72,g,,0000,0000,0000,,不是王子\N{\rq}Not prince
+Dialogue: 0,1:04:17.14,1:04:21.48,g,,0000,0000,0000,,我的堂堂森林王袍\N{\rq}My regal robes of the forest
+Dialogue: 0,1:04:21.69,1:04:23.06,g,,0000,0000,0000,,将是缎子\N{\rq}Would be satin
+Dialogue: 0,1:04:23.23,1:04:24.77,g,,0000,0000,0000,,不是棉料\N{\rq}Not cotton
+Dialogue: 0,1:04:24.94,1:04:27.94,g,,0000,0000,0000,,不是印花棉布\N{\rq}Not chintz
+Dialogue: 0,1:04:28.11,1:04:31.74,g,,0000,0000,0000,,我会发号命令 不论是对鱼还是鸟\N{\rq}I'd command each thing Be it fish or fowl
+Dialogue: 0,1:04:31.91,1:04:33.20,g,,0000,0000,0000,,都是一声吼叫\N{\rq}With a woof!
+Dialogue: 0,1:04:33.37,1:04:34.70,g,,0000,0000,0000,,都是一声吼叫\N{\rq}And a woof!
+Dialogue: 0,1:04:34.87,1:04:37.95,g,,0000,0000,0000,,一声皇家咆哮\N{\rq}And a royal growl
+Dialogue: 0,1:04:39.87,1:04:42.42,g,,0000,0000,0000,,当我动一下脚跟 所有的树都会跪下\N{\rq}As I'd click my heel All the trees would kneel
+Dialogue: 0,1:04:42.58,1:04:47.30,g,,0000,0000,0000,,群山低头公牛叩首\N{\rq}And the mountains bow And the bulls kowtow
+Dialogue: 0,1:04:48.38,1:04:54.80,g,,0000,0000,0000,,麻雀们就会展翅飞翔\N{\rq}And the sparrow would take wing
+Dialogue: 0,1:04:54.97,1:04:56.64,g,,0000,0000,0000,,如果我\N{\rq}If I
+Dialogue: 0,1:04:56.81,1:05:02.81,g,,0000,0000,0000,,如果我是国王\N{\rq}If I were king
+Dialogue: 0,1:05:03.44,1:05:07.19,g,,0000,0000,0000,,每只兔子都会向我致敬\N{\rq}Each rabbit would show respect to me
+Dialogue: 0,1:05:07.36,1:05:10.90,g,,0000,0000,0000,,花栗鼠们向我跪拜\N{\rq}The chipmunks genuflect to me
+Dialogue: 0,1:05:11.07,1:05:12.82,g,,0000,0000,0000,,尽管我的尾巴会鞭策我\N{\rq}Though my tail would lash
+Dialogue: 0,1:05:12.99,1:05:14.74,g,,0000,0000,0000,,我仍会显示\N{\rq}I would show compash
+Dialogue: 0,1:05:14.91,1:05:18.95,g,,0000,0000,0000,,我仍会慈悲的对待每个下属\N{\rq}For every underling
+Dialogue: 0,1:05:19.12,1:05:21.04,g,,0000,0000,0000,,如果我\N{\rq}If I
+Dialogue: 0,1:05:21.21,1:05:25.50,g,,0000,0000,0000,,如果我是国王\N{\rq}If I were king
+Dialogue: 0,1:05:26.34,1:05:31.88,g,,0000,0000,0000,,就是国王\N{\rq}Just king
+Dialogue: 0,1:06:02.29,1:06:07.75,g,,0000,0000,0000,,我所知道的君主\N{\rq}Monarch of all I survey
+Dialogue: 0,1:06:07.96,1:06:13.17,g,,0000,0000,0000,,君主\N{\rq}Monarch
+Dialogue: 0,1:06:13.34,1:06:18.64,g,,0000,0000,0000,,我所知道的\N{\rq}Of all I survey
+Dialogue: 0,1:06:21.06,1:06:23.56,c,,0000,0000,0000,,如果你是国王 你就什么都不怕了吗\N{\re}If you were king, you wouldn't be afraid of anything?
+Dialogue: 0,1:06:23.73,1:06:26.81,c,,0000,0000,0000,,不怕 全都不怕\N{\re}Not nobody, not nohow!
+Dialogue: 0,1:06:26.98,1:06:29.44,c,,0000,0000,0000,,-连犀牛也不怕 -绝不怕\N{\re}- Not even a rhinoceros? - Imposserous.
+Dialogue: 0,1:06:29.61,1:06:33.44,c,,0000,0000,0000,,-连河马也不怕 -我会把它敲碎\N{\re}- How about a hippopotamus? - I'd trash him from top to "bottom-us."
+Dialogue: 0,1:06:33.61,1:06:36.91,c,,0000,0000,0000,,-如果你遇到大象呢 -我会用"玻璃纸"把它包起来\N{\re}- Supposing you met an elephant? - I'd wrap him up in "cello-phant".
+Dialogue: 0,1:06:37.07,1:06:40.70,c,,0000,0000,0000,,-那么雷龙呢 -我会让它知道谁是森林之王\N{\re}- What if it were a brontosaurus? - I'd show him who's king of the forest.
+Dialogue: 0,1:06:40.87,1:06:43.16,c,,0000,0000,0000,,-怎么做 -怎么做\N{\re}- How? - How?
+Dialogue: 0,1:06:43.91,1:06:45.04,c,,0000,0000,0000,,勇气\N{\re}Courage.
+Dialogue: 0,1:06:45.21,1:06:48.21,c,,0000,0000,0000,,是什么让奴隶变成国王 勇气\N{\re}What makes a king out of a slave? Courage.
+Dialogue: 0,1:06:48.38,1:06:52.71,c,,0000,0000,0000,,是什么让桅杆上的旗子飘扬 勇气\N{\re}What makes the flag on the mast to wave? Courage.
+Dialogue: 0,1:06:52.88,1:06:54.92,c,,0000,0000,0000,,是什么让大象高高举它的长牙\N{\re}What makes the elephant charge his tusk...
+Dialogue: 0,1:06:55.09,1:06:58.51,c,,0000,0000,0000,,是在迷雾或是在昏暗的暮色\N{\re}...in the misty mist or the dusky dusk?
+Dialogue: 0,1:06:58.68,1:07:03.47,c,,0000,0000,0000,,是什么让麝鼠守卫他的麝香 勇气\N{\re}What makes the muskrat guard his musk? Courage.
+Dialogue: 0,1:07:03.64,1:07:06.64,c,,0000,0000,0000,,是什么使狮身人面像成为世界七大奇迹 勇气\N{\re}What makes the sphinx the Seventh Wonder? Courage.
+Dialogue: 0,1:07:06.81,1:07:11.40,c,,0000,0000,0000,,是什么让黎明像雷声一样出现 勇气\N{\re}What makes the dawn come up like thunder? Courage.
+Dialogue: 0,1:07:11.57,1:07:13.48,c,,0000,0000,0000,,是什么让蛮族人这么火热\N{\re}What makes the Hottentot so hot?
+Dialogue: 0,1:07:13.65,1:07:15.86,c,,0000,0000,0000,,是什么让"人猿"敢爬上杏树\N{\re}What puts the "ape" in apricot?
+Dialogue: 0,1:07:16.03,1:07:18.57,c,,0000,0000,0000,,是什么东西他们有而我没有\N{\re}What have they got that I ain't got?
+Dialogue: 0,1:07:18.74,1:07:21.70,c,,0000,0000,0000,,-勇气 -说得好\N{\re}- Courage. - You can say that again.
+Dialogue: 0,1:07:22.74,1:07:23.83,c,,0000,0000,0000,,嗯\N{\re}Huh?
+Dialogue: 0,1:07:25.54,1:07:28.79,c,,0000,0000,0000,,魔法师叫你们走开\N{\re}The Wizard says go away.
+Dialogue: 0,1:07:33.84,1:07:36.22,c,,0000,0000,0000,,走开\N{\re}Go away?
+Dialogue: 0,1:07:36.38,1:07:39.80,c,,0000,0000,0000,,看来我们走了这么远 却一无所获\N{\re}Looks like we came a long way for nothing.
+Dialogue: 0,1:07:41.43,1:07:44.14,c,,0000,0000,0000,,我刚刚还那么高兴\N{\re}And I was so happy.
+Dialogue: 0,1:07:44.31,1:07:46.39,c,,0000,0000,0000,,我还以为我可以马上回家了\N{\re}I thought I was on my way home.
+Dialogue: 0,1:07:46.56,1:07:49.23,c,,0000,0000,0000,,别哭 我们会带你去找魔法师\N{\re}Don't cry. We're gonna get you to the Wizard.
+Dialogue: 0,1:07:49.40,1:07:51.77,c,,0000,0000,0000,,我们一定会\N{\re}We certainly are.
+Dialogue: 0,1:07:52.40,1:07:54.27,c,,0000,0000,0000,,艾姆婶婶对我那么好...\N{\re}Auntie Em was so good to me...
+Dialogue: 0,1:07:54.44,1:07:56.69,c,,0000,0000,0000,,我却从来没有感激过\N{\re}...and I never appreciated it.
+Dialogue: 0,1:07:56.86,1:08:00.16,c,,0000,0000,0000,,反而跑掉 伤她的心\N{\re}Running away and hurting her feelings.
+Dialogue: 0,1:08:00.53,1:08:03.49,c,,0000,0000,0000,,马维尔教授说她病了\N{\re}Professor Marvel said she was sick.
+Dialogue: 0,1:08:03.91,1:08:05.62,c,,0000,0000,0000,,她可能快死了\N{\re}She may be dying...
+Dialogue: 0,1:08:05.79,1:08:07.75,c,,0000,0000,0000,,都是我的错\N{\re}...and it's all my fault.
+Dialogue: 0,1:08:10.83,1:08:13.54,c,,0000,0000,0000,,我绝对不会原谅自己\N{\re}I'll never forgive myself.
+Dialogue: 0,1:08:13.71,1:08:16.51,c,,0000,0000,0000,,绝对不会 不会\N{\re}Never, never, never.
+Dialogue: 0,1:08:19.84,1:08:22.85,c,,0000,0000,0000,,请别再哭了\N{\re}Please don't cry anymore.
+Dialogue: 0,1:08:23.01,1:08:26.22,c,,0000,0000,0000,,我会想办法让你见到魔法师\N{\re}I'll get you into the Wizard somehow.
+Dialogue: 0,1:08:26.39,1:08:30.48,c,,0000,0000,0000,,来吧 我自己也有个艾姆婶婶\N{\re}Come on. I had an Aunt Em myself once.
+Dialogue: 0,1:08:50.87,1:08:52.33,c,,0000,0000,0000,,等一下 伙伴们\N{\re}Wait a minute, fellas.
+Dialogue: 0,1:08:52.50,1:08:56.30,c,,0000,0000,0000,,我只是在想 我没那么想见魔法师\N{\re}I was just thinking, I really don't want to see the Wizard this much.
+Dialogue: 0,1:08:56.46,1:08:58.46,c,,0000,0000,0000,,我最好在外面等你们\N{\re}I better wait for you outside.
+Dialogue: 0,1:08:58.63,1:09:01.47,c,,0000,0000,0000,,-你怎么啦 -他只是又害怕了\N{\re}- What's the matter? - He's just scared again.
+Dialogue: 0,1:09:01.63,1:09:04.14,c,,0000,0000,0000,,你忘了魔法师会给你勇气吗\N{\re}Don't you know the Wizard will give you courage?
+Dialogue: 0,1:09:04.30,1:09:07.60,c,,0000,0000,0000,,我太害怕了 不敢向他要\N{\re}I'd be too scared to ask him for it.
+Dialogue: 0,1:09:07.76,1:09:09.98,c,,0000,0000,0000,,那我们替你找他要\N{\re}Well, then, we'll ask him for you.
+Dialogue: 0,1:09:10.14,1:09:12.31,c,,0000,0000,0000,,我还是在外面等吧\N{\re}I'd sooner wait outside.
+Dialogue: 0,1:09:12.48,1:09:14.27,c,,0000,0000,0000,,为什么\N{\re}Why? Why?
+Dialogue: 0,1:09:14.44,1:09:17.94,c,,0000,0000,0000,,因为我还是很胆小\N{\re}Because I'm still scared.
+Dialogue: 0,1:09:21.65,1:09:25.03,c,,0000,0000,0000,,-发生了什么事 -有人拉我的尾巴\N{\re}- What happened? - Somebody pulled my tail.
+Dialogue: 0,1:09:25.20,1:09:27.37,c,,0000,0000,0000,,-你自己拉的 -我\N{\re}- You did it yourself. - I...
+Dialogue: 0,1:09:27.58,1:09:29.04,c,,0000,0000,0000,,哦 这里\N{\re}Oh. Here.
+Dialogue: 0,1:09:29.37,1:09:31.00,c,,0000,0000,0000,,来吧\N{\re}Come on.
+Dialogue: 0,1:09:34.17,1:09:36.84,c,,0000,0000,0000,,向前走\N{\re}Come forward.
+Dialogue: 0,1:09:37.00,1:09:39.09,c,,0000,0000,0000,,结束的时候告诉我\N{\re}Tell me when it's over.
+Dialogue: 0,1:09:49.93,1:09:51.68,c,,0000,0000,0000,,你们看 你们看\N{\re}Look at that. Look at that.
+Dialogue: 0,1:09:55.94,1:09:58.57,c,,0000,0000,0000,,我要回去\N{\re}I wanna go home.
+Dialogue: 0,1:09:59.02,1:10:02.15,c,,0000,0000,0000,,我是魔法师\N{\re}I am Oz...
+Dialogue: 0,1:10:02.32,1:10:05.20,c,,0000,0000,0000,,伟大法力无边的\N{\re}...the great and powerful.
+Dialogue: 0,1:10:05.36,1:10:07.53,c,,0000,0000,0000,,你们是谁\N{\re}Who are you?
+Dialogue: 0,1:10:08.66,1:10:10.58,c,,0000,0000,0000,,你们是谁\N{\re}Who are you?
+Dialogue: 0,1:10:16.04,1:10:17.38,c,,0000,0000,0000,,对不起\N{\re}If you please...
+Dialogue: 0,1:10:17.54,1:10:20.09,c,,0000,0000,0000,,我是多萝西\N{\re}...I am Dorothy...
+Dialogue: 0,1:10:20.25,1:10:23.01,c,,0000,0000,0000,,卑微又温顺\N{\re}...the small and meek.
+Dialogue: 0,1:10:23.88,1:10:25.55,c,,0000,0000,0000,,我们特地来求你\N{\re}We've come to ask you--
+Dialogue: 0,1:10:25.76,1:10:27.51,c,,0000,0000,0000,,-安静 -哦\N{\re}- Silence! - Oh!
+Dialogue: 0,1:10:28.05,1:10:30.31,c,,0000,0000,0000,,哦 好吓人\N{\re}Oh! Jiminy crickets.
+Dialogue: 0,1:10:30.47,1:10:33.27,c,,0000,0000,0000,,伟大法力无比的魔法师\N{\re}The great and powerful Oz...
+Dialogue: 0,1:10:33.43,1:10:36.44,c,,0000,0000,0000,,知道你们为何而来\N{\re}...knows why you have come.
+Dialogue: 0,1:10:36.60,1:10:38.69,c,,0000,0000,0000,,向前一步\N{\re}Step forward...
+Dialogue: 0,1:10:38.86,1:10:40.77,c,,0000,0000,0000,,锡人\N{\re}...Tin Man.
+Dialogue: 0,1:10:45.99,1:10:50.16,c,,0000,0000,0000,,你敢来找我要颗心 是吗\N{\re}You dare to come to me for a heart, do you?
+Dialogue: 0,1:10:50.33,1:10:53.16,c,,0000,0000,0000,,你这叮当作响的\N{\re}You clinking, clanking, clattering...
+Dialogue: 0,1:10:53.37,1:10:57.00,c,,0000,0000,0000,,一堆废物组合 无用的东西\N{\re}...collection of caliginous junk.
+Dialogue: 0,1:10:59.71,1:11:01.55,c,,0000,0000,0000,,是 先生\N{\re}Yes, sir.
+Dialogue: 0,1:11:01.71,1:11:03.13,c,,0000,0000,0000,,是 阁下\N{\re}Yes, Your Honor.
+Dialogue: 0,1:11:03.30,1:11:04.76,c,,0000,0000,0000,,你看\N{\re}You see...
+Dialogue: 0,1:11:04.92,1:11:08.43,c,,0000,0000,0000,,不久前 当我们走在黄砖路上时 然后...\N{\re}...a while back, we were walking down the Yellow Brick Road and--
+Dialogue: 0,1:11:08.59,1:11:10.01,c,,0000,0000,0000,,安静\N{\re}Quiet!
+Dialogue: 0,1:11:12.43,1:11:14.64,c,,0000,0000,0000,,而你 稻草人\N{\re}And you, Scarecrow...
+Dialogue: 0,1:11:14.81,1:11:18.15,c,,0000,0000,0000,,厚颜无耻地想要头脑\N{\re}...have the effrontery to ask for a brain...
+Dialogue: 0,1:11:18.31,1:11:23.07,c,,0000,0000,0000,,你这滚动的一捆牛饲料\N{\re}...you billowing bale of bovine fodder.
+Dialogue: 0,1:11:24.23,1:11:26.40,c,,0000,0000,0000,,是的 法官大人 我是说 大人\N{\re}Yes, Your Honor. I mean, Your Excellency.
+Dialogue: 0,1:11:26.57,1:11:28.82,c,,0000,0000,0000,,我是说 法师大人\N{\re}I mean, Your Wizardry.
+Dialogue: 0,1:11:28.99,1:11:30.70,c,,0000,0000,0000,,够了\N{\re}Enough.
+Dialogue: 0,1:11:31.49,1:11:33.62,c,,0000,0000,0000,,还有你 狮子\N{\re}And you, Lion.
+Dialogue: 0,1:11:39.58,1:11:41.67,c,,0000,0000,0000,,嗯\N{\re}Well?
+Dialogue: 0,1:11:47.51,1:11:49.97,c,,0000,0000,0000,,你应该为自己感到羞耻\N{\re}You ought to be ashamed of yourself...
+Dialogue: 0,1:11:50.14,1:11:53.22,c,,0000,0000,0000,,他来找你帮忙 你却这样吓唬他\N{\re}...frightening him like that when he came to you for help.
+Dialogue: 0,1:11:53.39,1:11:56.02,c,,0000,0000,0000,,安静 自以为是的家伙\N{\re}Silence, whippersnapper.
+Dialogue: 0,1:11:56.18,1:12:01.56,c,,0000,0000,0000,,仁慈的魔法师愿意答应你们的请求\N{\re}The beneficent Oz has every intention of granting your requests.
+Dialogue: 0,1:12:01.73,1:12:05.15,c,,0000,0000,0000,,什么 他说什么 嗯 他说什么\N{\re}What's that? What'd he say? Huh? What'd he say?
+Dialogue: 0,1:12:05.36,1:12:08.78,c,,0000,0000,0000,,但你们必须先完成个小任务\N{\re}But first, you must prove yourselves worthy...
+Dialogue: 0,1:12:08.95,1:12:12.74,c,,0000,0000,0000,,来证明自己的价值\N{\re}...by performing a very small task.
+Dialogue: 0,1:12:13.70,1:12:17.41,c,,0000,0000,0000,,把西方女巫的扫帚拿来\N{\re}Bring me the broomstick of the Witch of the West.
+Dialogue: 0,1:12:17.58,1:12:20.71,c,,0000,0000,0000,,但如果我们要拿到 必须杀了她才行\N{\re}But if we do that, we'll have to kill her to get it.
+Dialogue: 0,1:12:20.87,1:12:23.34,c,,0000,0000,0000,,把她的扫帚给我...\N{\re}Bring me her broomstick...
+Dialogue: 0,1:12:23.50,1:12:26.51,c,,0000,0000,0000,,我就会满足你们的请求\N{\re}...and I'll grant your requests.
+Dialogue: 0,1:12:26.67,1:12:29.30,c,,0000,0000,0000,,现在滚吧\N{\re}Now go.
+Dialogue: 0,1:12:29.47,1:12:31.76,c,,0000,0000,0000,,如果她先杀了我们呢\N{\re}But what if she kills us first?
+Dialogue: 0,1:12:31.93,1:12:33.22,c,,0000,0000,0000,,我叫你们滚\N{\re}I said go!
+Dialogue: 0,1:13:02.40,1:13:09.47,t,,0000,0000,0000,,{\fs22\bord0\shad5\move(190,300,190,140)\c&HB4BC96&\4c&H4B4734&\frz-40\fax0.5}鬼魂森林\N女巫城堡\N☜一英里
+Dialogue: 0,1:13:03.86,1:13:09.47,t,,0000,0000,0000,,{\fs22\bord0\shad5\move(80,300,80,240)\c&HB4BC96&\4c&H4B4734&}如果我是你\N我就回去!
+Dialogue: 0,1:13:19.10,1:13:23.40,c,,0000,0000,0000,,"如果我是你 我就回去"\N{\re}"I'd turn back if I were you."
+Dialogue: 0,1:13:53.51,1:13:56.09,c,,0000,0000,0000,,我相信这附近有幽灵\N{\re}I believe there's spooks around here.
+Dialogue: 0,1:13:56.26,1:13:59.60,c,,0000,0000,0000,,太荒谬了 哪来的幽灵 太傻了\N{\re}That's ridiculous. Spooks. That's silly.
+Dialogue: 0,1:13:59.77,1:14:02.06,c,,0000,0000,0000,,你不相信有幽灵吗\N{\re}Don't you believe in spooks?
+Dialogue: 0,1:14:02.23,1:14:04.48,c,,0000,0000,0000,,不是 只是...哦\N{\re}No. Why, only-- Oh!
+Dialogue: 0,1:14:13.28,1:14:15.24,c,,0000,0000,0000,,你没事吧\N{\re}Are you all right?
+Dialogue: 0,1:14:15.41,1:14:19.28,c,,0000,0000,0000,,我相信有幽灵 我相信有幽灵 我信 我信 我信 我信\N{\re}I do believe in spooks. I do believe in spooks. I do, I do, I do, I do.
+Dialogue: 0,1:14:19.62,1:14:24.12,c,,0000,0000,0000,,我相信有幽灵 我相信有幽灵 我信 我信 我信 我信\N{\re}I do believe in spooks. I do believe in spooks. I do, I do, I do, I do, I do, I do.
+Dialogue: 0,1:14:25.67,1:14:29.09,c,,0000,0000,0000,,在我和你玩够之前 你会相信更多\N{\re}You'll believe in more than that before I'm finished with you.
+Dialogue: 0,1:14:31.30,1:14:34.17,c,,0000,0000,0000,,带上你的军队 把那女孩和她的狗带给我\N{\re}Take your army and bring me that girl and her dog.
+Dialogue: 0,1:14:34.34,1:14:37.64,c,,0000,0000,0000,,你可以随意处置其他人 但我要她活着毫发无伤\N{\re}Do what you like with the others, but I want her alive and unharmed.
+Dialogue: 0,1:14:37.80,1:14:40.31,c,,0000,0000,0000,,我保证他们不会给你惹麻烦\N{\re}They'll give you no trouble. I promise you that.
+Dialogue: 0,1:14:40.47,1:14:44.56,c,,0000,0000,0000,,我派了一些小昆虫到前面去把他们赶走\N{\re}I've sent a little insect on ahead to take the fight out of them.
+Dialogue: 0,1:14:45.27,1:14:49.15,c,,0000,0000,0000,,对那双仙鞋要特别小心 那是我最想到的东西\N{\re}Take special care of those slippers. I want those most of all.
+Dialogue: 0,1:14:49.31,1:14:51.02,c,,0000,0000,0000,,现在 飞 飞吧\N{\re}Now, fly! Fly!
+Dialogue: 0,1:14:51.19,1:14:53.74,c,,0000,0000,0000,,把那个女孩和她的仙鞋带来\N{\re}Bring me that girl and her slippers.
+Dialogue: 0,1:14:53.90,1:14:56.78,c,,0000,0000,0000,,飞啊 飞啊 飞啊\N{\re}Fly! Fly! Fly!
+Dialogue: 0,1:15:25.43,1:15:27.56,c,,0000,0000,0000,,救命 救命\N{\re}Help! Help!
+Dialogue: 0,1:15:27.98,1:15:29.65,c,,0000,0000,0000,,快走开\N{\re}Go away now!
+Dialogue: 0,1:15:31.98,1:15:35.03,c,,0000,0000,0000,,托托 托托 救命\N{\re}Toto! Toto! Help!
+Dialogue: 0,1:15:50.00,1:15:52.96,c,,0000,0000,0000,,救命 救命 救命\N{\re}Help! Help! Help!
+Dialogue: 0,1:15:53.13,1:15:54.46,c,,0000,0000,0000,,你怎么了\N{\re}What happened to you?
+Dialogue: 0,1:15:54.63,1:15:56.97,c,,0000,0000,0000,,他们把我的腿扯下来扔在那里\N{\re}They tore my legs off and threw them over there.
+Dialogue: 0,1:15:57.13,1:15:59.72,c,,0000,0000,0000,,然后他们把我的胸部扔到那里\N{\re}Then they took my chest and threw it over there.
+Dialogue: 0,1:15:59.89,1:16:01.22,c,,0000,0000,0000,,到处都是你\N{\re}That's you all over.
+Dialogue: 0,1:16:01.39,1:16:03.39,c,,0000,0000,0000,,他们肯定把你打得够呛\N{\re}They sure knocked the stuffings out of you.
+Dialogue: 0,1:16:03.56,1:16:07.10,c,,0000,0000,0000,,别站在那看 快把我装起来 我们必须找到多萝西\N{\re}Don't stand there. Put me together. We've got to find Dorothy.
+Dialogue: 0,1:16:07.27,1:16:08.77,c,,0000,0000,0000,,现在 让我看看...\N{\re}Now, let's see...
+Dialogue: 0,1:16:11.77,1:16:14.82,c,,0000,0000,0000,,多可爱的小狗\N{\re}What a nice little dog.
+Dialogue: 0,1:16:18.32,1:16:21.99,c,,0000,0000,0000,,而你 亲爱的 真是意外的惊喜\N{\re}And you, my dear. What an unexpected pleasure.
+Dialogue: 0,1:16:22.16,1:16:26.54,c,,0000,0000,0000,,在我寂寞的时候 你来找我 真是太好了\N{\re}It's so kind of you to visit me in my loneliness.
+Dialogue: 0,1:16:27.95,1:16:30.75,c,,0000,0000,0000,,你想把我的狗怎么样 把它还给我\N{\re}What are you gonna do with my dog? Give him back to me.
+Dialogue: 0,1:16:30.92,1:16:33.38,c,,0000,0000,0000,,等时间到了再说 小美人\N{\re}All in good time, my little pretty.
+Dialogue: 0,1:16:33.54,1:16:37.51,c,,0000,0000,0000,,-一切都来的很及时 -求求你把狗还给我\N{\re}- All in good time. - Please give me back my dog.
+Dialogue: 0,1:16:37.67,1:16:40.01,c,,0000,0000,0000,,当然 当然\N{\re}Certainly, certainly...
+Dialogue: 0,1:16:40.18,1:16:43.14,c,,0000,0000,0000,,当你把仙鞋给我时\N{\re}...when you give me those slippers.
+Dialogue: 0,1:16:43.30,1:16:47.14,c,,0000,0000,0000,,-但是好女巫让我不要给你 -很好\N{\re}- But the Good Witch told me not to. - Very well.
+Dialogue: 0,1:16:47.31,1:16:49.48,c,,0000,0000,0000,,把篮子扔进河里淹死它\N{\re}Throw that basket in the river and drown him.
+Dialogue: 0,1:16:49.64,1:16:53.77,c,,0000,0000,0000,,不 不要 你可以把仙鞋拿去 但托托要还给我\N{\re}No. Here. You can have your old slippers, but give me back Toto.
+Dialogue: 0,1:16:53.94,1:16:55.61,c,,0000,0000,0000,,是个好女孩\N{\re}That's a good little girl.
+Dialogue: 0,1:16:55.77,1:16:58.40,c,,0000,0000,0000,,我就知道你很明智\N{\re}I knew you'd see reason.
+Dialogue: 0,1:17:01.70,1:17:05.12,c,,0000,0000,0000,,对不起 不是我干的 我可以要回我的狗吗\N{\re}I'm sorry. I didn't do it. Can I still have my dog?
+Dialogue: 0,1:17:05.28,1:17:09.62,c,,0000,0000,0000,,不行 我真傻 我应该记得...\N{\re}No! Fool that I am, I should have remembered...
+Dialogue: 0,1:17:09.79,1:17:12.04,c,,0000,0000,0000,,只要你还活着...\N{\re}...those slippers will never come off...
+Dialogue: 0,1:17:12.21,1:17:16.13,c,,0000,0000,0000,,仙鞋就永远脱不下来\N{\re}...as long as you're alive.
+Dialogue: 0,1:17:16.29,1:17:20.13,c,,0000,0000,0000,,但我担心的不是这个 而是如何去做\N{\re}But that's not what's worrying me. It's how to do it.
+Dialogue: 0,1:17:20.30,1:17:22.84,c,,0000,0000,0000,,这些事情必须小心处理...\N{\re}These things must be done delicately...
+Dialogue: 0,1:17:23.43,1:17:25.18,c,,0000,0000,0000,,否则你会伤害咒语\N{\re}...or you hurt the spell.
+Dialogue: 0,1:17:25.89,1:17:29.10,c,,0000,0000,0000,,-快跑 托托 快跑 -抓住它 你这个笨蛋\N{\re}-Run, Toto, run! - Catch him, you fool!
+Dialogue: 0,1:17:38.78,1:17:40.78,c,,0000,0000,0000,,快跑 托托 快跑\N{\re}Run, Toto, run.
+Dialogue: 0,1:17:41.36,1:17:43.61,c,,0000,0000,0000,,快跑 托托 快跑\N{\re}Run, Toto, run.
+Dialogue: 0,1:17:44.49,1:17:47.16,c,,0000,0000,0000,,它逃掉了 它逃掉了\N{\re}He got away. He got away.
+Dialogue: 0,1:17:47.83,1:17:49.87,c,,0000,0000,0000,,那么你会更受苦\N{\re}Which is more than you will.
+Dialogue: 0,1:17:50.04,1:17:51.58,c,,0000,0000,0000,,咒你和你的狗\N{\re}Drat, you and your dog.
+Dialogue: 0,1:17:51.75,1:17:54.42,c,,0000,0000,0000,,你给我添了这么多麻烦\N{\re}You've been more trouble to me than you're worth.
+Dialogue: 0,1:17:54.58,1:17:57.67,c,,0000,0000,0000,,但很快就结束了\N{\re}But it'll soon be over now.
+Dialogue: 0,1:17:59.13,1:18:00.46,c,,0000,0000,0000,,你看到了吗\N{\re}Do you see that?
+Dialogue: 0,1:18:00.63,1:18:03.17,c,,0000,0000,0000,,你只能活这么多久了\N{\re}That's how much longer you've got to be alive.
+Dialogue: 0,1:18:03.34,1:18:06.55,c,,0000,0000,0000,,时间不会太久 小美人 不会太久\N{\re}And it isn't long, my pretty. It isn't long.
+Dialogue: 0,1:18:06.72,1:18:09.51,c,,0000,0000,0000,,我不能永远等着那双鞋\N{\re}I can't wait forever to get those shoes.
+Dialogue: 0,1:18:31.29,1:18:33.37,c,,0000,0000,0000,,我害怕\N{\re}I'm frightened.
+Dialogue: 0,1:18:33.54,1:18:37.33,c,,0000,0000,0000,,我害怕 艾姆婶婶 我害怕\N{\re}I'm frightened, Auntie Em. I'm frightened.
+Dialogue: 0,1:18:39.63,1:18:42.63,c,,0000,0000,0000,,多萝西 多萝西\N{\re}Dorothy. Dorothy.
+Dialogue: 0,1:18:42.80,1:18:46.38,c,,0000,0000,0000,,你在哪里 是我 是艾姆婶婶\N{\re}Where are you? It's me. It's Auntie Em.
+Dialogue: 0,1:18:46.55,1:18:49.72,c,,0000,0000,0000,,我们一直在找你 你在哪里\N{\re}We're trying to find you. Where are you?
+Dialogue: 0,1:18:49.89,1:18:51.93,c,,0000,0000,0000,,我在绿野仙境里 艾姆婶婶\N{\re}I'm here in Oz, Auntie Em.
+Dialogue: 0,1:18:52.10,1:18:54.43,c,,0000,0000,0000,,我被锁在女巫的城堡里\N{\re}I'm locked up in the Witch's castle...
+Dialogue: 0,1:18:54.60,1:18:57.60,c,,0000,0000,0000,,我一直设法回家找你 艾姆婶婶\N{\re}...and I'm trying to get home to you, Auntie Em.
+Dialogue: 0,1:18:58.15,1:19:00.36,c,,0000,0000,0000,,艾姆婶婶 别走开\N{\re}Oh, Auntie Em, don't go away.
+Dialogue: 0,1:19:00.52,1:19:03.90,c,,0000,0000,0000,,我很害怕 回来 回来\N{\re}I'm frightened. Come back. Come back.
+Dialogue: 0,1:19:04.15,1:19:07.16,c,,0000,0000,0000,,"艾姆婶婶 艾姆婶婶 回来"\N{\re}"Auntie Em, Auntie Em. Come back."
+Dialogue: 0,1:19:07.32,1:19:09.87,c,,0000,0000,0000,,我会把艾姆婶婶给你 小美人\N{\re}I'll give you Auntie Em, my pretty.
+Dialogue: 0,1:19:36.39,1:19:40.77,c,,0000,0000,0000,,看 托托来了 他从哪里来的\N{\re}Look. There's Toto. Where'd he come from?
+Dialogue: 0,1:19:41.90,1:19:46.40,c,,0000,0000,0000,,哎 你还不明白吗 他是来带我们去找多萝西\N{\re}Why, don't you see? He's come to take us to Dorothy.
+Dialogue: 0,1:19:47.07,1:19:48.99,c,,0000,0000,0000,,快走 伙伴们\N{\re}Come on, fellas.
+Dialogue: 0,1:20:07.38,1:20:09.43,c,,0000,0000,0000,,我希望我的力量能坚持下去\N{\re}I hope my strength holds out.
+Dialogue: 0,1:20:09.59,1:20:12.30,c,,0000,0000,0000,,希望你的尾巴能撑得住\N{\re}I hope your tail holds out.
+Dialogue: 0,1:20:24.57,1:20:25.90,c,,0000,0000,0000,,那是什么 那是什么\N{\re}What's that? What's that?
+Dialogue: 0,1:20:26.73,1:20:28.86,c,,0000,0000,0000,,那是坏女巫的城堡\N{\re}That's the castle of the Wicked Witch.
+Dialogue: 0,1:20:29.03,1:20:32.70,c,,0000,0000,0000,,-多萝西在那个可怕的地方 -我真不希望她在里面\N{\re}- Dorothy's in that awful place? - I hate to think of her in there.
+Dialogue: 0,1:20:32.87,1:20:35.62,c,,0000,0000,0000,,-我们得把她救出来 -现在别哭\N{\re}- We've got to get her out. - Don't cry now.
+Dialogue: 0,1:20:35.79,1:20:39.16,c,,0000,0000,0000,,我们没带油壶 而你已经够吵的了\N{\re}We haven't got the oilcan, and you've been squeaking enough as it is.
+Dialogue: 0,1:20:39.62,1:20:41.33,c,,0000,0000,0000,,他们是谁 他们是谁\N{\re} Who's them? Who's them?
+Dialogue: 0,1:20:55.64,1:20:59.39,c,,0000,0000,0000,,-我有个进去的办法 -好 他有办法了\N{\re}- I've got a plan how to get in there. - Fine. He's got a plan.
+Dialogue: 0,1:20:59.56,1:21:02.40,c,,0000,0000,0000,,-你要带领我们 -对\N{\re}- And you're gonna lead us. - Yeah.
+Dialogue: 0,1:21:02.56,1:21:04.98,c,,0000,0000,0000,,-我 -对 就是你\N{\re}- Me? - Yes, you.
+Dialogue: 0,1:21:05.44,1:21:08.86,c,,0000,0000,0000,,-我要把她救出来 -没错\N{\re}- I gotta get her out of there? - That's right.
+Dialogue: 0,1:21:09.65,1:21:12.28,c,,0000,0000,0000,,好吧 为了多萝西 我进去\N{\re}All right, I'll go in there for Dorothy.
+Dialogue: 0,1:21:12.45,1:21:14.45,c,,0000,0000,0000,,不管有没有坏女巫...\N{\re}Wicked Witch or no Wicked Witch...
+Dialogue: 0,1:21:14.62,1:21:18.24,c,,0000,0000,0000,,不管有没有警卫 我都要把他们撕成碎片\N{\re}...guards or no guards, I'll tear them apart.
+Dialogue: 0,1:21:18.87,1:21:22.50,c,,0000,0000,0000,,我也许不能活着出来 但我要进去\N{\re}I may not come out alive, but I'm going in there.
+Dialogue: 0,1:21:22.67,1:21:25.08,c,,0000,0000,0000,,我只需要让你们做一件事\N{\re}There's only one thing I want you to do.
+Dialogue: 0,1:21:25.25,1:21:26.54,c,,0000,0000,0000,,-是什么 -是什么\N{\re}- What's that? - What's that?
+Dialogue: 0,1:21:26.71,1:21:29.01,c,,0000,0000,0000,,劝我别这么做\N{\re}Talk me out of it.
+Dialogue: 0,1:21:30.76,1:21:32.09,c,,0000,0000,0000,,-不行 你不能走 -别走\N{\re}- No, you don't. - Oh, no.
+Dialogue: 0,1:21:32.26,1:21:34.05,c,,0000,0000,0000,,-等一下 -上\N{\re}- Now, wait a minute. - Up.
+Dialogue: 0,1:21:51.11,1:21:52.65,c,,0000,0000,0000,,嘘\N{\re}Shh!
+Dialogue: 0,1:22:05.79,1:22:07.25,c,,0000,0000,0000,,嘘 嘘\N{\re}Shh! Shh!
+Dialogue: 0,1:22:11.92,1:22:13.17,c,,0000,0000,0000,,把他们放起来\N{\re}Put 'em up.
+Dialogue: 0,1:22:33.82,1:22:36.16,c,,0000,0000,0000,,来吧 我有另一个办法了\N{\re}Come on, I've got another idea.
+Dialogue: 0,1:22:36.32,1:22:38.99,c,,0000,0000,0000,,你认为这样顺道进去够礼貌吗\N{\re}Do you think it would be polite, dropping in like this?
+Dialogue: 0,1:22:39.16,1:22:41.20,c,,0000,0000,0000,,来吧 来吧\N{\re}Come on. Come on.
+Dialogue: 0,1:23:13.65,1:23:16.11,c,,0000,0000,0000,,-我们现在去哪里 -是啊\N{\re}- Where do we go now? - Yeah.
+Dialogue: 0,1:23:18.53,1:23:19.70,c,,0000,0000,0000,,那边\N{\re}There.
+Dialogue: 0,1:23:29.38,1:23:32.46,c,,0000,0000,0000,,等等 我们最好先确认一下 多萝西 你在里面吗\N{\re}Wait. We better make sure. Dorothy, are you in there?
+Dialogue: 0,1:23:32.63,1:23:34.55,c,,0000,0000,0000,,-是我们 -我在\N{\re}- It's us. - Yes.
+Dialogue: 0,1:23:34.71,1:23:37.68,c,,0000,0000,0000,,是我 我被锁在里面了\N{\re}It's me. She's locked me in.
+Dialogue: 0,1:23:37.84,1:23:40.26,c,,0000,0000,0000,,我们得把她救出来 快开门\N{\re}We gotta get her out. Open the door.
+Dialogue: 0,1:23:40.43,1:23:42.47,c,,0000,0000,0000,,快点 请快点\N{\re}Oh, hurry. Please hurry.
+Dialogue: 0,1:23:42.64,1:23:44.43,c,,0000,0000,0000,,沙漏快流光了\N{\re}The hourglass is almost empty.
+Dialogue: 0,1:23:44.60,1:23:46.23,c,,0000,0000,0000,,往后退\N{\re}Stand back.
+Dialogue: 0,1:24:02.08,1:24:04.70,c,,0000,0000,0000,,托托 托托 狮子\N{\re}Oh, Toto. Toto. Oh, Lion.
+Dialogue: 0,1:24:04.87,1:24:06.91,c,,0000,0000,0000,,-我就知道你们会来 我就知道你们会的 -多萝西\N{\re}- I knew you'd come. I knew you would. - Dorothy.
+Dialogue: 0,1:24:07.08,1:24:09.92,c,,0000,0000,0000,,快走 我们不能再浪费时间了\N{\re}Hurry, we've got no time to lose.
+Dialogue: 0,1:24:21.30,1:24:25.06,c,,0000,0000,0000,,这么快就要走了 我可不愿意\N{\re}Going so soon? I wouldn't hear of it.
+Dialogue: 0,1:24:25.22,1:24:29.27,c,,0000,0000,0000,,我的小派对才刚刚开始\N{\re}Why, my little party's just beginning.
+Dialogue: 0,1:24:29.44,1:24:32.15,c,,0000,0000,0000,,被困了 像老鼠一样被困住\N{\re}Trapped. Trapped like mice...rats.
+Dialogue: 0,1:24:40.82,1:24:43.37,c,,0000,0000,0000,,对了 不要伤害他们\N{\re}That's right. Don't hurt them right away.
+Dialogue: 0,1:24:43.53,1:24:46.16,c,,0000,0000,0000,,我会让他们先考虑一下\N{\re}We'll let them think about it a little first.
+Dialogue: 0,1:24:56.13,1:24:58.38,c,,0000,0000,0000,,抓住他们 抓住他们\N{\re}Seize them! Seize them!
+Dialogue: 0,1:24:58.55,1:25:00.38,c,,0000,0000,0000,,拦住他们 你们这些蠢货\N{\re}Stop them, you fools!
+Dialogue: 0,1:25:00.55,1:25:03.93,c,,0000,0000,0000,,抓住他们 抓住他们\N{\re}Seize them! Seize them!
+Dialogue: 0,1:25:12.85,1:25:14.56,c,,0000,0000,0000,,去找他们 快去找到他们\N{\re}There they go. Now we've got them.
+Dialogue: 0,1:25:14.73,1:25:17.11,c,,0000,0000,0000,,一半人往这边走 一半人往那边走\N{\re}Half of you go this way, half of you go that way.
+Dialogue: 0,1:25:17.32,1:25:18.44,c,,0000,0000,0000,,快 快\N{\re}Hurry. Hurry!
+Dialogue: 0,1:25:26.24,1:25:28.24,c,,0000,0000,0000,,我们现在要往哪里走\N{\re}Where do we go now?
+Dialogue: 0,1:25:28.41,1:25:31.21,c,,0000,0000,0000,,这边走 快点\N{\re}This way. Come on.
+Dialogue: 0,1:25:37.92,1:25:39.13,c,,0000,0000,0000,,回去 退回去\N{\re}Back. Back.
+Dialogue: 0,1:25:57.61,1:25:59.32,c,,0000,0000,0000,,嗯\N{\re}Well.
+Dialogue: 0,1:25:59.48,1:26:02.28,c,,0000,0000,0000,,玫瑰花环周围 一个装满长矛的口袋\N{\re}Ring around the rosie, a pocket full of spears.
+Dialogue: 0,1:26:02.45,1:26:05.16,c,,0000,0000,0000,,你以为你们很聪明 是不是\N{\re}Thought you'd be pretty foxy, didn't you?
+Dialogue: 0,1:26:05.32,1:26:09.45,c,,0000,0000,0000,,最后一个死的 将看到前三个比她先走\N{\re}The last to go will see the first three go before her.
+Dialogue: 0,1:26:11.00,1:26:12.66,c,,0000,0000,0000,,还有她那肮脏的小狗\N{\re}And her mangy little dog too.
+Dialogue: 0,1:26:20.96,1:26:23.34,c,,0000,0000,0000,,来点火怎么样 稻草人\N{\re}How about a little fire, Scarecrow?
+Dialogue: 0,1:26:23.55,1:26:25.34,c,,0000,0000,0000,,别 别 别\N{\re}No! No! No!
+Dialogue: 0,1:26:25.51,1:26:28.93,c,,0000,0000,0000,,救命 我着火了 我着火了 救命\N{\re}Help! I'm burning! I'm burning! It's burning! Help!
+Dialogue: 0,1:26:29.10,1:26:30.56,c,,0000,0000,0000,,别泼水\N{\re}Don't throw that water!
+Dialogue: 0,1:26:33.02,1:26:35.31,c,,0000,0000,0000,,你这天生的扫帚星 看你干的好事\N{\re}You cursed brat! Look what you've done!
+Dialogue: 0,1:26:35.48,1:26:37.98,c,,0000,0000,0000,,我在融化 融化了\N{\re}I'm melting! Melting!
+Dialogue: 0,1:26:38.15,1:26:40.53,c,,0000,0000,0000,,这是什么世界 这是什么世界\N{\re}Oh, what a world! What a world!
+Dialogue: 0,1:26:40.73,1:26:43.15,c,,0000,0000,0000,,谁会想到像你这样的好女孩\N{\re}Who would've thought a good little girl like you...
+Dialogue: 0,1:26:43.32,1:26:46.41,c,,0000,0000,0000,,可以毁灭我美好的邪恶\N{\re}...could destroy my beautiful wickedness?
+Dialogue: 0,1:26:46.57,1:26:49.20,c,,0000,0000,0000,,看啊 看啊\N{\re}Look out! Look out!
+Dialogue: 0,1:26:49.37,1:26:51.41,c,,0000,0000,0000,,我要完了\N{\re}I'm going.
+Dialogue: 0,1:27:06.72,1:27:09.47,c,,0000,0000,0000,,她死了 你杀了她\N{\re}She's dead. You've killed her.
+Dialogue: 0,1:27:09.64,1:27:12.89,c,,0000,0000,0000,,我不是故意要杀她 真的 我不是\N{\re}I didn't mean to kill her. Really, I didn't.
+Dialogue: 0,1:27:13.06,1:27:15.81,c,,0000,0000,0000,,只是因为他着火了\N{\re}It's just that he was on fire.
+Dialogue: 0,1:27:15.98,1:27:18.35,c,,0000,0000,0000,,多萝西万岁 邪恶的女巫死了\N{\re}Hail to Dorothy. The Wicked Witch is dead.
+Dialogue: 0,1:27:18.52,1:27:22.36,c,,0000,0000,0000,,万岁 多萝西万岁 邪恶的女巫死了\N{\re}Hail. Hail to Dorothy. The Wicked Witch is dead.
+Dialogue: 0,1:27:22.53,1:27:23.82,c,,0000,0000,0000,,扫帚\N{\re}The broom.
+Dialogue: 0,1:27:24.03,1:27:26.49,c,,0000,0000,0000,,-可以给我们吗 -请 你可以把它带走\N{\re}- May we have it? - Please. And take it with you.
+Dialogue: 0,1:27:26.65,1:27:29.12,c,,0000,0000,0000,,太感谢你了\N{\re}Oh, thank you so much.
+Dialogue: 0,1:27:29.28,1:27:32.12,c,,0000,0000,0000,,现在我们可以回仙境告诉魔法师 恶女巫已经死了\N{\re}Now we can go tell the Wizard the Wicked Witch is dead.
+Dialogue: 0,1:27:32.29,1:27:33.74,c,,0000,0000,0000,,邪恶的女巫死了\N{\re}The Wicked Witch is dead.
+Dialogue: 0,1:27:33.91,1:27:36.50,c,,0000,0000,0000,,我能相信我的眼睛吗\N{\re}Can I believe my eyes?
+Dialogue: 0,1:27:36.66,1:27:39.75,c,,0000,0000,0000,,你们为什么又回来了\N{\re}Why have you come back?
+Dialogue: 0,1:27:40.84,1:27:43.75,c,,0000,0000,0000,,法师 我们按照你说的完成了\N{\re}Please, sir. We've done what you told us.
+Dialogue: 0,1:27:43.92,1:27:47.17,c,,0000,0000,0000,,我们给你带来了西方恶女巫的扫帚\N{\re}We've brought you the broomstick of the Wicked Witch of the West.
+Dialogue: 0,1:27:47.34,1:27:49.39,c,,0000,0000,0000,,我们融化了她\N{\re}We melted her.
+Dialogue: 0,1:27:49.55,1:27:53.31,c,,0000,0000,0000,,你们把她干掉了\N{\re}Ah, you liquidated her, eh?
+Dialogue: 0,1:27:53.47,1:27:55.47,c,,0000,0000,0000,,-非常机智 -是 法师\N{\re}- Very resourceful. - Yes, sir.
+Dialogue: 0,1:27:55.64,1:27:59.06,c,,0000,0000,0000,,所以我们希望你能信守诺言 法师\N{\re}So we'd like you to keep your promise to us, if you please, sir.
+Dialogue: 0,1:27:59.23,1:28:02.57,c,,0000,0000,0000,,没那么快 没这么快\N{\re}Not so fast. Not so fast!
+Dialogue: 0,1:28:02.73,1:28:05.32,c,,0000,0000,0000,,我得仔细考虑一下这件事\N{\re}I'll have to give the matter a little thought.
+Dialogue: 0,1:28:05.48,1:28:08.53,c,,0000,0000,0000,,走吧 明天再来\N{\re}Go away and come back tomorrow.
+Dialogue: 0,1:28:08.70,1:28:12.91,c,,0000,0000,0000,,明天 但我现在就想回家\N{\re}Tomorrow? Oh, but I wanna go home now.
+Dialogue: 0,1:28:13.08,1:28:16.04,c,,0000,0000,0000,,-你已经有足够的时间考虑 -是啊\N{\re}- You've had plenty of time already. - Yeah.
+Dialogue: 0,1:28:16.20,1:28:20.08,c,,0000,0000,0000,,别激怒伟大法力无边的魔法师\N{\re}Do not arouse the wrath of the great and powerful Oz.
+Dialogue: 0,1:28:20.29,1:28:23.34,c,,0000,0000,0000,,我说了明天再来\N{\re}I said come back tomorrow.
+Dialogue: 0,1:28:23.71,1:28:26.63,c,,0000,0000,0000,,如果你真的伟大法力无边 你就应该信守诺言\N{\re}If you were really great and powerful, you'd keep your promises.
+Dialogue: 0,1:28:26.80,1:28:30.47,c,,0000,0000,0000,,你竟敢指责伟大的魔法师\N{\re}Do you presume to criticize the great Oz?
+Dialogue: 0,1:28:30.64,1:28:33.14,c,,0000,0000,0000,,你们这些忘恩负义的家伙\N{\re}You ungrateful creatures.
+Dialogue: 0,1:28:33.30,1:28:37.06,c,,0000,0000,0000,,你们应该觉得自己很幸运 我明天再见你们\N{\re}Think yourselves lucky that I'm giving you audience tomorrow...
+Dialogue: 0,1:28:37.22,1:28:40.06,c,,0000,0000,0000,,而不是二十年后\N{\re}...instead of 20 years from now.
+Dialogue: 0,1:28:40.23,1:28:41.52,c,,0000,0000,0000,,哦\N{\re}Oh!
+Dialogue: 0,1:28:41.69,1:28:46.11,c,,0000,0000,0000,,伟大的魔法师已经说了\N{\re}The great Oz has spoken. Oh!
+Dialogue: 0,1:28:46.28,1:28:50.07,c,,0000,0000,0000,,别理窗帘后面的那个人\N{\re}Pay no attention to that man behind the curtain.
+Dialogue: 0,1:28:50.24,1:28:53.62,c,,0000,0000,0000,,伟大的魔法师已经说了\N{\re}The great and-- Oz has spoken.
+Dialogue: 0,1:28:53.78,1:28:55.74,c,,0000,0000,0000,,你是谁\N{\re}Who are you?
+Dialogue: 0,1:28:55.91,1:28:59.91,c,,0000,0000,0000,,我是伟大法力无边的绿野仙境魔法师\N{\re}I am the great and powerful Wizard of Oz.
+Dialogue: 0,1:29:00.08,1:29:03.33,c,,0000,0000,0000,,是你 我不相信\N{\re}You are? I don't believe you.
+Dialogue: 0,1:29:03.50,1:29:06.96,c,,0000,0000,0000,,恐怕是真的 除了我没有别的法师\N{\re}I'm afraid it's true. There's no other Wizard except me.
+Dialogue: 0,1:29:07.13,1:29:09.47,c,,0000,0000,0000,,-你这个骗子 -对\N{\re}- You humbug. - Yeah.
+Dialogue: 0,1:29:09.88,1:29:13.14,c,,0000,0000,0000,,对 确实如此 我是个骗子\N{\re}Yes, that's exactly so. I'm a humbug.
+Dialogue: 0,1:29:14.05,1:29:16.26,c,,0000,0000,0000,,你是个很坏的人\N{\re}You're a very bad man.
+Dialogue: 0,1:29:16.47,1:29:19.43,c,,0000,0000,0000,,不 亲爱的 我是个好人\N{\re}Oh, no, my dear. I'm a very good man.
+Dialogue: 0,1:29:19.60,1:29:23.15,c,,0000,0000,0000,,但却是个很差的法师\N{\re}I'm just a very bad wizard.
+Dialogue: 0,1:29:23.48,1:29:25.36,c,,0000,0000,0000,,你答应给锡人的那颗心呢\N{\re}What about the heart you promised Tin Man?
+Dialogue: 0,1:29:25.52,1:29:27.53,c,,0000,0000,0000,,还有你答应给胆小狮子的勇气呢\N{\re}And the courage you promised Cowardly Lion?
+Dialogue: 0,1:29:27.69,1:29:29.61,c,,0000,0000,0000,,-稻草人的头脑呢 -稻草人的头脑呢\N{\re}- And Scarecrow's brain? - And Scarecrow's brain?
+Dialogue: 0,1:29:29.78,1:29:33.70,c,,0000,0000,0000,,每个人都有头脑 这是一种很普通的必备品\N{\re}Why, anybody can have a brain. That's a very mediocre commodity.
+Dialogue: 0,1:29:33.86,1:29:36.74,c,,0000,0000,0000,,每一个在地球上爬行的小生物...\N{\re}Every pusillanimous creature that crawls on the earth...
+Dialogue: 0,1:29:36.99,1:29:40.37,c,,0000,0000,0000,,或是在海洋浮游的小生物都有头脑\N{\re}...or slinks through slimy seas has a brain.
+Dialogue: 0,1:29:40.54,1:29:42.75,c,,0000,0000,0000,,在我的家乡 我们有大学...\N{\re}Back where I come from, we have universities...
+Dialogue: 0,1:29:42.92,1:29:46.29,c,,0000,0000,0000,,伟大的学府 是人们成为伟大思想家的地方\N{\re}...seats of great learning, where men go to become great thinkers.
+Dialogue: 0,1:29:46.50,1:29:50.59,c,,0000,0000,0000,,他们的思想深刻 但头脑并不比你更聪明\N{\re}They think deep thoughts, and with no more brains than you have.
+Dialogue: 0,1:29:50.76,1:29:54.76,c,,0000,0000,0000,,但他们有样你没有的东西 一张文凭\N{\re}But they have one thing you haven't got. A diploma.
+Dialogue: 0,1:29:54.93,1:29:58.97,c,,0000,0000,0000,,因此 凭借我所拥有的职权...\N{\re}Therefore, by virtue of the authority vested in me...
+Dialogue: 0,1:29:59.14,1:30:02.98,c,,0000,0000,0000,,来自普卢里巴斯世界大学的授权\N{\re}Universitatus Committeeatum E Pluribus Unum...
+Dialogue: 0,1:30:03.14,1:30:05.31,c,,0000,0000,0000,,我在此授与你...\N{\re}...I hereby confer upon you...
+Dialogue: 0,1:30:05.48,1:30:10.44,c,,0000,0000,0000,,-荣誉Th.D博士学位 -Th.D是什么\N{\re}- ...the honorary degree of Th.D. - Th.D.?
+Dialogue: 0,1:30:10.65,1:30:12.99,c,,0000,0000,0000,,就是思想学博士\N{\re}That's Doctor of Thinkology.
+Dialogue: 0,1:30:13.24,1:30:15.95,c,,0000,0000,0000,,等腰三角形两边的平方根之和\N{\re}The sum of the square roots of two sides of an isosceles triangle...
+Dialogue: 0,1:30:16.20,1:30:19.08,c,,0000,0000,0000,,等于剩余边的平方根\N{\re}...is equal to the square root of the remaining side.
+Dialogue: 0,1:30:20.33,1:30:22.29,c,,0000,0000,0000,,太高兴了 叫人狂喜\N{\re}Oh, joy. Rapture.
+Dialogue: 0,1:30:22.46,1:30:24.21,c,,0000,0000,0000,,我有头脑了\N{\re}I've got a brain.
+Dialogue: 0,1:30:24.37,1:30:26.67,c,,0000,0000,0000,,-我该怎么感谢你 -不用谢\N{\re}- How can I thank you enough? - Well, you can't.
+Dialogue: 0,1:30:26.83,1:30:30.76,c,,0000,0000,0000,,你是思维混乱的受害者\N{\re}you're a victim of disorganized thinking.
+Dialogue: 0,1:30:30.92,1:30:34.68,c,,0000,0000,0000,,因为你逃避危险而产生的错觉...\N{\re}You are under the delusion that because you run away from danger...
+Dialogue: 0,1:30:34.84,1:30:38.76,c,,0000,0000,0000,,你不是没有勇气 你是把勇气和智慧混淆了\N{\re}...you have no courage. You're confusing courage with wisdom.
+Dialogue: 0,1:30:38.93,1:30:42.89,c,,0000,0000,0000,,在我的家乡 我们有种被称为"英雄"的人\N{\re}Back where I come from, we have men who are called "heroes."
+Dialogue: 0,1:30:43.06,1:30:46.23,c,,0000,0000,0000,,一年一次 他们选出最具坚韧的勇气的人\N{\re}Once a year, they take their fortitude out of mothballs...
+Dialogue: 0,1:30:46.40,1:30:48.65,c,,0000,0000,0000,,然后在大街上游行\N{\re}...and parade it down the main street.
+Dialogue: 0,1:30:48.81,1:30:51.03,c,,0000,0000,0000,,他们的勇气不比你更大\N{\re}And they have no more courage than you have.
+Dialogue: 0,1:30:51.19,1:30:56.28,c,,0000,0000,0000,,但他们有一样你没有的东西 一枚奖章\N{\re}But they have one thing that you haven't got. A medal.
+Dialogue: 0,1:30:56.45,1:30:57.78,c,,0000,0000,0000,,因此\N{\re}Therefore...
+Dialogue: 0,1:30:57.95,1:31:01.54,c,,0000,0000,0000,,为了表扬你杰出的表现 非凡的勇气\N{\re}...for meritorious conduct, extraordinary valor...
+Dialogue: 0,1:31:01.70,1:31:04.83,c,,0000,0000,0000,,勇敢地对抗邪恶的女巫\N{\re}...conspicuous bravery against wicked witches...
+Dialogue: 0,1:31:05.00,1:31:08.25,c,,0000,0000,0000,,我在此授予你 三重十字勋章\N{\re}...I award you the Triple Cross.
+Dialogue: 0,1:31:08.42,1:31:11.05,c,,0000,0000,0000,,你现在是勇气军团的成员了\N{\re}You are now a member of the Legion of Courage.
+Dialogue: 0,1:31:15.59,1:31:17.47,c,,0000,0000,0000,,哎呀 各位 我兴奋的说不出话来了\N{\re}Shucks, folks, I'm speechless.
+Dialogue: 0,1:31:18.64,1:31:22.64,c,,0000,0000,0000,,至于你 我镀锌的朋友 你想要一颗心\N{\re}As for you, my galvanized friend, you want a heart.
+Dialogue: 0,1:31:22.81,1:31:25.43,c,,0000,0000,0000,,你不知道你没有心有多幸运\N{\re}You don't know how lucky you are not to have one.
+Dialogue: 0,1:31:25.60,1:31:29.86,c,,0000,0000,0000,,只有把心变得牢不可破 它才会变得实用\N{\re}Hearts will never be practical until they can be made unbreakable.
+Dialogue: 0,1:31:30.56,1:31:32.78,c,,0000,0000,0000,,但我还是想要一颗\N{\re}But I still want one.
+Dialogue: 0,1:31:33.07,1:31:37.11,c,,0000,0000,0000,,在我的家乡 有些人整天只做好事\N{\re}Back where I come from, there are men who do nothing all day but good deeds.
+Dialogue: 0,1:31:37.28,1:31:39.78,c,,0000,0000,0000,,他们叫做善良...\N{\re}They are called phil--
+Dialogue: 0,1:31:41.03,1:31:44.33,c,,0000,0000,0000,,做好事的人 他们的心并不比你的大\N{\re}Good-deed-doers. And their hearts are no bigger than yours.
+Dialogue: 0,1:31:44.50,1:31:48.71,c,,0000,0000,0000,,但他们有一样你没有的东西 一份证明\N{\re}But they have one thing you haven't got. A testimonial.
+Dialogue: 0,1:31:48.87,1:31:51.67,c,,0000,0000,0000,,因此 考虑到你的善举...\N{\re}Therefore, in consideration of your kindness...
+Dialogue: 0,1:31:51.84,1:31:54.67,c,,0000,0000,0000,,我很荣幸此时给你...\N{\re}...I take pleasure at this time in presenting you...
+Dialogue: 0,1:31:54.84,1:31:58.47,c,,0000,0000,0000,,谨向你献上我们的一点敬意和心意\N{\re}...with a small token of our esteem and affection.
+Dialogue: 0,1:31:58.63,1:32:01.55,c,,0000,0000,0000,,记住 我多愁善感的朋友...\N{\re}And remember, my sentimental friend...
+Dialogue: 0,1:32:01.72,1:32:04.85,c,,0000,0000,0000,,评判一颗心不是看你的爱有多少\N{\re}...that a heart is not judged by how much you love...
+Dialogue: 0,1:32:05.02,1:32:08.02,c,,0000,0000,0000,,而是看别人爱你多少\N{\re}...but by how much you are loved by others.
+Dialogue: 0,1:32:08.23,1:32:09.52,c,,0000,0000,0000,,啊\N{\re}Ah.
+Dialogue: 0,1:32:10.94,1:32:13.27,c,,0000,0000,0000,,它在跳动\N{\re}Oh. It ticks.
+Dialogue: 0,1:32:13.44,1:32:15.82,c,,0000,0000,0000,,听 看 它在跳动\N{\re}Listen. Look, it ticks.
+Dialogue: 0,1:32:16.49,1:32:19.07,c,,0000,0000,0000,,看看我的奖章上写着什么 "勇气"\N{\re}Read what my medal says. "Courage."
+Dialogue: 0,1:32:19.24,1:32:21.57,c,,0000,0000,0000,,这是真的吗 这是真的吗\N{\re}Ain't it the truth. Ain't it the truth.
+Dialogue: 0,1:32:21.74,1:32:23.37,c,,0000,0000,0000,,他们都很棒 太好了\N{\re}Oh, they're all wonderful.
+Dialogue: 0,1:32:23.53,1:32:25.91,c,,0000,0000,0000,,嘿 多萝西呢\N{\re}Hey, what about Dorothy?
+Dialogue: 0,1:32:26.08,1:32:29.00,c,,0000,0000,0000,,-对啊 多萝西怎么办 -对啊 接下来应该是多萝西\N{\re}- Yes, how about Dorothy? - Yeah. Dorothy next.
+Dialogue: 0,1:32:29.16,1:32:30.12,c,,0000,0000,0000,,是啊 多萝西...\N{\re}Yeah, Dorothy...
+Dialogue: 0,1:32:30.29,1:32:33.84,c,,0000,0000,0000,,我想那个黑袋子里没有我要的东西\N{\re}I don't think there's anything in that black bag for me.
+Dialogue: 0,1:32:34.00,1:32:36.05,c,,0000,0000,0000,,你迫使我做出一个巨变的决定\N{\re}You force me into a cataclysmic decision.
+Dialogue: 0,1:32:36.21,1:32:40.26,c,,0000,0000,0000,,让多萝西回堪萨斯的唯一办法就是我亲自带她回去\N{\re}The only way to get Dorothy to Kansas is for me to take her myself.
+Dialogue: 0,1:32:41.76,1:32:45.10,c,,0000,0000,0000,,你愿意吗 你能吗\N{\re}Oh, will you? Could you? Oh.
+Dialogue: 0,1:32:45.68,1:32:47.89,c,,0000,0000,0000,,聪明的魔法师可以把我变走\N{\re}But are you clever enough to manage it?
+Dialogue: 0,1:32:48.06,1:32:52.15,c,,0000,0000,0000,,孩子 你真是开门见山 我自己就是堪萨斯人\N{\re}Child, you cut me to the quick. I'm an old Kansas man myself...
+Dialogue: 0,1:32:52.31,1:32:55.07,c,,0000,0000,0000,,在西部荒野中出生长大\N{\re}...born and bred in the western wilderness...
+Dialogue: 0,1:32:55.23,1:32:59.36,c,,0000,0000,0000,,我是奇迹仙境公司卓越的首席热气球驾驶员\N{\re}...premier balloonist par excellence to the Miracle Wonderland Carnival Company.
+Dialogue: 0,1:32:59.53,1:33:04.33,c,,0000,0000,0000,,直到有一天 我在表演平流层飞行技巧...\N{\re}Until one day, while performing feats of stratospheric skill...
+Dialogue: 0,1:33:04.49,1:33:06.87,c,,0000,0000,0000,,那是人类前所未有的表演\N{\re}...never before attempted by civilized man...
+Dialogue: 0,1:33:07.04,1:33:11.62,c,,0000,0000,0000,,不幸的现象发生了 气球不能再飞回原处\N{\re}...an unfortunate phenomena occurred. The balloon failed to return to the fair.
+Dialogue: 0,1:33:11.79,1:33:13.92,c,,0000,0000,0000,,-真的 -你不害怕吗\N{\re}- It did? - Weren't you frightened?
+Dialogue: 0,1:33:14.08,1:33:17.59,c,,0000,0000,0000,,你在和一个笑着面对死亡的人说话\N{\re}You are talking to a man who has laughed in the face of death...
+Dialogue: 0,1:33:17.76,1:33:22.43,c,,0000,0000,0000,,对厄运嗤之以鼻 在灾难中轻笑 当时我被吓傻了\N{\re}...sneered at doom and chuckled at catastrophe. I was petrified.
+Dialogue: 0,1:33:22.59,1:33:24.26,c,,0000,0000,0000,,突然间风向变了...\N{\re}Suddenly the wind changed...
+Dialogue: 0,1:33:24.43,1:33:27.77,c,,0000,0000,0000,,气球飘进了这座高贵的城市\N{\re}...and the balloon floated down into this noble city...
+Dialogue: 0,1:33:27.93,1:33:33.15,c,,0000,0000,0000,,在那里我立刻被称赞为仙境里 第一个伟大的魔法师\N{\re}...where I was instantly acclaimed Oz, the first wizard deluxe.
+Dialogue: 0,1:33:33.31,1:33:36.15,c,,0000,0000,0000,,时间就这样过去 我接受了这份工作\N{\re}Times being what they were, I accepted the job...
+Dialogue: 0,1:33:36.32,1:33:40.61,c,,0000,0000,0000,,我留着气球 放在能快速逃离的地方\N{\re}...retaining my balloon against the advent of a quick getaway.
+Dialogue: 0,1:33:40.78,1:33:42.91,c,,0000,0000,0000,,亲爱的多萝茜 有了那气球...\N{\re}And in that balloon, dear Dorothy...
+Dialogue: 0,1:33:43.07,1:33:47.74,c,,0000,0000,0000,,你和我可以回到普卢里巴斯世界大学\N{\re}...you and I will return to the land of E Pluribus Unum.
+Dialogue: 0,1:33:51.23,1:34:00.96,t,,0000,0000,0000,,{\pos(180,75)\bord0\shad1\c&H00142D12\fscy120}国家博览会\N\N{\c&H004A6445}奥马哈
+Dialogue: 0,1:33:53.46,1:33:57.13,c,,0000,0000,0000,,我的朋友们 我是说 我的朋友们\N{\re}My friends. I mean, my friends!
+Dialogue: 0,1:34:02.09,1:34:06.55,c,,0000,0000,0000,,这绝对是有史以来最好的展示...\N{\re}This is positively the finest exhibition ever to be shown...
+Dialogue: 0,1:34:06.72,1:34:08.68,c,,0000,0000,0000,,起码前无古人\N{\re}be that as it may.
+Dialogue: 0,1:34:08.85,1:34:12.52,c,,0000,0000,0000,,我 你们的魔法师 伯拉图阿塔...\N{\re}I, your Wizard per ardua ad alta...
+Dialogue: 0,1:34:12.69,1:34:15.02,c,,0000,0000,0000,,我即将踏上一场危险的...\N{\re}...am about to embark upon a hazardous...
+Dialogue: 0,1:34:15.19,1:34:18.07,c,,0000,0000,0000,,技术上无法解释的旅程...\N{\re}...and technically unexplainable journey...
+Dialogue: 0,1:34:18.23,1:34:21.53,c,,0000,0000,0000,,进入外层平流层\N{\re}...into the outer stratosphere.
+Dialogue: 0,1:34:24.91,1:34:26.24,c,,0000,0000,0000,,为了维持与...\N{\re}To confer, converse...
+Dialogue: 0,1:34:26.41,1:34:29.99,c,,0000,0000,0000,,我魔法师兄弟间的亲密关系\N{\re}...and otherwise hobnob with my brother wizards.
+Dialogue: 0,1:34:30.16,1:34:33.75,c,,0000,0000,0000,,我特此命令 直到...\N{\re}And I hereby decree that until what time...
+Dialogue: 0,1:34:33.91,1:34:36.25,c,,0000,0000,0000,,在我不知何时会回来之前...\N{\re}...if any, that I return...
+Dialogue: 0,1:34:36.42,1:34:41.17,c,,0000,0000,0000,,稻草人 凭借他高超的头脑\N{\re}...the Scarecrow, by virtue of his highly superior brains...
+Dialogue: 0,1:34:41.34,1:34:43.22,c,,0000,0000,0000,,将代替我统治这里...\N{\re}...shall rule in my stead...
+Dialogue: 0,1:34:43.38,1:34:47.97,c,,0000,0000,0000,,由锡人协助 因为他有宏伟的心胸...\N{\re}...assisted by the Tin Man, by virtue of his magnificent heart...
+Dialogue: 0,1:34:48.14,1:34:51.97,c,,0000,0000,0000,,还有狮子 因为他有坚毅的勇气\N{\re}...and the Lion, by virtue of his courage.
+Dialogue: 0,1:34:52.14,1:34:54.77,c,,0000,0000,0000,,你们要像服从我一样服从他们 谢谢\N{\re}Obey them as you would me. Thank you.
+Dialogue: 0,1:34:58.61,1:35:01.61,c,,0000,0000,0000,,托托 回来 托托\N{\re}Oh, Toto. Come back. Toto.
+Dialogue: 0,1:35:01.78,1:35:04.19,c,,0000,0000,0000,,别丢下我就走了 我马上就回来\N{\re}Don't go without me. I'll be right back.
+Dialogue: 0,1:35:04.36,1:35:05.40,c,,0000,0000,0000,,拦住那只狗\N{\re}Stop that dog.
+Dialogue: 0,1:35:05.57,1:35:07.91,c,,0000,0000,0000,,这是个极度不寻常的突发状况\N{\re}This is a highly irregular procedure.
+Dialogue: 0,1:35:08.07,1:35:10.33,c,,0000,0000,0000,,-完全无法预测 -气球在上升\N{\re}- This is absolutely unprecedented. - The balloon's going up.
+Dialogue: 0,1:35:10.49,1:35:13.58,c,,0000,0000,0000,,-破坏我的离开 -回来 回来\N{\re}- Ruined my exit. - Come back! Come back!
+Dialogue: 0,1:35:13.75,1:35:16.29,c,,0000,0000,0000,,别丢下我就走了 求你回来\N{\re}Don't go without me. Please come back!
+Dialogue: 0,1:35:16.46,1:35:19.79,c,,0000,0000,0000,,我不能回来了 我不懂得如何操作\N{\re}I can't come back. I don't know how it works.
+Dialogue: 0,1:35:19.96,1:35:21.46,c,,0000,0000,0000,,再见 各位\N{\re}Goodbye, folks.
+Dialogue: 0,1:35:21.63,1:35:23.76,c,,0000,0000,0000,,再见\N{\re}Goodbye!
+Dialogue: 0,1:35:27.59,1:35:30.05,c,,0000,0000,0000,,槽了 我永远回不了家了\N{\re}Oh, now I'll never get home.
+Dialogue: 0,1:35:30.51,1:35:32.85,c,,0000,0000,0000,,那就跟我们在一起 多萝西\N{\re}Stay with us then, Dorothy.
+Dialogue: 0,1:35:33.02,1:35:34.73,c,,0000,0000,0000,,我们都很爱你\N{\re}We all love you.
+Dialogue: 0,1:35:34.89,1:35:37.39,c,,0000,0000,0000,,我们不想让你走\N{\re}We don't want you to go.
+Dialogue: 0,1:35:37.56,1:35:39.90,c,,0000,0000,0000,,你们真是太好了...\N{\re}That's very kind of you...
+Dialogue: 0,1:35:40.06,1:35:43.15,c,,0000,0000,0000,,但这里永远不会像堪萨斯\N{\re}...but this could never be like Kansas.
+Dialogue: 0,1:35:43.32,1:35:47.53,c,,0000,0000,0000,,艾姆婶婶一定不知道我现在出了什么事\N{\re}Auntie Em must have stopped wondering what happened to me by now.
+Dialogue: 0,1:35:47.70,1:35:50.41,c,,0000,0000,0000,,稻草人 我该怎么办\N{\re}Oh, Scarecrow, what am I going to do?
+Dialogue: 0,1:35:52.37,1:35:53.74,c,,0000,0000,0000,,你看\N{\re}Look.
+Dialogue: 0,1:35:54.16,1:35:56.04,c,,0000,0000,0000,,能帮你的人来了\N{\re}Here's someone who can help you.
+Dialogue: 0,1:36:29.74,1:36:33.83,c,,0000,0000,0000,,-你愿意帮我吗 你能帮我吗 -你已经不再需要帮助了\N{\re}- Will you help me? Can you help me? - You don't need help any longer.
+Dialogue: 0,1:36:33.99,1:36:36.83,c,,0000,0000,0000,,你一直都有能力回到堪萨斯\N{\re}You've always had the power to go back to Kansas.
+Dialogue: 0,1:36:37.00,1:36:39.92,c,,0000,0000,0000,,-我有吗 -那你为什么不早告诉她\N{\re}- I have? - Then why didn't you tell her before?
+Dialogue: 0,1:36:40.08,1:36:44.09,c,,0000,0000,0000,,因为她不会相信我 她必须自己去学会\N{\re}Because she wouldn't have believed me. She had to learn it for herself.
+Dialogue: 0,1:36:44.25,1:36:46.67,c,,0000,0000,0000,,你学到了什么 多萝西\N{\re}What have you learned, Dorothy?
+Dialogue: 0,1:36:46.88,1:36:48.51,c,,0000,0000,0000,,嗯...\N{\re}Well...
+Dialogue: 0,1:36:50.01,1:36:51.76,c,,0000,0000,0000,,我想它...\N{\re}I think that it--
+Dialogue: 0,1:36:51.93,1:36:55.93,c,,0000,0000,0000,,仅仅想见亨利叔叔和艾姆婶婶是不够的\N{\re}That it wasn't enough just to want to see Uncle Henry and Auntie Em.
+Dialogue: 0,1:36:56.10,1:37:00.77,c,,0000,0000,0000,,如果我再去寻找我内心的渴望...\N{\re}And it's that if I ever go looking for my heart's desire again...
+Dialogue: 0,1:37:00.94,1:37:04.36,c,,0000,0000,0000,,我只想回到我家后院 不想更远...\N{\re}...I won't look any further than my own back yard...
+Dialogue: 0,1:37:04.52,1:37:06.86,c,,0000,0000,0000,,因为如果不在那里...\N{\re}...because if it isn't there...
+Dialogue: 0,1:37:07.03,1:37:10.11,c,,0000,0000,0000,,我就失去了人生的开始\N{\re}...I never really lost it to begin with.
+Dialogue: 0,1:37:10.28,1:37:11.41,c,,0000,0000,0000,,对吗\N{\re}Is that right?
+Dialogue: 0,1:37:12.16,1:37:13.37,c,,0000,0000,0000,,就是那些\N{\re}That's all it is.
+Dialogue: 0,1:37:13.53,1:37:16.70,c,,0000,0000,0000,,但这很简单 我早该想到的\N{\re}But that's so easy. I should've thought of it for you.
+Dialogue: 0,1:37:16.87,1:37:20.62,c,,0000,0000,0000,,-我早该在心里感受到 -她得自己找出来才行\N{\re}- I should've felt it in my heart. - She had to find it out for herself.
+Dialogue: 0,1:37:20.79,1:37:24.29,c,,0000,0000,0000,,这双神奇的仙鞋能在两秒钟内把你带回家\N{\re}Now those magic slippers will take you home in two seconds.
+Dialogue: 0,1:37:24.46,1:37:27.00,c,,0000,0000,0000,,-托托也能吗 -托托也能\N{\re}- Toto too? - Toto too.
+Dialogue: 0,1:37:27.21,1:37:29.26,c,,0000,0000,0000,,-现在吗 -随时都可以\N{\re}- Now? - Whenever you wish.
+Dialogue: 0,1:37:29.42,1:37:32.93,c,,0000,0000,0000,,亲爱的 那太好了 简直令人难以置信\N{\re}Oh, dear. That's too wonderful to be true.
+Dialogue: 0,1:37:34.68,1:37:35.76,c,,0000,0000,0000,,真是...\N{\re}Oh, it's...
+Dialogue: 0,1:37:35.93,1:37:39.39,c,,0000,0000,0000,,我真是不知道该怎么说再见\N{\re}It's gonna be so hard to say goodbye.
+Dialogue: 0,1:37:39.56,1:37:41.94,c,,0000,0000,0000,,我也爱你们\N{\re}I love you all too.
+Dialogue: 0,1:37:44.10,1:37:46.27,c,,0000,0000,0000,,再见 锡人\N{\re}Goodbye, Tin Man.
+Dialogue: 0,1:37:46.44,1:37:48.69,c,,0000,0000,0000,,别哭\N{\re}Oh, don't cry.
+Dialogue: 0,1:37:48.90,1:37:51.90,c,,0000,0000,0000,,你会锈得很厉害的\N{\re}You'll rust so dreadfully.
+Dialogue: 0,1:37:52.61,1:37:55.74,c,,0000,0000,0000,,在这里 这是你的油壶\N{\re}Here. Here's your oilcan.
+Dialogue: 0,1:37:57.24,1:38:00.12,c,,0000,0000,0000,,-再见 -现在我知道我有一颗心...\N{\re}- Goodbye. - Now I know I've got a heart...
+Dialogue: 0,1:38:00.29,1:38:02.37,c,,0000,0000,0000,,因为它已经碎了\N{\re}...because it's breaking.
+Dialogue: 0,1:38:05.58,1:38:09.05,c,,0000,0000,0000,,再见 狮子 我知道这样不对...\N{\re}Goodbye, Lion. I know it isn't right...
+Dialogue: 0,1:38:09.21,1:38:12.97,c,,0000,0000,0000,,但我会想念你在找到勇气之前...\N{\re}...but I'm gonna miss the way you used to holler for help...
+Dialogue: 0,1:38:13.13,1:38:15.64,c,,0000,0000,0000,,哭喊着大声呼救的样子\N{\re}...before you found your courage.
+Dialogue: 0,1:38:15.80,1:38:19.89,c,,0000,0000,0000,,如果没有你 我永远也找不到勇气\N{\re}I would never have found it if it hadn't been for you.
+Dialogue: 0,1:38:24.60,1:38:27.69,c,,0000,0000,0000,,我想我会最想你的\N{\re}I think I'll miss you most of all.
+Dialogue: 0,1:38:32.61,1:38:35.74,c,,0000,0000,0000,,-你准备好了吗 -好了\N{\re}- Are you ready now? - Yes.
+Dialogue: 0,1:38:37.37,1:38:39.58,c,,0000,0000,0000,,说再见 托托\N{\re}Say goodbye, Toto.
+Dialogue: 0,1:38:42.16,1:38:45.87,c,,0000,0000,0000,,-好了 我准备好了 -闭上你的眼睛\N{\re}- Yes, I'm ready now. - Then close your eyes...
+Dialogue: 0,1:38:46.04,1:38:49.04,c,,0000,0000,0000,,两脚并拢 鞋跟互相碰三下\N{\re}...and tap your heels together three times...
+Dialogue: 0,1:38:51.21,1:38:53.26,c,,0000,0000,0000,,然后对自己说\N{\re}...and think to yourself:
+Dialogue: 0,1:38:53.42,1:38:56.43,c,,0000,0000,0000,,家最温暖\N{\re}"There's no place like home.
+Dialogue: 0,1:38:56.59,1:38:59.93,c,,0000,0000,0000,,"家最温暖"\N{\re}" There's no place like home."
+Dialogue: 0,1:39:00.10,1:39:03.64,c,,0000,0000,0000,,家最温暖\N{\re}There's no place like home.
+Dialogue: 0,1:39:03.81,1:39:07.31,c,,0000,0000,0000,,家最温暖\N{\re}There's no place like home.
+Dialogue: 0,1:39:07.77,1:39:09.44,c,,0000,0000,0000,,家最温暖\N{\re}There's no place like home.
+Dialogue: 0,1:39:10.82,1:39:12.69,c,,0000,0000,0000,,家最温暖\N{\re}There's no place like home.
+Dialogue: 0,1:39:14.74,1:39:16.49,c,,0000,0000,0000,,家最温暖\N{\re}There's no place like home.
+Dialogue: 0,1:39:20.91,1:39:22.62,c,,0000,0000,0000,,家最温暖\N{\re}There's no place like home.
+Dialogue: 0,1:39:23.41,1:39:25.58,c,,0000,0000,0000,,家最温暖\N{\re}There's no place like home.
+Dialogue: 0,1:39:27.71,1:39:30.42,c,,0000,0000,0000,,-醒醒 甜心 -家最温暖\N{\re}- Wake up, honey. - There's no place like home.
+Dialogue: 0,1:39:31.50,1:39:34.01,c,,0000,0000,0000,,家最温暖\N{\re}There's no place like home.
+Dialogue: 0,1:39:35.97,1:39:37.76,c,,0000,0000,0000,,家最...\N{\re}There's no place....
+Dialogue: 0,1:39:40.55,1:39:44.06,c,,0000,0000,0000,,多萝西 亲爱的 是艾姆婶婶 亲爱的\N{\re}Dorothy, dear. It's Aunt Em, darling.
+Dialogue: 0,1:39:44.22,1:39:46.31,c,,0000,0000,0000,,艾姆婶婶 是你\N{\re}Oh, Auntie Em, it's you.
+Dialogue: 0,1:39:46.48,1:39:49.48,c,,0000,0000,0000,,-是我 亲爱的 -你好 有人在家吗\N{\re}- Yes, darling. - Hello there. Anybody home?
+Dialogue: 0,1:39:49.65,1:39:53.32,c,,0000,0000,0000,,我顺道经过 因为我听说小女孩...\N{\re}I dropped by because I heard the little girl got caught in the big--
+Dialogue: 0,1:39:53.48,1:39:57.28,c,,0000,0000,0000,,-她现在看起来没事了 -她头上撞得很厉害\N{\re}- Well, she seems all right now. - She got quite a bump on the head.
+Dialogue: 0,1:39:57.45,1:39:59.99,c,,0000,0000,0000,,我们还以为她要离开我们呢\N{\re}We kind of thought she was gonna leave us.
+Dialogue: 0,1:40:00.16,1:40:02.87,c,,0000,0000,0000,,但我确实离开了你们 问题就在这里\N{\re}But I did leave you. That's just the trouble.
+Dialogue: 0,1:40:03.04,1:40:05.04,c,,0000,0000,0000,,我一直想回来\N{\re}And I tried to get back for days.
+Dialogue: 0,1:40:05.20,1:40:07.16,c,,0000,0000,0000,,好了 好了 安静地躺着吧\N{\re}There, there, lie quiet now.
+Dialogue: 0,1:40:07.33,1:40:10.42,c,,0000,0000,0000,,-你只是做了个恶梦 -肯定是\N{\re}- You just had a bad dream. - Sure.
+Dialogue: 0,1:40:10.58,1:40:12.17,c,,0000,0000,0000,,记得我吗\N{\re}Remember me...
+Dialogue: 0,1:40:12.34,1:40:14.59,c,,0000,0000,0000,,你的老朋友 汉克\N{\re}...your old pal, Hunk?
+Dialogue: 0,1:40:14.76,1:40:17.38,c,,0000,0000,0000,,还有我 希格利\N{\re}And me, Hickory?
+Dialogue: 0,1:40:17.55,1:40:19.38,c,,0000,0000,0000,,你不会忘记我的脸 对吧\N{\re}You couldn't forget my face, could you?
+Dialogue: 0,1:40:19.55,1:40:23.31,c,,0000,0000,0000,,不 但这不是梦 这是个地方\N{\re}No. But it wasn't a dream. It was a place.
+Dialogue: 0,1:40:23.47,1:40:26.14,c,,0000,0000,0000,,你和你和你\N{\re}And you and you and you...
+Dialogue: 0,1:40:26.31,1:40:28.23,c,,0000,0000,0000,,还有你也在场\N{\re}...and you were there.
+Dialogue: 0,1:40:28.39,1:40:29.31,c,,0000,0000,0000,,当然了\N{\re}Sure.
+Dialogue: 0,1:40:29.48,1:40:31.36,c,,0000,0000,0000,,但你们不可能去 对不对\N{\re}But you couldn't have been, could you?
+Dialogue: 0,1:40:31.52,1:40:33.52,c,,0000,0000,0000,,当我们做梦的时候 会梦到很多傻事\N{\re}We dream lots of silly things when we--
+Dialogue: 0,1:40:33.69,1:40:37.69,c,,0000,0000,0000,,不是 艾姆婶婶 这是个真实的地方\N{\re}No, Aunt Em, this was a real, truly live place.
+Dialogue: 0,1:40:37.86,1:40:40.95,c,,0000,0000,0000,,我记得有些地方不太好...\N{\re}And I remember that some of it wasn't very nice...
+Dialogue: 0,1:40:41.11,1:40:43.08,c,,0000,0000,0000,,但大部分都很美\N{\re}...but most of it was beautiful.
+Dialogue: 0,1:40:43.24,1:40:47.12,c,,0000,0000,0000,,但不管怎样 我一直对大家说"我想回家"\N{\re}But just the same, all I kept saying to everybody was, "I want to go home."
+Dialogue: 0,1:40:47.29,1:40:49.37,c,,0000,0000,0000,,他们就送我回家了\N{\re}And they sent me home.
+Dialogue: 0,1:40:51.21,1:40:53.04,c,,0000,0000,0000,,难道没有人相信我吗\N{\re}Doesn't anybody believe me?
+Dialogue: 0,1:40:53.21,1:40:55.30,c,,0000,0000,0000,,我们当然相信你 多萝西\N{\re}Of course we believe you, Dorothy.
+Dialogue: 0,1:40:55.46,1:40:57.96,c,,0000,0000,0000,,不管怎样 托托 我们回家了\N{\re}But anyway, Toto, we're home.
+Dialogue: 0,1:40:58.13,1:41:00.97,c,,0000,0000,0000,,家 这是我的房间...\N{\re}Home. And this is my room...
+Dialogue: 0,1:41:01.13,1:41:02.72,c,,0000,0000,0000,,你们都在这里\N{\re}...and you're all here.
+Dialogue: 0,1:41:02.89,1:41:06.10,c,,0000,0000,0000,,我再也不会离开这里了...\N{\re}And I'm not going to leave here ever, ever again...
+Dialogue: 0,1:41:06.26,1:41:08.23,c,,0000,0000,0000,,因为我爱你们所有的人\N{\re}...because I love you all.
+Dialogue: 0,1:41:08.39,1:41:11.85,c,,0000,0000,0000,,艾姆婶婶...\N{\re}And oh, Auntie Em...
+Dialogue: 0,1:41:12.02,1:41:15.07,c,,0000,0000,0000,,...家最温暖\N{\re}...there's no place like home.
+Dialogue: 0,1:41:16.77,1:41:22.96,t,,0000,0000,0000,,{\pos(190,70)\fn华文行楷\fs30\shad8\fsp3\3a&H00&\4a&H00&\3c&H6A87C7&}剧终\N谢谢观赏
+
+
