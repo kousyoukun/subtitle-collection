@@ -1,0 +1,916 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: YYeTs
+Original Script: YYeTs
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 1
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 中文简体,FZZhongDengXian-Z07S,24,&H00FFFFFF,&H0000FFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,0,1,1,2,20,20,10,134
+Style: 英文,FZZongYi-M05S,14,&H0000FFFF,&H0000FFFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,0,1,1,2,20,20,2,134
+Style: Default,STKaiti,20,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,1,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:01:23.08,0:01:24.45,英文,NTP,0000,0000,0000,,Hey, Ash. Where are we?
+Dialogue: 0,0:01:24.45,0:01:26.85,英文,NTP,0000,0000,0000,,Well, we just crossed the Tennessee border.
+Dialogue: 0,0:01:33.05,0:01:35.65,英文,NTP,0000,0000,0000,,- Which would put us...  - Yeah?
+Dialogue: 0,0:01:41.86,0:01:43.75,英文,NTP,0000,0000,0000,,Which would put us...
+Dialogue: 0,0:01:47.83,0:01:49.87,英文,NTP,0000,0000,0000,,Right...
+Dialogue: 0,0:01:52.10,0:01:53.07,英文,NTP,0000,0000,0000,,...Here!
+Dialogue: 0,0:01:55.12,0:01:56.22,英文,NTP,0000,0000,0000,,Turn!
+Dialogue: 0,0:02:01.11,0:02:03.65,英文,NTP,0000,0000,0000,,What the hell was that? Are you trying to kill us?
+Dialogue: 0,0:02:03.65,0:02:06.00,英文,NTP,0000,0000,0000,,Don't blame me! It's your steering wheel!
+Dialogue: 0,0:02:06.10,0:02:08.00,英文,NTP,0000,0000,0000,,Damn thing jerked right out of my hands.
+Dialogue: 0,0:02:08.10,0:02:08.90,英文,NTP,0000,0000,0000,,I don't understand it.
+Dialogue: 0,0:02:08.91,0:02:10.50,英文,NTP,0000,0000,0000,,I had this thing in for a tune-up yesterday
+Dialogue: 0,0:02:10.55,0:02:11.95,英文,NTP,0000,0000,0000,,and they said they'd go over everything.
+Dialogue: 0,0:02:11.95,0:02:13.10,英文,NTP,0000,0000,0000,,Well you better take it back
+Dialogue: 0,0:02:13.11,0:02:14.25,英文,NTP,0000,0000,0000,,because the damn thing don't work.
+Dialogue: 0,0:02:14.25,0:02:16.80,英文,NTP,0000,0000,0000,,The one thing that does work is this lousy horn.
+Dialogue: 0,0:02:20.33,0:02:22.89,英文,NTP,0000,0000,0000,,Go to hell! I'm not honking at you!
+Dialogue: 0,0:02:26.14,0:02:28.11,英文,NTP,0000,0000,0000,,Jesus Christ!
+Dialogue: 0,0:02:28.14,0:02:30.31,英文,NTP,0000,0000,0000,,Hey Scotty! What's this place like anyway?
+Dialogue: 0,0:02:30.85,0:02:32.20,英文,NTP,0000,0000,0000,,Well, the guy that's renting
+Dialogue: 0,0:02:32.20,0:02:33.40,英文,NTP,0000,0000,0000,,it says it's an old place.
+Dialogue: 0,0:02:33.40,0:02:37.10,英文,NTP,0000,0000,0000,,Little run down, but it's right up in the mountains.
+Dialogue: 0,0:02:37.85,0:02:39.85,英文,NTP,0000,0000,0000,,Yeah, and the best part is that we get it so cheap.
+Dialogue: 0,0:02:40.15,0:02:42.12,英文,NTP,0000,0000,0000,,Why are we getting it so cheap?
+Dialogue: 0,0:02:42.15,0:02:45.12,英文,NTP,0000,0000,0000,,Well, I don't know. Might be in real bad shape.
+Dialogue: 0,0:02:45.26,0:02:48.05,英文,NTP,0000,0000,0000,,You mean, nobody's seen this place yet?
+Dialogue: 0,0:02:48.05,0:02:50.75,英文,NTP,0000,0000,0000,,- Well, not yet.  - Well, it might not be that bad.
+Dialogue: 0,0:02:51.15,0:02:53.75,英文,NTP,0000,0000,0000,,- No.  - Actually, it might be kind of nice.
+Dialogue: 0,0:02:53.95,0:02:57.35,英文,NTP,0000,0000,0000,,- Yeah.  - It's probably a real pit!
+Dialogue: 0,0:02:58.35,0:03:00.25,英文,NTP,0000,0000,0000,,I think this is where we get off.
+Dialogue: 0,0:03:05.18,0:03:07.60,英文,NTP,0000,0000,0000,,This is the bridge we're going to cross?
+Dialogue: 0,0:03:07.80,0:03:08.80,英文,NTP,0000,0000,0000,,Jesus Christ!
+Dialogue: 0,0:03:08.80,0:03:10.55,英文,NTP,0000,0000,0000,,The whole thing's falling apart on us!
+Dialogue: 0,0:03:11.60,0:03:13.50,英文,NTP,0000,0000,0000,,Don't let the noise fool you girls
+Dialogue: 0,0:03:13.54,0:03:17.14,英文,NTP,0000,0000,0000,,this thing's solid as a rock.
+Dialogue: 0,0:05:30.32,0:05:32.78,英文,NTP,0000,0000,0000,,It's supposed to be one of these on here.
+Dialogue: 0,0:06:25.38,0:06:26.00,英文,NTP,0000,0000,0000,,Come on!
+Dialogue: 0,0:06:26.01,0:06:27.38,英文,NTP,0000,0000,0000,,- Hey  - Hey
+Dialogue: 0,0:06:27.50,0:06:28.20,英文,NTP,0000,0000,0000,,Hey
+Dialogue: 0,0:06:30.00,0:06:31.00,英文,NTP,0000,0000,0000,,Hey
+Dialogue: 0,0:08:01.10,0:08:02.45,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,0:08:05.48,0:08:07.00,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,0:09:22.30,0:09:24.14,英文,NTP,0000,0000,0000,,Dead bodies in the cellar.
+Dialogue: 0,0:09:25.34,0:09:26.12,英文,NTP,0000,0000,0000,,Dead bodies in the cellar
+Dialogue: 0,0:09:26.12,0:09:27.28,英文,NTP,0000,0000,0000,,Will you stop it?
+Dialogue: 0,0:09:27.56,0:09:29.50,英文,NTP,0000,0000,0000,,I would very much like to
+Dialogue: 0,0:09:29.50,0:09:32.52,英文,NTP,0000,0000,0000,,make a toast for all this evening.
+Dialogue: 0,0:09:32.56,0:09:33.50,英文,NTP,0000,0000,0000,,- Yeah  - It sounds good.
+Dialogue: 0,0:09:36.15,0:09:39.10,英文,NTP,0000,0000,0000,,Ah, as a Greek friend of mine once said...
+Dialogue: 0,0:09:40.57,0:09:41.00,英文,NTP,0000,0000,0000,,He said...
+Dialogue: 0,0:09:43.46,0:09:44.70,英文,NTP,0000,0000,0000,,I...
+Dialogue: 0,0:09:46.68,0:09:48.00,英文,NTP,0000,0000,0000,,Ok, Ok,...
+Dialogue: 0,0:09:48.09,0:09:49.70,英文,NTP,0000,0000,0000,,Nis, nis...
+Dialogue: 0,0:09:51.21,0:09:54.36,英文,NTP,0000,0000,0000,,...Tu, Tu, Tu... Tu, Ta, Rim.
+Dialogue: 0,0:09:54.59,0:09:55.90,英文,NTP,0000,0000,0000,,Which means?
+Dialogue: 0,0:09:55.95,0:09:57.75,英文,NTP,0000,0000,0000,,Party down! Yeah!
+Dialogue: 0,0:10:21.00,0:10:22.58,英文,NTP,0000,0000,0000,,What is this?
+Dialogue: 0,0:10:22.90,0:10:25.58,英文,NTP,0000,0000,0000,,Whatever it is, it's still down there.
+Dialogue: 0,0:10:26.00,0:10:29.58,英文,NTP,0000,0000,0000,,I don't like cellars. Let's just close it up.
+Dialogue: 0,0:10:30.22,0:10:32.59,英文,NTP,0000,0000,0000,,It's probably just some animal.
+Dialogue: 0,0:10:32.92,0:10:36.58,英文,NTP,0000,0000,0000,,An animal? An animal?
+Dialogue: 0,0:10:37.15,0:10:39.85,英文,NTP,0000,0000,0000,,That is the stupidest thing I ever heard of.
+Dialogue: 0,0:10:40.00,0:10:40.90,英文,NTP,0000,0000,0000,,Jesus Christ!
+Dialogue: 0,0:10:41.83,0:10:44.10,英文,NTP,0000,0000,0000,,There's something down there.
+Dialogue: 0,0:10:46.92,0:10:48.89,英文,NTP,0000,0000,0000,,Maybe it is just some animal.
+Dialogue: 0,0:10:49.43,0:10:50.83,英文,NTP,0000,0000,0000,,Yeah, you're probably right.
+Dialogue: 0,0:10:50.93,0:10:52.43,英文,NTP,0000,0000,0000,,Probably just some animal.
+Dialogue: 0,0:10:53.12,0:10:54.89,英文,NTP,0000,0000,0000,,Cheryl, why don't you go down and check, make sure?
+Dialogue: 0,0:10:54.93,0:10:57.80,英文,NTP,0000,0000,0000,,Scotty! I'm not going down there!
+Dialogue: 0,0:10:57.93,0:11:00.90,英文,NTP,0000,0000,0000,,Ok, Ok you cowards. I'll go.
+Dialogue: 0,0:11:00.93,0:11:02.00,英文,NTP,0000,0000,0000,,Be careful.
+Dialogue: 0,0:11:07.94,0:11:09.00,英文,NTP,0000,0000,0000,,Back in a minute.
+Dialogue: 0,0:11:31.40,0:11:33.33,英文,NTP,0000,0000,0000,,Hey Scotty! You find anything?
+Dialogue: 0,0:11:36.48,0:11:37.43,英文,NTP,0000,0000,0000,,Scotty!
+Dialogue: 0,0:11:42.58,0:11:43.53,英文,NTP,0000,0000,0000,,Scotty?!
+Dialogue: 0,0:11:49.10,0:11:50.14,英文,NTP,0000,0000,0000,,Scott!
+Dialogue: 0,0:11:54.03,0:11:55.63,英文,NTP,0000,0000,0000,,He's just kidding around...
+Dialogue: 0,0:11:58.34,0:12:00.80,英文,NTP,0000,0000,0000,,- Isn't he?  - Scotty!!
+Dialogue: 0,0:12:02.84,0:12:03.94,英文,NTP,0000,0000,0000,,Scott!
+Dialogue: 0,0:12:04.45,0:12:06.00,英文,NTP,0000,0000,0000,,Linda, get me a flashlight.
+Dialogue: 0,0:12:06.00,0:12:07.97,英文,NTP,0000,0000,0000,,That's the only one we brought up.
+Dialogue: 0,0:12:08.00,0:12:09.20,英文,NTP,0000,0000,0000,,Then get the lantern.
+Dialogue: 0,0:13:28.28,0:13:29.84,英文,NTP,0000,0000,0000,,Scotty?!
+Dialogue: 0,0:14:45.35,0:14:46.00,英文,NTP,0000,0000,0000,,Boo!!
+Dialogue: 0,0:14:49.63,0:14:51.63,英文,NTP,0000,0000,0000,,Hey! Come here, I wanna show you something.
+Dialogue: 0,0:14:54.17,0:14:55.60,英文,NTP,0000,0000,0000,,Look at all this stuff.
+Dialogue: 0,0:15:06.63,0:15:08.03,英文,NTP,0000,0000,0000,,I bet this still shoots.
+Dialogue: 0,0:15:08.48,0:15:09.53,英文,NTP,0000,0000,0000,,Probably does.
+Dialogue: 0,0:15:10.99,0:15:12.75,英文,NTP,0000,0000,0000,,Oh!...God!
+Dialogue: 0,0:15:22.19,0:15:23.30,英文,NTP,0000,0000,0000,,Oh God!
+Dialogue: 0,0:15:24.00,0:15:25.30,英文,NTP,0000,0000,0000,,Look at this!
+Dialogue: 0,0:15:42.21,0:15:43.20,英文,NTP,0000,0000,0000,,Look at this!
+Dialogue: 0,0:15:54.68,0:15:56.71,英文,NTP,0000,0000,0000,,This kind of looks like your old girlfriend.
+Dialogue: 0,0:16:00.23,0:16:01.80,英文,NTP,0000,0000,0000,,Come on. Let's take this stuff upstairs.
+Dialogue: 0,0:16:02.30,0:16:03.50,英文,NTP,0000,0000,0000,,I'll grab the recorder...
+Dialogue: 0,0:16:04.23,0:16:05.93,英文,NTP,0000,0000,0000,,...and you get everything else now.
+Dialogue: 0,0:16:19.25,0:16:22.22,英文,NTP,0000,0000,0000,,This guy was a real turd... everybody hated him...
+Dialogue: 0,0:16:23.14,0:16:25.03,英文,NTP,0000,0000,0000,,Like...Like you, kind of.
+Dialogue: 0,0:16:25.04,0:16:27.24,英文,NTP,0000,0000,0000,,Yeah, just like me. I'm gonna break your face.
+Dialogue: 0,0:16:28.15,0:16:29.90,英文,NTP,0000,0000,0000,,...also invented this western stuff
+Dialogue: 0,0:16:29.90,0:16:31.20,英文,NTP,0000,0000,0000,,He makes all this little models...
+Dialogue: 0,0:16:31.26,0:16:32.20,英文,NTP,0000,0000,0000,,Ok, shush!
+Dialogue: 0,0:16:33.23,0:16:34.30,英文,NTP,0000,0000,0000,,Listen to this...
+Dialogue: 0,0:16:36.40,0:16:38.23,英文,NTP,0000,0000,0000,,This is the tape I found downstairs.
+Dialogue: 0,0:16:40.63,0:16:42.10,英文,NTP,0000,0000,0000,,It has been a number of years
+Dialogue: 0,0:16:42.13,0:16:45.25,英文,NTP,0000,0000,0000,,since I began excavating the ruins of
+Dialogue: 0,0:16:45.26,0:16:47.33,英文,NTP,0000,0000,0000,,Candar with a group of my colleges.
+Dialogue: 0,0:16:47.53,0:16:49.70,英文,NTP,0000,0000,0000,,Now, my wife and I have retreated to
+Dialogue: 0,0:16:49.71,0:16:52.50,英文,NTP,0000,0000,0000,,a small cabin in the solitude of these mountains.
+Dialogue: 0,0:16:53.28,0:16:55.14,英文,NTP,0000,0000,0000,,Here I continued my research
+Dialogue: 0,0:16:55.14,0:16:57.20,英文,NTP,0000,0000,0000,,undisturbed by the myriad
+Dialogue: 0,0:16:57.29,0:16:59.15,英文,NTP,0000,0000,0000,,...distractions of modern civilization
+Dialogue: 0,0:16:59.16,0:17:01.20,英文,NTP,0000,0000,0000,,and far from the groves of academe.
+Dialogue: 0,0:17:02.29,0:17:05.30,英文,NTP,0000,0000,0000,,I believe I have made a significant find
+Dialogue: 0,0:17:05.30,0:17:07.00,英文,NTP,0000,0000,0000,,in the Candarian Ruins.
+Dialogue: 0,0:17:07.30,0:17:10.40,英文,NTP,0000,0000,0000,,A Volume of Ancient Sumarian burial practices
+Dialogue: 0,0:17:10.40,0:17:12.15,英文,NTP,0000,0000,0000,,and funerary incantations.
+Dialogue: 0,0:17:13.10,0:17:16.27,英文,NTP,0000,0000,0000,,It is entitled "Naturon Demonto"
+Dialogue: 0,0:17:16.31,0:17:18.28,英文,NTP,0000,0000,0000,,...roughly translated, "Book of the Dead".
+Dialogue: 0,0:17:19.33,0:17:21.31,英文,NTP,0000,0000,0000,,The book is bound in human flesh...
+Dialogue: 0,0:17:21.31,0:17:23.20,英文,NTP,0000,0000,0000,,...and inked in human blood.
+Dialogue: 0,0:17:26.32,0:17:28.29,英文,NTP,0000,0000,0000,,It deals with demons
+Dialogue: 0,0:17:28.29,0:17:30.13,英文,NTP,0000,0000,0000,,and demon resurrection and those forces
+Dialogue: 0,0:17:30.13,0:17:31.50,英文,NTP,0000,0000,0000,,...which roam the forest
+Dialogue: 0,0:17:31.50,0:17:34.23,英文,NTP,0000,0000,0000,,and dark bowers of man's domain.
+Dialogue: 0,0:17:34.43,0:17:36.15,英文,NTP,0000,0000,0000,,The first few pages warn that
+Dialogue: 0,0:17:36.15,0:17:38.40,英文,NTP,0000,0000,0000,,these enduring creatures may lie...
+Dialogue: 0,0:17:38.40,0:17:40.30,英文,NTP,0000,0000,0000,,...dormant but are never truly dead.
+Dialogue: 0,0:17:41.90,0:17:43.83,英文,NTP,0000,0000,0000,,They may be recalled to active life
+Dialogue: 0,0:17:43.83,0:17:46.34,英文,NTP,0000,0000,0000,,...through the incantations presented in this book.
+Dialogue: 0,0:17:46.34,0:17:49.33,英文,NTP,0000,0000,0000,,It is through recitation of these passages...
+Dialogue: 0,0:17:49.33,0:17:50.80,英文,NTP,0000,0000,0000,,...that the demons are given license
+Dialogue: 0,0:17:50.81,0:17:52.90,英文,NTP,0000,0000,0000,,to possess the living.
+Dialogue: 0,0:17:55.03,0:17:56.40,英文,NTP,0000,0000,0000,,What did you do that for?
+Dialogue: 0,0:17:56.41,0:17:57.35,英文,NTP,0000,0000,0000,,It was just getting good!
+Dialogue: 0,0:17:57.35,0:17:58.90,英文,NTP,0000,0000,0000,,I just don't want to hear it anymore, that's all.
+Dialogue: 0,0:18:03.83,0:18:06.03,英文,NTP,0000,0000,0000,,Scotty, c'mon. Leave her alone, man.
+Dialogue: 0,0:18:06.36,0:18:08.20,英文,NTP,0000,0000,0000,,Hey, come on...I just want to hear the rest of it.
+Dialogue: 0,0:18:09.36,0:18:11.33,英文,NTP,0000,0000,0000,,No big deal.
+Dialogue: 0,0:18:11.36,0:18:15.00,英文,NTP,0000,0000,0000,,Tatre-ah-mis-trobeen-ha-zar-ta
+Dialogue: 0,0:18:11.36,0:18:15.00,英文,NTP,0000,0000,0000,,Tatre-ah-mis-trobeen-ha-zar-ta
+Dialogue: 0,0:18:15.69,0:18:21.80,英文,NTP,0000,0000,0000,,Tantir-man-ov-mansiz-onn-hazann-sobar.
+Dialogue: 0,0:18:15.69,0:18:21.80,英文,NTP,0000,0000,0000,,Tantir-man-ov-mansiz-onn-hazann-sobar
+Dialogue: 0,0:18:22.05,0:18:27.33,英文,NTP,0000,0000,0000,,Sum-unda-rop-sa Dar-his-hyk-err-duns-de-rod-sa
+Dialogue: 0,0:18:22.05,0:18:27.33,英文,NTP,0000,0000,0000,,Sum-unda-rop-sa Dar-his-hyk-err-duns-de-rod-sa
+Dialogue: 0,0:18:27.38,0:18:28.90,英文,NTP,0000,0000,0000,,Kanda!
+Dialogue: 0,0:18:27.38,0:18:28.90,英文,NTP,0000,0000,0000,,Kanda
+Dialogue: 0,0:18:30.93,0:18:32.63,英文,NTP,0000,0000,0000,,Shut it off!
+Dialogue: 0,0:18:33.38,0:18:36.00,英文,NTP,0000,0000,0000,,Kanda!
+Dialogue: 0,0:18:33.38,0:18:36.00,英文,NTP,0000,0000,0000,,Kanda
+Dialogue: 0,0:18:36.39,0:18:38.36,英文,NTP,0000,0000,0000,,Shut it off!!
+Dialogue: 0,0:18:38.39,0:18:39.50,英文,NTP,0000,0000,0000,,Kanda!
+Dialogue: 0,0:18:38.39,0:18:39.50,英文,NTP,0000,0000,0000,,Kanda
+Dialogue: 0,0:18:39.51,0:18:42.03,英文,NTP,0000,0000,0000,,Shut it off!!!
+Dialogue: 0,0:18:42.53,0:18:43.83,英文,NTP,0000,0000,0000,,Oh my God!
+Dialogue: 0,0:18:48.33,0:18:51.33,英文,NTP,0000,0000,0000,,Cheryl! Where're you going?
+Dialogue: 0,0:18:51.40,0:18:52.03,英文,NTP,0000,0000,0000,,I can't believe this!
+Dialogue: 0,0:18:52.03,0:18:54.15,英文,NTP,0000,0000,0000,,Scott, you knew not to play that!
+Dialogue: 0,0:18:54.40,0:18:56.63,英文,NTP,0000,0000,0000,,I mean c'mon, you knew it was upsetting her.
+Dialogue: 0,0:18:56.63,0:18:57.20,英文,NTP,0000,0000,0000,,You just don't know
+Dialogue: 0,0:18:57.20,0:18:58.60,英文,NTP,0000,0000,0000,,when you're taking something too far.
+Dialogue: 0,0:18:58.60,0:18:59.70,英文,NTP,0000,0000,0000,,Don't give me that!
+Dialogue: 0,0:18:59.75,0:19:00.65,英文,NTP,0000,0000,0000,,You were playing it too.
+Dialogue: 0,0:19:00.70,0:19:02.23,英文,NTP,0000,0000,0000,,You could've shut it off.
+Dialogue: 0,0:19:02.23,0:19:03.70,英文,NTP,0000,0000,0000,,I mean... big deal!
+Dialogue: 0,0:19:04.42,0:19:05.15,英文,NTP,0000,0000,0000,,She's nuts!
+Dialogue: 0,0:19:06.65,0:19:08.70,英文,NTP,0000,0000,0000,,I mean it's just a joke, c'mon!
+Dialogue: 0,0:19:09.33,0:19:10.30,英文,NTP,0000,0000,0000,,Jesus Christ.
+Dialogue: 0,0:19:10.35,0:19:12.35,英文,NTP,0000,0000,0000,,She acts like she's three years old or something.
+Dialogue: 0,0:19:27.00,0:19:29.55,英文,NTP,0000,0000,0000,,Listen. Why don't we stay up
+Dialogue: 0,0:19:29.55,0:19:30.90,英文,NTP,0000,0000,0000,,for a while and listen to the storm?
+Dialogue: 0,0:19:31.24,0:19:32.30,英文,NTP,0000,0000,0000,,All right, yeah.
+Dialogue: 0,0:19:32.40,0:19:34.10,英文,NTP,0000,0000,0000,,Let me check on Cheryl first
+Dialogue: 0,0:19:34.10,0:19:35.20,英文,NTP,0000,0000,0000,,to make sure that she's Ok.
+Dialogue: 0,0:20:42.58,0:20:44.42,英文,NTP,0000,0000,0000,,Stealing from the blind, eh?
+Dialogue: 0,0:20:47.20,0:20:48.50,英文,NTP,0000,0000,0000,,It's for you.
+Dialogue: 0,0:21:00.83,0:21:02.85,英文,NTP,0000,0000,0000,,Ash, how sweet of you.
+Dialogue: 0,0:21:06.35,0:21:08.50,英文,NTP,0000,0000,0000,,- Would you put it on?  - Oh, Sure.
+Dialogue: 0,0:21:11.15,0:21:12.00,英文,NTP,0000,0000,0000,,I was going to give it to you
+Dialogue: 0,0:21:12.00,0:21:13.15,英文,NTP,0000,0000,0000,,before we came up here, but...
+Dialogue: 0,0:21:13.83,0:21:15.80,英文,NTP,0000,0000,0000,,...things got so hectic
+Dialogue: 0,0:21:15.82,0:21:17.00,英文,NTP,0000,0000,0000,,this is really the first chance
+Dialogue: 0,0:21:17.01,0:21:19.00,英文,NTP,0000,0000,0000,,we...we've had to be alone.
+Dialogue: 0,0:21:23.20,0:21:24.03,英文,NTP,0000,0000,0000,,Take a look.
+Dialogue: 0,0:21:27.56,0:21:30.55,英文,NTP,0000,0000,0000,,Oh, Ash! It's beautiful!
+Dialogue: 0,0:21:31.70,0:21:33.00,英文,NTP,0000,0000,0000,,I really love it.
+Dialogue: 0,0:21:33.52,0:21:34.85,英文,NTP,0000,0000,0000,,I'll never take it off.
+Dialogue: 0,0:22:32.62,0:22:34.10,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,0:23:10.66,0:23:12.25,英文,NTP,0000,0000,0000,,Is anybody out there?
+Dialogue: 0,0:24:14.73,0:24:16.15,英文,NTP,0000,0000,0000,,I know someone's out there!
+Dialogue: 0,0:24:22.83,0:24:24.10,英文,NTP,0000,0000,0000,,I heard you.
+Dialogue: 0,0:24:24.80,0:24:26.30,英文,NTP,0000,0000,0000,,I heard you in the cellar.
+Dialogue: 0,0:25:03.77,0:25:06.20,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,0:28:32.58,0:28:33.88,英文,NTP,0000,0000,0000,,Ashley!
+Dialogue: 0,0:29:08.81,0:29:09.87,英文,NTP,0000,0000,0000,,Help!
+Dialogue: 0,0:29:34.85,0:29:35.60,英文,NTP,0000,0000,0000,,What the hell happened to you?
+Dialogue: 0,0:29:35.60,0:29:36.60,英文,NTP,0000,0000,0000,,Cheryl, what's the matter with you?
+Dialogue: 0,0:29:36.60,0:29:38.20,英文,NTP,0000,0000,0000,,Did something in the woods do this to you?
+Dialogue: 0,0:29:38.39,0:29:40.10,英文,NTP,0000,0000,0000,,No! It was the woods themselves!
+Dialogue: 0,0:29:41.35,0:29:42.10,英文,NTP,0000,0000,0000,,They're alive Ashley!
+Dialogue: 0,0:29:42.10,0:29:44.55,英文,NTP,0000,0000,0000,,The trees! They're alive!
+Dialogue: 0,0:29:44.55,0:29:46.25,英文,NTP,0000,0000,0000,,Ash. Why don't I take her in the back room
+Dialogue: 0,0:29:46.25,0:29:47.28,英文,NTP,0000,0000,0000,,so she can lie down...
+Dialogue: 0,0:29:47.28,0:29:48.40,英文,NTP,0000,0000,0000,,I'm not lying down!
+Dialogue: 0,0:29:49.15,0:29:50.20,英文,NTP,0000,0000,0000,,I want to get out of here.
+Dialogue: 0,0:29:50.78,0:29:52.30,英文,NTP,0000,0000,0000,,I want to leave this place right now.
+Dialogue: 0,0:29:52.88,0:29:54.08,英文,NTP,0000,0000,0000,,Right now, Ashley!
+Dialogue: 0,0:29:54.08,0:29:55.08,英文,NTP,0000,0000,0000,,Wait a minute!
+Dialogue: 0,0:29:55.13,0:29:57.07,英文,NTP,0000,0000,0000,,I sure as hell am not leaving any place tonight.
+Dialogue: 0,0:29:57.07,0:29:58.28,英文,NTP,0000,0000,0000,,- Cheryl.  - Cheryl.
+Dialogue: 0,0:29:58.28,0:29:59.60,英文,NTP,0000,0000,0000,,Cheryl, there's nothing out there.
+Dialogue: 0,0:29:59.60,0:30:00.90,英文,NTP,0000,0000,0000,,Trees do not attack people.
+Dialogue: 0,0:30:01.00,0:30:03.50,英文,NTP,0000,0000,0000,,Ashley! Will you drive me into town or not?
+Dialogue: 0,0:30:03.60,0:30:04.30,英文,NTP,0000,0000,0000,,Right now?!
+Dialogue: 0,0:30:05.60,0:30:06.68,英文,NTP,0000,0000,0000,,Look, sure, sure
+Dialogue: 0,0:30:06.78,0:30:07.68,英文,NTP,0000,0000,0000,,I'll take you into town
+Dialogue: 0,0:30:07.68,0:30:08.90,英文,NTP,0000,0000,0000,,but just listen to what you're saying.
+Dialogue: 0,0:30:08.95,0:30:10.40,英文,NTP,0000,0000,0000,,I don't care how it sounds.
+Dialogue: 0,0:30:10.85,0:30:13.05,英文,NTP,0000,0000,0000,,I wanna get out of this place right now!
+Dialogue: 0,0:30:14.08,0:30:19.04,英文,NTP,0000,0000,0000,,Ok, maybe you could stay somewhere in town tonight.
+Dialogue: 0,0:31:01.13,0:31:03.09,英文,NTP,0000,0000,0000,,Come on.Come on.
+Dialogue: 0,0:31:27.16,0:31:28.90,英文,NTP,0000,0000,0000,,I know it's not gonna start.
+Dialogue: 0,0:31:29.00,0:31:30.40,英文,NTP,0000,0000,0000,,It's not gonna let us leave.
+Dialogue: 0,0:32:25.42,0:32:27.00,英文,NTP,0000,0000,0000,,Why are you stopping?
+Dialogue: 0,0:32:28.93,0:32:30.13,英文,NTP,0000,0000,0000,,Wait here a minute.
+Dialogue: 0,0:32:41.18,0:32:42.30,英文,NTP,0000,0000,0000,,Do you see something?
+Dialogue: 0,0:32:46.19,0:32:47.20,英文,NTP,0000,0000,0000,,Where're you going?
+Dialogue: 0,0:32:51.83,0:32:53.03,英文,NTP,0000,0000,0000,,Ashley!
+Dialogue: 0,0:33:05.30,0:33:06.20,英文,NTP,0000,0000,0000,,Ashley!
+Dialogue: 0,0:34:08.23,0:34:09.90,英文,NTP,0000,0000,0000,,It's not going to let us go!
+Dialogue: 0,0:34:09.90,0:34:12.00,英文,NTP,0000,0000,0000,,It's not going to let us go!
+Dialogue: 0,0:34:12.27,0:34:14.10,英文,NTP,0000,0000,0000,,I told you! I told you!
+Dialogue: 0,0:34:14.65,0:34:16.20,英文,NTP,0000,0000,0000,,It's not going to let us go!
+Dialogue: 0,0:34:16.34,0:34:18.24,英文,NTP,0000,0000,0000,,Why won't you listen to me?
+Dialogue: 0,0:34:33.00,0:34:35.00,英文,NTP,0000,0000,0000,,I know now that my wife
+Dialogue: 0,0:34:35.00,0:34:37.30,英文,NTP,0000,0000,0000,,has become host to a Candarian demon.
+Dialogue: 0,0:34:37.90,0:34:39.20,英文,NTP,0000,0000,0000,,I fear that the only way
+Dialogue: 0,0:34:39.20,0:34:41.00,英文,NTP,0000,0000,0000,,to stop those possessed by the...
+Dialogue: 0,0:34:41.00,0:34:43.10,英文,NTP,0000,0000,0000,,...spirits of the book is through the act of
+Dialogue: 0,0:34:43.30,0:34:44.80,英文,NTP,0000,0000,0000,,...bodily dismemberment.
+Dialogue: 0,0:34:45.25,0:34:47.24,英文,NTP,0000,0000,0000,,I believe now to avoid this horror
+Dialogue: 0,0:34:47.24,0:34:48.20,英文,NTP,0000,0000,0000,,but for myself
+Dialogue: 0,0:34:49.30,0:34:51.50,英文,NTP,0000,0000,0000,,I have seen the dark shadows moving...
+Dialogue: 0,0:34:51.50,0:34:53.15,英文,NTP,0000,0000,0000,,...in the woods and I have no doubt that
+Dialogue: 0,0:34:53.20,0:34:55.58,英文,NTP,0000,0000,0000,,whatever I have resurrected through this book
+Dialogue: 0,0:34:56.30,0:34:58.95,英文,NTP,0000,0000,0000,,is sure to come calling...for me.
+Dialogue: 0,0:35:00.00,0:35:01.60,英文,NTP,0000,0000,0000,,Ok, ah, let me think. Ummm...
+Dialogue: 0,0:35:02.62,0:35:03.43,英文,NTP,0000,0000,0000,,It's a seven?
+Dialogue: 0,0:35:03.63,0:35:04.73,英文,NTP,0000,0000,0000,,Oh! What suit?
+Dialogue: 0,0:35:04.90,0:35:06.15,英文,NTP,0000,0000,0000,,Ahh... diamonds.
+Dialogue: 0,0:35:06.20,0:35:08.10,英文,NTP,0000,0000,0000,,No wait! Ummm, hearts!
+Dialogue: 0,0:35:08.33,0:35:09.50,英文,NTP,0000,0000,0000,,Oh My God! It's seven of hearts!
+Dialogue: 0,0:35:09.50,0:35:10.15,英文,NTP,0000,0000,0000,,You're right!
+Dialogue: 0,0:35:10.40,0:35:12.38,英文,NTP,0000,0000,0000,,Hey Ash! I guessed the card right!
+Dialogue: 0,0:35:13.25,0:35:14.90,英文,NTP,0000,0000,0000,,Yeah... truly amazing, Linda.
+Dialogue: 0,0:35:15.55,0:35:16.40,英文,NTP,0000,0000,0000,,I don't know,I don't know...
+Dialogue: 0,0:35:16.42,0:35:17.25,英文,NTP,0000,0000,0000,,but I think it's really
+Dialogue: 0,0:35:17.25,0:35:18.60,英文,NTP,0000,0000,0000,,some sort of extra sense or something...
+Dialogue: 0,0:35:18.65,0:35:20.50,英文,NTP,0000,0000,0000,,- ...you know, like ESP.  - Ok, try this one...
+Dialogue: 0,0:35:20.65,0:35:22.80,英文,NTP,0000,0000,0000,,Ok... It's a seven.
+Dialogue: 0,0:35:22.83,0:35:24.90,英文,NTP,0000,0000,0000,,- I don't believe it!  - ...of Spades.
+Dialogue: 0,0:35:24.94,0:35:27.90,英文,NTP,0000,0000,0000,,Queen of Spades.
+Dialogue: 0,0:35:30.75,0:35:33.42,英文,NTP,0000,0000,0000,,Four of Hearts.
+Dialogue: 0,0:35:33.50,0:35:36.00,英文,NTP,0000,0000,0000,,Eight of Spades.
+Dialogue: 0,0:35:36.56,0:35:40.52,英文,NTP,0000,0000,0000,,Two of Spades. Jack of Diamonds. Jack of Clubs!
+Dialogue: 0,0:35:43.56,0:35:47.60,英文,NTP,0000,0000,0000,,Why have you disturbed our sleep? Awakened us...
+Dialogue: 0,0:35:47.60,0:35:49.50,英文,NTP,0000,0000,0000,,...from our ancient slumber?
+Dialogue: 0,0:35:50.80,0:35:51.60,英文,NTP,0000,0000,0000,,You will die!
+Dialogue: 0,0:35:52.50,0:35:54.45,英文,NTP,0000,0000,0000,,Like the others before you.
+Dialogue: 0,0:35:55.77,0:35:58.20,英文,NTP,0000,0000,0000,,One by one we will take you.
+Dialogue: 0,0:36:11.83,0:36:13.00,英文,NTP,0000,0000,0000,,What happened to her?
+Dialogue: 0,0:36:23.80,0:36:25.00,英文,NTP,0000,0000,0000,,Did you see her eyes?
+Dialogue: 0,0:36:25.77,0:36:26.95,英文,NTP,0000,0000,0000,,Oh Ash, I'm scared.
+Dialogue: 0,0:36:26.96,0:36:28.07,英文,NTP,0000,0000,0000,,What's wrong with her?
+Dialogue: 0,0:37:19.46,0:37:20.90,英文,NTP,0000,0000,0000,,Cheryl! Stop it!
+Dialogue: 0,0:37:43.80,0:37:46.90,英文,NTP,0000,0000,0000,,- Oh, Shit!  - Join Us! Join...
+Dialogue: 0,0:39:18.98,0:39:21.34,英文,NTP,0000,0000,0000,,Ash. I think we ought to get out of here.
+Dialogue: 0,0:39:22.48,0:39:23.10,英文,NTP,0000,0000,0000,,Yeah.
+Dialogue: 0,0:39:25.78,0:39:27.55,英文,NTP,0000,0000,0000,,We still have a few more hours before morning.
+Dialogue: 0,0:39:27.65,0:39:29.25,英文,NTP,0000,0000,0000,,I don't think I can wait that long.
+Dialogue: 0,0:39:30.99,0:39:32.85,英文,NTP,0000,0000,0000,,You have to. We all have to!
+Dialogue: 0,0:39:34.50,0:39:35.20,英文,NTP,0000,0000,0000,,And then in the morning
+Dialogue: 0,0:39:35.75,0:39:36.60,英文,NTP,0000,0000,0000,,we'll get in the car...
+Dialogue: 0,0:39:37.50,0:39:39.80,英文,NTP,0000,0000,0000,,and we'll take the bridge. And...
+Dialogue: 0,0:39:43.10,0:39:45.85,英文,NTP,0000,0000,0000,,Why does she keep making those horrible noises?!
+Dialogue: 0,0:39:45.95,0:39:46.50,英文,NTP,0000,0000,0000,,I don't know!
+Dialogue: 0,0:39:47.30,0:39:50.00,英文,NTP,0000,0000,0000,,And what about her eyes?
+Dialogue: 0,0:39:51.86,0:39:54.17,英文,NTP,0000,0000,0000,,What about her eyes?
+Dialogue: 0,0:39:55.33,0:39:59.60,英文,NTP,0000,0000,0000,,For God's Sake, What happened to her eyes?!
+Dialogue: 0,0:40:14.34,0:40:15.80,英文,NTP,0000,0000,0000,,Everything's going to be all right.
+Dialogue: 0,0:40:35.75,0:40:38.00,英文,NTP,0000,0000,0000,,Scotty. I think there's something out there.
+Dialogue: 0,0:40:47.83,0:40:50.20,英文,NTP,0000,0000,0000,,Go to bed, and get some sleep. Ok?
+Dialogue: 0,0:42:41.03,0:42:42.13,英文,NTP,0000,0000,0000,,Shelly?
+Dialogue: 0,0:43:44.50,0:43:46.30,英文,NTP,0000,0000,0000,,I am on fire!I am on fire!
+Dialogue: 0,0:43:46.34,0:43:48.20,英文,NTP,0000,0000,0000,,No!No!
+Dialogue: 0,0:43:53.33,0:43:54.00,英文,NTP,0000,0000,0000,,Thank you,
+Dialogue: 0,0:43:55.00,0:43:57.30,英文,NTP,0000,0000,0000,,I don't know what I would have done
+Dialogue: 0,0:43:57.56,0:44:00.80,英文,NTP,0000,0000,0000,,if I had remained on those hot coals...
+Dialogue: 0,0:44:01.90,0:44:04.20,英文,NTP,0000,0000,0000,,...burning my pretty flesh.
+Dialogue: 0,0:44:04.58,0:44:06.68,英文,NTP,0000,0000,0000,,You have pretty skin.
+Dialogue: 0,0:44:07.88,0:44:09.43,英文,NTP,0000,0000,0000,,Give it to us!
+Dialogue: 0,0:44:24.56,0:44:25.93,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,0:44:36.85,0:44:38.03,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,0:45:04.10,0:45:06.38,英文,NTP,0000,0000,0000,,No...No...No...No!
+Dialogue: 0,0:47:12.03,0:47:12.93,英文,NTP,0000,0000,0000,,Hit her!
+Dialogue: 0,0:47:15.00,0:47:15.90,英文,NTP,0000,0000,0000,,Hit her!
+Dialogue: 0,0:47:17.33,0:47:18.33,英文,NTP,0000,0000,0000,,Hit it!
+Dialogue: 0,0:47:23.56,0:47:27.52,英文,NTP,0000,0000,0000,,No!No!No...No!
+Dialogue: 0,0:47:28.70,0:47:32.52,英文,NTP,0000,0000,0000,,You love her!No...No!
+Dialogue: 0,0:47:34.80,0:47:36.60,英文,NTP,0000,0000,0000,,No...You love her!
+Dialogue: 0,0:48:11.83,0:48:12.93,英文,NTP,0000,0000,0000,,Scott?
+Dialogue: 0,0:48:15.38,0:48:16.38,英文,NTP,0000,0000,0000,,Yeah?
+Dialogue: 0,0:48:17.61,0:48:19.58,英文,NTP,0000,0000,0000,,What is...
+Dialogue: 0,0:48:19.90,0:48:21.30,英文,NTP,0000,0000,0000,,What are we going to do?
+Dialogue: 0,0:48:24.62,0:48:26.00,英文,NTP,0000,0000,0000,,We're going to bury her.
+Dialogue: 0,0:48:27.62,0:48:29.00,英文,NTP,0000,0000,0000,,You...can't bury Shelly.
+Dialogue: 0,0:48:29.60,0:48:31.20,英文,NTP,0000,0000,0000,,She's a... she's a friend of ours, isn't she?
+Dialogue: 0,0:48:31.20,0:48:32.20,英文,NTP,0000,0000,0000,,Ash, she's dead.
+Dialogue: 0,0:48:35.23,0:48:36.43,英文,NTP,0000,0000,0000,,Shelly's dead.
+Dialogue: 0,0:48:40.33,0:48:41.93,英文,NTP,0000,0000,0000,,We gotta bury her now.
+Dialogue: 0,0:49:41.45,0:49:42.60,英文,NTP,0000,0000,0000,,Linda's still sleeping.
+Dialogue: 0,0:49:43.75,0:49:44.30,英文,NTP,0000,0000,0000,,I think once her leg...
+Dialogue: 0,0:49:44.31,0:49:45.24,英文,NTP,0000,0000,0000,,I'm getting out of here.
+Dialogue: 0,0:49:45.73,0:49:47.34,英文,NTP,0000,0000,0000,,Scott, we can't take Linda anywhere
+Dialogue: 0,0:49:47.34,0:49:48.70,英文,NTP,0000,0000,0000,,with a leg like that.
+Dialogue: 0,0:49:48.74,0:49:49.45,英文,NTP,0000,0000,0000,,We don't even know
+Dialogue: 0,0:49:49.45,0:49:51.45,英文,NTP,0000,0000,0000,,if there is any other way back besides the bridge.
+Dialogue: 0,0:49:51.93,0:49:53.43,英文,NTP,0000,0000,0000,,Well, maybe there's a hiking trail
+Dialogue: 0,0:49:53.50,0:49:55.90,英文,NTP,0000,0000,0000,,or an old road or some other way around the cliff.
+Dialogue: 0,0:49:57.03,0:49:58.10,英文,NTP,0000,0000,0000,,I mean there's gotta be
+Dialogue: 0,0:49:58.13,0:50:00.03,英文,NTP,0000,0000,0000,,another way besides the bridge.
+Dialogue: 0,0:50:00.87,0:50:01.55,英文,NTP,0000,0000,0000,,Listen to me.
+Dialogue: 0,0:50:02.00,0:50:04.00,英文,NTP,0000,0000,0000,,Linda cannot walk with a leg like that.
+Dialogue: 0,0:50:04.03,0:50:05.13,英文,NTP,0000,0000,0000,,She can't even stand up.
+Dialogue: 0,0:50:06.43,0:50:07.73,英文,NTP,0000,0000,0000,,Well, then we'll leave her here.
+Dialogue: 0,0:50:08.00,0:50:09.50,英文,NTP,0000,0000,0000,,Until we can send somebody back.
+Dialogue: 0,0:50:09.74,0:50:12.30,英文,NTP,0000,0000,0000,,- What are you, crazy?  - Look! I'm getting out!
+Dialogue: 0,0:50:13.73,0:50:15.70,英文,NTP,0000,0000,0000,,I don't care what happens to her.
+Dialogue: 0,0:50:16.65,0:50:17.45,英文,NTP,0000,0000,0000,,She's your girlfriend
+Dialogue: 0,0:50:17.45,0:50:18.35,英文,NTP,0000,0000,0000,,you take care of her.
+Dialogue: 0,0:50:18.90,0:50:20.60,英文,NTP,0000,0000,0000,,I'm getting the hell out of here. Right now!
+Dialogue: 0,0:50:42.00,0:50:44.43,英文,NTP,0000,0000,0000,,Soon all of you will be like me.
+Dialogue: 0,0:50:45.25,0:50:47.55,英文,NTP,0000,0000,0000,,And then who will lock you up in the cellar?
+Dialogue: 0,0:51:41.45,0:51:43.20,英文,NTP,0000,0000,0000,,- God  - Ash!
+Dialogue: 0,0:51:43.43,0:51:46.13,英文,NTP,0000,0000,0000,,- Oh my God!  - Help me!
+Dialogue: 0,0:51:48.80,0:51:50.10,英文,NTP,0000,0000,0000,,Help me, Ash.
+Dialogue: 0,0:51:58.10,0:52:00.80,英文,NTP,0000,0000,0000,,Scotty. You're going to be Ok.
+Dialogue: 0,0:52:01.10,0:52:03.25,英文,NTP,0000,0000,0000,,You're going to be just fine. You'll see.
+Dialogue: 0,0:52:15.43,0:52:17.53,英文,NTP,0000,0000,0000,,Ash. It's not going to let us leave.
+Dialogue: 0,0:52:18.63,0:52:21.73,英文,NTP,0000,0000,0000,,Cheryl...Cheryl was right.
+Dialogue: 0,0:52:22.86,0:52:24.68,英文,NTP,0000,0000,0000,,We're all going to die here!
+Dialogue: 0,0:52:24.68,0:52:26.00,英文,NTP,0000,0000,0000,,No, we're not going to die.
+Dialogue: 0,0:52:26.10,0:52:28.12,英文,NTP,0000,0000,0000,,We're all going to die. All of us!
+Dialogue: 0,0:52:29.86,0:52:31.70,英文,NTP,0000,0000,0000,,No, we're not going to die!
+Dialogue: 0,0:52:32.03,0:52:33.00,英文,NTP,0000,0000,0000,,We're not going to die!
+Dialogue: 0,0:52:33.00,0:52:33.83,英文,NTP,0000,0000,0000,,We're gonna get out of here.
+Dialogue: 0,0:52:34.83,0:52:35.90,英文,NTP,0000,0000,0000,,Now listen to me, Scotty.
+Dialogue: 0,0:52:36.93,0:52:38.20,英文,NTP,0000,0000,0000,,Is there a way around the bridge?
+Dialogue: 0,0:52:40.63,0:52:42.50,英文,NTP,0000,0000,0000,,Scotty! Listen to me, please.
+Dialogue: 0,0:52:42.55,0:52:44.13,英文,NTP,0000,0000,0000,,For God's sake! Scott!
+Dialogue: 0,0:52:47.23,0:52:50.45,英文,NTP,0000,0000,0000,,Ash...Ash, I don't wanna die.
+Dialogue: 0,0:52:52.45,0:52:53.80,英文,NTP,0000,0000,0000,,You're not going to leave me ,are you Ash?
+Dialogue: 0,0:52:53.84,0:52:54.40,英文,NTP,0000,0000,0000,,Are you?
+Dialogue: 0,0:52:54.59,0:52:56.00,英文,NTP,0000,0000,0000,,I don't wanna die.
+Dialogue: 0,0:52:56.83,0:52:58.25,英文,NTP,0000,0000,0000,,You're not going to leave me here are you?
+Dialogue: 0,0:52:58.35,0:52:59.90,英文,NTP,0000,0000,0000,,Are you, Ash?
+Dialogue: 0,0:53:03.63,0:53:06.50,英文,NTP,0000,0000,0000,,Scotty! Now c'mon listen to me for God's sake!
+Dialogue: 0,0:53:06.80,0:53:08.88,英文,NTP,0000,0000,0000,,Is there a way around the bridge?
+Dialogue: 0,0:53:09.48,0:53:11.89,英文,NTP,0000,0000,0000,,There's a way. The trail.
+Dialogue: 0,0:53:13.72,0:53:15.11,英文,NTP,0000,0000,0000,,But the trees, Ash.
+Dialogue: 0,0:53:16.40,0:53:17.11,英文,NTP,0000,0000,0000,,They know.
+Dialogue: 0,0:53:19.35,0:53:21.30,英文,NTP,0000,0000,0000,,Don't you see, Ash? They're alive!
+Dialogue: 0,0:53:33.91,0:53:34.68,英文,NTP,0000,0000,0000,,Shut up!
+Dialogue: 0,0:53:34.73,0:53:35.53,英文,NTP,0000,0000,0000,,Shut up, Linda.
+Dialogue: 0,0:53:41.53,0:53:42.53,英文,NTP,0000,0000,0000,,Shut up!
+Dialogue: 0,0:53:58.53,0:53:59.53,英文,NTP,0000,0000,0000,,Kill her!
+Dialogue: 0,0:54:00.86,0:54:01.42,英文,NTP,0000,0000,0000,,Kill her!
+Dialogue: 0,0:54:01.84,0:54:05.13,英文,NTP,0000,0000,0000,,Kill her if you can, loverboy.
+Dialogue: 0,0:54:12.97,0:54:14.13,英文,NTP,0000,0000,0000,,God! Forgive me, Linda.
+Dialogue: 0,0:54:39.93,0:54:42.33,英文,NTP,0000,0000,0000,,Oh, Ash. Help me, please!
+Dialogue: 0,0:54:47.63,0:54:50.48,英文,NTP,0000,0000,0000,,Ash. Help me
+Dialogue: 0,0:54:50.53,0:54:52.23,英文,NTP,0000,0000,0000,,please...Ash.
+Dialogue: 0,0:54:52.90,0:54:53.60,英文,NTP,0000,0000,0000,,Oh, Ash.
+Dialogue: 0,0:54:53.65,0:54:56.00,英文,NTP,0000,0000,0000,,Please, don't let them take me away again.
+Dialogue: 0,0:54:57.09,0:55:00.20,英文,NTP,0000,0000,0000,,- Please.  - No, I won't. I won't. I promise.
+Dialogue: 0,0:55:01.53,0:55:04.83,英文,NTP,0000,0000,0000,,Ashley. Ashley, help me.
+Dialogue: 0,0:55:04.93,0:55:06.53,英文,NTP,0000,0000,0000,,Let me out of here.
+Dialogue: 0,0:55:07.02,0:55:10.98,英文,NTP,0000,0000,0000,,Ashley? Ash, help me.
+Dialogue: 0,0:55:11.03,0:55:13.99,英文,NTP,0000,0000,0000,,Let me out of here. I'm... I'm all right now.
+Dialogue: 0,0:55:14.93,0:55:18.66,英文,NTP,0000,0000,0000,,I'm all right now, Ashley... I'm all right.
+Dialogue: 0,0:55:20.65,0:55:22.43,英文,NTP,0000,0000,0000,,Unlock this chain and let me out.
+Dialogue: 0,0:55:30.73,0:55:31.73,英文,NTP,0000,0000,0000,,Cheryl?
+Dialogue: 0,0:56:06.00,0:56:06.80,英文,NTP,0000,0000,0000,,Cheryl?
+Dialogue: 0,0:56:13.09,0:56:15.42,英文,NTP,0000,0000,0000,,I'm all right now, Ashley!
+Dialogue: 0,0:56:16.15,0:56:18.06,英文,NTP,0000,0000,0000,,Come unlock the chain and let me out!
+Dialogue: 0,0:56:19.88,0:56:21.20,英文,NTP,0000,0000,0000,,I'm all right now.
+Dialogue: 0,0:56:21.80,0:56:23.30,英文,NTP,0000,0000,0000,,It's your sister Cheryl.
+Dialogue: 0,0:56:31.53,0:56:33.03,英文,NTP,0000,0000,0000,,You bastards!
+Dialogue: 0,0:56:33.11,0:56:35.08,英文,NTP,0000,0000,0000,,Why are you torturing me like this?
+Dialogue: 0,0:56:35.08,0:56:35.67,英文,NTP,0000,0000,0000,,Why?!
+Dialogue: 0,0:56:47.12,0:56:47.85,英文,NTP,0000,0000,0000,,Shut up!
+Dialogue: 0,0:56:48.13,0:56:50.13,英文,NTP,0000,0000,0000,,We're going to get you.
+Dialogue: 0,0:56:50.85,0:56:53.78,英文,NTP,0000,0000,0000,,We're going to get you.
+Dialogue: 0,0:56:53.85,0:56:56.20,英文,NTP,0000,0000,0000,,Not another peep.
+Dialogue: 0,0:56:56.61,0:56:59.00,英文,NTP,0000,0000,0000,,Time to go to sleep.
+Dialogue: 0,0:56:59.81,0:57:00.61,英文,NTP,0000,0000,0000,,We're...
+Dialogue: 0,0:57:09.35,0:57:10.53,英文,NTP,0000,0000,0000,,It's Useless!
+Dialogue: 0,0:57:10.78,0:57:12.03,英文,NTP,0000,0000,0000,,Useless!
+Dialogue: 0,0:57:12.15,0:57:14.31,英文,NTP,0000,0000,0000,,In time, it will come for him
+Dialogue: 0,0:57:14.51,0:57:16.31,英文,NTP,0000,0000,0000,,and then it will come for you!
+Dialogue: 0,0:57:41.78,0:57:42.30,英文,NTP,0000,0000,0000,,Here.
+Dialogue: 0,0:57:45.81,0:57:48.85,英文,NTP,0000,0000,0000,,Now,the sun will be up in an hour or so
+Dialogue: 0,0:57:48.90,0:57:50.15,英文,NTP,0000,0000,0000,,and we can all get out of here together.
+Dialogue: 0,0:57:51.19,0:57:54.35,英文,NTP,0000,0000,0000,,You, me, Linda, Shelly.
+Dialogue: 0,0:57:56.50,0:57:58.60,英文,NTP,0000,0000,0000,,No,No...No...
+Dialogue: 0,0:57:59.45,0:58:00.93,英文,NTP,0000,0000,0000,,Hmm...Well...Shelly...she...
+Dialogue: 0,0:58:02.93,0:58:04.83,英文,NTP,0000,0000,0000,,We'll all be going home together.
+Dialogue: 0,0:58:05.93,0:58:08.07,英文,NTP,0000,0000,0000,,Wouldn't you like to be going home?
+Dialogue: 0,0:58:08.87,0:58:11.33,英文,NTP,0000,0000,0000,,I bet you'd like that, wouldn't you?
+Dialogue: 0,0:58:16.13,0:58:17.23,英文,NTP,0000,0000,0000,,Scott?
+Dialogue: 0,0:59:22.25,0:59:23.25,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,0:59:23.91,0:59:24.91,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,1:01:51.30,1:01:52.22,英文,NTP,0000,0000,0000,,Oh, Linda.
+Dialogue: 0,1:06:04.27,1:06:06.65,英文,NTP,0000,0000,0000,,Come to me.
+Dialogue: 0,1:08:15.73,1:08:17.02,英文,NTP,0000,0000,0000,,The door.
+Dialogue: 0,1:08:39.72,1:08:40.72,英文,NTP,0000,0000,0000,,The back door.
+Dialogue: 0,1:08:49.39,1:08:52.00,英文,NTP,0000,0000,0000,,Shells. Where did I see that box of shells?
+Dialogue: 0,1:10:31.50,1:10:33.60,英文,NTP,0000,0000,0000,,We're gonna get you!
+Dialogue: 0,1:10:34.25,1:10:36.39,英文,NTP,0000,0000,0000,,We're gonna get you!
+Dialogue: 0,1:10:36.40,1:10:37.73,英文,NTP,0000,0000,0000,,Shut up, Linda.
+Dialogue: 0,1:10:38.14,1:10:40.43,英文,NTP,0000,0000,0000,,- We're all gonna die.  - Shut up.
+Dialogue: 0,1:10:40.44,1:10:42.43,英文,NTP,0000,0000,0000,,- All of us.  - Shut up!
+Dialogue: 0,1:10:42.96,1:10:45.70,英文,NTP,0000,0000,0000,,- How sweet of you.  - ...God! Forgive me, Linda.
+Dialogue: 0,1:10:46.32,1:10:48.96,英文,NTP,0000,0000,0000,,...is through the act of...bodily dismemberment.
+Dialogue: 0,1:10:48.96,1:10:49.50,英文,NTP,0000,0000,0000,,Hit her.
+Dialogue: 0,1:10:50.03,1:10:50.93,英文,NTP,0000,0000,0000,,I really love it!
+Dialogue: 0,1:10:50.93,1:10:51.60,英文,NTP,0000,0000,0000,,Hit her.
+Dialogue: 0,1:10:51.76,1:10:52.76,英文,NTP,0000,0000,0000,,I'll never take it off.
+Dialogue: 0,1:10:52.76,1:10:53.36,英文,NTP,0000,0000,0000,,Hit it!
+Dialogue: 0,1:14:41.90,1:14:43.65,英文,NTP,0000,0000,0000,,Oh, Come on. Come on.
+Dialogue: 0,1:14:43.66,1:14:45.20,英文,NTP,0000,0000,0000,,Why are you torturing me like this?
+Dialogue: 0,1:15:32.68,1:15:33.60,英文,NTP,0000,0000,0000,,Linda.
+Dialogue: 0,1:15:51.46,1:15:52.96,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,1:15:54.66,1:15:55.80,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,1:21:04.72,1:21:07.48,英文,NTP,0000,0000,0000,,Oh! No, God!
+Dialogue: 0,1:21:23.69,1:21:25.19,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,1:21:27.93,1:21:29.43,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,1:21:32.50,1:21:34.00,英文,NTP,0000,0000,0000,,Join Us!
+Dialogue: 0,1:23:51.35,1:23:53.53,英文,NTP,0000,0000,0000,,AAAAAHHHHHHHH!!!!
+Dialogue: 0,0:01:23.08,0:01:24.45,中文简体,NTP,0000,0000,0000,,嘿 我们在哪？
+Dialogue: 0,0:01:24.45,0:01:26.85,中文简体,NTP,0000,0000,0000,,刚穿过田纳西州边界
+Dialogue: 0,0:01:33.05,0:01:35.65,中文简体,NTP,0000,0000,0000,,- 我们要在哪一个…  - 是的？
+Dialogue: 0,0:01:41.86,0:01:43.75,中文简体,NTP,0000,0000,0000,,我们要在哪一个…
+Dialogue: 0,0:01:47.83,0:01:49.87,中文简体,NTP,0000,0000,0000,,对…
+Dialogue: 0,0:01:52.10,0:01:53.07,中文简体,NTP,0000,0000,0000,,这
+Dialogue: 0,0:01:55.12,0:01:56.22,中文简体,NTP,0000,0000,0000,,转盘
+Dialogue: 0,0:02:01.11,0:02:03.65,中文简体,NTP,0000,0000,0000,,这是干什么？你要谋杀我们吗？
+Dialogue: 0,0:02:03.65,0:02:06.00,中文简体,NTP,0000,0000,0000,,不要责备我 是你的方向盘
+Dialogue: 0,0:02:06.10,0:02:08.00,中文简体,NTP,0000,0000,0000,,他妈的把我的手猛拉开了
+Dialogue: 0,0:02:08.10,0:02:08.90,中文简体,NTP,0000,0000,0000,,我也不知道
+Dialogue: 0,0:02:08.91,0:02:10.50,中文简体,NTP,0000,0000,0000,,我昨天调整了
+Dialogue: 0,0:02:10.55,0:02:11.95,中文简体,NTP,0000,0000,0000,,他们说什么都会检查的
+Dialogue: 0,0:02:11.95,0:02:13.10,中文简体,NTP,0000,0000,0000,,你最好送回去
+Dialogue: 0,0:02:13.11,0:02:14.25,中文简体,NTP,0000,0000,0000,,因为这该死的坏了
+Dialogue: 0,0:02:14.25,0:02:16.80,中文简体,NTP,0000,0000,0000,,唯一有用的就是喇叭了
+Dialogue: 0,0:02:20.33,0:02:22.89,中文简体,NTP,0000,0000,0000,,去死吧 我不是给你们鸣喇叭
+Dialogue: 0,0:02:26.14,0:02:28.11,中文简体,NTP,0000,0000,0000,,上帝
+Dialogue: 0,0:02:28.14,0:02:30.31,中文简体,NTP,0000,0000,0000,,嘿 斯加醍 哪个地方是什么样子？
+Dialogue: 0,0:02:30.85,0:02:32.20,中文简体,NTP,0000,0000,0000,,租那地方的人说
+Dialogue: 0,0:02:32.20,0:02:33.40,中文简体,NTP,0000,0000,0000,,那是一个老房子
+Dialogue: 0,0:02:33.40,0:02:37.10,中文简体,NTP,0000,0000,0000,,有一点破旧 但是就在大山上
+Dialogue: 0,0:02:37.85,0:02:39.85,中文简体,NTP,0000,0000,0000,,最好的是我们这么便宜弄到了
+Dialogue: 0,0:02:40.15,0:02:42.12,中文简体,NTP,0000,0000,0000,,我们为什么这么便宜弄到了？
+Dialogue: 0,0:02:42.15,0:02:45.12,中文简体,NTP,0000,0000,0000,,我不知道 也许是真的很难看吧
+Dialogue: 0,0:02:45.26,0:02:48.05,中文简体,NTP,0000,0000,0000,,你是说没有人看过那房子？
+Dialogue: 0,0:02:48.05,0:02:50.75,中文简体,NTP,0000,0000,0000,,- 没有  - 事情可能没有那么糟糕
+Dialogue: 0,0:02:51.15,0:02:53.75,中文简体,NTP,0000,0000,0000,,- 不  - 实际上 是很棒的
+Dialogue: 0,0:02:53.95,0:02:57.35,中文简体,NTP,0000,0000,0000,,- 是的  - 也许是一个真正的陷进
+Dialogue: 0,0:02:58.35,0:03:00.25,中文简体,NTP,0000,0000,0000,,我想我们就在那下车
+Dialogue: 0,0:03:05.18,0:03:07.60,中文简体,NTP,0000,0000,0000,,我们要经过这桥吗？
+Dialogue: 0,0:03:07.80,0:03:08.80,中文简体,NTP,0000,0000,0000,,天啊
+Dialogue: 0,0:03:08.80,0:03:10.55,中文简体,NTP,0000,0000,0000,,这整个掉下去 会让我们散架的
+Dialogue: 0,0:03:11.60,0:03:13.50,中文简体,NTP,0000,0000,0000,,不要让这声音吓着你
+Dialogue: 0,0:03:13.54,0:03:17.14,中文简体,NTP,0000,0000,0000,,这桥很牢固的
+Dialogue: 0,0:05:30.32,0:05:32.78,中文简体,NTP,0000,0000,0000,,这也许是开这门的
+Dialogue: 0,0:06:25.38,0:06:26.00,中文简体,NTP,0000,0000,0000,,来吧
+Dialogue: 0,0:06:26.01,0:06:27.38,中文简体,NTP,0000,0000,0000,,- 嘿  - 嘿
+Dialogue: 0,0:06:27.50,0:06:28.20,中文简体,NTP,0000,0000,0000,,嘿
+Dialogue: 0,0:06:30.00,0:06:31.00,中文简体,NTP,0000,0000,0000,,嘿
+Dialogue: 0,0:08:01.10,0:08:02.45,中文简体,NTP,0000,0000,0000,,到我们这来
+Dialogue: 0,0:08:05.48,0:08:07.00,中文简体,NTP,0000,0000,0000,,到我们这来
+Dialogue: 0,0:09:22.30,0:09:24.14,中文简体,NTP,0000,0000,0000,,死尸在地窖里
+Dialogue: 0,0:09:25.34,0:09:26.12,中文简体,NTP,0000,0000,0000,,死尸在地窖里
+Dialogue: 0,0:09:26.12,0:09:27.28,中文简体,NTP,0000,0000,0000,,你能别说吗？
+Dialogue: 0,0:09:27.56,0:09:29.50,中文简体,NTP,0000,0000,0000,,所有这些夜晚
+Dialogue: 0,0:09:29.50,0:09:32.52,中文简体,NTP,0000,0000,0000,,我都喜欢在这里干杯
+Dialogue: 0,0:09:32.56,0:09:33.50,中文简体,NTP,0000,0000,0000,,- 是的  - 听起来不错
+Dialogue: 0,0:09:36.15,0:09:39.10,中文简体,NTP,0000,0000,0000,,一次说过做我的希腊朋友
+Dialogue: 0,0:09:40.57,0:09:41.00,中文简体,NTP,0000,0000,0000,,他说过…
+Dialogue: 0,0:09:43.46,0:09:44.70,中文简体,NTP,0000,0000,0000,,"我… "
+Dialogue: 0,0:09:46.68,0:09:48.00,中文简体,NTP,0000,0000,0000,,好了… 好了…
+Dialogue: 0,0:09:48.09,0:09:49.70,中文简体,NTP,0000,0000,0000,,给…
+Dialogue: 0,0:09:51.21,0:09:54.36,中文简体,NTP,0000,0000,0000,,塔里姆干杯
+Dialogue: 0,0:09:54.59,0:09:55.90,中文简体,NTP,0000,0000,0000,,什么意思？
+Dialogue: 0,0:09:55.95,0:09:57.75,中文简体,NTP,0000,0000,0000,,集会结束 是的
+Dialogue: 0,0:10:21.00,0:10:22.58,中文简体,NTP,0000,0000,0000,,是什么？
+Dialogue: 0,0:10:22.90,0:10:25.58,中文简体,NTP,0000,0000,0000,,不管是什么 还在下面
+Dialogue: 0,0:10:26.00,0:10:29.58,中文简体,NTP,0000,0000,0000,,我不喜欢地窖 我们关闭它
+Dialogue: 0,0:10:30.22,0:10:32.59,中文简体,NTP,0000,0000,0000,,大概是一些动物
+Dialogue: 0,0:10:32.92,0:10:36.58,中文简体,NTP,0000,0000,0000,,动物？动物
+Dialogue: 0,0:10:37.15,0:10:39.85,中文简体,NTP,0000,0000,0000,,这是我听到的最愚蠢的事
+Dialogue: 0,0:10:40.00,0:10:40.90,中文简体,NTP,0000,0000,0000,,天啊
+Dialogue: 0,0:10:41.83,0:10:44.10,中文简体,NTP,0000,0000,0000,,下面有什么
+Dialogue: 0,0:10:46.92,0:10:48.89,中文简体,NTP,0000,0000,0000,,也许是些动物
+Dialogue: 0,0:10:49.43,0:10:50.83,中文简体,NTP,0000,0000,0000,,是的 或许你是对的
+Dialogue: 0,0:10:50.93,0:10:52.43,中文简体,NTP,0000,0000,0000,,大概是些动物
+Dialogue: 0,0:10:53.12,0:10:54.89,中文简体,NTP,0000,0000,0000,,谢丽尔 你为什么不下去 看个究竟？
+Dialogue: 0,0:10:54.93,0:10:57.80,中文简体,NTP,0000,0000,0000,,斯加醍 我不下去
+Dialogue: 0,0:10:57.93,0:11:00.90,中文简体,NTP,0000,0000,0000,,好 你这胆小鬼 我去
+Dialogue: 0,0:11:00.93,0:11:02.00,中文简体,NTP,0000,0000,0000,,小心
+Dialogue: 0,0:11:07.94,0:11:09.00,中文简体,NTP,0000,0000,0000,,很快回来
+Dialogue: 0,0:11:31.40,0:11:33.33,中文简体,NTP,0000,0000,0000,,嘿 斯加醍 发现什么吗？
+Dialogue: 0,0:11:36.48,0:11:37.43,中文简体,NTP,0000,0000,0000,,斯加醍
+Dialogue: 0,0:11:42.58,0:11:43.53,中文简体,NTP,0000,0000,0000,,斯加醍
+Dialogue: 0,0:11:49.10,0:11:50.14,中文简体,NTP,0000,0000,0000,,斯加醍？
+Dialogue: 0,0:11:54.03,0:11:55.63,中文简体,NTP,0000,0000,0000,,他是在开玩笑
+Dialogue: 0,0:11:58.34,0:12:00.80,中文简体,NTP,0000,0000,0000,,- 是吗？- 斯加醍
+Dialogue: 0,0:12:02.84,0:12:03.94,中文简体,NTP,0000,0000,0000,,斯加醍
+Dialogue: 0,0:12:04.45,0:12:06.00,中文简体,NTP,0000,0000,0000,,琳达 给我手电
+Dialogue: 0,0:12:06.00,0:12:07.97,中文简体,NTP,0000,0000,0000,,这是唯一带来的一把
+Dialogue: 0,0:12:08.00,0:12:09.20,中文简体,NTP,0000,0000,0000,,那给我马灯
+Dialogue: 0,0:13:28.28,0:13:29.84,中文简体,NTP,0000,0000,0000,,斯加醍？
+Dialogue: 0,0:14:45.35,0:14:46.00,中文简体,NTP,0000,0000,0000,,嘿
+Dialogue: 0,0:14:49.63,0:14:51.63,中文简体,NTP,0000,0000,0000,,嘿 来 我带你去看看
+Dialogue: 0,0:14:54.17,0:14:55.60,中文简体,NTP,0000,0000,0000,,看看这些东西
+Dialogue: 0,0:15:06.63,0:15:08.03,中文简体,NTP,0000,0000,0000,,我敢肯定这枪还能用
+Dialogue: 0,0:15:08.48,0:15:09.53,中文简体,NTP,0000,0000,0000,,也许可以
+Dialogue: 0,0:15:10.99,0:15:12.75,中文简体,NTP,0000,0000,0000,,哦 天啊
+Dialogue: 0,0:15:22.19,0:15:23.30,中文简体,NTP,0000,0000,0000,,哦 天啊
+Dialogue: 0,0:15:24.00,0:15:25.30,中文简体,NTP,0000,0000,0000,,看这
+Dialogue: 0,0:15:42.21,0:15:43.20,中文简体,NTP,0000,0000,0000,,看这
+Dialogue: 0,0:15:54.68,0:15:56.71,中文简体,NTP,0000,0000,0000,,这就像你的老女朋友
+Dialogue: 0,0:16:00.23,0:16:01.80,中文简体,NTP,0000,0000,0000,,来 我们带上楼去
+Dialogue: 0,0:16:02.30,0:16:03.50,中文简体,NTP,0000,0000,0000,,我拿录音机
+Dialogue: 0,0:16:04.23,0:16:05.93,中文简体,NTP,0000,0000,0000,,你拿其他的好
+Dialogue: 0,0:16:19.25,0:16:22.22,中文简体,NTP,0000,0000,0000,,这家伙是个真正卑鄙的人 大家都讨厌他
+Dialogue: 0,0:16:23.14,0:16:25.03,中文简体,NTP,0000,0000,0000,,喜欢你这种人
+Dialogue: 0,0:16:25.04,0:16:27.24,中文简体,NTP,0000,0000,0000,,是的 就喜欢我 我要划破你的脸
+Dialogue: 0,0:16:28.15,0:16:29.90,中文简体,NTP,0000,0000,0000,,他也加入了这西方人的东西
+Dialogue: 0,0:16:29.90,0:16:31.20,中文简体,NTP,0000,0000,0000,,他做了这所有的小模型…
+Dialogue: 0,0:16:31.26,0:16:32.20,中文简体,NTP,0000,0000,0000,,好 嘘
+Dialogue: 0,0:16:33.23,0:16:34.30,中文简体,NTP,0000,0000,0000,,听这个
+Dialogue: 0,0:16:36.40,0:16:38.23,中文简体,NTP,0000,0000,0000,,这是我在楼下知道的录音带
+Dialogue: 0,0:16:40.63,0:16:42.10,中文简体,NTP,0000,0000,0000,,自从我和我的同事挖掘
+Dialogue: 0,0:16:42.13,0:16:45.25,中文简体,NTP,0000,0000,0000,,这废墟以来…
+Dialogue: 0,0:16:45.26,0:16:47.33,中文简体,NTP,0000,0000,0000,,已经有很多年了
+Dialogue: 0,0:16:47.53,0:16:49.70,中文简体,NTP,0000,0000,0000,,现在我和我的妻子搬到了
+Dialogue: 0,0:16:49.71,0:16:52.50,中文简体,NTP,0000,0000,0000,,这山脉的孤独的小屋里
+Dialogue: 0,0:16:53.28,0:16:55.14,中文简体,NTP,0000,0000,0000,,在这我继续研究
+Dialogue: 0,0:16:55.14,0:16:57.20,中文简体,NTP,0000,0000,0000,,这无数的 安静的…
+Dialogue: 0,0:16:57.29,0:16:59.15,中文简体,NTP,0000,0000,0000,,现代社会的娱乐
+Dialogue: 0,0:16:59.16,0:17:01.20,中文简体,NTP,0000,0000,0000,,从很远的 小树林研究会来
+Dialogue: 0,0:17:02.29,0:17:05.30,中文简体,NTP,0000,0000,0000,,我相信我在这里做的发现
+Dialogue: 0,0:17:05.30,0:17:07.00,中文简体,NTP,0000,0000,0000,,是很有意义的
+Dialogue: 0,0:17:07.30,0:17:10.40,中文简体,NTP,0000,0000,0000,,一卷关于远古闪族人的 葬礼惯例
+Dialogue: 0,0:17:10.40,0:17:12.15,中文简体,NTP,0000,0000,0000,,和葬礼的咒语
+Dialogue: 0,0:17:13.10,0:17:16.27,中文简体,NTP,0000,0000,0000,,这题名是"NATURANDEMANTO"
+Dialogue: 0,0:17:16.31,0:17:18.28,中文简体,NTP,0000,0000,0000,,粗略的翻译是"死亡之书"
+Dialogue: 0,0:17:19.33,0:17:21.31,中文简体,NTP,0000,0000,0000,,这书是限制在人类的肉体…
+Dialogue: 0,0:17:21.31,0:17:23.20,中文简体,NTP,0000,0000,0000,,浸入了人类的血液
+Dialogue: 0,0:17:26.32,0:17:28.29,中文简体,NTP,0000,0000,0000,,这是为了应付魔鬼
+Dialogue: 0,0:17:28.29,0:17:30.13,中文简体,NTP,0000,0000,0000,,魔鬼的复苏
+Dialogue: 0,0:17:30.13,0:17:31.50,中文简体,NTP,0000,0000,0000,,这股力量在人类的
+Dialogue: 0,0:17:31.50,0:17:34.23,中文简体,NTP,0000,0000,0000,,领土和森林里游荡
+Dialogue: 0,0:17:34.43,0:17:36.15,中文简体,NTP,0000,0000,0000,,前几页… 警告这些持久的
+Dialogue: 0,0:17:36.15,0:17:38.40,中文简体,NTP,0000,0000,0000,,人可以躺着呈睡眠 状态
+Dialogue: 0,0:17:38.40,0:17:40.30,中文简体,NTP,0000,0000,0000,,永远不会真正的死去
+Dialogue: 0,0:17:41.90,0:17:43.83,中文简体,NTP,0000,0000,0000,,他们通过这书上的咒语出现
+Dialogue: 0,0:17:43.83,0:17:46.34,中文简体,NTP,0000,0000,0000,,可以重新唤起他们的生活
+Dialogue: 0,0:17:46.34,0:17:49.33,中文简体,NTP,0000,0000,0000,,通过朗读这些咒语又可以
+Dialogue: 0,0:17:49.33,0:17:50.80,中文简体,NTP,0000,0000,0000,,给魔鬼生命…
+Dialogue: 0,0:17:50.81,0:17:52.90,中文简体,NTP,0000,0000,0000,,并占有他们的生命
+Dialogue: 0,0:17:55.03,0:17:56.40,中文简体,NTP,0000,0000,0000,,你干什么？
+Dialogue: 0,0:17:56.41,0:17:57.35,中文简体,NTP,0000,0000,0000,,这正是精彩部分
+Dialogue: 0,0:17:57.35,0:17:58.90,中文简体,NTP,0000,0000,0000,,我不想再听了 就这样
+Dialogue: 0,0:18:03.83,0:18:06.03,中文简体,NTP,0000,0000,0000,,斯加醍 别这样 让我自己待一会儿
+Dialogue: 0,0:18:06.36,0:18:08.20,中文简体,NTP,0000,0000,0000,,嘿 来吧 我想听后面的部分
+Dialogue: 0,0:18:09.36,0:18:11.33,中文简体,NTP,0000,0000,0000,,没有这么夸张
+Dialogue: 0,0:18:30.93,0:18:32.63,中文简体,NTP,0000,0000,0000,,关了它
+Dialogue: 0,0:18:36.39,0:18:38.36,中文简体,NTP,0000,0000,0000,,关了它
+Dialogue: 0,0:18:39.51,0:18:42.03,中文简体,NTP,0000,0000,0000,,关了它
+Dialogue: 0,0:18:42.53,0:18:43.83,中文简体,NTP,0000,0000,0000,,我的天
+Dialogue: 0,0:18:48.33,0:18:51.33,中文简体,NTP,0000,0000,0000,,谢丽尔 你去哪？
+Dialogue: 0,0:18:51.40,0:18:52.03,中文简体,NTP,0000,0000,0000,,我不相信这个
+Dialogue: 0,0:18:52.03,0:18:54.15,中文简体,NTP,0000,0000,0000,,斯加醍 你知道不要放了
+Dialogue: 0,0:18:54.40,0:18:56.63,中文简体,NTP,0000,0000,0000,,你知道这会让她不安的
+Dialogue: 0,0:18:56.63,0:18:57.20,中文简体,NTP,0000,0000,0000,,你不知道你有时
+Dialogue: 0,0:18:57.20,0:18:58.60,中文简体,NTP,0000,0000,0000,,说的还更严重
+Dialogue: 0,0:18:58.60,0:18:59.70,中文简体,NTP,0000,0000,0000,,不要说我这些
+Dialogue: 0,0:18:59.75,0:19:00.65,中文简体,NTP,0000,0000,0000,,你也在听
+Dialogue: 0,0:19:00.70,0:19:02.23,中文简体,NTP,0000,0000,0000,,你应该闭嘴
+Dialogue: 0,0:19:02.23,0:19:03.70,中文简体,NTP,0000,0000,0000,,这… 有什么大不了的
+Dialogue: 0,0:19:04.42,0:19:05.15,中文简体,NTP,0000,0000,0000,,她是个白痴
+Dialogue: 0,0:19:06.65,0:19:08.70,中文简体,NTP,0000,0000,0000,,开个玩笑 别太认真
+Dialogue: 0,0:19:09.33,0:19:10.30,中文简体,NTP,0000,0000,0000,,上帝啊
+Dialogue: 0,0:19:10.35,0:19:12.35,中文简体,NTP,0000,0000,0000,,她这样好像是三岁小孩一样
+Dialogue: 0,0:19:27.00,0:19:29.55,中文简体,NTP,0000,0000,0000,,听 我们为什么不呆会儿
+Dialogue: 0,0:19:29.55,0:19:30.90,中文简体,NTP,0000,0000,0000,,听听暴风雨？
+Dialogue: 0,0:19:31.24,0:19:32.30,中文简体,NTP,0000,0000,0000,,好啊 好
+Dialogue: 0,0:19:32.40,0:19:34.10,中文简体,NTP,0000,0000,0000,,我得先去看看谢丽尔
+Dialogue: 0,0:19:34.10,0:19:35.20,中文简体,NTP,0000,0000,0000,,确定她没事
+Dialogue: 0,0:20:42.58,0:20:44.42,中文简体,NTP,0000,0000,0000,,偷瞎子的东西？
+Dialogue: 0,0:20:47.20,0:20:48.50,中文简体,NTP,0000,0000,0000,,给你的
+Dialogue: 0,0:21:00.83,0:21:02.85,中文简体,NTP,0000,0000,0000,,你太好了
+Dialogue: 0,0:21:06.35,0:21:08.50,中文简体,NTP,0000,0000,0000,,- 可以帮我戴起来吗？- 当然
+Dialogue: 0,0:21:11.15,0:21:12.00,中文简体,NTP,0000,0000,0000,,我本来想在
+Dialogue: 0,0:21:12.00,0:21:13.15,中文简体,NTP,0000,0000,0000,,我们来这之前给你的
+Dialogue: 0,0:21:13.83,0:21:15.80,中文简体,NTP,0000,0000,0000,,但是我很害羞
+Dialogue: 0,0:21:15.82,0:21:17.00,中文简体,NTP,0000,0000,0000,,这是真正的我们
+Dialogue: 0,0:21:17.01,0:21:19.00,中文简体,NTP,0000,0000,0000,,单独在一起的机会
+Dialogue: 0,0:21:23.20,0:21:24.03,中文简体,NTP,0000,0000,0000,,去看看
+Dialogue: 0,0:21:27.56,0:21:30.55,中文简体,NTP,0000,0000,0000,,哦 艾西 太美了
+Dialogue: 0,0:21:31.70,0:21:33.00,中文简体,NTP,0000,0000,0000,,我很喜欢
+Dialogue: 0,0:21:33.52,0:21:34.85,中文简体,NTP,0000,0000,0000,,我永远不会取下来
+Dialogue: 0,0:22:32.62,0:22:34.10,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,0:23:10.66,0:23:12.25,中文简体,NTP,0000,0000,0000,,有人吗？
+Dialogue: 0,0:24:14.73,0:24:16.15,中文简体,NTP,0000,0000,0000,,我知道这有人
+Dialogue: 0,0:24:22.83,0:24:24.10,中文简体,NTP,0000,0000,0000,,我听到你了
+Dialogue: 0,0:24:24.80,0:24:26.30,中文简体,NTP,0000,0000,0000,,我听到你在地窖里
+Dialogue: 0,0:25:03.77,0:25:06.20,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,0:28:32.58,0:28:33.88,中文简体,NTP,0000,0000,0000,,艾西
+Dialogue: 0,0:29:08.81,0:29:09.87,中文简体,NTP,0000,0000,0000,,救命
+Dialogue: 0,0:29:34.85,0:29:35.60,中文简体,NTP,0000,0000,0000,,发生什么事？
+Dialogue: 0,0:29:35.60,0:29:36.60,中文简体,NTP,0000,0000,0000,,你怎么啦？
+Dialogue: 0,0:29:36.60,0:29:38.20,中文简体,NTP,0000,0000,0000,,是树林里有什么弄成你这样吗？
+Dialogue: 0,0:29:38.39,0:29:40.10,中文简体,NTP,0000,0000,0000,,不 是树林自己
+Dialogue: 0,0:29:41.35,0:29:42.10,中文简体,NTP,0000,0000,0000,,它们活了 艾西
+Dialogue: 0,0:29:42.10,0:29:44.55,中文简体,NTP,0000,0000,0000,,他们活了
+Dialogue: 0,0:29:44.55,0:29:46.25,中文简体,NTP,0000,0000,0000,,艾西 我为什么不带她去卧室里
+Dialogue: 0,0:29:46.25,0:29:47.28,中文简体,NTP,0000,0000,0000,,那样她就可以趟一会儿了
+Dialogue: 0,0:29:47.28,0:29:48.40,中文简体,NTP,0000,0000,0000,,我不躺
+Dialogue: 0,0:29:49.15,0:29:50.20,中文简体,NTP,0000,0000,0000,,我要离开这
+Dialogue: 0,0:29:50.78,0:29:52.30,中文简体,NTP,0000,0000,0000,,我要马上离开这里
+Dialogue: 0,0:29:52.88,0:29:54.08,中文简体,NTP,0000,0000,0000,,马上 艾西
+Dialogue: 0,0:29:54.08,0:29:55.08,中文简体,NTP,0000,0000,0000,,等等
+Dialogue: 0,0:29:55.13,0:29:57.07,中文简体,NTP,0000,0000,0000,,我相信今晚 是不能离开了
+Dialogue: 0,0:29:57.07,0:29:58.28,中文简体,NTP,0000,0000,0000,,- 谢丽尔  - 谢丽尔
+Dialogue: 0,0:29:58.28,0:29:59.60,中文简体,NTP,0000,0000,0000,,谢丽尔 外面没有什么
+Dialogue: 0,0:29:59.60,0:30:00.90,中文简体,NTP,0000,0000,0000,,树是不会攻击人的
+Dialogue: 0,0:30:01.00,0:30:03.50,中文简体,NTP,0000,0000,0000,,艾西 你能送我回城镇
+Dialogue: 0,0:30:03.60,0:30:04.30,中文简体,NTP,0000,0000,0000,,什么 马上？
+Dialogue: 0,0:30:05.60,0:30:06.68,中文简体,NTP,0000,0000,0000,,可以
+Dialogue: 0,0:30:06.78,0:30:07.68,中文简体,NTP,0000,0000,0000,,我送你去
+Dialogue: 0,0:30:07.68,0:30:08.90,中文简体,NTP,0000,0000,0000,,但是听你在说什么
+Dialogue: 0,0:30:08.95,0:30:10.40,中文简体,NTP,0000,0000,0000,,我不介意这是有多么离谱
+Dialogue: 0,0:30:10.85,0:30:13.05,中文简体,NTP,0000,0000,0000,,我要马上离开这地方
+Dialogue: 0,0:30:14.08,0:30:19.04,中文简体,NTP,0000,0000,0000,,好 你今晚可以呆在城镇里
+Dialogue: 0,0:31:01.13,0:31:03.09,中文简体,NTP,0000,0000,0000,,快 别这样
+Dialogue: 0,0:31:27.16,0:31:28.90,中文简体,NTP,0000,0000,0000,,我知道会不能启动的
+Dialogue: 0,0:31:29.00,0:31:30.40,中文简体,NTP,0000,0000,0000,,它不让我们离开
+Dialogue: 0,0:32:25.42,0:32:27.00,中文简体,NTP,0000,0000,0000,,你为什么停车？
+Dialogue: 0,0:32:28.93,0:32:30.13,中文简体,NTP,0000,0000,0000,,在这等会
+Dialogue: 0,0:32:41.18,0:32:42.30,中文简体,NTP,0000,0000,0000,,你看到什么了吗？
+Dialogue: 0,0:32:46.19,0:32:47.20,中文简体,NTP,0000,0000,0000,,你去哪？
+Dialogue: 0,0:32:51.83,0:32:53.03,中文简体,NTP,0000,0000,0000,,艾西？
+Dialogue: 0,0:33:05.30,0:33:06.20,中文简体,NTP,0000,0000,0000,,艾西？
+Dialogue: 0,0:34:08.23,0:34:09.90,中文简体,NTP,0000,0000,0000,,它不让我们离开
+Dialogue: 0,0:34:09.90,0:34:12.00,中文简体,NTP,0000,0000,0000,,它不让我们离开
+Dialogue: 0,0:34:12.27,0:34:14.10,中文简体,NTP,0000,0000,0000,,我告诉过你 我告诉过你
+Dialogue: 0,0:34:14.65,0:34:16.20,中文简体,NTP,0000,0000,0000,,它不让我们离开
+Dialogue: 0,0:34:16.34,0:34:18.24,中文简体,NTP,0000,0000,0000,,你为什么不听我说？
+Dialogue: 0,0:34:33.00,0:34:35.00,中文简体,NTP,0000,0000,0000,,我知道我的妻子
+Dialogue: 0,0:34:35.00,0:34:37.30,中文简体,NTP,0000,0000,0000,,已经是达里 安魔鬼的主人
+Dialogue: 0,0:34:37.90,0:34:39.20,中文简体,NTP,0000,0000,0000,,我害怕
+Dialogue: 0,0:34:39.20,0:34:41.00,中文简体,NTP,0000,0000,0000,,用这本书唯一征服
+Dialogue: 0,0:34:41.00,0:34:43.10,中文简体,NTP,0000,0000,0000,,这些着魔的人方法…
+Dialogue: 0,0:34:43.30,0:34:44.80,中文简体,NTP,0000,0000,0000,,这是通过对肉体的分割
+Dialogue: 0,0:34:45.25,0:34:47.24,中文简体,NTP,0000,0000,0000,,我现在要离开避免这些恐怖
+Dialogue: 0,0:34:47.24,0:34:48.20,中文简体,NTP,0000,0000,0000,,但是对我自己…
+Dialogue: 0,0:34:49.30,0:34:51.50,中文简体,NTP,0000,0000,0000,,我已经看到黑影在树林里游荡…
+Dialogue: 0,0:34:51.50,0:34:53.15,中文简体,NTP,0000,0000,0000,,我毫不怀疑的我
+Dialogue: 0,0:34:53.20,0:34:55.58,中文简体,NTP,0000,0000,0000,,已经从 这本书中复兴…
+Dialogue: 0,0:34:56.30,0:34:58.95,中文简体,NTP,0000,0000,0000,,很明显这是在叫我
+Dialogue: 0,0:35:00.00,0:35:01.60,中文简体,NTP,0000,0000,0000,,好 让我想想
+Dialogue: 0,0:35:02.62,0:35:03.43,中文简体,NTP,0000,0000,0000,,是7
+Dialogue: 0,0:35:03.63,0:35:04.73,中文简体,NTP,0000,0000,0000,,哪一种？
+Dialogue: 0,0:35:04.90,0:35:06.15,中文简体,NTP,0000,0000,0000,,呃… 菱形
+Dialogue: 0,0:35:06.20,0:35:08.10,中文简体,NTP,0000,0000,0000,,不 不 等等 红桃
+Dialogue: 0,0:35:08.33,0:35:09.50,中文简体,NTP,0000,0000,0000,,我的天 红桃7
+Dialogue: 0,0:35:09.50,0:35:10.15,中文简体,NTP,0000,0000,0000,,你说对了
+Dialogue: 0,0:35:10.40,0:35:12.38,中文简体,NTP,0000,0000,0000,,嘿 艾西 我猜对了
+Dialogue: 0,0:35:13.25,0:35:14.90,中文简体,NTP,0000,0000,0000,,是的 真让人惊奇 琳达
+Dialogue: 0,0:35:15.55,0:35:16.40,中文简体,NTP,0000,0000,0000,,我不知道 我不知道
+Dialogue: 0,0:35:16.42,0:35:17.25,中文简体,NTP,0000,0000,0000,,但是我想这是
+Dialogue: 0,0:35:17.25,0:35:18.60,中文简体,NTP,0000,0000,0000,,特别的感觉或是什么吧
+Dialogue: 0,0:35:18.65,0:35:20.50,中文简体,NTP,0000,0000,0000,,- 你知道 就像E.S.P  - 好吧 猜猜这张
+Dialogue: 0,0:35:20.65,0:35:22.80,中文简体,NTP,0000,0000,0000,,好的… 是7
+Dialogue: 0,0:35:22.83,0:35:24.90,中文简体,NTP,0000,0000,0000,,- 我不敢相信  - 黑桃的
+Dialogue: 0,0:35:24.94,0:35:27.90,中文简体,NTP,0000,0000,0000,,黑桃12
+Dialogue: 0,0:35:30.75,0:35:33.42,中文简体,NTP,0000,0000,0000,,红桃4
+Dialogue: 0,0:35:33.50,0:35:36.00,中文简体,NTP,0000,0000,0000,,黑桃8
+Dialogue: 0,0:35:36.56,0:35:40.52,中文简体,NTP,0000,0000,0000,,黑桃2 菱形J 梅花J
+Dialogue: 0,0:35:43.56,0:35:47.60,中文简体,NTP,0000,0000,0000,,你们为什么打扰我们消息？
+Dialogue: 0,0:35:47.60,0:35:49.50,中文简体,NTP,0000,0000,0000,,把我们从远古的睡眠中吵醒？
+Dialogue: 0,0:35:50.80,0:35:51.60,中文简体,NTP,0000,0000,0000,,你们要死
+Dialogue: 0,0:35:52.50,0:35:54.45,中文简体,NTP,0000,0000,0000,,就像在你们之前的 其他人一样
+Dialogue: 0,0:35:55.77,0:35:58.20,中文简体,NTP,0000,0000,0000,,一个一个的 我们会带着你们
+Dialogue: 0,0:36:11.83,0:36:13.00,中文简体,NTP,0000,0000,0000,,她怎么啦？
+Dialogue: 0,0:36:23.80,0:36:25.00,中文简体,NTP,0000,0000,0000,,你看到她的眼睛了吗？
+Dialogue: 0,0:36:25.77,0:36:26.95,中文简体,NTP,0000,0000,0000,,艾西 我很怕
+Dialogue: 0,0:36:26.96,0:36:28.07,中文简体,NTP,0000,0000,0000,,她怎么啦？
+Dialogue: 0,0:37:19.46,0:37:20.90,中文简体,NTP,0000,0000,0000,,谢丽尔 住手
+Dialogue: 0,0:37:43.80,0:37:46.90,中文简体,NTP,0000,0000,0000,,- 哦 该死的  - 跟我们来 跟我们来
+Dialogue: 0,0:39:18.98,0:39:21.34,中文简体,NTP,0000,0000,0000,,艾西 我想我们应该离开这里
+Dialogue: 0,0:39:22.48,0:39:23.10,中文简体,NTP,0000,0000,0000,,是的
+Dialogue: 0,0:39:25.78,0:39:27.55,中文简体,NTP,0000,0000,0000,,到天亮还有几个小时
+Dialogue: 0,0:39:27.65,0:39:29.25,中文简体,NTP,0000,0000,0000,,我想我不能等这么久
+Dialogue: 0,0:39:30.99,0:39:32.85,中文简体,NTP,0000,0000,0000,,你必须这样 我们都必须这样
+Dialogue: 0,0:39:34.50,0:39:35.20,中文简体,NTP,0000,0000,0000,,到早上
+Dialogue: 0,0:39:35.75,0:39:36.60,中文简体,NTP,0000,0000,0000,,我们上车
+Dialogue: 0,0:39:37.50,0:39:39.80,中文简体,NTP,0000,0000,0000,,通过桥 还有…
+Dialogue: 0,0:39:43.10,0:39:45.85,中文简体,NTP,0000,0000,0000,,她为什么不停的发出可怕的声音？
+Dialogue: 0,0:39:45.95,0:39:46.50,中文简体,NTP,0000,0000,0000,,我不知道
+Dialogue: 0,0:39:47.30,0:39:50.00,中文简体,NTP,0000,0000,0000,,她的眼睛怎么回事？
+Dialogue: 0,0:39:51.86,0:39:54.17,中文简体,NTP,0000,0000,0000,,她的眼睛怎么回事？
+Dialogue: 0,0:39:55.33,0:39:59.60,中文简体,NTP,0000,0000,0000,,上帝啊 她的眼睛是怎么回事？
+Dialogue: 0,0:40:14.34,0:40:15.80,中文简体,NTP,0000,0000,0000,,一切都会没事的
+Dialogue: 0,0:40:35.75,0:40:38.00,中文简体,NTP,0000,0000,0000,,斯加醍 我… 我想外面有什么东西
+Dialogue: 0,0:40:47.83,0:40:50.20,中文简体,NTP,0000,0000,0000,,去睡觉 好吗？
+Dialogue: 0,0:42:41.03,0:42:42.13,中文简体,NTP,0000,0000,0000,,霞丽？
+Dialogue: 0,0:43:44.50,0:43:46.30,中文简体,NTP,0000,0000,0000,,我着火了 我着火了
+Dialogue: 0,0:43:46.34,0:43:48.20,中文简体,NTP,0000,0000,0000,,不 不
+Dialogue: 0,0:43:53.33,0:43:54.00,中文简体,NTP,0000,0000,0000,,谢谢
+Dialogue: 0,0:43:55.00,0:43:57.30,中文简体,NTP,0000,0000,0000,,我不知道… 我该如何逃脱…
+Dialogue: 0,0:43:57.56,0:44:00.80,中文简体,NTP,0000,0000,0000,,如果我在还在火堆里面…
+Dialogue: 0,0:44:01.90,0:44:04.20,中文简体,NTP,0000,0000,0000,,燃烧了我漂亮的肉体
+Dialogue: 0,0:44:04.58,0:44:06.68,中文简体,NTP,0000,0000,0000,,你有漂亮的皮肤
+Dialogue: 0,0:44:07.88,0:44:09.43,中文简体,NTP,0000,0000,0000,,把它给我们
+Dialogue: 0,0:44:24.56,0:44:25.93,中文简体,NTP,0000,0000,0000,,你必须跟我们走
+Dialogue: 0,0:44:36.85,0:44:38.03,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,0:45:04.10,0:45:06.38,中文简体,NTP,0000,0000,0000,,不… 不… 不… 不
+Dialogue: 0,0:47:12.03,0:47:12.93,中文简体,NTP,0000,0000,0000,,劈她
+Dialogue: 0,0:47:15.00,0:47:15.90,中文简体,NTP,0000,0000,0000,,劈她
+Dialogue: 0,0:47:17.33,0:47:18.33,中文简体,NTP,0000,0000,0000,,劈她
+Dialogue: 0,0:47:23.56,0:47:27.52,中文简体,NTP,0000,0000,0000,,不要 不 不 不
+Dialogue: 0,0:47:28.70,0:47:32.52,中文简体,NTP,0000,0000,0000,,你爱她 不
+Dialogue: 0,0:47:34.80,0:47:36.60,中文简体,NTP,0000,0000,0000,,不 你爱她
+Dialogue: 0,0:48:11.83,0:48:12.93,中文简体,NTP,0000,0000,0000,,斯加醍？
+Dialogue: 0,0:48:15.38,0:48:16.38,中文简体,NTP,0000,0000,0000,,干什么？
+Dialogue: 0,0:48:17.61,0:48:19.58,中文简体,NTP,0000,0000,0000,,我们…
+Dialogue: 0,0:48:19.90,0:48:21.30,中文简体,NTP,0000,0000,0000,,我们该怎么办？
+Dialogue: 0,0:48:24.62,0:48:26.00,中文简体,NTP,0000,0000,0000,,我们埋了她
+Dialogue: 0,0:48:27.62,0:48:29.00,中文简体,NTP,0000,0000,0000,,我们不能埋霞丽
+Dialogue: 0,0:48:29.60,0:48:31.20,中文简体,NTP,0000,0000,0000,,她是… 她是我们的朋友
+Dialogue: 0,0:48:31.20,0:48:32.20,中文简体,NTP,0000,0000,0000,,她已经死了
+Dialogue: 0,0:48:35.23,0:48:36.43,中文简体,NTP,0000,0000,0000,,霞丽死了
+Dialogue: 0,0:48:40.33,0:48:41.93,中文简体,NTP,0000,0000,0000,,我们立刻埋了她
+Dialogue: 0,0:49:41.45,0:49:42.60,中文简体,NTP,0000,0000,0000,,琳达还在睡觉
+Dialogue: 0,0:49:43.75,0:49:44.30,中文简体,NTP,0000,0000,0000,,我想她的腿…
+Dialogue: 0,0:49:44.31,0:49:45.24,中文简体,NTP,0000,0000,0000,,我要马上离开这
+Dialogue: 0,0:49:45.73,0:49:47.34,中文简体,NTP,0000,0000,0000,,斯加醍 我们无法带着琳达
+Dialogue: 0,0:49:47.34,0:49:48.70,中文简体,NTP,0000,0000,0000,,像她这样的腿不能去任何地方
+Dialogue: 0,0:49:48.74,0:49:49.45,中文简体,NTP,0000,0000,0000,,我们不知道
+Dialogue: 0,0:49:49.45,0:49:51.45,中文简体,NTP,0000,0000,0000,,除了那桥还是否有其他的路
+Dialogue: 0,0:49:51.93,0:49:53.43,中文简体,NTP,0000,0000,0000,,也许要走路或许在悬崖
+Dialogue: 0,0:49:53.50,0:49:55.90,中文简体,NTP,0000,0000,0000,,周围有其他的旧公路
+Dialogue: 0,0:49:57.03,0:49:58.10,中文简体,NTP,0000,0000,0000,,我是说 除了桥
+Dialogue: 0,0:49:58.13,0:50:00.03,中文简体,NTP,0000,0000,0000,,还有其他的路
+Dialogue: 0,0:50:00.87,0:50:01.55,中文简体,NTP,0000,0000,0000,,听我说
+Dialogue: 0,0:50:02.00,0:50:04.00,中文简体,NTP,0000,0000,0000,,琳达的腿不能走路
+Dialogue: 0,0:50:04.03,0:50:05.13,中文简体,NTP,0000,0000,0000,,她连站都站不起来
+Dialogue: 0,0:50:06.43,0:50:07.73,中文简体,NTP,0000,0000,0000,,那我们留她在这…
+Dialogue: 0,0:50:08.00,0:50:09.50,中文简体,NTP,0000,0000,0000,,等着我们再回来接她
+Dialogue: 0,0:50:09.74,0:50:12.30,中文简体,NTP,0000,0000,0000,,- 什么 你疯了？- 听着… 我要离开
+Dialogue: 0,0:50:13.73,0:50:15.70,中文简体,NTP,0000,0000,0000,,我不在乎她发生什么事
+Dialogue: 0,0:50:16.65,0:50:17.45,中文简体,NTP,0000,0000,0000,,她是你的女朋友
+Dialogue: 0,0:50:17.45,0:50:18.35,中文简体,NTP,0000,0000,0000,,你照顾她
+Dialogue: 0,0:50:18.90,0:50:20.60,中文简体,NTP,0000,0000,0000,,我要离开这 马上
+Dialogue: 0,0:50:42.00,0:50:44.43,中文简体,NTP,0000,0000,0000,,很快你们就都会像我一样
+Dialogue: 0,0:50:45.25,0:50:47.55,中文简体,NTP,0000,0000,0000,,我们会把你们锁在地窖里
+Dialogue: 0,0:51:41.45,0:51:43.20,中文简体,NTP,0000,0000,0000,,- 天啊  - 艾西
+Dialogue: 0,0:51:43.43,0:51:46.13,中文简体,NTP,0000,0000,0000,,- 天啊  - 救救我
+Dialogue: 0,0:51:48.80,0:51:50.10,中文简体,NTP,0000,0000,0000,,救救我 艾西
+Dialogue: 0,0:51:58.10,0:52:00.80,中文简体,NTP,0000,0000,0000,,斯加醍 你会没事的
+Dialogue: 0,0:52:01.10,0:52:03.25,中文简体,NTP,0000,0000,0000,,你会没事的 你会明白没事的
+Dialogue: 0,0:52:15.43,0:52:17.53,中文简体,NTP,0000,0000,0000,,艾西 它不让我们离开
+Dialogue: 0,0:52:18.63,0:52:21.73,中文简体,NTP,0000,0000,0000,,谢丽尔 谢丽尔说的对
+Dialogue: 0,0:52:22.86,0:52:24.68,中文简体,NTP,0000,0000,0000,,我们都要死在这
+Dialogue: 0,0:52:24.68,0:52:26.00,中文简体,NTP,0000,0000,0000,,不 我们不会死的
+Dialogue: 0,0:52:26.10,0:52:28.12,中文简体,NTP,0000,0000,0000,,我们都会死 全部
+Dialogue: 0,0:52:29.86,0:52:31.70,中文简体,NTP,0000,0000,0000,,不 我们不会死的
+Dialogue: 0,0:52:32.03,0:52:33.00,中文简体,NTP,0000,0000,0000,,我们不会死的
+Dialogue: 0,0:52:33.00,0:52:33.83,中文简体,NTP,0000,0000,0000,,我们会离开这里
+Dialogue: 0,0:52:34.83,0:52:35.90,中文简体,NTP,0000,0000,0000,,现在听我说 斯加醍
+Dialogue: 0,0:52:36.93,0:52:38.20,中文简体,NTP,0000,0000,0000,,除了桥有其他的路吗？
+Dialogue: 0,0:52:40.63,0:52:42.50,中文简体,NTP,0000,0000,0000,,斯加醍 听我说
+Dialogue: 0,0:52:42.55,0:52:44.13,中文简体,NTP,0000,0000,0000,,上帝啊 斯加醍
+Dialogue: 0,0:52:47.23,0:52:50.45,中文简体,NTP,0000,0000,0000,,艾西…艾西 我不想死
+Dialogue: 0,0:52:52.45,0:52:53.80,中文简体,NTP,0000,0000,0000,,你不会离开我的 是吗 艾西？
+Dialogue: 0,0:52:53.84,0:52:54.40,中文简体,NTP,0000,0000,0000,,是吗？
+Dialogue: 0,0:52:54.59,0:52:56.00,中文简体,NTP,0000,0000,0000,,我不想死
+Dialogue: 0,0:52:56.83,0:52:58.25,中文简体,NTP,0000,0000,0000,,你不会丢下 我在这的 是吗？
+Dialogue: 0,0:52:58.35,0:52:59.90,中文简体,NTP,0000,0000,0000,,是吗？艾西？
+Dialogue: 0,0:53:03.63,0:53:06.50,中文简体,NTP,0000,0000,0000,,斯加醍 看在上帝的份上告诉我
+Dialogue: 0,0:53:06.80,0:53:08.88,中文简体,NTP,0000,0000,0000,,除了桥还有其他的路吗？
+Dialogue: 0,0:53:09.48,0:53:11.89,中文简体,NTP,0000,0000,0000,,有 有痕迹
+Dialogue: 0,0:53:13.72,0:53:15.11,中文简体,NTP,0000,0000,0000,,但是这树 艾西
+Dialogue: 0,0:53:16.40,0:53:17.11,中文简体,NTP,0000,0000,0000,,它们知道
+Dialogue: 0,0:53:19.35,0:53:21.30,中文简体,NTP,0000,0000,0000,,你不明白吗 艾西？它们活了
+Dialogue: 0,0:53:33.91,0:53:34.68,中文简体,NTP,0000,0000,0000,,闭嘴
+Dialogue: 0,0:53:34.73,0:53:35.53,中文简体,NTP,0000,0000,0000,,闭嘴 琳达
+Dialogue: 0,0:53:41.53,0:53:42.53,中文简体,NTP,0000,0000,0000,,闭嘴
+Dialogue: 0,0:53:58.53,0:53:59.53,中文简体,NTP,0000,0000,0000,,杀了她
+Dialogue: 0,0:54:00.86,0:54:01.42,中文简体,NTP,0000,0000,0000,,杀了她
+Dialogue: 0,0:54:01.84,0:54:05.13,中文简体,NTP,0000,0000,0000,,你能的话就杀了她
+Dialogue: 0,0:54:12.97,0:54:14.13,中文简体,NTP,0000,0000,0000,,上帝原谅我 琳达
+Dialogue: 0,0:54:39.93,0:54:42.33,中文简体,NTP,0000,0000,0000,,艾西 救救我 求你了
+Dialogue: 0,0:54:47.63,0:54:50.48,中文简体,NTP,0000,0000,0000,,艾西 救救我
+Dialogue: 0,0:54:50.53,0:54:52.23,中文简体,NTP,0000,0000,0000,,求你了 艾西
+Dialogue: 0,0:54:52.90,0:54:53.60,中文简体,NTP,0000,0000,0000,,哦 艾西
+Dialogue: 0,0:54:53.65,0:54:56.00,中文简体,NTP,0000,0000,0000,,不要再让他们把我带走
+Dialogue: 0,0:54:57.09,0:55:00.20,中文简体,NTP,0000,0000,0000,,- 求你了  - 不 我不会 我发誓
+Dialogue: 0,0:55:01.53,0:55:04.83,中文简体,NTP,0000,0000,0000,,艾西 艾西 救我
+Dialogue: 0,0:55:04.93,0:55:06.53,中文简体,NTP,0000,0000,0000,,让我出去
+Dialogue: 0,0:55:07.02,0:55:10.98,中文简体,NTP,0000,0000,0000,,艾西？艾西 救我
+Dialogue: 0,0:55:11.03,0:55:13.99,中文简体,NTP,0000,0000,0000,,让我离开这 我现在没事了
+Dialogue: 0,0:55:14.93,0:55:18.66,中文简体,NTP,0000,0000,0000,,我现在没事了艾西 我没事了
+Dialogue: 0,0:55:20.65,0:55:22.43,中文简体,NTP,0000,0000,0000,,不要锁着链条让我出去
+Dialogue: 0,0:55:30.73,0:55:31.73,中文简体,NTP,0000,0000,0000,,谢丽尔？
+Dialogue: 0,0:56:06.00,0:56:06.80,中文简体,NTP,0000,0000,0000,,谢丽尔？
+Dialogue: 0,0:56:13.09,0:56:15.42,中文简体,NTP,0000,0000,0000,,我现在没事了 艾西
+Dialogue: 0,0:56:16.15,0:56:18.06,中文简体,NTP,0000,0000,0000,,不要锁着链条让我出去
+Dialogue: 0,0:56:19.88,0:56:21.20,中文简体,NTP,0000,0000,0000,,我现在没事了
+Dialogue: 0,0:56:21.80,0:56:23.30,中文简体,NTP,0000,0000,0000,,你的妹妹 谢丽尔
+Dialogue: 0,0:56:31.53,0:56:33.03,中文简体,NTP,0000,0000,0000,,你这杂种
+Dialogue: 0,0:56:33.11,0:56:35.08,中文简体,NTP,0000,0000,0000,,你为什么要这样折磨我？
+Dialogue: 0,0:56:35.08,0:56:35.67,中文简体,NTP,0000,0000,0000,,为什么？
+Dialogue: 0,0:56:47.12,0:56:47.85,中文简体,NTP,0000,0000,0000,,闭嘴
+Dialogue: 0,0:56:48.13,0:56:50.13,中文简体,NTP,0000,0000,0000,,我们会抓到你的
+Dialogue: 0,0:56:50.85,0:56:53.78,中文简体,NTP,0000,0000,0000,,我们会抓到你的
+Dialogue: 0,0:56:53.85,0:56:56.20,中文简体,NTP,0000,0000,0000,,你是偷看
+Dialogue: 0,0:56:56.61,0:56:59.00,中文简体,NTP,0000,0000,0000,,该睡觉了
+Dialogue: 0,0:56:59.81,0:57:00.61,中文简体,NTP,0000,0000,0000,,我们…
+Dialogue: 0,0:57:09.35,0:57:10.53,中文简体,NTP,0000,0000,0000,,这样是没有用的
+Dialogue: 0,0:57:10.78,0:57:12.03,中文简体,NTP,0000,0000,0000,,没有用的
+Dialogue: 0,0:57:12.15,0:57:14.31,中文简体,NTP,0000,0000,0000,,早晚 它会为他来
+Dialogue: 0,0:57:14.51,0:57:16.31,中文简体,NTP,0000,0000,0000,,然后它会为你而来
+Dialogue: 0,0:57:41.78,0:57:42.30,中文简体,NTP,0000,0000,0000,,给
+Dialogue: 0,0:57:45.81,0:57:48.85,中文简体,NTP,0000,0000,0000,,现在 大约一个小时后 太阳就出来的
+Dialogue: 0,0:57:48.90,0:57:50.15,中文简体,NTP,0000,0000,0000,,我们就能一起离开这里
+Dialogue: 0,0:57:51.19,0:57:54.35,中文简体,NTP,0000,0000,0000,,你 我… 琳达 霞丽
+Dialogue: 0,0:57:56.50,0:57:58.60,中文简体,NTP,0000,0000,0000,,不 不… 不
+Dialogue: 0,0:57:59.45,0:58:00.93,中文简体,NTP,0000,0000,0000,,霞丽 她…
+Dialogue: 0,0:58:02.93,0:58:04.83,中文简体,NTP,0000,0000,0000,,我们都能一起回家
+Dialogue: 0,0:58:05.93,0:58:08.07,中文简体,NTP,0000,0000,0000,,你不想回家吗？
+Dialogue: 0,0:58:08.87,0:58:11.33,中文简体,NTP,0000,0000,0000,,我敢肯定你想回家 不是吗？
+Dialogue: 0,0:58:16.13,0:58:17.23,中文简体,NTP,0000,0000,0000,,斯加醍？
+Dialogue: 0,0:59:22.25,0:59:23.25,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,0:59:23.91,0:59:24.91,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,1:01:51.30,1:01:52.22,中文简体,NTP,0000,0000,0000,,哦 琳达
+Dialogue: 0,1:06:04.27,1:06:06.65,中文简体,NTP,0000,0000,0000,,到这儿来
+Dialogue: 0,1:08:15.73,1:08:17.02,中文简体,NTP,0000,0000,0000,,门
+Dialogue: 0,1:08:39.72,1:08:40.72,中文简体,NTP,0000,0000,0000,,后门
+Dialogue: 0,1:08:49.39,1:08:52.00,中文简体,NTP,0000,0000,0000,,子弹 我在哪看到弹盒了？
+Dialogue: 0,1:10:31.50,1:10:33.60,中文简体,NTP,0000,0000,0000,,我们会抓住你
+Dialogue: 0,1:10:34.25,1:10:36.39,中文简体,NTP,0000,0000,0000,,我们会抓住你
+Dialogue: 0,1:10:36.40,1:10:37.73,中文简体,NTP,0000,0000,0000,,闭嘴 琳达
+Dialogue: 0,1:10:38.14,1:10:40.43,中文简体,NTP,0000,0000,0000,,- 我们都会死  - 闭嘴
+Dialogue: 0,1:10:40.44,1:10:42.43,中文简体,NTP,0000,0000,0000,,- 都闭嘴  - 闭嘴
+Dialogue: 0,1:10:42.96,1:10:45.70,中文简体,NTP,0000,0000,0000,,- 你真好  - 天啊 原谅我 琳达
+Dialogue: 0,1:10:46.32,1:10:48.96,中文简体,NTP,0000,0000,0000,,因为是肉体的分割…
+Dialogue: 0,1:10:48.96,1:10:49.50,中文简体,NTP,0000,0000,0000,,劈她
+Dialogue: 0,1:10:50.03,1:10:50.93,中文简体,NTP,0000,0000,0000,,我很喜欢它
+Dialogue: 0,1:10:50.93,1:10:51.60,中文简体,NTP,0000,0000,0000,,劈她
+Dialogue: 0,1:10:51.76,1:10:52.76,中文简体,NTP,0000,0000,0000,,我永远不会取下来
+Dialogue: 0,1:10:52.76,1:10:53.36,中文简体,NTP,0000,0000,0000,,劈她
+Dialogue: 0,1:14:41.90,1:14:43.65,中文简体,NTP,0000,0000,0000,,哦 别这样 别这样
+Dialogue: 0,1:14:43.66,1:14:45.20,中文简体,NTP,0000,0000,0000,,你为什么要这样折磨我？
+Dialogue: 0,1:15:32.68,1:15:33.60,中文简体,NTP,0000,0000,0000,,琳达
+Dialogue: 0,1:15:51.46,1:15:52.96,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,1:15:54.66,1:15:55.80,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,1:21:04.72,1:21:07.48,中文简体,NTP,0000,0000,0000,,哦 不 天啊
+Dialogue: 0,1:21:23.69,1:21:25.19,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,1:21:27.93,1:21:29.43,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,1:21:32.50,1:21:34.00,中文简体,NTP,0000,0000,0000,,跟我们来
+Dialogue: 0,1:23:51.35,1:23:53.53,中文简体,NTP,0000,0000,0000,,啊啊啊啊
+
+
