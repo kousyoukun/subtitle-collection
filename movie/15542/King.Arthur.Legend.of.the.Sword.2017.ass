@@ -1,0 +1,1346 @@
+[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,SimHei,18,&H00FFFFFF,&H00F0F0F0,&H00000000,&H80000000,0,0,0,0,100,100,0,0,0,1,0,2,20,20,10,1
+Style: En,Tahoma,12,&H000080FF,&H00FFFFFF,&H0053371A,&H500E0A00,0,0,0,0,100,76,0,0,0,1,0,2,20,20,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:02:50.70,0:02:53.37,En,,0000,0000,0000,,尤瑟 这场仗我们没胜算\N{\rEn}Uther, I don't think we can win this fight.
+Dialogue: 0,0:02:53.43,0:02:55.74,Default,,0000,0000,0000,,我了解莫德雷德 他会接受投降的\N{\rEn}I know Mordred. He would accept surrender.
+Dialogue: 0,0:02:55.80,0:02:56.90,Default,,0000,0000,0000,,拿着我的王冠\N{\rEn}Hold the crown.
+Dialogue: 0,0:02:59.20,0:03:00.51,Default,,0000,0000,0000,,拿好了\N{\rEn}And hold it steady.
+Dialogue: 0,0:03:55.96,0:03:58.23,Default,,0000,0000,0000,,血洗敌军\N{\rEn}Drink their blood!
+Dialogue: 0,0:04:02.63,0:04:03.64,Default,,0000,0000,0000,,战斗\N{\rEn}War!
+Dialogue: 0,0:06:06.16,0:06:08.96,Default,,0000,0000,0000,,大家别忘了 莫德雷德崛起前\N{\rEn}Let us not forget that before Mordred,
+Dialogue: 0,0:06:09.03,0:06:12.23,Default,,0000,0000,0000,,巫师跟我们普通人和平共处\N{\rEn}the Mages lived among us in harmony.
+Dialogue: 0,0:06:12.30,0:06:15.70,Default,,0000,0000,0000,,我们和巫师之间的关系一直都非常融洽\N{\rEn}Our relationship with them was always peaceful.
+Dialogue: 0,0:06:15.77,0:06:17.84,Default,,0000,0000,0000,,那时他们没尝到力量的滋味\N{\rEn}That was before they tasted power
+Dialogue: 0,0:06:17.90,0:06:19.67,Default,,0000,0000,0000,,也没造出那群战争怪物\N{\rEn}and produced those creatures of war.
+Dialogue: 0,0:06:19.74,0:06:22.57,Default,,0000,0000,0000,,但错的只是莫德雷德 跟巫师无关\N{\rEn}But it was only Mordred, not his people.
+Dialogue: 0,0:06:22.64,0:06:24.84,Default,,0000,0000,0000,,所以为什么要屠杀他们 沃蒂根\N{\rEn}So why are we slaughtering them, Vortigern?
+Dialogue: 0,0:06:24.91,0:06:26.98,Default,,0000,0000,0000,,殿下您以前不是跟巫师关系很友好吗\N{\rEn}Was not the prince friendly with the Mages at one time?
+Dialogue: 0,0:06:27.05,0:06:28.95,Default,,0000,0000,0000,,不是还跟莫德雷德学习过\N{\rEn}Did he not study with Mordred himself?
+Dialogue: 0,0:06:29.01,0:06:31.05,Default,,0000,0000,0000,,你想说什么\N{\rEn}What are you implying?
+Dialogue: 0,0:06:31.12,0:06:34.08,Default,,0000,0000,0000,,是我父亲送我去跟他们学习的\N{\rEn}I was sent to study with him by my father,
+Dialogue: 0,0:06:34.15,0:06:35.72,Default,,0000,0000,0000,,作为双方友好的象征\N{\rEn}as a token of diplomacy.
+Dialogue: 0,0:06:35.79,0:06:38.19,Default,,0000,0000,0000,,我们只想提醒尊敬的国王陛下\N{\rEn}We would only seek to remind Your Majesty
+Dialogue: 0,0:06:38.26,0:06:42.39,Default,,0000,0000,0000,,正是一位巫师 梅林把圣剑交给您的\N{\rEn}that it was a Mage, Merlin, who gave you the great sword.
+Dialogue: 0,0:06:42.46,0:06:44.50,Default,,0000,0000,0000,,点火\N{\rEn}Light!
+Dialogue: 0,0:06:44.56,0:06:47.03,Default,,0000,0000,0000,,没有梅林和那些巫师 我们今天能坐在这儿吗\N{\rEn}Where would we be without Merlin and the Mages who helped him?
+Dialogue: 0,0:06:47.10,0:06:49.60,Default,,0000,0000,0000,,那他们在哪儿呢 为什么现在还不现身\N{\rEn}Where are they now? Why do they not show themselves?
+Dialogue: 0,0:06:49.67,0:06:51.94,Default,,0000,0000,0000,,你知道他们在哪儿 麦西亚大人\N{\rEn}You know where they are, Lord Mercia.
+Dialogue: 0,0:06:52.00,0:06:53.60,Default,,0000,0000,0000,,他们正在忙着逃命呢\N{\rEn}They are running for their lives!
+Dialogue: 0,0:06:53.60,0:06:54.37,Default,,0000,0000,0000,,够了\N{\rEn}Enough!
+Dialogue: 0,0:06:54.44,0:06:55.84,Default,,0000,0000,0000,,放箭\N{\rEn}Loose!
+Dialogue: 0,0:06:55.91,0:06:57.68,Default,,0000,0000,0000,,现在开始 我们停止杀戮\N{\rEn}There will b no more killings.
+Dialogue: 0,0:06:57.74,0:07:01.01,Default,,0000,0000,0000,,也不准再追杀巫师 听明白了了吗 弟弟\N{\rEn}There will be no more purges. Am I clear, brother?
+Dialogue: 0,0:07:04.62,0:07:06.02,Default,,0000,0000,0000,,都下去吧\N{\rEn}Now leave me.
+Dialogue: 0,0:07:16.30,0:07:17.50,Default,,0000,0000,0000,,和平\N{\rEn}Peace?
+Dialogue: 0,0:07:24.64,0:07:26.44,Default,,0000,0000,0000,,暂时而已\N{\rEn}For a while.
+Dialogue: 0,0:07:27.91,0:07:30.68,Default,,0000,0000,0000,,我们过来是不是打扰你们俩交流感情啊\N{\rEn}Have we arrived in time to save you from each other?
+Dialogue: 0,0:07:30.74,0:07:32.85,Default,,0000,0000,0000,,但是我只想跟你交流感情\N{\rEn}The only person I need saving from is you.
+Dialogue: 0,0:07:32.91,0:07:35.91,Default,,0000,0000,0000,,我是来看孩子的 不是你\N{\rEn}I came for the child, not you.
+Dialogue: 0,0:07:35.98,0:07:38.35,Default,,0000,0000,0000,,除非你能抢得过我\N{\rEn}Then you'll have to fight me for him.
+Dialogue: 0,0:07:38.42,0:07:40.42,Default,,0000,0000,0000,,我弟弟今天不太舒服\N{\rEn}My brother's not himself today.
+Dialogue: 0,0:07:40.49,0:07:42.92,Default,,0000,0000,0000,,好好照顾他 我们明天见\N{\rEn}Look after him. I'll see you tomorrow.
+Dialogue: 0,0:08:09.75,0:08:11.55,Default,,0000,0000,0000,,都准备好了吗\N{\rEn}Are the men ready?
+Dialogue: 0,0:08:11.62,0:08:13.08,Default,,0000,0000,0000,,准备好了\N{\rEn}Yes, they are.
+Dialogue: 0,0:08:15.79,0:08:18.09,Default,,0000,0000,0000,,你确定要这么做 大人\N{\rEn}Are you sure about this, My Lord?
+Dialogue: 0,0:08:24.60,0:08:28.57,Default,,0000,0000,0000,,听我说 王后 我现在要你按我说的做\N{\rEn}Listen to me, woman. I need you to do as I tell you.
+Dialogue: 0,0:08:28.63,0:08:30.27,Default,,0000,0000,0000,,出什么事了\N{\rEn}What's going on?
+Dialogue: 0,0:08:30.33,0:08:31.97,Default,,0000,0000,0000,,我要你带着亚瑟离开这里\N{\rEn}I need to get you and the boy away from here.
+Dialogue: 0,0:08:32.04,0:08:33.84,Default,,0000,0000,0000,,随后我会尽快追上你们\N{\rEn}And I'll join you as soon as I can.
+Dialogue: 0,0:08:33.91,0:08:35.17,Default,,0000,0000,0000,,尤瑟 我好怕\N{\rEn}I'm scared, Uther.
+Dialogue: 0,0:08:35.24,0:08:38.54,Default,,0000,0000,0000,,我有圣剑 快点儿\N{\rEn}I have the sword. Hurry.
+Dialogue: 0,0:08:39.58,0:08:41.91,Default,,0000,0000,0000,,你怎么知道这个地方\N{\rEn}How do you know of this place, my love?
+Dialogue: 0,0:08:42.98,0:08:45.25,Default,,0000,0000,0000,,告诉我 我们要去哪儿\N{\rEn}You must tell me where we're going.
+Dialogue: 0,0:08:47.59,0:08:48.89,Default,,0000,0000,0000,,为什么不回答我\N{\rEn}Why do you not answer me?
+Dialogue: 0,0:08:59.60,0:09:02.00,Default,,0000,0000,0000,,告诉我 我们来这儿干什么\N{\rEn}Tell me what we're doing down here.
+Dialogue: 0,0:09:11.94,0:09:14.61,Default,,0000,0000,0000,,亲爱的 到底怎么回事\N{\rEn}My darling, tell me what it is.
+Dialogue: 0,0:09:23.69,0:09:25.62,Default,,0000,0000,0000,,告诉我怎么了 我会帮你的\N{\rEn}Tell me what it is, and I'll make it stop.
+Dialogue: 0,0:09:29.06,0:09:30.33,Default,,0000,0000,0000,,没事的\N{\rEn}It's okay.
+Dialogue: 0,0:10:16.61,0:10:17.88,Default,,0000,0000,0000,,快解开小艇\N{\rEn}Untie the skiff.
+Dialogue: 0,0:10:44.68,0:10:52.58,Default,,0000,0000,0000,,亚瑟王：斗兽争霸
+Dialogue: 0,0:10:54.28,0:10:57.28,Default,,0000,0000,0000,,字幕制作：anti
+Dialogue: 0,0:12:59.17,0:13:01.51,Default,,0000,0000,0000,,沃蒂根国王\N{\rEn}King Vortigern!
+Dialogue: 0,0:13:03.84,0:13:05.18,Default,,0000,0000,0000,,滚开\N{\rEn}Move!
+Dialogue: 0,0:13:30.94,0:13:33.01,Default,,0000,0000,0000,,站住\N{\rEn}Come here!
+Dialogue: 0,0:14:07.57,0:14:09.21,Default,,0000,0000,0000,,来啊 打啊\N{\rEn}Come on! Come on!
+Dialogue: 0,0:14:44.11,0:14:45.44,Default,,0000,0000,0000,,快跑 儿子\N{\rEn}Run, son!
+Dialogue: 0,0:15:56.08,0:15:57.55,Default,,0000,0000,0000,,国王陛下驾到\N{\rEn}Step aside for the king.
+Dialogue: 0,0:16:25.24,0:16:26.68,Default,,0000,0000,0000,,让他们回去干活\N{\rEn}Get them back to work.
+Dialogue: 0,0:16:26.74,0:16:27.68,Default,,0000,0000,0000,,遵命\N{\rEn}Sire.
+Dialogue: 0,0:16:29.05,0:16:33.05,Default,,0000,0000,0000,,队长 让你的人老实点儿\N{\rEn}Sergeant! Get them under manners!
+Dialogue: 0,0:17:20.30,0:17:23.33,Default,,0000,0000,0000,,你还是这么英俊 陛下\N{\rEn}Still so handsome, my king.
+Dialogue: 0,0:17:23.40,0:17:25.97,Default,,0000,0000,0000,,水位为什么下降\N{\rEn}Why has the water dropped?
+Dialogue: 0,0:17:26.04,0:17:28.64,Default,,0000,0000,0000,,还有圣剑为什么现在就显形\N{\rEn}Why does the sword reveal itself now?
+Dialogue: 0,0:17:28.71,0:17:32.71,Default,,0000,0000,0000,,我现在还没准备好 塔还没建成\N{\rEn}I'm not ready, the tower is not complete.
+Dialogue: 0,0:17:32.78,0:17:37.48,Default,,0000,0000,0000,,因为你的力量增强了 反抗你的力量也随之增强\N{\rEn}As your power increases, so, too, do the forces that will oppose you.
+Dialogue: 0,0:17:37.55,0:17:42.09,Default,,0000,0000,0000,,善恶 保持平衡是不可违抗的\N{\rEn}Balance is a law that cannot be transgressed.
+Dialogue: 0,0:17:42.15,0:17:44.99,Default,,0000,0000,0000,,真正的国王终会来临\N{\rEn}The born king will come.
+Dialogue: 0,0:17:45.06,0:17:47.79,Default,,0000,0000,0000,,这件事不可避免\N{\rEn}It is inevitable.
+Dialogue: 0,0:17:49.29,0:17:50.83,Default,,0000,0000,0000,,我们说好的\N{\rEn}We had a deal.
+Dialogue: 0,0:17:50.90,0:17:53.13,Default,,0000,0000,0000,,我献祭挚爱之人 让鲜血流入这水中\N{\rEn}When the blood of a loved one is spilt in these waters,
+Dialogue: 0,0:17:54.73,0:17:56.07,Default,,0000,0000,0000,,而你们要满足我的愿望\N{\rEn}my desire must be met.
+Dialogue: 0,0:17:56.13,0:17:59.14,Default,,0000,0000,0000,,我们的约定说得很清楚 国王陛下\N{\rEn}There is no ambiguity, My Lord.
+Dialogue: 0,0:17:59.20,0:18:01.34,Default,,0000,0000,0000,,我们也从未有一丝违背\N{\rEn}We kept our side of the covenant.
+Dialogue: 0,0:18:01.41,0:18:04.31,Default,,0000,0000,0000,,是你弄丢了那个男孩 还有圣剑\N{\rEn}It was you who lost the boy, and the sword.
+Dialogue: 0,0:18:04.38,0:18:05.88,Default,,0000,0000,0000,,难道我牺牲得还不够多吗\N{\rEn}Have I not sacrificed enough?
+Dialogue: 0,0:18:05.94,0:18:08.31,Default,,0000,0000,0000,,难道你没感觉到力量的增长吗\N{\rEn}And have you not felt your power increase?
+Dialogue: 0,0:18:08.38,0:18:12.35,Default,,0000,0000,0000,,你每征服一个王国 你的高塔就会再高一层\N{\rEn}With every kingdom conquered, with every level added to your tower.
+Dialogue: 0,0:18:12.42,0:18:15.29,Default,,0000,0000,0000,,等你用高卢的银子建造塔顶时\N{\rEn}When it is capped with the silver from Gaul,
+Dialogue: 0,0:18:15.35,0:18:17.79,Default,,0000,0000,0000,,圣剑就会只听从你的召唤\N{\rEn}you will have what you wanted.
+Dialogue: 0,0:18:20.16,0:18:22.03,Default,,0000,0000,0000,,找到男孩\N{\rEn}Find the boy.
+Dialogue: 0,0:18:22.09,0:18:23.43,Default,,0000,0000,0000,,杀了他\N{\rEn}Kill him.
+Dialogue: 0,0:18:23.50,0:18:27.03,Default,,0000,0000,0000,,圣剑就会只听从你的召唤\N{\rEn}And the sword will answer only to you.
+Dialogue: 0,0:18:27.10,0:18:29.97,Default,,0000,0000,0000,,如果你想要更多帮助\N{\rEn}If you desire further help,
+Dialogue: 0,0:18:30.03,0:18:32.30,Default,,0000,0000,0000,,你是知道代价的\N{\rEn}you know the price.
+Dialogue: 0,0:18:37.64,0:18:40.11,Default,,0000,0000,0000,,早上碰到了那群维京人\N{\rEn}Bumped into the Vikings this morning.
+Dialogue: 0,0:18:40.18,0:18:42.51,Default,,0000,0000,0000,,他们非要我给你这个\N{\rEn}They insisted I give you this
+Dialogue: 0,0:18:43.38,0:18:46.18,Default,,0000,0000,0000,,并且致以最真诚的歉意\N{\rEn}with their deepest apologies.
+Dialogue: 0,0:18:49.92,0:18:51.32,Default,,0000,0000,0000,,早点好起来\N{\rEn}Get yourself well.
+Dialogue: 0,0:18:51.39,0:18:53.02,Default,,0000,0000,0000,,这并不是你的责任 亚瑟\N{\rEn}This wasn't your responsibility, Arthur.
+Dialogue: 0,0:18:53.09,0:18:55.09,Default,,0000,0000,0000,,不要犯傻了\N{\rEn}Don't be silly.
+Dialogue: 0,0:18:55.16,0:18:57.20,Default,,0000,0000,0000,,你跟姑娘们照看我的时间 比我照看你们的\N{\rEn}You girls have looked after me for a lot longer than
+Dialogue: 0,0:18:57.20,0:18:58.20,Default,,0000,0000,0000,,长得多了\N{\rEn}I've looked after you.
+Dialogue: 0,0:18:58.26,0:19:00.00,Default,,0000,0000,0000,,我欠你太多了\N{\rEn}I owe you everything.
+Dialogue: 0,0:19:02.07,0:19:03.53,Default,,0000,0000,0000,,你笑什么\N{\rEn}What's so funny?
+Dialogue: 0,0:19:03.60,0:19:05.94,Default,,0000,0000,0000,,我只想知道你怎么让维京人出的钱\N{\rEn}I just wanna know how you get money out of Vikings.
+Dialogue: 0,0:19:07.50,0:19:09.34,Default,,0000,0000,0000,,直接问他们要\N{\rEn}You ask them for it.
+Dialogue: 0,0:19:10.77,0:19:12.71,Default,,0000,0000,0000,,给我开门\N{\rEn}Open the door!
+Dialogue: 0,0:19:13.78,0:19:15.65,Default,,0000,0000,0000,,开门 奉国王之命\N{\rEn}Open in the name of the king!
+Dialogue: 0,0:19:15.71,0:19:17.88,Default,,0000,0000,0000,,开门吧\N{\rEn}Open it.
+Dialogue: 0,0:19:18.82,0:19:20.15,Default,,0000,0000,0000,,有何贵干\N{\rEn}Yes, gentlemen?
+Dialogue: 0,0:19:20.22,0:19:22.75,Default,,0000,0000,0000,,有个叛徒往这儿来了 我们要挨家挨户搜\N{\rEn}A turner come down this way. We're searching all houses.
+Dialogue: 0,0:19:22.82,0:19:25.39,Default,,0000,0000,0000,,慢一点儿 新来的 免得出什么漏子\N{\rEn}Whoa. Slow down, new boy, before you trip up.
+Dialogue: 0,0:19:25.46,0:19:27.62,Default,,0000,0000,0000,,你说什么\N{\rEn}What did you say?
+Dialogue: 0,0:19:27.69,0:19:29.59,Default,,0000,0000,0000,,这双手不想要了是吧\N{\rEn}I'm gonna take your hands for that.
+Dialogue: 0,0:19:29.66,0:19:30.83,Default,,0000,0000,0000,,队长\N{\rEn}Sergeant!
+Dialogue: 0,0:19:32.70,0:19:35.70,Default,,0000,0000,0000,,这地方我之前怎么跟你说的来着\N{\rEn}What did I tell you about this establishment?
+Dialogue: 0,0:19:35.77,0:19:36.80,Default,,0000,0000,0000,,他先碰我的 大人\N{\rEn}He touched me, sir.
+Dialogue: 0,0:19:36.87,0:19:38.64,Default,,0000,0000,0000,,那你应该觉得自己走运\N{\rEn}Well, you should count yourself lucky.
+Dialogue: 0,0:19:38.70,0:19:41.11,Default,,0000,0000,0000,,别人想碰他还得花钱呢\N{\rEn}Most people have to pay for that.
+Dialogue: 0,0:19:41.17,0:19:44.28,Default,,0000,0000,0000,,现在带着你的狗 给我出去\N{\rEn}Now take your terriers and get out!
+Dialogue: 0,0:19:48.78,0:19:50.38,Default,,0000,0000,0000,,杰克眼\N{\rEn}Jack's Eye.
+Dialogue: 0,0:19:50.45,0:19:52.58,Default,,0000,0000,0000,,他来这里干什么\N{\rEn}What did he want in here?
+Dialogue: 0,0:19:52.65,0:19:55.29,Default,,0000,0000,0000,,反抗分子最近又有动静了\N{\rEn}Resistance are on the move again.
+Dialogue: 0,0:19:55.35,0:19:57.66,Default,,0000,0000,0000,,攻击了上游的一艘驳船\N{\rEn}Hit a branding barge upriver.
+Dialogue: 0,0:19:59.12,0:20:02.39,Default,,0000,0000,0000,,有没有见过什么陌生人来这儿\N{\rEn}Anyone in the house you don't know?
+Dialogue: 0,0:20:02.46,0:20:05.53,Default,,0000,0000,0000,,这我不确定 杰克 人来人往的\N{\rEn}Well, I'm not sure, Jack. People come and go.
+Dialogue: 0,0:20:05.60,0:20:07.57,Default,,0000,0000,0000,,但我们不会招惹他们\N{\rEn}But we don't fall that side.
+Dialogue: 0,0:20:07.63,0:20:09.67,Default,,0000,0000,0000,,好吧 也许吧\N{\rEn}Ah, well, that's as may be.
+Dialogue: 0,0:20:11.33,0:20:12.90,Default,,0000,0000,0000,,谁知道是谁招惹谁\N{\rEn}Well, they fall where they fall.
+Dialogue: 0,0:20:12.97,0:20:16.27,Default,,0000,0000,0000,,真正的国王这种鬼话对大家都没好处\N{\rEn}This "born king" bollocks isn't good for anyone.
+Dialogue: 0,0:20:16.34,0:20:17.74,Default,,0000,0000,0000,,介意我看看吗\N{\rEn}Mind if I take a look?
+Dialogue: 0,0:20:20.28,0:20:21.55,Default,,0000,0000,0000,,他在流血\N{\rEn}He's bleeding.
+Dialogue: 0,0:20:23.28,0:20:25.95,Default,,0000,0000,0000,,逃跑的时候中箭了\N{\rEn}Took an arrow on the way out.
+Dialogue: 0,0:20:26.02,0:20:29.69,Default,,0000,0000,0000,,敢攻击国王的船 那个人被抓住后会怎样\N{\rEn}What would happen to a man who hits the king's barge upriver?
+Dialogue: 0,0:20:29.75,0:20:31.49,Default,,0000,0000,0000,,你知道会怎么样\N{\rEn}Well, you know what would happen.
+Dialogue: 0,0:20:33.76,0:20:35.83,Default,,0000,0000,0000,,那可有的罪受了\N{\rEn}And it doesn't happen quickly.
+Dialogue: 0,0:20:35.89,0:20:38.16,Default,,0000,0000,0000,,那要是有人窝藏这个人会怎么样\N{\rEn}What would happen to the people harboring such a man?
+Dialogue: 0,0:20:38.23,0:20:41.10,Default,,0000,0000,0000,,那就得跟那个人受一样的罪\N{\rEn}Well, they get treated the same as the man they hide.
+Dialogue: 0,0:20:41.17,0:20:42.70,Default,,0000,0000,0000,,是这样吗\N{\rEn}Would they, now?
+Dialogue: 0,0:20:45.37,0:20:48.17,Default,,0000,0000,0000,,那我们就不欢迎你来这儿了 兄弟\N{\rEn}Not sure you're too welcome here, mate.
+Dialogue: 0,0:20:59.02,0:21:01.95,Default,,0000,0000,0000,,他们会好好招呼你的 你不用担心\N{\rEn}You're in safe hands now, no need to worry.
+Dialogue: 0,0:21:02.99,0:21:05.05,Default,,0000,0000,0000,,我们去屋里谈 走吧\N{\rEn}In the back room, now.
+Dialogue: 0,0:21:05.12,0:21:07.79,Default,,0000,0000,0000,,这怎么回事 杰克 跟我们有什么关系\N{\rEn}What's this all about, Jack? What's it got to do with us?
+Dialogue: 0,0:21:07.86,0:21:10.06,Default,,0000,0000,0000,,你知道那个人是谁吗\N{\rEn}Do you have any idea who that man is?
+Dialogue: 0,0:21:10.13,0:21:12.46,Default,,0000,0000,0000,,听起来他很有名 可惜我不知道\N{\rEn}For a man who's so popular, I'm surprised I don't.
+Dialogue: 0,0:21:12.53,0:21:13.93,Default,,0000,0000,0000,,老泥鳅比尔\N{\rEn}Goosefat Bill.
+Dialogue: 0,0:21:14.00,0:21:16.10,Default,,0000,0000,0000,,我知道这人 你们几次把他\N{\rEn}I know who he is. He got that moniker
+Dialogue: 0,0:21:16.17,0:21:18.70,Default,,0000,0000,0000,,扔进监狱 他都逃了出来 所以有了这个绰号\N{\rEn}'cause he keeps slipping out from the bars you keep putting him behind.
+Dialogue: 0,0:21:18.77,0:21:19.94,Default,,0000,0000,0000,,今晚在你们这里找到他\N{\rEn}He was found in this establishment,
+Dialogue: 0,0:21:20.00,0:21:21.47,Default,,0000,0000,0000,,这对你们来说可不太好\N{\rEn}and that doesn't look good for you.
+Dialogue: 0,0:21:21.54,0:21:22.34,Default,,0000,0000,0000,,怎么回事\N{\rEn}What's going on?
+Dialogue: 0,0:21:22.54,0:21:23.34,Default,,0000,0000,0000,,什么怎么回事\N{\rEn}What's going on where?
+Dialogue: 0,0:21:23.41,0:21:26.94,Default,,0000,0000,0000,,现在有人在注意你 亚瑟 经常提到你的名字\N{\rEn}You've got some heat on you, Arthur. Your name keeps coming up.
+Dialogue: 0,0:21:27.01,0:21:28.15,Default,,0000,0000,0000,,哪些人提到的\N{\rEn}In what circles?
+Dialogue: 0,0:21:28.21,0:21:29.91,Default,,0000,0000,0000,,我隔壁的大妈提到的\N{\rEn}My mum's sewing circle.
+Dialogue: 0,0:21:29.98,0:21:34.59,Default,,0000,0000,0000,,我可是黑甲兵队长 蠢货 你说我听谁提到的\N{\rEn}I'm a Blackleg sergeant, stupid. What circles do you think?
+Dialogue: 0,0:21:34.65,0:21:37.15,Default,,0000,0000,0000,,跟我说一下那个叫露西的女人\N{\rEn}Now, tell me a story about a girl called Lucy,
+Dialogue: 0,0:21:37.22,0:21:38.66,Default,,0000,0000,0000,,叫灰胡子的维京人\N{\rEn}a Viking called Greybeard,
+Dialogue: 0,0:21:38.72,0:21:41.23,Default,,0000,0000,0000,,还有在墙上涂写的那些反动字眼\N{\rEn}and some rebel graffiti dirtying these walls.
+Dialogue: 0,0:21:41.29,0:21:42.39,Default,,0000,0000,0000,,你是要写书吗\N{\rEn}Are you writing a book?
+Dialogue: 0,0:21:42.46,0:21:44.43,Default,,0000,0000,0000,,告诉我 说清楚点儿\N{\rEn}Tell me. Every detail.
+Dialogue: 0,0:21:46.16,0:21:48.70,Default,,0000,0000,0000,,我们跟几个维京人稍稍聊了几句\N{\rEn}We had a quiet word with a couple of Vikings.
+Dialogue: 0,0:21:49.93,0:21:52.04,Default,,0000,0000,0000,,退后\N{\rEn}Get back! Back!
+Dialogue: 0,0:21:52.10,0:21:54.84,Default,,0000,0000,0000,,你从开头跟我说 从开头说起\N{\rEn}I said from the beginning, the very beginning.
+Dialogue: 0,0:21:54.91,0:21:55.91,Default,,0000,0000,0000,,我醒来\N{\rEn}I woke up.
+Dialogue: 0,0:21:57.11,0:21:58.18,Default,,0000,0000,0000,,然后\N{\rEn}Then?
+Dialogue: 0,0:21:58.24,0:21:59.94,Default,,0000,0000,0000,,然后我穿上衣服\N{\rEn}Well, then I got dressed...
+Dialogue: 0,0:22:00.01,0:22:01.91,Default,,0000,0000,0000,,走下楼 看到姑娘们 露西不见了\N{\rEn}I went downstairs, I saw the girls. Lucy was missing.
+Dialogue: 0,0:22:01.98,0:22:02.88,Default,,0000,0000,0000,,露西呢\N{\rEn}Where's Lucy?
+Dialogue: 0,0:22:02.95,0:22:03.67,Default,,0000,0000,0000,,她是个好姑娘\N{\rEn}She's a good girl.
+Dialogue: 0,0:22:03.95,0:22:04.65,Default,,0000,0000,0000,,人很好\N{\rEn}A nice girl.
+Dialogue: 0,0:22:04.72,0:22:05.42,Default,,0000,0000,0000,,在这儿工作\N{\rEn}She works here.
+Dialogue: 0,0:22:05.42,0:22:06.12,Default,,0000,0000,0000,,然后呢\N{\rEn}Then?
+Dialogue: 0,0:22:08.08,0:22:09.92,Default,,0000,0000,0000,,然后 我们几个打理了一会儿生意\N{\rEn}Then, me and the lads took care of a bit of business.
+Dialogue: 0,0:22:09.99,0:22:11.05,Default,,0000,0000,0000,,处理了一些事儿\N{\rEn}Bit of housekeeping.
+Dialogue: 0,0:22:11.12,0:22:12.26,Default,,0000,0000,0000,,一切都正常吧\N{\rEn}Everything as it should be?
+Dialogue: 0,0:22:12.32,0:22:13.86,Default,,0000,0000,0000,,从船上弄来的战利品\N{\rEn}That's the spoil from the boats.
+Dialogue: 0,0:22:13.93,0:22:14.68,Default,,0000,0000,0000,,然后呢\N{\rEn}Then?
+Dialogue: 0,0:22:14.68,0:22:15.43,Default,,0000,0000,0000,,然后我们听说\N{\rEn}Then we heard...
+Dialogue: 0,0:22:15.49,0:22:16.89,Default,,0000,0000,0000,,乔治昨晚又有麻烦了\N{\rEn}George had trouble again last night.
+Dialogue: 0,0:22:16.96,0:22:18.43,Default,,0000,0000,0000,,好吧 我们出去见面\N{\rEn}All right, meet me out the front.
+Dialogue: 0,0:22:18.50,0:22:20.20,Default,,0000,0000,0000,,哪个乔治 乔治国王 愤怒的乔治\N{\rEn}Which George? King George? Angry George?
+Dialogue: 0,0:22:20.26,0:22:22.47,Default,,0000,0000,0000,,屠龙者乔治 说清楚 哪个乔治\N{\rEn}George of the Dragon? Be clear, Arthur. Which George?
+Dialogue: 0,0:22:22.53,0:22:23.60,Default,,0000,0000,0000,,我们的乔治\N{\rEn}Our George.
+Dialogue: 0,0:22:23.67,0:22:25.87,Default,,0000,0000,0000,,中国人乔治 功夫乔治\N{\rEn}Chinese George, Kung-Fu George.
+Dialogue: 0,0:22:25.88,0:22:26.50,Default,,0000,0000,0000,,乔治\N{\rEn}George?
+Dialogue: 0,0:22:26.94,0:22:27.50,Default,,0000,0000,0000,,亚瑟\N{\rEn}Arthur.
+Dialogue: 0,0:22:27.57,0:22:28.51,Default,,0000,0000,0000,,我们有点麻烦 跟那帮\N{\rEn}We heard he'd had some trouble with the...
+Dialogue: 0,0:22:28.57,0:22:29.81,Default,,0000,0000,0000,,维京人\N{\rEn}Vikings.
+Dialogue: 0,0:22:29.87,0:22:31.88,Default,,0000,0000,0000,,好吧 他们都不太好说话\N{\rEn}Well, none of them are house-trained.
+Dialogue: 0,0:22:31.94,0:22:32.68,Default,,0000,0000,0000,,我以为你警告过他们\N{\rEn}I thought you'd warned them.
+Dialogue: 0,0:22:32.68,0:22:34.68,Default,,0000,0000,0000,,警告过 他们的英语说得不好\N{\rEn}I did. They don't speak English good.
+Dialogue: 0,0:22:34.75,0:22:36.01,Default,,0000,0000,0000,,我看至少比你说得好\N{\rEn}They speak it better than you.
+Dialogue: 0,0:22:36.08,0:22:37.92,Default,,0000,0000,0000,,等等 往前一点儿\N{\rEn}Hold up, hold up. Back up.
+Dialogue: 0,0:22:37.98,0:22:40.49,Default,,0000,0000,0000,,你确定见到乔治之前你没有见过别人吗\N{\rEn}Are you sure you didn't see someone else before you saw George?
+Dialogue: 0,0:22:41.49,0:22:42.55,Default,,0000,0000,0000,,亚瑟 亚瑟\N{\rEn}Morning, Art.
+Dialogue: 0,0:22:42.62,0:22:44.42,Default,,0000,0000,0000,,还有迈克\N{\rEn}We saw Mike.
+Dialogue: 0,0:22:44.49,0:22:45.76,Default,,0000,0000,0000,,早啊 迈克\N{\rEn}All right, Mike.
+Dialogue: 0,0:22:45.82,0:22:47.16,Default,,0000,0000,0000,,尖钉迈克 犹太人迈克 哪个迈克\N{\rEn}Mike the Spike? Kosher Mike? Which Mike?
+Dialogue: 0,0:22:47.23,0:22:48.49,Default,,0000,0000,0000,,你简直说得我头晕\N{\rEn}You're giving me a headache.
+Dialogue: 0,0:22:48.56,0:22:50.60,Default,,0000,0000,0000,,扁鼻子迈克\N{\rEn}Flat-Nose Mike.
+Dialogue: 0,0:22:50.66,0:22:52.43,Default,,0000,0000,0000,,那家伙在我们的地盘儿贩卖皮毛 还不给我们回扣\N{\rEn}He was trafficking furs through our vicinity without paying a commission.
+Dialogue: 0,0:22:52.50,0:22:54.97,Default,,0000,0000,0000,,今儿个货不少啊 比平常多得多\N{\rEn}That's quite a load, bit bigger than usual.
+Dialogue: 0,0:22:55.03,0:22:57.03,Default,,0000,0000,0000,,是啊 突然都到了 只好装上岸\N{\rEn}Yeah, changed last minute. Just landed on me.
+Dialogue: 0,0:22:57.10,0:22:58.50,Default,,0000,0000,0000,,多了总比少了好\N{\rEn}More is better than less.
+Dialogue: 0,0:22:58.50,0:23:00.50,Default,,0000,0000,0000,,多了什么时候都比少了好 迈克\N{\rEn}More is always better than less, Mike.
+Dialogue: 0,0:23:00.57,0:23:03.51,Default,,0000,0000,0000,,多了绝对比少了好 迈克 赚的钱多嘛\N{\rEn}More's definitely better than less, Mike. You've had a result.
+Dialogue: 0,0:23:03.57,0:23:06.84,Default,,0000,0000,0000,,对不起 亚瑟 以后不会了 我保证\N{\rEn}I'm sorry, Art. It won't happen again. I promise.
+Dialogue: 0,0:23:07.58,0:23:08.88,Default,,0000,0000,0000,,没关系 迈克\N{\rEn}You're all right, Mike.
+Dialogue: 0,0:23:08.95,0:23:10.68,Default,,0000,0000,0000,,能交朋友 又何必树敌呢\N{\rEn}Why have enemies when you can have friends?
+Dialogue: 0,0:23:10.75,0:23:11.78,Default,,0000,0000,0000,,你把钱放哪儿了\N{\rEn}Where'd you put the money?
+Dialogue: 0,0:23:11.78,0:23:12.35,Default,,0000,0000,0000,,什么钱\N{\rEn}What money?
+Dialogue: 0,0:23:12.35,0:23:13.32,Default,,0000,0000,0000,,钱吗\N{\rEn}Money?
+Dialogue: 0,0:23:13.35,0:23:13.62,Default,,0000,0000,0000,,什么钱\N{\rEn}What money?
+Dialogue: 0,0:23:13.68,0:23:15.75,Default,,0000,0000,0000,,你把钱和宝贝藏起来了\N{\rEn}Did you hide it with the rest of your coffers?
+Dialogue: 0,0:23:15.82,0:23:16.69,Default,,0000,0000,0000,,你到底想问什么\N{\rEn}You're all over the place.
+Dialogue: 0,0:23:16.69,0:23:18.09,Default,,0000,0000,0000,,一会儿问这个一会儿问那个\N{\rEn}You can't keep your questions in a straight line.
+Dialogue: 0,0:23:18.16,0:23:20.73,Default,,0000,0000,0000,,我想原原本本跟你说 但是你一直打岔\N{\rEn}I'm trying to tell a story here, and you keep interrupting.
+Dialogue: 0,0:23:20.79,0:23:22.59,Default,,0000,0000,0000,,再说了 我根本没什么金库\N{\rEn}Anyway, I don't have any coffers.
+Dialogue: 0,0:23:22.66,0:23:24.33,Default,,0000,0000,0000,,除了给你的那份儿\N{\rEn}Once you've taken your share
+Dialogue: 0,0:23:24.40,0:23:26.56,Default,,0000,0000,0000,,我还得养着这帮老弱病残 根本没钱留下\N{\rEn}and I've looked after the weak and needy, I'm left broke.
+Dialogue: 0,0:23:26.63,0:23:28.00,Default,,0000,0000,0000,,迈克和皮毛\N{\rEn}Mike and the furs.
+Dialogue: 0,0:23:28.06,0:23:29.63,Default,,0000,0000,0000,,总算能说正事儿了 是吧杰克\N{\rEn}So we're back to that story, are we now, Jack?
+Dialogue: 0,0:23:29.70,0:23:30.70,Default,,0000,0000,0000,,你干什么 迈克\N{\rEn}What are you doing, Mike?
+Dialogue: 0,0:23:30.70,0:23:31.74,Default,,0000,0000,0000,,分享下收获\N{\rEn}Sharing the wealth.
+Dialogue: 0,0:23:31.80,0:23:34.80,Default,,0000,0000,0000,,钱别递给我 迈克 规矩不是这样的 把它给湿棍子\N{\rEn}Don't pass it to me, Mike. It doesn't work like that. Give it to Wet Stick.
+Dialogue: 0,0:23:34.87,0:23:36.87,Default,,0000,0000,0000,,我是拜克莱克 你给我干什么\N{\rEn}I'm Back Lack. What are you giving it to me for?
+Dialogue: 0,0:23:36.94,0:23:37.84,Default,,0000,0000,0000,,我晕头了\N{\rEn}What was I thinking?
+Dialogue: 0,0:23:37.94,0:23:40.14,Default,,0000,0000,0000,,别烦我们老大 迈克 他可是不收钱的\N{\rEn}Don't upset the boss, Mike. He doesn't handle the money.
+Dialogue: 0,0:23:40.21,0:23:41.54,Default,,0000,0000,0000,,对不起 今天忙晕头了\N{\rEn}Sorry, it's been a long day.
+Dialogue: 0,0:23:41.61,0:23:43.28,Default,,0000,0000,0000,,今天才刚开始 迈克\N{\rEn}It's first thing in the morning, Mike.
+Dialogue: 0,0:23:43.35,0:23:44.15,Default,,0000,0000,0000,,他付钱了吗\N{\rEn}Did he pay?
+Dialogue: 0,0:23:44.35,0:23:46.15,Default,,0000,0000,0000,,他当然付了 那个迈克是个好人\N{\rEn}'Course he paid. He's a good boy, that Mike.
+Dialogue: 0,0:23:46.22,0:23:48.55,Default,,0000,0000,0000,,花点儿零钱学学街头规矩才对\N{\rEn}Buy some lessons in street etiquette with the change.
+Dialogue: 0,0:23:48.62,0:23:50.49,Default,,0000,0000,0000,,- 零钱  - 我们不找零 迈克\N{\rEn}- Change?  - There's no change, Mike.
+Dialogue: 0,0:23:50.55,0:23:51.49,Default,,0000,0000,0000,,再见了 迈克\N{\rEn}See you later, Mike.
+Dialogue: 0,0:23:51.49,0:23:52.42,Default,,0000,0000,0000,,再见 迈克\N{\rEn}Cheers, Mike!
+Dialogue: 0,0:23:53.66,0:23:55.19,Default,,0000,0000,0000,,到底怎么回事 杰克\N{\rEn}What is this about, Jack?
+Dialogue: 0,0:23:55.26,0:23:57.96,Default,,0000,0000,0000,,反动涂画 一个小男孩\N{\rEn}Rebel graffiti. A young boy.
+Dialogue: 0,0:23:58.03,0:23:59.70,Default,,0000,0000,0000,,你们这儿的 名叫布鲁\N{\rEn}Your boy. Blue Boy.
+Dialogue: 0,0:23:59.76,0:24:01.23,Default,,0000,0000,0000,,他是个好孩子\N{\rEn}And he's a good boy.
+Dialogue: 0,0:24:01.30,0:24:02.83,Default,,0000,0000,0000,,你们干什么呢\N{\rEn}Oi! What are you lot doing?
+Dialogue: 0,0:24:02.90,0:24:05.27,Default,,0000,0000,0000,,我说你们可千万别找错人 杰克\N{\rEn}Don't start getting the wrong end of the stick, Jack.
+Dialogue: 0,0:24:05.34,0:24:06.80,Default,,0000,0000,0000,,他是个模范市民\N{\rEn}He's an upstanding citizen.
+Dialogue: 0,0:24:06.87,0:24:08.50,Default,,0000,0000,0000,,你最好管管你家小东西 莱克\N{\rEn}I think I found something that belongs to you, Lack.
+Dialogue: 0,0:24:08.57,0:24:10.07,Default,,0000,0000,0000,,你干什么了 小子\N{\rEn}What you doing, boy?
+Dialogue: 0,0:24:10.14,0:24:11.21,Default,,0000,0000,0000,,他回来了\N{\rEn}He's coming back.
+Dialogue: 0,0:24:11.27,0:24:12.51,Default,,0000,0000,0000,,你说谁回来了\N{\rEn}Who's coming back?
+Dialogue: 0,0:24:12.58,0:24:13.94,Default,,0000,0000,0000,,真正的国王\N{\rEn}The born king.
+Dialogue: 0,0:24:14.01,0:24:15.95,Default,,0000,0000,0000,,对 等他来了 你就屁股开花了\N{\rEn}Yeah, and when he does, he'll spank your arse.
+Dialogue: 0,0:24:16.01,0:24:18.26,Default,,0000,0000,0000,,给我把手洗干净 趁你这双手还没丢\N{\rEn}Now, let's get your hands clean while you still got some.
+Dialogue: 0,0:24:18.28,0:24:20.05,Default,,0000,0000,0000,,他会砍掉你的手把你关起来\N{\rEn}He'll cut 'em off and have you in chains.
+Dialogue: 0,0:24:20.12,0:24:22.05,Default,,0000,0000,0000,,如果我们能抓住你 那他们也能\N{\rEn}If we can catch you, they can catch you.
+Dialogue: 0,0:24:22.12,0:24:23.85,Default,,0000,0000,0000,,如果你能抓住他 那我们也能\N{\rEn}If you can catch him, so can we.
+Dialogue: 0,0:24:23.92,0:24:25.32,Default,,0000,0000,0000,,我们还是接着说乔治和那帮棘手的\N{\rEn}Should we go back to George, and the trouble with the...
+Dialogue: 0,0:24:25.39,0:24:26.09,Default,,0000,0000,0000,,维京人\N{\rEn}Vikings.
+Dialogue: 0,0:24:26.09,0:24:26.79,Default,,0000,0000,0000,,发生了什么事\N{\rEn}So what happened?
+Dialogue: 0,0:24:26.86,0:24:28.56,Default,,0000,0000,0000,,那帮人开始耍威风\N{\rEn}Started throwing their weight about
+Dialogue: 0,0:24:28.63,0:24:30.86,Default,,0000,0000,0000,,- 然后露西就倒大霉了  - 你再说一遍\N{\rEn}- and then Lucy got the worst of it.  - Come again, George?
+Dialogue: 0,0:24:30.93,0:24:31.70,Default,,0000,0000,0000,,他们伤了露西\N{\rEn}They hurt Lucy.
+Dialogue: 0,0:24:31.70,0:24:32.46,Default,,0000,0000,0000,,我的露西\N{\rEn}My Lucy?
+Dialogue: 0,0:24:32.53,0:24:33.60,Default,,0000,0000,0000,,这可不行 杰克\N{\rEn}That can't happen, Jack.
+Dialogue: 0,0:24:33.67,0:24:34.87,Default,,0000,0000,0000,,这样绝对不行 杰克\N{\rEn}That can never happen, Jack.
+Dialogue: 0,0:24:34.93,0:24:36.17,Default,,0000,0000,0000,,听着 她是我的朋友\N{\rEn}You see, she's a friend of mine.
+Dialogue: 0,0:24:36.20,0:24:37.80,Default,,0000,0000,0000,,所以你必须补偿她一下\N{\rEn}So you're gonna have to sort her out.
+Dialogue: 0,0:24:37.87,0:24:39.90,Default,,0000,0000,0000,,警告他们 必须付钱\N{\rEn}They'd been warned. They had to pay.
+Dialogue: 0,0:24:39.97,0:24:42.27,Default,,0000,0000,0000,,你怎么让维京人出钱的\N{\rEn}How'd you get money from a Viking?
+Dialogue: 0,0:24:42.34,0:24:44.14,Default,,0000,0000,0000,,这问题不是个笑话吗\N{\rEn}I feel a joke coming on here.
+Dialogue: 0,0:24:44.21,0:24:45.44,Default,,0000,0000,0000,,当然问他要\N{\rEn}You ask him for it.
+Dialogue: 0,0:24:45.51,0:24:47.21,Default,,0000,0000,0000,,你先付钱 然后就能走了\N{\rEn}You're paying and then you're leaving.
+Dialogue: 0,0:24:48.55,0:24:50.28,Default,,0000,0000,0000,,没人跟你说话 小宝贝儿\N{\rEn}Nobody's talking to you, sweetheart.
+Dialogue: 0,0:24:50.35,0:24:52.25,Default,,0000,0000,0000,,好好坐着别说话 你最适合这样\N{\rEn}You sit there and be quiet. You are better at that...
+Dialogue: 0,0:24:52.32,0:24:54.68,Default,,0000,0000,0000,,不然我就一箭射穿你那条猪大腿\N{\rEn}Or I'll have to put an arrow through your lard-loving thigh.
+Dialogue: 0,0:24:56.15,0:24:58.79,Default,,0000,0000,0000,,你没带武器 直接走过去问他们要钱吗\N{\rEn}You were unarmed. You just walked in there and asked them for it?
+Dialogue: 0,0:24:58.86,0:25:00.59,Default,,0000,0000,0000,,没错 杰克 他们也给我了\N{\rEn}That's right, Jack, and they gave it to me.
+Dialogue: 0,0:25:00.66,0:25:02.89,Default,,0000,0000,0000,,他们都披着皮毛 就是扁鼻子迈克\N{\rEn}They were trying on furs. The same furs, as it happens
+Dialogue: 0,0:25:02.96,0:25:04.83,Default,,0000,0000,0000,,想瞒着我们贩卖的那些货\N{\rEn}that Flat-Nose Mike tried to hide from us.
+Dialogue: 0,0:25:04.90,0:25:06.93,Default,,0000,0000,0000,,多了什么时候都比少了好 迈克\N{\rEn}More is always better than less, Mike.
+Dialogue: 0,0:25:07.00,0:25:08.60,Default,,0000,0000,0000,,灰胡子朝我们吼了几声\N{\rEn}Old Greybeard banged on for a bit.
+Dialogue: 0,0:25:08.67,0:25:10.84,Default,,0000,0000,0000,,我有五十个经验丰富的战士\N{\rEn}I got 50 seasoned men of war.
+Dialogue: 0,0:25:10.90,0:25:13.60,Default,,0000,0000,0000,,你想见识一下 我们维京人的刀法吗\N{\rEn}You could shave a pig on the edge of our blades.
+Dialogue: 0,0:25:13.67,0:25:16.27,Default,,0000,0000,0000,,你没带武器的话 插他喉咙的那把刀哪儿来的\N{\rEn}If you were unarmed, where'd you find the blade to put to his throat?
+Dialogue: 0,0:25:16.34,0:25:18.38,Default,,0000,0000,0000,,好吧 拜克莱克射穿了那个傻大个儿\N{\rEn}Well, I borrowed it from his big, silly mate
+Dialogue: 0,0:25:18.44,0:25:21.08,Default,,0000,0000,0000,,的猪大腿 我就从他身上拿了把刀\N{\rEn}after Back Lack put an arrow through his lard-loving thigh.
+Dialogue: 0,0:25:25.38,0:25:26.68,Default,,0000,0000,0000,,退后\N{\rEn}Get back!
+Dialogue: 0,0:25:26.75,0:25:28.32,Default,,0000,0000,0000,,就这么回事 杰克\N{\rEn}That's your story, Jack.
+Dialogue: 0,0:25:28.39,0:25:29.59,Default,,0000,0000,0000,,我这就走\N{\rEn}I am leaving.
+Dialogue: 0,0:25:29.65,0:25:31.59,Default,,0000,0000,0000,,但我要拿了一年的工钱\N{\rEn}But I'm leaving with a year's wages.
+Dialogue: 0,0:25:31.66,0:25:34.73,Default,,0000,0000,0000,,灰胡子放下了自己的尊严\N{\rEn}Old Greybeard surrendered his dignity.
+Dialogue: 0,0:25:34.79,0:25:36.99,Default,,0000,0000,0000,,露西拿到了一年的工钱\N{\rEn}Lucy got a year's worth of wages.
+Dialogue: 0,0:25:37.06,0:25:39.20,Default,,0000,0000,0000,,而墙上的反动涂画也都没了\N{\rEn}And the rebel graffiti exists no more
+Dialogue: 0,0:25:39.26,0:25:43.00,Default,,0000,0000,0000,,因为被遵纪守法的布鲁他风趣幽默的老爸擦掉了\N{\rEn}because of the law-abiding, proactive Blue Boy and his fun-loving dad.
+Dialogue: 0,0:25:43.07,0:25:46.44,Default,,0000,0000,0000,,再然后 他们过上了幸福的生活\N{\rEn}And then, they all lived happily ever after.
+Dialogue: 0,0:25:46.50,0:25:49.41,Default,,0000,0000,0000,,不 他们幸福不了\N{\rEn}No, they didn't, Arthur.
+Dialogue: 0,0:25:49.47,0:25:52.61,Default,,0000,0000,0000,,因为这一次有件事你恐怕不知道\N{\rEn}Because for the first time, there's something you don't know.
+Dialogue: 0,0:25:52.68,0:25:54.61,Default,,0000,0000,0000,,也没人说过这件事\N{\rEn}Something nobody told you.
+Dialogue: 0,0:25:54.68,0:25:56.71,Default,,0000,0000,0000,,什么事\N{\rEn}And that is?
+Dialogue: 0,0:25:56.78,0:25:59.08,Default,,0000,0000,0000,,那帮维京人受国王庇护\N{\rEn}They're under the protection of the king.
+Dialogue: 0,0:26:01.62,0:26:06.16,Default,,0000,0000,0000,,你要是招惹了国王庇护的人 我可帮不了你\N{\rEn}And once you're under the protection of the king, I can't help you.
+Dialogue: 0,0:26:06.22,0:26:07.29,Default,,0000,0000,0000,,谁都帮不了\N{\rEn}Nobody can.
+Dialogue: 0,0:26:09.23,0:26:11.16,Default,,0000,0000,0000,,他们不会来抓我的\N{\rEn}They're not gonna bother about me.
+Dialogue: 0,0:26:14.70,0:26:16.27,Default,,0000,0000,0000,,情况怎么样 麦西亚\N{\rEn}Where do we stand, Mercia?
+Dialogue: 0,0:26:16.33,0:26:18.63,Default,,0000,0000,0000,,就剩最后一批年龄合适的人了\N{\rEn}We're down to the last men of the right age.
+Dialogue: 0,0:26:20.00,0:26:21.67,Default,,0000,0000,0000,,但是仍然没人能拔出圣剑\N{\rEn}And still no one has pulled the sword.
+Dialogue: 0,0:26:21.74,0:26:24.78,Default,,0000,0000,0000,,现在就把鸟放回鸟笼里吧 卡蒂亚\N{\rEn}Now put the bird back in the aviary, Catia.
+Dialogue: 0,0:26:30.08,0:26:33.62,Default,,0000,0000,0000,,最近一段日子民众都不太安分\N{\rEn}There's a general restlessness among the people.
+Dialogue: 0,0:26:33.68,0:26:36.65,Default,,0000,0000,0000,,事故更多了 涂画也多了\N{\rEn}More incidents. More graffiti.
+Dialogue: 0,0:26:39.26,0:26:40.79,Default,,0000,0000,0000,,请你原谅 国王陛下\N{\rEn}I beg your pardon, Your Majesty.
+Dialogue: 0,0:26:40.86,0:26:41.79,Default,,0000,0000,0000,,如果我知道\N{\rEn}If I'd known...
+Dialogue: 0,0:26:41.86,0:26:42.89,Default,,0000,0000,0000,,过来吧\N{\rEn}Come here.
+Dialogue: 0,0:26:42.96,0:26:44.19,Default,,0000,0000,0000,,说说你的意见\N{\rEn}I want your opinion.
+Dialogue: 0,0:26:45.43,0:26:47.20,Default,,0000,0000,0000,,玛吉可以代表民众\N{\rEn}Maggie represents the people.
+Dialogue: 0,0:26:47.26,0:26:50.10,Default,,0000,0000,0000,,她来自英格兰一个古老的家族\N{\rEn}She's from one of the oldest families in England.
+Dialogue: 0,0:26:50.17,0:26:51.40,Default,,0000,0000,0000,,她能告诉我们答案\N{\rEn}She can tell us.
+Dialogue: 0,0:26:51.47,0:26:52.67,Default,,0000,0000,0000,,遵命\N{\rEn}Sire.
+Dialogue: 0,0:26:53.40,0:26:54.94,Default,,0000,0000,0000,,民众敬爱我吗\N{\rEn}Do the people love me?
+Dialogue: 0,0:26:57.74,0:26:59.41,Default,,0000,0000,0000,,我敬爱陛下您\N{\rEn}I love Your Majesty
+Dialogue: 0,0:26:59.48,0:27:04.55,Default,,0000,0000,0000,,如果我能代表民众 那么 您就知道答案了\N{\rEn}and if I represent the people, then you have your answer.
+Dialogue: 0,0:27:04.61,0:27:06.15,Default,,0000,0000,0000,,给我们弄点儿吃的吧\N{\rEn}Bring us something to eat.
+Dialogue: 0,0:27:12.16,0:27:13.66,Default,,0000,0000,0000,,连我都开始担心\N{\rEn}Even I am left to wonder
+Dialogue: 0,0:27:13.73,0:27:15.96,Default,,0000,0000,0000,,我们是不是做得有些过头了\N{\rEn}if we are pushing them too far.
+Dialogue: 0,0:27:19.50,0:27:21.10,Default,,0000,0000,0000,,把高塔建好\N{\rEn}Finish the tower.
+Dialogue: 0,0:27:22.17,0:27:24.37,Default,,0000,0000,0000,,其他一切都无关紧要\N{\rEn}Everything else will be academic.
+Dialogue: 0,0:27:29.51,0:27:30.81,Default,,0000,0000,0000,,谢谢 玛吉\N{\rEn}Thank you, Maggie.
+Dialogue: 0,0:27:49.26,0:27:50.43,Default,,0000,0000,0000,,醒醒\N{\rEn}Wake up!
+Dialogue: 0,0:27:50.49,0:27:52.06,Default,,0000,0000,0000,,你必须控制它\N{\rEn}You must control it.
+Dialogue: 0,0:27:54.40,0:27:56.00,Default,,0000,0000,0000,,醒醒 听着\N{\rEn}Wake up! Listen!
+Dialogue: 0,0:27:56.07,0:27:58.33,Default,,0000,0000,0000,,你必须离开这里 快点儿\N{\rEn}You need to get out of here, now!
+Dialogue: 0,0:27:58.40,0:27:59.54,Default,,0000,0000,0000,,你干什么呢 莱克\N{\rEn}What are you doing, Lack?
+Dialogue: 0,0:27:59.60,0:28:00.77,Default,,0000,0000,0000,,杰克眼没有骗我们\N{\rEn}Jack's Eye was telling the truth.
+Dialogue: 0,0:28:00.84,0:28:02.21,Default,,0000,0000,0000,,那帮维京人不简单\N{\rEn}Those red beards are connected.
+Dialogue: 0,0:28:02.27,0:28:03.57,Default,,0000,0000,0000,,那又怎样 我们也是\N{\rEn}So, what? So are we.
+Dialogue: 0,0:28:03.64,0:28:05.01,Default,,0000,0000,0000,,不 你根本不明白\N{\rEn}No, you don't understand.
+Dialogue: 0,0:28:05.07,0:28:06.88,Default,,0000,0000,0000,,黑甲兵要来了\N{\rEn}The Blacklegs are coming.
+Dialogue: 0,0:28:06.94,0:28:09.85,Default,,0000,0000,0000,,等他们来了 肯定会拿你杀鸡儆猴\N{\rEn}And when they get here, they're gonna make an example out of you.
+Dialogue: 0,0:28:09.91,0:28:11.42,Default,,0000,0000,0000,,你得赶快走\N{\rEn}You gotta go now.
+Dialogue: 0,0:28:11.48,0:28:13.56,Default,,0000,0000,0000,,而且还不能走前门 跳窗户吧\N{\rEn}And you can't use the front door. Get out the window.
+Dialogue: 0,0:28:14.55,0:28:15.62,Default,,0000,0000,0000,,他们来了 快走\N{\rEn}They're here, move!
+Dialogue: 0,0:28:15.69,0:28:17.45,Default,,0000,0000,0000,,给我开门\N{\rEn}Open the door!
+Dialogue: 0,0:28:17.52,0:28:19.76,Default,,0000,0000,0000,,你们俩 去后门那儿\N{\rEn}Oi, you two, in the back!
+Dialogue: 0,0:28:19.82,0:28:22.16,Default,,0000,0000,0000,,把门给我踢开\N{\rEn}Kick the door down!
+Dialogue: 0,0:28:29.03,0:28:30.00,Default,,0000,0000,0000,,准备好了吗\N{\rEn}Are you ready?
+Dialogue: 0,0:28:30.03,0:28:31.60,Default,,0000,0000,0000,,准备好了\N{\rEn}Yeah, of course.
+Dialogue: 0,0:28:31.67,0:28:32.50,Default,,0000,0000,0000,,我们走吧\N{\rEn}Here we go.
+Dialogue: 0,0:28:32.57,0:28:33.54,Default,,0000,0000,0000,,早啊 各位\N{\rEn}All right, fellas?
+Dialogue: 0,0:28:33.57,0:28:36.14,Default,,0000,0000,0000,,早啊 小子 你一大早干什么呢\N{\rEn}Hello, boy. What are you doing out at this time?
+Dialogue: 0,0:28:36.21,0:28:38.84,Default,,0000,0000,0000,,我是个船工 大人 要趁早潮出海\N{\rEn}I work on the boats, sir. Out on the first tide.
+Dialogue: 0,0:28:38.91,0:28:42.05,Default,,0000,0000,0000,,你是船工 包里是什么\N{\rEn}The boats, eh? What's in the bag?
+Dialogue: 0,0:28:42.11,0:28:43.78,Default,,0000,0000,0000,,你年龄差不多合适\N{\rEn}And you're about the right age.
+Dialogue: 0,0:28:44.51,0:28:45.75,Default,,0000,0000,0000,,看看你的烙印\N{\rEn}Show us your brand.
+Dialogue: 0,0:28:49.95,0:28:51.36,Default,,0000,0000,0000,,你还没有测试过啊\N{\rEn}Have you not been tested?
+Dialogue: 0,0:28:51.42,0:28:53.99,Default,,0000,0000,0000,,我一直在海上 没机会去测试\N{\rEn}I'm always at sea, sir. Haven't had the chance.
+Dialogue: 0,0:28:54.06,0:28:55.93,Default,,0000,0000,0000,,那你现在有机会了\N{\rEn}Well, that's about to change now.
+Dialogue: 0,0:28:55.99,0:28:59.80,Default,,0000,0000,0000,,放心 你会上船的 只是不是你的船\N{\rEn}You're going on a boat, all right. Just not the one you think.
+Dialogue: 0,0:29:08.74,0:29:09.67,Default,,0000,0000,0000,,都弄好了 出发\N{\rEn}Come on, get off!
+Dialogue: 0,0:29:09.74,0:29:10.87,Default,,0000,0000,0000,,往前走\N{\rEn}Single file!
+Dialogue: 0,0:29:10.94,0:29:12.74,Default,,0000,0000,0000,,快点 赶快走\N{\rEn}Come on, get 'em off.
+Dialogue: 0,0:29:12.81,0:29:16.55,Default,,0000,0000,0000,,先来烙印 然后领喝的 完了回船上呆着\N{\rEn}Get your brand, get your drink, then back on the barge!
+Dialogue: 0,0:29:16.61,0:29:17.91,Default,,0000,0000,0000,,走啊\N{\rEn}Move!
+Dialogue: 0,0:29:17.98,0:29:21.09,Default,,0000,0000,0000,,快走 别磨蹭 走啊\N{\rEn}Move it! Come on! Move!
+Dialogue: 0,0:29:21.15,0:29:22.39,Default,,0000,0000,0000,,继续往前走\N{\rEn}Keep coming!
+Dialogue: 0,0:29:24.35,0:29:25.66,Default,,0000,0000,0000,,快走啊\N{\rEn}Move it!
+Dialogue: 0,0:29:25.72,0:29:27.59,Default,,0000,0000,0000,,他们怎么回事\N{\rEn}What's all that about?
+Dialogue: 0,0:29:27.66,0:29:29.93,Default,,0000,0000,0000,,我猜这就是欠钱的下场\N{\rEn}Guess that's what you get when you don't pay up.
+Dialogue: 0,0:29:29.99,0:29:31.43,Default,,0000,0000,0000,,孩子被抓起来\N{\rEn}Taking the kids now.
+Dialogue: 0,0:29:31.50,0:29:34.06,Default,,0000,0000,0000,,国王把他们关在这儿干什么\N{\rEn}What's he got them all penned up out here for?
+Dialogue: 0,0:29:34.13,0:29:37.37,Default,,0000,0000,0000,,等你见到国王 直接问他好了\N{\rEn}Well, when you see the king, why don't you ask him?
+Dialogue: 0,0:29:37.43,0:29:38.44,Default,,0000,0000,0000,,快点儿\N{\rEn}Hurry up!
+Dialogue: 0,0:29:40.27,0:29:41.27,Default,,0000,0000,0000,,往前走\N{\rEn}Move along!
+Dialogue: 0,0:29:52.05,0:29:53.45,Default,,0000,0000,0000,,感觉如何\N{\rEn}What was that?
+Dialogue: 0,0:29:53.52,0:29:55.05,Default,,0000,0000,0000,,天佑吾王\N{\rEn}God save the king.
+Dialogue: 0,0:30:02.53,0:30:04.70,Default,,0000,0000,0000,,搞什么 借过 伙计\N{\rEn}Bollocks. Excuse me, mate.
+Dialogue: 0,0:30:04.76,0:30:05.63,Default,,0000,0000,0000,,喂\N{\rEn}Oi.
+Dialogue: 0,0:30:05.76,0:30:06.83,Default,,0000,0000,0000,,别找事\N{\rEn}Leave it.
+Dialogue: 0,0:30:07.67,0:30:10.00,Default,,0000,0000,0000,,不好意思 借过 伙计\N{\rEn}Excuse me. Behind you, pal.
+Dialogue: 0,0:30:10.07,0:30:12.00,Default,,0000,0000,0000,,借过一下 让让\N{\rEn}Here, mind your back.
+Dialogue: 0,0:30:12.07,0:30:13.94,Default,,0000,0000,0000,,伙计 要排队的\N{\rEn}Oi, pal, there's a line here.
+Dialogue: 0,0:30:15.34,0:30:16.51,Default,,0000,0000,0000,,约翰\N{\rEn}John.
+Dialogue: 0,0:30:19.54,0:30:20.54,Default,,0000,0000,0000,,随你便\N{\rEn}All right, pal.
+Dialogue: 0,0:30:23.15,0:30:24.82,Default,,0000,0000,0000,,现在该我了\N{\rEn}As you were, mate.
+Dialogue: 0,0:30:26.82,0:30:28.42,Default,,0000,0000,0000,,好了 要我干什么\N{\rEn}All right, where do you want me?
+Dialogue: 0,0:30:28.49,0:30:31.02,Default,,0000,0000,0000,,特雷格 又来了一个\N{\rEn}Trigger, I think we got one here.
+Dialogue: 0,0:30:33.09,0:30:34.62,Default,,0000,0000,0000,,过来给我唱歌\N{\rEn}Bouncing on my knee.
+Dialogue: 0,0:30:34.69,0:30:37.29,Default,,0000,0000,0000,,你说要你干什么 手放在剑柄上 蠢货\N{\rEn}Where do you think I want you? Hands on the hilt, stupid.
+Dialogue: 0,0:31:02.95,0:31:05.16,Default,,0000,0000,0000,,两只手\N{\rEn}Oi, both hands.
+Dialogue: 0,0:31:06.66,0:31:08.56,Default,,0000,0000,0000,,我说 用两只手\N{\rEn}I said, both hands.
+Dialogue: 0,0:31:12.03,0:31:14.10,Default,,0000,0000,0000,,没错 十根手指\N{\rEn}Right, ten digits
+Dialogue: 0,0:31:14.16,0:31:16.47,Default,,0000,0000,0000,,紧紧握住剑柄 然后猛拉\N{\rEn}round the blunt bit. Give it a tug.
+Dialogue: 0,0:31:16.53,0:31:18.60,Default,,0000,0000,0000,,迈左脚 迈右脚\N{\rEn}Left foot, right foot.
+Dialogue: 0,0:31:18.67,0:31:19.87,Default,,0000,0000,0000,,过来烙印\N{\rEn}Collect your brand.
+Dialogue: 0,0:31:19.94,0:31:21.41,Default,,0000,0000,0000,,然后滚回船上\N{\rEn}Back on the barge.
+Dialogue: 0,0:32:28.44,0:32:29.88,Default,,0000,0000,0000,,关于他你就知道这些\N{\rEn}That's everything you know about him?
+Dialogue: 0,0:32:29.94,0:32:32.91,Default,,0000,0000,0000,,他的朋友都跑得很快\N{\rEn}His people were quick to disappear.
+Dialogue: 0,0:32:32.98,0:32:35.45,Default,,0000,0000,0000,,能打听到的就只有这些\N{\rEn}We got what information we could.
+Dialogue: 0,0:32:35.51,0:32:38.88,Default,,0000,0000,0000,,真是哪里都有他的身影啊\N{\rEn}Got a lot of fingers in a lot of pies.
+Dialogue: 0,0:32:38.95,0:32:41.02,Default,,0000,0000,0000,,跟黑甲兵也搭上了关系\N{\rEn}Blacklegs in his pockets, too.
+Dialogue: 0,0:32:44.05,0:32:45.62,Default,,0000,0000,0000,,这事儿我会处理\N{\rEn}I'll deal with this.
+Dialogue: 0,0:32:45.69,0:32:47.09,Default,,0000,0000,0000,,陛下\N{\rEn}My king.
+Dialogue: 0,0:32:54.43,0:32:55.53,Default,,0000,0000,0000,,小心点儿\N{\rEn}Carefully.
+Dialogue: 0,0:33:19.72,0:33:22.33,Default,,0000,0000,0000,,你就是尤瑟的儿子\N{\rEn}So you're Uther's son.
+Dialogue: 0,0:33:22.39,0:33:26.00,Default,,0000,0000,0000,,你不仅在阴沟里活了下来\N{\rEn}Not only did you survive in the gutter,
+Dialogue: 0,0:33:27.00,0:33:30.87,Default,,0000,0000,0000,,而且活得相当滋润啊\N{\rEn}you blossomed out of manure.
+Dialogue: 0,0:33:30.93,0:33:33.57,Default,,0000,0000,0000,,陛下您肯定找错人了\N{\rEn}You've got the wrong man, sire.
+Dialogue: 0,0:33:33.64,0:33:38.27,Default,,0000,0000,0000,,我是出生在一个妓院里 伦底纽姆的一座桥上\N{\rEn}I was born in a brothel, on a bridge in Londinium.
+Dialogue: 0,0:33:38.34,0:33:42.05,Default,,0000,0000,0000,,能拔出圣剑的只有尤瑟·潘德\N{\rEn}The sword can only be drawn by Uther Pendragon
+Dialogue: 0,0:33:42.88,0:33:45.81,Default,,0000,0000,0000,,和他的直系后嗣\N{\rEn}or his direct heir.
+Dialogue: 0,0:33:45.88,0:33:48.69,Default,,0000,0000,0000,,你感觉到了 不是吗\N{\rEn}You felt it, didn't you?
+Dialogue: 0,0:33:48.75,0:33:50.09,Default,,0000,0000,0000,,那股力量\N{\rEn}The power.
+Dialogue: 0,0:33:50.15,0:33:52.09,Default,,0000,0000,0000,,所以你能拔出来\N{\rEn}That's what put you out.
+Dialogue: 0,0:33:53.22,0:33:55.09,Default,,0000,0000,0000,,你只是不知道怎么控制它\N{\rEn}You just don't know how to control it.
+Dialogue: 0,0:33:55.16,0:33:58.36,Default,,0000,0000,0000,,我只是伦底纽姆一个妓女的私生子\N{\rEn}I'm nothing but the bastard son of a prostitute.
+Dialogue: 0,0:33:58.43,0:34:02.33,Default,,0000,0000,0000,,我们俩的共同点比你以为的要多得多\N{\rEn}You and I have a lot more in common than you think.
+Dialogue: 0,0:34:02.40,0:34:04.33,Default,,0000,0000,0000,,我们不仅有同样的血统\N{\rEn}It's not just the same blood we share,
+Dialogue: 0,0:34:04.40,0:34:07.57,Default,,0000,0000,0000,,而且还有同样的利益\N{\rEn}but also the same interests.
+Dialogue: 0,0:34:07.64,0:34:10.77,Default,,0000,0000,0000,,我们俩都是极度渴望力量的人\N{\rEn}We both developed a palate for power.
+Dialogue: 0,0:34:10.84,0:34:13.48,Default,,0000,0000,0000,,我从来都没什么力量\N{\rEn}I've never had any power.
+Dialogue: 0,0:34:13.54,0:34:15.78,Default,,0000,0000,0000,,也从来没有渴望过力量\N{\rEn}Or any desire to achieve it.
+Dialogue: 0,0:34:17.71,0:34:18.98,Default,,0000,0000,0000,,陛下\N{\rEn}Sire.
+Dialogue: 0,0:34:19.05,0:34:22.12,Default,,0000,0000,0000,,我可以永远消失掉\N{\rEn}I could simply drift away,
+Dialogue: 0,0:34:22.19,0:34:23.49,Default,,0000,0000,0000,,再也不让您见到我\N{\rEn}never to be seen again.
+Dialogue: 0,0:34:23.55,0:34:25.26,Default,,0000,0000,0000,,虽然我很想相信你\N{\rEn}As much as I'd like to believe you,
+Dialogue: 0,0:34:25.32,0:34:27.73,Default,,0000,0000,0000,,但是你的品行很难让人信服\N{\rEn}your character makes that unlikely.
+Dialogue: 0,0:34:28.93,0:34:30.39,Default,,0000,0000,0000,,你昏睡的时候\N{\rEn}While you were asleep,
+Dialogue: 0,0:34:31.19,0:34:33.50,Default,,0000,0000,0000,,我调查了你\N{\rEn}we've been busy.
+Dialogue: 0,0:34:33.56,0:34:35.23,Default,,0000,0000,0000,,我知道你是什么样的人\N{\rEn}I know what kind of a man you are.
+Dialogue: 0,0:34:35.30,0:34:37.27,Default,,0000,0000,0000,,我也知道你的事\N{\rEn}I know your story.
+Dialogue: 0,0:34:37.33,0:34:40.54,Default,,0000,0000,0000,,而且 我还见了你的金库\N{\rEn}And, I've seen your coffers.
+Dialogue: 0,0:34:42.41,0:34:44.41,Default,,0000,0000,0000,,你的野心成就\N{\rEn}Your achievements.
+Dialogue: 0,0:34:46.04,0:34:47.34,Default,,0000,0000,0000,,现在就是\N{\rEn}Now stand,
+Dialogue: 0,0:34:49.18,0:34:51.42,Default,,0000,0000,0000,,我要杀你的理由\N{\rEn}as your prosecution.
+Dialogue: 0,0:34:54.45,0:34:57.49,Default,,0000,0000,0000,,如果你继承了父亲的王位\N{\rEn}What kind of a man would you have become
+Dialogue: 0,0:34:57.55,0:35:00.22,Default,,0000,0000,0000,,还有这个王国的所有财富\N{\rEn}had you inherited your father's kingdom
+Dialogue: 0,0:35:00.29,0:35:02.83,Default,,0000,0000,0000,,而不是在妓院里长大\N{\rEn}and all its advantages,
+Dialogue: 0,0:35:02.89,0:35:05.56,Default,,0000,0000,0000,,你会变成什么样的人\N{\rEn}instead of being raised in a brothel?
+Dialogue: 0,0:35:09.23,0:35:11.80,Default,,0000,0000,0000,,为什么会生出野心\N{\rEn}What gave you such drive?
+Dialogue: 0,0:35:25.05,0:35:27.25,Default,,0000,0000,0000,,那你想把我怎么样\N{\rEn}So, what happens now?
+Dialogue: 0,0:35:27.32,0:35:29.39,Default,,0000,0000,0000,,你知道会怎么样\N{\rEn}You know what happens now.
+Dialogue: 0,0:35:30.79,0:35:33.19,Default,,0000,0000,0000,,你很快就会成为传奇\N{\rEn}You're quickly becoming a legend.
+Dialogue: 0,0:35:40.96,0:35:43.17,Default,,0000,0000,0000,,有人想要见你\N{\rEn}Someone here to see you.
+Dialogue: 0,0:35:45.27,0:35:46.57,Default,,0000,0000,0000,,你最好见见她\N{\rEn}I think you need to see her.
+Dialogue: 0,0:36:12.40,0:36:15.17,Default,,0000,0000,0000,,你知道我是谁吗\N{\rEn}Do you know who I am?
+Dialogue: 0,0:36:16.13,0:36:18.24,Default,,0000,0000,0000,,我知道你是谁 女巫\N{\rEn}I know who you are, Mage.
+Dialogue: 0,0:36:18.30,0:36:20.87,Default,,0000,0000,0000,,我在梦里见过你了\N{\rEn}I've seen you in my dreams.
+Dialogue: 0,0:36:23.54,0:36:25.21,Default,,0000,0000,0000,,梅林派你来的\N{\rEn}You've been sent by Merlin.
+Dialogue: 0,0:36:25.28,0:36:27.98,Default,,0000,0000,0000,,那你应该知道我来干什么\N{\rEn}Then you know why I am here.
+Dialogue: 0,0:36:28.04,0:36:30.38,Default,,0000,0000,0000,,所以你就是他的导师\N{\rEn}So, you will be his guide.
+Dialogue: 0,0:36:30.45,0:36:32.25,Default,,0000,0000,0000,,而你要帮我\N{\rEn}And you will help me.
+Dialogue: 0,0:36:53.44,0:36:54.67,Default,,0000,0000,0000,,带他过来\N{\rEn}Bring him here.
+Dialogue: 0,0:36:58.48,0:37:00.88,Default,,0000,0000,0000,,外面有成千上万的民众\N{\rEn}There's a crowd of thousands out there.
+Dialogue: 0,0:37:02.98,0:37:05.82,Default,,0000,0000,0000,,大部分是来看你而不是看我\N{\rEn}They've come to see you more than they've come to see me.
+Dialogue: 0,0:37:22.47,0:37:24.53,Default,,0000,0000,0000,,我向他们展示力量\N{\rEn}I will show them power.
+Dialogue: 0,0:37:25.64,0:37:28.84,Default,,0000,0000,0000,,向他们展示实力\N{\rEn}I will show them strength,
+Dialogue: 0,0:37:28.90,0:37:30.37,Default,,0000,0000,0000,,还有尊严\N{\rEn}and dignity.
+Dialogue: 0,0:37:30.44,0:37:35.15,Default,,0000,0000,0000,,你将展示谎言 软弱\N{\rEn}You will show them lies, weakness,
+Dialogue: 0,0:37:35.21,0:37:36.91,Default,,0000,0000,0000,,还有耻辱\N{\rEn}and shame.
+Dialogue: 0,0:37:36.98,0:37:38.92,Default,,0000,0000,0000,,沃蒂根国王外岁\N{\rEn}Hail, King Vortigern!
+Dialogue: 0,0:37:38.98,0:37:41.65,Default,,0000,0000,0000,,沃蒂根国王\N{\rEn}King Vortigern!
+Dialogue: 0,0:37:41.72,0:37:43.52,Default,,0000,0000,0000,,他们是来看你的\N{\rEn}They may have come for you...
+Dialogue: 0,0:37:43.59,0:37:45.09,Default,,0000,0000,0000,,但走的时候\N{\rEn}but they will leave,
+Dialogue: 0,0:37:45.15,0:37:47.79,Default,,0000,0000,0000,,他们走的时候只会把我刻在脑海里\N{\rEn}and will leave with a lasting impression of me.
+Dialogue: 0,0:37:49.26,0:37:51.53,Default,,0000,0000,0000,,甚至会恨我\N{\rEn}They may even hate me.
+Dialogue: 0,0:37:51.59,0:37:54.20,Default,,0000,0000,0000,,想恨就恨吧\N{\rEn}I'll let them hate,
+Dialogue: 0,0:37:54.26,0:37:56.47,Default,,0000,0000,0000,,只要他们害怕我\N{\rEn}just so long as they fear.
+Dialogue: 0,0:37:56.53,0:37:58.44,Default,,0000,0000,0000,,被众人所畏惧\N{\rEn}When people fear you...
+Dialogue: 0,0:37:58.50,0:38:00.77,Default,,0000,0000,0000,,发自心底的畏惧\N{\rEn}I mean, really fear you...
+Dialogue: 0,0:38:00.84,0:38:04.41,Default,,0000,0000,0000,,这是世界上\N{\rEn}It is the most
+Dialogue: 0,0:38:04.47,0:38:06.81,Default,,0000,0000,0000,,最让人陶醉的感觉\N{\rEn}intoxicating sensation
+Dialogue: 0,0:38:06.88,0:38:08.61,Default,,0000,0000,0000,,无可比拟\N{\rEn}a man can possess.
+Dialogue: 0,0:38:09.78,0:38:13.45,Default,,0000,0000,0000,,就好像是有一种奇妙的力量\N{\rEn}A force of something almost indescribable
+Dialogue: 0,0:38:13.52,0:38:14.62,Default,,0000,0000,0000,,在你的血液中流淌\N{\rEn}moves through your blood
+Dialogue: 0,0:38:14.68,0:38:16.32,Default,,0000,0000,0000,,完全主宰着你\N{\rEn}and takes you over completely.
+Dialogue: 0,0:38:17.79,0:38:19.49,Default,,0000,0000,0000,,沃蒂根国王\N{\rEn}King Vortigern!
+Dialogue: 0,0:38:19.56,0:38:23.09,Default,,0000,0000,0000,,沃蒂根国王 沃蒂根国王\N{\rEn}King Vortigern! King Vortigern!
+Dialogue: 0,0:38:23.19,0:38:26.63,Default,,0000,0000,0000,,沃蒂根国王 沃蒂根国王\N{\rEn}King Vortigern! King Vortigern!
+Dialogue: 0,0:38:26.70,0:38:31.74,Default,,0000,0000,0000,,沃蒂根国王 沃蒂根国王 沃蒂根国王\N{\rEn}King Vortigern! King Vortigern! King Vortigern!
+Dialogue: 0,0:38:34.94,0:38:39.24,Default,,0000,0000,0000,,我明白你捍卫这个妓女名誉的行为\N{\rEn}I understand that your actions were very noble,
+Dialogue: 0,0:38:39.31,0:38:41.08,Default,,0000,0000,0000,,真是非常高尚\N{\rEn}of defending this whore's honor.
+Dialogue: 0,0:38:41.91,0:38:43.68,Default,,0000,0000,0000,,但不幸的是\N{\rEn}How unfortunate
+Dialogue: 0,0:38:43.75,0:38:46.48,Default,,0000,0000,0000,,你为了这个得罪了我的维京客人\N{\rEn}it was at the expense of my Viking guests.
+Dialogue: 0,0:38:46.55,0:38:48.38,Default,,0000,0000,0000,,沃蒂根国王\N{\rEn}King Vortigern!
+Dialogue: 0,0:38:48.45,0:38:51.25,Default,,0000,0000,0000,,沃蒂根国王 沃蒂根国王\N{\rEn}King Vortigern! King Vortigern!
+Dialogue: 0,0:39:04.47,0:39:07.40,Default,,0000,0000,0000,,看啊 真正的国王\N{\rEn}Behold, your born king.
+Dialogue: 0,0:39:10.27,0:39:13.81,Default,,0000,0000,0000,,看着这个拔出石中圣剑的人\N{\rEn}Behold the man who pulled sword from stone.
+Dialogue: 0,0:39:15.34,0:39:16.81,Default,,0000,0000,0000,,你们想要预言是吗\N{\rEn}You wanted a prophecy.
+Dialogue: 0,0:39:19.45,0:39:21.59,Default,,0000,0000,0000,,这就是预言里的王\N{\rEn}This is your prophecy.
+Dialogue: 0,0:39:22.35,0:39:23.82,Default,,0000,0000,0000,,告诉我们 陛下\N{\rEn}Now tell us, king,
+Dialogue: 0,0:39:24.62,0:39:26.52,Default,,0000,0000,0000,,您有什么想说的\N{\rEn}what do you have to say?
+Dialogue: 0,0:39:26.59,0:39:28.36,Default,,0000,0000,0000,,等你人头落地\N{\rEn}When your head rolls to me,
+Dialogue: 0,0:39:28.42,0:39:31.69,Default,,0000,0000,0000,,你这个早死的传奇只会让所有人\N{\rEn}the legend you've fast become will just as quickly...
+Dialogue: 0,0:39:31.76,0:39:33.26,Default,,0000,0000,0000,,这是你的臣民\N{\rEn}Here are your people.
+Dialogue: 0,0:39:33.33,0:39:35.83,Default,,0000,0000,0000,,更加崇敬畏惧我的名字\N{\rEn}add to the reverence of my name.
+Dialogue: 0,0:39:37.10,0:39:38.44,Default,,0000,0000,0000,,我为此\N{\rEn}And for this,
+Dialogue: 0,0:39:39.87,0:39:41.44,Default,,0000,0000,0000,,向你致敬\N{\rEn}I salute you.
+Dialogue: 0,0:39:47.81,0:39:50.11,Default,,0000,0000,0000,,不\N{\rEn}No!
+Dialogue: 0,0:39:51.48,0:39:52.33,Default,,0000,0000,0000,,如果是国王\N{\rEn}If you're the king...
+Dialogue: 0,0:39:52.33,0:39:53.18,Default,,0000,0000,0000,,不\N{\rEn}No!
+Dialogue: 0,0:39:53.25,0:39:54.45,Default,,0000,0000,0000,,大声说出来\N{\rEn}declare yourself.
+Dialogue: 0,0:39:57.32,0:39:58.79,Default,,0000,0000,0000,,剩下的也逃不了\N{\rEn}The rest of them will follow,
+Dialogue: 0,0:39:58.86,0:40:01.46,Default,,0000,0000,0000,,除非你老老实实上断头台\N{\rEn}unless you do what needs to be done.
+Dialogue: 0,0:40:01.52,0:40:02.89,Default,,0000,0000,0000,,明白我的意思了吗\N{\rEn}Do we understand each other?
+Dialogue: 0,0:40:07.50,0:40:09.70,Default,,0000,0000,0000,,如果不知道说什么\N{\rEn}If you are lost for words,
+Dialogue: 0,0:40:09.77,0:40:11.97,Default,,0000,0000,0000,,那就让圣剑替你说吧\N{\rEn}then let the sword speak for you.
+Dialogue: 0,0:40:13.37,0:40:15.57,Default,,0000,0000,0000,,拿起来\N{\rEn}Take it!
+Dialogue: 0,0:40:15.64,0:40:18.61,Default,,0000,0000,0000,,让人们看看王者之剑的威力\N{\rEn}And show the people the power of Excalibur.
+Dialogue: 0,0:40:25.42,0:40:27.48,Default,,0000,0000,0000,,我让你拿起来 陛下\N{\rEn}I said, take it, king.
+Dialogue: 0,0:40:28.32,0:40:29.75,Default,,0000,0000,0000,,举起那把剑\N{\rEn}Raise that sword!
+Dialogue: 0,0:40:35.12,0:40:36.63,Default,,0000,0000,0000,,看来你不行\N{\rEn}I thought not.
+Dialogue: 0,0:40:37.29,0:40:38.46,Default,,0000,0000,0000,,这的人\N{\rEn}This man,
+Dialogue: 0,0:40:38.53,0:40:41.33,Default,,0000,0000,0000,,不会给我们繁荣的国家\N{\rEn}cannot be allowed to bring discord
+Dialogue: 0,0:40:41.40,0:40:43.07,Default,,0000,0000,0000,,带来任何纷争\N{\rEn}to our flourishing nation.
+Dialogue: 0,0:40:44.43,0:40:45.94,Default,,0000,0000,0000,,你不是国王\N{\rEn}You're not the king!
+Dialogue: 0,0:40:48.30,0:40:50.17,Default,,0000,0000,0000,,砍掉他的头\N{\rEn}Off with his head!
+Dialogue: 0,0:40:55.71,0:40:57.05,Default,,0000,0000,0000,,你不是国王\N{\rEn}You're no king!
+Dialogue: 0,0:41:34.92,0:41:35.82,Default,,0000,0000,0000,,保护陛下\N{\rEn}Protect the king!
+Dialogue: 0,0:41:35.92,0:41:36.82,Default,,0000,0000,0000,,保护陛下\N{\rEn}Protect the king!
+Dialogue: 0,0:41:37.62,0:41:40.02,Default,,0000,0000,0000,,过来\N{\rEn}Come.
+Dialogue: 0,0:42:02.15,0:42:03.31,Default,,0000,0000,0000,,快走\N{\rEn}Come on!
+Dialogue: 0,0:42:03.38,0:42:04.58,Default,,0000,0000,0000,,走啊\N{\rEn}Move! Move!
+Dialogue: 0,0:42:04.65,0:42:06.55,Default,,0000,0000,0000,,把剑拿回来 赶快追上去\N{\rEn}Get the sword! Get after him!
+Dialogue: 0,0:42:06.62,0:42:10.29,Default,,0000,0000,0000,,圣剑\N{\rEn}The sword!
+Dialogue: 0,0:42:14.66,0:42:16.09,Default,,0000,0000,0000,,走\N{\rEn}Move!
+Dialogue: 0,0:42:21.83,0:42:24.00,Default,,0000,0000,0000,,快点儿 走\N{\rEn}Come on. Move!
+Dialogue: 0,0:42:33.04,0:42:34.14,Default,,0000,0000,0000,,快点儿\N{\rEn}Come on!
+Dialogue: 0,0:42:35.18,0:42:36.18,Default,,0000,0000,0000,,跳\N{\rEn}Now!
+Dialogue: 0,0:43:14.98,0:43:18.19,Default,,0000,0000,0000,,有人能告诉我 我们要去哪儿\N{\rEn}Someone gonna tell me where we're going?
+Dialogue: 0,0:43:19.92,0:43:21.02,Default,,0000,0000,0000,,没\N{\rEn}No.
+Dialogue: 0,0:43:35.64,0:43:37.67,Default,,0000,0000,0000,,你看着我干什么\N{\rEn}So what is it you're looking at, then?
+Dialogue: 0,0:43:39.18,0:43:41.94,Default,,0000,0000,0000,,你看上我了吗 其实我也看上你了\N{\rEn}Are you falling for me like I'm falling for you?
+Dialogue: 0,0:43:43.38,0:43:44.78,Default,,0000,0000,0000,,我们最好小心点儿\N{\rEn}We wanna be careful.
+Dialogue: 0,0:43:49.62,0:43:51.12,Default,,0000,0000,0000,,这把戏不错\N{\rEn}That's a neat trick.
+Dialogue: 0,0:43:51.19,0:43:53.66,Default,,0000,0000,0000,,你一定得教我这招\N{\rEn}You'll have to teach me how to do that.
+Dialogue: 0,0:43:53.72,0:43:55.32,Default,,0000,0000,0000,,把他放回到马背上\N{\rEn}Put him back on his horse.
+Dialogue: 0,0:44:15.81,0:44:17.11,Default,,0000,0000,0000,,你好\N{\rEn}Oh, hello.
+Dialogue: 0,0:44:19.32,0:44:22.28,Default,,0000,0000,0000,,当个你们这样的巫师很危险 是吧\N{\rEn}It's quite dangerous being one of you lot, isn't it?
+Dialogue: 0,0:44:22.35,0:44:24.25,Default,,0000,0000,0000,,你会跟动物沟通吧\N{\rEn}You're good with animals, aren't you?
+Dialogue: 0,0:44:24.32,0:44:26.82,Default,,0000,0000,0000,,你们还有专门的名字是吧\N{\rEn}They have a word for that, don't they?
+Dialogue: 0,0:44:28.66,0:44:30.59,Default,,0000,0000,0000,,女巫\N{\rEn}"Mage".
+Dialogue: 0,0:44:30.66,0:44:32.73,Default,,0000,0000,0000,,我以为巫师都是坏蛋\N{\rEn}I thought your team was outlawed.
+Dialogue: 0,0:44:32.80,0:44:35.36,Default,,0000,0000,0000,,第一次见到活生生的巫师\N{\rEn}Never met one of you in the flesh.
+Dialogue: 0,0:44:35.43,0:44:37.37,Default,,0000,0000,0000,,我以为你们很高\N{\rEn}I thought you'd be taller.
+Dialogue: 0,0:44:38.70,0:44:39.90,Default,,0000,0000,0000,,而且有胡子\N{\rEn}And have a beard.
+Dialogue: 0,0:44:43.77,0:44:46.48,Default,,0000,0000,0000,,你知道我蒙头也能看到吧\N{\rEn}You do know I can see through this?
+Dialogue: 0,0:44:46.54,0:44:48.14,Default,,0000,0000,0000,,到处都是树\N{\rEn}Trees everywhere.
+Dialogue: 0,0:45:12.80,0:45:13.90,Default,,0000,0000,0000,,挂起来吧\N{\rEn}Hang that up.
+Dialogue: 0,0:45:13.97,0:45:15.77,Default,,0000,0000,0000,,千万别弄皱了\N{\rEn}Don't want it getting creased.
+Dialogue: 0,0:45:34.96,0:45:38.90,Default,,0000,0000,0000,,所以 就是你害老泥鳅比尔被抓的\N{\rEn}So, you're the chap that turned in Goosefat Bill.
+Dialogue: 0,0:45:40.96,0:45:44.87,Default,,0000,0000,0000,,他不像你 他选错了躲藏的地点\N{\rEn}Unlike you, he chose the wrong place to hide.
+Dialogue: 0,0:45:44.93,0:45:49.47,Default,,0000,0000,0000,,你知道他在黑甲兵的抓捕名单上排第三\N{\rEn}You know he was the third most wanted man on the Blackleg's list?
+Dialogue: 0,0:45:49.54,0:45:51.64,Default,,0000,0000,0000,,他们一直都很想抓住比尔\N{\rEn}They've been trying to catch him for some time.
+Dialogue: 0,0:45:51.71,0:45:55.28,Default,,0000,0000,0000,,我说过了 你的手下选错躲藏的地点\N{\rEn}Like I said, your man chose the wrong place to hide.
+Dialogue: 0,0:45:55.34,0:45:56.95,Default,,0000,0000,0000,,好像是这样\N{\rEn}So it seems.
+Dialogue: 0,0:45:58.18,0:46:00.68,Default,,0000,0000,0000,,真想知道你怎么逃的\N{\rEn}I was wondering what happened to you.
+Dialogue: 0,0:46:00.75,0:46:02.62,Default,,0000,0000,0000,,我说过他们会好好招呼你的\N{\rEn}I told you, you were in safe hands.
+Dialogue: 0,0:46:02.69,0:46:05.65,Default,,0000,0000,0000,,我说你在那帮黑甲兵中可以说是大名人\N{\rEn}You've made quite a celebrity of yourself among the Blackleg ranks.
+Dialogue: 0,0:46:05.72,0:46:08.66,Default,,0000,0000,0000,,你跟那些国王卫兵的关系处得可不是\N{\rEn}You've done very nicely on the back of your cozy relationship
+Dialogue: 0,0:46:08.73,0:46:10.43,Default,,0000,0000,0000,,一般的好啊\N{\rEn}with your kingsmen.
+Dialogue: 0,0:46:10.49,0:46:12.66,Default,,0000,0000,0000,,我早就不是任人指着鼻了骂的小子了\N{\rEn}You know, I'm a little old for finger-wagging and speeches.
+Dialogue: 0,0:46:12.73,0:46:16.90,Default,,0000,0000,0000,,所以除非你是我亲爹 这个应该不可能\N{\rEn}So, unless you're my dad, which, I believe, is unlikely,
+Dialogue: 0,0:46:16.97,0:46:20.10,Default,,0000,0000,0000,,所以你能不能老实告诉我你到底想要什么\N{\rEn}can you just get around to telling me exactly what it is you want?
+Dialogue: 0,0:46:21.50,0:46:23.14,Default,,0000,0000,0000,,应该是你想要什么\N{\rEn}What is it that you want?
+Dialogue: 0,0:46:23.21,0:46:25.34,Default,,0000,0000,0000,,我想要离开这个地方\N{\rEn}I want to get my arse out of here
+Dialogue: 0,0:46:25.41,0:46:28.38,Default,,0000,0000,0000,,看看我的生活里还剩下什么事什么人\N{\rEn}and see what's left of my life and the people in it.
+Dialogue: 0,0:46:28.44,0:46:30.55,Default,,0000,0000,0000,,但你不会让我这么做的 是吧\N{\rEn}But you're not gonna let me do that, are you?
+Dialogue: 0,0:46:30.61,0:46:31.98,Default,,0000,0000,0000,,我为什么不会\N{\rEn}And why aren't we?
+Dialogue: 0,0:46:32.05,0:46:33.45,Default,,0000,0000,0000,,你死了两个手下\N{\rEn}You just lost two men.
+Dialogue: 0,0:46:35.42,0:46:39.09,Default,,0000,0000,0000,,但是为了救我 你甚至不惜牺牲五个手下\N{\rEn}But you were prepared to lose five to save this pretty neck.
+Dialogue: 0,0:46:39.16,0:46:40.09,Default,,0000,0000,0000,,我认识你吗\N{\rEn}Do I know you?
+Dialogue: 0,0:46:40.16,0:46:41.59,Default,,0000,0000,0000,,现在认识了\N{\rEn}You will in a minute.
+Dialogue: 0,0:46:41.66,0:46:42.96,Default,,0000,0000,0000,,手伸出来\N{\rEn}Put your hands out.
+Dialogue: 0,0:46:43.03,0:46:44.39,Default,,0000,0000,0000,,我可不想 伙计\N{\rEn}I don't think so, mate.
+Dialogue: 0,0:46:44.46,0:46:46.40,Default,,0000,0000,0000,,所以我哪儿都去不了 对吧\N{\rEn}So I'm not going anywhere, am I?
+Dialogue: 0,0:46:46.46,0:46:48.00,Default,,0000,0000,0000,,那你到底是想去哪里呢\N{\rEn}Where exactly were you thinking of going?
+Dialogue: 0,0:46:48.06,0:46:50.37,Default,,0000,0000,0000,,你现在无家可归 妓院已经被夷平\N{\rEn}You have no more home. It was razed days ago.
+Dialogue: 0,0:46:50.43,0:46:52.23,Default,,0000,0000,0000,,你己经回不去以前的生活\N{\rEn}You've no more life to go back to.
+Dialogue: 0,0:46:52.30,0:46:54.97,Default,,0000,0000,0000,,不管喜不喜欢 事情都这样\N{\rEn}Like it or not, this is your lot.
+Dialogue: 0,0:46:56.54,0:46:58.74,Default,,0000,0000,0000,,甚至我们也不喜欢你\N{\rEn}And even we don't like you.
+Dialogue: 0,0:46:58.81,0:47:00.01,Default,,0000,0000,0000,,是不是 比尔\N{\rEn}Do we, Goosefat?
+Dialogue: 0,0:47:02.98,0:47:05.51,Default,,0000,0000,0000,,但是让我们感兴趣的是\N{\rEn}But what we are interested in,
+Dialogue: 0,0:47:06.85,0:47:09.85,Default,,0000,0000,0000,,你可以用这把剑做什么\N{\rEn}is what you can do with this sword.
+Dialogue: 0,0:47:09.92,0:47:13.52,Default,,0000,0000,0000,,能不能让我单独跟他说一会儿\N{\rEn}Why don't you leave him with me for a minute or two, boss?
+Dialogue: 0,0:47:16.49,0:47:18.46,Default,,0000,0000,0000,,把你的戒指戴上 亲爱的\N{\rEn}Put your ring back on, honey tits.
+Dialogue: 0,0:47:18.53,0:47:21.01,Default,,0000,0000,0000,,我怕你早上没吃饱饭跟我干不起来\N{\rEn}You haven't had enough porridge this morning to talk like that.
+Dialogue: 0,0:47:21.06,0:47:24.37,Default,,0000,0000,0000,,既然你这么喜欢那把破剑 这位大人\N{\rEn}And if you like that sword so much, your lordship,
+Dialogue: 0,0:47:24.43,0:47:25.90,Default,,0000,0000,0000,,那就留着吧\N{\rEn}you can keep it,
+Dialogue: 0,0:47:25.97,0:47:27.54,Default,,0000,0000,0000,,用它来剥葡萄\N{\rEn}to peel your grapes.
+Dialogue: 0,0:47:29.01,0:47:30.84,Default,,0000,0000,0000,,我要是没摘下戒指\N{\rEn}Now that would've hurt a lot more
+Dialogue: 0,0:47:30.91,0:47:32.88,Default,,0000,0000,0000,,恐怕你这张脸就花了\N{\rEn}if I left the ring on.
+Dialogue: 0,0:47:37.61,0:47:39.51,Default,,0000,0000,0000,,我懂你们的意思\N{\rEn}I see what you're doing.
+Dialogue: 0,0:47:39.58,0:47:41.69,Default,,0000,0000,0000,,你们想让我用那把剑做什么\N{\rEn}You're trying to get me to do something
+Dialogue: 0,0:47:41.69,0:47:42.69,Default,,0000,0000,0000,,神神叨叨的事儿\N{\rEn}razzle-dazzle with that sword.
+Dialogue: 0,0:47:42.75,0:47:45.15,Default,,0000,0000,0000,,我现在就告诉你们\N{\rEn}I'm gonna tell you right now,
+Dialogue: 0,0:47:45.22,0:47:47.66,Default,,0000,0000,0000,,我不会掺和这种破事儿\N{\rEn}I'm not gettin' drawn into this mess.
+Dialogue: 0,0:47:47.72,0:47:49.49,Default,,0000,0000,0000,,你们有一大群人\N{\rEn}And there's an army of you,
+Dialogue: 0,0:47:49.56,0:47:51.19,Default,,0000,0000,0000,,我只有一个人\N{\rEn}there's only one of me.
+Dialogue: 0,0:47:52.40,0:47:54.90,Default,,0000,0000,0000,,我已经几年没动手了\N{\rEn}I haven't had a fight for years.
+Dialogue: 0,0:47:55.70,0:47:57.03,Default,,0000,0000,0000,,那动嘴吧\N{\rEn}And I'll talk.
+Dialogue: 0,0:47:57.10,0:47:58.57,Default,,0000,0000,0000,,我很喜欢动嘴\N{\rEn}I'm happy to talk.
+Dialogue: 0,0:47:59.77,0:48:01.97,Default,,0000,0000,0000,,但你们不要指望\N{\rEn}But there is no way
+Dialogue: 0,0:48:03.47,0:48:05.21,Default,,0000,0000,0000,,我跟你们动手\N{\rEn}that I am fighting.
+Dialogue: 0,0:48:43.68,0:48:44.68,Default,,0000,0000,0000,,没招了\N{\rEn}Is that it?
+Dialogue: 0,0:48:57.49,0:48:58.56,Default,,0000,0000,0000,,快跑 儿子\N{\rEn}Run, son!
+Dialogue: 0,0:49:47.81,0:49:49.21,Default,,0000,0000,0000,,等着 儿子\N{\rEn}Wait here, son.
+Dialogue: 0,0:49:51.85,0:49:52.92,Default,,0000,0000,0000,,快跑 儿子\N{\rEn}Run, son!
+Dialogue: 0,0:50:02.32,0:50:04.26,Default,,0000,0000,0000,,你在抵抗圣剑的力量\N{\rEn}You are resisting the sword.
+Dialogue: 0,0:50:06.13,0:50:08.26,Default,,0000,0000,0000,,但是圣剑没有抵抗你\N{\rEn}The sword isn't resisting you.
+Dialogue: 0,0:50:08.33,0:50:10.87,Default,,0000,0000,0000,,现在应该很清楚了\N{\rEn}It should be clear by now,
+Dialogue: 0,0:50:10.93,0:50:15.47,Default,,0000,0000,0000,,不管你和你的朋友认为从我身上能得到什么\N{\rEn}that whatever it is that you and your friends think you want from me,
+Dialogue: 0,0:50:16.81,0:50:19.61,Default,,0000,0000,0000,,我根本没有\N{\rEn}I am not it.
+Dialogue: 0,0:50:19.68,0:50:20.71,Default,,0000,0000,0000,,现在没有\N{\rEn}Not yet.
+Dialogue: 0,0:50:20.71,0:50:21.75,Default,,0000,0000,0000,,永远没有\N{\rEn}Not ever!
+Dialogue: 0,0:50:23.28,0:50:25.61,Default,,0000,0000,0000,,你握着圣剑时看到了什么\N{\rEn}What do you see when you hold the sword?
+Dialogue: 0,0:50:27.55,0:50:30.72,Default,,0000,0000,0000,,是你以前见过的画面 是不是\N{\rEn}It is something you've seen before, isn't it?
+Dialogue: 0,0:50:30.79,0:50:33.26,Default,,0000,0000,0000,,在你碰到这把剑很久以前\N{\rEn}Long before you ever touched the sword.
+Dialogue: 0,0:50:34.56,0:50:37.33,Default,,0000,0000,0000,,你睡得不好 对不对\N{\rEn}You don't sleep well, do you?
+Dialogue: 0,0:50:40.43,0:50:43.13,Default,,0000,0000,0000,,如果你能再也不做那些梦呢\N{\rEn}What if you could make the dreams go away?
+Dialogue: 0,0:50:51.17,0:50:52.78,Default,,0000,0000,0000,,你知道我们要怎么做\N{\rEn}You know what we have to do.
+Dialogue: 0,0:50:52.84,0:50:55.25,Default,,0000,0000,0000,,为了让他能控制住王者之剑\N{\rEn}In order for him to control Excalibur,
+Dialogue: 0,0:50:55.31,0:50:57.21,Default,,0000,0000,0000,,我们要带他去黑暗之地\N{\rEn}he needs to go to the Darklands.
+Dialogue: 0,0:50:57.28,0:50:58.61,Default,,0000,0000,0000,,不能让他去那儿\N{\rEn}That's not happening.
+Dialogue: 0,0:50:59.95,0:51:02.22,Default,,0000,0000,0000,,欢迎来到黑暗之地\N{\rEn}Welcome to the Darklands.
+Dialogue: 0,0:51:07.36,0:51:08.62,Default,,0000,0000,0000,,那就是黑暗之地\N{\rEn}That's the Darklands?
+Dialogue: 0,0:51:08.69,0:51:10.23,Default,,0000,0000,0000,,那只是入口\N{\rEn}That's the entrance.
+Dialogue: 0,0:51:13.36,0:51:15.56,Default,,0000,0000,0000,,他需要带着圣剑去高塔\N{\rEn}He needs to take the sword to the tower.
+Dialogue: 0,0:51:15.63,0:51:18.10,Default,,0000,0000,0000,,你必须要让圣剑触碰到圣石\N{\rEn}You must touch the sword to the altar stone.
+Dialogue: 0,0:51:22.97,0:51:24.17,Default,,0000,0000,0000,,别想我啊\N{\rEn}Gonna miss me.
+Dialogue: 0,0:51:24.91,0:51:25.98,Default,,0000,0000,0000,,再想个办法\N{\rEn}Give me another way.
+Dialogue: 0,0:51:26.04,0:51:27.24,Default,,0000,0000,0000,,没别的办法\N{\rEn}There's no other way.
+Dialogue: 0,0:51:28.04,0:51:29.68,Default,,0000,0000,0000,,他只能一个人去\N{\rEn}And he has to go alone.
+Dialogue: 0,0:51:39.12,0:51:41.16,Default,,0000,0000,0000,,他一个人在黑暗之地活不下去\N{\rEn}He can't survive the Darklands alone.
+Dialogue: 0,0:51:45.59,0:51:46.43,Default,,0000,0000,0000,,你害怕吗\N{\rEn}Are you scared?
+Dialogue: 0,0:51:46.59,0:51:47.83,Default,,0000,0000,0000,,我觉得我能行\N{\rEn}I think I can manage.
+Dialogue: 0,0:51:54.84,0:51:56.34,Default,,0000,0000,0000,,你应该害怕的\N{\rEn}You should be scared.
+Dialogue: 0,0:52:17.23,0:52:19.16,Default,,0000,0000,0000,,这这儿有什么破事儿\N{\rEn}That's what all the fuss is about?
+Dialogue: 0,0:52:42.92,0:52:46.66,Default,,0000,0000,0000,,别着急 你很快就会知道是什么破事儿\N{\rEn}Don't worry, you'll soon understand what all the fuss is about.
+Dialogue: 0,0:52:51.83,0:52:53.90,Default,,0000,0000,0000,,他身上很多东西没有完善 这是关键\N{\rEn}You don't want all of him to survive. That's the point.
+Dialogue: 0,0:52:53.96,0:52:57.80,Default,,0000,0000,0000,,你必须彻底摧毁他现在的自我 把他拖垮\N{\rEn}You have to break his old self completely. Wear him down.
+Dialogue: 0,0:52:57.87,0:52:59.20,Default,,0000,0000,0000,,你想让他干大事\N{\rEn}You want him to think big?
+Dialogue: 0,0:53:01.67,0:53:03.51,Default,,0000,0000,0000,,那就给他个大挑战\N{\rEn}Give him something big to think about.
+Dialogue: 0,0:53:07.58,0:53:09.75,Default,,0000,0000,0000,,你这是在玩火 女巫\N{\rEn}You're playing with fire, Mage.
+Dialogue: 0,0:53:09.81,0:53:12.25,Default,,0000,0000,0000,,我绝不会在他成为国王之前就害死他\N{\rEn}And I'm not killing the king before he's even become one.
+Dialogue: 0,0:54:29.46,0:54:30.89,Default,,0000,0000,0000,,等着 儿子\N{\rEn}Wait here, son.
+Dialogue: 0,0:54:31.79,0:54:32.80,Default,,0000,0000,0000,,不\N{\rEn}No!
+Dialogue: 0,0:55:22.81,0:55:23.81,Default,,0000,0000,0000,,快跑 儿子\N{\rEn}Run, son!
+Dialogue: 0,0:56:50.90,0:56:53.67,Default,,0000,0000,0000,,该想起来的你都想起来了吗\N{\rEn}Did you see everything you needed to see?
+Dialogue: 0,0:56:54.50,0:56:55.74,Default,,0000,0000,0000,,想起来了\N{\rEn}I saw enough.
+Dialogue: 0,0:56:58.54,0:57:00.34,Default,,0000,0000,0000,,巫师之塔\N{\rEn}The Mage Tower.
+Dialogue: 0,0:57:00.41,0:57:02.14,Default,,0000,0000,0000,,跟卡美洛那座一模一样\N{\rEn}It's the same as the one at Camelot.
+Dialogue: 0,0:57:02.21,0:57:05.25,Default,,0000,0000,0000,,沃蒂根把塔建得越高 他的力量就越强\N{\rEn}The higher Vortigern builds it, the more powerful he becomes.
+Dialogue: 0,0:57:05.31,0:57:08.95,Default,,0000,0000,0000,,等高塔建成后 他就会拥有莫德雷德的力量\N{\rEn}And when it is finished, he will have the same power of Mordred.
+Dialogue: 0,0:57:09.02,0:57:12.42,Default,,0000,0000,0000,,所以王者之剑现在才会显现\N{\rEn}That is why the sword has revealed itself now.
+Dialogue: 0,0:57:12.49,0:57:15.52,Default,,0000,0000,0000,,哪里有毒药 哪里就有解药\N{\rEn}Where there's poison, there's a remedy.
+Dialogue: 0,0:57:16.66,0:57:19.53,Default,,0000,0000,0000,,你们巫师都怎么了\N{\rEn}What happened to your people?
+Dialogue: 0,0:57:19.59,0:57:22.63,Default,,0000,0000,0000,,他们被你的叔叔杀了\N{\rEn}They were murdered by your uncle.
+Dialogue: 0,0:57:22.70,0:57:25.07,Default,,0000,0000,0000,,就是沃蒂根挑起了战争\N{\rEn}It was Vortigern who started the wars.
+Dialogue: 0,0:57:26.13,0:57:28.70,Default,,0000,0000,0000,,他嫉妒你父亲能当国王\N{\rEn}He was jealous of your father's throne.
+Dialogue: 0,0:57:28.77,0:57:31.24,Default,,0000,0000,0000,,他和莫德雷德达成协议\N{\rEn}So he made a deal with Mordred...
+Dialogue: 0,0:57:31.31,0:57:32.91,Default,,0000,0000,0000,,只要他打败你父亲\N{\rEn}That they would share power
+Dialogue: 0,0:57:32.98,0:57:36.01,Default,,0000,0000,0000,,他们两个就共享权力\N{\rEn}once he defeated your father.
+Dialogue: 0,0:57:37.75,0:57:41.05,Default,,0000,0000,0000,,莫德雷德达杀死了巫师之王\N{\rEn}Mordred murdered the Mage King
+Dialogue: 0,0:57:41.12,0:57:45.35,Default,,0000,0000,0000,,带着他的法杖来到了神圣之塔\N{\rEn}and took his staff to their sacred tower,
+Dialogue: 0,0:57:45.42,0:57:49.06,Default,,0000,0000,0000,,解封了他与沃蒂根结盟的黑暗势力\N{\rEn}where he unlocked the dark forces of their union.
+Dialogue: 0,0:57:53.83,0:57:56.80,Default,,0000,0000,0000,,但他们却没有算到 王者之剑\N{\rEn}But what they didn't account for was the sword.
+Dialogue: 0,0:57:57.53,0:58:00.50,Default,,0000,0000,0000,,梅林偷走了他的法杖\N{\rEn}Merlin stole his staff.
+Dialogue: 0,0:58:02.20,0:58:06.54,Default,,0000,0000,0000,,随后就铸造了圣剑 王者之剑\N{\rEn}He then forged the great sword, Excalibur
+Dialogue: 0,0:58:06.61,0:58:10.18,Default,,0000,0000,0000,,摧毁了古老的巫师之塔\N{\rEn}and destroyed the ancient tower.
+Dialogue: 0,0:58:10.25,0:58:13.82,Default,,0000,0000,0000,,圣剑后来被交给了湖中妖女\N{\rEn}The sword was then passed to the Lady of the Lake
+Dialogue: 0,0:58:13.88,0:58:17.19,Default,,0000,0000,0000,,潘德拉贡家族的血脉之祖\N{\rEn}who bound it to the Pendragon bloodline.
+Dialogue: 0,0:58:21.39,0:58:23.16,Default,,0000,0000,0000,,现在\N{\rEn}Now
+Dialogue: 0,0:58:23.23,0:58:26.83,Default,,0000,0000,0000,,这把圣剑是你的了\N{\rEn}the sword is yours.
+Dialogue: 0,0:58:26.90,0:58:30.03,Default,,0000,0000,0000,,看来他的同伙被反叛分子找到了\N{\rEn}It seems his people have been found by the Resistance.
+Dialogue: 0,0:58:30.10,0:58:33.54,Default,,0000,0000,0000,,你手下有一万士兵听你指挥\N{\rEn}You have 10,000 men under your command
+Dialogue: 0,0:58:34.77,0:58:36.97,Default,,0000,0000,0000,,职责就是维护社会秩序\N{\rEn}for the purpose of maintaining public order.
+Dialogue: 0,0:58:37.04,0:58:38.94,Default,,0000,0000,0000,,我己经发布了悬赏通缉\N{\rEn}Informants have been incentivized.
+Dialogue: 0,0:58:39.01,0:58:40.61,Default,,0000,0000,0000,,麦西亚\N{\rEn}Mercia...
+Dialogue: 0,0:58:40.68,0:58:42.48,Default,,0000,0000,0000,,部队正在四处巡逻 挨家挨户搜\N{\rEn}Our garrisons are patrolling the roads and searching every town.
+Dialogue: 0,0:58:42.54,0:58:43.41,Default,,0000,0000,0000,,早晚会找到的 陛下\N{\rEn}It's only a matter of time, Your Majesty.
+Dialogue: 0,0:58:43.44,0:58:44.21,Default,,0000,0000,0000,,麦西亚\N{\rEn}Mercia.
+Dialogue: 0,0:58:44.28,0:58:45.98,Default,,0000,0000,0000,,反叛分子从未构成真正的威胁\N{\rEn}The Resistance have never posed any real threat.
+Dialogue: 0,0:58:46.05,0:58:47.12,Default,,0000,0000,0000,,麦西亚\N{\rEn}Mercia!
+Dialogue: 0,0:58:50.79,0:58:53.69,Default,,0000,0000,0000,,你就干好自己的活儿\N{\rEn}Just do your fucking job.
+Dialogue: 0,0:58:56.53,0:58:58.19,Default,,0000,0000,0000,,找到亚瑟\N{\rEn}Find him.
+Dialogue: 0,0:59:08.50,0:59:09.94,Default,,0000,0000,0000,,比我想象的要小\N{\rEn}Smaller than I thought it'd be.
+Dialogue: 0,0:59:10.01,0:59:12.14,Default,,0000,0000,0000,,给你了 小子\N{\rEn}It's all yours, son.
+Dialogue: 0,0:59:12.21,0:59:13.94,Default,,0000,0000,0000,,不过它的力量可是很大\N{\rEn}I warn you, it's got quite a bite.
+Dialogue: 0,0:59:16.31,0:59:17.81,Default,,0000,0000,0000,,我们的家怎么了\N{\rEn}What they done back home?
+Dialogue: 0,0:59:19.48,0:59:21.55,Default,,0000,0000,0000,,你真想知道\N{\rEn}You really wanna know?
+Dialogue: 0,0:59:21.62,0:59:22.55,Default,,0000,0000,0000,,说吧\N{\rEn}Go on.
+Dialogue: 0,0:59:22.62,0:59:23.85,Default,,0000,0000,0000,,全都没了\N{\rEn}It's all gone.
+Dialogue: 0,0:59:23.92,0:59:25.15,Default,,0000,0000,0000,,被他们烧了\N{\rEn}They torched the lot.
+Dialogue: 0,0:59:26.32,0:59:28.72,Default,,0000,0000,0000,,继续往下说\N{\rEn}I said, go on.
+Dialogue: 0,0:59:28.79,0:59:31.49,Default,,0000,0000,0000,,你应该感到荣幸\N{\rEn}You should be flattered, mate.
+Dialogue: 0,0:59:31.56,0:59:35.26,Default,,0000,0000,0000,,连麦西亚都离开王城去找你和这把剑了\N{\rEn}Even Mercia left the castle to look for you and that sword.
+Dialogue: 0,0:59:38.47,0:59:39.90,Default,,0000,0000,0000,,杰克眼卖了我们\N{\rEn}Jack's Eye turned.
+Dialogue: 0,0:59:39.97,0:59:43.17,Default,,0000,0000,0000,,把你重视的都列了个单了给他们\N{\rEn}Gave 'em a list of everything you valued.
+Dialogue: 0,0:59:43.24,0:59:46.07,Default,,0000,0000,0000,,他们杀了半个街区的人\N{\rEn}They slaughtered half the neighborhood.
+Dialogue: 0,0:59:46.91,0:59:49.75,Default,,0000,0000,0000,,淘气约翰也没闲着\N{\rEn}Mischief John got busy.
+Dialogue: 0,0:59:49.81,0:59:51.88,Default,,0000,0000,0000,,他亲手烧毁了那座桥\N{\rEn}Personally burned down the bridge.
+Dialogue: 0,0:59:52.71,0:59:54.65,Default,,0000,0000,0000,,简直像狂欢\N{\rEn}It was quite a party.
+Dialogue: 0,0:59:54.72,0:59:56.45,Default,,0000,0000,0000,,还要我说吗\N{\rEn}Shall I continue?
+Dialogue: 0,0:59:56.52,0:59:58.89,Default,,0000,0000,0000,,其他人都怎么样了\N{\rEn}What about the rest of the team?
+Dialogue: 0,0:59:58.95,1:00:01.16,Default,,0000,0000,0000,,姑娘们差不多都在\N{\rEn}Most of the girls are with us...
+Dialogue: 0,1:00:01.22,1:00:04.26,Default,,0000,0000,0000,,家里其他人都知道你现在的大名\N{\rEn}But the rest of the crew pretty much got gist of your popularity
+Dialogue: 0,1:00:04.33,1:00:05.79,Default,,0000,0000,0000,,所以吓得躲起来了\N{\rEn}and made themselves scarce.
+Dialogue: 0,1:00:07.46,1:00:09.53,Default,,0000,0000,0000,,布鲁 去给我们弄点儿喝的\N{\rEn}Blue, go get us something to drink.
+Dialogue: 0,1:00:09.60,1:00:11.37,Default,,0000,0000,0000,,拜托 老大 我也是家里人\N{\rEn}Come on, boss. I'm one of the crew.
+Dialogue: 0,1:00:11.43,1:00:12.84,Default,,0000,0000,0000,,布鲁\N{\rEn}Blue!
+Dialogue: 0,1:00:24.75,1:00:26.18,Default,,0000,0000,0000,,我一点儿事也没有\N{\rEn}I'm all right!
+Dialogue: 0,1:00:54.48,1:00:56.71,Default,,0000,0000,0000,,我要杀了沃蒂根\N{\rEn}I'm gonna kill him.
+Dialogue: 0,1:00:56.78,1:00:58.98,Default,,0000,0000,0000,,这儿的人一直在计划着杀他\N{\rEn}This lot have been trying to do it for years.
+Dialogue: 0,1:00:59.05,1:01:01.75,Default,,0000,0000,0000,,听你这么说肯定高兴\N{\rEn}They'd love to hear you say that.
+Dialogue: 0,1:01:01.82,1:01:05.62,Default,,0000,0000,0000,,他们等了很久才等到一个能拔出剑的人\N{\rEn}They've waited a long time to see a man pull this sword.
+Dialogue: 0,1:01:05.69,1:01:07.72,Default,,0000,0000,0000,,我不是为他们杀人的\N{\rEn}I'm not doing this for them.
+Dialogue: 0,1:01:08.66,1:01:10.13,Default,,0000,0000,0000,,湿棍子\N{\rEn}Wet Stick,
+Dialogue: 0,1:01:10.86,1:01:12.36,Default,,0000,0000,0000,,那是珀西瓦尔\N{\rEn}meet Percival.
+Dialogue: 0,1:01:14.26,1:01:16.70,Default,,0000,0000,0000,,鲁比奥 这是拜克莱克\N{\rEn}Rubio, meet Back Lack.
+Dialogue: 0,1:01:16.76,1:01:18.20,Default,,0000,0000,0000,,还有这位\N{\rEn}Sir Bedivere,
+Dialogue: 0,1:01:18.27,1:01:21.74,Default,,0000,0000,0000,,就是洞穴贵族之家的大家长贝德维尔\N{\rEn}who runs this aristocratic family of cave dwellers,
+Dialogue: 0,1:01:21.80,1:01:24.71,Default,,0000,0000,0000,,这是布鲁 拜克莱克的儿子\N{\rEn}meet Blue, son of Back Lack.
+Dialogue: 0,1:01:24.77,1:01:26.84,Default,,0000,0000,0000,,臭名昭著的老泥鳅比尔\N{\rEn}The infamous Goosefat Bill
+Dialogue: 0,1:01:26.91,1:01:28.51,Default,,0000,0000,0000,,就不用我介绍了吧\N{\rEn}needs no introduction.
+Dialogue: 0,1:01:28.58,1:01:30.41,Default,,0000,0000,0000,,好了\N{\rEn}So...
+Dialogue: 0,1:01:30.48,1:01:32.75,Default,,0000,0000,0000,,你们认为能干掉沃蒂根吗\N{\rEn}You think you can take down Vortigern?
+Dialogue: 0,1:01:32.81,1:01:35.25,Default,,0000,0000,0000,,全境有十二个贵族\N{\rEn}There are 12 barons.
+Dialogue: 0,1:01:35.32,1:01:37.52,Default,,0000,0000,0000,,他们代表着英格兰的古老家族\N{\rEn}These represent the old families of England.
+Dialogue: 0,1:01:37.59,1:01:40.89,Default,,0000,0000,0000,,他们很快就能召集一万两千名士兵\N{\rEn}Between them, they can rustle up 12,000 warriors.
+Dialogue: 0,1:01:40.96,1:01:43.02,Default,,0000,0000,0000,,我们要是想成功的话\N{\rEn}In order to stand a chance, we are going to need
+Dialogue: 0,1:01:43.09,1:01:45.03,Default,,0000,0000,0000,,必须获得至少其中几位的支持\N{\rEn}at least some of their support.
+Dialogue: 0,1:01:45.09,1:01:47.06,Default,,0000,0000,0000,,我们可以安排跟其中六个家族见面\N{\rEn}We can arrange a meeting with six of those families...
+Dialogue: 0,1:01:47.13,1:01:49.10,Default,,0000,0000,0000,,我先打断你一下\N{\rEn}Let me stop you there.
+Dialogue: 0,1:01:49.17,1:01:50.90,Default,,0000,0000,0000,,可以的话\N{\rEn}If I may...
+Dialogue: 0,1:01:50.97,1:01:52.87,Default,,0000,0000,0000,,请允许我先猜测一下\N{\rEn}Allow me to run you through the
+Dialogue: 0,1:01:52.87,1:01:54.87,Default,,0000,0000,0000,,他们可能表现会怎样\N{\rEn}proceedings as I think they will unfold.
+Dialogue: 0,1:01:54.94,1:01:56.77,Default,,0000,0000,0000,,他们首先会告诉我们\N{\rEn}They'll start by telling us...
+Dialogue: 0,1:01:56.84,1:01:59.77,Default,,0000,0000,0000,,如果你们打算煽动民众\N{\rEn}If you're intending to galvanize the people of this country
+Dialogue: 0,1:01:59.84,1:02:01.28,Default,,0000,0000,0000,,反抗这个国王\N{\rEn}against the current king,
+Dialogue: 0,1:02:01.34,1:02:03.18,Default,,0000,0000,0000,,那你得有个显示的策略\N{\rEn}there has to be a realistic strategy.
+Dialogue: 0,1:02:03.25,1:02:05.18,Default,,0000,0000,0000,,而策略需要领导\N{\rEn}Strategy requires leadership.
+Dialogue: 0,1:02:05.25,1:02:06.95,Default,,0000,0000,0000,,然后他们会突然谈到他们\N{\rEn}Then they'll bang on for a while
+Dialogue: 0,1:02:07.01,1:02:09.75,Default,,0000,0000,0000,,有多聪明 受过多好的教育\N{\rEn}about how clever and educated they are.
+Dialogue: 0,1:02:09.82,1:02:12.52,Default,,0000,0000,0000,,战争策略 外交和骑士精神\N{\rEn}In the art of war, diplomacy, and chivalry.
+Dialogue: 0,1:02:12.59,1:02:14.12,Default,,0000,0000,0000,,我来当领袖有多不合适\N{\rEn}And how underqualified I am.
+Dialogue: 0,1:02:14.19,1:02:16.42,Default,,0000,0000,0000,,这个人在妓院里长大是事实吧\N{\rEn}Is it not true that this man was raised in a brothel
+Dialogue: 0,1:02:16.49,1:02:18.29,Default,,0000,0000,0000,,没受过任何正规教育\N{\rEn}and has no formal education of any kind?
+Dialogue: 0,1:02:18.36,1:02:19.93,Default,,0000,0000,0000,,然后就开始大加嘲讽\N{\rEn}Then they'll start takin' the piss.
+Dialogue: 0,1:02:20.00,1:02:22.10,Default,,0000,0000,0000,,那我们要叫什么 贝德维尔\N{\rEn}And what are we to be called, Bedivere?
+Dialogue: 0,1:02:22.16,1:02:24.17,Default,,0000,0000,0000,,叫妓院骑士吗\N{\rEn}"Knights of the Bordello"?
+Dialogue: 0,1:02:26.03,1:02:27.54,Default,,0000,0000,0000,,或者叫 风尘骑士\N{\rEn}Or "The Ladies of the Knight".
+Dialogue: 0,1:02:28.87,1:02:30.87,Default,,0000,0000,0000,,你说完了吗\N{\rEn}Have you finished?
+Dialogue: 0,1:02:30.94,1:02:32.22,Default,,0000,0000,0000,,然后我们针锋相对\N{\rEn}I'm gonna have to pull 'em on it.
+Dialogue: 0,1:02:32.27,1:02:34.68,Default,,0000,0000,0000,,你们有幽默感就好\N{\rEn}I'm glad you've got a sense of humor.
+Dialogue: 0,1:02:34.74,1:02:35.86,Default,,0000,0000,0000,,因为你们需要这个\N{\rEn}'Cause you're gonna need it.
+Dialogue: 0,1:02:35.88,1:02:37.65,Default,,0000,0000,0000,,然后我不得不告诉他们\N{\rEn}I'm gonna be forced to tell them...
+Dialogue: 0,1:02:37.71,1:02:39.11,Default,,0000,0000,0000,,你们胆小得像群娘们儿\N{\rEn}There's not a bollock between you.
+Dialogue: 0,1:02:39.18,1:02:40.42,Default,,0000,0000,0000,,这时候呢 贝德维尔\N{\rEn}At which point, Bedivere,
+Dialogue: 0,1:02:40.48,1:02:42.42,Default,,0000,0000,0000,,你会非常生气 出生斥责我\N{\rEn}you're gonna get very angry, and tell me off.
+Dialogue: 0,1:02:42.48,1:02:44.92,Default,,0000,0000,0000,,以我对你的了解 你会这么说\N{\rEn}You'll say something along the lines of...
+Dialogue: 0,1:02:44.99,1:02:46.25,Default,,0000,0000,0000,,如果他们想打\N{\rEn}"What were you gonna do
+Dialogue: 0,1:02:46.32,1:02:47.56,Default,,0000,0000,0000,,你打算怎么做 我回答说\N{\rEn}"if they wanted to fight?" And I'm gonna say,
+Dialogue: 0,1:02:47.62,1:02:49.09,Default,,0000,0000,0000,,我就没想打过\N{\rEn}"I was never gonna fight".
+Dialogue: 0,1:02:49.16,1:02:50.79,Default,,0000,0000,0000,,然后你就会说 那以后怎么办\N{\rEn}And you're gonna say, "Well, what was gonna happen?"
+Dialogue: 0,1:02:50.86,1:02:52.23,Default,,0000,0000,0000,,我会说 那是你的事儿 贝德维尔\N{\rEn}And I was gonna say, "That's why you're here, Bedivere,
+Dialogue: 0,1:02:52.29,1:02:54.20,Default,,0000,0000,0000,,你这个愚蠢无知的老混蛋\N{\rEn}"you big, silly, posh bastard".
+Dialogue: 0,1:02:58.57,1:03:00.97,Default,,0000,0000,0000,,你们想让沃蒂根自己伸出脖子\N{\rEn}You want Vortigern to stick his neck out,
+Dialogue: 0,1:03:01.04,1:03:03.07,Default,,0000,0000,0000,,让他去伦底纽姆\N{\rEn}and get him to Londinium?
+Dialogue: 0,1:03:03.14,1:03:05.04,Default,,0000,0000,0000,,你就得引蛇出洞\N{\rEn}You need to tease it out.
+Dialogue: 0,1:03:05.11,1:03:07.98,Default,,0000,0000,0000,,而这根本就不需要一万两千名士兵\N{\rEn}You don't need 12,000 fighting men for that.
+Dialogue: 0,1:03:08.04,1:03:10.71,Default,,0000,0000,0000,,只要有我们这群人就行了\N{\rEn}What you need is this little rabble.
+Dialogue: 0,1:03:10.78,1:03:12.71,Default,,0000,0000,0000,,那好 你说我们要怎么做\N{\rEn}Okay, so how's that gonna work?
+Dialogue: 0,1:03:12.78,1:03:15.12,Default,,0000,0000,0000,,如果我说的你没听明白 贝德维尔\N{\rEn}If I'm moving too fast for you, Bedivere,
+Dialogue: 0,1:03:15.18,1:03:17.59,Default,,0000,0000,0000,,你随时随地都可以退出\N{\rEn}you can let yourself out the side door.
+Dialogue: 0,1:03:17.65,1:03:20.46,Default,,0000,0000,0000,,你似乎很快就找到了自己的位置\N{\rEn}You seem to have found your way very quickly.
+Dialogue: 0,1:03:20.52,1:03:23.26,Default,,0000,0000,0000,,那走吧 小子 去做晚饭吧\N{\rEn}Now, come on, kid. You're cooking dinner.
+Dialogue: 0,1:03:23.32,1:03:27.53,Default,,0000,0000,0000,,大家想想 沃蒂根那家伙最关心的是什么\N{\rEn}What is it that Vortigern cares about most in the world?
+Dialogue: 0,1:03:27.60,1:03:29.26,Default,,0000,0000,0000,,杀了你\N{\rEn}Killing you.
+Dialogue: 0,1:03:29.33,1:03:30.77,Default,,0000,0000,0000,,除了这个\N{\rEn}Apart from that.
+Dialogue: 0,1:03:30.83,1:03:32.10,Default,,0000,0000,0000,,拿到圣剑\N{\rEn}Getting the sword.
+Dialogue: 0,1:03:32.17,1:03:33.97,Default,,0000,0000,0000,,有没有人能开动一下脑筋\N{\rEn}Could someone help me out here, please?
+Dialogue: 0,1:03:34.03,1:03:35.34,Default,,0000,0000,0000,,建成高塔\N{\rEn}Finishing his tower.
+Dialogue: 0,1:03:35.40,1:03:37.74,Default,,0000,0000,0000,,那我们该怎么办呢\N{\rEn}So what do we do about it?
+Dialogue: 0,1:03:37.81,1:03:39.61,Default,,0000,0000,0000,,我们弄沉他用来运石头的船只 封锁河道\N{\rEn}Sink his barges carrying his supply of stone. Block up the river.
+Dialogue: 0,1:03:39.67,1:03:41.84,Default,,0000,0000,0000,,各位 把船打穿不是更容易吗\N{\rEn}Chaps, wouldn't it be easier just to go through the side?
+Dialogue: 0,1:03:41.91,1:03:44.35,Default,,0000,0000,0000,,瞧 这就是没受过教育的问题\N{\rEn}See? That's the problem with an education.
+Dialogue: 0,1:03:44.41,1:03:45.51,Default,,0000,0000,0000,,绕都绕不开\N{\rEn}It gets in the way.
+Dialogue: 0,1:03:45.58,1:03:48.02,Default,,0000,0000,0000,,那些运石船都是用橡木制成的\N{\rEn}These boats are made out of seasoned oak.
+Dialogue: 0,1:03:48.08,1:03:49.58,Default,,0000,0000,0000,,几乎坚不可摧\N{\rEn}They're uncrackable.
+Dialogue: 0,1:03:49.65,1:03:51.62,Default,,0000,0000,0000,,所以你得打穿甲板才能碰到龙骨\N{\rEn}So you need to go through the deck to get to the keel.
+Dialogue: 0,1:03:51.69,1:03:55.76,Default,,0000,0000,0000,,不你必须打穿舱壁才能碰到船尾\N{\rEn}No, you need to go through the bulkhead to get to the stern.
+Dialogue: 0,1:03:55.82,1:03:56.89,Default,,0000,0000,0000,,你干什么\N{\rEn}What are you doing?
+Dialogue: 0,1:03:56.96,1:03:58.49,Default,,0000,0000,0000,,你在浪费时间\N{\rEn}You're wasting your time.
+Dialogue: 0,1:03:58.56,1:04:00.56,Default,,0000,0000,0000,,我都说了它们坚不可摧\N{\rEn}I've told you they're uncrackable.
+Dialogue: 0,1:04:01.80,1:04:03.33,Default,,0000,0000,0000,,瞧 湿棍子 拜克莱克\N{\rEn}See, Wet Stick, Back Lack?
+Dialogue: 0,1:04:03.40,1:04:06.30,Default,,0000,0000,0000,,这就是教育的好处\N{\rEn}That's what an education gets ya.
+Dialogue: 0,1:04:06.37,1:04:08.57,Default,,0000,0000,0000,,我真诚地向你致歉 国王陛下\N{\rEn}My sincere apologies, Your Majesty.
+Dialogue: 0,1:04:08.64,1:04:11.21,Default,,0000,0000,0000,,我们的运石船沉了 反叛者封锁了河道\N{\rEn}The stone barges have been sunk, and they've blocked the river.
+Dialogue: 0,1:04:11.27,1:04:13.41,Default,,0000,0000,0000,,还有什么 想想 开动脑筋\N{\rEn}What else? Come on, more ideas.
+Dialogue: 0,1:04:13.48,1:04:15.54,Default,,0000,0000,0000,,切断沃蒂根的奴隶供应\N{\rEn}Interrupt his supply of slaves.
+Dialogue: 0,1:04:15.61,1:04:17.21,Default,,0000,0000,0000,,非常好 我们要怎么做\N{\rEn}Excellent. How are we gonna do that?
+Dialogue: 0,1:04:17.28,1:04:19.01,Default,,0000,0000,0000,,我们知道他们的运输线路\N{\rEn}We know their transportation routes.
+Dialogue: 0,1:04:19.08,1:04:20.98,Default,,0000,0000,0000,,现在进入状态了\N{\rEn}Oof! Now we're warmin' up.
+Dialogue: 0,1:04:31.89,1:04:34.06,Default,,0000,0000,0000,,继续开动脑筋\N{\rEn}Come on, ideas.
+Dialogue: 0,1:04:34.13,1:04:36.16,Default,,0000,0000,0000,,烧掉他喜欢的宫殿\N{\rEn}Burn his favorite palace down.
+Dialogue: 0,1:04:36.23,1:04:37.67,Default,,0000,0000,0000,,那要怎么烧\N{\rEn}How you gonna do that, then?
+Dialogue: 0,1:04:37.73,1:04:39.69,Default,,0000,0000,0000,,我认识给宫廷供应白兰地的人\N{\rEn}I know the man that supplies brandy to the palace.
+Dialogue: 0,1:04:39.73,1:04:40.87,Default,,0000,0000,0000,,他月初送酒\N{\rEn}Shipment first of the month.
+Dialogue: 0,1:04:40.94,1:04:42.30,Default,,0000,0000,0000,,葡萄酒 还是白兰地\N{\rEn}All right, Dan. Wine or brandy?
+Dialogue: 0,1:04:42.37,1:04:43.41,Default,,0000,0000,0000,,白兰地\N{\rEn}Brandy.
+Dialogue: 0,1:04:43.47,1:04:44.41,Default,,0000,0000,0000,,把门打开\N{\rEn}Open the doors.
+Dialogue: 0,1:04:50.18,1:04:51.58,Default,,0000,0000,0000,,太浪费酒了\N{\rEn}What a waste of brandy.
+Dialogue: 0,1:04:51.65,1:04:54.45,Default,,0000,0000,0000,,不用酒的话火能烧这么旺吗\N{\rEn}But doesn't it make the palace burn well?
+Dialogue: 0,1:04:56.12,1:04:59.15,Default,,0000,0000,0000,,一万个男孩子全不到十二岁\N{\rEn}10,000 boys. All under 12 years.
+Dialogue: 0,1:04:59.22,1:05:00.89,Default,,0000,0000,0000,,年纪小容易忘记家人\N{\rEn}Young enough to forget their families,
+Dialogue: 0,1:05:00.96,1:05:02.96,Default,,0000,0000,0000,,只会忠诚于你们\N{\rEn}and to have no other loyalty than to you.
+Dialogue: 0,1:05:03.02,1:05:05.69,Default,,0000,0000,0000,,另外每年再给你们五千\N{\rEn}Plus, 5,000 more each year
+Dialogue: 0,1:05:05.76,1:05:08.93,Default,,0000,0000,0000,,只要保证我们的船通过你们的海域\N{\rEn}for as long as you grant us passage through your seas.
+Dialogue: 0,1:05:09.00,1:05:10.47,Default,,0000,0000,0000,,北方是我们的\N{\rEn}The north is ours?
+Dialogue: 0,1:05:10.53,1:05:11.97,Default,,0000,0000,0000,,这是我们的协议\N{\rEn}That is our agreement.
+Dialogue: 0,1:05:23.11,1:05:24.58,Default,,0000,0000,0000,,有问题吗\N{\rEn}Is there a problem?
+Dialogue: 0,1:05:28.45,1:05:31.12,Default,,0000,0000,0000,,我听到一些谣言 尊敬的陛下\N{\rEn}There are rumors, Great King.
+Dialogue: 0,1:05:31.19,1:05:32.45,Default,,0000,0000,0000,,隔着海洋\N{\rEn}Even across the seas
+Dialogue: 0,1:05:32.52,1:05:36.23,Default,,0000,0000,0000,,我们都听说了传说中的\N{\rEn}we have heard the legend of the sword,
+Dialogue: 0,1:05:36.96,1:05:38.76,Default,,0000,0000,0000,,王者之剑\N{\rEn}of a king
+Dialogue: 0,1:05:38.83,1:05:41.53,Default,,0000,0000,0000,,而不是您的\N{\rEn}other than yourself.
+Dialogue: 0,1:05:41.60,1:05:45.33,Default,,0000,0000,0000,,我有一个问题必须要问你 要不然\N{\rEn}I would be doing my own king a disservice
+Dialogue: 0,1:05:45.40,1:05:48.27,Default,,0000,0000,0000,,就会损害我们国王的利益\N{\rEn}if I did not ask this question.
+Dialogue: 0,1:05:51.31,1:05:53.18,Default,,0000,0000,0000,,您答应的协议有效吗\N{\rEn}Are the boys yours to give?
+Dialogue: 0,1:05:53.24,1:05:56.48,Default,,0000,0000,0000,,你觉得你是应该相信不知所谓的谣言\N{\rEn}Do you really consider your faith better served by a rumor?
+Dialogue: 0,1:05:56.55,1:05:59.95,Default,,0000,0000,0000,,还是不列颠岛的伟大征服者\N{\rEn}Or by the word of the conqueror of this island
+Dialogue: 0,1:06:00.01,1:06:03.99,Default,,0000,0000,0000,,而征服者的麾下还有十万名英勇善战之士\N{\rEn}with an army of 100,000 souls behind his sword?
+Dialogue: 0,1:06:12.56,1:06:17.03,Default,,0000,0000,0000,,我绝没有冒犯您的意思 尊敬的陛下\N{\rEn}I meant no disrespect, Great King.
+Dialogue: 0,1:06:33.42,1:06:36.02,Default,,0000,0000,0000,,您说要见我 父亲\N{\rEn}You asked to see me, Father?
+Dialogue: 0,1:06:38.72,1:06:40.75,Default,,0000,0000,0000,,我们需要所有贵族的支持\N{\rEn}We need the support of all the barons.
+Dialogue: 0,1:06:40.82,1:06:42.89,Default,,0000,0000,0000,,在伦底纽姆会面\N{\rEn}Set a meeting in Londinium
+Dialogue: 0,1:06:42.96,1:06:44.63,Default,,0000,0000,0000,,有六个都靠不住\N{\rEn}for the six we doubt.
+Dialogue: 0,1:06:44.69,1:06:48.56,Default,,0000,0000,0000,,不惜一切代价给我找到他\N{\rEn}Whatever it takes to hunt him down.
+Dialogue: 0,1:07:26.03,1:07:27.60,Default,,0000,0000,0000,,我还是控制不了\N{\rEn}I still can't control it.
+Dialogue: 0,1:07:27.67,1:07:28.70,Default,,0000,0000,0000,,拿起来\N{\rEn}Pick it up.
+Dialogue: 0,1:07:29.27,1:07:30.81,Default,,0000,0000,0000,,你拿起来啊\N{\rEn}You pick it up.
+Dialogue: 0,1:07:30.87,1:07:32.24,Default,,0000,0000,0000,,用两只手拿起圣剑\N{\rEn}Pick it up with both hands.
+Dialogue: 0,1:07:35.28,1:07:38.08,Default,,0000,0000,0000,,该想起来的你都想起来了吗\N{\rEn}Did you see everything you needed to see?
+Dialogue: 0,1:07:38.15,1:07:39.41,Default,,0000,0000,0000,,在哪儿\N{\rEn}Where?
+Dialogue: 0,1:07:39.41,1:07:40.68,Default,,0000,0000,0000,,在黑暗之地\N{\rEn}In the Darklands.
+Dialogue: 0,1:07:41.68,1:07:43.05,Default,,0000,0000,0000,,你逃避了吗\N{\rEn}Did you look away?
+Dialogue: 0,1:07:44.85,1:07:48.29,Default,,0000,0000,0000,,你想知道为什么你仍然不能控制它\N{\rEn}You want to know why you still can't use it.
+Dialogue: 0,1:07:48.36,1:07:49.73,Default,,0000,0000,0000,,要不你告诉我\N{\rEn}Why don't you tell me?
+Dialogue: 0,1:07:49.79,1:07:52.23,Default,,0000,0000,0000,,我觉得你知道答案\N{\rEn}I think you know the answer.
+Dialogue: 0,1:07:52.29,1:07:55.76,Default,,0000,0000,0000,,等你觉得值得了就会去面对它\N{\rEn}You will face it when it's worth it to you.
+Dialogue: 0,1:07:55.83,1:07:58.87,Default,,0000,0000,0000,,别误会我的意思 我也逃避了\N{\rEn}Don't get me wrong, I look away.
+Dialogue: 0,1:07:58.93,1:08:01.54,Default,,0000,0000,0000,,我们都逃避了\N{\rEn}We all look away.
+Dialogue: 0,1:08:01.60,1:08:04.57,Default,,0000,0000,0000,,普通人与王者之间的区别就在这\N{\rEn}But that is the difference between a man and a king.
+Dialogue: 0,1:08:13.11,1:08:15.08,Default,,0000,0000,0000,,玛吉\N{\rEn}Maggie!
+Dialogue: 0,1:08:15.15,1:08:17.85,Default,,0000,0000,0000,,我记得我们说好了你不会出现在这里\N{\rEn}I thought we agreed that you'd never come here.
+Dialogue: 0,1:08:17.92,1:08:19.75,Default,,0000,0000,0000,,你先听她说\N{\rEn}You need to hear this.
+Dialogue: 0,1:08:19.82,1:08:22.99,Default,,0000,0000,0000,,沃蒂根要来伦底纽姆 跟各大贵族会面\N{\rEn}Vortigern is making a visit to Londinium to meet with the barons.
+Dialogue: 0,1:08:23.06,1:08:24.06,Default,,0000,0000,0000,,他会乘船过来\N{\rEn}He will travel by barge.
+Dialogue: 0,1:08:24.06,1:08:25.16,Default,,0000,0000,0000,,什么时候\N{\rEn}When?
+Dialogue: 0,1:08:26.19,1:08:27.53,Default,,0000,0000,0000,,就在三天后\N{\rEn}Three days from now.
+Dialogue: 0,1:08:29.16,1:08:31.37,Default,,0000,0000,0000,,看来你的计划奏效了\N{\rEn}Looks like your plan worked.
+Dialogue: 0,1:08:31.43,1:08:33.14,Default,,0000,0000,0000,,你一定要小心\N{\rEn}You need to be careful.
+Dialogue: 0,1:08:34.00,1:08:36.21,Default,,0000,0000,0000,,沃蒂根的力量增强了\N{\rEn}His power is increasing.
+Dialogue: 0,1:09:31.03,1:09:32.73,Default,,0000,0000,0000,,这个楼没有问题\N{\rEn}The building's right.
+Dialogue: 0,1:09:32.79,1:09:35.66,Default,,0000,0000,0000,,角度也好 有三个出口 可以离开城市\N{\rEn}The angle's right. Three exits from which to leave the city.
+Dialogue: 0,1:09:35.73,1:09:39.17,Default,,0000,0000,0000,,刺杀位置俯瞰整个码头和大半个城\N{\rEn}A vantage point over the whole dock and most of the town.
+Dialogue: 0,1:09:39.23,1:09:40.40,Default,,0000,0000,0000,,离目标五十码\N{\rEn}It's a 50-yard shot.
+Dialogue: 0,1:09:40.47,1:09:42.24,Default,,0000,0000,0000,,很容易射中 有问题吗\N{\rEn}I can do that easily. What's the problem?
+Dialogue: 0,1:09:42.30,1:09:43.51,Default,,0000,0000,0000,,告诉他\N{\rEn}Tell him.
+Dialogue: 0,1:09:43.57,1:09:44.81,Default,,0000,0000,0000,,我跟你说什么问题\N{\rEn}Tell you what the problem is, mate.
+Dialogue: 0,1:09:44.87,1:09:46.24,Default,,0000,0000,0000,,你说楼房没问题\N{\rEn}When you say the building's right,
+Dialogue: 0,1:09:46.31,1:09:47.83,Default,,0000,0000,0000,,但是我碰巧认识房主\N{\rEn}I know the man that owns that building.
+Dialogue: 0,1:09:47.88,1:09:49.64,Default,,0000,0000,0000,,那家伙不喜欢任何人进去\N{\rEn}And he's not interested in letting anyone in.
+Dialogue: 0,1:09:49.68,1:09:51.38,Default,,0000,0000,0000,,你说从屋顶上刺杀国王怎么样\N{\rEn}How do you feel about a rooftop king assassination?
+Dialogue: 0,1:09:51.44,1:09:52.35,Default,,0000,0000,0000,,我家屋顶吗\N{\rEn}My roof?
+Dialogue: 0,1:09:52.35,1:09:53.25,Default,,0000,0000,0000,,对\N{\rEn}Yeah.
+Dialogue: 0,1:09:53.31,1:09:55.15,Default,,0000,0000,0000,,他至少不会介意牺牲屋顶让我来刺杀国王\N{\rEn}And least of all the king's assassins that he'll have to hang for.
+Dialogue: 0,1:09:55.22,1:09:56.05,Default,,0000,0000,0000,,我会介意\N{\rEn}I'd hang?
+Dialogue: 0,1:09:56.05,1:09:56.88,Default,,0000,0000,0000,,有可能\N{\rEn}Probably.
+Dialogue: 0,1:09:57.99,1:10:00.05,Default,,0000,0000,0000,,三个出口其实只能算一个\N{\rEn}The three exits are actually only one.
+Dialogue: 0,1:10:00.12,1:10:01.92,Default,,0000,0000,0000,,因为只要射出信号箭\N{\rEn}'Cause once the alarm arrow's fired
+Dialogue: 0,1:10:01.99,1:10:03.86,Default,,0000,0000,0000,,两分钟内三个城门都会关闭\N{\rEn}the gates will be shut within two minutes
+Dialogue: 0,1:10:03.93,1:10:06.16,Default,,0000,0000,0000,,跑过去要六分钟\N{\rEn}and they're six minutes away by foot.
+Dialogue: 0,1:10:06.23,1:10:09.60,Default,,0000,0000,0000,,除非你能跑得比兔了还快 就别考虑了\N{\rEn}Unless you can run like a Neapolitan stallion, I'd forget them.
+Dialogue: 0,1:10:09.66,1:10:11.77,Default,,0000,0000,0000,,所以就剩下一个出口了\N{\rEn}So, you have one exit remaining.
+Dialogue: 0,1:10:11.83,1:10:13.93,Default,,0000,0000,0000,,是二十码外的一家小酒馆\N{\rEn}And that has a tavern 20 yards from it.
+Dialogue: 0,1:10:14.00,1:10:16.50,Default,,0000,0000,0000,,在雄鸡酒馆喝酒的黑甲兵\N{\rEn}There's always more Blacklegs in the Two Hot Cocks
+Dialogue: 0,1:10:16.57,1:10:18.21,Default,,0000,0000,0000,,比在街上闲逛的还要多\N{\rEn}than there are rats on the street.
+Dialogue: 0,1:10:18.27,1:10:20.07,Default,,0000,0000,0000,,为什么不考虑别的楼房呢\N{\rEn}Why don't you use the other building?
+Dialogue: 0,1:10:20.14,1:10:21.34,Default,,0000,0000,0000,,比如那栋\N{\rEn}The one back here?
+Dialogue: 0,1:10:22.44,1:10:24.68,Default,,0000,0000,0000,,因为那里离目标有一百七十五码\N{\rEn}Because it's 175 yards away.
+Dialogue: 0,1:10:24.75,1:10:26.78,Default,,0000,0000,0000,,那你能射多远 拜克莱克\N{\rEn}And how far can you shoot, Back Lack?
+Dialogue: 0,1:10:26.85,1:10:29.32,Default,,0000,0000,0000,,准数吗 七十五码\N{\rEn}Accurately? 75.
+Dialogue: 0,1:10:29.38,1:10:31.19,Default,,0000,0000,0000,,比尔\N{\rEn}Bill?
+Dialogue: 0,1:10:31.25,1:10:32.19,Default,,0000,0000,0000,,七十五码\N{\rEn}175.
+Dialogue: 0,1:10:32.25,1:10:33.29,Default,,0000,0000,0000,,跟他一样\N{\rEn}Same as...
+Dialogue: 0,1:10:33.35,1:10:35.89,Default,,0000,0000,0000,,不 他是说 一百零七十五码\N{\rEn}No, he said, "175."
+Dialogue: 0,1:10:37.52,1:10:38.89,Default,,0000,0000,0000,,好吧老兄 你厉害\N{\rEn}All right, mate, of course you can.
+Dialogue: 0,1:10:49.20,1:10:52.11,Default,,0000,0000,0000,,这大约有一百七十五码了 是吧\N{\rEn}That's about 175 yards, isn't it?
+Dialogue: 0,1:10:52.17,1:10:54.14,Default,,0000,0000,0000,,好了 他该发信号了\N{\rEn}Well, he was supposed to signal.
+Dialogue: 0,1:10:54.21,1:10:55.34,Default,,0000,0000,0000,,看不见他\N{\rEn}Can't see him.
+Dialogue: 0,1:10:55.41,1:10:56.71,Default,,0000,0000,0000,,好吧 我们看不见他们\N{\rEn}Well, if can't see them,
+Dialogue: 0,1:10:56.78,1:10:58.81,Default,,0000,0000,0000,,他们也看不见我们\N{\rEn}then they can't see us.
+Dialogue: 0,1:11:01.62,1:11:03.89,Default,,0000,0000,0000,,他们大概以为自己走运\N{\rEn}Maybe they thought that was luck.
+Dialogue: 0,1:11:05.95,1:11:07.49,Default,,0000,0000,0000,,你差点杀死我们\N{\rEn}That could've killed us.
+Dialogue: 0,1:11:10.72,1:11:12.59,Default,,0000,0000,0000,,你朋友叫得像姑娘\N{\rEn}They scream like girls, your friends.
+Dialogue: 0,1:11:18.63,1:11:19.57,Default,,0000,0000,0000,,比尔\N{\rEn}Bill?
+Dialogue: 0,1:11:19.63,1:11:22.97,Default,,0000,0000,0000,,目标就在卫兵的前面\N{\rEn}The wolf at the head of the pack.
+Dialogue: 0,1:11:23.04,1:11:24.51,Default,,0000,0000,0000,,老泥鳅\N{\rEn}Goosefat...
+Dialogue: 0,1:11:24.57,1:11:25.84,Default,,0000,0000,0000,,一切都正常吗\N{\rEn}Everything all right?
+Dialogue: 0,1:11:27.11,1:11:27.91,Default,,0000,0000,0000,,老泥鳅\N{\rEn}Goosefat!
+Dialogue: 0,1:11:28.78,1:11:30.24,Default,,0000,0000,0000,,有什么我应该知道的吗\N{\rEn}Is there something I should know here?
+Dialogue: 0,1:11:30.31,1:11:31.78,Default,,0000,0000,0000,,他跟麦西亚有仇\N{\rEn}Those two have a history.
+Dialogue: 0,1:11:31.85,1:11:34.15,Default,,0000,0000,0000,,不管你们有什么仇怨 我们不是来报仇的\N{\rEn}Well, whatever it is, that's not what we're here for.
+Dialogue: 0,1:11:34.22,1:11:35.21,Default,,0000,0000,0000,,是吧 老泥鳅\N{\rEn}Is it, Goosefat?
+Dialogue: 0,1:11:35.52,1:11:37.98,Default,,0000,0000,0000,,他们己经到了\N{\rEn}They've arrived.
+Dialogue: 0,1:11:38.05,1:11:40.36,Default,,0000,0000,0000,,玛吉 我现在才意识到\N{\rEn}Maggie, I now realize what an important
+Dialogue: 0,1:11:40.36,1:11:42.36,Default,,0000,0000,0000,,你对我的家族有多么重要\N{\rEn}member of my household you are.
+Dialogue: 0,1:11:42.89,1:11:43.92,Default,,0000,0000,0000,,国王陛下\N{\rEn}Your Majesty...
+Dialogue: 0,1:11:43.99,1:11:45.03,Default,,0000,0000,0000,,我还没说完\N{\rEn}I haven't finished.
+Dialogue: 0,1:11:46.09,1:11:47.53,Default,,0000,0000,0000,,坐下\N{\rEn}Sit down.
+Dialogue: 0,1:11:49.23,1:11:51.10,Default,,0000,0000,0000,,直到最近\N{\rEn}Till recently...
+Dialogue: 0,1:11:51.17,1:11:54.97,Default,,0000,0000,0000,,我才明白只要用的好 你这个工具威力无穷\N{\rEn}I didn't recognize what a powerful tool you can be in the right hands.
+Dialogue: 0,1:11:55.04,1:11:57.21,Default,,0000,0000,0000,,我以为你是小卒子\N{\rEn}I thought you were simply a pawn.
+Dialogue: 0,1:11:57.27,1:12:00.21,Default,,0000,0000,0000,,但却发现你扮演的角色重要得很\N{\rEn}Turns out you're a far more significant piece.
+Dialogue: 0,1:12:00.27,1:12:02.71,Default,,0000,0000,0000,,如果我不好好利用你\N{\rEn}And it would be witless of me
+Dialogue: 0,1:12:02.78,1:12:05.75,Default,,0000,0000,0000,,那可真的是我的损失\N{\rEn}not to use that to my advantage,
+Dialogue: 0,1:12:05.81,1:12:08.52,Default,,0000,0000,0000,,谁让你这个内奸当得风生水起\N{\rEn}given how effectively you've been used against me.
+Dialogue: 0,1:12:10.35,1:12:12.92,Default,,0000,0000,0000,,向国王致敬\N{\rEn}Hail to the king!
+Dialogue: 0,1:12:12.99,1:12:14.09,Default,,0000,0000,0000,,国王来了\N{\rEn}There's the king.
+Dialogue: 0,1:12:22.93,1:12:25.33,Default,,0000,0000,0000,,我觉得有点儿不太对劲\N{\rEn}Something doesn't smell right.
+Dialogue: 0,1:12:33.17,1:12:34.54,Default,,0000,0000,0000,,这太容易了\N{\rEn}This is too easy.
+Dialogue: 0,1:12:36.61,1:12:38.48,Default,,0000,0000,0000,,慢着 别放箭\N{\rEn}Wait. Wait, wait. Don't fire.
+Dialogue: 0,1:12:38.55,1:12:39.55,Default,,0000,0000,0000,,为什么\N{\rEn}Why not?
+Dialogue: 0,1:12:39.55,1:12:40.55,Default,,0000,0000,0000,,事情有点儿不对劲\N{\rEn}Something doesn't smell right.
+Dialogue: 0,1:12:40.61,1:12:42.98,Default,,0000,0000,0000,,我看所有事情都对劲得很\N{\rEn}It smells as right as it's ever going to smell.
+Dialogue: 0,1:12:43.05,1:12:45.02,Default,,0000,0000,0000,,快啊 他就要到了\N{\rEn}Come on, he's right there.
+Dialogue: 0,1:12:45.09,1:12:46.72,Default,,0000,0000,0000,,比尔 准备射箭\N{\rEn}Bill! Get on with it!
+Dialogue: 0,1:12:46.79,1:12:47.82,Default,,0000,0000,0000,,这是个圈套\N{\rEn}It's a trap.
+Dialogue: 0,1:12:47.89,1:12:49.14,Default,,0000,0000,0000,,他怎么可能知道\N{\rEn}How would he know?
+Dialogue: 0,1:12:49.14,1:12:50.39,Default,,0000,0000,0000,,不清楚 玛吉\N{\rEn}Don't know. Maggie.
+Dialogue: 0,1:12:50.46,1:12:52.53,Default,,0000,0000,0000,,也许他知道玛吉是我们的人了\N{\rEn}Maybe he knows she's working for us.
+Dialogue: 0,1:12:52.59,1:12:55.43,Default,,0000,0000,0000,,我现在告诉你 那个人不是国王\N{\rEn}I am telling you. That is not the king.
+Dialogue: 0,1:12:57.80,1:13:00.90,Default,,0000,0000,0000,,别东张西望的 往我这里看\N{\rEn}Stop looking around and look at me.
+Dialogue: 0,1:13:00.97,1:13:02.60,Default,,0000,0000,0000,,我是靶子 不是吗\N{\rEn}I'm a target, aren't I?
+Dialogue: 0,1:13:02.67,1:13:05.04,Default,,0000,0000,0000,,我的老天 他们找了个傻瓜来\N{\rEn}God help us. They've sent me a buffoon.
+Dialogue: 0,1:13:06.57,1:13:09.64,Default,,0000,0000,0000,,你真是个狡猾的老混蛋 沃蒂根\N{\rEn}You are a cunning old bastard, Vortigern.
+Dialogue: 0,1:13:09.71,1:13:11.51,Default,,0000,0000,0000,,然而你根本不明白的是\N{\rEn}But what you fail to understand
+Dialogue: 0,1:13:11.58,1:13:14.31,Default,,0000,0000,0000,,你其实是在自掘坟墓\N{\rEn}is that it's you who's fed the hangman
+Dialogue: 0,1:13:14.38,1:13:15.82,Default,,0000,0000,0000,,终有一天你会遭到报应的\N{\rEn}that will eventually come for you.
+Dialogue: 0,1:13:17.02,1:13:18.59,Default,,0000,0000,0000,,没错 那不是沃蒂根\N{\rEn}You're right, that's not Vortigern.
+Dialogue: 0,1:13:18.65,1:13:20.39,Default,,0000,0000,0000,,但至少麦西亚在\N{\rEn}But at least Mercia's here.
+Dialogue: 0,1:13:21.09,1:13:22.42,Default,,0000,0000,0000,,老泥鳅\N{\rEn}Goosefat.
+Dialogue: 0,1:13:26.73,1:13:29.03,Default,,0000,0000,0000,,你这是做什么 既然是圈套你怎么还射\N{\rEn}What have you done? You can't shoot if it's a trap!
+Dialogue: 0,1:13:29.10,1:13:30.70,Default,,0000,0000,0000,,他们不知道箭是哪儿来的\N{\rEn}They'll never know where that came from.
+Dialogue: 0,1:13:32.53,1:13:33.90,Default,,0000,0000,0000,,但是你射偏了\N{\rEn}You missed him anyway.
+Dialogue: 0,1:13:35.14,1:13:36.44,Default,,0000,0000,0000,,我可没有射偏\N{\rEn}I didn't miss anyone.
+Dialogue: 0,1:13:43.14,1:13:44.15,Default,,0000,0000,0000,,射箭\N{\rEn}Arrow!
+Dialogue: 0,1:13:51.75,1:13:53.42,Default,,0000,0000,0000,,你在干什么 你不能随意射杀\N{\rEn}What are you doing? They're not targets at a fair!
+Dialogue: 0,1:13:53.49,1:13:55.62,Default,,0000,0000,0000,,那是克拉伦登 这是他活该\N{\rEn}That was Clarendon. He earned that.
+Dialogue: 0,1:13:58.09,1:13:59.59,Default,,0000,0000,0000,,你今天可能死不了\N{\rEn}You migh survive today...
+Dialogue: 0,1:14:00.66,1:14:02.56,Default,,0000,0000,0000,,但是死神就要来了\N{\rEn}But the noose has been tied.
+Dialogue: 0,1:14:06.57,1:14:07.57,Default,,0000,0000,0000,,我们得赶快走\N{\rEn}We need to go. Now!
+Dialogue: 0,1:14:07.64,1:14:09.74,Default,,0000,0000,0000,,快 我们现在就走\N{\rEn}Now. We need to go now.
+Dialogue: 0,1:14:19.61,1:14:21.05,Default,,0000,0000,0000,,关上城门\N{\rEn}Close the gates!
+Dialogue: 0,1:14:34.60,1:14:35.80,Default,,0000,0000,0000,,把手举起来\N{\rEn}Put your arms up.
+Dialogue: 0,1:14:41.14,1:14:42.70,Default,,0000,0000,0000,,你们几个 等等\N{\rEn}Hello, boys. Wait, wait.
+Dialogue: 0,1:14:42.77,1:14:44.27,Default,,0000,0000,0000,,你们去哪儿\N{\rEn}Hey, hey, hey. Where are you going?
+Dialogue: 0,1:14:44.34,1:14:45.54,Default,,0000,0000,0000,,站住\N{\rEn}Stop.
+Dialogue: 0,1:14:53.75,1:14:55.02,Default,,0000,0000,0000,,队长\N{\rEn}Sarge!
+Dialogue: 0,1:14:55.88,1:14:57.28,Default,,0000,0000,0000,,住手\N{\rEn}Hey! Stop!
+Dialogue: 0,1:15:08.36,1:15:09.06,Default,,0000,0000,0000,,我们走\N{\rEn}Let's go!
+Dialogue: 0,1:15:09.13,1:15:10.87,Default,,0000,0000,0000,,我跟不上了 你们先走\N{\rEn}I'm holding you up. Go on without me.
+Dialogue: 0,1:15:10.93,1:15:11.60,Default,,0000,0000,0000,,不行 撑住 我们走\N{\rEn}No, Lack, come on. Let's go.
+Dialogue: 0,1:15:11.63,1:15:12.70,Default,,0000,0000,0000,,我们安全屋见\N{\rEn}No, I'll see you at the safe house.
+Dialogue: 0,1:15:12.77,1:15:14.03,Default,,0000,0000,0000,,- 不 我不会丢下你  - 快走\N{\rEn}- I'm not leaving you!  - Just go!
+Dialogue: 0,1:15:16.04,1:15:17.07,Default,,0000,0000,0000,,他们在那儿\N{\rEn}There they are!
+Dialogue: 0,1:15:28.62,1:15:29.82,Default,,0000,0000,0000,,滚开\N{\rEn}Move!
+Dialogue: 0,1:15:43.23,1:15:45.00,Default,,0000,0000,0000,,这边\N{\rEn}This way, this way.
+Dialogue: 0,1:15:46.07,1:15:47.53,Default,,0000,0000,0000,,我们走\N{\rEn}Let's go!
+Dialogue: 0,1:15:47.60,1:15:50.21,Default,,0000,0000,0000,,让开 让开\N{\rEn}Move! Move! Move!
+Dialogue: 0,1:15:50.27,1:15:53.01,Default,,0000,0000,0000,,让开\N{\rEn}Move!
+Dialogue: 0,1:15:59.65,1:16:00.85,Default,,0000,0000,0000,,让开\N{\rEn}Move!
+Dialogue: 0,1:16:15.43,1:16:16.73,Default,,0000,0000,0000,,都给我让开\N{\rEn}Get out of the way!
+Dialogue: 0,1:16:16.73,1:16:18.03,Default,,0000,0000,0000,,左边 往左边\N{\rEn}Left! Go left!
+Dialogue: 0,1:16:18.10,1:16:19.17,Default,,0000,0000,0000,,在这里\N{\rEn}Over here!
+Dialogue: 0,1:16:31.01,1:16:32.71,Default,,0000,0000,0000,,这里\N{\rEn}Hey. Here.
+Dialogue: 0,1:16:33.85,1:16:35.32,Default,,0000,0000,0000,,进去 这边\N{\rEn}In here. This way!
+Dialogue: 0,1:16:57.87,1:16:59.11,Default,,0000,0000,0000,,我们不能待在这\N{\rEn}We can't stay here.
+Dialogue: 0,1:17:00.34,1:17:01.51,Default,,0000,0000,0000,,莱克呢\N{\rEn}Where's Lack?
+Dialogue: 0,1:17:01.58,1:17:03.28,Default,,0000,0000,0000,,- 他有办法  - 好吧\N{\rEn}- He's making his own way.  - All right.
+Dialogue: 0,1:17:03.34,1:17:04.68,Default,,0000,0000,0000,,鲁比奥怎么样\N{\rEn}How's Rubio?
+Dialogue: 0,1:17:04.68,1:17:06.01,Default,,0000,0000,0000,,在流血 但死不了\N{\rEn}He's leaking, but he'll live.
+Dialogue: 0,1:17:06.08,1:17:08.52,Default,,0000,0000,0000,,我们得去老澡堂那儿\N{\rEn}We need to get to the old bathhouse.
+Dialogue: 0,1:17:08.58,1:17:10.08,Default,,0000,0000,0000,,我要是死了就跟着他\N{\rEn}If I go down, you follow him.
+Dialogue: 0,1:17:10.15,1:17:12.29,Default,,0000,0000,0000,,他要是死了就跟着我\N{\rEn}If he goes down, you follow me.
+Dialogue: 0,1:17:13.22,1:17:14.22,Default,,0000,0000,0000,,加把劲儿\N{\rEn}Come on.
+Dialogue: 0,1:17:30.31,1:17:31.97,Default,,0000,0000,0000,,敌人太多了 这边\N{\rEn}There's too many. This way!
+Dialogue: 0,1:17:33.07,1:17:34.17,Default,,0000,0000,0000,,快走\N{\rEn}Come on!
+Dialogue: 0,1:17:34.24,1:17:35.94,Default,,0000,0000,0000,,大家快点儿\N{\rEn}Come on, guys!
+Dialogue: 0,1:17:39.71,1:17:40.81,Default,,0000,0000,0000,,能撑住吗\N{\rEn}Can you make it?
+Dialogue: 0,1:17:40.88,1:17:42.08,Default,,0000,0000,0000,,我能撑住 没问题\N{\rEn}I can make it, no problem.
+Dialogue: 0,1:17:46.72,1:17:47.72,Default,,0000,0000,0000,,在这里\N{\rEn}Over here!
+Dialogue: 0,1:17:47.79,1:17:49.09,Default,,0000,0000,0000,,过来\N{\rEn}Hey! Come on!
+Dialogue: 0,1:17:56.53,1:17:57.37,Default,,0000,0000,0000,,鲁比奥\N{\rEn}Rubio!
+Dialogue: 0,1:17:57.37,1:17:58.20,Default,,0000,0000,0000,,快回来\N{\rEn}Come back!
+Dialogue: 0,1:17:58.27,1:17:59.27,Default,,0000,0000,0000,,鲁比奥\N{\rEn}Rubio!
+Dialogue: 0,1:18:00.73,1:18:01.97,Default,,0000,0000,0000,,快点儿\N{\rEn}Come on!
+Dialogue: 0,1:18:07.94,1:18:09.28,Default,,0000,0000,0000,,你得帮他们\N{\rEn}They need your help.
+Dialogue: 0,1:18:25.83,1:18:27.90,Default,,0000,0000,0000,,锁上门 乔治\N{\rEn}Lock the door, George.
+Dialogue: 0,1:18:32.73,1:18:33.90,Default,,0000,0000,0000,,让他们从后门出去 乔治\N{\rEn}Get the lads out the back door, George.
+Dialogue: 0,1:18:33.97,1:18:35.24,Default,,0000,0000,0000,,他们不会走  老大\N{\rEn}It's not gonna happen, boss.
+Dialogue: 0,1:18:35.30,1:18:36.54,Default,,0000,0000,0000,,正想揍那群黑甲讨厌鬼\N{\rEn}They hate the Blackleg and love a fight.
+Dialogue: 0,1:18:36.60,1:18:37.91,Default,,0000,0000,0000,,对方人太多了\N{\rEn}There's too many of them.
+Dialogue: 0,1:18:37.97,1:18:39.67,Default,,0000,0000,0000,,战斗是他们的命 他们不会走的\N{\rEn}It's not gonna happen. They live for this.
+Dialogue: 0,1:18:39.74,1:18:41.18,Default,,0000,0000,0000,,他们会死的 乔治\N{\rEn}They're gonna die, George!
+Dialogue: 0,1:18:41.24,1:18:43.18,Default,,0000,0000,0000,,他们受训就是为了战斗\N{\rEn}They trained their whole lives for this.
+Dialogue: 0,1:18:59.93,1:19:00.59,Default,,0000,0000,0000,,用力\N{\rEn}Go on.
+Dialogue: 0,1:19:00.60,1:19:01.26,Default,,0000,0000,0000,,放下\N{\rEn}Let go. Let go.
+Dialogue: 0,1:19:11.64,1:19:12.87,Default,,0000,0000,0000,,快点儿 走啊\N{\rEn}Come on! Move!
+Dialogue: 0,1:19:12.94,1:19:13.67,Default,,0000,0000,0000,,战斗\N{\rEn}Fight!
+Dialogue: 0,1:19:13.67,1:19:14.41,Default,,0000,0000,0000,,第二队\N{\rEn}Second rank!
+Dialogue: 0,1:19:14.47,1:19:16.94,Default,,0000,0000,0000,,你们俩往前 直走就能到河那里\N{\rEn}You two, down here. It's a straight run to the river.
+Dialogue: 0,1:19:17.01,1:19:18.88,Default,,0000,0000,0000,,你先走\N{\rEn}You go first.
+Dialogue: 0,1:19:18.95,1:19:20.58,Default,,0000,0000,0000,,我没有时间跟你争论 比尔\N{\rEn}We don't have time to argue, Bill.
+Dialogue: 0,1:19:20.65,1:19:23.08,Default,,0000,0000,0000,,我们中间有人能逃出去 有人不能\N{\rEn}Some of us will make it out in time. Some of us won't.
+Dialogue: 0,1:19:23.15,1:19:25.32,Default,,0000,0000,0000,,要逃一起逃\N{\rEn}Well, better some than none!
+Dialogue: 0,1:19:25.39,1:19:26.49,Default,,0000,0000,0000,,你先走吧\N{\rEn}You go first.
+Dialogue: 0,1:19:28.76,1:19:31.56,Default,,0000,0000,0000,,迈克 去下水道\N{\rEn}Mike! Get down the hole.
+Dialogue: 0,1:19:31.63,1:19:33.76,Default,,0000,0000,0000,,迈克 去下水道\N{\rEn}Mike, get down the hole.
+Dialogue: 0,1:19:33.83,1:19:35.10,Default,,0000,0000,0000,,老大 我不是老鼠\N{\rEn}Don't like rats, boss.
+Dialogue: 0,1:19:36.63,1:19:37.70,Default,,0000,0000,0000,,戴尔\N{\rEn}Dell.
+Dialogue: 0,1:19:37.70,1:19:38.77,Default,,0000,0000,0000,,我很怕黑\N{\rEn}Scared of the dark.
+Dialogue: 0,1:19:38.83,1:19:40.43,Default,,0000,0000,0000,,是吗\N{\rEn}Really?
+Dialogue: 0,1:19:40.50,1:19:42.50,Default,,0000,0000,0000,,乔治 你让他们走\N{\rEn}George, will you tell them?
+Dialogue: 0,1:19:42.57,1:19:43.64,Default,,0000,0000,0000,,抱歉 老大\N{\rEn}Sorry, boss.
+Dialogue: 0,1:19:43.70,1:19:45.11,Default,,0000,0000,0000,,举起武器\N{\rEn}Weapons!
+Dialogue: 0,1:19:49.38,1:19:50.85,Default,,0000,0000,0000,,你们这群蠢蛋\N{\rEn}You silly bastards.
+Dialogue: 0,1:19:51.65,1:19:53.98,Default,,0000,0000,0000,,好好地找死吧\N{\rEn}Determined to die. Shit.
+Dialogue: 0,1:19:54.05,1:19:56.15,Default,,0000,0000,0000,,听我指挥行动\N{\rEn}On my command!
+Dialogue: 0,1:22:19.79,1:22:21.43,Default,,0000,0000,0000,,我要去下水道\N{\rEn}I'm going down the hole now.
+Dialogue: 0,1:22:28.20,1:22:29.67,Default,,0000,0000,0000,,你先请\N{\rEn}After you.
+Dialogue: 0,1:22:32.47,1:22:34.21,Default,,0000,0000,0000,,布鲁 你去哪儿了 小子\N{\rEn}Blue. Blue. Where you been, mate?
+Dialogue: 0,1:22:34.21,1:22:35.94,Default,,0000,0000,0000,,我爸爸呢\N{\rEn}Where's my dad?
+Dialogue: 0,1:22:36.01,1:22:37.58,Default,,0000,0000,0000,,我们分开了 但他知道怎么脱身\N{\rEn}We got split up, but he knows his way.
+Dialogue: 0,1:22:37.64,1:22:38.95,Default,,0000,0000,0000,,- 我要去找他  - 别急 布鲁\N{\rEn}- I've gotta find him. - Wait, Blue.
+Dialogue: 0,1:22:39.01,1:22:40.35,Default,,0000,0000,0000,,你爸知道他在做什么\N{\rEn}Your dad knows what he's doing.
+Dialogue: 0,1:22:40.41,1:22:41.48,Default,,0000,0000,0000,,很快就会来找我们 小子\N{\rEn}He'll be back before you know it, mate.
+Dialogue: 0,1:22:41.55,1:22:42.42,Default,,0000,0000,0000,,湿棍子\N{\rEn}Wet Stick.
+Dialogue: 0,1:22:43.18,1:22:45.95,Default,,0000,0000,0000,,布鲁 布鲁\N{\rEn}Blue! Blue! Blue!
+Dialogue: 0,1:22:47.85,1:22:50.62,Default,,0000,0000,0000,,大家都快点儿 给我挨家挨户搜\N{\rEn}Come on, boys! Search them dwellings now!
+Dialogue: 0,1:22:50.69,1:22:52.56,Default,,0000,0000,0000,,给我进屋搜\N{\rEn}Get through them doors!
+Dialogue: 0,1:23:02.47,1:23:04.47,Default,,0000,0000,0000,,现在想要逃出去太难了\N{\rEn}It's not gonna be easy getting out of here now.
+Dialogue: 0,1:23:04.54,1:23:07.27,Default,,0000,0000,0000,,不能待太久 哪儿都不安全\N{\rEn}You can't stay here long. Nowhere in the city is safe.
+Dialogue: 0,1:23:07.34,1:23:09.24,Default,,0000,0000,0000,,船准备好了\N{\rEn}The boat's ready.
+Dialogue: 0,1:23:09.31,1:23:11.58,Default,,0000,0000,0000,,拜克莱克和布鲁怎么办 亚瑟\N{\rEn}What about Back Lack and Blue, Art?
+Dialogue: 0,1:23:13.75,1:23:15.55,Default,,0000,0000,0000,,我们等到天黑\N{\rEn}We'll wait until dark.
+Dialogue: 0,1:23:24.29,1:23:26.06,Default,,0000,0000,0000,,爸 你去哪儿了\N{\rEn}Where you been, Dad?
+Dialogue: 0,1:23:26.13,1:23:27.40,Default,,0000,0000,0000,,我先喘口气\N{\rEn}Catching me breath.
+Dialogue: 0,1:23:29.13,1:23:30.26,Default,,0000,0000,0000,,怎么了\N{\rEn}What's wrong?
+Dialogue: 0,1:23:30.33,1:23:32.47,Default,,0000,0000,0000,,没事儿 我好得很\N{\rEn}Nothing. I'm all right.
+Dialogue: 0,1:23:32.53,1:23:34.47,Default,,0000,0000,0000,,正打算去安全屋\N{\rEn}Just got to get to the safe house.
+Dialogue: 0,1:23:36.20,1:23:37.64,Default,,0000,0000,0000,,你能撑住吗\N{\rEn}Can you make it?
+Dialogue: 0,1:23:39.74,1:23:41.07,Default,,0000,0000,0000,,我爱你 儿子\N{\rEn}I love you, mate.
+Dialogue: 0,1:23:42.01,1:23:43.64,Default,,0000,0000,0000,,走吧 咱们走吧\N{\rEn}Come on, let's get going.
+Dialogue: 0,1:23:52.49,1:23:53.52,Default,,0000,0000,0000,,跑\N{\rEn}Run!
+Dialogue: 0,1:23:57.29,1:23:59.36,Default,,0000,0000,0000,,沃蒂根快下台\N{\rEn}Down with Vortigern!
+Dialogue: 0,1:24:11.10,1:24:14.14,Default,,0000,0000,0000,,看起来你己经掌握了使用圣剑的心法\N{\rEn}It seems as though you found a way to use the sword.
+Dialogue: 0,1:24:14.21,1:24:15.64,Default,,0000,0000,0000,,不是我控制这把剑\N{\rEn}I wasn't controlling it.
+Dialogue: 0,1:24:18.08,1:24:19.45,Default,,0000,0000,0000,,我来\N{\rEn}Here.
+Dialogue: 0,1:24:20.25,1:24:22.45,Default,,0000,0000,0000,,是剑在控制我\N{\rEn}It was controlling me.
+Dialogue: 0,1:24:22.52,1:24:24.45,Default,,0000,0000,0000,,我甚至不记得发生了什么\N{\rEn}I can't even remember what happened.
+Dialogue: 0,1:24:24.52,1:24:25.79,Default,,0000,0000,0000,,我记得\N{\rEn}I can.
+Dialogue: 0,1:24:28.06,1:24:29.39,Default,,0000,0000,0000,,谢谢你\N{\rEn}Thank you.
+Dialogue: 0,1:24:35.26,1:24:37.67,Default,,0000,0000,0000,,外面发生了什么事情\N{\rEn}Something's happening, you know?
+Dialogue: 0,1:24:39.27,1:24:40.80,Default,,0000,0000,0000,,听起来像是有事\N{\rEn}Certainly sounds like it.
+Dialogue: 0,1:24:40.87,1:24:43.07,Default,,0000,0000,0000,,人们己经见识了你的力量\N{\rEn}People have seen what you can do.
+Dialogue: 0,1:24:43.14,1:24:45.07,Default,,0000,0000,0000,,你不再是故事里的人\N{\rEn}You're no longer a myth.
+Dialogue: 0,1:24:45.14,1:24:48.01,Default,,0000,0000,0000,,你对他们来说有了意义\N{\rEn}You're starting to mean something.
+Dialogue: 0,1:24:48.07,1:24:49.48,Default,,0000,0000,0000,,我可没有这种打算\N{\rEn}That wasn't the intention.
+Dialogue: 0,1:24:49.54,1:24:51.14,Default,,0000,0000,0000,,他们打着你的旗号战斗\N{\rEn}They are fighting in your name.
+Dialogue: 0,1:24:52.41,1:24:55.28,Default,,0000,0000,0000,,我不想担这事儿\N{\rEn}I don't wanna wear that.
+Dialogue: 0,1:24:58.72,1:25:00.32,Default,,0000,0000,0000,,是你吗 布鲁\N{\rEn}Is that you, Blue?
+Dialogue: 0,1:25:00.39,1:25:01.67,Default,,0000,0000,0000,,是我 老大\N{\rEn}Yes, boss!
+Dialogue: 0,1:25:01.67,1:25:02.96,Default,,0000,0000,0000,,你找到你爸了吗\N{\rEn}Did you find your father?
+Dialogue: 0,1:25:03.02,1:25:04.43,Default,,0000,0000,0000,,他找到了\N{\rEn}He's found him!
+Dialogue: 0,1:25:16.54,1:25:18.17,Default,,0000,0000,0000,,我们得带你离开这儿\N{\rEn}We need to get you out of here.
+Dialogue: 0,1:25:18.24,1:25:20.11,Default,,0000,0000,0000,,我们赶快上船 莱克\N{\rEn}Let's get your arse on that boat, Lack.
+Dialogue: 0,1:25:20.17,1:25:22.38,Default,,0000,0000,0000,,大雾能掩盖我们的踪迹\N{\rEn}There's a good fog to cover our tracks.
+Dialogue: 0,1:25:22.44,1:25:23.94,Default,,0000,0000,0000,,走吧\N{\rEn}Come on.
+Dialogue: 0,1:25:23.95,1:25:25.45,Default,,0000,0000,0000,,先让我喘口气\N{\rEn}I'll need a little breather.
+Dialogue: 0,1:25:25.51,1:25:28.15,Default,,0000,0000,0000,,去吧 等大家都上船了再回来接我\N{\rEn}Here, load everyone else up and come back for me.
+Dialogue: 0,1:25:28.22,1:25:30.00,Default,,0000,0000,0000,,不 我陪着你\N{\rEn}No, I'll stay with you.
+Dialogue: 0,1:25:30.00,1:25:31.79,Default,,0000,0000,0000,,听我的话 去帮大家\N{\rEn}No, you won't. Give 'em a hand.
+Dialogue: 0,1:25:35.06,1:25:37.19,Default,,0000,0000,0000,,我没事儿 儿子\N{\rEn}I'll be all right, mate.
+Dialogue: 0,1:25:37.26,1:25:38.86,Default,,0000,0000,0000,,歇一会儿就好了\N{\rEn}Just give me a minute.
+Dialogue: 0,1:25:40.06,1:25:41.26,Default,,0000,0000,0000,,去吧 布鲁\N{\rEn}Come on, Blue.
+Dialogue: 0,1:25:42.20,1:25:43.40,Default,,0000,0000,0000,,你拿着这个\N{\rEn}You carry this.
+Dialogue: 0,1:25:45.00,1:25:46.90,Default,,0000,0000,0000,,去吧\N{\rEn}Come on. Come on.
+Dialogue: 0,1:25:48.40,1:25:50.47,Default,,0000,0000,0000,,去吧 布鲁\N{\rEn}Come on, Blue.
+Dialogue: 0,1:26:05.15,1:26:06.62,Default,,0000,0000,0000,,晚上好\N{\rEn}Evenin'.
+Dialogue: 0,1:26:17.23,1:26:18.70,Default,,0000,0000,0000,,抱歉打扰了\N{\rEn}Pardon the intrusion.
+Dialogue: 0,1:26:34.98,1:26:37.75,Default,,0000,0000,0000,,狗一直把我们往这里引\N{\rEn}Our dog was very keen to lead us here.
+Dialogue: 0,1:26:37.82,1:26:38.85,Default,,0000,0000,0000,,走吧\N{\rEn}Come on.
+Dialogue: 0,1:26:38.92,1:26:40.99,Default,,0000,0000,0000,,要抓他吗 队长\N{\rEn}Shall I pick him up, Sarge?
+Dialogue: 0,1:26:41.05,1:26:42.92,Default,,0000,0000,0000,,不 跟着他\N{\rEn}No, follow him.
+Dialogue: 0,1:26:42.99,1:26:44.79,Default,,0000,0000,0000,,他跟踪的那个流血的人\N{\rEn}The blood he followed was from a man
+Dialogue: 0,1:26:44.86,1:26:46.79,Default,,0000,0000,0000,,今天杀了我的一个队长\N{\rEn}who killed one of my sergeants today.
+Dialogue: 0,1:26:46.86,1:26:52.07,Default,,0000,0000,0000,,那个人之前还试图刺杀我 结果却失手\N{\rEn}A man who fled the scene of an assassination attempt
+Dialogue: 0,1:26:52.13,1:26:53.53,Default,,0000,0000,0000,,然后跑了\N{\rEn}on me.
+Dialogue: 0,1:26:56.00,1:26:57.71,Default,,0000,0000,0000,,竟然想刺杀我\N{\rEn}On me, no less.
+Dialogue: 0,1:27:00.88,1:27:03.28,Default,,0000,0000,0000,,你不会碰巧知道他在哪儿吧\N{\rEn}You wouldn't happen to know where that man is, would you?
+Dialogue: 0,1:27:06.08,1:27:07.78,Default,,0000,0000,0000,,我不走\N{\rEn}I can't.
+Dialogue: 0,1:27:07.85,1:27:09.72,Default,,0000,0000,0000,,乖乖上船 布鲁 我去接你爸爸\N{\rEn}Get in the boat, Blue. I'll get your dad.
+Dialogue: 0,1:27:09.85,1:27:11.72,Default,,0000,0000,0000,,我不能丢下他\N{\rEn}I can't leave him!
+Dialogue: 0,1:27:11.79,1:27:14.29,Default,,0000,0000,0000,,你看看现在的情况好吗\N{\rEn}Have a look at this situation, would ya?
+Dialogue: 0,1:27:14.35,1:27:16.72,Default,,0000,0000,0000,,我们尊贵的英格兰国王\N{\rEn}The king of all England himself
+Dialogue: 0,1:27:16.79,1:27:19.83,Default,,0000,0000,0000,,竟然会屈尊来拜访一个平民\N{\rEn}has made the effort to visit a commoner.
+Dialogue: 0,1:27:21.23,1:27:23.30,Default,,0000,0000,0000,,一文不名的平民\N{\rEn}A man from nowhere.
+Dialogue: 0,1:27:24.36,1:27:26.77,Default,,0000,0000,0000,,今天是我最后的日子\N{\rEn}And today, my last day.
+Dialogue: 0,1:27:29.40,1:27:31.04,Default,,0000,0000,0000,,你看着很好\N{\rEn}You look well
+Dialogue: 0,1:27:31.10,1:27:33.24,Default,,0000,0000,0000,,而我可怜透了\N{\rEn}and I feel poor.
+Dialogue: 0,1:27:34.18,1:27:35.98,Default,,0000,0000,0000,,但我更乐意成为谁呢\N{\rEn}But who would I rather be?
+Dialogue: 0,1:27:40.41,1:27:41.62,Default,,0000,0000,0000,,你干什么 小子\N{\rEn}What do you want, kid?
+Dialogue: 0,1:27:42.52,1:27:44.22,Default,,0000,0000,0000,,这小孩是谁\N{\rEn}Who's this young man?
+Dialogue: 0,1:27:44.28,1:27:46.12,Default,,0000,0000,0000,,我是清洁工\N{\rEn}I'm the cleaner, sir.
+Dialogue: 0,1:27:46.19,1:27:47.49,Default,,0000,0000,0000,,他是你什么人\N{\rEn}Who's he to you?
+Dialogue: 0,1:27:47.55,1:27:49.49,Default,,0000,0000,0000,,我不认识这个人\N{\rEn}Never seen him before.
+Dialogue: 0,1:27:49.56,1:27:51.46,Default,,0000,0000,0000,,我通常晚点儿来\N{\rEn}I usually come in later, you know,
+Dialogue: 0,1:27:51.52,1:27:53.93,Default,,0000,0000,0000,,要等他们都走了 再洗盘子\N{\rEn}do the dishes when they're all gone.
+Dialogue: 0,1:27:53.99,1:27:55.36,Default,,0000,0000,0000,,这是真的吗\N{\rEn}Is that the truth?
+Dialogue: 0,1:27:55.43,1:27:57.40,Default,,0000,0000,0000,,是 大人 我不会骗黑甲兵\N{\rEn}Yes, sir. I'd never lie to a Blackleg.
+Dialogue: 0,1:27:58.53,1:28:00.47,Default,,0000,0000,0000,,好孩子\N{\rEn}Good boy.
+Dialogue: 0,1:28:03.47,1:28:05.21,Default,,0000,0000,0000,,所以你不认识他\N{\rEn}So you don't know him?
+Dialogue: 0,1:28:05.27,1:28:06.64,Default,,0000,0000,0000,,不认识\N{\rEn}No, sir.
+Dialogue: 0,1:28:08.81,1:28:10.65,Default,,0000,0000,0000,,那不介意我割掉他的耳朵吧\N{\rEn}Then you wouldn't mind if I cut his ears off?
+Dialogue: 0,1:28:10.71,1:28:12.91,Default,,0000,0000,0000,,不是我的耳朵 你想割就割\N{\rEn}They're not my ears. Do what you want with them.
+Dialogue: 0,1:28:26.76,1:28:27.76,Default,,0000,0000,0000,,不\N{\rEn}No!
+Dialogue: 0,1:28:30.56,1:28:33.10,Default,,0000,0000,0000,,一直想要个儿子\N{\rEn}Always wanted a boy.
+Dialogue: 0,1:28:34.30,1:28:35.84,Default,,0000,0000,0000,,你这个混蛋\N{\rEn}You bastard!
+Dialogue: 0,1:28:35.90,1:28:37.67,Default,,0000,0000,0000,,给我放开他\N{\rEn}Leave him alone!
+Dialogue: 0,1:28:38.84,1:28:41.17,Default,,0000,0000,0000,,我再问一遍\N{\rEn}Now I repeat,
+Dialogue: 0,1:28:41.24,1:28:42.81,Default,,0000,0000,0000,,你的同伙在哪儿\N{\rEn}where's your friend?
+Dialogue: 0,1:28:45.91,1:28:47.08,Default,,0000,0000,0000,,放开他\N{\rEn}Let him go.
+Dialogue: 0,1:28:49.92,1:28:50.92,Default,,0000,0000,0000,,放开他\N{\rEn}Let him go.
+Dialogue: 0,1:28:54.85,1:28:56.92,Default,,0000,0000,0000,,带我儿子快走\N{\rEn}Take the boy and...
+Dialogue: 0,1:28:57.86,1:28:59.19,Default,,0000,0000,0000,,不\N{\rEn}No!
+Dialogue: 0,1:28:59.29,1:29:01.46,Default,,0000,0000,0000,,不\N{\rEn}No!
+Dialogue: 0,1:29:19.65,1:29:22.68,Default,,0000,0000,0000,,反叛分了格杀勿论\N{\rEn}Crush the Resistance tonight!
+Dialogue: 0,1:29:36.00,1:29:37.00,Default,,0000,0000,0000,,弓箭手\N{\rEn}Archers!
+Dialogue: 0,1:32:08.55,1:32:11.95,Default,,0000,0000,0000,,让我告诉你\N{\rEn}Let me show you
+Dialogue: 0,1:32:14.22,1:32:17.69,Default,,0000,0000,0000,,如果你不接受圣剑\N{\rEn}what your uncle will do
+Dialogue: 0,1:32:17.76,1:32:21.56,Default,,0000,0000,0000,,你亲爱的沃蒂根叔叔\N{\rEn}if you do not accept
+Dialogue: 0,1:32:23.46,1:32:26.30,Default,,0000,0000,0000,,会怎么做\N{\rEn}this sword.
+Dialogue: 0,1:32:29.57,1:32:33.01,Default,,0000,0000,0000,,只有你才能阻止他\N{\rEn}Only you can prevent this.
+Dialogue: 0,1:32:35.74,1:32:38.18,Default,,0000,0000,0000,,只有你 你必须阻止他\N{\rEn}He must be met
+Dialogue: 0,1:32:38.24,1:32:42.12,Default,,0000,0000,0000,,用圣剑对付他\N{\rEn}where sword meets tower.
+Dialogue: 0,1:32:44.55,1:32:46.95,Default,,0000,0000,0000,,你要相信女巫\N{\rEn}Trust the Mage.
+Dialogue: 0,1:32:48.22,1:32:51.63,Default,,0000,0000,0000,,王者之剑 拿起它\N{\rEn}Take it.
+Dialogue: 0,1:33:36.37,1:33:38.94,Default,,0000,0000,0000,,你肯定有事情想告诉我\N{\rEn}Apparently you have something to tell me.
+Dialogue: 0,1:33:53.82,1:33:55.22,Default,,0000,0000,0000,,我猜你想知道我怎么了\N{\rEn}I suppose you wanna know what happened to me.
+Dialogue: 0,1:33:55.29,1:33:59.66,Default,,0000,0000,0000,,我不想逼你 但是 乔治\N{\rEn}I don't wanna push you, but... George?
+Dialogue: 0,1:33:59.73,1:34:01.43,Default,,0000,0000,0000,,叛乱蔓延了\N{\rEn}Riots are spreading.
+Dialogue: 0,1:34:01.50,1:34:04.10,Default,,0000,0000,0000,,出了伦底纽姆 蔓延到了全国\N{\rEn}Not just in Londinium. Across the whole country.
+Dialogue: 0,1:34:04.16,1:34:05.67,Default,,0000,0000,0000,,人们在为你而战\N{\rEn}People are fighting for you.
+Dialogue: 0,1:34:05.73,1:34:07.84,Default,,0000,0000,0000,,要说时机的话 时机到了\N{\rEn}If there was ever a chance, it's now.
+Dialogue: 0,1:34:07.90,1:34:09.20,Default,,0000,0000,0000,,机会稍纵即逝\N{\rEn}It's not going to last.
+Dialogue: 0,1:34:09.27,1:34:13.11,Default,,0000,0000,0000,,但是他也说了 我们不会逼他\N{\rEn}But, like he said, we're not going to push you.
+Dialogue: 0,1:34:13.17,1:34:14.71,Default,,0000,0000,0000,,没问题\N{\rEn}I'm ready.
+Dialogue: 0,1:34:15.84,1:34:17.85,Default,,0000,0000,0000,,我们去攻占王城\N{\rEn}We're gonna take the castle.
+Dialogue: 0,1:34:19.11,1:34:20.95,Default,,0000,0000,0000,,而且是从前门进\N{\rEn}And we're going in the front door.
+Dialogue: 0,1:34:22.68,1:34:26.25,Default,,0000,0000,0000,,乔治 我要你回伦底纽姆召集大伙\N{\rEn}George, I need you to go to Londinium, gather the lads.
+Dialogue: 0,1:34:28.26,1:34:29.32,Default,,0000,0000,0000,,女巫哪儿去了\N{\rEn}Where's the Mage?
+Dialogue: 0,1:34:30.26,1:34:31.72,Default,,0000,0000,0000,,她回山洞去了\N{\rEn}She's back at the cave.
+Dialogue: 0,1:34:31.79,1:34:33.59,Default,,0000,0000,0000,,好吧\N{\rEn}All right.
+Dialogue: 0,1:34:33.66,1:34:36.26,Default,,0000,0000,0000,,听着 你刚才说我们去攻占王城\N{\rEn}Now, when you say we're going to take the castle,
+Dialogue: 0,1:34:36.93,1:34:38.33,Default,,0000,0000,0000,,这是什么意思\N{\rEn}what does that mean?
+Dialogue: 0,1:34:39.93,1:34:41.97,Default,,0000,0000,0000,,你之前不是说不会逼我吗\N{\rEn}I thought you said you weren't gonna push me.
+Dialogue: 0,1:34:43.90,1:34:46.14,Default,,0000,0000,0000,,走了各位 快点儿\N{\rEn}Come on, lads. Chop, chop.
+Dialogue: 0,1:35:03.52,1:35:04.73,Default,,0000,0000,0000,,布鲁\N{\rEn}Blue!
+Dialogue: 0,1:35:06.83,1:35:08.03,Default,,0000,0000,0000,,布鲁\N{\rEn}Blue!
+Dialogue: 0,1:35:10.03,1:35:11.03,Default,,0000,0000,0000,,布鲁\N{\rEn}Blue!
+Dialogue: 0,1:35:11.03,1:35:12.23,Default,,0000,0000,0000,,你们好\N{\rEn}Hello!
+Dialogue: 0,1:35:14.64,1:35:17.40,Default,,0000,0000,0000,,你们来得可真是慢啊\N{\rEn}You took your time getting here.
+Dialogue: 0,1:35:22.38,1:35:25.31,Default,,0000,0000,0000,,我真的不想听我妻子抱怨了\N{\rEn}I'm not gonna hear the end of this from my wife.
+Dialogue: 0,1:35:25.38,1:35:28.11,Default,,0000,0000,0000,,今晚轮到我做饭\N{\rEn}It was my turn to cook tonight.
+Dialogue: 0,1:35:28.18,1:35:33.75,Default,,0000,0000,0000,,国王陛下特地派我来给各位送个口信\N{\rEn}I've been sent by His Majesty to deliver a message.
+Dialogue: 0,1:35:35.42,1:35:37.79,Default,,0000,0000,0000,,让我想想\N{\rEn}Let's think...
+Dialogue: 0,1:35:40.13,1:35:43.20,Default,,0000,0000,0000,,天黑之前来到王城\N{\rEn}"Be at the castle before dark
+Dialogue: 0,1:35:43.26,1:35:48.27,Default,,0000,0000,0000,,不然的话那个姑娘 还有男孩\N{\rEn}"if you wanna see the girl and the boy
+Dialogue: 0,1:35:48.33,1:35:50.30,Default,,0000,0000,0000,,就完了\N{\rEn}"alive".
+Dialogue: 0,1:35:50.37,1:35:52.44,Default,,0000,0000,0000,,我也想留下聊聊\N{\rEn}I would love to stay and chat,
+Dialogue: 0,1:35:52.51,1:35:55.54,Default,,0000,0000,0000,,可是你们确实也都明白\N{\rEn}but you do understand the situation
+Dialogue: 0,1:35:55.61,1:35:57.28,Default,,0000,0000,0000,,我跟我妻子的情况\N{\rEn}between me and my wife.
+Dialogue: 0,1:36:03.58,1:36:07.35,Default,,0000,0000,0000,,你要敢对我做什么\N{\rEn}Anything that you do to me
+Dialogue: 0,1:36:08.62,1:36:13.49,Default,,0000,0000,0000,,我们保证会十倍奉还给他们\N{\rEn}will be repaid 10 times in kind.
+Dialogue: 0,1:36:16.30,1:36:18.20,Default,,0000,0000,0000,,真是个大块头\N{\rEn}Now, you're a big man.
+Dialogue: 0,1:36:19.57,1:36:21.37,Default,,0000,0000,0000,,现在你最好让开\N{\rEn}Now, let's see you move.
+Dialogue: 0,1:36:32.35,1:36:33.81,Default,,0000,0000,0000,,再见\N{\rEn}Evening.
+Dialogue: 0,1:37:08.68,1:37:09.85,Default,,0000,0000,0000,,他在哪里\N{\rEn}So, where is he?
+Dialogue: 0,1:37:09.92,1:37:12.89,Default,,0000,0000,0000,,他离这儿有一天的路\N{\rEn}He's a day's ride from here.
+Dialogue: 0,1:37:12.95,1:37:14.82,Default,,0000,0000,0000,,只要女巫没事他就会来\N{\rEn}As soon as she's safe, he will come.
+Dialogue: 0,1:37:14.89,1:37:18.16,Default,,0000,0000,0000,,没有这把剑他根本威胁不到你\N{\rEn}He poses no threat to you without the sword.
+Dialogue: 0,1:37:18.96,1:37:20.76,Default,,0000,0000,0000,,明天\N{\rEn}Tomorrow.
+Dialogue: 0,1:37:20.83,1:37:23.63,Default,,0000,0000,0000,,你应该知道明天会发生什么\N{\rEn}I don't have to remind you of what will happen
+Dialogue: 0,1:37:23.70,1:37:25.30,Default,,0000,0000,0000,,如果他不来\N{\rEn}if he doesn't come.
+Dialogue: 0,1:37:26.33,1:37:29.10,Default,,0000,0000,0000,,我会先拿小孩开刀\N{\rEn}I'll start with the little boy.
+Dialogue: 0,1:37:29.17,1:37:31.27,Default,,0000,0000,0000,,带着女孩给我离开\N{\rEn}Now, take the girl and go.
+Dialogue: 0,1:37:39.38,1:37:42.92,Default,,0000,0000,0000,,这种毒液会激发你体内隐藏的潜能\N{\rEn}This venom will induce that which is hidden from you.
+Dialogue: 0,1:37:42.98,1:37:46.75,Default,,0000,0000,0000,,它会让你看到你不想看到的东西\N{\rEn}It will show you things you do not want to see.
+Dialogue: 0,1:37:46.82,1:37:49.49,Default,,0000,0000,0000,,但是你需要它的保护\N{\rEn}But you'll need its protection.
+Dialogue: 0,1:37:49.56,1:37:51.39,Default,,0000,0000,0000,,握住我的手\N{\rEn}Hold my hand.
+Dialogue: 0,1:37:59.53,1:38:00.73,Default,,0000,0000,0000,,我不喜欢毒蛇\N{\rEn}I don't like snakes.
+Dialogue: 0,1:38:00.80,1:38:02.94,Default,,0000,0000,0000,,没有人喜欢毒蛇\N{\rEn}No one likes snakes.
+Dialogue: 0,1:38:10.81,1:38:12.41,Default,,0000,0000,0000,,保持清醒\N{\rEn}Stay with me.
+Dialogue: 0,1:38:15.85,1:38:17.08,Default,,0000,0000,0000,,保持清醒\N{\rEn}Stay with me.
+Dialogue: 0,1:38:22.89,1:38:26.56,Default,,0000,0000,0000,,毒液的作用会持续几个小时\N{\rEn}You will feel it for a few hours.
+Dialogue: 0,1:38:26.63,1:38:32.47,Default,,0000,0000,0000,,? 狩完猎的年轻人 虚弱疲惫\N{\rEn}? Young man came from hunting faint and weary
+Dialogue: 0,1:38:35.03,1:38:40.61,Default,,0000,0000,0000,,? 是什么让我的主困扰 我亲爱的\N{\rEn}? What does ail My Lord, my dearie?
+Dialogue: 0,1:38:46.55,1:38:52.25,Default,,0000,0000,0000,,? 亲爱的兄弟 铺好我的床\N{\rEn}? O brother dear, let my bed be made
+Dialogue: 0,1:38:54.62,1:39:00.46,Default,,0000,0000,0000,,? 因为我感受到了欧白英的抱\N{\rEn}? For I feel the gripe of the woody nightshade
+Dialogue: 0,1:39:04.76,1:39:10.76,Default,,0000,0000,0000,,? 这个年轻人 他很快就死了\N{\rEn}? This young man, he died fair soon
+Dialogue: 0,1:39:11.30,1:39:16.14,Default,,0000,0000,0000,,? 借着猎人的月光\N{\rEn}? By the light of the hunters' moon
+Dialogue: 0,1:39:16.21,1:39:20.31,Default,,0000,0000,0000,,? 既不是通过骨头 也不是通过刀锋\N{\rEn}? 'Twas not by bone Nor yet by blade
+Dialogue: 0,1:39:22.18,1:39:27.29,Default,,0000,0000,0000,,? 而是欧白英的叶子和浆果\N{\rEn}? Oh, the berries of the woody nightshade
+Dialogue: 0,1:39:27.35,1:39:32.33,Default,,0000,0000,0000,,? 亲爱的父亲 我可以得救吗\N{\rEn}? Oh, father dear, lie heavy safe
+Dialogue: 0,1:39:34.26,1:39:37.43,Default,,0000,0000,0000,,? 从魔鬼造出的路径之中获救\N{\rEn}? From the power that the devil made
+Dialogue: 0,1:40:03.46,1:40:04.73,Default,,0000,0000,0000,,不用往前了\N{\rEn}That's far enough.
+Dialogue: 0,1:40:07.39,1:40:10.00,Default,,0000,0000,0000,,我们尽快解决这件事好吗\N{\rEn}Let's get this done quickly, shall we?
+Dialogue: 0,1:40:10.06,1:40:11.43,Default,,0000,0000,0000,,让他给我跪下\N{\rEn}Put him on his knees.
+Dialogue: 0,1:40:13.00,1:40:14.70,Default,,0000,0000,0000,,让他给我跪下\N{\rEn}Put him on his knees!
+Dialogue: 0,1:41:46.96,1:41:48.16,Default,,0000,0000,0000,,走\N{\rEn}Go, go, go!
+Dialogue: 0,1:42:08.91,1:42:11.85,Default,,0000,0000,0000,,你是知道代价的\N{\rEn}You know the price.
+Dialogue: 0,1:42:24.00,1:42:25.40,Default,,0000,0000,0000,,父亲 这怎么回事\N{\rEn}Father, what's happening?
+Dialogue: 0,1:42:25.97,1:42:27.27,Default,,0000,0000,0000,,下去\N{\rEn}Leave.
+Dialogue: 0,1:42:35.24,1:42:36.74,Default,,0000,0000,0000,,父亲 你脸上怎么有血\N{\rEn}Why is there blood on your face?
+Dialogue: 0,1:42:40.08,1:42:41.72,Default,,0000,0000,0000,,发生什么事了\N{\rEn}What's going on?
+Dialogue: 0,1:42:49.69,1:42:51.63,Default,,0000,0000,0000,,父亲 你吓到我了\N{\rEn}Father, you're scaring me.
+Dialogue: 0,1:42:57.53,1:42:59.57,Default,,0000,0000,0000,,我真的非常爱你\N{\rEn}I love you very much.
+Dialogue: 0,1:43:36.84,1:43:38.51,Default,,0000,0000,0000,,快点儿\N{\rEn}Come on!
+Dialogue: 0,1:43:43.11,1:43:44.31,Default,,0000,0000,0000,,进攻\N{\rEn}Charge!
+Dialogue: 0,1:47:19.83,1:47:23.96,Default,,0000,0000,0000,,你已经赢了 侄子\N{\rEn}You have won, nephew.
+Dialogue: 0,1:47:33.94,1:47:37.18,Default,,0000,0000,0000,,你已经赢了\N{\rEn}You have won.
+Dialogue: 0,1:47:44.05,1:47:47.05,Default,,0000,0000,0000,,现在陪我玩吧\N{\rEn}Now, play with me.
+Dialogue: 0,1:48:48.05,1:48:52.52,Default,,0000,0000,0000,,看来这把剑要属于我了\N{\rEn}I think that sword belongs to me now.
+Dialogue: 0,1:48:59.19,1:49:00.63,Default,,0000,0000,0000,,快跑 儿子\N{\rEn}Run, son!
+Dialogue: 0,1:49:12.44,1:49:14.17,Default,,0000,0000,0000,,弟弟\N{\rEn}Brother...
+Dialogue: 0,1:49:15.54,1:49:18.91,Default,,0000,0000,0000,,看来这把剑要属于我了\N{\rEn}I think that sword belongs to me now.
+Dialogue: 0,1:49:18.98,1:49:21.05,Default,,0000,0000,0000,,不管你想得到什么\N{\rEn}Whatever price you paid,
+Dialogue: 0,1:49:21.11,1:49:23.68,Default,,0000,0000,0000,,都比不上付出的代价\N{\rEn}it will be more than you know.
+Dialogue: 0,1:49:29.46,1:49:31.89,Default,,0000,0000,0000,,你再也不需要逃跑了\N{\rEn}You don't need to run anymore.
+Dialogue: 0,1:49:35.80,1:49:38.33,Default,,0000,0000,0000,,你再也不需要逃避了\N{\rEn}You don't need to look away.
+Dialogue: 0,1:49:50.21,1:49:52.25,Default,,0000,0000,0000,,这把剑属于你 儿子\N{\rEn}The sword is yours, son.
+Dialogue: 0,1:49:54.35,1:49:55.38,Default,,0000,0000,0000,,拿起它\N{\rEn}Take it.
+Dialogue: 0,1:50:28.21,1:50:31.35,Default,,0000,0000,0000,,你想知道为什么我会生出野心\N{\rEn}You wanted to know what gave me such drive.
+Dialogue: 0,1:50:36.35,1:50:37.79,Default,,0000,0000,0000,,因为你\N{\rEn}It was you.
+Dialogue: 0,1:50:43.73,1:50:45.67,Default,,0000,0000,0000,,你害我在妓院里长大\N{\rEn}You put me in that brothel.
+Dialogue: 0,1:50:53.67,1:50:55.74,Default,,0000,0000,0000,,是你把我推进了深渊\N{\rEn}You cut me on the streets.
+Dialogue: 0,1:51:04.02,1:51:07.09,Default,,0000,0000,0000,,我站在这里都是因为你\N{\rEn}I am here now because of you.
+Dialogue: 0,1:52:04.24,1:52:06.18,Default,,0000,0000,0000,,是你\N{\rEn}You
+Dialogue: 0,1:52:06.25,1:52:07.88,Default,,0000,0000,0000,,成就了我\N{\rEn}created me.
+Dialogue: 0,1:52:32.64,1:52:33.67,Default,,0000,0000,0000,,为此\N{\rEn}And, for that...
+Dialogue: 0,1:52:33.74,1:52:35.44,Default,,0000,0000,0000,,我要感谢你\N{\rEn}I bless you.
+Dialogue: 0,1:52:39.38,1:52:42.01,Default,,0000,0000,0000,,你让我知道什么是魔鬼\N{\rEn}You make sense of the devil.
+Dialogue: 0,1:54:10.34,1:54:11.34,Default,,0000,0000,0000,,搭箭\N{\rEn}Nock!
+Dialogue: 0,1:54:14.61,1:54:15.84,Default,,0000,0000,0000,,点火\N{\rEn}Light!
+Dialogue: 0,1:54:19.85,1:54:21.21,Default,,0000,0000,0000,,准备\N{\rEn}Ready!
+Dialogue: 0,1:54:25.35,1:54:26.35,Default,,0000,0000,0000,,放箭\N{\rEn}Loose!
+Dialogue: 0,1:54:48.84,1:54:50.98,Default,,0000,0000,0000,,我知道这个国家的领导权\N{\rEn}While I understan there's been a change
+Dialogue: 0,1:54:51.04,1:54:53.71,Default,,0000,0000,0000,,最近有了变更\N{\rEn}in the leadership of this nation...
+Dialogue: 0,1:54:53.78,1:54:56.28,Default,,0000,0000,0000,,但是我相信您仍然会遵守您的前任\N{\rEn}I am confident that you will still honor the agreement
+Dialogue: 0,1:54:56.35,1:55:00.72,Default,,0000,0000,0000,,和我国君主定下的协议\N{\rEn}made by your predecessor and my king.
+Dialogue: 0,1:55:00.79,1:55:02.12,Default,,0000,0000,0000,,按协议规定\N{\rEn}We expect to leave here
+Dialogue: 0,1:55:02.19,1:55:04.99,Default,,0000,0000,0000,,我们要带一万名年轻男子离开\N{\rEn}with 10,000 young men as agreed.
+Dialogue: 0,1:55:05.06,1:55:06.89,Default,,0000,0000,0000,,这事我不能同意 伙计\N{\rEn}Yeah, I don't think so, mate.
+Dialogue: 0,1:55:07.76,1:55:08.96,Default,,0000,0000,0000,,你说什么\N{\rEn}Excuse me?
+Dialogue: 0,1:55:11.36,1:55:13.17,Default,,0000,0000,0000,,我说 这事我不同意 伙计\N{\rEn}I said, "I don't think so, mate".
+Dialogue: 0,1:55:16.23,1:55:18.97,Default,,0000,0000,0000,,我们一直在想你在干什么\N{\rEn}We've been wondering what you were doing in here.
+Dialogue: 0,1:55:19.77,1:55:21.27,Default,,0000,0000,0000,,我喜欢\N{\rEn}I like it.
+Dialogue: 0,1:55:22.88,1:55:24.08,Default,,0000,0000,0000,,这是什么\N{\rEn}What is it?
+Dialogue: 0,1:55:24.81,1:55:25.94,Default,,0000,0000,0000,,对啊 是什么\N{\rEn}Yes, what is it?
+Dialogue: 0,1:55:26.01,1:55:28.38,Default,,0000,0000,0000,,旋转木马 一块超大奶酪\N{\rEn}A carousel? A giant wheel of cheese?
+Dialogue: 0,1:55:28.45,1:55:30.05,Default,,0000,0000,0000,,你打算用这东西干什么\N{\rEn}What are you supposed to do with it?
+Dialogue: 0,1:55:30.12,1:55:31.65,Default,,0000,0000,0000,,我知道\N{\rEn}I know.
+Dialogue: 0,1:55:31.72,1:55:33.09,Default,,0000,0000,0000,,这是个舞池\N{\rEn}It's a dance floor.
+Dialogue: 0,1:55:33.15,1:55:35.22,Default,,0000,0000,0000,,那等它完工了\N{\rEn}And once you finish it
+Dialogue: 0,1:55:35.29,1:55:36.99,Default,,0000,0000,0000,,我们怎么走到中间去\N{\rEn}how are you supposed to get to the middle?
+Dialogue: 0,1:55:37.06,1:55:38.52,Default,,0000,0000,0000,,你怎么把它弄进屋的\N{\rEn}But how did you get it through the door?
+Dialogue: 0,1:55:38.59,1:55:41.03,Default,,0000,0000,0000,,你搬进来的还是滚进来的\N{\rEn}Did you carry it in? Or did you roll it in?
+Dialogue: 0,1:55:41.09,1:55:42.49,Default,,0000,0000,0000,,请恕我直言\N{\rEn}May I remind you
+Dialogue: 0,1:55:42.56,1:55:46.03,Default,,0000,0000,0000,,我国舰队也就是三千条长船已经控制了海路\N{\rEn}a fleet of 3,000 longships controlling the seas,
+Dialogue: 0,1:55:46.10,1:55:47.47,Default,,0000,0000,0000,,包围了不列颠岛\N{\rEn}surrounding your island.
+Dialogue: 0,1:55:47.53,1:55:51.44,Default,,0000,0000,0000,,这时候得罪我王就不太明智\N{\rEn}It would be unwise to displease my king.
+Dialogue: 0,1:55:51.94,1:55:53.14,Default,,0000,0000,0000,,抱歉\N{\rEn}I'm sorry.
+Dialogue: 0,1:55:56.44,1:56:00.01,Default,,0000,0000,0000,,乔治 湿棍子 珀西 请跪下\N{\rEn}George, Wet Stick, Percy, on your knees.
+Dialogue: 0,1:56:01.01,1:56:02.48,Default,,0000,0000,0000,,贝德维尔爵士 有劳你\N{\rEn}Sir Bedivere, if you would?
+Dialogue: 0,1:56:04.88,1:56:07.95,Default,,0000,0000,0000,,我可以再多给贵国一个星期的时间\N{\rEn}I'm prepared to extend the deadline by a week.
+Dialogue: 0,1:56:08.02,1:56:09.22,Default,,0000,0000,0000,,不\N{\rEn}No.
+Dialogue: 0,1:56:09.92,1:56:11.62,Default,,0000,0000,0000,,我是说 抱歉了\N{\rEn}I mean, I'm sorry.
+Dialogue: 0,1:56:11.69,1:56:13.29,Default,,0000,0000,0000,,你犯了一个错误\N{\rEn}You've made a mistake.
+Dialogue: 0,1:56:13.36,1:56:15.16,Default,,0000,0000,0000,,跟你们打交道的 已经不是\N{\rEn}You're no longer dealing with the man
+Dialogue: 0,1:56:15.23,1:56:17.23,Default,,0000,0000,0000,,以前的那位了\N{\rEn}you previously met.
+Dialogue: 0,1:56:18.03,1:56:22.47,Default,,0000,0000,0000,,你现在面对的是英格兰\N{\rEn}You are addressing England
+Dialogue: 0,1:56:22.53,1:56:26.71,Default,,0000,0000,0000,,以及英格兰国王庇佑下的所有财产\N{\rEn}and all the subjects under her king's protection.
+Dialogue: 0,1:56:26.77,1:56:29.01,Default,,0000,0000,0000,,请起 乔治爵士\N{\rEn}Arise, Sir George.
+Dialogue: 0,1:56:29.07,1:56:30.81,Default,,0000,0000,0000,,我给你们一个选择\N{\rEn}So you have a choice.
+Dialogue: 0,1:56:30.88,1:56:33.75,Default,,0000,0000,0000,,要么现在就向英格兰臣服\N{\rEn}You can now kneel to England...
+Dialogue: 0,1:56:34.95,1:56:37.22,Default,,0000,0000,0000,,请起 特里斯坦爵士\N{\rEn}Arise, Sir Tristan.
+Dialogue: 0,1:56:37.28,1:56:39.72,Default,,0000,0000,0000,,要么我离开王座\N{\rEn}Or I'll step off this throne,
+Dialogue: 0,1:56:39.78,1:56:43.42,Default,,0000,0000,0000,,带着你见过的这些人去跟你们联络感情\N{\rEn}and you can deal with me as the man you previously met.
+Dialogue: 0,1:56:45.02,1:56:46.49,Default,,0000,0000,0000,,请起 珀西瓦尔爵士\N{\rEn}Arise, Sir Percival.
+Dialogue: 0,1:56:50.30,1:56:52.57,Default,,0000,0000,0000,,我们可以看看会怎么样\N{\rEn}And we can see how that goes.
+Dialogue: 0,1:56:58.60,1:57:00.01,Default,,0000,0000,0000,,威廉爵士\N{\rEn}Sir William.
+Dialogue: 0,1:57:01.21,1:57:03.01,Default,,0000,0000,0000,,有劳你了\N{\rEn}If you would?
+Dialogue: 0,1:57:04.68,1:57:06.11,Default,,0000,0000,0000,,我荣幸之至\N{\rEn}It would be my honor.
+Dialogue: 0,1:57:29.47,1:57:31.84,Default,,0000,0000,0000,,好了 别挡道了\N{\rEn}Well, now that's out the way,
+Dialogue: 0,1:57:31.90,1:57:33.31,Default,,0000,0000,0000,,吃饭吧\N{\rEn}let's eat.
+Dialogue: 0,1:57:37.18,1:57:38.44,Default,,0000,0000,0000,,能交朋友\N{\rEn}Why have enemies
+Dialogue: 0,1:57:39.38,1:57:41.28,Default,,0000,0000,0000,,为什么要树敌呢\N{\rEn}when you can have friends?
+Dialogue: 0,1:57:46.18,1:57:48.65,Default,,0000,0000,0000,,请起 陛下\N{\rEn}Arise, my king.
+Dialogue: 0,1:58:00.83,1:58:02.20,Default,,0000,0000,0000,,亚瑟王\N{\rEn}King Arthur.
+Dialogue: 0,1:58:09.41,1:58:11.28,Default,,0000,0000,0000,,这是桌子\N{\rEn}It's a table.
+Dialogue: 0,1:58:12.04,1:58:13.75,Default,,0000,0000,0000,,大家一起坐\N{\rEn}You sit at it.
+Dialogue: 0,1:58:36.97,1:58:38.90,Default,,0000,0000,0000,,国王万岁\N{\rEn}Long live the King!
+Dialogue: 0,1:58:39.07,1:58:41.14,Default,,0000,0000,0000,,国王万岁\N{\rEn}Long live the King!
+
+
