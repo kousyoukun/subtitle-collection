@@ -1,0 +1,933 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CHT,標楷體,15,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,0,0,1,1
+Style: ENG,Microsoft YaHei UI,16,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,0,0,1,1 
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:01:00.49,0:01:07.25,ENG,,0,0,0,,{\fad(1000,1000)\fs7\shad0\bord0\fscx120\c&HD9D7D7&\pos(182,162)}宇宙中心的矗立著一座塔
+Dialogue: 0,0:01:00.49,0:01:07.25,ENG,,0,0,0,,{\fad(1000,1000)\fs7\shad0\bord0\fscx120\c&HD9D7D7&\pos(182,172)}保護宇宙防止黑暗力量侵襲
+Dialogue: 0,0:01:08.38,0:01:13.51,ENG,,0,0,0,,{\fad(1000,1000)\fs7\shad0\bord0\fscx120\c&HD9D7D7&\pos(182,158)}據說某位兒童的靈知之力能摧毀這座塔
+Dialogue: 0,0:01:15.22,0:01:22.27,CHT,,0,0,0,,片名：黑暗塔
+Dialogue: 0,0:01:37.97,0:01:39.76,ENG,,0,0,0,,Come and play with us. Come and play.\N{\rCHT}來和我們一起玩吧 快來呀{\r}
+Dialogue: 0,0:01:42.56,0:01:45.10,ENG,,0,0,0,,- Not gonna get me! - You wish!\N{\rCHT}- 你抓不到我 - 想得美{\r}
+Dialogue: 0,0:03:31.87,0:03:34.67,ENG,,0,0,0,,- Jake. - Mom, you okay?\N{\rCHT}- 傑克 - 媽媽 你還好嗎？{\r}
+Dialogue: 0,0:03:36.38,0:03:38.34,ENG,,0,0,0,,That was a big one.\N{\rCHT}剛剛那次地震可真不小{\r}
+Dialogue: 0,0:03:40.88,0:03:42.18,ENG,,0,0,0,,Bad dreams?\N{\rCHT}又做噩夢了？{\r}
+Dialogue: 0,0:03:43.01,0:03:44.39,ENG,,0,0,0,,No.\N{\rCHT}沒有{\r}
+Dialogue: 0,0:03:46.39,0:03:48.14,ENG,,0,0,0,,Come on. Get breakfast.\N{\rCHT}來吧 去吃早飯{\r}
+Dialogue: 0,0:04:00.32,0:04:03.45,ENG,,0,0,0,,This morning's quake is causing major problems for commuters.\N{\rCHT}今早的地震給上班族帶來了不小的麻煩{\r}
+Dialogue: 0,0:04:03.61,0:04:07.66,ENG,,0,0,0,,The 5.7-magnitude quake hit New York early this morning.\N{\rCHT}紐約今早遭遇5.7級地震{\r}
+Dialogue: 0,0:04:07.83,0:04:11.16,ENG,,0,0,0,,Yet another in a series of quakes that has rattled both coasts.\N{\rCHT}然而太平洋兩岸也受到一系列地震襲擾{\r}
+Dialogue: 0,0:04:11.33,0:04:15.04,ENG,,0,0,0,,Tokyo was hit again. And with the Berlin quake last week...\N{\rCHT}東京再次發生地震 再加上上周的柏林地震{\r}
+Dialogue: 0,0:04:15.21,0:04:18.25,ENG,,0,0,0,,Question is: What is causing all these earthquakes?\N{\rCHT}問題就來了 是什麼引起了這些地震？{\r}
+Dialogue: 0,0:04:19.30,0:04:21.72,ENG,,0,0,0,,Christ, even ESPN's doing the quakes now.\N{\rCHT}天哪 現在連體育娛樂頻道也在報導地震了{\r}
+Dialogue: 0,0:04:21.88,0:04:24.55,ENG,,0,0,0,,But we still don't know what's causing them.\N{\rCHT}但目前地震原因尚不清楚{\r}
+Dialogue: 0,0:04:24.72,0:04:26.26,ENG,,0,0,0,,Hey. My folks sent me over to see...\N{\rCHT}嗨 我爸媽讓我過來看看{\r}
+Dialogue: 0,0:04:26.43,0:04:28.31,ENG,,0,0,0,,- ...if you guys are still alive. - We're fine, Timmy.\N{\rCHT}- 你們是不是還活著 - 我們很好 蒂米{\r}
+Dialogue: 0,0:04:28.47,0:04:29.93,ENG,,0,0,0,,That was pretty intense.\N{\rCHT}那地震可真夠強的{\r}
+Dialogue: 0,0:04:30.10,0:04:32.48,ENG,,0,0,0,,- Yeah. - You good?\N{\rCHT}- 是啊 - 你還好吧？{\r}
+Dialogue: 0,0:04:32.64,0:04:34.85,ENG,,0,0,0,,- Yeah. - We're just running a little late.\N{\rCHT}- 還好 - 我們遲會到{\r}
+Dialogue: 0,0:04:35.02,0:04:37.15,ENG,,0,0,0,,- See you later? - Say hi to your mom for me.\N{\rCHT}- 一會見？- 替我跟你媽媽問個好{\r}
+Dialogue: 0,0:04:37.31,0:04:39.19,ENG,,0,0,0,,Ma, Laurie says hi.\N{\rCHT}媽媽 勞裡跟你問好{\r}
+Dialogue: 0,0:04:39.36,0:04:41.44,ENG,,0,0,0,,Don't forget, you have Dr. Hotchkiss after school.\N{\rCHT}別忘了 你下課後要去見霍奇基斯博士{\r}
+Dialogue: 0,0:04:49.08,0:04:51.50,ENG,,0,0,0,,We're wasting money on all those shrinks.\N{\rCHT}我們找這些心理醫生根本就是浪費錢{\r}
+Dialogue: 0,0:04:53.50,0:04:54.67,ENG,,0,0,0,,He's making progress.\N{\rCHT}他已經好些了{\r}
+Dialogue: 0,0:05:19.69,0:05:21.23,ENG,,0,0,0,,Wait up!\N{\rCHT}等一下{\r}
+Dialogue: 0,0:05:25.20,0:05:27.24,ENG,,0,0,0,,Hey, did you get the books from my locker?\N{\rCHT}嘿 你從我的存物櫃裡拿了那些書嗎？{\r}
+Dialogue: 0,0:05:28.20,0:05:29.70,ENG,,0,0,0,,So when's the apocalypse coming?\N{\rCHT}所以你說世界末日什麼時候到來呢？{\r}
+Dialogue: 0,0:05:29.87,0:05:32.08,ENG,,0,0,0,,Come on, man, just give me my book.\N{\rCHT}拜託了 你就把書還給我吧{\r}
+Dialogue: 0,0:05:32.24,0:05:35.37,ENG,,0,0,0,,- What's wrong, your meds stop working? - Hey! Hey!\N{\rCHT}- 怎麼 你吃的藥不管用了？- 嘿 嘿{\r}
+Dialogue: 0,0:05:35.54,0:05:37.29,ENG,,0,0,0,,- Give me my book! - Get off me!\N{\rCHT}- 把書還給我 - 你先下去{\r}
+Dialogue: 0,0:05:37.46,0:05:39.17,ENG,,0,0,0,,- Get off of me. - Hey!\N{\rCHT}- 下去 - 嘿{\r}
+Dialogue: 0,0:05:39.34,0:05:41.42,ENG,,0,0,0,,Hey. That is enough, Chambers.\N{\rCHT}嘿 夠了 錢伯斯{\r}
+Dialogue: 0,0:05:42.46,0:05:44.34,ENG,,0,0,0,,I need my book.\N{\rCHT}把書還給我{\r}
+Dialogue: 0,0:05:45.47,0:05:49.01,ENG,,0,0,0,,Hey. You need to go home and cool off.\N{\rCHT}嘿 你得回家冷靜冷靜{\r}
+Dialogue: 0,0:05:54.06,0:05:56.23,ENG,,0,0,0,,You've been, uh, quite busy, Jake.\N{\rCHT}你最近 一直挺忙的啊 傑克{\r}
+Dialogue: 0,0:06:00.44,0:06:03.65,ENG,,0,0,0,,This big tower in the clouds you keep dreaming about...\N{\rCHT}你覺得最近的這些地震{\r}
+Dialogue: 0,0:06:05.32,0:06:09.16,ENG,,0,0,0,,...you say these earthquakes we've been having have something to do with it.\N{\rCHT}與經常在你夢裡出現的那個雲霧繚繞的高塔有關{\r}
+Dialogue: 0,0:06:09.32,0:06:13.49,ENG,,0,0,0,,They happen because the Tower is under attack.\N{\rCHT}發生地震是因為那座塔在遭受襲擊{\r}
+Dialogue: 0,0:06:18.00,0:06:20.46,ENG,,0,0,0,,You're a smart kid, Jake.\N{\rCHT}你是個聰明孩子 傑克{\r}
+Dialogue: 0,0:06:20.63,0:06:22.13,ENG,,0,0,0,,You know when you can't differentiate...\N{\rCHT}你要明白當你無法{\r}
+Dialogue: 0,0:06:22.29,0:06:24.80,ENG,,0,0,0,,- ...between dreams and reality... - It's not a dream.\N{\rCHT}- 區分夢境與現實的時候 - 那不是夢{\r}
+Dialogue: 0,0:06:24.96,0:06:26.09,ENG,,0,0,0,,Okay? I'm not crazy.\N{\rCHT}好嗎？我不是瘋子{\r}
+Dialogue: 0,0:06:26.88,0:06:28.72,ENG,,0,0,0,,I always see the same thing.\N{\rCHT}我一直看到同樣的事物{\r}
+Dialogue: 0,0:06:28.88,0:06:32.64,ENG,,0,0,0,,The Tower, the Man in Black, the creepy guys with the fake skins.\N{\rCHT}黑暗塔 黑衣人 還有穿著蒙面的怪人{\r}
+Dialogue: 0,0:06:35.60,0:06:38.39,ENG,,0,0,0,,What if the Tower were destroyed?\N{\rCHT}如果那座塔被摧毀了會怎樣？{\r}
+Dialogue: 0,0:06:40.44,0:06:42.27,ENG,,0,0,0,,Darkness and fire.\N{\rCHT}世界會陷入無盡的黑暗和烈火之中{\r}
+Dialogue: 0,0:06:45.57,0:06:47.36,ENG,,0,0,0,,Let's talk about your dad.\N{\rCHT}我們來談談你的父親{\r}
+Dialogue: 0,0:06:50.16,0:06:51.66,ENG,,0,0,0,,Surprise.\N{\rCHT}又談這個{\r}
+Dialogue: 0,0:06:52.74,0:06:55.08,ENG,,0,0,0,,When you lost your father, your world fell apart.\N{\rCHT}你失去了父親 你的世界崩塌了{\r}
+Dialogue: 0,0:06:55.99,0:06:58.37,ENG,,0,0,0,,You have these visions of impending hell on Earth...\N{\rCHT}你之所以出現末日迫近的幻覺{\r}
+Dialogue: 0,0:06:58.54,0:07:01.71,ENG,,0,0,0,,...because that's how you feel inside.\N{\rCHT}正是因為這恰恰是你內心的感受{\r}
+Dialogue: 0,0:07:02.25,0:07:04.46,ENG,,0,0,0,,Even words like "darkness" and "fire"...\N{\rCHT}即便是"黑暗"和"烈火"這些字眼{\r}
+Dialogue: 0,0:07:04.63,0:07:08.34,ENG,,0,0,0,,...Jake, you're describing the night your father died.\N{\rCHT}傑克啊 你也是在描述你父親犧牲的那晚{\r}
+Dialogue: 0,0:07:08.88,0:07:10.88,ENG,,0,0,0,,Can't just be about that.\N{\rCHT}肯定沒這麼簡單{\r}
+Dialogue: 0,0:07:11.05,0:07:12.55,ENG,,0,0,0,,They're just dreams, Jake.\N{\rCHT}傑克 那只是夢而已{\r}
+Dialogue: 0,0:07:13.64,0:07:15.47,ENG,,0,0,0,,They're not real.\N{\rCHT}不是真的{\r}
+Dialogue: 0,0:07:43.33,0:07:44.42,ENG,,0,0,0,,Watch out.\N{\rCHT}一定要小心{\r}
+Dialogue: 0,0:07:45.17,0:07:46.34,ENG,,0,0,0,,They'll take you.\N{\rCHT}他們會把你抓走{\r}
+Dialogue: 0,0:07:46.50,0:07:47.71,ENG,,0,0,0,,They steal kids like you.\N{\rCHT}他們專抓像你這樣的孩子{\r}
+Dialogue: 0,0:07:47.88,0:07:49.21,ENG,,0,0,0,,Cross them over.\N{\rCHT}快到路對面去{\r}
+Dialogue: 0,0:07:51.47,0:07:52.51,ENG,,0,0,0,,Special ones.\N{\rCHT}你們與眾不同{\r}
+Dialogue: 0,0:07:53.72,0:07:56.97,ENG,,0,0,0,,The power of your mind, that's what they want.\N{\rCHT}他們想控制你們的頭腦{\r}
+Dialogue: 0,0:08:13.99,0:08:16.66,ENG,,0,0,0,,Jake. What's up?\N{\rCHT}傑克 你沒事吧？{\r}
+Dialogue: 0,0:08:17.24,0:08:18.74,ENG,,0,0,0,,Bad day?\N{\rCHT}今天諸事不順麼？{\r}
+Dialogue: 0,0:08:18.91,0:08:20.37,ENG,,0,0,0,,Yeah.\N{\rCHT}是{\r}
+Dialogue: 0,0:08:20.54,0:08:22.12,ENG,,0,0,0,,Let's go.\N{\rCHT}走吧{\r}
+Dialogue: 0,0:08:22.29,0:08:23.71,ENG,,0,0,0,,- Want to hang out? - Yeah.\N{\rCHT}- 想一塊出去玩嗎？- 好啊{\r}
+Dialogue: 0,0:08:23.87,0:08:26.25,ENG,,0,0,0,,...control, he's unstable. We need to take the offer.\N{\rCHT}控制 他狀況很不穩定 我們就接受提議吧{\r}
+Dialogue: 0,0:08:26.42,0:08:29.25,ENG,,0,0,0,,- It's great treatment for no money. - It's not about the money.\N{\rCHT}- 這是免費接受高水準治療的好機會 - 這不是錢的問題{\r}
+Dialogue: 0,0:08:29.42,0:08:30.67,ENG,,0,0,0,,- I'll wait in your room. - There's nothing more...\N{\rCHT}- 我在你房間裡等著 - 我們現在{\r}
+Dialogue: 0,0:08:30.84,0:08:32.09,ENG,,0,0,0,,- ...we can do for him now. - Jesus, Lon!\N{\rCHT}- 已經幫不了他了 - 天哪 朗{\r}
+Dialogue: 0,0:08:32.26,0:08:35.22,ENG,,0,0,0,,Can you at least pretend like he's your own kid?\N{\rCHT}你至少得裝出一副把他當作親生兒子的樣子吧？{\r}
+Dialogue: 0,0:08:38.35,0:08:41.98,ENG,,0,0,0,,I'm sorry, baby, we... We didn't hear you come in.\N{\rCHT}抱歉 寶貝 我們 我們沒聽到你進來{\r}
+Dialogue: 0,0:08:42.14,0:08:44.10,ENG,,0,0,0,,What the hell happened in school today?\N{\rCHT}今天在學校 到底是怎麼回事？{\r}
+Dialogue: 0,0:08:44.27,0:08:46.69,ENG,,0,0,0,,You promised me you're gonna stay out of trouble.\N{\rCHT}你答應過我 不去惹事的{\r}
+Dialogue: 0,0:08:46.86,0:08:48.61,ENG,,0,0,0,,Sorry, Mom.\N{\rCHT}對不起 媽媽{\r}
+Dialogue: 0,0:08:50.19,0:08:51.90,ENG,,0,0,0,,Honey, um...\N{\rCHT}親愛的 嗯{\r}
+Dialogue: 0,0:08:52.07,0:08:55.53,ENG,,0,0,0,,...the school's been approached by a clinic upstate.\N{\rCHT}州北有一個診所聯繫了你們學校{\r}
+Dialogue: 0,0:08:55.70,0:08:57.53,ENG,,0,0,0,,They work with kids who...\N{\rCHT}他們專門幫助{\r}
+Dialogue: 0,0:08:57.70,0:09:00.33,ENG,,0,0,0,,Who are having a hard time.\N{\rCHT}正處在困難時期的孩子{\r}
+Dialogue: 0,0:09:00.49,0:09:02.20,ENG,,0,0,0,,There's an opening this weekend.\N{\rCHT}這個週末有一個開放參觀機會{\r}
+Dialogue: 0,0:09:03.12,0:09:04.75,ENG,,0,0,0,,It's supposed to be a great place.\N{\rCHT}應該是個不錯的地方{\r}
+Dialogue: 0,0:09:04.92,0:09:07.29,ENG,,0,0,0,,It's science-based: Brain scans, sleep patterns.\N{\rCHT}做的研究都很科學: 能做腦部掃描 還有睡眠模式研究{\r}
+Dialogue: 0,0:09:07.46,0:09:10.25,ENG,,0,0,0,,- I think it could... - Yeah, okay.\N{\rCHT}- 我覺得能 - 行 好吧{\r}
+Dialogue: 0,0:09:14.30,0:09:16.39,ENG,,0,0,0,,Man, psycho camp.\N{\rCHT}夥計 那可就是瘋人院啊{\r}
+Dialogue: 0,0:09:16.55,0:09:17.72,ENG,,0,0,0,,Sucks, dude.\N{\rCHT}肯定糟透了 哥們{\r}
+Dialogue: 0,0:09:18.26,0:09:21.22,ENG,,0,0,0,,More shrinks. Waste of time.\N{\rCHT}更多的心理醫生 只會浪費更多時間{\r}
+Dialogue: 0,0:09:29.57,0:09:30.61,ENG,,0,0,0,,Dude.\N{\rCHT}哥們{\r}
+Dialogue: 0,0:09:31.86,0:09:33.11,ENG,,0,0,0,,What?\N{\rCHT}怎麼了？{\r}
+Dialogue: 0,0:09:33.28,0:09:34.74,ENG,,0,0,0,,Stop staring at your drawings.\N{\rCHT}別再盯著你那些畫了{\r}
+Dialogue: 0,0:09:34.90,0:09:36.28,ENG,,0,0,0,,You're freaking me out.\N{\rCHT}你真是把我嚇壞了{\r}
+Dialogue: 0,0:09:37.99,0:09:40.03,ENG,,0,0,0,,You think I'm crazy too, don't you?\N{\rCHT}你也以為我瘋了 是吧？{\r}
+Dialogue: 0,0:09:40.74,0:09:41.87,ENG,,0,0,0,,Batshit.\N{\rCHT}胡說{\r}
+Dialogue: 0,0:09:48.75,0:09:50.00,ENG,,0,0,0,,...driving us apart.\N{\rCHT}我們之間越來越生疏{\r}
+Dialogue: 0,0:09:53.09,0:09:55.09,ENG,,0,0,0,,I'm just asking...\N{\rCHT}我只是在請求{\r}
+Dialogue: 0,0:09:55.26,0:09:57.26,ENG,,0,0,0,,We need help. We both need help.\N{\rCHT}我們需要幫助 我們倆都需要{\r}
+Dialogue: 0,0:09:57.43,0:09:58.80,ENG,,0,0,0,,We are falling apart.\N{\rCHT}我們撐不下去了{\r}
+Dialogue: 0,0:09:58.97,0:10:00.47,ENG,,0,0,0,,I love him so much...\N{\rCHT}我非常愛他{\r}
+Dialogue: 0,0:10:00.64,0:10:04.31,ENG,,0,0,0,,...and I just can't stand to see him like this.\N{\rCHT}我不能再看著他這麼下去了{\r}
+Dialogue: 0,0:10:04.47,0:10:07.14,ENG,,0,0,0,,He was such a happy kid.\N{\rCHT}他曾經多麼無憂無慮{\r}
+Dialogue: 0,0:10:26.08,0:10:27.96,ENG,,0,0,0,,No more dreams.\N{\rCHT}不要再做夢了{\r}
+Dialogue: 0,0:10:28.12,0:10:30.46,ENG,,0,0,0,,Just one night of sleep.\N{\rCHT}就只靜靜地睡一晚{\r}
+Dialogue: 0,0:10:49.69,0:10:53.32,ENG,,0,0,0,,You have nothing to be afraid of, my friend.\N{\rCHT}我的朋友 你不用害怕{\r}
+Dialogue: 0,0:10:54.36,0:10:56.94,ENG,,0,0,0,,Death is not far away.\N{\rCHT}死亡並不遙遠{\r}
+Dialogue: 0,0:10:57.65,0:11:00.61,ENG,,0,0,0,,You want to know what's on the other side?\N{\rCHT}想知道世界另一邊都有什麼嗎？{\r}
+Dialogue: 0,0:11:01.20,0:11:03.33,ENG,,0,0,0,,Can you see it?\N{\rCHT}你能看到嗎？{\r}
+Dialogue: 0,0:11:05.04,0:11:07.29,ENG,,0,0,0,,Of course you can't.\N{\rCHT}當然不能{\r}
+Dialogue: 0,0:11:07.45,0:11:09.62,ENG,,0,0,0,,Because nothing is there.\N{\rCHT}因為那裡什麼都沒有{\r}
+Dialogue: 0,0:11:10.54,0:11:13.42,ENG,,0,0,0,,- It's all a lie. - Go to hell.\N{\rCHT}- 天堂地獄的那一套都是謊言 - 你下地獄吧{\r}
+Dialogue: 0,0:11:13.67,0:11:16.21,ENG,,0,0,0,,Been there. Now burn.\N{\rCHT}我早去過地獄了 現在燃燒吧{\r}
+Dialogue: 0,0:11:27.60,0:11:29.69,ENG,,0,0,0,,We lost.\N{\rCHT}我們失敗了{\r}
+Dialogue: 0,0:11:30.52,0:11:32.23,ENG,,0,0,0,,Not while the Tower still stands.\N{\rCHT}不 槍俠不倒{\r}
+Dialogue: 0,0:11:32.40,0:11:33.94,ENG,,0,0,0,,Not while you still stand.\N{\rCHT}塔就不倒{\r}
+Dialogue: 0,0:11:40.28,0:11:42.07,ENG,,0,0,0,,Don't let him get into your head.\N{\rCHT}別讓他進入你的頭腦中{\r}
+Dialogue: 0,0:11:42.24,0:11:44.03,ENG,,0,0,0,,Gunslingers.\N{\rCHT}兩位槍俠{\r}
+Dialogue: 0,0:11:45.74,0:11:48.75,ENG,,0,0,0,,I do not aim with my hand.\N{\rCHT}槍准不在於雙手{\r}
+Dialogue: 0,0:11:48.91,0:11:51.87,ENG,,0,0,0,,- He who aims with his hand... - Has forgotten the face of his father.\N{\rCHT}- 違此者 - 忘祖也{\r}
+Dialogue: 0,0:11:52.04,0:11:53.25,ENG,,0,0,0,,I aim with my eye.\N{\rCHT}槍准在於雙眼{\r}
+Dialogue: 0,0:11:53.42,0:11:55.42,ENG,,0,0,0,,Gunslinger, over here.\N{\rCHT}槍俠 我在這兒呢{\r}
+Dialogue: 0,0:11:56.67,0:11:58.71,ENG,,0,0,0,,I do not shoot with my hand.\N{\rCHT}槍准不在於雙手{\r}
+Dialogue: 0,0:11:58.88,0:12:01.80,ENG,,0,0,0,,He who shoots with his hand has forgotten the face of his father.\N{\rCHT}違此者 忘祖也{\r}
+Dialogue: 0,0:12:01.97,0:12:03.68,ENG,,0,0,0,,- I shoot with my mind. - Gunslingers.\N{\rCHT}- 槍准在於頭腦 - 槍俠{\r}
+Dialogue: 0,0:12:06.18,0:12:07.43,ENG,,0,0,0,,I do not kill with my gun.\N{\rCHT}槍准不在於所用之槍{\r}
+Dialogue: 0,0:12:08.85,0:12:11.64,ENG,,0,0,0,,He who kills with his gun has forgotten the face of his father.\N{\rCHT}違此者 忘祖也{\r}
+Dialogue: 0,0:12:12.77,0:12:13.94,ENG,,0,0,0,,I kill With my heart.\N{\rCHT}槍准在於我的心{\r}
+Dialogue: 0,0:12:15.19,0:12:16.27,ENG,,0,0,0,,Stop breathing.\N{\rCHT}停止呼吸{\r}
+Dialogue: 0,0:12:17.98,0:12:19.57,ENG,,0,0,0,,No.\N{\rCHT}不{\r}
+Dialogue: 0,0:12:23.86,0:12:25.32,ENG,,0,0,0,,Breathe.\N{\rCHT}吸氣{\r}
+Dialogue: 0,0:12:25.49,0:12:27.37,ENG,,0,0,0,,Fight it. Fight it!\N{\rCHT}用力反抗 不要放棄{\r}
+Dialogue: 0,0:12:36.46,0:12:39.25,ENG,,0,0,0,,It never works on you, does it, Roland?\N{\rCHT}這招對你從不管用 是吧 羅蘭？{\r}
+Dialogue: 0,0:12:40.01,0:12:43.38,ENG,,0,0,0,,The power you have to resist my magics...\N{\rCHT}你這種抗拒我法力的能力{\r}
+Dialogue: 0,0:12:45.59,0:12:47.01,ENG,,0,0,0,,Not forever.\N{\rCHT}只是暫時的{\r}
+Dialogue: 0,0:12:48.89,0:12:50.64,ENG,,0,0,0,,Face me!\N{\rCHT}你轉過身來{\r}
+Dialogue: 0,0:12:51.52,0:12:53.14,ENG,,0,0,0,,Face me.\N{\rCHT}看著我{\r}
+Dialogue: 0,0:12:58.69,0:13:01.28,ENG,,0,0,0,,The Tower will fall, Roland.\N{\rCHT}羅蘭 黑暗塔終將倒塌的{\r}
+Dialogue: 0,0:13:02.82,0:13:05.45,ENG,,0,0,0,,Until next time, old friend.\N{\rCHT}後會有期了 老夥計{\r}
+Dialogue: 0,0:13:09.66,0:13:12.20,ENG,,0,0,0,,The Man in Black fled across the desert...\N{\rCHT}黑衣人匆忙奔過沙漠{\r}
+Dialogue: 0,0:13:12.37,0:13:13.87,ENG,,0,0,0,,...and the Gunslinger followed.\N{\rCHT}槍俠緊隨其後{\r}
+Dialogue: 0,0:13:20.46,0:13:21.59,ENG,,0,0,0,,Holy shit.\N{\rCHT}該死{\r}
+Dialogue: 0,0:13:23.05,0:13:25.26,ENG,,0,0,0,,- Hey. - This guy, he's some kind of soldier.\N{\rCHT}- 嗨 - 這個人 他是某種戰士{\r}
+Dialogue: 0,0:13:26.38,0:13:27.93,ENG,,0,0,0,,He's called a Gunslinger.\N{\rCHT}被稱作槍俠{\r}
+Dialogue: 0,0:13:28.09,0:13:30.18,ENG,,0,0,0,,And this house, look, it's got a U.S. mailbox.\N{\rCHT}你再看這個房子 外面掛著一個聯邦郵箱{\r}
+Dialogue: 0,0:13:30.35,0:13:32.56,ENG,,0,0,0,,- I think it's in New York. - Timmy, it's 7 a.m.\N{\rCHT}- 我覺得這房子就在紐約 - 蒂米 7點了{\r}
+Dialogue: 0,0:13:32.72,0:13:34.06,ENG,,0,0,0,,Time to say goodbye.\N{\rCHT}該跟你朋友說再見了{\r}
+Dialogue: 0,0:13:34.23,0:13:36.98,ENG,,0,0,0,,Sorry, got to go. Talk to you later.\N{\rCHT}抱歉 我得走了 稍後跟你聯繫{\r}
+Dialogue: 0,0:13:55.08,0:13:56.75,ENG,,0,0,0,,The people from the clinic are here.\N{\rCHT}那家診所的人來了{\r}
+Dialogue: 0,0:13:57.54,0:13:58.96,ENG,,0,0,0,,Now?\N{\rCHT}就現在？{\r}
+Dialogue: 0,0:13:59.13,0:14:00.84,ENG,,0,0,0,,I can't... I can't go now.\N{\rCHT}我不能 我現在不能走{\r}
+Dialogue: 0,0:14:01.00,0:14:02.50,ENG,,0,0,0,,You got to step up, Jake.\N{\rCHT}你必須走 傑克{\r}
+Dialogue: 0,0:14:02.67,0:14:05.30,ENG,,0,0,0,,If you won't do it for yourself, then do it for your mom.\N{\rCHT}即便不是為了你自己 也要為你母親著想{\r}
+Dialogue: 0,0:14:06.97,0:14:09.47,ENG,,0,0,0,,- It's in other boys? - It's common in adolescent boys.\N{\rCHT}- 其他小孩也是這樣嗎？- 這種情況很常見{\r}
+Dialogue: 0,0:14:10.18,0:14:11.60,ENG,,0,0,0,,There he is.\N{\rCHT}他來了{\r}
+Dialogue: 0,0:14:11.76,0:14:13.77,ENG,,0,0,0,,Hi there, Jake.\N{\rCHT}傑克 你好{\r}
+Dialogue: 0,0:14:13.93,0:14:15.23,ENG,,0,0,0,,I'm Jill.\N{\rCHT}我是吉爾{\r}
+Dialogue: 0,0:14:15.39,0:14:18.23,ENG,,0,0,0,,I'm your intake administration supervisor.\N{\rCHT}我是你的主治醫師{\r}
+Dialogue: 0,0:14:18.98,0:14:20.40,ENG,,0,0,0,,This is Toby, our driver.\N{\rCHT}這是我們的司機 托比{\r}
+Dialogue: 0,0:14:20.56,0:14:22.27,ENG,,0,0,0,,How's it going, young man?\N{\rCHT}你好啊 小夥子{\r}
+Dialogue: 0,0:14:22.44,0:14:23.73,ENG,,0,0,0,,You pack your things?\N{\rCHT}你打包好行李了嗎？{\r}
+Dialogue: 0,0:14:23.90,0:14:25.78,ENG,,0,0,0,,What exactly do they do at your clinic?\N{\rCHT}你們診所具體是做什麼的？{\r}
+Dialogue: 0,0:14:25.94,0:14:29.11,ENG,,0,0,0,,Jake, these guys have been working with the school for a long time.\N{\rCHT}傑克 他們和校方已經合作很久了{\r}
+Dialogue: 0,0:14:29.28,0:14:31.45,ENG,,0,0,0,,No, that's okay, Laurie. We encourage questions.\N{\rCHT}沒關係 勞裡 我們鼓勵孩子提問的{\r}
+Dialogue: 0,0:14:31.62,0:14:34.04,ENG,,0,0,0,,It shows spirit and vitality.\N{\rCHT}這展現出他很精神 很有活力{\r}
+Dialogue: 0,0:14:34.20,0:14:36.16,ENG,,0,0,0,,He's just a healthy growing boy.\N{\rCHT}看起來是一個很健康的小孩子{\r}
+Dialogue: 0,0:14:36.33,0:14:38.87,ENG,,0,0,0,,I can assure you that all our tests are done in a controlled...\N{\rCHT}我可以和你保證我們所有的測試都是在{\r}
+Dialogue: 0,0:14:39.04,0:14:41.38,ENG,,0,0,0,,...child-friendly environment.\N{\rCHT}很友好的環境下進行的{\r}
+Dialogue: 0,0:14:41.54,0:14:43.63,ENG,,0,0,0,,We have experience with cases like yours.\N{\rCHT}我們處理過很多類似的情況{\r}
+Dialogue: 0,0:14:43.80,0:14:46.92,ENG,,0,0,0,,Night terrors, hallucinations, odd obsessions.\N{\rCHT}比如睡覺驚醒 出現幻覺 癡迷的症狀{\r}
+Dialogue: 0,0:14:47.09,0:14:50.26,ENG,,0,0,0,,Our approach is actually very gentle compared to standard treatments.\N{\rCHT}相比標準治療 我們的治療其實很溫柔{\r}
+Dialogue: 0,0:14:50.43,0:14:53.31,ENG,,0,0,0,,I understand your concerns, but you don't have to worry at all.\N{\rCHT}我知道你在擔心 其實你一點也不用害怕{\r}
+Dialogue: 0,0:14:55.35,0:14:57.02,ENG,,0,0,0,,Mom, help me pack?\N{\rCHT}媽媽 幫我打包一下東西 好麼？{\r}
+Dialogue: 0,0:14:57.18,0:14:58.85,ENG,,0,0,0,,Yeah.\N{\rCHT}好的{\r}
+Dialogue: 0,0:15:00.19,0:15:01.23,ENG,,0,0,0,,It's two days.\N{\rCHT}就去兩天而已{\r}
+Dialogue: 0,0:15:01.40,0:15:05.07,ENG,,0,0,0,,Do you want your ripped jeans or your regular ones?\N{\rCHT}你要帶緊身一點的牛仔褲還是寬鬆一點的？{\r}
+Dialogue: 0,0:15:05.69,0:15:07.90,ENG,,0,0,0,,- What's wrong? - Mom, it's them.\N{\rCHT}- 怎麼了 - 媽媽 是他們{\r}
+Dialogue: 0,0:15:08.61,0:15:11.49,ENG,,0,0,0,,- What? - it's the skin people from my dream.\N{\rCHT}- 是誰？- 是我夢裡的那些人{\r}
+Dialogue: 0,0:15:15.49,0:15:19.16,ENG,,0,0,0,,- Honey, you need to stop this. - No, you have to listen to me.\N{\rCHT}- 寶貝 你不能在想這些了 - 不 媽媽 你聽我說{\r}
+Dialogue: 0,0:15:19.33,0:15:20.58,ENG,,0,0,0,,What's going on?\N{\rCHT}怎麼回事？{\r}
+Dialogue: 0,0:15:21.71,0:15:23.29,ENG,,0,0,0,,He's not human.\N{\rCHT}他不是人類{\r}
+Dialogue: 0,0:15:23.46,0:15:24.71,ENG,,0,0,0,,- That's not his real face. - For chrissake.\N{\rCHT}- 這不是他真正的面孔 - 天呐{\r}
+Dialogue: 0,0:15:24.88,0:15:25.96,ENG,,0,0,0,,Shut up,Lon.\N{\rCHT}閉嘴 朗{\r}
+Dialogue: 0,0:15:26.13,0:15:30.22,ENG,,0,0,0,,You actually hope I'm crazy, just so you can get me out of here.\N{\rCHT}你肯定希望我瘋了 這樣你就可以趕我走{\r}
+Dialogue: 0,0:15:32.09,0:15:36.39,ENG,,0,0,0,,Mom, you have to believe me.\N{\rCHT}媽媽 你得相信我{\r}
+Dialogue: 0,0:15:37.56,0:15:40.77,ENG,,0,0,0,,- Lon, maybe this... - Can't you see he's gotten worse?\N{\rCHT}- 朗 或許 - 你沒發現他越來越不對勁了嗎{\r}
+Dialogue: 0,0:15:41.44,0:15:43.10,ENG,,0,0,0,,You're gonna go with them right now.\N{\rCHT}你現在必須跟他們走{\r}
+Dialogue: 0,0:15:43.27,0:15:46.78,ENG,,0,0,0,,Or, I swear to God, I will drag you down the stairs myself.\N{\rCHT}不然 我對天發誓 我就自己動手把你拖下樓去{\r}
+Dialogue: 0,0:15:57.95,0:15:59.41,ENG,,0,0,0,,It's one weekend, kiddo.\N{\rCHT}孩子 就去兩天{\r}
+Dialogue: 0,0:16:00.37,0:16:03.46,ENG,,0,0,0,,If you don't like it, then I'll come get you.\N{\rCHT}如果你不喜歡哪裡 我就帶你回來{\r}
+Dialogue: 0,0:16:04.13,0:16:05.42,ENG,,0,0,0,,I promise.\N{\rCHT}我保證{\r}
+Dialogue: 0,0:16:14.89,0:16:16.85,ENG,,0,0,0,,Okay, I'll go.\N{\rCHT}好吧 我去{\r}
+Dialogue: 0,0:16:19.68,0:16:22.56,ENG,,0,0,0,,- I love you, Mom. - I love you too.\N{\rCHT}- 媽媽 我愛你 - 我也愛你{\r}
+Dialogue: 0,0:16:38.87,0:16:41.62,ENG,,0,0,0,,I'm just gonna get my toothbrush.\N{\rCHT}我得去拿我的牙刷{\r}
+Dialogue: 0,0:16:49.34,0:16:51.84,ENG,,0,0,0,,- He's just getting his things. - He's trying to escape.\N{\rCHT}- 他只是去拿他的東西 - 他想逃跑{\r}
+Dialogue: 0,0:16:52.01,0:16:53.63,ENG,,0,0,0,,escape?\N{\rCHT}逃跑？{\r}
+Dialogue: 0,0:16:53.80,0:16:55.30,ENG,,0,0,0,,Jake?\N{\rCHT}傑克？{\r}
+Dialogue: 0,0:16:55.47,0:16:56.72,ENG,,0,0,0,,Jake?\N{\rCHT}傑克？{\r}
+Dialogue: 0,0:16:56.93,0:16:59.81,ENG,,0,0,0,,Chrissake. Jake? Jake!\N{\rCHT}天呐 傑克？傑克{\r}
+Dialogue: 0,0:16:59.97,0:17:01.06,ENG,,0,0,0,,Jake!\N{\rCHT}傑克{\r}
+Dialogue: 0,0:17:02.56,0:17:04.73,ENG,,0,0,0,,- Jake! - Get him.\N{\rCHT}- 傑克 - 去抓他{\r}
+Dialogue: 0,0:17:08.65,0:17:10.65,ENG,,0,0,0,,- Come back here! - Don't worry.\N{\rCHT}- 快回來 - 別擔心{\r}
+Dialogue: 0,0:17:10.82,0:17:13.07,ENG,,0,0,0,,Toby will get him down safely.\N{\rCHT}托比會把他安全帶回來{\r}
+Dialogue: 0,0:17:36.68,0:17:38.60,ENG,,0,0,0,,Stop running.\N{\rCHT}別跑{\r}
+Dialogue: 0,0:18:32.27,0:18:33.98,ENG,,0,0,0,,- Mom? You okay? - Where are you?\N{\rCHT}- 媽媽 你還好嗎？- 你在哪裡{\r}
+Dialogue: 0,0:18:34.15,0:18:36.49,ENG,,0,0,0,,You can't just run away like that, Jake.\N{\rCHT}傑克 你不能老是這樣跑掉{\r}
+Dialogue: 0,0:18:36.65,0:18:38.70,ENG,,0,0,0,,- Please come home. - Sorry, I can't.\N{\rCHT}- 快回家 - 對不起 我不回去{\r}
+Dialogue: 0,0:18:38.86,0:18:40.20,ENG,,0,0,0,,Right now.\N{\rCHT}快點回家{\r}
+Dialogue: 0,0:18:41.16,0:18:42.20,ENG,,0,0,0,,Jake?\N{\rCHT}傑克？{\r}
+Dialogue: 0,0:18:42.91,0:18:44.20,ENG,,0,0,0,,I'll call you later.\N{\rCHT}我過會在打給你{\r}
+Dialogue: 0,0:18:44.37,0:18:46.25,ENG,,0,0,0,,Love you, Mom.\N{\rCHT}愛你 媽媽{\r}
+Dialogue: 0,0:20:11.33,0:20:12.83,ENG,,0,0,0,,Greetings, traveler.\N{\rCHT}你好 旅行者{\r}
+Dialogue: 0,0:20:13.00,0:20:15.29,ENG,,0,0,0,,Please enter destination.\N{\rCHT}請輸入目的地{\r}
+Dialogue: 0,0:20:23.30,0:20:24.55,ENG,,0,0,0,,One, nine.\N{\rCHT}一 九{\r}
+Dialogue: 0,0:20:24.72,0:20:28.22,ENG,,0,0,0,,One, nine, one, nine. Mid-World.\N{\rCHT}一 九 一 九 中世界{\r}
+Dialogue: 0,0:20:50.87,0:20:54.67,ENG,,0,0,0,,Mid-World. One-way destination.\N{\rCHT}中世界 目的地通道{\r}
+Dialogue: 0,0:21:40.04,0:21:41.17,ENG,,0,0,0,,Let me go!\N{\rCHT}放我出去{\r}
+Dialogue: 0,0:21:43.38,0:21:44.47,ENG,,0,0,0,,Stop!\N{\rCHT}停下{\r}
+Dialogue: 0,0:22:10.95,0:22:12.54,ENG,,0,0,0,,What?\N{\rCHT}什麼鬼？{\r}
+Dialogue: 0,0:22:26.26,0:22:27.76,ENG,,0,0,0,,Whoa.\N{\rCHT}天呐{\r}
+Dialogue: 0,0:22:40.23,0:22:42.11,ENG,,0,0,0,,Okay.\N{\rCHT}好吧{\r}
+Dialogue: 0,0:22:42.27,0:22:44.36,ENG,,0,0,0,,This is good.\N{\rCHT}挺好的{\r}
+Dialogue: 0,0:22:46.07,0:22:47.32,ENG,,0,0,0,,It's all real.\N{\rCHT}簡直難以置信{\r}
+Dialogue: 0,0:23:57.18,0:23:59.18,ENG,,0,0,0,,New candidate. Female, age 11.\N{\rCHT}新候選人 女性 11歲{\r}
+Dialogue: 0,0:24:01.39,0:24:02.73,ENG,,0,0,0,,Looks good.\N{\rCHT}看起來不錯{\r}
+Dialogue: 0,0:24:02.90,0:24:04.61,ENG,,0,0,0,,Arriving!\N{\rCHT}正在抵達{\r}
+Dialogue: 0,0:24:12.45,0:24:14.20,ENG,,0,0,0,,Welcome back, sir.\N{\rCHT}先生 歡迎回來{\r}
+Dialogue: 0,0:24:16.74,0:24:18.16,ENG,,0,0,0,,Find yourself a face, Rat Boy.\N{\rCHT}去找個面具吧 鼠人{\r}
+Dialogue: 0,0:24:18.33,0:24:20.16,ENG,,0,0,0,,You're in my house.\N{\rCHT}你這是在我的地盤上{\r}
+Dialogue: 0,0:24:20.79,0:24:22.25,ENG,,0,0,0,,How was your trip?\N{\rCHT}旅途愉快嗎？{\r}
+Dialogue: 0,0:24:22.42,0:24:24.08,ENG,,0,0,0,,Fine. Do we have any new leads?\N{\rCHT}還好 我們有新目標了嗎？{\r}
+Dialogue: 0,0:24:26.21,0:24:27.25,ENG,,0,0,0,,Got it.\N{\rCHT}有了{\r}
+Dialogue: 0,0:24:27.42,0:24:28.96,ENG,,0,0,0,,What have you got?\N{\rCHT}現在情況如何？{\r}
+Dialogue: 0,0:24:30.01,0:24:31.72,ENG,,0,0,0,,These are all showing promise.\N{\rCHT}這些都是我們覺得有價值的目標{\r}
+Dialogue: 0,0:24:31.88,0:24:34.01,ENG,,0,0,0,,Our trackers are going out to them as we speak.\N{\rCHT}我們的追蹤者正在抓捕他們{\r}
+Dialogue: 0,0:24:34.43,0:24:36.01,ENG,,0,0,0,,There's been a serious breach of...\N{\rCHT}出現了十分嚴重的{\r}
+Dialogue: 0,0:24:40.18,0:24:41.98,ENG,,0,0,0,,I'm not fantastic at waiting.\N{\rCHT}我不喜歡等待{\r}
+Dialogue: 0,0:24:44.48,0:24:46.48,ENG,,0,0,0,,Unauthorized crossing, sir.\N{\rCHT}長官 有人非法使用通道{\r}
+Dialogue: 0,0:24:46.65,0:24:48.90,ENG,,0,0,0,,One of the old portals on Keystone Earth.\N{\rCHT}那是地球上的一條舊通道{\r}
+Dialogue: 0,0:24:52.36,0:24:53.53,ENG,,0,0,0,,Has that ever happened?\N{\rCHT}以前出現過這種情況麼？{\r}
+Dialogue: 0,0:24:56.53,0:24:58.91,ENG,,0,0,0,,Find me a portal close by.\N{\rCHT}給我找一個最近的通道入口{\r}
+Dialogue: 0,0:25:04.21,0:25:06.13,ENG,,0,0,0,,- Love your mask. - Sir?\N{\rCHT}- 我喜歡你的面具 - 長官？{\r}
+Dialogue: 0,0:25:06.29,0:25:09.25,ENG,,0,0,0,,Choose a pretty face and the world is your oyster.\N{\rCHT}一張美麗的臉龐 整個世界都為之沉默{\r}
+Dialogue: 0,0:25:09.42,0:25:10.84,ENG,,0,0,0,,Aligning, sir.\N{\rCHT}校準中 長官{\r}
+Dialogue: 0,0:26:01.81,0:26:03.22,ENG,,0,0,0,,Who are you?\N{\rCHT}你是誰？{\r}
+Dialogue: 0,0:26:04.14,0:26:05.77,ENG,,0,0,0,,It's you.\N{\rCHT}是你啊{\r}
+Dialogue: 0,0:26:09.02,0:26:10.65,ENG,,0,0,0,,I'm... I'm Jake.\N{\rCHT}我是 我是傑克{\r}
+Dialogue: 0,0:26:10.82,0:26:13.11,ENG,,0,0,0,,Jake... Jake Chambers.\N{\rCHT}傑克 傑克·錢伯斯{\r}
+Dialogue: 0,0:26:13.28,0:26:15.70,ENG,,0,0,0,,I dreamt about you.\N{\rCHT}我夢到過你{\r}
+Dialogue: 0,0:26:16.82,0:26:17.86,ENG,,0,0,0,,Please.\N{\rCHT}別殺我{\r}
+Dialogue: 0,0:26:20.87,0:26:22.29,ENG,,0,0,0,,Here.\N{\rCHT}給你{\r}
+Dialogue: 0,0:26:25.45,0:26:27.00,ENG,,0,0,0,,Look.\N{\rCHT}看{\r}
+Dialogue: 0,0:26:29.71,0:26:31.63,ENG,,0,0,0,,You're a Gunslinger, right?\N{\rCHT}你是槍俠 是嗎？{\r}
+Dialogue: 0,0:26:39.34,0:26:42.43,ENG,,0,0,0,,There are no Gunslingers. Not anymore.\N{\rCHT}這兒已經沒有槍俠了 再也不會有了{\r}
+Dialogue: 0,0:26:47.35,0:26:51.06,ENG,,0,0,0,,- But I saw you. - Your dreams deceived you, boy.\N{\rCHT}- 但我看到了你啊 - 你夢到的不是真的 孩子{\r}
+Dialogue: 0,0:26:51.23,0:26:53.69,ENG,,0,0,0,,Told you what you want to hear.\N{\rCHT}你夢到的東西只是你想像中的那樣{\r}
+Dialogue: 0,0:26:55.40,0:26:57.53,ENG,,0,0,0,,I came a long way to find you.\N{\rCHT}我走了很長的路才找到你{\r}
+Dialogue: 0,0:26:58.20,0:26:59.74,ENG,,0,0,0,,From another world!\N{\rCHT}我來自另一個世界{\r}
+Dialogue: 0,0:26:59.91,0:27:01.78,ENG,,0,0,0,,Have a nice trip back.\N{\rCHT}那祝你歸途愉快{\r}
+Dialogue: 0,0:27:06.20,0:27:08.66,ENG,,0,0,0,,Hey. Wait!\N{\rCHT}嗨 等一下{\r}
+Dialogue: 0,0:27:09.67,0:27:11.92,ENG,,0,0,0,,Dude, come on.\N{\rCHT}等一下嘛{\r}
+Dialogue: 0,0:27:12.67,0:27:14.50,ENG,,0,0,0,,Look, I saw you.\N{\rCHT}我看到你了{\r}
+Dialogue: 0,0:27:14.67,0:27:17.76,ENG,,0,0,0,,There was a battlefield, and you were fighting the Man in Black. And there...\N{\rCHT}這裡就是戰場 你在射擊黑衣人 並且{\r}
+Dialogue: 0,0:27:18.97,0:27:20.43,ENG,,0,0,0,,The Man in Black?\N{\rCHT}黑衣人？{\r}
+Dialogue: 0,0:27:20.59,0:27:22.05,ENG,,0,0,0,,- No,no,no. - You know him?\N{\rCHT}- 是 是啊 - 你認識他？{\r}
+Dialogue: 0,0:27:22.22,0:27:24.26,ENG,,0,0,0,,- Stop. Please, please, please. - He sent you.\N{\rCHT}- 請冷靜一下 好嗎 - 他讓你來的{\r}
+Dialogue: 0,0:27:24.43,0:27:25.60,ENG,,0,0,0,,You're one of his tricks.\N{\rCHT}他又讓你來耍什麼陰謀詭計{\r}
+Dialogue: 0,0:27:25.77,0:27:28.02,ENG,,0,0,0,,- No, no, no. I don't know! - Where is he hiding?!\N{\rCHT}- 不 不 不 我真的不認識他 - 他藏在哪裡？{\r}
+Dialogue: 0,0:27:28.18,0:27:30.39,ENG,,0,0,0,,- Where is he hiding?! - I don't know, I swear!\N{\rCHT}- 他藏在哪裡？- 我發誓 我真不知道{\r}
+Dialogue: 0,0:27:30.56,0:27:32.29,ENG,,0,0,0,,I just... I just saw him in my dreams,\N{\rCHT}我只是在我的夢裡見過他{\r}
+Dialogue: 0,0:27:32.32,0:27:33.24,ENG,,0,0,0,,like I saw you!\N{\rCHT}就像在夢裡見過你一樣{\r}
+Dialogue: 0,0:27:33.40,0:27:35.52,ENG,,0,0,0,,Your name is Roland, right?\N{\rCHT}你叫羅蘭 對吧？{\r}
+Dialogue: 0,0:27:37.86,0:27:39.45,ENG,,0,0,0,,Please.\N{\rCHT}求你{\r}
+Dialogue: 0,0:27:47.66,0:27:49.08,ENG,,0,0,0,,When did you first see this?\N{\rCHT}你什麼時候見到的？{\r}
+Dialogue: 0,0:27:50.08,0:27:51.46,ENG,,0,0,0,,A year ago.\N{\rCHT}一年前{\r}
+Dialogue: 0,0:27:52.50,0:27:55.17,ENG,,0,0,0,,- Who is he? - He's a sorcerer.\N{\rCHT}- 他是誰？- 他是一個巫師{\r}
+Dialogue: 0,0:27:59.92,0:28:03.14,ENG,,0,0,0,,In all your visions, Walter is here?\N{\rCHT}在你所看到的那些幻象中 沃特也在這裡？{\r}
+Dialogue: 0,0:28:03.84,0:28:06.35,ENG,,0,0,0,,- Uh, yeah. - In this place?\N{\rCHT}- 呃 是 - 就在這裡？{\r}
+Dialogue: 0,0:28:06.51,0:28:07.81,ENG,,0,0,0,,Yeah.\N{\rCHT}是的{\r}
+Dialogue: 0,0:28:10.06,0:28:11.69,ENG,,0,0,0,,Wait, his name's Walter?\N{\rCHT}等一下 他叫沃特？{\r}
+Dialogue: 0,0:28:15.11,0:28:18.11,ENG,,0,0,0,,Cool. Yeah, keep it.\N{\rCHT}酷極了 那個送你了{\r}
+Dialogue: 0,0:28:28.58,0:28:30.08,ENG,,0,0,0,,I will find you.\N{\rCHT}我一定會找到你的{\r}
+Dialogue: 0,0:28:32.29,0:28:35.96,ENG,,0,0,0,,There's a tribe beyond that forest. We'll go there.\N{\rCHT}那邊的森林裡有一個村落 我們就去那裡吧{\r}
+Dialogue: 0,0:28:38.80,0:28:41.17,ENG,,0,0,0,,They have seers who will read your visions.\N{\rCHT}那裡的預言家可以讀到你看到的東西{\r}
+Dialogue: 0,0:28:46.14,0:28:47.51,ENG,,0,0,0,,Let's go. Keep up...\N{\rCHT}走吧 快跟上{\r}
+Dialogue: 0,0:28:49.31,0:28:50.93,ENG,,0,0,0,,Okay.\N{\rCHT}好吧{\r}
+Dialogue: 0,0:28:59.02,0:29:00.44,ENG,,0,0,0,,...I went down the slide.\N{\rCHT}我從滑梯上滑下來{\r}
+Dialogue: 0,0:29:01.07,0:29:03.70,ENG,,0,0,0,,Then I got water up my nose, and I went down...\N{\rCHT}接著我洗了我的鼻子 再去滑滑梯{\r}
+Dialogue: 0,0:29:03.86,0:29:05.41,ENG,,0,0,0,,- ...and I couldn't see anything. - Hate.\N{\rCHT}- 我什麼都看不到 - 仇恨{\r}
+Dialogue: 0,0:29:05.57,0:29:07.07,ENG,,0,0,0,,Yeah.\N{\rCHT}好吧{\r}
+Dialogue: 0,0:29:09.08,0:29:12.29,ENG,,0,0,0,,Sweetheart? What's wrong?\N{\rCHT}寶貝 怎麼了？{\r}
+Dialogue: 0,0:29:55.75,0:29:58.50,ENG,,0,0,0,,Walter Padick. To what do we owe this great honor?\N{\rCHT}沃特·帕蒂可 您怎麼大駕光臨了？{\r}
+Dialogue: 0,0:29:58.67,0:30:01.63,ENG,,0,0,0,,Someone used a portal here, in your city...\N{\rCHT}在你的城市裡 有人未經過你的允許{\r}
+Dialogue: 0,0:30:01.80,0:30:03.96,ENG,,0,0,0,,...without your knowledge.\N{\rCHT}使用了通道{\r}
+Dialogue: 0,0:30:04.55,0:30:07.13,ENG,,0,0,0,,Killed the house demon.\N{\rCHT}還殺掉了守護惡魔{\r}
+Dialogue: 0,0:30:08.09,0:30:10.30,ENG,,0,0,0,,Forgive me, sire.\N{\rCHT}不好意思 先生{\r}
+Dialogue: 0,0:30:11.10,0:30:13.43,ENG,,0,0,0,,We'll find out who this trespasser is and where he went.\N{\rCHT}我們會找到他的{\r}
+Dialogue: 0,0:30:13.89,0:30:15.81,ENG,,0,0,0,,Already on it.\N{\rCHT}已經在找了{\r}
+Dialogue: 0,0:30:16.35,0:30:17.73,ENG,,0,0,0,,Now be a good dog.\N{\rCHT}試試看這個{\r}
+Dialogue: 0,0:30:28.82,0:30:30.03,ENG,,0,0,0,,The blood is human.\N{\rCHT}這是人類的血{\r}
+Dialogue: 0,0:30:31.12,0:30:32.16,ENG,,0,0,0,,Boy\N{\rCHT}小男孩{\r}
+Dialogue: 0,0:30:34.58,0:30:36.25,ENG,,0,0,0,,His Shine is pure.\N{\rCHT}他的靈力很純潔{\r}
+Dialogue: 0,0:30:39.08,0:30:41.71,ENG,,0,0,0,,So that's how he got through.\N{\rCHT}所以他才能進入通道{\r}
+Dialogue: 0,0:30:42.09,0:30:43.80,ENG,,0,0,0,,Sir?\N{\rCHT}先生？{\r}
+Dialogue: 0,0:30:44.26,0:30:46.01,ENG,,0,0,0,,House demons are formidable beings...\N{\rCHT}守護惡魔是非常可怕的生物{\r}
+Dialogue: 0,0:30:46.17,0:30:49.89,ENG,,0,0,0,,...but a truly powerful psychic could override it.\N{\rCHT}但是靈力強大的人能制服它們{\r}
+Dialogue: 0,0:30:50.43,0:30:53.72,ENG,,0,0,0,,A boy with the Shine strong enough to kill a demon?\N{\rCHT}這男孩靈力強大到可以殺死一個惡魔？{\r}
+Dialogue: 0,0:30:54.39,0:30:55.68,ENG,,0,0,0,,Jackpot\N{\rCHT}我們這是中頭彩了啊{\r}
+Dialogue: 0,0:30:55.85,0:31:00.02,ENG,,0,0,0,,Sayre, didn't two skins have trouble with a kid yesterday?\N{\rCHT}塞爾 兩個蒙面人昨天都沒搞定一個男孩？{\r}
+Dialogue: 0,0:31:16.58,0:31:17.75,ENG,,0,0,0,,Don't eat that.\N{\rCHT}別吃這個{\r}
+Dialogue: 0,0:31:18.33,0:31:20.96,ENG,,0,0,0,,Don't want to have to carry you for the rest of the way.\N{\rCHT}我可不想剩下的路都背著你走{\r}
+Dialogue: 0,0:31:54.66,0:31:56.24,ENG,,0,0,0,,Roland?\N{\rCHT}羅蘭{\r}
+Dialogue: 0,0:32:15.64,0:32:16.68,ENG,,0,0,0,,What are they?\N{\rCHT}他們是什麼{\r}
+Dialogue: 0,0:32:16.85,0:32:18.22,ENG,,0,0,0,,Taheen.\N{\rCHT}蒙面人{\r}
+Dialogue: 0,0:32:18.93,0:32:20.10,ENG,,0,0,0,,They belong to Walter.\N{\rCHT}沃爾特的部下{\r}
+Dialogue: 0,0:32:20.27,0:32:22.31,ENG,,0,0,0,,Don't run off in the woods. It's not safe.\N{\rCHT}不要在樹林裡走 不安全{\r}
+Dialogue: 0,0:32:23.35,0:32:24.90,ENG,,0,0,0,,But you were the one who ran off.\N{\rCHT}但是剛剛你不是走進樹林了嘛{\r}
+Dialogue: 0,0:32:25.48,0:32:26.77,ENG,,0,0,0,,You said you were hungry.\N{\rCHT}因為你說你餓了{\r}
+Dialogue: 0,0:32:31.11,0:32:32.49,ENG,,0,0,0,,What?\N{\rCHT}好吧{\r}
+Dialogue: 0,0:32:39.50,0:32:41.54,ENG,,0,0,0,,You had theme parks here.\N{\rCHT}以前這裡是個遊樂園{\r}
+Dialogue: 0,0:32:46.21,0:32:49.46,ENG,,0,0,0,,These ancient structures are from before the world moved on.\N{\rCHT}這些都是史前的建築了{\r}
+Dialogue: 0,0:32:49.63,0:32:51.92,ENG,,0,0,0,,No one knows what they are.\N{\rCHT}沒有人知道它們是什麼{\r}
+Dialogue: 0,0:32:52.38,0:32:53.88,ENG,,0,0,0,,They're theme parks.\N{\rCHT}他們是主題公園{\r}
+Dialogue: 0,0:32:58.10,0:32:59.14,ENG,,0,0,0,,I saw you fight him.\N{\rCHT}我看到你和他作戰{\r}
+Dialogue: 0,0:33:02.48,0:33:03.98,ENG,,0,0,0,,There was a field covered with bodies.\N{\rCHT}遍地屍體{\r}
+Dialogue: 0,0:33:11.69,0:33:13.95,ENG,,0,0,0,,That was our final stand.\N{\rCHT}那是我們的決戰{\r}
+Dialogue: 0,0:33:17.66,0:33:19.83,ENG,,0,0,0,,I lost my father that day.\N{\rCHT}那天我的父親犧牲了{\r}
+Dialogue: 0,0:33:22.58,0:33:23.66,ENG,,0,0,0,,You saw that?\N{\rCHT}你都看到了？{\r}
+Dialogue: 0,0:33:31.63,0:33:33.51,ENG,,0,0,0,,Was it about the Tower?\N{\rCHT}是不是關於黑暗塔的{\r}
+Dialogue: 0,0:33:35.47,0:33:37.30,ENG,,0,0,0,,The war?\N{\rCHT}那場戰爭{\r}
+Dialogue: 0,0:33:38.72,0:33:40.43,ENG,,0,0,0,,Yes.\N{\rCHT}是的{\r}
+Dialogue: 0,0:33:42.64,0:33:44.56,ENG,,0,0,0,,Now, eat your rabbit.\N{\rCHT}繼續吃你的兔肉吧{\r}
+Dialogue: 0,0:33:51.73,0:33:53.65,ENG,,0,0,0,,It's an honor to meet you in person, sir.\N{\rCHT}很榮幸見到你 先生{\r}
+Dialogue: 0,0:33:53.82,0:33:54.95,ENG,,0,0,0,,What brings you here?\N{\rCHT}請問您來這有什麼事麼？{\r}
+Dialogue: 0,0:33:55.11,0:33:56.28,ENG,,0,0,0,,How may we serve him?\N{\rCHT}有什麼可以效勞的？{\r}
+Dialogue: 0,0:33:56.45,0:33:58.49,ENG,,0,0,0,,Well, I hear you lost a kid.\N{\rCHT}我聽說你們沒抓住那個孩子{\r}
+Dialogue: 0,0:34:00.33,0:34:02.12,ENG,,0,0,0,,It... It wasn't our fault.\N{\rCHT}這不是我們的錯{\r}
+Dialogue: 0,0:34:02.29,0:34:05.75,ENG,,0,0,0,,It was as if the child knew what we were. We're doing everything we can...\N{\rCHT}那個小孩仿佛知道我們的真實身份 我們正在竭盡全力{\r}
+Dialogue: 0,0:34:05.91,0:34:08.96,ENG,,0,0,0,,- Name and location. - it's all in here.\N{\rCHT}- 告訴我他的名字和位置 - 都在這兒呢{\r}
+Dialogue: 0,0:34:14.59,0:34:17.13,ENG,,0,0,0,,"Jake Chambers."\N{\rCHT}傑克·錢伯斯{\r}
+Dialogue: 0,0:34:19.85,0:34:21.93,ENG,,0,0,0,,Now kill...\N{\rCHT}現在{\r}
+Dialogue: 0,0:34:22.10,0:34:23.31,ENG,,0,0,0,,...each other.\N{\rCHT}相互廝殺{\r}
+Dialogue: 0,0:34:26.27,0:34:28.81,ENG,,0,0,0,,Calm down. Enjoy the show, folks.\N{\rCHT}別緊張 好好欣賞吧 各位{\r}
+Dialogue: 0,0:34:29.40,0:34:32.15,ENG,,0,0,0,,You ain't seen nothing yet.\N{\rCHT}好戲還在後頭呢{\r}
+Dialogue: 0,0:34:42.24,0:34:43.70,ENG,,0,0,0,,You draw with a good hand.\N{\rCHT}你畫的挺不錯啊{\r}
+Dialogue: 0,0:34:49.67,0:34:50.92,ENG,,0,0,0,,I don't know what this is.\N{\rCHT}我都不知道自己畫的是什麼{\r}
+Dialogue: 0,0:34:55.17,0:34:56.22,ENG,,0,0,0,,It's a map.\N{\rCHT}這是幅地圖{\r}
+Dialogue: 0,0:34:58.59,0:35:02.05,ENG,,0,0,0,,My father showed me a... A map like this once.\N{\rCHT}我父親曾經給我看過這樣的地圖{\r}
+Dialogue: 0,0:35:06.31,0:35:10.85,ENG,,0,0,0,,Inside the circle is your world and my world...\N{\rCHT}在圈子之內 是你我的世界{\r}
+Dialogue: 0,0:35:11.65,0:35:12.90,ENG,,0,0,0,,...many others.\N{\rCHT}還有更多的世界{\r}
+Dialogue: 0,0:35:13.07,0:35:14.90,ENG,,0,0,0,,No one knows how many.\N{\rCHT}沒人知道具體有多少世界{\r}
+Dialogue: 0,0:35:15.48,0:35:19.99,ENG,,0,0,0,,The Dark Tower stands at the center of all things.\N{\rCHT}黑暗塔矗立在萬物的中央{\r}
+Dialogue: 0,0:35:22.16,0:35:25.12,ENG,,0,0,0,,And it's stood there from the beginning of time.\N{\rCHT}自萬物之始 矗立於此{\r}
+Dialogue: 0,0:35:25.79,0:35:28.75,ENG,,0,0,0,,And it sends out powerful energy...\N{\rCHT}它可以發出強大的能量{\r}
+Dialogue: 0,0:35:28.91,0:35:31.25,ENG,,0,0,0,,...that protects the universe...\N{\rCHT}這能量保護了宇宙{\r}
+Dialogue: 0,0:35:31.42,0:35:33.92,ENG,,0,0,0,,...shields us from what's outside.\N{\rCHT}把我們和外界隔絕開來{\r}
+Dialogue: 0,0:35:34.09,0:35:35.67,ENG,,0,0,0,,What do you mean, "outside"?\N{\rCHT}你說的"外界"是什麼意思{\r}
+Dialogue: 0,0:35:36.80,0:35:38.09,ENG,,0,0,0,,What's outside the universe?\N{\rCHT}宇宙之外有什麼？{\r}
+Dialogue: 0,0:35:42.64,0:35:45.22,ENG,,0,0,0,,Outside is endless darkness...\N{\rCHT}宇宙之外是一片無盡的黑暗{\r}
+Dialogue: 0,0:35:45.39,0:35:49.39,ENG,,0,0,0,,...full of demons trying to get to us.\N{\rCHT}充滿了試圖接近我們的惡魔{\r}
+Dialogue: 0,0:35:49.98,0:35:53.86,ENG,,0,0,0,,Walter wants to tear down the Tower and let them in.\N{\rCHT}沃爾特想摧毀黑暗塔 放出惡魔{\r}
+Dialogue: 0,0:35:55.15,0:35:57.32,ENG,,0,0,0,,When the Tower falls, he'll rule...\N{\rCHT}如果黑暗塔傾塌 他將主宰全宇宙{\r}
+Dialogue: 0,0:35:57.48,0:36:00.03,ENG,,0,0,0,,...in a world full of monsters.\N{\rCHT}怪物將四處橫行{\r}
+Dialogue: 0,0:36:01.07,0:36:03.03,ENG,,0,0,0,,But you're trying to stop him, aren't you?\N{\rCHT}你是不是要阻止他們{\r}
+Dialogue: 0,0:36:03.99,0:36:06.12,ENG,,0,0,0,,To protect the Tower.\N{\rCHT}你在保護黑暗塔{\r}
+Dialogue: 0,0:36:07.12,0:36:08.66,ENG,,0,0,0,,I've seen them try to destroy it.\N{\rCHT}我看到他們試圖摧毀黑暗塔{\r}
+Dialogue: 0,0:36:08.83,0:36:11.87,ENG,,0,0,0,,- If we could just get there... - There is no "we," Jake.\N{\rCHT}- 如果我們到達那裡 - 傑克 這只是你的一廂情願罷了{\r}
+Dialogue: 0,0:36:12.04,0:36:14.46,ENG,,0,0,0,,All that matters to me is that I find...\N{\rCHT}我一心只想找到{\r}
+Dialogue: 0,0:36:14.63,0:36:17.13,ENG,,0,0,0,,...and kill Walter.\N{\rCHT}並殺死沃爾特{\r}
+Dialogue: 0,0:36:17.80,0:36:19.51,ENG,,0,0,0,,That's it.\N{\rCHT}僅此而已{\r}
+Dialogue: 0,0:37:02.05,0:37:03.88,ENG,,0,0,0,,Beamquake.\N{\rCHT}光束震動{\r}
+Dialogue: 0,0:37:04.34,0:37:05.39,ENG,,0,0,0,,Strong.\N{\rCHT}很強烈{\r}
+Dialogue: 0,0:37:06.89,0:37:08.26,ENG,,0,0,0,,Sounds like screams.\N{\rCHT}聽起來像是有人在尖叫{\r}
+Dialogue: 0,0:37:17.77,0:37:19.86,ENG,,0,0,0,,They're just like the quakes we get back home.\N{\rCHT}這和我老家的幾次地震情況相似啊{\r}
+Dialogue: 0,0:37:20.61,0:37:23.78,ENG,,0,0,0,,Yeah, what happens in one world...\N{\rCHT}是的 一個世界發生的事{\r}
+Dialogue: 0,0:37:23.95,0:37:25.70,ENG,,0,0,0,,...echoes in others.\N{\rCHT}會影響到其它的世界{\r}
+Dialogue: 0,0:37:26.87,0:37:29.20,ENG,,0,0,0,,Hope my mom's okay.\N{\rCHT}希望我媽媽沒事{\r}
+Dialogue: 0,0:37:32.66,0:37:34.87,ENG,,0,0,0,,Try to get some sleep.\N{\rCHT}去睡一會兒吧{\r}
+Dialogue: 0,0:37:37.88,0:37:40.00,ENG,,0,0,0,,That's not happening.\N{\rCHT}我睡不著{\r}
+Dialogue: 0,0:37:47.34,0:37:49.18,ENG,,0,0,0,,Jake.\N{\rCHT}傑克{\r}
+Dialogue: 0,0:37:52.06,0:37:54.39,ENG,,0,0,0,,Jake.\N{\rCHT}傑克{\r}
+Dialogue: 0,0:38:06.28,0:38:07.45,ENG,,0,0,0,,Hey, kiddo.\N{\rCHT}嘿 我的孩子{\r}
+Dialogue: 0,0:38:10.53,0:38:12.58,ENG,,0,0,0,,Where are you?\N{\rCHT}你在哪？{\r}
+Dialogue: 0,0:38:26.76,0:38:29.39,ENG,,0,0,0,,Everyone who walks with you dies.\N{\rCHT}與你同行的人都會死{\r}
+Dialogue: 0,0:38:40.06,0:38:41.11,ENG,,0,0,0,,Jake.\N{\rCHT}傑克{\r}
+Dialogue: 0,0:38:56.83,0:38:57.91,ENG,,0,0,0,,Hey, kiddo.\N{\rCHT}嘿 我的孩子{\r}
+Dialogue: 0,0:38:59.92,0:39:01.71,ENG,,0,0,0,,Dad?\N{\rCHT}爸爸？{\r}
+Dialogue: 0,0:39:02.67,0:39:04.80,ENG,,0,0,0,,Long time.\N{\rCHT}好久不見了{\r}
+Dialogue: 0,0:39:07.17,0:39:10.14,ENG,,0,0,0,,It's good to see you, man. You got tall.\N{\rCHT}很高興見到你 你長高了{\r}
+Dialogue: 0,0:39:10.76,0:39:12.80,ENG,,0,0,0,,This isn't real.\N{\rCHT}這不是真的{\r}
+Dialogue: 0,0:39:13.93,0:39:15.77,ENG,,0,0,0,,- You're... - Dead?\N{\rCHT}- 你不是 - 我還沒死呢{\r}
+Dialogue: 0,0:39:15.93,0:39:17.89,ENG,,0,0,0,,Not here.\N{\rCHT}在這個世界裡 我還沒死{\r}
+Dialogue: 0,0:39:19.77,0:39:21.23,ENG,,0,0,0,,I missed you.\N{\rCHT}我好想你{\r}
+Dialogue: 0,0:39:21.40,0:39:23.27,ENG,,0,0,0,,I missed you too, kiddo.\N{\rCHT}我也很想你 我的孩子{\r}
+Dialogue: 0,0:39:24.11,0:39:25.32,ENG,,0,0,0,,Come on.\N{\rCHT}過來{\r}
+Dialogue: 0,0:39:25.48,0:39:26.69,ENG,,0,0,0,,It's okay.\N{\rCHT}別害怕{\r}
+Dialogue: 0,0:39:30.16,0:39:32.20,ENG,,0,0,0,,Let's go home.\N{\rCHT}我們回家吧{\r}
+Dialogue: 0,0:39:38.16,0:39:39.37,ENG,,0,0,0,,No.\N{\rCHT}不{\r}
+Dialogue: 0,0:39:43.84,0:39:45.71,ENG,,0,0,0,,Darkness and fire.\N{\rCHT}黑暗和烈火{\r}
+Dialogue: 0,0:39:50.72,0:39:52.18,ENG,,0,0,0,,Jake!\N{\rCHT}傑克{\r}
+Dialogue: 0,0:39:52.55,0:39:54.14,ENG,,0,0,0,,Get away from it!\N{\rCHT}離它遠點{\r}
+Dialogue: 0,0:40:12.49,0:40:15.16,ENG,,0,0,0,,Roland. My son.\N{\rCHT}羅蘭 我的兒子{\r}
+Dialogue: 0,0:40:17.20,0:40:18.25,ENG,,0,0,0,,Come with me.\N{\rCHT}跟我來{\r}
+Dialogue: 0,0:40:26.42,0:40:27.42,ENG,,0,0,0,,It's okay.\N{\rCHT}沒事了{\r}
+Dialogue: 0,0:40:27.59,0:40:29.42,ENG,,0,0,0,,It's gone.\N{\rCHT}它走了{\r}
+Dialogue: 0,0:40:31.72,0:40:33.26,ENG,,0,0,0,,My dad was in there.\N{\rCHT}剛才那個是我的爸爸{\r}
+Dialogue: 0,0:40:34.22,0:40:36.56,ENG,,0,0,0,,No, they sense your weakness...\N{\rCHT}不 他們感知到你的弱點{\r}
+Dialogue: 0,0:40:36.72,0:40:39.27,ENG,,0,0,0,,...create illusions to distract you.\N{\rCHT}用幻覺來分散你的注意力{\r}
+Dialogue: 0,0:40:40.31,0:40:42.69,ENG,,0,0,0,,That wasn't anybody you know.\N{\rCHT}那不是你所認識的人 傑克{\r}
+Dialogue: 0,0:40:43.90,0:40:45.48,ENG,,0,0,0,,I'm sorry.\N{\rCHT}我能體諒你的心情{\r}
+Dialogue: 0,0:40:50.57,0:40:52.86,ENG,,0,0,0,,That was just a small tear.\N{\rCHT}那只是一個小的時空裂縫{\r}
+Dialogue: 0,0:40:53.03,0:40:56.03,ENG,,0,0,0,,They happen after every attack on the Tower.\N{\rCHT}每次塔遭受攻擊後都會出現這樣的裂縫{\r}
+Dialogue: 0,0:40:56.20,0:41:00.04,ENG,,0,0,0,,Those things, they're what's coming if the Tower falls, aren't they?\N{\rCHT}要是黑暗塔被摧毀了 是不是那些怪物就要來了{\r}
+Dialogue: 0,0:41:00.20,0:41:01.25,ENG,,0,0,0,,Yes.\N{\rCHT}是的{\r}
+Dialogue: 0,0:41:01.41,0:41:04.12,ENG,,0,0,0,,But if we find that place where they're keeping the kids, we could...\N{\rCHT}那如果我們找到了那些孩子所在的位置 我們{\r}
+Dialogue: 0,0:41:04.33,0:41:06.25,ENG,,0,0,0,,- Shh, shh, shh. - What?\N{\rCHT}- 噓噓噓 - 怎麼了？{\r}
+Dialogue: 0,0:41:06.42,0:41:08.09,ENG,,0,0,0,,Something got out.\N{\rCHT}附近有動靜{\r}
+Dialogue: 0,0:41:16.93,0:41:18.76,ENG,,0,0,0,,Run! Jake, run!\N{\rCHT}快跑 傑克 快跑{\r}
+Dialogue: 0,0:42:44.31,0:42:46.27,ENG,,0,0,0,,You're gonna need help.\N{\rCHT}你需要幫助{\r}
+Dialogue: 0,0:42:46.43,0:42:47.98,ENG,,0,0,0,,I've hurt worse.\N{\rCHT}我還受過更重的傷呢{\r}
+Dialogue: 0,0:42:48.60,0:42:50.36,ENG,,0,0,0,,But you're bleeding.\N{\rCHT}可是你在流血{\r}
+Dialogue: 0,0:42:50.52,0:42:52.98,ENG,,0,0,0,,I heal fast.\N{\rCHT}我恢復的很快{\r}
+Dialogue: 0,0:42:55.32,0:42:57.53,ENG,,0,0,0,,You handled yourself well.\N{\rCHT}你剛才表現不錯{\r}
+Dialogue: 0,0:42:57.70,0:43:00.32,ENG,,0,0,0,,That was brave, going for the gun.\N{\rCHT}敢去拿那把槍 很勇敢{\r}
+Dialogue: 0,0:43:03.79,0:43:05.25,ENG,,0,0,0,,They're gonna find him, Laurie.\N{\rCHT}警方會找到他的 勞麗{\r}
+Dialogue: 0,0:43:05.62,0:43:08.79,ENG,,0,0,0,,We filled out every form. They have his picture.\N{\rCHT}我們填了一大堆表格 提供了他的照片{\r}
+Dialogue: 0,0:43:20.97,0:43:23.26,ENG,,0,0,0,,I hope you don't mind me making myself at home.\N{\rCHT}希望你們不要介意 我把這裡當做自己家{\r}
+Dialogue: 0,0:43:23.43,0:43:25.47,ENG,,0,0,0,,Where I come from, we don't have chicken.\N{\rCHT}我們那裡沒有雞肉{\r}
+Dialogue: 0,0:43:25.64,0:43:28.18,ENG,,0,0,0,,- Who the hell are you? - Oh, you know me, Lon.\N{\rCHT}- 你到底是誰？- 朗 你知道的{\r}
+Dialogue: 0,0:43:28.35,0:43:30.10,ENG,,0,0,0,,You're the one that called me here.\N{\rCHT}是你叫我過來的{\r}
+Dialogue: 0,0:43:30.27,0:43:31.31,ENG,,0,0,0,,Not by the telephone...\N{\rCHT}不是說你是打電話叫我來的{\r}
+Dialogue: 0,0:43:31.48,0:43:34.52,ENG,,0,0,0,,...but with your every desire to get rid of the brat...\N{\rCHT}而是我感覺到了你那強烈的願望 你想甩掉那個小傢伙{\r}
+Dialogue: 0,0:43:34.69,0:43:37.40,ENG,,0,0,0,,...all in the hopes that Mommy there might love you best.\N{\rCHT}這樣的話你就可以得到他媽媽更多的愛{\r}
+Dialogue: 0,0:43:39.20,0:43:41.62,ENG,,0,0,0,,But you'll always be a seat-filler, Lon.\N{\rCHT}你這懦夫 朗{\r}
+Dialogue: 0,0:43:42.24,0:43:44.16,ENG,,0,0,0,,- You get out of here right now. - Lon.\N{\rCHT}- 你快點滾出去 - 朗{\r}
+Dialogue: 0,0:43:45.99,0:43:47.91,ENG,,0,0,0,,It's the man from Jake's drawings.\N{\rCHT}這是出現在傑克畫作裡的那個男人{\r}
+Dialogue: 0,0:43:51.12,0:43:52.75,ENG,,0,0,0,,Drawings?\N{\rCHT}畫作？{\r}
+Dialogue: 0,0:43:55.71,0:43:56.92,ENG,,0,0,0,,Stop breathing.\N{\rCHT}停止呼吸{\r}
+Dialogue: 0,0:43:58.13,0:43:59.72,ENG,,0,0,0,,- Aah! - Quiet.\N{\rCHT}- 啊 - 安靜{\r}
+Dialogue: 0,0:44:02.89,0:44:04.26,ENG,,0,0,0,,Drawings.\N{\rCHT}畫作{\r}
+Dialogue: 0,0:44:13.36,0:44:14.56,ENG,,0,0,0,,Show me.\N{\rCHT}帶我去看看{\r}
+Dialogue: 0,0:44:44.76,0:44:49.18,ENG,,0,0,0,,Well, it looks like I've got myself a stalker.\N{\rCHT}好吧 看起來這小傢伙像是成天在跟蹤我啊{\r}
+Dialogue: 0,0:45:05.70,0:45:07.58,ENG,,0,0,0,,Gunslinger.\N{\rCHT}槍俠{\r}
+Dialogue: 0,0:45:22.26,0:45:25.39,ENG,,0,0,0,,This son of yours is quite special, isn't he?\N{\rCHT}你兒子是不是挺特別的{\r}
+Dialogue: 0,0:45:37.61,0:45:41.11,ENG,,0,0,0,,The guilt you must feel...\N{\rCHT}你沒有相信他{\r}
+Dialogue: 0,0:45:42.61,0:45:44.86,ENG,,0,0,0,,...not believing in him.\N{\rCHT}你肯定會因此感到內疚{\r}
+Dialogue: 0,0:45:46.32,0:45:49.78,ENG,,0,0,0,,And you sent your only child off to the asylum.\N{\rCHT}而且還把你唯一的孩子送到了庇護所{\r}
+Dialogue: 0,0:45:53.16,0:45:55.29,ENG,,0,0,0,,Shame...\N{\rCHT}真為你{\r}
+Dialogue: 0,0:45:56.29,0:45:58.29,ENG,,0,0,0,,...on you.\N{\rCHT}感到羞恥{\r}
+Dialogue: 0,0:46:58.69,0:46:59.85,ENG,,0,0,0,,Stranger approaching!\N{\rCHT}有陌生人來了{\r}
+Dialogue: 0,0:47:03.90,0:47:05.53,ENG,,0,0,0,,Gather round!\N{\rCHT}去看看{\r}
+Dialogue: 0,0:47:09.99,0:47:12.37,ENG,,0,0,0,,Long days, pleasant nights.\N{\rCHT}祝天長 夜爽{\r}
+Dialogue: 0,0:47:12.53,0:47:14.49,ENG,,0,0,0,,May you have twice that number.\N{\rCHT}祝收成加倍{\r}
+Dialogue: 0,0:47:15.08,0:47:18.58,ENG,,0,0,0,,I haven't seen one of your kind since I was a young man.\N{\rCHT}我上次見到地球人的時候 還只是個年輕人{\r}
+Dialogue: 0,0:47:19.04,0:47:20.54,ENG,,0,0,0,,Seeing you here, alive...\N{\rCHT}你這麼活生生的{\r}
+Dialogue: 0,0:47:20.71,0:47:22.63,ENG,,0,0,0,,Who's your strongest seer?\N{\rCHT}你們這能力最強的預言家是誰{\r}
+Dialogue: 0,0:47:23.21,0:47:24.34,ENG,,0,0,0,,That would be me.\N{\rCHT}那就是我了{\r}
+Dialogue: 0,0:47:25.55,0:47:26.88,ENG,,0,0,0,,I'm Arra.\N{\rCHT}我叫艾拉{\r}
+Dialogue: 0,0:47:27.88,0:47:30.39,ENG,,0,0,0,,The boy here has visions of this place.\N{\rCHT}這地方出現在這個男孩的幻象中{\r}
+Dialogue: 0,0:47:31.93,0:47:34.14,ENG,,0,0,0,,I need to know where it is.\N{\rCHT}我要知道這是什麼地方{\r}
+Dialogue: 0,0:47:37.68,0:47:40.10,ENG,,0,0,0,,The Man in Black.\N{\rCHT}黑衣人{\r}
+Dialogue: 0,0:47:40.27,0:47:42.44,ENG,,0,0,0,,We managed to do some serious damage, sir...\N{\rCHT}老大 我們已經對塔造成嚴重損傷了{\r}
+Dialogue: 0,0:47:42.61,0:47:44.52,ENG,,0,0,0,,- ...but it didn't fall. - None of that matters.\N{\rCHT}- 但它還是沒有坍塌 - 這不重要了{\r}
+Dialogue: 0,0:47:44.69,0:47:47.44,ENG,,0,0,0,,I found the one. This kid's going to bring down the Tower...\N{\rCHT}我找到關鍵人物了 這個孩子會以一己之力{\r}
+Dialogue: 0,0:47:47.65,0:47:50.03,ENG,,0,0,0,,...all by his lonesome.\N{\rCHT}摧毀黑暗塔{\r}
+Dialogue: 0,0:47:50.49,0:47:52.66,ENG,,0,0,0,,- Where is this child? - He's here...\N{\rCHT}- 那個孩子在哪 - 他就在這{\r}
+Dialogue: 0,0:47:52.82,0:47:54.45,ENG,,0,0,0,,...on Mid-World...\N{\rCHT}在中世界{\r}
+Dialogue: 0,0:47:54.62,0:47:58.29,ENG,,0,0,0,,...looking for an old friend of mine, Roland of Eld.\N{\rCHT}他們在我的一個老朋友 艾德的羅蘭{\r}
+Dialogue: 0,0:47:59.25,0:48:01.54,ENG,,0,0,0,,Wait, I thought all the Gunslingers were dead.\N{\rCHT}等下 我還以為槍俠都死光了呢{\r}
+Dialogue: 0,0:48:02.29,0:48:04.21,ENG,,0,0,0,,Roland's always had an annoying ability...\N{\rCHT}羅蘭那阻擋我魔法的能力{\r}
+Dialogue: 0,0:48:04.38,0:48:06.38,ENG,,0,0,0,,...to resist my magics.\N{\rCHT}真是令人討厭{\r}
+Dialogue: 0,0:48:06.55,0:48:08.63,ENG,,0,0,0,,So I killed everyone he ever cared about.\N{\rCHT}所以我基本把他在乎的人都殺了{\r}
+Dialogue: 0,0:48:09.55,0:48:12.26,ENG,,0,0,0,,Last I heard, he was roaming the Mohaine aimlessly.\N{\rCHT}上次我聽說他在 漫無目的的閒逛{\r}
+Dialogue: 0,0:48:12.43,0:48:14.76,ENG,,0,0,0,,- That's where the boy is going. - Mohaine Desert? Isn't that...?\N{\rCHT}- 那個男孩正是要去那裡 - 莫因沙漠麼 那不是{\r}
+Dialogue: 0,0:48:14.93,0:48:17.35,ENG,,0,0,0,,Vast. Yes. And so is this boy's Shine.\N{\rCHT}是的 那是個壯觀的沙漠 那男孩的靈力也頗為壯觀啊{\r}
+Dialogue: 0,0:48:17.52,0:48:20.44,ENG,,0,0,0,,I'll send our trackers in the region, sir.\N{\rCHT}老大 我馬上派我們的人過去{\r}
+Dialogue: 0,0:48:31.99,0:48:33.41,ENG,,0,0,0,,This will get worse.\N{\rCHT}這會惡化的{\r}
+Dialogue: 0,0:48:33.57,0:48:36.41,ENG,,0,0,0,,I don't have anything that can help with that.\N{\rCHT}我這沒辦法治療你受的傷{\r}
+Dialogue: 0,0:48:36.58,0:48:38.20,ENG,,0,0,0,,You need to rest, let it heal.\N{\rCHT}你需要休息 讓傷口癒合{\r}
+Dialogue: 0,0:48:38.87,0:48:40.58,ENG,,0,0,0,,I'll be fine.\N{\rCHT}我沒事的{\r}
+Dialogue: 0,0:48:43.25,0:48:44.38,ENG,,0,0,0,,Thankee, Sai.\N{\rCHT}謝謝你{\r}
+Dialogue: 0,0:48:44.54,0:48:46.71,ENG,,0,0,0,,You've come all the way from Keystone Earth to find him.\N{\rCHT}你從地球大老遠跑過來找他{\r}
+Dialogue: 0,0:48:49.38,0:48:52.09,ENG,,0,0,0,,His Shine is beyond anything I've ever seen.\N{\rCHT}他所具有的靈力超乎尋常{\r}
+Dialogue: 0,0:48:53.80,0:48:54.93,ENG,,0,0,0,,Shine?\N{\rCHT}靈力？{\r}
+Dialogue: 0,0:48:55.09,0:48:56.26,ENG,,0,0,0,,Psychic powers.\N{\rCHT}靈知之力{\r}
+Dialogue: 0,0:48:57.06,0:48:59.22,ENG,,0,0,0,,Very few are born with this gift.\N{\rCHT}很少有人生來就有這種能力{\r}
+Dialogue: 0,0:48:59.39,0:49:03.44,ENG,,0,0,0,,Often, the power is so slight, people don't even know they have it.\N{\rCHT}大多數人這方面的能力很弱 都注意不到自己具有這個能力{\r}
+Dialogue: 0,0:49:04.23,0:49:07.82,ENG,,0,0,0,,Your Shine burns so brightly, Jake.\N{\rCHT}傑克 你的靈力太強了{\r}
+Dialogue: 0,0:49:07.98,0:49:11.90,ENG,,0,0,0,,You have potential I can't even begin to understand.\N{\rCHT}你身上潛力之大 難以想像{\r}
+Dialogue: 0,0:49:12.07,0:49:13.24,ENG,,0,0,0,,Whoa.\N{\rCHT}哇{\r}
+Dialogue: 0,0:49:15.74,0:49:17.58,ENG,,0,0,0,,Her voice was in my head.\N{\rCHT}她的聲音跑進我腦袋裡了{\r}
+Dialogue: 0,0:49:17.74,0:49:20.50,ENG,,0,0,0,,Your gift is extraordinary, Jake.\N{\rCHT}傑克 你天賦異稟{\r}
+Dialogue: 0,0:49:20.66,0:49:23.87,ENG,,0,0,0,,It made you see across worlds.\N{\rCHT}所以你能看到別的世界{\r}
+Dialogue: 0,0:49:25.46,0:49:26.92,ENG,,0,0,0,,The drawing.\N{\rCHT}那些畫{\r}
+Dialogue: 0,0:49:27.09,0:49:28.50,ENG,,0,0,0,,What about the drawing?\N{\rCHT}你畫的畫 是怎麼回事{\r}
+Dialogue: 0,0:49:31.84,0:49:34.01,ENG,,0,0,0,,Concentrate.\N{\rCHT}集中注意{\r}
+Dialogue: 0,0:49:34.18,0:49:36.93,ENG,,0,0,0,,Share your visions with me.\N{\rCHT}讓我看看你的幻象{\r}
+Dialogue: 0,0:49:44.06,0:49:45.69,ENG,,0,0,0,,Open up.\N{\rCHT}放開{\r}
+Dialogue: 0,0:49:47.69,0:49:49.57,ENG,,0,0,0,,Show me.\N{\rCHT}讓我看看{\r}
+Dialogue: 0,0:49:55.78,0:49:57.24,ENG,,0,0,0,,The Man in Black...\N{\rCHT}黑衣人{\r}
+Dialogue: 0,0:49:57.41,0:49:58.62,ENG,,0,0,0,,Jake.\N{\rCHT}傑克{\r}
+Dialogue: 0,0:49:59.41,0:50:00.70,ENG,,0,0,0,,...Fled across the desert.\N{\rCHT}穿過沙漠{\r}
+Dialogue: 0,0:50:04.08,0:50:06.00,ENG,,0,0,0,,Tell me.\N{\rCHT}告訴我{\r}
+Dialogue: 0,0:50:06.33,0:50:07.83,ENG,,0,0,0,,Where is he?\N{\rCHT}他在哪{\r}
+Dialogue: 0,0:50:09.38,0:50:10.75,ENG,,0,0,0,,Northern Wastelands.\N{\rCHT}在廢土之地的北部{\r}
+Dialogue: 0,0:50:15.38,0:50:17.80,ENG,,0,0,0,,That's more than six months of travel.\N{\rCHT}到那邊至少得要六個月的時間{\r}
+Dialogue: 0,0:50:19.76,0:50:21.72,ENG,,0,0,0,,But you can get me there faster than that.\N{\rCHT}但是有你的幫助 我們能更快到那邊{\r}
+Dialogue: 0,0:50:21.89,0:50:24.73,ENG,,0,0,0,,The Man in Black and his men keep track of all portal travel.\N{\rCHT}黑衣人和他的手下控制了所有的通道運輸{\r}
+Dialogue: 0,0:50:24.89,0:50:27.73,ENG,,0,0,0,,- I need to get there. - Portals.\N{\rCHT}- 我得去那邊 - 通道是什麼{\r}
+Dialogue: 0,0:50:27.90,0:50:30.15,ENG,,0,0,0,,We couldn't help you, even if we wanted to.\N{\rCHT}就算我們願意 我們也幫不了你{\r}
+Dialogue: 0,0:50:30.31,0:50:33.99,ENG,,0,0,0,,The only way to access their territories is from one of their own bases.\N{\rCHT}要想去他們的地盤 唯一的辦法就是通過他們的基地{\r}
+Dialogue: 0,0:50:36.36,0:50:38.49,ENG,,0,0,0,,Then I'll make it on foot.\N{\rCHT}那我步行過去好了{\r}
+Dialogue: 0,0:50:39.16,0:50:40.37,ENG,,0,0,0,,Wait.\N{\rCHT}等下{\r}
+Dialogue: 0,0:50:41.99,0:50:44.16,ENG,,0,0,0,,The fake-skins...\N{\rCHT}那些蒙面人{\r}
+Dialogue: 0,0:50:44.91,0:50:47.21,ENG,,0,0,0,,...they take kids from different worlds, right?\N{\rCHT}是不是會把其他世界的孩子們抓走{\r}
+Dialogue: 0,0:50:47.37,0:50:48.92,ENG,,0,0,0,,They tried to take me from New York.\N{\rCHT}我在紐約的時候 他們試圖把我抓走{\r}
+Dialogue: 0,0:50:49.08,0:50:52.17,ENG,,0,0,0,,- Doesn't that mean that they...? - They have a base there.\N{\rCHT}- 是不是就是說他們 - 他們在那邊有個基地{\r}
+Dialogue: 0,0:50:52.80,0:50:56.05,ENG,,0,0,0,,With a portal that can take me right to this place.\N{\rCHT}通過那邊的通道我們能直接到達畫上的這個地方{\r}
+Dialogue: 0,0:50:58.76,0:51:01.22,ENG,,0,0,0,,You're gonna send us to Keystone Earth.\N{\rCHT}你要把我們送回地球{\r}
+Dialogue: 0,0:51:11.48,0:51:13.61,ENG,,0,0,0,,We're diverting power to the generators.\N{\rCHT}我們正在把能量轉移到發電機上{\r}
+Dialogue: 0,0:51:13.78,0:51:15.82,ENG,,0,0,0,,The portal will be ready shortly.\N{\rCHT}不久後通道就充能完畢了{\r}
+Dialogue: 0,0:51:18.91,0:51:20.87,ENG,,0,0,0,,Do they have guns in your world?\N{\rCHT}你的世界裡有槍麼{\r}
+Dialogue: 0,0:51:22.12,0:51:23.16,ENG,,0,0,0,,Yeah.\N{\rCHT}有啊{\r}
+Dialogue: 0,0:51:24.29,0:51:27.12,ENG,,0,0,0,,And bullets, are they as rare as they are here?\N{\rCHT}那子彈呢 是不是像這邊一樣稀有{\r}
+Dialogue: 0,0:51:28.29,0:51:30.33,ENG,,0,0,0,,You're gonna like Earth. A lot.\N{\rCHT}你肯定會愛上那個地方的 地球上子彈可多了{\r}
+Dialogue: 0,0:51:36.84,0:51:38.69,ENG,,0,0,0,,We agreed we'd never use the portal\N{\rCHT}我們約定過 我們絕不啟用這個通道{\r}
+Dialogue: 0,0:51:38.82,0:51:40.72,ENG,,0,0,0,,unless the village was in danger.\N{\rCHT}除非村莊陷入危險之中{\r}
+Dialogue: 0,0:51:40.89,0:51:42.68,ENG,,0,0,0,,They will find out we have it and come.\N{\rCHT}他們會發現我們 然後到這來{\r}
+Dialogue: 0,0:51:42.85,0:51:46.02,ENG,,0,0,0,,We can't disobey a Gunslinger. It's the law.\N{\rCHT}我們不能違背槍俠的意志 他的意志即是律法{\r}
+Dialogue: 0,0:51:46.18,0:51:48.81,ENG,,0,0,0,,- How do you know what he is? - Arra.\N{\rCHT}- 你們又何從得知他的真實身份呢 - 艾拉{\r}
+Dialogue: 0,0:51:48.98,0:51:50.19,ENG,,0,0,0,,You must have read him.\N{\rCHT}你肯定對他用過靈知之力了{\r}
+Dialogue: 0,0:51:50.81,0:51:52.86,ENG,,0,0,0,,What do you see?\N{\rCHT}你看到了什麼{\r}
+Dialogue: 0,0:51:56.19,0:51:58.65,ENG,,0,0,0,,He's Roland of Gilead.\N{\rCHT}他是基列地的羅蘭{\r}
+Dialogue: 0,0:51:58.82,0:52:00.32,ENG,,0,0,0,,Last of the line of Eld.\N{\rCHT}他是艾德的最後一位後裔{\r}
+Dialogue: 0,0:52:05.87,0:52:09.25,ENG,,0,0,0,,But the Man in Black has his soul in his pocket...\N{\rCHT}但是他的靈魂在黑衣人的口袋裡{\r}
+Dialogue: 0,0:52:09.79,0:52:13.50,ENG,,0,0,0,,...and his heart's consumed by vengeance.\N{\rCHT}仇恨充斥著他的內心{\r}
+Dialogue: 0,0:52:14.34,0:52:15.92,ENG,,0,0,0,,He's not a Gunslinger.\N{\rCHT}他不是槍俠了{\r}
+Dialogue: 0,0:52:16.96,0:52:18.88,ENG,,0,0,0,,Not anymore.\N{\rCHT}不是以前的那個他了{\r}
+Dialogue: 0,0:52:20.59,0:52:22.14,ENG,,0,0,0,,Or would you tell us differently?\N{\rCHT}你有什麼想解釋的麼{\r}
+Dialogue: 0,0:52:24.10,0:52:26.18,ENG,,0,0,0,,Only a goat would lie to a seer.\N{\rCHT}只有山羊才會對預言家撒謊{\r}
+Dialogue: 0,0:52:26.35,0:52:28.43,ENG,,0,0,0,,You dishonor your ancestors.\N{\rCHT}你讓你的祖先背上駡名{\r}
+Dialogue: 0,0:52:28.60,0:52:30.89,ENG,,0,0,0,,The Gunslingers have sworn an oath to defend the Tower...\N{\rCHT}槍俠們曾發誓要保衛黑暗塔{\r}
+Dialogue: 0,0:52:31.06,0:52:32.73,ENG,,0,0,0,,Look around you.\N{\rCHT}看看你周圍的世界吧{\r}
+Dialogue: 0,0:52:34.02,0:52:35.44,ENG,,0,0,0,,The war is over, and we lost.\N{\rCHT}戰爭已經結束了 我們輸了{\r}
+Dialogue: 0,0:52:38.53,0:52:42.45,ENG,,0,0,0,,If you left your little haven, you would see that for yourself.\N{\rCHT}走出自己的世界 用眼睛看看吧{\r}
+Dialogue: 0,0:52:43.20,0:52:45.91,ENG,,0,0,0,,The darkness is everywhere...\N{\rCHT}到處都是黑暗{\r}
+Dialogue: 0,0:52:46.08,0:52:48.29,ENG,,0,0,0,,...and trying to fight against it accomplishes nothing.\N{\rCHT}反抗是徒勞無功的{\r}
+Dialogue: 0,0:52:50.29,0:52:53.46,ENG,,0,0,0,,I was fighting to defend the Tower before most of you were even born.\N{\rCHT}你們大多數人還沒有出生時 我就在為保護黑暗塔而戰了{\r}
+Dialogue: 0,0:52:54.38,0:52:55.88,ENG,,0,0,0,,There's always a battle.\N{\rCHT}我以前一直{\r}
+Dialogue: 0,0:52:56.04,0:52:57.59,ENG,,0,0,0,,Always.\N{\rCHT}為它而戰{\r}
+Dialogue: 0,0:52:58.05,0:52:59.26,ENG,,0,0,0,,But no more.\N{\rCHT}但我再也不會了{\r}
+Dialogue: 0,0:53:00.67,0:53:02.63,ENG,,0,0,0,,Isn't that why we're losing?\N{\rCHT}正是因為有你這樣的想法 我們才會輸{\r}
+Dialogue: 0,0:53:02.80,0:53:05.55,ENG,,0,0,0,,Because everyone stopped believing.\N{\rCHT}因為所有人都放棄了信仰{\r}
+Dialogue: 0,0:53:05.72,0:53:10.68,ENG,,0,0,0,,As long as the darkness is out there, the Tower will fall.\N{\rCHT}只要黑暗仍未消散 黑暗塔終會傾塌{\r}
+Dialogue: 0,0:53:11.35,0:53:14.44,ENG,,0,0,0,,And before that happens, I will get my revenge.\N{\rCHT}在那之前 我要復仇{\r}
+Dialogue: 0,0:53:33.00,0:53:34.08,ENG,,0,0,0,,Look.\N{\rCHT}我覺得{\r}
+Dialogue: 0,0:53:35.00,0:53:36.21,ENG,,0,0,0,,He saved my life.\N{\rCHT}他救了我的命{\r}
+Dialogue: 0,0:53:38.21,0:53:40.30,ENG,,0,0,0,,And he doesn't even like me that much.\N{\rCHT}儘管他不太喜歡我{\r}
+Dialogue: 0,0:53:43.26,0:53:44.88,ENG,,0,0,0,,He's still a Gunslinger.\N{\rCHT}他還是槍俠{\r}
+Dialogue: 0,0:53:45.93,0:53:47.93,ENG,,0,0,0,,I know he is.\N{\rCHT}我能感覺到的{\r}
+Dialogue: 0,0:53:51.47,0:53:53.68,ENG,,0,0,0,,Should be ready anytime now.\N{\rCHT}估計現在差不多準備好了{\r}
+Dialogue: 0,0:53:53.85,0:53:55.52,ENG,,0,0,0,,As soon as it aligns, it should open...\N{\rCHT}調准位置後 通道應該會通向{\r}
+Dialogue: 0,0:53:55.69,0:53:57.90,ENG,,0,0,0,,...in an unobstructed area in your city...\N{\rCHT}你的世界中的{\r}
+Dialogue: 0,0:53:58.06,0:54:00.02,ENG,,0,0,0,,...on your version of Earth.\N{\rCHT}一片開闊地上{\r}
+Dialogue: 0,0:54:00.19,0:54:01.48,ENG,,0,0,0,,"Should"?\N{\rCHT}"應該"？{\r}
+Dialogue: 0,0:54:01.65,0:54:03.11,ENG,,0,0,0,,Technology's very old.\N{\rCHT}這項技術已經很老了{\r}
+Dialogue: 0,0:54:03.28,0:54:05.86,ENG,,0,0,0,,Remember that number. It's your way back here.\N{\rCHT}記住那一串數字 若是要回到這裡就要靠它們了{\r}
+Dialogue: 0,0:54:06.32,0:54:07.45,ENG,,0,0,0,,Got it.\N{\rCHT}明白了{\r}
+Dialogue: 0,0:54:07.62,0:54:09.16,ENG,,0,0,0,,Been there.\N{\rCHT}我以前用過通道{\r}
+Dialogue: 0,0:54:14.87,0:54:15.92,ENG,,0,0,0,,Hey.\N{\rCHT}嘿{\r}
+Dialogue: 0,0:54:16.75,0:54:18.63,ENG,,0,0,0,,You Okay?\N{\rCHT}你沒事吧{\r}
+Dialogue: 0,0:54:24.22,0:54:25.63,ENG,,0,0,0,,What's wrong?\N{\rCHT}怎麼了{\r}
+Dialogue: 0,0:54:54.41,0:54:56.50,ENG,,0,0,0,,We're losing power.\N{\rCHT}沒能量了{\r}
+Dialogue: 0,0:55:00.38,0:55:02.42,ENG,,0,0,0,,Sir, they're in the village.\N{\rCHT}老大 他們進村子了{\r}
+Dialogue: 0,0:55:16.31,0:55:18.94,ENG,,0,0,0,,Oh, no. Paras.\N{\rCHT}法拉斯 唉{\r}
+Dialogue: 0,0:55:19.10,0:55:21.52,ENG,,0,0,0,,- Can you fix it? - We have spare parts in the village.\N{\rCHT}- 你能修好它麼 - 村子裡有備用零件{\r}
+Dialogue: 0,0:55:25.07,0:55:28.32,ENG,,0,0,0,,Jake, go find somewhere close to hide, understand?\N{\rCHT}傑克 去附近找個地方躲起來{\r}
+Dialogue: 0,0:55:28.82,0:55:29.86,ENG,,0,0,0,,Yeah.\N{\rCHT}好{\r}
+Dialogue: 0,0:55:46.46,0:55:47.55,ENG,,0,0,0,,Come on!\N{\rCHT}快跑{\r}
+Dialogue: 0,0:55:47.72,0:55:49.05,ENG,,0,0,0,,Get inside!\N{\rCHT}快躲進屋{\r}
+Dialogue: 0,0:55:49.22,0:55:51.80,ENG,,0,0,0,,- We need to go! Hurry! - Are you okay?\N{\rCHT}- 我們快走 快 - 你沒事吧{\r}
+Dialogue: 0,0:55:54.22,0:55:55.47,ENG,,0,0,0,,Go get weapons!\N{\rCHT}去拿武器{\r}
+Dialogue: 0,0:55:56.85,0:55:58.43,ENG,,0,0,0,,Which way?\N{\rCHT}走哪邊{\r}
+Dialogue: 0,0:55:58.60,0:56:00.44,ENG,,0,0,0,,In there.\N{\rCHT}就在那邊{\r}
+Dialogue: 0,0:56:01.52,0:56:02.81,ENG,,0,0,0,,He's there.\N{\rCHT}他就在那{\r}
+Dialogue: 0,0:56:04.44,0:56:05.78,ENG,,0,0,0,,He's hurt.\N{\rCHT}他受傷了{\r}
+Dialogue: 0,0:56:05.94,0:56:08.36,ENG,,0,0,0,,My child! Please!\N{\rCHT}我的孩子 求求你們了{\r}
+Dialogue: 0,0:56:10.15,0:56:12.32,ENG,,0,0,0,,His guns are forged from the steel...\N{\rCHT}他的槍由亞瑟·艾德本人的{\r}
+Dialogue: 0,0:56:12.49,0:56:14.87,ENG,,0,0,0,,...of the sword of Arthur Eld himself.\N{\rCHT}劍重鑄而成{\r}
+Dialogue: 0,0:56:17.50,0:56:19.83,ENG,,0,0,0,,I believe Keystoners call it Excalibur.\N{\rCHT}地球人把它稱作"誓約勝利之劍"{\r}
+Dialogue: 0,0:56:27.80,0:56:30.51,ENG,,0,0,0,,Please, just go!\N{\rCHT}你們快走吧{\r}
+Dialogue: 0,0:56:33.01,0:56:35.55,ENG,,0,0,0,,Just get help, please!\N{\rCHT}去找人幫忙吧{\r}
+Dialogue: 0,0:56:41.64,0:56:43.65,ENG,,0,0,0,,- We have to get out of here. - No, I've got to get them out!\N{\rCHT}- 我們不能待在這了 - 不 我得救他們出來{\r}
+Dialogue: 0,0:56:43.81,0:56:45.82,ENG,,0,0,0,,No, no, please, we have to go!\N{\rCHT}別管了 我們要逃命了{\r}
+Dialogue: 0,0:56:46.52,0:56:48.61,ENG,,0,0,0,,- Ahh! - Run.\N{\rCHT}- 啊 - 快跑{\r}
+Dialogue: 0,0:56:51.11,0:56:53.32,ENG,,0,0,0,,- Let's go! - Help!\N{\rCHT}- 我們走 - 救命{\r}
+Dialogue: 0,0:56:53.49,0:56:54.95,ENG,,0,0,0,,Go get the parts.\N{\rCHT}去拿零件{\r}
+Dialogue: 0,0:56:55.12,0:56:56.24,ENG,,0,0,0,,Dad!\N{\rCHT}爸爸{\r}
+Dialogue: 0,0:57:06.09,0:57:07.25,ENG,,0,0,0,,They were after our boy.\N{\rCHT}他們在追捕我們的兒子{\r}
+Dialogue: 0,0:57:07.42,0:57:08.84,ENG,,0,0,0,,Why would they want our boy?\N{\rCHT}為什麼他們要抓走我們的孩子{\r}
+Dialogue: 0,0:57:44.92,0:57:45.96,ENG,,0,0,0,,Right.\N{\rCHT}好{\r}
+Dialogue: 0,0:57:47.50,0:57:49.42,ENG,,0,0,0,,- Turn on the water pumps. - Right away, sir.\N{\rCHT}- 去把水泵打開 動作快點 - 馬上就去{\r}
+Dialogue: 0,0:57:49.59,0:57:51.21,ENG,,0,0,0,,- No! - Let's try to get them out!\N{\rCHT}- 不 - 我們想辦法把他們救出來{\r}
+Dialogue: 0,0:57:52.67,0:57:55.38,ENG,,0,0,0,,- Okay, I'll take care of you! - All right.\N{\rCHT}- 沒事了 我會保護你們的 - 沒事了{\r}
+Dialogue: 0,0:57:55.55,0:57:58.18,ENG,,0,0,0,,There you are. All right?\N{\rCHT}可算找到你了 沒事吧{\r}
+Dialogue: 0,0:57:58.35,0:57:59.93,ENG,,0,0,0,,Come this way.\N{\rCHT}跟我來{\r}
+Dialogue: 0,0:58:14.99,0:58:17.70,ENG,,0,0,0,,You couldn't save him, Roland.\N{\rCHT}你救不了他的 羅蘭{\r}
+Dialogue: 0,0:58:23.66,0:58:24.91,ENG,,0,0,0,,Sir, Shine.\N{\rCHT}長官 感應到靈力{\r}
+Dialogue: 0,0:58:25.08,0:58:26.79,ENG,,0,0,0,,That's the boy. Get him.\N{\rCHT}就是那個男孩 抓住他{\r}
+Dialogue: 0,0:58:32.80,0:58:34.22,ENG,,0,0,0,,Jake.\N{\rCHT}傑克{\r}
+Dialogue: 0,0:58:44.60,0:58:45.81,ENG,,0,0,0,,Jake.\N{\rCHT}傑克{\r}
+Dialogue: 0,0:58:45.98,0:58:48.65,ENG,,0,0,0,,- They're here for him. - I know.\N{\rCHT}- 他們是沖他來的 - 我知道{\r}
+Dialogue: 0,0:58:53.19,0:58:54.74,ENG,,0,0,0,,Roland.\N{\rCHT}羅蘭{\r}
+Dialogue: 0,0:58:55.57,0:58:58.20,ENG,,0,0,0,,- What are you doing? - Quiet.\N{\rCHT}- 你要幹什麼 - 別說話{\r}
+Dialogue: 0,0:59:26.81,0:59:30.35,ENG,,0,0,0,,Roland. Please. Help me, please.\N{\rCHT}羅蘭 快救救我 求求你{\r}
+Dialogue: 0,1:00:10.98,1:00:12.15,ENG,,0,0,0,,Let's go! Let's go!\N{\rCHT}快走 趕快{\r}
+Dialogue: 0,1:00:12.31,1:00:13.81,ENG,,0,0,0,,We need to leave.\N{\rCHT}我們得趕緊離開這兒{\r}
+Dialogue: 0,1:00:13.98,1:00:15.19,ENG,,0,0,0,,He's not safe here.\N{\rCHT}他在這裡不安全{\r}
+Dialogue: 0,1:00:15.36,1:00:18.03,ENG,,0,0,0,,And as long as he's here, you aren't either.\N{\rCHT}要是他不離開 你也會有生命危險{\r}
+Dialogue: 0,1:00:18.19,1:00:19.28,ENG,,0,0,0,,We have this fight.\N{\rCHT}我們來斷後{\r}
+Dialogue: 0,1:00:20.40,1:00:22.74,ENG,,0,0,0,,- Come on. - Go.\N{\rCHT}- 走吧 - 快{\r}
+Dialogue: 0,1:00:23.70,1:00:24.74,ENG,,0,0,0,,Jake.\N{\rCHT}傑克{\r}
+Dialogue: 0,1:00:24.91,1:00:27.20,ENG,,0,0,0,,Be careful using the Shine. They're tracking you.\N{\rCHT}用靈力時要注意 他們會追蹤你{\r}
+Dialogue: 0,1:00:29.87,1:00:31.58,ENG,,0,0,0,,Portal alignment complete.\N{\rCHT}傳送門準備就緒{\r}
+Dialogue: 0,1:00:31.75,1:00:33.00,ENG,,0,0,0,,Come on.\N{\rCHT}快{\r}
+Dialogue: 0,1:00:37.88,1:00:39.72,ENG,,0,0,0,,No, it's not ready yet.\N{\rCHT}不 還沒熟呢{\r}
+Dialogue: 0,1:00:51.06,1:00:52.69,ENG,,0,0,0,,- Knife. - He's a chef.\N{\rCHT}- 他有刀子 - 他只是個廚子{\r}
+Dialogue: 0,1:00:53.27,1:00:54.90,ENG,,0,0,0,,Come on.\N{\rCHT}走吧{\r}
+Dialogue: 0,1:01:05.53,1:01:07.95,ENG,,0,0,0,,So many people.\N{\rCHT}好多人啊{\r}
+Dialogue: 0,1:01:15.50,1:01:18.84,ENG,,0,0,0,,We need to get you help. Right now.\N{\rCHT}你需要治療 不能再耽誤了{\r}
+Dialogue: 0,1:01:26.10,1:01:27.60,ENG,,0,0,0,,They had a portal.\N{\rCHT}他們使用了通道{\r}
+Dialogue: 0,1:01:28.89,1:01:30.47,ENG,,0,0,0,,I think they're gone.\N{\rCHT}他們溜走了{\r}
+Dialogue: 0,1:01:47.03,1:01:48.91,ENG,,0,0,0,,Get me the coordinates.\N{\rCHT}把座標發給我{\r}
+Dialogue: 0,1:01:52.79,1:01:56.67,ENG,,0,0,0,,One last time around the wheel, old friend.\N{\rCHT}這是你們最後一次僥倖逃脫了 我的朋友{\r}
+Dialogue: 0,1:02:01.17,1:02:02.80,ENG,,0,0,0,,This is madness.\N{\rCHT}這太瘋狂了{\r}
+Dialogue: 0,1:02:02.97,1:02:05.47,ENG,,0,0,0,,You can't walk into a hospital here carrying guns.\N{\rCHT}你不能揣著槍進醫院的{\r}
+Dialogue: 0,1:02:05.63,1:02:07.80,ENG,,0,0,0,,Trust me. Come on.\N{\rCHT}相信我 來吧{\r}
+Dialogue: 0,1:02:10.76,1:02:12.98,ENG,,0,0,0,,Let me do all the talking.\N{\rCHT}我來負責交談{\r}
+Dialogue: 0,1:02:16.44,1:02:18.27,ENG,,0,0,0,,Hi. You've reached Laurie, Lon and Jake.\N{\rCHT}你好 這裡是勞麗 朗和傑克的家{\r}
+Dialogue: 0,1:02:18.44,1:02:19.77,ENG,,0,0,0,,Please leave a detailed message...\N{\rCHT}請留下你的口信{\r}
+Dialogue: 0,1:02:19.94,1:02:22.61,ENG,,0,0,0,,...and we'll get back to you as soon as possible.\N{\rCHT}我們會儘快回復你{\r}
+Dialogue: 0,1:02:22.78,1:02:24.57,ENG,,0,0,0,,This is awful. Try it.\N{\rCHT}真糟糕 試試看{\r}
+Dialogue: 0,1:02:24.74,1:02:27.28,ENG,,0,0,0,,- That looks gross. What is it? - You got to try it. It's terrible.\N{\rCHT}- 這是啥啊 看著真噁心 - 是很糟心 但你還是得試試{\r}
+Dialogue: 0,1:02:27.45,1:02:30.28,ENG,,0,0,0,,- I don't want to try it if it's terrible. - It's like mango...\N{\rCHT}- 糟心的話 我壓根兒就不想試 - 好像是個芒果{\r}
+Dialogue: 0,1:02:30.45,1:02:33.16,ENG,,0,0,0,,Do the animals here still speak?\N{\rCHT}現在這裡的動物還能說話嗎{\r}
+Dialogue: 0,1:02:33.33,1:02:36.37,ENG,,0,0,0,,What? No, that's a commercial.\N{\rCHT}啥 不會 那只是支廣告{\r}
+Dialogue: 0,1:02:40.25,1:02:42.09,ENG,,0,0,0,,Wait, what do you mean by "still"?\N{\rCHT}等下 你說"還"是什麼意思{\r}
+Dialogue: 0,1:02:42.25,1:02:44.01,ENG,,0,0,0,,He's in here.\N{\rCHT}他在這兒{\r}
+Dialogue: 0,1:02:44.17,1:02:45.42,ENG,,0,0,0,,Mr. Deschain.\N{\rCHT}德斯欽先生{\r}
+Dialogue: 0,1:02:46.43,1:02:48.34,ENG,,0,0,0,,I see the antibiotics are kicking in.\N{\rCHT}我們給你注射了抗生素{\r}
+Dialogue: 0,1:02:48.51,1:02:51.43,ENG,,0,0,0,,On a scale of one to 10, how bad is your pain?\N{\rCHT}按一到十的等級劃分 你的疼痛屬於幾級{\r}
+Dialogue: 0,1:02:53.35,1:02:54.77,ENG,,0,0,0,,Okay.\N{\rCHT}好吧{\r}
+Dialogue: 0,1:02:54.93,1:02:57.31,ENG,,0,0,0,,You were in very bad shape.\N{\rCHT}你的情況看上去很糟糕{\r}
+Dialogue: 0,1:02:57.48,1:02:59.27,ENG,,0,0,0,,I'm surprised you're even sitting up.\N{\rCHT}你還能坐起身 我感到很意外{\r}
+Dialogue: 0,1:02:59.44,1:03:00.90,ENG,,0,0,0,,I'm stronger than most.\N{\rCHT}我比大多數人都要強壯{\r}
+Dialogue: 0,1:03:02.90,1:03:04.40,ENG,,0,0,0,,We get that sentiment a lot.\N{\rCHT}看得出來{\r}
+Dialogue: 0,1:03:04.57,1:03:07.49,ENG,,0,0,0,,So aside from your infection and the wound from the...\N{\rCHT}那麼除了感染和在化裝舞會事故中{\r}
+Dialogue: 0,1:03:07.65,1:03:09.66,ENG,,0,0,0,,...costume-party incident...\N{\rCHT}受的傷外{\r}
+Dialogue: 0,1:03:09.82,1:03:14.16,ENG,,0,0,0,,...we also found traces of hepatitis A, B, E, and...\N{\rCHT}我們還發現了甲型 乙型和戊型肝炎的跡象{\r}
+Dialogue: 0,1:03:16.25,1:03:18.37,ENG,,0,0,0,,...chronic radiation sickness.\N{\rCHT}還有慢性輻射病{\r}
+Dialogue: 0,1:03:20.50,1:03:23.05,ENG,,0,0,0,,Have you traveled overseas in the past couple of months?\N{\rCHT}過去幾個月中 你有出國旅遊嗎{\r}
+Dialogue: 0,1:03:28.34,1:03:31.85,ENG,,0,0,0,,No. I've been here on Keystone Earth.\N{\rCHT}沒有 我一直都待在地球{\r}
+Dialogue: 0,1:03:35.47,1:03:36.85,ENG,,0,0,0,,So am I cured or not?\N{\rCHT}那你們到底能不能治好我{\r}
+Dialogue: 0,1:03:37.02,1:03:39.14,ENG,,0,0,0,,We're going to keep you here for the night to monitor your progress.\N{\rCHT}你得在醫院呆一晚好讓我們監測你的情況{\r}
+Dialogue: 0,1:03:39.31,1:03:41.69,ENG,,0,0,0,,Maybe tomorrow afternoon... What are you doing? No.\N{\rCHT}也許明天下午 你幹什麼 不行{\r}
+Dialogue: 0,1:03:41.86,1:03:43.52,ENG,,0,0,0,,- I can't stay here. - You need to get back on that.\N{\rCHT}- 我不能留在這兒 - 你得躺回病床上{\r}
+Dialogue: 0,1:03:43.69,1:03:45.53,ENG,,0,0,0,,- Mr. Deschain, you need... - For your services.\N{\rCHT}- 德斯欽先生 你得 - 謝謝你的檢查{\r}
+Dialogue: 0,1:03:45.69,1:03:47.53,ENG,,0,0,0,,- Wait, what? - May your days be long.\N{\rCHT}- 什麼 等會兒 - 好人一生平安{\r}
+Dialogue: 0,1:03:47.69,1:03:49.28,ENG,,0,0,0,,But you need to get back on that.\N{\rCHT}但你得回到病床上{\r}
+Dialogue: 0,1:03:49.45,1:03:50.99,ENG,,0,0,0,,- Mr. Deschain? - Bring my guns.\N{\rCHT}- 德斯欽先生 - 把我的槍帶上{\r}
+Dialogue: 0,1:03:52.78,1:03:54.66,ENG,,0,0,0,,These are painkillers and vitamins.\N{\rCHT}這是些止痛藥和維他命{\r}
+Dialogue: 0,1:03:56.91,1:03:59.75,ENG,,0,0,0,,You only want to take one or two at a...\N{\rCHT}你一次只用吃一到兩{\r}
+Dialogue: 0,1:04:00.79,1:04:03.25,ENG,,0,0,0,,...time. Hey, cutie.\N{\rCHT}片 嘿 小可愛{\r}
+Dialogue: 0,1:04:03.42,1:04:04.75,ENG,,0,0,0,,Can we join the party?\N{\rCHT}能給我們也來點兒嗎{\r}
+Dialogue: 0,1:04:06.46,1:04:09.38,ENG,,0,0,0,,You have both forgotten the faces of your fathers.\N{\rCHT}我看你倆是三天不打 上房揭瓦{\r}
+Dialogue: 0,1:04:11.51,1:04:13.51,ENG,,0,0,0,,You probably shouldn't talk to people here.\N{\rCHT}我想你還是不要跟這裡的人說話了{\r}
+Dialogue: 0,1:04:23.77,1:04:25.44,ENG,,0,0,0,,What is this?\N{\rCHT}這是啥{\r}
+Dialogue: 0,1:04:26.11,1:04:27.15,ENG,,0,0,0,,Sugar.\N{\rCHT}糖{\r}
+Dialogue: 0,1:04:28.94,1:04:32.11,ENG,,0,0,0,,How we gonna find the portal? New York's a pretty big place.\N{\rCHT}我們要怎麼找到傳送門 紐約可不是個小地方{\r}
+Dialogue: 0,1:04:32.28,1:04:33.49,ENG,,0,0,0,,I don't know.\N{\rCHT}不知道{\r}
+Dialogue: 0,1:04:33.66,1:04:37.20,ENG,,0,0,0,,I just can't let Walter know how I'm coming for him.\N{\rCHT}我也不能讓沃特知道我是如何找到他的{\r}
+Dialogue: 0,1:04:45.84,1:04:47.67,ENG,,0,0,0,,I've got an idea.\N{\rCHT}我有個主意{\r}
+Dialogue: 0,1:04:50.67,1:04:53.93,ENG,,0,0,0,,These painkillers work fast.\N{\rCHT}那些止痛藥見效真快{\r}
+Dialogue: 0,1:04:54.09,1:04:56.05,ENG,,0,0,0,,I haven't felt this good in years.\N{\rCHT}好久都沒感覺這麼爽了{\r}
+Dialogue: 0,1:04:56.22,1:04:57.97,ENG,,0,0,0,,Yeah, we got the good stuff.\N{\rCHT}是啊 我們拿到寶了{\r}
+Dialogue: 0,1:04:58.35,1:05:01.10,ENG,,0,0,0,,Got any more of that sugar?\N{\rCHT}那種糖還有嗎{\r}
+Dialogue: 0,1:05:02.44,1:05:04.27,ENG,,0,0,0,,There's nothing to be scared of.\N{\rCHT}在這裡你不用害怕{\r}
+Dialogue: 0,1:05:04.65,1:05:07.07,ENG,,0,0,0,,I promise you, whatever happens...\N{\rCHT}我向你保證 不管發生什麼{\r}
+Dialogue: 0,1:05:07.23,1:05:09.23,ENG,,0,0,0,,...you'll be at peace.\N{\rCHT}你都會安然無恙的{\r}
+Dialogue: 0,1:05:09.40,1:05:12.40,ENG,,0,0,0,,- You'll be... - A seer who lies.\N{\rCHT}- 安然無恙 - 預言家所撒得謊{\r}
+Dialogue: 0,1:05:14.57,1:05:15.66,ENG,,0,0,0,,The worst kind.\N{\rCHT}最為致命{\r}
+Dialogue: 0,1:05:17.83,1:05:20.04,ENG,,0,0,0,,I like you already.\N{\rCHT}我開始喜歡你了{\r}
+Dialogue: 0,1:05:21.33,1:05:22.92,ENG,,0,0,0,,Come now.\N{\rCHT}那麼現在{\r}
+Dialogue: 0,1:05:24.58,1:05:25.75,ENG,,0,0,0,,Good bye.\N{\rCHT}永別了{\r}
+Dialogue: 0,1:05:27.84,1:05:29.21,ENG,,0,0,0,,Talk.\N{\rCHT}告訴我{\r}
+Dialogue: 0,1:05:31.26,1:05:32.80,ENG,,0,0,0,,Shh.\N{\rCHT}噓{\r}
+Dialogue: 0,1:05:33.43,1:05:37.05,ENG,,0,0,0,,Don't fight it. Where did he take the boy?\N{\rCHT}不要反抗 他把那孩子帶去哪兒了{\r}
+Dialogue: 0,1:05:38.76,1:05:39.81,ENG,,0,0,0,,Jake?\N{\rCHT}傑克{\r}
+Dialogue: 0,1:05:39.97,1:05:42.02,ENG,,0,0,0,,Chambers, yes. Where?\N{\rCHT}傑克·錢伯斯 是的 他在哪兒{\r}
+Dialogue: 0,1:05:47.02,1:05:50.69,ENG,,0,0,0,,- Key... Key... - Keystone Earth.\N{\rCHT}- 地 地 - 地球{\r}
+Dialogue: 0,1:05:50.86,1:05:51.90,ENG,,0,0,0,,Thank you.\N{\rCHT}謝謝了{\r}
+Dialogue: 0,1:06:01.87,1:06:04.04,ENG,,0,0,0,,Hey, remember me?\N{\rCHT}嘿 還記得我嗎{\r}
+Dialogue: 0,1:06:07.50,1:06:09.46,ENG,,0,0,0,,You said they were crossing over kids.\N{\rCHT}你提醒過我 說他們正在劫走兒童{\r}
+Dialogue: 0,1:06:11.17,1:06:12.76,ENG,,0,0,0,,You were one of them, weren't you?\N{\rCHT}你是他們中的一員吧{\r}
+Dialogue: 0,1:06:13.59,1:06:16.47,ENG,,0,0,0,,I lost it. The Shine.\N{\rCHT}我丟失了靈力{\r}
+Dialogue: 0,1:06:17.59,1:06:18.85,ENG,,0,0,0,,Which way did they take you through?\N{\rCHT}他們帶你走的哪條路{\r}
+Dialogue: 0,1:06:19.01,1:06:21.89,ENG,,0,0,0,,- No, no, you have to run. - Do you remember? A portal, a door.\N{\rCHT}- 不 不 你得趕緊逃跑 - 你還記得嗎 哪個傳送門 在哪裡{\r}
+Dialogue: 0,1:06:22.06,1:06:23.93,ENG,,0,0,0,,- Anything, please. - it's almost over.\N{\rCHT}- 任何線索都行 - 要結束了{\r}
+Dialogue: 0,1:06:24.10,1:06:25.31,ENG,,0,0,0,,It's almost over.\N{\rCHT}一切都要結束了{\r}
+Dialogue: 0,1:06:25.48,1:06:27.27,ENG,,0,0,0,,It's almost over. It's almost over.\N{\rCHT}都要結束了 都要結束了{\r}
+Dialogue: 0,1:06:27.44,1:06:29.90,ENG,,0,0,0,,Can you hear me?\N{\rCHT}聽到了嗎{\r}
+Dialogue: 0,1:06:30.07,1:06:31.86,ENG,,0,0,0,,Remember. Show me.\N{\rCHT}記住 展示給我看看{\r}
+Dialogue: 0,1:06:35.53,1:06:36.57,ENG,,0,0,0,,Dixie.\N{\rCHT}迪克西酒吧{\r}
+Dialogue: 0,1:06:36.74,1:06:37.99,ENG,,0,0,0,,Jake!\N{\rCHT}傑克{\r}
+Dialogue: 0,1:06:39.16,1:06:40.87,ENG,,0,0,0,,Jake!\N{\rCHT}傑克{\r}
+Dialogue: 0,1:06:42.04,1:06:44.16,ENG,,0,0,0,,They can track the Shine.\N{\rCHT}他們能追蹤到靈力{\r}
+Dialogue: 0,1:06:44.33,1:06:45.87,ENG,,0,0,0,,Okay?\N{\rCHT}明白嗎{\r}
+Dialogue: 0,1:06:48.92,1:06:51.29,ENG,,0,0,0,,I know what you are.\N{\rCHT}我知道你是誰{\r}
+Dialogue: 0,1:06:52.63,1:06:54.59,ENG,,0,0,0,,Gunslinger.\N{\rCHT}槍俠{\r}
+Dialogue: 0,1:06:55.67,1:06:57.34,ENG,,0,0,0,,Go.\N{\rCHT}你走吧{\r}
+Dialogue: 0,1:07:02.39,1:07:05.56,ENG,,0,0,0,,Should have enough to find it. Got to get home and do some research.\N{\rCHT}線索應該足以讓我們找到傳送門了 只需回家再調查一下{\r}
+Dialogue: 0,1:07:05.73,1:07:09.15,ENG,,0,0,0,,- Your home? - Yeah, I got to let my morn know I'm okay.\N{\rCHT}- 回你家嗎 - 是的 我得讓媽媽知道我平安無事{\r}
+Dialogue: 0,1:07:09.86,1:07:11.86,ENG,,0,0,0,,We have trackers spread throughout the city.\N{\rCHT}我們的追蹤者遍佈全城{\r}
+Dialogue: 0,1:07:12.02,1:07:13.57,ENG,,0,0,0,,There's no trace of him yet, sir.\N{\rCHT}目前尚未發現他們的行蹤{\r}
+Dialogue: 0,1:07:13.73,1:07:15.86,ENG,,0,0,0,,Couple of small spikes, but not enough to hone in on.\N{\rCHT}已經盡其所能 但仍是心有餘而力不足{\r}
+Dialogue: 0,1:07:16.03,1:07:17.24,ENG,,0,0,0,,Don't you worry, Dicky-boy.\N{\rCHT}別擔心 夥計{\r}
+Dialogue: 0,1:07:17.40,1:07:19.11,ENG,,0,0,0,,- I've got you covered. - Sir?\N{\rCHT}- 我是來幫你們的 - 長官{\r}
+Dialogue: 0,1:07:19.28,1:07:22.45,ENG,,0,0,0,,I left a surprise for our little friend. Just be ready.\N{\rCHT}我給我們的朋友準備了個大驚喜 你隨時待命{\r}
+Dialogue: 0,1:07:22.62,1:07:25.37,ENG,,0,0,0,,- You should probably wait here. - Dude.\N{\rCHT}- 你就在這兒等著吧 - 哥們兒{\r}
+Dialogue: 0,1:07:25.54,1:07:27.62,ENG,,0,0,0,,- Where the hell have you been? - Timmy. Um...\N{\rCHT}- 你最近跑哪兒去了 - 蒂米 呃{\r}
+Dialogue: 0,1:07:27.79,1:07:28.92,ENG,,0,0,0,,Who's that?\N{\rCHT}這位是誰{\r}
+Dialogue: 0,1:07:30.42,1:07:31.71,ENG,,0,0,0,,I'll tell you later.\N{\rCHT}我待會再告訴你{\r}
+Dialogue: 0,1:07:31.88,1:07:34.30,ENG,,0,0,0,,How's Morn and Lon? They must be freaking out.\N{\rCHT}媽媽和朗怎麼樣 他們肯定急瘋了{\r}
+Dialogue: 0,1:07:34.59,1:07:36.38,ENG,,0,0,0,,They haven't been home since yesterday.\N{\rCHT}他們昨天就一直沒回家{\r}
+Dialogue: 0,1:07:39.34,1:07:40.89,ENG,,0,0,0,,Mom. Mom.\N{\rCHT}媽媽 媽媽{\r}
+Dialogue: 0,1:07:51.56,1:07:52.61,ENG,,0,0,0,,- Mom? - Jake.\N{\rCHT}- 媽媽 - 傑克{\r}
+Dialogue: 0,1:07:52.77,1:07:54.07,ENG,,0,0,0,,- Mom? Mom! Morn! - Jake!\N{\rCHT}- 媽媽 媽媽 媽媽 - 傑克{\r}
+Dialogue: 0,1:07:57.82,1:07:59.28,ENG,,0,0,0,,No.\N{\rCHT}不{\r}
+Dialogue: 0,1:07:59.74,1:08:00.78,ENG,,0,0,0,,No, no.\N{\rCHT}不 不{\r}
+Dialogue: 0,1:08:00.95,1:08:04.74,ENG,,0,0,0,,No, no. No, no, no.\N{\rCHT}不 不 不{\r}
+Dialogue: 0,1:08:05.79,1:08:07.12,ENG,,0,0,0,,No,no,no.\N{\rCHT}不 不 不{\r}
+Dialogue: 0,1:08:07.79,1:08:09.62,ENG,,0,0,0,,No, Mom. No, no, no.\N{\rCHT}不要 媽媽 不{\r}
+Dialogue: 0,1:08:11.12,1:08:12.46,ENG,,0,0,0,,No, no, Mom.\N{\rCHT}不 不 媽媽{\r}
+Dialogue: 0,1:08:21.09,1:08:22.51,ENG,,0,0,0,,No.\N{\rCHT}不{\r}
+Dialogue: 0,1:08:23.55,1:08:25.14,ENG,,0,0,0,,No, no, Mom.\N{\rCHT}不 不 媽媽{\r}
+Dialogue: 0,1:08:25.31,1:08:26.60,ENG,,0,0,0,,- Drawings. - Mom.\N{\rCHT}- 什麼畫 - 媽媽{\r}
+Dialogue: 0,1:08:26.77,1:08:27.93,ENG,,0,0,0,,I'll make it quick.\N{\rCHT}不會讓你太痛苦的{\r}
+Dialogue: 0,1:08:28.81,1:08:29.85,ENG,,0,0,0,,Jake!\N{\rCHT}傑克{\r}
+Dialogue: 0,1:08:33.19,1:08:34.52,ENG,,0,0,0,,No.\N{\rCHT}不{\r}
+Dialogue: 0,1:08:34.69,1:08:35.98,ENG,,0,0,0,,No, Jake.\N{\rCHT}別這樣 傑克{\r}
+Dialogue: 0,1:08:36.36,1:08:38.24,ENG,,0,0,0,,- Don't see it. - Mom.\N{\rCHT}- 別去看了 - 媽媽{\r}
+Dialogue: 0,1:08:38.40,1:08:40.61,ENG,,0,0,0,,It's what he wants.\N{\rCHT}這是他的圈套{\r}
+Dialogue: 0,1:08:41.40,1:08:44.32,ENG,,0,0,0,,- He's tracking you. - She's dead.\N{\rCHT}- 他要追蹤你 - 她去世了{\r}
+Dialogue: 0,1:08:44.49,1:08:45.62,ENG,,0,0,0,,Close your mind.\N{\rCHT}別想那些{\r}
+Dialogue: 0,1:08:46.45,1:08:49.25,ENG,,0,0,0,,Close your mind. Let the pain run through you, Jake.\N{\rCHT}別想那些 摒棄痛苦 傑克{\r}
+Dialogue: 0,1:08:50.37,1:08:51.41,ENG,,0,0,0,,He killed her.\N{\rCHT}他殺了她{\r}
+Dialogue: 0,1:08:52.17,1:08:54.25,ENG,,0,0,0,,- I know. I know. - He killed her.\N{\rCHT}- 我知道 我知道 - 他殺了她{\r}
+Dialogue: 0,1:08:58.59,1:09:00.09,ENG,,0,0,0,,Come here.\N{\rCHT}過來{\r}
+Dialogue: 0,1:09:30.66,1:09:32.87,ENG,,0,0,0,,I will kill him.\N{\rCHT}我會殺了他{\r}
+Dialogue: 0,1:09:34.46,1:09:35.71,ENG,,0,0,0,,For both of us.\N{\rCHT}為我倆報仇{\r}
+Dialogue: 0,1:09:43.51,1:09:45.64,ENG,,0,0,0,,What about the Tower?\N{\rCHT}那黑暗塔怎麼辦{\r}
+Dialogue: 0,1:09:51.06,1:09:54.77,ENG,,0,0,0,,My mom died so you could have your revenge?\N{\rCHT}我媽媽也死了 你卻一心只想著報仇{\r}
+Dialogue: 0,1:09:59.02,1:10:01.69,ENG,,0,0,0,,Maybe your world is almost gone, but mine isn't.\N{\rCHT}也許你的世界已經岌岌可危 但是我的世界還有希望{\r}
+Dialogue: 0,1:10:01.86,1:10:04.65,ENG,,0,0,0,,You said it yourself, as long as the darkness is out there...\N{\rCHT}你說過的 只要黑暗仍未消散{\r}
+Dialogue: 0,1:10:04.82,1:10:07.32,ENG,,0,0,0,,...the Tower's always in danger.\N{\rCHT}這座塔將一直處於危險之中{\r}
+Dialogue: 0,1:10:11.08,1:10:13.12,ENG,,0,0,0,,You know, they were right.\N{\rCHT}我覺得 他們說得對{\r}
+Dialogue: 0,1:10:16.08,1:10:18.25,ENG,,0,0,0,,You're not a Gunslinger.\N{\rCHT}你不是一個稱職的槍俠{\r}
+Dialogue: 0,1:10:23.01,1:10:24.05,ENG,,0,0,0,,Here.\N{\rCHT}看這兒{\r}
+Dialogue: 0,1:10:24.22,1:10:26.47,ENG,,0,0,0,,It's called the Dixie Pig.\N{\rCHT}這個通道入口在一個叫做迪格西皮格的酒吧裡{\r}
+Dialogue: 0,1:10:26.76,1:10:28.26,ENG,,0,0,0,,It's on Plymouth and Pearl.\N{\rCHT}在普利茅斯和珍珠路的交界處{\r}
+Dialogue: 0,1:10:44.19,1:10:46.28,ENG,,0,0,0,,When I was younger...\N{\rCHT}我年輕的時候{\r}
+Dialogue: 0,1:10:48.11,1:10:50.87,ENG,,0,0,0,,...I would recite the Gunslinger's Creed.\N{\rCHT}我會背誦槍俠的信條{\r}
+Dialogue: 0,1:10:53.54,1:10:56.00,ENG,,0,0,0,,It calms the heart and the mind.\N{\rCHT}它能使思緒平靜下來{\r}
+Dialogue: 0,1:10:57.71,1:11:00.17,ENG,,0,0,0,,I haven't spoken it for years.\N{\rCHT}我已經很多年沒背過了{\r}
+Dialogue: 0,1:11:23.48,1:11:26.03,ENG,,0,0,0,,I do not aim with my hand.\N{\rCHT}槍准不在於雙手{\r}
+Dialogue: 0,1:11:26.19,1:11:30.24,ENG,,0,0,0,,He who aims with his hand has forgotten the face of his father.\N{\rCHT}違此者 忘祖也{\r}
+Dialogue: 0,1:11:31.74,1:11:33.24,ENG,,0,0,0,,I aim with my eye.\N{\rCHT}槍准在於雙眼{\r}
+Dialogue: 0,1:11:36.41,1:11:39.00,ENG,,0,0,0,,I do not shoot with my hand.\N{\rCHT}槍准不在於雙手{\r}
+Dialogue: 0,1:11:39.17,1:11:43.13,ENG,,0,0,0,,He who shoots with his hand has forgotten the face of his father.\N{\rCHT}違此者 忘祖也{\r}
+Dialogue: 0,1:11:43.30,1:11:45.30,ENG,,0,0,0,,I shoot with my mind.\N{\rCHT}槍准在於頭腦{\r}
+Dialogue: 0,1:11:58.27,1:12:00.23,ENG,,0,0,0,,I do not kill with my gun.\N{\rCHT}槍准不在於所用之槍{\r}
+Dialogue: 0,1:12:00.40,1:12:03.90,ENG,,0,0,0,,BOTH [IN UNISON] He who kills with his gun has forgotten the face of his father.\N{\rCHT}違此者 忘祖也{\r}
+Dialogue: 0,1:12:04.36,1:12:06.32,ENG,,0,0,0,,Not while the Tower still stands.\N{\rCHT}槍俠不倒{\r}
+Dialogue: 0,1:12:06.48,1:12:07.69,ENG,,0,0,0,,Not while you still stand.\N{\rCHT}塔就不倒{\r}
+Dialogue: 0,1:12:07.86,1:12:09.99,ENG,,0,0,0,,- I kill With my heart. - I kill With my heart.\N{\rCHT}槍准在於我的心{\r}
+Dialogue: 0,1:12:20.12,1:12:21.96,ENG,,0,0,0,,That's good.\N{\rCHT}很好{\r}
+Dialogue: 0,1:12:22.79,1:12:24.59,ENG,,0,0,0,,Your Shine is your weapon, Jake.\N{\rCHT}你的靈力就是你的武器 傑克{\r}
+Dialogue: 0,1:12:27.13,1:12:29.13,ENG,,0,0,0,,Guns are mine.\N{\rCHT}槍是我的武器{\r}
+Dialogue: 0,1:12:45.61,1:12:47.78,ENG,,0,0,0,,Can I help you fellas?\N{\rCHT}有什麼需要幫忙的麼{\r}
+Dialogue: 0,1:12:48.65,1:12:50.78,ENG,,0,0,0,,- Hey. - Forty - five - caliber bullets.\N{\rCHT}- 嘿 - 45口徑子彈{\r}
+Dialogue: 0,1:12:50.99,1:12:52.03,ENG,,0,0,0,,Uh...\N{\rCHT}呃{\r}
+Dialogue: 0,1:12:52.24,1:12:54.49,ENG,,0,0,0,,- I only have... - We'll take them all.\N{\rCHT}- 我只有 - 我們全部帶走{\r}
+Dialogue: 0,1:12:54.66,1:12:56.53,ENG,,0,0,0,,Just do what he says. He won't hurt you.\N{\rCHT}按他說的做 他不會傷害你的{\r}
+Dialogue: 0,1:12:56.70,1:12:57.95,ENG,,0,0,0,,I don't want any trouble.\N{\rCHT}我不想惹上什麼麻煩{\r}
+Dialogue: 0,1:12:58.62,1:13:00.29,ENG,,0,0,0,,Well, then you're smarter than most.\N{\rCHT}那好 你比大多數人都聰明的多{\r}
+Dialogue: 0,1:13:00.66,1:13:01.96,ENG,,0,0,0,,Hurry up...\N{\rCHT}快點{\r}
+Dialogue: 0,1:13:13.39,1:13:15.35,ENG,,0,0,0,,All right, let's get you somewhere safe.\N{\rCHT}走吧 帶你去個安全的地方{\r}
+Dialogue: 0,1:13:16.22,1:13:17.85,ENG,,0,0,0,,Gunslinger.\N{\rCHT}槍俠{\r}
+Dialogue: 0,1:13:20.77,1:13:22.39,ENG,,0,0,0,,Did you miss me?\N{\rCHT}你想我了嗎{\r}
+Dialogue: 0,1:13:26.31,1:13:27.73,ENG,,0,0,0,,Well, I guess you did.\N{\rCHT}我覺得 你肯定想我了{\r}
+Dialogue: 0,1:13:27.90,1:13:29.69,ENG,,0,0,0,,Roland! Roland, Roland.\N{\rCHT}羅蘭 羅蘭 羅蘭{\r}
+Dialogue: 0,1:13:29.86,1:13:31.11,ENG,,0,0,0,,Jake, run.\N{\rCHT}傑克 快跑{\r}
+Dialogue: 0,1:13:31.69,1:13:32.74,ENG,,0,0,0,,Run!\N{\rCHT}快跑{\r}
+Dialogue: 0,1:13:42.29,1:13:46.13,ENG,,0,0,0,,I see you finally found a compass, yet you still came to me.\N{\rCHT}我猜你找到了指南針的話 肯定還會來找我的{\r}
+Dialogue: 0,1:13:47.00,1:13:49.05,ENG,,0,0,0,,Because I'm your only destination, Roland.\N{\rCHT}因為我才是你唯一的 目標 羅蘭{\r}
+Dialogue: 0,1:13:51.21,1:13:52.55,ENG,,0,0,0,,Fire away.\N{\rCHT}開火{\r}
+Dialogue: 0,1:13:54.55,1:13:56.47,ENG,,0,0,0,,It's not me. I'm not doing this.\N{\rCHT}這不是我 我控制不住自己{\r}
+Dialogue: 0,1:13:59.81,1:14:01.68,ENG,,0,0,0,,First, you want to save the Tower.\N{\rCHT}首先 你想保住黑暗塔{\r}
+Dialogue: 0,1:14:03.14,1:14:04.85,ENG,,0,0,0,,Then, kill the Man in Black.\N{\rCHT}然後 你想殺掉黑衣人{\r}
+Dialogue: 0,1:14:09.23,1:14:12.40,ENG,,0,0,0,,You are like a dog fetching a stick over and over.\N{\rCHT}你就像狗一樣 反反復複的把扔出去的棍子叼回來{\r}
+Dialogue: 0,1:14:12.57,1:14:15.07,ENG,,0,0,0,,You tell the kid what happened to the old crew?\N{\rCHT}你有沒有告訴那個孩子老一代槍俠是怎麼死的{\r}
+Dialogue: 0,1:14:15.24,1:14:18.74,ENG,,0,0,0,,You tell him that everyone that walks with you dies by my hand?\N{\rCHT}你有沒有告訴他 每個在你身邊的人都死在了我的手裡嗎{\r}
+Dialogue: 0,1:14:18.91,1:14:20.16,ENG,,0,0,0,,Not this time.\N{\rCHT}這次不會了{\r}
+Dialogue: 0,1:14:20.33,1:14:22.12,ENG,,0,0,0,,Your soft-skinned mother?\N{\rCHT}你的媽媽 皮膚軟軟的喲{\r}
+Dialogue: 0,1:14:22.29,1:14:24.21,ENG,,0,0,0,,- Your Gunslinger friends? - Face me.\N{\rCHT}- 還有你的槍俠朋友們 - 跟我當面對峙啊{\r}
+Dialogue: 0,1:14:24.37,1:14:25.96,ENG,,0,0,0,,Your whimpering excuse for a dad.\N{\rCHT}你在你那垂死的老父親面前哭嚎著{\r}
+Dialogue: 0,1:14:26.12,1:14:29.59,ENG,,0,0,0,,Stop hiding behind your magic and face me, Walter!\N{\rCHT}別天天擺弄你的魔法了 沃爾特 出來跟我當面對峙啊{\r}
+Dialogue: 0,1:14:31.50,1:14:34.47,ENG,,0,0,0,,We both know that no matter who crosses the finish line first...\N{\rCHT}我們都知道我們倆無論誰先死{\r}
+Dialogue: 0,1:14:34.63,1:14:37.64,ENG,,0,0,0,,...the universe will die out eventually.\N{\rCHT}宇宙終將消亡的{\r}
+Dialogue: 0,1:14:38.14,1:14:40.39,ENG,,0,0,0,,Death always wins.\N{\rCHT}死亡才是勝者{\r}
+Dialogue: 0,1:14:40.56,1:14:42.27,ENG,,0,0,0,,That's the deal.\N{\rCHT}就是如此{\r}
+Dialogue: 0,1:14:50.65,1:14:52.36,ENG,,0,0,0,,No, no.\N{\rCHT}不 不{\r}
+Dialogue: 0,1:14:54.94,1:14:55.99,ENG,,0,0,0,,Roland.\N{\rCHT}羅蘭{\r}
+Dialogue: 0,1:14:56.82,1:14:58.49,ENG,,0,0,0,,Roland.\N{\rCHT}羅蘭{\r}
+Dialogue: 0,1:15:20.14,1:15:22.56,ENG,,0,0,0,,Yeah!\N{\rCHT}耶{\r}
+Dialogue: 0,1:15:30.10,1:15:33.02,ENG,,0,0,0,,Jake Chambers.\N{\rCHT}傑克·錢伯斯{\r}
+Dialogue: 0,1:15:40.49,1:15:45.04,ENG,,0,0,0,,You are the full package, as advertised.\N{\rCHT}正如傳言的那樣 你這孩子天賦異稟啊{\r}
+Dialogue: 0,1:15:47.37,1:15:49.83,ENG,,0,0,0,,Sayre, get ready.\N{\rCHT}賽爾 做好準備{\r}
+Dialogue: 0,1:15:50.00,1:15:53.04,ENG,,0,0,0,,Tall, dark and handsome is about to crash the party.\N{\rCHT}有個又高又黑又帥的傢伙要來搞破壞{\r}
+Dialogue: 0,1:16:13.77,1:16:15.94,ENG,,0,0,0,,Let's go, let's go! Move, move!\N{\rCHT}我們走 快{\r}
+Dialogue: 0,1:16:16.11,1:16:17.19,ENG,,0,0,0,,Take one and go.\N{\rCHT}拿上槍就走{\r}
+Dialogue: 0,1:16:22.66,1:16:26.54,ENG,,0,0,0,,Alrighty. Let's go put everyone out of their misery, shall we?\N{\rCHT}好了 我們走 讓所有人都脫離苦海 怎麼樣{\r}
+Dialogue: 0,1:16:26.70,1:16:28.29,ENG,,0,0,0,,Any time, champ.\N{\rCHT}準備好了就啟動 錢普{\r}
+Dialogue: 0,1:16:46.26,1:16:47.60,ENG,,0,0,0,,Roland.\N{\rCHT}羅蘭{\r}
+Dialogue: 0,1:16:55.48,1:16:57.03,ENG,,0,0,0,,Roland...\N{\rCHT}羅蘭{\r}
+Dialogue: 0,1:16:57.19,1:16:58.99,ENG,,0,0,0,,...they're taking me to that place.\N{\rCHT}他們要帶我去那個地方{\r}
+Dialogue: 0,1:16:59.15,1:17:00.65,ENG,,0,0,0,,Be careful.\N{\rCHT}小心點{\r}
+Dialogue: 0,1:17:00.82,1:17:01.99,ENG,,0,0,0,,Hang on.\N{\rCHT}堅持住{\r}
+Dialogue: 0,1:17:02.16,1:17:03.57,ENG,,0,0,0,,I'm coming for you.\N{\rCHT}我來救你了{\r}
+Dialogue: 0,1:17:18.55,1:17:20.05,ENG,,0,0,0,,We'll get him, sir.\N{\rCHT}我們會搞定他的 先生{\r}
+Dialogue: 0,1:17:20.42,1:17:21.63,ENG,,0,0,0,,Bye.\N{\rCHT}拜拜{\r}
+Dialogue: 0,1:17:24.05,1:17:26.14,ENG,,0,0,0,,Have a great apocalypse.\N{\rCHT}祝你們末日愉快{\r}
+Dialogue: 0,1:17:28.68,1:17:30.48,ENG,,0,0,0,,Close in on him!\N{\rCHT}包圍他{\r}
+Dialogue: 0,1:17:34.15,1:17:35.65,ENG,,0,0,0,,Okay.\N{\rCHT}好的{\r}
+Dialogue: 0,1:17:50.75,1:17:51.95,ENG,,0,0,0,,- Let's go. - Sir.\N{\rCHT}- 開始吧 - 先生{\r}
+Dialogue: 0,1:17:52.12,1:17:54.00,ENG,,0,0,0,,We're online!\N{\rCHT}設備啟動了{\r}
+Dialogue: 0,1:18:02.88,1:18:06.39,ENG,,0,0,0,,- It's really gonna happen, isn't it? - Oh, yes, it is.\N{\rCHT}- 是不是這一切終於要到來了 - 是的 是的{\r}
+Dialogue: 0,1:19:23.00,1:19:25.05,ENG,,0,0,0,,Somethings wrong.\N{\rCHT}出了點毛病{\r}
+Dialogue: 0,1:19:26.34,1:19:30.01,ENG,,0,0,0,,Somethings wrong here. The levels are plateauing.\N{\rCHT}出問題了 讀數停滯了{\r}
+Dialogue: 0,1:19:30.18,1:19:32.18,ENG,,0,0,0,,- It's as if he's... - Fighting back.\N{\rCHT}- 可能是因為他 . - 在反抗{\r}
+Dialogue: 0,1:19:34.35,1:19:36.60,ENG,,0,0,0,,Why do you resist?\N{\rCHT}你為什麼要反抗{\r}
+Dialogue: 0,1:19:36.77,1:19:38.98,ENG,,0,0,0,,Your visions didn't bring you to him, they brought you to me.\N{\rCHT}你的幻象不是指引你去找他 而是來找我{\r}
+Dialogue: 0,1:19:39.90,1:19:41.69,ENG,,0,0,0,,He doesn't love you. He doesn't care for you.\N{\rCHT}他根本不喜歡你 他根本不關心你{\r}
+Dialogue: 0,1:19:41.86,1:19:45.19,ENG,,0,0,0,,In fact, he's been using you this entire time to get to me.\N{\rCHT}實際上 他這段時間一直利用你來找我{\r}
+Dialogue: 0,1:19:45.36,1:19:48.49,ENG,,0,0,0,,This is why you're here. This is your destiny.\N{\rCHT}這就是你為什麼在這兒 這是你的宿命{\r}
+Dialogue: 0,1:19:48.65,1:19:50.66,ENG,,0,0,0,,You killed my morn!\N{\rCHT}你殺了我媽媽{\r}
+Dialogue: 0,1:19:50.82,1:19:52.78,ENG,,0,0,0,,Yes, that's it. There we go.\N{\rCHT}是的 完美極了 開始了{\r}
+Dialogue: 0,1:20:52.22,1:20:53.93,ENG,,0,0,0,,Portal. Close it.\N{\rCHT}是入口 關了它{\r}
+Dialogue: 0,1:20:56.72,1:20:58.64,ENG,,0,0,0,,- Close it! - I can't!\N{\rCHT}- 關掉它 - 我關不了{\r}
+Dialogue: 0,1:21:00.77,1:21:02.14,ENG,,0,0,0,,Wait.\N{\rCHT}等等{\r}
+Dialogue: 0,1:21:04.27,1:21:06.69,ENG,,0,0,0,,Oh, my God. It's the kid.\N{\rCHT}我的天 是那個孩子幹的{\r}
+Dialogue: 0,1:21:06.86,1:21:09.69,ENG,,0,0,0,,It's the kid! He's keeping the portal open!\N{\rCHT}他讓那個入口保持開啟狀態{\r}
+Dialogue: 0,1:21:11.07,1:21:13.49,ENG,,0,0,0,,Ahh. Impressive.\N{\rCHT}真是了不起啊{\r}
+Dialogue: 0,1:21:20.37,1:21:22.29,ENG,,0,0,0,,So you wanted me to face you, old friend?\N{\rCHT}老朋友 你這是一定要我親自上陣啊{\r}
+Dialogue: 0,1:21:24.75,1:21:26.00,ENG,,0,0,0,,Here I am.\N{\rCHT}我來了{\r}
+Dialogue: 0,1:22:16.01,1:22:19.18,ENG,,0,0,0,,It's fitting that you and the Tower should fall together.\N{\rCHT}剛好你和塔要同時倒下了{\r}
+Dialogue: 0,1:23:10.61,1:23:11.65,ENG,,0,0,0,,Roland.\N{\rCHT}羅蘭{\r}
+Dialogue: 0,1:23:14.61,1:23:16.57,ENG,,0,0,0,,Roland, get up.\N{\rCHT}羅蘭 快起來{\r}
+Dialogue: 0,1:23:22.08,1:23:24.41,ENG,,0,0,0,,I do not aim with my hand.\N{\rCHT}槍准不在於雙手{\r}
+Dialogue: 0,1:23:24.58,1:23:28.17,ENG,,0,0,0,,He who aims with his hand has forgotten the face of his father.\N{\rCHT}違此者 忘祖也{\r}
+Dialogue: 0,1:23:28.96,1:23:30.46,ENG,,0,0,0,,I aim with my eye.\N{\rCHT}槍准在於雙眼{\r}
+Dialogue: 0,1:23:35.88,1:23:37.93,ENG,,0,0,0,,JAKE". I do not shoot with my hand.\N{\rCHT}槍准不在於雙手{\r}
+Dialogue: 0,1:23:38.09,1:23:39.72,ENG,,0,0,0,,He who shoots with his hand...\N{\rCHT}違此者{\r}
+Dialogue: 0,1:23:39.89,1:23:42.76,ENG,,0,0,0,,Has forgotten the face of his father.\N{\rCHT}忘祖也{\r}
+Dialogue: 0,1:23:43.93,1:23:45.14,ENG,,0,0,0,,JAKE". I shoot with my mind.\N{\rCHT}槍准在於頭腦{\r}
+Dialogue: 0,1:23:45.31,1:23:47.23,ENG,,0,0,0,,I shoot with my mind.\N{\rCHT}槍准在於頭腦{\r}
+Dialogue: 0,1:23:48.56,1:23:50.90,ENG,,0,0,0,,JAKE". I do not kill with my gun.\N{\rCHT}槍准不在於所用之槍{\r}
+Dialogue: 0,1:23:52.69,1:23:54.82,ENG,,0,0,0,,He who kills with his gun...\N{\rCHT}違此者{\r}
+Dialogue: 0,1:23:54.98,1:23:56.61,ENG,,0,0,0,,JAKE". Has forgotten the face of his father.\N{\rCHT}忘祖也{\r}
+Dialogue: 0,1:23:56.78,1:23:59.53,ENG,,0,0,0,,...has forgotten the face of his father.\N{\rCHT}忘祖也{\r}
+Dialogue: 0,1:24:05.62,1:24:07.04,ENG,,0,0,0,,I kill With my heart.\N{\rCHT}槍准在於我的心{\r}
+Dialogue: 0,1:25:47.01,1:25:48.43,ENG,,0,0,0,,Mom, Dad.\N{\rCHT}媽媽 爸爸{\r}
+Dialogue: 0,1:25:48.60,1:25:50.10,ENG,,0,0,0,,- There they are. - Sweetheart.\N{\rCHT}- 太好了 - 親愛的{\r}
+Dialogue: 0,1:25:50.27,1:25:52.23,ENG,,0,0,0,,Oh, I'm so glad you're here.\N{\rCHT}太好了 你們沒事{\r}
+Dialogue: 0,1:25:59.15,1:26:00.69,ENG,,0,0,0,,Multiple witnesses saw...\N{\rCHT}許多人目擊了 .{\r}
+Dialogue: 0,1:26:00.86,1:26:01.94,ENG,,0,0,0,,...the strange phenomena in the sky.\N{\rCHT}天空中出現的怪像{\r}
+Dialogue: 0,1:26:02.11,1:26:03.45,ENG,,0,0,0,,Looks like we've seen the worst of it...\N{\rCHT}似乎我們看到了最壞的狀況{\r}
+Dialogue: 0,1:26:03.61,1:26:05.45,ENG,,0,0,0,,The weather center has now issued a statement...\N{\rCHT}氣象中心發佈聲明{\r}
+Dialogue: 0,1:26:05.61,1:26:08.49,ENG,,0,0,0,,...that it may have been some kind of very intense solar flare.\N{\rCHT}稱這可能是某種非常強烈的太陽耀斑導致的{\r}
+Dialogue: 0,1:26:11.50,1:26:13.50,ENG,,0,0,0,,- Here. - What is this?\N{\rCHT}- 給你 - 這是什麼{\r}
+Dialogue: 0,1:26:13.66,1:26:15.92,ENG,,0,0,0,,- Thank you. - Thanks. Hot dog.\N{\rCHT}- 謝謝 - 謝謝 熱狗{\r}
+Dialogue: 0,1:26:16.08,1:26:17.88,ENG,,0,0,0,,Savages.\N{\rCHT}野蠻人{\r}
+Dialogue: 0,1:26:19.80,1:26:20.88,ENG,,0,0,0,,What breed?\N{\rCHT}什麼品種的{\r}
+Dialogue: 0,1:26:21.05,1:26:22.63,ENG,,0,0,0,,No, it's not a breed.\N{\rCHT}不 這沒有什麼品種{\r}
+Dialogue: 0,1:26:30.39,1:26:32.02,ENG,,0,0,0,,I have to leave here, Jake.\N{\rCHT}我得離開這了 傑克{\r}
+Dialogue: 0,1:26:33.39,1:26:35.56,ENG,,0,0,0,,You understand that, don't you?\N{\rCHT}你明白的 對嗎{\r}
+Dialogue: 0,1:26:36.60,1:26:38.06,ENG,,0,0,0,,I know.\N{\rCHT}我明白{\r}
+Dialogue: 0,1:26:45.45,1:26:46.78,ENG,,0,0,0,,Why don't you come with me?\N{\rCHT}你幹嘛不跟我一起{\r}
+Dialogue: 0,1:26:51.79,1:26:53.29,ENG,,0,0,0,,Really?\N{\rCHT}真的可以跟你一起麼{\r}
+Dialogue: 0,1:26:54.25,1:26:56.12,ENG,,0,0,0,,You have nothing here.\N{\rCHT}你在這兒又沒事幹{\r}
+Dialogue: 0,1:26:56.29,1:26:59.25,ENG,,0,0,0,,Besides, I could use your help.\N{\rCHT}而且 你還可以幫幫我{\r}
+Dialogue: 0,1:26:59.54,1:27:01.05,ENG,,0,0,0,,Uh...\N{\rCHT}呃{\r}
+Dialogue: 0,1:27:01.75,1:27:03.63,ENG,,0,0,0,,Okay. Yeah. Yeah.\N{\rCHT}好的 好的{\r}
+Dialogue: 0,1:27:04.47,1:27:05.84,ENG,,0,0,0,,Gunslinger.\N{\rCHT}槍俠{\r}
+
