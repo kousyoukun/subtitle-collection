@@ -1,0 +1,1413 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: Salt 2010
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CHT,標楷體,15,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1
+Style: ENG,Microsoft YaHei UI,16,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1  
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:51.55,0:00:54.47,ENG,,0,0,0,,Please let me go home. Please, I'm not who you think I am.\N{\rCHT}求求你們放我回家，求你，你們抓錯人了
+Dialogue: 0,0:00:54.84,0:00:57.09,ENG,,0,0,0,,I'm really not who you think I am.\N{\rCHT}你們真的抓錯人
+Dialogue: 0,0:00:57.97,0:01:00.06,ENG,,0,0,0,,Please. Please. I'm not a spy.\N{\rCHT}求求你們，求求你們，我不是間諜
+Dialogue: 0,0:01:00.22,0:01:01.77,ENG,,0,0,0,,- You are a spy. - I'm not a spy.\N{\rCHT}- 你就是間諜 - 我不是間諜
+Dialogue: 0,0:01:01.97,0:01:05.06,ENG,,0,0,0,,- Please let me go home. - Try again.\N{\rCHT}- 求求你，放我回家 - 再來一次
+Dialogue: 0,0:01:05.23,0:01:06.94,ENG,,0,0,0,,I am not a spy. I am a businesswoman.\N{\rCHT}我不是間諜，我是個生意人
+Dialogue: 0,0:01:07.10,0:01:10.07,ENG,,0,0,0,,I work for Rink Petroleum and Gas.\N{\rCHT}我為倫克石油天然氣公司工作
+Dialogue: 0,0:01:10.23,0:01:12.65,ENG,,0,0,0,,Please call them. I work for Rink Petroleum.\N{\rCHT}請給他們打電話 我為倫克石油天然氣公司工作
+Dialogue: 0,0:01:12.82,0:01:16.91,ENG,,0,0,0,,You are here to sabotage our nuclear ambitions. Yes?\N{\rCHT}你企圖破壞我國的核計畫，是不是？
+Dialogue: 0,0:01:17.07,0:01:19.99,ENG,,0,0,0,,I am not a spy! I am not a spy!\N{\rCHT}我不是間諜！我不是間諜！
+Dialogue: 0,0:01:41.26,0:01:43.89,ENG,,0,0,0,,- Try again. - I am not a spy.\N{\rCHT}- 再來一次 - 我不是間諜
+Dialogue: 0,0:01:44.06,0:01:45.69,ENG,,0,0,0,,- You are a spy. - I am not a spy.\N{\rCHT}- 你就是間諜 - 我不是間諜
+Dialogue: 0,0:01:45.85,0:01:47.19,ENG,,0,0,0,,Don't lie to me.\N{\rCHT}你撒謊！
+Dialogue: 0,0:01:53.73,0:01:55.24,ENG,,0,0,0,,I am not a spy.\N{\rCHT}我不是間諜
+Dialogue: 0,0:01:55.40,0:01:58.11,ENG,,0,0,0,,I am not a spy.\N{\rCHT}我不是間諜
+Dialogue: 0,0:01:59.37,0:02:02.49,ENG,,0,0,0,,It is through the grace and munificence...\N{\rCHT}在他的仁慈與寬容之下
+Dialogue: 0,0:02:02.66,0:02:05.04,ENG,,0,0,0,,...of our glorious Dear Leader...\N{\rCHT}...我們偉大領袖
+Dialogue: 0,0:02:05.66,0:02:08.83,ENG,,0,0,0,,...that the Democratic People's Republic of Korea...\N{\rCHT}...朝鮮民主主義人民共和國
+Dialogue: 0,0:02:09.00,0:02:12.59,ENG,,0,0,0,,...has pardoned the American imperialist...\N{\rCHT}...寬恕了這名美帝國主義者
+Dialogue: 0,0:02:12.75,0:02:16.84,ENG,,0,0,0,,...for her hostile acts against our socialist nation.\N{\rCHT}...儘管她陰謀破壞我社會主義祖國
+Dialogue: 0,0:02:17.01,0:02:20.55,ENG,,0,0,0,,Keep your head down. Don't say anything till we make the swap.\N{\rCHT}在人質交換結束以前，別抬頭，別說話
+Dialogue: 0,0:02:21.47,0:02:24.35,ENG,,0,0,0,,In case Kim Jong II here changes his mind.\N{\rCHT}以防金正日變卦
+Dialogue: 0,0:02:38.90,0:02:40.32,ENG,,0,0,0,,Exchange.\N{\rCHT}交換
+Dialogue: 0,0:02:40.53,0:02:42.58,ENG,,0,0,0,,Right face!\N{\rCHT}向右轉！
+Dialogue: 0,0:02:45.95,0:02:47.91,ENG,,0,0,0,,Right face!\N{\rCHT}向右轉！
+Dialogue: 0,0:02:48.25,0:02:50.54,ENG,,0,0,0,,I don't understand.\N{\rCHT}我不明白
+Dialogue: 0,0:02:50.71,0:02:52.96,ENG,,0,0,0,,You don't understand what?\N{\rCHT}你不明白什麼？
+Dialogue: 0,0:02:55.00,0:02:57.63,ENG,,0,0,0,,All the rules say to leave me, that one life...\N{\rCHT}這不合規矩 個人性命
+Dialogue: 0,0:02:57.80,0:03:00.55,ENG,,0,0,0,,...is not worth blowing operational cover.\N{\rCHT}不值得為此而暴露身份
+Dialogue: 0,0:03:00.72,0:03:01.93,ENG,,0,0,0,,You got that right.\N{\rCHT}你說的沒錯
+Dialogue: 0,0:03:02.39,0:03:06.10,ENG,,0,0,0,,If we have to lose someone for the greater good, we will.\N{\rCHT}如果為了更大的利益，需要放棄一個人 我們一定會放棄
+Dialogue: 0,0:03:06.27,0:03:07.31,ENG,,0,0,0,,So why did you do it?\N{\rCHT}那麼，你為什麼要救我？
+Dialogue: 0,0:03:08.52,0:03:11.31,ENG,,0,0,0,,Well, I didn't do it.\N{\rCHT}我沒救你
+Dialogue: 0,0:03:12.40,0:03:14.07,ENG,,0,0,0,,He did.\N{\rCHT}是他救了你
+Dialogue: 0,0:03:15.40,0:03:18.28,ENG,,0,0,0,,Once he found out where you were, there was no stopping him.\N{\rCHT}自從他發現你的下落，就一直在營救你
+Dialogue: 0,0:03:20.40,0:03:23.03,ENG,,0,0,0,,He petitioned the Senate, the State Department.\N{\rCHT}他給參議院，國務院寫請願書，
+Dialogue: 0,0:03:23.20,0:03:26.24,ENG,,0,0,0,,We didn't need the publicity so I figured we better do something...\N{\rCHT}我們不想搞的滿城風雨，所以決定採取行動
+Dialogue: 0,0:03:26.41,0:03:29.96,ENG,,0,0,0,,...or he's gonna invade this goddamn rice-paddy republic himself.\N{\rCHT}不然，他可能會單獨匹馬闖進這個該死的農業國
+Dialogue: 0,0:03:46.89,0:03:48.52,ENG,,0,0,0,,You okay?\N{\rCHT}你沒事吧？
+Dialogue: 0,0:03:50.60,0:03:52.10,ENG,,0,0,0,,Yeah.\N{\rCHT}沒事
+Dialogue: 0,0:04:36.61,0:04:37.90,ENG,,0,0,0,,Hey.\N{\rCHT}嘿
+Dialogue: 0,0:04:39.44,0:04:41.86,ENG,,0,0,0,,- Good morning. - Happy anniversary.\N{\rCHT}- 早上好 - 結婚周年快樂
+Dialogue: 0,0:04:44.24,0:04:46.07,ENG,,0,0,0,,You want me to make you breakfast?\N{\rCHT}想讓我為你做早餐嗎？
+Dialogue: 0,0:04:46.24,0:04:48.66,ENG,,0,0,0,,How about pancakes?\N{\rCHT}來個烤薄餅怎麼樣？
+Dialogue: 0,0:04:48.83,0:04:50.79,ENG,,0,0,0,,Your cooking?\N{\rCHT}你下廚？
+Dialogue: 0,0:04:51.08,0:04:52.96,ENG,,0,0,0,,You're joking. You like my cooking.\N{\rCHT}開玩笑，你喜歡吃我做的菜
+Dialogue: 0,0:04:53.12,0:04:55.12,ENG,,0,0,0,,Germans don't joke.\N{\rCHT}德國人不開玩笑
+Dialogue: 0,0:04:56.13,0:04:58.25,ENG,,0,0,0,,Burt likes my cooking.\N{\rCHT}柏特喜歡我做的菜
+Dialogue: 0,0:05:05.93,0:05:07.34,ENG,,0,0,0,,Get your bugs off the table.\N{\rCHT}把蟲子從桌子上拿開
+Dialogue: 0,0:05:07.51,0:05:09.60,ENG,,0,0,0,,- They're spiders. - They're bugs.\N{\rCHT}- 是蜘蛛 - 是蟲子
+Dialogue: 0,0:05:10.60,0:05:12.64,ENG,,0,0,0,,- They're spiders. - They're bugs.\N{\rCHT}- 是蜘蛛 - 是蟲子
+Dialogue: 0,0:05:17.52,0:05:21.61,ENG,,0,0,0,,Fold the next layer back as you did the two before it.\N{\rCHT}像前面一樣，將第三層折起來
+Dialogue: 0,0:05:21.78,0:05:25.36,ENG,,0,0,0,,Turn the napkin over. Fold both sides back...\N{\rCHT}把餐巾翻過來，將兩面對折
+Dialogue: 0,0:05:25.53,0:05:28.37,ENG,,0,0,0,,...and over one another about a third of the way.\N{\rCHT}...一層疊在另一層上大約三分之一的位置
+Dialogue: 0,0:05:30.03,0:05:33.87,ENG,,0,0,0,,Check for symmetry and press the fold down well.\N{\rCHT}檢查是否對稱，將折疊處壓平
+Dialogue: 0,0:05:34.04,0:05:36.17,ENG,,0,0,0,,Are you doing this on company time?\N{\rCHT}上班時間幹這個？
+Dialogue: 0,0:05:36.33,0:05:40.00,ENG,,0,0,0,,It's my anniversary.\N{\rCHT}今天是我的結婚紀念日
+Dialogue: 0,0:05:40.67,0:05:43.51,ENG,,0,0,0,,And I want it to be perfect.\N{\rCHT}我要做到百分百完美
+Dialogue: 0,0:05:43.67,0:05:45.22,ENG,,0,0,0,,But...\N{\rCHT}但是
+Dialogue: 0,0:05:45.42,0:05:46.88,ENG,,0,0,0,,...that is not sexy.\N{\rCHT}...這個一點也不性感
+Dialogue: 0,0:05:47.59,0:05:49.76,ENG,,0,0,0,,No, but it is utilitarian.\N{\rCHT}沒錯，但很實用
+Dialogue: 0,0:05:49.93,0:05:52.10,ENG,,0,0,0,,And utilitarian is the new sexy.\N{\rCHT}實用是一種新的性感方式
+Dialogue: 0,0:05:52.85,0:05:55.85,ENG,,0,0,0,,I ran the trace. First name Usam, last name Utsaev.\N{\rCHT}我查了一下，他名叫烏茨姆，姓烏撒維
+Dialogue: 0,0:05:56.02,0:05:57.52,ENG,,0,0,0,,- Any verifiable hits? - One.\N{\rCHT}- 還有別的可靠資訊嗎？ - 有一個
+Dialogue: 0,0:05:57.69,0:06:01.02,ENG,,0,0,0,,Hey, Francis, do me a favor and stick that in the safe till tomorrow.\N{\rCHT}法蘭西斯，幫我一個忙把那個放進保險箱，明天再說
+Dialogue: 0,0:06:01.19,0:06:03.28,ENG,,0,0,0,,Mata Hari here's got a big night tonight.\N{\rCHT}今晚是我們間諜小姐的大日子
+Dialogue: 0,0:06:03.44,0:06:05.65,ENG,,0,0,0,,Yes, sir. Right away, sir.\N{\rCHT}是，長官！，馬上執行，長官！
+Dialogue: 0,0:06:05.86,0:06:08.78,ENG,,0,0,0,,«Sir»? Do I look like a «sir» to you?\N{\rCHT}“長官”？你看我像“長官”嗎？
+Dialogue: 0,0:06:08.95,0:06:09.99,ENG,,0,0,0,,From head to toe.\N{\rCHT}從頭到腳都像“長官”
+Dialogue: 0,0:06:10.82,0:06:13.29,ENG,,0,0,0,,I'm surprised he didn't call you «Your Majesty.»\N{\rCHT}他差一點就要稱呼你“陛下”了
+Dialogue: 0,0:06:13.45,0:06:17.62,ENG,,0,0,0,,I like the ring of that. I think I'd prefer «Your Majesty.»\N{\rCHT}我喜歡這個詞的發音 我想我喜歡“陛下”這個稱呼
+Dialogue: 0,0:06:18.67,0:06:20.50,ENG,,0,0,0,,Was I ever that young?\N{\rCHT}我真有那麼年輕嗎？
+Dialogue: 0,0:06:22.88,0:06:23.96,ENG,,0,0,0,,Younger.\N{\rCHT}更年輕
+Dialogue: 0,0:06:24.76,0:06:26.47,ENG,,0,0,0,,Walk me out.\N{\rCHT}一起走
+Dialogue: 0,0:06:27.55,0:06:29.47,ENG,,0,0,0,,How did the Oval Office briefing go?\N{\rCHT}總統對你的彙報什麼反應？
+Dialogue: 0,0:06:29.64,0:06:31.47,ENG,,0,0,0,,Oh, you know. The usual.\N{\rCHT}你知道的，和以往一樣
+Dialogue: 0,0:06:31.64,0:06:34.06,ENG,,0,0,0,,President wants to know what's happening in Russia...\N{\rCHT}總統想知道俄國所有的情況
+Dialogue: 0,0:06:34.22,0:06:38.19,ENG,,0,0,0,,...the day before it happens. How about you? I heard that interview went well.\N{\rCHT}越早越好...你的事怎麼樣？我聽說面試進行的不錯
+Dialogue: 0,0:06:38.35,0:06:40.06,ENG,,0,0,0,,Fingers crossed.\N{\rCHT}老天保祐吧
+Dialogue: 0,0:06:40.73,0:06:42.48,ENG,,0,0,0,,You sure about this?\N{\rCHT}你真想去嗎？
+Dialogue: 0,0:06:42.65,0:06:45.61,ENG,,0,0,0,,You know, once you start pushing paper, there's no turning back.\N{\rCHT}一旦開始做文職，就調不回來了
+Dialogue: 0,0:06:45.78,0:06:49.15,ENG,,0,0,0,,I had the strangest feeling when I was out last time.\N{\rCHT}上次執行任務的時候 我產生了一種從沒有過的感覺
+Dialogue: 0,0:06:49.32,0:06:51.78,ENG,,0,0,0,,- I was homesick. - Homesick?\N{\rCHT}- 我想家了 - 想家？
+Dialogue: 0,0:06:51.95,0:06:54.29,ENG,,0,0,0,,- Sir! Sir! - Can't you take something for that?\N{\rCHT}- 長官！長官！- 這種感覺有藥治嗎？
+Dialogue: 0,0:06:56.50,0:06:59.04,ENG,,0,0,0,,We got a walk-in. A defector, 10 minutes ago.\N{\rCHT}10分鐘以前，來了一個叛逃間諜
+Dialogue: 0,0:06:59.21,0:07:01.54,ENG,,0,0,0,,- Here? - I guess he's not buying our cover.\N{\rCHT}- 到這裡？ - 我猜他識破了我們的身份
+Dialogue: 0,0:07:01.71,0:07:03.71,ENG,,0,0,0,,- Did you get his bona fides? - He's Russian.\N{\rCHT}- 他的真實性證實了嗎？ - 他是俄國人
+Dialogue: 0,0:07:03.88,0:07:06.01,ENG,,0,0,0,,He says he's FSB but won't give us any more.\N{\rCHT}他只說是俄國聯邦安全局的 別的什麼也不說
+Dialogue: 0,0:07:06.42,0:07:08.38,ENG,,0,0,0,,- He's a strange guy. - How's his English?\N{\rCHT}- 他行為很古怪 - 他的英語說的怎麼樣？
+Dialogue: 0,0:07:08.97,0:07:10.68,ENG,,0,0,0,,Passable. Not great.\N{\rCHT}馬馬虎虎，不是太好
+Dialogue: 0,0:07:10.84,0:07:13.72,ENG,,0,0,0,,But if it got down to the subtleties of English nuance...\N{\rCHT}但如果想在發音上做進一步分析的話…
+Dialogue: 0,0:07:13.89,0:07:17.52,ENG,,0,0,0,,- Ted, Mike's gonna be waiting for me. - Yeah, and I got a plane to catch.\N{\rCHT}- 泰德，邁克會等我等著急的 - 我還得趕飛機呢
+Dialogue: 0,0:07:17.68,0:07:18.73,ENG,,0,0,0,,Come on, Salt.\N{\rCHT}我們回去，紹特
+Dialogue: 0,0:07:18.89,0:07:22.06,ENG,,0,0,0,,No one can sort out a nutjob from the real thing faster than you.\N{\rCHT}沒人在辨人真假方面比你快
+Dialogue: 0,0:07:22.23,0:07:25.27,ENG,,0,0,0,,- I got 25 minutes. - I got 26. Let's go.\N{\rCHT}- 我只有25分鐘 - 我只有26分鐘，我們走
+Dialogue: 0,0:07:31.20,0:07:34.28,ENG,,0,0,0,,Yeah, okay. Well, we'll decide when we know more.\N{\rCHT}好的，等有進展我們再說
+Dialogue: 0,0:07:34.83,0:07:36.70,ENG,,0,0,0,,- Who called Counterintelligence? - Not me.\N{\rCHT}- 是誰找反情報部門的？ - 不是我
+Dialogue: 0,0:07:36.87,0:07:39.50,ENG,,0,0,0,,Hey, Ted. We're crashing the party.\N{\rCHT}泰德，我們不請自來了
+Dialogue: 0,0:07:41.62,0:07:43.50,ENG,,0,0,0,,- Peabody. - Salt.\N{\rCHT}- 皮博迪 - 紹特
+Dialogue: 0,0:07:48.51,0:07:50.47,ENG,,0,0,0,,Please remove the hood.\N{\rCHT}請移掉頭罩
+Dialogue: 0,0:07:51.76,0:07:53.18,ENG,,0,0,0,,Microphones are on.\N{\rCHT}麥克風打開了
+Dialogue: 0,0:07:53.34,0:07:55.30,ENG,,0,0,0,,Checking levels.\N{\rCHT}檢查讀數
+Dialogue: 0,0:07:56.72,0:07:58.02,ENG,,0,0,0,,Baseline recorded.\N{\rCHT}基準數值記錄完畢
+Dialogue: 0,0:08:02.44,0:08:05.23,ENG,,0,0,0,,Neural scan is up. Ready to go.\N{\rCHT}神經掃描開啟，可以開始了
+Dialogue: 0,0:08:07.07,0:08:09.49,ENG,,0,0,0,,- Ev. - Yeah.\N{\rCHT}- 伊芙 - 是
+Dialogue: 0,0:08:09.65,0:08:11.82,ENG,,0,0,0,,Commencing audio and visual recording.\N{\rCHT}視訊錄製開始 音訊錄製開始
+Dialogue: 0,0:08:19.79,0:08:21.96,ENG,,0,0,0,,Testing earpiece.\N{\rCHT}耳機測試
+Dialogue: 0,0:08:24.46,0:08:27.50,ENG,,0,0,0,,Interview has commenced at 1442.\N{\rCHT}審訊開始於14點42分
+Dialogue: 0,0:08:37.35,0:08:39.31,ENG,,0,0,0,,You're married.\N{\rCHT}你結婚了
+Dialogue: 0,0:08:40.72,0:08:43.85,ENG,,0,0,0,,A husband must be a distraction...\N{\rCHT}配偶會讓你分心的
+Dialogue: 0,0:08:44.56,0:08:47.65,ENG,,0,0,0,,...for a female intelligence officer.\N{\rCHT}...對於一名女性情報官員來說
+Dialogue: 0,0:08:47.82,0:08:49.98,ENG,,0,0,0,,Well, we're here to talk about you.\N{\rCHT}還是談談你自己吧
+Dialogue: 0,0:08:50.19,0:08:51.32,ENG,,0,0,0,,So, what is your name?\N{\rCHT}你叫什麼名字？
+Dialogue: 0,0:08:53.07,0:08:54.86,ENG,,0,0,0,,My name is...\N{\rCHT}我的名字叫
+Dialogue: 0,0:08:55.03,0:08:59.41,ENG,,0,0,0,,...Oleg Vassilyevich Orlov.\N{\rCHT}...歐耶克·瓦西列維奇·歐洛夫
+Dialogue: 0,0:09:02.83,0:09:04.83,ENG,,0,0,0,,I have cancer.\N{\rCHT}我得了癌症
+Dialogue: 0,0:09:05.00,0:09:07.04,ENG,,0,0,0,,I'm moved.\N{\rCHT}真令人難過
+Dialogue: 0,0:09:07.33,0:09:09.34,ENG,,0,0,0,,A defector with cancer.\N{\rCHT}一個身患絕症的叛逃者
+Dialogue: 0,0:09:10.05,0:09:13.55,ENG,,0,0,0,,Are you selling secrets for chemo or are you afraid of dying?\N{\rCHT}你是想賣情報治病，還是怕死呢？
+Dialogue: 0,0:09:13.72,0:09:18.39,ENG,,0,0,0,,If I have gained anything by damning myself...\N{\rCHT}如果瀕臨死亡能讓我得到了什麼
+Dialogue: 0,0:09:18.80,0:09:24.64,ENG,,0,0,0,,...it is that I no longer have anything to fear.\N{\rCHT}...那就是無所畏懼吧
+Dialogue: 0,0:09:25.60,0:09:28.27,ENG,,0,0,0,,Russia is also dying.\N{\rCHT}俄國正步入死亡
+Dialogue: 0,0:09:28.44,0:09:31.86,ENG,,0,0,0,,- But unlike me, she's not dead. - Oleg Vassily Orlov...\N{\rCHT}- 但與我不同的是，她還沒死 - 歐耶克·瓦西列維奇·歐洛夫
+Dialogue: 0,0:09:32.03,0:09:35.74,ENG,,0,0,0,,...shows up in 1993 in Novosibirsk Oblast, Siberia.\N{\rCHT}...1993出現在新西伯利亞
+Dialogue: 0,0:09:35.95,0:09:38.20,ENG,,0,0,0,,He was on Victor Barisovsky's staff there.\N{\rCHT}當時是維克多·巴里薩夫斯基的幕僚
+Dialogue: 0,0:09:38.41,0:09:39.66,ENG,,0,0,0,,He checks out as FSB, Ev.\N{\rCHT}他確實是俄國聯邦安全局的，伊芙
+Dialogue: 0,0:09:39.83,0:09:42.70,ENG,,0,0,0,,Scan says he's truthful on the cancer.\N{\rCHT}測謊儀證實他的確得了癌症
+Dialogue: 0,0:09:43.08,0:09:44.29,ENG,,0,0,0,,Prior to '93?\N{\rCHT}93年以前的情況呢？
+Dialogue: 0,0:09:44.54,0:09:47.75,ENG,,0,0,0,,- Russia was once strong, powerful... - Nothing.\N{\rCHT}- 過去的俄國強大，不可戰勝 - 什麼也沒有
+Dialogue: 0,0:09:48.25,0:09:49.25,ENG,,0,0,0,,He doesn't exist.\N{\rCHT}他不存在
+Dialogue: 0,0:09:49.42,0:09:53.17,ENG,,0,0,0,,And she will be again when things have been set back...\N{\rCHT}只需要阻止一些事件...
+Dialogue: 0,0:09:53.38,0:09:55.34,ENG,,0,0,0,,...on the correct path.\N{\rCHT}...她就會重新回到正路上來
+Dialogue: 0,0:09:55.59,0:09:58.30,ENG,,0,0,0,,I have somewhere I need to be, Mr. Orlov...\N{\rCHT}歐洛夫先生，我還得去別的地方
+Dialogue: 0,0:09:58.47,0:10:01.05,ENG,,0,0,0,,...so if you wouldn't mind getting to the point.\N{\rCHT}...所以，你是否能說說來意
+Dialogue: 0,0:10:04.22,0:10:07.44,ENG,,0,0,0,,I came here to tell you a story.\N{\rCHT}我到這來，是要為你講一個故事
+Dialogue: 0,0:10:08.35,0:10:10.15,ENG,,0,0,0,,I don't like stories.\N{\rCHT}我不喜歡聽故事
+Dialogue: 0,0:10:10.56,0:10:13.11,ENG,,0,0,0,,But I'll listen anyway.\N{\rCHT}不過，我還是得聽一聽
+Dialogue: 0,0:10:13.28,0:10:15.19,ENG,,0,0,0,,In English, please.\N{\rCHT}請用英語說
+Dialogue: 0,0:10:15.82,0:10:17.15,ENG,,0,0,0,,Others are listening.\N{\rCHT}還有別人在聽
+Dialogue: 0,0:10:18.11,0:10:21.07,ENG,,0,0,0,,1975.\N{\rCHT}1975年
+Dialogue: 0,0:10:21.53,0:10:23.79,ENG,,0,0,0,,The Cold War.\N{\rCHT}冷戰時期
+Dialogue: 0,0:10:25.25,0:10:27.37,ENG,,0,0,0,,In a gymnasium in Grozny...\N{\rCHT}在格羅茲尼的一個體育館裡...\N{\rCHT}143
+Dialogue: 0,0:10:27.54,0:10:29.79,ENG,,0,0,0,,...a Soviet Olympic wrestler...\N{\rCHT}...蘇聯奧運摔跤冠軍
+Dialogue: 0,0:10:29.96,0:10:33.50,ENG,,0,0,0,,...named Sasha Fyorodovich Chenkov...\N{\rCHT}...一位名叫薩沙·夫羅多維奇·琴科夫的…
+Dialogue: 0,0:10:34.13,0:10:35.59,ENG,,0,0,0,,...meets for the first time...\N{\rCHT}...第一次遇見了…
+Dialogue: 0,0:10:36.17,0:10:40.09,ENG,,0,0,0,,...the only female chess grand master of her era:\N{\rCHT}...這位當時唯一的女性象棋大師
+Dialogue: 0,0:10:41.51,0:10:44.97,ENG,,0,0,0,,Anja Nurekyova.\N{\rCHT}阿妮婭·洛維奇娃
+Dialogue: 0,0:10:45.27,0:10:48.35,ENG,,0,0,0,,Within a month, they were married.\N{\rCHT}不到一個月，他們就結了婚
+Dialogue: 0,0:10:48.52,0:10:51.98,ENG,,0,0,0,,And within a year, a child.\N{\rCHT}不到一年，他們有了孩子
+Dialogue: 0,0:10:52.56,0:10:54.57,ENG,,0,0,0,,One month more...\N{\rCHT}一個多月後
+Dialogue: 0,0:10:54.73,0:10:58.78,ENG,,0,0,0,,...the child was back in the same hospital...\N{\rCHT}...小孩又回到了出生的那家醫院
+Dialogue: 0,0:10:58.95,0:11:00.32,ENG,,0,0,0,,...sick with fever.\N{\rCHT}...因為發燒
+Dialogue: 0,0:11:02.95,0:11:05.24,ENG,,0,0,0,,And within days after that...\N{\rCHT}幾天之後
+Dialogue: 0,0:11:05.41,0:11:09.00,ENG,,0,0,0,,...the child suddenly was dead.\N{\rCHT}這個孩子突然夭折
+Dialogue: 0,0:11:11.17,0:11:15.05,ENG,,0,0,0,,Yes, a child was dead.\N{\rCHT}是的，一個孩子夭折了
+Dialogue: 0,0:11:15.21,0:11:19.42,ENG,,0,0,0,,And, yes, a child was buried.\N{\rCHT}當然，孩子被埋葬了
+Dialogue: 0,0:11:26.06,0:11:30.19,ENG,,0,0,0,,But the Chenkov baby was alive...\N{\rCHT}可是琴科夫的孩子卻活著
+Dialogue: 0,0:11:30.35,0:11:34.73,ENG,,0,0,0,,...and became the property of another man.\N{\rCHT}...並為另一個男人所擁有
+Dialogue: 0,0:11:35.15,0:11:39.28,ENG,,0,0,0,,A master spy who had devised the greatest plan...\N{\rCHT}這位間諜首腦想出了一個偉大的計畫
+Dialogue: 0,0:11:39.44,0:11:43.78,ENG,,0,0,0,,...a Russian patriot could ever invent.\N{\rCHT}...一個史無前例的愛國計畫
+Dialogue: 0,0:11:43.95,0:11:48.29,ENG,,0,0,0,,A plan to destroy America.\N{\rCHT}一個摧毀美國的計畫
+Dialogue: 0,0:11:49.08,0:11:50.91,ENG,,0,0,0,,It had all started...\N{\rCHT}這個計畫始於…
+Dialogue: 0,0:11:51.08,0:11:55.04,ENG,,0,0,0,,...with an American named Lee Harvey Oswald.\N{\rCHT}...一個名叫李·哈威·奧斯沃德的美國人
+Dialogue: 0,0:11:55.21,0:11:59.34,ENG,,0,0,0,,In 1959, he emigrated to Russia.\N{\rCHT}1959年，他移居俄國
+Dialogue: 0,0:11:59.51,0:12:02.43,ENG,,0,0,0,,Three years later, he returned home.\N{\rCHT}三年之後，他返回家鄉
+Dialogue: 0,0:12:02.59,0:12:05.39,ENG,,0,0,0,,But the man who came back to America...\N{\rCHT}但這個回到美國的男人
+Dialogue: 0,0:12:05.55,0:12:11.02,ENG,,0,0,0,,...was in fact a Russian spy named Alek.\N{\rCHT}...實際上已是一名俄國間諜，化名艾裡克
+Dialogue: 0,0:12:11.39,0:12:14.94,ENG,,0,0,0,,On November 22nd, 1963...
+Dialogue: 0,0:12:15.11,0:12:17.86,ENG,,0,0,0,,...Alek became the first success of the new program...\N{\rCHT}...艾裡克成為了這個計畫的第一個成功者
+Dialogue: 0,0:12:19.74,0:12:23.32,ENG,,0,0,0,,...and a hero of the Soviet Union.\N{\rCHT}...成為了蘇聯人民的英雄
+Dialogue: 0,0:12:23.70,0:12:26.62,ENG,,0,0,0,,The spymaster was now given the go-ahead...\N{\rCHT}這個間諜首腦被授權...
+Dialogue: 0,0:12:26.78,0:12:29.62,ENG,,0,0,0,,...to create many more like Alek.\N{\rCHT}...製造出更多像艾裡克這樣的人
+Dialogue: 0,0:12:29.79,0:12:33.25,ENG,,0,0,0,,Scores of agents, males and females...\N{\rCHT}大批男女間諜
+Dialogue: 0,0:12:33.42,0:12:36.04,ENG,,0,0,0,,...to be substituted for Americans.\N{\rCHT}...被偽裝成美國人
+Dialogue: 0,0:12:36.21,0:12:39.88,ENG,,0,0,0,,I pledge allegiance to the flag...\N{\rCHT}我謹對國旗宣誓,將永遠效忠於…
+Dialogue: 0,0:12:40.13,0:12:42.17,ENG,,0,0,0,,At an abandoned monastery...\N{\rCHT}在一所廢棄的修道院裡
+Dialogue: 0,0:12:42.34,0:12:46.14,ENG,,0,0,0,,...Chenkov and other boys and girls learned English...\N{\rCHT}...琴科夫和其他男孩女孩在學俄語前
+Dialogue: 0,0:12:46.30,0:12:48.85,ENG,,0,0,0,,...long before they learned Russian.\N{\rCHT}...就已經學會了英語
+Dialogue: 0,0:12:49.01,0:12:51.14,ENG,,0,0,0,,Drilled in idiom...\N{\rCHT}他們在語言習慣
+Dialogue: 0,0:12:51.31,0:12:53.52,ENG,,0,0,0,,...idiosyncrasy and...\N{\rCHT}...風格氣質
+Dialogue: 0,0:12:54.69,0:12:55.85,ENG,,0,0,0,,...ideology.\N{\rCHT}以及思想意識方面接受了大量地薰陶
+Dialogue: 0,0:12:57.36,0:13:02.24,ENG,,0,0,0,,And by methods of rigorous physical and psychological programming...\N{\rCHT}經過一系列嚴格的身體和心理訓練之後
+Dialogue: 0,0:13:02.40,0:13:05.49,ENG,,0,0,0,,...the spy master made warriors of iron.\N{\rCHT}...這位間諜首腦創造出了一群鋼鐵戰士
+Dialogue: 0,0:13:05.66,0:13:09.03,ENG,,0,0,0,,Unquestioning and unbreakable.\N{\rCHT}絕對服從，不可動搖
+Dialogue: 0,0:13:09.95,0:13:11.45,ENG,,0,0,0,,Who crossed first?\N{\rCHT}誰第一個到？
+Dialogue: 0,0:13:12.25,0:13:13.37,ENG,,0,0,0,,Who crossed last?\N{\rCHT}誰最後一個到？
+Dialogue: 0,0:13:20.17,0:13:22.46,ENG,,0,0,0,,You're killing me, man.\N{\rCHT}我真受不了，哥們
+Dialogue: 0,0:13:22.96,0:13:24.84,ENG,,0,0,0,,When does the good fairy come in?\N{\rCHT}是不是還有個善良的仙女？
+Dialogue: 0,0:13:25.30,0:13:26.97,ENG,,0,0,0,,Never.\N{\rCHT}沒有
+Dialogue: 0,0:13:27.14,0:13:28.89,ENG,,0,0,0,,It's a story without hope.\N{\rCHT}這是個絕望的故事
+Dialogue: 0,0:13:29.39,0:13:34.06,ENG,,0,0,0,,Chenkov was matched with the child of a visiting American family.\N{\rCHT}有一個美國家庭到俄國做客 琴科夫與他們的孩子很像
+Dialogue: 0,0:13:34.23,0:13:37.77,ENG,,0,0,0,,There was an accident. The family died.\N{\rCHT}之後，這家人在一場車禍中罹難
+Dialogue: 0,0:13:37.94,0:13:40.90,ENG,,0,0,0,,Chenkov was sent to America...\N{\rCHT}琴科夫被送到了美國
+Dialogue: 0,0:13:41.07,0:13:44.44,ENG,,0,0,0,,...to live a complete lie...\N{\rCHT}...成為了一個冒名頂替者...
+Dialogue: 0,0:13:44.61,0:13:48.49,ENG,,0,0,0,,...and to patiently await the day to attack from within.\N{\rCHT}...耐心等待著從敵人內部進行反攻的那一天
+Dialogue: 0,0:13:48.66,0:13:50.70,ENG,,0,0,0,,Day X.\N{\rCHT}X之日
+Dialogue: 0,0:13:50.95,0:13:55.37,ENG,,0,0,0,,The long-awaited mission is here.\N{\rCHT}這個期待已久的任務現在開始了
+Dialogue: 0,0:13:56.08,0:13:59.04,ENG,,0,0,0,,Chenkov will travel to New York City...\N{\rCHT}琴科夫將要前往紐約
+Dialogue: 0,0:13:59.21,0:14:00.96,ENG,,0,0,0,,...to kill the president of Russia...\N{\rCHT}...去刺殺前來參加...
+Dialogue: 0,0:14:01.13,0:14:03.38,ENG,,0,0,0,,...to kill the president of Russia...\N{\rCHT}....去刺殺前來參加…
+Dialogue: 0,0:14:04.30,0:14:09.14,ENG,,0,0,0,,...at the funeral of the American vice president.\N{\rCHT}...美國副總統葬禮的俄國總統
+Dialogue: 0,0:14:10.30,0:14:14.77,ENG,,0,0,0,,Chenkov is KA 12.\N{\rCHT}琴科夫代號KA-12.
+Dialogue: 0,0:14:15.10,0:14:17.60,ENG,,0,0,0,,- «KA.» - Cold War legend.\N{\rCHT}- "KA." - 冷戰時期的傳奇人物
+Dialogue: 0,0:14:17.77,0:14:19.60,ENG,,0,0,0,,Highly trained Russian sleeper agents...\N{\rCHT}一群受過高級訓練的俄國臥底特工
+Dialogue: 0,0:14:19.77,0:14:23.65,ENG,,0,0,0,,...inserted into American society to sabotage and assassinate.\N{\rCHT}...滲透於美國社會，執行破壞和暗殺任務
+Dialogue: 0,0:14:23.82,0:14:27.70,ENG,,0,0,0,,Supposedly they'd wait years to strike. Decades, even.\N{\rCHT}他們潛伏多年，等待攻擊 也許已潛伏了幾十年
+Dialogue: 0,0:14:28.07,0:14:29.82,ENG,,0,0,0,,Supposedly.\N{\rCHT}也許吧
+Dialogue: 0,0:14:29.99,0:14:33.03,ENG,,0,0,0,,- What, you don't believe in moles? - I believe in moles, all right.\N{\rCHT}- 怎麼，你不相信有內奸這回事嗎？ - 我相信有內奸這回事
+Dialogue: 0,0:14:33.20,0:14:34.54,ENG,,0,0,0,,Just not the bogeyman.\N{\rCHT}可我不相信怪談
+Dialogue: 0,0:14:34.70,0:14:37.66,ENG,,0,0,0,,Especially if the plan is to kill their own president.\N{\rCHT}特別是這個計畫，是要刺殺他們自己的總統
+Dialogue: 0,0:14:37.83,0:14:39.75,ENG,,0,0,0,,This guy's selling smoke.\N{\rCHT}這傢伙在放煙霧彈
+Dialogue: 0,0:14:39.92,0:14:41.84,ENG,,0,0,0,,Wrap it up, Ev.\N{\rCHT}結束審問，伊芙
+Dialogue: 0,0:14:42.63,0:14:47.30,ENG,,0,0,0,,So a Russian agent is going to kill the Russian president? Is that it?\N{\rCHT}一名俄國特工要殺死俄國總統？是這樣嗎？
+Dialogue: 0,0:14:48.51,0:14:50.01,ENG,,0,0,0,,Okay.\N{\rCHT}好吧
+Dialogue: 0,0:14:50.30,0:14:52.43,ENG,,0,0,0,,Thank you very much.\N{\rCHT}非常感謝
+Dialogue: 0,0:14:52.60,0:14:56.18,ENG,,0,0,0,,And what would you like in return for that information?\N{\rCHT}說了這麼多，你有什麼要求嗎？
+Dialogue: 0,0:14:56.35,0:14:59.06,ENG,,0,0,0,,I simply wish to help you do...\N{\rCHT}我只是希望能幫你
+Dialogue: 0,0:14:59.23,0:15:01.65,ENG,,0,0,0,,...what you need to do.\N{\rCHT}...達成所願
+Dialogue: 0,0:15:04.15,0:15:06.11,ENG,,0,0,0,,You're good.\N{\rCHT}你真行
+Dialogue: 0,0:15:07.28,0:15:10.99,ENG,,0,0,0,,The KA program is brilliant bullshit.\N{\rCHT}這個KA計畫被你吹得真是天花亂墜
+Dialogue: 0,0:15:12.20,0:15:14.20,ENG,,0,0,0,,But I'm officially off duty...\N{\rCHT}不過，恕我不奉陪了
+Dialogue: 0,0:15:14.58,0:15:18.00,ENG,,0,0,0,,...so you can tell the rest of your little story to one of my colleagues.\N{\rCHT}...你可以把剩下的故事講給我同事聽
+Dialogue: 0,0:15:18.41,0:15:20.25,ENG,,0,0,0,,- Salt. - Yes?\N{\rCHT}- 紹特 - 有何貴幹？
+Dialogue: 0,0:15:20.75,0:15:24.75,ENG,,0,0,0,,The name of the Russian agent is Salt.\N{\rCHT}這個俄國特工的名字叫紹特
+Dialogue: 0,0:15:25.38,0:15:27.38,ENG,,0,0,0,,Evelyn Salt.\N{\rCHT}伊芙琳·紹特
+Dialogue: 0,0:15:30.80,0:15:32.72,ENG,,0,0,0,,My name is Evelyn Salt.\N{\rCHT}我就叫伊芙琳·紹特.
+Dialogue: 0,0:15:33.93,0:15:36.01,ENG,,0,0,0,,Then you are a Russian spy.\N{\rCHT}那麼你就是那個俄國特工
+Dialogue: 0,0:15:37.72,0:15:38.77,ENG,,0,0,0,,Truthful.\N{\rCHT}沒撒謊
+Dialogue: 0,0:15:39.23,0:15:44.73,ENG,,0,0,0,,So far the fMRI scan registers truthful on everything he's said.\N{\rCHT}到目前為止，磁共振成像儀顯示 他說的每一句話都是真的
+Dialogue: 0,0:15:48.15,0:15:49.61,ENG,,0,0,0,,Ted?\N{\rCHT}泰德？
+Dialogue: 0,0:15:55.24,0:15:57.91,ENG,,0,0,0,,Call Protective Services, make sure they find my husband.\N{\rCHT}呼叫安保組，讓他們務必找到我的丈夫
+Dialogue: 0,0:15:58.08,0:16:00.75,ENG,,0,0,0,,- I need to get to the phone. - Not after the neural scan.\N{\rCHT}- 我得打電話 - 不行，這種結果下不行
+Dialogue: 0,0:16:00.91,0:16:03.71,ENG,,0,0,0,,I can beat that thing five times out of six.\N{\rCHT}我可以輕易地騙過那玩意
+Dialogue: 0,0:16:03.88,0:16:05.84,ENG,,0,0,0,,I am trained to, and so is he.\N{\rCHT}我接受過訓練，他也是
+Dialogue: 0,0:16:06.29,0:16:08.63,ENG,,0,0,0,,I need my phone. I need to call my husband.\N{\rCHT}我要打電話給我丈夫
+Dialogue: 0,0:16:08.88,0:16:11.38,ENG,,0,0,0,,- Let me call my husband. - Let me see it.\N{\rCHT}- 讓我打電話給我丈夫 - 當我們的面打
+Dialogue: 0,0:16:15.64,0:16:17.97,ENG,,0,0,0,,There's a reason he mentioned my wedding ring, Ted.\N{\rCHT}他提到我的結婚戒指是有原因的，泰德
+Dialogue: 0,0:16:18.14,0:16:19.93,ENG,,0,0,0,,They don't just blow up their cover...\N{\rCHT}他們想要揭特工的底
+Dialogue: 0,0:16:20.10,0:16:22.60,ENG,,0,0,0,,...they blow up their whole cover life. You know that.\N{\rCHT}...會毀了所有和他有關係的人，你很清楚這點
+Dialogue: 0,0:16:22.77,0:16:25.40,ENG,,0,0,0,,- Do you remember Henley's wife? - Yes, I do.\N{\rCHT}- 你還記得亨裡的妻子嗎？ - 是的，我記得
+Dialogue: 0,0:16:25.81,0:16:27.07,ENG,,0,0,0,,Speaker.\N{\rCHT}打開麥克風
+Dialogue: 0,0:16:27.98,0:16:31.03,ENG,,0,0,0,,Please leave a message after the tone. Thanks. Bye.\N{\rCHT}請在嗶一聲之後留言，謝謝，再見
+Dialogue: 0,0:16:31.19,0:16:33.91,ENG,,0,0,0,,Honey, it's me. Please call me as soon as you get this.\N{\rCHT}親愛的，是我，聽到留言後馬上給我打電話
+Dialogue: 0,0:16:34.07,0:16:36.12,ENG,,0,0,0,,Okay, sweetheart? As soon as you get this.\N{\rCHT}聽懂了嗎，親愛的？馬上給我打電話
+Dialogue: 0,0:16:36.28,0:16:38.62,ENG,,0,0,0,,Godspeed, Comrade Chenkov.\N{\rCHT}祝你成功，琴科夫同志
+Dialogue: 0,0:16:39.54,0:16:43.79,ENG,,0,0,0,,Someone interrogate that piece of shit. Someone who enjoys getting answers.\N{\rCHT}找個厲害傢伙審訊那個混蛋
+Dialogue: 0,0:16:44.42,0:16:46.46,ENG,,0,0,0,,Look, Ev, try to stay calm.\N{\rCHT}聽我說，伊芙，保持冷靜
+Dialogue: 0,0:16:46.63,0:16:50.42,ENG,,0,0,0,,- I'm not a goddamn Russian spy. - I didn't say you were.\N{\rCHT}- 我不是該死的俄國間諜 - 我沒說你是
+Dialogue: 0,0:16:50.59,0:16:52.72,ENG,,0,0,0,,Let's go up to my office, we can sort this out.\N{\rCHT}去我的辦公室，把這事解決掉
+Dialogue: 0,0:16:52.88,0:16:55.97,ENG,,0,0,0,,No, no. We gotta go to a secure location. Now.\N{\rCHT}不，不，我們現在必須去一個安全的地方
+Dialogue: 0,0:16:56.14,0:16:57.43,ENG,,0,0,0,,All right.\N{\rCHT}好吧
+Dialogue: 0,0:16:57.80,0:17:00.31,ENG,,0,0,0,,Doesn't get any more secure than this.\N{\rCHT}沒什麼地方比這裡更安全
+Dialogue: 0,0:17:00.60,0:17:03.64,ENG,,0,0,0,,Ev? Five minutes.\N{\rCHT}伊芙？就待五分鐘
+Dialogue: 0,0:17:04.73,0:17:08.48,ENG,,0,0,0,,- Call Protective Services, find Mike. - I will.\N{\rCHT}- 打電話給安保組，找到邁克 - 我會的
+Dialogue: 0,0:17:08.65,0:17:10.82,ENG,,0,0,0,,This is bullshit.\N{\rCHT}真是見鬼
+Dialogue: 0,0:17:14.78,0:17:16.66,ENG,,0,0,0,,Give us a sec, we'll be right in.\N{\rCHT}稍等一會，我們馬上進來
+Dialogue: 0,0:17:18.28,0:17:20.29,ENG,,0,0,0,,I know we're heading into your jurisdiction.\N{\rCHT}我知道，這事歸你管
+Dialogue: 0,0:17:20.45,0:17:22.25,ENG,,0,0,0,,- I'm just asking for five minutes. - No.\N{\rCHT}- 只需要通融五分鐘 - 不行
+Dialogue: 0,0:17:29.21,0:17:32.21,ENG,,0,0,0,,If I have to. You can't have five minutes. I have to talk to her.\N{\rCHT}不可能，五分鐘也不行，我必須和她談談
+Dialogue: 0,0:17:32.38,0:17:34.80,ENG,,0,0,0,,- She's scared. Don't you see that? - I don't care.\N{\rCHT}- 你看不出她現在很害怕嗎？ - 我不管
+Dialogue: 0,0:17:34.97,0:17:38.35,ENG,,0,0,0,,There is a mole in Russia house, Ted. There is a mole. I am sure.\N{\rCHT}俄國部這裡有內奸，泰德 俄國部這裡有內奸，我肯定
+Dialogue: 0,0:17:51.36,0:17:53.40,ENG,,0,0,0,,Please step in the elevator.\N{\rCHT}請進入電梯
+Dialogue: 0,0:18:18.68,0:18:22.06,ENG,,0,0,0,,Russian president, okay? So I'm gonna ask you to step out of my way.\N{\rCHT}事關俄國總統，明白嗎？ 我請你不要阻礙我的調查
+Dialogue: 0,0:18:28.48,0:18:30.40,ENG,,0,0,0,,What the hell is that?\N{\rCHT}到底發生了什麼？
+Dialogue: 0,0:18:30.86,0:18:32.02,ENG,,0,0,0,,Sir.\N{\rCHT}長官
+Dialogue: 0,0:19:15.23,0:19:16.90,ENG,,0,0,0,,I gotta pee.\N{\rCHT}我要上廁所
+Dialogue: 0,0:19:18.03,0:19:21.82,ENG,,0,0,0,,- Where do you think he went? - No one saw him coming out the front.\N{\rCHT}- 他在哪？ - 沒人見他出大門
+Dialogue: 0,0:19:23.58,0:19:25.87,ENG,,0,0,0,,- Jesus Christ. - Here he is again.\N{\rCHT}- 老天 - 他出現了
+Dialogue: 0,0:19:26.41,0:19:28.91,ENG,,0,0,0,,No sign of him so far on the street.\N{\rCHT}沒跡象顯示他逃了出去
+Dialogue: 0,0:19:29.08,0:19:30.87,ENG,,0,0,0,,It's two minutes ago, before lockdown.\N{\rCHT}這段是封閉前兩分鐘的畫面
+Dialogue: 0,0:19:31.04,0:19:33.67,ENG,,0,0,0,,- Anything clean on him? - We just got a match, sir.\N{\rCHT}- 有清晰點的嗎？ - 我們找到一個，長官
+Dialogue: 0,0:19:33.84,0:19:35.55,ENG,,0,0,0,,It's May Day, 1981.\N{\rCHT}1981年勞動節
+Dialogue: 0,0:19:35.71,0:19:37.92,ENG,,0,0,0,,There's Brezhnev. And there...\N{\rCHT}這是勃列日涅夫（1977-1982年期間擔任聯主席）這是…
+Dialogue: 0,0:19:38.09,0:19:39.22,ENG,,0,0,0,,- Orlov. - That's him.\N{\rCHT}- 歐洛夫 - 就是他
+Dialogue: 0,0:19:39.38,0:19:42.26,ENG,,0,0,0,,He used to be a heavyweight once upon a time.\N{\rCHT}他以前是個大人物
+Dialogue: 0,0:19:42.55,0:19:44.51,ENG,,0,0,0,,Get that photo out. Every ticket counter...\N{\rCHT}把那張照片打出來，發給每一個售票櫃檯
+Dialogue: 0,0:19:44.68,0:19:47.72,ENG,,0,0,0,,...airport, train station, taxi dispatcher, the whole nine yards.\N{\rCHT}...機場，火車站，計程車調度員，所有的地方
+Dialogue: 0,0:19:47.89,0:19:51.06,ENG,,0,0,0,,- Get me Medford on a secure line. - Yes, sir.\N{\rCHT}- 用安全線路幫我接通麥德夫局長 - 是，長官
+Dialogue: 0,0:19:52.19,0:19:54.94,ENG,,0,0,0,,- Top-right screen. Is that live? - Yes, sir.\N{\rCHT}- 右上方的那個顯示幕是即時畫面嗎？ - 是的，長官
+Dialogue: 0,0:19:55.11,0:19:56.48,ENG,,0,0,0,,Where is she going? Track her.\N{\rCHT}她要去哪？追蹤她
+Dialogue: 0,0:19:58.44,0:20:01.11,ENG,,0,0,0,,No one may leave the building.\N{\rCHT}不允許任何人離開大樓
+Dialogue: 0,0:20:01.61,0:20:03.53,ENG,,0,0,0,,Rink Petroleum, Security.\N{\rCHT}倫克石油公司，保安部
+Dialogue: 0,0:20:03.70,0:20:06.62,ENG,,0,0,0,,Yes, you have a woman to your left, behind you. Evelyn Salt.\N{\rCHT}在你左後方有一個女人，伊芙琳·紹特
+Dialogue: 0,0:20:09.29,0:20:12.29,ENG,,0,0,0,,- We lost the visual on her. - Damn it. Where'd she go?\N{\rCHT}- 她不見了 - 媽的，她會去哪？
+Dialogue: 0,0:20:12.46,0:20:14.29,ENG,,0,0,0,,We are on security lockdown.\N{\rCHT}出於安全原因，全樓封閉
+Dialogue: 0,0:20:15.29,0:20:17.30,ENG,,0,0,0,,Dave? It's Evelyn, is Mike there?\N{\rCHT}戴夫？是我伊芙琳，邁克在嗎？
+Dialogue: 0,0:20:17.50,0:20:19.80,ENG,,0,0,0,,No, I'm sorry. He left after lunch.\N{\rCHT}抱歉，他不在，午飯後他就離開了
+Dialogue: 0,0:20:19.96,0:20:21.55,ENG,,0,0,0,,Hey, happy anniversary, huh?\N{\rCHT}祝你們周年愉快
+Dialogue: 0,0:20:21.72,0:20:23.38,ENG,,0,0,0,,The stairwell.\N{\rCHT}她在樓梯間
+Dialogue: 0,0:20:23.80,0:20:26.10,ENG,,0,0,0,,- Second floor. - What's on that floor?\N{\rCHT}- 二樓 - 二樓有什麼？
+Dialogue: 0,0:20:26.26,0:20:28.93,ENG,,0,0,0,,- It's empty, a security buffer. - Isolate and seal it.\N{\rCHT}- 二樓為空層，是安全緩衝區 - 進行封閉隔離
+Dialogue: 0,0:20:36.81,0:20:38.40,ENG,,0,0,0,,Get her records to my handheld.\N{\rCHT}把她的檔案傳到我手機上
+Dialogue: 0,0:20:40.57,0:20:42.28,ENG,,0,0,0,,East corridor.\N{\rCHT}東邊走廊
+Dialogue: 0,0:20:48.33,0:20:49.99,ENG,,0,0,0,,Notifying Metropolitan Police.\N{\rCHT}通知警局
+Dialogue: 0,0:20:58.75,0:21:00.59,ENG,,0,0,0,,Kill the power to the elevator doors.\N{\rCHT}切斷電梯門的電源
+Dialogue: 0,0:21:05.97,0:21:07.05,ENG,,0,0,0,,We got her.\N{\rCHT}我們困住她了
+Dialogue: 0,0:21:08.47,0:21:09.56,ENG,,0,0,0,,Locking down all floors.\N{\rCHT}封閉所有樓層
+Dialogue: 0,0:21:09.85,0:21:12.14,ENG,,0,0,0,,Security Protective Service responding to threat.\N{\rCHT}安保防威脅程式啟動
+Dialogue: 0,0:21:14.94,0:21:18.40,ENG,,0,0,0,,All right. Get a tactical team to meet me on the south stairwell.\N{\rCHT}派一隊戰術小組到南邊樓梯間和我會合
+Dialogue: 0,0:21:18.57,0:21:20.73,ENG,,0,0,0,,- Yes, sir. - Director Medford, sir.\N{\rCHT}- 是，長官 - 麥德夫局長的電話,，長官
+Dialogue: 0,0:21:20.90,0:21:22.74,ENG,,0,0,0,,Get me a side arm.\N{\rCHT}給我一支手槍
+Dialogue: 0,0:21:24.61,0:21:25.86,ENG,,0,0,0,,I'll call her back.\N{\rCHT}我一會給她回電話
+Dialogue: 0,0:21:31.04,0:21:33.83,ENG,,0,0,0,,- Shit. - Lost visual.\N{\rCHT}- 該死 - 失去畫面
+Dialogue: 0,0:21:35.04,0:21:36.75,ENG,,0,0,0,,Where is she, Albert? Talk to me.\N{\rCHT}她在哪，哥們？快告訴我
+Dialogue: 0,0:21:37.54,0:21:39.04,ENG,,0,0,0,,Come on.\N{\rCHT}快點
+Dialogue: 0,0:21:46.88,0:21:48.76,ENG,,0,0,0,,North hallway.\N{\rCHT}北邊過道
+Dialogue: 0,0:22:04.15,0:22:06.49,ENG,,0,0,0,,There, interrogation room, bring it up.\N{\rCHT}在那，審訊室，調出畫面
+Dialogue: 0,0:22:27.75,0:22:29.25,ENG,,0,0,0,,伊芙琳·紹特\N{\rCHT}職位：臥底特工 部門：俄國部 安全等級：1級
+Dialogue: 0,0:22:29.26,0:22:31.26,ENG,,0,0,0,,臥底身份：倫克石油公司產品發展部副總裁
+Dialogue: 0,0:22:32.37,0:22:33.87,ENG,,0,0,0,,戰術技能：全能
+Dialogue: 0,0:22:39.25,0:22:43.25,ENG,,0,0,0,,1988年11月24日父母死于車禍\N{\rCHT}從朝鮮釋放後，與德國籍男子邁克爾·科勞斯結婚
+Dialogue: 0,0:22:44.15,0:22:46.44,ENG,,0,0,0,,Switch down, switch down.\N{\rCHT}往下 往下
+Dialogue: 0,0:22:52.45,0:22:55.45,ENG,,0,0,0,,- Have you found him? - What the hell are you doing, Ev?\N{\rCHT}- 你找到他了嗎？ - 你究竟在幹什麼，伊芙？
+Dialogue: 0,0:22:55.62,0:22:56.79,ENG,,0,0,0,,This doesn't look good.\N{\rCHT}這種局面很難看
+Dialogue: 0,0:22:57.46,0:22:58.71,ENG,,0,0,0,,- Let's do it. - Move.\N{\rCHT}- 行動 - 前進
+Dialogue: 0,0:22:59.12,0:23:01.33,ENG,,0,0,0,,There's a tac team coming at you in 30 seconds.\N{\rCHT}戰術小組30秒鐘以內就會對你發起攻擊
+Dialogue: 0,0:23:01.50,0:23:02.96,ENG,,0,0,0,,Get your panties off the camera.\N{\rCHT}把你的內褲從監視器上拿開
+Dialogue: 0,0:23:03.13,0:23:05.30,ENG,,0,0,0,,Get where we can see you so you don't get hurt.\N{\rCHT}到我們能看見你的地方去 這樣你才不會受到傷害
+Dialogue: 0,0:23:05.46,0:23:08.47,ENG,,0,0,0,,- Have you found my husband? - These boys aren't fooling around.\N{\rCHT}- 你找到我丈夫了嗎？ - 這幫小子不是鬧著玩的
+Dialogue: 0,0:23:13.14,0:23:15.81,ENG,,0,0,0,,Please. I can't help you unless you talk to me.\N{\rCHT}別不理我，不然我幫不了你
+Dialogue: 0,0:23:15.97,0:23:17.52,ENG,,0,0,0,,Call me when you find Mike.\N{\rCHT}找到邁克以後給我打電話
+Dialogue: 0,0:23:18.14,0:23:19.98,ENG,,0,0,0,,Sweeping corridors outside the elevator.\N{\rCHT}通過電梯外走廊
+Dialogue: 0,0:23:25.15,0:23:26.69,ENG,,0,0,0,,Put the masks on.\N{\rCHT}帶上面具
+Dialogue: 0,0:23:27.11,0:23:28.15,ENG,,0,0,0,,Situation is hot.\N{\rCHT}情況危險
+Dialogue: 0,0:23:38.00,0:23:40.50,ENG,,0,0,0,,Open the door about two feet. We're gonna gas her.\N{\rCHT}把門打開兩英尺，我們要用催淚彈
+Dialogue: 0,0:23:40.67,0:23:44.04,ENG,,0,0,0,,- Tac team in position. Waiting for a go. - Is that absolutely necessary?\N{\rCHT}- 戰術小組到位，等候指示 - 真有這個必要嗎？
+Dialogue: 0,0:23:44.21,0:23:46.00,ENG,,0,0,0,,What, you want me to shoot her?\N{\rCHT}怎麼，想讓我開槍嗎？
+Dialogue: 0,0:23:46.34,0:23:48.38,ENG,,0,0,0,,Get a medical team in place now.\N{\rCHT}馬上派一支醫療隊過去
+Dialogue: 0,0:24:01.98,0:24:03.60,ENG,,0,0,0,,We're ready.\N{\rCHT}準備好了
+Dialogue: 0,0:24:08.03,0:24:09.03,ENG,,0,0,0,,Now.\N{\rCHT}準備
+Dialogue: 0,0:24:15.91,0:24:17.87,ENG,,0,0,0,,Okay, on my count.\N{\rCHT}聽我口令
+Dialogue: 0,0:24:18.04,0:24:21.58,ENG,,0,0,0,,Three, two, one. Go.\N{\rCHT}三、二、一，行動
+Dialogue: 0,0:24:28.46,0:24:29.88,ENG,,0,0,0,,Jesus Christ.\N{\rCHT}老天
+Dialogue: 0,0:24:43.73,0:24:46.94,ENG,,0,0,0,,Where is she? Come on, guys.\N{\rCHT}她在哪？快點，各位
+Dialogue: 0,0:24:47.11,0:24:49.98,ENG,,0,0,0,,- Find her, Albert. Now. - Suspect has escaped.\N{\rCHT}- 找到她，快 - 嫌犯已逃脫
+Dialogue: 0,0:24:50.40,0:24:52.20,ENG,,0,0,0,,There. Bring that up.\N{\rCHT}在那，畫面
+Dialogue: 0,0:24:55.20,0:24:57.12,ENG,,0,0,0,,Stay with her, she's crossing the street.\N{\rCHT}盯住她 她在過街
+Dialogue: 0,0:24:57.28,0:24:58.79,ENG,,0,0,0,,Pan the goddamn camera.\N{\rCHT}鏡頭快搖過去
+Dialogue: 0,0:25:10.92,0:25:12.76,ENG,,0,0,0,,Back that up and zoom in.\N{\rCHT}倒回去，放大
+Dialogue: 0,0:25:12.92,0:25:15.76,ENG,,0,0,0,,- We're looking for Michael Krause. - Freeze.\N{\rCHT}- 我們在尋找邁克爾·科勞斯 - 定格
+Dialogue: 0,0:25:16.26,0:25:19.60,ENG,,0,0,0,,- We're looking for her husband, Mike. - What the hell are you doing, Ev?\N{\rCHT}- 我們正在尋找她的丈夫邁克 - 你到底在幹什麼，伊芙？
+Dialogue: 0,0:25:20.00,0:25:22.60,ENG,,0,0,0,,Wait, when was that? No. No message.\N{\rCHT}等一下 那是何時? 沒有訊號
+Dialogue: 0,0:25:23.02,0:25:25.39,ENG,,0,0,0,,Let's switch to the exterior cameras.\N{\rCHT}轉到室外攝影機
+Dialogue: 0,0:25:25.56,0:25:28.48,ENG,,0,0,0,,Michael Krause left his office at the Smithsonian an hour ago.\N{\rCHT}邁克爾·科勞斯一個小時前 離開了他位於史密森學會的辦公室
+Dialogue: 0,0:25:28.65,0:25:30.40,ENG,,0,0,0,,Salt's apartment is 20 minutes away.\N{\rCHT}紹特的公寓離這只有20分鐘的路
+Dialogue: 0,0:25:30.57,0:25:32.53,ENG,,0,0,0,,We can cover it, but she won't go there.\N{\rCHT}我們可以進行監視，但她不會回去的
+Dialogue: 0,0:25:32.69,0:25:35.36,ENG,,0,0,0,,She will if she's serious about Mike. This stays in-house.\N{\rCHT}如果她緊張邁克的話就一定會回去 這事不許外泄
+Dialogue: 0,0:25:35.53,0:25:37.07,ENG,,0,0,0,,Okay.\N{\rCHT}好的
+Dialogue: 0,0:25:37.24,0:25:38.95,ENG,,0,0,0,,Taxi!\N{\rCHT}計程車！
+Dialogue: 0,0:25:42.50,0:25:44.41,ENG,,0,0,0,,U Street. I'll tell you when to stop.\N{\rCHT}去U街，待會告訴你在哪裡停
+Dialogue: 0,0:25:52.26,0:25:56.26,ENG,,0,0,0,,Hi, this is Mike. Please leave a message after the tone.\N{\rCHT}你好，我是邁克，請在“嗶”一聲後留言
+Dialogue: 0,0:26:22.74,0:26:25.20,ENG,,0,0,0,,He's one of the world's top arachnologists, Ev...\N{\rCHT}他是世界最頂尖的蜘蛛學家之一，伊芙
+Dialogue: 0,0:26:25.37,0:26:28.46,ENG,,0,0,0,,...and as such, enjoys pretty much unrestricted access...\N{\rCHT}...以此身份，可以無限制進入
+Dialogue: 0,0:26:28.62,0:26:31.04,ENG,,0,0,0,,...to the borders of North Korea.\N{\rCHT}...朝鮮邊界地區
+Dialogue: 0,0:26:31.21,0:26:34.67,ENG,,0,0,0,,So brush up on your bugs and get to know him.\N{\rCHT}所以，複習一下你的昆蟲知識，去結識他
+Dialogue: 0,0:26:36.38,0:26:39.18,ENG,,0,0,0,,He's the perfect cover to get us inside.\N{\rCHT}進入朝鮮，他是最好的掩護
+Dialogue: 0,0:27:18.97,0:27:20.47,ENG,,0,0,0,,Mike?\N{\rCHT}邁克？
+Dialogue: 0,0:27:23.05,0:27:26.06,ENG,,0,0,0,,Mike? Honey?\N{\rCHT}邁克？親愛的？
+Dialogue: 0,0:27:32.40,0:27:34.44,ENG,,0,0,0,,Hey, baby. Hey, baby.\N{\rCHT}寶貝，寶貝
+Dialogue: 0,0:27:34.61,0:27:36.57,ENG,,0,0,0,,It's all right.\N{\rCHT}沒事的
+Dialogue: 0,0:28:13.44,0:28:15.11,ENG,,0,0,0,,Come on. Come on.\N{\rCHT}過來，過來
+Dialogue: 0,0:28:20.74,0:28:22.91,ENG,,0,0,0,,Check for back exits.\N{\rCHT}檢查後面的出口
+Dialogue: 0,0:28:40.67,0:28:42.47,ENG,,0,0,0,,Go! Go!\N{\rCHT}上！上！
+Dialogue: 0,0:28:46.47,0:28:48.72,ENG,,0,0,0,,Bedroom, clear!\N{\rCHT}臥室，沒人！
+Dialogue: 0,0:28:50.14,0:28:52.10,ENG,,0,0,0,,Kitchen is clear.\N{\rCHT}廚房沒人！
+Dialogue: 0,0:28:53.81,0:28:55.90,ENG,,0,0,0,,Office, clear!\N{\rCHT}書房沒人！
+Dialogue: 0,0:28:56.36,0:28:58.82,ENG,,0,0,0,,Living room, clear!\N{\rCHT}客廳沒人！
+Dialogue: 0,0:29:25.55,0:29:27.64,ENG,,0,0,0,,Everybody out. Sixty seconds.\N{\rCHT}60秒內，全體撤離
+Dialogue: 0,0:29:55.50,0:29:57.21,ENG,,0,0,0,,Come here.\N{\rCHT}過來
+Dialogue: 0,0:29:58.38,0:29:59.79,ENG,,0,0,0,,What are you doing?\N{\rCHT}你在幹什麼？
+Dialogue: 0,0:29:59.96,0:30:02.46,ENG,,0,0,0,,She's not here. No sign of the husband either.\N{\rCHT}她不在這，也沒看見她丈夫
+Dialogue: 0,0:30:02.63,0:30:05.13,ENG,,0,0,0,,Did it ever occur to you that that Russian was lying?\N{\rCHT}你就沒想過，也許那個俄國人在撒謊嗎？
+Dialogue: 0,0:30:05.30,0:30:06.80,ENG,,0,0,0,,- Why'd she run? - I don't know.\N{\rCHT}- 她為什麼要跑？ - 我不知道
+Dialogue: 0,0:30:06.97,0:30:09.89,ENG,,0,0,0,,Because you were gonna lock her up? See it from her perspective.\N{\rCHT}也許是因為你想把她關起來？ 站在她的角度想一想
+Dialogue: 0,0:30:10.05,0:30:12.14,ENG,,0,0,0,,Maybe her husband is in some real danger.\N{\rCHT}也許她的丈夫真的有危險
+Dialogue: 0,0:30:12.31,0:30:14.56,ENG,,0,0,0,,Maybe, God forbid, Salt is who she says she is.\N{\rCHT}也許，但願不要發生，紹特沒有問題
+Dialogue: 0,0:30:14.77,0:30:16.39,ENG,,0,0,0,,«Maybe» is your department.\N{\rCHT}你的部門慢慢去“也許”吧
+Dialogue: 0,0:30:16.56,0:30:19.23,ENG,,0,0,0,,Mine is catching her so we can find out.\N{\rCHT}我的部門會捉她，查出真相
+Dialogue: 0,0:30:19.40,0:30:22.07,ENG,,0,0,0,,Protocol is clear. We bring her in or we bring her down.\N{\rCHT}規定寫的很清楚，要麼拘捕她，要麼幹掉她
+Dialogue: 0,0:30:22.23,0:30:24.36,ENG,,0,0,0,,Do you have any idea who this woman is?\N{\rCHT}你瞭解這個女人嗎？
+Dialogue: 0,0:30:24.53,0:30:27.57,ENG,,0,0,0,,What she's done for this country? Does that mean anything to you?\N{\rCHT}瞭解她對國家的貢獻嗎？這些你都不考慮嗎？
+Dialogue: 0,0:30:27.74,0:30:28.95,ENG,,0,0,0,,Should it?\N{\rCHT}需要嗎？
+Dialogue: 0,0:30:32.45,0:30:33.83,ENG,,0,0,0,,- Is your mom home? - No.\N{\rCHT}- 你媽媽在家嗎？ - 不在
+Dialogue: 0,0:30:33.99,0:30:35.58,ENG,,0,0,0,,- No? Can you do me a favor? - Yeah.\N{\rCHT}- 不在？能幫我一個忙嗎？ - 好的
+Dialogue: 0,0:30:35.75,0:30:37.92,ENG,,0,0,0,,Hi. You babysit Burt for me?\N{\rCHT}能幫我照看一下柏特嗎？
+Dialogue: 0,0:30:38.08,0:30:42.09,ENG,,0,0,0,,- Oh, yeah. - Yeah? Here's some money for food.\N{\rCHT}- 沒問題 - 真的嗎？這些是給他買食物的錢
+Dialogue: 0,0:30:42.67,0:30:44.05,ENG,,0,0,0,,Hi, Burt.\N{\rCHT}柏特
+Dialogue: 0,0:30:44.21,0:30:45.92,ENG,,0,0,0,,What you doing? You doing homework?\N{\rCHT}你在做什麼？做家庭作業？
+Dialogue: 0,0:30:46.09,0:30:48.22,ENG,,0,0,0,,Yeah, math.\N{\rCHT}是的，數學
+Dialogue: 0,0:30:49.26,0:30:52.05,ENG,,0,0,0,,- Algebra. - I hate math.\N{\rCHT}- 代數 - 我恨數學
+Dialogue: 0,0:31:03.11,0:31:05.03,ENG,,0,0,0,,Hi. Nice to see you again.\N{\rCHT}你好，又見面了
+Dialogue: 0,0:31:05.19,0:31:08.32,ENG,,0,0,0,,- You talking to me? - Yeah, I've seen you here before.\N{\rCHT}- 你在和我說話嗎？ - 是的，我以前在這裡見過你
+Dialogue: 0,0:31:09.78,0:31:13.16,ENG,,0,0,0,,Yeah, I— Yeah, I come here a lot.\N{\rCHT}沒錯，這裡我常來
+Dialogue: 0,0:31:13.74,0:31:14.79,ENG,,0,0,0,,You?\N{\rCHT}你呢？
+Dialogue: 0,0:31:14.95,0:31:17.58,ENG,,0,0,0,,Oh, I'm working here. At the museum.\N{\rCHT}我在這裡工作 在博物館工作
+Dialogue: 0,0:31:17.75,0:31:20.62,ENG,,0,0,0,,- I'm an arachnologist. - A what?\N{\rCHT}- 我是個蜘蛛學家 - 什麼學家？
+Dialogue: 0,0:31:20.79,0:31:22.79,ENG,,0,0,0,,A spider hunter.\N{\rCHT}一個捉蜘蛛的
+Dialogue: 0,0:31:24.46,0:31:26.21,ENG,,0,0,0,,You look like one.\N{\rCHT}你看起來很像
+Dialogue: 0,0:31:30.09,0:31:34.31,ENG,,0,0,0,,There are 40,000 species of spiders in the world.\N{\rCHT}世界上有40000種蜘蛛
+Dialogue: 0,0:31:35.10,0:31:38.02,ENG,,0,0,0,,And that one is mine.\N{\rCHT}這種是我的
+Dialogue: 0,0:31:38.18,0:31:39.23,ENG,,0,0,0,,You discovered it.\N{\rCHT}你發現的
+Dialogue: 0,0:31:39.39,0:31:40.64,ENG,,0,0,0,,Inside North Korea.\N{\rCHT}在朝鮮發現的
+Dialogue: 0,0:31:42.48,0:31:46.32,ENG,,0,0,0,,I named it Terrijoolsima peterbesti.\N{\rCHT}我給它命名為Terrijoolsima peterbesti
+Dialogue: 0,0:31:48.49,0:31:49.57,ENG,,0,0,0,,Do you get that?\N{\rCHT}你明白嗎？
+Dialogue: 0,0:31:51.20,0:31:52.62,ENG,,0,0,0,,No. Should I?\N{\rCHT}不明白，我以前聽過嗎？
+Dialogue: 0,0:31:52.78,0:31:55.45,ENG,,0,0,0,,Peterbesti? I named it after Pete Best.\N{\rCHT}Peterbesti？我是以皮特·貝斯特的名字命名的
+Dialogue: 0,0:31:55.62,0:31:57.16,ENG,,0,0,0,,The first drummer before Ringo.\N{\rCHT}披頭士樂隊的第一任鼓手
+Dialogue: 0,0:31:58.16,0:32:01.50,ENG,,0,0,0,,Best never was a famous Beatle...\N{\rCHT}貝斯特是最不出名的披頭士成員
+Dialogue: 0,0:32:03.75,0:32:07.34,ENG,,0,0,0,,...but now he's a famous spider.\N{\rCHT}...不過現在他成隻著名的蜘蛛
+Dialogue: 0,0:32:28.78,0:32:29.86,ENG,,0,0,0,,I got her.\N{\rCHT}找到她了
+Dialogue: 0,0:32:30.03,0:32:32.78,ENG,,0,0,0,,She's heading north towards the Metro station.\N{\rCHT}她正往北走，地鐵方向
+Dialogue: 0,0:32:33.45,0:32:34.53,ENG,,0,0,0,,Ev!\N{\rCHT}伊芙！
+Dialogue: 0,0:32:58.93,0:33:00.43,ENG,,0,0,0,,Ev!\N{\rCHT}伊芙！
+Dialogue: 0,0:33:10.53,0:33:12.99,ENG,,0,0,0,,She's eastbound, in the Penn Quarter Mall.\N{\rCHT}她在佩恩·科特商場，正在東行
+Dialogue: 0,0:33:16.91,0:33:18.41,ENG,,0,0,0,,Excuse me.\N{\rCHT}讓一讓
+Dialogue: 0,0:33:30.71,0:33:33.17,ENG,,0,0,0,,- Will do. Headed there now. - There she is.\N{\rCHT}- 已經前往 - 她在那
+Dialogue: 0,0:33:34.55,0:33:37.43,ENG,,0,0,0,,All teams, southbound toward the bridge. Box her in.\N{\rCHT}所有小組，南行，大橋方向，包圍她
+Dialogue: 0,0:33:48.31,0:33:49.36,ENG,,0,0,0,,Circle around!\N{\rCHT}包圍！
+Dialogue: 0,0:33:49.57,0:33:51.28,ENG,,0,0,0,,Salt! Stop!\N{\rCHT}紹特！站住！
+Dialogue: 0,0:33:51.44,0:33:53.74,ENG,,0,0,0,,- Keep her in your sights! - Coming up behind you!\N{\rCHT}- 盯住她！- 追上去！
+Dialogue: 0,0:33:53.90,0:33:55.28,ENG,,0,0,0,,Fuck!\N{\rCHT}操！
+Dialogue: 0,0:33:59.37,0:34:01.29,ENG,,0,0,0,,Keep back! Hold your fire!\N{\rCHT}不要妄動！不許開槍！
+Dialogue: 0,0:34:01.79,0:34:03.66,ENG,,0,0,0,,Salt! Down!\N{\rCHT}紹特！站住！
+Dialogue: 0,0:34:05.29,0:34:06.96,ENG,,0,0,0,,Salt!\N{\rCHT}紹特！
+Dialogue: 0,0:34:13.30,0:34:14.76,ENG,,0,0,0,,Spread out!\N{\rCHT}散開！
+Dialogue: 0,0:34:15.84,0:34:17.97,ENG,,0,0,0,,- Salt! - Don't shoot! Don't shoot, I'm innocent!\N{\rCHT}- 紹特！ - 別開槍！別開槍！我是無辜的！
+Dialogue: 0,0:34:18.14,0:34:20.26,ENG,,0,0,0,,- On the ground. Now! - Please don't. No!\N{\rCHT}- 馬上跪下！ - 別，別開槍！
+Dialogue: 0,0:34:20.43,0:34:23.47,ENG,,0,0,0,,Down! Salt! Do it now! On the ground!\N{\rCHT}不許動！紹特！馬上跪下！
+Dialogue: 0,0:34:23.64,0:34:24.85,ENG,,0,0,0,,I have to find my husband.\N{\rCHT}我必須找到我的丈夫
+Dialogue: 0,0:34:25.02,0:34:26.81,ENG,,0,0,0,,- Why'd you run? - To find my husband!\N{\rCHT}- 為什麼逃跑？ - 找我的丈夫！
+Dialogue: 0,0:34:26.98,0:34:28.77,ENG,,0,0,0,,- That's not a reason. - Don't shoot.\N{\rCHT}- 這是藉口 - 別開槍
+Dialogue: 0,0:34:28.94,0:34:30.31,ENG,,0,0,0,,- Stay back! - Last chance.\N{\rCHT}- 不許過來！ - 最後一次機會
+Dialogue: 0,0:34:30.48,0:34:32.98,ENG,,0,0,0,,I'm innocent. Somebody is setting me up!\N{\rCHT}我是無辜的，有人在陷害我
+Dialogue: 0,0:34:33.15,0:34:35.49,ENG,,0,0,0,,- Don't make me put you down. - Put the gun down!\N{\rCHT}- 別逼我開槍 - 放下該死的槍！
+Dialogue: 0,0:34:35.65,0:34:37.20,ENG,,0,0,0,,- Give yourself up! - Come on, Ev.\N{\rCHT}- 快投降！ - 投降吧，伊芙
+Dialogue: 0,0:34:37.40,0:34:39.91,ENG,,0,0,0,,Do what he says. We'll sort this out, I promise.\N{\rCHT}照他的話做，我保證一定把事情查清楚
+Dialogue: 0,0:34:40.20,0:34:43.33,ENG,,0,0,0,,I gotta bring you in, Salt. It's over. Face down.\N{\rCHT}我要拘捕你，紹特，結束了，趴下
+Dialogue: 0,0:34:43.49,0:34:46.12,ENG,,0,0,0,,Somebody's going to try to kill the Russian president.\N{\rCHT}有人想刺殺俄國總統
+Dialogue: 0,0:34:46.29,0:34:49.04,ENG,,0,0,0,,Do something about that! That's what you should worry about.\N{\rCHT}快去阻止！那才是重中之重
+Dialogue: 0,0:34:49.42,0:34:51.50,ENG,,0,0,0,,There's nowhere to run! Quit now!\N{\rCHT}你已經無路可逃！馬上投降！
+Dialogue: 0,0:34:51.67,0:34:53.00,ENG,,0,0,0,,No, I didn't do anything.\N{\rCHT}不，我什麼也沒幹
+Dialogue: 0,0:34:53.17,0:34:54.55,ENG,,0,0,0,,Get back! No!\N{\rCHT}別跳！不！
+Dialogue: 0,0:35:02.51,0:35:05.18,ENG,,0,0,0,,She's on a blue semi. Route 1, heading north.\N{\rCHT}她上了一輛藍色拖車，1號路，北行
+Dialogue: 0,0:35:05.35,0:35:07.18,ENG,,0,0,0,,Get a roadblock in place now.\N{\rCHT}馬上在前方設路障
+Dialogue: 0,0:35:19.28,0:35:21.20,ENG,,0,0,0,,Metro Police on alert.\N{\rCHT}全體警員注意
+Dialogue: 0,0:35:59.28,0:36:02.41,ENG,,0,0,0,,There she is. On the tanker.\N{\rCHT}她在那，在油罐車上
+Dialogue: 0,0:36:03.07,0:36:05.12,ENG,,0,0,0,,Stop. Stop!\N{\rCHT}停車！停車！
+Dialogue: 0,0:36:15.50,0:36:17.05,ENG,,0,0,0,,Ev!\N{\rCHT}伊芙！
+Dialogue: 0,0:36:32.98,0:36:35.36,ENG,,0,0,0,,You, my friend, have got a mole in your group.\N{\rCHT}朋友，你的部門出了內奸
+Dialogue: 0,0:36:35.77,0:36:38.78,ENG,,0,0,0,,- We don't know that yet. - I'd say she's a trained goddamn liar...\N{\rCHT}- 現在還不能下結論 - 她是個職業騙子
+Dialogue: 0,0:36:38.94,0:36:41.65,ENG,,0,0,0,,...and everything she's said has been to protect her cover.\N{\rCHT}...她說的每一件都是為了保護身份
+Dialogue: 0,0:36:41.82,0:36:44.45,ENG,,0,0,0,,Well, why don't you tell me how you really feel about it?\N{\rCHT}你就別兜圈子啦？
+Dialogue: 0,0:37:34.83,0:37:37.29,ENG,,0,0,0,,Get up on the shoulder! Get up on the shoulder!\N{\rCHT}上護欄！上護欄！
+Dialogue: 0,0:37:56.81,0:37:57.90,ENG,,0,0,0,,Okay, take it down.\N{\rCHT}下去
+Dialogue: 0,0:38:08.62,0:38:09.74,ENG,,0,0,0,,Shit!\N{\rCHT}該死！
+Dialogue: 0,0:38:13.04,0:38:14.08,ENG,,0,0,0,,Shit!\N{\rCHT}該死！
+Dialogue: 0,0:38:20.67,0:38:21.71,ENG,,0,0,0,,Okay.\N{\rCHT}好吧
+Dialogue: 0,0:38:22.21,0:38:24.51,ENG,,0,0,0,,Ted, I know you're her friend...\N{\rCHT}泰德，我知道她是你的朋友
+Dialogue: 0,0:38:25.22,0:38:27.13,ENG,,0,0,0,,...but we gotta drop a net on New York.\N{\rCHT}...可我們必須在紐約進行布控
+Dialogue: 0,0:38:27.51,0:38:30.39,ENG,,0,0,0,,- We gotta do it now. - Let's go!\N{\rCHT}- 馬上就得行動 - 來吧
+Dialogue: 0,0:38:33.06,0:38:36.48,ENG,,0,0,0,,Notify the Secret Service on Matveyev's detail.\N{\rCHT}把馬特維耶夫的情況通知特勤部
+Dialogue: 0,0:38:37.85,0:38:40.40,ENG,,0,0,0,,Tell them Salt might be coming their way.\N{\rCHT}告訴他們，紹特也許會造成威脅
+Dialogue: 0,0:38:41.73,0:38:44.28,ENG,,0,0,0,,And if she is, Orlov may not be far behind either.\N{\rCHT}如果她是內奸，歐洛夫也應該在附近
+Dialogue: 0,0:38:43.95,0:38:48.35,ENG,,0,0,0,,伊芙琳·紹特於1988年\N{\rCHT}在莫斯科發生的使其父母罹難的車禍中受傷</font>
+Dialogue: 0,0:38:48.28,0:38:49.32,ENG,,0,0,0,,You seen this?\N{\rCHT}你看過這個嗎？
+Dialogue: 0,0:38:49.49,0:38:51.91,ENG,,0,0,0,,Salt spent time in Russia as a kid.\N{\rCHT}紹特小時候在俄國待過一段時間
+Dialogue: 0,0:38:52.33,0:38:56.37,ENG,,0,0,0,,She was in a car accident with her parents in '88. They both died.\N{\rCHT}1988年她和父母發生了一起車禍，父母雙亡
+Dialogue: 0,0:38:57.79,0:39:02.42,ENG,,0,0,0,,They were teachers at the U.S. Embassy for the American children of the staff.\N{\rCHT}他們是美國大使館內部子女的老師
+Dialogue: 0,0:39:02.84,0:39:05.55,ENG,,0,0,0,,That's why we put her on Russia in the first place.\N{\rCHT}這也是我們選她進俄國部的原因
+Dialogue: 0,0:39:07.26,0:39:10.59,ENG,,0,0,0,,We need to get on a plane to New York, tonight.\N{\rCHT}今晚我們就得做飛機去紐約
+Dialogue: 0,0:40:08.78,0:40:11.91,ENG,,0,0,0,,And here in New York City, security has been beefed up...\N{\rCHT}紐約已加強了安保強度
+Dialogue: 0,0:40:12.07,0:40:14.70,ENG,,0,0,0,,...and preparations are continuing well into the night...\N{\rCHT}...副總統麥克斯韋爾·奧茨葬禮的準備工作
+Dialogue: 0,0:40:14.87,0:40:17.95,ENG,,0,0,0,,...for the funeral of Vice President Maxwell Oates.\N{\rCHT}...將持續至深晚
+Dialogue: 0,0:40:18.12,0:40:22.67,ENG,,0,0,0,,Among the dignitaries attending the service at St. Bartholomew's Church...\N{\rCHT}在聖巴薩羅繆教堂隨各路顯貴一同參加葬禮的
+Dialogue: 0,0:40:22.83,0:40:25.29,ENG,,0,0,0,,...is Russian president Boris Matveyev...\N{\rCHT}...還有俄國總統伯里斯·馬特維耶夫
+Dialogue: 0,0:40:25.46,0:40:27.96,ENG,,0,0,0,,...who arrived here in Manhattan earlier this evening.\N{\rCHT}...他于傍晚時分抵達曼哈頓
+Dialogue: 0,0:40:28.13,0:40:33.09,ENG,,0,0,0,,Public transportation will experience delays, with subway closures and...\N{\rCHT}公共交通屆時將會延遲，地鐵將會關閉以及…
+Dialogue: 0,0:40:36.85,0:40:38.14,ENG,,0,0,0,,Evelyn.\N{\rCHT}伊芙琳
+Dialogue: 0,0:40:38.60,0:40:40.35,ENG,,0,0,0,,Look at me.\N{\rCHT}看著我
+Dialogue: 0,0:40:42.85,0:40:45.19,ENG,,0,0,0,,If there was a way, I would kill them.\N{\rCHT}如果有機會，我會殺了他們
+Dialogue: 0,0:40:48.15,0:40:49.99,ENG,,0,0,0,,You shouldn't have come here.\N{\rCHT}你不該到這來
+Dialogue: 0,0:40:50.15,0:40:52.70,ENG,,0,0,0,,What do you mean? I don't understand.\N{\rCHT}你在說什麼？我不明白
+Dialogue: 0,0:40:54.32,0:40:56.58,ENG,,0,0,0,,Now they know who you are.\N{\rCHT}他們現在知道了你的身份
+Dialogue: 0,0:40:56.99,0:40:58.62,ENG,,0,0,0,,Who?\N{\rCHT}他們是誰？
+Dialogue: 0,0:40:59.62,0:41:01.46,ENG,,0,0,0,,Evelyn.\N{\rCHT}伊芙琳
+Dialogue: 0,0:41:02.66,0:41:04.50,ENG,,0,0,0,,Who?\N{\rCHT}是誰？
+Dialogue: 0,0:41:06.63,0:41:08.84,ENG,,0,0,0,,I would accept anything about you...\N{\rCHT}我會接受你的一切
+Dialogue: 0,0:41:09.00,0:41:10.76,ENG,,0,0,0,,...but I need to know.\N{\rCHT}...可你得告訴我
+Dialogue: 0,0:41:10.92,0:41:14.01,ENG,,0,0,0,,So look at me. Look at me.\N{\rCHT}看著我，看著我
+Dialogue: 0,0:41:16.01,0:41:18.68,ENG,,0,0,0,,Just tell me, okay?\N{\rCHT}告訴我，好嗎？
+Dialogue: 0,0:41:19.22,0:41:20.35,ENG,,0,0,0,,Just tell me.\N{\rCHT}告訴我
+Dialogue: 0,0:41:22.85,0:41:24.60,ENG,,0,0,0,,I work...\N{\rCHT}我為...
+Dialogue: 0,0:41:26.02,0:41:27.52,ENG,,0,0,0,,I work for the CIA.\N{\rCHT}我為中央情報局工作
+Dialogue: 0,0:41:30.03,0:41:32.03,ENG,,0,0,0,,So you see, there's...\N{\rCHT}你瞧，我們...
+Dialogue: 0,0:41:33.07,0:41:35.95,ENG,,0,0,0,,There's no future for us.\N{\rCHT}我們倆沒有未來
+Dialogue: 0,0:41:38.53,0:41:41.04,ENG,,0,0,0,,You're not safe with me.\N{\rCHT}和我在一起，不安全
+Dialogue: 0,0:41:42.37,0:41:44.54,ENG,,0,0,0,,I don't wanna be safe.\N{\rCHT}我不在乎安全
+Dialogue: 0,0:41:47.04,0:41:48.75,ENG,,0,0,0,,I know you...\N{\rCHT}我瞭解你
+Dialogue: 0,0:41:49.38,0:41:51.59,ENG,,0,0,0,,...and I wanna be with you.\N{\rCHT}...我想要和你在一起
+Dialogue: 0,0:41:52.84,0:41:56.38,ENG,,0,0,0,,I want to spend the rest of my life with you.\N{\rCHT}我想和你過一輩子
+Dialogue: 0,0:41:58.35,0:41:59.85,ENG,,0,0,0,,Okay?\N{\rCHT}可以嗎？
+Dialogue: 0,0:42:01.26,0:42:04.68,ENG,,0,0,0,,Okay. Okay.\N{\rCHT}好的，好的
+Dialogue: 0,0:42:24.41,0:42:28.63,ENG,,0,0,0,,Welcome to New York, Miss Hernandez. One night, a deluxe room.\N{\rCHT}歡迎來紐約，赫蘭達絲小姐，豪華間住一晚？
+Dialogue: 0,0:42:29.08,0:42:30.92,ENG,,0,0,0,,Do you need any help with your luggage?\N{\rCHT}需要我們幫你搬行李嗎？
+Dialogue: 0,0:42:31.09,0:42:32.25,ENG,,0,0,0,,Nope, I got it. Thanks.\N{\rCHT}不用，我自己來，謝謝
+Dialogue: 0,0:42:39.26,0:42:43.22,ENG,,0,0,0,,- I'll put these in the closet, sir? - Yeah, fine.\N{\rCHT}- 要放進櫃子內嗎? - 好的
+Dialogue: 0,0:44:10.56,0:44:12.06,ENG,,0,0,0,,I do solemnly swear...\N{\rCHT}我莊嚴宣誓
+Dialogue: 0,0:44:12.23,0:44:13.73,ENG,,0,0,0,,I do solemnly swear...\N{\rCHT}我莊嚴宣誓
+Dialogue: 0,0:44:13.90,0:44:17.32,ENG,,0,0,0,,...that I will support and defend the Constitution of the United States...\N{\rCHT}..我將擁護和捍衛美國憲法
+Dialogue: 0,0:44:17.48,0:44:20.90,ENG,,0,0,0,,...that I will support and defend the Constitution of the United States...\N{\rCHT}...我將擁護和捍衛美國憲法
+Dialogue: 0,0:44:21.07,0:44:23.41,ENG,,0,0,0,,...against all enemies, foreign and domestic.\N{\rCHT}...打擊一切國內外敵人
+Dialogue: 0,0:44:23.57,0:44:26.37,ENG,,0,0,0,,...against all enemies, foreign and domestic.\N{\rCHT}...打擊一切國內外敵人
+Dialogue: 0,0:44:26.53,0:44:28.33,ENG,,0,0,0,,That I will faithfully discharge...\N{\rCHT}我將忠實履行
+Dialogue: 0,0:44:28.50,0:44:30.21,ENG,,0,0,0,,That I will faithfully discharge...\N{\rCHT}我將忠實履行
+Dialogue: 0,0:44:30.37,0:44:32.92,ENG,,0,0,0,,...the duties of the office on which I'm about to enter.\N{\rCHT}...即將開始的工作職責
+Dialogue: 0,0:44:33.29,0:44:36.13,ENG,,0,0,0,,...the duties of the office on which I am about to enter.\N{\rCHT}...即將開始的工作職責
+Dialogue: 0,0:44:36.29,0:44:39.59,ENG,,0,0,0,,- So help me God. - So help me God.\N{\rCHT}- 願上帝保佑我 - 願上帝保佑我
+Dialogue: 0,0:44:45.05,0:44:47.85,ENG,,0,0,0,,A solemn day here in New York City.\N{\rCHT}今天的紐約是莊嚴而沉重的
+Dialogue: 0,0:44:48.01,0:44:50.93,ENG,,0,0,0,,The funeral of Vice President Maxwell Oates...\N{\rCHT}副總統麥克斯韋爾·奧茨的葬禮正在進行
+Dialogue: 0,0:44:51.10,0:44:54.81,ENG,,0,0,0,,...a former five-term U.S. senator and Cold War warrior...\N{\rCHT}...他之前同時也曾任五屆美國議員，更是冷戰鬥士
+Dialogue: 0,0:44:54.98,0:44:57.36,ENG,,0,0,0,,...whose greatest legacy may be as architect...\N{\rCHT}...他留下的偉大遺產
+Dialogue: 0,0:44:57.52,0:45:00.82,ENG,,0,0,0,,...of the new era of Russian-American relations.\N{\rCHT}...將為美俄關係開啟新的紀元
+Dialogue: 0,0:45:00.99,0:45:02.99,ENG,,0,0,0,,Russian president Boris Matveyev...\N{\rCHT}俄國總統伯里斯·馬特維耶夫
+Dialogue: 0,0:45:03.15,0:45:05.95,ENG,,0,0,0,,...has journeyed from Moscow to be an honorary pallbearer...\N{\rCHT}...不遠萬里從莫斯科趕來
+Dialogue: 0,0:45:06.12,0:45:10.33,ENG,,0,0,0,,...to the man he's called his greatest friend in the West.\N{\rCHT}...為他這位“最好的西方朋友”護柩送葬
+Dialogue: 0,0:46:08.18,0:46:10.51,ENG,,0,0,0,,What's the security perimeter?\N{\rCHT}安保範圍有多大？
+Dialogue: 0,0:46:10.68,0:46:13.73,ENG,,0,0,0,,We're two deep inside and we own this entire block.\N{\rCHT}裡面有兩層人牆，我們已將整個街區封鎖
+Dialogue: 0,0:46:13.89,0:46:17.23,ENG,,0,0,0,,And those are Secret Service agents, not CIA.\N{\rCHT}那些都是特勤部特工，不是中央情報局的人
+Dialogue: 0,0:46:17.40,0:46:20.86,ENG,,0,0,0,,- So relax. - That's real funny.\N{\rCHT}- 所以不用緊張 - 你真會開玩笑
+Dialogue: 0,0:46:21.40,0:46:23.57,ENG,,0,0,0,,Didn't know you guys told jokes.\N{\rCHT}我不知道你們居然還會講笑話
+Dialogue: 0,0:46:27.53,0:46:28.66,ENG,,0,0,0,,Detail, halt.\N{\rCHT}隊伍，停
+Dialogue: 0,0:46:30.91,0:46:33.08,ENG,,0,0,0,,Forward, march.\N{\rCHT}向前，進
+Dialogue: 0,0:46:49.93,0:46:54.35,ENG,,0,0,0,,Due to the funeral, the 51st Street station is closed.\N{\rCHT}由於葬禮的原因，51街地鐵站關閉
+Dialogue: 0,0:46:57.69,0:47:03.23,ENG,,0,0,0,,Repeat: Due to the funeral, the 51st Street station is closed.\N{\rCHT}重複一遍：由於葬禮的原因，51街地鐵站關閉
+Dialogue: 0,0:47:07.15,0:47:08.61,ENG,,0,0,0,,What-? Hey, what's going on?\N{\rCHT}什麼？怎麼回事？
+Dialogue: 0,0:47:09.28,0:47:10.70,ENG,,0,0,0,,Hey! There's smoke.\N{\rCHT}這有煙
+Dialogue: 0,0:47:12.95,0:47:16.00,ENG,,0,0,0,,Step back, step back. Everybody, move out of the way.\N{\rCHT}後退，後退，所有人都讓開
+Dialogue: 0,0:47:50.49,0:47:52.78,ENG,,0,0,0,,Eleanor. Good to see you.\N{\rCHT}埃莉諾，見到你真好
+Dialogue: 0,0:47:53.32,0:47:55.08,ENG,,0,0,0,,Thank you.\N{\rCHT}謝謝你
+Dialogue: 0,0:47:57.87,0:48:01.04,ENG,,0,0,0,,- Boris. - Mr. President.\N{\rCHT}- 伯里斯 - 總統先生
+Dialogue: 0,0:48:05.34,0:48:06.88,ENG,,0,0,0,,Hello.\N{\rCHT}你好
+Dialogue: 0,0:48:17.89,0:48:20.10,ENG,,0,0,0,,Please be seated.\N{\rCHT}請坐
+Dialogue: 0,0:48:32.11,0:48:34.70,ENG,,0,0,0,,Stand by for president's speech.\N{\rCHT}等待總統致辭
+Dialogue: 0,0:48:36.41,0:48:40.87,ENG,,0,0,0,,Patrolling church exterior. No one in or out the side doors.\N{\rCHT}巡查教堂四周，禁止任何人進出邊門
+Dialogue: 0,0:48:42.46,0:48:43.63,ENG,,0,0,0,,Mrs. Oates.\N{\rCHT}奧茨夫人
+Dialogue: 0,0:48:45.21,0:48:48.80,ENG,,0,0,0,,Eleanor, Joe, Marissa, Donald...\N{\rCHT}埃莉諾，喬，瑪瑞莎, 唐納德…
+Dialogue: 0,0:48:48.96,0:48:53.05,ENG,,0,0,0,,After the president, the choir sings, then Matveyev delivers the eulogy.\N{\rCHT}總統講完後，唱詩班演唱 然後馬特維耶夫致悼詞
+Dialogue: 0,0:48:53.22,0:48:56.43,ENG,,0,0,0,,If your girl tries anything here, it'd have to be pretty amazing.\N{\rCHT}如果你的小妞想鬧事，最好變成三頭六臂
+Dialogue: 0,0:49:00.77,0:49:05.40,ENG,,0,0,0,,I knew he would bring more to the job than just his years of experience.\N{\rCHT}我知道他為國家貢獻的不僅僅是豐富的經驗
+Dialogue: 0,0:49:05.73,0:49:07.86,ENG,,0,0,0,,As vice president...\N{\rCHT}作為副總統...
+Dialogue: 0,0:49:08.02,0:49:12.57,ENG,,0,0,0,,...he showed the world the best of what it is to be an American.\N{\rCHT}...他向世界展示了美國人真正的風采
+Dialogue: 0,0:49:13.07,0:49:14.36,ENG,,0,0,0,,And today...\N{\rCHT}今天...
+Dialogue: 0,0:49:14.53,0:49:19.29,ENG,,0,0,0,,...the world says goodbye to a great man.\N{\rCHT}...世界向一位偉人告別
+Dialogue: 0,0:49:28.63,0:49:30.25,ENG,,0,0,0,,I'll check the back.\N{\rCHT}我去查後面
+Dialogue: 0,0:49:30.42,0:49:32.92,ENG,,0,0,0,,Lima Zulu 4, clear.\N{\rCHT}L-Z-4，沒問題
+Dialogue: 0,0:49:58.78,0:50:01.12,ENG,,0,0,0,,My friendship with Maxwell Oates...\N{\rCHT}我與麥克斯韋爾·奧茨的友誼
+Dialogue: 0,0:50:01.29,0:50:04.29,ENG,,0,0,0,,...began in the unlikeliest of places:\N{\rCHT}...開始於一些非常讓人討厭的地方
+Dialogue: 0,0:50:04.46,0:50:07.96,ENG,,0,0,0,,- Lima Zulu 4, come in. - Across the negotiating table...\N{\rCHT}- L-Z-4，回答 - 在談判桌上…
+Dialogue: 0,0:50:08.13,0:50:10.29,ENG,,0,0,0,,What's your status, Lima Zulu 4?\N{\rCHT}報告狀況，L-Z-4？
+Dialogue: 0,0:50:10.46,0:50:11.67,ENG,,0,0,0,,We got two Ml As.\N{\rCHT}兩名特工失蹤
+Dialogue: 0,0:50:11.84,0:50:16.97,ENG,,0,0,0,,Lima Zulu 4 in the utility tunnel outside the crypt entrance and Lima Zulu 5.\N{\rCHT}L-Z-4和L-Z-5在地下室入口的管廊裡
+Dialogue: 0,0:50:17.14,0:50:20.26,ENG,,0,0,0,,I'm heading down to the crypt. Some kind of trouble down there.\N{\rCHT}我去地下室，下面好像出了狀況
+Dialogue: 0,0:50:20.43,0:50:22.06,ENG,,0,0,0,,What's going on, guys? Talk to me.\N{\rCHT}怎麼回事？快告訴我
+Dialogue: 0,0:50:22.22,0:50:25.35,ENG,,0,0,0,,Subunits Lima Zulu 1, 2 and 3, converge on the crypt. Repeat:\N{\rCHT}第二組L-Z-1、2、3前往地下室，重複：
+Dialogue: 0,0:50:25.52,0:50:26.60,ENG,,0,0,0,,Converge on the crypt.\N{\rCHT}前往地下室
+Dialogue: 0,0:50:26.77,0:50:28.81,ENG,,0,0,0,,He made all the difference, and for that...\N{\rCHT}他開啟了全新的局面，因為這個...
+Dialogue: 0,0:50:28.98,0:50:33.86,ENG,,0,0,0,,...he will always have my respect and admiration.\N{\rCHT}...我永遠敬重和欽佩他
+Dialogue: 0,0:51:19.53,0:51:22.66,ENG,,0,0,0,,That is what my friend Maxwell Oates would have said.\N{\rCHT}這是我好友麥克斯韋爾·奧茨所說的
+Dialogue: 0,0:51:29.46,0:51:30.63,ENG,,0,0,0,,What's going on?\N{\rCHT}發生什麼事啦？
+Dialogue: 0,0:51:41.47,0:51:43.01,ENG,,0,0,0,,Matveyev.\N{\rCHT}馬特維耶夫
+Dialogue: 0,0:51:43.89,0:51:45.06,ENG,,0,0,0,,Get goddamn Matveyev.\N{\rCHT}保護馬特維耶夫
+Dialogue: 0,0:52:00.20,0:52:02.87,ENG,,0,0,0,,- Get the bomb squad in here! - Go, go!\N{\rCHT}- 呼叫拆彈小組！ - 快去
+Dialogue: 0,0:52:42.57,0:52:44.28,ENG,,0,0,0,,Drop it!\N{\rCHT}放下槍！
+Dialogue: 0,0:52:46.28,0:52:47.33,ENG,,0,0,0,,Drop it!\N{\rCHT}放下槍！
+Dialogue: 0,0:52:54.25,0:52:57.55,ENG,,0,0,0,,- Any MTs down here? - I see her.\N{\rCHT}- 有醫療人員嗎？ - 我看見她了
+Dialogue: 0,0:52:57.71,0:53:00.46,ENG,,0,0,0,,- Keep your hands up! - Shooter's at 12 o'clock.\N{\rCHT}- 手舉著別動 - 槍手在正前方
+Dialogue: 0,0:53:00.63,0:53:03.89,ENG,,0,0,0,,- Gun! She's got a gun. She has a gun! - Don't move!\N{\rCHT}- 槍！她有槍，她有槍！- 不許動！
+Dialogue: 0,0:53:04.05,0:53:06.26,ENG,,0,0,0,,- Do not move! Do not move! - Keep your hands up!\N{\rCHT}- 不許動！不許動！- 舉起手！
+Dialogue: 0,0:53:06.43,0:53:09.68,ENG,,0,0,0,,- Take her down, take her down! - Check for other weapons.\N{\rCHT}- 按住她，按住她！ - 查查還有沒有別的武器
+Dialogue: 0,0:53:10.93,0:53:13.10,ENG,,0,0,0,,We need a medical crew in the crypt immediately.\N{\rCHT}馬上派一支醫療隊到地下室來
+Dialogue: 0,0:53:13.27,0:53:15.10,ENG,,0,0,0,,I can't feel a pulse.\N{\rCHT}他沒有脈搏了
+Dialogue: 0,0:53:15.44,0:53:18.40,ENG,,0,0,0,,Jurisdiction is clear. This is New York City.\N{\rCHT}這裡是紐約，司法權歸當地
+Dialogue: 0,0:53:18.57,0:53:21.03,ENG,,0,0,0,,N.Y.P.D. has her. She's going to 1 Police Plaza.\N{\rCHT}她在紐約警察局手上，會被帶到第一總局
+Dialogue: 0,0:53:21.19,0:53:23.74,ENG,,0,0,0,,- I'm not arguing jurisdiction. - We don't know yet, sir.\N{\rCHT}- 我不是在爭司法權 - 我們還不清楚，長官
+Dialogue: 0,0:53:23.91,0:53:26.49,ENG,,0,0,0,,- The shooter is CIA. I know her. - Yes, I'll be there.\N{\rCHT}- 槍手是中央情報局的人，我認識她 - 是的，我一會就去
+Dialogue: 0,0:53:26.66,0:53:28.12,ENG,,0,0,0,,I'll be on the next chopper out.\N{\rCHT}我搭下一班直升飛機
+Dialogue: 0,0:53:28.28,0:53:31.00,ENG,,0,0,0,,- Have your superior call the mayor. - Open up, guy, open up.\N{\rCHT}- 讓你的上司打電話給市長 - 讓開，讓開
+Dialogue: 0,0:53:31.16,0:53:32.58,ENG,,0,0,0,,Move it.\N{\rCHT}讓開
+Dialogue: 0,0:53:32.75,0:53:34.25,ENG,,0,0,0,,Back it up! Back it up!\N{\rCHT}後退！後退！
+Dialogue: 0,0:53:34.42,0:53:37.38,ENG,,0,0,0,,Come on, guys. Keep moving. Keep moving. Keep moving.\N{\rCHT}不要停，不要停，不要停
+Dialogue: 0,0:53:38.59,0:53:39.80,ENG,,0,0,0,,Let's go, let's go.\N{\rCHT}我們走，我們走
+Dialogue: 0,0:53:40.30,0:53:42.01,ENG,,0,0,0,,Hey, watch this guy, watch this guy.\N{\rCHT}注意這個傢伙，注意這個傢伙
+Dialogue: 0,0:53:42.17,0:53:43.22,ENG,,0,0,0,,- Back up! - Keep moving.\N{\rCHT}- 後退！ - 不要停
+Dialogue: 0,0:53:43.38,0:53:44.63,ENG,,0,0,0,,Sir, back up!\N{\rCHT}先生，後退！
+Dialogue: 0,0:53:44.80,0:53:47.39,ENG,,0,0,0,,Why? Why?!\N{\rCHT}為什麼？為什麼？
+Dialogue: 0,0:53:49.10,0:53:51.85,ENG,,0,0,0,,Do you have any idea how much blood is on your hands?\N{\rCHT}你知道你殺了多少人嗎？
+Dialogue: 0,0:53:52.02,0:53:53.60,ENG,,0,0,0,,You're gonna rot in a hole, Salt.\N{\rCHT}你會爛死在牢裡，紹特
+Dialogue: 0,0:53:53.77,0:53:55.81,ENG,,0,0,0,,I'm gonna see to it personally! A dark hole!\N{\rCHT}我會親手送你進去，送你下地獄！
+Dialogue: 0,0:53:55.98,0:53:57.48,ENG,,0,0,0,,Get ahold of yourself.\N{\rCHT}冷靜
+Dialogue: 0,0:53:58.15,0:53:59.65,ENG,,0,0,0,,Get the door, get the door.\N{\rCHT}打開門，打開門
+Dialogue: 0,0:53:59.82,0:54:02.49,ENG,,0,0,0,,- Get off me! - Back off, man! Back off!\N{\rCHT}- 放開我！ - 後退，後退！
+Dialogue: 0,0:54:02.65,0:54:03.99,ENG,,0,0,0,,That's it. Let's go.\N{\rCHT}好了，我們走
+Dialogue: 0,0:54:05.07,0:54:06.95,ENG,,0,0,0,,Stand back.\N{\rCHT}退後
+Dialogue: 0,0:54:07.66,0:54:10.20,ENG,,0,0,0,,Close it! Go, go, go!\N{\rCHT}關門 快走 走 走
+Dialogue: 0,0:54:22.46,0:54:26.01,ENG,,0,0,0,,Matveyev was declared dead en route to the hospital.\N{\rCHT}馬特維耶夫在送醫途中已不治身亡
+Dialogue: 0,0:54:26.43,0:54:27.76,ENG,,0,0,0,,Jesus Christ.\N{\rCHT}老天
+Dialogue: 0,0:54:28.18,0:54:29.35,ENG,,0,0,0,,Yeah.\N{\rCHT}沒錯
+Dialogue: 0,0:54:29.64,0:54:31.68,ENG,,0,0,0,,You were right about her.\N{\rCHT}你對她的懷疑沒錯
+Dialogue: 0,0:54:32.68,0:54:35.18,ENG,,0,0,0,,She had the drop on me, Ted.\N{\rCHT}她有機會殺我，泰德
+Dialogue: 0,0:54:36.52,0:54:38.27,ENG,,0,0,0,,Why didn't she shoot?\N{\rCHT}為什麼不動手？
+Dialogue: 0,0:55:03.88,0:55:05.51,ENG,,0,0,0,,Natasha.\N{\rCHT}娜塔莎
+Dialogue: 0,0:55:06.22,0:55:07.88,ENG,,0,0,0,,Natasha.\N{\rCHT}娜塔莎
+Dialogue: 0,0:55:08.18,0:55:09.80,ENG,,0,0,0,,Is that you?\N{\rCHT}是你嗎？
+Dialogue: 0,0:55:10.59,0:55:13.06,ENG,,0,0,0,,Did they give you a new face?\N{\rCHT}他們給了你一張新面孔，是嗎？
+Dialogue: 0,0:55:14.06,0:55:16.89,ENG,,0,0,0,,I'm going home tomorrow, Shnaider.\N{\rCHT}我明天就走了，施內德
+Dialogue: 0,0:55:17.39,0:55:18.89,ENG,,0,0,0,,Home to Grozny?\N{\rCHT}回格羅茲尼的家嗎？
+Dialogue: 0,0:55:19.06,0:55:23.32,ENG,,0,0,0,,My home is in Harrisburg, Pennsylvania.\N{\rCHT}我的家在賓夕法尼亞州哈里斯堡
+Dialogue: 0,0:55:24.61,0:55:28.95,ENG,,0,0,0,,My favorite place there is McDonald's on Fern Street...\N{\rCHT}我最喜歡去的地方是佛恩街上的麥當勞
+Dialogue: 0,0:55:29.24,0:55:31.45,ENG,,0,0,0,,...because it's near the river.\N{\rCHT}...因為它在河旁邊
+Dialogue: 0,0:55:32.49,0:55:34.79,ENG,,0,0,0,,But I won't want to go there anymore...\N{\rCHT}可是我不想再回去
+Dialogue: 0,0:55:35.16,0:55:38.12,ENG,,0,0,0,,...because my mother and father are dead.\N{\rCHT}...因為爸爸媽媽都死了
+Dialogue: 0,0:55:38.66,0:55:40.00,ENG,,0,0,0,,Natasha...\N{\rCHT}娜塔莎...
+Dialogue: 0,0:55:41.58,0:55:43.38,ENG,,0,0,0,,...will you miss me?\N{\rCHT}...你會想我嗎？
+Dialogue: 0,0:55:44.46,0:55:48.67,ENG,,0,0,0,,My name is Evelyn Salt.\N{\rCHT}我的名字叫伊芙琳·紹特
+Dialogue: 0,0:56:08.82,0:56:11.11,ENG,,0,0,0,,Cop down, cop down! Hear me!\N{\rCHT}員警遇襲，員警遇襲！聽見嗎！
+Dialogue: 0,0:56:59.41,0:57:03.67,ENG,,0,0,0,,Get out of the car with your hands on your head!\N{\rCHT}下車，把手放在腦後！
+Dialogue: 0,0:57:03.87,0:57:06.67,ENG,,0,0,0,,Right now! Hands in the air!\N{\rCHT}快！舉起手！
+Dialogue: 0,0:57:23.73,0:57:27.40,ENG,,0,0,0,,- Hey, did you see that? - Hey, get those guys over here.\N{\rCHT}- 你看見了嗎？ - 派人過來
+Dialogue: 0,0:57:27.57,0:57:29.86,ENG,,0,0,0,,Get them over here to help.\N{\rCHT}讓人去幫忙
+Dialogue: 0,0:57:44.87,0:57:47.46,ENG,,0,0,0,,Somebody help me get him out. Help me get him out.\N{\rCHT}幫我把他弄出來，幫我把他弄出來
+Dialogue: 0,0:58:22.45,0:58:24.16,ENG,,0,0,0,,What college will you attend?\N{\rCHT}你會上哪所大學？
+Dialogue: 0,0:58:24.33,0:58:26.21,ENG,,0,0,0,,Princeton University.\N{\rCHT}普林斯頓大學
+Dialogue: 0,0:58:26.37,0:58:29.42,ENG,,0,0,0,,- Where will you work? - The Central Intelligence Agency.\N{\rCHT}- 將來你會在哪裡工作？ - 中央情報局
+Dialogue: 0,0:58:29.59,0:58:31.63,ENG,,0,0,0,,Who will you trust?\N{\rCHT}你可以相信誰？
+Dialogue: 0,0:58:31.80,0:58:33.51,ENG,,0,0,0,,No one.\N{\rCHT}誰也不相信
+Dialogue: 0,0:58:33.67,0:58:36.05,ENG,,0,0,0,,Be very patient.\N{\rCHT}要耐心
+Dialogue: 0,0:58:36.22,0:58:37.93,ENG,,0,0,0,,Remember your training.\N{\rCHT}記住你接受的訓練
+Dialogue: 0,0:58:38.89,0:58:42.10,ENG,,0,0,0,,Remember, you're not the only one.\N{\rCHT}記住，你不是孤軍作戰
+Dialogue: 0,0:58:42.26,0:58:43.89,ENG,,0,0,0,,There are many others.\N{\rCHT}你有很多同伴
+Dialogue: 0,0:58:44.06,0:58:47.35,ENG,,0,0,0,,All of you waiting to strike.\N{\rCHT}你們潛伏下去，等待反攻
+Dialogue: 0,0:58:47.52,0:58:49.61,ENG,,0,0,0,,- Yes. - And we will strike.\N{\rCHT}- 是 - 我們一定會反攻的
+Dialogue: 0,0:58:50.31,0:58:53.48,ENG,,0,0,0,,- Together. - Yes.\N{\rCHT}- 團結一致 - 是
+Dialogue: 0,0:58:56.11,0:58:57.57,ENG,,0,0,0,,Wait.\N{\rCHT}等等
+Dialogue: 0,0:59:00.32,0:59:04.25,ENG,,0,0,0,,One day, I will come for all of you.\N{\rCHT}有一天，我會來找你們的
+Dialogue: 0,0:59:10.33,0:59:12.13,ENG,,0,0,0,,Hello, Evelyn.\N{\rCHT}你好，伊芙琳
+Dialogue: 0,0:59:12.46,0:59:15.63,ENG,,0,0,0,,I'm Martin Crenshaw from the U.S. Embassy.\N{\rCHT}我叫馬丁·柯南肖，來自美國大使館
+Dialogue: 0,0:59:16.30,0:59:19.68,ENG,,0,0,0,,We're very sorry about your family's accident.\N{\rCHT}對你家發生的變故，我們深表遺憾
+Dialogue: 0,0:59:26.77,0:59:30.60,ENG,,0,0,0,,Rioters outside the U.S. Embassy cheered their new leader's words...\N{\rCHT}抗議群眾聚集在美國大使館外面 為他們新任領導人的發言喝彩
+Dialogue: 0,0:59:30.77,0:59:34.27,ENG,,0,0,0,,...and called on him to take strong action against what they are calling...\N{\rCHT}...請求他採取強力行動報復
+Dialogue: 0,0:59:34.44,0:59:36.36,ENG,,0,0,0,,...a state-sponsored act of terrorism on the part of the U.S.\N{\rCHT}...對此次在美國政府籌畫陰謀恐怖活動
+Dialogue: 0,0:59:36.53,0:59:38.15,ENG,,0,0,0,,...a state-sponsored act of terrorism on the part of the U.S.\N{\rCHT}...對此次在美國政府籌畫陰謀恐怖活動
+Dialogue: 0,0:59:38.32,0:59:40.36,ENG,,0,0,0,,These riots are sparking similar outbreaks...\N{\rCHT}這些抗議活動在整個俄國
+Dialogue: 0,0:59:40.53,0:59:43.70,ENG,,0,0,0,,... of anti-American protests across Russia.\N{\rCHT}...引發一股反美風潮
+Dialogue: 0,0:59:43.87,0:59:47.04,ENG,,0,0,0,,«We will strike back,» says the new Russian president...\N{\rCHT}“我們一定會反擊”，新任俄國總統如是說
+Dialogue: 0,0:59:47.20,0:59:49.62,ENG,,0,0,0,,...angrily condemning today's assassination...\N{\rCHT}...並對今日犯下的刺殺罪行進行了強烈譴責
+Dialogue: 0,0:59:49.79,0:59:53.25,ENG,,0,0,0,,...by American intelligence officer Evelyn Salt.\N{\rCHT}...該罪刑由美國情報官員伊芙琳·紹特執行
+Dialogue: 0,0:59:53.84,0:59:57.42,ENG,,0,0,0,,As the body of slain President Matveyev is on its way back to Moscow...\N{\rCHT}隨著俄國總統馬特維耶夫的遺體起程返回莫斯科
+Dialogue: 0,0:59:57.59,1:00:00.18,ENG,,0,0,0,,...anti-American riots have erupted across Russia...\N{\rCHT}...反美騷亂橫掃整個俄國
+Dialogue: 0,1:00:00.34,1:00:03.05,ENG,,0,0,0,,...with bombings of U.S. diplomats' cars in Moscow.\N{\rCHT}...美國外交官的汽車相繼被炸
+Dialogue: 0,1:00:04.39,1:00:07.31,ENG,,0,0,0,,The Russian armed forces have been put on high alert.\N{\rCHT}俄國陸、海、空三軍已進入戰備等級
+Dialogue: 0,1:00:07.77,1:00:10.52,ENG,,0,0,0,,Responding to a rapidly escalating crisis...\N{\rCHT}隨著事態迅速升級
+Dialogue: 0,1:00:10.69,1:00:13.90,ENG,,0,0,0,,...President Lewis has called for an emergency White House meeting...\N{\rCHT}...路易斯總統在白宮召開了緊急會議
+Dialogue: 0,1:00:14.06,1:00:17.48,ENG,,0,0,0,,...with cabinet members, military leaders and NATO representatives.\N{\rCHT}...與會的有內閣成員，軍方領導以及北約代表
+Dialogue: 0,1:00:17.65,1:00:20.57,ENG,,0,0,0,,Greetings, Comrade Chenkov!\N{\rCHT}歡迎，琴科夫同志！
+Dialogue: 0,1:00:26.74,1:00:29.66,ENG,,0,0,0,,When I saw you in Washington, I almost ran to you.\N{\rCHT}當我在華盛頓看見你的時候真想跑過去擁抱你
+Dialogue: 0,1:00:37.09,1:00:39.80,ENG,,0,0,0,,You were not supposed to get married.\N{\rCHT}你不應該結婚
+Dialogue: 0,1:00:39.97,1:00:44.39,ENG,,0,0,0,,Not unless it had great tactical advantage.\N{\rCHT}除非能獲得戰術利益
+Dialogue: 0,1:00:44.55,1:00:46.26,ENG,,0,0,0,,I did it to seem normal.\N{\rCHT}我這麼做只想看起來普通一點
+Dialogue: 0,1:00:47.10,1:00:49.10,ENG,,0,0,0,,When you escaped today, I thought:\N{\rCHT}今天你逃走的時候，我在想：
+Dialogue: 0,1:00:49.27,1:00:53.44,ENG,,0,0,0,,«Even I could not have hoped for so much.»\N{\rCHT}“就算是我也可能做不到”
+Dialogue: 0,1:00:53.85,1:00:57.48,ENG,,0,0,0,,You are my greatest creation.\N{\rCHT}你是我最好的作品
+Dialogue: 0,1:00:58.65,1:01:00.82,ENG,,0,0,0,,You trained me well.\N{\rCHT}是你訓練的好
+Dialogue: 0,1:01:37.31,1:01:40.44,ENG,,0,0,0,,My husband, you have him?\N{\rCHT}我丈夫，在你手上嗎？
+Dialogue: 0,1:01:40.61,1:01:42.99,ENG,,0,0,0,,I had to be certain.\N{\rCHT}我必須保證萬無一失
+Dialogue: 0,1:01:43.15,1:01:45.24,ENG,,0,0,0,,But now you trust me?\N{\rCHT}你現在相信我嗎？
+Dialogue: 0,1:01:45.41,1:01:46.45,ENG,,0,0,0,,Completely.\N{\rCHT}完全相信
+Dialogue: 0,1:01:54.67,1:01:56.17,ENG,,0,0,0,,So...\N{\rCHT}那麼...
+Dialogue: 0,1:01:56.54,1:01:58.59,ENG,,0,0,0,,...tell me what's next.\N{\rCHT}...告訴我下一步做什麼
+Dialogue: 0,1:01:58.84,1:02:01.09,ENG,,0,0,0,,Next, part two:\N{\rCHT}下一步，即第二部分：
+Dialogue: 0,1:02:01.59,1:02:05.59,ENG,,0,0,0,,We seize control of this country's atomic weapons.\N{\rCHT}我們控制住這個國家的核武器
+Dialogue: 0,1:02:06.51,1:02:07.89,ENG,,0,0,0,,How?\N{\rCHT}怎麼進行？
+Dialogue: 0,1:02:08.60,1:02:09.68,ENG,,0,0,0,,You'll see.\N{\rCHT}你會知道的
+Dialogue: 0,1:02:11.01,1:02:12.27,ENG,,0,0,0,,All right.\N{\rCHT}好的
+Dialogue: 0,1:02:57.73,1:03:00.11,ENG,,0,0,0,,Are you ready to watch him die?\N{\rCHT}你準備好看著他死嗎？
+Dialogue: 0,1:03:08.57,1:03:09.62,ENG,,0,0,0,,Give me the gun.\N{\rCHT}給我一把槍
+Dialogue: 0,1:03:11.28,1:03:13.54,ENG,,0,0,0,,That would be too easy.\N{\rCHT}這樣太簡單啦
+Dialogue: 0,1:04:12.76,1:04:14.89,ENG,,0,0,0,,Satisfied?\N{\rCHT}滿意了嗎？
+Dialogue: 0,1:04:16.39,1:04:17.60,ENG,,0,0,0,,I'm satisfied.\N{\rCHT}很滿意
+Dialogue: 0,1:04:19.89,1:04:21.27,ENG,,0,0,0,,Comrades...\N{\rCHT}同志們
+Dialogue: 0,1:04:21.56,1:04:25.19,ENG,,0,0,0,,...our sister has rejoined us.\N{\rCHT}...我們的姐妹回來了
+Dialogue: 0,1:04:25.57,1:04:28.65,ENG,,0,0,0,,Russia will rise from the ashes...\N{\rCHT}俄國將浴火重生
+Dialogue: 0,1:04:28.82,1:04:32.28,ENG,,0,0,0,,...of the greatest war the world has ever seen.\N{\rCHT}...在一場聞所未聞的偉大戰爭中
+Dialogue: 0,1:04:33.99,1:04:36.12,ENG,,0,0,0,,And the world will hear us!\N{\rCHT}世界將聽見我們的聲音！
+Dialogue: 0,1:04:36.79,1:04:37.95,ENG,,0,0,0,,Will hear.\N{\rCHT}一定會
+Dialogue: 0,1:04:40.96,1:04:42.79,ENG,,0,0,0,,Welcome back to our family, sister.\N{\rCHT}歡迎回家，姐妹
+Dialogue: 0,1:04:45.75,1:04:46.80,ENG,,0,0,0,,Sister.\N{\rCHT}姐妹
+Dialogue: 0,1:04:55.22,1:05:00.93,ENG,,0,0,0,,Russia has changed. But our lives will not be wasted.\N{\rCHT}俄國已經變了，但我們的生命卻不會虛度
+Dialogue: 0,1:05:02.52,1:05:07.32,ENG,,0,0,0,,You're to meet an agent, NATO uniform, at a plane here.\N{\rCHT}你要去見一位特工，一名北約軍官
+Dialogue: 0,1:05:07.61,1:05:13.49,ENG,,0,0,0,,Tail number N182SL.\N{\rCHT}這裡有一架代號為N182SL的飛機
+Dialogue: 0,1:05:14.66,1:05:19.04,ENG,,0,0,0,,Final instructions will come from him.\N{\rCHT}他會告訴你最終指示
+Dialogue: 0,1:05:20.04,1:05:22.33,ENG,,0,0,0,,- That's it. - That's it.\N{\rCHT}- 就這些嗎？ - 就這些
+Dialogue: 0,1:05:22.66,1:05:25.54,ENG,,0,0,0,,After this, we go dark.\N{\rCHT}完成後，我們便隱姓埋名
+Dialogue: 0,1:05:26.08,1:05:28.34,ENG,,0,0,0,,Radio silent.\N{\rCHT}悄無聲息
+Dialogue: 0,1:05:29.34,1:05:31.13,ENG,,0,0,0,,You won't hear from me again...\N{\rCHT}你不會再聽見我的消息
+Dialogue: 0,1:05:31.67,1:05:32.97,ENG,,0,0,0,,...my daughter.\N{\rCHT}...我的女兒
+Dialogue: 0,1:05:55.28,1:05:56.91,ENG,,0,0,0,,Have you heard from Orlov?\N{\rCHT}歐洛夫說了什麼嗎？
+Dialogue: 0,1:05:57.82,1:06:00.04,ENG,,0,0,0,,Yes. Last word was «go.»\N{\rCHT}是的，他說“行動”
+Dialogue: 0,1:06:04.83,1:06:06.54,ENG,,0,0,0,,Chenkov.\N{\rCHT}琴科夫
+Dialogue: 0,1:06:08.09,1:06:09.71,ENG,,0,0,0,,Do you remember me?\N{\rCHT}你還記得我嗎？
+Dialogue: 0,1:06:15.05,1:06:16.18,ENG,,0,0,0,,Chenkov.\N{\rCHT}琴科夫
+Dialogue: 0,1:06:17.55,1:06:19.22,ENG,,0,0,0,,Did you miss me?\N{\rCHT}你會想我嗎？
+Dialogue: 0,1:06:19.76,1:06:20.97,ENG,,0,0,0,,Shnaider?\N{\rCHT}施內德？
+Dialogue: 0,1:06:25.52,1:06:26.81,ENG,,0,0,0,,How long have you been here?\N{\rCHT}你來這多久了？
+Dialogue: 0,1:06:29.23,1:06:33.28,ENG,,0,0,0,,I left Russia one year after you. To Prague.\N{\rCHT}你離開後第二年，我去了布拉格
+Dialogue: 0,1:06:33.53,1:06:37.16,ENG,,0,0,0,,I've been the NATO liaison to the White House for three years.\N{\rCHT}我成為北約駐白宮聯絡官已經三年了
+Dialogue: 0,1:06:37.57,1:06:40.24,ENG,,0,0,0,,Colonel Edward Tomas.\N{\rCHT}我現在是愛德華·湯姆斯上校
+Dialogue: 0,1:06:40.58,1:06:43.75,ENG,,0,0,0,,And you are my attache.\N{\rCHT}你現在是我的專員
+Dialogue: 0,1:06:43.91,1:06:45.58,ENG,,0,0,0,,Your ID.\N{\rCHT}你的身份證
+Dialogue: 0,1:06:46.25,1:06:48.58,ENG,,0,0,0,,Don't worry, we have plenty of time.\N{\rCHT}別擔心，我們有得是時間
+Dialogue: 0,1:06:48.75,1:06:51.67,ENG,,0,0,0,,More importantly, our mission.\N{\rCHT}更重要的是，我們的任務
+Dialogue: 0,1:06:52.05,1:06:56.47,ENG,,0,0,0,,The bunker eight stories below the White House.\N{\rCHT}白宮下有個八層的掩體
+Dialogue: 0,1:06:58.43,1:07:00.18,ENG,,0,0,0,,That's where the president needs to be.\N{\rCHT}要把總統逼到那裡去
+Dialogue: 0,1:07:05.43,1:07:06.60,ENG,,0,0,0,,How do we do it?\N{\rCHT}我們該怎麼做？
+Dialogue: 0,1:07:06.77,1:07:10.86,ENG,,0,0,0,,Don't worry, he'll be there. That's my job. I'll make sure he's there.\N{\rCHT}別擔心，他一定去的，那是我的任務 我一定會讓他去的
+Dialogue: 0,1:07:11.69,1:07:15.15,ENG,,0,0,0,,- What's my job? - Do you remember, Chenkov...\N{\rCHT}- 我的任務是什麼？ - 你還記得嗎，琴科夫？
+Dialogue: 0,1:07:15.32,1:07:19.07,ENG,,0,0,0,,...when we were young and you had to finish first in everything?\N{\rCHT}...我們小時候，你事事都想得第一？
+Dialogue: 0,1:07:19.24,1:07:20.99,ENG,,0,0,0,,Had to be the best at everything.\N{\rCHT}事事都想做到最好
+Dialogue: 0,1:07:21.20,1:07:25.20,ENG,,0,0,0,,Though you knew you would be beaten with a cane, you had to finish first.\N{\rCHT}就算挨藤條，你也必須得第一
+Dialogue: 0,1:07:25.37,1:07:26.96,ENG,,0,0,0,,I remember.\N{\rCHT}我記得
+Dialogue: 0,1:07:27.12,1:07:30.63,ENG,,0,0,0,,Tonight you will finish ahead of me again.\N{\rCHT}今晚你又要得第一了
+Dialogue: 0,1:07:33.34,1:07:37.63,ENG,,0,0,0,,Tonight you will kill America's president.\N{\rCHT}今晚你將殺掉美國總統
+Dialogue: 0,1:07:50.48,1:07:52.31,ENG,,0,0,0,,IDs, please.\N{\rCHT}請出示身份證
+Dialogue: 0,1:07:52.98,1:07:55.11,ENG,,0,0,0,,Pop the hood and open the trunk.\N{\rCHT}打開引擎蓋和後備箱
+Dialogue: 0,1:07:55.48,1:07:56.53,ENG,,0,0,0,,I'll check the side.\N{\rCHT}我檢查側面
+Dialogue: 0,1:08:00.28,1:08:01.32,ENG,,0,0,0,,Control, this is Hayes.\N{\rCHT}總控室，我是海斯
+Dialogue: 0,1:08:01.49,1:08:04.37,ENG,,0,0,0,,I have a Colonel Tomas and a Major Vicek.\N{\rCHT}這裡有一位湯姆斯上校和一位維切克少校
+Dialogue: 0,1:08:04.53,1:08:05.87,ENG,,0,0,0,,Undercarriage is clean.\N{\rCHT}底盤沒有問題
+Dialogue: 0,1:08:07.16,1:08:08.16,ENG,,0,0,0,,Back's clean.\N{\rCHT}後面沒有問題
+Dialogue: 0,1:08:09.58,1:08:12.79,ENG,,0,0,0,,Colonel. Major. All clear.\N{\rCHT}上校，少校，可以了
+Dialogue: 0,1:08:24.85,1:08:26.52,ENG,,0,0,0,,You know the drill, colonel.\N{\rCHT}你知道規矩，上校
+Dialogue: 0,1:08:28.48,1:08:31.06,ENG,,0,0,0,,Shrapnel. A Serbian landmine.\N{\rCHT}榴彈碎片，拜塞爾維亞地雷所賜
+Dialogue: 0,1:08:31.23,1:08:34.23,ENG,,0,0,0,,They've spent more time looking at it than the doctor did.\N{\rCHT}他們比醫生查的還要細
+Dialogue: 0,1:08:37.73,1:08:39.86,ENG,,0,0,0,,Step through, please, sir.\N{\rCHT}請上前，長官
+Dialogue: 0,1:08:43.78,1:08:44.95,ENG,,0,0,0,,Turn around.\N{\rCHT}轉身
+Dialogue: 0,1:08:48.41,1:08:50.04,ENG,,0,0,0,,Thank you.\N{\rCHT}謝謝
+Dialogue: 0,1:08:54.54,1:08:57.30,ENG,,0,0,0,,- Step through. Arms out. - Patience is key.\N{\rCHT}- 上前一步，伸開雙臂 - 一定要有耐心
+Dialogue: 0,1:08:57.46,1:09:00.55,ENG,,0,0,0,,I've been coming here for two years, others have been here longer.\N{\rCHT}我到這裡已經兩年了，其他人比我待的時間更長
+Dialogue: 0,1:09:00.72,1:09:03.05,ENG,,0,0,0,,- What others? - I don't know.\N{\rCHT}- 其他人？ - 我也不清楚
+Dialogue: 0,1:09:03.22,1:09:06.39,ENG,,0,0,0,,But you were the best of us and I was the least.\N{\rCHT}你是我們中最優秀的，而我微不足道
+Dialogue: 0,1:09:06.56,1:09:10.02,ENG,,0,0,0,,There must be others, here to finish what we begin.\N{\rCHT}一定會有其他人，來完成我們的事業
+Dialogue: 0,1:09:10.18,1:09:11.89,ENG,,0,0,0,,Colonel Tomas. Good to see you again.\N{\rCHT}湯姆斯上校，見到你高興
+Dialogue: 0,1:09:12.06,1:09:13.27,ENG,,0,0,0,,- Major Vicek. - Pleasure.\N{\rCHT}- 維切克少校 - 幸會
+Dialogue: 0,1:09:13.44,1:09:16.36,ENG,,0,0,0,,You'll have minutes to preview NATO's point of view before the meeting.\N{\rCHT}開會前，你們只有幾分鐘時間流覽北約方面的發言
+Dialogue: 0,1:09:17.86,1:09:20.69,ENG,,0,0,0,,Now, Ted, your Russian CI agent, Salt.\N{\rCHT}泰德，你那個俄國特工，紹特
+Dialogue: 0,1:09:20.86,1:09:24.20,ENG,,0,0,0,,- What can you tell us about her? - We think she may be a Soviet plant...\N{\rCHT}- 你有什麼想說的？ - 我們認為她可能是前蘇聯臥底
+Dialogue: 0,1:09:25.24,1:09:30.08,ENG,,0,0,0,,...inserted years ago in preparation for something the KGB called Day X.\N{\rCHT}...多年前安插進來，為克格勃的X之日作內應
+Dialogue: 0,1:09:30.25,1:09:34.42,ENG,,0,0,0,,A day marking the start of a large strike against the U.S. and her allies.\N{\rCHT}那一天是對美國及其盟國總攻的日子
+Dialogue: 0,1:09:41.92,1:09:44.18,ENG,,0,0,0,,This should be the president now.\N{\rCHT}應該是總統來了
+Dialogue: 0,1:09:47.10,1:09:49.31,ENG,,0,0,0,,You have a big job, Chenkov...\N{\rCHT}你的任務很重，琴科夫
+Dialogue: 0,1:09:49.47,1:09:50.77,ENG,,0,0,0,,...but you can do it.\N{\rCHT}...不過你能做到
+Dialogue: 0,1:09:51.10,1:09:53.27,ENG,,0,0,0,,You still haven't told me what your job is.\N{\rCHT}你還沒告訴我，你的任務是什麼
+Dialogue: 0,1:09:53.56,1:09:55.31,ENG,,0,0,0,,Home.\N{\rCHT}回家
+Dialogue: 0,1:09:55.60,1:09:57.23,ENG,,0,0,0,,I'm going home.\N{\rCHT}我要回家了
+Dialogue: 0,1:10:00.82,1:10:03.07,ENG,,0,0,0,,- Down! Take cover! - Get the president!\N{\rCHT}- 趴下！找掩護！ - 保護總統！
+Dialogue: 0,1:10:03.70,1:10:05.70,ENG,,0,0,0,,- A gun! He's got a gun! - Get back!\N{\rCHT}- 槍！他有槍！- 回去！
+Dialogue: 0,1:10:08.07,1:10:09.28,ENG,,0,0,0,,Get back!\N{\rCHT}回去！
+Dialogue: 0,1:10:23.01,1:10:24.17,ENG,,0,0,0,,- Are you okay, sir? - Yes.\N{\rCHT}- 你沒事嗎，先生？ - 沒事
+Dialogue: 0,1:10:24.34,1:10:26.84,ENG,,0,0,0,,- Goddamn it. - Geronimo is SOP, downward mobile.\N{\rCHT}- 該死 - 總統進入應急程式，向下移動中
+Dialogue: 0,1:10:32.64,1:10:33.73,ENG,,0,0,0,,Help, over here!\N{\rCHT}這裡需要幫忙
+Dialogue: 0,1:10:36.02,1:10:38.31,ENG,,0,0,0,,Get a medic! Get a medic!\N{\rCHT}叫醫生！叫醫生！
+Dialogue: 0,1:10:45.32,1:10:47.45,ENG,,0,0,0,,I think I saw her.\N{\rCHT}我想我看見她了
+Dialogue: 0,1:10:47.86,1:10:49.49,ENG,,0,0,0,,You saw who?\N{\rCHT}你看見了誰？
+Dialogue: 0,1:10:51.33,1:10:52.74,ENG,,0,0,0,,Salt.\N{\rCHT}紹特
+Dialogue: 0,1:10:53.87,1:10:55.50,ENG,,0,0,0,,I think I saw her in the corridor.\N{\rCHT}我想我看見她在走廊裡
+Dialogue: 0,1:10:58.00,1:10:59.54,ENG,,0,0,0,,The other NATO officer.\N{\rCHT}另一個北約軍官
+Dialogue: 0,1:11:02.96,1:11:04.17,ENG,,0,0,0,,She's here.\N{\rCHT}她來了
+Dialogue: 0,1:11:05.67,1:11:06.84,ENG,,0,0,0,,Check.\N{\rCHT}檢查
+Dialogue: 0,1:11:07.01,1:11:08.39,ENG,,0,0,0,,- Clear. - Move.\N{\rCHT}- 沒問題 - 前進
+Dialogue: 0,1:11:09.09,1:11:10.14,ENG,,0,0,0,,Go!\N{\rCHT}走！
+Dialogue: 0,1:11:10.30,1:11:12.89,ENG,,0,0,0,,We may have a visual on a second assailant. Evelyn Salt.\N{\rCHT}我們可能看見了另一個襲擊者，伊芙琳·紹特
+Dialogue: 0,1:11:13.06,1:11:16.23,ENG,,0,0,0,,Repeat: Evelyn Salt on premises. May be dressed as a NATO officer.\N{\rCHT}重複：伊芙琳·紹特在附近可能偽裝成一名北約軍官
+Dialogue: 0,1:11:17.19,1:11:20.69,ENG,,0,0,0,,This is not a drill. The White House is under attack.\N{\rCHT}這不是演習，白宮遭到襲擊
+Dialogue: 0,1:11:20.86,1:11:24.73,ENG,,0,0,0,,If you are near an exit, please proceed outside in an orderly manner.\N{\rCHT}如果你在出口附近，請按秩序離開
+Dialogue: 0,1:11:24.90,1:11:26.69,ENG,,0,0,0,,This is not a drill.\N{\rCHT}這不是演習
+Dialogue: 0,1:11:27.20,1:11:29.53,ENG,,0,0,0,,I need this hallway cleared to the left, now!\N{\rCHT}我要走廊左邊暢通無阻！
+Dialogue: 0,1:11:30.87,1:11:33.83,ENG,,0,0,0,,Command, this is Jenks. I need the PEOC bunker up and running.\N{\rCHT}總部，我是傑科斯 請開啟總統應急行動中心
+Dialogue: 0,1:11:33.99,1:11:36.37,ENG,,0,0,0,,If this was authorized by the Russian government...\N{\rCHT}如果這是俄國政府策劃的
+Dialogue: 0,1:11:36.54,1:11:39.08,ENG,,0,0,0,,...it is an act of war, and we will respond.\N{\rCHT}...就意味著開戰，我們一定要反擊
+Dialogue: 0,1:11:40.38,1:11:44.50,ENG,,0,0,0,,If you are near an exit, please proceed outside in an orderly manner.\N{\rCHT}如果你在出口附近，請按秩序離開
+Dialogue: 0,1:11:44.67,1:11:46.59,ENG,,0,0,0,,This is not a drill.\N{\rCHT}這不是演習
+Dialogue: 0,1:11:46.76,1:11:48.43,ENG,,0,0,0,,- Clear! - Let's go, sir.\N{\rCHT}- 沒問題！ - 我們走，先生
+Dialogue: 0,1:11:51.14,1:11:52.72,ENG,,0,0,0,,Alpha team!\N{\rCHT}A組！
+Dialogue: 0,1:11:56.43,1:11:58.06,ENG,,0,0,0,,Move, move.\N{\rCHT}前進，前進
+Dialogue: 0,1:11:58.73,1:12:00.06,ENG,,0,0,0,,Close it.\N{\rCHT}關門
+Dialogue: 0,1:12:00.40,1:12:01.73,ENG,,0,0,0,,Close it.\N{\rCHT}關門
+Dialogue: 0,1:12:09.03,1:12:11.74,ENG,,0,0,0,,Please proceed outside in an orderly manner.\N{\rCHT}如果你在出口附近，請按秩序離開
+Dialogue: 0,1:12:11.91,1:12:13.99,ENG,,0,0,0,,This is not a drill.\N{\rCHT}這不是演習
+Dialogue: 0,1:12:45.06,1:12:46.48,ENG,,0,0,0,,Go, go.\N{\rCHT}走，走
+Dialogue: 0,1:12:48.40,1:12:50.95,ENG,,0,0,0,,Geronimo approaching bunker door in five seconds.\N{\rCHT}總統五秒鐘內抵達掩體大門
+Dialogue: 0,1:12:55.70,1:12:57.08,ENG,,0,0,0,,Clear.\N{\rCHT}沒問題
+Dialogue: 0,1:13:05.08,1:13:06.34,ENG,,0,0,0,,Any chance she could follow?\N{\rCHT}她有可能跟來嗎？
+Dialogue: 0,1:13:06.50,1:13:08.59,ENG,,0,0,0,,My own men couldn't get through that door.\N{\rCHT}門一旦關上，我的人都沒法進入
+Dialogue: 0,1:13:08.76,1:13:11.42,ENG,,0,0,0,,Yeah, well, unfortunately, she isn't one of yours.\N{\rCHT}不幸地是，她不是你的人
+Dialogue: 0,1:13:15.80,1:13:16.80,ENG,,0,0,0,,Okay, go.\N{\rCHT}好了，走
+Dialogue: 0,1:13:18.47,1:13:20.31,ENG,,0,0,0,,Stay until it's shut and sealed.\N{\rCHT}等大門封閉後再走
+Dialogue: 0,1:13:24.23,1:13:26.19,ENG,,0,0,0,,Geronimo secured.\N{\rCHT}總統已安全
+Dialogue: 0,1:13:54.63,1:13:56.64,ENG,,0,0,0,,- Get me Director Medford. - Yes, sir.\N{\rCHT}- 為我接通麥德夫局長 - 是，先生
+Dialogue: 0,1:13:57.55,1:14:00.52,ENG,,0,0,0,,Sir, I think we need to seriously consider the possibility...\N{\rCHT}先生，我認為我應該慎重考慮...
+Dialogue: 0,1:14:00.68,1:14:03.56,ENG,,0,0,0,,...that today, right now, could be the start of Day X.\N{\rCHT}..今天也許就是X之日的可能性
+Dialogue: 0,1:14:04.27,1:14:06.77,ENG,,0,0,0,,Mr. President, Director Medford is up.\N{\rCHT}總統先生，麥德夫局長已線上
+Dialogue: 0,1:14:08.02,1:14:09.52,ENG,,0,0,0,,Marion, what's the situation?\N{\rCHT}瑪麗安，現在什麼情況？
+Dialogue: 0,1:14:09.69,1:14:12.69,ENG,,0,0,0,,It should be coming up on one of your screens.\N{\rCHT}已顯示在你前面的螢幕上
+Dialogue: 0,1:14:13.24,1:14:15.53,ENG,,0,0,0,,What you see there represents temperature drops...\N{\rCHT}你現在可以看見位於西伯利亞的
+Dialogue: 0,1:14:15.70,1:14:17.87,ENG,,0,0,0,,...in mobile missile units in Siberia.\N{\rCHT}...導彈移動部隊的溫度已經下降
+Dialogue: 0,1:14:18.37,1:14:21.87,ENG,,0,0,0,,It means the Russians are deploying their missiles to the field.\N{\rCHT}這意味著俄國人正在部署導彈
+Dialogue: 0,1:14:22.04,1:14:25.62,ENG,,0,0,0,,And that's been confirmed on the ground, Mr. President.\N{\rCHT}地面人員已經確認，總統先生
+Dialogue: 0,1:14:26.79,1:14:30.30,ENG,,0,0,0,,Mr. President, I strongly recommend we go from DEFCON 4 to DEFCON 2.\N{\rCHT}總統先生，我強烈建議將防禦戰備狀態從4級提升至2級
+Dialogue: 0,1:14:30.46,1:14:32.88,ENG,,0,0,0,,At least at our forward bases.\N{\rCHT}至少讓我們的前線基地進行提升
+Dialogue: 0,1:14:34.55,1:14:35.68,ENG,,0,0,0,,Do it.\N{\rCHT}同意
+Dialogue: 0,1:14:36.18,1:14:38.22,ENG,,0,0,0,,And since the Russians have deployed...\N{\rCHT}既然俄國人已經開始部署
+Dialogue: 0,1:14:39.01,1:14:42.14,ENG,,0,0,0,,...we need to look at our own nuclear attack options.\N{\rCHT}...我們要考慮啟動核打擊程式
+Dialogue: 0,1:14:42.56,1:14:45.39,ENG,,0,0,0,,It's not on the table, it's not a deterrent.\N{\rCHT}不玩點真的，就起不到威懾效果
+Dialogue: 0,1:14:47.06,1:14:49.44,ENG,,0,0,0,,Thanks, Marion. We'll come back to you.\N{\rCHT}謝謝，瑪麗安，我們一會再聯繫
+Dialogue: 0,1:15:09.71,1:15:11.25,ENG,,0,0,0,,Sir.\N{\rCHT}先生
+Dialogue: 0,1:15:14.26,1:15:17.38,ENG,,0,0,0,,The outer portal door is jammed. No response.\N{\rCHT}外部入口被卡住了，沒有反應
+Dialogue: 0,1:15:17.55,1:15:20.30,ENG,,0,0,0,,And we just lost the feed from most of our security cameras.\N{\rCHT}還有，大部分的監視器都失效了
+Dialogue: 0,1:15:20.47,1:15:23.10,ENG,,0,0,0,,We're blind down here and no one can enter this facility.\N{\rCHT}我們已看不見外部情況而且沒有人能夠進來
+Dialogue: 0,1:15:23.26,1:15:27.39,ENG,,0,0,0,,Command, our eyes are down. We have a PEOC outer security door malfunction.\N{\rCHT}總控，監視器失效 應急中心外部安全門失靈
+Dialogue: 0,1:15:27.85,1:15:29.52,ENG,,0,0,0,,Get out there now.\N{\rCHT}馬上去看看
+Dialogue: 0,1:15:29.69,1:15:31.56,ENG,,0,0,0,,Seal this room.\N{\rCHT}封閉這個房間
+Dialogue: 0,1:15:33.65,1:15:35.23,ENG,,0,0,0,,Down that corridor. Secure it.\N{\rCHT}看住走廊
+Dialogue: 0,1:16:20.32,1:16:22.99,ENG,,0,0,0,,Victims are being taken to George Washington Hospital.\N{\rCHT}傷者被送往喬治·華盛頓醫院
+Dialogue: 0,1:16:23.16,1:16:27.20,ENG,,0,0,0,,Reports are coming in that there are casualties at the White House.\N{\rCHT}據稱白宮方面有人傷亡
+Dialogue: 0,1:16:28.71,1:16:30.46,ENG,,0,0,0,,This is President Howard Lewis.\N{\rCHT}我是霍華德·路易斯總統
+Dialogue: 0,1:16:30.62,1:16:34.46,ENG,,0,0,0,,- Proceed with authentication. - Yes, Mr. President.\N{\rCHT}- 開始驗證 - 是，總統先生
+Dialogue: 0,1:16:38.67,1:16:41.72,ENG,,0,0,0,,- Ready to commence authentication. - Zulu.\N{\rCHT}- 準備驗證 - Z
+Dialogue: 0,1:16:41.88,1:16:42.97,ENG,,0,0,0,,- Tango. - Echo.\N{\rCHT}- T - E
+Dialogue: 0,1:16:43.14,1:16:44.14,ENG,,0,0,0,,- Seven. - Niner.\N{\rCHT}- 7 - 9
+Dialogue: 0,1:16:44.30,1:16:45.51,ENG,,0,0,0,,- Juliett. - X-ray.\N{\rCHT}- J - X
+Dialogue: 0,1:16:45.68,1:16:46.68,ENG,,0,0,0,,- Sierra. - Seven.\N{\rCHT}- S - 7
+Dialogue: 0,1:16:46.85,1:16:47.85,ENG,,0,0,0,,- Alfa. - Mike.\N{\rCHT}- A - M
+Dialogue: 0,1:16:48.02,1:16:49.68,ENG,,0,0,0,,- Charlie. - Whiskey.\N{\rCHT}- C - W
+Dialogue: 0,1:16:49.85,1:16:50.89,ENG,,0,0,0,,- Five. - Six.\N{\rCHT}- 5 - 6
+Dialogue: 0,1:16:51.06,1:16:54.15,ENG,,0,0,0,,- Tango. - Authentication codes confirmed.\N{\rCHT}- T - 識別碼已確認
+Dialogue: 0,1:16:54.86,1:16:56.69,ENG,,0,0,0,,It's all yours now, Mr. President.\N{\rCHT}總統先生，現在由您全權控制
+Dialogue: 0,1:16:57.32,1:16:58.57,ENG,,0,0,0,,God be with you.\N{\rCHT}願上帝與你同在
+Dialogue: 0,1:17:00.36,1:17:03.41,ENG,,0,0,0,,Attack options and targeting under your control, Mr. President.\N{\rCHT}核打擊以及目標選擇由您控制，總統先生
+Dialogue: 0,1:17:03.57,1:17:05.53,ENG,,0,0,0,,Anders and Nablo, what's your location?\N{\rCHT}安德斯和拿波，你們在哪裡？
+Dialogue: 0,1:17:06.66,1:17:08.95,ENG,,0,0,0,,Anders and Nablo, what's your location?\N{\rCHT}安德斯和拿波，你們在哪裡？
+Dialogue: 0,1:17:10.66,1:17:13.58,ENG,,0,0,0,,Is the camera outside this door working? Put it up.\N{\rCHT}門外的監視器正常嗎？ 升起來
+Dialogue: 0,1:17:13.75,1:17:15.79,ENG,,0,0,0,,Officer Dryer, what's your status?\N{\rCHT}崔爾警官，你在哪裡？
+Dialogue: 0,1:17:17.46,1:17:18.55,ENG,,0,0,0,,Officer Dryer, come in.\N{\rCHT}崔爾警官，回話
+Dialogue: 0,1:17:19.21,1:17:23.72,ENG,,0,0,0,,Federal Communication Commission is activating the Emergency Alert System.\N{\rCHT}聯邦通信委員會正在啟動緊急警戒系統
+Dialogue: 0,1:17:23.89,1:17:25.47,ENG,,0,0,0,,Who the hell's that?\N{\rCHT}那人究竟是誰？
+Dialogue: 0,1:17:26.39,1:17:29.18,ENG,,0,0,0,,That's her. That's Evelyn Salt.\N{\rCHT}是她，伊芙琳·紹特
+Dialogue: 0,1:17:29.35,1:17:31.06,ENG,,0,0,0,,She's in. Go to DEFCON 1.\N{\rCHT}她進來了，進入最高戰備狀態
+Dialogue: 0,1:17:31.23,1:17:32.64,ENG,,0,0,0,,Give me your side arm.\N{\rCHT}把你的槍給我
+Dialogue: 0,1:17:32.81,1:17:36.36,ENG,,0,0,0,,No, sir. Only Secret Service possess firearms in the president's vicinity.\N{\rCHT}不行，長官 只有特勤人員可以在總統周圍配槍
+Dialogue: 0,1:17:36.52,1:17:38.23,ENG,,0,0,0,,Screw protocol. We got an enemy agent.\N{\rCHT}別管什麼規定了，有敵方特工潛入
+Dialogue: 0,1:17:38.40,1:17:40.40,ENG,,0,0,0,,Protocol is protocol, sir.\N{\rCHT}必須遵守規定，長官
+Dialogue: 0,1:17:40.74,1:17:43.57,ENG,,0,0,0,,And dead is dead.\N{\rCHT}找死
+Dialogue: 0,1:17:44.07,1:17:45.70,ENG,,0,0,0,,Behind me!\N{\rCHT}躲在我後面
+Dialogue: 0,1:17:47.12,1:17:48.87,ENG,,0,0,0,,I'm the national security advisor.\N{\rCHT}我是國家安全顧問
+Dialogue: 0,1:17:49.33,1:17:50.37,ENG,,0,0,0,,Not anymore.\N{\rCHT}不再是了
+Dialogue: 0,1:17:58.25,1:17:59.30,ENG,,0,0,0,,Sit down.\N{\rCHT}坐下
+Dialogue: 0,1:18:02.67,1:18:03.72,ENG,,0,0,0,,Who are you?\N{\rCHT}你是誰？
+Dialogue: 0,1:18:04.26,1:18:07.22,ENG,,0,0,0,,My name, Mr. President, is Nikolai Tarkovsky.\N{\rCHT}總統先生，我的名字叫尼古拉·塔可夫斯基
+Dialogue: 0,1:18:08.43,1:18:10.93,ENG,,0,0,0,,And unless you do exactly as I say...\N{\rCHT}照我說的做
+Dialogue: 0,1:18:11.27,1:18:13.68,ENG,,0,0,0,,...I will be the last person you will ever see.\N{\rCHT}...不然，送你見上帝
+Dialogue: 0,1:18:19.69,1:18:22.07,ENG,,0,0,0,,Shall we look at some selective attack options?\N{\rCHT}我們選擇一下核打擊目標，好嗎？
+Dialogue: 0,1:18:22.36,1:18:23.57,ENG,,0,0,0,,Go to hell.\N{\rCHT}你去死吧
+Dialogue: 0,1:18:52.22,1:18:55.48,ENG,,0,0,0,,Selective attack options ready.\N{\rCHT}核攻擊準備完畢
+Dialogue: 0,1:18:55.69,1:18:57.10,ENG,,0,0,0,,Ted?\N{\rCHT}泰德？
+Dialogue: 0,1:18:57.27,1:19:02.40,ENG,,0,0,0,,Emergency action message released by...\N{\rCHT}緊急行動指令下達
+Dialogue: 0,1:19:02.86,1:19:06.03,ENG,,0,0,0,,Congratulations, Comrade Chenkov. You made it.\N{\rCHT}恭喜你，琴科夫同志，你成功了
+Dialogue: 0,1:19:06.40,1:19:08.32,ENG,,0,0,0,,Why didn't you tell me?\N{\rCHT}為什麼你不告訴我？
+Dialogue: 0,1:19:11.08,1:19:13.12,ENG,,0,0,0,,I tried many times, but...\N{\rCHT}我試過很多次，可是…
+Dialogue: 0,1:19:13.87,1:19:16.66,ENG,,0,0,0,,My loneliness was my only friend.\N{\rCHT}我的孤獨是我唯一的朋友
+Dialogue: 0,1:19:16.83,1:19:19.54,ENG,,0,0,0,,You weren't with us in Russia. I would have remembered you.\N{\rCHT}在俄國你沒有和我們在一起不然我會記得你
+Dialogue: 0,1:19:19.71,1:19:21.67,ENG,,0,0,0,,I was a class ahead, comrade.\N{\rCHT}我比你們大一班，同志
+Dialogue: 0,1:19:22.13,1:19:24.13,ENG,,0,0,0,,The brightest of any of Orlov's stars.\N{\rCHT}歐洛夫手下最明亮的明星
+Dialogue: 0,1:19:24.59,1:19:27.22,ENG,,0,0,0,,And now it's my honor to launch the attack.\N{\rCHT}現在，我將榮幸地啟動攻擊
+Dialogue: 0,1:19:27.59,1:19:29.14,ENG,,0,0,0,,Excuse me.\N{\rCHT}不好意思
+Dialogue: 0,1:19:29.84,1:19:33.35,ENG,,0,0,0,,Selective attack targets acquired.\N{\rCHT}請選擇核打擊目標
+Dialogue: 0,1:19:34.64,1:19:36.14,ENG,,0,0,0,,Tehran.\N{\rCHT}德黑蘭
+Dialogue: 0,1:19:36.48,1:19:37.89,ENG,,0,0,0,,Mecca.\N{\rCHT}麥加
+Dialogue: 0,1:19:38.64,1:19:41.69,ENG,,0,0,0,,Mecca? Tehran?\N{\rCHT}麥加？ 德黑蘭？
+Dialogue: 0,1:19:41.86,1:19:43.52,ENG,,0,0,0,,Part two of our plan.\N{\rCHT}這是我們的第二步計畫
+Dialogue: 0,1:19:43.69,1:19:45.65,ENG,,0,0,0,,Kill nine million people.\N{\rCHT}殺死900萬人
+Dialogue: 0,1:19:46.36,1:19:47.82,ENG,,0,0,0,,Enrage a billion Muslims.\N{\rCHT}激怒10億伊斯蘭教信徒
+Dialogue: 0,1:19:48.82,1:19:50.82,ENG,,0,0,0,,America will suffer a painful death.\N{\rCHT}美國將不得好死
+Dialogue: 0,1:19:50.99,1:19:53.99,ENG,,0,0,0,,Permissive action links initiated.\N{\rCHT}確認連接啟動
+Dialogue: 0,1:19:56.41,1:19:59.04,ENG,,0,0,0,,Missiles arming.\N{\rCHT}裝備導彈
+Dialogue: 0,1:20:05.34,1:20:07.67,ENG,,0,0,0,,Nuclear command...\N{\rCHT}裝配核彈
+Dialogue: 0,1:20:08.01,1:20:10.68,ENG,,0,0,0,,...posts airborne.\N{\rCHT}...配備飛行器
+Dialogue: 0,1:20:10.84,1:20:12.18,ENG,,0,0,0,,Let me join you.\N{\rCHT}讓我進來
+Dialogue: 0,1:20:13.60,1:20:16.52,ENG,,0,0,0,,ICBMs set to...\N{\rCHT}洲際導彈
+Dialogue: 0,1:20:16.89,1:20:19.14,ENG,,0,0,0,,...maximum yield.\N{\rCHT}...設為最大距離
+Dialogue: 0,1:20:21.10,1:20:23.44,ENG,,0,0,0,,You know, when you first came to Langley...\N{\rCHT}自從在蘭利第一次見到你
+Dialogue: 0,1:20:24.19,1:20:26.65,ENG,,0,0,0,,...I didn't think I'd be able to do it.\N{\rCHT}...我就知道，我無法
+Dialogue: 0,1:20:27.78,1:20:29.74,ENG,,0,0,0,,I didn't think I'd be able to...\N{\rCHT}我就知道，我無法...
+Dialogue: 0,1:20:30.49,1:20:33.45,ENG,,0,0,0,,...resist the temptation to say something.\N{\rCHT}...抵抗得了，向你吐露身份的衝動
+Dialogue: 0,1:20:33.66,1:20:36.45,ENG,,0,0,0,,Then you met Mike and...\N{\rCHT}之後，你遇見了邁克...
+Dialogue: 0,1:20:36.95,1:20:38.41,ENG,,0,0,0,,...well...\N{\rCHT}...然後...
+Dialogue: 0,1:20:38.96,1:20:40.87,ENG,,0,0,0,,...things changed.\N{\rCHT}...一切都變了
+Dialogue: 0,1:20:43.96,1:20:45.25,ENG,,0,0,0,,Let me join you.\N{\rCHT}讓我進來
+Dialogue: 0,1:20:46.63,1:20:50.72,ENG,,0,0,0,,All these years right in front of me and I never knew.\N{\rCHT}這麼多年來，你就在我的眼前 可我卻茫然無知
+Dialogue: 0,1:20:57.72,1:20:59.06,ENG,,0,0,0,,Let me join you.\N{\rCHT}讓我進來
+Dialogue: 0,1:20:59.98,1:21:01.94,ENG,,0,0,0,,I want to be with you.\N{\rCHT}我想和你在一起
+Dialogue: 0,1:21:13.16,1:21:18.08,ENG,,0,0,0,,The man we thought was dead has made a resurrection that is miraculous.\N{\rCHT}我們認為已死之人竟然重返人世，真是不可思議
+Dialogue: 0,1:21:18.24,1:21:19.95,ENG,,0,0,0,,President Matveyev is alive.\N{\rCHT}馬特維耶夫總統還活著
+Dialogue: 0,1:21:20.12,1:21:22.25,ENG,,0,0,0,,We're going to Russia. What you are seeing...\N{\rCHT}我們將畫面轉向俄國，你們現在看到的
+Dialogue: 0,1:21:22.42,1:21:24.88,ENG,,0,0,0,,...are live pictures of Russian president Matveyev...\N{\rCHT}...是俄國總統馬特維耶夫
+Dialogue: 0,1:21:25.04,1:21:28.92,ENG,,0,0,0,,...arriving at the airport outside of Moscow. This is astonishing.\N{\rCHT}...抵達莫斯科郊外飛機場的實況畫面 真是令人驚歎
+Dialogue: 0,1:21:29.09,1:21:32.30,ENG,,0,0,0,,According to his doctors, President Matveyev's mistaken death...\N{\rCHT}據他的醫生稱，總統馬特維耶夫由於
+Dialogue: 0,1:21:32.47,1:21:34.84,ENG,,0,0,0,,...is attributed to a temporary paralysis...\N{\rCHT}...暫時性麻痹而被誤認為死亡
+Dialogue: 0,1:21:35.01,1:21:37.56,ENG,,0,0,0,,...from a toxin derived from spider venom.\N{\rCHT}...其原因是中了一種蜘蛛毒素
+Dialogue: 0,1:21:37.76,1:21:41.93,ENG,,0,0,0,,A recap for those who may not have been following the events of the day...\N{\rCHT}摘要新聞將前因後果說明清楚
+Dialogue: 0,1:21:45.10,1:21:47.15,ENG,,0,0,0,,At least I was right.\N{\rCHT}至少我猜對了
+Dialogue: 0,1:21:50.03,1:21:53.53,ENG,,0,0,0,,I had a feeling we'd lost you back there in North Korea.\N{\rCHT}我曾有個感覺，在朝鮮的時候你叛變了
+Dialogue: 0,1:21:53.82,1:21:57.58,ENG,,0,0,0,,I could see how moved you were by Mike's little white-knight routine.\N{\rCHT}我看得出，邁克那套白馬王子英雄救美讓你有多感動
+Dialogue: 0,1:21:57.74,1:21:59.91,ENG,,0,0,0,,You were supposed to recruit him, Ev...\N{\rCHT}你的任務是招募他，伊芙
+Dialogue: 0,1:22:00.08,1:22:01.70,ENG,,0,0,0,,...not fall in love with him.\N{\rCHT}...而不是愛上他
+Dialogue: 0,1:22:02.96,1:22:05.08,ENG,,0,0,0,,That's why I told Orlov to pick him up.\N{\rCHT}所以我叫歐洛夫抓了他
+Dialogue: 0,1:22:08.34,1:22:10.55,ENG,,0,0,0,,By the way, how is Mike?\N{\rCHT}順便問一句，邁克還好嗎？
+Dialogue: 0,1:22:48.08,1:22:51.13,ENG,,0,0,0,,Identity confirmation requested.\N{\rCHT}請求身份驗證
+Dialogue: 0,1:22:51.30,1:22:54.63,ENG,,0,0,0,,Identity confirmation requested.\N{\rCHT}請求身份驗證
+Dialogue: 0,1:23:07.14,1:23:10.11,ENG,,0,0,0,,Identity confirmation requested.\N{\rCHT}請求身份驗證
+Dialogue: 0,1:23:15.11,1:23:16.74,ENG,,0,0,0,,Identity confirmed.\N{\rCHT}身份已驗證
+Dialogue: 0,1:23:31.71,1:23:35.80,ENG,,0,0,0,,Minuteman III ICBMs' batteries up to power.\N{\rCHT}民兵3洲際導彈充電完畢
+Dialogue: 0,1:24:15.17,1:24:17.46,ENG,,0,0,0,,Authorization, 99 percent.\N{\rCHT}授權，99%
+Dialogue: 0,1:24:24.35,1:24:25.64,ENG,,0,0,0,,Go!\N{\rCHT}上！
+Dialogue: 0,1:24:25.81,1:24:28.56,ENG,,0,0,0,,Permissive action links initiated.\N{\rCHT}執行連接啟動
+Dialogue: 0,1:24:28.77,1:24:32.40,ENG,,0,0,0,,Trident submarines at firing readiness.\N{\rCHT}三叉戟潛艇發射待命
+Dialogue: 0,1:24:33.15,1:24:34.23,ENG,,0,0,0,,Permission to launch.\N{\rCHT}請求發射
+Dialogue: 0,1:24:35.65,1:24:36.90,ENG,,0,0,0,,Permission to launch.\N{\rCHT}請求發射
+Dialogue: 0,1:25:06.60,1:25:07.97,ENG,,0,0,0,,Get down on the floor, now!\N{\rCHT}趴下在地上！
+Dialogue: 0,1:25:08.72,1:25:10.10,ENG,,0,0,0,,I said now!\N{\rCHT}馬上
+Dialogue: 0,1:25:15.11,1:25:18.07,ENG,,0,0,0,,Launch sequence aborted. Systems restored.\N{\rCHT}發射程式取消，系統重啟
+Dialogue: 0,1:25:18.23,1:25:20.15,ENG,,0,0,0,,- Move, move, move! - Show me your hands!\N{\rCHT}- 前進，前進，前進！- 舉起手！
+Dialogue: 0,1:25:20.32,1:25:22.07,ENG,,0,0,0,,- Get down! - What is your name, sir?\N{\rCHT}- 跪下！- 你的姓名，長官？
+Dialogue: 0,1:25:22.24,1:25:25.57,ENG,,0,0,0,,I'm Theodore Winter, CIA. Help the president.\N{\rCHT}我是中央情報局的希歐多爾·維特 快去救總統
+Dialogue: 0,1:25:27.08,1:25:28.95,ENG,,0,0,0,,Mr. President.\N{\rCHT}總統先生
+Dialogue: 0,1:25:30.41,1:25:32.71,ENG,,0,0,0,,Mr. President, can you hear me?\N{\rCHT}總統先生，你能聽見我說話嗎？
+Dialogue: 0,1:25:34.54,1:25:35.96,ENG,,0,0,0,,- Hold still. - EMT's on the way.\N{\rCHT}- 別動 - 緊急醫療小組正趕過來
+Dialogue: 0,1:25:36.13,1:25:38.25,ENG,,0,0,0,,Make sure they got body bags. At least seven.\N{\rCHT}讓他們帶上屍袋，最少七個
+Dialogue: 0,1:25:38.42,1:25:39.96,ENG,,0,0,0,,She's wearing a vest.\N{\rCHT}她穿著避彈衣
+Dialogue: 0,1:25:40.55,1:25:43.13,ENG,,0,0,0,,I'll meet you in five minutes. I wanna get cleaned up.\N{\rCHT}我過五分鐘去會議室，我去梳洗一下
+Dialogue: 0,1:25:43.30,1:25:44.89,ENG,,0,0,0,,And I want her alone in a room.\N{\rCHT}把她單獨關起來
+Dialogue: 0,1:25:45.05,1:25:47.55,ENG,,0,0,0,,If there are other KAs out there, I want her talking.\N{\rCHT}我要她供出，外面是否還有別的克格勃特工
+Dialogue: 0,1:25:47.72,1:25:51.35,ENG,,0,0,0,,She won't talk. She's trained not to, no matter what we do to her.\N{\rCHT}無論用什麼辦法，她都不會招 她受過這方面訓練
+Dialogue: 0,1:25:51.52,1:25:54.02,ENG,,0,0,0,,If we're gonna find these people, we gotta do it.\N{\rCHT}如果我們想找到同黨，得親自去找
+Dialogue: 0,1:26:01.40,1:26:03.57,ENG,,0,0,0,,I'm gonna get cleaned up. I'll be right back.\N{\rCHT}我去打理一下，一會回來
+Dialogue: 0,1:26:07.91,1:26:10.79,ENG,,0,0,0,,No one comes through until the president is secure. Step back.\N{\rCHT}沒有人可以通過 直到總統安全確認無誤後 退後
+Dialogue: 0,1:26:10.95,1:26:13.25,ENG,,0,0,0,,- I'm Theodore Winter - Step back, sir. Please.\N{\rCHT}- 我是希歐多爾·維特 - 請退後 麻煩您 長官
+Dialogue: 0,1:26:16.92,1:26:19.34,ENG,,0,0,0,,Well, sir, you're injured. Why don't you have a seat?\N{\rCHT}長官，你受傷了，為什麼不坐下來？
+Dialogue: 0,1:26:19.50,1:26:21.26,ENG,,0,0,0,,We'll take a look at you.\N{\rCHT}讓我們幫你看看
+Dialogue: 0,1:26:21.96,1:26:23.67,ENG,,0,0,0,,Are you okay?\N{\rCHT}你沒事吧？
+Dialogue: 0,1:26:24.51,1:26:26.89,ENG,,0,0,0,,Pretty good gash there.\N{\rCHT}好長的口子
+Dialogue: 0,1:26:27.05,1:26:29.64,ENG,,0,0,0,,Looks like you got a piece of glass in there.\N{\rCHT}好像有一塊玻璃碎片
+Dialogue: 0,1:26:53.20,1:26:54.33,ENG,,0,0,0,,She killed someone else.\N{\rCHT}她又殺了一個人
+Dialogue: 0,1:26:54.50,1:26:57.62,ENG,,0,0,0,,It's Winter. It's Ted Winter, sir. You better get up here.\N{\rCHT}是維特，是泰德·維特，長官 你最好趕快過來
+Dialogue: 0,1:27:06.97,1:27:08.89,ENG,,0,0,0,,Check him. Check him!\N{\rCHT}快檢查一下，快檢查一下！
+Dialogue: 0,1:27:09.68,1:27:10.72,ENG,,0,0,0,,Checking vitals.\N{\rCHT}檢查生命體征
+Dialogue: 0,1:27:10.89,1:27:13.68,ENG,,0,0,0,,I'm not getting a pulse. I'm not getting much.\N{\rCHT}沒有脈搏 幾乎沒有脈搏
+Dialogue: 0,1:27:19.18,1:27:22.52,ENG,,0,0,0,,The more we find out about Evelyn Salt, the less we seem to know.\N{\rCHT}對於伊芙紹特，我們挖掘的越多 卻似乎了解越少
+Dialogue: 0,1:27:22.69,1:27:23.98,ENG,,0,0,0,,She has proven a mystery.\N{\rCHT}可以確認的 她是團謎
+Dialogue: 0,1:27:25.07,1:27:28.66,ENG,,0,0,0,,I pledge allegiance to the flag...\N{\rCHT}我謹宣誓效忠…
+Dialogue: 0,1:27:29.53,1:27:33.49,ENG,,0,0,0,,...of the United States of America...\N{\rCHT}...美利堅合眾國國旗
+Dialogue: 0,1:27:35.45,1:27:40.67,ENG,,0,0,0,,...and to the republic for which it stands...\N{\rCHT}...及所代表之共和國
+Dialogue: 0,1:27:40.83,1:27:44.51,ENG,,0,0,0,,...one nation, under God...\N{\rCHT}...上帝之下的國度
+Dialogue: 0,1:27:44.67,1:27:49.01,ENG,,0,0,0,,...indivisible, with liberty...\N{\rCHT}...不可分裂，自由
+Dialogue: 0,1:27:49.18,1:27:52.81,ENG,,0,0,0,,...and justice for all.\N{\rCHT}...正義全民皆享
+Dialogue: 0,1:27:55.97,1:27:57.85,ENG,,0,0,0,,The lily fold.\N{\rCHT}百合花摺紙
+Dialogue: 0,1:27:58.35,1:28:02.86,ENG,,0,0,0,,In my new life, I'm trying to be less utilitarian.\N{\rCHT}在我的新生命中 我試著別那麼功利現實
+Dialogue: 0,1:28:10.07,1:28:12.91,ENG,,0,0,0,,Someone stopped the missile launch.\N{\rCHT}有人終止了導彈發射
+Dialogue: 0,1:28:13.41,1:28:16.45,ENG,,0,0,0,,President was unconscious, so it was either you or Winter.\N{\rCHT}總統沒有意識 所以不是你就是維特幹的
+Dialogue: 0,1:28:16.62,1:28:20.37,ENG,,0,0,0,,President says Winter started it, so...\N{\rCHT}總統說是維特開始的 所以
+Dialogue: 0,1:28:20.54,1:28:23.00,ENG,,0,0,0,,...you saved the world?\N{\rCHT}...是你救了這個世界?
+Dialogue: 0,1:28:26.42,1:28:27.63,ENG,,0,0,0,,Listen, Salt.\N{\rCHT}聽好 紹特
+Dialogue: 0,1:28:29.72,1:28:31.80,ENG,,0,0,0,,Winter we can figure out.\N{\rCHT}維特，我們可以找出源頭
+Dialogue: 0,1:28:31.97,1:28:34.76,ENG,,0,0,0,,He led a life. He left a trail.\N{\rCHT}他過著生活，他留有痕跡
+Dialogue: 0,1:28:34.93,1:28:39.23,ENG,,0,0,0,,We'll trace it back. I will dissect him if I have to.\N{\rCHT}我們會回溯過去 必要的話我會把他剖開來檢查
+Dialogue: 0,1:28:42.15,1:28:44.90,ENG,,0,0,0,,But Orlov is still out there.\N{\rCHT}但是奧洛夫還逍遙法外
+Dialogue: 0,1:28:45.82,1:28:48.69,ENG,,0,0,0,,Mike used to say the sweetest thing.\N{\rCHT}邁可常說最甜美的事
+Dialogue: 0,1:28:48.86,1:28:53.03,ENG,,0,0,0,,He used to say that his heart...\N{\rCHT}他常說他的心
+Dialogue: 0,1:28:53.20,1:28:55.24,ENG,,0,0,0,,...was a spider web...\N{\rCHT}...是張蜘蛛網
+Dialogue: 0,1:28:55.41,1:28:58.95,ENG,,0,0,0,,...and I was the spider who lived on top.\N{\rCHT}...而我是在上面生活的蜘蛛
+Dialogue: 0,1:29:00.96,1:29:05.25,ENG,,0,0,0,,And no matter where I was, I could attach a single thread...\N{\rCHT}不論我在哪裡 我都可以藉著一縷蛛絲
+Dialogue: 0,1:29:07.25,1:29:10.17,ENG,,0,0,0,,...so I would always be connected.\N{\rCHT}...這樣我就永遠都被牽繫著
+Dialogue: 0,1:29:11.34,1:29:14.72,ENG,,0,0,0,,So I could always find my way home.\N{\rCHT}我就能永遠可以找到回家的路
+Dialogue: 0,1:29:18.81,1:29:20.93,ENG,,0,0,0,,He told me whenever I saw a spider web...\N{\rCHT}他告訴我無論何時 只要我看到蜘蛛網
+Dialogue: 0,1:29:21.10,1:29:23.81,ENG,,0,0,0,,...I should remember how much he loved me.\N{\rCHT}...我就會記得他有多麼愛我
+Dialogue: 0,1:29:44.00,1:29:46.08,ENG,,0,0,0,,I did nothing.\N{\rCHT}我什麼也沒做
+Dialogue: 0,1:29:46.96,1:29:52.05,ENG,,0,0,0,,They killed my husband and I watched and I did nothing.\N{\rCHT}他們殺了我丈夫而我只是看著 我什麼事也沒做
+Dialogue: 0,1:29:56.01,1:29:58.26,ENG,,0,0,0,,For the greater good.\N{\rCHT}是為了大局著想
+Dialogue: 0,1:30:01.31,1:30:05.60,ENG,,0,0,0,,I'm sorry about Mike, but Orlov...\N{\rCHT}我對邁可感到遺憾 不過奧洛夫
+Dialogue: 0,1:30:06.86,1:30:09.98,ENG,,0,0,0,,- Give me something. - Why?\N{\rCHT}- 給我一點消息 - 為什麼
+Dialogue: 0,1:30:10.90,1:30:13.07,ENG,,0,0,0,,So you can arrest him?\N{\rCHT}所以你就可以逮捕他
+Dialogue: 0,1:30:13.24,1:30:17.37,ENG,,0,0,0,,So your taxpayers can put him in a pretty little box?\N{\rCHT}所以你的納稅人可以把他放進一個美麗的小盒子裡?
+Dialogue: 0,1:30:21.66,1:30:23.41,ENG,,0,0,0,,His real name is not Orlov.\N{\rCHT}他的真名不是奧洛夫
+Dialogue: 0,1:30:25.25,1:30:27.00,ENG,,0,0,0,,What is it?\N{\rCHT}那是什麼?
+Dialogue: 0,1:30:37.01,1:30:40.10,ENG,,0,0,0,,They gave us these teeth in the back...\N{\rCHT}他們給我們這些牙齒在後面
+Dialogue: 0,1:30:41.81,1:30:46.90,ENG,,0,0,0,,It's why I killed Winter. So he couldn't do it himself.\N{\rCHT}這就是我殺維特的原因 所以他不能自殺
+Dialogue: 0,1:30:49.02,1:30:50.11,ENG,,0,0,0,,Shit!\N{\rCHT}該死!
+Dialogue: 0,1:30:52.32,1:30:54.53,ENG,,0,0,0,,Goddamn cyanide.\N{\rCHT}該死的氰化物
+Dialogue: 0,1:30:55.53,1:30:57.86,ENG,,0,0,0,,Yeah, it's Peabody. Put me through straight away.\N{\rCHT}對，是皮博迪 直接把我接過去
+Dialogue: 0,1:30:59.37,1:31:02.04,ENG,,0,0,0,,Salt just tried to kill herself. Yeah.\N{\rCHT}紹特剛剛想自殺，對
+Dialogue: 0,1:31:02.20,1:31:03.33,ENG,,0,0,0,,Could be cyanide.\N{\rCHT}可能是氰化物
+Dialogue: 0,1:31:03.50,1:31:04.91,ENG,,0,0,0,,Keep her alive, folks.\N{\rCHT}要讓她活著，各位
+Dialogue: 0,1:31:05.08,1:31:07.29,ENG,,0,0,0,,No, they're trying to figure that out right now.\N{\rCHT}他們現在正在想辦法
+Dialogue: 0,1:31:11.04,1:31:12.63,ENG,,0,0,0,,Are her airways clear?\N{\rCHT}她的氣管通暢嗎?
+Dialogue: 0,1:31:13.71,1:31:15.05,ENG,,0,0,0,,Shit.\N{\rCHT}可惡
+Dialogue: 0,1:31:22.26,1:31:23.85,ENG,,0,0,0,,Don't shoot, don't shoot.\N{\rCHT}別開槍 別開槍
+Dialogue: 0,1:31:26.73,1:31:28.35,ENG,,0,0,0,,Freeze!\N{\rCHT}站住
+Dialogue: 0,1:31:37.78,1:31:39.28,ENG,,0,0,0,,Our father has decided that...\N{\rCHT}我們的父親決定...
+Dialogue: 0,1:31:39.45,1:31:41.62,ENG,,0,0,0,,...the time has come...\N{\rCHT}...時間到了
+Dialogue: 0,1:31:41.78,1:31:45.29,ENG,,0,0,0,,...for you all to start your new lives.\N{\rCHT}...我們要開啟你們全新的生活
+Dialogue: 0,1:31:48.58,1:31:53.25,ENG,,0,0,0,,To prepare for our next attack.\N{\rCHT}準備好我們的下一場攻擊
+Dialogue: 0,1:32:17.53,1:32:19.61,ENG,,0,0,0,,Can I help you?\N{\rCHT}有什麼是我可以效勞的嗎
+Dialogue: 0,1:32:28.62,1:32:30.71,ENG,,0,0,0,,My daughter.\N{\rCHT}我的女兒
+Dialogue: 0,1:32:31.29,1:32:35.09,ENG,,0,0,0,,Have you come to kiss the ring?\N{\rCHT}你是來親吻戒指的嗎?
+Dialogue: 0,1:32:39.22,1:32:42.34,ENG,,0,0,0,,I've come to tell you that I'm free.\N{\rCHT}我是來告訴你我自由了
+Dialogue: 0,1:41:46.76,1:41:49.14,ENG,,0,0,0,,Are you ready to watch him die?\N{\rCHT}你準備好看著他死嗎？
+Dialogue: 0,1:41:57.61,1:41:58.65,ENG,,0,0,0,,Give me the gun.\N{\rCHT}給我一把槍
+Dialogue: 0,1:42:00.32,1:42:02.57,ENG,,0,0,0,,That would be too easy.\N{\rCHT}這樣太簡單啦
+Dialogue: 0,1:43:01.80,1:43:03.92,ENG,,0,0,0,,Satisfied?\N{\rCHT}滿意了嗎？
+Dialogue: 0,1:43:05.43,1:43:06.63,ENG,,0,0,0,,I'm satisfied.\N{\rCHT}很滿意
+Dialogue: 0,1:43:08.93,1:43:10.30,ENG,,0,0,0,,Comrades...\N{\rCHT}同志們
+Dialogue: 0,1:43:10.60,1:43:14.23,ENG,,0,0,0,,...our sister has rejoined us.\N{\rCHT}...我們的姐妹回來了
+Dialogue: 0,1:43:14.60,1:43:17.69,ENG,,0,0,0,,Russia will rise from the ashes...\N{\rCHT}俄國將浴火重生
+Dialogue: 0,1:43:17.85,1:43:21.32,ENG,,0,0,0,,...of the greatest war the world has ever seen.\N{\rCHT}...在一場聞所未聞的偉大戰爭中
+Dialogue: 0,1:43:23.03,1:43:25.15,ENG,,0,0,0,,And the world will hear us!\N{\rCHT}世界將聽見我們的聲音！
+Dialogue: 0,1:43:25.82,1:43:26.99,ENG,,0,0,0,,Will hear.\N{\rCHT}一定會
+Dialogue: 0,1:43:29.99,1:43:31.83,ENG,,0,0,0,,Welcome back to our family, sister.\N{\rCHT}歡迎回家，姐妹
+Dialogue: 0,1:43:34.79,1:43:35.83,ENG,,0,0,0,,Sister.\N{\rCHT}姐妹
+Dialogue: 0,1:43:44.26,1:43:49.97,ENG,,0,0,0,,Russia has changed. But our lives will not be wasted.\N{\rCHT}俄國已經變了，但我們的生命卻不會虛度
+Dialogue: 0,1:43:51.55,1:43:56.35,ENG,,0,0,0,,You're to meet an agent, NATO uniform, at a plane here.\N{\rCHT}你要去見一位特工，一名北約軍官
+Dialogue: 0,1:43:56.64,1:44:02.52,ENG,,0,0,0,,Tail number N182SL.\N{\rCHT}這裡有一架代號為N182SL的飛機
+Dialogue: 0,1:44:03.69,1:44:08.07,ENG,,0,0,0,,Final instructions will come from him.\N{\rCHT}他會告訴你最終指示
+Dialogue: 0,1:44:09.07,1:44:11.37,ENG,,0,0,0,,- That's it. - That's it.\N{\rCHT}- 就這些嗎？ - 就這些
+Dialogue: 0,1:44:11.70,1:44:14.58,ENG,,0,0,0,,After this, we go dark.\N{\rCHT}完成後，我們便隱姓埋名
+Dialogue: 0,1:44:15.12,1:44:17.37,ENG,,0,0,0,,Radio silent.\N{\rCHT}悄無聲息
+Dialogue: 0,1:44:18.37,1:44:20.17,ENG,,0,0,0,,You won't hear from me again...\N{\rCHT}你不會再聽見我的消息
+Dialogue: 0,1:44:20.71,1:44:22.00,ENG,,0,0,0,,...my daughter.\N{\rCHT}...我的女兒
+Dialogue: 0,1:46:22.50,1:46:24.92,ENG,,0,0,0,,Forever and ever.\N{\rCHT}永遠
+Dialogue: 0,1:46:35.01,1:46:36.51,ENG,,0,0,0,,Give me your side arm.\N{\rCHT}把你的槍給我
+Dialogue: 0,1:46:36.68,1:46:40.22,ENG,,0,0,0,,No, sir. Only Secret Service possess firearms in the president's vicinity.\N{\rCHT}不行，長官 只有特勤人員可以在總統周圍配槍
+Dialogue: 0,1:46:40.39,1:46:42.10,ENG,,0,0,0,,Screw protocol. We got an enemy agent.\N{\rCHT}別管什麼規定了，有敵方特工潛入
+Dialogue: 0,1:46:42.27,1:46:44.27,ENG,,0,0,0,,Protocol is protocol, sir.\N{\rCHT}必須遵守規定，長官
+Dialogue: 0,1:46:44.60,1:46:47.44,ENG,,0,0,0,,And dead is dead.\N{\rCHT}找死
+Dialogue: 0,1:46:47.94,1:46:49.57,ENG,,0,0,0,,Behind me!\N{\rCHT}躲在我後面
+Dialogue: 0,1:46:50.98,1:46:52.74,ENG,,0,0,0,,I'm the national security advisor.\N{\rCHT}我是國家安全顧問
+Dialogue: 0,1:46:53.19,1:46:54.24,ENG,,0,0,0,,Not anymore.\N{\rCHT}不再是了
+Dialogue: 0,1:47:02.12,1:47:03.16,ENG,,0,0,0,,Sit down.\N{\rCHT}坐下
+Dialogue: 0,1:47:06.54,1:47:07.58,ENG,,0,0,0,,Who are you?\N{\rCHT}你是誰？
+Dialogue: 0,1:47:08.13,1:47:11.09,ENG,,0,0,0,,My name, Mr. President, is Nikolai Tarkovsky.\N{\rCHT}總統先生，我的名字叫尼古拉·塔可夫斯基
+Dialogue: 0,1:47:12.30,1:47:14.80,ENG,,0,0,0,,And unless you do exactly as I say...\N{\rCHT}照我說的做
+Dialogue: 0,1:47:15.13,1:47:17.55,ENG,,0,0,0,,...I will be the last person you will ever see.\N{\rCHT}...不然，送你見上帝
+Dialogue: 0,1:47:23.56,1:47:25.94,ENG,,0,0,0,,Shall we look at some selective attack options?\N{\rCHT}我們選擇一下核打擊目標，好嗎？
+Dialogue: 0,1:47:26.23,1:47:27.44,ENG,,0,0,0,,Go to hell.\N{\rCHT}你去死吧
+Dialogue: 0,1:47:55.63,1:47:57.72,ENG,,0,0,0,,At least I was right.\N{\rCHT}至少我猜對了
+Dialogue: 0,1:48:00.55,1:48:04.06,ENG,,0,0,0,,I had a feeling we'd lost you back there in North Korea.\N{\rCHT}我曾有個感覺，在朝鮮的時候你叛變了
+Dialogue: 0,1:48:04.39,1:48:08.10,ENG,,0,0,0,,I could see how moved you were by Mike's little white-knight routine.\N{\rCHT}我看得出，邁克那套白馬王子英雄救美讓你有多感動
+Dialogue: 0,1:48:08.27,1:48:10.44,ENG,,0,0,0,,You were supposed to recruit him, Ev...\N{\rCHT}你的任務是招募他，伊芙
+Dialogue: 0,1:48:10.60,1:48:12.23,ENG,,0,0,0,,...not fall in love with him.\N{\rCHT}...而不是愛上他
+Dialogue: 0,1:48:13.48,1:48:15.61,ENG,,0,0,0,,That's why I told Orlov to pick him up.\N{\rCHT}所以我叫歐洛夫抓了他
+Dialogue: 0,1:48:18.11,1:48:20.36,ENG,,0,0,0,,By the way, how is Mike?\N{\rCHT}順便問一句，邁克還好嗎？
+Dialogue: 0,1:48:22.32,1:48:24.41,ENG,,0,0,0,,Orlov is dead.\N{\rCHT}歐洛夫死了
+Dialogue: 0,1:48:28.91,1:48:31.17,ENG,,0,0,0,,Well, that's good news.\N{\rCHT}好消息
+Dialogue: 0,1:48:31.42,1:48:32.88,ENG,,0,0,0,,Saved me the trouble.\N{\rCHT}省得讓我親自動手
+Dialogue: 0,1:48:34.59,1:48:38.97,ENG,,0,0,0,,I had to practically twist his arm to get him to blow your cover at the CIA.\N{\rCHT}是我逼他到中央情報局揭露了你的身份
+Dialogue: 0,1:48:40.76,1:48:44.26,ENG,,0,0,0,,You see, he wanted you to come out of this thing alive.\N{\rCHT}你知道嗎，他想讓你全身而退
+Dialogue: 0,1:48:47.60,1:48:49.77,ENG,,0,0,0,,But you needed somebody to take the blame.\N{\rCHT}可你需要有人做你的替罪羊
+Dialogue: 0,1:48:50.94,1:48:53.02,ENG,,0,0,0,,I'm the patsy.\N{\rCHT}我就是那個替罪羊
+Dialogue: 0,1:48:56.32,1:48:58.69,ENG,,0,0,0,,And I'm the hero.\N{\rCHT}而我成了英雄
+Dialogue: 0,1:49:01.03,1:49:03.37,ENG,,0,0,0,,Congratulations, Ev.\N{\rCHT}恭喜你，伊芙
+Dialogue: 0,1:49:05.03,1:49:07.58,ENG,,0,0,0,,You're about to become famous.\N{\rCHT}你很快就要家喻戶曉了
+Dialogue: 0,1:49:20.05,1:49:22.76,ENG,,0,0,0,,Permissive action links initiated.\N{\rCHT}執行連接啟動
+Dialogue: 0,1:49:22.97,1:49:26.60,ENG,,0,0,0,,Trident submarines at firing readiness.\N{\rCHT}三叉戟潛艇發射待命
+Dialogue: 0,1:49:27.35,1:49:28.43,ENG,,0,0,0,,Permission to launch.\N{\rCHT}請求發射
+Dialogue: 0,1:49:29.81,1:49:31.10,ENG,,0,0,0,,Permission to launch.\N{\rCHT}請求發射
+Dialogue: 0,1:50:00.80,1:50:02.17,ENG,,0,0,0,,Get down on the floor, now!\N{\rCHT}趴下在地上！
+Dialogue: 0,1:50:02.93,1:50:04.30,ENG,,0,0,0,,I said now!\N{\rCHT}馬上
+Dialogue: 0,1:50:09.31,1:50:12.27,ENG,,0,0,0,,Launch sequence aborted. Systems restored.\N{\rCHT}發射程式取消，系統重啟
+Dialogue: 0,1:50:12.43,1:50:14.35,ENG,,0,0,0,,- Move, move, move! - Show me your hands!\N{\rCHT}- 前進，前進，前進！- 舉起手！
+Dialogue: 0,1:50:14.52,1:50:16.27,ENG,,0,0,0,,- Get down! - What is your name, sir?\N{\rCHT}- 跪下！- 你的姓名，長官？
+Dialogue: 0,1:50:16.44,1:50:19.78,ENG,,0,0,0,,I'm Theodore Winter, CIA. Help the president.\N{\rCHT}我是中央情報局的希歐多爾·維特 快去救總統
+Dialogue: 0,1:50:21.28,1:50:23.15,ENG,,0,0,0,,Mr. President.\N{\rCHT}總統先生
+Dialogue: 0,1:50:24.61,1:50:26.91,ENG,,0,0,0,,Mr. President, can you hear me?\N{\rCHT}總統先生，你能聽見我說話嗎？
+Dialogue: 0,1:50:28.70,1:50:30.16,ENG,,0,0,0,,- Hold still. - EMT's on the way.\N{\rCHT}- 別動 - 緊急醫療小組正趕過來
+Dialogue: 0,1:50:30.33,1:50:32.45,ENG,,0,0,0,,Make sure they got body bags. At least seven.\N{\rCHT}讓他們帶上屍袋，最少七個
+Dialogue: 0,1:50:32.62,1:50:34.16,ENG,,0,0,0,,She's wearing a vest.\N{\rCHT}她穿著避彈衣
+Dialogue: 0,1:50:34.71,1:50:37.33,ENG,,0,0,0,,I'll meet you in five minutes. I wanna get cleaned up.\N{\rCHT}我過五分鐘去會議室，我去梳洗一下
+Dialogue: 0,1:50:37.50,1:50:39.09,ENG,,0,0,0,,And I want her alone in a room.\N{\rCHT}把她單獨關起來
+Dialogue: 0,1:50:39.25,1:50:41.71,ENG,,0,0,0,,If there are other KAs out there, I want her talking.\N{\rCHT}我要她供出，外面是否還有別的克格勃特工
+Dialogue: 0,1:50:41.92,1:50:45.55,ENG,,0,0,0,,She won't talk. She's trained not to, no matter what we do to her.\N{\rCHT}無論用什麼辦法，她都不會招 她受過這方面訓練
+Dialogue: 0,1:50:45.72,1:50:47.97,ENG,,0,0,0,,If we're gonna find these people, we gotta do it.\N{\rCHT}如果我們想找到同黨，得親自去找
+Dialogue: 0,1:50:48.14,1:50:50.35,ENG,,0,0,0,,Somebody already did. At least some of them.\N{\rCHT}有人已經找到了，至少找到他們中的一部份
+Dialogue: 0,1:50:50.51,1:50:53.39,ENG,,0,0,0,,Barge on the East River. Twelve dead, including Orlov.\N{\rCHT}東河的駁船上，發現12具屍體，包括歐洛夫
+Dialogue: 0,1:50:53.81,1:50:55.23,ENG,,0,0,0,,Who did that?\N{\rCHT}誰幹的？
+Dialogue: 0,1:50:57.40,1:50:59.40,ENG,,0,0,0,,Don't know. Forensics are on it.\N{\rCHT}不知道，法醫們正在查
+Dialogue: 0,1:51:01.40,1:51:03.57,ENG,,0,0,0,,I'm gonna get cleaned up. I'll be right back.\N{\rCHT}我梳理一下 馬上回來
+Dialogue: 0,1:51:09.78,1:51:12.24,ENG,,0,0,0,,Well, sir, you're injured. Why don't you have a seat?\N{\rCHT}長官，你受傷了，為什麼不坐下來？
+Dialogue: 0,1:51:12.41,1:51:14.16,ENG,,0,0,0,,We'll take a look at you.\N{\rCHT}讓我們幫你看看
+Dialogue: 0,1:51:14.87,1:51:16.58,ENG,,0,0,0,,Are you okay?\N{\rCHT}你沒事吧？
+Dialogue: 0,1:51:17.42,1:51:19.75,ENG,,0,0,0,,Pretty good gash there.\N{\rCHT}好長的口子
+Dialogue: 0,1:51:19.92,1:51:22.55,ENG,,0,0,0,,Looks like you got a piece of glass in there.\N{\rCHT}好像有一塊玻璃碎片
+Dialogue: 0,1:51:46.11,1:51:47.24,ENG,,0,0,0,,She killed someone else.\N{\rCHT}她又殺了一個人
+Dialogue: 0,1:51:47.40,1:51:50.53,ENG,,0,0,0,,It's Winter. It's Ted Winter, sir. You better get up here.\N{\rCHT}是維特，是泰德·維特，長官 你最好趕快過來
+Dialogue: 0,1:51:59.88,1:52:01.79,ENG,,0,0,0,,Check him. Check him!\N{\rCHT}快檢查一下，快檢查一下！
+Dialogue: 0,1:52:02.59,1:52:03.63,ENG,,0,0,0,,Checking vitals.\N{\rCHT}檢查生命體征
+Dialogue: 0,1:52:03.80,1:52:06.59,ENG,,0,0,0,,I'm not getting a pulse. I'm not getting much.\N{\rCHT}沒有脈搏 幾乎沒有脈搏
+Dialogue: 0,1:52:29.74,1:52:31.41,ENG,,0,0,0,,Sit down.\N{\rCHT}坐下
+Dialogue: 0,1:52:32.66,1:52:35.20,ENG,,0,0,0,,She's yours for 15 minutes during the flight.\N{\rCHT}你只有15分鐘時間
+Dialogue: 0,1:52:35.37,1:52:37.79,ENG,,0,0,0,,- Give me your hands. - Then she's the FBI's.\N{\rCHT}- 伸出手 - 之然就要交給聯邦調查局
+Dialogue: 0,1:53:22.54,1:53:23.96,ENG,,0,0,0,,Hey.\N{\rCHT}嘿
+Dialogue: 0,1:53:25.00,1:53:26.59,ENG,,0,0,0,,Why'd you kill him?\N{\rCHT}你為什麼要殺他？
+Dialogue: 0,1:53:26.88,1:53:28.38,ENG,,0,0,0,,Because somebody had to.\N{\rCHT}因為他該死
+Dialogue: 0,1:53:41.85,1:53:42.98,ENG,,0,0,0,,What?!\N{\rCHT}看什麼看？
+Dialogue: 0,1:53:53.99,1:53:56.91,ENG,,0,0,0,,By this, I take it you think everybody is who they say they are.\N{\rCHT}現在，你肯定以為你看清了真相
+Dialogue: 0,1:53:58.16,1:54:00.75,ENG,,0,0,0,,You knew something was wrong the moment Orlov walked in.\N{\rCHT}歐洛夫一走進來，你就覺察出事有蹊蹺
+Dialogue: 0,1:54:00.91,1:54:02.33,ENG,,0,0,0,,So did I.\N{\rCHT}我也是
+Dialogue: 0,1:54:02.50,1:54:04.79,ENG,,0,0,0,,We just didn't know what it was.\N{\rCHT}只不過，我們不知道究竟是什麼事
+Dialogue: 0,1:54:05.25,1:54:08.25,ENG,,0,0,0,,- Winter did. - Winter?\N{\rCHT}- 是維特搗得鬼 - 維特？
+Dialogue: 0,1:54:10.09,1:54:13.30,ENG,,0,0,0,,You expect me to believe that Winter was gonna launch the missiles...\N{\rCHT}你以為我會相信，是維特想要發射導彈…
+Dialogue: 0,1:54:13.47,1:54:15.39,ENG,,0,0,0,,...and you saved the world?\N{\rCHT}...而你救了全世界？
+Dialogue: 0,1:54:17.01,1:54:19.68,ENG,,0,0,0,,I would like you to believe that, yeah.\N{\rCHT}我希望你能相信
+Dialogue: 0,1:54:21.52,1:54:23.10,ENG,,0,0,0,,That's a big accusation.\N{\rCHT}這是個很嚴重的指控
+Dialogue: 0,1:54:24.27,1:54:25.60,ENG,,0,0,0,,Well...\N{\rCHT}然而...
+Dialogue: 0,1:54:26.65,1:54:29.44,ENG,,0,0,0,,...he's dead now so he can't defend himself.\N{\rCHT}...他死了，死無對證
+Dialogue: 0,1:54:29.65,1:54:32.95,ENG,,0,0,0,,I guess you'll just have to decide for yourself.\N{\rCHT}我想，這個主意你得自己拿
+Dialogue: 0,1:54:40.08,1:54:42.04,ENG,,0,0,0,,How many more like you are there?\N{\rCHT}像你這樣的人還有多少？
+Dialogue: 0,1:54:42.62,1:54:44.29,ENG,,0,0,0,,Like me?\N{\rCHT}像我這樣的人？
+Dialogue: 0,1:54:45.37,1:54:47.13,ENG,,0,0,0,,None.\N{\rCHT}沒有
+Dialogue: 0,1:54:47.79,1:54:49.21,ENG,,0,0,0,,Like him?\N{\rCHT}像他那樣的？
+Dialogue: 0,1:54:49.38,1:54:51.76,ENG,,0,0,0,,More than you or I can handle alone.\N{\rCHT}多到你和我都對付不了
+Dialogue: 0,1:54:54.47,1:54:57.14,ENG,,0,0,0,,You really think a trained Soviet agent...\N{\rCHT}你真的認為一個訓練有素的蘇聯特工
+Dialogue: 0,1:54:57.30,1:55:01.89,ENG,,0,0,0,,...couldn't kill the Russian president at point-blank range if she wanted to?\N{\rCHT}...沒能力近距離擊斃俄國總統嗎？
+Dialogue: 0,1:55:06.02,1:55:08.31,ENG,,0,0,0,,Or you, for that matter.\N{\rCHT}或者是你
+Dialogue: 0,1:55:08.98,1:55:11.28,ENG,,0,0,0,,I could've killed you at the funeral and I didn't.\N{\rCHT}在葬禮上，我有機會殺你，可我沒有
+Dialogue: 0,1:55:11.78,1:55:14.32,ENG,,0,0,0,,You surrendered to me because I gave you no choice.\N{\rCHT}你向我投降，是因為你無路可逃
+Dialogue: 0,1:55:14.49,1:55:16.41,ENG,,0,0,0,,You know better.\N{\rCHT}你心裡清楚
+Dialogue: 0,1:55:17.41,1:55:19.66,ENG,,0,0,0,,I had a choice.\N{\rCHT}我有機會殺你
+Dialogue: 0,1:55:20.28,1:55:21.45,ENG,,0,0,0,,You know better.\N{\rCHT}你心裡清楚
+Dialogue: 0,1:55:41.68,1:55:43.93,ENG,,0,0,0,,If I did believe you...\N{\rCHT}如果我相信你
+Dialogue: 0,1:55:44.10,1:55:47.90,ENG,,0,0,0,,...and I'm not saying for a second that I do, but if I did...\N{\rCHT}...我只是說如果，如果我相信你
+Dialogue: 0,1:55:49.81,1:55:51.52,ENG,,0,0,0,,...nobody else would.\N{\rCHT}...別人也不會
+Dialogue: 0,1:55:53.15,1:55:56.36,ENG,,0,0,0,,Well, maybe you can think of a way around that.\N{\rCHT}也許你可以想想辦法
+Dialogue: 0,1:56:07.71,1:56:10.25,ENG,,0,0,0,,They took everything from me.\N{\rCHT}那些人奪走了我的一切
+Dialogue: 0,1:56:12.00,1:56:13.80,ENG,,0,0,0,,I'll kill them.\N{\rCHT}我要殺了他們
+Dialogue: 0,1:56:28.23,1:56:30.23,ENG,,0,0,0,,ETA, four minutes.\N{\rCHT}大約四分鐘
+Dialogue: 0,1:56:37.24,1:56:38.32,ENG,,0,0,0,,Bullshit!\N{\rCHT}放屁！
+Dialogue: 0,1:56:50.75,1:56:54.09,ENG,,0,0,0,,We are approaching the Potomac, heading due south and west.\N{\rCHT}我們正接近波托馬克河，航向西南
+Dialogue: 0,1:56:59.76,1:57:01.43,ENG,,0,0,0,,Go get them.\N{\rCHT}消滅他們
+Dialogue: 0,1:57:21.78,1:57:22.86,ENG,,0,0,0,,Salt!\N{\rCHT}紹特！
+Dialogue: 0,1:57:31.54,1:57:35.00,ENG,,0,0,0,,Circle back! Circle back!\N{\rCHT}飛回去！飛回去！
+Dialogue: 0,1:58:31.52,1:58:33.98,ENG,,0,0,0,,New U.S. President Joseph Steppens announced today...\N{\rCHT}新任美國總統約瑟夫·史特朋今日宣佈
+Dialogue: 0,1:58:34.14,1:58:36.15,ENG,,0,0,0,,...that with the death of Natasha Chenkov...\N{\rCHT}...隨著娜塔莎·琴科夫
+Dialogue: 0,1:58:36.31,1:58:40.03,ENG,,0,0,0,,...known in the U.S. as Evelyn Salt, all elements of the terrorist group...\N{\rCHT}...美國化名伊芙琳·紹特的身亡 所有恐怖組織成員
+Dialogue: 0,1:58:40.19,1:58:42.53,ENG,,0,0,0,,...have been eliminated. The announcement came...\N{\rCHT}...已全部消滅，此公告是總統
+Dialogue: 0,1:58:42.69,1:58:44.57,ENG,,0,0,0,,...during his Moscow peacekeeping visit...\N{\rCHT}...在莫斯科進行和平訪問時宣佈的
+Dialogue: 0,1:58:44.74,1:58:47.16,ENG,,0,0,0,,...where President Steppens paused to lay flowers...\N{\rCHT}...在莫斯科期間 總統前往了1974年全家墜機的地方
+Dialogue: 0,1:58:47.32,1:58:51.95,ENG,,0,0,0,,...at the site of the 1974 plane crash that killed his parents and sister...\N{\rCHT}...並向已故的父母和姐姐獻上了鮮花
+Dialogue: 0,1:58:52.12,1:58:54.75,ENG,,0,0,0,,...while on a tour of Russia.\N{\rCHT}...當時總統全家正在俄國旅行
+Dialogue: 0,2:06:16.27,2:06:20.36,ENG,,0,0,0,,You are here to sabotage our nuclear ambitions. Yes?\N{\rCHT}你企圖破壞我國的核計畫，是不是？
+Dialogue: 0,2:06:20.53,2:06:23.45,ENG,,0,0,0,,I am not a spy! I am not a spy!\N{\rCHT}我不是間諜！我不是間諜！
+Dialogue: 0,2:06:37.96,2:06:40.05,ENG,,0,0,0,,I am not a spy.\N{\rCHT}我不是間諜！
+Dialogue: 0,2:06:40.38,2:06:43.30,ENG,,0,0,0,,I am not a spy.\N{\rCHT}我不是間諜！
+Dialogue: 0,2:06:43.59,2:06:49.26,ENG,,0,0,0,,It is through the grace and munificence of our glorious Dear Leader...\N{\rCHT}在他的仁慈與寬容之下 我們偉大領袖
+Dialogue: 0,2:06:49.51,2:06:51.60,ENG,,0,0,0,,At an abandoned monastery...\N{\rCHT}在一所廢棄的修道院裡
+Dialogue: 0,2:06:51.77,2:06:55.52,ENG,,0,0,0,,...Chenkov and other boys and girls learned English...\N{\rCHT}...琴科夫和其他男孩女孩在學俄語前
+Dialogue: 0,2:06:55.69,2:06:58.23,ENG,,0,0,0,,...long before they learned Russian.\N{\rCHT}...就已經學會了英語
+Dialogue: 0,2:06:58.40,2:07:00.53,ENG,,0,0,0,,Drilled in idiom...\N{\rCHT}他們在語言習慣
+Dialogue: 0,2:07:00.69,2:07:02.94,ENG,,0,0,0,,...idiosyncrasy and...\N{\rCHT}...風格氣質
+Dialogue: 0,2:07:04.11,2:07:05.24,ENG,,0,0,0,,...ideology.\N{\rCHT}以及思想意識方面接受了大量地薰陶
+Dialogue: 0,2:07:06.74,2:07:11.66,ENG,,0,0,0,,And by methods of rigorous physical and psychological programming...\N{\rCHT}經過一系列嚴格的身體和心理訓練之後
+Dialogue: 0,2:07:11.83,2:07:14.87,ENG,,0,0,0,,...the spy master made warriors of iron.\N{\rCHT}...這位間諜首腦創造出了一群鋼鐵戰士
+Dialogue: 0,2:07:15.04,2:07:18.42,ENG,,0,0,0,,Unquestioning and unbreakable.\N{\rCHT}絕對服從，不可動搖
+Dialogue: 0,2:07:19.59,2:07:21.88,ENG,,0,0,0,,You're killing me, man.\N{\rCHT}我真受不了，哥們
+Dialogue: 0,2:07:22.38,2:07:24.26,ENG,,0,0,0,,When does the good fairy come in?\N{\rCHT}是不是還有個善良的仙女？
+Dialogue: 0,2:07:24.72,2:07:26.38,ENG,,0,0,0,,Never.\N{\rCHT}沒有
+Dialogue: 0,2:07:26.55,2:07:28.30,ENG,,0,0,0,,It's a story without hope.\N{\rCHT}這是個絕望的故事
+Dialogue: 0,2:07:28.80,2:07:33.47,ENG,,0,0,0,,Chenkov was matched with the child of a visiting American family.\N{\rCHT}有一個美國家庭到俄國做客 琴科夫與他們的孩子很像
+Dialogue: 0,2:07:33.64,2:07:37.19,ENG,,0,0,0,,There was an accident. The family died.\N{\rCHT}之後，這家人在一場車禍中罹難
+Dialogue: 0,2:07:37.35,2:07:40.32,ENG,,0,0,0,,Chenkov was sent to America...\N{\rCHT}琴科夫被送到了美國
+Dialogue: 0,2:07:40.48,2:07:43.86,ENG,,0,0,0,,...to live a complete lie...\N{\rCHT}...成為了一個冒名頂替者...
+Dialogue: 0,2:07:44.03,2:07:47.91,ENG,,0,0,0,,...and to patiently await the day to attack from within.\N{\rCHT}...耐心等待著從敵人內部進行反攻的那一天
+Dialogue: 0,2:07:48.07,2:07:50.12,ENG,,0,0,0,,Day X.\N{\rCHT}X之日
+Dialogue: 0,2:07:50.37,2:07:54.79,ENG,,0,0,0,,The long-awaited mission is here.\N{\rCHT}這個期待已久的任務現在開始了
+Dialogue: 0,2:07:55.50,2:07:58.46,ENG,,0,0,0,,Chenkov will travel to New York City...\N{\rCHT}琴科夫將要前往紐約
+Dialogue: 0,2:07:58.63,2:08:00.38,ENG,,0,0,0,,...to kill the president of Russia...\N{\rCHT}...去刺殺前來參加...
+Dialogue: 0,2:08:13.26,2:08:17.06,ENG,,0,0,0,,- Where do you think he went? - No one saw him coming out the front.\N{\rCHT}- 他在哪？ - 沒人見他出大門
+Dialogue: 0,2:08:41.79,2:08:43.17,ENG,,0,0,0,,- Is your mom home? - No.\N{\rCHT}- 你媽媽在家嗎？ - 不在
+Dialogue: 0,2:08:43.34,2:08:44.96,ENG,,0,0,0,,- No? Can you do me a favor? - Yeah.\N{\rCHT}- 不在？能幫我一個忙嗎？ - 好的
+Dialogue: 0,2:08:45.13,2:08:47.30,ENG,,0,0,0,,Hi. You babysit Burt for me?\N{\rCHT}能幫我照看一下柏特嗎？
+Dialogue: 0,2:08:47.47,2:08:51.47,ENG,,0,0,0,,- Oh, yeah. - Yeah? Here's some money for food.\N{\rCHT}- 沒問題 - 真的嗎？這些是給他買食物的錢
+Dialogue: 0,2:08:52.01,2:08:53.39,ENG,,0,0,0,,Hi, Burt.\N{\rCHT}柏特
+Dialogue: 0,2:08:53.55,2:08:57.56,ENG,,0,0,0,,- What you doing? You doing homework? - Yeah, math.\N{\rCHT}- 你在做什麼？做家庭作業？ - 是的，數學
+Dialogue: 0,2:08:58.60,2:09:01.40,ENG,,0,0,0,,- Algebra. - I hate math.\N{\rCHT}- 代數 - 我恨數學
+Dialogue: 0,2:09:12.99,2:09:15.37,ENG,,0,0,0,,Hi. Nice to see you again.\N{\rCHT}你好，又見面了
+Dialogue: 0,2:09:17.54,2:09:20.67,ENG,,0,0,0,,- You talking to me? - Yeah, I've seen you here before.\N{\rCHT}- 你在和我說話嗎？ - 是的，我以前在這裡見過你
+Dialogue: 0,2:09:21.00,2:09:22.50,ENG,,0,0,0,,Yeah, I do. I come here a lot.\N{\rCHT}沒錯，這裡我常來
+Dialogue: 0,2:09:24.13,2:09:25.71,ENG,,0,0,0,,You?\N{\rCHT}你呢？
+Dialogue: 0,2:09:26.50,2:09:28.55,ENG,,0,0,0,,Oh, I'm working here.\N{\rCHT}我在這裡工作
+Dialogue: 0,2:09:28.72,2:09:30.68,ENG,,0,0,0,,At the museum.\N{\rCHT}在博物館工作
+Dialogue: 0,2:09:31.63,2:09:35.18,ENG,,0,0,0,,- I'm an arachnologist. - A what?\N{\rCHT}- 我是個蜘蛛學家 - 什麼學家？
+Dialogue: 0,2:10:55.55,2:10:58.35,ENG,,0,0,0,,A solemn day here in New York City.\N{\rCHT}今天的紐約是莊嚴而沉重的
+Dialogue: 0,2:10:58.51,2:11:01.43,ENG,,0,0,0,,The funeral of Vice President Maxwell Oates...\N{\rCHT}副總統麥克斯韋爾·奧茨的葬禮正在進行
+Dialogue: 0,2:11:01.60,2:11:05.35,ENG,,0,0,0,,...a former five-term U.S. senator and Cold War warrior...\N{\rCHT}...他之前同時也曾任五屆美國議員，更是冷戰鬥士
+Dialogue: 0,2:11:05.52,2:11:07.86,ENG,,0,0,0,,...whose greatest legacy may be as architect...\N{\rCHT}...他留下的偉大遺產
+Dialogue: 0,2:11:08.02,2:11:11.36,ENG,,0,0,0,,...of the new era of Russian-American relations.\N{\rCHT}...將為美俄關係開啟新的紀元
+Dialogue: 0,2:11:11.53,2:11:13.53,ENG,,0,0,0,,Russian president Boris Matveyev...\N{\rCHT}俄國總統伯里斯·馬特維耶夫
+Dialogue: 0,2:11:13.69,2:11:16.45,ENG,,0,0,0,,...has journeyed from Moscow to be an honorary pallbearer...\N{\rCHT}...不遠萬里從莫斯科趕來
+Dialogue: 0,2:11:16.61,2:11:20.87,ENG,,0,0,0,,...to the man he's called his greatest friend in the West.\N{\rCHT}...為他這位“最好的西方朋友”護柩送葬
+Dialogue: 0,2:11:22.41,2:11:24.62,ENG,,0,0,0,,We need a medical crew in the crypt immediately.\N{\rCHT}馬上派一支醫療隊到地下室來
+Dialogue: 0,2:11:24.79,2:11:26.58,ENG,,0,0,0,,I can't feel a pulse.\N{\rCHT}他沒有脈搏了
+Dialogue: 0,2:11:28.17,2:11:29.67,ENG,,0,0,0,,Back it up! Back it up!\N{\rCHT}後退！後退！
+Dialogue: 0,2:11:29.84,2:11:32.80,ENG,,0,0,0,,Come on, guys. Keep moving. Keep moving. Keep moving.\N{\rCHT}不要停，不要停，不要停
+Dialogue: 0,2:11:34.01,2:11:35.22,ENG,,0,0,0,,Let's go, let's go.\N{\rCHT}我們走，我們走
+Dialogue: 0,2:11:35.72,2:11:37.43,ENG,,0,0,0,,Hey, watch this guy, watch this guy.\N{\rCHT}注意這個傢伙，注意這個傢伙
+Dialogue: 0,2:11:37.59,2:11:38.64,ENG,,0,0,0,,- Back up! - Keep moving.\N{\rCHT}- 後退！ - 不要停
+Dialogue: 0,2:11:38.80,2:11:40.05,ENG,,0,0,0,,Sir, back up!\N{\rCHT}先生，後退！
+Dialogue: 0,2:11:40.22,2:11:42.81,ENG,,0,0,0,,Why? Why?!\N{\rCHT}為什麼？為什麼？
+Dialogue: 0,2:11:44.52,2:11:47.27,ENG,,0,0,0,,Do you have any idea how much blood is on your hands?\N{\rCHT}你知道你殺了多少人嗎？
+Dialogue: 0,2:11:47.44,2:11:49.02,ENG,,0,0,0,,You're gonna rot in a hole, Salt.\N{\rCHT}你會爛死在牢裡，紹特
+Dialogue: 0,2:11:49.19,2:11:51.19,ENG,,0,0,0,,I'm gonna see to it personally! A dark hole!\N{\rCHT}我會親手送你進去，送你下地獄！
+Dialogue: 0,2:11:51.36,2:11:52.86,ENG,,0,0,0,,Get ahold of yourself.\N{\rCHT}冷靜
+Dialogue: 0,2:11:53.53,2:11:55.03,ENG,,0,0,0,,Get the door, get the door.\N{\rCHT}打開門，打開門
+Dialogue: 0,2:11:55.19,2:11:57.86,ENG,,0,0,0,,- Get off me! - Back off, man! Back off!\N{\rCHT}- 放開我！ - 後退，後退！
+Dialogue: 0,2:11:58.03,2:11:59.37,ENG,,0,0,0,,That's it. Let's go.\N{\rCHT}好了，我們走
+Dialogue: 0,2:12:00.49,2:12:02.37,ENG,,0,0,0,,Stand back.\N{\rCHT}退後
+Dialogue: 0,2:12:03.08,2:12:05.62,ENG,,0,0,0,,Close it! Go, go, go!\N{\rCHT}關門 快走 走 走
+Dialogue: 0,2:12:17.88,2:12:21.39,ENG,,0,0,0,,Matveyev was declared dead en route to the hospital.\N{\rCHT}馬特維耶夫在送醫途中已不治身亡
+Dialogue: 0,2:12:21.85,2:12:23.18,ENG,,0,0,0,,Jesus Christ.\N{\rCHT}老天
+Dialogue: 0,2:12:23.60,2:12:24.77,ENG,,0,0,0,,Yeah.\N{\rCHT}沒錯
+Dialogue: 0,2:12:25.06,2:12:27.10,ENG,,0,0,0,,You were right about her.\N{\rCHT}你對她的懷疑沒錯
+Dialogue: 0,2:12:28.06,2:12:30.61,ENG,,0,0,0,,She had the drop on me, Ted.\N{\rCHT}她有機會殺我，泰德
+Dialogue: 0,2:12:31.94,2:12:33.69,ENG,,0,0,0,,Why didn't she shoot?\N{\rCHT}為什麼不動手？
+Dialogue: 0,2:13:48.81,2:13:50.14,ENG,,0,0,0,,What is your name?\N{\rCHT}你的姓名?
+Dialogue: 0,2:13:50.31,2:13:52.81,ENG,,0,0,0,,My name is Evelyn Salt.\N{\rCHT}我叫伊芙琳·紹特
+Dialogue: 0,2:13:52.98,2:13:54.69,ENG,,0,0,0,,What college will you attend?\N{\rCHT}你會上哪所大學？
+Dialogue: 0,2:13:54.86,2:13:56.73,ENG,,0,0,0,,Princeton University.\N{\rCHT}普林斯頓大學
+Dialogue: 0,2:13:56.90,2:13:59.99,ENG,,0,0,0,,- Where will you work? - The Central Intelligence Agency.\N{\rCHT}- 將來你會在哪裡工作？ - 中央情報局
+Dialogue: 0,2:14:00.15,2:14:02.15,ENG,,0,0,0,,Who will you trust?\N{\rCHT}你可以相信誰？
+Dialogue: 0,2:14:02.32,2:14:04.03,ENG,,0,0,0,,No one.\N{\rCHT}誰也不相信
+Dialogue: 0,2:14:04.20,2:14:06.58,ENG,,0,0,0,,Be very patient.\N{\rCHT}要耐心
+Dialogue: 0,2:14:06.74,2:14:08.49,ENG,,0,0,0,,Remember your training.\N{\rCHT}記住你接受的訓練
+Dialogue: 0,2:14:09.41,2:14:12.67,ENG,,0,0,0,,Remember, you're not the only one.\N{\rCHT}記住，你不是孤軍作戰
+Dialogue: 0,2:14:12.83,2:14:14.42,ENG,,0,0,0,,There are many others.\N{\rCHT}你有很多同伴
+Dialogue: 0,2:14:14.58,2:14:17.88,ENG,,0,0,0,,All of you waiting to strike.\N{\rCHT}你們潛伏下去，等待反攻
+Dialogue: 0,2:14:18.05,2:14:20.17,ENG,,0,0,0,,- Yes. - And we will strike.\N{\rCHT}- 是 - 我們一定會反攻的
+Dialogue: 0,2:14:20.84,2:14:24.01,ENG,,0,0,0,,- Together. - Yes.\N{\rCHT}- 團結一致 - 是
+Dialogue: 0,2:14:26.64,2:14:28.10,ENG,,0,0,0,,Wait.\N{\rCHT}等等
+Dialogue: 0,2:14:30.85,2:14:34.77,ENG,,0,0,0,,One day, I will come for all of you.\N{\rCHT}有一天，我會來找你們的
+Dialogue: 0,2:14:40.86,2:14:42.65,ENG,,0,0,0,,Hello, Evelyn.\N{\rCHT}你好，伊芙琳
+Dialogue: 0,2:14:42.99,2:14:46.16,ENG,,0,0,0,,I'm Martin Crenshaw from the U.S. Embassy.\N{\rCHT}我叫馬丁·柯南肖，來自美國大使館
+Dialogue: 0,2:14:46.82,2:14:50.20,ENG,,0,0,0,,We're very sorry about your family's accident.\N{\rCHT}對你家發生的變故，我們深表遺憾
+Dialogue: 0,2:14:57.29,2:15:01.13,ENG,,0,0,0,,Rioters outside the U.S. Embassy cheered their new leader's words...\N{\rCHT}抗議群眾聚集在美國大使館外面 為他們新任領導人的發言喝彩
+Dialogue: 0,2:15:01.30,2:15:04.80,ENG,,0,0,0,,...and called on him to take strong action against what they are calling...\N{\rCHT}...請求他採取強力行動報復
+Dialogue: 0,2:15:04.97,2:15:06.89,ENG,,0,0,0,,...a state-sponsored act of terrorism on the part of the U.S.\N{\rCHT}...對此次在美國政府籌畫陰謀恐怖活動
+Dialogue: 0,2:16:18.04,2:16:20.29,ENG,,0,0,0,,Satisfied?\N{\rCHT}滿意了嗎？
+Dialogue: 0,2:16:21.79,2:16:23.05,ENG,,0,0,0,,I'm satisfied.\N{\rCHT}很滿意
+Dialogue: 0,2:16:24.80,2:16:26.17,ENG,,0,0,0,,Comrades...\N{\rCHT}同志們
+Dialogue: 0,2:16:26.47,2:16:30.14,ENG,,0,0,0,,...our sister has rejoined us.\N{\rCHT}...我們的姐妹回來了
+Dialogue: 0,2:16:30.47,2:16:33.60,ENG,,0,0,0,,Russia will rise from the ashes...\N{\rCHT}俄國將浴火重生
+Dialogue: 0,2:16:33.76,2:16:37.23,ENG,,0,0,0,,...of the greatest war the world has ever seen.\N{\rCHT}...在一場聞所未聞的偉大戰爭中
+Dialogue: 0,2:16:38.94,2:16:41.02,ENG,,0,0,0,,And the world will hear us!\N{\rCHT}世界將聽見我們的聲音！
+Dialogue: 0,2:16:41.69,2:16:42.90,ENG,,0,0,0,,Will hear.\N{\rCHT}一定會
+Dialogue: 0,2:16:45.86,2:16:47.74,ENG,,0,0,0,,Welcome back to our family, sister.\N{\rCHT}歡迎回家，姐妹
+Dialogue: 0,2:16:50.66,2:16:51.70,ENG,,0,0,0,,Sister.\N{\rCHT}姐妹
+Dialogue: 0,2:16:59.16,2:17:05.13,ENG,,0,0,0,,Russia has changed. But our lives will not be wasted.\N{\rCHT}俄國已經變了，但我們的生命卻不會虛度
+Dialogue: 0,2:17:06.96,2:17:11.55,ENG,,0,0,0,,You're to meet an agent, NATO uniform, at a plane here.\N{\rCHT}你要去見一位特工，一名北約軍官
+Dialogue: 0,2:17:12.30,2:17:17.68,ENG,,0,0,0,,Tail number N182SL.\N{\rCHT}這裡有一架代號為N182SL的飛機
+Dialogue: 0,2:17:19.06,2:17:23.23,ENG,,0,0,0,,Final instructions will come from him.\N{\rCHT}他會告訴你最終指示
+Dialogue: 0,2:17:24.52,2:17:26.53,ENG,,0,0,0,,- That's it. - That's it.\N{\rCHT}- 就這些嗎？ - 就這些
+Dialogue: 0,2:17:27.03,2:17:29.74,ENG,,0,0,0,,After this, we go dark.\N{\rCHT}完成後，我們便隱姓埋名
+Dialogue: 0,2:17:30.45,2:17:32.53,ENG,,0,0,0,,Radio silent.\N{\rCHT}悄無聲息
+Dialogue: 0,2:17:33.53,2:17:35.33,ENG,,0,0,0,,You won't hear from me again...\N{\rCHT}你不會再聽見我的消息
+Dialogue: 0,2:17:35.87,2:17:37.16,ENG,,0,0,0,,...my daughter.\N{\rCHT}...我的女兒
+Dialogue: 0,2:19:33.69,2:19:36.11,ENG,,0,0,0,,Forever and ever.\N{\rCHT}永遠
+Dialogue: 0,2:19:49.63,2:19:51.92,ENG,,0,0,0,,- Down! Take cover! - Get the president!\N{\rCHT}- 趴下！找掩護！ - 保護總統！
+Dialogue: 0,2:19:52.55,2:19:54.55,ENG,,0,0,0,,- A gun! He's got a gun! - Get back!\N{\rCHT}- 槍！他有槍！- 回去！
+Dialogue: 0,2:19:55.88,2:19:57.09,ENG,,0,0,0,,Get back!\N{\rCHT}回去！
+Dialogue: 0,2:20:10.56,2:20:11.73,ENG,,0,0,0,,- Are you okay, sir? - Yes.\N{\rCHT}- 你沒事嗎，先生？ - 沒事
+Dialogue: 0,2:20:11.90,2:20:14.40,ENG,,0,0,0,,- Goddamn it. - Geronimo is SOP, downward mobile.\N{\rCHT}- 該死 - 總統進入應急程式，向下移動中
+Dialogue: 0,2:20:20.16,2:20:21.28,ENG,,0,0,0,,Help, over here!\N{\rCHT}這裡需要幫忙
+Dialogue: 0,2:20:23.54,2:20:25.83,ENG,,0,0,0,,Get a medic! Get a medic!\N{\rCHT}叫醫生！叫醫生！
+Dialogue: 0,2:20:26.04,2:20:27.54,ENG,,0,0,0,,Give me your side arm.\N{\rCHT}把你的槍給我
+Dialogue: 0,2:20:27.71,2:20:31.21,ENG,,0,0,0,,No, sir. Only Secret Service possess firearms in the president's vicinity.\N{\rCHT}不行，長官 只有特勤人員可以在總統周圍配槍
+Dialogue: 0,2:20:31.38,2:20:33.13,ENG,,0,0,0,,Screw protocol. We got an enemy agent.\N{\rCHT}別管什麼規定了，有敵方特工潛入
+Dialogue: 0,2:20:33.30,2:20:35.26,ENG,,0,0,0,,Protocol is protocol, sir.\N{\rCHT}必須遵守規定，長官
+Dialogue: 0,2:20:35.59,2:20:38.43,ENG,,0,0,0,,And dead is dead.\N{\rCHT}找死
+Dialogue: 0,2:20:39.18,2:20:40.84,ENG,,0,0,0,,Behind me!\N{\rCHT}躲在我後面
+Dialogue: 0,2:20:42.22,2:20:43.93,ENG,,0,0,0,,I'm the national security advisor.\N{\rCHT}我是國家安全顧問
+Dialogue: 0,2:20:44.39,2:20:45.43,ENG,,0,0,0,,Not anymore.\N{\rCHT}不再是了
+Dialogue: 0,2:20:53.36,2:20:54.40,ENG,,0,0,0,,Sit down.\N{\rCHT}坐下
+Dialogue: 0,2:20:57.74,2:20:58.78,ENG,,0,0,0,,Who are you?\N{\rCHT}你是誰？
+Dialogue: 0,2:20:59.32,2:21:02.28,ENG,,0,0,0,,My name, Mr. President, is Nikolai Tarkovsky.\N{\rCHT}總統先生，我的名字叫尼古拉·塔可夫斯基
+Dialogue: 0,2:21:03.53,2:21:06.04,ENG,,0,0,0,,And unless you do exactly as I say...\N{\rCHT}照我說的做
+Dialogue: 0,2:21:06.37,2:21:08.75,ENG,,0,0,0,,...I will be the last person you will ever see.\N{\rCHT}...不然，送你見上帝
+Dialogue: 0,2:21:14.75,2:21:17.13,ENG,,0,0,0,,Shall we look at some selective attack options?\N{\rCHT}我們選擇一下核打擊目標，好嗎？
+Dialogue: 0,2:21:17.42,2:21:18.76,ENG,,0,0,0,,Go to hell.\N{\rCHT}你去死吧
+Dialogue: 0,2:21:48.16,2:21:50.25,ENG,,0,0,0,,At least I was right.\N{\rCHT}至少我猜對了
+Dialogue: 0,2:21:53.13,2:21:56.63,ENG,,0,0,0,,I had a feeling we'd lost you back there in North Korea.\N{\rCHT}我曾有個感覺，在朝鮮的時候你叛變了
+Dialogue: 0,2:21:56.92,2:22:00.67,ENG,,0,0,0,,I could see how moved you were by Mike's little white-knight routine.\N{\rCHT}我看得出，邁克那套白馬王子英雄救美讓你有多感動
+Dialogue: 0,2:22:00.84,2:22:03.01,ENG,,0,0,0,,You were supposed to recruit him, Ev...\N{\rCHT}你的任務是招募他，伊芙
+Dialogue: 0,2:22:03.18,2:22:04.80,ENG,,0,0,0,,...not fall in love with him.\N{\rCHT}...而不是愛上他
+Dialogue: 0,2:22:06.01,2:22:08.18,ENG,,0,0,0,,That's why I told Orlov to pick him up.\N{\rCHT}所以我叫歐洛夫抓了他
+Dialogue: 0,2:22:10.68,2:22:12.89,ENG,,0,0,0,,By the way, how is Mike?\N{\rCHT}順便問一句，邁克還好嗎？
+Dialogue: 0,2:22:14.86,2:22:16.98,ENG,,0,0,0,,Orlov is dead.\N{\rCHT}歐洛夫死了
+Dialogue: 0,2:22:21.45,2:22:23.70,ENG,,0,0,0,,Well, that's good news.\N{\rCHT}好消息
+Dialogue: 0,2:22:23.99,2:22:25.41,ENG,,0,0,0,,Saved me the trouble.\N{\rCHT}省得讓我親自動手
+Dialogue: 0,2:22:27.12,2:22:31.54,ENG,,0,0,0,,I had to practically twist his arm to get him to blow your cover at the CIA.\N{\rCHT}是我逼他到中央情報局揭露了你的身份
+Dialogue: 0,2:22:33.33,2:22:36.84,ENG,,0,0,0,,You see, he wanted you to come out of this thing alive.\N{\rCHT}你知道嗎，他想讓你全身而退
+Dialogue: 0,2:22:40.17,2:22:42.30,ENG,,0,0,0,,But you needed somebody to take the blame.\N{\rCHT}可你需要有人做你的替罪羊
+Dialogue: 0,2:22:43.51,2:22:45.55,ENG,,0,0,0,,I'm the patsy.\N{\rCHT}我就是那個替罪羊
+Dialogue: 0,2:22:48.89,2:22:51.22,ENG,,0,0,0,,And I'm the hero.\N{\rCHT}而我成了英雄
+Dialogue: 0,2:22:53.56,2:22:55.90,ENG,,0,0,0,,Congratulations, Ev.\N{\rCHT}恭喜你，伊芙
+Dialogue: 0,2:22:57.56,2:23:00.11,ENG,,0,0,0,,You're about to become famous.\N{\rCHT}你很快就要家喻戶曉了
+Dialogue: 0,2:23:12.66,2:23:15.29,ENG,,0,0,0,,Permissive action links initiated.\N{\rCHT}執行連接啟動
+Dialogue: 0,2:23:15.50,2:23:19.13,ENG,,0,0,0,,Trident submarines at firing readiness.\N{\rCHT}三叉戟潛艇發射待命
+Dialogue: 0,2:23:19.92,2:23:20.96,ENG,,0,0,0,,Permission to launch.\N{\rCHT}請求發射
+Dialogue: 0,2:23:22.38,2:23:23.63,ENG,,0,0,0,,Permission to launch.\N{\rCHT}請求發射
+Dialogue: 0,2:23:48.45,2:23:49.78,ENG,,0,0,0,,Get down on the floor, now!\N{\rCHT}趴下在地上！
+Dialogue: 0,2:23:50.58,2:23:51.95,ENG,,0,0,0,,I said now!\N{\rCHT}馬上
+Dialogue: 0,2:23:56.96,2:23:59.92,ENG,,0,0,0,,Launch sequence aborted. Systems restored.\N{\rCHT}發射程式取消，系統重啟
+Dialogue: 0,2:24:00.09,2:24:01.96,ENG,,0,0,0,,- Move, move, move! - Show me your hands!\N{\rCHT}- 前進，前進，前進！- 舉起手！
+Dialogue: 0,2:24:02.13,2:24:03.92,ENG,,0,0,0,,- Get down! - What is your name, sir?\N{\rCHT}- 跪下！- 你的姓名，長官？
+Dialogue: 0,2:24:04.09,2:24:07.43,ENG,,0,0,0,,I'm Theodore Winter, CIA. Help the president.\N{\rCHT}我是中央情報局的希歐多爾·維特 快去救總統
+Dialogue: 0,2:24:08.93,2:24:10.80,ENG,,0,0,0,,Mr. President.\N{\rCHT}總統先生
+Dialogue: 0,2:24:12.26,2:24:14.56,ENG,,0,0,0,,Mr. President, can you hear me?\N{\rCHT}總統先生，你能聽見我說話嗎？
+Dialogue: 0,2:24:16.35,2:24:17.81,ENG,,0,0,0,,- Hold still. - EMT's on the way.\N{\rCHT}- 別動 - 緊急醫療小組正趕過來
+Dialogue: 0,2:24:17.98,2:24:20.11,ENG,,0,0,0,,Make sure they got body bags. At least seven.\N{\rCHT}讓他們帶上屍袋，最少七個
+Dialogue: 0,2:24:20.27,2:24:21.82,ENG,,0,0,0,,She's wearing a vest.\N{\rCHT}她穿著避彈衣
+Dialogue: 0,2:24:22.36,2:24:24.99,ENG,,0,0,0,,I'll meet you in five minutes. I wanna get cleaned up.\N{\rCHT}我過五分鐘去會議室，我去梳洗一下
+Dialogue: 0,2:24:25.15,2:24:26.74,ENG,,0,0,0,,And I want her alone in a room.\N{\rCHT}把她單獨關起來
+Dialogue: 0,2:24:26.90,2:24:29.36,ENG,,0,0,0,,If there are other KAs out there, I want her talking.\N{\rCHT}我要她供出，外面是否還有別的克格勃特工
+Dialogue: 0,2:24:29.57,2:24:33.16,ENG,,0,0,0,,She won't talk. She's trained not to, no matter what we do to her.\N{\rCHT}無論用什麼辦法，她都不會招 她受過這方面訓練
+Dialogue: 0,2:24:33.33,2:24:35.62,ENG,,0,0,0,,If we're gonna find these people, we gotta do it.\N{\rCHT}如果我們想找到同黨，得親自去找
+Dialogue: 0,2:24:35.79,2:24:38.00,ENG,,0,0,0,,Somebody already did. At least some of them.\N{\rCHT}有人已經找到了，至少找到他們中的一部份
+Dialogue: 0,2:24:38.17,2:24:41.04,ENG,,0,0,0,,Barge on the East River. Twelve dead, including Orlov.\N{\rCHT}東河的駁船上，發現12具屍體，包括歐洛夫
+Dialogue: 0,2:24:41.46,2:24:42.88,ENG,,0,0,0,,Who did that?\N{\rCHT}誰幹的？
+Dialogue: 0,2:24:45.01,2:24:47.01,ENG,,0,0,0,,Don't know. Forensics are on it.\N{\rCHT}不知道，法醫們正在查
+Dialogue: 0,2:24:54.47,2:24:57.35,ENG,,0,0,0,,No one comes through until the president is secure. Step back.\N{\rCHT}沒有人可以通過 直到總統安全確認無誤後 退後
+Dialogue: 0,2:24:57.52,2:24:59.77,ENG,,0,0,0,,- I'm Theodore Winter- - Step back, sir. Please.\N{\rCHT}- 我是希歐多爾·維特 - 請退後 麻煩您 長官
+Dialogue: 0,2:25:03.61,2:25:07.86,ENG,,0,0,0,,Well, sir, you're injured. Why don't you have a seat? We'll take a look at you.\N{\rCHT}長官，你受傷了，為什麼不坐下來？
+Dialogue: 0,2:25:08.53,2:25:10.24,ENG,,0,0,0,,Are you okay?\N{\rCHT}你沒事吧？
+Dialogue: 0,2:25:11.07,2:25:13.45,ENG,,0,0,0,,Pretty good gash there.\N{\rCHT}好長的口子
+Dialogue: 0,2:25:13.62,2:25:16.20,ENG,,0,0,0,,Looks like you got a piece of glass in there.\N{\rCHT}好像有一塊玻璃碎片
+Dialogue: 0,2:25:38.23,2:25:39.39,ENG,,0,0,0,,She killed someone else.\N{\rCHT}她又殺了一個人
+Dialogue: 0,2:25:39.56,2:25:42.69,ENG,,0,0,0,,It's Winter. It's Ted Winter, sir. You better get up here.\N{\rCHT}是維特，是泰德·維特，長官 你最好趕快過來
+Dialogue: 0,2:25:52.03,2:25:53.91,ENG,,0,0,0,,Check him. Check him!\N{\rCHT}快檢查一下，快檢查一下！
+Dialogue: 0,2:25:54.74,2:25:55.74,ENG,,0,0,0,,Checking vitals.\N{\rCHT}檢查生命體征
+Dialogue: 0,2:25:55.91,2:25:58.75,ENG,,0,0,0,,I'm not getting a pulse. I'm not getting much.\N{\rCHT}沒有脈搏 幾乎沒有脈搏
+Dialogue: 0,2:26:21.89,2:26:23.56,ENG,,0,0,0,,Sit down.\N{\rCHT}坐下
+Dialogue: 0,2:26:24.81,2:26:27.36,ENG,,0,0,0,,She's yours for 15 minutes during the flight.\N{\rCHT}你只有15分鐘時間
+Dialogue: 0,2:26:27.52,2:26:29.94,ENG,,0,0,0,,- Give me your hands. - Then she's the FBI's.\N{\rCHT}- 伸出手 - 之然就要交給聯邦調查局
+Dialogue: 0,2:27:14.53,2:27:16.11,ENG,,0,0,0,,Hey.\N{\rCHT}嘿
+Dialogue: 0,2:27:17.16,2:27:18.74,ENG,,0,0,0,,Why'd you kill him?\N{\rCHT}你為什麼要殺他？
+Dialogue: 0,2:27:19.03,2:27:20.49,ENG,,0,0,0,,Because somebody had to.\N{\rCHT}因為他該死
+Dialogue: 0,2:27:34.01,2:27:35.13,ENG,,0,0,0,,What?!\N{\rCHT}看什麼看？
+Dialogue: 0,2:27:46.14,2:27:49.06,ENG,,0,0,0,,By this, I take it you think everybody is who they say they are.\N{\rCHT}現在，你肯定以為你看清了真相
+Dialogue: 0,2:27:50.32,2:27:52.86,ENG,,0,0,0,,You knew something was wrong the moment Orlov walked in.\N{\rCHT}歐洛夫一走進來，你就覺察出事有蹊蹺
+Dialogue: 0,2:27:53.03,2:27:54.49,ENG,,0,0,0,,So did I.\N{\rCHT}我也是
+Dialogue: 0,2:27:54.65,2:27:56.95,ENG,,0,0,0,,We just didn't know what it was.\N{\rCHT}只不過，我們不知道究竟是什麼事
+Dialogue: 0,2:27:57.36,2:28:00.37,ENG,,0,0,0,,- Winter did. - Winter?\N{\rCHT}- 是維特搗得鬼 - 維特？
+Dialogue: 0,2:28:02.24,2:28:05.46,ENG,,0,0,0,,You expect me to believe that Winter was gonna launch the missiles...\N{\rCHT}你以為我會相信，是維特想要發射導彈…
+Dialogue: 0,2:28:05.62,2:28:07.54,ENG,,0,0,0,,...and you saved the world?\N{\rCHT}...而你救了全世界？
+Dialogue: 0,2:28:09.17,2:28:11.84,ENG,,0,0,0,,I would like you to believe that, yeah.\N{\rCHT}我希望你能相信
+Dialogue: 0,2:28:13.67,2:28:15.22,ENG,,0,0,0,,That's a big accusation.\N{\rCHT}這是個很嚴重的指控
+Dialogue: 0,2:28:16.38,2:28:17.72,ENG,,0,0,0,,Well...\N{\rCHT}然而...
+Dialogue: 0,2:28:18.80,2:28:21.60,ENG,,0,0,0,,...he's dead now so he can't defend himself.\N{\rCHT}...他死了，死無對證
+Dialogue: 0,2:28:21.81,2:28:25.06,ENG,,0,0,0,,I guess you'll just have to decide for yourself.\N{\rCHT}我想，這個主意你得自己拿
+Dialogue: 0,2:28:32.23,2:28:34.19,ENG,,0,0,0,,How many more like you are there?\N{\rCHT}像你這樣的人還有多少？
+Dialogue: 0,2:28:34.73,2:28:36.44,ENG,,0,0,0,,Like me?\N{\rCHT}像我這樣的人？
+Dialogue: 0,2:28:37.53,2:28:39.28,ENG,,0,0,0,,None.\N{\rCHT}沒有
+Dialogue: 0,2:28:39.91,2:28:41.37,ENG,,0,0,0,,Like him?\N{\rCHT}像他那樣的？
+Dialogue: 0,2:28:41.53,2:28:43.91,ENG,,0,0,0,,More than you or I can handle alone.\N{\rCHT}多到你和我都對付不了
+Dialogue: 0,2:28:46.58,2:28:49.29,ENG,,0,0,0,,You really think a trained Soviet agent...\N{\rCHT}你真的認為一個訓練有素的蘇聯特工
+Dialogue: 0,2:28:49.46,2:28:54.05,ENG,,0,0,0,,...couldn't kill the Russian president at point-blank range if she wanted to?\N{\rCHT}...沒能力近距離擊斃俄國總統嗎？
+Dialogue: 0,2:28:58.17,2:29:00.43,ENG,,0,0,0,,Or you, for that matter.\N{\rCHT}或者是你
+Dialogue: 0,2:29:01.14,2:29:03.43,ENG,,0,0,0,,I could've killed you at the funeral and I didn't.\N{\rCHT}在葬禮上，我有機會殺你，可我沒有
+Dialogue: 0,2:29:03.93,2:29:06.47,ENG,,0,0,0,,You surrendered to me because I gave you no choice.\N{\rCHT}你向我投降，是因為你無路可逃
+Dialogue: 0,2:29:06.64,2:29:08.56,ENG,,0,0,0,,You know better.\N{\rCHT}你心裡清楚
+Dialogue: 0,2:29:09.56,2:29:11.81,ENG,,0,0,0,,I had a choice.\N{\rCHT}我有機會殺你
+Dialogue: 0,2:29:12.44,2:29:13.61,ENG,,0,0,0,,You know better.\N{\rCHT}你心裡清楚
+Dialogue: 0,2:29:33.79,2:29:36.09,ENG,,0,0,0,,If I did believe you...\N{\rCHT}如果我相信你
+Dialogue: 0,2:29:36.25,2:29:40.05,ENG,,0,0,0,,...and I'm not saying for a second that I do, but if I did...\N{\rCHT}...我只是說如果，如果我相信你
+Dialogue: 0,2:29:41.97,2:29:43.68,ENG,,0,0,0,,...nobody else would.\N{\rCHT}...別人也不會
+Dialogue: 0,2:29:45.31,2:29:48.52,ENG,,0,0,0,,Well, maybe you can think of a way around that.\N{\rCHT}也許你可以想想辦法
+Dialogue: 0,2:29:59.82,2:30:02.41,ENG,,0,0,0,,They took everything from me.\N{\rCHT}那些人奪走了我的一切
+Dialogue: 0,2:30:04.16,2:30:05.95,ENG,,0,0,0,,I'll kill them.\N{\rCHT}我要殺了他們
+Dialogue: 0,2:30:20.01,2:30:22.34,ENG,,0,0,0,,ETA, four minutes.\N{\rCHT}大約四分鐘
+Dialogue: 0,2:30:29.39,2:30:30.48,ENG,,0,0,0,,Bullshit!\N{\rCHT}放屁！
+Dialogue: 0,2:30:42.90,2:30:46.20,ENG,,0,0,0,,We are approaching the Potomac, heading due south and west.\N{\rCHT}我們正接近波托馬克河，航向西南
+Dialogue: 0,2:30:51.87,2:30:53.54,ENG,,0,0,0,,Go get them.\N{\rCHT}消滅他們
+Dialogue: 0,2:31:13.89,2:31:15.02,ENG,,0,0,0,,Salt!\N{\rCHT}紹特！
+Dialogue: 0,2:31:23.70,2:31:27.16,ENG,,0,0,0,,Circle back! Circle back!\N{\rCHT}飛回去！飛回去！
