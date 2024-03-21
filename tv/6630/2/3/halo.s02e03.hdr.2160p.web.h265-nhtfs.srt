@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ASS 转 SRT (在线转换 &amp; 批量转换)</title>
+<style>
+
+body { background-color: #CCC6DC; background-image: url(/static/ass2srt/back-star.png);
+      width: 800px; margin: 1em auto 0; color: #333; margin-top: 2em;
+      font-family: "微软雅黑", "黑体", sans-serif; }
+  h1 { font-size: x-large; color: #666; padding: 0.2rem 1rem 0;  margin-bottom: 0.3rem;
+      border: #eee solid 4px; border-bottom: none; }
+  .box { padding: 0.6rem 2rem 0.6rem; margin-bottom: 2rem; position: relative;
+      border: white solid 4px; background: #eee;}
+  footer { font-size: 0.7em; color: gray; text-align: center; }
+  footer a { color: gray; }
+
+  #sakamoto { position: absolute; right: 0.5em; bottom: 0.5em;}
+  #tips { font-size: 0.8em; margin: 0; }
+
+  .input-line { margin: 1em 0 1em; }
+  .input-line div { display: inline-block; }
+  .input-line div:first-child { width: 10rem; font-weight: bold;  }
+  .input-line .tip { display: block; padding-left: 10.3rem; font-size: 0.8em;
+      color: gray; transition: 0.3s; margin-top: 0.5em;}
+  .input-line:hover .tip { color: black; transition: 0.5s; }
+  .input-line .tip.combine { display: inline; padding: 0; }
+  #submit { margin: 0 0 1rem 300px; font-size: 1.1em;
+      font-family: "微软雅黑", "黑体", sans-serif; }
+
+</style>
+</head>
+
+<body>
+
+
+<h1>在线 ASS 转 SRT</h1>
+<form id="form" class="box" action="convert/converted.srt" method="post" enctype="multipart/form-data" name="form_trans">
+  <input type="hidden" name="csrfmiddlewaretoken" value="NcxWVx2CIsYY4FLen8Y8m6JZl8y1cb5t3Q8isryy07fDTM2kueqvSlljcgcW4bgu">
+  <datalist id="charsets">
+    <option value="国际码 (UTF-8)"></option>
+    <option value="国际码 (UTF-16)"></option>
+    <option value="中文 (GB18030)"></option>
+    <option value="繁体中文 (Big5)"></option>
+    <option value="日文 (Shift_JIS)"></option>
+    <option value="日文 (EUC-JP)"></option>
+  </datalist>
+  <div class="input-line">
+    <div><label for="file">选择文件 (ASS/ZIP)</label></div>
+    <div><input type="file" name="file" id="file"></div>
+    <p class="tip">支持 ZIP 压缩包批量转换：请直接将 ASS 或 SSA 文件压缩成 ZIP 文档上传（推荐）。</p>
+  </div>
+  <div class="input-line">
+    <div><label for="src-charset">ASS 编码</label></div>
+    <div><input type="text" name="src-charset" id="src-charset" list="charsets" placeholder="自动检测"></div>
+    <p class="tip">自动检测失败时，可尝试手动指定 ASS 文件所使用的编码。</p>
+  </div>
+  <div class="input-line">
+    <div><label for="dst-charset">SRT 编码</label></div>
+    <div><input type="text" name="dst-charset" id="dst-charset" list="charsets" placeholder="同原文件"></div>
+    <p class="tip">若您的播放设备不支持原文件编码，可指定一个。<br>
+      注意，不合适的编码可能导致转换失败，请尝试留空、使用 UTF-8 或 UTF-16。</p>
+  </div>
+  <div class="input-line">
+    <div><label for="ignore">忽略编码错误</label></div>
+    <div><input type="checkbox" name="ignore" id="ignore"></div>
+    <label for="ignore" class="tip combine">无法处理的文字将被删去。建议选择合适的编码而非忽略错误。</label>
+  </div>
+  <div class="input-line">
+    <div><label for="tranlate">繁简转换</label></div>
+    <div><select name="translate" id="translate">
+      <option value="" selected="selected">不转换</option>
+      <option value="zh-hans">转换为简体</option>
+      <option value="zh-hant">转换为繁体</option>
+    </select></div>
+    <p class="tip">简单的中文繁简体转换。使用中文维基百科的部分转换规则。</p>
+  </div>
+
+  <div class="input-line">
+    <div><label for="remove-effect">移除特效字幕</label></div>
+    <div><input type="checkbox" name="remove-effect" id="remove-effect"></div>
+    <label for="remove-effect" class="tip combine">例如顶部滚动的“…仅供学习使用，请于24小时内删除…”等字幕将被移除。</label>
+  </div>
+  <img id="sakamoto" alt="坂本先生~" src="/static/ass2srt/MrSakamoto-small.png" width="100" height="121">
+  <div class="input-line">
+    <div><label for="only-first-line">仅保留首行</label></div>
+    <div><input type="checkbox" name="only-first-line" id="only-first-line"></div>
+    <label for="only-first-line" class="tip combine">双语字幕常分行显示两种语言。开启此功能将仅保留首行字幕。</label>
+  </div>
+  <input id="submit" type="submit" value="转换并下载" name="button">
+  <p id="tips">若需要批量转换，可使用这个<a href="//sorz.org/py-ass2srt/">离线版本</a>。
+    <!--
+    如有必要可尝试回到<a href="http://gae.imorz.tk/tools/asstosrt/">老版本</a>。
+    -->
+    其他语言版本：
+    <a title="简体中文" href="?lang=zh-cn">简</a>
+    <a title="正體中文" href="?lang=zh-tw">繁</a>
+    <a title="English" href="?lang=en">English</a><br>
+    New in 2018: You also can <a href="https://sorz.github.io/asstosrt-wasm/">try this</a> (beta).</p>
+</form>
+
+<!--
+<h1 id="comments">评论</h1>
+<div class="box" id="disqus_thread">
+
+</div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'labsorz'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view comments</noscript>
+-->
+<script>
+  function replaceExt(name, ext) {
+    return name.substr(0, name.length - 3) + ext;
+  }
+
+  document.getElementById('form').onsubmit = function () {
+    var file = document.getElementById('file')
+    var name = file.value.match(/[^(\\|\/)]+\.(zip|ass|ssa)$/i);
+    if (name == null) {
+      alert("您必须选择一个以 .ass、.ssa 或 .zip 为后缀的文件");
+      return false;
+    }
+    if (name[1] == 'zip')
+      name = replaceExt(name[0], 'srt.zip');
+    else
+      name = replaceExt(name[0], 'srt');
+    document.getElementById('form').action = 'convert/' + name;
+  }
+</script>
+
+
+<hr>
+<footer>
+    Chinese conversion is a part of <a href="http://code.google.com/p/pyswim/">pyswim</a>;<br>
+Comments are powered by <a href="http://disqus.com"><span class="logo-disqus">Disqus</span></a>;<br>
+Background image is generated by <a href="http://bgpatterns.com/">BigPatterns</a>;<br>
+<a href="http://www.acfun.tv/v/ac258433/">Sakamoto</a>（坂本さん）is provided by サカンポー（<br>
+Offline version and source code are available on <a href="https://github.com/sorz/asstosrt" title="sorz/asstosrt">GitHub</a>.<br>
+&copy; 2011-2018 <a href="//sorz.org/">sorz.org</a>
+
+</footer>
+</body>
+</html>
+
