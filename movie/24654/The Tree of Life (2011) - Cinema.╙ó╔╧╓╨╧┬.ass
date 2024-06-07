@@ -1,0 +1,577 @@
+﻿[Script Info]<br />
+;SrtEdit 6.2.2012.322<br />
+;Copyright(C) 2005-2012 Yuan Weiguo<br />
+<br />
+Title: <br />
+Original Script: <br />
+Original Translation: <br />
+Original Timing: <br />
+Original Editing: <br />
+Script Updated By: <br />
+Update Details: <br />
+ScriptType: v4.00+<br />
+Collisions: Reverse<br />
+PlayResX: 384<br />
+PlayResY: 288<br />
+Timer: 100.0000<br />
+Synch Point: <br />
+WrapStyle: 0<br />
+ScaledBorderAndShadow: yes<br />
+<br />
+[V4+ Styles]<br />
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding<br />
+Style: AF,方正正大黑简体,14,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1<br />
+Style: Default,Cronos Pro Subhead,18,&H003CF1F3,&HF0000000,&H000D0500,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,0,0,1,1<br />
+<br />
+[Events]<br />
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text<br />
+<br />
+<br />
+Dialogue: 0,0:00:01.99,0:00:06.99,Default,,0,0,1,,{\fn华文楷体\fs16\1c&H3CF1F3&\b0}--==本影片由 {\1c&HFF8000&\b1}CMCT 团队{\fn华文楷体\1c&H3CF1F3&\b0} 荣誉出品==--\N更多精彩影视 访问 {\fnCronos Pro Subhead\1c&HFF00FF&\b1}http://www.cmct.tv{\r}<br />
+Dialogue: 0,0:00:05.00,0:00:08.00,Default,,0,0,8,,{\blur3\fn华文楷体\fs18\1c&H3CF1F3&\b1}影片压制：风潇潇　字幕调校：风潇潇　招募Q号：76846146{\r}<br />
+Dialogue: 0,0:00:08.00,0:00:11.00,Default,,0,0,8,,{\blur3\fn华文楷体\fs18\1c&H3CF1F3&\b1}字幕来源：YYeTs字幕组{\r}<br />
+Dialogue: 0,0:00:14.64,0:00:29.48,AF,,0,0,0,,{\fad\pos(138,200)}我奠定大地根基的时候 你在哪里呢？<br />
+Dialogue: 0,0:00:14.64,0:00:29.48,AF,,0,0,0,,{\fad\pos(146,220)}那时晨星一起歌唱 上帝的众子也都欢呼？<br />
+Dialogue: 0,0:00:14.64,0:00:29.48,AF,,0,0,0,,{\fad\pos(267,245)}约伯记 第38章:4,7节<br />
+Dialogue: 0,0:00:46.08,0:00:48.58,Default,NTP,0000,0000,0000,,Brother...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}弟弟{\r}<br />
+Dialogue: 0,0:00:53.58,0:00:56.08,Default,NTP,0000,0000,0000,,Mother...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}母亲{\r}<br />
+Dialogue: 0,0:01:00.97,0:01:03.53,Default,NTP,0000,0000,0000,,It was they who led me to your door.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}是他们把我领到你们的门前{\r}<br />
+Dialogue: 0,0:01:33.84,0:01:36.93,Default,NTP,0000,0000,0000,,A man's heart has heard two ways through life.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}扪心自问 生命之路有两条{\r}<br />
+Dialogue: 0,0:01:38.91,0:01:40.50,Default,NTP,0000,0000,0000,,The way of nature.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}一条是顺从天性 随性而为{\r}<br />
+Dialogue: 0,0:01:41.61,0:01:43.14,Default,NTP,0000,0000,0000,,And the way of grace.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}或是风度高雅 严于律己{\r}<br />
+Dialogue: 0,0:01:44.95,0:01:47.65,Default,NTP,0000,0000,0000,,You have to choose which one you'll follow.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你要选择属于自己的路{\r}<br />
+Dialogue: 0,0:02:00.20,0:02:02.39,Default,NTP,0000,0000,0000,,Grace doesn't try to please itself.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}要有风度就无法事事顺心{\r}<br />
+Dialogue: 0,0:02:05.10,0:02:09.37,Default,NTP,0000,0000,0000,,It accepts being slighted, forgotten, disliked.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}受到轻视 遗忘和厌恶时要泰然处之{\r}<br />
+Dialogue: 0,0:02:13.81,0:02:16.71,Default,NTP,0000,0000,0000,,It accepts insults and injuries.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}受到侮辱和中伤时要学会接受{\r}<br />
+Dialogue: 0,0:02:35.17,0:02:37.73,Default,NTP,0000,0000,0000,,Nature only wants to please itself.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}天性则需要顺从 需要取悦{\r}<br />
+Dialogue: 0,0:02:38.54,0:02:40.51,Default,NTP,0000,0000,0000,,Bless our lord this food...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}感谢上帝赐予我们食物...{\r}<br />
+Dialogue: 0,0:02:40.64,0:02:42.57,Default,NTP,0000,0000,0000,,Get others to please it too.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}天性悦万物{\r}<br />
+Dialogue: 0,0:02:42.81,0:02:44.30,Default,NTP,0000,0000,0000,,...loving and faithful service...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}爱和一成不变的服务...{\r}<br />
+Dialogue: 0,0:02:44.44,0:02:46.41,Default,NTP,0000,0000,0000,,It likes to lord it over them.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}万物顺天性{\r}<br />
+Dialogue: 0,0:02:46.61,0:02:48.24,Default,NTP,0000,0000,0000,,...Bless these boys...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}保佑我们的孩子...{\r}<br />
+Dialogue: 0,0:02:48.65,0:02:50.44,Default,NTP,0000,0000,0000,,To have its own way.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}方能创其独特之道{\r}<br />
+Dialogue: 0,0:02:55.22,0:02:57.65,Default,NTP,0000,0000,0000,,It finds reasons to be unhappy.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}痛苦可以信手拈来{\r}<br />
+Dialogue: 0,0:02:57.92,0:03:00.72,Default,NTP,0000,0000,0000,,When all the world is shining around it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不论周遭世界多么灿烂{\r}<br />
+Dialogue: 0,0:03:02.23,0:03:05.13,Default,NTP,0000,0000,0000,,And love is smiling through all things.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}又或爱正在天地间微笑徜徉{\r}<br />
+Dialogue: 0,0:03:20.38,0:03:23.87,Default,NTP,0000,0000,0000,,They taught us, that no one who loves the way of grace,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们教育我们 崇尚高雅举止的人{\r}<br />
+Dialogue: 0,0:03:24.25,0:03:26.62,Default,NTP,0000,0000,0000,,ever comes to a bad end.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}结局都很美好{\r}<br />
+Dialogue: 0,0:03:34.59,0:03:36.53,Default,NTP,0000,0000,0000,,I will be true to you,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}无论发生何事{\r}<br />
+Dialogue: 0,0:03:38.80,0:03:40.56,Default,NTP,0000,0000,0000,,whatever comes.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我都会向你敞开心房{\r}<br />
+Dialogue: 0,0:06:01.81,0:06:03.04,Default,NTP,0000,0000,0000,,My son.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我的儿啊{\r}<br />
+Dialogue: 0,0:06:12.42,0:06:15.28,Default,NTP,0000,0000,0000,,I just want to die. To be with him.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我只想去死 去陪他{\r}<br />
+Dialogue: 0,0:06:56.80,0:06:59.09,Default,NTP,0000,0000,0000,,He's in God's hands now.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}上帝把他接走了{\r}<br />
+Dialogue: 0,0:07:05.84,0:07:08.17,Default,NTP,0000,0000,0000,,He was in God's hands the whole time.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他从未离开过上帝{\r}<br />
+Dialogue: 0,0:07:11.18,0:07:12.47,Default,NTP,0000,0000,0000,,Wasn't he?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不是吗{\r}<br />
+Dialogue: 0,0:07:17.12,0:07:18.55,Default,NTP,0000,0000,0000,,My home.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我的家{\r}<br />
+Dialogue: 0,0:07:24.02,0:07:25.58,Default,NTP,0000,0000,0000,,My God.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我的上帝{\r}<br />
+Dialogue: 0,0:07:32.16,0:07:34.22,Default,NTP,0000,0000,0000,,I shall fear no evil.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我什么也不怕了{\r}<br />
+Dialogue: 0,0:07:35.73,0:07:38.60,Default,NTP,0000,0000,0000,,Fear no evil, for you are with me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不怕了 因为你在这里陪着我{\r}<br />
+Dialogue: 0,0:07:38.77,0:07:40.57,Default,NTP,0000,0000,0000,,What did you gain?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你得到了什么呢{\r}<br />
+Dialogue: 0,0:07:40.77,0:07:43.54,Default,NTP,0000,0000,0000,,Be not far from me, for trouble is near.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别离我太远 危险就在附近{\r}<br />
+Dialogue: 0,0:07:43.71,0:07:45.47,Default,NTP,0000,0000,0000,,Go on now, we're alright.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}快走吧 我们没事儿{\r}<br />
+Dialogue: 0,0:07:47.95,0:07:49.44,Default,NTP,0000,0000,0000,,We're alright.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们没事儿{\r}<br />
+Dialogue: 0,0:07:58.92,0:08:00.52,Default,NTP,0000,0000,0000,,Thank you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}谢谢{\r}<br />
+Dialogue: 0,0:08:06.27,0:08:08.70,Default,NTP,0000,0000,0000,,Shouldn't have your memories of him.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你应该忘记他{\r}<br />
+Dialogue: 0,0:08:10.10,0:08:12.16,Default,NTP,0000,0000,0000,,You have to be strong now, and...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你要变坚强{\r}<br />
+Dialogue: 0,0:08:15.47,0:08:19.31,Default,NTP,0000,0000,0000,,I know, the pain will, it will pass in time.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}听我说 痛苦总会过去{\r}<br />
+Dialogue: 0,0:08:20.08,0:08:22.14,Default,NTP,0000,0000,0000,,You know, it might seem,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这可能{\r}<br />
+Dialogue: 0,0:08:22.31,0:08:24.71,Default,NTP,0000,0000,0000,,hard, my saying that, but it's true.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}并不容易 但确实是真理{\r}<br />
+Dialogue: 0,0:08:24.88,0:08:26.87,Default,NTP,0000,0000,0000,,I don't want it to.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我不想忘记{\r}<br />
+Dialogue: 0,0:08:29.29,0:08:31.02,Default,NTP,0000,0000,0000,,Life goes on.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}生活总要继续{\r}<br />
+Dialogue: 0,0:08:33.19,0:08:35.06,Default,NTP,0000,0000,0000,,People pass along.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}人总有一死{\r}<br />
+Dialogue: 0,0:08:36.90,0:08:38.69,Default,NTP,0000,0000,0000,,Nothing stays the same.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}没有什么是永恒不变的{\r}<br />
+Dialogue: 0,0:08:42.50,0:08:44.53,Default,NTP,0000,0000,0000,,You still got the other two.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你还有另外两个儿子啊{\r}<br />
+Dialogue: 0,0:08:51.41,0:08:54.44,Default,NTP,0000,0000,0000,,The Lord gives and the Lord takes away.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}上帝先给予后收回{\r}<br />
+Dialogue: 0,0:08:56.08,0:08:57.61,Default,NTP,0000,0000,0000,,That's the way he is.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这就是他的行事原则{\r}<br />
+Dialogue: 0,0:09:03.99,0:09:08.32,Default,NTP,0000,0000,0000,,He sends flies to wounds...that he should heal.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}该去治愈的伤口 他却往上撒盐{\r}<br />
+Dialogue: 0,0:09:25.61,0:09:29.41,Default,NTP,0000,0000,0000,,I never got a chance to tell him how sorry I was.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我都没机会说 我有多对不起他{\r}<br />
+Dialogue: 0,0:09:34.79,0:09:36.78,Default,NTP,0000,0000,0000,,I even...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我甚至{\r}<br />
+Dialogue: 0,0:09:38.82,0:09:42.59,Default,NTP,0000,0000,0000,,punched himself in the face for no reason.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}无缘无故就揍他的脸{\r}<br />
+Dialogue: 0,0:09:50.24,0:09:52.07,Default,NTP,0000,0000,0000,,You sit next to me at the piano\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你弹琴时 我就坐在你旁边{\r}<br />
+Dialogue: 0,0:09:52.07,0:09:54.73,Default,NTP,0000,0000,0000,,and I criticized where he'd turned the pages.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他一翻琴谱 我就训斥他{\r}<br />
+Dialogue: 0,0:10:12.69,0:10:15.18,Default,NTP,0000,0000,0000,,I might even feel ashamed.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我甚至觉得羞耻{\r}<br />
+Dialogue: 0,0:10:16.46,0:10:18.45,Default,NTP,0000,0000,0000,,Why shame?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}为什么呢{\r}<br />
+Dialogue: 0,0:10:24.24,0:10:27.17,Default,NTP,0000,0000,0000,,Poor boy. Poor boy.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}可怜的孩子 可怜的孩子{\r}<br />
+Dialogue: 0,0:10:57.74,0:10:59.83,Default,NTP,0000,0000,0000,,How did you come to me?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你如何来到我的身边{\r}<br />
+Dialogue: 0,0:11:06.85,0:11:08.81,Default,NTP,0000,0000,0000,,In what shape?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}以何种形状{\r}<br />
+Dialogue: 0,0:11:13.45,0:11:15.21,Default,NTP,0000,0000,0000,,What disguise?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}戴着什么样的面具{\r}<br />
+Dialogue: 0,0:12:39.14,0:12:41.40,Default,NTP,0000,0000,0000,,I see the child I was.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我看到了我小时候{\r}<br />
+Dialogue: 0,0:12:50.62,0:12:53.05,Default,NTP,0000,0000,0000,,I see my brother.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}看到了我弟弟{\r}<br />
+Dialogue: 0,0:12:56.35,0:12:57.88,Default,NTP,0000,0000,0000,,True.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}纯真{\r}<br />
+Dialogue: 0,0:13:00.66,0:13:02.06,Default,NTP,0000,0000,0000,,Kind.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}善良{\r}<br />
+Dialogue: 0,0:13:08.73,0:13:11.40,Default,NTP,0000,0000,0000,,He died when he was 19.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他十九岁时死了{\r}<br />
+Dialogue: 0,0:13:44.14,0:13:47.13,Default,NTP,0000,0000,0000,,Just check, this one against this.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}再查查 这个和这个有问题{\r}<br />
+Dialogue: 0,0:13:47.34,0:13:49.33,Default,NTP,0000,0000,0000,,She wants to get back together.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}她想复合{\r}<br />
+Dialogue: 0,0:13:49.81,0:13:52.57,Default,NTP,0000,0000,0000,,But, the chapter's closed, the story's been told.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}但是感情都没了 该说的话也说了{\r}<br />
+Dialogue: 0,0:13:54.68,0:13:56.01,Default,NTP,0000,0000,0000,,What are you gonna do?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你打算怎么办{\r}<br />
+Dialogue: 0,0:13:57.48,0:13:58.97,Default,NTP,0000,0000,0000,,Experiment.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}再试试{\r}<br />
+Dialogue: 0,0:14:03.12,0:14:05.61,Default,NTP,0000,0000,0000,,When you're young, it's all about your career.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}年轻的时候 事业是生活的全部{\r}<br />
+Dialogue: 0,0:14:16.24,0:14:20.34,Default,NTP,0000,0000,0000,,I just feel like I'm...bumping into walls.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我只是觉得自己...四处碰壁{\r}<br />
+Dialogue: 0,0:14:37.16,0:14:38.91,Default,NTP,0000,0000,0000,,The world's gone to the dogs,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}世界落入了无能之辈手中{\r}<br />
+Dialogue: 0,0:14:38.91,0:14:41.39,Default,NTP,0000,0000,0000,,people are greedy and keep getting worse.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}人们变得贪婪 得寸进尺{\r}<br />
+Dialogue: 0,0:14:45.80,0:14:48.49,Default,NTP,0000,0000,0000,,I try to get into their hands.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我试图理解他们{\r}<br />
+Dialogue: 0,0:14:56.24,0:15:00.80,Default,NTP,0000,0000,0000,,Hey dad, I'm sorry I said what I said, I'm...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}爸 我刚才不该说那些话的 对不起 我...{\r}<br />
+Dialogue: 0,0:15:06.85,0:15:09.57,Default,NTP,0000,0000,0000,,Yeah, I think about him every day.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}没错 我每天都会想起他{\r}<br />
+Dialogue: 0,0:15:09.57,0:15:11.95,Default,NTP,0000,0000,0000,,I just shouldn't have said what I did, I'm sorry.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我不该说那些话 对不起{\r}<br />
+Dialogue: 0,0:15:21.70,0:15:24.22,Default,NTP,0000,0000,0000,,What are you thinking? I know, I know what you did...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你觉得呢 我明白 我明白你那么做...{\r}<br />
+Dialogue: 0,0:15:26.24,0:15:29.90,Default,NTP,0000,0000,0000,,And only two of those were turned down by client...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}只有两个人遭到了客户的否定...{\r}<br />
+Dialogue: 0,0:15:50.60,0:15:52.72,Default,NTP,0000,0000,0000,,How did I lose you?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我是怎么失去你的{\r}<br />
+Dialogue: 0,0:15:59.90,0:16:01.93,Default,NTP,0000,0000,0000,,Wandered.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}四处游荡{\r}<br />
+Dialogue: 0,0:16:06.18,0:16:08.11,Default,NTP,0000,0000,0000,,Forgot you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}忘记了你{\r}<br />
+Dialogue: 0,0:17:07.84,0:17:09.33,Default,NTP,0000,0000,0000,,Find me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}来找我{\r}<br />
+Dialogue: 0,0:17:34.37,0:17:36.33,Default,NTP,0000,0000,0000,,How did she bear it?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}她是怎么熬过来的{\r}<br />
+Dialogue: 0,0:17:46.04,0:17:47.51,Default,NTP,0000,0000,0000,,Mother.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}母亲{\r}<br />
+Dialogue: 0,0:18:25.32,0:18:27.48,Default,NTP,0000,0000,0000,,Was I false to you?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你觉得我虚伪吗{\r}<br />
+Dialogue: 0,0:19:14.23,0:19:16.00,Default,NTP,0000,0000,0000,,Lord...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}上帝啊{\r}<br />
+Dialogue: 0,0:19:23.27,0:19:24.61,Default,NTP,0000,0000,0000,,Why?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}为什么{\r}<br />
+Dialogue: 0,0:19:32.62,0:19:34.52,Default,NTP,0000,0000,0000,,Where were you?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你在哪里{\r}<br />
+Dialogue: 0,0:20:36.15,0:20:37.81,Default,NTP,0000,0000,0000,,Did you know?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你知道吗{\r}<br />
+Dialogue: 0,0:20:54.17,0:20:56.43,Default,NTP,0000,0000,0000,,Who are we to you?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}对你来说我们是什么呢{\r}<br />
+Dialogue: 0,0:21:15.85,0:21:17.38,Default,NTP,0000,0000,0000,,Answer me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}回答我{\r}<br />
+Dialogue: 0,0:25:28.91,0:25:30.97,Default,NTP,0000,0000,0000,,We cry to you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们向你哭诉{\r}<br />
+Dialogue: 0,0:25:37.31,0:25:38.80,Default,NTP,0000,0000,0000,,My soul.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我的灵魂{\r}<br />
+Dialogue: 0,0:25:47.99,0:25:49.58,Default,NTP,0000,0000,0000,,My son.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我的儿子{\r}<br />
+Dialogue: 0,0:25:57.94,0:25:59.66,Default,NTP,0000,0000,0000,,Hear us.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你来听听啊{\r}<br />
+Dialogue: 0,0:34:04.05,0:34:06.08,Default,NTP,0000,0000,0000,,Light up my life.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}照亮我的生活吧{\r}<br />
+Dialogue: 0,0:34:09.56,0:34:11.36,Default,NTP,0000,0000,0000,,I search for you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我追寻着你{\r}<br />
+Dialogue: 0,0:34:16.33,0:34:17.46,Default,NTP,0000,0000,0000,,My home.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我的家{\r}<br />
+Dialogue: 0,0:34:28.45,0:34:29.94,Default,NTP,0000,0000,0000,,My child.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我的孩子{\r}<br />
+Dialogue: 0,0:35:49.93,0:35:52.12,Default,NTP,0000,0000,0000,,You spoke to me through her.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你通过她与我对话{\r}<br />
+Dialogue: 0,0:35:55.97,0:35:58.37,Default,NTP,0000,0000,0000,,You spoke with me from the sky.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你在天上与我交流{\r}<br />
+Dialogue: 0,0:36:00.44,0:36:02.13,Default,NTP,0000,0000,0000,,The trees.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那些树{\r}<br />
+Dialogue: 0,0:36:07.08,0:36:09.07,Default,NTP,0000,0000,0000,,Before I knew I loved you,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}在我还不知道我爱你{\r}<br />
+Dialogue: 0,0:36:11.85,0:36:13.54,Default,NTP,0000,0000,0000,,believed in you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}在我信任你之前{\r}<br />
+Dialogue: 0,0:36:32.14,0:36:35.07,Default,NTP,0000,0000,0000,,When did you first touch my heart?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你是何时触动了我的心弦{\r}<br />
+Dialogue: 0,0:39:09.76,0:39:11.34,Default,NTP,0000,0000,0000,,...and manfully to fight under\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}...呼喊着口号 勇敢坚定的{\r}<br />
+Dialogue: 0,0:39:11.34,0:39:14.03,Default,NTP,0000,0000,0000,,his banner against sin, the world, and the devil.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}抗击罪恶 抗击这个世界 抗击邪恶{\r}<br />
+Dialogue: 0,0:39:40.15,0:39:41.94,Default,NTP,0000,0000,0000,,{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}跑{\r}<br />
+Dialogue: 0,0:39:55.37,0:39:57.67,Default,NTP,0000,0000,0000,,We're having Mr. McMander over for dinner.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们要请麦曼德先生来吃饭{\r}<br />
+Dialogue: 0,0:39:57.67,0:39:59.64,Default,NTP,0000,0000,0000,,This is a double bidder right on in.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这句话里有两个d音{\r}<br />
+Dialogue: 0,0:41:40.98,0:41:42.77,Default,NTP,0000,0000,0000,,What's this?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这是什么{\r}<br />
+Dialogue: 0,0:41:42.98,0:41:45.81,Default,NTP,0000,0000,0000,,- Two alligators. - Two alligators.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 两头短吻鳄 - 两头短吻鳄{\r}<br />
+Dialogue: 0,0:41:51.45,0:41:54.12,Default,NTP,0000,0000,0000,,- Kangaroo. - Kangaroo.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 长颈鹿 - 长颈鹿{\r}<br />
+Dialogue: 0,0:41:58.80,0:42:06.20,Default,NTP,0000,0000,0000,,Jump. Jump. Jump. Jump.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}跳 跳 跳 跳{\r}<br />
+Dialogue: 0,0:43:12.20,0:43:13.36,Default,NTP,0000,0000,0000,,Sweetheart.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}亲爱的{\r}<br />
+Dialogue: 0,0:43:16.11,0:43:17.40,Default,NTP,0000,0000,0000,,Please.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别这样{\r}<br />
+Dialogue: 0,0:43:20.08,0:43:21.24,Default,NTP,0000,0000,0000,,I know.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我知道{\r}<br />
+Dialogue: 0,0:43:21.28,0:43:23.47,Default,NTP,0000,0000,0000,,No! No!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不行 不行{\r}<br />
+Dialogue: 0,0:43:48.78,0:43:50.68,Default,NTP,0000,0000,0000,,It's mine!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}是我的{\r}<br />
+Dialogue: 0,0:43:54.38,0:43:56.11,Default,NTP,0000,0000,0000,,You found me!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}找到我啦{\r}<br />
+Dialogue: 0,0:44:32.15,0:44:35.14,Default,NTP,0000,0000,0000,,You'll be grown before that tree is tall.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}等树长高你早就长大了{\r}<br />
+Dialogue: 0,0:44:39.96,0:44:42.02,Default,NTP,0000,0000,0000,,Blue far.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}一大片的蓝{\r}<br />
+Dialogue: 0,0:44:44.53,0:44:45.62,Default,NTP,0000,0000,0000,,You.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你{\r}<br />
+Dialogue: 0,0:44:59.08,0:45:00.60,Default,NTP,0000,0000,0000,,Are you afraid?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}害怕吗{\r}<br />
+Dialogue: 0,0:45:02.75,0:45:04.01,Default,NTP,0000,0000,0000,,Come here.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}过来{\r}<br />
+Dialogue: 0,0:45:57.70,0:45:59.70,Default,NTP,0000,0000,0000,,Come here. Alright, now come back here son,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}过来 到这儿来儿子{\r}<br />
+Dialogue: 0,0:45:59.70,0:46:01.90,Default,NTP,0000,0000,0000,,stay out of there. That's Spencer's yard, okay?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}离那远点儿 那是斯潘塞家的院子 知道吗{\r}<br />
+Dialogue: 0,0:46:02.61,0:46:04.16,Default,NTP,0000,0000,0000,,You see this line?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}看见这条线了吗{\r}<br />
+Dialogue: 0,0:46:04.54,0:46:06.47,Default,NTP,0000,0000,0000,,Let's not cross it, you understand?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别过了界 明白吗{\r}<br />
+Dialogue: 0,0:46:07.58,0:46:08.94,Default,NTP,0000,0000,0000,,Do you understand?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你明白了吗{\r}<br />
+Dialogue: 0,0:46:10.01,0:46:11.98,Default,NTP,0000,0000,0000,,Do you see this line? Look it here. Look here.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}看见这条线了吗 看这儿 看{\r}<br />
+Dialogue: 0,0:46:14.68,0:46:17.35,Default,NTP,0000,0000,0000,,Okay, now come back here son. Come on back.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}好了 回来儿子 回来{\r}<br />
+Dialogue: 0,0:46:24.63,0:46:26.32,Default,NTP,0000,0000,0000,,Let's stay out of there.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们离那儿远点儿{\r}<br />
+Dialogue: 0,0:46:42.88,0:46:45.85,Default,NTP,0000,0000,0000,,"Now, my dears," said old Mrs. Rabbit one morning,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}一天早上 兔奶奶说到 亲爱的{\r}<br />
+Dialogue: 0,0:46:46.38,0:46:49.35,Default,NTP,0000,0000,0000,,"You may go into the fields or down the lane."\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你可以到外面或者巷子里玩儿啦{\r}<br />
+Dialogue: 0,0:46:49.89,0:46:52.55,Default,NTP,0000,0000,0000,,"Don't go into Mr. Mcgregor's garden."\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不过别到麦克格雷戈先生的花园里去{\r}<br />
+Dialogue: 0,0:46:53.32,0:46:55.48,Default,NTP,0000,0000,0000,,"Your father had an accident there."\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你爸爸在那儿出过事{\r}<br />
+Dialogue: 0,0:47:01.33,0:47:03.76,Default,NTP,0000,0000,0000,,That's where God lives.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那就是上帝住的地方{\r}<br />
+Dialogue: 0,0:47:31.59,0:47:35.46,Default,NTP,0000,0000,0000,,Goodnight, we'll see you in 5 years.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}晚安 我们五年后见{\r}<br />
+Dialogue: 0,0:48:32.08,0:48:33.58,Default,NTP,0000,0000,0000,,Want to eat a grasshopper?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}想吃蚱蜢吗{\r}<br />
+Dialogue: 0,0:48:34.76,0:48:36.35,Default,NTP,0000,0000,0000,,I found it! I found this old bone!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}找到啦 我找到老骨头了{\r}<br />
+Dialogue: 0,0:48:37.90,0:48:39.69,Default,NTP,0000,0000,0000,,Oh, is that a rock?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}是块石头吗{\r}<br />
+Dialogue: 0,0:48:39.69,0:48:41.02,Default,NTP,0000,0000,0000,,No.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不是{\r}<br />
+Dialogue: 0,0:49:48.93,0:49:51.56,Default,NTP,0000,0000,0000,,Bless this food to our use.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}感谢上帝赐予我们食物{\r}<br />
+Dialogue: 0,0:49:51.57,0:49:54.29,Default,NTP,0000,0000,0000,,As to your loving and faithful service.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}献上我们的爱与一成不变的服务{\r}<br />
+Dialogue: 0,0:49:54.47,0:49:57.10,Default,NTP,0000,0000,0000,,Make us remindful of those who are in need.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}请使我们铭记那些需要帮助的人{\r}<br />
+Dialogue: 0,0:49:57.47,0:49:58.44,Default,NTP,0000,0000,0000,,Amen.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}阿门{\r}<br />
+Dialogue: 0,0:50:06.32,0:50:08.48,Default,NTP,0000,0000,0000,,Can you pass the butter, please?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}请把黄油递过来好吗{\r}<br />
+Dialogue: 0,0:50:09.39,0:50:11.41,Default,NTP,0000,0000,0000,,Can you pass the butter please sir.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}请把黄油递过来好吗 先生{\r}<br />
+Dialogue: 0,0:50:11.55,0:50:12.75,Default,NTP,0000,0000,0000,,Sir.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}先生{\r}<br />
+Dialogue: 0,0:50:13.99,0:50:17.52,Default,NTP,0000,0000,0000,,- What did you do today? - We went to school.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 你们今天干什么了 - 去了学校{\r}<br />
+Dialogue: 0,0:50:18.06,0:50:19.79,Default,NTP,0000,0000,0000,,After that.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}之后呢{\r}<br />
+Dialogue: 0,0:50:20.56,0:50:22.19,Default,NTP,0000,0000,0000,,What about the yard?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}院子里呢{\r}<br />
+Dialogue: 0,0:50:22.60,0:50:24.59,Default,NTP,0000,0000,0000,,Did you put the runners in like I asked?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}把滑道按我说的收拾好了吗{\r}<br />
+Dialogue: 0,0:50:26.24,0:50:27.36,Default,NTP,0000,0000,0000,,Yes.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}是的{\r}<br />
+Dialogue: 0,0:50:28.17,0:50:29.60,Default,NTP,0000,0000,0000,,Yes, sir.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}是的 先生{\r}<br />
+Dialogue: 0,0:50:31.07,0:50:32.63,Default,NTP,0000,0000,0000,,Well, it didn't look like it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}看起来可不像{\r}<br />
+Dialogue: 0,0:50:49.53,0:50:50.62,Default,NTP,0000,0000,0000,,Yes.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}是的{\r}<br />
+Dialogue: 0,0:51:04.24,0:51:06.08,Default,NTP,0000,0000,0000,,Mr. Reese liked Jack's book report.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}里斯先生很喜欢杰克的书评{\r}<br />
+Dialogue: 0,0:51:06.08,0:51:08.74,Default,NTP,0000,0000,0000,,Nobody's asked sweetheart.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}没人问你话 亲爱的{\r}<br />
+Dialogue: 0,0:51:09.71,0:51:11.20,Default,NTP,0000,0000,0000,,You know this.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别老让我说{\r}<br />
+Dialogue: 0,0:51:21.63,0:51:22.76,Default,NTP,0000,0000,0000,,Crowns!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}巅峰之作{\r}<br />
+Dialogue: 0,0:51:22.99,0:51:24.66,Default,NTP,0000,0000,0000,,{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}勃拉姆斯 第四交响曲 托斯卡尼尼指挥{\r}<br />
+Dialogue: 0,0:51:35.10,0:51:37.20,Default,NTP,0000,0000,0000,,- Son. - Sir.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 儿子 - 先生{\r}<br />
+Dialogue: 0,0:51:39.24,0:51:41.30,Default,NTP,0000,0000,0000,,Reach me my lighter.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}把我的打火机拿来{\r}<br />
+Dialogue: 0,0:51:48.85,0:51:51.08,Default,NTP,0000,0000,0000,,Haven't you forgotten something?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你是不是忘了什么啊{\r}<br />
+Dialogue: 0,0:52:15.98,0:52:17.54,Default,NTP,0000,0000,0000,,Do you love your father?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你爱你的父亲吗{\r}<br />
+Dialogue: 0,0:52:19.15,0:52:20.38,Default,NTP,0000,0000,0000,,Yes, sir.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}爱 先生{\r}<br />
+Dialogue: 0,0:52:25.33,0:52:28.88,Default,NTP,0000,0000,0000,,...and they went off to look for Kaa the Rock Python.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们出发去找大蟒蛇克尔{\r}<br />
+Dialogue: 0,0:52:31.79,0:52:33.00,Default,NTP,0000,0000,0000,,They found him stretched out\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们发现蟒蛇沐浴在下午的阳光中{\r}<br />
+Dialogue: 0,0:52:33.01,0:52:35.09,Default,NTP,0000,0000,0000,,on a warm ledge in the afternoon sun,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}趴在温暖的岩礁上{\r}<br />
+Dialogue: 0,0:52:36.50,0:52:38.87,Default,NTP,0000,0000,0000,,admiring his beautiful new coat.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}欣赏着自己美丽的新外衣{\r}<br />
+Dialogue: 0,0:52:48.71,0:52:50.74,Default,NTP,0000,0000,0000,,Who do you love most?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们三个里面你最爱谁{\r}<br />
+Dialogue: 0,0:52:56.55,0:52:58.65,Default,NTP,0000,0000,0000,,I love you all three the same.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}一样爱{\r}<br />
+Dialogue: 0,0:53:00.29,0:53:03.66,Default,NTP,0000,0000,0000,,Tell us a story from before we can remember.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}给我们讲一个我们没听过的故事吧{\r}<br />
+Dialogue: 0,0:53:07.36,0:53:09.80,Default,NTP,0000,0000,0000,,He went for a ride in a plane once.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你爸爸曾经开过一次飞机{\r}<br />
+Dialogue: 0,0:53:13.00,0:53:14.90,Default,NTP,0000,0000,0000,,It was a graduation present.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那是别人送他的毕业礼物{\r}<br />
+Dialogue: 0,0:53:30.65,0:53:31.71,Default,NTP,0000,0000,0000,,Mother...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}母亲{\r}<br />
+Dialogue: 0,0:53:41.03,0:53:42.46,Default,NTP,0000,0000,0000,,Am I any good?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我有优点吗{\r}<br />
+Dialogue: 0,0:53:50.47,0:53:51.84,Default,NTP,0000,0000,0000,,Brave.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}很勇敢{\r}<br />
+Dialogue: 0,0:56:13.84,0:56:15.84,Default,NTP,0000,0000,0000,,{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}韦科市 警察局 刑事法庭{\r}<br />
+Dialogue: 0,0:56:51.32,0:56:53.15,Default,NTP,0000,0000,0000,,Can it happen to anyone?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}谁身上都会发生吗{\r}<br />
+Dialogue: 0,0:57:00.30,0:57:02.13,Default,NTP,0000,0000,0000,,Nobody talks about it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}没人谈论它{\r}<br />
+Dialogue: 0,0:57:06.94,0:57:09.43,Default,NTP,0000,0000,0000,,Help me not to sass my dad.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}让我别跟爸爸顶嘴{\r}<br />
+Dialogue: 0,0:57:11.18,0:57:14.75,Default,NTP,0000,0000,0000,,Help me not to get dogs in fights.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}让狗狗们别打架{\r}<br />
+Dialogue: 0,0:57:28.58,0:57:31.58,Default,NTP,0000,0000,0000,,Help me be thankful for everything I've got.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}让我学会感谢所拥有的一切{\r}<br />
+Dialogue: 0,0:57:33.63,0:57:35.60,Default,NTP,0000,0000,0000,,Where do you live?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你住在哪儿{\r}<br />
+Dialogue: 0,0:57:37.03,0:57:39.52,Default,NTP,0000,0000,0000,,Help me not to tell lies.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}让我不再说谎{\r}<br />
+Dialogue: 0,0:57:46.28,0:57:48.27,Default,NTP,0000,0000,0000,,Are you watching me?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你在看着我吗{\r}<br />
+Dialogue: 0,0:57:58.75,0:58:00.81,Default,NTP,0000,0000,0000,,I want to know what you are.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我想知道你是谁{\r}<br />
+Dialogue: 0,0:58:07.40,0:58:09.76,Default,NTP,0000,0000,0000,,I want to see what you see.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我想看你所见{\r}<br />
+Dialogue: 0,0:59:06.09,0:59:07.42,Default,NTP,0000,0000,0000,,Come here.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}到这来{\r}<br />
+Dialogue: 0,0:59:18.40,0:59:19.79,Default,NTP,0000,0000,0000,,You're going to stand there and\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你就站在这{\r}<br />
+Dialogue: 0,0:59:19.79,0:59:22.03,Default,NTP,0000,0000,0000,,you're going to close this door quietly, 50 times.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}把门轻轻关上 重复五十次{\r}<br />
+Dialogue: 0,0:59:23.04,0:59:24.34,Default,NTP,0000,0000,0000,,Count it out.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}数出来{\r}<br />
+Dialogue: 0,0:59:25.97,0:59:29.31,Default,NTP,0000,0000,0000,,3 4 5\N3, 4, 5,<br />
+Dialogue: 0,0:59:30.31,0:59:33.37,Default,NTP,0000,0000,0000,,6 7 8\N6, 7, 8<br />
+Dialogue: 0,0:59:34.55,0:59:36.40,Default,NTP,0000,0000,0000,,You can't just take off the top.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不能只抓着上面{\r}<br />
+Dialogue: 0,0:59:36.40,0:59:38.32,Default,NTP,0000,0000,0000,,You got to get them by the roots.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}得连根拔掉{\r}<br />
+Dialogue: 0,0:59:46.56,0:59:48.05,Default,NTP,0000,0000,0000,,Your mother's naive.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你们的母亲很天真{\r}<br />
+Dialogue: 0,0:59:48.23,0:59:50.56,Default,NTP,0000,0000,0000,,It takes fierce will to get ahead in this world.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}要想出人头地得有非凡的意志{\r}<br />
+Dialogue: 0,0:59:52.73,0:59:55.26,Default,NTP,0000,0000,0000,,If you're good, people take advantage of you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}如果你太善良 别人就会利用你{\r}<br />
+Dialogue: 0,1:00:01.68,1:00:03.29,Default,NTP,0000,0000,0000,,Every one of these top executives,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那些形形色色的高官{\r}<br />
+Dialogue: 0,1:00:03.29,1:00:05.04,Default,NTP,0000,0000,0000,,you know how they got where they are?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}知道他们是怎么坐到那位子的吗{\r}<br />
+Dialogue: 0,1:00:05.25,1:00:07.51,Default,NTP,0000,0000,0000,,Floated right down the middle of the river.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}从河中间漂下去{\r}<br />
+Dialogue: 0,1:00:10.05,1:00:13.22,Default,NTP,0000,0000,0000,,Don't let anyone tell you there's anything you can't do.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别让人说有什么是你办不到的{\r}<br />
+Dialogue: 0,1:00:15.36,1:00:18.26,Default,NTP,0000,0000,0000,,Don't do like I did, promise me that.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}向我保证 别重蹈我的覆辙{\r}<br />
+Dialogue: 0,1:00:20.60,1:00:22.76,Default,NTP,0000,0000,0000,,Dreamed of being a great musician.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我曾梦想成为一名伟大的音乐家{\r}<br />
+Dialogue: 0,1:00:23.43,1:00:25.80,Default,NTP,0000,0000,0000,,I let myself get sidetracked.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}却半途而废{\r}<br />
+Dialogue: 0,1:00:27.00,1:00:29.38,Default,NTP,0000,0000,0000,,If you're looking for something to happen, that was it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}如果你想有所成就 就要坚定不移{\r}<br />
+Dialogue: 0,1:00:29.38,1:00:31.09,Default,NTP,0000,0000,0000,,Life, lived it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}生活 就要活出精彩{\r}<br />
+Dialogue: 0,1:00:48.29,1:00:51.59,Default,NTP,0000,0000,0000,,Job imagined he might build his nest on high.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}约伯曾憧憬巢筑高树的人生{\r}<br />
+Dialogue: 0,1:00:52.63,1:00:54.16,Default,NTP,0000,0000,0000,,That the integrity of his behavior\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他坚信自己行事光明磊落{\r}<br />
+Dialogue: 0,1:00:54.17,1:00:57.00,Default,NTP,0000,0000,0000,,would protect him against misfortune.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}会远离不幸 得到善报{\r}<br />
+Dialogue: 0,1:00:57.37,1:01:00.39,Default,NTP,0000,0000,0000,,And his friends thought mistakenly\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他的朋友错误地认为{\r}<br />
+Dialogue: 0,1:01:00.54,1:01:02.17,Default,NTP,0000,0000,0000,,that the Lord could only have punished\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}上帝之所以处罚他{\r}<br />
+Dialogue: 0,1:01:02.17,1:01:04.27,Default,NTP,0000,0000,0000,,him because secretly he had done something wrong.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}是因为他做了见不得人的事{\r}<br />
+Dialogue: 0,1:01:05.94,1:01:07.17,Default,NTP,0000,0000,0000,,But no.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}但事实并非如此{\r}<br />
+Dialogue: 0,1:01:07.48,1:01:09.50,Default,NTP,0000,0000,0000,,Misfortune befalls the good as well.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不幸也会降临到好人身上{\r}<br />
+Dialogue: 0,1:01:11.15,1:01:13.48,Default,NTP,0000,0000,0000,,We can't protect ourselves against it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们无法避免不幸{\r}<br />
+Dialogue: 0,1:01:13.68,1:01:15.67,Default,NTP,0000,0000,0000,,We can't protect our children.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}保护不了我们的孩子{\r}<br />
+Dialogue: 0,1:01:15.85,1:01:18.72,Default,NTP,0000,0000,0000,,We can't say to ourselves, even if I'm not happy,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不能对自己说 就算我不快乐{\r}<br />
+Dialogue: 0,1:01:18.89,1:01:21.75,Default,NTP,0000,0000,0000,,I'm going to make sure they are.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}也要让孩子们开心{\r}<br />
+Dialogue: 0,1:01:21.99,1:01:23.55,Default,NTP,0000,0000,0000,,We run before the wind,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们御风奔跑{\r}<br />
+Dialogue: 0,1:01:23.55,1:01:25.89,Default,NTP,0000,0000,0000,,we think that it will carry us forever.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}以为风儿会一路相随{\r}<br />
+Dialogue: 0,1:01:26.73,1:01:28.20,Default,NTP,0000,0000,0000,,It will not.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}但它不会{\r}<br />
+Dialogue: 0,1:01:28.36,1:01:30.30,Default,NTP,0000,0000,0000,,We vanish as a cloud,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们如云般消散{\r}<br />
+Dialogue: 0,1:01:30.30,1:01:32.49,Default,NTP,0000,0000,0000,,we whither as the autumn grass.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}如秋草般枯萎{\r}<br />
+Dialogue: 0,1:01:32.63,1:01:35.23,Default,NTP,0000,0000,0000,,And like a tree, are rooted up.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}如树般被连根拔起{\r}<br />
+Dialogue: 0,1:01:37.97,1:01:41.20,Default,NTP,0000,0000,0000,,Is there some fraud in the scheme of the universe?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}在宇宙的宏图中 是否存在着尔虞我诈{\r}<br />
+Dialogue: 0,1:01:41.34,1:01:43.64,Default,NTP,0000,0000,0000,,Is there nothing which is deathless?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}是否存在着长生不老{\r}<br />
+Dialogue: 0,1:01:43.78,1:01:46.61,Default,NTP,0000,0000,0000,,Nothing, which does not pass away?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}是否有不朽般的存在{\r}<br />
+Dialogue: 0,1:01:48.78,1:01:51.15,Default,NTP,0000,0000,0000,,We cannot stay where we are.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们不能停滞不动{\r}<br />
+Dialogue: 0,1:01:51.32,1:01:53.41,Default,NTP,0000,0000,0000,,We must journey forth.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}必须勇往直前{\r}<br />
+Dialogue: 0,1:01:53.59,1:01:57.32,Default,NTP,0000,0000,0000,,We must find that which is greater than fortune or fate.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们得找到比财富和命运更重要的东西{\r}<br />
+Dialogue: 0,1:01:58.89,1:02:01.80,Default,NTP,0000,0000,0000,,Nothing can bring us peace, but that.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}除此之外 没什么能带来安宁{\r}<br />
+Dialogue: 0,1:02:03.23,1:02:07.40,Default,NTP,0000,0000,0000,,Is the body of the wise man or the just, exempt from any pain?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}理智与公正是否使人免受病痛的折磨{\r}<br />
+Dialogue: 0,1:02:08.64,1:02:10.68,Default,NTP,0000,0000,0000,,From any disquietude, from the deformity\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}挣脱不安的困扰 远离残缺的遗憾{\r}<br />
+Dialogue: 0,1:02:10.68,1:02:14.29,Default,NTP,0000,0000,0000,,that might blight its beauty from the weakness,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}残缺可能会使美丽因虚弱而凋谢{\r}<br />
+Dialogue: 0,1:02:14.29,1:02:17.00,Default,NTP,0000,0000,0000,,that might destroy its health.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}使健康不再{\r}<br />
+Dialogue: 0,1:02:18.81,1:02:20.48,Default,NTP,0000,0000,0000,,Do you trust in God?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你相信上帝吗{\r}<br />
+Dialogue: 0,1:02:20.48,1:02:24.11,Default,NTP,0000,0000,0000,,Job too, was close to the Lord.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}约伯也离上帝很近{\r}<br />
+Dialogue: 0,1:02:25.49,1:02:28.51,Default,NTP,0000,0000,0000,,Are your friends and children, your security?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你的朋友 你的孩子 你的安全呢{\r}<br />
+Dialogue: 0,1:02:29.99,1:02:31.53,Default,NTP,0000,0000,0000,,There is no hiding place\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}在这世上{\r}<br />
+Dialogue: 0,1:02:31.54,1:02:34.12,Default,NTP,0000,0000,0000,,in all the world where trouble may not find you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}困扰无孔不入 无所不及{\r}<br />
+Dialogue: 0,1:02:34.43,1:02:36.76,Default,NTP,0000,0000,0000,,No one knows when sorrow might visit his house,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}无人知晓悲伤会何时来敲门{\r}<br />
+Dialogue: 0,1:02:36.76,1:02:39.09,Default,NTP,0000,0000,0000,,any more than Job did.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}约伯也不知道{\r}<br />
+Dialogue: 0,1:02:40.50,1:02:43.06,Default,NTP,0000,0000,0000,,At the very moment everything was taken away from Job.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}在那刻 约伯被剥夺了一切{\r}<br />
+Dialogue: 0,1:02:43.21,1:02:46.61,Default,NTP,0000,0000,0000,,He knew it was the Lord who had taken it away\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他知道 是上帝剥夺了这一切{\r}<br />
+Dialogue: 0,1:02:49.18,1:02:51.18,Default,NTP,0000,0000,0000,,Return from the passing shows of time\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}往事一幕幕重现{\r}<br />
+Dialogue: 0,1:02:51.19,1:02:54.87,Default,NTP,0000,0000,0000,,he thought that which is eternal.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他以为那就是永恒{\r}<br />
+Dialogue: 0,1:02:56.08,1:02:57.57,Default,NTP,0000,0000,0000,,As he alone see God's hand,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他只看到上帝伸出{\r}<br />
+Dialogue: 0,1:02:57.57,1:02:59.25,Default,NTP,0000,0000,0000,,who sees that he gives.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那给予的双手{\r}<br />
+Dialogue: 0,1:03:00.59,1:03:03.68,Default,NTP,0000,0000,0000,,Or does not also the one see God's hand,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}也许他没意识到{\r}<br />
+Dialogue: 0,1:03:03.68,1:03:05.85,Default,NTP,0000,0000,0000,,who sees that he takes away.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那双手同样意味着收回{\r}<br />
+Dialogue: 0,1:03:07.13,1:03:09.28,Default,NTP,0000,0000,0000,,Or does he alone see God,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}也许他只看到上帝{\r}<br />
+Dialogue: 0,1:03:09.28,1:03:12.36,Default,NTP,0000,0000,0000,,who sees God turn his face towards him?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那慈善的面庞{\r}<br />
+Dialogue: 0,1:03:13.64,1:03:15.67,Default,NTP,0000,0000,0000,,Does not also he see God,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}也许他没意识到{\r}<br />
+Dialogue: 0,1:03:15.67,1:03:18.47,Default,NTP,0000,0000,0000,,who sees God turn his back.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那同样意味着拒绝{\r}<br />
+Dialogue: 0,1:03:18.64,1:03:20.11,Default,NTP,0000,0000,0000,,He's a friend of mine.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他是我朋友{\r}<br />
+Dialogue: 0,1:03:20.24,1:03:21.97,Default,NTP,0000,0000,0000,,The one who's after real estate in town.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}在城里继承了笔房产{\r}<br />
+Dialogue: 0,1:03:23.45,1:03:25.11,Default,NTP,0000,0000,0000,,Frank Johnson.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}弗兰克·杰克逊{\r}<br />
+Dialogue: 0,1:03:26.15,1:03:28.14,Default,NTP,0000,0000,0000,,Started out as a barber.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}理发师出身{\r}<br />
+Dialogue: 0,1:03:29.89,1:03:32.15,Default,NTP,0000,0000,0000,,He built something, big.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}后来成就了番大事业{\r}<br />
+Dialogue: 0,1:03:33.92,1:03:36.86,Default,NTP,0000,0000,0000,,Now you'd think he was the fourth person of the Holy Trinity.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你可能会觉得他是三位一体中的第四人{\r}<br />
+Dialogue: 0,1:03:39.19,1:03:41.19,Default,NTP,0000,0000,0000,,They never talk about their money.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们对自己的钱财闭口不谈{\r}<br />
+Dialogue: 0,1:03:44.73,1:03:46.79,Default,NTP,0000,0000,0000,,Wrong people go hungry.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}饿着的都是不该挨饿的人{\r}<br />
+Dialogue: 0,1:03:48.14,1:03:49.73,Default,NTP,0000,0000,0000,,Die.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}死去的都是不应牺牲的人{\r}<br />
+Dialogue: 0,1:03:51.94,1:03:53.74,Default,NTP,0000,0000,0000,,Wrong people get loved.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}幸福的都是不值得被爱的人{\r}<br />
+Dialogue: 0,1:03:56.78,1:03:58.84,Default,NTP,0000,0000,0000,,The world lives by a trigger.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这是个急功近利的世界{\r}<br />
+Dialogue: 0,1:04:01.58,1:04:04.38,Default,NTP,0000,0000,0000,,You want to succeed? You can't be too good.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}想成功 就别太善良{\r}<br />
+Dialogue: 0,1:04:12.09,1:04:14.93,Default,NTP,0000,0000,0000,,Hey there young fella, try my cornbread.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}小伙子 尝尝我的玉米面包{\r}<br />
+Dialogue: 0,1:04:16.13,1:04:18.19,Default,NTP,0000,0000,0000,,Do y'all want some butter, do you?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你们想来点黄油吗{\r}<br />
+Dialogue: 0,1:04:20.20,1:04:22.14,Default,NTP,0000,0000,0000,,How about a pound of bread?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}来一磅面包怎样{\r}<br />
+Dialogue: 0,1:04:49.50,1:04:52.79,Default,NTP,0000,0000,0000,,You'll like this right? Okay? Come on.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这样站着 知道吗 快点{\r}<br />
+Dialogue: 0,1:04:53.03,1:04:53.97,Default,NTP,0000,0000,0000,,Act like you're in trouble,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}装出一副惨样{\r}<br />
+Dialogue: 0,1:04:53.97,1:04:55.80,Default,NTP,0000,0000,0000,,you don't want to fight, you don't want any trouble.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你不想挨揍 你不想惹麻烦{\r}<br />
+Dialogue: 0,1:04:55.94,1:04:57.96,Default,NTP,0000,0000,0000,,The minute you see him blink, crack him!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}一看到他眨眼 就上去痛扁他{\r}<br />
+Dialogue: 0,1:04:58.11,1:04:59.33,Default,NTP,0000,0000,0000,,Okay?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}懂了吗{\r}<br />
+Dialogue: 0,1:04:59.51,1:05:00.79,Default,NTP,0000,0000,0000,,Okay, come on, three quarters.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}来吧 三局了{\r}<br />
+Dialogue: 0,1:05:00.79,1:05:02.34,Default,NTP,0000,0000,0000,,Cover, you're going to cover, right?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}防守 要懂防守 好吧{\r}<br />
+Dialogue: 0,1:05:02.51,1:05:04.85,Default,NTP,0000,0000,0000,,Okay, here. Come on, nice, harder, nice.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}打这里 不错 再用力点 不错{\r}<br />
+Dialogue: 0,1:05:04.85,1:05:06.91,Default,NTP,0000,0000,0000,,That's a good right, let's see your left.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}右手不错 看看左手怎样{\r}<br />
+Dialogue: 0,1:05:07.55,1:05:09.43,Default,NTP,0000,0000,0000,,This is the most important thing.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这是最重要的事{\r}<br />
+Dialogue: 0,1:05:09.43,1:05:12.11,Default,NTP,0000,0000,0000,,Okay? You come in this way, keep your guard up.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}懂吗 就这样出拳 同时注意防守{\r}<br />
+Dialogue: 0,1:05:13.05,1:05:15.35,Default,NTP,0000,0000,0000,,Hit me, come on, hit me. Come on, Jack? Hit me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}打我 快点 打我 杰克 打我{\r}<br />
+Dialogue: 0,1:05:15.49,1:05:17.22,Default,NTP,0000,0000,0000,,Hit me, come on, come on!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}打我 快点 快点{\r}<br />
+Dialogue: 0,1:05:17.36,1:05:19.22,Default,NTP,0000,0000,0000,,Okay, here it is, hit me!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这里 打这里{\r}<br />
+Dialogue: 0,1:05:19.36,1:05:20.69,Default,NTP,0000,0000,0000,,Come on, son, come on!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}快点 儿子 快{\r}<br />
+Dialogue: 0,1:05:20.86,1:05:23.02,Default,NTP,0000,0000,0000,,What are you doing?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你在干什么{\r}<br />
+Dialogue: 0,1:05:26.57,1:05:28.80,Default,NTP,0000,0000,0000,,Wipe yourself off.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}拍拍干净{\r}<br />
+Dialogue: 0,1:05:29.97,1:05:32.96,Default,NTP,0000,0000,0000,,Left! Don't leave your tongue out, you're going to lose it!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}左手 别把舌头伸出来 会被打爆的{\r}<br />
+Dialogue: 0,1:05:33.11,1:05:36.60,Default,NTP,0000,0000,0000,,Left. Left. Right. Right.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}左 左 右 右{\r}<br />
+Dialogue: 0,1:05:37.48,1:05:39.04,Default,NTP,0000,0000,0000,,Left, harder.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}左手 用力点{\r}<br />
+Dialogue: 0,1:05:39.21,1:05:41.77,Default,NTP,0000,0000,0000,,Harder. Harder!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}用力 用力{\r}<br />
+Dialogue: 0,1:05:42.38,1:05:44.94,Default,NTP,0000,0000,0000,,Hit me, hit me. Come on, son, hit.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}打我 打我 快点 儿子 打{\r}<br />
+Dialogue: 0,1:05:45.09,1:05:47.55,Default,NTP,0000,0000,0000,,Give me something, show me what you got.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}给我点颜色看看 让我看看你都学到了什么{\r}<br />
+Dialogue: 0,1:05:49.12,1:05:50.99,Default,NTP,0000,0000,0000,,Come on, go on.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}快点 继续{\r}<br />
+Dialogue: 0,1:05:57.43,1:05:58.80,Default,NTP,0000,0000,0000,,One meal.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}吃饭吧{\r}<br />
+Dialogue: 0,1:06:14.32,1:06:16.01,Default,NTP,0000,0000,0000,,Leave the table.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}下桌{\r}<br />
+Dialogue: 0,1:06:22.22,1:06:23.69,Default,NTP,0000,0000,0000,,You too?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你也想下桌吗{\r}<br />
+Dialogue: 0,1:06:25.63,1:06:27.72,Default,NTP,0000,0000,0000,,- You going to continue to defy me? - No, sir.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 你想一直和我作对吗 - 没有 先生{\r}<br />
+Dialogue: 0,1:06:27.90,1:06:30.59,Default,NTP,0000,0000,0000,,You're interrupting me, I wasn't done yet.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你打断我了 我还没说完{\r}<br />
+Dialogue: 0,1:06:33.77,1:06:35.54,Default,NTP,0000,0000,0000,,Am I finished?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我说完了吗{\r}<br />
+Dialogue: 0,1:06:36.50,1:06:39.81,Default,NTP,0000,0000,0000,,- Am I? - No.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 说完了吗 - 没有{\r}<br />
+Dialogue: 0,1:06:39.81,1:06:41.90,Default,NTP,0000,0000,0000,,Thank you, Your Majesty.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}谢谢 陛下{\r}<br />
+Dialogue: 0,1:07:38.43,1:07:40.13,Default,NTP,0000,0000,0000,,Makes up stories.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}编造的故事{\r}<br />
+Dialogue: 0,1:07:43.61,1:07:45.66,Default,NTP,0000,0000,0000,,Fortunate words.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}花哨的字眼{\r}<br />
+Dialogue: 0,1:07:53.98,1:07:57.04,Default,NTP,0000,0000,0000,,He says don't put your elbows on the table.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他说别把手撑到桌上{\r}<br />
+Dialogue: 0,1:07:58.42,1:07:59.91,Default,NTP,0000,0000,0000,,He does.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}自己却那样做{\r}<br />
+Dialogue: 0,1:08:03.86,1:08:06.12,Default,NTP,0000,0000,0000,,Insults people.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}辱骂人{\r}<br />
+Dialogue: 0,1:08:07.60,1:08:09.19,Default,NTP,0000,0000,0000,,Doesn't care.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}一点也不关心人{\r}<br />
+Dialogue: 0,1:08:09.63,1:08:11.06,Default,NTP,0000,0000,0000,,I remember when you were born.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我还记得你出生的日子{\r}<br />
+Dialogue: 0,1:08:16.70,1:08:18.19,Default,NTP,0000,0000,0000,,They wouldn't let me come home.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们不让我回家{\r}<br />
+Dialogue: 0,1:08:20.21,1:08:25.08,Default,NTP,0000,0000,0000,,Navy said an officer must be present for the laying of the cue.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}海军长官必须在场指挥任务{\r}<br />
+Dialogue: 0,1:08:26.31,1:08:27.98,Default,NTP,0000,0000,0000,,I had to launch.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我必须出海{\r}<br />
+Dialogue: 0,1:09:12.03,1:09:13.82,Default,NTP,0000,0000,0000,,The next word is volcano.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}下一个词 火山{\r}<br />
+Dialogue: 0,1:09:24.57,1:09:26.67,Default,NTP,0000,0000,0000,,Next word is socket.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}下一个 插座{\r}<br />
+Dialogue: 0,1:09:32.98,1:09:34.69,Default,NTP,0000,0000,0000,,Please pass your answers to each other.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}把你们的答案交换一下{\r}<br />
+Dialogue: 0,1:09:34.69,1:09:36.68,Default,NTP,0000,0000,0000,,We're going to grade each others' papers now.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}现在给对方评分{\r}<br />
+Dialogue: 0,1:09:42.99,1:09:44.62,Default,NTP,0000,0000,0000,,No interruptions, please.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别开小差{\r}<br />
+Dialogue: 0,1:09:46.43,1:09:49.83,Default,NTP,0000,0000,0000,,Come on, get your pencil out.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}快点 把铅笔拿出来{\r}<br />
+Dialogue: 0,1:11:09.81,1:11:12.01,Default,NTP,0000,0000,0000,,Sweetheart! Oh God, sweetheart!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}宝贝 天啊 宝贝{\r}<br />
+Dialogue: 0,1:11:13.38,1:11:14.81,Default,NTP,0000,0000,0000,,Honey!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我的宝贝{\r}<br />
+Dialogue: 0,1:12:35.91,1:12:37.21,Default,NTP,0000,0000,0000,,{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}格里斯之墓{\r}<br />
+Dialogue: 0,1:12:44.24,1:12:45.83,Default,NTP,0000,0000,0000,,Was it bad?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}死亡很痛苦吗{\r}<br />
+Dialogue: 0,1:12:55.38,1:12:58.01,Default,NTP,0000,0000,0000,,Will you die too?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你也会死吗{\r}<br />
+Dialogue: 0,1:13:00.39,1:13:02.45,Default,NTP,0000,0000,0000,,You're not that old yet, mom.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}妈妈 你还没那么老{\r}<br />
+Dialogue: 0,1:13:20.81,1:13:22.50,Default,NTP,0000,0000,0000,,Where were you?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你在哪儿{\r}<br />
+Dialogue: 0,1:13:34.79,1:13:36.48,Default,NTP,0000,0000,0000,,You had a boy die.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你就这样带走了一个男孩{\r}<br />
+Dialogue: 0,1:13:44.10,1:13:46.19,Default,NTP,0000,0000,0000,,Would anything happen?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}世事无常吗{\r}<br />
+Dialogue: 0,1:13:56.19,1:13:57.19,Default,NTP,0000,0000,0000,,{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}韦科市 滴滴涕{\r}<br />
+Dialogue: 0,1:13:59.25,1:14:02.08,Default,NTP,0000,0000,0000,,I can't see! I can't see!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}什么都看不见 什么都看不见{\r}<br />
+Dialogue: 0,1:14:06.99,1:14:09.22,Default,NTP,0000,0000,0000,,Why should I be good?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我为什么要做个好人{\r}<br />
+Dialogue: 0,1:14:12.39,1:14:14.26,Default,NTP,0000,0000,0000,,If you aren't.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你都不是好人{\r}<br />
+Dialogue: 0,1:15:03.88,1:15:05.37,Default,NTP,0000,0000,0000,,Thank you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}谢谢{\r}<br />
+Dialogue: 0,1:15:20.49,1:15:22.89,Default,NTP,0000,0000,0000,,We're close.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}快到了{\r}<br />
+Dialogue: 0,1:15:25.07,1:15:26.83,Default,NTP,0000,0000,0000,,Why's this bare here?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}为什么偏偏这里裸露着{\r}<br />
+Dialogue: 0,1:15:27.67,1:15:29.60,Default,NTP,0000,0000,0000,,The grass won't grow under the tree.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}树下不长草{\r}<br />
+Dialogue: 0,1:15:29.60,1:15:32.56,Default,NTP,0000,0000,0000,,- It does at Kimbles. - They have a gardener.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 吉伯斯家树下却长草 - 他们有个园丁{\r}<br />
+Dialogue: 0,1:15:32.91,1:15:34.40,Default,NTP,0000,0000,0000,,They have money.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们有钱{\r}<br />
+Dialogue: 0,1:15:34.78,1:15:36.77,Default,NTP,0000,0000,0000,,Of course he inherited it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}当然是继承来的{\r}<br />
+Dialogue: 0,1:15:38.31,1:15:41.06,Default,NTP,0000,0000,0000,,I don't want to hear one more word out of you,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}在把活干完之前{\r}<br />
+Dialogue: 0,1:15:41.06,1:15:42.68,Default,NTP,0000,0000,0000,,not until this is finished.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我不想听见你说任何话{\r}<br />
+Dialogue: 0,1:16:22.59,1:16:24.32,Default,NTP,0000,0000,0000,,You're cropping that too close.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你种得太密了{\r}<br />
+Dialogue: 0,1:16:24.73,1:16:26.89,Default,NTP,0000,0000,0000,,You're going to have to keep that water.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你得留点水{\r}<br />
+Dialogue: 0,1:16:53.69,1:16:54.99,Default,NTP,0000,0000,0000,,Toskanini.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}托斯卡尼尼{\r}<br />
+Dialogue: 0,1:16:55.69,1:16:57.16,Default,NTP,0000,0000,0000,,Once recorded a piece 65 times.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}为了一首歌 他就重录了65次{\r}<br />
+Dialogue: 0,1:16:57.16,1:16:59.02,Default,NTP,0000,0000,0000,,You know what he said when he finished?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你知道他完成时说了什么吗{\r}<br />
+Dialogue: 0,1:17:00.09,1:17:01.99,Default,NTP,0000,0000,0000,,It could be better.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}没有最好{\r}<br />
+Dialogue: 0,1:17:04.07,1:17:05.50,Default,NTP,0000,0000,0000,,Think about it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}好好想想{\r}<br />
+Dialogue: 0,1:17:07.87,1:17:10.96,Default,NTP,0000,0000,0000,,27 patents, your father has.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你爸爸我有二十七项专利{\r}<br />
+Dialogue: 0,1:17:12.34,1:17:14.93,Default,NTP,0000,0000,0000,,It means ownership, ownership of ideas.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}它代表着占有 占有想法{\r}<br />
+Dialogue: 0,1:17:16.48,1:17:17.76,Default,NTP,0000,0000,0000,,You gotta sew them up.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}得好好利用它们{\r}<br />
+Dialogue: 0,1:17:17.76,1:17:20.38,Default,NTP,0000,0000,0000,,- Get them by the nuts. - If you pardon my French.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 疯狂地去占有 - 抱歉我语出不敬{\r}<br />
+Dialogue: 0,1:17:22.45,1:17:24.04,Default,NTP,0000,0000,0000,,Be rich.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}做个有钱人{\r}<br />
+Dialogue: 0,1:17:26.49,1:17:28.72,Default,NTP,0000,0000,0000,,You make yourself what you are.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你能成为你想成为的人{\r}<br />
+Dialogue: 0,1:17:32.66,1:17:34.39,Default,NTP,0000,0000,0000,,You have control of your own destiny.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你得掌握自己的命运{\r}<br />
+Dialogue: 0,1:17:38.23,1:17:39.89,Default,NTP,0000,0000,0000,,Can't say I can't.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别说我不行{\r}<br />
+Dialogue: 0,1:17:41.47,1:17:43.37,Default,NTP,0000,0000,0000,,You see I'm having trouble.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你看到我有麻烦{\r}<br />
+Dialogue: 0,1:17:44.74,1:17:46.81,Default,NTP,0000,0000,0000,,I'm not done yet.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我还没完蛋{\r}<br />
+Dialogue: 0,1:17:46.81,1:17:49.30,Default,NTP,0000,0000,0000,,Can't say I can't.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别说我不行{\r}<br />
+Dialogue: 0,1:18:24.65,1:18:26.64,Default,NTP,0000,0000,0000,,Why's he hurt us?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他为什么要伤害我们{\r}<br />
+Dialogue: 0,1:18:28.95,1:18:31.01,Default,NTP,0000,0000,0000,,Our father?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们父亲{\r}<br />
+Dialogue: 0,1:18:37.02,1:18:40.55,Default,NTP,0000,0000,0000,,- Come on, Vince! Come on. - Get it, get it!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 来吧 文斯 快来 - 接住 接住{\r}<br />
+Dialogue: 0,1:18:54.61,1:18:56.51,Default,NTP,0000,0000,0000,,Give your father a kiss.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}来亲你父亲一下{\r}<br />
+Dialogue: 0,1:19:36.25,1:19:39.19,Default,NTP,0000,0000,0000,,Lies.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}谎言{\r}<br />
+Dialogue: 0,1:19:41.16,1:19:42.85,Default,NTP,0000,0000,0000,,- I can't. - Will you do something for me?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 我不能 - 你能帮我做件事吗{\r}<br />
+Dialogue: 0,1:19:43.29,1:19:44.35,Default,NTP,0000,0000,0000,,Do you promise you'll do it?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你能保证按我说的做吗{\r}<br />
+Dialogue: 0,1:19:44.69,1:19:46.01,Default,NTP,0000,0000,0000,,Without having to ask what it is?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}什么都不要问{\r}<br />
+Dialogue: 0,1:19:46.01,1:19:48.13,Default,NTP,0000,0000,0000,,Just have the confidence in what your father asks of you is right?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}只需相信你父亲的要求是对的{\r}<br />
+Dialogue: 0,1:19:48.46,1:19:49.86,Default,NTP,0000,0000,0000,,Yes, sir.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}好的 先生{\r}<br />
+Dialogue: 0,1:19:50.40,1:19:51.76,Default,NTP,0000,0000,0000,,In the next half hour, will you\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}在接下来的半小时里{\r}<br />
+Dialogue: 0,1:19:51.76,1:19:54.09,Default,NTP,0000,0000,0000,,not speak unless you have something important to say?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}除了要紧事 你能不能管好你的嘴{\r}<br />
+Dialogue: 0,1:20:00.77,1:20:02.74,Default,NTP,0000,0000,0000,,What did you do today, my fine feathered friend?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你今天做了什么 我的小鹦鹉{\r}<br />
+Dialogue: 0,1:20:05.21,1:20:06.94,Default,NTP,0000,0000,0000,,Sit on the front of your chair.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}坐椅子的前部{\r}<br />
+Dialogue: 0,1:20:07.52,1:20:10.68,Default,NTP,0000,0000,0000,,It's better for your posture. I read that in the paper.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这种姿势最好 我在报纸上看到的{\r}<br />
+Dialogue: 0,1:20:14.56,1:20:16.92,Default,NTP,0000,0000,0000,,Did you actually buy this from Mr. Ledbetter?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这你是从莱德贝特先生那里买的吗{\r}<br />
+Dialogue: 0,1:20:18.03,1:20:20.26,Default,NTP,0000,0000,0000,,Don't explain, just nod, yes or no?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别说话 点头就行 是还是不是{\r}<br />
+Dialogue: 0,1:20:26.47,1:20:28.49,Default,NTP,0000,0000,0000,,Be quiet.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别出声响{\r}<br />
+Dialogue: 0,1:20:30.00,1:20:31.87,Default,NTP,0000,0000,0000,,What did you say?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你刚说什么{\r}<br />
+Dialogue: 0,1:20:35.14,1:20:36.40,Default,NTP,0000,0000,0000,,Please.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}求你了{\r}<br />
+Dialogue: 0,1:20:37.08,1:20:38.14,Default,NTP,0000,0000,0000,,Leave him alone.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别碰他{\r}<br />
+Dialogue: 0,1:20:42.02,1:20:43.38,Default,NTP,0000,0000,0000,,Leave him alone!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别碰他{\r}<br />
+Dialogue: 0,1:20:47.82,1:20:49.69,Default,NTP,0000,0000,0000,,Come here! Come here!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}过来 过来{\r}<br />
+Dialogue: 0,1:20:54.53,1:20:55.93,Default,NTP,0000,0000,0000,,Get up there!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}站起来{\r}<br />
+Dialogue: 0,1:21:52.69,1:21:54.48,Default,NTP,0000,0000,0000,,You turn my own kids against me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你让我自己的孩子跟我作对{\r}<br />
+Dialogue: 0,1:21:56.16,1:21:58.18,Default,NTP,0000,0000,0000,,You undermine everything I do.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你破坏了我做的一切{\r}<br />
+Dialogue: 0,1:22:07.77,1:22:09.53,Default,NTP,0000,0000,0000,,How do you like it?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你觉得爽了吗{\r}<br />
+Dialogue: 0,1:22:11.37,1:22:12.50,Default,NTP,0000,0000,0000,,Stop it!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}停下来{\r}<br />
+Dialogue: 0,1:22:13.54,1:22:19.97,Default,NTP,0000,0000,0000,,Stop.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别动{\r}<br />
+Dialogue: 0,1:22:31.09,1:22:32.46,Default,NTP,0000,0000,0000,,Stop.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别动{\r}<br />
+Dialogue: 0,1:24:30.71,1:24:34.11,Default,NTP,0000,0000,0000,,- Where's Dad? - He's gone on a trip.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 爸爸去哪了 - 出海了{\r}<br />
+Dialogue: 0,1:25:17.16,1:25:19.72,Default,NTP,0000,0000,0000,,Get her! Get her!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}抓住她 抓住她{\r}<br />
+Dialogue: 0,1:25:19.89,1:25:21.79,Default,NTP,0000,0000,0000,,Help each other.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}互相帮助{\r}<br />
+Dialogue: 0,1:25:24.06,1:25:26.69,Default,NTP,0000,0000,0000,,Do not slam that screen door!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别使劲摔门{\r}<br />
+Dialogue: 0,1:25:27.77,1:25:29.70,Default,NTP,0000,0000,0000,,Love everyone.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}爱每一个人{\r}<br />
+Dialogue: 0,1:25:32.51,1:25:34.06,Default,NTP,0000,0000,0000,,Every leaf.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}每一片叶子{\r}<br />
+Dialogue: 0,1:25:35.84,1:25:38.00,Default,NTP,0000,0000,0000,,Every ray of light.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}每一束光线{\r}<br />
+Dialogue: 0,1:25:45.75,1:25:48.35,Default,NTP,0000,0000,0000,,Our gift.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我们的礼物{\r}<br />
+Dialogue: 0,1:26:27.63,1:26:28.86,Default,NTP,0000,0000,0000,,Shut up!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}闭嘴{\r}<br />
+Dialogue: 0,1:27:26.49,1:27:28.32,Default,NTP,0000,0000,0000,,- Watch out! - Watch out!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 小心 - 小心{\r}<br />
+Dialogue: 0,1:27:28.34,1:27:29.18,Default,NTP,0000,0000,0000,,- Go. - Go!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 快走开 - 快走{\r}<br />
+Dialogue: 0,1:27:47.81,1:27:49.33,Default,NTP,0000,0000,0000,,I say let's bust them.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不如把玻璃砸了{\r}<br />
+Dialogue: 0,1:28:15.84,1:28:17.96,Default,NTP,0000,0000,0000,,Found a frog!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}找到一只青蛙{\r}<br />
+Dialogue: 0,1:28:18.67,1:28:20.14,Default,NTP,0000,0000,0000,,Lets go set it off in a sky rocket!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}把它绑到冲天炮下面{\r}<br />
+Dialogue: 0,1:28:20.51,1:28:21.97,Default,NTP,0000,0000,0000,,He's getting away!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他逃走了{\r}<br />
+Dialogue: 0,1:28:24.34,1:28:25.83,Default,NTP,0000,0000,0000,,Get back! Get back!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}退后 退后{\r}<br />
+Dialogue: 0,1:28:33.12,1:28:34.82,Default,NTP,0000,0000,0000,,Did he go to the moon?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他是不是去月亮上了{\r}<br />
+Dialogue: 0,1:28:37.92,1:28:42.49,Default,NTP,0000,0000,0000,,- Where is he? - Here he is.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 他去哪儿了 - 在这里{\r}<br />
+Dialogue: 0,1:28:43.76,1:28:45.53,Default,NTP,0000,0000,0000,,It was an experiment!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这是实验{\r}<br />
+Dialogue: 0,1:28:49.54,1:28:50.76,Default,NTP,0000,0000,0000,,Why?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}为什么{\r}<br />
+Dialogue: 0,1:28:52.71,1:28:54.73,Default,NTP,0000,0000,0000,,Never do it again.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别再那么干了{\r}<br />
+Dialogue: 0,1:28:55.54,1:28:57.27,Default,NTP,0000,0000,0000,,Promise?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你保证吗{\r}<br />
+Dialogue: 0,1:29:00.28,1:29:02.31,Default,NTP,0000,0000,0000,,You want to tell dad?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你要告诉爸爸吗{\r}<br />
+Dialogue: 0,1:29:03.45,1:29:06.78,Default,NTP,0000,0000,0000,,They're just trying to scare you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们只是想吓唬你{\r}<br />
+Dialogue: 0,1:29:08.79,1:29:10.48,Default,NTP,0000,0000,0000,,Keep your ear there.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你听好了{\r}<br />
+Dialogue: 0,1:29:15.06,1:29:16.96,Default,NTP,0000,0000,0000,,Things she got to learn.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}她得吸取教训{\r}<br />
+Dialogue: 0,1:29:20.47,1:29:23.49,Default,NTP,0000,0000,0000,,I gotta know stuff too.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我也一样{\r}<br />
+Dialogue: 0,1:29:40.55,1:29:44.46,Default,NTP,0000,0000,0000,,They say you can't try stuff? They do!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们说你不敢试 他们可不怕{\r}<br />
+Dialogue: 0,1:29:49.03,1:29:51.02,Default,NTP,0000,0000,0000,,What do you need be afraid of?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你有什么害怕的{\r}<br />
+Dialogue: 0,1:29:54.23,1:29:57.86,Default,NTP,0000,0000,0000,,You're afraid. I see it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你在害怕 我看出来了{\r}<br />
+Dialogue: 0,1:29:58.64,1:30:00.66,Default,NTP,0000,0000,0000,,Right here! Right here!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}就是这里 就是这里{\r}<br />
+Dialogue: 0,1:35:26.13,1:35:27.93,Default,NTP,0000,0000,0000,,I can't talk to you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我不能告诉你{\r}<br />
+Dialogue: 0,1:35:37.14,1:35:38.84,Default,NTP,0000,0000,0000,,Don't look at me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别看着我{\r}<br />
+Dialogue: 0,1:36:27.33,1:36:29.42,Default,NTP,0000,0000,0000,,Au revoir, story.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}再见 故事{\r}<br />
+Dialogue: 0,1:36:33.37,1:36:36.82,Default,NTP,0000,0000,0000,,Au revoir, dawn.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}再见 黎明{\r}<br />
+Dialogue: 0,1:37:05.33,1:37:06.76,Default,NTP,0000,0000,0000,,Put it in there.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}放进来{\r}<br />
+Dialogue: 0,1:37:46.21,1:37:47.80,Default,NTP,0000,0000,0000,,I trust you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我信任你{\r}<br />
+Dialogue: 0,1:38:04.02,1:38:07.46,Default,NTP,0000,0000,0000,,- You tired? - No. I never get tired.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 你累了吗 - 不 我从来不会累{\r}<br />
+Dialogue: 0,1:38:08.46,1:38:11.26,Default,NTP,0000,0000,0000,,- You did this morning. - No, I was just pretending.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 你今早就累了 - 没有 我装的{\r}<br />
+Dialogue: 0,1:38:11.83,1:38:13.73,Default,NTP,0000,0000,0000,,- You call me a liar? - No.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 你说我是骗子吗 - 不是{\r}<br />
+Dialogue: 0,1:38:14.23,1:38:17.93,Default,NTP,0000,0000,0000,,- I don't want to fight. - Afraid to?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 我不想打架 - 你是害怕吗{\r}<br />
+Dialogue: 0,1:38:18.50,1:38:20.34,Default,NTP,0000,0000,0000,,No, I just don't want to.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不 我只是不想{\r}<br />
+Dialogue: 0,1:38:21.77,1:38:25.27,Default,NTP,0000,0000,0000,,- If I was to say you're scared, would you call me a liar? - No.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 要我说你就是害怕 你说我是骗子吗 - 不是{\r}<br />
+Dialogue: 0,1:38:27.08,1:38:30.11,Default,NTP,0000,0000,0000,,You're scared, aren't you?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你在害怕 对吧{\r}<br />
+Dialogue: 0,1:38:40.39,1:38:41.83,Default,NTP,0000,0000,0000,,Quit it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别玩了{\r}<br />
+Dialogue: 0,1:39:30.08,1:39:31.41,Default,NTP,0000,0000,0000,,Come here!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}过来{\r}<br />
+Dialogue: 0,1:39:33.58,1:39:35.58,Default,NTP,0000,0000,0000,,No!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}不{\r}<br />
+Dialogue: 0,1:39:38.95,1:39:40.89,Default,NTP,0000,0000,0000,,I don't want to do anything you tell me to.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我不想听你发号施令{\r}<br />
+Dialogue: 0,1:39:42.29,1:39:44.45,Default,NTP,0000,0000,0000,,I want to do what I want.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我只想做我自己想做的事{\r}<br />
+Dialogue: 0,1:39:48.59,1:39:51.12,Default,NTP,0000,0000,0000,,What do you know? You let him run all over you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你知道什么 你让他骑在你头上{\r}<br />
+Dialogue: 0,1:40:41.75,1:40:43.88,Default,NTP,0000,0000,0000,,How do I get back?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我要怎么回去{\r}<br />
+Dialogue: 0,1:40:49.36,1:40:51.22,Default,NTP,0000,0000,0000,,Where they are?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们在哪里{\r}<br />
+Dialogue: 0,1:41:25.83,1:41:27.88,Default,NTP,0000,0000,0000,,This one is heavy, you're going to need two hands.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这个很重 你得用两只手来拎{\r}<br />
+Dialogue: 0,1:41:38.27,1:41:41.26,Default,NTP,0000,0000,0000,,- Careful now, you know what's that? - Chinese?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 小心点 你知道那是什么吗 - 中文{\r}<br />
+Dialogue: 0,1:41:42.01,1:41:44.00,Default,NTP,0000,0000,0000,,That's Chinese, that's very good, yes, it is.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}中文 没错 就是中文{\r}<br />
+Dialogue: 0,1:41:45.41,1:41:48.35,Default,NTP,0000,0000,0000,,Your father went all around the world. All the way to China.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你们父亲周游了世界 一直到了中国{\r}<br />
+Dialogue: 0,1:41:49.18,1:41:50.36,Default,NTP,0000,0000,0000,,That's Pan Am Airlines,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这是泛美航空公司的{\r}<br />
+Dialogue: 0,1:41:50.37,1:41:52.48,Default,NTP,0000,0000,0000,,that's what your father flew on.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你们父亲坐的就是他们的航班{\r}<br />
+Dialogue: 0,1:41:52.92,1:41:54.64,Default,NTP,0000,0000,0000,,The entire bathroom was stainless steel.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}整个浴室都是不锈钢的{\r}<br />
+Dialogue: 0,1:41:54.64,1:41:56.36,Default,NTP,0000,0000,0000,,Even the wash basin.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}甚至连洗脸盆都是{\r}<br />
+Dialogue: 0,1:41:56.72,1:41:58.95,Default,NTP,0000,0000,0000,,I feel confident the deal is going through.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我相信事情进行得很顺利{\r}<br />
+Dialogue: 0,1:41:59.46,1:42:01.22,Default,NTP,0000,0000,0000,,Nothing, forget it. I'll tell Molly to go to hell.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}没什么 别管了 我会告诉莫丽让她去死好了{\r}<br />
+Dialogue: 0,1:42:02.06,1:42:04.66,Default,NTP,0000,0000,0000,,That's from Germany.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那是从德国带回来的{\r}<br />
+Dialogue: 0,1:42:04.96,1:42:06.12,Default,NTP,0000,0000,0000,,See that?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}看见那个了吗{\r}<br />
+Dialogue: 0,1:42:09.40,1:42:11.13,Default,NTP,0000,0000,0000,,Put that down, son.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}把那个放下 儿子{\r}<br />
+Dialogue: 0,1:42:11.54,1:42:12.80,Default,NTP,0000,0000,0000,,Can Taylor come over?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}泰勒能过来吗{\r}<br />
+Dialogue: 0,1:42:13.47,1:42:15.24,Default,NTP,0000,0000,0000,,Was your family not good enough for you?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这个家对你还不够好吗{\r}<br />
+Dialogue: 0,1:42:22.62,1:42:25.52,Default,NTP,0000,0000,0000,,It's not going to take as long as last time?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}还会像上次煮那么久吗{\r}<br />
+Dialogue: 0,1:42:25.99,1:42:27.65,Default,NTP,0000,0000,0000,,Al dente.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}要有嚼劲{\r}<br />
+Dialogue: 0,1:42:30.72,1:42:33.45,Default,NTP,0000,0000,0000,,It's a subjective point, you know the difference?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这是主观观点 你知道有什么区别吗{\r}<br />
+Dialogue: 0,1:42:33.76,1:42:35.28,Default,NTP,0000,0000,0000,,Subjective means it comes from your mind.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}主观的就是说是你自己的见解{\r}<br />
+Dialogue: 0,1:42:35.28,1:42:36.59,Default,NTP,0000,0000,0000,,It can't be proven by other people.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}别人无法证明{\r}<br />
+Dialogue: 0,1:42:44.94,1:42:47.91,Default,NTP,0000,0000,0000,,It's good to see you again. Let's go, boys.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}很高兴再见到你 走吧 小伙子们{\r}<br />
+Dialogue: 0,1:42:52.18,1:42:53.84,Default,NTP,0000,0000,0000,,There are things you can't do.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}有些事你无能为力{\r}<br />
+Dialogue: 0,1:42:54.18,1:42:56.17,Default,NTP,0000,0000,0000,,But there are things I can't do either.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}有些事我也无能为力{\r}<br />
+Dialogue: 0,1:42:57.58,1:42:59.95,Default,NTP,0000,0000,0000,,You're not to call me dad, you will call me father.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你以后不要再叫我爸爸 你要叫我父亲{\r}<br />
+Dialogue: 0,1:43:00.29,1:43:01.55,Default,NTP,0000,0000,0000,,- But... - Do not interrupt!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 但是... - 不要插话{\r}<br />
+Dialogue: 0,1:43:01.92,1:43:03.75,Default,NTP,0000,0000,0000,,- But you did... - Don't interrupt!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}- 但是你以前 - 不要插话{\r}<br />
+Dialogue: 0,1:43:09.50,1:43:10.72,Default,NTP,0000,0000,0000,,It's your house.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}这是你的房子{\r}<br />
+Dialogue: 0,1:43:11.10,1:43:13.50,Default,NTP,0000,0000,0000,,You can kick me out whenever you want to.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你什么时候想要我滚我就得滚{\r}<br />
+Dialogue: 0,1:43:18.64,1:43:21.20,Default,NTP,0000,0000,0000,,You'd like to kill me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你巴不得宰了我{\r}<br />
+Dialogue: 0,1:43:40.19,1:43:41.52,Default,NTP,0000,0000,0000,,Dad.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}爸爸{\r}<br />
+Dialogue: 0,1:43:46.47,1:43:49.06,Default,NTP,0000,0000,0000,,Why was he born?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他为什么会出生{\r}<br />
+Dialogue: 0,1:45:13.85,1:45:15.48,Default,NTP,0000,0000,0000,,Please, God, kill him.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}求你了 上帝 让他去死吧{\r}<br />
+Dialogue: 0,1:45:20.63,1:45:22.03,Default,NTP,0000,0000,0000,,Let him die.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}让他去死{\r}<br />
+Dialogue: 0,1:45:27.20,1:45:29.13,Default,NTP,0000,0000,0000,,Get him out of here.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}让他离开这个世界{\r}<br />
+Dialogue: 0,1:45:50.09,1:45:52.82,Default,NTP,0000,0000,0000,,She only loves me!\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}她只爱我一个{\r}<br />
+Dialogue: 0,1:46:04.08,1:46:08.16,Default,NTP,0000,0000,0000,,Defend O'Lord this thy child with thy heavenly grace.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我主 请以圣宠保护你的这个孩子{\r}<br />
+Dialogue: 0,1:46:08.16,1:46:10.78,Default,NTP,0000,0000,0000,,That he may continue thine forever.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}保佑他永受圣恩{\r}<br />
+Dialogue: 0,1:46:11.51,1:46:15.48,Default,NTP,0000,0000,0000,,And daily increase in thy Holy Spirit more and more\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}日渐成长 圣灵赐福{\r}<br />
+Dialogue: 0,1:46:15.48,1:46:20.68,Default,NTP,0000,0000,0000,,until he come unto thy everlasting kingdom, Amen.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}直至他去到你永恒的国度 阿门{\r}<br />
+Dialogue: 0,1:47:02.06,1:47:04.12,Default,NTP,0000,0000,0000,,See something...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我看见些东西{\r}<br />
+Dialogue: 0,1:47:54.65,1:47:56.08,Default,NTP,0000,0000,0000,,Put your finger over it.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}把手指头放上来{\r}<br />
+Dialogue: 0,1:47:58.42,1:47:59.71,Default,NTP,0000,0000,0000,,There.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那里{\r}<br />
+Dialogue: 0,1:48:01.22,1:48:02.85,Default,NTP,0000,0000,0000,,Come on.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}来吧{\r}<br />
+Dialogue: 0,1:49:00.75,1:49:03.27,Default,NTP,0000,0000,0000,,What I want to do I can't do.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我无法从心所欲{\r}<br />
+Dialogue: 0,1:49:08.85,1:49:11.35,Default,NTP,0000,0000,0000,,I do what I hate.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}只能违心而行{\r}<br />
+Dialogue: 0,1:50:12.28,1:50:13.84,Default,NTP,0000,0000,0000,,You can hit me if you want.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你要是想打我就打吧{\r}<br />
+Dialogue: 0,1:50:32.10,1:50:33.30,Default,NTP,0000,0000,0000,,I'm sorry.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}对不起{\r}<br />
+Dialogue: 0,1:50:36.64,1:50:38.67,Default,NTP,0000,0000,0000,,You're my brother.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你是我弟弟{\r}<br />
+Dialogue: 0,1:51:22.86,1:51:25.09,Default,NTP,0000,0000,0000,,What was it you showed me?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你给我看的是什么{\r}<br />
+Dialogue: 0,1:51:33.57,1:51:36.83,Default,NTP,0000,0000,0000,,I didn't know how to name you sin.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我不知道怎么罗列你的罪孽{\r}<br />
+Dialogue: 0,1:51:41.44,1:51:44.34,Default,NTP,0000,0000,0000,,But I'll say it was you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}但是我会说就是你{\r}<br />
+Dialogue: 0,1:51:49.31,1:51:52.11,Default,NTP,0000,0000,0000,,Always you were calling me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你总是呼唤我{\r}<br />
+Dialogue: 0,1:53:40.83,1:53:43.92,Default,NTP,0000,0000,0000,,I wanted to be loved because I was great.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我希望有人爱我 因为我很棒{\r}<br />
+Dialogue: 0,1:53:46.80,1:53:48.23,Default,NTP,0000,0000,0000,,A big man.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}一个大男人{\r}<br />
+Dialogue: 0,1:53:50.37,1:53:52.56,Default,NTP,0000,0000,0000,,I am nothing.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}现在却一无所有{\r}<br />
+Dialogue: 0,1:53:56.98,1:53:59.74,Default,NTP,0000,0000,0000,,Look, the glory around us.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}看 我们周围的荣耀{\r}<br />
+Dialogue: 0,1:54:03.15,1:54:05.34,Default,NTP,0000,0000,0000,,Trees and birds.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}树木和小鸟{\r}<br />
+Dialogue: 0,1:54:08.65,1:54:11.59,Default,NTP,0000,0000,0000,,I lived in shame.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我活在羞愧中{\r}<br />
+Dialogue: 0,1:54:14.16,1:54:16.89,Default,NTP,0000,0000,0000,,I dishonored it all and didn't notice the glory.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我蔑视一切 忽视了荣耀{\r}<br />
+Dialogue: 0,1:54:23.64,1:54:25.47,Default,NTP,0000,0000,0000,,A foolish man.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我是个愚蠢的人{\r}<br />
+Dialogue: 0,1:54:30.61,1:54:32.13,Default,NTP,0000,0000,0000,,They're closing the plant.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们要关闭工厂{\r}<br />
+Dialogue: 0,1:54:35.95,1:54:37.81,Default,NTP,0000,0000,0000,,They gave me a choice.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}他们让我选择{\r}<br />
+Dialogue: 0,1:54:41.35,1:54:42.68,Default,NTP,0000,0000,0000,,No job.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}要么失去工作{\r}<br />
+Dialogue: 0,1:54:45.82,1:54:49.16,Default,NTP,0000,0000,0000,,Or transfer to a job nobody wants.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}要么去做没人愿意做的活{\r}<br />
+Dialogue: 0,1:54:58.40,1:54:59.67,Default,NTP,0000,0000,0000,,Father.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}父亲{\r}<br />
+Dialogue: 0,1:55:02.71,1:55:04.77,Default,NTP,0000,0000,0000,,I never missed a day of work.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我从未懈怠过一天工作{\r}<br />
+Dialogue: 0,1:55:05.61,1:55:07.48,Default,NTP,0000,0000,0000,,Mother.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}母亲{\r}<br />
+Dialogue: 0,1:55:08.08,1:55:10.51,Default,NTP,0000,0000,0000,,Tithe every Sunday.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}周日按时缴税{\r}<br />
+Dialogue: 0,1:55:13.95,1:55:17.22,Default,NTP,0000,0000,0000,,Always you wrestle inside me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你们的思想我永远无法断然接受{\r}<br />
+Dialogue: 0,1:55:21.73,1:55:23.75,Default,NTP,0000,0000,0000,,Always you will.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}也永远无法忘记{\r}<br />
+Dialogue: 0,1:55:25.10,1:55:27.46,Default,NTP,0000,0000,0000,,You know, Jack, all I ever wanted for you was...\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}知道吗 杰克 我对你的希望不过是...{\r}<br />
+Dialogue: 0,1:55:29.50,1:55:34.23,Default,NTP,0000,0000,0000,,Make you strong and, grow up and be your own boss.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}变成一个成熟强大 能主掌自己命运的人{\r}<br />
+Dialogue: 0,1:55:38.21,1:55:39.94,Default,NTP,0000,0000,0000,,Maybe I've been tough on you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}也许我对你太严格了{\r}<br />
+Dialogue: 0,1:55:42.41,1:55:43.88,Default,NTP,0000,0000,0000,,I'm not proud of that.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}对此我并不感到自豪{\r}<br />
+Dialogue: 0,1:55:45.85,1:55:48.25,Default,NTP,0000,0000,0000,,I'm as bad as you are.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我跟你一样差劲{\r}<br />
+Dialogue: 0,1:55:51.66,1:55:53.65,Default,NTP,0000,0000,0000,,I'm more like you than her.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我更像你 而不像妈妈{\r}<br />
+Dialogue: 0,1:56:02.53,1:56:06.74,Default,NTP,0000,0000,0000,,It was about all I've done in life, otherwise I've drawn zilch.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}那是我一生的全部 其余则一片空白{\r}<br />
+Dialogue: 0,1:56:14.51,1:56:17.58,Default,NTP,0000,0000,0000,,You're all I have, you're all I want to have.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你是我的一切 你是我想要的一切{\r}<br />
+Dialogue: 0,1:56:24.99,1:56:26.25,Default,NTP,0000,0000,0000,,My sweet boy.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我亲爱的儿子{\r}<br />
+Dialogue: 0,1:58:32.95,1:58:35.35,Default,NTP,0000,0000,0000,,Are you just going to stand there like a bump on a log?\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你要像个呆瓜一直在那站着吗{\r}<br />
+Dialogue: 0,1:59:47.83,1:59:50.16,Default,NTP,0000,0000,0000,,The only way to be happy is to love.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}想要收获快乐 只有去爱{\r}<br />
+Dialogue: 0,1:59:54.83,1:59:56.63,Default,NTP,0000,0000,0000,,Unless you love,\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}只有去爱{\r}<br />
+Dialogue: 0,1:59:58.74,2:00:00.93,Default,NTP,0000,0000,0000,,your life will flash by.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}你的生命才不会一晃而过{\r}<br />
+Dialogue: 0,2:00:11.92,2:00:13.54,Default,NTP,0000,0000,0000,,Do good to them.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}对他们好点{\r}<br />
+Dialogue: 0,2:00:18.62,2:00:19.92,Default,NTP,0000,0000,0000,,Wonder.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}奇迹{\r}<br />
+Dialogue: 0,2:00:24.66,2:00:26.15,Default,NTP,0000,0000,0000,,Hope.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}希望{\r}<br />
+Dialogue: 0,2:01:18.55,2:01:20.02,Default,NTP,0000,0000,0000,,Brother.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}兄弟{\r}<br />
+Dialogue: 0,2:02:09.50,2:02:12.16,Default,NTP,0000,0000,0000,,Keep us.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}养育我们{\r}<br />
+Dialogue: 0,2:02:20.45,2:02:22.57,Default,NTP,0000,0000,0000,,Guide us.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}指引我们{\r}<br />
+Dialogue: 0,2:02:31.72,2:02:33.88,Default,NTP,0000,0000,0000,,To the end of time.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}直到时间的尽头{\r}<br />
+Dialogue: 0,2:03:16.27,2:03:18.10,Default,NTP,0000,0000,0000,,Follow me.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}跟着我{\r}<br />
+Dialogue: 0,2:10:23.03,2:10:24.93,Default,NTP,0000,0000,0000,,I give him to you.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我把他交付与你{\r}<br />
+Dialogue: 0,2:10:30.17,2:10:31.83,Default,NTP,0000,0000,0000,,I give you my son.\N{\blur3\fn华文楷体\fs16\1c&HE0E0E0&}我把儿子交付与你{\r}<br />
+
