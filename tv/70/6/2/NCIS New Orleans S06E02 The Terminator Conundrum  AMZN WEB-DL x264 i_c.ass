@@ -1,0 +1,885 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Tahoma,12,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,-1,0,0,100,100,0,0,1,0,1,2,20,20,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.82,0:00:09.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}塔台 这里是AF204{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Tower, this is Alpha Foxtrot Two Zero Four.{\r}
+Dialogue: 0,0:00:09.85,0:00:11.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}巡逻完成 一切正常{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Completing perimeter. All clear.{\r}
+Dialogue: 0,0:00:11.96,0:00:14.86,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}收到 AF 请向NAS 160进发{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Copy, Alpha Foxtrot, proceed to NAS 160.{\r}
+Dialogue: 0,0:00:14.92,0:00:17.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}收到 接近NAS 160{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Copy. On approach to NAS 160.{\r}
+Dialogue: 0,0:00:18.19,0:00:20.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}塔台 我的雷达发现情况{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Tower, I have a bogey on radar.{\r}
+Dialogue: 0,0:00:20.80,0:00:22.56,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}距我五英里 七点钟方向{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Five miles out at seven zero.{\r}
+Dialogue: 0,0:00:22.63,0:00:24.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}塔台 能否确认{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Tower, can you identify?{\r}
+Dialogue: 0,0:00:24.60,0:00:25.63,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们接收过一个飞行计划{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We have a flight plan{\r}
+Dialogue: 0,0:00:25.70,0:00:27.97,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}尾标是 N101DS{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}for tail sign November 101 Delta Sierra.{\r}
+Dialogue: 0,0:00:28.04,0:00:29.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不对 这不是一架飞机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Negative. This is not an aircraft.{\r}
+Dialogue: 0,0:00:29.87,0:00:32.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}它没有明确的航行方向 我要去搞明白{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's nondirectional movement. I'll go check it out.{\r}
+Dialogue: 0,0:00:34.31,0:00:35.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这会不会是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Any chance this is{\r}
+Dialogue: 0,0:00:35.81,0:00:37.65,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}墨西哥湾上的一个瓢虫云团{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}one of those ladybug clouds over the Gulf?{\r}
+Dialogue: 0,0:00:37.71,0:00:39.15,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不知道 Frost{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No idea, Frost.{\r}
+Dialogue: 0,0:00:40.85,0:00:42.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}N101 这里是海军{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}November 101, this is Navy.{\r}
+Dialogue: 0,0:00:42.95,0:00:44.72,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}收到请回答{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Do you copy?{\r}
+Dialogue: 0,0:00:44.79,0:00:46.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}海军 我是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Navy. I am...{\r}
+Dialogue: 0,0:00:46.66,0:00:50.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}N101 你能告诉我发生了什么吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}November 101, can you tell me what is happening?{\r}
+Dialogue: 0,0:00:56.53,0:00:58.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}救命 救命{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Mayday, Mayday.{\r}
+Dialogue: 0,0:00:58.20,0:00:59.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我这里有飞机遇险{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I have an aircraft in distress.{\r}
+Dialogue: 0,0:00:59.80,0:01:01.40,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}重复 我这里有飞机遇险{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Repeat, I have an aircraft in distress,{\r}
+Dialogue: 0,0:01:01.47,0:01:03.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}坠向水里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}headed towards the water.{\r}
+Dialogue: 0,0:01:06.47,0:01:09.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}翻译：陌路风景、Vivian、柒九一九{\r}
+Dialogue: 0,0:01:09.47,0:01:12.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}翻译：流年、虚荣、嘎嘣脆麻辣屎{\r}
+Dialogue: 0,0:01:12.47,0:01:15.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}校对：栗子、兔子、二噁英{\r}
+Dialogue: 0,0:01:15.47,0:01:18.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}总校：二噁英{\r}
+Dialogue: 0,0:01:18.47,0:01:21.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}字幕分配：鸡血\N统筹&时间轴：栗子{\r}
+Dialogue: 0,0:01:21.47,0:01:24.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}NCIS 新奥尔良{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}S06 E02{\r}
+Dialogue: 0,0:01:26.32,0:01:31.32,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}GA字幕组 原创译制{\r}
+Dialogue: 0,0:01:54.89,0:01:57.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}举起手来{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Put your hands where I can see 'em!{\r}
+Dialogue: 0,0:01:58.70,0:02:00.93,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}立刻{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Now!{\r}
+Dialogue: 0,0:02:21.22,0:02:22.48,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No.{\r}
+Dialogue: 0,0:02:22.85,0:02:24.32,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No.{\r}
+Dialogue: 0,0:02:24.39,0:02:25.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No!{\r}
+Dialogue: 0,0:02:27.59,0:02:29.02,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No!{\r}
+Dialogue: 0,0:02:42.74,0:02:45.06,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我很高兴Pride回归 但你被降职太糟糕了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm really happy Pride's back, but you being demoted sucks.{\r}
+Dialogue: 0,0:02:45.08,0:02:47.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}连他也觉得糟糕透了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Even he thinks it sucks.{\r}
+Dialogue: 0,0:02:48.04,0:02:51.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我给你拿个盒子吧 -不 不{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Can I get you a box for that? - No. No.{\r}
+Dialogue: 0,0:02:51.45,0:02:54.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}可能有点过分了 我的感觉并不重要{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Probably way out of line here. My feelings aren't important.{\r}
+Dialogue: 0,0:02:54.42,0:02:56.42,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你觉得没问题 我就没的说了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}If you're okay, I'm okay.{\r}
+Dialogue: 0,0:02:57.72,0:02:59.72,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我有问题{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm not okay.{\r}
+Dialogue: 0,0:03:01.12,0:03:02.56,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我很生气 -好{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- I'm pissed. - Good.{\r}
+Dialogue: 0,0:03:02.63,0:03:04.66,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}很高兴咱俩又默契了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm glad we're on the same page.{\r}
+Dialogue: 0,0:03:07.33,0:03:09.70,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我不生Pride的气 这不是他的错{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm not mad at Pride. It's not his fault.{\r}
+Dialogue: 0,0:03:09.77,0:03:11.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我生气那些尸位素餐的官僚{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm mad at all these men sitting in their offices,{\r}
+Dialogue: 0,0:03:11.75,0:03:14.20,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}用着不同于我们男同事的角度{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}looking at our work through a different prism{\r}
+Dialogue: 0,0:03:14.27,0:03:16.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}审视着我们的工作{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}than our male colleagues.{\r}
+Dialogue: 0,0:03:16.11,0:03:17.54,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我理解{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I hear you.{\r}
+Dialogue: 0,0:03:17.61,0:03:19.94,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我本想告诉他们来试一下这份工作{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I wanted to tell them to take this job{\r}
+Dialogue: 0,0:03:20.01,0:03:22.61,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}接触下这个办公室的阴暗面{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and shove it so far up the dark recesses of their...{\r}
+Dialogue: 0,0:03:24.41,0:03:28.58,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后从这里滚蛋 但是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}...big offices, and get the hell out of here, but...{\r}
+Dialogue: 0,0:03:31.19,0:03:33.56,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Naomi需要我留下 所以{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Naomi needs me to stay, so,{\r}
+Dialogue: 0,0:03:33.62,0:03:36.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}最终 我愿意不再去纠结这件破事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I will, and eventually, I'm just gonna stop thinking about it.{\r}
+Dialogue: 0,0:03:36.16,0:03:38.76,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Hannah 你不能只是为了Naomi就留下{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You can't just stay for Naomi, Hannah.{\r}
+Dialogue: 0,0:03:38.83,0:03:40.56,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不 我可以{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah, I can.{\r}
+Dialogue: 0,0:03:40.63,0:03:42.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-如果她需要的就这些 -我是说 对她来说是最好的选择{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- If that's what she needs. - I mean, what's best for her{\r}
+Dialogue: 0,0:03:42.89,0:03:45.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}对你也同样{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}can also be what's best for you.{\r}
+Dialogue: 0,0:03:45.14,0:03:47.40,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你得想办法在这里生活{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You got to figure out how to make a life here.{\r}
+Dialogue: 0,0:03:47.47,0:03:49.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你不能只一心扑在工作上{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You can't just be focused on this job.{\r}
+Dialogue: 0,0:03:49.41,0:03:51.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这对你不好 你...{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's not good for you. You...{\r}
+Dialogue: 0,0:03:55.98,0:03:57.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你不必这样做{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You don't have to do that.{\r}
+Dialogue: 0,0:03:58.05,0:03:59.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我知道{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I know.{\r}
+Dialogue: 0,0:04:05.99,0:04:07.42,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}大家好{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Hey, y'all.{\r}
+Dialogue: 0,0:04:07.49,0:04:11.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-嘿 -我们买了 嗯 甜甜圈{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Hey. - We got, uh, donuts.{\r}
+Dialogue: 0,0:04:11.16,0:04:15.43,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是 谢谢 听着 Belle Chasse打来了电话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah, thanks. Look, I got a call from, uh, Belle Chasse.{\r}
+Dialogue: 0,0:04:15.50,0:04:17.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}一架注册在{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}A, uh, civilian aircraft{\r}
+Dialogue: 0,0:04:17.30,0:04:21.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Paradiso科技公司名下的民用飞机  坠毁在{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}registered to Paradiso Technologies, uh, crashed{\r}
+Dialogue: 0,0:04:21.07,0:04:23.24,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}墨西哥湾{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}in the Gulf,{\r}
+Dialogue: 0,0:04:23.31,0:04:25.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}海军担心是他们的飞行员{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and the Navy is concerned that their pilot...{\r}
+Dialogue: 0,0:04:26.64,0:04:28.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Ella Meyer上尉{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Lieutenant Ella Meyer{\r}
+Dialogue: 0,0:04:28.88,0:04:30.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}飞得太近 她的飞机尾流{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}got too close, and her wake{\r}
+Dialogue: 0,0:04:30.48,0:04:31.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}导致那架飞机失事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}brought the plane down.{\r}
+Dialogue: 0,0:04:31.98,0:04:34.18,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 这不是NTSB管辖的事件吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Uh, isn't that an NTSB issue?{\r}
+Dialogue: 0,0:04:31.98,0:04:34.18,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}NTSB:国家运输安全委员会{\r}
+Dialogue: 0,0:04:34.25,0:04:36.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}本来是 若非海军上尉{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Should be, except the lieutenant{\r}
+Dialogue: 0,0:04:36.55,0:04:39.62,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}说她亲眼目睹了什么无法解释的东西{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}says that she saw something that she can't explain.{\r}
+Dialogue: 0,0:04:39.69,0:04:40.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}先打住{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Hold on one second.{\r}
+Dialogue: 0,0:04:40.91,0:04:42.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-无法解释的意思是 -不{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Is "can't explain" code for... - Nope.{\r}
+Dialogue: 0,0:04:42.93,0:04:44.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}因为最近有一些现象{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}'Cause there's been a lot of sightings recently.{\r}
+Dialogue: 0,0:04:44.33,0:04:45.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-不 -你怎么就知道{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- No. - How do you even know{\r}
+Dialogue: 0,0:04:45.43,0:04:47.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-就知道我要说什么 -你要说外星人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- what I'm gonna say? - You're gonna say "aliens".{\r}
+Dialogue: 0,0:04:48.93,0:04:50.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧 我们应该去 去跟她谈谈{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, we should go, we should go talk to her.{\r}
+Dialogue: 0,0:04:50.90,0:04:52.77,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}没错{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We should.{\r}
+Dialogue: 0,0:04:52.84,0:04:55.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}海岸警卫队打捞了失事飞机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And the Coast Guard recovered the plane.{\r}
+Dialogue: 0,0:04:55.07,0:04:56.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}飞机残骸随时都会被捞上码头{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It'll be on the dock any minute.{\r}
+Dialogue: 0,0:04:56.57,0:04:58.01,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好 她如果看到了什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, if she saw something,{\r}
+Dialogue: 0,0:04:58.04,0:05:00.31,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}雷达上会有记录 对吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}it should be on radar, right?{\r}
+Dialogue: 0,0:05:00.38,0:05:01.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是 Patton已经在下载雷达数据{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah. Patton's already got the download.{\r}
+Dialogue: 0,0:05:02.00,0:05:04.60,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以 嗯{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}So... um...{\r}
+Dialogue: 0,0:05:08.45,0:05:10.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Tanmmy和我去约谈飞行员吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Tammy and I will go talk to the pilot?{\r}
+Dialogue: 0,0:05:11.02,0:05:13.22,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Sebastian和我去检查飞机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And Sebastian and I will check out{\r}
+Dialogue: 0,0:05:13.29,0:05:15.99,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}将尸体带回交给Wade 行吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}the plane, uh, get the body to Wade?{\r}
+Dialogue: 0,0:05:16.06,0:05:17.46,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那我负责雷达了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I've got radar.{\r}
+Dialogue: 0,0:05:17.53,0:05:19.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好 好 很好{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay. Okay, good.{\r}
+Dialogue: 0,0:05:24.77,0:05:27.50,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}难以置信有人认为是我导致那架飞机失事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I can't believe anyone thinks I brought that plane down.{\r}
+Dialogue: 0,0:05:27.57,0:05:28.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我与此事无关{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I had nothing to do with it.{\r}
+Dialogue: 0,0:05:28.97,0:05:30.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们不确信任何事情 上尉{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We don't think anything, Lieutenant.{\r}
+Dialogue: 0,0:05:30.44,0:05:31.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们正在调查{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We are just investigating.{\r}
+Dialogue: 0,0:05:31.81,0:05:34.54,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你说你看见了UFO吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You said you saw a "UFO"?{\r}
+Dialogue: 0,0:05:34.61,0:05:37.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是 就是那样 一个不明飞行物{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yes. Just that, an unidentified flying object.{\r}
+Dialogue: 0,0:05:38.05,0:05:40.32,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}飞行物 我 我不能确定的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Something that I-I couldn't identify.{\r}
+Dialogue: 0,0:05:40.38,0:05:42.72,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我打赌你在待命室里呆了很久吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I bet got a lot of traction in the ready room, huh?{\r}
+Dialogue: 0,0:05:42.79,0:05:44.42,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在我花了那么多时间{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}After all the hours that I've put in,{\r}
+Dialogue: 0,0:05:44.49,0:05:46.72,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}忍受了那么多的废话之后{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and all the crap I've had to put up with to get here,{\r}
+Dialogue: 0,0:05:46.79,0:05:48.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他们表现得就像我汇报说看到了外星人一样{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}the bunch of them just act like I reported E.T.{\r}
+Dialogue: 0,0:05:48.76,0:05:50.66,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以 这个飞行物 到底长什么样子{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}So, this object, what did it look like?{\r}
+Dialogue: 0,0:05:50.73,0:05:55.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}当时太晚了 但是月亮出来了所以{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It was late, but the moon was out and...{\r}
+Dialogue: 0,0:05:55.90,0:05:58.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我可以看见这个-这个明显的反差{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I could see this-this contrast{\r}
+Dialogue: 0,0:05:58.43,0:06:00.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在白色的飞机上 它就像{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}on the white aircraft, it was like{\r}
+Dialogue: 0,0:06:00.34,0:06:02.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}某种黑团{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}some sort of a dark mass.{\r}
+Dialogue: 0,0:06:02.14,0:06:03.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}可能是 烟雾吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Smoke, maybe?{\r}
+Dialogue: 0,0:06:03.44,0:06:05.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不是表明引擎着火的烟雾{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}There was no smoke that would indicate an engine fire,{\r}
+Dialogue: 0,0:06:05.82,0:06:07.11,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在当时的速度下{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and a-at the speed it was going,{\r}
+Dialogue: 0,0:06:07.18,0:06:09.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你能想像到引擎着火的烟雾应当是跟在飞机后面{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}you would have assumed that smoke would be trailing.{\r}
+Dialogue: 0,0:06:09.61,0:06:11.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这团雾当时在干什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What was this mass doing?{\r}
+Dialogue: 0,0:06:12.48,0:06:14.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}死亡缠绕{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Undulating.{\r}
+Dialogue: 0,0:06:14.18,0:06:17.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}就像熔岩灯里的球体{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Like a glob in a lava lamp?{\r}
+Dialogue: 0,0:06:18.25,0:06:19.92,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}很像{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Sort of.{\r}
+Dialogue: 0,0:06:19.99,0:06:21.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}除了 在飞机坠毁之前{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Except, right before the plane went down,{\r}
+Dialogue: 0,0:06:21.86,0:06:23.26,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}它-它后退了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}it-it backed up,{\r}
+Dialogue: 0,0:06:23.33,0:06:26.46,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}就像是 就像是它在看着这架飞机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}like it was, like it was looking at the plane.{\r}
+Dialogue: 0,0:06:26.53,0:06:28.40,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后它又一次逼近{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}A-And then it moved in again.{\r}
+Dialogue: 0,0:06:28.46,0:06:31.63,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}等等 所以你是说这东西袭击了飞机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Wait, so are you saying that this thing attacked the plane?{\r}
+Dialogue: 0,0:06:31.70,0:06:34.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我说的是我当时看见了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm saying that I saw something that,{\r}
+Dialogue: 0,0:06:34.87,0:06:37.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}某种让我无法理解的东西{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}that I can't quite make sense of.{\r}
+Dialogue: 0,0:06:37.14,0:06:39.47,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吗 所以 我不能确定那是什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay? And therefore, I can't identify it.{\r}
+Dialogue: 0,0:06:39.54,0:06:43.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}最近有没有发生过会导致你视网膜脱落的事情{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Something happen recently that may have detached your retina?{\r}
+Dialogue: 0,0:06:43.51,0:06:45.58,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-什么 -视网膜脱落{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Excuse me? - A detached retina{\r}
+Dialogue: 0,0:06:45.65,0:06:47.05,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}会使视野出现黑团{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}can cause shadow.{\r}
+Dialogue: 0,0:06:47.12,0:06:49.08,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}一架飞机从天上掉下来{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}A plane fell out of the sky.{\r}
+Dialogue: 0,0:06:49.15,0:06:51.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}它极有可能与你所看到的黑团没有关系{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And it may not have had anything to do with what you saw.{\r}
+Dialogue: 0,0:06:51.42,0:06:52.62,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}巧合不是原因{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Coincidence isn't causation.{\r}
+Dialogue: 0,0:06:52.69,0:06:56.06,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不 长官 没有视网膜脱落{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No, ma'am. No detached retina.{\r}
+Dialogue: 0,0:06:56.13,0:06:58.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-好 -听着 有人丧生{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Okay. - Look, somebody died,{\r}
+Dialogue: 0,0:06:58.16,0:06:59.93,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我-我对此感到非常遗憾{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and I'm-I'm very sorry for that,{\r}
+Dialogue: 0,0:07:00.00,0:07:02.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但不是我的尾流导致了飞机失事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}but my wake did not bring that plane down.{\r}
+Dialogue: 0,0:07:02.90,0:07:04.10,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只要海军依然认为是我的飞机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And the longer the Navy thinks{\r}
+Dialogue: 0,0:07:04.13,0:07:05.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}导致了事故 只要我的同事们{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}it might have, and my fellow pilots{\r}
+Dialogue: 0,0:07:05.56,0:07:06.84,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}会继续因为一份{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}continue to make fun of me{\r}
+Dialogue: 0,0:07:06.90,0:07:09.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}真实合法的报告取笑我{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}for a completely legitimate report,{\r}
+Dialogue: 0,0:07:09.87,0:07:11.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我的飞行生涯就只会更糟糕{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}the worse this is for my career.{\r}
+Dialogue: 0,0:07:11.88,0:07:14.11,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们懂{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We know.{\r}
+Dialogue: 0,0:07:14.18,0:07:15.94,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我保证 Meyer上尉{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I promise, Lieutenant Meyer,{\r}
+Dialogue: 0,0:07:16.01,0:07:17.61,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们会竭尽所能{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}we are as committed to solving this case{\r}
+Dialogue: 0,0:07:17.65,0:07:19.58,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}解决这起案件{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}as any two investigators could be.{\r}
+Dialogue: 0,0:07:23.82,0:07:25.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}哥们儿{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Bruh.{\r}
+Dialogue: 0,0:07:25.42,0:07:28.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我还没搞明白这片雷达云是个什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I haven't figured out what this radar cloud is yet.{\r}
+Dialogue: 0,0:07:28.76,0:07:31.01,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我只知道这不是天气的问题 也不是瓢虫{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I just know it's not weather, ladybugs{\r}
+Dialogue: 0,0:07:31.04,0:07:32.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}也不是外星人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}or aliens.{\r}
+Dialogue: 0,0:07:32.20,0:07:34.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}实话实说 我不能彻底排除外星人的可能{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And, frankly, I'm least sure about the last one.{\r}
+Dialogue: 0,0:07:34.86,0:07:35.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay.{\r}
+Dialogue: 0,0:07:36.03,0:07:37.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay?{\r}
+Dialogue: 0,0:07:37.43,0:07:39.68,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-对啊  -因为 一般来说{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Yeah. - Because, usually,{\r}
+Dialogue: 0,0:07:39.69,0:07:41.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你们都想让我在昨天就解决所有的问题{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}y'all want me to figure out everything by yesterday.{\r}
+Dialogue: 0,0:07:41.76,0:07:44.54,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 听上去你已经尽力了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, it sounds like you're doing everything you can do.{\r}
+Dialogue: 0,0:07:44.61,0:07:46.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你没事吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You okay?{\r}
+Dialogue: 0,0:07:48.88,0:07:51.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我哥住处的心理医生打电话了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}The counselor where my brother lives called.{\r}
+Dialogue: 0,0:07:51.88,0:07:55.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}说Cade错过了最后两次的夜间检查{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Said Cade's missed the last two nightly check-ins.{\r}
+Dialogue: 0,0:07:55.45,0:07:57.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-你打电话给他了吗 -他没接{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- You call him? - Didn't answer.{\r}
+Dialogue: 0,0:07:57.95,0:08:00.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我猜他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm guessing he...{\r}
+Dialogue: 0,0:08:00.26,0:08:01.75,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}可能停药了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}went off his medication{\r}
+Dialogue: 0,0:08:01.76,0:08:03.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而且处在了狂躁阶段{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and is cycling through a manic phase.{\r}
+Dialogue: 0,0:08:03.86,0:08:06.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我可以定位他的电话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I can ping his phone.{\r}
+Dialogue: 0,0:08:06.29,0:08:07.18,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你可以吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Could you?{\r}
+Dialogue: 0,0:08:07.21,0:08:08.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我很愿意啊 这就去做{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm tail up, stinger out.{\r}
+Dialogue: 0,0:08:10.57,0:08:13.67,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我得在他做出什么愚蠢至极的事情之前找到他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I need to find him before he does something really stupid,{\r}
+Dialogue: 0,0:08:13.69,0:08:16.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而不是普通愚蠢的事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}as opposed to garden-variety stupid{\r}
+Dialogue: 0,0:08:16.49,0:08:18.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}比如说自己停药{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}like going off his medication.{\r}
+Dialogue: 0,0:08:19.72,0:08:21.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}看起来你哥哥的手机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Looks like your brother's phone{\r}
+Dialogue: 0,0:08:21.92,0:08:22.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不在服务区{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}is off the grid.{\r}
+Dialogue: 0,0:08:22.95,0:08:24.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}或许只是电池没电了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Could just be a dead battery.{\r}
+Dialogue: 0,0:08:26.12,0:08:28.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 希望是吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah, let's hope.{\r}
+Dialogue: 0,0:08:35.18,0:08:38.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}很明显NTSB会会把这件事钉在{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Pretty clear NTSB is gonna try and pin this{\r}
+Dialogue: 0,0:08:38.33,0:08:40.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我们的海军飞行员身上 -考虑到事实上{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- on our Navy pilot. - Well, given the fact{\r}
+Dialogue: 0,0:08:40.47,0:08:42.01,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那架飞机和上面的尸体刚刚到达码头{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}that the plane and the body just arrived at the docks,{\r}
+Dialogue: 0,0:08:42.03,0:08:44.68,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}调查似乎不够严谨{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}that seems like a less than rigorous investigation.{\r}
+Dialogue: 0,0:08:44.69,0:08:47.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}哦 他说他在途中 "瞥了一眼飞机"{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Oh, he said he "Glanced at the plane" En route.{\r}
+Dialogue: 0,0:08:47.97,0:08:49.70,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}行吧 只要他把他拿到的一切都送来了就行{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Oh. All right. Well, as long as he gave it his all.{\r}
+Dialogue: 0,0:08:49.74,0:08:52.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他们会等着验尸报告的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}They'll wait for the autopsy,{\r}
+Dialogue: 0,0:08:52.14,0:08:55.44,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}看他是否在飞行时出了什么问题{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}see if he was incapacitated in-flight.{\r}
+Dialogue: 0,0:08:55.51,0:08:58.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但他已经累计航行了1500小时{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But he's logged 1,500 hours,{\r}
+Dialogue: 0,0:08:58.58,0:09:00.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而且他家人说他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and family says he's made this trip{\r}
+Dialogue: 0,0:09:00.21,0:09:02.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}经常往返墨西哥{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}back-and-forth to Mexico all the time.{\r}
+Dialogue: 0,0:09:03.69,0:09:05.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 以他的飞行高度{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, at the altitude he was flying,{\r}
+Dialogue: 0,0:09:05.72,0:09:08.20,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}一个有经验的飞行员难道还不能克服乱流吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}shouldn't an experienced pilot be able to overcome turbulence,{\r}
+Dialogue: 0,0:09:08.23,0:09:09.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}即使是跟在战斗机的乱流之后也没问题吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}even in the wake of a fighter jet?{\r}
+Dialogue: 0,0:09:09.98,0:09:10.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是啊 我也希望是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah, I'd hope so.{\r}
+Dialogue: 0,0:09:10.96,0:09:13.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}当那个海军飞行员在她的报告里写了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That Navy pilot shot herself in the foot{\r}
+Dialogue: 0,0:09:13.03,0:09:15.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不明飞行物的时候就已经是断送了自己了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}when she wrote "UFO" On her report.{\r}
+Dialogue: 0,0:09:17.80,0:09:19.43,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-Pride -嗯{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Pride? - Yeah?{\r}
+Dialogue: 0,0:09:25.84,0:09:27.24,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}刚刚在引擎里找到了这个{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just found this in the engine.{\r}
+Dialogue: 0,0:09:27.31,0:09:29.01,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}找到了什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Found what?{\r}
+Dialogue: 0,0:09:32.45,0:09:34.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这是什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What the hell is that?{\r}
+Dialogue: 0,0:09:34.62,0:09:36.26,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}某种我从未见过的金属{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Some kind of metal I've never seen before.{\r}
+Dialogue: 0,0:09:36.28,0:09:38.15,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}几乎是隐形的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's almost invisible.{\r}
+Dialogue: 0,0:09:38.22,0:09:39.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}像是某种 太空船会用的东西{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's like something a-a spaceship would use{\r}
+Dialogue: 0,0:09:40.00,0:09:41.82,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以我们无法检测到它{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}so we couldn't detect it.{\r}
+Dialogue: 0,0:09:42.19,0:09:44.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我没说是外星人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm not saying aliens.{\r}
+Dialogue: 0,0:09:44.79,0:09:46.63,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我也不会说不是外星人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm also not not saying aliens.{\r}
+Dialogue: 0,0:10:01.23,0:10:03.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你看起来就像吃了屎一样{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You look like the dog ate your birthday cake.{\r}
+Dialogue: 0,0:10:03.34,0:10:07.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}啊 是我在飞机引擎里找到的那片金属{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Ugh, It's this piece of metal I found in the plane engine.{\r}
+Dialogue: 0,0:10:07.44,0:10:10.68,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是 呃 一种碳化钨的高级形式{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's, uh, an advanced form of tungsten carbide.{\r}
+Dialogue: 0,0:10:10.74,0:10:12.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}它被设计成隐形的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's designed to be invisible.{\r}
+Dialogue: 0,0:10:12.58,0:10:14.92,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这很贵 很神奇 但是 嗯{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's expensive, it's amazing, but, uh...{\r}
+Dialogue: 0,0:10:14.94,0:10:17.58,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但这不会让你登上 今日最佳书呆子 的封面了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But it's not gonna get you on the cover of "Nerd's Today".{\r}
+Dialogue: 0,0:10:17.68,0:10:20.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-对  -这东西怎么进到引擎里的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- No. - How'd it get in the engine?{\r}
+Dialogue: 0,0:10:20.11,0:10:21.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我不知道  -我们的海军飞行员{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- I don't know. - Our Navy pilot{\r}
+Dialogue: 0,0:10:21.97,0:10:23.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}很确定她看到了某种袭击{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}is certain she saw some sort of attack.{\r}
+Dialogue: 0,0:10:23.66,0:10:24.82,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 让我们假设{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, let's assume{\r}
+Dialogue: 0,0:10:24.86,0:10:26.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们能搞明白那是什么 但是为什么呢{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}we can figure out the what. Why?{\r}
+Dialogue: 0,0:10:27.00,0:10:28.77,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们的飞行员 Andrew Pruitt{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Our pilot, Andrew Pruitt,{\r}
+Dialogue: 0,0:10:28.80,0:10:31.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Paradiso科技的天才创始人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}founder and genius of Paradiso Technologies.{\r}
+Dialogue: 0,0:10:32.84,0:10:36.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}该公司开发并销售了一系列的高科技产品{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}The company has developed and sold a bunch of technologies.{\r}
+Dialogue: 0,0:10:36.15,0:10:39.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但当Pruitt的妻子十年前去世之后 他开始专注于{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But when Pruitt's wife died ten years ago, he started focusing{\r}
+Dialogue: 0,0:10:39.02,0:10:40.77,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}设计计算软件{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}on computational software{\r}
+Dialogue: 0,0:10:40.79,0:10:42.14,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-用于药物测试 -嗯{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- for drug testing. - Hmm.{\r}
+Dialogue: 0,0:10:42.15,0:10:44.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他把软件给任何一个他认为需要这个的公司{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}He gave it away to any drug company he thought needed it.{\r}
+Dialogue: 0,0:10:44.88,0:10:46.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 那是两个月前{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, that's two months ago.{\r}
+Dialogue: 0,0:10:46.21,0:10:48.71,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-她不是已故的Pruitt夫人吧  -第二任妻子{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- She's not the late Mrs. Pruitt? - Wife number two.{\r}
+Dialogue: 0,0:10:48.74,0:10:51.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他们相遇的时候她是公司的首席财务官{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}She was CFO of the company when they met.{\r}
+Dialogue: 0,0:10:51.38,0:10:54.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}现在她是总裁了 Hannah和我要去和她{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Now she's CEO. Hannah and I are gonna go and talk to her{\r}
+Dialogue: 0,0:10:54.03,0:10:56.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}和其他在Paradiso办公室的家人谈谈{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and the rest of the family at Paradiso offices.{\r}
+Dialogue: 0,0:10:56.66,0:10:58.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-嗨 Pride -嘿{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Hi, Pride. - Hey.{\r}
+Dialogue: 0,0:10:59.15,0:11:00.18,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}再见 Pride{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Bye, Pride.{\r}
+Dialogue: 0,0:11:00.28,0:11:01.75,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}啊 我猜我会试着搞清楚{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Uh, I guess I'll try to figure out{\r}
+Dialogue: 0,0:11:01.77,0:11:02.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这东西哪来的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}where this thing came from.{\r}
+Dialogue: 0,0:11:02.92,0:11:03.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我和你一块去{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'll go with you.{\r}
+Dialogue: 0,0:11:04.00,0:11:05.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Patton可以帮忙{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Patton can assist.{\r}
+Dialogue: 0,0:11:05.43,0:11:07.70,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这个时候你应该 呃{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Oh, is this one of those moments where, uh,{\r}
+Dialogue: 0,0:11:07.73,0:11:09.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你想让我去 但是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}you want me to go, but...{\r}
+Dialogue: 0,0:11:10.10,0:11:11.64,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧 我会去的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay, I'm gonna go.{\r}
+Dialogue: 0,0:11:14.94,0:11:16.61,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你应该去找Cade{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You should go look for Cade.{\r}
+Dialogue: 0,0:11:16.68,0:11:17.84,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Patton告诉你了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Patton told you.{\r}
+Dialogue: 0,0:11:17.91,0:11:19.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他知道你不会说的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}He knew you wouldn't.{\r}
+Dialogue: 0,0:11:19.48,0:11:21.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Cade之前也停过药{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, Cade's been off his meds before.{\r}
+Dialogue: 0,0:11:21.59,0:11:24.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但最近几年 他都挺好的 不是吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But in the last few years, he's been fine, right?{\r}
+Dialogue: 0,0:11:24.18,0:11:25.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是啊{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah.{\r}
+Dialogue: 0,0:11:26.45,0:11:28.11,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而我希望这样的事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And I was hoping this sort of thing{\r}
+Dialogue: 0,0:11:28.13,0:11:29.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}已经过去了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}was behind us.{\r}
+Dialogue: 0,0:11:29.79,0:11:33.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而我会一直希望事实如此{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And I'm gonna keep hoping that that's the case.{\r}
+Dialogue: 0,0:11:33.46,0:11:36.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但双向情感障碍的问题是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But the trouble with being bipolar is that{\r}
+Dialogue: 0,0:11:36.46,0:11:39.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果人们能在长时间内还不错{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}if folks do okay long enough,{\r}
+Dialogue: 0,0:11:39.87,0:11:42.60,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他们或许会认为他们确实没事了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}they may start to think they're actually okay.{\r}
+Dialogue: 0,0:11:44.14,0:11:46.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你应该去阿拉巴马{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You should go to Alabama.{\r}
+Dialogue: 0,0:11:46.33,0:11:47.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他或许需要你{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}He might need you.{\r}
+Dialogue: 0,0:11:48.53,0:11:50.16,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们有案子要查{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We've got a case.{\r}
+Dialogue: 0,0:11:50.44,0:11:52.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我可以命令你去{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I can order you to go.{\r}
+Dialogue: 0,0:11:55.28,0:11:58.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}谢谢 King 我会很快回来的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Thanks, King. I'll be back soon.{\r}
+Dialogue: 0,0:12:05.04,0:12:08.76,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}啊 就算不做任何检查 我也可以说{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Ah. Having no examination whatsoever, I would say{\r}
+Dialogue: 0,0:12:08.83,0:12:12.10,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他身上的创伤{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}that the trauma on his body is consistent with{\r}
+Dialogue: 0,0:12:12.16,0:12:14.06,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}和高强度碰撞是一致的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}a high-impact crash.{\r}
+Dialogue: 0,0:12:14.13,0:12:16.05,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你认为这些伤太多所以不像是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You think that's too much bruising for him{\r}
+Dialogue: 0,0:12:16.08,0:12:17.64,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-死在坠毁前吗 - 我是这么想的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- to have died in the air? - I do.{\r}
+Dialogue: 0,0:12:17.70,0:12:20.47,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那意味着坠毁的同时他是活着的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Which means he was alive at the moment of impact.{\r}
+Dialogue: 0,0:12:20.54,0:12:22.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而这并未排除任何{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And it doesn't rule out any sort of{\r}
+Dialogue: 0,0:12:22.37,0:12:24.11,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}心血管问题{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}cardiac event.{\r}
+Dialogue: 0,0:12:24.18,0:12:26.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但在我切开他之前我们是不会有答案的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But we won't know until I open him up.{\r}
+Dialogue: 0,0:12:27.00,0:12:28.58,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你还在想什么 Dwayne{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What else is on your mind, Dwayne?{\r}
+Dialogue: 0,0:12:28.63,0:12:30.21,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我有那么明显吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Am I that transparent?{\r}
+Dialogue: 0,0:12:30.22,0:12:31.68,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们做朋友很久了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We've been friends a long time.{\r}
+Dialogue: 0,0:12:31.75,0:12:34.32,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你还在做那些令人不安的梦吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You still having those unsettling dreams?{\r}
+Dialogue: 0,0:12:36.12,0:12:37.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah.{\r}
+Dialogue: 0,0:12:37.26,0:12:40.06,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不过我猜 "梦魇"更恰当{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Though I guess "Nightmares" Is a better word.{\r}
+Dialogue: 0,0:12:41.39,0:12:44.33,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}一个穿着红西装的男人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}A man in a red suit{\r}
+Dialogue: 0,0:12:44.40,0:12:47.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}多次出现{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}keeps... showing up.{\r}
+Dialogue: 0,0:12:47.90,0:12:50.03,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他从不在对的地方出现{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Never where he's supposed to be.{\r}
+Dialogue: 0,0:12:50.10,0:12:52.70,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我想跟上他 但我做不到{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I try to get to him, but I can't.{\r}
+Dialogue: 0,0:12:52.77,0:12:55.71,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后就是昨晚 他 他带我去见了个{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And then last night, he... he led me to someone{\r}
+Dialogue: 0,0:12:55.77,0:12:57.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我多年来都没想过的人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I hadn't thought about in years.{\r}
+Dialogue: 0,0:12:57.48,0:12:58.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}谁{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Who?{\r}
+Dialogue: 0,0:12:58.78,0:13:00.61,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在我还是年轻治安官的时候{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}A little girl who died{\r}
+Dialogue: 0,0:13:00.68,0:13:02.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}死在一起人质劫持事件{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}in a hostage situation{\r}
+Dialogue: 0,0:13:03.01,0:13:04.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}中的一个小女孩儿{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}when I was a young sheriff.{\r}
+Dialogue: 0,0:13:05.02,0:13:08.62,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你上次好好休息了一整晚是什么时候的事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}How long has it been since you had a restful night's sleep?{\r}
+Dialogue: 0,0:13:09.69,0:13:12.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不是太久 几周前吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Not long. Couple of weeks.{\r}
+Dialogue: 0,0:13:12.42,0:13:14.63,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-Dwayne -我还没觉得精疲力尽{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Dwayne... - I'm not exhausted yet.{\r}
+Dialogue: 0,0:13:14.69,0:13:17.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我 只是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I... It's just...{\r}
+Dialogue: 0,0:13:17.26,0:13:18.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}令人担心{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Worrisome.{\r}
+Dialogue: 0,0:13:18.86,0:13:20.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Dwayne{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Dwayne...{\r}
+Dialogue: 0,0:13:20.60,0:13:22.17,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你在被绑架的时候被{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}you were injected with a copious amount{\r}
+Dialogue: 0,0:13:22.23,0:13:24.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}注入了大量的致幻剂{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}of LSD when you were abducted.{\r}
+Dialogue: 0,0:13:24.44,0:13:28.17,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}很少的剂量就能造成认知混乱了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}A small amount could create cognitive disruptions.{\r}
+Dialogue: 0,0:13:28.24,0:13:31.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那种剂量{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That amount...{\r}
+Dialogue: 0,0:13:31.44,0:13:34.25,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}去拿那本红色的书 查一下{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Grab that red book over there, and look up{\r}
+Dialogue: 0,0:13:34.31,0:13:36.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}5-羟色胺能致幻剂{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}serotonergic hallucinogens,{\r}
+Dialogue: 0,0:13:37.05,0:13:39.22,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}让我们看看书上说什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and let's see what it says.{\r}
+Dialogue: 0,0:13:39.28,0:13:42.02,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}谢谢 Loretta{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Thanks, Loretta.{\r}
+Dialogue: 0,0:13:42.09,0:13:43.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果我没法帮助一个{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, if I can't help a friend{\r}
+Dialogue: 0,0:13:43.56,0:13:45.99,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}致幻剂严重过量的朋友{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}with a massive LSD overdose,{\r}
+Dialogue: 0,0:13:46.06,0:13:47.99,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我还能帮谁{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}who can I help?{\r}
+Dialogue: 0,0:13:49.79,0:13:53.26,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我在想Paradiso这里会不会有优秀的工程师{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I wonder if there's a nice engineer here at Paradiso{\r}
+Dialogue: 0,0:13:53.33,0:13:54.70,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}能让我们介绍给你的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}we could set you up with?{\r}
+Dialogue: 0,0:13:54.77,0:13:57.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们什么时候开始聊起约会的话题了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}When did we start talking about dating?{\r}
+Dialogue: 0,0:13:57.37,0:13:59.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你不是说想忘记被人背叛吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You said you want to forget about getting screwed over?{\r}
+Dialogue: 0,0:13:59.84,0:14:01.34,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那你就该去找点乐子{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Then you got to try to have fun.{\r}
+Dialogue: 0,0:14:01.41,0:14:03.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我不是说你一定要结婚{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm not saying you got to get married.{\r}
+Dialogue: 0,0:14:03.14,0:14:05.06,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是吗 那还好 因为还没有和{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, that is good, because I am not divorced yet{\r}
+Dialogue: 0,0:14:05.09,0:14:06.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我首任丈夫离婚{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}from my first husband.{\r}
+Dialogue: 0,0:14:06.11,0:14:08.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-既然你提到了这个 -噢 该来的总会来的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Since you brought that up... - Oh, it's gonna happen.{\r}
+Dialogue: 0,0:14:08.51,0:14:09.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们只是还没完成书面工作{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We just haven't done the paperwork.{\r}
+Dialogue: 0,0:14:10.02,0:14:12.34,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我来问你个问题 如果你在讯问一个人的时候{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Let me ask you a question. If you were interviewing someone{\r}
+Dialogue: 0,0:14:12.36,0:14:14.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他们这样回答你 你会有什么感觉 说实话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and they said that, how would you feel? Really?{\r}
+Dialogue: 0,0:14:15.49,0:14:16.92,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}感谢你们的等待{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Thank you for waiting.{\r}
+Dialogue: 0,0:14:16.99,0:14:19.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-嗨 我是Sheri Pruitt -你好{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Hi. I'm Sheri Pruitt. - Hello.{\r}
+Dialogue: 0,0:14:19.46,0:14:21.43,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-这是我儿子Scott -嗨{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- This is my son Scott. - Hi.{\r}
+Dialogue: 0,0:14:21.49,0:14:22.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我是特别探员Khoury{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm Special Agent Khoury.{\r}
+Dialogue: 0,0:14:22.79,0:14:24.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这位是特别探员Gregorio{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}This is Special Agent Gregorio.{\r}
+Dialogue: 0,0:14:24.30,0:14:25.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}请节哀顺变{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We're very sorry for your loss.{\r}
+Dialogue: 0,0:14:25.96,0:14:28.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}谢谢你 我 我没想到会要这么长时间{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Thank you. I-I didn't think that was gonna take so long.{\r}
+Dialogue: 0,0:14:28.80,0:14:30.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}呃 每个人都有很多的问题{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Uh, everyone just had a lot of questions{\r}
+Dialogue: 0,0:14:30.94,0:14:33.24,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}关于Paradiso会怎么继续运行下去{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}about how Paradiso was going to move forward.{\r}
+Dialogue: 0,0:14:33.31,0:14:35.14,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}呃 如果你不介意的话 那个{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Uh, if you wouldn't mind just, uh,{\r}
+Dialogue: 0,0:14:35.21,0:14:38.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在我们开始前先把这个签了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}signing this before we begin.{\r}
+Dialogue: 0,0:14:38.11,0:14:39.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-这是什么 -这是保密协议{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- What is that? - It's an NDA.{\r}
+Dialogue: 0,0:14:40.05,0:14:41.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们是联邦探员 我们不会签这个的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We're federal agents. We don't sign that.{\r}
+Dialogue: 0,0:14:42.95,0:14:46.28,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你们 请原谅我们{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You'll, uh, have to forgive us.{\r}
+Dialogue: 0,0:14:46.35,0:14:47.72,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们公司处于一个{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Uh, we are in uncharted{\r}
+Dialogue: 0,0:14:47.79,0:14:49.32,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}全新的领域{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}territory here.{\r}
+Dialogue: 0,0:14:49.39,0:14:50.75,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们明白{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We understand.{\r}
+Dialogue: 0,0:14:50.82,0:14:52.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们在调查Pruitt的死亡案件{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We're investigating Mr. Pruitt's death;{\r}
+Dialogue: 0,0:14:52.45,0:14:53.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们不是在找风险投资{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}we're not looking for venture capital.{\r}
+Dialogue: 0,0:14:54.05,0:14:58.40,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以 你们不认为是海军的飞行员导致了坠毁{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}So... you don't think the Navy pilot caused the crash?{\r}
+Dialogue: 0,0:14:58.46,0:14:59.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们还没有结论{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We don't know what to think yet.{\r}
+Dialogue: 0,0:14:59.90,0:15:01.58,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你认为有什么事是我们应该知道的吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Is there anything you think we should know?{\r}
+Dialogue: 0,0:15:01.60,0:15:03.77,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我 没有{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Me? No.{\r}
+Dialogue: 0,0:15:05.07,0:15:07.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Pruitt先生被人威胁了吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Was Mr. Pruitt threatened?{\r}
+Dialogue: 0,0:15:07.14,0:15:08.14,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}牵涉到任何{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Involved in any...{\r}
+Dialogue: 0,0:15:08.21,0:15:10.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-恶意诉讼吗 -没有{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- nasty litigation? - No.{\r}
+Dialogue: 0,0:15:10.34,0:15:12.10,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我继父在跟人谈生意之前都会做{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}My stepfather did extensive background checks{\r}
+Dialogue: 0,0:15:12.17,0:15:14.14,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}广泛的背景调查{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}on people before he went into business with them.{\r}
+Dialogue: 0,0:15:14.21,0:15:17.75,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他 说人生苦短 不应该浪费时间和混蛋们打交道{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}He... said life was too short to work with jerks.{\r}
+Dialogue: 0,0:15:17.82,0:15:18.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们能帮你做点{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What can we do{\r}
+Dialogue: 0,0:15:19.05,0:15:20.25,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-什么吗 -让我们{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- to help you? - Let's start{\r}
+Dialogue: 0,0:15:20.32,0:15:22.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}从文档下手吧 合同 项目明细{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}with documents: contracts, project lists,{\r}
+Dialogue: 0,0:15:23.02,0:15:24.86,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}竞争对手 雇员记录{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}competitors, employees' records,{\r}
+Dialogue: 0,0:15:24.92,0:15:27.02,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}尤其是那些离职的时候闹得不愉快的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}especially anyone who's left on bad terms.{\r}
+Dialogue: 0,0:15:27.09,0:15:29.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我会让Andrew的助手给你所有需要的东西{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'll get Andrew's assistant to get you everything you need.{\r}
+Dialogue: 0,0:15:29.76,0:15:31.93,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-谢谢你 -不客气{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Thank you. - Okay.{\r}
+Dialogue: 0,0:15:32.33,0:15:33.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}莫比尔 (阿拉巴马州){\r}
+Dialogue: 0,0:15:33.90,0:15:35.43,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Cade是个很好的住客{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Cade's a good resident.{\r}
+Dialogue: 0,0:15:35.50,0:15:39.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}和别人都很处得来 在屋里帮各种忙{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Kind to the other guys, super helpful around the house.{\r}
+Dialogue: 0,0:15:39.10,0:15:42.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他离开的时候 他说过要去哪里吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And when he left, did he say where he was going?{\r}
+Dialogue: 0,0:15:42.16,0:15:43.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}没有{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No.{\r}
+Dialogue: 0,0:15:44.01,0:15:47.11,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他最近跟其他人有过争执吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}He have any trouble with anyone recently?{\r}
+Dialogue: 0,0:15:47.18,0:15:49.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}没有 但是 说实话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No. Though, if I'm completely honest with you,{\r}
+Dialogue: 0,0:15:49.58,0:15:52.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}过去这些天他看起来有些焦躁{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}he had seemed a little anxious over the past few days.{\r}
+Dialogue: 0,0:15:52.62,0:15:54.05,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}哪种{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What kind?{\r}
+Dialogue: 0,0:15:54.12,0:15:55.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}狂躁 或者说{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Manic, or...{\r}
+Dialogue: 0,0:15:55.75,0:15:58.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-他惹了不该惹的人吗  -不知道{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- he piss off the wrong guy? - Not sure.{\r}
+Dialogue: 0,0:15:58.96,0:16:00.66,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}试着跟他谈过 但是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Tried talking to him, but...{\r}
+Dialogue: 0,0:16:00.73,0:16:02.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他不愿意谈{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}he wasn't interested.{\r}
+Dialogue: 0,0:16:05.03,0:16:06.56,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你觉得他是不是停药了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You think he was off his meds?{\r}
+Dialogue: 0,0:16:06.63,0:16:07.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但愿不是这样{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Sure hope not.{\r}
+Dialogue: 0,0:16:14.87,0:16:16.54,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这种情况也不是第一次了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Wouldn't be the first time.{\r}
+Dialogue: 0,0:16:16.61,0:16:19.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而且他偏偏又非常擅长藏东西{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And he's awfully good at hiding things.{\r}
+Dialogue: 0,0:16:19.11,0:16:20.31,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我知道 但是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I know. But...{\r}
+Dialogue: 0,0:16:20.38,0:16:21.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你哥哥在这里的表现一直都很好{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}your brother's been doing great here.{\r}
+Dialogue: 0,0:16:21.98,0:16:24.21,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以我才觉得担心 给你打了电话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Which is why I got worried and gave you a call.{\r}
+Dialogue: 0,0:16:26.55,0:16:28.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你说你最后一次看到他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And you said the last time you saw him{\r}
+Dialogue: 0,0:16:28.62,0:16:30.85,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-是在前天晚上 -是的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- was night before last? - Yeah,{\r}
+Dialogue: 0,0:16:30.92,0:16:33.26,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}晚饭前他开车出去了然后再没回来{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}he got in his car right before dinner and never came back.{\r}
+Dialogue: 0,0:16:33.32,0:16:36.33,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-他有一辆车 -是的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- He's got a car? - Yeah.{\r}
+Dialogue: 0,0:16:36.39,0:16:38.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他买的 呃 两个月前{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}He bought it, uh, two months ago.{\r}
+Dialogue: 0,0:16:39.33,0:16:40.76,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}哪种{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What kind?{\r}
+Dialogue: 0,0:16:40.83,0:16:43.03,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}最后 摄入之后导致的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}"And finally, longer periods{\r}
+Dialogue: 0,0:16:43.10,0:16:45.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}长时间的异相睡眠{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}"of REM sleep as a result of ingestion{\r}
+Dialogue: 0,0:16:45.34,0:16:48.71,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}会造成逐渐加重的认知混乱{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}create increased levels of cognitive disruption"...{\r}
+Dialogue: 0,0:16:48.77,0:16:50.11,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}正如你所说的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}just like you said...{\r}
+Dialogue: 0,0:16:50.18,0:16:51.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}跟其他类型的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}"not dissimilar to{\r}
+Dialogue: 0,0:16:51.98,0:16:54.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}迷幻体验并没有不同之处{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}other types of psychedelic experiences".{\r}
+Dialogue: 0,0:16:54.48,0:16:57.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这就解释清楚了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well... that explains that.{\r}
+Dialogue: 0,0:16:57.45,0:17:00.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}总而言之 你睡得更熟 但在你这情况下{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, in short, you sleep deeper, but in this case,{\r}
+Dialogue: 0,0:17:00.45,0:17:01.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这不是好事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}it's no good.{\r}
+Dialogue: 0,0:17:01.75,0:17:04.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我有个朋友 她在杜兰做神经科医生{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I have a friend, she's a neurologist at Tulane,{\r}
+Dialogue: 0,0:17:04.36,0:17:08.86,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}她在药理学迷幻药方面有不少研究{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and she's done a lot of work in pharmacological psychedelics.{\r}
+Dialogue: 0,0:17:08.93,0:17:10.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我忙完了可以给她打个电话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I could give her a call when I'm finished.{\r}
+Dialogue: 0,0:17:16.53,0:17:17.97,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}有什么问题吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Everything okay?{\r}
+Dialogue: 0,0:17:18.04,0:17:19.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我看到了一些东西{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm seeing something.{\r}
+Dialogue: 0,0:17:19.87,0:17:21.54,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}可能是一个牙冠 但是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Could be a crown, but...{\r}
+Dialogue: 0,0:17:21.61,0:17:23.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}反光很强烈{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}it's awfully reflective.{\r}
+Dialogue: 0,0:17:33.02,0:17:34.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我需要一个镊子{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'll need a tweezer.{\r}
+Dialogue: 0,0:17:43.06,0:17:45.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这是什么鬼{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What the hell is this?{\r}
+Dialogue: 0,0:17:45.06,0:17:46.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}工程碳化钨{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Engineered tungsten carbide.{\r}
+Dialogue: 0,0:17:46.80,0:17:48.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}为什么会在他嘴里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What's it doing in his mouth?{\r}
+Dialogue: 0,0:17:48.87,0:17:50.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我不知道 但是我们在pruitt的飞机引擎里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I have no idea, but we found some{\r}
+Dialogue: 0,0:17:50.37,0:17:52.47,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}找到一些同样的东西{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}in Pruitt's airplane engine.{\r}
+Dialogue: 0,0:17:52.54,0:17:54.84,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不足以引起事故{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Not enough to cause an accident,{\r}
+Dialogue: 0,0:17:54.91,0:17:56.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但是 这东西不属于那里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}but still, something that shouldn't have been there.{\r}
+Dialogue: 0,0:17:56.97,0:18:00.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我猜这东西也不属于这里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm guessing this doesn't belong in here, either.{\r}
+Dialogue: 0,0:18:13.93,0:18:15.46,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我打赌这是无人机的一部分{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Bet that's part of a drone.{\r}
+Dialogue: 0,0:18:15.53,0:18:18.93,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}为什么Pruitt先生的嘴里会有无人机残骸{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Why would Mr. Pruitt have a drone in his throat?{\r}
+Dialogue: 0,0:18:29.36,0:18:31.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}看起来和我看见的一模一样{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That looks exactly like what I saw{\r}
+Dialogue: 0,0:18:31.76,0:18:33.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-但是那些是鸟 不是吗 -是的 椋鸟{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- But those are birds, aren't they? - Yeah, starlings.{\r}
+Dialogue: 0,0:18:33.96,0:18:36.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}没有鸟能飞得和飞机一样快{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}There's no bird that can fly as fast as an airplane.{\r}
+Dialogue: 0,0:18:36.60,0:18:38.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 白喉針尾雨燕{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, the white-throated needletail{\r}
+Dialogue: 0,0:18:38.03,0:18:39.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}每小时能飞105英里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}can go 105 miles an hour.{\r}
+Dialogue: 0,0:18:39.30,0:18:40.70,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}比大多数螺旋桨飞机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That's faster than most prop planes{\r}
+Dialogue: 0,0:18:40.73,0:18:41.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}起飞时都快 但是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}at takeoff, but...{\r}
+Dialogue: 0,0:18:41.94,0:18:44.02,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们不是说鸟群袭击了飞机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We're not suggesting the birds attacked the plane.{\r}
+Dialogue: 0,0:18:44.04,0:18:45.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不 这是椋鸟群成群结队的现象{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No, this is called murmuration.{\r}
+Dialogue: 0,0:18:45.44,0:18:47.34,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我想让你看看 这样你就可以确认{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I wanted you to see it just so you could confirm{\r}
+Dialogue: 0,0:18:47.41,0:18:48.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这和你看到的很像{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}that it resembled what you saw.{\r}
+Dialogue: 0,0:18:48.98,0:18:51.31,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们认为这是导致飞机坠毁的原因之一{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We think this is part of what brought down the plane.{\r}
+Dialogue: 0,0:18:55.58,0:18:57.72,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}看起来是一个小型无人机的部件{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Looks like it's from a small drone.{\r}
+Dialogue: 0,0:18:57.79,0:18:59.75,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是的 而且有一群无人机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}yeah, it is. And there were a bunch of them, too.{\r}
+Dialogue: 0,0:18:59.82,0:19:01.57,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}都可以独立移动 但是作为一个整体{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}All moving independently, but acting as one.{\r}
+Dialogue: 0,0:19:01.59,0:19:03.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这就是为什么你看到他们后退然后又再次进攻{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That's how you saw them back up and then attack again.{\r}
+Dialogue: 0,0:19:03.76,0:19:05.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以我和飞行员的死没有关系{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}So I had nothing to do with the pilot dying?{\r}
+Dialogue: 0,0:19:05.59,0:19:07.86,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不是 他死于高速撞击水面{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Nope. He died due to the impact of hitting the water.{\r}
+Dialogue: 0,0:19:07.93,0:19:09.61,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但我们相信他因为被这些东西攻击{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But we believe he lost control of the plane{\r}
+Dialogue: 0,0:19:09.63,0:19:11.20,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而失去了对飞机的控制{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}from being attacked by this swarm.{\r}
+Dialogue: 0,0:19:11.27,0:19:13.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是的 这种运动的技术术语{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah, the technical term for this type of movement{\r}
+Dialogue: 0,0:19:13.25,0:19:15.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}叫做 无尺度相关性{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}is called scale-free correlation.{\r}
+Dialogue: 0,0:19:15.07,0:19:17.43,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这种相关性是晶体形成或者{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's like the critical systems involved in crystal formation{\r}
+Dialogue: 0,0:19:17.45,0:19:19.24,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}铁磁性形成的关键 唯一的问题是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}or ferromagnetism. The only problem is,{\r}
+Dialogue: 0,0:19:19.31,0:19:21.34,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}据我们所知 无人机并不{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}as far as we know, the technology doesn't exist{\r}
+Dialogue: 0,0:19:21.41,0:19:22.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}具备这项技术{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}for drones to do it.{\r}
+Dialogue: 0,0:19:22.58,0:19:24.68,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-很明显这个无人机能做到 -是的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Well, clearly it does. - Yeah.{\r}
+Dialogue: 0,0:19:24.75,0:19:26.71,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果他们可以让一架飞机落下来{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And if they can bring a prop plane down with them,{\r}
+Dialogue: 0,0:19:26.73,0:19:29.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们必须在他们袭击更大的目标之前抓住他们{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}we have to catch them before they move on to a bigger target.{\r}
+Dialogue: 0,0:19:32.82,0:19:34.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只因为这辆车在我的停车场{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just because that car's on my lot{\r}
+Dialogue: 0,0:19:34.36,0:19:36.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}并不意味着我做错了什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}doesn't mean I did anything wrong.{\r}
+Dialogue: 0,0:19:36.16,0:19:39.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我这是合法的买卖 我没必要帮助你{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I bought it fair and square, and I don't have to help you.{\r}
+Dialogue: 0,0:19:39.36,0:19:42.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我注意有些车没有买主指导{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I notice some of these cars don't have buyers' guides.{\r}
+Dialogue: 0,0:19:42.30,0:19:44.43,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我猜他们在你办公室应该有存档吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I assume they're filed away in your office?{\r}
+Dialogue: 0,0:19:44.50,0:19:47.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}当地执法部门来的时候可能会想检查一下{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Local law enforcement might want to check them when they stop by.{\r}
+Dialogue: 0,0:19:47.34,0:19:48.94,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-你在威胁我 -没有{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- You're threatening me. - Nope.{\r}
+Dialogue: 0,0:19:49.00,0:19:51.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只是帮助当地执法部分加大执法力度{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just helping the locals vigorously enforce the law.{\r}
+Dialogue: 0,0:19:51.87,0:19:52.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}把车打开{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Open it.{\r}
+Dialogue: 0,0:19:56.61,0:20:00.15,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果你找到任何东西 都是我的 我买的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}If you find anything in there, it's mine. I bought it.{\r}
+Dialogue: 0,0:20:00.22,0:20:03.25,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-他有说为什么需要钱吗 -没有{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Did he say why he needed the money? - Nope.{\r}
+Dialogue: 0,0:20:03.32,0:20:06.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-他说他要去哪了吗 -没有{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Did he say where he was going? - No.{\r}
+Dialogue: 0,0:20:06.55,0:20:08.82,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他和任何人一起走的吗 我不知道{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Did he leave with anyone? - I don't know.{\r}
+Dialogue: 0,0:20:08.89,0:20:12.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我相信我能找到一些违反信用分数规定的东西{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm sure I can find some consumer credit violations,{\r}
+Dialogue: 0,0:20:12.86,0:20:14.93,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果我专心找的话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}if I put my mind to it.{\r}
+Dialogue: 0,0:20:15.00,0:20:17.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他们是步行离开的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I believe he left on foot.{\r}
+Dialogue: 0,0:20:17.87,0:20:19.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}前面拐角的地方{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Headed around the corner.{\r}
+Dialogue: 0,0:20:19.80,0:20:21.50,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但是不知道他们准备去哪{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No idea where.{\r}
+Dialogue: 0,0:20:21.57,0:20:23.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我有详细的细节 Lasallet探员{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I had it detailed, Agent Lasalle.{\r}
+Dialogue: 0,0:20:23.37,0:20:26.31,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果这里面有什么好东西 可能是他们偷的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}If there was anything good in there, they probably stole it.{\r}
+Dialogue: 0,0:20:38.09,0:20:40.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-你看了电影 -是的 亲爱的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Well, you saw the movie. - Yes, dear.{\r}
+Dialogue: 0,0:20:40.56,0:20:42.16,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}电影之夜 五个电影都看了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Movie night. All five of them.{\r}
+Dialogue: 0,0:20:42.22,0:20:44.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而我这14个小时就这么浪费了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And I will never get those 14 hours back.{\r}
+Dialogue: 0,0:20:44.26,0:20:45.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这和无人机有什么关系{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What does this have to do with our drones?{\r}
+Dialogue: 0,0:20:45.93,0:20:47.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}终结者之谜 意味着{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, the "Terminator Conundrum" means you don't{\r}
+Dialogue: 0,0:20:47.86,0:20:49.72,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你不该研发一种拥有自由意志会反抗你的武器{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}develop a thinking weapon that can turn on you.{\r}
+Dialogue: 0,0:20:49.76,0:20:51.20,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 被机器人统治的世界{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Mm, a world ruled by bots.{\r}
+Dialogue: 0,0:20:51.27,0:20:52.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不完全是美国与自主武器{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Not exactly why the U.S. draws the line{\r}
+Dialogue: 0,0:20:52.87,0:20:54.60,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}划清界限的原因{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}at fully autonomous weaponry.{\r}
+Dialogue: 0,0:20:54.67,0:20:56.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只有没人跨过红线的时候才能说有这底线存在{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, the line only exists as long as nobody crosses it.{\r}
+Dialogue: 0,0:20:56.94,0:20:58.34,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Meyer上尉的指挥官{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Lieutenant Meyer's commander{\r}
+Dialogue: 0,0:20:58.36,0:21:00.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不让她继续飞{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}won't clear her to fly yet.{\r}
+Dialogue: 0,0:21:00.44,0:21:01.71,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那架飞机坠毁不是她的错{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}She didn't down that plane.{\r}
+Dialogue: 0,0:21:01.78,0:21:04.18,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们只是有一个理论 但是没有证据{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, we have a theory, not proof.{\r}
+Dialogue: 0,0:21:04.25,0:21:06.28,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}当我们找到这些无人机的时候{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}When we find these drones,{\r}
+Dialogue: 0,0:21:06.35,0:21:08.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}就能让她重新拥有飞行权{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}we'll make sure she gets her wings back.{\r}
+Dialogue: 0,0:21:11.59,0:21:13.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我的联系人不知道军队{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}My contacts aren't aware of any military{\r}
+Dialogue: 0,0:21:13.21,0:21:17.06,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在无尺度相关性武器软件上的工作{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}weapons program working on scale-free correlation software.{\r}
+Dialogue: 0,0:21:17.13,0:21:19.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}美国国防高级研究计划局也在努力{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, DARPA isn't working on it, either.{\r}
+Dialogue: 0,0:21:19.26,0:21:20.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他们上周接到了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}They got a call from Pruitt.{\r}
+Dialogue: 0,0:21:20.60,0:21:22.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Pruitt的电话 要求面谈 但是没有说原因{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Last week. Asked for a meeting, wouldn't say why.{\r}
+Dialogue: 0,0:21:22.60,0:21:24.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧 那么 有人杀了他来阻止会议{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, then, it's not unreasonable to think{\r}
+Dialogue: 0,0:21:24.60,0:21:27.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这种想法也不那么荒谬了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}that someone killed him to stop the meeting.{\r}
+Dialogue: 0,0:21:27.07,0:21:28.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但是依然无法解释{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But that still doesn't explain{\r}
+Dialogue: 0,0:21:28.61,0:21:29.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}为什么他们需要用这种机密{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}why they would need a secret{\r}
+Dialogue: 0,0:21:29.87,0:21:32.54,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}又昂贵的技术来杀害他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and highly valuable technology to do so.{\r}
+Dialogue: 0,0:21:32.61,0:21:33.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}证明概念的可行性吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Proof of concept?{\r}
+Dialogue: 0,0:21:33.88,0:21:34.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}也许{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Maybe.{\r}
+Dialogue: 0,0:21:34.98,0:21:37.24,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Paradiso里有嫌疑犯人选吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Anyone at Paradiso a likely suspect?{\r}
+Dialogue: 0,0:21:37.31,0:21:40.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}暂时没有 一家成功的经营良好的公司{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Not yet. But it's a successful, well-run company.{\r}
+Dialogue: 0,0:21:40.58,0:21:42.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}员工只有在Paradiso不想参与他们的研发内容时{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Employees only leave when the technologies they develop{\r}
+Dialogue: 0,0:21:42.77,0:21:44.75,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}才会离开{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}is something Paradiso doesn't want a part of.{\r}
+Dialogue: 0,0:21:44.82,0:21:47.15,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但是Pruitt会让他们保留自己的研发成果{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But Pruitt will let them keep the technology in exchange{\r}
+Dialogue: 0,0:21:47.22,0:21:48.52,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}作为开展新业务的内容{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}for a piece of the new business.{\r}
+Dialogue: 0,0:21:48.59,0:21:50.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是的 目前为止 大部分的人依然在继续{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah. So far, most of those folks have gone on,{\r}
+Dialogue: 0,0:21:50.93,0:21:52.76,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}获得风险投资 成为亿万富翁{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}gotten venture money, become billionaires,{\r}
+Dialogue: 0,0:21:52.83,0:21:56.03,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}百万富翁 或者只是很有钱的富翁{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}quarter billionaires, or just lots-of-dollar-aires.{\r}
+Dialogue: 0,0:21:56.10,0:21:58.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}无人机是Paradiso科技公司的吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Are the drones Paradiso technology?{\r}
+Dialogue: 0,0:21:58.93,0:22:01.20,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果是的话 Pruitt可能已经意识到了危险{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}If so, Pruitt could've realized the danger,{\r}
+Dialogue: 0,0:22:01.27,0:22:02.94,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只是不想追加投资{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and just didn't want to pursue it.{\r}
+Dialogue: 0,0:22:03.00,0:22:05.17,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以一些贪婪的亿万富翁{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}So some wannabe billionaire{\r}
+Dialogue: 0,0:22:05.24,0:22:07.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}听说了他要跟国防部高级研究计划局的会面感到生气{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}heard about his meeting with DARPA and got angry{\r}
+Dialogue: 0,0:22:07.14,0:22:09.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}认为Pruitt出卖了他的研究成果{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}that Pruitt was giving away his genius?{\r}
+Dialogue: 0,0:22:09.11,0:22:11.18,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-也许吧 -我们暂时还没找到{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Maybe. - We haven't found anything{\r}
+Dialogue: 0,0:22:11.25,0:22:12.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那样的证据{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}like that yet.{\r}
+Dialogue: 0,0:22:12.58,0:22:14.46,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我有个办法追踪这些无人机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I do have an idea on how to track the swarm,{\r}
+Dialogue: 0,0:22:14.48,0:22:16.32,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但是我还需要一点时间才能实现{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}but it's gonna take a bit to pull it together.{\r}
+Dialogue: 0,0:22:16.38,0:22:17.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧 Gregorio 去帮他 我们没时间了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}All right, well, Gregorio, help him. We don't have time.{\r}
+Dialogue: 0,0:22:17.99,0:22:19.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-好的 -如果这项技术{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- All right. - If this technology{\r}
+Dialogue: 0,0:22:19.29,0:22:20.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}落在坏人手里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}ends up in the wrong hands,{\r}
+Dialogue: 0,0:22:20.66,0:22:22.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我们最后会... -躲在地底下{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- we end up... - Underground,{\r}
+Dialogue: 0,0:22:22.36,0:22:24.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}试图阻止终结者杀害一个年轻的女人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}trying to stop a Terminator from killing a young woman.{\r}
+Dialogue: 0,0:22:26.13,0:22:27.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你不许再去电影之夜了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No more movie night for you.{\r}
+Dialogue: 0,0:22:27.66,0:22:29.46,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-好主意 -我给国家安全局打电话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- That's a good idea. - I'll call NSA,{\r}
+Dialogue: 0,0:22:29.53,0:22:32.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}看看有没有其他国家在讨论这个技术{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}see if any foreign nationals are talking about this kind of tech.{\r}
+Dialogue: 0,0:22:32.13,0:22:34.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 等一下{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah. Uh-huh. Hold on.{\r}
+Dialogue: 0,0:22:36.64,0:22:38.47,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-关于桌子 -嗯{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- About the desk... - Oh...{\r}
+Dialogue: 0,0:22:38.54,0:22:41.44,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}听着 Pride 我们没必要再谈这个了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Look, Pride, we don't have to talk about it anymore.{\r}
+Dialogue: 0,0:22:41.51,0:22:42.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}会有解决办法的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We're gonna make this work.{\r}
+Dialogue: 0,0:22:42.94,0:22:45.78,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不是桌子的问题{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's not about the desks.{\r}
+Dialogue: 0,0:22:47.02,0:22:49.02,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我去给国家安全局打电话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm gonna call NSA.{\r}
+Dialogue: 0,0:22:52.12,0:22:53.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我只发现了一张收据{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}All I found was a receipt{\r}
+Dialogue: 0,0:22:53.62,0:22:55.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是城市另一端的一家汉堡连锁店{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}to a burger joint across town.{\r}
+Dialogue: 0,0:22:55.36,0:22:56.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}没什么可以继续的了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Not much to go on.{\r}
+Dialogue: 0,0:22:56.56,0:22:58.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}继续追查这条线索吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Follow the string.{\r}
+Dialogue: 0,0:22:58.29,0:23:00.63,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}等你到那里之后才能发现真相{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Can't know what the truth is until you get there.{\r}
+Dialogue: 0,0:23:00.70,0:23:02.10,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我不明白的是他为什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What I don't get is why{\r}
+Dialogue: 0,0:23:02.16,0:23:03.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}要卖掉他的车{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}he sold his car.{\r}
+Dialogue: 0,0:23:03.87,0:23:07.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我是说 他最近一切都挺好的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I mean, he was doing pretty good here, recently.{\r}
+Dialogue: 0,0:23:07.37,0:23:09.57,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你只有在需要钱的时候 才会卖车{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You only sell your car if you need money fast.{\r}
+Dialogue: 0,0:23:09.64,0:23:11.20,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不管原因是什么 他现在失踪了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, whatever the reason, he's missing{\r}
+Dialogue: 0,0:23:11.22,0:23:12.44,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你需要找到他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and you need to find him.{\r}
+Dialogue: 0,0:23:12.51,0:23:14.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我知道 我知道{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I know. I know.{\r}
+Dialogue: 0,0:23:14.88,0:23:16.08,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's just...{\r}
+Dialogue: 0,0:23:17.81,0:23:21.25,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只是困难超出了我的预期 King{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's hitting me harder than I expected, King.{\r}
+Dialogue: 0,0:23:21.32,0:23:23.78,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在他房间里我发现了一张照片{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Found a photo in his room.{\r}
+Dialogue: 0,0:23:23.85,0:23:26.92,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那时我们都是小孩 我们俩在一起钓鱼{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Two of us were fishing when we were kids.{\r}
+Dialogue: 0,0:23:26.99,0:23:28.92,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}高兴极了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Happy as could be.{\r}
+Dialogue: 0,0:23:28.99,0:23:33.93,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}之后 我没料到会像这样收场{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And then... I just didn't think it would end up like this.{\r}
+Dialogue: 0,0:23:37.03,0:23:38.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果你需要什么就告诉我 好么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Let me know if you need anything, okay?{\r}
+Dialogue: 0,0:23:41.27,0:23:43.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我会的 King{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Will do, King.{\r}
+Dialogue: 0,0:23:44.61,0:23:45.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我在国安局的联系人并没听说过{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}My NSA contacts haven't heard{\r}
+Dialogue: 0,0:23:45.87,0:23:47.34,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}任何关于外国政府{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}about any foreign governments{\r}
+Dialogue: 0,0:23:47.41,0:23:50.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}使用无标度相关软件的消息 但是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}possessing scale-free correlation software, but...{\r}
+Dialogue: 0,0:23:51.05,0:23:53.28,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他们一直有听到一个词‘蜂群’{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}they have been hearing the word "swarm" on calls{\r}
+Dialogue: 0,0:23:53.35,0:23:55.82,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}出现在两个黑市武器经销商的通话中{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}between two black market arms dealers.{\r}
+Dialogue: 0,0:23:55.88,0:23:58.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}有可能他们只是蜜蜂爱好者{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Any chance they're just lovers of bees?{\r}
+Dialogue: 0,0:23:58.35,0:24:00.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不会的 除非现在蜜蜂出了天价{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Not unless bees have gotten really expensive.{\r}
+Dialogue: 0,0:24:00.46,0:24:02.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他们不断提到{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}They have been mentioning{\r}
+Dialogue: 0,0:24:02.19,0:24:03.62,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}标价{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}a price tag.{\r}
+Dialogue: 0,0:24:03.69,0:24:05.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}看上去这个软件是要对外出售的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Looks like the software is for sale.{\r}
+Dialogue: 0,0:24:05.29,0:24:07.01,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只希望Sebastian和Gregorio{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just got to hope that Sebastian and Gregorio{\r}
+Dialogue: 0,0:24:07.04,0:24:08.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}能够查明如何找到那个软件{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}can figure out how to find it.{\r}
+Dialogue: 0,0:24:08.60,0:24:10.43,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}因为蜂群是突然出现在{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Because the swarm suddenly appeared{\r}
+Dialogue: 0,0:24:10.50,0:24:12.66,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Hornet的雷达上 所以很明显蜂群{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}on the Hornet's radar, it's clear that it wasn't moving{\r}
+Dialogue: 0,0:24:12.68,0:24:14.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不是大规模移动到袭击地点{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}as one mass to the attack location.{\r}
+Dialogue: 0,0:24:14.20,0:24:16.48,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}发送蜂群的人也足够精明地采取分散发送的方式{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And whoever sent it was smart enough to send it separately{\r}
+Dialogue: 0,0:24:16.50,0:24:18.50,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后在最后时刻将其集结成群{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and then have it clump together at the last minute.{\r}
+Dialogue: 0,0:24:18.53,0:24:19.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是的 所以 我们计算了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Right. So, we calculated that...{\r}
+Dialogue: 0,0:24:19.97,0:24:21.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他计算的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}He calculated.{\r}
+Dialogue: 0,0:24:21.11,0:24:22.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧 我计算的 那个 每一架小型无人机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay, I calculated, that the, uh, battery life{\r}
+Dialogue: 0,0:24:22.98,0:24:25.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}电池能够维持五英里的飞行{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}on one of these drones is worth about five miles of flight,{\r}
+Dialogue: 0,0:24:25.61,0:24:28.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果我们能够增强那个区域可用的雷达{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}so if we could enhance the available radar in that zone,{\r}
+Dialogue: 0,0:24:28.62,0:24:30.98,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们就能够捕捉到无人机的行进路线{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}we should be able to pick up the trail of the drones{\r}
+Dialogue: 0,0:24:31.05,0:24:32.85,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后反追踪到无人机发射的地方{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and track them back to the launch site.{\r}
+Dialogue: 0,0:24:32.92,0:24:35.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这是Hornet的雷达 增强{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}This is the Hornet's radar, enhanced.{\r}
+Dialogue: 0,0:24:37.49,0:24:39.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后关联上当地气象雷达 增强{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Which leads us to the local weather Doppler, enhanced.{\r}
+Dialogue: 0,0:24:41.43,0:24:42.86,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后关联{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Which leads us to...{\r}
+Dialogue: 0,0:24:43.90,0:24:45.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}当地的空中管制服务{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}local ATCs.{\r}
+Dialogue: 0,0:24:45.30,0:24:46.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后就是这些线了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And these threads,{\r}
+Dialogue: 0,0:24:46.60,0:24:48.08,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这些都是无人机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}they're all drones that were sent out{\r}
+Dialogue: 0,0:24:48.14,0:24:50.22,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}像是从向西的方向过来的 但是他们最初{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}in a more westerly direction, but they all originated{\r}
+Dialogue: 0,0:24:50.24,0:24:51.67,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是来自于同一个位置 这里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}from the same site, right here.{\r}
+Dialogue: 0,0:24:52.61,0:24:53.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Algiers{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Algiers.{\r}
+Dialogue: 0,0:24:53.94,0:24:55.21,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}现在 雷达不能够精确地{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Now, radar's not precise enough{\r}
+Dialogue: 0,0:24:55.28,0:24:56.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}给我们提供具体位置{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}to give us a specific location,{\r}
+Dialogue: 0,0:24:56.81,0:24:59.21,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但我们还是能够将范围缩小到四至五个街区{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}but we can narrow it down to four or five blocks.{\r}
+Dialogue: 0,0:24:59.28,0:25:01.28,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}让Patton开始搜寻那些买家{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Have Patton start searching for the buyers.{\r}
+Dialogue: 0,0:25:01.35,0:25:04.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我来给新奥尔良警局打电话 让他们帮助我们搜查目标地区{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'll call NOPD, have them help us search our target area.{\r}
+Dialogue: 0,0:25:04.19,0:25:05.42,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}All right.{\r}
+Dialogue: 0,0:25:08.79,0:25:10.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这是实际上的降职{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's effectively a demotion{\r}
+Dialogue: 0,0:25:10.36,0:25:11.93,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}对他们俩来说都是 但是他可以选择{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}for both of them, but he got to choose.{\r}
+Dialogue: 0,0:25:11.99,0:25:13.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}尽管Hannah和我不是那么亲密{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And even though Hannah and I aren't super tight,{\r}
+Dialogue: 0,0:25:13.76,0:25:15.86,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我仍感到我亏欠她一些姐妹上的支持{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I feel like I owe her a little... little sister power{\r}
+Dialogue: 0,0:25:15.93,0:25:17.20,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}她正在经历人生低谷{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}while she's going through this shit.{\r}
+Dialogue: 0,0:25:17.27,0:25:19.20,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你知道我在说什么吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You know what I'm saying?{\r}
+Dialogue: 0,0:25:19.27,0:25:20.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗨{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Hello?{\r}
+Dialogue: 0,0:25:20.80,0:25:22.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你不打算说点什么吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You gonna say anything or what?{\r}
+Dialogue: 0,0:25:22.14,0:25:24.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}什么 我喜欢Pride 我喜欢Hannah 我觉得他俩{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What... I like Pride, I like Hannah. I think they're both{\r}
+Dialogue: 0,0:25:24.40,0:25:26.44,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在工作上都特别出色 我觉得能和他俩共事是我的幸运{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}great at their jobs, I feel lucky to work with them.{\r}
+Dialogue: 0,0:25:26.50,0:25:28.94,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这是你发表得最无力的宣言了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That's the limpest thing you've ever uttered.{\r}
+Dialogue: 0,0:25:29.01,0:25:31.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}听着 我知道你对这些有着很强烈的情绪{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Look, I know that you have very strong feelings about this...{\r}
+Dialogue: 0,0:25:31.61,0:25:32.66,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是 是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah. Yeah.{\r}
+Dialogue: 0,0:25:32.68,0:25:34.61,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我只是 我不想让你生我的气{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}...and I just, I don't want you to get mad at me.{\r}
+Dialogue: 0,0:25:34.65,0:25:35.75,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}生你的气 为什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Get mad at you? For what?{\r}
+Dialogue: 0,0:25:35.82,0:25:37.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}因为你决定要提出不同的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Because you decide to have a controversial{\r}
+Dialogue: 0,0:25:37.62,0:25:39.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}甚至可能是愚蠢的观点吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and perhaps boneheaded opinion?{\r}
+Dialogue: 0,0:25:39.45,0:25:40.99,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-什么啊 不是 -好吧看吧 就是这样{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- What? No. - Okay, see, right there?{\r}
+Dialogue: 0,0:25:41.06,0:25:43.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-那就是你 那就是你生气的样子 -我 我没生气{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- That's you, that's you getting mad. - Me? I'm not mad.{\r}
+Dialogue: 0,0:25:43.15,0:25:45.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-你现在就是在生气 -我不生气 我一点都不生气{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- You're getting mad right now. - I'm not mad. I'm not mad at all.{\r}
+Dialogue: 0,0:25:45.41,0:25:47.33,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们聊得越多 就越 嘘{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}The more we're talking about it, the more... Shh.{\r}
+Dialogue: 0,0:25:47.35,0:25:48.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那个配电板{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That electrical panel,{\r}
+Dialogue: 0,0:25:48.80,0:25:50.50,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}对那个仓库来说 实在太精致了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}it's awfully fancy for that warehouse.{\r}
+Dialogue: 0,0:25:50.57,0:25:52.65,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}看上去能提供的电能会远高于普通照明设备{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Seems like more power than you'd need for just lights{\r}
+Dialogue: 0,0:25:52.71,0:25:53.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}和传送带{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and a conveyor belt.{\r}
+Dialogue: 0,0:25:53.95,0:25:55.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}All right.{\r}
+Dialogue: 0,0:26:20.09,0:26:21.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}检查下这个{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Check this...{\r}
+Dialogue: 0,0:26:22.70,0:26:23.86,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Tammy{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Tammy?{\r}
+Dialogue: 0,0:26:23.93,0:26:25.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}别动{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Don't move.{\r}
+Dialogue: 0,0:26:25.43,0:26:27.17,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What?{\r}
+Dialogue: 0,0:26:31.17,0:26:32.71,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}快跑{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Run!{\r}
+Dialogue: 0,0:26:46.39,0:26:47.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧 机器赢了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}All right. The machines win.{\r}
+Dialogue: 0,0:26:47.79,0:26:49.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我不计较电影里发生的事了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I don't care what happens in the movies.{\r}
+Dialogue: 0,0:26:49.46,0:26:50.70,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well,{\r}
+Dialogue: 0,0:26:50.76,0:26:53.10,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}它们肯定是动作感应的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}they got to be motion-activated.{\r}
+Dialogue: 0,0:26:53.17,0:26:54.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-是 -也就是说{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Right. - Which means{\r}
+Dialogue: 0,0:26:54.43,0:26:55.70,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}控制它们的人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}that whoever controls them{\r}
+Dialogue: 0,0:26:55.77,0:26:57.60,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}肯定有什么方法能够关掉它们{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}has to have some way to turn them off{\r}
+Dialogue: 0,0:26:57.67,0:26:59.71,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这样他们进入车间时就不会遭受枪击{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}so they don't get shot when they enter the workshop.{\r}
+Dialogue: 0,0:26:59.73,0:27:02.01,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧 那么 你知道它们是怎么运行的么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay. Well, you have any idea how that might work?{\r}
+Dialogue: 0,0:27:02.07,0:27:04.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-当然不知道 -嘘{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Of course not. - Shh...{\r}
+Dialogue: 0,0:27:04.48,0:27:05.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}该死 我没有信号{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Damn it, I have no signal.{\r}
+Dialogue: 0,0:27:05.95,0:27:07.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那兴许是件好事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, that might be for the best.{\r}
+Dialogue: 0,0:27:07.41,0:27:10.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果有人发现这里发生了什么 我们也许没法活着出去了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}If anyone found out what's happening here, we'd never live it down.{\r}
+Dialogue: 0,0:27:10.18,0:27:11.46,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧 快想想有什么高明的主意{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}All right, well, come up with something clever{\r}
+Dialogue: 0,0:27:11.48,0:27:13.02,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}让我们离开这里 我们会没事的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and get us out of here. We'll be fine.{\r}
+Dialogue: 0,0:27:13.09,0:27:14.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}哦 好 是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Oh, okay, yeah.{\r}
+Dialogue: 0,0:27:14.95,0:27:16.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是 是 好 可以{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah. Yeah. All right. Oh... sure.{\r}
+Dialogue: 0,0:27:16.39,0:27:18.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-开始思考 -我知道 好的 是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Get to thinking. - I got it. All right. So, yeah.{\r}
+Dialogue: 0,0:27:18.16,0:27:19.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-它们是动作感应的 对吧 -是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- They're motion-sensitive, right? - Yeah.{\r}
+Dialogue: 0,0:27:19.82,0:27:22.19,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以我们只需要 给它们一些动作{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}So-so we just got to, we got to give them some motion.{\r}
+Dialogue: 0,0:27:22.26,0:27:23.78,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}呃 可能是模板算法{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Uh, it's probably a template algorithm{\r}
+Dialogue: 0,0:27:23.81,0:27:25.86,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以它们能够从阴影中识别人脸{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}so they can differentiate a face from a shadow.{\r}
+Dialogue: 0,0:27:25.93,0:27:28.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-是吗 -根据它们的大小{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Yeah. - And based on their size,{\r}
+Dialogue: 0,0:27:28.13,0:27:30.44,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}它们可能只能实现单次装载{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}they can probably only carry a single load.{\r}
+Dialogue: 0,0:27:30.50,0:27:32.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}它们不得不在三到四英尺间{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}They must have to be within three or four feet{\r}
+Dialogue: 0,0:27:32.33,0:27:34.14,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}进行射击才能有一定准确度{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}to shoot with any accuracy.{\r}
+Dialogue: 0,0:27:34.21,0:27:36.44,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我数了一下 十架无人机 开了六枪{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And I counted ten drones, six shots.{\r}
+Dialogue: 0,0:27:36.51,0:27:39.14,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-是五枪 -五枪{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Five. Yeah. - Five shots. So...{\r}
+Dialogue: 0,0:27:39.21,0:27:41.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以就用你的手机拍一下你的脸{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just take a picture of your face with your phone,{\r}
+Dialogue: 0,0:27:41.61,0:27:43.62,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后从这里滑出去{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and then just slide it in there.{\r}
+Dialogue: 0,0:27:43.68,0:27:45.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}诱骗无人机去右边空旷的区域{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Cheat it to the right, to the open area,{\r}
+Dialogue: 0,0:27:45.62,0:27:47.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}然后 那些还未开枪的无人机就能行动了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and then, the drones with the live charges,{\r}
+Dialogue: 0,0:27:47.35,0:27:48.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}希望它们会开枪{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}hopefully they react.{\r}
+Dialogue: 0,0:27:49.86,0:27:51.92,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不行 不能用我的手机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No. Not my phone.{\r}
+Dialogue: 0,0:27:51.99,0:27:53.60,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}别呀 你知道我刚买的手机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Come on, you know I just got this phone.{\r}
+Dialogue: 0,0:27:53.63,0:27:54.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我旅游照片都在里面{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I got all my vacation pictures on here.{\r}
+Dialogue: 0,0:27:54.83,0:27:56.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我还没有下载{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I still haven't downloaded them.{\r}
+Dialogue: 0,0:27:56.20,0:27:58.66,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以我让你用云存储{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}This is why I told you about cloud storage.{\r}
+Dialogue: 0,0:27:58.73,0:27:59.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我不关心这点 我很忙的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I don't care. I'm busy.{\r}
+Dialogue: 0,0:27:59.97,0:28:01.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只是想让你生活更简单一点{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just trying to make your life simpler.{\r}
+Dialogue: 0,0:28:05.20,0:28:06.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我觉得应该多一点...{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Think I should do one that's a little more...{\r}
+Dialogue: 0,0:28:06.99,0:28:08.62,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我觉得可以了 -不 这不...{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- I think it's fine. - No, that's not...{\r}
+Dialogue: 0,0:28:08.65,0:28:11.34,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-Sebastian -好吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Sebastian. - Okay, all right.{\r}
+Dialogue: 0,0:28:12.85,0:28:14.48,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}只要...{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just...{\r}
+Dialogue: 0,0:28:20.15,0:28:21.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那些玩意儿很聪明 老兄{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}These things are clever, man.{\r}
+Dialogue: 0,0:28:21.55,0:28:23.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-嗯 -对 你手机 上{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Yeah. - All right. Your phone. Go.{\r}
+Dialogue: 0,0:28:24.02,0:28:25.10,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你在说什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What are you talking about?{\r}
+Dialogue: 0,0:28:25.13,0:28:26.32,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果剩下的两个只有一个开枪了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What do we do{\r}
+Dialogue: 0,0:28:26.39,0:28:29.03,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}或者不开枪呢 我们要怎么办{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}if only one of them shoots, or-or none?{\r}
+Dialogue: 0,0:28:29.10,0:28:31.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那就等电池耗尽 你手机 上{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Then we wait for the batteries to run out. Your phone, go.{\r}
+Dialogue: 0,0:28:31.40,0:28:33.26,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不行 那我们等{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No. Then we wait.{\r}
+Dialogue: 0,0:28:33.33,0:28:35.33,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}或者{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Or, uh...{\r}
+Dialogue: 0,0:28:41.74,0:28:42.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你在干嘛{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What are you doing?{\r}
+Dialogue: 0,0:28:45.21,0:28:47.61,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}等一会儿{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just wait a second.{\r}
+Dialogue: 0,0:28:52.45,0:28:53.62,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What...?{\r}
+Dialogue: 0,0:28:53.69,0:28:55.52,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我有点看不懂... -闭嘴{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- I'm not really seeing the... - Shut up!{\r}
+Dialogue: 0,0:28:55.59,0:28:56.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你的计划{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}...plan here.{\r}
+Dialogue: 0,0:29:02.26,0:29:03.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay.{\r}
+Dialogue: 0,0:29:03.43,0:29:04.43,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}All right.{\r}
+Dialogue: 0,0:29:07.37,0:29:08.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-你需要我帮忙吗 -嗯{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- You need me to help? - Yeah.{\r}
+Dialogue: 0,0:29:08.60,0:29:09.93,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}把那个东西拿过来{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Grab that thing over there.{\r}
+Dialogue: 0,0:29:13.61,0:29:14.94,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-快 -好了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Come on. - Okay, all right.{\r}
+Dialogue: 0,0:29:19.78,0:29:21.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你在干嘛 再帮我挡点{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What are you doing? Cover me more.{\r}
+Dialogue: 0,0:29:21.98,0:29:23.15,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}什么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What...?{\r}
+Dialogue: 0,0:29:23.22,0:29:25.82,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}天{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}God.{\r}
+Dialogue: 0,0:29:35.66,0:29:37.66,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}一切顺利{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That went well.{\r}
+Dialogue: 0,0:29:47.61,0:29:48.84,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我没怎么见到过他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I haven't seen him much.{\r}
+Dialogue: 0,0:29:48.91,0:29:51.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}多数时候看到他从那个汉堡店{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Mostly when he's coming back with food{\r}
+Dialogue: 0,0:29:51.48,0:29:52.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}带着吃的回来{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}from that burger joint.{\r}
+Dialogue: 0,0:29:52.98,0:29:54.58,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我来开{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'll open it.{\r}
+Dialogue: 0,0:29:55.78,0:29:57.05,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我是他的哥哥 女士{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm his brother, ma'am.{\r}
+Dialogue: 0,0:29:57.12,0:29:58.72,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不想惹麻烦{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Not looking for trouble.{\r}
+Dialogue: 0,0:29:58.78,0:30:01.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那为什么不敲门{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Then why not knock?{\r}
+Dialogue: 0,0:30:01.42,0:30:03.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他可能不会立马认出我{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, he may not recognize me right away.{\r}
+Dialogue: 0,0:30:03.66,0:30:07.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}即使他认出来了 也不一定会把我当朋友{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And even if he does, he may not see me as a friend.{\r}
+Dialogue: 0,0:30:07.59,0:30:10.46,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我最好进行某种自我介绍{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's better if I set the terms of introduction.{\r}
+Dialogue: 0,0:30:13.33,0:30:16.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你应该离开{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And you should get gone.{\r}
+Dialogue: 0,0:30:31.48,0:30:33.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Cade{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Cade?{\r}
+Dialogue: 0,0:30:43.96,0:30:45.10,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Cade Lasalle在哪里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Where's Cade Lasalle?{\r}
+Dialogue: 0,0:30:45.16,0:30:46.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我不知道{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I don't know.{\r}
+Dialogue: 0,0:30:46.37,0:30:47.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-他在哪里 -我不知道{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Where is he? - I don't know!{\r}
+Dialogue: 0,0:30:49.00,0:30:52.17,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}等等 你是Christopher{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Wait. You're Christopher.{\r}
+Dialogue: 0,0:30:53.71,0:30:55.34,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你是他哥哥{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Y-You're his brother?{\r}
+Dialogue: 0,0:30:56.38,0:30:57.48,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yes, I am.{\r}
+Dialogue: 0,0:30:57.54,0:30:58.84,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我是Kelly{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm Kelly.{\r}
+Dialogue: 0,0:30:58.91,0:31:00.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这是我儿子 Will{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}This is my son, Will.{\r}
+Dialogue: 0,0:31:03.98,0:31:06.48,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Cade是我男朋友{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Cade's my boyfriend.{\r}
+Dialogue: 0,0:31:06.55,0:31:08.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}噢{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Oh.{\r}
+Dialogue: 0,0:31:08.55,0:31:11.32,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay.{\r}
+Dialogue: 0,0:31:11.39,0:31:12.99,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}中途宿舍的心理医生{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, the counselors at the halfway house{\r}
+Dialogue: 0,0:31:13.03,0:31:14.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}很担心他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}were worried about him.{\r}
+Dialogue: 0,0:31:14.66,0:31:16.46,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我过来看看他有没有事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I was just checking to see if he's okay.{\r}
+Dialogue: 0,0:31:16.53,0:31:18.80,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们不知道他有没有事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We don't know if he's okay.{\r}
+Dialogue: 0,0:31:18.86,0:31:20.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他几天前带我们到这里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}He brought us here a couple of days ago.{\r}
+Dialogue: 0,0:31:20.93,0:31:23.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}说他要处理一点事情 然后就离开了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Said he had to go take care of something and he left.{\r}
+Dialogue: 0,0:31:25.17,0:31:27.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}从那之后就没音讯了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We haven't heard from him since.{\r}
+Dialogue: 0,0:31:32.41,0:31:33.78,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 好的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah. Will do.{\r}
+Dialogue: 0,0:31:33.85,0:31:35.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你们有什么发现{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What do you got?{\r}
+Dialogue: 0,0:31:35.51,0:31:37.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在工作室里发现了这个{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Found this in the workshop.{\r}
+Dialogue: 0,0:31:39.45,0:31:39.83,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好的 "事件视界"{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay, "Event Horizon".{\r}
+Dialogue: 0,0:31:39.83,0:31:41.22,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好的 "事件视界"{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay, "Event Horizon".{\r}
+Dialogue: 0,0:31:41.22,0:31:45.40,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}事件视界，又名亦称事件穹界，是一种时空的曲隔界线{\r}
+Dialogue: 0,0:31:41.25,0:31:42.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯 视界中{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah, it's the, uh, boundary{\r}
+Dialogue: 0,0:31:42.83,0:31:45.40,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}任何的事件皆无法对视界外的观察者产生影响{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}defining where an event can't affect anyone beyond it.{\r}
+Dialogue: 0,0:31:47.29,0:31:48.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这是一艘船{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Uh, so, it's a boat.{\r}
+Dialogue: 0,0:31:48.79,0:31:50.40,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}超极书呆子船{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah, a super nerd boat.{\r}
+Dialogue: 0,0:31:54.73,0:31:55.78,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}别玩了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Stop it.{\r}
+Dialogue: 0,0:31:55.80,0:31:57.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我只是想搞清楚这玩意儿怎么运作的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm just trying to figure out how these things work.{\r}
+Dialogue: 0,0:31:59.10,0:32:02.71,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这艘船在Andrew的继子Scott Sanders名下{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}The boat is registered to Scott Sanders, Andrew's stepson.{\r}
+Dialogue: 0,0:32:02.78,0:32:04.84,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}照片和制作无人机原型所需的材料{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And the photo was found in the workshop,{\r}
+Dialogue: 0,0:32:04.91,0:32:07.25,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}一起被放在了工作室里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}along with the materials needed to prototype the drones.{\r}
+Dialogue: 0,0:32:07.31,0:32:08.59,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}"事件视界"是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah, "Event Horizon" was a name{\r}
+Dialogue: 0,0:32:08.65,0:32:11.22,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Paradiso科技公司废弃项目列表中的一个名字{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}on the Paradiso Technologies' abandoned projects list.{\r}
+Dialogue: 0,0:32:11.28,0:32:13.75,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}它是仅有的几个没有内部诉求{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's one of the only ones that wasn't pursued internally{\r}
+Dialogue: 0,0:32:13.82,0:32:15.25,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}和资产分派变成独立公司的项目{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}or spun off into its own company.{\r}
+Dialogue: 0,0:32:15.32,0:32:17.06,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们认为这是不可能的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We just assumed it wasn't viable.{\r}
+Dialogue: 0,0:32:17.12,0:32:19.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}或许Andrew Pruitt不想往里投钱{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But maybe Andrew Pruitt didn't want a part of it,{\r}
+Dialogue: 0,0:32:19.43,0:32:21.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以他让Scott停手了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}so he shut Scott down.{\r}
+Dialogue: 0,0:32:21.46,0:32:24.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}貌似这个动机不足以杀了你的继父{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, seems like a thin motive for killing your stepfather.{\r}
+Dialogue: 0,0:32:24.06,0:32:27.43,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Andrew因为Paradiso所有的一切而被视为天才{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Andrew is seen as the genius behind everything Paradiso does.{\r}
+Dialogue: 0,0:32:27.50,0:32:30.17,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Scott获得了加州理工学院的博士学位后{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And with Scott having a PhD to Caltech,{\r}
+Dialogue: 0,0:32:30.24,0:32:31.87,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}就被聘用为市场经理{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}he was hired as a marketing manager{\r}
+Dialogue: 0,0:32:31.94,0:32:34.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但这个公司并不做市场营销{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}for a company who doesn't do marketing.{\r}
+Dialogue: 0,0:32:34.14,0:32:36.17,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}根据他母亲的说法{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}According to his mom, things have been frosty{\r}
+Dialogue: 0,0:32:36.24,0:32:38.84,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}过去几周Scott和Andrew的关系一直很冷淡{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}between Scott and Andrew for the past couple of weeks.{\r}
+Dialogue: 0,0:32:38.91,0:32:41.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以这孩子想让他的无人机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}So the kid's thinking his drone technology's{\r}
+Dialogue: 0,0:32:41.41,0:32:44.62,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}为他大赚一笔 但是他的继父决定把它交给{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}a ticket to a big payday, but when his stepdad decides{\r}
+Dialogue: 0,0:32:44.68,0:32:46.92,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}国防高级研究计划局 他忍无可忍了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}to give it to DARPA, he's had enough.{\r}
+Dialogue: 0,0:32:46.99,0:32:48.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}而且现在我们找不到他人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Add to that that we can't find him.{\r}
+Dialogue: 0,0:32:48.95,0:32:50.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他不在家 不在Paradiso公司{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}He's not at home, he's not at Paradiso,{\r}
+Dialogue: 0,0:32:50.54,0:32:51.72,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他手机也没踪迹{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}his phone's not pinging.{\r}
+Dialogue: 0,0:32:51.79,0:32:53.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那我们去找他吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, let's get to it.{\r}
+Dialogue: 0,0:32:53.16,0:32:54.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们需要追踪他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We need to track him down{\r}
+Dialogue: 0,0:32:54.76,0:32:56.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}赶在他联系到想要这个技术的买家之前找到他{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}before he connects with a buyer for that technology.{\r}
+Dialogue: 0,0:32:56.96,0:32:58.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}All right.{\r}
+Dialogue: 0,0:33:01.30,0:33:02.47,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}哟{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yo.{\r}
+Dialogue: 0,0:33:02.53,0:33:04.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果你再玩那个无人机 我就用它{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm gonna cut your nose hairs with that drone{\r}
+Dialogue: 0,0:33:04.32,0:33:05.52,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}把你的鼻毛剪下来{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}if you don't stop.{\r}
+Dialogue: 0,0:33:06.94,0:33:08.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}有什么消息{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Anything yet?{\r}
+Dialogue: 0,0:33:08.14,0:33:09.54,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我刚想给你打电话{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I was just about to call you.{\r}
+Dialogue: 0,0:33:09.61,0:33:11.21,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这些军火商其中一个在Bosnia{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}One of those arms dealers is in Bosnia,{\r}
+Dialogue: 0,0:33:11.28,0:33:13.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}在一个中餐馆吃饭{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}having dinner at a Chinese restaurant.{\r}
+Dialogue: 0,0:33:13.11,0:33:15.48,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}另一位像乌鸦一样直飞新奥尔良{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}The other one is flying like a crow towards New Orleans.{\r}
+Dialogue: 0,0:33:15.55,0:33:16.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他会在哪里着陆{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What airport is he landing at?{\r}
+Dialogue: 0,0:33:16.95,0:33:19.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}根据他的飞行路径{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Based on his flight path...{\r}
+Dialogue: 0,0:33:19.95,0:33:21.09,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Jefferson机场 25分钟后{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Jefferson, 25 minutes.{\r}
+Dialogue: 0,0:33:21.15,0:33:23.15,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}干得漂亮{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Good work.{\r}
+Dialogue: 0,0:33:51.55,0:33:52.65,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我拿到有效ID了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I got a positive ID.{\r}
+Dialogue: 0,0:33:52.72,0:33:54.65,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是Yuri Gjonka{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That's Yuri Gjonka.{\r}
+Dialogue: 0,0:33:54.72,0:33:56.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}瞧瞧那精美的黑市丝绒{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That's some fine black market velour.{\r}
+Dialogue: 0,0:33:56.76,0:33:58.16,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}有人看到{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Anyone have eyes{\r}
+Dialogue: 0,0:33:58.22,0:33:59.56,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Sanders或者他的无人机吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}on Sanders or his drones?{\r}
+Dialogue: 0,0:34:01.03,0:34:02.76,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}他在机库里那架双引擎飞机里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah, he's in the prop plane in the hangar.{\r}
+Dialogue: 0,0:34:08.70,0:34:12.17,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}看紧了 我们得确保他随身带着无人机{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Sit tight. We need to make sure he's got his drones with him.{\r}
+Dialogue: 0,0:34:26.94,0:34:28.54,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}给坏人的小贴士{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Note to bad guy:{\r}
+Dialogue: 0,0:34:28.61,0:34:29.92,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}别把遥控器{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}don't leave the controller{\r}
+Dialogue: 0,0:34:29.95,0:34:32.47,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}放在你的工作台上留给你的终结者{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}for your Terminator on your workbench.{\r}
+Dialogue: 0,0:34:40.47,0:34:42.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-Sebastian -我知道了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Sebastian? - I got it.{\r}
+Dialogue: 0,0:34:52.88,0:34:53.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}NCIS{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}NCIS!{\r}
+Dialogue: 0,0:34:53.98,0:34:55.18,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}放下你的武器{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Drop your weapon!{\r}
+Dialogue: 0,0:34:55.25,0:34:56.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}现在把手举起来{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Hands in the air, now!{\r}
+Dialogue: 0,0:35:09.63,0:35:11.06,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Sebastian{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Sebastian!{\r}
+Dialogue: 0,0:35:11.13,0:35:12.63,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}收到{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah.{\r}
+Dialogue: 0,0:35:15.77,0:35:17.60,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}扔了它{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Drop it.{\r}
+Dialogue: 0,0:35:30.02,0:35:32.92,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你应该给它装个枪套{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You should get a holster for that thing.{\r}
+Dialogue: 0,0:35:48.65,0:35:49.65,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}进去{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Get in.{\r}
+Dialogue: 0,0:35:51.15,0:35:53.05,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嘿{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Hey.{\r}
+Dialogue: 0,0:35:57.02,0:35:59.32,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-有人知道这人是谁吗 -不知道{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Anybody know who that is? - Nope.{\r}
+Dialogue: 0,0:36:10.41,0:36:12.11,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Hannah{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Hannah?{\r}
+Dialogue: 0,0:36:14.24,0:36:15.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}特别探员Khoury{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Special Agent Khoury.{\r}
+Dialogue: 0,0:36:15.87,0:36:17.64,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}怎么了 Winchester{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What's going on, Winchester?{\r}
+Dialogue: 0,0:36:17.67,0:36:21.31,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们正在帮你们 接手这项调查{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We're helping you out. Taking over this investigation.{\r}
+Dialogue: 0,0:36:21.38,0:36:24.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}什么调查 我们已经在做收尾工作了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}What investigation? We've wrapped this up already.{\r}
+Dialogue: 0,0:36:25.38,0:36:27.22,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你要看搜查令吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}You need to see a warrant?{\r}
+Dialogue: 0,0:36:32.52,0:36:34.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不 做你该做的吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No. Do what you do.{\r}
+Dialogue: 0,0:37:05.02,0:37:06.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}没别的东西了吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}That it?{\r}
+Dialogue: 0,0:37:06.39,0:37:07.56,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯哼{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Mm-hmm.{\r}
+Dialogue: 0,0:37:11.86,0:37:13.03,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}谢谢{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Thank you.{\r}
+Dialogue: 0,0:37:13.10,0:37:14.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}别客气{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah.{\r}
+Dialogue: 0,0:37:21.37,0:37:23.81,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那人是谁{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Who's that guy?{\r}
+Dialogue: 0,0:37:23.88,0:37:26.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}一个超级神秘的混蛋{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}A super secret ass.{\r}
+Dialogue: 0,0:37:28.45,0:37:30.88,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那么{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well...{\r}
+Dialogue: 0,0:37:30.95,0:37:33.22,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好消息是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}good news is...{\r}
+Dialogue: 0,0:37:33.29,0:37:35.36,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}没有书面报告要写了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}no paperwork.{\r}
+Dialogue: 0,0:37:35.42,0:37:36.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}太棒了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yessssss.{\r}
+Dialogue: 0,0:37:50.64,0:37:54.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Roy帮我 呃 把东西都挪了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Roy helped me, uh, move it all.{\r}
+Dialogue: 0,0:37:59.64,0:38:02.01,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我知道这需要点时间来适应{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I know this is gonna take some adjusting.{\r}
+Dialogue: 0,0:38:02.08,0:38:04.02,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你想怎么去感受{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}And you can feel about it{\r}
+Dialogue: 0,0:38:04.08,0:38:06.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}都随你{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}any way you want.{\r}
+Dialogue: 0,0:38:06.45,0:38:08.52,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但我就是想说你是个非常好的探员{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But I'm just saying you're too good an agent{\r}
+Dialogue: 0,0:38:08.59,0:38:11.79,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不应该沦落到角落里的小桌子边上{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}to be sitting in a tiny desk in the corner.{\r}
+Dialogue: 0,0:38:12.82,0:38:15.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}没人会把宝贝晾在角落里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Nobody puts Baby in a corner.{\r}
+Dialogue: 0,0:38:15.79,0:38:17.03,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗯{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Mm.{\r}
+Dialogue: 0,0:38:19.66,0:38:21.63,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我们不必谈这个{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}We don't have to talk about it.{\r}
+Dialogue: 0,0:38:24.17,0:38:26.07,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但我没法{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But I couldn't...{\r}
+Dialogue: 0,0:38:26.14,0:38:28.11,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}心安理得{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}let it be.{\r}
+Dialogue: 0,0:38:40.32,0:38:42.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这招有效{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}This works.{\r}
+Dialogue: 0,0:38:43.89,0:38:45.82,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好吧{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay.{\r}
+Dialogue: 0,0:38:45.89,0:38:47.89,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Good.{\r}
+Dialogue: 0,0:39:13.89,0:39:15.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}噢 我们只是在做我们的工作而已{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Oh, we were just doing our job.{\r}
+Dialogue: 0,0:39:15.51,0:39:17.86,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我很高兴事情解决了 好的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm glad it worked out. All right.{\r}
+Dialogue: 0,0:39:17.92,0:39:20.42,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Meyer上尉恢复了她的飞行资格{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Lieutenant Meyer returned to flight status{\r}
+Dialogue: 0,0:39:20.44,0:39:22.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}甚至因她的巡逻工作受到了嘉奖{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}and even received commendation for her work on patrol.{\r}
+Dialogue: 0,0:39:22.40,0:39:23.49,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-真棒 -是啊{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Great. - Yep.{\r}
+Dialogue: 0,0:39:23.56,0:39:25.16,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我们去喝一杯吧 -Tammy{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Let's get a drink. - Tammy?{\r}
+Dialogue: 0,0:39:25.23,0:39:26.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-在 -我不是同性恋{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Yeah. - I'm not a lesbian.{\r}
+Dialogue: 0,0:39:27.03,0:39:29.33,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我知道 -那为什么我在一个女同酒吧里{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- I know. - Then why are we at a lesbian bar?{\r}
+Dialogue: 0,0:39:29.40,0:39:32.60,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}因为你需要融入新奥尔良市的精神{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Because you need to get into the New Orleans spirit already!{\r}
+Dialogue: 0,0:39:32.67,0:39:33.76,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-噢 -你知道吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Oh. - You know?{\r}
+Dialogue: 0,0:39:33.79,0:39:35.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}就好像这正是个以开放的心态对待{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Like, and this is the perfect place{\r}
+Dialogue: 0,0:39:35.27,0:39:38.31,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}不用计较结果的好地方{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}for opening up without investing in the outcome.{\r}
+Dialogue: 0,0:39:38.33,0:39:39.48,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我没感觉到啊{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I don't feel like that...{\r}
+Dialogue: 0,0:39:39.51,0:39:41.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}就当帮我个忙 放轻松{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just do me a favor. Relax.{\r}
+Dialogue: 0,0:39:41.37,0:39:41.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我去给我们拿 杯喝的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Let me get us a drink.{\r}
+Dialogue: 0,0:39:42.75,0:39:44.45,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}如果有人和你搭讪 正常应对就好{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}If someone talks to you, just act normal.{\r}
+Dialogue: 0,0:39:45.18,0:39:46.62,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}好的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Okay.{\r}
+Dialogue: 0,0:39:46.69,0:39:47.69,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-不错 -好的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Great. - Okay.{\r}
+Dialogue: 0,0:39:47.75,0:39:49.65,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}太疯狂了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Crazy.{\r}
+Dialogue: 0,0:39:49.72,0:39:51.46,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-嘿 Tammy -在{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- Hey, Tammy. - Yeah.{\r}
+Dialogue: 0,0:39:51.52,0:39:52.96,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}谢谢你{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Thank you.{\r}
+Dialogue: 0,0:39:53.02,0:39:55.03,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}乐意效劳{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Anytime.{\r}
+Dialogue: 0,0:39:56.96,0:39:58.16,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}打扰下{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Excuse me.{\r}
+Dialogue: 0,0:40:01.73,0:40:03.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嗨{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Hi.{\r}
+Dialogue: 0,0:40:05.54,0:40:07.37,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}噢{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Oh.{\r}
+Dialogue: 0,0:40:07.44,0:40:08.57,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我不是女同{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'm not a lesbian.{\r}
+Dialogue: 0,0:40:08.64,0:40:09.91,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}很好{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Good for you.{\r}
+Dialogue: 0,0:40:11.24,0:40:15.21,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以 "不是女同"女士 今晚怎么会来这儿{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}So, "not a lesbian", what brings you here tonight?{\r}
+Dialogue: 0,0:40:18.02,0:40:19.23,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我在杜兰大学的朋友{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}My friend{\r}
+Dialogue: 0,0:40:19.32,0:40:20.55,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}基本上确认了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}at Tulane basically confirmed{\r}
+Dialogue: 0,0:40:20.62,0:40:21.85,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我的想法{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}what I thought.{\r}
+Dialogue: 0,0:40:21.92,0:40:24.29,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}大计量的麦角酸二乙基酰胺(麻醉剂){\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}A massive dose of LSD{\r}
+Dialogue: 0,0:40:24.62,0:40:27.73,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}会影响我们的神经网络{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}could alter some neural networks,{\r}
+Dialogue: 0,0:40:27.79,0:40:30.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}使一些 呃 比如失去的记忆 浮现出来{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}loosen up, uh, memories that were lost.{\r}
+Dialogue: 0,0:40:30.60,0:40:32.00,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这正好解释了那个小女孩{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Which would explain the little girl{\r}
+Dialogue: 0,0:40:32.02,0:40:34.93,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但是 呃 解释不了穿红西装的那个人的情况{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}but, uh, not the guy in the red suit.{\r}
+Dialogue: 0,0:40:35.00,0:40:38.50,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}那么 可能是内心的疯狂被{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Well, might be that the craziness was stirred{\r}
+Dialogue: 0,0:40:38.57,0:40:40.24,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}毒品带动了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}by the drugs.{\r}
+Dialogue: 0,0:40:40.31,0:40:42.04,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}这是永久性的吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Is it permanent?{\r}
+Dialogue: 0,0:40:42.11,0:40:43.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}应该不是{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It shouldn't be.{\r}
+Dialogue: 0,0:40:43.58,0:40:45.61,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你确实能做一些事情来缓解症状{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}There are things you can do to help{\r}
+Dialogue: 0,0:40:45.68,0:40:47.44,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}比如说睡个好觉{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}as well as getting a better night's sleep.{\r}
+Dialogue: 0,0:40:47.51,0:40:48.78,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}是啊{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Yeah.{\r}
+Dialogue: 0,0:40:48.85,0:40:51.25,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我会给你她的联系方式{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I'll send you her contact information.{\r}
+Dialogue: 0,0:40:51.32,0:40:52.95,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}谢谢{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Thank you.{\r}
+Dialogue: 0,0:41:02.96,0:41:05.06,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}呃 嘿{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Huh. Hey.{\r}
+Dialogue: 0,0:41:05.13,0:41:06.53,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}King{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}King.{\r}
+Dialogue: 0,0:41:07.77,0:41:09.50,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-抱歉打扰你们 -没事{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- I'm sorry to interrupt. - No.{\r}
+Dialogue: 0,0:41:09.54,0:41:11.27,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你永远不会打扰到我们的 Chris{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}It's never an interruption, Chris.{\r}
+Dialogue: 0,0:41:11.34,0:41:12.97,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}你找到你哥哥了吗{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Did you find your brother?{\r}
+Dialogue: 0,0:41:14.01,0:41:15.41,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}没有{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}No.{\r}
+Dialogue: 0,0:41:15.47,0:41:17.18,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}但我找到了他相处了六个月的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}But I did find the woman he's been seeing{\r}
+Dialogue: 0,0:41:17.22,0:41:20.38,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}女士和她十几岁的儿子{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}for six months and her teenage son.{\r}
+Dialogue: 0,0:41:20.45,0:41:25.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}Cade把他们藏起来然后走了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Cade put them into hiding and then left.{\r}
+Dialogue: 0,0:41:29.69,0:41:32.12,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}听着 我做了些琥珀鱼 Loretta和我{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Look, I made some amberjack. Loretta and I were{\r}
+Dialogue: 0,0:41:32.19,0:41:34.33,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}正要吃 再加上你也足够了{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}just about to eat. There's more than enough for you.{\r}
+Dialogue: 0,0:41:34.35,0:41:35.39,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}过来一起坐{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Come sit down.{\r}
+Dialogue: 0,0:41:38.86,0:41:41.13,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-我该回去了 -去哪儿{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- I should get back. - Wh-Where?{\r}
+Dialogue: 0,0:41:41.20,0:41:43.10,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}-去阿拉巴马吗 -不 回家{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}- To Alabama? - No, my house.{\r}
+Dialogue: 0,0:41:43.17,0:41:45.84,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}因为我一点也不知道Cade到底卷进了什么麻烦{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I brought the two of them there to keep them safe{\r}
+Dialogue: 0,0:41:45.90,0:41:47.30,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}所以{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}since...{\r}
+Dialogue: 0,0:41:47.37,0:41:49.01,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}我就把她们母子俩{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}I don't have a clue{\r}
+Dialogue: 0,0:41:49.02,0:41:50.74,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}带到了我家以保证安全{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}what Cade got himself into.{\r}
+Dialogue: 0,0:41:50.81,0:41:52.51,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}进来坐{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Come on in.{\r}
+Dialogue: 0,0:41:52.58,0:41:54.28,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}就一会儿{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Just for a while.{\r}
+Dialogue: 0,0:41:54.35,0:41:57.48,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}进来坐 Chris 我们是家人{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Come on in, Chris. We're family.{\r}
+Dialogue: 0,0:41:57.69,0:42:00.35,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}来啊 我们可以好好谈谈的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Come on. We'll talk it through.{\r}
+Dialogue: 0,0:42:09.39,0:42:12.90,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}嘿 这是给你准备的{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Hey. Just in case you change your mind.{\r}
+Dialogue: 0,0:42:14.37,0:42:15.40,Default,,0000,0000,0000,,{\fnNoto Sans S Chinese Black\fs24\i0}谢谢{\r}\N{\fnNoto Sans S Chinese Medium\1c&H00FFFF&}Thank you.{\r}
