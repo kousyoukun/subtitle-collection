@@ -1,0 +1,777 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: YYeTs
+Original Script: YYeTs
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 0
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,微软雅黑,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,2,134
+
+[Events]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Dialogue: 0,0:00:00.50,0:00:05.50,Default,NTP,0,0,0,,{\an5\fad(0,500)\p1\bord2\shad0\fscx150\fscy160\alpha&566\c&H000000&\3c&HECB000&\move(145,272,145,252,0,500)\clip(30,213,340,235)\t(0,500,\clip(30,193,340,215))}m 211 -8 b 217 -6 217 -4 217 -2 l 217 24 b 217 26 217 29 211 31 l 31 31 b 26 29 26 26 26 24 l 26 -2 b 26 -4 26 -6 31 -8{\p0}
+Dialogue: 0,0:00:00.50,0:00:05.50,Default,NTP,0,0,0,,{\an5\fad(0,500)\p1\bord2\shad0\fscx150\fscy160\alpha&566\c&H000000&\3c&HECB000&\move(145,232,145,252,0,500)\clip(30,245,340,260)\t(0,500,\clip(30,265,340,280))}m 211 -8 b 217 -6 217 -4 217 -2 l 217 24 b 217 26 217 29 211 31 l 31 31 b 26 29 26 26 26 24 l 26 -2 b 26 -4 26 -6 31 -8{\p0}
+Dialogue: 0,0:00:00.50,0:00:05.50,Default,NTP,0,0,0,,{\an5\fad(0,500)\p1\bord3\blur3\shad0\fscx150\fscy0\t(0,400,\fscy160)\alpha&566\c&H000000&\pos(145,252)\clip(30,235,340,245)\t(0,500,\clip(30,215,340,265))}m 211 -8 b 217 -6 217 -4 217 -2 l 217 24 b 217 26 217 29 211 31 l 31 31 b 26 29 26 26 26 24 l 26 -2 b 26 -4 26 -6 31 -8{\p0}
+Dialogue: 1,0:00:01.00,0:00:05.50,Default,NTP,0,0,0,,{\fad(0,500)\bord0\shad0\blur5\t(0,500,\blur0)\fscx11\fscy14.5\p1\c&HCE8F00&\pos(67,248)}m 20 0 l 209 0 b 218 0 229 11 229 20 l 229 209 b 229 218 218 228 209 228 l 20 228 b 11 228 0 218 0 209 l 0 20 b 0 11 11 0 20 0{\p0}
+Dialogue: 3,0:00:01.00,0:00:05.50,Default,NTP,0,0,0,,{\fad(0,500)\bord0\shad0\blur5\t(0,500,\blur0)\fscx11\fscy14\p1\c&HF6DBA1&\pos(67,248)}m 115 64 l 115 35 l 171 0 l 177 0 l 133 46 l 143 52 l 179 0 l 184 0 l 159 63 l 229 107 l 229 182 l 145 96 l 135 122 l 207 227 l 137 227 l 115 172 l 115 93 l 126 76 l 115 64 l 104 76 l 115 93 l 115 172 l 93 227 l 23 227 l 95 122 l 84 96 l 0 182 l 0 107 l 70 63 l 45 0 l 50 0 l 87 52 l 97 46 l 52 0 l 59 0 l 115 35{\p0}
+Dialogue: 5,0:00:01.00,0:00:05.50,Default,NTP,0,0,0,,{\fad(0,500)\bord0\shad0\fscx15\fscy18\p1\c&HFFFFFF&\blur9\pos(58,238)}m 71 60 b 71 0 161 0 161 60 b 161 120 71 120 71 60{\p0}
+Dialogue: 1,0:00:01.00,0:00:05.50,Default,NTP,0,0,0,,{\fad(0,500)\bord0\shad0\blur5\t(0,500,\blur0)\fscx11\fscy14\p1\c&HECB000&\pos(84,248)}m 325 0 l 355 0 l 332 47 l 354 47 l 399 136 l 369 136 l 328 53 l 288 136 l 257 136 l 325 0 m 467 0 l 497 0 l 474 47 l 496 47 l 541 136 l 511 136 l 470 53 l 430 136 l 399 136 l 467 0 m 545 1 l 583 1 l 583 14 l 568 14 l 568 19 l 583 19 l 583 30 l 568 30 l 568 34 l 599 34 l 599 30 l 583 30 l 583 19 l 599 19 l 599 14 l 583 14 l 583 1 l 611 1 b 616 1 622 6 622 10 l 622 36 l 652 0 l 678 0 l 644 41 l 622 41 l 622 47 l 596 47 l 597 54 l 625 54 l 625 68 l 541 68 l 541 54 l 572 54 l 571 47 l 545 47 l 545 1 m 583 72 l 583 85 l 569 85 l 569 90 l 598 90 l 598 85 l 583 85 l 583 72 l 611 72 b 615 72 621 78 621 82 l 653 44 l 678 44 l 644 86 l 621 86 l 621 103 l 597 103 l 597 136 l 570 136 l 564 126 l 562 136 l 542 136 l 548 107 l 568 107 l 565 121 l 571 121 l 571 103 l 547 103 l 547 72 l 583 72 m 600 107 l 620 107 l 624 124 l 653 89 l 679 89 l 642 136 l 615 136 l 618 132 l 606 132 l 600 107 m 689 0 l 716 0 l 721 15 l 732 15 l 732 30 l 718 56 l 731 56 l 735 100 l 721 100 l 717 59 l 714 64 l 714 136 l 693 136 l 693 79 l 676 79 l 707 30 l 679 30 l 679 15 l 694 15 l 689 0 m 738 0 l 804 0 b 807 0 813 6 813 9 l 813 87 l 794 87 l 794 14 l 756 14 l 756 87 l 763 77 l 763 21 l 787 21 l 787 91 l 798 91 l 798 120 l 820 120 l 812 136 l 778 136 l 778 90 l 748 136 l 723 136 l 756 87 l 738 87 l 738 0 m 257 151 l 275 151 l 297 182 l 319 151 l 337 151 l 304 197 l 304 227 l 290 227 l 290 197 l 257 151 m 337 151 l 355 151 l 377 182 l 399 151 l 417 151 l 384 197 l 384 227 l 370 227 l 370 197 l 337 151 m 425 192 l 447 192 b 445 181 427 181 425 192 l 410 192 b 414 162 458 162 462 192 l 462 206 l 425 206 b 425 210 429 212 433 213 l 462 213 l 462 227 l 433 227 b 412 227 408 203 410 192 m 462 151 l 532 151 l 532 165 l 504 165 l 504 227 l 489 227 l 489 165 l 462 165 l 462 151 m 580 172 l 580 186 l 549 186 b 543 186 543 192 549 192 l 565 192 b 589 192 589 227 565 227 l 532 227 l 532 213 l 565 213 b 570 213 570 206 565 206 l 549 206 b 524 206 524 172 549 172 l 580 172 m 592 213 l 606 213 l 606 227 l 592 227 l 592 213 m 639 172 l 665 172 l 665 186 l 639 186 b 623 186 623 213 639 213 l 665 213 l 665 227 l 639 227 b 603 227 603 172 639 172 m 700 184 b 722 184 722 215 700 215 l 700 229 b 740 229 740 170 700 170 b 660 170 660 229 700 229 l 700 215 b 680 215 680 184 700 184 m 737 172 l 782 172 b 803 172 813 177 813 198 l 813 228 l 799 228 l 799 198 b 799 186 793 187 782 187 l 782 228 l 768 228 l 768 187 l 752 187 l 752 228 l 737 228 l 737 172{\p0}
+Dialogue: 1,0:00:01.00,0:00:05.50,Default,NTP,0,0,0,,{\fad(0,500)\fs16\bord0\shad0\blur5\t(0,500,\blur0)\b1\c&HECB000&\pos(99,267)}原创翻译  双语字幕
+Dialogue: 1,0:00:01.50,0:00:05.50,Default,NTP,0,0,0,,{\fad(0,500)\fn方正准圆_GBK\b1\bord0\shad0\fs17\pos(235.108,267)\K40}最新连载海外影视剧下载\N{\fs19\K30}请登陆 {\c&H26F4FF&\fn方正综艺简体\K30}www.YYeTs.com\N{\fn方正准圆_GBK\fs15\c&HFFFFFF&\K60}仅供学习  禁止用于任何商业盈利行为
+Dialogue: 0,0:00:05.50,0:00:40.50,Default,NTP,0000,0000,0000,,{\an9\bord0\shad0\shad0\fscx130\fscy170\frz180\p1\alpha&88\c&H000000&\b1\move(-180,235,70,235,0,500)\clip(49,215,304,257)}m 200 -1 l 200 13 l 19 13 b 14 12 14 6 14 6 b 14 6 14 0 19 -1{\p0}
+Dialogue: 0,0:00:05.50,0:00:40.50,Default,,0,0,0,,{\an2\fad(500,500)\bord0\shad0\shad0\fscx150\fscy170\p1\pos(26,238)\c&HECB000&\b1}m 38 -1 l 44 6 l 38 13 l 19 13 b 14 12 14 6 14 6 b 14 6 14 0 19 -1{\p0}
+Dialogue: 0,0:00:05.60,0:00:10.60,Default,NTP,0,0,0,,{\an4\fad(500,500)\bord0\shad0\fs18\pos(32,225)\fn方正准圆_GBK}翻 译     Z小花儿        长尾电阻
+Dialogue: 0,0:00:10.60,0:00:15.60,Default,NTP,0,0,0,,{\an4\fad(500,500)\bord0\shad0\fs18\pos(32,225)\fn方正准圆_GBK}翻 译     Lynn_宁        琦小果
+Dialogue: 0,0:00:15.60,0:00:20.60,Default,NTP,0,0,0,,{\an4\fad(500,500)\bord0\shad0\fs18\pos(32,225)\fn方正准圆_GBK}翻 译     迷失_绽放      八步半
+Dialogue: 0,0:00:20.60,0:00:25.60,Default,NTP,0,0,0,,{\an4\fad(500,500)\bord0\shad0\fs18\pos(32,225)\fn方正准圆_GBK}校 对     Santolalla
+Dialogue: 0,0:00:25.60,0:00:30.60,Default,NTP,0,0,0,,{\an4\fad(500,500)\bord0\shad0\fs18\pos(27,225)\fn方正准圆_GBK}时间轴    海默应援浪     海默迷妹念想查
+Dialogue: 0,0:00:30.60,0:00:35.60,Default,NTP,0,0,0,,{\an4\fad(500,500)\bord0\shad0\fs18\pos(32,225)\fn方正准圆_GBK}后 期     斯人
+Dialogue: 0,0:00:35.60,0:00:40.60,Default,NTP,0,0,0,,{\an4\fad(500,500)\bord0\shad0\fs18\pos(32,225)\fn方正准圆_GBK}总 监     夕橙
+Dialogue: 0,0:03:46.81,0:03:50.93,Default,,0,0,0,,{an8\b0\pos(183,215)\fad(500,500)\fn方正黑体_GBK\fs42\c&HFFFFFF&\3c&HBDC0BD&\2c&HFFFFFF&\4c&HBBBEBB&}良     医
+Dialogue: 0,0:03:46.81,0:03:50.93,Default,,0,0,0,,{an8\b0\pos(235,126)\fad(500,500)\fn方正黑体_GBK\fs22\c&HFFFFFF&\3c&HBDC0BD&\2c&HFFFFFF&\4c&HBBBEBB&}第一季  第七集
+Dialogue: 0,0:00:24.24,0:00:26.50,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}搞什么  系统崩溃了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Come on. Is the system down?
+Dialogue: 0,0:00:26.74,0:00:27.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我这儿没问题{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Worked fine for me.
+Dialogue: 0,0:00:28.86,0:00:30.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我等不了了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I don't have time for this.
+Dialogue: 0,0:00:30.77,0:00:31.63,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你怎么了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}How you doing?
+Dialogue: 0,0:00:31.83,0:00:33.24,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}电脑故障了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The computer is not working.
+Dialogue: 0,0:00:33.42,0:00:34.76,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我问的不是这个{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's not what I'm talking about.
+Dialogue: 0,0:00:35.40,0:00:36.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}知道  我没事{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I know. I'm fine.
+Dialogue: 0,0:00:37.00,0:00:38.85,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}有个病患因你的操作丧命{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}A patient died because of something you did.
+Dialogue: 0,0:00:38.85,0:00:42.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我想你现在绝对不是「没事」{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I think it's safe to say the one thing you are not is "Fine."
+Dialogue: 0,0:00:43.78,0:00:44.84,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我在调整{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm dealing.
+Dialogue: 0,0:00:45.21,0:00:46.79,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你到底在怎么调整{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}How exactly are you dealing?
+Dialogue: 0,0:00:46.89,0:00:48.67,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我在继续工作{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm getting back to work,
+Dialogue: 0,0:00:49.08,0:00:51.63,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}要给糖尿病变脚趾做清创{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I have a diabetic toe to debride,
+Dialogue: 0,0:00:51.64,0:00:54.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我已经放下了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and I'm putting it behind me.
+Dialogue: 0,0:00:54.07,0:00:56.36,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你是怎么做到放下的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}How do you do that -- put it behind you?
+Dialogue: 0,0:00:58.22,0:00:59.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}往前看啊{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}By moving forward.
+Dialogue: 0,0:01:00.54,0:01:02.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-谢谢你关心  -不用谢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- I appreciate your concern. - You're welcome.
+Dialogue: 0,0:01:02.39,0:01:05.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我给你预约一次心理咨询吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm gonna make an appointment for you for grief counseling.
+Dialogue: 0,0:01:05.52,0:01:09.58,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}莫翰医生  她很擅长给经历重压事件的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Dr. Mohan -- She's an expert in dealing with hospital staff
+Dialogue: 0,0:01:09.75,0:01:12.06,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}医务人员做心理疏导{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}who have experienced stressful events.
+Dialogue: 0,0:01:13.49,0:01:15.19,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没必要{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's not necessary.
+Dialogue: 0,0:01:15.24,0:01:17.50,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}那你同意自己遭遇「重压事件」了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You agree you had a "Stressful event"?
+Dialogue: 0,0:01:18.99,0:01:20.69,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}虽然我很欣慰{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And while I am comforted
+Dialogue: 0,0:01:20.69,0:01:24.35,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你说已经放下过去往前看了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}by your commitment to move forward by not looking back,
+Dialogue: 0,0:01:24.51,0:01:26.46,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但还是希望你去见见莫翰医生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I still want you to see Dr. Mohan.
+Dialogue: 0,0:01:27.23,0:01:28.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果她说你没事了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}If she says that you are fine,
+Dialogue: 0,0:01:28.88,0:01:31.38,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}只有那样  你才能重回手术台{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}then -- and only then -- can you go back to surgery.
+Dialogue: 0,0:01:32.07,0:01:32.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}系统现在好了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's working now.
+Dialogue: 0,0:01:32.96,0:01:34.38,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你得有耐心{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You just have to be patient.
+Dialogue: 0,0:01:41.40,0:01:42.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}心率36{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Heart rate 36.
+Dialogue: 0,0:01:42.98,0:01:45.26,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}再推十毫克吗啡  准备滴注硝酸甘油{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Push another five milligrams of morphine and prep a nitro drip.
+Dialogue: 0,0:01:45.26,0:01:46.99,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}立刻准备阿托品{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We need atropine on board stat.
+Dialogue: 0,0:01:47.11,0:01:47.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}什么情况{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What do you got for me?
+Dialogue: 0,0:01:47.95,0:01:49.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}心肌梗塞并伴有严重心动过缓{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}An MI with severe bradycardia.
+Dialogue: 0,0:01:49.66,0:01:51.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}注射了阿司匹林和硝酸甘油{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He's had aspirin, nitro,
+Dialogue: 0,0:01:51.34,0:01:53.54,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}现在打算给他注射实际量的阿托品{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and now we're trying to give him a real rate with atropine.
+Dialogue: 0,0:01:53.54,0:01:54.47,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}心脏科医生看过了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Cardiology see him?
+Dialogue: 0,0:01:54.47,0:01:55.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他的起搏器坏了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He's got a broken pacemaker
+Dialogue: 0,0:01:55.64,0:01:58.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}可能需要疏通他的冠状动脉{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and probably needs his coronary arteries cleared --
+Dialogue: 0,0:01:58.03,0:02:00.67,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}应该要做三支冠状动脉分流术  但你才是专家{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}feels like a triple bypass, but you're the expert.
+Dialogue: 0,0:02:00.68,0:02:02.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}心衰定量标志物太高了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}BNP is sky high.
+Dialogue: 0,0:02:03.25,0:02:04.41,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你看到了什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What do you see?
+Dialogue: 0,0:02:05.57,0:02:07.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他的心室几乎不能泵血了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}His ventricles are barely pumping.
+Dialogue: 0,0:02:08.04,0:02:10.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}有过两次严重的心肌梗塞{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He's had two massive prior MIs.
+Dialogue: 0,0:02:10.57,0:02:11.68,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}心力衰竭末期{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}End stage heart failure.
+Dialogue: 0,0:02:11.68,0:02:13.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他的心脏无法修复了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}His heart's way beyond repair.
+Dialogue: 0,0:02:13.48,0:02:14.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们该怎么做{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What are our options?
+Dialogue: 0,0:02:14.29,0:02:15.82,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他已经73岁了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He's 73 years old.
+Dialogue: 0,0:02:15.83,0:02:18.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这个年龄肯定没法获批做移植{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}His age is an absolute contraindication for transplant.
+Dialogue: 0,0:02:18.98,0:02:20.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-他要死了  -至少现在还没死{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- He's dying. - Well, he's not dead yet.
+Dialogue: 0,0:02:20.78,0:02:21.69,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}还有呢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What else?
+Dialogue: 0,0:02:21.81,0:02:24.14,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}心脏再同步化治疗如何{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}How about cardiac resynchronization?
+Dialogue: 0,0:02:24.42,0:02:26.53,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}让两边心室健康的部位能同步正常运行{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That will get what's left of both ventricles working together.
+Dialogue: 0,0:02:26.54,0:02:27.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}用双心室起搏器{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}A biventricular pacer?
+Dialogue: 0,0:02:27.92,0:02:31.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}可以让他在剩下的几个月里好受一些{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It should make him feel a little better in the few months he's got left.
+Dialogue: 0,0:02:32.63,0:02:34.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}心率再往下降  就会心脏骤停{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}His rate drops any lower, he'll arrest.
+Dialogue: 0,0:02:34.89,0:02:37.14,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}克莱尔  准备切开颈静脉安放临时起搏器{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Claire, prep his jugular to float in a temporary pacemaker.
+Dialogue: 0,0:02:37.14,0:02:38.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肖恩  通知导管室{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Shaun, call up to the cath lab
+Dialogue: 0,0:02:38.66,0:02:40.24,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}让他们预估多久才能准备好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and have them get an estimate on how long it'll take
+Dialogue: 0,0:02:40.24,0:02:41.88,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}双心室起搏器{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}to get the bi-pacer in house.
+Dialogue: 0,0:02:49.36,0:02:50.26,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}有问题吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Something wrong?
+Dialogue: 0,0:02:50.78,0:02:51.32,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没有{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Not at all.
+Dialogue: 0,0:02:51.33,0:02:53.48,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}只是早上咖啡喝多了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Just a little bit too much coffee this morning.
+Dialogue: 0,0:02:53.48,0:02:54.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}那继续  动手吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Let's go. Do it now.
+Dialogue: 0,0:03:05.78,0:03:07.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}绑住他{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Restraints, please!
+Dialogue: 0,0:03:07.15,0:03:08.73,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我可不想被针头扎伤{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I don't want to get stuck with a needle.
+Dialogue: 0,0:03:15.15,0:03:16.30,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们吓到他了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're scaring him.
+Dialogue: 0,0:03:23.08,0:03:24.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们吓到他了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're scaring him.
+Dialogue: 0,0:03:24.39,0:03:25.86,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}五毫克氟哌丁苯{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Haldol, five milligrams.
+Dialogue: 0,0:03:26.65,0:03:27.89,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们吓到他了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're scaring him!
+Dialogue: 0,0:03:28.01,0:03:30.43,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-你是谁  -肖恩·莫菲医生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- Who are you? - Dr. Shaun Murphy.
+Dialogue: 0,0:03:30.44,0:03:31.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这位病患有精神问题  莫菲医生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}This patient is psychotic, Dr. Murphy.
+Dialogue: 0,0:03:31.96,0:03:33.53,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他没有精神问题{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He's not psychotic.
+Dialogue: 0,0:03:35.86,0:03:37.69,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你不喜欢被别人碰{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You don't like people touching you.
+Dialogue: 0,0:03:41.48,0:03:43.53,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他没有精神问题  他有自闭症{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He's not psychotic. He's autistic.
+Dialogue: 0,0:04:01.00,0:04:03.28,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你是位非常配合的病患{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're being an excellent patient.
+Dialogue: 0,0:04:05.59,0:04:07.41,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好了  弄完了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Okay. We're finished.
+Dialogue: 0,0:04:08.29,0:04:11.17,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你跟我...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're s-same as...
+Dialogue: 0,0:04:11.67,0:04:12.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}一样{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}me.
+Dialogue: 0,0:04:14.12,0:04:15.65,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}可以松开他的手吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Can we release his hands?
+Dialogue: 0,0:04:17.47,0:04:18.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}莫菲医生  手能松开吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Dr. Murphy? His hands?
+Dialogue: 0,0:04:20.48,0:04:23.09,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我来了  孩子  爸爸妈妈来了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm here, son -- Mom and Dad are here.
+Dialogue: 0,0:04:23.65,0:04:25.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们可以松开他的手  他不会伤到你们{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You can let go of his hands. He won't hurt you.
+Dialogue: 0,0:04:30.13,0:04:33.00,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}下错站了  下错站了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Wrong stop. Wrong stop.
+Dialogue: 0,0:04:33.00,0:04:34.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}谁能告诉我发生了什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Can someone tell me what happened?
+Dialogue: 0,0:04:35.19,0:04:39.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}利亚姆的前额有5.4厘米的撕裂伤{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Liam has a 5.4 centimeter laceration on his forehead,
+Dialogue: 0,0:04:39.40,0:04:40.83,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}可能是摔倒了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}probably from a fall.
+Dialogue: 0,0:04:40.96,0:04:44.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}伤口用五毫升1%的利多卡因处理了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The wound was infiltrated with five milliliters of 1% lidocaine...
+Dialogue: 0,0:04:46.20,0:04:51.21,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}用5-0的普理灵缝线单点间断缝合了七针{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}7 -- 7 single-interrupted 5-0 Prolene sutures.
+Dialogue: 0,0:04:51.21,0:04:52.35,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}会留下小疤痕{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He will have a small scar,
+Dialogue: 0,0:04:52.35,0:04:54.93,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但伤口不会有其他长期影响{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}but no other long-term effects from this injury.
+Dialogue: 0,0:04:55.19,0:04:56.35,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你是我儿子的主治医生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're my son's doctor.
+Dialogue: 0,0:04:56.60,0:04:59.99,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}对  我是肖恩·莫菲  「恩赐」的「恩」{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I am. Dr. Shaun Murphy -- "Shaun" with a U.
+Dialogue: 0,0:04:59.99,0:05:02.93,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}迷路了  迷路了  迷路了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Got lost -- got lost, got lost, got lost, got lost!
+Dialogue: 0,0:05:02.93,0:05:07.41,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-对对  但你没事了  -迷路了  迷路了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- Yes, yes. Yes. But you're okay. - Got lost. Got lost, got lost.
+Dialogue: 0,0:05:07.41,0:05:09.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}以后不坐那趟公交了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You won't be taking that bus again.
+Dialogue: 0,0:05:09.30,0:05:10.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}灯光太亮了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}This light is too bright.
+Dialogue: 0,0:05:10.79,0:05:12.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这里让他很焦虑  我们能带他回家吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}These rooms make him anxious. Can we take him home?
+Dialogue: 0,0:05:12.97,0:05:13.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不行{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}No.
+Dialogue: 0,0:05:14.55,0:05:16.18,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你的儿子得黄疸了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Your son is jaundiced,
+Dialogue: 0,0:05:16.18,0:05:18.89,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}触摸和发热会让他的右腹肌肉紧张{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}clenching his right abdominal muscles when touched and febrile.
+Dialogue: 0,0:05:18.89,0:05:20.11,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他不能回家{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He should not go home.
+Dialogue: 0,0:05:31.33,0:05:32.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我怎么在这{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Why am I here?
+Dialogue: 0,0:05:33.03,0:05:34.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你的起搏器故障了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Your pacemaker malfunctioned.
+Dialogue: 0,0:05:35.34,0:05:36.42,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}心脏病发作了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You had a heart attack.
+Dialogue: 0,0:05:36.72,0:05:39.25,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我想我听得懂{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I...I think I get that part.
+Dialogue: 0,0:05:41.44,0:05:44.32,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你邻居的园丁看到你倒在屋里的地板上{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Your neighbor's gardener saw you on the ground inside your house --
+Dialogue: 0,0:05:44.72,0:05:47.13,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}于是报警  救了你一命{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}called 911, saved your life.
+Dialogue: 0,0:05:47.96,0:05:50.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}那我得记着谢谢他{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Well, I must remember to thank him.
+Dialogue: 0,0:05:53.10,0:05:54.50,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你多大了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}How old are you?
+Dialogue: 0,0:05:56.61,0:05:57.32,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Me?
+Dialogue: 0,0:05:57.66,0:05:59.55,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我知道我多大了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I know how old I am.
+Dialogue: 0,0:06:00.34,0:06:01.44,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}28岁{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm 28.
+Dialogue: 0,0:06:02.47,0:06:05.32,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们给你准备了双心室起搏器{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We have, uh, a biventricular pacer on its way,
+Dialogue: 0,0:06:05.32,0:06:06.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}会让你好受很多{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and it's gonna make you feel a lot better.
+Dialogue: 0,0:06:07.93,0:06:08.76,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Is it?
+Dialogue: 0,0:06:11.77,0:06:13.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我一会儿回来给你准备手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I will be back to prep you for surgery.
+Dialogue: 0,0:06:16.18,0:06:18.79,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}利亚姆的胆红素和肝酶都增高了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Liam has elevated bilirubin and liver enzymes,
+Dialogue: 0,0:06:18.79,0:06:20.88,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}白细胞23{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}a white cell count of 23.
+Dialogue: 0,0:06:21.57,0:06:25.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}腹部超声波结果显示胆管肿大{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Abdominal ultrasound shows dilatation of the bile ducts.
+Dialogue: 0,0:06:25.94,0:06:27.41,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}似乎是上行性胆道炎{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Sounds like ascending cholangitis --
+Dialogue: 0,0:06:27.42,0:06:30.65,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果细菌接触到血液  会引发败血症{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}can lead to sepsis if the bacteria gain access to his blood.
+Dialogue: 0,0:06:30.91,0:06:31.75,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他现在情况稳定吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Is he stable now?
+Dialogue: 0,0:06:31.75,0:06:34.27,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他的生命体征稳定{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yes, his vital signs are stable.
+Dialogue: 0,0:06:34.43,0:06:37.10,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}原因从癌症到不良饮食都有可能  所以...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Cause could be anything from cancer to diet, so --
+Dialogue: 0,0:06:37.10,0:06:39.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}利亚姆的父母为他选择了生酮饮食{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Liam's parents have him on a special ketogenic diet.
+Dialogue: 0,0:06:37.10,0:06:39.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}多用于治疗儿童难治性癫痫{\r}
+Dialogue: 0,0:06:39.96,0:06:42.63,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}高脂饮食可能会导致胆结石阻塞{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}High-fat diets can cause obstructive gallstones,
+Dialogue: 0,0:06:42.63,0:06:44.33,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}从而引发现在的症状{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}which could have set the whole thing off.
+Dialogue: 0,0:06:44.39,0:06:45.89,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}做个经内镜逆行性胰胆管造影术来查清楚{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Do an ERCP to clear him.
+Dialogue: 0,0:06:45.98,0:06:48.23,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}之后用几周广谱抗生素{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}After that, a few weeks of broad spectrum antibiotics
+Dialogue: 0,0:06:48.23,0:06:49.61,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}应该就没问题了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}should take care of things.
+Dialogue: 0,0:07:01.10,0:07:02.25,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}适应障碍筛查问卷{\r}
+Dialogue: 0,0:07:03.98,0:07:06.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是否难以集中注意力{\r}
+Dialogue: 0,0:07:08.53,0:07:10.47,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是否感到脱离人群{\r}
+Dialogue: 0,0:07:10.47,0:07:11.80,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是否异常焦虑{\r}
+Dialogue: 0,0:07:11.80,0:07:13.49,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是否因感到负担而压抑自己的感情{\r}
+Dialogue: 0,0:07:12.36,0:07:13.50,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我需要你帮忙{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I want you help.
+Dialogue: 0,0:07:15.48,0:07:16.31,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}什么事{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}With what?
+Dialogue: 0,0:07:17.63,0:07:20.48,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}经内镜逆行性胰胆管造影术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Endoscopic Retrograde Cholangio-Pancreatography.
+Dialogue: 0,0:07:20.48,0:07:22.44,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}ERCP  为什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}ERCP? Why?
+Dialogue: 0,0:07:24.40,0:07:26.05,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你以前做过的  肖恩{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You've done those before, Shaun.
+Dialogue: 0,0:07:26.63,0:07:28.56,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你和自闭症患者相处得很好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're good with people who have autism.
+Dialogue: 0,0:07:34.37,0:07:37.77,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}格伦  我们开始吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Okay, Glen, let's get this, star...ted
+Dialogue: 0,0:07:39.16,0:07:40.56,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}格伦  你快好了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Glen, you almost finished?
+Dialogue: 0,0:07:43.56,0:07:44.80,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我是卡卢医生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's Dr. Kalu.
+Dialogue: 0,0:07:46.80,0:07:47.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}格伦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Glen?
+Dialogue: 0,0:07:59.97,0:08:01.44,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们需要全面封锁{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yeah, we have a code green.
+Dialogue: 0,0:08:01.63,0:08:04.28,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}患者为白人男性  84千克{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Patient is Caucasian, male, 185 pounds.
+Dialogue: 0,0:08:14.71,0:08:16.26,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肖恩  你能和他说说话吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Shaun, can you talk to him or something?
+Dialogue: 0,0:08:16.47,0:08:17.76,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我没法推咪唑安定{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I can't push the Midazolam.
+Dialogue: 0,0:08:22.11,0:08:24.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}四盏灯  四扇门{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Four lights...four doors.
+Dialogue: 0,0:08:24.52,0:08:26.22,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没错  这有很多东西{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yes. Lots of things.
+Dialogue: 0,0:08:26.45,0:08:30.22,Default,NTP,0000,0000,0000,,\N32, 8. 32, 8.
+Dialogue: 0,0:08:30.88,0:08:33.91,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}32是橱窗的数量{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}32 is the number of cabinet windows,
+Dialogue: 0,0:08:33.92,0:08:35.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}8是把手的数量{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and 8 is the number of handles.
+Dialogue: 0,0:08:38.81,0:08:40.98,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}末端二氧化碳在上升{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}the end title's CO2 is rising.
+Dialogue: 0,0:08:41.15,0:08:43.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他需要氧气  他出现呼吸抑制了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He needs oxygen. He has respiratory depression.
+Dialogue: 0,0:08:43.52,0:08:45.31,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这是咪达安定的常见反应{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's a common reaction to Midazolam.
+Dialogue: 0,0:08:51.54,0:08:53.19,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}二氧化碳下降了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}CO2 is coming down.
+Dialogue: 0,0:08:53.54,0:08:55.82,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-你可以继续了  克莱尔  -  谢谢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}-You can proceed, Claire. -Thank you.
+Dialogue: 0,0:09:03.96,0:09:06.93,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你以前遇到过很多自闭症患者吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Have you been around a lot of other autistic people?
+Dialogue: 0,0:09:08.17,0:09:10.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}从没遇到过{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I've never met someone with autism.
+Dialogue: 0,0:09:11.24,0:09:13.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}那和利亚姆待一段时间挺不错吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}So, it must be nice to spend some time around Liam, then.
+Dialogue: 0,0:09:14.42,0:09:15.13,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}为什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Why?
+Dialogue: 0,0:09:15.13,0:09:16.63,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}为什么会不错{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Why would that be nice?
+Dialogue: 0,0:09:19.07,0:09:20.08,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Okay.
+Dialogue: 0,0:09:22.60,0:09:24.28,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没有结石{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}There are no stones.
+Dialogue: 0,0:09:25.46,0:09:26.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}结石在哪儿{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Where are the stones?
+Dialogue: 0,0:09:27.81,0:09:29.26,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这里有瘢痕{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And there is scarring.
+Dialogue: 0,0:09:29.27,0:09:32.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这和胆结石无关{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}This has nothing to do with gallstones.
+Dialogue: 0,0:09:32.16,0:09:34.56,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}整个胆管树都布满了瘢痕{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The entire biliary tree is so thick with scarring
+Dialogue: 0,0:09:34.56,0:09:36.18,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}连内窥镜都伸不进去{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}we can't even get the camera through.
+Dialogue: 0,0:09:40.38,0:09:44.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}胆管瘢痕的诊断包括{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The differential diagnosis for biliary tree scarring includes
+Dialogue: 0,0:09:44.89,0:09:48.47,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}原发性硬化性胆管炎  肝功能衰竭{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}primary sclerosing cholangitis, liver failure,
+Dialogue: 0,0:09:48.47,0:09:50.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}继发性原发性胆汁性肝硬化{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}secondary to primary biliary cirrhosis --
+Dialogue: 0,0:09:50.52,0:09:53.37,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没错  肖恩  列表上还能加几种癌症{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yeah, Shaun, we can add a few cancers to that list as well --
+Dialogue: 0,0:09:53.37,0:09:54.76,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}列表真是又长又可怕{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's a long and ugly one.
+Dialogue: 0,0:09:54.76,0:09:56.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}想想其他方法来查明{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Find another way to figure out what it is.
+Dialogue: 0,0:09:57.61,0:09:58.67,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们可以做核磁共振{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We could do an MRI.
+Dialogue: 0,0:09:58.67,0:09:59.71,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不  不行{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}No, we couldn't.
+Dialogue: 0,0:10:02.20,0:10:03.22,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}做不了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's not possible.
+Dialogue: 0,0:10:03.22,0:10:04.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我第一次听你这样说{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's the first time I've ever heard you say that.
+Dialogue: 0,0:10:04.57,0:10:06.30,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-利亚姆有自我刺激行为  -自我刺激行为{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}-Liam is stimming. -Stimming?
+Dialogue: 0,0:10:06.30,0:10:09.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}抽搐和痉挛是神经应激反应{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The tics and spasms are a neurological response to stress.
+Dialogue: 0,0:10:09.64,0:10:11.63,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果他做核磁共振  就会有压力{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}If he's doing an MRI, there is stress --
+Dialogue: 0,0:10:11.63,0:10:12.98,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果有压力  他就没法保持不动{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}if there is stress, he won't keep still,
+Dialogue: 0,0:10:12.98,0:10:14.54,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果他不能保持不动  我们就没法做核磁共振{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}if he wont' keep still, we can't do an MRI.
+Dialogue: 0,0:10:14.54,0:10:16.21,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}因此  做不了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Therefore, it is impossible.
+Dialogue: 0,0:10:16.27,0:10:17.83,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果你一直和他这样说话{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Maybe if you just keep talking to him like that,
+Dialogue: 0,0:10:17.83,0:10:19.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}也许能让他睡着  一切就简单多了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}he'll doze off and it'll all be simple.
+Dialogue: 0,0:10:20.86,0:10:22.31,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}给他低剂量镇静剂{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Give him a mild sedative.
+Dialogue: 0,0:10:22.66,0:10:25.02,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他做ERCP时对咪达安定反应不是很好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He didn't respond well to Midazolam during ERCP --
+Dialogue: 0,0:10:25.03,0:10:26.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}抑制了他的呼吸{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}depresses his breathing.
+Dialogue: 0,0:10:26.43,0:10:28.97,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}在里面没法准确监测他的呼吸饱和度{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}His respiratory saturation can't be properly monitored inside --
+Dialogue: 0,0:10:28.97,0:10:29.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我明白了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I get it.
+Dialogue: 0,0:10:29.81,0:10:31.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他可能死在核磁共振里面  而我们都不知道{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He could die in the MRI and we wouldn't know.
+Dialogue: 0,0:10:31.98,0:10:34.01,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你得想其他办法来安抚他{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're just gonna have to find a different way to calm him.
+Dialogue: 0,0:10:34.01,0:10:35.12,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Okay. We'll do it.
+Dialogue: 0,0:10:35.96,0:10:37.13,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我猜他有主意了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Guess he has an idea.
+Dialogue: 0,0:10:39.87,0:10:41.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}现在进入全面封锁{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We have a code green.
+Dialogue: 0,0:10:41.08,0:10:44.46,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}患者为白人男性  73岁{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Patient is a Caucasian male, 73 years of age.
+Dialogue: 0,0:10:46.99,0:10:48.25,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肖恩  你在干什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Shaun, what are you doing?
+Dialogue: 0,0:10:49.27,0:10:50.13,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}计数{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Counting.
+Dialogue: 0,0:10:50.70,0:10:52.85,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-数什么  -距离{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- Counting what? - Distance.
+Dialogue: 0,0:10:53.37,0:10:54.06,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}为什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Why?
+Dialogue: 0,0:10:55.20,0:10:58.08,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我想要1643块钱{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I want $1,643.
+Dialogue: 0,0:10:58.62,0:10:59.98,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}数完你就有钱了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You can get that by counting?
+Dialogue: 0,0:11:00.04,0:11:03.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所以你自己在这里步测吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's why you're alone and pacing in this room?
+Dialogue: 0,0:11:04.32,0:11:05.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你想要钱干什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What do you want the money for?
+Dialogue: 0,0:11:05.51,0:11:07.06,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我想买个电视{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I want to buy a television.
+Dialogue: 0,0:11:07.06,0:11:09.00,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}1600块钱的电视{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}$1,600 for a television?
+Dialogue: 0,0:11:09.00,0:11:11.53,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}还有43  我是个外科医生  我有薪水{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And 43. I am a surgeon. I get paychecks.
+Dialogue: 0,0:11:11.53,0:11:14.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你现在还不是外科医生  你是外科住院医师{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're not a surgeon yet. You're a surgical resident.
+Dialogue: 0,0:11:14.07,0:11:16.77,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}薪水还是差很多的  朋友{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Ah, there's a big difference in the paycheck there, pal.
+Dialogue: 0,0:11:16.77,0:11:18.88,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我不是小孩  朋友{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm not a child, pal.
+Dialogue: 0,0:11:20.35,0:11:22.74,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}买个一千块的电视怎么样{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}How 'bout $1,000 for a television?
+Dialogue: 0,0:11:22.74,0:11:25.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不  我想买那个1643块的电视{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}No. The one I want is $1,643, okay?
+Dialogue: 0,0:11:25.64,0:11:27.56,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我知道  但是你有预算{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I know, but you have a budget.
+Dialogue: 0,0:11:27.57,0:11:30.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-预算  你... -房租  食物  账单{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- A budget. You -- - Uh, rent, food, bills to pay.
+Dialogue: 0,0:11:33.15,0:11:35.85,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我可以自己做预算  我得做核磁共振{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I should do my own budget. I have an MRI to do.
+Dialogue: 0,0:11:42.45,0:11:45.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这是入口  急救室  接收站的实时监控{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}These are live feeds -- entrances, E.R., receiving dock.
+Dialogue: 0,0:11:45.92,0:11:47.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果你的患者离开了  我们会看到的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}If your patient had left, we would've seen it.
+Dialogue: 0,0:11:47.60,0:11:48.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他能去哪儿{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Then where'd he go?
+Dialogue: 0,0:11:48.62,0:11:51.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}货运电梯  但是里面没有监控{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}A freight elevator, but we don't have cams in the freights,
+Dialogue: 0,0:11:51.15,0:11:52.48,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他没有出来{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and he doesn't pop back up.
+Dialogue: 0,0:11:52.69,0:11:55.88,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}看来这是个外星绑架案了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}So, we're dealing with an alien abduction here?
+Dialogue: 0,0:11:58.58,0:11:59.30,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}对不起{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Sorry.
+Dialogue: 0,0:11:59.71,0:12:01.53,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}一  四  五层的货运电梯{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We don't have cams on the freight elevators
+Dialogue: 0,0:12:01.53,0:12:03.84,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}和地下室都没有监控{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}on levels one, four and five, and the basement.
+Dialogue: 0,0:12:03.84,0:12:05.47,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你找人去查看这些楼层了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And you got people looking on those floors?
+Dialogue: 0,0:12:05.47,0:12:07.82,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们已经搜查了四楼和五楼  正准备去一楼{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We've covered four and five, and we're moving on to one.
+Dialogue: 0,0:12:17.82,0:12:25.45,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}格拉斯曼医生\N和莫翰医生预约了中午12点的心理咨询{\r}
+Dialogue: 0,0:12:29.60,0:12:33.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这是什么  大拇指吗{\r}
+Dialogue: 0,0:12:37.76,0:12:38.85,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}地下室有什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What's in the basement?
+Dialogue: 0,0:12:39.75,0:12:41.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}儿科患者丢了个毯子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Pediatric patient lost a blanket --
+Dialogue: 0,0:12:41.59,0:12:43.12,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我去失物招领看看{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm just gonna check lost and found.
+Dialogue: 0,0:12:43.89,0:12:44.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你人真好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's nice of you.
+Dialogue: 0,0:12:47.97,0:12:48.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}趁你在这儿{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}While you're there,
+Dialogue: 0,0:12:48.52,0:12:51.44,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}也许你还能看看丢失的患者找到了没有{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}you might want to check if they found your code green.
+Dialogue: 0,0:13:06.33,0:13:07.89,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我是医生...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}This is Doctor...
+Dialogue: 0,0:13:09.33,0:13:10.45,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我是肖恩{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}This is Shaun.
+Dialogue: 0,0:13:10.62,0:13:12.49,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我可以听到你说话{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I can hear you when you speak.
+Dialogue: 0,0:13:12.98,0:13:14.72,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我在想些事情{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I was thinking about something.
+Dialogue: 0,0:13:15.51,0:13:19.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}从救护车到急诊室要走24步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}There are 24 steps from the ambulance to the E.R.
+Dialogue: 0,0:13:23.05,0:13:25.93,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}请把灯关上  有助于他恢复平静{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Please turn down the lights. That helps calm him.
+Dialogue: 0,0:13:28.34,0:13:31.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}从救护车到急诊室要走24步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}There are 24 steps from the ambulance to the E.R.
+Dialogue: 0,0:13:34.18,0:13:38.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}从救护车到急诊室要走22步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}There are 22 steps from the ambulance to the E.R.
+Dialogue: 0,0:13:40.19,0:13:42.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他步子很大{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He has very long strides.
+Dialogue: 0,0:13:43.04,0:13:43.76,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没错{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yes.
+Dialogue: 0,0:13:44.30,0:13:47.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}从救护车到急诊室要走22步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}There are 22 steps from the ambulance to the E.R.
+Dialogue: 0,0:13:54.52,0:13:59.67,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}从电梯到405房间要走37步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}There are 37 steps from the elevator to room 405.
+Dialogue: 0,0:13:59.67,0:14:02.65,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}从电梯到405房间{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}There are 37 steps
+Dialogue: 0,0:14:03.31,0:14:07.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}要走37步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}from the elevator to room 405.
+Dialogue: 0,0:14:07.35,0:14:11.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}在405房间  走到水槽要六步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}In room 405, there are 6 steps to the sink...
+Dialogue: 0,0:14:11.95,0:14:13.80,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}走到水槽要六步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}6 steps to the sink.
+Dialogue: 0,0:14:14.62,0:14:16.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们得到了清晰的图像{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We're getting good images.
+Dialogue: 0,0:14:16.92,0:14:20.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}对自闭症患者来说  你真了不起{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's amazing how accomplished you are for someone with ASD.
+Dialogue: 0,0:14:22.20,0:14:23.94,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}走到窗户要三步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Three steps to the window.
+Dialogue: 0,0:14:23.96,0:14:25.26,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}要三步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Three steps to --
+Dialogue: 0,0:14:26.48,0:14:27.25,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}三步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Three...
+Dialogue: 0,0:14:29.78,0:14:33.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}七步  走到门要七步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's seven steps -- It's seven steps to the door.
+Dialogue: 0,0:14:33.92,0:14:36.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}利亚姆  走到门要七步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Liam, there are seven steps to the door.
+Dialogue: 0,0:14:38.79,0:14:39.65,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你得把他弄出来{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You need to get him out.
+Dialogue: 0,0:14:39.65,0:14:40.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}只要再等一会就好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Just a little more time.
+Dialogue: 0,0:14:40.70,0:14:41.69,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他很害怕{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He's scared.
+Dialogue: 0,0:14:41.69,0:14:43.42,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}害怕没关系  我们得做完{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's okay to be scared. We need to finish this.
+Dialogue: 0,0:14:43.42,0:14:45.76,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-七步  -你做的很好  亲爱的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- Seven - You're doing wonderfully, honey.
+Dialogue: 0,0:14:45.76,0:14:49.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}呼吸就好  呼吸就好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Just breathe. Just breathe.
+Dialogue: 0,0:14:49.59,0:14:52.76,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不  走到门要七步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}No, it's seven steps to the door.
+Dialogue: 0,0:15:17.33,0:15:18.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}格伦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Glen?
+Dialogue: 0,0:15:25.02,0:15:25.73,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}格伦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Glen?
+Dialogue: 0,0:15:32.26,0:15:32.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}格伦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Glen?
+Dialogue: 0,0:15:38.41,0:15:39.11,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}格伦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Glen?
+Dialogue: 0,0:15:41.33,0:15:42.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我是卡卢医生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's Dr. Kalu.
+Dialogue: 0,0:15:43.01,0:15:44.00,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我带你上楼{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Let's get you upstairs.
+Dialogue: 0,0:15:44.47,0:15:45.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}走开{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Go away.
+Dialogue: 0,0:15:45.97,0:15:47.30,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我会给你安装新的起搏器{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We're gonna get your new pacer in.
+Dialogue: 0,0:15:48.12,0:15:49.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你还不明白吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Don't you get it?
+Dialogue: 0,0:15:50.86,0:15:52.94,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我故意弄坏了自己的起搏器{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I broke my pacer on purpose.
+Dialogue: 0,0:15:54.83,0:15:56.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我想死{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I want to die.
+Dialogue: 0,0:16:05.07,0:16:07.06,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}有了新的心脏起搏器  或许你会感觉好一些{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}With a new pacemaker, maybe you'll feel better.
+Dialogue: 0,0:16:07.51,0:16:08.86,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所以  我可以痊愈{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}So, I'll be cured?
+Dialogue: 0,0:16:09.56,0:16:10.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}完好如初{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Good as new?
+Dialogue: 0,0:16:12.30,0:16:14.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}它可以缓解你的痛苦  之后很有希望...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Well, it'll reduce your pain, and then hopefully --
+Dialogue: 0,0:16:14.34,0:16:16.37,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你以为我是第一次听到这些陈词滥调吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You think this is the first time I've heard that?
+Dialogue: 0,0:16:16.42,0:16:18.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}人们总说「退而求其次」{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's always the "Next best thing."
+Dialogue: 0,0:16:21.72,0:16:25.48,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但事实是我一直在走下坡路{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The truth is I'll just keep getting worse.
+Dialogue: 0,0:16:25.48,0:16:27.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我心里清楚  你也是{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I know it, you know it.
+Dialogue: 0,0:16:27.59,0:16:29.27,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你有亲属可以谈谈吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Do you have any family you can talk to?
+Dialogue: 0,0:16:29.27,0:16:32.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我哥死了  我也没有妻子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Brother's dead. I don't have a wife.
+Dialogue: 0,0:16:32.84,0:16:34.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所以我周围没有亲人可以唠叨我{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}So, no, there's no one around to nag me
+Dialogue: 0,0:16:34.95,0:16:36.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}劝我听你的话{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}into doing what you want.
+Dialogue: 0,0:16:37.36,0:16:39.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们这里提供很好的心理咨询服务{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We have great counseling services here.
+Dialogue: 0,0:16:40.60,0:16:42.35,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我一直非常痛苦  28岁的毛头小子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm in pain, 28 --
+Dialogue: 0,0:16:42.84,0:16:44.04,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}每时每刻{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}all the time.
+Dialogue: 0,0:16:44.37,0:16:46.43,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你觉得谈话疗法能让痛苦消失吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Talk therapy gonna talk that away?
+Dialogue: 0,0:16:46.43,0:16:47.82,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}让我带你上楼吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Let's get you upstairs.
+Dialogue: 0,0:16:47.82,0:16:49.50,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你脸色不太好  肺部有啰音{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You color's not good, and your lungs are crackling,
+Dialogue: 0,0:16:49.51,0:16:50.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这说明液体正在流向...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}which means there's fluid building in --
+Dialogue: 0,0:16:50.92,0:16:52.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我知道我的...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I know my...
+Dialogue: 0,0:16:52.97,0:16:54.02,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我知道我享有哪些权利{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I know my rights.
+Dialogue: 0,0:16:54.03,0:16:56.37,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果我不愿意  就不用非得接受治疗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I don't have to get treatment if I don't want it.
+Dialogue: 0,0:16:57.28,0:16:59.93,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}趁我还有一口气  我要离开这里{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The minute I catch my breath, I'm gonna walk out of here,
+Dialogue: 0,0:17:00.79,0:17:03.35,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所以你可以走了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}so you can just leave.
+Dialogue: 0,0:17:11.23,0:17:12.25,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我不会走{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm not leaving.
+Dialogue: 0,0:17:25.40,0:17:28.32,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们找不到病因  就无法采取治疗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We can't treat it until we find the underlying cause.
+Dialogue: 0,0:17:28.32,0:17:29.22,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你想怎么做{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}How do you do that?
+Dialogue: 0,0:17:29.22,0:17:32.26,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}通过手术  即「腹腔镜探查术」{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Surgically -- It's called "Exploratory laparoscopy."
+Dialogue: 0,0:17:32.26,0:17:35.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们用相机来检查利亚姆的腹部{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We use a camera to navigate Liam's midsection.
+Dialogue: 0,0:17:36.06,0:17:38.05,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这种手术存在很大的风险{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}There are significant risks --
+Dialogue: 0,0:17:39.00,0:17:40.21,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}腹腔脏器穿孔{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}perforation of an organ,
+Dialogue: 0,0:17:40.22,0:17:42.91,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}意外造成肿瘤细胞扩散{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}accidental spread seeding malignancy.
+Dialogue: 0,0:17:42.91,0:17:43.88,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}而你必须得做这种手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And you have to do this
+Dialogue: 0,0:17:43.88,0:17:46.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}因为他在做磁共振时不能保持静止{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}because he can't stay still during an MRI?
+Dialogue: 0,0:17:46.51,0:17:48.82,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}很显然你比我更了解你的儿子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You obviously know your son better than I do.
+Dialogue: 0,0:17:48.91,0:17:50.42,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你觉得我们应该再试一次吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Do you think we should try again?
+Dialogue: 0,0:18:11.13,0:18:13.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肖恩说他要买台电视{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}So, Shaun told me he's getting a TV --
+Dialogue: 0,0:18:13.47,0:18:15.10,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}至少七十英寸{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}70 inches, all the works.
+Dialogue: 0,0:18:15.10,0:18:16.14,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Is he now?
+Dialogue: 0,0:18:16.67,0:18:17.89,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}只是台电视而已{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's just a TV.
+Dialogue: 0,0:18:18.03,0:18:19.44,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我担心的不是电视{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's not about a TV.
+Dialogue: 0,0:18:19.44,0:18:21.06,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你为什么这么担心他{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Why are you so worried about him?
+Dialogue: 0,0:18:21.53,0:18:23.71,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他上班迟到了五六次{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He showed up late for work half a dozen times,
+Dialogue: 0,0:18:23.72,0:18:25.09,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他在凌晨两点钟给我打电话{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}he calls me 2:00 in the morning
+Dialogue: 0,0:18:25.09,0:18:26.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}就因为找不到螺丝刀{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}'cause he can't find a screwdriver,
+Dialogue: 0,0:18:26.60,0:18:29.42,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}而他的上司千方百计想把他赶出医院{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and his superintendent wants to kick him out of his building.
+Dialogue: 0,0:18:29.42,0:18:31.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-你去了吗  -什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- Did you show up? - What?
+Dialogue: 0,0:18:31.34,0:18:32.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}凌晨两点他因为找不到螺丝刀{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}At 2:00 in the morning when he called you
+Dialogue: 0,0:18:32.52,0:18:34.41,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}而给你打电话时{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}about a lost screwdriver,
+Dialogue: 0,0:18:35.04,0:18:36.26,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你去了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}did you show up?
+Dialogue: 0,0:18:36.43,0:18:38.47,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他急疯了  我不知道他会做出什么事{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He was frantic. I didn't know what he was gonna do.
+Dialogue: 0,0:18:38.47,0:18:40.33,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这里有47个住院医师{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}There are 47 residents here,
+Dialogue: 0,0:18:41.16,0:18:42.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他们都会偶尔迟到{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and all of them show up late sometimes,
+Dialogue: 0,0:18:42.34,0:18:43.45,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他们都会犯错误{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}all of them make mistakes,
+Dialogue: 0,0:18:43.45,0:18:45.30,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但好在  他们都能从中学到东西{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and hopefully, all of them learn.
+Dialogue: 0,0:18:45.96,0:18:48.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果你想担心肖恩  没问题{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}If you want to worry about Shaun, fine.
+Dialogue: 0,0:18:48.21,0:18:49.62,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但你费尽心力雇佣他{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}But you fought to hire him
+Dialogue: 0,0:18:49.62,0:18:51.82,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是因为你知道他能在这学到东西{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}because you know he can learn.
+Dialogue: 0,0:18:52.98,0:18:55.48,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}问题是  你是否愿意放手让他去做{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The question is, are you willing to let him?
+Dialogue: 0,0:19:05.92,0:19:06.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肖恩{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Shaun?
+Dialogue: 0,0:19:07.09,0:19:08.85,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我可以看到像素点{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I can see the pixelation.
+Dialogue: 0,0:19:09.79,0:19:11.71,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-挺好的  听着  -这不好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- That's great. Listen. - It's not great.
+Dialogue: 0,0:19:13.19,0:19:14.23,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这不好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's not good.
+Dialogue: 0,0:19:14.23,0:19:15.65,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}在高清显示器上{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}On a high-quality display,
+Dialogue: 0,0:19:15.66,0:19:18.50,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}双眼1.2的视力根本看不到像素点{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}the human eye at 20/20 cannot detect the pixels.
+Dialogue: 0,0:19:21.58,0:19:24.46,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}磁共振检查失败以后你就不见了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You disappeared after the failed MRI.
+Dialogue: 0,0:19:26.14,0:19:27.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我失败了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I failed.
+Dialogue: 0,0:19:27.84,0:19:30.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是  可我觉得不是因为磁共振失败{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yeah, see, I don't think it's about that.
+Dialogue: 0,0:19:31.76,0:19:34.42,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}在那之前你就对这孩子犹豫不决{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You were hesitant with this kid even before that.
+Dialogue: 0,0:19:34.98,0:19:37.24,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你让我来做ERCP{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You asked me to the ERCP.
+Dialogue: 0,0:19:38.50,0:19:41.12,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}医生不用非得喜欢他们的患者  克莱尔{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Doctors don't have to like their patients, Claire.
+Dialogue: 0,0:19:42.90,0:19:44.83,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-你不喜欢他  -我与他素不相识{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- You don't like him? - I don't know him.
+Dialogue: 0,0:19:44.83,0:19:47.55,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肖恩  这还有别的原因{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Shaun, there's something else going on here.
+Dialogue: 0,0:19:47.55,0:19:50.45,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-我知道你明白  -不  不  不{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- I know you know that. - No. Nu-- Nu-huh.
+Dialogue: 0,0:19:51.45,0:19:53.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他的情况和你一样{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He has the same condition you have.
+Dialogue: 0,0:19:53.92,0:19:55.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你之前还从未遇到过...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You have never met anyone with --
+Dialogue: 0,0:19:55.57,0:19:57.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所有银屑病患者你都喜欢吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Do you like all people with psoriasis?
+Dialogue: 0,0:20:00.05,0:20:01.05,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我没有...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I don't have --
+Dialogue: 0,0:20:01.05,0:20:02.05,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你有{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yes, you do.
+Dialogue: 0,0:20:02.90,0:20:04.48,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}而且你永远也治不好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And you can never get rid of it.
+Dialogue: 0,0:20:05.19,0:20:05.91,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Okay.
+Dialogue: 0,0:20:06.88,0:20:08.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你不喜欢他真是太遗憾了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's too bad you don't like him,
+Dialogue: 0,0:20:08.83,0:20:10.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}因为我觉得他喜欢你{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}because I think he likes you.
+Dialogue: 0,0:20:10.97,0:20:12.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不止如此  我觉得他崇拜你{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Not only that, I think he looks up to you.
+Dialogue: 0,0:20:13.26,0:20:15.24,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所以你知道他在想什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}So you know how he thinks?
+Dialogue: 0,0:20:16.54,0:20:18.35,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}可能没你知道得多{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Well, not as much as you probably do.
+Dialogue: 0,0:20:24.54,0:20:25.77,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你还在等什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What are you waiting for?
+Dialogue: 0,0:20:27.60,0:20:28.77,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}等你昏倒{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}For you to pass out.
+Dialogue: 0,0:20:31.16,0:20:33.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}根据你脚踝的肿胀程度来看{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Judging by the size your ankles...
+Dialogue: 0,0:20:35.10,0:20:36.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}应该用不了多久了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}that shouldn't be too long from now.
+Dialogue: 0,0:20:36.87,0:20:38.99,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}希望我能在你死之前把你弄上楼{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Then hopefully I can get you upstairs before you die.
+Dialogue: 0,0:20:39.95,0:20:43.38,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你为什么要管我如何过自己的人生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Why do you give such a damn about what I do with my life?
+Dialogue: 0,0:20:43.59,0:20:44.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我不知道  格伦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I don't know, Glen.
+Dialogue: 0,0:20:46.29,0:20:47.72,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你为什么如此想结束生命{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Why'd you want to die so bad?
+Dialogue: 0,0:20:53.62,0:20:54.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我活够了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I've lived.
+Dialogue: 0,0:20:55.91,0:20:57.46,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我有过得体的工作{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I've had decent jobs,
+Dialogue: 0,0:20:57.75,0:20:59.74,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我也失过业{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and I've had jobs that went nowhere.
+Dialogue: 0,0:21:01.95,0:21:03.45,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}住过好房子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Had a good roof over my head,
+Dialogue: 0,0:21:03.45,0:21:06.58,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}也失去了好房子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and I've had that good roof taken away from me.
+Dialogue: 0,0:21:07.62,0:21:10.23,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我爱过一个女孩  然后我结了婚{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I loved a girl, and I got married.
+Dialogue: 0,0:21:11.69,0:21:14.47,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}度过我人生中最幸福的二十年{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The 20 happiest years of my life...
+Dialogue: 0,0:21:15.67,0:21:17.12,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}然后她去世了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}then she died.
+Dialogue: 0,0:21:18.54,0:21:20.38,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}现在我又孤身一人了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And now I'm alone
+Dialogue: 0,0:21:21.58,0:21:23.19,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}痛苦地活着{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and in pain.
+Dialogue: 0,0:21:25.22,0:21:28.58,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}应该结束了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Feels like the end of the story.
+Dialogue: 0,0:21:32.96,0:21:34.17,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我明白{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I understand.
+Dialogue: 0,0:21:34.17,0:21:35.30,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yeah?
+Dialogue: 0,0:21:36.26,0:21:39.46,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你也有过难熬的时候吗  毛头小子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You've had some tough times, too, 28?
+Dialogue: 0,0:21:40.71,0:21:46.14,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没人理解你作为一个英俊的成功人士是何感受吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Nobody understands what it's like to be so good-looking and successful?
+Dialogue: 0,0:21:47.27,0:21:49.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我是被保姆和管家抚养大的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I was raised by nannies and housekeepers.
+Dialogue: 0,0:21:49.52,0:21:51.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}天呐{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Oh, my God.
+Dialogue: 0,0:21:51.13,0:21:52.40,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你是个混蛋{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're an ass.
+Dialogue: 0,0:21:52.43,0:21:54.01,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你想说你经历的痛苦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Your point is you didn't suffer
+Dialogue: 0,0:21:54.02,0:21:56.42,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不是因为你英俊聪明{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}because you were good-looking and smart --
+Dialogue: 0,0:21:56.89,0:22:00.04,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}而是因为你很有钱{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}you suffered because you were rich?
+Dialogue: 0,0:22:02.84,0:22:04.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}只有在圣诞节我才能见到我的父母{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The only time I ever saw my parents was Christmas.
+Dialogue: 0,0:22:04.95,0:22:08.02,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}认真的吗  还要继续说{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Seriously, the story continues?
+Dialogue: 0,0:22:08.03,0:22:10.24,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他们每年都举行盛大的宴会{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}They had this big party every year,
+Dialogue: 0,0:22:10.24,0:22:12.89,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不管他们走到哪里  都会为了宴会飞回来{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and wherever they were traveling they'd always fly home for it.
+Dialogue: 0,0:22:14.17,0:22:15.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我也必须回家{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And I'd have to come home, too,
+Dialogue: 0,0:22:16.74,0:22:18.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不论他们把我送到了哪个学校{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}from whatever school they sent me off to.
+Dialogue: 0,0:22:20.44,0:22:23.49,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}当我18岁的时候  我厌倦了这种生活{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}When I was 18, I decided that I was fed up.
+Dialogue: 0,0:22:24.84,0:22:28.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我是一个男人  不想当他们的儿子了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I was a man, done being their son.
+Dialogue: 0,0:22:30.77,0:22:32.50,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}而且我准备公开告诉他们{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And I was gonna tell them publicly,
+Dialogue: 0,0:22:33.53,0:22:36.24,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}告诉他们的朋友们他们有多可怕{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}tell all their friends what horrible people they were.
+Dialogue: 0,0:22:36.74,0:22:39.45,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所以我从学校回到家  敲了敲门{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}So I came home from school, and I knocked on the door,
+Dialogue: 0,0:22:39.75,0:22:40.89,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}有人开了门{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and someone answered.
+Dialogue: 0,0:22:42.63,0:22:44.94,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但不是我的父母  是一个陌生人{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}But it wasn't my parents. It was a stranger.
+Dialogue: 0,0:22:45.52,0:22:47.77,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没想到他们在数月前就卖掉了房子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Turns out they'd sold the house months ago.
+Dialogue: 0,0:22:48.59,0:22:49.73,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他们走了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}They were gone.
+Dialogue: 0,0:22:53.08,0:22:54.69,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我猜他们也受够了我吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I guess they were done with me, too.
+Dialogue: 0,0:23:03.47,0:23:04.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}为了给利亚姆准备腹腔镜检查{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}To prep Liam for the laparoscopy,
+Dialogue: 0,0:23:04.96,0:23:07.74,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们需要在他的胃里开四个小切口{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}we need to make four small incisions in his stomach.
+Dialogue: 0,0:23:07.74,0:23:09.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我不需要做这个{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I don't need to do it.
+Dialogue: 0,0:23:09.03,0:23:10.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我不需要做这个{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I-I don't need to do it.
+Dialogue: 0,0:23:10.52,0:23:12.49,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-利亚姆  你需要做  -我不需要{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- Liam, you do need to. - I don't need to!
+Dialogue: 0,0:23:12.49,0:23:13.94,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}只要坚持几秒钟就好  利亚姆{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}If you could just hold still for a second, Liam.
+Dialogue: 0,0:23:13.94,0:23:16.08,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}公车司机让我下车{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The -- the bus driver lets me off.
+Dialogue: 0,0:23:16.08,0:23:17.40,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我迷路了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I-I get lost --
+Dialogue: 0,0:23:17.40,0:23:18.28,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你现在安全了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're safe now.
+Dialogue: 0,0:23:18.28,0:23:19.84,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我迷路了  我很饿{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I get lost. I'm hungry.
+Dialogue: 0,0:23:19.84,0:23:21.11,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我没法做饭{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I can't make food.
+Dialogue: 0,0:23:21.11,0:23:24.63,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没法洗澡  不需要做这个{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}C-C-Can't do bath -- Don't need to do it!
+Dialogue: 0,0:23:24.63,0:23:28.06,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没法做饭  没法穿衣服{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}C-C-Can't do food -- C-Can't put on clothes.
+Dialogue: 0,0:23:28.06,0:23:29.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没法坐公交车{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Can't do bus.
+Dialogue: 0,0:23:29.03,0:23:30.56,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我坐过公交车{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I took the bus.
+Dialogue: 0,0:23:33.42,0:23:35.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}在错误的站台下了车{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I got off at the wrong stop,
+Dialogue: 0,0:23:35.53,0:23:38.20,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我很害怕  但接着我找到了方向{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and I got scared, but then I found my way.
+Dialogue: 0,0:23:41.10,0:23:44.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我做过一次核磁共振  让人受伤了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I did an MRI, and a man got hurt.
+Dialogue: 0,0:23:45.12,0:23:48.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我犯了一个错误  我犯过很多错误{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I made a mistake. I make a lot of mistakes.
+Dialogue: 0,0:23:52.29,0:23:54.12,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你试着去走路{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You tried to walk.
+Dialogue: 0,0:23:54.60,0:23:56.14,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你犯了一个错误{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You made a mistake.
+Dialogue: 0,0:23:57.08,0:23:59.97,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但犯错是好事  你应该多犯一些错{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}But mistakes are good. You should make more.
+Dialogue: 0,0:24:01.49,0:24:02.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你很像我{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're like me.
+Dialogue: 0,0:24:11.55,0:24:14.48,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你有红眼  眼色素层炎{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You have red eyes -- uveitis.
+Dialogue: 0,0:24:14.48,0:24:15.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}利亚姆吃维生素{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Liam takes vitamins --
+Dialogue: 0,0:24:15.96,0:24:18.28,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}利亚姆也吃草药补充品吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Does Liam also take herbal supplements?
+Dialogue: 0,0:24:18.98,0:24:20.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}卡瓦根  怎么了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Kava root. Why?
+Dialogue: 0,0:24:20.66,0:24:22.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他不需要做腹腔镜手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He doesn't need the laparoscopic surgery.
+Dialogue: 0,0:24:22.57,0:24:24.08,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我知道他怎么了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I know what's wrong with him.
+Dialogue: 0,0:24:25.08,0:24:27.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他的红眼  是由免疫系统冲突造成的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The red eyes -- they're caused by an immune flare-up,
+Dialogue: 0,0:24:27.96,0:24:31.73,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}也会产生我们在他的消化系统中看到的瘢痕{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}which can create the scarring that we're seeing in his digestive system.
+Dialogue: 0,0:24:31.73,0:24:33.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}治疗方案需要我们进入腹腔{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The solution requires us to go in
+Dialogue: 0,0:24:33.52,0:24:35.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}一片片摘除掉肠道上的受损部位{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and remove damaged segments of the bowel piece by piece.
+Dialogue: 0,0:24:35.95,0:24:36.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Us?
+Dialogue: 0,0:24:36.96,0:24:38.97,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是的  我和我的团队{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yes, myself and my team.
+Dialogue: 0,0:24:39.25,0:24:40.97,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}莫菲医生在你的团队吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Is Dr. Murphy on your team?
+Dialogue: 0,0:24:40.97,0:24:41.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}当然{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Of course.
+Dialogue: 0,0:24:42.75,0:24:46.38,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}感谢你诊断我们的儿子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Thank you for diagnosing our son.
+Dialogue: 0,0:24:47.25,0:24:50.31,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}梅伦德斯医生  我们同意你做这个手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Dr. Melendez, you have our permission to do the surgery,
+Dialogue: 0,0:24:52.01,0:24:55.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但莫菲医生不能参与其中{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}but in no way will Dr. Murphy be in it.
+Dialogue: 0,0:25:03.42,0:25:05.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}患者的父母  他们不让步{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Well, the parents -- they won't budge.
+Dialogue: 0,0:25:05.04,0:25:06.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他们不信任患了自闭症的人{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}They don't believe that anyone who has autism
+Dialogue: 0,0:25:06.64,0:25:08.01,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}有能力进行手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}is capable do doing surgery.
+Dialogue: 0,0:25:08.01,0:25:09.94,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}很显然  他们很荒谬{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Well, clearly they're irrational --
+Dialogue: 0,0:25:09.95,0:25:11.27,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我说不好  肤浅的人们{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I don't know -- shallow-minded people.
+Dialogue: 0,0:25:11.27,0:25:12.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}谁在乎他自不自闭  有什么区别吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Who cares? What's the difference?
+Dialogue: 0,0:25:12.96,0:25:14.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你同意他们的观点  对吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You agree with them, right?
+Dialogue: 0,0:25:15.84,0:25:17.22,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你同意他们吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Do you agree with them?
+Dialogue: 0,0:25:17.22,0:25:18.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这是我的团队  我不希望任何人来告诉我{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's my team -- I don't want anybody telling me
+Dialogue: 0,0:25:18.90,0:25:20.33,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}谁应该在我的团队里{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}who's supposed to be on my team,
+Dialogue: 0,0:25:20.33,0:25:20.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}即使是董事会{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}including the Board.
+Dialogue: 0,0:25:20.90,0:25:22.53,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你没有回答我的问题{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're not answering my question.
+Dialogue: 0,0:25:22.56,0:25:23.35,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这个问题没有意义{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The question's moot.
+Dialogue: 0,0:25:23.35,0:25:25.30,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没有意义  并不是{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Moot? No, it's not.
+Dialogue: 0,0:25:25.67,0:25:26.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果你同意他们的观点{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}If you agree with them,
+Dialogue: 0,0:25:26.64,0:25:29.71,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}那么唯一的问题就是有人踩到了你的痛处{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}then the only issue is somebody stepping on your poor, little toes.
+Dialogue: 0,0:25:29.71,0:25:31.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}克服它  然后去救那个孩子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Get over it and go save the kid.
+Dialogue: 0,0:25:31.70,0:25:32.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果你不同意{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}If you don't agree,
+Dialogue: 0,0:25:32.87,0:25:34.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果你认为肖恩能够进行手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}if you think Shaun can handle surgery,
+Dialogue: 0,0:25:34.64,0:25:35.42,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}那就告诉他们{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}then tell them that.
+Dialogue: 0,0:25:35.42,0:25:37.91,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}让他们哪凉快去哪儿{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Tell them to go screw themselves.
+Dialogue: 0,0:25:37.91,0:25:41.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他们要么同意莫菲医生和你一起做手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Either they agree that Dr. Murphy belongs in that room with you,
+Dialogue: 0,0:25:41.95,0:25:45.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}要么就去别的地方做手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}or you can go find them someplace else to do the surgery.
+Dialogue: 0,0:25:52.62,0:25:55.19,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}当时我18岁  举目无亲  身无分文{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I was an 18-year-old with no one and no money.
+Dialogue: 0,0:25:56.16,0:25:58.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所以我打三份工  然后贷了款{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}So I worked three jobs and took out loans.
+Dialogue: 0,0:26:06.98,0:26:08.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}还没死呢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Still alive.
+Dialogue: 0,0:26:11.04,0:26:13.19,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}故事不错  毛头小子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's not a bad story, 28.
+Dialogue: 0,0:26:14.81,0:26:16.76,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}父母怎么样了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What happened with the parents?
+Dialogue: 0,0:26:18.42,0:26:20.06,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}现在我和他们有联系  但是...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I talk to them now, but...
+Dialogue: 0,0:26:22.25,0:26:24.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}帮我走到现在的人不是他们{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}they're not the people who got me here.
+Dialogue: 0,0:26:24.80,0:26:26.41,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}而是我从没想到的人{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It was the people I didn't expect --
+Dialogue: 0,0:26:26.41,0:26:29.22,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}避难所的前海军给了我第一份工作{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}the ex-Marine at the shelter who got me my first job,
+Dialogue: 0,0:26:29.54,0:26:31.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}然后有个疯狂的艺术女孩{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and this crazy artist girl
+Dialogue: 0,0:26:31.95,0:26:34.33,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}说服我去追求我的梦想{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}who convinced me to go after what I really wanted.
+Dialogue: 0,0:26:36.96,0:26:38.45,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}当你觉得孤身一人时  格伦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}When you think you're alone, Glen,
+Dialogue: 0,0:26:39.52,0:26:40.55,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}其实你并不孤单{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}you're not.
+Dialogue: 0,0:26:52.09,0:26:53.06,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}All right.
+Dialogue: 0,0:26:54.80,0:26:55.72,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}「好吧」{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}All right?
+Dialogue: 0,0:27:02.08,0:27:02.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}准备好了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Ready?
+Dialogue: 0,0:27:03.12,0:27:04.23,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}二  三{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Two, three!
+Dialogue: 0,0:27:06.24,0:27:07.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没做不安的梦吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}No disturbing dreams?
+Dialogue: 0,0:27:07.57,0:27:10.10,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我都值了36小时的班{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}After a 36-hour shift?
+Dialogue: 0,0:27:10.17,0:27:11.89,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}从我躺到床上那一刻{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}From the moment my head hits the pillow
+Dialogue: 0,0:27:11.89,0:27:13.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}到醒来那一刻{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}to the moment wake up,
+Dialogue: 0,0:27:13.55,0:27:15.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}一夜无梦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}all I see is black.
+Dialogue: 0,0:27:16.43,0:27:17.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你的注意力怎么样{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}How's your level of concentration?
+Dialogue: 0,0:27:17.95,0:27:20.06,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}有难以集中注意力吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Have you had any difficulty focusing?
+Dialogue: 0,0:27:20.06,0:27:23.91,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我可以一口气做完《纽约时报》的填字游戏{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I mean, I can do the New York Times crossword puzzle in one sitting.
+Dialogue: 0,0:27:27.02,0:27:30.19,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}当然  有时我会希望自己更专注些{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Sure, sometimes I wish I was more focused.
+Dialogue: 0,0:27:30.70,0:27:32.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}很正常吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's pretty normal, right?
+Dialogue: 0,0:27:36.59,0:27:37.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肖恩与众不同{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Shaun's different.
+Dialogue: 0,0:27:38.52,0:27:40.11,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他也有学者综合征{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He also has savant syndrome.
+Dialogue: 0,0:27:40.11,0:27:41.77,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他记忆超群{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He has a remarkable memory.
+Dialogue: 0,0:27:42.04,0:27:45.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他有自闭症  跟我们的儿子一样{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He has autism, same as our son --
+Dialogue: 0,0:27:45.16,0:27:46.53,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}同样的局限性{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}same limitations.
+Dialogue: 0,0:27:46.54,0:27:48.65,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你也看到做核磁共振时我儿子的状态{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You saw what happened to our son in the MRI --
+Dialogue: 0,0:27:48.65,0:27:51.22,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他知道该安静地躺着  但他做不到{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}he knew he needed to lie still, but he couldn't.
+Dialogue: 0,0:27:51.65,0:27:54.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}要是莫菲医生在给我儿子动手术时{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Now, what happens if Dr. Murphy breaks down like that
+Dialogue: 0,0:27:54.51,0:27:57.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}也像那样行为失控了呢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}while he's standing over my son at an operating table?
+Dialogue: 0,0:27:57.87,0:27:59.37,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你了解你的儿子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You know your son.
+Dialogue: 0,0:28:00.25,0:28:01.88,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我了解外科医生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I know surgeons.
+Dialogue: 0,0:28:02.40,0:28:04.12,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}在跟莫菲医生共事之后{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And after working with Dr. Murphy,
+Dialogue: 0,0:28:04.12,0:28:07.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}在手术台和其他地方质疑他之后{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}after challenging him in surgery and everywhere else --
+Dialogue: 0,0:28:08.34,0:28:10.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}或许他值得更多尊重{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}probably more than he deserved --
+Dialogue: 0,0:28:11.32,0:28:14.27,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我可以说我对他信心十足{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I can tell you he has my compete confidence.
+Dialogue: 0,0:28:21.50,0:28:22.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}抱歉{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm sorry.
+Dialogue: 0,0:28:23.34,0:28:24.71,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们对他没信心{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He doesn't have ours.
+Dialogue: 0,0:28:25.82,0:28:28.80,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}那我们现在怎么办{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}So, what do we do now?
+Dialogue: 0,0:28:28.80,0:28:31.85,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我联系了圣约瑟夫的同事{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I've contacted my colleague at St. Joseph's,
+Dialogue: 0,0:28:31.86,0:28:33.27,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}跟她介绍了利亚姆的情况{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}updated her on Liam's condition.
+Dialogue: 0,0:28:33.27,0:28:34.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}那里的医生很厉害{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}They have good people.
+Dialogue: 0,0:28:35.58,0:28:38.62,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们可以尽快安排转院{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We can arrange for transportation as soon as possible.
+Dialogue: 0,0:28:39.18,0:28:41.02,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我的手机在哪  看见我的手机了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Where's my phone? Have you seen my phone?
+Dialogue: 0,0:28:41.02,0:28:44.20,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他的第二个包呢  装着他的药的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Where's his second bag, the one with his medications?
+Dialogue: 0,0:28:44.33,0:28:45.46,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我想...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I want...
+Dialogue: 0,0:28:47.11,0:28:48.24,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我想...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I want...
+Dialogue: 0,0:28:50.09,0:28:51.21,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}怎么了  宝贝{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What, honey?
+Dialogue: 0,0:28:51.57,0:28:53.68,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他说了我可以的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He said I could do it.
+Dialogue: 0,0:28:55.50,0:28:58.33,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我想要肖恩医生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I want Dr. Shaun.
+Dialogue: 0,0:29:04.63,0:29:05.62,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你的起搏器到了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Your pacemaker's here.
+Dialogue: 0,0:29:05.62,0:29:07.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}此刻已经在测试它了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The techs are programming it as we speak.
+Dialogue: 0,0:29:07.74,0:29:09.53,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}一旦准备好了  就给你装进去{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The moment they're ready, we're gonna put it in.
+Dialogue: 0,0:29:21.95,0:29:25.43,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我之前说我的妻子去世了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I told you my wife died.
+Dialogue: 0,0:29:26.18,0:29:30.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}事实是她抛弃了我{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The truth is s-she left me.
+Dialogue: 0,0:29:32.50,0:29:34.91,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但她抛弃我也情有可原{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}But I gave her good reason for that,
+Dialogue: 0,0:29:35.05,0:29:37.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这是我该得的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}so I got what I deserved.
+Dialogue: 0,0:29:39.23,0:29:42.79,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-我们都... -但你没得到该得的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- We all make -- But you didn't get what you deserved --
+Dialogue: 0,0:29:43.43,0:29:46.27,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你该有爱你的父母{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}good parents who loved you.
+Dialogue: 0,0:29:48.29,0:29:51.84,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他们很幸运生了你  杰瑞德{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}They were lucky to have you, Jared.
+Dialogue: 0,0:30:07.41,0:30:09.52,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你似乎调整得很好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You appear remarkably well-adjusted.
+Dialogue: 0,0:30:09.53,0:30:10.31,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}谢谢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Thank you.
+Dialogue: 0,0:30:10.31,0:30:11.71,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}那不是称赞{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's not a compliment.
+Dialogue: 0,0:30:11.71,0:30:13.18,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我对此感到担忧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's my concern.
+Dialogue: 0,0:30:14.38,0:30:17.45,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我猜每个人的反应都不一样{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Well, I assume everyone responds differently.
+Dialogue: 0,0:30:17.45,0:30:20.61,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但每个人都有反应{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The thing is everyone responds.
+Dialogue: 0,0:30:22.08,0:30:23.10,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}严格来说{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Strictly speaking,
+Dialogue: 0,0:30:23.10,0:30:25.97,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你还不需要接受治疗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}you don't meet the criteria to be required to go into treatment
+Dialogue: 0,0:30:25.97,0:30:28.40,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}或者休假{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}or take a leave of absence,
+Dialogue: 0,0:30:28.56,0:30:29.94,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所以我不会让你停职{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}so I'm not gonna ground you.
+Dialogue: 0,0:30:34.72,0:30:36.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你是个坚强的女人  克莱尔{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're a strong woman, Claire,
+Dialogue: 0,0:30:36.53,0:30:39.30,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}而这个力量无疑帮助了你很多{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and that strength has undoubtedly played a major role
+Dialogue: 0,0:30:39.30,0:30:40.89,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}让你走到今天{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}in getting you where you are.
+Dialogue: 0,0:30:42.26,0:30:45.61,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但如果你对此事件压抑了自己的感情{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}But if you have suppressed feelings about this incident,
+Dialogue: 0,0:30:46.24,0:30:48.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你需要说给别人听{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}you need to find someone to share them with.
+Dialogue: 0,0:30:48.96,0:30:51.62,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}否则  它们会吞噬你{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Because if not, they will eat you up
+Dialogue: 0,0:30:52.06,0:30:53.48,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不管你有多坚强{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}no matter how strong you are.
+Dialogue: 0,0:30:59.75,0:31:02.76,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好  格伦  第二...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}All right, Glen. Second ti--
+Dialogue: 0,0:31:04.54,0:31:05.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}拜托{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Come on.
+Dialogue: 0,0:31:11.00,0:31:12.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}谢谢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Thank you.
+Dialogue: 0,0:31:14.34,0:31:16.22,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这该是个非常有趣的手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It should be a very interesting surgery.
+Dialogue: 0,0:31:16.22,0:31:18.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我很高兴有机会参加{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm glad I'm participating.
+Dialogue: 0,0:31:21.08,0:31:22.72,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他的血压降到最低点{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}His pressure is bottoming out.
+Dialogue: 0,0:31:22.72,0:31:23.36,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}怎么回事{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What's happening?
+Dialogue: 0,0:31:23.37,0:31:24.98,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他肯定肠穿孔了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}His bowel must have perforated.
+Dialogue: 0,0:31:24.98,0:31:26.99,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他进入感染性休克{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He's going into septic shock.
+Dialogue: 0,0:31:29.99,0:31:31.88,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这个穿孔可能在任何地方{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}This perforation could be anywhere.
+Dialogue: 0,0:31:32.16,0:31:35.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}最快查看整条肠的最好方式是什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}What's the best way to access the entire bowel as quickly as possible?
+Dialogue: 0,0:31:35.29,0:31:36.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}全长中线切开{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Full-length midline incision.
+Dialogue: 0,0:31:36.79,0:31:37.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}很好  标记一下{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Good. Mark it.
+Dialogue: 0,0:31:37.96,0:31:39.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们切开之后要怎么做{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And what do we do once we get in there?
+Dialogue: 0,0:31:39.51,0:31:41.00,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}取出整条肠{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Eviscerate the entire bowel
+Dialogue: 0,0:31:41.00,0:31:43.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}以彻底检查坏死的部分{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}so we can check every inch for necrotic segments.
+Dialogue: 0,0:31:43.70,0:31:45.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好  开始切开{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Okay, let's make the cut.
+Dialogue: 0,0:31:51.25,0:31:52.53,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你要不要负责切开{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You gonna take it or not?
+Dialogue: 0,0:32:15.84,0:32:17.84,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这是3L号手术刀{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}This is the Number 3 L.
+Dialogue: 0,0:32:17.84,0:32:20.91,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}高碳钢制成  不会折断{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's made of high carbon steel. It doesn't break.
+Dialogue: 0,0:32:21.16,0:32:22.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}没错  莫菲医生{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's correct, Dr. Murphy.
+Dialogue: 0,0:32:35.77,0:32:38.38,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}切开时间  下午2:05{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Time of incision -- 2:05 p.m.
+Dialogue: 0,0:32:38.70,0:32:39.93,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}全面封锁{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We have a code green --
+Dialogue: 0,0:32:40.10,0:32:43.32,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}患者为白人男性  73岁{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}patient is a Caucasian male, 73 years of age.
+Dialogue: 0,0:32:43.32,0:32:44.30,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他去哪里了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Where'd he go?
+Dialogue: 0,0:32:45.72,0:32:47.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好  我这就过去{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yeah, on my way.
+Dialogue: 0,0:32:50.38,0:32:54.09,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我找到五公分长的近端空肠段{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I have a five-centimeter segment of proximal jejunum.
+Dialogue: 0,0:32:54.36,0:32:55.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}已硬化  但没穿孔{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's...sclerotic, but not perforated.
+Dialogue: 0,0:32:55.78,0:32:57.28,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好  标记然后继续{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}All right, mark it and move on.
+Dialogue: 0,0:32:57.93,0:32:58.91,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肖恩  你为什么傻站着{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Shaun, why are you just standing there?
+Dialogue: 0,0:32:58.91,0:33:00.99,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们还有八米的肠要查看{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We have 25 feet of bowel to run.
+Dialogue: 0,0:33:02.71,0:33:06.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肖恩  赶紧继续  除非你有发现{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Shaun, you need to get moving -- unless you've found something.
+Dialogue: 0,0:33:06.26,0:33:09.17,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-我找到穿孔了  -夹住它{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- I have the perforation. - Clamp it off --
+Dialogue: 0,0:33:09.17,0:33:12.21,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我会用肠切开剪去除受损部位{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'll get in there with the enterotomy scissors and remove the damaged segment.
+Dialogue: 0,0:33:13.08,0:33:14.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我不能{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I can't.
+Dialogue: 0,0:33:16.45,0:33:18.18,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你不能  为什么{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You can't? Why not?
+Dialogue: 0,0:33:18.18,0:33:19.65,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是蜂窝织炎{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's a phlegmon.
+Dialogue: 0,0:33:20.53,0:33:21.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你找到了透壁性脓肿{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You found a walled-off abscess?
+Dialogue: 0,0:33:21.90,0:33:23.01,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}很大{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's large.
+Dialogue: 0,0:33:23.01,0:33:24.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-别碰  -已经碰了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- Don't touch it. - I already am.
+Dialogue: 0,0:33:24.70,0:33:26.38,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}如果你移动造成它破裂{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}If you move and that thing ruptures,
+Dialogue: 0,0:33:26.38,0:33:28.43,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}脓会扩散到他整个腹腔{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}the pus will spread to his entire abdominal cavity --
+Dialogue: 0,0:33:28.43,0:33:29.28,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}造成死亡{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}this boy dies.
+Dialogue: 0,0:33:29.28,0:33:31.10,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我知道  所以我没动{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I know, that's why I'm not moving.
+Dialogue: 0,0:33:31.10,0:33:32.87,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}克莱尔  你把它轻轻地打开{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Claire, I need you to open it up gently.
+Dialogue: 0,0:33:32.87,0:33:34.65,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我要除去脓毒含量{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'm gonna evacuate the septic contents,
+Dialogue: 0,0:33:34.65,0:33:36.31,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}用抗生素冲洗腹腔{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}flush the cavity with antibiotics,
+Dialogue: 0,0:33:36.31,0:33:38.04,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}然后我会让你移除胶囊{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and then I'm gonna have you remove the capsule.
+Dialogue: 0,0:33:39.07,0:33:40.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我什么也没做{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I didn't do anything.
+Dialogue: 0,0:33:40.16,0:33:41.24,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}血压在降到最低点{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}That's the pressure tanking.
+Dialogue: 0,0:33:41.24,0:33:43.98,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}必须赶快完成{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You need to finish what you're doing right now.
+Dialogue: 0,0:33:46.86,0:33:48.44,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}赶紧  克莱尔  加油{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Let's go, Claire. Come on.
+Dialogue: 0,0:33:51.86,0:33:52.77,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}夹住{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Clamp.
+Dialogue: 0,0:33:53.70,0:33:54.91,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们去看左边{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You guys check left.
+Dialogue: 0,0:34:05.54,0:34:06.08,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}起来吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Come on.
+Dialogue: 0,0:34:06.08,0:34:07.05,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}住手{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Stop.
+Dialogue: 0,0:34:09.49,0:34:10.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好了  格伦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Come on, Glen.
+Dialogue: 0,0:34:11.19,0:34:12.20,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们能做到的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We can do this.
+Dialogue: 0,0:34:12.20,0:34:13.43,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我不想...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I don't want to --
+Dialogue: 0,0:34:13.66,0:34:15.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我就是不想{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I just don't want to.
+Dialogue: 0,0:34:15.16,0:34:18.22,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}求你了  别管我{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Please leave me alone.
+Dialogue: 0,0:34:19.27,0:34:22.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我一有了力气  就爬起来跳下去{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Once I get my strength back, I'll climb up and jump.
+Dialogue: 0,0:34:24.87,0:34:26.23,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我不会让你那么做的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I can't let you do that.
+Dialogue: 0,0:34:37.52,0:34:39.58,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}当这个临时起搏器失效的时候{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}When this temporary pacer fails,
+Dialogue: 0,0:34:39.79,0:34:40.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}它肯定会失效的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}which it will,
+Dialogue: 0,0:34:42.67,0:34:44.85,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你的心跳就会停止  你会突然死亡{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}your heart may stop and you die suddenly.
+Dialogue: 0,0:34:45.90,0:34:46.83,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但更有可能的是  格伦{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}But more likely, Glen,
+Dialogue: 0,0:34:46.83,0:34:48.83,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你的心率会减缓{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}you slip back into that slow rhythm,
+Dialogue: 0,0:34:49.00,0:34:51.18,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}胸部剧痛{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}your chest is racked with excruciating pain
+Dialogue: 0,0:34:51.18,0:34:52.60,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}肺部开始充满液体{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and your lungs start to fill with fluid,
+Dialogue: 0,0:34:52.61,0:34:54.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你会缓慢窒息{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and slowly you suffocate.
+Dialogue: 0,0:34:54.91,0:34:56.58,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}省省吧  毛头小子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Give it a rest, 28.
+Dialogue: 0,0:34:57.02,0:34:59.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}把不抢救预嘱拿来  再给我叫辆出租车就好了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Just get me a DNR and a cab.
+Dialogue: 0,0:35:00.14,0:35:01.51,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你帮不了我的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You can't help me.
+Dialogue: 0,0:35:10.93,0:35:12.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我可以{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Yes, I can.
+Dialogue: 0,0:35:24.82,0:35:27.55,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}手术很艰难{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It was a difficult procedure.
+Dialogue: 0,0:35:27.55,0:35:29.67,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们切除了...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}We removed a total of two feet of --
+Dialogue: 0,0:35:29.67,0:35:30.80,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他没事吧{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Is he okay?
+Dialogue: 0,0:35:30.80,0:35:32.39,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他会没事的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He will be okay.
+Dialogue: 0,0:35:34.80,0:35:35.98,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}谢谢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Thank you.
+Dialogue: 0,0:35:37.27,0:35:40.69,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}谢谢  谢谢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Thank you, thank you.
+Dialogue: 0,0:35:43.98,0:35:47.10,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我  我很抱歉  我们  我们只是...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I-I'm sorry. We're -- We just...
+Dialogue: 0,0:35:50.55,0:35:51.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他是我们的儿子{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He's our son.
+Dialogue: 0,0:35:52.20,0:35:53.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们不用觉得抱歉{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You shouldn't feel bad.
+Dialogue: 0,0:35:54.10,0:35:56.43,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们做了你们认为对于利亚姆来说最好的选择{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You did what you thought was best for Liam.
+Dialogue: 0,0:35:56.53,0:35:57.92,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们爱利亚姆{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You love Liam.
+Dialogue: 0,0:35:59.05,0:36:01.18,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我就没有从我父母那里得到那样的爱{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I didn't have that from my parents.
+Dialogue: 0,0:36:03.53,0:36:05.55,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}同时我也不用服用卡法根{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It also means I didn't have to take kava root,
+Dialogue: 0,0:36:05.55,0:36:08.82,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}所以我没得嗜酸性胃肠炎{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}so I didn't get hypereosinophilic gastroenteritis.
+Dialogue: 0,0:36:24.43,0:36:27.15,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你会因为这个而惹上麻烦吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Are you gonna get in trouble for this?
+Dialogue: 0,0:36:29.16,0:36:30.69,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你现在是在担心我吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You're worried about me now?
+Dialogue: 0,0:36:32.55,0:36:33.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你签署了不抢救预嘱{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You signed the DNR.
+Dialogue: 0,0:36:34.88,0:36:36.46,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我所做的只是坐在这里陪你{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}All I'm doing is sitting with you.
+Dialogue: 0,0:36:47.30,0:36:57.00,Default,NTP,0000,0000,0000,,\N{\an1\fad(500,500)}{\fn方正黑体_GBK\fs16\b1\bord0\shad0\c&H00DCFF&}BGM: {\b0\bord1\shad0\c&HFFFFFF&\3c&HE17D00&}Kennedy {\b1\bord0\shad0\c&H00DCFF&}by {\b0\bord1\shad0\c&HFFFFFF&\3c&HE17D00&}Donovan Woods
+Dialogue: 0,0:36:47.31,0:36:53.08,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ When they say your father's name ♪{\r}
+Dialogue: 0,0:36:53.90,0:36:55.63,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ They're talkin' 'bout a boat ♪{\r}
+Dialogue: 0,0:36:56.88,0:36:59.25,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ They're not talkin' 'bout him ♪{\r}
+Dialogue: 0,0:37:00.77,0:37:03.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ 'Cause they can't trust you as far ♪{\r}
+Dialogue: 0,0:37:03.16,0:37:04.79,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你害怕吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Are you feeling any anxiety?
+Dialogue: 0,0:37:05.59,0:37:06.57,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}No.
+Dialogue: 0,0:37:07.63,0:37:08.62,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}疼吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Pain?
+Dialogue: 0,0:37:09.57,0:37:10.58,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}有点{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Some.
+Dialogue: 0,0:37:11.48,0:37:13.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}要打一针吗啡来缓解一下吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Would you like a dose of morphine to help with that?
+Dialogue: 0,0:37:15.25,0:37:21.02,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ But back then the ship seemed sunk ♪{\r}
+Dialogue: 0,0:37:21.53,0:37:24.37,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ I couldn't sleep when I wasn't drunk ♪{\r}
+Dialogue: 0,0:37:25.07,0:37:27.95,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ I couldn't sleep when I wasn't drunk ♪{\r}
+Dialogue: 0,0:37:30.37,0:37:35.42,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ But now a bad idea ♪{\r}
+Dialogue: 0,0:37:36.04,0:37:38.66,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Has cut you in two ♪{\r}
+Dialogue: 0,0:37:40.75,0:37:44.33,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Darlin', I just don't know ♪{\r}
+Dialogue: 0,0:37:43.07,0:37:44.58,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}谢谢{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Thank you.
+Dialogue: 0,0:37:46.32,0:37:49.75,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Darlin', I just don't know ♪{\r}
+Dialogue: 0,0:37:51.47,0:37:54.44,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Some things you just let go ♪{\r}
+Dialogue: 0,0:37:56.72,0:38:00.99,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Some things you just let go ♪{\r}
+Dialogue: 0,0:38:07.84,0:38:15.20,Default,NTP,0000,0000,0000,,\N{\an1\fad(500,500)}{\fn方正黑体_GBK\fs16\b1\bord0\shad0\c&H00DCFF&}BGM: {\b0\bord1\shad0\c&HFFFFFF&\3c&HE17D00&}Shine a Light {\b1\bord0\shad0\c&H00DCFF&}by {\b0\bord1\shad0\c&HFFFFFF&\3c&HE17D00&}Banners
+Dialogue: 0,0:38:15.29,0:38:16.47,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}找到你的患者了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Find your guy?
+Dialogue: 0,0:38:17.31,0:38:18.44,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}找到了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I did.
+Dialogue: 0,0:38:20.70,0:38:22.32,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}做双室起搏器手术了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Put in the biventricular?
+Dialogue: 0,0:38:22.51,0:38:27.93,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Light will lead the way to set you free ♪{\r}
+Dialogue: 0,0:38:25.72,0:38:28.67,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}到冠状窦要多久{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}How long did it take to get access to the coronary sinus?
+Dialogue: 0,0:38:29.52,0:38:34.99,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ I'm only looking for a little peace ♪{\r}
+Dialogue: 0,0:38:30.83,0:38:32.38,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我没有做手术{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I didn't do the surgery.
+Dialogue: 0,0:38:34.95,0:38:36.94,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我没有把起搏器放进去  他...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I didn't put the pacer in. He, um...
+Dialogue: 0,0:38:38.00,0:38:39.23,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他不想做{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}he didn't want it.
+Dialogue: 0,0:38:47.46,0:38:48.65,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他是个好人{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He was a good guy.
+Dialogue: 0,0:38:49.19,0:38:52.85,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ And when the night falls ♪{\r}
+Dialogue: 0,0:38:52.85,0:38:55.96,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Oh, call on me ♪{\r}
+Dialogue: 0,0:38:57.74,0:39:04.67,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Just don't forget to show me some mercy ♪{\r}
+Dialogue: 0,0:38:58.66,0:39:00.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我也失去了一位患者{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I lost a patient, too.
+Dialogue: 0,0:39:05.27,0:39:06.55,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}想聊聊吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Want to talk about it?
+Dialogue: 0,0:39:08.18,0:39:12.27,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Say you're mine ♪{\r}
+Dialogue: 0,0:39:12.57,0:39:13.93,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}想{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I do.
+Dialogue: 0,0:39:15.55,0:39:20.11,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Take me higher ♪{\r}
+Dialogue: 0,0:39:43.58,0:39:45.34,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你的手术很成功{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Your surgery went well.
+Dialogue: 0,0:39:46.08,0:39:48.59,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们一旦确认抗生素清除了感染{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You should be able to get up and move around in two weeks
+Dialogue: 0,0:39:48.59,0:39:51.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你就能起来走动了  时间约为两周{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}once we're sure the antibiotics have cleared your infection.
+Dialogue: 0,0:39:51.70,0:39:52.71,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}听到了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Hear that?
+Dialogue: 0,0:39:53.28,0:39:55.81,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我们很快就能回家了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It won't be too long until we can go home.
+Dialogue: 0,0:39:55.83,0:39:57.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你做得很棒  宝贝{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You did great, honey.
+Dialogue: 0,0:40:02.54,0:40:03.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}灯光{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}The lights.
+Dialogue: 0,0:40:08.24,0:40:10.28,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Shine a light ♪{\r}
+Dialogue: 0,0:40:09.42,0:40:10.28,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这个亮度可以吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Are the lights okay?
+Dialogue: 0,0:40:10.28,0:40:13.27,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Shine a light on me ♪{\r}
+Dialogue: 0,0:40:12.63,0:40:14.01,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}还是想暗一些{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Do you want them dimmed?
+Dialogue: 0,0:40:15.68,0:40:21.24,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Shine a light on, shine a light on me ♪{\r}
+Dialogue: 0,0:40:17.92,0:40:21.64,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}这样...  就可以了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}They're...okay.
+Dialogue: 0,0:40:21.74,0:40:24.12,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ 'Cause I was lost at sea ♪{\r}
+Dialogue: 0,0:40:24.12,0:40:29.05,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ While the waves were dragging me underneath ♪{\r}
+Dialogue: 0,0:40:30.49,0:40:36.13,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}♪ Shine a light on, shine a light on me ♪{\r}
+Dialogue: 0,0:40:40.16,0:40:41.63,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你一定会爱上那个软件的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You'll love the software.
+Dialogue: 0,0:40:42.33,0:40:44.43,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}它让做预算变得很容易{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It makes it very easy to budget.
+Dialogue: 0,0:40:44.82,0:40:47.19,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}最棒的是  它直接关联到银行{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}And the best part, it links directly to the bank,
+Dialogue: 0,0:40:47.19,0:40:49.13,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}放开球{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}and -- get rid of the ball!
+Dialogue: 0,0:40:49.13,0:40:52.09,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他是2013年在第一顺位被选中的四分卫{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He was the first quarterback picked in 2013,
+Dialogue: 0,0:40:52.09,0:40:56.16,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}但据说他的传球成功率只有27％{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}but his stats outside the pocket are only 27% competed passes.
+Dialogue: 0,0:40:56.16,0:40:59.70,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他们的替补四分卫在压力下的传球成功率为65％{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Their backup QB is at 65% under pressure.
+Dialogue: 0,0:40:59.82,0:41:01.02,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}是啊{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Absolutely.
+Dialogue: 0,0:41:01.24,0:41:03.90,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}-做替补真是浪费了他的天赋  -是啊{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}- He's wasted potential on the bench. - Yes.
+Dialogue: 0,0:41:03.90,0:41:08.03,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}总之  和银行的关联会帮助自动...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Anyway, the link to the bank will help make automatic --
+Dialogue: 0,0:41:08.82,0:41:10.07,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你看到了吗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Did you see that?
+Dialogue: 0,0:41:10.07,0:41:12.78,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}他按住了他的头盔  甚至都犯规了{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}He pinned it against his helmet -- even with the PI!
+Dialogue: 0,0:41:12.78,0:41:14.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我要去看超级碗{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I want to go to the Super Bowl.
+Dialogue: 0,0:41:14.30,0:41:16.12,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好了  看  这就是那种{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Okay, see, that's exactly the kind of thing
+Dialogue: 0,0:41:16.12,0:41:18.33,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你在买之前得考虑一下的事情{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}you have to think about before you buy.
+Dialogue: 0,0:41:18.33,0:41:20.29,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}票很贵的{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Tickets are very expensive.
+Dialogue: 0,0:41:25.45,0:41:27.19,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你知道...你知道吗  你应该去{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}You know -- You know what? You should go.
+Dialogue: 0,0:41:27.19,0:41:28.75,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我也应该去  我们都应该去{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I should go. We should go.
+Dialogue: 0,0:41:28.75,0:41:29.43,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}好{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Okay.
+Dialogue: 0,0:41:29.43,0:41:30.55,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}不好意思{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Excuse me.
+Dialogue: 0,0:41:31.49,0:41:33.67,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}马上就要关门了  所以...{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}It's almost closing time, so...
+Dialogue: 0,0:41:33.67,0:41:35.75,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}我想买这台电视{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}I'd like to buy this TV.
+Dialogue: 0,0:41:39.49,0:41:40.80,Default,NTP,0000,0000,0000,,{\fnAaKaiTi\fs22\shad0\3c&HFF0000&}你们想待多久都行{\r\fnMicrosoft YaHei\fs14}\N{\fn微软雅黑\fs14}Stay as long as you like.
+
+
