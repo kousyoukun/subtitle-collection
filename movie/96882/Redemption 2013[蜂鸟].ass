@@ -1,0 +1,913 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: YYeTs
+Original Script: YYeTs
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 1280
+PlayResY: 720
+Timer: 100.0000
+Synch Point: 0
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 中文对白,WenQuanYi Micro Hei,50,&H00FFFFFF,&H0000FFFF,&H00521405,&H00000000,-1,0,0,0,100,100,1,0,1,1,0,2,20,20,2,1
+Style: 英文对白,WenQuanYi Micro Hei,30,&H000793D4,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,2,10,10,1,1
+Style: Default,Arial,20,&H00EFEFEF,&H00000000,&H00000000,&H000F0F0F,0,0,0,0,100,100,0,0,1,1,0,2,30,30,2,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:22.73,0:00:26.94,中文对白,NTP,0,0,0,,阿富汗           赫尔曼德省
+Dialogue: 0,0:02:03.81,0:02:08.08,Default,NTP,0,0,0,,伦 敦
+Dialogue: 0,0:02:17.22,0:02:21.99,Default,NTP,0,0,0,,一 年 后
+Dialogue: 0,0:26:12.41,0:26:15.71,Default,NTP,0,0,0,,伊莎贝尔 给乔伊打电话
+Dialogue: 0,0:32:52.63,0:32:54.01,Default,NTP,0,0,0,,他什么来头
+Dialogue: 0,0:33:05.40,0:33:06.77,Default,NTP,0,0,0,,这不稀奇
+Dialogue: 0,0:33:07.57,0:33:09.48,Default,NTP,0,0,0,,斯坦利叔叔在纽约也雇了一个
+Dialogue: 0,0:33:12.28,0:33:14.16,Default,NTP,0,0,0,,芝加哥的婶婶雇了两个
+Dialogue: 0,0:33:15.20,0:33:17.03,Default,NTP,0,0,0,,在美国这是身份的象征
+Dialogue: 0,0:33:18.79,0:33:20.12,Default,NTP,0,0,0,,雇他们对生意有帮助
+Dialogue: 0,0:33:21.12,0:33:22.62,Default,NTP,0,0,0,,容易迷惑警方
+Dialogue: 0,0:33:24.42,0:33:26.17,Default,NTP,0,0,0,,他看着像杀过人
+Dialogue: 0,0:33:28.67,0:33:30.00,Default,NTP,0,0,0,,听说以前当过兵
+Dialogue: 0,0:33:32.97,0:33:35.64,Default,NTP,0,0,0,,这年头要找个开过戒的中国孩子太难了
+Dialogue: 0,0:33:36.68,0:33:38.97,Default,NTP,0,0,0,,他们一心想读大学
+Dialogue: 0,0:33:39.39,0:33:42.27,Default,NTP,0,0,0,,我大儿子在一家垃圾广告公司做
+Dialogue: 0,0:33:43.27,0:33:45.31,Default,NTP,0,0,0,,拍些狗屁广告
+Dialogue: 0,0:33:45.98,0:33:47.40,Default,NTP,0,0,0,,他干得好吗
+Dialogue: 0,0:33:48.11,0:33:50.69,Default,NTP,0,0,0,,这兔崽子不和我联系了
+Dialogue: 0,0:33:52.11,0:33:53.03,Default,NTP,0,0,0,,猴子
+Dialogue: 0,0:33:53.28,0:33:55.57,Default,NTP,0,0,0,,你能和他一起干活吗
+Dialogue: 0,0:33:57.28,0:33:59.95,Default,NTP,0,0,0,,没问题叔叔 他话不多  这点很好
+Dialogue: 0,0:34:26.31,0:34:28.69,Default,NTP,0,0,0,,只管给他开个价就行
+Dialogue: 0,1:10:11.20,1:10:13.25,Default,NTP,0,0,0,,有什么他能做的吗
+Dialogue: 0,1:10:14.62,1:10:16.96,Default,NTP,0,0,0,,可以让他干那个没人愿意做的活
+Dialogue: 0,1:11:43.09,1:11:45.05,Default,NTP,0,0,0,,伸出左手
+Dialogue: 0,1:11:45.38,1:11:47.13,Default,NTP,0,0,0,,握拳
+Dialogue: 0,1:12:22.92,1:12:24.67,Default,NTP,0,0,0,,握拳
+Dialogue: 0,0:00:22.73,0:00:22.73,Default,NTP,0,0,0,,
+Dialogue: 0,0:00:22.73,0:00:22.73,中文对白,NTP,0,0,0,,
+Dialogue: 0,0:00:36.09,0:00:38.15,中文对白,NTP,0,0,0,,Moving 964 southeast, over.\N向东南964位置移动  完毕
+Dialogue: 0,0:00:38.16,0:00:40.09,中文对白,NTP,0,0,0,,Hummingbird drone.\N蜂鸟无人机
+Dialogue: 0,0:00:40.09,0:00:42.26,中文对白,NTP,0,0,0,,Roger. They're not sure what that impacted.\N收到  地面情况不明
+Dialogue: 0,0:00:42.26,0:00:44.19,中文对白,NTP,0,0,0,,Make sure it wasn't one of your friendlies, roger.\N探查下是否是友军
+Dialogue: 0,0:00:48.40,0:00:50.27,中文对白,NTP,0,0,0,,Red hotel six, this is longhorn.\N红馆六号  我是长角牛
+Dialogue: 0,0:00:50.27,0:00:51.47,中文对白,NTP,0,0,0,,I see possible contact.\N可能有敌情
+Dialogue: 0,0:00:55.77,0:00:58.11,中文对白,NTP,0,0,0,,That was right where they were making contact from,\N他们就是从那里开火的
+Dialogue: 0,0:00:58.11,0:01:00.64,中文对白,NTP,0,0,0,,Red hotel tower.\N从旅馆顶上
+Dialogue: 0,0:01:00.65,0:01:02.51,中文对白,NTP,0,0,0,,There's an rpg coming from the east.\N有颗火箭弹从东边过来
+Dialogue: 0,0:01:05.75,0:01:08.45,中文对白,NTP,0,0,0,,4-2-0, this is 4-2 charlie.\N4-2-0  这里是4-2  查理
+Dialogue: 0,0:01:08.45,0:01:10.15,中文对白,NTP,0,0,0,,- Message over. - 420: Send, over.\N-报告完毕  -420  报告完毕
+Dialogue: 0,0:01:10.15,0:01:13.79,中文对白,NTP,0,0,0,,4-2 charlie, are you aware at grid 4-1?\N4-2  查理  你是在4-1坐标吗
+Dialogue: 0,0:01:13.79,0:01:16.29,中文对白,NTP,0,0,0,,...Only thing that was bad about it...\N唯一的不足之处是...
+Dialogue: 0,0:01:16.29,0:01:17.66,中文对白,NTP,0,0,0,,...I know...\N我知道
+Dialogue: 0,0:01:17.66,0:01:18.86,中文对白,NTP,0,0,0,,...There's been an ambush...\N遭遇了伏击
+Dialogue: 0,0:01:22.20,0:01:25.27,中文对白,NTP,0,0,0,,Do you copy, over? Sergeant Smith, do you copy?\N快回答  史密斯军士  快回答
+Dialogue: 0,0:01:25.27,0:01:28.20,中文对白,NTP,0,0,0,,4-2 charlie contact involving small arms fire on vehicle.\N4-2  查理遭遇了袭击  车身遭枪击
+Dialogue: 0,0:01:28.21,0:01:29.84,中文对白,NTP,0,0,0,,There are three guys running out there at the back.\N有三个人从车后跑了出来
+Dialogue: 0,0:01:34.78,0:01:36.71,中文对白,NTP,0,0,0,,Yep, he's got a weapon on the right.\N他右手拿着枪
+Dialogue: 0,0:01:36.71,0:01:38.41,中文对白,NTP,0,0,0,,Roger that. Hummingbird can see it.\N收到  蜂鸟可以看到
+Dialogue: 0,0:01:38.42,0:01:40.55,中文对白,NTP,0,0,0,,He's got a weapon.\N他有武器
+Dialogue: 0,0:01:40.55,0:01:41.85,中文对白,NTP,0,0,0,,He's still shooting up in the air right now.\N他还在朝天开枪
+Dialogue: 0,0:01:41.85,0:01:42.89,中文对白,NTP,0,0,0,,We see him.\N我们能看到他
+Dialogue: 0,0:01:45.39,0:01:48.59,中文对白,NTP,0,0,0,,Sergeant Smith, I have good arcs on your position.\N史密斯军士  这个角度能见度非常好
+Dialogue: 0,0:01:48.59,0:01:50.56,中文对白,NTP,0,0,0,,I believe he's British. He's shooting.\N他是英国人  他正在开枪射击
+Dialogue: 0,0:01:54.17,0:01:56.60,中文对白,NTP,0,0,0,,Echo 3-5-2, over.\N回音3-5-2  完毕
+Dialogue: 0,0:01:56.60,0:02:01.60,中文对白,NTP,0,0,0,,Installation provost marshal report a-r-6-3-0-1-0.\N宪兵司令报告第a-r-6-3-0-1-0号
+Dialogue: 0,0:02:01.61,0:02:03.44,中文对白,NTP,0,0,0,,Sergeant Joseph Smith.\N约瑟夫·史密斯军士
+Dialogue: 0,0:02:03.44,0:02:06.44,中文对白,NTP,0,0,0,,Absconded from Stanbrook Military Hospital secure wing.\N从斯坦布鲁克军事医院隔离区逃跑了
+Dialogue: 0,0:02:12.62,0:02:15.15,中文对白,NTP,0,0,0,,Diagnosed with combat stress.\N他被诊断为战争焦虑症
+Dialogue: 0,0:02:15.15,0:02:16.69,中文对白,NTP,0,0,0,,Filed as department of defense, long-term missing person.\N由国防部宣布为长期失踪人员
+Dialogue: 0,0:02:32.27,0:02:34.27,中文对白,NTP,0,0,0,,Sorry, mate.\N抱歉
+Dialogue: 0,0:02:52.22,0:02:55.22,中文对白,NTP,0,0,0,,Taxman!\N收税啦
+Dialogue: 0,0:02:55.23,0:02:58.26,中文对白,NTP,0,0,0,,All we want is your cash and your rocks.\N要么给钱  要么交货
+Dialogue: 0,0:02:58.26,0:02:59.53,中文对白,NTP,0,0,0,,Joey, don't fight back.\N乔伊  别还手
+Dialogue: 0,0:03:45.48,0:03:46.91,中文对白,NTP,0,0,0,,Run, Isabel!\N伊莎贝尔  快跑
+Dialogue: 0,0:11:10.85,0:11:12.69,中文对白,NTP,0,0,0,,Hi, this is Damon.\N你好  我是达蒙
+Dialogue: 0,0:11:12.69,0:11:14.26,中文对白,NTP,0,0,0,,I won't be available at this number\N十月一日之前
+Dialogue: 0,0:11:14.26,0:11:15.82,中文对白,NTP,0,0,0,,until October the first.\N这个打这个号码无法联系我
+Dialogue: 0,0:11:15.83,0:11:17.96,中文对白,NTP,0,0,0,,If you need me, you can call my agent Paul\N如果有事找我  请和我的经纪人保罗谈
+Dialogue: 0,0:11:17.96,0:11:20.26,中文对白,NTP,0,0,0,,Or reach me on my New York number.\N或者打我在纽约的电话
+Dialogue: 0,0:11:20.26,0:11:23.87,中文对白,NTP,0,0,0,,212-555-9898.\N212-555-9898
+Dialogue: 0,0:11:23.87,0:11:27.30,中文对白,NTP,0,0,0,,That's 212-555-9898.\N号码是212-555-9898
+Dialogue: 0,0:11:32.04,0:11:34.48,中文对白,NTP,0,0,0,,You have no new messages.\N没有新留言
+Dialogue: 0,0:12:46.88,0:12:51.32,中文对白,NTP,0,0,0,,Anybody lost or needs direction?\N有人迷失方向需要指点吗
+Dialogue: 0,0:12:51.79,0:12:55.86,中文对白,NTP,0,0,0,,Anybody lost or needs direction?\N有人迷失方向需要指点吗
+Dialogue: 0,0:12:55.86,0:12:58.86,中文对白,NTP,0,0,0,,Anybody lost or needs direction?\N有人迷失方向需要指点吗
+Dialogue: 0,0:13:00.56,0:13:02.40,中文对白,NTP,0,0,0,,Anybody lost or needs\N有人迷失方向...
+Dialogue: 0,0:13:13.44,0:13:14.54,中文对白,NTP,0,0,0,,Get off, get off!\N滚开  滚开
+Dialogue: 0,0:13:14.55,0:13:15.94,中文对白,NTP,0,0,0,,Don't do it!\N住手
+Dialogue: 0,0:13:50.31,0:13:52.48,中文对白,NTP,0,0,0,,Happy birthday, Cristina.\N生日快乐克里斯提娜
+Dialogue: 0,0:13:52.48,0:13:54.62,中文对白,NTP,0,0,0,,Actually, it was two days ago, but thank you.\N其实我生日是两天前  还是要谢谢你
+Dialogue: 0,0:13:59.29,0:14:01.32,中文对白,NTP,0,0,0,,Happy birthday, Cristina.\N生日快乐  克里斯提娜
+Dialogue: 0,0:14:01.33,0:14:03.56,中文对白,NTP,0,0,0,,Actually, it was two days ago, but thank you.\N其实我生日是两天前  还是要谢谢你
+Dialogue: 0,0:14:21.18,0:14:22.44,中文对白,NTP,0,0,0,,No alcohol.\N不准喝酒
+Dialogue: 0,0:14:30.22,0:14:31.92,中文对白,NTP,0,0,0,,I'm looking for someone.\N我是来找人的
+Dialogue: 0,0:14:38.90,0:14:41.30,中文对白,NTP,0,0,0,,Joseph, where did you get those clothes?\N约瑟夫  你这身行头哪里来的
+Dialogue: 0,0:14:41.30,0:14:44.90,中文对白,NTP,0,0,0,,Her name's Isabel.\N我要找伊莎贝尔
+Dialogue: 0,0:14:44.90,0:14:46.67,中文对白,NTP,0,0,0,,They saw her.\N他们发现她了
+Dialogue: 0,0:14:46.67,0:14:48.54,中文对白,NTP,0,0,0,,I've come to save her.\N我要救她
+Dialogue: 0,0:14:48.54,0:14:51.97,中文对白,NTP,0,0,0,,Joseph, did you rob someone?\N约瑟夫  你是不是抢了别人
+Dialogue: 0,0:14:51.98,0:14:54.94,中文对白,NTP,0,0,0,,I had some luck.\N我走运了
+Dialogue: 0,0:14:54.95,0:14:56.61,中文对白,NTP,0,0,0,,Maybe god, you know?\N可能是上帝显灵
+Dialogue: 0,0:14:59.32,0:15:00.42,中文对白,NTP,0,0,0,,God gave me this.\N上帝给了我这个
+Dialogue: 0,0:15:02.49,0:15:04.12,中文对白,NTP,0,0,0,,Joseph, I'm going to call David,\N约瑟夫  我得告诉大卫
+Dialogue: 0,0:15:04.12,0:15:07.59,中文对白,NTP,0,0,0,,my police liaison officer.\N他是我的警方联络人
+Dialogue: 0,0:15:09.36,0:15:13.13,中文对白,NTP,0,0,0,,This is for you, sister.\N这是给你的  修女
+Dialogue: 0,0:15:13.13,0:15:15.40,中文对白,NTP,0,0,0,,You're okay.\N你人不错
+Dialogue: 0,0:15:17.50,0:15:18.63,中文对白,NTP,0,0,0,,Buy something nice for yourself.\N给你自己买点东西吧
+Dialogue: 0,0:16:43.65,0:16:47.59,英文对白,NTP,0,0,0,,20  40  60  80  100 20, 40, 60, 80, 100.
+Dialogue: 0,0:16:47.59,0:16:51.73,英文对白,NTP,0,0,0,,20  40  60  80  200 20, 40, 60, 80, 200.
+Dialogue: 0,0:16:51.73,0:16:55.40,英文对白,NTP,0,0,0,,20  40  60  80  300 20, 40, 60, 80, 300.
+Dialogue: 0,0:16:55.40,0:16:58.43,英文对白,NTP,0,0,0,,20  40  60  80  400 20, 40, 60, 80, 400.
+Dialogue: 0,0:16:58.44,0:17:00.60,英文对白,NTP,0,0,0,,450  500 450, 500.
+Dialogue: 0,0:17:00.60,0:17:03.20,中文对白,NTP,0,0,0,,Sister Cristina.\N克里斯提娜修女
+Dialogue: 0,0:17:03.21,0:17:04.71,中文对白,NTP,0,0,0,,So, do you know how much is there?\N你知道共有多少钱吗
+Dialogue: 0,0:17:04.71,0:17:06.74,中文对白,NTP,0,0,0,,£500.\N500英镑
+Dialogue: 0,0:17:10.58,0:17:12.31,中文对白,NTP,0,0,0,,A donation is a donation.\N这是捐助得来的
+Dialogue: 0,0:17:12.32,0:17:13.78,中文对白,NTP,0,0,0,,I don't see the quandary.\N我觉得没问题
+Dialogue: 0,0:17:13.78,0:17:15.25,中文对白,NTP,0,0,0,,He's quite famous among them.\N他恶名昭著
+Dialogue: 0,0:17:15.25,0:17:17.22,中文对白,NTP,0,0,0,,They say he was a commando.\N他们说他是个突击队员
+Dialogue: 0,0:17:17.22,0:17:18.69,中文对白,NTP,0,0,0,,He killed people in Afghanistan.\N在阿富汗杀过人
+Dialogue: 0,0:17:18.69,0:17:20.56,中文对白,NTP,0,0,0,,That's what soldiers do.\N那是士兵的职责
+Dialogue: 0,0:17:20.56,0:17:22.46,中文对白,NTP,0,0,0,,It doesn't mean he's a thief.\N并不能说明他是个小偷
+Dialogue: 0,0:17:23.83,0:17:26.73,中文对白,NTP,0,0,0,,Did he say where he got the money from?\N他说过这钱是怎么得来的吗
+Dialogue: 0,0:17:26.73,0:17:28.20,中文对白,NTP,0,0,0,,He said, "Maybe god."\N他说  可能是上帝赐予的
+Dialogue: 0,0:17:33.14,0:17:35.80,中文对白,NTP,0,0,0,,Anyway, what do you think the police themselves\N退一步说  你觉得如果上交了这钱
+Dialogue: 0,0:17:35.81,0:17:37.61,中文对白,NTP,0,0,0,,would do with it if you handed it in?\N警察会怎么处理
+Dialogue: 0,0:17:37.61,0:17:40.11,中文对白,NTP,0,0,0,,They'd just share it out and drink it in the pub.\N他们可能就这么分了  去酒吧买醉
+Dialogue: 0,0:17:41.75,0:17:44.75,中文对白,NTP,0,0,0,,Or at Christmas, get them all jumpers or something.\N也可能是在圣诞节的时候给自己买几件衣服
+Dialogue: 0,0:17:50.69,0:17:52.15,中文对白,NTP,0,0,0,,Actually, he told me to buy something for myself.\N事实上  他让我给自己买点东西
+Dialogue: 0,0:17:56.69,0:18:00.20,中文对白,NTP,0,0,0,,I thought perhaps maybe I could use\N我在想我也许能
+Dialogue: 0,0:18:00.20,0:18:02.50,中文对白,NTP,0,0,0,,just a small proportion of it.\N花其中的一小部分
+Dialogue: 0,0:18:02.50,0:18:05.63,中文对白,NTP,0,0,0,,You see, there is something I have been praying for.\N有样东西是我整天祈祷想要的
+Dialogue: 0,0:18:05.64,0:18:07.70,中文对白,NTP,0,0,0,,You're a good and holy woman, Sister Cristina.\N克里斯提娜修女  你是个善良圣洁的女人
+Dialogue: 0,0:18:07.70,0:18:09.84,中文对白,NTP,0,0,0,,If the money's an answer to a prayer,\N如果说这钱是对信徒的回复
+Dialogue: 0,0:18:09.84,0:18:11.47,中文对白,NTP,0,0,0,,how can it be wrong?\N花这钱有何不妥呢
+Dialogue: 0,0:18:13.24,0:18:14.81,中文对白,NTP,0,0,0,,Let me put it this way.\N这么和你说吧
+Dialogue: 0,0:18:14.81,0:18:17.61,中文对白,NTP,0,0,0,,I've not written anything down about this in the book.\N这笔钱我不入账
+Dialogue: 0,0:18:44.51,0:18:45.87,中文对白,NTP,0,0,0,,One for Maria Zielinska.\N买一张玛利亚·叶林斯卡的票
+Dialogue: 0,0:18:45.88,0:18:47.41,中文对白,NTP,0,0,0,,One what?\N一张什么
+Dialogue: 0,0:18:47.41,0:18:50.68,中文对白,NTP,0,0,0,,One for the Maria Zielinska farewell performance.\N一张玛利亚·叶林斯卡的告别演出票
+Dialogue: 0,0:18:50.68,0:18:52.78,中文对白,NTP,0,0,0,,I'm afraid it's all sold out.\N很抱歉都卖完了
+Dialogue: 0,0:18:52.78,0:18:54.55,中文对白,NTP,0,0,0,,Sold out?\N卖完了
+Dialogue: 0,0:18:54.55,0:18:56.22,中文对白,NTP,0,0,0,,But it isn't until October.\N但演出是在十月份
+Dialogue: 0,0:18:56.22,0:18:58.49,中文对白,NTP,0,0,0,,It sold out online in two hours.\N在网上2小时就售罄了
+Dialogue: 0,0:18:58.49,0:19:00.19,中文对白,NTP,0,0,0,,Online.\N网上
+Dialogue: 0,0:19:00.19,0:19:02.72,中文对白,NTP,0,0,0,,We do still have one box available.\N不过我们还有一个包厢
+Dialogue: 0,0:19:02.73,0:19:05.43,中文对白,NTP,0,0,0,,A box?\N包厢
+Dialogue: 0,0:19:05.43,0:19:08.33,中文对白,NTP,0,0,0,,On Tuesday, October first.\N日期是十月一日  周二
+Dialogue: 0,0:19:08.33,0:19:10.43,中文对白,NTP,0,0,0,,And how much is a box?\N包厢多少钱
+Dialogue: 0,0:19:12.47,0:19:14.70,中文对白,NTP,0,0,0,,A box for the farewell performance\N告别演出的包厢价格是
+Dialogue: 0,0:19:14.70,0:19:17.24,中文对白,NTP,0,0,0,,is £500.\N500英镑
+Dialogue: 0,0:19:27.48,0:19:29.72,中文对白,NTP,0,0,0,,Contact! Contact!\N遇敌  遇敌
+Dialogue: 0,0:19:59.95,0:20:01.72,中文对白,NTP,0,0,0,,Contact!\N遇敌
+Dialogue: 0,0:20:49.73,0:20:53.03,中文对白,NTP,0,0,0,,Possible contact.\N可能遇敌
+Dialogue: 0,0:20:53.04,0:20:54.84,中文对白,NTP,0,0,0,,Hummingbird drone, over.\N蜂鸟无人机  完毕
+Dialogue: 0,0:20:57.84,0:21:00.31,中文对白,NTP,0,0,0,,Yeah, he's got a weapon on the right.\N他右手持枪
+Dialogue: 0,0:21:00.31,0:21:02.04,中文对白,NTP,0,0,0,,Hummingbird can see it. He's got a weapon.\N蜂鸟能看见他  他有武器
+Dialogue: 0,0:21:04.31,0:21:05.45,中文对白,NTP,0,0,0,,He's still shooting up in the air right now.\N他还在朝天开枪
+Dialogue: 0,0:21:05.45,0:21:07.62,中文对白,NTP,0,0,0,,We see him.\N我们看见他了
+Dialogue: 0,0:21:07.62,0:21:09.65,中文对白,NTP,0,0,0,,Can we just cut the guy off?\N我们能甩掉他吗
+Dialogue: 0,0:21:09.65,0:21:10.89,中文对白,NTP,0,0,0,,Do you copy?\N收到没
+Dialogue: 0,0:21:53.76,0:21:54.96,中文对白,NTP,0,0,0,,Sister.\N修女
+Dialogue: 0,0:21:54.96,0:21:57.00,中文对白,NTP,0,0,0,,I'm afraid you're too late for soup.\N你来晚了  没汤喝了
+Dialogue: 0,0:21:57.00,0:21:59.47,中文对白,NTP,0,0,0,,I'm not hungry.\N我不饿
+Dialogue: 0,0:21:59.47,0:22:01.90,中文对白,NTP,0,0,0,,I need medicine.\N我需要药品
+Dialogue: 0,0:22:01.91,0:22:03.10,中文对白,NTP,0,0,0,,You're hurt?\N你受伤了吗
+Dialogue: 0,0:22:03.11,0:22:05.54,中文对白,NTP,0,0,0,,I need antibiotics.\N我要抗生素
+Dialogue: 0,0:22:05.54,0:22:07.84,中文对白,NTP,0,0,0,,I'm not allowed to dispense antibiotics.\N我没权分发抗生素
+Dialogue: 0,0:22:07.84,0:22:11.51,中文对白,NTP,0,0,0,,But you do it for people who can't get into the system.\N但是你给那些没有医保的人
+Dialogue: 0,0:22:11.51,0:22:13.88,中文对白,NTP,0,0,0,,- Go to emergency. - I can't.\N-去看急诊吧  -我能去
+Dialogue: 0,0:22:13.88,0:22:16.72,中文对白,NTP,0,0,0,,Why not? If you don't want to give your name,\N为什么不能  如果你不想透露名字
+Dialogue: 0,0:22:16.72,0:22:19.05,中文对白,NTP,0,0,0,,just call yourself Smith or something.\N就说你叫史密斯什么的
+Dialogue: 0,0:22:19.06,0:22:20.69,中文对白,NTP,0,0,0,,That would be a mistake.\N那你可说错了
+Dialogue: 0,0:22:20.69,0:22:23.12,中文对白,NTP,0,0,0,,- Why? - My name is Smith.\N-怎么错了  -我名字就叫史密斯
+Dialogue: 0,0:22:23.13,0:22:24.99,中文对白,NTP,0,0,0,,Jones, then.\N那你说叫琼斯
+Dialogue: 0,0:22:24.99,0:22:25.93,中文对白,NTP,0,0,0,,Sister...\N修女
+Dialogue: 0,0:22:28.10,0:22:30.53,中文对白,NTP,0,0,0,,I'm on the run from a court-martial.\N我在逃避军事法庭
+Dialogue: 0,0:22:30.53,0:22:32.93,中文对白,NTP,0,0,0,,I was in a special forces unit.\N我以前是特别行动队的
+Dialogue: 0,0:22:32.94,0:22:35.40,中文对白,NTP,0,0,0,,There'll be no forgiveness.\N他们不会原谅我的
+Dialogue: 0,0:22:38.04,0:22:40.84,中文对白,NTP,0,0,0,,How do you know it's antibiotics you need?\N你怎么知道自己需要抗生素
+Dialogue: 0,0:22:40.84,0:22:42.44,中文对白,NTP,0,0,0,,I've got two broken ribs.\N我断了两根肋骨
+Dialogue: 0,0:22:42.45,0:22:43.91,中文对白,NTP,0,0,0,,There's an infection around one of the breaks.\N骨折处感染了
+Dialogue: 0,0:22:43.91,0:22:45.51,中文对白,NTP,0,0,0,,If it spreads to the bone, I'll die.\N如果扩散到骨头  我就死定了
+Dialogue: 0,0:22:47.68,0:22:49.45,中文对白,NTP,0,0,0,,I've been wounded before.\N我以前也受过伤
+Dialogue: 0,0:22:49.45,0:22:51.65,中文对白,NTP,0,0,0,,If you drink alcohol with these, they won't work.\N如果你和着酒吃药  不会有效果的
+Dialogue: 0,0:22:51.65,0:22:53.45,中文对白,NTP,0,0,0,,I'll need painkillers.\N我需要止疼片
+Dialogue: 0,0:22:53.46,0:22:55.69,中文对白,NTP,0,0,0,,Give me something with dihydrocodeine.\N给我二氢可待因[一种镇痛剂]
+Dialogue: 0,0:22:55.69,0:22:57.76,中文对白,NTP,0,0,0,,Yes, sir.\N是长官
+Dialogue: 0,0:23:00.60,0:23:02.93,中文对白,NTP,0,0,0,,I've asked around about your friend Isabel.\N我四处打听了下你的朋友伊莎贝尔
+Dialogue: 0,0:23:04.60,0:23:07.17,中文对白,NTP,0,0,0,,How'd you know about Isabel?\N你是怎么认识她的
+Dialogue: 0,0:23:07.17,0:23:09.80,中文对白,NTP,0,0,0,,Last night, don't you remember?\N昨晚的事  你不记得了吗
+Dialogue: 0,0:23:09.81,0:23:11.57,中文对白,NTP,0,0,0,,Did I come here last night?\N我昨晚来过
+Dialogue: 0,0:23:11.57,0:23:14.04,中文对白,NTP,0,0,0,,Do something stupid?\N没做什么傻事吧
+Dialogue: 0,0:23:14.04,0:23:16.58,中文对白,NTP,0,0,0,,You said you'd had some luck.\N你说你走运了
+Dialogue: 0,0:23:16.58,0:23:19.51,中文对白,NTP,0,0,0,,"God," You said.\N你说上帝显灵了
+Dialogue: 0,0:23:22.89,0:23:24.15,中文对白,NTP,0,0,0,,You don't believe?\N你不信上帝吗
+Dialogue: 0,0:23:25.85,0:23:29.16,中文对白,NTP,0,0,0,,So how do you explain those new clothes?\N那你如何解释这身新衣服
+Dialogue: 0,0:23:29.16,0:23:30.89,中文对白,NTP,0,0,0,,I don't.\N我不信
+Dialogue: 0,0:23:32.46,0:23:34.73,中文对白,NTP,0,0,0,,So what'd you find out about Isabel?\N伊莎贝尔有什么消息
+Dialogue: 0,0:23:34.73,0:23:36.80,中文对白,NTP,0,0,0,,She doesn't come for food anymore.\N她不来吃救济了
+Dialogue: 0,0:23:45.74,0:23:49.04,中文对白,NTP,0,0,0,,If you see her, give her this.\N如果你见到她  把这个给她
+Dialogue: 0,0:23:49.05,0:23:52.15,中文对白,NTP,0,0,0,,Tell her she can come to me.\N告诉她来找我
+Dialogue: 0,0:23:52.15,0:23:54.62,中文对白,NTP,0,0,0,,Tell her she can be safe.\N告诉她这里很安全
+Dialogue: 0,0:23:54.62,0:23:57.75,中文对白,NTP,0,0,0,,- Who lives here? - Me.\N-谁住那里  -我
+Dialogue: 0,0:23:57.75,0:23:59.02,中文对白,NTP,0,0,0,,- Did you break in? - I fell.\N-你擅闯民宅  -我是掉进去的
+Dialogue: 0,0:23:59.02,0:24:00.72,中文对白,NTP,0,0,0,,Did you hurt someone?\N你没伤害别人吧
+Dialogue: 0,0:24:00.72,0:24:02.72,中文对白,NTP,0,0,0,,Only myself.\N就摔伤了我自己
+Dialogue: 0,0:24:12.63,0:24:14.67,中文对白,NTP,0,0,0,,Do you know the boys say you're an angel?\N你知道人们说你是天使吗
+Dialogue: 0,0:24:16.47,0:24:17.51,中文对白,NTP,0,0,0,,Good night, Joseph.\N约瑟夫  晚安
+Dialogue: 0,0:24:41.93,0:24:44.10,中文对白,NTP,0,0,0,,The solid sterling silver.\N纯银制品
+Dialogue: 0,0:24:44.10,0:24:45.05,中文对白,NTP,0,0,0,,You've got lots of pieces\N你这边有很多
+Dialogue: 0,0:24:45.05,0:24:46.60,中文对白,NTP,0,0,0,,of solid sterling silver and, of course...\N纯银的小物件
+Dialogue: 0,0:24:46.60,0:24:47.97,中文对白,NTP,0,0,0,,There we go. You can see all of that\N细数一下  我们可以发现
+Dialogue: 0,0:24:47.97,0:24:49.70,中文对白,NTP,0,0,0,,from your hat pins to your...\N从帽针到...
+Dialogue: 0,0:24:49.71,0:24:52.01,中文对白,NTP,0,0,0,,Uh, to your shepherd's hook,\N到牧羊用的钩子
+Dialogue: 0,0:24:52.01,0:24:54.71,中文对白,NTP,0,0,0,,Your-- your clasp, your crimp beads.\N还有你的扣子  卷珠
+Dialogue: 0,0:24:54.71,0:24:56.64,中文对白,NTP,0,0,0,,And six meters of elastic.\N六米长的橡皮带
+Dialogue: 0,0:24:56.65,0:24:59.95,中文对白,NTP,0,0,0,,One large and one small gift pack.\N一大一小两个礼品包
+Dialogue: 0,0:25:21.07,0:25:22.87,中文对白,NTP,0,0,0,,Showers good.\N色泽不错
+Dialogue: 0,0:25:22.87,0:25:26.07,中文对白,NTP,0,0,0,,Forties, Cromarty, Forth, Tyne, Dogger.\N福蒂斯  克罗默蒂  福斯  泰恩  多格尔
+Dialogue: 0,0:25:26.08,0:25:28.01,中文对白,NTP,0,0,0,,Easterly or northeasterly.\N东方或者东北方
+Dialogue: 0,0:25:28.01,0:25:29.58,中文对白,NTP,0,0,0,,Four or five, occasionally...\N四个或者五个...
+Dialogue: 0,0:25:31.15,0:25:34.58,中文对白,NTP,0,0,0,,...Bible tells us, you know, in gethsemane,\N《圣经》告诉我们  在蒙难地[基督被犹大出卖之地]
+Dialogue: 0,0:25:34.58,0:25:37.89,中文对白,NTP,0,0,0,,talking to god and wanting to not go through with this thing\N与上帝对话  想要避免此事
+Dialogue: 0,0:25:37.89,0:25:39.79,中文对白,NTP,0,0,0,,And hesitating, you know.\N犹豫不决
+Dialogue: 0,0:25:39.79,0:25:41.12,中文对白,NTP,0,0,0,,And as all these incredible things,\N尽管做出了这些匪夷所思的事情
+Dialogue: 0,0:25:41.12,0:25:42.16,中文对白,NTP,0,0,0,,Judas going to the priests...\N犹大还是去见神父
+Dialogue: 0,0:26:29.84,0:26:31.77,中文对白,NTP,0,0,0,,Joey, it's Isabel.\NJoey是我  伊萨贝尔
+Dialogue: 0,0:26:31.77,0:26:33.98,中文对白,NTP,0,0,0,,There's no need to look for me. I'm okay.\N没必要到处找我  我很好
+Dialogue: 0,0:26:33.98,0:26:35.61,中文对白,NTP,0,0,0,,And I'll just cause trouble.\N我只会给你惹麻烦
+Dialogue: 0,0:26:35.61,0:26:37.21,中文对白,NTP,0,0,0,,I've agreed to work for them for a few weeks\N我同意给他们打几周的工
+Dialogue: 0,0:26:37.21,0:26:39.98,中文对白,NTP,0,0,0,,until I've got enough for a deposit on a nice place.\N直到我攒够钱换个好点的住处
+Dialogue: 0,0:26:39.98,0:26:43.12,中文对白,NTP,0,0,0,,Then I'll go back up north.\N到时我会往北走
+Dialogue: 0,0:26:43.12,0:26:44.75,中文对白,NTP,0,0,0,,And for thinkin' of me.\N你这么想我
+Dialogue: 0,0:26:44.75,0:26:47.36,中文对白,NTP,0,0,0,,When I get away from London,\N我离开伦敦后
+Dialogue: 0,0:26:47.36,0:26:49.12,中文对白,NTP,0,0,0,,I'll call you if you're still there.\N会给你打电话  如果你还在的话
+Dialogue: 0,0:26:49.13,0:26:51.23,中文对白,NTP,0,0,0,,I've gotta go.\N我得挂了
+Dialogue: 0,0:27:00.10,0:27:02.84,中文对白,NTP,0,0,0,,You have two messages.\N你有两封留言
+Dialogue: 0,0:27:31.33,0:27:33.07,中文对白,NTP,0,0,0,,I've agreed to work for them for a few weeks\N我同意给他们打几周的工
+Dialogue: 0,0:27:33.07,0:27:36.24,中文对白,NTP,0,0,0,,until I've got enough for a deposit on a nice place.\N直到我攒够钱换个好点的住处
+Dialogue: 0,0:27:36.24,0:27:38.81,中文对白,NTP,0,0,0,,Then I'll go back up north.\N然后我会往北走
+Dialogue: 0,0:27:38.81,0:27:40.21,中文对白,NTP,0,0,0,,Thanks for looking after me, Joey,\N感谢你的照顾乔伊
+Dialogue: 0,0:27:40.21,0:27:41.84,中文对白,NTP,0,0,0,,And for thinking of me.\N你这么想我
+Dialogue: 0,0:27:41.84,0:27:43.21,中文对白,NTP,0,0,0,,When I get away from London,\N我离开伦敦后
+Dialogue: 0,0:27:43.21,0:27:44.88,中文对白,NTP,0,0,0,,I'll call you if you're still there.\N会给你打电话  如果你还在的话
+Dialogue: 0,0:27:44.88,0:27:46.75,中文对白,NTP,0,0,0,,I've gotta go.\N我得挂了
+Dialogue: 0,0:27:49.09,0:27:51.85,中文对白,NTP,0,0,0,,You have no more messages.\N你没有未读留言
+Dialogue: 0,0:29:02.16,0:29:04.86,中文对白,NTP,0,0,0,,I know someone is there 'cause I saw you go in.\N我知道屋里有人  我看到你进去
+Dialogue: 0,0:29:07.23,0:29:09.16,中文对白,NTP,0,0,0,,I'm gonna call the police.\N我要报警了
+Dialogue: 0,0:29:13.84,0:29:16.07,中文对白,NTP,0,0,0,,Who are you?\N你是谁
+Dialogue: 0,0:29:16.07,0:29:19.01,中文对白,NTP,0,0,0,,Damon said he was gonna be in New York all summer.\N达蒙说他整个夏天都会在纽约
+Dialogue: 0,0:29:19.01,0:29:21.91,中文对白,NTP,0,0,0,,I'm Damon's boyfriend.\N我是他男友
+Dialogue: 0,0:29:21.91,0:29:23.34,中文对白,NTP,0,0,0,,One of 'em.\N男友之一
+Dialogue: 0,0:29:23.35,0:29:26.88,中文对白,NTP,0,0,0,,He said I could use his flat while he was away.\N他说他不在的时候我能住这里
+Dialogue: 0,0:29:26.88,0:29:28.28,中文对白,NTP,0,0,0,,Are you a model?\N你是模特吗
+Dialogue: 0,0:29:31.12,0:29:33.22,中文对白,NTP,0,0,0,,Sometimes.\N有时兼职
+Dialogue: 0,0:29:33.22,0:29:37.19,中文对白,NTP,0,0,0,,He didn't say anyone was gonna be staying.\N没听他说有人要住这里
+Dialogue: 0,0:29:37.19,0:29:38.56,中文对白,NTP,0,0,0,,Do you have his number in New York?\N你有他在纽约的电话吗
+Dialogue: 0,0:29:40.36,0:29:43.03,中文对白,NTP,0,0,0,,No, he keeps himself very private.\N没有  他很注重隐私
+Dialogue: 0,0:29:43.03,0:29:46.57,中文对白,NTP,0,0,0,,Pity, you could've called him.\N真可惜  不然你可以电话他
+Dialogue: 0,0:29:46.57,0:29:48.04,中文对白,NTP,0,0,0,,Do you have a number?\N你有他的号码吗
+Dialogue: 0,0:29:48.04,0:29:51.84,中文对白,NTP,0,0,0,,He doesn't give it to me.\N他没给我
+Dialogue: 0,0:29:51.84,0:29:53.17,中文对白,NTP,0,0,0,,In case I call him late at night.\N怕我在半夜打给他
+Dialogue: 0,0:29:53.18,0:29:56.84,中文对白,NTP,0,0,0,,- I'm Tracy. - Joey.\N-我叫特雷西  -乔伊
+Dialogue: 0,0:29:56.85,0:29:59.98,中文对白,NTP,0,0,0,,Joey Jones.\N乔伊·琼斯
+Dialogue: 0,0:29:59.98,0:30:02.25,中文对白,NTP,0,0,0,,Damon said I should stay here for the summer,\N达蒙说我能在这里过一个夏天
+Dialogue: 0,0:30:02.25,0:30:04.19,中文对白,NTP,0,0,0,,get my life back together.\N找回生活的勇气
+Dialogue: 0,0:30:04.19,0:30:06.95,中文对白,NTP,0,0,0,,So that's what I'm gonna do.\N我就准备这么做
+Dialogue: 0,0:30:12.43,0:30:13.46,中文对白,NTP,0,0,0,,Fuck.\N操
+Dialogue: 0,0:30:55.17,0:30:57.34,中文对白,NTP,0,0,0,,Joey, there's trouble.\N乔伊  有麻烦了
+Dialogue: 0,0:31:31.41,0:31:34.41,中文对白,NTP,0,0,0,,Fucking dickhead's trying to throw us out.\N这傻逼要赶我们出去
+Dialogue: 0,0:31:35.95,0:31:37.08,中文对白,NTP,0,0,0,,Is he fucking following?\N还真的跟出来了
+Dialogue: 0,0:31:37.08,0:31:39.08,中文对白,NTP,0,0,0,,Dick, mate.\N我操
+Dialogue: 0,0:31:42.65,0:31:45.02,中文对白,NTP,0,0,0,,- Here we go. - It's Soho, I wanna see some tits.\N-开始吧  -这里是苏豪区  露个点给爷看看
+Dialogue: 0,0:31:45.02,0:31:46.39,中文对白,NTP,0,0,0,,It's late, boys.\N时间不早了
+Dialogue: 0,0:31:46.39,0:31:47.55,中文对白,NTP,0,0,0,,You're gonna miss your train.\N你们要赶不上火车了
+Dialogue: 0,0:31:47.56,0:31:49.42,中文对白,NTP,0,0,0,,Who are you, our fuckin' mum?\N你以为自己是谁  我们的老妈吗
+Dialogue: 0,0:31:49.43,0:31:51.66,中文对白,NTP,0,0,0,,He thinks he is. Fuck me if he ain't.\N他觉得他是  真他妈扯
+Dialogue: 0,0:31:51.66,0:31:54.70,中文对白,NTP,0,0,0,,- Tits, mate. - Fucking there's your tit.\N-奶奶的  -这是你自找的
+Dialogue: 0,0:31:54.70,0:31:56.60,中文对白,NTP,0,0,0,,- That's right, mate. - Here's your fucking tit, man.\N-是啊  -给你点颜色看看
+Dialogue: 0,0:31:58.30,0:32:00.03,中文对白,NTP,0,0,0,,Hey, don't fucking touch my boy!\N别碰我朋友
+Dialogue: 0,0:32:08.58,0:32:10.41,中文对白,NTP,0,0,0,,Fucking leave it, mate.\N算了吧
+Dialogue: 0,0:32:10.41,0:32:13.61,中文对白,NTP,0,0,0,,He's a fucking soft, southern fucking cunt.\N他就是一南方来的软逼
+Dialogue: 0,0:32:15.55,0:32:17.18,中文对白,NTP,0,0,0,,- Easy, pal. - Fucking get off him.\N-别乱来  -放开他
+Dialogue: 0,0:32:17.19,0:32:19.35,中文对白,NTP,0,0,0,,- You'll miss your train. - I'll fucking have him!\N-你们要误火车了  -我要做掉他
+Dialogue: 0,0:32:22.16,0:32:23.96,中文对白,NTP,0,0,0,,Come on, then!\N来啊
+Dialogue: 0,0:32:23.96,0:32:25.33,中文对白,NTP,0,0,0,,Fucking get him!\N快抓住他
+Dialogue: 0,0:32:37.37,0:32:38.97,中文对白,NTP,0,0,0,,Now you've missed your train.\N现在你们赶不上车了
+Dialogue: 0,0:34:03.39,0:34:06.53,中文对白,NTP,0,0,0,,- You wanna work? - Yeah.\N-你想要干活吗  -是的
+Dialogue: 0,0:34:06.53,0:34:09.23,中文对白,NTP,0,0,0,,You know what kind of work I do.\N你知道我是干哪行的吗
+Dialogue: 0,0:34:09.23,0:34:12.30,中文对白,NTP,0,0,0,,They say you want a driver.\N听说你要找一个司机
+Dialogue: 0,0:34:12.30,0:34:15.20,中文对白,NTP,0,0,0,,I got a lot of businesses.\N我干的行当很杂
+Dialogue: 0,0:34:17.84,0:34:20.31,中文对白,NTP,0,0,0,,They say you're a hard man.\N他们说你是条硬汉
+Dialogue: 0,0:34:20.31,0:34:21.81,中文对白,NTP,0,0,0,,It's a hard city.\N这地方可不好混
+Dialogue: 0,0:34:36.83,0:34:38.83,中文对白,NTP,0,0,0,,Hold on!\N等等
+Dialogue: 0,0:35:01.22,0:35:02.82,中文对白,NTP,0,0,0,,Can we play the animal game?\N我们能玩那个猜动物的游戏吗
+Dialogue: 0,0:35:02.82,0:35:04.38,中文对白,NTP,0,0,0,,Go on, then.\N来吧
+Dialogue: 0,0:35:04.39,0:35:07.59,中文对白,NTP,0,0,0,,- Um... Has it got four legs? - Yes.\N-是四条腿的吗  -是的
+Dialogue: 0,0:35:07.59,0:35:09.79,中文对白,NTP,0,0,0,,All right, has it got fur?\N有皮毛吗
+Dialogue: 0,0:35:09.79,0:35:11.33,中文对白,NTP,0,0,0,,Yes.\N有的
+Dialogue: 0,0:35:11.33,0:35:13.49,中文对白,NTP,0,0,0,,Um, give me another clue.\N再给我个线索
+Dialogue: 0,0:35:13.50,0:35:15.30,中文对白,NTP,0,0,0,,- It's gray. - Gray?\N-是灰色的  -灰的吗
+Dialogue: 0,0:35:15.30,0:35:16.46,中文对白,NTP,0,0,0,,Yeah.\N是的
+Dialogue: 0,0:35:16.47,0:35:18.17,中文对白,NTP,0,0,0,,- Is it a dog? - No.\N-是狗吗  -不是
+Dialogue: 0,0:35:18.17,0:35:21.17,中文对白,NTP,0,0,0,,Um, could it eat me?\N会吃人吗
+Dialogue: 0,0:35:21.17,0:35:22.24,中文对白,NTP,0,0,0,,Probably.\N可能会
+Dialogue: 0,0:35:22.24,0:35:25.31,中文对白,NTP,0,0,0,,Right, so, how many legs has it got?\N它有几条腿
+Dialogue: 0,0:35:25.31,0:35:27.54,中文对白,NTP,0,0,0,,- Two. - You said four.\N-两条  -前面说四条啊
+Dialogue: 0,0:35:27.54,0:35:29.31,中文对白,NTP,0,0,0,,Are you tricking me?\N你在耍赖吧
+Dialogue: 0,0:35:59.44,0:36:00.61,中文对白,NTP,0,0,0,,I hear he wants to see me.\N听说他要见我
+Dialogue: 0,0:36:23.33,0:36:25.50,中文对白,NTP,0,0,0,,What the fuck?\N搞毛啊
+Dialogue: 0,0:36:25.50,0:36:27.40,中文对白,NTP,0,0,0,,New rules.\N新规矩
+Dialogue: 0,0:36:27.40,0:36:29.60,中文对白,NTP,0,0,0,,No room service cards anywhere between\N在莱尔街与王冠街之间的区域
+Dialogue: 0,0:36:29.61,0:36:30.84,中文对白,NTP,0,0,0,,Lisle Street and the Crown.\N不准贴小姐的广告
+Dialogue: 0,0:36:30.84,0:36:33.31,中文对白,NTP,0,0,0,,What the fuck are you talking about?\N你他妈在嘀咕些什么
+Dialogue: 0,0:36:33.31,0:36:34.98,中文对白,NTP,0,0,0,,You're not even a fucking chink to be giving out rules.\N哪里轮得到你这根葱来发号施令
+Dialogue: 0,0:36:34.98,0:36:36.34,中文对白,NTP,0,0,0,,Show him.\N给他颜色看看
+Dialogue: 0,0:36:48.29,0:36:49.62,中文对白,NTP,0,0,0,,New rules.\N新规矩
+Dialogue: 0,0:37:02.47,0:37:03.40,中文对白,NTP,0,0,0,,No.\N不要
+Dialogue: 0,0:37:29.40,0:37:31.47,中文对白,NTP,0,0,0,,Can I help you?\N有何贵干
+Dialogue: 0,0:37:31.47,0:37:33.50,中文对白,NTP,0,0,0,,I've got a delivery for the angel of the lord's mission.\N我来给上帝的天使送外卖
+Dialogue: 0,0:37:33.50,0:37:37.00,中文对白,NTP,0,0,0,,45 margheritas, 45 garlic breads,\N45张玛格丽披萨  45个蒜香面包
+Dialogue: 0,0:37:37.01,0:37:38.94,中文对白,NTP,0,0,0,,45 coke zeroes,\N45罐零度可乐
+Dialogue: 0,0:37:38.94,0:37:41.48,中文对白,NTP,0,0,0,,45 chicken dippers, and 45 coleslaws.\N45只烤鸡腿  45份色拉
+Dialogue: 0,0:37:41.48,0:37:42.81,中文对白,NTP,0,0,0,,There must be a mistake.\N你肯定搞错了
+Dialogue: 0,0:37:44.65,0:37:48.62,中文对白,NTP,0,0,0,,It's paid for by Joey Jones.\N是由乔伊·琼斯付款的
+Dialogue: 0,0:37:48.62,0:37:51.02,中文对白,NTP,0,0,0,,Okay, it's not a mistake.\N好吧  你没有搞错
+Dialogue: 0,0:37:51.02,0:37:52.02,中文对白,NTP,0,0,0,,Who wants pizza?\N谁想要披萨
+Dialogue: 0,0:38:12.67,0:38:14.01,中文对白,NTP,0,0,0,,Tell your boss in fifteen minutes\N告诉你老板15分钟内
+Dialogue: 0,0:38:14.01,0:38:15.94,中文对白,NTP,0,0,0,,to have Mr. Choy's envelope ready.\N把给周先生的钱准备好
+Dialogue: 0,0:38:15.94,0:38:18.58,中文对白,NTP,0,0,0,,Also, I wanna order takeaway for delivery.\N同时  我还要点些菜打包带走
+Dialogue: 0,0:38:18.58,0:38:21.35,中文对白,NTP,0,0,0,,It's very nice, but I've no idea what it is.\N这太好了  但是这是什么菜
+Dialogue: 0,0:38:21.35,0:38:22.75,中文对白,NTP,0,0,0,,I think it's probably duck.\N可能是鸭子
+Dialogue: 0,0:38:22.75,0:38:24.92,中文对白,NTP,0,0,0,,And there's fish and chicken and pancakes.\N这边还有鱼和薄饼
+Dialogue: 0,0:38:24.92,0:38:27.75,中文对白,NTP,0,0,0,,- And this is from crazy Joe the angel, yeah? - Next?\N-这都是疯子乔搞来的吗  -下一位
+Dialogue: 0,0:38:36.33,0:38:37.93,中文对白,NTP,0,0,0,,Just drive, man. Just fucking drive.\N快开车  快开车
+Dialogue: 0,0:38:45.71,0:38:48.64,中文对白,NTP,0,0,0,,That's his little sister. She won't talk.\N那个是他妹妹  她不会说的
+Dialogue: 0,0:39:20.41,0:39:23.08,中文对白,NTP,0,0,0,,Dawn?\N达恩
+Dialogue: 0,0:39:23.08,0:39:24.51,中文对白,NTP,0,0,0,,It's me.\N是我
+Dialogue: 0,0:39:24.51,0:39:26.68,中文对白,NTP,0,0,0,,Joe.\N乔
+Dialogue: 0,0:39:32.15,0:39:34.59,中文对白,NTP,0,0,0,,Nice suit.\N西装不错
+Dialogue: 0,0:39:34.59,0:39:36.42,中文对白,NTP,0,0,0,,Me and your daughter live on £25 a week.\N你女儿和我一周的生活费只有25英镑
+Dialogue: 0,0:39:38.39,0:39:39.09,中文对白,NTP,0,0,0,,Since I lost my job,\N自从我失业以后
+Dialogue: 0,0:39:39.09,0:39:40.49,中文对白,NTP,0,0,0,,I've been paying the landlord with blowjobs.\N只有靠给房东口交来付房钱
+Dialogue: 0,0:39:41.96,0:39:43.37,中文对白,NTP,0,0,0,,Everything's gone.\N什么都没了
+Dialogue: 0,0:39:43.37,0:39:46.46,中文对白,NTP,0,0,0,,What have you been doing while they cut everything, Joey?\N我失去一切的时候你在哪里
+Dialogue: 0,0:39:46.83,0:39:48.50,中文对白,NTP,0,0,0,,I've been fighting.\N我在打仗
+Dialogue: 0,0:40:09.96,0:40:13.03,中文对白,NTP,0,0,0,,There's more where this came from.\N还会有更多的钱
+Dialogue: 0,0:40:13.03,0:40:14.63,中文对白,NTP,0,0,0,,Lots more.\N很多很多
+Dialogue: 0,0:40:57.77,0:40:59.51,中文对白,NTP,0,0,0,,You got my invitation.\N你拿到请帖了
+Dialogue: 0,0:40:59.51,0:41:01.51,中文对白,NTP,0,0,0,,Wasn't sure you'd come.\N不知道你会不会来
+Dialogue: 0,0:41:01.51,0:41:03.04,中文对白,NTP,0,0,0,,Buying food for the boys, it's okay,\N给流浪汉们买食物  那没问题
+Dialogue: 0,0:41:03.05,0:41:05.01,中文对白,NTP,0,0,0,,But not this.\N但这事儿不行
+Dialogue: 0,0:41:06.81,0:41:09.98,中文对白,NTP,0,0,0,,Giving me things puts me in a very difficult position.\N给我买礼物会让我很难堪
+Dialogue: 0,0:41:09.99,0:41:12.49,中文对白,NTP,0,0,0,,You're not vegetarian, are ya?\N你不是只吃素的吧
+Dialogue: 0,0:41:14.59,0:41:16.89,中文对白,NTP,0,0,0,,Why are you lighting fires on the pavement?\N你在大街上生炉子干什么
+Dialogue: 0,0:41:16.89,0:41:18.93,中文对白,NTP,0,0,0,,My Chinese boss sends his people here\N我的中国老板派人来这里
+Dialogue: 0,0:41:18.93,0:41:20.99,中文对白,NTP,0,0,0,,to buy meat for his restaurants.\N给他的餐馆采购生肉
+Dialogue: 0,0:41:21.00,0:41:22.80,中文对白,NTP,0,0,0,,I get three hours hanging out on the street.\N我有3个小时的空闲时间
+Dialogue: 0,0:41:22.80,0:41:24.76,中文对白,NTP,0,0,0,,Doing nothing.\N在这大街上
+Dialogue: 0,0:41:26.50,0:41:29.94,中文对白,NTP,0,0,0,,So tonight I decided to have a barbecue.\N所以我想搞个烧烤
+Dialogue: 0,0:41:29.94,0:41:31.87,中文对白,NTP,0,0,0,,You used to feed me.\N以前总是你给我吃的
+Dialogue: 0,0:41:34.54,0:41:35.84,中文对白,NTP,0,0,0,,Tonight, I feed you.\N今晚看我的
+Dialogue: 0,0:41:40.01,0:41:42.85,中文对白,NTP,0,0,0,,This is a very strange thing to be doing.\N这事儿太奇怪了
+Dialogue: 0,0:41:46.92,0:41:48.29,中文对白,NTP,0,0,0,,I miss the smell of woodsmoke.\N我很怀念柴火的味道
+Dialogue: 0,0:41:48.29,0:41:51.56,中文对白,NTP,0,0,0,,I'm guessing that you have psychological problems.\N我猜你是不是有精神问题
+Dialogue: 0,0:41:51.56,0:41:54.06,中文对白,NTP,0,0,0,,They put me up a mountain\N他们把我派到一个山头上
+Dialogue: 0,0:41:54.06,0:41:57.20,中文对白,NTP,0,0,0,,and told me to kill people.\N然后让我去杀人
+Dialogue: 0,0:41:57.20,0:42:00.17,中文对白,NTP,0,0,0,,What'd they think would come back down the mountain?\N他们哪里知道  山上下来后会成怎么一个人
+Dialogue: 0,0:42:00.17,0:42:02.94,中文对白,NTP,0,0,0,,Joseph, I came here because I might have some news...\N约瑟夫  我之所以过来是因为得到些消息...
+Dialogue: 0,0:42:05.31,0:42:07.17,中文对白,NTP,0,0,0,,About Isabel.\N关于伊莎贝尔的
+Dialogue: 0,0:42:07.18,0:42:09.64,中文对白,NTP,0,0,0,,They found a girl.\N他们找到了一个女孩
+Dialogue: 0,0:42:09.65,0:42:11.68,中文对白,NTP,0,0,0,,Last night, my police liaison officer\N昨晚  我的警方联系人
+Dialogue: 0,0:42:11.68,0:42:13.21,中文对白,NTP,0,0,0,,gave me this photograph.\N给了我这张照片
+Dialogue: 0,0:42:14.65,0:42:15.95,中文对白,NTP,0,0,0,,She was found in the river.\N他们在河里发现了她
+Dialogue: 0,0:42:15.95,0:42:18.08,中文对白,NTP,0,0,0,,They need help with identification.\N他们需要有人去辨认尸体
+Dialogue: 0,0:42:51.09,0:42:53.69,中文对白,NTP,0,0,0,,She was from the north, that's all I know.\N她是北方人  我只知道这些
+Dialogue: 0,0:42:53.69,0:42:56.36,中文对白,NTP,0,0,0,,Did you love her?\N你爱她吗
+Dialogue: 0,0:42:56.36,0:42:58.12,中文对白,NTP,0,0,0,,We shared a box.\N我们只是一起生活
+Dialogue: 0,0:42:58.13,0:42:59.96,中文对白,NTP,0,0,0,,We'd just keep each other warm.\N相互取暖
+Dialogue: 0,0:43:04.13,0:43:05.90,中文对白,NTP,0,0,0,,Will you talk to the police?\N你会去联系警方吗
+Dialogue: 0,0:43:05.90,0:43:07.17,中文对白,NTP,0,0,0,,Fuck the police.\N去他妈的警察
+Dialogue: 0,0:43:15.31,0:43:17.78,中文对白,NTP,0,0,0,,Joseph, I'm really sorry to bring such awful news.\N约瑟夫  我很抱歉给你带来这坏消息
+Dialogue: 0,0:43:17.78,0:43:20.18,中文对白,NTP,0,0,0,,Where in the river?\N从河的哪一段找到的
+Dialogue: 0,0:43:20.18,0:43:22.22,中文对白,NTP,0,0,0,,The city, near to Canary Wharf.\N靠城市那边  加那利码头
+Dialogue: 0,0:43:22.22,0:43:24.35,中文对白,NTP,0,0,0,,One of those rich guys.\N某个有钱人干的
+Dialogue: 0,0:43:24.35,0:43:26.05,中文对白,NTP,0,0,0,,Yes, they think she was killed by a client.\N是的  他们认为她是被客户杀死的
+Dialogue: 0,0:43:26.05,0:43:28.25,中文对白,NTP,0,0,0,,- The police give a shit? - Of course they do.\N-警方管这事儿吗  -当然
+Dialogue: 0,0:43:28.26,0:43:29.72,中文对白,NTP,0,0,0,,David is a good man.\N大卫是个好人
+Dialogue: 0,0:43:29.73,0:43:32.69,中文对白,NTP,0,0,0,,Really? He's a "Good man."\N是吗  他是好人
+Dialogue: 0,0:43:32.69,0:43:35.73,中文对白,NTP,0,0,0,,Good, good. Good for him.\N好  好  那很好
+Dialogue: 0,0:43:35.73,0:43:37.36,中文对白,NTP,0,0,0,,Good.\N好
+Dialogue: 0,0:43:41.74,0:43:44.34,中文对白,NTP,0,0,0,,In the fucking river!\N在他妈的河里
+Dialogue: 0,0:43:44.34,0:43:47.64,中文对白,NTP,0,0,0,,If you dare to be angry about Isabel...\N如果你是为伊莎贝尔动怒
+Dialogue: 0,0:43:47.64,0:43:48.91,中文对白,NTP,0,0,0,,you're a hypocrite.\N那你真虚伪
+Dialogue: 0,0:43:50.34,0:43:52.01,中文对白,NTP,0,0,0,,I've asked around about your job\N我打听了下
+Dialogue: 0,0:43:52.01,0:43:54.78,中文对白,NTP,0,0,0,,for the Chinese boss.\N你给中国老板干的事
+Dialogue: 0,0:43:54.78,0:43:56.98,中文对白,NTP,0,0,0,,They say, "Crazy Joey deals drugs."\N他们说  "疯子乔伊是毒贩"
+Dialogue: 0,0:43:56.99,0:43:59.25,中文对白,NTP,0,0,0,,I just deliver the stuff. I don't touch the stuff.\N我只管送货  自己不碰
+Dialogue: 0,0:43:59.25,0:44:03.72,中文对白,NTP,0,0,0,,The autopsy said Isabel "Touched the stuff."\N伊莎贝尔的尸检显示  她沾染了毒瘾
+Dialogue: 0,0:44:03.73,0:44:06.73,中文对白,NTP,0,0,0,,Maybe stuff you delivered.\N可能就是出自你手
+Dialogue: 0,0:44:06.73,0:44:09.30,中文对白,NTP,0,0,0,,You don't put those things together in your head.\N你就从来没这么想过吗
+Dialogue: 0,0:44:09.30,0:44:11.00,中文对白,NTP,0,0,0,,You know why she ended up in the river?\N你知道为什么她会陈尸河里吗
+Dialogue: 0,0:44:11.00,0:44:13.67,中文对白,NTP,0,0,0,,Because that's what the river's for.\N因为那条河就是起这个作用的
+Dialogue: 0,0:44:13.67,0:44:16.77,中文对白,NTP,0,0,0,,To wash away girls when they're finished with them.\N富人们玩腻了  河流帮着冲刷干净
+Dialogue: 0,0:44:16.77,0:44:19.71,中文对白,NTP,0,0,0,,I see what's happening in this fucking city.\N这城市的肮脏勾当显而易见
+Dialogue: 0,0:44:19.71,0:44:20.94,中文对白,NTP,0,0,0,,How many people you feed these days, huh?\N最近你给多少人送过吃的
+Dialogue: 0,0:44:20.94,0:44:24.04,中文对白,NTP,0,0,0,,You give them soup.\N你给他们汤喝
+Dialogue: 0,0:44:24.05,0:44:25.85,中文对白,NTP,0,0,0,,They want their lives back!\N他们想要回的是自己的生活
+Dialogue: 0,0:44:55.71,0:44:58.81,中文对白,NTP,0,0,0,,Joey, when you were out of your head on drugs\N乔伊  几个月前  当你嗑药磕嗨的时候
+Dialogue: 0,0:44:58.81,0:45:00.95,中文对白,NTP,0,0,0,,a few months ago, you gave me some money.\N你给了我些钱
+Dialogue: 0,0:45:03.28,0:45:05.75,中文对白,NTP,0,0,0,,I've spent it on something for myself.\N我用那钱给自己买了些东西
+Dialogue: 0,0:45:05.75,0:45:08.49,中文对白,NTP,0,0,0,,I haven't been able to sleep properly since.\N那以后就没睡过安稳觉
+Dialogue: 0,0:45:08.49,0:45:11.93,中文对白,NTP,0,0,0,,I-- I called my sister in Warsaw.\N我给远在华沙的姐姐打了电话
+Dialogue: 0,0:45:13.89,0:45:16.20,中文对白,NTP,0,0,0,,She sold some of the possessions I left behind.\N托她帮我卖掉了一些东西
+Dialogue: 0,0:45:23.50,0:45:24.84,中文对白,NTP,0,0,0,,I don't need this.\N我不需要你的钱
+Dialogue: 0,0:45:28.91,0:45:30.91,中文对白,NTP,0,0,0,,I'm really sorry about Isabel.\N伊莎贝尔的事情我很抱歉
+Dialogue: 0,0:45:30.91,0:45:32.51,中文对白,NTP,0,0,0,,I know you cared for her,\N我知道你关心她
+Dialogue: 0,0:45:32.51,0:45:36.78,中文对白,NTP,0,0,0,,but think about all the other Isabels.\N但是请你想想和她一样的其他女孩
+Dialogue: 0,0:45:39.19,0:45:41.29,中文对白,NTP,0,0,0,,Start to do the right thing.\N你浪子回头吧
+Dialogue: 0,0:45:42.86,0:45:45.99,中文对白,NTP,0,0,0,,It is honest money. I cleaned it for you.\N这钱来路正当  我已为你洗去了罪恶
+Dialogue: 0,0:45:45.99,0:45:48.80,中文对白,NTP,0,0,0,,Use it to start an honest life.\N用这钱开启一个正当的生活吧
+Dialogue: 0,0:46:04.28,0:46:05.98,中文对白,NTP,0,0,0,,I want you to have this.\N请你收下这衣服
+Dialogue: 0,0:46:08.85,0:46:10.28,中文对白,NTP,0,0,0,,I'm gonna do a lot of good things this summer.\N这个夏天我会做很多好事
+Dialogue: 0,0:46:10.29,0:46:12.55,中文对白,NTP,0,0,0,,Give people what they want.\N给人们他们想要的东西
+Dialogue: 0,0:46:12.55,0:46:14.49,中文对白,NTP,0,0,0,,I thought you might want a dress.\N我想你可能想要条裙子
+Dialogue: 0,0:46:14.49,0:46:16.86,中文对白,NTP,0,0,0,,Joey, I'm a nun.\N乔伊  我是个修女
+Dialogue: 0,0:46:16.86,0:46:18.86,中文对白,NTP,0,0,0,,I used to wear a uniform.\N有修女专门的服装
+Dialogue: 0,0:46:18.86,0:46:21.03,中文对白,NTP,0,0,0,,Don't mean a thing, you just take it off.\N没关系  你脱掉就是了
+Dialogue: 0,0:46:23.80,0:46:25.80,中文对白,NTP,0,0,0,,If it looks beautiful on you,\N如果你穿着合身
+Dialogue: 0,0:46:25.80,0:46:27.53,中文对白,NTP,0,0,0,,then god would say it's okay, wouldn't he?\N上帝也会准许的  不是吗
+Dialogue: 0,0:46:29.84,0:46:32.47,中文对白,NTP,0,0,0,,I will put it in the bag of clothes for Africa.\N我会把这衣服捐给非洲
+Dialogue: 0,0:46:41.12,0:46:43.55,中文对白,NTP,0,0,0,,My guest this week is Baroness Glennis Baker,\N本周的嘉宾是贝勒尼斯·格兰尼斯·贝克尔
+Dialogue: 0,0:46:43.55,0:46:46.55,中文对白,NTP,0,0,0,,A emeritus professor of psychology.\N以为心理学的名誉教授
+Dialogue: 0,0:46:46.56,0:46:49.16,中文对白,NTP,0,0,0,,She has specialized in the health and welfare\N她在如何关爱学习障碍症患者的健康和福利
+Dialogue: 0,0:46:49.16,0:46:50.99,中文对白,NTP,0,0,0,,of people with learning disabilities.\N方面有着独到的见解
+Dialogue: 0,0:46:50.99,0:46:53.33,中文对白,NTP,0,0,0,,Advising on policies and influencing...\N她为政策制定出谋划策...
+Dialogue: 0,0:47:02.04,0:47:03.47,中文对白,NTP,0,0,0,,Fuck.\N操
+Dialogue: 0,0:47:19.39,0:47:22.19,中文对白,NTP,0,0,0,,Your cash and your rocks, boys.\N交钱  交货
+Dialogue: 0,0:47:31.63,0:47:33.37,中文对白,NTP,0,0,0,,Don't remember me, do you?\N你不记得我了
+Dialogue: 0,0:47:36.04,0:47:38.20,中文对白,NTP,0,0,0,,Not surprised.\N也难怪
+Dialogue: 0,0:47:38.21,0:47:39.47,中文对白,NTP,0,0,0,,I've changed.\N我变化很大
+Dialogue: 0,0:47:42.64,0:47:44.44,中文对白,NTP,0,0,0,,You've got a knife...\N你拿你的刀
+Dialogue: 0,0:47:48.32,0:47:49.62,中文对白,NTP,0,0,0,,I've got a spoon.\N我拿我的勺子
+Dialogue: 0,0:47:57.12,0:47:58.93,中文对白,NTP,0,0,0,,Who killed Isabel?\N是谁杀了伊莎贝尔
+Dialogue: 0,0:48:15.44,0:48:18.28,中文对白,NTP,0,0,0,,Go on, Joey. Show 'em. Show 'em!\N加油乔伊  好好收拾他们
+Dialogue: 0,0:48:35.16,0:48:37.03,中文对白,NTP,0,0,0,,Who killed Isabel?\N是谁杀了伊莎贝尔
+Dialogue: 0,0:48:37.03,0:48:39.00,中文对白,NTP,0,0,0,,I don't know.\N我不知道
+Dialogue: 0,0:48:43.27,0:48:45.97,中文对白,NTP,0,0,0,,You're only alive because I need information.\N我需要情报  所以才留你狗命
+Dialogue: 0,0:48:47.44,0:48:49.41,中文对白,NTP,0,0,0,,An eye for an eye.\N以眼还眼
+Dialogue: 0,0:48:52.98,0:48:54.71,中文对白,NTP,0,0,0,,You tell me what happened to her,\N告诉我她的遭遇
+Dialogue: 0,0:48:54.72,0:48:57.65,中文对白,NTP,0,0,0,,or I'll kill you with this spoon.\N要不然我用勺子解决你
+Dialogue: 0,0:48:59.72,0:49:02.36,中文对白,NTP,0,0,0,,Some guy used to rent her regular.\N有个客户一直点她
+Dialogue: 0,0:49:02.36,0:49:03.96,中文对白,NTP,0,0,0,,Beat her up.\N打她
+Dialogue: 0,0:49:03.96,0:49:06.03,中文对白,NTP,0,0,0,,He used to ask for her.\N有次他来找她
+Dialogue: 0,0:49:06.03,0:49:08.13,中文对白,NTP,0,0,0,,He went too far.\N玩得过火了
+Dialogue: 0,0:49:08.13,0:49:09.66,中文对白,NTP,0,0,0,,Name.\N名字
+Dialogue: 0,0:49:09.66,0:49:11.26,中文对白,NTP,0,0,0,,We don't use names.\N我们不问名字
+Dialogue: 0,0:49:13.10,0:49:14.63,中文对白,NTP,0,0,0,,Describe him to me.\N他长什么样
+Dialogue: 0,0:49:16.30,0:49:18.57,中文对白,NTP,0,0,0,,Describe him to me.\N长什么样
+Dialogue: 0,0:49:18.57,0:49:22.01,中文对白,NTP,0,0,0,,He was about 30, city boy,\N30岁左右  城里人
+Dialogue: 0,0:49:22.01,0:49:23.68,中文对白,NTP,0,0,0,,scar over his eye.\N眼睛上有条疤
+Dialogue: 0,0:49:23.68,0:49:25.35,中文对白,NTP,0,0,0,,That's all I know.\N我就知道那么多
+Dialogue: 0,0:49:31.75,0:49:33.32,中文对白,NTP,0,0,0,,You get any trouble from these two again,\N这两个人要是再找你们麻烦
+Dialogue: 0,0:49:33.32,0:49:35.25,中文对白,NTP,0,0,0,,You tell Crazy Joe, okay?\N你们来找我疯子乔
+Dialogue: 0,0:50:55.54,0:50:57.10,中文对白,NTP,0,0,0,,Jesus.\N上帝
+Dialogue: 0,0:51:08.65,0:51:10.08,中文对白,NTP,0,0,0,,Fuck.\N我靠
+Dialogue: 0,0:51:11.22,0:51:12.65,中文对白,NTP,0,0,0,,You look...\N你看上去...
+Dialogue: 0,0:51:12.65,0:51:14.09,中文对白,NTP,0,0,0,,Your note said you had information\N你留言说关于杀害伊莎贝尔的凶手
+Dialogue: 0,0:51:14.09,0:51:16.42,中文对白,NTP,0,0,0,,for the police about isabel's killer.\N你有信息要提供给警方
+Dialogue: 0,0:51:16.42,0:51:18.39,中文对白,NTP,0,0,0,,That is the only reason I am here.\N因为如此我才来的
+Dialogue: 0,0:51:18.39,0:51:20.56,中文对白,NTP,0,0,0,,And I put on this dress because\N我穿这裙子
+Dialogue: 0,0:51:20.56,0:51:22.10,中文对白,NTP,0,0,0,,it is the only dress I have.\N因为我只有这一条裙子
+Dialogue: 0,0:51:24.16,0:51:25.77,中文对白,NTP,0,0,0,,And don't think I won't send it to Africa.\N别以为我不会把它捐到非洲去
+Dialogue: 0,0:51:25.77,0:51:27.27,中文对白,NTP,0,0,0,,Because I will.\N我会的
+Dialogue: 0,0:51:30.27,0:51:31.70,中文对白,NTP,0,0,0,,They think my name's Damon, by the way.\N顺便说下  他们认为我是叫达蒙
+Dialogue: 0,0:51:31.71,0:51:33.37,中文对白,NTP,0,0,0,,Please don't remind me.\N别提醒我
+Dialogue: 0,0:51:35.31,0:51:37.78,中文对白,NTP,0,0,0,,- I think I might faint. - What?\N-我想我要晕了  -什么
+Dialogue: 0,0:51:37.78,0:51:39.81,中文对白,NTP,0,0,0,,I haven't eaten anything all day...\N我一天都没吃东西
+Dialogue: 0,0:51:39.81,0:51:42.12,中文对白,NTP,0,0,0,,Worrying whether or not I would come.\N纠结着是否要来
+Dialogue: 0,0:51:47.86,0:51:49.46,中文对白,NTP,0,0,0,,Also, I didn't realize\N而且  我不知道
+Dialogue: 0,0:51:49.46,0:51:50.69,中文对白,NTP,0,0,0,,there would be so many naked men.\N这里会有那么多裸男的照片
+Dialogue: 0,0:51:59.87,0:52:01.47,中文对白,NTP,0,0,0,,Look, I arranged to meet you here\N我之所以安排在这里见面
+Dialogue: 0,0:52:01.47,0:52:03.44,中文对白,NTP,0,0,0,,because I thought you might like the photographs.\N因为我想你喜欢摄影
+Dialogue: 0,0:52:03.44,0:52:04.77,中文对白,NTP,0,0,0,,I didn't realize there'd be photographs\N我不知道这些照片
+Dialogue: 0,0:52:04.77,0:52:06.64,中文对白,NTP,0,0,0,,of men's... Penises.\N是拍男人老二的
+Dialogue: 0,0:52:08.18,0:52:09.41,中文对白,NTP,0,0,0,,Sorry.\N抱歉
+Dialogue: 0,0:52:09.41,0:52:12.21,中文对白,NTP,0,0,0,,Joey, actually, I do like photographs.\N乔伊  事实上  我喜欢摄影
+Dialogue: 0,0:52:12.21,0:52:15.38,中文对白,NTP,0,0,0,,I take photographs-- usually of nature.\N我自己也拍照片  通常是自然景色
+Dialogue: 0,0:52:15.38,0:52:18.65,中文对白,NTP,0,0,0,,Penises are nature, I suppose.\N老二也属于自然景色
+Dialogue: 0,0:52:18.65,0:52:20.85,中文对白,NTP,0,0,0,,Yes, I suppose they are.\N是的  也算
+Dialogue: 0,0:52:20.86,0:52:22.39,中文对白,NTP,0,0,0,,So what'd you tell the mother?\N你是怎么和你们院长说的
+Dialogue: 0,0:52:22.39,0:52:25.26,中文对白,NTP,0,0,0,,I lied, I lied, I lied.\N我说谎了  一次又一次
+Dialogue: 0,0:52:26.59,0:52:28.76,中文对白,NTP,0,0,0,,So what information do you have?\N那么你有什么消息
+Dialogue: 0,0:52:28.76,0:52:31.63,中文对白,NTP,0,0,0,,Tell your policeman to look for a guy around 30.\N告诉警方  找一个年龄30左右的男性
+Dialogue: 0,0:52:31.63,0:52:33.63,中文对白,NTP,0,0,0,,He has a scar above his eye.\N眼睛上有条疤
+Dialogue: 0,0:52:33.64,0:52:35.43,中文对白,NTP,0,0,0,,Works in the city.\N在城里工作
+Dialogue: 0,0:52:35.44,0:52:37.40,中文对白,NTP,0,0,0,,Should I write this down?\N要我记下来吗
+Dialogue: 0,0:52:37.41,0:52:39.47,中文对白,NTP,0,0,0,,That's all I have.\N就那么多
+Dialogue: 0,0:52:39.47,0:52:41.41,中文对白,NTP,0,0,0,,Okay...\N好吧
+Dialogue: 0,0:52:41.41,0:52:44.68,中文对白,NTP,0,0,0,,30 years old, scar above his eye,\N30岁  眼睛上有疤
+Dialogue: 0,0:52:44.68,0:52:46.91,中文对白,NTP,0,0,0,,Works in the city. Got it.\N在城里工作  记住了
+Dialogue: 0,0:52:46.92,0:52:48.88,中文对白,NTP,0,0,0,,We haven't been introduced.\N我们还未各自介绍吧
+Dialogue: 0,0:52:48.88,0:52:50.75,中文对白,NTP,0,0,0,,I'm Karl. What's your name?\N我是卡尔  您是哪位
+Dialogue: 0,0:52:52.82,0:52:54.52,中文对白,NTP,0,0,0,,Just looking around.\N我们就随便逛逛
+Dialogue: 0,0:52:54.52,0:52:57.76,中文对白,NTP,0,0,0,,I'm told the invitation you handed in at the desk\N他们告诉我  你在签到台交的请柬
+Dialogue: 0,0:52:57.76,0:52:59.89,中文对白,NTP,0,0,0,,was addressed to Damon Coldfield.\N是寄给达蒙·科菲尔德的
+Dialogue: 0,0:52:59.89,0:53:02.30,中文对白,NTP,0,0,0,,I happen to be Damon's photographic agent.\N我就是他的经济人
+Dialogue: 0,0:53:02.30,0:53:03.50,中文对白,NTP,0,0,0,,He's in New York.\N他人在纽约
+Dialogue: 0,0:53:04.70,0:53:06.63,中文对白,NTP,0,0,0,,Who the hell are you?\N你到底是谁
+Dialogue: 0,0:53:23.78,0:53:25.25,中文对白,NTP,0,0,0,,I think you're a bit drunk.\N我想你是醉了
+Dialogue: 0,0:53:25.25,0:53:26.75,中文对白,NTP,0,0,0,,Yes.\N是的
+Dialogue: 0,0:53:29.69,0:53:31.66,中文对白,NTP,0,0,0,,I'm having a crazy patch.\N自从我买了票子
+Dialogue: 0,0:53:32.96,0:53:35.26,中文对白,NTP,0,0,0,,Starting when I bought the ticket.\N就一直做疯狂的事情
+Dialogue: 0,0:53:36.63,0:53:38.66,中文对白,NTP,0,0,0,,What ticket?\N什么票子
+Dialogue: 0,0:53:41.90,0:53:45.37,中文对白,NTP,0,0,0,,I used your money to buy a ticket to a ballet.\N我用你给的钱买了张芭蕾票
+Dialogue: 0,0:53:51.25,0:53:53.45,中文对白,NTP,0,0,0,,That's a pretty wicked thing to do.\N你的消费习惯真奇怪
+Dialogue: 0,0:54:00.82,0:54:03.56,中文对白,NTP,0,0,0,,But, you see...\N但是  要知道
+Dialogue: 0,0:54:03.56,0:54:05.63,中文对白,NTP,0,0,0,,I've loved her since I was a little girl.\N我从小就仰慕她
+Dialogue: 0,0:54:07.69,0:54:08.89,中文对白,NTP,0,0,0,,Loved who?\N仰慕谁
+Dialogue: 0,0:54:11.00,0:54:13.00,中文对白,NTP,0,0,0,,Maria Zielinska.\N玛利亚·叶林斯卡
+Dialogue: 0,0:54:15.74,0:54:17.67,中文对白,NTP,0,0,0,,She's 42 and still dancing.\N她42岁了  还在跳舞
+Dialogue: 0,0:54:19.74,0:54:21.57,中文对白,NTP,0,0,0,,She is who I always wanted to be.\N她一直是我的榜样
+Dialogue: 0,0:54:23.31,0:54:25.34,中文对白,NTP,0,0,0,,She is who I should have been.\N我就应该成为她那样的人
+Dialogue: 0,0:54:33.62,0:54:35.62,中文对白,NTP,0,0,0,,I'm in a silk dress in an alleyway...\N而现在  我穿着丝裙  站在巷子里
+Dialogue: 0,0:54:35.62,0:54:36.76,中文对白,NTP,0,0,0,,with a gangster.\N身边有位黑帮
+Dialogue: 0,0:54:38.96,0:54:40.76,中文对白,NTP,0,0,0,,And I'm drunk.\N还喝醉了酒
+Dialogue: 0,0:54:43.96,0:54:45.39,中文对白,NTP,0,0,0,,Are you still a gangster, Joey,\N乔伊  你还是黑帮吗
+Dialogue: 0,0:54:45.39,0:54:46.47,中文对白,NTP,0,0,0,,or did I change you?\N我有没有改变你
+Dialogue: 0,0:54:50.04,0:54:52.47,中文对白,NTP,0,0,0,,Just having a crazy patch, too.\N这对我来说也是件疯狂的事
+Dialogue: 0,0:54:54.51,0:54:57.01,中文对白,NTP,0,0,0,,There are things that I have to do.\N但有些事我必须要完成
+Dialogue: 0,0:54:57.01,0:54:59.88,中文对白,NTP,0,0,0,,When the summer's over, I'll stop.\N夏天结束时  我就收手
+Dialogue: 0,0:54:59.88,0:55:02.38,中文对白,NTP,0,0,0,,Because of me, yes?\N是因为我吗
+Dialogue: 0,0:55:02.38,0:55:04.35,中文对白,NTP,0,0,0,,I have to think I'm doing good.\N我必须知道自己在做好事
+Dialogue: 0,0:55:06.69,0:55:08.72,中文对白,NTP,0,0,0,,Your excuse for wearing a pretty dress.\N这就是你穿漂亮裙子的借口吗
+Dialogue: 0,0:55:14.09,0:55:16.06,中文对白,NTP,0,0,0,,When does Damon return?\N达蒙什么时候回来
+Dialogue: 0,0:55:17.80,0:55:19.03,中文对白,NTP,0,0,0,,October the first.\N十月一日
+Dialogue: 0,0:55:19.03,0:55:22.00,中文对白,NTP,0,0,0,,Then it's fate.\N命运如此
+Dialogue: 0,0:55:22.00,0:55:24.57,中文对白,NTP,0,0,0,,What is?\N什么
+Dialogue: 0,0:55:24.57,0:55:26.97,中文对白,NTP,0,0,0,,When I say it's fate...\N说是命运
+Dialogue: 0,0:55:26.97,0:55:30.44,中文对白,NTP,0,0,0,,I should really say it's god, but I don't.\N我应该说是上帝  但是我没那么说
+Dialogue: 0,0:55:31.68,0:55:33.65,中文对白,NTP,0,0,0,,You know why?\N知道为什么吗
+Dialogue: 0,0:55:36.52,0:55:39.49,中文对白,NTP,0,0,0,,Because I'm not so sure that god is there anymore.\N因为我不确定上帝是否存在
+Dialogue: 0,0:55:41.76,0:55:43.62,中文对白,NTP,0,0,0,,That's the truth.\N就因为这个
+Dialogue: 0,0:55:51.93,0:55:53.43,中文对白,NTP,0,0,0,,I think I'm going to throw up.\N我觉得我要吐了
+Dialogue: 0,0:55:55.74,0:55:57.40,中文对白,NTP,0,0,0,,No, I'm fine.\N我没事
+Dialogue: 0,0:56:02.91,0:56:04.88,中文对白,NTP,0,0,0,,Sister, I'm catholic.\N修女  我是天主教徒
+Dialogue: 0,0:56:11.15,0:56:13.72,中文对白,NTP,0,0,0,,I'm not your Sister.\N我不是你的修女
+Dialogue: 0,0:56:15.06,0:56:17.76,中文对白,NTP,0,0,0,,I'm drunk and I'm up against the wall.\N我醉了  靠墙而站
+Dialogue: 0,0:56:49.16,0:56:51.62,中文对白,NTP,0,0,0,,30...\N30岁
+Dialogue: 0,0:56:51.63,0:56:54.13,中文对白,NTP,0,0,0,,A scar above the eye...\N眼睛上有条疤
+Dialogue: 0,0:56:54.13,0:56:56.63,中文对白,NTP,0,0,0,,Works in the city.\N在城里工作
+Dialogue: 0,0:57:16.22,0:57:17.82,中文对白,NTP,0,0,0,,A massive 50% off.\N5折大减价
+Dialogue: 0,0:57:17.82,0:57:20.45,中文对白,NTP,0,0,0,,Rain jackets half price.\N雨衣半价
+Dialogue: 0,0:57:20.46,0:57:23.72,中文对白,NTP,0,0,0,,Fleece half price, t-shirts half price.\N羊毛衫半价  T恤半价
+Dialogue: 0,0:57:23.72,0:57:25.96,中文对白,NTP,0,0,0,,Walking shoes half price.\N休闲鞋半价
+Dialogue: 0,0:57:25.96,0:57:27.93,中文对白,NTP,0,0,0,,A massive 50% off.\N5折大减价
+Dialogue: 0,0:57:31.10,0:57:32.80,中文对白,NTP,0,0,0,,Joey...\N乔伊
+Dialogue: 0,0:57:33.83,0:57:34.97,中文对白,NTP,0,0,0,,H-how are things?\N你最近可好
+Dialogue: 0,0:57:34.97,0:57:36.50,中文对白,NTP,0,0,0,,Things are okay.\N还不错
+Dialogue: 0,0:57:36.50,0:57:38.20,中文对白,NTP,0,0,0,,Have you heard from Damon?\N有达蒙的消息吗
+Dialogue: 0,0:57:38.21,0:57:39.64,中文对白,NTP,0,0,0,,Yeah, he's okay.\N是的  他很好
+Dialogue: 0,0:57:39.64,0:57:40.91,中文对白,NTP,0,0,0,,You seem so together now.\N你看上去恢复了
+Dialogue: 0,0:57:40.91,0:57:42.64,中文对白,NTP,0,0,0,,I'm really together now.\N我恢复得不错
+Dialogue: 0,0:57:42.64,0:57:45.21,中文对白,NTP,0,0,0,,You're like a different person.\N感觉你焕然一新了
+Dialogue: 0,0:57:45.21,0:57:47.81,中文对白,NTP,0,0,0,,So, Joey...\N乔伊
+Dialogue: 0,0:57:47.82,0:57:50.72,中文对白,NTP,0,0,0,,Are you exclusively gay?\N你确定只喜欢男人吗
+Dialogue: 0,0:57:50.72,0:57:53.49,中文对白,NTP,0,0,0,,You know, it's interesting...\N你知道吗  有趣的是
+Dialogue: 0,0:57:53.49,0:57:55.62,中文对白,NTP,0,0,0,,Recently...\N最近
+Dialogue: 0,0:57:55.62,0:57:57.26,中文对白,NTP,0,0,0,,I've found myself attracted to...\N我感到自己开始喜欢
+Dialogue: 0,0:57:58.69,0:58:00.09,中文对白,NTP,0,0,0,,Nuns.\N修女
+Dialogue: 0,0:58:26.79,0:58:28.05,中文对白,NTP,0,0,0,,Who the fuck are you?\N你是谁
+Dialogue: 0,0:58:29.86,0:58:31.12,中文对白,NTP,0,0,0,,You owe Mr. Choy money.\N你欠周先生钱
+Dialogue: 0,0:58:31.13,0:58:33.66,中文对白,NTP,0,0,0,,What the fuck do you know about Mr. Choy?\N你管那么多干嘛
+Dialogue: 0,0:58:33.66,0:58:35.19,中文对白,NTP,0,0,0,,He's my boss.\N他是我老板
+Dialogue: 0,0:58:35.20,0:58:36.70,中文对白,NTP,0,0,0,,What are you talking about?\N你说什么
+Dialogue: 0,0:58:36.70,0:58:39.13,中文对白,NTP,0,0,0,,Mr. Choy only employ Chinese.\N他只雇中国人
+Dialogue: 0,0:58:39.13,0:58:41.23,中文对白,NTP,0,0,0,,Tell Mr. Choy I'll send him a check.\N去告诉周先生  我会寄支票给他
+Dialogue: 0,0:58:43.14,0:58:44.67,中文对白,NTP,0,0,0,,I'm taking the cash.\N我只收现金
+Dialogue: 0,0:58:50.78,0:58:52.95,中文对白,NTP,0,0,0,,Give me the fucking cash.\N把现金给我
+Dialogue: 0,0:58:54.58,0:58:56.72,中文对白,NTP,0,0,0,,Step out of the way, my friend.\N你让开
+Dialogue: 0,0:58:56.72,0:58:59.62,中文对白,NTP,0,0,0,,And let me take some of what you owe in cash\N让我拿些现金
+Dialogue: 0,0:58:59.62,0:59:02.02,中文对白,NTP,0,0,0,,as a gesture of goodwill.\N算你是对周先生示好
+Dialogue: 0,0:59:02.02,0:59:04.62,中文对白,NTP,0,0,0,,No!\N不行
+Dialogue: 0,0:59:21.14,0:59:23.31,中文对白,NTP,0,0,0,,Please don't hurt him!\N请别伤害他
+Dialogue: 0,0:59:41.23,0:59:43.36,中文对白,NTP,0,0,0,,That money belongs to my family.\N这钱是我们家的
+Dialogue: 0,0:59:43.36,0:59:45.00,中文对白,NTP,0,0,0,,Vincenzo, no!\N文森佐  不要
+Dialogue: 0,1:00:05.35,1:00:07.05,中文对白,NTP,0,0,0,,Of mamarita restaurant.\N在妈妈丽塔餐馆
+Dialogue: 0,1:00:07.05,1:00:09.22,中文对白,NTP,0,0,0,,18 Clancey Street. That's 1-8 Clancey Street.\N克兰西街18号  克兰西街18号
+Dialogue: 0,1:00:09.22,1:00:10.89,中文对白,NTP,0,0,0,,Known by the name of Joey Jones.\N嫌疑人名叫乔伊·琼斯
+Dialogue: 0,1:00:10.89,1:00:14.16,中文对白,NTP,0,0,0,,No known address. Approach with caution.\N没有住址  请谨慎行动
+Dialogue: 0,1:00:14.16,1:00:15.89,中文对白,NTP,0,0,0,,Reported connection to the angel of the lord\N据说与"上帝天使"救助活动有关
+Dialogue: 0,1:00:15.90,1:00:17.10,中文对白,NTP,0,0,0,,homeless mission, Covent Garden.\N在修道院花园
+Dialogue: 0,1:00:27.34,1:00:29.98,中文对白,NTP,0,0,0,,Is there a problem? You are scaring my clients.\N有什么事吗  你吓到我的客人了
+Dialogue: 0,1:00:29.98,1:00:32.31,中文对白,NTP,0,0,0,,We're looking for someone.\N我们在找人
+Dialogue: 0,1:00:32.31,1:00:34.38,中文对白,NTP,0,0,0,,Calls himself Joey Jones.\N这人自称乔伊·琼斯
+Dialogue: 0,1:00:36.65,1:00:38.38,中文对白,NTP,0,0,0,,We've been told he used to come down here.\N听说他过去常来这里
+Dialogue: 0,1:00:40.65,1:00:42.92,中文对白,NTP,0,0,0,,They said you'd know where to find him.\N他们说你知道在哪里能找到他
+Dialogue: 0,1:00:58.84,1:01:00.04,中文对白,NTP,0,0,0,,Let me help ya.\N我来帮你
+Dialogue: 0,1:01:02.34,1:01:03.74,中文对白,NTP,0,0,0,,What are you doing here?\N你来这里干什么
+Dialogue: 0,1:01:12.19,1:01:15.82,中文对白,NTP,0,0,0,,I just lied to the police.\N我刚对警察说了谎
+Dialogue: 0,1:01:15.82,1:01:18.12,中文对白,NTP,0,0,0,,You haven't changed at all.\N你一点没变
+Dialogue: 0,1:01:18.13,1:01:20.09,中文对白,NTP,0,0,0,,If I could do something else, I would do it.\N如果我能干其他活  我早就干了
+Dialogue: 0,1:01:21.83,1:01:23.30,中文对白,NTP,0,0,0,,What did the policeman say\N你把那人长相告诉警察
+Dialogue: 0,1:01:23.30,1:01:25.83,中文对白,NTP,0,0,0,,when you gave him the description?\N他怎么说
+Dialogue: 0,1:01:27.13,1:01:29.94,中文对白,NTP,0,0,0,,He laughed at me.\N他嘲笑我
+Dialogue: 0,1:01:29.94,1:01:31.84,中文对白,NTP,0,0,0,,He said it was "Too vague."\N说描述得太笼统
+Dialogue: 0,1:01:31.84,1:01:33.94,中文对白,NTP,0,0,0,,He said, "Tell Joey Jones to come\N他说要你自己去
+Dialogue: 0,1:01:33.94,1:01:35.97,中文对白,NTP,0,0,0,,and speak to us himself."\N描述给他听
+Dialogue: 0,1:01:35.98,1:01:37.98,中文对白,NTP,0,0,0,,You mean they can't be bothered to fucking look\N你的意思是  他们压根不准备调查
+Dialogue: 0,1:01:37.98,1:01:40.15,中文对白,NTP,0,0,0,,'cause she was a whore.\N就因为她是个妓女
+Dialogue: 0,1:01:40.15,1:01:43.28,中文对白,NTP,0,0,0,,The truth is...\N事实是
+Dialogue: 0,1:01:43.28,1:01:44.88,中文对白,NTP,0,0,0,,The police are more interested\N警方对抓到你
+Dialogue: 0,1:01:44.89,1:01:46.09,中文对白,NTP,0,0,0,,in finding out more about you.\N更感兴趣
+Dialogue: 0,1:01:47.35,1:01:49.35,中文对白,NTP,0,0,0,,You're becoming famous, Joey.\N你出名了
+Dialogue: 0,1:01:49.36,1:01:51.02,中文对白,NTP,0,0,0,,And Isabel isn't famous?\N伊莎贝尔没有出名吗
+Dialogue: 0,1:01:52.73,1:01:54.93,中文对白,NTP,0,0,0,,You really are a hypocrite.\N你真是个伪君子
+Dialogue: 0,1:01:54.93,1:01:59.26,中文对白,NTP,0,0,0,,You beat taxman so bad he's still in hospital.\N你把那个收保护费得打成重伤送医院
+Dialogue: 0,1:01:59.27,1:02:01.03,中文对白,NTP,0,0,0,,You're not just an angel,\N你不是在扮演天使
+Dialogue: 0,1:02:01.04,1:02:04.50,中文对白,NTP,0,0,0,,you're god almighty dispensing justice.\N而是在扮演上帝  主持公正
+Dialogue: 0,1:02:04.51,1:02:07.17,中文对白,NTP,0,0,0,,Yeah, well, I believe in justice.\N是的  我相信公正
+Dialogue: 0,1:02:07.17,1:02:09.78,中文对白,NTP,0,0,0,,Sometimes you have to make it happen yourself.\N有时得靠自己声张正义
+Dialogue: 0,1:02:11.38,1:02:12.81,中文对白,NTP,0,0,0,,I'm not the only hypocrite here.\N这儿可不只我一个伪君子
+Dialogue: 0,1:02:15.18,1:02:16.48,中文对白,NTP,0,0,0,,Want a kiss?\N想要接吻吗
+Dialogue: 0,1:02:32.43,1:02:34.33,中文对白,NTP,0,0,0,,- Sorry. - Get out of my car.\N-对不起  -从我的轿车上下去
+Dialogue: 0,1:02:34.34,1:02:35.53,中文对白,NTP,0,0,0,,It's a van.\N这是辆货车
+Dialogue: 0,1:02:41.31,1:02:43.94,中文对白,NTP,0,0,0,,I suppose you think it was very funny that I got drunk.\N我想你一定觉得我醉了很好玩
+Dialogue: 0,1:02:43.94,1:02:46.78,中文对白,NTP,0,0,0,,I've been drunk myself on occasion.\N我自己偶尔也醉酒
+Dialogue: 0,1:02:46.78,1:02:48.51,中文对白,NTP,0,0,0,,What exactly happened?\N当时发生什么事
+Dialogue: 0,1:02:48.52,1:02:49.92,中文对白,NTP,0,0,0,,You don't remember?\N你不记得了
+Dialogue: 0,1:02:51.35,1:02:53.55,中文对白,NTP,0,0,0,,It's all a blur.\N印象模糊
+Dialogue: 0,1:02:53.55,1:02:55.95,中文对白,NTP,0,0,0,,You asked me to kiss you, so I kissed you.\N你让我吻你  我吻了你
+Dialogue: 0,1:03:01.86,1:03:04.23,中文对白,NTP,0,0,0,,You didn't have to kiss me\N你不必因为我让你吻
+Dialogue: 0,1:03:04.23,1:03:06.87,中文对白,NTP,0,0,0,,just because I asked.\N而吻我
+Dialogue: 0,1:03:06.87,1:03:09.07,中文对白,NTP,0,0,0,,I wanted to.\N我愿意
+Dialogue: 0,1:03:18.58,1:03:20.58,中文对白,NTP,0,0,0,,Why did you want to?\N你为什么愿意
+Dialogue: 0,1:03:20.58,1:03:22.48,中文对白,NTP,0,0,0,,That's a really stupid question.\N这问题好傻
+Dialogue: 0,1:03:25.25,1:03:26.52,中文对白,NTP,0,0,0,,Look in the mirror.\N你找找镜子
+Dialogue: 0,1:03:28.22,1:03:30.36,中文对白,NTP,0,0,0,,It's not my fault that I'm fucked up.\N我成现在这样子  妈的不是我的错
+Dialogue: 0,1:03:30.36,1:03:32.96,中文对白,NTP,0,0,0,,For a nun, your language is pretty bad.\N作为修女  你的言语够粗俗的
+Dialogue: 0,1:03:37.23,1:03:39.16,中文对白,NTP,0,0,0,,So whose fault is it?\N那是谁的错
+Dialogue: 0,1:04:00.29,1:04:02.19,中文对白,NTP,0,0,0,,He was my gymnastics instructor.\N是我的体操教练
+Dialogue: 0,1:04:07.59,1:04:09.60,中文对白,NTP,0,0,0,,It was in Warsaw.\N事情发生在华沙
+Dialogue: 0,1:04:14.90,1:04:17.54,中文对白,NTP,0,0,0,,It was my father who made me do gymnastics.\N我父亲逼我练体操
+Dialogue: 0,1:04:17.54,1:04:22.34,中文对白,NTP,0,0,0,,I wanted to be a ballerina,\N我想跳芭蕾
+Dialogue: 0,1:04:22.34,1:04:24.11,中文对白,NTP,0,0,0,,but he said no.\N但他不同意
+Dialogue: 0,1:04:35.02,1:04:38.52,中文对白,NTP,0,0,0,,If I had become a ballerina,\N如果我跳了芭蕾
+Dialogue: 0,1:04:38.53,1:04:39.66,中文对白,NTP,0,0,0,,it wouldn't have happened.\N就不会出事了
+Dialogue: 0,1:04:49.47,1:04:51.57,中文对白,NTP,0,0,0,,My instructor began to...\N我的体操教练开始...
+Dialogue: 0,1:04:59.58,1:05:03.02,中文对白,NTP,0,0,0,,He began to do it when I was 10 years old.\N从我10岁起  他就开始侵犯我
+Dialogue: 0,1:05:10.26,1:05:12.36,中文对白,NTP,0,0,0,,He did it 17 times.\N他侵犯了我17次
+Dialogue: 0,1:05:16.00,1:05:18.03,中文对白,NTP,0,0,0,,It was going to be the 18th time.\N第18次的时候
+Dialogue: 0,1:05:32.21,1:05:34.95,中文对白,NTP,0,0,0,,For a very long time, I believed I belonged in hell.\N之后的很长时间  我觉得自己该下地狱
+Dialogue: 0,1:05:38.15,1:05:39.69,中文对白,NTP,0,0,0,,Because I was so young...\N因为我还小
+Dialogue: 0,1:05:41.65,1:05:44.46,中文对白,NTP,0,0,0,,they decided not to send me to prison.\N他们决定不把我送进监狱
+Dialogue: 0,1:05:50.66,1:05:53.33,中文对白,NTP,0,0,0,,Instead, they sent me to a convent.\N而是把我送到修道院
+Dialogue: 0,1:06:03.44,1:06:04.71,中文对白,NTP,0,0,0,,Joey, I...\N乔伊
+Dialogue: 0,1:06:09.68,1:06:12.55,中文对白,NTP,0,0,0,,I have never told this to anyone before.\N我从没对人提起过这事
+Dialogue: 0,1:06:20.69,1:06:22.33,中文对白,NTP,0,0,0,,Want me to drive?\N要我来开车吗
+Dialogue: 0,1:06:22.33,1:06:25.16,中文对白,NTP,0,0,0,,I want someone to drive.\N非常想
+Dialogue: 0,1:06:41.15,1:06:42.58,中文对白,NTP,0,0,0,,Here will be fine.\N送到这儿就行了
+Dialogue: 0,1:06:53.13,1:06:54.63,中文对白,NTP,0,0,0,,How will you get home?\N你怎么回去
+Dialogue: 0,1:06:58.26,1:07:00.63,中文对白,NTP,0,0,0,,I'm a gangster. I'll steal a car.\N我是黑帮  偷辆车
+Dialogue: 0,1:07:08.04,1:07:10.64,中文对白,NTP,0,0,0,,I'll walk.\N我走回去
+Dialogue: 0,1:07:10.64,1:07:12.81,中文对白,NTP,0,0,0,,It's a lovely morning.\N是个美好的早晨
+Dialogue: 0,1:07:17.68,1:07:20.12,中文对白,NTP,0,0,0,,Cristina, in the end,\N克里斯提娜  到最后
+Dialogue: 0,1:07:20.12,1:07:22.55,中文对白,NTP,0,0,0,,I just took off my uniform and ran.\N我脱下军装  撒腿就跑
+Dialogue: 0,1:07:26.23,1:07:28.09,中文对白,NTP,0,0,0,,And look what happened to you.\N看看你都成什么样了
+Dialogue: 0,1:07:41.41,1:07:43.38,中文对白,NTP,0,0,0,,Sister Cristina, I am deeply shocked.\N克里斯提娜修女  我很吃惊
+Dialogue: 0,1:07:45.21,1:07:47.61,中文对白,NTP,0,0,0,,You filled in the Africa application.\N你提出了去非洲的申请
+Dialogue: 0,1:07:47.61,1:07:50.48,中文对白,NTP,0,0,0,,My preference is for the valley mission in Sierra Leone.\N我倾向去塞拉利昂的山谷
+Dialogue: 0,1:07:50.48,1:07:52.32,中文对白,NTP,0,0,0,,But what about your work here\N那你在这里的工作呢
+Dialogue: 0,1:07:52.32,1:07:53.59,中文对白,NTP,0,0,0,,at the Soho mission?\N苏豪区的工作怎么办
+Dialogue: 0,1:07:53.59,1:07:56.56,中文对白,NTP,0,0,0,,Africa was always part of my life plan.\N去非洲一直是我的计划
+Dialogue: 0,1:07:56.56,1:07:58.76,中文对白,NTP,0,0,0,,Yes, in two years.\N是的  但那是两年后
+Dialogue: 0,1:07:58.76,1:08:01.26,中文对白,NTP,0,0,0,,I want permission to move it forward.\N我想要提前
+Dialogue: 0,1:08:01.26,1:08:04.56,中文对白,NTP,0,0,0,,But why?\N为什么
+Dialogue: 0,1:08:04.57,1:08:07.40,中文对白,NTP,0,0,0,,I am finding there are too many distractions here in London.\N我感觉在伦敦有太多东西让我分神
+Dialogue: 0,1:08:09.47,1:08:11.20,中文对白,NTP,0,0,0,,You're blushing.\N你脸红了
+Dialogue: 0,1:08:11.21,1:08:13.11,中文对白,NTP,0,0,0,,It's very warm in here.\N这里很热
+Dialogue: 0,1:08:13.11,1:08:14.61,中文对白,NTP,0,0,0,,It's even warmer in Sierra Leone.\N塞拉利昂会更热
+Dialogue: 0,1:08:14.61,1:08:16.44,中文对白,NTP,0,0,0,,Hot, even.\N炙热
+Dialogue: 0,1:08:16.44,1:08:19.18,中文对白,NTP,0,0,0,,I will wear a hat.\N那我就戴个帽子
+Dialogue: 0,1:08:25.62,1:08:28.15,中文对白,NTP,0,0,0,,You have applied to leave in this quarter.\N你提请这个季度出发
+Dialogue: 0,1:08:28.16,1:08:31.29,中文对白,NTP,0,0,0,,I am ready to leave any time after October the first.\N我准备好了  10月1日之后随时能出发
+Dialogue: 0,1:08:42.27,1:08:46.44,中文对白,NTP,0,0,0,,Joey, they said you wanted to speak to the boss.\N乔伊  听说你要找老板
+Dialogue: 0,1:08:49.91,1:08:51.34,中文对白,NTP,0,0,0,,Come with me.\N跟我来
+Dialogue: 0,1:08:59.65,1:09:00.75,中文对白,NTP,0,0,0,,Sit.\N坐下
+Dialogue: 0,1:09:06.86,1:09:08.43,中文对白,NTP,0,0,0,,Madame, you know everything that happens\N夫人  这一块发生的事情
+Dialogue: 0,1:09:08.43,1:09:09.83,中文对白,NTP,0,0,0,,in your back garden.\N您都知晓
+Dialogue: 0,1:09:11.63,1:09:14.67,中文对白,NTP,0,0,0,,If a man pays for girls and he's violent,\N如果有个男的招妓  而且又很暴力
+Dialogue: 0,1:09:14.67,1:09:16.64,中文对白,NTP,0,0,0,,he soon becomes famous.\N那应该很惹人眼
+Dialogue: 0,1:09:25.61,1:09:27.55,中文对白,NTP,0,0,0,,We refuse to deal with them.\N我们不做他生意
+Dialogue: 0,1:09:27.55,1:09:29.92,中文对白,NTP,0,0,0,,The Russians will just charge double.\N但俄罗斯人会出双倍价格
+Dialogue: 0,1:09:29.92,1:09:32.72,中文对白,NTP,0,0,0,,I understand you have a blacklist of violent men.\N我知道您这儿有份黑名单
+Dialogue: 0,1:09:37.22,1:09:38.52,中文对白,NTP,0,0,0,,I'm looking for a very violent man\N我在找一个非常暴力
+Dialogue: 0,1:09:38.53,1:09:40.73,中文对白,NTP,0,0,0,,who attacks girls.\N对女孩动粗的男人
+Dialogue: 0,1:09:43.23,1:09:45.66,中文对白,NTP,0,0,0,,He's young. Around 30.\N他很年轻  30左右
+Dialogue: 0,1:09:47.40,1:09:49.43,中文对白,NTP,0,0,0,,And he has a scar above his eye.\N眼睛上还有一条疤
+Dialogue: 0,1:09:53.91,1:09:56.27,中文对白,NTP,0,0,0,,He wears very expensive suits.\N他穿着考究
+Dialogue: 0,1:09:56.28,1:09:57.68,中文对白,NTP,0,0,0,,We know him.\N我们知道他
+Dialogue: 0,1:09:57.68,1:10:00.88,中文对白,NTP,0,0,0,,The description is not too vague for you?\N我这描述没有太过笼统吧
+Dialogue: 0,1:10:00.88,1:10:02.41,中文对白,NTP,0,0,0,,We have a business to protect.\N我们要照顾生意
+Dialogue: 0,1:10:02.42,1:10:04.48,中文对白,NTP,0,0,0,,Madame, would you be able to\N夫人  您是否能
+Dialogue: 0,1:10:04.48,1:10:05.52,中文对白,NTP,0,0,0,,find out the name of this man?\N查出这人的身份
+Dialogue: 0,1:10:26.41,1:10:27.74,中文对白,NTP,0,0,0,,A favor for a favor.\N等价交换
+Dialogue: 0,1:13:29.69,1:13:32.19,中文对白,NTP,0,0,0,,- Did they tell you? - Tell me what?\N-他们告诉过你吗  -告诉我什么
+Dialogue: 0,1:13:34.96,1:13:36.83,中文对白,NTP,0,0,0,,They didn't tell you.\N他们竟然没告诉你
+Dialogue: 0,1:13:41.73,1:13:45.20,中文对白,NTP,0,0,0,,No, no, stop!\N不要不要  住手
+Dialogue: 0,1:13:45.21,1:13:46.97,中文对白,NTP,0,0,0,,They didn't tell you.\N他们没告诉你
+Dialogue: 0,1:14:15.23,1:14:17.07,中文对白,NTP,0,0,0,,Stop.\N住手
+Dialogue: 0,1:14:56.08,1:14:57.94,中文对白,NTP,0,0,0,,58.\N58个人
+Dialogue: 0,1:14:59.29,1:15:01.75,中文对白,NTP,0,0,0,,Some of them are kids.\N有些还是孩子
+Dialogue: 0,1:15:01.75,1:15:03.78,中文对白,NTP,0,0,0,,And some of them are girls. You want one?\N有些是小女孩  你要吗
+Dialogue: 0,1:15:06.92,1:15:09.92,中文对白,NTP,0,0,0,,I also asked for information.\N说好的信息呢
+Dialogue: 0,1:15:09.92,1:15:12.16,中文对白,NTP,0,0,0,,It's coming, okay?\N会来的
+Dialogue: 0,1:16:36.84,1:16:38.84,中文对白,NTP,0,0,0,,It's the latest. Do you know how to work it?\N是最新款  知道怎么用吗
+Dialogue: 0,1:16:38.85,1:16:40.18,中文对白,NTP,0,0,0,,Yes, of course.\N当然
+Dialogue: 0,1:16:40.18,1:16:44.15,中文对白,NTP,0,0,0,,You could afford to get a professional to do this.\N你可以请个专业摄影师来
+Dialogue: 0,1:16:44.15,1:16:46.32,中文对白,NTP,0,0,0,,Yeah, but I wanted you.\N是啊  但是我想你给我拍
+Dialogue: 0,1:16:52.39,1:16:53.99,中文对白,NTP,0,0,0,,So who are the photographs for?\N这些照片拍给谁看
+Dialogue: 0,1:16:53.99,1:16:56.23,中文对白,NTP,0,0,0,,My daughter.\N我女儿
+Dialogue: 0,1:16:56.23,1:16:58.10,中文对白,NTP,0,0,0,,You have a daughter?\N你有个女儿
+Dialogue: 0,1:16:58.10,1:16:59.70,中文对白,NTP,0,0,0,,Nine years old.\N9岁
+Dialogue: 0,1:17:02.67,1:17:04.30,中文对白,NTP,0,0,0,,I came here with her once when she was small.\N她小时候我带她来过这儿
+Dialogue: 0,1:17:04.30,1:17:06.40,中文对白,NTP,0,0,0,,She might remember.\N她可能还有印象
+Dialogue: 0,1:17:06.41,1:17:07.64,中文对白,NTP,0,0,0,,I want her to have some photographs of me\N我想给她几张照片
+Dialogue: 0,1:17:07.64,1:17:09.14,中文对白,NTP,0,0,0,,looking like a normal man.\N几张看上去正常点的
+Dialogue: 0,1:17:12.14,1:17:13.88,中文对白,NTP,0,0,0,,What do you think?\N你觉得怎么样
+Dialogue: 0,1:17:14.95,1:17:17.12,中文对白,NTP,0,0,0,,Like this?\N像这样
+Dialogue: 0,1:17:18.75,1:17:19.82,中文对白,NTP,0,0,0,,Smile.\N笑一个
+Dialogue: 0,1:17:19.82,1:17:23.32,中文对白,NTP,0,0,0,,Why?\N为什么
+Dialogue: 0,1:17:23.32,1:17:25.66,中文对白,NTP,0,0,0,,Okay, actually, you look okay.\N好了  你看着不错
+Dialogue: 0,1:17:27.16,1:17:29.26,中文对白,NTP,0,0,0,,Do I look like a good man?\N我像个好人吗
+Dialogue: 0,1:17:30.80,1:17:32.33,中文对白,NTP,0,0,0,,What do you mean?\N你什么意思
+Dialogue: 0,1:17:33.97,1:17:36.03,中文对白,NTP,0,0,0,,I want her to think I'm a good man.\N我想让她觉得我是个好人
+Dialogue: 0,1:17:37.37,1:17:40.07,中文对白,NTP,0,0,0,,Yes, you look like a good man.\N是的  你像个好人
+Dialogue: 0,1:17:40.07,1:17:42.17,中文对白,NTP,0,0,0,,So take a picture.\N快拍照吧
+Dialogue: 0,1:17:46.71,1:17:48.91,中文对白,NTP,0,0,0,,Did your daughter ask for photos?\N是你女儿问你要照片
+Dialogue: 0,1:17:48.92,1:17:50.88,中文对白,NTP,0,0,0,,No, but when she's older,\N没有  但等她长大了
+Dialogue: 0,1:17:50.88,1:17:53.18,中文对白,NTP,0,0,0,,I want her to have something to remind her of me.\N我想留点东西好让她记得我
+Dialogue: 0,1:17:53.19,1:17:54.85,中文对白,NTP,0,0,0,,You won't see her?\N你不去看她
+Dialogue: 0,1:17:54.85,1:17:58.09,中文对白,NTP,0,0,0,,I don't think I'll look like this for much longer.\N我想我这个样子不会保持很久的
+Dialogue: 0,1:18:02.39,1:18:04.76,中文对白,NTP,0,0,0,,Why not?\N为什么
+Dialogue: 0,1:18:04.76,1:18:06.73,中文对白,NTP,0,0,0,,Why shouldn't you stay like this?\N你为什么不能保持这样
+Dialogue: 0,1:18:06.73,1:18:08.73,中文对白,NTP,0,0,0,,Just take a picture.\N拍照吧
+Dialogue: 0,1:18:16.41,1:18:17.31,中文对白,NTP,0,0,0,,You should have one like this.\N你应该拍张这样的
+Dialogue: 0,1:18:17.31,1:18:19.08,中文对白,NTP,0,0,0,,More natural.\N更显自然
+Dialogue: 0,1:18:19.08,1:18:21.75,中文对白,NTP,0,0,0,,The businessman drinking his morning coffee.\N早晨生意人喝着咖啡
+Dialogue: 0,1:18:21.75,1:18:23.11,中文对白,NTP,0,0,0,,Such a successful man.\N一个成功人士
+Dialogue: 0,1:18:23.12,1:18:24.42,中文对白,NTP,0,0,0,,So rich.\N腰缠万贯
+Dialogue: 0,1:18:24.42,1:18:26.75,中文对白,NTP,0,0,0,,- Charitable. - Of course.\N-慷慨好善  -必须的
+Dialogue: 0,1:18:26.75,1:18:29.05,中文对白,NTP,0,0,0,,She will be very proud of you.\N她会为你骄傲的
+Dialogue: 0,1:18:29.06,1:18:30.19,中文对白,NTP,0,0,0,,Enough.\N可以了
+Dialogue: 0,1:18:33.23,1:18:34.19,中文对白,NTP,0,0,0,,I said enough.\N我说可以了
+Dialogue: 0,1:18:37.26,1:18:38.90,中文对白,NTP,0,0,0,,At last a laugh.\N最后还是笑了
+Dialogue: 0,1:18:42.13,1:18:44.90,中文对白,NTP,0,0,0,,There. I am changing you.\N看  我改变了你
+Dialogue: 0,1:18:50.41,1:18:52.14,中文对白,NTP,0,0,0,,Send those ones to me.\N照片也给我一份
+Dialogue: 0,1:18:52.15,1:18:53.95,中文对白,NTP,0,0,0,,I'll take them with me to Africa.\N我带去非洲
+Dialogue: 0,1:19:01.12,1:19:02.45,中文对白,NTP,0,0,0,,You're going to Africa?\N你要去非洲
+Dialogue: 0,1:19:02.46,1:19:05.29,中文对白,NTP,0,0,0,,A valley in Sierra Leone where there is no water.\N去一个塞拉利昂的山谷  那边没有水源
+Dialogue: 0,1:19:05.29,1:19:08.06,中文对白,NTP,0,0,0,,When do you leave?\N什么时候动身
+Dialogue: 0,1:19:08.06,1:19:09.93,中文对白,NTP,0,0,0,,Tomorrow.\N明天
+Dialogue: 0,1:19:17.04,1:19:19.44,中文对白,NTP,0,0,0,,So this is the end of my crazy patch, Joey.\N那些疯狂的事就此结束
+Dialogue: 0,1:19:22.04,1:19:24.91,中文对白,NTP,0,0,0,,And I've decided I want to end it with you.\N我决定和你一起结束
+Dialogue: 0,1:19:58.51,1:20:00.81,中文对白,NTP,0,0,0,,Sport coats, shorts...\N运动衣  短袖...
+Dialogue: 0,1:20:00.81,1:20:04.05,中文对白,NTP,0,0,0,,Half price. T-shirts half price.\N半价销售  T恤半价
+Dialogue: 0,1:20:04.05,1:20:06.42,中文对白,NTP,0,0,0,,I've got rain jackets half price.\N雨衣半价
+Dialogue: 0,1:20:06.42,1:20:08.49,中文对白,NTP,0,0,0,,Fleece half price.\N羊毛衫半价
+Dialogue: 0,1:20:08.49,1:20:12.26,中文对白,NTP,0,0,0,,Walking boots half price. Trousers, half price.\N休闲鞋  休闲裤全都半价
+Dialogue: 0,1:20:12.26,1:20:13.46,中文对白,NTP,0,0,0,,Keep the change.\N别找了
+Dialogue: 0,1:20:13.46,1:20:16.29,中文对白,NTP,0,0,0,,...Half price. A massive 50...\N半价销售  5折让利
+Dialogue: 0,1:20:16.30,1:20:21.07,中文对白,NTP,0,0,0,,...Half price. Rain jackets half price.\N半价销售  雨衣半价
+Dialogue: 0,1:20:35.61,1:20:37.42,中文对白,NTP,0,0,0,,Hello? Who's there?\N喂  谁在里面
+Dialogue: 0,1:20:39.12,1:20:42.09,中文对白,NTP,0,0,0,,Hello?\N喂
+Dialogue: 0,1:20:45.46,1:20:47.09,中文对白,NTP,0,0,0,,Cristina!\N克里斯提娜
+Dialogue: 0,1:20:53.63,1:20:57.03,中文对白,NTP,0,0,0,,Who the bloody hell are you?\N这他妈是谁啊
+Dialogue: 0,1:21:00.01,1:21:03.88,中文对白,NTP,0,0,0,,I don't know who you are, but open this door.\N不管你是谁  快给我开门
+Dialogue: 0,1:21:10.52,1:21:13.65,中文对白,NTP,0,0,0,,Did you hear me? I said open the door.\N听到没  给我开门
+Dialogue: 0,1:21:24.43,1:21:27.50,中文对白,NTP,0,0,0,,Cristina.\N克里斯提娜
+Dialogue: 0,1:21:27.50,1:21:30.94,中文对白,NTP,0,0,0,,There's enough money in here to get us away.\N我这儿有很多钱  够我们私奔的
+Dialogue: 0,1:21:30.94,1:21:32.07,中文对白,NTP,0,0,0,,We could go anywhere in the world.\N我们可以去世界上任何一个地方
+Dialogue: 0,1:21:32.07,1:21:33.00,中文对白,NTP,0,0,0,,No, Joey...\N不行  乔伊
+Dialogue: 0,1:21:35.67,1:21:38.01,中文对白,NTP,0,0,0,,If you want to be a good man,\N如果你想做个好人
+Dialogue: 0,1:21:38.01,1:21:40.11,中文对白,NTP,0,0,0,,be a good man.\N要拿出实际行动
+Dialogue: 0,1:21:47.32,1:21:50.99,中文对白,NTP,0,0,0,,Joey, will you come with me to the ballet tonight?\N乔伊  你今晚和我一起看芭蕾吗
+Dialogue: 0,1:21:50.99,1:21:54.39,中文对白,NTP,0,0,0,,I have a box. There is room for two.\N我买了包厢票  可以坐两个人
+Dialogue: 0,1:21:54.39,1:21:56.23,中文对白,NTP,0,0,0,,Tonight at 7:00.\N7点开场
+Dialogue: 0,1:22:12.54,1:22:14.25,中文对白,NTP,0,0,0,,My time here at this mission\N我在这边的任务
+Dialogue: 0,1:22:14.25,1:22:16.28,中文对白,NTP,0,0,0,,has been a fulfilling time.\N让我收获颇丰
+Dialogue: 0,1:22:16.28,1:22:18.28,中文对白,NTP,0,0,0,,Surprises all along the way.\N一路走来惊喜不断
+Dialogue: 0,1:22:18.28,1:22:21.99,中文对白,NTP,0,0,0,,Our mission has had some failures.\N途中有过失败
+Dialogue: 0,1:22:21.99,1:22:25.12,中文对白,NTP,0,0,0,,Some tragedies...\N一些非常悲惨
+Dialogue: 0,1:22:25.12,1:22:27.49,中文对白,NTP,0,0,0,,The poor girl Isabel.\N如可怜的伊莎贝尔
+Dialogue: 0,1:22:27.49,1:22:29.56,中文对白,NTP,0,0,0,,But we have also had successes.\N但我们也有成功之时
+Dialogue: 0,1:22:29.56,1:22:32.30,中文对白,NTP,0,0,0,,And we have also had some who,\N同时  在我们之中
+Dialogue: 0,1:22:32.30,1:22:35.17,中文对白,NTP,0,0,0,,in spite of how it may appear,\N有些人看似普通
+Dialogue: 0,1:22:35.17,1:22:37.30,中文对白,NTP,0,0,0,,give us reason to hope.\N却给了我们希望
+Dialogue: 0,1:22:55.12,1:22:56.72,中文对白,NTP,0,0,0,,Who are you?\N你是谁
+Dialogue: 0,1:22:56.72,1:22:59.52,中文对白,NTP,0,0,0,,I've got something for your mother.\N我有东西要给你妈妈
+Dialogue: 0,1:23:05.13,1:23:06.46,中文对白,NTP,0,0,0,,And something for you.\N也有你一份
+Dialogue: 0,1:23:17.58,1:23:19.28,中文对白,NTP,0,0,0,,Can I just hold your hand for a minute?\N我们能握个手吗
+Dialogue: 0,1:23:32.12,1:23:33.49,中文对白,NTP,0,0,0,,Ruby, who is it?\N露比  谁来了
+Dialogue: 0,1:23:44.07,1:23:46.34,中文对白,NTP,0,0,0,,You be good, okay?\N你要乖点  好吗
+Dialogue: 0,1:24:03.32,1:24:05.52,中文对白,NTP,0,0,0,,Ladies and gentlemen,\N女士们先生们
+Dialogue: 0,1:24:05.53,1:24:09.29,中文对白,NTP,0,0,0,,and the farewell performance of Maria Zielinska.\N接下来是玛利亚·叶林斯卡的告别演出
+Dialogue: 0,1:24:58.44,1:25:01.11,中文对白,NTP,0,0,0,,Tonight's performance will begin in five minutes.\N今晚的演出将于5分钟后开始
+Dialogue: 0,1:25:01.11,1:25:03.11,中文对白,NTP,0,0,0,,Please take your seats.\N请尽快就坐
+Dialogue: 0,1:25:05.58,1:25:07.69,中文对白,NTP,0,0,0,,Closing doors.\N电梯关门
+Dialogue: 0,1:25:30.54,1:25:32.38,中文对白,NTP,0,0,0,,Absolutely, no.\N当然不是
+Dialogue: 0,1:25:41.65,1:25:46.66,中文对白,NTP,0,0,0,,Ladies and gentlemen, Maria Zielinska.\N女士们先生们  有请玛利亚·叶林斯卡
+Dialogue: 0,1:26:28.43,1:26:29.97,中文对白,NTP,0,0,0,,Max?\N麦克斯
+Dialogue: 0,1:26:29.97,1:26:31.50,中文对白,NTP,0,0,0,,Max Forrester?\N麦克斯·福斯特
+Dialogue: 0,1:26:32.97,1:26:34.61,中文对白,NTP,0,0,0,,Yes. Who are you?\N是我  你是哪位
+Dialogue: 0,1:26:34.61,1:26:36.91,中文对白,NTP,0,0,0,,How was your bonus this year? Was it good?\N你今年的奖金怎么样  丰厚吗
+Dialogue: 0,1:26:36.91,1:26:39.64,中文对白,NTP,0,0,0,,It was very good.\N非常丰厚
+Dialogue: 0,1:26:39.65,1:26:41.41,中文对白,NTP,0,0,0,,Are you from Cisco or American Eagle?\N你是思科的还是美国鹰
+Dialogue: 0,1:26:41.41,1:26:43.91,中文对白,NTP,0,0,0,,No. I'm from down there.\N都不是  我是下层人士
+Dialogue: 0,1:26:45.65,1:26:48.35,中文对白,NTP,0,0,0,,Listen, can I talk to you for a minute?\N我们能谈谈吗
+Dialogue: 0,1:26:48.35,1:26:50.75,中文对白,NTP,0,0,0,,I was actually just getting some drinks.\N我要去拿些酒
+Dialogue: 0,1:26:50.76,1:26:52.39,中文对白,NTP,0,0,0,,- Who are you? - Who am I?\N-你是谁  -我是谁
+Dialogue: 0,1:26:52.39,1:26:54.53,中文对白,NTP,0,0,0,,Let me think...\N我想想
+Dialogue: 0,1:27:00.70,1:27:02.90,中文对白,NTP,0,0,0,,What the-- what the hell do you want?\N你到底想干什么
+Dialogue: 0,1:27:02.90,1:27:04.74,中文对白,NTP,0,0,0,,I think you should know how it feels to be down there.\N我觉得应该让你体验下底层的生活
+Dialogue: 0,1:27:04.74,1:27:06.44,中文对白,NTP,0,0,0,,What?\N什么
+Dialogue: 0,1:27:21.25,1:27:25.42,中文对白,NTP,0,0,0,,A reported fatality. Paramedics are on the scene.\N发生命案  医务人员抵达现场
+Dialogue: 0,1:27:25.42,1:27:28.26,中文对白,NTP,0,0,0,,Witnesses report he was pushed or thrown from the roof.\N目击者反应受害人是被推或者扔下屋顶的
+Dialogue: 0,1:27:28.26,1:27:31.70,中文对白,NTP,0,0,0,,Military police reference blotter ar630.\N据宪兵资料第ar630号记载
+Dialogue: 0,1:27:31.70,1:27:34.97,中文对白,NTP,0,0,0,,Surveillance footage matches visual of Joseph Smith.\N监控录像显示嫌疑人身份为约瑟夫·史密斯
+Dialogue: 0,1:27:34.97,1:27:37.50,中文对白,NTP,0,0,0,,Department of defense, long-term missing person.\N他是国防部宣布的长期失踪人员
+Dialogue: 0,1:27:37.50,1:27:38.45,中文对白,NTP,0,0,0,,Do you have a visual?\N能看到他吗
+Dialogue: 0,1:27:38.45,1:27:40.04,中文对白,NTP,0,0,0,,Negative, no further sightings.\N不  看不到了
+Dialogue: 0,1:29:11.46,1:29:12.90,中文对白,NTP,0,0,0,,What are you doing here?\N你在这儿干什么
+Dialogue: 0,1:29:15.10,1:29:17.03,中文对白,NTP,0,0,0,,I'm waiting for Maria Zielinska.\N我在等玛利亚·叶林斯卡
+Dialogue: 0,1:29:19.57,1:29:20.84,中文对白,NTP,0,0,0,,There was a party after the show.\N演出之后有一个晚会
+Dialogue: 0,1:29:20.84,1:29:22.01,中文对白,NTP,0,0,0,,I want to see her walk to her car.\N我想看她走上车
+Dialogue: 0,1:29:43.06,1:29:44.83,中文对白,NTP,0,0,0,,Let me explain.\N听我解释
+Dialogue: 0,1:29:51.07,1:29:52.90,中文对白,NTP,0,0,0,,When I'm sober...\N我清醒的时候
+Dialogue: 0,1:29:56.07,1:29:57.67,中文对白,NTP,0,0,0,,When I'm healthy and well...\N我身体健康的时候
+Dialogue: 0,1:30:01.81,1:30:03.51,中文对白,NTP,0,0,0,,I hurt people.\N我会伤人
+Dialogue: 0,1:30:05.65,1:30:07.62,中文对白,NTP,0,0,0,,I'm lethal.\N非常危险
+Dialogue: 0,1:30:09.65,1:30:12.19,中文对白,NTP,0,0,0,,I drink to weaken the machine they made.\N我通过酒精来麻痹这杀人机器
+Dialogue: 0,1:30:16.03,1:30:18.73,中文对白,NTP,0,0,0,,I've finished the work I had to do.\N我完成了要做的事情
+Dialogue: 0,1:30:33.18,1:30:35.51,中文对白,NTP,0,0,0,,And already, look.\N你看
+Dialogue: 0,1:30:38.82,1:30:39.92,中文对白,NTP,0,0,0,,You see 'em?\N你能看见吗
+Dialogue: 0,1:30:42.89,1:30:44.96,中文对白,NTP,0,0,0,,Hummingbirds.\N蜂鸟
+Dialogue: 0,1:30:53.90,1:30:56.93,中文对白,NTP,0,0,0,,Hummingbirds were there that day.\N出事那天  也有蜂鸟
+Dialogue: 0,1:30:58.84,1:31:01.67,中文对白,NTP,0,0,0,,Do you copy?\N能收到吗
+Dialogue: 0,1:31:01.67,1:31:05.51,中文对白,NTP,0,0,0,,Surveillance drones saw what happened.\N无人机看见了事情的始末
+Dialogue: 0,1:31:05.51,1:31:07.14,中文对白,NTP,0,0,0,,Roger that. Hummingbird can see it.\N收到  蜂鸟能看到
+Dialogue: 0,1:31:07.15,1:31:08.85,中文对白,NTP,0,0,0,,He's got a weapon...\N他有武器
+Dialogue: 0,1:31:08.85,1:31:11.55,中文对白,NTP,0,0,0,,He's shooting up in the air right now..\N他在朝天开枪
+Dialogue: 0,1:31:19.09,1:31:20.82,中文对白,NTP,0,0,0,,Please, please!\N求你了
+Dialogue: 0,1:31:30.64,1:31:32.84,中文对白,NTP,0,0,0,,The enemy killed five of ours...\N敌人射杀了我们5个人
+Dialogue: 0,1:31:40.25,1:31:42.65,中文对白,NTP,0,0,0,,So I killed five of theirs.\N所以我也杀他们5个人
+Dialogue: 0,1:31:45.98,1:31:48.15,中文对白,NTP,0,0,0,,The first five I could find.\N逮到人我就杀
+Dialogue: 0,1:31:53.09,1:31:55.86,中文对白,NTP,0,0,0,,I left the father hanging.\N我把那个父亲吊死
+Dialogue: 0,1:32:48.35,1:32:49.91,中文对白,NTP,0,0,0,,You see her?\N你看她
+Dialogue: 0,1:32:52.68,1:32:54.89,中文对白,NTP,0,0,0,,She is my witness.\N她是我的证人
+Dialogue: 0,1:33:42.20,1:33:43.83,中文对白,NTP,0,0,0,,Sister.\N修女
+Dialogue: 0,1:34:03.72,1:34:05.89,中文对白,NTP,0,0,0,,"Dear Cristina,\N亲爱的克里斯提娜
+Dialogue: 0,1:34:05.89,1:34:09.66,中文对白,NTP,0,0,0,,I just wanted to say thank you for taking the photographs.\N感谢你为我拍照
+Dialogue: 0,1:34:09.66,1:34:10.89,中文对白,NTP,0,0,0,,Considering it's me in the pictures,\N我不怎么上照
+Dialogue: 0,1:34:10.90,1:34:14.26,中文对白,NTP,0,0,0,,they turned out pretty well.\N所以这几张算是拍得很好了
+Dialogue: 0,1:34:14.27,1:34:16.37,中文对白,NTP,0,0,0,,I gave all the best ones to my daughter,\N我把最好的几张给我女儿了
+Dialogue: 0,1:34:16.37,1:34:18.04,中文对白,NTP,0,0,0,,so you're left with the ugly ones\N剩下那些丑的给你
+Dialogue: 0,1:34:18.04,1:34:20.80,中文对白,NTP,0,0,0,,And the scary ones. Sorry.\N还有几张吓人的  抱歉
+Dialogue: 0,1:34:22.84,1:34:24.74,中文对白,NTP,0,0,0,,I've sent Damon the money I took from his account\N我把从达蒙帐号拿的钱还给他了
+Dialogue: 0,1:34:24.74,1:34:26.71,中文对白,NTP,0,0,0,,And added some extra for rent.\N还多打了些房租给他
+Dialogue: 0,1:34:28.75,1:34:32.08,中文对白,NTP,0,0,0,,I left the boys at the mission some cash for pizzas.\N我留了些钱给救济站的朋友们买批萨
+Dialogue: 0,1:34:32.08,1:34:34.05,中文对白,NTP,0,0,0,,And I sent details of the people smugglers\N我还把蛇头的具体信息
+Dialogue: 0,1:34:34.05,1:34:37.29,中文对白,NTP,0,0,0,,to the police.\N告诉了警方
+Dialogue: 0,1:34:37.29,1:34:39.82,中文对白,NTP,0,0,0,,I also rid the city of a bad man.\N我还为这个城市除掉了一个祸害
+Dialogue: 0,1:34:39.83,1:34:42.16,中文对白,NTP,0,0,0,,I know that doesn't make me a good man,\N我知道这么做我也成不了好人
+Dialogue: 0,1:34:42.16,1:34:44.46,中文对白,NTP,0,0,0,,But I tried to do the right thing.\N但是我努力过了
+Dialogue: 0,1:34:48.80,1:34:51.44,中文对白,NTP,0,0,0,,Now I'll go back to the street and disappear.\N现在  我将重回街头  并消失在那里
+Dialogue: 0,1:34:51.44,1:34:54.84,中文对白,NTP,0,0,0,,I was alive again for one summer.\N这个夏天  我重获新生
+Dialogue: 0,1:34:54.84,1:34:56.31,中文对白,NTP,0,0,0,,I'm glad I spent it with you.\N很高兴有你相伴
+Dialogue: 0,1:34:58.44,1:35:00.38,中文对白,NTP,0,0,0,,I hope Africa treats you well.\N希望你在非洲一切顺利
+Dialogue: 0,1:35:00.38,1:35:03.15,中文对白,NTP,0,0,0,,All my love, Joseph Smith."\N爱你的  约瑟夫·史密斯
+Dialogue: 0,1:35:05.22,1:35:09.99,中文对白,NTP,0,0,0,,Surveillance camera profile matched to Joseph Smith.\N监控录像发现约瑟夫·史密斯
+Dialogue: 0,1:35:09.99,1:35:13.16,中文对白,NTP,0,0,0,,Target heading eastbound on Brewer Street\N目标沿布鲁尔街向东走
+Dialogue: 0,1:35:13.16,1:35:14.36,中文对白,NTP,0,0,0,,Towards Glasshouse Street.\N走向暖房街
+Dialogue: 0,1:35:14.36,1:35:16.19,中文对白,NTP,0,0,0,,Absent without leave.\N因故缺勤
+Dialogue: 0,1:35:16.20,1:35:18.40,中文对白,NTP,0,0,0,,File zero-four-zero for profile and visual.\N文档0-4-0  视频资料
+Dialogue: 0,1:35:18.40,1:35:20.40,中文对白,NTP,0,0,0,,I repeat that's east-- east on Brewer Street.\N重复  他在布鲁尔大街东侧
+Dialogue: 0,1:35:20.40,1:35:22.87,中文对白,NTP,0,0,0,,...Matches visual of Joseph Smith.\N身份符合约瑟夫·史密斯
+Dialogue: 0,1:35:22.87,1:35:24.43,中文对白,NTP,0,0,0,,Approach with extreme caution.\N小心行动
+Dialogue: 0,1:35:24.44,1:35:25.80,中文对白,NTP,0,0,0,,I think we have him.\N我们找到他了
+Dialogue: 0,1:35:25.80,1:35:27.14,中文对白,NTP,0,0,0,,Okay, target in sight. Go.\N目标进入视线范围  行动
+Dialogue: 0,1:35:27.14,1:35:28.27,中文对白,NTP,0,0,0,,Yeah, we got him. Take him.\N看到他了  拿下
+
+
