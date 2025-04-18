@@ -1,0 +1,1691 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: Ricco
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,22,&H00DFDFDF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,-38,134
+Style: E,Microsoft YaHei,12,&H00DFDFDF,&H0000FFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,3,134
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:49.13,0:00:50.51,Default,,0,0,0,,嗨  打扰一下\N{\rE}Hi, excuse me.
+Dialogue: 0,0:00:51.34,0:00:54.01,Default,,0,0,0,,我在找卡特福特\N{\rE}Yeah, I'm looking for Carter Ford.
+Dialogue: 0,0:00:54.10,0:00:55.64,Default,,0,0,0,,能告诉我哪个是他吗？\N{\rE}Do you mind pointing him out to me?
+Dialogue: 0,0:01:03.94,0:01:05.90,Default,,0,0,0,,但愿不是光头那个\N{\rE}I hope he's not the bald one.
+Dialogue: 0,0:01:05.98,0:01:07.19,Default,,0,0,0,,身上有文身那个\N{\rE}Guy with the ink.
+Dialogue: 0,0:01:07.28,0:01:08.40,Default,,0,0,0,,他在摆擂台  谁的挑战他都接\N{\rE}He's takin' all comers.
+Dialogue: 0,0:01:31.38,0:01:35.68,Default,,0,0,0,,新威龙杀阵
+Dialogue: 0,0:02:06.17,0:02:07.13,Default,,0,0,0,,来啊！\N{\rE}Come on!
+Dialogue: 0,0:02:09.17,0:02:12.30,Default,,0,0,0,,粗略一算\N{\rE}A little back-of-the-envelope arithmetic says
+Dialogue: 0,0:02:12.47,0:02:16.35,Default,,0,0,0,,威名赫赫的卡特福特已连下六城\N{\rE}that's six in a row for the illustrious Carter Ford.
+Dialogue: 0,0:02:16.43,0:02:19.43,Default,,0,0,0,,谁想进去给他凑够七连胜？\N{\rE}Who wants to get in there, make it seven, huh?
+Dialogue: 0,0:02:19.52,0:02:20.81,Default,,0,0,0,,谁想上场一试？\N{\rE}Who wants to do it?
+Dialogue: 0,0:02:20.98,0:02:22.89,Default,,0,0,0,,今晚可是赢家通吃  各位\N{\rE}It's winner-take-all tonight, y'all.
+Dialogue: 0,0:02:22.98,0:02:24.52,Default,,0,0,0,,奖金“不多”  一大桶而已\N{\rE}It's just a bunch of money in a bucket.
+Dialogue: 0,0:02:24.60,0:02:27.27,Default,,0,0,0,,卡特福特已连下六城  谁将拿下一城？\N{\rE}Carter Ford's got six. Who's gonna get one?
+Dialogue: 0,0:02:27.48,0:02:29.65,Default,,0,0,0,,我帮你缠绷带  双手平摊\N{\rE}I'm gonna tape you. Arms flat.
+Dialogue: 0,0:02:30.36,0:02:31.44,Default,,0,0,0,,不用吗？\N{\rE}Someone step in. - No?
+Dialogue: 0,0:02:31.61,0:02:34.78,Default,,0,0,0,,开始了！现在，有想再看比赛的吗？\N{\rE}Let's get this goin'! Now, who wants to see another fight?
+Dialogue: 0,0:02:34.86,0:02:37.03,Default,,0,0,0,,-蠢货  -你玩过笼斗吗？\N{\rE}- Fucking guy. - You ever done this before?
+Dialogue: 0,0:02:37.12,0:02:39.62,Default,,0,0,0,,这货是谁？好吧  来了个超级英雄\N{\rE}- Who the fuck is this? - All right, a superhero.
+Dialogue: 0,0:02:39.70,0:02:41.25,Default,,0,0,0,,靠过来吧！快点\N{\rE}Close it up! Come on.
+Dialogue: 0,0:03:02.14,0:03:04.48,Default,,0,0,0,,你知道那家伙是谁吗？\N{\rE}Jesus, Carter. You know who that is?
+Dialogue: 0,0:03:11.94,0:03:13.40,Default,,0,0,0,,不  没门儿\N{\rE}Nah. Nope.
+Dialogue: 0,0:03:13.86,0:03:16.36,Default,,0,0,0,,我绝不跟那家伙打  门儿都没有！\N{\rE}I'm not fightin' that fucking guy. No fuckin' way!
+Dialogue: 0,0:03:17.03,0:03:18.62,Default,,0,0,0,,没门儿  门儿都没有！\N{\rE}No fuckin' way. There's no fuckin' way.
+Dialogue: 0,0:03:18.78,0:03:19.70,Default,,0,0,0,,去你的\N{\rE}Yeah, fuck you.
+Dialogue: 0,0:03:19.87,0:03:20.83,Default,,0,0,0,,我不在乎\N{\rE}I don't give a fuck. I'm not...
+Dialogue: 0,0:03:20.99,0:03:22.41,Default,,0,0,0,,他可是那该死的家伙\N{\rE}- He's that fucking guy. - You ain't gonna fight for your money?
+Dialogue: 0,0:03:22.58,0:03:23.66,Default,,0,0,0,,我干吗要想不开跟他打？\N{\rE}Why would I fight that guy?
+Dialogue: 0,0:03:23.83,0:03:24.79,Default,,0,0,0,,好了  出去吧  快点\N{\rE}- Keep your fuckin' money! - All right, get outta here.
+Dialogue: 0,0:03:24.96,0:03:26.29,Default,,0,0,0,,我不稀罕你们的臭钱！\N{\rE}I don't want your fuckin' money.
+Dialogue: 0,0:03:26.46,0:03:28.00,Default,,0,0,0,,-你们知道他是谁吗？  -走吧\N{\rE}- You know who the fuck he is? - Let's go.
+Dialogue: 0,0:03:28.17,0:03:30.92,Default,,0,0,0,,你们来一个我打一个  保证打得你们满地找牙\N{\rE}I'll fight any fuckin' one of you. I'll fuckin' beat your ass.
+Dialogue: 0,0:03:31.09,0:03:32.34,Default,,0,0,0,,至于他  你们自己打去吧！\N{\rE}You fuckin' fight him!
+Dialogue: 0,0:03:32.50,0:03:34.17,Default,,0,0,0,,我才不和那晦气的家伙打\N{\rE}- Get your ass back in there! - I'm not fightin' that fucking guy.
+Dialogue: 0,0:03:34.34,0:03:36.68,Default,,0,0,0,,通通见鬼去吧！去你的！\N{\rE}You can all go fuck yourselves! Fuck you!
+Dialogue: 0,0:03:37.89,0:03:38.89,Default,,0,0,0,,去你的！\N{\rE}Fuck you!
+Dialogue: 0,0:03:39.18,0:03:40.18,Default,,0,0,0,,还有你！\N{\rE}Fuck you too!
+Dialogue: 0,0:03:45.18,0:03:47.35,Default,,0,0,0,,操蛋！滚！-\N{\rE}- Fuck that shit! Bullshit! - Get out! Get out!
+Dialogue: 0,0:03:48.19,0:03:49.98,Default,,0,0,0,,拿去吧  这是你的奖金\N{\rE}There you go. Here's your money.
+Dialogue: 0,0:03:50.61,0:03:52.90,Default,,0,0,0,,-不！  -美女  规则可不是我定的\N{\rE}- No! Come on. - I don't make the rules, honey.
+Dialogue: 0,0:04:03.29,0:04:04.91,Default,,0,0,0,,嘿！道尔顿\N{\rE}Hey! Dalton!
+Dialogue: 0,0:04:06.79,0:04:07.87,Default,,0,0,0,,你这就想走了？\N{\rE}Where you goin'?
+Dialogue: 0,0:04:10.04,0:04:12.00,Default,,0,0,0,,你刚刚害我损失了500块  混蛋\N{\rE}You just lost me 500 bucks, asshole.
+Dialogue: 0,0:04:16.38,0:04:18.38,Default,,0,0,0,,你确定你想清楚了？\N{\rE}You sure you thought this all the way through?
+Dialogue: 0,0:04:26.64,0:04:28.02,Default,,0,0,0,,嘿  你要去哪儿？\N{\rE}Hey, where you goin'?
+Dialogue: 0,0:04:28.19,0:04:30.02,Default,,0,0,0,,不把你的刀收走吗？\N{\rE}You're not gonna take your knife?
+Dialogue: 0,0:04:37.74,0:04:39.07,Default,,0,0,0,,该死的\N{\rE}Shit.
+Dialogue: 0,0:04:53.29,0:04:54.29,Default,,0,0,0,,打扰一下\N{\rE}Excuse me.
+Dialogue: 0,0:04:58.34,0:05:00.51,Default,,0,0,0,,你刚刚那招虚张声势用得真漂亮\N{\rE}It's a nice little scam you got goin' on in there.
+Dialogue: 0,0:05:01.39,0:05:03.64,Default,,0,0,0,,只须让对手知道你是谁\N{\rE}All you need is for the opponent to know who you are...
+Dialogue: 0,0:05:04.01,0:05:05.01,Default,,0,0,0,,在那？-\N{\rE}Where is it?
+Dialogue: 0,0:05:05.18,0:05:07.39,Default,,0,0,0,,知道你的过往  他们便会害怕得不战而降\N{\rE}Know your history, and then they'll be too afraid to fight.
+Dialogue: 0,0:05:07.52,0:05:10.19,Default,,0,0,0,,真是聪明  伙计\N{\rE}- That's fuckin' brilliant, man. - Yeah.
+Dialogue: 0,0:05:10.35,0:05:12.65,Default,,0,0,0,,动脑子总比动手好\N{\rE}Yeah, well, beats workin'.
+Dialogue: 0,0:05:13.65,0:05:16.44,Default,,0,0,0,,说实话  我一开始都没认出你来\N{\rE}You know, it actually took me a second to recognize you.
+Dialogue: 0,0:05:16.57,0:05:18.49,Default,,0,0,0,,天啊\N{\rE}Oh... Oh, God.
+Dialogue: 0,0:05:19.19,0:05:21.82,Default,,0,0,0,,你需要救护车什么的吗？\N{\rE}Um, do you need a ambulance or something?
+Dialogue: 0,0:05:22.28,0:05:23.12,Default,,0,0,0,,不需要\N{\rE}Nope.
+Dialogue: 0,0:05:23.28,0:05:24.74,Default,,0,0,0,,你身上插着一把刀呢\N{\rE}You know you got a big-ass knife stickin' outta you?
+Dialogue: 0,0:05:24.91,0:05:26.33,Default,,0,0,0,,能帮我拿着这个吗？\N{\rE}Can you hold this?
+Dialogue: 0,0:05:26.83,0:05:27.83,Default,,0,0,0,,当然\N{\rE}Sure.
+Dialogue: 0,0:05:28.79,0:05:30.33,Default,,0,0,0,,待会拔刀后  伤口会流血\N{\rE}It's gonna bleed when I take it out.
+Dialogue: 0,0:05:34.50,0:05:35.63,Default,,0,0,0,,我的天啊\N{\rE}Oh, shit!
+Dialogue: 0,0:05:40.80,0:05:42.47,Default,,0,0,0,,虽然会留下难看的疤痕\N{\rE}It's gonna leave a nasty scar...
+Dialogue: 0,0:05:43.43,0:05:45.14,Default,,0,0,0,,但这样比较省事\N{\rE}but it's easier this way.
+Dialogue: 0,0:05:45.93,0:05:48.22,Default,,0,0,0,,天啊  看来你经常做这种事\N{\rE}- Wow, it seems like you do this a lot. - Huh?
+Dialogue: 0,0:05:50.52,0:05:51.56,Default,,0,0,0,,是啊\N{\rE}Yeah.
+Dialogue: 0,0:05:51.73,0:05:53.81,Default,,0,0,0,,成功的秘诀在于耐心\N{\rE}Patience and a keen interest in the result...
+Dialogue: 0,0:05:53.98,0:05:55.69,Default,,0,0,0,,和求胜心\N{\rE}that's all it takes.
+Dialogue: 0,0:05:57.69,0:05:59.65,Default,,0,0,0,,我在佛罗里达群岛上\N{\rE}So listen, I own a roadhouse.
+Dialogue: 0,0:06:00.15,0:06:01.20,Default,,0,0,0,,经营着一家路边餐馆\N{\rE}Out in the Florida Keys.
+Dialogue: 0,0:06:01.36,0:06:02.36,Default,,0,0,0,,路边餐馆？\N{\rE}A roadhouse, huh?
+Dialogue: 0,0:06:02.53,0:06:03.66,Default,,0,0,0,,海明威曾在那里喝过酒\N{\rE}Hemingway used to drink there.
+Dialogue: 0,0:06:05.53,0:06:07.45,Default,,0,0,0,,你知道欧内斯特海明威吧？\N{\rE}You know... Ernest Hemingway?
+Dialogue: 0,0:06:08.37,0:06:09.58,Default,,0,0,0,,真不错\N{\rE}Good for you.
+Dialogue: 0,0:06:09.75,0:06:10.95,Default,,0,0,0,,我那餐馆本就是个闹哄哄的地方\N{\rE}It's always been a rowdy place.
+Dialogue: 0,0:06:11.12,0:06:12.41,Default,,0,0,0,,大家都到店里来释放压力\N{\rE}People come to blow off steam.
+Dialogue: 0,0:06:12.58,0:06:15.13,Default,,0,0,0,,但近期经常有不速之客光顾\N{\rE}But lately it's been attractin' the wrong clientele.
+Dialogue: 0,0:06:15.29,0:06:17.54,Default,,0,0,0,,他们夜夜生事  把餐馆弄得一团糟\N{\rE}Come in every night. They trash the place.
+Dialogue: 0,0:06:17.71,0:06:19.00,Default,,0,0,0,,警察根本帮不上忙\N{\rE}The cops are no fuckin' help.
+Dialogue: 0,0:06:19.17,0:06:21.09,Default,,0,0,0,,我的保镖也跑光了\N{\rE}All my fuckin' bouncers have ran off.
+Dialogue: 0,0:06:21.22,0:06:22.34,Default,,0,0,0,,给我\N{\rE}Hand me that.
+Dialogue: 0,0:06:23.88,0:06:26.18,Default,,0,0,0,,总之  我最终还是决定  向外界寻求帮助\N{\rE}Anyway, I finally decided I needed some outside help.
+Dialogue: 0,0:06:27.05,0:06:30.14,Default,,0,0,0,,我的一个朋友建议我  来找一个名叫卡特福特的人谈谈\N{\rE}A friend of mine suggested I come talk to some guy named Carter Ford.
+Dialogue: 0,0:06:30.31,0:06:33.56,Default,,0,0,0,,确实  卡特的身手似乎挺不错的\N{\rE}Yeah, well... Carter seems good with his hands.
+Dialogue: 0,0:06:33.89,0:06:35.23,Default,,0,0,0,,不  你更好\N{\rE}No, you'd be better.
+Dialogue: 0,0:06:35.40,0:06:38.77,Default,,0,0,0,,我可以给你支付丰厚的薪水  周薪五千  为期一个月\N{\rE}I can pay you good money. 5k a week... just for a month.
+Dialogue: 0,0:06:38.94,0:06:40.19,Default,,0,0,0,,我可以帮你安排个住处\N{\rE}And I can put you up.
+Dialogue: 0,0:06:41.94,0:06:44.53,Default,,0,0,0,,我抽不出身来  抱歉\N{\rE}I'm all booked up. Sorry.
+Dialogue: 0,0:06:44.70,0:06:47.07,Default,,0,0,0,,什么？那可是整整两万美元\N{\rE}'Scuse me? I mean, it's 20 grand.
+Dialogue: 0,0:06:47.24,0:06:49.41,Default,,0,0,0,,从你的车来看  你应该需要那些钱\N{\rE}And judging by your car, you need that shit.
+Dialogue: 0,0:06:49.58,0:06:50.70,Default,,0,0,0,,我喜欢我的车\N{\rE}Well, I like my car.
+Dialogue: 0,0:06:50.87,0:06:53.04,Default,,0,0,0,,我给你的报酬  应该比你参加那个什么…\N{\rE}Okay, that's gotta be more than you're makin' for...
+Dialogue: 0,0:06:53.21,0:06:54.41,Default,,0,0,0,,赚的要多吧\N{\rE}whatever the hell you call this.
+Dialogue: 0,0:06:55.54,0:06:56.88,Default,,0,0,0,,你去找卡特吧\N{\rE}Try Carter.
+Dialogue: 0,0:06:57.04,0:06:58.25,Default,,0,0,0,,至少让我发个联系电话给你\N{\rE}Look, at least let me text you my number.
+Dialogue: 0,0:06:58.79,0:07:00.42,Default,,0,0,0,,我没有手机  所以…\N{\rE}I don't have a phone, so...
+Dialogue: 0,0:07:00.59,0:07:01.51,Default,,0,0,0,,好吧  稍等一下\N{\rE}Well, hold on.
+Dialogue: 0,0:07:01.67,0:07:04.30,Default,,0,0,0,,我用最原始的方式纸和笔  给你写下来\N{\rE}I'll write it down on a pen and paper, just like our ancestors did.
+Dialogue: 0,0:07:06.76,0:07:07.80,Default,,0,0,0,,我叫弗兰基\N{\rE}I'm Frankie.
+Dialogue: 0,0:07:09.72,0:07:10.72,Default,,0,0,0,,你考虑一下\N{\rE}Think about it.
+Dialogue: 0,0:07:13.23,0:07:14.39,Default,,0,0,0,,祝你晚安  女士\N{\rE}You have a good night, ma'am.
+Dialogue: 0,0:07:21.23,0:07:22.90,Default,,0,0,0,,这里不是假日酒店  伙计\N{\rE}This ain't the Holiday Inn, pal.
+Dialogue: 0,0:07:23.03,0:07:25.36,Default,,0,0,0,,我…我这就走\N{\rE}I'll move it. I'm movin'.
+Dialogue: 0,0:07:35.66,0:07:36.75,Default,,0,0,0,,他闪挪腾移  左摇右摆\N{\rE}He's movin' and a shakin'.
+Dialogue: 0,0:07:36.92,0:07:40.21,Default,,0,0,0,,本杰明的攻势被卡尔维诺化解了  30秒过去了\N{\rE}Benjamin gets blocked by Calvino with 30 seconds down.
+Dialogue: 0,0:07:40.38,0:07:42.25,Default,,0,0,0,,挑战者使出了一记右摆拳\N{\rE}An overhand right landed by the challenger
+Dialogue: 0,0:07:42.42,0:07:44.76,Default,,0,0,0,,紧接一套左左右的组合拳…\N{\rE}with a straight left-left-right combination.
+Dialogue: 0,0:07:44.92,0:07:48.18,Default,,0,0,0,,本杰明把冠军抬了起来  想要推开他\N{\rE}And Benjamin is lifting up the champion and pushing him away!
+Dialogue: 0,0:07:48.34,0:07:49.80,Default,,0,0,0,,本回合还剩下16秒\N{\rE}There's 16 left to go in the round.
+Dialogue: 0,0:07:49.97,0:07:52.60,Default,,0,0,0,,卡尔维诺出击了  他右手甩出一拳…\N{\rE}And now here comes Calvino. He lands a right.
+Dialogue: 0,0:07:52.76,0:07:54.81,Default,,0,0,0,,他被挑战者击倒了\N{\rE}Couple of shots landed by the challenger.
+Dialogue: 0,0:07:54.98,0:07:58.15,Default,,0,0,0,,本杰明左右出击  打出好几拳  卡尔维诺从上方和左侧\N{\rE}Benjamin landing some lefts and rights. Calvino hits high.
+Dialogue: 0,0:07:58.31,0:08:00.27,Default,,0,0,0,,击中了挑战者  带来雷鸣般的钟声\N{\rE}And a left on the challenger, bringin' the thunder.
+Dialogue: 0,0:08:00.44,0:08:02.57,Default,,0,0,0,,紧接着卡尔维诺用膝盖压住了对方…\N{\rE}And a knee to the body by Cal...
+Dialogue: 0,0:08:08.24,0:08:10.24,Default,,0,0,0,,右直拳  然后用膝盖压住了对方的身体…\N{\rE}right hand, and then a knee to the body by...
+Dialogue: 0,0:08:27.34,0:08:28.43,Default,,0,0,0,,还是算了\N{\rE}Maybe not.
+Dialogue: 0,0:08:56.41,0:08:59.12,Default,,0,0,0,,{\fs14\an8}弗兰基  3051365211
+Dialogue: 0,0:09:00.75,0:09:03.38,Default,,0,0,0,,欢迎收听WYBS电台  FM106.4  佛罗里达群岛频道\N{\rE}WYBS 106.4 for the Florida Keys...
+Dialogue: 0,0:09:03.54,0:09:06.38,Default,,0,0,0,,宛如一叶叶海上扁舟的群岛  是古巴哈瓦那的一部分\N{\rE}parts of Havana, Cuba, and the vessels at sea...
+Dialogue: 0,0:09:06.55,0:09:09.05,Default,,0,0,0,,还有FM102.8  基韦斯特频道\N{\rE}and 102.8 in Key West.
+Dialogue: 0,0:09:39.37,0:09:41.16,Default,,0,0,0,,你进来的路上看到弗雷德了吗？\N{\rE}Did you see Fred on your way in?
+Dialogue: 0,0:09:41.67,0:09:42.67,Default,,0,0,0,,你说什么？\N{\rE}What's that?
+Dialogue: 0,0:09:42.75,0:09:44.46,Default,,0,0,0,,桥上那棵树  弗雷德\N{\rE}Fred, the tree on the bridge?
+Dialogue: 0,0:09:45.34,0:09:47.75,Default,,0,0,0,,不是主桥  而是旁边那座旧的\N{\rE}Not the main bridge, but the old one beside it.
+Dialogue: 0,0:09:47.92,0:09:50.88,Default,,0,0,0,,历史悠久的七英里桥\N{\rE}The historic Seven Mile Bridge?
+Dialogue: 0,0:09:51.26,0:09:53.55,Default,,0,0,0,,它就长在路中央\N{\rE}He grows right in the middle of the road.
+Dialogue: 0,0:09:53.72,0:09:54.55,Default,,0,0,0,,你看到它了吗？\N{\rE}Did you see him?
+Dialogue: 0,0:09:55.26,0:09:57.93,Default,,0,0,0,,恐怕没看到\N{\rE}I can't say that I did.
+Dialogue: 0,0:09:58.52,0:10:01.23,Default,,0,0,0,,虽然整座桥都封闭了  你无法靠近它  但…\N{\rE}You know, that whole bridge is closed. You can't get to it...
+Dialogue: 0,0:10:01.85,0:10:04.31,Default,,0,0,0,,那棵不知从哪里冒出来的老树\N{\rE}but big old tree just kinda pops outta nowhere.
+Dialogue: 0,0:10:04.65,0:10:06.36,Default,,0,0,0,,它就是大树弗雷德\N{\rE}Well, that's Fred the tree.
+Dialogue: 0,0:10:07.19,0:10:08.32,Default,,0,0,0,,而你…\N{\rE}And...
+Dialogue: 0,0:10:08.48,0:10:10.82,Default,,0,0,0,,感兴趣的话  这里有一本关于它的书\N{\rE}got a book on him, if you're interested.
+Dialogue: 0,0:10:10.90,0:10:13.91,Default,,0,0,0,,内容充满本地色彩  非常适合游客\N{\rE}It's full of local color and all. It's great for tourists.
+Dialogue: 0,0:10:16.07,0:10:17.53,Default,,0,0,0,,顺带一提  我叫查莉\N{\rE}I'm Charlie, by the way.
+Dialogue: 0,0:10:16.74,0:10:23.75,Default,,0,0,0,,{\fs14\an8}玻璃岛书店
+Dialogue: 0,0:10:23.08,0:10:24.12,Default,,0,0,0,,嘿  查莉\N{\rE}Hey, Charlie.
+Dialogue: 0,0:10:25.63,0:10:27.88,Default,,0,0,0,,你一个人经营着这家书店吗？\N{\rE}You run this bookstore all on your own?
+Dialogue: 0,0:10:28.05,0:10:29.09,Default,,0,0,0,,不是\N{\rE}No.
+Dialogue: 0,0:10:29.76,0:10:31.38,Default,,0,0,0,,不过我是店主之一\N{\rE}I am one of the owners, though.
+Dialogue: 0,0:10:34.68,0:10:36.22,Default,,0,0,0,,你怎么会来到玻璃岛？\N{\rE}What brings you to Glass Key?
+Dialogue: 0,0:10:37.26,0:10:38.85,Default,,0,0,0,,我来这里的一家酒吧工作\N{\rE}I'm here to work at a bar.
+Dialogue: 0,0:10:39.18,0:10:40.68,Default,,0,0,0,,当酒保？\N{\rE}- Bartending? - No.
+Dialogue: 0,0:10:40.85,0:10:43.31,Default,,0,0,0,,-不是  -酒吧里还能有什么工作？\N{\rE}What other job is there at a bar?
+Dialogue: 0,0:10:43.48,0:10:46.10,Default,,0,0,0,,我想酒吧的老板遇到了一点麻烦\N{\rE}Well, the owner's havin' a little trouble, I guess, and I'm...
+Dialogue: 0,0:10:46.27,0:10:47.86,Default,,0,0,0,,我是来帮忙解决问题的\N{\rE}just here to clean it up.
+Dialogue: 0,0:10:48.02,0:10:49.98,Default,,0,0,0,,听起来就像西部片的情节\N{\rE}That kinda sounds like the plot to a western.
+Dialogue: 0,0:10:51.07,0:10:52.24,Default,,0,0,0,,就像…\N{\rE}Like...
+Dialogue: 0,0:10:52.40,0:10:55.45,Default,,0,0,0,,“小镇居民请来一位英雄  帮忙整顿乌烟瘴气的酒吧”\N{\rE}"Local townsfolk send for a hero to help clean up the rowdy saloon."
+Dialogue: 0,0:10:56.28,0:10:57.28,Default,,0,0,0,,套路你懂的\N{\rE}You know that crap?
+Dialogue: 0,0:10:57.45,0:10:59.16,Default,,0,0,0,,查莉  你就别烦着人家了\N{\rE}Charlie, leave this poor man alone.
+Dialogue: 0,0:11:00.20,0:11:03.37,Default,,0,0,0,,真抱歉  她整天热衷于推销书籍\N{\rE}Yeah, I'm sorry. She gets excited about sellin' books and trees...
+Dialogue: 0,0:11:03.54,0:11:05.29,Default,,0,0,0,,大树和弗雷德什么的…  -嗨  我叫斯蒂芬\N{\rE}and Fred and all that... Hi, I'm Stephen.
+Dialogue: 0,0:11:05.46,0:11:06.46,Default,,0,0,0,,-我叫道尔顿\N{\rE}- Dalton. - Mmm-hmm.
+Dialogue: 0,0:11:07.13,0:11:09.50,Default,,0,0,0,,他是来这边的路边餐馆上班的\N{\rE}Oh, he's here to work at the Road House.
+Dialogue: 0,0:11:11.84,0:11:15.76,Default,,0,0,0,,-真的吗？  -那里的老板弗兰基\N{\rE}- Uh... Really? - See, the owner, uh, Frankie...
+Dialogue: 0,0:11:16.76,0:11:19.47,Default,,0,0,0,,她只跟我说是一家路边餐馆  却没有告诉我名字\N{\rE}she told me it was a roadhouse, but she never told me the name.
+Dialogue: 0,0:11:19.64,0:11:21.31,Default,,0,0,0,,就叫路边餐馆\N{\rE}It's just the Road House.
+Dialogue: 0,0:11:21.47,0:11:23.14,Default,,0,0,0,,也就是说没有…没有名字？\N{\rE}Oh, so no name?
+Dialogue: 0,0:11:23.43,0:11:25.52,Default,,0,0,0,,没有…对\N{\rE}Ah, well, no, well, yeah.
+Dialogue: 0,0:11:25.69,0:11:28.06,Default,,0,0,0,,可以这么说  那里就叫路边餐馆\N{\rE}Kinda. It's the Road House.
+Dialogue: 0,0:11:30.98,0:11:33.69,Default,,0,0,0,,沿着公路向前走  过了77英里标识牌就能到\N{\rE}It's just up the highway, past mile marker 77.
+Dialogue: 0,0:11:35.61,0:11:37.20,Default,,0,0,0,,谢谢你推荐的书  但我…\N{\rE}Well, thank you for the book but...
+Dialogue: 0,0:11:37.36,0:11:39.16,Default,,0,0,0,,预算有限  没事\N{\rE}- I'm on a budget. - No, no.
+Dialogue: 0,0:11:39.32,0:11:41.33,Default,,0,0,0,,你留着吧\N{\rE}Keep it, please.
+Dialogue: 0,0:11:41.49,0:11:42.45,Default,,0,0,0,,就当我们送你的\N{\rE}It's on us.
+Dialogue: 0,0:11:43.58,0:11:44.58,Default,,0,0,0,,谢谢\N{\rE}Thank you.
+Dialogue: 0,0:11:48.54,0:11:49.96,Default,,0,0,0,,欢迎来到玻璃岛\N{\rE}Welcome to Glass Key.
+Dialogue: 0,0:11:50.92,0:11:51.92,Default,,0,0,0,,谢谢  斯蒂芬\N{\rE}Thanks, Stephen.
+Dialogue: 0,0:12:02.51,0:12:03.97,Default,,0,0,0,,{\fs14\an8}77英里
+Dialogue: 0,0:12:21.45,0:12:24.37,Default,,0,0,0,,{\fs14\an8}路边餐馆  餐馆兼酒吧
+Dialogue: 0,0:12:44.39,0:12:46.52,Default,,0,0,0,,但他们到这里还要五分钟-\N{\rE}But just like five more minutes till they get here.
+Dialogue: 0,0:12:46.68,0:12:48.19,Default,,0,0,0,,等不了！-\N{\rE}I can't wait!
+Dialogue: 0,0:12:49.27,0:12:51.35,Default,,0,0,0,,你们现在就要走吗？对啊，走了-\N{\rE}- You guys wanna go now? - Yeah, yeah, let's do it.
+Dialogue: 0,0:12:52.40,0:12:55.36,Default,,0,0,0,,不  真是的…每次都这样  每次…\N{\rE}No! Every single time. Every...
+Dialogue: 0,0:12:55.53,0:12:57.32,Default,,0,0,0,,-他在纠缠你吗？  -对  他又想讨要免费酒喝\N{\rE}- He's bothering you? - Yeah, he wants free drinks again.
+Dialogue: 0,0:12:57.49,0:12:58.61,Default,,0,0,0,,免费个鸡毛-\N{\rE}You're not gettin' free shit, Reed.
+Dialogue: 0,0:12:58.78,0:13:00.41,Default,,0,0,0,,一视同仁，者要钱-\N{\rE}You gotta fuckin' pay like everybody else, man.
+Dialogue: 0,0:13:00.57,0:13:02.28,Default,,0,0,0,,好吧  我发誓  这是最后一杯了\N{\rE}If you... Okay. This is the last one, I swear.
+Dialogue: 0,0:13:02.45,0:13:03.41,Default,,0,0,0,,-到此为止  -谢谢\N{\rE}- That's it. - I appreciate you.
+Dialogue: 0,0:13:03.58,0:13:04.41,Default,,0,0,0,,-那就最后一杯  -最后一杯\N{\rE}- Last one, though. - Last one.
+Dialogue: 0,0:13:04.58,0:13:06.58,Default,,0,0,0,,我保证你再也不会喝到免费酒了\N{\rE}You're not gettin' any more for free, I swear to God.
+Dialogue: 0,0:13:08.37,0:13:10.50,Default,,0,0,0,,-我发誓  这个老流氓…  -我才17岁\N{\rE}- Swear to God, this bum. - 17.
+Dialogue: 0,0:13:10.67,0:13:12.04,Default,,0,0,0,,好吧\N{\rE}- Okay. - Hiya.
+Dialogue: 0,0:13:13.17,0:13:14.63,Default,,0,0,0,,可以给我一杯黑咖啡吗？\N{\rE}I'll get a black coffee.
+Dialogue: 0,0:13:15.42,0:13:18.30,Default,,0,0,0,,我们不卖黑咖啡  抱歉\N{\rE}Oh, uh... Yeah, we don't have that. Sorry.
+Dialogue: 0,0:13:21.22,0:13:22.64,Default,,0,0,0,,那你喝的是什么？\N{\rE}What're you drinkin'?
+Dialogue: 0,0:13:23.05,0:13:24.39,Default,,0,0,0,,这是古巴咖啡\N{\rE}It's, uh, Cuban coffee.
+Dialogue: 0,0:13:27.22,0:13:28.39,Default,,0,0,0,,好吧\N{\rE}Okay.
+Dialogue: 0,0:13:28.56,0:13:29.89,Default,,0,0,0,,味道相去甚远\N{\rE}It's... very different.
+Dialogue: 0,0:13:30.94,0:13:32.19,Default,,0,0,0,,给我来一杯吧\N{\rE}- Yeah. - Can I have one of those?
+Dialogue: 0,0:13:33.94,0:13:35.73,Default,,0,0,0,,好的  没问题\N{\rE}Sure. Okay.
+Dialogue: 0,0:13:42.49,0:13:43.49,Default,,0,0,0,,嘿\N{\rE}Hey.
+Dialogue: 0,0:13:45.70,0:13:46.70,Default,,0,0,0,,嘿\N{\rE}Hey.
+Dialogue: 0,0:13:47.87,0:13:48.91,Default,,0,0,0,,我认识你\N{\rE}I know who you are.
+Dialogue: 0,0:13:50.54,0:13:51.96,Default,,0,0,0,,你是埃尔伍德道尔顿\N{\rE}Elwood Dalton.
+Dialogue: 0,0:13:52.67,0:13:53.67,Default,,0,0,0,,我是你的超级粉丝\N{\rE}Big fan, man.
+Dialogue: 0,0:13:54.92,0:13:57.00,Default,,0,0,0,,你在干什么？冷静点  伙计\N{\rE}What you doin'? Just keep it cool, man.
+Dialogue: 0,0:13:57.80,0:13:59.13,Default,,0,0,0,,我什么时候不冷静了？\N{\rE}When am I not cool?
+Dialogue: 0,0:14:01.22,0:14:02.93,Default,,0,0,0,,我是个超级粉  你不知道他是谁-\N{\rE}Hey, I'm a big fan. You didn't know who he is.
+Dialogue: 0,0:14:03.09,0:14:04.30,Default,,0,0,0,,给你\N{\rE}Here you go.
+Dialogue: 0,0:14:04.47,0:14:05.47,Default,,0,0,0,,谢谢\N{\rE}Thank you, ma'am.
+Dialogue: 0,0:14:11.02,0:14:12.02,Default,,0,0,0,,哇\N{\rE}Yikes.
+Dialogue: 0,0:14:12.81,0:14:13.81,Default,,0,0,0,,没骗你吧\N{\rE}Yeah.
+Dialogue: 0,0:14:15.23,0:14:18.23,Default,,0,0,0,,这味道我喜欢  那就好\N{\rE}- I really like that. - Good.
+Dialogue: 0,0:14:19.53,0:14:20.90,Default,,0,0,0,,好\N{\rE}Yeah.
+Dialogue: 0,0:14:27.33,0:14:28.66,Default,,0,0,0,,这里真是个好地方\N{\rE}Nice place you got here.
+Dialogue: 0,0:14:30.62,0:14:31.45,Default,,0,0,0,,好安静\N{\rE}Peaceful.
+Dialogue: 0,0:14:34.75,0:14:38.21,Default,,0,0,0,,{\fs10\an9\i1}♪ 即使不盲目自大… ♪\N♪ You don't have to be blind ♪
+Dialogue: 0,0:14:39.25,0:14:40.46,Default,,0,0,0,,去你的  混蛋！\N{\rE}Fuck you, motherfucker!
+Dialogue: 0,0:14:40.63,0:14:42.05,Default,,0,0,0,,你才是  去你的混账…\N{\rE}Fuck you, you piece of shit!
+Dialogue: 0,0:14:43.30,0:14:45.68,Default,,0,0,0,,{\fs10\an9\i1}♪ 或拒绝现在就放弃 ♪\N♪ I refuse to give up now ♪
+Dialogue: 0,0:14:47.22,0:14:50.10,Default,,0,0,0,,{\fs10\an9\i1}♪ 经受住所有考验和磨难… ♪\N♪ See all the trials And tribulations through ♪
+Dialogue: 0,0:14:51.60,0:14:54.19,Default,,0,0,0,,{\fs10\an9\i1}♪ 只要你能做到这些 ♪\N♪ If you can do all these things ♪
+Dialogue: 0,0:14:57.40,0:14:58.40,Default,,0,0,0,,嘿\N{\rE}Hey!
+Dialogue: 0,0:14:59.69,0:15:02.28,Default,,0,0,0,,{\fs10\an9\i1}♪ 即使不是王 ♪\N♪ You don't have to be a king ♪
+Dialogue: 0,0:15:02.44,0:15:03.28,Default,,0,0,0,,嘿！\N{\rE}Hey!
+Dialogue: 0,0:15:04.24,0:15:05.99,Default,,0,0,0,,给我出去  伙计  滚出去\N{\rE}Get out, man. Go. Get the fuck out.
+Dialogue: 0,0:15:06.16,0:15:07.16,Default,,0,0,0,,滚出去\N{\rE}Get the fuck...
+Dialogue: 0,0:15:08.20,0:15:09.66,Default,,0,0,0,,-嘿  -去你的！\N{\rE}- Hey! - Fuck you!
+Dialogue: 0,0:15:09.83,0:15:11.62,Default,,0,0,0,,你给我出去  伙计  滚出去\N{\rE}You're fuckin' out, man. Get the fuck out.
+Dialogue: 0,0:15:12.79,0:15:14.79,Default,,0,0,0,,{\fs10\an9\i1}♪ 也能分辨是非 ♪\N♪ To know right from wrong ♪
+Dialogue: 0,0:15:22.88,0:15:24.51,Default,,0,0,0,,{\fs10\an9\i1}♪ 将来某一天 ♪\N♪ One of these days ♪
+Dialogue: 0,0:15:24.67,0:15:27.05,Default,,0,0,0,,{\fs10\an9\i1}♪ 当你听到一个声音说“来吧” ♪\N♪ When you hear a voice say, "Come" ♪
+Dialogue: 0,0:15:27.22,0:15:29.26,Default,,0,0,0,,{\fs10\an9\i1}♪ 你会奔向何方？ ♪\N♪ Where you gonna run to? ♪
+Dialogue: 0,0:15:33.14,0:15:35.77,Default,,0,0,0,,{\fs10\an9\i1}♪ 你跑到岩石上求援 ♪\N♪ You're gonna run To the rock for rescue ♪
+Dialogue: 0,0:15:35.94,0:15:37.48,Default,,0,0,0,,{\fs10\an9\i1}♪ 结果空无一人… ♪\N♪ There will be no rock ♪
+Dialogue: 0,0:15:57.54,0:15:59.13,Default,,0,0,0,,{\fs10\an9\i1}♪ 腰间挂着手枪 ♪\N♪ Walkin' down the road ♪
+Dialogue: 0,0:15:59.29,0:16:01.67,Default,,0,0,0,,{\fs10\an9\i1}♪ 走在大路上… ♪\N♪ With your pistol in your waist ♪
+Dialogue: 0,0:16:01.84,0:16:03.21,Default,,0,0,0,,这里就像个停尸房！\N{\rE}Wow, it's like a morgue in here.
+Dialogue: 0,0:16:10.05,0:16:11.22,Default,,0,0,0,,嘿\N{\rE}Hey.
+Dialogue: 0,0:16:13.39,0:16:15.31,Default,,0,0,0,,四号过道  清理一下\N{\rE}Cleanup! Aisle four.
+Dialogue: 0,0:16:17.44,0:16:18.81,Default,,0,0,0,,给我滚出去  兄弟\N{\rE}Get the fuck outta here, bro.
+Dialogue: 0,0:16:19.94,0:16:21.86,Default,,0,0,0,,窝囊废  你玩得够久了\N{\rE}Hey, asshole. You've been playing long enough.
+Dialogue: 0,0:16:22.02,0:16:23.44,Default,,0,0,0,,该轮到我了\N{\rE}Give me a turn. Give me a turn.
+Dialogue: 0,0:16:25.78,0:16:27.61,Default,,0,0,0,,嘿\N{\rE}Oh, hey. Whoa, whoa, whoa.
+Dialogue: 0,0:16:27.78,0:16:29.03,Default,,0,0,0,,-放手  放开我！  -给我来杯酒嘛\N{\rE}- Just let go. - Hey, get me a drink.
+Dialogue: 0,0:16:29.20,0:16:30.07,Default,,0,0,0,,走吧！我没拦你-\N{\rE}- Let go! - I'm not holding you.
+Dialogue: 0,0:16:30.24,0:16:31.28,Default,,0,0,0,,嘿！别这样！冷静点！\N{\rE}Hey, hey, hey, come on! Chill out.
+Dialogue: 0,0:16:31.45,0:16:32.62,Default,,0,0,0,,冷静点！\N{\rE}Chill out! Chill out!
+Dialogue: 0,0:16:33.03,0:16:35.08,Default,,0,0,0,,比利\N{\rE}Oh, Billy.
+Dialogue: 0,0:16:35.75,0:16:36.58,Default,,0,0,0,,你就这么蠢吗？\N{\rE}You're that stupid?
+Dialogue: 0,0:16:37.54,0:16:38.96,Default,,0,0,0,,-住手  -你还没吸取教训  是吧？\N{\rE}- Stop. - You didn't learn, did you?
+Dialogue: 0,0:16:39.12,0:16:40.08,Default,,0,0,0,,小心我们揍死你\N{\rE}We'll whoop your ass.
+Dialogue: 0,0:16:40.25,0:16:42.46,Default,,0,0,0,,你还没学乖吗？-还想再来个黑眼圈吗？\N{\rE}You didn't learn? You want another black eye?
+Dialogue: 0,0:16:42.63,0:16:44.96,Default,,0,0,0,,我现在就给你再上一课  -不…\N{\rE}- I'll give you another one right here. - No, I don't want another one.
+Dialogue: 0,0:16:45.13,0:16:46.59,Default,,0,0,0,,-你叫比利  对吧？  -对\N{\rE}- It's Billy, right? - Yeah.
+Dialogue: 0,0:16:46.76,0:16:48.05,Default,,0,0,0,,那边有几个口渴的顾客正等着\N{\rE}There's some thirsty customers waitin' for you.
+Dialogue: 0,0:16:48.22,0:16:50.26,Default,,0,0,0,,-我来招待这几位就好  -好的\N{\rE}- I can handle these gents. - Okay.
+Dialogue: 0,0:16:50.43,0:16:52.51,Default,,0,0,0,,你是谁啊  微笑先生？\N{\rE}Who the fuck are you, Mr. Smiley?
+Dialogue: 0,0:16:52.68,0:16:54.35,Default,,0,0,0,,微笑先生？是啊\N{\rE}- Mr. Smiley? - Yeah.
+Dialogue: 0,0:16:54.51,0:16:56.73,Default,,0,0,0,,从我进来那一刻起  你就笑得像个白痴似的\N{\rE}You've had this idiot grin since I walked in.
+Dialogue: 0,0:16:57.81,0:16:59.02,Default,,0,0,0,,你很开心吗？\N{\rE}So, are you happy?
+Dialogue: 0,0:16:59.52,0:17:00.52,Default,,0,0,0,,你是傻子吗？\N{\rE}Are you stupid?
+Dialogue: 0,0:17:00.69,0:17:02.65,Default,,0,0,0,,还是因为脸上挨了太多拳头？\N{\rE}Or get punched in the face too many times?
+Dialogue: 0,0:17:03.27,0:17:05.32,Default,,0,0,0,,说实话  应该是挨了太多拳头\N{\rE}Honestly, it's probably the punching thing.
+Dialogue: 0,0:17:05.48,0:17:08.07,Default,,0,0,0,,可以出去谈谈吗？\N{\rE}Can I talk to you guys outside for a second?
+Dialogue: 0,0:17:08.24,0:17:10.53,Default,,0,0,0,,不了  我还有事要忙\N{\rE}Nah. I got some work to do.
+Dialogue: 0,0:17:15.33,0:17:16.33,Default,,0,0,0,,再来一根\N{\rE}Another one.
+Dialogue: 0,0:17:19.21,0:17:21.42,Default,,0,0,0,,外面那些是你们的摩托车  对吧？\N{\rE}Those are your bikes out there, right?
+Dialogue: 0,0:17:21.58,0:17:23.33,Default,,0,0,0,,对  我的是右边那台红色的\N{\rE}Yeah. Mine's the red one on the right.
+Dialogue: 0,0:17:30.63,0:17:32.64,Default,,0,0,0,,-等等  搞什么？  -等一下\N{\rE}- Wait, what the fuck? - Wait up.
+Dialogue: 0,0:17:35.18,0:17:36.43,Default,,0,0,0,,嘿  混蛋！\N{\rE}Hey, asshole!
+Dialogue: 0,0:17:36.60,0:17:37.72,Default,,0,0,0,,给我站住\N{\rE}Stop right there.
+Dialogue: 0,0:17:41.81,0:17:43.15,Default,,0,0,0,,我只是想让你们到外面来\N{\rE}I just wanted to get you outside
+Dialogue: 0,0:17:43.31,0:17:46.40,Default,,0,0,0,,以便礼貌地请你和你的朋友\N{\rE}so I could ask you and your friends respectfully...
+Dialogue: 0,0:17:47.03,0:17:48.15,Default,,0,0,0,,礼貌地离开\N{\rE}to leave the premises.
+Dialogue: 0,0:17:48.32,0:17:49.32,Default,,0,0,0,,我们会走的\N{\rE}Oh, we'll leave.
+Dialogue: 0,0:17:49.49,0:17:51.11,Default,,0,0,0,,-等我宰了你之后\N{\rE}After I fucking kill you.
+Dialogue: 0,0:17:51.28,0:17:52.57,Default,,0,0,0,,-好吧\N{\rE}Sure.
+Dialogue: 0,0:17:53.03,0:17:54.62,Default,,0,0,0,,开打前先问一下\N{\rE}Uh, before we start...
+Dialogue: 0,0:17:54.78,0:17:56.24,Default,,0,0,0,,你有保险吗？\N{\rE}do you have insurance?
+Dialogue: 0,0:17:56.33,0:17:57.29,Default,,0,0,0,,什么？\N{\rE}What?
+Dialogue: 0,0:17:57.45,0:17:58.75,Default,,0,0,0,,我指的是你的医保\N{\rE}Like, you have medical insurance?
+Dialogue: 0,0:17:58.91,0:18:00.71,Default,,0,0,0,,覆盖的项目全吗？有牙科保险吗？\N{\rE}Your coverage good? Like, you have dental?
+Dialogue: 0,0:18:00.83,0:18:03.83,Default,,0,0,0,,需要那些的人可不是我\N{\rE}Oh, ha-ha! Yeah. I'm not the one that's gonna fuckin' need it.
+Dialogue: 0,0:18:04.00,0:18:05.13,Default,,0,0,0,,好吧\N{\rE}Okay.
+Dialogue: 0,0:18:05.71,0:18:06.54,Default,,0,0,0,,-当然了\N{\rE}Sure.
+Dialogue: 0,0:18:06.71,0:18:08.05,Default,,0,0,0,,嘿  弗兰基  -什么？\N{\rE}- Hey, Frankie? - Yeah?
+Dialogue: 0,0:18:08.17,0:18:09.30,Default,,0,0,0,,-这附近有医院吗？\N{\rE}Is there a hospital nearby?
+Dialogue: 0,0:18:09.46,0:18:10.30,Default,,0,0,0,,-说真的  谁在乎呢？\N{\rE}Literally, who gives a shit?
+Dialogue: 0,0:18:10.47,0:18:12.05,Default,,0,0,0,,-废话少说  快打吧  混蛋！\N{\rE}Shut the fuck up and fight, asshole!
+Dialogue: 0,0:18:12.22,0:18:13.38,Default,,0,0,0,,-这附近有医院吗？\N{\rE}Is there a hospital nearby?
+Dialogue: 0,0:18:13.55,0:18:15.09,Default,,0,0,0,,会不会太远？离这里近吗？\N{\rE}- Is it like, too far? Is it close? - What?
+Dialogue: 0,0:18:15.26,0:18:16.81,Default,,0,0,0,,离这里大概25分钟车程吧\N{\rE}About, like, 25 minutes, I'd say.
+Dialogue: 0,0:18:16.97,0:18:18.56,Default,,0,0,0,,取决于交通状况和时间\N{\rE}Like, depending on the traffic, what time of day and stuff.
+Dialogue: 0,0:18:18.72,0:18:19.81,Default,,0,0,0,,-莫伊\N{\rE}Moe?
+Dialogue: 0,0:18:19.97,0:18:21.02,Default,,0,0,0,,你给我闭嘴！  -好\N{\rE}- Shut the fuck up! - Right.
+Dialogue: 0,0:18:21.18,0:18:22.35,Default,,0,0,0,,你叫什么名字？\N{\rE}Hey, what's your name?
+Dialogue: 0,0:18:23.31,0:18:24.85,Default,,0,0,0,,-戴尔  -戴尔\N{\rE}- Dell. - Dell?
+Dialogue: 0,0:18:25.02,0:18:27.32,Default,,0,0,0,,你真的大可不必这样  我…\N{\rE}You don't have to do this, man. I... You don't...
+Dialogue: 0,0:18:27.40,0:18:29.28,Default,,0,0,0,,你真的大可不必  当着所有朋友的面输给我\N{\rE}You don't have to lose, you're gonna lose in front of all your friends.
+Dialogue: 0,0:18:29.57,0:18:30.61,Default,,0,0,0,,“当着”？\N{\rE}"In front of"?
+Dialogue: 0,0:18:32.99,0:18:34.41,Default,,0,0,0,,他们可不只是观战的\N{\rE}Oh, they're not here to just watch.
+Dialogue: 0,0:18:34.53,0:18:36.78,Default,,0,0,0,,-这不公平吧\N{\rE}Oh, well, that's hardly fair.
+Dialogue: 0,0:18:36.95,0:18:38.91,Default,,0,0,0,,-人生本就不公平\N{\rE}Life's not fair.
+Dialogue: 0,0:18:38.99,0:18:40.91,Default,,0,0,0,,-见鬼  -我刚扇了你一巴掌  -没事吧？\N{\rE}- I just slapped you. Are you all right? - Shit. What?
+Dialogue: 0,0:18:41.04,0:18:42.83,Default,,0,0,0,,-什么…  搞什么？\N{\rE}- What? - What the fuck?
+Dialogue: 0,0:18:46.71,0:18:47.92,Default,,0,0,0,,天啊！见鬼！\N{\rE}Damn! Damn!
+Dialogue: 0,0:18:48.09,0:18:49.59,Default,,0,0,0,,-快  揍趴他  -快上  戴尔！\N{\rE}Fuck him up. Come on, do it again!
+Dialogue: 0,0:18:50.05,0:18:51.01,Default,,0,0,0,,快上  戴尔！\N{\rE}Fuck him up!
+Dialogue: 0,0:18:51.17,0:18:52.17,Default,,0,0,0,,真见鬼！\N{\rE}Oh, shit!
+Dialogue: 0,0:18:56.18,0:18:57.18,Default,,0,0,0,,咱们就当打成平手吧\N{\rE}Let's call this a draw.
+Dialogue: 0,0:18:58.30,0:18:59.39,Default,,0,0,0,,什么叫打成平手？\N{\rE}What the fuck's a draw?
+Dialogue: 0,0:18:59.56,0:19:00.89,Default,,0,0,0,,类似于赢了\N{\rE}It's kinda like a win, man.
+Dialogue: 0,0:19:01.06,0:19:02.64,Default,,0,0,0,,-我赢了？  -是平局的意思  戴尔\N{\rE}- Like, I win? - It's a tie, Dell.
+Dialogue: 0,0:19:02.81,0:19:04.27,Default,,0,0,0,,对  你我双赢\N{\rE}Yeah, like, we win together, you know?
+Dialogue: 0,0:19:05.35,0:19:06.35,Default,,0,0,0,,见鬼去吧！\N{\rE}Fuck you!
+Dialogue: 0,0:19:09.52,0:19:10.36,Default,,0,0,0,,该死的\N{\rE}Fuck, man.
+Dialogue: 0,0:19:12.24,0:19:13.40,Default,,0,0,0,,我要杀了你！\N{\rE}I'm gonna kill you!
+Dialogue: 0,0:19:25.16,0:19:26.17,Default,,0,0,0,,天杀的\N{\rE}Holy fuck.
+Dialogue: 0,0:19:27.75,0:19:29.21,Default,,0,0,0,,得了吧  没那么严重\N{\rE}Oh, come on. It's not that bad.
+Dialogue: 0,0:19:29.75,0:19:30.92,Default,,0,0,0,,我想你打断我的胳膊了\N{\rE}I think you broke my arm.
+Dialogue: 0,0:19:31.09,0:19:33.09,Default,,0,0,0,,你的胳膊确实被我打断了\N{\rE}I definitely broke your arm.
+Dialogue: 0,0:19:33.26,0:19:35.43,Default,,0,0,0,,好消息是  这里离医院只有20分钟车程\N{\rE}But the good news is the hospital's only 20 minutes away.
+Dialogue: 0,0:19:35.51,0:19:37.43,Default,,0,0,0,,我说的是25分钟  好吗？\N{\rE}Okay. I said 25. Okay?
+Dialogue: 0,0:19:37.59,0:19:39.68,Default,,0,0,0,,真是的  我这样根本骑不了车  可恶\N{\rE}God, I don't think I can ride like this. Fuck!
+Dialogue: 0,0:19:39.85,0:19:41.18,Default,,0,0,0,,-嘿  弗兰基  -什么？\N{\rE}Hey, Frankie?
+Dialogue: 0,0:19:41.26,0:19:43.10,Default,,0,0,0,,-你有车可以借我一用吗？\N{\rE}- Yeah? - You got a car I could borrow?
+Dialogue: 0,0:19:43.18,0:19:44.85,Default,,0,0,0,,-有是有  但你别指望用来载他们\N{\rE}I do, yeah, but not for them.
+Dialogue: 0,0:19:44.93,0:19:46.60,Default,,0,0,0,,别这样嘛  这些人需要治疗\N{\rE}Come on. These guys need medical attention.
+Dialogue: 0,0:19:46.69,0:19:49.15,Default,,0,0,0,,是吗？老娘我不在乎\N{\rE}Oh, yeah? I don't give a shit.
+Dialogue: 0,0:19:49.23,0:19:50.44,Default,,0,0,0,,我要起诉你\N{\rE}I'm gonna sue you.
+Dialogue: 0,0:19:57.95,0:19:58.95,Default,,0,0,0,,颠簸\N{\rE}Bump.
+Dialogue: 0,0:20:02.41,0:20:03.41,Default,,0,0,0,,该死的\N{\rE}Shit.
+Dialogue: 0,0:20:03.83,0:20:04.91,Default,,0,0,0,,我想他可能有点脑震荡\N{\rE}I think he's probably got a concussion...
+Dialogue: 0,0:20:05.08,0:20:08.92,Default,,0,0,0,,他则是膝盖受伤  可能脱臼了\N{\rE}and then he's got knee damage, possibly a dislocation.
+Dialogue: 0,0:20:09.00,0:20:11.17,Default,,0,0,0,,然后还有那个…就是那个…\N{\rE}And then the one, that one, I think needs...
+Dialogue: 0,0:20:11.34,0:20:12.96,Default,,0,0,0,,谢谢你载我一程  伙计\N{\rE}Thanks for the ride, man.
+Dialogue: 0,0:20:13.13,0:20:14.96,Default,,0,0,0,,那是你的朋友吗？\N{\rE}Is that one a friend of yours?
+Dialogue: 0,0:20:15.13,0:20:17.59,Default,,0,0,0,,不  他只是被我打断了胳膊\N{\rE}Uh, no, I just broke his arm.
+Dialogue: 0,0:20:30.06,0:20:31.06,Default,,0,0,0,,嘿\N{\rE}Hey.
+Dialogue: 0,0:20:32.61,0:20:36.11,Default,,0,0,0,,在你走之前  我想谢谢你  送了这么多新患者过来\N{\rE}Before you go, I really wanted to say thank you for all the new patients.
+Dialogue: 0,0:20:38.53,0:20:40.95,Default,,0,0,0,,不客气\N{\rE}Um... you're welcome.
+Dialogue: 0,0:20:41.32,0:20:44.54,Default,,0,0,0,,急诊室被一群不负责任的白痴挤爆  真是喜闻乐见\N{\rE}I just love when my ER's packed full of irresponsible idiots.
+Dialogue: 0,0:20:44.70,0:20:48.41,Default,,0,0,0,,这样一来  真正急需救助的普通人  就会求助无门\N{\rE}That way, the normal people with real emergencies have nowhere to go.
+Dialogue: 0,0:20:48.96,0:20:50.46,Default,,0,0,0,,不过像你这种脾气暴躁\N{\rE}But that's not something you'd care about...
+Dialogue: 0,0:20:50.63,0:20:52.88,Default,,0,0,0,,以伤害他人为乐的白痴  根本不会在乎这些\N{\rE}being a rage-filled dickhead who likes to hurt people for fun.
+Dialogue: 0,0:20:53.04,0:20:54.50,Default,,0,0,0,,“白痴”？\N{\rE}"Dickhead"?
+Dialogue: 0,0:20:54.59,0:20:56.67,Default,,0,0,0,,严格来说  我是为了钱才伤害他人的\N{\rE}Well, technically, I hurt people for money.
+Dialogue: 0,0:20:58.97,0:21:00.47,Default,,0,0,0,,这能好到哪里去？\N{\rE}And how is that better?
+Dialogue: 0,0:21:02.76,0:21:04.89,Default,,0,0,0,,好不到哪里去  我只是想澄清一下\N{\rE}I guess it's not. I'm just clarifying.
+Dialogue: 0,0:21:05.06,0:21:07.98,Default,,0,0,0,,你知道我应该报警抓你这种人吧？\N{\rE}You know I'm supposed to call the cops on guys like you, right?
+Dialogue: 0,0:21:08.14,0:21:09.44,Default,,0,0,0,,你确实应该报警\N{\rE}Well, you definitely should.
+Dialogue: 0,0:21:10.65,0:21:13.73,Default,,0,0,0,,只不过他们似乎无意管治  这一带的暴脾气白痴\N{\rE}Only, I don't think they really care about rage-filled dickheads around these parts.
+Dialogue: 0,0:21:16.99,0:21:18.07,Default,,0,0,0,,你在流血\N{\rE}You're bleeding.
+Dialogue: 0,0:21:20.61,0:21:21.61,Default,,0,0,0,,见鬼\N{\rE}Oh, shit.
+Dialogue: 0,0:21:22.20,0:21:24.12,Default,,0,0,0,,不  那只是…无妨\N{\rE}Oh, uh, no, that's just... It's fine.
+Dialogue: 0,0:21:24.28,0:21:25.28,Default,,0,0,0,,让我看一下\N{\rE}Let me see it.
+Dialogue: 0,0:21:30.87,0:21:32.00,Default,,0,0,0,,好的\N{\rE}All right.
+Dialogue: 0,0:21:40.09,0:21:41.63,Default,,0,0,0,,看来你喜欢打架\N{\rE}So, you like to fight?
+Dialogue: 0,0:21:44.05,0:21:45.22,Default,,0,0,0,,你赢过吗？\N{\rE}You ever win?
+Dialogue: 0,0:21:48.98,0:21:50.52,Default,,0,0,0,,打架从来没有赢家\N{\rE}No one ever wins a fight.
+Dialogue: 0,0:21:52.23,0:21:53.86,Default,,0,0,0,,那你为什么还要打？\N{\rE}Then, why do you do it?
+Dialogue: 0,0:21:59.65,0:22:02.11,Default,,0,0,0,,虽然没有感染  但伤口得缝合一下\N{\rE}It's not infected, but I'll need to suture this.
+Dialogue: 0,0:22:02.20,0:22:03.99,Default,,0,0,0,,不用了  谢谢\N{\rE}Oh, no, no, no. Thank you.
+Dialogue: 0,0:22:05.49,0:22:06.33,Default,,0,0,0,,-为什么？\N{\rE}Why not?
+Dialogue: 0,0:22:06.62,0:22:08.49,Default,,0,0,0,,-因为我有错在先  想付出点代价\N{\rE}It's my fault. I wanna pay for it.
+Dialogue: 0,0:22:09.58,0:22:10.50,Default,,0,0,0,,好吧\N{\rE}Fine.
+Dialogue: 0,0:22:17.55,0:22:19.34,Default,,0,0,0,,可以吗？\N{\rE}Can I?
+Dialogue: 0,0:22:28.51,0:22:31.23,Default,,0,0,0,,有人把车停在应急车道-\N{\rE}Someone left their car in the emergency area.
+Dialogue: 0,0:22:31.31,0:22:33.23,Default,,0,0,0,,请移走 车牌…-\N{\rE}Please move it. License plate...
+Dialogue: 0,0:22:33.39,0:22:34.56,Default,,0,0,0,,-这是头孢氨苄\N{\rE}Cephalexin.
+Dialogue: 0,0:22:34.73,0:22:36.11,Default,,0,0,0,,-不  我不需要止痛的东西\N{\rE}Oh, no, I don't need anything for the pain.
+Dialogue: 0,0:22:36.27,0:22:37.90,Default,,0,0,0,,这是一种抗生素\N{\rE}It's an antibiotic.
+Dialogue: 0,0:22:38.07,0:22:39.23,Default,,0,0,0,,必须服满一个周期\N{\rE}Do the full cycle.
+Dialogue: 0,0:22:43.36,0:22:44.57,Default,,0,0,0,,医生  谢谢你\N{\rE}Hey, doc, thank you.
+Dialogue: 0,0:22:44.74,0:22:45.78,Default,,0,0,0,,抱歉给你添了那么多麻烦\N{\rE}Sorry for all the trouble.
+Dialogue: 0,0:22:45.95,0:22:48.74,Default,,0,0,0,,去跟我的员工说吧  他们才是今晚加班加点的人\N{\rE}Tell it to my staff. They're the ones with all the extra work tonight.
+Dialogue: 0,0:22:55.46,0:22:56.88,Default,,0,0,0,,嘿  你在削什么？\N{\rE}Hey, what are you whittling?
+Dialogue: 0,0:22:57.46,0:22:58.59,Default,,0,0,0,,一根棍子\N{\rE}A stick.
+Dialogue: 0,0:22:58.75,0:23:00.63,Default,,0,0,0,,我知道  我是问你要把它削成什么\N{\rE}Yeah, but what's it gonna be?
+Dialogue: 0,0:23:01.67,0:23:02.88,Default,,0,0,0,,一根较小的棍子\N{\rE}A smaller stick.
+Dialogue: 0,0:23:07.10,0:23:08.18,Default,,0,0,0,,是他吗？\N{\rE}Is that him?
+Dialogue: 0,0:23:08.35,0:23:09.93,Default,,0,0,0,,祝你晚安  女士\N{\rE}You have a good night, ma'am.
+Dialogue: 0,0:23:10.10,0:23:11.64,Default,,0,0,0,,再次为我添的麻烦道歉\N{\rE}Again, I'm sorry for the trouble.
+Dialogue: 0,0:23:12.14,0:23:13.14,Default,,0,0,0,,谢谢\N{\rE}Thanks.
+Dialogue: 0,0:23:14.14,0:23:16.02,Default,,0,0,0,,对  就是他\N{\rE}Yeah, that's him.
+Dialogue: 0,0:23:16.98,0:23:18.15,Default,,0,0,0,,就是那个家伙\N{\rE}That's the guy.
+Dialogue: 0,0:23:20.32,0:23:22.86,Default,,0,0,0,,他运用了各种武术  马伽术\N{\rE}He threw in little bits of everything. What? The Krav Maga...
+Dialogue: 0,0:23:23.03,0:23:25.49,Default,,0,0,0,,柔道、柔术  还有那一巴掌\N{\rE}judo, jujitsu, you know, like, the slap.
+Dialogue: 0,0:23:25.66,0:23:27.45,Default,,0,0,0,,那是什么？苏巴克？对吧？\N{\rE}What's that? Subak? Right?
+Dialogue: 0,0:23:28.57,0:23:30.45,Default,,0,0,0,,嘿  强击手\N{\rE}Hey, slugger.
+Dialogue: 0,0:23:33.25,0:23:34.75,Default,,0,0,0,,给你  一周的薪水\N{\rE}Here it is. One week's salary.
+Dialogue: 0,0:23:34.91,0:23:36.58,Default,,0,0,0,,按照你的要求以现金支付\N{\rE}In cash, as requested.
+Dialogue: 0,0:23:36.75,0:23:38.50,Default,,0,0,0,,谢谢  不客气\N{\rE}- Thank you. - You're welcome.
+Dialogue: 0,0:23:38.67,0:23:39.67,Default,,0,0,0,,应该是我谢谢你\N{\rE}Thank you.
+Dialogue: 0,0:23:39.84,0:23:42.05,Default,,0,0,0,,你这餐馆的选址真不错  弗兰基\N{\rE}Got a beautiful spot here, Frankie.
+Dialogue: 0,0:23:42.21,0:23:43.97,Default,,0,0,0,,当然不错了\N{\rE}You bet your ass it's beautiful.
+Dialogue: 0,0:23:44.13,0:23:45.30,Default,,0,0,0,,瞧这风景\N{\rE}I mean, look at this.
+Dialogue: 0,0:23:45.97,0:23:48.76,Default,,0,0,0,,想象一下和心爱之人在那里把酒言欢\N{\rE}Imagine having a drink right there with somebody special, you know?
+Dialogue: 0,0:23:49.80,0:23:51.51,Default,,0,0,0,,你甚至可以在这里结婚\N{\rE}Hell, you could even get married here.
+Dialogue: 0,0:23:51.68,0:23:52.68,Default,,0,0,0,,还有离婚\N{\rE}Divorced, too.
+Dialogue: 0,0:23:52.85,0:23:54.56,Default,,0,0,0,,然后再回到这里借酒浇愁\N{\rE}Then you can come back and drown your sorrows.
+Dialogue: 0,0:23:54.73,0:23:57.48,Default,,0,0,0,,人生百态  尽在于此\N{\rE}I mean, it's a whole "circle of life" thing.
+Dialogue: 0,0:23:57.60,0:23:59.94,Default,,0,0,0,,-多么动人的宣传演讲\N{\rE}Oh. That's one hell of a sales pitch.
+Dialogue: 0,0:24:00.11,0:24:01.07,Default,,0,0,0,,-对\N{\rE}Yeah.
+Dialogue: 0,0:24:01.23,0:24:03.19,Default,,0,0,0,,我知道如今的玻璃岛早已今非昔比\N{\rE}Look, I know the Glass Key ain't what it once was.
+Dialogue: 0,0:24:04.74,0:24:05.74,Default,,0,0,0,,但…\N{\rE}But...
+Dialogue: 0,0:24:07.70,0:24:10.16,Default,,0,0,0,,我觉得这里可以成为  一个很特别的地方\N{\rE}I think this place could be something really special.
+Dialogue: 0,0:24:10.49,0:24:12.24,Default,,0,0,0,,可以问你一个问题吗？\N{\rE}Can I ask you a question?
+Dialogue: 0,0:24:12.41,0:24:13.41,Default,,0,0,0,,当然\N{\rE}Sure.
+Dialogue: 0,0:24:17.33,0:24:19.54,Default,,0,0,0,,为什么要叫“路边  餐馆”？\N{\rE}Why is it called the Road House?
+Dialogue: 0,0:24:19.71,0:24:20.75,Default,,0,0,0,,-什么意思？\N{\rE}What do you mean?
+Dialogue: 0,0:24:20.92,0:24:22.50,Default,,0,0,0,,-路边餐馆不是…一个词吗？\N{\rE}Isn't roadhouse one word?
+Dialogue: 0,0:24:22.67,0:24:24.34,Default,,0,0,0,,对  这就是幽默的地方\N{\rE}Yeah, that's the joke.
+Dialogue: 0,0:24:24.51,0:24:25.92,Default,,0,0,0,,这是一家路边餐馆\N{\rE}It's a roadhouse.
+Dialogue: 0,0:24:26.09,0:24:29.30,Default,,0,0,0,,名字叫“路边  餐馆”  懂了吗？\N{\rE}But it's called the Road House. Get it?
+Dialogue: 0,0:24:30.14,0:24:31.39,Default,,0,0,0,,还是一头雾水\N{\rE}Still unresolved.
+Dialogue: 0,0:24:31.51,0:24:34.97,Default,,0,0,0,,我也不太清楚  我叔叔的幽默感比较独特\N{\rE}Well, I don't know. My uncle had a unique sense of humor.
+Dialogue: 0,0:24:36.85,0:24:39.35,Default,,0,0,0,,对了  镇上有一家不错的旅馆\N{\rE}Hey, so, there's this cute hotel in town.
+Dialogue: 0,0:24:39.52,0:24:43.48,Default,,0,0,0,,应该说是镇上唯一一家旅馆  但所幸还不错\N{\rE}I mean, it's the only hotel in town but luckily, it's cute.
+Dialogue: 0,0:24:44.11,0:24:47.86,Default,,0,0,0,,这个嘛  我看到码头那边  有一艘待售的船屋\N{\rE}Well, you know, I saw that there was a houseboat for sale at the marina...
+Dialogue: 0,0:24:48.03,0:24:49.86,Default,,0,0,0,,我打算去看一下\N{\rE}so I thought maybe I'd go check that out, but...
+Dialogue: 0,0:24:50.03,0:24:51.41,Default,,0,0,0,,那艘破船？\N{\rE}That old tub?
+Dialogue: 0,0:24:51.57,0:24:52.87,Default,,0,0,0,,它几乎都浮不起来了\N{\rE}It barely floats.
+Dialogue: 0,0:24:53.03,0:24:53.87,Default,,0,0,0,,-你知道？\N{\rE}You know it?
+Dialogue: 0,0:24:54.04,0:24:54.99,Default,,0,0,0,,-我当然知道\N{\rE}Yeah, I know it.
+Dialogue: 0,0:24:55.16,0:24:56.75,Default,,0,0,0,,那是我的船  那是购买酒吧时附带的\N{\rE}It's mine. It came with the bar.
+Dialogue: 0,0:24:56.91,0:24:58.54,Default,,0,0,0,,虽然我很欢迎你入住那里\N{\rE}Listen, you are more than welcome to stay there...
+Dialogue: 0,0:24:58.71,0:25:00.25,Default,,0,0,0,,但我强烈建议你戴上呼吸管睡觉\N{\rE}but I highly advise you sleep with a snorkel.
+Dialogue: 0,0:25:00.42,0:25:01.29,Default,,0,0,0,,-好的  -还有\N{\rE}- Okay. - Also...
+Dialogue: 0,0:25:01.46,0:25:02.67,Default,,0,0,0,,小心鳄鱼\N{\rE}watch out for the crocodile.
+Dialogue: 0,0:25:03.04,0:25:04.30,Default,,0,0,0,,-小心什么？  -我可没骗你\N{\rE}- The what? - I shit you not,
+Dialogue: 0,0:25:04.46,0:25:05.42,Default,,0,0,0,,-去年尚茜就惨遭毒手？\N{\rE}it killed Shantsie last year.
+Dialogue: 0,0:25:05.59,0:25:06.42,Default,,0,0,0,,-谁\N{\rE}Who?
+Dialogue: 0,0:25:06.76,0:25:08.51,Default,,0,0,0,,码头管理员的博美犬\N{\rE}The dock master's Pomeranian.
+Dialogue: 0,0:25:09.13,0:25:11.59,Default,,0,0,0,,顺便提醒一句…\N{\rE}Oh, um... and heads up...
+Dialogue: 0,0:25:12.22,0:25:13.85,Default,,0,0,0,,船的名字也是我叔叔起的\N{\rE}My uncle named the boat, too.
+Dialogue: 0,0:25:18.27,0:25:22.27,Default,,0,0,0,,{\fs14\an8}小船
+Dialogue: 0,0:25:33.91,0:25:36.37,Default,,0,0,0,,你就是那个被弗兰基  卷入水深火热之中的可怜人？\N{\rE}You're the poor soul Frankie's got bunkin' on this frying pan?
+Dialogue: 0,0:25:36.62,0:25:37.70,Default,,0,0,0,,对  正是我\N{\rE}Uh, yeah, I am.
+Dialogue: 0,0:25:38.54,0:25:39.91,Default,,0,0,0,,好吧\N{\rE}Yeah, well...
+Dialogue: 0,0:25:40.87,0:25:42.88,Default,,0,0,0,,你最好小心那只该死的鳄鱼\N{\rE}you best watch out for that damn croc.
+Dialogue: 0,0:26:08.32,0:26:12.03,Default,,0,0,0,,欢迎来到无可争议的\N{\rE}Welcome to the undisputed
+Dialogue: 0,0:26:12.11,0:26:14.66,Default,,0,0,0,,终极格斗冠军赛\N{\rE}UFC middleweight
+Dialogue: 0,0:26:14.78,0:26:19.33,Default,,0,0,0,,世界中量级冠军赛现场！\N{\rE}championship of the world!
+Dialogue: 0,0:26:19.66,0:26:23.08,Default,,0,0,0,,首先有请挑战者登场\N{\rE}Introducing first, the challenger...
+Dialogue: 0,0:26:23.17,0:26:29.09,Default,,0,0,0,,埃尔伍德道尔顿！\N{\rE}Elwood Dalton!
+Dialogue: 0,0:26:29.17,0:26:31.22,Default,,0,0,0,,嘿  道尔顿  道尔顿\N{\rE}Dalton. Dalton!
+Dialogue: 0,0:26:32.59,0:26:33.76,Default,,0,0,0,,门上没有门铃\N{\rE}There's no doorbell.
+Dialogue: 0,0:26:34.72,0:26:36.51,Default,,0,0,0,,可能是因为这是一艘船\N{\rE}Probably 'cause it's a boat.
+Dialogue: 0,0:26:38.26,0:26:39.85,Default,,0,0,0,,我先把衣服穿上\N{\rE}I should put something on.
+Dialogue: 0,0:26:40.02,0:26:41.10,Default,,0,0,0,,不必在意这些\N{\rE}Don't worry about it.
+Dialogue: 0,0:26:41.48,0:26:42.48,Default,,0,0,0,,我家中有兄弟  习惯了\N{\rE}I got brothers.
+Dialogue: 0,0:26:43.94,0:26:46.48,Default,,0,0,0,,想到你应该还没吃早餐\N{\rE}I figured you wouldn't have a chance to get breakfast, so...
+Dialogue: 0,0:26:46.65,0:26:47.86,Default,,0,0,0,,我就带了一些食物过来\N{\rE}I brought some food.
+Dialogue: 0,0:26:49.44,0:26:50.78,Default,,0,0,0,,你把这里布置得真不错\N{\rE}Love what you've done with the place.
+Dialogue: 0,0:26:58.70,0:26:59.95,Default,,0,0,0,,需要我帮忙整理行李吗？\N{\rE}Help you unpack?
+Dialogue: 0,0:27:01.62,0:27:03.83,Default,,0,0,0,,不用了  我就这一箱行李\N{\rE}Uh, no, I just have this suitcase.
+Dialogue: 0,0:27:05.08,0:27:06.21,Default,,0,0,0,,好吧\N{\rE}Okay.
+Dialogue: 0,0:27:08.17,0:27:11.38,Default,,0,0,0,,我看看  我给你带了脆玉米饼…\N{\rE}Let's see, we got tostadas.
+Dialogue: 0,0:27:11.67,0:27:13.09,Default,,0,0,0,,早餐卷饼\N{\rE}Breakfast burrito.
+Dialogue: 0,0:27:15.13,0:27:16.64,Default,,0,0,0,,还有馅饼\N{\rE}And empanadas.
+Dialogue: 0,0:27:21.97,0:27:24.10,Default,,0,0,0,,-谢谢  -不客气\N{\rE}- Ah. Thank you, ma'am. - Yeah.
+Dialogue: 0,0:27:25.98,0:27:27.98,Default,,0,0,0,,听着\N{\rE}Uh, look. So um...
+Dialogue: 0,0:27:28.15,0:27:30.82,Default,,0,0,0,,我们已经见过不少你这样的保镖\N{\rE}We've been through a lot of you guys.
+Dialogue: 0,0:27:30.98,0:27:34.65,Default,,0,0,0,,先是亚瑟  然后是贝内特\N{\rE}You know, there's Arthur. And then, Bennett, and...
+Dialogue: 0,0:27:34.82,0:27:36.61,Default,,0,0,0,,还有一个叫克里斯的家伙\N{\rE}this guy, Chris, who, like, I thought...
+Dialogue: 0,0:27:36.78,0:27:38.32,Default,,0,0,0,,我原以为他或许能撑一段时间\N{\rE}might last a little while...
+Dialogue: 0,0:27:38.49,0:27:39.95,Default,,0,0,0,,但…  他是前海军陆战队员  虎背熊腰\N{\rE}but he's ex-Marine, just, huge guy.
+Dialogue: 0,0:27:40.12,0:27:41.66,Default,,0,0,0,,但脑子不太好使\N{\rE}But, um, total idiot.
+Dialogue: 0,0:27:42.37,0:27:44.12,Default,,0,0,0,,只坚持了不到两天\N{\rE}Lasted less than two days.
+Dialogue: 0,0:27:45.29,0:27:46.83,Default,,0,0,0,,在那之后  我原本打算辞职的  但…\N{\rE}I was gonna leave after that...
+Dialogue: 0,0:27:48.08,0:27:49.17,Default,,0,0,0,,现在你来了\N{\rE}but now you're here.
+Dialogue: 0,0:27:49.96,0:27:51.50,Default,,0,0,0,,希望你会有所不同\N{\rE}I'm hoping you're different.
+Dialogue: 0,0:27:52.00,0:27:53.30,Default,,0,0,0,,情况也许会有所好转\N{\rE}Maybe it'll get better.
+Dialogue: 0,0:27:54.59,0:27:55.88,Default,,0,0,0,,谢谢你的食物\N{\rE}Thank you for the food.
+Dialogue: 0,0:28:02.81,0:28:03.85,Default,,0,0,0,,早上好  道尔顿\N{\rE}Good morning, Dalton.
+Dialogue: 0,0:28:05.89,0:28:06.77,Default,,0,0,0,,早\N{\rE}Morning.
+Dialogue: 0,0:28:11.98,0:28:12.82,Default,,0,0,0,,嘿  道尔顿\N{\rE}Hey, Dalton.
+Dialogue: 0,0:28:15.32,0:28:16.32,Default,,0,0,0,,你好吗？\N{\rE}How you doin'?
+Dialogue: 0,0:28:21.16,0:28:22.28,Default,,0,0,0,,嗨  查莉\N{\rE}Hiya, Charlie.
+Dialogue: 0,0:28:22.45,0:28:23.62,Default,,0,0,0,,嘿\N{\rE}Hey.
+Dialogue: 0,0:28:23.74,0:28:25.83,Default,,0,0,0,,有什么能帮到你  哥们？\N{\rE}Um, what can I do for you, partner?
+Dialogue: 0,0:28:25.91,0:28:29.00,Default,,0,0,0,,我想知道你们这附近有没有电脑  可供我借用一下\N{\rE}Kinda wondering if maybe you had a computer around these parts I could use.
+Dialogue: 0,0:28:29.13,0:28:30.46,Default,,0,0,0,,就在那边\N{\rE}Mmm-hmm! Over there.
+Dialogue: 0,0:28:31.59,0:28:34.76,Default,,0,0,0,,不瞒你说  我刚才还有点担心  你是来归还《大树弗雷德》的\N{\rE}Not gonna lie, I was kinda worried you came here to return {\i1}Fred the Tree.
+Dialogue: 0,0:28:34.92,0:28:35.88,Default,,0,0,0,,我为什么要这么做？\N{\rE}Why would I do that?
+Dialogue: 0,0:28:36.05,0:28:39.55,Default,,0,0,0,,那样我上哪了解群岛著名的六趾猫？\N{\rE}How else am I supposed to learn about the Keys' famous six-toed cats?
+Dialogue: 0,0:28:39.72,0:28:40.55,Default,,0,0,0,,有道理\N{\rE}Good point.
+Dialogue: 0,0:28:41.14,0:28:44.10,Default,,0,0,0,,我有个好消息\N{\rE}And I have some good news.
+Dialogue: 0,0:28:47.14,0:28:49.10,Default,,0,0,0,,我找到了你的生平故事\N{\rE}I found your life story.
+Dialogue: 0,0:28:49.56,0:28:51.15,Default,,0,0,0,,这未必算好消息  不过…\N{\rE}I don't know if that's good news.
+Dialogue: 0,0:28:51.98,0:28:55.15,Default,,0,0,0,,马丁霍利写的《命丧双叉》\N{\rE}Death at the Double X by Martin Holly.
+Dialogue: 0,0:28:55.32,0:28:57.99,Default,,0,0,0,,20世纪50年代的西部故事平装书\N{\rE}Paperback western from the 1950s.
+Dialogue: 0,0:28:58.15,0:29:00.11,Default,,0,0,0,,原来如此  西部故事\N{\rE}- Oh, right. A western. - Mmm-hmm.
+Dialogue: 0,0:29:00.28,0:29:03.37,Default,,0,0,0,,“勇猛的韦德韦科从未遇到过\N{\rE}"The intrepid Wade Waco never met a scoundrel...
+Dialogue: 0,0:29:03.53,0:29:05.33,Default,,0,0,0,,他无法绳之以法的恶棍\N{\rE}"he couldn't bring to justice.
+Dialogue: 0,0:29:05.49,0:29:06.37,Default,,0,0,0,,“但话又说回来\N{\rE}"But then again..."
+Dialogue: 0,0:29:06.54,0:29:08.79,Default,,0,0,0,,韦德此前从未踏足过双叉\N{\rE}"Wade had never stepped foot in the Double X..."
+Dialogue: 0,0:29:08.96,0:29:11.21,Default,,0,0,0,,“一间偷盗、诈骗\N{\rE}"A saloon, red-hot with rustlin',"
+Dialogue: 0,0:29:11.38,0:29:15.21,Default,,0,0,0,,抢劫和谋杀案频发的酒馆”\N{\rE}"cheatin', robbin', and murder."
+Dialogue: 0,0:29:15.92,0:29:17.05,Default,,0,0,0,,你应该很勇猛吧？\N{\rE}You're intrepid, right?
+Dialogue: 0,0:29:17.21,0:29:18.59,Default,,0,0,0,,说实话  我也说不准\N{\rE}Honestly, I couldn't tell ya.
+Dialogue: 0,0:29:20.09,0:29:21.59,Default,,0,0,0,,密码是四个零\N{\rE}It's four zeros.
+Dialogue: 0,0:29:21.76,0:29:22.76,Default,,0,0,0,,好的\N{\rE}Okay.
+Dialogue: 0,0:29:26.43,0:29:28.14,Default,,0,0,0,,能打开吗？\N{\rE}Yeah. That work?
+Dialogue: 0,0:29:28.31,0:29:29.39,Default,,0,0,0,,打开了\N{\rE}Yeah.
+Dialogue: 0,0:29:31.40,0:29:33.06,Default,,0,0,0,,-把东西还回来！  -你他妈的闭嘴！\N{\rE}- Bring those back! - Shut the fuck up!
+Dialogue: 0,0:29:33.23,0:29:35.07,Default,,0,0,0,,妈的！我受够了！\N{\rE}God damn it! I'm sick of this!
+Dialogue: 0,0:29:35.23,0:29:36.40,Default,,0,0,0,,-闭上你的臭嘴！\N{\rE}Shut your ass up.
+Dialogue: 0,0:29:36.57,0:29:38.36,Default,,0,0,0,,-要么还回来  要么付钱！滚回店里吧！\N{\rE}- Bring those back or pay for them! - Get back in there!
+Dialogue: 0,0:29:40.07,0:29:41.28,Default,,0,0,0,,-还想再来吗？  -你要怎么做？\N{\rE}Whatcha gonna do, huh?
+Dialogue: 0,0:29:41.99,0:29:43.16,Default,,0,0,0,,滚回店里吧\N{\rE}Go back in there!
+Dialogue: 0,0:29:43.95,0:29:45.70,Default,,0,0,0,,鸡鸡歪歪的软蛋-\N{\rE}Big talk. What a fuckin' loser.
+Dialogue: 0,0:29:46.16,0:29:47.16,Default,,0,0,0,,-嘿！  -干吗？\N{\rE}Hey!
+Dialogue: 0,0:29:48.50,0:29:49.91,Default,,0,0,0,,都给我滚远点！\N{\rE}Get out of here, all of you!
+Dialogue: 0,0:29:52.71,0:29:53.79,Default,,0,0,0,,为何不回家问你爸去？-\N{\rE}Why don't you go find your daddy?
+Dialogue: 0,0:29:53.96,0:29:54.96,Default,,0,0,0,,快点\N{\rE}Now!
+Dialogue: 0,0:29:55.13,0:29:56.00,Default,,0,0,0,,好-\N{\rE}Yeah, okay.
+Dialogue: 0,0:29:56.17,0:29:57.25,Default,,0,0,0,,走啊\N{\rE}Go on.
+Dialogue: 0,0:29:57.76,0:29:58.96,Default,,0,0,0,,快走\N{\rE}Go!
+Dialogue: 0,0:30:01.76,0:30:02.76,Default,,0,0,0,,见鬼\N{\rE}Oh, shit.
+Dialogue: 0,0:30:05.72,0:30:06.68,Default,,0,0,0,,-好吧  我看见他了\N{\rE}All right. Let's see it.
+Dialogue: 0,0:30:06.85,0:30:08.06,Default,,0,0,0,,-去你的\N{\rE}Fuck you.
+Dialogue: 0,0:30:19.82,0:30:21.24,Default,,0,0,0,,你拿着根球棒做什么？\N{\rE}What're you doing with that bat?
+Dialogue: 0,0:30:23.82,0:30:25.45,Default,,0,0,0,,我讨厌那些混蛋\N{\rE}I hate those a-holes.
+Dialogue: 0,0:30:30.33,0:30:31.58,Default,,0,0,0,,你爸爸呢？\N{\rE}Where's your dad?
+Dialogue: 0,0:30:31.75,0:30:33.17,Default,,0,0,0,,他去干另一份活了\N{\rE}He's just at his other job.
+Dialogue: 0,0:30:34.71,0:30:37.38,Default,,0,0,0,,光靠卖书为生有点困难\N{\rE}It's kinda hard to make a living on selling books.
+Dialogue: 0,0:30:38.13,0:30:39.09,Default,,0,0,0,,确实\N{\rE}Yeah.
+Dialogue: 0,0:30:40.21,0:30:42.68,Default,,0,0,0,,开这家书店其实是我妈妈的主意\N{\rE}The bookstore was actually my mom's idea.
+Dialogue: 0,0:30:44.39,0:30:45.39,Default,,0,0,0,,她人呢？\N{\rE}And where's she?
+Dialogue: 0,0:30:45.80,0:30:47.60,Default,,0,0,0,,她去年走了\N{\rE}She died last year.
+Dialogue: 0,0:30:49.43,0:30:50.52,Default,,0,0,0,,我深表遗憾\N{\rE}I'm sorry to hear that.
+Dialogue: 0,0:30:51.73,0:30:52.94,Default,,0,0,0,,世事无常嘛\N{\rE}Shit happens.
+Dialogue: 0,0:30:53.81,0:30:56.52,Default,,0,0,0,,只不过在这里  糟糕的事情总发生在美好的日子\N{\rE}Only here, it always happens on a beautiful day.
+Dialogue: 0,0:31:08.53,0:31:09.87,Default,,0,0,0,,你明天有事吗？-\N{\rE}Hey, you working tomorrow?
+Dialogue: 0,0:31:13.37,0:31:14.62,Default,,0,0,0,,-你看这样行吗？  -没问题  包在我身上\N{\rE}- Yeah, no, it sounds good. - Make it work?
+Dialogue: 0,0:31:14.79,0:31:15.79,Default,,0,0,0,,我知道的-\N{\rE}Yeah, no, I got you.
+Dialogue: 0,0:31:15.96,0:31:17.84,Default,,0,0,0,,下周四你能帮我吗？-\N{\rE}Hey, can you cover me next Thursday?
+Dialogue: 0,0:31:18.00,0:31:19.09,Default,,0,0,0,,下周四 这个…-\N{\rE}Thursday, that's...
+Dialogue: 0,0:31:19.59,0:31:21.51,Default,,0,0,0,,嘿  他来了\N{\rE}Hey, there he is.
+Dialogue: 0,0:31:22.63,0:31:24.51,Default,,0,0,0,,在海上度过的第一个晚上怎么样？\N{\rE}How was your first night at sea?
+Dialogue: 0,0:31:24.97,0:31:26.84,Default,,0,0,0,,我还挺喜欢的\N{\rE}I think I liked it.
+Dialogue: 0,0:31:27.01,0:31:29.43,Default,,0,0,0,,不过我做了一些奇怪的梦\N{\rE}Yeah, but I did have some strange dreams.
+Dialogue: 0,0:31:29.60,0:31:30.97,Default,,0,0,0,,船梦\N{\rE}Boat dreams.
+Dialogue: 0,0:31:31.14,0:31:32.64,Default,,0,0,0,,海浪摇晃造成的\N{\rE}It's the rockin' of the ocean.
+Dialogue: 0,0:31:32.81,0:31:36.02,Default,,0,0,0,,那些梦会把你的睡眠习惯  搅得一团糟  真的\N{\rE}It'll mess all your sleep patterns and shit up, I swear to God.
+Dialogue: 0,0:31:36.19,0:31:37.19,Default,,0,0,0,,-很有趣  对吧？  -对\N{\rE}- It's fun, right? - Yeah.
+Dialogue: 0,0:31:37.35,0:31:38.40,Default,,0,0,0,,回头见  弗兰基\N{\rE}See you, Frankie.
+Dialogue: 0,0:31:39.77,0:31:40.69,Default,,0,0,0,,-嘿  道尔顿\N{\rE}Hey, Dalton.
+Dialogue: 0,0:31:40.86,0:31:41.86,Default,,0,0,0,,-回头见  卡尔\N{\rE}Smell you later, Carl.
+Dialogue: 0,0:31:45.61,0:31:47.11,Default,,0,0,0,,-弗兰基  -怎么了？\N{\rE}- Uh, Frankie? - Yeah?
+Dialogue: 0,0:31:49.99,0:31:52.33,Default,,0,0,0,,你们开了镇民大会吗？\N{\rE}Was there, like, a town meeting or something?
+Dialogue: 0,0:31:52.49,0:31:55.66,Default,,0,0,0,,怎么大家都知道我的名字？这个嘛\N{\rE}- How does everybody know my name? - Yeah, uh...
+Dialogue: 0,0:31:55.75,0:31:59.79,Default,,0,0,0,,这里的民风就是这样  人人都爱八卦\N{\rE}that's just how it is around here, man. I mean, it's a gossipy sort of island.
+Dialogue: 0,0:32:15.48,0:32:17.02,Default,,0,0,0,,本先生  抱歉我们来晚了\N{\rE}Mr. B. Sorry, we're late.
+Dialogue: 0,0:32:17.19,0:32:19.94,Default,,0,0,0,,对  没关系  你们来了就好\N{\rE}Yeah, not at all. Glad you're here.
+Dialogue: 0,0:32:20.11,0:32:23.28,Default,,0,0,0,,因为你们在这里  那就说明你们没在别的地方搞砸事情\N{\rE}Because if you're here, that means you're not somewhere else fucking shit up.
+Dialogue: 0,0:32:23.44,0:32:25.74,Default,,0,0,0,,你  过来刮完它  我胡子刚刮到一半\N{\rE}You, let's finish this. I got half a fucking shave.
+Dialogue: 0,0:32:29.62,0:32:32.20,Default,,0,0,0,,本先生  也许您应该  等到上岸后再刮胡子\N{\rE}Mr. B, maybe you should hold off on that shave till we get to shore.
+Dialogue: 0,0:32:32.37,0:32:33.74,Default,,0,0,0,,-风浪挺大的  -别紧张\N{\rE}- It's pretty rough. - Relax.
+Dialogue: 0,0:32:33.91,0:32:36.66,Default,,0,0,0,,船长向我保证会平稳航行的  对吧？\N{\rE}Captain assured me it's gonna be smooth sailing, right?
+Dialogue: 0,0:32:36.83,0:32:38.17,Default,,0,0,0,,-平稳航行？  -是  老板！\N{\rE}- Smooth sailing? - Yes, boss!
+Dialogue: 0,0:32:39.00,0:32:40.50,Default,,0,0,0,,平稳航行\N{\rE}Smooth sailing.
+Dialogue: 0,0:32:40.67,0:32:42.42,Default,,0,0,0,,再说了  这关你什么事？\N{\rE}Also, what the fuck do you care?
+Dialogue: 0,0:32:43.13,0:32:44.09,Default,,0,0,0,,对\N{\rE}Right.
+Dialogue: 0,0:32:44.76,0:32:47.17,Default,,0,0,0,,话说回来  不知道您都听到了什么\N{\rE}Anyway, I don't know what you heard.
+Dialogue: 0,0:32:47.34,0:32:49.80,Default,,0,0,0,,我听到的是  你们都是一群该死的懦夫\N{\rE}What I heard is that you're all a bunch of fucking pussies.
+Dialogue: 0,0:32:49.89,0:32:50.80,Default,,0,0,0,,大家都这么说的-\N{\rE}That's what I heard.
+Dialogue: 0,0:32:50.89,0:32:52.85,Default,,0,0,0,,害怕某个混帐保镖  这就是我听到的\N{\rE}Scared of some bouncer asshole. That's what I heard.
+Dialogue: 0,0:32:53.01,0:32:55.31,Default,,0,0,0,,本先生  那其实是戴尔的错\N{\rE}Actually, sir, it was Dell.
+Dialogue: 0,0:32:55.39,0:32:56.68,Default,,0,0,0,,是他不确定该怎么处理\N{\rE}He wasn't sure how to handle it.
+Dialogue: 0,0:32:56.77,0:33:00.19,Default,,0,0,0,,好吧  那就让这位天才戴尔  过来跟我说两句\N{\rE}Okay, let me talk to this genius, Dell, then.
+Dialogue: 0,0:33:00.35,0:33:01.56,Default,,0,0,0,,不行\N{\rE}You can't.
+Dialogue: 0,0:33:01.73,0:33:02.77,Default,,0,0,0,,这又是为什么？\N{\rE}And why is that?
+Dialogue: 0,0:33:04.90,0:33:06.24,Default,,0,0,0,,他现在还躺在医院里\N{\rE}He's still in the hospital.
+Dialogue: 0,0:33:06.82,0:33:08.24,Default,,0,0,0,,有点脑震荡\N{\rE}He's got a concussion.
+Dialogue: 0,0:33:08.49,0:33:09.86,Default,,0,0,0,,王八蛋！\N{\rE}Son of a bitch!
+Dialogue: 0,0:33:10.03,0:33:11.07,Default,,0,0,0,,-对不起\N{\rE}I'm sorry.
+Dialogue: 0,0:33:11.24,0:33:13.16,Default,,0,0,0,,-没事  好的\N{\rE}It's fine. It's fine. Okay. Okay.
+Dialogue: 0,0:33:13.33,0:33:15.49,Default,,0,0,0,,保持手腕放松  好吗？\N{\rE}Let's keep the wrist nice and loose, okay?
+Dialogue: 0,0:33:15.66,0:33:17.20,Default,,0,0,0,,-能做到吧？好极了  -好的\N{\rE}- Sounds good? Perfect. - Okay.
+Dialogue: 0,0:33:17.37,0:33:18.41,Default,,0,0,0,,继续\N{\rE}You can go ahead.
+Dialogue: 0,0:33:20.46,0:33:22.63,Default,,0,0,0,,谁能告诉我或提醒我一下\N{\rE}Can someone just tell me or remind me
+Dialogue: 0,0:33:22.79,0:33:26.92,Default,,0,0,0,,当初是谁提议雇用这群笨蛋的吗？\N{\rE}whose idea was it to hire these dumb fucks in the first place?
+Dialogue: 0,0:33:27.46,0:33:30.01,Default,,0,0,0,,是你  老板  最重要的是！\N{\rE}- Yours, boss. - Here's the fucking thing!
+Dialogue: 0,0:33:30.88,0:33:33.93,Default,,0,0,0,,你们早就该办好这件事了\N{\rE}You're all supposed to have this job done by now.
+Dialogue: 0,0:33:34.35,0:33:36.85,Default,,0,0,0,,我还是觉得我们可以吓跑他们\N{\rE}I still think we could scare 'em off.
+Dialogue: 0,0:33:37.52,0:33:39.18,Default,,0,0,0,,你是不是…我刚才怎么说的？\N{\rE}Are you, I... What did I say?
+Dialogue: 0,0:33:39.35,0:33:41.77,Default,,0,0,0,,我说保持放松  懂吗？放松双手\N{\rE}I said keep it loose, okay? Hands loose.
+Dialogue: 0,0:33:41.94,0:33:44.52,Default,,0,0,0,,我知道船身有点颠簸  但放松点\N{\rE}I get it. It's a little bouncy, but keep it nice and loose.
+Dialogue: 0,0:33:44.69,0:33:46.44,Default,,0,0,0,,你只要放松点就好  好吗？很简单\N{\rE}That's all you have to do, okay? Easy.
+Dialogue: 0,0:33:46.61,0:33:47.61,Default,,0,0,0,,好吗？\N{\rE}Okay?
+Dialogue: 0,0:33:54.16,0:33:55.99,Default,,0,0,0,,你  跟我说说这个保镖的情况\N{\rE}You, tell me about this bouncer.
+Dialogue: 0,0:33:56.12,0:33:57.79,Default,,0,0,0,,这个…\N{\rE}Oh, uh...
+Dialogue: 0,0:33:57.87,0:34:00.08,Default,,0,0,0,,我也不太清楚  他…\N{\rE}Yeah, uh, I don't know, man. He's um...
+Dialogue: 0,0:34:00.16,0:34:01.71,Default,,0,0,0,,他这个人挺奇怪的\N{\rE}He's kinda strange, you know?
+Dialogue: 0,0:34:01.87,0:34:02.92,Default,,0,0,0,,“奇怪”是什么意思？\N{\rE}What do you mean, strange?
+Dialogue: 0,0:34:03.08,0:34:05.50,Default,,0,0,0,,怎么说呢  你懂的  他…\N{\rE}Yeah. I mean, you know, he's...
+Dialogue: 0,0:34:05.67,0:34:08.21,Default,,0,0,0,,他看起来就像儿童节目主持人  一副人畜无害的样子\N{\rE}He acts all nice and shit, like he's Mister Rogers or something.
+Dialogue: 0,0:34:08.38,0:34:11.38,Default,,0,0,0,,但转眼间  他却突然暴走\N{\rE}But then, man, he hauls off, he hauls off.
+Dialogue: 0,0:34:11.55,0:34:13.26,Default,,0,0,0,,把你揍得屁滚尿流\N{\rE}He beats the living shit outta you.
+Dialogue: 0,0:34:13.43,0:34:14.93,Default,,0,0,0,,总的来说  是个非常有趣的家伙\N{\rE}So, really interesting guy overall.
+Dialogue: 0,0:34:15.22,0:34:16.81,Default,,0,0,0,,真是精彩的分析\N{\rE}That was a brilliant analysis.
+Dialogue: 0,0:34:16.97,0:34:18.60,Default,,0,0,0,,山姆  把这些笨蛋扔到海里\N{\rE}Sam, throw these dum-dums overboard.
+Dialogue: 0,0:34:18.77,0:34:23.27,Default,,0,0,0,,也许您告诉我们拆除路边餐馆的原因  我们会好办些？\N{\rE}Well, maybe if you just told us why you want to tear down the Road House?
+Dialogue: 0,0:34:23.44,0:34:24.94,Default,,0,0,0,,好主意！\N{\rE}Great idea!
+Dialogue: 0,0:34:25.11,0:34:27.98,Default,,0,0,0,,干脆把我的全盘生意都告诉你们好了\N{\rE}Let me bring you in on all my business dealings.
+Dialogue: 0,0:34:29.36,0:34:30.53,Default,,0,0,0,,通通给我滚\N{\rE}Get the fuck outta here.
+Dialogue: 0,0:34:30.69,0:34:32.86,Default,,0,0,0,,滚到别墅去  尽情享受吧\N{\rE}Go to the house. Enjoy your fucking selves.
+Dialogue: 0,0:34:33.03,0:34:34.16,Default,,0,0,0,,我回头再找你们\N{\rE}I'll be in touch.
+Dialogue: 0,0:34:35.28,0:34:37.62,Default,,0,0,0,,也许该请你老爸出手了\N{\rE}Well, maybe it's time we get your old man involved.
+Dialogue: 0,0:34:45.42,0:34:47.88,Default,,0,0,0,,船长！我有话跟你说\N{\rE}Captain! Let me talk to you for a second.
+Dialogue: 0,0:34:51.92,0:34:53.78,Default,,0,0,0,,{\fs14\an8}现场乐队  周四到周日
+Dialogue: 0,0:34:52.93,0:34:55.39,Default,,0,0,0,,我知道这里是酒吧\N{\rE}Hey, everybody. I know we're at a bar right now,
+Dialogue: 0,0:34:55.47,0:34:57.22,Default,,0,0,0,,但你们不介意  我把教堂“搬”到这里吧？\N{\rE}but do y'all mind if I take y'all to church?
+Dialogue: 0,0:34:59.18,0:35:03.27,Default,,0,0,0,,{\fs10\an9\i1}♪ 感谢上帝赐予我们南方女人  悍米引擎  脆皮鸡 ♪\N♪ Praise the Lord for southern women Hemi engines, crispy chicken ♪
+Dialogue: 0,0:35:03.44,0:35:05.81,Default,,0,0,0,,{\fs10\an9\i1}♪ 感谢上帝赐予我们东亚特兰大… ♪\N♪ Praise the Lord for East Atlanta ♪ - Yo.
+Dialogue: 0,0:35:05.98,0:35:07.61,Default,,0,0,0,,这是什么鬼音乐？\N{\rE}Yo, what the fuck kinda music is this?
+Dialogue: 0,0:35:07.69,0:35:09.94,Default,,0,0,0,,{\fs10\an9\i1}♪ 感谢上帝赐予我一切- ♪\N♪ Praise the Lord that I got everything ♪
+Dialogue: 0,0:35:10.11,0:35:11.44,Default,,0,0,0,,能不能唱点人听的歌\N{\rE}Yo, play some fucking Stones or something.
+Dialogue: 0,0:35:11.61,0:35:13.99,Default,,0,0,0,,滚下去…给我滚下舞台\N{\rE}Get off the fucking stage!
+Dialogue: 0,0:35:14.15,0:35:16.53,Default,,0,0,0,,这可不是高中生的车库乐队  表演的地方！\N{\rE}Yo! This ain't fuckin' high school garage band!
+Dialogue: 0,0:35:16.62,0:35:18.12,Default,,0,0,0,,给我滚下舞台！\N{\rE}Get off the fuckin' stage!
+Dialogue: 0,0:35:20.37,0:35:21.66,Default,,0,0,0,,你有什么毛病  兄弟？\N{\rE}The fuck is wrong with you, bro?
+Dialogue: 0,0:35:21.83,0:35:23.62,Default,,0,0,0,,坐下吧  该死的醉汉\N{\rE}Sit the fuck down, you drunk motherfucker.
+Dialogue: 0,0:35:23.71,0:35:25.54,Default,,0,0,0,,你打算怎么做？少管闲事！\N{\rE}The fuck you're gonna do about it? Mind your fuckin' business!
+Dialogue: 0,0:35:25.71,0:35:26.88,Default,,0,0,0,,{\fs10\an9\i1}♪ 感谢上帝- ♪\N♪ Praise the Lord ♪
+Dialogue: 0,0:35:26.96,0:35:28.04,Default,,0,0,0,,这该死的音乐烂透了\N{\rE}This fuckin' music sucks!
+Dialogue: 0,0:35:28.21,0:35:30.46,Default,,0,0,0,,那个穿红衣服的家伙  衬衫下藏着一把刀\N{\rE}That guy's got a knife under his shirt. The one in red.
+Dialogue: 0,0:35:30.55,0:35:31.71,Default,,0,0,0,,老子不怕你\N{\rE}I ain't fuckin' scared of you, motherfucker.
+Dialogue: 0,0:35:31.80,0:35:33.09,Default,,0,0,0,,-给我坐回去  -不\N{\rE}- Sit the fuck down. - Sit your ass down.
+Dialogue: 0,0:35:33.26,0:35:34.26,Default,,0,0,0,,-你来处理吧？\N{\rE}Do you wanna handle it?
+Dialogue: 0,0:35:34.42,0:35:35.43,Default,,0,0,0,,-不  你才给我坐下\N{\rE}No, just sit your ass down.
+Dialogue: 0,0:35:35.59,0:35:36.59,Default,,0,0,0,,我？\N{\rE}Me?
+Dialogue: 0,0:35:36.80,0:35:38.60,Default,,0,0,0,,老子不怕你\N{\rE}I ain't fuckin' scared of you.
+Dialogue: 0,0:35:38.76,0:35:39.89,Default,,0,0,0,,-你他妈的给我退下  -滚出去\N{\rE}- Back the fuck up. - Get the fuck out.
+Dialogue: 0,0:35:39.97,0:35:42.14,Default,,0,0,0,,从我面前滚开  贱货！\N{\rE}Back the fuck up outta of my face, bitch!
+Dialogue: 0,0:35:44.98,0:35:46.19,Default,,0,0,0,,当他掏出刀的时候\N{\rE}When he takes it out,
+Dialogue: 0,0:35:46.35,0:35:48.56,Default,,0,0,0,,你只须后撤一大步  然后一拳打在他脸上\N{\rE}you just take a big step back and pop him in the face.
+Dialogue: 0,0:35:49.31,0:35:50.36,Default,,0,0,0,,你可以的\N{\rE}You can do it.
+Dialogue: 0,0:35:50.57,0:35:52.90,Default,,0,0,0,,好的  好的\N{\rE}Okay. Okay.
+Dialogue: 0,0:35:53.03,0:35:55.07,Default,,0,0,0,,{\fs10\an9\i1}♪ 海米引擎，脆皮鸡- ♪\N♪ Hemi engines, crispy chicken ♪
+Dialogue: 0,0:35:55.24,0:35:56.57,Default,,0,0,0,,{\fs10\an9\i1}♪ 跟我说“嘿”- ♪\N♪ I said, "Hey!" ♪
+Dialogue: 0,0:36:00.03,0:36:02.20,Default,,0,0,0,,嘿！\N{\rE}Hey! All right, hey!
+Dialogue: 0,0:36:02.37,0:36:03.54,Default,,0,0,0,,给我滚出去  伙计  滚出去\N{\rE}- You're fucking out, man. - Get the fuck off!
+Dialogue: 0,0:36:03.70,0:36:05.25,Default,,0,0,0,,给我滚出去  伙计\N{\rE}You're fuckin' out, man.
+Dialogue: 0,0:36:05.41,0:36:07.17,Default,,0,0,0,,你少管闲事！\N{\rE}Stay the fuck outta this!
+Dialogue: 0,0:36:07.33,0:36:09.54,Default,,0,0,0,,这下如何  贱人？怎么了？\N{\rE}What now, bitch? What's up?
+Dialogue: 0,0:36:09.63,0:36:12.38,Default,,0,0,0,,{\fs10\an9\i1}♪ 一起摇摆- ♪\N♪ He rockin' with me ♪
+Dialogue: 0,0:36:12.55,0:36:13.76,Default,,0,0,0,,{\fs10\an9\i1}♪ 绝对真心- ♪\N♪ That's for sure ♪
+Dialogue: 0,0:36:13.92,0:36:14.92,Default,,0,0,0,,{\fs10\an9\i1}♪ 感谢上帝…- ♪\N♪ Praise the Lord ♪
+Dialogue: 0,0:36:15.09,0:36:16.22,Default,,0,0,0,,王八蛋！\N{\rE}Motherfucker!
+Dialogue: 0,0:36:17.38,0:36:19.64,Default,,0,0,0,,该死的！\N{\rE}Ahh! Fuck!
+Dialogue: 0,0:36:21.97,0:36:23.52,Default,,0,0,0,,比利  椅子\N{\rE}Billy, chair.
+Dialogue: 0,0:36:23.68,0:36:25.06,Default,,0,0,0,,{\fs10\an9\i1}♪ 感谢上帝…- ♪\N♪ Praise the Lord, praise the Lord ♪
+Dialogue: 0,0:36:27.52,0:36:29.61,Default,,0,0,0,,{\fs10\an9\i1}♪ 一起摇摆- ♪\N♪ He rockin' with me ♪
+Dialogue: 0,0:36:29.77,0:36:31.82,Default,,0,0,0,,你藏着一把刀进来  这可是禁忌\N{\rE}You brought a concealed knife in here and that is a no-no.
+Dialogue: 0,0:36:31.90,0:36:34.53,Default,,0,0,0,,-比利  -见鬼  老兄！我的胳膊！\N{\rE}- Billy. - Ow! Fuck, man! My arm!
+Dialogue: 0,0:36:35.03,0:36:35.94,Default,,0,0,0,,交给你了\N{\rE}You got him.
+Dialogue: 0,0:36:36.11,0:36:37.70,Default,,0,0,0,,冷静点  老兄  冷静点\N{\rE}Chill. Chill, dude, chill.
+Dialogue: 0,0:36:37.86,0:36:40.03,Default,,0,0,0,,你才冷静点  别再做这种事了\N{\rE}You fucking chill. Don't fucking ever do that again.
+Dialogue: 0,0:36:40.87,0:36:43.08,Default,,0,0,0,,{\fs10\an9\i1}♪ 感谢上帝…- ♪\N♪ Praise the Lord, praise the Lord ♪
+Dialogue: 0,0:36:43.45,0:36:44.45,Default,,0,0,0,,放开我\N{\rE}Get off of me.
+Dialogue: 0,0:36:44.62,0:36:46.46,Default,,0,0,0,,滚出去  伙计！\N{\rE}Get the fuck outta here, man.
+Dialogue: 0,0:36:46.87,0:36:48.25,Default,,0,0,0,,给我滚出去\N{\rE}Get the fuck outta here.
+Dialogue: 0,0:36:48.42,0:36:50.00,Default,,0,0,0,,搞什么  伙计？\N{\rE}- Jesus, what the fuck, man? - Get out.
+Dialogue: 0,0:36:50.17,0:36:51.42,Default,,0,0,0,,-看我不打死你！  -去你的\N{\rE}- I will fuck you up! - Oh, fuck!
+Dialogue: 0,0:36:52.59,0:36:54.09,Default,,0,0,0,,我越来越得心应手了\N{\rE}You know, I think I'm getting pretty good at this.
+Dialogue: 0,0:36:54.25,0:36:56.92,Default,,0,0,0,,你有这方面的天赋  别忘了要靠膝盖发力\N{\rE}You're a natural. Don't forget to lift with your knees.
+Dialogue: 0,0:36:57.09,0:36:58.30,Default,,0,0,0,,靠膝盖发力\N{\rE}Lift with my knees.
+Dialogue: 0,0:36:58.72,0:37:00.09,Default,,0,0,0,,台球桌那边  穿绿衣服的家伙\N{\rE}Pool table. Guy in green.
+Dialogue: 0,0:37:06.93,0:37:08.69,Default,,0,0,0,,嘿  退下  给我退下\N{\rE}Hey, back up. Back the fuck up.
+Dialogue: 0,0:37:09.19,0:37:11.19,Default,,0,0,0,,他能充当保镖真是太好了\N{\rE}It's a good thing he can do that.
+Dialogue: 0,0:37:11.36,0:37:13.82,Default,,0,0,0,,因为他是个糟糕的酒保\N{\rE}'Cause, you know, he's a pretty crap bartender.
+Dialogue: 0,0:37:14.23,0:37:15.23,Default,,0,0,0,,屌-\N{\rE}It's cool.
+Dialogue: 0,0:37:15.78,0:37:17.07,Default,,0,0,0,,大家都冷静点\N{\rE}Everyone relax.
+Dialogue: 0,0:37:18.24,0:37:19.40,Default,,0,0,0,,别冲动\N{\rE}Don't fucking do that.
+Dialogue: 0,0:37:39.84,0:37:41.72,Default,,0,0,0,,嘿  你是瑞夫  对吧？我是\N{\rE}- Hey, you're Reef, right? - Yeah.
+Dialogue: 0,0:37:42.34,0:37:44.18,Default,,0,0,0,,你那天毫不犹豫就出手帮了比利\N{\rE}You were quick to back Billy up the other day.
+Dialogue: 0,0:37:44.97,0:37:47.14,Default,,0,0,0,,对  我讨厌恶霸  所以…\N{\rE}Yeah, I mean, I don't like bullies, so...
+Dialogue: 0,0:37:49.81,0:37:51.94,Default,,0,0,0,,你指关节上那些是疤痕吗？\N{\rE}Those scars on your knuckles there?
+Dialogue: 0,0:37:52.90,0:37:55.77,Default,,0,0,0,,老习惯了  我在大学期间打过拳\N{\rE}Old habit. Used to box some in college.
+Dialogue: 0,0:37:56.36,0:37:57.36,Default,,0,0,0,,现在还练吗？\N{\rE}Still hit the bag?
+Dialogue: 0,0:37:58.49,0:38:00.36,Default,,0,0,0,,偶尔会练一下  为何这么问？\N{\rE}Every now and then. Why?
+Dialogue: 0,0:38:10.87,0:38:11.92,Default,,0,0,0,,{\fs10\an9\i1}♪ 昨晚  我喝醉了 ♪\N♪ Last night ♪
+Dialogue: 0,0:38:12.08,0:38:15.04,Default,,0,0,0,,{\fs10\an9\i1}♪ -放开我  -好痛  伙计！\N- Get the fuck off me! ♪ I got loaded ♪
+Dialogue: 0,0:38:15.21,0:38:17.30,Default,,0,0,0,,{\fs10\an9\i1}♪ 喝了一瓶杜松子酒 ♪\N♪ On a bottle'a gin ♪
+Dialogue: 0,0:38:17.46,0:38:19.76,Default,,0,0,0,,{\fs10\an9\i1}♪ 喝了一瓶杜松子酒 ♪\N♪ On a bottle'a gin ♪
+Dialogue: 0,0:38:19.92,0:38:21.30,Default,,0,0,0,,{\fs10\an9\i1}♪ 昨晚 ♪\N♪ Last night ♪
+Dialogue: 0,0:38:22.59,0:38:24.14,Default,,0,0,0,,{\fs10\an9\i1}♪ 我喝醉了 ♪\N♪ I got loaded ♪
+Dialogue: 0,0:38:24.80,0:38:26.39,Default,,0,0,0,,{\fs10\an9\i1}♪ 喝了一瓶杜松子酒 ♪\N♪ On a bottle'a gin ♪
+Dialogue: 0,0:38:26.56,0:38:27.64,Default,,0,0,0,,{\fs10\an9\i1}♪ 喝了一瓶杜松子酒 ♪\N♪ On a bottle'a gin ♪
+Dialogue: 0,0:38:27.81,0:38:29.43,Default,,0,0,0,,嘿  女士们  从桌子上下来\N{\rE}Yo, ladies, get off the table.
+Dialogue: 0,0:38:29.77,0:38:31.14,Default,,0,0,0,,{\fs10\an9\i1}♪ 那感觉棒极了 ♪\N♪ Well, I feel all right ♪
+Dialogue: 0,0:38:32.31,0:38:33.69,Default,,0,0,0,,{\fs10\an9\i1}♪ 感觉棒极了 ♪\N♪ I feel all right ♪
+Dialogue: 0,0:38:34.73,0:38:38.48,Default,,0,0,0,,{\fs10\an9\i1}♪ 感觉棒极了  那感觉棒极了 ♪\N♪ I feel all right You know I feel all right ♪
+Dialogue: 0,0:38:42.61,0:38:43.61,Default,,0,0,0,,嘿  伙计\N{\rE}Hey, man!
+Dialogue: 0,0:38:44.49,0:38:45.99,Default,,0,0,0,,你在干什么？\N{\rE}What are you doing?
+Dialogue: 0,0:38:46.58,0:38:48.87,Default,,0,0,0,,{\fs10\an9\i1}♪ 喝了一瓶威士忌 ♪\N♪ On a bottle'a whiskey ♪
+Dialogue: 0,0:38:49.04,0:38:50.54,Default,,0,0,0,,起来！\N{\rE}Get up!
+Dialogue: 0,0:38:51.33,0:38:53.17,Default,,0,0,0,,{\fs10\an9\i1}♪ 昨晚 ♪\N♪ Last night ♪
+Dialogue: 0,0:38:53.96,0:38:57.42,Default,,0,0,0,,{\fs10\an9\i1}♪ 我喝醉了  喝了一瓶威士忌 ♪\N♪ I got loaded on a bottle'a whiskey ♪
+Dialogue: 0,0:38:57.59,0:38:59.34,Default,,0,0,0,,喝了一瓶威士忌\N{\rE}Back the fuck up, man! Hey!
+Dialogue: 0,0:38:59.46,0:39:00.76,Default,,0,0,0,,退后-\N{\rE}Back away!
+Dialogue: 0,0:39:01.09,0:39:05.64,Default,,0,0,0,,{\fs10\an9\i1}♪ 但我感觉棒极了  感觉棒极了 ♪\N♪ But I feel all right You know I feel all right ♪
+Dialogue: 0,0:39:06.14,0:39:08.31,Default,,0,0,0,,{\fs10\an9\i1}♪ 感觉棒极了 ♪\N♪ I feel all right ♪
+Dialogue: 0,0:39:08.47,0:39:10.72,Default,,0,0,0,,{\fs10\an9\i1}♪ 感觉棒极了 ♪\N♪ I feel all right ♪
+Dialogue: 0,0:39:10.89,0:39:12.27,Default,,0,0,0,,{\fs10\an9\i1}♪ 感觉棒极了 ♪\N♪ I feel all right ♪
+Dialogue: 0,0:39:12.48,0:39:13.48,Default,,0,0,0,,朱利叶斯！\N{\rE}Julius!
+Dialogue: 0,0:39:22.49,0:39:24.95,Default,,0,0,0,,你说得对  这么做感觉很爽\N{\rE}Hey, you was right. That was mad therapeutic.
+Dialogue: 0,0:39:25.11,0:39:27.57,Default,,0,0,0,,对  不过记得要靠膝盖发力\N{\rE}Yeah, but remember, lift with your knees.
+Dialogue: 0,0:39:27.74,0:39:29.24,Default,,0,0,0,,-好的  -始终抬起膝盖\N{\rE}- Always lift with your knees. - Sure.
+Dialogue: 0,0:39:30.08,0:39:31.08,Default,,0,0,0,,有人吗？\N{\rE}Hello?
+Dialogue: 0,0:39:32.25,0:39:34.08,Default,,0,0,0,,嘿！临走前我想再喝一杯\N{\rE}Hey! One for the road.
+Dialogue: 0,0:39:35.00,0:39:37.08,Default,,0,0,0,,我看你已经醉得不能上路了\N{\rE}Yeah, I think even the road is drunk at this point.
+Dialogue: 0,0:39:37.21,0:39:38.50,Default,,0,0,0,,-什么？  -我帮你打辆车\N{\rE}- What? - I'll call you a cab.
+Dialogue: 0,0:39:38.59,0:39:40.30,Default,,0,0,0,,-不要  -要\N{\rE}- No, no. Boo! - Yeah.
+Dialogue: 0,0:39:40.38,0:39:41.63,Default,,0,0,0,,切\N{\rE}Boo!
+Dialogue: 0,0:39:45.01,0:39:46.01,Default,,0,0,0,,嘿！不行  休想！\N{\rE}Hey! No.
+Dialogue: 0,0:39:46.30,0:39:47.93,Default,,0,0,0,,就一瓶\N{\rE}- Fuck, no! - Just one. One!
+Dialogue: 0,0:39:48.10,0:39:49.10,Default,,0,0,0,,怎么了？\N{\rE}What?
+Dialogue: 0,0:39:51.14,0:39:52.22,Default,,0,0,0,,又是你\N{\rE}Hey, there, again.
+Dialogue: 0,0:39:54.81,0:39:55.81,Default,,0,0,0,,“又”？\N{\rE}"Again"?
+Dialogue: 0,0:39:55.94,0:39:57.40,Default,,0,0,0,,不\N{\rE}Uh... Nope.
+Dialogue: 0,0:39:57.56,0:39:59.44,Default,,0,0,0,,我们从未见过面\N{\rE}We've, um, never met.
+Dialogue: 0,0:40:06.07,0:40:07.41,Default,,0,0,0,,好了  小心台阶\N{\rE}All right. Watch your step.
+Dialogue: 0,0:40:09.37,0:40:11.16,Default,,0,0,0,,明早记得过来拿这个  吉姆\N{\rE}Pick these up in the morning, Jim.
+Dialogue: 0,0:40:24.88,0:40:26.34,Default,,0,0,0,,回头见  道尔顿\N{\rE}Later, Dalton.
+Dialogue: 0,0:40:27.47,0:40:29.47,Default,,0,0,0,,我们会回来的-\N{\rE}We'll be back.
+Dialogue: 0,0:40:39.52,0:40:41.65,Default,,0,0,0,,第一位称重的拳手\N{\rE}First fighter to the scale.
+Dialogue: 0,0:40:41.82,0:40:45.94,Default,,0,0,0,,挑战者  埃尔伍德道尔顿！\N{\rE}The challenger, Elwood Dalton!
+Dialogue: 0,0:40:49.45,0:40:52.91,Default,,0,0,0,,天啊  这混蛋看得我只想笑  因为他就是个笑话！\N{\rE}Man, this guy makes me laugh, 'cause he's a fucking joke!
+Dialogue: 0,0:40:54.24,0:40:56.25,Default,,0,0,0,,-去你的！  -轻轻一巴掌而已\N{\rE}- You fuck! - Just a little slap.
+Dialogue: 0,0:40:56.41,0:40:57.79,Default,,0,0,0,,你死定了\N{\rE}You're fucking dead.
+Dialogue: 0,0:40:57.96,0:40:59.79,Default,,0,0,0,,你死定了\N{\rE}- You're fucking dead. {\i1}- Wow.
+Dialogue: 0,0:41:21.40,0:41:22.86,Default,,0,0,0,,该死的船梦\N{\rE}Fucking boat dreams.
+Dialogue: 0,0:41:32.32,0:41:34.37,Default,,0,0,0,,{\fs14\an8}佛罗里达群岛本地历史  大树弗雷德
+Dialogue: 0,0:41:51.05,0:41:51.97,Default,,0,0,0,,谢谢\N{\rE}Thank you.
+Dialogue: 0,0:41:56.35,0:41:57.68,Default,,0,0,0,,你在这里\N{\rE}You're here.
+Dialogue: 0,0:41:57.85,0:42:00.31,Default,,0,0,0,,是的  我看到书上说  这是群岛最棒的海“挪”杂绘\N{\rE}I am. Best conch chowder in the Keys, so I've read.
+Dialogue: 0,0:42:00.48,0:42:01.44,Default,,0,0,0,,海螺\N{\rE}Conch.
+Dialogue: 0,0:42:02.31,0:42:03.44,Default,,0,0,0,,抱歉  什么？\N{\rE}Sorry, what?
+Dialogue: 0,0:42:03.61,0:42:04.73,Default,,0,0,0,,是“海螺”  不是“海挪”\N{\rE}It's conch, not con-ch.
+Dialogue: 0,0:42:05.07,0:42:07.78,Default,,0,0,0,,发型不错嘛  艾莉  很适合你\N{\rE}Nice haircut, Ellie. Really suits you.
+Dialogue: 0,0:42:07.86,0:42:08.78,Default,,0,0,0,,去你的  弗兰克\N{\rE}Oh, fuck you, Frank.
+Dialogue: 0,0:42:08.94,0:42:10.74,Default,,0,0,0,,早知道我当初就该  任由你死于阑尾破裂\N{\rE}I should've let that burst appendix kill you.
+Dialogue: 0,0:42:15.28,0:42:16.91,Default,,0,0,0,,他是我的理发师\N{\rE}My hairdresser.
+Dialogue: 0,0:42:17.66,0:42:18.87,Default,,0,0,0,,我现在自己剪头发了\N{\rE}I cut my own hair now.
+Dialogue: 0,0:42:19.04,0:42:21.87,Default,,0,0,0,,这里的人似乎有点好勇斗狠\N{\rE}People seem a little aggressive around here.
+Dialogue: 0,0:42:22.83,0:42:24.29,Default,,0,0,0,,我必须提醒你\N{\rE}Look, I should warn you.
+Dialogue: 0,0:42:25.38,0:42:26.71,Default,,0,0,0,,我从小在玻璃岛长大\N{\rE}I grew up in Glass Key
+Dialogue: 0,0:42:26.88,0:42:29.84,Default,,0,0,0,,这里的人有自己的一套处事方式\N{\rE}and people have a certain way of getting things done around here.
+Dialogue: 0,0:42:30.42,0:42:32.51,Default,,0,0,0,,忠诚和家族的观念根深蒂固\N{\rE}Loyalties, family ties run deep.
+Dialogue: 0,0:42:33.22,0:42:36.18,Default,,0,0,0,,即便是警察  有时候也会无法提供应有的帮助\N{\rE}Even the cops aren't always as helpful as they should be.
+Dialogue: 0,0:42:36.35,0:42:39.68,Default,,0,0,0,,一旦惹错了人  很有可能会受伤  甚至更糟\N{\rE}If you cause trouble to the wrong people, you could get hurt or worse.
+Dialogue: 0,0:42:42.23,0:42:44.94,Default,,0,0,0,,我那本《大树弗雷德》  完全没有提到这些\N{\rE}None of this is covered in my {\i1}Fred the Tree book.
+Dialogue: 0,0:42:48.15,0:42:49.61,Default,,0,0,0,,你确定？\N{\rE}You sure?
+Dialogue: 0,0:42:49.78,0:42:51.15,Default,,0,0,0,,你把整本书都看完了？\N{\rE}You read the whole thing?
+Dialogue: 0,0:42:51.32,0:42:53.24,Default,,0,0,0,,你知道海螺能产珍珠吗？\N{\rE}You know that conchs produce pearls?
+Dialogue: 0,0:42:54.36,0:42:55.37,Default,,0,0,0,,知道\N{\rE}Yes.
+Dialogue: 0,0:42:56.57,0:42:57.91,Default,,0,0,0,,-它们有着华丽的螺旋状…\N{\rE}And that they have ornate spiral...
+Dialogue: 0,0:42:57.99,0:42:59.66,Default,,0,0,0,,-贝壳？对  这点无人不知\N{\rE}Shells. Yes, everyone knows that.
+Dialogue: 0,0:42:59.83,0:43:04.25,Default,,0,0,0,,而且每15000个海螺  才有一个能产出粉红色的珍珠\N{\rE}That one in every 15,000 produces a pink pearl.
+Dialogue: 0,0:43:04.75,0:43:06.00,Default,,0,0,0,,听起来很浪漫\N{\rE}Sounds romantic.
+Dialogue: 0,0:43:07.29,0:43:08.96,Default,,0,0,0,,但对海螺来说则不然\N{\rE}Unless you're a conch.
+Dialogue: 0,0:43:09.13,0:43:10.96,Default,,0,0,0,,因为珍珠的形成实际上是\N{\rE}Because what actually happens
+Dialogue: 0,0:43:11.13,0:43:13.51,Default,,0,0,0,,海螺的贝壳里进了沙粒\N{\rE}is the conch gets a bit of grit inside its shell,
+Dialogue: 0,0:43:13.68,0:43:15.93,Default,,0,0,0,,给它造成了极大的痛苦\N{\rE}which causes extreme irritation.
+Dialogue: 0,0:43:16.09,0:43:17.47,Default,,0,0,0,,在“极大的痛苦”中\N{\rE}"Extreme irritation"...
+Dialogue: 0,0:43:18.72,0:43:20.31,Default,,0,0,0,,孕育出美丽的事物\N{\rE}that leads to something beautiful.
+Dialogue: 0,0:43:21.27,0:43:22.85,Default,,0,0,0,,这怎么就不浪漫了？\N{\rE}How is that not romantic?
+Dialogue: 0,0:43:27.73,0:43:30.28,Default,,0,0,0,,好好享用你的海螺杂烩吧\N{\rE}Enjoy your conch chowder.
+Dialogue: 0,0:43:32.57,0:43:34.99,Default,,0,0,0,,我喜欢你的发型  你剪得很好\N{\rE}I like your hair. Did a nice job.
+Dialogue: 0,0:43:36.11,0:43:37.49,Default,,0,0,0,,去他的弗兰克\N{\rE}Fuck Frank.
+Dialogue: 0,0:43:51.88,0:43:55.30,Default,,0,0,0,,{\fs10\an9\i1}♪ 哟  人生何其短  珍惜眼前人 ♪\N♪ Yo, well, life is too short So love the one you got ♪
+Dialogue: 0,0:43:55.38,0:43:58.14,Default,,0,0,0,,{\fs10\an9\i1}♪ 皆因生命太无常  车祸中枪无定数 ♪\N♪ 'Cause you might get run over Or you might get shot ♪
+Dialogue: 0,0:43:58.22,0:44:00.68,Default,,0,0,0,,{\fs10\an9\i1}♪ 从不与人口角  只求一吐为快 ♪\N♪ Never start no static I just get it off my chest ♪
+Dialogue: 0,0:44:00.85,0:44:03.18,Default,,0,0,0,,{\fs10\an9\i1}♪ 防弹背心从未派上用场 ♪\N♪ Never had to battle With no bullet-proof vest ♪
+Dialogue: 0,0:44:03.35,0:44:05.69,Default,,0,0,0,,{\fs10\an9\i1}♪ 举个小小的例子  请君听我一句劝 ♪\N♪ Take a small example Take a tip from me ♪
+Dialogue: 0,0:44:05.85,0:44:08.27,Default,,0,0,0,,{\fs10\an9\i1}♪ 将所有钱财拿去做善事 ♪\N♪ Take all your money And give it to charity ♪
+Dialogue: 0,0:44:08.44,0:44:10.48,Default,,0,0,0,,{\fs10\an9\i1}♪ 爱是我所拥有的  它触手可及 ♪\N♪ Love is what I got It's within my reach ♪
+Dialogue: 0,0:44:10.65,0:44:12.94,Default,,0,0,0,,{\fs10\an9\i1}♪ 轻松愉快的风格源自新奥尔良 ♪\N♪ And the jelly style Is straight from New Orleans ♪
+Dialogue: 0,0:44:13.11,0:44:15.95,Default,,0,0,0,,{\fs10\an9\i1}♪ 种什么因  得什么果  善恶到头终有报 ♪\N♪ It all comes back to you You're bound to get what you deserve ♪
+Dialogue: 0,0:44:16.11,0:44:18.53,Default,,0,0,0,,{\fs10\an9\i1}♪ 不信来试试  必将尝苦果 ♪\N♪ Try and test that You're bound to get served ♪
+Dialogue: 0,0:44:18.70,0:44:20.99,Default,,0,0,0,,{\fs10\an9\i1}♪ 爱是我所拥有的  切忌纵情欢闹 ♪\N♪ Love is what I got, don't start a riot ♪
+Dialogue: 0,0:44:21.16,0:44:23.16,Default,,0,0,0,,{\fs10\an9\i1}♪ 舞会进入高潮  便能体会得到 ♪\N♪ You'll feel it when the dance gets hot ♪
+Dialogue: 0,0:44:28.00,0:44:29.17,Default,,0,0,0,,那是我叔叔\N{\rE}That's my uncle.
+Dialogue: 0,0:44:31.80,0:44:33.38,Default,,0,0,0,,开玩笑而已  那才是我叔叔\N{\rE}Just kidding. That's my uncle.
+Dialogue: 0,0:44:36.76,0:44:37.63,Default,,0,0,0,,-那位幽默的仁兄？\N{\rE}Funny one, huh?
+Dialogue: 0,0:44:37.80,0:44:39.39,Default,,0,0,0,,-对  我以前也理解不了他\N{\rE}Yeah. I mean, I didn't get the dude.
+Dialogue: 0,0:44:41.55,0:44:43.14,Default,,0,0,0,,但不知为何  随着年岁增长\N{\rE}I don't know. But now that I'm older,
+Dialogue: 0,0:44:43.31,0:44:45.10,Default,,0,0,0,,我想我现在更欣赏他了\N{\rE}I think I'm startin' to appreciate him more.
+Dialogue: 0,0:44:46.23,0:44:47.56,Default,,0,0,0,,他当年可是个强悍的家伙\N{\rE}I mean, he was a tough bastard.
+Dialogue: 0,0:44:48.44,0:44:49.44,Default,,0,0,0,,知道吗？-\N{\rE}You know?
+Dialogue: 0,0:44:50.06,0:44:51.69,Default,,0,0,0,,要做到他所做的事  必须得强悍\N{\rE}He had to be to do what he did.
+Dialogue: 0,0:44:52.65,0:44:54.23,Default,,0,0,0,,在60年代的南方\N{\rE}Build this place...
+Dialogue: 0,0:44:54.40,0:44:56.32,Default,,0,0,0,,经营起这样一家餐馆\N{\rE}in the '60s in the South?
+Dialogue: 0,0:44:58.74,0:45:00.12,Default,,0,0,0,,那家伙可是下了苦功夫的\N{\rE}That dude didn't fuck around.
+Dialogue: 0,0:45:03.16,0:45:04.54,Default,,0,0,0,,我不想辜负他的努力\N{\rE}I wanna be worthy of that.
+Dialogue: 0,0:45:12.54,0:45:14.71,Default,,0,0,0,,嘿  需要载你一程吗？\N{\rE}Hey, want a ride?
+Dialogue: 0,0:45:14.88,0:45:15.92,Default,,0,0,0,,不用了  劳拉  祝你晚安\N{\rE}No. You have a good night, Laura.
+Dialogue: 0,0:45:16.09,0:45:17.30,Default,,0,0,0,,我走路就好\N{\rE}- I'm gonna walk. - Okay.
+Dialogue: 0,0:45:51.58,0:45:52.63,Default,,0,0,0,,该死的  戴尔！\N{\rE}Damn it, Dell!
+Dialogue: 0,0:45:52.79,0:45:55.38,Default,,0,0,0,,-闭嘴  你给我闭嘴！  -我的卡车！\N{\rE}- Shut up. Just shut up! - My fucking truck!
+Dialogue: 0,0:45:55.55,0:45:57.21,Default,,0,0,0,,快  快从卡车上下来\N{\rE}Come on, get the fuck off this truck!
+Dialogue: 0,0:45:57.38,0:45:59.59,Default,,0,0,0,,真糟糕！我开不动这玩意  快跑！\N{\rE}It sucks! I can't drive this shit. Move!
+Dialogue: 0,0:46:00.26,0:46:01.63,Default,,0,0,0,,不！\N{\rE}No, no!
+Dialogue: 0,0:46:06.85,0:46:08.43,Default,,0,0,0,,我不在乎什么卡车  重要的是我们干掉他了\N{\rE}Forget about the truck. We got him!
+Dialogue: 0,0:46:16.69,0:46:18.19,Default,,0,0,0,,你就是个鸟人-\N{\rE}You're really an asshole.
+Dialogue: 0,0:46:18.82,0:46:20.49,Default,,0,0,0,,没有的事-\N{\rE}Yeah, I haven't heard that one before.
+Dialogue: 0,0:46:20.70,0:46:22.20,Default,,0,0,0,,离开这鬼地方吧-\N{\rE}Come on, let's get the fuck out of here.
+Dialogue: 0,0:46:34.08,0:46:36.13,Default,,0,0,0,,你可真让我头疼\N{\rE}You're a real pain in my ass.
+Dialogue: 0,0:46:36.29,0:46:37.30,Default,,0,0,0,,好吧\N{\rE}Okay.
+Dialogue: 0,0:46:42.05,0:46:44.22,Default,,0,0,0,,我原本还希望让今晚的事  看起来像一场意外\N{\rE}I was hoping tonight would look more like an accident.
+Dialogue: 0,0:46:45.01,0:46:47.64,Default,,0,0,0,,醉酒司机肇事  那样问题会少一些\N{\rE}Drunk driver. Less questions that way.
+Dialogue: 0,0:46:47.72,0:46:49.64,Default,,0,0,0,,但是…\N{\rE}But...
+Dialogue: 0,0:46:50.73,0:46:52.10,Default,,0,0,0,,我还是直接打死你算了\N{\rE}I'mma just shoot you.
+Dialogue: 0,0:46:52.27,0:46:53.69,Default,,0,0,0,,我能问你一个问题吗？\N{\rE}Can I ask you a question?
+Dialogue: 0,0:46:55.06,0:46:56.36,Default,,0,0,0,,为何如此兴师动众？\N{\rE}Why all the fuss?
+Dialogue: 0,0:46:58.36,0:46:59.98,Default,,0,0,0,,我只是个无名小卒罢了\N{\rE}I mean, I'm just some guy.
+Dialogue: 0,0:47:00.78,0:47:02.32,Default,,0,0,0,,才不是为了你  是那家路边餐馆！\N{\rE}Oh, hell, it ain't you. It's the Road House!
+Dialogue: 0,0:47:09.16,0:47:10.12,Default,,0,0,0,,放弃挣扎吧\N{\rE}Come on, man!
+Dialogue: 0,0:47:24.97,0:47:26.39,Default,,0,0,0,,该死的！\N{\rE}Fuck! Help.
+Dialogue: 0,0:47:27.22,0:47:28.97,Default,,0,0,0,,可恶！\N{\rE}Fuck!
+Dialogue: 0,0:47:32.56,0:47:33.77,Default,,0,0,0,,-你现在要杀了我吗？\N{\rE}So, you're gonna kill me now?
+Dialogue: 0,0:47:33.94,0:47:35.02,Default,,0,0,0,,-我为什么要杀你？\N{\rE}Why would I kill you?
+Dialogue: 0,0:47:38.69,0:47:41.78,Default,,0,0,0,,真是有够愚蠢的  我现在就上来…\N{\rE}Well, that was stupid. I'm just gonna go right back up.
+Dialogue: 0,0:47:43.90,0:47:44.90,Default,,0,0,0,,妈呀！\N{\rE}Oh, shit!
+Dialogue: 0,0:47:45.91,0:47:47.74,Default,,0,0,0,,-真见鬼！\N{\rE}Help me! Fuck!
+Dialogue: 0,0:47:47.91,0:47:48.83,Default,,0,0,0,,-抓紧\N{\rE}Hang on! Hang on.
+Dialogue: 0,0:47:48.99,0:47:52.54,Default,,0,0,0,,抓紧！我拉住你了  我拉住你了\N{\rE}Hang on, I got you! I got you. I got you!
+Dialogue: 0,0:47:52.70,0:47:54.62,Default,,0,0,0,,-去你的！  -抓紧\N{\rE}- Fuck you! - Hold on. Hold on.
+Dialogue: 0,0:48:02.80,0:48:04.59,Default,,0,0,0,,{\fs14\an8}门罗县警长
+Dialogue: 0,0:48:10.85,0:48:12.27,Default,,0,0,0,,他们找不到尸体的\N{\rE}Won't find the body.
+Dialogue: 0,0:48:12.97,0:48:14.48,Default,,0,0,0,,鳄鱼喜欢把食物藏起来\N{\rE}Crocs hide their food.
+Dialogue: 0,0:48:14.77,0:48:15.98,Default,,0,0,0,,我还真不知道\N{\rE}I didn't know that.
+Dialogue: 0,0:48:17.81,0:48:19.98,Default,,0,0,0,,所以我当初说了  也没人相信尚茜的事\N{\rE}That's why no one believed me about Shantsie.
+Dialogue: 0,0:48:23.53,0:48:24.53,Default,,0,0,0,,我的狗\N{\rE}My dog.
+Dialogue: 0,0:48:26.86,0:48:28.95,Default,,0,0,0,,也被那该死的鳄鱼吃了\N{\rE}Damn croc got him, too.
+Dialogue: 0,0:48:31.83,0:48:34.62,Default,,0,0,0,,话说那个混蛋为什么要找你麻烦？\N{\rE}Hey. What'd that asshole want with you anyways?
+Dialogue: 0,0:48:38.88,0:48:40.67,Default,,0,0,0,,想必是你妨碍到他做生意了\N{\rE}Must've got in the way of his business.
+Dialogue: 0,0:48:41.21,0:48:42.80,Default,,0,0,0,,是吗？什么生意？\N{\rE}Oh, yeah? What's his business?
+Dialogue: 0,0:48:44.71,0:48:45.88,Default,,0,0,0,,我也不知道\N{\rE}Hell, I don't know.
+Dialogue: 0,0:48:47.01,0:48:48.22,Default,,0,0,0,,估计是毒品\N{\rE}Drugs, probably.
+Dialogue: 0,0:48:50.01,0:48:51.97,Default,,0,0,0,,这里到处都是那玩意\N{\rE}I mean, that's all we got around here.
+Dialogue: 0,0:48:53.14,0:48:54.93,Default,,0,0,0,,不然怎么会得名“毒岛”呢？\N{\rE}Why do you think they call it the Keys?
+Dialogue: 0,0:48:57.56,0:48:59.69,Default,,0,0,0,,船会把货物  送到路边餐馆背后  然后…\N{\rE}Deliveries by boat to the back of the Road House. And...
+Dialogue: 0,0:48:59.85,0:49:03.02,Default,,0,0,0,,-不  这是…  -可以放大一点吗？\N{\rE}- No, it's... You're... No. - Can you... zoom?
+Dialogue: 0,0:49:03.69,0:49:04.57,Default,,0,0,0,,不…\N{\rE}No, you...
+Dialogue: 0,0:49:04.73,0:49:06.53,Default,,0,0,0,,-我不知道怎么操作  -你想放大吗？\N{\rE}- I don't know how these things work. - No. You wanna zoom in?
+Dialogue: 0,0:49:06.69,0:49:09.36,Default,,0,0,0,,好了  放大了\N{\rE}Okay, there. Zoomed.
+Dialogue: 0,0:49:09.53,0:49:10.82,Default,,0,0,0,,不过这里才是玻璃岛\N{\rE}But Glass Key's here.
+Dialogue: 0,0:49:10.99,0:49:12.37,Default,,0,0,0,,好的  等一下\N{\rE}Okay, just wait.
+Dialogue: 0,0:49:12.53,0:49:15.41,Default,,0,0,0,,这里是路边餐馆后面的露台  对吧？\N{\rE}That's... Right there is the back deck, right? Of the Road House?
+Dialogue: 0,0:49:16.29,0:49:18.37,Default,,0,0,0,,所以如果我想走水路运送货物…\N{\rE}So, if you wanted to get deliveries by boat...
+Dialogue: 0,0:49:18.54,0:49:19.92,Default,,0,0,0,,那你就倒霉了\N{\rE}Then you'd be plumb out of luck.
+Dialogue: 0,0:49:20.08,0:49:21.04,Default,,0,0,0,,为什么？\N{\rE}Why?
+Dialogue: 0,0:49:21.21,0:49:22.59,Default,,0,0,0,,因为礁石\N{\rE}Because of the reefs.
+Dialogue: 0,0:49:22.75,0:49:25.42,Default,,0,0,0,,路边餐馆这片水域的水深不够\N{\rE}You see, this area by the Road House, it's just not deep enough.
+Dialogue: 0,0:49:25.59,0:49:26.80,Default,,0,0,0,,船驶进去就会搁浅\N{\rE}Boats would run aground.
+Dialogue: 0,0:49:28.38,0:49:30.72,Default,,0,0,0,,也就是说餐馆无法接收水运货物\N{\rE}All right. So, you can't get deliveries and...
+Dialogue: 0,0:49:30.89,0:49:34.10,Default,,0,0,0,,而且还靠近高速公路  毫无私密性可言\N{\rE}it's close to the highway, so there's no privacy.
+Dialogue: 0,0:49:36.52,0:49:40.52,Default,,0,0,0,,这听起来越来越像西部悬疑片\N{\rE}This is kind of sounding more like a mystery-western...
+Dialogue: 0,0:49:40.73,0:49:43.48,Default,,0,0,0,,而不是典型的西部枪战片了\N{\rE}instead of a straight-up shooting-western. Know what I mean?
+Dialogue: 0,0:49:43.61,0:49:45.23,Default,,0,0,0,,对  确实如此\N{\rE}Yeah, it kinda is.
+Dialogue: 0,0:49:58.00,0:49:58.83,Default,,0,0,0,,嘿！\N{\rE}Hey!
+Dialogue: 0,0:49:59.54,0:50:00.75,Default,,0,0,0,,那家书店挺不错的吧？\N{\rE}Is that a good bookstore?
+Dialogue: 0,0:50:01.58,0:50:02.42,Default,,0,0,0,,挺不错的  我喜欢\N{\rE}Yeah, I like it.
+Dialogue: 0,0:50:02.58,0:50:05.50,Default,,0,0,0,,看起来你和那女孩  在里面相处得挺愉快的\N{\rE}Yeah. Sure looked like you and that girl were having a grand time in there.
+Dialogue: 0,0:50:06.67,0:50:07.59,Default,,0,0,0,,嘿\N{\rE}Hey.
+Dialogue: 0,0:50:07.76,0:50:08.59,Default,,0,0,0,,嘿！\N{\rE}Hey!
+Dialogue: 0,0:50:10.72,0:50:13.01,Default,,0,0,0,,上车吧  老板有话跟你说\N{\rE}Get in the car. Boss wants to have a word with you.
+Dialogue: 0,0:50:15.18,0:50:16.18,Default,,0,0,0,,-你老板是谁？\N{\rE}Who's your boss?
+Dialogue: 0,0:50:16.35,0:50:17.47,Default,,0,0,0,,-布兰特\N{\rE}Brandt.
+Dialogue: 0,0:50:18.35,0:50:19.31,Default,,0,0,0,,布兰特？\N{\rE}Brandt?
+Dialogue: 0,0:50:19.48,0:50:20.52,Default,,0,0,0,,对  本布兰特\N{\rE}Yeah, Ben Brandt.
+Dialogue: 0,0:50:20.69,0:50:22.98,Default,,0,0,0,,他正等着  你到底上不上车？\N{\rE}And he's waiting. So, you're gonna get in the car or not?
+Dialogue: 0,0:50:25.40,0:50:27.82,Default,,0,0,0,,-恕不奉陪  -站住  你给我站住！\N{\rE}- I don't think so. - Hey, stop. Stop!
+Dialogue: 0,0:50:27.98,0:50:29.90,Default,,0,0,0,,你应该看到我有枪了吧？\N{\rE}You did see that I have a fucking gun, right?
+Dialogue: 0,0:50:30.07,0:50:33.36,Default,,0,0,0,,当然看到了  你都特意露给我看了\N{\rE}Yeah. You made a pretty big point of showin' it to me.
+Dialogue: 0,0:50:33.53,0:50:35.49,Default,,0,0,0,,行吧  那就上车吧\N{\rE}Okay, so get in the fucking car!
+Dialogue: 0,0:50:37.58,0:50:39.54,Default,,0,0,0,,你还不明白这是怎么回事  对吧？\N{\rE}You don't understand how this works, do you?
+Dialogue: 0,0:50:39.70,0:50:41.12,Default,,0,0,0,,我明白\N{\rE}Yeah, I do.
+Dialogue: 0,0:50:41.29,0:50:43.00,Default,,0,0,0,,但你把枪塞在腰带里\N{\rE}But you have a gun, tucked in your waistband.
+Dialogue: 0,0:50:43.17,0:50:44.96,Default,,0,0,0,,真的没什么威慑力\N{\rE}So, it's really not that intimidating, is it?
+Dialogue: 0,0:50:45.13,0:50:46.29,Default,,0,0,0,,你在胡说什么？\N{\rE}What the fuck are you talkin' about?
+Dialogue: 0,0:50:46.46,0:50:48.17,Default,,0,0,0,,我只要掰断你的食指和中指\N{\rE}I mean, all I have to do is break your index and your middle finger
+Dialogue: 0,0:50:48.34,0:50:50.01,Default,,0,0,0,,你便无法握住那把枪\N{\rE}and you wouldn't be able to hold that gun.
+Dialogue: 0,0:50:50.42,0:50:52.97,Default,,0,0,0,,准确来说是无法开枪\N{\rE}Technically, you'd be able to hold it but you wouldn't be able to fire it.
+Dialogue: 0,0:50:53.13,0:50:54.93,Default,,0,0,0,,所以这并不是什么重大威胁\N{\rE}So it's really not that big of a threat, is it?
+Dialogue: 0,0:50:55.09,0:50:56.10,Default,,0,0,0,,不跟你啰嗦了\N{\rE}Fuck this.
+Dialogue: 0,0:50:59.06,0:51:00.56,Default,,0,0,0,,王八蛋！\N{\rE}Motherfucker!
+Dialogue: 0,0:51:00.73,0:51:01.73,Default,,0,0,0,,去你的！\N{\rE}Fuck you!
+Dialogue: 0,0:51:01.89,0:51:03.81,Default,,0,0,0,,你个混蛋  王八蛋！\N{\rE}You cocksucker, motherfucker!
+Dialogue: 0,0:51:03.98,0:51:05.65,Default,,0,0,0,,你弄断了我的手指！\N{\rE}You broke my fucking finger!
+Dialogue: 0,0:51:09.15,0:51:10.82,Default,,0,0,0,,现在懂我的意思了吧？这可痛了\N{\rE}You see what I mean? It's really painful.
+Dialogue: 0,0:51:11.44,0:51:13.53,Default,,0,0,0,,你应该不是钢琴家之类的吧？\N{\rE}You're not like a piano player or anything, are you?
+Dialogue: 0,0:51:13.70,0:51:14.70,Default,,0,0,0,,-去你的\N{\rE}Fuck you.
+Dialogue: 0,0:51:14.86,0:51:16.53,Default,,0,0,0,,-你不会也带了枪吧？\N{\rE}You don't have a gun, too, do you?
+Dialogue: 0,0:51:17.58,0:51:18.99,Default,,0,0,0,,我的枪好像落在车里了\N{\rE}I think I left it in the car.
+Dialogue: 0,0:51:19.16,0:51:20.75,Default,,0,0,0,,告诉你们老板  如果他想找我谈话\N{\rE}Tell your boss, if he wants to talk to me,
+Dialogue: 0,0:51:20.91,0:51:23.00,Default,,0,0,0,,我就在路边餐馆工作  每晚都在那里\N{\rE}I work at the Road House, and I'm there every night.
+Dialogue: 0,0:51:23.16,0:51:24.00,Default,,0,0,0,,-该死的！  -好的\N{\rE}- Damn it! - Okay.
+Dialogue: 0,0:51:24.17,0:51:26.96,Default,,0,0,0,,对了  你的朋友需要立刻就医\N{\rE}And your friend is gonna need a doctor now.
+Dialogue: 0,0:51:27.13,0:51:30.84,Default,,0,0,0,,不过好消息是  25分钟车程外就有一家医院\N{\rE}But the good news is, there is a hospital. It's only 25 minutes away.
+Dialogue: 0,0:51:37.93,0:51:39.26,Default,,0,0,0,,-嗨  伙计们  -嘿  弗兰基\N{\rE}- Hi, guys. - Hey, Frankie.
+Dialogue: 0,0:51:43.73,0:51:45.90,Default,,0,0,0,,天啊  你吓死我了\N{\rE}Holy shit. You scared the shit out of me.
+Dialogue: 0,0:51:46.06,0:51:47.69,Default,,0,0,0,,我正有此意\N{\rE}That was kind of my intention.
+Dialogue: 0,0:51:49.32,0:51:50.48,Default,,0,0,0,,我听说戴尔的事了\N{\rE}I heard about Dell.
+Dialogue: 0,0:51:51.69,0:51:52.53,Default,,0,0,0,,你没事吧？\N{\rE}Are you okay?
+Dialogue: 0,0:51:53.40,0:51:56.20,Default,,0,0,0,,我没事\N{\rE}I... Yeah, I'm fine.
+Dialogue: 0,0:51:56.53,0:51:58.49,Default,,0,0,0,,听着  戴尔就是个人渣\N{\rE}Listen, Dell was a piece of shit.
+Dialogue: 0,0:51:58.87,0:52:01.74,Default,,0,0,0,,好吗？他和他那群狐朋狗友  恐吓了我们好几个月\N{\rE}Okay? He and his friends terrorized us for months.
+Dialogue: 0,0:52:02.70,0:52:04.12,Default,,0,0,0,,对于他的死  我知道我们不该幸灾乐祸\N{\rE}And I know we shouldn't be happy that he's dead
+Dialogue: 0,0:52:04.29,0:52:06.96,Default,,0,0,0,,而我却在暗自高兴  这非常不对\N{\rE}and the fact that I am happy is a huge problem.
+Dialogue: 0,0:52:07.12,0:52:08.67,Default,,0,0,0,,我得好好纠正这种心态\N{\rE}And it's something I'm gonna work on.
+Dialogue: 0,0:52:08.84,0:52:09.84,Default,,0,0,0,,但是…\N{\rE}But...
+Dialogue: 0,0:52:12.17,0:52:13.17,Default,,0,0,0,,要我怎么说呢\N{\rE}I don't know.
+Dialogue: 0,0:52:15.38,0:52:19.14,Default,,0,0,0,,我实在想不明白  他为何对路边餐馆如此执着\N{\rE}I just don't get why he was so focused on the Road House.
+Dialogue: 0,0:52:19.30,0:52:20.43,Default,,0,0,0,,此话怎讲？\N{\rE}What do you mean?
+Dialogue: 0,0:52:20.81,0:52:24.06,Default,,0,0,0,,你刚才也说了  他恐吓你们已有数月之久\N{\rE}I mean, you just said he terrorized this place for months.
+Dialogue: 0,0:52:28.10,0:52:29.65,Default,,0,0,0,,我也不知道\N{\rE}Shit, man. I don't know.
+Dialogue: 0,0:52:29.81,0:52:32.02,Default,,0,0,0,,这些家伙有的领地意识特别强\N{\rE}I mean, some of these guys, they get real territorial.
+Dialogue: 0,0:52:32.19,0:52:33.99,Default,,0,0,0,,天知道这些混蛋的动机是什么\N{\rE}Who knows why these assholes do what they do?
+Dialogue: 0,0:52:35.57,0:52:37.99,Default,,0,0,0,,但我是你的话  就不会想那么多\N{\rE}But if I were you, I wouldn't read too much into it.
+Dialogue: 0,0:52:38.74,0:52:40.66,Default,,0,0,0,,所以说  你认为问题不大？\N{\rE}So, you think it's nothing?
+Dialogue: 0,0:52:40.74,0:52:43.58,Default,,0,0,0,,这么说吧  我希望你没有因此而失眠\N{\rE}Put it this way. I hope you didn't lose any sleep over it.
+Dialogue: 0,0:52:46.66,0:52:47.79,Default,,0,0,0,,我确实失眠了\N{\rE}Well, I did.
+Dialogue: 0,0:52:47.87,0:52:49.17,Default,,0,0,0,,一点点\N{\rE}Uh, a little.
+Dialogue: 0,0:53:03.72,0:53:04.81,Default,,0,0,0,,你的手指怎么了？\N{\rE}What happened to your fingers?
+Dialogue: 0,0:53:05.22,0:53:06.89,Default,,0,0,0,,被那个保镖掰断了\N{\rE}He broke them. The bouncer.
+Dialogue: 0,0:53:07.06,0:53:08.14,Default,,0,0,0,,他掰断了你的手指？\N{\rE}He broke your fingers?
+Dialogue: 0,0:53:08.31,0:53:09.73,Default,,0,0,0,,对  他还抢走了我的枪\N{\rE}Yeah, when he took my gun.
+Dialogue: 0,0:53:10.56,0:53:12.11,Default,,0,0,0,,好吧\N{\rE}Okay.
+Dialogue: 0,0:53:12.19,0:53:13.94,Default,,0,0,0,,你可真行\N{\rE}That's great. Great work.
+Dialogue: 0,0:53:14.32,0:53:16.86,Default,,0,0,0,,至少你没有葬身鳄鱼之口\N{\rE}At least you didn't get eaten by a crocodile.
+Dialogue: 0,0:53:18.74,0:53:20.03,Default,,0,0,0,,你觉得这很有趣吗？\N{\rE}You find that funny?
+Dialogue: 0,0:53:20.20,0:53:22.16,Default,,0,0,0,,你觉得这很好笑吗？我可笑不出来\N{\rE}You find this fucking amusing? I'm not amused.
+Dialogue: 0,0:53:22.33,0:53:24.08,Default,,0,0,0,,放下那玩意  很贵的\N{\rE}Put that fucking down! It's expensive.
+Dialogue: 0,0:53:26.75,0:53:29.33,Default,,0,0,0,,这个该死的保镖\N{\rE}This fuckin' bouncer...
+Dialogue: 0,0:53:29.50,0:53:31.79,Default,,0,0,0,,正在妨碍我实现我的梦想\N{\rE}is standing in the way of my fuckin' dreams.
+Dialogue: 0,0:53:31.96,0:53:33.67,Default,,0,0,0,,我都快被他气死了\N{\rE}He's fucking killin' me.
+Dialogue: 0,0:53:33.84,0:53:35.13,Default,,0,0,0,,我努力构建的一切\N{\rE}And you're here laughing
+Dialogue: 0,0:53:35.21,0:53:37.63,Default,,0,0,0,,正付诸东流  你却在那哈哈大笑\N{\rE}as everything I've been trying to build is going down the drain.
+Dialogue: 0,0:53:41.89,0:53:42.85,Default,,0,0,0,,{\fs14\an8}爸爸
+Dialogue: 0,0:53:44.56,0:53:47.52,Default,,0,0,0,,您好  这是一通预付电话…\N{\rE}Hello. This is a prepaid call from...
+Dialogue: 0,0:53:47.68,0:53:49.73,Default,,0,0,0,,回复“是”吧  白痴\N{\rE}Say yes, shithead.
+Dialogue: 0,0:53:49.89,0:53:52.69,Default,,0,0,0,,呼叫方为…佛罗里达惩教所的囚犯\N{\rE}An inmate at Florida Correctional Institution.
+Dialogue: 0,0:53:52.86,0:53:55.02,Default,,0,0,0,,本次通话将被录音和监控\N{\rE}This call is subject to recording and monitoring.
+Dialogue: 0,0:53:55.11,0:53:57.65,Default,,0,0,0,,若接受收费  请回复“是”\N{\rE}To accept charges, say yes.
+Dialogue: 0,0:54:09.87,0:54:11.00,Default,,0,0,0,,把我的手机捞上来\N{\rE}Go get my phone.
+Dialogue: 0,0:54:24.05,0:54:27.56,Default,,0,0,0,,再见！吾爱-\N{\rE}- My love! - Goodbye!
+Dialogue: 0,0:54:43.20,0:54:45.45,Default,,0,0,0,,您好  这是一通预付电话  呼叫方为…\N{\rE}Hello. This is a prepaid call from
+Dialogue: 0,0:54:45.53,0:54:47.03,Default,,0,0,0,,-佛罗里达惩教所…\N{\rE}an inmate at Florida Correctional...
+Dialogue: 0,0:54:47.12,0:54:49.04,Default,,0,0,0,,-是  诺克斯  我是杰拉尔德布兰特\N{\rE}- Yes. {\i1}Knox? It's Gerald Brandt.
+Dialogue: 0,0:54:49.62,0:54:50.62,Default,,0,0,0,,你在哪里？\N{\rE}Where are you?
+Dialogue: 0,0:54:50.79,0:54:52.67,Default,,0,0,0,,我在挑衣服\N{\rE}Clothes shopping.
+Dialogue: 0,0:54:52.75,0:54:54.67,Default,,0,0,0,,你问这个干吗？\N{\rE}What the fuck do you care?
+Dialogue: 0,0:54:54.75,0:54:57.96,Default,,0,0,0,,我在佛罗里达遇到了一个大麻烦\N{\rE}I got a serious fucking problem in Florida.
+Dialogue: 0,0:54:58.46,0:54:59.46,Default,,0,0,0,,等一下\N{\rE}Hang on.
+Dialogue: 0,0:55:14.65,0:55:17.02,Default,,0,0,0,,诺克斯！喂！-\N{\rE}Knox! Hello? Knox!
+Dialogue: 0,0:55:17.15,0:55:18.48,Default,,0,0,0,,说吧  找我有什么事？\N{\rE}- So, what do you need? {\i1}Knox...
+Dialogue: 0,0:55:18.57,0:55:20.44,Default,,0,0,0,,-我那儿子成事不足  败事有余  -好的\N{\rE}- my idiot son is fucking things up. - Yes?
+Dialogue: 0,0:55:20.61,0:55:21.69,Default,,0,0,0,,-我需要你的帮忙  -好的\N{\rE}- Yeah. {\i1}I need your help.
+Dialogue: 0,0:55:21.86,0:55:22.99,Default,,0,0,0,,我马上出发\N{\rE}I'll leave right away.
+Dialogue: 0,0:55:29.87,0:55:31.04,Default,,0,0,0,,嘿\N{\rE}Ahoy.
+Dialogue: 0,0:55:31.20,0:55:32.29,Default,,0,0,0,,好漂亮的船\N{\rE}Nice boat.
+Dialogue: 0,0:55:33.54,0:55:34.75,Default,,0,0,0,,我前男友的\N{\rE}Ex-boyfriend's.
+Dialogue: 0,0:55:35.88,0:55:38.04,Default,,0,0,0,,但我知道他的备用钥匙藏在哪儿\N{\rE}But I know where he hides the spare key.
+Dialogue: 0,0:55:39.46,0:55:41.92,Default,,0,0,0,,开玩笑而已  这是他借我用的\N{\rE}I'm kidding. He lets me use it.
+Dialogue: 0,0:55:42.09,0:55:43.51,Default,,0,0,0,,他是一名警察\N{\rE}He's a cop.
+Dialogue: 0,0:55:43.67,0:55:44.84,Default,,0,0,0,,敢跟我来吗？\N{\rE}Feeling brave?
+Dialogue: 0,0:56:00.11,0:56:01.23,Default,,0,0,0,,我们这是去哪儿？\N{\rE}Where are we going?
+Dialogue: 0,0:56:14.91,0:56:15.96,Default,,0,0,0,,到了\N{\rE}We're here.
+Dialogue: 0,0:56:21.63,0:56:23.67,Default,,0,0,0,,在海中央？\N{\rE}In the middle of the ocean?
+Dialogue: 0,0:56:26.30,0:56:27.64,Default,,0,0,0,,你若需要…\N{\rE}Uh, you need any, uh...
+Dialogue: 0,0:56:31.89,0:56:32.89,Default,,0,0,0,,来吧\N{\rE}Come on.
+Dialogue: 0,0:56:34.43,0:56:35.52,Default,,0,0,0,,等一下…\N{\rE}Wait, why are...
+Dialogue: 0,0:56:37.39,0:56:38.60,Default,,0,0,0,,来吧  拿上冷藏箱\N{\rE}Come on, grab the cooler.
+Dialogue: 0,0:56:42.32,0:56:43.32,Default,,0,0,0,,好吧\N{\rE}All right.
+Dialogue: 0,0:56:48.91,0:56:50.91,Default,,0,0,0,,他们找不到那家伙的尸体的\N{\rE}They're not gonna find that guy's body.
+Dialogue: 0,0:56:51.08,0:56:52.28,Default,,0,0,0,,鳄鱼喜欢把食物藏起来\N{\rE}Crocs hide their food.
+Dialogue: 0,0:56:54.12,0:56:56.75,Default,,0,0,0,,这里的幼儿园都在教这个吗？\N{\rE}Do they teach that in kindergarten around here?
+Dialogue: 0,0:56:57.41,0:56:58.50,Default,,0,0,0,,确实\N{\rE}They do.
+Dialogue: 0,0:57:09.64,0:57:11.05,Default,,0,0,0,,所以我之前才警告你\N{\rE}This is why I warned you.
+Dialogue: 0,0:57:11.60,0:57:13.64,Default,,0,0,0,,显然你踩到某人的尾巴了\N{\rE}You obviously stepped on someone's toes.
+Dialogue: 0,0:57:14.64,0:57:16.56,Default,,0,0,0,,一个叫布兰特的人\N{\rE}Some guy named Brandt.
+Dialogue: 0,0:57:19.15,0:57:20.31,Default,,0,0,0,,谁告诉你的？\N{\rE}Who told you that?
+Dialogue: 0,0:57:22.77,0:57:23.77,Default,,0,0,0,,为何这么问？\N{\rE}Why?
+Dialogue: 0,0:57:24.86,0:57:25.69,Default,,0,0,0,,你认识他？\N{\rE}Do you know him?
+Dialogue: 0,0:57:26.86,0:57:29.28,Default,,0,0,0,,他家是佛罗里达州的老牌家族之一\N{\rE}He comes from one of those old Florida families.
+Dialogue: 0,0:57:29.45,0:57:31.03,Default,,0,0,0,,大半个玻璃岛都是他们建造的\N{\rE}They built most of Glass Key.
+Dialogue: 0,0:57:35.41,0:57:37.37,Default,,0,0,0,,话说  你是哪里人？\N{\rE}So, where are you from?
+Dialogue: 0,0:57:41.33,0:57:42.75,Default,,0,0,0,,我？\N{\rE}Me?
+Dialogue: 0,0:57:46.21,0:57:47.21,Default,,0,0,0,,蒙大拿州\N{\rE}Montana.
+Dialogue: 0,0:57:51.01,0:57:52.26,Default,,0,0,0,,蒙大拿州哪里？\N{\rE}Where in Montana?
+Dialogue: 0,0:57:54.10,0:57:55.18,Default,,0,0,0,,米苏拉市\N{\rE}Missoula.
+Dialogue: 0,0:57:59.94,0:58:00.77,Default,,0,0,0,,-那是个好地方吗？\N{\rE}Is it a nice place?
+Dialogue: 0,0:58:00.94,0:58:02.48,Default,,0,0,0,,-我想我们也许该回去了\N{\rE}Look, I think maybe we should head back.
+Dialogue: 0,0:58:03.86,0:58:04.69,Default,,0,0,0,,我们才刚到\N{\rE}We just got here.
+Dialogue: 0,0:58:05.48,0:58:06.57,Default,,0,0,0,,回去吧\N{\rE}Let's head back.
+Dialogue: 0,0:58:07.44,0:58:09.70,Default,,0,0,0,,我只是问了一些简单的问题\N{\rE}I was just asking simple questions.
+Dialogue: 0,0:58:10.78,0:58:14.28,Default,,0,0,0,,我之前没考虑清楚  没有意识到这是约会\N{\rE}I just didn't think this through. I didn't realize this was a date.
+Dialogue: 0,0:58:14.45,0:58:16.04,Default,,0,0,0,,你这人怎么回事？\N{\rE}What's wrong with you?
+Dialogue: 0,0:58:20.83,0:58:23.04,Default,,0,0,0,,你是…你是一个好人\N{\rE}You're a nice person.
+Dialogue: 0,0:58:25.13,0:58:26.50,Default,,0,0,0,,你不会想认识我的\N{\rE}You don't wanna know me.
+Dialogue: 0,0:58:30.80,0:58:32.47,Default,,0,0,0,,我想做什么  不用你来告诉我\N{\rE}Don't tell me what I want.
+Dialogue: 0,0:58:38.93,0:58:41.02,Default,,0,0,0,,你以为我们这里没有互联网吗？\N{\rE}You think we don't have the Internet out here?
+Dialogue: 0,0:58:42.10,0:58:43.27,Default,,0,0,0,,我知道发生了什么\N{\rE}I know what happened.
+Dialogue: 0,0:58:46.82,0:58:48.78,Default,,0,0,0,,而你也知道这是约会\N{\rE}And you know this is a date.
+Dialogue: 0,0:59:35.11,0:59:37.99,Default,,0,0,0,,哪个王八蛋的摩托车  竟敢拦本大爷的路？\N{\rE}Who put those fuckin' bikes in me way?
+Dialogue: 0,0:59:38.16,0:59:39.37,Default,,0,0,0,,你又是哪来的王八蛋？\N{\rE}Who the fuck are you?
+Dialogue: 0,0:59:44.37,0:59:45.54,Default,,0,0,0,,感谢上帝\N{\rE}Thank you, God.
+Dialogue: 0,0:59:47.63,0:59:49.00,Default,,0,0,0,,三明治\N{\rE}Sandwiches.
+Dialogue: 0,0:59:49.17,0:59:50.42,Default,,0,0,0,,我都快饿死了\N{\rE}I'm fucking famished.
+Dialogue: 0,0:59:51.30,0:59:52.97,Default,,0,0,0,,天啊  他把所有摩托车都撞倒了\N{\rE}Jesus. He knocked all the fuckin' bikes over.
+Dialogue: 0,0:59:54.30,0:59:56.76,Default,,0,0,0,,你惹上大麻烦了  兔崽子\N{\rE}Now you got a big-ass problem, bucko.
+Dialogue: 0,0:59:56.93,0:59:57.85,Default,,0,0,0,,可不是吗\N{\rE}No shit.
+Dialogue: 0,0:59:58.26,0:59:59.47,Default,,0,0,0,,首先\N{\rE}First off...
+Dialogue: 0,0:59:59.64,1:00:01.31,Default,,0,0,0,,三个三明治还远远不够  我需要更多食物\N{\rE}I'm gonna need more than three sandwiches.
+Dialogue: 0,1:00:01.39,1:00:02.64,Default,,0,0,0,,我话还没说完呢\N{\rE}I wasn't done talkin'.
+Dialogue: 0,1:00:02.73,1:00:05.10,Default,,0,0,0,,事实上  你这么想就错了  小子\N{\rE}Actually, that's where you're wrong, lad.
+Dialogue: 0,1:00:05.85,1:00:08.36,Default,,0,0,0,,开什么国际玩笑\N{\rE}You gotta be fucking kidding me.
+Dialogue: 0,1:00:08.44,1:00:09.44,Default,,0,0,0,,靠边停下\N{\rE}Pull up.
+Dialogue: 0,1:00:10.94,1:00:13.15,Default,,0,0,0,,你他妈的开什么玩笑？-\N{\rE}Are you fucking kidding me?
+Dialogue: 0,1:00:20.83,1:00:22.16,Default,,0,0,0,,你这是在干什么？\N{\rE}What the fuck are you doing?
+Dialogue: 0,1:00:22.33,1:00:24.29,Default,,0,0,0,,嘿  布兰特先生  我只是想搭个吊床\N{\rE}Hey, Mr. Brandt. Just putting up a hammock.
+Dialogue: 0,1:00:24.46,1:00:26.96,Default,,0,0,0,,这是我父亲的别墅  不是该死的民宿\N{\rE}It's my father's house. It's not a goddamn Airbnb.
+Dialogue: 0,1:00:27.12,1:00:28.42,Default,,0,0,0,,-可分明是您让我们尽情享受的\N{\rE}Right, but you told us to enjoy ourselves.
+Dialogue: 0,1:00:28.58,1:00:29.59,Default,,0,0,0,,-不  我没有  -您在船上说过的\N{\rE}- No, I didn't. - You did. On the boat.
+Dialogue: 0,1:00:29.75,1:00:31.71,Default,,0,0,0,,-就算我说了  也不是认真的\N{\rE}And if I fucking did, I didn't mean it.
+Dialogue: 0,1:00:31.88,1:00:33.13,Default,,0,0,0,,好吧\N{\rE}Okay.
+Dialogue: 0,1:00:33.30,1:00:34.67,Default,,0,0,0,,你那些白痴朋友去哪了？\N{\rE}Where are your idiot friends?
+Dialogue: 0,1:00:34.84,1:00:36.47,Default,,0,0,0,,他们去准备食物了\N{\rE}They went to make some food.
+Dialogue: 0,1:00:36.63,1:00:37.76,Default,,0,0,0,,以防您肚子饿\N{\rE}In case you're hungry.
+Dialogue: 0,1:00:38.30,1:00:40.26,Default,,0,0,0,,把这烂摊子收拾干净！  这些人又是谁？\N{\rE}Clean this shit up! Who are these people?
+Dialogue: 0,1:00:40.35,1:00:41.35,Default,,0,0,0,,滚出去！\N{\rE}Get out of here!
+Dialogue: 0,1:00:51.61,1:00:52.98,Default,,0,0,0,,不好意思  你是谁啊？\N{\rE}I'm sorry, who the fuck are you?
+Dialogue: 0,1:00:53.32,1:00:54.28,Default,,0,0,0,,嘿\N{\rE}Hey.
+Dialogue: 0,1:00:54.69,1:00:56.15,Default,,0,0,0,,我给你带来个口信\N{\rE}I got a message for you.
+Dialogue: 0,1:00:57.15,1:00:58.07,Default,,0,0,0,,是你父亲给你的\N{\rE}From your father.
+Dialogue: 0,1:00:58.24,1:01:00.53,Default,,0,0,0,,口信？我父亲？\N{\rE}A message? My father? And what...
+Dialogue: 0,1:01:00.70,1:01:02.16,Default,,0,0,0,,什么“口信”？\N{\rE}What is this "message"?
+Dialogue: 0,1:01:04.16,1:01:07.87,Default,,0,0,0,,你是本  对吧？杰瑞的儿子？\N{\rE}You're Ben, right? Jerry's son?
+Dialogue: 0,1:01:11.25,1:01:12.80,Default,,0,0,0,,这是我存放东西的地方\N{\rE}This is where I'll store my stuff.
+Dialogue: 0,1:01:13.59,1:01:16.09,Default,,0,0,0,,楼上那间主卧现在是我的了\N{\rE}And that master bedroom up there is mine.
+Dialogue: 0,1:01:17.42,1:01:18.88,Default,,0,0,0,,你在胡说什么？\N{\rE}What are you talking about?
+Dialogue: 0,1:01:21.05,1:01:22.72,Default,,0,0,0,,你谁啊？\N{\rE}Who are you?
+Dialogue: 0,1:01:23.64,1:01:26.18,Default,,0,0,0,,你老爸说你成事不足  败事有余\N{\rE}Your da says you've been fucking things up.
+Dialogue: 0,1:01:26.64,1:01:27.98,Default,,0,0,0,,让我来助你一臂之力\N{\rE}He asked me to lend a hand.
+Dialogue: 0,1:01:28.85,1:01:30.40,Default,,0,0,0,,我父亲怎么会知道？\N{\rE}How would my father know?
+Dialogue: 0,1:01:30.56,1:01:32.44,Default,,0,0,0,,他正在监狱的牢房里熬着呢\N{\rE}He's in a prison, rotting in a cell.
+Dialogue: 0,1:01:32.61,1:01:35.53,Default,,0,0,0,,别傻了  你父亲的眼线无处不在\N{\rE}Don't be silly. Your father has spies everywhere.
+Dialogue: 0,1:01:37.24,1:01:39.07,Default,,0,0,0,,那你可以回去告诉我父亲\N{\rE}Well, you can tell my father...
+Dialogue: 0,1:01:39.24,1:01:40.82,Default,,0,0,0,,我不需要你帮忙\N{\rE}I don't need your fuckin' help.
+Dialogue: 0,1:01:40.99,1:01:43.20,Default,,0,0,0,,一切都在我的掌控之中  并没有\N{\rE}- I have it all under control. - No, you don't.
+Dialogue: 0,1:01:43.37,1:01:45.16,Default,,0,0,0,,是真的  我已经派人\N{\rE}Yes, I have people out there right now...
+Dialogue: 0,1:01:45.33,1:01:47.16,Default,,0,0,0,,去处理最后一个问题\N{\rE}cleaning up this final issue, and that's all...
+Dialogue: 0,1:01:47.33,1:01:48.54,Default,,0,0,0,,-那样就可以…  -随你怎么说\N{\rE}Whatever you say.
+Dialogue: 0,1:01:49.79,1:01:51.67,Default,,0,0,0,,-那个混蛋保镖在哪儿？  -好吧\N{\rE}- So, where's this bouncer asshole? - Okay.
+Dialogue: 0,1:01:53.67,1:01:54.96,Default,,0,0,0,,能不能先等一下？\N{\rE}Can we just take a minute?
+Dialogue: 0,1:01:55.13,1:01:59.13,Default,,0,0,0,,你不能在光天化日之下  当众开枪毙了那个家伙\N{\rE}You can't go and shoot this guy in the middle of town fucking square.
+Dialogue: 0,1:01:59.30,1:02:00.72,Default,,0,0,0,,这点你应该明白吧？\N{\rE}You understand that, right?
+Dialogue: 0,1:02:00.88,1:02:03.64,Default,,0,0,0,,眼下的情况比较微妙\N{\rE}This is a delicate situation.
+Dialogue: 0,1:02:04.64,1:02:08.06,Default,,0,0,0,,如果我们…想要干掉那个家伙  我们就必须…\N{\rE}So, if we're gonna kill this guy...
+Dialogue: 0,1:02:08.23,1:02:11.69,Default,,0,0,0,,“如果”？他已经是个死人了\N{\rE}If? He's already dead.
+Dialogue: 0,1:02:11.77,1:02:14.98,Default,,0,0,0,,我诺克斯做事  从不失手\N{\rE}Once Knox is on the job, it's over, baby.
+Dialogue: 0,1:02:15.15,1:02:16.61,Default,,0,0,0,,只是何时动手的问题\N{\rE}It's just a matter of when.
+Dialogue: 0,1:02:16.78,1:02:18.78,Default,,0,0,0,,对  你说得没错  想必如此\N{\rE}Yeah, you're right. I'm sure.
+Dialogue: 0,1:02:18.94,1:02:21.32,Default,,0,0,0,,你想必神通广大  无所不能\N{\rE}I'm sure you're amazing. Amazing.
+Dialogue: 0,1:02:21.45,1:02:26.45,Default,,0,0,0,,我想再尝试一下简单的解决办法\N{\rE}Um, I'm gonna try to do this the easy way one more time.
+Dialogue: 0,1:02:26.62,1:02:28.33,Default,,0,0,0,,-没问题吧？  -你尽管去做\N{\rE}- Is that okay? Yeah. Thank you. - You do your thing. You do your thing.
+Dialogue: 0,1:02:28.50,1:02:30.50,Default,,0,0,0,,谢谢  在那之后  你就可以大干一场了  -真是好哥们\N{\rE}- After that, you can set it all on fire. - My man. My man.
+Dialogue: 0,1:02:30.66,1:02:32.21,Default,,0,0,0,,-好极了  -对  -上帝保佑\N{\rE}- Wonderful. Yeah. - God bless, God bless.
+Dialogue: 0,1:02:35.79,1:02:37.09,Default,,0,0,0,,这家伙是他妈谁…\N{\rE}Who the fuck is...
+Dialogue: 0,1:02:43.64,1:02:44.89,Default,,0,0,0,,我们回头见\N{\rE}I'll be seeing you soon.
+Dialogue: 0,1:02:46.22,1:02:47.93,Default,,0,0,0,,我知道你住哪里\N{\rE}I know where you live.
+Dialogue: 0,1:02:52.81,1:02:53.85,Default,,0,0,0,,道尔顿先生\N{\rE}Mr. Dalton.
+Dialogue: 0,1:02:56.27,1:02:57.11,Default,,0,0,0,,什么事？\N{\rE}Yeah?
+Dialogue: 0,1:02:57.27,1:02:59.03,Default,,0,0,0,,关于那晚的事  我们有几个问题想问你\N{\rE}We have a few questions about the other night.
+Dialogue: 0,1:03:01.03,1:03:02.28,Default,,0,0,0,,需要你跟我们走一趟\N{\rE}Need you to come with us.
+Dialogue: 0,1:03:06.16,1:03:08.91,Default,,0,0,0,,好的  有何不可？\N{\rE}Sure. Why not?
+Dialogue: 0,1:03:37.69,1:03:38.69,Default,,0,0,0,,就是他吗？\N{\rE}Is that him?
+Dialogue: 0,1:03:38.86,1:03:40.15,Default,,0,0,0,,埃尔伍德P道尔顿\N{\rE}Elwood P. Dalton.
+Dialogue: 0,1:03:53.58,1:03:55.29,Default,,0,0,0,,埃尔伍德？\N{\rE}Elwood?
+Dialogue: 0,1:03:57.33,1:03:59.38,Default,,0,0,0,,大多数人都叫我道尔顿  警官\N{\rE}Most people call me Dalton, sir.
+Dialogue: 0,1:04:00.50,1:04:02.76,Default,,0,0,0,,大多数人都叫我大鸡哥\N{\rE}Most people call me Big Dick.
+Dialogue: 0,1:04:06.51,1:04:07.80,Default,,0,0,0,,我不会那样叫你的\N{\rE}I'm not gonna do that.
+Dialogue: 0,1:04:09.97,1:04:14.31,Default,,0,0,0,,你的名字让我想起了约翰尼卡什的歌\N{\rE}Your name reminds me of that Johnny Cash song.
+Dialogue: 0,1:04:14.39,1:04:15.48,Default,,0,0,0,,是吗  哪一首？\N{\rE}Yeah? Which one?
+Dialogue: 0,1:04:15.81,1:04:17.06,Default,,0,0,0,,《名为苏的男孩》\N{\rE}"A Boy Named Sue."
+Dialogue: 0,1:04:17.69,1:04:19.57,Default,,0,0,0,,男孩的爸爸给他取了个女孩的名字\N{\rE}Dad gave his son a girl's name...
+Dialogue: 0,1:04:20.77,1:04:22.69,Default,,0,0,0,,希望他日后能成为一条硬汉\N{\rE}so he'd grow up tough.
+Dialogue: 0,1:04:22.86,1:04:24.24,Default,,0,0,0,,你是条硬汉吗  小子？\N{\rE}Are you tough, son?
+Dialogue: 0,1:04:27.45,1:04:29.74,Default,,0,0,0,,你的副手说你有些问题想问我\N{\rE}Your deputy says you had some questions for me.
+Dialogue: 0,1:04:30.83,1:04:32.12,Default,,0,0,0,,听好了  埃尔伍德\N{\rE}Listen up, Elwood...
+Dialogue: 0,1:04:33.16,1:04:35.37,Default,,0,0,0,,我是门罗县的警长\N{\rE}I'm the sheriff of all of Monroe County.
+Dialogue: 0,1:04:35.83,1:04:38.58,Default,,0,0,0,,但玻璃岛是个特别的地方  知道为什么吗？\N{\rE}But Glass Key is special. Do you know why?
+Dialogue: 0,1:04:40.84,1:04:42.13,Default,,0,0,0,,你把我问倒了  警官\N{\rE}I'm stumped, sir.
+Dialogue: 0,1:04:43.80,1:04:45.72,Default,,0,0,0,,我的孩子们是在这里长大的\N{\rE}My children were raised here.
+Dialogue: 0,1:04:45.88,1:04:50.01,Default,,0,0,0,,如今生活在这里的人  就像家人一样  明白我的意思吗？\N{\rE}All the people that live here now are like family, you understand?
+Dialogue: 0,1:04:51.14,1:04:52.81,Default,,0,0,0,,明白  意思是你热爱玻璃岛？\N{\rE}Yeah. So, you like Glass Key?
+Dialogue: 0,1:04:54.77,1:04:57.31,Default,,0,0,0,,我希望你离开这里  我的朋友\N{\rE}I'd like you to leave here, my friend.
+Dialogue: 0,1:04:58.56,1:05:00.44,Default,,0,0,0,,你不会想做我的朋友的\N{\rE}You don't want to be my friend.
+Dialogue: 0,1:05:02.77,1:05:04.61,Default,,0,0,0,,那样的话\N{\rE}Well, in that case...
+Dialogue: 0,1:05:04.78,1:05:06.40,Default,,0,0,0,,有几个办法可以解决这个问题\N{\rE}there are a few ways this can go.
+Dialogue: 0,1:05:06.57,1:05:07.82,Default,,0,0,0,,我可以逮捕你\N{\rE}I can arrest you.
+Dialogue: 0,1:05:08.70,1:05:10.12,Default,,0,0,0,,理由是什么？\N{\rE}For what?
+Dialogue: 0,1:05:10.28,1:05:14.79,Default,,0,0,0,,那不重要  我们会说案卷弄丢了  然后在某一天突然又找到了\N{\rE}Doesn't matter. We'll lose the paperwork. We'll find you someday.
+Dialogue: 0,1:05:14.95,1:05:18.25,Default,,0,0,0,,而找到的那天  很可能就是  你被刺死在监狱院子里的日子\N{\rE}Likely, the very same day you get shanked in the yard.
+Dialogue: 0,1:05:19.79,1:05:22.00,Default,,0,0,0,,那样的话讽刺感十足\N{\rE}That way, it will be ironic.
+Dialogue: 0,1:05:22.17,1:05:23.71,Default,,0,0,0,,会是写歌的好材料\N{\rE}It will make a good song.
+Dialogue: 0,1:05:24.13,1:05:26.47,Default,,0,0,0,,如果是一首朗朗上口的歌\N{\rE}Elwood doesn't really rhyme with much, but...
+Dialogue: 0,1:05:26.63,1:05:28.26,Default,,0,0,0,,“埃尔伍德”恐怕不太好押韵\N{\rE}I mean, if it's a catchy tune.
+Dialogue: 0,1:05:33.97,1:05:35.35,Default,,0,0,0,,把他从车上弄下去！\N{\rE}Get him out of the car!
+Dialogue: 0,1:05:39.35,1:05:40.81,Default,,0,0,0,,给我下车！\N{\rE}Get out of the fucking car!
+Dialogue: 0,1:05:40.90,1:05:42.86,Default,,0,0,0,,-好的  没问题  -下来！\N{\rE}- All right. All right. All right. - Get out!
+Dialogue: 0,1:05:59.67,1:06:00.79,Default,,0,0,0,,你想死吗  小子？\N{\rE}You have a death wish, son?
+Dialogue: 0,1:06:12.22,1:06:13.89,Default,,0,0,0,,你这是在干什么？\N{\rE}What the fuck do you think you're doing?
+Dialogue: 0,1:06:19.81,1:06:21.14,Default,,0,0,0,,来吧  道尔顿\N{\rE}Come on, Dalton.
+Dialogue: 0,1:06:24.36,1:06:26.15,Default,,0,0,0,,他是我的父亲\N{\rE}He's my father.
+Dialogue: 0,1:06:26.90,1:06:29.53,Default,,0,0,0,,我母亲去世后  我就离开了群岛\N{\rE}My mom died and I moved away from the Keys...
+Dialogue: 0,1:06:29.70,1:06:32.07,Default,,0,0,0,,改名换姓  换成了她的娘家姓\N{\rE}changed my name, took her maiden name.
+Dialogue: 0,1:06:33.49,1:06:35.28,Default,,0,0,0,,真不知道我为什么要回来\N{\rE}I don't know why I ever came back.
+Dialogue: 0,1:06:35.95,1:06:37.91,Default,,0,0,0,,你之前提到的那个人  本布兰特\N{\rE}The man you talked about, Ben Brandt...
+Dialogue: 0,1:06:38.87,1:06:40.62,Default,,0,0,0,,他的父亲是杰拉尔德布兰特\N{\rE}His father is Gerald Brandt.
+Dialogue: 0,1:06:41.54,1:06:43.38,Default,,0,0,0,,我爸爸以前曾在他手下做事\N{\rE}My dad used to work for him.
+Dialogue: 0,1:06:45.21,1:06:47.67,Default,,0,0,0,,他在玻璃岛投入了大量的金钱\N{\rE}He put a lot of money into Glass Key.
+Dialogue: 0,1:06:47.84,1:06:50.59,Default,,0,0,0,,拥有一支包租船队  用于经营旅游业务\N{\rE}Owned a fleet of charter boats that ran tours.
+Dialogue: 0,1:06:54.18,1:06:55.26,Default,,0,0,0,,和毒品生意\N{\rE}And drugs.
+Dialogue: 0,1:06:57.93,1:06:59.10,Default,,0,0,0,,直到他离开\N{\rE}Until he was gone.
+Dialogue: 0,1:07:00.10,1:07:01.31,Default,,0,0,0,,他现在在监狱里\N{\rE}He's in prison now.
+Dialogue: 0,1:07:06.44,1:07:09.69,Default,,0,0,0,,我想我父亲现在改为  替他那混账儿子卖命了\N{\rE}And I guess, now my father works for his fucking son.
+Dialogue: 0,1:07:13.57,1:07:15.12,Default,,0,0,0,,你必须离开玻璃岛\N{\rE}You have to leave Glass Key.
+Dialogue: 0,1:07:20.95,1:07:22.50,Default,,0,0,0,,真是令人唏嘘\N{\rE}It's kinda sad, you know.
+Dialogue: 0,1:07:23.12,1:07:24.96,Default,,0,0,0,,想当年这里想必是个美丽的小镇\N{\rE}I bet this was a nice town once.
+Dialogue: 0,1:07:25.13,1:07:27.29,Default,,0,0,0,,美丽的小镇倒算不上\N{\rE}Nice towns are overrated.
+Dialogue: 0,1:07:27.46,1:07:30.17,Default,,0,0,0,,我们要在这里制造多大的破坏？\N{\rE}And how much damage are we supposed to do here?
+Dialogue: 0,1:07:31.05,1:07:33.18,Default,,0,0,0,,必须足够让他知道厉害\N{\rE}Enough to make sure he gets the message.
+Dialogue: 0,1:07:46.35,1:07:48.57,Default,,0,0,0,,查莉  从后门出去  快\N{\rE}Charlie, out the back. Quick!
+Dialogue: 0,1:07:52.53,1:07:53.78,Default,,0,0,0,,从后门出去！\N{\rE}Out the back!
+Dialogue: 0,1:08:08.17,1:08:11.09,Default,,0,0,0,,{\fs10\an9\i1}♪ 我要去市中心  找一家酒吧 ♪\N♪ I'm gonna go downtown Gonna find me a bar ♪
+Dialogue: 0,1:08:11.25,1:08:14.26,Default,,0,0,0,,{\fs10\an9\i1}♪ 一杯接一杯  直到天明 ♪\N♪ Drink and drink till the sun comes up tomorrow ♪
+Dialogue: 0,1:08:16.47,1:08:17.55,Default,,0,0,0,,{\fs10\an9\i1}♪ 哦  宝贝 ♪\N♪ Oh, baby ♪
+Dialogue: 0,1:08:19.14,1:08:22.27,Default,,0,0,0,,{\fs10\an9\i1}♪ 我要把钱花在自动点唱机上 ♪\N♪ I'm gonna spend my money On jukebox songs ♪
+Dialogue: 0,1:08:22.93,1:08:26.19,Default,,0,0,0,,{\fs10\an9\i1}♪ 今晚我要尽情起舞  宝贝 ♪\N♪ I'm gonna dance the night away, baby ♪
+Dialogue: 0,1:08:27.81,1:08:29.52,Default,,0,0,0,,{\fs10\an9\i1}♪ 宝贝 ♪\N♪ Baby ♪
+Dialogue: 0,1:08:31.02,1:08:33.86,Default,,0,0,0,,{\fs10\an9\i1}♪ 你直教我惊叹连连 ♪\N♪ You got me singin' whoo whoo whoo ♪
+Dialogue: 0,1:08:34.03,1:08:37.41,Default,,0,0,0,,{\fs10\an9\i1}♪ 我已不知该如何是好  宝贝 ♪\N♪ I don't know what I'm gonna do, baby ♪
+Dialogue: 0,1:08:38.78,1:08:39.78,Default,,0,0,0,,{\fs10\an9\i1}♪ 我的宝贝… ♪\N♪ My baby ♪
+Dialogue: 0,1:08:42.70,1:08:44.83,Default,,0,0,0,,-嘿  发生什么事了？  -嘿\N{\rE}- Hey, what's going on? - Hey.
+Dialogue: 0,1:08:45.00,1:08:46.21,Default,,0,0,0,,艾莉打了两通电话过来\N{\rE}Ellie called twice.
+Dialogue: 0,1:08:46.37,1:08:48.25,Default,,0,0,0,,让我看到你就给她发短信\N{\rE}Said I needed to text her if you showed up.
+Dialogue: 0,1:08:49.21,1:08:50.88,Default,,0,0,0,,你还迟到了\N{\rE}Also, you're late, which...
+Dialogue: 0,1:08:51.59,1:08:52.42,Default,,0,0,0,,这还是头一回\N{\rE}is a first.
+Dialogue: 0,1:08:52.59,1:08:53.80,Default,,0,0,0,,我和警长之间…\N{\rE}Had a little mix-up...
+Dialogue: 0,1:08:54.80,1:08:56.22,Default,,0,0,0,,发生了一点小误会\N{\rE}with the sheriff.
+Dialogue: 0,1:08:57.01,1:08:58.55,Default,,0,0,0,,误会？\N{\rE}A mix-up?
+Dialogue: 0,1:08:58.72,1:08:59.89,Default,,0,0,0,,什么误会？\N{\rE}What are we talkin' about?
+Dialogue: 0,1:09:00.05,1:09:00.89,Default,,0,0,0,,是啊  什么误会？\N{\rE}Yeah, what are we talking about?
+Dialogue: 0,1:09:01.05,1:09:03.93,Default,,0,0,0,,我很好奇你会跟她说什么\N{\rE}I'm curious, actually, to hear what you were gonna tell her.
+Dialogue: 0,1:09:04.64,1:09:05.93,Default,,0,0,0,,嘿  劳拉\N{\rE}Hey, Laura.
+Dialogue: 0,1:09:06.10,1:09:09.23,Default,,0,0,0,,能给我一杯纯伏特加吗？\N{\rE}Can I have a vodka neat, please?
+Dialogue: 0,1:09:09.40,1:09:10.40,Default,,0,0,0,,好的\N{\rE}Yeah.
+Dialogue: 0,1:09:14.28,1:09:15.94,Default,,0,0,0,,我叫本布兰特\N{\rE}I'm Ben Brandt.
+Dialogue: 0,1:09:19.70,1:09:21.41,Default,,0,0,0,,你\N{\rE}You...
+Dialogue: 0,1:09:21.58,1:09:23.62,Default,,0,0,0,,你想必就是道尔顿了\N{\rE}you must be Dalton.
+Dialogue: 0,1:09:27.62,1:09:30.08,Default,,0,0,0,,让我猜猜  这次轮到你登场  -轮到我？\N{\rE}- Let me guess. It's your turn now. - My turn?
+Dialogue: 0,1:09:30.25,1:09:32.71,Default,,0,0,0,,-你懂的  威胁我  让我滚出小镇\N{\rE}You know, to threaten me. Tell me to get out of town.
+Dialogue: 0,1:09:33.09,1:09:34.92,Default,,0,0,0,,就像你的朋友大鸡哥那样\N{\rE}Like your buddy, Big Dick.
+Dialogue: 0,1:09:35.38,1:09:38.63,Default,,0,0,0,,不  不  我觉得你应该不吃威胁这一套\N{\rE}No. No, I get the impression that you can't be threatened.
+Dialogue: 0,1:09:38.80,1:09:40.43,Default,,0,0,0,,我倒是希望威胁有用  但…\N{\rE}I wish you could be, but...
+Dialogue: 0,1:09:40.59,1:09:42.80,Default,,0,0,0,,我要是觉得钱有用  花钱收买你也在所不惜\N{\rE}I'd even bribe you, if I thought money would work.
+Dialogue: 0,1:09:42.97,1:09:44.39,Default,,0,0,0,,真的吗？多少钱？\N{\rE}Really? How much we talking?
+Dialogue: 0,1:09:47.98,1:09:49.27,Default,,0,0,0,,你真会开玩笑\N{\rE}You're funny. You're funny.
+Dialogue: 0,1:09:51.56,1:09:55.94,Default,,0,0,0,,我实在忍不住想问  你一个外地人跑到这里来\N{\rE}See, I can't help but wonder what an outsider like you...
+Dialogue: 0,1:09:56.11,1:09:58.32,Default,,0,0,0,,到底想要干什么\N{\rE}thinks you're doing here.
+Dialogue: 0,1:09:59.03,1:10:00.24,Default,,0,0,0,,我也不知道  本\N{\rE}I don't know, Ben.
+Dialogue: 0,1:10:00.41,1:10:02.99,Default,,0,0,0,,大家都在这里干什么呢？\N{\rE}What are any of us doing here anyway?
+Dialogue: 0,1:10:03.41,1:10:05.16,Default,,0,0,0,,这里是我的家\N{\rE}Well, I belong here, you know.
+Dialogue: 0,1:10:05.33,1:10:08.54,Default,,0,0,0,,我帮忙建设了这个城镇  我父亲协助它成长\N{\rE}I helped build this town. My father helped it grow.
+Dialogue: 0,1:10:08.71,1:10:10.67,Default,,0,0,0,,创办学校\N{\rE}You know, created schools...
+Dialogue: 0,1:10:12.00,1:10:13.79,Default,,0,0,0,,修葺公园、铺设道路…\N{\rE}repaired parks, paved streets...
+Dialogue: 0,1:10:13.96,1:10:16.30,Default,,0,0,0,,直到他锒铛入狱  对吧？\N{\rE}That was before he went to prison, I'm assuming.
+Dialogue: 0,1:10:18.97,1:10:21.89,Default,,0,0,0,,这是个…复杂的故事\N{\rE}It is a complicated story.
+Dialogue: 0,1:10:22.05,1:10:24.05,Default,,0,0,0,,但我不是来探讨我的家族史的\N{\rE}But I'm not here to talk about my family's history.
+Dialogue: 0,1:10:24.22,1:10:26.18,Default,,0,0,0,,我有个疑问\N{\rE}I actually have a question.
+Dialogue: 0,1:10:27.06,1:10:31.39,Default,,0,0,0,,虽然油管不断地删除这个视频  但我还是找到它了\N{\rE}They keep taking this off YouTube, but I tracked it down.
+Dialogue: 0,1:10:31.56,1:10:34.19,Default,,0,0,0,,不管怎样  这就是互联网的德性\N{\rE}You know, anyhow, it is the fucking Internet.
+Dialogue: 0,1:10:35.15,1:10:37.44,Default,,0,0,0,,我反复看了无数遍\N{\rE}And I keep watching it over and over again.
+Dialogue: 0,1:10:37.65,1:10:40.03,Default,,0,0,0,,有件事我始终想不明白\N{\rE}And there's just one thing I don't get.
+Dialogue: 0,1:10:40.20,1:10:42.74,Default,,0,0,0,,视频中的你正在跟某人对打\N{\rE}Here you are, fighting this guy.
+Dialogue: 0,1:10:43.49,1:10:45.28,Default,,0,0,0,,他是你的朋友  对吧？\N{\rE}He's your friend, right?
+Dialogue: 0,1:10:45.83,1:10:47.20,Default,,0,0,0,,我是这么听说的\N{\rE}That's what I heard, that he was your friend.
+Dialogue: 0,1:10:47.37,1:10:49.00,Default,,0,0,0,,他是你的朋友  然而接下来却发生了这一幕\N{\rE}And then this happens, right here.
+Dialogue: 0,1:10:51.50,1:10:52.50,Default,,0,0,0,,没错  他输了\N{\rE}Yeah, he's done.
+Dialogue: 0,1:10:53.21,1:10:55.00,Default,,0,0,0,,谁都看得出来  谢谢\N{\rE}Everybody can see. Thank you.
+Dialogue: 0,1:10:55.92,1:10:56.75,Default,,0,0,0,,就在此时\N{\rE}Right here.
+Dialogue: 0,1:10:58.46,1:10:59.88,Default,,0,0,0,,砰！\N{\rE}Bam!
+Dialogue: 0,1:11:00.05,1:11:01.84,Default,,0,0,0,,看到最后一拳了吗？就是这一拳\N{\rE}See that last hit? That's the one...
+Dialogue: 0,1:11:02.01,1:11:04.05,Default,,0,0,0,,在我看来  就是这一拳\N{\rE}In my opinion, that's the one...
+Dialogue: 0,1:11:04.80,1:11:05.80,Default,,0,0,0,,要了他的命\N{\rE}that did it.
+Dialogue: 0,1:11:08.47,1:11:10.31,Default,,0,0,0,,毫无疑问是那一拳\N{\rE}That was definitely the one that did it.
+Dialogue: 0,1:11:13.98,1:11:15.61,Default,,0,0,0,,是的\N{\rE}It was.
+Dialogue: 0,1:11:18.40,1:11:20.32,Default,,0,0,0,,所以我的问题是…\N{\rE}So, I guess my question is...
+Dialogue: 0,1:11:22.86,1:11:23.86,Default,,0,0,0,,为什么？\N{\rE}Why?
+Dialogue: 0,1:11:25.91,1:11:28.91,Default,,0,0,0,,不可能只是因为好胜心  对吧？你…\N{\rE}Right? It can't be just some competitive thing, you...
+Dialogue: 0,1:11:30.20,1:11:31.41,Default,,0,0,0,,你都已经赢了\N{\rE}you've won the fight.
+Dialogue: 0,1:11:33.12,1:11:34.42,Default,,0,0,0,,可以收手了\N{\rE}You can back off now.
+Dialogue: 0,1:11:36.58,1:11:38.88,Default,,0,0,0,,但你…你没有收手\N{\rE}But you... you don't.
+Dialogue: 0,1:11:42.05,1:11:43.22,Default,,0,0,0,,只是去…\N{\rE}You just keep...
+Dialogue: 0,1:11:44.47,1:11:47.68,Default,,0,0,0,,一拳接一拳地打下\N{\rE}punching and punching and punching.
+Dialogue: 0,1:11:49.76,1:11:50.85,Default,,0,0,0,,为什么？\N{\rE}So, why?
+Dialogue: 0,1:11:52.14,1:11:53.69,Default,,0,0,0,,为什么不停下来？\N{\rE}Why don't you just stop?
+Dialogue: 0,1:11:58.52,1:12:02.94,Default,,0,0,0,,{\fs10\an9\i1}♪ I'm gonna go out dancing every night ♪
+Dialogue: 0,1:12:03.11,1:12:07.41,Default,,0,0,0,,{\fs10\an9\i1}♪ I'm gonna see all the city lights ♪
+Dialogue: 0,1:12:07.57,1:12:12.75,Default,,0,0,0,,{\fs10\an9\i1}♪ I'm gonna do everything With silver and gold ♪
+Dialogue: 0,1:12:12.91,1:12:16.29,Default,,0,0,0,,{\fs10\an9\i1}♪ I've got to hurry up Before I grow too old ♪
+Dialogue: 0,1:12:16.46,1:12:17.71,Default,,0,0,0,,祝你晚安\N{\rE}You have a good night.
+Dialogue: 0,1:12:17.88,1:12:22.67,Default,,0,0,0,,{\fs10\an9\i1}♪ I'm gonna take a trip All around the world ♪
+Dialogue: 0,1:12:22.84,1:12:26.84,Default,,0,0,0,,{\fs10\an9\i1}♪ I'm gonna kiss all the pretty girls ♪
+Dialogue: 0,1:12:27.01,1:12:32.14,Default,,0,0,0,,{\fs10\an9\i1}♪ I'm gonna do everything With silver and gold ♪
+Dialogue: 0,1:12:32.31,1:12:37.31,Default,,0,0,0,,{\fs10\an9\i1}♪ I've got to hurry up Before I grow too old ♪
+Dialogue: 0,1:12:40.32,1:12:42.65,Default,,0,0,0,,给他们一点教训  越惨痛越好\N{\rE}Make it hurt as much as possible.
+Dialogue: 0,1:12:42.90,1:12:44.36,Default,,0,0,0,,烧掉这里也无妨\N{\rE}You can burn the place down.
+Dialogue: 0,1:12:44.53,1:12:46.11,Default,,0,0,0,,嘿  你这身西装不错嘛\N{\rE}Hey, nice suit.
+Dialogue: 0,1:12:46.28,1:12:47.74,Default,,0,0,0,,看起来活像复活节的龌龊皮条客\N{\rE}You look like a shitty pimp on Easter.
+Dialogue: 0,1:12:47.91,1:12:49.24,Default,,0,0,0,,你的品味总是那么差\N{\rE}Then again, you always had bad taste.
+Dialogue: 0,1:12:49.41,1:12:53.16,Default,,0,0,0,,谢谢  这可是名师定制款  弗兰基  我特地去意大利定制的\N{\rE}Thank you. It's Cleopini, Frankie. I went to Italy to get it fucking fitted.
+Dialogue: 0,1:12:53.33,1:12:55.33,Default,,0,0,0,,大老远买来的衣服  依然丑得像坨狗屎\N{\rE}It's a long way to go to still look like dog shit.
+Dialogue: 0,1:12:55.50,1:12:57.25,Default,,0,0,0,,到我店里来做什么？\N{\rE}- God. - What are you doin' at my place?
+Dialogue: 0,1:12:57.42,1:12:58.42,Default,,0,0,0,,-不关你的事\N{\rE}None of your goddamn business.
+Dialogue: 0,1:12:58.58,1:13:00.04,Default,,0,0,0,,-你到我店里来做什么？\N{\rE}What are you doin' at my place?
+Dialogue: 0,1:13:00.21,1:13:01.92,Default,,0,0,0,,-我想做什么就做什么\N{\rE}Anything I fucking want.
+Dialogue: 0,1:13:02.09,1:13:03.21,Default,,0,0,0,,真的  -是吗？\N{\rE}- That's the truth. - Oh, really?
+Dialogue: 0,1:13:06.55,1:13:08.18,Default,,0,0,0,,好了  兄弟们  动手吧\N{\rE}All right, lads. Let's go.
+Dialogue: 0,1:13:08.34,1:13:10.76,Default,,0,0,0,,-离我的车窗远一点  -去你的！\N{\rE}- Get out of my goddamn window! - Fuck you!
+Dialogue: 0,1:13:10.93,1:13:12.72,Default,,0,0,0,,好久没在夜店尽情挥杆了\N{\rE}It's been a while since I've been clubbin'.
+Dialogue: 0,1:13:17.35,1:13:18.65,Default,,0,0,0,,{\fs10\an9\i1}♪ 来吧 ♪\N♪ Yeah, come on ♪
+Dialogue: 0,1:13:25.94,1:13:27.20,Default,,0,0,0,,{\fs10\an9\i1}♪ 来吧  伙计们 ♪\N♪ Come on, boys ♪
+Dialogue: 0,1:13:32.78,1:13:34.41,Default,,0,0,0,,{\fs10\an9\i1}♪ 我爱你…- ♪\N♪ I love ya, I love ya ♪
+Dialogue: 0,1:13:36.16,1:13:38.00,Default,,0,0,0,,跟我想的一样\N{\rE}Just what I thought.
+Dialogue: 0,1:13:38.12,1:13:39.54,Default,,0,0,0,,这家路边餐馆现在是我的了\N{\rE}This roadhouse is mine.
+Dialogue: 0,1:13:41.58,1:13:44.63,Default,,0,0,0,,{\fs10\an9\i1}♪ 临走前再喝一杯  小子 ♪\N♪ One shot for my get on boy ♪
+Dialogue: 0,1:13:44.80,1:13:46.71,Default,,0,0,0,,{\fs10\an9\i1}♪ 然后把猪排吐出来 ♪\N♪ Roll up the pork chop ♪
+Dialogue: 0,1:13:46.88,1:13:48.80,Default,,0,0,0,,嘿  伙计们\N{\rE}Hey, fellas.
+Dialogue: 0,1:13:48.97,1:13:51.55,Default,,0,0,0,,看来今晚是个“狂”欢夜！\N{\rE}Looks like you're havin' a smashing night!
+Dialogue: 0,1:13:54.85,1:13:58.14,Default,,0,0,0,,{\fs10\an9\i1}♪ 临走前再给我舔一下  小子 ♪\N♪ One lick for my get on boy ♪
+Dialogue: 0,1:13:58.31,1:14:00.23,Default,,0,0,0,,{\fs10\an9\i1}♪ 他吃腻的猪排 ♪\N♪ Pork chop got sick ♪
+Dialogue: 0,1:14:01.40,1:14:04.77,Default,,0,0,0,,{\fs10\an9\i1}♪ 临走前再给我舔两下  小子 ♪\N♪ Yeah, two lick for my get on boy ♪
+Dialogue: 0,1:14:04.94,1:14:06.11,Default,,0,0,0,,嘿  美女\N{\rE}Hey, beautiful.
+Dialogue: 0,1:14:07.07,1:14:08.07,Default,,0,0,0,,-我叫诺克斯  -嗨\N{\rE}- I'm Knox. - Howdy.
+Dialogue: 0,1:14:08.24,1:14:09.61,Default,,0,0,0,,一起跳个舞吧\N{\rE}Let's dance.
+Dialogue: 0,1:14:09.78,1:14:11.74,Default,,0,0,0,,嘿！这是我的女人  兄弟  你要干什么？\N{\rE}Hey! That's my fucking girl, bro. What are you doin'?
+Dialogue: 0,1:14:13.87,1:14:14.87,Default,,0,0,0,,去你的\N{\rE}Fuck, man!
+Dialogue: 0,1:14:15.03,1:14:17.08,Default,,0,0,0,,我喜欢这首歌  宝贝  你不喜欢吗？\N{\rE}I love this song, baby. Don't you?
+Dialogue: 0,1:14:17.87,1:14:18.71,Default,,0,0,0,,也许吧\N{\rE}I guess.
+Dialogue: 0,1:14:18.87,1:14:21.04,Default,,0,0,0,,{\fs10\an9\i1}♪ 当你打开收音机时 ♪\N♪ When you turn on your radio dial ♪
+Dialogue: 0,1:14:21.21,1:14:23.17,Default,,0,0,0,,{\fs10\an9\i1}♪ 里面放的全是狗屎  不是吗？ ♪\N♪ It's just the drink in me ♪
+Dialogue: 0,1:14:24.75,1:14:28.88,Default,,0,0,0,,{\fs10\an9\i1}♪ 还我正反两面  金曲满载的45号黑胶唱片 ♪\N♪ Bring back the 45 vinyl with the double-A flip side ♪
+Dialogue: 0,1:14:29.22,1:14:31.51,Default,,0,0,0,,{\fs10\an9\i1}♪ 临走前再喝一杯  小子 ♪\N♪ One shot for my get on, boy ♪
+Dialogue: 0,1:14:32.64,1:14:34.43,Default,,0,0,0,,{\fs10\an9\i1}♪ 猪排怎么了 ♪\N♪ What's up with pork chop ♪
+Dialogue: 0,1:14:34.72,1:14:36.26,Default,,0,0,0,,我讨厌这首歌！\N{\rE}I hate this song!
+Dialogue: 0,1:14:41.94,1:14:43.90,Default,,0,0,0,,-你好啊  乐队  -滚开\N{\rE}- Hello, band. {\i1}- Back up.
+Dialogue: 0,1:14:45.02,1:14:47.03,Default,,0,0,0,,给我冷静点！\N{\rE}Hey, calm the fuck down!
+Dialogue: 0,1:14:47.90,1:14:49.69,Default,,0,0,0,,嘿\N{\rE}Hey. Hey, hey, hey.
+Dialogue: 0,1:14:49.86,1:14:50.95,Default,,0,0,0,,伙计  我们何不到外面…\N{\rE}Man, why don't we just take it outside...
+Dialogue: 0,1:14:51.07,1:14:52.41,Default,,0,0,0,,该死的！\N{\rE}Fuck!
+Dialogue: 0,1:14:52.49,1:14:53.49,Default,,0,0,0,,不要啊！-\N{\rE}Hey, hey, don't do it!
+Dialogue: 0,1:15:19.35,1:15:20.35,Default,,0,0,0,,酒吧大乱斗！\N{\rE}Bar fight!
+Dialogue: 0,1:15:21.52,1:15:22.56,Default,,0,0,0,,酒吧大乱斗！\N{\rE}Bar fight!
+Dialogue: 0,1:15:23.31,1:15:26.27,Default,,0,0,0,,{\fs10\an9\i1}♪ 临走前再给我舔一下  小子 ♪\N♪ One lick for my get on boy ♪
+Dialogue: 0,1:15:26.77,1:15:28.98,Default,,0,0,0,,{\fs10\an9\i1}♪ 他吃腻的猪排 ♪\N♪ Pork chop got sick ♪
+Dialogue: 0,1:15:30.24,1:15:32.53,Default,,0,0,0,,{\fs10\an9\i1}♪ 临走前再给我舔两下  小子 ♪\N♪ Two lick for my get on boy ♪
+Dialogue: 0,1:15:32.70,1:15:33.86,Default,,0,0,0,,天啊！-\N{\rE}Oh, my God!
+Dialogue: 0,1:15:38.24,1:15:39.37,Default,,0,0,0,,王八蛋！\N{\rE}Motherfucker!
+Dialogue: 0,1:15:52.34,1:15:53.93,Default,,0,0,0,,道尔顿！\N{\rE}Dalton!
+Dialogue: 0,1:15:55.84,1:15:57.26,Default,,0,0,0,,道尔顿！\N{\rE}Dalton!
+Dialogue: 0,1:16:00.31,1:16:01.43,Default,,0,0,0,,道尔顿！\N{\rE}Dalton!
+Dialogue: 0,1:16:04.94,1:16:06.60,Default,,0,0,0,,道尔顿！\N{\rE}Dalton!
+Dialogue: 0,1:16:06.77,1:16:07.77,Default,,0,0,0,,行了…\N{\rE}All right.
+Dialogue: 0,1:16:09.61,1:16:11.03,Default,,0,0,0,,嘿  兄弟  见到你真好\N{\rE}Oh, hey, man. Good to see you.
+Dialogue: 0,1:16:12.99,1:16:14.78,Default,,0,0,0,,道尔顿！\N{\rE}Dalton!
+Dialogue: 0,1:16:19.53,1:16:21.20,Default,,0,0,0,,道尔顿！\N{\rE}Dalton!
+Dialogue: 0,1:16:22.12,1:16:22.95,Default,,0,0,0,,干吗？\N{\rE}What?
+Dialogue: 0,1:16:24.71,1:16:26.46,Default,,0,0,0,,你总算现身了\N{\rE}It's about fuckin' time.
+Dialogue: 0,1:16:27.67,1:16:28.71,Default,,0,0,0,,干架啊\N{\rE}That's what!
+Dialogue: 0,1:16:30.04,1:16:32.46,Default,,0,0,0,,你很清楚我是他们特地派来\N{\rE}You know, I got sent here special.
+Dialogue: 0,1:16:32.63,1:16:33.80,Default,,0,0,0,,收拾你的\N{\rE}Just for you.
+Dialogue: 0,1:16:35.09,1:16:37.18,Default,,0,0,0,,你把你的朋友全都带来了？\N{\rE}But you brought all your friends with you?
+Dialogue: 0,1:16:37.34,1:16:40.01,Default,,0,0,0,,我想你可能会怀念有观众的日子\N{\rE}I thought you might miss havin' an audience.
+Dialogue: 0,1:16:40.72,1:16:42.39,Default,,0,0,0,,我只是想尽量考虑得周到些\N{\rE}I was trying to be thoughtful.
+Dialogue: 0,1:16:43.22,1:16:45.14,Default,,0,0,0,,就像按次付费收看一样\N{\rE}Like on pay-per-view.
+Dialogue: 0,1:16:45.31,1:16:47.06,Default,,0,0,0,,支付25英镑\N{\rE}25 quid.
+Dialogue: 0,1:16:47.23,1:16:48.65,Default,,0,0,0,,就能看我打烂你的脸！\N{\rE}Watch me pulp your face!
+Dialogue: 0,1:16:51.07,1:16:52.82,Default,,0,0,0,,看来我要输了\N{\rE}Well, I guess I'm gonna lose, then.
+Dialogue: 0,1:16:55.19,1:16:57.41,Default,,0,0,0,,别这么沮丧嘛\N{\rE}Don't be like that.
+Dialogue: 0,1:16:57.57,1:17:00.58,Default,,0,0,0,,来  我给你一个忠告\N{\rE}Here. I've got a tip for ya.
+Dialogue: 0,1:17:00.74,1:17:02.58,Default,,0,0,0,,别让任何人靠得这么近\N{\rE}Don't let no one get this close.
+Dialogue: 0,1:17:09.54,1:17:11.50,Default,,0,0,0,,这才像样嘛\N{\rE}There he is.
+Dialogue: 0,1:17:11.67,1:17:15.26,Default,,0,0,0,,世界上最臭名昭著的拳手道尔顿\N{\rE}The world's most notorious fighter, Dalton.
+Dialogue: 0,1:17:15.84,1:17:17.05,Default,,0,0,0,,来吧  握个手\N{\rE}Put'er there.
+Dialogue: 0,1:19:00.70,1:19:02.49,Default,,0,0,0,,你心理有问题\N{\rE}There's something wrong with you.
+Dialogue: 0,1:19:05.58,1:19:07.12,Default,,0,0,0,,我也是\N{\rE}Me, too.
+Dialogue: 0,1:19:10.96,1:19:14.13,Default,,0,0,0,,德克斯  你还是不是警察  我们需要援助！\N{\rE}Dex, this is serious! Are you a cop or what? We need help!
+Dialogue: 0,1:19:14.29,1:19:17.34,Default,,0,0,0,,我已经派了两辆警车过去  仁至义尽了  艾莉\N{\rE}I sent two cars already, El. It's the best I could do.
+Dialogue: 0,1:19:24.22,1:19:26.26,Default,,0,0,0,,道尔顿\N{\rE}Dalton. Dalton.
+Dialogue: 0,1:19:26.43,1:19:27.93,Default,,0,0,0,,嘿  你没事吧？\N{\rE}Hey! Are you okay?
+Dialogue: 0,1:19:31.27,1:19:32.89,Default,,0,0,0,,艾莉  比利受了很严重的伤\N{\rE}Ellie! Billy's really hurt.
+Dialogue: 0,1:19:33.06,1:19:34.06,Default,,0,0,0,,艾莉！\N{\rE}Ellie!
+Dialogue: 0,1:19:36.31,1:19:37.65,Default,,0,0,0,,没事的，坐下  操！-\N{\rE}- Come on, it's okay. Sit down. - Fuck!
+Dialogue: 0,1:19:37.82,1:19:39.11,Default,,0,0,0,,他把他搞得一团糟-\N{\rE}He fucked him up really bad.
+Dialogue: 0,1:19:39.28,1:19:40.94,Default,,0,0,0,,我在呢！怎么啦？那家伙用高尔夫球杆打了他\N{\rE}- I'm here. What happened? - Hit him with the golf club.
+Dialogue: 0,1:19:41.11,1:19:42.70,Default,,0,0,0,,那个爱尔兰混蛋打断了我的背-\N{\rE}That Irish fuck broke my back.
+Dialogue: 0,1:19:43.40,1:19:44.41,Default,,0,0,0,,操-\N{\rE}Fuck.
+Dialogue: 0,1:20:27.07,1:20:29.78,Default,,0,0,0,,嘿  你这是要走了吗？\N{\rE}Hey. What, are you leaving?
+Dialogue: 0,1:20:31.41,1:20:32.83,Default,,0,0,0,,你可真会开玩笑  弗兰基\N{\rE}You're a funny one, Frankie.
+Dialogue: 0,1:20:33.45,1:20:35.25,Default,,0,0,0,,好吧  没错\N{\rE}Okay. I mean, yeah...
+Dialogue: 0,1:20:35.33,1:20:37.46,Default,,0,0,0,,我知道我没有向你坦白一切  好吗？\N{\rE}I know I wasn't totally honest with you, all right?
+Dialogue: 0,1:20:37.63,1:20:39.25,Default,,0,0,0,,布兰特想夺走我的路边餐馆\N{\rE}Brandt wants to take the Road House away from me.
+Dialogue: 0,1:20:41.30,1:20:43.17,Default,,0,0,0,,看到那边了吗？公路沿线那些建筑\N{\rE}You see that? All up and down the highway?
+Dialogue: 0,1:20:43.34,1:20:44.47,Default,,0,0,0,,全被布兰特买下来了\N{\rE}Brandt owns all of that.
+Dialogue: 0,1:20:45.51,1:20:47.01,Default,,0,0,0,,他想铲平那里\N{\rE}And he wants to level it and...
+Dialogue: 0,1:20:47.18,1:20:49.55,Default,,0,0,0,,给一群有钱的混蛋建一个狗屁度假村\N{\rE}build some bullshit resort for a bunch of rich assholes.
+Dialogue: 0,1:20:49.72,1:20:52.56,Default,,0,0,0,,为此他需要路边餐馆的地皮  但我不会让他得逞的\N{\rE}And he needs the Road House to do it. But I'm not gonna let that happen.
+Dialogue: 0,1:20:52.89,1:20:54.64,Default,,0,0,0,,现在就剩我一个坚守阵地了\N{\rE}I'm the last holdout, man.
+Dialogue: 0,1:20:54.81,1:20:56.10,Default,,0,0,0,,那你应该继续坚守阵地\N{\rE}You should keep holdin' out.
+Dialogue: 0,1:20:57.48,1:20:59.73,Default,,0,0,0,,嘿  布兰特没钱了\N{\rE}Hey. Brandt's out of money.
+Dialogue: 0,1:20:59.90,1:21:01.57,Default,,0,0,0,,他在跟一群可疑的家伙借钱\N{\rE}And he's borrowing from shady guys.
+Dialogue: 0,1:21:02.32,1:21:03.48,Default,,0,0,0,,到时候他要是还不上\N{\rE}And when he doesn't pay them back...
+Dialogue: 0,1:21:03.69,1:21:05.07,Default,,0,0,0,,他们定会宰了他\N{\rE}they're gonna fucking end him.
+Dialogue: 0,1:21:05.24,1:21:06.99,Default,,0,0,0,,去他的  我不在乎\N{\rE}All right, well, fuck that guy.
+Dialogue: 0,1:21:07.15,1:21:08.36,Default,,0,0,0,,什么意思  你这是要走了吗？\N{\rE}So, what? You're leaving now?
+Dialogue: 0,1:21:08.53,1:21:10.70,Default,,0,0,0,,弗兰基  我从一开始就告诉过你\N{\rE}Frankie, I told you from the jump...
+Dialogue: 0,1:21:10.87,1:21:12.54,Default,,0,0,0,,你应该雇用另一个人\N{\rE}you should've hired that other guy.
+Dialogue: 0,1:21:15.29,1:21:16.54,Default,,0,0,0,,他们把你吓跑了？\N{\rE}They scared you off?
+Dialogue: 0,1:21:17.62,1:21:18.67,Default,,0,0,0,,-你就那么害怕吗？\N{\rE}Are you really that afraid?
+Dialogue: 0,1:21:18.83,1:21:20.21,Default,,0,0,0,,-是的  我很害怕\N{\rE}Yes, I am afraid.
+Dialogue: 0,1:21:21.59,1:21:23.34,Default,,0,0,0,,那是你永远无法理解的恐惧\N{\rE}More than you could ever understand.
+Dialogue: 0,1:21:34.35,1:21:37.31,Default,,0,0,0,,事情出了点岔子  本先生\N{\rE}Things didn't exactly go to plan, Mr. B.
+Dialogue: 0,1:21:37.94,1:21:40.15,Default,,0,0,0,,诺克斯没有干掉那名保镖\N{\rE}Knox didn't kill the bouncer.
+Dialogue: 0,1:21:43.48,1:21:45.11,Default,,0,0,0,,我们的人几乎都受了重伤\N{\rE}Most of our guys are pretty banged up.
+Dialogue: 0,1:21:46.15,1:21:49.32,Default,,0,0,0,,加上赶到现场的警察  不是我们的人  所以…\N{\rE}Also, the wrong cops showed at the Road House, so...
+Dialogue: 0,1:21:50.32,1:21:51.78,Default,,0,0,0,,大鸡哥也帮不上忙\N{\rE}Big Dick can't help us there.
+Dialogue: 0,1:21:55.41,1:21:58.15,Default,,0,0,0,,{\fs14\an8}玻璃岛度假村
+Dialogue: 0,1:21:57.20,1:21:58.29,Default,,0,0,0,,您想让我怎么做？\N{\rE}What do you want me to do?
+Dialogue: 0,1:22:01.04,1:22:03.46,Default,,0,0,0,,去厨房帮我再拿一瓶酒来\N{\rE}I want you to get me another bottle from the galley.
+Dialogue: 0,1:22:44.59,1:22:46.13,Default,,0,0,0,,嘿  那里面不安全\N{\rE}Hey, it's not safe in there.
+Dialogue: 0,1:22:46.30,1:22:49.55,Default,,0,0,0,,那个小女孩在哪儿？  那个小女孩和她的父亲\N{\rE}Where's the little girl? That little girl and her father.
+Dialogue: 0,1:22:49.72,1:22:51.22,Default,,0,0,0,,救护车把他们送去医院了\N{\rE}Ambulance took 'em to the hospital.
+Dialogue: 0,1:22:51.38,1:22:52.51,Default,,0,0,0,,赶紧离开那里\N{\rE}Now get out of there!
+Dialogue: 0,1:23:44.23,1:23:45.44,Default,,0,0,0,,我怎么没听到汽车声\N{\rE}I didn't hear a car.
+Dialogue: 0,1:23:46.02,1:23:47.02,Default,,0,0,0,,我是走路过来的\N{\rE}Yeah, well, I walked.
+Dialogue: 0,1:23:47.19,1:23:48.52,Default,,0,0,0,,从书店一路走来\N{\rE}From the bookstore.
+Dialogue: 0,1:23:49.48,1:23:50.82,Default,,0,0,0,,-看来你收到我们的警告了？\N{\rE}So, you got our little message?
+Dialogue: 0,1:23:50.99,1:23:52.07,Default,,0,0,0,,-确实收到了\N{\rE}I sure did.
+Dialogue: 0,1:23:53.49,1:23:54.82,Default,,0,0,0,,那是你的主意吗？\N{\rE}Was that your idea?
+Dialogue: 0,1:23:54.99,1:23:56.78,Default,,0,0,0,,没错  那小女孩挺可爱的\N{\rE}Yeah, she's a cute girl.
+Dialogue: 0,1:23:57.32,1:23:58.45,Default,,0,0,0,,有点固执\N{\rE}She's kinda stubborn.
+Dialogue: 0,1:23:59.41,1:24:00.70,Default,,0,0,0,,有点像你\N{\rE}Bit like you.
+Dialogue: 0,1:24:05.00,1:24:06.00,Default,,0,0,0,,知道吗\N{\rE}You know...
+Dialogue: 0,1:24:07.25,1:24:08.79,Default,,0,0,0,,说来好笑…\N{\rE}the funny thing is...
+Dialogue: 0,1:24:09.67,1:24:10.92,Default,,0,0,0,,我原本已经要走了\N{\rE}I was already leaving.
+Dialogue: 0,1:24:11.13,1:24:13.13,Default,,0,0,0,,我们终于吓跑你了？\N{\rE}We finally scared you off, huh?
+Dialogue: 0,1:24:13.30,1:24:14.80,Default,,0,0,0,,不完全是\N{\rE}Uh, not exactly.
+Dialogue: 0,1:24:16.68,1:24:17.93,Default,,0,0,0,,只要你害怕就行\N{\rE}Just as long as you're scared.
+Dialogue: 0,1:24:22.60,1:24:24.73,Default,,0,0,0,,我刚刚打断了你的舌骨\N{\rE}I just broke the hyoid bone in your throat.
+Dialogue: 0,1:24:25.60,1:24:27.69,Default,,0,0,0,,可能连气管也一并打断了\N{\rE}Probably also collapsed your trachea.
+Dialogue: 0,1:24:27.86,1:24:29.98,Default,,0,0,0,,不管怎样  你都不能呼吸了\N{\rE}Either way, you won't be able to breathe anymore.
+Dialogue: 0,1:24:35.95,1:24:39.24,Default,,0,0,0,,说来奇怪  今天另一个人也问了我是否害怕\N{\rE}You know, it's strange. Somebody else asked me if I was afraid today.
+Dialogue: 0,1:24:40.62,1:24:41.70,Default,,0,0,0,,我确实很害怕\N{\rE}I am afraid.
+Dialogue: 0,1:24:42.16,1:24:46.21,Default,,0,0,0,,害怕自己被你这种人渣逼急了\N{\rE}I'm afraid of what happens when somebody pushes me too far.
+Dialogue: 0,1:24:46.83,1:24:48.29,Default,,0,0,0,,后果会不堪设想\N{\rE}Somebody just like you.
+Dialogue: 0,1:24:51.50,1:24:53.34,Default,,0,0,0,,因为我很清楚接下来会发生什么\N{\rE}'Cause I know what happens next.
+Dialogue: 0,1:25:00.30,1:25:01.93,Default,,0,0,0,,见鬼了  好吧\N{\rE}Oh, fuck. Okay.
+Dialogue: 0,1:25:05.43,1:25:06.85,Default,,0,0,0,,嘿  老兄\N{\rE}Hey. Hey, man.
+Dialogue: 0,1:25:07.02,1:25:08.48,Default,,0,0,0,,他看起来挺重的\N{\rE}Wow, he looks heavy.
+Dialogue: 0,1:25:08.65,1:25:10.15,Default,,0,0,0,,真厉害\N{\rE}Good for you. Um...
+Dialogue: 0,1:25:10.65,1:25:12.61,Default,,0,0,0,,那个  其实我正准备…  我正准备离开\N{\rE}Hey, man, I was just... I was just leaving...
+Dialogue: 0,1:25:13.15,1:25:14.57,Default,,0,0,0,,再也不回来了\N{\rE}you know, for good.
+Dialogue: 0,1:25:14.90,1:25:16.40,Default,,0,0,0,,事实证明  这些家伙\N{\rE}Turns out these guys...
+Dialogue: 0,1:25:16.57,1:25:19.45,Default,,0,0,0,,并不像我刚开始想的那么好\N{\rE}not as nice as I thought they were initially.
+Dialogue: 0,1:25:20.16,1:25:21.49,Default,,0,0,0,,我只是喜欢骑摩托车\N{\rE}I just like riding motorcycles, man...
+Dialogue: 0,1:25:21.66,1:25:24.08,Default,,0,0,0,,但在南佛罗里达州  不加入帮派的话很难混下去\N{\rE}but it's really hard to do in South Florida without a group.
+Dialogue: 0,1:25:25.45,1:25:26.29,Default,,0,0,0,,老兄\N{\rE}Hey, man.
+Dialogue: 0,1:25:26.46,1:25:28.33,Default,,0,0,0,,你应该不会杀我吧？\N{\rE}You're not gonna kill me or anything, right?
+Dialogue: 0,1:25:28.50,1:25:29.50,Default,,0,0,0,,布兰特在哪里？\N{\rE}Where's Brandt?
+Dialogue: 0,1:25:31.38,1:25:34.21,Default,,0,0,0,,实不相瞒  他们很少告诉我这些事情\N{\rE}Okay, I'm gonna be honest with you, man. They don't tell me much. You know.
+Dialogue: 0,1:25:34.30,1:25:35.67,Default,,0,0,0,,我每次都是最后一个知道\N{\rE}Kinda the last one to find out about everything...
+Dialogue: 0,1:25:35.84,1:25:37.59,Default,,0,0,0,,处境挺尴尬的\N{\rE}which is kinda weird position to be in.
+Dialogue: 0,1:25:37.76,1:25:41.43,Default,,0,0,0,,不过我无意中听到了  布兰特手下的对话\N{\rE}But I overheard some of Brandt's guys talking and...
+Dialogue: 0,1:25:41.60,1:25:43.18,Default,,0,0,0,,我想他们会在丰收岛碰头\N{\rE}I guess there's a meeting at Harvest Key.
+Dialogue: 0,1:25:43.35,1:25:45.47,Default,,0,0,0,,布兰特会去取一笔钱  用来做某件事\N{\rE}Brandt's getting some of the money that he needs for something.
+Dialogue: 0,1:25:45.64,1:25:46.48,Default,,0,0,0,,时间是凌晨五点\N{\rE}It's at 5:00 a.m.
+Dialogue: 0,1:25:46.64,1:25:49.23,Default,,0,0,0,,我想这碰头时间有点早  对吧？\N{\rE}Which I think is early for a meeting. Am I right?
+Dialogue: 0,1:25:51.02,1:25:52.02,Default,,0,0,0,,好的\N{\rE}Okay.
+Dialogue: 0,1:25:53.15,1:25:56.82,Default,,0,0,0,,回头见  谢谢你这次没有使用暴力\N{\rE}I'll see you. Thank you for no more violence.
+Dialogue: 0,1:25:57.74,1:25:59.36,Default,,0,0,0,,祝你抛尸顺利\N{\rE}Good luck with the guy.
+Dialogue: 0,1:26:10.04,1:26:11.04,Default,,0,0,0,,{\fs14\an8}冰块
+Dialogue: 0,1:26:27.14,1:26:27.98,Default,,0,0,0,,让他走-\N{\rE}Let him go.
+Dialogue: 0,1:26:28.39,1:26:29.77,Default,,0,0,0,,滚开！停下-\N{\rE}- Fuck off! - Stop!
+Dialogue: 0,1:26:35.61,1:26:36.78,Default,,0,0,0,,够了！停下-\N{\rE}That's enough! Stop!
+Dialogue: 0,1:27:30.12,1:27:32.08,Default,,0,0,0,,没问题  可以了\N{\rE}All right, all right, we're good.
+Dialogue: 0,1:27:32.92,1:27:34.25,Default,,0,0,0,,你想计数吗？-\N{\rE}You wanna count it?
+Dialogue: 0,1:27:48.39,1:27:49.39,Default,,0,0,0,,嘿！\N{\rE}Hey!
+Dialogue: 0,1:28:12.87,1:28:14.00,Default,,0,0,0,,嘿  你醒了\N{\rE}Oh, hey, you're awake.
+Dialogue: 0,1:28:17.38,1:28:18.54,Default,,0,0,0,,-我的船\N{\rE}My boat.
+Dialogue: 0,1:28:18.71,1:28:22.17,Default,,0,0,0,,-对  你们警长的船要少一艘了\N{\rE}Yeah. You're gonna be short one sheriff's boat.
+Dialogue: 0,1:28:22.67,1:28:23.67,Default,,0,0,0,,抱歉\N{\rE}Sorry.
+Dialogue: 0,1:28:24.13,1:28:26.43,Default,,0,0,0,,天啊！你刚刚杀了他吗？\N{\rE}Jesus! Did you just kill him?
+Dialogue: 0,1:28:27.26,1:28:28.26,Default,,0,0,0,,不\N{\rE}Oh, no.
+Dialogue: 0,1:28:28.97,1:28:30.56,Default,,0,0,0,,他早就死了  我在数小时之前就杀了他\N{\rE}He's already dead. I killed him hours ago.
+Dialogue: 0,1:28:30.72,1:28:31.77,Default,,0,0,0,,-那是我的枪吗？\N{\rE}Is that my gun?
+Dialogue: 0,1:28:31.93,1:28:33.43,Default,,0,0,0,,-没错  是你的枪\N{\rE}Yep, sure is.
+Dialogue: 0,1:28:33.60,1:28:35.44,Default,,0,0,0,,等等  你没必要这么做\N{\rE}Wait. You don't have to do this.
+Dialogue: 0,1:28:37.94,1:28:39.11,Default,,0,0,0,,我也不想走到这一步\N{\rE}I wish I didn't.
+Dialogue: 0,1:28:41.23,1:28:42.48,Default,,0,0,0,,但我生气了\N{\rE}But I'm angry.
+Dialogue: 0,1:28:43.69,1:28:46.49,Default,,0,0,0,,虽然我轻易不生气  但一旦生气起来\N{\rE}It takes a lot to get me angry, but when I am...
+Dialogue: 0,1:28:46.66,1:28:49.28,Default,,0,0,0,,就没有善罢甘休一说  我也想停下来\N{\rE}I just can't let go. I wish I could...
+Dialogue: 0,1:28:49.45,1:28:51.91,Default,,0,0,0,,但…  你们老大和布兰特真的让我很恼火\N{\rE}but your boss and Brandt really pissed me off.
+Dialogue: 0,1:28:53.91,1:28:55.79,Default,,0,0,0,,他们会发现他并非死于枪杀的\N{\rE}They'll know those bullets didn't kill him.
+Dialogue: 0,1:28:58.25,1:28:59.59,Default,,0,0,0,,这只是为了误导他们\N{\rE}It'll just confuse 'em.
+Dialogue: 0,1:29:01.46,1:29:03.59,Default,,0,0,0,,我会告诉他们是你干的\N{\rE}I'll tell 'em it was you.
+Dialogue: 0,1:29:03.96,1:29:05.51,Default,,0,0,0,,好吧\N{\rE}Oh, okay!
+Dialogue: 0,1:29:07.68,1:29:08.64,Default,,0,0,0,,不过无所谓\N{\rE}You know what though?
+Dialogue: 0,1:29:08.80,1:29:11.47,Default,,0,0,0,,反正你十有八九会想不起来这一切\N{\rE}There's a real possibility you won't remember any of this anyway.
+Dialogue: 0,1:29:11.64,1:29:13.47,Default,,0,0,0,,等等  你说什么？\N{\rE}Wait, wait, what?
+Dialogue: 0,1:29:15.43,1:29:17.23,Default,,0,0,0,,当你像我一样在拳击界打滚多年\N{\rE}When you've been fighting as long as I have,
+Dialogue: 0,1:29:17.31,1:29:18.98,Default,,0,0,0,,你就会知道脑震荡的威力\N{\rE}you know the power of a concussion.
+Dialogue: 0,1:29:19.15,1:29:20.73,Default,,0,0,0,,重重的一击  真的可以让你\N{\rE}- Wait. - A real whack can really knock...
+Dialogue: 0,1:29:20.90,1:29:22.69,Default,,0,0,0,,失去短期记忆\N{\rE}the short-term memory out of ya.
+Dialogue: 0,1:29:22.86,1:29:24.23,Default,,0,0,0,,记忆需要几分钟\N{\rE}Something about how it takes a memory...
+Dialogue: 0,1:29:24.40,1:29:26.24,Default,,0,0,0,,才能到达大脑的长期记忆区\N{\rE}a couple of minutes to get to the long-term part of your brain.
+Dialogue: 0,1:29:26.40,1:29:28.11,Default,,0,0,0,,我们才聊了一分半钟左右\N{\rE}I don't know. Anyway, you and I have only been talking for about a minute and half.
+Dialogue: 0,1:29:28.28,1:29:29.41,Default,,0,0,0,,我没听懂你的意思\N{\rE}I don't understand.
+Dialogue: 0,1:29:29.57,1:29:31.12,Default,,0,0,0,,那边是什么？\N{\rE}What's that over there?
+Dialogue: 0,1:29:32.49,1:29:34.54,Default,,0,0,0,,你好  我是海岸警卫队的  威廉姆斯上士\N{\rE}Hello, this is Coast Guard Chief Petty Officer Williams.
+Dialogue: 0,1:29:34.62,1:29:35.45,Default,,0,0,0,,有什么能帮到你？\N{\rE}How can I help you?
+Dialogue: 0,1:29:35.62,1:29:37.41,Default,,0,0,0,,嗨  我想我应该告诉你\N{\rE}Yes, hi. I just thought you should know that there's a dead body...
+Dialogue: 0,1:29:37.58,1:29:40.13,Default,,0,0,0,,有一具尸体和一名可疑的副警长  被困在了丰收岛上\N{\rE}and a suspicious sheriff's deputy stranded on Harvest Key.
+Dialogue: 0,1:29:40.33,1:29:41.17,Default,,0,0,0,,你说什么？\N{\rE}Excuse me?
+Dialogue: 0,1:29:41.29,1:29:43.71,Default,,0,0,0,,你最好赶紧过去  因为我已经通知了当地媒体\N{\rE}Yeah, you'll need to get there quick 'cause I already called the local news.
+Dialogue: 0,1:29:43.88,1:29:45.96,Default,,0,0,0,,能否告诉我  你的名字和回拨号码  以备…\N{\rE}Can I get a name and callback number just in case we get...
+Dialogue: 0,1:29:52.55,1:29:53.64,Default,,0,0,0,,警长\N{\rE}Sheriff.
+Dialogue: 0,1:30:02.27,1:30:03.52,Default,,0,0,0,,我只是想谈谈\N{\rE}I just wanna talk.
+Dialogue: 0,1:30:04.48,1:30:06.36,Default,,0,0,0,,你又来抓我了？\N{\rE}Are you here to arrest me again?
+Dialogue: 0,1:30:06.44,1:30:08.36,Default,,0,0,0,,道尔顿  听着  艾莉出事了\N{\rE}Dalton, listen. It's Ellie.
+Dialogue: 0,1:30:08.53,1:30:09.95,Default,,0,0,0,,他们抓走了她\N{\rE}They have her.
+Dialogue: 0,1:30:10.11,1:30:11.12,Default,,0,0,0,,她现在在布兰特手上\N{\rE}Brandt's got her.
+Dialogue: 0,1:30:11.28,1:30:12.95,Default,,0,0,0,,他想要回他的钱  你拿走的那些钱\N{\rE}Wants his money. The money you took.
+Dialogue: 0,1:30:14.45,1:30:15.66,Default,,0,0,0,,我没有拿任何钱\N{\rE}I didn't take any money.
+Dialogue: 0,1:30:15.83,1:30:17.41,Default,,0,0,0,,我的副手都告诉我了\N{\rE}My deputy told me.
+Dialogue: 0,1:30:17.58,1:30:20.08,Default,,0,0,0,,说你讲了一堆短期记忆之类的鬼话\N{\rE}You were talking some shit about short-term memory.
+Dialogue: 0,1:30:22.67,1:30:23.67,Default,,0,0,0,,糟糕\N{\rE}Shit.
+Dialogue: 0,1:30:24.17,1:30:25.13,Default,,0,0,0,,没错  是我拿走了钱\N{\rE}Yeah, I did take it.
+Dialogue: 0,1:30:25.30,1:30:26.92,Default,,0,0,0,,你必须把钱还给他\N{\rE}You need to give it back to him.
+Dialogue: 0,1:30:27.76,1:30:30.68,Default,,0,0,0,,你…  你跟他说钱是我拿走的？\N{\rE}Right, you told him I took it?
+Dialogue: 0,1:30:31.05,1:30:33.26,Default,,0,0,0,,这不重要  反正他都会怪罪于我\N{\rE}It doesn't matter. He blames me anyway.
+Dialogue: 0,1:30:33.43,1:30:34.64,Default,,0,0,0,,他认为我在撒谎\N{\rE}He thinks I'm lying.
+Dialogue: 0,1:30:34.81,1:30:37.10,Default,,0,0,0,,因为负责处理那笔钱的人是我的副手\N{\rE}It was my deputy in charge of the goddamn money.
+Dialogue: 0,1:30:37.27,1:30:40.23,Default,,0,0,0,,你还在乎我女儿的话  就帮我把她救回来\N{\rE}If my daughter means anything to you, you'll help me get her back.
+Dialogue: 0,1:30:42.90,1:30:44.31,Default,,0,0,0,,道尔顿  听着\N{\rE}Dalton, listen.
+Dialogue: 0,1:30:45.07,1:30:48.03,Default,,0,0,0,,他说要在中午之前看到钱  不然就会杀了她\N{\rE}He wants the money by noon, or he says he'll kill her.
+Dialogue: 0,1:30:48.19,1:30:49.28,Default,,0,0,0,,我相信他真的会这么做\N{\rE}I believe him.
+Dialogue: 0,1:30:50.65,1:30:51.82,Default,,0,0,0,,请帮帮我\N{\rE}Please help me.
+Dialogue: 0,1:31:00.96,1:31:01.79,Default,,0,0,0,,好吧\N{\rE}Okay.
+Dialogue: 0,1:31:01.92,1:31:03.71,Default,,0,0,0,,谢天谢地  赶紧把钱带上\N{\rE}Oh, thank God. Let's get the money...
+Dialogue: 0,1:31:03.88,1:31:04.96,Default,,0,0,0,,钱不在这里\N{\rE}It's not here.
+Dialogue: 0,1:31:07.50,1:31:08.80,Default,,0,0,0,,多久才能拿到？\N{\rE}How long will it take?
+Dialogue: 0,1:31:08.96,1:31:10.97,Default,,0,0,0,,不知道  我把它藏了起来  需要一点时间\N{\rE}I don't know. I hid it. It's gonna take a while.
+Dialogue: 0,1:31:11.68,1:31:13.39,Default,,0,0,0,,我们在哪里会合？\N{\rE}Where should I meet you?
+Dialogue: 0,1:31:13.72,1:31:15.01,Default,,0,0,0,,我最喜欢擦拭我的船了\N{\rE}I like polishing my boat.
+Dialogue: 0,1:31:15.18,1:31:18.22,Default,,0,0,0,,对我来说  最开心的事情莫过于  看到它光亮如新…\N{\rE}Nothing makes me happier than to see it all shiny and...
+Dialogue: 0,1:31:18.68,1:31:20.73,Default,,0,0,0,,稍等  我回头再打给你  该死的  嘿！\N{\rE}Oh, hold on, I'll call you back. Shit. Hey!
+Dialogue: 0,1:31:20.93,1:31:21.98,Default,,0,0,0,,你在干什么？\N{\rE}Fuck you doing, man?
+Dialogue: 0,1:31:22.10,1:31:23.65,Default,,0,0,0,,-太好了  你来了  -那是我的船  给我下来！\N{\rE}- That's my boat, buddy. Get off! - Great, you're here.
+Dialogue: 0,1:31:23.77,1:31:26.52,Default,,0,0,0,,你想必就是那位前男友  我在找钥匙\N{\rE}You must be the ex-boyfriend. I'm just looking for the key.
+Dialogue: 0,1:31:27.40,1:31:29.03,Default,,0,0,0,,艾莉叫我来拿船\N{\rE}Ellie told me to come get the boat.
+Dialogue: 0,1:31:29.19,1:31:31.32,Default,,0,0,0,,原来在这里  找到了！\N{\rE}Here they are. Bingo!
+Dialogue: 0,1:31:32.36,1:31:33.74,Default,,0,0,0,,你就是那个混蛋保镖吧？\N{\rE}You're that bouncer asshole, aren't you?
+Dialogue: 0,1:31:33.91,1:31:36.41,Default,,0,0,0,,对  我就是那个混蛋保镖\N{\rE}Yes, I am that "bouncer asshole."
+Dialogue: 0,1:31:36.58,1:31:38.83,Default,,0,0,0,,看到这个了吗？  我可是警察  你个白痴\N{\rE}You see this right here, pal? I'm a cop, you idiot.
+Dialogue: 0,1:31:38.99,1:31:40.45,Default,,0,0,0,,放心吧  我马上就会把它开回来\N{\rE}Don't worry. I'll bring it right back.
+Dialogue: 0,1:31:40.62,1:31:42.12,Default,,0,0,0,,不行  你哪儿都别想去\N{\rE}No. Hey, you're not goin' anywhere, man.
+Dialogue: 0,1:31:43.42,1:31:44.25,Default,,0,0,0,,嘿！\N{\rE}Hey!
+Dialogue: 0,1:31:45.46,1:31:47.00,Default,,0,0,0,,你有麻烦了  给我回来\N{\rE}You're in trouble. Back it up.
+Dialogue: 0,1:31:47.54,1:31:50.17,Default,,0,0,0,,没事的  我几个小时后就回来  好吗？\N{\rE}It's fine. I'll be back in a couple hours, all right?
+Dialogue: 0,1:31:50.34,1:31:52.05,Default,,0,0,0,,一点都不好\N{\rE}Nothing is fine about this.
+Dialogue: 0,1:31:54.84,1:31:56.64,Default,,0,0,0,,好吧  你有两个小时的时间\N{\rE}Okay. Okay. You got two hours.
+Dialogue: 0,1:31:56.80,1:31:58.97,Default,,0,0,0,,给我毫发无损地把它带回来  听到了吗？\N{\rE}Bring that back without a scratch on her, you got it?
+Dialogue: 0,1:31:59.14,1:32:00.89,Default,,0,0,0,,有一点划痕都不行\N{\rE}Not one scratch.
+Dialogue: 0,1:32:01.02,1:32:03.85,Default,,0,0,0,,拜托  这是在水上  怎么会弄到划痕？\N{\rE}Come on, it's water. How am I gonna get a scratch on it?
+Dialogue: 0,1:32:17.82,1:32:19.16,Default,,0,0,0,,{\fs14\an8}超级安全驾校
+Dialogue: 0,1:32:25.17,1:32:28.88,Default,,0,0,0,,{\fs14\an8}教练车
+Dialogue: 0,1:32:39.39,1:32:42.39,Default,,0,0,0,,让我来看看这是怎么回事\N{\rE}All right. Let's see what this is about.
+Dialogue: 0,1:32:46.60,1:32:48.44,Default,,0,0,0,,人都死哪去了？\N{\rE}Where the fuck is everyone?
+Dialogue: 0,1:33:19.97,1:33:21.05,Default,,0,0,0,,有劳了\N{\rE}Thank you, sir.
+Dialogue: 0,1:33:22.60,1:33:23.56,Default,,0,0,0,,过来\N{\rE}Come here.
+Dialogue: 0,1:33:23.72,1:33:25.14,Default,,0,0,0,,钱不在船上\N{\rE}Money's not on the boat, if that's what you're looking for.
+Dialogue: 0,1:33:25.31,1:33:26.27,Default,,0,0,0,,是吗？\N{\rE}Oh, yeah?
+Dialogue: 0,1:33:26.44,1:33:28.69,Default,,0,0,0,,你应该把钱带过来的\N{\rE}Man, you were supposed to bring the money with you.
+Dialogue: 0,1:33:28.85,1:33:29.98,Default,,0,0,0,,这下布兰特要失望了\N{\rE}Brandt's gonna be disappointed.
+Dialogue: 0,1:33:30.15,1:33:31.94,Default,,0,0,0,,没关系  我会告诉他是你拿走了钱\N{\rE}That's okay. I'll just tell him you took it.
+Dialogue: 0,1:33:32.11,1:33:33.11,Default,,0,0,0,,是吗？\N{\rE}Oh, yeah?
+Dialogue: 0,1:33:37.45,1:33:38.61,Default,,0,0,0,,走吧\N{\rE}Let's go.
+Dialogue: 0,1:33:40.70,1:33:41.95,Default,,0,0,0,,这家伙\N{\rE}Oh, this guy.
+Dialogue: 0,1:33:53.50,1:33:54.67,Default,,0,0,0,,这船真不错\N{\rE}Nice boat.
+Dialogue: 0,1:34:00.05,1:34:01.68,Default,,0,0,0,,-看起来很贵的样子  -是很贵\N{\rE}- Looks expensive. - Yeah.
+Dialogue: 0,1:34:02.35,1:34:04.06,Default,,0,0,0,,这船以前是我老爸的\N{\rE}It used to be my old man's.
+Dialogue: 0,1:34:04.22,1:34:06.85,Default,,0,0,0,,他离开后  我就继承了它\N{\rE}I got it when he went away.
+Dialogue: 0,1:34:08.27,1:34:10.56,Default,,0,0,0,,连同他欠下的所有人情\N{\rE}Along with all his obligations...
+Dialogue: 0,1:34:11.27,1:34:12.56,Default,,0,0,0,,和所有债务\N{\rE}all his debts.
+Dialogue: 0,1:34:13.27,1:34:14.57,Default,,0,0,0,,所以\N{\rE}So, yeah.
+Dialogue: 0,1:34:14.65,1:34:16.49,Default,,0,0,0,,确实挺贵的\N{\rE}It's fuckin' expensive.
+Dialogue: 0,1:34:17.03,1:34:18.53,Default,,0,0,0,,说起钱\N{\rE}Speaking of which,
+Dialogue: 0,1:34:18.90,1:34:20.32,Default,,0,0,0,,我的钱呢？\N{\rE}where's my goddamn money?
+Dialogue: 0,1:34:20.41,1:34:21.32,Default,,0,0,0,,我把钱交给他了\N{\rE}Oh, I gave it to him.
+Dialogue: 0,1:34:21.99,1:34:23.28,Default,,0,0,0,,-你个混蛋  -嘿  冷静点\N{\rE}- You fucker! - Hey, calm down.
+Dialogue: 0,1:34:24.20,1:34:25.20,Default,,0,0,0,,山姆\N{\rE}Sam.
+Dialogue: 0,1:34:27.50,1:34:29.16,Default,,0,0,0,,你为什么要一直浪费我的时间？\N{\rE}Why do you keep wasting my time?
+Dialogue: 0,1:34:30.12,1:34:32.25,Default,,0,0,0,,说真的  我都告诉你  那女孩命悬一线了\N{\rE}Honestly, you were told the girl's life depended on it.
+Dialogue: 0,1:34:32.42,1:34:34.34,Default,,0,0,0,,所以我的钱呢？\N{\rE}So, where's my fucking money?
+Dialogue: 0,1:34:38.17,1:34:40.01,Default,,0,0,0,,我没看到艾莉在这里\N{\rE}I don't see Ellie anywhere.
+Dialogue: 0,1:34:40.18,1:34:42.30,Default,,0,0,0,,而且这家伙看起来悠然自得\N{\rE}And this guy looks pretty comfortable for a guy
+Dialogue: 0,1:34:42.47,1:34:44.14,Default,,0,0,0,,完全不像女儿被人绑架了\N{\rE}who just had his daughter kidnapped.
+Dialogue: 0,1:34:45.56,1:34:47.35,Default,,0,0,0,,根本没有绑架一事  蠢货\N{\rE}There's no kidnapping, dumb-ass.
+Dialogue: 0,1:34:47.93,1:34:49.48,Default,,0,0,0,,一场骗局\N{\rE}Ohh! A double-cross.
+Dialogue: 0,1:34:49.64,1:34:51.90,Default,,0,0,0,,你还真相信本绑架我女儿了？\N{\rE}You actually believed that Ben took my daughter?
+Dialogue: 0,1:34:52.06,1:34:54.02,Default,,0,0,0,,我们可是合作伙伴  白痴\N{\rE}We are partners, idiot.
+Dialogue: 0,1:34:54.19,1:34:57.11,Default,,0,0,0,,关于这点  我确实绑走了她\N{\rE}Yeah, about that. I did kinda take her.
+Dialogue: 0,1:34:57.28,1:34:58.99,Default,,0,0,0,,-什么？  -双重骗局\N{\rE}- What? - Another double-cross.
+Dialogue: 0,1:34:59.15,1:35:00.11,Default,,0,0,0,,-这是怎么回事  本？\N{\rE}What the fuck, Ben?
+Dialogue: 0,1:35:00.45,1:35:01.45,Default,,0,0,0,,-劝你别这么做\N{\rE}I wouldn't do that.
+Dialogue: 0,1:35:01.95,1:35:03.66,Default,,0,0,0,,大鸡哥  坐下\N{\rE}Big Dick, sit down.
+Dialogue: 0,1:35:04.53,1:35:06.70,Default,,0,0,0,,给我坐下！\N{\rE}Sit the fuck down!
+Dialogue: 0,1:35:07.54,1:35:09.58,Default,,0,0,0,,我怎么知道你是否可信？\N{\rE}How was I supposed to know I could trust you, huh?
+Dialogue: 0,1:35:10.16,1:35:11.92,Default,,0,0,0,,等我拿到了钱  你便可以带走她\N{\rE}Once I get my money, you can have her.
+Dialogue: 0,1:35:12.33,1:35:13.21,Default,,0,0,0,,-王八蛋！\N{\rE}Son of a bitch!
+Dialogue: 0,1:35:13.38,1:35:14.63,Default,,0,0,0,,-两位  需要给你们一点时间吗？\N{\rE}Boys, do you want me to give you a second?
+Dialogue: 0,1:35:14.79,1:35:15.79,Default,,0,0,0,,-嘿…  -够了\N{\rE}- Hey... - Stop.
+Dialogue: 0,1:35:16.09,1:35:17.80,Default,,0,0,0,,别闹了\N{\rE}Just stop!
+Dialogue: 0,1:35:21.38,1:35:22.72,Default,,0,0,0,,我想建一样东西\N{\rE}I'm trying to build somethin'.
+Dialogue: 0,1:35:25.68,1:35:28.10,Default,,0,0,0,,然而你却一再\N{\rE}You keep on pushin' me
+Dialogue: 0,1:35:28.27,1:35:30.35,Default,,0,0,0,,挑战我的底线\N{\rE}and just pushin' me.
+Dialogue: 0,1:35:30.52,1:35:33.44,Default,,0,0,0,,我简直…该死的  真可笑\N{\rE}And I just... Fuck, it's funny.
+Dialogue: 0,1:35:34.06,1:35:36.44,Default,,0,0,0,,那真是…我简直要被气疯了\N{\rE}It's like... I'm just like, "Fuck!"
+Dialogue: 0,1:35:36.61,1:35:38.07,Default,,0,0,0,,他太吵了\N{\rE}- He's noisy. - Yes.
+Dialogue: 0,1:35:38.23,1:35:40.19,Default,,0,0,0,,对  他确实很吵\N{\rE}He is noisy. He is.
+Dialogue: 0,1:35:47.78,1:35:49.83,Default,,0,0,0,,现在我只能让山姆给你一点教训了\N{\rE}Now I'm gonna have to have Sam here hurt you.
+Dialogue: 0,1:35:50.00,1:35:51.66,Default,,0,0,0,,-千万别  -我偏要\N{\rE}- Oh, no. Please. - Oh, yes.
+Dialogue: 0,1:35:51.83,1:35:52.66,Default,,0,0,0,,-请别这样  -别那样看着我\N{\rE}- Please, no. - Don't look at me like that.
+Dialogue: 0,1:35:52.83,1:35:54.75,Default,,0,0,0,,如果这招还是不行  那我就只能拿艾莉开刀了\N{\rE}Now, if that doesn't work, I'll have to get Ellie.
+Dialogue: 0,1:35:54.92,1:35:56.92,Default,,0,0,0,,届时情况将会一发不可收拾\N{\rE}And shit will get real crazy, real fast.
+Dialogue: 0,1:35:57.09,1:35:58.63,Default,,0,0,0,,-慢着  该死的  等一下！  -住口  坐下\N{\rE}- Hey, wait, goddammit. Wait! - Stop. Sit down.
+Dialogue: 0,1:36:03.13,1:36:05.64,Default,,0,0,0,,天啊  又是这该死的疯子\N{\rE}Oh, my God, this fucking psycho again.
+Dialogue: 0,1:36:08.35,1:36:10.97,Default,,0,0,0,,别让那疯子上船\N{\rE}Do not let that maniac on the boat.
+Dialogue: 0,1:36:11.85,1:36:15.27,Default,,0,0,0,,我倒是知道有个人  会对背叛这件事非常生气\N{\rE}I do know one guy who's gonna be pretty pissed about this whole betrayal thing.
+Dialogue: 0,1:36:15.44,1:36:16.77,Default,,0,0,0,,那是谁？\N{\rE}And who is that?
+Dialogue: 0,1:36:18.19,1:36:19.94,Default,,0,0,0,,只是某个混蛋警察\N{\rE}Oh, just some asshole cop.
+Dialogue: 0,1:36:21.61,1:36:23.20,Default,,0,0,0,,他在干什么？\N{\rE}What the hell is he doing?
+Dialogue: 0,1:36:23.36,1:36:25.03,Default,,0,0,0,,糟了\N{\rE}Shit.
+Dialogue: 0,1:36:25.61,1:36:27.12,Default,,0,0,0,,他到底在干什么？\N{\rE}What the fuck is he doing?
+Dialogue: 0,1:36:42.46,1:36:43.51,Default,,0,0,0,,王八蛋！\N{\rE}Motherfucker!
+Dialogue: 0,1:36:47.43,1:36:49.22,Default,,0,0,0,,艾莉！\N{\rE}Ellie? Ellie!
+Dialogue: 0,1:36:54.35,1:36:55.35,Default,,0,0,0,,着火了！\N{\rE}Fire!
+Dialogue: 0,1:36:55.81,1:36:56.65,Default,,0,0,0,,艾莉！\N{\rE}Ellie!
+Dialogue: 0,1:36:56.73,1:36:57.94,Default,,0,0,0,,弃船！\N{\rE}Abandon ship!
+Dialogue: 0,1:37:01.32,1:37:02.57,Default,,0,0,0,,艾莉！\N{\rE}Ellie!
+Dialogue: 0,1:37:02.65,1:37:03.65,Default,,0,0,0,,嘿！\N{\rE}Hey!
+Dialogue: 0,1:37:11.87,1:37:13.04,Default,,0,0,0,,艾莉！\N{\rE}Ellie!
+Dialogue: 0,1:37:19.00,1:37:20.17,Default,,0,0,0,,艾莉！\N{\rE}Ellie!
+Dialogue: 0,1:37:21.96,1:37:22.80,Default,,0,0,0,,艾莉！\N{\rE}Ellie!
+Dialogue: 0,1:37:26.47,1:37:27.30,Default,,0,0,0,,艾莉\N{\rE}Ellie.
+Dialogue: 0,1:37:28.80,1:37:30.10,Default,,0,0,0,,嘿  蠢货！\N{\rE}Hey, dickhead!
+Dialogue: 0,1:37:45.44,1:37:46.86,Default,,0,0,0,,快离开这艘船\N{\rE}Get off the boat!
+Dialogue: 0,1:37:51.03,1:37:52.58,Default,,0,0,0,,-嘿  混蛋！  -小心！\N{\rE}- Hey, asshole! - Watch out!
+Dialogue: 0,1:37:53.03,1:37:54.20,Default,,0,0,0,,你死定了！\N{\rE}You're gonna die!
+Dialogue: 0,1:37:56.54,1:37:59.25,Default,,0,0,0,,你先走  艾莉  我随后跟上  去吧\N{\rE}Go, Ellie, go. I'll be right behind you. Go.
+Dialogue: 0,1:38:09.22,1:38:10.26,Default,,0,0,0,,我他妈的…-\N{\rE}I'm gonna fucking...
+Dialogue: 0,1:38:17.27,1:38:18.14,Default,,0,0,0,,见鬼\N{\rE}Oh, fuck.
+Dialogue: 0,1:38:20.60,1:38:22.61,Default,,0,0,0,,你挑男朋友的品味真差  艾莉\N{\rE}You got shit taste in boyfriends, El.
+Dialogue: 0,1:38:23.77,1:38:25.36,Default,,0,0,0,,-别乱动！  -去你的！\N{\rE}- Don't fucking move! - Fuck you!
+Dialogue: 0,1:38:25.53,1:38:27.53,Default,,0,0,0,,我要亲手毁了那该死的路边餐馆\N{\rE}I'll just destroy the fucking Road House myself.
+Dialogue: 0,1:38:51.80,1:38:52.89,Default,,0,0,0,,你在这里\N{\rE}There ya are.
+Dialogue: 0,1:38:53.05,1:38:54.22,Default,,0,0,0,,我来帮你\N{\rE}Let me help you.
+Dialogue: 0,1:39:02.31,1:39:04.02,Default,,0,0,0,,瞧瞧\N{\rE}Lookie here.
+Dialogue: 0,1:39:04.48,1:39:07.32,Default,,0,0,0,,-我们的小八角笼  -什么？\N{\rE}- Our own little octagon. - What?
+Dialogue: 0,1:39:07.53,1:39:08.86,Default,,0,0,0,,你的几何是谁教的？\N{\rE}Who taught you shapes?
+Dialogue: 0,1:39:28.38,1:39:30.22,Default,,0,0,0,,你那该死的男朋友追来了！\N{\rE}Your fucking boyfriend!
+Dialogue: 0,1:39:33.97,1:39:35.10,Default,,0,0,0,,我们去接他吧\N{\rE}Let's pick him up.
+Dialogue: 0,1:39:53.41,1:39:54.28,Default,,0,0,0,,操你妈！-\N{\rE}You motherfucker!
+Dialogue: 0,1:40:00.83,1:40:01.91,Default,,0,0,0,,操！-\N{\rE}Fuck!
+Dialogue: 0,1:40:05.92,1:40:06.79,Default,,0,0,0,,天啊！\N{\rE}Jesus.
+Dialogue: 0,1:40:06.96,1:40:07.79,Default,,0,0,0,,道尔顿\N{\rE}Dalton.
+Dialogue: 0,1:40:12.09,1:40:13.76,Default,,0,0,0,,你想杀了我们？-\N{\rE}You trying to kill us?
+Dialogue: 0,1:40:16.26,1:40:17.30,Default,,0,0,0,,不想，走开！-\N{\rE}No. Get off!
+Dialogue: 0,1:40:20.10,1:40:21.77,Default,,0,0,0,,艾莉！你总是…-\N{\rE}Ellie! You always...
+Dialogue: 0,1:40:23.31,1:40:24.44,Default,,0,0,0,,你真是个白痴！\N{\rE}You're such an idiot!
+Dialogue: 0,1:40:35.03,1:40:36.24,Default,,0,0,0,,道尔顿  快跳！\N{\rE}Dalton, come on!
+Dialogue: 0,1:41:44.52,1:41:45.52,Default,,0,0,0,,在这等着\N{\rE}Wait here.
+Dialogue: 0,1:41:48.52,1:41:49.52,Default,,0,0,0,,天啊-\N{\rE}Oh, God.
+Dialogue: 0,1:42:29.19,1:42:30.60,Default,,0,0,0,,居然是鱼叉？\N{\rE}Fucking fishing spear?
+Dialogue: 0,1:42:30.77,1:42:31.77,Default,,0,0,0,,成功了-\N{\rE}I'm done! I'm done!
+Dialogue: 0,1:42:36.99,1:42:37.99,Default,,0,0,0,,停下-\N{\rE}Let's stop.
+Dialogue: 0,1:42:38.11,1:42:39.53,Default,,0,0,0,,不是吧\N{\rE}Oh, come on.
+Dialogue: 0,1:42:40.24,1:42:41.24,Default,,0,0,0,,我不玩了\N{\rE}I'm done.
+Dialogue: 0,1:42:43.95,1:42:44.95,Default,,0,0,0,,该死的\N{\rE}Shit.
+Dialogue: 0,1:42:47.79,1:42:50.58,Default,,0,0,0,,你摔断了我的鼻梁\N{\rE}You broke my fuckin' nose.
+Dialogue: 0,1:42:52.83,1:42:54.67,Default,,0,0,0,,我为之努力的一切…\N{\rE}Everything I fuckin' worked for...
+Dialogue: 0,1:42:55.67,1:42:57.88,Default,,0,0,0,,因为一个该死的保镖  全都付诸东流了！\N{\rE}all gone because of a fucking bouncer!
+Dialogue: 0,1:43:12.40,1:43:13.65,Default,,0,0,0,,见鬼\N{\rE}Shit.
+Dialogue: 0,1:43:29.29,1:43:31.46,Default,,0,0,0,,看来我弄伤你的腿了\N{\rE}Looks like I fucked up your leg.
+Dialogue: 0,1:43:31.54,1:43:32.62,Default,,0,0,0,,你的开车技术太烂了\N{\rE}You're a shit driver.
+Dialogue: 0,1:43:32.96,1:43:34.08,Default,,0,0,0,,靠右行驶  不太习惯\N{\rE}Wrong side of the road.
+Dialogue: 0,1:44:51.70,1:44:52.83,Default,,0,0,0,,友善点\N{\rE}Be nice.
+Dialogue: 0,1:45:13.56,1:45:14.98,Default,,0,0,0,,这架钢琴跑调了\N{\rE}This piano is out of tune.
+Dialogue: 0,1:45:15.14,1:45:16.39,Default,,0,0,0,,我听着挺好的\N{\rE}Sounds pretty good to me.
+Dialogue: 0,1:45:48.13,1:45:49.64,Default,,0,0,0,,你现在就要杀了我吗？\N{\rE}You gonna kill me now?
+Dialogue: 0,1:45:50.18,1:45:52.10,Default,,0,0,0,,还是必须先和我成为朋友？\N{\rE}I thought we had to be friends first.
+Dialogue: 0,1:46:44.07,1:46:45.07,Default,,0,0,0,,杀了他！\N{\rE}Kill him!
+Dialogue: 0,1:46:47.19,1:46:48.61,Default,,0,0,0,,快杀了他\N{\rE}Fucking joke.
+Dialogue: 0,1:46:52.12,1:46:53.12,Default,,0,0,0,,动手啊！\N{\rE}Do it!
+Dialogue: 0,1:46:54.95,1:46:56.83,Default,,0,0,0,,做你该做的事！\N{\rE}Do your fucking job!
+Dialogue: 0,1:47:03.00,1:47:04.75,Default,,0,0,0,,怎样才能让你闭嘴？\N{\rE}What does it take to shut you up?
+Dialogue: 0,1:48:31.84,1:48:32.88,Default,,0,0,0,,对不起\N{\rE}I'm sorry.
+Dialogue: 0,1:48:49.82,1:48:51.48,Default,,0,0,0,,你该走了  道尔顿\N{\rE}It's time for you to go, Dalton.
+Dialogue: 0,1:48:51.90,1:48:53.32,Default,,0,0,0,,你从未来过这里\N{\rE}You were never here.
+Dialogue: 0,1:48:53.61,1:48:55.15,Default,,0,0,0,,我会帮你善后的\N{\rE}I got you covered.
+Dialogue: 0,1:49:03.08,1:49:04.12,Default,,0,0,0,,你走吧\N{\rE}Go.
+Dialogue: 0,1:49:06.67,1:49:07.79,Default,,0,0,0,,你必须离开这里\N{\rE}You have to go.
+Dialogue: 0,1:49:46.04,1:49:47.04,Default,,0,0,0,,好吧\N{\rE}Okay.
+Dialogue: 0,1:49:48.46,1:49:49.67,Default,,0,0,0,,不算太糟糕\N{\rE}It's not so bad.
+Dialogue: 0,1:49:50.46,1:49:51.67,Default,,0,0,0,,对  还能修复\N{\rE}Yeah, no, it's fixable.
+Dialogue: 0,1:49:53.42,1:49:54.84,Default,,0,0,0,,-绝对可以  -对\N{\rE}- Definitely. - Yep.
+Dialogue: 0,1:49:54.92,1:49:56.38,Default,,0,0,0,,还能修复  这…\N{\rE}It's fixable. This is...
+Dialogue: 0,1:49:56.97,1:49:58.05,Default,,0,0,0,,-还能修复？  -对\N{\rE}-"Fixable"? - Yep.
+Dialogue: 0,1:49:58.22,1:49:59.51,Default,,0,0,0,,-酒吧里有辆卡车\N{\rE}There's a truck in the bar.
+Dialogue: 0,1:49:59.68,1:50:00.64,Default,,0,0,0,,-这…确实没错\N{\rE}That is correct.
+Dialogue: 0,1:50:00.80,1:50:03.14,Default,,0,0,0,,但只要清理掉这些东西  我们再…\N{\rE}But as soon as this is clear and we...
+Dialogue: 0,1:50:03.31,1:50:04.27,Default,,0,0,0,,好好收拾一番\N{\rE}Little elbow grease.
+Dialogue: 0,1:50:04.43,1:50:05.60,Default,,0,0,0,,就会完好如初\N{\rE}It's gonna be good as new.
+Dialogue: 0,1:50:05.77,1:50:07.60,Default,,0,0,0,,请务必小心那河豚\N{\rE}Watch out for the pufferfish, please.
+Dialogue: 0,1:50:07.77,1:50:10.15,Default,,0,0,0,,-来吧  赶紧干活  -嘿\N{\rE}- Come on, move it. - Hey.
+Dialogue: 0,1:50:10.48,1:50:12.23,Default,,0,0,0,,-什么事？  -你们今天开门营业吗？\N{\rE}- Yeah? - Are you guys open today?
+Dialogue: 0,1:50:15.78,1:50:18.11,Default,,0,0,0,,当然了  本店永远开门迎客\N{\rE}Yeah. We're always open.
+Dialogue: 0,1:50:19.41,1:50:20.41,Default,,0,0,0,,走吧-\N{\rE}Let's go.
+Dialogue: 0,1:50:21.32,1:50:22.53,Default,,0,0,0,,翻过来\N{\rE}Swing around.
+Dialogue: 0,1:50:22.70,1:50:23.70,Default,,0,0,0,,我来拿一下这个\N{\rE}Let me get this.
+Dialogue: 0,1:50:42.93,1:50:43.93,Default,,0,0,0,,嘿\N{\rE}Hey.
+Dialogue: 0,1:50:47.48,1:50:49.85,Default,,0,0,0,,这就结束了？你就这样…\N{\rE}So, this is it? You're just gonna...
+Dialogue: 0,1:50:50.02,1:50:51.94,Default,,0,0,0,,你就这样迎着日落  策马远行了？\N{\rE}You're just gonna ride off into the sunset?
+Dialogue: 0,1:50:54.23,1:50:56.36,Default,,0,0,0,,故事的结局不都这样吗？\N{\rE}That's always how the story ends, right?
+Dialogue: 0,1:51:00.53,1:51:01.91,Default,,0,0,0,,不  并非总是如此\N{\rE}No, not always.
+Dialogue: 0,1:51:02.91,1:51:05.28,Default,,0,0,0,,有时候主角会留下来\N{\rE}Sometimes the hero stays and...
+Dialogue: 0,1:51:05.45,1:51:07.04,Default,,0,0,0,,打造属于自己的小家\N{\rE}makes his own little homestead.
+Dialogue: 0,1:51:07.20,1:51:10.21,Default,,0,0,0,,我想这个故事的主角并不是我  查莉\N{\rE}I don't think I'm the hero in this particular story, Charlie.
+Dialogue: 0,1:51:14.42,1:51:16.71,Default,,0,0,0,,你也许不是主角\N{\rE}So, maybe you're not the hero.
+Dialogue: 0,1:51:18.42,1:51:20.38,Default,,0,0,0,,但我可以告诉你\N{\rE}I got news for you.
+Dialogue: 0,1:51:21.18,1:51:22.72,Default,,0,0,0,,你也不是反派\N{\rE}You ain't the villain either.
+Dialogue: 0,1:51:31.35,1:51:32.35,Default,,0,0,0,,查莉！\N{\rE}Charlie!
+Dialogue: 0,1:51:55.58,1:51:57.09,Default,,0,0,0,,-你没事吧？  -没事\N{\rE}- You good? - Yeah, I'm good.
+Dialogue: 0,1:51:57.25,1:51:59.26,Default,,0,0,0,,-别闹了  伙计  -你最好保持警惕\N{\rE}- Shut up, man. - You better stay on your toes.
+Dialogue: 0,1:51:59.42,1:52:01.13,Default,,0,0,0,,-不管他走没走  -闭嘴\N{\rE}- Don't matter if he gone. - Shut up.
+Dialogue: 0,1:53:40.56,1:53:41.61,Default,,0,0,0,,来啊  你个娘娘腔！\N{\rE}Come on, you pussy!
+Dialogue: 0,1:54:21.65,1:54:22.69,Default,,0,0,0,,拦住那个人！\N{\rE}Stop that man!
+Dialogue: 0,2:01:06.63,2:01:10.32,Default,,0,0,0,,新威龙杀阵
+
+
