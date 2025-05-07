@@ -1,0 +1,1731 @@
+﻿[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: YYeTs
+Original Script: YYeTs
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Reverse
+PlayResX: 1920
+PlayResY: 1080
+Timer: 100.0000
+Synch Point: 0
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,0,2,3,2,20,20,20,0
+Style: CHS,Microsoft YaHei,52,&H00FFFFFF,&HFFFFFFFF,&H96000000,&H66000000,0,0,0,0,100,100,2,0,1,1,2,2,0,0,38,134
+Style: ENG,Microsoft YaHei,30,&H00D8F800,&H000000FF,&H96000000,&H66000000,-1,0,0,0,100,100,0,0,1,1,2,2,0,0,38,1
+Style: ZHU,Microsoft YaHei,60,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,0,0,0,2,0,0,36,134
+Style: zhu,Microsoft YaHei,60,&H00C6EAF1,&H00FFFFFF,&H001200E6,&HFF000000,-1,0,0,0,100,100,0,0,3,1,0,1,0,0,36,134
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.50,0:00:08.10,Default,NTP,0,0,0,,{\fad(1500,500)\pos(192.4,191.467)\c&H5A4F51&}卢卡斯电影公司
+Dialogue: 0,0:00:10.40,0:00:15.45,Default,NTP,0,0,0,,{\1c&H00929812\fad(300,300)\pos(530,700)\fs16\fscy105\bord0\shad0}很久很久以前，在一个遥远的银河星系....
+Dialogue: 0,0:00:43.00,0:00:46.00,Default,NTP,0,0,0,,{\pos(380,230)\an6}拉穆行星
+Dialogue: 0,0:07:46.60,0:07:47.60,Default,NTP,0,0,0,,{\1c&H00000000\3c&H00069BA9\move(193,253,193,244)\fs56\fsp10\t(0.6,\fs50\fsp8)\fn宋体\fscy110\bord3\shad0}侠盗一号
+Dialogue: 0,0:07:47.60,0:07:57.00,Default,NTP,0,0,0,,{\1c&H00000000\3c&H00069BA9\t(7000,8000,\3c&H0013465B)\move(193,244,193,190)\fad(0,1500)\fs50\fsp8\bord3\t(0.6,\fs22\fsp5\bord1.5)\fn宋体\fscy110\shad0}侠盗一号
+Dialogue: 0,0:08:46.10,0:08:50.50,Default,NTP,0,0,0,,{\fs16\c&HF6EFF1&\pos(81.735,240.888)}卡夫林环
+Dialogue: 0,0:08:46.10,0:08:50.50,Default,NTP,0,0,0,,{\fs9\c&HF8EFF1&\fnFZZhongDengXian-Z07S\pos(77.6,250.133)}贸易前哨
+Dialogue: 0,0:11:05.20,0:11:09.90,Default,NTP,0,0,0,,{\fs14\c&HFBF2F4&\pos(314.935,193.955)}杰达
+Dialogue: 0,0:11:05.20,0:11:09.90,Default,NTP,0,0,0,,{\fs9\c&HF6EEF0&\fnFZZhongDengXian-Z07S\pos(305.734,204.267)}帝国占领伴星
+Dialogue: 0,0:11:28.00,0:11:28.50,CHS,NTP,0,0,0,,{\fs16\pos(192,248.533)}先生
+Dialogue: 0,0:11:40.23,0:11:41.53,CHS,NTP,0,0,0,,{\fs16\pos(198,248.533)}注意脚下！
+Dialogue: 0,0:11:41.78,0:11:43.83,CHS,NTP,0,0,0,,{\fs16\pos(198,248.533)}是飞行员... 那个叛逃者.
+Dialogue: 0,0:11:57.05,0:11:58.05,CHS,NTP,0,0,0,,{\fs16\pos(198,248.533)}把头低下！
+Dialogue: 0,0:11:58.30,0:12:00.05,CHS,NTP,0,0,0,,{\fs16\pos(198,248.533)}帝国士兵将会搜捕他...
+Dialogue: 0,0:12:22.00,0:12:24.75,Default,NTP,0,0,0,,{\fs16\c&HF8F2F3&\pos(78.535,232.887)}沃巴尼
+Dialogue: 0,0:12:28.15,0:12:32.20,Default,NTP,0,0,0,,{\fs9\c&HF5F0F1&\fnFZZhongDengXian-Z07S\pos(78.134,235.733)}帝国劳改营
+Dialogue: 0,0:13:42.10,0:13:45.30,Default,NTP,0,0,0,,{\fs14\c&HE9E9F4&\3c&H0E0E0F&\3a&H00&\pos(82.935,231.821)}雅文四号
+Dialogue: 0,0:13:48.80,0:13:53.05,Default,NTP,0,0,0,,{\fs9\c&HFAF3F3&\fnFZZhongDengXian-Z07S\pos(337.334,231.466)}起义军同盟总部
+Dialogue: 0,0:20:36.61,0:20:39.21,CHS,NTP,0,0,0,,{\fs16\pos(198,248.533)}这是他被抓时在他鞋子里找到的.
+Dialogue: 0,0:36:51.34,0:36:53.90,CHS,NTP,0,0,0,,{\fs16\pos(198,248.533)}你跟那个杀了我们的人的家伙说吧.
+Dialogue: 0,0:36:58.60,0:37:00.70,CHS,NTP,0,0,0,,{\fs16\pos(198,248.533)}你何出此言？
+Dialogue: 0,0:37:04.80,0:37:05.80,CHS,NTP,0,0,0,,{\fs16\pos(198,248.533)}带他们走！
+Dialogue: 0,0:56:15.50,0:56:19.20,Default,NTP,0,0,0,,{\fs14\c&HF7F5F5&\pos(73.735,242.488)}伊杜
+Dialogue: 0,0:56:15.50,0:56:19.20,Default,NTP,0,0,0,,{\fs9\c&HFBF8F8&\fnFZZhongDengXian-Z07S\pos(92.134,251.2)}帝国凯伯水晶精炼厂
+Dialogue: 0,1:12:53.00,1:12:56.00,Default,NTP,0,0,0,,{\pos(380,230)\an6}穆斯塔法
+Dialogue: 0,1:23:31.40,1:23:36.45,Default,NTP,0,0,0,,{\fs16\c&HF7F5F5&\pos(84.135,245.154)}斯卡里夫
+Dialogue: 0,1:23:31.40,1:23:36.45,Default,NTP,0,0,0,,{\fs9\c&HF7EEF0&\fnFZZhongDengXian-Z07S\pos(89.334,254.933)}帝国综合安保中心
+Dialogue: 0,2:05:42.20,2:05:43.80,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(186.8,203.2)}导演\N{\fs20\1c&HD59806&}加里斯·爱德华斯
+Dialogue: 0,2:05:44.20,2:05:46.90,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(186.8,203.2)}编剧\N{\fs20\1c&HD59806&}克里斯·韦兹  托尼·吉尔罗伊
+Dialogue: 0,2:05:47.40,2:05:50.10,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(186.8,203.2)}故事\N{\fs20\1c&HD59806&}约翰·诺尔  加里·威塔
+Dialogue: 0,2:05:50.60,2:05:52.90,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(186.8,203.2)}原着创意作者\N{\fs20\1c&HD59806&}乔治·卢卡斯
+Dialogue: 0,2:05:53.40,2:05:56.50,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(189.2,248.533)}制片人\N{\fs18\1c&HD59806&} 凯瑟琳·肯尼迪\N{\fs18\1c&HD59806&}爱丽森·希阿莫\N{\fs18\1c&HD59806&}西蒙·艾曼纽尔
+Dialogue: 0,2:05:57.00,2:05:59.60,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(190.8,228.8)}执行制片人\N{\fs20\1c&HD59806&}约翰·诺尔\N{\fs20\1c&HD59806&}杰森·麦克盖特林
+Dialogue: 0,2:06:00.10,2:06:02.40,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(190.4,204.8)}摄影指导\N{\fs20\1c&HD59806&}格雷格·弗莱瑟
+Dialogue: 0,2:06:02.90,2:06:05.60,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(190.4,249.6)}艺术指导\N{\fs20\1c&HD59806&}江道格\N{\fs14\1c&HD59806&\pos(190.4,204.8)}和\N{\fs20\1c&HD59806&}尼尔·拉蒙特
+Dialogue: 0,2:06:06.00,2:06:09.05,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(189.867,248.888)}剪辑\N{\fs18\1c&HD59806&}约翰·吉尔瑞\N{\fs18\1c&HD59806&}杰贝兹·奥尔森\N{\fs18\1c&HD59806&} 科林·高尔迪
+Dialogue: 0,2:06:09.50,2:06:11.90,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(190.4,204.8)}音乐\N{\fs20\1c&HD59806&}迈克·吉亚奇诺
+Dialogue: 0,2:06:12.40,2:06:14.70,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(190.4,204.8)}星球大战原创音乐\N{\fs20\1c&HD59806&}约翰·威廉姆斯
+Dialogue: 0,2:06:15.20,2:06:17.90,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(190.8,226.667)}服装设计\N{\fs20\1c&HD59806&}格林·狄龙\N{\fs20\1c&HD59806&}达夫·克罗斯曼
+Dialogue: 0,2:06:18.30,2:06:21.50,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(190.8,249.6)}联合制片人\N{\fs18\1c&HD59806&}约翰·斯沃兹\N{\fs18\1c&HD59806&}苏珊·陶纳\N{\fs18\1c&HD59806&}凯利·哈特
+Dialogue: 0,2:06:21.80,2:06:24.60,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(192.4,228.267)}视觉特效总监\N{\fs20\1c&HD59806&}约翰·诺尔\N{\fs20\1c&HD59806&}摩恩·里奥
+Dialogue: 0,2:06:25.10,2:06:27.45,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(192,202.667)}生物特效化妆\N{\fs20\1c&HD59806&}尼尔·斯坎伦
+Dialogue: 0,2:06:27.90,2:06:30.70,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(191.2,227.734)}视觉特效制片人\N{\fs20\1c&HD59806&}珍妮特·勒文\N{\fs20\1c&HD59806&}艾琳·迪塞尔特
+Dialogue: 0,2:06:31.10,2:06:33.45,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(191.2,203.734)}选角导演\N{\fs20\1c&HD59806&}吉娜·杰
+Dialogue: 0,2:06:33.90,2:06:36.30,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(192.4,178.667)}菲丽希缇·琼斯
+Dialogue: 0,2:06:36.70,2:06:39.10,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(192.4,178.667)}迭戈·鲁纳
+Dialogue: 0,2:06:39.50,2:06:41.90,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(192.4,178.667)}本·门德尔森
+Dialogue: 0,2:06:42.40,2:06:44.75,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(192.4,178.667)}甄子丹
+Dialogue: 0,2:06:45.20,2:06:47.60,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(192.4,178.667)}麦斯·米科尔森
+Dialogue: 0,2:06:48.00,2:06:50.50,Default,NTP,0,0,0,,{\fs20\\1c&HD59806&\pos(192.4,178.667)}艾伦·图代克
+Dialogue: 0,2:06:50.90,2:06:53.35,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(192.4,178.667)}里兹·阿迈德
+Dialogue: 0,2:06:53.80,2:06:56.15,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(192.4,178.667)}吉米·史密斯
+Dialogue: 0,2:06:56.60,2:06:59.00,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(192.8,201.6)}詹姆斯·厄尔·琼斯\N{\fs14\1c&HD59806&}黑武士达斯·维达配音
+Dialogue: 0,2:06:59.50,2:07:01.90,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(193.2,202.133)}以及\N{\fs20\1c&HD59806&}姜文
+Dialogue: 0,2:07:02.40,2:07:04.70,Default,NTP,0,0,0,,{\fs14\1c&HD59806&\pos(193.2,202.133)}以及\N{\fs20\1c&HD59806&}福里斯特·惠特克
+Dialogue: 0,2:07:05.20,2:07:07.60,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(190,179.733)}卢卡斯电影公司  {\fs14\1c&HD59806&}荣誉出品
+Dialogue: 0,2:07:08.00,2:07:10.45,Default,NTP,0,0,0,,{\fs20\1c&HD59806&\pos(190,179.733)}加里斯·爱德华斯  {\fs14\1c&HD59806&}作品
+Dialogue: 0,0:01:30.52,0:01:31.84,CHS,NTP,0,0,0,,- 妈妈 - 我们知道\N{\rENG}- Mama! - We know.{\r}
+Dialogue: 0,0:01:32.00,0:01:34.15,CHS,NTP,0,0,0,,琴 收拾东西 该走了\N{\rENG}Jyn, gather your things. It's time.{\r}
+Dialogue: 0,0:01:45.48,0:01:47.79,CHS,NTP,0,0,0,,- 喂 - 索 我是丽拉\N{\rENG}- Hello? - Saw, it's Lyra.{\r}
+Dialogue: 0,0:01:48.68,0:01:51.51,CHS,NTP,0,0,0,,出事了 他来抓我们了\N{\rENG}It's happened. He's come for us.{\r}
+Dialogue: 0,0:01:51.68,0:01:53.27,CHS,NTP,0,0,0,,按计划行事\N{\rENG}You know what to do.{\r}
+Dialogue: 0,0:02:10.44,0:02:11.87,CHS,NTP,0,0,0,,琴 过来\N{\rENG}Jyn, come here.{\r}
+Dialogue: 0,0:02:12.44,0:02:14.83,CHS,NTP,0,0,0,,记住了 无论我做什么\N{\rENG}Remember, whatever I do,{\r}
+Dialogue: 0,0:02:15.00,0:02:16.99,CHS,NTP,0,0,0,,都是为了保护你\N{\rENG}I do it to protect you.{\r}
+Dialogue: 0,0:02:17.16,0:02:18.83,CHS,NTP,0,0,0,,知道吗\N{\rENG}Say you understand.{\r}
+Dialogue: 0,0:02:19.48,0:02:21.31,CHS,NTP,0,0,0,,我知道 爸爸\N{\rENG}I understand.{\r}
+Dialogue: 0,0:02:25.40,0:02:26.39,CHS,NTP,0,0,0,,我爱你 星尘\N{\rENG}I love you, Stardust.{\r}
+Dialogue: 0,0:02:27.04,0:02:29.03,CHS,NTP,0,0,0,,我也爱你 爸爸\N{\rENG}I love you, too, Papa.{\r}
+Dialogue: 0,0:02:29.20,0:02:30.47,CHS,NTP,0,0,0,,盖伦\N{\rENG}Galen.{\r}
+Dialogue: 0,0:02:33.24,0:02:34.46,CHS,NTP,0,0,0,,走\N{\rENG}Go.{\r}
+Dialogue: 0,0:02:54.20,0:02:55.71,CHS,NTP,0,0,0,,琴\N{\rENG}Jyn.{\r}
+Dialogue: 0,0:02:58.84,0:02:59.83,CHS,NTP,0,0,0,,你知道要去哪的，是不是\N{\rENG}You know where to go, don't you?{\r}
+Dialogue: 0,0:03:05.24,0:03:06.27,CHS,NTP,0,0,0,,一定要相信原力\N{\rENG}Trust the Force.{\r}
+Dialogue: 0,0:03:39.44,0:03:41.71,CHS,NTP,0,0,0,,找到你可真不容易啊 盖伦\N{\rENG}You're a hard man to find, Galen.{\r}
+Dialogue: 0,0:03:41.84,0:03:44.15,CHS,NTP,0,0,0,,当农民了\N{\rENG}But farming...{\r}
+Dialogue: 0,0:03:44.32,0:03:46.99,CHS,NTP,0,0,0,,何必呢 大材小用\N{\rENG}Really? Man of your talents?{\r}
+Dialogue: 0,0:03:47.76,0:03:49.59,CHS,NTP,0,0,0,,这儿的生活平静\N{\rENG}It's a peaceful life.{\r}
+Dialogue: 0,0:03:50.16,0:03:52.19,CHS,NTP,0,0,0,,不过也很孤独吧\N{\rENG}It's lonely, I imagine.{\r}
+Dialogue: 0,0:03:55.44,0:03:56.92,CHS,NTP,0,0,0,,丽拉去世了\N{\rENG}Since Lyra died, yes.{\r}
+Dialogue: 0,0:03:57.72,0:03:58.83,CHS,NTP,0,0,0,,噢\N{\rENG}Oh.{\r}
+Dialogue: 0,0:04:00.84,0:04:02.06,CHS,NTP,0,0,0,,呃\N{\rENG}Oh...{\r}
+Dialogue: 0,0:04:08.04,0:04:10.15,CHS,NTP,0,0,0,,节哀顺变\N{\rENG}My condolences.{\r}
+Dialogue: 0,0:04:11.52,0:04:13.35,CHS,NTP,0,0,0,,搜查房子\N{\rENG}Search the house.{\r}
+Dialogue: 0,0:04:21.72,0:04:23.31,CHS,NTP,0,0,0,,你想要什么\N{\rENG}What is it you want?{\r}
+Dialogue: 0,0:04:23.48,0:04:26.47,CHS,NTP,0,0,0,,工程停顿了 我需要你回来\N{\rENG}The work has stalled. I need you to come back.{\r}
+Dialogue: 0,0:04:27.48,0:04:28.99,CHS,NTP,0,0,0,,我不会答应的\N{\rENG}I won't do it, Krennic.{\r}
+Dialogue: 0,0:04:29.16,0:04:30.64,CHS,NTP,0,0,0,,我们站在历史的转折点\N{\rENG}We were on the verge of greatness.{\r}
+Dialogue: 0,0:04:30.72,0:04:32.39,CHS,NTP,0,0,0,,只差一小步\N{\rENG}We were this close{\r}
+Dialogue: 0,0:04:32.56,0:04:35.75,CHS,NTP,0,0,0,,就能奠定银河系的和平与安定了 盖伦\N{\rENG}to providing peace and security for the galaxy.{\r}
+Dialogue: 0,0:04:36.32,0:04:38.11,CHS,NTP,0,0,0,,那是恐怖 不是和平\N{\rENG}You're confusing peace with terror.{\r}
+Dialogue: 0,0:04:38.28,0:04:39.27,CHS,NTP,0,0,0,,好吧\N{\rENG}Well,{\r}
+Dialogue: 0,0:04:39.84,0:04:41.91,CHS,NTP,0,0,0,,万事开头难\N{\rENG}you have to start somewhere.{\r}
+Dialogue: 0,0:04:47.88,0:04:49.95,CHS,NTP,0,0,0,,我帮不了你 科伦尼克\N{\rENG}I'd be of no help, Krennic.{\r}
+Dialogue: 0,0:04:51.20,0:04:52.79,CHS,NTP,0,0,0,,我精力不如从前了\N{\rENG}My mind just isn't what it was.{\r}
+Dialogue: 0,0:04:52.96,0:04:54.55,CHS,NTP,0,0,0,,记忆力差不说\N{\rENG}I have trouble remembering.{\r}
+Dialogue: 0,0:04:55.84,0:04:56.99,CHS,NTP,0,0,0,,还总忘事\N{\rENG}Even simple things.{\r}
+Dialogue: 0,0:04:58.68,0:04:59.83,CHS,NTP,0,0,0,,盖伦\N{\rENG}Galen...{\r}
+Dialogue: 0,0:05:00.40,0:05:03.47,CHS,NTP,0,0,0,,你才华过人 可撒谎技术太差\N{\rENG}You're an inspired scientist, but you're a terrible liar.{\r}
+Dialogue: 0,0:05:04.04,0:05:06.84,CHS,NTP,0,0,0,,虽然也很努力地想\N{\rENG}Now, I admire the effort. I really do.{\r}
+Dialogue: 0,0:05:07.48,0:05:09.79,CHS,NTP,0,0,0,,噢 看呐 丽拉死而复生了\N{\rENG}Oh, look, here's Lyra, back from the dead.{\r}
+Dialogue: 0,0:05:10.56,0:05:11.78,CHS,NTP,0,0,0,,太神奇了\N{\rENG}It's a miracle.{\r}
+Dialogue: 0,0:05:15.04,0:05:16.03,CHS,NTP,0,0,0,,站住\N{\rENG}Stop!{\r}
+Dialogue: 0,0:05:19.60,0:05:20.87,CHS,NTP,0,0,0,,噢 丽拉\N{\rENG}Oh, Lyra,{\r}
+Dialogue: 0,0:05:21.44,0:05:22.84,CHS,NTP,0,0,0,,你又来找我的麻烦了\N{\rENG}troublesome as ever.{\r}
+Dialogue: 0,0:05:23.00,0:05:24.79,CHS,NTP,0,0,0,,你别想带走他\N{\rENG}You're not taking him.{\r}
+Dialogue: 0,0:05:24.96,0:05:27.03,CHS,NTP,0,0,0,,不 当然不 我带你们一起走\N{\rENG}No, of course I'm not. I'm taking you all.{\r}
+Dialogue: 0,0:05:27.68,0:05:30.40,CHS,NTP,0,0,0,,全家人 你和孩子 去过好日子\N{\rENG}You'll all come. You, your child. You'll all live in comfort.{\r}
+Dialogue: 0,0:05:31.16,0:05:32.35,CHS,NTP,0,0,0,,做你的人质\N{\rENG}As hostages.{\r}
+Dialogue: 0,0:05:32.56,0:05:35.95,CHS,NTP,0,0,0,,我是 让你们做帝国的英雄\N{\rENG}As heroes of the Empire.{\r}
+Dialogue: 0,0:05:36.12,0:05:36.99,CHS,NTP,0,0,0,,丽拉\N{\rENG}Lyra.{\r}
+Dialogue: 0,0:05:38.09,0:05:39.03,CHS,NTP,0,0,0,,放下枪\N{\rENG}Put it down.{\r}
+Dialogue: 0,0:05:40.56,0:05:42.67,CHS,NTP,0,0,0,,你想想清楚\N{\rENG}Think very carefully.{\r}
+Dialogue: 0,0:05:50.16,0:05:51.83,CHS,NTP,0,0,0,,- 你不会得逞的 - 动手\N{\rENG}- You will never win. - Do it.{\r}
+Dialogue: 0,0:05:54.44,0:05:55.87,CHS,NTP,0,0,0,,丽拉\N{\rENG}Lyra!{\r}
+Dialogue: 0,0:05:56.72,0:05:57.63,CHS,NTP,0,0,0,,丽拉\N{\rENG}Lyra!{\r}
+Dialogue: 0,0:06:00.20,0:06:01.27,CHS,NTP,0,0,0,,他还有个孩子\N{\rENG}They have a child!{\r}
+Dialogue: 0,0:06:02.72,0:06:04.23,CHS,NTP,0,0,0,,找到她\N{\rENG}Find it!{\r}
+Dialogue: 0,0:07:34.00,0:07:35.15,CHS,NTP,0,0,0,,孩子\N{\rENG}My child!{\r}
+Dialogue: 0,0:07:36.72,0:07:37.94,CHS,NTP,0,0,0,,过来\N{\rENG}Come.{\r}
+Dialogue: 0,0:07:39.56,0:07:41.15,CHS,NTP,0,0,0,,来\N{\rENG}Come.{\r}
+Dialogue: 0,0:07:41.80,0:07:44.67,CHS,NTP,0,0,0,,我们还有很长的一段路要走呢\N{\rENG}We have a long ride ahead of us.{\r}
+Dialogue: 0,0:08:22.72,0:08:24.04,CHS,NTP,0,0,0,,安全检查\N{\rENG}Check in security,{\r}
+Dialogue: 0,0:08:24.12,0:08:26.43,CHS,NTP,0,0,0,,牢房4227\N{\rENG}cell block 4227.{\r}
+Dialogue: 0,0:08:27.80,0:08:29.59,CHS,NTP,0,0,0,,{\blur2\fnMicrosoft YaHei\fs16\1c&H0076EE&\4c&H39431B&\b1}4227\N4227.{\r}
+Dialogue: 0,0:09:13.80,0:09:17.91,CHS,NTP,0,0,0,,{\blur2\fnMicrosoft YaHei\fs16\1c&H0076EE&\4c&H39431B&\b1}TK-62 XX-25900\NTK-62, XX-25900.{\r}
+Dialogue: 0,0:09:30.92,0:09:32.27,CHS,NTP,0,0,0,,再不来我就要走了\N{\rENG}I was about to leave.{\r}
+Dialogue: 0,0:09:32.44,0:09:33.79,CHS,NTP,0,0,0,,我已经很快了\N{\rENG}I came as fast as I could.{\r}
+Dialogue: 0,0:09:33.96,0:09:35.87,CHS,NTP,0,0,0,,我必须回到船上 跟我走\N{\rENG}I have to get back on board. Walk with me.{\r}
+Dialogue: 0,0:09:36.04,0:09:36.91,CHS,NTP,0,0,0,,回杰达吗\N{\rENG}Back to Jedha?{\r}
+Dialogue: 0,0:09:37.08,0:09:38.11,CHS,NTP,0,0,0,,他们不会等我的\N{\rENG}They'll leave without me.{\r}
+Dialogue: 0,0:09:38.28,0:09:40.15,CHS,NTP,0,0,0,,等等 你有杰达的消息\N{\rENG}Easy! You have news from Jedha.{\r}
+Dialogue: 0,0:09:40.32,0:09:41.72,CHS,NTP,0,0,0,,快说\N{\rENG}Come on.{\r}
+Dialogue: 0,0:09:43.16,0:09:45.99,CHS,NTP,0,0,0,,是这么回事 有一个帝国货船飞行员\N{\rENG}An Imperial pilot, one of the cargo drivers{\r}
+Dialogue: 0,0:09:46.16,0:09:47.35,CHS,NTP,0,0,0,,昨天叛逃了\N{\rENG}he defected yesterday.{\r}
+Dialogue: 0,0:09:48.04,0:09:50.15,CHS,NTP,0,0,0,,他说帝国在建造一种武器\N{\rENG}He's telling people they're making a weapon.{\r}
+Dialogue: 0,0:09:50.36,0:09:52.11,CHS,NTP,0,0,0,,凯伯水晶就用在这种武器上\N{\rENG}The kyber crystals, that's what they're for.{\r}
+Dialogue: 0,0:09:52.32,0:09:53.19,CHS,NTP,0,0,0,,什么样的武器\N{\rENG}What kind of weapon?{\r}
+Dialogue: 0,0:09:53.40,0:09:54.74,CHS,NTP,0,0,0,,我必须要走了\N{\rENG}Look, I have to go.{\r}
+Dialogue: 0,0:09:54.74,0:09:55.86,CHS,NTP,0,0,0,,是什么样的武器\N{\rENG}What kind of weapon?{\r}
+Dialogue: 0,0:09:56.04,0:09:57.00,CHS,NTP,0,0,0,,行星杀手\N{\rENG}A planet killer!{\r}
+Dialogue: 0,0:09:57.40,0:09:58.68,CHS,NTP,0,0,0,,这是他的原话\N{\rENG}That's what he called it!{\r}
+Dialogue: 0,0:09:58.84,0:10:00.05,CHS,NTP,0,0,0,,行星杀手\N{\rENG}A planet killer?{\r}
+Dialogue: 0,0:10:00.92,0:10:02.46,CHS,NTP,0,0,0,,一个叫厄索的人派他来\N{\rENG}Someone named Erso sent him.{\r}
+Dialogue: 0,0:10:02.46,0:10:03.79,CHS,NTP,0,0,0,,那个人是索的老朋友\N{\rENG}Some old friend of Saw's.{\r}
+Dialogue: 0,0:10:03.96,0:10:05.79,CHS,NTP,0,0,0,,盖伦·厄索 是不是\N{\rENG}Galen Erso? Was it?{\r}
+Dialogue: 0,0:10:06.00,0:10:08.35,CHS,NTP,0,0,0,,我不知道 我们走的时候他们正在找索\N{\rENG}I don't know! They were looking for Saw when we left.{\r}
+Dialogue: 0,0:10:08.52,0:10:10.05,CHS,NTP,0,0,0,,还有谁知道这件事\N{\rENG}Who else knows about this?{\r}
+Dialogue: 0,0:10:10.05,0:10:10.79,CHS,NTP,0,0,0,,我真的不知道\N{\rENG}I have no idea.{\r}
+Dialogue: 0,0:10:11.40,0:10:13.23,CHS,NTP,0,0,0,,我们暴露了\N{\rENG}It's all falling apart.{\r}
+Dialogue: 0,0:10:13.96,0:10:14.67,CHS,NTP,0,0,0,,索说得对\N{\rENG}Saw's right.{\r}
+Dialogue: 0,0:10:14.88,0:10:17.11,CHS,NTP,0,0,0,,到处都是帝国的间谍\N{\rENG}There's spies everywhere.{\r}
+Dialogue: 0,0:10:17.92,0:10:18.59,CHS,NTP,0,0,0,,怎么回事\N{\rENG}What's all this?{\r}
+Dialogue: 0,0:10:20.04,0:10:21.67,CHS,NTP,0,0,0,,把你们的扫瞄证件拿出来\N{\rENG}Come on, let's see some scandocs.{\r}
+Dialogue: 0,0:10:21.84,0:10:24.56,CHS,NTP,0,0,0,,好的 稍等 我手上没拿\N{\rENG}Yeah, of course. Just... My gloves.{\r}
+Dialogue: 0,0:10:28.20,0:10:29.79,CHS,NTP,0,0,0,,不\N{\rENG}No!{\r}
+Dialogue: 0,0:10:29.96,0:10:31.71,CHS,NTP,0,0,0,,你干什么\N{\rENG}What have you done?{\r}
+Dialogue: 0,0:10:32.92,0:10:34.67,CHS,NTP,0,0,0,,士兵中弹 9区\N{\rENG}Troopers down. Section 9.{\r}
+Dialogue: 0,0:10:34.84,0:10:36.03,CHS,NTP,0,0,0,,你疯了吗\N{\rENG}Are you crazy?{\r}
+Dialogue: 0,0:10:36.68,0:10:38.99,CHS,NTP,0,0,0,,我的手受伤了 没办法爬出去了\N{\rENG}I'll never climb out of here. My arm!{\r}
+Dialogue: 0,0:10:39.20,0:10:40.27,CHS,NTP,0,0,0,,快让开\N{\rENG}Get out of the way.{\r}
+Dialogue: 0,0:10:40.44,0:10:41.35,CHS,NTP,0,0,0,,快 快\N{\rENG}Move! Move!{\r}
+Dialogue: 0,0:10:42.64,0:10:45.07,CHS,NTP,0,0,0,,嗨 冷静点儿 冷静点儿\N{\rENG}Hey. Calm down. Calm down.{\r}
+Dialogue: 0,0:10:46.04,0:10:47.79,CHS,NTP,0,0,0,,不会有事的\N{\rENG}It will be all right.{\r}
+Dialogue: 0,0:11:34.24,0:11:35.75,CHS,NTP,0,0,0,,是他吗\N{\rENG}Is that him?{\r}
+Dialogue: 0,0:11:35.96,0:11:39.43,CHS,NTP,0,0,0,,他看起来 跟我想像的不太一样啊\N{\rENG}He looks kind of different to how I imagined.{\r}
+Dialogue: 0,0:11:44.04,0:11:47.55,CHS,NTP,0,0,0,,好吧 你是索·格瑞拉\N{\rENG}Okay. So you're Saw Gerrera?{\r}
+Dialogue: 0,0:11:47.72,0:11:48.67,CHS,NTP,0,0,0,,索·格瑞拉\N{\rENG}Saw Gerrera?{\r}
+Dialogue: 0,0:11:49.56,0:11:50.55,CHS,NTP,0,0,0,,不是\N{\rENG}No?{\r}
+Dialogue: 0,0:11:51.56,0:11:53.07,CHS,NTP,0,0,0,,我们这是在浪费时间\N{\rENG}Okay, we're just wasting time that we don't have.{\r}
+Dialogue: 0,0:11:53.24,0:11:55.07,CHS,NTP,0,0,0,,我必须见索·格瑞拉 我说了很多遍了\N{\rENG}I need to speak to Saw Gerrera. I keep telling them.{\r}
+Dialogue: 0,0:11:55.24,0:11:56.83,CHS,NTP,0,0,0,,不能再耽误了\N{\rENG}Before it's too late.{\r}
+Dialogue: 0,0:12:00.48,0:12:01.55,CHS,NTP,0,0,0,,我们在荒郊野外干什么\N{\rENG}We're out here in the middle of nowhere.{\r}
+Dialogue: 0,0:12:01.72,0:12:03.39,CHS,NTP,0,0,0,,我们 我们必须去杰达城里\N{\rENG}We need to get to Jedha City.{\r}
+Dialogue: 0,0:12:03.56,0:12:06.79,CHS,NTP,0,0,0,,我有紧急情报 你们懂不懂\N{\rENG}What part of "urgent message" do you guys not understand?{\r}
+Dialogue: 0,0:12:08.88,0:12:10.28,CHS,NTP,0,0,0,,我是自己人\N{\rENG}We are all on the same side.{\r}
+Dialogue: 0,0:12:10.44,0:12:12.95,CHS,NTP,0,0,0,,你们别只看制服不看人呐\N{\rENG}If you just see past the uniform for a minute.{\r}
+Dialogue: 0,0:12:54.80,0:12:55.99,CHS,NTP,0,0,0,,怎么了\N{\rENG}What now?{\r}
+Dialogue: 0,0:12:56.80,0:12:59.36,CHS,NTP,0,0,0,,不知道 肯定是要接人\N{\rENG}I don't know. Must be another pickup.{\r}
+Dialogue: 0,0:13:00.64,0:13:01.96,CHS,NTP,0,0,0,,我以为人都齐了\N{\rENG}I thought we had everybody.{\r}
+Dialogue: 0,0:13:09.44,0:13:10.27,CHS,NTP,0,0,0,,安全了 长官\N{\rENG}All clear, sir.{\r}
+Dialogue: 0,0:13:10.44,0:13:12.27,CHS,NTP,0,0,0,,哈利克 莉安娜·哈利克\N{\rENG}Hallik! Liana Hallik!{\r}
+Dialogue: 0,0:13:12.44,0:13:13.35,CHS,NTP,0,0,0,,是她\N{\rENG}Her.{\r}
+Dialogue: 0,0:13:14.68,0:13:16.31,CHS,NTP,0,0,0,,你想离开这儿吗\N{\rENG}You wanna get out of here?{\r}
+Dialogue: 0,0:13:17.16,0:13:18.43,CHS,NTP,0,0,0,,嗨 带上我\N{\rENG}Hey! What about me?{\r}
+Dialogue: 0,0:13:22.00,0:13:24.07,CHS,NTP,0,0,0,,给我钥匙 给我钥匙\N{\rENG}Give me the keys! Give me the keys!{\r}
+Dialogue: 0,0:13:33.04,0:13:34.83,CHS,NTP,0,0,0,,我要祝贺你 你被营救了\N{\rENG}Congratulations. You are being rescued.{\r}
+Dialogue: 0,0:13:36.76,0:13:38.51,CHS,NTP,0,0,0,,请你不要再抵抗\N{\rENG}Please do not resist.{\r}
+Dialogue: 0,0:13:57.68,0:14:00.67,CHS,NTP,0,0,0,,LU-28 到四层维修部报到\N{\rENG}LU-28, report to maintenance level 4.{\r}
+Dialogue: 0,0:14:12.64,0:14:15.71,CHS,NTP,0,0,0,,你自称是叫什么 莉安娜·哈利克\N{\rENG}You're currently calling yourself Liana Hallik.{\r}
+Dialogue: 0,0:14:15.80,0:14:16.87,CHS,NTP,0,0,0,,是这样吗\N{\rENG}Is that correct?{\r}
+Dialogue: 0,0:14:18.64,0:14:20.71,CHS,NTP,0,0,0,,私藏武器不说\N{\rENG}Possession of unsanctioned weapons.{\r}
+Dialogue: 0,0:14:20.88,0:14:22.87,CHS,NTP,0,0,0,,伪造帝国文书\N{\rENG}Forgery of Imperial documents.{\r}
+Dialogue: 0,0:14:23.04,0:14:24.55,CHS,NTP,0,0,0,,并且犯有故意伤害 潜逃\N{\rENG}Aggravated assault. Escape from custody.{\r}
+Dialogue: 0,0:14:24.72,0:14:26.20,CHS,NTP,0,0,0,,还有拒捕的罪行\N{\rENG}Resisting arrest.{\r}
+Dialogue: 0,0:14:27.40,0:14:29.31,CHS,NTP,0,0,0,,如果帝国当局知道你的真实身份\N{\rENG}Imagine if the Imperial authorities had found out...{\r}
+Dialogue: 0,0:14:29.48,0:14:32.35,CHS,NTP,0,0,0,,会怎么样 琴·厄索\N{\rENG}who you really were, Jyn Erso.{\r}
+Dialogue: 0,0:14:33.72,0:14:36.31,CHS,NTP,0,0,0,,这才是你的真实名字吧\N{\rENG}That is your given name, is it not?{\r}
+Dialogue: 0,0:14:37.16,0:14:39.59,CHS,NTP,0,0,0,,琴·厄索 父亲是盖伦·厄索\N{\rENG}Jyn Erso, daughter of Galen Erso?{\r}
+Dialogue: 0,0:14:40.52,0:14:43.83,CHS,NTP,0,0,0,,与帝国合作的武器研发专家\N{\rENG}A known Imperial collaborator in weapons development.{\r}
+Dialogue: 0,0:14:47.52,0:14:49.03,CHS,NTP,0,0,0,,你们想怎样\N{\rENG}What is this?{\r}
+Dialogue: 0,0:14:49.24,0:14:51.03,CHS,NTP,0,0,0,,给你个重新开始的机会\N{\rENG}It's a chance for you to make a fresh start.{\r}
+Dialogue: 0,0:14:51.24,0:14:52.99,CHS,NTP,0,0,0,,你或许能帮助我们\N{\rENG}We think you might be able to help us.{\r}
+Dialogue: 0,0:14:54.12,0:14:56.35,CHS,NTP,0,0,0,,这位是卡西亚·安多上尉 义军情报员\N{\rENG}This is Captain Cassian Andor, Rebel Intelligence.{\r}
+Dialogue: 0,0:14:59.08,0:15:01.59,CHS,NTP,0,0,0,,你上一次联系你父亲是什么时候\N{\rENG}When was the last time you were in contact with your father?{\r}
+Dialogue: 0,0:15:03.68,0:15:04.90,CHS,NTP,0,0,0,,十五年前了\N{\rENG}15 years ago.{\r}
+Dialogue: 0,0:15:05.56,0:15:08.02,CHS,NTP,0,0,0,,那你知道他这些年的行踪吗\N{\rENG}Any idea where he's been all that time?{\r}
+Dialogue: 0,0:15:11.32,0:15:12.39,CHS,NTP,0,0,0,,我宁可当他死了\N{\rENG}I like to think he's dead.{\r}
+Dialogue: 0,0:15:12.56,0:15:13.96,CHS,NTP,0,0,0,,那样对我更好\N{\rENG}Makes things easier.{\r}
+Dialogue: 0,0:15:14.12,0:15:15.12,CHS,NTP,0,0,0,,为什么这么想\N{\rENG}Easier than what?{\r}
+Dialogue: 0,0:15:15.12,0:15:17.27,CHS,NTP,0,0,0,,免得他成为帝国战争的工具\N{\rENG}That he's been a tool of the Imperial war machine?{\r}
+Dialogue: 0,0:15:17.84,0:15:20.15,CHS,NTP,0,0,0,,我从来就对政治不感兴趣\N{\rENG}I've never had the luxury of political opinions.{\r}
+Dialogue: 0,0:15:20.32,0:15:21.15,CHS,NTP,0,0,0,,真的\N{\rENG}Really?{\r}
+Dialogue: 0,0:15:21.80,0:15:24.63,CHS,NTP,0,0,0,,你上一次联系索·格瑞拉是什么时候\N{\rENG}When was your last contact with Saw Gerrera?{\r}
+Dialogue: 0,0:15:31.40,0:15:32.62,CHS,NTP,0,0,0,,已经很久以前了\N{\rENG}It's been a long time.{\r}
+Dialogue: 0,0:15:34.24,0:15:35.56,CHS,NTP,0,0,0,,但是他却记得你\N{\rENG}But he'll remember you, though.{\r}
+Dialogue: 0,0:15:35.64,0:15:36.63,CHS,NTP,0,0,0,,对吗\N{\rENG}Wouldn't he?{\r}
+Dialogue: 0,0:15:36.80,0:15:39.91,CHS,NTP,0,0,0,,如果你去拜访他 他可能会见你\N{\rENG}He might agree to meet you, if you came as a friend.{\r}
+Dialogue: 0,0:15:40.64,0:15:43.07,CHS,NTP,0,0,0,,时间不等让人 如果你不说你从哪儿来\N{\rENG}We're up against the clock here, girl, so if there's nothing to talk about,{\r}
+Dialogue: 0,0:15:43.24,0:15:44.56,CHS,NTP,0,0,0,,我们就送你回哪儿去\N{\rENG}we'll just put you back where we found you.{\r}
+Dialogue: 0,0:15:45.84,0:15:47.99,CHS,NTP,0,0,0,,我小的时候索·格瑞拉救了我 把我养大\N{\rENG}I was a child. Saw Gerrera saved my life. He raised me.{\r}
+Dialogue: 0,0:15:48.16,0:15:49.15,CHS,NTP,0,0,0,,很多年没有见了\N{\rENG}But I have no idea where he is.{\r}
+Dialogue: 0,0:15:49.28,0:15:50.31,CHS,NTP,0,0,0,,我不知道他在哪儿\N{\rENG}I haven't seen him in years.{\r}
+Dialogue: 0,0:15:50.48,0:15:51.83,CHS,NTP,0,0,0,,我们能找到他\N{\rENG}We know how to find him.{\r}
+Dialogue: 0,0:15:51.92,0:15:53.14,CHS,NTP,0,0,0,,这个不用担心\N{\rENG}That's not our problem.{\r}
+Dialogue: 0,0:15:53.32,0:15:54.39,CHS,NTP,0,0,0,,我们现在需要的是\N{\rENG}What we need is someone{\r}
+Dialogue: 0,0:15:54.48,0:15:56.27,CHS,NTP,0,0,0,,有人把我们活着领进门\N{\rENG}who gets us through the door without being killed.{\r}
+Dialogue: 0,0:15:58.32,0:16:00.15,CHS,NTP,0,0,0,,你们不都是起义军吗\N{\rENG}You're all rebels, aren't you?{\r}
+Dialogue: 0,0:16:00.32,0:16:03.15,CHS,NTP,0,0,0,,是的 但索·格瑞拉是极端分子\N{\rENG}Yes, but Saw Gerrera is an extremist.{\r}
+Dialogue: 0,0:16:03.32,0:16:05.83,CHS,NTP,0,0,0,,他单打独斗 早就脱离了义军同盟\N{\rENG}He's been fighting on his own since he broke with the Rebellion.{\r}
+Dialogue: 0,0:16:06.44,0:16:08.59,CHS,NTP,0,0,0,,他生性好战\N{\rENG}His militancy has caused the Alliance{\r}
+Dialogue: 0,0:16:08.68,0:16:10.79,CHS,NTP,0,0,0,,已经为义军同盟制造了很多麻烦\N{\rENG}a great many problems.{\r}
+Dialogue: 0,0:16:12.64,0:16:14.27,CHS,NTP,0,0,0,,我们现在没有选择 只能想办法\N{\rENG}We have no choice now but to try{\r}
+Dialogue: 0,0:16:14.36,0:16:15.76,CHS,NTP,0,0,0,,和他重归于好\N{\rENG}and mend that broken trust.{\r}
+Dialogue: 0,0:16:16.52,0:16:18.83,CHS,NTP,0,0,0,,这跟我父亲有什么关系吧\N{\rENG}What does this have to do with my father?{\r}
+Dialogue: 0,0:16:24.48,0:16:27.51,CHS,NTP,0,0,0,,有一名帝国飞行员叛逃了 在杰达\N{\rENG}There's an Imperial defector in Jedha. A pilot.{\r}
+Dialogue: 0,0:16:27.68,0:16:29.35,CHS,NTP,0,0,0,,落在了索·格瑞拉的手里\N{\rENG}He's been held by Saw Gerrera.{\r}
+Dialogue: 0,0:16:29.52,0:16:32.43,CHS,NTP,0,0,0,,他说皇帝在建造一种武器\N{\rENG}He's claiming the Emperor is creating a weapon{\r}
+Dialogue: 0,0:16:32.60,0:16:34.71,CHS,NTP,0,0,0,,威力足以摧毁整个行星\N{\rENG}with the power to destroy entire planets.{\r}
+Dialogue: 0,0:16:37.40,0:16:41.18,CHS,NTP,0,0,0,,据飞行员说 是你父亲派他来的\N{\rENG}The pilot says he was sent by your father.{\r}
+Dialogue: 0,0:16:43.04,0:16:45.55,CHS,NTP,0,0,0,,我们必须要在武器完工前摧毁它\N{\rENG}We need to stop this weapon before it is finished.{\r}
+Dialogue: 0,0:16:46.16,0:16:48.55,CHS,NTP,0,0,0,,安多上尉的任务 是证实飞行员的情报\N{\rENG}Captain Andor's mission is to authenticate the pilot's story.{\r}
+Dialogue: 0,0:16:48.72,0:16:50.20,CHS,NTP,0,0,0,,并尽可能找到你父亲\N{\rENG}And then, if possible, find your father.{\r}
+Dialogue: 0,0:16:50.40,0:16:53.63,CHS,NTP,0,0,0,,你父亲是研发这座超级武器的核心成员\N{\rENG}It appears he is critical to the development of this super weapon.{\r}
+Dialogue: 0,0:16:53.76,0:16:55.75,CHS,NTP,0,0,0,,鉴于事态严重\N{\rENG}Given the gravity of the situation{\r}
+Dialogue: 0,0:16:55.84,0:16:57.67,CHS,NTP,0,0,0,,而且你跟索也很熟悉\N{\rENG}and your history with Saw,{\r}
+Dialogue: 0,0:16:57.84,0:16:59.83,CHS,NTP,0,0,0,,我们希望索能帮助我们找到你父亲\N{\rENG}we're hoping that he will help us locate your father{\r}
+Dialogue: 0,0:17:00.00,0:17:02.64,CHS,NTP,0,0,0,,让他在参议院提供证词\N{\rENG}and return him to the Senate for testimony.{\r}
+Dialogue: 0,0:17:11.88,0:17:13.07,CHS,NTP,0,0,0,,要是我答应呢\N{\rENG}And if I do it?{\r}
+Dialogue: 0,0:17:13.84,0:17:16.40,CHS,NTP,0,0,0,,我们会让你重获自由\N{\rENG}We'll make sure you go free.{\r}
+Dialogue: 0,0:17:35.92,0:17:36.91,CHS,NTP,0,0,0,,安多上尉\N{\rENG}Captain Andor.{\r}
+Dialogue: 0,0:17:48.96,0:17:49.99,CHS,NTP,0,0,0,,我是K-2SO\N{\rENG}I'm K-2SO.{\r}
+Dialogue: 0,0:17:52.36,0:17:54.92,CHS,NTP,0,0,0,,我是被重新编程的帝国机器人\N{\rENG}I'm a reprogrammed Imperial droid.{\r}
+Dialogue: 0,0:17:55.76,0:17:57.43,CHS,NTP,0,0,0,,我应该记得你\N{\rENG}I remember you.{\r}
+Dialogue: 0,0:17:57.60,0:17:59.95,CHS,NTP,0,0,0,,委员会指派你和我们一起去杰达\N{\rENG}I see the Council is sending you with us to Jedha.{\r}
+Dialogue: 0,0:18:02.44,0:18:03.79,CHS,NTP,0,0,0,,你说的没错\N{\rENG}Apparently so.{\r}
+Dialogue: 0,0:18:05.16,0:18:06.29,CHS,NTP,0,0,0,,这其实是个坏主意\N{\rENG}That is a bad idea.{\r}
+Dialogue: 0,0:18:06.29,0:18:08.11,CHS,NTP,0,0,0,,我知道 卡西亚也知道\N{\rENG}I think so, and so does Cassian.{\r}
+Dialogue: 0,0:18:12.56,0:18:13.51,CHS,NTP,0,0,0,,可我懂什么\N{\rENG}What do I know?{\r}
+Dialogue: 0,0:18:14.08,0:18:17.44,CHS,NTP,0,0,0,,我只是一个战略分析员\N{\rENG}My specialty is just strategic analysis.{\r}
+Dialogue: 0,0:18:17.60,0:18:20.06,CHS,NTP,0,0,0,,盖伦是帝国武器项目的关键人物\N{\rENG}Galen Erso is vital to the Empire's weapons program.{\r}
+Dialogue: 0,0:18:20.28,0:18:21.43,CHS,NTP,0,0,0,,忘掉我刚才说的话\N{\rENG}Forget what you heard in there.{\r}
+Dialogue: 0,0:18:21.60,0:18:23.35,CHS,NTP,0,0,0,,没有什么营救计划\N{\rENG}There will be no extraction.{\r}
+Dialogue: 0,0:18:23.52,0:18:24.67,CHS,NTP,0,0,0,,找到他\N{\rENG}You find him...{\r}
+Dialogue: 0,0:18:25.32,0:18:26.59,CHS,NTP,0,0,0,,杀了他\N{\rENG}you kill him.{\r}
+Dialogue: 0,0:18:27.88,0:18:29.55,CHS,NTP,0,0,0,,就地执行\N{\rENG}Then and there.{\r}
+Dialogue: 0,0:18:33.00,0:18:34.99,CHS,NTP,0,0,0,,穿梭机LMTR-20\N{\rENG}Shuttle number LMTR-20.{\r}
+Dialogue: 0,0:18:35.16,0:18:38.71,CHS,NTP,0,0,0,,准备起飞 正在检查授权\N{\rENG}Prepare for takeoff while we check your authorization.{\r}
+Dialogue: 0,0:18:39.32,0:18:40.23,CHS,NTP,0,0,0,,见过K-2了\N{\rENG}You met K-2?{\r}
+Dialogue: 0,0:18:40.40,0:18:41.47,CHS,NTP,0,0,0,,很直接\N{\rENG}Charming.{\r}
+Dialogue: 0,0:18:42.68,0:18:45.79,CHS,NTP,0,0,0,,他的电子脑想到什么就说什么\N{\rENG}He tends to say whatever comes into his circuits.{\r}
+Dialogue: 0,0:18:45.96,0:18:48.11,CHS,NTP,0,0,0,,我看 是重新编程的副作用\N{\rENG}It's a byproduct of the reprogram.{\r}
+Dialogue: 0,0:18:48.28,0:18:50.79,CHS,NTP,0,0,0,,为什么她有枪而我没有\N{\rENG}Why does she get a blaster and I don't?{\r}
+Dialogue: 0,0:18:52.00,0:18:53.83,CHS,NTP,0,0,0,,- 什么 - 我知道怎么用枪\N{\rENG}- What? - I know how to use it.{\r}
+Dialogue: 0,0:18:54.00,0:18:56.67,CHS,NTP,0,0,0,,我怕的就是这个 把枪给我\N{\rENG}That's what I'm afraid of. Give it to me.{\r}
+Dialogue: 0,0:18:59.72,0:19:01.63,CHS,NTP,0,0,0,,我们要去杰达\N{\rENG}We're going to Jedha.{\r}
+Dialogue: 0,0:19:01.80,0:19:03.20,CHS,NTP,0,0,0,,那里是战区\N{\rENG}That's a war zone.{\r}
+Dialogue: 0,0:19:03.36,0:19:05.82,CHS,NTP,0,0,0,,这个不是重点 你从哪儿拿的\N{\rENG}That's not the point. Where'd you get it?{\r}
+Dialogue: 0,0:19:06.48,0:19:07.43,CHS,NTP,0,0,0,,我找的\N{\rENG}I found it.{\r}
+Dialogue: 0,0:19:07.60,0:19:09.51,CHS,NTP,0,0,0,,回答含糊其辞 难以信服\N{\rENG}I find that answer vague and unconvincing.{\r}
+Dialogue: 0,0:19:12.68,0:19:14.67,CHS,NTP,0,0,0,,信任是相互的\N{\rENG}Trust goes both ways.{\r}
+Dialogue: 0,0:19:22.52,0:19:24.23,CHS,NTP,0,0,0,,你允许她带枪\N{\rENG}You're letting her keep it?{\r}
+Dialogue: 0,0:19:25.40,0:19:26.91,CHS,NTP,0,0,0,,你想不想知道\N{\rENG}Would you like to know the probability{\r}
+Dialogue: 0,0:19:27.04,0:19:29.11,CHS,NTP,0,0,0,,她朝你开枪的概率\N{\rENG}of her using it against you?{\r}
+Dialogue: 0,0:19:31.60,0:19:32.92,CHS,NTP,0,0,0,,很高\N{\rENG}It's high.{\r}
+Dialogue: 0,0:19:33.08,0:19:34.51,CHS,NTP,0,0,0,,我们走吧\N{\rENG}Let's get going.{\r}
+Dialogue: 0,0:19:34.68,0:19:36.08,CHS,NTP,0,0,0,,相当的高\N{\rENG}It's very high.{\r}
+Dialogue: 0,0:20:16.24,0:20:17.23,CHS,NTP,0,0,0,,骗子\N{\rENG}Lies!{\r}
+Dialogue: 0,0:20:20.36,0:20:21.68,CHS,NTP,0,0,0,,胡扯\N{\rENG}Deceptions!{\r}
+Dialogue: 0,0:20:25.92,0:20:26.87,CHS,NTP,0,0,0,,给我看\N{\rENG}Let's see it.{\r}
+Dialogue: 0,0:20:29.60,0:20:33.19,CHS,NTP,0,0,0,,菩提·鲁克 货船飞行员\N{\rENG}"Bodhi Rook. Cargo pilot."{\r}
+Dialogue: 0,0:20:33.36,0:20:35.11,CHS,NTP,0,0,0,,- 是本地人 - 嗯\N{\rENG}- Local boy, huh? - Uh-huh.{\r}
+Dialogue: 0,0:20:39.60,0:20:41.51,CHS,NTP,0,0,0,,我听见了\N{\rENG}Okay. I can hear you.{\r}
+Dialogue: 0,0:20:41.68,0:20:43.43,CHS,NTP,0,0,0,,不是他抓住的 是我自愿来的 我叛逃了\N{\rENG}He didn't capture me. I came here myself. I defected.{\r}
+Dialogue: 0,0:20:43.60,0:20:44.47,CHS,NTP,0,0,0,,叛逃了\N{\rENG}I defected.{\r}
+Dialogue: 0,0:20:44.68,0:20:46.99,CHS,NTP,0,0,0,,每天都在撒谎\N{\rENG}Every day, more lies.{\r}
+Dialogue: 0,0:20:48.44,0:20:50.95,CHS,NTP,0,0,0,,撒谎 我冒生命危险就是为了撒谎吗\N{\rENG}Lies? Would I risk everything for a lie?{\r}
+Dialogue: 0,0:20:51.04,0:20:52.26,CHS,NTP,0,0,0,,不 我们没时间了\N{\rENG}No, we don't have time for this.{\r}
+Dialogue: 0,0:20:52.48,0:20:53.83,CHS,NTP,0,0,0,,我必须立刻见到索·格瑞拉 否则就晚了\N{\rENG}I have to speak to Saw Gerrera before it's too late.{\r}
+Dialogue: 0,0:20:58.96,0:21:00.55,CHS,NTP,0,0,0,,好\N{\rENG}Okay.{\r}
+Dialogue: 0,0:21:01.12,0:21:02.63,CHS,NTP,0,0,0,,你 就是\N{\rENG}Sorry, you're...{\r}
+Dialogue: 0,0:21:05.68,0:21:06.79,CHS,NTP,0,0,0,,呃\N{\rENG}Um...{\r}
+Dialogue: 0,0:21:07.88,0:21:09.95,CHS,NTP,0,0,0,,这是给你的\N{\rENG}That's for you.{\r}
+Dialogue: 0,0:21:11.52,0:21:12.43,CHS,NTP,0,0,0,,是我主动交给他们的\N{\rENG}And I gave it to them.{\r}
+Dialogue: 0,0:21:12.60,0:21:14.31,CHS,NTP,0,0,0,,不是他们搜的\N{\rENG}They did not find it!{\r}
+Dialogue: 0,0:21:15.48,0:21:16.67,CHS,NTP,0,0,0,,给你的\N{\rENG}I gave it to them.{\r}
+Dialogue: 0,0:21:19.00,0:21:20.40,CHS,NTP,0,0,0,,盖伦·厄索\N{\rENG}Uh, Galen Erso.{\r}
+Dialogue: 0,0:21:21.68,0:21:23.83,CHS,NTP,0,0,0,,他派我来找你的\N{\rENG}He told me to find you.{\r}
+Dialogue: 0,0:21:43.08,0:21:43.99,CHS,NTP,0,0,0,,博·加里特\N{\rENG}Bor Gullet.{\r}
+Dialogue: 0,0:21:44.36,0:21:46.35,CHS,NTP,0,0,0,,博·加里特\N{\rENG}Uh, Bor Gullet?{\r}
+Dialogue: 0,0:21:47.56,0:21:49.39,CHS,NTP,0,0,0,,等等 不\N{\rENG}What? Wait!{\r}
+Dialogue: 0,0:21:50.68,0:21:52.55,CHS,NTP,0,0,0,,盖伦·厄索派我来的\N{\rENG}Galen Erso sent me!{\r}
+Dialogue: 0,0:21:52.72,0:21:54.59,CHS,NTP,0,0,0,,是他让我来找你的\N{\rENG}He told me to find you.{\r}
+Dialogue: 0,0:22:26.00,0:22:27.32,CHS,NTP,0,0,0,,很不幸\N{\rENG}Most unfortunate about{\r}
+Dialogue: 0,0:22:27.40,0:22:29.75,CHS,NTP,0,0,0,,杰达发生了泄密事件 科伦尼克总监\N{\rENG}the security breach on Jedha, Director Krennic.{\r}
+Dialogue: 0,0:22:29.92,0:22:33.51,CHS,NTP,0,0,0,,工程屡屡延误 保密工作又出漏洞\N{\rENG}After so many setbacks and delays, and now this.{\r}
+Dialogue: 0,0:22:38.88,0:22:42.23,CHS,NTP,0,0,0,,听说此事已经传得满城风雨了\N{\rENG}We've heard word of rumors circulating through the city.{\r}
+Dialogue: 0,0:22:42.92,0:22:44.07,CHS,NTP,0,0,0,,你那个逃跑的货船飞行员\N{\rENG}Apparently, you've lost{\r}
+Dialogue: 0,0:22:44.20,0:22:46.39,CHS,NTP,0,0,0,,还真是口无遮拦\N{\rENG}a rather talkative cargo pilot.{\r}
+Dialogue: 0,0:22:46.56,0:22:48.39,CHS,NTP,0,0,0,,如果参议院得知这个项目\N{\rENG}If the Senate gets wind of our project,{\r}
+Dialogue: 0,0:22:48.56,0:22:50.71,CHS,NTP,0,0,0,,无数星系都会倒向叛军\N{\rENG}countless systems will flock to the Rebellion.{\r}
+Dialogue: 0,0:22:50.88,0:22:53.39,CHS,NTP,0,0,0,,等这个战斗太空站一竣工 塔金总督\N{\rENG}When the battle station is finished, Governor Tarkin...{\r}
+Dialogue: 0,0:22:53.60,0:22:55.75,CHS,NTP,0,0,0,,就不用担心参议院了\N{\rENG}the Senate will be of little concern.{\r}
+Dialogue: 0,0:22:56.76,0:22:59.51,CHS,NTP,0,0,0,,不能等了 科伦尼克总监\N{\rENG}When has become now, Director Krennic.{\r}
+Dialogue: 0,0:22:59.68,0:23:02.24,CHS,NTP,0,0,0,,皇帝无法再容忍任何延误\N{\rENG}The Emperor will tolerate no further delay.{\r}
+Dialogue: 0,0:23:02.44,0:23:05.35,CHS,NTP,0,0,0,,现在的形势对叛军越来越有利了\N{\rENG}You have made time an ally of the Rebellion.{\r}
+Dialogue: 0,0:23:07.12,0:23:09.71,CHS,NTP,0,0,0,,我建议一举解决两个问题\N{\rENG}I suggest we solve both problems simultaneously...{\r}
+Dialogue: 0,0:23:09.88,0:23:12.79,CHS,NTP,0,0,0,,我们现在马上进行武器的测试\N{\rENG}with an immediate test of the weapon.{\r}
+Dialogue: 0,0:23:15.76,0:23:17.87,CHS,NTP,0,0,0,,如果测试失败的话\N{\rENG}Failure will find you explaining why{\r}
+Dialogue: 0,0:23:18.00,0:23:20.95,CHS,NTP,0,0,0,,你要去向陛下亲自谢罪\N{\rENG}to a far less patient audience.{\r}
+Dialogue: 0,0:23:21.76,0:23:24.15,CHS,NTP,0,0,0,,我不会失败的\N{\rENG}I will not fail.{\r}
+Dialogue: 0,0:24:02.20,0:24:04.63,CHS,NTP,0,0,0,,怎么了 琴 不要害怕\N{\rENG}What's the matter, Jyn? You look frightened.{\r}
+Dialogue: 0,0:24:08.04,0:24:10.15,CHS,NTP,0,0,0,,我会永远保护你\N{\rENG}I'll always protect you.{\r}
+Dialogue: 0,0:24:15.48,0:24:16.96,CHS,NTP,0,0,0,,星辰\N{\rENG}Stardust.{\r}
+Dialogue: 0,0:24:17.68,0:24:18.47,CHS,NTP,0,0,0,,勿忘初心\N{\rENG}Don't ever change.{\r}
+Dialogue: 0,0:24:22.52,0:24:23.71,CHS,NTP,0,0,0,,相信\N{\rENG}Trust.{\r}
+Dialogue: 0,0:24:26.40,0:24:27.03,CHS,NTP,0,0,0,,盖伦\N{\rENG}Galen.{\r}
+Dialogue: 0,0:24:40.20,0:24:41.99,CHS,NTP,0,0,0,,正在进入轨道 你来驾驶\N{\rENG}We're coming into orbit. You have controls.{\r}
+Dialogue: 0,0:24:55.12,0:24:56.11,CHS,NTP,0,0,0,,这就是杰达\N{\rENG}That's Jedha.{\r}
+Dialogue: 0,0:24:58.28,0:24:59.35,CHS,NTP,0,0,0,,现在的模样\N{\rENG}Or what's left of it.{\r}
+Dialogue: 0,0:25:01.84,0:25:04.35,CHS,NTP,0,0,0,,找到索 就能找到你父亲\N{\rENG}We find Saw, we find your father.{\r}
+Dialogue: 0,0:25:48.80,0:25:50.23,CHS,NTP,0,0,0,,为什么有歼星舰\N{\rENG}What's with the Destroyer?{\r}
+Dialogue: 0,0:25:51.20,0:25:54.07,CHS,NTP,0,0,0,,因为你的老朋友 索·格瑞拉\N{\rENG}It's because of your old friend, Saw Gerrera.{\r}
+Dialogue: 0,0:25:54.28,0:25:56.74,CHS,NTP,0,0,0,,他袭击了那些货船队\N{\rENG}He's been attacking the cargo shipments.{\r}
+Dialogue: 0,0:25:57.40,0:25:58.91,CHS,NTP,0,0,0,,他们在运什么\N{\rENG}What are they bringing in?{\r}
+Dialogue: 0,0:26:00.92,0:26:03.48,CHS,NTP,0,0,0,,他们是在掠夺矿石\N{\rENG}It's what are they taking out.{\r}
+Dialogue: 0,0:26:04.88,0:26:07.52,CHS,NTP,0,0,0,,凯伯水晶 有多少抢多少\N{\rENG}Kyber crystal. All they can get.{\r}
+Dialogue: 0,0:26:07.68,0:26:09.43,CHS,NTP,0,0,0,,原本不明白他们为什么要掠夺圣殿\N{\rENG}We wondered why they were stripping the temple.{\r}
+Dialogue: 0,0:26:09.52,0:26:10.55,CHS,NTP,0,0,0,,现在知道了\N{\rENG}Now we know.{\r}
+Dialogue: 0,0:26:10.72,0:26:13.15,CHS,NTP,0,0,0,,那是武器的能量来源\N{\rENG}It's the fuel for the weapon.{\r}
+Dialogue: 0,0:26:13.32,0:26:15.96,CHS,NTP,0,0,0,,你父亲正在建造的武器\N{\rENG}The weapon your father's building.{\r}
+Dialogue: 0,0:26:16.12,0:26:19.19,CHS,NTP,0,0,0,,也许我们应该把那个活靶子留下\N{\rENG}Maybe we should leave target practice behind.{\r}
+Dialogue: 0,0:26:19.36,0:26:21.11,CHS,NTP,0,0,0,,你是在指我吗\N{\rENG}Are you talking about me?{\r}
+Dialogue: 0,0:26:21.28,0:26:24.00,CHS,NTP,0,0,0,,她说得对 我们得掩人耳目\N{\rENG}She's right. We need to blend in.{\r}
+Dialogue: 0,0:26:24.08,0:26:25.30,CHS,NTP,0,0,0,,你留在船上\N{\rENG}Stay with the ship.{\r}
+Dialogue: 0,0:26:25.52,0:26:28.47,CHS,NTP,0,0,0,,我可以掩人耳目 我是帝国机器人\N{\rENG}I can blend in. I'm an Imperial droid.{\r}
+Dialogue: 0,0:26:28.64,0:26:30.79,CHS,NTP,0,0,0,,是帝国占领这座城市\N{\rENG}The city is under Imperial occupation.{\r}
+Dialogue: 0,0:26:30.96,0:26:32.47,CHS,NTP,0,0,0,,这里有一半人想给你重新编程\N{\rENG}Half the people here wanna reprogram you.{\r}
+Dialogue: 0,0:26:33.04,0:26:35.31,CHS,NTP,0,0,0,,另一半想在你头上开个洞\N{\rENG}The other half wanna put a hole in your head.{\r}
+Dialogue: 0,0:26:35.48,0:26:37.79,CHS,NTP,0,0,0,,我说你这么关心我 有什么企图吗\N{\rENG}I'm surprised you're so concerned with my safety.{\r}
+Dialogue: 0,0:26:37.96,0:26:38.83,CHS,NTP,0,0,0,,我不关心\N{\rENG}I'm not.{\r}
+Dialogue: 0,0:26:39.00,0:26:42.71,CHS,NTP,0,0,0,,只是担心 他们要是没瞄准 打中了我\N{\rENG}I'm just worried they might miss you and hit me.{\r}
+Dialogue: 0,0:26:47.96,0:26:50.39,CHS,NTP,0,0,0,,听起来倒不是件坏事\N{\rENG}Doesn't sound so bad to me.{\r}
+Dialogue: 0,0:27:09.28,0:27:10.58,CHS,NTP,0,0,0,,博·加里特\N{\rENG}Bor Gullet{\r}
+Dialogue: 0,0:27:10.98,0:27:12.38,CHS,NTP,0,0,0,,可以感知\N{\rENG}can feel{\r}
+Dialogue: 0,0:27:13.48,0:27:14.56,CHS,NTP,0,0,0,,你的想法\N{\rENG}your thoughts.{\r}
+Dialogue: 0,0:27:17.80,0:27:20.95,CHS,NTP,0,0,0,,不说谎 你就没事\N{\rENG}No lie is safe.{\r}
+Dialogue: 0,0:27:26.24,0:27:30.71,CHS,NTP,0,0,0,,你的真实意图是什么 货船飞行员\N{\rENG}What have you really brought me, cargo pilot?{\r}
+Dialogue: 0,0:27:34.00,0:27:37.03,CHS,NTP,0,0,0,,博·加里特会发现真相\N{\rENG}Bor Gullet will know the truth.{\r}
+Dialogue: 0,0:27:38.64,0:27:42.23,CHS,NTP,0,0,0,,可惜有个副作用 测试的对象\N{\rENG}The unfortunate side effect is that one tends...{\r}
+Dialogue: 0,0:27:43.20,0:27:44.63,CHS,NTP,0,0,0,,常常会发疯的\N{\rENG}to lose one's mind.{\r}
+Dialogue: 0,0:27:44.80,0:27:46.35,CHS,NTP,0,0,0,,不\N{\rENG}No!{\r}
+Dialogue: 0,0:28:15.96,0:28:17.39,CHS,NTP,0,0,0,,嗨\N{\rENG}Hey.{\r}
+Dialogue: 0,0:28:17.56,0:28:18.39,CHS,NTP,0,0,0,,你给我小心一点儿\N{\rENG}You just watch yourself.{\r}
+Dialogue: 0,0:28:18.56,0:28:19.51,CHS,NTP,0,0,0,,等等 别 别\N{\rENG}Wait. No, no.{\r}
+Dialogue: 0,0:28:19.68,0:28:20.55,CHS,NTP,0,0,0,,抱歉 抱歉\N{\rENG}Sorry, sir.{\r}
+Dialogue: 0,0:28:20.76,0:28:22.39,CHS,NTP,0,0,0,,我们不是故意的 抱歉\N{\rENG}We don't want any trouble. Sorry.{\r}
+Dialogue: 0,0:28:22.56,0:28:24.51,CHS,NTP,0,0,0,,快走 快走\N{\rENG}Come on. Come on.{\r}
+Dialogue: 0,0:28:24.72,0:28:26.63,CHS,NTP,0,0,0,,杰达的市民们\N{\rENG}Citizens of Jedha.{\r}
+Dialogue: 0,0:28:26.80,0:28:28.59,CHS,NTP,0,0,0,,如果有发现失踪飞行员的线索\N{\rENG}You must come forward with information{\r}
+Dialogue: 0,0:28:28.68,0:28:31.79,CHS,NTP,0,0,0,,请务必报告我们\N{\rENG}of the location of this missing cargo pilot.{\r}
+Dialogue: 0,0:28:33.80,0:28:35.87,CHS,NTP,0,0,0,,举报者将会获得六百信用币的奖励\N{\rENG}A reward of 600 credits for the information shall be awarded.{\r}
+Dialogue: 0,0:28:35.96,0:28:36.83,CHS,NTP,0,0,0,,我有个线人\N{\rENG}I had a contact.{\r}
+Dialogue: 0,0:28:37.00,0:28:38.99,CHS,NTP,0,0,0,,是索的手下\N{\rENG}One of Saw's Rebels.{\r}
+Dialogue: 0,0:28:39.60,0:28:41.19,CHS,NTP,0,0,0,,他最近失踪了\N{\rENG}But he's just gone missing.{\r}
+Dialogue: 0,0:28:41.40,0:28:43.67,CHS,NTP,0,0,0,,他的姐姐一直在找他\N{\rENG}His sister will be looking for him.{\r}
+Dialogue: 0,0:28:44.44,0:28:47.31,CHS,NTP,0,0,0,,他姐姐会在被毁的圣殿里等他\N{\rENG}The temple's been destroyed, but she'll be there waiting.{\r}
+Dialogue: 0,0:28:47.48,0:28:48.51,CHS,NTP,0,0,0,,我们会告诉她你的名字\N{\rENG}We'll give her your name{\r}
+Dialogue: 0,0:28:48.60,0:28:50.79,CHS,NTP,0,0,0,,希望他能带我们见到索\N{\rENG}and hope that gets us a meeting with Saw.{\r}
+Dialogue: 0,0:28:50.96,0:28:52.03,CHS,NTP,0,0,0,,希望\N{\rENG}Hope?{\r}
+Dialogue: 0,0:28:52.72,0:28:55.91,CHS,NTP,0,0,0,,对 起义都建立在希望之上\N{\rENG}Yeah. Rebellions are built on hope.{\r}
+Dialogue: 0,0:28:56.08,0:28:57.79,CHS,NTP,0,0,0,,把手放在头上\N{\rENG}Hands where I can see them.{\r}
+Dialogue: 0,0:28:58.00,0:28:58.99,CHS,NTP,0,0,0,,到那边去\N{\rENG}Get over there.{\r}
+Dialogue: 0,0:28:59.16,0:29:01.51,CHS,NTP,0,0,0,,给我看看身份证 进去搜\N{\rENG}Show me some identification. Check inside.{\r}
+Dialogue: 0,0:29:03.24,0:29:05.07,CHS,NTP,0,0,0,,都是你的飞行员惹的事\N{\rENG}Is this all because of your pilot?{\r}
+Dialogue: 0,0:29:09.64,0:29:11.55,CHS,NTP,0,0,0,,愿他人的原力与你同在\N{\rENG}May the Force of others be with you.{\r}
+Dialogue: 0,0:29:13.60,0:29:14.95,CHS,NTP,0,0,0,,等我一下\N{\rENG}Wait for me.{\r}
+Dialogue: 0,0:29:15.96,0:29:17.87,CHS,NTP,0,0,0,,愿他人的原力与你同在\N{\rENG}May the Force of others be with you.{\r}
+Dialogue: 0,0:29:19.24,0:29:21.63,CHS,NTP,0,0,0,,愿他人的原力与你同在\N{\rENG}May the Force of others be with you.{\r}
+Dialogue: 0,0:29:21.80,0:29:24.83,CHS,NTP,0,0,0,,你愿意用那条项链换一个预知命运的机会吗\N{\rENG}Would you trade that necklace for a glimpse into your future?{\r}
+Dialogue: 0,0:29:27.16,0:29:27.95,CHS,NTP,0,0,0,,对\N{\rENG}Yes.{\r}
+Dialogue: 0,0:29:28.64,0:29:30.15,CHS,NTP,0,0,0,,我在和你说话\N{\rENG}I'm speaking to you.{\r}
+Dialogue: 0,0:29:37.72,0:29:39.99,CHS,NTP,0,0,0,,我是奇鲁·英威\N{\rENG}I'm Chirrut Imwe.{\r}
+Dialogue: 0,0:29:41.28,0:29:42.99,CHS,NTP,0,0,0,,你怎么知道我戴着项链\N{\rENG}How did you know I was wearing a necklace?{\r}
+Dialogue: 0,0:29:43.16,0:29:45.19,CHS,NTP,0,0,0,,想知道你得花钱\N{\rENG}For that answer, you must pay.{\r}
+Dialogue: 0,0:29:49.16,0:29:51.35,CHS,NTP,0,0,0,,你了解凯伯水晶吗\N{\rENG}What do you know about kyber crystals?{\r}
+Dialogue: 0,0:29:51.56,0:29:53.04,CHS,NTP,0,0,0,,我父亲说\N{\rENG}My father, he...{\r}
+Dialogue: 0,0:29:53.68,0:29:56.14,CHS,NTP,0,0,0,,它为绝地武士的光剑提供能量\N{\rENG}He said they powered the Jedi's lightsabers.{\r}
+Dialogue: 0,0:29:57.68,0:29:58.87,CHS,NTP,0,0,0,,琴\N{\rENG}Jyn.{\r}
+Dialogue: 0,0:29:59.04,0:30:00.26,CHS,NTP,0,0,0,,快点儿 该走了\N{\rENG}Come on. Let's go.{\r}
+Dialogue: 0,0:30:03.68,0:30:06.55,CHS,NTP,0,0,0,,最强的星星有凯伯水晶之心\N{\rENG}The strongest stars have hearts of kyber.{\r}
+Dialogue: 0,0:30:10.64,0:30:11.39,CHS,NTP,0,0,0,,快走\N{\rENG}Let's go.{\r}
+Dialogue: 0,0:30:12.44,0:30:14.55,CHS,NTP,0,0,0,,我们不是来这儿交朋友的\N{\rENG}We're not here to make friends.{\r}
+Dialogue: 0,0:30:18.68,0:30:19.59,CHS,NTP,0,0,0,,他们是谁\N{\rENG}Who are they?{\r}
+Dialogue: 0,0:30:19.76,0:30:21.51,CHS,NTP,0,0,0,,他们是这里的守卫\N{\rENG}The Guardians of the Whills.{\r}
+Dialogue: 0,0:30:21.60,0:30:23.19,CHS,NTP,0,0,0,,凯伯圣殿的保护者\N{\rENG}Protectors of the Kyber Temple.{\r}
+Dialogue: 0,0:30:24.08,0:30:26.23,CHS,NTP,0,0,0,,可这里已经没有什么值得保护了\N{\rENG}But there's nothing left to protect.{\r}
+Dialogue: 0,0:30:26.40,0:30:28.91,CHS,NTP,0,0,0,,他们现在也只会惹事生非\N{\rENG}So now they're just causing trouble for everybody.{\r}
+Dialogue: 0,0:30:30.64,0:30:32.63,CHS,NTP,0,0,0,,你怎么突然紧张起来了\N{\rENG}You seem awfully tense all of a sudden.{\r}
+Dialogue: 0,0:30:32.80,0:30:36.68,CHS,NTP,0,0,0,,我们得快走 这个地方 就要炸翻天了\N{\rENG}We have to hurry. This town is ready to blow.{\r}
+Dialogue: 0,0:30:38.04,0:30:39.71,CHS,NTP,0,0,0,,帝国的公民们\N{\rENG}Citizens of the Empire...{\r}
+Dialogue: 0,0:30:40.48,0:30:42.54,CHS,NTP,0,0,0,,帝国军队坚持不懈地打击\N{\rENG}Imperial forces tirelessly fight{\r}
+Dialogue: 0,0:30:42.54,0:30:44.55,CHS,NTP,0,0,0,,索·格瑞拉的恐怖活动\N{\rENG}Saw Gerrera's reign of terror...{\r}
+Dialogue: 0,0:30:44.72,0:30:47.36,CHS,NTP,0,0,0,,正是由于帝国军队的努力\N{\rENG}over the people of this beloved city.{\r}
+Dialogue: 0,0:30:47.52,0:30:50.91,CHS,NTP,0,0,0,,才得以保卫这座重要的城镇\N{\rENG}Truth and justice are the tools of the Empire.{\r}
+Dialogue: 0,0:31:08.28,0:31:10.47,CHS,NTP,0,0,0,,你应该有备用计划吧\N{\rENG}Tell me you have a backup plan.{\r}
+Dialogue: 0,0:31:16.20,0:31:16.87,CHS,NTP,0,0,0,,偷袭\N{\rENG}Incoming!{\r}
+Dialogue: 0,0:31:32.52,0:31:34.75,CHS,NTP,0,0,0,,看来找到索的起义军了\N{\rENG}Looks like we found Saw's rebels.{\r}
+Dialogue: 0,0:31:40.76,0:31:41.63,CHS,NTP,0,0,0,,在上面\N{\rENG}Up there!{\r}
+Dialogue: 0,0:31:44.76,0:31:45.43,CHS,NTP,0,0,0,,别去\N{\rENG}Jyn, no!{\r}
+Dialogue: 0,0:31:58.68,0:31:59.59,CHS,NTP,0,0,0,,瞄准他们\N{\rENG}Hit the terrorist.{\r}
+Dialogue: 0,0:32:00.52,0:32:01.35,CHS,NTP,0,0,0,,快点回来\N{\rENG}Get out of there!{\r}
+Dialogue: 0,0:32:37.36,0:32:39.03,CHS,NTP,0,0,0,,凯伯水晶\N{\rENG}Kyber...{\r}
+Dialogue: 0,0:32:43.32,0:32:44.47,CHS,NTP,0,0,0,,快来\N{\rENG}Come on!{\r}
+Dialogue: 0,0:33:04.52,0:33:05.51,CHS,NTP,0,0,0,,走这边\N{\rENG}This way!{\r}
+Dialogue: 0,0:33:07.00,0:33:08.22,CHS,NTP,0,0,0,,卡西亚\N{\rENG}Cassian!{\r}
+Dialogue: 0,0:33:31.04,0:33:32.79,CHS,NTP,0,0,0,,你知道那不是我吗\N{\rENG}Did you know that wasn't me?{\r}
+Dialogue: 0,0:33:33.60,0:33:35.23,CHS,NTP,0,0,0,,噢 当然\N{\rENG}Yeah. Of course.{\r}
+Dialogue: 0,0:33:35.40,0:33:37.31,CHS,NTP,0,0,0,,我记得我让你待在船上的\N{\rENG}I thought I told you to stay on the ship.{\r}
+Dialogue: 0,0:33:37.88,0:33:40.31,CHS,NTP,0,0,0,,没错 但我觉得很无聊\N{\rENG}You did. But I thought it was boring,{\r}
+Dialogue: 0,0:33:40.40,0:33:41.39,CHS,NTP,0,0,0,,而且你们有麻烦了\N{\rENG}and you were in trouble.{\r}
+Dialogue: 0,0:33:44.12,0:33:45.71,CHS,NTP,0,0,0,,对于两个要掩人耳目的人来说\N{\rENG}There were a lot of explosions...{\r}
+Dialogue: 0,0:33:45.88,0:33:47.47,CHS,NTP,0,0,0,,- 这动静也太大了 - 嗨 站住\N{\rENG}- for two people blending in. - Freeze!{\r}
+Dialogue: 0,0:33:50.44,0:33:51.43,CHS,NTP,0,0,0,,你说得对\N{\rENG}You're right.{\r}
+Dialogue: 0,0:33:51.52,0:33:53.23,CHS,NTP,0,0,0,,我是应该待在船上\N{\rENG}I should just wait on the ship.{\r}
+Dialogue: 0,0:34:05.56,0:34:07.91,CHS,NTP,0,0,0,,站住 站那儿别动\N{\rENG}Halt. Stop right there.{\r}
+Dialogue: 0,0:34:10.72,0:34:12.04,CHS,NTP,0,0,0,,你带这些囚犯去哪儿\N{\rENG}Where are you taking these prisoners?{\r}
+Dialogue: 0,0:34:13.60,0:34:14.63,CHS,NTP,0,0,0,,这些是囚犯\N{\rENG}These are prisoners.{\r}
+Dialogue: 0,0:34:14.63,0:34:15.91,CHS,NTP,0,0,0,,对 你带他们去哪儿\N{\rENG}Yes. Where are you taking them?{\r}
+Dialogue: 0,0:34:16.08,0:34:20.71,CHS,NTP,0,0,0,,我要带他们去 关押他们的监狱\N{\rENG}I am taking them to imprison them in prison.{\r}
+Dialogue: 0,0:34:20.88,0:34:22.47,CHS,NTP,0,0,0,,- 他要带我们去 - 闭嘴\N{\rENG}- He's taking us to... - Quiet!{\r}
+Dialogue: 0,0:34:23.40,0:34:25.59,CHS,NTP,0,0,0,,你要再啰嗦 我就好好收拾你\N{\rENG}And there's a fresh one if you mouth off again.{\r}
+Dialogue: 0,0:34:25.76,0:34:27.03,CHS,NTP,0,0,0,,- 囚犯由我们接管 - 不用了\N{\rENG}- We'll take them from here. - That's okay.{\r}
+Dialogue: 0,0:34:27.12,0:34:28.34,CHS,NTP,0,0,0,,指给我正确的方向就行\N{\rENG}If you could just point me in the right direction,{\r}
+Dialogue: 0,0:34:28.44,0:34:29.35,CHS,NTP,0,0,0,,我能押送他们\N{\rENG}I can take them, I'm sure.{\r}
+Dialogue: 0,0:34:29.92,0:34:31.47,CHS,NTP,0,0,0,,- 我已经押着他们走了 - 嗨 等一下\N{\rENG}- I've taken them this far. - Hey, wait a second.{\r}
+Dialogue: 0,0:34:31.56,0:34:32.63,CHS,NTP,0,0,0,,- 把他们带走 - 等等\N{\rENG}- Take them away. - Wait.{\r}
+Dialogue: 0,0:34:32.84,0:34:34.19,CHS,NTP,0,0,0,,你不能带走他们\N{\rENG}You can't take them away.{\r}
+Dialogue: 0,0:34:34.36,0:34:35.79,CHS,NTP,0,0,0,,你 待着别动\N{\rENG}You. Stay here.{\r}
+Dialogue: 0,0:34:35.96,0:34:37.15,CHS,NTP,0,0,0,,我们要检查你的系统\N{\rENG}We need to check your diagnostics.{\r}
+Dialogue: 0,0:34:37.80,0:34:38.71,CHS,NTP,0,0,0,,检查我的系统\N{\rENG}Diagnostics?{\r}
+Dialogue: 0,0:34:38.88,0:34:40.71,CHS,NTP,0,0,0,,我完全可以自己检查自己\N{\rENG}I'm capable of running my own diagnostics,{\r}
+Dialogue: 0,0:34:40.80,0:34:41.79,CHS,NTP,0,0,0,,谢谢你的好意了\N{\rENG}thank you very much.{\r}
+Dialogue: 0,0:34:41.96,0:34:43.59,CHS,NTP,0,0,0,,让他们走吧\N{\rENG}Let them pass in peace.{\r}
+Dialogue: 0,0:34:49.44,0:34:51.11,CHS,NTP,0,0,0,,我说让他们走\N{\rENG}Let them pass in peace.{\r}
+Dialogue: 0,0:34:53.00,0:34:54.79,CHS,NTP,0,0,0,,原力与我同在\N{\rENG}The Force is with me.{\r}
+Dialogue: 0,0:34:54.96,0:34:57.31,CHS,NTP,0,0,0,,我与原力同在\N{\rENG}And I am with the Force.{\r}
+Dialogue: 0,0:34:57.48,0:34:58.63,CHS,NTP,0,0,0,,我无所畏惧\N{\rENG}And I fear nothing.{\r}
+Dialogue: 0,0:34:58.72,0:35:01.36,CHS,NTP,0,0,0,,一切都是原力的意愿\N{\rENG}For all is as the Force wills it.{\r}
+Dialogue: 0,0:35:01.52,0:35:03.43,CHS,NTP,0,0,0,,你 站住别动\N{\rENG}Hey, stop right there.{\r}
+Dialogue: 0,0:35:03.60,0:35:04.63,CHS,NTP,0,0,0,,他看不见\N{\rENG}He's blind.{\r}
+Dialogue: 0,0:35:04.80,0:35:06.20,CHS,NTP,0,0,0,,他聋了吗\N{\rENG}Is he deaf?{\r}
+Dialogue: 0,0:35:06.36,0:35:07.55,CHS,NTP,0,0,0,,我说了 你不许动\N{\rENG}I said stop right there!{\r}
+Dialogue: 0,0:35:22.08,0:35:23.40,CHS,NTP,0,0,0,,你的脚没事吧\N{\rENG}Is your foot all right?{\r}
+Dialogue: 0,0:35:57.04,0:35:58.52,CHS,NTP,0,0,0,,你差点打中我\N{\rENG}You almost shot me.{\r}
+Dialogue: 0,0:35:58.68,0:36:00.35,CHS,NTP,0,0,0,,不用客气\N{\rENG}You're welcome.{\r}
+Dialogue: 0,0:36:04.80,0:36:06.12,CHS,NTP,0,0,0,,全部消灭\N{\rENG}Clear of hostiles.{\r}
+Dialogue: 0,0:36:07.16,0:36:09.11,CHS,NTP,0,0,0,,- 还差一个 - 他是我们的人\N{\rENG}- One hostile. - He's with us.{\r}
+Dialogue: 0,0:36:09.24,0:36:09.99,CHS,NTP,0,0,0,,是自己人\N{\rENG}They're all right.{\r}
+Dialogue: 0,0:36:17.32,0:36:18.54,CHS,NTP,0,0,0,,谢谢\N{\rENG}Thanks.{\r}
+Dialogue: 0,0:36:20.00,0:36:22.46,CHS,NTP,0,0,0,,卡西亚 抱歉我打了你\N{\rENG}Cassian, I'm sorry about the slap.{\r}
+Dialogue: 0,0:36:23.08,0:36:25.51,CHS,NTP,0,0,0,,回船上去 等候我的命令\N{\rENG}Go back to the ship. Wait for my call.{\r}
+Dialogue: 0,0:36:29.52,0:36:30.43,CHS,NTP,0,0,0,,他是绝地\N{\rENG}Is he a Jedi?{\r}
+Dialogue: 0,0:36:30.60,0:36:32.55,CHS,NTP,0,0,0,,这里没有绝地了\N{\rENG}There are no Jedi here anymore.{\r}
+Dialogue: 0,0:36:32.72,0:36:34.23,CHS,NTP,0,0,0,,只剩下几个傻瓜 就像他\N{\rENG}Only dreamers like this fool.{\r}
+Dialogue: 0,0:36:34.96,0:36:36.23,CHS,NTP,0,0,0,,原力保佑了我\N{\rENG}The Force did protect me.{\r}
+Dialogue: 0,0:36:36.84,0:36:37.83,CHS,NTP,0,0,0,,是我保佑了你\N{\rENG}I protected you.{\r}
+Dialogue: 0,0:36:38.00,0:36:39.99,CHS,NTP,0,0,0,,能带我们见索·格瑞拉吗\N{\rENG}Can you get us to Saw Gerrera?{\r}
+Dialogue: 0,0:36:48.28,0:36:51.07,CHS,NTP,0,0,0,,看清楚了 我们可不是帝国的朋友\N{\rENG}Can't you see? We are no friends of the Empire.{\r}
+Dialogue: 0,0:36:54.96,0:36:56.47,CHS,NTP,0,0,0,,如果你们杀了我和我的朋友\N{\rENG}Anyone who kills me or my friends{\r}
+Dialogue: 0,0:36:56.56,0:36:58.39,CHS,NTP,0,0,0,,会被索·格瑞拉问罪的\N{\rENG}will answer to Saw Gerrera.{\r}
+Dialogue: 0,0:37:01.28,0:37:03.15,CHS,NTP,0,0,0,,因为我是盖伦·厄索的女儿\N{\rENG}Because I'm the daughter of Galen Erso.{\r}
+Dialogue: 0,0:37:08.28,0:37:11.11,CHS,NTP,0,0,0,,开玩笑吗 我是个盲人\N{\rENG}Are you kidding me? I'm blind.{\r}
+Dialogue: 0,0:38:48.36,0:38:50.31,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force, the Force is with me.{\r}
+Dialogue: 0,0:38:50.48,0:38:53.59,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force, the Force is with me.{\r}
+Dialogue: 0,0:38:54.40,0:38:55.39,CHS,NTP,0,0,0,,念咒\N{\rENG}You pray?{\r}
+Dialogue: 0,0:38:55.60,0:38:57.83,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force, the Force is with me.{\r}
+Dialogue: 0,0:38:58.00,0:38:58.95,CHS,NTP,0,0,0,,真的假的\N{\rENG}Really?{\r}
+Dialogue: 0,0:38:59.12,0:39:00.60,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force, the Force is with me.{\r}
+Dialogue: 0,0:39:01.20,0:39:03.11,CHS,NTP,0,0,0,,念咒能把门念开\N{\rENG}He's praying for the door to open.{\r}
+Dialogue: 0,0:39:04.04,0:39:06.19,CHS,NTP,0,0,0,,有人烦 是因为他怕我成功\N{\rENG}It bothers him because he knows it's possible.{\r}
+Dialogue: 0,0:39:08.68,0:39:12.59,CHS,NTP,0,0,0,,贝兹·玛彪斯曾经比我们所有的人都虔诚得多\N{\rENG}Baze Malbus was once the most devoted Guardian of us all.{\r}
+Dialogue: 0,0:39:13.28,0:39:16.55,CHS,NTP,0,0,0,,我觉得原力和我的意志根本不相吻合\N{\rENG}I'm beginning to think the Force and I have different priorities.{\r}
+Dialogue: 0,0:39:16.72,0:39:18.12,CHS,NTP,0,0,0,,放松点儿 上尉\N{\rENG}Relax, Captain.{\r}
+Dialogue: 0,0:39:18.32,0:39:19.75,CHS,NTP,0,0,0,,我们进过更糟糕的监狱\N{\rENG}We've been in worse cages than this one.{\r}
+Dialogue: 0,0:39:20.68,0:39:21.79,CHS,NTP,0,0,0,,我可是第一次\N{\rENG}This is the first for me.{\r}
+Dialogue: 0,0:39:23.68,0:39:26.91,CHS,NTP,0,0,0,,监狱有很多种形式 上尉\N{\rENG}There is more than one sort of prison, Captain.{\r}
+Dialogue: 0,0:39:27.04,0:39:29.39,CHS,NTP,0,0,0,,我觉得你心里就有一座\N{\rENG}I sense that you carry yours wherever you go.{\r}
+Dialogue: 0,0:39:49.28,0:39:50.27,CHS,NTP,0,0,0,,琴\N{\rENG}Jyn.{\r}
+Dialogue: 0,0:39:52.00,0:39:54.43,CHS,NTP,0,0,0,,真的是你\N{\rENG}Is it really you?{\r}
+Dialogue: 0,0:39:55.24,0:39:57.43,CHS,NTP,0,0,0,,简直难以置信\N{\rENG}I can't believe it!{\r}
+Dialogue: 0,0:39:58.60,0:40:00.31,CHS,NTP,0,0,0,,是不是大吃一惊\N{\rENG}Must be quite a surprise.{\r}
+Dialogue: 0,0:40:01.08,0:40:04.59,CHS,NTP,0,0,0,,我们还是朋友\N{\rENG}Are we not still friends?{\r}
+Dialogue: 0,0:40:05.28,0:40:06.35,CHS,NTP,0,0,0,,上次见面\N{\rENG}The last time I saw you,{\r}
+Dialogue: 0,0:40:06.44,0:40:07.59,CHS,NTP,0,0,0,,你给了我一把刀一把枪\N{\rENG}you gave me a knife and loaded blaster...{\r}
+Dialogue: 0,0:40:07.80,0:40:10.36,CHS,NTP,0,0,0,,让我在地堡里等到天亮\N{\rENG}and told me to wait in a bunker till daylight.{\r}
+Dialogue: 0,0:40:10.48,0:40:12.31,CHS,NTP,0,0,0,,我知道你不会有事\N{\rENG}I knew you were safe.{\r}
+Dialogue: 0,0:40:12.44,0:40:14.31,CHS,NTP,0,0,0,,你丢下我跑了\N{\rENG}You left me behind.{\r}
+Dialogue: 0,0:40:14.52,0:40:16.79,CHS,NTP,0,0,0,,你那时已经是我最出色的部下\N{\rENG}You were already the best soldier in my cadre.{\r}
+Dialogue: 0,0:40:16.96,0:40:18.83,CHS,NTP,0,0,0,,- 我才16岁 - 我是在保护你\N{\rENG}- I was 16! - I was protecting you!{\r}
+Dialogue: 0,0:40:19.00,0:40:19.95,CHS,NTP,0,0,0,,你抛弃了我\N{\rENG}You dumped me!{\r}
+Dialogue: 0,0:40:20.12,0:40:23.19,CHS,NTP,0,0,0,,你不知道 你父亲是帝国的科学家\N{\rENG}You were the daughter of an Imperial science officer.{\r}
+Dialogue: 0,0:40:24.24,0:40:26.43,CHS,NTP,0,0,0,,有人猜出了你的身世\N{\rENG}People were starting to figure that out.{\r}
+Dialogue: 0,0:40:26.96,0:40:30.39,CHS,NTP,0,0,0,,他们会把你当做 当做人质的\N{\rENG}People who wanted to use you as a hostage.{\r}
+Dialogue: 0,0:40:33.12,0:40:35.47,CHS,NTP,0,0,0,,每天我都在\N{\rENG}Not a day goes by...{\r}
+Dialogue: 0,0:40:36.04,0:40:37.23,CHS,NTP,0,0,0,,牵挂着你\N{\rENG}that I don't think of you.{\r}
+Dialogue: 0,0:40:42.44,0:40:44.07,CHS,NTP,0,0,0,,但是没想到\N{\rENG}But today...{\r}
+Dialogue: 0,0:40:44.80,0:40:46.63,CHS,NTP,0,0,0,,会是今天\N{\rENG}of all days...{\r}
+Dialogue: 0,0:40:52.00,0:40:52.99,CHS,NTP,0,0,0,,只是个圈套\N{\rENG}It's a trap.{\r}
+Dialogue: 0,0:40:53.80,0:40:55.47,CHS,NTP,0,0,0,,对吧\N{\rENG}Isn't it?{\r}
+Dialogue: 0,0:40:56.12,0:40:57.03,CHS,NTP,0,0,0,,什么\N{\rENG}What?{\r}
+Dialogue: 0,0:40:57.20,0:40:58.47,CHS,NTP,0,0,0,,那个飞行员\N{\rENG}The pilot.{\r}
+Dialogue: 0,0:40:58.72,0:40:59.99,CHS,NTP,0,0,0,,那条信息\N{\rENG}The message.{\r}
+Dialogue: 0,0:41:00.12,0:41:01.15,CHS,NTP,0,0,0,,这一切\N{\rENG}All of it.{\r}
+Dialogue: 0,0:41:14.36,0:41:17.83,CHS,NTP,0,0,0,,难道 你是\N{\rENG}Did they send you?{\r}
+Dialogue: 0,0:41:20.84,0:41:22.79,CHS,NTP,0,0,0,,是他们派来\N{\rENG}Did you come here...{\r}
+Dialogue: 0,0:41:23.72,0:41:25.35,CHS,NTP,0,0,0,,杀我的\N{\rENG}to kill me?{\r}
+Dialogue: 0,0:41:27.04,0:41:28.87,CHS,NTP,0,0,0,,我已经是半死的人\N{\rENG}There's not much of me left.{\r}
+Dialogue: 0,0:41:29.36,0:41:31.35,CHS,NTP,0,0,0,,同盟想找我父亲\N{\rENG}The Alliance wants my father.{\r}
+Dialogue: 0,0:41:31.96,0:41:34.35,CHS,NTP,0,0,0,,据说他给你发了一份武器情报\N{\rENG}They think he sent you a message about a weapon.{\r}
+Dialogue: 0,0:41:34.52,0:41:36.36,CHS,NTP,0,0,0,,我想他们派我来\N{\rENG}I guess they think by sending me,{\r}
+Dialogue: 0,0:41:36.36,0:41:38.15,CHS,NTP,0,0,0,,是希望你能帮助他们\N{\rENG}you might actually help them out.{\r}
+Dialogue: 0,0:41:41.04,0:41:44.03,CHS,NTP,0,0,0,,那你想得到什么 琴\N{\rENG}So what is it that you want, Jyn?{\r}
+Dialogue: 0,0:41:46.92,0:41:49.19,CHS,NTP,0,0,0,,他们让我做的事 我做了\N{\rENG}They wanted an introduction, they've got it.{\r}
+Dialogue: 0,0:41:49.40,0:41:50.62,CHS,NTP,0,0,0,,我要走了\N{\rENG}I'm out now.{\r}
+Dialogue: 0,0:41:50.80,0:41:52.63,CHS,NTP,0,0,0,,剩下的事你们自己商量\N{\rENG}Rest of you can do what you want.{\r}
+Dialogue: 0,0:41:53.40,0:41:56.39,CHS,NTP,0,0,0,,你放弃了我们的事业\N{\rENG}You care not about the cause?{\r}
+Dialogue: 0,0:41:56.56,0:41:58.23,CHS,NTP,0,0,0,,我们的事业\N{\rENG}The cause?{\r}
+Dialogue: 0,0:41:58.40,0:41:59.95,CHS,NTP,0,0,0,,你别傻了\N{\rENG}Seriously?{\r}
+Dialogue: 0,0:42:00.84,0:42:02.47,CHS,NTP,0,0,0,,同盟\N{\rENG}The Alliance...{\r}
+Dialogue: 0,0:42:02.88,0:42:04.15,CHS,NTP,0,0,0,,起义军 不管是\N{\rENG}the rebels, whatever it is{\r}
+Dialogue: 0,0:42:04.24,0:42:05.56,CHS,NTP,0,0,0,,加上什么冠冕堂皇的名词\N{\rENG}you're calling yourself these days...{\r}
+Dialogue: 0,0:42:05.72,0:42:07.91,CHS,NTP,0,0,0,,只能带给我痛苦\N{\rENG}all it's ever brought me is pain.{\r}
+Dialogue: 0,0:42:10.56,0:42:12.71,CHS,NTP,0,0,0,,你马上就能看到帝国旗帜\N{\rENG}You can stand to see the Imperial flag{\r}
+Dialogue: 0,0:42:12.84,0:42:14.79,CHS,NTP,0,0,0,,插遍整个银河系\N{\rENG}reign across the galaxy?{\r}
+Dialogue: 0,0:42:15.36,0:42:17.75,CHS,NTP,0,0,0,,不抬头看不就行了\N{\rENG}It's not a problem if you don't look up.{\r}
+Dialogue: 0,0:42:21.24,0:42:23.03,CHS,NTP,0,0,0,,给你看样东西\N{\rENG}I have something to show you.{\r}
+Dialogue: 0,0:42:24.32,0:42:25.31,CHS,NTP,0,0,0,,来\N{\rENG}Come.{\r}
+Dialogue: 0,0:42:42.48,0:42:44.51,CHS,NTP,0,0,0,,皇帝一直在等我的报告\N{\rENG}The Emperor is awaiting my report.{\r}
+Dialogue: 0,0:42:44.68,0:42:46.35,CHS,NTP,0,0,0,,我还以为陛下会和维德大人\N{\rENG}One would hope that he and Lord Vader{\r}
+Dialogue: 0,0:42:46.44,0:42:47.79,CHS,NTP,0,0,0,,亲临现场\N{\rENG}might've been here for such an occasion.{\r}
+Dialogue: 0,0:42:48.00,0:42:49.27,CHS,NTP,0,0,0,,经过慎重考虑\N{\rENG}And I thought it prudent to save you{\r}
+Dialogue: 0,0:42:49.36,0:42:50.58,CHS,NTP,0,0,0,,我不想让你当众出丑\N{\rENG}from any potential embarrassment.{\r}
+Dialogue: 0,0:42:50.76,0:42:52.95,CHS,NTP,0,0,0,,你的担心几乎没有必要\N{\rENG}Your concern's hardly warranted.{\r}
+Dialogue: 0,0:42:53.12,0:42:55.35,CHS,NTP,0,0,0,,那只是你一个人的看法\N{\rENG}If saying it would only make it so.{\r}
+Dialogue: 0,0:42:57.72,0:43:00.36,CHS,NTP,0,0,0,,所有的帝国部队都已经撤离了\N{\rENG}All Imperial forces have been evacuated...{\r}
+Dialogue: 0,0:43:00.44,0:43:03.63,CHS,NTP,0,0,0,,我随时可以摧毁整颗卫星\N{\rENG}and I stand ready to destroy the entire moon.{\r}
+Dialogue: 0,0:43:03.80,0:43:04.95,CHS,NTP,0,0,0,,没必要\N{\rENG}That won't be necessary.{\r}
+Dialogue: 0,0:43:05.04,0:43:07.07,CHS,NTP,0,0,0,,我要的是火力演示 不是全国通告\N{\rENG}We need a statement, not a manifesto.{\r}
+Dialogue: 0,0:43:07.28,0:43:09.84,CHS,NTP,0,0,0,,仅摧毁圣城就足够了\N{\rENG}The Holy City will be enough for today.{\r}
+Dialogue: 0,0:43:10.64,0:43:12.07,CHS,NTP,0,0,0,,瞄准杰达城\N{\rENG}Target Jedha City.{\r}
+Dialogue: 0,0:43:12.16,0:43:14.15,CHS,NTP,0,0,0,,准备单反应堆点火\N{\rENG}Prepare single reactor ignition.{\r}
+Dialogue: 0,0:43:19.36,0:43:20.77,CHS,NTP,0,0,0,,长官 已经就位 我们\N{\rENG}Sir, we're in position...{\r}
+Dialogue: 0,0:43:20.77,0:43:21.47,CHS,NTP,0,0,0,,开火\N{\rENG}Fire!{\r}
+Dialogue: 0,0:43:22.04,0:43:24.15,CHS,NTP,0,0,0,,启动主点火程序\N{\rENG}Commence primary ignition.{\r}
+Dialogue: 0,0:43:27.80,0:43:29.23,CHS,NTP,0,0,0,,隔壁牢房是谁\N{\rENG}Who's the one in the next cell?{\r}
+Dialogue: 0,0:43:30.00,0:43:31.03,CHS,NTP,0,0,0,,什么\N{\rENG}What?{\r}
+Dialogue: 0,0:43:31.72,0:43:33.15,CHS,NTP,0,0,0,,哪儿\N{\rENG}Where?{\r}
+Dialogue: 0,0:43:37.80,0:43:39.75,CHS,NTP,0,0,0,,一个帝国的飞行员\N{\rENG}An Imperial pilot.{\r}
+Dialogue: 0,0:43:39.88,0:43:40.95,CHS,NTP,0,0,0,,- 飞行员 - 我要宰了他\N{\rENG}- Pilot? - I'm gonna kill him!{\r}
+Dialogue: 0,0:43:41.12,0:43:42.03,CHS,NTP,0,0,0,,- 等等 等等 - 过来\N{\rENG}- No, no. No, wait! - Come here!{\r}
+Dialogue: 0,0:43:42.24,0:43:43.79,CHS,NTP,0,0,0,,不\N{\rENG}No!{\r}
+Dialogue: 0,0:43:43.92,0:43:45.67,CHS,NTP,0,0,0,,退后 退后\N{\rENG}Back off! Back off!{\r}
+Dialogue: 0,0:43:48.16,0:43:49.99,CHS,NTP,0,0,0,,好了 没事了\N{\rENG}Okay, okay.{\r}
+Dialogue: 0,0:43:50.76,0:43:53.55,CHS,NTP,0,0,0,,你是飞行员\N{\rENG}Are you the pilot?{\r}
+Dialogue: 0,0:43:55.04,0:43:55.88,CHS,NTP,0,0,0,,嗨 嗨\N{\rENG}Hey. Hey.{\r}
+Dialogue: 0,0:43:55.89,0:43:59.03,CHS,NTP,0,0,0,,你是那个货船飞行员吗\N{\rENG}Are you the pilot? The shuttle pilot?{\r}
+Dialogue: 0,0:43:59.24,0:44:00.51,CHS,NTP,0,0,0,,飞行员\N{\rENG}Pilot?{\r}
+Dialogue: 0,0:44:00.64,0:44:02.19,CHS,NTP,0,0,0,,他怎么了\N{\rENG}What's wrong with him?{\r}
+Dialogue: 0,0:44:04.72,0:44:06.35,CHS,NTP,0,0,0,,盖伦·厄索\N{\rENG}Galen Erso.{\r}
+Dialogue: 0,0:44:08.16,0:44:09.56,CHS,NTP,0,0,0,,你认识他吗\N{\rENG}You know that name?{\r}
+Dialogue: 0,0:44:11.12,0:44:13.99,CHS,NTP,0,0,0,,我带来了信息 我是飞行员\N{\rENG}I brought the message. I'm the pilot.{\r}
+Dialogue: 0,0:44:19.36,0:44:20.95,CHS,NTP,0,0,0,,我是飞行员\N{\rENG}I'm the pilot.{\r}
+Dialogue: 0,0:44:22.00,0:44:23.35,CHS,NTP,0,0,0,,我是飞行员\N{\rENG}I'm the pilot.{\r}
+Dialogue: 0,0:44:23.52,0:44:25.19,CHS,NTP,0,0,0,,是吗 太好了\N{\rENG}Okay. Good.{\r}
+Dialogue: 0,0:44:26.00,0:44:27.75,CHS,NTP,0,0,0,,那么盖伦·厄索在哪儿\N{\rENG}Now where is Galen Erso?{\r}
+Dialogue: 0,0:44:31.20,0:44:32.19,CHS,NTP,0,0,0,,准备就绪\N{\rENG}Stand by.{\r}
+Dialogue: 0,0:44:38.20,0:44:39.71,CHS,NTP,0,0,0,,这就是我收到的信息\N{\rENG}This is the message I was sent.{\r}
+Dialogue: 0,0:44:44.68,0:44:47.11,CHS,NTP,0,0,0,,索 如果你看到这条信息\N{\rENG}Saw, if you are watching this...{\r}
+Dialogue: 0,0:44:47.28,0:44:50.39,CHS,NTP,0,0,0,,可能还有机会去挽救同盟\N{\rENG}then perhaps there's a chance to save the Alliance.{\r}
+Dialogue: 0,0:44:50.56,0:44:52.67,CHS,NTP,0,0,0,,还有机会让我进行自我辩解\N{\rENG}Perhaps there's a chance to explain myself...{\r}
+Dialogue: 0,0:44:52.80,0:44:54.91,CHS,NTP,0,0,0,,虽然我不敢抱太大的希望\N{\rENG}and, though I don't dare hope for too much...{\r}
+Dialogue: 0,0:44:55.08,0:44:57.54,CHS,NTP,0,0,0,,可能有机会救琴 如果她还活着\N{\rENG}a chance for Jyn, if she's alive...{\r}
+Dialogue: 0,0:44:57.72,0:44:59.67,CHS,NTP,0,0,0,,如果你能找到她的话\N{\rENG}if you can possibly find her...{\r}
+Dialogue: 0,0:44:59.88,0:45:04.59,CHS,NTP,0,0,0,,请你告诉她 我对她的爱从来没有改变过\N{\rENG}to let her know that my love for her has never faded...{\r}
+Dialogue: 0,0:45:05.12,0:45:07.23,CHS,NTP,0,0,0,,我始终在思念着她\N{\rENG}and how desperately I've missed her.{\r}
+Dialogue: 0,0:45:11.00,0:45:13.15,CHS,NTP,0,0,0,,琴 我的星尘\N{\rENG}Jyn, my Stardust...{\r}
+Dialogue: 0,0:45:14.64,0:45:17.15,CHS,NTP,0,0,0,,我不敢想像你会怎么看我\N{\rENG}I can't imagine what you think of me.{\r}
+Dialogue: 0,0:45:17.36,0:45:21.07,CHS,NTP,0,0,0,,我被带走的时候 承受着痛苦的事实\N{\rENG}When I was taken, I faced some bitter truths.{\r}
+Dialogue: 0,0:45:21.28,0:45:23.03,CHS,NTP,0,0,0,,他们对我说\N{\rENG}I was told that soon enough{\r}
+Dialogue: 0,0:45:23.12,0:45:24.87,CHS,NTP,0,0,0,,科伦尼克很快会抓住你\N{\rENG}Krennic would have you as well.{\r}
+Dialogue: 0,0:45:25.00,0:45:26.15,CHS,NTP,0,0,0,,后来我不断地想\N{\rENG}As time went by...{\r}
+Dialogue: 0,0:45:26.32,0:45:28.27,CHS,NTP,0,0,0,,你也许死了\N{\rENG}I knew that you were either dead...{\r}
+Dialogue: 0,0:45:28.44,0:45:30.75,CHS,NTP,0,0,0,,也许躲过了他们的搜捕\N{\rENG}or so well hidden that he would never find you.{\r}
+Dialogue: 0,0:45:31.48,0:45:34.27,CHS,NTP,0,0,0,,我知道如果我拒绝合作 如果我自杀\N{\rENG}I knew if I had refused to work, if I took my own life...{\r}
+Dialogue: 0,0:45:34.44,0:45:36.59,CHS,NTP,0,0,0,,那么用不了多久 科伦尼克就会发现\N{\rENG}it would only be a matter of time before Krennic realized...{\r}
+Dialogue: 0,0:45:36.76,0:45:39.11,CHS,NTP,0,0,0,,没有我 他也能完成项目\N{\rENG}he no longer needed me to complete the project.{\r}
+Dialogue: 0,0:45:39.20,0:45:41.71,CHS,NTP,0,0,0,,但是有件事他没有想到\N{\rENG}So I did the one thing nobody expected.{\r}
+Dialogue: 0,0:45:41.84,0:45:42.87,CHS,NTP,0,0,0,,我骗了他\N{\rENG}I lied.{\r}
+Dialogue: 0,0:45:43.56,0:45:45.43,CHS,NTP,0,0,0,,我学会了欺骗\N{\rENG}I learned to lie.{\r}
+Dialogue: 0,0:45:45.60,0:45:47.75,CHS,NTP,0,0,0,,我扮演着绝望潦倒的角色\N{\rENG}I played the part of a beaten man{\r}
+Dialogue: 0,0:45:47.84,0:45:49.67,CHS,NTP,0,0,0,,靠工作来麻醉自己\N{\rENG}resigned to the sanctuary of his work.{\r}
+Dialogue: 0,0:45:49.88,0:45:51.63,CHS,NTP,0,0,0,,我让自己变得不可或缺\N{\rENG}I made myself indispensable...{\r}
+Dialogue: 0,0:45:51.76,0:45:55.87,CHS,NTP,0,0,0,,同时 还埋下了复仇的种子\N{\rENG}and all the while, I laid the groundwork of my revenge.{\r}
+Dialogue: 0,0:45:56.48,0:45:58.43,CHS,NTP,0,0,0,,我们叫它 死星\N{\rENG}We call it the Death Star.{\r}
+Dialogue: 0,0:45:58.60,0:46:00.00,CHS,NTP,0,0,0,,这座名副其实的死亡行星\N{\rENG}There is no better name...{\r}
+Dialogue: 0,0:46:00.12,0:46:03.59,CHS,NTP,0,0,0,,很快就会正式竣工\N{\rENG}and the day is coming soon when it will be unleashed.{\r}
+Dialogue: 0,0:46:03.76,0:46:06.51,CHS,NTP,0,0,0,,我在系统深处设计了一个漏洞\N{\rENG}I've placed a weakness deep within the system...{\r}
+Dialogue: 0,0:46:06.72,0:46:09.23,CHS,NTP,0,0,0,,一个小到他们无法找到的致命缺陷\N{\rENG}a flaw so small and powerful, they will never find it.{\r}
+Dialogue: 0,0:46:09.32,0:46:10.47,CHS,NTP,0,0,0,,但是 琴\N{\rENG}But, Jyn...{\r}
+Dialogue: 0,0:46:11.00,0:46:13.35,CHS,NTP,0,0,0,,如果你能听到 我的爱女\N{\rENG}Jyn, if you're listening, my beloved...{\r}
+Dialogue: 0,0:46:14.52,0:46:17.24,CHS,NTP,0,0,0,,我的一生已经白白耗尽了\N{\rENG}so much of my life has been wasted.{\r}
+Dialogue: 0,0:46:17.84,0:46:21.27,CHS,NTP,0,0,0,,我只有 在最坚强的时候\N{\rENG}I try to think of you only in the moments when I'm strong...{\r}
+Dialogue: 0,0:46:21.44,0:46:24.11,CHS,NTP,0,0,0,,才敢想起你 一想到失去你\N{\rENG}because the pain of not having you with me...{\r}
+Dialogue: 0,0:46:24.28,0:46:27.23,CHS,NTP,0,0,0,,和你母亲 我们的家庭\N{\rENG}your mother, our family.{\r}
+Dialogue: 0,0:46:27.40,0:46:29.43,CHS,NTP,0,0,0,,那种痛苦刻骨铭心\N{\rENG}The pain of that loss is so overwhelming...{\r}
+Dialogue: 0,0:46:29.64,0:46:31.63,CHS,NTP,0,0,0,,我现在仍然难以承受\N{\rENG}I risk failing even now.{\r}
+Dialogue: 0,0:46:31.80,0:46:34.23,CHS,NTP,0,0,0,,我又怎么能不想你呢\N{\rENG}It's just so hard not to think of you.{\r}
+Dialogue: 0,0:46:36.20,0:46:37.99,CHS,NTP,0,0,0,,你到底在什么地方\N{\rENG}Think of where you are...{\r}
+Dialogue: 0,0:46:39.40,0:46:40.95,CHS,NTP,0,0,0,,我的星尘\N{\rENG}my Stardust.{\r}
+Dialogue: 0,0:46:42.36,0:46:43.35,CHS,NTP,0,0,0,,索\N{\rENG}Saw...{\r}
+Dialogue: 0,0:46:43.60,0:46:45.67,CHS,NTP,0,0,0,,反应堆模块是关键部位\N{\rENG}the reactor module, that's the key.{\r}
+Dialogue: 0,0:46:45.84,0:46:47.67,CHS,NTP,0,0,0,,我在那里设计了陷阱\N{\rENG}That's the place I've laid my trap.{\r}
+Dialogue: 0,0:46:47.84,0:46:50.07,CHS,NTP,0,0,0,,它很隐蔽 但很不稳定\N{\rENG}It's well hidden and unstable.{\r}
+Dialogue: 0,0:46:50.68,0:46:53.32,CHS,NTP,0,0,0,,只要局部发生爆炸 就会摧毁整座太空站\N{\rENG}One blast to any part of it will destroy the entire station.{\r}
+Dialogue: 0,0:46:54.84,0:46:56.35,CHS,NTP,0,0,0,,你需要设计图\N{\rENG}You'll need the plans...{\r}
+Dialogue: 0,0:46:56.52,0:46:59.24,CHS,NTP,0,0,0,,有了死星结构设计图 才能找到反应堆\N{\rENG}the structural plans for the Death Star, to find the reactor.{\r}
+Dialogue: 0,0:47:00.04,0:47:01.87,CHS,NTP,0,0,0,,我知道斯卡里夫的塔堡数据库里\N{\rENG}I know there's a complete engineering archive...{\r}
+Dialogue: 0,0:47:02.04,0:47:05.11,CHS,NTP,0,0,0,,存有一套完整的工程档案\N{\rENG}in the data vault at the Citadel Tower on Scarif.{\r}
+Dialogue: 0,0:47:05.20,0:47:07.71,CHS,NTP,0,0,0,,反应堆模块的高压一旦爆炸\N{\rENG}Any pressurized explosion to the reactor module...{\r}
+Dialogue: 0,0:47:07.88,0:47:11.43,CHS,NTP,0,0,0,,就会触发连锁反应 摧毁整座太空站\N{\rENG}will set off a chain reaction that will destroy the entire station.{\r}
+Dialogue: 0,0:47:38.56,0:47:39.67,CHS,NTP,0,0,0,,走 走\N{\rENG}Go, go!{\r}
+Dialogue: 0,0:47:43.40,0:47:44.99,CHS,NTP,0,0,0,,K-2 K-2 你在哪儿\N{\rENG}K-2, K-2! Where are you?{\r}
+Dialogue: 0,0:47:45.56,0:47:46.51,CHS,NTP,0,0,0,,终于说话了\N{\rENG}There you are.{\r}
+Dialogue: 0,0:47:46.72,0:47:48.63,CHS,NTP,0,0,0,,我一直在等待你的命令\N{\rENG}I'm standing by as you requested...{\r}
+Dialogue: 0,0:47:48.80,0:47:50.99,CHS,NTP,0,0,0,,你猜我看到了什么 卡西亚\N{\rENG}although there's a problem on the horizon.{\r}
+Dialogue: 0,0:47:51.72,0:47:54.15,CHS,NTP,0,0,0,,消失的地平线\N{\rENG}There's no horizon.{\r}
+Dialogue: 0,0:47:54.32,0:47:56.99,CHS,NTP,0,0,0,,标记我们的方位 把船开过来 快\N{\rENG}Locate our position. Bring that ship in here, now!{\r}
+Dialogue: 0,0:47:57.16,0:47:58.38,CHS,NTP,0,0,0,,你要去哪儿\N{\rENG}Where are you going?{\r}
+Dialogue: 0,0:47:58.64,0:48:00.04,CHS,NTP,0,0,0,,我去找琴\N{\rENG}I gotta find Jyn.{\r}
+Dialogue: 0,0:48:00.76,0:48:01.79,CHS,NTP,0,0,0,,带上飞行员 我们需要他\N{\rENG}Get the pilot, we need him!{\r}
+Dialogue: 0,0:48:01.96,0:48:03.23,CHS,NTP,0,0,0,,好吧\N{\rENG}All right.{\r}
+Dialogue: 0,0:48:03.44,0:48:04.92,CHS,NTP,0,0,0,,飞行员交给我了\N{\rENG}I'll get the pilot.{\r}
+Dialogue: 0,0:48:12.56,0:48:13.59,CHS,NTP,0,0,0,,飞行员\N{\rENG}Pilot.{\r}
+Dialogue: 0,0:48:15.28,0:48:15.99,CHS,NTP,0,0,0,,别 别 别\N{\rENG}No, no, no!{\r}
+Dialogue: 0,0:48:19.04,0:48:20.26,CHS,NTP,0,0,0,,跟我走\N{\rENG}Let's go.{\r}
+Dialogue: 0,0:48:20.44,0:48:21.43,CHS,NTP,0,0,0,,琴\N{\rENG}Jyn!{\r}
+Dialogue: 0,0:48:22.24,0:48:23.23,CHS,NTP,0,0,0,,琴\N{\rENG}Jyn!{\r}
+Dialogue: 0,0:48:27.64,0:48:28.63,CHS,NTP,0,0,0,,嗨\N{\rENG}Hey.{\r}
+Dialogue: 0,0:48:29.96,0:48:30.91,CHS,NTP,0,0,0,,我们得走了\N{\rENG}We gotta go.{\r}
+Dialogue: 0,0:48:31.96,0:48:32.99,CHS,NTP,0,0,0,,我知道你父亲在哪儿了\N{\rENG}I know where your father is.{\r}
+Dialogue: 0,0:48:34.48,0:48:36.15,CHS,NTP,0,0,0,,跟他走 琴\N{\rENG}Go with him, Jyn.{\r}
+Dialogue: 0,0:48:36.32,0:48:37.31,CHS,NTP,0,0,0,,快点走\N{\rENG}You must go!{\r}
+Dialogue: 0,0:48:38.44,0:48:39.35,CHS,NTP,0,0,0,,跟我们走吧\N{\rENG}Come with us.{\r}
+Dialogue: 0,0:48:39.56,0:48:41.23,CHS,NTP,0,0,0,,我不会再逃跑了\N{\rENG}I will run no longer.{\r}
+Dialogue: 0,0:48:41.84,0:48:43.59,CHS,NTP,0,0,0,,- 快走 - 但你必须活下去\N{\rENG}- Come on. - But you must save yourself.{\r}
+Dialogue: 0,0:48:44.16,0:48:45.27,CHS,NTP,0,0,0,,- 快走 - 走\N{\rENG}- Come on. - Go!{\r}
+Dialogue: 0,0:48:45.48,0:48:46.47,CHS,NTP,0,0,0,,没时间了\N{\rENG}There's no time!{\r}
+Dialogue: 0,0:48:48.12,0:48:49.87,CHS,NTP,0,0,0,,拯救义军\N{\rENG}Save the Rebellion!{\r}
+Dialogue: 0,0:48:50.76,0:48:52.43,CHS,NTP,0,0,0,,拯救梦想\N{\rENG}Save the dream.{\r}
+Dialogue: 0,0:49:12.84,0:49:14.67,CHS,NTP,0,0,0,,噢 太美了\N{\rENG}Oh, it's beautiful.{\r}
+Dialogue: 0,0:49:24.32,0:49:25.35,CHS,NTP,0,0,0,,奇鲁 快走\N{\rENG}Chirrut, let's go!{\r}
+Dialogue: 0,0:49:27.48,0:49:28.51,CHS,NTP,0,0,0,,快走\N{\rENG}Come on!{\r}
+Dialogue: 0,0:49:28.68,0:49:30.43,CHS,NTP,0,0,0,,快离开这儿\N{\rENG}Let's get out of here!{\r}
+Dialogue: 0,0:49:46.04,0:49:47.11,CHS,NTP,0,0,0,,快离开这儿\N{\rENG}Get us out of here!{\r}
+Dialogue: 0,0:49:47.28,0:49:48.35,CHS,NTP,0,0,0,,快走\N{\rENG}Punch it!{\r}
+Dialogue: 0,0:49:51.92,0:49:53.19,CHS,NTP,0,0,0,,我们的存活机率不太乐观\N{\rENG}I'm not very optimistic about our odds.{\r}
+Dialogue: 0,0:49:53.36,0:49:54.35,CHS,NTP,0,0,0,,闭嘴 K\N{\rENG}Not now, K.{\r}
+Dialogue: 0,0:50:40.48,0:50:41.35,CHS,NTP,0,0,0,,快点儿\N{\rENG}Come on!{\r}
+Dialogue: 0,0:50:46.08,0:50:47.23,CHS,NTP,0,0,0,,加速\N{\rENG}Punch it.{\r}
+Dialogue: 0,0:50:47.40,0:50:48.43,CHS,NTP,0,0,0,,抱歉 我还没有完成运算\N{\rENG}I haven't completed my calculations.{\r}
+Dialogue: 0,0:50:48.60,0:50:50.67,CHS,NTP,0,0,0,,我来帮你算\N{\rENG}I'll make them for you.{\r}
+Dialogue: 0,0:51:18.76,0:51:21.87,CHS,NTP,0,0,0,,我应该向你道歉 科伦尼克总监\N{\rENG}I believe I owe you an apology, Director Krennic.{\r}
+Dialogue: 0,0:51:22.04,0:51:25.03,CHS,NTP,0,0,0,,你的成果完全超出了预期\N{\rENG}Your work exceeds all expectations.{\r}
+Dialogue: 0,0:51:28.16,0:51:29.99,CHS,NTP,0,0,0,,你会如实禀报皇帝吗\N{\rENG}And you'll tell the Emperor as much?{\r}
+Dialogue: 0,0:51:30.16,0:51:32.27,CHS,NTP,0,0,0,,我会告诉他 对你频频失误的耐心\N{\rENG}I will tell him that his patience with your misadventures...{\r}
+Dialogue: 0,0:51:32.52,0:51:33.84,CHS,NTP,0,0,0,,终于换回了\N{\rENG}has been rewarded with a weapon{\r}
+Dialogue: 0,0:51:33.92,0:51:36.35,CHS,NTP,0,0,0,,一种可以迅速终止叛乱的武器\N{\rENG}that will bring a swift end to the Rebellion.{\r}
+Dialogue: 0,0:51:36.52,0:51:38.55,CHS,NTP,0,0,0,,但是这还只是它全部实力的\N{\rENG}And that that was only an inkling{\r}
+Dialogue: 0,0:51:38.64,0:51:40.35,CHS,NTP,0,0,0,,一点锋芒而已\N{\rENG}of its destructive potential.{\r}
+Dialogue: 0,0:51:40.52,0:51:42.95,CHS,NTP,0,0,0,,我还将告诉他 我会立即接管\N{\rENG}I will tell him that I will be taking control over the weapon...{\r}
+Dialogue: 0,0:51:43.16,0:51:46.67,CHS,NTP,0,0,0,,这个多年以前 我最先提议建造的武器\N{\rENG}I first spoke of years ago effective immediately.{\r}
+Dialogue: 0,0:51:50.88,0:51:53.87,CHS,NTP,0,0,0,,这一切 根本就是我的成就\N{\rENG}We stand here amidst my achievement.{\r}
+Dialogue: 0,0:51:54.08,0:51:55.56,CHS,NTP,0,0,0,,不是你的\N{\rENG}Not yours!{\r}
+Dialogue: 0,0:51:55.76,0:51:57.43,CHS,NTP,0,0,0,,我想最近的安全漏洞已经暴露了\N{\rENG}I'm afraid the recent security breaches...{\r}
+Dialogue: 0,0:51:57.60,0:52:01.03,CHS,NTP,0,0,0,,你所欠缺的军事领导力\N{\rENG}have laid bare your inadequacies as a military director.{\r}
+Dialogue: 0,0:52:01.24,0:52:03.35,CHS,NTP,0,0,0,,漏洞我已经补上了\N{\rENG}The breaches have been filled.{\r}
+Dialogue: 0,0:52:03.56,0:52:06.15,CHS,NTP,0,0,0,,杰达也已经被消灭了\N{\rENG}Jedha has been silenced.{\r}
+Dialogue: 0,0:52:06.32,0:52:07.99,CHS,NTP,0,0,0,,那个飞行员并非擅自行动\N{\rENG}You think this pilot acted alone?{\r}
+Dialogue: 0,0:52:08.16,0:52:11.63,CHS,NTP,0,0,0,,已经查清楚了 他来自伊杜基地\N{\rENG}He was dispatched from the installation on Eadu...{\r}
+Dialogue: 0,0:52:12.56,0:52:14.91,CHS,NTP,0,0,0,,盖伦·厄索的研究中心\N{\rENG}Galen Erso's facility.{\r}
+Dialogue: 0,0:52:18.44,0:52:20.07,CHS,NTP,0,0,0,,我们会搞清的\N{\rENG}Oh, we'll see about this.{\r}
+Dialogue: 0,0:52:24.84,0:52:26.39,CHS,NTP,0,0,0,,安多上尉的加密信息 长官\N{\rENG}A coded message from Captain Andor, sir.{\r}
+Dialogue: 0,0:52:27.52,0:52:28.63,CHS,NTP,0,0,0,,武器情报属实\N{\rENG}"Weapon confirmed."{\r}
+Dialogue: 0,0:52:29.20,0:52:30.63,CHS,NTP,0,0,0,,杰达已经被摧毁\N{\rENG}"Jedha destroyed."{\r}
+Dialogue: 0,0:52:30.80,0:52:34.47,CHS,NTP,0,0,0,,任务目标位于伊杜 请指示\N{\rENG}"Mission target located on Eadu, please advise."{\r}
+Dialogue: 0,0:52:34.64,0:52:35.47,CHS,NTP,0,0,0,,被摧毁\N{\rENG}Destroyed?{\r}
+Dialogue: 0,0:52:41.48,0:52:42.63,CHS,NTP,0,0,0,,回电\N{\rENG}Proceed.{\r}
+Dialogue: 0,0:52:43.68,0:52:46.19,CHS,NTP,0,0,0,,告诉他原来的命令维持不变\N{\rENG}Tell him my orders still stand.{\r}
+Dialogue: 0,0:52:46.36,0:52:48.35,CHS,NTP,0,0,0,,必须让他加快速度\N{\rENG}Tell him to proceed with haste...{\r}
+Dialogue: 0,0:52:48.56,0:52:49.96,CHS,NTP,0,0,0,,严格执行计划\N{\rENG}and keep to the plan.{\r}
+Dialogue: 0,0:52:50.20,0:52:52.59,CHS,NTP,0,0,0,,我们不知道他还在为帝国建造什么\N{\rENG}We have no idea what he's building for the Empire.{\r}
+Dialogue: 0,0:52:52.72,0:52:56.11,CHS,NTP,0,0,0,,必须抓住机会 除掉盖伦·厄索\N{\rENG}We have to kill Galen Erso while we have the chance.{\r}
+Dialogue: 0,0:53:06.36,0:53:08.51,CHS,NTP,0,0,0,,贝兹 告诉我\N{\rENG}Baze, tell me.{\r}
+Dialogue: 0,0:53:10.40,0:53:11.67,CHS,NTP,0,0,0,,全没了吗\N{\rENG}All of it?{\r}
+Dialogue: 0,0:53:12.40,0:53:14.15,CHS,NTP,0,0,0,,整座城市\N{\rENG}The whole city?{\r}
+Dialogue: 0,0:53:16.92,0:53:17.95,CHS,NTP,0,0,0,,告诉我\N{\rENG}Tell me.{\r}
+Dialogue: 0,0:53:18.12,0:53:19.23,CHS,NTP,0,0,0,,全没了\N{\rENG}All of it.{\r}
+Dialogue: 0,0:53:26.92,0:53:28.07,CHS,NTP,0,0,0,,我明白了\N{\rENG}Understood.{\r}
+Dialogue: 0,0:53:36.48,0:53:37.91,CHS,NTP,0,0,0,,我们现在前往伊杜\N{\rENG}Set course for Eadu.{\r}
+Dialogue: 0,0:53:38.08,0:53:39.43,CHS,NTP,0,0,0,,正在设定航线\N{\rENG}Setting course for Eadu.{\r}
+Dialogue: 0,0:53:39.60,0:53:41.47,CHS,NTP,0,0,0,,我父亲在那儿吗\N{\rENG}Is that where my father is?{\r}
+Dialogue: 0,0:53:42.52,0:53:43.63,CHS,NTP,0,0,0,,我相信是\N{\rENG}I think so.{\r}
+Dialogue: 0,0:53:43.80,0:53:45.79,CHS,NTP,0,0,0,,你是盖伦的女儿\N{\rENG}So you're Galen's daughter?{\r}
+Dialogue: 0,0:53:46.40,0:53:47.27,CHS,NTP,0,0,0,,你认识他\N{\rENG}You know him?{\r}
+Dialogue: 0,0:53:47.44,0:53:50.11,CHS,NTP,0,0,0,,我是菩提 那个飞行员\N{\rENG}I am Bodhi, the pilot.{\r}
+Dialogue: 0,0:53:50.28,0:53:51.43,CHS,NTP,0,0,0,,信息是你带来的\N{\rENG}You brought the message.{\r}
+Dialogue: 0,0:53:51.52,0:53:52.55,CHS,NTP,0,0,0,,是的\N{\rENG}Yes.{\r}
+Dialogue: 0,0:53:52.72,0:53:53.91,CHS,NTP,0,0,0,,你父亲\N{\rENG}Your father...{\r}
+Dialogue: 0,0:53:54.12,0:53:56.76,CHS,NTP,0,0,0,,他跟我说可以将功补过\N{\rENG}he said I could get right by myself.{\r}
+Dialogue: 0,0:53:57.36,0:53:58.95,CHS,NTP,0,0,0,,他说我可以纠正错误\N{\rENG}He said I could make it right...{\r}
+Dialogue: 0,0:53:59.12,0:54:00.99,CHS,NTP,0,0,0,,只要我听从自己\N{\rENG}if I was brave enough...{\r}
+Dialogue: 0,0:54:01.92,0:54:03.59,CHS,NTP,0,0,0,,敢于挺身而出\N{\rENG}to listen to what was in my heart.{\r}
+Dialogue: 0,0:54:04.60,0:54:06.43,CHS,NTP,0,0,0,,可惜现在\N{\rENG}Do something about it.{\r}
+Dialogue: 0,0:54:09.40,0:54:10.51,CHS,NTP,0,0,0,,现在已经晚了\N{\rENG}Guess it was too late.{\r}
+Dialogue: 0,0:54:12.08,0:54:13.43,CHS,NTP,0,0,0,,现在还不晚\N{\rENG}It wasn't too late.{\r}
+Dialogue: 0,0:54:13.64,0:54:15.91,CHS,NTP,0,0,0,,对我来说 的确是太晚了\N{\rENG}Seems pretty late to me.{\r}
+Dialogue: 0,0:54:16.08,0:54:17.51,CHS,NTP,0,0,0,,不\N{\rENG}No.{\r}
+Dialogue: 0,0:54:17.92,0:54:20.43,CHS,NTP,0,0,0,,我们可以打败那些凶手\N{\rENG}We can beat the people who did this.{\r}
+Dialogue: 0,0:54:21.00,0:54:23.43,CHS,NTP,0,0,0,,我父亲的信息 我看到了\N{\rENG}My father's message, I've seen it.{\r}
+Dialogue: 0,0:54:25.00,0:54:26.67,CHS,NTP,0,0,0,,他们叫它死星\N{\rENG}They call it the Death Star.{\r}
+Dialogue: 0,0:54:27.12,0:54:28.31,CHS,NTP,0,0,0,,但是他们不知道\N{\rENG}But they have no idea...{\r}
+Dialogue: 0,0:54:28.48,0:54:30.15,CHS,NTP,0,0,0,,死星有个弱点\N{\rENG}there's a way to defeat it.{\r}
+Dialogue: 0,0:54:30.32,0:54:31.54,CHS,NTP,0,0,0,,你冤枉了我父亲\N{\rENG}You're wrong about my father.{\r}
+Dialogue: 0,0:54:33.04,0:54:33.75,CHS,NTP,0,0,0,,反正是他造的\N{\rENG}He did build it.{\r}
+Dialogue: 0,0:54:33.96,0:54:35.79,CHS,NTP,0,0,0,,因为他知道有没有他都一样\N{\rENG}Because he knew they'd do it without him.{\r}
+Dialogue: 0,0:54:36.44,0:54:37.92,CHS,NTP,0,0,0,,我父亲做了决定\N{\rENG}My father made a choice.{\r}
+Dialogue: 0,0:54:38.08,0:54:40.43,CHS,NTP,0,0,0,,为起义军他不惜牺牲自己\N{\rENG}He sacrificed himself for the Rebellion.{\r}
+Dialogue: 0,0:54:40.60,0:54:42.00,CHS,NTP,0,0,0,,他在武器上设计了陷阱\N{\rENG}He's rigged a trap inside it.{\r}
+Dialogue: 0,0:54:42.20,0:54:44.47,CHS,NTP,0,0,0,,所以他派你来传递信息\N{\rENG}That's why he sent you, to bring that message.{\r}
+Dialogue: 0,0:54:44.68,0:54:45.59,CHS,NTP,0,0,0,,在哪儿\N{\rENG}Where is it?{\r}
+Dialogue: 0,0:54:46.32,0:54:47.72,CHS,NTP,0,0,0,,信息在哪儿\N{\rENG}Where's the message?{\r}
+Dialogue: 0,0:54:51.00,0:54:52.15,CHS,NTP,0,0,0,,是一段全息录像\N{\rENG}It was a hologram.{\r}
+Dialogue: 0,0:54:53.48,0:54:55.67,CHS,NTP,0,0,0,,你拿到信息了 对吗\N{\rENG}You have that message, right?{\r}
+Dialogue: 0,0:55:01.56,0:55:03.99,CHS,NTP,0,0,0,,当时情况紧急\N{\rENG}Everything happened so fast.{\r}
+Dialogue: 0,0:55:04.80,0:55:05.83,CHS,NTP,0,0,0,,你看过吗\N{\rENG}Did you see it?{\r}
+Dialogue: 0,0:55:09.00,0:55:09.99,CHS,NTP,0,0,0,,你不相信我\N{\rENG}You don't believe me?{\r}
+Dialogue: 0,0:55:11.88,0:55:14.34,CHS,NTP,0,0,0,,你要说服的人不是我\N{\rENG}I'm not the one you've got to convince.{\r}
+Dialogue: 0,0:55:14.52,0:55:15.67,CHS,NTP,0,0,0,,我相信她\N{\rENG}I believe her.{\r}
+Dialogue: 0,0:55:17.36,0:55:18.71,CHS,NTP,0,0,0,,那她得谢谢你\N{\rENG}That's good to know.{\r}
+Dialogue: 0,0:55:18.96,0:55:20.07,CHS,NTP,0,0,0,,是什么样的陷阱\N{\rENG}What kind of trap?{\r}
+Dialogue: 0,0:55:21.52,0:55:22.87,CHS,NTP,0,0,0,,你说你爸爸设了个陷阱\N{\rENG}You said your father made a trap.{\r}
+Dialogue: 0,0:55:23.04,0:55:25.15,CHS,NTP,0,0,0,,反应堆 他设计了一个结构缺陷\N{\rENG}The reactor. He's placed a weakness there.{\r}
+Dialogue: 0,0:55:25.32,0:55:26.23,CHS,NTP,0,0,0,,他隐瞒了多年\N{\rENG}He's been hiding it for years.{\r}
+Dialogue: 0,0:55:26.44,0:55:28.39,CHS,NTP,0,0,0,,如果你炸掉反应堆模块\N{\rENG}He said if you can blow the reactor,{\r}
+Dialogue: 0,0:55:28.60,0:55:30.35,CHS,NTP,0,0,0,,整个系统就会崩溃\N{\rENG}the module, the whole system goes down.{\r}
+Dialogue: 0,0:55:31.36,0:55:33.03,CHS,NTP,0,0,0,,你必须报告同盟\N{\rENG}You need to send word to the Alliance.{\r}
+Dialogue: 0,0:55:33.16,0:55:33.95,CHS,NTP,0,0,0,,我刚报告过\N{\rENG}I've done that.{\r}
+Dialogue: 0,0:55:34.08,0:55:36.07,CHS,NTP,0,0,0,,他们必须知道有办法摧毁武器\N{\rENG}They have to know there's a way to destroy this thing.{\r}
+Dialogue: 0,0:55:36.24,0:55:38.03,CHS,NTP,0,0,0,,必须去斯卡里夫窃取设计图\N{\rENG}They have to go to Scarif to get the plans.{\r}
+Dialogue: 0,0:55:38.20,0:55:39.79,CHS,NTP,0,0,0,,我不能冒险发送信息\N{\rENG}I can't risk sending that.{\r}
+Dialogue: 0,0:55:39.88,0:55:41.79,CHS,NTP,0,0,0,,我们已经深入帝国境内了\N{\rENG}We're in the heart of Imperial territory.{\r}
+Dialogue: 0,0:55:43.00,0:55:45.75,CHS,NTP,0,0,0,,那我们应该去救他回来\N{\rENG}Then we'll find him and bring him back.{\r}
+Dialogue: 0,0:55:46.68,0:55:48.11,CHS,NTP,0,0,0,,他可以亲自告诉他们\N{\rENG}And he can tell them himself.{\r}
+Dialogue: 0,0:56:06.08,0:56:08.23,CHS,NTP,0,0,0,,伊杜航线设定完毕 长官\N{\rENG}Course set for Eadu, sir.{\r}
+Dialogue: 0,0:56:26.80,0:56:29.26,CHS,NTP,0,0,0,,我与原力同在 原力与我同在\N{\rENG}I'm one with the Force, the Force is with me.{\r}
+Dialogue: 0,0:56:29.36,0:56:30.35,CHS,NTP,0,0,0,,右转20度\N{\rENG}20 degrees to the right.{\r}
+Dialogue: 0,0:56:32.24,0:56:33.59,CHS,NTP,0,0,0,,仰角10度\N{\rENG}10 degrees up.{\r}
+Dialogue: 0,0:56:33.76,0:56:34.91,CHS,NTP,0,0,0,,再低一点儿 低一点儿\N{\rENG}Lower, lower, lower. Lower!{\r}
+Dialogue: 0,0:56:35.64,0:56:36.79,CHS,NTP,0,0,0,,你确定是这个方向吗\N{\rENG}Are you sure this is the way?{\r}
+Dialogue: 0,0:56:37.00,0:56:38.15,CHS,NTP,0,0,0,,他们有追踪器\N{\rENG}They have landing trackers here.{\r}
+Dialogue: 0,0:56:38.36,0:56:39.35,CHS,NTP,0,0,0,,还有战斗机巡逻\N{\rENG}They have patrol squadrons.{\r}
+Dialogue: 0,0:56:39.48,0:56:40.75,CHS,NTP,0,0,0,,我们必须在低空飞行\N{\rENG}You've got to stay in the canyon. Keep it low.{\r}
+Dialogue: 0,0:56:45.96,0:56:46.75,CHS,NTP,0,0,0,,小心右边\N{\rENG}Watch your right!{\r}
+Dialogue: 0,0:56:51.16,0:56:53.03,CHS,NTP,0,0,0,,失败概率26%\N{\rENG}There's a 26% chance of failure.{\r}
+Dialogue: 0,0:56:53.20,0:56:54.11,CHS,NTP,0,0,0,,我们还有多远\N{\rENG}How much farther?{\r}
+Dialogue: 0,0:56:54.28,0:56:56.15,CHS,NTP,0,0,0,,我不知道 不确定 我没去过那条路线\N{\rENG}I don't know, I'm not sure. I never really come this way.{\r}
+Dialogue: 0,0:56:56.32,0:56:58.47,CHS,NTP,0,0,0,,很近了 我知道很近了\N{\rENG}But we're close, we're close. I know that.{\r}
+Dialogue: 0,0:56:58.68,0:56:59.90,CHS,NTP,0,0,0,,失败概率35%\N{\rENG}Now, there's a 35% chance of failure.{\r}
+Dialogue: 0,0:57:00.00,0:57:01.11,CHS,NTP,0,0,0,,我不想知道 谢谢\N{\rENG}I don't wanna know. Thank you!{\r}
+Dialogue: 0,0:57:01.28,0:57:02.23,CHS,NTP,0,0,0,,我懂你\N{\rENG}I understand.{\r}
+Dialogue: 0,0:57:03.72,0:57:04.94,CHS,NTP,0,0,0,,降落 赶快降落\N{\rENG}Now! Put it down, now!{\r}
+Dialogue: 0,0:57:05.12,0:57:06.23,CHS,NTP,0,0,0,,风太大\N{\rENG}The wind.{\r}
+Dialogue: 0,0:57:06.48,0:57:08.07,CHS,NTP,0,0,0,,再往前  我们就飞过穿梭机站了\N{\rENG}If you keep going, you'll be right over the shuttle depot.{\r}
+Dialogue: 0,0:57:08.96,0:57:09.95,CHS,NTP,0,0,0,,- 小心 - K\N{\rENG}- Watch out! - K!{\r}
+Dialogue: 0,0:57:13.32,0:57:14.39,CHS,NTP,0,0,0,,大家抓紧\N{\rENG}Hold on tight!{\r}
+Dialogue: 0,0:57:14.52,0:57:15.92,CHS,NTP,0,0,0,,我们要迫降了\N{\rENG}We're coming down hard!{\r}
+Dialogue: 0,0:57:28.32,0:57:29.19,CHS,NTP,0,0,0,,继续呼叫\N{\rENG}Try them again.{\r}
+Dialogue: 0,0:57:29.44,0:57:31.31,CHS,NTP,0,0,0,,遵命 长官 可是\N{\rENG}I am, sir. We...{\r}
+Dialogue: 0,0:57:31.92,0:57:33.07,CHS,NTP,0,0,0,,我们信号消失了\N{\rENG}The signal's gone dead.{\r}
+Dialogue: 0,0:57:35.48,0:57:36.91,CHS,NTP,0,0,0,,战斗机起飞\N{\rENG}Squadron up.{\r}
+Dialogue: 0,0:57:37.52,0:57:38.92,CHS,NTP,0,0,0,,目标 伊杜\N{\rENG}Target Eadu.{\r}
+Dialogue: 0,0:57:48.76,0:57:50.16,CHS,NTP,0,0,0,,怎么样 检查了稳定器\N{\rENG}How about now? Check stabilizers.{\r}
+Dialogue: 0,0:57:54.60,0:57:56.08,CHS,NTP,0,0,0,,菩提 实验室在哪儿\N{\rENG}Bodhi, where's the lab?{\r}
+Dialogue: 0,0:57:56.24,0:57:57.19,CHS,NTP,0,0,0,,你问研究中心吗\N{\rENG}The research facility?{\r}
+Dialogue: 0,0:57:57.36,0:57:58.31,CHS,NTP,0,0,0,,对 在哪儿\N{\rENG}Yeah. Where is it?{\r}
+Dialogue: 0,0:57:58.44,0:58:00.11,CHS,NTP,0,0,0,,翻过那座山就是\N{\rENG}It's just over that ridge.{\r}
+Dialogue: 0,0:58:00.32,0:58:02.51,CHS,NTP,0,0,0,,我们正前方应该是一个穿梭机站\N{\rENG}That's a shuttle depot straight ahead of us.{\r}
+Dialogue: 0,0:58:02.72,0:58:04.35,CHS,NTP,0,0,0,,- 你确定吗 - 确定\N{\rENG}- You are sure of that? - Yes.{\r}
+Dialogue: 0,0:58:04.52,0:58:05.74,CHS,NTP,0,0,0,,但愿我们能\N{\rENG}We'll have to hope{\r}
+Dialogue: 0,0:58:05.84,0:58:07.43,CHS,NTP,0,0,0,,从那里偷出一艘帝国飞船\N{\rENG}there's still an Imperial ship left to steal.{\r}
+Dialogue: 0,0:58:08.20,0:58:09.52,CHS,NTP,0,0,0,,我的计划是这样的\N{\rENG}Here's what we're doing.{\r}
+Dialogue: 0,0:58:09.68,0:58:12.55,CHS,NTP,0,0,0,,风暴暂时还不会停 正好可以掩护我们\N{\rENG}Hopefully the storm keeps up and keeps us hidden down here.{\r}
+Dialogue: 0,0:58:12.80,0:58:14.59,CHS,NTP,0,0,0,,菩提 你跟我一起走\N{\rENG}Bodhi, you're coming with me.{\r}
+Dialogue: 0,0:58:14.80,0:58:16.23,CHS,NTP,0,0,0,,我们去山脊上查看情况\N{\rENG}We'll go up the ridge and check it out.{\r}
+Dialogue: 0,0:58:16.44,0:58:17.59,CHS,NTP,0,0,0,,我们跟你们一起去\N{\rENG}I'm coming with you.{\r}
+Dialogue: 0,0:58:17.80,0:58:19.39,CHS,NTP,0,0,0,,不 你父亲的信息\N{\rENG}No, your father's message.{\r}
+Dialogue: 0,0:58:19.52,0:58:21.71,CHS,NTP,0,0,0,,你是送信人 你不能冒险\N{\rENG}We can't risk it. You're the messenger.{\r}
+Dialogue: 0,0:58:21.88,0:58:23.36,CHS,NTP,0,0,0,,这算什么逻辑 我们大家都知道\N{\rENG}That's ridiculous, we all got the message.{\r}
+Dialogue: 0,0:58:23.44,0:58:24.59,CHS,NTP,0,0,0,,信息内容\N{\rENG}Everyone here knows it.{\r}
+Dialogue: 0,0:58:26.00,0:58:27.15,CHS,NTP,0,0,0,,只要我们炸掉反应堆模块\N{\rENG}"One blast to the reactor module{\r}
+Dialogue: 0,0:58:27.24,0:58:28.99,CHS,NTP,0,0,0,,整个系统就会崩溃\N{\rENG}"and the whole system goes down."{\r}
+Dialogue: 0,0:58:29.16,0:58:31.80,CHS,NTP,0,0,0,,这是你说的 整个系统就会崩溃\N{\rENG}That's how you said it, "The whole system goes down."{\r}
+Dialogue: 0,0:58:31.96,0:58:33.95,CHS,NTP,0,0,0,,快去检查通讯器\N{\rENG}Get to work fixing our comms.{\r}
+Dialogue: 0,0:58:34.56,0:58:37.91,CHS,NTP,0,0,0,,我现在只想知道 我们当前到底是什么处境\N{\rENG}All I want to do right now is get a handle on what we're up against.{\r}
+Dialogue: 0,0:58:38.16,0:58:40.91,CHS,NTP,0,0,0,,所以我们得小心翼翼地爬上山\N{\rENG}So we're gonna go very small and very careful up the rise...{\r}
+Dialogue: 0,0:58:41.12,0:58:41.95,CHS,NTP,0,0,0,,去观察敌情\N{\rENG}and see what's what.{\r}
+Dialogue: 0,0:58:42.88,0:58:44.07,CHS,NTP,0,0,0,,我们走\N{\rENG}Let's get outta here.{\r}
+Dialogue: 0,0:58:58.08,0:58:59.87,CHS,NTP,0,0,0,,他长得像杀人犯吗\N{\rENG}Does he look like a killer?{\r}
+Dialogue: 0,0:59:00.08,0:59:01.99,CHS,NTP,0,0,0,,不像 我看他没杀过人\N{\rENG}No. He has the face of a friend.{\r}
+Dialogue: 0,0:59:02.60,0:59:03.92,CHS,NTP,0,0,0,,你们在说谁呢\N{\rENG}Who are you talking about?{\r}
+Dialogue: 0,0:59:04.72,0:59:06.51,CHS,NTP,0,0,0,,安多上尉\N{\rENG}Captain Andor.{\r}
+Dialogue: 0,0:59:06.68,0:59:07.71,CHS,NTP,0,0,0,,什么意思\N{\rENG}Why'd you ask that?{\r}
+Dialogue: 0,0:59:07.88,0:59:09.15,CHS,NTP,0,0,0,,你为什么问他 像不像杀人犯\N{\rENG}What do you mean, "Does he look like a killer?"{\r}
+Dialogue: 0,0:59:09.76,0:59:11.24,CHS,NTP,0,0,0,,想要行凶的人\N{\rENG}The Force moves darkly{\r}
+Dialogue: 0,0:59:11.32,0:59:13.23,CHS,NTP,0,0,0,,周围的原力会变得阴暗\N{\rENG}near a creature that's about to kill.{\r}
+Dialogue: 0,0:59:15.60,0:59:17.43,CHS,NTP,0,0,0,,他的武器现在处于狙击模式\N{\rENG}His weapon was in the sniper configuration.{\r}
+Dialogue: 0,0:59:23.88,0:59:26.07,CHS,NTP,0,0,0,,这儿不行 我们要继续往上\N{\rENG}No, no, no. We've got to go up.{\r}
+Dialogue: 0,0:59:26.24,0:59:27.75,CHS,NTP,0,0,0,,这里根本看不清楚\N{\rENG}You can't see much from down there.{\r}
+Dialogue: 0,1:00:01.72,1:00:02.71,CHS,NTP,0,0,0,,走这边\N{\rENG}This way.{\r}
+Dialogue: 0,1:00:03.64,1:00:05.51,CHS,NTP,0,0,0,,我在你后面\N{\rENG}I'll be right behind you.{\r}
+Dialogue: 0,1:00:06.32,1:00:07.51,CHS,NTP,0,0,0,,快走\N{\rENG}Come on.{\r}
+Dialogue: 0,1:00:24.32,1:00:25.91,CHS,NTP,0,0,0,,你上哪儿去\N{\rENG}Where are you going?{\r}
+Dialogue: 0,1:00:26.08,1:00:27.99,CHS,NTP,0,0,0,,我去跟着琴\N{\rENG}I'm gonna follow Jyn.{\r}
+Dialogue: 0,1:00:28.16,1:00:30.07,CHS,NTP,0,0,0,,她的踪迹很清晰\N{\rENG}Her path is clear.{\r}
+Dialogue: 0,1:00:30.24,1:00:31.83,CHS,NTP,0,0,0,,你自己\N{\rENG}Alone?{\r}
+Dialogue: 0,1:00:32.04,1:00:33.31,CHS,NTP,0,0,0,,祝你好运\N{\rENG}Good luck!{\r}
+Dialogue: 0,1:00:33.52,1:00:36.51,CHS,NTP,0,0,0,,我不需要好运 有你呢\N{\rENG}I don't need luck. I have you!{\r}
+Dialogue: 0,1:00:45.56,1:00:47.11,CHS,NTP,0,0,0,,他们在干嘛\N{\rENG}What are they doing?{\r}
+Dialogue: 0,1:00:47.68,1:00:50.19,CHS,NTP,0,0,0,,如果卡西亚回来 可不会等他们的\N{\rENG}If Cassian comes back, we're leaving without them.{\r}
+Dialogue: 0,1:01:09.04,1:01:10.71,CHS,NTP,0,0,0,,能看见厄索吗\N{\rENG}You see Erso out there?{\r}
+Dialogue: 0,1:01:18.08,1:01:19.63,CHS,NTP,0,0,0,,我们走得太远了\N{\rENG}We've come too far.{\r}
+Dialogue: 0,1:01:22.76,1:01:24.63,CHS,NTP,0,0,0,,耐心点儿 朋友\N{\rENG}Patience, my friend.{\r}
+Dialogue: 0,1:01:34.88,1:01:35.99,CHS,NTP,0,0,0,,是他\N{\rENG}That's him.{\r}
+Dialogue: 0,1:01:36.16,1:01:38.83,CHS,NTP,0,0,0,,盖伦·厄索 深色衣服\N{\rENG}That's him. Galen, in the dark suit.{\r}
+Dialogue: 0,1:01:54.64,1:01:57.31,CHS,NTP,0,0,0,,你下山去 赶快找一艘飞船\N{\rENG}Get back down there and find us a ride outta here.{\r}
+Dialogue: 0,1:01:57.52,1:01:58.56,CHS,NTP,0,0,0,,你要干什么\N{\rENG}Well, what are you doing?{\r}
+Dialogue: 0,1:01:58.56,1:01:59.59,CHS,NTP,0,0,0,,别管我\N{\rENG}You heard me.{\r}
+Dialogue: 0,1:01:59.76,1:02:01.31,CHS,NTP,0,0,0,,你说我们只是来看一眼的\N{\rENG}You said we came up here just to have a look.{\r}
+Dialogue: 0,1:02:01.48,1:02:03.63,CHS,NTP,0,0,0,,我来了 我在看 快去\N{\rENG}I'm here, I'm looking. Go.{\r}
+Dialogue: 0,1:02:04.92,1:02:05.99,CHS,NTP,0,0,0,,快去\N{\rENG}Hurry!{\r}
+Dialogue: 0,1:02:16.72,1:02:18.27,CHS,NTP,0,0,0,,我有好消息 盖伦\N{\rENG}Excellent news, Galen.{\r}
+Dialogue: 0,1:02:18.44,1:02:21.00,CHS,NTP,0,0,0,,战斗太空站已经竣工了\N{\rENG}The battle station is complete.{\r}
+Dialogue: 0,1:02:21.60,1:02:22.95,CHS,NTP,0,0,0,,你一定非常自豪\N{\rENG}You must be very proud.{\r}
+Dialogue: 0,1:02:23.80,1:02:25.47,CHS,NTP,0,0,0,,那是应该的 科伦尼克\N{\rENG}Proud as I can be, Krennic.{\r}
+Dialogue: 0,1:02:25.72,1:02:28.71,CHS,NTP,0,0,0,,召集工程师 我有事宣布\N{\rENG}Gather your engineers. I have an announcement.{\r}
+Dialogue: 0,1:02:44.92,1:02:46.11,CHS,NTP,0,0,0,,到齐了吗\N{\rENG}Is that all of them?{\r}
+Dialogue: 0,1:02:46.36,1:02:47.63,CHS,NTP,0,0,0,,齐了\N{\rENG}Yes.{\r}
+Dialogue: 0,1:02:52.80,1:02:55.19,CHS,NTP,0,0,0,,先生们 你们中间\N{\rENG}Gentlemen, one of you...{\r}
+Dialogue: 0,1:02:55.76,1:02:57.55,CHS,NTP,0,0,0,,有人背叛了帝国\N{\rENG}betrayed the Empire.{\r}
+Dialogue: 0,1:02:59.16,1:03:02.27,CHS,NTP,0,0,0,,有人居然串通了一名飞行员\N{\rENG}One of you has conspired with a pilot...{\r}
+Dialogue: 0,1:03:02.44,1:03:05.39,CHS,NTP,0,0,0,,向叛军泄露情报\N{\rENG}to send messages to the Rebellion.{\r}
+Dialogue: 0,1:03:06.20,1:03:08.47,CHS,NTP,0,0,0,,我奉劝这个叛徒\N{\rENG}And I urge that traitor...{\r}
+Dialogue: 0,1:03:08.68,1:03:09.95,CHS,NTP,0,0,0,,立刻自首\N{\rENG}step forward.{\r}
+Dialogue: 0,1:03:24.00,1:03:24.83,CHS,NTP,0,0,0,,看来\N{\rENG}Very well...{\r}
+Dialogue: 0,1:03:25.00,1:03:26.95,CHS,NTP,0,0,0,,你们是集体叛国了\N{\rENG}I'll consider it a group effort then.{\r}
+Dialogue: 0,1:03:27.60,1:03:28.35,CHS,NTP,0,0,0,,预备\N{\rENG}Ready!{\r}
+Dialogue: 0,1:03:28.52,1:03:29.95,CHS,NTP,0,0,0,,- 不 不 - 瞄准\N{\rENG}- No! No! - Aim!{\r}
+Dialogue: 0,1:03:31.80,1:03:32.91,CHS,NTP,0,0,0,,开火\N{\rENG}And fire!{\r}
+Dialogue: 0,1:03:33.04,1:03:34.55,CHS,NTP,0,0,0,,不 不 不\N{\rENG}Stop! Stop! Stop!{\r}
+Dialogue: 0,1:03:34.72,1:03:35.63,CHS,NTP,0,0,0,,科伦尼克 住手\N{\rENG}Krennic, stop!{\r}
+Dialogue: 0,1:03:35.80,1:03:36.97,CHS,NTP,0,0,0,,是我干的\N{\rENG}It was me!{\r}
+Dialogue: 0,1:03:37.80,1:03:38.87,CHS,NTP,0,0,0,,是我干的\N{\rENG}It was me!{\r}
+Dialogue: 0,1:03:49.36,1:03:50.87,CHS,NTP,0,0,0,,跟他们没有关系\N{\rENG}They have nothing to do with it.{\r}
+Dialogue: 0,1:03:51.04,1:03:52.39,CHS,NTP,0,0,0,,放了他们\N{\rENG}Spare them.{\r}
+Dialogue: 0,1:04:17.64,1:04:18.35,CHS,NTP,0,0,0,,开火\N{\rENG}Fire!{\r}
+Dialogue: 0,1:04:30.76,1:04:33.22,CHS,NTP,0,0,0,,我是怎么知道武器完工的\N{\rENG}How do I know the weapon is complete?{\r}
+Dialogue: 0,1:04:33.40,1:04:36.91,CHS,NTP,0,0,0,,你想让我来跟你分享一些细节吗\N{\rENG}Let me share with you some details.{\r}
+Dialogue: 0,1:04:51.32,1:04:52.03,CHS,NTP,0,0,0,,卡西安\N{\rENG}Cassian.{\r}
+Dialogue: 0,1:04:52.92,1:04:54.32,CHS,NTP,0,0,0,,卡西安 你能听到吗\N{\rENG}Cassian, can you hear me?{\r}
+Dialogue: 0,1:04:54.44,1:04:55.84,CHS,NTP,0,0,0,,我在 看来你修好了\N{\rENG}I'm here. You've got it working?{\r}
+Dialogue: 0,1:04:56.00,1:04:57.75,CHS,NTP,0,0,0,,修是修好了 但我们有麻烦了\N{\rENG}Affirmative, yes. Although we have a problem.{\r}
+Dialogue: 0,1:04:57.92,1:05:00.43,CHS,NTP,0,0,0,,同盟战斗机中队正在逼近 赶快撤离\N{\rENG}There's an Alliance squadron approaching. Clear the area.{\r}
+Dialogue: 0,1:05:00.64,1:05:02.79,CHS,NTP,0,0,0,,不 不 不 不 让他们停止攻击\N{\rENG}No, no, no, no! Tell them to hold off!{\r}
+Dialogue: 0,1:05:03.00,1:05:04.43,CHS,NTP,0,0,0,,琴在那个平台上呢\N{\rENG}Jyn's on that platform.{\r}
+Dialogue: 0,1:05:07.40,1:05:08.39,CHS,NTP,0,0,0,,杰达\N{\rENG}Jedha...{\r}
+Dialogue: 0,1:05:09.68,1:05:12.63,CHS,NTP,0,0,0,,索·格瑞拉 和他的极端组织\N{\rENG}Saw Gerrera. His band of fanatics...{\r}
+Dialogue: 0,1:05:12.84,1:05:14.35,CHS,NTP,0,0,0,,他们的圣城\N{\rENG}their Holy City...{\r}
+Dialogue: 0,1:05:14.52,1:05:18.19,CHS,NTP,0,0,0,,那些绝地最后的遗迹 都没了\N{\rENG}the last reminder of the Jedi, gone.{\r}
+Dialogue: 0,1:05:19.44,1:05:20.87,CHS,NTP,0,0,0,,你不会得逞的\N{\rENG}You'll never win.{\r}
+Dialogue: 0,1:05:21.44,1:05:24.23,CHS,NTP,0,0,0,,这话我听着很耳熟\N{\rENG}Now where have I heard that before?{\r}
+Dialogue: 0,1:05:25.68,1:05:27.11,CHS,NTP,0,0,0,,我代安多上尉转达\N{\rENG}Relay from Captain Andor.{\r}
+Dialogue: 0,1:05:27.72,1:05:28.51,CHS,NTP,0,0,0,,将军\N{\rENG}General.{\r}
+Dialogue: 0,1:05:28.72,1:05:31.18,CHS,NTP,0,0,0,,安多上尉要求 暂缓战斗机支援\N{\rENG}Captain Andor requesting a delay on squadron support.{\r}
+Dialogue: 0,1:05:31.40,1:05:33.91,CHS,NTP,0,0,0,,现场有同盟军成员 请回复\N{\rENG}Alliance forces on site. Please confirm.{\r}
+Dialogue: 0,1:05:34.08,1:05:35.79,CHS,NTP,0,0,0,,呼叫中队长 停止攻击\N{\rENG}Get the squadron leader on. Get him on now!{\r}
+Dialogue: 0,1:05:36.00,1:05:37.22,CHS,NTP,0,0,0,,已经开始了 长官\N{\rENG}They're already engaged, sir.{\r}
+Dialogue: 0,1:06:01.68,1:06:03.63,CHS,NTP,0,0,0,,琴 不\N{\rENG}Jyn. No.{\r}
+Dialogue: 0,1:06:04.68,1:06:07.91,CHS,NTP,0,0,0,,开火还击 进入战斗位置\N{\rENG}Return fire! To your stations!{\r}
+Dialogue: 0,1:06:08.08,1:06:10.15,CHS,NTP,0,0,0,,让战机立即起飞\N{\rENG}Get our fighters in the air now!{\r}
+Dialogue: 0,1:06:16.40,1:06:17.43,CHS,NTP,0,0,0,,爸爸\N{\rENG}Father!{\r}
+Dialogue: 0,1:06:36.36,1:06:38.63,CHS,NTP,0,0,0,,收到 从3区飞往7区\N{\rENG}Roger that. 3 through 7.{\r}
+Dialogue: 0,1:06:53.72,1:06:55.87,CHS,NTP,0,0,0,,撤退 撤退\N{\rENG}Fall back! Fall back!{\r}
+Dialogue: 0,1:06:56.04,1:06:59.03,CHS,NTP,0,0,0,,总监 我们必须撤离\N{\rENG}Director, we need to evacuate.{\r}
+Dialogue: 0,1:08:09.28,1:08:11.55,CHS,NTP,0,0,0,,爸爸 我是琴\N{\rENG}Papa. Papa, it's me.{\r}
+Dialogue: 0,1:08:15.12,1:08:16.34,CHS,NTP,0,0,0,,是我\N{\rENG}It's Jyn.{\r}
+Dialogue: 0,1:08:17.12,1:08:18.15,CHS,NTP,0,0,0,,琴\N{\rENG}Jyn?{\r}
+Dialogue: 0,1:08:20.40,1:08:21.62,CHS,NTP,0,0,0,,我的星尘\N{\rENG}Stardust.{\r}
+Dialogue: 0,1:08:22.52,1:08:23.67,CHS,NTP,0,0,0,,爸爸\N{\rENG}Papa.{\r}
+Dialogue: 0,1:08:25.04,1:08:26.63,CHS,NTP,0,0,0,,我看到了你的信息\N{\rENG}I've seen your message.{\r}
+Dialogue: 0,1:08:26.80,1:08:28.75,CHS,NTP,0,0,0,,我看到了全息录像\N{\rENG}The hologram, I've seen it.{\r}
+Dialogue: 0,1:08:29.80,1:08:31.83,CHS,NTP,0,0,0,,你必须摧毁它\N{\rENG}It must be destroyed.{\r}
+Dialogue: 0,1:08:32.04,1:08:34.03,CHS,NTP,0,0,0,,我知道 我会的\N{\rENG}I know. I know.{\r}
+Dialogue: 0,1:08:34.88,1:08:35.87,CHS,NTP,0,0,0,,我们会的\N{\rENG}We will.{\r}
+Dialogue: 0,1:08:37.08,1:08:38.30,CHS,NTP,0,0,0,,琴\N{\rENG}Jyn.{\r}
+Dialogue: 0,1:08:41.04,1:08:42.03,CHS,NTP,0,0,0,,看看你\N{\rENG}Look at you.{\r}
+Dialogue: 0,1:08:45.48,1:08:47.75,CHS,NTP,0,0,0,,我有好多话要对你说\N{\rENG}I have so much to tell you.{\r}
+Dialogue: 0,1:08:58.52,1:08:59.51,CHS,NTP,0,0,0,,爸爸\N{\rENG}Papa.{\r}
+Dialogue: 0,1:09:00.52,1:09:01.47,CHS,NTP,0,0,0,,不\N{\rENG}No.{\r}
+Dialogue: 0,1:09:01.64,1:09:03.67,CHS,NTP,0,0,0,,不 爸爸\N{\rENG}No! Papa.{\r}
+Dialogue: 0,1:09:04.96,1:09:06.31,CHS,NTP,0,0,0,,爸爸 你醒醒\N{\rENG}Papa, come on!{\r}
+Dialogue: 0,1:09:06.92,1:09:08.11,CHS,NTP,0,0,0,,在那儿 干掉他们\N{\rENG}Over there! Take 'em down.{\r}
+Dialogue: 0,1:09:09.12,1:09:11.47,CHS,NTP,0,0,0,,醒醒 爸爸 醒醒\N{\rENG}Come on. Papa. Come on.{\r}
+Dialogue: 0,1:09:13.80,1:09:14.79,CHS,NTP,0,0,0,,琴 我们得走了 快来\N{\rENG}Jyn, we gotta go. Come on.{\r}
+Dialogue: 0,1:09:14.96,1:09:16.36,CHS,NTP,0,0,0,,不行\N{\rENG}I can't leave him.{\r}
+Dialogue: 0,1:09:16.52,1:09:18.67,CHS,NTP,0,0,0,,听我说 他死了\N{\rENG}Listen to me, he's gone.{\r}
+Dialogue: 0,1:09:18.92,1:09:20.59,CHS,NTP,0,0,0,,你什么也做不了 快来\N{\rENG}Nothing you can do. Come on.{\r}
+Dialogue: 0,1:09:20.76,1:09:22.11,CHS,NTP,0,0,0,,- 我不能离开他 - 快来\N{\rENG}- I can't leave him. - Come on!{\r}
+Dialogue: 0,1:09:22.24,1:09:23.43,CHS,NTP,0,0,0,,我不走\N{\rENG}I can't.{\r}
+Dialogue: 0,1:09:23.64,1:09:24.67,CHS,NTP,0,0,0,,走\N{\rENG}Move!{\r}
+Dialogue: 0,1:09:31.36,1:09:32.87,CHS,NTP,0,0,0,,- 这边 这边 - 趴下\N{\rENG}- This way, this way! - Down!{\r}
+Dialogue: 0,1:09:38.04,1:09:39.23,CHS,NTP,0,0,0,,快走 快走\N{\rENG}Come on! Come on!{\r}
+Dialogue: 0,1:09:55.92,1:09:56.71,CHS,NTP,0,0,0,,干得漂亮\N{\rENG}Well done.{\r}
+Dialogue: 0,1:09:56.92,1:09:59.07,CHS,NTP,0,0,0,,你也成起义军了\N{\rENG}You're a rebel now.{\r}
+Dialogue: 0,1:10:06.08,1:10:06.95,CHS,NTP,0,0,0,,好了 快点儿\N{\rENG}Let's go! Let's go!{\r}
+Dialogue: 0,1:10:07.08,1:10:08.51,CHS,NTP,0,0,0,,快点走\N{\rENG}Come on, let's move!{\r}
+Dialogue: 0,1:10:08.72,1:10:10.59,CHS,NTP,0,0,0,,快点儿 撤离基地\N{\rENG}Come on, let's get out of here!{\r}
+Dialogue: 0,1:10:10.76,1:10:12.16,CHS,NTP,0,0,0,,快 快 快\N{\rENG}Move, move, move!{\r}
+Dialogue: 0,1:10:12.80,1:10:15.23,CHS,NTP,0,0,0,,好了 K-2 赶快起飞\N{\rENG}Okay, K-2. Let's go!{\r}
+Dialogue: 0,1:10:15.40,1:10:16.55,CHS,NTP,0,0,0,,收到了\N{\rENG}Copy that.{\r}
+Dialogue: 0,1:10:34.44,1:10:36.59,CHS,NTP,0,0,0,,收住离子推进器 先飞出风暴区\N{\rENG}Ion thrusters low until we've cleared the storm.{\r}
+Dialogue: 0,1:10:36.76,1:10:37.98,CHS,NTP,0,0,0,,明白\N{\rENG}Understood.{\r}
+Dialogue: 0,1:10:56.24,1:10:57.64,CHS,NTP,0,0,0,,你骗了我\N{\rENG}You lied to me.{\r}
+Dialogue: 0,1:10:58.64,1:10:59.99,CHS,NTP,0,0,0,,你别激动\N{\rENG}You're in shock.{\r}
+Dialogue: 0,1:11:00.96,1:11:02.79,CHS,NTP,0,0,0,,你是去杀我父亲\N{\rENG}You went up there to kill my father.{\r}
+Dialogue: 0,1:11:04.12,1:11:06.47,CHS,NTP,0,0,0,,你知道你自己在说什么吗\N{\rENG}You don't know what you're talking about.{\r}
+Dialogue: 0,1:11:06.64,1:11:07.99,CHS,NTP,0,0,0,,敢否认吗\N{\rENG}Deny it.{\r}
+Dialogue: 0,1:11:08.48,1:11:11.95,CHS,NTP,0,0,0,,你现在有点情绪激动 想发泄\N{\rENG}You're in shock and looking for some place to put it.{\r}
+Dialogue: 0,1:11:12.16,1:11:13.31,CHS,NTP,0,0,0,,这种反应很正常\N{\rENG}I've seen it before.{\r}
+Dialogue: 0,1:11:13.48,1:11:14.63,CHS,NTP,0,0,0,,你不敢否认\N{\rENG}I bet you have.{\r}
+Dialogue: 0,1:11:14.76,1:11:15.63,CHS,NTP,0,0,0,,对吗\N{\rENG}They know.{\r}
+Dialogue: 0,1:11:16.32,1:11:18.99,CHS,NTP,0,0,0,,你骗了我们 你为什么来这儿 你为什么一个人上山\N{\rENG}You lied about why we came here and you lied about why you went up alone.{\r}
+Dialogue: 0,1:11:20.80,1:11:23.03,CHS,NTP,0,0,0,,老实说 我完全有机会扣下扳机\N{\rENG}I had every chance to pull the trigger...{\r}
+Dialogue: 0,1:11:23.24,1:11:24.83,CHS,NTP,0,0,0,,我开枪了吗\N{\rENG}but did I?{\r}
+Dialogue: 0,1:11:27.88,1:11:28.51,CHS,NTP,0,0,0,,开了吗\N{\rENG}Did I?{\r}
+Dialogue: 0,1:11:29.32,1:11:30.47,CHS,NTP,0,0,0,,还不如开枪\N{\rENG}You might as well have.{\r}
+Dialogue: 0,1:11:31.48,1:11:32.83,CHS,NTP,0,0,0,,我父亲掌握着重要情报\N{\rENG}My father was living proof...{\r}
+Dialogue: 0,1:11:33.00,1:11:34.27,CHS,NTP,0,0,0,,可你害了他\N{\rENG}and you put him at risk.{\r}
+Dialogue: 0,1:11:34.44,1:11:36.79,CHS,NTP,0,0,0,,是同盟的炸弹炸死了他\N{\rENG}Those were Alliance bombs that killed him.{\r}
+Dialogue: 0,1:11:37.00,1:11:38.48,CHS,NTP,0,0,0,,我有军令在身\N{\rENG}I had orders...{\r}
+Dialogue: 0,1:11:38.64,1:11:40.79,CHS,NTP,0,0,0,,可是我却违抗了命令\N{\rENG}orders that I disobeyed.{\r}
+Dialogue: 0,1:11:41.08,1:11:42.48,CHS,NTP,0,0,0,,你是不会明白这些的\N{\rENG}But you wouldn't understand that.{\r}
+Dialogue: 0,1:11:42.64,1:11:43.71,CHS,NTP,0,0,0,,你知道\N{\rENG}Orders?{\r}
+Dialogue: 0,1:11:43.84,1:11:45.83,CHS,NTP,0,0,0,,那是错误的命令\N{\rENG}When you know they're wrong?{\r}
+Dialogue: 0,1:11:47.64,1:11:49.83,CHS,NTP,0,0,0,,你跟冲锋队有什么区别\N{\rENG}You might as well be a Stormtrooper.{\r}
+Dialogue: 0,1:11:50.00,1:11:51.32,CHS,NTP,0,0,0,,你懂什么\N{\rENG}What do you know?{\r}
+Dialogue: 0,1:11:51.92,1:11:53.71,CHS,NTP,0,0,0,,我们没权利挑三拣四\N{\rENG}We don't all have the luxury of deciding...{\r}
+Dialogue: 0,1:11:53.92,1:11:56.19,CHS,NTP,0,0,0,,选择在乎什么 不在乎什么\N{\rENG}when and where we want to care about something.{\r}
+Dialogue: 0,1:11:56.76,1:11:58.95,CHS,NTP,0,0,0,,你才刚刚知道起义军的真面目\N{\rENG}Suddenly the Rebellion is real for you.{\r}
+Dialogue: 0,1:11:59.48,1:12:01.27,CHS,NTP,0,0,0,,我是亲身经历过\N{\rENG}Some of us live it.{\r}
+Dialogue: 0,1:12:02.08,1:12:05.27,CHS,NTP,0,0,0,,告诉你我参加战斗的时候我才六岁\N{\rENG}I've been in this fight since I was 6 years old.{\r}
+Dialogue: 0,1:12:07.88,1:12:10.83,CHS,NTP,0,0,0,,这世上不是只有你失去了一切\N{\rENG}You're not the only one who lost everything.{\r}
+Dialogue: 0,1:12:12.04,1:12:15.75,CHS,NTP,0,0,0,,我们决定了 一定要改变这个世界\N{\rENG}Some of us just decided to do something about it.{\r}
+Dialogue: 0,1:12:18.36,1:12:20.71,CHS,NTP,0,0,0,,这根本不是什么理由\N{\rENG}You can't talk your way around this.{\r}
+Dialogue: 0,1:12:24.48,1:12:25.96,CHS,NTP,0,0,0,,我需要理由\N{\rENG}I don't have to.{\r}
+Dialogue: 0,1:12:29.84,1:12:31.32,CHS,NTP,0,0,0,,回雅文四号\N{\rENG}Yavin 4.{\r}
+Dialogue: 0,1:12:31.88,1:12:35.23,CHS,NTP,0,0,0,,确认他们知道我们开着偷来的船\N{\rENG}Make sure they know we're coming in with a stolen ship.{\r}
+Dialogue: 0,1:12:38.72,1:12:40.15,CHS,NTP,0,0,0,,谁还有问题\N{\rENG}Anybody else?{\r}
+Dialogue: 0,1:13:37.44,1:13:40.63,CHS,NTP,0,0,0,,大人 科伦尼克总监\N{\rENG}My lord, Director Krennic...{\r}
+Dialogue: 0,1:13:40.80,1:13:42.79,CHS,NTP,0,0,0,,已经到了\N{\rENG}has arrived.{\r}
+Dialogue: 0,1:14:43.20,1:14:44.42,CHS,NTP,0,0,0,,科伦尼克总监\N{\rENG}Director Krennic.{\r}
+Dialogue: 0,1:14:46.00,1:14:47.67,CHS,NTP,0,0,0,,维德大人\N{\rENG}Lord Vader.{\r}
+Dialogue: 0,1:14:48.68,1:14:50.91,CHS,NTP,0,0,0,,你似乎有点紧张\N{\rENG}You seem unsettled.{\r}
+Dialogue: 0,1:14:51.08,1:14:52.27,CHS,NTP,0,0,0,,不\N{\rENG}No...{\r}
+Dialogue: 0,1:14:52.44,1:14:53.55,CHS,NTP,0,0,0,,只是 日程紧张\N{\rENG}just pressed for time.{\r}
+Dialogue: 0,1:14:53.72,1:14:56.03,CHS,NTP,0,0,0,,公务有些繁忙\N{\rENG}There's a great many things to attend to.{\r}
+Dialogue: 0,1:14:56.20,1:14:57.60,CHS,NTP,0,0,0,,抱歉打断你\N{\rENG}My apologies.{\r}
+Dialogue: 0,1:14:57.80,1:15:01.07,CHS,NTP,0,0,0,,你的确有很多问题需要解释\N{\rENG}You do have a great many things to explain.{\r}
+Dialogue: 0,1:15:01.24,1:15:03.63,CHS,NTP,0,0,0,,我按照皇帝的要求交付了武器\N{\rENG}I delivered the weapon the Emperor requested.{\r}
+Dialogue: 0,1:15:03.76,1:15:05.59,CHS,NTP,0,0,0,,应该 应该给我一个机会\N{\rENG}I deserve an audience...{\r}
+Dialogue: 0,1:15:05.72,1:15:09.71,CHS,NTP,0,0,0,,确保皇帝陛下清楚地了解其全部的\N{\rENG}to make certain that he understands its remarkable...{\r}
+Dialogue: 0,1:15:11.16,1:15:12.15,CHS,NTP,0,0,0,,威力\N{\rENG}potential.{\r}
+Dialogue: 0,1:15:12.36,1:15:16.51,CHS,NTP,0,0,0,,难道这武器制造麻烦的威力还不够大吗\N{\rENG}Its power to create problems has certainly been confirmed.{\r}
+Dialogue: 0,1:15:16.68,1:15:18.59,CHS,NTP,0,0,0,,一座城市被毁\N{\rENG}A city destroyed...{\r}
+Dialogue: 0,1:15:18.76,1:15:21.71,CHS,NTP,0,0,0,,一座帝国基地遭到袭击\N{\rENG}an Imperial facility openly attacked.{\r}
+Dialogue: 0,1:15:22.32,1:15:25.15,CHS,NTP,0,0,0,,这些都是塔金总督建议试验的\N{\rENG}It was Governor Tarkin that suggested the test.{\r}
+Dialogue: 0,1:15:26.32,1:15:29.99,CHS,NTP,0,0,0,,我不想听你摇尾乞怜 科伦尼克总监\N{\rENG}You were not summoned here to grovel, Director Krennic.{\r}
+Dialogue: 0,1:15:30.12,1:15:31.11,CHS,NTP,0,0,0,,可 可是我\N{\rENG}No...{\r}
+Dialogue: 0,1:15:31.20,1:15:33.19,CHS,NTP,0,0,0,,根本就没有什么死星\N{\rENG}There is no Death Star.{\r}
+Dialogue: 0,1:15:33.36,1:15:34.55,CHS,NTP,0,0,0,,我们已经通知参议院\N{\rENG}The Senate has been informed...{\r}
+Dialogue: 0,1:15:34.80,1:15:38.03,CHS,NTP,0,0,0,,杰达完全毁于采矿事故\N{\rENG}that Jedha was destroyed in a mining disaster.{\r}
+Dialogue: 0,1:15:38.28,1:15:39.23,CHS,NTP,0,0,0,,是的 大人\N{\rENG}Yes, my lord.{\r}
+Dialogue: 0,1:15:39.40,1:15:42.87,CHS,NTP,0,0,0,,我希望你恪尽职守 尽快向皇帝证明\N{\rENG}I expect you not to rest until you can assure the Emperor...{\r}
+Dialogue: 0,1:15:43.16,1:15:45.47,CHS,NTP,0,0,0,,盖伦·厄索没有以任何方式\N{\rENG}that Galen Erso has not compromised{\r}
+Dialogue: 0,1:15:45.60,1:15:47.87,CHS,NTP,0,0,0,,暗中破坏这座武器\N{\rENG}this weapon in any way.{\r}
+Dialogue: 0,1:15:51.80,1:15:54.23,CHS,NTP,0,0,0,,那我还拥有指挥权吗\N{\rENG}So I'm still in command?{\r}
+Dialogue: 0,1:15:57.20,1:15:59.31,CHS,NTP,0,0,0,,您会向皇帝说明这些吗\N{\rENG}You'll speak to the Emperor about...{\r}
+Dialogue: 0,1:16:12.44,1:16:16.21,CHS,NTP,0,0,0,,记住 不要被野心卡住喉咙\N{\rENG}Be careful  not to choke on your aspirations,{\r}
+Dialogue: 0,1:16:16.51,1:16:17.79,CHS,NTP,0,0,0,,科伦尼克总监\N{\rENG}Director.{\r}
+Dialogue: 0,1:16:28.96,1:16:31.07,CHS,NTP,0,0,0,,我们必须解散舰队\N{\rENG}We must scatter the fleet.{\r}
+Dialogue: 0,1:16:31.88,1:16:34.55,CHS,NTP,0,0,0,,投降是唯一的出路\N{\rENG}We have no recourse but to surrender.{\r}
+Dialogue: 0,1:16:35.04,1:16:37.31,CHS,NTP,0,0,0,,难道我们费尽心血建立的一切\N{\rENG}Are we really talking about disbanding something...{\r}
+Dialogue: 0,1:16:37.48,1:16:39.47,CHS,NTP,0,0,0,,就这么付之东流了吗\N{\rENG}that we've worked so hard to create?{\r}
+Dialogue: 0,1:16:39.68,1:16:41.23,CHS,NTP,0,0,0,,我们不能这么屈服\N{\rENG}We can't just give in!{\r}
+Dialogue: 0,1:16:41.48,1:16:43.31,CHS,NTP,0,0,0,,我们加入的是同盟 不是自杀社团\N{\rENG}We joined an alliance, not a suicide pact.{\r}
+Dialogue: 0,1:16:43.48,1:16:44.80,CHS,NTP,0,0,0,,我们刚把部队都集结起来\N{\rENG}We've only now managed to gather our forces.{\r}
+Dialogue: 0,1:16:45.32,1:16:46.95,CHS,NTP,0,0,0,,集结部队\N{\rENG}Gather our forces?{\r}
+Dialogue: 0,1:16:47.16,1:16:49.31,CHS,NTP,0,0,0,,但瑞文将军已经炸翻了一座帝国基地了\N{\rENG}General Draven's already blown up an Imperial base.{\r}
+Dialogue: 0,1:16:49.48,1:16:50.80,CHS,NTP,0,0,0,,我必须当机立断\N{\rENG}A decision needed to be made!{\r}
+Dialogue: 0,1:16:51.16,1:16:52.51,CHS,NTP,0,0,0,,如果想发动战争\N{\rENG}If it's war you want...{\r}
+Dialogue: 0,1:16:52.72,1:16:54.07,CHS,NTP,0,0,0,,你自己去吧\N{\rENG}you'll fight alone.{\r}
+Dialogue: 0,1:16:54.24,1:16:56.07,CHS,NTP,0,0,0,,既然如此 又何必建立同盟呢\N{\rENG}If that's how it's going, why have an alliance at all?{\r}
+Dialogue: 0,1:16:56.24,1:16:59.27,CHS,NTP,0,0,0,,如果她说的是真的 我们必须立即采取行动\N{\rENG}If she's telling the truth, we need to act now!{\r}
+Dialogue: 0,1:16:59.44,1:17:00.79,CHS,NTP,0,0,0,,请保持冷静\N{\rENG}Councilors, please.{\r}
+Dialogue: 0,1:17:00.96,1:17:01.95,CHS,NTP,0,0,0,,很简单\N{\rENG}It is simple.{\r}
+Dialogue: 0,1:17:02.08,1:17:04.54,CHS,NTP,0,0,0,,目前帝国有大规模杀伤性武器\N{\rENG}The Empire has the means of mass destruction...{\r}
+Dialogue: 0,1:17:04.76,1:17:05.83,CHS,NTP,0,0,0,,而起义军没有\N{\rENG}the Rebellion does not.{\r}
+Dialogue: 0,1:17:06.08,1:17:07.79,CHS,NTP,0,0,0,,什么死星 这不可能\N{\rENG}A Death Star. This is nonsense.{\r}
+Dialogue: 0,1:17:08.00,1:17:09.51,CHS,NTP,0,0,0,,我父亲有什么理由说谎\N{\rENG}What reason would my father have to lie?{\r}
+Dialogue: 0,1:17:09.72,1:17:11.35,CHS,NTP,0,0,0,,这对他有什么好处\N{\rENG}What benefit would it bring him?{\r}
+Dialogue: 0,1:17:11.60,1:17:13.35,CHS,NTP,0,0,0,,这是想引诱我们进行决战\N{\rENG}To lure our forces into a final battle{\r}
+Dialogue: 0,1:17:13.48,1:17:14.83,CHS,NTP,0,0,0,,然后把我们一举歼灭\N{\rENG}to destroy us once and for all.{\r}
+Dialogue: 0,1:17:15.60,1:17:17.79,CHS,NTP,0,0,0,,如此冒险 根据是什么\N{\rENG}Risk everything? Based on what?{\r}
+Dialogue: 0,1:17:17.96,1:17:19.15,CHS,NTP,0,0,0,,一个罪犯的证词\N{\rENG}The testimony of a criminal?{\r}
+Dialogue: 0,1:17:19.40,1:17:22.47,CHS,NTP,0,0,0,,就凭她的父亲 一个帝国科学家的临终遗言\N{\rENG}The dying words of her father, an Imperial scientist?{\r}
+Dialogue: 0,1:17:22.64,1:17:24.43,CHS,NTP,0,0,0,,别忘了还有帝国飞行员\N{\rENG}But don't forget the Imperial pilot.{\r}
+Dialogue: 0,1:17:25.04,1:17:27.15,CHS,NTP,0,0,0,,我父亲牺牲自己 是好让我们有机会获胜\N{\rENG}My father gave his life so that we may have a chance to defeat this.{\r}
+Dialogue: 0,1:17:27.76,1:17:28.71,CHS,NTP,0,0,0,,这是你的说法\N{\rENG}So you've told us.{\r}
+Dialogue: 0,1:17:28.88,1:17:31.15,CHS,NTP,0,0,0,,如果帝国有强大的武力\N{\rENG}If the Empire has this kind of power,{\r}
+Dialogue: 0,1:17:31.24,1:17:32.51,CHS,NTP,0,0,0,,我们还有什么机会\N{\rENG}what chance do we have?{\r}
+Dialogue: 0,1:17:33.16,1:17:35.03,CHS,NTP,0,0,0,,我们还有什么机会\N{\rENG}What chance do we have?{\r}
+Dialogue: 0,1:17:36.12,1:17:37.67,CHS,NTP,0,0,0,,应该问 我们还有什么选择\N{\rENG}The question is "what choice."{\r}
+Dialogue: 0,1:17:38.40,1:17:39.51,CHS,NTP,0,0,0,,逃跑 躲起来\N{\rENG}Run, hide...{\r}
+Dialogue: 0,1:17:39.68,1:17:42.07,CHS,NTP,0,0,0,,祈求宽恕 解散军队\N{\rENG}plead for mercy, scatter your forces.{\r}
+Dialogue: 0,1:17:42.36,1:17:45.03,CHS,NTP,0,0,0,,如果你们屈服于如此邪恶如此强大的敌人\N{\rENG}You give way to an enemy this evil with this much power...{\r}
+Dialogue: 0,1:17:45.20,1:17:48.11,CHS,NTP,0,0,0,,银河系将会陷入永无止境的压迫\N{\rENG}and you condemn the galaxy to an eternity of submission.{\r}
+Dialogue: 0,1:17:48.28,1:17:50.07,CHS,NTP,0,0,0,,- 此时不战更待何时 - 对\N{\rENG}- The time to fight is now! - Yes.{\r}
+Dialogue: 0,1:17:50.24,1:17:51.35,CHS,NTP,0,0,0,,现在每浪费一秒\N{\rENG}Every moment you waste{\r}
+Dialogue: 0,1:17:51.44,1:17:53.55,CHS,NTP,0,0,0,,我们都可能成为下一个杰达\N{\rENG}is another step closer to the ashes of Jedha.{\r}
+Dialogue: 0,1:17:54.72,1:17:56.63,CHS,NTP,0,0,0,,她到底想说什么\N{\rENG}What is she proposing?{\r}
+Dialogue: 0,1:17:56.80,1:17:57.79,CHS,NTP,0,0,0,,让她说完\N{\rENG}Just let the girl speak.{\r}
+Dialogue: 0,1:17:58.04,1:17:59.71,CHS,NTP,0,0,0,,派精锐部队去斯卡里夫\N{\rENG}Send your best troops to Scarif.{\r}
+Dialogue: 0,1:18:03.32,1:18:04.72,CHS,NTP,0,0,0,,马上出动义军舰队\N{\rENG}Send the rebel fleet if you have to.{\r}
+Dialogue: 0,1:18:05.48,1:18:07.15,CHS,NTP,0,0,0,,你们必须拿到死星计划图\N{\rENG}You need to capture the Death Star plans{\r}
+Dialogue: 0,1:18:07.32,1:18:08.72,CHS,NTP,0,0,0,,这是摧毁它的唯一希望\N{\rENG}if there's any hope of destroying it.{\r}
+Dialogue: 0,1:18:13.60,1:18:15.87,CHS,NTP,0,0,0,,你的意思 难道要我们只靠希望\N{\rENG}You're asking us to invade an Imperial installation...{\r}
+Dialogue: 0,1:18:16.08,1:18:17.95,CHS,NTP,0,0,0,,去入侵帝国基地吗\N{\rENG}based on nothing but hope.{\r}
+Dialogue: 0,1:18:20.08,1:18:22.43,CHS,NTP,0,0,0,,起义都建在希望之上\N{\rENG}Rebellions are built on hope.{\r}
+Dialogue: 0,1:18:24.60,1:18:26.08,CHS,NTP,0,0,0,,已经没有希望了\N{\rENG}There is no hope.{\r}
+Dialogue: 0,1:18:26.24,1:18:27.87,CHS,NTP,0,0,0,,我们应该战斗\N{\rENG}I say we fight.{\r}
+Dialogue: 0,1:18:28.00,1:18:30.67,CHS,NTP,0,0,0,,我认为起义军已经完了\N{\rENG}I say the Rebellion is finished!{\r}
+Dialogue: 0,1:18:35.28,1:18:36.63,CHS,NTP,0,0,0,,很抱歉 琴\N{\rENG}I'm sorry, Jyn.{\r}
+Dialogue: 0,1:18:38.52,1:18:40.79,CHS,NTP,0,0,0,,如果没有委员会的一致支持\N{\rENG}Without the full support of the Council...{\r}
+Dialogue: 0,1:18:42.92,1:18:44.67,CHS,NTP,0,0,0,,风险太大了\N{\rENG}the odds are too great.{\r}
+Dialogue: 0,1:19:04.48,1:19:05.96,CHS,NTP,0,0,0,,辛朵拉将军\N{\rENG}General Syndulla,{\r}
+Dialogue: 0,1:19:06.04,1:19:07.95,CHS,NTP,0,0,0,,请到指令室\N{\rENG}please report to the briefing room.{\r}
+Dialogue: 0,1:19:09.64,1:19:10.67,CHS,NTP,0,0,0,,把事谈砸了\N{\rENG}You don't look happy.{\r}
+Dialogue: 0,1:19:11.28,1:19:12.50,CHS,NTP,0,0,0,,他们都宁愿投降\N{\rENG}They prefer to surrender.{\r}
+Dialogue: 0,1:19:12.72,1:19:13.55,CHS,NTP,0,0,0,,那你呢\N{\rENG}And you?{\r}
+Dialogue: 0,1:19:14.04,1:19:15.03,CHS,NTP,0,0,0,,她是想 跟他们拼了\N{\rENG}She wants to fight.{\r}
+Dialogue: 0,1:19:15.20,1:19:17.27,CHS,NTP,0,0,0,,我也想 我们都想\N{\rENG}So do I. We all do.{\r}
+Dialogue: 0,1:19:17.48,1:19:19.51,CHS,NTP,0,0,0,,原力是强大的\N{\rENG}The Force is strong.{\r}
+Dialogue: 0,1:19:20.12,1:19:22.27,CHS,NTP,0,0,0,,只有我们四个人恐怕还不够\N{\rENG}I'm not sure four of us is quite enough.{\r}
+Dialogue: 0,1:19:22.48,1:19:23.80,CHS,NTP,0,0,0,,我们需要多少人\N{\rENG}How many do we need?{\r}
+Dialogue: 0,1:19:23.96,1:19:25.28,CHS,NTP,0,0,0,,你有什么办法吗\N{\rENG}What are you talking about?{\r}
+Dialogue: 0,1:19:33.12,1:19:35.47,CHS,NTP,0,0,0,,他们永远不会相信你的\N{\rENG}They were never gonna believe you.{\r}
+Dialogue: 0,1:19:35.64,1:19:37.19,CHS,NTP,0,0,0,,太感谢你的帮助了\N{\rENG}I appreciate the support.{\r}
+Dialogue: 0,1:19:37.80,1:19:38.99,CHS,NTP,0,0,0,,我相信\N{\rENG}But I do.{\r}
+Dialogue: 0,1:19:41.52,1:19:43.00,CHS,NTP,0,0,0,,我相信你\N{\rENG}I believe you.{\r}
+Dialogue: 0,1:19:48.16,1:19:49.27,CHS,NTP,0,0,0,,我们志愿参战\N{\rENG}We'd like to volunteer.{\r}
+Dialogue: 0,1:19:52.16,1:19:53.83,CHS,NTP,0,0,0,,他们中\N{\rENG}Some of us...{\r}
+Dialogue: 0,1:19:54.00,1:19:55.75,CHS,NTP,0,0,0,,大部分人\N{\rENG}Well, most of us...{\r}
+Dialogue: 0,1:19:56.32,1:19:59.59,CHS,NTP,0,0,0,,都为起义军做过不为人知的事情\N{\rENG}we've all done terrible things on behalf of the Rebellion.{\r}
+Dialogue: 0,1:20:00.52,1:20:01.84,CHS,NTP,0,0,0,,间谍\N{\rENG}Spies...{\r}
+Dialogue: 0,1:20:02.52,1:20:05.39,CHS,NTP,0,0,0,,搞破坏 暗杀\N{\rENG}saboteurs, assassins.{\r}
+Dialogue: 0,1:20:06.76,1:20:09.99,CHS,NTP,0,0,0,,我做的一切 都是为了起义军\N{\rENG}Everything I did, I did for the Rebellion.{\r}
+Dialogue: 0,1:20:11.56,1:20:12.83,CHS,NTP,0,0,0,,当我每次做了那些\N{\rENG}And every time I walked away...{\r}
+Dialogue: 0,1:20:13.00,1:20:15.39,CHS,NTP,0,0,0,,我不愿记得的事\N{\rENG}from something I wanted to forget...{\r}
+Dialogue: 0,1:20:16.52,1:20:20.19,CHS,NTP,0,0,0,,我都告诉自己 那是为了我信仰的事业\N{\rENG}I told myself it was for a cause that I believed in.{\r}
+Dialogue: 0,1:20:21.36,1:20:22.79,CHS,NTP,0,0,0,,它值得我这么做\N{\rENG}A cause that was worth it.{\r}
+Dialogue: 0,1:20:24.40,1:20:26.51,CHS,NTP,0,0,0,,否则我会 迷失自己\N{\rENG}Without that, we're lost.{\r}
+Dialogue: 0,1:20:27.68,1:20:30.35,CHS,NTP,0,0,0,,我们所做的一切都会毫无意义\N{\rENG}Everything we've done would have been for nothing.{\r}
+Dialogue: 0,1:20:33.76,1:20:36.22,CHS,NTP,0,0,0,,如果现在放弃 我无法面对自己\N{\rENG}I couldn't face myself if I gave up now.{\r}
+Dialogue: 0,1:20:39.88,1:20:41.36,CHS,NTP,0,0,0,,他们也是\N{\rENG}None of us could.{\r}
+Dialogue: 0,1:20:46.44,1:20:47.79,CHS,NTP,0,0,0,,这一路可不太舒服\N{\rENG}It won't be comfortable.{\r}
+Dialogue: 0,1:20:48.40,1:20:50.83,CHS,NTP,0,0,0,,有点挤 不过都能塞下\N{\rENG}It'd be a bit cramped, but we'd all fit.{\r}
+Dialogue: 0,1:20:53.20,1:20:54.60,CHS,NTP,0,0,0,,可以走吗\N{\rENG}We could go.{\r}
+Dialogue: 0,1:20:56.56,1:20:58.39,CHS,NTP,0,0,0,,好了 出发\N{\rENG}Okay. Gear up.{\r}
+Dialogue: 0,1:20:59.04,1:21:00.83,CHS,NTP,0,0,0,,把能带的东西都带上\N{\rENG}Grab anything that's not nailed down.{\r}
+Dialogue: 0,1:21:02.84,1:21:03.79,CHS,NTP,0,0,0,,走 走 走\N{\rENG}Go, go, go!{\r}
+Dialogue: 0,1:21:03.92,1:21:04.99,CHS,NTP,0,0,0,,琴\N{\rENG}Jyn.{\r}
+Dialogue: 0,1:21:05.92,1:21:07.99,CHS,NTP,0,0,0,,我会保护你的\N{\rENG}I'll be there for you.{\r}
+Dialogue: 0,1:21:09.92,1:21:11.87,CHS,NTP,0,0,0,,卡西安非要我这么做\N{\rENG}Cassian said I had to.{\r}
+Dialogue: 0,1:21:17.76,1:21:21.11,CHS,NTP,0,0,0,,我真的不习惯 让别人替我去冒险\N{\rENG}I'm not used to people sticking around when things go bad.{\r}
+Dialogue: 0,1:21:21.80,1:21:23.28,CHS,NTP,0,0,0,,欢迎回家\N{\rENG}Welcome home.{\r}
+Dialogue: 0,1:21:47.72,1:21:49.27,CHS,NTP,0,0,0,,愿原力与我们同在\N{\rENG}May the Force be with us.{\r}
+Dialogue: 0,1:21:55.48,1:21:57.15,CHS,NTP,0,0,0,,货运穿梭机请回话\N{\rENG}Cargo shuttle, read back please.{\r}
+Dialogue: 0,1:21:57.32,1:21:58.31,CHS,NTP,0,0,0,,到底怎么回事\N{\rENG}What's going on out there?{\r}
+Dialogue: 0,1:22:00.32,1:22:01.43,CHS,NTP,0,0,0,,这艘船已经被禁止起飞了\N{\rENG}That ship's off-limits.{\r}
+Dialogue: 0,1:22:01.68,1:22:04.40,CHS,NTP,0,0,0,,任何人不得登船\N{\rENG}No one's supposed to be on board until further instructions.{\r}
+Dialogue: 0,1:22:05.64,1:22:06.96,CHS,NTP,0,0,0,,是的 可我们收到了\N{\rENG}Yes, yes, we are.{\r}
+Dialogue: 0,1:22:07.12,1:22:08.23,CHS,NTP,0,0,0,,收到命令了\N{\rENG}Affirmative.{\r}
+Dialogue: 0,1:22:08.44,1:22:09.84,CHS,NTP,0,0,0,,这是被扣押的帝国飞船\N{\rENG}That's an impounded Imperial ship.{\r}
+Dialogue: 0,1:22:10.00,1:22:12.19,CHS,NTP,0,0,0,,你们的呼叫代号是什么\N{\rENG}What's your call sign, pilot?{\r}
+Dialogue: 0,1:22:12.52,1:22:14.47,CHS,NTP,0,0,0,,- 呃 - 我们该走了\N{\rENG}- Um... - We have to go.{\r}
+Dialogue: 0,1:22:14.96,1:22:15.99,CHS,NTP,0,0,0,,代号是\N{\rENG}It's, um...{\r}
+Dialogue: 0,1:22:17.00,1:22:18.32,CHS,NTP,0,0,0,,随便说点什么\N{\rENG}Say something.{\r}
+Dialogue: 0,1:22:18.80,1:22:19.67,CHS,NTP,0,0,0,,快点儿\N{\rENG}Come on.{\r}
+Dialogue: 0,1:22:20.48,1:22:21.39,CHS,NTP,0,0,0,,侠盗\N{\rENG}Rogue.{\r}
+Dialogue: 0,1:22:24.00,1:22:25.19,CHS,NTP,0,0,0,,侠盗一号\N{\rENG}Rogue One.{\r}
+Dialogue: 0,1:22:25.32,1:22:26.59,CHS,NTP,0,0,0,,侠盗一号\N{\rENG}Rogue One?{\r}
+Dialogue: 0,1:22:26.76,1:22:29.19,CHS,NTP,0,0,0,,这里没有什么侠盗一号\N{\rENG}There is no Rogue One!{\r}
+Dialogue: 0,1:22:29.36,1:22:30.63,CHS,NTP,0,0,0,,现在有了\N{\rENG}Well, there is now.{\r}
+Dialogue: 0,1:22:31.48,1:22:33.43,CHS,NTP,0,0,0,,侠盗一号 准备起飞\N{\rENG}Rogue One, pulling away.{\r}
+Dialogue: 0,1:22:33.60,1:22:35.11,CHS,NTP,0,0,0,,准备起飞\N{\rENG}Pulling away.{\r}
+Dialogue: 0,1:22:50.08,1:22:52.51,CHS,NTP,0,0,0,,不管其他人怎么说 战争已经无法避免了\N{\rENG}Despite what the others say, war is inevitable.{\r}
+Dialogue: 0,1:22:52.68,1:22:53.67,CHS,NTP,0,0,0,,我同意你说的\N{\rENG}Yes, I agree.{\r}
+Dialogue: 0,1:22:53.84,1:22:55.99,CHS,NTP,0,0,0,,我必须回奥德朗告诉民众\N{\rENG}I must return to Alderaan to inform my people{\r}
+Dialogue: 0,1:22:56.12,1:22:57.99,CHS,NTP,0,0,0,,和平已经没有希望了\N{\rENG}that there will be no peace.{\r}
+Dialogue: 0,1:22:58.84,1:23:00.83,CHS,NTP,0,0,0,,我们需要团结一切力量\N{\rENG}We will need every advantage.{\r}
+Dialogue: 0,1:23:01.92,1:23:03.35,CHS,NTP,0,0,0,,你的朋友\N{\rENG}Your friend...{\r}
+Dialogue: 0,1:23:04.36,1:23:05.79,CHS,NTP,0,0,0,,绝地武士\N{\rENG}the Jedi.{\r}
+Dialogue: 0,1:23:07.48,1:23:09.51,CHS,NTP,0,0,0,,在克隆人战争时期\N{\rENG}He served me well during the Clone Wars...{\r}
+Dialogue: 0,1:23:09.68,1:23:12.11,CHS,NTP,0,0,0,,他曾为我效力 躲过了皇帝的大清洗\N{\rENG}and has lived in hiding since the Emperor's purge.{\r}
+Dialogue: 0,1:23:12.28,1:23:13.68,CHS,NTP,0,0,0,,我会派人联络他\N{\rENG}Yes, I will send for him.{\r}
+Dialogue: 0,1:23:13.88,1:23:16.11,CHS,NTP,0,0,0,,一定要派你信任的人\N{\rENG}You will need someone you can trust.{\r}
+Dialogue: 0,1:23:18.12,1:23:20.07,CHS,NTP,0,0,0,,他是绝对可靠的人选\N{\rENG}I would trust her with my life.{\r}
+Dialogue: 0,1:23:20.68,1:23:21.87,CHS,NTP,0,0,0,,- 安第列斯船长 - 是 先生\N{\rENG}- Captain Antilles. - Senator.{\r}
+Dialogue: 0,1:23:22.04,1:23:24.03,CHS,NTP,0,0,0,,交给你个任务\N{\rENG}I have a mission for you, sir.{\r}
+Dialogue: 0,1:23:34.04,1:23:36.63,CHS,NTP,0,0,0,,好了 我们到了\N{\rENG}Okay. We're coming in.{\r}
+Dialogue: 0,1:23:37.24,1:23:38.64,CHS,NTP,0,0,0,,整个行星被护盾包围\N{\rENG}There's a planet-wide defensive shield...{\r}
+Dialogue: 0,1:23:38.84,1:23:40.39,CHS,NTP,0,0,0,,只有一个主闸门\N{\rENG}with a single main entry gate.{\r}
+Dialogue: 0,1:23:40.72,1:23:42.15,CHS,NTP,0,0,0,,穿梭机上应该有一个许可代码\N{\rENG}This shuttle should be equipped with{\r}
+Dialogue: 0,1:23:42.24,1:23:44.39,CHS,NTP,0,0,0,,可以让我们进去\N{\rENG}an access code that allows us through.{\r}
+Dialogue: 0,1:23:44.72,1:23:46.87,CHS,NTP,0,0,0,,但前提是帝国还没有发现它过期\N{\rENG}Assuming the Empire hasn't logged it as overdue.{\r}
+Dialogue: 0,1:23:47.64,1:23:49.27,CHS,NTP,0,0,0,,如果发现了呢\N{\rENG}And if they have?{\r}
+Dialogue: 0,1:23:50.56,1:23:51.71,CHS,NTP,0,0,0,,闸门会被关闭\N{\rENG}Then they shut the gate.{\r}
+Dialogue: 0,1:23:51.92,1:23:53.24,CHS,NTP,0,0,0,,我们哪儿也去不了\N{\rENG}And we're all annihilated{\r}
+Dialogue: 0,1:23:53.32,1:23:55.55,CHS,NTP,0,0,0,,都会死在黑暗的太空里\N{\rENG}in the cold, dark vacuum of space.{\r}
+Dialogue: 0,1:23:56.56,1:23:57.91,CHS,NTP,0,0,0,,我死不了\N{\rENG}Not me.{\r}
+Dialogue: 0,1:23:59.36,1:24:01.82,CHS,NTP,0,0,0,,我在太空中也能活\N{\rENG}I can survive in space.{\r}
+Dialogue: 0,1:24:12.32,1:24:13.59,CHS,NTP,0,0,0,,好了\N{\rENG}Okay.{\r}
+Dialogue: 0,1:24:13.76,1:24:14.91,CHS,NTP,0,0,0,,开始吧\N{\rENG}Here goes.{\r}
+Dialogue: 0,1:24:19.36,1:24:22.91,CHS,NTP,0,0,0,,货运穿梭机SW-0608 申请着陆平台\N{\rENG}Cargo shuttle SW-0608 requesting a landing pad.{\r}
+Dialogue: 0,1:24:25.68,1:24:28.03,CHS,NTP,0,0,0,,货运穿梭机SW-0608\N{\rENG}Cargo shuttle SW-0608,{\r}
+Dialogue: 0,1:24:28.12,1:24:29.99,CHS,NTP,0,0,0,,你不在抵达日程表上\N{\rENG}you're not listed on the arrival schedule.{\r}
+Dialogue: 0,1:24:30.16,1:24:32.19,CHS,NTP,0,0,0,,明白 闸门控制中心\N{\rENG}Acknowledged, Gate Control.{\r}
+Dialogue: 0,1:24:32.40,1:24:35.07,CHS,NTP,0,0,0,,我们更改了航程 来自伊杜飞行站\N{\rENG}We were rerouted from Eadu flight station.{\r}
+Dialogue: 0,1:24:35.24,1:24:36.51,CHS,NTP,0,0,0,,正在发送许可代码\N{\rENG}Transmitting clearance code now.{\r}
+Dialogue: 0,1:24:36.72,1:24:38.04,CHS,NTP,0,0,0,,正在发送\N{\rENG}Transmitting.{\r}
+Dialogue: 0,1:24:50.92,1:24:53.27,CHS,NTP,0,0,0,,货运穿梭机SW-0608\N{\rENG}Cargo shuttle, SW-0608...{\r}
+Dialogue: 0,1:24:56.04,1:24:57.79,CHS,NTP,0,0,0,,- 你被获准进入 - 太好了\N{\rENG}- you are cleared for entry. - Yes!{\r}
+Dialogue: 0,1:24:58.08,1:24:59.35,CHS,NTP,0,0,0,,干得漂亮\N{\rENG}Impressive.{\r}
+Dialogue: 0,1:25:04.64,1:25:06.31,CHS,NTP,0,0,0,,我要去告诉其他人\N{\rENG}I'll tell the others.{\r}
+Dialogue: 0,1:25:08.00,1:25:09.15,CHS,NTP,0,0,0,,好极了\N{\rENG}Okay.{\r}
+Dialogue: 0,1:25:13.44,1:25:15.95,CHS,NTP,0,0,0,,牵引机测试在2号至8号泊位\N{\rENG}Tractor beam test in bays 2 through 8.{\r}
+Dialogue: 0,1:25:16.12,1:25:19.31,CHS,NTP,0,0,0,,牵引机测试在2号至8号泊位\N{\rENG}Tractor beam test in bays 2 through 8.{\r}
+Dialogue: 0,1:25:27.04,1:25:30.82,CHS,NTP,0,0,0,,SW-0608 获准9号着陆平台\N{\rENG}SW-0608, cleared for Landing Pad 9.{\r}
+Dialogue: 0,1:25:30.96,1:25:32.79,CHS,NTP,0,0,0,,请确认\N{\rENG}Acknowledge, please.{\r}
+Dialogue: 0,1:25:33.00,1:25:36.63,CHS,NTP,0,0,0,,SW-0608 正前往9号平台着陆\N{\rENG}SW-0608 proceeding to LP 9 as instructed.{\r}
+Dialogue: 0,1:25:37.36,1:25:38.87,CHS,NTP,0,0,0,,下面那座主楼是什么\N{\rENG}Main building down there, what is it?{\r}
+Dialogue: 0,1:25:39.12,1:25:40.55,CHS,NTP,0,0,0,,那就是塔堡\N{\rENG}That's the Citadel Tower.{\r}
+Dialogue: 0,1:25:40.72,1:25:43.47,CHS,NTP,0,0,0,,里面存放着所有帝国的建筑档案\N{\rENG}They keep all the Imperial structural archives up there.{\r}
+Dialogue: 0,1:25:43.68,1:25:45.87,CHS,NTP,0,0,0,,设计图肯定就在那里\N{\rENG}If the plans are anywhere, they'll be there.{\r}
+Dialogue: 0,1:25:46.00,1:25:48.79,CHS,NTP,0,0,0,,塔顶的碟型天线有什么用途\N{\rENG}And the dish at the top, what's it for?{\r}
+Dialogue: 0,1:25:49.52,1:25:52.24,CHS,NTP,0,0,0,,也许发送数据需要很强的信号\N{\rENG}I guess it takes a lot of signal to send those data files out.{\r}
+Dialogue: 0,1:25:54.24,1:25:56.88,CHS,NTP,0,0,0,,起落架 已经展开\N{\rENG}Landing track, engaged.{\r}
+Dialogue: 0,1:25:57.76,1:25:58.83,CHS,NTP,0,0,0,,起落架锁定\N{\rENG}Landing track locked.{\r}
+Dialogue: 0,1:26:10.68,1:26:11.75,CHS,NTP,0,0,0,,要着陆了\N{\rENG}We're landing.{\r}
+Dialogue: 0,1:26:15.00,1:26:16.48,CHS,NTP,0,0,0,,准备出发\N{\rENG}We're coming in.{\r}
+Dialogue: 0,1:26:21.36,1:26:22.39,CHS,NTP,0,0,0,,索·格瑞拉说过\N{\rENG}Saw Gerrera used to say...{\r}
+Dialogue: 0,1:26:22.56,1:26:24.52,CHS,NTP,0,0,0,,当一个战士准备豁出性命\N{\rENG}one fighter with a sharp stick{\r}
+Dialogue: 0,1:26:24.52,1:26:27.19,CHS,NTP,0,0,0,,那他就能战胜任何对手\N{\rENG}and nothing left to lose can take the day.{\r}
+Dialogue: 0,1:26:31.16,1:26:33.03,CHS,NTP,0,0,0,,他们不知道我们来了\N{\rENG}They've no idea we're coming.{\r}
+Dialogue: 0,1:26:33.84,1:26:35.95,CHS,NTP,0,0,0,,我们一定能出奇制胜\N{\rENG}They've no reason to expect us.{\r}
+Dialogue: 0,1:26:36.84,1:26:38.16,CHS,NTP,0,0,0,,如果我们成功着陆\N{\rENG}If we can make it to the ground,{\r}
+Dialogue: 0,1:26:38.24,1:26:39.83,CHS,NTP,0,0,0,,就抓住了一个机会\N{\rENG}we'll take the next chance.{\r}
+Dialogue: 0,1:26:40.60,1:26:43.75,CHS,NTP,0,0,0,,再下一个机会 直到我们赢得胜利\N{\rENG}And the next. On and on until we win...{\r}
+Dialogue: 0,1:26:46.16,1:26:48.07,CHS,NTP,0,0,0,,如果运气好的话\N{\rENG}or the chances are spent.{\r}
+Dialogue: 0,1:26:50.64,1:26:53.03,CHS,NTP,0,0,0,,死星设计图就在下面\N{\rENG}The Death Star plans are down there.{\r}
+Dialogue: 0,1:26:54.08,1:26:57.43,CHS,NTP,0,0,0,,卡西亚 K-2 和我会找到设计图\N{\rENG}Cassian, K-2, and I will find them.{\r}
+Dialogue: 0,1:26:59.12,1:27:00.75,CHS,NTP,0,0,0,,没有什么能阻止我们\N{\rENG}We'll find a way to find them.{\r}
+Dialogue: 0,1:27:02.56,1:27:03.43,CHS,NTP,0,0,0,,梅尔西\N{\rENG}Melshi...{\r}
+Dialogue: 0,1:27:04.60,1:27:05.35,CHS,NTP,0,0,0,,帕奥\N{\rENG}Pao...{\r}
+Dialogue: 0,1:27:05.56,1:27:06.59,CHS,NTP,0,0,0,,玛彪斯 英威\N{\rENG}Baze, Chirrut...{\r}
+Dialogue: 0,1:27:06.80,1:27:08.23,CHS,NTP,0,0,0,,你们带领主力\N{\rENG}you'll take the main squad.{\r}
+Dialogue: 0,1:27:08.40,1:27:09.99,CHS,NTP,0,0,0,,绕过飞船向东迂回\N{\rENG}Move east and get wide of the ship.{\r}
+Dialogue: 0,1:27:10.20,1:27:12.39,CHS,NTP,0,0,0,,在这里和塔堡之间设伏\N{\rENG}Find a position between here and the tower.{\r}
+Dialogue: 0,1:27:13.32,1:27:14.51,CHS,NTP,0,0,0,,进入最佳攻击地点\N{\rENG}Once you get to the best spot...{\r}
+Dialogue: 0,1:27:15.32,1:27:16.43,CHS,NTP,0,0,0,,把这里炸翻\N{\rENG}light the place up.{\r}
+Dialogue: 0,1:27:17.88,1:27:19.87,CHS,NTP,0,0,0,,动静搞得越大越好\N{\rENG}Make 10 men feel like 100.{\r}
+Dialogue: 0,1:27:21.96,1:27:24.11,CHS,NTP,0,0,0,,把士兵从我们身边引开\N{\rENG}And get those troopers away from us.{\r}
+Dialogue: 0,1:27:24.64,1:27:26.19,CHS,NTP,0,0,0,,我做什么\N{\rENG}What should I do?{\r}
+Dialogue: 0,1:27:26.36,1:27:27.71,CHS,NTP,0,0,0,,保证引擎正常\N{\rENG}Keep the engine running.{\r}
+Dialogue: 0,1:27:27.92,1:27:30.51,CHS,NTP,0,0,0,,撤离的时候就指望你了\N{\rENG}You're our only way outta here.{\r}
+Dialogue: 0,1:28:00.16,1:28:03.75,CHS,NTP,0,0,0,,货运穿梭机SW-0608\N{\rENG}Cargo shuttle SW-0608...{\r}
+Dialogue: 0,1:28:04.00,1:28:06.31,CHS,NTP,0,0,0,,准备接受检查 准备接受检查\N{\rENG}be prepared to receive inspection team.{\r}
+Dialogue: 0,1:28:06.52,1:28:07.51,CHS,NTP,0,0,0,,好了吗\N{\rENG}Ready?{\r}
+Dialogue: 0,1:28:21.84,1:28:22.67,CHS,NTP,0,0,0,,你好\N{\rENG}Hello.{\r}
+Dialogue: 0,1:28:22.88,1:28:23.87,CHS,NTP,0,0,0,,嗨\N{\rENG}Hey.{\r}
+Dialogue: 0,1:28:23.96,1:28:26.23,CHS,NTP,0,0,0,,你们是 是不是要看货物清单\N{\rENG}Oh, you're probably looking for a manifest?{\r}
+Dialogue: 0,1:28:26.44,1:28:27.31,CHS,NTP,0,0,0,,拿给我看看吧\N{\rENG}That would be helpful.{\r}
+Dialogue: 0,1:28:29.24,1:28:30.64,CHS,NTP,0,0,0,,就在下面\N{\rENG}It's just down here.{\r}
+Dialogue: 0,1:28:39.08,1:28:40.11,CHS,NTP,0,0,0,,科伦尼克总监\N{\rENG}Director Krennic,{\r}
+Dialogue: 0,1:28:40.20,1:28:42.07,CHS,NTP,0,0,0,,我们正在通过护盾闸门\N{\rENG}we are entering the Scarif shield gate.{\r}
+Dialogue: 0,1:28:42.24,1:28:44.91,CHS,NTP,0,0,0,,并且已经通知了拉姆达将军\N{\rENG}General Ramda has been informed of your arrival.{\r}
+Dialogue: 0,1:29:09.20,1:29:10.42,CHS,NTP,0,0,0,,祝你好运\N{\rENG}Good luck...{\r}
+Dialogue: 0,1:29:10.68,1:29:12.23,CHS,NTP,0,0,0,,我的妹子\N{\rENG}little sister.{\r}
+Dialogue: 0,1:29:18.24,1:29:19.75,CHS,NTP,0,0,0,,出发 周围安全了\N{\rENG}Go! Go now! You're clear!{\r}
+Dialogue: 0,1:29:20.76,1:29:23.22,CHS,NTP,0,0,0,,好 我们走 快走 快走 快走\N{\rENG}All right, let's go! Come on. Move, move, move.{\r}
+Dialogue: 0,1:29:26.84,1:29:30.39,CHS,NTP,0,0,0,,925-H 前往运输控制中心\N{\rENG}925-H to transport control.{\r}
+Dialogue: 0,1:29:30.56,1:29:34.03,CHS,NTP,0,0,0,,925-H 前往运输控制中心\N{\rENG}925-H to transport control.{\r}
+Dialogue: 0,1:29:52.60,1:29:53.75,CHS,NTP,0,0,0,,我现在有种不祥的\N{\rENG}I've got a bad feeling about...{\r}
+Dialogue: 0,1:29:53.96,1:29:54.95,CHS,NTP,0,0,0,,- K - 安静\N{\rENG}- K! - Quiet!{\r}
+Dialogue: 0,1:29:55.16,1:29:56.23,CHS,NTP,0,0,0,,怎么了\N{\rENG}What?{\r}
+Dialogue: 0,1:30:32.64,1:30:33.96,CHS,NTP,0,0,0,,我们需要地图\N{\rENG}We need a map.{\r}
+Dialogue: 0,1:30:34.12,1:30:36.68,CHS,NTP,0,0,0,,我们要不要找个人问问路\N{\rENG}Well, I'm sure there's one just lying about.{\r}
+Dialogue: 0,1:30:37.16,1:30:39.35,CHS,NTP,0,0,0,,你知道该怎么做\N{\rENG}You know what you have to do.{\r}
+Dialogue: 0,1:31:09.76,1:31:10.67,CHS,NTP,0,0,0,,每个平台一枚\N{\rENG}One per pad.{\r}
+Dialogue: 0,1:31:10.84,1:31:12.83,CHS,NTP,0,0,0,,自行安放 把敌人引出来\N{\rENG}Pick your spot. We wanna draw them out.{\r}
+Dialogue: 0,1:31:13.52,1:31:15.55,CHS,NTP,0,0,0,,等我下令引爆 快去\N{\rENG}I'll call the timing. Go!{\r}
+Dialogue: 0,1:31:18.12,1:31:19.39,CHS,NTP,0,0,0,,嗨 你听说了吗\N{\rENG}Hey, did you hear the rumors?{\r}
+Dialogue: 0,1:31:19.56,1:31:21.31,CHS,NTP,0,0,0,,嗯 T-15 被淘汰了\N{\rENG}Yeah, the T-15s have been marked obsolete.{\r}
+Dialogue: 0,1:31:21.48,1:31:23.19,CHS,NTP,0,0,0,,是啊 是该被淘汰了\N{\rENG}Oh boy, it's about time for that.{\r}
+Dialogue: 0,1:31:24.12,1:31:25.07,CHS,NTP,0,0,0,,嗨\N{\rENG}Hey!{\r}
+Dialogue: 0,1:31:47.04,1:31:48.36,CHS,NTP,0,0,0,,怎么回事\N{\rENG}What the...{\r}
+Dialogue: 0,1:31:54.00,1:31:55.71,CHS,NTP,0,0,0,,总监阁下 您怎么来斯卡里夫了\N{\rENG}Director, what brings you to Scarif?{\r}
+Dialogue: 0,1:31:55.80,1:31:57.07,CHS,NTP,0,0,0,,因为盖伦·厄索\N{\rENG}Galen Erso.{\r}
+Dialogue: 0,1:31:57.28,1:31:58.83,CHS,NTP,0,0,0,,他发出的每一封信息\N{\rENG}I want every dispatch,{\r}
+Dialogue: 0,1:31:58.92,1:32:01.43,CHS,NTP,0,0,0,,每一段通讯 你们都给我调出来\N{\rENG}every transmission he has ever sent...{\r}
+Dialogue: 0,1:32:01.60,1:32:02.92,CHS,NTP,0,0,0,,仔细地检查\N{\rENG}called up for inspection.{\r}
+Dialogue: 0,1:32:04.08,1:32:05.07,CHS,NTP,0,0,0,,全部吗\N{\rENG}All of them?{\r}
+Dialogue: 0,1:32:05.84,1:32:07.06,CHS,NTP,0,0,0,,对 全部\N{\rENG}Yes, all of them.{\r}
+Dialogue: 0,1:32:08.32,1:32:09.47,CHS,NTP,0,0,0,,还不快去\N{\rENG}Get started.{\r}
+Dialogue: 0,1:32:41.64,1:32:42.63,CHS,NTP,0,0,0,,{\blur2\fnMicrosoft YaHei\fs16\1c&H0076EE&\4c&H39431B&\b1}K\NK.{\r}
+Dialogue: 0,1:32:43.20,1:32:44.91,CHS,NTP,0,0,0,,前往数据库的最佳路线上\N{\rENG}Our optimal route to the data vault{\r}
+Dialogue: 0,1:32:45.00,1:32:47.46,CHS,NTP,0,0,0,,只有89名冲锋队队员\N{\rENG}places only 89 Stormtroopers in our path.{\r}
+Dialogue: 0,1:32:47.64,1:32:51.11,CHS,NTP,0,0,0,,而我们只能活着走完全程的33%\N{\rENG}We will make it no more than 33% of the way before we are killed.{\r}
+Dialogue: 0,1:32:57.68,1:32:58.79,CHS,NTP,0,0,0,,梅尔西 请回话\N{\rENG}Melshi, talk to me.{\r}
+Dialogue: 0,1:32:58.96,1:33:01.03,CHS,NTP,0,0,0,,好了 都好了 请下命令\N{\rENG}Ready. Ready. Standing by.{\r}
+Dialogue: 0,1:33:06.20,1:33:07.23,CHS,NTP,0,0,0,,动手吧\N{\rENG}Light it up.{\r}
+Dialogue: 0,1:33:15.36,1:33:16.39,CHS,NTP,0,0,0,,加油\N{\rENG}Come on.{\r}
+Dialogue: 0,1:33:31.08,1:33:32.30,CHS,NTP,0,0,0,,你们都瞎了吗\N{\rENG}Are we blind?{\r}
+Dialogue: 0,1:33:32.52,1:33:34.00,CHS,NTP,0,0,0,,马上给我派出驻防军\N{\rENG}Deploy the garrison!{\r}
+Dialogue: 0,1:33:34.16,1:33:35.23,CHS,NTP,0,0,0,,快去\N{\rENG}Move!{\r}
+Dialogue: 0,1:33:53.84,1:33:54.67,CHS,NTP,0,0,0,,敌人来了\N{\rENG}Troopers!{\r}
+Dialogue: 0,1:33:56.28,1:33:57.47,CHS,NTP,0,0,0,,敌人在左翼\N{\rENG}Troopers! Troopers on the left.{\r}
+Dialogue: 0,1:33:57.64,1:33:59.12,CHS,NTP,0,0,0,,进来 进来\N{\rENG}Get in! Get in!{\r}
+Dialogue: 0,1:34:24.32,1:34:25.35,CHS,NTP,0,0,0,,长官\N{\rENG}Sir, it's Scarif base.{\r}
+Dialogue: 0,1:34:25.44,1:34:26.99,CHS,NTP,0,0,0,,斯卡里夫基地遭到叛军袭击\N{\rENG}They're reporting a Rebel incursion.{\r}
+Dialogue: 0,1:34:27.08,1:34:28.67,CHS,NTP,0,0,0,,给我联络科伦尼克总监\N{\rENG}I want to speak with Director Krennic.{\r}
+Dialogue: 0,1:34:28.88,1:34:30.95,CHS,NTP,0,0,0,,他已经去了 去斯卡里夫了\N{\rENG}He's there, sir. On Scarif.{\r}
+Dialogue: 0,1:34:31.88,1:34:34.67,CHS,NTP,0,0,0,,那里保存着太空站的原始设计图吗\N{\rENG}The original plans for this station are kept there, are they not?{\r}
+Dialogue: 0,1:34:34.84,1:34:35.43,CHS,NTP,0,0,0,,是的\N{\rENG}They are.{\r}
+Dialogue: 0,1:34:36.56,1:34:38.39,CHS,NTP,0,0,0,,准备跳入超空间\N{\rENG}Prepare for the jump to hyperspace{\r}
+Dialogue: 0,1:34:38.48,1:34:40.43,CHS,NTP,0,0,0,,马上报告维达大人\N{\rENG}and inform Lord Vader.{\r}
+Dialogue: 0,1:34:48.00,1:34:49.03,CHS,NTP,0,0,0,,你需要帮忙吗\N{\rENG}Can we help you?{\r}
+Dialogue: 0,1:34:49.24,1:34:50.35,CHS,NTP,0,0,0,,我觉得不必了\N{\rENG}That won't be necessary.{\r}
+Dialogue: 0,1:35:05.84,1:35:07.39,CHS,NTP,0,0,0,,议员\N{\rENG}Senator!{\r}
+Dialogue: 0,1:35:09.12,1:35:10.39,CHS,NTP,0,0,0,,报告议员\N{\rENG}Senator!{\r}
+Dialogue: 0,1:35:10.60,1:35:11.75,CHS,NTP,0,0,0,,嗨 什么事 列兵\N{\rENG}Stop right there, Private.{\r}
+Dialogue: 0,1:35:11.92,1:35:13.24,CHS,NTP,0,0,0,,让他说\N{\rENG}Let him speak.{\r}
+Dialogue: 0,1:35:14.24,1:35:16.39,CHS,NTP,0,0,0,,我们截获了帝国通讯 长官\N{\rENG}Intercepted Imperial transmission, ma'am.{\r}
+Dialogue: 0,1:35:16.60,1:35:18.15,CHS,NTP,0,0,0,,斯卡里夫出现义军\N{\rENG}Rebels on Scarif.{\r}
+Dialogue: 0,1:35:18.92,1:35:20.63,CHS,NTP,0,0,0,,我要见拉杜斯上将\N{\rENG}I need to speak with Admiral Raddus.{\r}
+Dialogue: 0,1:35:20.80,1:35:22.67,CHS,NTP,0,0,0,,他已返回船上\N{\rENG}He's returned to his ship.{\r}
+Dialogue: 0,1:35:22.84,1:35:24.51,CHS,NTP,0,0,0,,正要出发参战\N{\rENG}He's going to fight.{\r}
+Dialogue: 0,1:35:35.76,1:35:36.75,CHS,NTP,0,0,0,,不\N{\rENG}No!{\r}
+Dialogue: 0,1:35:42.04,1:35:43.91,CHS,NTP,0,0,0,,全体机组人员注意\N{\rENG}Attention, all flight personnel,{\r}
+Dialogue: 0,1:35:44.00,1:35:45.55,CHS,NTP,0,0,0,,立即向你的指挥官报到\N{\rENG}please report to your commanders immediately.{\r}
+Dialogue: 0,1:35:47.00,1:35:48.48,CHS,NTP,0,0,0,,全体机组人员\N{\rENG}All flight personnel,{\r}
+Dialogue: 0,1:35:48.60,1:35:50.00,CHS,NTP,0,0,0,,立即向你的指挥官报到\N{\rENG}please report to your commanders immediately.{\r}
+Dialogue: 0,1:35:51.28,1:35:53.27,CHS,NTP,0,0,0,,目的地重新定为斯卡里夫\N{\rENG}We have been redirected to Scarif.{\r}
+Dialogue: 0,1:35:54.04,1:35:55.67,CHS,NTP,0,0,0,,你们的领队\N{\rENG}Pilots, you'll be briefed{\r}
+Dialogue: 0,1:35:55.80,1:35:57.67,CHS,NTP,0,0,0,,会在途中做出简报\N{\rENG}by your squadron leaders en route.{\r}
+Dialogue: 0,1:35:58.36,1:36:00.27,CHS,NTP,0,0,0,,愿原力与你们同在\N{\rENG}May the Force be with you.{\r}
+Dialogue: 0,1:36:00.96,1:36:03.55,CHS,NTP,0,0,0,,斯卡里夫 他们要去斯卡里夫吗\N{\rENG}Scarif? They're going to Scarif?{\r}
+Dialogue: 0,1:36:03.76,1:36:06.27,CHS,NTP,0,0,0,,为什么没有人跟我说过这事呢 R2\N{\rENG}Why does nobody ever tell me anything, R2?{\r}
+Dialogue: 0,1:36:09.64,1:36:11.23,CHS,NTP,0,0,0,,快 快 我们走\N{\rENG}Move, move, move!{\r}
+Dialogue: 0,1:36:15.08,1:36:17.59,CHS,NTP,0,0,0,,前进 前进\N{\rENG}Forward! Forward!{\r}
+Dialogue: 0,1:36:17.76,1:36:19.87,CHS,NTP,0,0,0,,把他们引过来\N{\rENG}Keep drawing them out!{\r}
+Dialogue: 0,1:36:26.32,1:36:27.31,CHS,NTP,0,0,0,,12号平台需要增援\N{\rENG}Pad 12, report to ground.{\r}
+Dialogue: 0,1:36:27.48,1:36:28.63,CHS,NTP,0,0,0,,12号平台需要增援\N{\rENG}Coming in on our flank. We need numbers.{\r}
+Dialogue: 0,1:36:28.84,1:36:30.16,CHS,NTP,0,0,0,,14平台 你那里情况怎么样\N{\rENG}Pad 14, what's going on down there?{\r}
+Dialogue: 0,1:36:30.32,1:36:33.04,CHS,NTP,0,0,0,,回报状态 所有平台立即报告\N{\rENG}Status please. All pads report in immediately.{\r}
+Dialogue: 0,1:36:33.20,1:36:34.47,CHS,NTP,0,0,0,,噢 不 到处都是叛军\N{\rENG}Oh, no. We have rebels everywhere!{\r}
+Dialogue: 0,1:36:34.60,1:36:35.67,CHS,NTP,0,0,0,,我们接火了\N{\rENG}We're taking fire!{\r}
+Dialogue: 0,1:36:35.84,1:36:37.99,CHS,NTP,0,0,0,,12平台 14平台 请求支援\N{\rENG}Pad 12, Pad 14 request assistance.{\r}
+Dialogue: 0,1:36:38.88,1:36:40.31,CHS,NTP,0,0,0,,这是2号平台\N{\rENG}This is Pad 2. Pad 2.{\r}
+Dialogue: 0,1:36:40.52,1:36:42.47,CHS,NTP,0,0,0,,有40名叛军从这儿向西移动\N{\rENG}I spot 40 rebels heading west on Pad 2.{\r}
+Dialogue: 0,1:36:42.68,1:36:44.83,CHS,NTP,0,0,0,,拿着它 说5号平台被叛军压制\N{\rENG}Get on there. Tell him you're pinned down by rebels on Pad 5.{\r}
+Dialogue: 0,1:36:45.00,1:36:47.72,CHS,NTP,0,0,0,,这里是5号平台 我们守不住了 请支援\N{\rENG}This is Pad 5! We're being overrun! Help us!{\r}
+Dialogue: 0,1:36:48.04,1:36:49.95,CHS,NTP,0,0,0,,12 10 8 请确认\N{\rENG}Pad 12, Pad 10, Pad 8, please confirm.{\r}
+Dialogue: 0,1:36:50.04,1:36:51.39,CHS,NTP,0,0,0,,确认并回复\N{\rENG}Confirm and report.{\r}
+Dialogue: 0,1:36:52.36,1:36:54.55,CHS,NTP,0,0,0,,马上向5号平台派出增援\N{\rENG}Get reinforcements down to Pad 5 immediately!{\r}
+Dialogue: 0,1:36:57.72,1:36:59.51,CHS,NTP,0,0,0,,这没有反应 K\N{\rENG}This is not working, K!{\r}
+Dialogue: 0,1:37:00.52,1:37:01.59,CHS,NTP,0,0,0,,用右手\N{\rENG}Right hand.{\r}
+Dialogue: 0,1:37:23.04,1:37:24.03,CHS,NTP,0,0,0,,贝兹\N{\rENG}Baze!{\r}
+Dialogue: 0,1:37:25.68,1:37:26.63,CHS,NTP,0,0,0,,- 贝兹 - 什么\N{\rENG}- Baze! - What?{\r}
+Dialogue: 0,1:37:26.72,1:37:28.20,CHS,NTP,0,0,0,,跑\N{\rENG}Run!{\r}
+Dialogue: 0,1:37:33.24,1:37:35.35,CHS,NTP,0,0,0,,卡拉巴斯特 AT-AT\N{\rENG}Karabast! AT-AT!{\r}
+Dialogue: 0,1:37:37.76,1:37:38.43,CHS,NTP,0,0,0,,快走\N{\rENG}Move!{\r}
+Dialogue: 0,1:37:56.12,1:37:58.35,CHS,NTP,0,0,0,,我是义军联盟拉杜斯上将\N{\rENG}This is Admiral Raddus of the Rebel Alliance.{\r}
+Dialogue: 0,1:37:59.08,1:38:01.43,CHS,NTP,0,0,0,,各中队领队报告情况\N{\rENG}All squadron leaders, report in.{\r}
+Dialogue: 0,1:38:01.64,1:38:04.07,CHS,NTP,0,0,0,,上将 这里是蓝色领队 准备就绪\N{\rENG}Admiral, this is Blue Leader standing by.{\r}
+Dialogue: 0,1:38:04.24,1:38:06.59,CHS,NTP,0,0,0,,这里是金色领队 准备就绪\N{\rENG}This is Gold Leader standing by.{\r}
+Dialogue: 0,1:38:06.80,1:38:09.03,CHS,NTP,0,0,0,,我是红色领队 准备就绪\N{\rENG}This is Red Leader standing by.{\r}
+Dialogue: 0,1:38:09.20,1:38:11.43,CHS,NTP,0,0,0,,长官 发现叛军飞船\N{\rENG}Sir, those are rebel ships.{\r}
+Dialogue: 0,1:38:11.92,1:38:13.59,CHS,NTP,0,0,0,,立刻联络戈林上将 快点去\N{\rENG}Get Admiral Gorin, immediately!{\r}
+Dialogue: 0,1:38:14.60,1:38:16.39,CHS,NTP,0,0,0,,总监 叛军舰队\N{\rENG}Director, the rebel fleet,{\r}
+Dialogue: 0,1:38:16.48,1:38:18.11,CHS,NTP,0,0,0,,目前正在护盾外集结\N{\rENG}it's amassing outside the shield.{\r}
+Dialogue: 0,1:38:20.92,1:38:22.59,CHS,NTP,0,0,0,,封锁基地 全面封锁\N{\rENG}Lock down the base. Lock it down.{\r}
+Dialogue: 0,1:38:22.72,1:38:24.43,CHS,NTP,0,0,0,,- 关闭护盾吗 - 快去\N{\rENG}- And close the shield? - Do it!{\r}
+Dialogue: 0,1:38:24.96,1:38:27.47,CHS,NTP,0,0,0,,红色 金色中队 攻击队形\N{\rENG}Red and Gold Squadrons, attack formations.{\r}
+Dialogue: 0,1:38:27.68,1:38:29.11,CHS,NTP,0,0,0,,保卫舰队\N{\rENG}Defend the fleet.{\r}
+Dialogue: 0,1:38:29.28,1:38:31.19,CHS,NTP,0,0,0,,蓝色中队 抢在闸门关闭前\N{\rENG}Blue Squadron, get to the surface{\r}
+Dialogue: 0,1:38:31.28,1:38:32.60,CHS,NTP,0,0,0,,强行通过\N{\rENG}before they close that gate.{\r}
+Dialogue: 0,1:38:32.76,1:38:33.55,CHS,NTP,0,0,0,,收到 上将\N{\rENG}Copy you, Admiral.{\r}
+Dialogue: 0,1:38:33.68,1:38:35.35,CHS,NTP,0,0,0,,蓝色中队 跟我来\N{\rENG}Blue Squadron, on me!{\r}
+Dialogue: 0,1:38:35.52,1:38:36.27,CHS,NTP,0,0,0,,收到 蓝色领队\N{\rENG}Copy, Blue Leader.{\r}
+Dialogue: 0,1:38:36.40,1:38:37.32,CHS,NTP,0,0,0,,收到 蓝色领队\N{\rENG}Copy, Blue Leader.{\r}
+Dialogue: 0,1:38:37.32,1:38:38.27,CHS,NTP,0,0,0,,得抓紧时间\N{\rENG}We won't have long.{\r}
+Dialogue: 0,1:38:50.12,1:38:52.95,CHS,NTP,0,0,0,,快关闭护盾闸口 快关闭\N{\rENG}Close the field aperture now! Close it!{\r}
+Dialogue: 0,1:38:58.36,1:38:58.99,CHS,NTP,0,0,0,,快点儿 快点儿 快点儿\N{\rENG}Come on, come on, come on!{\r}
+Dialogue: 0,1:39:00.04,1:39:00.63,CHS,NTP,0,0,0,,拉起来\N{\rENG}Pull up!{\r}
+Dialogue: 0,1:39:13.64,1:39:14.79,CHS,NTP,0,0,0,,义军的舰队抵达了\N{\rENG}The rebel fleet has arrived.{\r}
+Dialogue: 0,1:39:14.96,1:39:15.95,CHS,NTP,0,0,0,,什么\N{\rENG}What?{\r}
+Dialogue: 0,1:39:16.12,1:39:17.52,CHS,NTP,0,0,0,,那边还在战斗\N{\rENG}There's fighting on the beach.{\r}
+Dialogue: 0,1:39:17.72,1:39:19.63,CHS,NTP,0,0,0,,他们已经封锁基地\N{\rENG}They've locked down the base.{\r}
+Dialogue: 0,1:39:19.72,1:39:20.94,CHS,NTP,0,0,0,,护盾闸门关闭了\N{\rENG}They've closed the shield gate.{\r}
+Dialogue: 0,1:39:21.12,1:39:22.39,CHS,NTP,0,0,0,,这意味着什么\N{\rENG}What does that mean?{\r}
+Dialogue: 0,1:39:25.00,1:39:25.99,CHS,NTP,0,0,0,,被困住了吗\N{\rENG}We're trapped?{\r}
+Dialogue: 0,1:39:27.68,1:39:30.43,CHS,NTP,0,0,0,,我们可以把设计图发往义军舰队\N{\rENG}We could transmit the plans to the rebel fleet.{\r}
+Dialogue: 0,1:39:30.64,1:39:33.71,CHS,NTP,0,0,0,,我们得设法通知他们准备接收\N{\rENG}We'd have to get a signal up to tell them it's coming.{\r}
+Dialogue: 0,1:39:33.88,1:39:36.23,CHS,NTP,0,0,0,,可问题是这份数据文件太大\N{\rENG}It's the size of the data files. That's the problem.{\r}
+Dialogue: 0,1:39:36.40,1:39:37.91,CHS,NTP,0,0,0,,无法传输过去\N{\rENG}They'll never get through.{\r}
+Dialogue: 0,1:39:38.52,1:39:40.59,CHS,NTP,0,0,0,,必须想办法先破坏护盾闸门\N{\rENG}Someone has to take that shield gate down.{\r}
+Dialogue: 0,1:39:41.20,1:39:43.15,CHS,NTP,0,0,0,,菩提 你能听到吗 菩提\N{\rENG}Bodhi. Bodhi, can you hear me?{\r}
+Dialogue: 0,1:39:43.40,1:39:45.03,CHS,NTP,0,0,0,,告诉我你还在\N{\rENG}Bodhi, tell me you're out there.{\r}
+Dialogue: 0,1:39:46.04,1:39:47.07,CHS,NTP,0,0,0,,菩提\N{\rENG}Bodhi?{\r}
+Dialogue: 0,1:39:47.24,1:39:48.56,CHS,NTP,0,0,0,,我在呢\N{\rENG}I'm here.{\r}
+Dialogue: 0,1:39:48.72,1:39:49.79,CHS,NTP,0,0,0,,等待指示\N{\rENG}I was standing by.{\r}
+Dialogue: 0,1:39:50.00,1:39:51.40,CHS,NTP,0,0,0,,他们开战了 基地被封锁了\N{\rENG}They've started fighting. The base is on lockdown.{\r}
+Dialogue: 0,1:39:51.56,1:39:54.47,CHS,NTP,0,0,0,,我知道 听我说 义军舰队已经来了\N{\rENG}I know. Listen to me. The rebel fleet is up there.{\r}
+Dialogue: 0,1:39:54.64,1:39:56.55,CHS,NTP,0,0,0,,你让他们在护盾闸门上炸个洞\N{\rENG}You've gotta tell them to blow a hole in the shield gate...{\r}
+Dialogue: 0,1:39:56.76,1:39:58.87,CHS,NTP,0,0,0,,我们好把设计图发过去\N{\rENG}so we can transmit the plans.{\r}
+Dialogue: 0,1:39:59.04,1:40:02.15,CHS,NTP,0,0,0,,等等 我没法 我没有 没有连上通讯塔\N{\rENG}Wait. I can't. I'm not hooked into the comms tower.{\r}
+Dialogue: 0,1:40:02.32,1:40:03.35,CHS,NTP,0,0,0,,我 我们没 没有连线过去\N{\rENG}We're not tied in.{\r}
+Dialogue: 0,1:40:03.52,1:40:05.43,CHS,NTP,0,0,0,,只有这个方法我们才能把图传出去\N{\rENG}It's the only way we're getting them out of here.{\r}
+Dialogue: 0,1:40:05.64,1:40:06.35,CHS,NTP,0,0,0,,快想办法\N{\rENG}Find a way!{\r}
+Dialogue: 0,1:40:07.20,1:40:08.55,CHS,NTP,0,0,0,,掩护我们后方\N{\rENG}Cover our backs.{\r}
+Dialogue: 0,1:40:10.80,1:40:11.75,CHS,NTP,0,0,0,,你会用到它的\N{\rENG}You'll need this.{\r}
+Dialogue: 0,1:40:14.16,1:40:15.15,CHS,NTP,0,0,0,,你不是想要这个吗\N{\rENG}You wanted one, right?{\r}
+Dialogue: 0,1:40:17.60,1:40:22.43,CHS,NTP,0,0,0,,琴 你的行为 总是这么让人 意想不到\N{\rENG}Your behavior, Jyn Erso, is continually unexpected.{\r}
+Dialogue: 0,1:40:23.24,1:40:25.31,CHS,NTP,0,0,0,,琴 快来\N{\rENG}Jyn. Come on.{\r}
+Dialogue: 0,1:40:44.84,1:40:46.06,CHS,NTP,0,0,0,,萨卡拉\N{\rENG}Sa'kalla!{\r}
+Dialogue: 0,1:40:46.16,1:40:47.99,CHS,NTP,0,0,0,,听我下令开火\N{\rENG}Fire on my command.{\r}
+Dialogue: 0,1:41:03.28,1:41:03.87,CHS,NTP,0,0,0,,快看\N{\rENG}Look!{\r}
+Dialogue: 0,1:41:15.28,1:41:16.63,CHS,NTP,0,0,0,,准备一下 我们得出去一趟\N{\rENG}Get ready. We're gonna have to go out there.{\r}
+Dialogue: 0,1:41:19.64,1:41:20.63,CHS,NTP,0,0,0,,你要干什么\N{\rENG}What are you doing?{\r}
+Dialogue: 0,1:41:21.56,1:41:23.43,CHS,NTP,0,0,0,,他们关闭了护盾闸门\N{\rENG}They've closed the shield gate.{\r}
+Dialogue: 0,1:41:23.60,1:41:25.27,CHS,NTP,0,0,0,,我们困在这儿了\N{\rENG}We're stuck here.{\r}
+Dialogue: 0,1:41:25.44,1:41:26.79,CHS,NTP,0,0,0,,但是 义军舰队过来了\N{\rENG}But the rebel fleet are pulling in.{\r}
+Dialogue: 0,1:41:26.92,1:41:29.03,CHS,NTP,0,0,0,,我们需要找个足够强的信号\N{\rENG}We just have to get a signal strong enough to get through to them...{\r}
+Dialogue: 0,1:41:29.12,1:41:31.39,CHS,NTP,0,0,0,,好通知他们我们被困在这里了\N{\rENG}and let them know that we're trapped down here.{\r}
+Dialogue: 0,1:41:31.60,1:41:33.35,CHS,NTP,0,0,0,,为此 我们必须跟通讯塔连上\N{\rENG}For that, we have to connect to the communications tower.{\r}
+Dialogue: 0,1:41:33.56,1:41:35.71,CHS,NTP,0,0,0,,我在这边接入平台线路\N{\rENG}Now, I can patch us in over here, the landing pad.{\r}
+Dialogue: 0,1:41:35.88,1:41:37.07,CHS,NTP,0,0,0,,但是你 必须去无线电那儿\N{\rENG}But you have to get on the radio.{\r}
+Dialogue: 0,1:41:37.24,1:41:40.31,CHS,NTP,0,0,0,,领几个人去找到主控开关\N{\rENG}Get one of the guys out there to find a master switch.{\r}
+Dialogue: 0,1:41:40.48,1:41:42.83,CHS,NTP,0,0,0,,让他们激活我们与通讯塔的连接\N{\rENG}Get them to activate the connection between us and that comms tower.{\r}
+Dialogue: 0,1:41:43.08,1:41:43.75,CHS,NTP,0,0,0,,明白了\N{\rENG}Okay?{\r}
+Dialogue: 0,1:41:43.92,1:41:45.24,CHS,NTP,0,0,0,,快去呀\N{\rENG}Then go!{\r}
+Dialogue: 0,1:41:48.60,1:41:50.63,CHS,NTP,0,0,0,,下面情况怎么样 上尉\N{\rENG}What's going on down there, Lieutenant?{\r}
+Dialogue: 0,1:41:50.80,1:41:51.99,CHS,NTP,0,0,0,,未知 长官\N{\rENG}Unknown, sir.{\r}
+Dialogue: 0,1:41:52.16,1:41:53.23,CHS,NTP,0,0,0,,联络不到他们\N{\rENG}We can't raise them.{\r}
+Dialogue: 0,1:41:53.32,1:41:54.47,CHS,NTP,0,0,0,,所有义军频道都被屏蔽了\N{\rENG}All rebel frequencies are blocked.{\r}
+Dialogue: 0,1:41:55.32,1:41:57.88,CHS,NTP,0,0,0,,继续联络 攻击那些歼星舰\N{\rENG}Keep trying. Engage those Star Destroyers{\r}
+Dialogue: 0,1:41:58.04,1:41:59.83,CHS,NTP,0,0,0,,同时开始探测那个护盾\N{\rENG}and let's start probing that shield!{\r}
+Dialogue: 0,1:41:59.96,1:42:01.15,CHS,NTP,0,0,0,,遵命 长官\N{\rENG}Yes, sir!{\r}
+Dialogue: 0,1:42:02.84,1:42:04.32,CHS,NTP,0,0,0,,开始攻击\N{\rENG}We're going in.{\r}
+Dialogue: 0,1:42:10.12,1:42:11.27,CHS,NTP,0,0,0,,都跟紧我\N{\rENG}Stay with me.{\r}
+Dialogue: 0,1:42:47.32,1:42:50.04,CHS,NTP,0,0,0,,线路图库 二号数据塔\N{\rENG}Schematic bank, data tower two.{\r}
+Dialogue: 0,1:42:50.20,1:42:51.23,CHS,NTP,0,0,0,,我怎么找到它\N{\rENG}How do I find that?{\r}
+Dialogue: 0,1:42:51.40,1:42:52.88,CHS,NTP,0,0,0,,搜索中\N{\rENG}Searching.{\r}
+Dialogue: 0,1:42:53.68,1:42:54.83,CHS,NTP,0,0,0,,我能定位磁带位置\N{\rENG}I can locate the tape,{\r}
+Dialogue: 0,1:42:54.92,1:42:57.15,CHS,NTP,0,0,0,,但你必须使用把手抽取档案\N{\rENG}but you'll need to use the handles for extraction.{\r}
+Dialogue: 0,1:43:01.24,1:43:03.67,CHS,NTP,0,0,0,,这东西到底是怎么用的\N{\rENG}What am I supposed to do with this?{\r}
+Dialogue: 0,1:43:21.84,1:43:22.71,CHS,NTP,0,0,0,,总算找到了\N{\rENG}Well, finally.{\r}
+Dialogue: 0,1:43:22.96,1:43:24.31,CHS,NTP,0,0,0,,等等 停下\N{\rENG}Wait! Stop!{\r}
+Dialogue: 0,1:43:24.48,1:43:27.35,CHS,NTP,0,0,0,,叛军 他们往那边跑了\N{\rENG}The rebels, they went over there.{\r}
+Dialogue: 0,1:43:27.52,1:43:29.75,CHS,NTP,0,0,0,,K 你那儿有什么情况\N{\rENG}K, what's going on out there?{\r}
+Dialogue: 0,1:43:29.96,1:43:30.75,CHS,NTP,0,0,0,,那里有一个\N{\rENG}There's one.{\r}
+Dialogue: 0,1:43:31.84,1:43:32.75,CHS,NTP,0,0,0,,噢 好吧\N{\rENG}Ah, well.{\r}
+Dialogue: 0,1:43:43.92,1:43:44.83,CHS,NTP,0,0,0,,来呀\N{\rENG}Come on!{\r}
+Dialogue: 0,1:43:52.52,1:43:54.19,CHS,NTP,0,0,0,,红色领队 我是金色领队\N{\rENG}Red Leader, this is Gold Leader.{\r}
+Dialogue: 0,1:43:54.32,1:43:56.59,CHS,NTP,0,0,0,,我们已展开对护盾闸门的攻击\N{\rENG}We're starting our attack run on the shield gate.{\r}
+Dialogue: 0,1:43:56.76,1:43:58.99,CHS,NTP,0,0,0,,收紧编队 小心那些炮塔\N{\rENG}Keep it tight, and watch out for those towers.{\r}
+Dialogue: 0,1:44:12.80,1:44:15.95,CHS,NTP,0,0,0,,敌机增多 在65重新编队\N{\rENG}More fighters. Form out at six-five.{\r}
+Dialogue: 0,1:44:16.68,1:44:19.55,CHS,NTP,0,0,0,,长官 发现有敌机来袭\N{\rENG}Sir, enemy fighters coming in.{\r}
+Dialogue: 0,1:44:26.00,1:44:28.99,CHS,NTP,0,0,0,,梅尔西 梅尔西 请回话 你在吗\N{\rENG}Melshi! Melshi, come in. Are you there?{\r}
+Dialogue: 0,1:44:29.16,1:44:31.47,CHS,NTP,0,0,0,,菩提和那边发射信号 他已接入平台\N{\rENG}Bodhi sent a signal from here. He's patching us in.{\r}
+Dialogue: 0,1:44:31.64,1:44:33.59,CHS,NTP,0,0,0,,你们必须开启到通讯塔的线路\N{\rENG}But you guys have to open up a line for the tower.{\r}
+Dialogue: 0,1:44:33.76,1:44:35.31,CHS,NTP,0,0,0,,怎么接 请指示\N{\rENG}How? Please advise.{\r}
+Dialogue: 0,1:44:35.48,1:44:37.71,CHS,NTP,0,0,0,,在通讯塔底部有一个主开关\N{\rENG}There's a master switch at the base of the comm tower.{\r}
+Dialogue: 0,1:44:37.88,1:44:40.34,CHS,NTP,0,0,0,,主开关 长什么样 我们要找到什么\N{\rENG}Master switch? Describe. What are we looking for?{\r}
+Dialogue: 0,1:44:40.56,1:44:43.63,CHS,NTP,0,0,0,,主开关什么样 位置在哪儿 快告诉我\N{\rENG}What does it look like? The master switch? Where is it?{\r}
+Dialogue: 0,1:44:43.88,1:44:46.39,CHS,NTP,0,0,0,,U翼 前去支援海滩部队\N{\rENG}U-wings, reinforce those troops on the beach.{\r}
+Dialogue: 0,1:44:46.60,1:44:48.08,CHS,NTP,0,0,0,,全体士兵 跟我上\N{\rENG}All fighters, on me.{\r}
+Dialogue: 0,1:44:48.28,1:44:49.79,CHS,NTP,0,0,0,,我们必须清除空中威胁\N{\rENG}We have to shield them from air attack.{\r}
+Dialogue: 0,1:44:51.56,1:44:53.79,CHS,NTP,0,0,0,,所有增援部队 朝这儿出发\N{\rENG}Troop reinforcements. Here we go.{\r}
+Dialogue: 0,1:44:56.72,1:44:59.39,CHS,NTP,0,0,0,,为了杰达\N{\rENG}For Jedha!{\r}
+Dialogue: 0,1:45:05.28,1:45:07.35,CHS,NTP,0,0,0,,对护盾的攻击没有效果\N{\rENG}We're having no effect on that shield.{\r}
+Dialogue: 0,1:45:07.48,1:45:09.19,CHS,NTP,0,0,0,,要多少火力才能打掉\N{\rENG}How much more can that thing take?{\r}
+Dialogue: 0,1:45:11.92,1:45:14.19,CHS,NTP,0,0,0,,跟紧我 红色五号 你要去哪儿\N{\rENG}Stick close, Red Five. Where are you goin'?{\r}
+Dialogue: 0,1:45:15.04,1:45:16.95,CHS,NTP,0,0,0,,我被咬住了 我尝试甩掉它们\N{\rENG}They're all over me. I'm trying to lose them!{\r}
+Dialogue: 0,1:45:18.36,1:45:20.51,CHS,NTP,0,0,0,,我是红色五号 需要支援\N{\rENG}This is Red Five! I need help!{\r}
+Dialogue: 0,1:45:26.96,1:45:29.52,CHS,NTP,0,0,0,,超空间追踪 怎么打开导航系统\N{\rENG}"Hyperspace tracking. Navigational systems."{\r}
+Dialogue: 0,1:45:31.28,1:45:32.27,CHS,NTP,0,0,0,,往下两个屏幕\N{\rENG}Two screens down.{\r}
+Dialogue: 0,1:45:32.36,1:45:34.35,CHS,NTP,0,0,0,,结构工程 打开那个\N{\rENG}"Structural engineering." Open that one.{\r}
+Dialogue: 0,1:45:36.80,1:45:37.67,CHS,NTP,0,0,0,,我被敌机咬住了\N{\rENG}I've got one on my tail!{\r}
+Dialogue: 0,1:45:38.76,1:45:39.87,CHS,NTP,0,0,0,,我来了\N{\rENG}I'm on him!{\r}
+Dialogue: 0,1:45:53.72,1:45:55.21,CHS,NTP,0,0,0,,项目代号名称\N{\rENG}Project code names:{\r}
+Dialogue: 0,1:45:55.21,1:45:58.19,CHS,NTP,0,0,0,,平流层 马克·奥米茄 帕克斯·欧若拉\N{\rENG}"Stellarsphere, Mark Omega, Pax Aurora."{\r}
+Dialogue: 0,1:46:10.00,1:46:14.43,CHS,NTP,0,0,0,,战人之爪 折视棱镜处 黑剑\N{\rENG}"War-Mantle, Cluster Prism, Blacksaber."{\r}
+Dialogue: 0,1:46:15.16,1:46:16.23,CHS,NTP,0,0,0,,怎么了\N{\rENG}What?{\r}
+Dialogue: 0,1:46:16.36,1:46:17.68,CHS,NTP,0,0,0,,就是它\N{\rENG}"Stardust."{\r}
+Dialogue: 0,1:46:19.92,1:46:20.91,CHS,NTP,0,0,0,,星尘\N{\rENG}That's it.{\r}
+Dialogue: 0,1:46:21.08,1:46:22.87,CHS,NTP,0,0,0,,你怎么知道\N{\rENG}How do you know that?{\r}
+Dialogue: 0,1:46:23.80,1:46:25.12,CHS,NTP,0,0,0,,因为那是我的名字\N{\rENG}I know because it's me.{\r}
+Dialogue: 0,1:46:28.28,1:46:30.79,CHS,NTP,0,0,0,,嗨 你 你是干什么的\N{\rENG}Hey, you! Identify yourself.{\r}
+Dialogue: 0,1:46:34.16,1:46:35.75,CHS,NTP,0,0,0,,我是\N{\rENG}I can...{\r}
+Dialogue: 0,1:46:36.56,1:46:37.63,CHS,NTP,0,0,0,,炮火来袭 隐蔽\N{\rENG}Incoming fire! Get cover!{\r}
+Dialogue: 0,1:46:46.00,1:46:47.79,CHS,NTP,0,0,0,,K 我们需要星尘计划的文件\N{\rENG}K, we need the file for Stardust.{\r}
+Dialogue: 0,1:46:51.84,1:46:52.67,CHS,NTP,0,0,0,,星尘文件\N{\rENG}Stardust.{\r}
+Dialogue: 0,1:46:57.04,1:46:57.79,CHS,NTP,0,0,0,,就是它\N{\rENG}That's it.{\r}
+Dialogue: 0,1:47:19.64,1:47:20.31,CHS,NTP,0,0,0,,{\blur2\fnMicrosoft YaHei\fs16\1c&H0076EE&\4c&H39431B&\b1}K\NK?{\r}
+Dialogue: 0,1:47:21.00,1:47:21.95,CHS,NTP,0,0,0,,快爬\N{\rENG}Climb.{\r}
+Dialogue: 0,1:47:22.16,1:47:23.15,CHS,NTP,0,0,0,,往上爬\N{\rENG}Climb.{\r}
+Dialogue: 0,1:47:23.96,1:47:26.99,CHS,NTP,0,0,0,,你们还可以把设计图发给舰队\N{\rENG}You can still send the plans to the fleet.{\r}
+Dialogue: 0,1:47:27.96,1:47:29.23,CHS,NTP,0,0,0,,如果他们打开护盾闸门\N{\rENG}If they open the shield gate...{\r}
+Dialogue: 0,1:47:29.40,1:47:31.51,CHS,NTP,0,0,0,,你们可以从塔里传输\N{\rENG}you can broadcast from the tower.{\r}
+Dialogue: 0,1:47:32.72,1:47:34.07,CHS,NTP,0,0,0,,现在开始关闭库门\N{\rENG}Locking the vault door now.{\r}
+Dialogue: 0,1:47:34.20,1:47:35.11,CHS,NTP,0,0,0,,{\blur2\fnMicrosoft YaHei\fs16\1c&H0076EE&\4c&H39431B&\b1}K\NK?{\r}
+Dialogue: 0,1:47:35.32,1:47:36.19,CHS,NTP,0,0,0,,{\blur2\fnMicrosoft YaHei\fs16\1c&H0076EE&\4c&H39431B&\b1}K\NK!{\r}
+Dialogue: 0,1:47:36.36,1:47:37.87,CHS,NTP,0,0,0,,- 再见 - K\N{\rENG}- Goodbye. - K!{\r}
+Dialogue: 0,1:47:55.16,1:47:57.83,CHS,NTP,0,0,0,,长官 有人擅自进入了数据库\N{\rENG}Sir, unauthorized access at the data vault.{\r}
+Dialogue: 0,1:47:59.00,1:47:59.95,CHS,NTP,0,0,0,,什么\N{\rENG}What?{\r}
+Dialogue: 0,1:48:00.04,1:48:01.67,CHS,NTP,0,0,0,,刚刚发现的 长官\N{\rENG}It's just come in, sir.{\r}
+Dialogue: 0,1:48:05.60,1:48:07.27,CHS,NTP,0,0,0,,把我的卫队派去参战\N{\rENG}Send my guard squadron into battle.{\r}
+Dialogue: 0,1:48:07.36,1:48:09.11,CHS,NTP,0,0,0,,你们两个跟我来 快\N{\rENG}Two men with me, now.{\r}
+Dialogue: 0,1:48:09.68,1:48:12.35,CHS,NTP,0,0,0,,把海滩给我立刻夺回来\N{\rENG}Get that beach under control!{\r}
+Dialogue: 0,1:48:13.68,1:48:16.14,CHS,NTP,0,0,0,,菩提 你在吗 呼叫舰队了吗\N{\rENG}Bodhi, are you there? Did you call the fleet?{\r}
+Dialogue: 0,1:48:16.80,1:48:18.07,CHS,NTP,0,0,0,,我没法回到船上\N{\rENG}I can't get to the shuttle.{\r}
+Dialogue: 0,1:48:19.28,1:48:20.39,CHS,NTP,0,0,0,,就没法接通\N{\rENG}I can't plug in.{\r}
+Dialogue: 0,1:48:21.08,1:48:23.19,CHS,NTP,0,0,0,,必须接通 他们会攻击闸门\N{\rENG}You have to. They have to hit that gate.{\r}
+Dialogue: 0,1:48:23.36,1:48:25.71,CHS,NTP,0,0,0,,只有护盾打开了 我们才能发送设计图\N{\rENG}If the shield's open, we can send the plans.{\r}
+Dialogue: 0,1:48:56.20,1:48:58.07,CHS,NTP,0,0,0,,将军 小心背后\N{\rENG}General, behind you!{\r}
+Dialogue: 0,1:49:11.44,1:49:12.23,CHS,NTP,0,0,0,,退后\N{\rENG}Step back.{\r}
+Dialogue: 0,1:49:21.56,1:49:23.07,CHS,NTP,0,0,0,,我们要坠机了\N{\rENG}We're going down!{\r}
+Dialogue: 0,1:49:29.08,1:49:30.03,CHS,NTP,0,0,0,,来啊\N{\rENG}Come on!{\r}
+Dialogue: 0,1:50:31.80,1:50:32.99,CHS,NTP,0,0,0,,梅尔西 梅尔西\N{\rENG}Melshi, Melshi.{\r}
+Dialogue: 0,1:50:33.16,1:50:34.38,CHS,NTP,0,0,0,,请讲话\N{\rENG}Come in, please.{\r}
+Dialogue: 0,1:50:34.60,1:50:35.82,CHS,NTP,0,0,0,,我这头已经接通\N{\rENG}I'm tied in at my end.{\r}
+Dialogue: 0,1:50:36.00,1:50:36.99,CHS,NTP,0,0,0,,我需要你打开线路\N{\rENG}I just need an open line.{\r}
+Dialogue: 0,1:50:37.68,1:50:38.71,CHS,NTP,0,0,0,,等一下\N{\rENG}Hang on.{\r}
+Dialogue: 0,1:50:40.44,1:50:41.47,CHS,NTP,0,0,0,,线路的主开关\N{\rENG}The master switch.{\r}
+Dialogue: 0,1:50:42.28,1:50:43.99,CHS,NTP,0,0,0,,就在控制台的旁边\N{\rENG}It's over near that console.{\r}
+Dialogue: 0,1:50:47.76,1:50:48.51,CHS,NTP,0,0,0,,我来了\N{\rENG}I'm going!{\r}
+Dialogue: 0,1:50:58.36,1:50:59.47,CHS,NTP,0,0,0,,我拿到了\N{\rENG}I've got it!{\r}
+Dialogue: 0,1:51:01.80,1:51:02.79,CHS,NTP,0,0,0,,小心\N{\rENG}Careful!{\r}
+Dialogue: 0,1:51:03.68,1:51:04.47,CHS,NTP,0,0,0,,你没事吧\N{\rENG}You okay?{\r}
+Dialogue: 0,1:51:14.04,1:51:14.99,CHS,NTP,0,0,0,,琴\N{\rENG}Jyn!{\r}
+Dialogue: 0,1:51:32.64,1:51:35.31,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force, the Force is with me.{\r}
+Dialogue: 0,1:51:36.20,1:51:37.39,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force, the Force is with me.{\r}
+Dialogue: 0,1:51:37.60,1:51:38.27,CHS,NTP,0,0,0,,奇鲁\N{\rENG}Chirrut!{\r}
+Dialogue: 0,1:51:48.36,1:51:51.35,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force and the Force is with me.{\r}
+Dialogue: 0,1:51:51.52,1:51:53.11,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force, the Force is with me.{\r}
+Dialogue: 0,1:51:53.36,1:51:54.35,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force...{\r}
+Dialogue: 0,1:51:54.56,1:51:56.51,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}the Force is with me. I'm one with the Force...{\r}
+Dialogue: 0,1:51:56.68,1:51:57.59,CHS,NTP,0,0,0,,原力与我同在\N{\rENG}and the Force is with me.{\r}
+Dialogue: 0,1:51:57.76,1:51:59.43,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force, and the Force is with me.{\r}
+Dialogue: 0,1:51:59.76,1:52:02.33,CHS,NTP,0,0,0,,原力与我同在 我与原力同在\N{\rENG}I'm one with the Force, and the Force is with me.{\r}
+Dialogue: 0,1:52:03.16,1:52:04.91,CHS,NTP,0,0,0,,奇鲁 回来\N{\rENG}Chirrut! Come back!{\r}
+Dialogue: 0,1:52:05.12,1:52:05.91,CHS,NTP,0,0,0,,原力与我同在\N{\rENG}I'm one with the Force...{\r}
+Dialogue: 0,1:52:14.60,1:52:15.59,CHS,NTP,0,0,0,,通了\N{\rENG}Yes!{\r}
+Dialogue: 0,1:52:20.24,1:52:21.39,CHS,NTP,0,0,0,,上啊 快点上啊\N{\rENG}Keep going! Keep going!{\r}
+Dialogue: 0,1:52:25.96,1:52:27.79,CHS,NTP,0,0,0,,卡西安\N{\rENG}Cassian!{\r}
+Dialogue: 0,1:52:37.12,1:52:39.31,CHS,NTP,0,0,0,,奇鲁 快回来 快回来\N{\rENG}Chirrut! Come! Come with me!{\r}
+Dialogue: 0,1:52:44.28,1:52:45.60,CHS,NTP,0,0,0,,奇鲁\N{\rENG}Chirrut!{\r}
+Dialogue: 0,1:52:51.24,1:52:52.15,CHS,NTP,0,0,0,,奇鲁\N{\rENG}Chirrut.{\r}
+Dialogue: 0,1:52:52.72,1:52:54.79,CHS,NTP,0,0,0,,别死 别死\N{\rENG}Don't go. Don't go.{\r}
+Dialogue: 0,1:52:54.96,1:52:56.47,CHS,NTP,0,0,0,,我在这儿 我在这儿\N{\rENG}I'm here, I'm here.{\r}
+Dialogue: 0,1:52:57.32,1:52:58.67,CHS,NTP,0,0,0,,没关系\N{\rENG}It's okay.{\r}
+Dialogue: 0,1:52:59.36,1:53:03.03,CHS,NTP,0,0,0,,我没事 找到原力\N{\rENG}It's okay. Look for the Force.{\r}
+Dialogue: 0,1:53:03.24,1:53:04.51,CHS,NTP,0,0,0,,奇鲁\N{\rENG}Chirrut.{\r}
+Dialogue: 0,1:53:04.72,1:53:07.39,CHS,NTP,0,0,0,,你就会找到我\N{\rENG}And you will always find me.{\r}
+Dialogue: 0,1:53:08.52,1:53:12.15,CHS,NTP,0,0,0,,原力与我同在 我跟原力也同在\N{\rENG}The Force is with me and I'm one with the Force.{\r}
+Dialogue: 0,1:53:13.52,1:53:17.40,CHS,NTP,0,0,0,,原力与我同在 我跟原力也同在\N{\rENG}The Force is with me and I'm one with the Force.{\r}
+Dialogue: 0,1:53:17.96,1:53:22.71,CHS,NTP,0,0,0,,原力与我同在 我跟原力也同在\N{\rENG}The Force is with me and I'm one with the Force.{\r}
+Dialogue: 0,1:53:36.36,1:53:39.19,CHS,NTP,0,0,0,,偏导护盾剩余只有50%了 我们现在受损严重\N{\rENG}Deflector shields down to 50%! We're sustaining heavy damage!{\r}
+Dialogue: 0,1:53:40.04,1:53:41.31,CHS,NTP,0,0,0,,现在没有回头路了\N{\rENG}There's no turning back now!{\r}
+Dialogue: 0,1:53:41.48,1:53:42.96,CHS,NTP,0,0,0,,我们必须继续进攻\N{\rENG}We have to press the attack!{\r}
+Dialogue: 0,1:53:49.36,1:53:50.35,CHS,NTP,0,0,0,,攻击突破口\N{\rENG}Hit that opening!{\r}
+Dialogue: 0,1:53:50.52,1:53:51.59,CHS,NTP,0,0,0,,看到了 金色领队\N{\rENG}We see it, Gold Leader.{\r}
+Dialogue: 0,1:53:51.80,1:53:53.35,CHS,NTP,0,0,0,,离子鱼雷发射\N{\rENG}Ion torpedoes away!{\r}
+Dialogue: 0,1:54:03.24,1:54:04.19,CHS,NTP,0,0,0,,怎么回事\N{\rENG}What's happening?{\r}
+Dialogue: 0,1:54:04.36,1:54:06.03,CHS,NTP,0,0,0,,引擎丧失动力了 长官\N{\rENG}We've lost engine power, sir.{\r}
+Dialogue: 0,1:54:09.16,1:54:11.19,CHS,NTP,0,0,0,,那艘歼星舰失去战斗力了\N{\rENG}That Star Destroyer's disabled.{\r}
+Dialogue: 0,1:54:12.88,1:54:15.75,CHS,NTP,0,0,0,,侠盗一号呼叫同盟舰队 能听到吗\N{\rENG}This is Rogue One calling any Alliance ships that can hear me.{\r}
+Dialogue: 0,1:54:17.88,1:54:19.07,CHS,NTP,0,0,0,,我是侠盗一号 有人听到吗\N{\rENG}Is there anybody out there? This is Rogue One.{\r}
+Dialogue: 0,1:54:19.24,1:54:20.23,CHS,NTP,0,0,0,,请回话\N{\rENG}Come in, over!{\r}
+Dialogue: 0,1:54:20.56,1:54:22.55,CHS,NTP,0,0,0,,我是拉杜斯上将 侠盗一号 我们听到了\N{\rENG}This is Admiral Raddus, Rogue One. We hear you.{\r}
+Dialogue: 0,1:54:25.40,1:54:26.88,CHS,NTP,0,0,0,,我拿到设计图了\N{\rENG}We have the plans.{\r}
+Dialogue: 0,1:54:27.72,1:54:28.71,CHS,NTP,0,0,0,,死星设计图找到了\N{\rENG}They found the Death Star plans.{\r}
+Dialogue: 0,1:54:28.92,1:54:30.87,CHS,NTP,0,0,0,,他们要用通讯塔传送设计图\N{\rENG}They have to transmit them from the communications tower.{\r}
+Dialogue: 0,1:54:31.04,1:54:32.11,CHS,NTP,0,0,0,,你们必须毁掉护盾闸门\N{\rENG}You have to take down the shield gate.{\r}
+Dialogue: 0,1:54:32.32,1:54:34.35,CHS,NTP,0,0,0,,他们才能发出信号\N{\rENG}It's the only way they're gonna get them through.{\r}
+Dialogue: 0,1:54:35.52,1:54:38.59,CHS,NTP,0,0,0,,调一艘锤头轻护卫舰 我有办法了\N{\rENG}Call up a Hammerhead corvette. I have an idea.{\r}
+Dialogue: 0,1:54:38.80,1:54:40.23,CHS,NTP,0,0,0,,侠盗一号待命 我们来了\N{\rENG}Stand by, Rogue One. We're on it.{\r}
+Dialogue: 0,1:54:40.44,1:54:42.07,CHS,NTP,0,0,0,,为你报仇 盖伦\N{\rENG}This is for you, Galen.{\r}
+Dialogue: 0,1:55:11.20,1:55:14.43,CHS,NTP,0,0,0,,原力与我同在 我跟原力同在\N{\rENG}The Force is with me, and I'm one with the Force.{\r}
+Dialogue: 0,1:56:05.52,1:56:07.19,CHS,NTP,0,0,0,,五号轻护卫舰 锁定目标\N{\rENG}Corvette Five, locked on target!{\r}
+Dialogue: 0,1:56:08.80,1:56:09.95,CHS,NTP,0,0,0,,准备撞击\N{\rENG}Prepare for impact.{\r}
+Dialogue: 0,1:56:21.92,1:56:23.71,CHS,NTP,0,0,0,,亚光速推进器 推到全速\N{\rENG}Sublight thrusters, full power!{\r}
+Dialogue: 0,1:57:00.72,1:57:02.79,CHS,NTP,0,0,0,,重新校准天线\N{\rENG}Reset antenna alignment.{\r}
+Dialogue: 0,1:57:04.48,1:57:05.88,CHS,NTP,0,0,0,,重新校准天线\N{\rENG}Reset antenna alignment.{\r}
+Dialogue: 0,1:57:07.12,1:57:08.87,CHS,NTP,0,0,0,,重新校准天线\N{\rENG}Reset antenna alignment.{\r}
+Dialogue: 0,1:57:10.40,1:57:12.23,CHS,NTP,0,0,0,,重新校准天线\N{\rENG}Reset antenna alignment.{\r}
+Dialogue: 0,1:57:36.20,1:57:38.11,CHS,NTP,0,0,0,,反推引擎 全速\N{\rENG}Reverse engines! Full power!{\r}
+Dialogue: 0,1:57:59.52,1:58:00.43,CHS,NTP,0,0,0,,天线已校准\N{\rENG}Antenna aligned.{\r}
+Dialogue: 0,1:58:00.88,1:58:02.15,CHS,NTP,0,0,0,,开始准备传输\N{\rENG}Ready to transmit.{\r}
+Dialogue: 0,1:58:37.00,1:58:37.99,CHS,NTP,0,0,0,,你是谁\N{\rENG}Who are you?{\r}
+Dialogue: 0,1:58:40.32,1:58:41.59,CHS,NTP,0,0,0,,你知道我是谁\N{\rENG}You know who I am.{\r}
+Dialogue: 0,1:58:44.64,1:58:45.83,CHS,NTP,0,0,0,,我是琴·厄索\N{\rENG}I'm Jyn Erso.{\r}
+Dialogue: 0,1:58:46.48,1:58:48.35,CHS,NTP,0,0,0,,盖伦和丽拉的女儿\N{\rENG}Daughter of Galen and Lyra.{\r}
+Dialogue: 0,1:58:49.00,1:58:49.79,CHS,NTP,0,0,0,,你输了\N{\rENG}You've lost.{\r}
+Dialogue: 0,1:58:50.68,1:58:52.08,CHS,NTP,0,0,0,,噢 是吗 输在哪儿\N{\rENG}Oh, I have, have I?{\r}
+Dialogue: 0,1:58:52.44,1:58:53.92,CHS,NTP,0,0,0,,我替父亲报仇了\N{\rENG}My father's revenge.{\r}
+Dialogue: 0,1:58:54.28,1:58:55.60,CHS,NTP,0,0,0,,他为死星设计了一个弱点\N{\rENG}He built a flaw in the Death Star.{\r}
+Dialogue: 0,1:58:55.84,1:58:57.67,CHS,NTP,0,0,0,,在核心放了一根导火索\N{\rENG}He put a fuse in the middle of your machine...{\r}
+Dialogue: 0,1:58:57.84,1:58:59.79,CHS,NTP,0,0,0,,现在全银河系都知道怎么点燃它\N{\rENG}and I've just told the entire galaxy how to light it.{\r}
+Dialogue: 0,1:59:00.84,1:59:03.27,CHS,NTP,0,0,0,,护盾还在运行着\N{\rENG}The shield is up.{\r}
+Dialogue: 0,1:59:03.44,1:59:05.79,CHS,NTP,0,0,0,,叛军基地永远收不到你的信号\N{\rENG}Your signal will never reach the rebel base.{\r}
+Dialogue: 0,1:59:05.96,1:59:07.99,CHS,NTP,0,0,0,,叛军舰队会全军覆灭\N{\rENG}All your ships in the air will be destroyed.{\r}
+Dialogue: 0,1:59:08.20,1:59:09.99,CHS,NTP,0,0,0,,我损失的只是一点时间\N{\rENG}I lose nothing but time.{\r}
+Dialogue: 0,1:59:10.44,1:59:12.23,CHS,NTP,0,0,0,,而你 你和你的同伙\N{\rENG}You, on the other hand...{\r}
+Dialogue: 0,1:59:13.16,1:59:15.43,CHS,NTP,0,0,0,,搭上的却是性命\N{\rENG}die with the Rebellion.{\r}
+Dialogue: 0,1:59:46.24,1:59:47.31,CHS,NTP,0,0,0,,正在传输\N{\rENG}Transmitting.{\r}
+Dialogue: 0,1:59:49.68,1:59:50.71,CHS,NTP,0,0,0,,正在传输\N{\rENG}Transmitting.{\r}
+Dialogue: 0,1:59:52.72,1:59:55.75,CHS,NTP,0,0,0,,上将 正在接收从斯卡里夫来的数据\N{\rENG}Admiral, receiving transmission from Scarif.{\r}
+Dialogue: 0,2:00:05.56,2:00:07.23,CHS,NTP,0,0,0,,别去 别去\N{\rENG}Leave it, leave it!{\r}
+Dialogue: 0,2:00:07.48,2:00:08.55,CHS,NTP,0,0,0,,够了\N{\rENG}That's it.{\r}
+Dialogue: 0,2:00:09.80,2:00:10.95,CHS,NTP,0,0,0,,够了\N{\rENG}That's it.{\r}
+Dialogue: 0,2:00:12.40,2:00:13.39,CHS,NTP,0,0,0,,走吧\N{\rENG}Let's go.{\r}
+Dialogue: 0,2:00:13.80,2:00:15.43,CHS,NTP,0,0,0,,数据接收完毕\N{\rENG}Transmission received.{\r}
+Dialogue: 0,2:00:15.64,2:00:17.91,CHS,NTP,0,0,0,,将军 拿到设计图了\N{\rENG}Admiral, we have the plans!{\r}
+Dialogue: 0,2:00:18.24,2:00:19.56,CHS,NTP,0,0,0,,她成功了\N{\rENG}She did it!{\r}
+Dialogue: 0,2:00:21.28,2:00:24.19,CHS,NTP,0,0,0,,你觉得会有人在听吗\N{\rENG}Do you think anybody's listening?{\r}
+Dialogue: 0,2:00:25.16,2:00:26.35,CHS,NTP,0,0,0,,有人听\N{\rENG}I do.{\r}
+Dialogue: 0,2:00:27.96,2:00:29.83,CHS,NTP,0,0,0,,一定会有人听\N{\rENG}Someone's out there.{\r}
+Dialogue: 0,2:00:32.04,2:00:34.11,CHS,NTP,0,0,0,,长官 一个巨型物体\N{\rENG}Sir, we're detecting a massive object{\r}
+Dialogue: 0,2:00:34.20,2:00:36.39,CHS,NTP,0,0,0,,正在脱离超空间轨道\N{\rENG}emerging from hyperspace.{\r}
+Dialogue: 0,2:00:42.24,2:00:44.03,CHS,NTP,0,0,0,,长官 要瞄准他们的舰队吗\N{\rENG}Sir, shall I begin targeting their fleet?{\r}
+Dialogue: 0,2:00:44.20,2:00:45.35,CHS,NTP,0,0,0,,维达大人会对付它\N{\rENG}Lord Vader will handle the fleet.{\r}
+Dialogue: 0,2:00:46.24,2:00:49.75,CHS,NTP,0,0,0,,瞄准斯卡里夫基地 单反应堆点火\N{\rENG}Target the base at Scarif, single reactor ignition.{\r}
+Dialogue: 0,2:00:49.92,2:00:51.11,CHS,NTP,0,0,0,,遵命\N{\rENG}Yes, sir.{\r}
+Dialogue: 0,2:00:56.32,2:00:57.31,CHS,NTP,0,0,0,,我们走\N{\rENG}Come on.{\r}
+Dialogue: 0,2:01:21.16,2:01:23.31,CHS,NTP,0,0,0,,准备好了就发射\N{\rENG}You may fire when ready.{\r}
+Dialogue: 0,2:01:28.32,2:01:29.87,CHS,NTP,0,0,0,,启动主点火程序\N{\rENG}Commence primary ignition.{\r}
+Dialogue: 0,2:01:52.04,2:01:55.35,CHS,NTP,0,0,0,,侠盗一号 愿原力与你们同在\N{\rENG}Rogue One, may the Force be with you.{\r}
+Dialogue: 0,2:01:59.28,2:02:02.51,CHS,NTP,0,0,0,,所有飞船做好准备 跳入超空间\N{\rENG}All ships prepare for jump to hyperspace.{\r}
+Dialogue: 0,2:02:35.08,2:02:37.19,CHS,NTP,0,0,0,,你父亲会为你感到骄傲的 琴\N{\rENG}Your father would have been proud of you, Jyn.{\r}
+Dialogue: 0,2:02:51.52,2:02:53.75,CHS,NTP,0,0,0,,叛军旗舰已失去战斗力 大人\N{\rENG}The rebel flagship is disabled, my lord...{\r}
+Dialogue: 0,2:02:53.92,2:02:56.11,CHS,NTP,0,0,0,,但他们收到了地面发送的信息\N{\rENG}but has received transmissions from the surface.{\r}
+Dialogue: 0,2:02:56.56,2:02:58.83,CHS,NTP,0,0,0,,准备登舰部队\N{\rENG}Prepare a boarding party.{\r}
+Dialogue: 0,2:02:59.08,2:03:00.56,CHS,NTP,0,0,0,,遵命 大人\N{\rENG}Yes, my lord.{\r}
+Dialogue: 0,2:03:36.44,2:03:37.15,CHS,NTP,0,0,0,,快点儿\N{\rENG}Hurry!{\r}
+Dialogue: 0,2:03:41.12,2:03:43.15,CHS,NTP,0,0,0,,快走 我们要立即撤退\N{\rENG}Let's go! We gotta go, now!{\r}
+Dialogue: 0,2:03:44.96,2:03:46.63,CHS,NTP,0,0,0,,快 快 快\N{\rENG}Move! Move! Move!{\r}
+Dialogue: 0,2:03:47.68,2:03:48.95,CHS,NTP,0,0,0,,快点儿 快走\N{\rENG}Hurry. Let's go!{\r}
+Dialogue: 0,2:03:49.12,2:03:50.11,CHS,NTP,0,0,0,,快\N{\rENG}Let's go!{\r}
+Dialogue: 0,2:03:50.24,2:03:51.23,CHS,NTP,0,0,0,,卡住了\N{\rENG}It's stuck!{\r}
+Dialogue: 0,2:03:52.64,2:03:53.63,CHS,NTP,0,0,0,,嗨\N{\rENG}Hey!{\r}
+Dialogue: 0,2:03:54.00,2:03:55.32,CHS,NTP,0,0,0,,帮帮我们\N{\rENG}Hey! Help!{\r}
+Dialogue: 0,2:04:12.20,2:04:13.31,CHS,NTP,0,0,0,,全体开火\N{\rENG}Open fire!{\r}
+Dialogue: 0,2:04:19.32,2:04:20.15,CHS,NTP,0,0,0,,救救我们\N{\rENG}Help us!{\r}
+Dialogue: 0,2:04:24.16,2:04:24.75,CHS,NTP,0,0,0,,卡住了\N{\rENG}It's jammed!{\r}
+Dialogue: 0,2:04:26.20,2:04:26.83,CHS,NTP,0,0,0,,用力\N{\rENG}Pull it!{\r}
+Dialogue: 0,2:04:32.72,2:04:33.47,CHS,NTP,0,0,0,,用力\N{\rENG}Pull it!{\r}
+Dialogue: 0,2:04:37.60,2:04:38.87,CHS,NTP,0,0,0,,拿去 拿着\N{\rENG}Here! Here!{\r}
+Dialogue: 0,2:04:39.36,2:04:40.63,CHS,NTP,0,0,0,,快拿走 快\N{\rENG}Take it! Take it!{\r}
+Dialogue: 0,2:04:48.52,2:04:49.35,CHS,NTP,0,0,0,,快走\N{\rENG}Launch!{\r}
+Dialogue: 0,2:05:17.16,2:05:18.83,CHS,NTP,0,0,0,,确保气闸门完全封闭\N{\rENG}Make sure you secure the airlock.{\r}
+Dialogue: 0,2:05:18.92,2:05:20.71,CHS,NTP,0,0,0,,准备发射逃生舱\N{\rENG}And prepare the escape pods.{\r}
+Dialogue: 0,2:05:25.04,2:05:25.87,CHS,NTP,0,0,0,,殿下\N{\rENG}Your highness.{\r}
+Dialogue: 0,2:05:26.80,2:05:28.67,CHS,NTP,0,0,0,,我们收到的信息\N{\rENG}The transmission we received.{\r}
+Dialogue: 0,2:05:29.72,2:05:31.39,CHS,NTP,0,0,0,,是什么内容\N{\rENG}What is it they've sent us?{\r}
+Dialogue: 0,2:05:33.08,2:05:34.51,CHS,NTP,0,0,0,,希望\N{\rENG}Hope.{\r}
+Dialogue: 0,0:00:10.00,0:00:15.00,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}《新希望》开头讲到：“反抗军的间谍，窃取了帝国终极武器‘死星’的设计图”\N这就是《侠盗一号》的故事
+Dialogue: 0,0:00:42.05,0:00:45.50,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}行星拉穆位于外环，有一颗卫星。它的行星环是另一颗被扯碎的卫星残骸，\N主要成分是硅石。拉穆的土壤富含矿物质，导致人类无法饮用当地的天然水
+Dialogue: 0,0:00:45.50,0:00:49.50,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}因此当地人不得不依靠湿气冷凝机获取可饮用的水。拉穆全球人口不到500。\N“拉穆”在内莫伊迪亚语中有“繁荣、美满”的意思
+Dialogue: 0,0:01:56.46,0:02:08.46,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}“德尔塔”级T-3c穿梭机\N该型穿梭机由西纳舰队系统公司生产\N拥有明显的几何形状外壳和可折叠的蝙蝠式机翼
+Dialogue: 0,0:02:35.02,0:02:37.24,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}黑色士兵称死亡士兵由帝国情报部招募\N负责保卫帝国高层军官。他们的身体经过秘密的医学强化，各项能力都高于常人
+Dialogue: 0,0:02:37.24,0:02:41.24,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}装备DLT-19重型爆能步枪、E-11D爆能步枪\NSE-14r轻型连发爆能手枪和C-25破片手雷等武器
+Dialogue: 0,0:12:32.50,0:12:44.00,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}运送琴.厄索、乌林.马斯特斯等囚犯的囚车是HCVw A9 涡轮坦克\N注意，它与克隆人涡轮坦克外形类似，但不是一个型号。\N克隆人军队使用的型号是HAVw A6主宰者
+Dialogue: 0,0:13:41.00,0:13:46.00,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}雅文4号卫星作为反抗军同盟的秘密基地最早在电影《新的希望》里出现\N琴.厄索第一次见到反抗军领导人的地方是大神殿里的战略中心，同样最早出现于电影《新的希望》\N在远古时期，雅文4号卫星上曾经存在名为马萨西的文明
+Dialogue: 0,0:19:58.46,0:20:02.86,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}K-2SO、琴.厄索与卡西安.安多上尉第一次乘坐U翼离开雅文4号卫星\N的镜头与《新的希望》里X翼离开雅文4号卫星的镜头几乎完全一致
+Dialogue: 0,0:23:21.94,0:23:33.93,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}死星这件武器在《侠盗一号》所处时间点的二十年前开始建造\N绝大多数部分进展顺利，但主炮受凯伯水晶相关技术的限制\N需要等待理论和技术突破，因此一直到《侠盗一号》中才彻底完工
+Dialogue: 0,0:25:40.58,0:25:46.51,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}悬浮在杰达上空的那艘帝国歼星舰是“勇毅号”\N两对机翼的穿梭机是“泽塔级”货运穿梭机
+Dialogue: 0,0:28:09.10,0:28:10.50,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}杰达城内那些穿红斗篷、戴T形面罩的人是阿诺米德人Anomid
+Dialogue: 0,0:28:35.08,0:28:36.08,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}杰达城内那些穿红披风、戴方形高帽的人是开颜兄弟会的成员
+Dialogue: 0,0:30:19.54,0:30:21.28,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}威尔人本身目前仍是《星球大战》宇宙中最神秘的团体之一
+Dialogue: 0,0:30:21.38,0:30:23.07,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}凯伯圣殿杰达城中最高的建筑物
+Dialogue: 0,0:31:02.50,0:31:05.51,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}索.格雷拉的游击队伏击帝国战斗突击坦克小队的地方叫泰桑广场Tythoni Square\N这个广场是以行星泰桑Tython命名的
+Dialogue: 0,0:40:51.88,0:40:53.08,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}这是个陷阱。"It's a trap." 电影《绝地归来》里阿克巴上将的经典台词
+Dialogue: 0,0:47:12.78,0:47:22.03,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}根据《侠盗一号》小说版的描述，盖伦.厄索为了降低死星反应核的\N放射性粒子递增而提出多套解决方案，其中之一就是建一条排热口...
+Dialogue: 0,0:47:22.18,0:47:30.23,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}...他指出这是最简单的方案，还故意反对这个方案\N结果帝国官僚们采纳了这个方案，这就是死星的死穴由来！
+Dialogue: 0,0:49:47.06,0:49:48.13,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}“Punch it!”是汉.索洛起飞“千年隼号”时的经典台词
+Dialogue: 0,0:56:14.50,0:56:22.00,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}伊杜行星位于外环，是一个暴雨肆虐的星球，盖伦.厄索被抓回帝国后\N就在伊杜继续为帝国效力。小块的凯伯水晶会先运输到这里的水晶精炼厂\N处理成大块水晶后再运输到死星或斯卡里夫
+Dialogue: 0,1:12:54.11,1:12:57.33,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}达斯.维达大人的圣所\N维达大人在此丢胳膊丢腿，深度烧伤，毁容
+Dialogue: 0,1:13:42.58,1:13:58.20,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}达斯.维德浸泡的液体是巴克塔bacta，一种高效的医疗溶液\N最早出现于电影《帝国反击战》，卢克也泡过，卢克没了右手也是残疾人啊\N站在巴克塔罐两边红衣士兵是帝国禁卫军，星战系列里没见过红衣禁卫军动过手
+Dialogue: 0,1:23:09.46,1:23:11.89,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}皇帝消灭绝地武士的终级法宝：66号密令
+Dialogue: 0,1:23:28.57,1:23:33.80,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}斯卡里夫行星位于外环，是一颗热带雨林星球，也是死星的后期建造地\N死星最早是在吉奥诺西斯Geonosis星系建造，后来才转移到斯卡里夫这里\N该星球的取景地是在马尔代夫
+Dialogue: 0,1:27:55.70,1:27:59.29,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}背两个棍子黑衣士兵是帝国作战驾驶员负责操作帝国的各类地面突击载具\N他们的轻量型盔甲不仅能提供保护\N还足够灵活使他们能方便的坐进坦克之类的装甲载具中
+Dialogue: 0,1:29:52.18,1:29:53.63,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}这是在《星球大战》系列作品中使用频率最高的台词之一\N每一集均出现，大部分主角都说过
+Dialogue: 0,1:37:17.46,1:37:21.46,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}AT-ACT步行机比《帝国反击战》里的AT-AT步行机尺寸更大\N通常被部署在船坞、研究设施等帝国建筑工程附近\N可运输沉重的建筑材料或军需品，AT-ACT配备着两门重型激光炮
+Dialogue: 0,1:37:55.90,1:37:58.13,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}上将的形象原型是英国首相丘吉尔
+Dialogue: 0,1:46:28.06,1:46:30.57,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}岸防士兵是驻守在斯卡里夫基地的特种冲锋队员，\N灵活的迷彩盔甲便于他们在那颗行星的沙丘等地形中作战
+Dialogue: 0,1:48:45.14,1:48:52.49,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}TIE“打击者” 由西纳舰队系统公司生产是标准型TIE战斗机的改型\N经过了专门的设计，在大气层内飞行时更为迅速而灵活。\N该型战斗机配备着四门激光炮
+Dialogue: 0,2:01:20.94,2:01:24.59,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}在《新的希望》里，死星准备轰击雅文4号卫星时，\N塔金又说了这句，结果成了他的遗言
+Dialogue: 0,2:02:05.56,2:02:07.59,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}达斯.维达大人的旗舰“蹂躏者号”Devastator\N也就是在《新的希望》开场出现的那艘帝国超级歼星舰
+Dialogue: 0,2:04:50.50,2:04:52.30,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}拉下脱离杆的人是本片导演加雷思.爱德华兹Gareth Edwards亲自客串的
+Dialogue: 0,2:05:34.36,2:05:39.29,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}在正传三部曲和《原力觉醒》中饰演莱娅的卡丽.费希尔\N已于2016年12月27日因心脏病逝世，享年60岁。\N她的母亲黛比.雷诺兹Debbie Reynolds于第二天因中风去世，享年84岁......
+Dialogue: 0,2:05:39.29,2:05:44.29,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}塔金总督彼得.库欣Peter Cushing已在1994年逝世、公主殿下均利用了表情捕捉和CGI技术复原人脸
+Dialogue: 0,2:05:44.76,2:05:50.29,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}影片原本签约的配乐师是来自法国的亚历山大·迪普拉\N但是因为电影在重拍后改了基调和情节，所以他写的曲子就被弃用了。
+Dialogue: 0,2:05:50.29,2:05:55.29,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}迪普拉后来又忙于为吕克·贝松的《星际特工》做配乐\N就没有参加《侠盗一号》音乐改写的工作。\N最后片方找来迈克·吉亚奇诺救急，后者只花了一个月就写完了所有配乐
+Dialogue: 0,0:03:39.12,0:03:49.09,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}盖伦.厄索GalenErso是琴的父亲。他从小就表现出惊人的数学天赋\N因此被共和国未来计划录取，并在学校里和同学奥森.克伦尼克成为好友\N毕业后，他进入科学界发展，以凯伯水晶相关的原理和技术为主要研究方向
+Dialogue: 0,0:03:49.12,0:03:59.09,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}帝国成立后，盖伦应奥森.克伦尼克的邀请加入了“天能计划”\N该计划以研究民用能源科技为幌子，实际目标则是攻破死星主炮的技术难关\N大约两年时间过后，盖伦终于得知该计划的真相，携家眷在索.格雷拉的帮助下躲避帝国
+Dialogue: 0,0:04:07.82,0:04:17.83,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}奥森·克伦尼克OrsonKrennic，是盖伦·厄索的同学与好友。\N毕业后，他进入共和国工程兵团发展，监督了许多大型项目的建设\N后来被秘密选入共和国战略咨询室的特种武器小组，负责死星超级激光炮的开发
+Dialogue: 0,0:04:18.22,0:04:23.43,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}帝国成立之后不久，超级激光炮原型的第一次试射取得圆满成功，他因此被晋升为中校\N后来，他成为帝国先进武器研究部的总监，负责保卫死星的安全\N盖伦出逃是他遭遇的一大挫折，本片以两位老同学重逢开始
+Dialogue: 0,0:11:44.82,0:11:57.33,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}索.格雷拉和妹妹斯蒂拉.格雷拉出生于昂德朗Onderon星球\N在克隆战争期间一直在星球上领导反抗组织抵抗独立星系邦联的统治\N索.格雷拉行事极端暴力，反抗联盟也容不下他，或者他还看不上反抗联盟呢
+Dialogue: 0,0:22:25.78,0:22:35.08,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}威尔赫夫·塔金Wilhuff Tarkin秉持着以恐惧管束民众的“塔金主义”理念\N早年曾在母星埃里亚杜Eriadu从政，后来一度加入共和国军\N帝国建立后又重回政界发展，很快便被封为高级星区总督
+Dialogue: 0,0:30:42.86,0:30:51.36,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}TX-225“占领者”TX-225 "Occupier"战斗突击坦克由罗萨纳重型工程\N公司Rothana Heavy Engineering生产，配备着两门可升降的中型\N双管激光炮。每辆该型坦克需要三名乘员：一名车长、一名驾驶员和一名炮手
+Dialogue: 0,0:30:55.90,0:31:00.01,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}常规帝国冲锋队员stormtroopers配备着标准型E-11爆能枪\N穿戴着标志性的全白盔甲是银河帝国最常见的兵种
+Dialogue: 0,0:31:00.01,0:31:02.49,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}帝国冲锋队员执行帝国黑暗意志的铁血力量\N冷酷而忠诚白甲的帝国冲锋队员也《星球大战》电影的标志性形象之一
+Dialogue: 0,0:30:36.47,0:30:42.76,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}帝国战斗突击坦克车长就是吉蒙.阿布马布隶属于帝国铁锤精锐装甲单位\N坦克车驾驶员的轻甲是白色的，车长的胸甲上半部及肩甲是黑色的
+Dialogue: 0,0:46:50.02,0:46:51.85,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}两名帝国操作员是《星战8》导演莱恩.约翰逊和制片人拉姆.伯格曼客串\N据说这两货还要在《星战8》里客串
+Dialogue: 0,1:38:04.02,1:38:08.81,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}金色领队、红色领队画面是直接用40年前《新的希望》的存档镜头
+Dialogue: 0,1:52:39.52,1:52:55.51,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}奇鲁的角色侯选是甄子丹或李连杰，为何会选甄子丹？\N因为他的薪酬只要400万美元，比李连杰的少了600万美元\N甄子丹把这个角色设计成盲人，为了致敬日本剑客座头市
+Dialogue: 0,0:09:50.14,0:09:57.89,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}凯伯水晶KyberCrystal，这是一种介于有机与无机之间的神奇材料，\N甚至具有接近活体的性质，绝地武士光剑的能量源
+Dialogue: 0,0:28:17.20,0:28:25.20,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}丑鬼，别嚣张，不多时，你就被会现存的绝地大师拿光剑砍的，别狂！
+Dialogue: 0,0:28:36.20,0:28:39.20,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}注意，街道上有台的帝国侦察机器人Probe droid飘过
+Dialogue: 0,0:35:51.20,0:36:02.20,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}贝兹使用的是非法的重型连发炮，他背后背的圆筒则是压缩气罐。\N这门令人羡慕的轻型炮由高密度储能单元和一条充能带供给动力\N能以惊人的速度开火，火力相当于五支暴能步枪
+Dialogue: 0,1:31:19.34,1:31:24.09,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}T-15指的是帝国“T-15跃空机”，T系列跃空机是卢克老家塔图因最常见的飞行器\N最大特点便是拥有三个用来扰流的机翼
+Dialogue: 0,2:05:16.94,2:05:24.60,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}瑞姆斯.安德列斯舰长在《新的希望》开头被维达大人掐死了
+Dialogue: 0,1:46:09.88,1:46:17.08,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}黑色光剑：绝地武士最稀有的橙装兵器，仅此一把，在被曼达洛人夺走后\N最终落到了同为曼达洛武士的反抗军莎宾.雷恩手中。黑色光剑的外形更像是一把军刀\N而帝国研究它的目的，很可能是制造出类似死星的终极武器
+Dialogue: 0,1:46:17.38,1:46:27.08,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}“棱镜计划”是绝地武士曾打造过一座名为The Prism的外太空监狱，\N随着共和国的陷落，这座监狱最终落入达斯·维达手中
+Dialogue: 0,0:29:09.42,0:29:21.33,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}这句话最早出自《新的希望》的早期剧本，但在最终电影里被精简成“May the Force Be with You。”《侠盗一号》这次确认两句话都属于正史\N甄子丹饰演的角色是“威尔守卫”，威尔守卫不是绝地武士，但依旧可以操纵一定的原力
+Dialogue: 0,0:38:17.12,0:38:18.73,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}提列克族的舞女，明显特征是头上长了两条粗粗的肉辫子，各个种族雄性都喜爱
+Dialogue: 0,2:04:54.42,2:05:05.43,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}坦特维四号飞船Tantive IV，又名反抗军封锁穿越者号Rebel Blockade Runner\N此片结尾逃跑，《新的希望》开片被追上
+Dialogue: 0,0:27:59.42,0:28:03.43,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}RA-7虫眼机器人出现在了杰达城的街道上，这次不再是躺尸运输车了
+Dialogue: 0,0:17:03.42,0:17:10.13,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}反抗军的将领简.多登纳将军出现在《新希望》中\N多登纳谋划了义军在雅汶战役中至关重要的攻击疾飞策略\N还从雅汶的地面控制中心提供支持，多登纳出席了随后的颁奖仪式
+Dialogue: 0,0:17:11.13,0:17:17.13,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}多登纳将军的扮演者Alex McCrindle在1990年与世长辞，《侠盗一号》中的多登纳\N则由《权力的游戏》中 “无畏的巴利斯坦”的扮演者伊恩.麦克尔希尼出演
+Dialogue: 0,0:31:25.42,0:31:33.13,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}《星战》系列的御用特型演员沃里克.戴维斯，凭借出演《星战6》中的“伊渥克矮人”\N成为星战常驻角色，几乎演遍了星战系列的矮人角色，甚至包括尤达大师
+Dialogue: 0,0:32:47.42,0:32:54.13,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}AT-ST虽没有AT-AT步行机那么威风，但在银河内战的战场上，它是帝国的重要补充力量\N这种双人交通工具配备轻型火力，头部下方装有激光炮，两侧装有武器舱
+Dialogue: 0,0:32:54.13,0:32:56.13,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}AT-ST是一种侦察和巡逻工具，经常在侧翼保护前进的AT-AT，清剿躲过大型步行机的步兵
+Dialogue: 0,1:22:49.82,1:23:05.13,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}贝尔.奥加纳Bail.Organa,共和国时期银河议会的议员，有影响力的政治家\N也是奥德朗Alderaan皇室的领袖及第一主席和总督亦是反抗军同盟的领袖和创始人之一
+Dialogue: 0,1:23:05.13,1:23:07.13,Default,,0000,0000,0000,,{\fnKaiTi\fs10\bord0\shad0\pos(0,10)\an7\1c&H00FFFF&}\N由于他的身份和地位其养女莱娅.奥加纳Leia Organa会被称为公主\N在死星摧毁奥德朗的过程中，贝尔.奥加纳不幸丧生
+Dialogue: 0,1:23:07.13,1:23:07.13,Default,,0000,0000,0000,,
+
+
