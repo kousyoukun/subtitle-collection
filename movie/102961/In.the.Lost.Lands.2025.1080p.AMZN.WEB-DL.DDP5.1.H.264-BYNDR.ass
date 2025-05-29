@@ -1,0 +1,815 @@
+﻿[Script Info]
+Collisions: Normal
+PlayResX: 384
+PlayResY: 288
+ScaledBorderAndShadow: no
+ScriptType: v4.00+
+Synch Point: 1
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,方正黑體_GBK,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,1,2,1,2,5,5,2,1
+Style: CSEG,方正黑體_GBK,20,&H00FFFFFF,&HF0000000,&H00000000,&H32000000,0,0,0,0,100,100,0,0,3,2,1,2,5,5,2,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:05.00,0:00:09.00,CSEG,,0,0,0,,{\fad(300,300)\an4\pos(17,60)\fn微軟雅黑\fs16\b1\3c&H5CBFDB&\3a&H60&\shad0}遠鑒字幕組{\c&H01BBFF&\3a&Hff&}\h\h翻譯
+Dialogue: 0,0:00:10.00,0:00:14.00,CSEG,,0,0,0,,{\fad(300,300)\an4\pos(17,60)\fn微軟雅黑\fs16\b1\3c&H5CBFDB&\3a&H60&\shad0}CSEG克隆字幕提取組{\c&H01BBFF&\3a&Hff&}\h\h提取製作
+Dialogue: 0,0:00:15.00,0:00:19.00,CSEG,,0,0,0,,{\fad(300,300)\an4\pos(17,60)\fn微軟雅黑\fs16\b1\3c&H01BBFF&\3a&H00&\shad0}\h\h翻譯\h\h
+Dialogue: 0,0:00:15.00,0:00:19.00,CSEG,,0,0,0,,{\fad(300,300)\an7\pos(17,67)\shad0\fn微軟雅黑\fs16\b1\3a&Hff&}Alina\NEleanor\NHPY
+Dialogue: 0,0:00:20.00,0:00:24.00,CSEG,,0,0,0,,{\fad(300,300)\an4\pos(17,60)\fn微軟雅黑\fs16\b1\3c&H01BBFF&\3a&H00&\shad0}\h\h翻譯\h\h
+Dialogue: 0,0:00:20.00,0:00:24.00,CSEG,,0,0,0,,{\fad(300,300)\an7\pos(17,67)\shad0\fn微軟雅黑\fs16\b1\3a&Hff&}Meowth\N佩刀\N陽小羊
+Dialogue: 0,0:00:25.00,0:00:29.00,CSEG,,0,0,0,,{\fad(300,300)\an4\pos(17,60)\fn微軟雅黑\fs16\b1\3c&H01BBFF&\3a&H00&\shad0}\h\h翻譯\h\h
+Dialogue: 0,0:00:25.00,0:00:29.00,CSEG,,0,0,0,,{\fad(300,300)\an7\pos(17,67)\shad0\fn微軟雅黑\fs16\b1\3a&Hff&}安城\NEnter嬌丸子\NETBkaeris
+Dialogue: 0,0:00:30.00,0:00:34.00,CSEG,,0,0,0,,{\fad(300,300)\an4\pos(17,60)\fn微軟雅黑\fs16\b1\3c&H01BBFF&\3a&H00&\shad0}\h\h翻譯\h\h
+Dialogue: 0,0:00:30.00,0:00:34.00,CSEG,,0,0,0,,{\fad(300,300)\an7\pos(17,67)\shad0\fn微軟雅黑\fs16\b1\3a&Hff&}Freddie愛咳嗽
+Dialogue: 0,0:00:35.00,0:00:39.00,CSEG,,0,0,0,,{\fad(300,300)\an4\pos(17,60)\fn微軟雅黑\fs16\b1\3c&H01BBFF&\3a&H00&\shad0}\h\h校對\h\h
+Dialogue: 0,0:00:35.00,0:00:39.00,CSEG,,0,0,0,,{\fad(300,300)\an7\pos(17,67)\shad0\fn微軟雅黑\fs16\b1\3a&Hff&}耿Valya\NETBkaeris\NFeathamity\N猴ing
+Dialogue: 0,0:00:40.00,0:00:44.00,CSEG,,0,0,0,,{\fad(300,300)\an4\pos(17,60)\fn微軟雅黑\fs16\b1\3c&H01BBFF&\3a&H00&\shad0}\h\h總監\h\h
+Dialogue: 0,0:00:40.00,0:00:44.00,CSEG,,0,0,0,,{\fad(300,300)\an7\pos(17,67)\shad0\fn微軟雅黑\fs16\b1\3a&Hff&}Whatsup
+Dialogue: 0,0:00:45.00,0:00:49.00,CSEG,,0,0,0,,{\fad(300,300)\an4\pos(17,60)\fn微軟雅黑\fs16\b1\3c&H01BBFF&\3a&H00&\shad0}\h\h提取\h\h
+Dialogue: 0,0:00:45.00,0:00:49.00,CSEG,,0,0,0,,{\fad(300,300)\an7\pos(17,67)\shad0\fn微軟雅黑\fs16\b1\3a&Hff&}影狼@CSEG
+Dialogue: 0,0:00:50.00,0:01:14.00,Default,,0,0,0,Banner;28;0;0,{\an8\fs18}{\bord0\b0\fnMicrosoft YaHei}本字幕由{\c&H5CBFDB&\1a&H00&}CSEG克隆字幕提取組{\c&HFFFFFF&\1a&H00&}提取分享  僅供學習交流之用  禁止壓制  禁止刪除字幕組及CSEG署名
+Dialogue: 0,0:01:06.74,0:01:10.08,Default,,0,0,0,,如果你有時間又有膽子聽的話\N{\fn微軟雅黑\fs14}If you've got the time and the stomach for it,
+Dialogue: 0,0:01:10.14,0:01:13.08,Default,,0,0,0,,我給你講個故事\N{\fn微軟雅黑\fs14}I've got a story for you.
+Dialogue: 0,0:01:13.15,0:01:16.28,Default,,0,0,0,,一個關於魔法和女巫\N{\fn微軟雅黑\fs14}A tale of magic and witches,
+Dialogue: 0,0:01:15.00,0:01:20.00,Default,,0,0,0,,{\an8\fs18\bord0\b0\fnMicrosoft YaHei\fad(300,300)}歡迎關注新浪微博、微信公眾號：{\c&H5CBFDB&\1a&H00&\b1}CSEG克隆字幕提取組
+Dialogue: 0,0:01:16.35,0:01:19.95,Default,,0,0,0,,關於探險和怪物\N{\fn微軟雅黑\fs14}of quests and of monsters.
+Dialogue: 0,0:01:20.02,0:01:22.59,Default,,0,0,0,,關於善和惡的故事\N{\fn微軟雅黑\fs14}Of good and of evil.
+Dialogue: 0,0:01:25.26,0:01:28.19,Default,,0,0,0,,可別誤會了\N{\fn微軟雅黑\fs14}But make no mistake.
+Dialogue: 0,0:01:28.26,0:01:29.73,Default,,0,0,0,,這不是童話\N{\fn微軟雅黑\fs14}This is no fairy tale.
+Dialogue: 0,0:01:32.36,0:01:36.13,Default,,0,0,0,,也沒有完美結局\N{\fn微軟雅黑\fs14}And there are no happy endings.
+Dialogue: 0,0:01:36.30,0:01:43.80,Default,,0,0,0,,{\an8}魔域女巫
+Dialogue: 0,0:01:44.98,0:02:09.00,Default,,0,0,0,Banner;28;0;0,{\an8\fs18}{\bord0\b0\fnMicrosoft YaHei}本字幕由{\c&H5CBFDB&\1a&H00&}CSEG克隆字幕提取組{\c&HFFFFFF&\1a&H00&}提取分享  僅供學習交流之用  禁止壓制  禁止刪除字幕組及CSEG署名
+Dialogue: 0,0:01:49.75,0:01:52.09,Default,,0,0,0,,你所熟知的世界已經消逝了\N{\fn微軟雅黑\fs14}The world you know is gone,
+Dialogue: 0,0:01:52.15,0:01:55.49,Default,,0,0,0,,被許久之前的戰爭之火吞噬\N{\fn微軟雅黑\fs14}consumed by the flames of a great war long ago
+Dialogue: 0,0:01:55.56,0:01:58.86,Default,,0,0,0,,死亡從天而降\N{\fn微軟雅黑\fs14}when death rained from the sky.
+Dialogue: 0,0:01:58.93,0:02:02.36,Default,,0,0,0,,現在剩下的只有失落之地\N{\fn微軟雅黑\fs14}All that's left now are the Lost Lands,
+Dialogue: 0,0:02:02.43,0:02:07.33,Default,,0,0,0,,充斥著在暗中蟄伏的扭曲怪物\N{\fn微軟雅黑\fs14}filled with twisted creatures that dwell in the shadows.
+Dialogue: 0,0:02:07.40,0:02:12.51,Default,,0,0,0,,所有倖存的人類都在一座城市避難\N{\fn微軟雅黑\fs14}What remains of humanity takes refuge in a single city.
+Dialogue: 0,0:02:10.00,0:02:15.00,Default,,0,0,0,,{\an8\fs18\bord0\b0\fnMicrosoft YaHei\fad(300,300)}歡迎關注新浪微博、微信公眾號：{\c&H5CBFDB&\1a&H00&\b1}CSEG克隆字幕提取組
+Dialogue: 0,0:02:12.57,0:02:15.58,Default,,0,0,0,,很久之前  一位神秘的女巫\N{\fn微軟雅黑\fs14}Long ago, a mysterious witch,
+Dialogue: 0,0:02:15.64,0:02:18.14,Default,,0,0,0,,姬·艾莉絲  從失落之地中出現\N{\fn微軟雅黑\fs14}Gray Alys, emerged from the Lost Lands.
+Dialogue: 0,0:02:21.45,0:02:24.58,Default,,0,0,0,,這是我們相識的故事\N{\fn微軟雅黑\fs14}This is the story of how we met
+Dialogue: 0,0:02:24.65,0:02:25.99,Default,,0,0,0,,也是她救了我們兩人性命的故事\N{\fn微軟雅黑\fs14}and how she saved the both of us.
+Dialogue: 0,0:02:38.23,0:02:39.80,Default,,0,0,0,,放下手上的工作\N{\fn微軟雅黑\fs14}Stop your work!
+Dialogue: 0,0:02:41.73,0:02:44.37,Default,,0,0,0,,放下手上的工作\N{\fn微軟雅黑\fs14}Stop your work!
+Dialogue: 0,0:02:44.44,0:02:49.17,Default,,0,0,0,,都來看看  以此為戒\N{\fn微軟雅黑\fs14}Let this be an example to all.
+Dialogue: 0,0:02:49.24,0:02:52.71,Default,,0,0,0,,沒有人可以反抗教堂\N{\fn微軟雅黑\fs14}No one shall defy the church.
+Dialogue: 0,0:02:52.78,0:02:56.85,Default,,0,0,0,,他們都說你可以從姬·艾莉絲那\N{\fn微軟雅黑\fs14}They say you can buy anything
+Dialogue: 0,0:02:56.92,0:02:59.18,Default,,0,0,0,,買到任何你想要的東西\N{\fn微軟雅黑\fs14}you might desire from Gray Alys.
+Dialogue: 0,0:02:59.25,0:03:00.45,Default,,0,0,0,,但最好不要\N{\fn微軟雅黑\fs14}But it's better not to.
+Dialogue: 0,0:03:02.69,0:03:05.39,Default,,0,0,0,,但人們仍然想要你的幫助\N{\fn微軟雅黑\fs14}And still the people seek your help.
+Dialogue: 0,0:03:05.46,0:03:07.89,Default,,0,0,0,,他們無知而愚蠢\N{\fn微軟雅黑\fs14}They're ignorant, uneducated.
+Dialogue: 0,0:03:07.96,0:03:11.63,Default,,0,0,0,,有些人窮  有些人富  所有人都很絕望\N{\fn微軟雅黑\fs14}Some are poor, some rich. All are desperate.
+Dialogue: 0,0:03:11.70,0:03:13.83,Default,,0,0,0,,我不拒絕任何人\N{\fn微軟雅黑\fs14}I refuse no one.
+Dialogue: 0,0:03:13.90,0:03:15.97,Default,,0,0,0,,你知道教堂是怎麼看待你這種人的嗎\N{\fn微軟雅黑\fs14}Do you know what the church says about the likes of you?
+Dialogue: 0,0:03:16.04,0:03:18.81,Default,,0,0,0,,我覺得你會告訴我的\N{\fn微軟雅黑\fs14}I'm sure you're going to tell me.
+Dialogue: 0,0:03:18.87,0:03:22.41,Default,,0,0,0,,你是魔鬼的化身\N{\fn微軟雅黑\fs14}That you are of the devil
+Dialogue: 0,0:03:22.47,0:03:23.74,Default,,0,0,0,,我們有責任將你剷除\N{\fn微軟雅黑\fs14}and it's our duty to root you out.
+Dialogue: 0,0:03:26.45,0:03:28.25,Default,,0,0,0,,以最高霸主\N{\fn微軟雅黑\fs14}In the name of the Overlord,
+Dialogue: 0,0:03:28.31,0:03:29.95,Default,,0,0,0,,山下之城統治者\N{\fn微軟雅黑\fs14}ruler of the City Under The Mountain,
+Dialogue: 0,0:03:30.02,0:03:31.42,Default,,0,0,0,,信仰的最高祭司之名\N{\fn微軟雅黑\fs14}High Priest of the Faith,
+Dialogue: 0,0:03:31.48,0:03:33.99,Default,,0,0,0,,我宣判你  姬·艾莉絲\N{\fn微軟雅黑\fs14}I sentence you, Gray Alys,
+Dialogue: 0,0:03:34.05,0:03:35.92,Default,,0,0,0,,絞刑\N{\fn微軟雅黑\fs14}to death by hanging.
+Dialogue: 0,0:03:40.23,0:03:41.69,Default,,0,0,0,,懺悔吧  女人\N{\fn微軟雅黑\fs14}Repent, woman.
+Dialogue: 0,0:04:41.09,0:04:43.22,Default,,0,0,0,,我這是怎麼了\N{\fn微軟雅黑\fs14}What is happening to me?
+Dialogue: 0,0:04:43.29,0:04:45.19,Default,,0,0,0,,你不可信了\N{\fn微軟雅黑\fs14}You cannot be trusted.
+Dialogue: 0,0:04:45.26,0:04:48.66,Default,,0,0,0,,你成為了女巫的奴隸\N{\fn微軟雅黑\fs14}You're a slave to the witch.
+Dialogue: 0,0:04:50.80,0:04:51.63,Default,,0,0,0,,追殺她\N{\fn微軟雅黑\fs14}Hunt her down.
+Dialogue: 0,0:05:12.22,0:05:13.65,Default,,0,0,0,,來我這\N{\fn微軟雅黑\fs14}To me.
+Dialogue: 0,0:06:06.84,0:06:08.98,Default,,0,0,0,,現身吧  女巫\N{\fn微軟雅黑\fs14}Show yourself, witch.
+Dialogue: 0,0:06:30.23,0:06:31.43,Default,,0,0,0,,動手\N{\fn微軟雅黑\fs14}Do it.
+Dialogue: 0,0:06:32.70,0:06:34.00,Default,,0,0,0,,殺了我\N{\fn微軟雅黑\fs14}Do it.
+Dialogue: 0,0:06:36.74,0:06:38.17,Default,,0,0,0,,女巫\N{\fn微軟雅黑\fs14}Witch!
+Dialogue: 0,0:06:40.84,0:06:43.51,Default,,0,0,0,,我會找到你的\N{\fn微軟雅黑\fs14}I will find you.
+Dialogue: 0,0:06:43.58,0:06:45.95,Default,,0,0,0,,你將在地獄中烈火焚身\N{\fn微軟雅黑\fs14}You will burn in hell.
+Dialogue: 0,0:06:50.32,0:06:53.39,Default,,0,0,0,,你將在地獄裡烈火焚身  女巫\N{\fn微軟雅黑\fs14}You will burn in hell, witch!
+Dialogue: 0,0:06:53.45,0:06:55.25,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The witch that will not hang.
+Dialogue: 0,0:06:55.32,0:06:57.62,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The witch that will not hang.
+Dialogue: 0,0:06:57.69,0:06:59.66,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The witch that will not hang.
+Dialogue: 0,0:06:59.73,0:07:01.86,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The witch that will not hang.
+Dialogue: 0,0:07:01.93,0:07:04.26,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The witch that will not hang.
+Dialogue: 0,0:07:04.33,0:07:05.70,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The witch that will not hang.
+Dialogue: 0,0:07:05.77,0:07:08.03,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The witch that will not hang.
+Dialogue: 0,0:07:08.10,0:07:10.27,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The witch that will not hang.
+Dialogue: 0,0:07:10.34,0:07:12.17,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The witch that will not hang.
+Dialogue: 0,0:07:44.97,0:07:48.94,Default,,0,0,0,,如果有人想埋伏別人\N{\fn微軟雅黑\fs14}If a man wanted to ambush another man,
+Dialogue: 0,0:07:49.01,0:07:50.61,Default,,0,0,0,,這裡就是最合適的地方\N{\fn微軟雅黑\fs14}this would be the perfect spot.
+Dialogue: 0,0:08:02.82,0:08:05.26,Default,,0,0,0,,在他眼睛還沒適應黑暗時突襲他\N{\fn微軟雅黑\fs14}Jump him while his eyes were still adjusting to the dark.
+Dialogue: 0,0:08:08.29,0:08:11.46,Default,,0,0,0,,可以帶上三四個朋友一起\N{\fn微軟雅黑\fs14}Maybe even bring three, four friends.
+Dialogue: 0,0:08:11.53,0:08:12.67,Default,,0,0,0,,確保萬無一失\N{\fn微軟雅黑\fs14}Make sure the job got done right.
+Dialogue: 0,0:09:09.36,0:09:11.76,Default,,0,0,0,,這個一直沒什麼用處\N{\fn微軟雅黑\fs14}This thing has never worked.
+Dialogue: 0,0:09:25.91,0:09:28.21,Default,,0,0,0,,但它們從沒失手過\N{\fn微軟雅黑\fs14}But this never fails.
+Dialogue: 0,0:10:00.87,0:10:02.61,Default,,0,0,0,,姬·艾莉絲\N{\fn微軟雅黑\fs14}Gray Alys.
+Dialogue: 0,0:10:02.68,0:10:04.61,Default,,0,0,0,,聽出我的腳步了\N{\fn微軟雅黑\fs14}Did you recognize my footsteps?
+Dialogue: 0,0:10:04.68,0:10:07.85,Default,,0,0,0,,不  是你的善意\N{\fn微軟雅黑\fs14}No. Your kindness.
+Dialogue: 0,0:10:07.91,0:10:10.22,Default,,0,0,0,,這座城市越來越壞了\N{\fn微軟雅黑\fs14}This city gets worse and worse,
+Dialogue: 0,0:10:10.28,0:10:13.05,Default,,0,0,0,,但你一直都這麼大方\N{\fn微軟雅黑\fs14}but you have always been so generous
+Dialogue: 0,0:10:13.12,0:10:16.36,Default,,0,0,0,,從我還是個孩時起就這樣\N{\fn微軟雅黑\fs14}ever since I was a child.
+Dialogue: 0,0:10:16.42,0:10:17.59,Default,,0,0,0,,只對你這樣\N{\fn微軟雅黑\fs14}Only to you.
+Dialogue: 0,0:10:19.06,0:10:22.36,Default,,0,0,0,,你從不問我要任何東西\N{\fn微軟雅黑\fs14}You never ask anything of me.
+Dialogue: 0,0:10:22.43,0:10:24.76,Default,,0,0,0,,奇怪\N{\fn微軟雅黑\fs14}Strange.
+Dialogue: 0,0:10:24.83,0:10:29.07,Default,,0,0,0,,你的聲音跟我年輕時一模一樣\N{\fn微軟雅黑\fs14}You sound no different to when I was young,
+Dialogue: 0,0:10:29.14,0:10:32.07,Default,,0,0,0,,但你應該跟我一樣老才對\N{\fn微軟雅黑\fs14}but you must be old now like me.
+Dialogue: 0,0:10:32.14,0:10:33.27,Default,,0,0,0,,我確實比你更老\N{\fn微軟雅黑\fs14}Older.
+Dialogue: 0,0:10:36.08,0:10:37.48,Default,,0,0,0,,老得多\N{\fn微軟雅黑\fs14}Much older.
+Dialogue: 0,0:11:02.50,0:11:05.10,Default,,0,0,0,,-我叫傑拉斯  -守衛隊的隊長\N{\fn微軟雅黑\fs14}- I am Jerais. - Captain of the Overwatch.
+Dialogue: 0,0:11:05.17,0:11:07.04,Default,,0,0,0,,是你的霸主派你來的嗎\N{\fn微軟雅黑\fs14}Have you come on behalf of the Overlord?
+Dialogue: 0,0:11:07.11,0:11:09.78,Default,,0,0,0,,還是他的王后\N{\fn微軟雅黑\fs14}Or perhaps his queen?
+Dialogue: 0,0:11:21.95,0:11:24.92,Default,,0,0,0,,你為什麼來拜訪我\N{\fn微軟雅黑\fs14}What brings you to visit one like me?
+Dialogue: 0,0:11:24.99,0:11:30.10,Default,,0,0,0,,據說只要付錢  你就能實現任何願望\N{\fn微軟雅黑\fs14}It is said that for a price, you grant wishes.
+Dialogue: 0,0:11:30.16,0:11:32.20,Default,,0,0,0,,你想買什麼\N{\fn微軟雅黑\fs14}What do you wish to buy?
+Dialogue: 0,0:11:33.50,0:11:35.17,Default,,0,0,0,,退下吧\N{\fn微軟雅黑\fs14}Leave us.
+Dialogue: 0,0:11:38.37,0:11:40.21,Default,,0,0,0,,您確定嗎\N{\fn微軟雅黑\fs14}I'm not sure if that is wise.
+Dialogue: 0,0:11:55.52,0:11:59.63,Default,,0,0,0,,聽說你來自失落之地\N{\fn微軟雅黑\fs14}Some say you came from the Lost Lands
+Dialogue: 0,0:11:59.69,0:12:02.09,Default,,0,0,0,,你也瞭解生活在那裡的東西\N{\fn微軟雅黑\fs14}and that you know the things that live there.
+Dialogue: 0,0:12:02.16,0:12:04.93,Default,,0,0,0,,黑暗的  非自然的造物\N{\fn微軟雅黑\fs14}Dark, unnatural things.
+Dialogue: 0,0:12:05.00,0:12:06.93,Default,,0,0,0,,這就是你想從我這裡得到的嗎\N{\fn微軟雅黑\fs14}Is this what you want from me?
+Dialogue: 0,0:12:07.00,0:12:08.80,Default,,0,0,0,,給你講童話故事\N{\fn微軟雅黑\fs14}To tell you fairy tales?
+Dialogue: 0,0:12:08.87,0:12:13.71,Default,,0,0,0,,我想從你這裡得到的是變成野獸的力量  姬·艾莉絲\N{\fn微軟雅黑\fs14}I want from you the power to become a beast, Gray Alys.
+Dialogue: 0,0:12:13.77,0:12:17.61,Default,,0,0,0,,成為超越人類的存在  你對此感到驚訝嗎\N{\fn微軟雅黑\fs14}To be more than human. Does that shock you?
+Dialogue: 0,0:12:17.68,0:12:20.95,Default,,0,0,0,,我見過的多更多  你這要求不算什麼\N{\fn微軟雅黑\fs14}I have seen too much to be shocked so easily.
+Dialogue: 0,0:12:21.01,0:12:25.95,Default,,0,0,0,,所以你能把變形術的秘訣賣給我嗎\N{\fn微軟雅黑\fs14}So you can sell me the secret of shapeshifting?
+Dialogue: 0,0:12:26.02,0:12:27.29,Default,,0,0,0,,我想變成狼\N{\fn微軟雅黑\fs14}To a wolf?
+Dialogue: 0,0:12:38.03,0:12:41.90,Default,,0,0,0,,你真的想要這樣\N{\fn微軟雅黑\fs14}Are you certain you want what you ask for?
+Dialogue: 0,0:12:41.97,0:12:43.84,Default,,0,0,0,,結果可能不如你所願\N{\fn微軟雅黑\fs14}You might not be happy with what you receive.
+Dialogue: 0,0:12:43.90,0:12:48.51,Default,,0,0,0,,-輪不到你操心這個  -我有幫忙的義務\N{\fn微軟雅黑\fs14}- This is not your concern. - I am compelled to help,
+Dialogue: 0,0:12:48.58,0:12:51.84,Default,,0,0,0,,-但我會警告每一個來找我的人  -我不是普通人\N{\fn微軟雅黑\fs14}- but I warn all who come to me. - I'm not all.
+Dialogue: 0,0:12:53.58,0:12:56.65,Default,,0,0,0,,你接受我的出價嗎\N{\fn微軟雅黑\fs14}Will you accept my offer?
+Dialogue: 0,0:12:56.72,0:13:01.22,Default,,0,0,0,,我有求必應  我會雇一個獵人\N{\fn微軟雅黑\fs14}I refuse no one. I'll hire a hunter.
+Dialogue: 0,0:13:01.29,0:13:05.16,Default,,0,0,0,,我們會為你找一個變形者  再把他的能力轉移給你\N{\fn微軟雅黑\fs14}We'll find you a shapeshifter and take its power.
+Dialogue: 0,0:13:05.22,0:13:08.16,Default,,0,0,0,,等到滿月的時候\N{\fn微軟雅黑\fs14}Give me until the full moon
+Dialogue: 0,0:13:08.23,0:13:10.80,Default,,0,0,0,,我會把你想要的東西帶給你\N{\fn微軟雅黑\fs14}and I will bring you what you desire.
+Dialogue: 0,0:13:10.86,0:13:13.63,Default,,0,0,0,,你要去哪裡\N{\fn微軟雅黑\fs14}Where will you go?
+Dialogue: 0,0:13:14.97,0:13:17.40,Default,,0,0,0,,去失落之地\N{\fn微軟雅黑\fs14}To the Lost Lands.
+Dialogue: 0,0:13:22.44,0:13:24.98,Default,,0,0,0,,{\an8}距離滿月還有6天
+Dialogue: 0,0:13:35.32,0:13:37.36,Default,,0,0,0,,那是什麼  傑拉斯\N{\fn微軟雅黑\fs14}What is it, Jerais?
+Dialogue: 0,0:13:39.83,0:13:41.09,Default,,0,0,0,,你真的有求必應嗎\N{\fn微軟雅黑\fs14}Do you refuse no one?
+Dialogue: 0,0:13:41.16,0:13:42.80,Default,,0,0,0,,來者不拒\N{\fn微軟雅黑\fs14}No one.
+Dialogue: 0,0:13:50.70,0:13:54.54,Default,,0,0,0,,那收下這個吧  我有想要的東西\N{\fn微軟雅黑\fs14}Then accept it as my payment. I wish to buy for myself.
+Dialogue: 0,0:13:54.61,0:13:59.04,Default,,0,0,0,,這塊懷錶是我的傳家寶\N{\fn微軟雅黑\fs14}This timepiece has been in my family for generations.
+Dialogue: 0,0:13:59.11,0:14:01.05,Default,,0,0,0,,是我最珍貴的東西\N{\fn微軟雅黑\fs14}It's my most valuable possession.
+Dialogue: 0,0:14:01.11,0:14:03.05,Default,,0,0,0,,那你想要什麼\N{\fn微軟雅黑\fs14}And what do you wish for?
+Dialogue: 0,0:14:03.12,0:14:05.45,Default,,0,0,0,,我想讓你拒絕她\N{\fn微軟雅黑\fs14}I want you to fail her.
+Dialogue: 0,0:14:05.52,0:14:08.59,Default,,0,0,0,,守衛隊誓死效忠領主\N{\fn微軟雅黑\fs14}The Overwatch is sworn to loyalty,
+Dialogue: 0,0:14:08.66,0:14:11.36,Default,,0,0,0,,但你卻背叛了你的王后\N{\fn微軟雅黑\fs14}yet you betray your queen.
+Dialogue: 0,0:14:11.42,0:14:13.63,Default,,0,0,0,,我沒有背叛\N{\fn微軟雅黑\fs14}I am loyal.
+Dialogue: 0,0:14:13.69,0:14:16.10,Default,,0,0,0,,我比她自己更清楚什麼對她有益\N{\fn微軟雅黑\fs14}I know what's good for her better than she knows herself.
+Dialogue: 0,0:14:16.16,0:14:18.80,Default,,0,0,0,,她尋求的力量會毀了她的\N{\fn微軟雅黑\fs14}This power that she seeks will destroy her.
+Dialogue: 0,0:14:18.86,0:14:21.27,Default,,0,0,0,,我只想幫她\N{\fn微軟雅黑\fs14}I only want to help.
+Dialogue: 0,0:14:21.33,0:14:23.37,Default,,0,0,0,,你在撒謊  傑拉斯\N{\fn微軟雅黑\fs14}You lie, Jerais.
+Dialogue: 0,0:14:23.44,0:14:25.54,Default,,0,0,0,,你散發著嫉妒的酸臭味\N{\fn微軟雅黑\fs14}You reek of jealousy.
+Dialogue: 0,0:14:25.61,0:14:28.44,Default,,0,0,0,,我不跟你吵\N{\fn微軟雅黑\fs14}I will not argue with you.
+Dialogue: 0,0:14:28.51,0:14:33.08,Default,,0,0,0,,如果你不答應  我就走了\N{\fn微軟雅黑\fs14}If you will not sell to me, I will leave.
+Dialogue: 0,0:14:33.15,0:14:34.58,Default,,0,0,0,,我有求必應\N{\fn微軟雅黑\fs14}I refuse no one.
+Dialogue: 0,0:14:44.52,0:14:45.76,Default,,0,0,0,,你會得償所願\N{\fn微軟雅黑\fs14}You shall have what you want.
+Dialogue: 0,0:16:32.73,0:16:34.60,Default,,0,0,0,,對不起\N{\fn微軟雅黑\fs14}I'm sorry.
+Dialogue: 0,0:16:35.80,0:16:37.20,Default,,0,0,0,,你想幹什麼\N{\fn微軟雅黑\fs14}What is it you want?
+Dialogue: 0,0:16:37.27,0:16:38.84,Default,,0,0,0,,幫幫我\N{\fn微軟雅黑\fs14}Help me.
+Dialogue: 0,0:16:43.94,0:16:46.21,Default,,0,0,0,,媽的\N{\fn微軟雅黑\fs14}Shit.
+Dialogue: 0,0:16:46.28,0:16:47.55,Default,,0,0,0,,你又尿褲子了\N{\fn微軟雅黑\fs14}Did you wet yourself again?
+Dialogue: 0,0:16:47.61,0:16:50.02,Default,,0,0,0,,你不會搖鈴嗎\N{\fn微軟雅黑\fs14}Can't you use the bell,
+Dialogue: 0,0:16:50.08,0:16:52.65,Default,,0,0,0,,你這個老蠢豬\N{\fn微軟雅黑\fs14}you old disgusting fool?
+Dialogue: 0,0:16:55.52,0:16:57.79,Default,,0,0,0,,還真是偉大的霸主\N{\fn微軟雅黑\fs14}The mighty Overlord.
+Dialogue: 0,0:16:57.86,0:16:59.46,Default,,0,0,0,,我真是沒辦法相信這一切都是你建的\N{\fn微軟雅黑\fs14}Hard to believe you built all this.
+Dialogue: 0,0:16:59.53,0:17:02.66,Default,,0,0,0,,並且他們依然恐懼你\N{\fn微軟雅黑\fs14}And that they still fear you.
+Dialogue: 0,0:17:02.73,0:17:07.03,Default,,0,0,0,,你也不過是一頭骯髒的蠢豬\N{\fn微軟雅黑\fs14}You're nothing more than a filthy pig,
+Dialogue: 0,0:17:07.10,0:17:09.20,Default,,0,0,0,,就跟其他人沒什麼兩樣\N{\fn微軟雅黑\fs14}just like all men.
+Dialogue: 0,0:17:09.27,0:17:10.70,Default,,0,0,0,,王后陛下\N{\fn微軟雅黑\fs14}My queen?
+Dialogue: 0,0:17:14.14,0:17:15.37,Default,,0,0,0,,除了那個人  你們都一樣\N{\fn微軟雅黑\fs14}All men, except for one.
+Dialogue: 0,0:17:29.32,0:17:30.79,Default,,0,0,0,,別走\N{\fn微軟雅黑\fs14}Don't leave yet.
+Dialogue: 0,0:17:30.86,0:17:32.26,Default,,0,0,0,,我必須得走\N{\fn微軟雅黑\fs14}I have to.
+Dialogue: 0,0:17:32.32,0:17:34.06,Default,,0,0,0,,趁他們還沒看見我\N{\fn微軟雅黑\fs14}Before they see me.
+Dialogue: 0,0:17:34.13,0:17:35.53,Default,,0,0,0,,我不能留在這\N{\fn微軟雅黑\fs14}I can't stay here.
+Dialogue: 0,0:17:39.16,0:17:41.67,Default,,0,0,0,,儘快回來  求你了\N{\fn微軟雅黑\fs14}Hurry back. Please.
+Dialogue: 0,0:17:44.00,0:17:45.84,Default,,0,0,0,,我會的\N{\fn微軟雅黑\fs14}I will.
+Dialogue: 0,0:17:45.91,0:17:47.21,Default,,0,0,0,,應該吧\N{\fn微軟雅黑\fs14}Perhaps.
+Dialogue: 0,0:17:53.81,0:17:55.95,Default,,0,0,0,,以霸主之名  站住\N{\fn微軟雅黑\fs14}Halt in the name of the Overlord.
+Dialogue: 0,0:17:58.92,0:18:00.19,Default,,0,0,0,,你在這裡做什麼\N{\fn微軟雅黑\fs14}What are you doing here?
+Dialogue: 0,0:18:00.25,0:18:03.36,Default,,0,0,0,,酒越烈\N{\fn微軟雅黑\fs14}The stronger the spirits,
+Dialogue: 0,0:18:03.42,0:18:07.19,Default,,0,0,0,,越上頭\N{\fn微軟雅黑\fs14}the weaker the senses.
+Dialogue: 0,0:18:08.36,0:18:10.60,Default,,0,0,0,,跟我們走一趟\N{\fn微軟雅黑\fs14}You're coming with us.
+Dialogue: 0,0:18:24.38,0:18:27.15,Default,,0,0,0,,本來還有半瓶\N{\fn微軟雅黑\fs14}That was half full.
+Dialogue: 0,0:18:41.16,0:18:45.87,Default,,0,0,0,,聽說你是個獵人  在失落之地穿行\N{\fn微軟雅黑\fs14}I hear you're a hunter, that you travel the Lost Lands.
+Dialogue: 0,0:18:45.93,0:18:47.23,Default,,0,0,0,,我想雇你做事\N{\fn微軟雅黑\fs14}I have use of such a man.
+Dialogue: 0,0:18:50.40,0:18:53.64,Default,,0,0,0,,我來這只玩牌  不談事\N{\fn微軟雅黑\fs14}Came here to play cards, not to talk.
+Dialogue: 0,0:19:37.62,0:19:38.45,Default,,0,0,0,,全押\N{\fn微軟雅黑\fs14}All in.
+Dialogue: 0,0:19:58.14,0:20:00.87,Default,,0,0,0,,現在可以談了嗎\N{\fn微軟雅黑\fs14}You ready to talk now?
+Dialogue: 0,0:20:04.84,0:20:06.91,Default,,0,0,0,,你叫什麼名字\N{\fn微軟雅黑\fs14}What's your name?
+Dialogue: 0,0:20:06.98,0:20:08.65,Default,,0,0,0,,波伊斯\N{\fn微軟雅黑\fs14}Boyce.
+Dialogue: 0,0:20:08.72,0:20:10.48,Default,,0,0,0,,我需要一名嚮導\N{\fn微軟雅黑\fs14}I'm looking for a guide.
+Dialogue: 0,0:20:10.55,0:20:12.65,Default,,0,0,0,,一個瞭解失落之地的人\N{\fn微軟雅黑\fs14}Someone who knows the Lost Lands.
+Dialogue: 0,0:20:12.72,0:20:15.96,Default,,0,0,0,,-我很貴  -我有錢\N{\fn微軟雅黑\fs14}- I'm expensive. - I have money.
+Dialogue: 0,0:20:16.02,0:20:18.49,Default,,0,0,0,,我知道  從我這贏的\N{\fn微軟雅黑\fs14}I know you do. Most of it's mine.
+Dialogue: 0,0:20:18.56,0:20:20.79,Default,,0,0,0,,你值這個價嗎\N{\fn微軟雅黑\fs14}Are you worth it?
+Dialogue: 0,0:20:20.86,0:20:23.86,Default,,0,0,0,,我要是不值你會跟我說話嗎\N{\fn微軟雅黑\fs14}Would you be here talking to me if I wasn't?
+Dialogue: 0,0:20:27.70,0:20:29.97,Default,,0,0,0,,城裡人最好別來失落之地\N{\fn微軟雅黑\fs14}Lost Lands' no place for city folk.
+Dialogue: 0,0:20:30.04,0:20:31.10,Default,,0,0,0,,為什麼\N{\fn微軟雅黑\fs14}Why is that?
+Dialogue: 0,0:20:31.17,0:20:32.44,Default,,0,0,0,,因為他們很弱\N{\fn微軟雅黑\fs14}Because they're weak.
+Dialogue: 0,0:20:32.51,0:20:36.44,Default,,0,0,0,,你覺得我很弱嗎\N{\fn微軟雅黑\fs14}Do I look weak to you?
+Dialogue: 0,0:20:36.51,0:20:39.11,Default,,0,0,0,,聽著\N{\fn微軟雅黑\fs14}Look.
+Dialogue: 0,0:20:39.18,0:20:42.22,Default,,0,0,0,,城牆之外  沒有城規\N{\fn微軟雅黑\fs14}Outside these walls, the laws of the city,
+Dialogue: 0,0:20:42.28,0:20:46.69,Default,,0,0,0,,沒有人類法律  甚至沒有自然法則  都沒有用\N{\fn微軟雅黑\fs14}of man, even of nature, they don't apply.
+Dialogue: 0,0:20:46.75,0:20:49.22,Default,,0,0,0,,所以不管你在城裡是誰\N{\fn微軟雅黑\fs14}So whoever you think you are here,
+Dialogue: 0,0:20:49.29,0:20:53.19,Default,,0,0,0,,在那裡你只會妨礙我\N{\fn微軟雅黑\fs14}out there you'd just be a hindrance.
+Dialogue: 0,0:20:53.26,0:20:56.36,Default,,0,0,0,,我們做個約定\N{\fn微軟雅黑\fs14}Let's make a deal.
+Dialogue: 0,0:20:56.43,0:20:58.23,Default,,0,0,0,,如果我真的拖你後腿\N{\fn微軟雅黑\fs14}If I ever slow you down,
+Dialogue: 0,0:20:58.30,0:21:01.87,Default,,0,0,0,,你可以直接拋下我\N{\fn微軟雅黑\fs14}you have my permission to leave me behind.
+Dialogue: 0,0:21:01.93,0:21:03.10,Default,,0,0,0,,我也會這樣對你\N{\fn微軟雅黑\fs14}And I'll do the same to you.
+Dialogue: 0,0:21:07.91,0:21:09.61,Default,,0,0,0,,你為什麼要離開城市\N{\fn微軟雅黑\fs14}Why do you want to leave the city?
+Dialogue: 0,0:21:12.31,0:21:15.38,Default,,0,0,0,,我在尋找一個能變成野獸的男人\N{\fn微軟雅黑\fs14}I'm looking for a man who can turn into a beast.
+Dialogue: 0,0:21:15.45,0:21:18.02,Default,,0,0,0,,男人都是野獸\N{\fn微軟雅黑\fs14}All men are beasts.
+Dialogue: 0,0:21:18.08,0:21:20.82,Default,,0,0,0,,但不都是怪獸\N{\fn微軟雅黑\fs14}But not all men are monsters.
+Dialogue: 0,0:21:25.32,0:21:27.99,Default,,0,0,0,,你在找一個變形者\N{\fn微軟雅黑\fs14}You're looking for a shapeshifter.
+Dialogue: 0,0:21:28.06,0:21:32.73,Default,,0,0,0,,是的  我必須在它的巢穴裡殺了它  拿走它的能力\N{\fn微軟雅黑\fs14}Yes. I need to kill it in its lair to take its power.
+Dialogue: 0,0:21:32.80,0:21:36.30,Default,,0,0,0,,我聽說過這樣一個人\N{\fn微軟雅黑\fs14}I've heard of such a man.
+Dialogue: 0,0:21:36.37,0:21:37.47,Default,,0,0,0,,你知道他些什麼\N{\fn微軟雅黑\fs14}What do you know of him?
+Dialogue: 0,0:21:39.81,0:21:43.78,Default,,0,0,0,,他們叫他大狼薩多爾\N{\fn微軟雅黑\fs14}They call him Sardor, the Great Wolf.
+Dialogue: 0,0:21:48.25,0:21:52.69,Default,,0,0,0,,這個薩多爾住哪裡\N{\fn微軟雅黑\fs14}Where does this man, this Sardor, live?
+Dialogue: 0,0:21:52.75,0:21:54.49,Default,,0,0,0,,一個叫骷髏河的地方\N{\fn微軟雅黑\fs14}In a place called Skull River.
+Dialogue: 0,0:21:54.55,0:21:57.06,Default,,0,0,0,,骷髏河\N{\fn微軟雅黑\fs14}Skull River.
+Dialogue: 0,0:22:02.49,0:22:05.60,Default,,0,0,0,,我就去那裡\N{\fn微軟雅黑\fs14}That's my destination.
+Dialogue: 0,0:22:05.67,0:22:06.77,Default,,0,0,0,,沒多少人去過那\N{\fn微軟雅黑\fs14}Not many have travelled there.
+Dialogue: 0,0:22:06.83,0:22:12.00,Default,,0,0,0,,-沒有人回來過  -給我帶路\N{\fn微軟雅黑\fs14}- No one's come back. - Guide me...
+Dialogue: 0,0:22:12.07,0:22:13.47,Default,,0,0,0,,我可以把這個給你\N{\fn微軟雅黑\fs14}and this can be yours.
+Dialogue: 0,0:22:19.78,0:22:24.82,Default,,0,0,0,,我聽說過這個  但從來沒見過\N{\fn微軟雅黑\fs14}I've heard of these. Never seen one.
+Dialogue: 0,0:22:27.25,0:22:28.59,Default,,0,0,0,,我要了\N{\fn微軟雅黑\fs14}I'll take it.
+Dialogue: 0,0:22:28.65,0:22:30.56,Default,,0,0,0,,還有你從我這偷走的金幣\N{\fn微軟雅黑\fs14}And the coin you stole from me.
+Dialogue: 0,0:22:30.62,0:22:36.23,Default,,0,0,0,,等我到了骷髏河  你自然會收到報酬\N{\fn微軟雅黑\fs14}You'll receive your payment once I get to Skull River.
+Dialogue: 0,0:22:41.93,0:22:43.80,Default,,0,0,0,,你的朋友嗎\N{\fn微軟雅黑\fs14}Friends of yours?
+Dialogue: 0,0:22:43.87,0:22:45.30,Default,,0,0,0,,我可沒什麼朋友\N{\fn微軟雅黑\fs14}Yeah, I don't have many friends.
+Dialogue: 0,0:22:45.37,0:22:46.21,Default,,0,0,0,,我也沒有\N{\fn微軟雅黑\fs14}Me neither.
+Dialogue: 0,0:22:48.04,0:22:49.11,Default,,0,0,0,,槍\N{\fn微軟雅黑\fs14}Gun!
+Dialogue: 0,0:23:19.21,0:23:20.24,Default,,0,0,0,,找到他們\N{\fn微軟雅黑\fs14}Find them.
+Dialogue: 0,0:23:25.08,0:23:27.25,Default,,0,0,0,,那個婊子殺了我的蛇\N{\fn微軟雅黑\fs14}That bitch killed my snake!
+Dialogue: 0,0:23:40.89,0:23:44.63,Default,,0,0,0,,沒有人可以反抗教會\N{\fn微軟雅黑\fs14}No one shall defy the Church.
+Dialogue: 0,0:23:44.70,0:23:47.63,Default,,0,0,0,,是教會用法律\N{\fn微軟雅黑\fs14}It is the Church that protects the peace
+Dialogue: 0,0:23:47.70,0:23:50.24,Default,,0,0,0,,維護了這座城的和平\N{\fn微軟雅黑\fs14}of this city with its laws.
+Dialogue: 0,0:23:50.30,0:23:55.04,Default,,0,0,0,,是教會讓無神者心生恐懼\N{\fn微軟雅黑\fs14}The Church that puts fear into the hearts of the godless.
+Dialogue: 0,0:23:55.11,0:24:00.81,Default,,0,0,0,,是教會阻擋了失落之地的邪惡\N{\fn微軟雅黑\fs14}The Church that keeps the evils of the Lost Lands at bay.
+Dialogue: 0,0:24:00.88,0:24:04.42,Default,,0,0,0,,我們是上帝的工具\N{\fn微軟雅黑\fs14}We are God's instruments,
+Dialogue: 0,0:24:04.48,0:24:08.52,Default,,0,0,0,,來到這世上保護你們免受邪惡\N{\fn微軟雅黑\fs14}placed on this earth to protect you from such evils.
+Dialogue: 0,0:24:08.59,0:24:12.83,Default,,0,0,0,,追捕罪人  異端  和女巫\N{\fn微軟雅黑\fs14}Hunt down the sinners, the heretics, and the witches.
+Dialogue: 0,0:24:12.89,0:24:17.93,Default,,0,0,0,,把他們帶來給我  你們就會得到獎賞\N{\fn微軟雅黑\fs14}Bring them to me and you shall be rewarded.
+Dialogue: 0,0:24:32.65,0:24:35.68,Default,,0,0,0,,姬·艾莉絲和一個男人\N{\fn微軟雅黑\fs14}Gray Alys, with a man.
+Dialogue: 0,0:24:35.75,0:24:38.05,Default,,0,0,0,,一起離開了城市\N{\fn微軟雅黑\fs14}They left the city together.
+Dialogue: 0,0:24:38.12,0:24:43.38,Default,,0,0,0,,{\an8}吊不死的女巫
+Dialogue: 0,0:24:38.12,0:24:41.22,Default,,0,0,0,,人們不再尊重我們\N{\fn微軟雅黑\fs14}The people lose respect for us.
+Dialogue: 0,0:24:41.29,0:24:44.92,Default,,0,0,0,,"吊不死的女巫"\N{\fn微軟雅黑\fs14}"The Witch That Will Not Hang."
+Dialogue: 0,0:24:44.16,0:24:45.30,Default,,0,0,0,,{\an8}工人們 起來
+Dialogue: 0,0:24:44.99,0:24:47.63,Default,,0,0,0,,姬·艾莉絲成了他們反抗的象徵\N{\fn微軟雅黑\fs14}Gray Alys has become a symbol of their defiance.
+Dialogue: 0,0:24:47.63,0:24:50.40,Default,,0,0,0,,{\an8}吊不死的女巫
+Dialogue: 0,0:24:47.69,0:24:52.33,Default,,0,0,0,,她饒你不死是為了羞辱我們\N{\fn微軟雅黑\fs14}She left you alive on that cross to humiliate us.
+Dialogue: 0,0:24:52.40,0:24:54.27,Default,,0,0,0,,這個女人必須死\N{\fn微軟雅黑\fs14}This woman needs to die.
+Dialogue: 0,0:24:56.24,0:24:58.64,Default,,0,0,0,,還有一件事\N{\fn微軟雅黑\fs14}There is another matter.
+Dialogue: 0,0:25:08.78,0:25:12.72,Default,,0,0,0,,-這怎麼回事  -告訴他\N{\fn微軟雅黑\fs14}- What is this? - Tell him.
+Dialogue: 0,0:25:17.86,0:25:23.40,Default,,0,0,0,,說\N{\fn微軟雅黑\fs14}Tell him.
+Dialogue: 0,0:25:23.46,0:25:27.37,Default,,0,0,0,,有一男一女見了她\N{\fn微軟雅黑\fs14}A man and a woman went to see her.
+Dialogue: 0,0:25:30.04,0:25:32.54,Default,,0,0,0,,我聽到了他們的名字\N{\fn微軟雅黑\fs14}I heard their names.
+Dialogue: 0,0:25:32.61,0:25:35.01,Default,,0,0,0,,是傑拉斯和王后\N{\fn微軟雅黑\fs14}It was Jerais and the queen.
+Dialogue: 0,0:25:38.01,0:25:41.55,Default,,0,0,0,,如果王后一直和異端分子交往\N{\fn微軟雅黑\fs14}If the queen has been consorting with a heretic,
+Dialogue: 0,0:25:41.61,0:25:44.18,Default,,0,0,0,,她就離垮臺不遠了\N{\fn微軟雅黑\fs14}it would be her downfall.
+Dialogue: 0,0:25:44.25,0:25:45.99,Default,,0,0,0,,一定要讓女巫被處決前\N{\fn微軟雅黑\fs14}Make sure the witch makes a full confession
+Dialogue: 0,0:25:46.05,0:25:47.65,Default,,0,0,0,,徹底招供\N{\fn微軟雅黑\fs14}before she hangs.
+Dialogue: 0,0:25:49.06,0:25:50.06,Default,,0,0,0,,不容有失\N{\fn微軟雅黑\fs14}No mistakes.
+Dialogue: 0,0:26:26.26,0:26:27.43,Default,,0,0,0,,不行\N{\fn微軟雅黑\fs14}No good.
+Dialogue: 0,0:26:34.40,0:26:39.34,Default,,0,0,0,,從沒見過一個大男人對條蛇這麼動真情呢\N{\fn微軟雅黑\fs14}Never saw a man get emotional about a snake before.
+Dialogue: 0,0:26:39.41,0:26:42.21,Default,,0,0,0,,我不是動真情  只是\N{\fn微軟雅黑\fs14}I'm not emotional, it just...
+Dialogue: 0,0:26:44.11,0:26:45.71,Default,,0,0,0,,那條蛇太好用了\N{\fn微軟雅黑\fs14}It was a damn good snake, that's all.
+Dialogue: 0,0:26:48.65,0:26:52.69,Default,,0,0,0,,給你  槍的銷釘彎了  現在應該好使用了\N{\fn微軟雅黑\fs14}Here. The pin was bent. It should work well now.
+Dialogue: 0,0:26:52.75,0:26:55.92,Default,,0,0,0,,只要你別再用它揍死人就行\N{\fn微軟雅黑\fs14}As long as you stop beating men to death with it.
+Dialogue: 0,0:27:31.66,0:27:34.86,Default,,0,0,0,,聰明人可能會在路上就把委託人殺掉\N{\fn微軟雅黑\fs14}A clever man might choose to kill his client on the road
+Dialogue: 0,0:27:34.93,0:27:37.86,Default,,0,0,0,,然後早點拿到傭金\N{\fn微軟雅黑\fs14}and take his payment early.
+Dialogue: 0,0:27:43.10,0:27:46.44,Default,,0,0,0,,可惜沒人說過我是什麼聰明人\N{\fn微軟雅黑\fs14}But no one ever accused me of being a clever man.
+Dialogue: 0,0:27:59.18,0:28:03.70,Default,,0,0,0,,{\an8}距離滿月還有5天
+Dialogue: 0,0:28:16.78,0:28:22.16,Default,,0,0,0,,{\an8}骷髏河  高橋  火地  影之毒源  灰色沙丘  大裂谷  貿易站  郊區  山下城
+Dialogue: 0,0:28:23.92,0:28:26.20,Default,,0,0,0,,{\an8}貿易站
+Dialogue: 0,0:28:42.23,0:28:44.43,Default,,0,0,0,,這是羅斯的地盤\N{\fn微軟雅黑\fs14}This is Ross's place.
+Dialogue: 0,0:28:44.50,0:28:47.57,Default,,0,0,0,,他和他妹妹瑪拉是我的老朋友了\N{\fn微軟雅黑\fs14}He and his sister Mara are old friends of mine.
+Dialogue: 0,0:28:47.63,0:28:50.30,Default,,0,0,0,,是嗎\N{\fn微軟雅黑\fs14}Are we?
+Dialogue: 0,0:28:50.37,0:28:54.11,Default,,0,0,0,,嘿  羅斯\N{\fn微軟雅黑\fs14}Hey, Ross.
+Dialogue: 0,0:28:54.17,0:28:55.84,Default,,0,0,0,,真高興又見到你\N{\fn微軟雅黑\fs14}It's good to see you.
+Dialogue: 0,0:28:58.18,0:29:00.48,Default,,0,0,0,,和瑪拉\N{\fn微軟雅黑\fs14}And Mara.
+Dialogue: 0,0:29:00.55,0:29:03.25,Default,,0,0,0,,-還是這麼熱情啊  -有一陣子沒見了\N{\fn微軟雅黑\fs14}- Welcoming as ever. - It's been a while.
+Dialogue: 0,0:29:03.32,0:29:06.19,Default,,0,0,0,,你看來胖了點嘛\N{\fn微軟雅黑\fs14}You look soft.
+Dialogue: 0,0:29:06.25,0:29:08.15,Default,,0,0,0,,看來這地方待你不薄\N{\fn微軟雅黑\fs14}The City has been treating you well.
+Dialogue: 0,0:29:08.22,0:29:10.26,Default,,0,0,0,,-我看  女人待你也不錯  -嗯\N{\fn微軟雅黑\fs14}- As have the women, I bet. - Mm.
+Dialogue: 0,0:29:16.70,0:29:19.50,Default,,0,0,0,,喔\N{\fn微軟雅黑\fs14}Ooh-ooh!
+Dialogue: 0,0:29:19.57,0:29:22.43,Default,,0,0,0,,呃  認識一下我的旅伴  姬·艾莉絲\N{\fn微軟雅黑\fs14}Uh, meet my traveling companion Gray Alys.
+Dialogue: 0,0:29:24.27,0:29:26.31,Default,,0,0,0,,歡迎\N{\fn微軟雅黑\fs14}Welcome.
+Dialogue: 0,0:29:26.37,0:29:28.27,Default,,0,0,0,,波伊斯的朋友就是我們的朋友\N{\fn微軟雅黑\fs14}A friend of Boyce is a friend of ours.
+Dialogue: 0,0:29:35.81,0:29:39.18,Default,,0,0,0,,我想從薩多爾那裡獲得的力量  在他巢穴裡是最強的\N{\fn微軟雅黑\fs14}The powers I want from Sardor will be strongest in his lair.
+Dialogue: 0,0:29:39.25,0:29:42.35,Default,,0,0,0,,我們到骷髏河還要多久\N{\fn微軟雅黑\fs14}How much longer till Skull River?
+Dialogue: 0,0:29:42.42,0:29:45.53,Default,,0,0,0,,-一周吧  或者更久  -我想在他變成狼時動手\N{\fn微軟雅黑\fs14}- A week, maybe longer. - I need him as a wolf,
+Dialogue: 0,0:29:45.59,0:29:48.53,Default,,0,0,0,,所以我們必須要在滿月之前到那裡\N{\fn微軟雅黑\fs14}so we need to get there before the full moon.
+Dialogue: 0,0:29:48.60,0:29:50.33,Default,,0,0,0,,那可沒那麼容易\N{\fn微軟雅黑\fs14}That won't be easy.
+Dialogue: 0,0:29:50.40,0:29:52.30,Default,,0,0,0,,容易的話我雇你幹嘛\N{\fn微軟雅黑\fs14}Well, if it was easy, I wouldn't need you.
+Dialogue: 0,0:29:56.74,0:30:01.24,Default,,0,0,0,,唯一的辦法就是沿著鐵軌走\N{\fn微軟雅黑\fs14}The only way would be following the train tracks.
+Dialogue: 0,0:30:01.31,0:30:04.08,Default,,0,0,0,,隧道穿山而過\N{\fn微軟雅黑\fs14}The tunnels cut through the mountains.
+Dialogue: 0,0:30:04.14,0:30:08.11,Default,,0,0,0,,這辦法很危險  但能省下一兩天\N{\fn微軟雅黑\fs14}It'd be dangerous, but we'd save maybe a day or two.
+Dialogue: 0,0:30:13.42,0:30:15.42,Default,,0,0,0,,我有東西給你\N{\fn微軟雅黑\fs14}I have something I wanted you...
+Dialogue: 0,0:30:18.09,0:30:19.89,Default,,0,0,0,,好\N{\fn微軟雅黑\fs14}Yeah.
+Dialogue: 0,0:30:19.96,0:30:20.93,Default,,0,0,0,,你再喝點\N{\fn微軟雅黑\fs14}You need another drink.
+Dialogue: 0,0:30:23.10,0:30:24.00,Default,,0,0,0,,一見到我就開心\N{\fn微軟雅黑\fs14}Always happy to see me.
+Dialogue: 0,0:30:26.10,0:30:27.67,Default,,0,0,0,,這外面挺無聊的\N{\fn微軟雅黑\fs14}It gets boring out here.
+Dialogue: 0,0:30:27.73,0:30:29.44,Default,,0,0,0,,她真走運\N{\fn微軟雅黑\fs14}Lucky her.
+Dialogue: 0,0:30:31.64,0:30:35.04,Default,,0,0,0,,所以  跟你一起的\N{\fn微軟雅黑\fs14}So, who is this woman
+Dialogue: 0,0:30:35.11,0:30:38.24,Default,,0,0,0,,那個女人是誰\N{\fn微軟雅黑\fs14}you're traveling with?
+Dialogue: 0,0:30:38.31,0:30:40.35,Default,,0,0,0,,跟你沒關係\N{\fn微軟雅黑\fs14}None of your concern.
+Dialogue: 0,0:30:43.12,0:30:46.75,Default,,0,0,0,,你喜歡她嗎\N{\fn微軟雅黑\fs14}Do you like her?
+Dialogue: 0,0:30:46.82,0:30:49.52,Default,,0,0,0,,不是對你那種喜歡\N{\fn微軟雅黑\fs14}Not the way I like you.
+Dialogue: 0,0:30:49.59,0:30:51.83,Default,,0,0,0,,啊\N{\fn微軟雅黑\fs14}Ah.
+Dialogue: 0,0:30:51.89,0:30:55.06,Default,,0,0,0,,下回再見你是不是還得等一年\N{\fn微軟雅黑\fs14}Will it be another year until I see you again?
+Dialogue: 0,0:30:55.13,0:30:59.47,Default,,0,0,0,,嗯  如果我還沒死的話\N{\fn微軟雅黑\fs14}Mm. If I'm still alive.
+Dialogue: 0,0:30:59.53,0:31:03.37,Default,,0,0,0,,一年  在失落之地可太久了\N{\fn微軟雅黑\fs14}One year... a long time in the Lost Lands.
+Dialogue: 0,0:31:07.37,0:31:10.24,Default,,0,0,0,,你匆匆來  又匆匆走\N{\fn微軟雅黑\fs14}You come, you go.
+Dialogue: 0,0:31:10.31,0:31:12.31,Default,,0,0,0,,我對你一無所知\N{\fn微軟雅黑\fs14}I don't know anything about you.
+Dialogue: 0,0:31:12.38,0:31:14.71,Default,,0,0,0,,你想知道什麼\N{\fn微軟雅黑\fs14}What do you want to know?
+Dialogue: 0,0:31:14.78,0:31:17.62,Default,,0,0,0,,你會孤獨嗎\N{\fn微軟雅黑\fs14}Do you ever get lonely?
+Dialogue: 0,0:31:17.68,0:31:18.72,Default,,0,0,0,,我會\N{\fn微軟雅黑\fs14}I do.
+Dialogue: 0,0:31:21.15,0:31:23.39,Default,,0,0,0,,我告訴你什麼是孤獨\N{\fn微軟雅黑\fs14}Let me tell you about loneliness.
+Dialogue: 0,0:31:23.46,0:31:27.33,Default,,0,0,0,,一個孩子\N{\fn微軟雅黑\fs14}Think of a child...
+Dialogue: 0,0:31:27.39,0:31:29.50,Default,,0,0,0,,孤身在黑暗中\N{\fn微軟雅黑\fs14}out there in the darkness.
+Dialogue: 0,0:31:29.56,0:31:31.16,Default,,0,0,0,,滿眼恐懼\N{\fn微軟雅黑\fs14}Afraid.
+Dialogue: 0,0:31:31.23,0:31:34.00,Default,,0,0,0,,他的父母就在他眼前\N{\fn微軟雅黑\fs14}His parents beaten to death
+Dialogue: 0,0:31:34.07,0:31:36.97,Default,,0,0,0,,被活活打死\N{\fn微軟雅黑\fs14}right in front of his eyes.
+Dialogue: 0,0:31:37.04,0:31:40.64,Default,,0,0,0,,他就在荒原遊蕩\N{\fn微軟雅黑\fs14}The boy travels the wasteland,
+Dialogue: 0,0:31:40.71,0:31:42.34,Default,,0,0,0,,白天躲避那些\N{\fn微軟雅黑\fs14}hiding from the outlaws
+Dialogue: 0,0:31:42.41,0:31:44.98,Default,,0,0,0,,亡命之徒和強盜\N{\fn微軟雅黑\fs14}and the raiders during the day,
+Dialogue: 0,0:31:45.04,0:31:48.18,Default,,0,0,0,,晚上躲避鬼怪\N{\fn微軟雅黑\fs14}and the creatures and the ghouls at night.
+Dialogue: 0,0:31:48.25,0:31:52.15,Default,,0,0,0,,直到某天  男孩變成了男人\N{\fn微軟雅黑\fs14}Till one day that boy becomes a man,
+Dialogue: 0,0:31:52.22,0:31:57.36,Default,,0,0,0,,他的心腸和思想都變得冷酷無比\N{\fn微軟雅黑\fs14}and his heart and his mind harden.
+Dialogue: 0,0:31:57.42,0:32:00.63,Default,,0,0,0,,但他仍然  無聲地  四處遊蕩\N{\fn微軟雅黑\fs14}But still he travels on, silently,
+Dialogue: 0,0:32:00.69,0:32:04.83,Default,,0,0,0,,不敢親近任何人  只因害怕失去他們\N{\fn微軟雅黑\fs14}scared to get close to anyone for fear of losing them.
+Dialogue: 0,0:32:04.90,0:32:09.77,Default,,0,0,0,,這才是孤獨\N{\fn微軟雅黑\fs14}That is loneliness.
+Dialogue: 0,0:32:12.00,0:32:14.94,Default,,0,0,0,,你就是這個小男孩\N{\fn微軟雅黑\fs14}And that little boy was you.
+Dialogue: 0,0:32:15.01,0:32:18.71,Default,,0,0,0,,不  不  當然不是\N{\fn微軟雅黑\fs14}No. Hell no. Of course not.
+Dialogue: 0,0:32:18.78,0:32:20.55,Default,,0,0,0,,我這輩子一次都沒哭過\N{\fn微軟雅黑\fs14}I've never cried a day in my life.
+Dialogue: 0,0:32:20.61,0:32:24.28,Default,,0,0,0,,你真是對我一無所知\N{\fn微軟雅黑\fs14}You really don t know anything about me.
+Dialogue: 0,0:32:31.64,0:32:35.32,Default,,0,0,0,,{\an8}距離滿月還有4天
+Dialogue: 0,0:32:41.63,0:32:44.60,Default,,0,0,0,,他們是我們能遇到的最後一批友好的人了\N{\fn微軟雅黑\fs14}Those are the last friendly faces we'll see.
+Dialogue: 0,0:32:44.67,0:32:46.84,Default,,0,0,0,,現在我們的前方只有失落之地了\N{\fn微軟雅黑\fs14}There's only the Lost Lands ahead of us now.
+Dialogue: 0,0:33:30.52,0:33:32.72,Default,,0,0,0,,你在這幹什麼\N{\fn微軟雅黑\fs14}What are you doing here?
+Dialogue: 0,0:33:32.79,0:33:35.56,Default,,0,0,0,,祈禱霸主早日歸來\N{\fn微軟雅黑\fs14}Offering a prayer for the Overlord's swift return.
+Dialogue: 0,0:33:35.62,0:33:39.63,Default,,0,0,0,,大主教  火車載著您的執法者們\N{\fn微軟雅黑\fs14}Patriarch, the train and a large contingent
+Dialogue: 0,0:33:39.69,0:33:41.46,Default,,0,0,0,,離開了城市\N{\fn微軟雅黑\fs14}of your enforcers have left the city.
+Dialogue: 0,0:33:41.53,0:33:43.80,Default,,0,0,0,,-誰批准的  -我\N{\fn微軟雅黑\fs14}- Who authorized this? - I did.
+Dialogue: 0,0:33:43.86,0:33:47.07,Default,,0,0,0,,-他們要去哪  -去抓捕女巫姬·艾莉絲\N{\fn微軟雅黑\fs14}- Where are they going? - To catch the witch Gray Alys.
+Dialogue: 0,0:33:47.13,0:33:50.47,Default,,0,0,0,,-她因信奉異教而被通緝  -這裡也需要你的人\N{\fn微軟雅黑\fs14}- She is wanted for heresy. - Your men are needed here.
+Dialogue: 0,0:33:50.54,0:33:52.24,Default,,0,0,0,,市井間的不安正在與日俱增\N{\fn微軟雅黑\fs14}There is growing unrest in the streets.
+Dialogue: 0,0:33:52.30,0:33:54.41,Default,,0,0,0,,你讓我們腹背受敵  大主教\N{\fn微軟雅黑\fs14}You leave us vulnerable, Patriarch.
+Dialogue: 0,0:33:54.47,0:33:57.48,Default,,0,0,0,,施展巫術可是死罪\N{\fn微軟雅黑\fs14}Witchcraft is punishable by death,
+Dialogue: 0,0:33:57.54,0:34:00.08,Default,,0,0,0,,女巫及其同夥都逃不了\N{\fn微軟雅黑\fs14}both for the witch and all who consort with her.
+Dialogue: 0,0:34:00.15,0:34:03.62,Default,,0,0,0,,我才不管她或是她做了什麼\N{\fn微軟雅黑\fs14}I do not care about her or what she does.
+Dialogue: 0,0:34:03.68,0:34:08.02,Default,,0,0,0,,-為什麼  -不要質疑我\N{\fn微軟雅黑\fs14}- And why is that? - Do not question me.
+Dialogue: 0,0:34:08.09,0:34:11.49,Default,,0,0,0,,-我代表霸主發言  -請原諒我\N{\fn微軟雅黑\fs14}- I speak for the Overlord. - Forgive me.
+Dialogue: 0,0:34:11.56,0:34:16.26,Default,,0,0,0,,但你說得對  現在確實危機四伏\N{\fn微軟雅黑\fs14}But you are right, these are dangerous times.
+Dialogue: 0,0:34:16.33,0:34:19.06,Default,,0,0,0,,霸主也正在失去掌控\N{\fn微軟雅黑\fs14}The Overlord's hand is losing its grip.
+Dialogue: 0,0:34:19.13,0:34:21.70,Default,,0,0,0,,到處都是叛亂之舉\N{\fn微軟雅黑\fs14}I see defiance everywhere.
+Dialogue: 0,0:34:21.77,0:34:25.14,Default,,0,0,0,,-而且謠言四起  -什麼謠言\N{\fn微軟雅黑\fs14}- And there are rumors. - What rumors?
+Dialogue: 0,0:34:25.20,0:34:28.07,Default,,0,0,0,,-我不敢說  -什麼謠言\N{\fn微軟雅黑\fs14}- I cannot. - What rumors?
+Dialogue: 0,0:34:28.14,0:34:32.14,Default,,0,0,0,,傳言您不忠\N{\fn微軟雅黑\fs14}Of your infidelity.
+Dialogue: 0,0:34:32.21,0:34:33.68,Default,,0,0,0,,一派胡言\N{\fn微軟雅黑\fs14}Nothing but lies.
+Dialogue: 0,0:34:33.75,0:34:37.05,Default,,0,0,0,,的確  都是些卑劣之口中的污言穢語\N{\fn微軟雅黑\fs14}Yes. Vile words spoken by the basest of tongues.
+Dialogue: 0,0:34:37.12,0:34:41.45,Default,,0,0,0,,但即使在賤民之間  謊言也強而有力\N{\fn微軟雅黑\fs14}But even amongst the scum and rabble, lies have power.
+Dialogue: 0,0:34:48.90,0:34:51.53,Default,,0,0,0,,王后是女巫的同謀\N{\fn微軟雅黑\fs14}The queen is guilty of consorting with a witch.
+Dialogue: 0,0:34:51.60,0:34:53.33,Default,,0,0,0,,我現在明白了\N{\fn微軟雅黑\fs14}I see it clearly now.
+Dialogue: 0,0:34:53.40,0:34:55.47,Default,,0,0,0,,把姬·艾莉絲帶來  讓她認罪\N{\fn微軟雅黑\fs14}Bring me Gray Alys and her confession.
+Dialogue: 0,0:34:55.54,0:34:57.30,Default,,0,0,0,,其他的我會處理\N{\fn微軟雅黑\fs14}I will do the rest.
+Dialogue: 0,0:34:57.37,0:34:59.07,Default,,0,0,0,,霸主瀕死\N{\fn微軟雅黑\fs14}The Overlord is dying,
+Dialogue: 0,0:34:59.14,0:35:01.84,Default,,0,0,0,,無子無嗣  王后軟弱無力\N{\fn微軟雅黑\fs14}and with no heir, the queen is weak.
+Dialogue: 0,0:35:01.91,0:35:04.64,Default,,0,0,0,,很快  城中將翻天覆地\N{\fn微軟雅黑\fs14}Soon, there will be a new day in the city.
+Dialogue: 0,0:35:04.71,0:35:09.62,Default,,0,0,0,,一位新的霸主將應運而生\N{\fn微軟雅黑\fs14}And with the new dawn, a new Overlord.
+Dialogue: 0,0:35:18.36,0:35:20.63,Default,,0,0,0,,求你了\N{\fn微軟雅黑\fs14}Aah! Please!
+Dialogue: 0,0:35:20.69,0:35:22.33,Default,,0,0,0,,-天哪  -不\N{\fn微軟雅黑\fs14}- God. - No!
+Dialogue: 0,0:35:22.39,0:35:25.73,Default,,0,0,0,,我已經把我知道的都告訴你了\N{\fn微軟雅黑\fs14}I told you all I know!
+Dialogue: 0,0:35:25.80,0:35:27.60,Default,,0,0,0,,我發誓\N{\fn微軟雅黑\fs14}Aah! I swear!
+Dialogue: 0,0:35:36.41,0:35:38.31,Default,,0,0,0,,不  不\N{\fn微軟雅黑\fs14}No! No!
+Dialogue: 0,0:35:38.38,0:35:40.31,Default,,0,0,0,,停下  不要\N{\fn微軟雅黑\fs14}No! Stop! No!
+Dialogue: 0,0:35:40.38,0:35:41.58,Default,,0,0,0,,骷髏河\N{\fn微軟雅黑\fs14}Skull River!
+Dialogue: 0,0:35:41.65,0:35:43.18,Default,,0,0,0,,他們要去那\N{\fn微軟雅黑\fs14}That's where they're going.
+Dialogue: 0,0:35:43.25,0:35:44.58,Default,,0,0,0,,骷髏河\N{\fn微軟雅黑\fs14}Skull River!
+Dialogue: 0,0:35:44.65,0:35:45.92,Default,,0,0,0,,他們要去那\N{\fn微軟雅黑\fs14}That's where they're going.
+Dialogue: 0,0:35:45.99,0:35:48.55,Default,,0,0,0,,燒吧\N{\fn微軟雅黑\fs14}Burn it.
+Dialogue: 0,0:36:07.86,0:36:11.86,Default,,0,0,0,,{\an8}距離滿月還有3天
+Dialogue: 0,0:36:22.69,0:36:26.19,Default,,0,0,0,,你有家庭嗎  波伊斯\N{\fn微軟雅黑\fs14}Do you have a family out here, Boyce?
+Dialogue: 0,0:36:26.26,0:36:27.79,Default,,0,0,0,,有家可回嗎\N{\fn微軟雅黑\fs14}Like a home?
+Dialogue: 0,0:36:27.86,0:36:29.29,Default,,0,0,0,,失落之地是孤寂之地\N{\fn微軟雅黑\fs14}The Lost Lands are a lonely place.
+Dialogue: 0,0:36:33.00,0:36:34.87,Default,,0,0,0,,這座城市同樣如此\N{\fn微軟雅黑\fs14}The city, too.
+Dialogue: 0,0:36:47.01,0:36:48.72,Default,,0,0,0,,他們稱之為大裂谷\N{\fn微軟雅黑\fs14}They call it the Rift.
+Dialogue: 0,0:36:55.35,0:36:57.06,Default,,0,0,0,,上面有個地方  我們可以安全地穿過去\N{\fn微軟雅黑\fs14}There's a place up ahead where we can make a safe crossing.
+Dialogue: 0,0:37:19.18,0:37:19.75,Default,,0,0,0,,西勒斯\N{\fn微軟雅黑\fs14}Sirus!
+Dialogue: 0,0:37:21.55,0:37:22.78,Default,,0,0,0,,你去哪裡  老傢伙\N{\fn微軟雅黑\fs14}Where you at, old man?
+Dialogue: 0,0:37:25.32,0:37:27.69,Default,,0,0,0,,這是我朋友的纜車\N{\fn微軟雅黑\fs14}That's my friend's cable car.
+Dialogue: 0,0:37:27.75,0:37:30.46,Default,,0,0,0,,出一個銀幣  老西勒斯就會把我們帶過去\N{\fn微軟雅黑\fs14}Old Sirus will take us over for a silver coin.
+Dialogue: 0,0:37:30.52,0:37:33.43,Default,,0,0,0,,在另一邊他還有身強力壯的馬匹\N{\fn微軟雅黑\fs14}He keeps fresh horses on the other side.
+Dialogue: 0,0:37:33.49,0:37:34.29,Default,,0,0,0,,你來付錢\N{\fn微軟雅黑\fs14}You're paying.
+Dialogue: 0,0:37:35.54,0:37:43.14,Default,,0,0,0,,{\an8}失物招領所
+Dialogue: 0,0:37:40.37,0:37:41.60,Default,,0,0,0,,西勒斯\N{\fn微軟雅黑\fs14}Sirus?
+Dialogue: 0,0:37:50.04,0:37:51.58,Default,,0,0,0,,西勒斯\N{\fn微軟雅黑\fs14}Sirus?
+Dialogue: 0,0:37:55.28,0:37:56.62,Default,,0,0,0,,在這等著\N{\fn微軟雅黑\fs14}Wait here.
+Dialogue: 0,0:39:07.12,0:39:07.99,Default,,0,0,0,,波伊斯\N{\fn微軟雅黑\fs14}Boyce?
+Dialogue: 0,0:39:10.62,0:39:11.62,Default,,0,0,0,,看來西勒斯來過客人了\N{\fn微軟雅黑\fs14}Seems Sirus had visitors.
+Dialogue: 0,0:39:14.66,0:39:17.03,Default,,0,0,0,,我們也有\N{\fn微軟雅黑\fs14}So do we.
+Dialogue: 0,0:39:29.31,0:39:32.41,Default,,0,0,0,,所以你就是波伊斯  那個獵人\N{\fn微軟雅黑\fs14}So you're Boyce. The Hunter.
+Dialogue: 0,0:39:32.48,0:39:35.65,Default,,0,0,0,,我們問了老傢伙你們是不是已經過去了\N{\fn微軟雅黑\fs14}We asked the old man if you had already crossed.
+Dialogue: 0,0:39:35.72,0:39:37.32,Default,,0,0,0,,他不怎麼配合\N{\fn微軟雅黑\fs14}He wasn't very helpful.
+Dialogue: 0,0:39:37.38,0:39:39.62,Default,,0,0,0,,我一直都很喜歡西勒斯\N{\fn微軟雅黑\fs14}I always liked Sirus.
+Dialogue: 0,0:39:39.69,0:39:42.49,Default,,0,0,0,,獵人  和你在一起的是誰\N{\fn微軟雅黑\fs14}Who is that with you, hunter?
+Dialogue: 0,0:39:46.96,0:39:49.60,Default,,0,0,0,,別耍花招  女巫\N{\fn微軟雅黑\fs14}None of your tricks, witch.
+Dialogue: 0,0:39:49.66,0:39:51.30,Default,,0,0,0,,你沒法直視我們的眼睛\N{\fn微軟雅黑\fs14}You can't look us in the eye.
+Dialogue: 0,0:39:51.36,0:39:53.67,Default,,0,0,0,,把她交出來  我們就饒你一條命\N{\fn微軟雅黑\fs14}Hand her over and we'll let you live.
+Dialogue: 0,0:39:53.73,0:39:55.43,Default,,0,0,0,,她被懸賞捉拿了\N{\fn微軟雅黑\fs14}There's a bounty on her head.
+Dialogue: 0,0:39:59.47,0:40:02.68,Default,,0,0,0,,不好意思  是她先雇傭我的\N{\fn微軟雅黑\fs14}Sorry, she hired me first.
+Dialogue: 0,0:40:02.74,0:40:08.28,Default,,0,0,0,,有原則的男人啊  真想不到\N{\fn微軟雅黑\fs14}A man of principle. Who'd have thought?
+Dialogue: 0,0:40:08.35,0:40:11.52,Default,,0,0,0,,把那個女巫交出來  不然你們兩個一起死\N{\fn微軟雅黑\fs14}Give us the witch or you both die.
+Dialogue: 0,0:40:21.26,0:40:23.10,Default,,0,0,0,,不\N{\fn微軟雅黑\fs14}No.
+Dialogue: 0,0:40:24.93,0:40:27.63,Default,,0,0,0,,沒有人可以忤逆教會的命令\N{\fn微軟雅黑\fs14}No one shall defy the Church.
+Dialogue: 0,0:40:27.70,0:40:32.04,Default,,0,0,0,,你說你是神的僕人  這算什麼神\N{\fn微軟雅黑\fs14}You say you're servants of God? What kind of God is this?
+Dialogue: 0,0:40:32.10,0:40:34.84,Default,,0,0,0,,復仇之神\N{\fn微軟雅黑\fs14}The vengeful kind.
+Dialogue: 0,0:40:34.91,0:40:38.54,Default,,0,0,0,,你來這裡找一頭野獸\N{\fn微軟雅黑\fs14}You came here looking for a monster.
+Dialogue: 0,0:40:38.61,0:40:39.95,Default,,0,0,0,,現在你找到了\N{\fn微軟雅黑\fs14}Now you found one.
+Dialogue: 0,0:40:47.95,0:40:49.96,Default,,0,0,0,,波伊斯\N{\fn微軟雅黑\fs14}Boyce...
+Dialogue: 0,0:40:53.26,0:40:55.33,Default,,0,0,0,,看吧\N{\fn微軟雅黑\fs14}Behold.
+Dialogue: 0,0:40:55.39,0:40:58.30,Default,,0,0,0,,死而復生\N{\fn微軟雅黑\fs14}A resurrection.
+Dialogue: 0,0:40:58.36,0:41:00.07,Default,,0,0,0,,不\N{\fn微軟雅黑\fs14}No!
+Dialogue: 0,0:41:46.65,0:41:48.38,Default,,0,0,0,,波伊斯  我們得走了\N{\fn微軟雅黑\fs14}Boyce, we have to go.
+Dialogue: 0,0:41:48.45,0:41:49.45,Default,,0,0,0,,快走吧\N{\fn微軟雅黑\fs14}Let's go!
+Dialogue: 0,0:42:05.33,0:42:08.80,Default,,0,0,0,,快\N{\fn微軟雅黑\fs14}Quick!
+Dialogue: 0,0:43:38.62,0:43:39.86,Default,,0,0,0,,把繩索切斷\N{\fn微軟雅黑\fs14}Cut the cable.
+Dialogue: 0,0:43:39.93,0:43:41.53,Default,,0,0,0,,把繩索切斷\N{\fn微軟雅黑\fs14}Cut the cable!
+Dialogue: 0,0:43:48.43,0:43:49.57,Default,,0,0,0,,快點\N{\fn微軟雅黑\fs14}Cut it!
+Dialogue: 0,0:44:19.93,0:44:21.54,Default,,0,0,0,,我們得爬上去\N{\fn微軟雅黑\fs14}We have to climb!
+Dialogue: 0,0:45:04.44,0:45:05.48,Default,,0,0,0,,快來\N{\fn微軟雅黑\fs14}Come on!
+Dialogue: 0,0:46:00.67,0:46:02.13,Default,,0,0,0,,她為什麼沒殺了我\N{\fn微軟雅黑\fs14}Why didn't she finish me?
+Dialogue: 0,0:46:05.04,0:46:08.34,Default,,0,0,0,,她是想\N{\fn微軟雅黑\fs14}She tried.
+Dialogue: 0,0:46:08.41,0:46:09.98,Default,,0,0,0,,果然是個女巫\N{\fn微軟雅黑\fs14}A witch, indeed.
+Dialogue: 0,0:46:11.61,0:46:14.51,Default,,0,0,0,,我們怎麼過去\N{\fn微軟雅黑\fs14}How do we cross?
+Dialogue: 0,0:46:14.58,0:46:15.72,Default,,0,0,0,,我們得繞路過去\N{\fn微軟雅黑\fs14}We have to go around.
+Dialogue: 0,0:46:15.78,0:46:17.42,Default,,0,0,0,,那我們快走\N{\fn微軟雅黑\fs14}Then let's move.
+Dialogue: 0,0:46:17.48,0:46:20.25,Default,,0,0,0,,他們會朝山的方向走\N{\fn微軟雅黑\fs14}They'll be headed for the mountains.
+Dialogue: 0,0:46:20.32,0:46:24.22,Default,,0,0,0,,不  他們走的是死路一條\N{\fn微軟雅黑\fs14}No. Hell is where they re headed.
+Dialogue: 0,0:46:40.81,0:46:42.58,Default,,0,0,0,,你沒事吧\N{\fn微軟雅黑\fs14}You all right?
+Dialogue: 0,0:46:42.64,0:46:44.11,Default,,0,0,0,,只是喝醉了\N{\fn微軟雅黑\fs14}Drunk.
+Dialogue: 0,0:46:48.75,0:46:50.18,Default,,0,0,0,,謝謝你\N{\fn微軟雅黑\fs14}Thank you.
+Dialogue: 0,0:46:52.95,0:46:54.82,Default,,0,0,0,,沒有你我就死在那了\N{\fn微軟雅黑\fs14}I could've died back there.
+Dialogue: 0,0:46:54.89,0:46:56.42,Default,,0,0,0,,不會的\N{\fn微軟雅黑\fs14}No, you couldn't.
+Dialogue: 0,0:46:58.26,0:47:00.16,Default,,0,0,0,,至少你得先把我帶到骷髏河\N{\fn微軟雅黑\fs14}Not until you get me to Skull River.
+Dialogue: 0,0:47:16.11,0:47:17.48,Default,,0,0,0,,好  我準備好了\N{\fn微軟雅黑\fs14}Okay. I'm ready.
+Dialogue: 0,0:47:40.93,0:47:42.40,Default,,0,0,0,,你能不能幫我縫合一下傷口\N{\fn微軟雅黑\fs14}Would you mind stitching me up?
+Dialogue: 0,0:47:43.67,0:47:44.74,Default,,0,0,0,,當然\N{\fn微軟雅黑\fs14}Of course.
+Dialogue: 0,0:47:48.71,0:47:51.01,Default,,0,0,0,,我可能會昏睡一會\N{\fn微軟雅黑\fs14}I think I'd like to pass out now.
+Dialogue: 0,0:48:17.70,0:48:18.54,Default,,0,0,0,,縫得不錯\N{\fn微軟雅黑\fs14}Nice work.
+Dialogue: 0,0:48:21.91,0:48:23.01,Default,,0,0,0,,還是很疼\N{\fn微軟雅黑\fs14}Still hurts.
+Dialogue: 0,0:48:25.85,0:48:26.55,Default,,0,0,0,,把這個喝了\N{\fn微軟雅黑\fs14}Drink this.
+Dialogue: 0,0:48:46.06,0:48:47.53,Default,,0,0,0,,你在想你的朋友們嗎\N{\fn微軟雅黑\fs14}You're thinking about your friends?
+Dialogue: 0,0:48:51.10,0:48:52.04,Default,,0,0,0,,很抱歉\N{\fn微軟雅黑\fs14}I'm sorry.
+Dialogue: 0,0:48:57.74,0:49:01.15,Default,,0,0,0,,羅斯是個好人\N{\fn微軟雅黑\fs14}Ross was a good man.
+Dialogue: 0,0:49:01.21,0:49:02.55,Default,,0,0,0,,我認識他很久了\N{\fn微軟雅黑\fs14}Known him a long time.
+Dialogue: 0,0:49:06.05,0:49:07.72,Default,,0,0,0,,瑪拉\N{\fn微軟雅黑\fs14}Mara.
+Dialogue: 0,0:49:13.43,0:49:15.33,Default,,0,0,0,,我會殺了那些人  讓他們付出代價\N{\fn微軟雅黑\fs14}I'm going to kill them for what they did.
+Dialogue: 0,0:49:29.41,0:49:31.68,Default,,0,0,0,,你為什麼來這裡  波伊斯\N{\fn微軟雅黑\fs14}Why do you travel out here, Boyce?
+Dialogue: 0,0:49:35.28,0:49:38.72,Default,,0,0,0,,我喜歡城市  城裡人\N{\fn微軟雅黑\fs14}I love the city, the people,
+Dialogue: 0,0:49:38.79,0:49:42.42,Default,,0,0,0,,酒很夠勁  食物也好吃\N{\fn微軟雅黑\fs14}a strong drink, good food.
+Dialogue: 0,0:49:42.49,0:49:44.76,Default,,0,0,0,,但是有時候我也會把這裡當成家\N{\fn微軟雅黑\fs14}Yet a part of me only feels at home here.
+Dialogue: 0,0:49:47.26,0:49:48.83,Default,,0,0,0,,聽風的聲音\N{\fn微軟雅黑\fs14}Listening to the wind.
+Dialogue: 0,0:49:50.46,0:49:52.60,Default,,0,0,0,,觀察暗影\N{\fn微軟雅黑\fs14}Watching the shadows.
+Dialogue: 0,0:49:57.10,0:49:59.10,Default,,0,0,0,,看見那個了嗎  姬·艾莉絲\N{\fn微軟雅黑\fs14}See there, Gray Alys?
+Dialogue: 0,0:50:02.04,0:50:05.61,Default,,0,0,0,,看見那束光是怎麼閃爍流轉的嗎\N{\fn微軟雅黑\fs14}See the way the lights shimmer and shift?
+Dialogue: 0,0:50:05.68,0:50:07.85,Default,,0,0,0,,盯著看一會  你就能看到一些形狀\N{\fn微軟雅黑\fs14}You can see shapes in them if you look long enough.
+Dialogue: 0,0:50:10.52,0:50:13.15,Default,,0,0,0,,是的\N{\fn微軟雅黑\fs14}Yes.
+Dialogue: 0,0:50:13.22,0:50:14.65,Default,,0,0,0,,很美\N{\fn微軟雅黑\fs14}It's beautiful.
+Dialogue: 0,0:50:16.26,0:50:19.12,Default,,0,0,0,,我知道你能看見\N{\fn微軟雅黑\fs14}I knew you'd see.
+Dialogue: 0,0:50:19.19,0:50:22.46,Default,,0,0,0,,我們很像  你和我\N{\fn微軟雅黑\fs14}We're alike, you and I.
+Dialogue: 0,0:50:22.53,0:50:25.06,Default,,0,0,0,,骨子裡的\N{\fn微軟雅黑\fs14}In our blood.
+Dialogue: 0,0:50:25.13,0:50:26.87,Default,,0,0,0,,我們是一類人\N{\fn微軟雅黑\fs14}We're two of a kind.
+Dialogue: 0,0:50:30.30,0:50:31.87,Default,,0,0,0,,我從你的眼睛裡就能看出來\N{\fn微軟雅黑\fs14}I could see it in your eyes.
+Dialogue: 0,0:50:49.80,0:50:52.04,Default,,0,0,0,,{\an8}距離滿月還有2天
+Dialogue: 0,0:50:52.29,0:50:53.99,Default,,0,0,0,,你懷孕了\N{\fn微軟雅黑\fs14}You are pregnant.
+Dialogue: 0,0:50:59.40,0:51:00.67,Default,,0,0,0,,你可以退下了\N{\fn微軟雅黑\fs14}You may go now.
+Dialogue: 0,0:51:07.87,0:51:11.08,Default,,0,0,0,,你聽見了嗎\N{\fn微軟雅黑\fs14}Did you hear?
+Dialogue: 0,0:51:11.14,0:51:13.95,Default,,0,0,0,,肯定沒聽見\N{\fn微軟雅黑\fs14}Of course, you didn't.
+Dialogue: 0,0:51:14.01,0:51:15.68,Default,,0,0,0,,我們有繼承人了\N{\fn微軟雅黑\fs14}We have an heir.
+Dialogue: 0,0:51:19.35,0:51:21.72,Default,,0,0,0,,雖然和你完全沒關係\N{\fn微軟雅黑\fs14}Not that you had anything to do with it.
+Dialogue: 0,0:51:21.79,0:51:24.96,Default,,0,0,0,,你想不想知道\N{\fn微軟雅黑\fs14}Do you want to know who the father
+Dialogue: 0,0:51:25.02,0:51:26.76,Default,,0,0,0,,誰是新霸主的父親\N{\fn微軟雅黑\fs14}of the new Overlord is?
+Dialogue: 0,0:51:29.09,0:51:31.53,Default,,0,0,0,,波伊斯\N{\fn微軟雅黑\fs14}Boyce.
+Dialogue: 0,0:51:31.60,0:51:33.00,Default,,0,0,0,,那是他的名字\N{\fn微軟雅黑\fs14}That's his name.
+Dialogue: 0,0:51:33.07,0:51:37.07,Default,,0,0,0,,一個普通的獵人\N{\fn微軟雅黑\fs14}A simple hunter.
+Dialogue: 0,0:51:37.14,0:51:39.20,Default,,0,0,0,,我曾經也是個普通女孩\N{\fn微軟雅黑\fs14}I once was a simple girl myself.
+Dialogue: 0,0:51:42.27,0:51:43.14,Default,,0,0,0,,看看現在的我\N{\fn微軟雅黑\fs14}Look at me now.
+Dialogue: 0,0:52:26.20,0:52:29.29,Default,,0,0,0,,{\an8}高橋  火地  影之毒源  灰色沙丘  大裂谷  貿易站
+Dialogue: 0,0:52:30.20,0:52:34.09,Default,,0,0,0,,{\an8}影之毒源
+Dialogue: 0,0:52:57.62,0:52:59.95,Default,,0,0,0,,火車\N{\fn微軟雅黑\fs14}The train.
+Dialogue: 0,0:53:00.02,0:53:01.55,Default,,0,0,0,,我們必須馬上穿過去  否則會被他們追上\N{\fn微軟雅黑\fs14}We'll need to take the pass or they'll run us down.
+Dialogue: 0,0:53:01.62,0:53:03.59,Default,,0,0,0,,這會很危險\N{\fn微軟雅黑\fs14}It'll be dangerous.
+Dialogue: 0,0:53:03.66,0:53:04.76,Default,,0,0,0,,入夜後惡魔會在這片山脈遊蕩\N{\fn微軟雅黑\fs14}When night falls, demons roam these mountains.
+Dialogue: 0,0:53:04.82,0:53:07.06,Default,,0,0,0,,我們別無選擇\N{\fn微軟雅黑\fs14}We have no choice.
+Dialogue: 0,0:53:29.72,0:53:32.15,Default,,0,0,0,,這就是我們的防守據點\N{\fn微軟雅黑\fs14}This is where we make a stand.
+Dialogue: 0,0:53:32.22,0:53:33.45,Default,,0,0,0,,幫我一下\N{\fn微軟雅黑\fs14}Help me with these.
+Dialogue: 0,0:53:33.52,0:53:36.42,Default,,0,0,0,,我們需要整夜生火\N{\fn微軟雅黑\fs14}We need a fire all night.
+Dialogue: 0,0:53:36.49,0:53:39.09,Default,,0,0,0,,火焰是它們唯一懼怕的東西\N{\fn微軟雅黑\fs14}Flame is the only thing they fear.
+Dialogue: 0,0:53:42.56,0:53:44.93,Default,,0,0,0,,時間不多了\N{\fn微軟雅黑\fs14}We don't have long.
+Dialogue: 0,0:54:23.07,0:54:24.60,Default,,0,0,0,,做好準備\N{\fn微軟雅黑\fs14}Prepare yourself.
+Dialogue: 0,0:55:09.41,0:55:10.45,Default,,0,0,0,,它們來了\N{\fn微軟雅黑\fs14}Here they come.
+Dialogue: 0,0:56:45.68,0:56:48.92,Default,,0,0,0,,姬·艾莉絲\N{\fn微軟雅黑\fs14}Gray Alys.
+Dialogue: 0,0:56:51.32,0:56:55.25,Default,,0,0,0,,你不該\N{\fn微軟雅黑\fs14}You should not have
+Dialogue: 0,0:56:55.32,0:56:57.86,Default,,0,0,0,,回到這裡\N{\fn微軟雅黑\fs14}come back here.
+Dialogue: 0,0:57:29.96,0:57:32.29,Default,,0,0,0,,別管他\N{\fn微軟雅黑\fs14}Leave him.
+Dialogue: 0,0:57:32.36,0:57:34.13,Default,,0,0,0,,波伊斯\N{\fn微軟雅黑\fs14}Boyce!
+Dialogue: 0,0:57:34.19,0:57:39.23,Default,,0,0,0,,幫我一把  波伊斯\N{\fn微軟雅黑\fs14}Help me! Boyce!
+Dialogue: 0,0:58:25.01,0:58:28.35,Default,,0,0,0,,我感受不到\N{\fn微軟雅黑\fs14}The fire from your hands,
+Dialogue: 0,0:58:28.41,0:58:30.95,Default,,0,0,0,,你手中的火焰\N{\fn微軟雅黑\fs14}I didn't feel it.
+Dialogue: 0,0:58:31.02,0:58:33.25,Default,,0,0,0,,根本沒有火焰\N{\fn微軟雅黑\fs14}There was no fire.
+Dialogue: 0,0:58:33.32,0:58:35.92,Default,,0,0,0,,它傷不了我們\N{\fn微軟雅黑\fs14}It couldn't have hurt us,
+Dialogue: 0,0:58:35.99,0:58:37.76,Default,,0,0,0,,但對它們來說幻象足夠真實\N{\fn微軟雅黑\fs14}but to them the illusion was real enough.
+Dialogue: 0,0:58:37.82,0:58:41.13,Default,,0,0,0,,那你為何還要承受痛苦\N{\fn微軟雅黑\fs14}Why do you suffer then?
+Dialogue: 0,0:58:41.19,0:58:45.13,Default,,0,0,0,,我駕馭的力量需要付出代價\N{\fn微軟雅黑\fs14}The powers I wield come at a price.
+Dialogue: 0,0:58:49.00,0:58:51.67,Default,,0,0,0,,我聽見那怪物和你說話\N{\fn微軟雅黑\fs14}I heard the monster talking to you.
+Dialogue: 0,0:58:54.37,0:58:56.91,Default,,0,0,0,,它認識我\N{\fn微軟雅黑\fs14}He knew me.
+Dialogue: 0,0:58:56.98,0:58:59.15,Default,,0,0,0,,在很久以前\N{\fn微軟雅黑\fs14}A long time ago.
+Dialogue: 0,0:58:59.21,0:59:01.52,Default,,0,0,0,,怎麼會\N{\fn微軟雅黑\fs14}How?
+Dialogue: 0,0:59:01.58,0:59:05.55,Default,,0,0,0,,這個地方藏著巨大寶藏\N{\fn微軟雅黑\fs14}There is a great treasure inside of this place.
+Dialogue: 0,0:59:05.62,0:59:08.75,Default,,0,0,0,,一種無上力量\N{\fn微軟雅黑\fs14}An immense power.
+Dialogue: 0,0:59:08.82,0:59:11.42,Default,,0,0,0,,有個男人來找我\N{\fn微軟雅黑\fs14}A man came to me.
+Dialogue: 0,0:59:11.49,0:59:16.56,Default,,0,0,0,,他貪婪  渴求力量\N{\fn微軟雅黑\fs14}He was greedy, power hungry.
+Dialogue: 0,0:59:16.63,0:59:18.96,Default,,0,0,0,,他們都這樣\N{\fn微軟雅黑\fs14}They all are.
+Dialogue: 0,0:59:19.03,0:59:24.80,Default,,0,0,0,,可是我無法拒絕  所以幫了他\N{\fn微軟雅黑\fs14}But I can refuse no one, so I helped him.
+Dialogue: 0,0:59:24.87,0:59:27.14,Default,,0,0,0,,但這地方是毒藥\N{\fn微軟雅黑\fs14}But this place is poison.
+Dialogue: 0,0:59:27.21,0:59:28.91,Default,,0,0,0,,把他和手下變成了你看到的怪物\N{\fn微軟雅黑\fs14}It turned him and his men into what you saw.
+Dialogue: 0,0:59:33.08,0:59:35.38,Default,,0,0,0,,他不該找我幫忙\N{\fn微軟雅黑\fs14}He shouldn't have asked me for help.
+Dialogue: 0,0:59:35.45,0:59:39.22,Default,,0,0,0,,沒人應該找我幫忙\N{\fn微軟雅黑\fs14}No one should ever ask me for help.
+Dialogue: 0,0:59:43.86,0:59:46.13,Default,,0,0,0,,我本應孤身一人\N{\fn微軟雅黑\fs14}I should just be left alone.
+Dialogue: 0,0:59:47.89,0:59:49.70,Default,,0,0,0,,你現在有我了\N{\fn微軟雅黑\fs14}You're with me now.
+Dialogue: 0,0:59:59.02,1:00:03.13,Default,,0,0,0,,{\an8}距離滿月還有1天
+Dialogue: 0,1:00:10.08,1:00:12.12,Default,,0,0,0,,西邊有蹤跡\N{\fn微軟雅黑\fs14}There are tracks to the west.
+Dialogue: 0,1:00:12.18,1:00:14.12,Default,,0,0,0,,他們就在附近\N{\fn微軟雅黑\fs14}They are close.
+Dialogue: 0,1:00:33.14,1:00:35.41,Default,,0,0,0,,舊霸主已死\N{\fn微軟雅黑\fs14}The Overlord is dead,
+Dialogue: 0,1:00:35.47,1:00:39.21,Default,,0,0,0,,但王后懷有身孕\N{\fn微軟雅黑\fs14}but the queen is with child!
+Dialogue: 0,1:00:39.28,1:00:42.28,Default,,0,0,0,,新任霸主萬歲\N{\fn微軟雅黑\fs14}All hail the new Overlord!
+Dialogue: 0,1:00:55.93,1:00:59.70,Default,,0,0,0,,舊霸主已死\N{\fn微軟雅黑\fs14}The Overlord is dead!
+Dialogue: 0,1:00:59.77,1:01:03.27,Default,,0,0,0,,新任霸主萬歲\N{\fn微軟雅黑\fs14}All hail the new Overlord.
+Dialogue: 0,1:01:03.34,1:01:05.44,Default,,0,0,0,,王后萬歲\N{\fn微軟雅黑\fs14}And all hail the queen.
+Dialogue: 0,1:01:05.51,1:01:08.31,Default,,0,0,0,,王后萬歲\N{\fn微軟雅黑\fs14}All hail the queen.
+Dialogue: 0,1:01:41.37,1:01:47.11,Default,,0,0,0,,霸主和王后萬歲\N{\fn微軟雅黑\fs14}Hail the Overlord and hail the queen.
+Dialogue: 0,1:01:47.18,1:01:48.81,Default,,0,0,0,,感謝您  大主教\N{\fn微軟雅黑\fs14}Thank you, Patriarch.
+Dialogue: 0,1:01:50.98,1:01:54.45,Default,,0,0,0,,如今我們都得償所願\N{\fn微軟雅黑\fs14}Now we both have what we wanted.
+Dialogue: 0,1:01:54.52,1:01:58.92,Default,,0,0,0,,你得到了繼承人  我則得到他的權力\N{\fn微軟雅黑\fs14}You have your heir and I have his power.
+Dialogue: 0,1:01:58.99,1:02:03.46,Default,,0,0,0,,十六年  直到他成年\N{\fn微軟雅黑\fs14}16 years until your child will be of age.
+Dialogue: 0,1:02:03.53,1:02:05.60,Default,,0,0,0,,這段時間由您掌權\N{\fn微軟雅黑\fs14}We couldn't ask for his authority
+Dialogue: 0,1:02:05.67,1:02:07.73,Default,,0,0,0,,是再合適不過了\N{\fn微軟雅黑\fs14}to be in better hands.
+Dialogue: 0,1:02:07.80,1:02:09.20,Default,,0,0,0,,您過獎了\N{\fn微軟雅黑\fs14}You are too kind.
+Dialogue: 0,1:02:09.27,1:02:11.47,Default,,0,0,0,,大主教  沒有您睿智的建議與堅定支持\N{\fn微軟雅黑\fs14}I wouldn't have anything, Patriarch,
+Dialogue: 0,1:02:11.54,1:02:17.21,Default,,0,0,0,,我不會有今日成就\N{\fn微軟雅黑\fs14}not without your wise advice and unfailing support.
+Dialogue: 0,1:02:17.28,1:02:21.11,Default,,0,0,0,,-願一直如此  -我是您忠誠的僕人\N{\fn微軟雅黑\fs14}- I hope that will never change. - Your loyal servant.
+Dialogue: 0,1:02:21.18,1:02:23.22,Default,,0,0,0,,永遠都是\N{\fn微軟雅黑\fs14}Always.
+Dialogue: 0,1:02:25.52,1:02:28.82,Default,,0,0,0,,那個骯髒的賤貨霸佔著王座\N{\fn微軟雅黑\fs14}The dirty whore sits upon the throne of the city.
+Dialogue: 0,1:02:28.89,1:02:31.76,Default,,0,0,0,,玷污了所有善良與純潔\N{\fn微軟雅黑\fs14}An affront to all that is good and pure.
+Dialogue: 0,1:02:31.82,1:02:33.63,Default,,0,0,0,,我們時間不多了\N{\fn微軟雅黑\fs14}Our time is running out.
+Dialogue: 0,1:02:33.69,1:02:36.63,Default,,0,0,0,,她的力量與日俱增\N{\fn微軟雅黑\fs14}Her power grows stronger by the day.
+Dialogue: 0,1:02:36.70,1:02:40.17,Default,,0,0,0,,把女巫找出來  逼她招供\N{\fn微軟雅黑\fs14}Find me the witch. Bring me her confession.
+Dialogue: 0,1:02:40.23,1:02:44.54,Default,,0,0,0,,之後讓女巫和賤貨一起吊死\N{\fn微軟雅黑\fs14}Then the witch and the whore will hang together.
+Dialogue: 0,1:02:44.60,1:02:46.47,Default,,0,0,0,,但要快  聽到了嗎  快\N{\fn微軟雅黑\fs14}But hurry. Do you hear me? Hurry!
+Dialogue: 0,1:02:48.48,1:02:53.26,Default,,0,0,0,,{\an8}骷髏河  高橋  火地  影之毒源  灰色沙丘  大裂谷  貿易站  郊區  山下城
+Dialogue: 0,1:02:53.93,1:03:02.76,Default,,0,0,0,,{\an8}火地
+Dialogue: 0,1:03:22.78,1:03:24.51,Default,,0,0,0,,明天我們就要到骷髏河了\N{\fn微軟雅黑\fs14}Tomorrow we'll reach Skull River.
+Dialogue: 0,1:03:29.32,1:03:32.42,Default,,0,0,0,,-他會在那嗎  -薩多爾嗎\N{\fn微軟雅黑\fs14}- Will he be there? - Sardor?
+Dialogue: 0,1:03:34.09,1:03:36.89,Default,,0,0,0,,不知道  希望不在\N{\fn微軟雅黑\fs14}I don't know. I hope not.
+Dialogue: 0,1:03:36.96,1:03:38.86,Default,,0,0,0,,我想獨自去面對他\N{\fn微軟雅黑\fs14}I need to face him alone.
+Dialogue: 0,1:03:38.92,1:03:40.43,Default,,0,0,0,,那你就會死\N{\fn微軟雅黑\fs14}Then you will die.
+Dialogue: 0,1:03:48.50,1:03:51.67,Default,,0,0,0,,人固有一死\N{\fn微軟雅黑\fs14}One always has to die.
+Dialogue: 0,1:03:53.34,1:03:54.54,Default,,0,0,0,,這簡直是瘋話\N{\fn微軟雅黑\fs14}This is madness.
+Dialogue: 0,1:03:59.91,1:04:01.01,Default,,0,0,0,,你可以走了\N{\fn微軟雅黑\fs14}You should leave.
+Dialogue: 0,1:04:01.08,1:04:05.28,Default,,0,0,0,,我雇你做的事  你做到了\N{\fn微軟雅黑\fs14}You did what I paid you to do.
+Dialogue: 0,1:04:05.35,1:04:06.72,Default,,0,0,0,,我當初就不應該接下你的提議\N{\fn微軟雅黑\fs14}I never should have accepted your offer.
+Dialogue: 0,1:04:06.79,1:04:09.12,Default,,0,0,0,,木已成舟\N{\fn微軟雅黑\fs14}But you did.
+Dialogue: 0,1:04:09.19,1:04:11.06,Default,,0,0,0,,走吧  波伊斯\N{\fn微軟雅黑\fs14}Leave, Boyce.
+Dialogue: 0,1:04:11.12,1:04:14.59,Default,,0,0,0,,-保住自己的性命  -不\N{\fn微軟雅黑\fs14}- Save yourself. - No.
+Dialogue: 0,1:04:14.66,1:04:17.70,Default,,0,0,0,,忘掉這一切  掉頭回去\N{\fn微軟雅黑\fs14}Forget this. Turn around.
+Dialogue: 0,1:04:17.76,1:04:20.70,Default,,0,0,0,,我不能這麼做\N{\fn微軟雅黑\fs14}I cannot.
+Dialogue: 0,1:04:20.77,1:04:23.07,Default,,0,0,0,,為什麼\N{\fn微軟雅黑\fs14}Why?
+Dialogue: 0,1:04:23.14,1:04:25.00,Default,,0,0,0,,我別無選擇\N{\fn微軟雅黑\fs14}Because I have no choice.
+Dialogue: 0,1:04:30.38,1:04:33.48,Default,,0,0,0,,不應該有人向我尋求幫助\N{\fn微軟雅黑\fs14}No one should ever ask me for help.
+Dialogue: 0,1:04:35.62,1:04:36.98,Default,,0,0,0,,姬\N{\fn微軟雅黑\fs14}Gray.
+Dialogue: 0,1:04:39.89,1:04:40.99,Default,,0,0,0,,回去吧\N{\fn微軟雅黑\fs14}Come back.
+Dialogue: 0,1:04:42.19,1:04:43.36,Default,,0,0,0,,和我一起\N{\fn微軟雅黑\fs14}With me.
+Dialogue: 0,1:04:45.16,1:04:48.33,Default,,0,0,0,,你還不明白嗎  波伊斯\N{\fn微軟雅黑\fs14}Don't you understand, Boyce?
+Dialogue: 0,1:04:48.39,1:04:51.90,Default,,0,0,0,,我被詛咒了\N{\fn微軟雅黑\fs14}I'm cursed.
+Dialogue: 0,1:04:51.96,1:04:54.00,Default,,0,0,0,,不應該有人接近我\N{\fn微軟雅黑\fs14}No one should ever get close to me.
+Dialogue: 0,1:04:56.03,1:04:58.00,Default,,0,0,0,,我不在乎\N{\fn微軟雅黑\fs14}I don't care.
+Dialogue: 0,1:05:15.95,1:05:19.59,Default,,0,0,0,,大主教召喚信徒前去\N{\fn微軟雅黑\fs14}The Patriarch calling to the faithful.
+Dialogue: 0,1:05:23.70,1:05:26.13,Default,,0,0,0,,我們所有的努力都是為了此刻\N{\fn微軟雅黑\fs14}This is the moment we've been working for.
+Dialogue: 0,1:05:26.20,1:05:29.13,Default,,0,0,0,,自從我們小時候仰望著這裡\N{\fn微軟雅黑\fs14}What we've been dreaming of since we were small,
+Dialogue: 0,1:05:29.20,1:05:31.37,Default,,0,0,0,,就一直夢想著的時刻\N{\fn微軟雅黑\fs14}looking up at this place.
+Dialogue: 0,1:05:31.44,1:05:34.37,Default,,0,0,0,,但他可以把這一切都奪走\N{\fn微軟雅黑\fs14}But he can take it all away from us.
+Dialogue: 0,1:05:34.44,1:05:37.04,Default,,0,0,0,,我的手下比他們人多\N{\fn微軟雅黑\fs14}My Overwatch outnumber his men now.
+Dialogue: 0,1:05:37.11,1:05:39.04,Default,,0,0,0,,但他依舊很危險\N{\fn微軟雅黑\fs14}But he is still dangerous.
+Dialogue: 0,1:05:41.92,1:05:43.72,Default,,0,0,0,,什麼事你都願意為我做嗎\N{\fn微軟雅黑\fs14}Would you do anything for me?
+Dialogue: 0,1:05:43.78,1:05:45.59,Default,,0,0,0,,僅憑吩咐\N{\fn微軟雅黑\fs14}Anything.
+Dialogue: 0,1:05:51.12,1:05:53.26,Default,,0,0,0,,你是我優秀的士兵\N{\fn微軟雅黑\fs14}You are my good soldier.
+Dialogue: 0,1:06:03.07,1:06:04.97,Default,,0,0,0,,你很安靜\N{\fn微軟雅黑\fs14}You're quiet.
+Dialogue: 0,1:06:05.04,1:06:06.91,Default,,0,0,0,,骷髏河就在前方\N{\fn微軟雅黑\fs14}Skull River lies up ahead.
+Dialogue: 0,1:06:19.12,1:06:21.42,Default,,0,0,0,,他們來了\N{\fn微軟雅黑\fs14}They're coming.
+Dialogue: 0,1:06:21.49,1:06:22.62,Default,,0,0,0,,我們可跑不過他們\N{\fn微軟雅黑\fs14}We can't outrun 'em.
+Dialogue: 0,1:06:24.92,1:06:26.83,Default,,0,0,0,,我們不需要跑得過\N{\fn微軟雅黑\fs14}We won't have to.
+Dialogue: 0,1:06:53.65,1:06:55.79,Default,,0,0,0,,-女巫  -好啊\N{\fn微軟雅黑\fs14}- The Witch! - Yes!
+Dialogue: 0,1:07:01.29,1:07:02.56,Default,,0,0,0,,屬於我們的時代到了\N{\fn微軟雅黑\fs14}Our time is upon us.
+Dialogue: 0,1:07:02.63,1:07:04.86,Default,,0,0,0,,快點  聽到了嗎\N{\fn微軟雅黑\fs14}Make haste! Do you hear me?
+Dialogue: 0,1:07:04.93,1:07:05.53,Default,,0,0,0,,快點\N{\fn微軟雅黑\fs14}Make haste!
+Dialogue: 0,1:07:08.07,1:07:11.84,Default,,0,0,0,,這次你可逃不掉了\N{\fn微軟雅黑\fs14}You will not escape us this time!
+Dialogue: 0,1:07:11.91,1:07:14.01,Default,,0,0,0,,我們將會迎來嶄新的一天\N{\fn微軟雅黑\fs14}There will be a new day in the city.
+Dialogue: 0,1:07:18.55,1:07:19.75,Default,,0,0,0,,懺悔吧  女巫\N{\fn微軟雅黑\fs14}Repent, Witch!
+Dialogue: 0,1:07:31.39,1:07:32.22,Default,,0,0,0,,不\N{\fn微軟雅黑\fs14}No!
+Dialogue: 0,1:08:25.75,1:08:27.31,Default,,0,0,0,,沒了女巫\N{\fn微軟雅黑\fs14}Without the witch,
+Dialogue: 0,1:08:27.38,1:08:29.15,Default,,0,0,0,,我們只能以武力篡位\N{\fn微軟雅黑\fs14}we must take the throne by force.
+Dialogue: 0,1:08:29.21,1:08:30.22,Default,,0,0,0,,召集我的守衛\N{\fn微軟雅黑\fs14}Assemble my guard.
+Dialogue: 0,1:08:35.62,1:08:36.46,Default,,0,0,0,,聽到了嗎\N{\fn微軟雅黑\fs14}Do you hear me?
+Dialogue: 0,1:08:40.93,1:08:44.16,Default,,0,0,0,,兄弟們  兄弟們  來吧\N{\fn微軟雅黑\fs14}Brothers? Brothers, to me!
+Dialogue: 0,1:08:44.23,1:08:47.20,Default,,0,0,0,,沒用的  你的兄弟們都死了\N{\fn微軟雅黑\fs14}There is no use. Your brothers are dead.
+Dialogue: 0,1:08:47.27,1:08:50.67,Default,,0,0,0,,你這個異教徒\N{\fn微軟雅黑\fs14}You heretic.
+Dialogue: 0,1:08:55.44,1:08:57.01,Default,,0,0,0,,以霸主和\N{\fn微軟雅黑\fs14}In the name of the Overlord,
+Dialogue: 0,1:08:57.08,1:08:58.68,Default,,0,0,0,,山下城保護者的名義\N{\fn微軟雅黑\fs14}protector of the City Under The Mountain,
+Dialogue: 0,1:08:58.75,1:09:03.92,Default,,0,0,0,,我在此宣判你  大主教  死刑\N{\fn微軟雅黑\fs14}I hereby sentence you, Patriarch, to death.
+Dialogue: 0,1:09:17.53,1:09:26.81,Default,,0,0,0,,{\an8}骷髏河
+Dialogue: 0,1:09:34.45,1:09:38.15,Default,,0,0,0,,天啊  他到底殺了多少人\N{\fn微軟雅黑\fs14}My God. How many has he killed?
+Dialogue: 0,1:09:38.22,1:09:40.02,Default,,0,0,0,,所有與他作對的人\N{\fn微軟雅黑\fs14}Everyone that's come against him.
+Dialogue: 0,1:10:12.45,1:10:15.25,Default,,0,0,0,,看看這些東西\N{\fn微軟雅黑\fs14}Look at all this.
+Dialogue: 0,1:10:15.32,1:10:17.49,Default,,0,0,0,,有人在這裡住\N{\fn微軟雅黑\fs14}Someone lives here.
+Dialogue: 0,1:10:17.56,1:10:18.89,Default,,0,0,0,,薩多爾\N{\fn微軟雅黑\fs14}Sardor.
+Dialogue: 0,1:10:25.50,1:10:27.07,Default,,0,0,0,,火已經幾個星期沒燃燒過了\N{\fn微軟雅黑\fs14}This fire hasn't been lit in weeks.
+Dialogue: 0,1:10:28.74,1:10:31.30,Default,,0,0,0,,今晚就是滿月\N{\fn微軟雅黑\fs14}Tonight will be the full moon.
+Dialogue: 0,1:10:31.37,1:10:33.34,Default,,0,0,0,,他那時會來\N{\fn微軟雅黑\fs14}He will come then.
+Dialogue: 0,1:10:40.28,1:10:42.98,Default,,0,0,0,,現在回頭還不晚\N{\fn微軟雅黑\fs14}It's not too late to turn back.
+Dialogue: 0,1:10:43.05,1:10:46.99,Default,,0,0,0,,我們現在就可以走\N{\fn微軟雅黑\fs14}We could leave now.
+Dialogue: 0,1:10:47.05,1:10:48.69,Default,,0,0,0,,你覺得他會放我們大搖大擺地走\N{\fn微軟雅黑\fs14}You think he would let us?
+Dialogue: 0,1:10:48.76,1:10:51.52,Default,,0,0,0,,你難道覺得他沒在盯著我們嗎\N{\fn微軟雅黑\fs14}Do you think he's not watching us?
+Dialogue: 0,1:10:55.70,1:10:58.53,Default,,0,0,0,,你走吧  我可以拖住他\N{\fn微軟雅黑\fs14}You could go. I could hold him back.
+Dialogue: 0,1:11:05.54,1:11:08.01,Default,,0,0,0,,不要\N{\fn微軟雅黑\fs14}No.
+Dialogue: 0,1:11:08.07,1:11:09.21,Default,,0,0,0,,已經太晚了\N{\fn微軟雅黑\fs14}It is too late for that.
+Dialogue: 0,1:11:17.35,1:11:18.89,Default,,0,0,0,,今夜就是月圓之夜了\N{\fn微軟雅黑\fs14}It will be a full moon tonight.
+Dialogue: 0,1:11:23.32,1:11:24.89,Default,,0,0,0,,你還在想那個女巫的事\N{\fn微軟雅黑\fs14}You're still thinking about that witch.
+Dialogue: 0,1:11:27.36,1:11:28.83,Default,,0,0,0,,她答應我了\N{\fn微軟雅黑\fs14}She promised me.
+Dialogue: 0,1:11:34.10,1:11:35.77,Default,,0,0,0,,你並不需要她所許諾之物\N{\fn微軟雅黑\fs14}You don't need what she promised.
+Dialogue: 0,1:11:39.37,1:11:41.44,Default,,0,0,0,,你已經擁有了一切\N{\fn微軟雅黑\fs14}You have everything now.
+Dialogue: 0,1:11:45.58,1:11:46.91,Default,,0,0,0,,並非一切\N{\fn微軟雅黑\fs14}Not everything.
+Dialogue: 0,1:12:12.34,1:12:13.84,Default,,0,0,0,,銀嗎\N{\fn微軟雅黑\fs14}Silver?
+Dialogue: 0,1:12:15.61,1:12:16.64,Default,,0,0,0,,銀\N{\fn微軟雅黑\fs14}Silver.
+Dialogue: 0,1:12:19.01,1:12:21.31,Default,,0,0,0,,那你的武器毫無用處\N{\fn微軟雅黑\fs14}Your weapons will be useless.
+Dialogue: 0,1:12:21.38,1:12:24.55,Default,,0,0,0,,他們用銀對付過他\N{\fn微軟雅黑\fs14}They've come against him with silver.
+Dialogue: 0,1:12:24.62,1:12:27.35,Default,,0,0,0,,銀劍  銀刀\N{\fn微軟雅黑\fs14}Silver swords, silver knives,
+Dialogue: 0,1:12:27.42,1:12:29.45,Default,,0,0,0,,鍍銀的箭頭\N{\fn微軟雅黑\fs14}arrows tipped with silver.
+Dialogue: 0,1:12:29.52,1:12:31.79,Default,,0,0,0,,如今他們都化為塵土了\N{\fn微軟雅黑\fs14}They're all dust now,
+Dialogue: 0,1:12:31.86,1:12:34.86,Default,,0,0,0,,那些驍勇善戰  銀器武裝的鬥士\N{\fn微軟雅黑\fs14}all those brave, silvered warriors.
+Dialogue: 0,1:12:44.44,1:12:47.94,Default,,0,0,0,,別去  求你了\N{\fn微軟雅黑\fs14}Please, don't do this.
+Dialogue: 0,1:12:48.01,1:12:49.21,Default,,0,0,0,,我們沒得選\N{\fn微軟雅黑\fs14}We have no choice.
+Dialogue: 0,1:13:22.84,1:13:27.15,Default,,0,0,0,,我覺得他離得很近了  波伊斯\N{\fn微軟雅黑\fs14}I think he is very close now, Boyce.
+Dialogue: 0,1:13:27.21,1:13:28.85,Default,,0,0,0,,你覺得呢\N{\fn微軟雅黑\fs14}What say you?
+Dialogue: 0,1:13:28.92,1:13:31.42,Default,,0,0,0,,他還沒來  我們還有時間  姬\N{\fn微軟雅黑\fs14}Not yet. There's still time, Gray.
+Dialogue: 0,1:13:31.48,1:13:34.22,Default,,0,0,0,,我覺得你撒謊了  獵人\N{\fn微軟雅黑\fs14}I think you lie, hunter!
+Dialogue: 0,1:13:34.29,1:13:37.29,Default,,0,0,0,,根本沒什麼薩多爾\N{\fn微軟雅黑\fs14}There was never any Sardor.
+Dialogue: 0,1:13:37.36,1:13:41.16,Default,,0,0,0,,只有你\N{\fn微軟雅黑\fs14}Only you.
+Dialogue: 0,1:13:41.23,1:13:45.30,Default,,0,0,0,,你都知道了  你知道了我的身份嗎\N{\fn微軟雅黑\fs14}You knew? You knew what I was?
+Dialogue: 0,1:13:48.37,1:13:51.80,Default,,0,0,0,,我在乎過你\N{\fn微軟雅黑\fs14}I cared for you.
+Dialogue: 0,1:13:51.87,1:13:55.57,Default,,0,0,0,,但一直以來  你卻都在騙我\N{\fn微軟雅黑\fs14}All this time, you tried to deceive me.
+Dialogue: 0,1:13:55.64,1:13:58.18,Default,,0,0,0,,你覺得你把我帶過來\N{\fn微軟雅黑\fs14}You thought you could bring me here
+Dialogue: 0,1:13:58.24,1:13:59.91,Default,,0,0,0,,就能像其他人一樣殺了我\N{\fn微軟雅黑\fs14}and kill me like the rest!
+Dialogue: 0,1:14:03.55,1:14:06.65,Default,,0,0,0,,你不該\N{\fn微軟雅黑\fs14}You shouldn't have ever
+Dialogue: 0,1:14:06.72,1:14:09.89,Default,,0,0,0,,出現在這裡的  姬·艾莉絲\N{\fn微軟雅黑\fs14}come here... here, Gray Alys.
+Dialogue: 0,1:14:09.96,1:14:13.73,Default,,0,0,0,,我警告過你\N{\fn微軟雅黑\fs14}I tried to warn you.
+Dialogue: 0,1:17:56.25,1:17:57.78,Default,,0,0,0,,冷靜\N{\fn微軟雅黑\fs14}Calm.
+Dialogue: 0,1:17:59.95,1:18:03.02,Default,,0,0,0,,月亮被遮蔽期間  你需要休息\N{\fn微軟雅黑\fs14}You need to rest while the moon is still covered.
+Dialogue: 0,1:18:05.49,1:18:07.33,Default,,0,0,0,,我很羡慕你的天賦\N{\fn微軟雅黑\fs14}You have a gift I'd kill for.
+Dialogue: 0,1:18:09.66,1:18:14.70,Default,,0,0,0,,你可以隨時變身  不管是不是在滿月之夜\N{\fn微軟雅黑\fs14}You change at will, full moon or not.
+Dialogue: 0,1:18:14.77,1:18:19.61,Default,,0,0,0,,不  那只是一個幻覺\N{\fn微軟雅黑\fs14}No. It was just an illusion.
+Dialogue: 0,1:18:19.67,1:18:23.34,Default,,0,0,0,,為了分散你的注意力  讓你暴露弱點\N{\fn微軟雅黑\fs14}To distract you, to leave you vulnerable.
+Dialogue: 0,1:18:26.98,1:18:30.15,Default,,0,0,0,,我們是同類人 姬\N{\fn微軟雅黑\fs14}We're the same, Gray.
+Dialogue: 0,1:18:30.22,1:18:33.75,Default,,0,0,0,,-你沒發現嗎  -是的\N{\fn微軟雅黑\fs14}- Don't you see? - Yes.
+Dialogue: 0,1:18:33.82,1:18:35.19,Default,,0,0,0,,我們是同類人\N{\fn微軟雅黑\fs14}Two of a kind.
+Dialogue: 0,1:18:45.53,1:18:46.57,Default,,0,0,0,,你還很虛弱\N{\fn微軟雅黑\fs14}You are still weak.
+Dialogue: 0,1:18:49.97,1:18:51.07,Default,,0,0,0,,睡吧\N{\fn微軟雅黑\fs14}Sleep.
+Dialogue: 0,1:19:24.34,1:19:25.64,Default,,0,0,0,,放開我\N{\fn微軟雅黑\fs14}Untie me.
+Dialogue: 0,1:19:29.04,1:19:30.81,Default,,0,0,0,,我不明白\N{\fn微軟雅黑\fs14}I don't understand.
+Dialogue: 0,1:19:30.88,1:19:33.75,Default,,0,0,0,,為什麼  你明明救了我\N{\fn微軟雅黑\fs14}Why? You saved me.
+Dialogue: 0,1:19:33.81,1:19:36.25,Default,,0,0,0,,你不會想知道答案的  波伊斯\N{\fn微軟雅黑\fs14}You would not like my answer, Boyce.
+Dialogue: 0,1:19:38.85,1:19:41.49,Default,,0,0,0,,是月亮\N{\fn微軟雅黑\fs14}It's the moon.
+Dialogue: 0,1:19:41.55,1:19:44.19,Default,,0,0,0,,你害怕我再次變身  會殺了你嗎\N{\fn微軟雅黑\fs14}Are you afraid of what'll happen if I change again?
+Dialogue: 0,1:19:44.26,1:19:45.76,Default,,0,0,0,,我不會傷害你的  姬·艾莉絲\N{\fn微軟雅黑\fs14}I won't harm you, Gray Alys.
+Dialogue: 0,1:19:45.82,1:19:49.53,Default,,0,0,0,,-現在不會  -我不怕你  波伊斯\N{\fn微軟雅黑\fs14}- Not now. - I do not fear you, Boyce.
+Dialogue: 0,1:19:49.60,1:19:52.23,Default,,0,0,0,,我太瞭解你了\N{\fn微軟雅黑\fs14}I know you too well.
+Dialogue: 0,1:19:52.30,1:19:55.67,Default,,0,0,0,,這一路走來  我已經瞭解你所有的弱點\N{\fn微軟雅黑\fs14}I learned all your weaknesses along the way.
+Dialogue: 0,1:19:55.74,1:19:56.30,Default,,0,0,0,,甚至還助長了一些新的\N{\fn微軟雅黑\fs14}I even added to them.
+Dialogue: 0,1:19:58.97,1:20:00.91,Default,,0,0,0,,你在說什麼\N{\fn微軟雅黑\fs14}What are you talking about?
+Dialogue: 0,1:20:00.97,1:20:04.54,Default,,0,0,0,,對不起\N{\fn微軟雅黑\fs14}I'm so sorry.
+Dialogue: 0,1:20:04.61,1:20:06.85,Default,,0,0,0,,遇見我時  你的命運就已註定\N{\fn微軟雅黑\fs14}Your fate was sealed when you met me.
+Dialogue: 0,1:20:33.91,1:20:35.41,Default,,0,0,0,,你是對的  波伊斯\N{\fn微軟雅黑\fs14}You were right, Boyce.
+Dialogue: 0,1:20:35.47,1:20:37.24,Default,,0,0,0,,銀制武器的確不夠\N{\fn微軟雅黑\fs14}Silver weapons were not enough.
+Dialogue: 0,1:20:37.31,1:20:40.31,Default,,0,0,0,,你給我下毒了嗎\N{\fn微軟雅黑\fs14}You poisoned me?
+Dialogue: 0,1:20:40.38,1:20:42.88,Default,,0,0,0,,我在你的血液裡注入了銀\N{\fn微軟雅黑\fs14}I had to put silver in your blood.
+Dialogue: 0,1:20:42.95,1:20:46.52,Default,,0,0,0,,那你之前為什麼還要救我\N{\fn微軟雅黑\fs14}Why didn't you just let me die?
+Dialogue: 0,1:20:52.36,1:20:55.13,Default,,0,0,0,,因為死了的東西就沒用了\N{\fn微軟雅黑\fs14}Because dead things have no power.
+Dialogue: 0,1:20:55.19,1:20:56.70,Default,,0,0,0,,等等  等等\N{\fn微軟雅黑\fs14}Wait, wait, wait! Wait, wait.
+Dialogue: 0,1:20:58.83,1:21:01.50,Default,,0,0,0,,你必須滿足我的心願\N{\fn微軟雅黑\fs14}You... you have to grant my wish.
+Dialogue: 0,1:21:01.57,1:21:04.20,Default,,0,0,0,,你不能拒絕任何人  你自己說過的\N{\fn微軟雅黑\fs14}You can refuse no one. Those are your words.
+Dialogue: 0,1:21:08.37,1:21:12.31,Default,,0,0,0,,-你的願望是什麼  波伊斯  -就是你\N{\fn微軟雅黑\fs14}- What do you wish for, Boyce? - I want you.
+Dialogue: 0,1:21:12.38,1:21:15.58,Default,,0,0,0,,我想我們在一起\N{\fn微軟雅黑\fs14}I want us to be together.
+Dialogue: 0,1:21:15.65,1:21:18.32,Default,,0,0,0,,我想我們一起狩獵  一起戰鬥\N{\fn微軟雅黑\fs14}I want us to hunt together, to fight together.
+Dialogue: 0,1:21:18.38,1:21:21.12,Default,,0,0,0,,為了不再孤獨嗎\N{\fn微軟雅黑\fs14}To find an end to all this loneliness?
+Dialogue: 0,1:21:21.19,1:21:24.46,Default,,0,0,0,,是的  你也是這樣想的  我知道\N{\fn微軟雅黑\fs14}Yes, you want it, too, I know it.
+Dialogue: 0,1:21:24.52,1:21:29.06,Default,,0,0,0,,我不能拒絕任何人\N{\fn微軟雅黑\fs14}I refuse no one.
+Dialogue: 0,1:21:29.13,1:21:30.80,Default,,0,0,0,,但你得付出代價\N{\fn微軟雅黑\fs14}But there is a price to be paid.
+Dialogue: 0,1:21:30.86,1:21:32.36,Default,,0,0,0,,隨便說  我願付出任何代價\N{\fn微軟雅黑\fs14}Name it. Anything.
+Dialogue: 0,1:21:35.84,1:21:37.27,Default,,0,0,0,,非常好\N{\fn微軟雅黑\fs14}Very well.
+Dialogue: 0,1:23:58.71,1:24:03.02,Default,,0,0,0,,-女巫回來了  -是她  是她\N{\fn微軟雅黑\fs14}- The witch is back! - It's her! It's her!
+Dialogue: 0,1:24:03.08,1:24:06.25,Default,,0,0,0,,-她回來了  -她回來了  是女巫\N{\fn微軟雅黑\fs14}- She's back! - She's back! The witch!
+Dialogue: 0,1:24:06.32,1:24:08.25,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:24:08.32,1:24:10.26,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:24:10.32,1:24:12.49,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:24:12.56,1:24:14.96,Default,,0,0,0,,滾回去幹活\N{\fn微軟雅黑\fs14}Get back to work!
+Dialogue: 0,1:24:18.57,1:24:20.50,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:24:20.57,1:24:22.27,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:24:22.33,1:24:24.87,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:24:24.94,1:24:26.24,Default,,0,0,0,,-吊不死的女巫  -打倒霸主\N{\fn微軟雅黑\fs14}- The Witch That Will Not Hang! - Down with the Overlord!
+Dialogue: 0,1:24:26.31,1:24:28.81,Default,,0,0,0,,推翻教堂\N{\fn微軟雅黑\fs14}Down with the Church!
+Dialogue: 0,1:24:28.88,1:24:30.08,Default,,0,0,0,,打倒霸主\N{\fn微軟雅黑\fs14}Down with the Overlord!
+Dialogue: 0,1:24:30.14,1:24:32.31,Default,,0,0,0,,推翻教堂\N{\fn微軟雅黑\fs14}Down with the Church!
+Dialogue: 0,1:24:32.38,1:24:35.52,Default,,0,0,0,,打倒霸主  推翻教堂\N{\fn微軟雅黑\fs14}Down with the Overlord! Down with the Church!
+Dialogue: 0,1:24:35.58,1:24:37.15,Default,,0,0,0,,打倒霸主\N{\fn微軟雅黑\fs14}Down with the Overlord!
+Dialogue: 0,1:24:37.22,1:24:38.52,Default,,0,0,0,,推翻教堂\N{\fn微軟雅黑\fs14}Down with the Church!
+Dialogue: 0,1:25:09.95,1:25:11.48,Default,,0,0,0,,拿著\N{\fn微軟雅黑\fs14}Take this.
+Dialogue: 0,1:25:11.55,1:25:13.55,Default,,0,0,0,,讓皇后割傷自己\N{\fn微軟雅黑\fs14}Tell the queen to cut herself,
+Dialogue: 0,1:25:13.62,1:25:17.09,Default,,0,0,0,,用她的鮮血沾染狼皮  然後披上它\N{\fn微軟雅黑\fs14}to drip her own blood onto the skin and wear it.
+Dialogue: 0,1:25:17.19,1:25:19.09,Default,,0,0,0,,今晚是月相週期最後一天\N{\fn微軟雅黑\fs14}Tonight will be the end of the lunar cycle.
+Dialogue: 0,1:25:19.16,1:25:22.19,Default,,0,0,0,,她必須在今晚結束前動手\N{\fn微軟雅黑\fs14}She must do it before the end of night.
+Dialogue: 0,1:25:22.26,1:25:24.06,Default,,0,0,0,,這樣能力就歸她所有了\N{\fn微軟雅黑\fs14}Then the power will be hers.
+Dialogue: 0,1:25:24.13,1:25:26.53,Default,,0,0,0,,狼皮\N{\fn微軟雅黑\fs14}Wolf skin?
+Dialogue: 0,1:25:26.60,1:25:31.84,Default,,0,0,0,,這是死於自己巢穴的變形者之皮\N{\fn微軟雅黑\fs14}The skin of a shapeshifter killed in its lair.
+Dialogue: 0,1:25:31.90,1:25:34.87,Default,,0,0,0,,姬·艾莉絲  你完成了她給你的任務\N{\fn微軟雅黑\fs14}Well, Gray Alys, you have done what she asked of you,
+Dialogue: 0,1:25:34.94,1:25:36.34,Default,,0,0,0,,但你讓我失望了\N{\fn微軟雅黑\fs14}but you have failed me.
+Dialogue: 0,1:25:36.41,1:25:38.01,Default,,0,0,0,,我沒讓你成功\N{\fn微軟雅黑\fs14}I did not pay you for success.
+Dialogue: 0,1:25:38.08,1:25:40.35,Default,,0,0,0,,現在把錶還給我\N{\fn微軟雅黑\fs14}Now, give me my timepiece back.
+Dialogue: 0,1:25:40.41,1:25:43.22,Default,,0,0,0,,不  傑拉斯  這是我應得的\N{\fn微軟雅黑\fs14}No, Jerais. I've earned it.
+Dialogue: 0,1:25:43.28,1:25:45.35,Default,,0,0,0,,但這不是你承諾的結果\N{\fn微軟雅黑\fs14}But I did not get what I asked for.
+Dialogue: 0,1:25:45.42,1:25:47.02,Default,,0,0,0,,但這是你想要的\N{\fn微軟雅黑\fs14}But you got what you wanted.
+Dialogue: 0,1:25:47.09,1:25:51.56,Default,,0,0,0,,-我得到了什麼  -皇后本人\N{\fn微軟雅黑\fs14}- And what is that? - The queen herself.
+Dialogue: 0,1:25:51.62,1:25:56.13,Default,,0,0,0,,曾有個男人  也就是她孩子的父親\N{\fn微軟雅黑\fs14}There was a man, the father of her child.
+Dialogue: 0,1:25:56.19,1:26:00.00,Default,,0,0,0,,你想擁有她  但知道這個男人會阻礙你\N{\fn微軟雅黑\fs14}You wanted her, but knew he stood in your way.
+Dialogue: 0,1:26:00.07,1:26:01.37,Default,,0,0,0,,我改變了這一切\N{\fn微軟雅黑\fs14}I have changed that.
+Dialogue: 0,1:26:09.27,1:26:10.78,Default,,0,0,0,,這個男人是誰\N{\fn微軟雅黑\fs14}Who was this man?
+Dialogue: 0,1:26:12.51,1:26:14.58,Default,,0,0,0,,他叫什麼\N{\fn微軟雅黑\fs14}What was his name?
+Dialogue: 0,1:26:14.65,1:26:19.02,Default,,0,0,0,,他叫波伊斯\N{\fn微軟雅黑\fs14}His name was Boyce.
+Dialogue: 0,1:26:19.09,1:26:21.62,Default,,0,0,0,,不\N{\fn微軟雅黑\fs14}No!
+Dialogue: 0,1:26:21.69,1:26:24.96,Default,,0,0,0,,她殺了波伊斯\N{\fn微軟雅黑\fs14}She killed Boyce!
+Dialogue: 0,1:26:25.02,1:26:26.79,Default,,0,0,0,,不  拜託\N{\fn微軟雅黑\fs14}No, please.
+Dialogue: 0,1:26:30.30,1:26:31.80,Default,,0,0,0,,本來不該這樣的\N{\fn微軟雅黑\fs14}It could never have been.
+Dialogue: 0,1:26:31.86,1:26:34.20,Default,,0,0,0,,你在說什麼\N{\fn微軟雅黑\fs14}What are you talking about?
+Dialogue: 0,1:26:34.27,1:26:36.33,Default,,0,0,0,,他是頭野獸\N{\fn微軟雅黑\fs14}He was a beast.
+Dialogue: 0,1:26:38.14,1:26:40.21,Default,,0,0,0,,野獸\N{\fn微軟雅黑\fs14}Beast?
+Dialogue: 0,1:26:40.27,1:26:43.21,Default,,0,0,0,,你懂什麼\N{\fn微軟雅黑\fs14}What do you know of it?
+Dialogue: 0,1:26:43.28,1:26:46.81,Default,,0,0,0,,他影響了你  你變了\N{\fn微軟雅黑\fs14}He twisted you. You changed.
+Dialogue: 0,1:26:46.88,1:26:49.18,Default,,0,0,0,,是你幹的\N{\fn微軟雅黑\fs14}You did this.
+Dialogue: 0,1:26:49.25,1:26:52.48,Default,,0,0,0,,我別無選擇  我保護了你\N{\fn微軟雅黑\fs14}I did what I had to do. I protected you.
+Dialogue: 0,1:26:52.55,1:26:56.82,Default,,0,0,0,,-你背叛了我  -不  我\N{\fn微軟雅黑\fs14}- You betrayed me. - No, no. I...
+Dialogue: 0,1:26:56.89,1:26:59.69,Default,,0,0,0,,你害他被殺了  他是我孩子的父親\N{\fn微軟雅黑\fs14}You had him killed. The father of my child!
+Dialogue: 0,1:27:02.39,1:27:04.40,Default,,0,0,0,,-拜託  -不\N{\fn微軟雅黑\fs14}- Please. - No!
+Dialogue: 0,1:27:04.46,1:27:06.70,Default,,0,0,0,,我會為你做任何事\N{\fn微軟雅黑\fs14}I would do anything for you.
+Dialogue: 0,1:27:11.34,1:27:12.77,Default,,0,0,0,,那就為我去死\N{\fn微軟雅黑\fs14}Then die for me.
+Dialogue: 0,1:27:18.51,1:27:21.21,Default,,0,0,0,,我這麼做是為了你  波伊斯\N{\fn微軟雅黑\fs14}I did this for you, Boyce.
+Dialogue: 0,1:27:21.28,1:27:24.65,Default,,0,0,0,,這樣我們就能在一起  一起狩獵\N{\fn微軟雅黑\fs14}So we could be together, hunt together.
+Dialogue: 0,1:27:37.76,1:27:39.46,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:27:39.53,1:27:41.27,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:27:41.33,1:27:43.00,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:27:43.07,1:27:45.00,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:27:45.07,1:27:47.01,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:27:47.07,1:27:48.54,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:27:48.61,1:27:51.11,Default,,0,0,0,,吊不死的女巫\N{\fn微軟雅黑\fs14}The Witch That Will Not Hang!
+Dialogue: 0,1:28:06.39,1:28:07.79,Default,,0,0,0,,打倒霸主\N{\fn微軟雅黑\fs14}Down with the Overlord!
+Dialogue: 0,1:30:01.67,1:30:05.85,Default,,0,0,0,,那你覺得我的故事怎麼樣\N{\fn微軟雅黑\fs14}So, how'd you like my story?
+Dialogue: 0,1:30:05.91,1:30:08.61,Default,,0,0,0,,我還不知道結局如何\N{\fn微軟雅黑\fs14}I still don't know how it ends.
+Dialogue: 0,1:30:08.68,1:30:11.85,Default,,0,0,0,,也許結局就是我把你活剝了\N{\fn微軟雅黑\fs14}Maybe with me skinning you alive,
+Dialogue: 0,1:30:11.92,1:30:12.92,Default,,0,0,0,,就像你對我做的那樣\N{\fn微軟雅黑\fs14}just like you did to me.
+Dialogue: 0,1:30:17.12,1:30:19.42,Default,,0,0,0,,我不太喜歡這個結局\N{\fn微軟雅黑\fs14}I'm not sure I like that ending.
+Dialogue: 0,1:30:19.49,1:30:21.89,Default,,0,0,0,,太可惜了\N{\fn微軟雅黑\fs14}Too bad.
+Dialogue: 0,1:30:21.96,1:30:24.36,Default,,0,0,0,,我知道你是皇后的情人\N{\fn微軟雅黑\fs14}I knew you were the queen's lover.
+Dialogue: 0,1:30:26.07,1:30:27.87,Default,,0,0,0,,-別離開我  -你知道我是什麼\N{\fn微軟雅黑\fs14}- Don't leave yet. - You know what I am.
+Dialogue: 0,1:30:27.93,1:30:29.70,Default,,0,0,0,,-我不能留在這裡  -你說過你的真愛\N{\fn微軟雅黑\fs14}- I can't stay here. - You said the only woman
+Dialogue: 0,1:30:29.77,1:30:32.84,Default,,0,0,0,,必須是你的同類\N{\fn微軟雅黑\fs14}you could truly love would be someone like you.
+Dialogue: 0,1:30:32.91,1:30:36.04,Default,,0,0,0,,-但你不是  -要是我能變得像你一樣呢\N{\fn微軟雅黑\fs14}- You are not that. - But what if I could be?
+Dialogue: 0,1:30:36.11,1:30:39.35,Default,,0,0,0,,我想要能變成野獸的能力  姬·艾莉絲\N{\fn微軟雅黑\fs14}I want from you the power to become a beast, Gray Alys.
+Dialogue: 0,1:30:39.41,1:30:43.65,Default,,0,0,0,,-我有求必應  -我想讓你失敗\N{\fn微軟雅黑\fs14}- I refuse no one. - I want you to fail her.
+Dialogue: 0,1:30:43.72,1:30:46.32,Default,,0,0,0,,-我有求必應  -我想要你\N{\fn微軟雅黑\fs14}- I refuse no one. - I want you.
+Dialogue: 0,1:30:46.39,1:30:48.29,Default,,0,0,0,,我有求必應\N{\fn微軟雅黑\fs14}I refuse no one.
+Dialogue: 0,1:30:48.35,1:30:51.49,Default,,0,0,0,,我知道皇后的願望\N{\fn微軟雅黑\fs14}I knew that the queen's desires
+Dialogue: 0,1:30:51.56,1:30:55.23,Default,,0,0,0,,將會引發革命\N{\fn微軟雅黑\fs14}would lead to revolution.
+Dialogue: 0,1:30:55.29,1:30:58.56,Default,,0,0,0,,並且她永遠都不會披上你的皮\N{\fn微軟雅黑\fs14}And that she would never wear your skin.
+Dialogue: 0,1:30:58.63,1:31:01.47,Default,,0,0,0,,我知道你會活下來\N{\fn微軟雅黑\fs14}I knew you would live.
+Dialogue: 0,1:31:01.53,1:31:03.97,Default,,0,0,0,,你撒謊\N{\fn微軟雅黑\fs14}You're lying.
+Dialogue: 0,1:31:06.11,1:31:08.34,Default,,0,0,0,,就像我知道你不會打死我\N{\fn微軟雅黑\fs14}Just like I know that'll misfire.
+Dialogue: 0,1:31:10.60,1:31:34.60,Default,,0,0,0,Banner;28;0;0,{\an8\fs18}{\bord0\b0\fnMicrosoft YaHei}本字幕由{\c&H5CBFDB&\1a&H00&}CSEG克隆字幕提取組{\c&HFFFFFF&\1a&H00&}提取分享  僅供學習交流之用  禁止壓制  禁止刪除字幕組及CSEG署名
+Dialogue: 0,1:31:19.82,1:31:21.69,Default,,0,0,0,,他們說你能從姬·艾莉絲那裡買到\N{\fn微軟雅黑\fs14}They say you can buy anything you might desire
+Dialogue: 0,1:31:21.75,1:31:24.16,Default,,0,0,0,,任何你想得到的東西\N{\fn微軟雅黑\fs14}from Gray Alys...
+Dialogue: 0,1:31:26.76,1:31:28.96,Default,,0,0,0,,但最好不要這麼做\N{\fn微軟雅黑\fs14}...but it is better not to.
+Dialogue: 0,1:31:31.93,1:31:33.80,Default,,0,0,0,,難道這不是我們想要的嗎\N{\fn微軟雅黑\fs14}And isn't this what we wished for?
+Dialogue: 0,1:31:34.60,1:31:56.60,Default,,0,0,0,Banner;28;0;0,{\an8\fs18}{\bord0\b0\fnMicrosoft YaHei}字幕錯漏、合作聯繫、加入我們，請發送郵件至：{\c&H5CBFDB&\1a&H00&}csegkelongzimutiquzu@gmail.com
+Dialogue: 0,1:31:57.60,1:32:02.60,Default,,0,0,0,,{\an8\fs18\bord0\b0\fnMicrosoft YaHei\fad(300,300)}歡迎關注新浪微博、微信公眾號：{\c&H5CBFDB&\1a&H00&\b1}CSEG克隆字幕提取組
+
