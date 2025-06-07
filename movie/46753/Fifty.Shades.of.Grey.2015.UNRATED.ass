@@ -1,0 +1,1151 @@
+[Script Info]
+;SrtEdit 6.3.2012.1001
+;Copyright(C) 2005-2012 Yuan Weiguo
+
+Title: 深影字幕組
+Original Script: ShinY
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 640
+PlayResY: 360
+Timer: 100.0000
+Synch Point: 0
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: 002,SimHei,24,&H00FFFFFF,&H004080FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,4,1
+Style: 001,SimHei,24,&H00FFFFFF,&H004080FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,4,1
+Style: Default,SimHei,24,&H00FFFFFF,&HF0000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,2,5,5,4,1
+Style: Title,FZXiHei I-Z08S,26,&H00FFFFFF,&HF0000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,1,2,5,5,8,134
+Style: HC,FZXiHei I-Z08S,20,&H00FFFFFF,&HFF000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,5,5,8,134
+Style: Title1,FZXiQian-M15S,22,&H00DDDDDD,&HF0000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,1,2,5,5,8,134
+Style: Title2,FZLiShu-S01S,22,&H00CCBBFF,&H009999CC,&H00222255,&H009999CC,0,0,0,0,100,100,0,0,1,1,1,2,5,5,8,134
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:03.60,0:00:21.20,Default,NTP,0,0,0,,{\fad(400,0)\3c&H000000&\pos(320,324)\fs104\fscx0\t(0,500,\fscx580)\alpha&H9F&\c&H000000&\bord1\shad1\blur4}■
+Dialogue: 0,0:00:16.20,0:00:21.70,Default,NTP,0,0,0,,{\fad(0,400)\3c&H000000&\pos(320,324)\fs104\fscx580\t(0,500,\fscx0)\alpha&H9F&\c&H000000&\bord1\shad1\blur4}■
+Dialogue: 0,0:00:02.00,0:00:21.20,Default,NTP,0,0,0,,{\fe134\fad(500,500)\c&Hffffff&\pos(320,270)\fs20\fsp0\fn方正細倩簡體\bord0}本字幕由{\fs28\fn方正綜藝簡體\fe0}{\c&H26f4ff&} ShinY {\fe134\fn方正宋黑簡體}{\c&Hffae1a&}深影字幕組{\fscy100\fe134\fn方正細倩簡體}{\c&Hffffff&\fs20}原創翻譯製作
+Dialogue: 0,0:00:02.80,0:00:21.20,Default,NTP,0,0,0,,{\fad(500,500)\pos(320,300)\fn方正細倩簡體\fs18\b0\bord0\shad1\c&Hffffff&\3c&H2F2F2F&\4c&H000000&\fsp0\fs20}{\c&Hffffff&}深影字幕組論壇地址{\c&H26f4ff&\fn方正綜藝簡體\fs28}http://www.shinybbs.com
+Dialogue: 0,0:00:01.20,0:00:13.20,Default,NTP,0,0,0,,{\fscx80\an5\t(0,3000,0.5,\fry360)\fad(300,0)\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\fn@百度綜藝簡體\pos(590,57)\fs30}S{\fs20}hin{\fs30}Y
+Dialogue: 0,0:00:01.20,0:00:13.20,Default,NTP,0,0,0,,{\fscx80\an5\t(0,4000,0.5,\fry360)\fad(300,0)\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\pos(590,40)}深影
+Dialogue: 0,0:00:13.20,0:00:16.20,Default,NTP,0,0,0,,{\fscx80\an5\t(0,3000,0.5,\fry360)\fad(0,300)\1a&HFF&\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\fn@百度綜藝簡體\pos(590,57)\fs30}S{\fs20}hin{\fs30}Y
+Dialogue: 0,0:00:13.20,0:00:16.20,Default,NTP,0,0,0,,{\fscx80\an5\t(0,3000,0.5,\fry270)\fad(0,300)\1a&HFF&\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\pos(590,40)}深影
+Dialogue: 0,0:00:16.20,0:00:31.20,Default,NTP,0,0,0,,{\fscx80\an5\fad(0,300)\1a&HFF&\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\fn@百度綜藝簡體\pos(590,57)\fs30}S{\fs20}hin{\fs30}Y
+Dialogue: 0,0:00:16.20,0:00:31.20,Default,NTP,0,0,0,,{\fscx80\an5\fad(0,300)\1a&HFF&\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\pos(590,40)}深影
+Dialogue: 0,0:00:31.20,0:00:43.20,Default,NTP,0,0,0,,{\fscx80\an5\t(0,3000,0.5,\fry360)\fad(300,0)\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\fn@百度綜藝簡體\pos(590,57)\fs30}S{\fs20}hin{\fs30}Y
+Dialogue: 0,0:00:31.20,0:00:43.20,Default,NTP,0,0,0,,{\fscx80\an5\t(0,4000,0.5,\fry360)\fad(300,0)\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\pos(590,40)}深影
+Dialogue: 0,0:00:43.20,0:00:46.20,Default,NTP,0,0,0,,{\fscx80\an5\t(0,3000,0.5,\fry360)\fad(0,300)\1a&HFF&\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\fn@百度綜藝簡體\pos(590,57)\fs30}S{\fs20}hin{\fs30}Y
+Dialogue: 0,0:00:43.20,0:00:46.20,Default,NTP,0,0,0,,{\fscx80\an5\t(0,3000,0.5,\fry270)\fad(0,300)\1a&HFF&\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\pos(590,40)}深影
+Dialogue: 0,0:00:46.20,0:01:01.20,Default,NTP,0,0,0,,{\fscx80\an5\fad(0,300)\1a&HFF&\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\fn@百度綜藝簡體\pos(590,57)\fs30}S{\fs20}hin{\fs30}Y
+Dialogue: 0,0:00:46.20,0:01:01.20,Default,NTP,0,0,0,,{\fscx80\an5\fad(0,300)\1a&HFF&\shad0\bord0\alpha&H9F&\3c&HFFFFFF&\pos(590,40)}深影
+Dialogue: 0,0:00:58.15,0:01:04.25,Title,NTP,0,0,0,,{\pos(320,250)}{\fad(800,800)}{\alpha&H55}五    十    度    灰
+Dialogue: 0,0:01:03.70,0:01:51.90,Title1,NTP,0000,0000,0000,,{\pos(80,308)}{\fad(300,300)}{\c&H959595}翻翻：
+Dialogue: 0,0:01:04.20,0:01:07.20,Title1,NTP,0000,0000,0000,,{\pos(180,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}白日美人老虎娘
+Dialogue: 0,0:01:07.20,0:01:07.55,Title2,NTP,0000,0000,0000,,{\move(175,311,175,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪  啪  啪
+Dialogue: 0,0:01:08.20,0:01:11.20,Title1,NTP,0000,0000,0000,,{\pos(181,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}好深沉的ALLEN
+Dialogue: 0,0:01:11.20,0:01:11.55,Title2,NTP,0000,0000,0000,,{\move(175,311,175,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪  啪  啪
+Dialogue: 0,0:01:12.20,0:01:15.20,Title1,NTP,0000,0000,0000,,{\pos(165,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}雜燴土豆皮
+Dialogue: 0,0:01:15.20,0:01:15.55,Title2,NTP,0000,0000,0000,,{\move(163,311,163,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:01:16.20,0:01:19.20,Title1,NTP,0000,0000,0000,,{\pos(157,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}柒 一 四
+Dialogue: 0,0:01:19.20,0:01:19.55,Title2,NTP,0000,0000,0000,,{\move(157,311,157,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:01:20.20,0:01:23.20,Title1,NTP,0000,0000,0000,,{\pos(160,309)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}Yavanna
+Dialogue: 0,0:01:23.20,0:01:23.55,Title2,NTP,0000,0000,0000,,{\move(160,311,160,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:01:24.20,0:01:27.20,Title1,NTP,0000,0000,0000,,{\pos(180,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}沒有故事龍同學
+Dialogue: 0,0:01:27.20,0:01:27.55,Title2,NTP,0000,0000,0000,,{\move(170,311,170,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪  啪  啪
+Dialogue: 0,0:01:28.20,0:01:31.20,Title1,NTP,0000,0000,0000,,{\pos(153,309)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}H T C
+Dialogue: 0,0:01:31.20,0:01:31.55,Title2,NTP,0000,0000,0000,,{\move(155,311,155,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:01:32.20,0:01:35.20,Title1,NTP,0000,0000,0000,,{\pos(155,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}書  生
+Dialogue: 0,0:01:35.20,0:01:35.55,Title2,NTP,0000,0000,0000,,{\move(157,311,157,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:01:36.20,0:01:39.20,Title1,NTP,0000,0000,0000,,{\pos(160,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}閒魚一條
+Dialogue: 0,0:01:39.20,0:01:39.55,Title2,NTP,0000,0000,0000,,{\move(160,311,160,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:01:40.20,0:01:43.20,Title1,NTP,0000,0000,0000,,{\pos(165,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}Passenger
+Dialogue: 0,0:01:43.20,0:01:43.55,Title2,NTP,0000,0000,0000,,{\move(165,311,165,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:01:44.20,0:01:47.20,Title1,NTP,0000,0000,0000,,{\pos(160,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}juanbai45
+Dialogue: 0,0:01:47.20,0:01:47.55,Title2,NTP,0000,0000,0000,,{\move(160,311,160,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:01:48.20,0:01:51.20,Title1,NTP,0000,0000,0000,,{\pos(175,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}紅鼻子的UFO
+Dialogue: 0,0:01:51.20,0:01:51.55,Title2,NTP,0000,0000,0000,,{\move(175,311,175,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪  啪  啪
+Dialogue: 0,0:01:56.70,0:02:00.90,Title1,NTP,0000,0000,0000,,{\pos(80,308)}{\fad(300,300)}{\c&H888888}校對：
+Dialogue: 0,0:01:57.20,0:02:00.20,Title1,NTP,0000,0000,0000,,{\pos(160,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}珍 妮 花
+Dialogue: 0,0:02:00.20,0:02:00.55,Title2,NTP,0000,0000,0000,,{\move(160,311,160,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:02:01.20,0:02:05.20,Title1,NTP,0000,0000,0000,,{\pos(80,308)}{\fad(300,300)}{\c&H888888}壓制：
+Dialogue: 0,0:02:01.70,0:02:04.50,Title1,NTP,0000,0000,0000,,{\pos(160,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}小   滔
+Dialogue: 0,0:02:04.60,0:02:04.85,Title2,NTP,0000,0000,0000,,{\move(160,311,160,313)}{\blur0\t(0,350,\blur120)}{\fs27\t(0,350,\fs31)}{\alpha&H00\t(0,350,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:02:07.70,0:02:13.20,Title1,NTP,0000,0000,0000,,{\pos(80,308)}{\fad(300,300)}{\c&H888888}特效：
+Dialogue: 0,0:02:08.20,0:02:11.20,Title1,NTP,0000,0000,0000,,{\pos(165,308)}{\fad(100,0)}{\frx90\t(0,200,0.2,\frx0}Virus  Killer
+Dialogue: 0,0:02:11.20,0:02:11.45,Title2,NTP,0000,0000,0000,,{\move(165,311,165,313)}{\blur0\t(0,250,\blur120)}{\fs31\t(0,250,\fs35)}{\alpha&H00\t(0,250,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:02:11.45,0:02:11.70,Title2,NTP,0000,0000,0000,,{\move(165,311,165,313)}{\blur0\t(0,250,\blur120)}{\fs31\t(0,250,\fs35)}{\alpha&H00\t(0,250,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:02:11.70,0:02:11.95,Title2,NTP,0000,0000,0000,,{\move(165,311,165,313)}{\blur0\t(0,250,\blur120)}{\fs31\t(0,250,\fs35)}{\alpha&H00\t(0,250,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:02:11.95,0:02:12.20,Title2,NTP,0000,0000,0000,,{\move(165,311,165,313)}{\blur0\t(0,250,\blur120)}{\fs31\t(0,250,\fs35)}{\alpha&H00\t(0,250,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:02:12.20,0:02:12.45,Title2,NTP,0000,0000,0000,,{\move(165,311,165,313)}{\blur0\t(0,250,\blur120)}{\fs31\t(0,250,\fs35)}{\alpha&H00\t(0,250,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:02:12.45,0:02:12.70,Title2,NTP,0000,0000,0000,,{\move(165,311,165,313)}{\blur0\t(0,250,\blur120)}{\fs31\t(0,250,\fs35)}{\alpha&H00\t(0,250,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:02:12.70,0:02:12.95,Title2,NTP,0000,0000,0000,,{\move(165,311,165,313)}{\blur0\t(0,250,\blur120)}{\fs31\t(0,250,\fs35)}{\alpha&H00\t(0,250,\alpha&HFF)}啪 啪 啪
+Dialogue: 0,0:02:35.90,0:02:37.54,Default,NTP,0,0,0,,{\blur4}安娜 開我的車{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ana, take my car.{\r}
+Dialogue: 0,0:02:38.79,0:02:40.55,Default,NTP,0,0,0,,{\blur4}我把錄音器給你了是嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I gave you the recorder right?{\r}
+Dialogue: 0,0:02:41.84,0:02:44.11,Default,NTP,0,0,0,,{\blur4}- 是的 - 問題你都準備好了嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Oh, yes. - And you have all the questions?{\r}
+Dialogue: 0,0:02:45.10,0:02:46.71,Default,NTP,0,0,0,,{\blur4}- 是的 - 你知道該去哪嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Yes. - And you know where you're going?{\r}
+Dialogue: 0,0:02:46.85,0:02:50.34,Default,NTP,0,0,0,,{\blur4}是的 我有導航儀和全優的成績{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes, I do have a GPS, and a four point GPA.{\r}
+Dialogue: 0,0:02:50.53,0:02:53.01,Default,NTP,0,0,0,,{\blur4}- 我可以搞定的 - 你穿這衣服去{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I can figure it out. - You're wearing that?{\r}
+Dialogue: 0,0:02:54.72,0:02:59.42,Default,NTP,0,0,0,,{\blur4}好吧 那就少說話 多吃飯{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay, a little less talking, more eating.{\r}
+Dialogue: 0,0:03:06.30,0:03:08.60,Default,NTP,0,0,0,,{\pos(320,350)}{\fs18}距離塔科馬五十七公里  西雅圖九十公里
+Dialogue: 0,0:03:48.38,0:03:49.39,001,NTP,0,0,0,,{\blur4}卡瓦納小姐麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Miss Kavanagh?{\r}
+Dialogue: 0,0:03:50.55,0:03:52.72,001,NTP,0,0,0,,{\blur4}- 我可以幫你拿衣服嗎 - 好的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- May I take your coat? - Oh, yes.{\r}
+Dialogue: 0,0:03:53.68,0:03:55.82,001,NTP,0,0,0,,{\blur4}她... 好的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Uh... She's... Okay.{\r}
+Dialogue: 0,0:03:56.01,0:03:58.67,001,NTP,0,0,0,,{\blur4}- 格雷先生現在就見你 - 好的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Mr Grey will see you now - Okay{\r}
+Dialogue: 0,0:03:59.35,0:04:01.45,001,NTP,0,0,0,,{\blur4}- 這邊請 - 好的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- This way please. - Okay.{\r}
+Dialogue: 0,0:04:01.55,0:04:03.83,001,NTP,0,0,0,,{\blur4}格雷先生十一點十五分在開會{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Mr Grey is in a conference at 11:15.{\r}
+Dialogue: 0,0:04:12.48,0:04:13.63,001,NTP,0,0,0,,{\blur4}這邊請{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Right this way.{\r}
+Dialogue: 0,0:04:22.01,0:04:25.86,001,NTP,0,0,0,,{\blur4}卡瓦納小姐 你還好嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Miss Kavanagh, are you alright?{\r}
+Dialogue: 0,0:04:29.37,0:04:30.70,001,NTP,0,0,0,,{\blur4}克裡斯蒂安·格雷{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian Grey.{\r}
+Dialogue: 0,0:04:30.70,0:04:32.39,001,NTP,0,0,0,,{\blur4}我是安娜斯塔西婭·斯蒂爾{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm Anastasia Steele.{\r}
+Dialogue: 0,0:04:33.94,0:04:37.13,001,NTP,0,0,0,,{\blur4}卡瓦納小姐得了流感 所以她讓我替她來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Miss Kavanagh has the flu, so she asked me to fill in.{\r}
+Dialogue: 0,0:04:37.17,0:04:40.09,001,NTP,0,0,0,,{\blur4}你也是學新聞的嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I see, so you're studying journalism as well?{\r}
+Dialogue: 0,0:04:40.28,0:04:45.21,001,NTP,0,0,0,,{\blur4}不 我學英國文學 凱特是我的室友{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No. English literature. Kate's my roommate.{\r}
+Dialogue: 0,0:04:45.59,0:04:47.44,001,NTP,0,0,0,,{\blur4}按照約定 我只有十分鐘的時間{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}As I said, I only have 10 minutes.{\r}
+Dialogue: 0,0:04:47.56,0:04:49.28,001,NTP,0,0,0,,{\blur4}請坐 斯蒂爾小姐{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Please, have a seat Miss Steele.{\r}
+Dialogue: 0,0:05:15.77,0:05:17.06,001,NTP,0,0,0,,{\blur4}謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thanks.{\r}
+Dialogue: 0,0:05:21.45,0:05:24.46,001,NTP,0,0,0,,{\blur4}- 可以開始了嗎 - 隨時可以{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ready? - Whenever you are.{\r}
+Dialogue: 0,0:05:24.65,0:05:25.85,001,NTP,0,0,0,,{\blur4}好的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay.{\r}
+Dialogue: 0,0:05:26.88,0:05:29.52,001,NTP,0,0,0,,{\blur4}這是為學生報紙的畢業專欄{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So this is for the special graduation issue{\r}
+Dialogue: 0,0:05:29.71,0:05:30.87,001,NTP,0,0,0,,{\blur4}所做的採訪{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}of the student newspaper.{\r}
+Dialogue: 0,0:05:30.88,0:05:32.29,001,NTP,0,0,0,,{\blur4}是的 今年我會在畢業典禮上{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes, I'm giving the commencement address{\r}
+Dialogue: 0,0:05:32.29,0:05:33.81,001,NTP,0,0,0,,{\blur4}做畢業演講{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}at this year's ceremony.{\r}
+Dialogue: 0,0:05:33.83,0:05:35.04,001,NTP,0,0,0,,{\blur4}是嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You are?{\r}
+Dialogue: 0,0:05:36.85,0:05:40.77,001,NTP,0,0,0,,{\blur4}我的意思是... 我知道{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I mean um... I know.{\r}
+Dialogue: 0,0:05:44.32,0:05:47.46,001,NTP,0,0,0,,{\blur4}你的企業如此龐大 而你卻很年輕{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You are very young to have amassed such empire.{\r}
+Dialogue: 0,0:05:47.64,0:05:49.81,001,NTP,0,0,0,,{\blur4}- 請問你是依靠什麼... - 靠什麼成功的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- To what do you owe... - To what do I owe my success?{\r}
+Dialogue: 0,0:05:51.15,0:05:53.66,001,NTP,0,0,0,,{\blur4}- 沒錯 - 這就是你的問題{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Yep. - Seriously?{\r}
+Dialogue: 0,0:05:53.85,0:05:55.03,001,NTP,0,0,0,,{\blur4}是的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes.{\r}
+Dialogue: 0,0:05:57.93,0:06:02.31,001,NTP,0,0,0,,{\blur4}商業就是和人打交道 我一直善於此事{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Business is about people, and I've always been good at people.{\r}
+Dialogue: 0,0:06:03.00,0:06:06.76,001,NTP,0,0,0,,{\blur4}我知道是什麼鼓勵了他們 刺激了他們 啟發了他們{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What motivates them, what incentivizes them, what inspires them.{\r}
+Dialogue: 0,0:06:09.16,0:06:10.64,001,NTP,0,0,0,,{\blur4}也許你只是運氣好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well, maybe you're just lucky.{\r}
+Dialogue: 0,0:06:13.03,0:06:16.67,001,NTP,0,0,0,,{\blur4}我一直發現我越努力 就越幸運{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I've always found, the harder I work, the more luck I seem to have.{\r}
+Dialogue: 0,0:06:17.62,0:06:20.96,001,NTP,0,0,0,,{\blur4}我成功的關鍵是知人善任{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The key to my success is identifying talents in individuals.{\r}
+Dialogue: 0,0:06:21.25,0:06:25.22,001,NTP,0,0,0,,{\blur4}- 並且駕馭他們 - 你是個控制狂{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- And harnessing their efforts. - You're a control freak?{\r}
+Dialogue: 0,0:06:25.41,0:06:27.95,001,NTP,0,0,0,,{\blur4}一切都盡在我的掌握之中 斯蒂爾小姐{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh, I exercise control in all things, Miss Steele.{\r}
+Dialogue: 0,0:06:31.95,0:06:36.99,001,NTP,0,0,0,,{\blur4}好吧 你的公司在開始時{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay... um, your company is involved primarily{\r}
+Dialogue: 0,0:06:37.01,0:06:38.95,001,NTP,0,0,0,,{\blur4}是從事電信行業的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}in the telecommunications sector.{\r}
+Dialogue: 0,0:06:38.98,0:06:43.04,001,NTP,0,0,0,,{\blur4}但是你也投資了大量農業項目{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yet you also invest in numerous agricultural projects.{\r}
+Dialogue: 0,0:06:43.23,0:06:47.18,001,NTP,0,0,0,,{\blur4}包括一些非洲的項目 你很熱衷此類投資嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Including several in Africa. Is that something you feel passionate about?{\r}
+Dialogue: 0,0:06:47.37,0:06:49.04,001,NTP,0,0,0,,{\blur4}餵飽世界上的窮人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Feeding the world's poor?{\r}
+Dialogue: 0,0:06:49.22,0:06:50.62,001,NTP,0,0,0,,{\blur4}這只是小生意{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its smart business.{\r}
+Dialogue: 0,0:06:52.51,0:06:54.21,001,NTP,0,0,0,,{\blur4}你不同意{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You don't agree?{\r}
+Dialogue: 0,0:06:56.40,0:06:57.96,001,NTP,0,0,0,,{\blur4}我不太瞭解{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I don't know enough about it.{\r}
+Dialogue: 0,0:07:03.50,0:07:09.20,001,NTP,0,0,0,,{\blur4}我認為 也許你的內心世界比展示出來的更多{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I just wonder, perhaps your heart might be a bit bigger than you want to let on?{\r}
+Dialogue: 0,0:07:10.54,0:07:13.49,001,NTP,0,0,0,,{\blur4}但有些人說我根本沒有心{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}But some people say I don't have a heart.{\r}
+Dialogue: 0,0:07:13.68,0:07:16.62,001,NTP,0,0,0,,{\blur4}- 他們為什麼這麼說 - 因為他們非常瞭解我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Why would they say that? - Because they know me well.{\r}
+Dialogue: 0,0:07:19.45,0:07:20.45,001,NTP,0,0,0,,{\blur4}繼續吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Continue.{\r}
+Dialogue: 0,0:07:23.12,0:07:25.34,001,NTP,0,0,0,,{\blur4}除了工作你還有其他興趣愛好嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Do you have any interests outside of work?{\r}
+Dialogue: 0,0:07:26.02,0:07:28.04,001,NTP,0,0,0,,{\blur4}我喜歡很多體育運動{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I enjoy various physical pursuits.{\r}
+Dialogue: 0,0:07:29.07,0:07:33.47,001,NTP,0,0,0,,{\blur4}你還未婚 在四歲時被領養{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're unmarried, oh, you were adopted at age four.{\r}
+Dialogue: 0,0:07:33.56,0:07:35.06,001,NTP,0,0,0,,{\blur4}這些都是公開的信息{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}That's a matter of public record.{\r}
+Dialogue: 0,0:07:36.24,0:07:38.30,001,NTP,0,0,0,,{\blur4}抱歉 我...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm sorry, I didn't...{\r}
+Dialogue: 0,0:07:38.99,0:07:41.84,001,NTP,0,0,0,,{\blur4}你有真正的問題要問嗎 斯蒂爾小姐{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Do you have an actual question, Miss Steele?{\r}
+Dialogue: 0,0:07:43.38,0:07:44.88,001,NTP,0,0,0,,{\blur4}有 抱歉{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes, sorry.{\r}
+Dialogue: 0,0:07:45.98,0:07:46.98,001,NTP,0,0,0,,{\blur4}你是同性戀嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Are you gay?{\r}
+Dialogue: 0,0:07:53.20,0:07:54.93,001,NTP,0,0,0,,{\blur4}這裡是這麼寫的 我只是...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its written here, I'm just...{\r}
+Dialogue: 0,0:07:56.32,0:07:59.51,001,NTP,0,0,0,,{\blur4}不是 安娜斯塔西婭 我不是同性戀{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No, Anastasia. I'm not gay.{\r}
+Dialogue: 0,0:08:00.68,0:08:03.70,001,NTP,0,0,0,,{\blur4}抱歉 格雷先生. 凱特她有點...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I apologise, Mr Grey. Kate can be a little...{\r}
+Dialogue: 0,0:08:03.89,0:08:08.08,001,NTP,0,0,0,,{\blur4}- 侵略性 - 太好奇{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Intrusive? - Curious.{\r}
+Dialogue: 0,0:08:13.79,0:08:14.95,001,NTP,0,0,0,,{\blur4}你呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What about you?{\r}
+Dialogue: 0,0:08:18.20,0:08:20.78,001,NTP,0,0,0,,{\blur4}你為什麼不問問你想知道的呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why don't you ask me something you wanna know?{\r}
+Dialogue: 0,0:08:25.70,0:08:28.88,001,NTP,0,0,0,,{\blur4}剛剛你說有些人很瞭解你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Earlier you said that there are some people who know you well.{\r}
+Dialogue: 0,0:08:32.45,0:08:34.63,001,NTP,0,0,0,,{\blur4}為什麼我覺得那不是真的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why do I have the feeling that that is not true?{\r}
+Dialogue: 0,0:08:38.10,0:08:40.18,001,NTP,0,0,0,,{\blur4}格雷先生 你的下一個會議將在會議室舉行{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Mr Grey, your next meeting is in the conference room.{\r}
+Dialogue: 0,0:08:40.30,0:08:42.14,001,NTP,0,0,0,,{\blur4}請把它取消掉 我這裡還沒結束{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Cancel it please, we're not finished here.{\r}
+Dialogue: 0,0:08:42.27,0:08:43.36,001,NTP,0,0,0,,{\blur4}好的 先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes sir.{\r}
+Dialogue: 0,0:08:43.55,0:08:46.30,001,NTP,0,0,0,,{\blur4}不 我... 可以走{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No, I um... I can go.{\r}
+Dialogue: 0,0:08:46.39,0:08:48.35,001,NTP,0,0,0,,{\blur4}- 沒關係 - 我想多瞭解你一點{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Its fine. - I would like to know more about you.{\r}
+Dialogue: 0,0:08:51.60,0:08:53.63,001,NTP,0,0,0,,{\blur4}我沒什麼值得瞭解的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}There's not really much to know about me.{\r}
+Dialogue: 0,0:08:53.82,0:08:56.48,001,NTP,0,0,0,,{\blur4}你是學英國文學的 告訴我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You said you're in English literature?{\r}
+Dialogue: 0,0:08:56.49,0:08:59.35,001,NTP,0,0,0,,{\blur4}是夏洛特·勃朗特 簡·奧斯汀{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Tell me, was it Charlotte Bronte, Jane Austen{\r}
+Dialogue: 0,0:08:59.44,0:09:02.19,001,NTP,0,0,0,,{\blur4}還是托馬斯·哈代讓你愛上文學的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}or Thomas Hardy, who made you fall in love with literature?{\r}
+Dialogue: 0,0:09:05.02,0:09:06.02,001,NTP,0,0,0,,{\blur4}哈代{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hardy.{\r}
+Dialogue: 0,0:09:08.70,0:09:10.33,001,NTP,0,0,0,,{\blur4}我本來以為是簡·奧斯汀{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I would've guessed Jane Austen.{\r}
+Dialogue: 0,0:09:12.93,0:09:15.01,001,NTP,0,0,0,,{\blur4}你畢業之後有什麼打算{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What are your plans for after you graduate?{\r}
+Dialogue: 0,0:09:15.02,0:09:17.21,001,NTP,0,0,0,,{\blur4}我現在只想順利通過期末考試{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm just trying to get through my finals.{\r}
+Dialogue: 0,0:09:17.50,0:09:21.07,001,NTP,0,0,0,,{\blur4}- 然後呢 - 我打算搬到西雅圖來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- And then? - Then I was planning on moving here.{\r}
+Dialogue: 0,0:09:21.26,0:09:23.27,001,NTP,0,0,0,,{\blur4}和凱特一起{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}to Seattle with Kate.{\r}
+Dialogue: 0,0:09:23.46,0:09:25.70,001,NTP,0,0,0,,{\blur4}我們公司有很棒的實習生計劃{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We offer an excellent internship program.{\r}
+Dialogue: 0,0:09:28.47,0:09:30.58,001,NTP,0,0,0,,{\blur4}我不認為自己適合這裡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I don't think I'd fit in here.{\r}
+Dialogue: 0,0:09:35.82,0:09:40.11,001,NTP,0,0,0,,{\blur4}- 看看我這一身 - 正看著呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Look at me. - I am.{\r}
+Dialogue: 0,0:09:44.93,0:09:45.97,001,NTP,0,0,0,,{\blur4}格雷先生的辦公室{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Mr Grey's office.{\r}
+Dialogue: 0,0:09:46.01,0:09:47.61,001,NTP,0,0,0,,{\blur4}希望這次採訪符合你的期望{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I hope you got everything you needed.{\r}
+Dialogue: 0,0:09:48.13,0:09:50.79,001,NTP,0,0,0,,{\blur4}我想你只回答了四個問題而已{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I think you only answered four questions.{\r}
+Dialogue: 0,0:09:58.31,0:10:01.05,001,NTP,0,0,0,,{\blur4}- 安娜斯塔西婭 - 克裡斯蒂安{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Anastasia. - Christian.{\r}
+Dialogue: 0,0:10:11.34,0:10:12.67,001,NTP,0,0,0,,{\blur4}我的上帝啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Holy cow!{\r}
+Dialogue: 0,0:10:30.44,0:10:33.11,001,NTP,0,0,0,,{\blur4}在你說我之前... 你真是我的幸運女神 太棒了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Before you say anything... You're a goddess, this is perfect.{\r}
+Dialogue: 0,0:10:33.30,0:10:33.93,001,NTP,0,0,0,,{\blur4}什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What?{\r}
+Dialogue: 0,0:10:33.95,0:10:36.55,001,NTP,0,0,0,,{\blur4}我剛收到他的郵件 他每一個問題都回答了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I just got his email, he answered every question.{\r}
+Dialogue: 0,0:10:37.81,0:10:39.88,001,NTP,0,0,0,,{\blur4}那麼 他是個什麼樣的人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So? What was he like?{\r}
+Dialogue: 0,0:10:43.12,0:10:48.98,001,NTP,0,0,0,,{\blur4}- 他人不錯 - 不錯 只是不錯而已嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- He was fine. -  Fine? Just fine?{\r}
+Dialogue: 0,0:10:50.21,0:10:58.21,001,NTP,0,0,0,,{\blur4}他彬彬有禮 富有教養 還很清爽{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}He was very polite, and he was curteous, and very formal and clean.{\r}
+Dialogue: 0,0:11:03.19,0:11:04.50,001,NTP,0,0,0,,{\blur4}清爽{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Clean?{\r}
+Dialogue: 0,0:11:06.89,0:11:10.02,001,NTP,0,0,0,,{\blur4}我是說 他很聰明 你懂的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I mean, he was very you know, smart.{\r}
+Dialogue: 0,0:11:10.18,0:11:14.77,001,NTP,0,0,0,,{\blur4}很熱情 有一種震懾人的氣場{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And intense, kind of intimidating.{\r}
+Dialogue: 0,0:11:16.60,0:11:19.34,001,NTP,0,0,0,,{\blur4}- 我能理解他為什麼這麼有魅力 - 呃 哈{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I can understand the fascination. - Uh huh!{\r}
+Dialogue: 0,0:11:20.63,0:11:24.25,001,NTP,0,0,0,,{\blur4}- 你幹嘛這樣看著我 - 怎麼看著你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Why are you looking at me like that? - Like what?{\r}
+Dialogue: 0,0:11:24.44,0:11:25.64,001,NTP,0,0,0,,{\blur4}好吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay.{\r}
+Dialogue: 0,0:11:27.86,0:11:29.54,001,NTP,0,0,0,,{\blur4}我去做個三明治 你要來一個嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm gonna make a sandwich, do you want one?{\r}
+Dialogue: 0,0:11:29.57,0:11:30.57,001,NTP,0,0,0,,{\blur4}不用 謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No, thanks.{\r}
+Dialogue: 0,0:11:35.62,0:11:37.62,Default,NTP,0,0,0,,{\pos(320,345)}全球最佳黃金單身漢
+Dialogue: 0,0:11:36.45,0:11:38.76,Default,NTP,0,0,0,,{\blur4}你得承認 他實在太性感{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You have to admit, he's ridiculously hot.{\r}
+Dialogue: 0,0:11:38.95,0:11:46.95,Default,NTP,0,0,0,,{\blur4}我相信 你會被他那種人吸引{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm sure if you're attracted to that sort of human.{\r}
+Dialogue: 0,0:11:47.76,0:11:50.47,Default,NTP,0,0,0,,{\blur4}你是說那種性感到爆的人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The hot type of human?{\r}
+Dialogue: 0,0:11:51.05,0:11:54.84,Default,NTP,0,0,0,,{\blur4}我問了他是不是同性戀 你的問題單子裡有這一條{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I asked him if he was gay. It was in your questions.{\r}
+Dialogue: 0,0:11:55.00,0:11:56.00,Default,NTP,0,0,0,,{\blur4}你為什麼要捉弄我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why would you do that to me?{\r}
+Dialogue: 0,0:11:56.02,0:11:58.51,Default,NTP,0,0,0,,{\blur4}因為無論何時他出現在上流社會媒體上{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Because whenever he's in the society pages.{\r}
+Dialogue: 0,0:11:58.70,0:12:00.90,Default,NTP,0,0,0,,{\blur4}他跟任何一個女人合影都顯得很不自在{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}He's never been photographed with a woman so naturally.{\r}
+Dialogue: 0,0:12:01.09,0:12:03.57,Default,NTP,0,0,0,,{\blur4}也許他只是想保留自己的隱私吧 凱特{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well maybe he just wants to keep his private life private, Kate.{\r}
+Dialogue: 0,0:12:03.70,0:12:08.16,Default,NTP,0,0,0,,{\blur4}- 現在你居然開始袒護他了 - 我是不想再聊這個話題了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- And now you're defending him. - I'm ending this conversation.{\r}
+Dialogue: 0,0:12:09.69,0:12:12.45,Default,NTP,0,0,0,,{\blur4}可惜你的這個性感 清爽 才二十七歲的億萬富翁{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Too bad we don't have any original stills of your{\r}
+Dialogue: 0,0:12:12.53,0:12:14.99,Default,NTP,0,0,0,,{\blur4}我們沒有拍到他的獨家照片{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}hot, clean, 27 year old billionaire.{\r}
+Dialogue: 0,0:12:15.58,0:12:17.54,Default,NTP,0,0,0,,{\blur4}他超級上照 就像你一樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The camera loves him as much as you do.{\r}
+Dialogue: 0,0:12:18.49,0:12:20.81,Default,NTP,0,0,0,,{\blur4}好吧 我剛才沒餓 現在餓了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay I wasn't hungry, but now I am.{\r}
+Dialogue: 0,0:12:22.36,0:12:25.71,Default,NTP,0,0,0,,{\blur4}謝謝款待{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thank you.{\r}
+Dialogue: 0,0:12:27.62,0:12:28.83,Default,NTP,0,0,0,,{\blur4}我愛你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I love you.{\r}
+Dialogue: 0,0:13:01.62,0:13:03.32,Default,NTP,0,0,0,,{\pos(320,345)}格雷
+Dialogue: 0,0:13:08.18,0:13:10.87,Default,NTP,0,0,0,,{\blur4}- 安娜 我一直在找你 - 怎麼了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ana, I've been looking for you. - Whats up?{\r}
+Dialogue: 0,0:13:11.06,0:13:12.19,Default,NTP,0,0,0,,{\blur4}- 你猜猜 - 什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Guess what? - What?{\r}
+Dialogue: 0,0:13:12.38,0:13:16.12,Default,NTP,0,0,0,,{\blur4}波特蘭的媒體下個月要發表我的照片{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Portland's place is going to exhibit my photographs next month.{\r}
+Dialogue: 0,0:13:16.31,0:13:17.31,Default,NTP,0,0,0,,{\blur4}哦 天吶{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh my god!{\r}
+Dialogue: 0,0:13:17.90,0:13:20.94,Default,NTP,0,0,0,,{\blur4}恭喜你啊 這太棒了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Congratulations, thats so good!{\r}
+Dialogue: 0,0:13:21.03,0:13:23.46,Default,NTP,0,0,0,,{\blur4}- 這感覺太好了 - 我們能等會兒慶祝嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- It feels so good. - Can we celebrate later?{\r}
+Dialogue: 0,0:13:23.50,0:13:24.77,Default,NTP,0,0,0,,{\blur4}因為我上班要遲到了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Cause I'm really late for work.{\r}
+Dialogue: 0,0:13:24.77,0:13:26.30,Default,NTP,0,0,0,,{\blur4}好的 好的 你去吧 去吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yeah, yeah, you got it, you got it.{\r}
+Dialogue: 0,0:13:26.69,0:13:31.41,Default,NTP,0,0,0,,{\blur4}- 等等 讓我來 - 謝謝你 你真是我的大英雄{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Hold on, hold on, hold on... - Thank you, you're my hero.{\r}
+Dialogue: 0,0:13:31.60,0:13:33.54,Default,NTP,0,0,0,,{\blur4}- 等會兒見 - 好的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- See you later. - Okay.{\r}
+Dialogue: 0,0:13:44.24,0:13:45.62,Default,NTP,0,0,0,,{\an8}克萊頓五金行
+Dialogue: 0,0:13:41.96,0:13:43.62,Default,NTP,0,0,0,,{\blur4}老媽 我在工作 我等下打給你吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Mom I'm at work, can I call you back?{\r}
+Dialogue: 0,0:13:43.81,0:13:45.49,Default,NTP,0,0,0,,{\blur4}不能等 我有事找你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No wait. I called for a reason.{\r}
+Dialogue: 0,0:13:45.52,0:13:48.86,Default,NTP,0,0,0,,{\blur4}鮑勃玩高爾夫 把腳弄骨折了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Bob broke his foot playing golf of all things.{\r}
+Dialogue: 0,0:13:48.89,0:13:51.01,Default,NTP,0,0,0,,{\blur4}哎呀 他還好嗎 受了很多罪嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christ, is he okay? Is he in a lot of pain?{\r}
+Dialogue: 0,0:13:51.05,0:13:53.63,Default,NTP,0,0,0,,{\blur4}天曉得 那傢伙連起個水泡也要找醫務人員{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Who knows? The man called the paramedics because of a blister.{\r}
+Dialogue: 0,0:13:53.82,0:13:57.61,Default,NTP,0,0,0,,{\blur4}這樣我們就沒辦法飛去參加你的畢業典禮了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}It means though, we won't be able to fly in for graduation.{\r}
+Dialogue: 0,0:13:59.16,0:14:04.44,Default,NTP,0,0,0,,{\blur4}是嗎 你可以自己來 鮑勃不來沒關係{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Really? I mean, you could just come alone, you don't have to bring Bob.{\r}
+Dialogue: 0,0:14:04.83,0:14:06.98,Default,NTP,0,0,0,,{\blur4}讓老虎伍茲自己照顧自己嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Leave "Tiger" Woods to defend for himself?{\r}
+Dialogue: 0,0:14:07.37,0:14:11.22,Default,NTP,0,0,0,,{\blur4}- 你能理解的吧 親愛的 - 好吧 沒關係{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You understand, don't you darling? - Yeah, yeah its fine.{\r}
+Dialogue: 0,0:14:12.88,0:14:15.42,Default,NTP,0,0,0,,{\blur4}- 我得掛了 好嗎 - 我愛你 安娜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I really have to go, okay? - I love you, Ana.{\r}
+Dialogue: 0,0:14:15.61,0:14:17.03,Default,NTP,0,0,0,,{\blur4}我知道 我也愛你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I know, I love you too.{\r}
+Dialogue: 0,0:14:18.23,0:14:19.31,Default,NTP,0,0,0,,{\blur4}天啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}God.{\r}
+Dialogue: 0,0:14:19.53,0:14:24.84,Default,NTP,0,0,0,,{\blur4}- 安娜 你能來幫幫我嗎 - 呃 好的 我馬上來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ana! Can you give me a hand out back? - Uh yeah yeah, I'll be right there.{\r}
+Dialogue: 0,0:14:35.34,0:14:37.46,Default,NTP,0,0,0,,{\blur4}- 我就知道是你 - 真見鬼...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Thought it was you. - What the...?{\r}
+Dialogue: 0,0:14:37.65,0:14:39.84,Default,NTP,0,0,0,,{\blur4}真是個愉快的巧合 斯蒂爾小姐{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What a pleasant surprise. Miss Steele.{\r}
+Dialogue: 0,0:14:40.53,0:14:45.22,Default,NTP,0,0,0,,{\blur4}安娜 叫我安娜 你來這兒...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}It's Ana, just Ana. You're in here...{\r}
+Dialogue: 0,0:14:45.25,0:14:49.06,Default,NTP,0,0,0,,{\blur4}我在附近出差 想買一些東西{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I was in the area on business, needed to pick up a few things.{\r}
+Dialogue: 0,0:14:49.25,0:14:54.78,Default,NTP,0,0,0,,{\blur4}- 你有空嗎 - 當然 能為你做些什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Are you free? - Yeah. What can I help you with?{\r}
+Dialogue: 0,0:14:55.27,0:14:56.81,Default,NTP,0,0,0,,{\blur4}尼龍扎帶你們有貨嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Do you stock cable ties?{\r}
+Dialogue: 0,0:14:56.82,0:15:01.50,Default,NTP,0,0,0,,{\blur4}尼龍扎帶 有的 我帶你去{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Cable ties, yes we do, I can show you if you want.{\r}
+Dialogue: 0,0:15:02.09,0:15:05.49,Default,NTP,0,0,0,,{\blur4}- 拜託了 請帶路 斯蒂爾小姐 - 叫我安娜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Please, lead the way, Miss Steele. - Its Ana.{\r}
+Dialogue: 0,0:15:10.95,0:15:13.49,Default,NTP,0,0,0,,{\blur4}- 還要什麼 - 遮蔽膠帶{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- That it? - Masking tape.{\r}
+Dialogue: 0,0:15:14.60,0:15:16.83,Default,NTP,0,0,0,,{\blur4}- 你在重新裝修嗎 - 不是{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Are you redecorating? - No.{\r}
+Dialogue: 0,0:15:18.43,0:15:23.65,Default,NTP,0,0,0,,{\blur4}有兩寸和一寸兩種 但對自己有高要求的人來說{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We have two inch and one inch, but the truly self respecting handyman{\r}
+Dialogue: 0,0:15:23.67,0:15:26.31,Default,NTP,0,0,0,,{\blur4}工具箱裡兩種都缺一不可{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}would have both in his tool box.{\r}
+Dialogue: 0,0:15:26.80,0:15:27.94,Default,NTP,0,0,0,,{\blur4}他當然會{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Of course he will.{\r}
+Dialogue: 0,0:15:28.13,0:15:30.45,Default,NTP,0,0,0,,{\blur4}現在想找個內行可不容易...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}It's rare to find a connoisseur these days...{\r}
+Dialogue: 0,0:15:32.26,0:15:37.19,Default,NTP,0,0,0,,{\blur4}- 你還需要別的什麼嗎 - 是的 繩子{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Do you want anything else? - Yes, rope.{\r}
+Dialogue: 0,0:15:41.30,0:15:43.96,Default,NTP,0,0,0,,{\blur4}真讓人刮目相看 你是女童子軍嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}That's very impressive. You're girl scout?{\r}
+Dialogue: 0,0:15:46.99,0:15:51.03,Default,NTP,0,0,0,,{\blur4}不是 我不怎麼擅長有組織的群體活動{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No, organised group activity aren't really my thing.{\r}
+Dialogue: 0,0:15:51.92,0:15:57.29,Default,NTP,0,0,0,,{\blur4}- 那你擅長什麼 - 我也不知道...也許是書{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- So what is your thing? - I don't know... Books?{\r}
+Dialogue: 0,0:15:59.64,0:16:06.66,Default,NTP,0,0,0,,{\blur4}好了 繩子 膠帶 纜繩 你完全可以去做連環殺手了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay, rope, tape, cable ties. You're like a complete serial killer.{\r}
+Dialogue: 0,0:16:07.25,0:16:10.38,Default,NTP,0,0,0,,{\blur4}- 今天就算了 - 還需要什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Not today. - Anything else?{\r}
+Dialogue: 0,0:16:10.96,0:16:14.75,Default,NTP,0,0,0,,{\blur4}- 你有什麼推薦的 - 給一個喜歡自己動手的人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What would you recommend? - For a do-it-yourselfer?{\r}
+Dialogue: 0,0:16:16.11,0:16:18.82,Default,NTP,0,0,0,,{\blur4}也許是工作服 可以保護你的衣服{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Maybe coveralls, to protect all your clothes?{\r}
+Dialogue: 0,0:16:19.95,0:16:25.62,Default,NTP,0,0,0,,{\blur4}- 或者我可以把衣服全脫了 - 好吧 不穿衣服{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Or I could just take all my clothes off. - Okay, no clothes.{\r}
+Dialogue: 0,0:16:25.81,0:16:31.41,Default,NTP,0,0,0,,{\blur4}我是說 不穿工作服 我想不到別的什麼了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I mean, no coveralls. I can't ever think of anything else.{\r}
+Dialogue: 0,0:16:32.98,0:16:35.89,Default,NTP,0,0,0,,{\blur4}- 那麼 我想就先這樣吧 - 好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Well, I guess that's it then. - Cool.{\r}
+Dialogue: 0,0:16:37.10,0:16:40.16,Default,NTP,0,0,0,,{\blur4}對了 謝謝你回答凱特的問題{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thank you for answering Kate's questions by the way.{\r}
+Dialogue: 0,0:16:40.25,0:16:42.34,Default,NTP,0,0,0,,{\blur4}- 她可高興了 - 希望她身體好點了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- She was thrilled. - I hope she's feeling better.{\r}
+Dialogue: 0,0:16:42.38,0:16:46.40,Default,NTP,0,0,0,,{\blur4}是的 她好多了 就是她一直在忙著找一張你的單人照{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She is. Yeah, much. She's just having a hard time clearing a photo of you again.{\r}
+Dialogue: 0,0:16:46.43,0:16:48.65,Default,NTP,0,0,0,,{\blur4}如果她想要一張獨家的 我明天就在附近{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}If she'd like an original, I'm around tomorrow.{\r}
+Dialogue: 0,0:16:48.84,0:16:52.09,Default,NTP,0,0,0,,{\blur4}- 你願意那麼做嗎 - 是啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You'd be willing to do that? - Yeah.{\r}
+Dialogue: 0,0:16:52.28,0:16:54.14,Default,NTP,0,0,0,,{\blur4}你想要我幫你裝袋嗎 安娜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Do you want me to bag for you, Ana?{\r}
+Dialogue: 0,0:16:54.14,0:16:56.12,Default,NTP,0,0,0,,{\blur4}不 我來就行 不過謝謝 保羅{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No, No, I'm good, thanks though, Paul.{\r}
+Dialogue: 0,0:16:58.25,0:16:59.40,Default,NTP,0,0,0,,{\blur4}好吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay.{\r}
+Dialogue: 0,0:17:05.51,0:17:09.10,Default,NTP,0,0,0,,{\blur4}我就住在這裡的西斯曼酒店 十點前打電話給我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm staying locally at the Heathman. Call me before 10.{\r}
+Dialogue: 0,0:17:10.76,0:17:14.80,Default,NTP,0,0,0,,{\blur4}- 拍照的事 - 哦 是 我會打的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- About the photos. - Oh, yeah, I will.{\r}
+Dialogue: 0,0:17:17.43,0:17:18.90,Default,NTP,0,0,0,,{\blur4}祝你...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Enjoy your...{\r}
+Dialogue: 0,0:17:38.99,0:17:40.90,Default,NTP,0,0,0,,{\blur4}再次感謝你能來拍照 格雷先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thanks again for doing this, Mr Grey.{\r}
+Dialogue: 0,0:17:41.09,0:17:45.08,Default,NTP,0,0,0,,{\blur4}- 樂意效勞 - 我們拍幾張微笑的照片怎麼樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I'm happy to help. - How about we try a few with a smile?{\r}
+Dialogue: 0,0:17:50.20,0:17:51.43,Default,NTP,0,0,0,,{\blur4}或者還是不要了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Or...or not.{\r}
+Dialogue: 0,0:17:51.62,0:17:54.39,Default,NTP,0,0,0,,{\blur4}你應該發現他的眼睛就沒從你身上移開過吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You do realise he hasn't stopped looking at you?{\r}
+Dialogue: 0,0:17:56.12,0:17:58.85,Default,NTP,0,0,0,,{\blur4}他邀請我拍完之後一起去喝咖啡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}He asked me to go for a coffee afterwards.{\r}
+Dialogue: 0,0:17:59.04,0:18:00.04,Default,NTP,0,0,0,,{\blur4}什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What?{\r}
+Dialogue: 0,0:18:01.13,0:18:02.15,Default,NTP,0,0,0,,{\blur4}凱特 噓...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Kate, shh...{\r}
+Dialogue: 0,0:18:03.79,0:18:05.29,Default,NTP,0,0,0,,{\blur4}他是你男朋友嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So is he your boyfriend?{\r}
+Dialogue: 0,0:18:06.56,0:18:08.38,Default,NTP,0,0,0,,{\blur4}- 誰 - 那個攝影師{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Who? - The photographer.{\r}
+Dialogue: 0,0:18:09.60,0:18:14.16,Default,NTP,0,0,0,,{\blur4}- 荷西嗎 他不是 - 我看到了他衝你微笑的樣子{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Jose? No. - I saw the way he was smiling at you.{\r}
+Dialogue: 0,0:18:15.69,0:18:18.77,Default,NTP,0,0,0,,{\blur4}不是的 荷西更像是家人 他不是我男朋友{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No, Jose is more like family. He's not my boyfriend.{\r}
+Dialogue: 0,0:18:19.16,0:18:24.15,Default,NTP,0,0,0,,{\blur4}- 那商店裡那男的呢 - 保羅 更不是了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- And the guy at the store? - Paul? No.{\r}
+Dialogue: 0,0:18:32.34,0:18:33.59,Default,NTP,0,0,0,,{\blur4}謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thank you.{\r}
+Dialogue: 0,0:18:42.41,0:18:46.31,Default,NTP,0,0,0,,{\blur4}- 你看起來有些緊張 - 我覺得你有些威脅性{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You seem nervous. - I find you intimidating.{\r}
+Dialogue: 0,0:18:47.76,0:18:48.94,Default,NTP,0,0,0,,{\blur4}你應該這麼覺得{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You should.{\r}
+Dialogue: 0,0:18:51.33,0:18:54.52,001,NTP,0,0,0,,{\blur4}- 吃吧 - 更別說你還霸道{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Eat. - Not to mention high-handed.{\r}
+Dialogue: 0,0:18:55.62,0:18:58.00,001,NTP,0,0,0,,{\blur4}我隨心所欲慣了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm used to getting my own way.{\r}
+Dialogue: 0,0:18:58.03,0:18:59.34,001,NTP,0,0,0,,{\blur4}那樣肯定也會很無聊的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}That must get very boring.{\r}
+Dialogue: 0,0:19:03.26,0:19:07.40,001,NTP,0,0,0,,{\blur4}- 跟我說說你的家人 - 我家人 呃...好吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Tell me about your family. - My family? Uh...Okay.{\r}
+Dialogue: 0,0:19:07.59,0:19:10.26,001,NTP,0,0,0,,{\blur4}我爸在我還在襁褓裡的時候就去世了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}My dad died when I was a baby.{\r}
+Dialogue: 0,0:19:10.28,0:19:12.93,001,NTP,0,0,0,,{\blur4}所以我是我繼父雷養大的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So I was raised by my step-father, Ray.{\r}
+Dialogue: 0,0:19:14.19,0:19:16.92,001,NTP,0,0,0,,{\blur4}- 他人很好 - 那你母親呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- He's amazing. - And your mother?{\r}
+Dialogue: 0,0:19:17.87,0:19:22.09,001,NTP,0,0,0,,{\blur4}我母親現在和第四任丈夫在一起{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}My mother is on husband number four.{\r}
+Dialogue: 0,0:19:22.09,0:19:25.74,001,NTP,0,0,0,,{\blur4}她是個無可救藥的浪漫主義者{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She's an incurable romantic.{\r}
+Dialogue: 0,0:19:26.86,0:19:29.18,001,NTP,0,0,0,,{\blur4}- 你是嗎 - 我是不是浪漫的人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Are you? - Am I romantic?{\r}
+Dialogue: 0,0:19:30.65,0:19:34.77,001,NTP,0,0,0,,{\blur4}我是學英國文學的 所以我或多或少都必須是吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well, I study English Lit. So I kind of have to be.{\r}
+Dialogue: 0,0:19:37.85,0:19:41.58,001,NTP,0,0,0,,{\blur4}我覺得拍攝進行得很順利 對吧 凱特看起來很高興{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I thought the photo shoot went well, right? Kate seems to be really happy.{\r}
+Dialogue: 0,0:19:41.61,0:19:44.89,001,NTP,0,0,0,,{\blur4}- 對不起 我做不到 - 什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I'm sorry, I can't. - What?{\r}
+Dialogue: 0,0:19:45.07,0:19:46.32,001,NTP,0,0,0,,{\blur4}我送你出去{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'll walk you out.{\r}
+Dialogue: 0,0:19:52.30,0:19:55.63,001,NTP,0,0,0,,{\blur4}- 你有女朋友嗎 是嗎 - 我不需要女朋友{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Do you have a girlfriend, is that it? - I don't do the girlfriend thing.{\r}
+Dialogue: 0,0:19:56.30,0:19:57.82,001,NTP,0,0,0,,{\blur4}- 那是什麼意思 - 小心{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What does that even mean? - Watch it!{\r}
+Dialogue: 0,0:20:10.34,0:20:14.99,001,NTP,0,0,0,,{\blur4}我不適合你 你應該離我遠點{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm not the man for you. You should steer clear of me.{\r}
+Dialogue: 0,0:20:17.98,0:20:19.57,001,NTP,0,0,0,,{\blur4}我得讓你走{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I have to let you go.{\r}
+Dialogue: 0,0:20:23.46,0:20:25.26,001,NTP,0,0,0,,{\blur4}再見 格雷先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Goodbye, Mr Grey.{\r}
+Dialogue: 0,0:20:30.99,0:20:32.30,001,NTP,0,0,0,,{\blur4}好了 放下筆{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Alright, pencils down.{\r}
+Dialogue: 0,0:20:32.49,0:20:35.15,001,NTP,0,0,0,,{\blur4}請把試卷帶到教室後面{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Please take your final exams to the back of the classroom.{\r}
+Dialogue: 0,0:20:35.94,0:20:38.42,001,NTP,0,0,0,,{\blur4}期末成績會在兩周內公佈{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Final grades will be posted in two weeks.{\r}
+Dialogue: 0,0:20:38.61,0:20:43.19,001,NTP,0,0,0,,{\blur4}- 嘿 你還好嗎 - 當然 沒理由不好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Hey, you all good? - Yeah, why wouldn't I be?{\r}
+Dialogue: 0,0:20:43.57,0:20:46.72,001,NTP,0,0,0,,{\blur4}- 我們今晚狂歡定了 - 天吶{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- We are so partying tonight! - Oh my god.{\r}
+Dialogue: 0,0:20:47.57,0:20:48.68,001,NTP,0,0,0,,{\blur4}這太誇張了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}This is way too much.{\r}
+Dialogue: 0,0:20:48.72,0:20:51.55,001,NTP,0,0,0,,{\blur4}錯 我們這樣才正好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No, we're getting exactly the right amount.{\r}
+Dialogue: 0,0:20:51.58,0:20:53.85,001,NTP,0,0,0,,{\blur4}- 塗得我滿臉都是 - 就是要這樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- All over my face? - That's the idea.{\r}
+Dialogue: 0,0:20:55.36,0:20:58.68,001,NTP,0,0,0,,{\blur4}- 哇哦 不要 凱特 - 出租車來早了 我們走吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Wow, no, Kate. - Cab's early, let's go.{\r}
+Dialogue: 0,0:21:01.11,0:21:03.04,001,NTP,0,0,0,,{\blur4}安娜 你有包裹{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ana, there's a package for you.{\r}
+Dialogue: 0,0:21:05.22,0:21:09.36,001,NTP,0,0,0,,{\blur4}為什麼你不告訴我會有危險 為什麼你沒提醒我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why didn't you tell me there was danger? Why didn't you warn me?{\r}
+Dialogue: 0,0:21:09.55,0:21:11.78,001,NTP,0,0,0,,{\blur4}淑女們知道要提防什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ladies know what to guard against{\r}
+Dialogue: 0,0:21:11.97,0:21:14.53,001,NTP,0,0,0,,{\blur4}...因為她們讀的小說告訴了她們這些手段{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}... because they read novels that tells them of these tricks.{\r}
+Dialogue: 0,0:21:14.56,0:21:16.76,001,NTP,0,0,0,,{\blur4}這是《伯德家的苔絲》裡面的話{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}That's a quote from Tess of the d'Urberville.{\r}
+Dialogue: 0,0:21:17.82,0:21:19.06,001,NTP,0,0,0,,{\blur4}天吶{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh my god.{\r}
+Dialogue: 0,0:21:19.09,0:21:20.86,001,NTP,0,0,0,,{\blur4}肯定是克裡斯蒂安送的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}These must be from Christian.{\r}
+Dialogue: 0,0:21:23.50,0:21:25.08,001,NTP,0,0,0,,{\blur4}我是說...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I mean...{\r}
+Dialogue: 0,0:21:26.51,0:21:28.14,001,NTP,0,0,0,,{\blur4}這簡直難以置信{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}These are incredible.{\r}
+Dialogue: 0,0:21:28.84,0:21:29.93,001,NTP,0,0,0,,{\blur4}哇哦 格雷{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Wow, Grey.{\r}
+Dialogue: 0,0:21:31.15,0:21:37.04,001,NTP,0,0,0,,{\blur4}凱特 這是首版書 我不能收 太貴重了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Kate, these are first editions. I can't, this is too much.{\r}
+Dialogue: 0,0:21:38.10,0:21:40.14,001,NTP,0,0,0,,{\blur4}我不能收 我得把它們退回去{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I can't accept these, I have to send them back.{\r}
+Dialogue: 0,0:21:41.14,0:21:43.88,001,NTP,0,0,0,,{\blur4}司機在催了 好了 你準備好了沒{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}That's the cab, okay, are you ready?{\r}
+Dialogue: 0,0:21:45.00,0:21:47.08,001,NTP,0,0,0,,{\blur4}- 真的準備好了沒 - 是的 是的 絕對{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Are you really, though? - Yes, yes, very.{\r}
+Dialogue: 0,0:21:47.11,0:21:48.28,001,NTP,0,0,0,,{\blur4}我們走{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Let's get outta here.{\r}
+Dialogue: 0,0:21:51.48,0:21:52.86,001,NTP,0,0,0,,{\blur4}喝 喝 喝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Shots! Shots! Shots!{\r}
+Dialogue: 0,0:21:53.15,0:21:54.83,001,NTP,0,0,0,,{\blur4}美女們 放開了喝啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No holding back here girl!{\r}
+Dialogue: 0,0:21:57.16,0:21:59.27,001,NTP,0,0,0,,{\blur4}- 你都干了嗎 - 好了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Did you do it all? - Alright!{\r}
+Dialogue: 0,0:21:59.46,0:22:02.55,001,NTP,0,0,0,,{\blur4}我右眼閉上 用左手 我一樣能把這杯乾了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}With my right eye closed and left handed, I can get this in.{\r}
+Dialogue: 0,0:22:02.58,0:22:03.58,001,NTP,0,0,0,,{\blur4}- 怎麼了 - 我要上廁所{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What? - I gotta pee.{\r}
+Dialogue: 0,0:22:03.66,0:22:05.05,001,NTP,0,0,0,,{\blur4}- 好吧 - 一 二{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Okay. - One, two...{\r}
+Dialogue: 0,0:22:05.24,0:22:07.23,001,NTP,0,0,0,,{\blur4}- 你要去哪兒 - 上廁所{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Where you going? - I gotta go pee.{\r}
+Dialogue: 0,0:22:24.39,0:22:28.89,001,NTP,0,0,0,,{\blur4}克裡斯蒂安·格雷刪除聯繫人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian Grey{\r}
+Dialogue: 0,0:22:45.83,0:22:48.42,001,NTP,0,0,0,,{\blur4}- 安娜斯塔西婭 - 是的 是我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Anastasia. - Yep, this is me.{\r}
+Dialogue: 0,0:22:49.22,0:22:51.64,001,NTP,0,0,0,,{\blur4}把你的那些貴的嚇人的書寄回去了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Sending back your expensive books,{\r}
+Dialogue: 0,0:22:51.64,0:22:53.30,001,NTP,0,0,0,,{\blur4}因為我已經有精裝本的了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}cause I already have hard copies of that.{\r}
+Dialogue: 0,0:22:53.34,0:22:55.96,001,NTP,0,0,0,,{\blur4}但是還是謝謝你 這麼好心{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thanks though, for the kind gesture.{\r}
+Dialogue: 0,0:22:56.35,0:22:58.75,001,NTP,0,0,0,,{\blur4}不用客氣 你在哪{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're welcome. Where are you?{\r}
+Dialogue: 0,0:23:00.08,0:23:02.43,001,NTP,0,0,0,,{\blur4}額 我在排隊 因為我真的很尿急{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh? I'm in line, cause I have to pee really bad.{\r}
+Dialogue: 0,0:23:02.46,0:23:05.57,001,NTP,0,0,0,,{\blur4}安娜斯塔西婭 你喝酒了嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Anastasia, have you been drinking?{\r}
+Dialogue: 0,0:23:05.57,0:23:08.69,001,NTP,0,0,0,,{\blur4}是的 我喝了 高富帥先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yeah, I have, Mr Fancy Pants.{\r}
+Dialogue: 0,0:23:09.09,0:23:11.24,001,NTP,0,0,0,,{\blur4}你一猜就中啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You hit the nail on the head.{\r}
+Dialogue: 0,0:23:11.96,0:23:13.37,001,NTP,0,0,0,,{\blur4}我是說真的很準啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I mean the head right on the nail.{\r}
+Dialogue: 0,0:23:13.39,0:23:16.40,001,NTP,0,0,0,,{\blur4}聽著 我要你現在馬上回家{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Listen to me, I want you to go home right now.{\r}
+Dialogue: 0,0:23:16.44,0:23:17.52,001,NTP,0,0,0,,{\blur4}你管的還真寬{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're so bossy.{\r}
+Dialogue: 0,0:23:17.55,0:23:22.07,001,NTP,0,0,0,,{\blur4}"安娜 我們去喝咖啡" "安娜 我們去喝咖啡"{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}"Ana, lets go for coffee", "Ana, lets go for coffee."{\r}
+Dialogue: 0,0:23:22.09,0:23:26.68,001,NTP,0,0,0,,{\blur4}"不 不要接近我 我不需要你 離我遠點"{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}"No stay away from me Ana, I don't want you, get away"{\r}
+Dialogue: 0,0:23:26.70,0:23:28.96,001,NTP,0,0,0,,{\blur4}"到這來 到這來" "走開"{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}"Come here, come here." "Go away."{\r}
+Dialogue: 0,0:23:29.04,0:23:29.78,001,NTP,0,0,0,,{\blur4}夠了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thats it.{\r}
+Dialogue: 0,0:23:29.81,0:23:33.12,001,NTP,0,0,0,,{\blur4}- 告訴我你在哪 - 我在一個離西雅圖很遠的地方{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Tell me where you are. - I'm a long way from Seattle.{\r}
+Dialogue: 0,0:23:33.14,0:23:36.15,001,NTP,0,0,0,,{\blur4}- 離你也很遠 - 哪個酒吧 叫什麼名字{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Long way from you. - Which bar, whats it called?{\r}
+Dialogue: 0,0:23:36.17,0:23:38.66,001,NTP,0,0,0,,{\blur4}- 我不知道 我得掛了 - 哪個酒吧 安娜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I don't know, I gotta go. - Which bar, Ana?{\r}
+Dialogue: 0,0:23:42.24,0:23:44.37,001,NTP,0,0,0,,{\blur4}我跟他說清楚了 對吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I told him right?{\r}
+Dialogue: 0,0:23:50.00,0:23:52.05,001,NTP,0,0,0,,{\blur4}克裡斯蒂安 格雷來電{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian Grey.{\r}
+Dialogue: 0,0:23:53.40,0:23:54.14,001,NTP,0,0,0,,{\blur4}對不起 我本不想{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm sorry, I didn't mean...{\r}
+Dialogue: 0,0:23:54.16,0:23:55.51,001,NTP,0,0,0,,{\blur4}在那別動 我來接你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Stay where you are, I'm coming to get you.{\r}
+Dialogue: 0,0:23:55.53,0:23:59.65,001,NTP,0,0,0,,{\blur4}什麼 喂{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What? Hello?{\r}
+Dialogue: 0,0:24:13.85,0:24:17.42,001,NTP,0,0,0,,{\blur4}- 嘿 - 額 謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Hey. - Oh thanks.{\r}
+Dialogue: 0,0:24:17.84,0:24:19.13,001,NTP,0,0,0,,{\blur4}你還好嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Are you okay?{\r}
+Dialogue: 0,0:24:20.37,0:24:25.25,001,NTP,0,0,0,,{\blur4}是的 我只是覺得有點喝多了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes, I just feel a little more drunk than...{\r}
+Dialogue: 0,0:24:26.13,0:24:30.64,001,NTP,0,0,0,,{\blur4}- 過來 別凍著 - 額 沒關係 我沒事 荷西{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Come here, stay warm. - Oh thats cool, I'm good, Jose.{\r}
+Dialogue: 0,0:24:31.53,0:24:35.26,001,NTP,0,0,0,,{\blur4}不 我一直希望自己有勇氣這樣做{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No, I wanna have the courage to do this.{\r}
+Dialogue: 0,0:24:35.30,0:24:36.35,001,NTP,0,0,0,,{\blur4}做什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Do what?{\r}
+Dialogue: 0,0:24:36.37,0:24:39.32,001,NTP,0,0,0,,{\blur4}- 安娜 我喜歡你 - 是嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ana, I like you. - You do?{\r}
+Dialogue: 0,0:24:39.68,0:24:40.91,001,NTP,0,0,0,,{\blur4}- 非常喜歡你 - 我的天啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Very much. - Oh my god.{\r}
+Dialogue: 0,0:24:41.13,0:24:44.83,001,NTP,0,0,0,,{\blur4}- 不 - 求你了 只要一個吻{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- No, no, no. - Please, one kiss.{\r}
+Dialogue: 0,0:24:45.68,0:24:49.24,001,NTP,0,0,0,,{\blur4}不 不要 荷西 對不起 不要{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No, no, no. Jose, I'm sorry, no.{\r}
+Dialogue: 0,0:24:49.59,0:24:52.73,001,NTP,0,0,0,,{\blur4}- 哥們 她說不要 - 克裡斯蒂安{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Dude, she said no. - Christian?{\r}
+Dialogue: 0,0:24:57.61,0:24:59.21,001,NTP,0,0,0,,{\blur4}- 別看我 - 給你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Don't look at me. - Here.{\r}
+Dialogue: 0,0:25:03.81,0:25:08.31,001,NTP,0,0,0,,{\blur4}手感不錯 我會洗乾淨的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Nice touch, I will launder this item.{\r}
+Dialogue: 0,0:25:08.64,0:25:10.73,001,NTP,0,0,0,,{\blur4}- 我送你回家 - 我和凱特一起的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Lets get you home. - I'm with Kate.{\r}
+Dialogue: 0,0:25:10.95,0:25:14.03,001,NTP,0,0,0,,{\blur4}- 我會讓艾略特告訴她的 - 艾略特是誰{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I'll have Elliot tell her. - Who's Elliot?{\r}
+Dialogue: 0,0:25:14.05,0:25:16.33,001,NTP,0,0,0,,{\blur4}我哥哥 他正在裡邊告訴她呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}He's my brother, he's inside talking to her right now.{\r}
+Dialogue: 0,0:25:16.56,0:25:19.47,001,NTP,0,0,0,,{\blur4}- 我 我不 - 他和我一起住在酒店{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I, I don't... - He's at my hotel with me.{\r}
+Dialogue: 0,0:25:19.70,0:25:25.46,001,NTP,0,0,0,,{\blur4}- 你還在西斯曼酒店  - 是的 來吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You're still at the Heathman? - Yes. Come.{\r}
+Dialogue: 0,0:25:41.79,0:25:44.44,001,NTP,0,0,0,,{\blur4}- 那是你哥哥 - 我也沒得選 我們走吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Thats your brother? - Not by choice, let's go.{\r}
+Dialogue: 0,0:25:44.46,0:25:46.22,001,NTP,0,0,0,,{\blur4}等等 凱特怎麼說{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Wait, what did Kate say?{\r}
+Dialogue: 0,0:25:47.00,0:25:48.98,001,NTP,0,0,0,,{\blur4}她警告我要我老實點{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She warned me to be on my best behaviour.{\r}
+Dialogue: 0,0:25:49.30,0:25:51.77,001,NTP,0,0,0,,{\blur4}- 更像是在威脅我 - 她威脅你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- More like threatened me. - She threatened you?{\r}
+Dialogue: 0,0:25:56.15,0:25:59.70,001,NTP,0,0,0,,{\blur4}你在打轉 我覺得我要暈過去了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're spinning. I think I'm gonna faint.{\r}
+Dialogue: 0,0:25:59.72,0:26:00.73,001,NTP,0,0,0,,{\blur4}什麼 現在嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What, now?{\r}
+Dialogue: 0,0:26:32.89,0:26:35.64,001,NTP,0,0,0,,{\blur4}吃了我 喝了我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Eat me, drink me.{\r}
+Dialogue: 0,0:26:53.21,0:26:54.85,Default,NTP,0,0,0,,{\blur4}早上好 安娜斯塔西婭{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Good morning, Anastasia.{\r}
+Dialogue: 0,0:26:58.45,0:27:03.18,Default,NTP,0,0,0,,{\blur4}- 感覺怎麼樣 - 比我想的好多了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- How you feeling? - Better than I deserve.{\r}
+Dialogue: 0,0:27:09.09,0:27:10.67,Default,NTP,0,0,0,,{\blur4}你把我弄上的床{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Did you put me to bed?{\r}
+Dialogue: 0,0:27:15.08,0:27:18.54,Default,NTP,0,0,0,,{\blur4}- 你給我脫的衣服 - 我也沒別的辦法{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You undressed me? - I didn't have much choice.{\r}
+Dialogue: 0,0:27:19.92,0:27:21.18,Default,NTP,0,0,0,,{\blur4}你在哪睡的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Where did you sleep?{\r}
+Dialogue: 0,0:27:26.36,0:27:29.14,Default,NTP,0,0,0,,{\blur4}我的天啊 我們 我們沒有{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh my god... Did we? We didn't...{\r}
+Dialogue: 0,0:27:29.14,0:27:30.37,Default,NTP,0,0,0,,{\blur4}我沒有戀屍癖{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Necrophillia's not my thing.{\r}
+Dialogue: 0,0:27:31.39,0:27:35.38,Default,NTP,0,0,0,,{\blur4}- 所以我們只是睡覺而已 - 我也覺得很新鮮{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- So we just slept then? - It was a novelty for me too.{\r}
+Dialogue: 0,0:27:37.32,0:27:44.19,Default,NTP,0,0,0,,{\blur4}你 需要吃東西 我讓泰勒給你買了幾件衣服{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You... need to eat. I had Taylor pick you up some clothes.{\r}
+Dialogue: 0,0:27:45.10,0:27:47.07,Default,NTP,0,0,0,,{\blur4}- 泰勒是誰 - 我的司機{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Who's Taylor? - My driver.{\r}
+Dialogue: 0,0:27:47.97,0:27:50.02,Default,NTP,0,0,0,,{\blur4}謝謝 但是你不必這麼做的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thanks, but you didn't have to do that.{\r}
+Dialogue: 0,0:27:50.02,0:27:51.38,Default,NTP,0,0,0,,{\blur4}我只能這麼做{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes I did.{\r}
+Dialogue: 0,0:27:51.71,0:27:53.34,Default,NTP,0,0,0,,{\blur4}你的衣服被你吐得一塌糊塗{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yours were covered in vomit.{\r}
+Dialogue: 0,0:27:56.02,0:27:57.57,Default,NTP,0,0,0,,{\blur4}你不應該喝那麼多的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You shouldn't have drunk like that.{\r}
+Dialogue: 0,0:27:57.60,0:27:59.44,Default,NTP,0,0,0,,{\blur4}試試自己的極限沒問題 但是...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm all for testing the limits but...{\r}
+Dialogue: 0,0:27:59.54,0:28:02.93,Default,NTP,0,0,0,,{\blur4}- 昨天晚上你讓自己置身於險境 - 我知道{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- you put yourself at risk last night. - I know.{\r}
+Dialogue: 0,0:28:07.62,0:28:10.04,Default,NTP,0,0,0,,{\blur4}如果你是我的 你可能一個禮拜都不能坐著了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}If you were mine, you wouldn't be able to sit down for a week.{\r}
+Dialogue: 0,0:28:10.87,0:28:12.08,Default,NTP,0,0,0,,{\blur4}什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What?{\r}
+Dialogue: 0,0:28:15.52,0:28:17.06,Default,NTP,0,0,0,,{\blur4}我要去洗個澡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I gotta go take a shower.{\r}
+Dialogue: 0,0:28:24.99,0:28:26.85,Default,NTP,0,0,0,,{\blur4}為什麼我會在這 克裡斯蒂安{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why am I here, Christian?{\r}
+Dialogue: 0,0:28:30.74,0:28:33.54,Default,NTP,0,0,0,,{\blur4}你在這是因為我無法留下你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're here because I'm incapable of leaving you alone.{\r}
+Dialogue: 0,0:28:36.90,0:28:37.90,Default,NTP,0,0,0,,{\blur4}那就不要{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Then don't.{\r}
+Dialogue: 0,0:28:43.08,0:28:47.54,Default,NTP,0,0,0,,{\blur4}- 為什麼送那些書給我 - 我覺得我應該向你道歉{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Why'd you send me those books? - I thought I owed you an apology.{\r}
+Dialogue: 0,0:28:49.08,0:28:53.42,Default,NTP,0,0,0,,{\blur4}- 為什麼 - 因為讓你以為我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- For what? - For letting you believe that I...{\r}
+Dialogue: 0,0:28:57.33,0:29:02.66,Default,NTP,0,0,0,,{\blur4}聽我說 我不喜歡談情說愛{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Listen to me. I don't do romance.{\r}
+Dialogue: 0,0:29:06.30,0:29:12.73,Default,NTP,0,0,0,,{\blur4}我的品位非常 獨特 你不會懂的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}My tastes are very... singular. You wouldn't understand.{\r}
+Dialogue: 0,0:29:20.87,0:29:22.65,Default,NTP,0,0,0,,{\blur4}那就教我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Enlighten me then.{\r}
+Dialogue: 0,0:29:59.94,0:30:04.85,Default,NTP,0,0,0,,{\blur4}- 你看起來美極了 - 泰勒很有眼光{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You look beautiful. - Taylor has good taste.{\r}
+Dialogue: 0,0:30:08.48,0:30:12.86,Default,NTP,0,0,0,,{\blur4}- 今天晚點你有什麼安排 - 五金店上班到七點{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What are you doing here later? - I'm working at the hardware store till 7.{\r}
+Dialogue: 0,0:30:13.48,0:30:15.23,Default,NTP,0,0,0,,{\blur4}我會叫泰勒去接你下班{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'll have Taylor pick you up then.{\r}
+Dialogue: 0,0:30:20.61,0:30:22.18,Default,NTP,0,0,0,,{\blur4}真想咬你迷人的嘴唇{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'd like to bite that lip.{\r}
+Dialogue: 0,0:30:24.30,0:30:26.04,Default,NTP,0,0,0,,{\blur4}我也會喜歡的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I think I'd like that.{\r}
+Dialogue: 0,0:30:27.24,0:30:30.81,Default,NTP,0,0,0,,{\blur4}在你簽合同之前 我是不會碰你的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm not gonna touch you, not until I have your written consent.{\r}
+Dialogue: 0,0:30:31.91,0:30:33.03,Default,NTP,0,0,0,,{\blur4}什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What?{\r}
+Dialogue: 0,0:30:33.46,0:30:36.13,Default,NTP,0,0,0,,{\blur4}以後我會解釋 走吧 我送你回家{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'll explain later. Come, I'll take you home.{\r}
+Dialogue: 0,0:30:49.48,0:30:51.20,Default,NTP,0,0,0,,{\blur4}去他的合同{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Fuck the paperwork.{\r}
+Dialogue: 0,0:31:14.99,0:31:16.86,Default,NTP,0,0,0,,{\blur4}這倒霉的電梯{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What is it about elevators?{\r}
+Dialogue: 0,0:31:28.17,0:31:29.17,Default,NTP,0,0,0,,{\blur4}嗨{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hey!{\r}
+Dialogue: 0,0:31:30.87,0:31:34.39,Default,NTP,0,0,0,,{\blur4}- 嗨 你一定是安娜 - 你肯定是艾略特{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Hi, you must be Ana. - You must be Elliot.{\r}
+Dialogue: 0,0:31:34.41,0:31:36.07,Default,NTP,0,0,0,,{\blur4}我們該走了 艾略特{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And we must be going, Elliot.{\r}
+Dialogue: 0,0:31:36.85,0:31:40.01,Default,NTP,0,0,0,,{\blur4}很榮幸見到你 凱特給我講了很多你的事{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So awesome to meet your. Kate's told me a lot about you.{\r}
+Dialogue: 0,0:31:40.28,0:31:43.10,Default,NTP,0,0,0,,{\blur4}艾略特 穿上你的鞋 我還要去工作呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Elliot, find your shoes, some of us have work to return to.{\r}
+Dialogue: 0,0:31:43.12,0:31:46.33,Default,NTP,0,0,0,,{\blur4}我真搞不懂 你怎麼會和溫柔先生在一起{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What you're doing with Mr Worm here, I've got no idea.{\r}
+Dialogue: 0,0:31:49.57,0:31:50.77,Default,NTP,0,0,0,,{\blur4}回頭見 寶貝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Laters baby.{\r}
+Dialogue: 0,0:31:54.12,0:31:56.84,Default,NTP,0,0,0,,{\blur4}今晚見 如有變 發郵件給我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'll see you tonight, email me if something changes.{\r}
+Dialogue: 0,0:31:57.03,0:31:58.42,Default,NTP,0,0,0,,{\blur4}我的電腦壞了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}My computer's broken.{\r}
+Dialogue: 0,0:31:58.45,0:32:01.04,Default,NTP,0,0,0,,{\blur4}那打電話吧 你有我的號碼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well call then, you know you have my number.{\r}
+Dialogue: 0,0:32:02.85,0:32:04.22,Default,NTP,0,0,0,,{\blur4}晚點見 寶貝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Laters, baby.{\r}
+Dialogue: 0,0:32:10.22,0:32:14.06,Default,NTP,0,0,0,,{\blur4}- 艾略特似乎不錯 - 打住 我們先說說你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Elliot seems really nice. - No, no. We're starting with you.{\r}
+Dialogue: 0,0:32:14.28,0:32:17.41,Default,NTP,0,0,0,,{\blur4}如果你們今晚再碰面 那說明有事發生了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}If you're seeing him again tonight, this means that something happened.{\r}
+Dialogue: 0,0:32:20.02,0:32:23.63,Default,NTP,0,0,0,,{\blur4}- 安娜 告訴我發生了什麼 - 我要去上班了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ana? Tell me what happened... - I have to get ready for work.{\r}
+Dialogue: 0,0:32:24.71,0:32:27.81,Default,NTP,0,0,0,,{\blur4}我們接吻了 就一次{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We just kissed. Once.{\r}
+Dialogue: 0,0:32:28.43,0:32:31.28,Default,NTP,0,0,0,,{\blur4}就一次 真奇怪{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Only once? Thats odd.{\r}
+Dialogue: 0,0:32:33.32,0:32:37.98,Default,NTP,0,0,0,,{\blur4}- 連奇怪都不能概括它 - 嗯 還買了新外套{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Odd doesn't even cover it. - Uh huh, and a new jacket.{\r}
+Dialogue: 0,0:32:53.77,0:32:54.77,Default,NTP,0,0,0,,{\blur4}再見{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Bye.{\r}
+Dialogue: 0,0:32:56.18,0:32:58.61,Default,NTP,0,0,0,,{\blur4}嗨 你是泰勒吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hi, its Taylor right?{\r}
+Dialogue: 0,0:32:58.63,0:33:02.02,Default,NTP,0,0,0,,{\blur4}晚上好 斯蒂爾小姐 格雷先生會在那和我們匯合{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Good evening, Miss Steele, Mr Grey will be joining us there.{\r}
+Dialogue: 0,0:33:17.15,0:33:18.88,Default,NTP,0,0,0,,{\blur4}晚上好 安娜斯塔西婭{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Good evening, Anastasia.{\r}
+Dialogue: 0,0:33:34.98,0:33:36.60,Default,NTP,0,0,0,,{\blur4}什麼 是你開嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What, you're flying this?{\r}
+Dialogue: 0,0:33:54.17,0:33:55.59,Default,NTP,0,0,0,,{\blur4}打不了退堂鼓了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No escaping now.{\r}
+Dialogue: 0,0:34:01.20,0:34:04.60,Default,NTP,0,0,0,,{\blur4}編號1224 代號探戈查理 準備出發了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}November 1-2-2-4. Charlie Tango. Ready to depart.{\r}
+Dialogue: 0,0:34:04.69,0:34:07.28,Default,NTP,0,0,0,,{\blur4}探戈查理 您去西雅圖的飛行計劃已被批准{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Charlie tango, your flight plan to Seattle has been cleared.{\r}
+Dialogue: 0,0:34:07.30,0:34:09.95,Default,NTP,0,0,0,,{\blur4}西雅圖 我們是去那嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Seattle? Thats where we're going?{\r}
+Dialogue: 0,0:35:12.80,0:35:15.60,Default,NTP,0,0,0,,{\blur4}- 想喝點什麼嗎 - 好的 謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Would you like a drink? - Yes please.{\r}
+Dialogue: 0,0:35:41.92,0:35:45.76,Default,NTP,0,0,0,,{\blur4}- 你會彈嗎 - 會啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You play? - Yes.{\r}
+Dialogue: 0,0:35:48.56,0:35:50.19,Default,NTP,0,0,0,,{\blur4}你當然會了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Of course you do.{\r}
+Dialogue: 0,0:35:56.56,0:36:01.91,Default,NTP,0,0,0,,{\blur4}- 這是什麼 - 保密協議{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Whats this? - Its a nondisclosure agreement.{\r}
+Dialogue: 0,0:36:03.15,0:36:07.17,Default,NTP,0,0,0,,{\blur4}這意味著你不能公開我們的關係{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}It means you cannot discuss anything about us with anyone.{\r}
+Dialogue: 0,0:36:08.42,0:36:10.48,Default,NTP,0,0,0,,{\blur4}我的律師堅持這麼做{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm afraid my lawyer insists on it.{\r}
+Dialogue: 0,0:36:10.51,0:36:13.12,Default,NTP,0,0,0,,{\blur4}我也沒想過把我們的事告訴別人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I would never talk to anyone about us anyway.{\r}
+Dialogue: 0,0:36:25.02,0:36:27.10,Default,NTP,0,0,0,,{\blur4}你現在要和我做愛了嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Are you gonna make love to me now?{\r}
+Dialogue: 0,0:36:32.39,0:36:36.55,Default,NTP,0,0,0,,{\blur4}兩件事: 第一 我不做愛{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Two things: First, I don't make love.{\r}
+Dialogue: 0,0:36:38.00,0:36:40.62,Default,NTP,0,0,0,,{\blur4}我只會狠狠地干{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I fuck hard.{\r}
+Dialogue: 0,0:36:43.72,0:36:49.53,Default,NTP,0,0,0,,{\blur4}- 那第二呢 - 跟我來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- And the second? - Come.{\r}
+Dialogue: 0,0:37:03.02,0:37:06.35,Default,NTP,0,0,0,,{\blur4}- 就是這扇門後面 - 是什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Its just behind this door. - What is it?{\r}
+Dialogue: 0,0:37:06.57,0:37:10.42,Default,NTP,0,0,0,,{\blur4}- 我的遊戲室 - 就像你的電視遊戲機之類的嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- My playroom. - Like your xbox and stuff?{\r}
+Dialogue: 0,0:37:11.55,0:37:14.38,Default,NTP,0,0,0,,{\blur4}你必須知道你隨時都可以離開{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its important you know that you can leave at any time.{\r}
+Dialogue: 0,0:37:14.41,0:37:15.78,Default,NTP,0,0,0,,{\blur4}為什麼 裡面是什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why, what's in there?{\r}
+Dialogue: 0,0:37:17.32,0:37:19.29,Default,NTP,0,0,0,,{\blur4}我是認真的 直升飛機可以{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I meant what I said, the helicopter{\r}
+Dialogue: 0,0:37:19.32,0:37:21.25,Default,NTP,0,0,0,,{\blur4}隨時帶你去任何地方{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}is standby, for whenever you wanna go.{\r}
+Dialogue: 0,0:37:21.48,0:37:23.07,Default,NTP,0,0,0,,{\blur4}克裡斯蒂安 把門打開就是了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian, Just open the door.{\r}
+Dialogue: 0,0:37:41.01,0:37:42.35,Default,NTP,0,0,0,,{\blur4}天吶{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh my god.{\r}
+Dialogue: 0,0:38:22.29,0:38:23.65,Default,NTP,0,0,0,,{\blur4}這叫鞭撻者{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its called a flogger.{\r}
+Dialogue: 0,0:38:34.31,0:38:36.06,Default,NTP,0,0,0,,{\blur4}說點什麼吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Say something please.{\r}
+Dialogue: 0,0:38:42.42,0:38:44.13,Default,NTP,0,0,0,,{\blur4}是女人這樣對你還是...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Do women do this to you or...{\r}
+Dialogue: 0,0:38:44.16,0:38:46.85,Default,NTP,0,0,0,,{\blur4}我這樣對女人 是兩情相悅的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I do this to women. With women.{\r}
+Dialogue: 0,0:38:47.20,0:38:48.56,Default,NTP,0,0,0,,{\blur4}跟希望我這麼做的女人一起{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Women who want me to.{\r}
+Dialogue: 0,0:38:59.39,0:39:02.88,Default,NTP,0,0,0,,{\blur4}- 你是施虐狂嗎 - 我是主人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You're a sadist? - I'm a dominant.{\r}
+Dialogue: 0,0:39:03.11,0:39:04.26,Default,NTP,0,0,0,,{\blur4}那是什麼意思{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What does that mean?{\r}
+Dialogue: 0,0:39:04.30,0:39:07.14,Default,NTP,0,0,0,,{\blur4}意思是我要你自願臣服於我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}It means I want you to willingly surrender yourself to me.{\r}
+Dialogue: 0,0:39:08.20,0:39:09.78,Default,NTP,0,0,0,,{\blur4}我為什麼要這麼做{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why would I do that?{\r}
+Dialogue: 0,0:39:10.77,0:39:15.63,Default,NTP,0,0,0,,{\blur4}- 討好我啊 - 怎樣討好你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- To please me. - Please you? How?{\r}
+Dialogue: 0,0:39:15.65,0:39:19.81,Default,NTP,0,0,0,,{\blur4}如果你按我的規則做 我會獎賞你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I have rules, if you follow them, I'll reward you.{\r}
+Dialogue: 0,0:39:20.13,0:39:22.56,Default,NTP,0,0,0,,{\blur4}如果你不做 我會懲罰你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}If you don't, I'll punish you.{\r}
+Dialogue: 0,0:39:22.58,0:39:26.18,Default,NTP,0,0,0,,{\blur4}你會懲罰我 你會對我用這些東西嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You'd punish me, you'd use this stuff on me?{\r}
+Dialogue: 0,0:39:27.69,0:39:31.57,Default,NTP,0,0,0,,{\blur4}- 是的 - 我能得到什麼好處{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Yes. - What would I get out of this?{\r}
+Dialogue: 0,0:39:34.57,0:39:35.79,Default,NTP,0,0,0,,{\blur4}我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Me.{\r}
+Dialogue: 0,0:39:49.67,0:39:54.16,Default,NTP,0,0,0,,{\blur4}如果我們達成協議 這將是你的房間{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}If we were to do this, this would be your room.{\r}
+Dialogue: 0,0:39:54.58,0:39:56.31,Default,NTP,0,0,0,,{\blur4}你想怎麼佈置都行{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You can decorate it however you like.{\r}
+Dialogue: 0,0:39:59.20,0:40:00.69,Default,NTP,0,0,0,,{\blur4}你想讓我搬過來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You want me to move in?{\r}
+Dialogue: 0,0:40:01.11,0:40:03.81,001,NTP,0,0,0,,{\blur4}不用搬進來 週五到週日來就好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Not full time, just Friday through to Sunday.{\r}
+Dialogue: 0,0:40:04.03,0:40:07.70,001,NTP,0,0,0,,{\blur4}我們可以商討一下細節{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We can negotiate the particulars.{\r}
+Dialogue: 0,0:40:07.70,0:40:11.08,001,NTP,0,0,0,,{\blur4}那我是和你睡在這裡嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So, I'd sleep in here with you?{\r}
+Dialogue: 0,0:40:11.41,0:40:16.07,001,NTP,0,0,0,,{\blur4}不 我睡樓下 我告訴過你 我不和別人同眠{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No I sleep downstairs. I told you, I don't sleep with anyone.{\r}
+Dialogue: 0,0:40:17.99,0:40:21.08,001,NTP,0,0,0,,{\blur4}如果我不想要那樣呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What if I don't want anything to do with that?{\r}
+Dialogue: 0,0:40:21.11,0:40:22.95,001,NTP,0,0,0,,{\blur4}我完全理解{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Then I understand completely.{\r}
+Dialogue: 0,0:40:23.60,0:40:26.27,001,NTP,0,0,0,,{\blur4}但那樣我們就沒有任何交集了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}But then we wouldn't have any sort of relationship at all?{\r}
+Dialogue: 0,0:40:26.40,0:40:28.97,001,NTP,0,0,0,,{\blur4}這是我唯一認可的情感關係{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}This is the only sort of relationship I have.{\r}
+Dialogue: 0,0:40:30.47,0:40:36.18,001,NTP,0,0,0,,{\blur4}- 為什麼 - 這就是我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Why? - It's the way I am.{\r}
+Dialogue: 0,0:40:44.57,0:40:48.47,001,NTP,0,0,0,,{\blur4}你說的協商是什麼意思{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}When you said negotiate, what did you mean?{\r}
+Dialogue: 0,0:40:48.49,0:40:52.19,001,NTP,0,0,0,,{\blur4}我已經準備了一份協議 非常詳盡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I already have the contract prepared. It's fairly detailed.{\r}
+Dialogue: 0,0:40:53.00,0:40:58.25,001,NTP,0,0,0,,{\blur4}你閱讀協議 然後我們商討哪些你願意或不願意做{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You will review it, and we'll negotiate what you are and not willing to try.{\r}
+Dialogue: 0,0:40:58.28,0:41:00.73,001,NTP,0,0,0,,{\blur4}我怎麼知道我願意嘗試什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}How can I know what I'd be willing to try?{\r}
+Dialogue: 0,0:41:01.39,0:41:05.66,001,NTP,0,0,0,,{\blur4}在性行為中 哪些行為是你無法接受的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well, when you had sex, was there anything you didn't like doing?{\r}
+Dialogue: 0,0:41:08.61,0:41:11.02,001,NTP,0,0,0,,{\blur4}要保持這種關係 我們必須對彼此坦誠{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We have to be honest with each other for this to work,{\r}
+Dialogue: 0,0:41:11.05,0:41:12.05,001,NTP,0,0,0,,{\blur4}好嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay?{\r}
+Dialogue: 0,0:41:14.99,0:41:21.40,001,NTP,0,0,0,,{\blur4}- 我... 我不知道 - 什麼意思\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I… I wouldn't know. - What do you mean?{\r}
+Dialogue: 0,0:41:24.79,0:41:29.44,001,NTP,0,0,0,,{\blur4}- 因為我還... 還沒有... - 你還是處女{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Because I haven't... - You're still a virgin?{\r}
+Dialogue: 0,0:41:30.65,0:41:32.16,001,NTP,0,0,0,,{\blur4}我剛才給你看了...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I've just shown you...{\r}
+Dialogue: 0,0:41:32.17,0:41:33.56,001,NTP,0,0,0,,{\blur4}我知道 我只是...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I know, I just...{\r}
+Dialogue: 0,0:41:33.99,0:41:37.82,001,NTP,0,0,0,,{\blur4}- 那其它類似的事呢 - 也沒有{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You've done other things, right? - No.{\r}
+Dialogue: 0,0:41:46.50,0:41:50.85,001,NTP,0,0,0,,{\blur4}- 這些年你都在做什麼 - 等待{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Where have you been? - Waiting.{\r}
+Dialogue: 0,0:41:52.11,0:41:54.25,001,NTP,0,0,0,,{\blur4}一定有大把男人為你癡迷{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Guys must throw themselves at you.{\r}
+Dialogue: 0,0:41:56.69,0:41:58.50,001,NTP,0,0,0,,{\blur4}那些都不是我想要的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}They're never what I've wanted.{\r}
+Dialogue: 0,0:42:04.31,0:42:05.85,001,NTP,0,0,0,,{\blur4}你又在咬嘴唇了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You are biting your lip.{\r}
+Dialogue: 0,0:42:18.09,0:42:21.36,001,NTP,0,0,0,,{\blur4}- 你在做什麼 - 糾正錯誤{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What are you doing? - Rectifying the situation.{\r}
+Dialogue: 0,0:42:21.49,0:42:22.91,001,NTP,0,0,0,,{\blur4}我是個錯誤{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I am a situation?{\r}
+Dialogue: 0,0:47:24.17,0:47:25.93,001,NTP,0,0,0,,{\blur4}你今早真有活力{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're energetic this morning.{\r}
+Dialogue: 0,0:47:27.75,0:47:30.62,001,NTP,0,0,0,,{\blur4}- 你餓了嗎 - 非常餓{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You hungry? - Very.{\r}
+Dialogue: 0,0:47:34.66,0:47:36.36,001,NTP,0,0,0,,{\blur4}因為我在做煎餅{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Because I'm making pancakes.{\r}
+Dialogue: 0,0:47:44.06,0:47:45.79,001,NTP,0,0,0,,{\blur4}幫你清理乾淨{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Lets get you cleaned up.{\r}
+Dialogue: 0,0:48:35.91,0:48:37.42,001,NTP,0,0,0,,{\blur4}你相信我嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Do you trust me?{\r}
+Dialogue: 0,0:48:49.48,0:48:50.75,001,NTP,0,0,0,,{\blur4}呆在這裡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Stay here.{\r}
+Dialogue: 0,0:49:07.65,0:49:08.82,001,NTP,0,0,0,,{\blur4}伸出你的手{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hold out your wrists.{\r}
+Dialogue: 0,0:49:25.58,0:49:28.94,001,NTP,0,0,0,,{\blur4}手放這 不要動 明白嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hold them there. Understand?{\r}
+Dialogue: 0,0:49:30.75,0:49:35.67,001,NTP,0,0,0,,{\blur4}- 說 你明白了 - 我不會把手放下來的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Tell me you understand. - I won't move my arms.{\r}
+Dialogue: 0,0:49:36.70,0:49:37.80,001,NTP,0,0,0,,{\blur4}乖女孩{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Good girl.{\r}
+Dialogue: 0,0:49:47.94,0:49:50.23,001,NTP,0,0,0,,{\blur4}- 不要動 - 好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Stay still. - Okay.{\r}
+Dialogue: 0,0:49:59.90,0:50:03.00,001,NTP,0,0,0,,{\blur4}- 說你要 - 要什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Say yes. - To what.{\r}
+Dialogue: 0,0:50:03.03,0:50:04.63,001,NTP,0,0,0,,{\blur4}說你想要成為我的人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Being mine.{\r}
+Dialogue: 0,0:50:07.47,0:50:10.97,001,NTP,0,0,0,,{\blur4}克裡斯蒂安{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian!{\r}
+Dialogue: 0,0:50:10.99,0:50:13.44,001,NTP,0,0,0,,{\blur4}- 糟糕 - 怎麼了 - 是我媽{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Shit. - What? - Its my mother.{\r}
+Dialogue: 0,0:50:17.63,0:50:19.25,001,NTP,0,0,0,,{\blur4}- 我什麼都沒穿 - 快穿衣服{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I'm naked. - Get dressed.{\r}
+Dialogue: 0,0:50:21.46,0:50:26.06,001,NTP,0,0,0,,{\blur4}沒必要帶我參觀 別帶我兜圈子了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No need to show me around, no need to hover.{\r}
+Dialogue: 0,0:50:26.09,0:50:27.91,001,NTP,0,0,0,,{\blur4}他還在睡覺 格雷醫生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}He's sleeping, Dr. Grey.{\r}
+Dialogue: 0,0:50:27.91,0:50:29.59,001,NTP,0,0,0,,{\blur4}還在睡 他從來不賴床{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Still sleeping? He never sleeps in.{\r}
+Dialogue: 0,0:50:29.62,0:50:31.04,001,NTP,0,0,0,,{\blur4}這個時間點更不會了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Certainly not at this hour.{\r}
+Dialogue: 0,0:50:31.07,0:50:32.69,001,NTP,0,0,0,,{\blur4}除非他生病了 啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Unless of course he's ill is he? Ah.{\r}
+Dialogue: 0,0:50:33.01,0:50:34.22,001,NTP,0,0,0,,{\blur4}抱歉 格雷先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Sorry Mr. Grey.{\r}
+Dialogue: 0,0:50:34.22,0:50:36.16,001,NTP,0,0,0,,{\blur4}沒關係 我知道她喜歡追根問底{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its fine, I know how she can be.{\r}
+Dialogue: 0,0:50:36.19,0:50:40.92,001,NTP,0,0,0,,{\blur4}她 親愛的我知道你在躲我 但至少也要{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She? Darling you can try to avoid me, but the least you can do is{\r}
+Dialogue: 0,0:50:40.96,0:50:43.23,001,NTP,0,0,0,,{\blur4}像正常人一樣叫我媽媽吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}call me by my correct name, which is mama.{\r}
+Dialogue: 0,0:50:43.65,0:50:46.78,001,NTP,0,0,0,,{\blur4}- 嗨 - 天哪{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Hi. - Oh, dear god.{\r}
+Dialogue: 0,0:50:46.81,0:50:49.49,001,NTP,0,0,0,,{\blur4}媽媽 這是安娜斯塔西婭·斯蒂爾 安娜 這是我母親{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Mother, Anastasia Steele. Ana, meet my mother.{\r}
+Dialogue: 0,0:50:49.51,0:50:51.08,001,NTP,0,0,0,,{\blur4}格蕾絲醫生 特雷安·格雷{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Dr. Grace, Trevelyan Grey.{\r}
+Dialogue: 0,0:50:51.11,0:50:54.62,001,NTP,0,0,0,,{\blur4}你不知道我見到你有多高興{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You have no idea how delighted I am to meet you.{\r}
+Dialogue: 0,0:50:54.64,0:50:56.82,001,NTP,0,0,0,,{\blur4}很高興認識你 格雷醫生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its nice to meet you too, Dr. Grey.{\r}
+Dialogue: 0,0:50:56.84,0:50:59.35,001,NTP,0,0,0,,{\blur4}叫我格蕾絲 她很漂亮{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Grace. She's very pretty.{\r}
+Dialogue: 0,0:50:59.38,0:51:00.63,001,NTP,0,0,0,,{\blur4}你很漂亮{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You are very pretty.{\r}
+Dialogue: 0,0:51:00.65,0:51:01.65,001,NTP,0,0,0,,{\blur4}謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thanks.{\r}
+Dialogue: 0,0:51:02.66,0:51:04.85,001,NTP,0,0,0,,{\blur4}不是說好來之前打個電話的嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What happened to calling before dropping by?{\r}
+Dialogue: 0,0:51:05.27,0:51:08.32,001,NTP,0,0,0,,{\blur4}然後讓你的得力助手帶我在這轉圈子 還是算了吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And have your head-henchman give me the run around here, no thank you.{\r}
+Dialogue: 0,0:51:08.34,0:51:12.29,001,NTP,0,0,0,,{\blur4}我寧願來試試運氣 我就在附近{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'll take my chances. Well I was in the neighbourhood and I thought perhaps{\r}
+Dialogue: 0,0:51:12.31,0:51:13.65,001,NTP,0,0,0,,{\blur4}也許我們可以一起吃個午飯{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}we could have lunch.{\r}
+Dialogue: 0,0:51:13.68,0:51:15.94,001,NTP,0,0,0,,{\blur4}今天不行 我要開車送安娜回家{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I can't today, I have to drive Ana home.{\r}
+Dialogue: 0,0:51:17.78,0:51:20.58,001,NTP,0,0,0,,{\blur4}沒事 你去接吧 我帶我媽出去{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its okay, take it, I was just showing mother out.{\r}
+Dialogue: 0,0:51:20.62,0:51:21.62,001,NTP,0,0,0,,{\blur4}失陪了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Excuse me.{\r}
+Dialogue: 0,0:51:23.05,0:51:24.28,001,NTP,0,0,0,,{\blur4}安娜斯塔西婭{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Anastasia!{\r}
+Dialogue: 0,0:51:24.30,0:51:25.93,001,NTP,0,0,0,,{\blur4}- 凱特 等一下 - 很高興認識你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Kate, wait. - It was a joy to meet you.{\r}
+Dialogue: 0,0:51:26.45,0:51:29.29,001,NTP,0,0,0,,{\blur4}下周我要在家裡辦一個家庭聚會{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm having the whole family next week for dinner at my house.{\r}
+Dialogue: 0,0:51:29.60,0:51:32.93,001,NTP,0,0,0,,{\blur4}克裡斯蒂安的妹妹米雅會從巴黎回來 你一定要來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian's sister Mia is back from Paris, you must come.{\r}
+Dialogue: 0,0:51:32.95,0:51:34.38,001,NTP,0,0,0,,{\blur4}我們到時候再看 母親{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We'll see, mother.{\r}
+Dialogue: 0,0:51:34.40,0:51:36.59,001,NTP,0,0,0,,{\blur4}- 很高興認識你 - 我也是{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Nice to meet you. - You too.{\r}
+Dialogue: 0,0:51:38.73,0:51:39.73,001,NTP,0,0,0,,{\blur4}凱特{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Kate.{\r}
+Dialogue: 0,0:51:40.76,0:51:42.03,001,NTP,0,0,0,,{\blur4}謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thank you.{\r}
+Dialogue: 0,0:51:47.18,0:51:49.32,001,NTP,0,0,0,,{\blur4}我現在不方便說話 凱特{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I can't talk about it right now, Kate.{\r}
+Dialogue: 0,0:51:54.50,0:51:56.67,001,NTP,0,0,0,,{\blur4}我得掛了 我會再打給你的 好嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I gotta go, I'll call you back, okay?{\r}
+Dialogue: 0,0:52:15.09,0:52:16.90,001,NTP,0,0,0,,{\blur4}電話裡沒什麼事吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Everything okay with the phone call?{\r}
+Dialogue: 0,0:52:19.10,0:52:22.68,001,NTP,0,0,0,,{\blur4}沒什麼大事 我喜歡你媽媽{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yeah, nothing important. I liked your mom.{\r}
+Dialogue: 0,0:52:23.89,0:52:26.97,001,NTP,0,0,0,,{\blur4}她很激動 她從沒見過我和一個女人在一起{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She's excited. She's never seen me with a woman before.{\r}
+Dialogue: 0,0:52:27.60,0:52:29.19,001,NTP,0,0,0,,{\blur4}你是第一個{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're the first.{\r}
+Dialogue: 0,0:52:34.77,0:52:36.31,001,NTP,0,0,0,,{\blur4}怎麼了 安娜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What is it, Ana?{\r}
+Dialogue: 0,0:52:38.21,0:52:42.32,001,NTP,0,0,0,,{\blur4}我只是... 這裡住過多少女人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I just... How many women have stayed in here?{\r}
+Dialogue: 0,0:52:44.24,0:52:45.49,001,NTP,0,0,0,,{\blur4}十五個{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}15.{\r}
+Dialogue: 0,0:52:47.74,0:52:51.81,001,NTP,0,0,0,,{\blur4}- 好多女人 - 我告訴過你 如果你想退出...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Thats a lot of women. - I told you before, if you want out...{\r}
+Dialogue: 0,0:52:51.83,0:52:53.54,001,NTP,0,0,0,,{\blur4}我不想退出 我只是...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I don't want out, I just...{\r}
+Dialogue: 0,0:52:53.55,0:52:55.26,001,NTP,0,0,0,,{\blur4}我沒有準備好接受鞭打和折磨{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I am not exactly jumping at the opportunity{\r}
+Dialogue: 0,0:52:55.28,0:52:57.99,001,NTP,0,0,0,,{\blur4}以及你紅色的疼痛屋{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}to get your whips, torture and your red room of pain.{\r}
+Dialogue: 0,0:52:58.02,0:53:01.32,001,NTP,0,0,0,,{\blur4}那間屋子帶來的更多是快感 我保證{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The red room is much more about pleasure. I promise you.{\r}
+Dialogue: 0,0:53:05.61,0:53:08.87,001,NTP,0,0,0,,{\blur4}我們還是會一起吃飯 看電影...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Will we still go out to dinner, and movies and...{\r}
+Dialogue: 0,0:53:10.04,0:53:11.71,001,NTP,0,0,0,,{\blur4}這些都不是我喜歡的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}That's not really my thing.{\r}
+Dialogue: 0,0:53:14.05,0:53:15.61,001,NTP,0,0,0,,{\blur4}嘗試接受新鮮事物{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Try to keep an open mind.{\r}
+Dialogue: 0,0:53:19.24,0:53:23.31,001,NTP,0,0,0,,{\blur4}如果你服從我 我會只是你一個人的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}If you agree to be my submissive, I will be devoted to you.{\r}
+Dialogue: 0,0:53:25.54,0:53:29.21,001,NTP,0,0,0,,{\blur4}這才是我想要的 而且我想和你一起{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}This is what I want. And I want it with you.{\r}
+Dialogue: 0,0:53:34.67,0:53:39.43,001,NTP,0,0,0,,{\blur4}我為什麼還要睡在這裡 昨晚我們不是一起睡了嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why do I have to sleep in here? We slept in the same bed last night.{\r}
+Dialogue: 0,0:53:39.55,0:53:41.19,001,NTP,0,0,0,,{\blur4}像正常情侶那樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Like normal people.{\r}
+Dialogue: 0,0:53:41.62,0:53:44.65,001,NTP,0,0,0,,{\blur4}別再糾結睡哪兒的問題了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Try not to get hung up on the sleeping arrangements.{\r}
+Dialogue: 0,0:53:45.42,0:53:48.30,001,NTP,0,0,0,,{\blur4}如果你簽了合同 你會想要個自己的房間的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}If you agree to do this, you're gonna want your own room.{\r}
+Dialogue: 0,0:53:48.63,0:53:50.79,001,NTP,0,0,0,,{\blur4}就因為我是你的性奴隸{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why, because I'll be your sex slave?{\r}
+Dialogue: 0,0:53:51.40,0:53:54.41,001,NTP,0,0,0,,{\blur4}不想在這裡談這些 我們下樓再談{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I don't wanna do this here, lets talk downstairs.{\r}
+Dialogue: 0,0:53:54.43,0:53:58.43,Default,NTP,0,0,0,,{\blur4}不用了謝謝 我想我還是會堅持己見的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No. I think I'll hold on to my freewill a little while longer, thank you.{\r}
+Dialogue: 0,0:54:02.37,0:54:05.17,Default,NTP,0,0,0,,{\blur4}事實上 我現在想回家了 我能回家嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Actually you know what, I would like to go home, can I go home?{\r}
+Dialogue: 0,0:54:09.31,0:54:12.39,Default,NTP,0,0,0,,{\blur4}- 哪輛車是你的 - 全是我的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Which one's yours? - All of them.{\r}
+Dialogue: 0,0:55:02.69,0:55:04.32,Default,NTP,0,0,0,,{\blur4}我們下車走走{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Lets go for a walk.{\r}
+Dialogue: 0,0:55:07.07,0:55:09.90,Default,NTP,0,0,0,,{\blur4}你什麼時候開始玩這個的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}How did you start doing this?{\r}
+Dialogue: 0,0:55:09.90,0:55:12.13,Default,NTP,0,0,0,,{\blur4}我母親的朋友教我的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}One of my mother's friends.{\r}
+Dialogue: 0,0:55:13.80,0:55:17.38,Default,NTP,0,0,0,,{\blur4}- 那時我只有十五歲 - 她引誘你做的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I was 15. - She seduced you?{\r}
+Dialogue: 0,0:55:17.90,0:55:21.36,Default,NTP,0,0,0,,{\blur4}我做了她六年的性奴隸{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I was her submissive for six years.{\r}
+Dialogue: 0,0:55:21.36,0:55:24.83,Default,NTP,0,0,0,,{\blur4}真的 你母親知道這些嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Seriously, does your mother know that?{\r}
+Dialogue: 0,0:55:24.85,0:55:29.39,Default,NTP,0,0,0,,{\blur4}當然不知道 我家沒人知道這個{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Of course not. No one in my family knows about this.{\r}
+Dialogue: 0,0:55:30.11,0:55:31.60,Default,NTP,0,0,0,,{\blur4}他們都不知道我有這個愛好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Part of me.{\r}
+Dialogue: 0,0:55:34.20,0:55:38.88,Default,NTP,0,0,0,,{\blur4}所以是羅賓遜夫人教你這些的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So she introduced you to all of this? Mrs Robinson?{\r}
+Dialogue: 0,0:55:39.69,0:55:42.97,Default,NTP,0,0,0,,{\blur4}羅賓遜夫人 我會告訴她你是這麼稱呼她的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Mrs Robinson? I'll tell her you said that.{\r}
+Dialogue: 0,0:55:42.97,0:55:43.95,Default,NTP,0,0,0,,{\blur4}她一定很喜歡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She'll love it.{\r}
+Dialogue: 0,0:55:44.87,0:55:50.64,Default,NTP,0,0,0,,{\blur4}- 你還和她聯繫 - 看情況 我們是朋友{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You still talk to her? - On occasions. We're friends.{\r}
+Dialogue: 0,0:55:59.00,0:56:06.80,Default,NTP,0,0,0,,{\blur4}安娜 我知道這有些難以接受 一開始我也這樣覺得{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ana. I know how intimidating this is. I felt the same at first.{\r}
+Dialogue: 0,0:56:06.83,0:56:11.44,Default,NTP,0,0,0,,{\blur4}那... 是什麼讓你改變了想法\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well… What made you change your mind?{\r}
+Dialogue: 0,0:56:14.43,0:56:20.54,Default,NTP,0,0,0,,{\blur4}被別人控制的時候 我感到很自由{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}By giving up control, I felt free, from responsibilities.{\r}
+Dialogue: 0,0:56:20.56,0:56:24.59,Default,NTP,0,0,0,,{\blur4}沒有責任 不用做決定 讓人很有安全感{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}From making decisions. I felt safe.{\r}
+Dialogue: 0,0:56:25.57,0:56:27.41,Default,NTP,0,0,0,,{\blur4}你也會這樣感覺的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You will too, you'll see.{\r}
+Dialogue: 0,0:56:30.22,0:56:33.16,Default,NTP,0,0,0,,{\blur4}我以前從未帶別人一起坐直升機{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I never took anyone in the helicopter.{\r}
+Dialogue: 0,0:56:34.40,0:56:39.43,Default,NTP,0,0,0,,{\blur4}沒在我自己的床上做過愛 也沒讓任何人睡在我旁邊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Never had sex in my own bed. Never slept with anyone.{\r}
+Dialogue: 0,0:56:39.76,0:56:43.72,Default,NTP,0,0,0,,{\blur4}從來沒有 除了你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ever. Only you.{\r}
+Dialogue: 0,0:57:12.30,0:57:15.20,Default,NTP,0,0,0,,{\blur4}這是合同 仔細讀讀{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}This is the contract. Read it carefully.{\r}
+Dialogue: 0,0:57:15.53,0:57:17.65,Default,NTP,0,0,0,,{\blur4}有任何疑問就給我發郵件{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Email me if you have any questions.{\r}
+Dialogue: 0,0:57:18.09,0:57:20.06,Default,NTP,0,0,0,,{\blur4}我告訴過你 我的電腦壞了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I told you, my computer's down.{\r}
+Dialogue: 0,0:57:20.08,0:57:21.51,Default,NTP,0,0,0,,{\blur4}好好考慮合同內容{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Just consider it okay?{\r}
+Dialogue: 0,0:57:27.41,0:57:29.06,Default,NTP,0,0,0,,{\blur4}我十分希望你能同意{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I really hope you say yes.{\r}
+Dialogue: 0,0:57:39.52,0:57:42.81,Default,NTP,0,0,0,,{\blur4}- 謝謝你載我回家 - 回見寶貝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Thanks for the ride. - Laters baby.{\r}
+Dialogue: 0,0:57:48.12,0:57:50.34,Default,NTP,0,0,0,,{\blur4}- 呃 - 已經裝好了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Um. - Okay, you're all set.{\r}
+Dialogue: 0,0:57:50.46,0:57:51.45,Default,NTP,0,0,0,,{\blur4}你室友讓我進來的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Your roommate let me in.{\r}
+Dialogue: 0,0:57:51.48,0:57:52.92,Default,NTP,0,0,0,,{\blur4}你大概什麼事忘記告訴我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I just figured you forgot to tell me about it.{\r}
+Dialogue: 0,0:57:52.94,0:57:55.92,Default,NTP,0,0,0,,{\blur4}- 我看上去美嗎 - 忘記告訴你什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Do I look okay? - Tell you about what?{\r}
+Dialogue: 0,0:57:55.96,0:57:58.63,Default,NTP,0,0,0,,{\blur4}- 在這裡簽名 - 等等 你沒送錯公寓嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Just sign here. - Hold on, do you have the right apartment?{\r}
+Dialogue: 0,0:57:58.65,0:58:00.31,Default,NTP,0,0,0,,{\blur4}你是安娜斯塔西婭·斯蒂爾嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Anastasia Steele?{\r}
+Dialogue: 0,0:58:07.39,0:58:09.85,Default,NTP,0,0,0,,{\blur4}- 好好玩 - 又一個禮物{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Enjoy. - Another gift huh?{\r}
+Dialogue: 0,0:58:09.87,0:58:12.39,Default,NTP,0,0,0,,{\blur4}說好的鮮花巧克力呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What happened to flowers and chocolate?{\r}
+Dialogue: 0,0:58:12.41,0:58:14.34,Default,NTP,0,0,0,,{\blur4}我想聽你說說怎麼回事{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm dying to hear everything, but{\r}
+Dialogue: 0,0:58:14.38,0:58:16.52,Default,NTP,0,0,0,,{\blur4}但是我必須要走了 我和艾略特要去吃飯{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I have to run right now, cause Elliot and I are having dinner.{\r}
+Dialogue: 0,0:58:16.55,0:58:18.06,Default,NTP,0,0,0,,{\blur4}吃完飯再去看演出{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And then we're seeing a show at the Gorge.{\r}
+Dialogue: 0,0:58:18.12,0:58:21.11,Default,NTP,0,0,0,,{\blur4}對了 荷西給你打了兩次電話{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Jose called for you, twice, by the way.{\r}
+Dialogue: 0,0:58:21.33,0:58:25.57,Default,NTP,0,0,0,,{\blur4}- 郵差來過了 - 噢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- The mailer had come? - Oh um...{\r}
+Dialogue: 0,0:58:25.60,0:58:27.92,Default,NTP,0,0,0,,{\blur4}這是我畢業論文的筆記 我落在學校了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}These are my thesis notes, I left them at school.{\r}
+Dialogue: 0,0:58:28.31,0:58:30.15,Default,NTP,0,0,0,,{\blur4}好吧 這是昨天的信{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh okay, well there's yesterday's mail.{\r}
+Dialogue: 0,0:58:39.51,0:58:44.33,Default,NTP,0,0,0,,{\blur4}- 怎麼了 - 不知道 你看上去不太一樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What? - I don't know. You look... different.{\r}
+Dialogue: 0,0:58:45.10,0:58:48.52,Default,NTP,0,0,0,,{\blur4}- 我感覺也不一樣了 - 當然啦{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I feel different. - Of course you do.{\r}
+Dialogue: 0,0:58:50.46,0:58:52.92,Default,NTP,0,0,0,,{\blur4}- 時間到了 - 再見{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Okay. - Bye.{\r}
+Dialogue: 0,0:58:52.96,0:58:54.11,Default,NTP,0,0,0,,{\blur4}再見{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Bye.{\r}
+Dialogue: 0,0:59:41.01,0:59:43.70,Default,NTP,0,0,0,,{\blur4}以下是一份由法律約束的合同條款{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The following are the terms of a binding contract...{\r}
+Dialogue: 0,0:59:44.75,0:59:49.22,Default,NTP,0,0,0,,{\blur4}合同的兩方是掌控著和服從者 這份合同最基本的目的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Between the dominant and the submissive. The fundamental purpose of this contract...{\r}
+Dialogue: 0,0:59:49.24,0:59:53.41,Default,NTP,0,0,0,,{\blur4}是讓服從者探索她的性慾 以及她對安全的極限體驗{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Is to allow the submissive to explore her sensuality, and her limits of safeness.{\r}
+Dialogue: 0,0:59:54.68,0:59:58.43,Default,NTP,0,0,0,,{\blur4}掌控者與服從者均認知且認同{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The dominant and the submissive agree and acknowledge that all that occurs{\r}
+Dialogue: 0,0:59:58.46,1:00:00.12,Default,NTP,0,0,0,,{\blur4}基於這份合同所發生的一切 都是經過雙方同意{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}under the terms of this contract will be consensual,{\r}
+Dialogue: 0,1:00:00.12,1:00:02.06,Default,NTP,0,0,0,,{\blur4}且對外保密的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}confidential.{\r}
+Dialogue: 0,1:00:02.18,1:00:05.65,Default,NTP,0,0,0,,{\blur4}受本合同內容中雙方的意願和安全問題所限制{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And subject to the agreed limits and safety procedures set out in this contract.{\r}
+Dialogue: 0,1:00:05.67,1:00:11.14,Default,NTP,0,0,0,,{\blur4}服從者必須同意掌控著提出的任何{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The submissive will agree to any{\r}
+Dialogue: 0,1:00:11.17,1:00:14.23,Default,NTP,0,0,0,,{\blur4}他認為合適並且令人愉快的性事{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}sexual activity deemed fit and pleasurable by the dominant,{\r}
+Dialogue: 0,1:00:14.26,1:00:17.20,Default,NTP,0,0,0,,{\blur4}法律不允許的活動除外{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Excepting those activities, outlined in Hard Limits.{\r}
+Dialogue: 0,1:00:20.03,1:00:21.28,Default,,0000,0000,0000,,...真的 很感謝\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}...so much. Thank you.{\r}
+Dialogue: 0,1:00:21.36,1:00:25.24,Default,,0000,0000,0000,,服從者不能酗酒 吸煙 吸毒\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The Submissive will not drink to excess, smoke, or take recreational drugs,{\r}
+Dialogue: 0,1:00:25.62,1:00:28.08,Default,,0000,0000,0000,,或者做出任何可能傷害身體的事\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}or put her person into any unnecessary risk.{\r}
+Dialogue: 0,1:00:30.33,1:00:32.79,Default,,0000,0000,0000,,服從者不能與掌控者以外的\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The Submissive will not enter into sexual relations{\r}
+Dialogue: 0,1:00:32.87,1:00:34.88,Default,,0000,0000,0000,,任何人發生性行為\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}with anyone other than the Dominant.{\r}
+Dialogue: 0,1:00:36.75,1:00:39.38,Default,,0000,0000,0000,,服從者需要從掌控者指定的醫師處\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The Submissive agrees to procure oral contraception{\r}
+Dialogue: 0,1:00:39.46,1:00:42.59,Default,,0000,0000,0000,,獲得並服用口服避孕藥\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}from a physician of the Dominant's choosing.{\r}
+Dialogue: 0,1:00:42.93,1:00:44.55,Default,,0000,0000,0000,,服從者必須嚴格依據附錄四里面\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The Submissive will eat regularly{\r}
+Dialogue: 0,1:00:44.64,1:00:46.30,Default,,0000,0000,0000,,提到的食物列表 規律飲食\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}to maintain her health and well-being{\r}
+Dialogue: 0,1:00:46.39,1:00:49.06,Default,,0000,0000,0000,,以保持健康和體型\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}from a prescribed list of foods. Appendix Four.{\r}
+Dialogue: 0,1:00:50.31,1:00:53.52,Default,,0000,0000,0000,,服從者必須無條件地接受掌控者的指示\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The Submissive will obey any instruction given by the Dominant.{\r}
+Dialogue: 0,1:00:54.10,1:00:56.69,Default,,0000,0000,0000,,立刻執行 毫不猶豫\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She will do so eagerly and without hesitation.{\r}
+Dialogue: 0,1:00:58.73,1:01:00.65,Default,,0000,0000,0000,,服從者未經掌控者允許\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The Submissive may not touch the Dominant{\r}
+Dialogue: 0,1:01:00.74,1:01:03.07,Default,,0000,0000,0000,,不得觸碰掌控者\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}without his expressed permission to do so.{\r}
+Dialogue: 0,1:01:04.49,1:01:06.24,Default,,0000,0000,0000,,服從者必須時刻對掌控者\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The Submissive shall always conduct herself{\r}
+Dialogue: 0,1:01:06.32,1:01:08.12,Default,,0000,0000,0000,,保持尊敬的態度\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}in a respectful manner to the Dominant,{\r}
+Dialogue: 0,1:01:08.24,1:01:11.29,Default,,0000,0000,0000,,只能稱呼掌控者 "先生" "格雷先生"\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}and she'll address him only as "Sir," "Mr. Grey..."{\r}
+Dialogue: 0,1:01:11.58,1:01:13.91,Default,,0000,0000,0000,,或者任何掌控者允許的其他稱謂\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}...or such other title as the Dominant may direct.{\r}
+Dialogue: 0,1:01:15.63,1:01:19.88,Default,,0000,0000,0000,,掌控者依據服從者希望被調教的方式\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The Dominant may flog, spank, whip, or corporally punish the Submissive{\r}
+Dialogue: 0,1:01:19.96,1:01:23.09,Default,,0000,0000,0000,,鞭打 拍打 抽打 或者懲罰服從者\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}as he sees fit, for purposes of discipline{\r}
+Dialogue: 0,1:01:23.43,1:01:24.72,Default,,0000,0000,0000,,只為取悅掌控者\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}or for his personal enjoyment.{\r}
+Dialogue: 0,1:01:25.26,1:01:26.90,Default,NTP,0,0,0,,{\blur4}安全詞"黃"{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The safe word yellow{\r}
+Dialogue: 0,1:01:26.93,1:01:29.00,Default,NTP,0,0,0,,{\blur4}是當服從者將要達到她的極限時{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}will be used to bring the attention of the dominant{\r}
+Dialogue: 0,1:01:29.02,1:01:31.42,Default,NTP,0,0,0,,{\blur4}用來引起掌控者注意的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}that the submissive is close to her limit.{\r}
+Dialogue: 0,1:01:31.44,1:01:33.22,Default,NTP,0,0,0,,{\blur4}而說出安全詞紅則代表著{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}When the safe word Red is spoken.{\r}
+Dialogue: 0,1:01:33.25,1:01:35.23,Default,NTP,0,0,0,,{\blur4}掌控者會完全並立即{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The dominantes actions will cease completely{\r}
+Dialogue: 0,1:01:35.26,1:01:37.02,Default,NTP,0,0,0,,{\blur4}停下他的動作{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}and immediately.{\r}
+Dialogue: 0,1:01:37.05,1:01:38.80,Default,NTP,0,0,0,,{\blur4}服從者{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}submissive{\r}
+Dialogue: 0,1:01:41.10,1:01:44.87,Default,NTP,0,0,0,,{\blur4}服從者是否同意雙手被縛行為受限{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Does the submissive agree to be restrained, with hands bound?{\r}
+Dialogue: 0,1:01:44.89,1:01:47.68,Default,NTP,0,0,0,,{\blur4}服從者是否同意被蒙住眼睛{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Does the submissive consent to being blindfolded?{\r}
+Dialogue: 0,1:01:47.91,1:01:50.58,Default,NTP,0,0,0,,{\blur4}服從者是否同意被塞口{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Does the submissive consent to be gagged?{\r}
+Dialogue: 0,1:01:50.60,1:01:54.18,Default,NTP,0,0,0,,{\blur4}服從者願意體驗怎樣程度的痛感{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}How much pain is the submissive willing to experience?{\r}
+Dialogue: 0,1:02:32.23,1:02:33.53,Default,NTP,0,0,0,,{\blur4}克裡斯蒂安{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian.{\r}
+Dialogue: 0,1:02:34.35,1:02:37.00,Default,NTP,0,0,0,,{\blur4}瞭解我很高興 是麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its been nice knowing me has it?{\r}
+Dialogue: 0,1:02:50.26,1:02:53.84,Default,NTP,0,0,0,,{\blur4}那讓我提醒你到底有多高興{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Let me remind you, how nice it was.{\r}
+Dialogue: 0,1:03:01.81,1:03:03.29,Default,NTP,0,0,0,,{\blur4}這是你想要的嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Is this what you want?{\r}
+Dialogue: 0,1:03:31.22,1:03:32.58,Default,NTP,0,0,0,,{\blur4}別出聲{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Don't make a sound.{\r}
+Dialogue: 0,1:04:59.56,1:05:01.14,Default,,0000,0000,0000,,剛才還好麼\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Was this "nice"?{\r}
+Dialogue: 0,1:05:33.17,1:05:34.45,Default,NTP,0,0,0,,{\blur4}剛才很棒{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}That was really nice.{\r}
+Dialogue: 0,1:05:42.77,1:05:44.36,Default,NTP,0,0,0,,{\blur4}你要對我做什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What are you doing to me?{\r}
+Dialogue: 0,1:06:02.82,1:06:04.27,Default,NTP,0,0,0,,{\blur4}這裡呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What about here?{\r}
+Dialogue: 0,1:06:07.14,1:06:10.52,Default,NTP,0,0,0,,{\blur4}為什麼不行 壞規矩了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why not? Is that breaking the rules?{\r}
+Dialogue: 0,1:06:14.37,1:06:18.46,Default,NTP,0,0,0,,{\blur4}- 說到規矩... - 我還沒想好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Speaking of which...- I haven't made up my mind yet.{\r}
+Dialogue: 0,1:06:25.79,1:06:27.19,Default,NTP,0,0,0,,{\blur4}- 你不留下來嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You're not staying?{\r}
+Dialogue: 0,1:06:28.65,1:06:32.82,Default,NTP,0,0,0,,{\blur4}- 我說過 我不和人同睡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I told you. I don't sleep with anyone.{\r}
+Dialogue: 0,1:06:33.98,1:06:35.58,Default,NTP,0,0,0,,{\blur4}我們能商量嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Can we negotiate?{\r}
+Dialogue: 0,1:07:57.69,1:07:59.62,Default,NTP,0,0,0,,{\blur4}挺漂亮的麻袋 斯蒂爾小姐{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thats a hell of a sack, Miss Steele.{\r}
+Dialogue: 0,1:08:09.15,1:08:10.44,Default,NTP,0,0,0,,{\blur4}商業會議{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Business meeting.{\r}
+Dialogue: 0,1:05:35.24,1:05:37.14,Default,NTP,0,0,0,,{\blur4}克裡斯蒂安·格雷 控制者{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Mr Christian Grey: Dominant.{\r}
+Dialogue: 0,1:05:37.14,1:05:39.35,Default,NTP,0,0,0,,{\blur4}安娜斯塔西婭·斯蒂爾 服從者{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Miss Anastasia Steele: Submissive.{\r}
+Dialogue: 0,1:08:36.51,1:08:39.60,Default,NTP,0,0,0,,{\blur4}- 不錯 - 我以前做過{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Impressive.- I've done this before.{\r}
+Dialogue: 0,1:08:42.55,1:08:45.74,Default,NTP,0,0,0,,{\blur4}- 我指的商業會議 - 哦{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Business meetings I mean. - Oh.{\r}
+Dialogue: 0,1:08:46.36,1:08:49.21,Default,NTP,0,0,0,,{\blur4}斯蒂爾小姐 這是你的會議{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Miss Steele. Your meeting.{\r}
+Dialogue: 0,1:08:51.29,1:08:55.46,001,NTP,0,0,0,,{\blur4}第一頁 刪掉我的舊地址並換成新的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Page 1... strike out my old address and replace it with the new one.{\r}
+Dialogue: 0,1:08:55.79,1:08:57.91,001,NTP,0,0,0,,{\blur4}一個疏忽 繼續{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}An oversight. Do go on.{\r}
+Dialogue: 0,1:08:58.34,1:09:00.98,001,NTP,0,0,0,,{\blur4}第三頁 章節十五到二十{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Page 3, section 15-20{\r}
+Dialogue: 0,1:09:01.40,1:09:05.20,001,NTP,0,0,0,,{\blur4}"服從者必須毫不猶豫地服從一切"{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}"The submissive shall submit to any sexual activity"{\r}
+Dialogue: 0,1:09:05.22,1:09:09.89,001,NTP,0,0,0,,{\blur4}"...控制者要求的性行為"{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}"... demanded by the dominant without hesitation or argument."{\r}
+Dialogue: 0,1:09:16.99,1:09:21.21,001,NTP,0,0,0,,{\blur4}翻到第五頁 附錄三  柔軟度限制{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Turn to page 5, appendix 3, soft limits.{\r}
+Dialogue: 0,1:09:21.98,1:09:25.03,001,NTP,0,0,0,,{\blur4}- 找到了 - 找到肛門拳交{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- With you.- Find anal fisting.{\r}
+Dialogue: 0,1:09:25.36,1:09:28.00,001,NTP,0,0,0,,{\blur4}- 我在聽 - 劃掉{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I'm all ears.- Strike it out.{\r}
+Dialogue: 0,1:09:32.86,1:09:35.17,001,NTP,0,0,0,,{\blur4}把陰道拳交也劃掉{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Strike out vaginal fisting too.{\r}
+Dialogue: 0,1:09:35.59,1:09:37.83,001,NTP,0,0,0,,{\blur4}- 你確定 - 是的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You sure? - Yep.{\r}
+Dialogue: 0,1:09:40.03,1:09:41.07,001,NTP,0,0,0,,{\blur4}同一頁{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Same page.{\r}
+Dialogue: 0,1:09:41.10,1:09:43.81,001,NTP,0,0,0,,{\blur4}"服從者可以接受的性玩具"{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}"Is the use of sex toys acceptable to the submissive"{\r}
+Dialogue: 0,1:09:43.83,1:09:46.68,001,NTP,0,0,0,,{\blur4}震動棒 可以 假陽具 可以{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Vibrators... okay, Dildos... fine.{\r}
+Dialogue: 0,1:09:47.44,1:09:50.76,001,NTP,0,0,0,,{\blur4}陰道鉗... 絕對不行{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Genital clamps... absolutely not.{\r}
+Dialogue: 0,1:09:51.09,1:09:57.09,001,NTP,0,0,0,,{\blur4}- 去掉了 - 肛門栓是什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Consider them gone.- What are butt plugs?{\r}
+Dialogue: 0,1:10:12.56,1:10:15.64,001,NTP,0,0,0,,{\blur4}你肯定和挺多人商量過這個保密協議{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You must go through quite a few non-disclosure agreements.{\r}
+Dialogue: 0,1:10:16.36,1:10:18.95,001,NTP,0,0,0,,{\blur4}我的職員只知道我告訴他們的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}My staff know only what I choose to tell them.{\r}
+Dialogue: 0,1:10:19.68,1:10:21.63,001,NTP,0,0,0,,{\blur4}請繼續 斯蒂爾小姐{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Please resume Miss Steele.{\r}
+Dialogue: 0,1:10:24.81,1:10:28.57,001,NTP,0,0,0,,{\blur4}還有 第五頁有些術語需要解釋{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Also, on page 5, there are some terms which need clarification.{\r}
+Dialogue: 0,1:10:30.06,1:10:33.52,001,NTP,0,0,0,,{\blur4}- 懸吊 - 用繩子吊在天花板上{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Suspension? - Hanging on a rope from the ceiling.{\r}
+Dialogue: 0,1:10:34.55,1:10:37.72,001,NTP,0,0,0,,{\blur4}- 出於什麼原因 - 為了你的快樂{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- For what possible reason? - For your pleasure.{\r}
+Dialogue: 0,1:10:38.32,1:10:43.06,001,NTP,0,0,0,,{\blur4}- 是麼 - 還有我的... 這可以考慮的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Really? - And mine... something to consider.{\r}
+Dialogue: 0,1:10:43.08,1:10:44.61,001,NTP,0,0,0,,{\blur4}要有限制{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No. Hard limit.{\r}
+Dialogue: 0,1:10:46.73,1:10:51.38,001,NTP,0,0,0,,{\blur4}"服從者是否可以接受繃帶"... 我對繩子很在行{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}"Is bondage acceptable to the submissive?"...  I'm good with rope.{\r}
+Dialogue: 0,1:10:52.45,1:10:56.06,001,NTP,0,0,0,,{\blur4}羽毛敷 手銬... 請把膠帶去掉{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Leather casts, hand cuffs...Please lose tape.{\r}
+Dialogue: 0,1:10:57.78,1:11:03.36,001,NTP,0,0,0,,{\blur4}- 還有什麼其它的 - 扎線帶{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- And whats others? - Cable ties?{\r}
+Dialogue: 0,1:11:06.52,1:11:10.28,001,NTP,0,0,0,,{\blur4}我想說我滿意你對這次會議的重視{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Can I just say how impressed I am with your commitment to this meeting?{\r}
+Dialogue: 0,1:11:11.75,1:11:15.76,001,NTP,0,0,0,,{\blur4}至此 我也準備給你些甜頭{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And in that spirit, I'm gonna offer something sweeter.{\r}
+Dialogue: 0,1:11:16.74,1:11:22.07,001,NTP,0,0,0,,{\blur4}那麼 每星期 你選一個晚上 我們約會{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}How about, once a week, on a night of your choosing, we go on a date.{\r}
+Dialogue: 0,1:11:23.26,1:11:30.16,001,NTP,0,0,0,,{\blur4}和普通情侶一樣... 晚餐 電影 滑冰{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Just like a regular couple... dinner movie, ice skating{\r}
+Dialogue: 0,1:11:30.19,1:11:35.28,001,NTP,0,0,0,,{\blur4}- 隨你所願 - 同意{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Whatever you want. - Accepted.{\r}
+Dialogue: 0,1:11:36.08,1:11:40.68,001,NTP,0,0,0,,{\blur4}- 你人真好 - 我建議加在附錄五里{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You're very kind.- I'll suggest it in Appendix 5.{\r}
+Dialogue: 0,1:11:56.21,1:11:58.84,001,NTP,0,0,0,,{\blur4}我想一直操你到下個禮拜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I would like to fuck you into the middle of next week.{\r}
+Dialogue: 0,1:12:01.81,1:12:05.67,001,NTP,0,0,0,,{\blur4}- 你這樣不公平 - 我從沒公平過{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You're not fighting fair.- I never have.{\r}
+Dialogue: 0,1:12:07.35,1:12:12.06,001,NTP,0,0,0,,{\blur4}我會再看一下這些改動然後再考慮做決定{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'll review all these changes and try to arrive at a decision.{\r}
+Dialogue: 0,1:12:12.09,1:12:15.18,001,NTP,0,0,0,,{\blur4}- 你想走 - 是的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You wanna leave? - Yes.{\r}
+Dialogue: 0,1:12:15.40,1:12:20.70,001,NTP,0,0,0,,{\blur4}但是你的身體告訴我不一樣的答案 比如說你的雙腿{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}But your body tells me something different. Your legs for instance.{\r}
+Dialogue: 0,1:12:21.78,1:12:24.76,001,NTP,0,0,0,,{\blur4}桌子下面你擠壓大腿的樣子{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The way you're pressing your thighs together under the table.{\r}
+Dialogue: 0,1:12:26.40,1:12:31.90,001,NTP,0,0,0,,{\blur4}你呼吸的變化 你的膚色{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The change in your breathing. And then your complexion.{\r}
+Dialogue: 0,1:12:32.13,1:12:34.94,001,NTP,0,0,0,,{\blur4}- 我的膚色 - 你臉紅了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- My complexion? - You're flushed.{\r}
+Dialogue: 0,1:12:35.92,1:12:38.88,001,NTP,0,0,0,,{\blur4}- 可能是酒的關係 - 是腎上腺素{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- That could just be the wine.- Its the adrenaline.{\r}
+Dialogue: 0,1:12:48.08,1:12:53.27,001,NTP,0,0,0,,{\blur4}如果我留下了 會發生什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Say I did stay. What would happen?{\r}
+Dialogue: 0,1:12:54.10,1:12:58.86,001,NTP,0,0,0,,{\blur4}首先 我會幫你把裙子脫掉{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}First, I would help you out of that little dress of yours.{\r}
+Dialogue: 0,1:12:59.88,1:13:02.63,001,NTP,0,0,0,,{\blur4}- 是嗎 - 之後我很欣喜地發現{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Yes? - Then I'd be pleased to discover...{\r}
+Dialogue: 0,1:13:02.66,1:13:05.66,001,NTP,0,0,0,,{\blur4}- 你下面什麼都沒穿 - 真的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- that you are naked underneath.- Really?{\r}
+Dialogue: 0,1:13:08.15,1:13:11.74,001,NTP,0,0,0,,{\blur4}- 接著我讓你彎下腰 - 在這裡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Then I would bend you over.- Right here?{\r}
+Dialogue: 0,1:13:12.51,1:13:15.95,001,NTP,0,0,0,,{\blur4}- 對 - 在這張桌子上{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Yes.- On this table?{\r}
+Dialogue: 0,1:13:17.41,1:13:18.41,001,NTP,0,0,0,,{\blur4}對{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes.{\r}
+Dialogue: 0,1:13:37.61,1:13:39.45,001,NTP,0,0,0,,{\blur4}感謝這次會議 格雷先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thank you for the meeting, Mr. Grey.{\r}
+Dialogue: 0,1:13:50.33,1:13:51.77,001,NTP,0,0,0,,{\blur4}這是我的車{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}This is me.{\r}
+Dialogue: 0,1:13:53.78,1:13:56.61,001,NTP,0,0,0,,{\blur4}你還不知道我是個古董車收藏者吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Didn't know I was a collector of classic cars huh?{\r}
+Dialogue: 0,1:13:59.19,1:14:01.89,001,NTP,0,0,0,,{\blur4}你確定我不能勸你留下{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're sure I can't persuade you to stay?{\r}
+Dialogue: 0,1:14:01.93,1:14:03.46,001,NTP,0,0,0,,{\blur4}晚安 克裡斯蒂安{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Goodnight, Christian.{\r}
+Dialogue: 0,1:14:03.49,1:14:07.52,001,NTP,0,0,0,,{\blur4}- 你什麼時候能做決定 - 過一陣 或許{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- When will you know? - Soon, maybe.{\r}
+Dialogue: 0,1:14:17.11,1:14:19.23,001,NTP,0,0,0,,{\blur4}為什麼我覺得你是在跟我告別{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why do I think you're telling me goodbye?{\r}
+Dialogue: 0,1:14:20.65,1:14:21.72,001,NTP,0,0,0,,{\blur4}因為我要走了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Because I'm leaving.{\r}
+Dialogue: 0,1:14:28.99,1:14:31.02,001,NTP,0,0,0,,{\blur4}演講準備好了嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You got your speech ready yet?{\r}
+Dialogue: 0,1:14:31.06,1:14:32.06,001,NTP,0,0,0,,{\blur4}差不多吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}More or less.{\r}
+Dialogue: 0,1:14:32.31,1:14:34.08,001,NTP,0,0,0,,{\blur4}- 安妮 - 爸{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Annie. - Dad!{\r}
+Dialogue: 0,1:14:36.20,1:14:37.20,001,NTP,0,0,0,,{\blur4}嗨{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hi.{\r}
+Dialogue: 0,1:14:37.29,1:14:39.80,001,NTP,0,0,0,,{\blur4}抱歉我遲到了 停車費了點時間{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Sorry I'm late, I had a hell of a time parking.{\r}
+Dialogue: 0,1:14:39.83,1:14:41.98,001,NTP,0,0,0,,{\blur4}沒關係 你來了就好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh thats okay, you're here, that's all that matters.{\r}
+Dialogue: 0,1:14:42.00,1:14:43.46,001,NTP,0,0,0,,{\blur4}開玩笑 我可不會錯過{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're kidding me, I wouldn't miss this for the world.{\r}
+Dialogue: 0,1:14:43.48,1:14:45.74,001,NTP,0,0,0,,{\blur4}我在凱特父母旁邊給你佔了個座位{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I saved you a seat next to Kate's parents, okay?{\r}
+Dialogue: 0,1:14:45.77,1:14:47.26,001,NTP,0,0,0,,{\blur4}- 斯蒂爾小姐讓我坐哪都行 - 好的 之後見{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I'll sit where you want, Miss Steele. - Okay. I'll see you after.{\r}
+Dialogue: 0,1:14:47.30,1:14:49.01,001,NTP,0,0,0,,{\blur4}祝你好運{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yeah, good luck out there.{\r}
+Dialogue: 0,1:14:49.23,1:14:52.29,001,NTP,0,0,0,,{\blur4}而且也是我們大學的重要捐助者{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And is also a major benefactor for our university.{\r}
+Dialogue: 0,1:14:52.79,1:14:56.36,001,NTP,0,0,0,,{\blur4}請大家和我一起歡迎 克裡斯蒂安 格雷先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Please join me in welcoming, Mr Christian Grey.{\r}
+Dialogue: 0,1:15:11.57,1:15:16.78,001,NTP,0,0,0,,{\blur4}謝謝 今天這極高讚譽讓我深受感動{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thank you. I am deeply moved by the great compliment accorded to me today.{\r}
+Dialogue: 0,1:15:17.55,1:15:21.81,001,NTP,0,0,0,,{\blur4}- 他好性感 - 天吶 太性感了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- He is so hot. - Oh god. He so is.{\r}
+Dialogue: 0,1:15:25.05,1:15:26.29,001,NTP,0,0,0,,{\blur4}我聽說他是個同性戀{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I heard he's gay.{\r}
+Dialogue: 0,1:15:26.32,1:15:28.96,001,NTP,0,0,0,,{\blur4}對於第三世界國家的可持續耕種方式{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Sustainable methods of farming for third world countries.{\r}
+Dialogue: 0,1:15:29.56,1:15:35.09,001,NTP,0,0,0,,{\blur4}目標 為了消除全球內的飢餓與貧窮{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The goal? To eradicate hunger and poverty across the globe.{\r}
+Dialogue: 0,1:15:39.05,1:15:43.92,001,NTP,0,0,0,,{\blur4}我自己就深知何為極度的飢餓{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I myself have known what its like to be profoundly hungry.{\r}
+Dialogue: 0,1:15:44.47,1:15:46.61,001,NTP,0,0,0,,{\blur4}所以這對我來說是一個重大的個人使命{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So this is a very personal mission for me.{\r}
+Dialogue: 0,1:15:55.90,1:15:58.15,001,NTP,0,0,0,,{\blur4}安娜斯塔西婭·斯蒂爾{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Anastasia Steele.{\r}
+Dialogue: 0,1:16:00.14,1:16:01.14,001,NTP,0,0,0,,{\blur4}謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thanks.{\r}
+Dialogue: 0,1:16:04.93,1:16:07.34,001,NTP,0,0,0,,{\blur4}恭喜 你一定很自豪{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Congratulations, you must be very proud.{\r}
+Dialogue: 0,1:16:07.36,1:16:09.75,001,NTP,0,0,0,,{\blur4}確實 順便說句 領帶很棒{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I am. Nice tie by the way?{\r}
+Dialogue: 0,1:16:09.75,1:16:11.96,001,NTP,0,0,0,,{\blur4}毫無疑問這成了我的最愛{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Truthfully its become my favourite.{\r}
+Dialogue: 0,1:16:12.78,1:16:15.69,001,NTP,0,0,0,,{\blur4}- 你有答案了嗎 - 我還在考慮{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Do you have your answer yet? - I'm still thinking.{\r}
+Dialogue: 0,1:16:15.71,1:16:18.61,001,NTP,0,0,0,,{\blur4}安娜斯塔西婭 請你試試我的方法{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Anastasia, just try it my way. Please.{\r}
+Dialogue: 0,1:16:19.54,1:16:21.46,001,NTP,0,0,0,,{\blur4}- 好吧 - 什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Okay. - What?{\r}
+Dialogue: 0,1:16:25.57,1:16:27.07,001,NTP,0,0,0,,{\blur4}- 恭喜你 - 謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Congratulations. - Thank you.{\r}
+Dialogue: 0,1:16:31.52,1:16:34.17,001,NTP,0,0,0,,{\blur4}- 爸 嗨 - 我真為你自豪 安妮{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Dad, hi! - I am so proud of you, Annie.{\r}
+Dialogue: 0,1:16:34.20,1:16:35.23,001,NTP,0,0,0,,{\blur4}謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thank you.{\r}
+Dialogue: 0,1:16:35.25,1:16:38.43,001,NTP,0,0,0,,{\blur4}凱特 最棒的演講 沒有之一{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh, Kate. Best speech of all others.{\r}
+Dialogue: 0,1:16:38.59,1:16:39.63,001,NTP,0,0,0,,{\blur4}- 謝謝 - 當然{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Thanks. - Of course.{\r}
+Dialogue: 0,1:16:39.64,1:16:40.79,001,NTP,0,0,0,,{\blur4}我同意{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yeah, I agree.{\r}
+Dialogue: 0,1:16:40.81,1:16:42.85,001,NTP,0,0,0,,{\blur4}- 安娜 嗨 - 嗨{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ana? Hi. - Hi.{\r}
+Dialogue: 0,1:16:43.61,1:16:45.93,001,NTP,0,0,0,,{\blur4}雷 你見過克裡斯蒂安 格雷了嗎 安娜的新男友{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ray, have you met Christian Grey? Ana's new boyfriend?{\r}
+Dialogue: 0,1:16:45.96,1:16:46.96,001,NTP,0,0,0,,{\blur4}嗨{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hi.{\r}
+Dialogue: 0,1:16:47.45,1:16:48.63,001,NTP,0,0,0,,{\blur4}非常榮幸見到你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Great pleasure to meet you.{\r}
+Dialogue: 0,1:16:48.66,1:16:50.15,001,NTP,0,0,0,,{\blur4}別客氣 我非常喜歡你的演講{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}My pleasure. I really enjoyed your speech.{\r}
+Dialogue: 0,1:16:50.17,1:16:50.91,001,NTP,0,0,0,,{\blur4}謝謝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thank you, sir.{\r}
+Dialogue: 0,1:16:50.93,1:16:53.11,001,NTP,0,0,0,,{\blur4}聽起來你做了一些很了不起的事情{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Sounds like you've accomplished some pretty impressive things.{\r}
+Dialogue: 0,1:16:53.14,1:16:54.02,001,NTP,0,0,0,,{\blur4}是什麼東西{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And what things?{\r}
+Dialogue: 0,1:16:54.05,1:16:57.03,001,NTP,0,0,0,,{\blur4}- 謝謝 - 好吧 我要去找我的家人了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Thank you. - Okay, I'm gonna go find my family,{\r}
+Dialogue: 0,1:16:57.06,1:16:58.88,001,NTP,0,0,0,,{\blur4}他們已經等不及要讓我出醜了 拜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}who are impatiently waiting to embarrass me. Bye.{\r}
+Dialogue: 0,1:16:58.90,1:17:01.88,001,NTP,0,0,0,,{\blur4}- 快來找我們玩哦 - 只要我收到請帖{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Visit us soon, yeah? - Soon as I get an invitation.{\r}
+Dialogue: 0,1:17:02.65,1:17:04.27,Default,NTP,0,0,0,,{\blur4}你們認識了多久{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So, how long you two known each other?{\r}
+Dialogue: 0,1:17:05.88,1:17:08.32,Default,NTP,0,0,0,,{\blur4}幾周 我們其實是在上次{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}A few weeks now, we actually met when Anastasia{\r}
+Dialogue: 0,1:17:08.34,1:17:10.49,Default,NTP,0,0,0,,{\blur4}安娜斯塔西婭為校刊採訪我時認識的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}interviewed me for the student newspaper.{\r}
+Dialogue: 0,1:17:10.51,1:17:12.80,Default,NTP,0,0,0,,{\blur4}- 拍張照 格雷先生 - 恕我失陪一下{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- A picture please Mr. Grey? - One minute excuse me.{\r}
+Dialogue: 0,1:17:16.10,1:17:17.29,Default,NTP,0,0,0,,{\blur4}笑一笑{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Big smile now.{\r}
+Dialogue: 0,1:17:46.20,1:17:50.39,Default,NTP,0,0,0,,{\blur4}慶祝你畢業 還有別的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}To celebrate your graduation. Among other things.{\r}
+Dialogue: 0,1:17:53.99,1:17:57.31,Default,NTP,0,0,0,,{\blur4}再對我翻白眼 我就讓你趴在我膝上{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Roll your eyes at me again, and I will take you across my knee.{\r}
+Dialogue: 0,1:18:03.13,1:18:04.38,Default,NTP,0,0,0,,{\blur4}那麼開始了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So it begins.{\r}
+Dialogue: 0,1:18:08.54,1:18:11.24,Default,NTP,0,0,0,,{\blur4}- 來吧 我有東西讓你看 - 什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Come on, I've got something to show you. - What?{\r}
+Dialogue: 0,1:18:20.28,1:18:24.65,Default,NTP,0,0,0,,{\blur4}真可愛 雖然不太像你的風格{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thats cute. Doesn't really seem like your style though.{\r}
+Dialogue: 0,1:18:25.07,1:18:31.12,Default,NTP,0,0,0,,{\blur4}確實 畢業快樂安娜斯塔西婭{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}It's not, happy graduation, Anastasia.{\r}
+Dialogue: 0,1:18:31.80,1:18:35.17,Default,NTP,0,0,0,,{\blur4}天吶 克裡斯蒂安那是輛車{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh my god. Christian, thats a car.{\r}
+Dialogue: 0,1:18:36.00,1:18:37.22,Default,NTP,0,0,0,,{\blur4}你沒有什麼損失 不是嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You don't miss much, do you?{\r}
+Dialogue: 0,1:18:40.28,1:18:42.44,Default,NTP,0,0,0,,{\blur4}謝謝 但是我不能接受 這太...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thank you but I can't. This is too...{\r}
+Dialogue: 0,1:18:42.66,1:18:45.46,Default,NTP,0,0,0,,{\blur4}- 你喜歡嗎 - 當然喜歡 它很漂亮{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Do you like it? - Of course I like it, its beautiful.{\r}
+Dialogue: 0,1:18:47.26,1:18:52.04,Default,NTP,0,0,0,,{\blur4}但我有車了...我的車呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}But I have a car... Where's my car?{\r}
+Dialogue: 0,1:18:52.06,1:18:54.21,Default,NTP,0,0,0,,{\blur4}我讓泰勒拿去賣了個好價錢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I told Taylor to fetch a decent price for it.{\r}
+Dialogue: 0,1:18:54.24,1:18:56.18,Default,NTP,0,0,0,,{\blur4}克裡斯蒂安 這禮太重了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian, this is way too much.{\r}
+Dialogue: 0,1:18:56.21,1:18:57.77,Default,NTP,0,0,0,,{\blur4}你剛才又對我翻白眼了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Did you just roll your eyes at me?{\r}
+Dialogue: 0,1:19:06.21,1:19:07.89,Default,NTP,0,0,0,,{\blur4}知道為什麼我要這麼做嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Do you know why I'm doing this?{\r}
+Dialogue: 0,1:19:07.89,1:19:09.21,Default,NTP,0,0,0,,{\blur4}因為我對你翻白眼了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Because I rolled my eyes at you.{\r}
+Dialogue: 0,1:19:09.56,1:19:10.77,Default,NTP,0,0,0,,{\blur4}那樣禮貌嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And is that polite?{\r}
+Dialogue: 0,1:19:12.32,1:19:13.32,Default,NTP,0,0,0,,{\blur4}不{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No.{\r}
+Dialogue: 0,1:19:13.43,1:19:16.11,Default,NTP,0,0,0,,{\blur4}- 再說一遍 - 不 先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Excuse me? - No, sir.{\r}
+Dialogue: 0,1:19:35.14,1:19:37.92,Default,NTP,0,0,0,,{\blur4}- 還想要嗎 - 是的 是的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Do you want more? - Yes. Yes.{\r}
+Dialogue: 0,1:19:45.32,1:19:46.96,Default,NTP,0,0,0,,{\blur4}歡迎來我的世界{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Welcome to my world.{\r}
+Dialogue: 0,1:20:08.87,1:20:12.31,Default,NTP,0,0,0,,{\blur4}- 你在幹嘛 - 公司有點事情{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What are you doing? - There a few things at the office{\r}
+Dialogue: 0,1:20:12.33,1:20:14.66,Default,NTP,0,0,0,,{\blur4}需要我去處理下{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}which require my attention.{\r}
+Dialogue: 0,1:20:14.91,1:20:16.26,Default,NTP,0,0,0,,{\blur4}你還好吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You okay?{\r}
+Dialogue: 0,1:20:19.73,1:20:22.53,Default,NTP,0,0,0,,{\blur4}- 我還以為... - 今晚我非常高興{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I just thought that... - I enjoyed tonight.{\r}
+Dialogue: 0,1:20:24.76,1:20:26.34,Default,NTP,0,0,0,,{\blur4}明天在我家見{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'll see you at my place tomorrow.{\r}
+Dialogue: 0,1:20:57.42,1:20:58.42,Default,NTP,0,0,0,,{\blur4}嗨 媽媽{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hi, mama.{\r}
+Dialogue: 0,1:20:58.44,1:21:02.63,Default,NTP,0,0,0,,{\blur4}安娜斯塔西婭 怎麼了 這周我給你留了兩個消息{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Anastasia? Whats going on, I've left you two messages this week.{\r}
+Dialogue: 0,1:21:03.10,1:21:07.99,Default,NTP,0,0,0,,{\blur4}我知道 對不起 我只是有點心煩意亂{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I know I'm sorry. I just got a little distracted.{\r}
+Dialogue: 0,1:21:08.02,1:21:11.37,Default,NTP,0,0,0,,{\blur4}對不起錯過了你的畢業典禮 我聽說很棒{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm sorry I missed your graduation honey, I heard it was lovely.{\r}
+Dialogue: 0,1:21:11.80,1:21:13.23,Default,NTP,0,0,0,,{\blur4}還有你的新情人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And your new beau.{\r}
+Dialogue: 0,1:21:13.75,1:21:16.91,Default,NTP,0,0,0,,{\blur4}雷全和我說了 聽起來他年青有為{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ray told me all about him, he sounds such a young man.{\r}
+Dialogue: 0,1:21:17.66,1:21:20.94,Default,NTP,0,0,0,,{\blur4}當然 我更願意是從你那聽說{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Of course, I would've preferred to have heard about it from you.{\r}
+Dialogue: 0,1:21:25.11,1:21:26.20,Default,NTP,0,0,0,,{\blur4}安娜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ana?{\r}
+Dialogue: 0,1:21:27.54,1:21:28.61,Default,NTP,0,0,0,,{\blur4}出什麼事了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Whats the matter?{\r}
+Dialogue: 0,1:21:30.42,1:21:31.61,Default,NTP,0,0,0,,{\blur4}沒事 我很好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Nothing, I'm fine.{\r}
+Dialogue: 0,1:21:32.39,1:21:34.08,Default,NTP,0,0,0,,{\blur4}他讓你不開心{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Is he not making you happy?{\r}
+Dialogue: 0,1:21:35.42,1:21:38.34,Default,NTP,0,0,0,,{\blur4}他是 我是說多數時間是{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}He is yeah, I mean most of the time, yeah.{\r}
+Dialogue: 0,1:21:39.41,1:21:40.81,Default,NTP,0,0,0,,{\blur4}這很複雜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its complicated.{\r}
+Dialogue: 0,1:21:43.36,1:21:46.51,Default,NTP,0,0,0,,{\blur4}聽著親愛的 如果你需要透口氣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Listen honey, if you need a break, you just{\r}
+Dialogue: 0,1:21:46.63,1:21:49.24,Default,NTP,0,0,0,,{\blur4}過來我這邊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}come on right down here.{\r}
+Dialogue: 0,1:21:49.37,1:21:51.06,Default,NTP,0,0,0,,{\blur4}哪怕只有一兩天也好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Even if its just for a day or two.{\r}
+Dialogue: 0,1:21:51.09,1:21:53.93,Default,NTP,0,0,0,,{\blur4}我還有航空積分 你可以過來做做閨蜜談話{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I have air miles, and we could talk and have girl time.{\r}
+Dialogue: 0,1:21:55.52,1:21:58.31,Default,NTP,0,0,0,,{\blur4}答應我你會考慮一下{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Promise me you'll think about it?{\r}
+Dialogue: 0,1:21:58.31,1:22:01.33,Default,NTP,0,0,0,,{\blur4}嗯 我會考慮的 我保證{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yeah I promise. I promise.{\r}
+Dialogue: 0,1:22:02.76,1:22:05.91,Default,NTP,0,0,0,,{\blur4}- 媽媽 我愛你 - 親愛的 我也愛你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I love you mama. - I love you too darling.{\r}
+Dialogue: 0,1:22:07.10,1:22:10.43,Default,NTP,0,0,0,,{\blur4}我要掛斷了 再見{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I gotta go. Bye.{\r}
+Dialogue: 0,1:22:18.59,1:22:21.06,Default,NTP,0,0,0,,{\blur4}看來你和格雷昨晚 好好 "慶祝" 了一番{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Looks like you and Grey did some celebration last night.{\r}
+Dialogue: 0,1:22:22.42,1:22:26.50,Default,NTP,0,0,0,,{\blur4}- 他還在睡覺嗎 - 沒 他昨晚沒留下來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Is he still asleep? - No, he couldn't stay.{\r}
+Dialogue: 0,1:22:27.22,1:22:28.90,Default,NTP,0,0,0,,{\blur4}話說這是誰的車鑰匙{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well whose car keys are those then?{\r}
+Dialogue: 0,1:22:32.22,1:22:35.90,Default,NTP,0,0,0,,{\blur4}- 這是我的 - 哇 安娜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Those are my keys. - Wow Ana.{\r}
+Dialogue: 0,1:22:38.02,1:22:39.02,Default,NTP,0,0,0,,{\blur4}幹嘛{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What?{\r}
+Dialogue: 0,1:22:39.04,1:22:40.68,Default,NTP,0,0,0,,{\blur4}沒什麼 只是在想{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Nothing, I'm just...{\r}
+Dialogue: 0,1:22:41.34,1:22:43.80,Default,NTP,0,0,0,,{\blur4}確保按著你的速度慢慢來 好嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Make sure you're taking it at your own pace okay?{\r}
+Dialogue: 0,1:22:43.83,1:22:46.24,Default,NTP,0,0,0,,{\blur4}我會的 我要出門了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I am, I am, I gotta go.{\r}
+Dialogue: 0,1:22:46.27,1:22:47.61,Default,NTP,0,0,0,,{\blur4}你要去哪裡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Where are you going?{\r}
+Dialogue: 0,1:22:55.51,1:23:00.31,Default,NTP,0,0,0,,{\blur4}- 看看這個 - 我看過了 照得不錯{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Look at this. - I've seen it, not a bad picture.{\r}
+Dialogue: 0,1:23:01.07,1:23:02.91,Default,NTP,0,0,0,,{\blur4}克裡斯蒂安·格雷以及他的朋友{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian Grey and friend.{\r}
+Dialogue: 0,1:23:04.39,1:23:05.36,Default,NTP,0,0,0,,{\blur4}所以我們還是朋友{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So we're friends.{\r}
+Dialogue: 0,1:23:05.39,1:23:08.14,Default,NTP,0,0,0,,{\blur4}報紙上這麼寫 那就是真的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well it must be true, if its in the paper.{\r}
+Dialogue: 0,1:23:09.74,1:23:12.58,Default,NTP,0,0,0,,{\blur4}- 你去格林醫生哪裡怎麼說 - 沒什麼大礙{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- So how did it go with Dr. Greene? - It was fine.{\r}
+Dialogue: 0,1:23:12.70,1:23:14.77,Default,NTP,0,0,0,,{\blur4}但她說在四周內 要避免{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}But she said I had to abstain from{\r}
+Dialogue: 0,1:23:14.81,1:23:17.16,Default,NTP,0,0,0,,{\blur4}進行性生活{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}all sexual activity for four weeks.{\r}
+Dialogue: 0,1:23:17.19,1:23:18.95,Default,NTP,0,0,0,,{\blur4}你知道的 在我服用避孕藥之後{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You know, after I start the pill.{\r}
+Dialogue: 0,1:23:18.95,1:23:19.96,Default,NTP,0,0,0,,{\blur4}什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What?{\r}
+Dialogue: 0,1:23:23.11,1:23:24.11,Default,NTP,0,0,0,,{\blur4}我逗你的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Just kidding.{\r}
+Dialogue: 0,1:23:39.58,1:23:41.37,Default,NTP,0,0,0,,{\blur4}我想帶你去我的遊戲室{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I wanna take you to my playroom.{\r}
+Dialogue: 0,1:23:43.35,1:23:46.63,Default,NTP,0,0,0,,{\blur4}但我還沒有簽那份協議{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I haven't signed the contract.{\r}
+Dialogue: 0,1:23:46.63,1:23:49.91,Default,NTP,0,0,0,,{\blur4}我知道 就當作盡職調查{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm well aware. Call it due diligence.{\r}
+Dialogue: 0,1:23:51.20,1:23:52.30,Default,NTP,0,0,0,,{\blur4}好的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay.{\r}
+Dialogue: 0,1:23:58.29,1:23:59.42,Default,NTP,0,0,0,,{\blur4}準備好了嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ready?{\r}
+Dialogue: 0,1:24:34.17,1:24:39.14,Default,NTP,0,0,0,,{\blur4}閉上眼 脫掉鞋子{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Eyes down. Take off your shoes.{\r}
+Dialogue: 0,1:24:43.09,1:24:44.78,Default,NTP,0,0,0,,{\blur4}把手舉起來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Arms above your head.{\r}
+Dialogue: 0,1:24:50.76,1:24:53.35,Default,NTP,0,0,0,,{\blur4}你的身體真漂亮 安娜斯塔西婭{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You have a beautiful body, Anastasia.{\r}
+Dialogue: 0,1:24:58.88,1:25:01.27,Default,NTP,0,0,0,,{\blur4}不要因裸體而羞恥 好嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I want you unashamed of your nakedness, understand?{\r}
+Dialogue: 0,1:25:03.20,1:25:04.20,Default,NTP,0,0,0,,{\blur4}好的 先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes sir.{\r}
+Dialogue: 0,1:25:06.18,1:25:09.72,Default,NTP,0,0,0,,{\blur4}你在咬嘴唇 你知道我受不了的 轉過去{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're biting your lip, you know what it does to me. Turn around.{\r}
+Dialogue: 0,1:25:17.86,1:25:21.87,Default,NTP,0,0,0,,{\blur4}當我讓你來這間房時 你要這麼做{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}When I tell you to come into this room. This is how you'll be.{\r}
+Dialogue: 0,1:25:23.82,1:25:25.02,Default,NTP,0,0,0,,{\blur4}你等我一下{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You'll wait for me.{\r}
+Dialogue: 0,1:25:26.47,1:25:28.06,Default,NTP,0,0,0,,{\blur4}在門邊跪下來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Kneeling by the door.{\r}
+Dialogue: 0,1:25:38.90,1:25:43.59,Default,NTP,0,0,0,,{\blur4}把手平放在你的腿上 很好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hands flat on your thighs. Good.{\r}
+Dialogue: 0,1:26:15.87,1:26:17.31,Default,NTP,0,0,0,,{\blur4}把手伸出來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hold out your hands.{\r}
+Dialogue: 0,1:26:44.15,1:26:47.35,Default,NTP,0,0,0,,{\blur4}- 疼嗎 - 不會{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Did that hurt? - No.{\r}
+Dialogue: 0,1:26:47.64,1:26:50.78,Default,NTP,0,0,0,,{\blur4}看吧 恐懼大多是腦中虛構的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You see? Much of your fear is in your head.{\r}
+Dialogue: 0,1:26:52.47,1:26:53.60,Default,NTP,0,0,0,,{\blur4}過來{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Come.{\r}
+Dialogue: 0,1:29:12.85,1:29:16.26,Default,NTP,0,0,0,,{\blur4}- 感覺怎樣 - 很好 先生{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- How does that feel? - Good, sir.{\r}
+Dialogue: 0,1:29:37.17,1:29:38.32,Default,NTP,0,0,0,,{\blur4}安靜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Quiet.{\r}
+Dialogue: 0,1:31:14.13,1:31:15.52,Default,NTP,0,0,0,,{\blur4}我們是要去哪裡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Where are we going?{\r}
+Dialogue: 0,1:31:20.57,1:31:22.38,Default,NTP,0,0,0,,{\blur4}還記得我母親之前提過的晚餐嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Remember my mother mentioned dinner?{\r}
+Dialogue: 0,1:31:23.18,1:31:24.56,Default,NTP,0,0,0,,{\blur4}我妹妹米雅回來了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}My sister Mia's in town.{\r}
+Dialogue: 0,1:31:25.35,1:31:26.35,Default,NTP,0,0,0,,{\blur4}記得{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes.{\r}
+Dialogue: 0,1:31:29.92,1:31:33.50,Default,NTP,0,0,0,,{\blur4}- 東西都拿齊了嗎 - 是的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- You got everything you need? - Yeah.{\r}
+Dialogue: 0,1:31:35.06,1:31:36.12,Default,NTP,0,0,0,,{\blur4}和我共舞{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Dance with me.{\r}
+Dialogue: 0,1:32:24.06,1:32:25.71,Default,NTP,0,0,0,,{\blur4}- 晚上好 格雷先生 - 你好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Good evening, Mr. Grey. - Hi.{\r}
+Dialogue: 0,1:32:25.74,1:32:26.74,Default,NTP,0,0,0,,{\blur4}他們來了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}They're here!{\r}
+Dialogue: 0,1:32:27.13,1:32:28.13,001,NTP,0,0,0,,{\blur4}你們來了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're here.{\r}
+Dialogue: 0,1:32:28.29,1:32:31.25,001,NTP,0,0,0,,{\blur4}- 歡迎 - 安娜 這是我母親 之前見過的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Welcome welcome. - Ana, you've met my mother.{\r}
+Dialogue: 0,1:32:31.29,1:32:32.20,001,NTP,0,0,0,,{\blur4}你好 能見到你真好{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hi, lovely to see you.{\r}
+Dialogue: 0,1:32:32.21,1:32:34.42,001,NTP,0,0,0,,{\blur4}- 這是我父親 卡裡克 - 你好 很高興見到你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- This is my father, Carrick. - Hi, it's nice to meet you.{\r}
+Dialogue: 0,1:32:34.45,1:32:35.40,001,NTP,0,0,0,,{\blur4}幸會{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Pleasure to meet you.{\r}
+Dialogue: 0,1:32:35.44,1:32:35.97,001,NTP,0,0,0,,{\blur4}她到這了嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Is she here?{\r}
+Dialogue: 0,1:32:36.00,1:32:37.57,001,NTP,0,0,0,,{\blur4}肯定會是炒作的焦點{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}There's been a lot of speculation!{\r}
+Dialogue: 0,1:32:37.63,1:32:39.70,001,NTP,0,0,0,,{\blur4}我的天啊 還真有其人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh my god! She exists!{\r}
+Dialogue: 0,1:32:41.50,1:32:43.76,001,NTP,0,0,0,,{\blur4}公寓很不錯 租金也不太貴{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its a great apartment, and the rent's not ridiculous.{\r}
+Dialogue: 0,1:32:44.15,1:32:45.98,001,NTP,0,0,0,,{\blur4}艾略特和荷西幫我們搬家{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Elliot and Jose helped us move in.{\r}
+Dialogue: 0,1:32:46.87,1:32:48.29,001,NTP,0,0,0,,{\blur4}荷西是安娜的朋友{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Jose is Ana's friend,{\r}
+Dialogue: 0,1:32:48.29,1:32:50.97,001,NTP,0,0,0,,{\blur4}但我覺得艾略特好像太喜歡他了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}although I think Elliot's trying to poach him.{\r}
+Dialogue: 0,1:32:51.01,1:32:54.40,001,NTP,0,0,0,,{\blur4}他人還不錯{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}He's a cool guy!{\r}
+Dialogue: 0,1:32:55.40,1:32:57.57,001,NTP,0,0,0,,{\blur4}安娜 你家人都是哪裡的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ana, where is your family from?{\r}
+Dialogue: 0,1:32:57.88,1:33:01.17,001,NTP,0,0,0,,{\blur4}我繼父住在蒙特薩諾 我媽媽則在喬治亞州{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}My step father's in Montesano and my mom lives in Georgia.{\r}
+Dialogue: 0,1:33:01.23,1:33:03.58,001,NTP,0,0,0,,{\blur4}- 在喬治亞州哪裡的 - 薩凡納市{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Georgia? Which part? - Savannah.{\r}
+Dialogue: 0,1:33:03.91,1:33:08.75,001,NTP,0,0,0,,{\blur4}真好啊 但是我聽說喬治亞州每年這個時候都很潮濕{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}How nice! Although I hear it gets really humid in Georgia this time of year.{\r}
+Dialogue: 0,1:33:08.94,1:33:12.26,001,NTP,0,0,0,,{\blur4}沒錯 是這樣的 有時候還會悶悶的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh my god it does. Its stifling sometimes.{\r}
+Dialogue: 0,1:33:12.27,1:33:14.19,001,NTP,0,0,0,,{\blur4}實際上 我明天要回去看看她{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Actually I'm going to visit her tomorrow.{\r}
+Dialogue: 0,1:33:14.37,1:33:17.70,001,NTP,0,0,0,,{\blur4}真孝順 克裡斯蒂安 你聽到了嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}How nice. You hear that Christian?{\r}
+Dialogue: 0,1:33:17.73,1:33:20.89,001,NTP,0,0,0,,{\blur4}有些孩子就會常回家看看{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Some children do visit their parents now and again.{\r}
+Dialogue: 0,1:33:23.05,1:33:25.24,001,NTP,0,0,0,,{\blur4}爸爸 你看了西雅圖水手隊的那場比賽嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hey dad, you catch the Mariners game?{\r}
+Dialogue: 0,1:33:25.24,1:33:26.26,001,NTP,0,0,0,,{\blur4}我聽說那場打得不錯{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I heard it went back stream.{\r}
+Dialogue: 0,1:33:26.26,1:33:28.26,Default,,0000,0000,0000,,西雅圖棒球隊（法語）\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ugh. Seattle baseball...{\r}
+Dialogue: 0,1:33:29.09,1:33:30.86,001,NTP,0,0,0,,{\blur4}你還沒和我提過{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}This is news to me.{\r}
+Dialogue: 0,1:33:30.90,1:33:33.02,001,NTP,0,0,0,,{\blur4}你打算什麼時候和我說的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}When were you gonna tell me?{\r}
+Dialogue: 0,1:33:34.08,1:33:35.36,001,NTP,0,0,0,,{\blur4}誰還要咖啡嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Who wants coffee?{\r}
+Dialogue: 0,1:33:35.68,1:33:38.66,001,NTP,0,0,0,,{\blur4}我答應安娜要帶她四處看看{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Actually I promised Ana a tour of the grounds.{\r}
+Dialogue: 0,1:33:39.37,1:33:40.45,001,NTP,0,0,0,,{\blur4}見諒{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Excuse us.{\r}
+Dialogue: 0,1:33:45.38,1:33:48.55,001,NTP,0,0,0,,{\blur4}克裡斯蒂安 我穿這鞋走得不快{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian, I cannot walk that fast in these shoes.{\r}
+Dialogue: 0,1:33:52.57,1:33:54.01,001,NTP,0,0,0,,{\blur4}你打算什麼時候告訴我你要回喬治亞州{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}When were you gonna tell me about Georgia?{\r}
+Dialogue: 0,1:33:54.24,1:33:56.87,001,NTP,0,0,0,,{\blur4}啥 你沒資格衝我生氣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What? You have no right to be mad at me.{\r}
+Dialogue: 0,1:33:56.90,1:33:59.09,001,NTP,0,0,0,,{\blur4}是的 但我非常生氣 快氣炸了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yeah but I am mad. Palm-twitchingly mad.{\r}
+Dialogue: 0,1:34:04.20,1:34:06.69,001,NTP,0,0,0,,{\blur4}你是我的 你的所有都是我的 懂麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're mine. All mine. Understand?{\r}
+Dialogue: 0,1:34:14.12,1:34:16.11,001,NTP,0,0,0,,{\blur4}克裡斯蒂安 你真難以琢磨{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Christian, you're so confusing.{\r}
+Dialogue: 0,1:34:20.24,1:34:22.12,001,NTP,0,0,0,,{\blur4}- 安娜 - 你想怎樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ana. - What do you want?{\r}
+Dialogue: 0,1:34:24.04,1:34:26.33,001,NTP,0,0,0,,{\blur4}- 你到底想怎樣 - 我要你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What do you want? - I want you.{\r}
+Dialogue: 0,1:34:27.49,1:34:28.89,001,NTP,0,0,0,,{\blur4}我很難受 克裡斯蒂安{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm trying, Christian.{\r}
+Dialogue: 0,1:34:34.17,1:34:35.34,001,NTP,0,0,0,,{\blur4}我知道{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I know you are.{\r}
+Dialogue: 0,1:34:36.33,1:34:38.44,001,NTP,0,0,0,,{\blur4}我們為何不能共枕眠{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why can't we sleep in the same bed?{\r}
+Dialogue: 0,1:34:39.38,1:34:43.78,001,NTP,0,0,0,,{\blur4}為什麼不讓我撫摸你 為什麼非得這樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why won't you let me touch you?  Why does it have to be like this?{\r}
+Dialogue: 0,1:34:51.44,1:34:53.20,001,NTP,0,0,0,,{\blur4}如果簽了合同 就不必...{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}If you would just sign the contract, you wouldn't have...{\r}
+Dialogue: 0,1:34:53.24,1:34:55.39,001,NTP,0,0,0,,{\blur4}為什麼那麼在乎那合同{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why do you care so much about the contract, Christian?{\r}
+Dialogue: 0,1:34:55.41,1:34:59.38,001,NTP,0,0,0,,{\blur4}- 你不喜歡我現在的樣子嗎 - 當然喜歡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Don't you like me the way I am? - Of course I do.{\r}
+Dialogue: 0,1:34:59.40,1:35:03.13,001,NTP,0,0,0,,{\blur4}- 那為什麼你總是要改變我 - 沒有{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Then why are you trying to change me? - I'm not.{\r}
+Dialogue: 0,1:35:04.74,1:35:08.30,001,NTP,0,0,0,,{\blur4}- 是你... - 我不想只是這樣 我要更多{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Its you... - I need more, I want more.{\r}
+Dialogue: 0,1:35:10.01,1:35:14.01,001,NTP,0,0,0,,{\blur4}愛心和鮮花麼 可是我不搞這一套{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hearts and flowers? That's not something I know.{\r}
+Dialogue: 0,1:35:16.20,1:35:21.82,001,NTP,0,0,0,,{\blur4}拜託 安娜... 是你在改變我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Ana please ... Its you that is changing me.{\r}
+Dialogue: 0,1:35:23.94,1:35:27.73,001,NTP,0,0,0,,{\blur4}讓我撫摸你 求你了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Let me touch you. Let me.{\r}
+Dialogue: 0,1:35:42.19,1:35:46.77,001,NTP,0,0,0,,{\blur4}- 那是燒傷的嗎 - 我曾經命途多舛{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Are they burns? - I had a rough start in life.{\r}
+Dialogue: 0,1:35:47.19,1:35:52.09,001,NTP,0,0,0,,{\blur4}- 知道這些就夠了 -  好吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- That's all you need to know.- Okay.{\r}
+Dialogue: 0,1:36:15.15,1:36:19.90,001,NTP,0,0,0,,{\blur4}我的親生母親 是個癮君子{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}The woman who gave birth to me, was a crack addict.{\r}
+Dialogue: 0,1:36:21.16,1:36:22.42,001,NTP,0,0,0,,{\blur4}還是個妓女{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}And a prostitute.{\r}
+Dialogue: 0,1:36:27.45,1:36:29.25,001,NTP,0,0,0,,{\blur4}我四歲時她就死了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She died when I was four.{\r}
+Dialogue: 0,1:36:33.36,1:36:39.88,001,NTP,0,0,0,,{\blur4}我能記起一些事 一些可怕的事{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I remember certain things. Terrible things.{\r}
+Dialogue: 0,1:36:44.15,1:36:45.69,001,NTP,0,0,0,,{\blur4}但卻想不起她{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I don't remember her.{\r}
+Dialogue: 0,1:36:49.75,1:36:55.47,001,NTP,0,0,0,,{\blur4}有時還會夢見她{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Sometimes, I can see her in my dreams.{\r}
+Dialogue: 0,1:37:15.48,1:37:17.22,001,NTP,0,0,0,,{\blur4}真的要去喬治亞嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Do you really have to go to Georgia?{\r}
+Dialogue: 0,1:37:21.90,1:37:23.36,001,NTP,0,0,0,,{\blur4}是的 要去{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yeah, I really.{\r}
+Dialogue: 0,1:37:28.25,1:37:30.30,Default,,0000,0000,0000,,早上好 12-H座位在您右手邊\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Good morning. 12-H is down to your right.{\r}
+Dialogue: 0,1:37:30.88,1:37:33.13,Default,,0000,0000,0000,,早上好 2-B座位 正好在這裡\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Good morning. 2-B, oh it's just right here.{\r}
+Dialogue: 0,1:37:33.76,1:37:35.51,Default,,0000,0000,0000,,不對 我定的是經濟艙\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh! No, I'm supposed to be in coach.{\r}
+Dialogue: 0,1:37:35.60,1:37:37.22,Default,,0000,0000,0000,,那您一定是被升艙了\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh, you must have been upgraded.{\r}
+Dialogue: 0,1:37:37.93,1:37:41.56,Default,,0000,0000,0000,,早上好 12-A座位 在您右手邊\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Good morning. 12-A just down to your right.{\r}
+Dialogue: 0,1:37:42.31,1:37:43.35,Default,,0000,0000,0000,,早上好\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Good morning.{\r}
+Dialogue: 0,1:37:50.35,1:37:55.35,Default,NTP,0000,0000,0000,,{\pos(320,345)}謝謝幫我升艙 但是經濟艙我就很滿意了
+Dialogue: 0,1:38:02.35,1:38:06.35,Default,NTP,0000,0000,0000,,{\pos(320,345)}"第一"總是好的 關機吧 遵守一次規則 旅途順利
+Dialogue: 0,1:38:31.90,1:38:34.68,001,NTP,0,0,0,,{\blur4}- 鮑勃 這西班牙涼菜太鹹了 - 可不{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- This gazpacho is really salty, Bob. - Yeah.{\r}
+Dialogue: 0,1:38:34.71,1:38:37.30,001,NTP,0,0,0,,{\blur4}你這樣閒坐著可是會發福的 你跟他說說 安娜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You'll get fat with all this sitting around. You tell him, Ana.{\r}
+Dialogue: 0,1:38:37.33,1:38:40.37,001,NTP,0,0,0,,{\blur4}- 我才不會說他呢 - 謝謝 安娜\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I'm not gonna tell him that. - Yes，thank you， Ana.{\r}
+Dialogue: 0,1:38:40.39,1:38:44.17,001,NTP,0,0,0,,{\blur4}我剛說了 這東西搭配了辣番茄醬\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm just saying， gazpacho is in a bowl of salsa.{\r}
+Dialogue: 0,1:38:44.20,1:38:46.95,001,NTP,0,0,0,,{\blur4}能給我來點薯條就辣番茄醬嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Now could you hand me some chips for my bowl of salsa?{\r}
+Dialogue: 0,1:38:46.98,1:38:48.40,001,NTP,0,0,0,,{\blur4}來根蘿蔔{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You can have a carrot?{\r}
+Dialogue: 0,1:38:49.66,1:38:51.53,001,NTP,0,0,0,,{\blur4}你想幹嘛{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What are you getting at with this?{\r}
+Dialogue: 0,1:38:52.29,1:38:56.05,001,NTP,0,0,0,,{\blur4}能獲得我的芳心 你該感到幸運才是{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You're lucky that I happen to love you very much.{\r}
+Dialogue: 0,1:38:56.08,1:38:58.02,001,NTP,0,0,0,,{\blur4}- 太幸運了 - 是嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I know that. - Do you?{\r}
+Dialogue: 0,1:38:58.05,1:38:59.10,001,NTP,0,0,0,,{\blur4}好啦{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hmm, I do.{\r}
+Dialogue: 0,1:40:36.19,1:40:37.96,001,NTP,0,0,0,,{\blur4}親愛的 咱們來放鬆一下吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh darling, I think we should pace ourselves,{\r}
+Dialogue: 0,1:40:38.02,1:40:39.44,001,NTP,0,0,0,,{\blur4}要不先來點兒吃的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}or at least order something to eat.{\r}
+Dialogue: 0,1:40:39.46,1:40:41.68,001,NTP,0,0,0,,{\blur4}你先點吧 我不餓{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You go ahead, I'm not very hungry.{\r}
+Dialogue: 0,1:40:41.74,1:40:44.09,001,NTP,0,0,0,,{\blur4}我先吃點水果沙拉吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh, I just have the fruit salad.{\r}
+Dialogue: 0,1:40:49.31,1:40:52.87,001,NTP,0,0,0,,{\blur4}- 別這麼快接 - 媽媽{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- He can wait. - Mom.{\r}
+Dialogue: 0,1:40:54.29,1:40:55.29,001,NTP,0,0,0,,{\blur4}再來杯大都會{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}ANOTHER COSMO?{\r}
+Dialogue: 0,1:40:56.27,1:40:57.85,001,NTP,0,0,0,,{\blur4}- 糟了 - 怎麼了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Holy fuck. - What?{\r}
+Dialogue: 0,1:40:58.24,1:40:59.40,001,NTP,0,0,0,,{\blur4}什麼事{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What is it?{\r}
+Dialogue: 0,1:40:59.42,1:41:04.34,001,NTP,0,0,0,,{\blur4}是克裡斯蒂安 他在這兒 在喬治亞{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Its Christian, he's here, in Georgia.{\r}
+Dialogue: 0,1:41:06.93,1:41:09.55,001,NTP,0,0,0,,{\blur4}- 真巧啊 - 你好 亞當女士{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Here, here! - Mrs Adams,{\r}
+Dialogue: 0,1:41:09.58,1:41:10.88,001,NTP,0,0,0,,{\blur4}很榮幸見到您{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}delighted to meet you.{\r}
+Dialogue: 0,1:41:11.10,1:41:13.51,001,NTP,0,0,0,,{\blur4}- 先生要喝點什麼嗎 - 杜松子酒配湯力水{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Something to drink sir? - Gin and tonic.{\r}
+Dialogue: 0,1:41:13.54,1:41:16.08,001,NTP,0,0,0,,{\blur4}可以的話 亨德裡克斯 要不就孟買藍寶石{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hendrix if you have it, otherwise Bombay Sapphire.{\r}
+Dialogue: 0,1:41:16.10,1:41:18.63,001,NTP,0,0,0,,{\blur4}黃瓜配亨德裡克斯 青檸配孟買藍寶石{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Cucumber with the Hendricks, lime with Bombay.{\r}
+Dialogue: 0,1:41:18.65,1:41:20.24,001,NTP,0,0,0,,{\blur4}我開始有點喜歡他了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I like him already.{\r}
+Dialogue: 0,1:41:20.24,1:41:22.10,001,NTP,0,0,0,,{\blur4}你來這裡幹嘛 克裡斯蒂安{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What are you doing here, Christian?{\r}
+Dialogue: 0,1:41:22.22,1:41:25.46,001,NTP,0,0,0,,{\blur4}- 來見你呀 - 我去下洗手間{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I came to see you. - I need to go to the bathroom.{\r}
+Dialogue: 0,1:41:36.23,1:41:38.77,001,NTP,0,0,0,,{\blur4}我違反了第七條規定中的第五條款{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I broke rule 7, clause 5.{\r}
+Dialogue: 0,1:41:40.97,1:41:46.13,001,NTP,0,0,0,,{\blur4}別管它了 現在就別提那合約了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We'll let it go, lets not talk about the contract right now.{\r}
+Dialogue: 0,1:41:46.73,1:41:48.19,001,NTP,0,0,0,,{\blur4}晚餐怎麼樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}How was your dinner?{\r}
+Dialogue: 0,1:41:51.97,1:41:54.67,001,NTP,0,0,0,,{\blur4}她只是個朋友{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She's a friend, thats all.{\r}
+Dialogue: 0,1:41:55.27,1:41:57.56,Default,,0000,0000,0000,,她是個虐童者\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She's a child abuser.{\r}
+Dialogue: 0,1:41:57.73,1:41:59.07,Default,,0000,0000,0000,,我信任她\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I confide in her.{\r}
+Dialogue: 0,1:41:59.08,1:42:00.29,001,NTP,0,0,0,,{\blur4}她瞭解我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}She knows me.{\r}
+Dialogue: 0,1:42:01.36,1:42:06.09,001,NTP,0,0,0,,{\blur4}- 那她有給你什麼建議嗎 - 讓我來找你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What did she advise you to do? - Well, I'm here.{\r}
+Dialogue: 0,1:42:08.73,1:42:12.38,001,NTP,0,0,0,,{\blur4}- 那現在該怎樣 - 我在這酒店裡有間房{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Now what? - I've got a room in this hotel.{\r}
+Dialogue: 0,1:42:14.40,1:42:16.16,001,NTP,0,0,0,,{\blur4}祝你能住得舒服{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well, I hope you'll be comfortable in it.{\r}
+Dialogue: 0,1:42:21.42,1:42:23.22,001,NTP,0,0,0,,{\blur4}明早有什麼安排{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What are you doing for breakfast tomorrow?{\r}
+Dialogue: 0,1:42:28.89,1:42:31.89,001,NTP,0,0,0,,{\blur4}- 我們這是去哪 - 我要給你個驚喜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Where are we going? - It's a surprise.{\r}
+Dialogue: 0,1:42:32.48,1:42:35.13,001,NTP,0,0,0,,{\blur4}我已經驚喜到極點了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I think I've reached my quota of surprises.{\r}
+Dialogue: 0,1:42:36.73,1:42:37.98,001,NTP,0,0,0,,{\blur4}快到了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We're almost there.{\r}
+Dialogue: 0,1:42:45.92,1:42:48.57,001,NTP,0,0,0,,{\blur4}格雷先生 您好 我是您的飛行駛員{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Mr Grey. Hey, I'll be your co-pilot.{\r}
+Dialogue: 0,1:42:48.59,1:42:51.21,001,NTP,0,0,0,,{\blur4}你好 這是我的女友 安娜斯塔西婭·斯蒂爾{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}How do you do? This is my girlfriend, Anastasia Steele.{\r}
+Dialogue: 0,1:43:22.59,1:43:25.16,001,NTP,0,0,0,,{\blur4}我們已飛至四百英尺高度 準備好了嗎{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We're at 400 feet, ready?{\r}
+Dialogue: 0,1:43:25.48,1:43:28.51,Default,NTP,0,0,0,,{\blur4}- 準備好了嗎 - 準備好了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ready? - Yes, ready.{\r}
+Dialogue: 0,1:43:28.73,1:43:30.10,Default,NTP,0,0,0,,{\blur4}放繩吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Release.{\r}
+Dialogue: 0,1:43:59.61,1:44:00.82,Default,NTP,0,0,0,,{\blur4}抓緊了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Hold on tight.{\r}
+Dialogue: 0,1:44:03.34,1:44:06.70,Default,NTP,0,0,0,,{\blur4}- 刺激嗎 - 我的天 太刺激了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Is this more? - Oh my god. So much more!{\r}
+Dialogue: 0,1:44:27.65,1:44:32.16,Default,NTP,0,0,0,,{\blur4}天吶 真的太棒了 克裡斯蒂安 謝謝你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh my god, that was incredible, Christian. Thank you.{\r}
+Dialogue: 0,1:44:32.29,1:44:34.19,Default,NTP,0,0,0,,{\blur4}很榮幸能為您服務 斯蒂爾女士{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}We aim to please, Miss Steele.{\r}
+Dialogue: 0,1:44:35.21,1:44:40.53,Default,NTP,0,0,0,,{\blur4}- 我還以為你不懂浪漫呢 - 確實不懂 安娜.{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I thought you didn't do romance. - I don't. Ana.{\r}
+Dialogue: 0,1:44:40.56,1:44:45.01,Default,NTP,0,0,0,,{\blur4}什麼 拜託 為什麼你要抗拒呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What? What? Why are you fighting this?{\r}
+Dialogue: 0,1:44:48.21,1:44:49.83,Default,NTP,0,0,0,,{\blur4}你到底在怕什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What are you afraid of?{\r}
+Dialogue: 0,1:45:00.34,1:45:04.80,Default,NTP,0,0,0,,{\blur4}我是格雷 怎麼了 什麼時候{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Grey. What? When?{\r}
+Dialogue: 0,1:45:07.04,1:45:10.92,Default,NTP,0,0,0,,{\blur4}讓斯特凡備好飛機 半小時後在停機場等我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Have Stefan get the plane ready. I'll be on the tarmac in 30 minutes.{\r}
+Dialogue: 0,1:45:11.34,1:45:13.82,Default,NTP,0,0,0,,{\blur4}- 怎麼了 - 我得回西雅圖{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What happened? - I have to go back to Seattle.{\r}
+Dialogue: 0,1:45:14.34,1:45:15.56,Default,NTP,0,0,0,,{\blur4}我送你回家吧{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Come I'll take you home.{\r}
+Dialogue: 0,1:45:18.01,1:45:20.08,Default,NTP,0,0,0,,{\blur4}親愛的 真希望克裡斯蒂安能留下{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Oh sweetheart, I wish Christian could've stayed.{\r}
+Dialogue: 0,1:45:20.12,1:45:22.81,Default,NTP,0,0,0,,{\blur4}鮑勃一直想見見他{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Bob was looking forward to meeting him.{\r}
+Dialogue: 0,1:45:22.83,1:45:27.75,Default,NTP,0,0,0,,{\blur4}我知道 可他必須趕回西雅圖 有些工作問題{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I know, he had to get back to Seattle though. There's a um, situation at work.{\r}
+Dialogue: 0,1:45:27.78,1:45:31.31,Default,NTP,0,0,0,,{\blur4}我倒是希望事情能簡單點 但事與願違{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I wish I could tell you things get easier, but they don't.{\r}
+Dialogue: 0,1:45:31.33,1:45:34.33,Default,NTP,0,0,0,,{\blur4}你需要更好地瞭解自己{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You just need to get to know yourself better.{\r}
+Dialogue: 0,1:45:35.75,1:45:38.53,Default,NTP,0,0,0,,{\blur4}- 謝謝你做的一切 媽媽  - 保重 寶貝{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Thank you for everything, mama. - Take care, sweetheart.{\r}
+Dialogue: 0,1:45:38.57,1:45:39.57,Default,NTP,0,0,0,,{\blur4}我會的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I will.{\r}
+Dialogue: 0,1:45:59.58,1:46:02.60,Default,NTP,0,0,0,,{\blur4}你以為我認不出你麼, 泰勒{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You think I wouldn't recognise you, Taylor?{\r}
+Dialogue: 0,1:46:02.79,1:46:04.11,Default,NTP,0,0,0,,{\blur4}這邊走 斯蒂爾小姐{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Right this way, Miss Steele.{\r}
+Dialogue: 0,1:46:10.39,1:46:14.14,Default,NTP,0,0,0,,{\blur4}- 他今天怎麼樣 泰勒 - 估計很忙{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- How does he seem today, Taylor? - Preoccupied I'm afraid.{\r}
+Dialogue: 0,1:46:14.95,1:46:17.42,Default,NTP,0,0,0,,{\blur4}- 真的麼 - 是的 女士{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Really?  - Yes ma'am.{\r}
+Dialogue: 0,1:46:23.68,1:46:25.10,Default,NTP,0,0,0,,{\blur4}那樣行不通{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well, that's not gonna work.{\r}
+Dialogue: 0,1:46:27.44,1:46:28.55,Default,NTP,0,0,0,,{\blur4}什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What?{\r}
+Dialogue: 0,1:46:30.57,1:46:36.08,Default,NTP,0,0,0,,{\blur4}那告訴他們並沒有二十四個小時 那不可接受{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Well tell them they don't have 24 hours. That is unnacceptable.{\r}
+Dialogue: 0,1:46:36.11,1:46:39.46,Default,NTP,0,0,0,,{\blur4}我要瞭解情況 有進展及時通知我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I need to know. Just keep me informed.{\r}
+Dialogue: 0,1:46:55.76,1:47:01.34,Default,NTP,0,0,0,,{\blur4}- 一切都還好麼 - 不用擔心{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Is everything okay?  - Nothing that concerns you.{\r}
+Dialogue: 0,1:47:03.41,1:47:05.80,Default,NTP,0,0,0,,{\blur4}- 我可以走 需要我離開麼 - 不要{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I can leave if you want me to go? - No.{\r}
+Dialogue: 0,1:47:07.57,1:47:09.25,Default,NTP,0,0,0,,{\blur4}那是我最不想要的事{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Thats the last thing I want.{\r}
+Dialogue: 0,1:47:15.82,1:47:20.08,Default,NTP,0,0,0,,{\blur4}我想要你 十五分鐘後遊戲室見{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I want you, in the playroom, in 15 minutes.{\r}
+Dialogue: 0,1:47:47.99,1:47:51.70,Default,NTP,0,0,0,,{\blur4}- 你的安全口令是什麼 - 紅和黃{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- What are your safe words?  - Red and yellow.{\r}
+Dialogue: 0,1:47:51.93,1:47:53.22,Default,NTP,0,0,0,,{\blur4}記好了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Remember them.{\r}
+Dialogue: 0,1:50:01.48,1:50:07.09,Default,NTP,0,0,0,,{\blur4}聽起來很傷感 你彈得所有曲子都很傷感{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}That sounds so sad. Everything you played is so sad.{\r}
+Dialogue: 0,1:50:09.09,1:50:10.90,Default,NTP,0,0,0,,{\blur4}你說你是六歲學習彈鋼琴的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You said you were six when you learn{\r}
+Dialogue: 0,1:50:10.96,1:50:13.75,Default,NTP,0,0,0,,{\blur4}因為你想討好你的新家庭{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}with it, because you wanted to please your new family?{\r}
+Dialogue: 0,1:50:22.44,1:50:24.01,Default,NTP,0,0,0,,{\blur4}我只想說說話{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I just wanna talk.{\r}
+Dialogue: 0,1:50:28.21,1:50:30.05,Default,NTP,0,0,0,,{\blur4}為什麼不讓我走進你的內心世界{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why won't you let me in?{\r}
+Dialogue: 0,1:50:32.60,1:50:35.16,Default,NTP,0,0,0,,{\blur4}- 我們應該交流 - 像正常人那樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- We should be talking. - Like normal people?{\r}
+Dialogue: 0,1:50:35.55,1:50:36.64,Default,NTP,0,0,0,,{\blur4}是啊{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yeah.{\r}
+Dialogue: 0,1:50:40.31,1:50:41.78,Default,NTP,0,0,0,,{\blur4}有什麼錯麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Is that so wrong?{\r}
+Dialogue: 0,1:50:54.30,1:50:57.39,Default,NTP,0,0,0,,{\blur4}還是因為合同 因為我還沒有簽{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Is this because of the contract? Because I still haven't signed it?{\r}
+Dialogue: 0,1:50:58.04,1:51:02.24,Default,NTP,0,0,0,,{\blur4}去他媽的合同 我覺得它有點多餘 不是麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Fuck the contract, I think its a little redundant, don't you?{\r}
+Dialogue: 0,1:51:03.68,1:51:05.83,Default,NTP,0,0,0,,{\blur4}所以規矩也都是多餘的了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So then the rules are redundant too?{\r}
+Dialogue: 0,1:51:06.10,1:51:09.77,Default,NTP,0,0,0,,{\blur4}- 不 規矩還是要有的 - 如果我違反了呢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- No. The rules stand. - And what if I break them?{\r}
+Dialogue: 0,1:51:10.34,1:51:12.64,Default,NTP,0,0,0,,{\blur4}- 那是自討苦吃 - 懲罰{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Then there'll be consequences. - Punishment?{\r}
+Dialogue: 0,1:51:13.14,1:51:14.14,Default,NTP,0,0,0,,{\blur4}是的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Yes.{\r}
+Dialogue: 0,1:51:15.54,1:51:17.59,Default,NTP,0,0,0,,{\blur4}- 你為什麼要懲罰我 - 安娜{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Why do you want to punish me? - Ana.{\r}
+Dialogue: 0,1:51:18.39,1:51:19.59,Default,NTP,0,0,0,,{\blur4}為什麼要傷害我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Why do you want to hurt me?{\r}
+Dialogue: 0,1:51:22.72,1:51:25.53,Default,NTP,0,0,0,,{\blur4}我不會對你做任何你承受不了的事{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I would never do anything to you, that you couldn't handle.{\r}
+Dialogue: 0,1:51:25.56,1:51:28.54,Default,NTP,0,0,0,,{\blur4}可究竟為何你一定要對我做些什麼 克裡斯蒂安{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}But why do you even wanna do anything at all to me, Christian?{\r}
+Dialogue: 0,1:51:30.56,1:51:33.78,Default,NTP,0,0,0,,{\blur4}如果我告訴你  你就不會像之前一樣看待我了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}If I told you, you'd never look at me the same way again.{\r}
+Dialogue: 0,1:51:34.74,1:51:38.23,Default,NTP,0,0,0,,{\blur4}所以說還是有原因的 告訴我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}So there is a reason. Tell me.{\r}
+Dialogue: 0,1:51:40.50,1:51:42.71,Default,NTP,0,0,0,,{\blur4}- 你想現在就懲罰我麼 - 是的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Do you wanna punish me right now? - Yes.{\r}
+Dialogue: 0,1:51:43.03,1:51:45.06,Default,NTP,0,0,0,,{\blur4}我現在就想懲罰你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I wanna punish you right now.{\r}
+Dialogue: 0,1:51:47.10,1:51:50.55,Default,NTP,0,0,0,,{\blur4}如果我告訴你 你有多討厭我摸你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}What if I told you that I feel the same way about being punished as you{\r}
+Dialogue: 0,1:51:50.58,1:51:53.18,Default,NTP,0,0,0,,{\blur4}我就有多反感你懲罰我 你還會想懲罰我麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}do about me touching you, would you still wanna punish me then?{\r}
+Dialogue: 0,1:51:55.83,1:51:59.13,Default,NTP,0,0,0,,{\blur4}不 但這並不意味著我不需要那麼做{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No. But that doesn't mean I wouldn't need to.{\r}
+Dialogue: 0,1:51:59.26,1:52:01.18,Default,NTP,0,0,0,,{\blur4}- 為什麼 - 安娜 別說了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Why? - Ana stop.{\r}
+Dialogue: 0,1:52:01.21,1:52:03.78,Default,NTP,0,0,0,,{\blur4}- 你為什麼要... - 因為我就是這樣的人{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Why do you need... - Because it's the way I am!{\r}
+Dialogue: 0,1:52:11.92,1:52:14.06,Default,NTP,0,0,0,,{\blur4}因為我有五十道陰影{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Because I'm 50 shades of fucked up.{\r}
+Dialogue: 0,1:52:37.31,1:52:38.66,Default,NTP,0,0,0,,{\blur4}讓我看看{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Show me then.{\r}
+Dialogue: 0,1:52:52.77,1:52:57.78,Default,NTP,0,0,0,,{\blur4}我要你讓我瞭解 你想對我做什麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I need you to show me, what you wanna do to me.{\r}
+Dialogue: 0,1:52:58.43,1:53:00.95,Default,NTP,0,0,0,,{\blur4}懲罰我 讓我知道究竟能有多糟糕{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Punish me, show me how bad it can be.{\r}
+Dialogue: 0,1:53:00.98,1:53:02.81,Default,NTP,0,0,0,,{\blur4}讓我試試最狠的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I want you to show me the worst.{\r}
+Dialogue: 0,1:53:10.88,1:53:12.73,Default,NTP,0,0,0,,{\blur4}只有這樣我才能理解你{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}It's the only way I can understand.{\r}
+Dialogue: 0,1:53:26.83,1:53:30.04,Default,NTP,0,0,0,,{\blur4}- 你確定麼 - 是的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Are you sure about this? - Yes.{\r}
+Dialogue: 0,1:53:47.12,1:53:48.29,Default,NTP,0,0,0,,{\blur4}彎下腰{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Bend over.{\r}
+Dialogue: 0,1:53:57.67,1:54:01.54,Default,NTP,0,0,0,,{\blur4}我會打你六次 你要和我一起數著{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'm gonna hit you six times. And you're gonna count with me.{\r}
+Dialogue: 0,1:54:14.01,1:54:18.34,Default,NTP,0,0,0,,{\blur4}- 數數 安娜斯塔西婭 - 一{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Count, Anastasia. - One{\r}
+Dialogue: 0,1:54:24.21,1:54:25.44,Default,NTP,0,0,0,,{\blur4}二{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Two{\r}
+Dialogue: 0,1:54:34.13,1:54:35.13,Default,NTP,0,0,0,,{\blur4}三{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Three{\r}
+Dialogue: 0,1:54:45.99,1:54:47.28,Default,NTP,0,0,0,,{\blur4}四{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Four{\r}
+Dialogue: 0,1:54:54.85,1:54:56.06,Default,NTP,0,0,0,,{\blur4}五{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Five.{\r}
+Dialogue: 0,1:55:09.93,1:55:11.09,Default,NTP,0,0,0,,{\blur4}六{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Six.{\r}
+Dialogue: 0,1:55:22.29,1:55:25.75,Default,,0000,0000,0000,,別他媽的碰我\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No! Don't fucking touch me.{\r}
+Dialogue: 0,1:55:30.13,1:55:34.00,Default,NTP,0,0,0,,{\blur4}這就是你想要的 你想看我成現在這樣{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Is this what you really want? You wanna see me like this?{\r}
+Dialogue: 0,1:55:35.47,1:55:37.32,Default,NTP,0,0,0,,{\blur4}- 安娜 - 別靠近我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ana. - Don't come near me.{\r}
+Dialogue: 0,1:55:45.36,1:55:47.01,Default,NTP,0,0,0,,{\blur4}這能令你愉悅麼{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Does this give you pleasure?{\r}
+Dialogue: 0,1:55:50.30,1:55:51.30,Default,NTP,0,0,0,,{\blur4}不{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No.{\r}
+Dialogue: 0,1:55:56.55,1:55:58.43,Default,NTP,0,0,0,,{\blur4}你再敢往前一步{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Don't you dare come near me.{\r}
+Dialogue: 0,1:57:02.50,1:57:03.97,Default,NTP,0,0,0,,{\blur4}請你不要恨我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Please don't hate me.{\r}
+Dialogue: 0,1:57:07.15,1:57:09.25,Default,NTP,0,0,0,,{\blur4}你永遠不會再那樣對我了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}You will never do that to me again.{\r}
+Dialogue: 0,1:57:18.15,1:57:23.23,Default,NTP,0,0,0,,{\blur4}- 我不是你想要的 - 不 你是我想要的一切{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I'm not what you want. - No, you are everything that I want.{\r}
+Dialogue: 0,1:57:32.04,1:57:33.85,Default,NTP,0,0,0,,{\blur4}我已經愛上你了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I've fallen in love with you.{\r}
+Dialogue: 0,1:57:37.88,1:57:41.67,Default,NTP,0,0,0,,{\blur4}不 不 安娜 你不能愛我{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No. No, Ana. You can't love me.{\r}
+Dialogue: 0,1:57:55.09,1:57:56.62,Default,NTP,0,0,0,,{\blur4}我要你離開這裡{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I need you to leave.{\r}
+Dialogue: 0,1:58:03.48,1:58:04.69,Default,NTP,0,0,0,,{\blur4}拜託{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Please.{\r}
+Dialogue: 0,1:58:58.92,1:59:03.99,Default,NTP,0,0,0,,{\blur4}- 我想要回我自己的車 - 泰勒已經把它賣了{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- I'd like my car back. - Taylor already sold it.{\r}
+Dialogue: 0,1:59:06.37,1:59:08.57,Default,NTP,0,0,0,,{\blur4}那我想拿回他賣車的錢{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Then I'd like the money he got for it please.{\r}
+Dialogue: 0,1:59:10.26,1:59:11.61,Default,NTP,0,0,0,,{\blur4}我會給你寄張支票{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}I'll send you a check.{\r}
+Dialogue: 0,1:59:12.52,1:59:13.52,Default,NTP,0,0,0,,{\blur4}好的{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Okay.{\r}
+Dialogue: 0,1:59:19.51,1:59:21.05,Default,NTP,0,0,0,,{\blur4}泰勒會送你回家{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Taylor will take you home.{\r}
+Dialogue: 0,1:59:38.94,1:59:39.94,Default,NTP,0,0,0,,{\blur4}留步{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}Stop.{\r}
+Dialogue: 0,1:59:40.63,1:59:41.64,Default,NTP,0,0,0,,{\blur4}停{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}No!{\r}
+Dialogue: 0,1:59:57.04,1:59:59.19,Default,NTP,0,0,0,,{\blur4}- 安娜. - 克裡斯蒂安.{\r}\N{\fnMicrosoft YaHei\fs17\1c&HE8E8E8&}- Ana. - Christian.{\r}
+Dialogue: 0,2:00:56.59,2:00:59.69,Default,NTP,0000,0000,0000,,{\pos(320,345)}這讓我想起了我們的歡樂時光 安娜
+Dialogue: 0,0:00:00.00,0:00:00.00,Default,,0000,0000,0000,,
+Dialogue: 0,0:59:09.00,0:59:15.30,HC,NTP,0,0,0,,{\pos(515,208)}{\fs15}感謝你跟我度過了愉快的週末
+Dialogue: 0,0:59:09.00,0:59:15.30,HC,NTP,0,0,0,,{\pos(475,233)}{\fs15}筆記本是你的了
+Dialogue: 0,0:59:09.00,0:59:15.30,HC,NTP,0,0,0,,{\pos(495,258)}{\fs15}希望你能用它來做調查
+Dialogue: 0,0:59:16.50,0:59:22.00,HC,NTP,0,0,0,,{\pos(442,205)}{\fs15}是麼
+Dialogue: 0,0:59:16.50,0:59:22.00,HC,NTP,0,0,0,,{\pos(494,230)}{\fs15}難道這就是我們的關係
+Dialogue: 0,0:59:16.50,0:59:22.00,HC,NTP,0,0,0,,{\pos(468,255)}{\fs15}你指使我做事
+Dialogue: 0,0:59:29.90,0:59:35.50,HC,NTP,0,0,0,,{\pos(454,176)}{\fs15}希望如此
+Dialogue: 0,0:59:29.90,0:59:35.50,HC,NTP,0,0,0,,{\pos(500,200)}{\fs15}你要是喜歡這樣就更好了
+Dialogue: 0,1:00:14.00,1:00:18.90,HC,NTP,0,0,0,,{\pos(149,182)}{\fs15}忙著打包去西雅圖
+Dialogue: 0,1:00:14.00,1:00:18.90,HC,NTP,0,0,0,,{\pos(148,205)}{\fs15}好懷念那條領帶...
+Dialogue: 0,1:01:08.00,1:01:12.90,HC,NTP,0,0,0,,{\pos(160,220)}{\fs15}我都要等不及了
+Dialogue: 0,1:01:08.00,1:01:12.90,HC,NTP,0,0,0,,{\pos(181,245)}{\fs15}你看了合同 做了研究麼
+Dialogue: 0,1:01:16.50,1:01:19.77,HC,NTP,0,0,0,,{\pos(187,190)}{\fs15}正在做... 主人
+Dialogue: 0,1:01:16.50,1:01:19.77,HC,NTP,0,0,0,,{\pos(186,215)}{\fs15}我該研究什麼
+Dialogue: 0,1:01:20.50,1:01:23.30,HC,NTP,0,0,0,,{\pos(172,185)}{\fs15}試試"服從者"
+Dialogue: 0,1:01:59.70,1:02:02.60,HC,NTP,0,0,0,,{\pos(283,200)}{\c&H000000}{\frz6.5}{\fs10}你的研究怎麼樣
+Dialogue: 0,1:01:59.70,1:02:02.60,HC,NTP,0,0,0,,{\pos(303,215)}{\c&H000000}{\frz6.5}{\fs10}我在西雅圖等得好不耐煩
+Dialogue: 0,1:02:05.80,1:02:10.40,HC,NTP,0,0,0,,{\pos(330,185)}{\c&H000000}{\K400}{\fs14}還不錯 能瞭解你 我很開心
+Dialogue: 0,1:07:03.50,1:07:07.30,HC,NTP,0,0,0,,{\pos(412,170)}{\fs15}我對文件有些疑問
+Dialogue: 0,1:07:09.75,1:07:13.00,HC,NTP,0,0,0,,{\pos(188,185)}{\fs15}你若沒有 我倒是會很失望的
+Dialogue: 0,1:07:09.75,1:07:13.00,HC,NTP,0,0,0,,{\pos(168,210)}{\fs15}今晚吃飯時候談 如何
+Dialogue: 0,1:07:19.25,1:07:22.50,HC,NTP,0,0,0,,{\pos(460,170)}{\fs15}既然是合同
+Dialogue: 0,1:07:19.25,1:07:22.50,HC,NTP,0,0,0,,{\pos(486,195)}{\fs15}就應該當成工作會議
+Dialogue: 0,1:07:22.60,1:07:25.00,HC,NTP,0,0,0,,{\pos(468,236)}{\fs15}好 我穿西裝來
+Dialogue: 0,1:07:30.90,1:07:34.90,HC,NTP,0,0,0,,{\pos(465,183)}{\fs15}我會穿個麻袋
+Dialogue: 0,1:39:31.50,1:39:39.75,HC,NTP,0,0,0,,{\pos(426,115)}{\fs14}{\fad(100,0)}想你了
+Dialogue: 0,1:39:31.50,1:39:39.75,HC,NTP,0,0,0,,{\pos(457,135)}{\fs14}{\fad(100,0)}真希望你在我身邊
+Dialogue: 0,1:39:39.75,1:39:39.87,HC,NTP,0,0,0,,{\move(426,115,426,75)}{\fs14}想你了
+Dialogue: 0,1:39:39.75,1:39:39.87,HC,NTP,0,0,0,,{\move(457,135,457,95)}{\fs14}真希望你在我身邊
+Dialogue: 0,1:39:39.87,1:39:42.00,HC,NTP,0,0,0,,{\pos(426,75)}{\fs14}{\fad(0,500)}想你了
+Dialogue: 0,1:39:39.87,1:39:42.00,HC,NTP,0,0,0,,{\pos(457,95)}{\fs14}{\fad(0,500)}真希望你在我身邊
+Dialogue: 0,1:39:35.90,1:39:40.00,HC,NTP,0,0,0,,{\pos(405,229)}{\fs14}{\K80}{\fad(0,200)}我也是
+Dialogue: 0,1:39:36.70,1:39:40.00,HC,NTP,0,0,0,,{\pos(442,249)}{\fs14}{\K250}{\fad(0,200)}今晚和朋友一起吃飯
+Dialogue: 0,1:39:40.00,1:39:42.65,HC,NTP,0,0,0,,{\pos(405,200)}{\fs14}{\fad(200,200)}我也是
+Dialogue: 0,1:39:40.00,1:39:42.65,HC,NTP,0,0,0,,{\pos(442,220)}{\fs14}{\fad(200,200)}今晚和朋友一起吃飯
+Dialogue: 0,1:39:51.25,1:39:53.65,HC,NTP,0,0,0,,{\pos(435,200)}{\fs14}{\fad(100,100)}哪個朋友
+Dialogue: 0,1:39:51.25,1:39:53.65,HC,NTP,0,0,0,,{\pos(447,220)}{\fs14}{\fad(100,100)}羅賓遜夫人麼
+Dialogue: 0,1:39:53.75,1:39:56.50,HC,NTP,0,0,0,,{\pos(412,230)}{\fs14}{\K250}{\fad(0,200)}不要擔心
+Dialogue: 0,1:39:56.50,1:39:58.75,HC,NTP,0,0,0,,{\pos(412,195)}{\fs14}{\fad(200,200)}不要擔心
+
+
