@@ -1,0 +1,895 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: Robot Cop 3 (1)
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CHT,標楷體,15,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1
+Style: ENG,Microsoft YaHei UI,16,&H00E0E0E0,&HF0000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1  
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:36.75,0:00:40.44,ENG,,0,0,0,,Imagine an end to crime...\N{\rCHT}試想想不再有罪案...
+Dialogue: 0,0:00:40.94,0:00:42.76,ENG,,0,0,0,,...an end to poverty.\N{\rCHT}不再有貧窮
+Dialogue: 0,0:00:43.67,0:00:48.97,ENG,,0,0,0,,Imagine 2 million good jobs waiting to be filled.\N{\rCHT}試想有兩百萬份 令人滿意的工作等著你去做
+Dialogue: 0,0:00:49.49,0:00:51.96,ENG,,0,0,0,,Sounds like a dream, doesn't it?\N{\rCHT}聽來像做夢吧
+Dialogue: 0,0:00:52.82,0:00:57.51,ENG,,0,0,0,,Well, sometimes dreams come true.\N{\rCHT}有時候夢境會成真
+Dialogue: 0,0:00:57.66,0:00:59.17,ENG,,0,0,0,,Delta City.\N{\rCHT}三角洲城
+Dialogue: 0,0:00:59.76,0:01:01.27,ENG,,0,0,0,,For our children.\N{\rCHT}為了我們的孩子
+Dialogue: 0,0:01:08.39,0:01:12.85,ENG,,0,0,0,,This is Media Break. You give us three minutes, we'll give you the world.\N{\rCHT}這是新聞追擊 給我們三分鐘 我們就給你全世界
+Dialogue: 0,0:01:13.10,0:01:16.21,ENG,,0,0,0,,Good evening, I'm Casey Wong. Our top story tonight:\N{\rCHT}晚安 我是凱西·黃 今晚的主要新聞有
+Dialogue: 0,0:01:16.30,0:01:20.38,ENG,,0,0,0,,Motor City goes Japanese as the Omni Consumer Products Corporation...\N{\rCHT}數月來的猜測告終 汽車之城變得日本化了
+Dialogue: 0,0:01:20.52,0:01:24.15,ENG,,0,0,0,,...ended months of speculation today by announcing its takeover...\N{\rCHT}今天普及消費者產品公司宣佈...
+Dialogue: 0,0:01:24.20,0:01:27.25,ENG,,0,0,0,,...by the multinational Kanemitsu Corporation.\N{\rCHT}該公司會被跨國的金光公司收購
+Dialogue: 0,0:01:27.80,0:01:31.77,ENG,,0,0,0,,Come on, honey, hurry up with your calculus. It's almost time for bed.\N{\rCHT}乖 你快點把微積分做完 要睡覺了
+Dialogue: 0,0:01:32.80,0:01:34.93,ENG,,0,0,0,,I'm watching Media Break.\N{\rCHT}我在看新聞追擊
+Dialogue: 0,0:01:34.99,0:01:38.66,ENG,,0,0,0,,the first private corporation to completely own and operate a major city.\N{\rCHT}是第一間私有公司完全擁有和管理 一個大城市的私人機構
+Dialogue: 0,0:01:38.84,0:01:41.24,ENG,,0,0,0,,Company spokesmen express special interest...\N{\rCHT}發言人表示對市區...
+Dialogue: 0,0:01:41.38,0:01:43.47,ENG,,0,0,0,,in the issues of urban resettlement...\N{\rCHT}重新安置問題 有特別興趣
+Dialogue: 0,0:01:43.65,0:01:48.74,ENG,,0,0,0,,...and a crime wave in Detroit that many citizens are calling a war zone.\N{\rCHT}還有底特律的罪案猖獗 市民都叫這做戰區
+Dialogue: 0,0:01:52.32,0:01:54.52,ENG,,0,0,0,,But as usual, OCP has an answer.\N{\rCHT}但OCP通常都有解決辦法
+Dialogue: 0,0:01:55.26,0:01:58.82,ENG,,0,0,0,,Meet the Rehabs, Urban rehabilitation officers.\N{\rCHT}這些是建改警隊 市區重建改造員警
+Dialogue: 0,0:01:59.16,0:02:01.32,ENG,,0,0,0,,From the blazing fields of the Amazon War...\N{\rCHT}從炮火連天的亞馬遜戰場來的
+Dialogue: 0,0:02:01.50,0:02:04.73,ENG,,0,0,0,,...comes state-of-the-art urban pacification.\N{\rCHT}新型市區維持治安警隊
+Dialogue: 0,0:02:05.07,0:02:09.77,ENG,,0,0,0,,We're here to help the people, augment the police force and deal with the gang problem.\N{\rCHT}我們是來協助市民 增強警方和對付黑道份子
+Dialogue: 0,0:02:10.11,0:02:12.60,ENG,,0,0,0,,What about reports you're actually evicting people...\N{\rCHT}有報導說 你們其實是來驅逐居民...
+Dialogue: 0,0:02:12.81,0:02:15.44,ENG,,0,0,0,,...to make way for construction of Delta City?\N{\rCHT}以便興建三角洲城的
+Dialogue: 0,0:02:15.81,0:02:18.30,ENG,,0,0,0,,Nikko, you heard your mom. Go on.\N{\rCHT}妮歌 聽媽媽的話 來吧
+Dialogue: 0,0:02:19.28,0:02:20.84,ENG,,0,0,0,,Oh, man.\N{\rCHT}哎
+Dialogue: 0,0:02:23.62,0:02:25.41,ENG,,0,0,0,,- And the homeless?  - What a gyp.\N{\rCHT}- 無家可歸的人又怎樣  - 真滑頭
+Dialogue: 0,0:02:25.52,0:02:29.15,ENG,,0,0,0,,Some buildings have to come down before Delta can go up.\N{\rCHT}要拆毀一些建築物 才能興建三角洲城
+Dialogue: 0,0:02:29.56,0:02:32.46,ENG,,0,0,0,,I won't deny we're serving an eviction notice or two...\N{\rCHT}我不否認我們發了一兩張驅逐令...
+Dialogue: 0,0:02:32.63,0:02:37.46,ENG,,0,0,0,,...but most of these people have already taken their urine tests and placement exams.\N{\rCHT}但大部分人都接受過 驗尿和入職考試
+Dialogue: 0,0:02:37.63,0:02:40.33,ENG,,0,0,0,,They've got new jobs waiting for them.\N{\rCHT}有新工作等著他們做的
+Dialogue: 0,0:02:40.54,0:02:43.44,ENG,,0,0,0,,We're just helping them make the transition, that's all.\N{\rCHT}我們只是在過渡時期協助他們
+Dialogue: 0,0:02:43.87,0:02:47.74,ENG,,0,0,0,,- We're cops, nothing more.  - Nothing more?\N{\rCHT}- 我們是員警 別無其他  - 別無其他
+Dialogue: 0,0:02:48.14,0:02:50.64,ENG,,0,0,0,,Well, we're not robots, if that's what you mean.\N{\rCHT}我的意思是 我們不是機械人
+Dialogue: 0,0:03:17.41,0:03:18.70,ENG,,0,0,0,,Hey, Dad?\N{\rCHT}爸爸
+Dialogue: 0,0:03:24.18,0:03:25.88,ENG,,0,0,0,,You're supposed to be asleep.\N{\rCHT}你該睡了
+Dialogue: 0,0:03:26.32,0:03:30.25,ENG,,0,0,0,,Is it true what the Tv said?\N{\rCHT}電視說的是不是真的
+Dialogue: 0,0:03:30.79,0:03:32.65,ENG,,0,0,0,,That it's a war zone outside?\N{\rCHT}外面是不是有個戰區
+Dialogue: 0,0:03:32.89,0:03:37.12,ENG,,0,0,0,,Don't listen to what the Tv says. This is your home, you hear me?\N{\rCHT}別聽電視說的 這裡是你的家 知道嗎
+Dialogue: 0,0:03:37.29,0:03:39.12,ENG,,0,0,0,,And you're safe here.\N{\rCHT}你在這裡很安全
+Dialogue: 0,0:03:46.34,0:03:49.43,ENG,,0,0,0,,I'll buy that for a dollar!\N{\rCHT}付多少錢我也願意
+Dialogue: 0,0:03:50.27,0:03:52.87,ENG,,0,0,0,,Get out, get out, get out!\N{\rCHT}快走...
+Dialogue: 0,0:03:56.38,0:03:58.51,ENG,,0,0,0,,{\fs13\fn標楷體}（驅逐令）
+Dialogue: 0,0:04:00.45,0:04:03.75,ENG,,0,0,0,,This neighborhood is the property of omni Consumer Products.\N{\rCHT}這一區是普及消費者產品公司的資產
+Dialogue: 0,0:04:04.09,0:04:07.68,ENG,,0,0,0,,{\fs32\fn方正粗圓簡體}底特律
+Dialogue: 0,0:04:04.09,0:04:07.68,ENG,,0,0,0,,{\fs20\fn方正粗圓簡體}卡迪拉克區
+Dialogue: 0,0:04:23.72,0:04:27.89,ENG,,0,0,0,,{\fs56\fn方正剪紙簡體}機械戰警3
+Dialogue: 0,0:04:30.75,0:04:34.68,ENG,,0,0,0,,- For God's sake, help us!  - That's what we're here for, ma'am.\N{\rCHT}- 天啊 幫幫我們  - 我們正是來幫你們
+Dialogue: 0,0:04:38.49,0:04:40.55,ENG,,0,0,0,,Just get on the bus.\N{\rCHT}上車
+Dialogue: 0,0:04:41.16,0:04:44.35,ENG,,0,0,0,,Where are they taking us, Dad? What's happening?\N{\rCHT}爸爸 他們帶我們去哪裡 發生什麼事
+Dialogue: 0,0:04:45.80,0:04:50.60,ENG,,0,0,0,,Don't believe them! They'll throw us into the streets to die like rats!\N{\rCHT}別相信他們 他們會丟我們到街上 自生自滅
+Dialogue: 0,0:04:50.77,0:04:53.50,ENG,,0,0,0,,Nazi sons of bitches!\N{\rCHT}納粹党混蛋
+Dialogue: 0,0:04:58.41,0:05:00.64,ENG,,0,0,0,,Shoot her if you must, but get her out of here.\N{\rCHT}有需要時就射死她 但把她帶走
+Dialogue: 0,0:05:00.81,0:05:02.28,ENG,,0,0,0,,Yes, sir.\N{\rCHT}知道
+Dialogue: 0,0:05:03.08,0:05:05.48,ENG,,0,0,0,,Let's go. Come on.\N{\rCHT}走吧
+Dialogue: 0,0:05:05.68,0:05:08.41,ENG,,0,0,0,,I think it's going rather well, don't you?\N{\rCHT}我認為進展得不錯 是不是
+Dialogue: 0,0:05:08.62,0:05:09.78,ENG,,0,0,0,,Yes, sir.\N{\rCHT}是的
+Dialogue: 0,0:05:10.22,0:05:12.85,ENG,,0,0,0,,Come on, I said, move! Move!\N{\rCHT}我叫你快點 走吧
+Dialogue: 0,0:05:13.19,0:05:16.65,ENG,,0,0,0,,- Manandle an old lady, would you?  - Shut up!\N{\rCHT}- 你對老婦粗暴點 好嗎  - 閉嘴
+Dialogue: 0,0:05:19.16,0:05:20.86,ENG,,0,0,0,,- Move, move!  - Get up there!\N{\rCHT}- 走  - 上車
+Dialogue: 0,0:05:21.26,0:05:23.16,ENG,,0,0,0,,I said, get up!\N{\rCHT}我叫你起來
+Dialogue: 0,0:05:24.23,0:05:28.07,ENG,,0,0,0,,What are you doing down there? Piece of slime!\N{\rCHT}你在下麵幹嘛 笨蛋
+Dialogue: 0,0:05:28.67,0:05:30.26,ENG,,0,0,0,,Can you hear me?\N{\rCHT}聽到我說嗎
+Dialogue: 0,0:05:31.54,0:05:34.10,ENG,,0,0,0,,I said, get up, you drunken cow!\N{\rCHT}我叫你起來 笨蛋
+Dialogue: 0,0:05:37.31,0:05:40.25,ENG,,0,0,0,,Get back! The crane's gonna blow!\N{\rCHT}退後 那架起重機會爆炸
+Dialogue: 0,0:05:51.76,0:05:55.06,ENG,,0,0,0,,Listen to me, people! These buses are going nowhere!\N{\rCHT}大家聽著 這些巴士那兒也去不了
+Dialogue: 0,0:05:55.57,0:06:00.26,ENG,,0,0,0,,Stay here! Fight for your homes! There is no silver lining!\N{\rCHT}留下來 為你們的家園抗爭 根本不會有好日子
+Dialogue: 0,0:06:00.44,0:06:05.20,ENG,,0,0,0,,Only corporate scumbags who want to line their pockets!\N{\rCHT}只是那些機構混蛋想中飽私囊
+Dialogue: 0,0:06:12.25,0:06:14.41,ENG,,0,0,0,,Nikko! Nikko!\N{\rCHT}妮歌 ...
+Dialogue: 0,0:06:14.58,0:06:18.49,ENG,,0,0,0,,Mom! Mom! Dad!\N{\rCHT}媽媽 爸爸
+Dialogue: 0,0:06:18.86,0:06:24.29,ENG,,0,0,0,,Nikko! No! That's my baby! Nikko, Nikko!\N{\rCHT}妮歌 不 那是我的孩子 妮歌
+Dialogue: 0,0:06:26.33,0:06:30.10,ENG,,0,0,0,,Mom! Dad! Dad!\N{\rCHT}媽媽 爸爸
+Dialogue: 0,0:06:30.33,0:06:32.10,ENG,,0,0,0,,Mom, Dad!\N{\rCHT}媽媽 爸爸
+Dialogue: 0,0:06:36.61,0:06:38.47,ENG,,0,0,0,,Mom!\N{\rCHT}媽媽
+Dialogue: 0,0:06:50.42,0:06:51.80,ENG,,0,0,0,,Mom!\N{\rCHT}媽媽
+Dialogue: 0,0:06:53.17,0:06:54.30,ENG,,0,0,0,,Dad?!\N{\rCHT}爸爸
+Dialogue: 0,0:06:57.19,0:06:58.65,ENG,,0,0,0,,Mom!\N{\rCHT}媽媽
+Dialogue: 0,0:07:10.74,0:07:13.30,ENG,,0,0,0,,You! Stay where you are!\N{\rCHT}你 別走開
+Dialogue: 0,0:07:35.53,0:07:40.16,ENG,,0,0,0,,Repeat: The rehabilitation officers are here to assist you.\N{\rCHT}重複 建改警隊是來協助你們的
+Dialogue: 0,0:07:48.11,0:07:51.77,ENG,,0,0,0,,It's okay, it's okay. You're with us now.\N{\rCHT}沒事的 你現在跟我們一起
+Dialogue: 0,0:07:52.68,0:07:53.67,ENG,,0,0,0,,Is he gone?\N{\rCHT}他走了沒有
+Dialogue: 0,0:07:54.68,0:07:56.41,ENG,,0,0,0,,Are we clear?\N{\rCHT}我們是否安全
+Dialogue: 0,0:07:56.59,0:07:57.64,ENG,,0,0,0,,Clear!\N{\rCHT}安全
+Dialogue: 0,0:07:58.72,0:08:00.71,ENG,,0,0,0,,Okay, let's do it.\N{\rCHT}好 我們來吧
+Dialogue: 0,0:08:12.54,0:08:13.52,ENG,,0,0,0,,Okay, Moreno.\N{\rCHT}好了 莫連奴
+Dialogue: 0,0:08:13.70,0:08:14.69,ENG,,0,0,0,,Cover your ears.\N{\rCHT}掩著耳朵
+Dialogue: 0,0:08:18.37,0:08:19.77,ENG,,0,0,0,,Rock 'r roll.\N{\rCHT}來吧
+Dialogue: 0,0:08:31.35,0:08:33.32,ENG,,0,0,0,,All clear. Let's go.\N{\rCHT}沒有人 我們走吧
+Dialogue: 0,0:08:47.74,0:08:49.30,ENG,,0,0,0,,Jesus!\N{\rCHT}天啊
+Dialogue: 0,0:08:51.41,0:08:53.88,ENG,,0,0,0,,- ED 209!  - He wasrt in the recon photo!\N{\rCHT}- ED209  - 他不在偵察照片裡
+Dialogue: 0,0:08:56.88,0:09:00.54,ENG,,0,0,0,,Freeze! You are trespassing on police property.\N{\rCHT}別動 你們擅自闖進警方範圍
+Dialogue: 0,0:09:00.72,0:09:02.31,ENG,,0,0,0,,Please surrender your weapons.\N{\rCHT}放下武器
+Dialogue: 0,0:09:02.52,0:09:04.35,ENG,,0,0,0,,- What the hell?  - Is she crazy?\N{\rCHT}- 什麼事  - 她瘋的嗎
+Dialogue: 0,0:09:04.52,0:09:06.39,ENG,,0,0,0,,You have 20 seconds to comply.\N{\rCHT}你們有二十秒時間
+Dialogue: 0,0:09:06.59,0:09:10.25,ENG,,0,0,0,,- Hey, kid, come back here!  - You're gonna get us all killed!\N{\rCHT}- 孩子 回來  - 你會害死我們的
+Dialogue: 0,0:09:11.39,0:09:13.39,ENG,,0,0,0,,What the hell is she doing?\N{\rCHT}她到底在幹什麼
+Dialogue: 0,0:09:13.56,0:09:17.66,ENG,,0,0,0,,You are in direct violation of penal code 114, section 3.\N{\rCHT}你們直接違反了法例第114條 第3節
+Dialogue: 0,0:09:17.83,0:09:21.13,ENG,,0,0,0,,I am authorized to use physical force.\N{\rCHT}我有權使用武力
+Dialogue: 0,0:09:21.34,0:09:24.31,ENG,,0,0,0,,You now have 10 seconds to comply.\N{\rCHT}你們現在有十秒時間
+Dialogue: 0,0:09:25.37,0:09:28.74,ENG,,0,0,0,,You won't believe this. He'll be loyal as a puppy.\N{\rCHT}你們不會相信的 他會像頭小狗般忠心
+Dialogue: 0,0:09:29.15,0:09:32.24,ENG,,0,0,0,,You have five seconds. Four seconds.\N{\rCHT}你們有五秒 四秒...
+Dialogue: 0,0:09:32.82,0:09:37.08,ENG,,0,0,0,,Three seconds. You have one second to comply.\N{\rCHT}三秒 你們有一秒時間
+Dialogue: 0,0:09:37.25,0:09:39.65,ENG,,0,0,0,,I am now authorized to...\N{\rCHT}我現在有權...
+Dialogue: 0,0:09:40.66,0:09:43.18,ENG,,0,0,0,,...be loyal as a puppy.\N{\rCHT}像頭小狗般忠心
+Dialogue: 0,0:09:43.63,0:09:44.75,ENG,,0,0,0,,Damn!\N{\rCHT}厲害
+Dialogue: 0,0:09:53.44,0:09:54.43,ENG,,0,0,0,,Will it work?\N{\rCHT}會有效嗎
+Dialogue: 0,0:09:55.71,0:09:57.61,ENG,,0,0,0,,Stole it off a dead cop.\N{\rCHT}從一個死了的員警偷來的
+Dialogue: 0,0:10:00.31,0:10:01.44,ENG,,0,0,0,,{\fs13\fn標楷體}（有人闖入）
+Dialogue: 0,0:10:05.11,0:10:07.24,ENG,,0,0,0,,Holy shit! That's the police armory!\N{\rCHT}該死 是警方軍火庫
+Dialogue: 0,0:10:10.45,0:10:13.72,ENG,,0,0,0,,- They deleted the access signature.  - Let's get out of here!\N{\rCHT}- 他們取消了通行識認  - 我們快走
+Dialogue: 0,0:10:14.22,0:10:17.52,ENG,,0,0,0,,They'll be a few minutes. Let's figure out how to open that door!\N{\rCHT}他們幾分鐘後才到達 我們想辦法打開這扇門
+Dialogue: 0,0:10:17.69,0:10:18.85,ENG,,0,0,0,,Are you kidding me?\N{\rCHT}你開玩笑吧
+Dialogue: 0,0:11:01.24,0:11:03.07,ENG,,0,0,0,,One-stop shopping.\N{\rCHT}一站式購物呢
+Dialogue: 0,0:11:09.58,0:11:12.38,ENG,,0,0,0,,- Let's go! Gotta get out of here!  - He's right. Let's ride.\N{\rCHT}- 快走 要立刻離開  - 走
+Dialogue: 0,0:11:16.19,0:11:19.21,ENG,,0,0,0,,- What are you, picking out drapes?  - Coming!\N{\rCHT}- 你幹嘛 選窗簾布  - 來了
+Dialogue: 0,0:11:24.59,0:11:26.19,ENG,,0,0,0,,- Get that.  - Why?\N{\rCHT}- 拿那個  - 為什麼
+Dialogue: 0,0:11:26.40,0:11:28.45,ENG,,0,0,0,,It looks expensive.\N{\rCHT}它看來很昂貴
+Dialogue: 0,0:11:34.84,0:11:36.77,ENG,,0,0,0,,Come on! Come on, let's go!\N{\rCHT}我們走吧
+Dialogue: 0,0:11:42.81,0:11:44.18,ENG,,0,0,0,,Drop your weapons now!\N{\rCHT}放下武器
+Dialogue: 0,0:11:44.58,0:11:46.28,ENG,,0,0,0,,Do it! Drop them!\N{\rCHT}快點 放下武器
+Dialogue: 0,0:11:52.72,0:11:55.85,ENG,,0,0,0,,Freeze! You're trespassing on police property.\N{\rCHT}別動 你們擅自闖進警方範圍
+Dialogue: 0,0:11:57.36,0:11:59.12,ENG,,0,0,0,,Eat lead, suckers!\N{\rCHT}混蛋 去死吧
+Dialogue: 0,0:12:09.61,0:12:11.44,ENG,,0,0,0,,Nikko, get in! Come on!\N{\rCHT}妮歌 快上車
+Dialogue: 0,0:12:49.85,0:12:51.14,ENG,,0,0,0,,What can I do for you?\N{\rCHT}有什麼可效勞
+Dialogue: 0,0:12:53.00,0:12:54.90,ENG,,0,0,0,,Nobody move!\N{\rCHT}別動
+Dialogue: 0,0:12:55.11,0:12:57.58,ENG,,0,0,0,,Everything in the register! Now! Do it!\N{\rCHT}把收銀機裡的錢拿來 快點
+Dialogue: 0,0:13:06.46,0:13:08.92,ENG,,0,0,0,,What's it like being a rocket scientist?\N{\rCHT}當火箭科學家是什麼滋味
+Dialogue: 0,0:13:09.21,0:13:14.10,ENG,,0,0,0,,All units, we have a B and E involving police property, please respond.\N{\rCHT}所有單位注意 警方範圍裡發生破門闖入事件 請回應
+Dialogue: 0,0:13:14.27,0:13:16.60,ENG,,0,0,0,,Repeat, all units, we have a...\N{\rCHT}重複 所有單位注意...
+Dialogue: 0,0:13:16.81,0:13:19.67,ENG,,0,0,0,,Hey, Donnelly, it's your turn.\N{\rCHT}唐諾利 輪到你了
+Dialogue: 0,0:13:19.88,0:13:23.71,ENG,,0,0,0,,- No way. We went last time.  - No, it's Lewis' turn.\N{\rCHT}- 不行 我們上次去了  - 不 輪到路易士
+Dialogue: 0,0:13:26.12,0:13:27.64,ENG,,0,0,0,,Lewis, you're up.\N{\rCHT}路易士 到你去
+Dialogue: 0,0:13:29.39,0:13:32.45,ENG,,0,0,0,,Lewis! Lewis! Lewis!\N{\rCHT}路易士...
+Dialogue: 0,0:13:34.16,0:13:37.15,ENG,,0,0,0,,Isn't anybody gonna arrest me, or what?!\N{\rCHT}究竟有沒有人要拘捕我
+Dialogue: 0,0:13:37.53,0:13:40.59,ENG,,0,0,0,,- Where's your friend Murphy?  - He's not big on doughnuts.\N{\rCHT}- 你朋友墨菲去了哪裡  - 他不喜歡吃甜甜圈的
+Dialogue: 0,0:13:40.76,0:13:42.82,ENG,,0,0,0,,- He's not big on doughnuts.  - I knew that.\N{\rCHT}- 他不喜歡吃甜甜圈  - 我知道
+Dialogue: 0,0:13:43.23,0:13:46.72,ENG,,0,0,0,,All units, repeat, that is a battered yellow van.\N{\rCHT}所有單位注意 重複 是一輛殘舊的黃色小型貨車
+Dialogue: 0,0:13:47.10,0:13:49.50,ENG,,0,0,0,,No plates. Tracking shows southbound...\N{\rCHT}沒有牌照 追蹤器顯示朝南面走
+Dialogue: 0,0:13:50.37,0:13:53.57,ENG,,0,0,0,,- That's a battered yellow van.  - No shit, Sherlock.\N{\rCHT}- 那是輛殘舊的黃色小型貨車  - 不錯
+Dialogue: 0,0:14:04.69,0:14:06.62,ENG,,0,0,0,,Moreno, company's coming!\N{\rCHT}莫連奴 我們有伴了
+Dialogue: 0,0:14:10.56,0:14:12.08,ENG,,0,0,0,,Hold on. Here we go.\N{\rCHT}抓穩點 來吧
+Dialogue: 0,0:14:18.67,0:14:22.47,ENG,,0,0,0,,Unit 477 in pursuit, eastbound, Esposito.\N{\rCHT}單位477正在追蹤 朝東面艾蒲賽道走
+Dialogue: 0,0:14:31.75,0:14:32.77,ENG,,0,0,0,,Watch it!\N{\rCHT}小心
+Dialogue: 0,0:14:33.12,0:14:34.48,ENG,,0,0,0,,I'm watching it!\N{\rCHT}我很小心
+Dialogue: 0,0:14:57.41,0:14:58.40,ENG,,0,0,0,,Jesus!\N{\rCHT}天啊
+Dialogue: 0,0:15:13.26,0:15:14.72,ENG,,0,0,0,,They're still on our tail.\N{\rCHT}他們還追著我們
+Dialogue: 0,0:15:15.22,0:15:16.75,ENG,,0,0,0,,Don't sweat it.\N{\rCHT}不用怕
+Dialogue: 0,0:15:17.09,0:15:19.06,ENG,,0,0,0,,Hey, kid. Watch this.\N{\rCHT}孩子 看這個
+Dialogue: 0,0:16:00.40,0:16:02.27,ENG,,0,0,0,,Hold the champagne.\N{\rCHT}別高興得太早
+Dialogue: 0,0:16:12.68,0:16:14.67,ENG,,0,0,0,,You stopped in the middle of the street!\N{\rCHT}你停在馬路中心
+Dialogue: 0,0:16:14.85,0:16:17.48,ENG,,0,0,0,,- That was my light!  - You idiot!\N{\rCHT}- 我是綠燈  - 笨蛋
+Dialogue: 0,0:16:17.65,0:16:20.68,ENG,,0,0,0,,- Is everybody okay?  - Okay? What are you, a comedian?\N{\rCHT}- 大家沒事吧  - 沒事 你說笑嗎
+Dialogue: 0,0:16:20.89,0:16:24.26,ENG,,0,0,0,,I traded in a brand new SUX for this classic. Now look at it!\N{\rCHT}我用一輛全新SUX換的 看看
+Dialogue: 0,0:16:24.43,0:16:26.86,ENG,,0,0,0,,It's garbage. It's going to the junkyard.\N{\rCHT}真是垃圾 去廢車場好了
+Dialogue: 0,0:16:27.23,0:16:32.26,ENG,,0,0,0,,What is this, fellas? You give a broad a badge and she gets delusions of gander.\N{\rCHT}這是什麼 給婆娘一個徽章 她就以為自己是老闆
+Dialogue: 0,0:16:32.43,0:16:35.16,ENG,,0,0,0,,It's "grandeur," dumbshit.\N{\rCHT}是權勢 笨蛋
+Dialogue: 0,0:16:38.74,0:16:41.44,ENG,,0,0,0,,This new guy is making me nervous.\N{\rCHT}這個新人令我緊張
+Dialogue: 0,0:16:42.34,0:16:44.61,ENG,,0,0,0,,I don't think this is exactly a guy.\N{\rCHT}我相信這不是人類
+Dialogue: 0,0:16:44.78,0:16:46.44,ENG,,0,0,0,,You think it's him?\N{\rCHT}是不是他
+Dialogue: 0,0:16:52.35,0:16:54.12,ENG,,0,0,0,,Unit 477 to dispatch.\N{\rCHT}單位477叫調遣部
+Dialogue: 0,0:16:54.29,0:16:57.52,ENG,,0,0,0,,This is 477 to dispatch. Come in, dispatch.\N{\rCHT}477叫調遣部 請通話
+Dialogue: 0,0:16:57.69,0:16:59.59,ENG,,0,0,0,,We could use some backup out here.\N{\rCHT}我們需要支援
+Dialogue: 0,0:16:59.76,0:17:03.63,ENG,,0,0,0,,Hello, dispatch. Come in. This is 477 to dispatch.\N{\rCHT}調遣部 請通話 這是477
+Dialogue: 0,0:17:04.50,0:17:05.59,ENG,,0,0,0,,Lewis.\N{\rCHT}路易士
+Dialogue: 0,0:17:11.44,0:17:12.84,ENG,,0,0,0,,Splatterpunks.\N{\rCHT}霹靂黨
+Dialogue: 0,0:17:15.31,0:17:18.54,ENG,,0,0,0,,Wait a second, what do you need the shotgun for?\N{\rCHT}等一下 你們拿著機關槍幹嘛
+Dialogue: 0,0:17:18.71,0:17:20.65,ENG,,0,0,0,,Shit, we're all gonna die.\N{\rCHT}我們都要死了
+Dialogue: 0,0:17:20.85,0:17:23.55,ENG,,0,0,0,,- Sit tight, people. Backup's coming.  - Sit tight?\N{\rCHT}- 別動 支援快到了  - 別動
+Dialogue: 0,0:17:23.72,0:17:28.25,ENG,,0,0,0,,If it wasrt for you, I wouldn't even be here, you dumb broad.\N{\rCHT}要不是你 我也不會在這裡 笨婆娘
+Dialogue: 0,0:17:28.42,0:17:32.59,ENG,,0,0,0,,I'll make you a deal, tough guy. You want to eat the tie, keep it up.\N{\rCHT}我跟你作個協議 你想吃掉領帶就繼續鬧吧
+Dialogue: 0,0:17:32.79,0:17:35.35,ENG,,0,0,0,,Take it easy. My brother's a cop.\N{\rCHT}放鬆點 我哥哥是個員警
+Dialogue: 0,0:18:16.97,0:18:24.14,ENG,,0,0,0,,{\fs22\fn微軟雅黑}距離113.7碼
+Dialogue: 0,0:18:17.76,0:18:24.14,ENG,,0,0,0,,{\K29\2a&HFF&\fs22\fn微軟雅黑}聲音分析
+Dialogue: 0,0:18:18.11,0:18:22.84,ENG,,0,0,0,,477 to dispatch, code 3! We're low on ammo and need immediate backup!\N{\rCHT}477叫調遣部 緊急事故 我們子彈不足 需要支援
+Dialogue: 0,0:18:19.01,0:18:24.14,ENG,,0,0,0,,{\K20\2a&HFF&\fs22\fn微軟雅黑}安妮·路易士
+Dialogue: 0,0:18:19.22,0:18:24.14,ENG,,0,0,0,,{\K12\2a&HFF&\fs22\fn微軟雅黑}編號
+Dialogue: 0,0:18:22.10,0:18:24.14,ENG,,0,0,0,,{\K37\2a&HFF&\fs22\fn微軟雅黑}備份請求
+Dialogue: 0,0:18:23.15,0:18:24.13,ENG,,0,0,0,,Right now!\N{\rCHT}馬上來
+Dialogue: 0,0:18:33.89,0:18:35.22,ENG,,0,0,0,,Sergeant Reed.\N{\rCHT}瑞德警官
+Dialogue: 0,0:18:35.72,0:18:37.66,ENG,,0,0,0,,I got Murphy's cruiser on the grid.\N{\rCHT}我在位置圖上看到墨菲的巡邏車
+Dialogue: 0,0:18:37.86,0:18:40.26,ENG,,0,0,0,,- He just turned around.  - He what?!\N{\rCHT}- 他剛調頭了  - 什麼
+Dialogue: 0,0:19:03.75,0:19:05.72,ENG,,0,0,0,,Murphy, this is Reed.\N{\rCHT}墨菲 我是瑞德
+Dialogue: 0,0:19:05.89,0:19:08.79,ENG,,0,0,0,,I have three other vehicles en route to Lewis.\N{\rCHT}我派了三輛車去聲援路易士
+Dialogue: 0,0:19:09.42,0:19:14.49,ENG,,0,0,0,,Murphy, continue pursuit! That is a direct order! Do I make myself clear?\N{\rCHT}墨菲 繼續追蹤 這是個直接命令 明白嗎
+Dialogue: 0,0:19:14.66,0:19:16.26,ENG,,0,0,0,,Murphy, are you listen...?\N{\rCHT}墨菲 你是否聽...
+Dialogue: 0,0:20:25.57,0:20:28.33,ENG,,0,0,0,,Police officer. No loitering.\N{\rCHT}員警 不准遊蕩
+Dialogue: 0,0:20:44.72,0:20:46.12,ENG,,0,0,0,,You called for backup?\N{\rCHT}你需要支援
+Dialogue: 0,0:20:51.46,0:20:53.79,ENG,,0,0,0,,Thanks for dropping by, Murphy.\N{\rCHT}謝謝你來 墨菲
+Dialogue: 0,0:20:54.63,0:20:56.36,ENG,,0,0,0,,Are they gone?\N{\rCHT}他們走了沒有
+Dialogue: 0,0:20:57.13,0:20:59.19,ENG,,0,0,0,,I'm still scanning three.\N{\rCHT}我掃描到還有三個人
+Dialogue: 0,0:21:07.41,0:21:09.47,ENG,,0,0,0,,Make that two.\N{\rCHT}剩下兩個人
+Dialogue: 0,0:21:15.75,0:21:18.15,ENG,,0,0,0,,Block it! Megazone invasion!\N{\rCHT}快躲避 大攻擊來了
+Dialogue: 0,0:21:18.32,0:21:21.62,ENG,,0,0,0,,Pop a tranq, hypo-head. Splatterville's ours.\N{\rCHT}冷靜點 笨蛋 霹靂圍是我們的
+Dialogue: 0,0:21:22.36,0:21:24.22,ENG,,0,0,0,,Shoot him in the mouth.\N{\rCHT}射他的嘴
+Dialogue: 0,0:21:24.46,0:21:26.29,ENG,,0,0,0,,Cyborg eats bullets, Jock.\N{\rCHT}半機械人要吃子彈了
+Dialogue: 0,0:21:27.06,0:21:28.36,ENG,,0,0,0,,Not tonight he don't.\N{\rCHT}今晚他不吃
+Dialogue: 0,0:22:19.78,0:22:21.15,ENG,,0,0,0,,Hit him in the mouth!\N{\rCHT}射他的嘴
+Dialogue: 0,0:22:21.35,0:22:23.25,ENG,,0,0,0,,- Shut up!  - Do it! Do it!\N{\rCHT}- 閉嘴  - 做吧
+Dialogue: 0,0:22:23.39,0:22:25.38,ENG,,0,0,0,,- Do it! Do it!  - Shut up!\N{\rCHT}- 做吧  - 閉嘴
+Dialogue: 0,0:22:30.29,0:22:32.06,ENG,,0,0,0,,Nice try, creeps.\N{\rCHT}試得好 變態鬼
+Dialogue: 0,0:22:32.23,0:22:33.22,ENG,,0,0,0,,Give me it!\N{\rCHT}給我
+Dialogue: 0,0:22:34.66,0:22:37.10,ENG,,0,0,0,,You have the right to remain silent.\N{\rCHT}你們有權保持緘默
+Dialogue: 0,0:22:46.44,0:22:47.87,ENG,,0,0,0,,Down there.\N{\rCHT}在那邊
+Dialogue: 0,0:22:54.08,0:22:55.81,ENG,,0,0,0,,Jesus, Murphy, are you okay?\N{\rCHT}天啊 墨菲 你沒事吧
+Dialogue: 0,0:22:56.15,0:22:57.85,ENG,,0,0,0,,I'm fine, Anne.\N{\rCHT}我很好 安妮
+Dialogue: 0,0:22:58.19,0:22:59.62,ENG,,0,0,0,,Thank you for asking.\N{\rCHT}謝謝關心
+Dialogue: 0,0:23:01.66,0:23:03.25,ENG,,0,0,0,,Come on, come on!\N{\rCHT}快點...
+Dialogue: 0,0:23:18.77,0:23:21.74,ENG,,0,0,0,,Let's go! Everything will be all right.\N{\rCHT}快走 不會有事的
+Dialogue: 0,0:23:25.08,0:23:26.57,ENG,,0,0,0,,Get your damn hands off me!\N{\rCHT}放手
+Dialogue: 0,0:23:31.79,0:23:33.19,ENG,,0,0,0,,Stupid kid.\N{\rCHT}笨孩子
+Dialogue: 0,0:23:37.76,0:23:40.19,ENG,,0,0,0,,{\fs24\fn微軟雅黑}錄影中
+Dialogue: 0,0:23:43.40,0:23:46.63,ENG,,0,0,0,,- Come here. Come on.  - Would you forget the stupid kid already?!\N{\rCHT}- 過來  - 你別管那個孩子好嗎
+Dialogue: 0,0:23:49.74,0:23:55.11,ENG,,0,0,0,,{\fs24\fn微軟雅黑}錄影中
+Dialogue: 0,0:24:03.65,0:24:05.31,ENG,,0,0,0,,{\fs13\fn標楷體}無能的美國人
+Dialogue: 0,0:24:06.69,0:24:09.21,ENG,,0,0,0,,{\fs13\fn標楷體}你們又肥又懶惰
+Dialogue: 0,0:24:10.79,0:24:14.49,ENG,,0,0,0,,{\fs13\fn標楷體}現在不單是錢財上受到威脅
+Dialogue: 0,0:24:16.06,0:24:18.59,ENG,,0,0,0,,{\fs13\fn標楷體}你越犯大錯...
+Dialogue: 0,0:24:19.13,0:24:22.50,ENG,,0,0,0,,{\fs13\fn標楷體}我們的競爭對手就越笑得大聲
+Dialogue: 0,0:24:24.11,0:24:27.47,ENG,,0,0,0,,{\fs13\fn標楷體}你們的行動令我們雙方蒙羞
+Dialogue: 0,0:24:27.64,0:24:29.54,ENG,,0,0,0,,Kanemitsu-san...\N{\rCHT}金光先生
+Dialogue: 0,0:24:29.71,0:24:32.34,ENG,,0,0,0,,...I realize we've had setbacks...\N{\rCHT}我知道我們遭受挫折
+Dialogue: 0,0:24:32.51,0:24:37.47,ENG,,0,0,0,,...but we've done everything possible to get Delta City back on schedule.\N{\rCHT}但我們已經盡一切努力 讓三角洲城如期復工
+Dialogue: 0,0:24:38.45,0:24:40.89,ENG,,0,0,0,,{\fs13\fn標楷體}你們的能力都表露無遺了
+Dialogue: 0,0:24:41.56,0:24:44.65,ENG,,0,0,0,,{\fs13\fn標楷體}我會派一個特工來修正你們的錯誤
+Dialogue: 0,0:24:51.23,0:24:52.36,ENG,,0,0,0,,Gentlemen...\N{\rCHT}各位...
+Dialogue: 0,0:24:54.67,0:24:57.60,ENG,,0,0,0,,...you are now looking at a company...\N{\rCHT}本公司正面臨...
+Dialogue: 0,0:24:57.77,0:24:59.26,ENG,,0,0,0,,...in transition.\N{\rCHT}過渡時期
+Dialogue: 0,0:25:00.14,0:25:04.54,ENG,,0,0,0,,Needless to say, this has resulted in the implementation of certain...\N{\rCHT}不用說 這樣做已導致執行上某些...
+Dialogue: 0,0:25:04.71,0:25:06.15,ENG,,0,0,0,,...well...\N{\rCHT}嗯
+Dialogue: 0,0:25:06.31,0:25:07.78,ENG,,0,0,0,,...let's call them...\N{\rCHT}我們稱它們為...
+Dialogue: 0,0:25:08.52,0:25:10.25,ENG,,0,0,0,,..."cutbacks."\N{\rCHT}削減
+Dialogue: 0,0:25:10.42,0:25:13.48,ENG,,0,0,0,,But who can put a price tag on a dream?\N{\rCHT}但誰能為夢想估價
+Dialogue: 0,0:25:15.26,0:25:18.38,ENG,,0,0,0,,Our esteemed former chairman had a dream.\N{\rCHT}我們受人敬重的前主席 有一個夢想
+Dialogue: 0,0:25:18.56,0:25:20.32,ENG,,0,0,0,,He called it Delta City.\N{\rCHT}他叫它做三角洲城
+Dialogue: 0,0:25:21.40,0:25:22.86,ENG,,0,0,0,,Knock it off, Johnson.\N{\rCHT}別這樣 強生
+Dialogue: 0,0:25:26.50,0:25:30.87,ENG,,0,0,0,,The great city of Detroit represents an important precedent, gentlemen.\N{\rCHT}各位 偉大的底特律市代表著一個重要的先河
+Dialogue: 0,0:25:31.44,0:25:34.07,ENG,,0,0,0,,There's only one small problem.\N{\rCHT}但有一個小問題
+Dialogue: 0,0:25:34.51,0:25:36.77,ENG,,0,0,0,,It's turning into a war zone!\N{\rCHT}它變成了一個戰區
+Dialogue: 0,0:25:37.15,0:25:38.77,ENG,,0,0,0,,It's just a small resistance group.\N{\rCHT}是個小規模反抗組織罷了
+Dialogue: 0,0:25:39.11,0:25:42.11,ENG,,0,0,0,,There's no reason to believe they pose a significant threat.\N{\rCHT}他們不會構成重大威脅
+Dialogue: 0,0:25:42.35,0:25:43.82,ENG,,0,0,0,,I'd consider...\N{\rCHT}我認為...
+Dialogue: 0,0:25:44.15,0:25:48.35,ENG,,0,0,0,,...a deficit of 350 million dollars a significant threat.\N{\rCHT}三億五千萬元的赤字 是個重大威脅
+Dialogue: 0,0:25:48.56,0:25:50.08,ENG,,0,0,0,,Wouldrt you?\N{\rCHT}是不是
+Dialogue: 0,0:25:51.76,0:25:53.52,ENG,,0,0,0,,- Fleck!  - Sir.\N{\rCHT}- 費曆克  - 先生
+Dialogue: 0,0:25:53.66,0:25:55.79,ENG,,0,0,0,,You're in charge of Security Concepts.\N{\rCHT}你主管保安概念部
+Dialogue: 0,0:25:56.10,0:25:59.12,ENG,,0,0,0,,Where's that Robocop we spent so much money on?\N{\rCHT}我們耗資巨大的機械員警在哪裡
+Dialogue: 0,0:25:59.30,0:26:03.24,ENG,,0,0,0,,The police had a problem with the unit. I'm dealing with it personally.\N{\rCHT}警方對那個裝置有問題 我正在處理
+Dialogue: 0,0:26:03.41,0:26:04.71,ENG,,0,0,0,,You do that.\N{\rCHT}你快做
+Dialogue: 0,0:26:05.10,0:26:07.07,ENG,,0,0,0,,Get him to the Rehab Team...\N{\rCHT}派他去建改組
+Dialogue: 0,0:26:07.14,0:26:11.32,ENG,,0,0,0,,...and maybe we won't have to worry about a "small resistance group."\N{\rCHT}我們也許就不用擔心 一個小規模反抗組織了
+Dialogue: 0,0:26:11.69,0:26:14.31,ENG,,0,0,0,,Get the hell out of here, all of you!\N{\rCHT}你們快滾出去
+Dialogue: 0,0:26:14.48,0:26:15.74,ENG,,0,0,0,,You take your time.\N{\rCHT}你們慢慢來
+Dialogue: 0,0:26:16.08,0:26:18.25,ENG,,0,0,0,,And for God's sake, Fleck...\N{\rCHT}天啊 費曆克...
+Dialogue: 0,0:26:18.42,0:26:21.32,ENG,,0,0,0,,...try to get the police on our side.\N{\rCHT}嘗試拉攏警方幫我們
+Dialogue: 0,0:26:26.43,0:26:29.42,ENG,,0,0,0,,What if I don't want a robot on my team?\N{\rCHT}若我不想有個機械人在我隊中呢
+Dialogue: 0,0:26:30.87,0:26:33.49,ENG,,0,0,0,,You've got 4 days, McDaggett.\N{\rCHT}保羅麥代格 你有四天時間
+Dialogue: 0,0:26:34.07,0:26:37.56,ENG,,0,0,0,,If Cadillac Heights isn't cleared for demolition Friday midnight...\N{\rCHT}若卡迪拉克區在週五淩晨 還未清場進行拆毀...
+Dialogue: 0,0:26:37.77,0:26:41.77,ENG,,0,0,0,,...our loans will be called in. OCP will be ruined.\N{\rCHT}我們會被追討貸款 OCP就會完蛋
+Dialogue: 0,0:26:42.14,0:26:43.87,ENG,,0,0,0,,We made a deal, didn't we, chum.\N{\rCHT}我們有個協議的 是嗎
+Dialogue: 0,0:26:44.88,0:26:47.18,ENG,,0,0,0,,Oh, by the way...\N{\rCHT}順便一提...
+Dialogue: 0,0:26:48.18,0:26:52.85,ENG,,0,0,0,,...if you're just figuring out the line between big business and war...\N{\rCHT}如果你覺得做大生意和作戰的界線...
+Dialogue: 0,0:26:53.19,0:26:55.35,ENG,,0,0,0,,...is a little blurry...\N{\rCHT}有點模糊不清...
+Dialogue: 0,0:26:55.56,0:26:58.32,ENG,,0,0,0,,...then you're further over the hill than they say.\N{\rCHT}那麼你就是 比他們口中說得好要糟
+Dialogue: 0,0:26:59.79,0:27:03.53,ENG,,0,0,0,,{\fs22\fn方正粗圓簡體}金光世界總部
+Dialogue: 0,0:27:10.21,0:27:12.17,ENG,,0,0,0,,{\fs13\fn標楷體}但是 金光先生
+Dialogue: 0,0:27:13.29,0:27:19.80,ENG,,0,0,0,,{\fs13\fn標楷體}我們從沒派過雄志去這麼人口稠密的地區
+Dialogue: 0,0:27:20.51,0:27:22.05,ENG,,0,0,0,,{\fs13\fn標楷體}不要再討論了
+Dialogue: 0,0:27:45.67,0:27:50.08,ENG,,0,0,0,,{\fs22\fn方正粗圓簡體}西區警察局
+Dialogue: 0,0:27:51.25,0:27:55.15,ENG,,0,0,0,,This is entrapment! My client was visiting close friends in that motel.\N{\rCHT}這是誘捕 我的當事人當時在那間旅館探訪朋友
+Dialogue: 0,0:27:55.32,0:27:58.41,ENG,,0,0,0,,Hey, buddy. Your client's friends...\N{\rCHT}你當事人的朋友們...
+Dialogue: 0,0:27:58.59,0:28:01.65,ENG,,0,0,0,,...were a non-union video crew and a German shepherd.\N{\rCHT}是一支非工會攝影組和一頭德國牧羊狗
+Dialogue: 0,0:28:01.86,0:28:03.26,ENG,,0,0,0,,That's prejudicial.\N{\rCHT}那有偏見
+Dialogue: 0,0:28:03.42,0:28:07.19,ENG,,0,0,0,,Did the arresting officer ask to see their union cards?\N{\rCHT}那個負責拘捕的警員有否要求看他們的工會證
+Dialogue: 0,0:28:07.40,0:28:10.76,ENG,,0,0,0,,Come get this crap. Will someone answer the damn phone?!\N{\rCHT}來處理這個 聽電話好嗎
+Dialogue: 0,0:28:11.13,0:28:15.09,ENG,,0,0,0,,Metro West. No, ma'am, we're not on strike.\N{\rCHT}西區 不 小姐 我們沒有罷工
+Dialogue: 0,0:28:15.27,0:28:18.73,ENG,,0,0,0,,You could have fooled me. I'll deal with those looters myself.\N{\rCHT}你本可以騙倒我 我會處置那班劫匪
+Dialogue: 0,0:28:19.07,0:28:21.77,ENG,,0,0,0,,Get me a baseball bat with some nails in it.\N{\rCHT}給我一支有釘的壘球棒
+Dialogue: 0,0:28:30.52,0:28:32.15,ENG,,0,0,0,,How are you feeling?\N{\rCHT}你覺得怎樣
+Dialogue: 0,0:28:33.69,0:28:35.32,ENG,,0,0,0,,I've been better.\N{\rCHT}不大好
+Dialogue: 0,0:28:36.29,0:28:40.42,ENG,,0,0,0,,To be honest, it looks like you just made friends with a Mack truck.\N{\rCHT}老實說 你像跟一輛貨車做了朋友
+Dialogue: 0,0:28:42.40,0:28:44.13,ENG,,0,0,0,,I don't have many...\N{\rCHT}我沒有很多...
+Dialogue: 0,0:28:44.27,0:28:45.32,ENG,,0,0,0,,...friends.\N{\rCHT}朋友
+Dialogue: 0,0:28:56.51,0:28:57.50,ENG,,0,0,0,,Dr. Lazarus.\N{\rCHT}賴莎拉斯博士
+Dialogue: 0,0:28:59.48,0:29:04.44,ENG,,0,0,0,,- You want to tell me what happened?  - Atlanta beat the Pistons last night.\N{\rCHT}- 發生了什麼事  - 阿特蘭大隊昨晚打贏活塞隊
+Dialogue: 0,0:29:04.62,0:29:08.61,ENG,,0,0,0,,- That's cute. I meant with glory boy.  - Oh, him.\N{\rCHT}- 很有趣 我是指英勇小子  - 是他
+Dialogue: 0,0:29:09.36,0:29:12.26,ENG,,0,0,0,,He got shot to hell and set on fire.\N{\rCHT}他受到槍擊 還著了火
+Dialogue: 0,0:29:12.43,0:29:16.06,ENG,,0,0,0,,You know what I'm talking about. He disobeyed a direct order. Why?\N{\rCHT}你明白我的意思 他違抗直接命令 為什麼
+Dialogue: 0,0:29:16.23,0:29:19.79,ENG,,0,0,0,,- My real opinion?  - No, lie. Make up a story.\N{\rCHT}- 我真正的意見  - 不 說謊 編個故事
+Dialogue: 0,0:29:21.07,0:29:22.70,ENG,,0,0,0,,Well, Mr. Fleck...\N{\rCHT}費曆克先生...
+Dialogue: 0,0:29:24.31,0:29:25.60,ENG,,0,0,0,,...offhand...\N{\rCHT}目前...
+Dialogue: 0,0:29:25.77,0:29:29.71,ENG,,0,0,0,,...l'd say the only reason he'd disobey an order is if...\N{\rCHT}我認為他抗命的唯一理由是...
+Dialogue: 0,0:29:29.88,0:29:31.71,ENG,,0,0,0,,...he didn't agree with it.\N{\rCHT}他不同意那個命令
+Dialogue: 0,0:29:34.12,0:29:35.10,ENG,,0,0,0,,Excuse me?\N{\rCHT}什麼
+Dialogue: 0,0:29:36.42,0:29:38.32,ENG,,0,0,0,,He made a decision.\N{\rCHT}他作了一個決定
+Dialogue: 0,0:29:38.62,0:29:42.56,ENG,,0,0,0,,His friend was in trouble, he made a judgment call. Cops do that.\N{\rCHT}他的朋友有麻煩 他作出判斷 員警都那樣做的
+Dialogue: 0,0:29:42.72,0:29:45.78,ENG,,0,0,0,,Human cops. What do you mean, "his friend"? It's a machine.\N{\rCHT}人類的員警 你說"他的朋友"是什麼意思 它是副機器
+Dialogue: 0,0:29:46.09,0:29:47.16,ENG,,0,0,0,,Look,\N{\rCHT}聽著
+Dialogue: 0,0:29:47.16,0:29:50.29,ENG,,0,0,0,,if oCP just wanted a robot, why'd they put Murphy in there in the first place?\N{\rCHT}如果OCP只要一個機械人 為何他們派墨菲去那裡
+Dialogue: 0,0:29:50.50,0:29:52.80,ENG,,0,0,0,,Murphy's dead, sweetheart, that's on record.\N{\rCHT}墨菲已經死了 已有記錄在案
+Dialogue: 0,0:29:53.13,0:29:55.60,ENG,,0,0,0,,Mr. Fleck, this is Murphy!\N{\rCHT}費曆克先生 這就是墨菲
+Dialogue: 0,0:29:55.77,0:29:58.47,ENG,,0,0,0,,What's left of his face, his cerebrum, his cerebellum.\N{\rCHT}在他的面孔 大腦 小腦所留下的
+Dialogue: 0,0:29:58.64,0:30:00.87,ENG,,0,0,0,,Human tissue that's still alive.\N{\rCHT}人體組織仍然存在
+Dialogue: 0,0:30:01.21,0:30:03.27,ENG,,0,0,0,,How can you interface human and machine...\N{\rCHT}為何結合兩者...
+Dialogue: 0,0:30:03.44,0:30:06.14,ENG,,0,0,0,,then complain when the human part makes a decision?\N{\rCHT}但當人類部分作決定時又要抱怨
+Dialogue: 0,0:30:09.28,0:30:12.78,ENG,,0,0,0,,So not only did we get Murphy's years of training...\N{\rCHT}那麼我們不但得到了墨菲多年來的訓練...
+Dialogue: 0,0:30:13.76,0:30:16.62,ENG,,0,0,0,,and his law-enforcement skills, we also inerited...\N{\rCHT}和執法技巧 還繼承了...
+Dialogue: 0,0:30:16.79,0:30:20.69,ENG,,0,0,0,,...his memories, his feelings, his emotional baggage?\N{\rCHT}他的記憶 感覺和情緒
+Dialogue: 0,0:30:22.13,0:30:26.29,ENG,,0,0,0,,Well, I'd call it his humanity, but I don't think you know that word.\N{\rCHT}我會叫它做他的人性 但我相信你不認識那個字眼
+Dialogue: 0,0:30:27.30,0:30:28.46,ENG,,0,0,0,,I see.\N{\rCHT}是吧
+Dialogue: 0,0:30:30.27,0:30:33.37,ENG,,0,0,0,,You talked me into it. His emotions: Get rid of them.\N{\rCHT}你說服我了 刪除他的情感
+Dialogue: 0,0:30:34.64,0:30:38.77,ENG,,0,0,0,,Find their location and erase them. If it wipes out his memory, too bad.\N{\rCHT}找出它們的位置後消除它們 如果洗掉他的記憶 那真糟糕
+Dialogue: 0,0:30:41.22,0:30:44.38,ENG,,0,0,0,,We could cut out the appropriate circuits by...\N{\rCHT}我們可以植入一個 微型神經障礙器...
+Dialogue: 0,0:30:45.35,0:30:48.69,ENG,,0,0,0,,...implanting a micro-neuro-barrier.\N{\rCHT}截斷有關的線路
+Dialogue: 0,0:30:54.60,0:30:56.15,ENG,,0,0,0,,Do it.\N{\rCHT}做吧
+Dialogue: 0,0:30:57.43,0:31:00.40,ENG,,0,0,0,,I got news for you. I don't give a shit how smart you are.\N{\rCHT}聽著 我不管你有多聰明
+Dialogue: 0,0:31:00.54,0:31:04.56,ENG,,0,0,0,,OCP owns the cops. That means they own him, and they own your cute little ass.\N{\rCHT}OCP擁有警隊 擁有他 還擁有你
+Dialogue: 0,0:31:05.24,0:31:07.10,ENG,,0,0,0,,Nobody owns me.\N{\rCHT}沒有人能擁有我
+Dialogue: 0,0:31:07.71,0:31:09.07,ENG,,0,0,0,,Fine.\N{\rCHT}很好
+Dialogue: 0,0:31:09.31,0:31:13.08,ENG,,0,0,0,,We want him on the Rehab Team.\N{\rCHT}我們要他加入建改隊
+Dialogue: 0,0:31:13.35,0:31:17.25,ENG,,0,0,0,,That means you make him predictable, or look for a new job, sweet cheeks.\N{\rCHT}你把他改為可以預測 否則你另謀高就
+Dialogue: 0,0:31:24.16,0:31:25.75,ENG,,0,0,0,,I think I'm in love.\N{\rCHT}我墮入愛河了
+Dialogue: 0,0:31:41.24,0:31:43.51,ENG,,0,0,0,,What's going through your head?\N{\rCHT}你腦海中想著什麼
+Dialogue: 0,0:31:55.22,0:31:56.75,ENG,,0,0,0,,{\fs13\fn標楷體}（記憶搜尋：墨菲）
+Dialogue: 0,0:32:00.83,0:32:02.23,ENG,,0,0,0,,That's his family.\N{\rCHT}那是他的家人
+Dialogue: 0,0:32:03.06,0:32:05.69,ENG,,0,0,0,,Want me to install the neuro-barrier, doctor?\N{\rCHT}可要我安裝那個神經障礙器
+Dialogue: 0,0:32:06.07,0:32:07.86,ENG,,0,0,0,,No, I can do it.\N{\rCHT}不 我可以做
+Dialogue: 0,0:32:15.18,0:32:18.08,ENG,,0,0,0,,I think I'd like to be alone with him, if it's all right.\N{\rCHT}我想單獨陪著他
+Dialogue: 0,0:32:33.53,0:32:35.26,ENG,,0,0,0,,{\fs13\fn標楷體}（記憶搜尋：墨菲）
+Dialogue: 0,0:32:46.87,0:32:49.87,ENG,,0,0,0,,Alex, I thought you'd never get home.\N{\rCHT}墨菲 我以為你永遠不回來了
+Dialogue: 0,0:32:55.35,0:32:59.58,ENG,,0,0,0,,Don't let the fact that these people are homeless sway you.\N{\rCHT}別讓那些無家可歸的人動搖你們
+Dialogue: 0,0:33:01.22,0:33:03.82,ENG,,0,0,0,,They're terrorists, pure and simple.\N{\rCHT}他們都是恐怖分子
+Dialogue: 0,0:33:05.16,0:33:09.19,ENG,,0,0,0,,On the screens are suspected rebel locations.\N{\rCHT}畫面上的都是可疑的叛軍位置
+Dialogue: 0,0:33:09.40,0:33:13.39,ENG,,0,0,0,,If these locations appear on your regular beat, check it out.\N{\rCHT}若這些地點在你們的巡邏範圍內 便去查看一下
+Dialogue: 0,0:33:13.57,0:33:17.63,ENG,,0,0,0,,Make sure you report any unusual findings...\N{\rCHT}報告任何不尋常的發現...
+Dialogue: 0,0:33:19.77,0:33:21.40,ENG,,0,0,0,,Hear what they did to Murphy?\N{\rCHT}有聽到他們怎樣處置墨菲嗎
+Dialogue: 0,0:33:49.60,0:33:56.31,ENG,,0,0,0,,{\fs24\fn微軟雅黑}重 播
+Dialogue: 0,0:34:07.09,0:34:08.20,ENG,,0,0,0,,Murphy.\N{\rCHT}墨菲
+Dialogue: 0,0:34:31.75,0:34:33.87,ENG,,0,0,0,,Lewis, you want your body armor?\N{\rCHT}路易士 要不要盔甲
+Dialogue: 0,0:34:34.08,0:34:36.81,ENG,,0,0,0,,What? No, I'm off duty.\N{\rCHT}什麼 不要 我下班了
+Dialogue: 0,0:34:39.74,0:34:41.10,ENG,,0,0,0,,What's up, anyway?\N{\rCHT}到底什麼事
+Dialogue: 0,0:34:42.22,0:34:43.59,ENG,,0,0,0,,Do you have family?\N{\rCHT}你有沒有家人
+Dialogue: 0,0:34:44.21,0:34:48.34,ENG,,0,0,0,,Yeah, I have a brother in Pittsburgh, the one who never calls. You know that.\N{\rCHT}有 有個在匹茲堡 從不打電話給我的弟弟 你知道的
+Dialogue: 0,0:34:50.09,0:34:52.09,ENG,,0,0,0,,Robo, are you okay?\N{\rCHT}機械人 你沒事吧
+Dialogue: 0,0:34:52.40,0:34:53.58,ENG,,0,0,0,,I'm fine.\N{\rCHT}我很好
+Dialogue: 0,0:34:55.33,0:34:56.95,ENG,,0,0,0,,And call me Murphy.\N{\rCHT}叫我墨菲
+Dialogue: 0,0:35:54.23,0:35:55.75,ENG,,0,0,0,,{\fs24\fn微軟雅黑}熱能圖像
+Dialogue: 0,0:36:02.77,0:36:03.88,ENG,,0,0,0,,Murphy?\N{\rCHT}墨菲
+Dialogue: 0,0:36:09.78,0:36:11.71,ENG,,0,0,0,,Step out of the building.\N{\rCHT}離開這座建築物
+Dialogue: 0,0:36:33.37,0:36:35.46,ENG,,0,0,0,,Stay right there.\N{\rCHT}留在原地
+Dialogue: 0,0:36:35.87,0:36:37.77,ENG,,0,0,0,,We're police officers.\N{\rCHT}我們是員警
+Dialogue: 0,0:36:37.90,0:36:39.23,ENG,,0,0,0,,We don't want you.\N{\rCHT}我們不需要你們
+Dialogue: 0,0:36:39.30,0:36:43.17,ENG,,0,0,0,,We believe there are squatters in there. Now step away from the door.\N{\rCHT}裡面有一些擅闖者 別靠近那扇門
+Dialogue: 0,0:36:43.23,0:36:46.42,ENG,,0,0,0,,They're civilians. They're just trying to stay warm!\N{\rCHT}他們是平民 他們想取暖罷了
+Dialogue: 0,0:36:46.60,0:36:50.39,ENG,,0,0,0,,Those people belong in the nearest rehabilitation center.\N{\rCHT}這些人是屬於一所改造中心的
+Dialogue: 0,0:36:50.45,0:36:52.78,ENG,,0,0,0,,{\K37\2a&HFF&\fs24\fn微軟雅黑}1>為公眾服務
+Dialogue: 0,0:36:50.58,0:36:52.78,ENG,,0,0,0,,{\fs22\fn微軟雅黑}首要指令:
+Dialogue: 0,0:36:53.12,0:36:57.85,ENG,,0,0,0,,Some are terrorists. Step away or you will be cited for obstructing justice.\N{\rCHT}部分是恐怖分子 走開 否則你會被控阻礙辦公
+Dialogue: 0,0:36:58.19,0:37:02.09,ENG,,0,0,0,,{\K37\2a&HFF&\fs24\fn微軟雅黑}2>保護無辜者
+Dialogue: 0,0:36:58.19,0:37:02.43,ENG,,0,0,0,,{\fs22\fn微軟雅黑}首要指令:
+Dialogue: 0,0:37:03.06,0:37:05.29,ENG,,0,0,0,,I'm not going to ask politely next time.\N{\rCHT}我不會再禮貌地要求了
+Dialogue: 0,0:37:05.38,0:37:08.89,ENG,,0,0,0,,{\fs22\fn微軟雅黑}首要指令:
+Dialogue: 0,0:37:05.47,0:37:06.87,ENG,,0,0,0,,Step away from the door.\N{\rCHT}別靠近那扇門
+Dialogue: 0,0:37:05.68,0:37:08.89,ENG,,0,0,0,,{\K37\2a&HFF&\fs24\fn微軟雅黑}3>執行法紀
+Dialogue: 0,0:37:10.40,0:37:12.74,ENG,,0,0,0,,This is your final warning.\N{\rCHT}這是你們的最後警告
+Dialogue: 0,0:37:13.07,0:37:17.15,ENG,,0,0,0,,{\K37\2a&HFF&\fs24\fn微軟雅黑}4>不准違抗OCP人員
+Dialogue: 0,0:37:13.07,0:37:17.23,ENG,,0,0,0,,{\fs22\fn微軟雅黑}首要指令:
+Dialogue: 0,0:37:26.09,0:37:28.49,ENG,,0,0,0,,You are making a mistake.\N{\rCHT}你們犯了個錯誤
+Dialogue: 0,0:37:32.16,0:37:36.19,ENG,,0,0,0,,- Back off, or there'll be trouble.  - Now you're talking, Murphy.\N{\rCHT}- 退後 否則會有麻煩  - 這樣才對
+Dialogue: 0,0:37:36.40,0:37:40.23,ENG,,0,0,0,,We're not budging. If you wanna get in, you'll have to shoot through us.\N{\rCHT}我們不會讓步 你們開槍射我們吧
+Dialogue: 0,0:37:41.74,0:37:44.53,ENG,,0,0,0,,I don't have a huge problem with that.\N{\rCHT}我不覺得那有大問題
+Dialogue: 0,0:37:55.22,0:37:57.65,ENG,,0,0,0,,{\fs22\fn微軟雅黑}瞄準中
+Dialogue: 0,0:37:55.22,0:37:57.65,ENG,,0,0,0,,{\K37\2a&HFF&\fs24\fn微軟雅黑}4>不准違抗OCP人員
+Dialogue: 0,0:38:12.40,0:38:13.49,ENG,,0,0,0,,Cease fire!\N{\rCHT}停火
+Dialogue: 0,0:38:25.31,0:38:29.55,ENG,,0,0,0,,{\fs24\fn微軟雅黑}系統損毀警報 效率72%
+Dialogue: 0,0:38:28.18,0:38:29.48,ENG,,0,0,0,,Robocop.\N{\rCHT}機械員警
+Dialogue: 0,0:38:31.15,0:38:32.31,ENG,,0,0,0,,{\fs24\fn微軟雅黑}系統損毀警報 效率69%
+Dialogue: 0,0:38:35.39,0:38:37.45,ENG,,0,0,0,,Come on, come on, come on!\N{\rCHT}快 快 快
+Dialogue: 0,0:38:43.13,0:38:44.26,ENG,,0,0,0,,Come with us!\N{\rCHT}跟我們走吧
+Dialogue: 0,0:38:45.87,0:38:47.16,ENG,,0,0,0,,Cover me.\N{\rCHT}掩護我
+Dialogue: 0,0:39:26.34,0:39:29.74,ENG,,0,0,0,,Some tough cop I am. Huh, partner?\N{\rCHT}我是個精銳的員警 是不是 夥伴
+Dialogue: 0,0:39:35.22,0:39:37.48,ENG,,0,0,0,,I'm scared.\N{\rCHT}我很害怕
+Dialogue: 0,0:39:38.82,0:39:40.38,ENG,,0,0,0,,Don't be.\N{\rCHT}不要怕
+Dialogue: 0,0:39:40.55,0:39:42.55,ENG,,0,0,0,,It won't hurt long.\N{\rCHT}不會痛太久的
+Dialogue: 0,0:39:43.29,0:39:46.84,ENG,,0,0,0,,{\fs24\fn微軟雅黑}記 錄
+Dialogue: 0,0:39:44.86,0:39:46.72,ENG,,0,0,0,,Get them for me.\N{\rCHT}替我抓他們
+Dialogue: 0,0:39:47.73,0:39:49.29,ENG,,0,0,0,,Promise me.\N{\rCHT}答應我
+Dialogue: 0,0:39:49.46,0:39:51.76,ENG,,0,0,0,,I promise.\N{\rCHT}我答應你
+Dialogue: 0,0:39:54.77,0:39:56.36,ENG,,0,0,0,,Murphy.\N{\rCHT}墨菲
+Dialogue: 0,0:40:06.25,0:40:08.08,ENG,,0,0,0,,Officer down.\N{\rCHT}警員身亡
+Dialogue: 0,0:40:17.91,0:40:18.95,ENG,,0,0,0,,Move it!\N{\rCHT}快走
+Dialogue: 0,0:40:19.01,0:40:21.31,ENG,,0,0,0,,We don't have much time.\N{\rCHT}沒時間了
+Dialogue: 0,0:40:22.37,0:40:23.59,ENG,,0,0,0,,Nikko, let's go.\N{\rCHT}妮歌 我們走吧
+Dialogue: 0,0:40:23.76,0:40:25.88,ENG,,0,0,0,,Come on. Come with us.\N{\rCHT}快點 跟我們走
+Dialogue: 0,0:40:26.60,0:40:29.55,ENG,,0,0,0,,Is she crazy? He's a cop! He's one of them!\N{\rCHT}他是個員警 是他們的人
+Dialogue: 0,0:40:30.34,0:40:32.17,ENG,,0,0,0,,He's on our side now.\N{\rCHT}他現在是我們的人
+Dialogue: 0,0:40:32.34,0:40:34.40,ENG,,0,0,0,,She's right. You saw what he did.\N{\rCHT}她說得對 你看到他做的事
+Dialogue: 0,0:40:34.58,0:40:37.07,ENG,,0,0,0,,You'll let a stupid kid make our decisions?\N{\rCHT}你讓個笨小孩替我們作決定
+Dialogue: 0,0:40:37.24,0:40:40.74,ENG,,0,0,0,,- We're at war. We can use his help.  - Are you kidding me? Look at him!\N{\rCHT}- 我們去作戰 我們需要他幫忙  - 你說笑嗎 看他
+Dialogue: 0,0:40:41.08,0:40:42.57,ENG,,0,0,0,,He is totaled, man!\N{\rCHT}他毀爛不堪
+Dialogue: 0,0:40:42.75,0:40:45.31,ENG,,0,0,0,,People, come on. We don't have time for this shit.\N{\rCHT}來吧 沒時間爭論了
+Dialogue: 0,0:40:48.59,0:40:49.56,ENG,,0,0,0,,He's right.\N{\rCHT}他說得對
+Dialogue: 0,0:40:51.26,0:40:52.38,ENG,,0,0,0,,We should go.\N{\rCHT}我們該走了
+Dialogue: 0,0:41:08.51,0:41:11.31,ENG,,0,0,0,,Five-meter spread. Search the perimeter.\N{\rCHT}在五米範圍內周圍搜索
+Dialogue: 0,0:41:13.81,0:41:14.87,ENG,,0,0,0,,Damn.\N{\rCHT}該死
+Dialogue: 0,0:41:15.22,0:41:19.52,ENG,,0,0,0,,- We're tracking him, sir. He's moving.  - Impossible. The building is surrounded.\N{\rCHT}- 長官 他在移動  - 不可能的 整個建築物都被包圍了
+Dialogue: 0,0:41:20.25,0:41:22.22,ENG,,0,0,0,,He's gone underground.\N{\rCHT}他走到地下去了
+Dialogue: 0,0:41:22.39,0:41:23.82,ENG,,0,0,0,,Find a manole.\N{\rCHT}找個入口
+Dialogue: 0,0:41:47.85,0:41:49.82,ENG,,0,0,0,,We got a little held up.\N{\rCHT}我們有點阻礙
+Dialogue: 0,0:42:00.69,0:42:01.88,ENG,,0,0,0,,Rats?\N{\rCHT}老鼠
+Dialogue: 0,0:42:04.97,0:42:06.04,ENG,,0,0,0,,One or two.\N{\rCHT}一兩隻吧
+Dialogue: 0,0:42:06.30,0:42:09.39,ENG,,0,0,0,,{\fs24\fn微軟雅黑}熱能圖像
+Dialogue: 0,0:42:12.07,0:42:13.30,ENG,,0,0,0,,Go on through.\N{\rCHT}走過去
+Dialogue: 0,0:42:17.78,0:42:20.34,ENG,,0,0,0,,{\fs24\fn微軟雅黑}系統損毀警報 效率25%
+Dialogue: 0,0:42:23.38,0:42:24.61,ENG,,0,0,0,,Are you okay?\N{\rCHT}你沒事吧
+Dialogue: 0,0:42:28.66,0:42:30.62,ENG,,0,0,0,,I'm fine.\N{\rCHT}我很好
+Dialogue: 0,0:42:32.36,0:42:33.49,ENG,,0,0,0,,Hey!\N{\rCHT}你
+Dialogue: 0,0:42:34.56,0:42:36.26,ENG,,0,0,0,,You guys!\N{\rCHT}你們快來
+Dialogue: 0,0:42:40.53,0:42:42.20,ENG,,0,0,0,,Oh, man!\N{\rCHT}天啊
+Dialogue: 0,0:42:42.44,0:42:44.56,ENG,,0,0,0,,I told you it was a mistake to bring him.\N{\rCHT}我叫你不要帶他來的
+Dialogue: 0,0:42:44.77,0:42:46.36,ENG,,0,0,0,,I bet he weighs a ton.\N{\rCHT}他重得要命
+Dialogue: 0,0:42:49.38,0:42:51.31,ENG,,0,0,0,,Watch your step.\N{\rCHT}小心
+Dialogue: 0,0:42:51.45,0:42:52.50,ENG,,0,0,0,,All right.\N{\rCHT}好吧
+Dialogue: 0,0:42:53.78,0:42:55.44,ENG,,0,0,0,,Clear the way.\N{\rCHT}讓開
+Dialogue: 0,0:42:55.62,0:42:57.88,ENG,,0,0,0,,- Get out of the way.  - Hold up your side.\N{\rCHT}- 讓開  - 扶著你那一邊
+Dialogue: 0,0:43:04.53,0:43:05.51,ENG,,0,0,0,,He don't look good.\N{\rCHT}他看來不妙
+Dialogue: 0,0:43:05.69,0:43:09.65,ENG,,0,0,0,,You wouldn't look so good either if you took a grenade in your chest.\N{\rCHT}你胸口中了手榴彈也會不妙
+Dialogue: 0,0:43:10.13,0:43:11.60,ENG,,0,0,0,,Tracking.\N{\rCHT}追蹤
+Dialogue: 0,0:43:12.37,0:43:13.80,ENG,,0,0,0,,- Beacon.  - Tracking?\N{\rCHT}- 信標  - 追蹤
+Dialogue: 0,0:43:15.67,0:43:17.40,ENG,,0,0,0,,He'll lead them right to us!\N{\rCHT}他會帶領他們找到來的
+Dialogue: 0,0:43:17.60,0:43:19.37,ENG,,0,0,0,,Shut up, Coontz!\N{\rCHT}閉嘴 康斯
+Dialogue: 0,0:43:19.54,0:43:21.00,ENG,,0,0,0,,What's he talking about?\N{\rCHT}他在說什麼
+Dialogue: 0,0:43:36.10,0:43:39.62,ENG,,0,0,0,,- Did he booby-trap the 8th Street entrance?  - Maybe.\N{\rCHT}- 他可有在入口設下陷阱  - 可能吧
+Dialogue: 0,0:44:08.89,0:44:11.17,ENG,,0,0,0,,Better get mobilized, folks.\N{\rCHT}我們還是快走
+Dialogue: 0,0:44:11.79,0:44:14.75,ENG,,0,0,0,,They got a little too close to home that time.\N{\rCHT}那次他們幾乎得手
+Dialogue: 0,0:44:16.26,0:44:17.79,ENG,,0,0,0,,It's not won'th it.\N{\rCHT}這是不值得的
+Dialogue: 0,0:44:18.13,0:44:19.83,ENG,,0,0,0,,It's not won'th this shit!\N{\rCHT}根本不值得
+Dialogue: 0,0:44:21.50,0:44:24.27,ENG,,0,0,0,,You better take a real deep breath right now, Coontz.\N{\rCHT}你最好深深吸一口氣
+Dialogue: 0,0:44:24.44,0:44:26.77,ENG,,0,0,0,,Because if you don't think it's won'th it...\N{\rCHT}因為如果你認為這樣不值得...
+Dialogue: 0,0:44:27.11,0:44:30.54,ENG,,0,0,0,,...then you're nothing but excess baggage. Do you hear me?!\N{\rCHT}你就死定了 明白嗎
+Dialogue: 0,0:44:32.58,0:44:34.77,ENG,,0,0,0,,You get it together, Coontz.\N{\rCHT}你想清楚
+Dialogue: 0,0:44:35.12,0:44:38.81,ENG,,0,0,0,,Cadillac Heights may not be much, but it's our home.\N{\rCHT}卡迪拉克區可能不算得什麼 但它是我們的家
+Dialogue: 0,0:44:39.15,0:44:40.81,ENG,,0,0,0,,It's all we got.\N{\rCHT}我們只有它
+Dialogue: 0,0:44:41.49,0:44:45.79,ENG,,0,0,0,,If you don't think our homes is won'th it, then tell me what the hell is.\N{\rCHT}如果你認為我們的家園不值得 告訴我什麼才值得
+Dialogue: 0,0:44:52.80,0:44:55.39,ENG,,0,0,0,,This is Bertha to Base op. We're coming in.\N{\rCHT}貝黛叫基地行動組 請通話
+Dialogue: 0,0:44:55.60,0:44:57.57,ENG,,0,0,0,,Set an extra place.\N{\rCHT}設置一個新地方
+Dialogue: 0,0:44:57.77,0:44:59.83,ENG,,0,0,0,,We're bringing in a friend.\N{\rCHT}我們會帶一個朋友來
+Dialogue: 0,0:45:06.88,0:45:09.14,ENG,,0,0,0,,Incoming caller.\N{\rCHT}有來電
+Dialogue: 0,0:45:15.39,0:45:16.36,ENG,,0,0,0,,What do you want?\N{\rCHT}你想怎樣
+Dialogue: 0,0:45:17.06,0:45:18.65,ENG,,0,0,0,,Nice work, dollface.\N{\rCHT}美人 做得好
+Dialogue: 0,0:45:18.83,0:45:20.35,ENG,,0,0,0,,What you talking about?\N{\rCHT}你是什麼意思
+Dialogue: 0,0:45:20.53,0:45:22.86,ENG,,0,0,0,,You haven't heard?\N{\rCHT}你沒聽到嗎
+Dialogue: 0,0:45:23.23,0:45:25.36,ENG,,0,0,0,,You might want to turn on Media Break.\N{\rCHT}不如看看新聞追擊吧
+Dialogue: 0,0:45:26.60,0:45:29.07,ENG,,0,0,0,,Tv on, channel 378.\N{\rCHT}開電視 378頻道
+Dialogue: 0,0:45:29.24,0:45:33.20,ENG,,0,0,0,,Witness to the tragic shooting was Rehab Commander, Paul McDaggett.\N{\rCHT}目擊這次悲慘開槍事件的 是建改隊指揮官保羅·麥代格
+Dialogue: 0,0:45:35.14,0:45:39.67,ENG,,0,0,0,,All I can say is it's a terrible loss of a fine public servant.\N{\rCHT}我只能說 這次損失了一個良好的公僕
+Dialogue: 0,0:45:40.28,0:45:44.18,ENG,,0,0,0,,It's hard to believe that she was gunned down by her own partner.\N{\rCHT}她被自己的夥伴射死 真是難以置信
+Dialogue: 0,0:45:45.22,0:45:47.19,ENG,,0,0,0,,An OCP spokesperson has confirmed...\N{\rCHT}OCP發言人證實
+Dialogue: 0,0:45:47.32,0:45:50.45,ENG,,0,0,0,,that Robocop has joined the terrorist rebel forces.\N{\rCHT}機械員警已經加入了叛軍
+Dialogue: 0,0:45:50.62,0:45:54.62,ENG,,0,0,0,,He is heavily armed and should be considered extremely dangerous.\N{\rCHT}他擁有大量武器 是個危險人物
+Dialogue: 0,0:45:55.23,0:45:56.56,ENG,,0,0,0,,Tv off.\N{\rCHT}關電視
+Dialogue: 0,0:45:56.73,0:46:01.20,ENG,,0,0,0,,Congratulations, sweet cheeks. Now listen up. I want your legendary ass...\N{\rCHT}恭喜你 美人兒 聽著 我要你...
+Dialogue: 0,0:46:01.20,0:46:03.60,ENG,,0,0,0,,...and your corporate I.D. Card in my office...\N{\rCHT}帶著你的工作證到我的辦公室
+Dialogue: 0,0:46:06.51,0:46:08.11,ENG,,0,0,0,,And maybe you won't be brought up on charges.\N{\rCHT}你不會被起訴
+Dialogue: 0,0:46:08.11,0:46:11.37,ENG,,0,0,0,,Meantime, you might want to decide whose side you're on.\N{\rCHT}你考慮一下你要幫哪一邊吧
+Dialogue: 0,0:46:12.85,0:46:14.64,ENG,,0,0,0,,Sleep tight.\N{\rCHT}晚安
+Dialogue: 0,0:46:14.85,0:46:17.48,ENG,,0,0,0,,{\fs13\fn標楷體}（通話完畢 通話時間一分三秒）
+Dialogue: 0,0:46:23.66,0:46:27.29,ENG,,0,0,0,,- He what?  - Shot at Rehabs and went underground.\N{\rCHT}- 他什麼  - 向建改隊開槍和做地下工作
+Dialogue: 0,0:46:27.46,0:46:31.52,ENG,,0,0,0,,- There goes our P.R. Budget.  - Company line is he's gone renegade.\N{\rCHT}- 我們的公關預算泡湯了  - 公司說他叛變了
+Dialogue: 0,0:46:31.73,0:46:34.20,ENG,,0,0,0,,- How'd the CEO take it?  - How do you think?\N{\rCHT}- 總管有何反應  - 你認為會怎樣
+Dialogue: 0,0:46:34.37,0:46:37.57,ENG,,0,0,0,,Between me and you, I think the CEO's losing it.\N{\rCHT}我跟你說 總管很生氣
+Dialogue: 0,0:46:37.74,0:46:40.10,ENG,,0,0,0,,I mean, take a look around, will you?\N{\rCHT}看看周圍
+Dialogue: 0,0:46:40.27,0:46:42.30,ENG,,0,0,0,,It's the Fall of Rome around here.\N{\rCHT}這裡像羅馬帝國倒臺一樣
+Dialogue: 0,0:46:42.48,0:46:45.17,ENG,,0,0,0,,It's Darwin time, you know what I'm saying?\N{\rCHT}岌岌可危 你明白嗎
+Dialogue: 0,0:46:45.35,0:46:47.47,ENG,,0,0,0,,Survival of the least expendable.\N{\rCHT}有用的才能生存
+Dialogue: 0,0:46:47.65,0:46:51.61,ENG,,0,0,0,,Remember the old man. Everyone's expendable.\N{\rCHT}記得舊老闆吧 所有人都可以被犧牲
+Dialogue: 0,0:46:53.19,0:46:56.16,ENG,,0,0,0,,It can't be that bad.\N{\rCHT}不是那麼糟糕的
+Dialogue: 0,0:46:56.36,0:46:58.32,ENG,,0,0,0,,Honey, can you hear me?\N{\rCHT}親愛的 你聽到嗎
+Dialogue: 0,0:46:58.92,0:47:00.41,ENG,,0,0,0,,Are you there?\N{\rCHT}你在嗎
+Dialogue: 0,0:47:02.23,0:47:06.20,ENG,,0,0,0,,Every corporation goes through this sort of thing.\N{\rCHT}每間公司都有這個情況的
+Dialogue: 0,0:47:26.30,0:47:28.68,ENG,,0,0,0,,Oh, my God, what happened?\N{\rCHT}天啊 發生了什麼
+Dialogue: 0,0:47:30.82,0:47:32.00,ENG,,0,0,0,,What's happening?\N{\rCHT}發生什麼事
+Dialogue: 0,0:47:32.05,0:47:33.93,ENG,,0,0,0,,Arnott just went out the window.\N{\rCHT}阿諾跳樓了
+Dialogue: 0,0:47:34.06,0:47:36.65,ENG,,0,0,0,,- That's the fourth one this month.  - Chickenshit.\N{\rCHT}- 那是本月的第四宗  - 膽小鬼
+Dialogue: 0,0:47:37.16,0:47:39.67,ENG,,0,0,0,,I'd eat a bullet myself.\N{\rCHT}我會選擇吞槍自殺
+Dialogue: 0,0:47:39.83,0:47:41.39,ENG,,0,0,0,,Less showy.\N{\rCHT}沒那麼張揚
+Dialogue: 0,0:47:44.24,0:47:47.30,ENG,,0,0,0,,The writing was on the wall the minute we hopped...\N{\rCHT}我們跟那間混帳金光公司合作的那一刻
+Dialogue: 0,0:47:47.37,0:47:50.89,ENG,,0,0,0,,...in the sack with that shitty Kanemitsu corporation.\N{\rCHT}就已經心知肚明
+Dialogue: 0,0:47:56.08,0:47:57.31,ENG,,0,0,0,,As I was saying...\N{\rCHT}正如我說...
+Dialogue: 0,0:47:58.93,0:48:02.02,ENG,,0,0,0,,...we have a warrant out for Robocop's arrest.\N{\rCHT}我們有捉拿機械員警的拘捕令
+Dialogue: 0,0:48:02.56,0:48:07.09,ENG,,0,0,0,,If we can eliminate him, then we'll find that the squatters are more...\N{\rCHT}如果我們把他剷除 我們認為那些擅闖者...
+Dialogue: 0,0:48:07.26,0:48:10.09,ENG,,0,0,0,,...let's say, easily persuaded.\N{\rCHT}就更容易被說服
+Dialogue: 0,0:48:23.11,0:48:26.08,ENG,,0,0,0,,- Fleck!  - Sir.\N{\rCHT}- 費曆克  - 先生
+Dialogue: 0,0:48:26.25,0:48:28.74,ENG,,0,0,0,,I'm sorry for the intrusion, sir.\N{\rCHT}老闆 抱歉打擾你
+Dialogue: 0,0:48:29.08,0:48:31.18,ENG,,0,0,0,,Anything Security Concepts can do?\N{\rCHT}保安概念部有什麼可以做的
+Dialogue: 0,0:48:31.69,0:48:36.18,ENG,,0,0,0,,Security Concepts can kiss my freckled butt. You're fired.\N{\rCHT}保安概念部可以去死 你被開除了
+Dialogue: 0,0:48:37.36,0:48:40.85,ENG,,0,0,0,,You heard me! You're fired. Get out of here.\N{\rCHT}你聽到吧 你被開除了 滾
+Dialogue: 0,0:48:49.77,0:48:51.74,ENG,,0,0,0,,Three days until disaster.\N{\rCHT}三天后就有大災難
+Dialogue: 0,0:48:52.11,0:48:54.77,ENG,,0,0,0,,What the hell will I tell my shareholders?\N{\rCHT}我怎樣向股東們解釋
+Dialogue: 0,0:48:55.81,0:48:57.61,ENG,,0,0,0,,What about more Rehabs, sir?\N{\rCHT}增加建改隊人手如何
+Dialogue: 0,0:48:57.81,0:49:01.34,ENG,,0,0,0,,We could recruit them out of the Police Department.\N{\rCHT}我們可以從員警部招募的
+Dialogue: 0,0:49:02.28,0:49:04.38,ENG,,0,0,0,,It would be cheaper than mercenaries...\N{\rCHT}他們比雇傭兵更便宜
+Dialogue: 0,0:49:04.52,0:49:08.15,ENG,,0,0,0,,...and we could use the Metro West facility as a staging area.\N{\rCHT}我們可以利用西區警察局作試點
+Dialogue: 0,0:49:09.59,0:49:12.18,ENG,,0,0,0,,Give them a nominal raise for an incentive.\N{\rCHT}給他們象徵式的加薪以作鼓勵
+Dialogue: 0,0:49:12.36,0:49:14.38,ENG,,0,0,0,,You're a good man, Johnson.\N{\rCHT}強生 你是個好人
+Dialogue: 0,0:49:14.56,0:49:17.39,ENG,,0,0,0,,I knew there was a reason I made you a vice president.\N{\rCHT}我知道我提升你做副總裁是有原因的
+Dialogue: 0,0:49:17.56,0:49:18.62,ENG,,0,0,0,,Thank you, sir.\N{\rCHT}過獎 老闆
+Dialogue: 0,0:49:18.80,0:49:20.77,ENG,,0,0,0,,I really...\N{\rCHT}我真的...
+Dialogue: 0,0:49:23.07,0:49:25.87,ENG,,0,0,0,,{\fs13\fn標楷體}（暴虐的資本主義蠢豬）
+Dialogue: 0,0:50:03.24,0:50:05.21,ENG,,0,0,0,,Heads up!\N{\rCHT}接著
+Dialogue: 0,0:50:07.15,0:50:09.38,ENG,,0,0,0,,Come on, let's go. We're gonna be late!\N{\rCHT}快點 我們要遲到了
+Dialogue: 0,0:51:01.30,0:51:02.33,ENG,,0,0,0,,Well?\N{\rCHT}怎樣
+Dialogue: 0,0:51:02.50,0:51:03.73,ENG,,0,0,0,,Can you fix him?\N{\rCHT}你能否修理他
+Dialogue: 0,0:51:05.67,0:51:08.16,ENG,,0,0,0,,This isn't a valve job on a Chevy.\N{\rCHT}這不是修理汽車活門
+Dialogue: 0,0:51:09.38,0:51:12.17,ENG,,0,0,0,,I never worked on a damn Robocop before.\N{\rCHT}我從沒修理過機械員警
+Dialogue: 0,0:51:12.35,0:51:14.87,ENG,,0,0,0,,- I can do the body work, but...  - Look...\N{\rCHT}- 我可以修理機身 但是...  - 聽著
+Dialogue: 0,0:51:15.22,0:51:18.21,ENG,,0,0,0,,...we gotta hang on to the Heights for three more days.\N{\rCHT}我們要多保衛著卡迪拉克區三天
+Dialogue: 0,0:51:19.32,0:51:22.81,ENG,,0,0,0,,- He can hold out till then, can't he?  - Are you listening to me?!\N{\rCHT}- 他能否支持到那時  - 你有沒有聽我說
+Dialogue: 0,0:51:24.66,0:51:27.39,ENG,,0,0,0,,He's messed up. We don't have the equipment.\N{\rCHT}他損毀嚴重 我們也沒有儀器
+Dialogue: 0,0:51:27.56,0:51:29.19,ENG,,0,0,0,,Who the hell does?!\N{\rCHT}誰有
+Dialogue: 0,0:51:30.76,0:51:31.82,ENG,,0,0,0,,Lazarus.\N{\rCHT}賴莎拉斯
+Dialogue: 0,0:51:36.40,0:51:39.40,ENG,,0,0,0,,Find doctor...\N{\rCHT}去找...
+Dialogue: 0,0:51:40.84,0:51:42.07,ENG,,0,0,0,,Lazarus.\N{\rCHT}賴莎拉斯
+Dialogue: 0,0:52:16.54,0:52:18.31,ENG,,0,0,0,,Who are you?\N{\rCHT}你是誰
+Dialogue: 0,0:52:18.48,0:52:20.50,ENG,,0,0,0,,I'm friends with Robocop.\N{\rCHT}我是機械員警的朋友
+Dialogue: 0,0:52:24.22,0:52:26.31,ENG,,0,0,0,,Well, he's not here. I'm sorry.\N{\rCHT}他不在這裡 抱歉
+Dialogue: 0,0:52:26.65,0:52:28.09,ENG,,0,0,0,,You don't believe me.\N{\rCHT}你不相信我
+Dialogue: 0,0:52:34.59,0:52:37.46,ENG,,0,0,0,,To tell you the truth, I don't know what to believe anymore.\N{\rCHT}坦白說 我不知道該相信什麼
+Dialogue: 0,0:52:37.73,0:52:39.67,ENG,,0,0,0,,He had a message for you.\N{\rCHT}他要我帶個話給你
+Dialogue: 0,0:52:41.07,0:52:45.53,ENG,,0,0,0,,He said to thank you for not taking his memories away.\N{\rCHT}他說感謝你沒有洗掉他的記憶
+Dialogue: 0,0:53:06.59,0:53:08.86,ENG,,0,0,0,,Well, well, well.\N{\rCHT}好...
+Dialogue: 0,0:53:10.23,0:53:12.39,ENG,,0,0,0,,Afraid you're a little late, pal.\N{\rCHT}恐怕你來遲一步了
+Dialogue: 0,0:53:14.63,0:53:17.80,ENG,,0,0,0,,You must be one of Kanemitsu's boys.\N{\rCHT}你一定是金光的人
+Dialogue: 0,0:53:18.41,0:53:19.77,ENG,,0,0,0,,I'm impressed.\N{\rCHT}我很欽佩
+Dialogue: 0,0:53:20.57,0:53:22.10,ENG,,0,0,0,,Trouble is...\N{\rCHT}問題是...
+Dialogue: 0,0:53:25.35,0:53:26.54,ENG,,0,0,0,,...your boss...\N{\rCHT}你的老闆...
+Dialogue: 0,0:53:28.15,0:53:30.41,ENG,,0,0,0,,...he kind of owns oCP.\N{\rCHT}他擁有OCP
+Dialogue: 0,0:53:30.58,0:53:33.68,ENG,,0,0,0,,And oCP's kind of on our shitlist with a bullet!\N{\rCHT}而OCP是我們的死對頭
+Dialogue: 0,0:54:14.76,0:54:17.86,ENG,,0,0,0,,So you want to know where the rebels are?\N{\rCHT}你想知道叛軍在哪裡
+Dialogue: 0,0:54:18.87,0:54:22.20,ENG,,0,0,0,,You can tell your bosses to kiss my ass!\N{\rCHT}你可以叫你的老闆去死
+Dialogue: 0,0:55:02.14,0:55:04.08,ENG,,0,0,0,,A vehicle is approaching.\N{\rCHT}有一輛車正在駛近
+Dialogue: 0,0:56:00.53,0:56:02.16,ENG,,0,0,0,,How you doing, Murphy?\N{\rCHT}墨菲 你好嗎
+Dialogue: 0,0:56:02.67,0:56:04.23,ENG,,0,0,0,,I've been better.\N{\rCHT}不大好
+Dialogue: 0,0:56:04.60,0:56:07.40,ENG,,0,0,0,,- Give me a status scan.  - Organics intact.\N{\rCHT}- 給我一個狀態掃描  - 生物體沒有受損
+Dialogue: 0,0:56:08.14,0:56:11.63,ENG,,0,0,0,,Systems efficiency: 23 percent.\N{\rCHT}系統效率23%
+Dialogue: 0,0:56:13.15,0:56:15.27,ENG,,0,0,0,,Looks like a direct hit to the heart.\N{\rCHT}心臟直接受撞擊
+Dialogue: 0,0:56:15.65,0:56:18.12,ENG,,0,0,0,,We have to recalibrate the pneumatic system.\N{\rCHT}我們要重新調校充氣系統
+Dialogue: 0,0:56:18.28,0:56:19.81,ENG,,0,0,0,,Is he gonna die?\N{\rCHT}他會不會死
+Dialogue: 0,0:56:21.86,0:56:23.65,ENG,,0,0,0,,Not if I can help it.\N{\rCHT}我幫到它就不會的
+Dialogue: 0,0:56:24.59,0:56:27.19,ENG,,0,0,0,,Let's get everything hooked up to the generator.\N{\rCHT}接到發電機吧
+Dialogue: 0,0:56:27.69,0:56:29.18,ENG,,0,0,0,,We've got work to do.\N{\rCHT}我們有工作要做
+Dialogue: 0,0:56:30.23,0:56:31.66,ENG,,0,0,0,,I'm going to unplug you for a little while.\N{\rCHT}聽這 我要暫時關掉你的能源
+Dialogue: 0,0:56:33.50,0:56:40.23,ENG,,0,0,0,,{\fs24\fn微軟雅黑}系統損毀警報 效率12%
+Dialogue: 0,0:56:35.60,0:56:38.30,ENG,,0,0,0,,Don't worry, everything's gonna be okay.\N{\rCHT}放心 不會有事的
+Dialogue: 0,0:56:44.44,0:56:45.57,ENG,,0,0,0,,Here you go.\N{\rCHT}拿著
+Dialogue: 0,0:56:47.18,0:56:49.11,ENG,,0,0,0,,I got that heart you wanted.\N{\rCHT}我找到你要的那個心臟
+Dialogue: 0,0:56:49.75,0:56:51.81,ENG,,0,0,0,,I said a Nissan. That's a Kanemitsu.\N{\rCHT}我說要日產 那是金光
+Dialogue: 0,0:56:52.39,0:56:55.48,ENG,,0,0,0,,Zack, we need that sealant! Zack!\N{\rCHT}澤克 我們要那支密封膠 澤克
+Dialogue: 0,0:56:55.66,0:56:57.65,ENG,,0,0,0,,Marie! Marie! Look!\N{\rCHT}瑪莉... 看
+Dialogue: 0,0:56:57.86,0:56:59.48,ENG,,0,0,0,,Oh, shit.\N{\rCHT}不好了
+Dialogue: 0,0:57:01.69,0:57:03.75,ENG,,0,0,0,,Bring me that chest plate over here.\N{\rCHT}拿那塊胸部金屬板來
+Dialogue: 0,0:57:08.23,0:57:10.40,ENG,,0,0,0,,You wait, man.\N{\rCHT}等一會
+Dialogue: 0,0:57:10.60,0:57:13.09,ENG,,0,0,0,,You are gonna be so cherry.\N{\rCHT}你會沒事的
+Dialogue: 0,0:57:13.77,0:57:15.83,ENG,,0,0,0,,Moreno, watch out for the...\N{\rCHT}莫連奴 小心那個...
+Dialogue: 0,0:57:16.61,0:57:18.37,ENG,,0,0,0,,What the hell are you doing?\N{\rCHT}你幹什麼
+Dialogue: 0,0:57:18.55,0:57:21.38,ENG,,0,0,0,,I didn't know that thing was there!\N{\rCHT}我不知道那東西在那裡
+Dialogue: 0,0:57:21.55,0:57:24.18,ENG,,0,0,0,,- Don't yell at me!  - Well, don't do it.\N{\rCHT}- 別向我大叫  - 那麼 不要那樣做
+Dialogue: 0,0:57:25.77,0:57:34.30,ENG,,0,0,0,,{\K37\2a&HFF&\fs22\fn微軟雅黑}首要指令
+Dialogue: 0,0:57:26.81,0:57:34.30,ENG,,0,0,0,,{\K37\2a&HFF&\fs26\fn微軟雅黑}1>為公眾服務
+Dialogue: 0,0:57:28.31,0:57:34.30,ENG,,0,0,0,,{\K37\2a&HFF&\fs26\fn微軟雅黑}2>保護無辜者
+Dialogue: 0,0:57:29.36,0:57:34.30,ENG,,0,0,0,,{\K37\2a&HFF&\fs26\fn微軟雅黑}3>執行法紀
+Dialogue: 0,0:57:30.23,0:57:32.57,ENG,,0,0,0,,{\K37\2a&HFF&\fs26\fn微軟雅黑}4>不准違抗OCP人員
+Dialogue: 0,0:57:33.03,0:57:34.30,ENG,,0,0,0,,{\K37\2a&HFF&\fs26\fn微軟雅黑}4>已被刪除
+Dialogue: 0,0:57:40.73,0:57:41.79,ENG,,0,0,0,,Murphy.\N{\rCHT}墨菲
+Dialogue: 0,0:57:42.34,0:57:43.60,ENG,,0,0,0,,It's you.\N{\rCHT}是你
+Dialogue: 0,0:57:50.31,0:57:52.84,ENG,,0,0,0,,Alex, I thought you'd never get home.\N{\rCHT}墨菲 我以為你永遠不會回來了
+Dialogue: 0,0:58:18.37,0:58:24.37,ENG,,0,0,0,,{\fs24\fn微軟雅黑}指令記憶設定 系統狀態良好
+Dialogue: 0,0:58:21.31,0:58:22.87,ENG,,0,0,0,,Welcome home, Murphy.\N{\rCHT}墨菲 歡迎你
+Dialogue: 0,0:58:51.27,0:58:52.29,ENG,,0,0,0,,I couldn't sleep.\N{\rCHT}我睡不著
+Dialogue: 0,0:58:52.71,0:58:54.10,ENG,,0,0,0,,How are you feeling?\N{\rCHT}你覺得怎樣
+Dialogue: 0,0:58:54.51,0:58:56.87,ENG,,0,0,0,,My efficiency rate is 93 percent.\N{\rCHT}我的效率現在是93%
+Dialogue: 0,0:58:58.81,0:59:01.21,ENG,,0,0,0,,Anything above 90 is considered normal.\N{\rCHT}90以上都是正常
+Dialogue: 0,0:59:03.22,0:59:05.12,ENG,,0,0,0,,I heard Marie call you Murphy.\N{\rCHT}我聽到瑪莉叫你做墨菲
+Dialogue: 0,0:59:06.22,0:59:07.58,ENG,,0,0,0,,Is that your real name?\N{\rCHT}那是你的真名字嗎
+Dialogue: 0,0:59:08.69,0:59:09.78,ENG,,0,0,0,,It was...\N{\rCHT}以前是的...
+Dialogue: 0,0:59:10.69,0:59:11.82,ENG,,0,0,0,,...before...\N{\rCHT}之前...
+Dialogue: 0,0:59:13.43,0:59:14.59,ENG,,0,0,0,,Before what?\N{\rCHT}之前什麼
+Dialogue: 0,0:59:27.81,0:59:29.40,ENG,,0,0,0,,So...\N{\rCHT}所以
+Dialogue: 0,0:59:32.58,0:59:36.21,ENG,,0,0,0,,Now that you're better, will you stay?\N{\rCHT}你現在復原了 你會留下來嗎
+Dialogue: 0,0:59:36.38,0:59:37.68,ENG,,0,0,0,,Will you help us?\N{\rCHT}你會不會幫我們
+Dialogue: 0,0:59:38.65,0:59:43.11,ENG,,0,0,0,,You know what Bertha says. If we hold back the Rehabs for two more days...\N{\rCHT}你知道貝黛說什麼吧 若我們抵抗建改隊多兩天...
+Dialogue: 0,0:59:43.29,0:59:45.12,ENG,,0,0,0,,...they can't make us move.\N{\rCHT}他們就不能逼我們搬遷
+Dialogue: 0,0:59:45.29,0:59:49.85,ENG,,0,0,0,,And they'll have to let my parents go. We'll all be together like family again.\N{\rCHT}他們就要釋放我爸媽 我們會一家團聚
+Dialogue: 0,0:59:52.23,0:59:53.56,ENG,,0,0,0,,Your parents?\N{\rCHT}你的爸媽
+Dialogue: 0,1:00:07.48,1:00:11.08,ENG,,0,0,0,,{\fs13\fn標楷體}（身亡）
+Dialogue: 0,1:00:11.25,1:00:14.19,ENG,,0,0,0,,{\fs13\fn標楷體}（身亡）
+Dialogue: 0,1:00:16.72,1:00:19.09,ENG,,0,0,0,,Murphy? You okay?\N{\rCHT}墨菲 你沒事吧
+Dialogue: 0,1:00:19.73,1:00:22.82,ENG,,0,0,0,,Your parents, you miss them?\N{\rCHT}你想念他們嗎
+Dialogue: 0,1:00:26.23,1:00:27.36,ENG,,0,0,0,,Yeah.\N{\rCHT}想念
+Dialogue: 0,1:00:30.34,1:00:31.33,ENG,,0,0,0,,But...\N{\rCHT}但是...
+Dialogue: 0,1:00:31.87,1:00:33.27,ENG,,0,0,0,,...you remember them.\N{\rCHT}你記著他們
+Dialogue: 0,1:00:35.34,1:00:36.40,ENG,,0,0,0,,Because...\N{\rCHT}因為...
+Dialogue: 0,1:00:37.54,1:00:39.41,ENG,,0,0,0,,...if you remember them...\N{\rCHT}如果你記著他們...
+Dialogue: 0,1:00:40.58,1:00:42.28,ENG,,0,0,0,,...they're never really gone.\N{\rCHT}他們就沒有真正離開過
+Dialogue: 0,1:01:03.87,1:01:05.36,ENG,,0,0,0,,Hey, Murphy...\N{\rCHT}墨菲...
+Dialogue: 0,1:01:06.74,1:01:09.37,ENG,,0,0,0,,...l'm glad your new heart works.\N{\rCHT}我很高興你新的心臟有效
+Dialogue: 0,1:01:15.85,1:01:17.28,ENG,,0,0,0,,I heard voices.\N{\rCHT}我聽到一些聲音
+Dialogue: 0,1:01:23.02,1:01:24.65,ENG,,0,0,0,,She should be in bed.\N{\rCHT}她該上床睡了
+Dialogue: 0,1:01:29.83,1:01:31.09,ENG,,0,0,0,,Could you leave her...\N{\rCHT}她可以再留...
+Dialogue: 0,1:01:32.47,1:01:33.70,ENG,,0,0,0,,...just a moment?\N{\rCHT}一會兒嗎
+Dialogue: 0,1:01:38.24,1:01:39.23,ENG,,0,0,0,,Of course.\N{\rCHT}當然可以
+Dialogue: 0,1:02:05.74,1:02:07.70,ENG,,0,0,0,,You gotta pay for that.\N{\rCHT}你要付錢的
+Dialogue: 0,1:02:15.10,1:02:16.73,ENG,,0,0,0,,What are you, deaf?\N{\rCHT}你聾的嗎
+Dialogue: 0,1:02:16.93,1:02:18.01,ENG,,0,0,0,,Son of a...\N{\rCHT}混...
+Dialogue: 0,1:02:38.76,1:02:40.49,ENG,,0,0,0,,That's not what we said.\N{\rCHT}我們不是那麼說的
+Dialogue: 0,1:02:40.67,1:02:43.18,ENG,,0,0,0,,It's not what we said we were gonna do!\N{\rCHT}我們不是說要那樣做的
+Dialogue: 0,1:02:43.67,1:02:46.28,ENG,,0,0,0,,Bertha, you said to relocate the weapons...\N{\rCHT}你說要遷移那些武器
+Dialogue: 0,1:02:46.49,1:02:48.47,ENG,,0,0,0,,...but where do you want this thing?\N{\rCHT}但這東西要放在哪裡
+Dialogue: 0,1:02:50.44,1:02:52.34,ENG,,0,0,0,,Oh, my God.\N{\rCHT}我的天
+Dialogue: 0,1:02:53.89,1:02:55.44,ENG,,0,0,0,,How did you get this?\N{\rCHT}你怎麼找到這個的
+Dialogue: 0,1:02:56.10,1:02:58.64,ENG,,0,0,0,,We stole it from the police depot. Why?\N{\rCHT}從警方那裡偷來的 為什麼
+Dialogue: 0,1:02:58.89,1:03:01.87,ENG,,0,0,0,,This looks like the exhaust system from an F-27.\N{\rCHT}看似是F27拆下來的排氣系統
+Dialogue: 0,1:03:02.09,1:03:04.55,ENG,,0,0,0,,No. It's the prototype for Robo's flight pack.\N{\rCHT}它是機械員警的飛行裝置藍本
+Dialogue: 0,1:03:04.72,1:03:07.20,ENG,,0,0,0,,The funding ran out before we got a chance to test it.\N{\rCHT}在我們測試它前 經費就耗盡了
+Dialogue: 0,1:03:08.11,1:03:11.14,ENG,,0,0,0,,- How do you know so much about it?  - I designed it.\N{\rCHT}- 你怎麼知道這麼多  - 是我設計的
+Dialogue: 0,1:03:14.10,1:03:18.02,ENG,,0,0,0,,Well, looks like the odds on the home team just went up.\N{\rCHT}看來我們取勝的機會增大了
+Dialogue: 0,1:03:35.72,1:03:38.35,ENG,,0,0,0,,What I've done is programmed the command system...\N{\rCHT}它會聽從你的...
+Dialogue: 0,1:03:38.52,1:03:40.77,ENG,,0,0,0,,to take its cues from your hard drive.\N{\rCHT}硬體指揮
+Dialogue: 0,1:03:41.79,1:03:44.61,ENG,,0,0,0,,I've also rigged it to work as an auxiliary power unit.\N{\rCHT}我還把它改裝成一個輔助驅進器
+Dialogue: 0,1:03:45.06,1:03:47.60,ENG,,0,0,0,,So if you ever have a power drain like yesterday...\N{\rCHT}如果你的動力下降...
+Dialogue: 0,1:03:48.05,1:03:52.00,ENG,,0,0,0,,...just interface with the flight pack and recharge whether you fly or not.\N{\rCHT}只要接上飛行裝置再充電就行
+Dialogue: 0,1:03:52.84,1:03:55.33,ENG,,0,0,0,,Nikko, see those resistors over there?\N{\rCHT}看到那些電阻器嗎
+Dialogue: 0,1:03:55.51,1:03:56.90,ENG,,0,0,0,,Get them for me, will you?\N{\rCHT}麻煩你給我 好嗎
+Dialogue: 0,1:03:57.12,1:03:58.60,ENG,,0,0,0,,Get them for me, will you?\N{\rCHT}麻煩你給我 好嗎
+Dialogue: 0,1:04:03.65,1:04:05.75,ENG,,0,0,0,,Get them for me.\N{\rCHT}替我抓他們
+Dialogue: 0,1:04:06.61,1:04:08.38,ENG,,0,0,0,,Promise me.\N{\rCHT}答應我
+Dialogue: 0,1:04:10.67,1:04:12.38,ENG,,0,0,0,,Get them for me.\N{\rCHT}替我抓他們
+Dialogue: 0,1:04:13.61,1:04:15.49,ENG,,0,0,0,,Promise me.\N{\rCHT}答應我
+Dialogue: 0,1:04:27.21,1:04:28.54,ENG,,0,0,0,,What's going on?\N{\rCHT}什麼事
+Dialogue: 0,1:04:29.14,1:04:30.27,ENG,,0,0,0,,Excuse me.\N{\rCHT}對不起
+Dialogue: 0,1:04:33.48,1:04:34.71,ENG,,0,0,0,,Hey, where you going?\N{\rCHT}你去哪裡
+Dialogue: 0,1:04:36.22,1:04:38.31,ENG,,0,0,0,,Unfinished business.\N{\rCHT}做未做完的事
+Dialogue: 0,1:04:44.46,1:04:46.29,ENG,,0,0,0,,It's okay. He'll be back.\N{\rCHT}不要緊 他會回來的
+Dialogue: 0,1:04:46.46,1:04:48.12,ENG,,0,0,0,,He needs us too.\N{\rCHT}他也需要我們
+Dialogue: 0,1:04:49.33,1:04:50.42,ENG,,0,0,0,,Where's he going?\N{\rCHT}他要去哪裡
+Dialogue: 0,1:04:52.33,1:04:53.80,ENG,,0,0,0,,To keep a promise.\N{\rCHT}履行承諾
+Dialogue: 0,1:04:55.07,1:04:58.13,ENG,,0,0,0,,You got a Robocop. You got an alien cop?\N{\rCHT}你們有個機械員警 有沒有外星人員警
+Dialogue: 0,1:04:58.60,1:05:01.16,ENG,,0,0,0,,- Got a ghost cop?  - I don't have time for...\N{\rCHT}- 有沒有幽靈員警  - 我沒有時間...
+Dialogue: 0,1:05:01.34,1:05:02.74,ENG,,0,0,0,,You got a vampire cop?\N{\rCHT}有沒有吸血殭屍員警
+Dialogue: 0,1:05:08.35,1:05:11.34,ENG,,0,0,0,,- Murphy.  - Good evening, Sergeant Reed.\N{\rCHT}- 墨菲  - 晚安 瑞德警官
+Dialogue: 0,1:05:11.68,1:05:14.48,ENG,,0,0,0,,Do you know there's a warrant out for your arrest?\N{\rCHT}你可知道有拘捕令要逮捕你
+Dialogue: 0,1:05:14.72,1:05:15.74,ENG,,0,0,0,,Yes.\N{\rCHT}知道
+Dialogue: 0,1:05:16.06,1:05:18.62,ENG,,0,0,0,,I was just checking. What can I do for you?\N{\rCHT}我問問罷了 有什麼可以效勞
+Dialogue: 0,1:05:18.79,1:05:21.82,ENG,,0,0,0,,Please direct me to the Rehab Staging Area.\N{\rCHT}請指示我建改隊試點的位置
+Dialogue: 0,1:05:22.16,1:05:25.06,ENG,,0,0,0,,It's down the hall. You can't miss it.\N{\rCHT}在走廊前端 你會找到的
+Dialogue: 0,1:05:25.73,1:05:26.70,ENG,,0,0,0,,Thank you.\N{\rCHT}謝謝你
+Dialogue: 0,1:05:31.67,1:05:34.23,ENG,,0,0,0,,You may want to call the fire department.\N{\rCHT}你可能要通知消防隊了
+Dialogue: 0,1:05:45.35,1:05:47.15,ENG,,0,0,0,,- You got a light?  - Sure, man.\N{\rCHT}- 有沒有火  - 有的
+Dialogue: 0,1:05:47.32,1:05:48.88,ENG,,0,0,0,,Allow me, scum.\N{\rCHT}讓我來吧 混蛋
+Dialogue: 0,1:06:20.79,1:06:21.78,ENG,,0,0,0,,Oh, shit.\N{\rCHT}該死
+Dialogue: 0,1:06:31.56,1:06:36.36,ENG,,0,0,0,,{\fs24\fn微軟雅黑}盤問狀態
+Dialogue: 0,1:06:38.34,1:06:39.70,ENG,,0,0,0,,Where's McDaggett?\N{\rCHT}保羅·麥代格在哪裡
+Dialogue: 0,1:06:55.82,1:06:58.45,ENG,,0,0,0,,That does not look like a police station.\N{\rCHT}那裡不像一間警察局
+Dialogue: 0,1:06:58.62,1:07:01.15,ENG,,0,0,0,,You're damn right I'm not at the station.\N{\rCHT}對 我不是在警察局裡
+Dialogue: 0,1:07:01.33,1:07:04.52,ENG,,0,0,0,,If my spy hadrt warned me, I'd be dead now.\N{\rCHT}如果不是我的探子警告我 我現在已經死了
+Dialogue: 0,1:07:05.16,1:07:08.62,ENG,,0,0,0,,I thought your damn ninja was supposed to take care of Robocop.\N{\rCHT}我以為你那個該死的忍者 會對付機械員警
+Dialogue: 0,1:07:08.80,1:07:13.26,ENG,,0,0,0,,That's the deal. I clear the area, he keeps the robot off my back.\N{\rCHT}說好了 我清理那一區 他就不讓那個機械人找我麻煩
+Dialogue: 0,1:07:13.84,1:07:17.10,ENG,,0,0,0,,You have the device I sent you?\N{\rCHT}你有沒有我調派給你的裝置
+Dialogue: 0,1:07:21.31,1:07:24.34,ENG,,0,0,0,,It hasn't come to that yet. And it won't. Relax.\N{\rCHT}還不用那個 也不會用 放鬆點
+Dialogue: 0,1:07:24.52,1:07:28.82,ENG,,0,0,0,,It is difficult for me to continue our business relationship...\N{\rCHT}若我不清楚你的做法
+Dialogue: 0,1:07:29.12,1:07:31.28,ENG,,0,0,0,,...when I don't know your methods.\N{\rCHT}我們很難合作下去的
+Dialogue: 0,1:07:31.62,1:07:34.12,ENG,,0,0,0,,You don't need to know my methods.\N{\rCHT}你不必知道我的做法
+Dialogue: 0,1:07:34.29,1:07:37.66,ENG,,0,0,0,,I said I'll clear the area and I'll clear it.\N{\rCHT}我一定會清理那一區
+Dialogue: 0,1:07:38.63,1:07:42.26,ENG,,0,0,0,,Just get the robot cop off my back.\N{\rCHT}你別讓那個機械員警煩我就是了
+Dialogue: 0,1:07:54.78,1:07:59.41,ENG,,0,0,0,,I understand you're willing to pay good money to know where the rebel base is.\N{\rCHT}我知道你會付厚酬 去得到叛軍總部的地點
+Dialogue: 0,1:07:59.59,1:08:00.57,ENG,,0,0,0,,Yes, well...\N{\rCHT}是的
+Dialogue: 0,1:08:02.69,1:08:04.21,ENG,,0,0,0,,...the money's good...\N{\rCHT}報酬很豐厚
+Dialogue: 0,1:08:05.69,1:08:06.82,ENG,,0,0,0,,...if the tip's good.\N{\rCHT}如果情報準確的話
+Dialogue: 0,1:08:12.77,1:08:15.86,ENG,,0,0,0,,The last tip saved your ass, didn't it?\N{\rCHT}上次的情報救了你一命 是吧
+Dialogue: 0,1:08:33.49,1:08:35.15,ENG,,0,0,0,,What do we have here?\N{\rCHT}這裡有什麼
+Dialogue: 0,1:08:36.12,1:08:37.61,ENG,,0,0,0,,You don't like men in uniform?\N{\rCHT}你不喜歡穿制服的男人
+Dialogue: 0,1:08:37.79,1:08:40.66,ENG,,0,0,0,,My dad lost his job. I just need some money.\N{\rCHT}我爸爸剛失業 我需要一點錢罷了
+Dialogue: 0,1:08:40.83,1:08:44.19,ENG,,0,0,0,,- We've got lots of money, honey.  - Don't.\N{\rCHT}- 我們有錢  - 不要
+Dialogue: 0,1:08:44.76,1:08:47.16,ENG,,0,0,0,,- No!  - She said, "No."\N{\rCHT}- 不要  - 她說不要
+Dialogue: 0,1:08:49.77,1:08:52.07,ENG,,0,0,0,,Maybe you have a hearing problem?\N{\rCHT}你們聽覺有問題嗎
+Dialogue: 0,1:08:57.14,1:08:58.44,ENG,,0,0,0,,Go home, young lady.\N{\rCHT}小姐 回家吧
+Dialogue: 0,1:08:59.71,1:09:01.68,ENG,,0,0,0,,You are in violation of curfew.\N{\rCHT}你違反了宵禁條例
+Dialogue: 0,1:09:13.23,1:09:14.52,ENG,,0,0,0,,Where's McDaggett?\N{\rCHT}保羅·麥代格在哪裡
+Dialogue: 0,1:09:18.06,1:09:19.36,ENG,,0,0,0,,Room 212.\N{\rCHT}212號房
+Dialogue: 0,1:09:19.57,1:09:20.62,ENG,,0,0,0,,Thank you.\N{\rCHT}謝謝你
+Dialogue: 0,1:09:21.73,1:09:23.57,ENG,,0,0,0,,I hope you are insured.\N{\rCHT}我希望你買了保險
+Dialogue: 0,1:09:25.27,1:09:26.76,ENG,,0,0,0,,Elevator door sticks!\N{\rCHT}電梯門壞的
+Dialogue: 0,1:09:47.43,1:09:48.45,ENG,,0,0,0,,Don't.\N{\rCHT}不要
+Dialogue: 0,1:10:01.14,1:10:03.70,ENG,,0,0,0,,I have a message from officer Lewis.\N{\rCHT}路易士警員托我帶個話給你
+Dialogue: 0,1:10:19.79,1:10:21.09,ENG,,0,0,0,,Stop!\N{\rCHT}停車
+Dialogue: 0,1:10:23.56,1:10:24.69,ENG,,0,0,0,,Drive!\N{\rCHT}開車
+Dialogue: 0,1:10:25.43,1:10:27.30,ENG,,0,0,0,,I said, drive, goddamn it, drive!\N{\rCHT}我叫你開車
+Dialogue: 0,1:10:36.41,1:10:40.37,ENG,,0,0,0,,My time, my money. I told you and won't tell you again, understand?\N{\rCHT}我的時間 金錢 我不會再說了 明白嗎
+Dialogue: 0,1:10:40.55,1:10:43.85,ENG,,0,0,0,,I must commandeer your vehicle for police use.\N{\rCHT}我要徵用你的汽車作警方用途
+Dialogue: 0,1:10:44.18,1:10:46.31,ENG,,0,0,0,,What is your problem, sucker?\N{\rCHT}你有什麼問題 混蛋
+Dialogue: 0,1:10:49.15,1:10:50.82,ENG,,0,0,0,,I mean, officer.\N{\rCHT}我是指... 長官
+Dialogue: 0,1:12:01.69,1:12:02.66,ENG,,0,0,0,,Cover me.\N{\rCHT}掩護我
+Dialogue: 0,1:12:55.21,1:12:56.61,ENG,,0,0,0,,Commander!\N{\rCHT}指揮官
+Dialogue: 0,1:13:06.12,1:13:07.11,ENG,,0,0,0,,{\fs24\fn微軟雅黑}警告: 兒童在玩耍
+Dialogue: 0,1:13:19.47,1:13:21.56,ENG,,0,0,0,,What's the deal?\N{\rCHT}什麼事
+Dialogue: 0,1:13:33.39,1:13:35.68,ENG,,0,0,0,,Where the hell is Robocop?\N{\rCHT}機械員警去了哪裡
+Dialogue: 0,1:13:37.39,1:13:40.48,ENG,,0,0,0,,We could drive around and listen for explosions.\N{\rCHT}我們可以開車聽一下哪裡有爆炸聲
+Dialogue: 0,1:13:48.23,1:13:49.22,ENG,,0,0,0,,Are you doing that?\N{\rCHT}是你做的嗎
+Dialogue: 0,1:13:49.40,1:13:52.60,ENG,,0,0,0,,I got tired of splicing wires, so I put in a pulse tach decoder.\N{\rCHT}我厭倦了焊接電線 所以放進一個脈衝流速解碼器
+Dialogue: 0,1:13:52.77,1:13:54.60,ENG,,0,0,0,,- Telemetric?  - No.\N{\rCHT}- 搖測的  - 不是
+Dialogue: 0,1:13:54.77,1:13:58.07,ENG,,0,0,0,,- Smart ass.  - I know you are, but what am I?\N{\rCHT}- 真聰明  - 你才聰明 我算得上什麼
+Dialogue: 0,1:13:58.74,1:14:00.27,ENG,,0,0,0,,Here, let me try.\N{\rCHT}讓我試試
+Dialogue: 0,1:14:11.19,1:14:13.28,ENG,,0,0,0,,Thanks for the heart attack.\N{\rCHT}你嚇我們一跳
+Dialogue: 0,1:14:13.46,1:14:16.83,ENG,,0,0,0,,I believe I will go and send out a recon team.\N{\rCHT}我會派遣一支偵察隊出去
+Dialogue: 0,1:14:17.36,1:14:19.09,ENG,,0,0,0,,I got a better idea.\N{\rCHT}我有個更好的方法
+Dialogue: 0,1:14:19.87,1:14:22.46,ENG,,0,0,0,,Why don't we just all have a seat.\N{\rCHT}不如我們都坐下來
+Dialogue: 0,1:14:23.27,1:14:24.50,ENG,,0,0,0,,And relax.\N{\rCHT}和放鬆
+Dialogue: 0,1:14:25.07,1:14:27.37,ENG,,0,0,0,,It'll all be over in a few minutes.\N{\rCHT}幾分鐘內就會結束
+Dialogue: 0,1:14:27.71,1:14:30.07,ENG,,0,0,0,,You son of a bitch.\N{\rCHT}你這個混蛋
+Dialogue: 0,1:14:30.31,1:14:32.71,ENG,,0,0,0,,Watch the language, there's children present.\N{\rCHT}小心說話 有孩子在場
+Dialogue: 0,1:14:36.65,1:14:38.24,ENG,,0,0,0,,Drop it, Coontz.\N{\rCHT}放下它 康斯
+Dialogue: 0,1:14:40.62,1:14:43.49,ENG,,0,0,0,,I'm not going to ask twice.\N{\rCHT}我不會重複說的
+Dialogue: 0,1:14:48.83,1:14:52.09,ENG,,0,0,0,,What do you mean, "it'll all be over in a few minutes"?\N{\rCHT}你是什麼意思"幾分鐘內就結束"
+Dialogue: 0,1:14:55.17,1:14:57.40,ENG,,0,0,0,,Get the kids out of here! Now!\N{\rCHT}快帶孩子們離開 快點
+Dialogue: 0,1:15:11.68,1:15:13.28,ENG,,0,0,0,,Bertha!\N{\rCHT}貝黛
+Dialogue: 0,1:15:18.16,1:15:19.12,ENG,,0,0,0,,Go.\N{\rCHT}走
+Dialogue: 0,1:15:22.69,1:15:24.69,ENG,,0,0,0,,- Got to get her.  - Go!\N{\rCHT}- 要去救她  - 快走
+Dialogue: 0,1:15:26.43,1:15:28.13,ENG,,0,0,0,,Come on, let's go! Come on!\N{\rCHT}來吧 快走
+Dialogue: 0,1:15:48.35,1:15:49.58,ENG,,0,0,0,,Come on.\N{\rCHT}來吧
+Dialogue: 0,1:15:54.39,1:15:56.38,ENG,,0,0,0,,Come on! Get in! Come on!\N{\rCHT}快點 進去
+Dialogue: 0,1:15:58.86,1:15:59.83,ENG,,0,0,0,,Come on!\N{\rCHT}快點
+Dialogue: 0,1:16:03.47,1:16:04.46,ENG,,0,0,0,,Okay, now go!\N{\rCHT}好了 走吧
+Dialogue: 0,1:16:05.24,1:16:08.26,ENG,,0,0,0,,- Go on!  - No, it's happening again!\N{\rCHT}- 快走  - 不 又再發生了
+Dialogue: 0,1:16:08.44,1:16:10.34,ENG,,0,0,0,,Don't let them take you away.\N{\rCHT}別讓他們把你帶走
+Dialogue: 0,1:16:16.65,1:16:18.31,ENG,,0,0,0,,I said, go! Get out of here!\N{\rCHT}我叫你走
+Dialogue: 0,1:16:34.50,1:16:35.63,ENG,,0,0,0,,Where is he?\N{\rCHT}他在哪裡
+Dialogue: 0,1:16:38.27,1:16:39.26,ENG,,0,0,0,,Go to hell.\N{\rCHT}去死吧
+Dialogue: 0,1:16:39.67,1:16:41.40,ENG,,0,0,0,,Take her to headquarters.\N{\rCHT}帶她去總部
+Dialogue: 0,1:16:41.61,1:16:44.54,ENG,,0,0,0,,I promise my men won't leave a mark on you.\N{\rCHT}我的手下不會在你身上留下痕跡
+Dialogue: 0,1:16:50.18,1:16:53.38,ENG,,0,0,0,,Sir. What about our friend Coontz?\N{\rCHT}長官 我們的朋友康斯又怎樣
+Dialogue: 0,1:16:54.52,1:16:57.55,ENG,,0,0,0,,If we'd let him live, we'd have to have paid him.\N{\rCHT}若我們讓他活著就要付錢給他
+Dialogue: 0,1:17:07.17,1:17:10.46,ENG,,0,0,0,,We're talking about hundreds of thousands of dollars in damage.\N{\rCHT}我是說會損失數十萬元
+Dialogue: 0,1:17:10.64,1:17:13.66,ENG,,0,0,0,,- Murphy can be rough on properties.  - Yeah. Well...\N{\rCHT}- 墨菲對財物不留情的  - 很好
+Dialogue: 0,1:17:13.84,1:17:17.21,ENG,,0,0,0,,...every cent of it will be coming out of your salaries.\N{\rCHT}每分每毫的損失 都由你的薪水中扣除
+Dialogue: 0,1:17:17.58,1:17:19.64,ENG,,0,0,0,,Hey! You built him!\N{\rCHT}是你們製造他的
+Dialogue: 0,1:17:27.69,1:17:29.35,ENG,,0,0,0,,We're taking Cadillac Heights.\N{\rCHT}我們要進佔卡迪拉克區
+Dialogue: 0,1:17:30.06,1:17:34.25,ENG,,0,0,0,,I'll need 50 of your men armed and in full body armor in one hour. Johnson...\N{\rCHT}我要你50個手下 一小時後全副武裝候命
+Dialogue: 0,1:17:34.46,1:17:39.16,ENG,,0,0,0,,...tell the CEO the demolition crews will have access at 06:00 hours tomorrow.\N{\rCHT}告訴總裁 拆卸人員明早六點可以進入
+Dialogue: 0,1:17:39.33,1:17:42.77,ENG,,0,0,0,,Hey, we don't do that kind of work.\N{\rCHT}我們不做那類工作
+Dialogue: 0,1:17:43.07,1:17:45.23,ENG,,0,0,0,,That was a direct order, sergeant.\N{\rCHT}這是個直接命令
+Dialogue: 0,1:17:45.44,1:17:48.77,ENG,,0,0,0,,Driving people out of their homes is no work for a cop!\N{\rCHT}把市民逐出家園 不是員警的工作
+Dialogue: 0,1:17:49.11,1:17:50.27,ENG,,0,0,0,,Now, sergeant.\N{\rCHT}警官
+Dialogue: 0,1:17:51.64,1:17:55.27,ENG,,0,0,0,,Fifteen years on the force is quite an investment.\N{\rCHT}在警隊工作15年是一項投資
+Dialogue: 0,1:17:55.48,1:17:57.24,ENG,,0,0,0,,Your job, your pension.\N{\rCHT}你的工作 你的退休金
+Dialogue: 0,1:17:57.55,1:18:02.15,ENG,,0,0,0,,Maybe instead of worrying about these squatters, think about your own family.\N{\rCHT}別擔心那些擅闖者了 想想你的家人吧
+Dialogue: 0,1:18:03.29,1:18:04.48,ENG,,0,0,0,,I am.\N{\rCHT}我有想
+Dialogue: 0,1:18:13.50,1:18:16.37,ENG,,0,0,0,,I'm thinking I have to go home and face them.\N{\rCHT}我正在想我要回家面對他們
+Dialogue: 0,1:18:32.68,1:18:34.31,ENG,,0,0,0,,You can't do this.\N{\rCHT}你們不能這樣做
+Dialogue: 0,1:18:37.36,1:18:40.15,ENG,,0,0,0,,You are employees of oCP!\N{\rCHT}你們是OCP的雇員
+Dialogue: 0,1:18:40.33,1:18:41.52,ENG,,0,0,0,,Now remember that.\N{\rCHT}記著
+Dialogue: 0,1:18:43.43,1:18:46.40,ENG,,0,0,0,,You're jeopardizing your retirement benefits!\N{\rCHT}你們在危害自己的退休福利
+Dialogue: 0,1:18:59.41,1:19:00.47,ENG,,0,0,0,,Stop that man.\N{\rCHT}截住那個人
+Dialogue: 0,1:19:06.25,1:19:09.22,ENG,,0,0,0,,How would you and your friends like to make some money?\N{\rCHT}你和你的朋友們可想賺點錢
+Dialogue: 0,1:19:21.70,1:19:22.63,ENG,,0,0,0,,- It's...  - Johnny...\N{\rCHT}- 這是...  - 強尼...
+Dialogue: 0,1:19:22.80,1:19:24.17,ENG,,0,0,0,,- Rehab!  - Hurray!\N{\rCHT}- 建改隊  - 好
+Dialogue: 0,1:19:39.18,1:19:43.14,ENG,,0,0,0,,Johnny Rehab action figures, parts and accessories all sold separately.\N{\rCHT}強尼建改隊人像 配件和服飾個別發售
+Dialogue: 0,1:19:44.19,1:19:46.38,ENG,,0,0,0,,Three nuns and five clergy are dead...\N{\rCHT}在被認為是機械員警的 最新暴行中...
+Dialogue: 0,1:19:46.56,1:19:50.76,ENG,,0,0,0,,...in what is believed to be the latest atrocity by the killer cyborg, Robocop.\N{\rCHT}有三名修女和五名神職人員喪生
+Dialogue: 0,1:19:51.20,1:19:53.26,ENG,,0,0,0,,The OCP claim the former police unit...\N{\rCHT}OCP宣稱該名前度警員...
+Dialogue: 0,1:19:53.43,1:19:56.30,ENG,,0,0,0,,...is responsible for a spree of terrorism...\N{\rCHT}在底特律市舊城的卡迪拉克區...
+Dialogue: 0,1:19:56.47,1:20:00.30,ENG,,0,0,0,,...in the Cadillac Heights section of Old Detroit.\N{\rCHT}引發一輪恐怖活動
+Dialogue: 0,1:20:01.21,1:20:03.23,ENG,,0,0,0,,I'm sorry, I can't even read this.\N{\rCHT}抱歉 我不能讀這個
+Dialogue: 0,1:20:04.34,1:20:06.74,ENG,,0,0,0,,This is bullshit! Are you buying this?\N{\rCHT}簡直胡說八道 你相信它嗎
+Dialogue: 0,1:20:07.88,1:20:11.21,ENG,,0,0,0,,Are you kidding me? Robocop?\N{\rCHT}你開玩笑嘛 機械戰警
+Dialogue: 0,1:20:12.85,1:20:14.48,ENG,,0,0,0,,{\fs13\fn標楷體}（臨時故障）
+Dialogue: 0,1:21:13.18,1:21:14.48,ENG,,0,0,0,,Marie.\N{\rCHT}瑪莉
+Dialogue: 0,1:21:27.69,1:21:29.28,ENG,,0,0,0,,Lousy sons of bitches!\N{\rCHT}混帳
+Dialogue: 0,1:21:30.20,1:21:33.60,ENG,,0,0,0,,- OCP bastards!  - Nobody is listening to you, sweetheart.\N{\rCHT}- 神經病混蛋  - 沒有人會聽的
+Dialogue: 0,1:21:36.74,1:21:38.20,ENG,,0,0,0,,We are in position.\N{\rCHT}我們各就各位
+Dialogue: 0,1:21:38.37,1:21:42.31,ENG,,0,0,0,,This is Big Stick. You have a green. Arm and proceed to strike zone.\N{\rCHT}這是大棍 準備就緒 帶齊武器進入攻擊區
+Dialogue: 0,1:21:43.07,1:21:45.27,ENG,,0,0,0,,All teams, we have a green.\N{\rCHT}所有隊伍 準備就緒
+Dialogue: 0,1:21:45.48,1:21:48.11,ENG,,0,0,0,,All teams, we have a green.\N{\rCHT}所有隊伍 準備就緒
+Dialogue: 0,1:21:49.15,1:21:50.55,ENG,,0,0,0,,Hey, take it easy.\N{\rCHT}放鬆點
+Dialogue: 0,1:22:14.81,1:22:17.80,ENG,,0,0,0,,- So what now?  - What now?\N{\rCHT}- 現在怎麼辦  - 怎麼辦
+Dialogue: 0,1:22:18.21,1:22:21.70,ENG,,0,0,0,,- Game's over, Moreno. Just shut up.  - What about Bertha's plan?\N{\rCHT}- 完蛋了 閉嘴吧  - 貝黛的計畫又如何
+Dialogue: 0,1:22:22.35,1:22:24.37,ENG,,0,0,0,,Damn it! Bertha's dead!\N{\rCHT}該死 貝黛已經死了
+Dialogue: 0,1:22:27.69,1:22:29.31,ENG,,0,0,0,,I'm sorry.\N{\rCHT}對不起
+Dialogue: 0,1:22:53.28,1:22:55.58,ENG,,0,0,0,,Folks, in about 45 minutes...\N{\rCHT}各位 大約45分鐘後...
+Dialogue: 0,1:22:55.71,1:22:59.12,ENG,,0,0,0,,...the Rehabs are coming to blow you out of your neighborhood.\N{\rCHT}建改隊就會來對付你們
+Dialogue: 0,1:22:59.25,1:23:00.65,ENG,,0,0,0,,I want you to take your kids...\N{\rCHT}帶你們的孩子...
+Dialogue: 0,1:23:00.85,1:23:04.31,ENG,,0,0,0,,...and anybody who shouldn't be fighting to the basement!\N{\rCHT}和任何不能作戰的人到地下室
+Dialogue: 0,1:23:05.06,1:23:09.19,ENG,,0,0,0,,The rest of you are hereby deputized by the Detroit Police Department.\N{\rCHT}其餘的人就受底特律員警部委派
+Dialogue: 0,1:23:11.16,1:23:14.06,ENG,,0,0,0,,It's time to show how real cops kick ass.\N{\rCHT}是時候給他們看看員警的厲害
+Dialogue: 0,1:24:30.31,1:24:33.57,ENG,,0,0,0,,Detroit Police! Identify yourself.\N{\rCHT}底特律員警 出示你的身分
+Dialogue: 0,1:24:38.78,1:24:41.48,ENG,,0,0,0,,You are under arrest for assaulting an officer.\N{\rCHT}你因為襲警被拘捕了
+Dialogue: 0,1:24:52.46,1:24:55.16,ENG,,0,0,0,,And destruction of police property.\N{\rCHT}還有破壞警方財物
+Dialogue: 0,1:25:04.74,1:25:07.54,ENG,,0,0,0,,{\fs24\fn微軟雅黑}動力能量低 需要下載能量
+Dialogue: 0,1:25:36.31,1:25:37.37,ENG,,0,0,0,,Quiet!\N{\rCHT}肅靜
+Dialogue: 0,1:25:37.54,1:25:38.74,ENG,,0,0,0,,Quiet!\N{\rCHT}肅靜
+Dialogue: 0,1:25:42.61,1:25:46.85,ENG,,0,0,0,,Hold your fire until absolutely necessary.\N{\rCHT}別開火 直到有絕對需要
+Dialogue: 0,1:27:14.27,1:27:15.30,ENG,,0,0,0,,Commander...\N{\rCHT}指揮官...
+Dialogue: 0,1:27:15.47,1:27:18.70,ENG,,0,0,0,,...Detroit Police are out there, sir. They're fighting against us.\N{\rCHT}長官 底特律警方在外面 他們在反抗我們
+Dialogue: 0,1:27:18.88,1:27:21.71,ENG,,0,0,0,,So? We have a schedule to keep.\N{\rCHT}那又如何 我們要依期行事的
+Dialogue: 0,1:27:21.88,1:27:25.58,ENG,,0,0,0,,We don't fire on police officers! You're out of line, McDaggett.\N{\rCHT}我們不可向員警開火 你太過分了
+Dialogue: 0,1:27:25.75,1:27:28.18,ENG,,0,0,0,,I'm in charge here. I'm pulling the plug.\N{\rCHT}我是指揮 由我做主
+Dialogue: 0,1:27:28.59,1:27:29.71,ENG,,0,0,0,,Sit down.\N{\rCHT}坐下
+Dialogue: 0,1:27:30.09,1:27:31.49,ENG,,0,0,0,,Have you gone war-wacky?\N{\rCHT}你打仗打瘋了
+Dialogue: 0,1:27:35.16,1:27:38.32,ENG,,0,0,0,,I said, sit down.\N{\rCHT}我叫你坐下
+Dialogue: 0,1:27:41.07,1:27:42.19,ENG,,0,0,0,,Good idea.\N{\rCHT}好主意
+Dialogue: 0,1:27:49.24,1:27:50.73,ENG,,0,0,0,,How are we getting out of here anyway?\N{\rCHT}我們怎樣離開這裡
+Dialogue: 0,1:27:55.11,1:27:57.17,ENG,,0,0,0,,How'd you get...? Never mind.\N{\rCHT}你怎樣... 算了吧
+Dialogue: 0,1:27:57.35,1:27:59.08,ENG,,0,0,0,,Is there a transmission dish outside?\N{\rCHT}外面有沒有傳訊碟形天線
+Dialogue: 0,1:27:59.25,1:28:02.65,ENG,,0,0,0,,Yeah, and I was just watching the Media Break guy pick his nose.\N{\rCHT}有 我還看到新聞追擊 那個傢夥挖鼻孔呢
+Dialogue: 0,1:28:02.82,1:28:04.78,ENG,,0,0,0,,Do you have your computer with you?\N{\rCHT}你有電腦嗎
+Dialogue: 0,1:28:09.46,1:28:10.79,ENG,,0,0,0,,People of Detroit...\N{\rCHT}底特律的市民...
+Dialogue: 0,1:28:11.20,1:28:14.69,ENG,,0,0,0,,...this is an illegal broadcast. It may be cut off at any time.\N{\rCHT}這是非法廣播 它隨時會被截斷
+Dialogue: 0,1:28:14.85,1:28:16.30,ENG,,0,0,0,,So listen to me.\N{\rCHT}所以聽我說
+Dialogue: 0,1:28:16.70,1:28:18.54,ENG,,0,0,0,,OCP is lying to you.\N{\rCHT}OCP在欺騙你們
+Dialogue: 0,1:28:18.68,1:28:21.27,ENG,,0,0,0,,They're destroying people's lives for big business.\N{\rCHT}他們為了大生意而殺害生命
+Dialogue: 0,1:28:25.81,1:28:27.44,ENG,,0,0,0,,Those Rehabs you see on TV...\N{\rCHT}在電視上的那些建改隊...
+Dialogue: 0,1:28:27.65,1:28:32.17,ENG,,0,0,0,,...they're mercenaries hired by OCP to throw people out of their homes.\N{\rCHT}他們是OCP聘用的雇傭兵 要把市民逐出家園
+Dialogue: 0,1:28:40.83,1:28:42.73,ENG,,0,0,0,,You've got to believe me.\N{\rCHT}你們要相信我
+Dialogue: 0,1:28:43.46,1:28:46.40,ENG,,0,0,0,,I'm speaking for all the homeless and jobless citizens of this city...\N{\rCHT}我代表本市所有無家可歸者 失業者...
+Dialogue: 0,1:28:46.56,1:28:50.73,ENG,,0,0,0,,...and every city like it run by heartless capitalist scumbags...\N{\rCHT}和每個受資產主義混蛋管治的城市發言
+Dialogue: 0,1:28:59.84,1:29:04.25,ENG,,0,0,0,,OCP doesn't care about people. OCP cares about...\N{\rCHT}OCP不關心市民
+Dialogue: 0,1:29:08.75,1:29:11.78,ENG,,0,0,0,,Your neighborhood is next unless you fight back now.\N{\rCHT}反抗吧 否則你的鄰居就是下一個
+Dialogue: 0,1:29:12.12,1:29:14.65,ENG,,0,0,0,,Time's running out. OCP's the enemy.\N{\rCHT}沒時間了 OCP就是敵人
+Dialogue: 0,1:29:17.40,1:29:22.36,ENG,,0,0,0,,I repeat. Time is running out. OCP is the enemy.\N{\rCHT}時間不多了 OCP就是敵人
+Dialogue: 0,1:29:22.77,1:29:25.20,ENG,,0,0,0,,Help us. Innocent people are dying.\N{\rCHT}無辜市民正在死去
+Dialogue: 0,1:29:55.07,1:29:57.09,ENG,,0,0,0,,- More ammo!  - More ammo!\N{\rCHT}- 給我子彈  - 給我子彈
+Dialogue: 0,1:30:18.76,1:30:19.75,ENG,,0,0,0,,Zack's hit!\N{\rCHT}澤克中槍了
+Dialogue: 0,1:30:25.83,1:30:28.36,ENG,,0,0,0,,They're winning, aren't they, sergeant?\N{\rCHT}他們會贏 是不是
+Dialogue: 0,1:30:39.84,1:30:41.57,ENG,,0,0,0,,What in the name...?\N{\rCHT}那是什麼
+Dialogue: 0,1:30:57.66,1:30:59.41,ENG,,0,0,0,,{\fs24\fn微軟雅黑}瞄準中 聰明炸彈已接合
+Dialogue: 0,1:31:11.14,1:31:12.40,ENG,,0,0,0,,Sir?\N{\rCHT}長官
+Dialogue: 0,1:31:26.49,1:31:29.08,ENG,,0,0,0,,Splatter that, you sons of bitches!\N{\rCHT}來吧 你們這班混蛋
+Dialogue: 0,1:31:48.08,1:31:49.48,ENG,,0,0,0,,Come in, Big Stick.\N{\rCHT}大棍 請通話
+Dialogue: 0,1:31:53.62,1:31:56.11,ENG,,0,0,0,,All right, Mr. Robocop.\N{\rCHT}好吧 機械員警先生
+Dialogue: 0,1:31:56.35,1:31:57.65,ENG,,0,0,0,,Come and get me.\N{\rCHT}來抓我吧
+Dialogue: 0,1:32:01.83,1:32:03.35,ENG,,0,0,0,,Get away from the door.\N{\rCHT}別靠近那扇門
+Dialogue: 0,1:32:17.71,1:32:19.23,ENG,,0,0,0,,Think it over.\N{\rCHT}考慮一下
+Dialogue: 0,1:32:21.25,1:32:24.27,ENG,,0,0,0,,Oh, my God, Johnson, our stock has dropped to nothing.\N{\rCHT}我的天 股價跌至零了
+Dialogue: 0,1:32:24.55,1:32:25.64,ENG,,0,0,0,,We're ruined.\N{\rCHT}我們完蛋了
+Dialogue: 0,1:32:44.64,1:32:46.73,ENG,,0,0,0,,How may I help you, officer?\N{\rCHT}警員 有什麼可以效勞
+Dialogue: 0,1:32:47.24,1:32:48.87,ENG,,0,0,0,,By resisting arrest.\N{\rCHT}拒捕
+Dialogue: 0,1:32:49.21,1:32:51.11,ENG,,0,0,0,,Don't count on it, chum.\N{\rCHT}休想
+Dialogue: 0,1:32:51.51,1:32:53.41,ENG,,0,0,0,,Anyway, what's the charge?\N{\rCHT}控罪是什麼
+Dialogue: 0,1:32:53.58,1:32:56.24,ENG,,0,0,0,,The murder of Anne Lewis.\N{\rCHT}謀殺安妮·路易士
+Dialogue: 0,1:32:58.18,1:33:00.71,ENG,,0,0,0,,Dead or alive, you're coming with me.\N{\rCHT}不管死活 你也要束手就擒
+Dialogue: 0,1:33:27.88,1:33:32.84,ENG,,0,0,0,,McDaggett, you can have OCP. It's all yours. Sayonara.\N{\rCHT}你可以要了OCP 它是你的了 再見
+Dialogue: 0,1:33:33.18,1:33:34.67,ENG,,0,0,0,,Where're you going?\N{\rCHT}你去哪裡
+Dialogue: 0,1:33:34.85,1:33:36.79,ENG,,0,0,0,,You're gonna miss all the fun.\N{\rCHT}你會錯過好戲的
+Dialogue: 0,1:34:24.74,1:34:27.60,ENG,,0,0,0,,No flashy bravery, tin man.\N{\rCHT}別逞強了
+Dialogue: 0,1:34:27.77,1:34:29.83,ENG,,0,0,0,,Or the two cuties say, "Bye-bye."\N{\rCHT}否則那兩個可人兒會說再見
+Dialogue: 0,1:34:30.10,1:34:31.38,ENG,,0,0,0,,What are you doing?\N{\rCHT}你幹什麼
+Dialogue: 0,1:34:31.92,1:34:33.53,ENG,,0,0,0,,What are you doing?\N{\rCHT}你幹什麼
+Dialogue: 0,1:34:41.65,1:34:43.92,ENG,,0,0,0,,Stop them! Stop them!\N{\rCHT}制止他們
+Dialogue: 0,1:34:53.83,1:34:56.00,ENG,,0,0,0,,Stupid fools!\N{\rCHT}蠢才
+Dialogue: 0,1:34:56.11,1:34:58.34,ENG,,0,0,0,,Don't you know what you've done to us?!\N{\rCHT}你可知道你做了什麼
+Dialogue: 0,1:34:59.77,1:35:03.25,ENG,,0,0,0,,Those androids are programmed with a thermal fail-safe device.\N{\rCHT}那些機械人裝有 熱能故障安全設備
+Dialogue: 0,1:35:04.67,1:35:06.10,ENG,,0,0,0,,You mean to self-destruct?\N{\rCHT}你是指自動毀滅
+Dialogue: 0,1:35:06.64,1:35:09.33,ENG,,0,0,0,,In 15 seconds, everything within 20 yards...\N{\rCHT}在15秒內 所有二十碼內的東西...
+Dialogue: 0,1:35:09.45,1:35:11.60,ENG,,0,0,0,,...of where we're standing will be atomized.\N{\rCHT}都會粉碎
+Dialogue: 0,1:35:12.04,1:35:14.48,ENG,,0,0,0,,We're dead, you stupid slag.\N{\rCHT}你們死定了 笨蛋
+Dialogue: 0,1:35:14.69,1:35:16.92,ENG,,0,0,0,,Don't count on it, chum.\N{\rCHT}休想
+Dialogue: 0,1:35:26.43,1:35:28.16,ENG,,0,0,0,,Hang on.\N{\rCHT}堅持住
+Dialogue: 0,1:35:51.82,1:35:55.12,ENG,,0,0,0,,- Come on.  - Let me give you a hand.\N{\rCHT}- 算了  - 讓我幫你
+Dialogue: 0,1:36:22.69,1:36:25.15,ENG,,0,0,0,,Kanemitsu-san...\N{\rCHT}金光先生
+Dialogue: 0,1:36:25.36,1:36:27.32,ENG,,0,0,0,,...I realize that it looks bad...\N{\rCHT}我明白情況很糟糕
+Dialogue: 0,1:36:27.49,1:36:30.36,ENG,,0,0,0,,...but maybe our plans were over-ambitious.\N{\rCHT}可能我們的計畫野心過大
+Dialogue: 0,1:36:30.53,1:36:33.09,ENG,,0,0,0,,Let's start a skoshy bit smaller.\N{\rCHT}我們再合作較小規模的吧
+Dialogue: 0,1:36:33.26,1:36:36.86,ENG,,0,0,0,,Let's gentrify this neighborhood. Build strip malls.\N{\rCHT}讓我們美化這地區 興建商場...
+Dialogue: 0,1:36:37.20,1:36:41.19,ENG,,0,0,0,,Fast-food chains. Lots of popular entertainment. What do you think?\N{\rCHT}速食連鎖店 大量娛樂設施 你認為怎樣
+Dialogue: 0,1:36:47.18,1:36:48.67,ENG,,0,0,0,,- What did he say?  - You're fired.\N{\rCHT}- 他說什麼  - 你被開除了
+Dialogue: 0,1:37:18.48,1:37:20.50,ENG,,0,0,0,,I got to hand it to you.\N{\rCHT}我得謝謝你
+Dialogue: 0,1:37:21.68,1:37:23.27,ENG,,0,0,0,,What do they call you?\N{\rCHT}他們叫你做什麼
+Dialogue: 0,1:37:23.52,1:37:24.94,ENG,,0,0,0,,Murphy, is it?\N{\rCHT}墨菲 是不是
+Dialogue: 0,1:37:25.66,1:37:27.57,ENG,,0,0,0,,My friends call me Murphy.\N{\rCHT}我的朋友們叫我墨菲
+Dialogue: 0,1:37:31.20,1:37:32.75,ENG,,0,0,0,,You call me...\N{\rCHT}你就叫我...
+Dialogue: 0,1:37:32.91,1:37:34.20,ENG,,0,0,0,,...Robocop.\N{\rCHT}機械員警
+
