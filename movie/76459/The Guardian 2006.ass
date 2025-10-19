@@ -1,0 +1,1744 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CHT,標楷體,15,&H00E0E0E0,&H00000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1
+Style: ENG,microsoft yahei ui,16,&H00E0E0E0,&H00000000,&H000D0500,&H00000000,1,0,0,0,100,100,0,0,1,2,1,2,0,0,6,1
+
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:26.49,0:00:31.39,CHT,,0,0,0,!Effect,片名: 《海防最前線》{\r}
+Dialogue: 0,0:00:42.00,0:00:45.84,CHT,,0,0,0,!Effect,有個傳說 說海水下住了個人\N{\rENG}There's a legend of a man who lives beneath the sea.
+Dialogue: 0,0:00:45.91,0:00:47.81,CHT,,0,0,0,!Effect,他是撈人的\N{\rENG}He is a fisher of men,
+Dialogue: 0,0:00:48.11,0:00:51.77,CHT,,0,0,0,!Effect,是落伍者的最後希望\N{\rENG}the last hope of all those who have been left behind.
+Dialogue: 0,0:00:51.85,0:00:55.37,CHT,,0,0,0,!Effect,很多逃生者聲稱他們感覺到 他的手托在自己身下\N{\rENG}Many survivors claim to have felt his gripping hands beneath them,
+Dialogue: 0,0:00:55.45,0:00:57.38,CHT,,0,0,0,!Effect,把自己推上了海面\N{\rENG}pushing them up to the surface,
+Dialogue: 0,0:00:57.45,0:01:00.62,CHT,,0,0,0,!Effect,低聲鼓勵他們 直到救援趕來\N{\rENG}whispering strength until help could arrive.
+Dialogue: 0,0:01:00.69,0:01:04.02,CHT,,0,0,0,!Effect,但這 當然 只是個傳說\N{\rENG}But this, of course, is only a legend.
+Dialogue: 0,0:01:07.96,0:01:09.36,CHT,,0,0,0,!Effect,救命\N{\rENG}Help!
+Dialogue: 0,0:01:10.13,0:01:11.50,CHT,,0,0,0,!Effect,在這\N{\rENG}Over here!
+Dialogue: 0,0:01:15.70,0:01:16.86,CHT,,0,0,0,!Effect,謝蕊琳\N{\rENG}Sherilyn!
+Dialogue: 0,0:01:17.04,0:01:18.06,CHT,,0,0,0,!Effect,救命\N{\rENG}Help!
+Dialogue: 0,0:01:18.14,0:01:21.08,CHT,,0,0,0,!Effect,夫人 我是海岸警衛隊救生員\N{\rENG}Ma'am, I'm a Coast Guard rescue swimmer.
+Dialogue: 0,0:01:21.14,0:01:22.67,CHT,,0,0,0,!Effect,我是來救你的\N{\rENG}I'm here to help you.
+Dialogue: 0,0:01:23.95,0:01:28.35,CHT,,0,0,0,!Effect,先生 和你的浮標待在一起 我會回來接你的\N{\rENG}Sir, stay with your flotation. I'll be back for you.
+Dialogue: 0,0:01:28.42,0:01:30.48,CHT,,0,0,0,!Effect,- 別丟下我 - 待在那\N{\rENG}- Don't leave me! - Just stay there.
+Dialogue: 0,0:01:30.55,0:01:32.61,CHT,,0,0,0,!Effect,別丟下我\N{\rENG}Don't you leave me!
+Dialogue: 0,0:01:36.33,0:01:38.49,CHT,,0,0,0,!Effect,救生籃已經在艙外 正在吊下\N{\rENG}Basket is outside the cabin door and going down.
+Dialogue: 0,0:01:38.56,0:01:39.58,CHT,,0,0,0,!Effect,收到\N{\rENG}Roger. Copy you.
+Dialogue: 0,0:01:39.66,0:01:42.60,CHT,,0,0,0,!Effect,右前方30尺 右前方15尺\N{\rENG}Forward and right 30. Forward and right 15.
+Dialogue: 0,0:01:42.66,0:01:43.65,CHT,,0,0,0,!Effect,右前15尺\N{\rENG}Right 15.
+Dialogue: 0,0:01:43.73,0:01:44.72,CHT,,0,0,0,!Effect,停 停\N{\rENG}Ho, ho, ho!
+Dialogue: 0,0:01:45.53,0:01:47.70,CHT,,0,0,0,!Effect,救生籃入水了\N{\rENG}Basket is in the water.
+Dialogue: 0,0:01:47.77,0:01:49.74,CHT,,0,0,0,!Effect,救生員和生還者已經在籃內了\N{\rENG}Swimmer and survivor are at the basket.
+Dialogue: 0,0:01:49.81,0:01:51.67,CHT,,0,0,0,!Effect,讓你的頭先進去\N{\rENG}Put your head in first.
+Dialogue: 0,0:01:55.31,0:01:56.71,CHT,,0,0,0,!Effect,我得出去\N{\rENG}I gotta get out!
+Dialogue: 0,0:01:56.78,0:01:58.01,CHT,,0,0,0,!Effect,慢點 向前\N{\rENG}Easy, forward.
+Dialogue: 0,0:01:58.85,0:02:01.54,CHT,,0,0,0,!Effect,放開 放開\N{\rENG}Let go! Let go.
+Dialogue: 0,0:02:01.78,0:02:04.22,CHT,,0,0,0,!Effect,放開 你會淹死她的\N{\rENG}Let go. You're drowning her!
+Dialogue: 0,0:02:08.92,0:02:11.45,CHT,,0,0,0,!Effect,救生員給了他臉上一拳\N{\rENG}Swimmer just popped him in the face.
+Dialogue: 0,0:02:14.93,0:02:17.49,CHT,,0,0,0,!Effect,他把男人放進籃裡了\N{\rENG}Okay, he's putting the man in the basket.
+Dialogue: 0,0:02:17.57,0:02:19.36,CHT,,0,0,0,!Effect,男人進籃了\N{\rENG}The man is in the basket.
+Dialogue: 0,0:02:19.67,0:02:21.57,CHT,,0,0,0,!Effect,我們要把他拉上來\N{\rENG}We're taking the load.
+Dialogue: 0,0:02:26.34,0:02:27.64,CHT,,0,0,0,!Effect,哇 大浪來襲\N{\rENG}Whoa, big wave.
+Dialogue: 0,0:02:33.05,0:02:35.18,CHT,,0,0,0,!Effect,出去 出去 你有毛病啊?\N{\rENG}Get out! Get out! What's wrong with you?
+Dialogue: 0,0:02:35.25,0:02:36.91,CHT,,0,0,0,!Effect,坐好 閉嘴\N{\rENG}Sit there and shut up.
+Dialogue: 0,0:02:56.77,0:02:57.93,CHT,,0,0,0,!Effect,看到救生員了\N{\rENG}Swimmer in sight.
+Dialogue: 0,0:03:02.28,0:03:04.04,CHT,,0,0,0,!Effect,準備拉起\N{\rENG}Prepare to take the load.
+Dialogue: 0,0:03:04.11,0:03:06.10,CHT,,0,0,0,!Effect,我看到"可以拉起"的信號了\N{\rENG}I have the ready-for-pickup signal.
+Dialogue: 0,0:03:14.56,0:03:17.15,CHT,,0,0,0,!Effect,救生員靠近艙門了\N{\rENG}Swimmer is approaching cabin door.
+Dialogue: 0,0:03:17.76,0:03:19.73,CHT,,0,0,0,!Effect,生還者看來失去了意識\N{\rENG}Survivor looks unconscious.
+Dialogue: 0,0:03:21.40,0:03:23.49,CHT,,0,0,0,!Effect,救生員在艙內了\N{\rENG}Swimmer inside the cabin door.
+Dialogue: 0,0:03:25.63,0:03:27.83,CHT,,0,0,0,!Effect,關上艙門\N{\rENG}Cabin door closing.
+Dialogue: 0,0:03:42.08,0:03:43.78,CHT,,0,0,0,!Effect,我想你打斷了我的鼻子\N{\rENG}I think you just broke my nose.
+Dialogue: 0,0:03:43.85,0:03:46.51,CHT,,0,0,0,!Effect,而你可能殺了你太太 先生\N{\rENG}And you may have killed your wife, sir.
+Dialogue: 0,0:03:48.42,0:03:49.75,CHT,,0,0,0,!Effect,20分鐘到科迪亞克\N{\rENG}Twenty minutes to Kodiak.
+Dialogue: 0,0:03:49.83,0:03:52.59,CHT,,0,0,0,!Effect,收到 他正在對她進行心肺復蘇\N{\rENG}Roger. He's giving her CPR.
+Dialogue: 0,0:03:52.76,0:03:55.46,CHT,,0,0,0,!Effect,科迪亞克中心 這是海岸警衛隊6096號\N{\rENG}Comstate Kodiak, this is Coast Guard 6096.
+Dialogue: 0,0:03:55.53,0:03:58.16,CHT,,0,0,0,!Effect,艙內載有兩名低體溫生還者\N{\rENG}We have two hypothermic survivors onboard.
+Dialogue: 0,0:03:58.23,0:03:59.26,CHT,,0,0,0,!Effect,我們20分鐘後到\N{\rENG}We'll be there in 20 minutes.
+Dialogue: 0,0:03:59.33,0:04:02.36,CHT,,0,0,0,!Effect,請求派救護車到降落地點\N{\rENG}Requesting to have an ambulance on-scene when we land.
+Dialogue: 0,0:04:22.32,0:04:23.62,CHT,,0,0,0,!Effect,哇 搞定了\N{\rENG}Whoa, there we go.
+Dialogue: 0,0:04:24.83,0:04:26.45,CHT,,0,0,0,!Effect,- 救活她了? - 救活她了\N{\rENG}- Got her? - Got her!
+Dialogue: 0,0:04:43.21,0:04:44.77,CHT,,0,0,0,!Effect,出發啦 夥計\N{\rENG}Attaway, baby.
+Dialogue: 0,0:04:46.05,0:04:47.45,CHT,,0,0,0,!Effect,只有死透了...\N{\rENG}There's dead,
+Dialogue: 0,0:04:50.72,0:04:52.38,CHT,,0,0,0,!Effect,才算是死\N{\rENG}then there's dead.
+Dialogue: 0,0:04:53.76,0:04:55.92,CHT,,0,0,0,!Effect,我發誓 你年歲越大越棒了\N{\rENG}I swear, you get better with age.
+Dialogue: 0,0:05:23.05,0:05:25.35,CHT,,0,0,0,!Effect,- 不得不打他 啊? - 是啊\N{\rENG}- Had to hit him, huh? - Yeah.
+Dialogue: 0,0:05:25.95,0:05:28.72,CHT,,0,0,0,!Effect,你不是 待在那 待那\N{\rENG}You are not. You stay over there! You stay over there!
+Dialogue: 0,0:05:30.73,0:05:33.79,CHT,,0,0,0,!Effect,似乎總是強者失控啊\N{\rENG}Seems like it's always the big ones that crack.
+Dialogue: 0,0:05:35.86,0:05:36.96,CHT,,0,0,0,!Effect,中尉\N{\rENG}Lieutenant.
+Dialogue: 0,0:05:37.03,0:05:40.70,CHT,,0,0,0,!Effect,組員說她沉到水裡了 他們以為你救不活她呢\N{\rENG}Crew said that she went under. They thought you'd lost her.
+Dialogue: 0,0:05:41.10,0:05:43.16,CHT,,0,0,0,!Effect,幸運吧我猜\N{\rENG}Lucky guess.
+Dialogue: 0,0:05:44.34,0:05:46.20,CHT,,0,0,0,!Effect,幸個屁運\N{\rENG}Luck, my ass.
+Dialogue: 0,0:06:07.76,0:06:10.60,CHT,,0,0,0,!Effect,- 我不認為你是來真的 - 你當然不了 本\N{\rENG}- I didn't think you were serious. - Of course you didn't, Ben.
+Dialogue: 0,0:06:10.67,0:06:12.33,CHT,,0,0,0,!Effect,你怎麼會認為我來真的呢\N{\rENG}How could you possibly think I was serious?
+Dialogue: 0,0:06:12.40,0:06:14.60,CHT,,0,0,0,!Effect,我又不是哪個無名的溺水者\N{\rENG}I'm not some nameless drowning victim.
+Dialogue: 0,0:06:14.67,0:06:18.61,CHT,,0,0,0,!Effect,哦 天 我很抱歉 救人和我們的社交有衝突\N{\rENG}Oh, gee, I'm sorry saving lives doesn't jive with our social...
+Dialogue: 0,0:06:20.11,0:06:21.10,CHT,,0,0,0,!Effect,那\N{\rENG}That's...
+Dialogue: 0,0:06:23.25,0:06:24.37,CHT,,0,0,0,!Effect,那是我的椅子\N{\rENG}That's my chair.
+Dialogue: 0,0:06:24.45,0:06:26.51,CHT,,0,0,0,!Effect,他說的對 不是那把椅子\N{\rENG}Oh, he's right. Not that chair.
+Dialogue: 0,0:06:27.55,0:06:32.25,CHT,,0,0,0,!Effect,對不起 我只是在客廳指了一下 他不知道\N{\rENG}I'm sorry. I was just pointing things out in the living room. He didn't know.
+Dialogue: 0,0:06:32.85,0:06:35.12,CHT,,0,0,0,!Effect,我不會拿你的椅子的\N{\rENG}I would never take your chair.
+Dialogue: 0,0:06:42.40,0:06:44.16,CHT,,0,0,0,!Effect,搬上去 行嗎?\N{\rENG}Pick it up, would...
+Dialogue: 0,0:06:47.04,0:06:48.76,CHT,,0,0,0,!Effect,沒什麼難的 本\N{\rENG}Doesn't have to be messy, Ben.
+Dialogue: 0,0:06:48.84,0:06:52.27,CHT,,0,0,0,!Effect,這樣簡單清楚 對我們雙方都是 我們沒有孩子\N{\rENG}It's clean, simple for both of us. We don't have kids.
+Dialogue: 0,0:06:55.48,0:06:57.45,CHT,,0,0,0,!Effect,那 週五怎麼辦?\N{\rENG}Well, what about Friday?
+Dialogue: 0,0:06:59.92,0:07:01.21,CHT,,0,0,0,!Effect,什麼週五怎麼辦?\N{\rENG}What about Friday?
+Dialogue: 0,0:07:01.28,0:07:03.72,CHT,,0,0,0,!Effect,我們要去卡爾和佈雷吉特那的\N{\rENG}We were gonna go with Carl and Bridget, you know,
+Dialogue: 0,0:07:03.79,0:07:07.15,CHT,,0,0,0,!Effect,那個基地的晚餐舞會\N{\rENG}to that dinner-dance thing at the base.
+Dialogue: 0,0:07:08.72,0:07:11.28,CHT,,0,0,0,!Effect,基地? "雞翅隨意吃"?\N{\rENG}The base? All-you-can-eat wings?
+Dialogue: 0,0:07:11.36,0:07:14.95,CHT,,0,0,0,!Effect,投飛鏢付帳單 這就是我們不能錯過的日子?\N{\rENG}A dart game to settle the tab? That's the date that we can't break?
+Dialogue: 0,0:07:15.03,0:07:17.12,CHT,,0,0,0,!Effect,- 你是對的 你是對的 - 哇\N{\rENG}- You're right. You're right. - Wow.
+Dialogue: 0,0:07:17.20,0:07:21.43,CHT,,0,0,0,!Effect,聽我說 我們離開 好嗎? 就我們倆\N{\rENG}Look, we'll... We'll go away, all right? Just us.
+Dialogue: 0,0:07:22.07,0:07:23.23,CHT,,0,0,0,!Effect,太晚了 本\N{\rENG}It's too late, Ben.
+Dialogue: 0,0:07:23.31,0:07:26.10,CHT,,0,0,0,!Effect,我不知道我還有什麼沒說過的能對你說\N{\rENG}I don't know what I can say to you that I haven't said already.
+Dialogue: 0,0:07:26.17,0:07:28.61,CHT,,0,0,0,!Effect,是時候挽救我自己了 95\N{\rENG}It's time for me to rescue myself.
+Dialogue: 0,0:07:35.98,0:07:38.75,CHT,,0,0,0,!Effect,可能是我該搬出去\N{\rENG}Maybe... Maybe I should be the one to move out.
+Dialogue: 0,0:07:38.82,0:07:39.91,CHT,,0,0,0,!Effect,嗨 這是海倫\N{\rENG}Hi, you've reached Helen.
+Dialogue: 0,0:07:39.99,0:07:41.11,CHT,,0,0,0,!Effect,和本的家\N{\rENG}And Ben.
+Dialogue: 0,0:07:41.19,0:07:42.21,CHT,,0,0,0,!Effect,請留言\N{\rENG}Leave a message.
+Dialogue: 0,0:07:42.29,0:07:44.42,CHT,,0,0,0,!Effect,你甚至不知道這房裡的東西在哪\N{\rENG}You don't even know where anything is in this house.
+Dialogue: 0,0:07:44.49,0:07:45.65,CHT,,0,0,0,!Effect,還是這樣簡單的多\N{\rENG}It's much easier this way.
+Dialogue: 0,0:07:45.73,0:07:48.20,CHT,,0,0,0,!Effect,二級軍士長 請向基地報導\N{\rENG}Senior Chief, please report to base.
+Dialogue: 0,0:07:49.23,0:07:52.32,CHT,,0,0,0,!Effect,我能...能改的 我...\N{\rENG}I can... I can fix this, all right? I...
+Dialogue: 0,0:07:53.64,0:07:55.07,CHT,,0,0,0,!Effect,我能\N{\rENG}I can...
+Dialogue: 0,0:07:56.77,0:07:58.33,CHT,,0,0,0,!Effect,我能改的\N{\rENG}I can fix this.
+Dialogue: 0,0:08:00.08,0:08:02.04,CHT,,0,0,0,!Effect,告訴我怎麼做\N{\rENG}Just tell me what to do.
+Dialogue: 0,0:08:02.74,0:08:04.47,CHT,,0,0,0,!Effect,告訴我怎麼做\N{\rENG}Tell me what to do.
+Dialogue: 0,0:08:10.92,0:08:12.58,CHT,,0,0,0,!Effect,- 讓我走就好 - 不\N{\rENG}- Just let me go. - No.
+Dialogue: 0,0:08:13.39,0:08:15.72,CHT,,0,0,0,!Effect,- 讓我走 - 不\N{\rENG}- Just let me go. - No.
+Dialogue: 0,0:08:23.93,0:08:25.87,CHT,,0,0,0,!Effect,你該接的\N{\rENG}You should answer that.
+Dialogue: 0,0:08:28.17,0:08:32.11,CHT,,0,0,0,!Effect,6096號救援直升機待命 救生員一號 回基地\N{\rENG}Ready rescue helo 6096. Swimmer One, return to base.
+Dialogue: 0,0:08:33.27,0:08:36.07,CHT,,0,0,0,!Effect,- 我不想失去她 - 那就改\N{\rENG}- I don't wanna lose her. - Then change.
+Dialogue: 0,0:08:36.14,0:08:38.81,CHT,,0,0,0,!Effect,本 我們這樣的討論有多少回了\N{\rENG}Ben, how many times have we had this conversation?
+Dialogue: 0,0:08:38.88,0:08:42.91,CHT,,0,0,0,!Effect,你唯一的辦法就是放棄 去做文職\N{\rENG}The only way for you to save it is to give this up and fly a desk.
+Dialogue: 0,0:08:43.82,0:08:46.62,CHT,,0,0,0,!Effect,沒錯 她只是想過日子\N{\rENG}Exactly. She just wants to live.
+Dialogue: 0,0:08:48.29,0:08:51.12,CHT,,0,0,0,!Effect,說不定我們能找個興趣活動 我們都有興趣的\N{\rENG}Hey, maybe we can get a hobby. Both of us.
+Dialogue: 0,0:08:51.76,0:08:53.66,CHT,,0,0,0,!Effect,比如釣魚\N{\rENG}Something like fishing.
+Dialogue: 0,0:08:54.10,0:08:55.29,CHT,,0,0,0,!Effect,- 釣魚? - 是啊\N{\rENG}- Fishing? - Yeah.
+Dialogue: 0,0:08:55.36,0:08:57.73,CHT,,0,0,0,!Effect,我們這樣的人不釣魚 卡爾\N{\rENG}Guys like us don't fish, Carl.
+Dialogue: 0,0:08:57.80,0:08:59.96,CHT,,0,0,0,!Effect,這會有用的 一向有用\N{\rENG}It'll work out. Always does.
+Dialogue: 0,0:09:01.47,0:09:05.46,CHT,,0,0,0,!Effect,我問你個問題吧 說真的 我現在約她出去是不是太快了?\N{\rENG}Let me ask you something, seriously. Is it too soon for me to ask her out?
+Dialogue: 0,0:09:05.67,0:09:06.97,CHT,,0,0,0,!Effect,大概吧\N{\rENG}I guess so.
+Dialogue: 0,0:09:10.05,0:09:11.95,CHT,,0,0,0,!Effect,求救! 求救! 求救!\N{\rENG}Mayday! Mayday! Mayday!
+Dialogue: 0,0:09:12.01,0:09:14.00,CHT,,0,0,0,!Effect,這裡是大海女王號貨船\N{\rENG}This is cargo vessel Seaqueen.
+Dialogue: 0,0:09:14.62,0:09:17.78,CHT,,0,0,0,!Effect,我們在北緯55度12分\N{\rENG}We're at 55 degrees, 12 minutes north.
+Dialogue: 0,0:09:17.85,0:09:20.62,CHT,,0,0,0,!Effect,西經167度10分\N{\rENG}167 degrees, 10 minutes west.
+Dialogue: 0,0:09:22.16,0:09:23.28,CHT,,0,0,0,!Effect,船進水了\N{\rENG}We're taking on water.
+Dialogue: 0,0:09:23.89,0:09:27.16,CHT,,0,0,0,!Effect,我們要棄船 重複 棄船\N{\rENG}We're abandoning ship. I repeat, abandoning ship.
+Dialogue: 0,0:09:34.40,0:09:37.70,CHT,,0,0,0,!Effect,兒子 看著我 你會沒事的 聽到嗎?\N{\rENG}Son, look at me. Look at me. You're gonna be okay. Got that?
+Dialogue: 0,0:09:37.77,0:09:39.90,CHT,,0,0,0,!Effect,聽到嗎? 我們會沒事的\N{\rENG}Got that? We're gonna be okay.
+Dialogue: 0,0:09:40.58,0:09:42.07,CHT,,0,0,0,!Effect,沒事的\N{\rENG}Okay.
+Dialogue: 0,0:09:57.06,0:09:59.15,CHT,,0,0,0,!Effect,尾翼除冰警告燈亮了\N{\rENG}We have a tail rotor de-ice caution light.
+Dialogue: 0,0:09:59.23,0:10:00.35,CHT,,0,0,0,!Effect,- 有什麼相關警告嗎? - 沒有\N{\rENG}- Any secondaries? - No.
+Dialogue: 0,0:10:00.43,0:10:02.52,CHT,,0,0,0,!Effect,斷路器還在 所以肯定是失效了\N{\rENG}Circuit breakers are in, so it definitely has failed,
+Dialogue: 0,0:10:02.60,0:10:04.03,CHT,,0,0,0,!Effect,但那沒有什麼冰啊\N{\rENG}but we're not building up any ice.
+Dialogue: 0,0:10:04.10,0:10:07.50,CHT,,0,0,0,!Effect,- 油量如何? - 還能撐40分鐘\N{\rENG}- How's the fuel? - Forty minutes to bingo.
+Dialogue: 0,0:10:07.57,0:10:09.87,CHT,,0,0,0,!Effect,- 好 接管操縱杆 - 好 接管操縱了\N{\rENG}- All right, take the stick. - Okay, I have the controls.
+Dialogue: 0,0:10:09.94,0:10:11.34,CHT,,0,0,0,!Effect,好啦 現在是暫停時間 各位\N{\rENG}All right, huddle time, boys.
+Dialogue: 0,0:10:11.41,0:10:13.77,CHT,,0,0,0,!Effect,除冰誤警 油量很低\N{\rENG}We have a de-ice fail. We're low on fuel.
+Dialogue: 0,0:10:13.84,0:10:17.61,CHT,,0,0,0,!Effect,手冊說我們應該避免我們的損失 你覺得呢 本?\N{\rENG}The rulebook says we cut our losses. What do you think, Ben?
+Dialogue: 0,0:10:18.08,0:10:20.64,CHT,,0,0,0,!Effect,我們要是回家 他們就會死 比爾\N{\rENG}Well, we go home, they die, Bill.
+Dialogue: 0,0:10:24.39,0:10:28.12,CHT,,0,0,0,!Effect,科迪亞克行動中心 行動中心 這是海岸警衛隊6096號\N{\rENG}Ops Cent Kodiak, Ops Cent Kodiak, this is Coast Guard 6096.
+Dialogue: 0,0:10:28.19,0:10:30.16,CHT,,0,0,0,!Effect,尾翼除冰警告燈亮了\N{\rENG}We have a tail rotor de-ice caution light,
+Dialogue: 0,0:10:30.23,0:10:31.69,CHT,,0,0,0,!Effect,但我們要繼續救援\N{\rENG}but we are pressing on.
+Dialogue: 0,0:10:31.76,0:10:34.32,CHT,,0,0,0,!Effect,6096號 有情況就向我們彙報\N{\rENG}6096, keep us updated on your status.
+Dialogue: 0,0:10:34.40,0:10:36.19,CHT,,0,0,0,!Effect,- 6096號... - 接通維修部主管\N{\rENG}- 6096... - Get the maintenance chief on the line.
+Dialogue: 0,0:10:36.26,0:10:37.70,CHT,,0,0,0,!Effect,我想知道他對此有何意見\N{\rENG}I wanna know what he thinks about this.
+Dialogue: 0,0:10:56.12,0:10:58.61,CHT,,0,0,0,!Effect,電腦說風速在60到85節\N{\rENG}Computer's saying the winds are 60 to 85 knots.
+Dialogue: 0,0:10:58.69,0:10:59.95,CHT,,0,0,0,!Effect,我要把你的高度計關掉\N{\rENG}I'm turning your bear alt off.
+Dialogue: 0,0:11:00.02,0:11:02.51,CHT,,0,0,0,!Effect,- 你現在靠自己感覺高度了 - 收到\N{\rENG}- You're on your own with altitude hold. - Roger.
+Dialogue: 0,0:11:02.59,0:11:05.08,CHT,,0,0,0,!Effect,低點 低點 右面 水裡有殘骸\N{\rENG}Lower! Lower! Right side. Debris in water.
+Dialogue: 0,0:11:05.16,0:11:07.86,CHT,,0,0,0,!Effect,- 請求打開艙門 - 收到 開艙門\N{\rENG}- Request to open cabin door. - Roger. Open door.
+Dialogue: 0,0:11:09.70,0:11:11.69,CHT,,0,0,0,!Effect,科迪亞克中心 6096號到現場了\N{\rENG}Kodiak Ops, 6096 is on-scene.
+Dialogue: 0,0:11:11.77,0:11:14.67,CHT,,0,0,0,!Effect,水裡有大量殘骸 進行表面搜尋\N{\rENG}We have heavy debris in the water. Commencing cover search.
+Dialogue: 0,0:11:29.85,0:11:31.34,CHT,,0,0,0,!Effect,標定並記錄位置\N{\rENG}Mark and note position.
+Dialogue: 0,0:11:33.12,0:11:34.61,CHT,,0,0,0,!Effect,我要下去了\N{\rENG}I'm going in.
+Dialogue: 0,0:11:37.69,0:11:40.75,CHT,,0,0,0,!Effect,他們死了 本 他們死了\N{\rENG}They're dead, Ben. Ben, they're dead!
+Dialogue: 0,0:11:40.83,0:11:42.56,CHT,,0,0,0,!Effect,我們並不知道\N{\rENG}We don't know that.
+Dialogue: 0,0:11:42.83,0:11:45.66,CHT,,0,0,0,!Effect,有六名落水者 綁在一起 沒有生命跡象\N{\rENG}There's six PIWs all tied together. No signs of life.
+Dialogue: 0,0:11:46.80,0:11:48.17,CHT,,0,0,0,!Effect,我覺得可能太遲了\N{\rENG}I think we may be too late.
+Dialogue: 0,0:11:48.24,0:11:51.30,CHT,,0,0,0,!Effect,不是我們的事 他們在現場 他們會做評估的\N{\rENG}Not our call. They're on-scene. They'll make the assessment.
+Dialogue: 0,0:11:51.74,0:11:53.47,CHT,,0,0,0,!Effect,請求下水 長官\N{\rENG}Requesting to get wet, sir.
+Dialogue: 0,0:11:53.54,0:11:55.98,CHT,,0,0,0,!Effect,我不是讓你去拽屍體的 起碼不是這樣天氣\N{\rENG}I ain't sending you fishing for bodies, not in this.
+Dialogue: 0,0:11:56.04,0:11:58.48,CHT,,0,0,0,!Effect,那 救父子呢?\N{\rENG}Well, how about fathers and sons?
+Dialogue: 0,0:12:00.98,0:12:04.54,CHT,,0,0,0,!Effect,照明彈 有個活著的 有個活著的\N{\rENG}Flare! Flare! We got a live one here. We got a live one!
+Dialogue: 0,0:12:07.26,0:12:10.55,CHT,,0,0,0,!Effect,給你5分鐘 然後我們就拉你上來\N{\rENG}You got five minutes, then we're hauling your ass back up.
+Dialogue: 0,0:12:10.63,0:12:12.75,CHT,,0,0,0,!Effect,科迪亞克中心 這是海岸警衛隊6096號\N{\rENG}Kodiak Ops, this is Coast Guard 6096.
+Dialogue: 0,0:12:12.83,0:12:15.26,CHT,,0,0,0,!Effect,水中有人 我們要派出救生員\N{\rENG}We have people in the water, and we are deploying our swimmer.
+Dialogue: 0,0:12:15.33,0:12:17.49,CHT,,0,0,0,!Effect,6096號 這是科迪亞克中心 收到\N{\rENG}6096, Kodiak Ops, copy.
+Dialogue: 0,0:12:17.57,0:12:20.00,CHT,,0,0,0,!Effect,有個人拿著照明彈 我看不到其他動作\N{\rENG}One's holding the flare. I see no other movement.
+Dialogue: 0,0:12:20.07,0:12:21.09,CHT,,0,0,0,!Effect,收到\N{\rENG}Roger that.
+Dialogue: 0,0:12:21.17,0:12:22.47,CHT,,0,0,0,!Effect,準備派出救生員\N{\rENG}Swimmer's ready to deploy.
+Dialogue: 0,0:12:22.54,0:12:25.60,CHT,,0,0,0,!Effect,- 檢查救生員 - 收到 檢查救生員\N{\rENG}- Check swimmer. - Roger. Checking swimmer.
+Dialogue: 0,0:12:29.21,0:12:31.91,CHT,,0,0,0,!Effect,救生員全副武裝 檢查完畢\N{\rENG}Swimmer's dressed out. Checklist is complete.
+Dialogue: 0,0:12:31.98,0:12:33.45,CHT,,0,0,0,!Effect,5分鐘\N{\rENG}Five minutes.
+Dialogue: 0,0:12:37.22,0:12:38.85,CHT,,0,0,0,!Effect,救生員下水了\N{\rENG}Swimmer's away.
+Dialogue: 0,0:12:46.59,0:12:47.65,CHT,,0,0,0,!Effect,救生員安全\N{\rENG}Swimmer's okay.
+Dialogue: 0,0:12:47.73,0:12:50.96,CHT,,0,0,0,!Effect,- 離開 向左後退30英尺 - 離開 向左後退\N{\rENG}- Clear to move back and left 30. - Clear back and left.
+Dialogue: 0,0:13:11.02,0:13:12.42,CHT,,0,0,0,!Effect,油量如何?\N{\rENG}How we looking on fuel there?
+Dialogue: 0,0:13:12.49,0:13:14.72,CHT,,0,0,0,!Effect,還能撐2分鐘\N{\rENG}Two minutes to bingo.
+Dialogue: 0,0:13:21.50,0:13:24.19,CHT,,0,0,0,!Effect,我是海岸警衛隊救生員 來救你的 孩子\N{\rENG}I'm a Coast Guard rescue swimmer here to help you, son.
+Dialogue: 0,0:13:24.27,0:13:27.96,CHT,,0,0,0,!Effect,你會沒事的 我會把你送上直升機的\N{\rENG}You're gonna be okay. I'm gonna get you in that helicopter.
+Dialogue: 0,0:13:32.77,0:13:35.57,CHT,,0,0,0,!Effect,- 看到"可以拉起"的信號了 - 收到\N{\rENG}- I have the ready-for-pickup signal. - Roger.
+Dialogue: 0,0:13:40.82,0:13:43.61,CHT,,0,0,0,!Effect,籃子出艙了\N{\rENG}Basket is going out the cabin door.
+Dialogue: 0,0:13:44.69,0:13:46.48,CHT,,0,0,0,!Effect,油量告警了 必須得走了\N{\rENG}Bingo. We're at bingo. Gotta go.
+Dialogue: 0,0:13:46.55,0:13:47.89,CHT,,0,0,0,!Effect,小心回來\N{\rENG}Ease it back.
+Dialogue: 0,0:13:48.76,0:13:51.92,CHT,,0,0,0,!Effect,- 籃子入水了 - 沒時間了 我們得走了 卡爾\N{\rENG}- Basket is in the water! - We're out of time. We gotta go, Carl.
+Dialogue: 0,0:13:51.99,0:13:55.05,CHT,,0,0,0,!Effect,保持位置 穩住\N{\rENG}Hold position. Steady. Hold.
+Dialogue: 0,0:13:55.13,0:13:56.99,CHT,,0,0,0,!Effect,他把倖存者放到籃裡了\N{\rENG}He's putting the survivor in the basket.
+Dialogue: 0,0:13:57.07,0:13:58.79,CHT,,0,0,0,!Effect,你的高度表全亂了\N{\rENG}Your rad alt's going crazy.
+Dialogue: 0,0:13:58.87,0:14:01.70,CHT,,0,0,0,!Effect,是啊 我知道 我這一團亂\N{\rENG}Yeah, yeah, I know. I'm all over the place.
+Dialogue: 0,0:14:06.41,0:14:08.24,CHT,,0,0,0,!Effect,快點 卡爾 我們現在就得走\N{\rENG}Come on, Carl, we gotta go now!
+Dialogue: 0,0:14:08.31,0:14:10.57,CHT,,0,0,0,!Effect,我還沒看見"可以拉起"的信號\N{\rENG}I don't have a ready-for-pickup signal yet.
+Dialogue: 0,0:14:13.05,0:14:15.52,CHT,,0,0,0,!Effect,哇 卡爾 你後面\N{\rENG}Whoa! Carl! Behind you!
+Dialogue: 0,0:14:15.58,0:14:16.91,CHT,,0,0,0,!Effect,糟糕\N{\rENG}Holy shit!
+Dialogue: 0,0:14:19.12,0:14:20.75,CHT,,0,0,0,!Effect,尾翼完了\N{\rENG}We lost our tail rotor!
+Dialogue: 0,0:14:24.09,0:14:26.03,CHT,,0,0,0,!Effect,求救 求救 求救\N{\rENG}Mayday! Mayday! Mayday!
+Dialogue: 0,0:14:28.93,0:14:31.16,CHT,,0,0,0,!Effect,海岸警衛隊6096號正在墜落\N{\rENG}Coast Guard 6096 is going down!
+Dialogue: 0,0:14:31.23,0:14:33.46,CHT,,0,0,0,!Effect,求救 求救 6096號要入水了\N{\rENG}Mayday! Mayday! 6096 is going in.
+Dialogue: 0,0:15:18.18,0:15:20.37,CHT,,0,0,0,!Effect,卡爾 我在這\N{\rENG}Carl. I'm here.
+Dialogue: 0,0:15:20.45,0:15:21.44,CHT,,0,0,0,!Effect,卡爾\N{\rENG}Carl.
+Dialogue: 0,0:15:23.62,0:15:26.52,CHT,,0,0,0,!Effect,撐住 卡爾 撐住\N{\rENG}Hold on, Carl. Hold on.
+Dialogue: 0,0:15:27.96,0:15:29.95,CHT,,0,0,0,!Effect,他們會來救我們的\N{\rENG}They'll be coming for us.
+Dialogue: 0,0:15:32.69,0:15:35.22,CHT,,0,0,0,!Effect,我和你在一起 你現在沒事了\N{\rENG}I got you. You're okay now.
+Dialogue: 0,0:15:36.06,0:15:38.29,CHT,,0,0,0,!Effect,沒事的 我在這 卡爾\N{\rENG}You're okay. I'm here, Carl.
+Dialogue: 0,0:15:39.87,0:15:42.39,CHT,,0,0,0,!Effect,我們沒事的 撐住 我和你一起\N{\rENG}We're okay. Hang on. I got you.
+Dialogue: 0,0:15:43.60,0:15:47.17,CHT,,0,0,0,!Effect,- 你覺得他們會來 - 是的 他們回來\N{\rENG}- You think they're coming? - Oh, yeah, they're coming.
+Dialogue: 0,0:15:50.04,0:15:52.31,CHT,,0,0,0,!Effect,我要一架C-130立即到事故現場去\N{\rENG}I want a C-130 over that crash site now.
+Dialogue: 0,0:15:52.38,0:15:54.31,CHT,,0,0,0,!Effect,克勞斯中尉 執行事故處理常式\N{\rENG}Lieutenant Krauss, start the mishap checklist.
+Dialogue: 0,0:15:54.38,0:15:55.37,CHT,,0,0,0,!Effect,遵命 上校\N{\rENG}Aye, Captain.
+Dialogue: 0,0:15:55.45,0:15:57.28,CHT,,0,0,0,!Effect,上校 朗道那的倖存者衣服上有 緊急無線電示位標\N{\rENG}Captain, I've got an EPIRB hit on Randall's survivor suit.
+Dialogue: 0,0:15:57.35,0:15:59.34,CHT,,0,0,0,!Effect,待命直升機升空 帶上救生員\N{\rENG}Launch ready helos. Swimmer provide.
+Dialogue: 0,0:15:59.42,0:16:02.58,CHT,,0,0,0,!Effect,有架C-130從阿圖島執行任務剛結束 但油量不足\N{\rENG}We have a C-130 coming off a case off Attu. It's already low on fuel.
+Dialogue: 0,0:16:02.66,0:16:04.09,CHT,,0,0,0,!Effect,我不管 讓他們關一個引擎\N{\rENG}I don't care. Have them cut an engine.
+Dialogue: 0,0:16:04.16,0:16:05.75,CHT,,0,0,0,!Effect,我要讓他知道 他不是一個人在那\N{\rENG}I want him to know he's not alone out there.
+Dialogue: 0,0:16:10.16,0:16:12.29,CHT,,0,0,0,!Effect,聽 聽\N{\rENG}Listen. Listen.
+Dialogue: 0,0:16:14.37,0:16:15.93,CHT,,0,0,0,!Effect,聽見了?\N{\rENG}You hear that?
+Dialogue: 0,0:16:31.39,0:16:35.38,CHT,,0,0,0,!Effect,堅持住 卡爾 到了 卡爾 我抓著你呢\N{\rENG}Hold on, Carl. Here we go, Carl. I got you.
+Dialogue: 0,0:16:37.53,0:16:38.89,CHT,,0,0,0,!Effect,後備直升機多久能到達\N{\rENG}What's the ETA on the backup helo?
+Dialogue: 0,0:16:38.96,0:16:39.98,CHT,,0,0,0,!Effect,正在飛向冷灣\N{\rENG}Helo's en route to Cold Bay.
+Dialogue: 0,0:16:40.06,0:16:41.79,CHT,,0,0,0,!Effect,他們有3或4小時就能到現場\N{\rENG}They should be on-scene, three, maybe four hours.
+Dialogue: 0,0:16:41.86,0:16:42.89,CHT,,0,0,0,!Effect,那就3小時到\N{\rENG}Make it three.
+Dialogue: 0,0:16:56.21,0:16:59.94,CHT,,0,0,0,!Effect,耶穌啊 你覺得我身上中了多少那東西\N{\rENG}Jesus. How much more of that stuff do you think I got in me?
+Dialogue: 0,0:17:00.65,0:17:02.24,CHT,,0,0,0,!Effect,感覺到了?\N{\rENG}Feel that?
+Dialogue: 0,0:17:03.45,0:17:05.39,CHT,,0,0,0,!Effect,- 感覺到了? - 是的\N{\rENG}- You feel that? - Yeah.
+Dialogue: 0,0:17:05.45,0:17:08.48,CHT,,0,0,0,!Effect,這就說明你還是活的 我不會放棄的\N{\rENG}That means you're alive. I'm not gonna let go.
+Dialogue: 0,0:17:10.36,0:17:14.23,CHT,,0,0,0,!Effect,- 你也別 - 我不會的 不會的\N{\rENG}- Don't you! - I'm not gonna. I'm not gonna.
+Dialogue: 0,0:18:07.95,0:18:09.51,CHT,,0,0,0,!Effect,嚴重骨折 好像是頸椎\N{\rENG}serious fractures, like in the C-spine,
+Dialogue: 0,0:18:09.58,0:18:10.98,CHT,,0,0,0,!Effect,可能會導致癱瘓\N{\rENG}which could cause paralysis.
+Dialogue: 0,0:18:11.05,0:18:14.61,CHT,,0,0,0,!Effect,見到的基本都是舊骨折 手臂和腿部的\N{\rENG}Mostly what we see is old fractures in the arms, also in the leg,
+Dialogue: 0,0:18:14.69,0:18:17.56,CHT,,0,0,0,!Effect,但不嚴重 這次沒有新傷 很幸運\N{\rENG}but nothing acute. Nothing new with this injury, luckily.
+Dialogue: 0,0:18:18.39,0:18:20.12,CHT,,0,0,0,!Effect,只希望腎臟能起作用\N{\rENG}We just hope the kidneys kick in
+Dialogue: 0,0:18:20.19,0:18:22.49,CHT,,0,0,0,!Effect,幫他消除那些積液\N{\rENG}and start to help him resolve a lot of that fluid.
+Dialogue: 0,0:18:22.56,0:18:24.09,CHT,,0,0,0,!Effect,非常感謝\N{\rENG}Thank you very much.
+Dialogue: 0,0:19:03.07,0:19:05.80,CHT,,0,0,0,!Effect,我們做了很長時間朋友了 對吧?\N{\rENG}We've been friends a long time, haven't we?
+Dialogue: 0,0:19:05.87,0:19:07.90,CHT,,0,0,0,!Effect,我一直對你不錯 對吧\N{\rENG}I've always been good to you, haven't I?
+Dialogue: 0,0:19:07.98,0:19:11.21,CHT,,0,0,0,!Effect,沒有讓你像其他人一樣40歲轉文職吧\N{\rENG}Didn't promote you to a desk when you turned 40 like everybody else.
+Dialogue: 0,0:19:11.28,0:19:12.30,CHT,,0,0,0,!Effect,是的\N{\rENG}That's right.
+Dialogue: 0,0:19:12.38,0:19:15.44,CHT,,0,0,0,!Effect,好 那我現在需要你聽我說\N{\rENG}All right, so now I need you to listen to me.
+Dialogue: 0,0:19:15.52,0:19:16.64,CHT,,0,0,0,!Effect,好\N{\rENG}Okay.
+Dialogue: 0,0:19:18.19,0:19:20.15,CHT,,0,0,0,!Effect,"A"校有一個教師職位的空缺\N{\rENG}There's an instructor opening at "A" School, that...
+Dialogue: 0,0:19:20.22,0:19:22.42,CHT,,0,0,0,!Effect,不 答案是不\N{\rENG}No. The answer is no.
+Dialogue: 0,0:19:22.49,0:19:24.82,CHT,,0,0,0,!Effect,你剛說你會聽的 坐下\N{\rENG}You just said you'd listen. Sit down.
+Dialogue: 0,0:19:25.33,0:19:27.26,CHT,,0,0,0,!Effect,我沒有興趣 上校\N{\rENG}I'm not interested, Captain.
+Dialogue: 0,0:19:27.33,0:19:30.79,CHT,,0,0,0,!Effect,這不是請求 二級軍士長 坐下\N{\rENG}Well, it's no longer a request, Senior Chief. Sit down.
+Dialogue: 0,0:19:30.87,0:19:32.39,CHT,,0,0,0,!Effect,你來真的?\N{\rENG}You're serious?
+Dialogue: 0,0:19:40.11,0:19:42.04,CHT,,0,0,0,!Effect,你有兩個選擇\N{\rENG}You have two choices.
+Dialogue: 0,0:19:42.11,0:19:45.37,CHT,,0,0,0,!Effect,今天簽署檔 以後在科迪亞克過平民生活\N{\rENG}Sign the papers today and you can live life as a civilian here in Kodiak,
+Dialogue: 0,0:19:45.45,0:19:47.18,CHT,,0,0,0,!Effect,如果你想的話\N{\rENG}if that's what you want.
+Dialogue: 0,0:19:47.85,0:19:51.41,CHT,,0,0,0,!Effect,要不就接受那個"A"校的職位\N{\rENG}Or you can take that "A" School opening I'm offering you.
+Dialogue: 0,0:19:51.49,0:19:53.42,CHT,,0,0,0,!Effect,我已經和那的領導講過了\N{\rENG}I've already spoken to command down there.
+Dialogue: 0,0:19:53.49,0:19:56.39,CHT,,0,0,0,!Effect,這個班歸你管 你做主\N{\rENG}It will be your class. You will be in charge.
+Dialogue: 0,0:19:56.46,0:19:59.26,CHT,,0,0,0,!Effect,你可以利用這段時間讓自己恢復健康\N{\rENG}You can take the time to work your way back into shape.
+Dialogue: 0,0:19:59.33,0:20:00.55,CHT,,0,0,0,!Effect,我很健康\N{\rENG}I am in shape.
+Dialogue: 0,0:20:00.63,0:20:03.62,CHT,,0,0,0,!Effect,媽的 我想說的不是這個\N{\rENG}God damn it, that's not what I'm talking about.
+Dialogue: 0,0:20:05.77,0:20:08.70,CHT,,0,0,0,!Effect,本 我只要求你去那幾個月\N{\rENG}Ben, all I'm asking is that you go down there for a few months.
+Dialogue: 0,0:20:08.77,0:20:11.33,CHT,,0,0,0,!Effect,一邊教孩子 一邊恢復\N{\rENG}You work with the kids, you recharge.
+Dialogue: 0,0:20:11.41,0:20:14.97,CHT,,0,0,0,!Effect,這樣你的完美履歷才能起好效果\NDownload that epic r閟um? where it's gonna do some good.{\r}
+Dialogue: 0,0:20:17.68,0:20:20.74,CHT,,0,0,0,!Effect,不可能救生員永遠是你 本\N{\rENG}You can't always be the one in the water, Ben.
+Dialogue: 0,0:20:20.82,0:20:23.41,CHT,,0,0,0,!Effect,當你準備好回來時 你會知道的\N{\rENG}You'll know when you're ready to come back.
+Dialogue: 0,0:21:10.50,0:21:13.13,CHT,,0,0,0,!Effect,你們有15秒鐘時間下車\N{\rENG}You people got 15 seconds to get off this bus.
+Dialogue: 0,0:21:13.20,0:21:16.07,CHT,,0,0,0,!Effect,快 快 趕快下車\N{\rENG}Move! Move! Let's go! Get off the bus!
+Dialogue: 0,0:21:29.82,0:21:31.88,CHT,,0,0,0,!Effect,- 快點 - 快走\N{\rENG}Hurry up. Let's go, let's go.
+Dialogue: 0,0:21:36.36,0:21:37.98,CHT,,0,0,0,!Effect,把白皮書放紅包裡\N{\rENG}Put your white books in your red bags.
+Dialogue: 0,0:21:38.43,0:21:40.95,CHT,,0,0,0,!Effect,那這些收好 把書收起來\N{\rENG}Let's get that squared away now. Put those books away.
+Dialogue: 0,0:21:41.03,0:21:43.43,CHT,,0,0,0,!Effect,女生 提著包 排到隊後\N{\rENG}Females, grab your bags, fall out to the rear.
+Dialogue: 0,0:21:43.50,0:21:45.49,CHT,,0,0,0,!Effect,跟著佛萊特三級軍士長和霍爾上士\N{\rENG}Follow Chief Flight and Petty Officer Hall.
+Dialogue: 0,0:21:45.57,0:21:48.30,CHT,,0,0,0,!Effect,剩下人 找一個床位 換上制服\N{\rENG}The rest of you, pick a bunk, put on your ODUs.
+Dialogue: 0,0:21:48.37,0:21:50.84,CHT,,0,0,0,!Effect,總共15分鐘 還剩下12分鐘了\N{\rENG}You started with 15 minutes, you are now down to 12.
+Dialogue: 0,0:21:50.91,0:21:53.90,CHT,,0,0,0,!Effect,快走 快點\N{\rENG}Move! Move, move, move!
+Dialogue: 0,0:21:55.31,0:21:57.61,CHT,,0,0,0,!Effect,快點 把你們的工作服換下來\N{\rENG}Move it out. Get changed out of those working blues.
+Dialogue: 0,0:21:57.68,0:21:59.41,CHT,,0,0,0,!Effect,快點 行動\N{\rENG}Hurry up. Move it out.
+Dialogue: 0,0:21:59.48,0:22:01.61,CHT,,0,0,0,!Effect,找好你們的床位 別耽誤我時間\N{\rENG}Find your rack. Quit wasting my time.
+Dialogue: 0,0:22:01.68,0:22:04.98,CHT,,0,0,0,!Effect,嘿 嘿 那是我的東西 老兄\N{\rENG}Hey. Hey! That's my stuff, man.
+Dialogue: 0,0:22:05.22,0:22:07.38,CHT,,0,0,0,!Effect,嘿 那是他的床位\N{\rENG}Hey, that's his bunk.
+Dialogue: 0,0:22:08.06,0:22:09.75,CHT,,0,0,0,!Effect,你們是一對嗎?\N{\rENG}You two a couple?
+Dialogue: 0,0:22:11.53,0:22:14.62,CHT,,0,0,0,!Effect,算了 反正我更喜歡上鋪\N{\rENG}It's okay. I like the top better anyway.
+Dialogue: 0,0:22:17.06,0:22:18.73,CHT,,0,0,0,!Effect,三萬九千名男女\N{\rENG}Out of the 39,000 men and women
+Dialogue: 0,0:22:18.80,0:22:20.63,CHT,,0,0,0,!Effect,構成了美國海岸警衛隊\N{\rENG}who make up the United States Coast Guard,
+Dialogue: 0,0:22:20.70,0:22:23.64,CHT,,0,0,0,!Effect,其中只有280名救生員\N{\rENG}there are only 280 rescue swimmers.
+Dialogue: 0,0:22:23.70,0:22:25.04,CHT,,0,0,0,!Effect,快點 快點 美人魚們\N{\rENG}Let's go! Let's go, mermaids!
+Dialogue: 0,0:22:25.11,0:22:27.10,CHT,,0,0,0,!Effect,這是因為我們是海岸警衛隊的精英\N{\rENG}This is because we are the Coast Guard's elite.
+Dialogue: 0,0:22:27.17,0:22:29.04,CHT,,0,0,0,!Effect,我們是優中選優\N{\rENG}We are the best of the best.
+Dialogue: 0,0:22:29.11,0:22:32.44,CHT,,0,0,0,!Effect,當港口因為風暴而關閉時 我們行動\N{\rENG}When storms shut down entire ports, we go out.
+Dialogue: 0,0:22:32.91,0:22:36.37,CHT,,0,0,0,!Effect,當颶風把美國海軍封在岸上時 我們行動\N{\rENG}When hurricanes ground the United States Navy, we go out.
+Dialogue: 0,0:22:36.45,0:22:39.04,CHT,,0,0,0,!Effect,當天主親自從天堂降臨\N{\rENG}And when the holy Lord himself reaches down from heaven
+Dialogue: 0,0:22:39.12,0:22:43.06,CHT,,0,0,0,!Effect,摧毀祂創造的世界 用風把房屋連根拔起時\N{\rENG}and destroys his good work with winds that rip houses off the ground,
+Dialogue: 0,0:22:43.36,0:22:45.22,CHT,,0,0,0,!Effect,我們行動\N{\rENG}we go out.
+Dialogue: 0,0:22:46.19,0:22:49.82,CHT,,0,0,0,!Effect,這所學校的淘汰率大大超過50％\N{\rENG}And the attrition rate at this school is well over 50%.
+Dialogue: 0,0:22:49.90,0:22:54.56,CHT,,0,0,0,!Effect,所以要是奇跡出現 你真的有資格成為我們中的一員\N{\rENG}So if by some miracle you actually have what it takes to become one of us,
+Dialogue: 0,0:22:55.24,0:22:59.07,CHT,,0,0,0,!Effect,那你一生將只拿微薄的薪水\N{\rENG}then you get to live a life of meager pay
+Dialogue: 0,0:22:59.14,0:23:03.27,CHT,,0,0,0,!Effect,有很大可能你生命將這樣終結 無人相伴 唯有寒冷 慢慢離世\N{\rENG}with the distinct possibility of dying slow, cold and alone
+Dialogue: 0,0:23:03.64,0:23:05.17,CHT,,0,0,0,!Effect,陷於茫茫大海之中\N{\rENG}somewhere in the vast sea.
+Dialogue: 0,0:23:06.28,0:23:09.65,CHT,,0,0,0,!Effect,但是 你也將獲得機會拯救生命\N{\rENG}However, you also get the chance to save lives,
+Dialogue: 0,0:23:10.58,0:23:13.99,CHT,,0,0,0,!Effect,而世上再沒有比這更好的職業了\N{\rENG}and there is no greater calling in the world than that.
+Dialogue: 0,0:23:14.05,0:23:18.46,CHT,,0,0,0,!Effect,那麼 女士們先生們 歡迎來到"A"校\N{\rENG}So, ladies and gentlemen, welcome. Welcome to "A" School.
+Dialogue: 0,0:23:19.06,0:23:21.08,CHT,,0,0,0,!Effect,有什麼問題嗎?\N{\rENG}Are there any questions?
+Dialogue: 0,0:23:22.83,0:23:26.23,CHT,,0,0,0,!Effect,上校 我是空軍士兵費舍爾 只有一個問題\N{\rENG}Captain, Airman Fischer. Just have one question.
+Dialogue: 0,0:23:27.07,0:23:30.53,CHT,,0,0,0,!Effect,那個保持所有記錄的傢伙 他還活著嗎?\N{\rENG}That guy who holds all them records, is he still alive?
+Dialogue: 0,0:23:30.80,0:23:32.03,CHT,,0,0,0,!Effect,為什麼要問\N{\rENG}Why do you ask?
+Dialogue: 0,0:23:32.11,0:23:33.63,CHT,,0,0,0,!Effect,我只是想你應該讓他知道\N{\rENG}I just thought you ought to let him know
+Dialogue: 0,0:23:33.71,0:23:35.47,CHT,,0,0,0,!Effect,我想要讓他名字從那塊板上消失\N{\rENG}I'm about to knock his name off that board.
+Dialogue: 0,0:23:35.54,0:23:37.94,CHT,,0,0,0,!Effect,真的嗎? 你幹嘛不自己告訴他呢?\N{\rENG}Really? Why don't you let him know yourself?
+Dialogue: 0,0:23:38.01,0:23:41.47,CHT,,0,0,0,!Effect,他就站在你身後 在屋子後面\N{\rENG}He's standing right behind you in the back of the room.
+Dialogue: 0,0:23:41.82,0:23:45.25,CHT,,0,0,0,!Effect,全班都有 向後轉 向二級軍士長本·朗道致敬\N{\rENG}Class, turn around and greet Senior Chief Ben Randall.
+Dialogue: 0,0:23:46.19,0:23:50.78,CHT,,0,0,0,!Effect,二級軍士長朗道將在未來18星期中 作你們的班主任\N{\rENG}Senior Chief Randall will be your lead instructor for the next 18 weeks.
+Dialogue: 0,0:23:50.86,0:23:54.49,CHT,,0,0,0,!Effect,二級軍士長朗道是美國海岸警衛隊歷史上 最出色的救生員之一\N{\rENG}Senior Chief Randall is one of the most decorated rescue swimmers
+Dialogue: 0,0:23:54.56,0:23:57.66,CHT,,0,0,0,!Effect,\Nin the history of the United States Coast Guard.
+Dialogue: 0,0:23:59.23,0:24:01.86,CHT,,0,0,0,!Effect,本 你願意向全班致詞嗎?\N{\rENG}Ben, would you care to address the class?
+Dialogue: 0,0:24:01.94,0:24:04.87,CHT,,0,0,0,!Effect,不 我覺得一天說這麼多已經夠了\N{\rENG}No, I think there's been enough talk for one day.
+Dialogue: 0,0:24:04.94,0:24:07.60,CHT,,0,0,0,!Effect,二級軍士長 他們歸你管了\N{\rENG}Chief Skinner, they're all yours.
+Dialogue: 0,0:24:07.68,0:24:09.58,CHT,,0,0,0,!Effect,全體立正\N{\rENG}Attention on deck.
+Dialogue: 0,0:24:09.64,0:24:11.58,CHT,,0,0,0,!Effect,- 稍息 - 是 上校\N{\rENG}- Carry on. - Aye, Captain.
+Dialogue: 0,0:24:12.88,0:24:15.68,CHT,,0,0,0,!Effect,體力測試 明早七點開始\N{\rENG}PT test begins at 0700 tomorrow.
+Dialogue: 0,0:24:15.75,0:24:17.98,CHT,,0,0,0,!Effect,全班解散 從前門出去\N{\rENG}Class dismissed. You will file through the front door.
+Dialogue: 0,0:24:18.05,0:24:19.58,CHT,,0,0,0,!Effect,第一排先走 第二排跟上\N{\rENG}First row first, followed by the second.
+Dialogue: 0,0:24:19.65,0:24:21.12,CHT,,0,0,0,!Effect,佛蘭克\N{\rENG}Frank.
+Dialogue: 0,0:24:22.52,0:24:25.29,CHT,,0,0,0,!Effect,當上帝把房屋連根拔起時?\N{\rENG}"When God rips houses off the ground"?
+Dialogue: 0,0:24:26.43,0:24:27.95,CHT,,0,0,0,!Effect,我有點興奮\N{\rENG}I was rolling.
+Dialogue: 0,0:24:28.46,0:24:31.09,CHT,,0,0,0,!Effect,我不是故意把你名字放那上面的\N{\rENG}And I didn't mean to put you on the spot up there.
+Dialogue: 0,0:24:31.90,0:24:34.83,CHT,,0,0,0,!Effect,我對你組員的事情很遺憾\N{\rENG}And I was real sorry to hear about your crew.
+Dialogue: 0,0:24:35.37,0:24:37.60,CHT,,0,0,0,!Effect,來吧 我帶你轉轉\N{\rENG}Come on. I'll show you around.
+Dialogue: 0,0:24:38.47,0:24:41.57,CHT,,0,0,0,!Effect,- 我聽說你現在一個人? - 對\N{\rENG}- So I hear you're staying in a single? - Yeah.
+Dialogue: 0,0:24:42.31,0:24:45.68,CHT,,0,0,0,!Effect,海倫有些家庭事務要在那處理\N{\rENG}Helen's got some family business she's gotta take care of up there.
+Dialogue: 0,0:24:48.45,0:24:50.35,CHT,,0,0,0,!Effect,求救 求救 求救\N{\rENG}Mayday, mayday, mayday!
+Dialogue: 0,0:24:50.78,0:24:53.45,CHT,,0,0,0,!Effect,這是博瑪雷納號 博瑪雷納號\N{\rENG}This is Ballmariner! Ballmariner!
+Dialogue: 0,0:24:53.92,0:24:57.22,CHT,,0,0,0,!Effect,我們著火了 著火了\N{\rENG}We are on fire! We are on fire!
+Dialogue: 0,0:25:19.95,0:25:21.01,CHT,,0,0,0,!Effect,出發\N{\rENG}Go!
+Dialogue: 0,0:25:21.08,0:25:24.05,CHT,,0,0,0,!Effect,- 快跑 快跑 快跑 - 快跑\N{\rENG}- Let's go, let's go, let's go! - Let's go, logs.
+Dialogue: 0,0:25:24.39,0:25:26.41,CHT,,0,0,0,!Effect,跑啊 跑啊\N{\rENG}Let's move it out! Let's move it out!
+Dialogue: 0,0:25:26.49,0:25:28.79,CHT,,0,0,0,!Effect,相互配合 相互配合\N{\rENG}Work as a team! Work as a team!
+Dialogue: 0,0:25:30.62,0:25:31.68,CHT,,0,0,0,!Effect,- 排兩行 - 排兩行\N{\rENG}- Two lines. - Two lines.
+Dialogue: 0,0:25:31.76,0:25:33.06,CHT,,0,0,0,!Effect,- 排兩行 - 排兩行\N{\rENG}- Two lines. - Two lines.
+Dialogue: 0,0:25:54.55,0:25:55.91,CHT,,0,0,0,!Effect,聽懂了嗎?\N{\rENG}Do you understand me?
+Dialogue: 0,0:25:55.98,0:25:57.35,CHT,,0,0,0,!Effect,懂了 霍爾上士\N{\rENG}Yes, Petty Officer Hall.
+Dialogue: 0,0:25:57.42,0:26:00.05,CHT,,0,0,0,!Effect,很好 我們來試試 俯臥撐\N{\rENG}Very well, let's try it. Lean and rest!
+Dialogue: 0,0:26:02.22,0:26:03.81,CHT,,0,0,0,!Effect,起來\N{\rENG}Pop tall.
+Dialogue: 0,0:26:04.32,0:26:05.42,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah!
+Dialogue: 0,0:26:05.49,0:26:06.96,CHT,,0,0,0,!Effect,- 這他媽的成什麼樣子 - 太差了\N{\rENG}- What the hell was that? - That was terrible.
+Dialogue: 0,0:26:07.03,0:26:08.02,CHT,,0,0,0,!Effect,沒見過更差的\N{\rENG}That was the worst I've ever seen.
+Dialogue: 0,0:26:08.10,0:26:09.08,CHT,,0,0,0,!Effect,太差了\N{\rENG}That was terrible.
+Dialogue: 0,0:26:09.16,0:26:10.65,CHT,,0,0,0,!Effect,再試一遍\N{\rENG}Let's try that again.
+Dialogue: 0,0:26:21.14,0:26:22.77,CHT,,0,0,0,!Effect,- 二十二 - 加油\N{\rENG}Twenty-two. Come on!
+Dialogue: 0,0:26:22.84,0:26:24.11,CHT,,0,0,0,!Effect,- 上 - 二十三\N{\rENG}- Up! - Twenty-three.
+Dialogue: 0,0:26:24.18,0:26:25.54,CHT,,0,0,0,!Effect,下 上\N{\rENG}Down. Up.
+Dialogue: 0,0:26:25.61,0:26:27.67,CHT,,0,0,0,!Effect,- 二十四 - 屁股下去 小子\N{\rENG}- Twenty-four. - Get that ass down, Cable!
+Dialogue: 0,0:26:27.75,0:26:29.11,CHT,,0,0,0,!Effect,- 上 - 二十五\N{\rENG}- Up! - Twenty-five.
+Dialogue: 0,0:26:29.58,0:26:31.71,CHT,,0,0,0,!Effect,實在太差了\N{\rENG}That is absolutely horrible.
+Dialogue: 0,0:26:31.79,0:26:34.69,CHT,,0,0,0,!Effect,起來跑到松樹那再回來 出發\N{\rENG}Pop tall to the lone pine and back! Go!
+Dialogue: 0,0:26:34.76,0:26:38.12,CHT,,0,0,0,!Effect,快跑 動起來 出發\N{\rENG}Move your ass! Let's move it! Get it going!
+Dialogue: 0,0:26:38.29,0:26:39.32,CHT,,0,0,0,!Effect,快跑\N{\rENG}Let's go.
+Dialogue: 0,0:26:41.56,0:26:42.55,CHT,,0,0,0,!Effect,快跑\N{\rENG}Let's go.
+Dialogue: 0,0:26:42.80,0:26:44.09,CHT,,0,0,0,!Effect,讓他們回來\N{\rENG}Bring them back.
+Dialogue: 0,0:26:44.16,0:26:47.13,CHT,,0,0,0,!Effect,- 回來 - 快跑 回去\N{\rENG}- Circle back! - Let's go! Get back here!
+Dialogue: 0,0:26:47.20,0:26:48.53,CHT,,0,0,0,!Effect,- 回來站隊 - 快點\N{\rENG}- Get back in line! - Let's move!
+Dialogue: 0,0:26:48.60,0:26:50.37,CHT,,0,0,0,!Effect,- 站好隊 - 快跑 快 快\N{\rENG}- Back in formation. - Let's move, move, move!
+Dialogue: 0,0:26:50.44,0:26:52.34,CHT,,0,0,0,!Effect,站好隊\N{\rENG}Back in formation.
+Dialogue: 0,0:26:53.41,0:26:55.93,CHT,,0,0,0,!Effect,俯臥撐姿勢 二級軍士長來檢查\N{\rENG}Lean and rest. Senior Chief on deck.
+Dialogue: 0,0:27:30.28,0:27:31.54,CHT,,0,0,0,!Effect,起來\N{\rENG}Pop tall.
+Dialogue: 0,0:27:32.81,0:27:33.84,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah!
+Dialogue: 0,0:27:34.48,0:27:36.31,CHT,,0,0,0,!Effect,我不在乎你是誰\N{\rENG}I don't care who you are,
+Dialogue: 0,0:27:36.58,0:27:38.52,CHT,,0,0,0,!Effect,從哪來 到哪去\N{\rENG}where you are from or where you are going.
+Dialogue: 0,0:27:38.59,0:27:40.52,CHT,,0,0,0,!Effect,我只在乎一件事\N{\rENG}I care about one thing and one thing only.
+Dialogue: 0,0:27:40.59,0:27:43.58,CHT,,0,0,0,!Effect,就是將來要求你們救的人\N{\rENG}That is the future victims that you will be asked to save.
+Dialogue: 0,0:27:43.66,0:27:47.42,CHT,,0,0,0,!Effect,如果我覺得你救不了他們 我就會開除你 懂了嗎?\N{\rENG}If I feel that you will fail them, I will fail you, understood?
+Dialogue: 0,0:27:47.49,0:27:49.79,CHT,,0,0,0,!Effect,明白 二級軍士長\N{\rENG}Yes, Senior Chief!
+Dialogue: 0,0:27:51.90,0:27:54.60,CHT,,0,0,0,!Effect,霍吉 你從哪來?\N{\rENG}Hodge. Where are you from, Hodge?
+Dialogue: 0,0:27:54.67,0:27:56.86,CHT,,0,0,0,!Effect,我來自新澤西州提奈克 二級軍士長!\N{\rENG}I'm from Teaneck, New Jersey, Senior Chief!
+Dialogue: 0,0:27:56.94,0:27:59.03,CHT,,0,0,0,!Effect,霍吉這是第三次嘗試了\N{\rENG}Hodge is our triple repeat.
+Dialogue: 0,0:27:59.87,0:28:02.34,CHT,,0,0,0,!Effect,你這回打算通過嗎? 三進宮?\N{\rENG}Do you plan on making it this time, threepeat?
+Dialogue: 0,0:28:02.41,0:28:03.67,CHT,,0,0,0,!Effect,我真的希望可以 二級軍士長\N{\rENG}I really hope to, Senior Chief.
+Dialogue: 0,0:28:03.74,0:28:05.58,CHT,,0,0,0,!Effect,好 不過 希望不能讓你浮起來 霍吉\N{\rENG}Yeah, well, hope don't float, Hodge.
+Dialogue: 0,0:28:05.65,0:28:08.67,CHT,,0,0,0,!Effect,你最好開始學習逆流而遊而不是順流而下\N{\rENG}You better start to learn to swim against the current and not with it.
+Dialogue: 0,0:28:08.75,0:28:10.65,CHT,,0,0,0,!Effect,遵命 二級軍士長\N{\rENG}Aye, aye, Senior Chief.
+Dialogue: 0,0:28:11.42,0:28:12.68,CHT,,0,0,0,!Effect,費舍\N{\rENG}Fisch.
+Dialogue: 0,0:28:14.05,0:28:16.39,CHT,,0,0,0,!Effect,費舍 你為什麼要來?\N{\rENG}Fisch. Why are you here, Fisch?
+Dialogue: 0,0:28:16.96,0:28:19.86,CHT,,0,0,0,!Effect,我要來超出你的預期 二級軍士長\N{\rENG}I'm here to exceed your expectations, Senior Chief.
+Dialogue: 0,0:28:19.93,0:28:23.45,CHT,,0,0,0,!Effect,我從心底就是救生員 生來如此 水中長大 烏拉\N{\rENG}I'm a rescue swimmer at heart, born, bred and water-fed. Oorah!
+Dialogue: 0,0:28:24.33,0:28:26.99,CHT,,0,0,0,!Effect,哇 我猜你整個早上都在練這個吧\N{\rENG}Wow. I bet you practiced that all morning.
+Dialogue: 0,0:28:28.14,0:28:30.23,CHT,,0,0,0,!Effect,費舍爾是高中游泳冠軍\N{\rENG}Mr. Fischer is our high school swim champ.
+Dialogue: 0,0:28:30.30,0:28:33.10,CHT,,0,0,0,!Effect,他拿到了常春藤所有學校的獎學金\N{\rENG}He's had scholarships to every lvy League.
+Dialogue: 0,0:28:33.54,0:28:37.10,CHT,,0,0,0,!Effect,哦 對不起 我沒意識到他這麼合格\N{\rENG}Oh, I'm sorry. I didn't realize that he was so qualified.
+Dialogue: 0,0:28:37.31,0:28:39.78,CHT,,0,0,0,!Effect,我是說 你在池子裡創造記錄嗎?\N{\rENG}I mean, you set records in a pool?
+Dialogue: 0,0:28:40.61,0:28:41.67,CHT,,0,0,0,!Effect,太棒了\N{\rENG}That's amazing.
+Dialogue: 0,0:28:41.75,0:28:45.48,CHT,,0,0,0,!Effect,我猜最深的地方大概有八尺深吧?\N{\rENG}I'll bet it was like, what, eight feet deep in the deep end?
+Dialogue: 0,0:28:47.02,0:28:49.22,CHT,,0,0,0,!Effect,要是你的鼻塞不起作用怎麼辦?\N{\rENG}What if your nose plug didn't work?
+Dialogue: 0,0:28:49.29,0:28:52.38,CHT,,0,0,0,!Effect,如果其他救生員占了你的泳道呢?\N{\rENG}What if another swimmer had cut into your lane?
+Dialogue: 0,0:28:55.80,0:28:58.92,CHT,,0,0,0,!Effect,看在上帝份上 你可能會死的\N{\rENG}For the love of God, you could have been killed.
+Dialogue: 0,0:29:00.27,0:29:03.20,CHT,,0,0,0,!Effect,你們日程上安排你們今早進行體力測試\N{\rENG}Your schedule says that you will perform a PT test this morning.
+Dialogue: 0,0:29:03.27,0:29:05.14,CHT,,0,0,0,!Effect,這沒有必要\N{\rENG}That will not be necessary.
+Dialogue: 0,0:29:05.21,0:29:07.87,CHT,,0,0,0,!Effect,你們被召來在水中服役\N{\rENG}Water is where you've been called to serve.
+Dialogue: 0,0:29:07.94,0:29:09.81,CHT,,0,0,0,!Effect,那你們就在水裡測試好了\N{\rENG}Water is where you will be tested.
+Dialogue: 0,0:29:14.98,0:29:17.71,CHT,,0,0,0,!Effect,這將替代你們的體力測試\N{\rENG}This will serve in place of your PT in-test.
+Dialogue: 0,0:29:17.78,0:29:20.34,CHT,,0,0,0,!Effect,考試結果只有通過或不通過\N{\rENG}This is a golno-go exercise.
+Dialogue: 0,0:29:21.72,0:29:24.19,CHT,,0,0,0,!Effect,你們要踩水一個小時\N{\rENG}You will tread water for one hour.
+Dialogue: 0,0:29:24.49,0:29:28.83,CHT,,0,0,0,!Effect,你碰了牆 不通過 碰了底 不通過\N{\rENG}You touch the wall, you fail. You touch the bottom, you fail.
+Dialogue: 0,0:29:28.90,0:29:30.92,CHT,,0,0,0,!Effect,不通過就回家\N{\rENG}You fail and you go home.
+Dialogue: 0,0:29:31.83,0:29:35.00,CHT,,0,0,0,!Effect,軍士長 本校執行的是兩次不通過制度\N{\rENG}Senior, this school operates on a two-challenge rule.
+Dialogue: 0,0:29:35.07,0:29:37.09,CHT,,0,0,0,!Effect,你不能第一天就開除人啊\N{\rENG}You can't throw them out on their first day.
+Dialogue: 0,0:29:37.17,0:29:39.20,CHT,,0,0,0,!Effect,如果你在暖水池都撐不過去\N{\rENG}If you cannot survive in a warm pool of water,
+Dialogue: 0,0:29:39.27,0:29:42.64,CHT,,0,0,0,!Effect,這就沒你什麼事了 全班明白了嗎?\N{\rENG}then you have no business being here. Does this class understand?
+Dialogue: 0,0:29:42.71,0:29:44.01,CHT,,0,0,0,!Effect,明白 二級軍士長\N{\rENG}Yes, Senior Chief!
+Dialogue: 0,0:29:44.08,0:29:46.07,CHT,,0,0,0,!Effect,烏拉 5506班\N{\rENG}Oorah, Class 5506.
+Dialogue: 0,0:29:46.15,0:29:48.84,CHT,,0,0,0,!Effect,誰能告訴我救生員的座右銘\N{\rENG}Now, who here can tell me the rescue swimmer's motto?
+Dialogue: 0,0:29:48.92,0:29:50.75,CHT,,0,0,0,!Effect,"捨己為人" 二級軍士長\N{\rENG}"So others may live," Senior Chief!
+Dialogue: 0,0:29:50.82,0:29:53.31,CHT,,0,0,0,!Effect,喔 我覺得安全點了\N{\rENG}Oh, I feel safer already.
+Dialogue: 0,0:29:53.39,0:29:56.48,CHT,,0,0,0,!Effect,你願意犧牲自己讓他人活下去嗎? 金魚?\N{\rENG}You willing to sacrifice your life so others may live, Goldfish?
+Dialogue: 0,0:29:56.56,0:29:58.42,CHT,,0,0,0,!Effect,是的 二級軍士長\N{\rENG}Yes, I am, Senior Chief.
+Dialogue: 0,0:29:58.49,0:30:03.02,CHT,,0,0,0,!Effect,那你得正確努力 我要你們所有人都好好想想這個\N{\rENG}You will have to earn that right. I want all of you to think about that.
+Dialogue: 0,0:30:04.43,0:30:06.59,CHT,,0,0,0,!Effect,總有這樣的時候\N{\rENG}There's going to come a time
+Dialogue: 0,0:30:07.27,0:30:11.07,CHT,,0,0,0,!Effect,你們會筋疲力盡 想要放棄了\N{\rENG}when you reach the point of exhaustion and you wanna give up.
+Dialogue: 0,0:30:11.54,0:30:14.53,CHT,,0,0,0,!Effect,問題是 你們會不會\N{\rENG}Question is, will you?
+Dialogue: 0,0:30:25.45,0:30:28.44,CHT,,0,0,0,!Effect,有三個字母能讓你解脫\N{\rENG}There are three letters that will set you free.
+Dialogue: 0,0:30:28.52,0:30:31.96,CHT,,0,0,0,!Effect,DOR 自願退出\N{\rENG}DOR. Drop on Request.
+Dialogue: 0,0:30:49.81,0:30:50.80,CHT,,0,0,0,!Effect,看看那\N{\rENG}Look at that.
+Dialogue: 0,0:30:52.55,0:30:54.07,CHT,,0,0,0,!Effect,浪費時間\N{\rENG}Waste of time.
+Dialogue: 0,0:31:01.89,0:31:04.52,CHT,,0,0,0,!Effect,- 你還好嗎? - 嘿 加油 待在上面\N{\rENG}- You all right? - Hey. Come on, stay up.
+Dialogue: 0,0:31:13.77,0:31:15.20,CHT,,0,0,0,!Effect,誰幫幫他\N{\rENG}Somebody help him out.
+Dialogue: 0,0:31:16.97,0:31:18.94,CHT,,0,0,0,!Effect,嘿 他沉下去了\N{\rENG}Hey, he's going under, man!
+Dialogue: 0,0:31:20.04,0:31:21.37,CHT,,0,0,0,!Effect,幫幫他\N{\rENG}Help him out.
+Dialogue: 0,0:31:22.04,0:31:23.51,CHT,,0,0,0,!Effect,快啊\N{\rENG}Come on!
+Dialogue: 0,0:31:27.75,0:31:29.74,CHT,,0,0,0,!Effect,- 幫幫他 - 幫幫他\N{\rENG}- Help him out. - Help him out!
+Dialogue: 0,0:31:41.03,0:31:42.72,CHT,,0,0,0,!Effect,嘿 放鬆點 夥計\N{\rENG}Guys, relax, man!
+Dialogue: 0,0:31:43.43,0:31:44.73,CHT,,0,0,0,!Effect,加油啊\N{\rENG}Come on.
+Dialogue: 0,0:31:46.80,0:31:48.29,CHT,,0,0,0,!Effect,加油\N{\rENG}Come on, man.
+Dialogue: 0,0:31:48.70,0:31:50.33,CHT,,0,0,0,!Effect,你被開除了\N{\rENG}You're dismissed.
+Dialogue: 0,0:31:51.10,0:31:53.63,CHT,,0,0,0,!Effect,- 我肌肉痙攣了 - 你死了\N{\rENG}- I cramped up. - You're gone.
+Dialogue: 0,0:31:55.01,0:31:56.64,CHT,,0,0,0,!Effect,走吧 里昂 出來 快點\N{\rENG}Let's go, Lyons, out of the water. Hurry up.
+Dialogue: 0,0:31:56.71,0:31:58.74,CHT,,0,0,0,!Effect,- 快點 - 快點\N{\rENG}- Let's go. - Let's go.
+Dialogue: 0,0:32:00.51,0:32:02.00,CHT,,0,0,0,!Effect,站起來\N{\rENG}On your feet.
+Dialogue: 0,0:32:02.95,0:32:07.78,CHT,,0,0,0,!Effect,物理學第一課 各位: 有肌肉並不會浮起來\N{\rENG}muscle does not float.
+Dialogue: 0,0:32:09.82,0:32:12.26,CHT,,0,0,0,!Effect,沃特森上士 讓他們出池子\N{\rENG}Petty Officer Watson, pull them out of the pool.
+Dialogue: 0,0:32:12.33,0:32:13.49,CHT,,0,0,0,!Effect,遵命 二級軍士長\N{\rENG}Aye, aye, Senior Chief.
+Dialogue: 0,0:32:13.56,0:32:14.79,CHT,,0,0,0,!Effect,快點 出池子\N{\rENG}Let's go, people, out of the water.
+Dialogue: 0,0:32:16.03,0:32:17.26,CHT,,0,0,0,!Effect,快點 動起來\N{\rENG}Hurry up! Let's move, people!
+Dialogue: 0,0:32:17.33,0:32:19.56,CHT,,0,0,0,!Effect,快點 快點\N{\rENG}Hurry up! Hurry up!
+Dialogue: 0,0:32:19.63,0:32:21.60,CHT,,0,0,0,!Effect,版主 來這\N{\rENG}Class leader, right here.
+Dialogue: 0,0:32:26.47,0:32:30.07,CHT,,0,0,0,!Effect,我以為你說你願意犧牲自己救他人的\N{\rENG}I thought you said you were willing to sacrifice your life for another.
+Dialogue: 0,0:32:30.98,0:32:32.64,CHT,,0,0,0,!Effect,是的 二級軍士長\N{\rENG}I am, Senior Chief.
+Dialogue: 0,0:32:32.71,0:32:34.27,CHT,,0,0,0,!Effect,那他向你求救時 幹嘛不救自己的隊友\N{\rENG}Then why didn't you save your teammate
+Dialogue: 0,0:32:34.35,0:32:36.47,CHT,,0,0,0,!Effect,\Nwhen he reached out for you?
+Dialogue: 0,0:32:38.89,0:32:42.34,CHT,,0,0,0,!Effect,我沒意識到我們是整隊合作的 二級軍士長\N{\rENG}I wasn't aware we were working as a team, Senior Chief.
+Dialogue: 0,0:32:42.92,0:32:45.62,CHT,,0,0,0,!Effect,這是我們唯一的工作方式 游泳冠軍\N{\rENG}That's the only way we work, swim champ.
+Dialogue: 0,0:32:49.16,0:32:51.10,CHT,,0,0,0,!Effect,明白 二級軍士長\N{\rENG}Aye, aye, Senior Chief.
+Dialogue: 0,0:33:03.21,0:33:04.54,CHT,,0,0,0,!Effect,混蛋\N{\rENG}Asshole.
+Dialogue: 0,0:33:04.61,0:33:06.74,CHT,,0,0,0,!Effect,- 再說一遍 - 你聽見我說的了\N{\rENG}- Come again? - You heard me.
+Dialogue: 0,0:33:06.81,0:33:09.18,CHT,,0,0,0,!Effect,嘿 嘿 別動手\N{\rENG}Hey, hey, hey! Ease up! Ease up!
+Dialogue: 0,0:33:10.12,0:33:11.64,CHT,,0,0,0,!Effect,- 不值得 - 別\N{\rENG}- It's not worth it. - Come on.
+Dialogue: 0,0:33:11.72,0:33:14.24,CHT,,0,0,0,!Effect,有個好消息 里昂 我的浮標維護船上有個空缺\N{\rENG}Good news, Lyons. I think there's an opening on my buoy tender.
+Dialogue: 0,0:33:14.32,0:33:16.62,CHT,,0,0,0,!Effect,我幫你推薦一下吧\N{\rENG}I'll put in a word for you, huh?
+Dialogue: 0,0:33:19.16,0:33:21.46,CHT,,0,0,0,!Effect,我會懷念那傢伙的\N{\rENG}I'm really gonna miss that guy.
+Dialogue: 0,0:33:27.20,0:33:30.50,CHT,,0,0,0,!Effect,- 嘿 夥計 你幹嘛? - 你得回自己的鋪位了\N{\rENG}- Hey, man, what are you doing? - Got your bunk back.
+Dialogue: 0,0:33:37.08,0:33:39.24,CHT,,0,0,0,!Effect,- 上校 - 本 進來\N{\rENG}- Captain. - Ben. Come in.
+Dialogue: 0,0:33:39.98,0:33:41.38,CHT,,0,0,0,!Effect,你幹的太快了\N{\rENG}You work fast.
+Dialogue: 0,0:33:41.45,0:33:44.18,CHT,,0,0,0,!Effect,里昂是我們最佳候選人之一\N{\rENG}Lyons, he was one of our top candidates.
+Dialogue: 0,0:33:45.09,0:33:47.49,CHT,,0,0,0,!Effect,有時你還得射殺人質呢\N{\rENG}Sometimes you gotta shoot a hostage.
+Dialogue: 0,0:33:47.55,0:33:50.96,CHT,,0,0,0,!Effect,嘿 我們都知道你是傳奇人物\N{\rENG}Look, we all know that you're a legend and all,
+Dialogue: 0,0:33:51.99,0:33:54.59,CHT,,0,0,0,!Effect,但我們的課程已經被證實很有效果\N{\rENG}but our program has been proven to work.
+Dialogue: 0,0:33:54.66,0:33:57.79,CHT,,0,0,0,!Effect,訓練和實際之間是有差距的 狂犬\N{\rENG}There's a gap between training and what really happens out there, Cujo.
+Dialogue: 0,0:33:57.86,0:33:59.26,CHT,,0,0,0,!Effect,- 哦 真的? - 沒錯\N{\rENG}- Oh, really? - That's right.
+Dialogue: 0,0:33:59.33,0:34:00.77,CHT,,0,0,0,!Effect,我的目的就是要縮小這個差距\N{\rENG}My intention is to narrow that gap.
+Dialogue: 0,0:34:00.83,0:34:03.83,CHT,,0,0,0,!Effect,如果有誰有不同意見\N{\rENG}Now, if someone has a problem with that idea,
+Dialogue: 0,0:34:04.50,0:34:06.53,CHT,,0,0,0,!Effect,我洗耳恭聽\N{\rENG}I'd like to hear about it.
+Dialogue: 0,0:34:11.01,0:34:13.31,CHT,,0,0,0,!Effect,這就是我們要做的嗎? 長官\N{\rENG}Is this how it's gonna be, sir?
+Dialogue: 0,0:34:16.15,0:34:17.51,CHT,,0,0,0,!Effect,沒錯\N{\rENG}Yes, it is.
+Dialogue: 0,0:34:18.85,0:34:22.05,CHT,,0,0,0,!Effect,- 請求離開 長官 - 批准\N{\rENG}- Permission to be dismissed, sir? - Granted.
+Dialogue: 0,0:34:28.60,0:34:31.59,CHT,,0,0,0,!Effect,快走 快走 靠緊\N{\rENG}Let's go. Let's go. Keep it together. Look tight!
+Dialogue: 0,0:34:31.67,0:34:33.53,CHT,,0,0,0,!Effect,靠緊 快走 動起來\N{\rENG}Keep it together. Let's go. Let's move.
+Dialogue: 0,0:34:33.60,0:34:37.23,CHT,,0,0,0,!Effect,你們有三分鐘穿好裝備 全部裝備\N{\rENG}You've got three minutes to get this gear on. All of it.
+Dialogue: 0,0:34:37.60,0:34:38.90,CHT,,0,0,0,!Effect,預備 開始\N{\rENG}Set! Go!
+Dialogue: 0,0:34:42.48,0:34:43.46,CHT,,0,0,0,!Effect,快\N{\rENG}Let's go.
+Dialogue: 0,0:34:47.91,0:34:49.51,CHT,,0,0,0,!Effect,準備好了嗎?\N{\rENG}Are you ready?
+Dialogue: 0,0:34:54.82,0:34:56.62,CHT,,0,0,0,!Effect,加油 救生員\N{\rENG}Come on, rescue swimmer!
+Dialogue: 0,0:34:59.03,0:35:00.39,CHT,,0,0,0,!Effect,別放棄\N{\rENG}Don't quit on me.
+Dialogue: 0,0:35:15.94,0:35:17.77,CHT,,0,0,0,!Effect,聽見了嗎?\N{\rENG}Do you hear me?
+Dialogue: 0,0:35:17.84,0:35:19.24,CHT,,0,0,0,!Effect,聽見了嗎?\N{\rENG}Do you hear me?
+Dialogue: 0,0:35:19.51,0:35:23.07,CHT,,0,0,0,!Effect,起來 起來\N{\rENG}Pop tall! Pop tall! Pop tall!
+Dialogue: 0,0:35:25.85,0:35:30.59,CHT,,0,0,0,!Effect,如果你犯了個錯 就認錯 吸取教訓繼續\N{\rENG}If you make a mistake, just fess up to it. Take your licks and we'll press on.
+Dialogue: 0,0:35:30.86,0:35:34.35,CHT,,0,0,0,!Effect,每個人都會為笨嘴付出代價\N{\rENG}Everybody now is gonna pay for your potty mouth.
+Dialogue: 0,0:35:34.43,0:35:37.52,CHT,,0,0,0,!Effect,- 下 上 - 一\N{\rENG}- Down. Up. - One!
+Dialogue: 0,0:35:37.60,0:35:38.76,CHT,,0,0,0,!Effect,下\N{\rENG}Down.
+Dialogue: 0,0:35:38.83,0:35:40.09,CHT,,0,0,0,!Effect,- 上 - 三\N{\rENG}- Up. - Three!
+Dialogue: 0,0:35:40.17,0:35:41.57,CHT,,0,0,0,!Effect,下 上\N{\rENG}Down. Up.
+Dialogue: 0,0:35:41.64,0:35:43.33,CHT,,0,0,0,!Effect,五 六\N{\rENG}Five! Six!
+Dialogue: 0,0:35:43.40,0:35:45.00,CHT,,0,0,0,!Effect,- 繼續 - 七\N{\rENG}- Forward. - Seven!
+Dialogue: 0,0:35:48.98,0:35:50.24,CHT,,0,0,0,!Effect,你瘋了嗎?\N{\rENG}Are you crazy?
+Dialogue: 0,0:35:50.44,0:35:52.14,CHT,,0,0,0,!Effect,我是指揮官 起來\N{\rENG}I'm the commander! Get up!
+Dialogue: 0,0:35:52.21,0:35:54.68,CHT,,0,0,0,!Effect,- 烏拉 - 趴下 趴下\N{\rENG}- Oorah! - Get down! Get down!
+Dialogue: 0,0:35:55.58,0:35:56.61,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah!
+Dialogue: 0,0:36:04.19,0:36:05.18,CHT,,0,0,0,!Effect,下去\N{\rENG}Go.
+Dialogue: 0,0:36:19.54,0:36:20.53,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah.
+Dialogue: 0,0:36:22.28,0:36:23.26,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah.
+Dialogue: 0,0:36:23.68,0:36:24.67,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah!
+Dialogue: 0,0:36:43.93,0:36:46.40,CHT,,0,0,0,!Effect,氯氣中毒會死嗎?\N{\rENG}Can you die from chlorine poisoning?
+Dialogue: 0,0:36:46.70,0:36:49.23,CHT,,0,0,0,!Effect,我都感覺不到自己的腿了 我是說真的\N{\rENG}I can't feel my legs. I'm serious.
+Dialogue: 0,0:36:50.27,0:36:52.67,CHT,,0,0,0,!Effect,我不知道你們怎樣 但是我感覺不錯\N{\rENG}I don't know about you guys, but I feel good.
+Dialogue: 0,0:36:52.74,0:36:55.80,CHT,,0,0,0,!Effect,這個叫朗道的 完全不按規矩來\N{\rENG}This Randall guy, he's operating on some whole other cylinder.
+Dialogue: 0,0:36:55.88,0:36:58.87,CHT,,0,0,0,!Effect,這算啥 兩個星期 他差不多都開除了一半人了\N{\rENG}What is it, two weeks, and he's failed almost half the class already?
+Dialogue: 0,0:36:58.95,0:37:00.34,CHT,,0,0,0,!Effect,他是傳奇人物\N{\rENG}He's a legend.
+Dialogue: 0,0:37:00.41,0:37:02.24,CHT,,0,0,0,!Effect,他們說他救過兩百多人\N{\rENG}They say he's got something like 200 saves.
+Dialogue: 0,0:37:02.32,0:37:04.08,CHT,,0,0,0,!Effect,我聽說是三百\N{\rENG}I heard it was 300.
+Dialogue: 0,0:37:04.15,0:37:06.14,CHT,,0,0,0,!Effect,誰管他救過多少?\N{\rENG}Who cares what his number is?
+Dialogue: 0,0:37:06.22,0:37:08.69,CHT,,0,0,0,!Effect,他要是這麼牛 來這幹嘛\N{\rENG}If he's such a stud, what's he doing here?
+Dialogue: 0,0:37:08.76,0:37:10.38,CHT,,0,0,0,!Effect,大家感覺如何啊\N{\rENG}How we feeling, boys?
+Dialogue: 0,0:37:10.99,0:37:12.39,CHT,,0,0,0,!Effect,嘿 Z 你要去哪?\N{\rENG}Hey, Z, where you going?
+Dialogue: 0,0:37:12.46,0:37:15.33,CHT,,0,0,0,!Effect,我姐姐最好的朋友要結婚了\N{\rENG}My sister's best friend is getting married,
+Dialogue: 0,0:37:15.40,0:37:17.26,CHT,,0,0,0,!Effect,他們要在城裡搞個大儀式\N{\rENG}and they're having a big reception downtown.
+Dialogue: 0,0:37:17.33,0:37:19.20,CHT,,0,0,0,!Effect,我答應她我會去的\N{\rENG}I promised her I'd go.
+Dialogue: 0,0:37:19.87,0:37:22.10,CHT,,0,0,0,!Effect,等等 你是說結婚典禮?\N{\rENG}Wait, you said wedding reception?
+Dialogue: 0,0:37:40.92,0:37:42.62,CHT,,0,0,0,!Effect,- 恭喜 - 謝謝\N{\rENG}- Congratulations. - Thanks.
+Dialogue: 0,0:37:42.69,0:37:43.68,CHT,,0,0,0,!Effect,嗨\N{\rENG}Hi.
+Dialogue: 0,0:37:43.96,0:37:45.79,CHT,,0,0,0,!Effect,- 恭喜 - 嗨\N{\rENG}- Congratulations. - Hi.
+Dialogue: 0,0:37:45.86,0:37:46.85,CHT,,0,0,0,!Effect,很高興見到你\N{\rENG}Nice to meet you.
+Dialogue: 0,0:37:47.26,0:37:51.70,CHT,,0,0,0,!Effect,是的 阿拉斯加州科迪亞克 海倫·朗道的號碼\N{\rENG}Yes, Kodiak, Alaska. The number for Helen Randall.
+Dialogue: 0,0:37:55.50,0:37:57.94,CHT,,0,0,0,!Effect,好 那試試海倫·佛裡曼\N{\rENG}Okay, try Helen Freeman.
+Dialogue: 0,0:38:00.81,0:38:02.21,CHT,,0,0,0,!Effect,沒錯\N{\rENG}You betcha.
+Dialogue: 0,0:38:08.35,0:38:10.82,CHT,,0,0,0,!Effect,我是海倫 請留言\N{\rENG}Hi, you've reached Helen. Leave a message.
+Dialogue: 0,0:38:11.72,0:38:14.38,CHT,,0,0,0,!Effect,海倫 我是本 天 這太奇怪了\N{\rENG}Helen, it's Ben. Jesus, that was weird.
+Dialogue: 0,0:38:14.95,0:38:18.41,CHT,,0,0,0,!Effect,從我們長大就沒用過你的娘家姓\N{\rENG}Haven't had to use your maiden name since we were kids.
+Dialogue: 0,0:38:18.96,0:38:22.42,CHT,,0,0,0,!Effect,海倫 如果你在 請接我電話 我們得談談\N{\rENG}Helen, if you're there, just pick up. We need to talk.
+Dialogue: 0,0:38:26.13,0:38:27.12,CHT,,0,0,0,!Effect,求你了\N{\rENG}Please.
+Dialogue: 0,0:38:39.55,0:38:41.34,CHT,,0,0,0,!Effect,好吧 好吧\N{\rENG}All right. All right.
+Dialogue: 0,0:38:41.98,0:38:45.38,CHT,,0,0,0,!Effect,敬失敗者 敬通過第一階段測試的\N{\rENG}To those who have fallen, to those who have survived Phase 1.
+Dialogue: 0,0:38:45.45,0:38:47.25,CHT,,0,0,0,!Effect,- 乾杯 - 乾杯\N{\rENG}- Cheers. - Cheers.
+Dialogue: 0,0:38:47.32,0:38:50.55,CHT,,0,0,0,!Effect,- 烏拉 烏拉 烏拉 - 各位 這太棒了\N{\rENG}- Oorah, oorah, oorah. - Guys, this is great.
+Dialogue: 0,0:38:50.62,0:38:55.25,CHT,,0,0,0,!Effect,敬我們的女神琳茜 你任何時候都可以救我\N{\rENG}And to our gal Lindsey. You can rescue me anytime.
+Dialogue: 0,0:38:55.80,0:38:57.66,CHT,,0,0,0,!Effect,- 他真說了? - 你沒說過\N{\rENG}- Did he just say that? - You did not just say that.
+Dialogue: 0,0:38:57.73,0:38:59.46,CHT,,0,0,0,!Effect,- 他真說了? - 你沒說過\N{\rENG}- Did he just say that? - You did not just say that.
+Dialogue: 0,0:38:59.53,0:39:03.47,CHT,,0,0,0,!Effect,你知道嗎 杜倫 我覺得我可能會讓你淹死\N{\rENG}You know what, Doran? You, I think I might actually let drown.
+Dialogue: 0,0:39:04.04,0:39:05.77,CHT,,0,0,0,!Effect,喔\N{\rENG}Oh!
+Dialogue: 0,0:39:14.98,0:39:16.74,CHT,,0,0,0,!Effect,嘿 二級軍士長\N{\rENG}Hey, Senior Chief.
+Dialogue: 0,0:39:18.22,0:39:20.28,CHT,,0,0,0,!Effect,本 她今晚很辣啊\N{\rENG}Ben, she's hot tonight.
+Dialogue: 0,0:39:26.99,0:39:28.98,CHT,,0,0,0,!Effect,這地方沒變\N{\rENG}This place has not changed.
+Dialogue: 0,0:39:33.33,0:39:35.89,CHT,,0,0,0,!Effect,- 來自阿拉斯加州科迪亞克 - 別\N{\rENG}- From Kodiak, Alaska... - Don't.
+Dialogue: 0,0:39:35.97,0:39:39.60,CHT,,0,0,0,!Effect,二級軍士長本·朗道\N{\rENG}... Senior Chief Ben Randall is in the house,
+Dialogue: 0,0:39:39.67,0:39:42.04,CHT,,0,0,0,!Effect,平安無事 還活著\N{\rENG}big as day and still alive.
+Dialogue: 0,0:39:42.11,0:39:44.34,CHT,,0,0,0,!Effect,我一定欠了誰錢了\N{\rENG}I must owe somebody money.
+Dialogue: 0,0:39:45.95,0:39:48.38,CHT,,0,0,0,!Effect,- 你太壞了 - 哦 本\N{\rENG}- You're terrible. - Oh, Ben.
+Dialogue: 0,0:39:50.02,0:39:53.14,CHT,,0,0,0,!Effect,有謠言說你要在城裡教書啊\N{\rENG}I heard a rumor you were gonna be teaching here in town.
+Dialogue: 0,0:39:53.22,0:39:56.48,CHT,,0,0,0,!Effect,這要不是命運 我都不知道還能是什麼\N{\rENG}If that ain't the karmic wheel spinning, I don't know what is.
+Dialogue: 0,0:39:57.29,0:40:01.23,CHT,,0,0,0,!Effect,好啦 敬回頭的浪子\N{\rENG}Well. To the prodigal's return.
+Dialogue: 0,0:40:02.10,0:40:05.90,CHT,,0,0,0,!Effect,- 你的另一半呢? - 她決定待在家\N{\rENG}- Where's your better half? - She decided to stay home.
+Dialogue: 0,0:40:06.63,0:40:08.79,CHT,,0,0,0,!Effect,- 哦 - 工作的事情\N{\rENG}- Oh. - Work stuff.
+Dialogue: 0,0:40:09.67,0:40:14.13,CHT,,0,0,0,!Effect,是啊 科迪亞克的冬天 讓我看看 路易士安娜的冬天\N{\rENG}Yeah. Winter in Kodiak. Let me see. Winter in Louisiana.
+Dialogue: 0,0:40:14.21,0:40:16.70,CHT,,0,0,0,!Effect,- 好啦 別說了 - 她決定待在家\N{\rENG}- All right, stop. Stop. - "She decided to stay home."
+Dialogue: 0,0:40:17.88,0:40:20.97,CHT,,0,0,0,!Effect,好事情是我們還有整瓶酒和半個晚上\N{\rENG}Well, it's a good thing we got a full bottle and half the night.
+Dialogue: 0,0:40:21.05,0:40:22.45,CHT,,0,0,0,!Effect,沒錯\N{\rENG}Yes, we do.
+Dialogue: 0,0:40:25.18,0:40:27.95,CHT,,0,0,0,!Effect,看看 她盯著你看呢\N{\rENG}Check it out. She's staring at you.
+Dialogue: 0,0:40:28.69,0:40:30.35,CHT,,0,0,0,!Effect,那個女孩沒盯著我看\N{\rENG}That girl right there is not staring at me.
+Dialogue: 0,0:40:30.42,0:40:32.22,CHT,,0,0,0,!Effect,你用手指她了\N{\rENG}Did you just point at her?
+Dialogue: 0,0:40:32.29,0:40:34.42,CHT,,0,0,0,!Effect,- 她看見你指她了嗎? - 我不知道\N{\rENG}- Did she see you point? - I don't know.
+Dialogue: 0,0:40:35.80,0:40:38.53,CHT,,0,0,0,!Effect,好啦 你得去跟她談談 你得主動\N{\rENG}All right, now you gotta go talk to her. You gotta go make a move.
+Dialogue: 0,0:40:38.60,0:40:40.57,CHT,,0,0,0,!Effect,- 沒錯 - 我不行\N{\rENG}- Yeah. - I can't.
+Dialogue: 0,0:40:40.63,0:40:43.57,CHT,,0,0,0,!Effect,我現在不想和女人聊天\N{\rENG}I just don't feel comfortable right now talking to women.
+Dialogue: 0,0:40:43.64,0:40:45.57,CHT,,0,0,0,!Effect,你想告訴我你願意跳出直升機\N{\rENG}You're telling me you wanna jump out of helicopters
+Dialogue: 0,0:40:45.64,0:40:46.97,CHT,,0,0,0,!Effect,- 去救人 - 你和我聊了\N{\rENG}- for a living... - You're talking to me.
+Dialogue: 0,0:40:47.04,0:40:48.37,CHT,,0,0,0,!Effect,但不願意和女孩聊天?\N{\rENG}...but you can't go talk to a girl?
+Dialogue: 0,0:40:48.44,0:40:51.10,CHT,,0,0,0,!Effect,- 沒錯 這就是我想說的 - 真能說會道啊\N{\rENG}- That's exactly what I was telling you. - You're smooth.
+Dialogue: 0,0:40:51.18,0:40:53.04,CHT,,0,0,0,!Effect,好啦 我來幫幫你\N{\rENG}All right, look, I'm gonna help you out here.
+Dialogue: 0,0:40:53.11,0:40:55.05,CHT,,0,0,0,!Effect,我給你演示一下怎麼做\N{\rENG}I'll show you how it's done.
+Dialogue: 0,0:40:55.42,0:40:58.75,CHT,,0,0,0,!Effect,找這裡最辣的妞 我會帶她回家\N{\rENG}Pick out the hottest girl in here. I'll take her home.
+Dialogue: 0,0:40:58.82,0:41:00.34,CHT,,0,0,0,!Effect,- 哦 天啊 - 好啊\N{\rENG}- Oh, gosh. - Okay.
+Dialogue: 0,0:41:00.42,0:41:03.88,CHT,,0,0,0,!Effect,- 他又來了 - 不 我來選妞如何?\N{\rENG}- Here he go, now. - No, how about I will find the girl?
+Dialogue: 0,0:41:03.99,0:41:05.12,CHT,,0,0,0,!Effect,行啊\N{\rENG}All right.
+Dialogue: 0,0:41:06.16,0:41:08.09,CHT,,0,0,0,!Effect,- 好 - 你覺得哪一個?\N{\rENG}- Okey-doke. - Who you thinking?
+Dialogue: 0,0:41:08.16,0:41:09.92,CHT,,0,0,0,!Effect,一定要辣\N{\rENG}Make sure she's hot.
+Dialogue: 0,0:41:10.96,0:41:13.02,CHT,,0,0,0,!Effect,- 你看哪呢? - 好\N{\rENG}- Where you looking? - Okay.
+Dialogue: 0,0:41:13.10,0:41:15.53,CHT,,0,0,0,!Effect,吧台那裡 兩點鐘方向\N{\rENG}At the bar. Two o'clock.
+Dialogue: 0,0:41:19.21,0:41:21.70,CHT,,0,0,0,!Effect,- 不錯 - 那個不錯\N{\rENG}- Yes. - That's a good one.
+Dialogue: 0,0:41:22.04,0:41:23.63,CHT,,0,0,0,!Effect,她不可能和你聊的\N{\rENG}There's no way in hell she's talking to you.
+Dialogue: 0,0:41:23.71,0:41:25.44,CHT,,0,0,0,!Effect,- 那一個? - 沒錯 那個\N{\rENG}- That one? - Yeah, that one.
+Dialogue: 0,0:41:25.61,0:41:28.17,CHT,,0,0,0,!Effect,我出一百美元 她一分鐘就會把你拒了\N{\rENG}Hundred bucks says she shuts you down
+Dialogue: 0,0:41:28.25,0:41:29.71,CHT,,0,0,0,!Effect,\Nin less than a minute.
+Dialogue: 0,0:41:30.58,0:41:31.64,CHT,,0,0,0,!Effect,喔\N{\rENG}Boom.
+Dialogue: 0,0:41:31.72,0:41:34.69,CHT,,0,0,0,!Effect,- 我看這好像賭注啊 傑克 - 是賭注\N{\rENG}- That looks like a bet to me, Jake. - That's a bet.
+Dialogue: 0,0:41:37.69,0:41:40.09,CHT,,0,0,0,!Effect,好啦 好啦\N{\rENG}All right. All right.
+Dialogue: 0,0:41:40.16,0:41:43.32,CHT,,0,0,0,!Effect,一百美元 我一分鐘就能把她搞上手\N{\rENG}Hundred bucks says I close in less than a minute.
+Dialogue: 0,0:41:43.40,0:41:44.95,CHT,,0,0,0,!Effect,哦 沒問題\N{\rENG}Oh, absolutely.
+Dialogue: 0,0:41:48.17,0:41:51.23,CHT,,0,0,0,!Effect,- 向你致敬 夥計 - 嘀噠 嘀噠 嘀噠\N{\rENG}- Hats off, man. - Tick-tock. Tick-tock. Tick-tock.
+Dialogue: 0,0:41:51.30,0:41:53.30,CHT,,0,0,0,!Effect,從我和她說話開始\N{\rENG}Clock starts when I talk to her.
+Dialogue: 0,0:41:53.37,0:41:54.40,CHT,,0,0,0,!Effect,沒問題\N{\rENG}That's fine.
+Dialogue: 0,0:41:54.47,0:41:55.46,CHT,,0,0,0,!Effect,絕對讓人尷尬\N{\rENG}This is gonna be embarrassing.
+Dialogue: 0,0:41:55.54,0:41:56.57,CHT,,0,0,0,!Effect,好啦 夥計\N{\rENG}All right, buddy.
+Dialogue: 0,0:41:56.64,0:41:57.90,CHT,,0,0,0,!Effect,你覺得怎樣?\N{\rENG}What do you think? What do you got?
+Dialogue: 0,0:41:57.98,0:42:00.04,CHT,,0,0,0,!Effect,- 你覺得他能做到嗎? - 是的\N{\rENG}- You think he's gonna do it? - Yeah.
+Dialogue: 0,0:42:04.62,0:42:07.21,CHT,,0,0,0,!Effect,晚安 女士 我可以給你買杯酒嗎?\N{\rENG}Evening, ma'am. Can I buy you a drink?
+Dialogue: 0,0:42:10.46,0:42:12.22,CHT,,0,0,0,!Effect,這樣不好吧\N{\rENG}I don't think so.
+Dialogue: 0,0:42:13.76,0:42:16.25,CHT,,0,0,0,!Effect,你不會知道自己錯過了什麼\N{\rENG}You don't know what you're missing.
+Dialogue: 0,0:42:20.23,0:42:22.46,CHT,,0,0,0,!Effect,你肯定要玩這套嗎?\N{\rENG}You sure you wanna go with that one?
+Dialogue: 0,0:42:22.54,0:42:25.13,CHT,,0,0,0,!Effect,說你最棒啦 什麼都玩的轉啦\N{\rENG}That's, like, your top-of-the-line, A-game material?
+Dialogue: 0,0:42:28.07,0:42:31.17,CHT,,0,0,0,!Effect,依我看 你有兩個選擇\N{\rENG}See, the way I see it, you got two choices here:
+Dialogue: 0,0:42:32.48,0:42:33.71,CHT,,0,0,0,!Effect,離開我這裡\N{\rENG}walk away from me,
+Dialogue: 0,0:42:33.78,0:42:36.25,CHT,,0,0,0,!Effect,或者和我一起離開 我們平分那錢\N{\rENG}or walk out of here with me and split the cash.
+Dialogue: 0,0:42:38.05,0:42:39.04,CHT,,0,0,0,!Effect,錢?\N{\rENG}Cash?
+Dialogue: 0,0:42:40.92,0:42:42.29,CHT,,0,0,0,!Effect,什麼錢?\N{\rENG}What cash?
+Dialogue: 0,0:42:42.36,0:42:45.69,CHT,,0,0,0,!Effect,你和你朋友賭的說你能吊到我的\N{\rENG}The money you bet your friends you could pick me up.
+Dialogue: 0,0:42:48.19,0:42:49.99,CHT,,0,0,0,!Effect,嘿 那讓我很緊張啊\N{\rENG}See, that makes me nervous.
+Dialogue: 0,0:42:50.06,0:42:51.62,CHT,,0,0,0,!Effect,她正在拒絕他呢\N{\rENG}She's shutting him down.
+Dialogue: 0,0:42:54.07,0:42:56.26,CHT,,0,0,0,!Effect,你還有多少時間?\N{\rENG}How much time you got left?
+Dialogue: 0,0:42:58.27,0:43:00.97,CHT,,0,0,0,!Effect,- 大概20秒鐘 - 走吧?\N{\rENG}- About 20 seconds. - Shall we?
+Dialogue: 0,0:43:03.88,0:43:05.34,CHT,,0,0,0,!Effect,- 哦 天啊 - 不可能\N{\rENG}- Oh, my gosh. - No way.
+Dialogue: 0,0:43:05.41,0:43:07.88,CHT,,0,0,0,!Effect,看起來他們好像要一起離開酒吧啊\N{\rENG}It looks like they're leaving the bar together, is what I see.
+Dialogue: 0,0:43:07.95,0:43:09.57,CHT,,0,0,0,!Effect,不可能\N{\rENG}No way!
+Dialogue: 0,0:43:09.65,0:43:11.14,CHT,,0,0,0,!Effect,一定是蒙我\N{\rENG}You have got to be kidding me.
+Dialogue: 0,0:43:11.22,0:43:12.71,CHT,,0,0,0,!Effect,- 難以置信 - 他怎麼做到的?\N{\rENG}- Unbelievable. - How did he do that?
+Dialogue: 0,0:43:12.79,0:43:14.81,CHT,,0,0,0,!Effect,- 我被震住了 - 我被震住了\N{\rENG}- I'm impressed. - I'm impressed.
+Dialogue: 0,0:43:15.42,0:43:18.58,CHT,,0,0,0,!Effect,你基地外面有個酒吧叫瑪姬 你知道嗎?\N{\rENG}There's a bar outside your base called Maggie's. You know it?
+Dialogue: 0,0:43:18.66,0:43:19.72,CHT,,0,0,0,!Effect,知道\N{\rENG}Yeah.
+Dialogue: 0,0:43:19.79,0:43:22.99,CHT,,0,0,0,!Effect,好 下週五8點在那見我\N{\rENG}Good. Meet me there next Friday around 8:00?
+Dialogue: 0,0:43:23.06,0:43:25.16,CHT,,0,0,0,!Effect,- 你有名字嗎? - 有\N{\rENG}- You got a name? - Yeah.
+Dialogue: 0,0:43:25.80,0:43:27.66,CHT,,0,0,0,!Effect,別忘帶我的錢\N{\rENG}Don't forget my money.
+Dialogue: 0,0:43:32.77,0:43:34.64,CHT,,0,0,0,!Effect,有中名嗎?\N{\rENG}You got a middle name?
+Dialogue: 0,0:43:37.34,0:43:40.04,CHT,,0,0,0,!Effect,你該意識到我回不去那吧\N{\rENG}You do realize I can't go back in there.
+Dialogue: 0,0:43:43.95,0:43:45.61,CHT,,0,0,0,!Effect,這是死神的敲門聲\N{\rENG}This is the sound of death knocking.
+Dialogue: 0,0:43:45.69,0:43:48.45,CHT,,0,0,0,!Effect,搜救警報和缺夢少覺是...\N{\rENG}SAR alarms and sleep deprivation are part...
+Dialogue: 0,0:43:50.49,0:43:52.46,CHT,,0,0,0,!Effect,他們到底跑哪去了?\N{\rENG}Where the hell are they?
+Dialogue: 0,0:44:04.60,0:44:08.54,CHT,,0,0,0,!Effect,知道嗎 低溫病的第一階段是最關鍵的\N{\rENG}You know, the first stages of hypothermia are the most critical.
+Dialogue: 0,0:44:08.61,0:44:09.60,CHT,,0,0,0,!Effect,為什麼\N{\rENG}Why?
+Dialogue: 0,0:44:10.54,0:44:13.57,CHT,,0,0,0,!Effect,因為你還有能力想 跟我說\N{\rENG}Because you still have the ability to think. Say it.
+Dialogue: 0,0:44:13.65,0:44:16.81,CHT,,0,0,0,!Effect,你還有能力想\N{\rENG}You still have the ability to think.
+Dialogue: 0,0:44:16.88,0:44:19.68,CHT,,0,0,0,!Effect,你在這個階段做出的決定\N{\rENG}The decisions you make during this stage
+Dialogue: 0,0:44:19.75,0:44:23.59,CHT,,0,0,0,!Effect,將決定你的生死\N{\rENG}are gonna determine whether you live or die.
+Dialogue: 0,0:44:23.79,0:44:26.05,CHT,,0,0,0,!Effect,有什麼理由你不呼吸嗎? 金魚?\N{\rENG}There a reason you're not breathing, Goldfish?
+Dialogue: 0,0:44:26.86,0:44:28.62,CHT,,0,0,0,!Effect,有什麼理由你不呼吸嗎\N{\rENG}Is there a reason why you're not breathing?
+Dialogue: 0,0:44:30.10,0:44:32.59,CHT,,0,0,0,!Effect,我不知道誰不呼吸15分鐘還能活 二級軍士長\N{\rENG}I don't know anyone who can stay alive without breathing
+Dialogue: 0,0:44:32.67,0:44:34.46,CHT,,0,0,0,!Effect,\Nfor 15 minutes, Senior Chief.
+Dialogue: 0,0:44:34.53,0:44:36.20,CHT,,0,0,0,!Effect,你是驗屍官嗎?\N{\rENG}Are you a coroner?
+Dialogue: 0,0:44:37.24,0:44:40.54,CHT,,0,0,0,!Effect,宣告他人死亡可沒在我們的工作介紹上啊\N{\rENG}Because pronouncing people dead is not part of our job description.
+Dialogue: 0,0:44:40.61,0:44:42.10,CHT,,0,0,0,!Effect,我們總說什麼?\N{\rENG}What do we always say?
+Dialogue: 0,0:44:42.18,0:44:44.64,CHT,,0,0,0,!Effect,死透了才是死\N{\rENG}There's dead and then there's dead.
+Dialogue: 0,0:44:45.81,0:44:49.37,CHT,,0,0,0,!Effect,我們從不停止 傑克 不管是機艙裡還是停機坪上\N{\rENG}We never stop, Jake, not from the cabin to the tarmac.
+Dialogue: 0,0:44:49.45,0:44:51.47,CHT,,0,0,0,!Effect,- 我們從不停止 - 明白 二級軍士長\N{\rENG}- We never stop. - Aye, aye, Senior Chief.
+Dialogue: 0,0:44:51.55,0:44:54.21,CHT,,0,0,0,!Effect,- 懂了嗎? - 懂了 二級軍士長\N{\rENG}- Understood? - Yes, Senior Chief.
+Dialogue: 0,0:44:54.29,0:44:57.09,CHT,,0,0,0,!Effect,好 傑克 回池子裡來 霍吉 你上去\N{\rENG}Okay, Jake, in the pool. Hodge, you're up.
+Dialogue: 0,0:44:57.29,0:44:58.62,CHT,,0,0,0,!Effect,你來和假人演習\N{\rENG}You're with the dummy.
+Dialogue: 0,0:45:00.66,0:45:02.86,CHT,,0,0,0,!Effect,好 現在 三個字\N{\rENG}All right, now. Three letters.
+Dialogue: 0,0:45:03.36,0:45:06.70,CHT,,0,0,0,!Effect,說那三個字你就能拿到一杯熱咖啡 還有毯子\N{\rENG}Three letters will get you people a cup of hot coffee and a blanket.
+Dialogue: 0,0:45:08.63,0:45:10.63,CHT,,0,0,0,!Effect,你怎麼說 金魚?\N{\rENG}What do you say, Goldfish?
+Dialogue: 0,0:45:11.30,0:45:13.93,CHT,,0,0,0,!Effect,其實我不那麼冷了 二級軍士長\N{\rENG}I'm actually not that cold anymore, Senior Chief.
+Dialogue: 0,0:45:14.01,0:45:17.50,CHT,,0,0,0,!Effect,你不冷了 是因為你的血在流動\N{\rENG}You're not cold anymore because blood is moving
+Dialogue: 0,0:45:17.58,0:45:19.84,CHT,,0,0,0,!Effect,從四肢流回心臟\N{\rENG}from your outer extremities to your heart.
+Dialogue: 0,0:45:19.91,0:45:22.24,CHT,,0,0,0,!Effect,因此你的胳膊動不了了\N{\rENG}That's why your arms won't work.
+Dialogue: 0,0:45:22.78,0:45:26.45,CHT,,0,0,0,!Effect,你該計畫好 你事業的60％時間\N{\rENG}You can plan on spending roughly 60% of your career
+Dialogue: 0,0:45:26.52,0:45:28.45,CHT,,0,0,0,!Effect,你將處在輕度低溫病狀態\N{\rENG}in a mildly hypothermic state.
+Dialogue: 0,0:45:28.79,0:45:31.12,CHT,,0,0,0,!Effect,二級軍士長 我可以說句話嗎?\N{\rENG}Senior Chief, may I have a word?
+Dialogue: 0,0:45:45.34,0:45:46.33,CHT,,0,0,0,!Effect,長官?\N{\rENG}Sir?
+Dialogue: 0,0:45:47.84,0:45:50.83,CHT,,0,0,0,!Effect,我怎麼沒得到通知? 我們有教室的\N{\rENG}Why wasn't I informed of this? You know, we have classrooms.
+Dialogue: 0,0:45:50.91,0:45:54.71,CHT,,0,0,0,!Effect,你的職責只是教他們低溫病的各個階段\N{\rENG}Your assignment is to simply teach the stages of hypothermia.
+Dialogue: 0,0:45:54.85,0:46:00.34,CHT,,0,0,0,!Effect,長官 再過大概兩分半 他們就會理解的\N{\rENG}Sir, in about two and a half minutes, they'll understand.
+Dialogue: 0,0:46:04.09,0:46:06.22,CHT,,0,0,0,!Effect,請求繼續 長官\N{\rENG}Permission to carry on, sir?
+Dialogue: 0,0:46:08.29,0:46:09.28,CHT,,0,0,0,!Effect,繼續吧\N{\rENG}Go ahead.
+Dialogue: 0,0:46:22.48,0:46:27.31,CHT,,0,0,0,!Effect,三個字 各位 你就能拿到一杯熱咖啡 還有溫暖的毯子\N{\rENG}Three letters, people, will get you a hot cup of coffee and a warm blanket.
+Dialogue: 0,0:46:28.38,0:46:31.18,CHT,,0,0,0,!Effect,你們怎麼辦 5506班\N{\rENG}What do you say, Class 5506?
+Dialogue: 0,0:46:31.82,0:46:33.41,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah.
+Dialogue: 0,0:46:42.09,0:46:45.29,CHT,,0,0,0,!Effect,這是缺氧存活訓練\N{\rENG}This is an oxygen-deprivation anaerobic exercise.
+Dialogue: 0,0:46:46.03,0:46:48.40,CHT,,0,0,0,!Effect,你和你的同伴要推一塊磚頭\N{\rENG}You and your partner will push your brick
+Dialogue: 0,0:46:48.47,0:46:51.93,CHT,,0,0,0,!Effect,沿著游泳池底 推過去再推回來\N{\rENG}along the bottom of the pool, down and back.
+Dialogue: 0,0:46:53.34,0:46:56.60,CHT,,0,0,0,!Effect,如果你需要換氣 你可以上浮 換一口氣\N{\rENG}If you need air, you may surface. One breath.
+Dialogue: 0,0:46:57.74,0:47:01.11,CHT,,0,0,0,!Effect,你的同伴必須待在水下 直到你回來\N{\rENG}Your partner must remain underwater until you return.
+Dialogue: 0,0:47:02.48,0:47:06.51,CHT,,0,0,0,!Effect,只有你們兩個都碰到磚頭時 才能推它\N{\rENG}Your brick can only move while both of you are touching it.
+Dialogue: 0,0:47:07.92,0:47:11.36,CHT,,0,0,0,!Effect,如果你們一起浮上來 你們一起失敗\N{\rENG}If you both surface, you both fail.
+Dialogue: 0,0:47:12.49,0:47:15.76,CHT,,0,0,0,!Effect,這個訓練旨在教你們如何合作\N{\rENG}This exercise is designed to teach you teamwork.
+Dialogue: 0,0:47:16.56,0:47:20.43,CHT,,0,0,0,!Effect,聽我哨音 脫掉裝備 成對進池\N{\rENG}On my whistle, drop your gear, enter the pool and pair up.
+Dialogue: 0,0:47:51.70,0:47:54.33,CHT,,0,0,0,!Effect,我說換一口氣 小子 快下去\N{\rENG}I said one breath, Sunkist. Let's go!
+Dialogue: 0,0:47:55.10,0:47:56.19,CHT,,0,0,0,!Effect,- 我不行了 - 快點\N{\rENG}- I can't. - Come on!
+Dialogue: 0,0:47:56.27,0:47:57.46,CHT,,0,0,0,!Effect,- 我不行 - "不行"\N{\rENG}- I can't. - "I can't."
+Dialogue: 0,0:47:57.54,0:48:00.20,CHT,,0,0,0,!Effect,滾出池子去 快點\N{\rENG}Get your ass out of the pool! Let's go!
+Dialogue: 0,0:48:02.21,0:48:04.27,CHT,,0,0,0,!Effect,快點 俯臥撐姿勢\N{\rENG}Come on! Lean and rest.
+Dialogue: 0,0:48:04.34,0:48:07.34,CHT,,0,0,0,!Effect,你想退出 退出吧 我可以換點新人\N{\rENG}You wanna quit, just quit now. I could use those new shoes.
+Dialogue: 0,0:48:07.41,0:48:09.68,CHT,,0,0,0,!Effect,二級軍士長 出事了\N{\rENG}Senior Chief, we got a problem.
+Dialogue: 0,0:48:10.58,0:48:12.55,CHT,,0,0,0,!Effect,有人失蹤了\N{\rENG}Somebody's missing.
+Dialogue: 0,0:48:17.99,0:48:19.46,CHT,,0,0,0,!Effect,耶穌基督啊\N{\rENG}Jesus Christ.
+Dialogue: 0,0:48:29.37,0:48:32.00,CHT,,0,0,0,!Effect,要有新記錄了 烏拉\N{\rENG}That's gotta be a new record. Oorah.
+Dialogue: 0,0:48:33.41,0:48:36.27,CHT,,0,0,0,!Effect,我煩透記錄了 把他弄上來\N{\rENG}I'm so sick of records. Go get him.
+Dialogue: 0,0:48:55.66,0:48:59.79,CHT,,0,0,0,!Effect,你覺得我會因為你能憋氣而震撼嗎? 金魚\N{\rENG}You think I'm impressed because you can hold your breath, Goldfish?
+Dialogue: 0,0:49:01.80,0:49:05.70,CHT,,0,0,0,!Effect,我不知道什麼能讓你震撼 二級軍士長\N{\rENG}I wouldn't venture to say what would impress you, Senior Chief.
+Dialogue: 0,0:49:11.91,0:49:14.47,CHT,,0,0,0,!Effect,好啦 讓他出池子 今天到此為止\N{\rENG}All right. Get him out of the pool. We're done for the day.
+Dialogue: 0,0:49:14.55,0:49:17.21,CHT,,0,0,0,!Effect,出池子 費舍爾 快點\N{\rENG}Out of the pool, Fischer. Let's move.
+Dialogue: 0,0:49:21.59,0:49:23.61,CHT,,0,0,0,!Effect,- 烏拉 - 快點\N{\rENG}- Oorah! - Move your ass.
+Dialogue: 0,0:49:25.99,0:49:27.12,CHT,,0,0,0,!Effect,起來 小子\N{\rENG}Pop tall, Sunkist.
+Dialogue: 0,0:49:27.19,0:49:28.79,CHT,,0,0,0,!Effect,出池 出池\N{\rENG}Out of the pool. Out of the pool.
+Dialogue: 0,0:49:36.30,0:49:37.29,CHT,,0,0,0,!Effect,記錄\N{\rENG}Records.
+Dialogue: 0,0:49:39.84,0:49:42.33,CHT,,0,0,0,!Effect,絕不要盯著火焰看 各位\N{\rENG}Never stare directly into the flame, people.
+Dialogue: 0,0:49:42.41,0:49:44.34,CHT,,0,0,0,!Effect,會損害你的夜晚視力的\N{\rENG}It will impair your night vision.
+Dialogue: 0,0:49:44.41,0:49:48.24,CHT,,0,0,0,!Effect,這是馬克58型閃光彈 看起來就這樣\N{\rENG}This is a Mark 58 flare. This is what it looks like.
+Dialogue: 0,0:49:48.81,0:49:51.15,CHT,,0,0,0,!Effect,這能照亮50尺寬的一片水\N{\rENG}It'll light up a 50-foot swath of water
+Dialogue: 0,0:49:51.22,0:49:54.08,CHT,,0,0,0,!Effect,用紅外線可以在幾英里外測到\N{\rENG}and can be detected by infrared miles out.
+Dialogue: 0,0:49:56.06,0:49:57.78,CHT,,0,0,0,!Effect,這是用來演示的\N{\rENG}This is a demonstration model.
+Dialogue: 0,0:49:57.86,0:50:00.52,CHT,,0,0,0,!Effect,正常的可以燃40到60分鐘\N{\rENG}The normal one will burn for 40 to 60 minutes.
+Dialogue: 0,0:50:00.59,0:50:02.25,CHT,,0,0,0,!Effect,注意\N{\rENG}Hey, pay attention.
+Dialogue: 0,0:50:02.33,0:50:07.16,CHT,,0,0,0,!Effect,馬克58時用來標示風向和水流向的\N{\rENG}The Mark 58 is used to reference the wind, to detect a current.
+Dialogue: 0,0:50:07.23,0:50:09.83,CHT,,0,0,0,!Effect,沃特森上士將會給你們詳細講一下\N{\rENG}Petty Officer Watson is gonna talk a little bit more about that.
+Dialogue: 0,0:50:11.97,0:50:13.56,CHT,,0,0,0,!Effect,五分鐘\N{\rENG}Five minutes.
+Dialogue: 0,0:50:20.05,0:50:22.07,CHT,,0,0,0,!Effect,你看到的這條船\N{\rENG}The vessel you're looking at right now,
+Dialogue: 0,0:50:22.15,0:50:23.74,CHT,,0,0,0,!Effect,正在向左舷傾側\N{\rENG}people, is listing to the port side.
+Dialogue: 0,0:50:23.82,0:50:26.41,CHT,,0,0,0,!Effect,作為救生員 到了直升機門那\N{\rENG}As a rescue swimmer, when you get to the door of the helicopter,
+Dialogue: 0,0:50:26.49,0:50:28.25,CHT,,0,0,0,!Effect,你得看下面 注意\N{\rENG}you need to look down and pay attention
+Dialogue: 0,0:50:28.32,0:50:30.69,CHT,,0,0,0,!Effect,看下面到底有什麼情況\N{\rENG}to what you really have down there.
+Dialogue: 0,0:50:30.76,0:50:34.28,CHT,,0,0,0,!Effect,知道自己能力的極限是非常重要的\N{\rENG}It's very important that you understand your limitations.
+Dialogue: 0,0:50:34.36,0:50:37.99,CHT,,0,0,0,!Effect,不知道 你就會死\N{\rENG}Limitations without understanding are gonna get you killed.
+Dialogue: 0,0:50:38.06,0:50:42.30,CHT,,0,0,0,!Effect,在這起事件中 船陷在 白令海峽中的大堆冰塊裡了\N{\rENG}Case in point, this vessel's trapped in pancake ice in the Bering Sea.
+Dialogue: 0,0:50:42.64,0:50:44.54,CHT,,0,0,0,!Effect,你們能看到 船員上了甲板\N{\rENG}And as you can see, the crew are out on the deck
+Dialogue: 0,0:50:44.60,0:50:47.33,CHT,,0,0,0,!Effect,在一個容易起吊的位置\N{\rENG}in a relatively manageable hoisting position.
+Dialogue: 0,0:50:47.41,0:50:49.00,CHT,,0,0,0,!Effect,但忽然之間\N{\rENG}But suddenly...
+Dialogue: 0,0:50:50.84,0:50:53.90,CHT,,0,0,0,!Effect,那些冰塊的重量高達幾千磅\N{\rENG}Those pieces of ice can weigh in upwards of thousands of pounds.
+Dialogue: 0,0:50:53.98,0:50:58.71,CHT,,0,0,0,!Effect,想像一下被2000磅重的冰塊擠壓的情況下\N{\rENG}Now imagine yourself trapped in between 2,000-pound pieces of ice
+Dialogue: 0,0:50:58.78,0:51:00.41,CHT,,0,0,0,!Effect,還要游泳的感覺\N{\rENG}trying to free-swim.
+Dialogue: 0,0:51:00.49,0:51:01.58,CHT,,0,0,0,!Effect,謝謝 軍事長\N{\rENG}Thank you, Chief.
+Dialogue: 0,0:51:01.65,0:51:04.21,CHT,,0,0,0,!Effect,下一節 沃特森上士\N{\rENG}Next scenario, Petty Officer Watson.
+Dialogue: 0,0:51:04.79,0:51:07.28,CHT,,0,0,0,!Effect,在你離開直升機 跳下...\N{\rENG}Before you leave that helicopter, going down to a...
+Dialogue: 0,0:51:07.36,0:51:12.26,CHT,,0,0,0,!Effect,標準化能確保我們 在卡特裡娜颶風影響下成功行動\N{\rENG}Standardization is one of the reasons we were so successful during Katrina.
+Dialogue: 0,0:51:12.33,0:51:15.23,CHT,,0,0,0,!Effect,我們的同事來自全國各地\N{\rENG}We had crews come in from all over the country,
+Dialogue: 0,0:51:15.30,0:51:18.74,CHT,,0,0,0,!Effect,但這沒關係 因為我們接受的都是相同的訓練\N{\rENG}but it didn't matter, because we have all been trained the same way.
+Dialogue: 0,0:51:18.80,0:51:21.53,CHT,,0,0,0,!Effect,我不認識駕駛員 不認識副駕駛\N{\rENG}I didn't know my pilot, I didn't know my copilot,
+Dialogue: 0,0:51:21.61,0:51:23.63,CHT,,0,0,0,!Effect,我不認識機師 但有什麼關係呢?\N{\rENG}I didn't know my flight mechanic. But guess what?
+Dialogue: 0,0:51:23.71,0:51:25.11,CHT,,0,0,0,!Effect,這都無關緊要 因為...\N{\rENG}It didn't matter, because...
+Dialogue: 0,0:51:25.18,0:51:26.30,CHT,,0,0,0,!Effect,我們幹的就是這個\N{\rENG}That's why we do it.
+Dialogue: 0,0:51:26.38,0:51:28.87,CHT,,0,0,0,!Effect,因此你們要把注意力集中在這上面\N{\rENG}So you have to get your mind wrapped around that idea.
+Dialogue: 0,0:51:28.95,0:51:32.75,CHT,,0,0,0,!Effect,當直升機飛過來的時候 當起風的時候\N{\rENG}When that helicopter starts going, when the wind starts coming...
+Dialogue: 0,0:51:32.82,0:51:34.65,CHT,,0,0,0,!Effect,- 二十 - 下!上!\N{\rENG}Twenty! Down! Up!
+Dialogue: 0,0:51:34.72,0:51:36.48,CHT,,0,0,0,!Effect,- 二十一 - 下!上!\N{\rENG}- Twenty-one! - Down! Up!
+Dialogue: 0,0:51:36.56,0:51:38.46,CHT,,0,0,0,!Effect,- 二是二 - 下!上!\N{\rENG}- Twenty-two! - Down! Up!
+Dialogue: 0,0:51:38.52,0:51:40.52,CHT,,0,0,0,!Effect,二十三\N{\rENG}Twenty-three!
+Dialogue: 0,0:51:40.59,0:51:42.08,CHT,,0,0,0,!Effect,- 二 - 下!\N{\rENG}- Two! - Down!
+Dialogue: 0,0:51:42.16,0:51:43.72,CHT,,0,0,0,!Effect,- 上! - 三\N{\rENG}- Up! - Three!
+Dialogue: 0,0:51:44.90,0:51:46.99,CHT,,0,0,0,!Effect,不要陸地 不要森林\N{\rENG}Don't need no land Don't need no tree
+Dialogue: 0,0:51:47.10,0:51:49.53,CHT,,0,0,0,!Effect,我要去的是水裡\N{\rENG}Out in the water That's where I wanna be
+Dialogue: 0,0:52:02.82,0:52:05.68,CHT,,0,0,0,!Effect,- 嘿 來杯啤酒怎麼樣? - 沒問題\N{\rENG}- Hey, Mags, can I have a beer? - Sure.
+Dialogue: 0,0:52:07.55,0:52:09.58,CHT,,0,0,0,!Effect,好啊好啊\N{\rENG}Well, well.
+Dialogue: 0,0:52:09.86,0:52:12.45,CHT,,0,0,0,!Effect,終於答應跟我喝一杯了\N{\rENG}So you are gonna have a drink with me.
+Dialogue: 0,0:52:12.52,0:52:16.29,CHT,,0,0,0,!Effect,不 我是在你旁邊喝 完全兩碼事\N{\rENG}No, I'm having a drink near you. Entirely different thing.
+Dialogue: 0,0:52:18.50,0:52:21.36,CHT,,0,0,0,!Effect,你從來就這樣冷淡嗎?\N{\rENG}You're a regular lightning rod, aren't you?
+Dialogue: 0,0:52:21.97,0:52:25.63,CHT,,0,0,0,!Effect,- 你叫什麼名字? - 戴茜·布克南\N{\rENG}- What's your name? - Daisy Buchanan.
+Dialogue: 0,0:52:27.17,0:52:29.04,CHT,,0,0,0,!Effect,你在說謊 戴茜·布克南\N{\rENG}You're lying, Daisy Buchanan.
+Dialogue: 0,0:52:29.94,0:52:32.47,CHT,,0,0,0,!Effect,- 有這個可能性 - 不\N{\rENG}- There is that possibility. - No.
+Dialogue: 0,0:52:32.54,0:52:34.54,CHT,,0,0,0,!Effect,這一定是謊話\N{\rENG}That was a sure-fire lie.
+Dialogue: 0,0:52:34.61,0:52:37.45,CHT,,0,0,0,!Effect,我想你是讀過偉大的蓋茨比了\N{\rENG}So I take it you've read The Great Gatsby.
+Dialogue: 0,0:52:39.35,0:52:42.81,CHT,,0,0,0,!Effect,- 我的錢呢? - 我沒帶在身上\N{\rENG}- Where's my money? - It's not on me.
+Dialogue: 0,0:52:43.56,0:52:46.68,CHT,,0,0,0,!Effect,但是很接近了 在一個安全的地方\N{\rENG}But it is close. In a very safe place.
+Dialogue: 0,0:52:47.06,0:52:51.66,CHT,,0,0,0,!Effect,我畫了張地圖 裡面有很複雜的線索\N{\rENG}Now, I've drawn a map with a complex set of clues.
+Dialogue: 0,0:52:52.36,0:52:55.53,CHT,,0,0,0,!Effect,每一步都比前一步難很多\N{\rENG}Each one is more fiendishly clever than the last.
+Dialogue: 0,0:53:00.51,0:53:02.06,CHT,,0,0,0,!Effect,好吧 這樣也成\N{\rENG}That works, too.
+Dialogue: 0,0:53:03.44,0:53:05.81,CHT,,0,0,0,!Effect,這只是你褲子的圖片而已\N{\rENG}This is just a picture of your pants.
+Dialogue: 0,0:53:05.88,0:53:10.41,CHT,,0,0,0,!Effect,是的 畫的不好 但線索真的很難\N{\rENG}Yeah, but it's a bad picture, which is what makes it so fiendishly clever.
+Dialogue: 0,0:53:10.75,0:53:11.74,CHT,,0,0,0,!Effect,不錯\N{\rENG}Nice.
+Dialogue: 0,0:53:11.82,0:53:14.18,CHT,,0,0,0,!Effect,為什麼艾米麗·湯瑪斯會成為教師呢?\N{\rENG}How did Emily Thomas become a schoolteacher?
+Dialogue: 0,0:53:14.25,0:53:16.15,CHT,,0,0,0,!Effect,為什麼傑克·費舍爾會成為\N{\rENG}Well, how does Jake Fischer become a guy
+Dialogue: 0,0:53:16.22,0:53:18.69,CHT,,0,0,0,!Effect,想從直升機上跳下去的人呢?\N{\rENG}who wants to jump out of helicopters?
+Dialogue: 0,0:53:19.96,0:53:23.26,CHT,,0,0,0,!Effect,我幹掉很多傢伙 要找個地方躲起來\N{\rENG}I killed a couple guys and had to get out of Dodge.
+Dialogue: 0,0:53:24.96,0:53:28.06,CHT,,0,0,0,!Effect,- 你在說謊 - 有這個可能性\N{\rENG}- You're lying. - There is that possibility.
+Dialogue: 0,0:53:30.50,0:53:31.63,CHT,,0,0,0,!Effect,說實話\N{\rENG}The truth.
+Dialogue: 0,0:53:32.60,0:53:35.20,CHT,,0,0,0,!Effect,我的牛仔生涯以失敗告終了\N{\rENG}My bull-riding career was going down the drain.
+Dialogue: 0,0:53:35.27,0:53:39.04,CHT,,0,0,0,!Effect,- 比剛才有長進 - 好吧 到你了\N{\rENG}- Okay, that's better. - All right, now you.
+Dialogue: 0,0:53:43.18,0:53:44.98,CHT,,0,0,0,!Effect,我真的得走了\N{\rENG}I really should go.
+Dialogue: 0,0:53:45.05,0:53:47.28,CHT,,0,0,0,!Effect,走? 什麼? 不 別走\N{\rENG}Go? What? No, you're not going.
+Dialogue: 0,0:53:47.35,0:53:49.79,CHT,,0,0,0,!Effect,我們剛開始找到點樂趣 你侮辱了我的畫\N{\rENG}We're just starting to have fun. You're insulting my drawing.
+Dialogue: 0,0:53:49.86,0:53:51.76,CHT,,0,0,0,!Effect,不 你自己侮辱了你的畫\N{\rENG}No, you were insulting your drawing.
+Dialogue: 0,0:53:51.82,0:53:53.76,CHT,,0,0,0,!Effect,雖然 這是個很失敗的畫\N{\rENG}Although, to be fair, it's a pretty lame drawing.
+Dialogue: 0,0:53:53.83,0:53:56.32,CHT,,0,0,0,!Effect,好吧 你還不能走 因為你欠我一支舞\N{\rENG}All right. Well, you can't go, 'cause you owe me a dance.
+Dialogue: 0,0:53:56.40,0:53:57.56,CHT,,0,0,0,!Effect,不 才沒有呢\N{\rENG}No, I don't think so.
+Dialogue: 0,0:53:57.63,0:53:59.43,CHT,,0,0,0,!Effect,好吧 那我要拿回我的錢\N{\rENG}Well, then, I'm gonna have to take that money back,
+Dialogue: 0,0:53:59.50,0:54:01.19,CHT,,0,0,0,!Effect,因為我覺得我不該得到這錢...\N{\rENG}'cause I wouldn't feel right taking the money...
+Dialogue: 0,0:54:01.27,0:54:03.46,CHT,,0,0,0,!Effect,聽著 每18周 都有一批新的學員到來\N{\rENG}Look, every 18 weeks, a new bunch of you guys comes in,
+Dialogue: 0,0:54:03.54,0:54:05.66,CHT,,0,0,0,!Effect,都想得到女生的青睞\N{\rENG}all looking to score with the local talent.
+Dialogue: 0,0:54:05.74,0:54:07.83,CHT,,0,0,0,!Effect,我住這兒 我在這兒工作\N{\rENG}I live here. I work here.
+Dialogue: 0,0:54:09.48,0:54:12.77,CHT,,0,0,0,!Effect,我只是請你跳一支舞\N{\rENG}It's a good thing I'm just asking for a dance, then.
+Dialogue: 0,0:54:14.98,0:54:16.61,CHT,,0,0,0,!Effect,好吧 一支舞\N{\rENG}Okay, one dance.
+Dialogue: 0,0:54:18.38,0:54:21.51,CHT,,0,0,0,!Effect,沒有附加條件 臨時的\N{\rENG}No attachments. Just casual.
+Dialogue: 0,0:54:22.09,0:54:24.85,CHT,,0,0,0,!Effect,我是個男人 我知道什麼是臨時的\N{\rENG}I'm a guy. I can do casual.
+Dialogue: 0,0:54:25.16,0:54:26.35,CHT,,0,0,0,!Effect,好吧\N{\rENG}Mmm-hmm.
+Dialogue: 0,0:54:26.43,0:54:28.72,CHT,,0,0,0,!Effect,我最拿手的就是臨時\N{\rENG}I am the king of casual.
+Dialogue: 0,0:54:31.10,0:54:32.76,CHT,,0,0,0,!Effect,只是還有一件事\N{\rENG}There's just one thing, though.
+Dialogue: 0,0:54:33.80,0:54:36.46,CHT,,0,0,0,!Effect,你必須停下那種讓我脫掉衣服的目光\N{\rENG}You're gonna have to stop undressing me with your eyes,
+Dialogue: 0,0:54:36.54,0:54:39.33,CHT,,0,0,0,!Effect,因為你可沒本事把我搞上床\N{\rENG}'cause there's no way you're getting me into bed.
+Dialogue: 0,0:55:22.21,0:55:23.48,CHT,,0,0,0,!Effect,嘿\N{\rENG}Hey, you.
+Dialogue: 0,0:55:26.29,0:55:28.12,CHT,,0,0,0,!Effect,我得去上班了\N{\rENG}I gotta get to work.
+Dialogue: 0,0:55:29.29,0:55:31.98,CHT,,0,0,0,!Effect,- 我遲到了 睡過頭了 - 什麼\N{\rENG}- I'm late. I fell asleep. - What...
+Dialogue: 0,0:55:32.06,0:55:33.79,CHT,,0,0,0,!Effect,- 他們會殺了我的 - 他們不會的\N{\rENG}- They're gonna kill me. - They won't kill you.
+Dialogue: 0,0:55:33.86,0:55:34.88,CHT,,0,0,0,!Effect,這和學校不一樣\N{\rENG}This isn't like school.
+Dialogue: 0,0:55:34.96,0:55:37.29,CHT,,0,0,0,!Effect,軍隊裡可不會手下留情\N{\rENG}They don't hand out tardies in the military.
+Dialogue: 0,0:55:39.13,0:55:41.93,CHT,,0,0,0,!Effect,- 你聞起來好香 - 我聞起來像你的味道\N{\rENG}- You smell really good. - I smell like you.
+Dialogue: 0,0:55:48.27,0:55:50.43,CHT,,0,0,0,!Effect,- 他還沒回來? - 沒有\N{\rENG}- He never came back? - Nope.
+Dialogue: 0,0:55:51.38,0:55:52.81,CHT,,0,0,0,!Effect,哇\N{\rENG}Wow.
+Dialogue: 0,0:55:52.88,0:55:56.54,CHT,,0,0,0,!Effect,我當教官的4年裡還沒有過隊員出走\N{\rENG}Four years as lead instructor, I never had one go missing.
+Dialogue: 0,0:55:57.88,0:56:00.55,CHT,,0,0,0,!Effect,好吧 帶其它人去泳池 這裡交給我\N{\rENG}All right, take the others to the pool. I'll catch up.
+Dialogue: 0,0:56:00.62,0:56:02.28,CHT,,0,0,0,!Effect,是 長官\N{\rENG}Aye, aye, Senior.
+Dialogue: 0,0:56:19.50,0:56:21.90,CHT,,0,0,0,!Effect,天啊 他們來了 停 停車\N{\rENG}Oh, God, there they are. Stop. Stop the car. Stop.
+Dialogue: 0,0:56:21.97,0:56:22.96,CHT,,0,0,0,!Effect,- 就停這裡? - 是的\N{\rENG}- Here? - Yes.
+Dialogue: 0,0:56:23.04,0:56:24.07,CHT,,0,0,0,!Effect,- 好的 - 我會打電話給你的\N{\rENG}- Okay. - I'll call you.
+Dialogue: 0,0:56:24.14,0:56:25.23,CHT,,0,0,0,!Effect,最好如此 再見\N{\rENG}You better. Bye.
+Dialogue: 0,0:56:27.65,0:56:29.14,CHT,,0,0,0,!Effect,傑克!傑克!傑克!\N{\rENG}Jake! Jake! Jake!
+Dialogue: 0,0:56:29.25,0:56:32.27,CHT,,0,0,0,!Effect,飛行員費舍爾遲到了\N{\rENG}Airman Fischer's coming in late, yeah
+Dialogue: 0,0:56:32.35,0:56:33.34,CHT,,0,0,0,!Effect,給\N{\rENG}Here.
+Dialogue: 0,0:56:33.42,0:56:36.32,CHT,,0,0,0,!Effect,飛行員費舍爾遲到了\N{\rENG}Airman Fischer's coming in late, yeah
+Dialogue: 0,0:56:36.39,0:56:37.38,CHT,,0,0,0,!Effect,嗨\N{\rENG}Hi.
+Dialogue: 0,0:56:41.23,0:56:44.29,CHT,,0,0,0,!Effect,出去約會一定很快活\N{\rENG}Must be nice to go out on a date, yeah
+Dialogue: 0,0:56:44.36,0:56:47.39,CHT,,0,0,0,!Effect,出去約會一定很快活\N{\rENG}Must be nice to go out on a date, yeah
+Dialogue: 0,0:56:48.13,0:56:50.40,CHT,,0,0,0,!Effect,天啊 看這個\N{\rENG}Oh, my goodness, look at this.
+Dialogue: 0,0:56:51.90,0:56:55.17,CHT,,0,0,0,!Effect,看這個 "費舍爾帶隊取得州冠軍"\N{\rENG}Look at this. "Freshman Leads Team to State Title."
+Dialogue: 0,0:56:56.88,0:56:58.24,CHT,,0,0,0,!Effect,這是你\N{\rENG}That's you.
+Dialogue: 0,0:56:59.04,0:57:00.07,CHT,,0,0,0,!Effect,天啊\N{\rENG}Holy smokes.
+Dialogue: 0,0:57:00.15,0:57:04.38,CHT,,0,0,0,!Effect,"16歲的傑克·費舍爾 已經成為成熟的運動員"\N{\rENG}"At only 16, Jake Fischer displays the traits of a seasoned athlete.
+Dialogue: 0,0:57:05.18,0:57:09.68,CHT,,0,0,0,!Effect,"有一件事是確定的: 這個年輕人有很美好的未來"\N{\rENG}"One thing's for sure: the future looks bright for this young competitor."
+Dialogue: 0,0:57:10.99,0:57:14.86,CHT,,0,0,0,!Effect,我猜他們不知道你會被"A"學校退學\N{\rENG}Guess they didn't know you were gonna flunk out of "A" School.
+Dialogue: 0,0:57:18.00,0:57:19.99,CHT,,0,0,0,!Effect,昨晚過的不錯吧?\N{\rENG}You have a nice evening?
+Dialogue: 0,0:57:22.30,0:57:23.73,CHT,,0,0,0,!Effect,把衣服換好\N{\rENG}Get dressed.
+Dialogue: 0,0:57:43.49,0:57:46.25,CHT,,0,0,0,!Effect,看來還要再加一塊磚頭 搬磚頭\N{\rENG}Think we need another brick. Bring it in.
+Dialogue: 0,0:57:48.93,0:57:50.19,CHT,,0,0,0,!Effect,金魚\N{\rENG}Goldfish.
+Dialogue: 0,0:57:52.63,0:57:53.93,CHT,,0,0,0,!Effect,金魚\N{\rENG}Goldfish.
+Dialogue: 0,0:58:03.58,0:58:07.10,CHT,,0,0,0,!Effect,感謝由於費舍爾先生的課外活動\N{\rENG}Thanks to Mr. Fischer's extracurricular activities,
+Dialogue: 0,0:58:07.18,0:58:10.48,CHT,,0,0,0,!Effect,你們36小時不准睡覺\N{\rENG}you have all now gone 36 hours without sleep.
+Dialogue: 0,0:58:11.88,0:58:13.01,CHT,,0,0,0,!Effect,吹哨\N{\rENG}Blow it.
+Dialogue: 0,0:58:17.79,0:58:20.95,CHT,,0,0,0,!Effect,班長 你們完工了 去淺水區列隊\N{\rENG}Class leader, you are done. Form it up in the shallow end.
+Dialogue: 0,0:58:21.03,0:58:22.19,CHT,,0,0,0,!Effect,是 二級軍士長!\N{\rENG}Aye, Senior Chief!
+Dialogue: 0,0:58:22.26,0:58:24.96,CHT,,0,0,0,!Effect,5506班 列隊!\N{\rENG}Class 5506, form it up!
+Dialogue: 0,0:58:25.40,0:58:29.93,CHT,,0,0,0,!Effect,不不不 你跟著我\N{\rENG}No. No, no, no. You're with me.
+Dialogue: 0,0:58:34.14,0:58:36.84,CHT,,0,0,0,!Effect,我是個救生員 是的 我是\N{\rENG}I'm a rescue swimmer, yes, I am
+Dialogue: 0,0:58:36.91,0:58:39.24,CHT,,0,0,0,!Effect,我來這裡援救你們離開這該死的地方\N{\rENG}I'm here to pull your ass out of this jam
+Dialogue: 0,0:58:39.31,0:58:41.58,CHT,,0,0,0,!Effect,我跳出直升機 帶著繩索\N{\rENG}I jump from the helo and swing from the cable
+Dialogue: 0,0:58:41.65,0:58:43.64,CHT,,0,0,0,!Effect,好了 停下\N{\rENG}All right, knock it off.
+Dialogue: 0,0:58:44.55,0:58:47.18,CHT,,0,0,0,!Effect,處理你還真不容易 費舍爾\N{\rENG}I am having a hard time figuring you out, Fischer.
+Dialogue: 0,0:58:48.02,0:58:51.29,CHT,,0,0,0,!Effect,我想你喜歡看到自己登報的照片\N{\rENG}I mean, you like seeing your picture in the paper.
+Dialogue: 0,0:58:51.66,0:58:54.56,CHT,,0,0,0,!Effect,看上去無上的榮耀 也許邊上 還有幾個小妞 我說的對嗎?\N{\rENG}In it for the glory, maybe a few chicks. Am I right?
+Dialogue: 0,0:58:54.63,0:58:56.06,CHT,,0,0,0,!Effect,但來這裡以後\N{\rENG}But when it comes down to it,
+Dialogue: 0,0:58:56.13,0:58:58.96,CHT,,0,0,0,!Effect,你必須超越從前\N{\rENG}you will choose yourself over them every time,
+Dialogue: 0,0:58:59.03,0:59:01.86,CHT,,0,0,0,!Effect,就像你第一天在池子裡的那樣\N{\rENG}like you did on the first day in the pool,
+Dialogue: 0,0:59:02.33,0:59:05.13,CHT,,0,0,0,!Effect,就像你昨天缺席集合那樣\N{\rENG}like you did yesterday by missing muster.
+Dialogue: 0,0:59:05.20,0:59:07.64,CHT,,0,0,0,!Effect,不會再發生這樣的事了 二級軍士長!\N{\rENG}Won't happen again, Senior Chief!
+Dialogue: 0,0:59:08.04,0:59:11.24,CHT,,0,0,0,!Effect,你為什麼不退出 這樣對我們都好\N{\rENG}Why don't you do us both a big favor and quit?
+Dialogue: 0,0:59:12.38,0:59:15.04,CHT,,0,0,0,!Effect,我是個救生員 是的 我是\N{\rENG}I'm a rescue swimmer, yes, I am
+Dialogue: 0,0:59:15.81,0:59:18.31,CHT,,0,0,0,!Effect,我來這裡援救你們離開這該死的地方\N{\rENG}I'm here to pull your ass out of this jam
+Dialogue: 0,0:59:18.38,0:59:21.38,CHT,,0,0,0,!Effect,我跳出直升機 帶著繩索\N{\rENG}I jump from the helo and swing from the cable
+Dialogue: 0,0:59:21.95,0:59:25.08,CHT,,0,0,0,!Effect,我不是泰山 我是心甘情願的 並且有能力這樣做\N{\rENG}I'm not Tarzan I'm just willing and able
+Dialogue: 0,0:59:30.50,0:59:33.06,CHT,,0,0,0,!Effect,用其它的來懲罰我吧 二級軍士長\N{\rENG}Give me something else, Senior Chief.
+Dialogue: 0,0:59:33.70,0:59:34.96,CHT,,0,0,0,!Effect,三十\N{\rENG}Thirty!
+Dialogue: 0,0:59:35.87,0:59:37.27,CHT,,0,0,0,!Effect,三十一\N{\rENG}Thirty-one!
+Dialogue: 0,0:59:38.20,0:59:39.36,CHT,,0,0,0,!Effect,三十二\N{\rENG}Thirty-two!
+Dialogue: 0,0:59:40.34,0:59:41.33,CHT,,0,0,0,!Effect,三十三\N{\rENG}Thirty-three!
+Dialogue: 0,0:59:42.84,0:59:44.14,CHT,,0,0,0,!Effect,三十四\N{\rENG}Thirty-four!
+Dialogue: 0,0:59:45.48,0:59:46.88,CHT,,0,0,0,!Effect,三十五\N{\rENG}Thirty-five!
+Dialogue: 0,0:59:47.51,0:59:48.88,CHT,,0,0,0,!Effect,三十六\N{\rENG}Thirty-six!
+Dialogue: 0,0:59:49.11,0:59:50.88,CHT,,0,0,0,!Effect,停下\N{\rENG}Stop. Drop them.
+Dialogue: 0,0:59:50.95,0:59:53.38,CHT,,0,0,0,!Effect,二級軍士長來了 起立\N{\rENG}Senior Chief's on deck. Pop tall.
+Dialogue: 0,0:59:54.89,0:59:56.35,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah!
+Dialogue: 0,0:59:59.42,1:00:00.58,CHT,,0,0,0,!Effect,早上好 各位\N{\rENG}Morning, class.
+Dialogue: 0,1:00:00.66,1:00:02.02,CHT,,0,0,0,!Effect,今天我們要學的是\N{\rENG}Today we were going to learn
+Dialogue: 0,1:00:02.09,1:00:06.00,CHT,,0,0,0,!Effect,怎麼在深海靠近生還者\N{\rENG}about how to approach a drowning victim in high seas,
+Dialogue: 0,1:00:08.03,1:00:11.03,CHT,,0,0,0,!Effect,但我想這裡有人對生還者不感興趣\N{\rENG}but I think there are some here who aren't interested in that victim.
+Dialogue: 0,1:00:11.10,1:00:12.70,CHT,,0,0,0,!Effect,事實上我覺得這個班裡有些人\N{\rENG}Fact, I think there's some in this class
+Dialogue: 0,1:00:12.77,1:00:15.74,CHT,,0,0,0,!Effect,對援救他人並不感興趣\N{\rENG}who aren't interested in saving lives at all.
+Dialogue: 0,1:00:16.74,1:00:19.11,CHT,,0,0,0,!Effect,我相信有些人\N{\rENG}I believe there are some
+Dialogue: 0,1:00:19.18,1:00:22.15,CHT,,0,0,0,!Effect,對於創造記錄非常感興趣\N{\rENG}who are more interested in setting records.
+Dialogue: 0,1:00:22.51,1:00:25.21,CHT,,0,0,0,!Effect,那麼今天就是記錄日\N{\rENG}So today is record day.
+Dialogue: 0,1:00:38.83,1:00:40.73,CHT,,0,0,0,!Effect,5:28\N{\rENG}5:28.
+Dialogue: 0,1:00:40.83,1:00:43.13,CHT,,0,0,0,!Effect,把金魚的名字貼上去\N{\rENG}Put one on the board for Goldfish.
+Dialogue: 0,1:00:47.94,1:00:49.77,CHT,,0,0,0,!Effect,哇 他還真快\N{\rENG}Wow, he's fast.
+Dialogue: 0,1:00:51.91,1:00:53.71,CHT,,0,0,0,!Effect,他很不錯\N{\rENG}He's good.
+Dialogue: 0,1:00:58.02,1:01:00.18,CHT,,0,0,0,!Effect,你辦到了 夥計! 你做到了 費舍爾!\N{\rENG}You got it, man! You got it, Fisch!
+Dialogue: 0,1:01:00.35,1:01:03.72,CHT,,0,0,0,!Effect,另一個記錄 記下來 軍事長\N{\rENG}Another record. Chalk it up, Chief.
+Dialogue: 0,1:01:03.79,1:01:06.35,CHT,,0,0,0,!Effect,- 再來點 - 你是真正的男人\N{\rENG}- Get some. - You are the man!
+Dialogue: 0,1:01:06.42,1:01:09.76,CHT,,0,0,0,!Effect,你們其他人都不配和傑克一起在池子裡\N{\rENG}You people do not deserve to be in the same pool as Jake.
+Dialogue: 0,1:01:09.83,1:01:11.73,CHT,,0,0,0,!Effect,他打敗了你們所有人\N{\rENG}He's destroying you.
+Dialogue: 0,1:01:14.27,1:01:17.17,CHT,,0,0,0,!Effect,哇 看他遊啊 真快\N{\rENG}Wow, look at him go! He's fast!
+Dialogue: 0,1:01:17.34,1:01:18.96,CHT,,0,0,0,!Effect,哇 他真快\N{\rENG}Wow, he's fast.
+Dialogue: 0,1:01:19.04,1:01:22.34,CHT,,0,0,0,!Effect,快啊 你在挑戰記錄 暫時只有一個失敗者\N{\rENG}Come on, you're all fighting for second. Just first loser.
+Dialogue: 0,1:01:22.41,1:01:23.43,CHT,,0,0,0,!Effect,真有趣\N{\rENG}This is fun.
+Dialogue: 0,1:01:23.51,1:01:25.57,CHT,,0,0,0,!Effect,待會我們會發獎品\N{\rENG}We'll pass out trophies later.
+Dialogue: 0,1:01:31.52,1:01:33.07,CHT,,0,0,0,!Effect,不可思議\N{\rENG}Unbelievable.
+Dialogue: 0,1:01:36.79,1:01:38.28,CHT,,0,0,0,!Effect,不可思議\N{\rENG}Unbelievable.
+Dialogue: 0,1:01:41.59,1:01:44.26,CHT,,0,0,0,!Effect,要我把這些娘娘腔都趕走嗎?\N{\rENG}You want me to pull these pansies out?
+Dialogue: 0,1:01:51.00,1:01:54.46,CHT,,0,0,0,!Effect,- 你不會想知道我今天是怎麼過的 - 我想知道\N{\rENG}- You do not wanna hear about my day. - Yeah, I do.
+Dialogue: 0,1:01:57.58,1:01:59.64,CHT,,0,0,0,!Effect,那個傢伙 朗道\N{\rENG}Man, this guy Randall...
+Dialogue: 0,1:01:59.71,1:02:03.84,CHT,,0,0,0,!Effect,他根本不在乎我做的多好 他總是覺得不夠好\N{\rENG}You know, it doesn't matter what I do. It's just not good enough.
+Dialogue: 0,1:02:03.92,1:02:06.35,CHT,,0,0,0,!Effect,我想他只是希望你變得更好\N{\rENG}Well, maybe he's just trying to push you to be better.
+Dialogue: 0,1:02:06.42,1:02:08.82,CHT,,0,0,0,!Effect,你知道 我們老師會鼓勵 我們覺得有潛質的學生\N{\rENG}You know, we teachers do that to the ones we believe in.
+Dialogue: 0,1:02:08.89,1:02:11.15,CHT,,0,0,0,!Effect,不 他是針對我\N{\rENG}No, it's personal with me.
+Dialogue: 0,1:02:11.79,1:02:14.05,CHT,,0,0,0,!Effect,他知道我比他優秀\N{\rENG}He knows that I'm better than he was.
+Dialogue: 0,1:02:14.19,1:02:17.32,CHT,,0,0,0,!Effect,我是說 今天我打破了所有他保持的記錄\N{\rENG}I mean, today, I broke every one of his records.
+Dialogue: 0,1:02:17.40,1:02:19.30,CHT,,0,0,0,!Effect,所有記錄都是我的了\N{\rENG}I own them all.
+Dialogue: 0,1:02:19.66,1:02:21.19,CHT,,0,0,0,!Effect,並不是所有的\N{\rENG}Not all of them.
+Dialogue: 0,1:02:21.27,1:02:23.76,CHT,,0,0,0,!Effect,有一個記錄你還沒有破\N{\rENG}There's one record you won't break.
+Dialogue: 0,1:02:24.84,1:02:26.53,CHT,,0,0,0,!Effect,那是在埃及斯\N{\rENG}This is the Aegis.
+Dialogue: 0,1:02:27.87,1:02:30.07,CHT,,0,0,0,!Effect,醫療船支 著火了\N{\rENG}Medical ship. Caught on fire.
+Dialogue: 0,1:02:30.94,1:02:33.43,CHT,,0,0,0,!Effect,那真是個夢魘 人們在大火中驚醒\N{\rENG}It was a nightmare. People burning in their beds.
+Dialogue: 0,1:02:33.51,1:02:36.17,CHT,,0,0,0,!Effect,本·朗道把所有人都救出來了\N{\rENG}And Ben Randall got every one of those people off there,
+Dialogue: 0,1:02:36.25,1:02:37.68,CHT,,0,0,0,!Effect,除了一個人\N{\rENG}except for this one guy.
+Dialogue: 0,1:02:37.75,1:02:40.12,CHT,,0,0,0,!Effect,當船開始下沉的時候\N{\rENG}And right when the ship started to go down,
+Dialogue: 0,1:02:40.19,1:02:42.48,CHT,,0,0,0,!Effect,他進去找到了這個人\N{\rENG}he reaches down and grabs this guy.
+Dialogue: 0,1:02:42.75,1:02:45.92,CHT,,0,0,0,!Effect,當時絞盤卡死了\N{\rENG}He's hanging from the cable with this man's life in his hands,
+Dialogue: 0,1:02:45.99,1:02:47.46,CHT,,0,0,0,!Effect,他手上抓住的是那個人的生命\N{\rENG}and the winch jams.
+Dialogue: 0,1:02:47.53,1:02:51.05,CHT,,0,0,0,!Effect,在飛回基地的20分鐘 那個人一直在尖叫\N{\rENG}It's 20 minutes to the base. The man's screaming.
+Dialogue: 0,1:02:51.50,1:02:54.29,CHT,,0,0,0,!Effect,本看著他的眼睛 猜他怎麼說?\N{\rENG}Ben looks him dead in the eye, and you know what he said?
+Dialogue: 0,1:02:54.37,1:02:56.10,CHT,,0,0,0,!Effect,他說: "我絕不放手"\N{\rENG}He said, "I won't let go."
+Dialogue: 0,1:02:56.17,1:02:57.43,CHT,,0,0,0,!Effect,後來呢?\N{\rENG}What happened?
+Dialogue: 0,1:02:57.50,1:03:00.63,CHT,,0,0,0,!Effect,他的肩膀脫臼 跟腱全部撕裂\N{\rENG}Dislocated his shoulder, tore every tendon in his hand.
+Dialogue: 0,1:03:00.71,1:03:02.17,CHT,,0,0,0,!Effect,但是本沒有放手\N{\rENG}But he didn't let go.
+Dialogue: 0,1:03:02.24,1:03:05.11,CHT,,0,0,0,!Effect,20分鐘 就靠手指拉住纜繩\N{\rENG}Twenty minutes, just fingertips.
+Dialogue: 0,1:03:05.74,1:03:08.94,CHT,,0,0,0,!Effect,你如果打破了那個記錄 打電話告訴我\N{\rENG}You break that record and you give me a call.
+Dialogue: 0,1:03:23.70,1:03:25.09,CHT,,0,0,0,!Effect,我今天過的還算不錯\N{\rENG}My day was all right.
+Dialogue: 0,1:04:37.20,1:04:41.04,CHT,,0,0,0,!Effect,我想我們應該約會了\N{\rENG}So here's my thinking. We should go on a date.
+Dialogue: 0,1:04:42.51,1:04:44.67,CHT,,0,0,0,!Effect,- 好的 那現在我們叫什麼來著? - 不不不\N{\rENG}- Well, what do you call this? - No, no, no.
+Dialogue: 0,1:04:44.74,1:04:46.94,CHT,,0,0,0,!Effect,我是說我想要個真正的約會\N{\rENG}I'm talking about, like, a real date.
+Dialogue: 0,1:04:47.01,1:04:50.50,CHT,,0,0,0,!Effect,要有個好餐館 穿漂亮的衣服\N{\rENG}You know, with, like, a nice restaurant, some nice clothes.
+Dialogue: 0,1:04:50.58,1:04:52.57,CHT,,0,0,0,!Effect,我會給你買花\N{\rENG}I'll get you some flowers.
+Dialogue: 0,1:04:52.65,1:04:55.21,CHT,,0,0,0,!Effect,我想我們說過這是臨時的\N{\rENG}I thought we agreed to keep this casual.
+Dialogue: 0,1:04:55.29,1:04:57.48,CHT,,0,0,0,!Effect,只是一塊牛排而已\N{\rENG}Look, it's one steak. What is...
+Dialogue: 0,1:04:57.56,1:05:02.75,CHT,,0,0,0,!Effect,一塊牛排可沒有持久的感情糾葛\N{\rENG}One steak is not gonna forge some kind of a lasting emotional bond.
+Dialogue: 0,1:05:04.06,1:05:05.53,CHT,,0,0,0,!Effect,我是認真的\N{\rENG}I'm serious.
+Dialogue: 0,1:05:05.90,1:05:06.99,CHT,,0,0,0,!Effect,真的嗎?\N{\rENG}Yeah?
+Dialogue: 0,1:05:07.07,1:05:09.03,CHT,,0,0,0,!Effect,- 是的 - 我也是\N{\rENG}- Yeah. - So am I.
+Dialogue: 0,1:05:09.10,1:05:11.57,CHT,,0,0,0,!Effect,只是一頓晚飯 有什麼關係?\N{\rENG}It's one dinner. What's it gonna hurt?
+Dialogue: 0,1:05:11.64,1:05:14.76,CHT,,0,0,0,!Effect,好吧 如果你說是一塊牛排 我就知道會牽扯到整頭牛了\N{\rENG}Well, if you ordered a steak, I'd imagine a cow would be involved.
+Dialogue: 0,1:05:14.84,1:05:17.97,CHT,,0,0,0,!Effect,這是什麼 紋身嗎 2是什麼意思?\N{\rENG}What do you have, an art gallery over here? What is this "2"?
+Dialogue: 0,1:05:19.28,1:05:22.94,CHT,,0,0,0,!Effect,這讓我後面的傢伙知道他的位置\N{\rENG}It's so the guy behind me knows what place he's coming in.
+Dialogue: 0,1:05:24.38,1:05:25.51,CHT,,0,0,0,!Effect,那這個呢?\N{\rENG}What about this one?
+Dialogue: 0,1:05:25.58,1:05:32.51,CHT,,0,0,0,!Effect,這是我高中的隊友\N{\rENG}That is the initials of the guys on my high school relay team.
+Dialogue: 0,1:05:33.39,1:05:35.79,CHT,,0,0,0,!Effect,酒會之後幹的傻事?\N{\rENG}A drunken celebration gone wrong?
+Dialogue: 0,1:05:36.96,1:05:38.76,CHT,,0,0,0,!Effect,算是吧\N{\rENG}Something like that.
+Dialogue: 0,1:05:39.36,1:05:42.60,CHT,,0,0,0,!Effect,- 那麼 我們的約會 - 天啊 只是晚餐 好嗎?\N{\rENG}- So, about this date. - God. It's just dinner, right?
+Dialogue: 0,1:05:42.67,1:05:47.66,CHT,,0,0,0,!Effect,不許送花 不能談論感情問題\N{\rENG}No flowers, where we will discuss nothing emotional or important?
+Dialogue: 0,1:05:49.07,1:05:51.10,CHT,,0,0,0,!Effect,我已經完全準備好了\N{\rENG}I am fully prepared
+Dialogue: 0,1:05:51.58,1:05:56.17,CHT,,0,0,0,!Effect,當一個小時的芝加哥公牛\N{\rENG}to do an entire hour on nothing but the Chicago Bears.
+Dialogue: 0,1:05:56.65,1:05:58.81,CHT,,0,0,0,!Effect,我們可以毫無疑義地做愛\N{\rENG}And we can have completely meaningless sex
+Dialogue: 0,1:05:58.88,1:06:00.78,CHT,,0,0,0,!Effect,馬上來\N{\rENG}immediately afterwards.
+Dialogue: 0,1:06:00.85,1:06:04.25,CHT,,0,0,0,!Effect,你覺得我們第一次約會我就會和你睡嗎?\N{\rENG}You think I'm gonna sleep with you on our first date?
+Dialogue: 0,1:06:04.72,1:06:06.19,CHT,,0,0,0,!Effect,你說呢\N{\rENG}Think again.
+Dialogue: 0,1:06:07.89,1:06:09.62,CHT,,0,0,0,!Effect,你撞到我了\N{\rENG}You just head-butted me.
+Dialogue: 0,1:06:09.89,1:06:12.26,CHT,,0,0,0,!Effect,我來教你蛙泳\N{\rENG}I'm gonna teach you the breaststroke.
+Dialogue: 0,1:06:12.33,1:06:17.03,CHT,,0,0,0,!Effect,這可複雜了 和蝶泳可不一樣\N{\rENG}It's pretty complicated, different than that of the butterfly.
+Dialogue: 0,1:06:20.97,1:06:24.37,CHT,,0,0,0,!Effect,我想我睡不著了\N{\rENG}I guess I can't sleep.
+Dialogue: 0,1:06:26.68,1:06:28.67,CHT,,0,0,0,!Effect,當然了\N{\rENG}Well, of course you can't.
+Dialogue: 0,1:06:29.98,1:06:32.18,CHT,,0,0,0,!Effect,妻子離開你 好友過世\N{\rENG}Your wife left you. Your best friend died.
+Dialogue: 0,1:06:32.25,1:06:34.24,CHT,,0,0,0,!Effect,聽起來想首該死的鄉村音樂\N{\rENG}You sound like a damn country song.
+Dialogue: 0,1:06:34.32,1:06:37.02,CHT,,0,0,0,!Effect,如果你有條狗 他現在也會跑開了\N{\rENG}If you had a dog, he'd be run over by now.
+Dialogue: 0,1:06:37.09,1:06:39.92,CHT,,0,0,0,!Effect,- 她把離婚書給你了嗎? - 是的\N{\rENG}- So, did she send you papers? - Yeah.
+Dialogue: 0,1:06:40.26,1:06:41.75,CHT,,0,0,0,!Effect,你讀了嗎?\N{\rENG}And did you read them?
+Dialogue: 0,1:06:43.76,1:06:44.75,CHT,,0,0,0,!Effect,不 沒有\N{\rENG}No, I did not.
+Dialogue: 0,1:06:45.46,1:06:47.99,CHT,,0,0,0,!Effect,好吧 你想過怎麼辦嗎?\N{\rENG}Well, you think you might ought to?
+Dialogue: 0,1:06:54.61,1:06:56.87,CHT,,0,0,0,!Effect,你知道 不可能有其它人了\N{\rENG}You know, there never was anyone else, Mags.
+Dialogue: 0,1:06:56.94,1:06:58.53,CHT,,0,0,0,!Effect,算了吧 本\N{\rENG}Like hell, Ben.
+Dialogue: 0,1:06:59.94,1:07:01.64,CHT,,0,0,0,!Effect,你是個大人物\N{\rENG}You're a bigamist.
+Dialogue: 0,1:07:02.41,1:07:04.81,CHT,,0,0,0,!Effect,你已經嫁給海岸警衛隊了\N{\rENG}You been married to the Coast Guard all along.
+Dialogue: 0,1:07:04.88,1:07:06.78,CHT,,0,0,0,!Effect,肩膀靠過來點\N{\rENG}Give me that shoulder.
+Dialogue: 0,1:07:07.29,1:07:11.85,CHT,,0,0,0,!Effect,你還在遊只是想證明你還是19歲\N{\rENG}You probably swum it out of socket trying to prove you're still 19.
+Dialogue: 0,1:07:12.49,1:07:13.96,CHT,,0,0,0,!Effect,對嗎?\N{\rENG}Am I right?
+Dialogue: 0,1:07:17.80,1:07:19.99,CHT,,0,0,0,!Effect,我們是什麼時候變老的?\N{\rENG}When the heck did we get old?
+Dialogue: 0,1:07:20.06,1:07:22.33,CHT,,0,0,0,!Effect,我們一直在變老 本\N{\rENG}Hell, I've always been old, Ben.
+Dialogue: 0,1:07:22.40,1:07:24.23,CHT,,0,0,0,!Effect,你知道嗎 我不在乎\N{\rENG}You know what, though? I don't mind.
+Dialogue: 0,1:07:24.30,1:07:26.96,CHT,,0,0,0,!Effect,我是說 如果肌肉酸痛了 說明我們已經使用過了\N{\rENG}I mean, if my muscles ache, it's 'cause I've used them.
+Dialogue: 0,1:07:27.04,1:07:29.20,CHT,,0,0,0,!Effect,如果我現在走不動路\N{\rENG}If it's hard for me to walk up them steps now,
+Dialogue: 0,1:07:29.27,1:07:34.04,CHT,,0,0,0,!Effect,那是因為每晚我都走到愛我的人那去\N{\rENG}it's 'cause I walked up them every night to lay next to a man who loved me.
+Dialogue: 0,1:07:34.11,1:07:35.60,CHT,,0,0,0,!Effect,我這裡滿是皺紋\N{\rENG}I got a few wrinkles here and there,
+Dialogue: 0,1:07:35.68,1:07:40.38,CHT,,0,0,0,!Effect,因為我經歷了無數快樂的日子\N{\rENG}but I've laid under thousands of skies on sunny days, yeah.
+Dialogue: 0,1:07:41.55,1:07:46.01,CHT,,0,0,0,!Effect,我在享受生命 我喝酒 抽煙\N{\rENG}I look and feel this way, well, 'cause I drank and I smoked,
+Dialogue: 0,1:07:46.09,1:07:49.86,CHT,,0,0,0,!Effect,我生活 愛憐 跳舞 歌唱 流汗\N{\rENG}I lived and I loved, and danced, sang, sweat
+Dialogue: 0,1:07:49.93,1:07:53.42,CHT,,0,0,0,!Effect,用自己的方式享受生活\N{\rENG}and screwed my way through a pretty damned good life,
+Dialogue: 0,1:07:53.57,1:07:55.16,CHT,,0,0,0,!Effect,如果你問我\N{\rENG}if you ask me.
+Dialogue: 0,1:07:55.27,1:07:57.33,CHT,,0,0,0,!Effect,變老不是壞事 本\N{\rENG}Getting old ain't bad, Ben.
+Dialogue: 0,1:07:57.40,1:07:59.50,CHT,,0,0,0,!Effect,變老是收穫\N{\rENG}Getting old, that's earned.
+Dialogue: 0,1:08:33.37,1:08:35.77,CHT,,0,0,0,!Effect,有一天你必須決定\N{\rENG}There will come a time when you might have to decide
+Dialogue: 0,1:08:35.84,1:08:37.71,CHT,,0,0,0,!Effect,誰活下來誰死去\N{\rENG}who lives and dies out there.
+Dialogue: 0,1:08:39.24,1:08:40.64,CHT,,0,0,0,!Effect,這可不是好差事\N{\rENG}It's a terrible responsibility,
+Dialogue: 0,1:08:40.92,1:08:44.25,CHT,,0,0,0,!Effect,但這是你作為救生員必須學會做的{\r}
+Dialogue: 0,1:08:47.42,1:08:48.82,CHT,,0,0,0,!Effect,事實上{\r}
+Dialogue: 0,1:08:50.06,1:08:52.62,CHT,,0,0,0,!Effect,這是你作為一個人{\r}
+Dialogue: 0,1:08:52.73,1:08:54.06,CHT,,0,0,0,!Effect,一定會遇到的情況{\r}
+Dialogue: 0,1:08:57.50,1:09:01.49,CHT,,0,0,0,!Effect,你一定會碰到說不的時候{\r}
+Dialogue: 0,1:09:02.61,1:09:06.77,CHT,,0,0,0,!Effect,最重要的是保證自己能活著{\r}
+Dialogue: 0,1:09:07.78,1:09:13.74,CHT,,0,0,0,!Effect,你會面對5到20個船員對你說"救我救我"{\r}
+Dialogue: 0,1:09:13.82,1:09:15.75,CHT,,0,0,0,!Effect,他們在等待奇跡{\r}
+Dialogue: 0,1:09:16.92,1:09:19.72,CHT,,0,0,0,!Effect,- 你多大了 霍吉? - 24{\r}
+Dialogue: 0,1:09:20.02,1:09:23.39,CHT,,0,0,0,!Effect,在24歲的年紀 你必須成為那個奇跡{\r}
+Dialogue: 0,1:09:23.69,1:09:26.99,CHT,,0,0,0,!Effect,你得找到成為奇跡的辦法{\r}
+Dialogue: 0,1:09:30.90,1:09:33.80,CHT,,0,0,0,!Effect,向右看 向前看 向左看{\r}
+Dialogue: 0,1:09:34.60,1:09:35.83,CHT,,0,0,0,!Effect,烏拉{\r}
+Dialogue: 0,1:09:42.98,1:09:46.21,CHT,,0,0,0,!Effect,先生你還好嗎? 我是海岸警衛隊救生員{\r}
+Dialogue: 0,1:09:56.79,1:09:57.95,CHT,,0,0,0,!Effect,再來一次{\r}
+Dialogue: 0,1:10:20.58,1:10:22.52,CHT,,0,0,0,!Effect,好吧 就這樣 休息一下{\r}
+Dialogue: 0,1:10:22.59,1:10:25.78,CHT,,0,0,0,!Effect,- 他每次都很慌張 軍士長 - 霍吉 過來{\r}
+Dialogue: 0,1:10:29.79,1:10:30.85,CHT,,0,0,0,!Effect,嘿{\r}
+Dialogue: 0,1:10:35.56,1:10:37.69,CHT,,0,0,0,!Effect,你和生還者唯一的區別{\r}
+Dialogue: 0,1:10:37.77,1:10:40.60,CHT,,0,0,0,!Effect,是你們在水裡的態度{\r}
+Dialogue: 0,1:10:40.67,1:10:42.60,CHT,,0,0,0,!Effect,你得找到面對混亂{\r}
+Dialogue: 0,1:10:42.67,1:10:45.40,CHT,,0,0,0,!Effect,冷靜下來的辦法 明白嗎?{\r}
+Dialogue: 0,1:10:48.64,1:10:51.27,CHT,,0,0,0,!Effect,這是你的第一次失敗 查理{\r}
+Dialogue: 0,1:10:51.75,1:10:54.08,CHT,,0,0,0,!Effect,再多一次你就走人{\r}
+Dialogue: 0,1:10:56.82,1:10:59.98,CHT,,0,0,0,!Effect,- 出來 - 是 二級軍士長{\r}
+Dialogue: 0,1:11:05.16,1:11:06.96,CHT,,0,0,0,!Effect,怎麼了 費舍爾?{\r}
+Dialogue: 0,1:11:15.50,1:11:18.20,CHT,,0,0,0,!Effect,你不必聽他的 霍吉{\r}
+Dialogue: 0,1:11:18.94,1:11:22.10,CHT,,0,0,0,!Effect,你知道麼 這對你來說太容易了 費舍爾{\r}
+Dialogue: 0,1:11:22.58,1:11:23.64,CHT,,0,0,0,!Effect,是這樣嗎?{\r}
+Dialogue: 0,1:11:25.05,1:11:26.04,CHT,,0,0,0,!Effect,沒錯{\r}
+Dialogue: 0,1:11:27.08,1:11:28.57,CHT,,0,0,0,!Effect,知道嗎 你還是沒有搞清楚{\r}
+Dialogue: 0,1:11:29.89,1:11:32.45,CHT,,0,0,0,!Effect,你不知道你比我堅強多了{\r}
+Dialogue: 0,1:11:32.52,1:11:33.68,CHT,,0,0,0,!Effect,為什麼?{\r}
+Dialogue: 0,1:11:33.76,1:11:36.66,CHT,,0,0,0,!Effect,如果我被踢出去了 我可不會回來{\r}
+Dialogue: 0,1:11:36.73,1:11:39.06,CHT,,0,0,0,!Effect,我絕對不會再次回來{\r}
+Dialogue: 0,1:11:39.13,1:11:40.89,CHT,,0,0,0,!Effect,我是說 你是個堅毅的傢伙{\r}
+Dialogue: 0,1:11:40.96,1:11:42.29,CHT,,0,0,0,!Effect,是愚蠢{\r}
+Dialogue: 0,1:11:43.13,1:11:45.26,CHT,,0,0,0,!Effect,你來了多久了 夥計?{\r}
+Dialogue: 0,1:11:47.00,1:11:49.94,CHT,,0,0,0,!Effect,總共...不知道 第一次10周{\r}
+Dialogue: 0,1:11:50.01,1:11:53.91,CHT,,0,0,0,!Effect,- 第二次6周零2天 - 這次是6周{\r}
+Dialogue: 0,1:11:53.98,1:11:55.14,CHT,,0,0,0,!Effect,所以 你來這兒的時間{\r}
+Dialogue: 0,1:11:55.21,1:11:57.54,CHT,,0,0,0,!Effect,比任何一個從這裡畢業的人都要久了{\r}
+Dialogue: 0,1:11:57.61,1:11:59.48,CHT,,0,0,0,!Effect,但你還不覺得你能畢業{\r}
+Dialogue: 0,1:12:02.35,1:12:04.48,CHT,,0,0,0,!Effect,打起精神來 夥計{\r}
+Dialogue: 0,1:12:05.15,1:12:06.68,CHT,,0,0,0,!Effect,走吧 我們去喝幾杯{\r}
+Dialogue: 0,1:12:07.66,1:12:11.06,CHT,,0,0,0,!Effect,嘿 等等 你不是 和婚禮上遇到的女孩有約嗎?{\r}
+Dialogue: 0,1:12:11.46,1:12:15.92,CHT,,0,0,0,!Effect,是的 但現在還沒到9:00 還有時間 把衣服穿上{\r}
+Dialogue: 0,1:12:18.70,1:12:20.00,CHT,,0,0,0,!Effect,我們走{\r}
+Dialogue: 0,1:12:21.14,1:12:23.47,CHT,,0,0,0,!Effect,當你被往下拽的時候{\r}
+Dialogue: 0,1:12:23.54,1:12:26.17,CHT,,0,0,0,!Effect,- 移動你的手臂 - 等等 我們去哪裡?{\r}
+Dialogue: 0,1:12:27.84,1:12:31.18,CHT,,0,0,0,!Effect,傑克 這是烏賊酒吧 是海軍的地頭{\r}
+Dialogue: 0,1:12:31.25,1:12:32.77,CHT,,0,0,0,!Effect,我才不管呢 我們只是喝瓶酒而已{\r}
+Dialogue: 0,1:12:32.75,1:12:36.05,CHT,,0,0,0,!Effect,你被拖下水的時候 你必須把自己弄出來\N{\rENG}When you're pulling through the water, you're gonna pull yourself through.
+Dialogue: 0,1:12:36.75,1:12:38.15,CHT,,0,0,0,!Effect,- 就像 你知道 - 我得迅速\N{\rENG}- Like, you know... - So I'll go fast.
+Dialogue: 0,1:12:38.22,1:12:40.65,CHT,,0,0,0,!Effect,不 你得側身擺脫 就像這樣\N{\rENG}No, you wanna lay to your side and pull it like that.
+Dialogue: 0,1:12:45.66,1:12:47.86,CHT,,0,0,0,!Effect,嘿 查理 把那些衣服換掉\N{\rENG}Hey, Charlie, you get those fittings replaced
+Dialogue: 0,1:12:47.93,1:12:50.33,CHT,,0,0,0,!Effect,- 在你喝醉之前好嗎? - 是 長官\N{\rENG}- before you came off to get tanked up? - Yes, sir, Captain.
+Dialogue: 0,1:12:50.40,1:12:52.77,CHT,,0,0,0,!Effect,是的 我親眼看到才相信\N{\rENG}Yeah, I'll believe that when I see it.
+Dialogue: 0,1:12:52.84,1:12:54.00,CHT,,0,0,0,!Effect,我們去"A"學校\N{\rENG}We go to "A" School,
+Dialogue: 0,1:12:54.07,1:12:56.66,CHT,,0,0,0,!Effect,這是軍隊裡門檻最高的學校\N{\rENG}which is the most difficult school in the military.
+Dialogue: 0,1:12:56.74,1:12:59.54,CHT,,0,0,0,!Effect,那兒的淘汰率是 50%嗎?\N{\rENG}The attrition rate's, like... What is it, 50%?
+Dialogue: 0,1:12:59.61,1:13:00.60,CHT,,0,0,0,!Effect,50%\N{\rENG}50%.
+Dialogue: 0,1:13:00.68,1:13:02.41,CHT,,0,0,0,!Effect,- 超過50% - 超過50\N{\rENG}- It's over 50%. - Over 50.
+Dialogue: 0,1:13:02.48,1:13:05.11,CHT,,0,0,0,!Effect,我們還在這裡 因為我們是精英中的精英\N{\rENG}We're still here, 'cause we're the best of the best.
+Dialogue: 0,1:13:05.92,1:13:09.87,CHT,,0,0,0,!Effect,當暴風來了港口關閉 知道誰出任務嗎?\N{\rENG}When storms shut down entire ports, you know who goes out?
+Dialogue: 0,1:13:10.42,1:13:11.72,CHT,,0,0,0,!Effect,是我們\N{\rENG}We do.
+Dialogue: 0,1:13:11.79,1:13:14.38,CHT,,0,0,0,!Effect,當颶風...當颶風讓海軍不能動彈時\N{\rENG}When hurricanes... When hurricanes ground the US Navy,
+Dialogue: 0,1:13:14.46,1:13:18.09,CHT,,0,0,0,!Effect,就像那邊的小孩子一樣 猜猜誰會出任務?\N{\rENG}like these little guys over here, guess who goes out?
+Dialogue: 0,1:13:18.16,1:13:19.68,CHT,,0,0,0,!Effect,沒錯 是我們\N{\rENG}That's right, we do.
+Dialogue: 0,1:13:19.76,1:13:22.46,CHT,,0,0,0,!Effect,聽著 親愛的 你得小聲點 好嗎?\N{\rENG}Look, honey, you better keep it down in here, okay?
+Dialogue: 0,1:13:22.53,1:13:24.47,CHT,,0,0,0,!Effect,好的 親愛的 她叫我"親愛的"\N{\rENG}Okay, honey. She called me "honey."
+Dialogue: 0,1:13:26.04,1:13:27.23,CHT,,0,0,0,!Effect,好的 親愛的\N{\rENG}Okay, honey.
+Dialogue: 0,1:13:27.30,1:13:30.30,CHT,,0,0,0,!Effect,當上帝從天而降\N{\rENG}But when God himself reaches down from heaven...
+Dialogue: 0,1:13:31.01,1:13:33.87,CHT,,0,0,0,!Effect,- 他會怎麼做 傑克 當他... - 把房子從地上撕裂\N{\rENG}- What does he do, Jake, when he... - Rips houses off the foundation.
+Dialogue: 0,1:13:33.94,1:13:37.31,CHT,,0,0,0,!Effect,當上帝把房子從地上撕裂 我們出任務\N{\rENG}When God himself rips houses off the foundation, we go out,
+Dialogue: 0,1:13:37.38,1:13:39.08,CHT,,0,0,0,!Effect,因為我們是救生員\N{\rENG}because we are rescue swimmers,
+Dialogue: 0,1:13:39.15,1:13:41.74,CHT,,0,0,0,!Effect,這是我們的工作 我們幹的就是這個\N{\rENG}and that is our job, and that's what we do.
+Dialogue: 0,1:13:41.82,1:13:43.94,CHT,,0,0,0,!Effect,你應該重新檢查一下羅盤\N{\rENG}You might wanna recheck your compass.
+Dialogue: 0,1:13:44.02,1:13:46.42,CHT,,0,0,0,!Effect,這裡可不是什麼爛海盜來的酒吧\N{\rENG}This ain't no puddle pirate bar.
+Dialogue: 0,1:13:55.10,1:13:57.93,CHT,,0,0,0,!Effect,沒問題 我們馬上就走\N{\rENG}No problem, because we were just leaving anyway.
+Dialogue: 0,1:13:58.00,1:13:59.66,CHT,,0,0,0,!Effect,- 坐下 霍吉 - 傑克\N{\rENG}- Sit down, Hodge. - Jake.
+Dialogue: 0,1:13:59.74,1:14:01.43,CHT,,0,0,0,!Effect,- 把酒喝完 - 傑克\N{\rENG}- Finish your beer. - Jake.
+Dialogue: 0,1:14:01.50,1:14:03.13,CHT,,0,0,0,!Effect,對 坐下 霍吉\N{\rENG}Yeah, sit, Hodge.
+Dialogue: 0,1:14:03.81,1:14:05.57,CHT,,0,0,0,!Effect,夥計 這是我的啤酒\N{\rENG}That's my beer, man.
+Dialogue: 0,1:14:10.58,1:14:12.05,CHT,,0,0,0,!Effect,喝完了嗎?\N{\rENG}Finished now?
+Dialogue: 0,1:14:13.78,1:14:15.65,CHT,,0,0,0,!Effect,祝你愉快\N{\rENG}Must be happy hour.
+Dialogue: 0,1:14:20.66,1:14:21.65,CHT,,0,0,0,!Effect,嘿!\N{\rENG}Hey!
+Dialogue: 0,1:14:23.16,1:14:24.18,CHT,,0,0,0,!Effect,後退\N{\rENG}Back off.
+Dialogue: 0,1:14:26.76,1:14:29.25,CHT,,0,0,0,!Effect,來這裡的都是退休海軍\N{\rENG}Everyone in this place is retired Navy.
+Dialogue: 0,1:14:29.33,1:14:32.06,CHT,,0,0,0,!Effect,嘿 嘿 我什麼時候才能用電話?\N{\rENG}Hey. Hey, when do I get that phone call?
+Dialogue: 0,1:14:32.70,1:14:36.16,CHT,,0,0,0,!Effect,我知道我有權力打電話 什麼時候給我電話打?\N{\rENG}I know I get a phone call. When do I get my phone call?
+Dialogue: 0,1:14:41.44,1:14:42.97,CHT,,0,0,0,!Effect,女士 非常抱歉\N{\rENG}Ma'am, I am sorry,
+Dialogue: 0,1:14:43.05,1:14:45.67,CHT,,0,0,0,!Effect,如果20分鐘沒人來 我可要把桌子給別人了\N{\rENG}but if nobody come in 20 minutes, I need the table.
+Dialogue: 0,1:14:46.05,1:14:47.11,CHT,,0,0,0,!Effect,- 好的 - 對不起\N{\rENG}- Okay. - I'm sorry.
+Dialogue: 0,1:14:47.18,1:14:48.28,CHT,,0,0,0,!Effect,好吧\N{\rENG}Yeah.
+Dialogue: 0,1:14:52.66,1:14:54.59,CHT,,0,0,0,!Effect,她再也不會和我說話了\N{\rENG}She's never gonna talk to me again.
+Dialogue: 0,1:14:55.52,1:14:57.92,CHT,,0,0,0,!Effect,你知道他們會把我們踢出去的 對嗎?\N{\rENG}You know they're gonna kick us out for this, right?
+Dialogue: 0,1:14:57.99,1:14:59.15,CHT,,0,0,0,!Effect,是的\N{\rENG}Yep.
+Dialogue: 0,1:15:03.37,1:15:05.60,CHT,,0,0,0,!Effect,至少他們不會說我們是自己退出的\N{\rENG}Least they can't say we quit.
+Dialogue: 0,1:15:06.67,1:15:10.94,CHT,,0,0,0,!Effect,我辦不到的 長官說的對 每次我都緊張\N{\rENG}I was never gonna make it, anyway. Skinner's right. Panic every time.
+Dialogue: 0,1:15:12.31,1:15:14.14,CHT,,0,0,0,!Effect,夥計 別管長官怎麼說\N{\rENG}Man, screw Skinner.
+Dialogue: 0,1:15:15.58,1:15:17.41,CHT,,0,0,0,!Effect,我是長官 來掙脫我\N{\rENG}I'm Skinner. Break my hold.
+Dialogue: 0,1:15:17.48,1:15:19.97,CHT,,0,0,0,!Effect,嘿 夥計 你在做什麼? 來吧 費舍爾 放開我\N{\rENG}Hey, what are you doing, man? Come on, Fischer, get off me.
+Dialogue: 0,1:15:20.05,1:15:21.31,CHT,,0,0,0,!Effect,時間有限 快點掙脫我\N{\rENG}Clock's ticking. Break it.
+Dialogue: 0,1:15:21.38,1:15:24.61,CHT,,0,0,0,!Effect,費舍爾 你弄傷我了 費舍爾 放開我 夥計!\N{\rENG}Fischer, you're hurting me, man. Fischer, get off me, man!
+Dialogue: 0,1:15:25.62,1:15:28.28,CHT,,0,0,0,!Effect,快點 費舍爾 你弄傷我了 費舍爾 放開!\N{\rENG}Come on, Fischer, you're hurting me. Fischer, man, get off!
+Dialogue: 0,1:15:28.36,1:15:30.38,CHT,,0,0,0,!Effect,- 快他媽的掙脫我 - 費舍爾 放開我!\N{\rENG}- Break the goddamn hold. - Fischer, get off me, man!
+Dialogue: 0,1:15:30.46,1:15:33.05,CHT,,0,0,0,!Effect,- 快掙脫 霍吉 - 費舍爾 放開我!\N{\rENG}- Break the goddamn hold, Hodge. - Fischer, get off me!
+Dialogue: 0,1:15:34.56,1:15:36.22,CHT,,0,0,0,!Effect,我說 放開我!\N{\rENG}I said, get off me!
+Dialogue: 0,1:15:36.70,1:15:37.89,CHT,,0,0,0,!Effect,好吧\N{\rENG}All right.
+Dialogue: 0,1:15:38.17,1:15:41.36,CHT,,0,0,0,!Effect,你在水裡的時候就該這樣\N{\rENG}Now, it's just like that when you're in the water.
+Dialogue: 0,1:15:44.34,1:15:47.40,CHT,,0,0,0,!Effect,好了 現在我們可以走了\N{\rENG}Well, now. We could come back.
+Dialogue: 0,1:15:47.88,1:15:51.24,CHT,,0,0,0,!Effect,給你們點時間抽抽煙 說說枕邊話什麼的\N{\rENG}Give you boys time for a smoke and some pillow talk.
+Dialogue: 0,1:15:59.29,1:16:00.55,CHT,,0,0,0,!Effect,你不能把我們踢出去\N{\rENG}You can't kick us out.
+Dialogue: 0,1:16:00.62,1:16:02.75,CHT,,0,0,0,!Effect,這叫不守紀律 我們可以把你們踢了\N{\rENG}It's called disorderly conduct, and yes, we can.
+Dialogue: 0,1:16:02.83,1:16:05.45,CHT,,0,0,0,!Effect,- 我們沒有不及格 - 我們的專業包括遵守紀律\N{\rENG}- We didn't fail at nothing. - Our profession is all about control.
+Dialogue: 0,1:16:05.53,1:16:07.26,CHT,,0,0,0,!Effect,你們這方面都不及格\N{\rENG}You both failed miserably in that department.
+Dialogue: 0,1:16:07.33,1:16:09.13,CHT,,0,0,0,!Effect,站在這裡\N{\rENG}Hold it right there.
+Dialogue: 0,1:16:09.20,1:16:11.00,CHT,,0,0,0,!Effect,- 軍士長? - 進來吧\N{\rENG}- Senior? - Yeah, come in.
+Dialogue: 0,1:16:13.77,1:16:15.90,CHT,,0,0,0,!Effect,他們的開除報告\N{\rENG}Their disenrollment records.
+Dialogue: 0,1:16:17.71,1:16:19.04,CHT,,0,0,0,!Effect,酒吧鬥毆?\N{\rENG}Bar fight?
+Dialogue: 0,1:16:20.54,1:16:22.67,CHT,,0,0,0,!Effect,- 好了 帶他們進來 - 軍士長\N{\rENG}- All right, bring them in. - Senior.
+Dialogue: 0,1:16:22.78,1:16:24.11,CHT,,0,0,0,!Effect,進來吧\N{\rENG}Square it.
+Dialogue: 0,1:16:30.92,1:16:34.12,CHT,,0,0,0,!Effect,這都是我的錯 二級軍事長 霍吉和這無關\N{\rENG}It's all my fault, Senior Chief. Hodge had nothing to do with it.
+Dialogue: 0,1:16:35.89,1:16:38.09,CHT,,0,0,0,!Effect,- 是這樣嗎 霍吉? - 沒錯\N{\rENG}- That true, Hodge? - It's true.
+Dialogue: 0,1:16:42.00,1:16:44.69,CHT,,0,0,0,!Effect,好吧 你解散吧\N{\rENG}All right. Fine, you're dismissed.
+Dialogue: 0,1:16:45.17,1:16:49.13,CHT,,0,0,0,!Effect,- 二級軍士長 我 - 我說了你已經解散了\N{\rENG}- Senior Chief, I was... - I said that you are dismissed.
+Dialogue: 0,1:16:50.01,1:16:51.27,CHT,,0,0,0,!Effect,走吧\N{\rENG}Let's go.
+Dialogue: 0,1:16:58.38,1:17:01.11,CHT,,0,0,0,!Effect,因為我捍衛了海岸警衛隊的尊嚴 你就要踢我走人嗎?\N{\rENG}You're gonna kick me out for defending the Coast Guard?
+Dialogue: 0,1:17:01.58,1:17:03.68,CHT,,0,0,0,!Effect,海岸警衛隊有200年歷史\N{\rENG}The Coast Guard's been around for 200 years.
+Dialogue: 0,1:17:03.75,1:17:07.09,CHT,,0,0,0,!Effect,我想只有你這樣的傻冒 會這樣維護它的尊嚴\N{\rENG}I doubt a couple of knuckleheads like yourself are gonna defend it.
+Dialogue: 0,1:17:07.46,1:17:08.68,CHT,,0,0,0,!Effect,坐下\N{\rENG}Sit down.
+Dialogue: 0,1:17:12.19,1:17:15.79,CHT,,0,0,0,!Effect,我想和你平靜下來平等地談談 但是\N{\rENG}I've been trying to peel the layers back on you for a while now, and I...
+Dialogue: 0,1:17:16.10,1:17:17.33,CHT,,0,0,0,!Effect,我有一點不明白\N{\rENG}I just don't get it.
+Dialogue: 0,1:17:18.83,1:17:20.93,CHT,,0,0,0,!Effect,我是說 這工作對於你這樣的人來說\N{\rENG}I mean, this kind of work seems a little remedial
+Dialogue: 0,1:17:21.00,1:17:22.03,CHT,,0,0,0,!Effect,似乎只是一種療傷\N{\rENG}for someone like yourself.
+Dialogue: 0,1:17:22.10,1:17:24.50,CHT,,0,0,0,!Effect,你知道 游泳冠軍 常春藤每一個學校的獎學金\N{\rENG}You know, big swim champ, offer to every lvy League.
+Dialogue: 0,1:17:24.57,1:17:27.24,CHT,,0,0,0,!Effect,你放棄一切到這和我們在一起\N{\rENG}You give it all up to be here with us.
+Dialogue: 0,1:17:28.51,1:17:32.00,CHT,,0,0,0,!Effect,- 為什麼? - 我是為了拯救生命 二級軍士長\N{\rENG}- Why? - I'm here to save lives, Senior Chief.
+Dialogue: 0,1:17:36.32,1:17:38.55,CHT,,0,0,0,!Effect,我和你的教練談過了 傑克\N{\rENG}I spoke with your coach, Jake.
+Dialogue: 0,1:17:40.76,1:17:43.22,CHT,,0,0,0,!Effect,- 好我的教練談? - 是的 我和你的教練談了\N{\rENG}- You spoke with my coach? - Yeah, I spoke with your coach.
+Dialogue: 0,1:17:43.29,1:17:46.66,CHT,,0,0,0,!Effect,你的檔案裡有些東西讓我很牽掛\N{\rENG}Something in your file just kept hanging me up.
+Dialogue: 0,1:17:46.73,1:17:50.19,CHT,,0,0,0,!Effect,你第一年和第二年連續獲得州裡的冠軍\N{\rENG}You win the state championship your freshman and sophomore year
+Dialogue: 0,1:17:50.27,1:17:52.93,CHT,,0,0,0,!Effect,但後兩年你沒再去遊\N{\rENG}and then you don't swim the next two.
+Dialogue: 0,1:17:53.20,1:17:56.64,CHT,,0,0,0,!Effect,我只是個公立學校畢業的傢伙\N{\rENG}I'm just a public school guy, so pardon me,
+Dialogue: 0,1:17:56.71,1:18:00.47,CHT,,0,0,0,!Effect,我一直沒有意識到 直到看到這些\N{\rENG}but it didn't add up until now.
+Dialogue: 0,1:18:06.68,1:18:09.88,CHT,,0,0,0,!Effect,"科科·霍裡華 100米混合泳冠軍"\N{\rENG}"Kirk Holloway, 100-meter medley winner,
+Dialogue: 0,1:18:10.72,1:18:13.19,CHT,,0,0,0,!Effect,"從車窗裡甩了出去"\N{\rENG}"thrown through the passenger window.
+Dialogue: 0,1:18:13.26,1:18:15.55,CHT,,0,0,0,!Effect,"當場死亡"\N{\rENG}"Pronounced dead at the scene.
+Dialogue: 0,1:18:17.06,1:18:22.02,CHT,,0,0,0,!Effect,"艾比·科曼 美國1隊 肺穿孔"\N{\rENG}"Abe lkeman, first team All-American, lungs crushed.
+Dialogue: 0,1:18:25.07,1:18:29.03,CHT,,0,0,0,!Effect,"卡爾·山多夫 50米自由泳冠軍"\N{\rENG}"Carl Sandoval, 50-meter freestyle champ,
+Dialogue: 0,1:18:29.10,1:18:33.73,CHT,,0,0,0,!Effect,"送往醫院的途中死於內出血"\N{\rENG}"made it all the way to the hospital. Died of internal bleeding."
+Dialogue: 0,1:18:43.29,1:18:46.02,CHT,,0,0,0,!Effect,我想你都知道了\N{\rENG}I guess you just know everything, then.
+Dialogue: 0,1:18:46.86,1:18:49.45,CHT,,0,0,0,!Effect,我知道失去隊友是什麼樣的\N{\rENG}I know what it's like to lose a team.
+Dialogue: 0,1:18:50.89,1:18:52.02,CHT,,0,0,0,!Effect,是嗎\N{\rENG}Yeah?
+Dialogue: 0,1:18:52.29,1:18:53.69,CHT,,0,0,0,!Effect,生活在一個小鎮上\N{\rENG}What about living in a small town
+Dialogue: 0,1:18:53.76,1:18:55.89,CHT,,0,0,0,!Effect,別人認為他殺了自己的兄弟\N{\rENG}where everyone thinks that you killed their brother
+Dialogue: 0,1:18:55.96,1:18:57.52,CHT,,0,0,0,!Effect,兒子或是最好的朋友 會是什麼感覺?\N{\rENG}or their son or their best friend?
+Dialogue: 0,1:18:57.60,1:18:59.00,CHT,,0,0,0,!Effect,你知道那是什麼感覺嗎?\N{\rENG}You know about that?
+Dialogue: 0,1:18:59.94,1:19:03.37,CHT,,0,0,0,!Effect,看來小鎮上的人相互之間打招呼\N{\rENG}Kind of small town where everyone still waves to everyone,
+Dialogue: 0,1:19:04.61,1:19:06.20,CHT,,0,0,0,!Effect,但不和你打招呼?\N{\rENG}just not to you?
+Dialogue: 0,1:19:08.61,1:19:12.51,CHT,,0,0,0,!Effect,我讀了報告 傑克 當時你的酒精含量為零\N{\rENG}I read the report, Jake. Your blood alcohol was zip that night.
+Dialogue: 0,1:19:13.55,1:19:16.68,CHT,,0,0,0,!Effect,我猜是另一個冒失的司機開的車\N{\rENG}I'm guessing there was a flip for designated driver.
+Dialogue: 0,1:19:16.75,1:19:18.05,CHT,,0,0,0,!Effect,你卻被錯怪\N{\rENG}You lost.
+Dialogue: 0,1:19:19.09,1:19:21.18,CHT,,0,0,0,!Effect,猜猜就能解決問題?\N{\rENG}Guess that just makes it all go away, huh?
+Dialogue: 0,1:19:21.26,1:19:24.49,CHT,,0,0,0,!Effect,不 沒有解決任何問題 這只是一場意外\N{\rENG}No, it doesn't make it all right. It just makes it an accident.
+Dialogue: 0,1:19:24.99,1:19:27.02,CHT,,0,0,0,!Effect,至少報告上這樣說\N{\rENG}At least that's how it reads.
+Dialogue: 0,1:19:28.36,1:19:30.03,CHT,,0,0,0,!Effect,那時你才16歲 傑克\N{\rENG}You were 16 years old, Jake.
+Dialogue: 0,1:19:30.10,1:19:32.62,CHT,,0,0,0,!Effect,我不是你的牧師 但如果我是 我想\N{\rENG}I'm not your priest, but if I was, I think...
+Dialogue: 0,1:19:33.10,1:19:35.20,CHT,,0,0,0,!Effect,我想我不會為難你\N{\rENG}I think maybe you'd deserve a pass.
+Dialogue: 0,1:19:38.74,1:19:40.77,CHT,,0,0,0,!Effect,不為難我?\N{\rENG}You're giving me a pass?
+Dialogue: 0,1:19:40.94,1:19:45.07,CHT,,0,0,0,!Effect,你以為你知道所有事 其實你什麼都不是\N{\rENG}You just think you know everything with your psychobabble bullshit.
+Dialogue: 0,1:19:45.15,1:19:47.17,CHT,,0,0,0,!Effect,為什麼我在這裡? 為什麼你在這裡?\N{\rENG}Why am I here? Why are you here?
+Dialogue: 0,1:19:48.58,1:19:51.28,CHT,,0,0,0,!Effect,你太老了只能幹這個 你已經快不行了\N{\rENG}You're too old to be doing this. You're washed-up here.
+Dialogue: 0,1:19:51.35,1:19:54.91,CHT,,0,0,0,!Effect,你可不想在池子裡教小孩 我說的對嗎?\N{\rENG}You don't wanna be teaching a bunch of kids in a pool. Am I right?
+Dialogue: 0,1:19:54.99,1:19:58.39,CHT,,0,0,0,!Effect,我不在乎你看了什麼說了什麼\N{\rENG}I don't give a shit what you read or who you talked to.
+Dialogue: 0,1:19:58.46,1:20:02.40,CHT,,0,0,0,!Effect,你根本不瞭解我 你不... 我能管好我自己\N{\rENG}You don't know about me! You don't... I have me under control.
+Dialogue: 0,1:20:06.94,1:20:08.46,CHT,,0,0,0,!Effect,我能看出來\N{\rENG}I can see that.
+Dialogue: 0,1:20:27.59,1:20:30.35,CHT,,0,0,0,!Effect,我和你唯一的區別是\N{\rENG}The only difference between you and me is,
+Dialogue: 0,1:20:31.89,1:20:35.06,CHT,,0,0,0,!Effect,我沒有幫在我手上 死去的人穿上衣服 傑克\N{\rENG}I don't wear the ones I lost on my arm, Jake.
+Dialogue: 0,1:20:43.51,1:20:45.74,CHT,,0,0,0,!Effect,我知道你的處境 傑克\N{\rENG}I know where you're at, Jake.
+Dialogue: 0,1:20:46.64,1:20:48.34,CHT,,0,0,0,!Effect,我也在那兒\N{\rENG}I'm there myself.
+Dialogue: 0,1:20:50.58,1:20:54.11,CHT,,0,0,0,!Effect,每天我都會問自己 為什麼我是倖存下來的那個人\N{\rENG}I ask myself every day why I was the one that survived.
+Dialogue: 0,1:20:59.42,1:21:01.65,CHT,,0,0,0,!Effect,- 然後? - 然後\N{\rENG}- And? - And...
+Dialogue: 0,1:21:04.46,1:21:05.98,CHT,,0,0,0,!Effect,如果我回答不了自己\N{\rENG}And if I can't answer that for me,
+Dialogue: 0,1:21:06.06,1:21:09.46,CHT,,0,0,0,!Effect,我沒辦法試著向你解釋\N{\rENG}I'm certainly not going to try and answer it for you.
+Dialogue: 0,1:21:14.27,1:21:15.67,CHT,,0,0,0,!Effect,坐下\N{\rENG}Have a seat.
+Dialogue: 0,1:21:22.11,1:21:25.24,CHT,,0,0,0,!Effect,我想讓你成為其中一員\N{\rENG}I want you to start being a member of this team,
+Dialogue: 0,1:21:26.45,1:21:28.31,CHT,,0,0,0,!Effect,你知道我指的是什麼\N{\rENG}the team you have now.
+Dialogue: 0,1:21:29.59,1:21:31.49,CHT,,0,0,0,!Effect,你很有天賦 傑克\N{\rENG}You have a gift, Jake.
+Dialogue: 0,1:21:31.85,1:21:33.91,CHT,,0,0,0,!Effect,你是到這裡來的最棒的隊員\N{\rENG}You're the best swimmer to come through this program,
+Dialogue: 0,1:21:33.99,1:21:35.18,CHT,,0,0,0,!Effect,不用很久 你能輕鬆通過的\N{\rENG}hands down, by far.
+Dialogue: 0,1:21:35.26,1:21:37.19,CHT,,0,0,0,!Effect,你有整個紀錄板去證明\N{\rENG}You got a whole record board to prove it.
+Dialogue: 0,1:21:37.26,1:21:39.96,CHT,,0,0,0,!Effect,你知道我看到了什麼嗎?\N{\rENG}But you know what I see when I look at it?
+Dialogue: 0,1:21:40.03,1:21:43.49,CHT,,0,0,0,!Effect,我看到有人足夠快能夠 第一個游到倖存者身邊\N{\rENG}I see someone fast enough who's gonna get there first.
+Dialogue: 0,1:21:44.70,1:21:46.83,CHT,,0,0,0,!Effect,我看到有人足夠強壯能夠支撐到最後\N{\rENG}I see someone strong enough who's gonna last.
+Dialogue: 0,1:21:46.90,1:21:51.60,CHT,,0,0,0,!Effect,我看到有人能拯救別人救不了的人\N{\rENG}I see someone who can save a life that maybe nobody else could.
+Dialogue: 0,1:21:53.94,1:21:57.07,CHT,,0,0,0,!Effect,你想以你的雙手創造榮耀嗎?\N{\rENG}You really wanna honor the initials on your arm?
+Dialogue: 0,1:21:58.38,1:22:00.21,CHT,,0,0,0,!Effect,那就好好利用你的天賦吧\N{\rENG}Then honor your gift.
+Dialogue: 0,1:22:03.19,1:22:05.31,CHT,,0,0,0,!Effect,救每一個你能救到的人 傑克\N{\rENG}Save the ones you can, Jake.
+Dialogue: 0,1:22:06.76,1:22:10.12,CHT,,0,0,0,!Effect,其餘的 我們得學會放手\N{\rENG}The rest, we've gotta let go.
+Dialogue: 0,1:22:20.94,1:22:23.06,CHT,,0,0,0,!Effect,你是說你不會開除我?\N{\rENG}Does this mean you're not gonna fail me?
+Dialogue: 0,1:22:23.87,1:22:27.64,CHT,,0,0,0,!Effect,為什麼 就為了在酒吧幫助夥伴?\N{\rENG}For what, backing up a buddy in a bar?
+Dialogue: 0,1:22:30.55,1:22:33.07,CHT,,0,0,0,!Effect,夥計 比起你我可有過更大的麻煩\N{\rENG}Man, I got bigger problems than you.
+Dialogue: 0,1:22:36.32,1:22:39.85,CHT,,0,0,0,!Effect,我不知道你 要是我 我他媽的可要操起酒瓶子揍他了\N{\rENG}I don't know about you, but I could use a fucking drink.
+Dialogue: 0,1:22:44.69,1:22:45.82,CHT,,0,0,0,!Effect,喔\N{\rENG}Oops.
+Dialogue: 0,1:22:48.33,1:22:52.20,CHT,,0,0,0,!Effect,我今天晚上都在考慮紀錄和責任之外的事\N{\rENG}I'm gonna consider everything tonight off-record and off-duty.
+Dialogue: 0,1:22:56.00,1:22:57.16,CHT,,0,0,0,!Effect,這個是個邀請\N{\rENG}That was an invite.
+Dialogue: 0,1:22:57.97,1:22:58.96,CHT,,0,0,0,!Effect,哦\N{\rENG}Oh.
+Dialogue: 0,1:23:03.31,1:23:05.28,CHT,,0,0,0,!Effect,你一定是開玩笑\N{\rENG}You gotta be kidding me.
+Dialogue: 0,1:23:05.88,1:23:09.58,CHT,,0,0,0,!Effect,- 他們是怎麼稱呼你的? - "爛海盜" 這不是...\N{\rENG}- What was it they called you? - "Puddle pirates," but it's not...
+Dialogue: 0,1:23:09.65,1:23:13.38,CHT,,0,0,0,!Effect,別去了 軍士長\N{\rENG}I'm way over it, Senior Chief. This is...
+Dialogue: 0,1:23:13.86,1:23:17.22,CHT,,0,0,0,!Effect,- 好吧 看上去可不友善啊 - 我們就喝一杯酒\N{\rENG}- Well, it's like sticks and stones. - Well, we'll just have one beer.
+Dialogue: 0,1:23:23.60,1:23:27.47,CHT,,0,0,0,!Effect,很好 他們喝的爛醉\N{\rENG}Great. They're angrier and drunker. Perfect.
+Dialogue: 0,1:23:27.54,1:23:29.94,CHT,,0,0,0,!Effect,嗨 2杯啤酒\N{\rENG}Hi. Two beers.
+Dialogue: 0,1:23:30.94,1:23:33.57,CHT,,0,0,0,!Effect,- 你在開玩笑吧 - 我就是這麼說的\N{\rENG}- You gotta be kidding me. - That's what I said.
+Dialogue: 0,1:23:34.48,1:23:37.10,CHT,,0,0,0,!Effect,聽著 別給我惹事 明白嗎?\N{\rENG}Look, I don't want any trouble, okay?
+Dialogue: 0,1:23:40.08,1:23:42.52,CHT,,0,0,0,!Effect,他們都不喜歡我們 對嗎?\N{\rENG}They really don't like us, do they?
+Dialogue: 0,1:23:42.58,1:23:47.02,CHT,,0,0,0,!Effect,不 他們覺得比我們優秀 因為他們是打仗的\N{\rENG}No. They think they're better than us because they're combat-oriented.
+Dialogue: 0,1:23:48.19,1:23:50.32,CHT,,0,0,0,!Effect,我們是海岸警衛隊 傑克\N{\rENG}We're the Coast Guard, Jake.
+Dialogue: 0,1:23:50.43,1:23:53.59,CHT,,0,0,0,!Effect,沒有人會賞識我們 除非他們需要我們\N{\rENG}Nobody really appreciates us until they need us.
+Dialogue: 0,1:23:56.13,1:23:57.39,CHT,,0,0,0,!Effect,是他嗎?\N{\rENG}That him?
+Dialogue: 0,1:24:05.34,1:24:06.40,CHT,,0,0,0,!Effect,是的\N{\rENG}Yep.
+Dialogue: 0,1:24:11.81,1:24:15.15,CHT,,0,0,0,!Effect,在我們開始流血之前我先問你個問題\N{\rENG}So let me ask you a question before we start bleeding.
+Dialogue: 0,1:24:16.82,1:24:20.85,CHT,,0,0,0,!Effect,你救的那麼多人...具體數字是多少?\N{\rENG}All those saves... What's your real number?
+Dialogue: 0,1:24:27.80,1:24:31.16,CHT,,0,0,0,!Effect,你是想死呢還是傻的可以?\N{\rENG}Do you have a death wish, or are you just shit-stupid?
+Dialogue: 0,1:24:32.50,1:24:34.99,CHT,,0,0,0,!Effect,算是犯傻勁吧\N{\rENG}I'm gonna go with stupid this time.
+Dialogue: 0,1:24:35.07,1:24:36.94,CHT,,0,0,0,!Effect,- 嗨 - 嗨\N{\rENG}- Hi. - Hi.
+Dialogue: 0,1:24:37.01,1:24:39.06,CHT,,0,0,0,!Effect,這是誰? 你老子?\N{\rENG}Who's this, your old man?
+Dialogue: 0,1:24:45.15,1:24:47.58,CHT,,0,0,0,!Effect,瞧 我很高興你還在這兒\N{\rENG}You know, I'm really glad you're still here.
+Dialogue: 0,1:24:47.65,1:24:49.31,CHT,,0,0,0,!Effect,- 喔 是嗎? - 是的\N{\rENG}- Oh, yeah? - Yeah.
+Dialogue: 0,1:24:57.66,1:25:00.39,CHT,,0,0,0,!Effect,- 小心後面 - 退下!我說退下\N{\rENG}- Behind you. - Stand down! I said stand down.
+Dialogue: 0,1:25:07.57,1:25:09.56,CHT,,0,0,0,!Effect,我想你們最好快離開\N{\rENG}I think you better leave.
+Dialogue: 0,1:25:12.54,1:25:13.63,CHT,,0,0,0,!Effect,好吧\N{\rENG}Okay.
+Dialogue: 0,1:25:16.11,1:25:17.60,CHT,,0,0,0,!Effect,走吧 傑克\N{\rENG}Come on, Jake.
+Dialogue: 0,1:25:24.22,1:25:26.62,CHT,,0,0,0,!Effect,好吧 坐下 喝杯酒\N{\rENG}All right, sit down. Have a beer.
+Dialogue: 0,1:25:27.69,1:25:30.32,CHT,,0,0,0,!Effect,- 這比我想像中的好的多了 - 是的\N{\rENG}- That went a lot better than I thought. - Yeah.
+Dialogue: 0,1:25:31.09,1:25:34.12,CHT,,0,0,0,!Effect,- 那是什麼? - 我不知道\N{\rENG}- What the hell was that? - I don't know.
+Dialogue: 0,1:25:34.66,1:25:38.46,CHT,,0,0,0,!Effect,嘿 我得向你道歉\N{\rENG}Hey, I wanted to apologize to you
+Dialogue: 0,1:25:39.80,1:25:42.93,CHT,,0,0,0,!Effect,說你太老了什麼的\N{\rENG}for what I said earlier about you being old and washed-up now.
+Dialogue: 0,1:25:45.54,1:25:48.94,CHT,,0,0,0,!Effect,你有什麼要對我說的嗎?\N{\rENG}Is there anything you'd like to say to me?
+Dialogue: 0,1:25:49.31,1:25:50.34,CHT,,0,0,0,!Effect,比方說?\N{\rENG}Like what?
+Dialogue: 0,1:25:51.45,1:25:53.41,CHT,,0,0,0,!Effect,我不知道 但我對你道歉了\N{\rENG}I don't know, but I apologized to you.
+Dialogue: 0,1:25:53.48,1:25:55.25,CHT,,0,0,0,!Effect,我只是覺得 你知道\N{\rENG}I just thought that, you know,
+Dialogue: 0,1:25:55.32,1:25:57.55,CHT,,0,0,0,!Effect,你以前可能說過些什麼\N{\rENG}there might be something you've said or done
+Dialogue: 0,1:25:57.62,1:25:59.59,CHT,,0,0,0,!Effect,那些你可以向我道歉的\N{\rENG}that you'd like to apologize to me for.
+Dialogue: 0,1:25:59.65,1:26:00.71,CHT,,0,0,0,!Effect,為什麼?\N{\rENG}Why?
+Dialogue: 0,1:26:02.42,1:26:04.62,CHT,,0,0,0,!Effect,因為就該是這樣的 我...\N{\rENG}'Cause that's how it's done. I...
+Dialogue: 0,1:26:04.99,1:26:07.29,CHT,,0,0,0,!Effect,你知道嗎 你真是太不會道歉了\N{\rENG}You suck at apologies, you know that?
+Dialogue: 0,1:26:07.40,1:26:09.39,CHT,,0,0,0,!Effect,我是說你都沒弄明白什麼是道歉\N{\rENG}I mean, you're missing the whole concept.
+Dialogue: 0,1:26:20.24,1:26:23.44,CHT,,0,0,0,!Effect,- 喂你好? - 嗨 是我\N{\rENG}- Hello? - Hi. It's me.
+Dialogue: 0,1:26:25.95,1:26:29.51,CHT,,0,0,0,!Effect,你還好嗎? 發生什麼了? 我等了你2個小時\N{\rENG}Are you okay? What happened? I mean, I waited for two hours.
+Dialogue: 0,1:26:29.82,1:26:33.95,CHT,,0,0,0,!Effect,嗯 聽著 這很複雜\N{\rENG}Yeah. No. Look, I'm really sorry. I...
+Dialogue: 0,1:26:34.52,1:26:35.72,CHT,,0,0,0,!Effect,怎麼了?\N{\rENG}What happened?
+Dialogue: 0,1:26:35.82,1:26:38.59,CHT,,0,0,0,!Effect,真的要說很久了\N{\rENG}It's a really long story.
+Dialogue: 0,1:26:40.13,1:26:43.69,CHT,,0,0,0,!Effect,讓我...這樣說吧\N{\rENG}Let me just... Let me put it this way.
+Dialogue: 0,1:26:44.87,1:26:49.53,CHT,,0,0,0,!Effect,這是我這輩子最好也是最壞的一天\N{\rENG}It was the best worst night of my life.
+Dialogue: 0,1:26:50.77,1:26:52.57,CHT,,0,0,0,!Effect,好吧 我很高興有人找到樂子了\N{\rENG}Well, I'm glad someone had fun.
+Dialogue: 0,1:26:57.91,1:27:00.78,CHT,,0,0,0,!Effect,明天能見你嗎?\N{\rENG}Can I see you tomorrow night?
+Dialogue: 0,1:27:01.18,1:27:03.45,CHT,,0,0,0,!Effect,明天有家長會\N{\rENG}I have parent-teacher conferences tomorrow.
+Dialogue: 0,1:27:04.45,1:27:06.08,CHT,,0,0,0,!Effect,那後天呢?\N{\rENG}What about the next night?
+Dialogue: 0,1:27:06.69,1:27:08.85,CHT,,0,0,0,!Effect,我一周都有家長會\N{\rENG}I have parent-teacher conferences all week.
+Dialogue: 0,1:27:10.26,1:27:13.25,CHT,,0,0,0,!Effect,- 你要甩了我嗎? - 不 傑克\N{\rENG}- You blowing me off? - No, Jake.
+Dialogue: 0,1:27:14.46,1:27:16.16,CHT,,0,0,0,!Effect,我不會這樣做的\N{\rENG}I wouldn't do that to somebody.
+Dialogue: 0,1:27:18.27,1:27:21.20,CHT,,0,0,0,!Effect,再過幾個小時我得出發了 我要睡了\N{\rENG}I gotta get up in a couple hours. I gotta go.
+Dialogue: 0,1:27:21.37,1:27:24.34,CHT,,0,0,0,!Effect,- 好的 - 再見\N{\rENG}- Yep. - Goodbye.
+Dialogue: 0,1:27:34.88,1:27:37.15,CHT,,0,0,0,!Effect,好了 你們還都記得該怎麼做吧\N{\rENG}All right, you know what we briefed on the ground.
+Dialogue: 0,1:27:37.22,1:27:39.85,CHT,,0,0,0,!Effect,和以前一樣 我們要一起行動\N{\rENG}Same thing. We're gonna stay together.
+Dialogue: 0,1:27:39.92,1:27:43.79,CHT,,0,0,0,!Effect,無論發生了什麼事 你們要一起行動\N{\rENG}No matter what happens out there, you stay together.
+Dialogue: 0,1:27:44.23,1:27:48.89,CHT,,0,0,0,!Effect,無論要做什麼決定 一起行動\N{\rENG}Whatever decision you make, you make as a team.
+Dialogue: 0,1:27:51.97,1:27:55.13,CHT,,0,0,0,!Effect,我們訓練時從15到20英尺跳下去\N{\rENG}We trained to freefall at 15 to 20 feet.
+Dialogue: 0,1:27:55.77,1:27:59.10,CHT,,0,0,0,!Effect,從50尺跳下去 就像跳進混凝土\N{\rENG}You fall from 50 feet, it's like hitting concrete.
+Dialogue: 0,1:27:59.51,1:28:03.31,CHT,,0,0,0,!Effect,從80到100尺跳下去 你就沒命了\N{\rENG}You fall 80 to 100 feet, you die.
+Dialogue: 0,1:28:10.42,1:28:11.82,CHT,,0,0,0,!Effect,嘿 他們走了?\N{\rENG}Hey, where they going?
+Dialogue: 0,1:28:11.89,1:28:13.58,CHT,,0,0,0,!Effect,他們會回來的 對嗎?\N{\rENG}They're supposed to come back for us, right?
+Dialogue: 0,1:28:13.66,1:28:15.68,CHT,,0,0,0,!Effect,我不知道 霍吉 你以前來過這裡\N{\rENG}I don't know. Well, Hodge, you been here before.
+Dialogue: 0,1:28:15.76,1:28:16.92,CHT,,0,0,0,!Effect,他們會回來的 對嗎?\N{\rENG}They're gonna come back for us, right?
+Dialogue: 0,1:28:16.99,1:28:19.26,CHT,,0,0,0,!Effect,是的 但是從來沒有那麼遠\N{\rENG}Yeah, but I never made it this far.
+Dialogue: 0,1:28:19.33,1:28:21.92,CHT,,0,0,0,!Effect,- 你一定在開玩笑 - 最後一周前沒這樣練過\N{\rENG}- You're kidding. - Not to the final week.
+Dialogue: 0,1:28:22.80,1:28:24.77,CHT,,0,0,0,!Effect,他們不會回來了\N{\rENG}They're not coming back.
+Dialogue: 0,1:28:25.37,1:28:28.63,CHT,,0,0,0,!Effect,- 我們該怎麼辦? - 好了 聽著\N{\rENG}- What do we do? - All right, listen up.
+Dialogue: 0,1:28:29.30,1:28:31.24,CHT,,0,0,0,!Effect,我們待在一起\N{\rENG}We stay together as a group.
+Dialogue: 0,1:28:31.31,1:28:33.80,CHT,,0,0,0,!Effect,沒有人會落下 我們是一個團隊\N{\rENG}Nobody falls behind. We all stay together.
+Dialogue: 0,1:28:33.88,1:28:36.74,CHT,,0,0,0,!Effect,有人落後了 我們就跟在他的後面 好嗎?\N{\rENG}One guy goes back, we get him back up to the front, okay?
+Dialogue: 0,1:28:36.81,1:28:38.57,CHT,,0,0,0,!Effect,我們是個團隊 烏拉\N{\rENG}We're a team. Oorah.
+Dialogue: 0,1:28:38.65,1:28:40.34,CHT,,0,0,0,!Effect,- 烏拉 - 烏拉\N{\rENG}- Oorah. - Oorah!
+Dialogue: 0,1:28:40.42,1:28:42.18,CHT,,0,0,0,!Effect,我們走 5506\N{\rENG}Let's do it, 5506.
+Dialogue: 0,1:29:18.92,1:29:21.55,CHT,,0,0,0,!Effect,先生 你沒事 我是海岸警衛隊救生員\N{\rENG}Sir, it's okay, I'm with the US Coast Guard.
+Dialogue: 0,1:29:48.28,1:29:49.51,CHT,,0,0,0,!Effect,再來一次\N{\rENG}Again.
+Dialogue: 0,1:29:57.23,1:30:00.56,CHT,,0,0,0,!Effect,我是海岸警衛隊救生員 我是來救援你的\N{\rENG}I'm a Coast Guard rescue swimmer. I'm here to help you.
+Dialogue: 0,1:30:01.86,1:30:03.16,CHT,,0,0,0,!Effect,暫停\N{\rENG}Time-out.
+Dialogue: 0,1:30:03.23,1:30:04.56,CHT,,0,0,0,!Effect,全體起立\N{\rENG}Class, pop tall.
+Dialogue: 0,1:30:04.63,1:30:07.57,CHT,,0,0,0,!Effect,霍吉 出來吧\N{\rENG}Hodge, get yourself to the side of the pool.
+Dialogue: 0,1:30:07.64,1:30:09.03,CHT,,0,0,0,!Effect,是 二級軍士長\N{\rENG}Aye, aye, Senior Chief.
+Dialogue: 0,1:30:12.54,1:30:13.91,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah!
+Dialogue: 0,1:30:23.39,1:30:24.65,CHT,,0,0,0,!Effect,冷靜 長官\N{\rENG}Easy, Chief.
+Dialogue: 0,1:30:26.35,1:30:28.12,CHT,,0,0,0,!Effect,看來這下吃的還不算太厲害\N{\rENG}Guess it was a lucky punch.
+Dialogue: 0,1:30:31.86,1:30:33.02,CHT,,0,0,0,!Effect,霍吉\N{\rENG}Hodge!
+Dialogue: 0,1:30:35.86,1:30:38.30,CHT,,0,0,0,!Effect,- 你還好嗎 長官? - 你給我站在那兒!\N{\rENG}- You all right, Chief? - You stay right there!
+Dialogue: 0,1:30:48.24,1:30:49.97,CHT,,0,0,0,!Effect,做的好 查理\N{\rENG}Well done, Charlie.
+Dialogue: 0,1:30:53.01,1:30:54.38,CHT,,0,0,0,!Effect,做的好\N{\rENG}Well done.
+Dialogue: 0,1:30:56.22,1:30:58.08,CHT,,0,0,0,!Effect,烏拉 長官\N{\rENG}Oorah, Chief Skinner.
+Dialogue: 0,1:30:58.79,1:31:01.92,CHT,,0,0,0,!Effect,5506班 "烏拉 霍吉" 數到三\N{\rENG}Class 5506, "Oorah, Hodge," on three!
+Dialogue: 0,1:31:01.99,1:31:03.89,CHT,,0,0,0,!Effect,一 二 三\N{\rENG}One, two, three.
+Dialogue: 0,1:31:03.96,1:31:05.62,CHT,,0,0,0,!Effect,烏拉 霍吉\N{\rENG}Oorah, Hodge!
+Dialogue: 0,1:31:07.40,1:31:08.86,CHT,,0,0,0,!Effect,幹的好\N{\rENG}Good for you.
+Dialogue: 0,1:31:15.77,1:31:16.83,CHT,,0,0,0,!Effect,把裝備都脫掉\N{\rENG}Get their gear off.
+Dialogue: 0,1:31:16.91,1:31:19.31,CHT,,0,0,0,!Effect,- 快點 都脫掉 - 把裝備脫掉\N{\rENG}- Go on, get that gear off. - Get that gear off!
+Dialogue: 0,1:31:32.75,1:31:34.12,CHT,,0,0,0,!Effect,脫掉!\N{\rENG}Get it off!
+Dialogue: 0,1:31:37.73,1:31:41.75,CHT,,0,0,0,!Effect,5506班 如果我失蹤了你們會來找我嗎?\N{\rENG}Class 5506, will you come find me if I am lost?
+Dialogue: 0,1:31:42.43,1:31:44.02,CHT,,0,0,0,!Effect,是的 二級軍士長\N{\rENG}Yes, Senior Chief!
+Dialogue: 0,1:31:45.40,1:31:48.03,CHT,,0,0,0,!Effect,如果我溺水了你們回來救我嗎?\N{\rENG}Will you come save me if I am drowning?
+Dialogue: 0,1:31:48.10,1:31:49.73,CHT,,0,0,0,!Effect,是的 二級軍士長\N{\rENG}Yes, Senior Chief!
+Dialogue: 0,1:31:54.81,1:31:56.57,CHT,,0,0,0,!Effect,我相信你們會的\N{\rENG}I believe you would.
+Dialogue: 0,1:31:57.58,1:32:00.10,CHT,,0,0,0,!Effect,我對這個班有很高的期望\N{\rENG}I have high hopes for this class.
+Dialogue: 0,1:32:06.86,1:32:08.88,CHT,,0,0,0,!Effect,我對你有很高的期望\N{\rENG}I have high hopes for you.
+Dialogue: 0,1:32:12.56,1:32:15.50,CHT,,0,0,0,!Effect,馬修·斯托克斯 草原城 喬治亞\N{\rENG}Matthew Stokes, Savannah, Georgia.
+Dialogue: 0,1:32:15.63,1:32:17.96,CHT,,0,0,0,!Effect,- 馬修 幹的好 - 烏拉 長官\N{\rENG}Matthew, a job well done. Oorah, Captain.
+Dialogue: 0,1:32:18.97,1:32:22.06,CHT,,0,0,0,!Effect,肯尼斯·惠特利 清水港 佛羅里達\N{\rENG}Kenneth Weatherly, Clearwater, Florida.
+Dialogue: 0,1:32:22.17,1:32:23.80,CHT,,0,0,0,!Effect,出去要好好爭氣\N{\rENG}Go out there and do great things.
+Dialogue: 0,1:32:24.34,1:32:27.07,CHT,,0,0,0,!Effect,威廉·霍吉 阿斯托里亞 俄勒岡\N{\rENG}William Hodge, Astoria, Oregon.
+Dialogue: 0,1:32:28.58,1:32:29.84,CHT,,0,0,0,!Effect,二級軍士長呢?\N{\rENG}Where's Senior Chief?
+Dialogue: 0,1:32:29.91,1:32:32.31,CHT,,0,0,0,!Effect,他有個機會重返科迪亞克 他就去了\N{\rENG}He had a chance to go back to Kodiak and he took it.
+Dialogue: 0,1:32:32.38,1:32:33.90,CHT,,0,0,0,!Effect,他從來都不想在這裡養老\N{\rENG}He never had much of a bedside manner.
+Dialogue: 0,1:32:33.98,1:32:35.47,CHT,,0,0,0,!Effect,他可是條水狗 傑克\N{\rENG}He's a water dog, Jake,
+Dialogue: 0,1:32:35.55,1:32:38.58,CHT,,0,0,0,!Effect,也不是個半吊子的教官\N{\rENG}and as it turns out, not a half-bad teacher.
+Dialogue: 0,1:32:38.65,1:32:40.02,CHT,,0,0,0,!Effect,好運\N{\rENG}Best of luck.
+Dialogue: 0,1:32:40.09,1:32:43.42,CHT,,0,0,0,!Effect,雅格布·費舍爾 科迪亞克 阿拉斯加\N{\rENG}Jacob Fischer, Kodiak, Alaska.
+Dialogue: 0,1:32:45.99,1:32:48.43,CHT,,0,0,0,!Effect,祝賀你 傑克 讓我們為你驕傲\N{\rENG}Congratulations, Jake. Make us proud up there.
+Dialogue: 0,1:32:48.50,1:32:49.96,CHT,,0,0,0,!Effect,是 長官\N{\rENG}Aye, aye, Captain.
+Dialogue: 0,1:32:50.03,1:32:52.97,CHT,,0,0,0,!Effect,斯歌特·裡夫斯 西斯塔 阿拉斯加\N{\rENG}Scott Reeves, Sitka, Alaska.
+Dialogue: 0,1:32:53.60,1:32:56.26,CHT,,0,0,0,!Effect,女士們先生們 這是你們的畢業生\N{\rENG}Ladies and gentlemen, your graduates.
+Dialogue: 0,1:32:56.67,1:32:57.66,CHT,,0,0,0,!Effect,烏拉\N{\rENG}Oorah!
+Dialogue: 0,1:33:03.81,1:33:05.61,CHT,,0,0,0,!Effect,- 祝賀你 - 謝謝\N{\rENG}- Congratulations. - Thanks a lot.
+Dialogue: 0,1:33:06.98,1:33:09.01,CHT,,0,0,0,!Effect,- 幹得好 夥計 - 好運\N{\rENG}- Good job, guys. - Good luck.
+Dialogue: 0,1:33:29.87,1:33:32.86,CHT,,0,0,0,!Effect,- 祝賀你 - 謝謝\N{\rENG}- Well, congratulations. - Thank you.
+Dialogue: 0,1:33:39.41,1:33:40.75,CHT,,0,0,0,!Effect,這沒關係\N{\rENG}It's okay.
+Dialogue: 0,1:33:41.42,1:33:43.61,CHT,,0,0,0,!Effect,我們都知道會是怎麼樣的 對嗎?\N{\rENG}We both knew where this was going, right?
+Dialogue: 0,1:33:44.25,1:33:45.55,CHT,,0,0,0,!Effect,只是臨時的\N{\rENG}Just casual.
+Dialogue: 0,1:33:47.39,1:33:48.55,CHT,,0,0,0,!Effect,沒錯\N{\rENG}Right.
+Dialogue: 0,1:33:51.96,1:33:54.59,CHT,,0,0,0,!Effect,去追求你想得到的\N{\rENG}To getting what you've always wanted.
+Dialogue: 0,1:33:56.53,1:33:58.52,CHT,,0,0,0,!Effect,我總想得到更多\N{\rENG}And always wanting more.
+Dialogue: 0,1:34:01.34,1:34:03.46,CHT,,0,0,0,!Effect,好好照顧自己 傑克\N{\rENG}Take care of yourself, Jake.
+Dialogue: 0,1:34:18.35,1:34:20.65,CHT,,0,0,0,!Effect,- 我得過去了 - 好的\N{\rENG}- I gotta go to work. - Yeah.
+Dialogue: 0,1:34:36.30,1:34:37.36,CHT,,0,0,0,!Effect,再見\N{\rENG}Bye.
+Dialogue: 0,1:35:51.91,1:35:54.71,CHT,,0,0,0,!Effect,女士們先生們 歡迎來此\N{\rENG}Ladies and gentlemen, welcome to the Rock.
+Dialogue: 0,1:35:55.45,1:35:58.65,CHT,,0,0,0,!Effect,我是威廉·哈德利上校 科迪亞克空軍機場負責人\N{\rENG}I'm Captain William Hadley, CO of Kodiak Air Station.
+Dialogue: 0,1:35:59.09,1:36:01.11,CHT,,0,0,0,!Effect,- 費舍爾 - 在\N{\rENG}- Fischer. - Yeah, right here.
+Dialogue: 0,1:36:01.19,1:36:03.71,CHT,,0,0,0,!Effect,米特奇會幫你安排的\N{\rENG}Mr. Mitcheltree will square you away.
+Dialogue: 0,1:36:03.79,1:36:05.95,CHT,,0,0,0,!Effect,其他人跟著克裡斯特森\N{\rENG}The rest of you, step up here with Mr. Christiansen.
+Dialogue: 0,1:36:06.03,1:36:08.00,CHT,,0,0,0,!Effect,他會負責幫你們註冊\N{\rENG}He will process you in.
+Dialogue: 0,1:36:22.84,1:36:24.31,CHT,,0,0,0,!Effect,真不錯\N{\rENG}Oh, amazing.
+Dialogue: 0,1:36:24.95,1:36:26.74,CHT,,0,0,0,!Effect,他不但保持了良好的體型\N{\rENG}Not only does he come back in great shape,
+Dialogue: 0,1:36:26.81,1:36:28.54,CHT,,0,0,0,!Effect,還學會了烹飪\N{\rENG}but he still thinks he can cook.
+Dialogue: 0,1:36:28.62,1:36:30.78,CHT,,0,0,0,!Effect,- 你好 傑克 歡迎你來 - 你過的怎麼樣\N{\rENG}- Hello, Jake. Welcome. - How you doing?
+Dialogue: 0,1:36:30.89,1:36:33.48,CHT,,0,0,0,!Effect,- 很高興再次見到你 - 你們倆關係不錯嘛\N{\rENG}- Good to see you again. - You guys keep it warm here, huh?
+Dialogue: 0,1:36:33.55,1:36:35.72,CHT,,0,0,0,!Effect,很高興讓你知道一頓自在的飯是怎麼樣的\N{\rENG}Glad to know you know where a free meal is.
+Dialogue: 0,1:36:36.12,1:36:37.89,CHT,,0,0,0,!Effect,我們這個週末在斯特卡需要3個人\N{\rENG}We need three crews in Sitka for the weekend.
+Dialogue: 0,1:36:37.96,1:36:39.32,CHT,,0,0,0,!Effect,你做好準備\N{\rENG}You make sure that happens.
+Dialogue: 0,1:36:39.39,1:36:41.66,CHT,,0,0,0,!Effect,下週二團隊會集結\N{\rENG}And the stand team arrives here next Tuesday.
+Dialogue: 0,1:36:42.33,1:36:44.92,CHT,,0,0,0,!Effect,和妻子重歸於好了嗎?\N{\rENG}Patch things up with the wife?
+Dialogue: 0,1:36:46.83,1:36:49.53,CHT,,0,0,0,!Effect,搞定那個女孩了嗎?\N{\rENG}You fix things up with that young lady?
+Dialogue: 0,1:36:50.77,1:36:53.54,CHT,,0,0,0,!Effect,你知道 你還是有機會的\N{\rENG}Well, you still have a choice, you know.
+Dialogue: 0,1:36:55.91,1:37:00.07,CHT,,0,0,0,!Effect,嘿 有個問題我在學校的時候想問\N{\rENG}Hey, there's a question I wanted to ask you back in school
+Dialogue: 0,1:37:00.85,1:37:01.94,CHT,,0,0,0,!Effect,卻沒有問\N{\rENG}and I didn't.
+Dialogue: 0,1:37:02.95,1:37:06.08,CHT,,0,0,0,!Effect,當你不能拯救所有人的時候\N{\rENG}But when you can't save them all,
+Dialogue: 0,1:37:08.09,1:37:10.22,CHT,,0,0,0,!Effect,你選擇哪些人活下來呢?\N{\rENG}how do you choose who lives?
+Dialogue: 0,1:37:11.69,1:37:14.63,CHT,,0,0,0,!Effect,這對每個人都不一樣 傑克\N{\rENG}It's probably different for everybody, Jake.
+Dialogue: 0,1:37:15.73,1:37:18.49,CHT,,0,0,0,!Effect,對我來說挺簡單的 我只是\N{\rENG}Kind of simple for me, though. I just...
+Dialogue: 0,1:37:18.83,1:37:22.93,CHT,,0,0,0,!Effect,我會帶走我第一個遇到的 或是他們之中最虛弱的\N{\rENG}I take the first one I come to or the weakest one in the group,
+Dialogue: 0,1:37:23.00,1:37:26.67,CHT,,0,0,0,!Effect,我盡可能遊的更快\N{\rENG}and then I swim as fast and as hard as I can
+Dialogue: 0,1:37:27.71,1:37:29.27,CHT,,0,0,0,!Effect,更持久\N{\rENG}for as long as I can.
+Dialogue: 0,1:37:31.41,1:37:33.54,CHT,,0,0,0,!Effect,大海帶走其餘的人\N{\rENG}And the sea takes the rest.
+Dialogue: 0,1:37:38.62,1:37:40.21,CHT,,0,0,0,!Effect,覺得我準備好了嗎?\N{\rENG}Think I'm ready?
+Dialogue: 0,1:37:42.06,1:37:46.32,CHT,,0,0,0,!Effect,我不再是你的老師了 傑克 我只是你的救生員同事\N{\rENG}I'm not your teacher anymore, Jake. I'm just your fellow swimmer.
+Dialogue: 0,1:37:46.39,1:37:49.45,CHT,,0,0,0,!Effect,這不是我想得到的答案\N{\rENG}That's not exactly the answer I'm looking for there.
+Dialogue: 0,1:37:49.53,1:37:53.49,CHT,,0,0,0,!Effect,如果我覺得你沒準備好 我不會把你丟到白令海峽去\N{\rENG}If I did not think you were ready, I would not put you in the Bering Sea.
+Dialogue: 0,1:37:59.37,1:38:01.64,CHT,,0,0,0,!Effect,6030 這是科迪亞克調度中心\N{\rENG}6030, this is Kodiak Ops Cent.
+Dialogue: 0,1:38:01.71,1:38:03.84,CHT,,0,0,0,!Effect,我們要中指你們的訓練任務\N{\rENG}We are diverting your training mission at this time.
+Dialogue: 0,1:38:03.91,1:38:05.88,CHT,,0,0,0,!Effect,有兩個年輕的船員困在洞裡了\N{\rENG}We have two young kayakers swept into the cave
+Dialogue: 0,1:38:05.95,1:38:07.38,CHT,,0,0,0,!Effect,斯特裡洞南面1英里處\N{\rENG}one mile south of Saltery Cove.
+Dialogue: 0,1:38:07.45,1:38:09.58,CHT,,0,0,0,!Effect,- 報告 - 6030收到\N{\rENG}- How copy? - 6030 copies.
+Dialogue: 0,1:38:09.65,1:38:12.02,CHT,,0,0,0,!Effect,- 終止訓練 - 我們得到新任務\N{\rENG}- We're diverting at this time. - We've got a real case now.
+Dialogue: 0,1:38:12.09,1:38:13.82,CHT,,0,0,0,!Effect,好了 夥計們 看到海浪了嗎\N{\rENG}Okay, guys, that tide's coming in,
+Dialogue: 0,1:38:13.89,1:38:16.45,CHT,,0,0,0,!Effect,有6到8英尺的浪頭從北面過來\N{\rENG}and we've got six- to eight-foot rollers coming from the north.
+Dialogue: 0,1:38:16.52,1:38:19.15,CHT,,0,0,0,!Effect,軍士長 費舍爾跟你去執行任務嗎?\N{\rENG}Senior, what do you think about taking Fischer with you on this?
+Dialogue: 0,1:38:19.23,1:38:21.96,CHT,,0,0,0,!Effect,我要他跟著我 他已經準備好了\N{\rENG}I want him with me. All right? He's good to go.
+Dialogue: 0,1:38:22.50,1:38:25.02,CHT,,0,0,0,!Effect,我覺得進去不是很困難\N{\rENG}I don't think it's gonna be a problem sliding in there.
+Dialogue: 0,1:38:25.10,1:38:27.86,CHT,,0,0,0,!Effect,出來的時候會遇上麻煩\N{\rENG}I think the problem's gonna be coming back out.
+Dialogue: 0,1:38:27.94,1:38:30.96,CHT,,0,0,0,!Effect,所以我要傑克和我一起去 他可是人力皮划艇\N{\rENG}That's why I got Jake with me. Got my human speedboat.
+Dialogue: 0,1:38:33.51,1:38:37.95,CHT,,0,0,0,!Effect,科迪亞克調度中心 我是6030 我們已經到達目的地\N{\rENG}Kodiak Ops, this is 6030. We're on-scene at this time.
+Dialogue: 0,1:38:39.81,1:38:42.84,CHT,,0,0,0,!Effect,沒有發現倖存者 我們準備入水\N{\rENG}No sign of kayakers. I'm taking her down.
+Dialogue: 0,1:38:47.76,1:38:49.66,CHT,,0,0,0,!Effect,艙門打開\N{\rENG}Cabin door is open and locked.
+Dialogue: 0,1:38:50.02,1:38:51.69,CHT,,0,0,0,!Effect,有10英尺高的浪頭\N{\rENG}Those are definitely ten-foot waves.
+Dialogue: 0,1:38:53.46,1:38:55.66,CHT,,0,0,0,!Effect,救生員準備\N{\rENG}Swimmer's coming to the door.
+Dialogue: 0,1:38:57.97,1:38:59.49,CHT,,0,0,0,!Effect,記住 好嗎?\N{\rENG}Remember, all right?
+Dialogue: 0,1:38:59.57,1:39:03.94,CHT,,0,0,0,!Effect,海浪會把你沖到洞口\N{\rENG}You got the whole weight of the ocean punching through that opening.
+Dialogue: 0,1:39:04.01,1:39:07.41,CHT,,0,0,0,!Effect,你得計算浪頭\N{\rENG}You gotta read the hydraulics, gotta count the waves,
+Dialogue: 0,1:39:07.81,1:39:09.78,CHT,,0,0,0,!Effect,然後等著回流\N{\rENG}then wait for the flush.
+Dialogue: 0,1:39:11.21,1:39:12.84,CHT,,0,0,0,!Effect,檢查救生員\N{\rENG}Checking swimmer.
+Dialogue: 0,1:39:13.58,1:39:17.07,CHT,,0,0,0,!Effect,但願你上課的時候仔細聽了\N{\rENG}Sure as hell hope you paid attention in class, Speedboat.
+Dialogue: 0,1:39:39.14,1:39:41.01,CHT,,0,0,0,!Effect,救生員入水\N{\rENG}Swimmers in the water.
+Dialogue: 0,1:39:41.24,1:39:42.77,CHT,,0,0,0,!Effect,救生員良好\N{\rENG}Swimmers okay.
+Dialogue: 0,1:39:47.48,1:39:50.58,CHT,,0,0,0,!Effect,救生員1號和2號進行交流\N{\rENG}Swimmer Two is making contact with Swimmer One.
+Dialogue: 0,1:40:26.52,1:40:27.54,CHT,,0,0,0,!Effect,嘿\N{\rENG}Hey!
+Dialogue: 0,1:40:27.86,1:40:28.88,CHT,,0,0,0,!Effect,這裡!\N{\rENG}Over here!
+Dialogue: 0,1:40:28.96,1:40:30.75,CHT,,0,0,0,!Effect,- 這裡 - 這裡!\N{\rENG}- Here. - Over here!
+Dialogue: 0,1:40:30.83,1:40:32.35,CHT,,0,0,0,!Effect,找到了 3點鐘方向\N{\rENG}Got them. Three o'clock.
+Dialogue: 0,1:40:32.86,1:40:34.23,CHT,,0,0,0,!Effect,這邊\N{\rENG}Right here.
+Dialogue: 0,1:40:38.13,1:40:40.46,CHT,,0,0,0,!Effect,我們是海岸警衛隊救生員 我們來救援你們\N{\rENG}We're rescue swimmers. We're gonna get you out of here.
+Dialogue: 0,1:40:40.53,1:40:42.56,CHT,,0,0,0,!Effect,真不敢相信你們真的來了\N{\rENG}Can't believe you guys actually got here.
+Dialogue: 0,1:40:42.64,1:40:44.20,CHT,,0,0,0,!Effect,把手給我\N{\rENG}Give me your hand.
+Dialogue: 0,1:40:46.21,1:40:47.40,CHT,,0,0,0,!Effect,只有你們兩個?\N{\rENG}Just the two of you?
+Dialogue: 0,1:40:47.48,1:40:49.07,CHT,,0,0,0,!Effect,是的 他的手傷的很重\N{\rENG}Yeah, yeah. His arm's hurt real bad.
+Dialogue: 0,1:40:49.14,1:40:50.47,CHT,,0,0,0,!Effect,好的\N{\rENG}All right.
+Dialogue: 0,1:40:51.21,1:40:56.28,CHT,,0,0,0,!Effect,1號救生員 有兩個倖存者 準備放下救生籃\N{\rENG}Swimmer One. I got two survivors. It's gonna be a basket pickup here.
+Dialogue: 0,1:40:56.35,1:40:57.37,CHT,,0,0,0,!Effect,明白\N{\rENG}Roger.
+Dialogue: 0,1:40:57.45,1:40:58.54,CHT,,0,0,0,!Effect,這兒受傷了?\N{\rENG}Broken here?
+Dialogue: 0,1:40:58.62,1:41:01.42,CHT,,0,0,0,!Effect,你帶他先走 把他放到救生籃裡\N{\rENG}You take him first. Get him in the basket.
+Dialogue: 0,1:41:02.29,1:41:04.42,CHT,,0,0,0,!Effect,我和還有一個人跟在你後面\N{\rENG}I'll follow with the other one right behind you.
+Dialogue: 0,1:41:04.49,1:41:05.55,CHT,,0,0,0,!Effect,- 明白嗎? - 好的\N{\rENG}- You got that? - Yeah.
+Dialogue: 0,1:41:05.63,1:41:06.62,CHT,,0,0,0,!Effect,- 明白了嗎? - 是的 明白\N{\rENG}- You got it? - Yeah, yeah.
+Dialogue: 0,1:41:06.69,1:41:08.72,CHT,,0,0,0,!Effect,我這樣慢慢帶著你 好嗎?\N{\rENG}All right. I'm gonna lower you down in here, all right?
+Dialogue: 0,1:41:08.80,1:41:10.99,CHT,,0,0,0,!Effect,- 好的 - 放鬆 夥計 我抓著你\N{\rENG}- Okay. - Relax, buddy. I got you.
+Dialogue: 0,1:41:12.53,1:41:13.86,CHT,,0,0,0,!Effect,好的\N{\rENG}All right.
+Dialogue: 0,1:41:14.30,1:41:16.13,CHT,,0,0,0,!Effect,- 你跟著我 - 好的\N{\rENG}- You're with me. - Okay.
+Dialogue: 0,1:41:25.01,1:41:26.81,CHT,,0,0,0,!Effect,我不太會游泳\N{\rENG}I don't swim so good.
+Dialogue: 0,1:41:26.95,1:41:29.75,CHT,,0,0,0,!Effect,- 你不太會游泳? - 是的\N{\rENG}- You don't swim so good? - No, sir.
+Dialogue: 0,1:41:29.82,1:41:33.78,CHT,,0,0,0,!Effect,沒關係 我遊的很好 我跟著你\N{\rENG}It's okay. I swim pretty good. All right, on your back.
+Dialogue: 0,1:41:49.57,1:41:53.40,CHT,,0,0,0,!Effect,- 等等 我們有小船坐嗎? - 我就是小船\N{\rENG}- Wait. Are we gonna take the boat? - I'm the boat.
+Dialogue: 0,1:41:53.47,1:41:54.94,CHT,,0,0,0,!Effect,等等 等等\N{\rENG}Wait. Wait, wait, wait.
+Dialogue: 0,1:41:55.01,1:41:57.57,CHT,,0,0,0,!Effect,- 我還沒準備好 我不能... - 嘿\N{\rENG}- I'm not ready! I can't... - Hey!
+Dialogue: 0,1:41:57.65,1:42:00.38,CHT,,0,0,0,!Effect,- 等等 等等 - 冷靜\N{\rENG}- Wait, wait, wait... - Settle down!
+Dialogue: 0,1:42:19.77,1:42:21.06,CHT,,0,0,0,!Effect,有些不對頭\N{\rENG}Something's not right.
+Dialogue: 0,1:42:21.14,1:42:23.23,CHT,,0,0,0,!Effect,1號救生員回到洞裡了\N{\rENG}Swimmer One's going back to the cave.
+Dialogue: 0,1:42:54.37,1:42:55.86,CHT,,0,0,0,!Effect,怎麼了?\N{\rENG}What happened?
+Dialogue: 0,1:42:56.64,1:42:58.10,CHT,,0,0,0,!Effect,他撞到了木頭\N{\rENG}He hit a log.
+Dialogue: 0,1:42:59.11,1:43:00.90,CHT,,0,0,0,!Effect,什麼? 你在...\N{\rENG}What? What are you...
+Dialogue: 0,1:43:02.04,1:43:03.87,CHT,,0,0,0,!Effect,什麼...\N{\rENG}What...
+Dialogue: 0,1:43:15.82,1:43:17.92,CHT,,0,0,0,!Effect,- 他死了 傑克 - 他沒有\N{\rENG}- He's gone, Jake. - He's not.
+Dialogue: 0,1:43:20.36,1:43:22.69,CHT,,0,0,0,!Effect,他只是撞到了頭\N{\rENG}He's just got a head laceration.
+Dialogue: 0,1:43:27.47,1:43:29.99,CHT,,0,0,0,!Effect,我們走 快走\N{\rENG}Here we go. Come on.
+Dialogue: 0,1:43:32.24,1:43:33.47,CHT,,0,0,0,!Effect,我們走\N{\rENG}Let's go.
+Dialogue: 0,1:43:35.58,1:43:36.84,CHT,,0,0,0,!Effect,我們走!\N{\rENG}Let's go!
+Dialogue: 0,1:43:40.38,1:43:44.44,CHT,,0,0,0,!Effect,二級軍士長朗道!注意力集中\N{\rENG}Senior Chief Randall! Lock it in.
+Dialogue: 0,1:43:47.66,1:43:48.71,CHT,,0,0,0,!Effect,這只是簡單的物理學\N{\rENG}It's simple physics.
+Dialogue: 0,1:43:48.79,1:43:51.62,CHT,,0,0,0,!Effect,只要等著回流就行了 對嗎?\N{\rENG}We're just gonna time the flush, all right?
+Dialogue: 0,1:43:55.36,1:43:56.66,CHT,,0,0,0,!Effect,好的\N{\rENG}All right.
+Dialogue: 0,1:43:57.33,1:43:59.13,CHT,,0,0,0,!Effect,你下令吧 救生員\N{\rENG}You call it, Swimmer.
+Dialogue: 0,1:44:06.44,1:44:07.43,CHT,,0,0,0,!Effect,現在!\N{\rENG}Now!
+Dialogue: 0,1:44:17.99,1:44:21.92,CHT,,0,0,0,!Effect,嘿 我知道你很疲倦 好嗎 我知道你很累\N{\rENG}Hey, I know you're tired, okay? I know you feel tired right now.
+Dialogue: 0,1:44:21.99,1:44:24.51,CHT,,0,0,0,!Effect,但你得把眼睛睜開 好嗎\N{\rENG}But you need to keep your eyes open, okay?
+Dialogue: 0,1:44:24.63,1:44:27.92,CHT,,0,0,0,!Effect,好嗎? 嘿 你來和他談談\N{\rENG}All right? All right? Hey, I need you to keep talking to him.
+Dialogue: 0,1:44:28.00,1:44:29.69,CHT,,0,0,0,!Effect,- 你繼續和他說 - 好的\N{\rENG}- You keep talking to him. - Okay.
+Dialogue: 0,1:44:29.76,1:44:31.56,CHT,,0,0,0,!Effect,軍事長 軍事長!\N{\rENG}Senior. Senior!
+Dialogue: 0,1:44:32.63,1:44:34.90,CHT,,0,0,0,!Effect,你能幫我把這個打開嗎?\N{\rENG}Can you open these up for me?
+Dialogue: 0,1:44:35.30,1:44:38.03,CHT,,0,0,0,!Effect,我要你一個一個給我\N{\rENG}One by one, I want you to hand them to me.
+Dialogue: 0,1:44:38.27,1:44:39.40,CHT,,0,0,0,!Effect,往上看\N{\rENG}Reyes!
+Dialogue: 0,1:44:39.47,1:44:40.80,CHT,,0,0,0,!Effect,他沒事\N{\rENG}He's fine.
+Dialogue: 0,1:44:42.68,1:44:44.41,CHT,,0,0,0,!Effect,這裡 夥計 這裡\N{\rENG}Right here, buddy. Right here. Okay?
+Dialogue: 0,1:44:44.48,1:44:45.50,CHT,,0,0,0,!Effect,- 好的 - 這裡\N{\rENG}- Okay. - Right here.
+Dialogue: 0,1:44:52.32,1:44:54.05,CHT,,0,0,0,!Effect,- 羅伯特 - 我沒事\N{\rENG}- Robert! - I'm okay.
+Dialogue: 0,1:44:54.12,1:44:56.21,CHT,,0,0,0,!Effect,他的右臂有骨裂\N{\rENG}He's got a compound fracture in his right radius.
+Dialogue: 0,1:44:56.29,1:44:58.38,CHT,,0,0,0,!Effect,我們試著固定住\N{\rENG}We tried to stabilize that a little bit.
+Dialogue: 0,1:44:58.46,1:44:59.62,CHT,,0,0,0,!Effect,用的這個\N{\rENG}We put a collar on this one,
+Dialogue: 0,1:44:59.69,1:45:01.32,CHT,,0,0,0,!Effect,但只是臨時性的\N{\rENG}but it's more precautionary than anything.
+Dialogue: 0,1:45:01.40,1:45:02.45,CHT,,0,0,0,!Effect,謝謝\N{\rENG}Thank you.
+Dialogue: 0,1:45:02.53,1:45:04.55,CHT,,0,0,0,!Effect,他可能有些輕微腦震盪\N{\rENG}This one's possibly a little bit concussive.
+Dialogue: 0,1:45:04.63,1:45:06.57,CHT,,0,0,0,!Effect,我們一路上都在幫他們檢查\N{\rENG}We checked their vitals the whole way back.
+Dialogue: 0,1:45:06.63,1:45:09.80,CHT,,0,0,0,!Effect,他們都有些體溫過低 但會好起來的\N{\rENG}They're both mildly hypothermic, but I think they'll come around.
+Dialogue: 0,1:45:12.01,1:45:13.63,CHT,,0,0,0,!Effect,非常感謝\N{\rENG}Thank you so much.
+Dialogue: 0,1:45:16.81,1:45:18.40,CHT,,0,0,0,!Effect,不客氣\N{\rENG}You're welcome.
+Dialogue: 0,1:45:22.32,1:45:23.94,CHT,,0,0,0,!Effect,這是可能會發生的 本\N{\rENG}It happens, Ben.
+Dialogue: 0,1:45:25.25,1:45:28.09,CHT,,0,0,0,!Effect,不該是我 不該是這樣的\N{\rENG}Not to me. Not like that.
+Dialogue: 0,1:45:30.49,1:45:34.39,CHT,,0,0,0,!Effect,我要你在我面前把這個簽了\N{\rENG}I want you to sign them in front of me.
+Dialogue: 0,1:45:35.10,1:45:37.00,CHT,,0,0,0,!Effect,你為什麼不再考慮考慮呢?\N{\rENG}Why don't you take some time and think about it?
+Dialogue: 0,1:45:37.06,1:45:38.43,CHT,,0,0,0,!Effect,不 這...\N{\rENG}No. It's...
+Dialogue: 0,1:45:39.73,1:45:43.57,CHT,,0,0,0,!Effect,結束了 簽了它吧\N{\rENG}It's over. Just sign them.
+Dialogue: 0,1:45:49.58,1:45:50.77,CHT,,0,0,0,!Effect,拜託了\N{\rENG}Please.
+Dialogue: 0,1:46:15.04,1:46:17.16,CHT,,0,0,0,!Effect,每個人都可能出現這樣的情況\N{\rENG}Could've happened to anyone.
+Dialogue: 0,1:46:17.81,1:46:18.97,CHT,,0,0,0,!Effect,也許吧\N{\rENG}Maybe.
+Dialogue: 0,1:46:19.44,1:46:22.60,CHT,,0,0,0,!Effect,但是如果再發生了怎麼辦?\N{\rENG}But what if it happens again? What then?
+Dialogue: 0,1:46:23.61,1:46:26.27,CHT,,0,0,0,!Effect,他只用縫幾針就行了 不會有事的\N{\rENG}Kid got a couple stitches. He's gonna be fine.
+Dialogue: 0,1:46:26.35,1:46:28.18,CHT,,0,0,0,!Effect,我們把他救出來了\N{\rENG}We got him out of there.
+Dialogue: 0,1:46:28.62,1:46:30.01,CHT,,0,0,0,!Effect,不 是你救的\N{\rENG}No, you did.
+Dialogue: 0,1:46:30.65,1:46:32.95,CHT,,0,0,0,!Effect,你今天表現很好\N{\rENG}You were strong out there today.
+Dialogue: 0,1:46:34.36,1:46:36.12,CHT,,0,0,0,!Effect,我為你感到驕傲\N{\rENG}I was proud of you.
+Dialogue: 0,1:46:39.19,1:46:40.99,CHT,,0,0,0,!Effect,你準備接下來做什麼呢?\N{\rENG}What are you gonna do?
+Dialogue: 0,1:46:41.70,1:46:44.32,CHT,,0,0,0,!Effect,有朋友曾經建議我去釣魚\N{\rENG}Friend of mine once suggested fishing.
+Dialogue: 0,1:46:46.03,1:46:48.26,CHT,,0,0,0,!Effect,我想我會接受他的提議\N{\rENG}Think I might take his advice.
+Dialogue: 0,1:46:48.80,1:46:50.03,CHT,,0,0,0,!Effect,釣魚?\N{\rENG}Fishing?
+Dialogue: 0,1:46:50.44,1:46:51.53,CHT,,0,0,0,!Effect,是的\N{\rENG}Yeah.
+Dialogue: 0,1:46:51.87,1:46:54.34,CHT,,0,0,0,!Effect,我們這樣的人不釣魚的\N{\rENG}Guys like us don't go fishing.
+Dialogue: 0,1:46:55.58,1:46:57.87,CHT,,0,0,0,!Effect,我以前好像聽說過\N{\rENG}Where have I heard that before?
+Dialogue: 0,1:47:05.35,1:47:08.62,CHT,,0,0,0,!Effect,軍士長 你走之前\N{\rENG}Senior, before you go,
+Dialogue: 0,1:47:09.72,1:47:11.62,CHT,,0,0,0,!Effect,我想知道一件事\N{\rENG}I gotta know one thing.
+Dialogue: 0,1:47:12.26,1:47:14.23,CHT,,0,0,0,!Effect,正確的數字是多少?\N{\rENG}What's your real number?
+Dialogue: 0,1:47:19.43,1:47:20.80,CHT,,0,0,0,!Effect,\NTwenty-two.
+Dialogue: 0,1:47:23.70,1:47:25.04,CHT,,0,0,0,!Effect,\N22?\NTwenty-two?
+Dialogue: 0,1:47:27.21,1:47:31.30,CHT,,0,0,0,!Effect,還不壞 不是200 不是...\N{\rENG}That's not bad. It's not 200. It's not...
+Dialogue: 0,1:47:31.38,1:47:34.44,CHT,,0,0,0,!Effect,22是我沒救到的數字 傑克\N{\rENG}Twenty-two's the number of people I lost, Jake.
+Dialogue: 0,1:47:35.62,1:47:37.74,CHT,,0,0,0,!Effect,我只記這個數字\N{\rENG}Only number I kept track of.
+Dialogue: 0,1:47:56.07,1:47:58.37,CHT,,0,0,0,!Effect,把嘴裡的海腥味去去\N{\rENG}Keeps the sea out of your mouth.
+Dialogue: 0,1:48:37.41,1:48:38.44,CHT,,0,0,0,!Effect,嘿\N{\rENG}Hey.
+Dialogue: 0,1:48:39.25,1:48:40.24,CHT,,0,0,0,!Effect,嗨\N{\rENG}Hi.
+Dialogue: 0,1:48:42.85,1:48:44.94,CHT,,0,0,0,!Effect,你重新開始畫畫了?\N{\rENG}You started painting again?
+Dialogue: 0,1:48:45.92,1:48:48.01,CHT,,0,0,0,!Effect,是的 可以有點事做\N{\rENG}Yeah. Great light up there.
+Dialogue: 0,1:48:56.26,1:48:57.53,CHT,,0,0,0,!Effect,你知道\N{\rENG}You know,
+Dialogue: 0,1:48:59.20,1:49:02.23,CHT,,0,0,0,!Effect,那個電話的事我得向你道歉 海倫\N{\rENG}I wanna apologize for the phone calls, Helen.
+Dialogue: 0,1:49:03.77,1:49:06.17,CHT,,0,0,0,!Effect,我該給你空間的\N{\rENG}I should've given you your space.
+Dialogue: 0,1:49:07.54,1:49:09.37,CHT,,0,0,0,!Effect,你覺得忽然出現在這裡\N{\rENG}And you felt showing up here unannounced
+Dialogue: 0,1:49:09.44,1:49:12.04,CHT,,0,0,0,!Effect,是最好的辦法來溝通那件事嗎?\N{\rENG}was the best way to communicate that?
+Dialogue: 0,1:49:18.22,1:49:19.24,CHT,,0,0,0,!Effect,嘿\N{\rENG}Hey.
+Dialogue: 0,1:49:44.44,1:49:45.84,CHT,,0,0,0,!Effect,- 請你... - 本\N{\rENG}- Please just... - Ben.
+Dialogue: 0,1:49:45.91,1:49:49.97,CHT,,0,0,0,!Effect,我要你保存它 連同這個\N{\rENG}I want you to have it, along with these.
+Dialogue: 0,1:49:52.39,1:49:53.88,CHT,,0,0,0,!Effect,我簽了名\N{\rENG}I signed them.
+Dialogue: 0,1:49:59.99,1:50:01.22,CHT,,0,0,0,!Effect,為什麼是現在?\N{\rENG}Why now?
+Dialogue: 0,1:50:09.20,1:50:12.10,CHT,,0,0,0,!Effect,我有...我以前有一次任務\N{\rENG}I had a... I had a case a while back.
+Dialogue: 0,1:50:12.17,1:50:14.54,CHT,,0,0,0,!Effect,你知道的 有一對夫妻溺水了\N{\rENG}You know, a couple was drowning.
+Dialogue: 0,1:50:17.21,1:50:18.44,CHT,,0,0,0,!Effect,但當我趕到那兒的時候\N{\rENG}By the time I got there,
+Dialogue: 0,1:50:18.51,1:50:21.78,CHT,,0,0,0,!Effect,他丈夫正把他的妻子往下拽\N{\rENG}the husband was dragging his wife under,
+Dialogue: 0,1:50:22.68,1:50:24.91,CHT,,0,0,0,!Effect,只是想讓自己浮起來\N{\rENG}just trying to stay afloat.
+Dialogue: 0,1:50:26.42,1:50:28.72,CHT,,0,0,0,!Effect,純粹的生存本能\N{\rENG}Pure survival instinct.
+Dialogue: 0,1:50:31.59,1:50:33.06,CHT,,0,0,0,!Effect,這讓我...\N{\rENG}It took me...
+Dialogue: 0,1:50:34.93,1:50:40.33,CHT,,0,0,0,!Effect,讓我用了很長時間才意識到 其實那個人就是我\N{\rENG}Took me a long time to understand that that man was me.
+Dialogue: 0,1:50:44.91,1:50:47.84,CHT,,0,0,0,!Effect,哦 可惡的 又來了\N{\rENG}Oh, man. Oh, doggone it.
+Dialogue: 0,1:50:52.95,1:50:54.11,CHT,,0,0,0,!Effect,對不起\N{\rENG}Sorry.
+Dialogue: 0,1:50:56.15,1:50:58.31,CHT,,0,0,0,!Effect,你要接聽嗎?\N{\rENG}Aren't you gonna answer that?
+Dialogue: 0,1:51:01.86,1:51:04.55,CHT,,0,0,0,!Effect,我不再是個救生員了 海倫\N{\rENG}I'm not a rescue swimmer anymore, Helen.
+Dialogue: 0,1:51:31.39,1:51:32.68,CHT,,0,0,0,!Effect,再見 親愛的\N{\rENG}Bye, baby.
+Dialogue: 0,1:52:00.15,1:52:01.17,CHT,,0,0,0,!Effect,注意\N{\rENG}Lock it up.
+Dialogue: 0,1:52:01.25,1:52:04.12,CHT,,0,0,0,!Effect,一艘75英尺長的漁船求救\N{\rENG}We have a 75-foot fishing vessel in distress,
+Dialogue: 0,1:52:04.18,1:52:06.15,CHT,,0,0,0,!Effect,在深海區域船進水\N{\rENG}taking on water in high seas.
+Dialogue: 0,1:52:07.25,1:52:10.42,CHT,,0,0,0,!Effect,船失控了有4人在船上\N{\rENG}She's dead in the water with four souls onboard.
+Dialogue: 0,1:52:10.82,1:52:13.73,CHT,,0,0,0,!Effect,抽水泵無法持續工作\N{\rENG}With its dewatering pumps unable to keep up,
+Dialogue: 0,1:52:14.03,1:52:17.66,CHT,,0,0,0,!Effect,現在的問題不是船會不會沉 而是何時沉沒\N{\rENG}it's not a matter of if this thing is going down, but when.
+Dialogue: 0,1:52:40.22,1:52:43.45,CHT,,0,0,0,!Effect,綁緊一點 加把勁\N{\rENG}Tighten her down! We gotta secure her.
+Dialogue: 0,1:52:56.34,1:53:00.47,CHT,,0,0,0,!Effect,遇到這樣的情況你必須說不\N{\rENG}There will come a time when you're going to have to say no.
+Dialogue: 0,1:53:02.04,1:53:08.24,CHT,,0,0,0,!Effect,當你面對5到20個船員對你說"救我救我"\N{\rENG}You'll be facing crews from five to 20, all saying, "Save me, save me."
+Dialogue: 0,1:53:08.82,1:53:11.01,CHT,,0,0,0,!Effect,他們在等待奇跡\N{\rENG}They're looking for a miracle.
+Dialogue: 0,1:53:12.25,1:53:13.74,CHT,,0,0,0,!Effect,在24歲的年紀\N{\rENG}At 24 years old,
+Dialogue: 0,1:53:13.82,1:53:16.95,CHT,,0,0,0,!Effect,你得想辦法成為那個奇跡\N{\rENG}you have to find a way to be that miracle.
+Dialogue: 0,1:53:17.16,1:53:19.59,CHT,,0,0,0,!Effect,一切正常 我們要開始實施救援了\N{\rENG}Sounds good. We'll plan our free-fall deployment to the water.
+Dialogue: 0,1:53:19.66,1:53:21.39,CHT,,0,0,0,!Effect,- 準備好了嗎 傑克? - 是的\N{\rENG}- Are you good with that, Jake? - Yeah, copy that.
+Dialogue: 0,1:53:21.46,1:53:24.69,CHT,,0,0,0,!Effect,如果我們要把你放下去 只能放在峰頭上\N{\rENG}Okay, if we have to put you in, we're gonna get you in upswell
+Dialogue: 0,1:53:24.77,1:53:26.73,CHT,,0,0,0,!Effect,讓海浪把你帶到船那邊去\N{\rENG}and let the waves take you down to the boat.
+Dialogue: 0,1:53:26.80,1:53:28.67,CHT,,0,0,0,!Effect,- 準備好了嗎 - 是的\N{\rENG}- Are you good with that? - Roger.
+Dialogue: 0,1:53:28.74,1:53:31.10,CHT,,0,0,0,!Effect,我們只有20分鐘\N{\rENG}We're only gonna have about 20 minutes on-scene,
+Dialogue: 0,1:53:31.17,1:53:33.50,CHT,,0,0,0,!Effect,- 動作快一點 - 明白\N{\rENG}- so we gotta be quick. - Copy that.
+Dialogue: 0,1:53:33.61,1:53:37.30,CHT,,0,0,0,!Effect,我看到漁船了 2點鐘方向 50米左右\N{\rENG}All right, I got the vessel in sight. Two o'clock, about 50 meters.
+Dialogue: 0,1:53:44.55,1:53:46.52,CHT,,0,0,0,!Effect,艙門開啟\N{\rENG}Cabin door open and locked.
+Dialogue: 0,1:53:46.59,1:53:49.05,CHT,,0,0,0,!Effect,救生員準備\N{\rENG}Pre-rescue checklist for free-fall deployment.
+Dialogue: 0,1:53:50.56,1:53:51.96,CHT,,0,0,0,!Effect,哇! 船剛才吃了個大浪\N{\rENG}Whoa, whoa! Boat just took a wave, sir.
+Dialogue: 0,1:53:52.03,1:53:53.42,CHT,,0,0,0,!Effect,一個人被沖到船邊上了\N{\rENG}One appears to have gone on the edge.
+Dialogue: 0,1:53:53.49,1:53:54.69,CHT,,0,0,0,!Effect,他掛在貨網上了\N{\rENG}He's hanging from the cargo net.
+Dialogue: 0,1:53:55.96,1:53:57.49,CHT,,0,0,0,!Effect,我們得把救生員放下去\N{\rENG}We need to get our swimmer down there.
+Dialogue: 0,1:53:57.56,1:53:59.09,CHT,,0,0,0,!Effect,電腦顯示風速60節\N{\rENG}Computer's showing 60 knots...
+Dialogue: 0,1:53:59.17,1:54:00.66,CHT,,0,0,0,!Effect,別管電腦怎麼說了\N{\rENG}Going off com.
+Dialogue: 0,1:54:01.00,1:54:03.87,CHT,,0,0,0,!Effect,救生員準備\N{\rENG}Prepare for a free-fall deployment of the rescue swimmer.
+Dialogue: 0,1:54:07.34,1:54:09.00,CHT,,0,0,0,!Effect,救生員再次檢查\N{\rENG}Rescue checklist, part two.
+Dialogue: 0,1:54:09.08,1:54:10.54,CHT,,0,0,0,!Effect,救生員準備完畢\N{\rENG}Swimmer's getting ready.
+Dialogue: 0,1:54:10.61,1:54:12.67,CHT,,0,0,0,!Effect,檢查完畢 救生員準備入水\N{\rENG}Rescue checklist complete. Swimmer's coming out.
+Dialogue: 0,1:54:12.75,1:54:14.74,CHT,,0,0,0,!Effect,明白 檢查救生員\N{\rENG}Roger that. Check swimmer.
+Dialogue: 0,1:54:14.98,1:54:17.88,CHT,,0,0,0,!Effect,救生員準備完畢 檢查\N{\rENG}Swimmer's at the door, sir. Checking swimmer.
+Dialogue: 0,1:54:17.95,1:54:19.44,CHT,,0,0,0,!Effect,準備好了?\N{\rENG}Swimmer ready?
+Dialogue: 0,1:54:20.12,1:54:22.32,CHT,,0,0,0,!Effect,上帝會保佑你的\N{\rENG}God help you if you ain't, boy.
+Dialogue: 0,1:54:26.19,1:54:27.72,CHT,,0,0,0,!Effect,救生員下水了\N{\rENG}Swimmer's away.
+Dialogue: 0,1:54:36.64,1:54:39.73,CHT,,0,0,0,!Effect,救生員情況良好 他朝漁船遊過去了\N{\rENG}Swimmer's okay. He's heading towards the vessel.
+Dialogue: 0,1:54:46.28,1:54:49.77,CHT,,0,0,0,!Effect,他切浪切的真不錯\N{\rENG}All right, he's cutting through those waves pretty good.
+Dialogue: 0,1:55:09.60,1:55:12.04,CHT,,0,0,0,!Effect,他接近船支了\N{\rENG}That's it. He's approaching the vessel.
+Dialogue: 0,1:55:12.61,1:55:14.51,CHT,,0,0,0,!Effect,已經上船了 長官\N{\rENG}He's at the boat, sir.
+Dialogue: 0,1:55:20.31,1:55:23.04,CHT,,0,0,0,!Effect,夥計 見到你太好了\N{\rENG}Man, are we glad to see you!
+Dialogue: 0,1:55:34.96,1:55:37.33,CHT,,0,0,0,!Effect,科迪亞克調度中心 6034號呼叫\N{\rENG}Kodiak Ops, rescue 6034.
+Dialogue: 0,1:55:37.40,1:55:39.63,CHT,,0,0,0,!Effect,費舍爾到船上了 但是船的情況很糟糕\N{\rENG}Fischer's onboard, but vessel is compromised.
+Dialogue: 0,1:55:39.70,1:55:41.96,CHT,,0,0,0,!Effect,進了很多水 恐怕支持不了多久了\N{\rENG}Taking on lots of water. May not hold much longer.
+Dialogue: 0,1:55:42.04,1:55:43.09,CHT,,0,0,0,!Effect,隨時報告最新進展\N{\rENG}Stand by for further.
+Dialogue: 0,1:55:43.57,1:55:46.20,CHT,,0,0,0,!Effect,船上有多少人? 有沒有人受傷?\N{\rENG}How many guys you got on here? Is anybody injured?
+Dialogue: 0,1:55:46.27,1:55:47.40,CHT,,0,0,0,!Effect,一共4個人\N{\rENG}I got four guys.
+Dialogue: 0,1:55:47.47,1:55:49.34,CHT,,0,0,0,!Effect,他的腿斷了\N{\rENG}This guy's got a broken leg.
+Dialogue: 0,1:55:49.41,1:55:52.14,CHT,,0,0,0,!Effect,船長在裡面 他在試著發動抽水泵\N{\rENG}The skipper's down below. He's trying to start the pumps.
+Dialogue: 0,1:55:52.21,1:55:55.05,CHT,,0,0,0,!Effect,- 好的 他先走 - 好的\N{\rENG}- All right, he's gonna go up first. - All right.
+Dialogue: 0,1:55:55.35,1:55:58.68,CHT,,0,0,0,!Effect,科迪亞克 科迪亞克 這是6304\N{\rENG}Kodiak Ops, Kodiak Ops, this is rescue 6034.
+Dialogue: 0,1:55:58.75,1:56:01.08,CHT,,0,0,0,!Effect,有三人受傷 船裡還有一人\N{\rENG}There's three onboard with injuries, one more down below.
+Dialogue: 0,1:56:02.36,1:56:04.41,CHT,,0,0,0,!Effect,你想讓我怎麼做?\N{\rENG}What do you want me to do?
+Dialogue: 0,1:56:14.07,1:56:16.26,CHT,,0,0,0,!Effect,你們幫忙把他放進來\N{\rENG}You there, help me get him around in here.
+Dialogue: 0,1:56:16.90,1:56:19.03,CHT,,0,0,0,!Effect,- 把他放進來 - 好的\N{\rENG}- Bring him on in. - All right.
+Dialogue: 0,1:56:34.09,1:56:36.08,CHT,,0,0,0,!Effect,救生籃上升中\N{\rENG}Basket is on its way up.
+Dialogue: 0,1:56:43.60,1:56:45.06,CHT,,0,0,0,!Effect,系好安全帶\N{\rENG}Strap in. Strap in!
+Dialogue: 0,1:56:45.13,1:56:47.93,CHT,,0,0,0,!Effect,船長在裡面 甲板上沒有人了\N{\rENG}The captain's down below, and there's one other man on deck.
+Dialogue: 0,1:56:48.00,1:56:50.44,CHT,,0,0,0,!Effect,我去救他 你綁好自己 不要擋路\N{\rENG}Help him out. Strap yourself in. Get out of the way.
+Dialogue: 0,1:56:50.50,1:56:54.10,CHT,,0,0,0,!Effect,重複一遍 船就要沉了 給你8分鐘\N{\rENG}I repeat, the boat's going down fast. Eight minutes to bingo.
+Dialogue: 0,1:56:58.35,1:57:01.04,CHT,,0,0,0,!Effect,好的 快點 進到籃子裡\N{\rENG}All right, come on, get in the basket.
+Dialogue: 0,1:57:06.82,1:57:09.29,CHT,,0,0,0,!Effect,收到起吊信號\N{\rENG}I have the ready-for-pickup signal.
+Dialogue: 0,1:57:10.59,1:57:11.89,CHT,,0,0,0,!Effect,扶好\N{\rENG}Hold on.
+Dialogue: 0,1:57:14.19,1:57:16.59,CHT,,0,0,0,!Effect,1號救生員 1號救生員 快進來\N{\rENG}Swimmer One, Swimmer One, come in.
+Dialogue: 0,1:57:17.93,1:57:20.02,CHT,,0,0,0,!Effect,救生員6034\N{\rENG}Rescue swimmer, 6034.
+Dialogue: 0,1:57:20.10,1:57:22.00,CHT,,0,0,0,!Effect,費舍爾 進來 費舍爾\N{\rENG}Fischer. Come in, Fischer.
+Dialogue: 0,1:57:22.07,1:57:24.30,CHT,,0,0,0,!Effect,1號救生員 1號救生員 進來\N{\rENG}Swimmer One, Swimmer One, come in.
+Dialogue: 0,1:57:24.37,1:57:27.24,CHT,,0,0,0,!Effect,- 這是1號救生員 - 收到 1號救生員 繼續\N{\rENG}- This is Swimmer One. - Roger that, Swimmer One. Go ahead.
+Dialogue: 0,1:57:27.31,1:57:30.37,CHT,,0,0,0,!Effect,救生員1號 船裡還有1個人 我去救他出來\N{\rENG}Swimmer One. I got one down below. I'm gonna go down there.
+Dialogue: 0,1:57:30.44,1:57:33.94,CHT,,0,0,0,!Effect,救生員1號 我們只剩7分鐘了\N{\rENG}Swimmer One, be advised we've got seven minutes to bingo.
+Dialogue: 0,1:57:34.05,1:57:35.57,CHT,,0,0,0,!Effect,我下去了\N{\rENG}I'm going down.
+Dialogue: 0,1:57:47.56,1:57:49.29,CHT,,0,0,0,!Effect,- 船長? - 是我\N{\rENG}- Captain? - Yeah!
+Dialogue: 0,1:57:49.46,1:57:50.55,CHT,,0,0,0,!Effect,船長?\N{\rENG}Captain?
+Dialogue: 0,1:57:54.57,1:57:58.37,CHT,,0,0,0,!Effect,船長! 我是救生員 我來幫你出去\N{\rENG}Captain! I'm a rescue swimmer. I'm here to help you out.
+Dialogue: 0,1:57:58.44,1:58:01.97,CHT,,0,0,0,!Effect,你的腿卡住了還是斷了?\N{\rENG}Your leg is jammed in here? Or is it just closed...
+Dialogue: 0,1:58:02.04,1:58:03.77,CHT,,0,0,0,!Effect,我的整條腿\N{\rENG}It's the whole leg!
+Dialogue: 0,1:58:04.04,1:58:06.98,CHT,,0,0,0,!Effect,我想要放開離合器 但是被卡住了\N{\rENG}I tried to free the clutch and got stuck.
+Dialogue: 0,1:58:08.62,1:58:10.11,CHT,,0,0,0,!Effect,這是1號救生員\N{\rENG}This is Swimmer One.
+Dialogue: 0,1:58:10.18,1:58:12.67,CHT,,0,0,0,!Effect,我在引擎室找到船長了 他的腿卡住了\N{\rENG}I got the captain down here in the engine room. He's stuck.
+Dialogue: 0,1:58:12.75,1:58:14.08,CHT,,0,0,0,!Effect,我們需要一點時間\N{\rENG}We're gonna be a little bit.
+Dialogue: 0,1:58:14.15,1:58:15.59,CHT,,0,0,0,!Effect,1號救生員 我們沒有時間了\N{\rENG}Swimmer One, we're about out of time.
+Dialogue: 0,1:58:15.66,1:58:18.25,CHT,,0,0,0,!Effect,船就要下沉了 我們還有2分鐘\N{\rENG}That boat's listing bad, and we're two minutes to bingo.
+Dialogue: 0,1:58:18.32,1:58:20.72,CHT,,0,0,0,!Effect,我不會丟下他的\N{\rENG}I ain't leaving here without him.
+Dialogue: 0,1:58:22.00,1:58:24.69,CHT,,0,0,0,!Effect,派別人來援救我們 我要看著他\N{\rENG}Send somebody back for us, 'cause I'm staying down here with him.
+Dialogue: 0,1:58:24.76,1:58:27.79,CHT,,0,0,0,!Effect,不行 1號救生員 我們要你儘快上來\N{\rENG}Negative, Swimmer One. We need you topside ASAP.
+Dialogue: 0,1:58:29.00,1:58:31.37,CHT,,0,0,0,!Effect,1號救生員 6034\N{\rENG}Swimmer One, 6034.
+Dialogue: 0,1:58:32.04,1:58:34.44,CHT,,0,0,0,!Effect,1號救生員 6034\N{\rENG}Swimmer One, 6034.
+Dialogue: 0,1:58:35.04,1:58:38.27,CHT,,0,0,0,!Effect,科迪亞克 這是6034\N{\rENG}Kodiak Ops, Kodiak Ops, this is 6034.
+Dialogue: 0,1:58:38.34,1:58:40.68,CHT,,0,0,0,!Effect,我們現在返回\N{\rENG}Be advised we are RTB at this time.
+Dialogue: 0,1:58:40.75,1:58:42.77,CHT,,0,0,0,!Effect,我們把救生員留在現場\N{\rENG}We are leaving the rescue swimmer on-scene.
+Dialogue: 0,1:58:42.85,1:58:45.01,CHT,,0,0,0,!Effect,重複一遍 我們把救生員留在現場\N{\rENG}I say again, we are leaving our rescue swimmer on-scene.
+Dialogue: 0,1:58:45.09,1:58:46.52,CHT,,0,0,0,!Effect,我們還有直升機嗎?\N{\rENG}Who do we have left in the shop?
+Dialogue: 0,1:58:46.59,1:58:48.68,CHT,,0,0,0,!Effect,08號可以 但是沒有救生員\N{\rENG}08's all we've got left, sir, but no crew.
+Dialogue: 0,1:58:48.76,1:58:50.25,CHT,,0,0,0,!Effect,- 好的 快去啟動 - 是 長官\N{\rENG}- All right, get her online. - Yes, sir.
+Dialogue: 0,1:58:50.32,1:58:53.42,CHT,,0,0,0,!Effect,上尉 我們準備出發\N{\rENG}Lieutenant Krauss, suit up. We're handling this.
+Dialogue: 0,1:58:54.56,1:58:56.19,CHT,,0,0,0,!Effect,我要一個救生員\N{\rENG}I need a swimmer.
+Dialogue: 0,1:58:58.53,1:58:59.90,CHT,,0,0,0,!Effect,別擔心\N{\rENG}Don't worry.
+Dialogue: 0,1:59:00.00,1:59:01.73,CHT,,0,0,0,!Effect,不 不會的 他們會把他救起來的\N{\rENG}No, no, they'll get him.
+Dialogue: 0,1:59:01.80,1:59:02.93,CHT,,0,0,0,!Effect,別擔心! 別擔心\N{\rENG}Don't worry! Don't worry.
+Dialogue: 0,1:59:16.42,1:59:17.82,CHT,,0,0,0,!Effect,我們走\N{\rENG}Here we go.
+Dialogue: 0,1:59:33.83,1:59:35.49,CHT,,0,0,0,!Effect,挺住 挺住\N{\rENG}Hold on. Hold on.
+Dialogue: 0,1:59:41.74,1:59:43.87,CHT,,0,0,0,!Effect,- 準備好回家了嗎 - 是的 夥計\N{\rENG}- Ready to go home? - Yeah, man.
+Dialogue: 0,1:59:59.79,2:00:01.42,CHT,,0,0,0,!Effect,船長 船長!\N{\rENG}Captain. Captain!
+Dialogue: 0,2:00:16.34,2:00:19.11,CHT,,0,0,0,!Effect,- 可以出發了嗎 上尉? - 是的 長官\N{\rENG}- Are we cleared in, Lieutenant? - Aye, aye, Captain.
+Dialogue: 0,2:00:19.18,2:00:20.58,CHT,,0,0,0,!Effect,很好\N{\rENG}Outstanding.
+Dialogue: 0,2:00:37.36,2:00:40.16,CHT,,0,0,0,!Effect,1號救生員 我是6008\N{\rENG}Rescue Swimmer One, this is 6008.
+Dialogue: 0,2:00:40.23,2:00:41.33,CHT,,0,0,0,!Effect,能聽見嗎?\N{\rENG}Do you read?
+Dialogue: 0,2:00:41.40,2:00:45.24,CHT,,0,0,0,!Effect,1號救生員 我是6008 能聽見嗎?\N{\rENG}Come in, Rescue Swimmer One. 6008. Do you read?
+Dialogue: 0,2:00:45.97,2:00:47.94,CHT,,0,0,0,!Effect,回話 傑克\N{\rENG}Come on, Jake, be there.
+Dialogue: 0,2:01:05.16,2:01:08.59,CHT,,0,0,0,!Effect,艙門已打開\N{\rENG}Cabin door's coming open. Cabin door's open and locked.
+Dialogue: 0,2:01:09.36,2:01:12.63,CHT,,0,0,0,!Effect,好的 就在那裡 甲板上沒有人\N{\rENG}All right, right there. Right side. Nobody onboard.
+Dialogue: 0,2:01:13.60,2:01:15.47,CHT,,0,0,0,!Effect,好的 我能看到\N{\rENG}All right. I see what I want.
+Dialogue: 0,2:01:15.54,2:01:18.30,CHT,,0,0,0,!Effect,把我放下去 放到右邊的角上\N{\rENG}Just get me down. The right-hand corner.
+Dialogue: 0,2:01:18.37,2:01:19.96,CHT,,0,0,0,!Effect,當心別碰到繩索\N{\rENG}Try to avoid the rigging.
+Dialogue: 0,2:01:20.04,2:01:22.10,CHT,,0,0,0,!Effect,救生員要求放到右邊的角上\N{\rENG}Okay, swimmer requests aft right-hand corner.
+Dialogue: 0,2:01:22.18,2:01:23.57,CHT,,0,0,0,!Effect,右邊的角上\N{\rENG}Aft right-hand corner.
+Dialogue: 0,2:01:23.64,2:01:24.97,CHT,,0,0,0,!Effect,好的 就這麼辦\N{\rENG}Okay, this is what we're gonna do.
+Dialogue: 0,2:01:25.04,2:01:26.64,CHT,,0,0,0,!Effect,救生員準備 第二部分\N{\rENG}Start a rescue checklist, part two,
+Dialogue: 0,2:01:26.71,2:01:28.65,CHT,,0,0,0,!Effect,救生員裝備檢查\N{\rENG}for a harness deployment of the rescue swimmer.
+Dialogue: 0,2:01:28.72,2:01:30.98,CHT,,0,0,0,!Effect,- 不要拖拉繩索 - 明白 備用泵啟動\N{\rENG}- No trail line... - Roger that. Backup pump is on.
+Dialogue: 0,2:01:31.05,2:01:32.64,CHT,,0,0,0,!Effect,好的 我們要升起100英尺\N{\rENG}All right, we'll do the hoist at 100 feet.
+Dialogue: 0,2:01:32.72,2:01:34.05,CHT,,0,0,0,!Effect,明白\N{\rENG}Roger that.
+Dialogue: 0,2:01:35.09,2:01:37.96,CHT,,0,0,0,!Effect,科迪亞克 科迪亞克 6208呼叫\N{\rENG}Kodiak Ops, Kodiak Ops, rescue 6028.
+Dialogue: 0,2:01:38.02,2:01:41.08,CHT,,0,0,0,!Effect,6208 允許行動\N{\rENG}Rescue 6028, Kodiak Ops. Go ahead.
+Dialogue: 0,2:01:41.49,2:01:44.16,CHT,,0,0,0,!Effect,救生員準備完畢 檢查完畢\N{\rENG}Swimmer's ready. Load-checking swimmer.
+Dialogue: 0,2:01:45.93,2:01:49.16,CHT,,0,0,0,!Effect,救生員準備出倉\N{\rENG}And load check complete. Swimmer's going out the door.
+Dialogue: 0,2:01:49.24,2:01:52.47,CHT,,0,0,0,!Effect,救生員出倉 救生員在下降\N{\rENG}Swimmer's out the door. Swimmer's on his way down.
+Dialogue: 0,2:02:07.55,2:02:09.78,CHT,,0,0,0,!Effect,海岸警衛隊直升機 收到請回話\N{\rENG}Coast Guard helo, do you copy?
+Dialogue: 0,2:02:11.36,2:02:14.09,CHT,,0,0,0,!Effect,海岸警衛隊直升機 我是救生員1號\N{\rENG}Coast Guard helo, this is Rescue Swimmer One.
+Dialogue: 0,2:02:14.16,2:02:15.18,CHT,,0,0,0,!Effect,收到請回話\N{\rENG}Do you copy?
+Dialogue: 0,2:02:15.26,2:02:16.52,CHT,,0,0,0,!Effect,向前偏右40度\N{\rENG}Forward, right 40.
+Dialogue: 0,2:02:16.60,2:02:18.12,CHT,,0,0,0,!Effect,向前偏右30度 注意高度\N{\rENG}Forward, right 30. Watch your altitude.
+Dialogue: 0,2:02:18.20,2:02:19.36,CHT,,0,0,0,!Effect,明白\N{\rENG}Roger.
+Dialogue: 0,2:02:51.73,2:02:53.70,CHT,,0,0,0,!Effect,停 繩索摩壞了 繩索摩壞了\N{\rENG}Hold. I have a fouled cable. Fouled cable.
+Dialogue: 0,2:02:53.77,2:02:55.29,CHT,,0,0,0,!Effect,解開繩索\N{\rENG}Paying out slack.
+Dialogue: 0,2:02:56.80,2:02:59.64,CHT,,0,0,0,!Effect,海岸警衛隊直升機 我是救生員1號\N{\rENG}Coast Guard helo, this is Swimmer Number One!
+Dialogue: 0,2:02:59.71,2:03:03.30,CHT,,0,0,0,!Effect,我在引擎室 艙室就要被淹沒了\N{\rENG}I'm in the engine room, and the hold of the boat is filling up!
+Dialogue: 0,2:03:03.38,2:03:05.37,CHT,,0,0,0,!Effect,- 他在試著解開繩索 - 加油\N{\rENG}- He's trying to free the cable. - Come on.
+Dialogue: 0,2:03:10.42,2:03:12.85,CHT,,0,0,0,!Effect,好了 繩索已解開 繩索已解開\N{\rENG}Okay, cable free. Cable free.
+Dialogue: 0,2:03:18.32,2:03:19.42,CHT,,0,0,0,!Effect,好樣的\N{\rENG}Attaboy.
+Dialogue: 0,2:03:21.06,2:03:23.43,CHT,,0,0,0,!Effect,繩索解開 這裡有些磨損\N{\rENG}Cable's free, and I got a fray right here.
+Dialogue: 0,2:03:23.50,2:03:26.36,CHT,,0,0,0,!Effect,還可以用 還可以用 我就就指望它了\N{\rENG}It's still good. It's still good. I can use it. It's all we got.
+Dialogue: 0,2:03:26.43,2:03:27.42,CHT,,0,0,0,!Effect,好的 很好\N{\rENG}All right, good.
+Dialogue: 0,2:03:27.50,2:03:28.69,CHT,,0,0,0,!Effect,向後偏左一些 長官\N{\rENG}Go back and left, Captain.
+Dialogue: 0,2:03:28.77,2:03:30.17,CHT,,0,0,0,!Effect,向後偏左 明白\N{\rENG}Back and left. Roger that.
+Dialogue: 0,2:03:35.58,2:03:36.70,CHT,,0,0,0,!Effect,傑克\N{\rENG}Jake.
+Dialogue: 0,2:03:50.42,2:03:51.65,CHT,,0,0,0,!Effect,加油\N{\rENG}Come on.
+Dialogue: 0,2:03:51.82,2:03:53.02,CHT,,0,0,0,!Effect,加油\N{\rENG}Come on.
+Dialogue: 0,2:03:55.40,2:03:56.52,CHT,,0,0,0,!Effect,傑克\N{\rENG}Jake!
+Dialogue: 0,2:04:02.07,2:04:03.16,CHT,,0,0,0,!Effect,傑克\N{\rENG}Jake!
+Dialogue: 0,2:04:06.07,2:04:07.10,CHT,,0,0,0,!Effect,傑克?\N{\rENG}Jake?
+Dialogue: 0,2:04:07.17,2:04:09.94,CHT,,0,0,0,!Effect,軍士長 軍士長 是你嗎?\N{\rENG}Senior? Senior, is that you?
+Dialogue: 0,2:04:10.11,2:04:11.47,CHT,,0,0,0,!Effect,金魚\N{\rENG}Goldfish!
+Dialogue: 0,2:04:11.61,2:04:15.38,CHT,,0,0,0,!Effect,我查看了門把手 我送不開它\N{\rENG}I checked all the locks on the door. I can't get them loose. They're stuck.
+Dialogue: 0,2:04:15.45,2:04:17.51,CHT,,0,0,0,!Effect,不不 我知道是什麼問題\N{\rENG}No, no, I see the problem.
+Dialogue: 0,2:04:18.52,2:04:20.75,CHT,,0,0,0,!Effect,軍士長 馬上就淹滿了\N{\rENG}It's filling up, Senior Chief!
+Dialogue: 0,2:04:21.19,2:04:23.95,CHT,,0,0,0,!Effect,二級軍士長 把我弄出去!\N{\rENG}Senior Chief! Get me out of here!
+Dialogue: 0,2:04:29.63,2:04:32.03,CHT,,0,0,0,!Effect,我幾乎被淹沒了!你得把門打開!\N{\rENG}I'm almost submerged! You gotta get the door open!
+Dialogue: 0,2:04:32.10,2:04:33.59,CHT,,0,0,0,!Effect,撐住 傑克\N{\rENG}Hold on, Jake.
+Dialogue: 0,2:04:52.39,2:04:54.51,CHT,,0,0,0,!Effect,軍士長!船長在那邊\N{\rENG}Senior! The captain's body!
+Dialogue: 0,2:04:54.85,2:04:57.02,CHT,,0,0,0,!Effect,我們得放棄他了\N{\rENG}We gotta let him go. Come on.
+Dialogue: 0,2:05:04.60,2:05:06.09,CHT,,0,0,0,!Effect,傑克 他已經死了\N{\rENG}Jake, he's gone!
+Dialogue: 0,2:05:15.74,2:05:16.83,CHT,,0,0,0,!Effect,傑克!\N{\rENG}Jake!
+Dialogue: 0,2:05:19.35,2:05:20.71,CHT,,0,0,0,!Effect,救生員都出來了\N{\rENG}I got both swimmers coming out.
+Dialogue: 0,2:05:20.78,2:05:23.37,CHT,,0,0,0,!Effect,- 兩個救生員都能看見 - 好的 我看到他們了\N{\rENG}- Both swimmers are in sight. - All right, I got them.
+Dialogue: 0,2:05:41.37,2:05:42.53,CHT,,0,0,0,!Effect,鉤子已放下\N{\rENG}Hook is going down.
+Dialogue: 0,2:05:42.60,2:05:45.87,CHT,,0,0,0,!Effect,偏右40 鉤子下落中\N{\rENG}Let's go forward, right 40. Hook is halfway down.
+Dialogue: 0,2:05:46.01,2:05:47.77,CHT,,0,0,0,!Effect,我們要用鉤子連在一起\N{\rENG}I'm hooking into you.
+Dialogue: 0,2:05:47.84,2:05:50.14,CHT,,0,0,0,!Effect,我們只有一次機會\N{\rENG}We're only gonna get one shot at this.
+Dialogue: 0,2:05:53.05,2:05:54.27,CHT,,0,0,0,!Effect,我鉤好了\N{\rENG}I'm in.
+Dialogue: 0,2:05:55.58,2:05:56.78,CHT,,0,0,0,!Effect,我也好了\N{\rENG}I'm in!
+Dialogue: 0,2:06:10.70,2:06:13.10,CHT,,0,0,0,!Effect,我還以為你會去釣魚\N{\rENG}I thought you were going fishing.
+Dialogue: 0,2:06:13.17,2:06:15.07,CHT,,0,0,0,!Effect,那你說這是什麼?\N{\rENG}What do you call this?
+Dialogue: 0,2:06:20.57,2:06:21.67,CHT,,0,0,0,!Effect,哇\N{\rENG}Whoa.
+Dialogue: 0,2:06:24.11,2:06:27.84,CHT,,0,0,0,!Effect,繩索要斷了 撐住 撐住!\N{\rENG}The cable's starting to part! The cable! Hold, hold, hold!
+Dialogue: 0,2:06:31.12,2:06:33.24,CHT,,0,0,0,!Effect,撐住 快把他們拉上來\N{\rENG}Okay, hold right there. Hold. I'm bringing them up.
+Dialogue: 0,2:06:33.32,2:06:35.95,CHT,,0,0,0,!Effect,我們得解開它\N{\rENG}I gotta jam this cable into the drum.
+Dialogue: 0,2:06:43.50,2:06:46.12,CHT,,0,0,0,!Effect,你在做什麼? 你在做什麼?\N{\rENG}What are you doing? What are you doing?
+Dialogue: 0,2:06:48.50,2:06:50.44,CHT,,0,0,0,!Effect,想都不要想\N{\rENG}Don't even think about it.
+Dialogue: 0,2:06:50.50,2:06:52.63,CHT,,0,0,0,!Effect,這支撐不了我們兩個\N{\rENG}It's not gonna hold us both.
+Dialogue: 0,2:06:52.84,2:06:54.00,CHT,,0,0,0,!Effect,什麼...\N{\rENG}What...
+Dialogue: 0,2:06:54.34,2:06:57.40,CHT,,0,0,0,!Effect,會的 可以的 別幹傻事\N{\rENG}Yes, it will. Don't! lt'll hold!
+Dialogue: 0,2:07:01.05,2:07:03.07,CHT,,0,0,0,!Effect,軍士長落下去!\N{\rENG}Senior fell. Senior fell!
+Dialogue: 0,2:07:05.42,2:07:06.85,CHT,,0,0,0,!Effect,傑克拉住他了 傑克拉住他了\N{\rENG}Jake's got him. Jake's got him.
+Dialogue: 0,2:07:06.92,2:07:08.68,CHT,,0,0,0,!Effect,我得把他們拉上來\N{\rENG}I gotta get them up.
+Dialogue: 0,2:07:30.28,2:07:31.80,CHT,,0,0,0,!Effect,我不會放棄的!\N{\rENG}I won't let go!
+Dialogue: 0,2:07:34.05,2:07:35.21,CHT,,0,0,0,!Effect,我知道\N{\rENG}I know.
+Dialogue: 0,2:07:56.94,2:07:58.43,CHT,,0,0,0,!Effect,軍士長!\N{\rENG}Senior!
+Dialogue: 0,2:08:00.87,2:08:02.27,CHT,,0,0,0,!Effect,軍士長!\N{\rENG}Senior!
+Dialogue: 0,2:08:03.94,2:08:05.43,CHT,,0,0,0,!Effect,放開我!\N{\rENG}Lower me down!
+Dialogue: 0,2:08:06.45,2:08:07.94,CHT,,0,0,0,!Effect,放開我!\N{\rENG}Lower me down!
+Dialogue: 0,2:08:08.15,2:08:10.74,CHT,,0,0,0,!Effect,他掉下去了 掉下去了 朗道要掉到水裡去了!\N{\rENG}He just fell! He just fell! Randall fell! Hit the water!
+Dialogue: 0,2:08:10.82,2:08:11.81,CHT,,0,0,0,!Effect,放開我\N{\rENG}Lower me down!
+Dialogue: 0,2:08:11.88,2:08:13.85,CHT,,0,0,0,!Effect,他掉進水裡了 被浪頭打到了 只看到船的殘片\N{\rENG}He's in the water. Been hit by a wave, full debris.
+Dialogue: 0,2:08:13.92,2:08:15.39,CHT,,0,0,0,!Effect,- 放我下去! - 不行!\N{\rENG}- Put me down! - I can't!
+Dialogue: 0,2:08:15.45,2:08:17.62,CHT,,0,0,0,!Effect,你得把我放下去!\N{\rENG}You gotta lower me down now!
+Dialogue: 0,2:08:19.86,2:08:21.49,CHT,,0,0,0,!Effect,讓我下去!\N{\rENG}Get me out of here!
+Dialogue: 0,2:08:21.59,2:08:23.96,CHT,,0,0,0,!Effect,- 放我下去! - 不行!\N{\rENG}- You gotta lower me down! - I can't!
+Dialogue: 0,2:08:24.03,2:08:25.02,CHT,,0,0,0,!Effect,讓我跳下去\N{\rENG}I'll free-fall!
+Dialogue: 0,2:08:25.50,2:08:29.63,CHT,,0,0,0,!Effect,你下去就上不來了 我不能損失兩個人\N{\rENG}If I do, you don't come back. I can't! I can't lose two!
+Dialogue: 0,2:08:32.37,2:08:34.17,CHT,,0,0,0,!Effect,損失救生員!損失救生員!\N{\rENG}Lost swimmer. Lost swimmer.
+Dialogue: 0,2:08:34.24,2:08:37.14,CHT,,0,0,0,!Effect,他看到繩索快斷了 他就放手了\N{\rENG}He saw the cable coming apart. He just let go.
+Dialogue: 0,2:08:37.84,2:08:39.67,CHT,,0,0,0,!Effect,他從80或90的高度掉下去\N{\rENG}He was about 80, 90 feet up, sir.
+Dialogue: 0,2:08:39.75,2:08:41.34,CHT,,0,0,0,!Effect,他沒有上來 我沒有看到他\N{\rENG}He didn't come up. I don't see him.
+Dialogue: 0,2:08:41.41,2:08:43.44,CHT,,0,0,0,!Effect,打開遠光燈\N{\rENG}Flash landing hover lights.
+Dialogue: 0,2:08:43.62,2:08:44.91,CHT,,0,0,0,!Effect,注意無線電\N{\rENG}Monitor the radio, sir.
+Dialogue: 0,2:08:44.98,2:08:48.35,CHT,,0,0,0,!Effect,尋找照明棒 閃光燈 一切東西 他掉在浪頭裡\N{\rENG}Look for flares, strobes, anything. He fell right in the debris.
+Dialogue: 0,2:08:49.29,2:08:52.16,CHT,,0,0,0,!Effect,損失救生員 損失救生員\N{\rENG}Lost swimmer. Lost swimmer.
+Dialogue: 0,2:09:03.14,2:09:04.47,CHT,,0,0,0,!Effect,海岸警衛隊\N{\rENG}The Coast Guard conducted
+Dialogue: 0,2:09:04.54,2:09:06.33,CHT,,0,0,0,!Effect,為一個人做了歷史上\N{\rENG}one of the largest search-and-rescue missions
+Dialogue: 0,2:09:06.41,2:09:08.20,CHT,,0,0,0,!Effect,最大規模的搜救行動\N{\rENG}for a single man in its history,
+Dialogue: 0,2:09:10.18,2:09:13.74,CHT,,0,0,0,!Effect,但一直沒有找到二級軍士長 本·朗道的屍體\N{\rENG}but the body of Senior Chief Ben Randall was never found.
+Dialogue: 0,2:09:23.16,2:09:24.78,CHT,,0,0,0,!Effect,我很抱歉 海倫\N{\rENG}I'm sorry, Helen.
+Dialogue: 0,2:09:26.09,2:09:27.65,CHT,,0,0,0,!Effect,我們盡了最大努力了\N{\rENG}There's nothing more we can do.
+Dialogue: 0,2:09:28.79,2:09:30.56,CHT,,0,0,0,!Effect,怎樣創造一個傳奇\N{\rENG}What makes a legend?
+Dialogue: 0,2:09:31.66,2:09:33.86,CHT,,0,0,0,!Effect,是不是當一個人活著的時候做了什麼\N{\rENG}Is it what someone did when they were alive...
+Dialogue: 0,2:09:33.93,2:09:35.90,CHT,,0,0,0,!Effect,朗道這樣的事蹟可多了\N{\rENG}Randall never was much for this sort of thing.
+Dialogue: 0,2:09:35.97,2:09:38.94,CHT,,0,0,0,!Effect,或者在他死去還被別人惦記\N{\rENG}or how they're remembered after they're gone?
+Dialogue: 0,2:09:41.04,2:09:42.97,CHT,,0,0,0,!Effect,有些人相信\N{\rENG}Some people actually believe
+Dialogue: 0,2:09:43.04,2:09:46.34,CHT,,0,0,0,!Effect,二級軍士長游到了阿留申群島\N{\rENG}Senior Chief made the swim to the Aleutian Islands.
+Dialogue: 0,2:09:47.28,2:09:50.11,CHT,,0,0,0,!Effect,他在某個海灘\N{\rENG}He's standing on a distant beach somewhere
+Dialogue: 0,2:09:50.22,2:09:52.55,CHT,,0,0,0,!Effect,手上拿著釣竿\N{\rENG}with a fishing pole in his hand.
+Dialogue: 0,2:09:55.69,2:09:58.52,CHT,,0,0,0,!Effect,幾個星期後我得到了答案\N{\rENG}But I found my answer a couple weeks later.
+Dialogue: 0,2:10:04.13,2:10:05.50,CHT,,0,0,0,!Effect,他在哪兒?\N{\rENG}Where is he?
+Dialogue: 0,2:10:08.83,2:10:10.67,CHT,,0,0,0,!Effect,夥計 那邊沒有人了\N{\rENG}There's nobody else out there, man.
+Dialogue: 0,2:10:10.74,2:10:12.33,CHT,,0,0,0,!Effect,不 他在那兒\N{\rENG}No, he was there.
+Dialogue: 0,2:10:13.31,2:10:15.54,CHT,,0,0,0,!Effect,他一直在我身邊\N{\rENG}He was with me the whole time.
+Dialogue: 0,2:10:15.71,2:10:18.51,CHT,,0,0,0,!Effect,他說他會等到救援到來\N{\rENG}He said he would hold on till help arrived.
+Dialogue: 0,2:10:19.61,2:10:21.24,CHT,,0,0,0,!Effect,他從不放棄\N{\rENG}He never let go.
+Dialogue: 0,2:10:41.87,2:10:45.50,CHT,,0,0,0,!Effect,傳說在水下有個傳奇人物\N{\rENG}There's a legend of a man who lives beneath the sea.
+Dialogue: 0,2:10:47.97,2:10:49.84,CHT,,0,0,0,!Effect,他是個撈人的\N{\rENG}He is a fisher of men,
+Dialogue: 0,2:10:50.94,2:10:54.28,CHT,,0,0,0,!Effect,給了所有落伍者希望\N{\rENG}a last hope for all those who have been left behind.
+Dialogue: 0,2:10:57.88,2:11:00.04,CHT,,0,0,0,!Effect,他是個守護神\N{\rENG}He is known as the Guardian.
+Dialogue: 0,2:11:03.02,2:11:06.42,CHT,,0,0,0,!Effect,本·朗道總是說生命就是不斷地做選擇\N{\rENG}Ben Randall always said life is about making choices.
+Dialogue: 0,2:11:06.96,2:11:10.90,CHT,,0,0,0,!Effect,最後 他自己的決斷幫我做了決定\N{\rENG}In the end, by making his, he helped me make mine.
+Dialogue: 0,2:11:11.03,2:11:12.50,CHT,,0,0,0,!Effect,什麼會讓你難忘?\N{\rENG}What do you remember?
+Dialogue: 0,2:11:12.57,2:11:14.16,CHT,,0,0,0,!Effect,你身上的氣味是什麼樣的? 你看起來怎麼樣?\N{\rENG}What did you smell? What did you see?
+Dialogue: 0,2:11:14.23,2:11:16.06,CHT,,0,0,0,!Effect,這會讓你怎樣\N{\rENG}How did this make you
+Dialogue: 0,2:11:20.91,2:11:21.96,CHT,,0,0,0,!Effect,感覺?\N{\rENG}feel?
+Dialogue: 0,2:11:27.71,2:11:29.34,CHT,,0,0,0,!Effect,我馬上就回來\N{\rENG}I'll be right back.
+Dialogue: 0,2:11:33.95,2:11:35.94,CHT,,0,0,0,!Effect,你來這裡做什麼?\N{\rENG}What are you doing here?
+Dialogue: 0,2:11:38.16,2:11:39.65,CHT,,0,0,0,!Effect,我對你撒了謊\N{\rENG}I lied to you.
+Dialogue: 0,2:11:41.29,2:11:42.89,CHT,,0,0,0,!Effect,我做不到臨時的\N{\rENG}I can't do casual.
