@@ -1,0 +1,1298 @@
+﻿[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: The Drop 狸猫 特效双语-终稿
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: ch,楷体,17,&H00FFFFFF,&H0300FFFF,&H00A95807,&H02000000,0,0,0,0,100,100,0,0,1,1,0,2,10,10,7,1
+Style: music,黑体,15,&H00FFFFFF,&H0300FFFF,&H00FF8000,&H02000000,0,0,0,0,100,100,0,0,1,0,0,8,10,10,10,1
+Style: white,华文细黑,16,&H00FFFFFF,&H0300FFFF,&H00FFB824,&H02000000,0,1,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+Style: ali,幼圆,19,&H008000FF,&H0300FFFF,&H00C08000,&H02000000,1,0,0,0,100,100,0,0,1,1,1,2,10,10,10,1
+Style: Eng,微软雅黑,13,&H00FFFFFF,&H0300FFFF,&H00FFFFFF,&H02000000,1,0,0,0,100,100,0,0,1,0,1,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:14.80,0:00:22.80,ch,,0,0,0,,{\c&H00ffff&\fs23\fn}S
+Dialogue: 0,0:00:15.00,0:00:23.00,ch,,0,0,0,,{\c&H00ffff&\fs23\fn}D
+Dialogue: 0,0:00:15.50,0:00:23.50,ch,,0,0,0,,{\c&H00ffff&\fs23\fn}R
+Dialogue: 0,0:00:16.00,0:00:24.00,ch,,0,0,0,,{\c&H00ffff&\fs23\fn}F
+Dialogue: 0,0:00:23.89,0:00:28.55,ch,,0,0,0,,由第三楼字幕org调整时间轴
+Dialogue: 0,0:00:32.89,0:00:38.84,ch,,0,0,0,,翻译、校对、时间轴、后期特效：狸猫
+Dialogue: 0,0:00:41.41,0:00:48.61,ch,,0,0,0,,{\c&H00ffff&}压制：wildcloudy@FRDS{\c}\N{\c&HD200D2&}
+Dialogue: 0,0:01:02.47,0:01:06.80,ch,,0,0,0,,在熟悉的地方，你从不会仔细观察\NThere are places in my neighborhood,no one ever thinks about.
+Dialogue: 0,0:01:08.31,0:01:11.81,ch,,0,0,0,,你每天都会看到，但转瞬即忘\NYou see them every day and every day you forget about them.
+Dialogue: 0,0:01:12.15,0:01:14.68,ch,,0,0,0,,这里时常会发生一些事情\NThese are the places where all the things happen
+Dialogue: 0,0:01:14.70,0:01:17.18,ch,,0,0,0,,一些人们从不会注意的事 \Nthat people are not allowed to see.
+Dialogue: 0,0:01:18.99,0:01:22.83,ch,,0,0,0,,正如你所见，布鲁克林，每晚数不清的金钱汇聚这里\NYou see, in Brooklyn, money changes hands all night long.
+Dialogue: 0,0:01:23.08,0:01:26.42,ch,,0,0,0,,只是钱在这里可不是你存银行那么简单\NIt's just not the kind you can deposit in a bank.
+Dialogue: 0,0:01:27.00,0:01:30.88,ch,,0,0,0,,这是所有黑钱重生的地方\NAll that money needs to end up somewhere.
+Dialogue: 0,0:01:31.67,0:01:33.51,ch,,0,0,0,,他们称之为藏匿“包裹”\NThey call it a drop bar.
+Dialogue: 0,0:01:34.34,0:01:37.26,ch,,0,0,0,,大老板每天晚上随机选择酒吧...\NA bar the bosses choose randomly each night...
+Dialogue: 0,0:01:37.51,0:01:40.35,ch,,0,0,0,,....确保藏匿的地方绝对安全\N...to be the safe for an entire city.
+Dialogue: 0,0:01:41.43,0:01:44.94,ch,,0,0,0,,在你的酒吧成为“藏匿之地”前你永远不会察觉\NYou never know up front when your bar becomes the drop bar.
+Dialogue: 0,0:01:45.18,0:01:47.51,ch,,0,0,0,,你只要送走这城市城市的最脏的钱...\NYou just take all the city's dirtiest money...
+Dialogue: 0,0:01:47.77,0:01:51.94,ch,,0,0,0,,...和所有的送包人就好...\N...and bag men come and go from all over town...
+Dialogue: 0,0:01:52.19,0:01:56.53,ch,,0,0,0,,...他们就如幽灵一般，来去无踪\N...and nobody ever sees it coming.Nobody ever sees it going.
+Dialogue: 0,0:01:59.53,0:02:04.04,ch,,0,0,0,,你所知道的仅仅是“包裹”也许下周会来\NAnd then they could tell you to be the drop bar next week.
+Dialogue: 0,0:02:05.20,0:02:07.87,ch,,0,0,0,,亦或是明年\NOr maybe even next year.
+Dialogue: 0,0:02:09.71,0:02:12.55,ch,,0,0,0,,问题的关键是，你从未知道\NThe point is, you never know.
+Dialogue: 0,0:02:13.71,0:02:15.21,ch,,0,0,0,,同时...\NIn the meantime...
+Dialogue: 0,0:02:15.55,0:02:16.88,ch,,0,0,0,,...我...\N...me...
+Dialogue: 0,0:02:18.38,0:02:20.38,ch,,0,0,0,,...我只是酒吧老板\N...I just tend bar.
+Dialogue: 0,0:02:21.05,0:02:22.38,ch,,0,0,0,,一个等待“包裹”的人\NAnd wait.
+Dialogue: 0,0:02:23.00,0:02:27.00,ch,,0,0,0,,【危险藏匿】
+Dialogue: 0,0:02:28.48,0:02:31.48,ch,,0,0,0,,鲍比，你要请一轮么？\NBobby, you want to sprinkle the infield with the general?
+Dialogue: 0,0:02:31.73,0:02:33.90,ch,,0,0,0,,简直爽翻了，我们已经花掉8百万美元...\NThis is fucking awesome. We spend $80 million...
+Dialogue: 0,0:02:34.15,0:02:39.16,ch,,0,0,0,,...托这帮新泽西佬的霉运，钱都没了\N...to drag a bunch of Jersey geriatrics across the river to wet-shit their depends.
+Dialogue: 0,0:02:40.61,0:02:41.77,ch,,0,0,0,,够保守的\NThe old guard.
+Dialogue: 0,0:02:41.82,0:02:43.32,ch,,0,0,0,,他们可没有\NThey're not that old.
+Dialogue: 0,0:02:43.62,0:02:46.46,ch,,0,0,0,,你看沃克斯塔克豪斯挡拆封堵勒布朗？\NYou see Stackhouse block lebron with his Walker?
+Dialogue: 0,0:02:46.49,0:02:48.16,ch,,0,0,0,,先生们，免费威士忌\NGentlemen, these are on the house.
+Dialogue: 0,0:02:50.62,0:02:52.99,ch,,0,0,0,,当他说话时，总会有好事发生\NWhen he speaks, he says nice things.
+Dialogue: 0,0:02:54.29,0:02:55.96,ch,,0,0,0,,伙计，你可以清理一下？\NRardy, can you clean that up?
+Dialogue: 0,0:02:56.00,0:02:57.67,ch,,0,0,0,,好吧，当为了里奇\NOkay, if it's for Richie.
+Dialogue: 0,0:02:57.96,0:02:59.79,ch,,0,0,0,,你买新裤子了，苏利？\NYou got new pants, Sully?
+Dialogue: 0,0:02:59.84,0:03:01.51,ch,,0,0,0,,是的，我会把他们送到干洗店\NYeah, I'll send them to the dry cleaners.
+Dialogue: 0,0:03:01.80,0:03:03.97,ch,,0,0,0,,-  Rardy，这可不是求你  - 去你妈的\N-Rardy, we're not thanking you. -Fuck you.
+Dialogue: 0,0:03:04.01,0:03:05.84,ch,,0,0,0,,那家伙他妈的可是个大块头\NFucking sphinx, that guy.
+Dialogue: 0,0:03:09.68,0:03:11.80,ch,,0,0,0,,- 马文，多谢款待  - 谢谢，马文\N-Cousin Marv, thanks for the drink. -Thanks, Marv.
+Dialogue: 0,0:03:12.19,0:03:14.15,ch,,0,0,0,,我们能说一说孩子的事么？\NShall we say something for the kid?
+Dialogue: 0,0:03:14.19,0:03:16.49,ch,,0,0,0,,- 萨利，你先来  - 是啊，萨利，别犹豫\N-Sully, go ahead. -Yeah, Sully, do it up.
+Dialogue: 0,0:03:19.48,0:03:24.15,ch,,0,0,0,,致敬里奇，为92年那段难忘时光\NRichie "glory days" whelan. Fort Hamilton, class of '92 and a funny prick.
+Dialogue: 0,0:03:24.20,0:03:25.54,ch,,0,0,0,,愿他安息\NMay he rest in peace.
+Dialogue: 0,0:03:25.82,0:03:27.49,ch,,0,0,0,,"光辉岁月"\NGlory days.
+Dialogue: 0,0:03:28.99,0:03:30.32,ch,,0,0,0,,去他妈的\NFucking a.
+Dialogue: 0,0:03:35.17,0:03:36.51,ch,,0,0,0,,让我猜猜\NLet me guess.
+Dialogue: 0,0:03:37.34,0:03:39.18,ch,,0,0,0,,你请他们喝了一轮\NYou bought them the round.
+Dialogue: 0,0:03:39.67,0:03:42.17,ch,,0,0,0,,是啊 他们只是...\NYeah. They're only...
+Dialogue: 0,0:03:43.18,0:03:48.18,ch,,0,0,0,,他们正在缅怀一位非常亲密的朋友，马文\NThey're celebrating the anniversary of a very close friend, Marv.
+Dialogue: 0,0:03:49.35,0:03:52.06,ch,,0,0,0,,现在那孩子已经死了，有... 10年？\NThe kid's been dead, what...10 years now?
+Dialogue: 0,0:03:52.56,0:03:57.24,ch,,0,0,0,,你可够傻的，为了个死人请他们喝免费威士忌\NOught to be a point where you move on. Stop scoring free drinks off a corpse.
+Dialogue: 0,0:03:57.52,0:04:01.73,ch,,0,0,0,,这么说，也不应该让凳子上的美女喝免费酒？\NSpeaking of which, stop letting her ride a stool all night and not pay for her drinks.
+Dialogue: 0,0:04:02.03,0:04:04.03,ch,,0,0,0,,- 谁，米莉？ - 是的，米莉\N-Who, Millie? -Yeah, Millie.
+Dialogue: 0,0:04:04.53,0:04:06.54,ch,,0,0,0,,她没有喝那么多\NShe doesn't drink that much.
+Dialogue: 0,0:04:06.91,0:04:08.75,ch,,0,0,0,,你上次看她付账是什么时候？\NWhen's the last time you charged her?
+Dialogue: 0,0:04:09.03,0:04:10.86,ch,,0,0,0,,这是米莉，你知道的\NIt's Millie, you know.
+Dialogue: 0,0:04:13.87,0:04:17.50,ch,,0,0,0,,因为是米莉，所以她还可以半夜在禁烟区吸烟？\NAfter midnight, you let her smoke in here even though it's illegal.
+Dialogue: 0,0:04:17.54,0:04:18.87,ch,,0,0,0,,你以为我不知道吗？\NYou think I didn't know that?
+Dialogue: 0,0:04:19.13,0:04:23.64,ch,,0,0,0,,如果她还不付帐，今天晚上就得滚蛋\NIf she can't pay her tab tonight, she don't come back in here till she does.
+Dialogue: 0,0:04:23.88,0:04:26.55,ch,,0,0,0,,她应该付..120刀\NHer bar tab is, like, 120 bucks.
+Dialogue: 0,0:04:26.80,0:04:28.38,ch,,0,0,0,,一共是140刀\NIt's about $140.
+Dialogue: 0,0:04:28.64,0:04:30.23,ch,,0,0,0,,但她付不起，你知道的\NBut she can't afford it, you know?
+Dialogue: 0,0:04:30.47,0:04:33.97,ch,,0,0,0,,行了，我都感动的要哭了\NYeah, I'm gonna start crying now. Okay?
+Dialogue: 0,0:04:36.39,0:04:39.39,ch,,0,0,0,,把那些愚蠢的圣诞糖果清理掉，行么？\NAnd get all the candy canes and Christmas shit down.
+Dialogue: 0,0:04:39.65,0:04:42.32,ch,,0,0,0,,已经12月27日了\NIt's December 27th. Come on.
+Dialogue: 0,0:04:42.73,0:04:43.73,ch,,0,0,0,,先生们.\NGentlemen.
+Dialogue: 0,0:04:44.07,0:04:45.91,ch,,0,0,0,,我们他妈的就是群混蛋\NWhy don't you go fuck yourselves?
+Dialogue: 0,0:05:13.43,0:05:14.93,ch,,0,0,0,,...以神之名\N...hallowed be thy name.
+Dialogue: 0,0:05:15.27,0:05:18.78,ch,,0,0,0,,愿君主降临，诰明圣谕，永世流传\NThy kingdom come, thy will be done, on earth as it is in heaven.
+Dialogue: 0,0:05:19.10,0:05:21.10,ch,,0,0,0,,让我们每日温饱\NGive us this day our daily bread.
+Dialogue: 0,0:05:21.36,0:05:25.28,ch,,0,0,0,,原谅欺骗我们的人 背叛我们的人\NForgive us our trespasses as we forgive those who trespass against us.
+Dialogue: 0,0:05:25.53,0:05:28.87,ch,,0,0,0,,让我们远离诱惑，在罪恶中救赎自己\NLead us not into temptation, but deliver us from evil.
+Dialogue: 0,0:05:30.62,0:05:32.12,ch,,0,0,0,,耶稣与你同在\NPeace be with you.
+Dialogue: 0,0:05:35.95,0:05:36.95,ch,,0,0,0,,耶稣与你同在\NPeace be with you.
+Dialogue: 0,0:05:38.29,0:05:39.63,ch,,0,0,0,,耶稣与你同在\NPeace be with you.
+Dialogue: 0,0:05:40.38,0:05:41.38,ch,,0,0,0,,愿主保佑\NBody of Christ.
+Dialogue: 0,0:05:43.30,0:05:44.97,ch,,0,0,0,,愿主保佑\NThe body of Christ.
+Dialogue: 0,0:05:46.80,0:05:48.47,ch,,0,0,0,,愿主保佑\NThe body of Christ.
+Dialogue: 0,0:05:50.14,0:05:51.47,ch,,0,0,0,,愿主保佑\NThe body of Christ.
+Dialogue: 0,0:06:43.73,0:06:45.35,ch,,0,0,0,,这可不太好\NThat's not good.
+Dialogue: 0,0:06:46.02,0:06:47.69,ch,,0,0,0,,你这是在做什么呢？\NWhat are you doing in there?
+Dialogue: 0,0:06:53.03,0:06:55.53,ch,,0,0,0,,行了，都好了\NAll right. All right, now.
+Dialogue: 0,0:06:58.87,0:07:01.37,ch,,0,0,0,,嘿，在我垃圾桶这儿做什么？\NHey. What are you doing in my trash?
+Dialogue: 0,0:07:01.71,0:07:04.55,ch,,0,0,0,,垃圾桶里有一只狗\NYou have a dog in your trash can.
+Dialogue: 0,0:07:04.88,0:07:06.88,ch,,0,0,0,,被困住了\NIt's a boxer.
+Dialogue: 0,0:07:10.88,0:07:12.21,ch,,0,0,0,,我的天\NJesus.
+Dialogue: 0,0:07:12.72,0:07:15.56,ch,,0,0,0,,你垃圾里有一只狗\NYou have a dog here in your trash.
+Dialogue: 0,0:07:26.73,0:07:28.56,ch,,0,0,0,,它正在出血\NThis one's bleeding.
+Dialogue: 0,0:07:29.73,0:07:32.23,ch,,0,0,0,,- 你叫什么名字？鲍勃 -  吉诺\N-What's your name? -Bob saginowski.
+Dialogue: 0,0:07:32.28,0:07:33.41,ch,,0,0,0,,让我看看你的证件\NLet me see your license.
+Dialogue: 0,0:07:33.74,0:07:38.75,ch,,0,0,0,,我的证件？我的钱包在我的口袋里，你可以自己拿出来\NMy license? My wallet is in my pocket. You'll have to take it out.
+Dialogue: 0,0:07:51.42,0:07:54.09,ch,,0,0,0,,我刚刚把图片发给4个人，知道了？\NI just sent that picture to four people.We clear?
+Dialogue: 0,0:07:55.59,0:07:58.47,ch,,0,0,0,,- 它冻坏了 - 是啊，它很冷\N-He's freezing. -Yeah, well, it's cold.
+Dialogue: 0,0:07:58.76,0:08:00.59,ch,,0,0,0,,带它进屋吧\NLet's bring him inside.
+Dialogue: 0,0:08:07.44,0:08:09.28,ch,,0,0,0,,顺便说下，我叫纳迪亚\NI'm Nadia, by the way.
+Dialogue: 0,0:08:12.78,0:08:14.16,ch,,0,0,0,,这狗还有救？\NIs it bad?
+Dialogue: 0,0:08:15.11,0:08:17.15,ch,,0,0,0,,我不是专家，但是，你看\NIt's not that deep, but, man.
+Dialogue: 0,0:08:17.45,0:08:20.96,ch,,0,0,0,,这狗让人虐待惨了，看到这肿块没？\NSomeone beat the shit out of this dog. See these knots?
+Dialogue: 0,0:08:20.99,0:08:23.66,ch,,0,0,0,,这不是脑浆，只是淤血\NThat's not skull, that's contusions.
+Dialogue: 0,0:08:24.12,0:08:25.45,ch,,0,0,0,,你是兽医？\NAre you a vet?
+Dialogue: 0,0:08:26.12,0:08:29.29,ch,,0,0,0,,不，我是餐厅服务员\NNo, I'm a waitress at the ashmont grill.
+Dialogue: 0,0:08:29.67,0:08:32.64,ch,,0,0,0,,但我整个夏天都在动物救助站做技师\NBut I worked at animal rescue one summer as a tech.
+Dialogue: 0,0:08:32.96,0:08:34.29,ch,,0,0,0,,小心点\NCareful.
+Dialogue: 0,0:08:34.97,0:08:38.98,ch,,0,0,0,,太可怜了，它只是为了给小狗找个窝\NThey're so hard, this breed.To find them a home.
+Dialogue: 0,0:08:39.64,0:08:41.14,ch,,0,0,0,,这是拳师狗？\NBoxers?
+Dialogue: 0,0:08:41.18,0:08:43.30,ch,,0,0,0,,这不是拳师狗，这是一种斗牛犬\NThis isn't a boxer. It's a pit bull.
+Dialogue: 0,0:08:45.48,0:08:46.82,ch,,0,0,0,,这是一只极其危险的狗\NThat's a dangerous dog.
+Dialogue: 0,0:08:48.31,0:08:50.98,ch,,0,0,0,,错不在狗，它的主人才是混蛋\NIt's not the dog's fault his owner is a dick.
+Dialogue: 0,0:08:51.65,0:08:52.99,ch,,0,0,0,,这家伙...\NThis guy...
+Dialogue: 0,0:08:53.32,0:08:54.99,ch,,0,0,0,,...看看它\N...look at him.
+Dialogue: 0,0:08:56.15,0:08:58.32,ch,,0,0,0,,它只是个小可爱\NHe's nothing but sweet.
+Dialogue: 0,0:09:04.00,0:09:07.71,ch,,0,0,0,,你需要一个箱子来安置它们，我去拿一个\NYou'll need a crate--makes them feel safe.I have one you can borrow.
+Dialogue: 0,0:09:08.00,0:09:10.72,ch,,0,0,0,,还有狗粮和嚼棒\NAnd food and chew toys and stuff.
+Dialogue: 0,0:09:11.00,0:09:16.00,ch,,0,0,0,,但是..我只是碰巧发现了，我不能..\NBut I was, I was just passing a garbage can. I can't--
+Dialogue: 0,0:09:16.34,0:09:19.84,ch,,0,0,0,,- 我还是把它送回去  - 送给谁？虐待它的家伙？\N-I'll just take him back. -To who? The guy who beat him?
+Dialogue: 0,0:09:19.89,0:09:21.89,ch,,0,0,0,,那我就把它送到救助站\NI'll take him to the proper authorities.
+Dialogue: 0,0:09:22.18,0:09:24.01,ch,,0,0,0,,那儿将是它的家\NThat would be the shelter.
+Dialogue: 0,0:09:24.06,0:09:25.06,ch,,0,0,0,,好吧\NRight.
+Dialogue: 0,0:09:25.68,0:09:26.80,ch,,0,0,0,,之后，他们给主人七天时间\NAfter they give the owner seven days
+Dialogue: 0,0:09:26.83,0:09:30.02,ch,,0,0,0,,如果他还决定抛弃这只狗...\N to reclaim him, if he decides not to...
+Dialogue: 0,0:09:30.06,0:09:32.06,ch,,0,0,0,,...这狗就会被拿出来领养\N...this dog will be put up for adoption.
+Dialogue: 0,0:09:32.36,0:09:35.91,ch,,0,0,0,,但是谁会领养这只狗？\NBut who knows what kind of person will take him?
+Dialogue: 0,0:09:38.20,0:09:39.37,ch,,0,0,0,,我不知道\NI don't know.
+Dialogue: 0,0:09:40.03,0:09:42.36,ch,,0,0,0,,你可以的，给它一个家\NYou can take him. You take him.
+Dialogue: 0,0:09:42.41,0:09:44.71,ch,,0,0,0,,我晚上工作，有很多活要干\NI work nights. I work a lot.
+Dialogue: 0,0:09:45.08,0:09:46.92,ch,,0,0,0,,给我我只能把它送到救助站\NWe'll have to send him to animal rescue.
+Dialogue: 0,0:09:47.21,0:09:49.88,ch,,0,0,0,,好吧，这样，你看你能..你能不能...\NOkay, look, can you, can you...
+Dialogue: 0,0:09:49.92,0:09:52.72,ch,,0,0,0,,...给我一两天去考虑？-求你了\N...give me a couple days to think about it? Please?
+Dialogue: 0,0:09:53.04,0:09:56.00,ch,,0,0,0,,我需要好好考虑下，这不是个轻松的活\NI have to think about this. It's a big responsibility.
+Dialogue: 0,0:09:56.05,0:09:57.89,ch,,0,0,0,,对于养狗我一窍不...\NI don't know anything about--
+Dialogue: 0,0:09:57.92,0:10:00.59,ch,,0,0,0,,没关系，就几天，我会回来\Nplease, just a couple days. I'll come back.
+Dialogue: 0,0:10:00.89,0:10:03.89,ch,,0,0,0,,求你，抱着它，周末我就过来\NPlease, a couple days. Hold him till the weekend.
+Dialogue: 0,0:10:04.22,0:10:08.22,ch,,0,0,0,,到周末，就几天，求你了...\NJust the weekend. It's a couple days. Please. Please.
+Dialogue: 0,0:10:10.19,0:10:11.28,ch,,0,0,0,,周六上午\NSaturday morning.
+Dialogue: 0,0:10:12.61,0:10:13.90,ch,,0,0,0,,谢谢\NThank you.
+Dialogue: 0,0:10:18.07,0:10:19.91,ch,,0,0,0,,就这样，谢谢\NAll right. Thank you.
+Dialogue: 0,0:10:20.61,0:10:21.94,ch,,0,0,0,,星期六\NSaturday.
+Dialogue: 0,0:10:22.41,0:10:23.58,ch,,0,0,0,,鲍勃？\NBob?
+Dialogue: 0,0:10:23.83,0:10:25.83,ch,,0,0,0,,- 这狗需要一个名字 - 没错。\N-The dog needs a name. -Right.
+Dialogue: 0,0:10:28.91,0:10:30.58,ch,,0,0,0,,噢 我的天啊...\NOh, my God. Oh, my God.
+Dialogue: 0,0:10:37.76,0:10:39.55,ch,,0,0,0,,你会好起来的\NYou're going to be okay.
+Dialogue: 0,0:10:39.59,0:10:43.09,ch,,0,0,0,,你知道一个纳迪亚邓恩的人么？纳迪亚邓恩？\NDo you know a Nadia Dunn? Nadia Dunn?
+Dialogue: 0,0:10:43.76,0:10:45.09,ch,,0,0,0,,你知道么？\NYou don't?
+Dialogue: 0,0:10:46.18,0:10:47.18,ch,,0,0,0,,你不知道？\NYou don't?
+Dialogue: 0,0:10:47.43,0:10:48.43,ch,,0,0,0,,不\NNo.
+Dialogue: 0,0:10:48.68,0:10:51.26,ch,,0,0,0,,就是牵着这只狗的女孩\NThat's the girl who's holding the dog.
+Dialogue: 0,0:10:52.10,0:10:53.77,ch,,0,0,0,,又是狗\NThe dog again.
+Dialogue: 0,0:10:54.02,0:10:57.44,ch,,0,0,0,,你知道，我在想，怎么训练这只狗...\NYou know, I was thinking that training a dog...
+Dialogue: 0,0:10:57.78,0:11:00.95,ch,,0,0,0,,...看家，而且所有这一切，这是...\N...housebreaking, and all that, that's...
+Dialogue: 0,0:11:01.61,0:11:05.61,ch,,0,0,0,,...我的意思是，这是一个大责任，对不对？\N...I mean, that is a huge responsibility, right?
+Dialogue: 0,0:11:06.62,0:11:08.12,ch,,0,0,0,,嗯，这只是一只狗\NWell, it's a dog.
+Dialogue: 0,0:11:09.79,0:11:13.55,ch,,0,0,0,,它可不像一些坐在轮椅里腰上挂着尿袋的..\NIt's not like some long-lost retarded relative shows up in a wheelchair...
+Dialogue: 0,0:11:13.79,0:11:16.12,ch,,0,0,0,,...老年痴呆症患者\N...a colostomy bag hanging out of his ass.
+Dialogue: 0,0:11:17.13,0:11:19.64,ch,,0,0,0,,说，“我是你的了，照顾好我”\NSays, "I'm yours now. Take care of me."
+Dialogue: 0,0:11:20.47,0:11:21.80,ch,,0,0,0,,而它不是\NIt's not that.
+Dialogue: 0,0:11:22.13,0:11:23.46,ch,,0,0,0,,只是一只狗\NIt's a dog.
+Dialogue: 0,0:11:32.81,0:11:34.14,ch,,0,0,0,,是啊\NYeah.
+Dialogue: 0,0:11:45.95,0:11:47.12,ch,,0,0,0,,什么？\NWhat?
+Dialogue: 0,0:11:48.54,0:11:49.62,ch,,0,0,0,,什么？\NWhat?
+Dialogue: 0,0:11:50.04,0:11:51.04,ch,,0,0,0,,不\NNo.
+Dialogue: 0,0:11:52.29,0:11:54.30,ch,,0,0,0,,这主意糟透了\NIt's a fucking bad idea.
+Dialogue: 0,0:11:54.54,0:11:57.37,ch,,0,0,0,,这一切太好笑了，就当这事没发生过好么\NWe should hit it for everything or not at all.
+Dialogue: 0,0:11:57.63,0:12:01.05,ch,,0,0,0,,哥们，听着。我的良心告诉我，我们得给它...\NLittle brother, listen. My guy says we got to show him...
+Dialogue: 0,0:12:01.30,0:12:02.89,ch,,0,0,0,,...给他找一个归宿\N...that we can handle our shit.
+Dialogue: 0,0:12:02.92,0:12:06.30,ch,,0,0,0,,我们这样做，看看狗的主人是何反应\NSays we do it in steps. See how the owners respond.
+Dialogue: 0,0:12:06.55,0:12:09.38,ch,,0,0,0,,他们会以为你是个山炮，你个傻逼\NThey could respond pretty fucking bad, you nut.
+Dialogue: 0,0:12:10.06,0:12:12.06,ch,,0,0,0,,所以我们应该尝试下\NSo that's what we'll see.
+Dialogue: 0,0:12:14.06,0:12:18.73,ch,,0,0,0,,你这个家伙，说这么一大堆废话\NYour guy. Your fucking guy talks a whole hell of a lot.
+Dialogue: 0,0:12:20.40,0:12:22.19,ch,,0,0,0,,这是一个他妈的“包裹"\NIt's a fucking drop bar.
+Dialogue: 0,0:12:22.24,0:12:23.91,ch,,0,0,0,,今晚可没有\NNot tonight it isn't.
+Dialogue: 0,0:12:27.74,0:12:28.90,ch,,0,0,0,,就这样？\NOkay?
+Dialogue: 0,0:12:30.74,0:12:31.91,ch,,0,0,0,,好吧\NOkay.
+Dialogue: 0,0:13:00.23,0:13:02.23,ch,,0,0,0,,别管别的，给它装满\NDon't think about it, just fill it.
+Dialogue: 0,0:13:03.94,0:13:05.61,ch,,0,0,0,,好吧，别给我们惹麻烦\NOkay, we won't cause any trouble.
+Dialogue: 0,0:13:05.90,0:13:07.40,ch,,0,0,0,,这里麻烦的只有你\NYou're making trouble!
+Dialogue: 0,0:13:07.78,0:13:10.28,ch,,0,0,0,,- 你知道你在他妈的做啥呢？ - 马文\N-Do you know what the fuck you're doing? -Marv.
+Dialogue: 0,0:13:10.62,0:13:11.96,ch,,0,0,0,,你知道这是谁的钱吗？\NDo you know whose money this is?
+Dialogue: 0,0:13:12.24,0:13:13.61,ch,,0,0,0,,让你装就赶紧的\NFucking fill the bag!
+Dialogue: 0,0:13:15.46,0:13:16.63,ch,,0,0,0,,好吧\NAll right.
+Dialogue: 0,0:13:17.12,0:13:18.45,ch,,0,0,0,,放松点\NJust take it easy.
+Dialogue: 0,0:13:28.97,0:13:30.14,ch,,0,0,0,,就这样\NThere you go.
+Dialogue: 0,0:13:31.76,0:13:32.93,ch,,0,0,0,,这样可以了吗\NGo ahead.
+Dialogue: 0,0:13:35.48,0:13:37.15,ch,,0,0,0,,你他妈说得太多了\NYou fucking talk too much.
+Dialogue: 0,0:13:51.49,0:13:52.78,ch,,0,0,0,,rardy在哪儿？\NWhere's rardy?
+Dialogue: 0,0:13:53.83,0:13:55.00,ch,,0,0,0,,Rardy？\NRardy?
+Dialogue: 0,0:13:55.33,0:13:56.67,ch,,0,0,0,,哎我草..\NWhat the fuck?
+Dialogue: 0,0:13:56.96,0:14:00.46,ch,,0,0,0,,- 你没事吧？ - 哦，老天，吓尿了\N-You all right? -Oh, God, I'm gonna be sick.
+Dialogue: 0,0:14:01.29,0:14:03.79,ch,,0,0,0,,- 我没事 - 看他的头\N-I'm okay. -Look at his head.
+Dialogue: 0,0:14:05.01,0:14:07.01,ch,,0,0,0,,他让人削了 快叫救护车\NSplit open. We got to call an ambulance.
+Dialogue: 0,0:14:07.30,0:14:10.64,ch,,0,0,0,,这真糟糕， Rardy，呆在这里，不要动\NThat's bad. Rardy, don't move.Just stay where you are.
+Dialogue: 0,0:14:10.89,0:14:14.39,ch,,0,0,0,,- 我看起来多糟糕？ - 不要动，除非你想变植物人\N-How bad do I look? -Don't move. It's not good.
+Dialogue: 0,0:14:18.06,0:14:20.07,ch,,0,0,0,,我在你脑袋上放条毛巾\NI'm putting something on your head.
+Dialogue: 0,0:14:21.23,0:14:22.57,ch,,0,0,0,,按住\NHold that.
+Dialogue: 0,0:14:24.23,0:14:25.90,ch,,0,0,0,,还有你脸上\NThere's one for your face.
+Dialogue: 0,0:14:32.07,0:14:34.74,ch,,0,0,0,,St.dom's 早8点\NThe 8 o'clock at St. dom's.
+Dialogue: 0,0:14:35.58,0:14:38.25,ch,,0,0,0,,每天早上，我们匆匆遇见，又擦肩而过\NEvery morning we see each other and we've never met.
+Dialogue: 0,0:14:38.58,0:14:42.76,ch,,0,0,0,,-探员万德罗托雷斯  - 嗨，我是鲍勃\N-Detective evandro Torres. -Hi. I'm Bob saginowski.
+Dialogue: 0,0:14:44.25,0:14:46.67,ch,,0,0,0,,- 关于St. dom's我很抱歉 - 你是什么意思？\N-A shame about St. dom's. -What do you mean?
+Dialogue: 0,0:14:46.92,0:14:51.42,ch,,0,0,0,,我只是发现了他们改名为圣玛利亚，你能相信吗？\NI just found out they're folding it into St. Mary's. Can you believe that?
+Dialogue: 0,0:14:51.84,0:14:52.84,ch,,0,0,0,,我不知道你说什么\NI did not know that.
+Dialogue: 0,0:14:53.09,0:14:54.59,ch,,0,0,0,,- 你是这儿的调酒师？ - 是啊\N-You're the bartender? -Yeah.
+Dialogue: 0,0:14:54.85,0:14:57.10,ch,,0,0,0,,谈谈这抢劫案吧  -出来聊聊？\NThe guys with the guns--  want to take a walk?
+Dialogue: 0,0:14:57.85,0:15:01.27,ch,,0,0,0,,你认为他们中有没有人曾经来过你这里？\NThey sound like anyone who ever came in here before?
+Dialogue: 0,0:15:01.60,0:15:05.85,ch,,0,0,0,,应该有，离我最近的家伙，它手表坏了，我记得\NNah. The guy closest to me,I could see that his watch had stopped.
+Dialogue: 0,0:15:06.61,0:15:11.62,ch,,0,0,0,,官员贝尔纳多说，你报告他们从头到尾没露面？\NOfficer Bernardo says you said they were covered head to toe? Hoodies, masks?
+Dialogue: 0,0:15:11.86,0:15:15.53,ch,,0,0,0,,是的，但我可以看到他的手腕，他转过来的时候\NYeah, but I could see his wrist as it was turning.
+Dialogue: 0,0:15:15.78,0:15:19.12,ch,,0,0,0,,手表就这样露在我面前，像这样\NThe face of the watch was in front of me, like that.
+Dialogue: 0,0:15:19.45,0:15:21.78,ch,,0,0,0,,- 手表停了？ - 是的，停在6:15\N-And it was stopped? -Yeah. It said 6:15.
+Dialogue: 0,0:15:22.79,0:15:24.04,ch,,0,0,0,,他从你这里抢走多少？\NHow much they take you for?
+Dialogue: 0,0:15:24.29,0:15:26.46,ch,,0,0,0,,收银机里所有的钱\NWell, whatever was in the register.
+Dialogue: 0,0:15:26.88,0:15:30.05,ch,,0,0,0,,那么，我不会听说你这里有赌博...\NSo, if I was to ask around,I wouldn't hear anything about...
+Dialogue: 0,0:15:30.30,0:15:34.14,ch,,0,0,0,,...或者关于洗钱什么的事情，对吧？\N...anyone making book here, or someone moving money around?
+Dialogue: 0,0:15:34.39,0:15:35.56,ch,,0,0,0,,你这是什么意思？\NExcuse me?
+Dialogue: 0,0:15:35.80,0:15:37.47,ch,,0,0,0,,- 你没干那些事情？ - 没有\N-I wouldn't hear that? -Nah.
+Dialogue: 0,0:15:38.22,0:15:40.89,ch,,0,0,0,,- 你有保险吗，rardy？ - 你认为呢？\N-Do you have insurance, rardy? -What do you think?
+Dialogue: 0,0:15:41.14,0:15:43.14,ch,,0,0,0,,不，我们没有保险\NNo, we don't have insurance.
+Dialogue: 0,0:15:43.73,0:15:46.74,ch,,0,0,0,,- 整个事情真是一团糟  - 是的，他被人白揍一顿\N-The whole thing's a travesty.-Yeah, he took a pretty bad hit.
+Dialogue: 0,0:15:46.98,0:15:48.98,ch,,0,0,0,,不，是说关于St. dom's的事\NNah, I meant St. dom's.
+Dialogue: 0,0:15:49.32,0:15:50.32,ch,,0,0,0,,好 好！\NYeah. Yeah.
+Dialogue: 0,0:15:50.57,0:15:53.24,ch,,0,0,0,,美丽的教堂，他们做的真好\NBeautiful church. They did mass right.
+Dialogue: 0,0:15:53.49,0:15:57.66,ch,,0,0,0,,没有唱诗班 祈祷结束后也没有拥抱\NNo group hugs after the our father.No folk singers.
+Dialogue: 0,0:15:58.08,0:16:00.75,ch,,0,0,0,,当他们玩闹够了 这教堂...\NBy the time the seculars get done persecuting the church...
+Dialogue: 0,0:16:01.00,0:16:04.75,ch,,0,0,0,,...留下来的不过一扇扇窗户，还有上边的彩色玻璃\N...all we'll have left is a bunch of condos with stained glass windows.
+Dialogue: 0,0:16:05.50,0:16:07.83,ch,,0,0,0,,那边的监控探头出什么毛病了？\NWhat's up with the surveillance cameras in there?
+Dialogue: 0,0:16:08.09,0:16:10.84,ch,,0,0,0,,那只是个空壳，只是为了吓唬罪犯\NThey don't record. They're just a deterrent for crime.
+Dialogue: 0,0:16:11.09,0:16:12.68,ch,,0,0,0,,你怎么从不领圣餐？\NWhy don't you take communion?
+Dialogue: 0,0:16:14.84,0:16:16.17,ch,,0,0,0,,什么？\NExcuse me?
+Dialogue: 0,0:16:16.51,0:16:19.51,ch,,0,0,0,,这么多年我在弥撒看到你很多次，你从没领过圣餐\NI've seen you at mass for years. You haven't taken communion once.
+Dialogue: 0,0:16:22.68,0:16:25.35,ch,,0,0,0,,这个，你知道的，个人隐私\NWell, you know, that's my business.
+Dialogue: 0,0:16:25.94,0:16:27.36,ch,,0,0,0,,你说呢？是吧？\NYou think so, huh?
+Dialogue: 0,0:16:32.36,0:16:34.36,ch,,0,0,0,,是啊，我也这么认为\NYeah, I think so.
+Dialogue: 0,0:16:34.61,0:16:36.69,ch,,0,0,0,,老天，我他妈的就知道这样\NJesus. I fucking know so.
+Dialogue: 0,0:16:42.62,0:16:44.70,ch,,0,0,0,,所以他还是不相信你...\NSo was he gonna let you wear his letter jacket...
+Dialogue: 0,0:16:44.75,0:16:47.55,ch,,0,0,0,,......还是他还在试探你？\N...or did he have to twist your nipples a few times first?
+Dialogue: 0,0:16:48.63,0:16:51.97,ch,,0,0,0,,你他妈的和警察说那块表干啥？\NWhy the fuck would you tell that cop about the watch?
+Dialogue: 0,0:16:52.21,0:16:54.38,ch,,0,0,0,,- 我不知道 - 你不知道\N-I don't know. -You don't know.
+Dialogue: 0,0:16:54.63,0:16:55.63,ch,,0,0,0,,就是这样说出去了\NIt just came out.
+Dialogue: 0,0:16:55.88,0:16:59.55,ch,,0,0,0,,那好 以后在说话的时候 走点脑子！\NWell, next time, why don't you nip that impulse in the bud?
+Dialogue: 0,0:16:59.80,0:17:01.47,ch,,0,0,0,,你他妈的这是怎么了？\NWhat the fuck is wrong with you?
+Dialogue: 0,0:17:01.72,0:17:03.80,ch,,0,0,0,,这一点不像我，马文\NIt was very unlike me, Marv.
+Dialogue: 0,0:17:05.56,0:17:08.06,ch,,0,0,0,,他们拿走我们5千多元\NThey took us for five thou and some change.
+Dialogue: 0,0:17:08.40,0:17:09.74,ch,,0,0,0,,五千？\NFive thousand?
+Dialogue: 0,0:17:11.65,0:17:14.99,ch,,0,0,0,,还好他们只拿走信封那些，所以还没那么糟糕\NThank God they picked up the envelope, so we're not on the hook for that.
+Dialogue: 0,0:17:15.24,0:17:17.58,ch,,0,0,0,,这和我们没多少关系\NSo we're all right. We're okay.
+Dialogue: 0,0:17:18.74,0:17:22.24,ch,,0,0,0,,不，他们拿走了我们五千美元还有一些零钱\NNo, they took us for five large and some change.
+Dialogue: 0,0:17:22.91,0:17:25.07,ch,,0,0,0,,这些是“包裹”里的东西，他们的钱\NIt's their bar, it's their money.
+Dialogue: 0,0:17:25.41,0:17:29.41,ch,,0,0,0,,他们会来要账的，所以离他妈的没事还远着呢\NThey're going to want it back.So we're not so fucking okay.
+Dialogue: 0,0:17:35.09,0:17:36.18,ch,,0,0,0,,鲍勃？\NBob?
+Dialogue: 0,0:17:37.68,0:17:39.35,ch,,0,0,0,,- 你没事吧？ - 没事\N-You all right? -Yeah.
+Dialogue: 0,0:17:39.59,0:17:44.09,ch,,0,0,0,,- 谁知道明天会发生什么 - 是啊，我想我们只能等了\N-Kind of early for the eight. -Yeah. I figured I could wait.
+Dialogue: 0,0:17:44.43,0:17:46.60,ch,,0,0,0,,好吧，进来吧\NWell, come on in.
+Dialogue: 0,0:18:19.13,0:18:21.13,ch,,0,0,0,,这只是一些狗粮\NIt's just a bowl and some food.
+Dialogue: 0,0:18:21.39,0:18:22.81,ch,,0,0,0,,谢谢，谢谢\NThank you. Thank you.
+Dialogue: 0,0:18:23.14,0:18:25.31,ch,,0,0,0,,- 祝好运  - 谢谢\N-Good luck. -Thank you.
+Dialogue: 0,0:18:58.84,0:19:02.01,ch,,0,0,0,,你知道，我以前从来没有养过狗...\NYou know, I've never owned a dog before...
+Dialogue: 0,0:19:02.34,0:19:04.17,ch,,0,0,0,,...所以，你知道...\N...so, you know...
+Dialogue: 0,0:19:05.85,0:19:09.19,ch,,0,0,0,,我不知道该怎么做\NI have no idea what I'm doing. At all.
+Dialogue: 0,0:19:09.85,0:19:12.18,ch,,0,0,0,,你需要这个\NYou'll need bowls.
+Dialogue: 0,0:19:14.52,0:19:15.85,ch,,0,0,0,,一条狗链\NA leash.
+Dialogue: 0,0:19:18.86,0:19:20.86,ch,,0,0,0,,狗便袋\NPoop bags.
+Dialogue: 0,0:19:23.70,0:19:27.87,ch,,0,0,0,,从现在开始，鞋要放到架子上\NAnd from now on, keep your shoes up on a shelf.
+Dialogue: 0,0:19:29.04,0:19:32.55,ch,,0,0,0,,让我看看，如果我能找到放在床上那个..\NLet me see if I can find the bed section.
+Dialogue: 0,0:19:33.88,0:19:35.05,ch,,0,0,0,,你想干嘛？\NWhat do you want?
+Dialogue: 0,0:19:39.71,0:19:43.88,ch,,0,0,0,,这是我知道的最好的书了，你应该看看\NThis is the best book I know. You should read it.
+Dialogue: 0,0:19:48.14,0:19:50.15,ch,,0,0,0,,一切都在这里\NEverything is in here.
+Dialogue: 0,0:19:58.15,0:19:59.49,ch,,0,0,0,,给它想好名字了吗？\NWhat are you naming him?
+Dialogue: 0,0:19:59.73,0:20:04.07,ch,,0,0,0,,好吧，我想叫它洛克，我喜欢洛克这个名字\NWell, I was thinking about maybe rocco. I like the name rocco.
+Dialogue: 0,0:20:04.32,0:20:06.15,ch,,0,0,0,,好像迈克也不错\NBut then I thought Mike.
+Dialogue: 0,0:20:06.91,0:20:08.25,ch,,0,0,0,,迈克？\NMike?
+Dialogue: 0,0:20:08.58,0:20:13.09,ch,,0,0,0,,- 你不喜欢迈克？ - 迈克可不是一个好名字\N-You don't like Mike?  -No. Mike is not a great name for a dog.
+Dialogue: 0,0:20:13.75,0:20:15.25,ch,,0,0,0,,洛克好一些\NRocco is better.
+Dialogue: 0,0:20:15.92,0:20:17.09,ch,,0,0,0,,那就洛克\NOkay.
+Dialogue: 0,0:20:18.25,0:20:21.25,ch,,0,0,0,,所以你是因为做体操运动员后才叫纳迪亚么？\NSo did they name you Nadia after the gymnast?
+Dialogue: 0,0:20:21.51,0:20:23.51,ch,,0,0,0,,- 是啊  - 所以，你是一个体操运动员？\N-Yeah. -So you're a gymnast?
+Dialogue: 0,0:20:23.76,0:20:24.93,ch,,0,0,0,,不\NNo.
+Dialogue: 0,0:20:27.76,0:20:29.59,ch,,0,0,0,,干得好，看到了吗？\NHere you go. See?
+Dialogue: 0,0:20:29.93,0:20:32.93,ch,,0,0,0,,“洛克”。嘿，它喜欢这个名字\N"Rocco". Hey, he likes it.
+Dialogue: 0,0:20:33.27,0:20:34.77,ch,,0,0,0,,是啊，我还是喜欢迈克\NYeah, I like Mike.
+Dialogue: 0,0:20:41.61,0:20:42.95,ch,,0,0,0,,- 你领养它了？ - 是啊\N-You have him? -Yeah.
+Dialogue: 0,0:20:45.28,0:20:46.45,ch,,0,0,0,,养狗需要耐心\NBe patient.
+Dialogue: 0,0:20:47.28,0:20:48.78,ch,,0,0,0,,再见，谢谢你\NBye, thank you.
+Dialogue: 0,0:21:07.64,0:21:14.61,ch,,0,0,0,,“别忘了给盒子两边加上垫子”\N"Make sure the bottoms of the two side panels rest inside the bottom."
+Dialogue: 0,0:21:25.65,0:21:27.32,ch,,0,0,0,,嘿，洛克？\NHey, rocco?
+Dialogue: 0,0:21:28.32,0:21:30.49,ch,,0,0,0,,我给你找个安全的窝\NI made you a safe place.
+Dialogue: 0,0:21:52.85,0:21:54.02,ch,,0,0,0,,鲍勃？\NBob?
+Dialogue: 0,0:21:57.52,0:21:59.03,ch,,0,0,0,,冷了吧？\NCold one, huh?
+Dialogue: 0,0:22:01.02,0:22:03.98,ch,,0,0,0,,有鲍勃你这暖男谁怕冷？\NWho needs snow blower when you have Bob?
+Dialogue: 0,0:22:04.03,0:22:05.70,ch,,0,0,0,,也许一会应该去我那里一趟\NMaybe you come to my house later.
+Dialogue: 0,0:22:06.70,0:22:07.87,ch,,0,0,0,,当然\NSure.
+Dialogue: 0,0:22:08.70,0:22:09.87,ch,,0,0,0,,开玩笑的\NI'm kidding.
+Dialogue: 0,0:22:10.20,0:22:11.45,ch,,0,0,0,,是我……囧\NThis guy.
+Dialogue: 0,0:22:13.45,0:22:14.53,ch,,0,0,0,,你现在很安逸？\NYou on the welfare?
+Dialogue: 0,0:22:14.79,0:22:15.96,ch,,0,0,0,,什么？\NExcuse me?
+Dialogue: 0,0:22:16.20,0:22:18.45,ch,,0,0,0,,鲍勃干了所有的活，看看吧\NBob does all the work. You watch.
+Dialogue: 0,0:22:18.71,0:22:20.38,ch,,0,0,0,,不，我在铲\NNo, I was shoveling.
+Dialogue: 0,0:22:20.63,0:22:22.63,ch,,0,0,0,,- 你也在铲雪，好吧  - 他在做\N-You're shoveling, all right.  -He was.
+Dialogue: 0,0:22:23.38,0:22:24.55,ch,,0,0,0,,过来\NCome.
+Dialogue: 0,0:22:48.24,0:22:49.58,ch,,0,0,0,,你认识这个人？\NYou know this guy?
+Dialogue: 0,0:22:50.91,0:22:51.91,ch,,0,0,0,,不\NNo.
+Dialogue: 0,0:22:52.16,0:22:53.83,ch,,0,0,0,,但我认识这家伙\NBut I know this guy.
+Dialogue: 0,0:22:56.49,0:22:58.32,ch,,0,0,0,,当我想要知道的时候我无所不知\NMoment I know him, I know him.
+Dialogue: 0,0:23:01.08,0:23:03.08,ch,,0,0,0,,有人抢走我的“包裹"\NSomebody robbed my bar.
+Dialogue: 0,0:23:03.59,0:23:07.26,ch,,0,0,0,,额，是的，这事很抱歉，Umarov先生\NYes. That's right. I'm sorry, Mr. umarov.
+Dialogue: 0,0:23:08.34,0:23:10.26,ch,,0,0,0,,Umarov先生是我老子\NCall my father Mr. umarov.
+Dialogue: 0,0:23:10.51,0:23:11.51,ch,,0,0,0,,鲍勃·...\NBob...
+Dialogue: 0,0:23:12.09,0:23:13.76,ch,,0,0,0,,...叫我Chovka，恩？\N...call me chovka, eh?
+Dialogue: 0,0:23:14.01,0:23:18.01,ch,,0,0,0,,好吧，对不起，Chovka先生，的确有人抢走你的“包裹”\NThat's right, I'm sorry, Mr. chovka somebody did rob your bar.
+Dialogue: 0,0:23:18.27,0:23:19.77,ch,,0,0,0,,谁抢了我“包裹”？\NWho robbed our bar?
+Dialogue: 0,0:23:20.10,0:23:22.35,ch,,0,0,0,,我不知道，他们戴着面具\NWe don't know. They wore masks.
+Dialogue: 0,0:23:22.60,0:23:24.60,ch,,0,0,0,,他说的对，我们看不到他们的脸\NThat's right. So we couldn't see.
+Dialogue: 0,0:23:24.86,0:23:27.78,ch,,0,0,0,,警方报告说，其中一个人带着一块坏表\NPolice report says one wore a broken watch.
+Dialogue: 0,0:23:27.82,0:23:28.91,ch,,0,0,0,,这是你告诉他们的？\NYou tell them this?
+Dialogue: 0,0:23:28.94,0:23:33.86,ch,,0,0,0,,是的，当时我刚出来，没考虑那么多\NYeah, I did. I wasn't thinking. It just came out.
+Dialogue: 0,0:23:34.12,0:23:37.71,ch,,0,0,0,,那么你们打算怎么把我父亲的钱找回来？\NSo what are you doing to get my father's money back?
+Dialogue: 0,0:23:37.95,0:23:39.62,ch,,0,0,0,,好吧，这么说\NWell, we put the word out.
+Dialogue: 0,0:23:39.87,0:23:41.78,ch,,0,0,0,,- 抢钱的人就在这附近 - 他说的没错\N-In the neighborhood. -That's right.
+Dialogue: 0,0:23:42.12,0:23:44.95,ch,,0,0,0,,他们说钱就在这附近\NThey got the word out in the neighborhood.
+Dialogue: 0,0:23:46.21,0:23:48.21,ch,,0,0,0,,你的意思就是在附近，是吧？\NSo the word is out there, huh?
+Dialogue: 0,0:23:48.46,0:23:50.13,ch,,0,0,0,,- 是这样 - 恩\N-The word. -That's right.
+Dialogue: 0,0:23:50.72,0:23:52.39,ch,,0,0,0,,那是我的钱\NWith my money.
+Dialogue: 0,0:23:55.05,0:23:57.30,ch,,0,0,0,,他妈的我要知道那笔钱在哪儿\NFind my fucking money.
+Dialogue: 0,0:24:11.82,0:24:13.58,ch,,0,0,0,,“找回那笔钱”\N"Find my money."
+Dialogue: 0,0:24:15.32,0:24:19.66,ch,,0,0,0,,如果我们知道那笔钱在哪儿，我们就知道谁抢了我们\NIf we knew where their money was,it would mean we knew who robbed us.
+Dialogue: 0,0:24:20.00,0:24:21.73,ch,,0,0,0,,这意味着我们趟进这趟浑水\NWhich would mean we were in on it
+Dialogue: 0,0:24:21.75,0:24:23.46,ch,,0,0,0,,得和那帮抢劫犯面对面谈判\Nwhich means they'd shoot us in the face.
+Dialogue: 0,0:24:23.50,0:24:25.00,ch,,0,0,0,,他妈的车臣\NFucking chechnyans.
+Dialogue: 0,0:24:26.00,0:24:28.00,ch,,0,0,0,,车臣，马文\NChechens, Marv.
+Dialogue: 0,0:24:31.51,0:24:34.51,ch,,0,0,0,,他们是来自车臣，但你叫他们车臣分子\NThey're from chechnya, but you call them chechens.
+Dialogue: 0,0:24:34.76,0:24:36.10,ch,,0,0,0,,是啊，车臣\NYeah, chechnya.
+Dialogue: 0,0:24:36.34,0:24:41.34,ch,,0,0,0,,我说你从不说爱尔兰的人是爱尔兰佬，不是么？\NI said that. You don't call people from Ireland irelandians, do you?
+Dialogue: 0,0:24:41.60,0:24:43.69,ch,,0,0,0,,你他妈的再说什么？\NWhat the fuck are you talking about?
+Dialogue: 0,0:24:51.11,0:24:54.28,ch,,0,0,0,,哟，哟，睡前点心是什么？\NYo, yo. What's the sunset nightcap this evening?
+Dialogue: 0,0:24:54.53,0:24:58.04,ch,,0,0,0,,-拿你自己的杯子？ - 什么，我又没那么没见世面\N-You bring your own cup? -What, I just got out of the womb?
+Dialogue: 0,0:25:01.29,0:25:03.04,ch,,0,0,0,,- 干杯  - 干杯\N-Cheers. -Salud.
+Dialogue: 0,0:25:04.71,0:25:05.71,ch,,0,0,0,,发生什么了，伊万德罗？\NSo what up, evandro?
+Dialogue: 0,0:25:05.96,0:25:07.80,ch,,0,0,0,,你还记得马文？\NYou remember Marvin stipler?
+Dialogue: 0,0:25:08.04,0:25:09.29,ch,,0,0,0,,马文？\NCousin Marv?
+Dialogue: 0,0:25:09.34,0:25:12.30,ch,,0,0,0,,他弄丢了九，十年前车臣分子留在这儿的一个“包裹”\NHe got pushed off his own book, nine, ten years ago, by the chechens.
+Dialogue: 0,0:25:12.55,0:25:17.22,ch,,0,0,0,,那个“包裹”，是他老子Umarov的一个皮包公司的\NHis bar got held up. It's owned by one of papa umarov's shell companies.
+Dialogue: 0,0:25:17.55,0:25:19.76,ch,,0,0,0,,什么样的蠢货会去抢劫“包裹”藏匿之地？\NWhat kind of dumb-ass holds up one of his bars?
+Dialogue: 0,0:25:19.80,0:25:20.88,ch,,0,0,0,,问住我了\NYou got me.
+Dialogue: 0,0:25:22.06,0:25:24.31,ch,,0,0,0,,一来就对Umarov下手？\NMajor crimes up on the umarovs?
+Dialogue: 0,0:25:24.56,0:25:26.65,ch,,0,0,0,,我们靠削减预算才勉强支撑下来\NWe barely survived the last budget cuts.
+Dialogue: 0,0:25:26.90,0:25:31.24,ch,,0,0,0,,我们不想因为俄罗斯那子虚乌有的组织浪费钱财\NWe're not sticking our heads up to go after some Russian John q barely knows exists.
+Dialogue: 0,0:25:31.48,0:25:32.48,ch,,0,0,0,,车臣\NChechen.
+Dialogue: 0,0:25:33.40,0:25:35.57,ch,,0,0,0,,他是你的了\NYou want him, he's all yours.
+Dialogue: 0,0:25:44.75,0:25:47.09,ch,,0,0,0,,嘿，你准备好吃饭了吗？\NHey, baby brother, you ready to eat?
+Dialogue: 0,0:25:50.09,0:25:52.51,ch,,0,0,0,,- 什么？ - 准备好吃饭没？\N-What?  -Are you ready to eat?
+Dialogue: 0,0:25:53.26,0:25:54.43,ch,,0,0,0,,不\NNo.
+Dialogue: 0,0:25:54.76,0:25:56.72,ch,,0,0,0,,我吃了\NI ate already.
+Dialogue: 0,0:25:56.76,0:25:59.10,ch,,0,0,0,,- 我吃过了  - 你什么时候吃的？\N-I ate already. -When did you eat?
+Dialogue: 0,0:26:00.10,0:26:01.43,ch,,0,0,0,,我吃过了\NI ate.
+Dialogue: 0,0:26:11.77,0:26:14.60,ch,,0,0,0,,哦，不  嘿，嘿，别介\NOh, no. Hey, hey, no.
+Dialogue: 0,0:26:15.11,0:26:17.12,ch,,0,0,0,,洛克，呆在那里，坐下\NRocco, stay there. Stay.
+Dialogue: 0,0:26:17.78,0:26:19.12,ch,,0,0,0,,不要这样做\NDon't do it.
+Dialogue: 0,0:26:19.61,0:26:22.28,ch,,0,0,0,,别动，不要跳\NDon't do it. Don't jump.
+Dialogue: 0,0:26:26.45,0:26:28.45,ch,,0,0,0,,耶了个稣的\NCrikey Jesus.
+Dialogue: 0,0:26:29.12,0:26:30.62,ch,,0,0,0,,就差一点\NThat was close.
+Dialogue: 0,0:26:31.29,0:26:33.62,ch,,0,0,0,,你真是我的祖宗\NYou gave me a heart attack.
+Dialogue: 0,0:26:44.56,0:26:46.73,ch,,0,0,0,,- 你他妈的去哪儿了 - 我刚到\N-Where the fuck you been? -Getting here.
+Dialogue: 0,0:26:48.81,0:26:50.14,ch,,0,0,0,,- 你拿到了钱？ - 没\N-You got the money? -No.
+Dialogue: 0,0:26:51.31,0:26:54.81,ch,,0,0,0,,- 不是什么意思？ - 我的意思就是他妈的没拿到\N-What do you mean, no? -I mean no 'cause fucking bri has it.
+Dialogue: 0,0:26:55.07,0:26:56.24,ch,,0,0,0,,你大爷\NBri has it.
+Dialogue: 0,0:26:57.07,0:26:59.49,ch,,0,0,0,,- 有没有和你哥透漏我的消息？ - 没有\N-Did you tell your brother about me? -No.
+Dialogue: 0,0:26:59.74,0:27:01.49,ch,,0,0,0,,让你干点事怎么这么难？\NWhy the fuck you hit rardy so hard?
+Dialogue: 0,0:27:01.74,0:27:03.41,ch,,0,0,0,,- 我得... - 你必须\N-I had to.  -You had to.
+Dialogue: 0,0:27:03.66,0:27:06.92,ch,,0,0,0,,当时我只能叫救护车，所以那儿有警察和医生\NAnd I had to call an ambulance. So there's an ambulance and cops.
+Dialogue: 0,0:27:07.25,0:27:08.50,ch,,0,0,0,,他的手表怎么了？\NWhat's with his watch?
+Dialogue: 0,0:27:08.75,0:27:13.26,ch,,0,0,0,,人们注意到那是块坏表，告诉他去买块新的\NPeople noticed it's broke. Tell him to get a new one and get rid of that one.
+Dialogue: 0,0:27:13.67,0:27:14.84,ch,,0,0,0,,就是今天\NToday.
+Dialogue: 0,0:27:17.59,0:27:21.60,ch,,0,0,0,,下一步怎么办？什么时候抢个真的“包裹”？\NWhat's the next step? When do we hit a real drop bar?
+Dialogue: 0,0:27:21.84,0:27:25.34,ch,,0,0,0,,我只是假设，我不是个没长脑袋的混蛋，知道不？\NLet's just assume I'm not some asshole without a plan, okay?
+Dialogue: 0,0:27:25.60,0:27:28.52,ch,,0,0,0,,假设一个航班失事，明天最安全的航线是那条？\NWhen an airplane goes down, what's the safest airline to fly the next day?
+Dialogue: 0,0:27:29.02,0:27:30.69,ch,,0,0,0,,失事的那条\NThe one that had the crash.
+Dialogue: 0,0:27:31.02,0:27:32.36,ch,,0,0,0,,对，就是这个意思\NRight. There you go.
+Dialogue: 0,0:27:32.60,0:27:33.77,ch,,0,0,0,,所以我们只需要等待\NSo we just wait.
+Dialogue: 0,0:27:34.02,0:27:36.98,ch,,0,0,0,,你说的我一个字都没听懂\NI don't understand a fucking word you're saying.
+Dialogue: 0,0:27:37.03,0:27:38.47,ch,,0,0,0,,就像你在说鸟语\NIt's like you're speaking Brazilian.
+Dialogue: 0,0:27:38.69,0:27:40.69,ch,,0,0,0,,照顾好它就行，可以么？\NJust let me take care of it, okay?
+Dialogue: 0,0:27:41.28,0:27:42.79,ch,,0,0,0,,低点头\NKeep your head down.
+Dialogue: 0,0:27:43.03,0:27:45.86,ch,,0,0,0,,这不是巴西人，巴西人说葡萄牙语\NIt's not Brazilian. Brazilians speak Portuguese.
+Dialogue: 0,0:27:45.91,0:27:46.96,ch,,0,0,0,,你要去哪儿？\NWhere you going?
+Dialogue: 0,0:27:46.99,0:27:48.24,ch,,0,0,0,,我要走了\NI'm leaving.
+Dialogue: 0,0:27:48.29,0:27:50.46,ch,,0,0,0,,呆在这儿，我们不能同时露面，傻瓜\NStay here. We can't be seen together, genius.
+Dialogue: 0,0:27:50.71,0:27:53.88,ch,,0,0,0,,- 他妈的，得呆多久？ - 我不知道，也许十分钟\N-Fuck you. How long? -I don't know. Ten minutes!
+Dialogue: 0,0:27:54.38,0:27:55.38,ch,,0,0,0,,坐\NSit.
+Dialogue: 0,0:27:55.88,0:27:58.22,ch,,0,0,0,,坐  不，那是站，过来\NSit. No, that's standing. Come here.
+Dialogue: 0,0:27:58.55,0:28:00.39,ch,,0,0,0,,走，走  哦，伙计\NGo, go. Oh, man.
+Dialogue: 0,0:28:08.72,0:28:09.72,ch,,0,0,0,,你好吗？\NHow you doing?
+Dialogue: 0,0:28:09.98,0:28:10.98,ch,,0,0,0,,很好\NGood.
+Dialogue: 0,0:28:11.73,0:28:14.40,ch,,0,0,0,,Shit 洛克，加油！\NShit. Rocco, come on!
+Dialogue: 0,0:28:14.73,0:28:16.07,ch,,0,0,0,,来吧  好孩子\NCome. Good boy.
+Dialogue: 0,0:28:16.31,0:28:17.89,ch,,0,0,0,,你没看过这本书，是吗？\NYou didn't read the book, did you?
+Dialogue: 0,0:28:18.15,0:28:21.57,ch,,0,0,0,,看过一点..额...\NSome of it, yeah. No.
+Dialogue: 0,0:28:21.90,0:28:23.07,ch,,0,0,0,,不是很多\NNot a lot.
+Dialogue: 0,0:28:23.41,0:28:26.08,ch,,0,0,0,,我在想....现在假期结束了...\NI was thinking--now the holiday's over...
+Dialogue: 0,0:28:26.32,0:28:28.82,ch,,0,0,0,,...我不在那家餐馆上班了\N...I lost a shift at the restaurant.
+Dialogue: 0,0:28:29.08,0:28:30.42,ch,,0,0,0,,对不起\NI'm sorry.
+Dialogue: 0,0:28:30.75,0:28:34.59,ch,,0,0,0,,也许你可以给我提供份工作\NSo maybe you could hire me, you know?
+Dialogue: 0,0:28:34.83,0:28:39.58,ch,,0,0,0,,帮你工作的时候照顾洛克？\NPay me to babysit rocco when you're working?
+Dialogue: 0,0:28:40.26,0:28:43.60,ch,,0,0,0,,那个，也不算坏主意\NHey, well, that's not such a bad idea.
+Dialogue: 0,0:28:43.93,0:28:46.10,ch,,0,0,0,,我在酒吧工作很长时间了\NI work a lot at the bar.
+Dialogue: 0,0:28:46.34,0:28:48.68,ch,,0,0,0,,你会很满意的\NThat would be very kind of you.
+Dialogue: 0,0:28:49.26,0:28:50.93,ch,,0,0,0,,给我留个电话？\NYou have a number I can call?
+Dialogue: 0,0:28:51.43,0:28:55.26,ch,,0,0,0,,也许安排好我就给你打电话\NMaybe call. You want to arrange this properly?
+Dialogue: 0,0:28:56.69,0:28:57.86,ch,,0,0,0,,放在那里就好\NJust put it there.
+Dialogue: 0,0:28:58.11,0:28:59.95,ch,,0,0,0,,- 你有笔没？ - 没\N-Have you got a pen? -No.
+Dialogue: 0,0:29:01.53,0:29:02.87,ch,,0,0,0,,我想我有一只\NI think I have a pen.
+Dialogue: 0,0:29:05.11,0:29:07.94,ch,,0,0,0,,需要的时候总是找不到\NWhere's that pen when you need it?
+Dialogue: 0,0:29:11.62,0:29:13.88,ch,,0,0,0,,- 能写字不？ - 没问题\N-Does it work?  -Yeah.
+Dialogue: 0,0:29:19.79,0:29:20.79,ch,,0,0,0,,给你\NHere you go.
+Dialogue: 0,0:29:21.13,0:29:23.47,ch,,0,0,0,,不错，这是一个好主意\NGreat. That's a great idea.
+Dialogue: 0,0:29:23.80,0:29:25.14,ch,,0,0,0,,我还需要一把钥匙\NAnd I need a key.
+Dialogue: 0,0:29:25.38,0:29:29.80,ch,,0,0,0,,这样就好了......如果你给我打电话，你就可以...\NWell, like, maybe I could... If you call me, I'll either have it...
+Dialogue: 0,0:29:30.14,0:29:33.15,ch,,0,0,0,,...交给我，或者离开前放在酒吧这里.\N...and drop it around yours, or I could leave it at the bar for you.
+Dialogue: 0,0:29:33.48,0:29:34.48,ch,,0,0,0,,打电话给我。\NCall me.
+Dialogue: 0,0:29:34.81,0:29:38.15,ch,,0,0,0,,是的，我会打电话给你...你已经给我号码了\NYeah, I'll call you...On this number you gave me right now.
+Dialogue: 0,0:29:38.19,0:29:39.86,ch,,0,0,0,,顺便祝..新年快乐\NHappy new year, by the way!
+Dialogue: 0,0:29:40.48,0:29:42.31,ch,,0,0,0,,新年快乐！\NHappy new year!
+Dialogue: 0,0:29:48.32,0:29:50.32,ch,,0,0,0,,我们应该加入表演\NWe should join that show.
+Dialogue: 0,0:29:53.58,0:29:55.50,ch,,0,0,0,,你会唱歌么？\NYou can't fucking sing.
+Dialogue: 0,0:29:56.16,0:29:59.00,ch,,0,0,0,,不是这个，另一个，那里的人们......\NNot that one, the other one, where the people...
+Dialogue: 0,0:29:59.25,0:30:02.83,ch,,0,0,0,,...去世界各地寻找线索\N...go around the world picking up clues and stuff.
+Dialogue: 0,0:30:03.17,0:30:05.50,ch,,0,0,0,,听起来不错，来吧\NIt'd be cool. Let's do it.
+Dialogue: 0,0:30:07.34,0:30:08.67,ch,,0,0,0,,我们可以看到一些东西\NWe could see things.
+Dialogue: 0,0:30:08.93,0:30:10.52,ch,,0,0,0,,啥?\NWhat things?
+Dialogue: 0,0:30:10.76,0:30:12.84,ch,,0,0,0,,我不知道，其它国家\NI don't know. Other countries.
+Dialogue: 0,0:30:13.10,0:30:14.69,ch,,0,0,0,,其他方式\NOther ways.
+Dialogue: 0,0:30:16.27,0:30:18.19,ch,,0,0,0,,你今天看到老头？\NYou see the old man today?
+Dialogue: 0,0:30:19.69,0:30:21.19,ch,,0,0,0,,是，我就是\NYeah, I was by.
+Dialogue: 0,0:30:24.36,0:30:26.03,ch,,0,0,0,,他们希望拿回自己的钱，马文。\NThey want their money, Marv.
+Dialogue: 0,0:30:27.86,0:30:29.03,ch,,0,0,0,,什么人？\NWho?
+Dialogue: 0,0:30:29.53,0:30:30.86,ch,,0,0,0,,这里的居民\NThe home.
+Dialogue: 0,0:30:32.28,0:30:33.45,ch,,0,0,0,,他们会拿到的\NThey'll get it.
+Dialogue: 0,0:30:33.70,0:30:36.20,ch,,0,0,0,,这是讨债公司，不是邻居\NIt's the collection agency now, not the home.
+Dialogue: 0,0:30:36.54,0:30:40.21,ch,,0,0,0,,医疗补助削减，我不干了\NMedicaid cutbacks. Me retiring.
+Dialogue: 0,0:30:41.29,0:30:43.37,ch,,0,0,0,,他们打算把他运出去\NThey're going to ship him out.
+Dialogue: 0,0:30:45.63,0:30:46.96,ch,,0,0,0,,到哪里？\NTo where?
+Dialogue: 0,0:30:47.22,0:30:49.06,ch,,0,0,0,,一个偏僻的地方\NTo a lesser place.
+Dialogue: 0,0:30:52.39,0:30:54.06,ch,,0,0,0,,也许现在是时候了\NMaybe it's time.
+Dialogue: 0,0:30:55.39,0:30:56.55,ch,,0,0,0,,是的\NYeah.
+Dialogue: 0,0:31:00.90,0:31:02.24,ch,,0,0,0,,做掉他\NJust kill him.
+Dialogue: 0,0:31:03.23,0:31:06.15,ch,,0,0,0,,我们的父亲，他是个麻烦\NOur father. Because it's inconvenient.
+Dialogue: 0,0:31:06.90,0:31:08.40,ch,,0,0,0,,他已经死了，马文\NHe's dead, Marv.
+Dialogue: 0,0:31:09.91,0:31:12.58,ch,,0,0,0,,那么机器里传出来的哔哔声是...\NSo what are all those beeps coming out of the machines...
+Dialogue: 0,0:31:12.82,0:31:15.66,ch,,0,0,0,,...还有屏幕上的波浪线是什么？\N...he's hooked up to, and the waves on the screen of the thing?
+Dialogue: 0,0:31:16.24,0:31:17.57,ch,,0,0,0,,那就是生命\NThat's life.
+Dialogue: 0,0:31:18.00,0:31:20.09,ch,,0,0,0,,这只是电，你以为呢\NThat's electricity, is what that is.
+Dialogue: 0,0:31:28.42,0:31:32.76,ch,,0,0,0,,有一天，我把他的手放在我的脸上\NThe other day, I picked up his hand and put it on my cheek.
+Dialogue: 0,0:31:34.93,0:31:36.77,ch,,0,0,0,,我听到血液在流动\NAnd I could hear his blood.
+Dialogue: 0,0:31:40.60,0:31:43.93,ch,,0,0,0,,所以你要干掉他？去做吧，你的决定\NSo you want to unplug him? Go ahead, your decision.
+Dialogue: 0,0:31:44.27,0:31:45.60,ch,,0,0,0,,冷静！\NTake it easy.
+Dialogue: 0,0:31:45.86,0:31:48.11,ch,,0,0,0,,不，作出决定，我已经准备好了\NNo, make the decision. I'll be all right with it.
+Dialogue: 0,0:31:52.20,0:31:53.87,ch,,0,0,0,,这会是第一个\NThat'd be a first.
+Dialogue: 0,0:31:55.78,0:31:57.95,ch,,0,0,0,,没关系，没关系\NNever mind. It's okay.
+Dialogue: 0,0:31:58.62,0:32:00.88,ch,,0,0,0,,我会到欧洲过另一种生活\NI'll get to Europe in another life.
+Dialogue: 0,0:32:03.25,0:32:04.59,ch,,0,0,0,,洛克，过来\NRocco. Come to heel.
+Dialogue: 0,0:32:04.92,0:32:07.43,ch,,0,0,0,,过来，过来，坐！\NCome to heel. Come to heel. And sit.
+Dialogue: 0,0:32:08.09,0:32:10.09,ch,,0,0,0,,- 你看到了吗？ - 是的，我看到了\N-You see that? -Yeah, I saw it.
+Dialogue: 0,0:32:10.42,0:32:12.71,ch,,0,0,0,,它还想握手\NHe almost gave me the paw.
+Dialogue: 0,0:32:12.76,0:32:16.43,ch,,0,0,0,,当我看电视的时候，它在我腿上睡着了\NWhen I watch TV, he sleeps on my leg.
+Dialogue: 0,0:32:16.76,0:32:18.26,ch,,0,0,0,,- 真的吗？ - 假的\N-Really?  -Out.
+Dialogue: 0,0:32:18.60,0:32:20.94,ch,,0,0,0,,- 来吧  - 我马上就回来\N-Come.  -I'll be right back.
+Dialogue: 0,0:32:23.44,0:32:25.44,ch,,0,0,0,,哦，来吧\NCrazy. Come on.
+Dialogue: 0,0:32:38.41,0:32:39.92,ch,,0,0,0,,这狗真漂亮\NThat's a nice dog.
+Dialogue: 0,0:32:41.12,0:32:42.95,ch,,0,0,0,,谢谢夸奖\NThank you. I appreciate it.
+Dialogue: 0,0:32:43.96,0:32:46.30,ch,,0,0,0,,是啊，这是一个非常漂亮的狗\NYeah, that's a nice-looking dog.
+Dialogue: 0,0:32:55.47,0:32:57.64,ch,,0,0,0,,不要忘记喂它\NDon't forget to feed it.
+Dialogue: 0,0:33:11.48,0:33:13.31,ch,,0,0,0,,告诉我这附近哪儿有医院？\NTell me where the hospital is?
+Dialogue: 0,0:33:14.82,0:33:17.32,ch,,0,0,0,,掉头，然后沿着这条路走到头\NBang a u-ey, go down to the end here.
+Dialogue: 0,0:33:17.66,0:33:20.16,ch,,0,0,0,,右转，你会看到路标\NTake a right. There'll be signs.
+Dialogue: 0,0:33:21.83,0:33:23.13,ch,,0,0,0,,谢谢\NThanks.
+Dialogue: 0,0:33:41.35,0:33:45.52,ch,,0,0,0,,我答应你，明天去公园，今天我快忙死了\NI promise, tomorrow we'll go to the park. But I'm in a mad rush today.
+Dialogue: 0,0:33:46.19,0:33:48.19,ch,,0,0,0,,我一会就回来\NI will be back very soon.
+Dialogue: 0,0:34:10.34,0:34:11.84,ch,,0,0,0,,嘿，伙计，你在干嘛？\NHey, man, how you doing?
+Dialogue: 0,0:34:13.09,0:34:15.68,ch,,0,0,0,,不介意我进去么？外边有点冷\NMind if I step in? It's kind of cold outside.
+Dialogue: 0,0:34:19.09,0:34:20.76,ch,,0,0,0,,多谢\NThanks a lot.
+Dialogue: 0,0:34:22.26,0:34:23.59,ch,,0,0,0,,我的天\NJesus.
+Dialogue: 0,0:34:31.77,0:34:32.94,ch,,0,0,0,,需要帮忙么？\NCan I help you?
+Dialogue: 0,0:34:33.19,0:34:35.52,ch,,0,0,0,,是啊，你把它养在哪里？\NYeah. Where are you keeping him?
+Dialogue: 0,0:34:36.03,0:34:37.70,ch,,0,0,0,,你在胡说些什么？\NWhat are you talking about?
+Dialogue: 0,0:34:38.95,0:34:42.46,ch,,0,0,0,,那只狗，你让它呆在厨房，地下室？\NThe dog. You keep him in the kitchen? The cellar?
+Dialogue: 0,0:34:44.62,0:34:49.30,ch,,0,0,0,,我记得你，在公园里你跟我说我有一只漂亮的狗\NI remember you. You came up to me in the park and told me I had a nice-looking dog.
+Dialogue: 0,0:34:49.79,0:34:52.12,ch,,0,0,0,,是啊，只不过那不是你的狗\NYeah, well, he's not your dog.
+Dialogue: 0,0:34:53.13,0:34:55.13,ch,,0,0,0,,不，那是我的狗\NYeah, he's my dog.
+Dialogue: 0,0:34:55.38,0:34:57.38,ch,,0,0,0,,是吗？你有注册麽？\NYeah? You register him?
+Dialogue: 0,0:34:57.63,0:35:01.46,ch,,0,0,0,,城市管理条例规定你必须为狗注册\NCity says you have to license it. How about a chip?
+Dialogue: 0,0:35:02.22,0:35:03.97,ch,,0,0,0,,- 什么？ - 一个安全芯片\N-Excuse me?  -A security chip.
+Dialogue: 0,0:35:04.22,0:35:08.22,ch,,0,0,0,,植入狗身体的芯片，这样兽医扫描的时候就能识别..\NImplanted in the dog. Pooch goes missing, shows up at a vet. Vet scans the dog.
+Dialogue: 0,0:35:08.48,0:35:10.82,ch,,0,0,0,,这是流浪狗还是某人的宠物\NUp pops a barcode with the owner's info.
+Dialogue: 0,0:35:11.06,0:35:14.81,ch,,0,0,0,,狗的主人也会有一张证明\NThe owner, meanwhile, walks around with a slip of paper.
+Dialogue: 0,0:35:15.65,0:35:18.11,ch,,0,0,0,,上边记有安全芯片的序列号\NIt has the security chip account number on it.
+Dialogue: 0,0:35:18.15,0:35:19.32,ch,,0,0,0,,让我看看\NCheck it out.
+Dialogue: 0,0:35:21.99,0:35:23.66,ch,,0,0,0,,这是我的狗\NYou got my dog.
+Dialogue: 0,0:35:28.66,0:35:30.49,ch,,0,0,0,,不，这是我的狗。\NNo, it's my dog.
+Dialogue: 0,0:35:31.17,0:35:32.59,ch,,0,0,0,,你虐待过它\NYou beat him.
+Dialogue: 0,0:35:33.50,0:35:35.33,ch,,0,0,0,,我会告诉警察你虐待动物\NI'll tell the cops you did.
+Dialogue: 0,0:35:37.59,0:35:39.01,ch,,0,0,0,,你想干嘛？\NWhat do you want?
+Dialogue: 0,0:35:42.93,0:35:44.85,ch,,0,0,0,,今天真是个好天气，不是么？\NIt's kind of sunny, right?
+Dialogue: 0,0:35:57.19,0:35:58.86,ch,,0,0,0,,不过你永远不会明白，我猜\NBut you never know, I guess.
+Dialogue: 0,0:36:36.73,0:36:38.56,ch,,0,0,0,,你从来没问过\NYou never ask about it.
+Dialogue: 0,0:36:40.40,0:36:44.73,ch,,0,0,0,,你是我遇见的唯一一个5分钟没有问这个问题的人\NYou're the only person I ever met who didn't ask about it in the first five minutes.
+Dialogue: 0,0:36:45.62,0:36:46.95,ch,,0,0,0,,那是你的隐私，不是我的\NIt's your business, not mine.
+Dialogue: 0,0:36:47.74,0:36:51.74,ch,,0,0,0,,如果你不想隐瞒，迟早你会告诉我，又何必问呢？\NYou'll tell me when you tell me, or you won't.
+Dialogue: 0,0:36:53.08,0:36:56.75,ch,,0,0,0,,我自己弄得，这让我觉的很high\NI did it to myself. I was pretty high.
+Dialogue: 0,0:36:57.34,0:36:58.68,ch,,0,0,0,,你自己弄得？\NYou did that?
+Dialogue: 0,0:37:00.59,0:37:02.26,ch,,0,0,0,,用这个...\NWith one of those...
+Dialogue: 0,0:37:02.59,0:37:03.92,ch,,0,0,0,,......就像削皮器\N...like, a peeler.
+Dialogue: 0,0:37:04.26,0:37:05.26,ch,,0,0,0,,削皮器？\NPeeler?
+Dialogue: 0,0:37:05.76,0:37:07.67,ch,,0,0,0,,你知道，土豆削皮器\NYou know, a potato peeler?
+Dialogue: 0,0:37:07.93,0:37:10.77,ch,,0,0,0,,哦，天啊，是的，我知道那是什么\NOh, God, yeah, I know what that is, right.
+Dialogue: 0,0:37:13.94,0:37:18.95,ch,,0,0,0,,我和其他人不同，我有时候很讨厌自己\NI was a different person then. I didn't really like myself.
+Dialogue: 0,0:37:20.61,0:37:22.45,ch,,0,0,0,,你喜欢现在的自己？\NDo you like yourself now?
+Dialogue: 0,0:37:24.45,0:37:28.79,ch,,0,0,0,,先生，这里不允许携带宠物，把它领出去行不？\NSir, you cannot have a dog in here. Dog goes, you guys go, okay?
+Dialogue: 0,0:37:41.05,0:37:42.64,ch,,0,0,0,,我告诉你...\NI'm telling you...
+Dialogue: 0,0:37:42.96,0:37:45.29,ch,,0,0,0,,-  ...有人跟踪我 - 不，没有\N-...I got guys following me. -You don't.
+Dialogue: 0,0:37:45.55,0:37:47.80,ch,,0,0,0,,我确信，我跟你说过车上那个家伙\NI do. I told you about the guy in the car.
+Dialogue: 0,0:37:48.05,0:37:50.38,ch,,0,0,0,,他向你问过路\NHe was asking you for directions.
+Dialogue: 0,0:37:51.47,0:37:54.97,ch,,0,0,0,,这是在路上，仅仅是巧合碰到一起\NIt was the way he asked. The way he was looking at me.
+Dialogue: 0,0:37:55.02,0:37:56.48,ch,,0,0,0,,我他妈的不是白痴\NI'm not a fucking idiot.
+Dialogue: 0,0:38:00.98,0:38:03.31,ch,,0,0,0,,你呢？一个拿伞的人\NWhat about you? The guy with the umbrella.
+Dialogue: 0,0:38:03.90,0:38:06.40,ch,,0,0,0,,他只是对他的狗有兴趣\NHe's just interested in the dog.
+Dialogue: 0,0:38:06.74,0:38:08.08,ch,,0,0,0,,狗\NThe dog.
+Dialogue: 0,0:38:08.66,0:38:12.00,ch,,0,0,0,,你怎么知道，也许只是他告诉了你\NHow do you know? Maybe he's just telling you that.
+Dialogue: 0,0:38:17.83,0:38:19.37,ch,,0,0,0,,对他们来说要...\NIt's too much for them to...
+Dialogue: 0,0:38:19.42,0:38:22.76,ch,,0,0,0,,...找到并且归还原处，现在实在太温和了\N...put them back where they found them, because that would require courtesy.
+Dialogue: 0,0:38:23.17,0:38:25.50,ch,,0,0,0,,你只需要拿个垃圾桶，马文\NYou should just get a dumpster, Marv.
+Dialogue: 0,0:38:26.34,0:38:29.34,ch,,0,0,0,,“你只需要搬个垃圾桶，马文，拿个垃圾桶过来”\N"Just get a dumpster, Marv. Get a dumpster."
+Dialogue: 0,0:38:29.68,0:38:30.85,ch,,0,0,0,,当然\NSure.
+Dialogue: 0,0:38:31.51,0:38:34.18,ch,,0,0,0,,你还记得我没有“包裹”了，对不对？\NYou remember I don't own the bar anymore, right?
+Dialogue: 0,0:38:35.52,0:38:36.69,ch,,0,0,0,,是啊\NYeah.
+Dialogue: 0,0:38:37.27,0:38:39.69,ch,,0,0,0,,是的，但你的“包裹”不是让Chovka拿走了\NYeah, but it's not your bar chovka took.
+Dialogue: 0,0:38:39.94,0:38:41.28,ch,,0,0,0,,那是10年前的事了\NThat was 10 years ago.
+Dialogue: 0,0:38:41.52,0:38:43.69,ch,,0,0,0,,不，这是八年半年前\NNo, it was eight-and-a-half years ago.
+Dialogue: 0,0:38:44.53,0:38:45.87,ch,,0,0,0,,好了\NAll right.
+Dialogue: 0,0:38:46.19,0:38:48.19,ch,,0,0,0,,八年半\NEight-and-a-half years.
+Dialogue: 0,0:39:03.38,0:39:05.89,ch,,0,0,0,,多蒂认为我们应该去欧洲\NDottie thinks we should visit Europe.
+Dialogue: 0,0:39:06.21,0:39:09.80,ch,,0,0,0,,像十年前和他妹妹去欧洲的哪个人\NThat's what I've become-a guy that goes to Europe with his sister.
+Dialogue: 0,0:39:10.39,0:39:13.06,ch,,0,0,0,,上了一辆...一辆...游览车...\NHops in a, a tour bus...
+Dialogue: 0,0:39:13.56,0:39:16.56,ch,,0,0,0,,...脖子上挂着相机，看上去像个蠢货\N...with a fucking camera around my neck like a fucking jerkoff.
+Dialogue: 0,0:39:22.73,0:39:23.81,ch,,0,0,0,,什么？\NWhat?
+Dialogue: 0,0:39:27.90,0:39:29.73,ch,,0,0,0,,你需要了解这一点，马文\NYou need to see this, Marv.
+Dialogue: 0,0:39:30.57,0:39:32.24,ch,,0,0,0,,不，我不\NNo, I don't.
+Dialogue: 0,0:39:33.24,0:39:34.90,ch,,0,0,0,,我不需要做任何事情\NI don't need to do anything.
+Dialogue: 0,0:39:37.91,0:39:42.58,ch,,0,0,0,,我就想站在这里，我他妈的哪儿都不想去\NI'm just going to stand right here. I'm going to stand right the fuck here.
+Dialogue: 0,0:39:42.92,0:39:44.09,ch,,0,0,0,,不\NNo.
+Dialogue: 0,0:39:44.75,0:39:47.08,ch,,0,0,0,,你真应该看看这个\NYou really should take a look at this.
+Dialogue: 0,0:39:47.42,0:39:51.59,ch,,0,0,0,,我不想看到欧洲，不像看到多蒂\NI don't need to see Europe. I don't need to see dottie.
+Dialogue: 0,0:39:52.09,0:39:54.26,ch,,0,0,0,,所以我也不像看到那个什么袋子\NAnd I don't need to see what's in that bag.
+Dialogue: 0,0:40:09.61,0:40:11.94,ch,,0,0,0,,搞什么鬼\NWhat the fuck?
+Dialogue: 0,0:40:17.79,0:40:19.79,ch,,0,0,0,,我们现在做点什么？\NWe need to do something with it.
+Dialogue: 0,0:40:20.54,0:40:21.96,ch,,0,0,0,,什么，钱还是...\NWhat, the money or the...
+Dialogue: 0,0:40:22.33,0:40:23.49,ch,,0,0,0,,...事情吗？\N...thing?
+Dialogue: 0,0:40:23.54,0:40:26.37,ch,,0,0,0,,我打赌，这里多出来的那些东西就是那晚我们丢掉的\NI bet what's in here adds up to what we lost that night.
+Dialogue: 0,0:40:26.63,0:40:28.30,ch,,0,0,0,,他们为什么把这个给我们？\NWhy'd they give it back to us?
+Dialogue: 0,0:40:28.63,0:40:30.80,ch,,0,0,0,,我们应该还给他们\NSo we give it back to them.
+Dialogue: 0,0:40:31.47,0:40:33.64,ch,,0,0,0,,他们想要这个\NThat's clearly what they expect.
+Dialogue: 0,0:40:54.82,0:40:57.15,ch,,0,0,0,,就像包住一块肉\NLike you're wrapping a piece of meat.
+Dialogue: 0,0:40:59.49,0:41:01.74,ch,,0,0,0,,向你平时一直做的那样\NLike you've done it a thousand times.
+Dialogue: 0,0:41:12.17,0:41:14.50,ch,,0,0,0,,难道你没看出来如果你没有提到手表...\NDo you wonder if you hadn't mentioned the watch...
+Dialogue: 0,0:41:14.76,0:41:15.77,ch,,0,0,0,,不，我不\NNo, I don't.
+Dialogue: 0,0:41:16.01,0:41:17.42,ch,,0,0,0,,嗯，我知道\NWell, I do.
+Dialogue: 0,0:41:19.01,0:41:21.18,ch,,0,0,0,,嗨，你那儿有zima没？\NHi, guys. You got any zima?
+Dialogue: 0,0:41:21.68,0:41:23.51,ch,,0,0,0,,不，我们关门了\NNo, we're closed.
+Dialogue: 0,0:41:23.85,0:41:25.52,ch,,0,0,0,,好了，你的门没上锁，所以...\NWell, your door was unlocked, so--
+Dialogue: 0,0:41:25.77,0:41:28.43,ch,,0,0,0,,我很抱歉，但是我们现在正准备关闭，所以...\NI'm sorry about that, but we're closed now, so...
+Dialogue: 0,0:41:29.52,0:41:30.85,ch,,0,0,0,,好吧，好吧！\NYeah. Yeah.
+Dialogue: 0,0:41:31.11,0:41:32.12,ch,,0,0,0,,你得走了\NYou got to go.
+Dialogue: 0,0:41:32.36,0:41:33.61,ch,,0,0,0,,嘿，鲍勃\NHey, Bob.
+Dialogue: 0,0:41:34.86,0:41:36.53,ch,,0,0,0,,你好吗？很高兴见到你\NHow you doing? Nice to see you.
+Dialogue: 0,0:41:37.87,0:41:39.21,ch,,0,0,0,,来吧\NAll right, come on.
+Dialogue: 0,0:41:44.21,0:41:46.05,ch,,0,0,0,,和纳迪亚打声招呼\NSay hi to Nadia.
+Dialogue: 0,0:41:46.79,0:41:50.21,ch,,0,0,0,,当她在身上添新伤口的时候别忘了把她缝好，没问题？\NDon't forget to stitch her up when she stabs herself, okay?
+Dialogue: 0,0:41:58.89,0:42:02.56,ch,,0,0,0,,我们把那只手像火腿一样扔来扔去...\NTossing the missing piece of the one-armed man around like a ham...
+Dialogue: 0,0:42:02.81,0:42:04.65,ch,,0,0,0,,...结果前门还没锁！\N...and the front door's open!
+Dialogue: 0,0:42:06.23,0:42:08.90,ch,,0,0,0,,- 他什么也没看见  - 但他可能已经看到了\N-He didn't see anything. -But he could've.
+Dialogue: 0,0:42:09.23,0:42:10.56,ch,,0,0,0,,但是他并没有\NBut he didn't.
+Dialogue: 0,0:42:12.23,0:42:13.73,ch,,0,0,0,,你知道那个人吗？\NYou know that guy?
+Dialogue: 0,0:42:15.74,0:42:17.99,ch,,0,0,0,,是的，这就是说关于洛克事情的那个家伙\NYeah. That's the guy I told you about with rocco.
+Dialogue: 0,0:42:18.24,0:42:20.08,ch,,0,0,0,,那个声称是狗主人的人？\NWho claims the dog is his?
+Dialogue: 0,0:42:22.91,0:42:24.57,ch,,0,0,0,,不是他还是谁？\NYou know who else he is?
+Dialogue: 0,0:42:24.62,0:42:25.66,ch,,0,0,0,,不\NNo.
+Dialogue: 0,0:42:25.71,0:42:27.84,ch,,0,0,0,,他是声称自己杀死富翁Whelan的人\NHe's the guy who says he killed Richie whelan.
+Dialogue: 0,0:42:35.09,0:42:36.93,ch,,0,0,0,,- 那家伙？ - 没错\N-That guy? -Yeah.
+Dialogue: 0,0:42:37.93,0:42:40.93,ch,,0,0,0,,- 这是Eric deeds？ - 是啊，这是Eric deeds\N-That's Eric deeds? -Yeah, that's Eric deeds.
+Dialogue: 0,0:42:42.35,0:42:44.52,ch,,0,0,0,,还骗了我们的那个人\NAnd he's fucked in the squash, that guy.
+Dialogue: 0,0:42:46.02,0:42:47.77,ch,,0,0,0,,已经有好几次了\NBeen in the joint a couple times.
+Dialogue: 0,0:42:47.81,0:42:50.52,ch,,0,0,0,,如果我没记错他在杜鹃屋住了30天\NHe did a 30-day in the cuckoo house, if I recall.
+Dialogue: 0,0:42:51.27,0:42:53.19,ch,,0,0,0,,所以，你看这小子\NSo you watch that fucking kid.
+Dialogue: 0,0:42:56.95,0:42:58.95,ch,,0,0,0,,这一天天的，马文\NSome fucking day, Marv.
+Dialogue: 0,0:42:59.61,0:43:01.78,ch,,0,0,0,,是啊，操蛋的一天\NYeah, some fucking day.
+Dialogue: 0,0:43:04.12,0:43:07.46,ch,,0,0,0,,帮我把那个运动包从上边拿下来？\NWill you pass me the sports bag by the wasp-and-ants spray?
+Dialogue: 0,0:43:07.79,0:43:09.46,ch,,0,0,0,,没问题，当然，我很乐意\NYeah, sure, I'd love to.
+Dialogue: 0,0:43:10.71,0:43:11.88,ch,,0,0,0,,谢谢\NThank you.
+Dialogue: 0,0:43:25.47,0:43:27.47,ch,,0,0,0,,现在我要出去走走\NI'm going for a walk now.
+Dialogue: 0,0:43:29.14,0:43:30.31,ch,,0,0,0,,好\NOkay.
+Dialogue: 0,0:43:40.66,0:43:42.33,ch,,0,0,0,,去他妈的耶稣\NFucking Christ.
+Dialogue: 0,0:44:06.93,0:44:08.76,ch,,0,0,0,,别看这儿，别看\NDon't look at that. Don't look at it.
+Dialogue: 0,0:44:09.02,0:44:10.86,ch,,0,0,0,,嘿，嘿，这是什么？\NHey, hey, what's this?
+Dialogue: 0,0:44:11.10,0:44:12.77,ch,,0,0,0,,把它拿回来，去\NGo get it. Go on.
+Dialogue: 0,0:44:14.02,0:44:17.69,ch,,0,0,0,,是啊，好好玩，这红色骨头\NYeah, play with it. My big red bone.
+Dialogue: 0,0:44:18.36,0:44:20.37,ch,,0,0,0,,把他拿回来，拿回来\NGo get it. Go get that!
+Dialogue: 0,0:44:20.70,0:44:22.20,ch,,0,0,0,,去找骨头\NGet the bone!
+Dialogue: 0,0:44:45.22,0:44:46.31,ch,,0,0,0,,该死\NShit.
+Dialogue: 0,0:44:46.81,0:44:48.81,ch,,0,0,0,,Saginowski先生\NMr. saginowski.
+Dialogue: 0,0:44:51.89,0:44:54.72,ch,,0,0,0,,- 你好吗？ - 我很好\N-How you doing? -I'm good.
+Dialogue: 0,0:44:58.90,0:45:00.73,ch,,0,0,0,,我们还没抓到他们\NWe haven't caught them yet.
+Dialogue: 0,0:45:00.99,0:45:03.58,ch,,0,0,0,,是啊，你知道的，我以为...\NYeah, well, you know, I assumed...
+Dialogue: 0,0:45:03.91,0:45:05.75,ch,,0,0,0,,我们没努力去找？\NThat we didn't do our job?
+Dialogue: 0,0:45:06.58,0:45:10.67,ch,,0,0,0,,不，我只是听说，很难逮捕到抢劫犯\NNo, I just heard it was hard to make an arrest on robbery cases.
+Dialogue: 0,0:45:12.75,0:45:15.42,ch,,0,0,0,,- 这包是怎么回事？ - 这是...\N-What's up with the bag?  -This is...
+Dialogue: 0,0:45:15.75,0:45:19.42,ch,,0,0,0,,这是狗狗的便袋，有时我把狗链和球...\NIt's my poop bag and sometimes I keep leashes and balls...
+Dialogue: 0,0:45:19.67,0:45:21.25,ch,,0,0,0,,...之类的东西在我的包里。\N...and stuff in my bag.
+Dialogue: 0,0:45:21.51,0:45:22.85,ch,,0,0,0,,怎么是空的\NKind of empty.
+Dialogue: 0,0:45:23.76,0:45:27.93,ch,,0,0,0,,是啊，我用了最后一个狗便袋，球也丢了\NYeah, well, I used my last poop bag and I lost the ball.
+Dialogue: 0,0:45:30.43,0:45:31.76,ch,,0,0,0,,Richie whelan.\NRichie whelan.
+Dialogue: 0,0:45:33.10,0:45:34.93,ch,,0,0,0,,- 他怎么样？ - 你知道他吗？\N-What about him? -You know him?
+Dialogue: 0,0:45:35.19,0:45:37.17,ch,,0,0,0,,当然，前天他和朋友在这儿呆一整天\NSure. His friends were in the bar the other day
+Dialogue: 0,0:45:37.19,0:45:39.13,ch,,0,0,0,,纪念他的朋友\Ntoasting his anniversary.
+Dialogue: 0,0:45:39.61,0:45:40.95,ch,,0,0,0,,什么纪念日？\NWhat anniversary?
+Dialogue: 0,0:45:41.19,0:45:43.19,ch,,0,0,0,,纪念他最后一次现身\NOf the last time anybody saw him.
+Dialogue: 0,0:45:43.45,0:45:44.53,ch,,0,0,0,,在我的酒吧里\NWhich was at your bar.
+Dialogue: 0,0:45:44.78,0:45:46.95,ch,,0,0,0,,是啊，就是这样，他就走了\NThat's right. Yeah, he left.
+Dialogue: 0,0:45:47.28,0:45:49.78,ch,,0,0,0,,他开走了车，不久他们就发现了他\NHe took his car and they found it someplace.
+Dialogue: 0,0:45:50.12,0:45:52.13,ch,,0,0,0,,已经烧焦了
+Dialogue: 0,0:45:52.75,0:45:54.25,ch,,0,0,0,,这是只漂亮的狗\NThat's a good-looking dog.
+Dialogue: 0,0:45:54.29,0:45:55.63,ch,,0,0,0,,谢谢\NThank you.
+Dialogue: 0,0:45:56.46,0:45:58.30,ch,,0,0,0,,你知道 Eric deeds？\NYou know an Eric deeds?
+Dialogue: 0,0:45:59.63,0:46:02.97,ch,,0,0,0,,高高的？络腮胡？就像一个沉思者？\NTall guy? Beard? He's, like, a brooder?
+Dialogue: 0,0:46:03.88,0:46:05.04,ch,,0,0,0,,也许吧\NMaybe.
+Dialogue: 0,0:46:05.30,0:46:07.97,ch,,0,0,0,,你可以在酒吧工作的，老兄\NI mean, you working in that bar. Come on.
+Dialogue: 0,0:46:08.30,0:46:11.13,ch,,0,0,0,,你认识很多人的，对吗？\NYou know people, Mr. saginowski.
+Dialogue: 0,0:46:11.97,0:46:13.64,ch,,0,0,0,,我有张照片\NI got a picture.
+Dialogue: 0,0:46:21.57,0:46:23.99,ch,,0,0,0,,恩，你也许认为是他抢了“包裹”\NNah. You think maybe he robbed the bar?
+Dialogue: 0,0:46:24.32,0:46:25.32,ch,,0,0,0,,不\NNo.
+Dialogue: 0,0:46:26.99,0:46:29.37,ch,,0,0,0,,我听到这里，还有那里，这家伙...\NI'm hearing here and there that this guy...
+Dialogue: 0,0:46:29.41,0:46:32.00,ch,,0,0,0,,...和Whelan消失有关\N...has something to do with the whelan disappearance.
+Dialogue: 0,0:46:33.66,0:46:34.99,ch,,0,0,0,,真的吗？\NReally?
+Dialogue: 0,0:46:37.17,0:46:38.84,ch,,0,0,0,,这真是一个非常漂亮的狗\NThat's a really good-looking dog.
+Dialogue: 0,0:47:01.11,0:47:03.36,ch,,0,0,0,,我过来陪他下午溜溜\NI came by to give him his afternoon walk.
+Dialogue: 0,0:47:03.61,0:47:04.61,ch,,0,0,0,,好嘛\NGreat.
+Dialogue: 0,0:47:04.86,0:47:07.03,ch,,0,0,0,,我很惊讶，你电话开着？\NI freaked. Is your cell on?
+Dialogue: 0,0:47:07.36,0:47:11.03,ch,,0,0,0,,是的，震动，我没感觉到\NYeah, but it's on vibrate. I couldn't feel it.
+Dialogue: 0,0:47:11.28,0:47:12.70,ch,,0,0,0,,我打了好几个电话\NI called a bunch of times.
+Dialogue: 0,0:47:12.95,0:47:15.11,ch,,0,0,0,,我知道，我知道的，对不起\NI know, I could see that. I'm sorry.
+Dialogue: 0,0:47:15.37,0:47:18.87,ch,,0,0,0,,- 我以为你今天工作  - 我，我只是要...\N-I thought you were working today. -I am, it's just I had this...
+Dialogue: 0,0:47:19.21,0:47:22.22,ch,,0,0,0,,你知道吗？这说来话长了\NYou know what? It's a really long story.
+Dialogue: 0,0:47:22.54,0:47:25.38,ch,,0,0,0,,对不起，我应该给你打电话的 我道歉\NI'm sorry. I should have called you. I apologize.
+Dialogue: 0,0:47:25.71,0:47:27.38,ch,,0,0,0,,没关系的\NIt's okay. Hey.
+Dialogue: 0,0:47:27.88,0:47:30.05,ch,,0,0,0,,所以，你知道 Eric deeds，是吧？\NSo you know Eric deeds, huh?
+Dialogue: 0,0:47:32.39,0:47:34.56,ch,,0,0,0,,不，我不是很了解这个人\NNo. I don't "know him" know him...
+Dialogue: 0,0:47:34.89,0:47:37.90,ch,,0,0,0,,...你知道？我只听别人说过\N...you know? I know him from around.
+Dialogue: 0,0:47:38.73,0:47:40.23,ch,,0,0,0,,所以，你不认识他？\NSo you don't know him?
+Dialogue: 0,0:47:41.06,0:47:42.56,ch,,0,0,0,,不确定，应该不认识\NNot really, no.
+Dialogue: 0,0:47:44.23,0:47:47.23,ch,,0,0,0,,这很有意思，因为从他说话方式，我想...\NThat's funny, because the way he said it, I figured...
+Dialogue: 0,0:47:47.82,0:47:49.16,ch,,0,0,0,,想到什么？\NFigured what?
+Dialogue: 0,0:47:49.74,0:47:51.91,ch,,0,0,0,,我不知道，也许...\NI don't know. You know, maybe...
+Dialogue: 0,0:47:52.49,0:47:54.90,ch,,0,0,0,,- 我不知道  - 你为什么追问这个？\N-I don't know. -Why are you on my ass about it?
+Dialogue: 0,0:47:55.99,0:47:57.66,ch,,0,0,0,,我只问了一个问题..\NI was just asking a question.
+Dialogue: 0,0:47:57.91,0:47:59.49,ch,,0,0,0,,不，你在暗示我这个问题\NNo, you were insinuating.
+Dialogue: 0,0:48:00.08,0:48:01.49,ch,,0,0,0,,不，我没有\NNo, I wasn't.
+Dialogue: 0,0:48:03.08,0:48:05.75,ch,,0,0,0,,现在你只需直接和我说就行\NNow you're arguing just to argue with me.
+Dialogue: 0,0:48:06.67,0:48:07.67,ch,,0,0,0,,不\NNo.
+Dialogue: 0,0:48:07.92,0:48:08.92,ch,,0,0,0,,- 看到了吗？ - 我不是\N-See?  -I'm not.
+Dialogue: 0,0:48:09.34,0:48:11.50,ch,,0,0,0,,我不需要这玩意，好吗？\NI don't need this shit, okay?
+Dialogue: 0,0:48:12.93,0:48:16.44,ch,,0,0,0,,等下，这里发生了什么？难道我说错什么了？\NWait. What happened here? Did I say something wrong?
+Dialogue: 0,0:48:17.85,0:48:19.94,ch,,0,0,0,,你以为我很好欺负？\NYou think you can push me around?
+Dialogue: 0,0:48:20.77,0:48:22.36,ch,,0,0,0,,不，等等\NNo. Wait.
+Dialogue: 0,0:48:22.60,0:48:24.60,ch,,0,0,0,,别他妈的碰我\NDon't you fucking touch me.
+Dialogue: 0,0:48:47.96,0:48:49.46,ch,,0,0,0,,我不明白\NI don't understand.
+Dialogue: 0,0:48:53.13,0:48:55.13,ch,,0,0,0,,我问她一个问题\NI asked her one question.
+Dialogue: 0,0:48:55.80,0:48:59.80,ch,,0,0,0,,一个简单的问题，然后我就被轰出来了\NA question. Simple. And then it all came out sideways.
+Dialogue: 0,0:49:02.48,0:49:04.65,ch,,0,0,0,,你还不明白，他们现在很生气...\NYou don't get it. They get in a mood...
+Dialogue: 0,0:49:04.90,0:49:09.07,ch,,0,0,0,,...对他们来说，希望越大失望越大\N...you could give them the hope diamond and they'd complain about the weight.
+Dialogue: 0,0:49:09.32,0:49:10.49,ch,,0,0,0,,我说得对不对？\NAm I right?
+Dialogue: 0,0:49:10.74,0:49:13.58,ch,,0,0,0,,鲍勃，你是不是在谈论一个女孩，对吧？\NBob, you ain't actually talking about a girl, are you?
+Dialogue: 0,0:49:13.82,0:49:15.49,ch,,0,0,0,,波比给自己买了一个女孩？\NBobby's got himself a girl?
+Dialogue: 0,0:49:16.66,0:49:19.00,ch,,0,0,0,,男人养狗，就会变成吸妹子的磁铁\NGuy gets a dog, becomes a pussy magnet.
+Dialogue: 0,0:49:19.33,0:49:21.50,ch,,0,0,0,,现在她们已经投怀送抱了\NThey're flinging it at my man now.
+Dialogue: 0,0:49:25.42,0:49:27.09,ch,,0,0,0,,我去打杆台球\NI'm gonna go play some pool.
+Dialogue: 0,0:49:33.34,0:49:35.00,ch,,0,0,0,,你怎么了？\NHow are you?
+Dialogue: 0,0:49:36.85,0:49:39.02,ch,,0,0,0,,Chovka，我们喝一杯\NChovka, let me get you a drink.
+Dialogue: 0,0:49:41.52,0:49:45.19,ch,,0,0,0,,马文？斯特拉...安德烈，他要斯特拉。\NMarv? Stella--Andre, he drinks Stella.
+Dialogue: 0,0:49:58.70,0:50:00.03,ch,,0,0,0,,看啊\NThere you go.
+Dialogue: 0,0:50:05.04,0:50:06.38,ch,,0,0,0,,在这儿\NHere it is.
+Dialogue: 0,0:50:08.71,0:50:13.04,ch,,0,0,0,,我把它放在一个保鲜袋里，都在这儿了，你可以点下\NI put it in a ziploc. But it's all there. You can count it.
+Dialogue: 0,0:50:14.38,0:50:15.46,ch,,0,0,0,,保鲜袋？\NZiploc?
+Dialogue: 0,0:50:15.72,0:50:17.72,ch,,0,0,0,,嗯，这个有点湿\NWell, it was a little wet.
+Dialogue: 0,0:50:18.05,0:50:21.88,ch,,0,0,0,,我想要弄干它，可是我们没有烘干机\NI was going to dry it, but we don't have a dryer.
+Dialogue: 0,0:50:22.22,0:50:25.14,ch,,0,0,0,,所以我只能放到个保鲜袋里，如果你拿出来...\NSo I figured I'd put it in a ziploc. If you spread it out...
+Dialogue: 0,0:50:25.39,0:50:28.73,ch,,0,0,0,,...放在桌子上凉一早上，应该就没问题了\N...on a table, it should be good come the morning.
+Dialogue: 0,0:50:29.81,0:50:32.31,ch,,0,0,0,,我不知道你在说什么，鲍勃\NI have no idea what you're talking about, Bob.
+Dialogue: 0,0:50:32.73,0:50:34.48,ch,,0,0,0,,这不是你上次给我的酒\NThis isn't what you gave me last time.
+Dialogue: 0,0:50:34.74,0:50:37.08,ch,,0,0,0,,哦，这不是18号威士忌\NThat? No, that's not the bowmore 18.
+Dialogue: 0,0:50:37.41,0:50:40.41,ch,,0,0,0,,你不喜欢这个，你说这闻起来像香港脚\NYou didn't like it. You said it smelled like feet.
+Dialogue: 0,0:50:40.74,0:50:45.74,ch,,0,0,0,,我想你会更喜欢这个，很特别的\NI figured that you would prefer this a lot more. This is very special.
+Dialogue: 0,0:50:52.75,0:50:54.08,ch,,0,0,0,,爱尔兰人\NIt's Irish.
+Dialogue: 0,0:51:04.27,0:51:05.36,ch,,0,0,0,,我们都会死\NWe die.
+Dialogue: 0,0:51:06.27,0:51:07.77,ch,,0,0,0,,所有的人...\NAll of us...
+Dialogue: 0,0:51:08.19,0:51:09.19,ch,,0,0,0,,...安德烈。\N...Andre.
+Dialogue: 0,0:51:09.77,0:51:13.44,ch,,0,0,0,,但是在这之前，你一定要试试这威士忌\NBut before you do, you have to try this fucking whiskey, man.
+Dialogue: 0,0:51:13.86,0:51:17.20,ch,,0,0,0,,好啊，给他来一杯，这里\NYeah, get him one. Come on. Here.
+Dialogue: 0,0:51:22.70,0:51:24.95,ch,,0,0,0,,轮到你为“包裹”坐庄了\NYou handle the drop.
+Dialogue: 0,0:51:25.45,0:51:27.78,ch,,0,0,0,,好吧，哪天？\NAll right. Which night?
+Dialogue: 0,0:51:28.46,0:51:29.96,ch,,0,0,0,,超级碗决赛\NSuper bowl.
+Dialogue: 0,0:51:36.97,0:51:38.30,ch,,0,0,0,,好\NOkay.
+Dialogue: 0,0:51:43.64,0:51:44.81,ch,,0,0,0,,酒不错\NIs good.
+Dialogue: 0,0:51:56.99,0:51:58.57,ch,,0,0,0,,埃万德罗 托雷斯 探长\NDetective evandro Torres.
+Dialogue: 0,0:51:59.40,0:52:01.65,ch,,0,0,0,,- 吉米 沙利文 - 太感谢你了\N-Jimmy Sullivan. -Thanks for seeing me.
+Dialogue: 0,0:52:01.91,0:52:05.16,ch,,0,0,0,,所以他消失的那天 你不知道其他什么消息了么\NSo you got nothing else about the night glory days vanished?
+Dialogue: 0,0:52:05.41,0:52:09.24,ch,,0,0,0,,我唯一记得的就是他离开酒吧去买大麻了\NThe only thing I remember was that he left the bar to score weed.
+Dialogue: 0,0:52:09.50,0:52:12.67,ch,,0,0,0,,一起买大麻的那几个家伙都是混蛋\NAnd the guys he got it from were a couple of shitheads.
+Dialogue: 0,0:52:13.00,0:52:17.67,ch,,0,0,0,,其中有个叫迪兹的疯子 还有他的朋友 叫啥来的？\NA nutjob named deeds and his junkie buddy-- what was his name?
+Dialogue: 0,0:52:17.92,0:52:20.13,ch,,0,0,0,,蒂姆·布伦南 原供词里就有他\NTim Brennan. He was in the original statement.
+Dialogue: 0,0:52:20.18,0:52:21.35,ch,,0,0,0,,就是这个家伙\NThat's the guy.
+Dialogue: 0,0:52:22.84,0:52:25.68,ch,,0,0,0,,他和他们俩一起出去 还是一个？\NHe was going to see them both? Or only one?
+Dialogue: 0,0:52:26.18,0:52:27.84,ch,,0,0,0,,我不记得了\NI don't remember.
+Dialogue: 0,0:52:29.52,0:52:33.86,ch,,0,0,0,,但鲍勃和马文呢？\NBut Bob saginowski and cousin Marv?
+Dialogue: 0,0:52:34.86,0:52:37.03,ch,,0,0,0,,- 你想让他当替罪羊？ - 不，我只是...\N-You trying to tie them to this? -Nah, I just--
+Dialogue: 0,0:52:37.28,0:52:39.13,ch,,0,0,0,,你把我单独带到这儿\Nyou got me out here in front of the guys
+Dialogue: 0,0:52:39.15,0:52:40.80,ch,,0,0,0,,和我一起的人还以为我是告密者\N I work with, looking like a snitch.
+Dialogue: 0,0:52:41.03,0:52:43.54,ch,,0,0,0,,真是太谢谢你了，但马文呆的地方？\NThanks for that. But cousin Marv's place?
+Dialogue: 0,0:52:43.87,0:52:47.54,ch,,0,0,0,,那是我的酒吧，别和我的酒吧过去不，好么\NThat's my bar. All right? Don't fuck with my bar.
+Dialogue: 0,0:53:09.02,0:53:10.52,ch,,0,0,0,,你知道，我...\NYou know, I'm...
+Dialogue: 0,0:53:11.94,0:53:13.27,ch,,0,0,0,,对不起\NI'm sorry.
+Dialogue: 0,0:53:13.52,0:53:15.53,ch,,0,0,0,,我不介意，你认识他\NI don't care if you know him.
+Dialogue: 0,0:53:15.77,0:53:16.93,ch,,0,0,0,,这只是...\NIt's just that...
+Dialogue: 0,0:53:17.52,0:53:21.77,ch,,0,0,0,,他打招呼的方式，好像有些特殊的含义\N...the way that he said hi, you know, it sounded like it meant something.
+Dialogue: 0,0:53:22.70,0:53:24.54,ch,,0,0,0,,我就是问问\NI was just asking.
+Dialogue: 0,0:53:27.37,0:53:29.21,ch,,0,0,0,,他还说了什么？\NWhat else did he say?
+Dialogue: 0,0:53:30.04,0:53:32.38,ch,,0,0,0,,他说，洛克是他的\NHe said that rocco was his.
+Dialogue: 0,0:53:32.79,0:53:36.38,ch,,0,0,0,,他还说狗身上有芯片，还证明给我看\NThat he has a chip in his neck to prove it.
+Dialogue: 0,0:54:04.40,0:54:06.40,ch,,0,0,0,,他曾经是我的男朋友\NHe used to be my boyfriend.
+Dialogue: 0,0:54:07.91,0:54:10.58,ch,,0,0,0,,一开始，他很迷人\NIn the beginning, he was charming.
+Dialogue: 0,0:54:11.24,0:54:12.91,ch,,0,0,0,,他是个好人\NHe was really nice.
+Dialogue: 0,0:54:13.58,0:54:17.26,ch,,0,0,0,,我知道有很多人说他的坏话，但我从不深究\NI know a lot of people said things about him, but I don't judge people.
+Dialogue: 0,0:54:17.29,0:54:18.58,ch,,0,0,0,,我不会听别人乱说\NI don't want to prejudge people.
+Dialogue: 0,0:54:19.75,0:54:21.04,ch,,0,0,0,,当然\NSure.
+Dialogue: 0,0:54:21.42,0:54:23.42,ch,,0,0,0,,后来发生太多事\NIt just became too much.
+Dialogue: 0,0:54:23.76,0:54:27.10,ch,,0,0,0,,我已经有一阵没看到他了，我以为他走了\NI haven't seen him in a while. I thought he was gone.
+Dialogue: 0,0:54:47.11,0:54:48.78,ch,,0,0,0,,对不起\NI'm sorry.
+Dialogue: 0,0:54:50.45,0:54:52.11,ch,,0,0,0,,很遗憾\NI'm so sorry.
+Dialogue: 0,0:54:52.79,0:54:55.46,ch,,0,0,0,,- 对不起  - 你不必解释\N-I'm sorry. -You don't have to explain.
+Dialogue: 0,0:54:55.75,0:54:57.75,ch,,0,0,0,,每个人都有过去\NEverybody has a past.
+Dialogue: 0,0:54:59.29,0:55:01.13,ch,,0,0,0,,如果这个家伙把洛克放到你的垃圾桶\NAnd if this guy put rocco in your trash
+Dialogue: 0,0:55:01.15,0:55:02.99,ch,,0,0,0,,那不是你的错\Nthat's not your fault.
+Dialogue: 0,0:55:03.30,0:55:07.14,ch,,0,0,0,,就算是洛克 它也不会责怪你 对吗\NAnd as for rocco, he won't blame you.\NYou know?
+Dialogue: 0,0:55:08.47,0:55:10.31,ch,,0,0,0,,他再清楚不过了\NHe don't know no better.
+Dialogue: 0,0:55:26.44,0:55:28.82,ch,,0,0,0,,他比你想象的难缠\NHe's not just going to go away.
+Dialogue: 0,0:55:29.16,0:55:31.33,ch,,0,0,0,,Eric? 不\NEric? No.
+Dialogue: 0,0:55:31.62,0:55:34.67,ch,,0,0,0,,他其实并没有我想象的那么意外\NHe doesn't strike me as the type that wants to do that.
+Dialogue: 0,0:55:35.00,0:55:36.50,ch,,0,0,0,,是的\NHe's not.
+Dialogue: 0,0:55:40.00,0:55:42.51,ch,,0,0,0,,他杀死了一个叫里奇的孩子\NHe killed a kid named glory days.
+Dialogue: 0,0:55:47.01,0:55:49.18,ch,,0,0,0,,是啊，听说了\NYeah. I heard that.
+Dialogue: 0,0:55:50.51,0:55:52.17,ch,,0,0,0,,已经听说了\NI heard that.
+Dialogue: 0,0:55:53.31,0:55:54.48,ch,,0,0,0,,里奇 惠兰\NRichie whelan.
+Dialogue: 0,0:55:57.14,0:55:58.30,ch,,0,0,0,,为什么\NWhy?
+Dialogue: 0,0:55:58.69,0:56:00.19,ch,,0,0,0,,我不知道\NI don't know.
+Dialogue: 0,0:56:01.35,0:56:05.02,ch,,0,0,0,,他不喜欢我问“为什么”\NHe's not a big fan of "why". Eric.
+Dialogue: 0,0:56:09.53,0:56:11.04,ch,,0,0,0,,坏了\NIt's broken.
+Dialogue: 0,0:56:12.87,0:56:14.21,ch,,0,0,0,,是的，没错\NYeah, it is.
+Dialogue: 0,0:56:16.04,0:56:17.92,ch,,0,0,0,,你能帮我修好么\NDo you want me to fix it?
+Dialogue: 0,0:56:19.92,0:56:22.09,ch,,0,0,0,,- 你要修好他？ - 是啊\N-You want to fix it? -Yeah.
+Dialogue: 0,0:56:23.08,0:56:24.25,ch,,0,0,0,,当然\NSure.
+Dialogue: 0,0:56:25.17,0:56:26.93,ch,,0,0,0,,你要来一杯么\NYou want another beer?
+Dialogue: 0,0:56:27.26,0:56:28.43,ch,,0,0,0,,好的\NYeah.
+Dialogue: 0,0:56:41.10,0:56:45.44,ch,,0,0,0,,我听说马文不是那个酒吧的主人\NSo I heard that cousin Marv doesn't own the bar?
+Dialogue: 0,0:56:45.77,0:56:47.60,ch,,0,0,0,,冷酷的人都是这样\NThat some hard guys do.
+Dialogue: 0,0:56:47.86,0:56:50.28,ch,,0,0,0,,但你不是那么冷酷无情\NBut you're not a hard guy.
+Dialogue: 0,0:56:50.95,0:56:53.12,ch,,0,0,0,,那么，你为什么在这里工作\NSo why do you work there?
+Dialogue: 0,0:56:53.53,0:56:56.20,ch,,0,0,0,,你知道我跟马文很有交情，对吧？\NYou know me and cousin Marv go way back, right?
+Dialogue: 0,0:56:56.45,0:56:59.20,ch,,0,0,0,,是啊，马文实际上是我的堂兄\NYeah, Marv is actually my cousin.
+Dialogue: 0,0:56:59.45,0:57:00.45,ch,,0,0,0,,真的？\NYeah?
+Dialogue: 0,0:57:00.79,0:57:03.30,ch,,0,0,0,,马文 还有他的妹妹，多蒂...\NMarv and his sister, dottie...
+Dialogue: 0,0:57:03.63,0:57:07.47,ch,,0,0,0,,......他的父亲和我的母亲，他们都是姐妹\N...his father and my mother, they're all sisters.
+Dialogue: 0,0:57:07.71,0:57:08.79,ch,,0,0,0,,真的吗？\NReally?
+Dialogue: 0,0:57:09.30,0:57:10.89,ch,,0,0,0,,难道他们共用化妆品\NDid they share makeup?
+Dialogue: 0,0:57:11.13,0:57:12.96,ch,,0,0,0,,为什么要这样做\NWhy would they do that?
+Dialogue: 0,0:57:14.22,0:57:16.77,ch,,0,0,0,,你说他们是“姐妹”\NYou said they were sisters.
+Dialogue: 0,0:57:16.81,0:57:20.15,ch,,0,0,0,,你说得对，我都忘了，你知道我的意思\NYou're right. Yeah. You know what I mean.
+Dialogue: 0,0:57:20.64,0:57:23.14,ch,,0,0,0,,为啥你取笑我这个\NWhy are you jumping on me like that?
+Dialogue: 0,0:57:23.48,0:57:25.32,ch,,0,0,0,,- 这很有趣 - 有趣儿\N-It's fun. -Fun.
+Dialogue: 0,0:57:26.98,0:57:28.14,ch,,0,0,0,,有趣\NFun.
+Dialogue: 0,0:57:30.99,0:57:33.99,ch,,0,0,0,,是啊，马文还以为他是一个坚强的家伙\NYeah, Marv thought he was a tough guy.
+Dialogue: 0,0:57:35.82,0:57:37.49,ch,,0,0,0,,我们之前有一帮人\NWe had a crew once.
+Dialogue: 0,0:57:37.74,0:57:40.53,ch,,0,0,0,,早些年，当我们年轻的时候，我们赚了一些钱...\NBack in the day, when we was young, we made a little money...
+Dialogue: 0,0:57:40.58,0:57:42.50,ch,,0,0,0,,...但好景不长，你知道...\N...but it was never, you know...
+Dialogue: 0,0:57:43.50,0:57:46.51,ch,,0,0,0,,所以所有人卷铺盖进城...\NSo a mean crew rolls into town,\Nand, you know...
+Dialogue: 0,0:57:47.59,0:57:50.09,ch,,0,0,0,,......我们有人退缩了，就解散了\N...we flinched. That's it. End of the crew.
+Dialogue: 0,0:57:50.84,0:57:52.51,ch,,0,0,0,,但你还是在那种生活中\NBut you're still in the life.
+Dialogue: 0,0:57:52.76,0:57:54.51,ch,,0,0,0,,我？不\NMe? No.
+Dialogue: 0,0:57:55.18,0:57:56.85,ch,,0,0,0,,不，不，不行\NNo. No, no, no.
+Dialogue: 0,0:57:57.18,0:57:59.19,ch,,0,0,0,,我只是在照看酒吧而已\NI just tend the bar.
+Dialogue: 0,0:58:15.53,0:58:16.94,ch,,0,0,0,,你在干什么？进来\NWhat are you doing? Get in.
+Dialogue: 0,0:58:17.20,0:58:18.54,ch,,0,0,0,,你他妈的居然来这里了\NYou fucking come out here.
+Dialogue: 0,0:58:18.78,0:58:20.61,ch,,0,0,0,,你疯了吗？外边冷死了，快上车\NAre you nuts? It's freezing! Get in.
+Dialogue: 0,0:58:20.87,0:58:22.88,ch,,0,0,0,,我不上车\NI'm not getting in the car!
+Dialogue: 0,0:58:23.87,0:58:25.54,ch,,0,0,0,,你以为后备箱有塑胶炸弹吗？\NYou think the trunk's lined with plastic?
+Dialogue: 0,0:58:25.87,0:58:27.20,ch,,0,0,0,,我怎么会知道？\NHow should I know?
+Dialogue: 0,0:58:27.46,0:58:30.13,ch,,0,0,0,,那你自己去看看\NHere, go look then. Go ahead.
+Dialogue: 0,0:58:33.38,0:58:36.71,ch,,0,0,0,,别跟我耍花样，想都别想\NDon't you fuck with me. Don't you fucking dare!
+Dialogue: 0,0:58:37.22,0:58:39.06,ch,,0,0,0,,-没人耍你  -明白吗？\N-Nobody's fucking with you. -You hear?
+Dialogue: 0,0:58:40.22,0:58:41.72,ch,,0,0,0,,- 好吧  - 是啊\N-All right? -Yeah.
+Dialogue: 0,0:58:47.40,0:58:50.07,ch,,0,0,0,,想打电话给你妈妈，告诉她你还没事？\NWant to call your mommy and tell her you're okay?
+Dialogue: 0,0:58:50.32,0:58:52.35,ch,,0,0,0,,别开玩笑，上次次有人看到我的弟弟还活着的时候\NDon't joke. Last time anybody saw my brother alive
+Dialogue: 0,0:58:52.37,0:58:54.51,ch,,0,0,0,,就是他上了别人的车\N he got in a car with a guy.
+Dialogue: 0,0:58:54.74,0:58:55.83,ch,,0,0,0,,好吧\NAll right.
+Dialogue: 0,0:58:56.74,0:58:58.91,ch,,0,0,0,,你说得对，抱歉\NYou're right. I'm sorry.
+Dialogue: 0,0:59:00.99,0:59:02.66,ch,,0,0,0,,冷静\NTake it easy.
+Dialogue: 0,0:59:05.75,0:59:09.09,ch,,0,0,0,,我们现在做的是高风险高回报的事\NWhat we got here is a risk-versus-reward kind of thing.
+Dialogue: 0,0:59:09.33,0:59:11.46,ch,,0,0,0,,我们准备好冒险\NWe took the risk. And up to now
+Dialogue: 0,0:59:11.48,0:59:13.61,ch,,0,0,0,,到现在为止事情还算顺利\N it's not been working out so well, I know.
+Dialogue: 0,0:59:13.84,0:59:15.18,ch,,0,0,0,,是啊，但是呢\NYeah, but?
+Dialogue: 0,0:59:16.76,0:59:19.60,ch,,0,0,0,,但我知道下次超级碗时“包裹”会出现在哪里\NBut I know where the super bowl drop off will be.
+Dialogue: 0,0:59:20.01,0:59:22.00,ch,,0,0,0,,所以，如果你想为布莱恩报仇\NSo if you want to hit them back for br
+Dialogue: 0,0:59:22.03,0:59:23.87,ch,,0,0,0,,没有比这更好的机会\Nyou hit them back for a million.
+Dialogue: 0,0:59:24.60,0:59:26.27,ch,,0,0,0,,这是自杀，他妈的自杀\NIt's suicide. Fucking suicide.
+Dialogue: 0,0:59:26.60,0:59:27.93,ch,,0,0,0,,我有个消息要告诉你\NI got news for you, fitzy.
+Dialogue: 0,0:59:27.98,0:59:30.78,ch,,0,0,0,,我们早就死了，只不过像活死人一样\NWe're dead already, we're just walking around.
+Dialogue: 0,0:59:31.11,0:59:33.28,ch,,0,0,0,,唯一出路 就是离开。\NThe only way to get out is to leave.
+Dialogue: 0,0:59:33.53,0:59:35.53,ch,,0,0,0,,我不会再打劫了\NI'm not doing another one, man.
+Dialogue: 0,0:59:36.03,0:59:37.95,ch,,0,0,0,,- 你不干了？ - 我不干了\N-You're not?\N-I'm not.
+Dialogue: 0,0:59:38.95,0:59:40.95,ch,,0,0,0,,- 你确定吗？ - 恩，我确定\N-You sure about that? -Yeah, I'm sure.
+Dialogue: 0,0:59:42.20,0:59:44.03,ch,,0,0,0,,好吧，那事后我们两清\NOkay, I'll square it with you then.
+Dialogue: 0,0:59:45.95,0:59:47.78,ch,,0,0,0,,我会找人来一起做的\NI'm buying something with it.
+Dialogue: 0,0:59:48.96,0:59:51.30,ch,,0,0,0,,首先，你不要跟任何人说我们谈论的事\NFirst, you don't tell anybody what we just discussed.
+Dialogue: 0,0:59:51.63,0:59:53.63,ch,,0,0,0,,谁都不能说\NYou don't tell anybody.
+Dialogue: 0,0:59:54.30,0:59:58.30,ch,,0,0,0,,第二，我需要个地方躲几天\NSecond, I need a place to hole up for a couple days.
+Dialogue: 0,0:59:58.72,1:00:00.47,ch,,0,0,0,,什么，没地方住？\NWhat, you're on the street?
+Dialogue: 0,1:00:01.05,1:00:03.05,ch,,0,0,0,,- 后备箱没关 - 我关了的\N-You didn't close the trunk. -I closed it.
+Dialogue: 0,1:00:03.31,1:00:04.73,ch,,0,0,0,,没关系了\NNot very well.
+Dialogue: 0,1:00:08.31,1:00:09.90,ch,,0,0,0,,我关上了的啊\NI closed that fucking thing.
+Dialogue: 0,1:00:10.15,1:00:13.40,ch,,0,0,0,,别管后备箱了，我也没睡大街上\NForget about the trunk. No, I'm not on the street.
+Dialogue: 0,1:00:13.73,1:00:15.61,ch,,0,0,0,,所有人都知道我住的地方\NEverybody knows where I live.
+Dialogue: 0,1:00:15.63,1:00:16.68,ch,,0,0,0,,但没有人知道你住在哪里\NNobody knows where you live.
+Dialogue: 0,1:00:17.57,1:00:21.66,ch,,0,0,0,,所以，今晚或明晚 可以和你住一起吗？\NSo can I shack up with you tonight or maybe tomorrow night?
+Dialogue: 0,1:00:21.91,1:00:23.75,ch,,0,0,0,,不 不行 但我知道一个地方可以\NNot with me, but I know a place.
+Dialogue: 0,1:00:24.24,1:00:25.32,ch,,0,0,0,,明白了吗?\NAll right?
+Dialogue: 0,1:00:26.08,1:00:27.08,ch,,0,0,0,,有电线吗？\NGot cable?
+Dialogue: 0,1:00:27.83,1:00:30.17,ch,,0,0,0,,- 什么东西？ - 线\N-Motherfucker, what? -You know, cable.
+Dialogue: 0,1:00:31.17,1:00:32.51,ch,,0,0,0,,去你的\NFuck you.
+Dialogue: 0,1:00:34.67,1:00:37.68,ch,,0,0,0,,你必须去后边，两只手用点力\NYou have to get behind it! Slam it with two hands!
+Dialogue: 0,1:01:47.24,1:01:48.57,ch,,0,0,0,,就是这儿\NHere you are.
+Dialogue: 0,1:01:56.08,1:01:57.08,ch,,0,0,0,,晚安\NGood night.
+Dialogue: 0,1:01:57.34,1:01:58.59,ch,,0,0,0,,晚安\NGood night.
+Dialogue: 0,1:02:00.92,1:02:02.59,ch,,0,0,0,,我来吧\NI got that.
+Dialogue: 0,1:02:05.76,1:02:06.92,ch,,0,0,0,,鲍勃？\NBob?
+Dialogue: 0,1:02:09.10,1:02:10.27,ch,,0,0,0,,谢谢\NThanks.
+Dialogue: 0,1:02:10.93,1:02:12.26,ch,,0,0,0,,谢什么\NFor what?
+Dialogue: 0,1:02:14.44,1:02:15.61,ch,,0,0,0,,晚安\NGood night.
+Dialogue: 0,1:02:39.13,1:02:40.80,ch,,0,0,0,,对不起，让你等了那么久\NSorry I was so long.
+Dialogue: 0,1:02:41.96,1:02:44.46,ch,,0,0,0,,没把你带上，想吃东西吗\NI didn't take you with me. You want a Chewie?
+Dialogue: 0,1:03:17.29,1:03:18.33,ch,,0,0,0,,给\NHere.
+Dialogue: 0,1:03:18.63,1:03:20.97,ch,,0,0,0,,给你的\NThere you go. For you.
+Dialogue: 0,1:03:25.17,1:03:27.63,ch,,0,0,0,,- 介意我坐下吗？ - 不，坐吧\N-Mind if I sit down? -No, have a seat.
+Dialogue: 0,1:03:36.85,1:03:38.18,ch,,0,0,0,,什么事？\NWhat's up?
+Dialogue: 0,1:03:40.52,1:03:44.81,ch,,0,0,0,,我在想，为什么你不喜欢我的堂兄\NI was wondering\Nwhy you don't like my cousin.
+Dialogue: 0,1:03:44.86,1:03:46.49,ch,,0,0,0,,他带走我的狗\NHe took my dog.
+Dialogue: 0,1:03:47.24,1:03:48.28,ch,,0,0,0,,他没有\NHe didn't take your dog.
+Dialogue: 0,1:03:48.32,1:03:50.49,ch,,0,0,0,,是你虐待那条狗，并丢在垃圾桶的\NYou beat the crap out of it and put it in a trash can.
+Dialogue: 0,1:03:51.70,1:03:53.37,ch,,0,0,0,,我感觉那么做很不对\NI felt bad about it.
+Dialogue: 0,1:03:54.04,1:03:55.38,ch,,0,0,0,,这样行吗\NThat count?
+Dialogue: 0,1:03:56.66,1:03:57.66,ch,,0,0,0,,行\NYeah.
+Dialogue: 0,1:03:58.04,1:03:59.38,ch,,0,0,0,,好吧\NOkay, good.
+Dialogue: 0,1:04:00.04,1:04:01.37,ch,,0,0,0,,然后现在你想要回来了\NAnd now you want it back.
+Dialogue: 0,1:04:01.67,1:04:04.72,ch,,0,0,0,,我不知道该怎么说？我不知道我想要什么\NWhat kind of question is that? I don't know what I want.
+Dialogue: 0,1:04:05.21,1:04:06.54,ch,,0,0,0,,我不知道\NI don't know.
+Dialogue: 0,1:04:07.38,1:04:11.01,ch,,0,0,0,,但是我不想看着他带着那条狗到处玩\NBut I don't want him walking around thinking he's the shit.
+Dialogue: 0,1:04:11.55,1:04:13.01,ch,,0,0,0,,他得明白\NHe needs to learn.
+Dialogue: 0,1:04:13.56,1:04:14.89,ch,,0,0,0,,明白什么？\NLearn what?
+Dialogue: 0,1:04:15.18,1:04:17.01,ch,,0,0,0,,明白他不应该跟我作对\NThat he shouldn't have fucked with me.
+Dialogue: 0,1:04:20.40,1:04:21.86,ch,,0,0,0,,你也想插一脚？\NAre you fucking with me?
+Dialogue: 0,1:04:21.90,1:04:23.57,ch,,0,0,0,,我？不，不\NMe? No, no.
+Dialogue: 0,1:04:24.36,1:04:26.53,ch,,0,0,0,,我已经太老啦，我更喜欢和平解决\NI'm too old for that shit. I come in peace.
+Dialogue: 0,1:04:27.07,1:04:29.08,ch,,0,0,0,,为啥这么说，有战争吗\NWhy is that? Is there a war?
+Dialogue: 0,1:04:29.57,1:04:31.23,ch,,0,0,0,,据我所知并非如此\NNot that I know of.
+Dialogue: 0,1:04:32.03,1:04:33.19,ch,,0,0,0,,很好\NGood.
+Dialogue: 0,1:04:33.58,1:04:36.54,ch,,0,0,0,,在酒吧有天晚上 你让我堂兄很紧张\NIn the bar the other night, you made my cousin nervous.
+Dialogue: 0,1:04:37.70,1:04:39.20,ch,,0,0,0,,那是很少见\NYou don't see that often.
+Dialogue: 0,1:04:40.08,1:04:43.25,ch,,0,0,0,,我想 我们俩之间有种办法可以解决...\NI think there's a way you and I can sort that out...
+Dialogue: 0,1:04:43.59,1:04:45.59,ch,,0,0,0,,...让大家都开心的方法\N...and both be happy.
+Dialogue: 0,1:04:59.60,1:05:02.27,ch,,0,0,0,,看看你，你看起来不错\NLook at you. You're looking good.
+Dialogue: 0,1:05:04.40,1:05:06.11,ch,,0,0,0,,Eric deeds的精神分析档案\NEric deeds' psych file.
+Dialogue: 0,1:05:06.15,1:05:09.19,ch,,0,0,0,,给你三分钟时间读，最好别弄脏那些档案\NYou got three minutes to read it.There better be no grease on those fingers.
+Dialogue: 0,1:05:26.46,1:05:27.96,ch,,0,0,0,,哦，真该死\NWell, I'll be damned.
+Dialogue: 0,1:05:28.26,1:05:30.14,ch,,0,0,0,,说的好像你很惊讶一样\NLike you fucking weren't already?
+Dialogue: 0,1:05:32.97,1:05:35.81,ch,,0,0,0,,什么？不是你想象的那样吗？\NWhat? Not what you were expecting?
+Dialogue: 0,1:05:37.31,1:05:38.64,ch,,0,0,0,,我的文件？\NMy file?
+Dialogue: 0,1:05:39.31,1:05:40.65,ch,,0,0,0,,是啊\NYeah.
+Dialogue: 0,1:06:17.18,1:06:19.19,ch,,0,0,0,,你知道你该做什么了吧\NYou know what you're gonna do?
+Dialogue: 0,1:06:20.18,1:06:21.84,ch,,0,0,0,,你给我1万\NYou got to give me 10.
+Dialogue: 0,1:06:24.19,1:06:26.86,ch,,0,0,0,,1万元 明天早上\NTen grand. By tomorrow morning.
+Dialogue: 0,1:06:27.86,1:06:30.86,ch,,0,0,0,,- 我哪有1万美元 - 拜托\N-Who's got $10,000? -Come on.
+Dialogue: 0,1:06:31.86,1:06:35.87,ch,,0,0,0,,听着，如果你想要狗 给我1万.就是这样\NListen. You want the dog, you give me 10. Simple.
+Dialogue: 0,1:06:36.70,1:06:37.83,ch,,0,0,0,,听着，伙计 你不能这样闯入别人的生活\NListen here, pal. You can't walk into people's lives
+Dialogue: 0,1:06:37.86,1:06:40.89,ch,,0,0,0,,然后期望别人...\Nand expect them to--
+Dialogue: 0,1:06:41.16,1:06:44.37,ch,,0,0,0,,听我说，别激动\Nlisten, listen. Take it easy. Listen to me.
+Dialogue: 0,1:06:44.66,1:06:47.66,ch,,0,0,0,,这就是生活 生活就是这样\NThat is life. That's what it is.
+Dialogue: 0,1:06:47.71,1:06:50.88,ch,,0,0,0,,像我这样的人 当你不注意的时候就找上门了\NPeople like me coming along when you're not looking.
+Dialogue: 0,1:06:51.21,1:06:54.21,ch,,0,0,0,,把钱给我 10点 在你家 好吗？\NJust get my money, 10:00 A.M., your place, okay?
+Dialogue: 0,1:06:54.55,1:06:58.22,ch,,0,0,0,,如果没有钱，那我就打电话给警察，要回我的狗\NAnd if you don't get it, I'll go to the cops and get my dog back.
+Dialogue: 0,1:06:58.51,1:07:01.84,ch,,0,0,0,,很简单，然后我会假装忘记给他吃的\NSimple. And then I'll forget to feed it for a while.
+Dialogue: 0,1:07:01.89,1:07:04.52,ch,,0,0,0,,之后你就会听到狗 奄奄一息...\NAnd then when the dog gets all yappy about it...
+Dialogue: 0,1:07:06.06,1:07:09.06,ch,,0,0,0,,...我会用石头打烂它的头\N...I'll beat his fucking head with a rock.
+Dialogue: 0,1:07:10.07,1:07:11.90,ch,,0,0,0,,好吗 你想象下\NAll right? You picture that.
+Dialogue: 0,1:07:14.07,1:07:15.41,ch,,0,0,0,,就这样\NYeah.
+Dialogue: 0,1:07:17.24,1:07:19.58,ch,,0,0,0,,还记得我对里奇惠兰做的事儿吗\NRemember what I did to Richie whelan.
+Dialogue: 0,1:07:20.24,1:07:21.24,ch,,0,0,0,,恩\NYep.
+Dialogue: 0,1:07:22.08,1:07:25.75,ch,,0,0,0,,我想说 我有个同伙 现在他也还在帮我\NAnd I had a partner back then. I still have him.
+Dialogue: 0,1:07:27.25,1:07:28.42,ch,,0,0,0,,你没问题吧\NYou okay?
+Dialogue: 0,1:07:28.71,1:07:30.72,ch,,0,0,0,,很好 很高兴见到你\NOkay. It was good to see you.
+Dialogue: 0,1:07:46.60,1:07:48.43,ch,,0,0,0,,- 鲍勃 还好吗 - 还行 你呢？\N-Bobby, how's it going? -Good. You?
+Dialogue: 0,1:07:48.73,1:07:49.90,ch,,0,0,0,,也不赖\NGood.
+Dialogue: 0,1:07:50.94,1:07:54.61,ch,,0,0,0,,怎了了 我以为你提前退休了\NWhat's happening? I thought you took early retirement.
+Dialogue: 0,1:07:54.90,1:07:57.23,ch,,0,0,0,,还能干什么 我还要继续干一两年吧\NWhat can you do? I'll do another year or two.
+Dialogue: 0,1:07:57.28,1:08:01.29,ch,,0,0,0,,希望我的静脉炎不要更严重 明白我的感受了吗 马文\NHope the phlebitis don't get too bad. See how I feel. Marv?
+Dialogue: 0,1:08:02.12,1:08:03.79,ch,,0,0,0,,我要去上班了\NI'm heading out to work.
+Dialogue: 0,1:08:04.12,1:08:06.29,ch,,0,0,0,,-多蒂 工作愉快  - 你也是！\N-Good day, dot. -You, too!
+Dialogue: 0,1:08:06.62,1:08:08.45,ch,,0,0,0,,你要吃点什么吗\NAre you going to eat something?
+Dialogue: 0,1:08:08.75,1:08:10.09,ch,,0,0,0,,恩\NYeah.
+Dialogue: 0,1:08:10.13,1:08:11.30,ch,,0,0,0,,好的\NOkay.
+Dialogue: 0,1:08:18.63,1:08:21.96,ch,,0,0,0,,明天是个大日子 你电话却打不通\NBiggest day in the world tomorrow, I can't get you on the phone.
+Dialogue: 0,1:08:22.26,1:08:25.43,ch,,0,0,0,,是的 我忘了告诉你 我感觉不太好\NYeah. I forgot to tell you, I don't feel good...
+Dialogue: 0,1:08:25.47,1:08:27.30,ch,,0,0,0,,...所以我不去了\N...so I'm not coming in.
+Dialogue: 0,1:08:27.98,1:08:30.65,ch,,0,0,0,,叫别人去吧\NCall the bartemps.
+Dialogue: 0,1:08:30.98,1:08:32.32,ch,,0,0,0,,我已经叫了\NI did already.
+Dialogue: 0,1:08:32.81,1:08:36.15,ch,,0,0,0,,超级碗决赛 我们会需要人手的\NSuper bowl. We always use them.
+Dialogue: 0,1:08:37.99,1:08:40.66,ch,,0,0,0,,-那你需要我干什么？ -不需要\N-So what do you need me for? -I don't.
+Dialogue: 0,1:08:42.99,1:08:44.15,ch,,0,0,0,,但是...\NBut...
+Dialogue: 0,1:08:46.83,1:08:49.84,ch,,0,0,0,,...一年中最赚钱的日子 你居然不来\N...you're blowing off the biggest tip day of the year.
+Dialogue: 0,1:08:51.33,1:08:53.16,ch,,0,0,0,,是麽 我现在是为小费打工的人吗？\NWhat, I work for tips now?
+Dialogue: 0,1:08:53.50,1:08:55.16,ch,,0,0,0,,你有没有走过正门...\NYou ever go to the front of the bar...
+Dialogue: 0,1:08:55.46,1:08:58.79,ch,,0,0,0,,...看看酒吧上的名字 是谁的名字\N...and look at the sign on the bar? Whose name is on it?
+Dialogue: 0,1:08:59.93,1:09:01.60,ch,,0,0,0,,是我的名字\NThat's my name.
+Dialogue: 0,1:09:02.59,1:09:04.51,ch,,0,0,0,,因为曾经 酒吧是我的\N'Cause I used to own it once.
+Dialogue: 0,1:09:04.76,1:09:07.51,ch,,0,0,0,,是啊 你一直在说这个事\NYeah, you been playing that flute a long time now.
+Dialogue: 0,1:09:09.02,1:09:12.19,ch,,0,0,0,,你处理事情总是很莽撞...\NAnd you've been awfully fresh since...
+Dialogue: 0,1:09:12.52,1:09:15.52,ch,,0,0,0,,...跟那家伙 惹上狗的事儿\N...you got that dog that you mistake for a kid.
+Dialogue: 0,1:09:16.53,1:09:18.87,ch,,0,0,0,,马文 木已成舟\NMarv, you can't redo it.
+Dialogue: 0,1:09:19.36,1:09:22.53,ch,,0,0,0,,哦？他们逼迫 你就逃避\NAll right? They pressed, you blinked.
+Dialogue: 0,1:09:22.86,1:09:24.86,ch,,0,0,0,,已经结束了\NIt's done. It's over.
+Dialogue: 0,1:09:25.87,1:09:28.54,ch,,0,0,0,,已经结束有一阵子了\NIt's been over for a while now.
+Dialogue: 0,1:09:32.71,1:09:37.22,ch,,0,0,0,,好吧 我不是那种浪费一生去等待开始的人\NWell, I'm not the guy who wasted his entire life waiting for it to start.
+Dialogue: 0,1:09:37.88,1:09:38.97,ch,,0,0,0,,我是那种人吗？\NI did that?
+Dialogue: 0,1:09:39.88,1:09:42.71,ch,,0,0,0,,至少我有过一次\NAt least I had something once.
+Dialogue: 0,1:09:43.39,1:09:46.39,ch,,0,0,0,,我曾备受尊敬 也曾恐惧过\NI was respected. I was feared.
+Dialogue: 0,1:09:46.89,1:09:49.51,ch,,0,0,0,,当我走进一个地方\NWhen I walked into a place
+Dialogue: 0,1:09:49.54,1:09:51.92,ch,,0,0,0,,所有人都会挺直腰板面对我 我就是焦点\N people sat up. They sat up straight. They noticed.
+Dialogue: 0,1:09:52.23,1:09:53.90,ch,,0,0,0,,你曾经有过什么？\NWhat'd you ever have?
+Dialogue: 0,1:09:54.23,1:09:57.24,ch,,0,0,0,,你给那老女人座位\NAnd the fucking bar stool you put that old biddy at.
+Dialogue: 0,1:09:57.57,1:10:01.41,ch,,0,0,0,,不要以为我不知道你请他喝酒是干什么\NYou don't think I don't know that you did it on purpose?
+Dialogue: 0,1:10:01.74,1:10:04.42,ch,,0,0,0,,那本来是我的位子\NThat was my stool and nobody sat on that stool
+Dialogue: 0,1:10:04.44,1:10:06.77,ch,,0,0,0,,因为那是马文的座位\N because it was cousin Marv's
+Dialogue: 0,1:10:07.08,1:10:09.08,ch,,0,0,0,,那就是有意义的\NAnd that meant something.
+Dialogue: 0,1:10:09.58,1:10:11.58,ch,,0,0,0,,是有代表性的\NThat meant something!
+Dialogue: 0,1:10:12.41,1:10:13.74,ch,,0,0,0,,但并不是\NBut it didn't.
+Dialogue: 0,1:10:15.42,1:10:16.76,ch,,0,0,0,,从来没有\NEver.
+Dialogue: 0,1:10:20.92,1:10:22.75,ch,,0,0,0,,那只是个座位\NIt was just a stool.
+Dialogue: 0,1:10:29.10,1:10:31.44,ch,,0,0,0,,你要做什么绝望的事情吗？\NAre you doing something desperate?
+Dialogue: 0,1:10:33.02,1:10:34.36,ch,,0,0,0,,又一次？\NAgain?
+Dialogue: 0,1:10:36.10,1:10:37.10,ch,,0,0,0,,马文？\NMarv?
+Dialogue: 0,1:10:38.77,1:10:41.27,ch,,0,0,0,,你是要做什么\NAre you doing something
+Dialogue: 0,1:10:41.30,1:10:43.47,ch,,0,0,0,,我们这次也无法收拾的事情吗？\Nthat maybe we can't clean up this time?
+Dialogue: 0,1:10:45.28,1:10:46.95,ch,,0,0,0,,我告诉过你 我只是不舒服\NI told you, I don't feel good.
+Dialogue: 0,1:10:47.95,1:10:50.87,ch,,0,0,0,,要不你滚出去吧\NSo why don't you get the fuck out of here?
+Dialogue: 0,1:10:52.29,1:10:53.63,ch,,0,0,0,,真的\NReally.
+Dialogue: 0,1:10:55.29,1:10:56.63,ch,,0,0,0,,再见，马文\NGood-bye, Marv.
+Dialogue: 0,1:11:00.30,1:11:02.30,ch,,0,0,0,,我希望你快点恢复\NI hope you feel better soon.
+Dialogue: 0,1:11:04.80,1:11:06.81,ch,,0,0,0,,别要忘了吃东西\NDon't forget to eat something.
+Dialogue: 0,1:11:32.58,1:11:34.25,ch,,0,0,0,,愿主保佑\NThe body of Christ.
+Dialogue: 0,1:11:35.66,1:11:37.33,ch,,0,0,0,,愿主保佑\NThe body of Christ.
+Dialogue: 0,1:11:39.00,1:11:40.66,ch,,0,0,0,,愿主保佑\NThe body of Christ.
+Dialogue: 0,1:11:42.34,1:11:43.68,ch,,0,0,0,,愿主保佑\NThe body of Christ.
+Dialogue: 0,1:11:45.76,1:11:47.43,ch,,0,0,0,,愿主保佑\NThe body of Christ.
+Dialogue: 0,1:12:07.36,1:12:08.69,ch,,0,0,0,,可以走了吗？\NShould we go?
+Dialogue: 0,1:12:09.20,1:12:10.70,ch,,0,0,0,,我们走吧\NLet's move out.
+Dialogue: 0,1:12:19.54,1:12:22.21,ch,,0,0,0,,洛克，我得把你锁在这里一会\NRocco, I'll have to lock you down in a sec.
+Dialogue: 0,1:12:22.54,1:12:24.37,ch,,0,0,0,,今天日子难熬\NWe have a long day.
+Dialogue: 0,1:13:06.92,1:13:08.92,ch,,0,0,0,,嘿，迪迪，你还好吗？\NHey, didi, how you doing?
+Dialogue: 0,1:13:09.26,1:13:12.10,ch,,0,0,0,,我得...我得和你谈谈\NI got to...I got to talk to you.
+Dialogue: 0,1:13:12.34,1:13:14.42,ch,,0,0,0,,我今晚想带你去个地方\NI want to take you someplace tonight.
+Dialogue: 0,1:13:15.10,1:13:17.27,ch,,0,0,0,,会很有意思的\NIt's a lot of fun.
+Dialogue: 0,1:13:18.43,1:13:19.76,ch,,0,0,0,,之后我们就离开这里\NThen we're out of here.
+Dialogue: 0,1:14:16.41,1:14:18.25,ch,,0,0,0,,嘿  你还好吗\NHi. How you doing?
+Dialogue: 0,1:14:19.08,1:14:20.42,ch,,0,0,0,,你想干什么？\NWhat do you want?
+Dialogue: 0,1:14:22.08,1:14:23.91,ch,,0,0,0,,我不希望你在这里 你走吧\NI don't want you here. Please leave.
+Dialogue: 0,1:14:24.17,1:14:26.84,ch,,0,0,0,,不 听我说 坐下来 听我说 好吗\NNo, listen to me. Sit down and listen to me, okay?
+Dialogue: 0,1:14:27.50,1:14:29.87,ch,,0,0,0,,我希望你离开 这是我的家\NI want you to go. This is my home.
+Dialogue: 0,1:14:29.92,1:14:33.67,ch,,0,0,0,,我已经不是你女朋友了 请离开\NI'm not your girl anymore. I want you to leave.
+Dialogue: 0,1:14:37.10,1:14:39.60,ch,,0,0,0,,拜托 坐下嘛\NCome on, take a seat. Come on.
+Dialogue: 0,1:14:39.85,1:14:41.77,ch,,0,0,0,,别跟我玩这一套了 坐下\NDon't play that shit. Sit down.
+Dialogue: 0,1:14:48.77,1:14:49.85,ch,,0,0,0,,你看起来还不错 顺便说说\NYou look good, by the way.
+Dialogue: 0,1:14:50.78,1:14:54.12,ch,,0,0,0,,今晚我们要去个地方 会很有意思的\NWe're going somewhere tonight. It's gonna be a lot of fun.
+Dialogue: 0,1:14:54.45,1:14:56.70,ch,,0,0,0,,之后 我们就离开这里\NAnd after that, we're out of here.
+Dialogue: 0,1:14:57.78,1:15:00.28,ch,,0,0,0,,我只想你离开 拜托\NI want you to go. Please.
+Dialogue: 0,1:15:03.62,1:15:05.28,ch,,0,0,0,,你会一起来\NYou're going to go.
+Dialogue: 0,1:15:05.62,1:15:08.29,ch,,0,0,0,,而且打扮的漂漂亮亮的 好吗\NAnd make yourself pretty, all right?
+Dialogue: 0,1:15:26.73,1:15:28.07,ch,,0,0,0,,很高兴见到你，伙计\NGood to see you, man.
+Dialogue: 0,1:15:28.36,1:15:31.03,ch,,0,0,0,,- 你去哪儿了？ - 我回来看你，吉米\N-Where you been? -I came back to see you, Jimmy.
+Dialogue: 0,1:15:31.36,1:15:33.87,ch,,0,0,0,,他说，我马上回来给你\NHe said, I'm coming right back for you.
+Dialogue: 0,1:15:54.21,1:15:58.05,ch,,0,0,0,,女士们 先生们 请起立 摘掉帽子\NLadies and gentlemen,\Nplease rise and remove your hats...
+Dialogue: 0,1:15:58.09,1:16:02.43,ch,,0,0,0,,...用歌声来歌颂我们的祖国\N...as we honor America with the singing of our national anthem.
+Dialogue: 0,1:16:02.72,1:16:06.60,ch,,0,0,0,,两杯啤酒 三杯阿莫斯特 两杯杰克丹尼 一瓶岩石\NTwo dos equis, three amstel, two shots of Jack and a Dewar's on the rocks.
+Dialogue: 0,1:16:06.89,1:16:09.06,ch,,0,0,0,,- 你听到了吗 rardy？ - 来了\N-You hear that, rardy? -Coming up.
+Dialogue: 0,1:17:13.29,1:17:14.79,ch,,0,0,0,,嘿，鲍勃？\NHey, Bob?
+Dialogue: 0,1:17:15.67,1:17:16.75,ch,,0,0,0,,鲍勃？\NBob?
+Dialogue: 0,1:17:16.80,1:17:17.80,ch,,0,0,0,,鲍勃！\NBob!
+Dialogue: 0,1:17:18.30,1:17:20.47,ch,,0,0,0,,能给1-3台加两瓶喜力啤酒吗？\NCan I get two more Heineken on 1-3?
+Dialogue: 0,1:17:20.80,1:17:22.34,ch,,0,0,0,,Rardy？两瓶喜力啤酒\NRardy? Two more Heineken.
+Dialogue: 0,1:18:00.34,1:18:02.17,ch,,0,0,0,,- 白酒 对吧？ - 恩\N-White wine, right?\N-Yeah.
+Dialogue: 0,1:18:10.35,1:18:14.35,ch,,0,0,0,,能给我一杯斯特利 然后给这位女士一份沙拉吗？\NCan you get me a stoli rocks and a house chard for the lady?
+Dialogue: 0,1:18:17.36,1:18:19.24,ch,,0,0,0,,我今天早上没看到你\NI didn't see you this morning.
+Dialogue: 0,1:18:19.53,1:18:21.20,ch,,0,0,0,,是啊 怎么了\NYeah, so what?
+Dialogue: 0,1:18:22.53,1:18:24.20,ch,,0,0,0,,所以，你不想要钱了？\NSo you don't want the money?
+Dialogue: 0,1:18:25.37,1:18:27.21,ch,,0,0,0,,- 你带了吗？ - 什么？\N-You bring it? -What?
+Dialogue: 0,1:18:27.24,1:18:28.70,ch,,0,0,0,,钱你带来了吗\NDid you bring the money?
+Dialogue: 0,1:18:30.08,1:18:32.09,ch,,0,0,0,,你给我的印象就是会带钱来的那种人\NYou strike me as the type who would bring it.
+Dialogue: 0,1:18:32.37,1:18:34.37,ch,,0,0,0,,- 两杯斯特拉一杯阿姆斯特尔 - 好的\N-Two Stella and an amstel.  -Sure.
+Dialogue: 0,1:18:34.42,1:18:36.88,ch,,0,0,0,,Rardy 两杯斯特拉 一杯阿姆斯特尔\NRardy, two amstels and a Stella.
+Dialogue: 0,1:18:36.92,1:18:38.42,ch,,0,0,0,,她为什么在这里\NWhy is she here?
+Dialogue: 0,1:18:39.38,1:18:40.89,ch,,0,0,0,,她是我女朋友\NShe's my girl.
+Dialogue: 0,1:18:52.60,1:18:55.72,ch,,0,0,0,,把那纸给我 你就可以拿走钱了\NGive me that piece of paper and you get the money.
+Dialogue: 0,1:18:56.06,1:18:57.06,ch,,0,0,0,,什么纸？\NWhat paper?
+Dialogue: 0,1:18:58.57,1:19:02.07,ch,,0,0,0,,宠物注册证件 还有芯片 说好的\NThe microchip and the license, like we agreed.
+Dialogue: 0,1:19:02.11,1:19:03.44,ch,,0,0,0,,为什么呢\NWhy would I do that?
+Dialogue: 0,1:19:03.74,1:19:08.04,ch,,0,0,0,,因为这就是我付钱给你的原因 说好的\NBecause that's why I'm paying you the money. That's the deal.
+Dialogue: 0,1:19:08.37,1:19:11.04,ch,,0,0,0,,好像是这么说的 等一下\NThat's a deal. Hold on a second.
+Dialogue: 0,1:19:11.70,1:19:14.53,ch,,0,0,0,,你可以把零钱留着\NYou can keep the change. Keep the change.
+Dialogue: 0,1:19:14.79,1:19:16.30,ch,,0,0,0,,两杯斯特拉 一杯阿姆斯特尔\NTwo stellas and one amstel.
+Dialogue: 0,1:19:16.54,1:19:18.37,ch,,0,0,0,,怎么了 等一下\NWhat's up? Wait a minute.
+Dialogue: 0,1:19:19.46,1:19:21.71,ch,,0,0,0,,我现在不方便说话 等下\NI can't talk right now. Wait a second.
+Dialogue: 0,1:19:22.05,1:19:23.39,ch,,0,0,0,,现在说吧\NHere you go.
+Dialogue: 0,1:19:23.88,1:19:25.55,ch,,0,0,0,,怎么这么吵 你在哪儿\NWhat's that noise? Where are you?
+Dialogue: 0,1:19:25.80,1:19:28.38,ch,,0,0,0,,我在那儿呢 你的地方\NI'm at the place. Your place.
+Dialogue: 0,1:19:28.72,1:19:30.05,ch,,0,0,0,,酒吧？\NThe bar?
+Dialogue: 0,1:19:30.81,1:19:32.81,ch,,0,0,0,,你为什么去这么早？\NWhy the fuck you show up so early?
+Dialogue: 0,1:19:33.06,1:19:36.65,ch,,0,0,0,,本来很简单的 你按时出现 做完该做的 然后走人\NThis was simple. You show up at the designated time, do the thing and leave.
+Dialogue: 0,1:19:38.06,1:19:40.81,ch,,0,0,0,,我知道他看起来像什么 但是我跟你说你别玩他\NI know what he seems like, but I shit you not, do not fuck with him.
+Dialogue: 0,1:19:41.07,1:19:44.66,ch,,0,0,0,,离他远点 他已经觉得你要为了这条狗杀了他\NStay away from him. He already thinks you want to kill him over some fucking dog.
+Dialogue: 0,1:19:44.99,1:19:46.33,ch,,0,0,0,,别管那么多\NJust stay in the back.
+Dialogue: 0,1:19:46.57,1:19:47.90,ch,,0,0,0,,好的 我明白\NYeah, I got it.
+Dialogue: 0,1:19:48.16,1:19:50.96,ch,,0,0,0,,现在在酒吧 别喝多了\NAnd you're in a bar. Don't drink too much.
+Dialogue: 0,1:19:50.99,1:19:52.77,ch,,0,0,0,,两点还要碰头 你个白痴\NI'll see you at 2:00, you fucking idiot.
+Dialogue: 0,1:19:58.75,1:20:00.91,ch,,0,0,0,,多有意思的比赛\NWhat an amazing game!
+Dialogue: 0,1:20:01.25,1:20:04.25,ch,,0,0,0,,27-23 最终得分\NTwenty-seven to 23, your final score!
+Dialogue: 0,1:20:24.28,1:20:26.12,ch,,0,0,0,,- 你跟他在一起吗？ - 不\N-Are you with him? -No.
+Dialogue: 0,1:20:26.15,1:20:27.48,ch,,0,0,0,,那你为什么来这里？\NSo why are you here?
+Dialogue: 0,1:20:29.78,1:20:32.28,ch,,0,0,0,,- 你们聊什么呢？ - 我告诉你 没什么\N-What were you talking about? -I told you, nothing.
+Dialogue: 0,1:20:32.53,1:20:33.53,ch,,0,0,0,,鲍勃\NBob.
+Dialogue: 0,1:20:34.45,1:20:35.87,ch,,0,0,0,,是啊 我们聊过了\NYeah, we do.
+Dialogue: 0,1:21:34.01,1:21:37.84,ch,,0,0,0,,这好像有问题 情况不妙\NThis is not good. This is so not good.
+Dialogue: 0,1:21:39.52,1:21:41.36,ch,,0,0,0,,我不想来这里\NI don't want to be here.
+Dialogue: 0,1:21:41.69,1:21:43.36,ch,,0,0,0,,我没想过来这里\NI didn't want to come here.
+Dialogue: 0,1:21:43.69,1:21:47.03,ch,,0,0,0,,我还没回去 他就在我家等我了\NHe was waiting in my house when I got home.
+Dialogue: 0,1:21:51.03,1:21:53.04,ch,,0,0,0,,对不起，鲍勃\NI'm sorry, Bob.
+Dialogue: 0,1:21:58.12,1:21:59.79,ch,,0,0,0,,他带着枪\NHe has a gun.
+Dialogue: 0,1:22:11.88,1:22:14.05,ch,,0,0,0,,我要去洗手间了\NI'm going to the ladies'.
+Dialogue: 0,1:22:20.56,1:22:22.57,ch,,0,0,0,,你们说什么呢？\NWhat were you talking about?
+Dialogue: 0,1:22:22.60,1:22:23.93,ch,,0,0,0,,橄榄球\NFootball.
+Dialogue: 0,1:22:27.07,1:22:28.91,ch,,0,0,0,,再给我一杯 好吗\NGive me another shot, will you?
+Dialogue: 0,1:22:44.42,1:22:45.96,ch,,0,0,0,,你搭档叫什么？\NWhat was the name of your partner?
+Dialogue: 0,1:22:46.42,1:22:50.30,ch,,0,0,0,,你知道他也不会对他有什么威胁吧，鲍勃？\NWouldn't be much of a threat if you knew who he was, would he, Bob?
+Dialogue: 0,1:22:50.59,1:22:51.93,ch,,0,0,0,,不会的，但是...\NYeah, but...
+Dialogue: 0,1:22:52.42,1:22:55.09,ch,,0,0,0,,...他帮你杀里奇惠兰，对不对？\N...he helped you kill Richie whelan, right?
+Dialogue: 0,1:22:56.93,1:22:58.31,ch,,0,0,0,,鲍勃 那是个传闻\NThat's the rumor, Bob.
+Dialogue: 0,1:22:58.60,1:23:00.77,ch,,0,0,0,,不只是传闻 你自己说的\NMore than a rumor. It's what you said.
+Dialogue: 0,1:23:00.81,1:23:04.32,ch,,0,0,0,,那就当它是真的 鲍勃 几点了\NThen it's more than a rumor, Bob. What time is it?
+Dialogue: 0,1:23:05.27,1:23:09.78,ch,,0,0,0,,你不用一直叫我鲍勃\NYou know, you don't have to keep calling me Bob all the time.
+Dialogue: 0,1:23:10.11,1:23:12.16,ch,,0,0,0,,我会尽量不叫的 鲍勃 那是什么\NI'll see what I can do, Bob. What is that?
+Dialogue: 0,1:23:12.44,1:23:14.27,ch,,0,0,0,,你想要的1万块\NThe 10 grand you wanted.
+Dialogue: 0,1:23:14.78,1:23:16.29,ch,,0,0,0,,这是1万块？\NThis is 10 grand?
+Dialogue: 0,1:23:17.12,1:23:18.29,ch,,0,0,0,,是的\NYeah.
+Dialogue: 0,1:23:21.62,1:23:23.13,ch,,0,0,0,,你知道我怎么想的吗\NYou know what I think?
+Dialogue: 0,1:23:26.63,1:23:28.67,ch,,0,0,0,,我两点要看下保险柜里的\NI'm going to look in the safe at 2:00.
+Dialogue: 0,1:23:32.13,1:23:35.96,ch,,0,0,0,,时间锁两点整会失效 你有90秒的时间关闭它..\NTime lock goes off at 2:00 A.M. you got 90 seconds to close it...
+Dialogue: 0,1:23:36.01,1:23:38.47,ch,,0,0,0,,...或者触发两个无声报警\N...or it triggers two silent alarms.
+Dialogue: 0,1:23:39.01,1:23:41.01,ch,,0,0,0,,我们两点得看下保险箱\NWe should look in the safe at 2:00.
+Dialogue: 0,1:23:43.14,1:23:44.64,ch,,0,0,0,,你听着\NNow you listen.
+Dialogue: 0,1:23:45.81,1:23:49.31,ch,,0,0,0,,那只狗 我很乐意花1万块买下\NI'm happy to pay you 10 grand for the dog.
+Dialogue: 0,1:23:50.48,1:23:53.48,ch,,0,0,0,,是啊 一万买一条狗\NYeah. Ten grand for the dog.
+Dialogue: 0,1:23:54.15,1:23:55.48,ch,,0,0,0,,但仅此而已\NBut that's it.
+Dialogue: 0,1:23:57.66,1:23:59.50,ch,,0,0,0,,那她多少钱呢？\NAnd how much for her?
+Dialogue: 0,1:23:59.82,1:24:04.32,ch,,0,0,0,,这个呢 她值多少钱\NHow about that?\NHow much should he pay for you?
+Dialogue: 0,1:24:04.66,1:24:07.83,ch,,0,0,0,,Eric 求你了 别这样\NEric, please. Please don't do this.
+Dialogue: 0,1:24:11.50,1:24:13.33,ch,,0,0,0,,- 马文呢 - 马文？\N-Where's Marv? -Marv?
+Dialogue: 0,1:24:14.21,1:24:16.04,ch,,0,0,0,,你找他干什么\NYou need him for something?
+Dialogue: 0,1:24:16.55,1:24:17.89,ch,,0,0,0,,我不想干什么\NI don't want anything.
+Dialogue: 0,1:24:18.18,1:24:21.52,ch,,0,0,0,,我只是不想让他突然出现在我身后\NI just don't want him creeping up my back all of a sudden.
+Dialogue: 0,1:24:22.35,1:24:24.69,ch,,0,0,0,,是啊，我亲爱的堂兄马文\NYeah, my sweet cousin Marv.
+Dialogue: 0,1:24:26.02,1:24:29.36,ch,,0,0,0,,你知道他也有一些麻烦\NYou know he's had some trouble, Marv. Yeah.
+Dialogue: 0,1:24:29.69,1:24:33.03,ch,,0,0,0,,比如 10年前 他...\NLike, about 10 years ago, man, he had...
+Dialogue: 0,1:24:33.36,1:24:34.70,ch,,0,0,0,,...那些牌有问题\N...a problem with the cards.
+Dialogue: 0,1:24:35.57,1:24:37.20,ch,,0,0,0,,这我还不知道 鲍勃\NI didn't know that, Bob.
+Dialogue: 0,1:24:37.24,1:24:39.54,ch,,0,0,0,,但这之后他更像 放高利贷的人\NBut he was more of a loan shark back then.
+Dialogue: 0,1:24:41.03,1:24:42.70,ch,,0,0,0,,我记得这小子...\NAnd I remember this kid...
+Dialogue: 0,1:24:43.08,1:24:45.71,ch,,0,0,0,,...他很喜欢他的钱\N...he was into him for a shitload of money.
+Dialogue: 0,1:24:45.75,1:24:49.25,ch,,0,0,0,,对狗和篮球可以说无可救药\NHopeless case when it came to the dogs and b-ball.
+Dialogue: 0,1:24:49.92,1:24:52.07,ch,,0,0,0,,后来走上不归路 \NJust degenerate, really
+Dialogue: 0,1:24:52.09,1:24:54.22,ch,,0,0,0,,就是那种怎么都还不上钱的孩子\NKind of kid who'd never be able to pay back what he owed.
+Dialogue: 0,1:24:54.25,1:24:55.88,ch,,0,0,0,,现在1:57了 好吗\NIt's 1:57, all right?
+Dialogue: 0,1:24:55.92,1:24:58.38,ch,,0,0,0,,然后那孩子去了药店 他...\NAnd then the kid goes to a.C. And he...
+Dialogue: 0,1:24:58.72,1:25:03.39,ch,,0,0,0,,...在收银机里抢了2万2钱美元\N...hits up a slot machine for 22 grand.
+Dialogue: 0,1:25:04.22,1:25:05.39,ch,,0,0,0,,骗你的\NBam.
+Dialogue: 0,1:25:05.93,1:25:08.14,ch,,0,0,0,,是谁的主意？\NWho'd have thunk it?
+Dialogue: 0,1:25:08.17,1:25:10.29,ch,,0,0,0,,这就是因为他欠了马文的钱\NIt was, like, a fraction more than what he owed Marv.
+Dialogue: 0,1:25:10.56,1:25:12.73,ch,,0,0,0,,是因为他还不了钱 然后你们逼迫他的\NSo he didn't pay up and you roughed him up.
+Dialogue: 0,1:25:12.77,1:25:16.94,ch,,0,0,0,,不 不是这样 他把钱还给了马文 分文不差\NNo, no. That's not what happened. He paid back Marv, every cent.
+Dialogue: 0,1:25:17.24,1:25:18.91,ch,,0,0,0,,他是一个好人\NHe was a good guy.
+Dialogue: 0,1:25:18.95,1:25:20.91,ch,,0,0,0,,已经1:58 好吗\NIt's 1:58, all right?
+Dialogue: 0,1:25:20.95,1:25:24.91,ch,,0,0,0,,他没想到的是马文找到了他藏东西的地方\NWhat he didn't account for was Marv skimming off his own stash.
+Dialogue: 0,1:25:24.95,1:25:27.62,ch,,0,0,0,,因为他的习惯还有他的赌债\NBecause of his habits and his gambling debts.
+Dialogue: 0,1:25:27.91,1:25:31.79,ch,,0,0,0,,这孩子意外的...带着2万2千块钱的...\NAnd this kid coming out of the blue with 22 grand was a...
+Dialogue: 0,1:25:32.08,1:25:33.41,ch,,0,0,0,,...他怎么说来的？\N...what'd he say?
+Dialogue: 0,1:25:34.42,1:25:37.26,ch,,0,0,0,,“一个可行的商业机会。”\N"A viable business opportunity."
+Dialogue: 0,1:25:38.26,1:25:39.60,ch,,0,0,0,,这就是我的堂兄马文\NThat's my cousin Marv.
+Dialogue: 0,1:25:40.43,1:25:44.77,ch,,0,0,0,,只要没人知道 他把钱还给马文了\NSo long as nobody knew that he'd paid Marv back off, you know?
+Dialogue: 0,1:25:45.60,1:25:46.94,ch,,0,0,0,,你明白会发生什么吗？\NYou see where this is going?
+Dialogue: 0,1:25:47.60,1:25:49.27,ch,,0,0,0,,知道 那孩子必须被榨干\NYeah, kid had to be ripped off.
+Dialogue: 0,1:25:49.31,1:25:51.77,ch,,0,0,0,,不 那孩子不得不被杀掉\NNo. Kid had to be killed.
+Dialogue: 0,1:25:53.31,1:25:55.81,ch,,0,0,0,,所以这样就没人知道他把钱给马文了\NSo nobody'd know he'd paid Marv back off.
+Dialogue: 0,1:25:56.82,1:25:58.49,ch,,0,0,0,,所以我们也是一样\NSo that's what we did.
+Dialogue: 0,1:25:59.28,1:26:01.12,ch,,0,0,0,,所以 你...\NSo you...
+Dialogue: 0,1:26:01.99,1:26:03.66,ch,,0,0,0,,-  ...杀了他。 - 是的 我杀了他\N-...killed him. -Yeah, I did.
+Dialogue: 0,1:26:04.28,1:26:05.99,ch,,0,0,0,,我照着他的脸开了两枪\NI shot him in the face, twice.
+Dialogue: 0,1:26:07.12,1:26:10.13,ch,,0,0,0,,然后用毛巾捂住他的头 照着心脏捅了两刀\NThen I wrapped his head in a towel and stabbed him in the heart...
+Dialogue: 0,1:26:10.16,1:26:13.62,ch,,0,0,0,,...他这样就会流血 我就把他放到浴缸 然后看他流血身亡\N...so he would bleed out, put him in my bathtub and watched him drain.
+Dialogue: 0,1:26:14.46,1:26:15.97,ch,,0,0,0,,死后我把它放进 油罐里...\NThen I put him in an oil tank...
+Dialogue: 0,1:26:16.80,1:26:19.47,ch,,0,0,0,,...倒上洗衣粉还有碱液...\N...with laundry detergent and lye...
+Dialogue: 0,1:26:19.51,1:26:20.85,ch,,0,0,0,,...然后封起来\N...and sealed it back up.
+Dialogue: 0,1:26:25.30,1:26:27.30,ch,,0,0,0,,想知道他的名字吗？\NWant to know what his name was?
+Dialogue: 0,1:26:27.64,1:26:29.48,ch,,0,0,0,,两点了 鲍勃 已经两点了\NIt's 2:00, Bob. It's 2:00.
+Dialogue: 0,1:26:30.48,1:26:31.81,ch,,0,0,0,,他的名字\NHis name.
+Dialogue: 0,1:26:33.48,1:26:36.49,ch,,0,0,0,,- 我不知道的 鲍勃 - 你知道 这是你知道的事儿\N-I would not know, Bob.  -Yes, you do. This is something you know.
+Dialogue: 0,1:26:36.52,1:26:38.19,ch,,0,0,0,,- 我怎么会知道 鲍勃 - 猜猜看\N-I wouldn't know that, Bob. -Guess.
+Dialogue: 0,1:26:39.15,1:26:41.98,ch,,0,0,0,,现在已经两点了 而你得打开保险柜\NI know it's 2:00,\Nand you got to open the safe!
+Dialogue: 0,1:26:42.03,1:26:43.03,ch,,0,0,0,,听我说\NListen to me.
+Dialogue: 0,1:26:43.32,1:26:44.65,ch,,0,0,0,,他的名字...\NHis name...
+Dialogue: 0,1:26:45.16,1:26:46.83,ch,,0,0,0,,...叫做 里奇惠兰\N...was Richie whelan.
+Dialogue: 0,1:26:49.66,1:26:51.53,ch,,0,0,0,,大家都叫他光辉岁月？\NEverybody called him glory days?
+Dialogue: 0,1:26:53.33,1:26:55.37,ch,,0,0,0,,我杀了里奇惠兰，好吗？\NI killed Richie whelan, okay?
+Dialogue: 0,1:26:55.96,1:26:57.30,ch,,0,0,0,,当然了\NSure you did.
+Dialogue: 0,1:27:27.53,1:27:28.86,ch,,0,0,0,,该死的小混混\NFucking punk.
+Dialogue: 0,1:27:30.54,1:27:34.79,ch,,0,0,0,,出去吃晚宴 你却穿的像睡衣 还穿着..\NGo out to dinner dressed like you're still in your living room. You wear those...
+Dialogue: 0,1:27:35.04,1:27:36.88,ch,,0,0,0,,...小丑一样的鞋子\N...big hippity-hoppity clown shoes.
+Dialogue: 0,1:27:37.13,1:27:40.13,ch,,0,0,0,,对女人说话凶狠 对她们很卑鄙\NYou speak to women terribly. You treat them despicably.
+Dialogue: 0,1:27:40.38,1:27:44.14,ch,,0,0,0,,还伤害无辜的狗 我已经受不了你了 混蛋\NYou hurt harmless dogs that can't defend themselves. I'm tired of you, man.
+Dialogue: 0,1:27:44.38,1:27:46.46,ch,,0,0,0,,我受够你了 你真让我难堪\NI'm tired of you. You embarrass me.
+Dialogue: 0,1:27:48.05,1:27:50.55,ch,,0,0,0,,你知道 他会一直回来\NYou know, he would have kept coming back.
+Dialogue: 0,1:27:50.81,1:27:54.15,ch,,0,0,0,,像这样的人 你让他们得逞\NPeople like this, you let them take something from you...
+Dialogue: 0,1:27:54.39,1:27:57.06,ch,,0,0,0,,...他们就会一直找你\N...and they keep coming back.
+Dialogue: 0,1:27:57.31,1:28:00.48,ch,,0,0,0,,你就会欠他们一辈子\NYou still owe them and they never, never change.
+Dialogue: 0,1:28:00.73,1:28:02.73,ch,,0,0,0,,你永远改变不了这种人的想法\NYou can never change their mind.
+Dialogue: 0,1:28:08.82,1:28:10.15,ch,,0,0,0,,你刚才...\NYou just...
+Dialogue: 0,1:28:11.24,1:28:14.57,ch,,0,0,0,,我是说 你刚杀了他\NI mean, you just fucking shot him.
+Dialogue: 0,1:28:15.41,1:28:19.41,ch,,0,0,0,,是的 我杀了他 没错 他本来打算伤害我们的狗的\NYes, I did. Absolutely.\NHe was going to hurt our dog.
+Dialogue: 0,1:28:36.85,1:28:37.85,ch,,0,0,0,,鲍勃？\NBob?
+Dialogue: 0,1:28:38.10,1:28:41.10,ch,,0,0,0,,我...我可以走了吗？\NCan I...Can I go now?
+Dialogue: 0,1:28:42.44,1:28:44.60,ch,,0,0,0,,是的，你可以走了\NYeah, of course. You can.
+Dialogue: 0,1:28:47.11,1:28:49.61,ch,,0,0,0,,所以 你就这样让我走了？\NSo you...You'll let me go?
+Dialogue: 0,1:28:51.12,1:28:52.79,ch,,0,0,0,,当然了\NSure, sure.
+Dialogue: 0,1:28:53.29,1:28:54.62,ch,,0,0,0,,为什么不？\NWhy not?
+Dialogue: 0,1:28:55.29,1:29:00.30,ch,,0,0,0,,以后没人会伤害你了 好吗\NAnd, and nobody will ever hurt you again. Okay?
+Dialogue: 0,1:29:00.79,1:29:03.46,ch,,0,0,0,,都结束了 好吗\NThis is done. Okay?
+Dialogue: 0,1:29:04.80,1:29:06.47,ch,,0,0,0,,东西都拿了吗\NYou got your stuff?
+Dialogue: 0,1:29:07.80,1:29:09.14,ch,,0,0,0,,走吧\NGo on now.
+Dialogue: 0,1:29:13.14,1:29:17.31,ch,,0,0,0,,但是现在...你以为我会说出去吗\NBut now...Now you'll think I'll talk.
+Dialogue: 0,1:29:17.89,1:29:19.22,ch,,0,0,0,,我不会说出去的 鲍勃\NI won't talk, Bob.
+Dialogue: 0,1:29:19.81,1:29:21.22,ch,,0,0,0,,我知道你不会说\NI know you won't.
+Dialogue: 0,1:29:21.48,1:29:23.65,ch,,0,0,0,,我保证 我不会\NI promise. I won't.
+Dialogue: 0,1:29:23.98,1:29:27.81,ch,,0,0,0,,纳迪亚 你不用 不用为这种人 他们不会...\NNadia, you can't. Not with these people. They won't--
+Dialogue: 0,1:29:28.32,1:29:30.16,ch,,0,0,0,,是你这类人 鲍勃\Nyour people, Bob.
+Dialogue: 0,1:29:30.74,1:29:33.58,ch,,0,0,0,,不 他们跟我...我和他们不一样\NNo, they're not my-- I'm not them.
+Dialogue: 0,1:29:34.49,1:29:36.16,ch,,0,0,0,,我也不是这样的\NAnd I'm not this.
+Dialogue: 0,1:32:10.48,1:32:12.81,ch,,0,0,0,,你看起来过得不错\NYou've seen better days, huh?
+Dialogue: 0,1:32:18.87,1:32:20.20,ch,,0,0,0,,安德烈？\NAndre?
+Dialogue: 0,1:32:30.04,1:32:31.37,ch,,0,0,0,,他刚进来\NHe just came in.
+Dialogue: 0,1:32:31.67,1:32:34.55,ch,,0,0,0,,是啊 没错 我打开门的时候\NYeah, that's right. When I opened up the door.
+Dialogue: 0,1:32:34.88,1:32:37.38,ch,,0,0,0,,我刚让米莉离开...\NI was just letting Millie out, and...
+Dialogue: 0,1:32:37.72,1:32:41.89,ch,,0,0,0,,用枪指着你的脸 ，但你说“今晚不行”是吗\NPut a gun in your face, but you said, "not tonight," huh?
+Dialogue: 0,1:32:42.22,1:32:43.89,ch,,0,0,0,,我什么也没说\NI didn't say anything.
+Dialogue: 0,1:32:44.39,1:32:46.18,ch,,0,0,0,,你之前见过他吗\NYou ever see him before?
+Dialogue: 0,1:32:46.23,1:32:47.23,ch,,0,0,0,,是的\NYeah.
+Dialogue: 0,1:32:48.52,1:32:50.19,ch,,0,0,0,,是的 他在这里\NYeah, he was in here.
+Dialogue: 0,1:32:50.56,1:32:53.23,ch,,0,0,0,,那边 看比赛\NOver there, watching the game.
+Dialogue: 0,1:32:54.23,1:32:57.02,ch,,0,0,0,,因为他是一个人 所以我留意了\NCaught my attention' cause he was on his own.
+Dialogue: 0,1:32:58.91,1:33:00.75,ch,,0,0,0,,也许他不是呢\NMaybe he wasn't.
+Dialogue: 0,1:33:01.24,1:33:03.40,ch,,0,0,0,,- 不 他是的  - 或者也许不是\N-No, he was, though. -Or maybe he wasn't.
+Dialogue: 0,1:33:03.70,1:33:04.95,ch,,0,0,0,,对不起，我没听明白\NI'm sorry, I don't follow you.
+Dialogue: 0,1:33:05.00,1:33:08.38,ch,,0,0,0,,你当然明白 你说他是自己一个人\NSure you do. You say he was on his own, alone.
+Dialogue: 0,1:33:08.42,1:33:10.42,ch,,0,0,0,,我说他不是 有什么听不懂\NI say he wasn't. What's to follow?
+Dialogue: 0,1:33:12.21,1:33:13.21,ch,,0,0,0,,你\NYou.
+Dialogue: 0,1:33:14.09,1:33:15.55,ch,,0,0,0,,你是一个人\NYou're alone.
+Dialogue: 0,1:33:16.76,1:33:18.93,ch,,0,0,0,,有时一个人挺好的\NSometimes it's good to be alone.
+Dialogue: 0,1:33:20.05,1:33:21.38,ch,,0,0,0,,说吧\NSay it.
+Dialogue: 0,1:33:23.39,1:33:24.73,ch,,0,0,0,,说吧\NSay it.
+Dialogue: 0,1:33:26.93,1:33:28.43,ch,,0,0,0,,我是一个人\NI'm alone.
+Dialogue: 0,1:33:30.06,1:33:32.93,ch,,0,0,0,,不可能 伙计 你有朋友\NNo way, my man. You have friends.
+Dialogue: 0,1:33:33.94,1:33:36.94,ch,,0,0,0,,说到朋友，你的堂兄马文呢\NSpeaking of friends, your cousin Marv?
+Dialogue: 0,1:33:37.28,1:33:41.08,ch,,0,0,0,,他跟我说他退休了 想让你接管这个酒吧\NHe told me he's retiring. He want you to be the boss of the bar.
+Dialogue: 0,1:33:42.28,1:33:44.45,ch,,0,0,0,,我说“当然可以 这是你的酒吧。”\NI said, "of course, it's your bar."
+Dialogue: 0,1:33:45.45,1:33:47.12,ch,,0,0,0,,“但钱不是你的”\N"But it's not your money."
+Dialogue: 0,1:33:47.45,1:33:49.95,ch,,0,0,0,,“所以你为什么老想着拿走我的钱？”\N"So why you always trying to take my money?"
+Dialogue: 0,1:33:50.29,1:33:51.96,ch,,0,0,0,,于是我给他一个约定\NSo I made him a deal.
+Dialogue: 0,1:33:52.29,1:33:55.96,ch,,0,0,0,,“你和你吸毒的朋友 别碰我的钱...\N"You and your druggy friends leave my money alone...
+Dialogue: 0,1:33:56.25,1:34:00.46,ch,,0,0,0,,...我会付钱给你 足够让你去个安静的地方”\N...and I'll pay you a ticket to a nice, quiet place."
+Dialogue: 0,1:34:04.30,1:34:05.59,ch,,0,0,0,,你觉得呢？\NSo what do you think?
+Dialogue: 0,1:34:06.97,1:34:10.47,ch,,0,0,0,,给酒吧换个名字 挂上“鲍勃的酒吧”。\NTake down his name, put up yours. "Bob's bar."
+Dialogue: 0,1:34:11.31,1:34:13.98,ch,,0,0,0,,听起来怎么样“鲍勃的酒吧”。\NHas a nice ring to it, huh? "Bob's bar."
+Dialogue: 0,1:34:14.65,1:34:17.03,ch,,0,0,0,,“鲍勃的大酒吧”\N"Bob's big bad bar."
+Dialogue: 0,1:34:17.36,1:34:19.53,ch,,0,0,0,,我开玩笑的 朋友 别生气\NI'm kidding, my friend. Lighten up.
+Dialogue: 0,1:34:20.70,1:34:21.87,ch,,0,0,0,,当然\NSure.
+Dialogue: 0,1:34:26.54,1:34:31.38,ch,,0,0,0,,- 他合适吗？ - 恩 不得不打断他的腿 但挺合适的\N-Did he fit? -Yeah. Had to break his legs, but he fit fine.
+Dialogue: 0,1:34:31.71,1:34:34.88,ch,,0,0,0,,笑一个 别介意 一切都会好起来的\NSmile. Don't mind, everything's gonna be okay.
+Dialogue: 0,1:34:35.96,1:34:37.62,ch,,0,0,0,,好好休息下吧\NGet some rest.
+Dialogue: 0,1:34:47.56,1:34:48.73,ch,,0,0,0,,晚安\NGood night.
+Dialogue: 0,1:34:49.72,1:34:50.89,ch,,0,0,0,,晚安\NGood night.
+Dialogue: 0,1:35:07.58,1:35:11.58,ch,,0,0,0,,有一些罪恶承认了 就无法挽回...\NThere are some sins you commit that you can't come back from...
+Dialogue: 0,1:35:11.83,1:35:13.84,ch,,0,0,0,,...无论你多么努力\N...no matter how hard you try.
+Dialogue: 0,1:35:14.08,1:35:19.08,ch,,0,0,0,,就是无法挽回 就好像恶魔 等着占据你的身体\NYou just can't, you know? It's like the devil is waiting for your body to quit.
+Dialogue: 0,1:35:21.09,1:35:24.26,ch,,0,0,0,,因为他知道...他知道...\NBecause he knows...He knows that...
+Dialogue: 0,1:35:25.76,1:35:27.92,ch,,0,0,0,,...他已经得到了你的灵魂\N...he already owns your soul.
+Dialogue: 0,1:35:28.18,1:35:32.19,ch,,0,0,0,,然后我想 也许根本没有恶魔\NAnd then I think, maybe, you know, there is no devil.
+Dialogue: 0,1:35:32.77,1:35:35.94,ch,,0,0,0,,你死了 上帝会说：\NYou die, and God, he says:
+Dialogue: 0,1:35:36.77,1:35:38.10,ch,,0,0,0,,“不”\N"Nah."
+Dialogue: 0,1:35:39.94,1:35:41.94,ch,,0,0,0,,“不，你不能进天堂”\N"Nah, you can't come in."
+Dialogue: 0,1:35:42.28,1:35:44.45,ch,,0,0,0,,“你必须离开”\N"You have to leave now."
+Dialogue: 0,1:35:45.11,1:35:49.11,ch,,0,0,0,,“你必须离开，你必须孤独一个人”\N"You have to leave and go away and you have to be alone."
+Dialogue: 0,1:35:51.37,1:35:53.54,ch,,0,0,0,,“你必须孤独终老”\N"You have to be alone forever."
+Dialogue: 0,1:36:27.99,1:36:30.66,ch,,0,0,0,,关于马文的事 我很抱歉\NI'm sorry to hear about cousin Marv.
+Dialogue: 0,1:36:32.08,1:36:34.92,ch,,0,0,0,,他们说是汽车抢劫案件\NIt was a carjacking gone bad is what they said.
+Dialogue: 0,1:36:35.16,1:36:36.99,ch,,0,0,0,,劫车？ 没错\NCarjacking? Right.
+Dialogue: 0,1:36:37.50,1:36:40.34,ch,,0,0,0,,那还真是不幸\NThat was an execution.
+Dialogue: 0,1:36:41.00,1:36:42.32,ch,,0,0,0,,那儿里这个酒吧 只有一条街的距离\NA block and a half from this bar.
+Dialogue: 0,1:36:44.26,1:36:47.01,ch,,0,0,0,,不管怎样 我真的很抱歉\NAnyway, it fucking sucks and I'm really sorry.
+Dialogue: 0,1:36:47.84,1:36:49.17,ch,,0,0,0,,谢谢\NThank you.
+Dialogue: 0,1:36:50.76,1:36:52.59,ch,,0,0,0,,明天教堂关闭仪式 你去么\NAre you going to the church closing tomorrow?
+Dialogue: 0,1:36:52.85,1:36:54.02,ch,,0,0,0,,当然\NYeah, of course.
+Dialogue: 0,1:36:54.27,1:36:56.27,ch,,0,0,0,,我还不知道 我得加班\NI don't know yet. I got a shift.
+Dialogue: 0,1:36:57.44,1:37:01.28,ch,,0,0,0,,他们把教堂卖了 卖给Milligan地产 我跟你说过吗？\NThey sold it. To milligan development. What'd I tell you?
+Dialogue: 0,1:37:01.52,1:37:03.85,ch,,0,0,0,,会变成带彩色玻璃的公寓\NCondos with stained glass windows.
+Dialogue: 0,1:37:08.70,1:37:09.70,ch,,0,0,0,,Eric deeds.\NEric deeds.
+Dialogue: 0,1:37:10.03,1:37:11.86,ch,,0,0,0,,我跟你提到过一次\NI mentioned him to you once.
+Dialogue: 0,1:37:12.70,1:37:13.78,ch,,0,0,0,,恩 我记得\NYeah, I remember.
+Dialogue: 0,1:37:14.29,1:37:17.46,ch,,0,0,0,,- 你没回答 - 我记得你提过他\N-You didn't then. -I remember you mentioning him.
+Dialogue: 0,1:37:17.71,1:37:21.05,ch,,0,0,0,,他周日就在这个酒吧里 你见到他了吗？\NHe was in this bar super bowl Sunday. You see him?
+Dialogue: 0,1:37:21.29,1:37:25.46,ch,,0,0,0,,没有 因为周日超级碗决赛酒吧有好多人 所以...\NNo. There was a lot of people in here on super bowl Sunday, so...
+Dialogue: 0,1:37:26.21,1:37:27.54,ch,,0,0,0,,是啊 没错\NYeah, that's true.
+Dialogue: 0,1:37:28.13,1:37:32.13,ch,,0,0,0,,只是 这里是他最后来过的地方...\NIt's just this was the last place he was ever seen and then...
+Dialogue: 0,1:37:32.55,1:37:34.13,ch,,0,0,0,,就像里奇惠兰一样\NJust like Richie whelan.
+Dialogue: 0,1:37:35.72,1:37:39.39,ch,,0,0,0,,太讽刺了 因为传说Eric deeds是杀害惠兰的凶手\NIronic, 'cause deeds supposedly killed whelan.
+Dialogue: 0,1:37:39.73,1:37:44.07,ch,,0,0,0,,尸体都找不到了...\NBodies getting clipped or vanishing all over the place, but...
+Dialogue: 0,1:37:44.57,1:37:47.24,ch,,0,0,0,,...拜托 老兄 你真的没看到什么？\N...come on, man, you don't see anything?
+Dialogue: 0,1:37:47.74,1:37:51.24,ch,,0,0,0,,没有 这儿就这么大地方 对吧\NNah. You know, that's this neighborhood, right?
+Dialogue: 0,1:37:52.41,1:37:54.08,ch,,0,0,0,,但他也许还会出现的\NBut he could turn up.
+Dialogue: 0,1:37:54.83,1:37:56.50,ch,,0,0,0,,有些人就是这样\NPeople do all the time.
+Dialogue: 0,1:37:56.75,1:38:00.25,ch,,0,0,0,,没错 如果他出现 也可能在精神病院\NThat's true. If he does, it'll probably be in a psych ward.
+Dialogue: 0,1:38:01.25,1:38:04.34,ch,,0,0,0,,惠兰失踪的那晚 他就在精神病院\NWhich is where he was the night whelan disappeared.
+Dialogue: 0,1:38:05.59,1:38:08.26,ch,,0,0,0,,我没说谎 是真的\NI'm not lying. It's true.
+Dialogue: 0,1:38:08.67,1:38:10.90,ch,,0,0,0,,Eric deeds总是在当替罪羊\NDeeds always took credit for the whelan hit‘
+Dialogue: 0,1:38:10.93,1:38:12.77,ch,,0,0,0,,因为没人想背惠兰的黑锅\N'cause nobody else wanted to.
+Dialogue: 0,1:38:13.09,1:38:15.34,ch,,0,0,0,,他觉得 这样可以帮他维护他的街头信誉...\NHe thought it would help his street cred...
+Dialogue: 0,1:38:15.60,1:38:17.60,ch,,0,0,0,,...但他没有杀惠兰\N...but he didn't kill whelan.
+Dialogue: 0,1:38:17.93,1:38:19.26,ch,,0,0,0,,他没有？\NHe didn't?
+Dialogue: 0,1:38:28.11,1:38:29.28,ch,,0,0,0,,是的\NYeah.
+Dialogue: 0,1:38:37.79,1:38:41.63,ch,,0,0,0,,没人看到你 对吧 鲍勃？\NNo one ever sees you coming, do they, Bob?
+Dialogue: 0,1:39:26.84,1:39:29.68,ch,,0,0,0,,洛克 我们有事要做\NRocco. Something we got to do.
+Dialogue: 0,1:39:56.36,1:39:59.70,ch,,0,0,0,,当你离开酒吧的时候 我就知道那是永别\NWhen you left the bar, I know that meant stay away.
+Dialogue: 0,1:40:00.37,1:40:04.38,ch,,0,0,0,,我知道 再也不见 但是你没说出口\NI know that meant stay away, but you didn't say it.
+Dialogue: 0,1:40:07.71,1:40:10.72,ch,,0,0,0,,所以 如果你说出来 那...\NSo if you say it, then...
+Dialogue: 0,1:40:11.05,1:40:15.05,ch,,0,0,0,,...我就会离开 相信我纳迪亚 我现在就走\N...I will just go. Believe me, Nadia, I will leave right now.
+Dialogue: 0,1:40:16.22,1:40:17.89,ch,,0,0,0,,但你得亲口说出来\NBut you have to say it.
+Dialogue: 0,1:40:33.90,1:40:35.40,ch,,0,0,0,,我去拿下外套\NLet me go get my jacket.
+Dialogue: 0,1:40:36.24,1:40:37.41,ch,,0,0,0,,啊\NYeah?
+Dialogue: 0,1:40:38.57,1:40:40.57,ch,,0,0,0,,太好了 当然\NSure，great Great.
+Dialogue: 0,1:41:17.11,1:41:22.92,ch,,0,0,0,,---==FRDS作品 感谢观赏==--
